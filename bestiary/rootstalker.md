@@ -2,6 +2,8 @@
 
 *Signature predator of the Turnroot Weald. Appears at Pressure 2+ when navigation fails.*
 
+**Cards:** `cards/rootstalker-weald.md`
+
 **Mind 2 / Body 2 / Soul 3**
 
 ---

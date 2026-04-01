@@ -2,6 +2,8 @@
 
 *Boss encounter. Triggers at Pressure 4. Defeating it opens escape from the Turnroot Weald.*
 
+**Cards:** `cards/root-heart-weald.md`
+
 **Mind 2 / Body 5 / Soul 4 — HP 30**
 
 **Position:** Immobile. Always counts as being in both Frontline and Backline (gigantic).
