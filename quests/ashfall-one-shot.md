@@ -1,5 +1,7 @@
 # The Ashfall Wastes — One-Shot
 
+*Session 1 of 2. Continues in `quests/war-engine.md`.*
+
 **Session Target:** 2 hours. Escalating environmental strain, resource tension, one major buried relic event.
 
 For location overview, see `locations/ashfall-wastes.md`.

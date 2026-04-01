@@ -10,7 +10,9 @@ Prolonged exposure is draining. The landscape seems to press unresolved things u
 
 ## Related Documents
 
-- `quests/ashfall-one-shot.md` — One-shot framework: Exposure track, environmental rules, encounter outline
+- `quests/ashfall-one-shot.md` — Session 1: Exposure track, environmental rules, encounter outline
+- `quests/war-engine.md` — Session 2: The War Engine interior, Alignment Marshal, firing sequence
+- `bestiary/alignment-marshal.md` — Alignment Marshal (War Engine chase boss)
 - `bestiary/tithe-engine.md` — The Tithe Engine and Scorch Drones (Calcine Flats)
 - `bestiary/ashgrazer.md` — Ashgrazer Alpha and Packgrazer (Cindersink)
 - `cards/tithe-engine-ashfall.md` — Tithe Engine, Scorch Drone, and Exhaust status cards
