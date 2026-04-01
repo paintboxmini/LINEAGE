@@ -5,3 +5,10 @@ Vast. Ancient. Warped by forces that are no longer fully understood — possibly
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 
 The ruins are rich with knowledge, artifacts, and power. Exposure carries risk. The nature of that risk is not consistent, which is the part scholars find most troubling.
+
+---
+
+## Related Documents
+
+- `quests/abyssal-ruins-cathedral.md` — The Cathedral encounter: the Gluttony Abomination, tremor-door mechanic, the stabilizing crystal
+- `bestiary/gluttony-abomination.md` — The fallen priest boss (mechanics pending)
