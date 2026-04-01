@@ -9,7 +9,7 @@ RED — BODY — WEALD
 Attack: Body + d6
 Effect: Pull target to the Frontline.
 Defensive Bonus: Gain 1 Rooted token (cannot change position next turn).
-Range: Both
+Range: Melee
 *"The roots remember every path you walked. They reach before you decide."*
 
 ---
@@ -27,7 +27,7 @@ Range: Both
 **PULSE**
 GREEN — SOUL — WEALD
 Attack: Soul + d4
-Effect: Deal 1 damage to all Frontline enemies.
-Defensive Bonus: Heal 1 HP to all Frontline allies.
-Range: Both
+Effect: Deal 1 damage to all Frontline enemies at the start of each turn.
+Defensive Bonus: Heal 1 HP to all Frontline allies at the start of each of your turns.
+Range: Melee
 *"The heartbeat beneath the roots does not distinguish between friend and forest."*
