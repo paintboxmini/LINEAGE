@@ -8,11 +8,16 @@ The Regency governs from the Citadel at the center of Eclipsera (the city). Thei
 
 The Regency does not comment on the Seats. The Seats do not comment on the Regency.
 
+This is the official position. The actual history is different. See **The Pendragon Attempt** below.
+
 ---
 
 ## Council Members
 
-Each member carries an animal title. Informal — earned or assigned by reputation.
+Each member carries an animal title. Officially: informal, earned or assigned by reputation. Actually: the shape the Seat left on them.
+
+**Original members** (present at the Pendragon Attempt): Oswald, Cedric, Elara, Archibald, Eveline.
+**Later additions** (recruited after): Isabella, Percival.
 
 | Member | Title | Sphere |
 |--------|-------|--------|
@@ -39,6 +44,30 @@ What different city factions say about the council. Collected from marketplace m
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of wisdom. He is the only one truly trying to understand why the rifts are opening." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
 | Lady Eveline | "She never speaks, but she sees everything. Like a statue that follows you with its eyes." | *(No devout account recorded.)* |
+
+---
+
+## The Pendragon Attempt (GM Context)
+
+*This is the buried core of Eclipsera's political history. Do not surface it prematurely.*
+
+Before the Regency existed, there was a party. King Pendragon and five companions attempted to claim the **Seat of Love/Binding** — the Seat Aurora occupies. Their stated purpose was unity: end the factional wars, bind the peoples of Eclipsera under a shared principle.
+
+They failed. Aurora already held the Seat. The attempt left marks on everyone in the room.
+
+**What the failure did:**
+- Each surviving member lost internal contradiction. Nuance burned away. They became more purely what they were already leaning toward — archetypes, not people. The animal titles are scar tissue, not heraldry.
+- The Seat's domain partially expressed itself through them. They can't fully hold it, but they can't fully release it either.
+- They are all failed Seat-takers. See `mythology/echoes.md` (Stage III proximity without Incarnation — the most unstable form).
+
+**What happened to Pendragon:**
+The council believes he died in the attempt. He did not. What he became is unresolved. The connection between him and the Gluttony Abomination in the bestiary is a possible thread — not confirmed. *This arc requires more development before it runs at the table.*
+
+**What the council built on top of it:**
+Aurora — the actual bearer of the Seat they tried to take — is bound beneath Eclipsera. The city's unity runs on her. They couldn't claim the Seat so they contained its bearer. The Regency's power is not administrative. It is extractive.
+
+**Isabella and Percival:**
+Recruited after the attempt. They inherited power without full knowledge of its source. Percival is actively investigating — the Abyssal Ruins work is not civic scholarship. Isabella's position is undetermined. *Both are table discoveries.*
 
 ---
 

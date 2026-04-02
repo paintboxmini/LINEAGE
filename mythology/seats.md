@@ -59,6 +59,8 @@ References continuity and persistence. Identity across moments. *(Players may re
 **Bearer:** Aurora
 Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipsera's continued existence.
 
+*Note: This Seat was the target of a failed collective attempt by the party that founded the Regency. Aurora held. The five surviving claimants became the original council members. King Pendragon, who led the attempt, did not survive in recognizable form. See `world/the-regency.md`.*
+
 ### The Hunt
 **Bearer:** The Heron
 Mundane fishing talk becomes metaphor for deeper seeking. Weather, bait, the one that got away.
