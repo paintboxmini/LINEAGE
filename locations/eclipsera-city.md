@@ -44,4 +44,5 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 ## Related Documents
 
 - `world/the-regency.md` — The governing council and its members
+- `locations/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
