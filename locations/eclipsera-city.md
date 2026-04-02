@@ -48,3 +48,4 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 - `locations/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
 - `locations/underground-tavern.md` — The tavern below the bazaar; Mortis, gambling, baseline drinks
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
+- `locations/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
