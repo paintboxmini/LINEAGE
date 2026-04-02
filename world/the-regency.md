@@ -22,7 +22,7 @@ Each member carries an animal title. Informal — earned or assigned by reputati
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipsera. |
 | Lord Percival | The Owl | Scholarship. The only one actively studying the rifts. |
 | Lord Archibald | The Pig | Unknown portfolio. Rarely seen in official settings. |
-| Lady Eveline | The Elephant | Silent. Observant. No public position on anything. |
+| Lady Eveline | The Elephant | Silent. Observant. No public position on anything. See behavioral note below. |
 
 ---
 
@@ -39,3 +39,14 @@ What different city factions say about the council. Collected from marketplace m
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of wisdom. He is the only one truly trying to understand why the rifts are opening." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
 | Lady Eveline | "She never speaks, but she sees everything. Like a statue that follows you with its eyes." | *(No devout account recorded.)* |
+
+---
+
+## Lady Eveline — Behavioral Contract
+
+*No backstory. No motivation. That's a table discovery.*
+
+- She never speaks. Not mute — chooses silence.
+- She responds to information with small physical reactions only. That's the only read you get.
+- She attends everything. Votes nothing.
+- She has been on the council longer than any record accounts for.
