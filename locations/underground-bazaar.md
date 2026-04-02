@@ -140,6 +140,36 @@ The symbiotic variant bonds to whoever tends it and begins to resemble them. The
 
 ---
 
+## Recurring Visitors — Moth & Kess
+
+*In progress. Like everything else. These two formed through the writing rather than through design — the details below are observed, not authored. Don't fill in what isn't here yet.*
+
+Not confined to the bazaar. First encountered here.
+
+---
+
+**Kess**
+
+Geometric tattoo on the forearm. It echoes laughter from her sister's wedding day. The real memory is gone — sold, at some point, for reasons that presumably made sense at the time. The tattoo is all that's left.
+
+Hollow where humor used to live. Not sad about it. Functional.
+
+Uses the Cartographers Guild as a working cover. Has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere.
+
+Her tattoo reacts to the bazaar — specifically near the Wizard Gulp stall. She has not asked why.
+
+---
+
+**Moth**
+
+Carries a coin purse that never gets lighter no matter how much he spends. He does not examine this.
+
+Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. Comfortable in a way that might be a problem.
+
+What the coin purse arrangement actually is: unknown. What he wants: unknown. Whether he can leave: unknown. These are not gaps to be filled in — they're the design.
+
+---
+
 ## Atmosphere Details
 
 - A man in a burgundy coat passes by with rows of tiny vials in silk-lined pockets — essence of first rainfall, bottled reasons people used to dance
