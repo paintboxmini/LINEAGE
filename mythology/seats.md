@@ -59,7 +59,11 @@ References continuity and persistence. Identity across moments. *(Players may re
 **Bearer:** Aurora
 Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipsera's continued existence.
 
-*Note: This Seat was the target of a failed collective attempt by the party that founded the Regency. Aurora held. The five surviving claimants became the original council members. King Pendragon, who led the attempt, did not survive in recognizable form. See `world/the-regency.md`.*
+**Current state: Contested.**
+
+Aurora holds the Seat but is bound and suppressed beneath Eclipsera. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
+
+The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully. See `world/the-regency.md`.
 
 ### The Hunt
 **Bearer:** The Heron

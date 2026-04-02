@@ -66,6 +66,9 @@ The council believes he died in the attempt. He did not. What he became is unres
 **What the council built on top of it:**
 Aurora — the actual bearer of the Seat they tried to take — is bound beneath Eclipsera. The city's unity runs on her. They couldn't claim the Seat so they contained its bearer. The Regency's power is not administrative. It is extractive.
 
+**The ongoing attempt:**
+The first claim failed. The council has not stopped. The current long-term project is positioning Lord Oswald to claim the Seat of Love/Binding fully — with Aurora suppressed rather than free, and the original failed claimants providing accumulated proximity to the domain. The chains on Aurora are not a permanent solution. They are a preparation. Oswald's plan, referenced in the letter at Table #9 of the Gilded Tusk, is this. The other council members may not all know the full shape of it.
+
 **Isabella and Percival:**
 Recruited after the attempt. They inherited power without full knowledge of its source. Percival is actively investigating — the Abyssal Ruins work is not civic scholarship. Isabella's position is undetermined. *Both are table discoveries.*
 
