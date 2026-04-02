@@ -21,7 +21,7 @@ In combat, you don't declare an action and roll — you play a card. The card te
 
 **Defensive Bonus** — Triggers when you win the RPS resolution as the defender.
 
-**Range** — Written as *(Your Position / Enemy Position)*. Describes where you and your target must be for this card to be played. "Both" means either Frontline or Backline is valid for that side.
+**Range** — Describes the positional relationship required to play this card. See the Range table in `rules/combat.md`.
 
 **Flavor Text** — *Italicized.* Not a rule. The world speaking.
 
@@ -69,6 +69,8 @@ Your deck is not just mechanics. It's how your character thinks.
 **Melee (Range)** — You and the target must be in the Frontline.
 
 **Ranged (Range)** — Works only while not in Melee range with the target.
+
+**Both (Range)** — Either position is valid.
 
 ---
 

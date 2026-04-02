@@ -58,9 +58,7 @@ Green (Soul)  beats  Blue  (Mind)
 
 ## Range
 
-Every card lists its range requirement as **(Your Position / Enemy Position)**.
-
-Both sides must meet their respective requirement. If you don't meet the range requirement, you cannot play that card as an attack this turn.
+Every card lists a range requirement. If you don't meet it, you cannot play that card as an attack this turn.
 
 | Term | Meaning |
 |------|---------|
