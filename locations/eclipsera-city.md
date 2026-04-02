@@ -16,7 +16,7 @@ Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
 - A grand library tucked in a quieter corner — scholars and mages, ancient texts
-- **The Secret Underground Market** — accessible by passphrase, known to seasoned travelers. Forbidden artifacts. Elusive traders. No official acknowledgment it exists.
+- **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/underground-bazaar.md` and `locations/underground-tavern.md`.
 
 The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
 
@@ -45,4 +45,6 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 
 - `world/the-regency.md` — The governing council and its members
 - `locations/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
+- `locations/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
+- `locations/underground-tavern.md` — The tavern below the bazaar; Mortis, gambling, baseline drinks
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds

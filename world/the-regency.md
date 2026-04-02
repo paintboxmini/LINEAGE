@@ -21,7 +21,7 @@ Each member carries an animal title. Informal — earned or assigned by reputati
 | Lord Cedric | The Bear | City walls and military security. |
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipsera. |
 | Lord Percival | The Owl | Scholarship. The only one actively studying the rifts. |
-| Lord Archibald | The Pig | Unknown portfolio. Rarely seen in official settings. |
+| Lord Archibald | The Pig | Operates the Underground Bazaar's infrastructure. Debt paid in favors. See `locations/underground-bazaar.md`. |
 | Lady Eveline | The Elephant | Silent. Observant. No public position on anything. See behavioral note below. |
 
 ---
