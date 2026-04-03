@@ -1,0 +1,33 @@
+# Borrower Signature Cards — Hollow
+
+Signature cards for the Borrowers. Tagged as HOLLOW — obtainable via the Oracle deck after completing the mediation arc in the Hollow Below Briarwatch. Not a combat drop. Requires earning Borrower trust.
+
+---
+
+**CRAWL LANE**
+RED — BODY — HOLLOW
+Attack: Body + d4
+Effect: Move to any position. If you move to Backline, gain Evade.
+Defensive Bonus: Move to any position.
+Range: Both
+*"The tunnels they carved are too small for what hunts them. That's not an accident."*
+
+---
+
+**CLAY BOWL**
+BLUE — MIND — HOLLOW
+Attack: Mind + d2
+Effect: Scry 2 of target's deck.
+Defensive Bonus: Scry 2 of your own deck.
+Range: Both
+*"Press it to the stone. Listen. The stone always tells you first."*
+
+---
+
+**TUNNEL KNOWLEDGE**
+GREEN — SOUL — HOLLOW
+Attack: Soul + d4
+Effect: Choose a position. All enemies in that position move to the other position.
+Defensive Bonus: All allies may change positions freely.
+Range: Both
+*"They don't dominate the space. They know it."*
