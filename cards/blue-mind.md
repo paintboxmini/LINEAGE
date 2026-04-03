@@ -266,7 +266,7 @@ Range: Both
 **PHASE LOGIC**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Gain 1 Evade (Before RPS, roll 1d2. On a 1, ignore this attack entirely.)
+Effect: Gain Evade.
 Defensive Bonus: You may move to the backline
 Range: Both
 *"You struck the possibility, not the outcome."*

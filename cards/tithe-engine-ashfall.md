@@ -14,7 +14,7 @@ Includes the Exhaust status card, seeded into player decks during this encounter
 GREEN — SOUL — ASHFALL
 Attack: Soul + d2
 Effect: After this attack resolves, each opponent discards 1 card. If a player discarded a Green card this way, shuffle 1 Exhaust into their deck.
-Defensive Bonus: Resist
+Defensive Bonus: Gain Resist.
 Range: Ranged
 *"The engine breathes. The battlefield pays."*
 
@@ -57,8 +57,8 @@ Range: Ranged
 **CINDER SPIRAL**
 RED — BODY — ASHFALL
 Attack: Body + d4
-Effect: Expose — name Blue. If successful, the target discards that card.
-Defensive Bonus: Evade
+Effect: Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it.
+Defensive Bonus: Gain Evade.
 Range: Ranged
 *"They circle until the heat tells them where to strike."*
 
@@ -78,7 +78,7 @@ Range: Ranged
 BLUE — MIND — ASHFALL
 Attack: Mind + d2
 Effect: If the target attacked the Tithe Engine last round, deal +2 damage.
-Defensive Bonus: Bonded — if the Engine wins a reveal this round, gain Resist.
+Defensive Bonus: Bonded — if the Engine wins a reveal this round, gain Resist. (See glossary.)
 Range: Ranged
 *"The drones punish disobedience."*
 

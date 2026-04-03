@@ -7,7 +7,7 @@ Signature cards for the Fogcaller. Obtainable via Oracle deck in the Fog Basin r
 **SHROUD**
 GREEN — SOUL — BASIN
 Attack: Soul + d4
-Effect: Target enemy gains Evade and Blind (50% to miss attack before defender selects a block card) until start of your next turn.
+Effect: Target enemy gains Evade and Blind until start of your next turn.
 Defensive Bonus: You gain Evade until start of your next turn.
 Range: Both
 *"The fog doesn't hide you. It hides what's coming."*

@@ -17,7 +17,7 @@ Range: Melee, hits Backline
 **CAMOUFLAGE STRIKE**
 BLUE — MIND — WEALD
 Attack: Mind + d2
-Effect: If you are in the Backline, gain Evade 1.
+Effect: If you are in the Backline, gain Evade.
 Defensive Bonus: Move to the Backline; Scry 1.
 Range: Ranged
 *"It isn't that the creature hides; it's that the forest wants it seen too late."*
