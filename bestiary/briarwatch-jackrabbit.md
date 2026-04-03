@@ -18,7 +18,7 @@ They don't fight to the death. At 1 HP, they attempt to flee. If one escapes, th
 
 ## Abilities
 
-**Dart** — GREEN — SOUL
+**Bolt** — GREEN — SOUL
 - Attack: Soul + d4
 - Effect: Move to Backline.
 - Defensive Bonus: Move to Backline.
@@ -32,14 +32,14 @@ They don't fight to the death. At 1 HP, they attempt to flee. If one escapes, th
 **Freeze** — BLUE — MIND
 - Attack: Mind + d2
 - Effect: Scry 1.
-- Defensive Bonus: Evade.
+- Defensive Bonus: Gain Evade.
 - Range: Both
 
 ---
 
 ## Encounter Setup — Ruined Courtyard
 
-Start with 3 Jackrabbits: 1 Frontline, 2 Backline. They rotate constantly using Dart.
+Start with 3 Jackrabbits: 1 Frontline, 2 Backline. They rotate constantly using Bolt.
 
 *Teaching moment: Rushdown becomes the obvious tool. The system teaches positioning naturally.*
 
