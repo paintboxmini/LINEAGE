@@ -6,6 +6,12 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 
 ## Keywords
 
+**Counter Attack**
+Deal this card's Attack damage back to the attacker. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
+
+**Debuff**
+Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Wound), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
+
 **Anchored**
 You gain a specific benefit as long as you do not change positions. The benefit is stated on the card. If you move, Anchored ends immediately.
 
