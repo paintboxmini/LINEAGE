@@ -1,0 +1,116 @@
+# LINEAGE — Memory
+
+Running log of decisions, pending threads, and context for agents picking up this project. Updated at end of sessions. Read this alongside `CLAUDE.md`.
+
+---
+
+## Active Pending Threads
+
+**SOFT STEP** (Borrower card, `experimental/archives/cut-cards.md`)
+Mass Evade for position-mates. Passed red team but flagged as strong — needs Drew's deliberate sign-off before entering the Oracle. Don't promote to canon without asking.
+
+**Pendragon Arc** (`world/the-regency.md`, `mythology/seats.md`)
+Bones are in place. What's locked: five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. Pendragon didn't die — became something. Connection to Gluttony Abomination in bestiary is a possible thread, not confirmed. Whether the council turned on him or he paid the full price is unresolved. Don't develop further without Drew.
+
+**Bolt card** (`cards/briarwatch-jackrabbit.md`, `bestiary/briarwatch-jackrabbit.md`)
+Renamed from Dart (name conflict with RED DART in red-body.md). Mechanics noted as needing rework beyond the rename. Currently: move to Backline on effect and defense. Drew said "good for now" — revisit when Briarwatch content gets more attention.
+
+**Gluttony Abomination** (`bestiary/gluttony-abomination.md`)
+Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don't develop without Drew.
+
+**Phase-Leach** (`bestiary/phase-leach.md`)
+Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds on arcane energy. No mechanics yet.
+
+**Alignment Marshal cards** (`bestiary/alignment-marshal.md`)
+Cards noted as pending. War Engine content is in `quests/war-engine.md`.
+
+**Roadhouse** (`locations/vultures-nest.md`, `locations/briarwatch.md`)
+Referenced in session 1 routing (Vulture's Nest → Roadhouse → Briarwatch) but no dedicated location file. Currently described inline as "government inn, functional, not charming."
+
+**Road encounters**
+Day 1 travel between Vulture's Nest and Briarwatch is undefined. No creatures, no random encounter table.
+
+**Underground Tavern gambling mechanics** (`locations/underground-tavern.md`)
+Marked as pending in the file.
+
+**Senshi's menu** (`locations/gilded-tusk.md`)
+Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
+
+**Corvel name check** (`locations/vultures-nest.md`)
+Corvel runs the grey water vials stall at Vulture's Nest. File notes his name may already be used elsewhere in Eclipsera — unverified.
+
+---
+
+## Key Design Decisions (This Project)
+
+**Seats & Echoes** (`mythology/seats.md`, `mythology/echoes.md`)
+Seats are fixed metaphysical positions — structural features of reality. Echoes are beings whose identity has aligned with a Seat's domain (Resonance → Alignment → Incarnation/Archon). Failed Seat-takers are the most powerful and least stable Echoes.
+
+**The Pendragon Attempt** (`world/the-regency.md`)
+The Regency council was originally an adventuring party. They attempted to claim the Seat of Love/Binding together. Failed. Aurora held. The five survivors (Oswald, Cedric, Elara, Archibald, Eveline) became the original council members — each losing internal contradiction, gaining an animal mask as scar tissue. Isabella and Percival were recruited after, don't have full knowledge of the foundation. Oswald's long-term plan: claim the Seat fully with Aurora suppressed. The letter at Table #9 of the Gilded Tusk is about this.
+
+**Aurora** (`mythology/seats.md`, `locations/eclipsera-city.md`)
+Bearer of the Seat of Love/Binding. Bound beneath Eclipsera. The city's unity runs on her. The chains are not permanent containment — they are preparation for Oswald's claim.
+
+**Animal titles = scar tissue**
+The council's animal symbols (Lion, Panther, Bear, Fox, Owl, Pig, Elephant) are not heraldic. They're the shape the Seat left on each person when the attempt failed.
+
+**Card system: 3 signature cards per creature**
+Creature combat decks are filled from core cards. Signature cards are Oracle rewards — 3 per creature keeps the system lean. The experimental loop (draft 9, red team, cut to 3) is the standard process for new signature sets.
+
+**HP formula: (3 × Body) + 6**
+Canonical per quick reference. Earlier expanded docs had +3 — that was an error, corrected.
+
+**Range definitions**
+Quick reference sheet is canonical. Melee: both must be Frontline. Ranged: works only while not in Melee range with target.
+
+**Evade standardization**
+"Gain Evade." — definition lives in `rules/card-glossary.md`. Cards no longer carry inline definitions.
+
+**Resist**
+Takes half damage rounded down. Definition in glossary.
+
+**Wound**
+No effect when drawn. Discard at end of turn. 1 removed per short rest. Definition in glossary.
+
+---
+
+## Workflow Rules
+
+**Experimental folder** (`experimental/`)
+Write and push freely. No approval needed. For new design work before it goes to canon.
+
+**Core folders**
+Write locally, present for review, wait for explicit approval before committing or pushing.
+
+**No new keywords without Drew's approval.**
+Current keyword list in `experimental/README.md`.
+
+**Card loop**
+Draft 9 (3R/3B/3G) in experimental. Red team against: balance, keyword compliance, creature fidelity, early-game fit, Oracle reward value. Cut to 3. Archive the rest in `experimental/archives/cut-cards.md`.
+
+---
+
+## World Context Notes
+
+**Kino** (also "Sawyer") — 15, green eyes, red scarf, real name kept private. At Vulture's Nest, operates with the Red Scarves. In-progress character — behavioral contract only, more detail surfaces as campaign develops.
+
+**Silas** — character passed between multiple AI instances and Drew over time. Nobody can fully claim authorship. That's intentional.
+
+**The Unheld** — don't explain it. Drop hints when they feel right. Some point toward something, some are noise. The distinction between signal and noise is what players are navigating.
+
+**Eclipsera's fog basin** — threshold space that never closes. Pell operates here. Fogcallers are apex negotiators, not simple predators. See `locations/fog-basin.md`.
+
+**Glasslight Reach** — on cliffs above the fog line. Kino can see the basin from home. He chose to go down into it.
+
+**The Island in a Ship** — constants: small island, Oracle at table, cave. Variables: structure mirrors last threshold the party crossed. Session 0 frame: first visit the night of the sailor's story, characters named, decks built. See `locations/island-in-a-ship.md`.
+
+---
+
+## Multi-Agent Notes
+
+Different agents naturally specialize based on which parts of the repo they engage with. Drew is content adjudicator. Don't pre-define agent roles — the environment does that work.
+
+The repo IS the persistent memory. This file captures what the repo can't — mid-session decisions and active threads.
+
+New agents: read `CLAUDE.md` first, then this file. The experimental folder and archives show design process history.
