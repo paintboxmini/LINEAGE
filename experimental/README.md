@@ -11,16 +11,17 @@ This folder is a sandbox. Content here is draft, not canon.
 
 ## Standard Card Loop
 
-**Target: 3 signature cards per creature.**
+**Target: full set of 9 cards that all pass red team. Drew picks where they go.**
 
-Creature combat decks are filled out with core cards (red-body, blue-mind, green-soul). Signature cards are the Oracle rewards — 3 is the right number to keep the system lean.
+Creature combat decks are filled out with core cards (red-body, blue-mind, green-soul). Signature cards are Oracle rewards — Drew determines how many land in a given set after reviewing the full 9.
 
 1. Read source material for the target creature
 2. Draft 9 cards (3R / 3B / 3G) using only existing keywords
-3. Red team: balance, keyword compliance, creature fidelity, early-game fit, Oracle reward value
-4. Cut to the 3 strongest — remaining 6 go to `archives/cut-cards.md`
-5. If any of the 3 fail red team, replace from the 6 and re-red-team
-6. Present to Drew with summary
+3. Red team all 9: balance, keyword compliance, creature fidelity, early-game fit, Oracle reward value
+4. Fix what can be fixed. Cut what can't — cuts go to `archives/cut-cards.md`
+5. Generate replacements (matching color) for any cuts
+6. Loop until all 9 pass red team
+7. Present all 9 to Drew with your read on which are strongest — Drew decides where they land
 
 ## Existing Keywords
 
@@ -30,4 +31,4 @@ Status cards: Wound, Exhaust, Foglust
 
 ## Note on the Stonecoil Run
 
-The first run was a stress test — all 9 cards passed and were pushed to canon. That's the exception. Standard operation targets 3.
+The first run was a stress test — all 9 cards passed and were pushed to canon as an exception. Standard loop still ends with Drew making the call.
