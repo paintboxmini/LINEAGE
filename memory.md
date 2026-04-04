@@ -12,9 +12,6 @@ Mass Evade for position-mates. Passed red team but flagged as strong — needs D
 **Pendragon Arc** (`world/the-regency.md`, `mythology/seats.md`)
 Bones are in place. What's locked: five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. Pendragon didn't die — became something. Connection to Gluttony Abomination in bestiary is a possible thread, not confirmed. Whether the council turned on him or he paid the full price is unresolved. Don't develop further without Drew.
 
-**Bolt card** (`cards/briarwatch-jackrabbit.md`, `bestiary/briarwatch-jackrabbit.md`)
-Renamed from Dart (name conflict with RED DART in red-body.md). Mechanics noted as needing rework beyond the rename. Currently: move to Backline on effect and defense. Drew said "good for now" — revisit when Briarwatch content gets more attention.
-
 **Gluttony Abomination** (`bestiary/gluttony-abomination.md`)
 Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don't develop without Drew.
 
