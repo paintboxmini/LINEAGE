@@ -4,21 +4,11 @@ Signature cards for the Stonecoil. Tagged as HOLLOW — obtainable via the Oracl
 
 ---
 
-**COIL STRIKE**
-RED — BODY — HOLLOW
-Attack: Body + d6
-Effect: If target is in the same position as you, deal +2 damage.
-Defensive Bonus: Defender gains Rooted 1.
-Range: Melee
-*"In the narrow dark, distance is a luxury."*
-
----
-
 **DRAG**
 RED — BODY — HOLLOW
 Attack: Body + d4
-Effect: Pull target to Frontline. If target is already in Frontline, deal +2 damage instead.
-Defensive Bonus: Gain Rooted.
+Effect: Pull defender to Frontline. If defender is already in Frontline, deal +2 damage instead.
+Defensive Bonus: attacker gains Rooted.
 Range: Both
 *"The grip comes before the bite."*
 
@@ -56,7 +46,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: If the target moved this turn, +2 damage
-Defensive Bonus: The attacker becomes Rooted 1
+Defensive Bonus: The attacker gains Rooted 1
 Range: Melee
 
 🔵 STILL GROUND
