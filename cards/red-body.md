@@ -25,7 +25,7 @@ Range: Both
 **ENDURE**
 RED — BODY
 Attack: Body + d2
-Effect: Gain 1 resist
+Effect: Gain Resist.
 Defensive Bonus: Heal 3 HP
 Range: Both
 *"What doesn't kill you has to try harder next time."*
@@ -235,7 +235,7 @@ Range: Ranged
 **SLIP THE BLADE**
 RED — BODY
 Attack: Body + d4
-Effect: Gain 1 Evade (Before RPS, roll 1d2. On a 1, ignore this attack entirely.)
+Effect: Gain Evade.
 Defensive Bonus: Move to the frontline.
 Range: Both
 *"If I live through it, I'm closer."*
@@ -265,7 +265,7 @@ Range: Melee
 **PAIN IS FUEL**
 RED — BODY
 Attack: Body + d6
-Effect: Resist — The next time you would take damage, reduce that damage by half (rounded up).
+Effect: Gain Resist.
 Defensive Bonus: Deal 2 damage to the attacker.
 Range: Both
 *"Hit me. I dare you."*
@@ -286,7 +286,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: You may ignore any ability that forces you to move positions until your next turn.
-Defensive Bonus: Resist — The next time you take attack damage, reduce it by half.
+Defensive Bonus: Gain Resist.
 Range: Both
 *"Stand where you choose. Let the world move instead."*
 

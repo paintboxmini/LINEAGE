@@ -225,7 +225,7 @@ Range: Both
 **SHADE AWAY**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Gain 1 Evade (50% to dodge next attack declared against you, before you select a card to defend with.)
+Effect: Gain Evade.
 Defensive Bonus: The next enemy must attack you on their turn. They move forward/rushdown if they cannot.
 Range: Melee
 *"You become the mark that shouldn't be there, wearing darkness as perfect armor."*

@@ -36,4 +36,10 @@ The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the 
 
 ---
 
-*For the full adventure system (Pressure Track, navigation rules, NPCs, encounters, stat blocks), see `quests/turnroot-weald-adventure.md`.*
+## Related Documents
+
+- `quests/turnroot-weald-adventure.md` — Full adventure system: Pressure Track, Forest Customs, navigation rules, NPC escalation, Mark system, Points of Interest, and encounter framework
+- `bestiary/rootstalker.md` — Rootstalker stat block, abilities, and loot
+- `bestiary/root-heart.md` — Root Heart boss encounter
+- `bestiary/bone-collector.md` — The Bone Collector starter encounter
+- `items/turnroot-weald-items.md` — All forest items and harvestable materials
