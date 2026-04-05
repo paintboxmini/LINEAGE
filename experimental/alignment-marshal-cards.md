@@ -8,7 +8,7 @@
 RED — BODY — ENGINE
 Attack: Body + d6
 Effect: Target gains Rooted.
-Defensive Bonus: Gain Anchored.
+Defensive Bonus: Anchored — Heal 2 at the start of each of your turns.
 Range: Melee
 *"Calibration requires stillness."*
 
@@ -28,7 +28,7 @@ Range: Both
 RED — BODY — ENGINE
 Attack: Body + d4
 Effect: Target moves to Frontline.
-Defensive Bonus: Gain Anchored.
+Defensive Bonus: Anchored — Your attacks deal +2 damage.
 Range: Both
 *"Interference is relocated, not removed."*
 
