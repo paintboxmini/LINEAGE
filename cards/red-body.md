@@ -275,8 +275,8 @@ Range: Both
 **DIG IN**
 RED — BODY
 Attack: Body + d2
-Effect: Anchored — If you are in the frontline, your attacks deal +2 damage.
-Defensive Bonus: Anchored — reduce the next damage you take this round by 2.
+Effect: Anchored — At the start of your turn, your attacks deal +2 damage.
+Defensive Bonus: Anchored — At the start of your turn, reduce the next damage you take by 2.
 Range: Melee
 *"Hold the line. Make them break first."*
 
