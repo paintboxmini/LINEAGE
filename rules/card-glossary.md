@@ -15,6 +15,12 @@ Any non-damage effect applied to you by an enemy: status conditions (Blind, Root
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
 
+**Advantage**
+Roll twice for your damage die and take the higher result.
+
+**Disadvantage**
+Roll twice for your damage die and take the lower result.
+
 **Armour X**
 Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
 

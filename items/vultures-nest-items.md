@@ -13,13 +13,6 @@ Use (1): Pull yourself or a target enemy to Frontline.
 
 ---
 
-**LEDGER STUB**
-*Passive — Torn page with a partial port seal*
-*Source: Tideward Compact contacts; not sold openly*
-Passive: Once per session, treat one transaction as unrecorded. No entry in any ledger. No questions.
-
----
-
 **LOW LANTERN**
 *Consumable — Squat iron lantern, smoked glass*
 *Source: Vulture's Nest market*
@@ -39,7 +32,7 @@ Use: Heal 2 HP.
 
 **DOCK BROTH**
 *Consumable — Hot, murky, smells like low tide*
-Use: Remove 1 status card from your deck. Gain Disadvantage on your next damage roll (roll twice, take the lower result).
+Use: Remove 1 status card from your deck. Gain Disadvantage on your next damage roll.
 
 ---
 
