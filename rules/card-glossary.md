@@ -12,6 +12,9 @@ Deal this card's Attack damage back to the attacker. Melee only unless the card 
 **Debuff**
 Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Wound), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
 
+**Obscure**
+Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
+
 **Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 

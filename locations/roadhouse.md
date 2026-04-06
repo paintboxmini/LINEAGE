@@ -35,7 +35,7 @@ They won't start trouble. They will finish it. If the party is cooperative and u
 *Contents for curious parties:*
 
 - Weapon rack: two short swords, a crossbow, a quiver of bolts, a shield with a worn crown seal. Standard issue. Nothing remarkable.
-- Under one bunk: a wooden chest, unlocked. A few coins (roll d6+2 silver), a spare uniform folded neatly, a whetstone.
+- Under one bunk: a wooden chest, unlocked. A few coins (roll d6+2 silver), a spare uniform folded neatly, a whetstone, one set of Barbed Wrap still in its oilcloth. See `items/briarwoods-items.md`.
 - On the table: a folded posting order with an official wax seal.
 
 **The Posting Order** — standard Regency language. Assignment to Roadhouse waypoint, indefinite duration. Register compliance, cargo documentation. Report irregularities to *Quartermaster Voss, Eclipsera South Gate.*
