@@ -79,6 +79,10 @@ Large, territorial, fast-breeding ruin scavengers disturbed by sinkhole formatio
 
 *Tactical purpose: introduce unstable footing, warm up combat, establish environmental hazard, cost resources without escalating the ecosystem prematurely.*
 
+**Alternate Surface Encounter:** Shifting Burrow — see `quests/shifting-burrow.md`
+
+Borrower Sentries defending exposed burrow entrances at the sinkhole. Teaches positioning consequence and Backline cost before the descent. Use instead of Jackrabbits for a party that needs more mechanical grounding before the Hollow.
+
 **Checks:**
 - Body (Easy): Climb broken stair safely; failure causes minor damage; loud impact may raise Pressure if already 2+
 - Mind (Easy): Identify nest cluster, predict charge angle
