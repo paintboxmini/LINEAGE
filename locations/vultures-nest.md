@@ -67,15 +67,20 @@ He has a ledger. Not the port records — a second one, kept on his person. Loss
 
 **Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. The records are also not the Ledger-Keeper's records.
 
-**The Carrion Guide** — No name given. Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes.
+**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
-Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to them before they leave.
+Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
 
 Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
 
 *"You're already ahead of yourselves."*
 *"This path will suit your pace."*
 *"You won't like the other way."*
+
+**GM — Backstory**
+Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
+
+Recently her family sent word asking for help. She won't go herself. She's been watching the road for the right party.
 
 **Soft Gate — GM Facing**
 
@@ -84,6 +89,24 @@ The Guide is watching how the party moves before agreeing to guide them. Trigger
 Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
 
 If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
+
+**The Sealed Letter**
+
+At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter. Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+
+The letter reads:
+
+> Four days west of Briarwatch, there is a forest. I grew up there. I haven't been back in a long time.
+>
+> My family sent word. The animals at the edges have changed behavior. More aggressive. Moving in patterns they don't usually move in. My family doesn't frighten easily.
+>
+> I can't go myself. You've shown me you move carefully. That matters more than I can explain right now.
+>
+> Find them. Find out what's wrong. They'll know you're coming.
+>
+> — Aege
+
+*No further instructions.*
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
