@@ -8,9 +8,10 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
 | `encounter-generator.md` | Designing a new combat encounter |
+| `npc-encounter-generator.md` | Designing a non-combat NPC or roadside encounter |
 | `card-set-generator.md` | Generating a 9-card enemy set |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
-| `alignment-checker.md` | Checking whether content fits its intended context |
+| `alignment-checker.md` | Checking whether content fits its intended context (includes Soul Pass) |
 
 ---
 

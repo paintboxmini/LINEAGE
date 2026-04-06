@@ -23,6 +23,40 @@ If adjustment is needed:
 
 ---
 
+## Soul Pass
+
+Run this after confirming structural alignment.
+
+```
+After confirming structural alignment, perform a Soul Pass.
+
+Evaluate:
+
+1. Does this evoke a clear feeling or tension?
+   - If not, identify where it feels flat
+
+2. Does the behavior/mechanics reinforce that feeling?
+   - If not, suggest a minimal adjustment
+
+3. Is there a strong hook or memorable detail?
+   - If missing, add one (no more than 1–2 lines)
+
+4. Does this feel distinct from generic fantasy/system design?
+   - If generic, sharpen wording or framing
+
+Constraints:
+- Do NOT add lore dumps
+- Do NOT increase complexity
+- Do NOT change core mechanics unless necessary
+
+Goal:
+Enhance tone, clarity of feeling, and memorability without breaking structure.
+
+Return only refined additions or changes.
+```
+
+---
+
 ## Reference Files
 
 - System tone: `CLAUDE.md`
