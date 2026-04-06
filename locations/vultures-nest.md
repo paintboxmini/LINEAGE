@@ -77,6 +77,15 @@ Speaks in terms of paths, not places. Doesn't explain decisions. If the party ea
 *"This path will suit your pace."*
 *"You won't like the other way."*
 
+**GM — Finding Aege**
+Bartho points the party toward her but doesn't walk them over. They have to find her themselves. Make the search matter.
+
+- *Rumors:* Dockers and market traders know there's a guide near the east gate who watches how you walk before she talks to you. Nobody knows her name.
+- *Tracking behavior:* The party may notice someone near the gate watching feet, not faces. She won't approach first.
+- *Noticing patterns:* She's there every morning. She leaves mid-afternoon. She's always alone.
+
+If the party rushes to find her without looking: she finds them. But the route she gives them will suit their pace.
+
 **GM — Backstory**
 Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
 
@@ -133,6 +142,16 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 ---
 
 ## The Market
+
+**The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
+
+- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
+- *Ignore it:* It opens on its own later. DM chooses when.
+- *Carry it:* Bad idea. The party will figure out why.
+
+Someone brought it in from the Briarwoods direction. Nobody claimed it.
+
+---
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 

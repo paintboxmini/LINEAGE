@@ -16,7 +16,7 @@ Any non-damage effect applied to you by an enemy: status conditions (Blind, Root
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
 
 **Armour X**
-Reduce all incoming attack damage by X. Stacks with other damage reduction effects.
+Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
 
 **Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
