@@ -15,7 +15,7 @@ Effect: When you are targeted by an attack, deal 1 damage to the attacker.
 **CARRION FEATHER**
 *Consumable — Single dark feather, tied with road-worn cord*
 *Source: Given by Aege upon delivering the party to Briarwatch*
-Use (1): Negate a forced reposition effect that would affect you.
+Activates automatically: The first time you would be forced to reposition, negate that effect instead. Then this item is spent.
 
 ---
 
