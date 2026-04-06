@@ -51,3 +51,23 @@ Effect: All Frontline enemies move to Backline.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Tick. Tick. Tick."*
+
+---
+
+**CORRECTION LOAD**
+RED — BODY — ENGINE
+Attack: Body + d4
+Effect: Shuffle 1 Exhaust into target's deck.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"The engine does not tire."*
+
+---
+
+**FAULT EXPLOIT**
+BLUE — MIND — ENGINE
+Attack: Mind + d2
+Effect: If target has Exhaust in their deck, deal +4 damage.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"Compromise identified. Correction applied."*
