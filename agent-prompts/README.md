@@ -12,6 +12,8 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 | `card-set-generator.md` | Generating a 9-card enemy set |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
 | `alignment-checker.md` | Checking whether content fits its intended context (includes Soul Pass) |
+| `player-perspective.md` | Stress-testing content from a first-time player's point of view |
+| `prompt-refinement.md` | Optional — run after any task to improve the prompt used |
 
 ---
 

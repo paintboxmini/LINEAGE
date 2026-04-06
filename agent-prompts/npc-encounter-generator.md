@@ -58,3 +58,7 @@ Return final version only.
 - NPC examples: `locations/vultures-nest.md` (Aege, Bartho, Kino)
 - Tone reference: `locations/briarwatch.md`, `locations/roadhouse.md`
 - Delayed consequence examples: `bestiary/briar-scratcher.md`, `quests/shifting-burrow.md`
+
+---
+
+*Optional: run `prompt-refinement.md` after completing this task.*

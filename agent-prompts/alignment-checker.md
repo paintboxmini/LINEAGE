@@ -63,3 +63,7 @@ Return only refined additions or changes.
 - Location examples: `locations/briarwatch.md`, `locations/vultures-nest.md`
 - Faction examples: `world/the-regency.md`
 - Mechanics: `rules/card-glossary.md`, `rules/combat.md`
+
+---
+
+*Optional: run `prompt-refinement.md` after completing this task.*
