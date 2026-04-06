@@ -63,9 +63,27 @@ Players arrive already in debt to him — the crossing requires something coin c
 
 *"Just so we all start off on the right foot."*
 
-He probably knows about the sinkhole in Briarwatch. He won't say so. They'll find out when they get there.
+He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
 
 **Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. The records are also not the Ledger-Keeper's records.
+
+**The Carrion Guide** — No name given. Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes.
+
+Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to them before they leave.
+
+Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
+
+*"You're already ahead of yourselves."*
+*"This path will suit your pace."*
+*"You won't like the other way."*
+
+**Soft Gate — GM Facing**
+
+The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."
+
+Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
+
+If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
