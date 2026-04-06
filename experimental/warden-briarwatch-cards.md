@@ -10,7 +10,7 @@ Attack: Body + d4
 Effect: Shuffle 1 Exhaust into target's deck.
 Defensive Bonus: Gain Resist.
 Range: Both
-*"You're tired. They've been doing this for years."*
+*"Limestone. Water. One more hour."*
 
 ---
 
@@ -20,7 +20,7 @@ Attack: Body + d4
 Effect: Anchored — At the start of your turn, your attacks deal +2 damage.
 Defensive Bonus: Gain Ward.
 Range: Melee
-*"Plant your feet. Let the ground hold you."*
+*"Plant once. Everything else is noise."*
 
 ---
 
@@ -60,7 +60,7 @@ Attack: Mind + d2
 Effect: If target has Exhaust in their deck, deal +4 damage.
 Defensive Bonus: Gain Evade.
 Range: Both
-*"The bounty board doesn't ask how tired you are."*
+*"They knew before you did."*
 
 ---
 
