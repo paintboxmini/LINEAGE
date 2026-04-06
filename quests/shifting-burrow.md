@@ -54,8 +54,13 @@ Range: Both
 
 ---
 
-**[RED CARD — PENDING]**
-*Third Borrower Sentry card not yet designed. Should be RED — BODY — HOLLOW. Suggest a physical attack that punishes Backline players or rewards the Sentry for holding Frontline.*
+**DIRT CLOD**
+RED — BODY — HOLLOW
+Attack: Body + d4
+Effect: Target gains Blind.
+Defensive Bonus: Gain Evade.
+Range: Ranged
+*"Loose soil. Bad timing."*
 
 ---
 
