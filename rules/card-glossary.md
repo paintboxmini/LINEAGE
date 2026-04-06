@@ -12,8 +12,20 @@ Deal this card's Attack damage back to the attacker. Melee only unless the card 
 **Debuff**
 Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Wound), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
 
+**Obscure**
+Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
+
+**Advantage**
+Roll twice for your damage die and take the higher result.
+
+**Disadvantage**
+Roll twice for your damage die and take the lower result.
+
+**Armour X**
+Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
+
 **Anchored**
-You gain a specific benefit as long as you do not change positions. The benefit is stated on the card. If you move, Anchored ends immediately.
+You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
 50% chance to miss. When Blind, roll 1d2 before selecting a card to attack with. On a 1, the attack fails entirely. Lasts until the end of your next turn unless the card specifies otherwise.
@@ -41,6 +53,9 @@ Move a target from Backline to Frontline. The user must be in the Frontline. See
 
 **Scry X**
 Look at the top X cards of your deck. Return them in any order, placing each on top or on the bottom.
+
+**Staggered**
+The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
 
 **Ward**
 Prevent the next debuff applied to you. Expires on use.

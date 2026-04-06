@@ -36,6 +36,14 @@ Not a damage sponge. A positioning predator.
 
 ---
 
+## Passive — Correction Protocol
+
+Whenever the Marshal takes damage from an attack, shuffle 1 Exhaust into the attacker's deck.
+
+It does not retaliate. It logs the interference and loads the cost into the system.
+
+---
+
 ## Combat Identity
 
 Heavy Body. Low Soul. Procedural, not strategic.
@@ -80,4 +88,4 @@ The event was a scheduled function. The schedule continues.
 
 ## Cards
 
-*Pending.*
+**Cards:** `cards/alignment-marshal-engine.md`

@@ -5,7 +5,7 @@ Signature cards for the Briarwatch Jackrabbit. Teaching encounter for positionin
 ---
 
 **BOLT**
-GREEN — SOUL
+GREEN — SOUL — BRIARWOODS
 Attack: Soul + d4
 Effect: Move to Backline.
 Defensive Bonus: Move to Backline.
@@ -15,7 +15,7 @@ Range: Melee
 ---
 
 **NIP**
-RED — BODY
+RED — BODY — BRIARWOODS
 Attack: Body + d4
 Effect: If you are in the Backline, deal +2 damage.
 Defensive Bonus: None.
@@ -25,7 +25,7 @@ Range: Melee
 ---
 
 **FREEZE**
-BLUE — MIND
+BLUE — MIND — BRIARWOODS
 Attack: Mind + d2
 Effect: Scry 1.
 Defensive Bonus: Gain Evade.
@@ -35,7 +35,7 @@ Range: Both
 ---
 
 **QUICKSTEP**
-GREEN — SOUL
+GREEN — SOUL — BRIARWOODS
 Attack: Soul + d4
 Effect: Move to any position.
 Defensive Bonus: Move to any position.

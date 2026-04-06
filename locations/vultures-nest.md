@@ -63,9 +63,59 @@ Players arrive already in debt to him — the crossing requires something coin c
 
 *"Just so we all start off on the right foot."*
 
-He probably knows about the sinkhole in Briarwatch. He won't say so. They'll find out when they get there.
+He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
 
 **Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. The records are also not the Ledger-Keeper's records.
+
+**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
+
+Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
+
+Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
+
+*"You're already ahead of yourselves."*
+*"This path will suit your pace."*
+*"You won't like the other way."*
+
+**GM — Finding Aege**
+Bartho points the party toward her but doesn't walk them over. They have to find her themselves. Make the search matter.
+
+- *Rumors:* Dockers and market traders know there's a guide near the east gate who watches how you walk before she talks to you. Nobody knows her name.
+- *Tracking behavior:* The party may notice someone near the gate watching feet, not faces. She won't approach first.
+- *Noticing patterns:* She's there every morning. She leaves mid-afternoon. She's always alone.
+
+If the party rushes to find her without looking: she finds them. But the route she gives them will suit their pace.
+
+**GM — Backstory**
+Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
+
+Recently her family sent word asking for help. She won't go herself. She's been watching the road for the right party.
+
+**Soft Gate — GM Facing**
+
+The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."
+
+Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
+
+If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
+
+**The Sealed Letter**
+
+At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwoods-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+
+The letter reads:
+
+> Four days west of Briarwatch, there is a forest. I grew up there. I haven't been back in a long time.
+>
+> My family sent word. The animals at the edges have changed behavior. More aggressive. Moving in patterns they don't usually move in. My family doesn't frighten easily.
+>
+> I can't go myself. You've shown me you move carefully. That matters more than I can explain right now.
+>
+> Find them. Find out what's wrong. They'll know you're coming.
+>
+> — Aege
+
+*No further instructions.*
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
@@ -92,6 +142,16 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 ---
 
 ## The Market
+
+**The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
+
+- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
+- *Ignore it:* It opens on its own later. DM chooses when.
+- *Carry it:* Bad idea. The party will figure out why.
+
+Someone brought it in from the Briarwoods direction. Nobody claimed it.
+
+---
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 

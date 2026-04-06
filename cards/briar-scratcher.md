@@ -1,0 +1,33 @@
+# Briar Scratcher — Cards
+
+Signature cards for the Briar Scratcher. See `bestiary/briar-scratcher.md`.
+
+---
+
+**RAKING CUT**
+RED — BODY — BRIARWOODS
+Attack: Body + d2
+Effect: On hit, shuffle 1 Wound into target's deck.
+Defensive Bonus: Attacker shuffles 1 Wound into their own discard.
+Range: Melee
+*"The claws are small. The Wound is not."*
+
+---
+
+**SKITTER AWAY**
+BLUE — MIND — BRIARWOODS
+Attack: Mind + d2
+Effect: After attack, may reposition.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"Gone before the counter."*
+
+---
+
+**NIP AND TEAR**
+GREEN — SOUL — BRIARWOODS
+Attack: Soul + d2
+Effect: If target has a Wound in their deck, deal +2 damage.
+Defensive Bonus: Heal 1.
+Range: Melee
+*"The cut remembers the first one."*

@@ -21,8 +21,11 @@ Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds 
 **Alignment Marshal cards** (`bestiary/alignment-marshal.md`)
 Cards noted as pending. War Engine content is in `quests/war-engine.md`.
 
-**Roadhouse** (`locations/vultures-nest.md`, `locations/briarwatch.md`)
-Referenced in session 1 routing (Vulture's Nest → Roadhouse → Briarwatch) but no dedicated location file. Currently described inline as "government inn, functional, not charming."
+**Roadhouse → Turnroot Weald hook**
+After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter.
+
+**B thread — Quartermaster Voss**
+Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Don't develop until party pulls on it.
 
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is undefined. No creatures, no random encounter table.
