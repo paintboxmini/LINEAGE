@@ -80,4 +80,4 @@ The event was a scheduled function. The schedule continues.
 
 ## Cards
 
-*Pending.*
+**Cards:** `cards/alignment-marshal-engine.md`

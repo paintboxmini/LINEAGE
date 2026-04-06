@@ -42,6 +42,9 @@ Move a target from Backline to Frontline. The user must be in the Frontline. See
 **Scry X**
 Look at the top X cards of your deck. Return them in any order, placing each on top or on the bottom.
 
+**Staggered**
+The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
+
 **Ward**
 Prevent the next debuff applied to you. Expires on use.
 
