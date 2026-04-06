@@ -24,16 +24,6 @@ Range: Melee
 
 ---
 
-**PLATFORM SHOVE**
-RED — BODY — ENGINE
-Attack: Body + d4
-Effect: Target moves to Frontline.
-Defensive Bonus: Anchored — Your attacks deal +2 damage.
-Range: Both
-*"Interference is relocated, not removed."*
-
----
-
 **TARGETING LOCK**
 BLUE — MIND — ENGINE
 Attack: Mind + d4
