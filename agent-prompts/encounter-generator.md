@@ -1,6 +1,6 @@
 # Encounter Generator Prompt
 
-Use this prompt to generate new Tales Untold encounters. Paste it into a new agent session along with relevant repo context (bestiary entries, card files, current keyword list).
+Use this prompt to generate new Tales Untold encounters. Paste it into a new agent session along with relevant repo context (bestiary entries, card files, current keyword list from `experimental/README.md`).
 
 ---
 
@@ -8,17 +8,17 @@ Use this prompt to generate new Tales Untold encounters. Paste it into a new age
 Create a full encounter for Tales Untold.
 
 Constraints:
-- Early game difficulty
+- Early or mid game (state which)
 - Must teach a mechanic through play (not explanation)
 - Use simple, clean effects
 - Avoid generic damage-only actions
-- Keep complexity low
+- Keep complexity appropriate to tier
 
 System context:
 - Positioning matters (Frontline / Backline)
 - Movement can trigger consequences
-- Status cards (like Wound, Exhaust) exist and go into decks
-- Defensive bonuses only trigger on successful defense
+- Status cards (Wound, Exhaust, etc.) go into decks
+- Defensive bonuses trigger only on successful defense
 
 Output format:
 
@@ -31,7 +31,7 @@ Setup:
 (Environment, positioning constraints)
 
 Enemies:
-(Name and short behavior description)
+(Name + short behavioral identity)
 
 Enemy Cards (3):
 - Name (Color — Stat)
@@ -41,37 +41,25 @@ Enemy Cards (3):
 - Range:
 
 Behavior Notes:
-(How enemies act / what triggers them)
+(How enemies act and what triggers them)
 
 Win Condition:
-(How players resolve encounter)
-
-Keep everything consistent with the system.
 
 Before finalizing:
+1. Compare with repo patterns (naming, tone, structure)
+2. Identify at least 2 weaknesses or inconsistencies
+3. Fix them
+4. Ensure no ambiguous targeting, no redundancy with existing cards,
+   and the encounter teaches its intended lesson through mechanics
 
-1. Compare your output against existing repo files for consistency in:
-   - wording
-   - mechanics
-   - tone
-
-2. Perform one red-team pass:
-   - Identify at least 2 weaknesses or inconsistencies
-   - Fix them
-
-3. Ensure:
-   - No ambiguous targeting
-   - Effects are not redundant with existing cards
-   - The encounter teaches its intended lesson through mechanics
-
-Then present the final version only.
+Return final version only.
 ```
 
 ---
 
-## Notes
+## Reference Files
 
-- Always cross-reference the current keyword list in `experimental/README.md` before writing card effects
-- Check `rules/card-glossary.md` for keyword definitions
-- Existing encounter examples: `quests/shifting-burrow.md`, `quests/hollow-below-briarwatch.md`
-- Tone reference: terse, mechanical, present tense — see `cards/alignment-marshal-engine.md`
+- Keyword list: `experimental/README.md`
+- Keyword definitions: `rules/card-glossary.md`
+- Encounter examples: `quests/shifting-burrow.md`, `quests/hollow-below-briarwatch.md`
+- Tone reference: `cards/alignment-marshal-engine.md`
