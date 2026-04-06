@@ -209,7 +209,7 @@ Instructions after Briarwatch point to the capital — not back to Vulture's Nes
 
 ## The Sailor's Story
 
-*Told in the Gilded Tusk the night of arrival. Connected to the Archipelago and the Oracle.*
+*Told on the ship the night before arrival. Connected to the Archipelago and the Oracle.*
 
 A sailor sits alone. Salt-stiff coat. Hands wrapped in linen. Not drinking.
 
