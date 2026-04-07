@@ -24,7 +24,7 @@ If the party later finds a tree with a human hand growing from it like a flower 
 - Attack: Body + d6
 - Range: Both (can strike from Backline through roots)
 - Effect: On hit, pull target to Frontline (if not already there).
-- Defensive Bonus: Attacker gains 1 "Rooted" token (cannot change position next turn).
+- Defensive Bonus: Attacker gains Rooted.
 
 **Passive — Predator Focus**
 Each consecutive attack on the same target deals +1 damage (stacks up to +3). Resets if target changes or dies.
@@ -72,7 +72,7 @@ Thick, dark-green sap. Smells metallic and green.
 - Drink: Heal 4 HP
 - Apply to weapon: +2 damage on next melee attack
 
-**Side effect:** After use, gain 1 "Rooted" token (cannot change position next turn) — the sap tries to anchor you.
+**Side effect:** After use, gain Rooted — the sap tries to anchor you.
 
 ---
 

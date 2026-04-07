@@ -88,6 +88,9 @@ Enemies cannot look at or manipulate your hand or deck. Does not prevent adding 
 **Advantage / Disadvantage**
 Roll twice, take higher (Advantage) or lower (Disadvantage) result. Definition in `rules/card-glossary.md`. Cards use the keyword only — no inline definitions.
 
+**Thorns X**
+Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Definition in `rules/card-glossary.md`.
+
 **Expose [Color]**
 Blind selection from target's hand. If the selected card matches the stated color, apply the stated conditional effect. Definition in `rules/card-glossary.md`.
 

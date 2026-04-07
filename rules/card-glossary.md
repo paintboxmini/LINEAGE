@@ -52,10 +52,13 @@ Cannot change position until the start of your next turn.
 Move a target from Backline to Frontline. The user must be in the Frontline. See `rules/combat.md`.
 
 **Scry X**
-Look at the top X cards of your deck. Return them in any order, placing each on top or on the bottom.
+Look at the top X cards of a deck. If no target is specified, this applies to your own deck. Return them in any order, placing each on top or on the bottom.
 
 **Staggered**
 The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
+
+**Thorns X**
+Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves.
 
 **Ward**
 Prevent the next debuff applied to you. Expires on use.
