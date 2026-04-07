@@ -7,8 +7,8 @@ Signature cards for the Delve Roller. See `bestiary/delve-roller.md`.
 **PATIENCE OF STONE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Anchored — At the start of your next turn, heal 2 HP.
-Defensive Bonus: Gain Advantage on your next damage roll (roll twice, take the higher result).
+Effect: Anchored — At the start of each of your turns, heal 2 HP.
+Defensive Bonus: Gain Advantage.
 Range: Melee
 *"The unshaken abide, while chaos churns."*
 
