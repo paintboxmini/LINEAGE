@@ -28,7 +28,7 @@ Range: Ranged
 GREEN — SOUL — WEALD
 Attack: Soul + d2
 Effect: Target has −2 to all dice rolls until the end of their next turn.
-Defensive Bonus: Rooted — target cannot move positions next round.
+Defensive Bonus: Target gains Rooted.
 Range: Both
 *"The Weald does not block your exit; it simply makes the price of movement too high."*
 

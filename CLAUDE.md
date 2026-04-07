@@ -21,6 +21,8 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `mythology/` | Lore and creation myths |
 | `world/` | Geography, factions, organizations |
 | `factions/` | Faction documents |
+| `experimental/` | Sandbox — write freely, nothing moves to canon without approval |
+| `agent-prompts/` | Drop-in prompts for common design tasks |
 
 ## File Format Conventions
 
@@ -80,6 +82,20 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 - HP: (3 × Body) + 6
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Rooted
+
+## Agent Workflow
+
+1. **Orient** — Read `memory.md`, then run `agent-prompts/repo-orientation.md`. Understand structure before writing.
+2. **Select prompt** — Use the appropriate tool from `agent-prompts/`:
+   - Encounter design → `encounter-generator.md`
+   - Card set design → `card-set-generator.md`
+   - Content review → `red-team.md`
+   - Fit check → `alignment-checker.md`
+3. **Self-check** — Before presenting output, run the red team process internally. Fix at least 2 issues.
+4. **Output** — Return only finalized content. No drafts unless requested.
+5. **Wait** — After completion, await next instruction. Do not assume next task.
+
+Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is the source of truth.
 
 ## Do Not
 

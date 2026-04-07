@@ -18,17 +18,14 @@ Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don
 **Phase-Leach** (`bestiary/phase-leach.md`)
 Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds on arcane energy. No mechanics yet.
 
-**Alignment Marshal cards** (`bestiary/alignment-marshal.md`)
-Cards noted as pending. War Engine content is in `quests/war-engine.md`.
-
 **Roadhouse → Turnroot Weald hook**
-After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter.
+After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter and "Finding Aege" GM guidance.
 
 **B thread — Quartermaster Voss**
 Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Don't develop until party pulls on it.
 
 **Road encounters**
-Day 1 travel between Vulture's Nest and Briarwatch is undefined. No creatures, no random encounter table.
+Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
 **Underground Tavern gambling mechanics** (`locations/underground-tavern.md`)
 Marked as pending in the file.
@@ -55,8 +52,8 @@ Bearer of the Seat of Love/Binding. Bound beneath Eclipsera. The city's unity ru
 **Animal titles = scar tissue**
 The council's animal symbols (Lion, Panther, Bear, Fox, Owl, Pig, Elephant) are not heraldic. They're the shape the Seat left on each person when the attempt failed.
 
-**Card system: 3 signature cards per creature**
-Creature combat decks are filled from core cards. Signature cards are Oracle rewards — 3 per creature keeps the system lean. The experimental loop (draft 9, red team, cut to 3) is the standard process for new signature sets.
+**Card system: signature sets**
+Creature combat decks are filled from core cards. Signature cards are Oracle rewards. Drew determines how many land in a given set after reviewing the full 9. The standard loop: draft 9, red team all 9, fix/cut/replace until all pass, present all 9, Drew decides placement.
 
 **HP formula: (3 × Body) + 6**
 Canonical per quick reference. Earlier expanded docs had +3 — that was an error, corrected.
@@ -72,6 +69,33 @@ Takes half damage rounded down. Definition in glossary.
 
 **Wound**
 No effect when drawn. Discard at end of turn. 1 removed per short rest. Definition in glossary.
+
+**Exhaust**
+Status card seeded into player decks. Cannot be played. Removed from deck at short rest. When discarded, take 2 damage. See `cards/tithe-engine-ashfall.md` for full text.
+
+**Anchored**
+A stated benefit that persists as long as you hold your position. Triggers at the start of each of your turns. Ends immediately on repositioning. Written as: `Anchored — [benefit per turn].`
+
+**Armour X**
+Reduce all incoming attack damage by X. Applies before Resist. Definition in `rules/card-glossary.md`.
+
+**Staggered**
+The next time you are attacked, you cannot defend. Definition in `rules/card-glossary.md`.
+
+**Obscure**
+Enemies cannot look at or manipulate your hand or deck. Does not prevent adding status cards. Definition in `rules/card-glossary.md`.
+
+**Advantage / Disadvantage**
+Roll twice, take higher (Advantage) or lower (Disadvantage) result. Definition in `rules/card-glossary.md`. Cards use the keyword only — no inline definitions.
+
+**Expose [Color]**
+Blind selection from target's hand. If the selected card matches the stated color, apply the stated conditional effect. Definition in `rules/card-glossary.md`.
+
+**Alignment Marshal — Correction Protocol**
+Passive ability on the Marshal stat block: whenever the Marshal takes damage, shuffle 1 Exhaust into the attacker's deck. See `bestiary/alignment-marshal.md`. Cards: `cards/alignment-marshal-engine.md`.
+
+**Aege — the Carrion Guide**
+Named NPC at Vulture's Nest. Turnroot native. Gives party the sealed letter hook to Turnroot Weald. Also gives Carrion Feather item on handoff. Refer to her as "the Carrion Guide" in session — Aege is her name. See `locations/vultures-nest.md`.
 
 ---
 
@@ -93,6 +117,32 @@ Current keyword list in `experimental/README.md`.
 4. Generate replacements for any cuts (matching color).
 5. Loop until all 9 pass red team.
 6. Present all 9 to Drew with your read on which are strongest — Drew decides where they land (signature set, Oracle, archive, etc.).
+
+---
+
+## Content Reference
+
+**Locations**
+- `locations/vultures-nest.md` — Session 0/1 hub. Aege, Bartho, Kino, Corvel, Moving Crate.
+- `locations/roadhouse.md` — Government inn between Vulture's Nest and Briarwatch. Two Regency guards on rotation. Barracks: weapon rack, chest (d6+2 silver, Barbed Wrap, posting order). Posting order → Voss thread.
+- `locations/briarwoods.md` — Travel region north of Vulture's Nest. Surrounds Roadhouse and Briarwatch. Day 1 and Day 2 routing. Jackrabbits and Scratchers.
+- `locations/briarwatch.md` — Village location, leads into Hollow Below Briarwatch.
+
+**Creatures**
+- `bestiary/briar-scratcher.md` — Mind 1/Body 1/Soul 2, HP 9. Road encounter teaching Wounds as deck pressure. Cards: `cards/briar-scratcher.md`.
+- `bestiary/delve-roller.md` — Mind 1/Body 2/Soul 1, HP 12. Rolled Shell passive (−1 all incoming damage). Immune to Blind. Cards: `cards/delve-roller-hollow.md`.
+
+**Quests / Encounters**
+- `quests/shifting-burrow.md` — Alternate surface encounter near Briarwatch. Borrower Sentries. Backline movement requires Easy Body check (fail = Exhaust). Cards: BURROW RESHUFFLE, ALERT CALL, DIRT CLOD.
+- `quests/hollow-below-briarwatch.md` — References Shifting Burrow as alternate Surface Layer encounter.
+
+**Items**
+- `items/briarwoods-items.md` — Barbed Wrap, Carrion Feather, Split Wedge.
+- `items/vultures-nest-items.md` — Dockhook Line, Low Lantern, Salted Strip, Dock Broth, Chewfat Ration.
+- `items/consumables.md` — Terrormite Capsule, Echo Shell, Blood Phial, Imprint Sigil, Universal Pin, Phase Draught.
+
+**Agent Prompts** (`agent-prompts/`)
+Drop-in prompts for common design tasks. See `agent-prompts/README.md` for full index. Always run `repo-orientation.md` first in a new session.
 
 ---
 
