@@ -48,9 +48,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Ledger-Keeper** — keeps port records no one wants exposed. No one knows how old she is.
-
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night. *Open thread — develop when relevant.*
 
 ---
 
@@ -63,9 +61,11 @@ Players arrive already in debt to him — the crossing requires something coin c
 
 *"Just so we all start off on the right foot."*
 
+**If the party refuses:** Bartho doesn't argue. He says nothing else. Within the hour, two dockhands with Compact badges find the party and escort them to the Nest's holding cell — a converted cargo hold under the west dock. Bartho visits once. Still quiet. Still polite. The offer stands. So does the cell.
+
 He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
 
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. The records are also not the Ledger-Keeper's records.
+**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want. The records are also not Bartho's personal ledger.
 
 **Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
@@ -138,6 +138,10 @@ The kid gang operating on the docks. Named by the scarves, not a gang name. Ever
 If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain has moved it.
 
 *If something pilfered shows up later (a personal item in a market stall two sessions later) — play it for texture, not punishment.*
+
+**If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
+
+Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
 
 ---
 
