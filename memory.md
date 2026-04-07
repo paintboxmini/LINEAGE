@@ -18,9 +18,6 @@ Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don
 **Phase-Leach** (`bestiary/phase-leach.md`)
 Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds on arcane energy. No mechanics yet.
 
-**Warden Cards** (`experimental/warden-briarwatch-cards.md`)
-9 Warden cards (3R/3B/3G) with Exhaust as core mechanic. Passed internal red team. Drew hasn't reviewed all 9 — don't move to canon without sign-off. Distinct from Marshal — Warden cards have cave/terrain flavor; Marshal cards are War Engine-specific.
-
 **Roadhouse → Turnroot Weald hook**
 After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter and "Finding Aege" GM guidance.
 
