@@ -139,6 +139,8 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 
 *If something pilfered shows up later (a personal item in a market stall two sessions later) — play it for texture, not punishment.*
 
+**If the party earned Bartho's trust:** Bartho sees the kids moving in and gives a short wave — not at the party. At Kino. The kids peel off without a word. The party may not even notice. Bartho doesn't mention it.
+
 **If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
@@ -163,7 +165,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 **Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Lost a ship to the Unheld fifteen years ago. Only one who came back. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet. *Corvel may be a name already used elsewhere in the world — verify before finalizing.*
 
-**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
+**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
 ---
 
@@ -176,6 +178,29 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 **The Warden's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Warden who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
+
+---
+
+## The Listing Keel — Tavern
+
+The building sits two degrees off level. Nobody fixed it after the last rebuild. Furniture has been shimmed so many times the legs are all different lengths.
+
+Smells like old ale, smoked fish, and salt-damp wood. Loud enough that conversations stay private without trying. The kind of place where sailors drink because it's the cheapest option and nobody makes you talk.
+
+**Salla** — the barkeep. Short, wide, moves fast. Hair pinned back with a fishhook that has seen use. Keeps a sawn-off boat hook behind the bar. Nobody has seen her use it, but it's never dusty.
+
+Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
+
+*"Ale or the brown stuff?"*
+
+**The Back Corner** — round table, low ceiling, one candle. The salt-stiff sailor is already there on the night the party arrives. Not drinking yet. Hands wrapped in linen. Watching the door.
+
+*This is where the Sailor's Story happens. See the section below.*
+
+**What's available:**
+- Salted Strip — on the bar, free with a drink
+- Dock Broth — Salla makes it from whatever was left on the docks that day. She charges less for it than it's worth and recommends it sincerely.
+- A single room upstairs — one bed, a hammock nailed to the wall, no lock. First come.
 
 ---
 
@@ -213,7 +238,7 @@ Instructions after Briarwatch point to the capital — not back to Vulture's Nes
 
 ## The Sailor's Story
 
-*Told in the Gilded Tusk the night of arrival. Connected to the Archipelago and the Oracle.*
+*Told in the Listing Keel the night of arrival. Connected to the Archipelago and the Oracle.*
 
 A sailor sits alone. Salt-stiff coat. Hands wrapped in linen. Not drinking.
 
