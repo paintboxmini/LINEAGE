@@ -34,7 +34,7 @@ Masaharu begins each combat Loaded.
 
 While Loaded, all his attacks deal +d6 damage.
 
-Playing OPEN FIRE fires the gun — after the attack resolves, he becomes Unloaded and loses the +d6 bonus until he Reloads.
+After any attack — win or lose the reveal — he becomes Unloaded and loses the +d6 bonus until he Reloads.
 
 **Reload:** Costs his full action. Or — free reload triggers automatically when he Scrys 3 or more cards total in a single round (accumulated across all card effects that round). Or — a card effect says "Reload."
 
