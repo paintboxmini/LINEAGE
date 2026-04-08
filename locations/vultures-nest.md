@@ -119,6 +119,19 @@ The letter reads:
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
+**Masaharu** — *(name is a deliberate tonal outlier — old player character)* — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
+
+Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
+
+He is in Vulture's Nest because something passes through here that shouldn't. He hasn't said what. The Compact knows he's here. They are being careful.
+
+*Methodical, quiet, reads people fast. Won't approach the party first — he'll clock them and wait to see what they do. If they're worth talking to, he'll make contact on his own timeline.*
+
+*In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He does not come to Frontline.*
+
+**GM — Using Masaharu**
+He's an information node and a slow-burn complication. He may know things about the Voss thread, about Harlow, or about something the party hasn't noticed yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party crosses into one of his active investigations without knowing, he'll find a way to make that known without blowing his position.
+
 **Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 
 He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
