@@ -32,11 +32,11 @@ When he fires, the sound is wrong for the space — too clean, too focused. Like
 
 Masaharu begins each combat Loaded.
 
-While Loaded, his attacks deal +d6 damage.
+While Loaded, all his attacks deal +d6 damage.
 
-When he fires (plays OPEN FIRE with the +d6 bonus), he becomes Unloaded.
+Playing OPEN FIRE fires the gun — after the attack resolves, he becomes Unloaded and loses the +d6 bonus until he Reloads.
 
-**Reload:** Costs his full action. Or — free reload triggers automatically when he Scrys 3 or more cards total in a single round (accumulated across all card effects that round).
+**Reload:** Costs his full action. Or — free reload triggers automatically when he Scrys 3 or more cards total in a single round (accumulated across all card effects that round). Or — a card effect says "Reload."
 
 ---
 

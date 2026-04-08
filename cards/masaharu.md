@@ -28,8 +28,8 @@ Range: Both
 
 **OPEN FIRE**
 RED — BODY
-Attack: Body + d6 (+d6 if Loaded, then Unload)
-Effect: If target has Blind or Staggered, deal +2 damage.
+Attack: Body + d6
+Effect: Unload. If target has Blind or Staggered, deal +2 damage.
 Defensive Bonus: Reload.
 Range: Ranged
 *"One chance. He already knew when to take it."*
