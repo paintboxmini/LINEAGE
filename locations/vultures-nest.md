@@ -132,6 +132,8 @@ He is in Vulture's Nest because something passes through here that shouldn't. He
 **GM — Using Masaharu**
 He's an information node and a slow-burn complication. He may know things about the Voss thread, about Harlow, or about something the party hasn't noticed yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party crosses into one of his active investigations without knowing, he'll find a way to make that known without blowing his position.
 
+**Stat block and cards:** `bestiary/masaharu.md`, `cards/masaharu.md`
+
 **Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 
 He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
