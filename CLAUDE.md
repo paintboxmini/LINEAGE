@@ -91,13 +91,18 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
    - Card set design → `card-set-generator.md`
    - Content review → `red-team.md`
    - Fit check → `alignment-checker.md`
-3. **Run automatic triggers** — These are not optional. See `agent-prompts/README.md` for the full table. At minimum:
+3. **Clarify before executing** — Before writing anything, surface what you need to know. This step is mandatory. Cover:
+   - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
+   - **Suggestions** — related content worth connecting, mechanical options Drew may not have considered
+   - **Concerns** — conflicts with existing content, scope that feels too large or too small, missing prerequisites
+   - Keep it brief. 2–4 items max. Then wait for a response before proceeding.
+4. **Run automatic triggers** — These are not optional. See `agent-prompts/README.md` for the full table. At minimum:
    - Any card drafted → run `red-team.md` before presenting
    - Any encounter or quest content → run `red-team.md` Quest/Encounter pass
    - Any content touching an existing location, faction, or NPC → run `alignment-checker.md`
    - Any content for canon approval → run `alignment-checker.md` + Soul Pass
-4. **Output** — Return only finalized content. No drafts unless requested.
-5. **Wait** — After completion, await next instruction. Do not assume next task.
+5. **Output** — Return only finalized content. No drafts unless requested.
+6. **Wait** — After completion, await next instruction. Do not assume next task.
 
 Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is the source of truth.
 

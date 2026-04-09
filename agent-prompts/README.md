@@ -35,7 +35,13 @@ These prompts are not optional when their trigger condition is met. Run them wit
 ## Workflow
 
 1. Orient (`repo-orientation.md`)
-2. Execute (select prompt above)
-3. Run automatic triggers for the content type produced
-4. Present to Drew — Drew decides what goes to canon
-5. Wait for next instruction
+2. Select prompt for the task
+3. **Clarify before executing** — surface clarifications, suggestions, and concerns before writing anything. Wait for Drew's response. Things that commonly need clarification:
+   - Session timing (when does this enter the story?)
+   - Encounter scope (party size, expected length, pressure level)
+   - NPC relationship to party (ally / enemy / neutral / depends on choices)
+   - Whether this connects to an existing pending thread
+4. Execute
+5. Run automatic triggers for the content type produced
+6. Present to Drew — Drew decides what goes to canon
+7. Wait for next instruction
