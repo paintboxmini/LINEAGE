@@ -18,7 +18,11 @@ For the session 1 opening scene, see the Entry section below.
 
 ## The Tideward Compact
 
-The docks are governed by the Tideward Compact — a council of dockmasters, pirates, and record-keepers. Official authority exists, for a price.
+The docks are governed by the Tideward Compact — a council of three: Bartho (dockmaster), Jonas (ledger-keeper and Regency informant), and Harlow (pirate faction). Official authority exists, for a price.
+
+The Compact manages what moves through the Nest. This includes a significant volume of goods that would be illegal almost anywhere else: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance. The Regency knows. The Regency condones it. The arrangement is simple — anything goes, as long as it moves through the right channels and the council gets its cut.
+
+The hard lines are predictable: nothing so destructive it destabilizes the region, nothing so visible it forces the Regency to acknowledge it publicly, and nothing moves without the council's percentage. Cross any of those and the Regency's response is quiet, professional, and final.
 
 *Nothing illegal passes through. Only unrecorded things.*
 
@@ -65,7 +69,11 @@ Players arrive already in debt to him — the crossing requires something coin c
 
 He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
 
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want. The records are also not Bartho's personal ledger.
+**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
+
+He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipsera South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+
+Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
 **Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
@@ -123,14 +131,34 @@ The letter reads:
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
-He is in Vulture's Nest because something passes through here that shouldn't. He hasn't said what. The Compact knows he's here. They are being careful.
+He is in Vulture's Nest because Wizard Gulp is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+
+Wizard Gulp crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
+
+What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Masaharu is here to find out.
 
 *Methodical, quiet, reads people fast. Won't approach the party first — he'll clock them and wait to see what they do. If they're worth talking to, he'll make contact on his own timeline.*
 
 *In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He does not come to Frontline.*
 
 **GM — Using Masaharu**
-He's an information node and a slow-burn complication. He may know things about the Voss thread, about Harlow, or about something the party hasn't noticed yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party crosses into one of his active investigations without knowing, he'll find a way to make that known without blowing his position.
+He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the Wizard Gulp thread without knowing what it is, he'll find a way to make that known without blowing his position.
+
+---
+
+## Rumors
+
+Fragments the party might catch. None complete. Each pointing at something without naming it.
+
+*"The line at Giblets' stall in the bazaar has been getting longer for a year. Someone's keeping it stocked."*
+
+*"Jonas was at the docks late two nights running. Bartho wasn't with him."*
+
+*"Three sailors came back from Eclipsera different. Not sick. Just... different. They don't talk about it."*
+
+*"Harlow's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
+
+*"The man with the boomstick has been asking about the Moving Crate."*
 
 **Stat block and cards:** `bestiary/masaharu.md`, `cards/masaharu.md`
 
