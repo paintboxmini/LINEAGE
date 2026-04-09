@@ -76,7 +76,7 @@ The stall sells food. Specifically: whatever eldritch thing is currently on the 
 
 The line in front of the stall is the bazaar's most famous feature. It grows. It does not shrink. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long. The food is transformative enough that people come back anyway.
 
-Giblets has a plan. It connects to someone he used to work with. He does not discuss it.
+Giblets has a plan. It connects to someone he used to work with — someone currently operating out of Vulture's Nest. He does not discuss it. The supply chain keeping his stall stocked bypasses the Tideward Compact's ledger and doesn't appear in Quartermaster Voss's intake at Eclipsera South Gate. The Regency noticed the pandemic end of this chain first. They are working backward.
 
 **The Tattooist — Keeper of Echoes**
 

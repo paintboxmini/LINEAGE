@@ -22,7 +22,10 @@ Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds 
 After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter and "Finding Aege" GM guidance.
 
 **B thread — Quartermaster Voss**
-Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Don't develop until party pulls on it.
+Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the Wizard Gulp thread. Don't develop until party pulls on it.
+
+**Wizard Gulp pipeline**
+Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/underground-bazaar.md` (Giblets).
 
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
@@ -126,7 +129,7 @@ Current keyword list in `experimental/README.md`.
 ## Content Reference
 
 **Locations**
-- `locations/vultures-nest.md` — Session 0/1 hub. Aege, Bartho, Kino, Corvel, Moving Crate.
+- `locations/vultures-nest.md` — Session 0/1 hub. Aege, Bartho, Kino, Corvel, Moving Crate. Tideward Compact: Bartho (dockmaster), Jonas (ledger-keeper + Regency informant), Harlow (pirate faction). Condoned smuggling: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance — anything with a council cut and no Regency visibility. Hard lines: too destructive, too visible, or no cut = quiet final response. Masaharu investigating Wizard Gulp supply chain.
 - `locations/roadhouse.md` — Government inn between Vulture's Nest and Briarwatch. Two Regency guards on rotation. Barracks: weapon rack, chest (d6+2 silver, Barbed Wrap, posting order). Posting order → Voss thread.
 - `locations/briarwoods.md` — Travel region north of Vulture's Nest. Surrounds Roadhouse and Briarwatch. Day 1 and Day 2 routing. Jackrabbits and Scratchers.
 - `locations/briarwatch.md` — Village location, leads into Hollow Below Briarwatch.
