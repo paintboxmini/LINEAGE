@@ -66,7 +66,7 @@ They track everything: purchases, time spent near oversaturated areas, smiles gi
 
 ## Vendors
 
-**Giblets — The Wizard Gulp Stall**
+**Giblets — The FourthEye Stall**
 
 Purple canopy. Symbols on the fabric that rearrange when no one's looking. The smell of something eldritch on a grill.
 
@@ -134,7 +134,7 @@ A plant sold at one of the vendor stalls. Shaped like a figure holding a child. 
 
 The offspring are harmless at first. If they survive long enough to reach adolescence, they become briefly dangerous. If they reach maturity, they take on the form of the Mother again.
 
-The symbiotic variant bonds to whoever tends it and begins to resemble them. The environmental variant, if left unchecked, grows to enormous size. Players who deal with an oversized one earn a Wizard Gulp — and move to the front of the line. Temporarily.
+The symbiotic variant bonds to whoever tends it and begins to resemble them. The environmental variant, if left unchecked, grows to enormous size. Players who deal with an oversized one earn a FourthEye — and move to the front of the line. Temporarily.
 
 *Full culinary notes pending — Delicious in Dungeon cross-reference.*
 
@@ -156,7 +156,7 @@ Hollow where humor used to live. Not sad about it. Functional.
 
 Uses the Cartographers Guild as a working cover. Has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere.
 
-Her tattoo reacts to the bazaar — specifically near the Wizard Gulp stall. She has not asked why.
+Her tattoo reacts to the bazaar — specifically near the FourthEye stall. She has not asked why.
 
 ---
 

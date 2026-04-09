@@ -131,9 +131,9 @@ The letter reads:
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
-He is in Vulture's Nest because Wizard Gulp is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+He is in Vulture's Nest because FourthEye is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
 
-Wizard Gulp crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
+FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
 What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Masaharu is here to find out.
 
@@ -142,7 +142,7 @@ What's being moved from the Nest, who is moving it, and who at the Nest is runni
 *In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He does not come to Frontline.*
 
 **GM — Using Masaharu**
-He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the Wizard Gulp thread without knowing what it is, he'll find a way to make that known without blowing his position.
+He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the FourthEye thread without knowing what it is, he'll find a way to make that known without blowing his position.
 
 ---
 
