@@ -4,7 +4,7 @@
 
 **Cards:** `cards/masaharu.md`
 
-**Mind 4 / Body 2 / Soul 2 — HP 12**
+**Mind 5 / Body 3 / Soul 4 — HP 15**
 
 **Position:** Backline. He does not come to Frontline.
 
@@ -52,8 +52,24 @@ He is most dangerous when he has had one full round to read the party.
 
 ---
 
-## Cards
+## Deck
 
-**Cards:** `cards/masaharu.md`
+**Signature cards:** `cards/masaharu.md` — unique to Masaharu, not transferable.
 
-*Signature cards are unique to Masaharu. They cannot be awarded to players or transferred to other gunners — they reflect his specific training, load style, and method.*
+**Core cards (3 Blue / 3 Red / 4 Green):**
+
+*Blue — Mind*
+- PROFILE — Scry 2; Defensive: Staggered on attacker
+- ALIGN — Scry 2; Defensive: conditional draw 1
+- AXIOM — Color denial; Defensive: Scry 2 of attacker's deck
+
+*Red — Body*
+- GROUNDING STANCE — Ignore forced repositioning; Defensive: Resist
+- BURN BRIGHT — Exile 1 from hand, +2 damage (Ranged); Defensive: Exile from discard
+- ENDURE — Gain Resist; Defensive: Heal 3 HP
+
+*Green — Soul*
+- DEAD RECKONING — Scry 2; Defensive: Blind on attacker
+- DELAY — Defender goes last next round; Defensive: Attacker goes last next round
+- SCRIPTURE OF ECHOES — Both discard 1; heal 4 if different colors; Defensive: ally heals 4
+- READ — Defender reveals hand; Defensive: Name color, discard matching card from attacker's hand
