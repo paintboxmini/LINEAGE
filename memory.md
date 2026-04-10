@@ -133,6 +133,7 @@ Current keyword list in `experimental/README.md`.
 - `locations/roadhouse.md` — Government inn between Vulture's Nest and Briarwatch. Two Regency guards on rotation. Barracks: weapon rack, chest (d6+2 silver, Barbed Wrap, posting order). Posting order → Voss thread.
 - `locations/briarwoods.md` — Travel region north of Vulture's Nest. Surrounds Roadhouse and Briarwatch. Day 1 and Day 2 routing. Jackrabbits and Scratchers.
 - `locations/briarwatch.md` — Village location, leads into Hollow Below Briarwatch.
+- `locations/the-coil.md` — Labyrinth island off Vulture's Nest coast. Surfaces on condition only the Night Ferryman knows. Hidden wall-following rule; breaking it raises pressure track and alerts minotaurs. Center: open/TBD. Minotaur stat block pending.
 
 **Creatures**
 - `bestiary/briar-scratcher.md` — Mind 1/Body 1/Soul 2, HP 9. Road encounter teaching Wounds as deck pressure. Cards: `cards/briar-scratcher.md`.

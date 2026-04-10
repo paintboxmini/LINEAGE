@@ -52,7 +52,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night. *Open thread — develop when relevant.*
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night. Knows when The Coil surfaces off the coast and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `locations/the-coil.md`.
 
 ---
 
