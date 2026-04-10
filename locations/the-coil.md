@@ -60,6 +60,7 @@ A thin line of light that briefly traces the correct path forward. It appears fo
 **It appears when:**
 - A player is zapped by the orb at the First Fork
 - A player finds the diamond beneath the chest at the First Fork
+- The party frees the trapped deer (brighter, lasts slightly longer)
 - *Additional triggers — add when the story warrants*
 
 **Noticing it:** Perception check.
@@ -86,6 +87,24 @@ The first junction inside the Coil. Both objects are visible from the fork befor
 *The orb cannot be moved, extinguished, or destroyed by conventional means.*
 
 **What the fork is actually doing:** Splitting the party's attention before they've committed to a wall. Players who go different directions are already on different wall-following paths. Players who debate too long at the junction have already hesitated. The friction starts here.
+
+---
+
+## The Light/Dark Fork
+
+Further in. A junction where one passage is lit — warm, steady, sourceless — and one is completely dark. Carved into the wall at the split: a stone face. Rough-featured, old. It speaks when the party arrives.
+
+*"Will you bask in the light, or serve in the dark?"*
+
+It waits. It does not elaborate. It will not answer follow-up questions.
+
+**The face disapproves of any answer.** It does not matter which path they choose. The labyrinth is not testing the choice — it is testing what the choice costs the party. Do they decide together? Does one person speak for everyone? Do they argue? Does someone walk off while the debate is still happening?
+
+If the party reaches a decision without friction: the face is silent. They proceed.
+
+If the party argues — raised voices, visible tension, anyone moving toward a path before a decision is made: pressure track +1. The face does not react to this. It has already seen it.
+
+**Both paths lead to the same place.** The lit passage and the dark passage converge further in. The face knew this. The question was never about the destination.
 
 ---
 
@@ -132,6 +151,36 @@ They do not guard the entrance. They are already inside.
 **At track 7+:** Encounter. They fight in tight corridors. They do not enter the center.
 
 **Stat block:** `bestiary/minotaur.md` *(pending)*
+
+---
+
+## The Chitterers
+
+Small. Fast. Somewhere between fey and vermin. They live in the walls — or behind them, or in gaps that shouldn't fit anything — and emerge when something interesting is happening. Frantic chittering language the party won't understand. They sound like an argument conducted entirely in static.
+
+They are not part of the pressure track. They are not aggressive. They are neutral entities operating on their own logic, which has nothing to do with the party and everything to do with the labyrinth.
+
+They carry crystal knives and arrowheads — small, sharp, clearly worked. The crystal is pale and slightly luminous.
+
+If the party lingers near their territory or handles things they shouldn't: the Chitterers chitter furiously. Like a squirrel that has decided to make its feelings known. They do not attack. They do not stop chittering until the party moves on.
+
+**Stat block:** `bestiary/chitterer.md` *(pending)*
+
+---
+
+### The Trapped Deer
+
+An encounter inside the Coil, separate from the minotaur pressure.
+
+A small deer stands caught in a Chitterer snare — fine-spun cord, neatly made. Its horns are crystal. The same pale, slightly luminous crystal as the Chitterers' blades.
+
+Chitterers are nearby. Watching. They chitter with low urgency when the party gets close.
+
+**The connection is visible:** The deer's horns are the source material for the crystal weapons. The party doesn't need a roll to make this — it's there if they look at both things at the same time.
+
+**If the party frees the deer:** The Chitterers scatter, chittering furiously as they go. The deer stands still for a moment. Then the glowing thread appears from it — brighter than before, lasting a half-second longer. Perception check to catch it. Then the deer is gone.
+
+**If the party doesn't free the deer:** The Chitterers eventually return. The deer stays where it is. The thread does not appear.
 
 ---
 
