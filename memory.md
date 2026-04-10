@@ -27,6 +27,12 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 **FourthEye pipeline**
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/underground-bazaar.md` (Giblets).
 
+**Minotaur stat block** (`bestiary/minotaur.md`)
+Pending. Guardian creatures of The Coil. Do not enter the center. Fight in tight corridors. Triggered by pressure track reaching 7+.
+
+**Chitterer stat block** (`bestiary/chitterer.md`)
+Pending. Small trickster fey-energy creatures in The Coil. Frantic chittering language. Carry crystal knives and arrowheads harvested from deer with crystal horns. Neutral — not part of pressure track, not aggressive. Flee when the trapped deer is freed.
+
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 

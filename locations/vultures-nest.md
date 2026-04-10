@@ -236,9 +236,7 @@ Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
 
 *"Ale or the brown stuff?"*
 
-**The Back Corner** — round table, low ceiling, one candle. The salt-stiff sailor is already there on the night the party arrives. Not drinking yet. Hands wrapped in linen. Watching the door.
-
-*This is where the Sailor's Story happens. See the section below.*
+**The Back Corner** — round table, low ceiling, one candle. A good place to overhear things. A good place to not be overheard.
 
 **What's available:**
 - Salted Strip — on the bar, free with a drink
