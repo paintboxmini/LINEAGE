@@ -28,13 +28,13 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/underground-bazaar.md` (Giblets).
 
 **Minotaur stat block** (`bestiary/minotaur.md`)
-Pending. Guardian creatures of The Coil. Do not enter the center. Fight in tight corridors. Triggered by pressure track reaching 7+.
+Done. Mind 3/Body 6/Soul 5, HP 24. Passives: Labyrinth Bond (+d6 while pressure 5+), Corridor Fighter (repositioning requires action + Body DC 13). Cards pending.
 
 **Chitterer stat block** (`bestiary/chitterer.md`)
-Pending. Small trickster fey-energy creatures in The Coil. Frantic chittering language. Carry crystal knives and arrowheads harvested from deer with crystal horns. Neutral — not part of pressure track, not aggressive. Flee when the trapped deer is freed.
+Done. Mind 1/Body 1/Soul 2, HP 9. Passives: Scatter (Evade on damage), Noise (pressure +1 if attacked and survives). Cards pending.
 
 **Wall-Reader stat block** (`bestiary/wall-reader.md`)
-Pending. Blind pale creature in The Coil's underground. Follows the left wall. Ignores the party if they follow the same rule; attacks if the rule is broken near it. Not a minotaur, not on the pressure track.
+Done. Mind 3/Body 4/Soul 4, HP 18. Passives: Wall-Sense (can't be Blinded, always aware of wall-contact positions), Triggered (non-aggressive until rule broken nearby). Cards pending.
 
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
