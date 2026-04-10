@@ -53,6 +53,42 @@ The Ferryman's hint is the only external clue. Inside, the evidence is in the wa
 
 ---
 
+## The Glowing Thread
+
+A thin line of light that briefly traces the correct path forward. It appears for a fraction of a second — blink and it's gone.
+
+**It appears when:**
+- A player is zapped by the orb at the First Fork
+- A player finds the diamond beneath the chest at the First Fork
+- *Additional triggers — add when the story warrants*
+
+**Noticing it:** Perception check.
+- Success: the player sees it clearly — a luminous thread along the floor and wall, tracing a path.
+- Close but not enough: *"You could almost make something out — something briefly lit, like a reflection that moved wrong."* They're encouraged to look again.
+- Failure: nothing registered.
+
+**Following the thread:** Does not raise the pressure track, even if the path it shows conflicts with the wall-following rule. The thread and the rule are two different things pointing at the same destination. A party that finds and follows the thread skips the navigation problem entirely — but the thread doesn't last and can't be summoned on demand.
+
+---
+
+## The First Fork
+
+The first junction inside the Coil. Both objects are visible from the fork before the party commits to a direction.
+
+**Right passage:** A wooden chest sits against the wall, unlocked. It is empty. Beneath it, partially obscured by grime, is a small diamond. Finding the diamond requires either moving the chest or a close inspection of the floor around it.
+
+*When the diamond is found:* The glowing thread appears briefly. Perception check to catch it.
+
+**Left passage:** A glowing orb floats above a stone pedestal. It pulses slowly. It looks like it wants to be touched.
+
+*When touched:* 1 damage. Immediately after, the glowing thread appears. Perception check to catch it.
+
+*The orb cannot be moved, extinguished, or destroyed by conventional means.*
+
+**What the fork is actually doing:** Splitting the party's attention before they've committed to a wall. Players who go different directions are already on different wall-following paths. Players who debate too long at the junction have already hesitated. The friction starts here.
+
+---
+
 ## The Pressure Track
 
 Starts at 0 on entry. Resets only when the party reaches the center or exits.
@@ -81,6 +117,8 @@ Starts at 0 on entry. Resets only when the party reaches the center or exits.
 
 *Additional triggers — add when the story warrants.*
 
+**Note:** Following the glowing thread never raises the pressure track, regardless of which wall it leads you to.
+
 ---
 
 ## The Minotaurs
@@ -99,9 +137,9 @@ They do not guard the entrance. They are already inside.
 
 ## The Center
 
-*Open — develop when relevant.*
-
 The passage widens. The stone is older here — different cut, different color. Whatever is in the center has been here longer than the labyrinth around it.
+
+*Story item. Develop when relevant — the labyrinth is a trial for the party's bonds. What they find at the center should reflect how they navigated.*
 
 ---
 
