@@ -33,6 +33,9 @@ Pending. Guardian creatures of The Coil. Do not enter the center. Fight in tight
 **Chitterer stat block** (`bestiary/chitterer.md`)
 Pending. Small trickster fey-energy creatures in The Coil. Frantic chittering language. Carry crystal knives and arrowheads harvested from deer with crystal horns. Neutral — not part of pressure track, not aggressive. Flee when the trapped deer is freed.
 
+**Wall-Reader stat block** (`bestiary/wall-reader.md`)
+Pending. Blind pale creature in The Coil's underground. Follows the left wall. Ignores the party if they follow the same rule; attacks if the rule is broken near it. Not a minotaur, not on the pressure track.
+
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
