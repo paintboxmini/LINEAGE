@@ -52,6 +52,14 @@ The golems come back dusted with pollen, petals caught in their joints. Every pa
 
 ---
 
+## The Golems as Confidants
+
+People talk to their golems in whispers at home — things they would never write down. Some believe the golems remember. The cracks in the clay are called "scars" from carrying heavy secrets.
+
+A few elderly villagers have begun leaving small offerings in their golem's hollow eye sockets: a polished stone, a feather, a dried petal. No one calls it prayer. No one calls it anything.
+
+---
+
 ## Golem Repair
 
 Repair is not a chore — it's a seasonal rite performed in anonymity.
@@ -63,6 +71,10 @@ By first light the bundle is gone and the golem returned — cracks filled, smoo
 The ritual is never spoken of aloud. Some believe saying *"I mended yours"* would cause the clay to crack again.
 
 Children are taught to pack the bundle themselves by age eight or nine. They press a tiny fingerprint into the clay lump before sealing it — their first anonymous contribution to the village's life. The print disappears under the mender's smoothing. The child knows it was there.
+
+Families pass down specific smoothing stones or paddles wrapped in cloth. The stone may have a tiny notch from generations of use. Holding it feels like touching the hands that came before, even if those hands were never seen.
+
+After a repair, people often leave extra kindling or a jar of honey on their doorstep the following week — no note, no explanation. The recipient never asks who left it.
 
 ---
 
@@ -79,3 +91,17 @@ No one knows. The oldest letters are too faded to read.
 A quiet complicated affection laced with profound loneliness. Trust in the system — the golems never lie, never gossip — and suspicion of the humans behind it. A beautifully written letter can make someone fall in love with a stranger. A curt one can spark years of cold silence.
 
 Most people feel a gentle pride in how well the system works, and a nagging sense that something vital slipped away generations ago.
+
+---
+
+## Open Hooks
+
+**The unsigned letter.** A traveler's letter arrives with no name. The golem still delivered it. Someone wrote it. The village has no system for this.
+
+**The child who doesn't stop.** One child starts leaving their own unsigned notes inside the golem's chest before each outing — not to the golem, but to whoever finds it at the Mending Hollow. A correspondence begins between a child and a stranger they will never see.
+
+**The oldest letters.** Too faded to read, kept anyway. Someone has been trying to restore them with careful chemicals and lamplight. What they find changes what the Before Time means.
+
+**The golem that came back wrong.** Returned from the Mending Hollow repaired, but carrying someone else's token inside it — a token that matches no family in the village.
+
+**What exile actually looks like.** Someone was exiled within living memory. Their golem still stands at the edge of the cemetery — never weathered into a marker, still upright, still waiting. Their door is sealed. No one writes their name.

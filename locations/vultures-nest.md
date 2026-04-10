@@ -18,7 +18,11 @@ For the session 1 opening scene, see the Entry section below.
 
 ## The Tideward Compact
 
-The docks are governed by the Tideward Compact — a council of dockmasters, pirates, and record-keepers. Official authority exists, for a price.
+The docks are governed by the Tideward Compact — a council of three: Bartho (dockmaster), Jonas (ledger-keeper and Regency informant), and Harlow (pirate faction). Official authority exists, for a price.
+
+The Compact manages what moves through the Nest. This includes a significant volume of goods that would be illegal almost anywhere else: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance. The Regency knows. The Regency condones it. The arrangement is simple — anything goes, as long as it moves through the right channels and the council gets its cut.
+
+The hard lines are predictable: nothing so destructive it destabilizes the region, nothing so visible it forces the Regency to acknowledge it publicly, and nothing moves without the council's percentage. Cross any of those and the Regency's response is quiet, professional, and final.
 
 *Nothing illegal passes through. Only unrecorded things.*
 
@@ -48,9 +52,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Ledger-Keeper** — keeps port records no one wants exposed. No one knows how old she is.
-
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night. Knows when The Coil surfaces off the coast and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `locations/the-coil.md`.
 
 ---
 
@@ -63,9 +65,15 @@ Players arrive already in debt to him — the crossing requires something coin c
 
 *"Just so we all start off on the right foot."*
 
+**If the party refuses:** Bartho doesn't argue. He says nothing else. Within the hour, two dockhands with Compact badges find the party and escort them to the Nest's holding cell — a converted cargo hold under the west dock. Bartho visits once. Still quiet. Still polite. The offer stands. So does the cell.
+
 He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
 
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. The records are also not the Ledger-Keeper's records.
+**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
+
+He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipsera South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+
+Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
 **Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
@@ -119,6 +127,41 @@ The letter reads:
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
+**Masaharu** — *(name is a deliberate tonal outlier — old player character)* — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
+
+Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
+
+He is in Vulture's Nest because FourthEye is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+
+FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
+
+What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Masaharu is here to find out.
+
+*Methodical, quiet, reads people fast. Won't approach the party first — he'll clock them and wait to see what they do. If they're worth talking to, he'll make contact on his own timeline.*
+
+*In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He does not come to Frontline.*
+
+**GM — Using Masaharu**
+He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the FourthEye thread without knowing what it is, he'll find a way to make that known without blowing his position.
+
+---
+
+## Rumors
+
+Fragments the party might catch. None complete. Each pointing at something without naming it.
+
+*"The line at Giblets' stall in the bazaar has been getting longer for a year. Someone's keeping it stocked."*
+
+*"Jonas was at the docks late two nights running. Bartho wasn't with him."*
+
+*"Three sailors came back from Eclipsera different. Not sick. Just... different. They don't talk about it."*
+
+*"Harlow's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
+
+*"The man with the boomstick has been asking about the Moving Crate."*
+
+**Stat block and cards:** `bestiary/masaharu.md`, `cards/masaharu.md`
+
 **Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 
 He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
@@ -138,6 +181,12 @@ The kid gang operating on the docks. Named by the scarves, not a gang name. Ever
 If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain has moved it.
 
 *If something pilfered shows up later (a personal item in a market stall two sessions later) — play it for texture, not punishment.*
+
+**If the party earned Bartho's trust:** Bartho sees the kids moving in and gives a short wave — not at the party. At Kino. The kids peel off without a word. The party may not even notice. Bartho doesn't mention it.
+
+**If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
+
+Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
 
 ---
 
@@ -159,7 +208,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 **Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Lost a ship to the Unheld fifteen years ago. Only one who came back. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet. *Corvel may be a name already used elsewhere in the world — verify before finalizing.*
 
-**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
+**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
 ---
 
@@ -172,6 +221,29 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 **The Warden's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Warden who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
+
+---
+
+## The Listing Keel — Tavern
+
+The building sits two degrees off level. Nobody fixed it after the last rebuild. Furniture has been shimmed so many times the legs are all different lengths.
+
+Smells like old ale, smoked fish, and salt-damp wood. Loud enough that conversations stay private without trying. The kind of place where sailors drink because it's the cheapest option and nobody makes you talk.
+
+**Salla** — the barkeep. Short, wide, moves fast. Hair pinned back with a fishhook that has seen use. Keeps a sawn-off boat hook behind the bar. Nobody has seen her use it, but it's never dusty.
+
+Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
+
+*"Ale or the brown stuff?"*
+
+**The Back Corner** — round table, low ceiling, one candle. The salt-stiff sailor is already there on the night the party arrives. Not drinking yet. Hands wrapped in linen. Watching the door.
+
+*This is where the Sailor's Story happens. See the section below.*
+
+**What's available:**
+- Salted Strip — on the bar, free with a drink
+- Dock Broth — Salla makes it from whatever was left on the docks that day. She charges less for it than it's worth and recommends it sincerely.
+- A single room upstairs — one bed, a hammock nailed to the wall, no lock. First come.
 
 ---
 

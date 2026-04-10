@@ -8,7 +8,7 @@ Signature cards for the Rootstalker. Tagged as WEALD — these cards represent t
 RED — BODY — WEALD
 Attack: Body + d4
 Effect: If the target is in the Backline, deal +2 damage and pull them to the Frontline.
-Defensive Bonus: Gain 2 Thorns (deal damage back to successful melee attackers).
+Defensive Bonus: Gain Thorns 2.
 Range: Melee, hits Backline
 *"The stalker's reach is longer than the path you thought you took."*
 
@@ -27,27 +27,17 @@ Range: Ranged
 **THORN-BIND**
 GREEN — SOUL — WEALD
 Attack: Soul + d2
-Effect: Target has −2 to all dice rolls until the end of their next turn.
+Effect: Target gains Disadvantage.
 Defensive Bonus: Target gains Rooted.
 Range: Both
 *"The Weald does not block your exit; it simply makes the price of movement too high."*
 
 ---
 
-**WOODEN MOCKERY**
-GREEN — SOUL — WEALD
-Attack: Soul + d6
-Effect: Target must discard a card of the same color as the one they just blocked with. If they can't, they must reveal their hand.
-Defensive Bonus: Attacker takes 3 damage.
-Range: Both
-*"The stalker's face is a knot that mimics your own terror."*
-
----
-
 **SPLINTER-BURST**
 RED — BODY — WEALD
 Attack: Body + d4
-Effect: Pay 2 life; deal half the total attack damage (rounded up) to another Frontline enemy.
-Defensive Bonus: Gain 2 Thorns.
+Effect: Pay 2 HP; deal half the total attack damage (rounded up) to another Frontline enemy.
+Defensive Bonus: Gain Thorns 2.
 Range: Melee
 *"To strike the stalker is to invite its sharpest parts into your skin."*

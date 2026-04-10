@@ -290,3 +290,13 @@ Effect: Shuffle 1 Wound into target's deck. If they already have a Wound in deck
 Defensive Bonus: Exile 1 Wound from your deck.
 Range: Ranged
 *"Some damage is architecture."*
+
+---
+
+**PROFILE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Scry 2.
+Defensive Bonus: Attacker gains Staggered.
+Range: Both
+*"He already knew what you'd reach for."*

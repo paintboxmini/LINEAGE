@@ -309,3 +309,13 @@ Effect: Exile 1 Wound from target ally's deck. That ally heals 3 HP.
 Defensive Bonus: Exile all Wounds from your deck.
 Range: Ranged
 *"Not healed. Held together."*
+
+---
+
+**DEAD RECKONING**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Scry 2.
+Defensive Bonus: Attacker gains Blind.
+Range: Both
+*"You came in loud. You'll leave in the dark."*

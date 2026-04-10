@@ -66,6 +66,19 @@ Range: Both
 
 ---
 
+## Rootstalker — Weald
+
+**WOODEN MOCKERY**
+GREEN — SOUL — WEALD
+Attack: Soul + d6
+Effect: Target must discard a card of the same color as the one they just blocked with. If they can't, they must reveal their hand.
+Defensive Bonus: Attacker takes 3 damage.
+Range: Both
+*"The stalker's face is a knot that mimics your own terror."*
+*Cut: Two-condition effect plus non-keyword Defensive Bonus. Too complex for table use.*
+
+---
+
 ## Briarwatch Wardens (exploratory run — naming mixup with Alignment Marshal)
 
 *These cards were generated during a session where "Warden" was used in error instead of "Alignment Marshal." The Marshal set is complete. These are kept in case a Briarwatch Warden encounter is developed later.*
