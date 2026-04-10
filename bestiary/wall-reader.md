@@ -1,6 +1,6 @@
 # Wall-Reader
 
-**Cards:** `cards/wall-reader.md` *(pending)*
+**Cards:** `cards/wall-reader-coil.md`
 
 Taller than a human by a full head. Pale — the color of stone that has never seen light. No eyes. Smooth skin where they would be, unbroken. What it has instead: hands. Many of them, arranged along its body at different heights, all pressed flat against the wall as it moves. Each hand reads the stone independently. Together they give it a picture of everything that touches the labyrinth walls.
 

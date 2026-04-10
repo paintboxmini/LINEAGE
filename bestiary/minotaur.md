@@ -1,6 +1,6 @@
 # Minotaur
 
-**Cards:** `cards/minotaur.md` *(pending)*
+**Cards:** `cards/minotaur-coil.md`
 
 It knows every passage. It has been here longer than anyone the party has met, longer than the dock badges on the bodies, longer than whatever built the labyrinth remembers. When it moves through the corridors, it doesn't hurry. The labyrinth does that work for it.
 
