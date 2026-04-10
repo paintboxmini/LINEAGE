@@ -5,6 +5,18 @@ Tag: COIL
 
 ---
 
+## Passives
+
+**Labyrinth Bond** — The Minotaur is aware of the current pressure track value at all times. While the track is 5 or higher, all Minotaur attacks deal +d6 damage.
+
+**Corridor Fighter** — The Minotaur does not suffer movement penalties in narrow corridors. Creatures in Frontline with the Minotaur cannot move to Backline without spending an additional action and succeeding on a Body check (DC 13).
+
+**Relentless** — At the start of each of the Minotaur's turns, deal 1 damage to each Rooted enemy.
+
+*Pressure chain: GORE or PATTERN READ applies Rooted → Relentless chips every turn → INEVITABILITY locks in Staggered → at track 5+, Labyrinth Bond makes the follow-up attack devastating.*
+
+---
+
 **GORE**
 RED — BODY — COIL
 Attack: Body + d6

@@ -5,6 +5,16 @@ Tag: COIL
 
 ---
 
+## Passives
+
+**Wall-Sense** — The Wall-Reader cannot be Blinded. It is always aware of the position of any creature in contact with the walls of its current passage. Darkness, Obscure, and similar effects do not apply to it.
+
+**Pin** — When the Wall-Reader applies Rooted to a target, that target loses their Defensive Bonus on their next play.
+
+*Combo chain: PRESS or MANY HANDS applies Rooted → Pin activates (target can't defend) → STONE GRIP finishes the pinned target with no defensive counter.*
+
+---
+
 **PRESS**
 RED — BODY — COIL
 Attack: Body + d6

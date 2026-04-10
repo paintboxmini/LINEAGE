@@ -12,6 +12,8 @@ It is not hunting. It is navigating. It has been navigating for a very long time
 
 **Passive — Triggered:** The Wall-Reader is non-aggressive. If the wall-following rule is broken within its current passage, it stops. Turns toward the disruption. Waits three seconds. Then engages.
 
+**Passive — Pin:** When the Wall-Reader applies Rooted to a target, that target loses their Defensive Bonus on their next play.
+
 ---
 
 ## Behavior

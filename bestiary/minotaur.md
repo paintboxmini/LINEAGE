@@ -12,6 +12,8 @@ The pressure track exists because of how the minotaurs navigate — not by walls
 
 **Passive — Corridor Fighter:** The Minotaur does not suffer movement penalties in narrow corridors. Creatures in Frontline with a Minotaur inside a corridor cannot move to Backline without first disengaging — this requires an action and a successful Body check (DC 13).
 
+**Passive — Relentless:** At the start of each of the Minotaur's turns, deal 1 damage to each Rooted enemy.
+
 ---
 
 ## Behavior
