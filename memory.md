@@ -45,9 +45,6 @@ Marked as pending in the file.
 **Senshi's menu** (`locations/gilded-tusk.md`)
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
 
-**Corvel name check** (`locations/vultures-nest.md`)
-Corvel runs the grey water vials stall at Vulture's Nest. File notes his name may already be used elsewhere in Eclipsera — unverified.
-
 ---
 
 ## Key Design Decisions (This Project)
