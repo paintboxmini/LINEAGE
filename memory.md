@@ -30,26 +30,23 @@ Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the baz
 **Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
 Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
 
-**The Warden** (`locations/underground-bazaar.md`, mine below)
-Overseer of the mine labor operation beneath the bazaar. Imprisoned Kess's mother on fabricated debt to leverage the Cartographer's intelligence network. Still in place. Has not been dealt with. The Cartographer's mine map — routes through the deep, exits outside the city — was made for the rescue attempt and still exists.
+**The Wallows** (`locations/the-wallows.md`, `factions/demon-court.md`, `quests/the-wallows-descent.md`)
+Mine beneath Eclipsera. Five layers: bazaar → labor level → threshold → deep (Aurora). The Boar built it knowingly above Aurora's binding site. Labor level runs on proximity compliance — workers feel Aurora's warmth as patience. Threshold: sticky echoes, slimes, cave reaches. Alternate exit threads through the threshold to outside the city walls — the Cartographer's map shows this route. Aurora at the bottom: not an encounter, dissolution through love. Don't develop the deep without Drew. Quest file written: two pressure tracks (Demon Court awareness / Seat influence), modular encounter nodes, hidden behavioral rules for the Seat track.
+
+**Wallows Slime** (`bestiary/wallows-slime.md`)
+Threshold creature. Reaches, envelops, doesn't attack. Warm. Forcing extraction raises Seat Influence by 1. Gentle extraction does not. Stat block pending.
+
+**Warden Pazuzu / The Demon Court** (`factions/demon-court.md`)
+Pazuzu runs the Wallows labor operation for the Boar. Built his guard hierarchy as a mirror of the Regency council — demon masks instead of animal titles. Tiers: Pazuzu (apex), Overseers (armored, unarmed), chain whip guards, Initiates (yellow, entry checkpoint). Direwolves for pursuit — trained to operate in the upper threshold. Pazuzu considers himself the Boar's eighth councillor. The Regency does not acknowledge the Demon Court. Pazuzu has never gone to the deep and has not examined why.
+
+**Lord Archibald — the Boar** (`world/the-regency.md`)
+His official animal title is the Boar. Informally called the Pig — never to his face. Lore/formal files use Boar. Everyday references (bazaar, street-level) stay as Pig. Pig debt, swines, etc. unchanged.
 
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
-**Minotaur stat block** (`bestiary/minotaur.md`)
-Done. Mind 3/Body 6/Soul 5, HP 24. Passives: Labyrinth Bond (+d6 while pressure 5+), Corridor Fighter (repositioning requires action + Body DC 13). Cards pending.
-
-**Chitterer stat block** (`bestiary/chitterer.md`)
-Done. Mind 1/Body 1/Soul 2, HP 9. Passives: Scatter (Evade on damage), Noise (pressure +1 if attacked and survives). Cards pending.
-
-**Wall-Reader stat block** (`bestiary/wall-reader.md`)
-Done. Mind 3/Body 4/Soul 4, HP 18. Passives: Wall-Sense (can't be Blinded, always aware of wall-contact positions), Triggered (non-aggressive until rule broken nearby). Cards pending.
-
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
-
-**Underground Tavern gambling mechanics** (`locations/underground-tavern.md`)
-Marked as pending in the file.
 
 **Senshi's menu** (`locations/gilded-tusk.md`)
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
