@@ -14,11 +14,15 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 
 ## The Goal
 
-There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any hands, including his. Kaine wants it.
+There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any hands, including his. Kaine wants it — and has it, or is close to having it, when the party arrives.
 
-What he intends to do with it: not yet determined — don't develop further without Drew.
+**What he's doing with it:** performing signs and wonders. Miracles he attributes to the Unheld's blessing — validation that The Final Current is the true expression of the Promise. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source.
 
-What matters mechanically: the item being unstable means stopping Kaine doesn't resolve the problem. The party also has to decide what to do with the item itself. Kaine is the urgent threat. The item is the lasting one.
+**Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipsera. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
+
+**Long-term:** for a man like Kaine, it wouldn't end with the Promise community. That's just the first institution with infrastructure he can use.
+
+**The problem the item creates:** stopping Kaine doesn't resolve it. The party inherits something unstable and Storm Seat-aligned with no obvious safe answer for what to do with it. Kaine is the urgent threat. The item is the lasting one.
 
 ---
 
