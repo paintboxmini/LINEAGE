@@ -108,15 +108,9 @@ Stealth or direct: getting into Kaine's inner space to find what he's actually p
 
 The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below, the ritual bathing platform being lowered. Kaine's followers are positioned throughout the crowd.
 
-**Steve's bathing happens here.** Caught in the momentum of the ceremony, Kaine's followers facilitating. The party may try to stop it. They probably won't succeed. Steve goes in.
+**Steve is here.** In the crowd, near Kaine's followers, watching the ceremony with the focused attention of someone trying to look like they understand what's happening. He has not bathed yet. He is waiting for his turn.
 
-The pulleys get stuck.
-
-The platform stops partway up. The handlers work at it — calm at first, then less calm. The Promise faithful watch. It takes longer than it should. Longer than any bathing is supposed to take. Someone says it's fine. Nobody looks sure.
-
-**Steve comes back up.** Something small and iridescent comes with him — or from him, more accurately. It orbits him. Large eyes. Wings like soap film. Already slightly less than it was a moment ago.
-
-Nobody fully registers Pip yet. They're looking at Steve, who looks fine, who looks exactly like Steve.
+The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
 
 Then Kaine raises his finger.
 
@@ -145,9 +139,9 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **The Promise community:** shaken. Kaine's followers have to reckon with what the miracle was. The moderates have to reckon with how far it got before anyone noticed. The Masons — quietly — have to assess the glyph situation.
 
-**Steve:** walking through the crowd. People are drifting toward him. He doesn't know why. Pip is orbiting him and slowly, quietly, popping.
+**Steve:** still in the crowd somewhere. Still Steve. His bathing hasn't happened yet. That's a different story.
 
-*That arc continues in: the Pip story.*
+*His arc continues later — see `experimental/steve-and-pip.md`.*
 
 ---
 
