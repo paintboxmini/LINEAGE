@@ -49,6 +49,8 @@ Separate from the soul economy entirely. The Pig (Lord Archibald) provides the i
 
 The Pig isn't interested in pieces of people. He has a whole bazaar for that. He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
 
+**Swines** — the Pig's own currency, required for all transactions in the bazaar. Visitors convert real money to swines at the market entrance. The conversion rate is the Pig's first tax. Everything priced in swines after that. *"That'll be eight swines." "You ain't got the swine for that."* The currency sounds undignified because it is. That's intentional.
+
 **The addiction cycle:**
 Work in bazaar → magical oversaturation → need baseline drinks to function → can't afford them → deeper Pig debt → more dangerous work → repeat.
 
@@ -137,6 +139,26 @@ The offspring are harmless at first. If they survive long enough to reach adoles
 The symbiotic variant bonds to whoever tends it and begins to resemble them. The environmental variant, if left unchecked, grows to enormous size. Players who deal with an oversized one earn a FourthEye — and move to the front of the line. Temporarily.
 
 *Full culinary notes pending — Delicious in Dungeon cross-reference.*
+
+---
+
+## Exotic Animals
+
+**Fairy Dragons** — A stall near the east pillar cluster. Iridescent wings, small enough to perch on a shoulder. They help scribes write faster, occasionally breathing small puffs of glittery smoke that makes ink dry perfectly. They chitter in tiny voices, frequently disagreeing with each other about whose calligraphy is better. Expensive. Accumulates Pig debt just by looking at them too long.
+
+**Shardjaw Pitbulls** — Illegal, technically. Stocky bodies covered in fish scales, color gradient from dark purple at the head fading to near-white at the tail. Black glass teeth that break off in wounds and regrow. Someone in the bazaar always has a litter. The vendor is never the same person twice. Gremlins track every sale but nobody asks why the record always shows a different seller.
+
+---
+
+## The Tents
+
+The bazaar has permanent stalls and temporary tents. The tents move. Not dramatically — just enough that they aren't in the same configuration two visits in a row.
+
+**Privacy tents** — Quieter inside than they should be, larger than their exterior. Where negotiations happen that can't happen at a stall. No gremlin has ever successfully tracked what changes hands inside one. The Pig is aware of this and has not resolved it.
+
+**Overflow tents** — Appear when a stall gets too crowded, adjacent to the original. Vendors gesture vaguely behind them: *"the good stuff's in the tent."* The tent may not be where it was yesterday. That's part of the service.
+
+**Sampling tents** — Test dangerous or unstable goods before committing. The magical equivalent of a proof-of-concept. Some items can only be evaluated here because the tent's walls absorb the consequences. The walls have seen things. They do not share.
 
 ---
 

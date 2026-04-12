@@ -44,9 +44,16 @@ The tavern operates on **pure barter**. No coin accepted. Memories, secrets, yea
 
 ## The Gambling Tables
 
-*Custom mini-game — mechanics pending.*
+The game is Liar's Dice. The currency is swines — the Pig's own bazaar tender. The house is a gremlin who has been running this table for longer than anyone can remember.
 
-Players gamble Pig debt against each other and the house. Winning reduces debt. Losing deepens it. The house takes a percentage regardless.
+**The rules:**
+Each player rolls a pool of dice secretly under a cup. Players take turns bidding — stating how many dice of a given face value they believe exist across all cups combined. Each bid must raise either the quantity or the face value. At any point, a player may challenge the current bid instead of raising it. Cups are revealed. If the bid was accurate: the challenger loses a die. If it was wrong: the bidder loses a die. Last player with dice wins the pot.
+
+**The house rules:**
+The gremlin plays every round. It takes 10% of every pot regardless of outcome — win or lose, someone pays the skim. There is no minimum buy-in, but there is a debt ceiling: if a player's Pig debt crosses a threshold the gremlin sets at its discretion, it stops dealing them in. The ceiling is never announced in advance.
+
+**Why people keep losing:**
+The gremlin has watched every hand played at this table. It reads tells. It knows which players overbid when nervous, which ones go conservative when they're ahead, which ones challenge too early. The only counter is genuine unpredictability — and people who are desperate enough to be here rarely have the composure for it.
 
 Most people here are trying to climb out of the addiction cycle:
 *oversaturation → need baseline drink → can't afford it → deeper Pig debt → more dangerous work → repeat.*
