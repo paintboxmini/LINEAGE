@@ -136,7 +136,9 @@ The map still exists. What Kess has done with it is her own business.
 
 Paint-stained fingers. Does portraits, landscapes, and the occasional "please remove my ex-lover's face from this family painting" commission. The latter comes up more than you'd expect, especially when one party was a reality sculptor.
 
-Friendly. Chatty. Knows everyone.
+He also paints objects before they're sold into the soul economy — a last record of what something looked like before it's gone. People bring him the item, he paints it, they leave with the painting and sell the thing. He keeps a small copy of everything he's ever painted this way. The collection is enormous. He has never shown it to anyone.
+
+Friendly. Chatty. Knows everyone who's ever tried to hold onto something.
 
 **Bella — The Dinner Juggler**
 
@@ -151,6 +153,8 @@ A plant sold at one of the vendor stalls. Shaped like a figure holding a child. 
 The offspring are harmless at first. If they survive long enough to reach adolescence, they become briefly dangerous. If they reach maturity, they take on the form of the Mother again.
 
 The symbiotic variant bonds to whoever tends it and begins to resemble them. The environmental variant, if left unchecked, grows to enormous size. Players who deal with an oversized one earn a FourthEye — and move to the front of the line. Temporarily.
+
+**Oversized variant encounter:** Combat. The Mother is the primary target. Offspring scatter throughout the fight as a secondary clock — uncontrolled offspring mature into adolescence (briefly dangerous, attack on instinct) and eventually full maturity (spawn a new Mother). Prioritizing the Mother leaves the offspring problem. Prioritizing offspring leaves the Mother free. Neither is obviously correct.
 
 *Full culinary notes pending — Delicious in Dungeon cross-reference.*
 
@@ -204,7 +208,7 @@ He spends freely. Not carelessly — deliberately. As if the exit math is someon
 
 Kess finds this maddening. He finds her planning exhausting. They have reached an understanding.
 
-Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. The debt he's accumulated is significant. The gremlin watches him with professional wariness.
+Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. He plays Liar's Dice at the tavern table most nights — loses cheerfully and consistently, never runs out of swines to lose. The house gremlin has flagged him as a person of interest and cannot find a rule he's breaking. The debt he's accumulated is significant. The gremlin watches him with professional wariness.
 
 What the coin purse arrangement actually is: unknown. What he wants: unknown. Whether he can leave: unknown. These are not gaps to be filled in — they're the design.
 

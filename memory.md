@@ -36,20 +36,8 @@ Overseer of the mine labor operation beneath the bazaar. Imprisoned Kess's mothe
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
-**Minotaur stat block** (`bestiary/minotaur.md`)
-Done. Mind 3/Body 6/Soul 5, HP 24. Passives: Labyrinth Bond (+d6 while pressure 5+), Corridor Fighter (repositioning requires action + Body DC 13). Cards pending.
-
-**Chitterer stat block** (`bestiary/chitterer.md`)
-Done. Mind 1/Body 1/Soul 2, HP 9. Passives: Scatter (Evade on damage), Noise (pressure +1 if attacked and survives). Cards pending.
-
-**Wall-Reader stat block** (`bestiary/wall-reader.md`)
-Done. Mind 3/Body 4/Soul 4, HP 18. Passives: Wall-Sense (can't be Blinded, always aware of wall-contact positions), Triggered (non-aggressive until rule broken nearby). Cards pending.
-
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
-
-**Underground Tavern gambling mechanics** (`locations/underground-tavern.md`)
-Marked as pending in the file.
 
 **Senshi's menu** (`locations/gilded-tusk.md`)
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
