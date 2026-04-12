@@ -10,6 +10,10 @@ She's been having doubts about the Promise. Not loud doubts. The quiet kind that
 
 She found the Masons. Somehow — the how is worth developing. She's been learning constraint magic in secret. Carries a Mason's chisel under her cloak like a confession she hasn't made yet.
 
+**How she found them:** Stabilization glyphs on the cliffside kept catching her eye. She started dreaming about the symbols — couldn't stop thinking about them. One day, alone, she found herself scratching one from memory into a loose rock. A Mason saw her do it and handed her a chisel without explanation. That was the beginning.
+
+She wasn't looking for the Masons. The glyphs found her first. That distinction matters to her.
+
 When she approaches the party she's looking for someone outside the community. Not to be talked out of her doubts. To be allowed to have them out loud for the first time.
 
 ---
