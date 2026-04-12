@@ -49,11 +49,15 @@ Separate from the soul economy entirely. The Pig (Lord Archibald) provides the i
 
 The Pig isn't interested in pieces of people. He has a whole bazaar for that. He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
 
-**Swines** — the Pig's own currency, required for all transactions in the bazaar. You cannot buy swines upfront. There is no conversion booth, no exchange window. What there is: a gremlin at the entrance who will advance you whatever you need and mark it down. The advance is easy. Cheerful, even. The gremlin will suggest an amount if you seem unsure.
+**Swines** — the Pig's own currency, required for all transactions in the bazaar.
+
+Entry requires a minimum conversion: 50 gold for 50 swines. The rate looks fair because it is — on the way in. The entrance gremlin runs this like a carnival ticket booth: enthusiastic, welcoming, a little theatrical. *"First time? Oh, you're going to love it. Fifty gold gets you fifty swines, that's everything you need to get started, right through the door, enjoy the show!"* It feels like the start of something fun. That's the design.
+
+Don't have 50 gold? The gremlin will advance you the minimum and mark it down. Everyone gets in.
 
 Everything in the bazaar is priced in swines. Real money is no good here. *"That'll be eight swines." "You ain't got the swine for that."*
 
-Getting out is the problem. Converting swines back to real currency requires settling the advance first — principal plus the Pig's fee, paid in actual coin. The fee is set at exit. It is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. The privacy tents do steady business with people trying to negotiate alternate settlements.
+Getting out is the problem. Converting swines back to real currency requires settling the full balance — the entrance conversion, any advances taken inside, plus the Pig's exit fee. The exit fee is set at the door and is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. The privacy tents do steady business with people trying to negotiate alternate settlements.
 
 The currency sounds undignified because it is. That's intentional — it's hard to feel like you're in financial trouble when the unit of account is called a swine.
 
