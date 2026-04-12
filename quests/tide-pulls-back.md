@@ -108,11 +108,17 @@ Stealth or direct: getting into Kaine's inner space to find what he's actually p
 
 The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below, the ritual bathing platform being lowered. Kaine's followers are positioned throughout the crowd.
 
-**Steve's bathing happens here.** Caught in the momentum of the ceremony, in the crowd, with Kaine's followers facilitating. The party may try to stop it. They probably won't succeed. Steve goes in.
+**Steve's bathing happens here.** Caught in the momentum of the ceremony, Kaine's followers facilitating. The party may try to stop it. They probably won't succeed. Steve goes in.
 
-**Steve comes back up.** Something small and iridescent emerges with him — or from him, more accurately. It orbits him. It has very large eyes. It is already slightly less than it was a moment ago.
+The pulleys get stuck.
 
-Nobody fully registers Pip yet. They're looking at Steve, who looks fine, who looks like Steve.
+The platform stops partway up. The handlers work at it — calm at first, then less calm. The Promise faithful watch. It takes longer than it should. Longer than any bathing is supposed to take. Someone says it's fine. Nobody looks sure.
+
+**Steve comes back up.** Something small and iridescent comes with him — or from him, more accurately. It orbits him. Large eyes. Wings like soap film. Already slightly less than it was a moment ago.
+
+Nobody fully registers Pip yet. They're looking at Steve, who looks fine, who looks exactly like Steve.
+
+Then Kaine raises his finger.
 
 Then Kaine raises his finger.
 
