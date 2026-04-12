@@ -128,6 +128,10 @@ Her maps occasionally show locations that haven't been built yet. Routes through
 
 She never charges coin. She charges secrets — specifically, secrets about places you've been. The more interesting the secret, the more accurate the map. She has been building an intelligence network through cartographic transactions for a very long time.
 
+She is Kess's grandmother. Her daughter — Kess's mother — died in the mine below the bazaar. The Warden had held her illegally, leverage to keep the Cartographer's network cooperative. When Kess went in to fix it, the Cartographer made a map: routes through the deep mine, exits that surface outside the city entirely. She charged nothing for that one. She has not made another like it since.
+
+The map still exists. What Kess has done with it is her own business.
+
 **Willem — Portraitist**
 
 Paint-stained fingers. Does portraits, landscapes, and the occasional "please remove my ex-lover's face from this family painting" commission. The latter comes up more than you'd expect, especially when one party was a reality sculptor.
@@ -174,21 +178,21 @@ The bazaar has permanent stalls and temporary tents. The tents move. Not dramati
 
 ## Recurring Visitors — Moth & Kess
 
-*In progress. Like everything else. These two formed through the writing rather than through design — the details below are observed, not authored. Don't fill in what isn't here yet.*
-
 Not confined to the bazaar. First encountered here.
 
 ---
 
 **Kess**
 
-Geometric tattoo on the forearm. It echoes laughter from her sister's wedding day. The real memory is gone — sold, at some point, for reasons that presumably made sense at the time. The tattoo is all that's left.
+Granddaughter of the Cartographer. Uses the Cartographers Guild as a working cover — has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere. Her grandmother's intelligence network runs partly through her. She doesn't advertise this.
 
-Hollow where humor used to live. Not sad about it. Functional.
+Geometric tattoo on the forearm — laughter from her sister's wedding day. The real memory is gone, sold at some point for reasons that made sense at the time. The tattoo is all that's left. Hollow where humor used to live. Not sad about it. Functional.
 
-Uses the Cartographers Guild as a working cover. Has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere.
+She has other tattoos. One of them reacts near Giblets' stall. She has not asked why. She knows better than to ask what she sold.
 
-Her tattoo reacts to the bazaar — specifically near the FourthEye stall. She has not asked why.
+Her mother died in the mine below the bazaar. The Warden had imprisoned her on fabricated debt — leverage against the Cartographer's network. Kess went in to fix it with the only escort who could keep a secret: an ex-adventurer with faulty memory. Something went wrong in the deep. She traded away most of what happened. Mortis pulled them out.
+
+She is working methodically toward paying off the full balance and getting out. She knows where the mine map is. She has plans that extend past her own exit.
 
 ---
 
@@ -196,7 +200,11 @@ Her tattoo reacts to the bazaar — specifically near the FourthEye stall. She h
 
 Carries a coin purse that never gets lighter no matter how much he spends. He does not examine this.
 
-Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. Comfortable in a way that might be a problem.
+He spends freely. Not carelessly — deliberately. As if the exit math is someone else's problem. As if he decided, at some point, that getting out is not the goal.
+
+Kess finds this maddening. He finds her planning exhausting. They have reached an understanding.
+
+Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. The debt he's accumulated is significant. The gremlin watches him with professional wariness.
 
 What the coin purse arrangement actually is: unknown. What he wants: unknown. Whether he can leave: unknown. These are not gaps to be filled in — they're the design.
 

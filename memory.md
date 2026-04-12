@@ -27,6 +27,15 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 **FourthEye pipeline**
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/underground-bazaar.md` (Giblets).
 
+**Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
+Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
+
+**The Warden** (`locations/underground-bazaar.md`, mine below)
+Overseer of the mine labor operation beneath the bazaar. Imprisoned Kess's mother on fabricated debt to leverage the Cartographer's intelligence network. Still in place. Has not been dealt with. The Cartographer's mine map — routes through the deep, exits outside the city — was made for the rescue attempt and still exists.
+
+**Bazaar uprising thread** (future)
+Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
+
 **Minotaur stat block** (`bestiary/minotaur.md`)
 Done. Mind 3/Body 6/Soul 5, HP 24. Passives: Labyrinth Bond (+d6 while pressure 5+), Corridor Fighter (repositioning requires action + Body DC 13). Cards pending.
 

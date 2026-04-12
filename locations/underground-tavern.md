@@ -26,7 +26,9 @@ He and Giblets used to work together. They don't anymore. The falling out had so
 
 Mortis resents every resurrection he ever performed. He knows exactly what that resentment makes him.
 
-He pours Lily a drink without being asked every time she comes in. Professional courtesy between people who have both spent too long in the space between.
+He went into the mine once. Not for a job — he doesn't take jobs. To pull two people out who had gone in after something that went badly wrong. He brought Giblets back from what he found down there. He knows what Kess lost. He has never mentioned it to either of them.
+
+He pours Lily a drink without being asked every time she comes in. He does the same for Kess. Professional courtesy between people who have all spent too long in the space between.
 
 ---
 
