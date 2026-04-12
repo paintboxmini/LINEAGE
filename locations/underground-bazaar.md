@@ -49,7 +49,13 @@ Separate from the soul economy entirely. The Pig (Lord Archibald) provides the i
 
 The Pig isn't interested in pieces of people. He has a whole bazaar for that. He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
 
-**Swines** — the Pig's own currency, required for all transactions in the bazaar. Visitors convert real money to swines at the market entrance. The conversion rate is the Pig's first tax. Everything priced in swines after that. *"That'll be eight swines." "You ain't got the swine for that."* The currency sounds undignified because it is. That's intentional.
+**Swines** — the Pig's own currency, required for all transactions in the bazaar. You cannot buy swines upfront. There is no conversion booth, no exchange window. What there is: a gremlin at the entrance who will advance you whatever you need and mark it down. The advance is easy. Cheerful, even. The gremlin will suggest an amount if you seem unsure.
+
+Everything in the bazaar is priced in swines. Real money is no good here. *"That'll be eight swines." "You ain't got the swine for that."*
+
+Getting out is the problem. Converting swines back to real currency requires settling the advance first — principal plus the Pig's fee, paid in actual coin. The fee is set at exit. It is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. The privacy tents do steady business with people trying to negotiate alternate settlements.
+
+The currency sounds undignified because it is. That's intentional — it's hard to feel like you're in financial trouble when the unit of account is called a swine.
 
 **The addiction cycle:**
 Work in bazaar → magical oversaturation → need baseline drinks to function → can't afford them → deeper Pig debt → more dangerous work → repeat.
