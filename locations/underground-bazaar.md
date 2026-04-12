@@ -49,6 +49,18 @@ Separate from the soul economy entirely. The Pig (Lord Archibald) provides the i
 
 The Pig isn't interested in pieces of people. He has a whole bazaar for that. He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
 
+**Swines** — the Pig's own currency, required for all transactions in the bazaar.
+
+Entry requires a minimum conversion: 50 gold for 50 swines. The rate looks fair because it is — on the way in. The entrance gremlin runs this like a carnival ticket booth: enthusiastic, welcoming, a little theatrical. *"First time? Oh, you're going to love it. Fifty gold gets you fifty swines, that's everything you need to get started, right through the door, enjoy the show!"* It feels like the start of something fun. That's the design.
+
+Don't have 50 gold? The gremlin will advance you the minimum and mark it down. Everyone gets in.
+
+Everything in the bazaar is priced in swines. Real money is no good here. *"That'll be eight swines." "You ain't got the swine for that."*
+
+Getting out is the problem. Converting swines back to real currency requires settling the full balance — the entrance conversion, any advances taken inside, plus the Pig's exit fee. The exit fee is set at the door and is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. The privacy tents do steady business with people trying to negotiate alternate settlements.
+
+The currency sounds undignified because it is. That's intentional — it's hard to feel like you're in financial trouble when the unit of account is called a swine.
+
 **The addiction cycle:**
 Work in bazaar → magical oversaturation → need baseline drinks to function → can't afford them → deeper Pig debt → more dangerous work → repeat.
 
@@ -116,6 +128,10 @@ Her maps occasionally show locations that haven't been built yet. Routes through
 
 She never charges coin. She charges secrets — specifically, secrets about places you've been. The more interesting the secret, the more accurate the map. She has been building an intelligence network through cartographic transactions for a very long time.
 
+She is Kess's grandmother. Her daughter — Kess's mother — died in the mine below the bazaar. The Warden had held her illegally, leverage to keep the Cartographer's network cooperative. When Kess went in to fix it, the Cartographer made a map: routes through the deep mine, exits that surface outside the city entirely. She charged nothing for that one. She has not made another like it since.
+
+The map still exists. What Kess has done with it is her own business.
+
 **Willem — Portraitist**
 
 Paint-stained fingers. Does portraits, landscapes, and the occasional "please remove my ex-lover's face from this family painting" commission. The latter comes up more than you'd expect, especially when one party was a reality sculptor.
@@ -140,9 +156,27 @@ The symbiotic variant bonds to whoever tends it and begins to resemble them. The
 
 ---
 
-## Recurring Visitors — Moth & Kess
+## Exotic Animals
 
-*In progress. Like everything else. These two formed through the writing rather than through design — the details below are observed, not authored. Don't fill in what isn't here yet.*
+**Fairy Dragons** — A stall near the east pillar cluster. Iridescent wings, small enough to perch on a shoulder. They help scribes write faster, occasionally breathing small puffs of glittery smoke that makes ink dry perfectly. They chitter in tiny voices, frequently disagreeing with each other about whose calligraphy is better. Expensive. Accumulates Pig debt just by looking at them too long.
+
+**Shardjaw Pitbulls** — Illegal, technically. Stocky bodies covered in fish scales, color gradient from dark purple at the head fading to near-white at the tail. Black glass teeth that break off in wounds and regrow. Someone in the bazaar always has a litter. The vendor is never the same person twice. Gremlins track every sale but nobody asks why the record always shows a different seller.
+
+---
+
+## The Tents
+
+The bazaar has permanent stalls and temporary tents. The tents move. Not dramatically — just enough that they aren't in the same configuration two visits in a row.
+
+**Privacy tents** — Quieter inside than they should be, larger than their exterior. Where negotiations happen that can't happen at a stall. No gremlin has ever successfully tracked what changes hands inside one. The Pig is aware of this and has not resolved it.
+
+**Overflow tents** — Appear when a stall gets too crowded, adjacent to the original. Vendors gesture vaguely behind them: *"the good stuff's in the tent."* The tent may not be where it was yesterday. That's part of the service.
+
+**Sampling tents** — Test dangerous or unstable goods before committing. The magical equivalent of a proof-of-concept. Some items can only be evaluated here because the tent's walls absorb the consequences. The walls have seen things. They do not share.
+
+---
+
+## Recurring Visitors — Moth & Kess
 
 Not confined to the bazaar. First encountered here.
 
@@ -150,13 +184,15 @@ Not confined to the bazaar. First encountered here.
 
 **Kess**
 
-Geometric tattoo on the forearm. It echoes laughter from her sister's wedding day. The real memory is gone — sold, at some point, for reasons that presumably made sense at the time. The tattoo is all that's left.
+Granddaughter of the Cartographer. Uses the Cartographers Guild as a working cover — has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere. Her grandmother's intelligence network runs partly through her. She doesn't advertise this.
 
-Hollow where humor used to live. Not sad about it. Functional.
+Geometric tattoo on the forearm — laughter from her sister's wedding day. The real memory is gone, sold at some point for reasons that made sense at the time. The tattoo is all that's left. Hollow where humor used to live. Not sad about it. Functional.
 
-Uses the Cartographers Guild as a working cover. Has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere.
+She has other tattoos. One of them reacts near Giblets' stall. She has not asked why. She knows better than to ask what she sold.
 
-Her tattoo reacts to the bazaar — specifically near the FourthEye stall. She has not asked why.
+Her mother died in the mine below the bazaar. The Warden had imprisoned her on fabricated debt — leverage against the Cartographer's network. Kess went in to fix it with the only escort who could keep a secret: an ex-adventurer with faulty memory. Something went wrong in the deep. She traded away most of what happened. Mortis pulled them out.
+
+She is working methodically toward paying off the full balance and getting out. She knows where the mine map is. She has plans that extend past her own exit.
 
 ---
 
@@ -164,7 +200,11 @@ Her tattoo reacts to the bazaar — specifically near the FourthEye stall. She h
 
 Carries a coin purse that never gets lighter no matter how much he spends. He does not examine this.
 
-Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. Comfortable in a way that might be a problem.
+He spends freely. Not carelessly — deliberately. As if the exit math is someone else's problem. As if he decided, at some point, that getting out is not the goal.
+
+Kess finds this maddening. He finds her planning exhausting. They have reached an understanding.
+
+Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. The debt he's accumulated is significant. The gremlin watches him with professional wariness.
 
 What the coin purse arrangement actually is: unknown. What he wants: unknown. Whether he can leave: unknown. These are not gaps to be filled in — they're the design.
 
