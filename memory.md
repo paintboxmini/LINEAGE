@@ -51,6 +51,9 @@ Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackra
 **Senshi's menu** (`locations/gilded-tusk.md`)
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
 
+**Mirel / Steve / Pip** (`experimental/mirel.md`, `experimental/steve-and-pip.md`)
+Two story arcs in development. Mirel: Promise-raised, doubting the inevitable return, secretly learning Mason constraint magic, central to the Tide Pulls Back adventure. Steve: Kaine cult initiate, vanilla yes-man, does something foolish in Mirel's arc. Pip: bubble dragon formed from Steve's consciousness during ritual bathing, slowly pops over a week, causes people to flock to Steve as pseudo-Messiah, fallout when Pip is gone. Kaine's goal still being determined — don't write the adventure structure until that's locked. Storm Seat confirmed as valid (Seats file is not exhaustive).
+
 ---
 
 ## Key Design Decisions (This Project)
