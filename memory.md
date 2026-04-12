@@ -30,8 +30,14 @@ Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the baz
 **Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
 Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
 
-**The Warden** (`locations/underground-bazaar.md`, mine below)
-Overseer of the mine labor operation beneath the bazaar. Imprisoned Kess's mother on fabricated debt to leverage the Cartographer's intelligence network. Still in place. Has not been dealt with. The Cartographer's mine map — routes through the deep, exits outside the city — was made for the rescue attempt and still exists.
+**The Wallows** (`locations/the-wallows.md`, `factions/demon-court.md`)
+Mine beneath Eclipsera. Five layers: bazaar → labor level → threshold → deep (Aurora). The Boar built it knowingly above Aurora's binding site. Labor level runs on proximity compliance — workers feel Aurora's warmth as patience. Threshold: sticky echoes, slimes, cave reaches. Alternate exit threads through the threshold to outside the city walls — the Cartographer's map shows this route. Aurora at the bottom: not an encounter, dissolution through love. Don't develop the deep without Drew.
+
+**Warden Pazuzu / The Demon Court** (`factions/demon-court.md`)
+Pazuzu runs the Wallows labor operation for the Boar. Built his guard hierarchy as a mirror of the Regency council — demon masks instead of animal titles. Tiers: Pazuzu (apex), Overseers (armored, unarmed), chain whip guards, Initiates (yellow, entry checkpoint). Direwolves for pursuit — trained to operate in the upper threshold. Pazuzu considers himself the Boar's eighth councillor. The Regency does not acknowledge the Demon Court. Pazuzu has never gone to the deep and has not examined why.
+
+**Lord Archibald — the Boar** (`world/the-regency.md`)
+His official animal title is the Boar. Informally called the Pig — never to his face. Lore/formal files use Boar. Everyday references (bazaar, street-level) stay as Pig. Pig debt, swines, etc. unchanged.
 
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.

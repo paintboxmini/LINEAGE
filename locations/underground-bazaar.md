@@ -3,7 +3,8 @@
 *Semi-official. Everyone knows it exists. The authorities profit from it. No official acknowledgment it exists.*
 
 For the tavern below the bazaar floor, see `locations/underground-tavern.md`.
-The Pig's role in this location: see `world/the-regency.md` (Lord Archibald).
+For the mine below the tavern, see `locations/the-wallows.md`.
+The Pig's role in this location: see `world/the-regency.md` (Lord Archibald, the Boar).
 
 ---
 
