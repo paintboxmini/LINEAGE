@@ -184,6 +184,152 @@ Chitterers are nearby. Watching. They chitter with low urgency when the party ge
 
 ---
 
+## The Underground
+
+Somewhere in the labyrinth, the passage descends. Stone steps cut into the floor, uneven, worn. The walls narrow. The air is wetter and colder. Sound behaves differently down here — the minotaurs' cries, when they come, seem to rise from above rather than approach from ahead. It's disorienting. The party will know they've been navigating correctly, but the sounds will make them feel like they haven't.
+
+The underground is not a separate labyrinth. It weaves back into the upper passages at unpredictable points. The wall-following rule still applies. The glowing thread still appears. The pressure track carries over.
+
+*Each module below works in the upper or lower level. The GM assembles them in whatever order suits the session.*
+
+---
+
+## Module — The Offering Alcove
+
+A recess in the wall at shoulder height. Inside it: something worth wanting. A gem, a tool, something that belongs to someone, something that looks like it was left deliberately.
+
+Taking the object means lifting the hand from the wall.
+
+The alcove gives no warning. It is simply there.
+
+**If a player takes the object:** Their hand leaves the wall. They now hold something in the hand that should be on the wall. Every junction from here is a quiet problem — do they switch the object to the other hand and break the rule, hold it in their wall-hand and fumble their grip, or put it back?
+
+Putting it back requires returning to the alcove. The labyrinth does not backtrack cleanly.
+
+**What's in the alcove:** GM's choice. It should be something at least one player will genuinely want. The temptation is the point.
+
+---
+
+## Module — The Breathing Passage
+
+A corridor that contracts. Slowly, rhythmically — the walls press inward by a few inches, then ease back. Enough to feel. Not enough to trap anyone standing still.
+
+The rhythm is regular. The party can time it if they watch.
+
+Moving during the contraction: the walls brush shoulders, slow progress, create the feeling of being squeezed. Most players will instinctively hurry.
+
+**Running:** Pressure +1.
+
+**Waiting for the open phase:** Safe. Slow. If the pressure track is already high and the minotaurs are close, waiting feels impossible. That is the design.
+
+The passage is twenty feet long. The contraction cycle takes about six seconds. The party has to decide: move now, move carefully, or wait.
+
+---
+
+## Module — The Silent Room
+
+A chamber where all sound stops. Not muffled — stopped. The party's footsteps vanish the moment they cross the threshold. Voices carry no further than the speaker's face.
+
+The minotaurs can still hear perfectly. The party cannot hear the minotaurs at all.
+
+Any sound above a whisper: **Pressure +1.** The chamber does not signal this — there is no rumble, no response. The track just moves.
+
+The party will not know what counts as too loud until they test it. Dropping something. Speaking normally. They learn by watching what happens next.
+
+There is writing on the far wall. It requires getting close enough to read. What it says: GM's choice — something useful, something personal, something that was left by someone who didn't make it out.
+
+---
+
+## Module — The Wall-Reader
+
+A creature that lives in the lower passages. Pale, long-limbed, blind. No eyes — just smooth skin where they would be. It navigates entirely by touch, one hand always trailing the left wall.
+
+It is following the same rule the party should be following.
+
+**If the party is on the left wall:** The Wall-Reader moves alongside them. Unhurried. Indifferent. It does not acknowledge them. It will not attack. If the party stops, it stops. If they move, it moves. It will accompany them until the passage forks and its wall-following takes it a different direction.
+
+**If the party is on the right wall:** It passes them going the opposite direction without reacting. A glimpse at a junction. Gone.
+
+**If a player breaks the rule near it:** The Wall-Reader stops. Turns toward the sound of the disruption. Remains still for three seconds. Then moves toward it. Not fast — it doesn't need to be fast. It knows the walls.
+
+It is not a minotaur. It does not trigger the pressure track. If the party fights it, it fights back. It does not roar.
+
+**Stat block:** `bestiary/wall-reader.md` *(pending)*
+
+---
+
+## Module — The Chitterer's Cage
+
+A Chitterer, caught in one of its own traps. Tangled in the same fine-spun cord it uses on the deer. It is extremely unhappy about this and not quiet about it.
+
+Other Chitterers are nearby, watching. They chitter with low urgency. They have not freed it themselves — unclear why.
+
+**If the party frees it:** The freed Chitterer glares at them, chittering something that sounds like a grudging complaint. Then it moves. Not fast, not far — but deliberately, down a specific passage, pausing once to look back. It leads the party a short distance before chittering off into a gap in the wall.
+
+The direction it leads is correct. The party won't know that until later.
+
+**If the party ignores it or harms it:** The watching Chitterers erupt. Loud, sustained, furious chittering from multiple directions. This counts as combat noise. **Pressure +1.**
+
+---
+
+## Module — The Stone Voice
+
+A second carved face in the wall. Different from the one at the Light/Dark Fork — older, more worn, set lower so it's at chest height. It speaks when the party is close.
+
+It asks something about the party that it shouldn't know. Not a riddle. A question with a real answer that at least one party member would rather not answer in front of the others.
+
+*"What did you leave behind to be here?"*
+*"Who in this group do you trust least?"*
+*"What are you hoping no one notices about you?"*
+
+The face waits. It does not repeat itself. It does not react to silence.
+
+**No stated mechanical consequence.** The consequence is whatever the party does with the question. If they answer honestly: the face says nothing further and goes still. If they deflect, lie, or argue about the question: the face watches them. Still says nothing. The labyrinth has already heard what it needed to hear.
+
+*The GM should pick the question based on what's actually true about the party at this point in the campaign.*
+
+---
+
+## Module — The Mirror Passage
+
+Two passages, side by side, identical in every visible way. Same width, same stone, same smell, same darkness ahead. No markings. No worn walls on either side — this section was built to resist reading.
+
+One leads forward. One loops back to a section the party has already passed.
+
+**The wall-following rule solves this correctly.** A party that has maintained their chosen wall will follow it into the correct passage without hesitation. They may not even notice there was a choice.
+
+A party that has broken the rule, or never committed to one, will have to guess. There is no environmental clue. The choice is genuinely 50/50 without the rule.
+
+**If they take the loop:** They will eventually recognize a landmark from earlier. The pressure track does not reset. The Ferryman's hint, if they received it and ignored it, will land differently the second time.
+
+---
+
+## Module — The Helping Hands
+
+The floor ends. Not at a ledge — the passage simply opens beneath the party's feet without warning. A shaft, dropping further than a torch can illuminate.
+
+Anyone who falls is caught. Hands emerge from the shaft walls — dozens of them, pale, long-fingered, pressing out of the stone. They catch without discussion. They hold without strain.
+
+Then they begin to talk.
+
+The hands form faces in the walls — fingers arranged into eyes, palms pressed together for mouths. Multiple faces. Multiple voices, overlapping, opinionated, frequently disagreeing with each other.
+
+*"Up or down?"*
+
+They argue about which is correct before the party has answered. Some hands point up. Some point down. The faces bicker. It is chaotic and unhelpful and somehow very sincere.
+
+**The choice:**
+- **Up:** The hands pass the party upward and deposit them back at the passage above. They have lost ground. Whatever they were moving toward is still ahead — and the pressure track is where they left it.
+- **Down:** The hands pass the party deeper, into the underground. They arrive at the lower passages, disoriented, having skipped whatever was between.
+
+**The bond test:** The hands will not move until the party agrees. If the party argues — really argues, not just discusses — the faces multiply. The noise increases. The pressure track watches.
+
+**Regaining wall contact:** When the hands deposit the party, there is a disorienting moment where no one has a wall. Players who forget to re-establish contact in the confusion have broken the rule without meaning to.
+
+The hands disappear back into the stone the moment they let go. The shaft seals. The passage continues as if nothing happened.
+
+---
+
 ## The Center
 
 The passage widens. The stone is older here — different cut, different color. Whatever is in the center has been here longer than the labyrinth around it.
@@ -194,11 +340,15 @@ The passage widens. The stone is older here — different cut, different color. 
 
 ## GM Notes
 
+**Assembly.** The modules are agnostic — string them in any order. The First Fork and the Light/Dark Fork work best early (they introduce the rule and the trial's stakes). The Helping Hands works well as a transition to the underground. Everything else can go anywhere.
+
 **The Ferryman's exact words are the only verbal hint.** Don't rephrase or expand unless the party asks a direct follow-up. If they push: *"I'm not the one who's been in there."*
 
 **Reward players who check the walls before committing.** The worn side is visible. Don't hide it — just don't announce it.
 
 **The pressure track is cumulative.** It doesn't care why pressure built — noise, rule breaks, panic — it only cares that it did. A party that runs and fights and second-guesses their wall choice will arrive at the center with the minotaurs close behind, regardless of which mistake was "the" mistake.
+
+**The Stone Voice question** should be chosen before the session, not improvised. Pick something that's actually true about the party.
 
 ---
 

@@ -206,7 +206,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
-**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Lost a ship to the Unheld fifteen years ago. Only one who came back. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet. *Corvel may be a name already used elsewhere in the world — verify before finalizing.*
+**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Lost a ship to the Unheld fifteen years ago. Only one who came back. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
@@ -236,9 +236,7 @@ Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
 
 *"Ale or the brown stuff?"*
 
-**The Back Corner** — round table, low ceiling, one candle. The salt-stiff sailor is already there on the night the party arrives. Not drinking yet. Hands wrapped in linen. Watching the door.
-
-*This is where the Sailor's Story happens. See the section below.*
+**The Back Corner** — round table, low ceiling, one candle. A good place to overhear things. A good place to not be overheard.
 
 **What's available:**
 - Salted Strip — on the bar, free with a drink

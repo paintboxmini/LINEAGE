@@ -27,6 +27,24 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 **FourthEye pipeline**
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/underground-bazaar.md` (Giblets).
 
+**Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
+Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
+
+**The Warden** (`locations/underground-bazaar.md`, mine below)
+Overseer of the mine labor operation beneath the bazaar. Imprisoned Kess's mother on fabricated debt to leverage the Cartographer's intelligence network. Still in place. Has not been dealt with. The Cartographer's mine map — routes through the deep, exits outside the city — was made for the rescue attempt and still exists.
+
+**Bazaar uprising thread** (future)
+Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
+
+**Minotaur stat block** (`bestiary/minotaur.md`)
+Done. Mind 3/Body 6/Soul 5, HP 24. Passives: Labyrinth Bond (+d6 while pressure 5+), Corridor Fighter (repositioning requires action + Body DC 13). Cards pending.
+
+**Chitterer stat block** (`bestiary/chitterer.md`)
+Done. Mind 1/Body 1/Soul 2, HP 9. Passives: Scatter (Evade on damage), Noise (pressure +1 if attacked and survives). Cards pending.
+
+**Wall-Reader stat block** (`bestiary/wall-reader.md`)
+Done. Mind 3/Body 4/Soul 4, HP 18. Passives: Wall-Sense (can't be Blinded, always aware of wall-contact positions), Triggered (non-aggressive until rule broken nearby). Cards pending.
+
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
@@ -35,9 +53,6 @@ Marked as pending in the file.
 
 **Senshi's menu** (`locations/gilded-tusk.md`)
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
-
-**Corvel name check** (`locations/vultures-nest.md`)
-Corvel runs the grey water vials stall at Vulture's Nest. File notes his name may already be used elsewhere in Eclipsera — unverified.
 
 ---
 
