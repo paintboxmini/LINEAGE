@@ -3,6 +3,7 @@
 *Below the bazaar floor. No name anyone uses twice. Where the bazaar's worst customers go when the oversaturation gets heavy.*
 
 Part of the bazaar complex. See `locations/underground-bazaar.md` for the full location.
+The mine below begins here. See `locations/the-wallows.md`.
 
 ---
 
