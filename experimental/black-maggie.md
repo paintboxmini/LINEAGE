@@ -68,6 +68,8 @@ She stayed there. She kept going. It took her several years to reach a hundred. 
 
 When the first anchor point formed she felt the Archon's plane draw closer to hers and understood she had been right about something. That was enough.
 
+What she actually needed was for her parents to show her a future worth living in. To show her what her people's gift looked like when it was whole. That version of her was real, and it was recent once. It is not gone — it is just very far down.
+
 ---
 
 ## The Ritual Sites
