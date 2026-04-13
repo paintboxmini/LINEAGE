@@ -166,6 +166,26 @@ Every night at midnight, Marcus rings a brass bell. All patrons raise a glass to
 
 ---
 
+## Senshi's Commission
+
+Senshi emerges from the kitchen once, briefly, to find the party himself. This is notable.
+
+> *"The Bone Collector Crisps are off the menu until I have a fresh specimen. Not dried. Not preserved. The casing deteriorates and I lose the layered texture entirely."*
+
+He places a folded note on the table without sitting down.
+
+> *"It lives in the old web-forest west of Briarwatch. Four days. You look capable enough. Don't damage the casing — it's the whole point."*
+
+He goes back to the kitchen.
+
+The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **35 silver** for a fresh specimen delivered intact.
+
+*If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
+
+See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
+
+---
+
 ## Notice Board
 
 - **A Favor for the Fox:** Lady Elara's agents need guards to escort a quartz shipment from Glasslight Reach through the Marketplace. *Reward: a merchant's pass for one day.*
