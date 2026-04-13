@@ -11,7 +11,7 @@ Recited in various forms across different regions. The words vary — some versi
 > *Don't go where the cold ground sings,*
 > *Don't follow the lady with the curling things,*
 > *She'll sit with you sweetly and ask how you ache,*
-> *And the ground will remember whatever you make.*
+> *And the ground will remember whatever she makes.*
 
 Younger children don't know what "curling things" means. Older children suspect. Adults who remember learning it can't recall who taught them.
 
