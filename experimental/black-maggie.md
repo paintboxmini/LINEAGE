@@ -10,13 +10,13 @@ A hunched crone. Curled horns — a feature of her race, the only visible marker
 
 ---
 
-## Her Race
+## The Thessians
 
-Healers. They could take on the pain of their patients — transferring suffering into themselves through touch and ritual. What they did with it afterward was the practice: rituals for processing the absorbed pain, for understanding it more fundamentally. They didn't just bear suffering. They witnessed it. They translated it into knowledge of what it meant.
+Nomadic healers. A small tribe — the peoples of the world knew to seek them out when suffering was too great to carry alone. They could take on the pain of their patients — transferring suffering into themselves through touch and ritual. What they did with it afterward was the practice: rituals for processing the absorbed pain, for understanding it more fundamentally. They didn't just bear suffering. They witnessed it. They translated it into knowledge of what it meant.
 
 They were not an evil people. The Archon they served was kind and benevolent.
 
-They are almost entirely gone. Maggie is the last.
+They are almost entirely gone. Maggie is the last. The name of her people is in a tongue almost nobody speaks anymore — she may be the only one who still knows it.
 
 ---
 
