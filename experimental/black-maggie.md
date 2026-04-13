@@ -20,7 +20,7 @@ They are almost entirely gone. Maggie is the last.
 
 ---
 
-## The Seat of Witnessed Suffering
+## MoroM — The Archon of Witnessed Suffering
 
 The Archon's domain: the act of truly seeing someone in their pain. Suffering that is held, understood, metabolized rather than left to accumulate alone. Pain witnessed by another becomes something different than pain endured in isolation.
 
@@ -101,6 +101,6 @@ Does she grieve what she's become? Does she believe this is the only way to pres
 - The race's name
 - How many completed sites vs. in-progress sites
 - Whether the haunting at completed sites can be addressed — and how
-- The Archon's name
+- The race's name — Maggie may be the last who knows it
 - Maggie's age and how she has survived this long
 - Whether more members of her race will appear later
