@@ -24,6 +24,9 @@ A wide open area where the sound of past events surfaces on the wind. The scream
 **The Obsidian Observatory**
 A partially intact dome overlooking the central rift. The best vantage point in the ruins. Almost certainly guarded.
 
+**The Abyssal Trench** *(also called The Trench)*
+A depression twenty feet below the ruins floor. The violet haze pools here over bioluminescent growth. The floor is colonized by hazardous sponge organisms. Ambush predators hunt between them. At the deepest point, ancient tower-like organisms grow from the stone — older than the ruins themselves, unclassified. See `locations/abyssal-trench.md`.
+
 ---
 
 ## Hazards
@@ -60,5 +63,9 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 ## Related Documents
 
 - `quests/abyssal-ruins-cathedral.md` — The Cathedral encounter: the Gluttony Abomination, tremor-door mechanic, the stabilizing crystal
+- `locations/abyssal-trench.md` — The Trench sub-area: sponge hazards, Flapjack Octopus, Elder Tower Creatures
 - `bestiary/gluttony-abomination.md` — The fallen priest boss (mechanics pending)
 - `bestiary/phase-leach.md` — The Phase-Leach (Rift-Stalker)
+- `bestiary/death-ball-sponge.md` — Trench floor hazard
+- `bestiary/flapjack-octopus.md` — Trench ambush predator
+- `bestiary/elder-tower-creature.md` — Ancient Trench organisms
