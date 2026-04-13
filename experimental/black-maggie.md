@@ -74,11 +74,17 @@ What she actually needed was for her parents to show her a future worth living i
 
 ## The Ritual Sites
 
+Seven sites. Seven hundred sacrifices. The number is not arbitrary.
+
+Six completed sites anchor the Archon partially to held reality. When the seventh reaches one hundred, the Seat of Witnessed Suffering is permanently bound — it can never fully fade, regardless of whether the race continues to decline. The Archon survives.
+
+Maggie is the seven hundredth sacrifice. She has always known this. When the seventh site is complete she will kill herself as the final offering, and the work will be finished. She will get to put it down.
+
 **In progress** — fewer than 100 sacrifices. Potentially stoppable. The suffering exists but hasn't permanently anchored.
 
 **Completed** — 100 sacrifices made. Permanent haunting. The anchor holds regardless of what happens to Maggie. These sites are a lasting problem.
 
-How many sites exist in each state: open. How Maggie selects locations: open.
+**The party's complication:** killing Maggie may complete the ritual rather than stop it. She dies either way. The question is whether her death is the seven hundredth or simply a death. And the Archon — neutral, once-benevolent, fading — means stopping her is not a clean heroic act. It is stopping the last tether of something that used to be beautiful.
 
 ---
 
