@@ -48,7 +48,8 @@ Kess is positioned as a future organizer: Cartographers Guild network, grandmoth
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
-**Senshi's menu** (`locations/gilded-tusk.md`)
+**Black Maggie** (`experimental/black-maggie.md`)
+Last survivor of an ancient race of healers who transferred and witnessed suffering. The Archon of the Seat of Witnessed Suffering is fading — race nearly extinct, domain irrelevant. Maggie performs torture-sacrifice at ritual sites. 100 sacrifices = site permanently haunted, anchors the Archon's plane to held reality. Multiple sites in varying states of completion. The haunting feels like grief, not malevolence — suffering that went unwitnessed. Race name, Archon name, site count, and Maggie's interiority all open. Don't develop further without Drew.
 Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
 
 **Mirel / Steve / Pip / Kaine** (`experimental/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
