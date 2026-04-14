@@ -17,8 +17,9 @@ The venom interrupts biological futures — metamorphosis, transformation, any s
 - Cannot be discarded by any means during play.
 - Cannot be removed by short rest.
 - Takes up a hand slot when drawn. It cannot be played.
+- The venom is slow-moving. Cards seeded into the deck have no effect until drawn — the character may not realize they've been stung until the card surfaces during combat or card cycling.
+- Once drawn, the venom begins to metabolize. Each Future-Lock card clears from the deck **20 minutes after it is drawn** (DM tracks). Multiple cards each have their own timer.
 - When a character's hand contains only Future-Lock cards, they are **fully paralyzed** — they cannot act until another character spends their full turn extracting venom (DC 12 Mind/Observe, removes 1 Future-Lock card from hand).
-- Removed by long rest only (overnight — 8 hours).
 
 Hand size is Mind + 1. A Mind 2 character has 3 slots. A Mind 4 character has 5.
 

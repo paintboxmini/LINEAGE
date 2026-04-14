@@ -2,34 +2,36 @@
 
 Not a combat encounter. A floor hazard.
 
-Calcified, roughly spherical growth, eight to twelve inches across. Found in colonies on the floor of The Trench. At rest they look like pale stones or calcified nodules. The surface is covered in microscopic hooks and pores that weep a slow-setting enzyme.
+Calcified, roughly spherical, eight to twelve inches across. Found in colonies on the floor of The Trench. At rest it looks like pale stone — same color, same texture, roughly the same shape as the rubble scattered throughout the Abyssal Ruins.
 
-Stepping on one triggers the hooks. The enzyme bonds to whatever contacted it in seconds.
+The surface is covered in fine hooks and pores that weep a contact enzyme. The enzyme bonds on touch and sets within seconds.
 
 ---
 
 ## Hazard Mechanics
 
-**Spotting a colony:** DC 13 Mind/Observe. Lighting in The Trench is unreliable — colonies blend with the floor. On failure, the party walks into it.
+**Spotting:** DC 13 Mind/Observe to recognize a colony before entering it. Lighting in The Trench is dim and bioluminescent — sponges blend with the pale floor. On a failed check, the party walks into it.
 
-**Triggered:** Any creature that steps onto a sponge without spotting it:
-- Hooks latch immediately.
-- Creature gains **Rooted** until start of their next turn.
-- **Forceful extraction:** Take 2 damage, lose Rooted immediately.
-- **Careful extraction:** DC 12 Body/Sense check on your turn, or spend a full action to detach cleanly. No damage on success.
+**Triggered:** Any character who steps onto a sponge without spotting it is immediately **Rooted** — hooks latch, enzyme holds. They cannot move until they break free.
 
-**Colony navigation:** Dense clusters of 4–8 sponges cover patches of floor. Any movement through a colony without spotting it requires DC 11 Body/Sense or trigger a sponge.
+**Breaking free:**
+- **Force it:** Take 2 damage. Immediately un-Rooted.
+- **Work it loose:** DC 12 Body/Sense check on your turn, or spend a full action to detach carefully. No damage on success.
+
+**Colony:** Dense clusters of 4–8 sponges across a patch of floor. Moving through a colony without a successful spot check requires a DC 11 Body/Sense check per character or trigger a sponge.
 
 ---
 
 ## GM Notes
 
-The hooks do the work; the enzyme holds the catch until it stops moving.
+The sponge does not hunt. It waits. A character who steps in one is stuck in place while the rest of the encounter — an octopus, collapsing masonry, a difficult pull through the Trench — continues around them.
 
-The Death-Ball Sponge doesn't hunt. It waits. The Trench floor is covered in them — they're the reason navigation here demands attention even when nothing is actively trying to kill the party. The Flapjack Octopus has learned the safe paths. It lies flat between colonies.
+The Flapjack Octopus has learned the safe paths between colonies. It lies flat along those routes, which means the party's safe path and the octopus's ambush position are the same.
+
+A column of colonized floor between the party and an exit is a meaningful obstacle. Getting through without triggering anything requires time or luck.
 
 ---
 
 ## Culinary Note
 
-See `locations/gilded-tusk.md` — Death-Ball Delight. Hooks removed by hand before preparation. What remains is the trapping enzyme matrix — a texture unlike anything produced by conventional means.
+See `locations/gilded-tusk.md` — Death-Ball Delight. Hooks removed before preparation. What remains is the trapping enzyme matrix — a texture unlike anything produced by conventional means. Senshi prepared three last month. He will not say what happened to the other two.

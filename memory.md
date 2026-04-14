@@ -54,8 +54,16 @@ Last survivor of the Thessians — nomadic healers who transferred and witnessed
 **Thessian lore delivery:** sprinkle world history through found objects — an old tavern song (words half-corrupted, shape still intact) about seeking a nomad healer in great suffering; a book on a forgotten shelf, possibly dismissive, written by someone who never witnessed the gift firsthand. Neither should announce itself. Let the party find it and file it away until it matters.
 
 **Senshi / The Naturalist Collection** (`locations/gilded-tusk.md`)
-Menu done. 12 dishes, each tied to a pending bestiary creature. Senshi is Thessian — horns hidden under chef's hat at all times, short-tempered, food is sacred. Gene-Thief Tardigrade most mechanically developed — do first. All creatures below need stat blocks:
-`bestiary/unity-jelly.md`, `bestiary/phantom-tail-slug.md`, `bestiary/flapjack-octopus.md`, `bestiary/high-altitude-bat.md`, `bestiary/emerald-frog.md`, `bestiary/bicolor-spider.md`, `bestiary/future-lock-wasp.md`, `bestiary/gene-thief-tardigrade.md`, `bestiary/sapphire-ant.md`, `bestiary/bone-collector.md`, `bestiary/elder-tower-creature.md`, `bestiary/death-ball-sponge.md`
+All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef's hat at all times, short-tempered, food is sacred.
+- Non-combat entries complete: unity-jelly, phantom-tail-slug, high-altitude-bat, emerald-frog, bicolor-spider, sapphire-ant
+- Hazard entries complete: future-lock-wasp (deck contamination, 20min removal after drawn, Body/Soul save), death-ball-sponge (Rooted floor trap, DC 13 spot)
+- Full stat blocks complete: gene-thief-tardigrade, bone-collector, flapjack-octopus, elder-tower-creature
+- Environmental entries complete: elder-tower-creature (harvest tubes, patience puzzle)
+- **Pending:** Flapjack Octopus card set — drafted in `experimental/cards-flapjack-octopus.md`, needs Drew's sign-off on placement
+- **Pending:** Future-Lock status card needs glossary entry before canon — new keyword, requires approval
+- Bone Collector wired to Gilded Tusk (Senshi commission) and Turnroot Weald (Web-Forest POI)
+- Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
+- Abyssal Trench created (`locations/abyssal-trench.md`) — oceanic sub-area with sponge hazard, octopus, elder towers
 
 **Mirel / Steve / Pip / Kaine** (`experimental/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
 Two story arcs in development. Tide Pulls Back adventure written — four encounters, Mirel opening hook, Void Runners dock fight, Final Current lodge infiltration, Kaine climax at Full Tide ceremony. Steve's bathing happens at the ceremony — pulleys get stuck, he's down too long, Pip forms on the way up. Lightning Loop ends in party's hands as unresolved problem. Mirel's ending is open. Kaine not necessarily dead. Pip arc is its own separate quest — party chooses to intervene or not, fallout is emergent. Don't pre-write the Pip resolution. Storm Seat confirmed as valid (Seats file is not exhaustive).
