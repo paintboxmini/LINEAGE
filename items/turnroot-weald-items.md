@@ -113,6 +113,15 @@ The body of a caterpillar roughly the size of a large dog, with a patchwork casi
 
 ---
 
+### Future-Lock Wasp Larvae
+*Source: The Hanging Gallery — DC 14 Body/Sense, or free harvest after swarm dispersal*
+
+Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis venom is concentrated in the larval stage. Smell faintly chemical.
+
+**Quest item:** Required for Senshi's Future-Lock Fricassee at the Gilded Tusk. Must be alive on delivery — they lose viability within a day of extraction. Senshi will check.
+
+---
+
 ## Harvesting Rules
 
 Harvesting from the Turnroot Weald requires time and care:
