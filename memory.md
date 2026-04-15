@@ -30,6 +30,12 @@ Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the baz
 **Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
 Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
 
+**The Descended** (`bestiary/the-descended.md`)
+Former humans from the deep. Range through cave system, upper limit is Diamond Shelf. Crouch-run in open passages, seamless transition to belly-slither at shelf entrance. Primary drive: drag things deeper. Collapsed characters are prioritized — dragged toward fissure, DM judges pace. Demon Court uses them as deterrent through whisper/fear — nobody knows what they are, only what happens. Stat block: Mind 2 / Body 3 / Soul 1, HP 15.
+
+**The Diamond Shelf** (`quests/the-wallows-descent.md`)
+Labor level, far end of main corridor. Nearly-exhausted diamond vein. Two-foot ceiling, belly crawl. Fissure splits it — prisoners cross to reach ore. Initiates guard from entrance side. Descended in back section. Worst assignment in the Wallows. DC 13 Body/Sense to cross fissure cleanly.
+
 **The Wallows** (`locations/the-wallows.md`, `factions/demon-court.md`, `quests/the-wallows-descent.md`)
 Mine beneath Eclipsera. Five layers: bazaar → labor level → threshold → deep (Aurora). The Boar built it knowingly above Aurora's binding site. Labor level runs on proximity compliance — workers feel Aurora's warmth as patience. Threshold: sticky echoes, slimes, cave reaches. Alternate exit threads through the threshold to outside the city walls — the Cartographer's map shows this route. Aurora at the bottom: not an encounter, dissolution through love. Don't develop the deep without Drew. Quest file written: two pressure tracks (Demon Court awareness / Seat influence), modular encounter nodes, hidden behavioral rules for the Seat track.
 
@@ -71,6 +77,17 @@ Two story arcs in development. Tide Pulls Back adventure written — four encoun
 ---
 
 ## Key Design Decisions (This Project)
+
+**Soul = movement speed**
+Soul governs initiative AND movement speed. High Soul characters move faster and act first. This is why flee/chase uses Soul, not Body. Body is impact, not velocity. Important for future card and mechanic design — don't use Body for movement checks.
+
+**Abstract movement**
+No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.
+
+**`rules/quick-reference.md` does not exist**
+Referenced in `agent-prompts/repo-orientation.md` as a key file. New agents will fail to find it. Canonical rules live in: `rules/character-creation.md` (HP formula, hand size), `rules/resolution.md` (2d10 + stat, DC table), `rules/combat.md` (collapse, positions). Either build the file or update the orientation prompt.
+
+
 
 **Seats & Echoes** (`mythology/seats.md`, `mythology/echoes.md`)
 Seats are fixed metaphysical positions — structural features of reality. Echoes are beings whose identity has aligned with a Seat's domain (Resonance → Alignment → Incarnation/Archon). Failed Seat-takers are the most powerful and least stable Echoes.
