@@ -4,7 +4,7 @@
 
 Three limbs. Radially symmetric — no front, no back, no preferred direction. Iron and compressed steel. Each limb terminates in a heavy flat plate that serves equally as a foot or a striking surface depending on what the Trisect decides.
 
-At the joint where each limb meets the central chassis sits a combustion engine — exposed, unshielded, pistons visible in their housings. They smoke. They leak. The exhaust from all three stacks into a low grey haze around the creature that smells like burning fuel and hot iron.
+The central chassis houses three combustion engines — exposed, unshielded, pistons visible in their housings. They smoke. They leak. The exhaust from all three stacks into a low grey haze around the creature that smells like burning fuel and hot iron.
 
 It idles before it engages. The three engines find a rhythm together — a low, even churn. When it moves, all three limbs work in sequence. Nothing about it is off-balance.
 
@@ -17,11 +17,11 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 ## Passives
 
 **Triple Engine Hearts**
-Three combustion engines drive the Trisect independently. It cannot be reduced below 1 HP until Red, Blue, and Green have each landed at least one successful hit.
+Three combustion engines sit exposed in the central chassis. The Trisect cannot be reduced below 1 HP until Red, Blue, and Green have each landed at least one successful hit.
 
-When the third color's first hit lands, all three engines seize simultaneously — pistons lock, exhaust cuts, the chassis drops. The Trisect collapses regardless of remaining HP.
+Each color's first hit kills one engine — pistons lock in that housing, its exhaust cuts out, fuel weeps onto the ash. The limbs keep moving. The remaining engines compensate. On the third color's first hit, the last engine dies and the Trisect collapses regardless of remaining HP.
 
-Track at the table: which colors have hit. Each engine degrades visibly on first contact — it sputters, the exhaust changes character, fuel weeps from the housing. Players can see exactly where they stand.
+Track at the table: which colors have hit. The engines are visible. One dark, two running. Two dark, one running. Players can see exactly where they stand.
 
 **Armour 1**
 Iron chassis. Damage reduced by 1 before Resist.
