@@ -2,7 +2,11 @@
 
 **Cards:** `cards/the-descended.md` *(pending)*
 
-Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. They move by undulating the entire body, fast and low, covering ground the way water moves. The eyes are large and lidless, adapted to total darkness. The teeth have sharpened themselves on whatever the rock shelf provides.
+Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. The eyes are large and lidless, adapted to total darkness. The teeth have sharpened themselves on whatever the deep provides.
+
+In open cave passages they move in a crouch — upright enough to cover ground fast, low enough that something is wrong about it. The gait is too fluid. The arms don't swing. In taller spaces they can pursue at speed, and they do.
+
+When they hit the shelf entrance they don't slow down. They drop into the seam in a single motion — crouch becomes flat becomes slither without a break in momentum — and continue the chase without transition. Players who see this for the first time will feel it before they understand what they saw.
 
 They were people. The depth decided otherwise.
 
@@ -24,8 +28,8 @@ The Descended see perfectly in total darkness. Players without a light source ha
 **Vibration Sense**
 The Descended feel movement through the rock. Any impact on the shelf floor — a body falling, a failed check, a forced crossing — triggers their attention. If a vibration event occurs during navigation or combat, summon 1d4 additional Descended from the far section of the shelf.
 
-**Shelf Hunters**
-The low ceiling is their environment, not a constraint. The Descended move at full speed on the belly. Players moving through the shelf are slowed — all movement requires a DC 11 Body/Sense check or costs double.
+**Adapted Movement**
+The Descended move freely through any cave geometry. In open passages they crouch-run. On the shelf they slither. The transition between the two is seamless — they do not slow for the shelf entrance. Players moving through the shelf are slowed by the ceiling; the Descended are not. All player movement on the shelf requires a DC 11 Body/Sense check or costs double. The Descended ignore this entirely.
 
 ---
 
