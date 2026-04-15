@@ -42,7 +42,7 @@ Body + d6. A fast lunge from floor level — below the sightlines players expect
 The Descended seizes a Staggered character and pulls them toward the far section of the shelf. Target must pass DC 13 Body or be repositioned away from the party. A dragged character out of the party's reach is alone on the shelf with what's hunting them.
 
 **Primary Drive — Pull to Depth**
-The Descended are not hunters in the conventional sense. Their drive is to bring things deeper. A Collapsed character on the shelf is immediately prioritized — the Descended will move toward them and drag them toward the fissure without contest (Collapsed characters cannot defend). Each round a Descended spends adjacent to a Collapsed character, that character is pulled 10 feet toward the fissure. Past the fissure, they are in the back section. Further than that, they are in the deep system. The GM determines what that means.
+The Descended are not hunters in the conventional sense. Their drive is to bring things deeper. A Collapsed character is immediately prioritized — the Descended will move toward them and drag them toward the fissure without contest. Collapsed characters cannot defend. How quickly they reach the fissure is DM judgment. Past it, they are in the back section. Further than that, they are in the deep system. The GM determines what that means.
 
 **Pack Surge** *(passive — 3+ Descended present)*
 When three or more Descended are active in the encounter, each gains +1 to attack rolls. They coordinate without speaking.
