@@ -48,16 +48,6 @@ When three or more Descended are active in the encounter, each gains +1 to attac
 
 ---
 
-## Seat Influence
-
-The Descended are what the threshold makes of those who stay too long. They are not separate from Aurora's domain — they are an expression of it.
-
-Violence against them raises Seat Influence by 1. This is not punishment; it is the nature of the place. The Seat does not fight. The party is choosing to.
-
-A party that navigates the shelf without combat takes no Influence penalty. A party that is forced into combat has already made a noise that costs them.
-
----
-
 ## GM Notes
 
 Spread the party tactically. Players who realize they can guard angles during a crossing — one watching each direction while another crosses the fissure — are playing the environment correctly. Reward this instinct.

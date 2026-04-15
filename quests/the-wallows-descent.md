@@ -222,9 +222,7 @@ A Descended can cross the fissure. It takes them one action. They know the gap.
 ---
 
 **Combat on the shelf:**
-See `bestiary/the-descended.md` for full stat block, abilities, and Seat Influence implications.
-
-Violence against the Descended raises Seat Influence by 1. Navigation without combat does not.
+See `bestiary/the-descended.md` for full stat block and abilities.
 
 *The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
 
