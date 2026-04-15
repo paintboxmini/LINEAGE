@@ -6,6 +6,8 @@ Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. 
 
 They were people. The depth decided otherwise.
 
+Found primarily on the Diamond Shelf in the lower Demon Court levels — the back section, past the fissure. They drift upward from the deep. The Demon Court is aware of them. The Demon Court does not address them officially.
+
 ---
 
 **Mind 2 / Body 3 / Soul 1 — HP 15**
@@ -54,7 +56,9 @@ Spread the party tactically. Players who realize they can guard angles during a 
 
 The Drag ability is the most dangerous element. A separated party member on a dark belly-crawl shelf with three Descended between them and the group is a rescue problem, not a combat one.
 
-The Descended do not pursue beyond the shelf. They stop at the fissure's far edge and watch. They do not cross back.
+The Descended range upward from the deep into the lower prison levels. They are the reason the Diamond Shelf assignment is a punishment. They stop short of the main corridor — the light, the noise, the density of people. But in the shelf's back section, past the fissure, they are a constant presence.
+
+They do not cross back through the fissure during active pursuit. They stop at the edge and watch.
 
 ---
 

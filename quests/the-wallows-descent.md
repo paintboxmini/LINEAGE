@@ -108,6 +108,38 @@ They don't speak to the chain whip guards. The guards straighten when the Overse
 
 ---
 
+### The Diamond Shelf
+
+The worst assignment in the Wallows. A low-ceilinged rock shelf — two feet of clearance, hundreds of square feet — accessed through a branch at the far end of the main corridor. The ceiling doesn't change when you enter. Everyone goes flat.
+
+The shelf is a nearly-exhausted diamond vein. High value is why it's almost gone. Whatever remains is at the back, past the fissure — a four-foot gap splitting the shelf into two sections. Prisoners cross it to reach the ore. They belly-crawl out with what they've chipped free, then crawl back.
+
+Initiates draw this assignment by being unlucky. They guard from the entrance side. Most don't cross the fissure. The prisoners know this.
+
+**The Descended** drift up from the deep into the back section of the shelf. They are why prisoners who get sent here don't escape — not because they can't go down, but because of what's down there. The Initiates know this too. It's part of why they stay at the entrance.
+
+**Navigation on the shelf:** DC 11 Body/Sense per movement action or cost double. All characters — including Initiates — are belly-flat. The Descended move freely.
+
+---
+
+**The Fissure:**
+
+Four feet across. Depth unknown. Crossing requires extending the body fully — hands on the far edge, feet on the near, pulling across flat.
+
+**Crossing check:** DC 13 Body/Sense.
+- **Success:** across cleanly.
+- **Failure by 1–4:** Staggered at the gap. Vibration event — summon 1d4 Descended from the back section.
+- **Failure by 5+:** Partially into the fissure. Staggered, one action to pull free. Significant vibration — summon 1d4 Descended immediately and again next round.
+
+Prisoners cross this multiple times per shift. The ones still alive have developed technique.
+
+**Combat on the shelf:**
+See `bestiary/the-descended.md` for full stat block and abilities.
+
+*The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
+
+---
+
 ### Pazuzu's Court
 
 Off the main corridor — a carved-out chamber the Warden has furnished to resemble a council room. A long table. Chairs of uneven quality. Demon masks on hooks along one wall, ranked by elaborateness.
@@ -181,50 +213,6 @@ The walls are warm.
 At Influence 3+, a player who spends too long in contact with the walls must be spoken to by another party member to continue moving. Not a roll — a choice. What does one player say to another to pull them back to themselves?
 
 *The GM should let this breathe. Don't rush past it.*
-
----
-
-### The Shelf
-
-*Seat Influence: +1 on entry.*
-
-The passage opens without warning into a vast horizontal space. Hundreds of square feet of flat rock. The ceiling is two feet above the floor.
-
-Everyone goes down.
-
-The shelf extends far enough that the far wall isn't visible from the entrance. Bioluminescent growth marks the ceiling in faint patches — enough to see ten feet, not enough to see across. The floor is smooth and cold. The silence here is different from the silence above. It isn't empty. It's waiting.
-
-Roughly halfway across: a fissure. A clean crack splitting the shelf into two sections, four feet wide, depth unknown. The ceiling doesn't change. Crossing requires extending the body fully — hands on the far edge, feet on the near edge, pulling across flat. There is no other way.
-
-**The Descended** live on the far section of the shelf.
-
----
-
-**Navigation — before contact:**
-DC 13 Mind/Observe to detect movement in the far section before the party reaches the fissure. On success, the party knows something is there. On failure, they find out at the fissure.
-
-**Movement on the shelf:**
-DC 11 Body/Sense check per character per movement action or cost double. The Descended move freely. Players don't.
-
----
-
-**The Fissure Crossing:**
-
-One character crosses at a time. The others can hold positions — guarding angles while a crosser moves is the correct tactical read.
-
-**Crossing check:** DC 13 Body/Sense.
-- **Success:** across cleanly. No vibration event.
-- **Failure by 1–4:** character is half-extended over the gap, arms on the far side, legs on the near. They are Staggered. The motion sends a vibration through the rock — Vibration Sense triggers, summon 1d4 Descended.
-- **Failure by 5+:** character falls partially into the fissure — Staggered, one action to pull free, significant vibration event — summon 1d4 Descended immediately and again at the start of next round.
-
-A Descended can cross the fissure. It takes them one action. They know the gap.
-
----
-
-**Combat on the shelf:**
-See `bestiary/the-descended.md` for full stat block and abilities.
-
-*The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
 
 ---
 
