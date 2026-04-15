@@ -29,7 +29,7 @@ Hand size is Mind + 1. A Mind 2 character has 3 slots. A Mind 4 character has 5.
 
 Wasps do not attack unless a nest is disturbed. Nests are found in root cavities, beneath bark overhang, and occasionally anchored to the underside of fallen logs. They do not announce themselves.
 
-On disturbance, a swarm lifts. Each character in the area must make a **2d10 + Body or Soul save** — physical evasion or fast reflexes, player's choice.
+On disturbance, a swarm lifts. Each character in the area makes a **2d10 + Body save** to endure the sting and resist the venom taking hold.
 
 | Result | Consequence |
 |--------|-------------|
