@@ -36,6 +36,8 @@ The Demon Court does not discuss what lies below the labor tunnels. Initiates le
 
 **Entry from the bazaar:** through the tavern floor, down a guarded shaft. The Initiates run this checkpoint. First thing anyone coming up sees is yellow.
 
+**The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended.md`.
+
 ---
 
 ## The Threshold
@@ -47,8 +49,6 @@ Below the labor level the mine stops behaving like a mine.
 **Slimes** — they don't attack. They reach. They want proximity. Getting enveloped isn't violent — it's warm. That's the problem. Creatures of the threshold that express what the deep is full of.
 
 **Cave reaches** — collapses that feel less like structural failure and more like the stone closing in affectionately. Passages narrow behind you. Ceilings have come down just enough to require pressing against the walls to pass. The mine is not trying to kill you. It is trying to keep you.
-
-**The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended.md`.
 
 The warping is not dangerous in the way the labor level is dangerous. It's dangerous in the way forgetting your name is dangerous. Players who spend too long in the threshold should feel the edges of themselves getting soft.
 
@@ -92,5 +92,5 @@ Players who reach the deep will not find a fight. They will find the love of the
 - `locations/underground-bazaar.md` — above
 - `locations/underground-tavern.md` — transitional layer
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding
-- `bestiary/the-descended.md` — The Shelf inhabitants
+- `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
 - `quests/the-wallows-descent.md` — full adventure structure
