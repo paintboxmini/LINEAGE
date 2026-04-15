@@ -6,7 +6,7 @@ Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. 
 
 They were people. The depth decided otherwise.
 
-Found primarily on the Diamond Shelf in the lower Demon Court levels — the back section, past the fissure. They drift upward from the deep. The Demon Court is aware of them. The Demon Court does not address them officially.
+Found primarily on the Diamond Shelf in the lower Demon Court levels — the back section, past the fissure. They drift upward from the deep. The Demon Court talks about them openly. Every prisoner knows what they are. Every prisoner knows what happens to someone who goes too deep and doesn't come back. It's the most efficient deterrent in the mine — it costs the Court nothing and it works.
 
 ---
 
