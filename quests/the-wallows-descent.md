@@ -116,7 +116,9 @@ The shelf is a nearly-exhausted diamond vein. High value is why it's almost gone
 
 Initiates draw this assignment by being unlucky. They guard from the entrance side. Most don't cross the fissure. The prisoners know this.
 
-**The Descended** drift up from the deep into the back section of the shelf. Every prisoner in the Wallows knows what they are. The Demon Court makes sure of it — it's the easiest rule to enforce in the whole mine. Nobody runs down. You don't go deeper than your assignment. You don't want to know what you become if you do. The Initiates stay at the entrance for the same reason.
+**The Descended** drift up from the deep into the back section of the shelf. Nobody knows what they are — only what happens. Someone gets lost in the Wallows, doesn't come back, and something does. The Initiates have heard the stories. The prisoners have heard worse versions. Nobody runs down. The Shelf enforces itself on fear alone.
+
+If a character Collapses on the shelf, the Descended will drag them toward the fissure and deeper. They do not kill immediately. They pull. A Collapsed party member is a clock — retrieve them or lose them to the deep.
 
 **Navigation on the shelf:** DC 11 Body/Sense per movement action or cost double. All characters — including Initiates — are belly-flat. The Descended move freely.
 

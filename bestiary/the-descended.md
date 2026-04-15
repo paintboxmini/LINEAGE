@@ -6,7 +6,9 @@ Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. 
 
 They were people. The depth decided otherwise.
 
-Found primarily on the Diamond Shelf in the lower Demon Court levels — the back section, past the fissure. They drift upward from the deep. The Demon Court talks about them openly. Every prisoner knows what they are. Every prisoner knows what happens to someone who goes too deep and doesn't come back. It's the most efficient deterrent in the mine — it costs the Court nothing and it works.
+Found primarily on the Diamond Shelf in the lower Demon Court levels — the back section, past the fissure. They drift upward from the deep.
+
+Nobody knows what they are. Guards and prisoners alike know what happens to someone who gets lost in the Wallows — they don't come back, and something does. That knowledge is enough. It circulates as whisper and warning, fear that the Demon Court cultivates without having to explain. The Descended themselves are never described accurately because nobody who has seen them up close has chosen to go back for another look.
 
 ---
 
@@ -35,6 +37,9 @@ Body + d6. A fast lunge from floor level — below the sightlines players expect
 **Drag** *(on Staggered target)*
 The Descended seizes a Staggered character and pulls them toward the far section of the shelf. Target must pass DC 13 Body or be repositioned away from the party. A dragged character out of the party's reach is alone on the shelf with what's hunting them.
 
+**Primary Drive — Pull to Depth**
+The Descended are not hunters in the conventional sense. Their drive is to bring things deeper. A Collapsed character on the shelf is immediately prioritized — the Descended will move toward them and drag them toward the fissure without contest (Collapsed characters cannot defend). Each round a Descended spends adjacent to a Collapsed character, that character is pulled 10 feet toward the fissure. Past the fissure, they are in the back section. Further than that, they are in the deep system. The GM determines what that means.
+
 **Pack Surge** *(passive — 3+ Descended present)*
 When three or more Descended are active in the encounter, each gains +1 to attack rolls. They coordinate without speaking.
 
@@ -56,9 +61,9 @@ Spread the party tactically. Players who realize they can guard angles during a 
 
 The Drag ability is the most dangerous element. A separated party member on a dark belly-crawl shelf with three Descended between them and the group is a rescue problem, not a combat one.
 
-The Descended range upward from the deep into the lower prison levels. They are the reason the Diamond Shelf assignment is a punishment. They stop short of the main corridor — the light, the noise, the density of people. But in the shelf's back section, past the fissure, they are a constant presence.
+The Descended range upward from the deep into the lower prison levels. They stop short of the main corridor — the light, the noise, the density of people. But in the shelf's back section, past the fissure, they are a constant presence.
 
-They do not cross back through the fissure during active pursuit. They stop at the edge and watch.
+During active combat they will not cross back through the fissure in pursuit of fleeing characters. A Collapsed character on the near side of the fissure is a different matter — they will cross for that.
 
 ---
 
