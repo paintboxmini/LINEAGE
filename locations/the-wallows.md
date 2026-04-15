@@ -48,6 +48,8 @@ Below the labor level the mine stops behaving like a mine.
 
 **Cave reaches** — collapses that feel less like structural failure and more like the stone closing in affectionately. Passages narrow behind you. Ceilings have come down just enough to require pressing against the walls to pass. The mine is not trying to kill you. It is trying to keep you.
 
+**The Shelf** — a vast flat rock formation deeper in the threshold, hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A fissure splits it in two — four feet across, depth unknown. The Descended live here. Former people. They moved in the direction everything in the threshold moves, and they kept going. See `bestiary/the-descended.md`.
+
 The warping is not dangerous in the way the labor level is dangerous. It's dangerous in the way forgetting your name is dangerous. Players who spend too long in the threshold should feel the edges of themselves getting soft.
 
 ---
@@ -90,3 +92,5 @@ Players who reach the deep will not find a fight. They will find the love of the
 - `locations/underground-bazaar.md` — above
 - `locations/underground-tavern.md` — transitional layer
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `bestiary/the-descended.md` — The Shelf inhabitants
+- `quests/the-wallows-descent.md` — full adventure structure

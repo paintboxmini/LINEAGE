@@ -184,6 +184,52 @@ At Influence 3+, a player who spends too long in contact with the walls must be 
 
 ---
 
+### The Shelf
+
+*Seat Influence: +1 on entry.*
+
+The passage opens without warning into a vast horizontal space. Hundreds of square feet of flat rock. The ceiling is two feet above the floor.
+
+Everyone goes down.
+
+The shelf extends far enough that the far wall isn't visible from the entrance. Bioluminescent growth marks the ceiling in faint patches — enough to see ten feet, not enough to see across. The floor is smooth and cold. The silence here is different from the silence above. It isn't empty. It's waiting.
+
+Roughly halfway across: a fissure. A clean crack splitting the shelf into two sections, four feet wide, depth unknown. The ceiling doesn't change. Crossing requires extending the body fully — hands on the far edge, feet on the near edge, pulling across flat. There is no other way.
+
+**The Descended** live on the far section of the shelf.
+
+---
+
+**Navigation — before contact:**
+DC 13 Mind/Observe to detect movement in the far section before the party reaches the fissure. On success, the party knows something is there. On failure, they find out at the fissure.
+
+**Movement on the shelf:**
+DC 11 Body/Sense check per character per movement action or cost double. The Descended move freely. Players don't.
+
+---
+
+**The Fissure Crossing:**
+
+One character crosses at a time. The others can hold positions — guarding angles while a crosser moves is the correct tactical read.
+
+**Crossing check:** DC 13 Body/Sense.
+- **Success:** across cleanly. No vibration event.
+- **Failure by 1–4:** character is half-extended over the gap, arms on the far side, legs on the near. They are Staggered. The motion sends a vibration through the rock — Vibration Sense triggers, summon 1d4 Descended.
+- **Failure by 5+:** character falls partially into the fissure — Staggered, one action to pull free, significant vibration event — summon 1d4 Descended immediately and again at the start of next round.
+
+A Descended can cross the fissure. It takes them one action. They know the gap.
+
+---
+
+**Combat on the shelf:**
+See `bestiary/the-descended.md` for full stat block, abilities, and Seat Influence implications.
+
+Violence against the Descended raises Seat Influence by 1. Navigation without combat does not.
+
+*The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
+
+---
+
 ### The Map Point
 
 Here the passage branches. Without the grandmother's map, both directions look identical. Both directions feel identical. The warmth doesn't distinguish between them.
@@ -223,3 +269,4 @@ The grandmother's map ends here.
 - `locations/underground-bazaar.md` — above
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — pending
+- `bestiary/the-descended.md` — The Shelf inhabitants
