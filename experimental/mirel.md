@@ -38,6 +38,5 @@ Her arc: deciding which way to go, on her own terms, without being rescued into 
 
 ## Open
 
-- How did she find the Masons? This matters.
 - Does she complete the transition to Mason practice, or arrive somewhere in between?
 - What specifically triggered the doubts — a bathing experience, someone else's dissolution, something she witnessed?

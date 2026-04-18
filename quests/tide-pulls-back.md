@@ -114,8 +114,6 @@ The party has seen him do the foolish thing. He looks exactly as unremarkable as
 
 Then Kaine raises his finger.
 
-Then Kaine raises his finger.
-
 **Encounter 4 — Kaine**
 
 The Lightning Loop's true power: a hostile lightning storm, directed at whatever Kaine points at. He can aim it. He cannot stop it on his timeline. He cannot guarantee it won't arc.
