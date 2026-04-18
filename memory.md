@@ -30,6 +30,12 @@ Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the baz
 **Kess & Moth — Bazaar recurring characters** (`locations/underground-bazaar.md`)
 Now fully wired in. Kess: granddaughter of the Cartographer, using Cartographers Guild as cover, working methodically toward paying off debt and exiting. Her mother died in the mine — imprisoned illegally by the Warden as leverage against the Cartographer's network. Kess went in with Giblets to fix it; something went badly wrong; Mortis pulled them out; she sold the memory. Has tattoo echoes including one that reacts near Giblets' stall. Knows where the grandmother's mine map is. Has plans that extend past her own exit — potential future bazaar uprising organizer. Moth: freely spending swines, no apparent interest in escape, coin purse that never empties, wildcard. Kess finds him maddening. Mortis knows the full story of the mine and has never mentioned it to either of them.
 
+**The Descended** (`bestiary/the-descended.md`)
+Former humans from the deep. Range through cave system, upper limit is Diamond Shelf. Crouch-run in open passages, seamless transition to belly-slither at shelf entrance. Primary drive: drag things deeper. Collapsed characters are prioritized — dragged toward fissure, DM judges pace. Demon Court uses them as deterrent through whisper/fear — nobody knows what they are, only what happens. Stat block: Mind 2 / Body 3 / Soul 1, HP 15.
+
+**The Diamond Shelf** (`quests/the-wallows-descent.md`)
+Labor level, far end of main corridor. Nearly-exhausted diamond vein. Two-foot ceiling, belly crawl. Fissure splits it — prisoners cross to reach ore. Initiates guard from entrance side. Descended in back section. Worst assignment in the Wallows. DC 13 Body/Sense to cross fissure cleanly.
+
 **The Wallows** (`locations/the-wallows.md`, `factions/demon-court.md`, `quests/the-wallows-descent.md`)
 Mine beneath Eclipsera. Five layers: bazaar → labor level → threshold → deep (Aurora). The Boar built it knowingly above Aurora's binding site. Labor level runs on proximity compliance — workers feel Aurora's warmth as patience. Threshold: sticky echoes, slimes, cave reaches. Alternate exit threads through the threshold to outside the city walls — the Cartographer's map shows this route. Aurora at the bottom: not an encounter, dissolution through love. Don't develop the deep without Drew. Quest file written: two pressure tracks (Demon Court awareness / Seat influence), modular encounter nodes, hidden behavioral rules for the Seat track.
 
@@ -48,12 +54,40 @@ Kess is positioned as a future organizer: Cartographers Guild network, grandmoth
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
-**Senshi's menu** (`locations/gilded-tusk.md`)
-Delicious in Dungeon-inspired cook at the Gilded Tusk. Menu marked as pending.
+**Black Maggie** (`experimental/black-maggie.md`)
+Last survivor of the Thessians — nomadic healers who transferred and witnessed suffering. Archon: MoroM, Seat of Witnessed Suffering. Maggie performs torture-sacrifice at ritual sites. 100 sacrifices = site permanently haunted, anchors MoroM's plane to held reality. Seven sites total — six completed, possibly working on seventh. Maggie is the 700th sacrifice (herself), completing the permanent binding. The haunting feels like grief, not malevolence. Site count and Maggie's current location open. Don't develop further without Drew.
+
+**Thessian lore delivery:** sprinkle world history through found objects — an old tavern song (words half-corrupted, shape still intact) about seeking a nomad healer in great suffering; a book on a forgotten shelf, possibly dismissive, written by someone who never witnessed the gift firsthand. Neither should announce itself. Let the party find it and file it away until it matters.
+
+**Senshi / The Naturalist Collection** (`locations/gilded-tusk.md`)
+All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef's hat at all times, short-tempered, food is sacred.
+- Non-combat entries complete: unity-jelly, phantom-tail-slug, high-altitude-bat, emerald-frog, bicolor-spider, sapphire-ant
+- Hazard entries complete: future-lock-wasp (deck contamination, 20min removal after drawn, Body/Soul save), death-ball-sponge (Rooted floor trap, DC 13 spot)
+- Full stat blocks complete: gene-thief-tardigrade, bone-collector, flapjack-octopus, elder-tower-creature
+- Environmental entries complete: elder-tower-creature (harvest tubes, patience puzzle)
+- **Pending:** Flapjack Octopus card set — drafted in `experimental/cards-flapjack-octopus.md`, needs Drew's sign-off on placement
+- **Pending:** Future-Lock status card needs glossary entry before canon — new keyword, requires approval
+- Bone Collector wired to Gilded Tusk (Senshi commission) and Turnroot Weald (Web-Forest POI)
+- Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
+- Abyssal Trench created (`locations/abyssal-trench.md`) — oceanic sub-area with sponge hazard, octopus, elder towers
+
+**Mirel / Steve / Pip / Kaine** (`experimental/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
+Two story arcs in development. Tide Pulls Back adventure written — four encounters, Mirel opening hook, Void Runners dock fight, Final Current lodge infiltration, Kaine climax at Full Tide ceremony. Steve's bathing happens at the ceremony — pulleys get stuck, he's down too long, Pip forms on the way up. Lightning Loop ends in party's hands as unresolved problem. Mirel's ending is open. Kaine not necessarily dead. Pip arc is its own separate quest — party chooses to intervene or not, fallout is emergent. Don't pre-write the Pip resolution. Storm Seat confirmed as valid (Seats file is not exhaustive).
 
 ---
 
 ## Key Design Decisions (This Project)
+
+**Soul = movement speed**
+Soul governs initiative AND movement speed. High Soul characters move faster and act first. This is why flee/chase uses Soul, not Body. Body is impact, not velocity. Important for future card and mechanic design — don't use Body for movement checks.
+
+**Abstract movement**
+No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.
+
+**`rules/quick-reference.md` does not exist**
+Referenced in `agent-prompts/repo-orientation.md` as a key file. New agents will fail to find it. Canonical rules live in: `rules/character-creation.md` (HP formula, hand size), `rules/resolution.md` (2d10 + stat, DC table), `rules/combat.md` (collapse, positions). Either build the file or update the orientation prompt.
+
+
 
 **Seats & Echoes** (`mythology/seats.md`, `mythology/echoes.md`)
 Seats are fixed metaphysical positions — structural features of reality. Echoes are beings whose identity has aligned with a Seat's domain (Resonance → Alignment → Incarnation/Archon). Failed Seat-takers are the most powerful and least stable Echoes.

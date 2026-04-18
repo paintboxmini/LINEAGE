@@ -20,7 +20,7 @@ Aurora is bound at the bottom of this mine. The Boar built his labor operation d
 | Layer | What it is |
 |-------|-----------|
 | **Bazaar level** | Upper mouth of the mine. Magic misbehaves. See `locations/underground-bazaar.md`. |
-| **Labor level** | The Demon Court's domain. Work tunnels, cells, the Warden's court. |
+| **Labor level** | The Demon Court's domain. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end. |
 | **The Threshold** | Where the warping starts. Sticky echoes. Slimes. The cave reaches. |
 | **The Deep** | Aurora. Not an encounter. Something else. |
 
@@ -35,6 +35,8 @@ Workers are debt slaves. Most don't know what they're digging toward. A low warm
 The Demon Court does not discuss what lies below the labor tunnels. Initiates learn not to ask. Overseers already know and have decided not to think about it.
 
 **Entry from the bazaar:** through the tavern floor, down a guarded shaft. The Initiates run this checkpoint. First thing anyone coming up sees is yellow.
+
+**The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended.md`.
 
 ---
 
@@ -90,3 +92,5 @@ Players who reach the deep will not find a fight. They will find the love of the
 - `locations/underground-bazaar.md` — above
 - `locations/underground-tavern.md` — transitional layer
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
+- `quests/the-wallows-descent.md` — full adventure structure

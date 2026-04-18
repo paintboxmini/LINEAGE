@@ -108,6 +108,40 @@ They don't speak to the chain whip guards. The guards straighten when the Overse
 
 ---
 
+### The Diamond Shelf
+
+The worst assignment in the Wallows. A low-ceilinged rock shelf — two feet of clearance, hundreds of square feet — accessed through a branch at the far end of the main corridor. The ceiling doesn't change when you enter. Everyone goes flat.
+
+The shelf is a nearly-exhausted diamond vein. High value is why it's almost gone. Whatever remains is at the back, past the fissure — a four-foot gap splitting the shelf into two sections. Prisoners cross it to reach the ore. They belly-crawl out with what they've chipped free, then crawl back.
+
+Initiates draw this assignment by being unlucky. They guard from the entrance side. Most don't cross the fissure. The prisoners know this.
+
+**The Descended** drift up from the deep into the back section of the shelf. Nobody knows what they are — only what happens. Someone gets lost in the Wallows, doesn't come back, and something does. The Initiates have heard the stories. The prisoners have heard worse versions. Nobody runs down. The Shelf enforces itself on fear alone.
+
+If a character Collapses on the shelf, the Descended will drag them toward the fissure and deeper. They do not kill immediately. They pull. A Collapsed party member is a clock — retrieve them or lose them to the deep.
+
+**Navigation on the shelf:** DC 11 Body/Sense per movement action or cost double. All characters — including Initiates — are belly-flat. The Descended move freely.
+
+---
+
+**The Fissure:**
+
+Four feet across. Depth unknown. Crossing requires extending the body fully — hands on the far edge, feet on the near, pulling across flat.
+
+**Crossing check:** DC 13 Body/Sense.
+- **Success:** across cleanly.
+- **Failure by 1–4:** Staggered at the gap. Vibration event — summon 1d4 Descended from the back section.
+- **Failure by 5+:** Partially into the fissure. Staggered, one action to pull free. Significant vibration — summon 1d4 Descended immediately and again next round.
+
+Prisoners cross this multiple times per shift. The ones still alive have developed technique.
+
+**Combat on the shelf:**
+See `bestiary/the-descended.md` for full stat block and abilities.
+
+*The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
+
+---
+
 ### Pazuzu's Court
 
 Off the main corridor — a carved-out chamber the Warden has furnished to resemble a council room. A long table. Chairs of uneven quality. Demon masks on hooks along one wall, ranked by elaborateness.
@@ -223,3 +257,4 @@ The grandmother's map ends here.
 - `locations/underground-bazaar.md` — above
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — pending
+- `bestiary/the-descended.md` — The Shelf inhabitants
