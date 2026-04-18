@@ -58,6 +58,18 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 ---
 
+## Card
+
+**STORM DEBT**
+RED — BODY — PROMISE
+Attack: Body + d6
+Effect: On a win, target is Staggered.
+Defensive Bonus: Gain Armour 1 until end of combat.
+Range: Melee
+*"The sky doesn't forget what you called down."*
+
+---
+
 ## Open
 
 - What does he intend to do with the Storm Seat resonant item?
