@@ -46,6 +46,18 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 ---
 
+## Stat Block
+
+**Mind 4 / Body 2 / Soul 4 — HP 12**
+
+**Passive — The Loop (3/combat):** Instead of a normal card play, Kaine fires the Lightning Loop. Choose one target — that creature takes d6 damage. Roll a d6: on 1–2, lightning arcs to another creature in the same position for d4. Kaine chooses which creature the arc hits. While below half HP, the arc target is chosen randomly.
+
+**Passive — Certainty:** While Kaine is above half HP, Final Current believers in the encounter gain Advantage on their first attack each round.
+
+**Passive — Volatile:** When Kaine drops below half HP, The Loop loses its targeting — arc targets are chosen randomly for the remainder of the combat.
+
+---
+
 ## Open
 
 - What does he intend to do with the Storm Seat resonant item?
