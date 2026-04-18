@@ -300,6 +300,38 @@ A clearing dense with Luminova growth — translucent leaves emitting soft biolu
 
 ---
 
+### The Hanging Gallery *(hazard — Future-Lock Wasp colony)*
+
+Old trees with heavily grooved bark. The overhanging bark creates natural alcoves along each trunk. Closer inspection reveals something inside each one.
+
+DC 13 Mind/Observe to spot the nests before entering. On failure, the party disturbs the colony.
+
+**Encounter:** See `bestiary/future-lock-wasp.md` for swarm mechanics, save DCs, and dispersal methods. Fire is risky here — dense canopy, DM discretion on spread.
+
+**Harvest:** DC 14 Body/Sense to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
+
+**Loot:** Future-Lock Wasp Larvae. See `items/turnroot-weald-items.md`.
+
+---
+
+### The Web-Forest *(optional — Bone Collector lair)*
+
+Fog thickens here. Ancient spider webs span between trees like abandoned bridges.
+
+Fresh corpses hang in the webs — but they're *missing pieces*. Precise cuts. A merchant's arm. A guard's helmet. A horse's leg. The bodies look *edited*.
+
+A massive spider corpse hangs center-web. Investigation reveals it died first. Something else has been using its territory.
+
+Soft scraping sounds move deeper in the web-maze. Something large, moving between silk highways.
+
+**Encounter:** See `bestiary/bone-collector.md` for the full encounter, round structure, and investigation aftermath.
+
+**Loot:** Spider Silk Rope, Harvest Bead, Bone Collector Flesh. See `items/turnroot-weald-items.md`.
+
+*This area is not placed on the critical path. DM drops it when the party is exploring off-route, or as a destination if they've taken the Gilded Tusk commission from Senshi.*
+
+---
+
 ## Distractions
 
 False navigation cues the forest uses to mislead. DM rolls or chooses based on Pressure level.
@@ -322,4 +354,8 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Vision Shard | Mirror-Slick Pond | See `items/turnroot-weald-items.md` |
 | Root Fibers | Rootstalker (common) | See `items/turnroot-weald-items.md` |
 | Sap Vial | Rootstalker (rare) | See `items/turnroot-weald-items.md` |
+| Spider Silk Rope | The Bone Collector | See `items/turnroot-weald-items.md` |
+| Harvest Bead | The Bone Collector | See `items/turnroot-weald-items.md` |
+| Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
+| Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |

@@ -29,6 +29,8 @@ Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evad
 
 Status cards: Wound, Exhaust, Foglust
 
+**Pending canon approval:** Future-Lock — status card seeded by Future-Lock Wasp venom. Cannot be discarded or removed by short rest. Clears 20 minutes after drawn. Hand full = fully paralyzed. See `bestiary/future-lock-wasp.md`. Needs glossary entry before moving to canon.
+
 ## Note on the Stonecoil Run
 
 The first run was a stress test — all 9 cards passed and were pushed to canon as an exception. Standard loop still ends with Drew making the call.

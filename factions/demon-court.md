@@ -56,6 +56,8 @@ They fail to mention that the prisoners they're guarding would meet any danger f
 
 Their masks are the least elaborate. They've earned the insignia but not much else. Most of them are trying to move up. Some of them have started to understand that moving up means knowing more about what's below the labor level. Most of those stop trying to move up.
 
+The Diamond Shelf assignment goes to Initiates. Low ceiling, belly crawl, the back section past the fissure where things come up from below. Nobody in the Court describes what those things are — they don't have to. Every prisoner has heard what happens to someone who gets lost in the deep. The story circulates on its own. The Shelf enforces itself.
+
 ---
 
 ## The Direwolves
