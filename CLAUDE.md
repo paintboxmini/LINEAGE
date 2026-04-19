@@ -49,7 +49,14 @@ Range: [Melee / Ranged / Both]
 
 ```
 **Mind X / Body X / Soul X — HP X**
+**Difficulty:** Early / Mid / Late
 ```
+
+- **Early** — one mechanic, teaches a concept, low decision overhead
+- **Mid** — two interacting mechanics, positioning starts to matter
+- **Late** — full passive/card synergy, pressure from multiple directions
+
+If difficulty is not specified, ask before building.
 
 ### Bestiary Files
 
