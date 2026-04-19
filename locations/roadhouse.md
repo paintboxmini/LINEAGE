@@ -1,6 +1,8 @@
 # The Roadhouse
 
-A government inn on the main road between Vulture's Nest and Briarwatch. It exists because the road requires it to.
+A government inn on the Kings Road — the midpoint between Vulture's Nest and the capital. It exists because the road requires it to.
+
+Two side roads branch here: west to Briarwatch, northeast toward Glasslight Reach (bypassing the capital). See `world/geography-overview.md`.
 
 ---
 

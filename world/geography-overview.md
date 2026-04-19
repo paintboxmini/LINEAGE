@@ -4,6 +4,28 @@
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and halfway-inns between them.
 
+---
+
+## The Kings Road — The Spine
+
+The main road of the continent. Runs north to south connecting three cities in a straight line:
+
+**Glasslight Reach → Eclipsera (capital) → Vulture's Nest**
+
+This corridor is called **The Spine of Eclipsera**. The Regency maintains it because the Regency depends on it.
+
+**Travel:**
+- Vulture's Nest → Eclipsera: 2 days
+- The Roadhouse sits at the exact midpoint — 1 day from each
+
+**Side roads off the Kings Road at the Roadhouse:**
+- West → Briarwatch (and the Briarwoods)
+- Northeast → Glasslight Reach via an inland route that bypasses the capital. This road splits at least once — one branch leads to Havenrise.
+
+The northeast bypass is how travelers reach Glasslight without passing through Eclipsera. Elias used it coming south. It is less maintained than the Kings Road proper.
+
+---
+
 ## The Basin
 
 The known world occupies a basin. Its boundaries are defined by:
