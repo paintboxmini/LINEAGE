@@ -71,7 +71,7 @@ All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef'
 - Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
 - Abyssal Trench created (`locations/abyssal-trench.md`) — oceanic sub-area with sponge hazard, octopus, elder towers
 
-**Mirel / Steve / Pip / Kaine** (`experimental/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
+**Mirel / Steve / Pip / Kaine** (`characters/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
 Two story arcs in development. Tide Pulls Back adventure written — four encounters, Mirel opening hook, Void Runners dock fight, Final Current lodge infiltration, Kaine climax at Full Tide ceremony. Steve's bathing happens at the ceremony — pulleys get stuck, he's down too long, Pip forms on the way up. Lightning Loop ends in party's hands as unresolved problem. Mirel's ending is open. Kaine not necessarily dead. Pip arc is its own separate quest — party chooses to intervene or not, fallout is emergent. Don't pre-write the Pip resolution. Storm Seat confirmed as valid (Seats file is not exhaustive).
 
 ---

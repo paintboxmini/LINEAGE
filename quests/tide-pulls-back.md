@@ -1,6 +1,6 @@
 # The Tide Pulls Back
 
-*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `experimental/mirel.md`, `experimental/kaine.md`, `experimental/steve-and-pip.md`, `experimental/lightning-loop.md`.*
+*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `experimental/lightning-loop.md`.*
 
 ---
 

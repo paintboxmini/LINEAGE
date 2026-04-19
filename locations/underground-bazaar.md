@@ -83,13 +83,11 @@ They track everything: purchases, time spent near oversaturated areas, smiles gi
 
 Purple canopy. Symbols on the fabric that rearrange when no one's looking. The smell of something eldritch on a grill.
 
-Giblets is a ghoul. Has been brought back from death more times than is good for anyone. Each resurrection lost something — fragments of personality, gaps in emotional register, memories that didn't reassemble correctly. He is not tragic about this. He is unhinged about it, which is different.
+Giblets is a ghoul — unhinged in a way that is not the same as tragic. The stall sells food: whatever eldritch thing is currently on the grill, served with memory seasoning and mood marinades. Digestive divination is free with every meal.
 
-The stall sells food. Specifically: whatever eldritch thing is currently on the grill, served with a side of memory seasoning (crystallized experiences that change the flavor of a meal — and leave you briefly changed too) and mood marinades (concentrated emotions applied as sauce, which is why Giblets samples constantly and feels nothing predictably). Digestive divination is free with every meal.
+The line in front of the stall is the bazaar's most famous feature. It grows. It does not shrink. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
 
-The line in front of the stall is the bazaar's most famous feature. It grows. It does not shrink. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long. The food is transformative enough that people come back anyway.
-
-Giblets has a plan. It connects to someone he used to work with — someone currently operating out of Vulture's Nest. He does not discuss it. The supply chain keeping his stall stocked bypasses the Tideward Compact's ledger and doesn't appear in Quartermaster Voss's intake at Eclipsera South Gate. The Regency noticed the pandemic end of this chain first. They are working backward.
+See `characters/giblets.md`.
 
 **The Tattooist — Keeper of Echoes**
 
