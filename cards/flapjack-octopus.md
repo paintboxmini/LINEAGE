@@ -5,8 +5,8 @@
 **SURGE**
 RED — BODY
 Attack: Body + d6
-Effect: Target makes DC 12 Body/Sense save or gains Staggered.
-Defensive Bonus: —
+Effect: Target makes DC 12 Body/Sense save or gains Staggered. Ends Flatten.
+Defensive Bonus: Gain Flatten.
 Range: Melee
 *"It comes from below."*
 
@@ -15,8 +15,8 @@ Range: Melee
 **ENVELOPING PRESS**
 RED — BODY
 Attack: Body + d4
-Effect: Target gains Rooted until start of their next turn.
-Defensive Bonus: —
+Effect: Target gains Rooted until start of their next turn. Ends Flatten.
+Defensive Bonus: Gain Armour 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*
 
@@ -25,8 +25,8 @@ Range: Melee
 **DEPTH SLAM**
 RED — BODY
 Attack: Body + d6
-Effect: If target is already Staggered, deal +d4 bonus damage.
-Defensive Bonus: —
+Effect: If target is already Staggered, deal +d4 bonus damage. Ends Flatten.
+Defensive Bonus: Gain Flatten.
 Range: Melee
 *"It does not relent."*
 
@@ -35,7 +35,7 @@ Range: Melee
 **INK BURST**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target gains Disadvantage on their next attack this round.
+Effect: Target gains Disadvantage on their next attack this round. Ends Flatten.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
@@ -65,8 +65,8 @@ Range: Both
 **FLATTEN**
 GREEN — SOUL
 Attack: —
-Effect: Flatten. Gain Armour 1 until start of next turn.
-Defensive Bonus: Gain Armour 1.
+Effect: Gain Flatten. Gain Armour 1 until no longer Flattened.
+Defensive Bonus: Gain Flatten.
 Range: Both
 *"Pressure becomes protection."*
 

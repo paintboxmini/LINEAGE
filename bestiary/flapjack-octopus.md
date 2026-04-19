@@ -1,6 +1,6 @@
 # Flapjack Octopus
 
-**Cards:** `cards/flapjack-octopus.md` *(pending)*
+**Cards:** `cards/flapjack-octopus.md`
 
 The body is genuinely flat — pancake-flat when at rest, pressed against whatever surface it's lying on. Eight short arms radiate from the edge rather than the center. Skin color-shifts to match whatever is beneath it: pale stone, dark silt, mottled calcification.
 
@@ -17,26 +17,13 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 ## Passives
 
 **Floor Mimic**
-While stationary, the Flapjack Octopus requires a DC 14 Mind/Observe check to detect. It looks like the floor. Attacks against an undetected Octopus have Disadvantage until detected or until it attacks.
+While stationary and Flattened, requires a DC 14 Mind/Observe check to detect. Attacks against an undetected Octopus have Disadvantage until detected or until it attacks.
 
 **Self-Tenderizing**
 While Flattened, gains Armour 1 from natural compression of its body.
 
----
-
-## Actions
-
-**Flatten** *(free action, start of turn)*
-The Octopus drops flat against the floor or nearest surface. While Flattened:
-- Gains Armour 1 (Self-Tenderizing applies).
-- Gains Floor Mimic benefits if it has not moved this turn.
-- Cannot use Surge until it lifts.
-
-**Surge** *(attack)*
-The Octopus lifts and drives into a target. Body + d6 damage. Target makes DC 12 Body/Sense check or gains **Staggered**.
-
-**Ink Cloud** *(once per combat)*
-Releases dark fluid and immediately repositions freely to any position, then Flattens. Gains Floor Mimic benefits immediately regardless of movement this turn. Enemies that were in Melee range must pass DC 12 Mind/Observe or cannot locate it until it uses Surge again.
+**Flattened**
+The Octopus presses flat against the nearest surface. Gaining Flatten costs an action — played as a card. While Flattened, Floor Mimic and Self-Tenderizing are both active. Flatten ends when the Octopus plays Surge, Enveloping Press, Depth Slam, or Ink Burst.
 
 ---
 
