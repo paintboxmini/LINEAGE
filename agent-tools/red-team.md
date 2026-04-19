@@ -13,6 +13,7 @@ Focus on:
 - Tone mismatch (does it fit the system identity?)
 - Mechanical weakness (effects that don't matter in play)
 - Keyword compliance (only approved keywords in use)
+- Visible reasoning (unfinished thinking left in the output)
 
 Steps:
 1. List at least 3 issues
@@ -60,6 +61,20 @@ Steps:
 
 Do not add new content unless necessary — refine what exists.
 ```
+
+---
+
+## Visible Reasoning — What to Look For
+
+Unfinished reasoning leaves marks. Flag any of the following:
+
+- **Mechanical scaffolding** — action lists, design intent notes, or structural placeholders that belong in a scratch file
+- **Self-explaining content** — text that tells you what a mechanic is supposed to do instead of just doing it ("this passive is intended to teach X")
+- **Designer hedging** — conditional language that reflects uncertainty rather than fiction ("this could also work as...")
+- **Justification text** — narrative reasons for why a mechanic exists, written as if convincing someone rather than describing the world
+- **Orphaned details** — specifics that were there to help the agent reason but serve no purpose in play
+
+If removing flagged text breaks the content, the content isn't finished. Send it back.
 
 ---
 

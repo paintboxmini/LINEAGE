@@ -47,6 +47,7 @@ Before finalizing:
 2. Remove any unnecessary exposition
 3. Ensure at least one outcome has delayed consequences
 4. Keep everything concise
+5. Remove any visible reasoning — if design thinking is readable in the output, it didn't finish
 
 Return final version only.
 ```
