@@ -32,7 +32,7 @@ Most Archons never relinquish their position. Relinquishing a Seat feels like an
 
 **Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipsera carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
 
-**Elias** *(Change)* — Changes so much he has forgotten he is an Archon. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is.
+**Elias** *(Change)* — Changes so much he has forgotten he is an Archon. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
 
 **Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipsera before may recognize him.
 

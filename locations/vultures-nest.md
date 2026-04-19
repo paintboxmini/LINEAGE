@@ -271,7 +271,7 @@ The Red Scarves are already in your peripheral vision.
 
 Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
 
-The Roadhouse is a government inn. Functional, not charming. Beds that work, food that's fine. Exists because the road needs it to. Possibly one traveler going the other direction.
+The Roadhouse is a government inn. Functional, not charming. Beds that work, food that's fine. Exists because the road needs it to. Possibly one traveler going the other direction — dark hair, silver-blue eyes, gives his name as Saile. See `characters/elias.md`.
 
 Instructions after Briarwatch point to the capital — not back to Vulture's Nest.
 
