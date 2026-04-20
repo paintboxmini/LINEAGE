@@ -36,8 +36,29 @@ Her arc: deciding which way to go, on her own terms, without being rescued into 
 
 ---
 
+## Cards
+
+**STILL WATER**
+BLUE — MIND — PROMISE
+Attack: Mind + d4
+Effect: On a win, target has Disadvantage on their next card play.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"It is not calm. It is waiting."*
+
+---
+
+**CONTROLLED RETURN**
+GREEN — SOUL — PROMISE
+Attack: Soul + d2
+Effect: On a win, target is Rooted.
+Defensive Bonus: Gain Evade if you are below half HP.
+Range: Ranged
+*"She let it go. That's different from losing it."*
+
+---
+
 ## Open
 
-- How did she find the Masons? This matters.
 - Does she complete the transition to Mason practice, or arrive somewhere in between?
 - What specifically triggered the doubts — a bathing experience, someone else's dissolution, something she witnessed?

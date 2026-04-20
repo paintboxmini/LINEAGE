@@ -51,6 +51,7 @@ Before finalizing:
 3. Fix them
 4. Ensure no ambiguous targeting, no redundancy with existing cards,
    and the encounter teaches its intended lesson through mechanics
+5. Remove any visible reasoning — if design thinking is readable in the output, it didn't finish
 
 Return final version only.
 ```

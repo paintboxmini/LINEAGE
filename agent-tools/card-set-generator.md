@@ -36,6 +36,7 @@ Before finalizing:
 3. Replace any generic effects with system-specific ones
 4. Verify clarity of targeting and timing on every card
 5. Confirm all keywords exist in the approved list
+6. Remove any visible reasoning — if design thinking is readable in the output, it didn't finish
 
 Return final 9 cards only.
 ```

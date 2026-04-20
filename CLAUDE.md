@@ -22,7 +22,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `world/` | Geography, factions, organizations |
 | `factions/` | Faction documents |
 | `experimental/` | Sandbox — write freely, nothing moves to canon without approval |
-| `agent-prompts/` | Drop-in prompts for common design tasks |
+| `agent-tools/` | Drop-in tools for common design tasks |
 
 ## File Format Conventions
 
@@ -49,7 +49,14 @@ Range: [Melee / Ranged / Both]
 
 ```
 **Mind X / Body X / Soul X — HP X**
+**Difficulty:** Early / Mid / Late
 ```
+
+- **Early** — one mechanic, teaches a concept, low decision overhead
+- **Mid** — two interacting mechanics, positioning starts to matter
+- **Late** — full passive/card synergy, pressure from multiple directions
+
+If difficulty is not specified, ask before building.
 
 ### Bestiary Files
 
@@ -85,8 +92,8 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
 ## Agent Workflow
 
-1. **Orient** — Read `memory.md`, then run `agent-prompts/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
-2. **Select prompt** — Use the appropriate tool from `agent-prompts/`:
+1. **Orient** — Read `memory.md`, then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
+2. **Select prompt** — Use the appropriate tool from `agent-tools/`:
    - Encounter design → `encounter-generator.md`
    - Card set design → `card-set-generator.md`
    - Content review → `red-team.md`
@@ -96,7 +103,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
    - **Suggestions** — related content worth connecting, mechanical options Drew may not have considered
    - **Concerns** — conflicts with existing content, scope that feels too large or too small, missing prerequisites
    - Keep it brief. 2–4 items max. Then wait for a response before proceeding.
-4. **Run automatic triggers** — These are not optional. See `agent-prompts/README.md` for the full table. At minimum:
+4. **Run automatic triggers** — These are not optional. See `agent-tools/README.md` for the full table. At minimum:
    - Any card drafted → run `red-team.md` before presenting
    - Any encounter or quest content → run `red-team.md` Quest/Encounter pass
    - Any content touching an existing location, faction, or NPC → run `alignment-checker.md`

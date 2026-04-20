@@ -9,6 +9,15 @@ This folder is a sandbox. Content here is draft, not canon.
 - No new keywords introduced without discussion first
 - Cut cards go to `archives/cut-cards.md` — never deleted, may find solutions later
 
+## Scratch Files
+
+Before committing to card designs or stat blocks, agents may create a scratch file to reason through mechanics first.
+
+- Name it `experimental/scratch-[task].md`
+- Write freely — this is thinking space, not content
+- Delete it when the work is committed
+- Never leave a scratch file in a pushed commit
+
 ## Standard Card Loop
 
 **Target: full set of 9 cards that all pass red team. Drew picks where they go.**

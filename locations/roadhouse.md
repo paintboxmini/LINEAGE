@@ -1,6 +1,8 @@
 # The Roadhouse
 
-A government inn on the main road between Vulture's Nest and Briarwatch. It exists because the road requires it to.
+A government inn on the Kings Road — the midpoint between Vulture's Nest and the capital. It exists because the road requires it to.
+
+Two side roads branch here: west to Briarwatch, northeast toward Glasslight Reach (bypassing the capital). See `world/geography-overview.md`.
 
 ---
 
@@ -50,11 +52,15 @@ Nobody signed it.
 
 ## The Traveler Going the Other Way
 
-There is usually one. Coming from the Briarwatch direction, heading toward the Nest. Tired. Road-worn. Unremarkable.
+The party arrives to find a man hanging out of an upstairs window without any pants. He falls into the bush below before anyone can say anything. There is a pause. He extracts himself, looks at the party, and asks if they happen to have a spare pair.
 
-If the party asks where they've been: brief answer, nothing useful. If the party asks about Briarwatch: a pause. Then: *"Ground's soft up there near the fork. Watch your step."*
+His name is Saile. He is heading toward Vulture's Nest in the morning. He is charming about the pants situation in a way that makes it difficult to stay annoyed.
 
-That's all they'll say. They finish their meal and turn in early.
+If the party talks with him: he wants to know where they're coming from. What's it like. He leans forward when they describe it. *"Sounds like my kind of place. Gotta be better than here — Regency keeps everything on a tight leash. No fun."* He says it without bitterness. He's already bored of the thought.
+
+Dark hair. Silver-blue eyes. He doesn't ask where the party is going. Plans are not something he finds interesting.
+
+Small things are slightly off while he's around. The party compares notes later and the details don't quite match. See `characters/elias.md`.
 
 ---
 

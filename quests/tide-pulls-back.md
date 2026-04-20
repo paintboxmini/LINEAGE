@@ -1,6 +1,6 @@
 # The Tide Pulls Back
 
-*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `experimental/mirel.md`, `experimental/kaine.md`, `experimental/steve-and-pip.md`, `experimental/lightning-loop.md`.*
+*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `experimental/lightning-loop.md`.*
 
 ---
 
@@ -111,8 +111,6 @@ The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below
 **Steve is here.** In the crowd, near Kaine's followers, watching the ceremony with the focused attention of someone trying to look like they understand what's happening. He has not bathed yet. He is waiting for his turn.
 
 The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
-
-Then Kaine raises his finger.
 
 Then Kaine raises his finger.
 

@@ -66,4 +66,6 @@ Return only refined additions or changes.
 
 ---
 
+*Note: Remove any visible reasoning from the content before presenting — if design thinking is readable in the output, it didn't finish.*
+
 *Optional: run `prompt-refinement.md` after completing this task.*

@@ -71,7 +71,7 @@ All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef'
 - Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
 - Abyssal Trench created (`locations/abyssal-trench.md`) — oceanic sub-area with sponge hazard, octopus, elder towers
 
-**Mirel / Steve / Pip / Kaine** (`experimental/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
+**Mirel / Steve / Pip / Kaine** (`characters/mirel.md`, `experimental/steve-and-pip.md`, `experimental/kaine.md`, `experimental/lightning-loop.md`, `quests/tide-pulls-back.md`)
 Two story arcs in development. Tide Pulls Back adventure written — four encounters, Mirel opening hook, Void Runners dock fight, Final Current lodge infiltration, Kaine climax at Full Tide ceremony. Steve's bathing happens at the ceremony — pulleys get stuck, he's down too long, Pip forms on the way up. Lightning Loop ends in party's hands as unresolved problem. Mirel's ending is open. Kaine not necessarily dead. Pip arc is its own separate quest — party chooses to intervene or not, fallout is emergent. Don't pre-write the Pip resolution. Storm Seat confirmed as valid (Seats file is not exhaustive).
 
 ---
@@ -85,7 +85,7 @@ Soul governs initiative AND movement speed. High Soul characters move faster and
 No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.
 
 **`rules/quick-reference.md` does not exist**
-Referenced in `agent-prompts/repo-orientation.md` as a key file. New agents will fail to find it. Canonical rules live in: `rules/character-creation.md` (HP formula, hand size), `rules/resolution.md` (2d10 + stat, DC table), `rules/combat.md` (collapse, positions). Either build the file or update the orientation prompt.
+Referenced in `agent-tools/repo-orientation.md` as a key file. New agents will fail to find it. Canonical rules live in: `rules/character-creation.md` (HP formula, hand size), `rules/resolution.md` (2d10 + stat, DC table), `rules/combat.md` (collapse, positions). Either build the file or update the orientation prompt.
 
 
 
@@ -194,8 +194,8 @@ Current keyword list in `experimental/README.md`.
 - `items/vultures-nest-items.md` — Dockhook Line, Low Lantern, Salted Strip, Dock Broth, Chewfat Ration.
 - `items/consumables.md` — Terrormite Capsule, Echo Shell, Blood Phial, Imprint Sigil, Universal Pin, Phase Draught.
 
-**Agent Prompts** (`agent-prompts/`)
-Drop-in prompts for common design tasks. See `agent-prompts/README.md` for full index. Always run `repo-orientation.md` first in a new session.
+**Agent Tools** (`agent-tools/`)
+Drop-in prompts for common design tasks. See `agent-tools/README.md` for full index. Always run `repo-orientation.md` first in a new session.
 
 ---
 
