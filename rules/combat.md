@@ -73,6 +73,8 @@ Every card lists a range requirement. If you don't meet it, you cannot play that
 
 Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
+Each side has its own Frontline and Backline. The two Frontlines face each other at the center of combat — that contact point is where Melee range exists. Each side's Backline is their own rear position, on the opposite end of the field from the enemy's Backline.
+
 Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
 
 ### Range Matrix

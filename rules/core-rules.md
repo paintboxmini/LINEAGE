@@ -110,7 +110,7 @@ Short rests can be chained. Long rests require genuine safety.
 
 ## Positioning
 
-Every combatant occupies **Frontline** or **Backline**. Both are abstract zones — any number of characters can share either position. Moving costs your action for the turn.
+Every combatant occupies **Frontline** or **Backline**. Each side has its own Frontline and Backline — the two Frontlines face each other at the center of combat. Both are abstract zones — any number of characters can share either position. Moving costs your action for the turn.
 
 ### Range Matrix
 
