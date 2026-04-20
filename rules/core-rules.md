@@ -127,6 +127,20 @@ Melee requires both characters in the Frontline. The Frontline does not protect 
 
 ---
 
+## Stealth & Ambush
+
+Soul check vs DC = 10 + highest enemy Soul (GM rolls for that creature). On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+
+---
+
+## Chase
+
+Two-marker track. Fleeing party starts at a position equal to their head start in rounds; pursuer starts at 0. Standard track is 5 steps past the fleeing party's start — extend for larger gaps. Each round: contested Soul (2d10 + Soul), winner advances 1 step. Caught = pursuer reaches them. Escaped = fleeing party reaches the end of the track.
+
+Discard a card whose name fits → Advantage.
+
+---
+
 ## Cover
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.

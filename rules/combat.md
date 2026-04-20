@@ -4,6 +4,32 @@ Combat in Tales Untold is fast, positional, and decisive. Rounds are short. Mist
 
 ---
 
+## Stealth & Ambush
+
+To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat among enemy combatants. The GM rolls for that creature.
+
+**On success:** The ambusher's first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone including the ambusher. They take their place in order normally. Combat continues.
+
+**On failure:** Roll initiative. No advantage.
+
+---
+
+## Chase
+
+When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.
+
+**Set up:** Estimate how many rounds of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
+
+*Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.*
+
+**Each round (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
+
+**Caught** — The pursuer's marker reaches the fleeing party's marker.
+
+**Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Observe check, DC set by GM based on terrain and time elapsed).
+
+---
+
 ## Initiative
 
 At the start of combat, each participant rolls:
