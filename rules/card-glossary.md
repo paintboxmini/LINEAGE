@@ -15,11 +15,11 @@ Any non-damage effect applied to you by an enemy: status conditions (Blind, Root
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
 
-**Advantage**
-Roll twice for your damage die and take the higher result.
+**Advantage (Damage)**
+Roll twice for your damage die and take the higher result. This applies to combat damage only. For Advantage on skill checks and saves, see `rules/resolution.md`.
 
-**Disadvantage**
-Roll twice for your damage die and take the lower result.
+**Disadvantage (Damage)**
+Roll twice for your damage die and take the lower result. This applies to combat damage only. For Disadvantage on skill checks and saves, see `rules/resolution.md`.
 
 **Armour X**
 Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
@@ -32,6 +32,8 @@ You gain a specific benefit that persists as long as you do not change positions
 
 **Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely. Expires after the next attack targeting you, whether or not it triggers.
+
+Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
 **Exile**
 Remove a card from play until end of combat. It does not go to the discard pile. Unless the card specifies otherwise, exiled cards are not returned.
@@ -84,7 +86,7 @@ At the end of your turn, discard this card.
 *Status — Colorless*
 Cannot be played.
 When discarded, take 2 damage.
-At the end of your turn, you may discard this card and lose 1 initiative next round.
+At the end of your turn, you may instead discard this card and permanently lose 1 position in the initiative order for the rest of combat.
 Use your action to remove all Exhaust cards from your hand.
 All Exhaust cards are removed from your deck at short rest.
 

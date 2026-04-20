@@ -14,7 +14,8 @@ Turn order resolves highest to lowest.
 
 **Ties:**
 - Higher Soul goes first.
-- If still tied, the tied players choose order among themselves.
+- If still tied between players, they choose order among themselves.
+- If still tied between a player and an enemy, the player goes first.
 
 Card effects cannot modify initiative unless the card explicitly states otherwise.
 

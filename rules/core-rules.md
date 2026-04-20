@@ -110,7 +110,9 @@ Short rests can be chained. Long rests require genuine safety.
 
 ## Cover
 
-**Evade** — While behind partial cover, roll 1d2 before defending. On a 1, the attack misses entirely.
+Taking cover is an action. It can only be taken from the Backline, and the fiction must justify it — there must be something to take cover behind.
+
+While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an attack drops cover immediately.
 
 ---
 
