@@ -108,9 +108,28 @@ Short rests can be chained. Long rests require genuine safety.
 
 ---
 
+## Positioning
+
+Every combatant occupies **Frontline** or **Backline**. Both are abstract zones — any number of characters can share either position. Moving costs your action for the turn.
+
+### Range Matrix
+
+| Attacker | Target | Melee | Ranged | Both |
+|----------|--------|-------|--------|------|
+| Frontline | Frontline | ✓ | ✗ | ✓ |
+| Frontline | Backline | ✗ | ✓ | ✓ |
+| Backline | Frontline | ✗ | ✓ | ✓ |
+| Backline | Backline | ✗ | ✓ | ✓ |
+
+Melee requires both characters in the Frontline. The Frontline does not protect the Backline from being targeted.
+
+**Rushdown** — Move a Backline *enemy* to the Frontline. Cannot target allies. You must be in the Frontline.
+
+---
+
 ## Cover
 
-Taking cover is an action. It can only be taken from the Backline, and the fiction must justify it — there must be something to take cover behind.
+Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
 While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an attack drops cover immediately.
 

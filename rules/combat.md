@@ -73,9 +73,24 @@ Every card lists a range requirement. If you don't meet it, you cannot play that
 
 Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
-Position determines which cards you can play, which cards can target you, and how the battlefield reads. Moving costs your action for the turn.
+Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
 
-Enemies may target Backline characters even if the Frontline is occupied. Position provides no automatic cover — it only gates card range requirements.
+### Range Matrix
+
+Position determines which cards can be played. Use this table to resolve any targeting question:
+
+| Attacker | Target | Melee | Ranged | Both |
+|----------|--------|-------|--------|------|
+| Frontline | Frontline | ✓ | ✗ | ✓ |
+| Frontline | Backline | ✗ | ✓ | ✓ |
+| Backline | Frontline | ✗ | ✓ | ✓ |
+| Backline | Backline | ✗ | ✓ | ✓ |
+
+Melee requires both characters to be in the Frontline. Any other combination is not Melee range.
+
+### Rushdown
+
+Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
 
 ### Confined Spaces
 
