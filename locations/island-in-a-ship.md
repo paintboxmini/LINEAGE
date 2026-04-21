@@ -111,6 +111,17 @@ This is when characters are named and decks are built. The Oracle sees who they 
 
 The structure on the beach their first night: the ship they're already on.
 
+### Deck Building
+
+Players take turns selecting cards from the Oracle deck until each has 9.
+
+1. DM draws 3 cards at random from the Oracle deck and lays them face up.
+2. The active player chooses 1. The others are set aside.
+3. Rotate to the next player. Repeat from step 1.
+4. Continue until each player has 9 cards.
+
+After decks are built, players assign their stats.
+
 ---
 
 ## Related Documents
