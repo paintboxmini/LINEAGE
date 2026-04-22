@@ -1,6 +1,8 @@
 # LINEAGE — Memory
 
-Running log of decisions, pending threads, and context for agents picking up this project. Updated at end of sessions. Read this alongside `CLAUDE.md`.
+**What belongs here:** active threads, mid-session decisions, things in flight that the repo can't capture on its own.
+
+**What doesn't belong here:** keyword definitions (see `rules/card-glossary.md`), workflow rules (see `CLAUDE.md`), location summaries (see `locations/`). If it has a canonical home elsewhere, it goes there.
 
 ---
 
@@ -51,6 +53,16 @@ His official animal title is the Boar. Informally called the Pig — never to hi
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
+**Canille** (`experimental/canille.md`)
+Island village in the Unheld, northeast of Vulture's Nest. Research colony founded by scientists attempting to create sentient life. Three generations of scientists and cubs. Cubs are quadrupedal, pug-faced, ~120lbs, fully furred. White smiling masks on hooks by every door — ceremony, not disguise. Key characters: Hess (oldest founder, knows the answer, won't say it), Cob (third-gen cub, asks the questions nobody will answer). Not yet canon.
+
+**Chase, stealth, and ambush rules**
+Now in `rules/combat.md` and `rules/core-rules.md`. Chase: two-marker track, contested Soul, head start sets starting gap, escape = reach end of track. Stealth: Soul check DC 10 + highest enemy Soul. Ambush: first attack auto-hits, then normal initiative.
+
+**Tonal bible and inspiration guide**
+`world/tonal-bible.md` — aesthetic touchstones (Hastur, Kino's Journey, Hellraiser, Pan's Labyrinth, Dark Crystal, Delicious in Dungeon), what the world reaches for, what it isn't.
+`agent-tools/inspiration-guide.md` — generative lenses for when content feels obvious or flat.
+
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
@@ -84,8 +96,8 @@ Soul governs initiative AND movement speed. High Soul characters move faster and
 **Abstract movement**
 No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.
 
-**`rules/quick-reference.md` does not exist**
-Referenced in `agent-tools/repo-orientation.md` as a key file. New agents will fail to find it. Canonical rules live in: `rules/character-creation.md` (HP formula, hand size), `rules/resolution.md` (2d10 + stat, DC table), `rules/combat.md` (collapse, positions). Either build the file or update the orientation prompt.
+**Quick reference is `rules/core-rules.md`**
+Canonical rules quick reference. Covers stats, DC table, combat actions, attack resolution, card anatomy, positioning, collapse, resting, cover, stealth/ambush, chase. If `repo-orientation.md` references `rules/quick-reference.md`, that's stale — correct it.
 
 
 
@@ -110,39 +122,6 @@ Canonical per quick reference. Earlier expanded docs had +3 — that was an erro
 **Range definitions**
 Quick reference sheet is canonical. Melee: both must be Frontline. Ranged: works only while not in Melee range with target.
 
-**Evade standardization**
-"Gain Evade." — definition lives in `rules/card-glossary.md`. Cards no longer carry inline definitions.
-
-**Resist**
-Takes half damage rounded down. Definition in glossary.
-
-**Wound**
-No effect when drawn. Discard at end of turn. 1 removed per short rest. Definition in glossary.
-
-**Exhaust**
-Status card seeded into player decks. Cannot be played. Removed from deck at short rest. When discarded, take 2 damage. See `cards/tithe-engine-ashfall.md` for full text.
-
-**Anchored**
-A stated benefit that persists as long as you hold your position. Triggers at the start of each of your turns. Ends immediately on repositioning. Written as: `Anchored — [benefit per turn].`
-
-**Armour X**
-Reduce all incoming attack damage by X. Applies before Resist. Definition in `rules/card-glossary.md`.
-
-**Staggered**
-The next time you are attacked, you cannot defend. Definition in `rules/card-glossary.md`.
-
-**Obscure**
-Enemies cannot look at or manipulate your hand or deck. Does not prevent adding status cards. Definition in `rules/card-glossary.md`.
-
-**Advantage / Disadvantage**
-Roll twice, take higher (Advantage) or lower (Disadvantage) result. Definition in `rules/card-glossary.md`. Cards use the keyword only — no inline definitions.
-
-**Thorns X**
-Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Definition in `rules/card-glossary.md`.
-
-**Expose [Color]**
-Blind selection from target's hand. If the selected card matches the stated color, apply the stated conditional effect. Definition in `rules/card-glossary.md`.
-
 **Alignment Marshal — Correction Protocol**
 Passive ability on the Marshal stat block: whenever the Marshal takes damage, shuffle 1 Exhaust into the attacker's deck. See `bestiary/alignment-marshal.md`. Cards: `cards/alignment-marshal-engine.md`.
 
@@ -152,12 +131,6 @@ Named NPC at Vulture's Nest. Turnroot native. Gives party the sealed letter hook
 ---
 
 ## Workflow Rules
-
-**Experimental folder** (`experimental/`)
-Write and push freely. No approval needed. For new design work before it goes to canon.
-
-**Core folders**
-Write locally, present for review, wait for explicit approval before committing or pushing.
 
 **No new keywords without Drew's approval.**
 Current keyword list in `experimental/README.md`.
