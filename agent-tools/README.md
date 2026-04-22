@@ -7,6 +7,7 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 | Prompt | Use When |
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
+| `inspiration-guide.md` | Content feels obvious, flat, or generic — find the right angle |
 | `encounter-generator.md` | Designing a new combat encounter |
 | `npc-encounter-generator.md` | Designing a non-combat NPC or roadside encounter |
 | `card-set-generator.md` | Generating a 9-card enemy set |
