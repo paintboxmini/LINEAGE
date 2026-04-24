@@ -76,7 +76,9 @@ The third generation is the most comfortable. The cubs have always been there. T
 
 At some point she arrived at the answer. She understood what it meant. She did not say it.
 
-She has been watching from her window ever since. Not from guilt exactly — guilt implies she still believes she could have done differently. It is something quieter than that. Closer to the feeling of having put something down in the wrong place and watching it slowly become impossible to reach.
+The answer: they dropped the original goal of creating an equal, and replaced it with domestication.
+
+She has been watching from her window ever since.
 
 She avoids Cob. If asked why, she would say she finds the young ones tiring. This is not true.
 
