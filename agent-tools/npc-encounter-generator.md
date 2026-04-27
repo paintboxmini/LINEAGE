@@ -2,6 +2,8 @@
 
 Use this prompt to generate short roadside or social NPC encounters. Designed for early game — tension without combat.
 
+**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Delete it before committing. Nothing from the scratch file goes into the content file.
+
 ---
 
 ```
