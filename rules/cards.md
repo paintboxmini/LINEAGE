@@ -37,7 +37,7 @@ In combat, you don't declare an action and roll — you play a card. The card te
 ║  Attack:           Soul + d4     ║
 ║  Effect:           Change position
 ║  Defensive Bonus:  Change position
-║  Range:            Melee / Melee ║
+║  Range:            Melee         ║
 ╠══════════════════════════════════╣
 ║  "Water finds its way            ║
 ║   without forcing."              ║
@@ -69,8 +69,6 @@ Your deck is not just mechanics. It's how your character thinks.
 **Melee (Range)** — You and the target must be in the Frontline.
 
 **Ranged (Range)** — Works only while not in Melee range with the target.
-
-**Both (Range)** — Either position is valid.
 
 ---
 

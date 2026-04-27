@@ -4,6 +4,32 @@ Combat in Tales Untold is fast, positional, and decisive. Rounds are short. Mist
 
 ---
 
+## Stealth & Ambush
+
+To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat among enemy combatants. The GM rolls for that creature.
+
+**On success:** The ambusher's first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone including the ambusher. They take their place in order normally. Combat continues.
+
+**On failure:** Roll initiative. No advantage.
+
+---
+
+## Chase
+
+When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.
+
+**Set up:** Estimate how many rounds of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
+
+*Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.*
+
+**Each round (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
+
+**Caught** — The pursuer's marker reaches the fleeing party's marker.
+
+**Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Observe check, DC set by GM based on terrain and time elapsed).
+
+---
+
 ## Initiative
 
 At the start of combat, each participant rolls:
@@ -14,7 +40,8 @@ Turn order resolves highest to lowest.
 
 **Ties:**
 - Higher Soul goes first.
-- If still tied, the tied players choose order among themselves.
+- If still tied between players, they choose order among themselves.
+- If still tied between a player and an enemy, the player goes first.
 
 Card effects cannot modify initiative unless the card explicitly states otherwise.
 
@@ -72,9 +99,30 @@ Every card lists a range requirement. If you don't meet it, you cannot play that
 
 Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
-Position determines which cards you can play, which cards can target you, and how the battlefield reads. Moving costs your action for the turn.
+Each side has its own Frontline and Backline. The two Frontlines face each other at the center of combat — that contact point is where Melee range exists. Each side's Backline is their own rear position, on the opposite end of the field from the enemy's Backline.
 
-Enemies may target Backline characters even if the Frontline is occupied. Position provides no automatic cover — it only gates card range requirements.
+Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
+
+### Range Matrix
+
+Position determines which cards can be played. Use this table to resolve any targeting question:
+
+| Attacker | Target | Melee | Ranged | Both |
+|----------|--------|-------|--------|------|
+| Frontline | Frontline | ✓ | ✗ | ✓ |
+| Frontline | Backline | ✗ | ✓ | ✓ |
+| Backline | Frontline | ✗ | ✓ | ✓ |
+| Backline | Backline | ✗ | ✓ | ✓ |
+
+Melee requires both characters to be in the Frontline. Any other combination is not Melee range.
+
+### Rushdown
+
+Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
+
+### Interact & Position
+
+Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
 
 ### Confined Spaces
 

@@ -28,7 +28,7 @@ Then proceed with the assigned task using those patterns.
 | `memory.md` | Active threads, pending work, key decisions |
 | `experimental/README.md` | Approved keyword list, card loop rules |
 | `rules/card-glossary.md` | All keyword definitions |
-| `rules/quick-reference.md` | Canonical stats, HP formula, range rules |
+| `rules/core-rules.md` | Canonical stats, HP formula, range rules, quick reference |
 
 ## Quick Orientation Checklist
 

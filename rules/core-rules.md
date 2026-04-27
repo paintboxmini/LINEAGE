@@ -108,9 +108,44 @@ Short rests can be chained. Long rests require genuine safety.
 
 ---
 
+## Positioning
+
+Every combatant occupies **Frontline** or **Backline**. Each side has its own Frontline and Backline — the two Frontlines face each other at the center of combat. Both are abstract zones — any number of characters can share either position. Moving costs your action for the turn.
+
+### Range Matrix
+
+| Attacker | Target | Melee | Ranged | Both |
+|----------|--------|-------|--------|------|
+| Frontline | Frontline | ✓ | ✗ | ✓ |
+| Frontline | Backline | ✗ | ✓ | ✓ |
+| Backline | Frontline | ✗ | ✓ | ✓ |
+| Backline | Backline | ✗ | ✓ | ✓ |
+
+Melee requires both characters in the Frontline. The Frontline does not protect the Backline from being targeted.
+
+**Rushdown** — Move a Backline *enemy* to the Frontline. Cannot target allies. You must be in the Frontline.
+
+---
+
+## Stealth & Ambush
+
+Soul check vs DC = 10 + highest enemy Soul (GM rolls for that creature). On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+
+---
+
+## Chase
+
+Two-marker track. Fleeing party starts at a position equal to their head start in rounds; pursuer starts at 0. Standard track is 5 steps past the fleeing party's start — extend for larger gaps. Each round: contested Soul (2d10 + Soul), winner advances 1 step. Caught = pursuer reaches them. Escaped = fleeing party reaches the end of the track.
+
+Discard a card whose name fits → Advantage.
+
+---
+
 ## Cover
 
-**Evade** — While behind partial cover, roll 1d2 before defending. On a 1, the attack misses entirely.
+Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
+
+While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an attack drops cover immediately.
 
 ---
 

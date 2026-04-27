@@ -21,7 +21,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `mythology/` | Lore and creation myths |
 | `world/` | Geography, factions, organizations |
 | `factions/` | Faction documents |
-| `experimental/` | Sandbox — write freely, nothing moves to canon without approval |
+| `experimental/` | Sandbox — lower stakes, free to iterate |
 | `agent-tools/` | Drop-in tools for common design tasks |
 
 ## File Format Conventions
@@ -115,7 +115,6 @@ Prioritize clarity over cleverness. Prefer system-consistent solutions over nove
 
 ## Do Not
 
-- Add flavor text or lore that wasn't written or approved by the user
-- Invent mechanics — adapt from existing stat blocks or ask
+- Invent mechanics in isolation — adapt from existing stat blocks, and flag if something is genuinely new
 - Create files outside the established directory structure without asking
 - Use emoji in files

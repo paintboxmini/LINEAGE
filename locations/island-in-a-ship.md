@@ -105,11 +105,22 @@ What happens in the cave after death is not written here. That is a table discov
 
 ## Session 0 — First Visit
 
-The night the players hear the sailor's story in the Gilded Tusk, the Island finds them for the first time.
+The night the players hear the sailor's story — drinking on deck, the night before arrival in Eclipsera — the Island finds them for the first time.
 
 This is when characters are named and decks are built. The Oracle sees who they are before they do. Every card they draw for the rest of the campaign was seen first by someone who doesn't use her eyes.
 
-The structure on the beach their first night: the ship they crossed the Unheld on.
+The structure on the beach their first night: the ship they're already on.
+
+### Deck Building
+
+Players take turns selecting cards from the Oracle deck until each has 9.
+
+1. DM draws 3 cards at random from the Oracle deck and lays them face up.
+2. The active player chooses 1. The others are set aside.
+3. Rotate to the next player. Repeat from step 1.
+4. Continue until each player has 9 cards.
+
+After decks are built, players assign their stats.
 
 ---
 

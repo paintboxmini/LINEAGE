@@ -51,5 +51,6 @@ Trade sailors who regularly cross the Unheld Ocean are highly valued. There are 
 | Abyssal Ruins | Interior | Vast warped ancient site |
 | Havenrise | Eastern edge | Under development |
 | Roaat | Near Vulture's Nest | Under development |
+| Canille | Unheld, northeast of Vulture's Nest | Island village; experimental |
 
 For detailed location entries, see `locations/`.

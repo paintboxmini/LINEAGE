@@ -277,9 +277,21 @@ Instructions after Briarwatch point to the capital — not back to Vulture's Nes
 
 ---
 
-## The Sailor's Story
+## On the Boat — Night Before Arrival
 
-*Told on the ship the night before arrival. Connected to the Archipelago and the Oracle.*
+Late. Most of the crew has turned in. A few travelers and off-watch sailors have drifted to the deck with whatever was left in the bottles. The coast isn't visible yet but the smell of the continent has arrived — woodsmoke, earth, something green.
+
+The talk is easy. The kind that happens when people don't have to be anywhere until morning.
+
+**Rumors — overheard or offered freely:**
+
+- One sailor, younger, keeps checking the water. He's booked passage back the moment the ship resupplies. The Thorngate Festival starts the week after next — free wine in the square, the Regency parade, trade exhibitions he's been looking forward to for months. He hasn't missed it in three years and he's not starting now.
+
+- A woman near the rail mentions the Regency's south gate inspection has been running tighter lately. More thorough. Nobody's saying why out loud. She doesn't seem bothered — just noting it the way you note weather.
+
+Then someone says: *"If you're going to tell it, tell it."*
+
+## The Sailor's Story
 
 A sailor sits alone. Salt-stiff coat. Hands wrapped in linen. Not drinking.
 

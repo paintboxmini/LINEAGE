@@ -16,27 +16,6 @@ They don't fight to the death. At 1 HP, they attempt to flee. If one escapes, th
 
 ---
 
-## Abilities
-
-**Bolt** — GREEN — SOUL
-- Attack: Soul + d4
-- Effect: Move to Backline.
-- Defensive Bonus: Move to Backline.
-- Range: Melee
-
-**Nip** — RED — BODY
-- Attack: Body + d4
-- Effect: If you are in the Backline, deal +2 damage.
-- Range: Melee
-
-**Freeze** — BLUE — MIND
-- Attack: Mind + d2
-- Effect: Scry 1.
-- Defensive Bonus: Gain Evade.
-- Range: Both
-
----
-
 ## Encounter Setup — Ruined Courtyard
 
 Start with 3 Jackrabbits: 1 Frontline, 2 Backline. They rotate constantly using Bolt.

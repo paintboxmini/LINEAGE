@@ -30,6 +30,8 @@ If a card in your hand has a name that meaningfully supports what you're attempt
 - **Advantage** — Roll 3d10, discard the lowest.
 - **Disadvantage** — Roll 3d10, discard the highest.
 
+*Note: Advantage and Disadvantage on skill checks and saves use the 3d10 system above. In combat, Advantage and Disadvantage apply to damage dice (roll twice, take higher or lower). See `rules/card-glossary.md`.*
+
 The table must agree the card meaningfully supports the action. When in doubt, ask: *would a reasonable person look at this card name and understand the connection?*
 
 ---
