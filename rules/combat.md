@@ -120,6 +120,10 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
 
+### Interact & Position
+
+Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
+
 ### Confined Spaces
 
 In tight environments (narrow tunnels, low passages, cramped rooms), the GM may limit how many characters fit in either position. If a creature physically blocks a passage, characters behind them cannot be targeted unless the fiction clearly allows it (e.g., ranged attack with line of sight). Rushdown in confined spaces may represent forcing an enemy into unstable terrain rather than a clean positional shift.
