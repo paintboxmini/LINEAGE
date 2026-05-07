@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Generate a print-ready HTML card sheet from core card files.
-Open the output in Chrome/Firefox and print → Save as PDF.
+Cards are 60mm x 84mm (slightly under Magic card size) to fit in sleeves.
+Layout: 3x3 per Letter page, exactly 9 cards per page.
+Open output in Chrome/Firefox → Print → Save as PDF.
+Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
 
 import re
@@ -25,6 +28,8 @@ COLOR_LABEL = {
     'GREEN': 'Soul',
 }
 
+CARDS_PER_PAGE = 9
+
 
 def parse_cards(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -42,13 +47,11 @@ def parse_cards(filepath):
         lines = [l.strip() for l in block.split('\n') if l.strip()]
 
         for line in lines:
-            # Card name: **NAME**
             m = re.match(r'^\*\*(.+?)\*\*$', line)
             if m and 'name' not in card:
                 card['name'] = m.group(1)
                 continue
 
-            # Color line: BLUE — MIND or BLUE — MIND — TAG
             m = re.match(r'^(BLUE|RED|GREEN)\s*[—\-]+\s*(.+)$', line)
             if m:
                 card['color'] = m.group(1)
@@ -108,7 +111,7 @@ def card_to_html(card):
     if card.get('flavor'):
         flavor = f'<div class="flavor">&#8220;{h(card["flavor"])}&#8221;</div>'
 
-    return f'''<div class="card" style="background:{bg_color};border-color:{hex_color}88">
+    return f'''<div class="card" style="background:{bg_color};border-color:{hex_color}99">
   <div class="card-top">
     <div class="card-name">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
@@ -120,50 +123,88 @@ def card_to_html(card):
 </div>'''
 
 
+def chunk(lst, size):
+    for i in range(0, len(lst), size):
+        yield lst[i:i + size]
+
+
 def generate_html(all_cards):
-    cards_html = '\n'.join(card_to_html(c) for c in all_cards)
+    page_divs = []
+    for page_cards in chunk(all_cards, CARDS_PER_PAGE):
+        cards_html = '\n'.join(card_to_html(c) for c in page_cards)
+        page_divs.append(f'<div class="page">\n{cards_html}\n</div>')
+
+    pages_html = '\n'.join(page_divs)
+    total = len(all_cards)
+    total_pages = -(-total // CARDS_PER_PAGE)  # ceiling division
 
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tales Untold — Core Cards</title>
+<title>Tales Untold — Core Cards ({total} cards, {total_pages} pages)</title>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
-body {{
-  font-family: Georgia, "Times New Roman", serif;
-  background: #ccc;
-  padding: 0.4in;
+@page {{
+  size: letter;
+  margin: 10mm;
 }}
 
-.sheet {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.15in;
+body {{
+  font-family: Georgia, "Times New Roman", serif;
+  background: #bbb;
+}}
+
+/* Each page block maps exactly to one printed page */
+.page {{
+  width: 196mm;   /* 215.9mm letter - 2x10mm margin */
+  height: 259mm;  /* 279.4mm letter - 2x10mm margin */
+  display: grid;
+  grid-template-columns: repeat(3, 60mm);
+  grid-template-rows: repeat(3, 84mm);
+  column-gap: calc((196mm - 3 * 60mm) / 2);
+  row-gap: calc((259mm - 3 * 84mm) / 2);
+  break-after: page;
+  page-break-after: always;
+  background: white;
+  padding: 0;
+}}
+
+.page:last-child {{
+  break-after: auto;
+  page-break-after: auto;
+}}
+
+/* Screen preview: show pages with spacing */
+@media screen {{
+  body {{ padding: 12mm; }}
+  .page {{
+    margin-bottom: 12mm;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }}
 }}
 
 .card {{
-  width: 2.75in;
-  min-height: 3.85in;
+  width: 60mm;
+  height: 84mm;
   border: 1.5px solid;
-  border-radius: 10px;
-  padding: 0.14in 0.16in 0.12in;
+  border-radius: 7px;
+  padding: 2.5mm 3mm 2mm;
   display: flex;
   flex-direction: column;
-  break-inside: avoid;
-  page-break-inside: avoid;
+  overflow: hidden;
 }}
 
 .card-top {{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 2px;
+  margin-bottom: 1.5px;
 }}
 
 .card-name {{
-  font-size: 14pt;
+  font-size: 10pt;
   font-weight: bold;
   line-height: 1.15;
   flex: 1;
@@ -171,25 +212,25 @@ body {{
 }}
 
 .dot {{
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 8px;
-  margin-top: 3px;
+  margin-left: 5px;
+  margin-top: 2px;
 }}
 
 .card-sub {{
-  font-size: 8pt;
+  font-size: 6.5pt;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 5px;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
   font-style: italic;
 }}
 
 .divider {{
   height: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }}
 
 .tbl {{
@@ -199,49 +240,37 @@ body {{
 }}
 
 .tbl td {{
-  font-size: 10pt;
-  line-height: 1.35;
+  font-size: 7.5pt;
+  line-height: 1.3;
   vertical-align: top;
-  padding: 2px 0;
+  padding: 1.5px 0;
 }}
 
 .tbl .lbl {{
-  font-size: 7.5pt;
+  font-size: 6pt;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: #555;
   white-space: nowrap;
-  padding-right: 7px;
+  padding-right: 4px;
   width: 1px;
-  padding-top: 3px;
+  padding-top: 2px;
 }}
 
 .flavor {{
   font-style: italic;
-  font-size: 8pt;
+  font-size: 6.5pt;
   color: #555;
-  line-height: 1.35;
+  line-height: 1.3;
   margin-top: auto;
-  padding-top: 6px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-}}
-
-@media print {{
-  body {{
-    background: white;
-    padding: 0.25in;
-  }}
-  .sheet {{
-    gap: 0.12in;
-  }}
+  padding-top: 3px;
+  border-top: 1px solid rgba(0,0,0,0.12);
 }}
 </style>
 </head>
 <body>
-<div class="sheet">
-{cards_html}
-</div>
+{pages_html}
 </body>
 </html>'''
 
@@ -261,10 +290,14 @@ if __name__ == '__main__':
         all_cards.extend(batch)
         print(f'  {f}: {len(batch)} cards')
 
+    total_pages = -(-len(all_cards) // CARDS_PER_PAGE)
     output = 'card-print.html'
     with open(output, 'w', encoding='utf-8') as f:
         f.write(generate_html(all_cards))
 
-    print(f'\nGenerated {output} ({len(all_cards)} cards total)')
-    print('Open in Chrome/Firefox → Print → Save as PDF')
-    print('Set margins to Minimum, enable Background graphics')
+    print(f'\nGenerated {output}')
+    print(f'  {len(all_cards)} cards across {total_pages} pages (9 per page, last page has {len(all_cards) % CARDS_PER_PAGE or 9})')
+    print('\nPrint settings:')
+    print('  Margins = None (or Minimum)')
+    print('  Background graphics = On')
+    print('  Scale = 100%  <-- important')
