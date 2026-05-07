@@ -16,10 +16,9 @@ body {
   background: #bbb;
 }
 
-/* Each page block maps exactly to one printed page */
 .page {
-  width: 196mm;   /* 215.9mm letter - 2x10mm margin */
-  height: 259mm;  /* 279.4mm letter - 2x10mm margin */
+  width: 196mm;
+  height: 259mm;
   display: grid;
   grid-template-columns: repeat(3, 60mm);
   grid-template-rows: repeat(3, 84mm);
@@ -28,7 +27,6 @@ body {
   break-after: page;
   page-break-after: always;
   background: white;
-  padding: 0;
 }
 
 .page:last-child {
@@ -36,7 +34,6 @@ body {
   page-break-after: auto;
 }
 
-/* Screen preview: show pages with spacing */
 @media screen {
   body { padding: 12mm; }
   .page {

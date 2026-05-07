@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tales Untold — Briarwatch Encounter Set (18 cards, 2 pages)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: letter;
+  margin: 10mm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #bbb;
+}
+
+.page {
+  width: 196mm;
+  height: 259mm;
+  display: grid;
+  grid-template-columns: repeat(3, 60mm);
+  grid-template-rows: repeat(3, 84mm);
+  column-gap: calc((196mm - 3 * 60mm) / 2);
+  row-gap: calc((259mm - 3 * 84mm) / 2);
+  break-after: page;
+  page-break-after: always;
+  background: white;
+}
+
+.page:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+@media screen {
+  body { padding: 12mm; }
+  .page {
+    margin-bottom: 12mm;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+
+.card {
+  width: 60mm;
+  height: 84mm;
+  border: 1.5px solid;
+  border-radius: 7px;
+  padding: 2.5mm 3mm 2mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5px;
+}
+
+.card-name {
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 1.15;
+  flex: 1;
+  letter-spacing: 0.01em;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.card-sub {
+  font-size: 6.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 3px;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.tbl td {
+  font-size: 7.5pt;
+  line-height: 1.3;
+  vertical-align: top;
+  padding: 1.5px 0;
+}
+
+.tbl .lbl {
+  font-size: 6pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  white-space: nowrap;
+  padding-right: 4px;
+  width: 1px;
+  padding-top: 2px;
+}
+
+.flavor {
+  font-style: italic;
+  font-size: 6.5pt;
+  color: #555;
+  line-height: 1.3;
+  margin-top: auto;
+  padding-top: 3px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">BOLT</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Move to Backline.</td></tr><tr><td class="lbl">Defense</td><td>Move to Backline.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The moment you swing, it&#x27;s already gone.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">NIP</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>If you are in the Backline, deal +2 damage.</td></tr><tr><td class="lbl">Defense</td><td>None.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Small teeth. Fast teeth.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">FREEZE</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d2</td></tr><tr><td class="lbl">Effect</td><td>Scry 1.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;They disappear by refusing to move.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">QUICKSTEP</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Move to any position.</td></tr><tr><td class="lbl">Defense</td><td>Move to any position.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Light feet survive long roads.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">RAKING CUT</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d2</td></tr><tr><td class="lbl">Effect</td><td>On hit, shuffle 1 Wound into target&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Attacker shuffles 1 Wound into their own discard.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The claws are small. The Wound is not.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">SKITTER AWAY</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d2</td></tr><tr><td class="lbl">Effect</td><td>After attack, may reposition.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Gone before the counter.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">NIP AND TEAR</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d2</td></tr><tr><td class="lbl">Effect</td><td>If target has a Wound in their deck, deal +2 damage.</td></tr><tr><td class="lbl">Defense</td><td>Heal 1.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The cut remembers the first one.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">CRAWL LANE</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>Move to any position. If you move to Backline, gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>Move to any position.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;The tunnels they carved are too small for what hunts them. That&#x27;s not an accident.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">CLAY BOWL</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d2</td></tr><tr><td class="lbl">Effect</td><td>Scry 2 of target&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Scry 2 of your own deck.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Press it to the stone. Listen. The stone always tells you first.&#8221;</div>
+</div>
+</div>
+<div class="page">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">TUNNEL KNOWLEDGE</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Choose a position. All enemies in that position move to the other position.</td></tr><tr><td class="lbl">Defense</td><td>All allies may change positions freely.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;They don&#x27;t dominate the space. They know it.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">DRAG</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>Pull defender to Frontline. If defender is already in Frontline, deal +2 damage instead.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Rooted.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;The grip comes before the bite.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">VIBRATION LOCK</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d2</td></tr><tr><td class="lbl">Effect</td><td>Scry 1 of target&#x27;s deck. If that card matches the color they just played, apply Blind.</td></tr><tr><td class="lbl">Defense</td><td>Scry 1 of your own deck.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;It has never seen anything. It doesn&#x27;t need to.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">SHED SKIN</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d2</td></tr><tr><td class="lbl">Effect</td><td>Exile 1 Wound from your deck. Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>Exile 1 card from your discard pile.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;What the stone leaves behind, the coil does not miss.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">DARK CORRIDOR</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Apply Blind to defender.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;There is no light here. That is not an accident.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">COIL LATCH</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>If the target moved this turn, deal +2 damage.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Rooted.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The unyielding clasp of stone restraint.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">STILL GROUND</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d2</td></tr><tr><td class="lbl">Effect</td><td>If the target changed positions last round, deal +1 damage and Scry 1.</td></tr><tr><td class="lbl">Defense</td><td>Scry 1 of your own deck.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Tethered thoughts in a shifting world.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">PATIENCE OF STONE</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Anchored — At the start of each of your turns, heal 2 HP.</td></tr><tr><td class="lbl">Defense</td><td>Gain Advantage.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The unshaken abide, while chaos churns.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">ROLLOUT</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d2</td></tr><tr><td class="lbl">Effect</td><td>If you did not reposition last turn, deal +4 damage.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;It was slow once.&#8221;</div>
+</div>
+</div>
+</body>
+</html>

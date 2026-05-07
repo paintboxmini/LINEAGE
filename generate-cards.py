@@ -2,13 +2,46 @@
 """Generate a print-ready HTML card sheet from core card files.
 Cards are 60mm x 84mm (slightly under Magic card size) to fit in sleeves.
 Layout: 3x3 per Letter page, exactly 9 cards per page.
-Open output in Chrome/Firefox → Print → Save as PDF.
+
+Usage:
+  python3 generate-cards.py              → core cards  (card-print-core.html)
+  python3 generate-cards.py briarwatch  → Briarwatch encounter set
+  python3 generate-cards.py <set-name>  → any named set below
+
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
 
 import re
 import html as html_mod
 import os
+import sys
+
+# ---------------------------------------------------------------------------
+# Card sets — add new encounter sets here
+# ---------------------------------------------------------------------------
+
+SETS = {
+    'core': {
+        'title': 'Core Cards',
+        'files': [
+            'cards/blue-mind.md',
+            'cards/red-body.md',
+            'cards/green-soul.md',
+        ],
+    },
+    'briarwatch': {
+        'title': 'Briarwatch Encounter Set',
+        'files': [
+            'cards/briarwatch-jackrabbit.md',
+            'cards/briar-scratcher.md',
+            'cards/borrower-hollow.md',
+            'cards/stonecoil-hollow.md',
+            'cards/delve-roller-hollow.md',
+        ],
+    },
+}
+
+# ---------------------------------------------------------------------------
 
 COLOR_HEX = {
     'BLUE':  '#2C5F9E',
@@ -80,6 +113,18 @@ def parse_cards(filepath):
     return cards
 
 
+def load_set(set_name):
+    cfg = SETS[set_name]
+    seen = set()
+    all_cards = []
+    for f in cfg['files']:
+        for card in parse_cards(f):
+            if card['name'] not in seen:
+                seen.add(card['name'])
+                all_cards.append(card)
+    return all_cards
+
+
 def h(text):
     return html_mod.escape(str(text))
 
@@ -128,7 +173,7 @@ def chunk(lst, size):
         yield lst[i:i + size]
 
 
-def generate_html(all_cards):
+def generate_html(all_cards, title):
     page_divs = []
     for page_cards in chunk(all_cards, CARDS_PER_PAGE):
         cards_html = '\n'.join(card_to_html(c) for c in page_cards)
@@ -136,13 +181,13 @@ def generate_html(all_cards):
 
     pages_html = '\n'.join(page_divs)
     total = len(all_cards)
-    total_pages = -(-total // CARDS_PER_PAGE)  # ceiling division
+    total_pages = -(-total // CARDS_PER_PAGE)
 
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tales Untold — Core Cards ({total} cards, {total_pages} pages)</title>
+<title>Tales Untold — {h(title)} ({total} cards, {total_pages} pages)</title>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
@@ -156,10 +201,9 @@ body {{
   background: #bbb;
 }}
 
-/* Each page block maps exactly to one printed page */
 .page {{
-  width: 196mm;   /* 215.9mm letter - 2x10mm margin */
-  height: 259mm;  /* 279.4mm letter - 2x10mm margin */
+  width: 196mm;
+  height: 259mm;
   display: grid;
   grid-template-columns: repeat(3, 60mm);
   grid-template-rows: repeat(3, 84mm);
@@ -168,7 +212,6 @@ body {{
   break-after: page;
   page-break-after: always;
   background: white;
-  padding: 0;
 }}
 
 .page:last-child {{
@@ -176,7 +219,6 @@ body {{
   page-break-after: auto;
 }}
 
-/* Screen preview: show pages with spacing */
 @media screen {{
   body {{ padding: 12mm; }}
   .page {{
@@ -278,26 +320,25 @@ body {{
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    files = [
-        'cards/blue-mind.md',
-        'cards/red-body.md',
-        'cards/green-soul.md',
-    ]
+    set_name = sys.argv[1] if len(sys.argv) > 1 else 'core'
 
-    all_cards = []
-    for f in files:
-        batch = parse_cards(f)
-        all_cards.extend(batch)
-        print(f'  {f}: {len(batch)} cards')
+    if set_name not in SETS:
+        print(f'Unknown set: {set_name}')
+        print(f'Available sets: {", ".join(SETS)}')
+        sys.exit(1)
 
+    cfg = SETS[set_name]
+    print(f'Generating: {cfg["title"]}')
+
+    all_cards = load_set(set_name)
     total_pages = -(-len(all_cards) // CARDS_PER_PAGE)
-    output = 'card-print.html'
-    with open(output, 'w', encoding='utf-8') as f:
-        f.write(generate_html(all_cards))
+    output = f'card-print-{set_name}.html'
 
-    print(f'\nGenerated {output}')
-    print(f'  {len(all_cards)} cards across {total_pages} pages (9 per page, last page has {len(all_cards) % CARDS_PER_PAGE or 9})')
-    print('\nPrint settings:')
-    print('  Margins = None (or Minimum)')
-    print('  Background graphics = On')
-    print('  Scale = 100%  <-- important')
+    with open(output, 'w', encoding='utf-8') as f:
+        f.write(generate_html(all_cards, cfg['title']))
+
+    print(f'  {len(all_cards)} cards across {total_pages} pages → {output}')
+    last = len(all_cards) % CARDS_PER_PAGE or CARDS_PER_PAGE
+    if last < CARDS_PER_PAGE:
+        print(f'  (last page has {last} cards)')
+    print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')
