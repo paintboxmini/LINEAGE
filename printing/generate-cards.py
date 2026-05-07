@@ -24,19 +24,19 @@ SETS = {
     'core': {
         'title': 'Core Cards',
         'files': [
-            'cards/blue-mind.md',
-            'cards/red-body.md',
-            'cards/green-soul.md',
+            '../cards/blue-mind.md',
+            '../cards/red-body.md',
+            '../cards/green-soul.md',
         ],
     },
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
         'files': [
-            'cards/briarwatch-jackrabbit.md',
-            'cards/briar-scratcher.md',
-            'cards/borrower-hollow.md',
-            'cards/stonecoil-hollow.md',
-            'cards/delve-roller-hollow.md',
+            '../cards/briarwatch-jackrabbit.md',
+            '../cards/briar-scratcher.md',
+            '../cards/borrower-hollow.md',
+            '../cards/stonecoil-hollow.md',
+            '../cards/delve-roller-hollow.md',
         ],
     },
 }
