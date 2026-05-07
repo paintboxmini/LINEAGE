@@ -53,6 +53,9 @@ Cannot change position until the start of your next turn.
 **Rushdown**
 Move a target from Backline to Frontline. The user must be in the Frontline. See `rules/combat.md`.
 
+**Quick**
+On your next turn, you may change positions without spending your action.
+
 **Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. Return them in any order, placing each on top or on the bottom.
 
