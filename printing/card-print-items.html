@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tales Untold — Items (14 cards, 2 pages)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: letter;
+  margin: 10mm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #bbb;
+}
+
+.page {
+  width: 196mm;
+  height: 259mm;
+  display: grid;
+  grid-template-columns: repeat(3, 60mm);
+  grid-template-rows: repeat(3, 84mm);
+  column-gap: calc((196mm - 3 * 60mm) / 2);
+  row-gap: calc((259mm - 3 * 84mm) / 2);
+  break-after: page;
+  page-break-after: always;
+  background: white;
+}
+
+.page:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+@media screen {
+  body { padding: 12mm; }
+  .page {
+    margin-bottom: 12mm;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+
+.card {
+  width: 60mm;
+  height: 84mm;
+  border: 1.5px solid;
+  border-radius: 7px;
+  padding: 2.5mm 3mm 2mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5px;
+}
+
+.card-name {
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 1.15;
+  flex: 1;
+  letter-spacing: 0.01em;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.card-sub {
+  font-size: 6.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 3px;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.tbl td {
+  font-size: 7.5pt;
+  line-height: 1.3;
+  vertical-align: top;
+  padding: 1.5px 0;
+}
+
+.tbl .lbl {
+  font-size: 6pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  white-space: nowrap;
+  padding-right: 4px;
+  width: 1px;
+  padding-top: 2px;
+}
+
+.flavor {
+  font-style: italic;
+  font-size: 6.5pt;
+  color: #555;
+  line-height: 1.3;
+  margin-top: auto;
+  padding-top: 3px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.item-effect {
+  font-size: 7.5pt;
+  line-height: 1.4;
+  flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">TERRORMITE CAPSULE</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1) — Duration: 1 combat.<br>Gain Armour 1 and your attacks deal +1d6 damage.<br>End of combat: Shuffle 2 Wound cards into your deck.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">ECHO SHELL</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Repeat the action you took last turn. Does not work if you cannot retrieve the previously used card from your discard pile.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">BLOOD PHIAL</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Add the effect of the last card the target used this combat to an attack you make now.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">IMPRINT SIGIL</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Target must follow a simple command for 1 turn.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">UNIVERSAL PIN</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Does not require an action to use.</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Fix a target in place. They cannot be moved this round.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">PHASE DRAUGHT</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Take your turn normally. At the end of your turn, return to your previous position and state.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">BARBED WRAP</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Strips of wire-wrapped leather</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Duration: 1 battle.<br>Effect: When you are targeted by an attack, deal 1 damage to the attacker.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">CARRION FEATHER</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Single dark feather, tied with road-worn cord</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Activates automatically: The first time you would be forced to reposition, negate that effect instead. Then this item is spent.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">SPLIT WEDGE</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Iron wedge, worn grip, field tool</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Gain Anchored — +2 damage this turn.</div>
+</div>
+</div>
+<div class="page">
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">DOCKHOOK LINE</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Weighted hook on heavy rope</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Pull yourself or a target enemy to Frontline.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">LOW LANTERN</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Squat iron lantern, smoked glass</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Gain Obscure for 1 combat.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">SALTED STRIP</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Dried, heavily salted meat</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use: Heal 2 HP.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">DOCK BROTH</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Hot, murky, smells like low tide</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use: Remove 1 status card from your deck. Gain Disadvantage on your next damage roll.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">CHEWFAT RATION</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Dense rendered fat block, travel-wrapped</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Passive (1 combat): Gain Armour 1. At the end of each of your turns, discard 1 card.</div>
+</div>
+</div>
+</body>
+</html>

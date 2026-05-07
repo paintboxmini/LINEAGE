@@ -6,6 +6,7 @@ Layout: 3x3 per Letter page, exactly 9 cards per page.
 Usage:
   python3 generate-cards.py              → core cards  (card-print-core.html)
   python3 generate-cards.py briarwatch  → Briarwatch encounter set
+  python3 generate-cards.py items       → player item cards
   python3 generate-cards.py <set-name>  → any named set below
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
@@ -39,6 +40,15 @@ SETS = {
             '../cards/delve-roller-hollow.md',
         ],
     },
+    'items': {
+        'title': 'Items',
+        'type': 'items',
+        'files': [
+            '../items/consumables.md',
+            '../items/briarwoods-items.md',
+            '../items/vultures-nest-items.md',
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -60,6 +70,9 @@ COLOR_LABEL = {
     'RED':   'Body',
     'GREEN': 'Soul',
 }
+
+ITEM_HEX = '#7A5C10'
+ITEM_BG  = '#FBF8F0'
 
 CARDS_PER_PAGE = 9
 
@@ -113,12 +126,64 @@ def parse_cards(filepath):
     return cards
 
 
+def parse_items(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    items = []
+    blocks = re.split(r'\n---\n', content)
+
+    for block in blocks:
+        block = block.strip()
+        if not block:
+            continue
+
+        item = {'_type': 'item'}
+        lines = [l.strip() for l in block.split('\n') if l.strip()]
+
+        for line in lines:
+            # Skip markdown section headers
+            if line.startswith('#'):
+                continue
+
+            # Name: **ITEM NAME**
+            m = re.match(r'^\*\*(.+?)\*\*$', line)
+            if m and 'name' not in item:
+                item['name'] = m.group(1)
+                continue
+
+            # Only process further once we have a name
+            if 'name' not in item:
+                continue
+
+            # Italic lines: type descriptor or source (skip source)
+            m = re.match(r'^\*(.+)\*$', line)
+            if m:
+                inner = m.group(1)
+                if inner.startswith('Source:'):
+                    continue
+                if 'type' not in item:
+                    item['type'] = inner
+                continue
+
+            # Everything else is effect text
+            item.setdefault('effect_lines', []).append(line)
+
+        if item.get('name'):
+            items.append(item)
+
+    return items
+
+
 def load_set(set_name):
     cfg = SETS[set_name]
+    is_items = cfg.get('type') == 'items'
+    parser = parse_items if is_items else parse_cards
+
     seen = set()
     all_cards = []
     for f in cfg['files']:
-        for card in parse_cards(f):
+        for card in parser(f):
             if card['name'] not in seen:
                 seen.add(card['name'])
                 all_cards.append(card)
@@ -168,6 +233,29 @@ def card_to_html(card):
 </div>'''
 
 
+def item_to_html(item):
+    type_line = ''
+    if item.get('type'):
+        type_line = f'<div class="card-sub" style="color:{ITEM_HEX}">{h(item["type"])}</div>'
+
+    effect = '<br>'.join(h(l) for l in item.get('effect_lines', []))
+
+    return f'''<div class="card" style="background:{ITEM_BG};border-color:{ITEM_HEX}99">
+  <div class="card-top">
+    <div class="card-name">{h(item["name"])}</div>
+  </div>
+  {type_line}
+  <div class="divider" style="background:{ITEM_HEX}44"></div>
+  <div class="item-effect">{effect}</div>
+</div>'''
+
+
+def render_card(card):
+    if card.get('_type') == 'item':
+        return item_to_html(card)
+    return card_to_html(card)
+
+
 def chunk(lst, size):
     for i in range(0, len(lst), size):
         yield lst[i:i + size]
@@ -176,7 +264,7 @@ def chunk(lst, size):
 def generate_html(all_cards, title):
     page_divs = []
     for page_cards in chunk(all_cards, CARDS_PER_PAGE):
-        cards_html = '\n'.join(card_to_html(c) for c in page_cards)
+        cards_html = '\n'.join(render_card(c) for c in page_cards)
         page_divs.append(f'<div class="page">\n{cards_html}\n</div>')
 
     pages_html = '\n'.join(page_divs)
@@ -309,6 +397,12 @@ body {{
   padding-top: 3px;
   border-top: 1px solid rgba(0,0,0,0.12);
 }}
+
+.item-effect {{
+  font-size: 7.5pt;
+  line-height: 1.4;
+  flex: 1;
+}}
 </style>
 </head>
 <body>
@@ -337,8 +431,8 @@ if __name__ == '__main__':
     with open(output, 'w', encoding='utf-8') as f:
         f.write(generate_html(all_cards, cfg['title']))
 
-    print(f'  {len(all_cards)} cards across {total_pages} pages → {output}')
+    print(f'  {len(all_cards)} items across {total_pages} pages → {output}')
     last = len(all_cards) % CARDS_PER_PAGE or CARDS_PER_PAGE
     if last < CARDS_PER_PAGE:
-        print(f'  (last page has {last} cards)')
+        print(f'  (last page has {last})')
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')
