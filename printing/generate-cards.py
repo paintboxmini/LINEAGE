@@ -49,6 +49,13 @@ SETS = {
             '../items/vultures-nest-items.md',
         ],
     },
+    'items-field': {
+        'title': 'Hollow and Weald Items',
+        'type': 'items',
+        'files': [
+            '../items/hollow-and-weald-items.md',
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
