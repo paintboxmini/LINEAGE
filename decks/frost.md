@@ -1,7 +1,7 @@
 # Frost
 
-**Player:** Kevin  
-**Mind / Body / Soul — HP**
+**Player:** Ollie  
+**Mind 3 / Body 3 / Soul 3 — HP 15**
 
 ---
 

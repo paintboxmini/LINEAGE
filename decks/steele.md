@@ -1,7 +1,7 @@
 # Steele
 
-**Player:** Ollie  
-**Mind / Body / Soul — HP**
+**Player:** Kevin  
+**Mind 3 / Body 4 / Soul 2 — HP 18**
 
 ---
 
