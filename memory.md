@@ -56,13 +56,6 @@ Kess is positioned as a future organizer: Cartographers Guild network, grandmoth
 **Canille** (`experimental/canille.md`)
 Island village in the Unheld, northeast of Vulture's Nest. Research colony founded by scientists attempting to create sentient life. Three generations of scientists and cubs. Cubs are quadrupedal, pug-faced, ~120lbs, fully furred. White smiling masks on hooks by every door — ceremony, not disguise. Key characters: Hess (oldest founder, knows the answer, won't say it), Cob (third-gen cub, asks the questions nobody will answer). Not yet canon.
 
-**Chase, stealth, and ambush rules**
-Now in `rules/combat.md` and `rules/core-rules.md`. Chase: two-marker track, contested Soul, head start sets starting gap, escape = reach end of track. Stealth: Soul check DC 10 + highest enemy Soul. Ambush: first attack auto-hits, then normal initiative.
-
-**Tonal bible and inspiration guide**
-`world/tonal-bible.md` — aesthetic touchstones (Hastur, Kino's Journey, Hellraiser, Pan's Labyrinth, Dark Crystal, Delicious in Dungeon), what the world reaches for, what it isn't.
-`agent-tools/inspiration-guide.md` — generative lenses for when content feels obvious or flat.
-
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
 
@@ -97,7 +90,7 @@ Soul governs initiative AND movement speed. High Soul characters move faster and
 No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.
 
 **Quick reference is `rules/core-rules.md`**
-Canonical rules quick reference. Covers stats, DC table, combat actions, attack resolution, card anatomy, positioning, collapse, resting, cover, stealth/ambush, chase. If `repo-orientation.md` references `rules/quick-reference.md`, that's stale — correct it.
+Canonical rules quick reference. Covers stats, DC table, combat actions, attack resolution, card anatomy, positioning, collapse, resting, cover, stealth/ambush, chase.
 
 
 

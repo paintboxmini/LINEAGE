@@ -23,6 +23,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `factions/` | Faction documents |
 | `experimental/` | Sandbox — lower stakes, free to iterate |
 | `agent-tools/` | Drop-in tools for common design tasks |
+| `printing/` | Print-ready HTML card sheets and the generator script |
 
 ## File Format Conventions
 
@@ -69,10 +70,8 @@ Open with a `Cards:` reference line if signature cards exist:
 
 Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
-## Branch & Commit Conventions
+## Commit Conventions
 
-- Development branch: `claude/turnroot-weald-campaign-1mqjZ`
-- Default branch: `claude/initial-setup-dqZCC`
 - Commit messages: short imperative sentence, no period, no emoji
 - Commit in logical groups (one concern per commit)
 - Always push with `-u origin <branch>`
@@ -88,7 +87,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 - Standard DC: 13 (DM adjusts ±2 for fiction)
 - HP: (3 × Body) + 6
 - Combat positions: Frontline / Backline
-- Special token types in use: Rooted, Thorns, Evade, Rooted
+- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
 
 ## Agent Workflow
 

@@ -18,6 +18,8 @@ Before committing to card designs or stat blocks, agents may create a scratch fi
 - Delete it when the work is committed
 - Never leave a scratch file in a pushed commit
 
+Every agent tool that produces content should use a scratch file for any reasoning that isn't the final output. If you're working through stat block math, card balance decisions, or mechanical tradeoffs — that goes in the scratch file, not in the content file. Content files contain only finalized output.
+
 ## Standard Card Loop
 
 **Target: full set of 9 cards that all pass red team. Drew picks where they go.**

@@ -156,7 +156,7 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d4
 Effect: You and target must both move positions
-Defensive Bonus: Allies gain 1 Quick (move position without using your action this round)
+Defensive Bonus: Allies gain 1 Quick (move position without using your action on your next turn)
 Range: Both
 *"Water teaches stone to dance."*
 

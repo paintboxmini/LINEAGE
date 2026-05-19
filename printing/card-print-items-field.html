@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tales Untold — Hollow and Weald Items (3 cards, 1 pages)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: letter;
+  margin: 10mm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #bbb;
+}
+
+.page {
+  width: 196mm;
+  height: 259mm;
+  display: grid;
+  grid-template-columns: repeat(3, 60mm);
+  grid-template-rows: repeat(3, 84mm);
+  column-gap: calc((196mm - 3 * 60mm) / 2);
+  row-gap: calc((259mm - 3 * 84mm) / 2);
+  break-after: page;
+  page-break-after: always;
+  background: white;
+}
+
+.page:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+@media screen {
+  body { padding: 12mm; }
+  .page {
+    margin-bottom: 12mm;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+
+.card {
+  width: 60mm;
+  height: 84mm;
+  border: 1.5px solid;
+  border-radius: 7px;
+  padding: 2.5mm 3mm 2mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5px;
+}
+
+.card-name {
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 1.15;
+  flex: 1;
+  letter-spacing: 0.01em;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.card-sub {
+  font-size: 6.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 3px;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.tbl td {
+  font-size: 7.5pt;
+  line-height: 1.3;
+  vertical-align: top;
+  padding: 1.5px 0;
+}
+
+.tbl .lbl {
+  font-size: 6pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  white-space: nowrap;
+  padding-right: 4px;
+  width: 1px;
+  padding-top: 2px;
+}
+
+.flavor {
+  font-style: italic;
+  font-size: 6.5pt;
+  color: #555;
+  line-height: 1.3;
+  margin-top: auto;
+  padding-top: 3px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.item-effect {
+  font-size: 7.5pt;
+  line-height: 1.4;
+  flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">LUMINOVA LEAVES</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Translucent, bioluminescent</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use: Heal 2 HP to self or one ally. The leaf goes dark when spent.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">CLAY BOWL TREMOR DETECTOR</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Hollow clay bowl, Borrower-made</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1) while exploring: Press to any stone surface and listen. If an ambush is nearby, the bowl rattles — your party cannot be surprised this encounter.</div>
+</div>
+<div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
+  <div class="card-top">
+    <div class="card-name">MOVING-STONE MAP</div>
+  </div>
+  <div class="card-sub" style="color:#7A5C10">Consumable — Clay-marked leather, Borrower cartography</div>
+  <div class="divider" style="background:#7A5C1044"></div>
+  <div class="item-effect">Use (1): Your party acts before all Stonecoils in round 1 of the next combat. Cannot be used after combat begins.</div>
+</div>
+</div>
+</body>
+</html>

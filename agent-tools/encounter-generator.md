@@ -2,6 +2,8 @@
 
 Use this prompt to generate new Tales Untold encounters. Paste it into a new agent session along with relevant repo context (bestiary entries, card files, current keyword list from `experimental/README.md`).
 
+**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Delete it before committing. Nothing from the scratch file goes into the content file.
+
 ---
 
 ```
