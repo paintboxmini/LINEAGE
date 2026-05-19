@@ -24,6 +24,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `experimental/` | Sandbox — lower stakes, free to iterate |
 | `agent-tools/` | Drop-in tools for common design tasks |
 | `printing/` | Print-ready HTML card sheets and the generator script |
+| `decks/` | Campaign decks — Oracle pool, player decks (by character name), major NPCs |
 
 ## File Format Conventions
 
