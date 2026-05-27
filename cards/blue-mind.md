@@ -66,7 +66,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Negate the defender's next item use
-Defensive Bonus: Target must target you next round
+Defensive Bonus: Attacker must attack you next round if able
 Range: Both
 *"Attention divided is power diminished."*
 
