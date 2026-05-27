@@ -15,7 +15,7 @@ RED — BODY
 Attack: Body + d2
 Effect: Set a Red Attack Counter. Until triggered, the next Red card played against you is negated before RPS resolves.
 Defensive Bonus: Attacker discards 1 card at random.
-Range: Both
+Range: Ranged
 *"The color names itself. The glyph listens."*
 
 ---
@@ -25,7 +25,7 @@ BLUE — MIND
 Attack: Mind + d2
 Effect: Set a Blue Attack Counter. Until triggered, the next Blue card played against you is negated before RPS resolves.
 Defensive Bonus: Scry 2.
-Range: Both
+Range: Ranged
 *"Ink knows ink."*
 
 ---
@@ -35,7 +35,7 @@ GREEN — SOUL
 Attack: Soul + d2
 Effect: Set a Green Attack Counter. Until triggered, the next Green card played against you is negated before RPS resolves.
 Defensive Bonus: Gain Resist.
-Range: Both
+Range: Ranged
 *"The living glyph holds."*
 
 ---
@@ -51,7 +51,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Gain Evade.
 Defensive Bonus: Set a Red Defense Counter. Until triggered, the next Red card used as a defense against you is negated before RPS resolves.
-Range: Both
+Range: Ranged
 *"The shape is the same. The intent is not."*
 
 ---
@@ -61,7 +61,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2.
 Defensive Bonus: Set a Blue Defense Counter. Until triggered, the next Blue card used as a defense against you is negated before RPS resolves.
-Range: Both
+Range: Ranged
 *"You read the glyph. You read it wrong."*
 
 ---
@@ -71,7 +71,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: All allies gain +1 to their next attack.
 Defensive Bonus: Set a Green Defense Counter. Until triggered, the next Green card used as a defense against you is negated before RPS resolves.
-Range: Both
+Range: Ranged
 *"Patience is also a shape."*
 
 ---
@@ -130,7 +130,7 @@ BLUE — MIND
 Attack: Mind + d2
 Effect: Scry 3. You may place any Ward or Mirror Glyph cards found on top of your deck in any order.
 Defensive Bonus: Scry 1.
-Range: Both
+Range: Ranged
 *"One motion becomes two."*
 
 ---
