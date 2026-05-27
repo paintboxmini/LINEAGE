@@ -57,11 +57,11 @@ Equipped: At the start of combat, Scry 1 of your own deck.
 
 Orin inscribes glyphs in the air with the tip of the foil — left hand traces the shape, blade follows. The motion takes less than a second. The color is visible. The type is not.
 
-**Ward Glyphs** (CRIMSON, AZURE, VERDANT WARD) fully negate an attack of the matching color. No damage. No effects. The attack simply does not land.
+**Attack Counter Glyphs** (CRIMSON, AZURE, VERDANT WARD) are traps set on the Effect. When Orin wins or ties as attacker, a color counter goes up. The next time an enemy plays that color against Orin, the attack is cancelled before RPS even resolves — cards stay hidden, nothing fires.
 
-**Mirror Glyphs** (CRIMSON, AZURE, VERDANT MIRROR) look identical in the fiction. They strip the attacker's card effects and defensive bonus but damage still resolves.
+**Defense Counter Glyphs** (CRIMSON, AZURE, VERDANT MIRROR) look identical in the fiction. They do nothing as traps. When Orin defends against the matching color, the attacker's card Effects and Defensive Bonus are negated. Damage still resolves.
 
-Players learn to identify Ward vs Mirror only through accumulated observation — which glyph negated damage entirely versus which let damage through. Orin has three of each. The uncertainty is structural.
+Players cannot tell which type has been drawn until it triggers. Attack Counters punish committing to a color. Defense Counters punish the effects of that color while letting damage through. The uncertainty is structural — avoidance and engagement are both wrong answers until the party has enough information to distinguish them.
 
 ---
 
