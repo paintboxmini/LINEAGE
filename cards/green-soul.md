@@ -235,8 +235,8 @@ Range: Melee
 **SHARED BURDEN**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: The next time you would take attack damage, instead lose 3 HP. When you reduce damage this way, one ally of your choice loses 3 HP.
-Defensive Bonus: The next time you would take attack damage, instead lose 3 HP. When you reduce damage this way, one ally of your choice loses 3 HP.
+Effect: The next time target ally takes attack damage, you take the damage instead.
+Defensive Bonus: Target ally gains 3 HP and you lose 3 HP.
 Range: Both
 *"What I cannot bear alone, we endure together."*
 
