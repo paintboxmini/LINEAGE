@@ -11,7 +11,7 @@ Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defe
 ---
 
 **CRIMSON WARD**
-BLUE — MIND
+red body
 Attack: Mind + d2
 Effect: Set a Red Attack Counter. Until triggered, the next Red card played against you is negated before RPS resolves.
 Defensive Bonus: Attacker discards 1 card at random.
@@ -31,7 +31,7 @@ Range: Both
 ---
 
 **VERDANT WARD**
-BLUE — MIND
+green soul 
 Attack: Mind + d2
 Effect: Set a Green Attack Counter. Until triggered, the next Green card played against you is negated before RPS resolves.
 Defensive Bonus: Gain Resist.
@@ -42,15 +42,15 @@ Range: Both
 
 ## Defense Counter Glyphs
 
-*Visually identical to Attack Counter Glyphs. When defending against the matching color, the attacker's card Effect and Defensive Bonus are negated. Damage resolves normally.*
+*Visually identical to Attack Counter Glyphs. The next time an enemy block with the corresponding color, negate that card before rps resolution.
 
 ---
 
 **CRIMSON MIRROR**
-BLUE — MIND
+red body
 Attack: Mind + d4
 Effect: Gain Evade.
-Defensive Bonus: If attacker played a Red card, negate their card's Effect and Defensive Bonus. Damage resolves normally.
+Defensive Bonus: creates a red defense counter glyph.
 Range: Both
 *"The shape is the same. The intent is not."*
 
@@ -60,17 +60,17 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2.
-Defensive Bonus: If attacker played a Blue card, negate their card's Effect and Defensive Bonus. Damage resolves normally.
+Defensive Bonus: create a blue defense counter glyph
 Range: Both
 *"You read the glyph. You read it wrong."*
 
 ---
 
 **VERDANT MIRROR**
-BLUE — MIND
+green soul
 Attack: Mind + d4
 Effect: All allies gain +1 to their next attack.
-Defensive Bonus: If attacker played a Green card, negate their card's Effect and Defensive Bonus. Damage resolves normally.
+Defensive Bonus: create a green defense counter glyph
 Range: Both
 *"Patience is also a shape."*
 
@@ -92,10 +92,10 @@ Range: Melee
 
 **SIGNATURE THRUST**
 RED — BODY
-Attack: Body + d6
-Special Rule: Can only be played if a Ward or Mirror Glyph has triggered this combat.
-Effect: This attack cannot be negated by any Glyph effect.
-Defensive Bonus: Counter Attack.
+Attack: Body + d10
+Special Rule: Can only be played if there is at least 1 glyph of each color active.
+Effect: remove 2 glyphs
+Defensive Bonus: create 2 random glyphs
 Range: Melee
 *"The glyph was never the point."*
 
