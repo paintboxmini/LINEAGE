@@ -236,7 +236,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d6
 Effect: The next time target ally takes attack damage, you take the damage instead.
-Defensive Bonus: Target ally gains 3 HP and you lose 3 HP.
+Defensive Bonus: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
 *"What I cannot bear alone, we endure together."*
 
