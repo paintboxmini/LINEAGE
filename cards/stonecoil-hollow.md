@@ -74,6 +74,16 @@ Range: Melee
 
 ---
 
+**PULL**
+RED — BODY — HOLLOW
+Attack: Body + d4
+Effect: Pull target to frontline
+Defensive Bonus: Pull attacker to frontline
+Range: Both
+*"The cliff always pulls things closer."*
+
+---
+
 **ROLLING THUNDER**
 RED — BODY — HOLLOW
 Attack: Body + d6
