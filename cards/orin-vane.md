@@ -11,8 +11,8 @@ Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defe
 ---
 
 **CRIMSON WARD**
-red body
-Attack: Mind + d2
+RED — BODY
+Attack: Body + d2
 Effect: Set a Red Attack Counter. Until triggered, the next Red card played against you is negated before RPS resolves.
 Defensive Bonus: Attacker discards 1 card at random.
 Range: Both
@@ -31,8 +31,8 @@ Range: Both
 ---
 
 **VERDANT WARD**
-green soul 
-Attack: Mind + d2
+GREEN — SOUL
+Attack: Soul + d2
 Effect: Set a Green Attack Counter. Until triggered, the next Green card played against you is negated before RPS resolves.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -42,15 +42,15 @@ Range: Both
 
 ## Defense Counter Glyphs
 
-*Visually identical to Attack Counter Glyphs. The next time an enemy block with the corresponding color, negate that card before rps resolution.
+*Visually identical to Attack Counter Glyphs. Defensive Bonus sets a persistent color trap. The next time an enemy defends with the matching color, that defense is negated before RPS resolves — no cards revealed, no effects. Expires on trigger.*
 
 ---
 
 **CRIMSON MIRROR**
-red body
-Attack: Mind + d4
+RED — BODY
+Attack: Body + d4
 Effect: Gain Evade.
-Defensive Bonus: creates a red defense counter glyph.
+Defensive Bonus: Set a Red Defense Counter. Until triggered, the next Red card used as a defense against you is negated before RPS resolves.
 Range: Both
 *"The shape is the same. The intent is not."*
 
@@ -60,17 +60,17 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2.
-Defensive Bonus: create a blue defense counter glyph
+Defensive Bonus: Set a Blue Defense Counter. Until triggered, the next Blue card used as a defense against you is negated before RPS resolves.
 Range: Both
 *"You read the glyph. You read it wrong."*
 
 ---
 
 **VERDANT MIRROR**
-green soul
-Attack: Mind + d4
+GREEN — SOUL
+Attack: Soul + d4
 Effect: All allies gain +1 to their next attack.
-Defensive Bonus: create a green defense counter glyph
+Defensive Bonus: Set a Green Defense Counter. Until triggered, the next Green card used as a defense against you is negated before RPS resolves.
 Range: Both
 *"Patience is also a shape."*
 
@@ -93,9 +93,9 @@ Range: Melee
 **SIGNATURE THRUST**
 RED — BODY
 Attack: Body + d10
-Special Rule: Can only be played if there is at least 1 glyph of each color active.
-Effect: remove 2 glyphs
-Defensive Bonus: create 2 random glyphs
+Special Rule: Can only be played if at least 1 glyph of each color is currently active.
+Effect: Remove 2 active glyphs of your choice.
+Defensive Bonus: Set 2 random Glyphs.
 Range: Melee
 *"The glyph was never the point."*
 
