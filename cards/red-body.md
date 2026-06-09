@@ -172,13 +172,13 @@ Range: Melee
 
 ---
 
-**EARTHQUAKE**
+**REPEL**
 RED — BODY
 Attack: Body + d2
 Effect: All enemies must move to backline if possible
 Defensive Bonus: All enemies must move to backline if possible
 Range: Melee
-*"The earth remembers every footstep's weight."*
+*"The gap opens. That's all that matters."*
 
 ---
 
