@@ -124,3 +124,17 @@ Short rests can be chained — three back-to-back is an hour of recovery. The da
 **Effect:** Full heal
 
 A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipsera, they often don't.
+
+---
+
+## Magic Expression
+
+When you play a card, you choose what it looks like.
+
+The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
+
+A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+
+None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
+
+You don't have to explain the metaphysics. Neither does your character.

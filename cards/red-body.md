@@ -36,7 +36,7 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: Allies take -2 damage from attacks this round
-Defensive Bonus: Allies take -2 damage from attacks this round
+Defensive Bonus: Allies gain Armour 2 this round
 Range: Melee
 *"Protection shared is protection doubled."*
 
@@ -56,7 +56,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Next successful attack against you deals -3 damage
-Defensive Bonus: Next successful attack against you deals -3 damage
+Defensive Bonus: Gain Armour 3 until end of your next turn
 Range: Melee
 *"Stand firm and let them come to you."*
 
@@ -172,13 +172,13 @@ Range: Melee
 
 ---
 
-**EARTHQUAKE**
+**REPEL**
 RED — BODY
 Attack: Body + d2
 Effect: All enemies must move to backline if possible
 Defensive Bonus: All enemies must move to backline if possible
 Range: Melee
-*"The earth remembers every footstep's weight."*
+*"The gap opens. That's all that matters."*
 
 ---
 
@@ -276,7 +276,7 @@ Range: Both
 RED — BODY
 Attack: Body + d2
 Effect: Anchored — At the start of your turn, your attacks deal +2 damage.
-Defensive Bonus: Anchored — At the start of your turn, reduce the next damage you take by 2.
+Defensive Bonus: Anchored — Gain Resist 1 while you remain in position.
 Range: Melee
 *"Hold the line. Make them break first."*
 

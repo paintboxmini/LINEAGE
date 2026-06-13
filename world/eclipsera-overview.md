@@ -1,6 +1,8 @@
 # Eclipsera — World Overview
 
-Eclipsera is a twilight world in flux. The sky does not fully darken and does not fully light — it holds somewhere between, as if undecided. The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
+Eclipsera is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
+
+The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
 
 Danger comes from monsters, yes. But also from the environment, from other people whose motives are opaque and unstable, and from the quieter pressure of places that seem to want something from you.
 

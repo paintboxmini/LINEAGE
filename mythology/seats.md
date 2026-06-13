@@ -67,7 +67,14 @@ The original claimants failed. The council has not abandoned the attempt. Lord O
 
 ### The Hunt
 **Bearer:** The Heron
-Mundane fishing talk becomes metaphor for deeper seeking. Weather, bait, the one that got away.
+
+Speaks of fishing. Always fishing — where you stand, what you're after, how long you're willing to wait. The bait you're willing to lose.
+
+All of it is metaphor. None of it is only metaphor.
+
+The Heron is never impatient. It does not pursue. It holds very still and pays attention until the moment arrives, and then it acts without hesitation. The Hunt isn't violence — it's attention sustained long enough to become inevitable.
+
+*The one that got away* is a phrase the Heron uses for something that isn't a fish.
 
 ### War
 **Bearer:** Unnamed

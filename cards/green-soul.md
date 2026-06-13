@@ -26,7 +26,7 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d6
 Effect: This card counts as all colors and elements (for damage only)
-Defensive Bonus: Take -2 damage this round
+Defensive Bonus: Gain Evade
 Range: Both
 *"Wise water takes the shape of its container."*
 
@@ -46,7 +46,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d4
 Effect: All allies get +2 to their next attack
-Defensive Bonus: All allies take -2 damage next time they are attacked
+Defensive Bonus: All allies gain Resist 1
 Range: Ranged
 *"Harmony multiplies strength."*
 
@@ -235,8 +235,8 @@ Range: Melee
 **SHARED BURDEN**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: The next time you would take attack damage, instead lose 3 HP. When you reduce damage this way, one ally of your choice loses 3 HP.
-Defensive Bonus: The next time you would take attack damage, instead lose 3 HP. When you reduce damage this way, one ally of your choice loses 3 HP.
+Effect: The next time target ally takes attack damage, you take the damage instead.
+Defensive Bonus: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
 *"What I cannot bear alone, we endure together."*
 

@@ -66,7 +66,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Negate the defender's next item use
-Defensive Bonus: Target must target you next round
+Defensive Bonus: Attacker must attack you next round if able
 Range: Both
 *"Attention divided is power diminished."*
 
@@ -186,7 +186,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Target enemy can only attack frontline targets next turn
-Defensive Bonus: Target ally takes -2 damage from attacks this round
+Defensive Bonus: Target ally cannot be targeted by the next attack
 Range: Both
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
