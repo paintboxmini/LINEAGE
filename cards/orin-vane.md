@@ -119,7 +119,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender must reveal their hand.
-Defensive Bonus: Before the next RPS resolution, the attacker must reveal their chosen card. You may then swap your chosen card with any card in your hand.
+Defensive Bonus: Apply Predictable to the attacker. You may then swap your chosen card with any card in your hand.
 Range: Melee
 *"The sword goes where the eyes don't."*
 
