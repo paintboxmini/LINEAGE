@@ -44,6 +44,9 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
 
+**Predictable**
+The next time you would reveal a card for RPS resolution, the opponent may look at it before choosing theirs. Expires on use.
+
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
