@@ -92,5 +92,5 @@ Range: Ranged
 Status — Colorless
 Cannot be played. Use your action to remove all Exhaust cards from your hand. Removed from deck at short rest.
 When this card is discarded, take 2 damage.
-At the end of your turn, you may discard this card and lose 1 initiative next round.
+At the end of your turn, you may discard this card and apply Initiative Shift -1 to yourself.
 *"Ash in the lungs. Heat in the blood."*

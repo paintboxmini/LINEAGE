@@ -95,8 +95,8 @@ Range: Melee
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Defender goes last next round
-Defensive Bonus: Attacker goes last next round
+Effect: Apply Initiative Shift -3 to defender
+Defensive Bonus: Apply Initiative Shift -3 to attacker
 Range: Both
 *"Patience places the final stone."*
 
@@ -115,8 +115,8 @@ Range: Both
 **ROUTE-SONG**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target ally goes first next round
-Defensive Bonus: Attacker goes last next round
+Effect: Apply Initiative Shift +3 to target ally
+Defensive Bonus: Apply Initiative Shift -3 to attacker
 Range: Ranged
 *"Hesitation in the face of unity."*
 
@@ -285,7 +285,7 @@ Range: Both
 **MOCKERY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target drops 2 positions in Initiative order
+Effect: Apply Initiative Shift -2 to target
 Defensive Bonus: Target must attack you if able on their next turn
 Range: Both
 *"You say the one thing they cannot ignore."*
