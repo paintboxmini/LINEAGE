@@ -26,7 +26,7 @@ Immune to Blind. Hunts perfectly in its own weapon.
 Cannot be pushed or pulled from its position while in Frontline. PUSH, PULL, and EARTHQUAKE have no effect.
 
 **Pack Signal** — Triggered
-If Fogcaller drops below half HP, a second Fogcaller enters from the opposite treeline at the start of the following round.
+If Fogcaller drops below half HP, a second Fogcaller enters from the opposite treeline at the start of the next cycle.
 
 ---
 

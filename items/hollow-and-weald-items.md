@@ -18,4 +18,4 @@ Use (1) while exploring: Press to any stone surface and listen. If an ambush is 
 
 **MOVING-STONE MAP**
 *Consumable — Clay-marked leather, Borrower cartography*
-Use (1): Your party acts before all Stonecoils in round 1 of the next combat. Cannot be used after combat begins.
+Use (1): Your party acts before all Stonecoils at the start of the next combat. Cannot be used after combat begins.

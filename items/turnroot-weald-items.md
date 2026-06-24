@@ -98,7 +98,7 @@ A fist-sized knot of pale wood threaded with red veins. Still twitches occasiona
 
 A bead made from a precisely carved vertebra, threaded on silk. One of dozens in the Collector's lair, arranged in a sequence that almost makes sense.
 
-**Passive:** +1 HP on the first defensive block each round.
+**Passive:** +1 HP on the first defensive block each cycle.
 
 ---
 

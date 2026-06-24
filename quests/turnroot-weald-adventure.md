@@ -324,7 +324,7 @@ A massive spider corpse hangs center-web. Investigation reveals it died first. S
 
 Soft scraping sounds move deeper in the web-maze. Something large, moving between silk highways.
 
-**Encounter:** See `bestiary/bone-collector.md` for the full encounter, round structure, and investigation aftermath.
+**Encounter:** See `bestiary/bone-collector.md` for the full encounter, cycle structure, and investigation aftermath.
 
 **Loot:** Spider Silk Rope, Harvest Bead, Bone Collector Flesh. See `items/turnroot-weald-items.md`.
 
