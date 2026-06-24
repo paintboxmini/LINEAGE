@@ -17,7 +17,7 @@ Range: Melee
 **FOREST MEMORY**
 BLUE — MIND — WEALD
 Attack: Mind + d4
-Effect: Name a card color. If the target plays that color next round, heal 2 HP.
+Effect: Name a card color. If the target plays that color on their next turn, heal 2 HP.
 Defensive Bonus: Return 1 card from your discard pile to the top of your deck.
 Range: Both
 *"The Weald does not forget. It catalogues."*

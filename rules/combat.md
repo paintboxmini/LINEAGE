@@ -1,6 +1,6 @@
 # Combat
 
-Combat in Tales Untold is fast, positional, and decisive. Rounds are short. Mistakes compound. The goal is not to outlast — it's to outread.
+Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
 ---
 
@@ -43,7 +43,9 @@ Turn order resolves highest to lowest.
 - If still tied between players, they choose order among themselves.
 - If still tied between a player and an enemy, the player goes first.
 
-Card effects cannot modify initiative unless the card explicitly states otherwise.
+There are no rounds. Initiative is a continuous wheel — once the last position has acted, the order cycles back to 1st and keeps going. Card effects referencing timing anchor to a combatant's own next turn, not a table-wide round.
+
+Card effects cannot modify initiative unless the card explicitly states otherwise. See **Initiative Shift X** in `rules/card-glossary.md`.
 
 ---
 

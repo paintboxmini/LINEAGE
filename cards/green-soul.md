@@ -75,7 +75,7 @@ Range: Melee
 **WITNESS**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Next ally to successfully defend this round heals 3 HP
+Effect: Next ally to successfully defend before your next turn heals 3 HP
 Defensive Bonus: Target ally heals 3 HP
 Range: Melee
 *"What is witnessed is what endures."*
@@ -85,8 +85,8 @@ Range: Melee
 **URGENCY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target ally goes next this round
-Defensive Bonus: You go first next round
+Effect: Apply Initiative Shift +3 to target ally
+Defensive Bonus: Apply Initiative Shift +3 to yourself
 Range: Melee
 *"The tide waits for those who know when to flow."*
 
@@ -105,8 +105,8 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: When you are attacked next round, your party may scry 1
-Defensive Bonus: You and your allies deal +2 damage this round
+Effect: If you are attacked before your next turn, your party may scry 1
+Defensive Bonus: You and your allies deal +2 damage until your next turn
 Range: Both
 *"Shared vision illuminates the path forward."*
 
@@ -165,7 +165,7 @@ Range: Both
 **CONDUCT**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Ally gets +2 to attack damage this round
+Effect: Ally gets +2 to attack damage on their next attack
 Defensive Bonus: Target ally draws 1 card
 Range: Both
 *"Strength multiplies when it finds its rhythm."*

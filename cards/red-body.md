@@ -35,8 +35,8 @@ Range: Both
 **GUARD**
 RED — BODY
 Attack: Body + d4
-Effect: Allies take -2 damage from attacks this round
-Defensive Bonus: Allies gain Armour 2 this round
+Effect: Allies take -2 damage from attacks until your next turn
+Defensive Bonus: Allies gain Armour 2 until your next turn
 Range: Melee
 *"Protection shared is protection doubled."*
 
@@ -95,8 +95,8 @@ Range: Both
 **RALLY**
 RED — BODY
 Attack: Body + d4
-Effect: Allies in frontline deal +2 damage next round
-Defensive Bonus: All allies in backline deal +2 damage next round
+Effect: Allies in Frontline deal +2 damage on their next attack
+Defensive Bonus: All allies in Backline deal +2 damage on their next attack
 Range: Both
 *"Blood shared is strength doubled."*
 
@@ -105,7 +105,7 @@ Range: Both
 **WEATHERED**
 RED — BODY
 Attack: Body + d4
-Effect: When attacked next round, gain +2 HP
+Effect: If you are attacked before your next turn, gain +2 HP
 Defensive Bonus: Prevent next debuff
 Range: Both
 *"What doesn't break you, builds you."*
@@ -136,7 +136,7 @@ Range: Both
 RED — BODY
 Attack: Body + d2
 Effect: Steal 1 HP from each enemy
-Defensive Bonus: When damaged next round, steal 2 HP each time
+Defensive Bonus: If you are damaged before your next turn, steal 2 HP each time
 Range: Ranged
 *"Where pressure gathers, strength follows."*
 
@@ -205,7 +205,7 @@ Range: Both
 **BERSERKER'S PRICE**
 RED — BODY
 Attack: Body + 2d6
-Effect: Cannot defend next round
+Effect: Cannot defend until your next turn
 Defensive Bonus: The attacker cannot defend next time you attack them
 Range: Melee
 *"Fury demands its payment in restraint surrendered."*

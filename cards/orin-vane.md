@@ -108,7 +108,7 @@ Range: Melee
 **STEP ASIDE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Move to any position. Attacker must attack you next round if able.
+Effect: Move to any position. Attacker must attack you on their next turn if able.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"He's not retreating. He's choosing the next angle."*
