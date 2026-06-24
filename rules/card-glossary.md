@@ -42,7 +42,7 @@ Remove a card from play until end of combat. It does not go to the discard pile.
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the card's effect. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
-Move a target X positions in the initiative order for the rest of combat. Positive X moves them earlier; negative X moves them later. Stacks. Cannot move a combatant earlier than 1st or later than last.
+Immediately move the target X positions in the initiative order. Positive X moves them earlier; negative X moves them later. Cannot move a combatant earlier than 1st or later than last.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
