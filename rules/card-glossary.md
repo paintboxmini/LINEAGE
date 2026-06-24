@@ -44,7 +44,7 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **Initiative Shift X**
 Immediately move the target X positions in the initiative order. Positive X moves them earlier; negative X moves them later.
 
-The order wraps. Pushing a target earlier than 1st instead drops them in at last place and grants them one extra turn there. Pushing a target later than last instead carries them to 1st place once everyone still ahead of them has gone, skipping their own turn to get there — still a net negative despite landing on a favorable spot.
+The order wraps. If a positive shift would push the target earlier than 1st, they still act at the earliest position this cycle and gain one bonus turn at the end of the cycle. If a negative shift would push the target later than last, they skip the rest of this cycle and act first at the start of the next cycle instead — still a net negative despite landing on a favorable-sounding position.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
