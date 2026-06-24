@@ -46,7 +46,7 @@ Immediately move the target X positions in the initiative order. Positive X move
 
 The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
 
-Either way, check whether the new position has already had its turn this cycle. If not, the target simply takes that spot in the remaining order — done. If it has, the shift would otherwise backfire: a positive shift would cost the target a turn, a negative shift would hand them one early. Correct it directly — a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle; a negative shift instead costs the target their very next turn, then they settle into the new position the cycle after.
+Either way, check whether the shift passes through the position currently taking its turn. If it doesn't, the target simply takes up the new position — done. If it does, the shift would otherwise backfire: a positive shift would end up delaying the target instead of advancing them, and a negative shift would end up advancing the target instead of delaying them. Correct it directly — a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle. A negative shift instead skips the target's turn this cycle; they settle into the new position starting next cycle.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
