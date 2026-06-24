@@ -44,7 +44,9 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **Initiative Shift X**
 Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom.
 
-The order wraps. If a positive shift would carry the target past the top, they move to the bottom of the initiative order. If a negative shift would carry the target past the bottom, they move to the top of the initiative order.
+The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
+
+Either way, check whether the new position has already had its turn this cycle. If not, the target simply takes that spot in the remaining order — done. If it has, the shift would otherwise backfire: a positive shift would cost the target a turn, a negative shift would hand them one early. Correct it directly — a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle; a negative shift instead costs the target their very next turn, then they settle into the new position the cycle after.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
