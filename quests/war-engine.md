@@ -130,7 +130,7 @@ Choose one option based on table tone. Do not combine.
 Half-buried automata that activate when calibration begins. They don't roar or taunt. They restrain, pin, redirect, seal doors, force repositioning. Their goal isn't to kill — it's to keep the firing sequence clean. Body-heavy. Position manipulation. Rushdown. They push players into dangerous terrain.
 
 **Option 2 — Ash-Hardened Warforms**
-Corpses of soldiers fused with metal, partially reanimated by heat and ignition surge. Not undead. Not cursed. Residual kinetic energy reactivating nervous systems. Short-lived. Violent. Unstable. Collapse after a few rounds. Reinforces: heat + ash = catalytic reanimation.
+Corpses of soldiers fused with metal, partially reanimated by heat and ignition surge. Not undead. Not cursed. Residual kinetic energy reactivating nervous systems. Short-lived. Violent. Unstable. Collapse after a few turns. Reinforces: heat + ash = catalytic reanimation.
 
 **Option 3 — Internal Security Protocol**
 No enemies. The engine locks corridors. Combat is fighting while platforms rotate, pistons slam, and bridges retract. Low enemy count. High environment. The cleanest option for pure survival tension.

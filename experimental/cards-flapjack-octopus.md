@@ -37,7 +37,7 @@ Range: Melee
 **INK BURST**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target gains Disadvantage on their next attack this round.
+Effect: Target gains Disadvantage on their next attack.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
