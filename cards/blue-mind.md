@@ -300,3 +300,13 @@ Effect: Scry 2.
 Defensive Bonus: Attacker gains Staggered.
 Range: Both
 *"He already knew what you'd reach for."*
+
+---
+
+**SLIPSTREAM**
+BLUE — MIND
+Attack: Mind + d2
+Effect: Until the end of combat, whenever an ally passes through your position in the initiative order, draw a card. Ends if you die or leave combat.
+Defensive Bonus: Scry 1.
+Range: Both
+*"Stay close. The gap they leave behind is yours to fill."*

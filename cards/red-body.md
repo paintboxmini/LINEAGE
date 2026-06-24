@@ -319,3 +319,13 @@ Effect: If this attack deals damage, shuffle 1 Wound into defender's deck.
 Defensive Bonus: Next attack against you shuffles 1 Wound into your deck instead of dealing damage.
 Range: Melee
 *"The cut that keeps opening."*
+
+---
+
+**STARING CONTEST**
+RED — BODY
+Attack: Body + d2
+Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
+Defensive Bonus: Attacker receives Initiative Shift -1.
+Range: Both
+*"Move first and you've already lost."*

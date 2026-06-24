@@ -319,3 +319,13 @@ Effect: Scry 2.
 Defensive Bonus: Attacker gains Blind.
 Range: Both
 *"You came in loud. You'll leave in the dark."*
+
+---
+
+**SYNCHRONY**
+GREEN — SOUL
+Attack: Soul + d2
+Effect: Until the end of combat, allies next to you in the initiative order heal 1 HP at the start of their turns. Whenever an ally heals this way, you heal 1 HP as well. Ends if you die or leave combat.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Stand where they stand. What heals them, heals you."*
