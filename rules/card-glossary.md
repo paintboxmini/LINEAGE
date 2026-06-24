@@ -42,13 +42,15 @@ Remove a card from play until end of combat. It does not go to the discard pile.
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the card's effect. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
-Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom.
+Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom. The target cuts into the new position; everyone seated between the old and new position shifts one seat over to make room.
 
 The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
 
 A positive shift can never delay the target's next turn; a negative shift can never accelerate it. If the repositioning above would violate that, correct it directly: a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle. A negative shift instead skips the target's turn this cycle; they settle into the new position starting next cycle.
 
-To check at the table: see whether the shift's path passes through the position currently taking its turn. If it doesn't, no violation is possible — the target simply takes up the new position, done. If it does, apply the correction above.
+For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution. Then resolve the remaining positional shift normally, including its own correction above if it applies.
+
+To check at the table: see whether the shift's path passes through the position currently taking its turn — landing exactly on it counts as passing through. If it doesn't, no violation is possible — the target simply takes up the new position, done. If it does, apply the correction above.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
