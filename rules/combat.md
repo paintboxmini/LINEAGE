@@ -18,11 +18,11 @@ To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul 
 
 When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.
 
-**Set up:** Estimate how many rounds of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
+**Set up:** Estimate how many exchanges of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
 
 *Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.*
 
-**Each round (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
+**Each exchange (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
 
 **Caught** — The pursuer's marker reaches the fleeing party's marker.
 
