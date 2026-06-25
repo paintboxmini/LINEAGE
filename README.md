@@ -6,13 +6,19 @@ A tabletop role-playing game (TTRPG) currently in development.
 
 | Folder | Contents |
 |--------|----------|
-| `rules/` | Core rules and mechanics |
-| `cards/` | Card definitions and sets |
-| `mythology/` | World mythology and lore |
-| `locations/` | Settings, maps, and places |
-| `bestiary/` | Creatures, monsters, and NPCs |
-| `characters/` | Character classes, archetypes, and sheets |
-| `items/` | Weapons, armor, and equipment |
-| `quests/` | Adventures and quest content |
+| `rules/` | Core rules, mechanics, and the keyword glossary |
+| `cards/` | Card sets — core (blue-mind, red-body, green-soul) and creature/location signature sets |
+| `decks/` | Campaign decks — Oracle pool, player decks (by character name) |
+| `bestiary/` | Creature stat blocks, abilities, loot, and card references |
+| `characters/` | Named NPC profiles |
+| `items/` | Consumables and equipment |
+| `locations/` | Location overviews and settings |
+| `quests/` | Adventure systems — pressure tracks, encounters, NPCs |
+| `factions/` | Faction documents |
+| `world/` | Geography, factions, and organizations |
+| `mythology/` | Lore and creation myths |
+| `experimental/` | Sandbox — draft content, lower stakes, free to iterate |
+| `archives/` | Reserved for deprecated canon content. Currently unused — cut draft cards live in `experimental/archives/` instead |
 | `playtesting/` | Playtest notes, feedback, and session logs |
-| `archives/` | Deprecated or historical content |
+| `agent-tools/` | Drop-in prompts for common design tasks |
+| `printing/` | Print-ready HTML card sheets and the generator script |

@@ -7,7 +7,7 @@ This folder is a sandbox. Content here is draft, not canon.
 - Claude may write freely to this folder without explicit permission
 - Nothing moves to canon without Drew's explicit sign-off
 - No new keywords introduced without discussion first
-- Cut cards go to `archives/cut-cards.md` — never deleted, may find solutions later
+- Cut cards go to `experimental/archives/cut-cards.md` — never deleted, may find solutions later
 
 ## Scratch Files
 
@@ -29,14 +29,14 @@ Creature combat decks are filled out with core cards (red-body, blue-mind, green
 1. Read source material for the target creature
 2. Draft 9 cards (3R / 3B / 3G) using only existing keywords
 3. Red team all 9: balance, keyword compliance, creature fidelity, early-game fit, Oracle reward value
-4. Fix what can be fixed. Cut what can't — cuts go to `archives/cut-cards.md`
+4. Fix what can be fixed. Cut what can't — cuts go to `experimental/archives/cut-cards.md`
 5. Generate replacements (matching color) for any cuts
 6. Loop until all 9 pass red team
 7. Present all 9 to Drew with your read on which are strongest — Drew decides where they land
 
 ## Existing Keywords
 
-Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evade, Exile, Expose [Color], Lifesteal X, Obscure, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Ward
+Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Obscure, Predictable, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Ward
 
 Status cards: Wound, Exhaust, Foglust
 

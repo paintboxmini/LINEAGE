@@ -92,6 +92,9 @@ No distances in play. "In reach / close / far" is the language. Combat uses abst
 **Quick reference is `rules/core-rules.md`**
 Canonical rules quick reference. Covers stats, DC table, combat actions, attack resolution, card anatomy, positioning, collapse, resting, cover, stealth/ambush, chase.
 
+**Initiative is a continuous wheel**
+Turn order is a closed loop, not a list that resets each cycle — there are no rounds (see `rules/combat.md`). Seat count equals combatant count; shifts wrap at the ends. Initiative Shift X (`rules/card-glossary.md`) is the only way card effects move someone in the order — it guarantees a positive shift never delays a target's next turn and a negative shift never accelerates it, and large shifts (|X| ≥ seat count) decompose into full revolutions plus a remainder. Slipstream and Synchrony (`cards/blue-mind.md`, `cards/green-soul.md`) are the first cards to treat wheel position itself as a build-around.
+
 
 
 **Seats & Echoes** (`mythology/seats.md`, `mythology/echoes.md`)
