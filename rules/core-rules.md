@@ -56,7 +56,7 @@ Green (Soul) beats  Blue  (Mind)
 
 **Attacker wins** → damage + Effect  
 **Defender wins** → no damage + Defensive Bonus  
-**Tie** → attacker deals damage + Effect first, then Defensive Bonus triggers. If the Effect cancels the Defensive Bonus, Defensive Bonus does not trigger.
+**Tie** → no damage. Attacker's Effect still triggers, then Defensive Bonus triggers. If the Effect cancels the Defensive Bonus, Defensive Bonus does not trigger.
 
 ---
 
