@@ -1,6 +1,6 @@
 # Canille
 
-A small island village in the Unheld, northeast of Vulture's Nest. The water around it is unusually still. Ships stop here if they know it's there.
+A small island village in a lake northeast of Vulture's Nest, off the main river routes. The water around it is unusually still. Boats stop here if they know it's there.
 
 It was founded as a research colony. Three generations later it is a village, and the research is still ongoing — in the way that something becomes ongoing when the original question gets quietly replaced by a different one.
 
@@ -120,4 +120,4 @@ The village stopped asking it. That is not the same as answering no.
 
 ## Related Documents
 
-- `world/geography-overview.md` — location in the Unheld, northeast of Vulture's Nest
+- `world/geography-overview.md` — lake island northeast of Vulture's Nest

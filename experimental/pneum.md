@@ -2,7 +2,7 @@
 
 *Pronounced: new'm*
 
-An island in the Unheld, northeast of Vulture's Nest. Part of a loose People of Promise island group. This subgroup moved here to practice their beliefs in peace.
+A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 
 ---
 
