@@ -14,7 +14,7 @@ The sacred and the mundane are not separated. A marketplace is a temple. A meal 
 
 **Wild magic** — The People of Promise use blood rituals, songs, and other uncontrolled methods. Where the Masons constrain magic, the People of Promise open to it.
 
-**Ritual bathing** — The central communal practice.
+**Ritual bathing** — The central communal practice, and the community's defining transgression. Nobody else in the known world touches the Unheld. No fishing, no sailing, no wading at the grey shore — the edge of the world is treated as exactly that. The People of Promise break this convention on purpose, publicly, as worship.
 
 Congregations lower participants down the cliffside into the Unheld Ocean using wooden platforms suspended by ropes and pulleys. The bather descends into the grey water while the community above holds the line.
 

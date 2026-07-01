@@ -12,7 +12,7 @@ The world responds to those who pay attention. Every region has its own logic, i
 
 ## The Shape of the World
 
-The known world is a basin surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Islands float within it. A strong seafaring culture has developed out of necessity: the ocean connects places that land cannot reach, but it changes those who cross it.
+The known world is a basin surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, draining toward the grey water — and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and the halfway-inns between them.
 

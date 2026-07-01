@@ -24,7 +24,9 @@ Primary exports: light atlases, hand-ground prisms, and silvered paper that hold
 
 ## The Soft Edge
 
-What lies beyond the northernmost waters. Ships that cross it don't come back the same, if they come back at all. Trade sailors are highly valued here. There are never enough.
+What lies beyond the northernmost waters. The name describes how it looks — sky and water dissolving into each other, no line where one ends — not what it is. What it is, is absolute. Nothing sails past it. Nothing fishes it. The ghost stories about the ships that once tried are older here than anywhere, and told less often.
+
+The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved.
 
 ---
 

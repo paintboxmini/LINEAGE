@@ -4,6 +4,8 @@
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and halfway-inns between them.
 
+The continent is rich with rivers and lakes. Where the roads are the Regency's arteries, the rivers are everyone else's — cargo, passengers, and anything that prefers not to pass a Regency checkpoint moves by water. River sailors are common, skilled, and proud of it.
+
 ---
 
 ## The Kings Road — The Spine
@@ -30,14 +32,20 @@ The northeast bypass is how travelers reach Glasslight without passing through E
 
 The known world occupies a basin. Its boundaries are defined by:
 
-- **The Unheld Ocean** to the north, west, and south — surrounding open water that does not obey held reality.
+- **The Unheld Ocean** to the north, west, and south — grey water that does not obey held reality. It is the edge of the world. Nothing sails it. Nothing fishes it. The only people who go near it are the Glasslight cartographers who map its edge, and the People of Promise, who lower themselves into it on ropes and call that faith.
 - **The Turnroot Weald** wrapping the eastern edge of the Ashfall Wastes — a sentient forest that insulates the basin from the War Engine beyond.
 
-## Islands
+There is nothing beyond the coast. Or nothing anyone has come back to describe. The ghost stories say otherwise — ships that slipped past the shore generations ago, crews that came home wrong or didn't come home at all. The stories are told in river taverns, quietly, and nobody checks them against the water.
 
-Islands float in the surrounding Unheld Ocean. They are inhabited and trade-connected. A strong seafaring culture has developed from the necessity of reaching them.
+## Rivers and Lakes
 
-Trade sailors who regularly cross the Unheld Ocean are highly valued. There are never enough of them.
+The basin drains toward the Unheld. A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again on the way to the grey coast. This web is the continent's second road system — and its first, if you ask a sailor.
+
+**Vulture's Nest sits at the heart of the web.** More river tonnage passes its docks than the rest of the continent combined. If it moves by water, it moves through the Nest.
+
+The rivers breathe with the Unheld. When the grey water pulls back from the coast, the rivers drop with it — a tide that arrives from downstream, felt hundreds of miles inland. River folk plan around it. Some plan jobs around it.
+
+Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
 
 ## Key Landmarks (Summary)
 
@@ -47,10 +55,10 @@ Trade sailors who regularly cross the Unheld Ocean are highly valued. There are 
 | Glasslight Reach | Northernmost edge | Cliff town; faces the Soft Edge |
 | Turnroot Weald | Eastern border | Sentient forest; wraps Ashfall Wastes |
 | Ashfall Wastes | Eastern interior | Ash-buried ruins; strange heat |
-| Vulture's Nest | Coastal | Major port; Tideward Compact |
+| Vulture's Nest | Heart of the river web | Major river port; Tideward Compact |
 | Abyssal Ruins | Interior | Vast warped ancient site |
 | Havenrise | Eastern edge | Under development |
 | Roaat | Near Vulture's Nest | Under development |
-| Canille | Unheld, northeast of Vulture's Nest | Island village; experimental |
+| Canille | Lake island, northeast of Vulture's Nest | Island village; experimental |
 
 For detailed location entries, see `locations/`.
