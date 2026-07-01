@@ -75,7 +75,7 @@ Heavy spiced mead in a pewter mug. Rumored to be the same recipe King Bradley dr
 Roasted boar haunch with Roman-style garum and thick trenchers of bread.
 
 **Honeyed Locusts**
-A delicacy from the Unheld Sea islands. Crunchy, sweet. Popular with the Prince's guards.
+A delicacy from the lake islands northeast of Vulture's Nest. Crunchy, sweet. Popular with the Prince's guards.
 
 ---
 

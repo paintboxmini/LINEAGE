@@ -33,7 +33,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of the Forge | Craftsmanship and industry. Artisans and blacksmiths. |
 | Sanctuary of Nature | Nature spirits. Dense grove. Druids. |
 | Temple of Knowledge | Ancient library. Scholars. Seekers of understanding. |
-| Temple of the Sea | Sea god. Reflective pool. Sailors and fishermen. |
+| Temple of the Rivers | River god. Reflective pool. Sailors and fishermen. |
 | Temple of Healing | Divine healers. Clerics, paladins. Wounded and weary. |
 | Temple of Dreams | Dreams and the ethereal. Visions. Cryptic guidance. |
 | Temple of Justice | Justiciars and enforcers. Law, impartial judgment. |
