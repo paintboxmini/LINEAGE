@@ -1,8 +1,8 @@
 # Vulture's Nest
 
-A port town rebuilt so many times on top of itself that no one remembers the original shoreline. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
+A river port rebuilt so many times on top of itself that no one remembers the original shoreline. The town sits at the heart of the continent's river web — every waterway of consequence passes through or near it, and more tonnage crosses its docks than the rest of the continent combined. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
-The smell: pitch, citrus peel, old salt, wet wood.
+The smell: pitch, citrus peel, river silt, wet wood.
 
 For the session 1 opening scene, see the Entry section below.
 
@@ -40,9 +40,9 @@ The hard lines are predictable: nothing so destructive it destabilizes the regio
 
 ## The Tide Pull
 
-When the tide retreats unusually far:
+The rivers breathe with the Unheld — when the grey water pulls back at the coast, the rivers drop in answer, all the way inland. When the pull is unusually deep:
 
-- Shipwrecks appear on the shoreline, many showing signs of apparent violence
+- Wrecks appear along the banks, many showing signs of apparent violence
 - Old foundations surface
 - Glyphs carved into stone reappear
 
@@ -52,7 +52,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night. Knows when The Coil surfaces off the coast and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `locations/the-coil.md`.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `locations/the-coil.md`.
 
 ---
 
@@ -61,7 +61,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 **Bartho Underfist — The Quiet Dockmaster**
 Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
 
-Players arrive already in debt to him — the crossing requires something coin can't settle. He doesn't explain the full terms. He directs them to Briarwatch. Jonas writes it down.
+Players arrive already in debt to him — the passage downriver requires something coin can't settle. He doesn't explain the full terms. He directs them to Briarwatch. Jonas writes it down.
 
 *"Just so we all start off on the right foot."*
 
@@ -206,7 +206,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
-**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Lost a ship to the Unheld fifteen years ago. Only one who came back. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet.
+**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Fifteen years ago he took a ship past the coast — the kind of thing that's supposed to exist only in ghost stories, because the ones who try don't come back to tell them. He came back. Alone. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
@@ -228,7 +228,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 The building sits two degrees off level. Nobody fixed it after the last rebuild. Furniture has been shimmed so many times the legs are all different lengths.
 
-Smells like old ale, smoked fish, and salt-damp wood. Loud enough that conversations stay private without trying. The kind of place where sailors drink because it's the cheapest option and nobody makes you talk.
+Smells like old ale, smoked fish, and river-damp wood. Loud enough that conversations stay private without trying. The kind of place where sailors drink because it's the cheapest option and nobody makes you talk.
 
 **Salla** — the barkeep. Short, wide, moves fast. Hair pinned back with a fishhook that has seen use. Keeps a sawn-off boat hook behind the bar. Nobody has seen her use it, but it's never dusty.
 
@@ -255,9 +255,9 @@ Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
 
 ## Entry — Session 1 Opening
 
-*The static reaches you before the ship does. A low continuous hiss beneath gulls and rigging, like the Unheld is still talking to itself even here in harbor.*
+*The static reaches you before the docks do. A low continuous hiss beneath gulls and rigging, riding the water upstream — like the Unheld talking to itself at the far end of the river, and the river repeating it.*
 
-The docks smell like salt, fish, wet rope, and something burning somewhere that nobody is moving toward. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
+The docks smell like silt, fish, wet rope, and something burning somewhere that nobody is moving toward. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
 
 Bartho is already watching you.
 
@@ -279,7 +279,7 @@ Instructions after Briarwatch point to the capital — not back to Vulture's Nes
 
 ## On the Boat — Night Before Arrival
 
-Late. Most of the crew has turned in. A few travelers and off-watch sailors have drifted to the deck with whatever was left in the bottles. The coast isn't visible yet but the smell of the continent has arrived — woodsmoke, earth, something green.
+Late, on the riverboat's last night out. Most of the crew has turned in. A few travelers and off-watch sailors have drifted to the deck with whatever was left in the bottles. The Nest isn't visible yet — one more bend, maybe two — but the smell of it has arrived on the water: woodsmoke, pitch, something green off the banks.
 
 The talk is easy. The kind that happens when people don't have to be anywhere until morning.
 
