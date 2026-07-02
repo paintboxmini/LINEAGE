@@ -16,6 +16,8 @@ The sacred and the mundane are not separated. A marketplace is a temple. A meal 
 
 **Ritual bathing** — The central communal practice, and the community's defining transgression. Nobody else in the known world touches the Unheld. No fishing, no sailing, no wading at the grey shore — the edge of the world is treated as exactly that. The People of Promise break this convention on purpose, publicly, as worship.
 
+The bathing must happen at the coast. Unheldness does not cross the coastline — water carried inland arrives ordinary, and no vessel preserves it. To touch the Unheld, you go to the Unheld. The community treats this as doctrine rather than inconvenience: the Promise comes to no one; you descend to it.
+
 Congregations lower participants down the cliffside into the Unheld Ocean using wooden platforms suspended by ropes and pulleys. The bather descends into the grey water while the community above holds the line.
 
 In the water, bathers experience *potentials* — different possible versions of themselves. Paths not taken. Selves that could have been. The experience is not uniform and cannot be predicted.

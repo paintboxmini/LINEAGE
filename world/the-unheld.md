@@ -28,7 +28,9 @@ Where the Unheld presses close, things become harder to Name, harder to hold, ha
 
 The Unheld Ocean surrounds the known world on three sides. Nothing crosses it. The continent's strong sailing culture lives entirely on the web of rivers and lakes that drains toward the grey water — river sailors are common and valued; ocean sailors do not exist.
 
-The rivers breathe with it. When the Unheld pulls back from the coast, the rivers drop in answer — a tide that arrives from downstream and reaches deep inland. It is the one part of the Unheld that ordinary people live with daily, and most of them have stopped thinking about what it means.
+**The coastline is the threshold.** The Unheld ends where the land begins — hard, exact, without gradient. Inland water is just water. Where a river meets the grey sea, the wrongness stops at the meeting point; whatever the Unheld is, it does not travel upstream, and it cannot be carried. Grey water scooped at the coast and walked inland arrives as ordinary water. Once the Unheld crosses the threshold, it becomes mundane.
+
+One thing does carry: motion. When the Unheld pulls back from the coast, the rivers drop in answer — a tide that arrives from downstream and reaches deep inland. The water that rises and falls is ordinary. The rhythm it obeys is not. Most people have stopped thinking about what that means.
 
 Glasslight Reach sits at the northernmost edge of the known world, where the sea is white and foaming, leeching color from the air above it. The horizon disappears there. Sky and water dissolve together in the distance.
 
