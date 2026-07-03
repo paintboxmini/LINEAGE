@@ -29,4 +29,4 @@ All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.
 
 ## Oracle Cards Received
 
-<!-- Session: Card name -->
+- Session 1: PARADOX
