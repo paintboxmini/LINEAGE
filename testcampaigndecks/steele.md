@@ -5,13 +5,13 @@
 
 ---
 
-## Deck — 10 cards (4R / 4B / 2G, assuming EARTHQUAKE is Red)
+## Deck — 10 cards (4R / 4B / 2G)
 
 **Red**
 - BLOOD TITHE
 - GAMBLER'S RUIN
 - PAIN IS FUEL
-- EARTHQUAKE *(card text not in repo — see note)*
+- REPEL *(Kevin's physical card is printed as EARTHQUAKE — the card was renamed; same effect)*
 
 **Blue**
 - FORGET
@@ -23,9 +23,7 @@
 - SPIRAL CURRENT
 - RENEWAL
 
-All core cards except EARTHQUAKE — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
-
-**EARTHQUAKE:** exists at the table but has no card file. Its only repo trace is `bestiary/fogcaller.md`, which lists it alongside PUSH and PULL as a position-forcing effect the Fogcaller ignores — so it was clearly designed as a Red movement card at some point. Needs its text recorded in `cards/red-body.md`.
+All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
 
 ---
 
