@@ -215,7 +215,7 @@ Range: Both
 **AXIOM**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Name a color. Defender cannot play that color next turn
+Effect: Name a color. The defender cannot play that color on their next reveal
 Defensive Bonus: Scry 2 cards of attacker's deck
 Range: Both
 *"The wise divide heaven into knowable directions."*
