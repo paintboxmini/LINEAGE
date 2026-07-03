@@ -4,7 +4,7 @@ A complete combat played out beat by beat, with every rule cited as it fires. Wr
 
 The scenario is the standard day-2 road encounter: two Briar Scratchers contest the road to Briarwatch (`bestiary/briar-scratcher.md`). The party is Frost and Steele.
 
-**The decks below are illustrative, not canon.** They are built by the table's deck-building conventions (see `rules/cards.md` — Deck Building) to show legal construction. The party's real decks live in `decks/`.
+**The decks below are illustrative, not canon.** They are built by the table's deck-building conventions (see `rules/cards.md` — Deck Building) to show legal construction. The party's real decks live in `testcampaigndecks/`.
 
 ---
 
@@ -198,7 +198,7 @@ Rulings used above, flagged for canon review:
 1. **Opening hands.** The rules say you draw to hand size at the start of your turn — nothing says combatants have cards before their first turn, which would make everyone acting late in cycle 1 defenseless. Ruling used: **everyone draws to hand size when initiative is rolled.**
 2. **Evade vs the attacker's card.** The attack card is played and discarded at step 1; Evade resolves after. Ruling used: **a dodged attack still consumes the attacker's card** (and its Effect does not trigger).
 3. **Defensive Bonuses that reference the attack's damage** (e.g., REFRACT's redirect) fire on a defender win, when no damage was dealt. Surfaced while scripting, though the final example doesn't exercise it. Proposed ruling: **roll the attack's damage anyway to resolve the redirect.**
-4. **Does a tie count as "successfully defending"?** Cards like WITNESS trigger on a successful defense. A tie prevents all damage and fires the Defensive Bonus, but the defender didn't *win*. **No ruling used — the example avoided the case. Needs a call.**
+4. **Does a tie count as "successfully defending"?** Cards like WITNESS trigger on a successful defense. A tie prevents all damage and fires the Defensive Bonus, but the defender didn't *win*. **Resolved per-card, not universally:** WITNESS now states on the card that a tie counts. Future cards that care about "successful defense" carry their own clarifying line; if every card ends up ruling the same way, the convention gets promoted to a universal rule.
 
 ---
 

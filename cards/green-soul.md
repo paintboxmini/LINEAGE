@@ -75,7 +75,7 @@ Range: Melee
 **WITNESS**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Next ally to successfully defend before your next turn heals 3 HP
+Effect: Next ally to successfully defend before your next turn heals 3 HP. A tie counts as a successful defense.
 Defensive Bonus: Target ally heals 3 HP
 Range: Melee
 *"What is witnessed is what endures."*
