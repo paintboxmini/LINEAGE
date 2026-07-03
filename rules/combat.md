@@ -51,6 +51,8 @@ Card effects cannot modify initiative unless the card explicitly states otherwis
 
 ## Turn Structure
 
+When initiative is rolled, every combatant draws to their maximum hand size — nobody enters the wheel empty-handed.
+
 At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.
 
 On your turn, you may take **one action:**

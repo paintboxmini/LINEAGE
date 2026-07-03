@@ -6,6 +6,12 @@
 
 ---
 
+## Campaign Status
+
+**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists not yet recorded — `decks/frost.md` and `decks/steele.md` have placeholders waiting.
+
+---
+
 ## Active Pending Threads
 
 **SOFT STEP** (Borrower card, `experimental/archives/cut-cards.md`)
@@ -111,6 +117,9 @@ Bearer of the Seat of Love/Binding. Bound beneath Eclipsera. The city's unity ru
 
 **Animal titles = scar tissue**
 The council's animal symbols (Lion, Panther, Bear, Fox, Owl, Pig, Elephant) are not heraldic. They're the shape the Seat left on each person when the attempt failed.
+
+**Deck-building conventions** (canonical home: `rules/cards.md`, Deck Building)
+Player decks: color counts match stats (Mind 4/Body 2/Soul 3 → 4B/2R/3G) — heuristic, not law. Enemy decks: 3 themed signature cards + 4–7 core cards (7–10 total), leaning toward the creature's stat spread. Enemies draw to hand size like players. Opening hands: everyone draws to hand size when initiative is rolled (added to `rules/combat.md`). Worked combat: `rules/combat-example.md` — includes rulings on 4 edge cases flagged for Drew (tie = "successful defense"? is still open).
 
 **Card system: signature sets**
 Creature combat decks are filled from core cards. Signature cards are Oracle rewards. Drew determines how many land in a given set after reviewing the full 9. The standard loop: draft 9, red team all 9, fix/cut/replace until all pass, present all 9, Drew decides placement.

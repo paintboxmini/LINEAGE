@@ -72,6 +72,16 @@ Your deck is not just mechanics. It's how your character thinks.
 
 ---
 
+## Deck Building
+
+**Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `locations/island-in-a-ship.md`) can and should bend it.
+
+**Enemy decks.** Build 3 themed signature cards for the creature, then pull 4–7 cards from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to finish the deck — 7 to 10 cards total. Lean the core picks toward the creature's stat spread and temperament. Enemies draw to hand size (Mind + 1) like everyone else.
+
+For a full worked combat using both conventions, see `rules/combat-example.md`.
+
+---
+
 ## Important: You Are Not Your Own Ally
 
 Card effects that reference "allies" or "enemies" never apply to the card's user. You cannot target yourself with ally effects or accidentally trigger enemy effects on yourself. This applies to area effects, healing bonuses, and damage reduction.
