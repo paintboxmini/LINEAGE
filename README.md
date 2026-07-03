@@ -8,7 +8,7 @@ A tabletop role-playing game (TTRPG) currently in development.
 |--------|----------|
 | `rules/` | Core rules, mechanics, and the keyword glossary |
 | `cards/` | Card sets — core (blue-mind, red-body, green-soul) and creature/location signature sets |
-| `decks/` | Campaign decks — Oracle pool, player decks (by character name) |
+| `testcampaigndecks/` | This campaign's decks only — player decks (by character name), the Oracle pool, campaign-specific NPCs. General NPC/monster decks are not stored here; they're assembled per the enemy deck convention in `rules/cards.md` |
 | `bestiary/` | Creature stat blocks, abilities, loot, and card references |
 | `characters/` | Named NPC profiles |
 | `items/` | Consumables and equipment |
