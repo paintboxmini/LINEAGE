@@ -5,9 +5,25 @@
 
 ---
 
-## Deck
+## Deck — 10 cards (4R / 5B / 1G)
 
-<!-- Card list to be filled in -->
+**Red**
+- SACRIFICE STRIKE
+- BLOOD IN THE GAP
+- BURN BRIGHT
+- SPARK OF VIOLENCE
+
+**Blue**
+- AXIOM
+- DEFLECT
+- REALIGNMENT
+- CLIMB
+- FRACTURE
+
+**Green**
+- TWIN STRIKE
+
+All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
 
 ---
 
