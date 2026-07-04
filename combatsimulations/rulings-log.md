@@ -51,12 +51,11 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
 
 RESOLVED:
 
-- **stat-erosion-lowers-hp** — Wither (−1 Body) and Erode (−1 Soul) each also
-  lower max HP by 3 per point for the combat, clamping current HP down (Drew
-  ruling: either lowers max HP). This is what made stat erosion a real attrition
-  tool. *Open sub-question if you ever want it: should this ripple to the written
-  rules as a general "mid-combat stat loss adjusts max HP" principle, or stay
-  specific to these cards?*
+- **stat-loss-derived** — A reduced stat lowers whatever it governs for the
+  combat: Body → −3 max HP per point (clamps current HP, can Collapse); Mind →
+  hand size; Soul → initiative. **Only Body touches HP** (Drew ruling). Now a
+  general rule in `rules/card-glossary.md` (Stat Loss); the sim implements the
+  Body→HP half in `Combatant.erode`.
 - **press-the-wound-counts** — "each Wound in the deck" counts deck + hand, not
   discard (Drew ruling). Taint's "already has a Wound" check uses the same count.
 

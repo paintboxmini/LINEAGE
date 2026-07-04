@@ -88,12 +88,13 @@ Prevent the next debuff applied to you. Expires on use.
 
 ## Stat Loss
 
-Not a keyword — a shared mechanic. Some cards reduce one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul). Whenever a stat is reduced this way:
+Not a keyword — a shared mechanic. Some cards reduce one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul). A reduced stat uses its lowered value for everything it governs until the loss ends:
 
-- **Your maximum HP drops by 3 for every point lost, regardless of which stat.** Losing Body, Mind, or Soul all cost max HP the same. If your current HP now exceeds your new maximum, it drops to the maximum. If your maximum reaches 0, you Collapse.
-- The lowered stat uses its reduced value for everything else it governs — damage, and its listed derived value — until the loss ends.
+- **Body** — Red-card damage, and max HP: **each point of Body lost lowers your maximum HP by 3.** If your current HP now exceeds the new maximum, it drops to the maximum; if your maximum reaches 0 you Collapse. Only Body loss touches HP.
+- **Mind** — Blue-card damage, and hand size (Mind + 1).
+- **Soul** — Green-card damage, and initiative (1d6 + Soul).
 
-Stat loss lasts for the combat unless a card says otherwise, then the stat returns to normal (and lost max HP with it). This applies to every current and future stat-draining card; the card only states the stat and amount.
+Stat loss lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it changed — returns to normal. This applies to every current and future stat-draining card; the card only states the stat and amount.
 
 ---
 
