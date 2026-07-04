@@ -6,7 +6,7 @@ Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mista
 
 ## Stealth & Ambush
 
-To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat among enemy combatants. The GM rolls for that creature.
+To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat on the side being approached. Creatures ambush the same way — when the ambusher is an NPC or creature, the GM makes its Soul check.
 
 **On success:** The ambusher's first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone including the ambusher. They take their place in order normally. Combat continues.
 

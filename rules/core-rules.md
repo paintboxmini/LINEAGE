@@ -130,7 +130,7 @@ Melee requires both characters in the Frontline. The Frontline does not protect 
 
 ## Stealth & Ambush
 
-Soul check vs DC = 10 + highest enemy Soul (GM rolls for that creature). On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+Soul check vs DC = 10 + highest Soul on the side being approached. Creatures ambush the same way — the GM rolls their Soul check. On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
 
 ---
 
@@ -161,7 +161,7 @@ Artifacts are resonant jewelry aligned with a Seat's domain.
 
 ## Advancement
 
-**End of session:** GM draws 3 cards from the Oracle → player picks 1.  
+**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1). See `locations/island-in-a-ship.md`.  
 **Stat increases:** Rare. After pivotal character development. GM's call.  
 **Deck changes:** Cards can be added, removed, or forced in as curses/status.
 
