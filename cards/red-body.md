@@ -85,8 +85,8 @@ Range: Both
 **CLIFF SONG**
 RED — BODY
 Attack: Body + d2
-Effect: All allies heal 2 HP
-Defensive Bonus: All allies heal 2 HP
+Effect: You and all allies heal 2 HP
+Defensive Bonus: You and all allies heal 2 HP
 Range: Both
 *"Wind through the fractures. The cliff remembers."*
 

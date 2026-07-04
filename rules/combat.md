@@ -6,7 +6,7 @@ Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mista
 
 ## Stealth & Ambush
 
-To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat among enemy combatants. The GM rolls for that creature.
+To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat on the side being approached. Creatures ambush the same way — when the ambusher is an NPC or creature, the GM makes its Soul check.
 
 **On success:** The ambusher's first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone including the ambusher. They take their place in order normally. Combat continues.
 
@@ -27,6 +27,25 @@ When a character flees and the pursuer gives chase, set up a two-marker track in
 **Caught** — The pursuer's marker reaches the fleeing party's marker.
 
 **Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Observe check, DC set by GM based on terrain and time elapsed).
+
+---
+
+## Fleeing Combat
+
+Exiting combat mid-fight is an action: **2d10 + Soul vs DC = 10 + the highest Soul stat among enemy combatants** — the ambush formula, run from the other side. Soul gets you into fights unseen and gets you out of them alive.
+
+The formula is the baseline, not the answer. The GM adjusts it for the factors it can't see:
+
+- **Terrain** — open road vs briar walls vs a corridor with one door
+- **What stands between you and out** — an enemy in your path is not an abstraction
+- **Position** — Backline is closer to gone than Frontline
+- **Whether the enemy cares** — a territorial creature that just wants you off its ground may make the check trivial, or unnecessary; a hunter in its own territory pushes it up
+
+**Success:** you leave the combat area and your participation ends. If the enemy gives chase, that's the Chase system above.
+
+**Failure:** the action is spent and you're still in the fight, exactly where everyone can see you.
+
+Enemies don't roll to flee — enemy disengagement is a GM call made from behavior, not a check.
 
 ---
 
@@ -63,8 +82,9 @@ On your turn, you may take **one action:**
 | Move Position | Shift between Frontline and Backline |
 | Use an Item | Activate an equipped or held item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
+| Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
-| Flee | Attempt to exit combat (DC check, GM determines difficulty) |
+| Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
 ---
 
@@ -128,6 +148,12 @@ Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must
 
 Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
 
+### Cover
+
+Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
+
+While in cover, you gain **Evade** (`rules/card-glossary.md`). Making an attack drops cover immediately.
+
 ### Confined Spaces
 
 In tight environments (narrow tunnels, low passages, cramped rooms), the GM may limit how many characters fit in either position. If a creature physically blocks a passage, characters behind them cannot be targeted unless the fiction clearly allows it (e.g., ranged attack with line of sight). Rushdown in confined spaces may represent forcing an enemy into unstable terrain rather than a clean positional shift.
@@ -139,6 +165,14 @@ In tight environments (narrow tunnels, low passages, cramped rooms), the GM may 
 Some cards produce **Ongoing Effects.** These cards remain face up in front of the player after use. The effect persists until its stated condition is met, at which point the card is discarded.
 
 Multiple ongoing effects can be active simultaneously unless a card specifies otherwise.
+
+---
+
+## Simultaneous Effects
+
+When two or more effects would resolve at the same moment — several "start of your turn" triggers, two tokens landing at once — the **controller of those effects chooses the order** they resolve in. If the simultaneous effects have different controllers, the player whose turn it is decides the order.
+
+Order can matter: a heal-then-bleed and a bleed-then-heal end at the same number, but a heal that arrives after a lethal bleed arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie (see BLOOD TITHE, where both parties can bleed to Collapse on the same trigger).
 
 ---
 

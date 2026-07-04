@@ -17,9 +17,9 @@ In combat, you don't declare an action and roll — you play a card. The card te
 - **d4** — Utility. Moderate damage, strong effects.
 - **d2** — Precision. Low damage, high control and information.
 
-**Effect** — Triggers when you play this card as an attack *and win* the resolution.
+**Effect** — Triggers when you play this card as an attack and win the resolution — or tie it. On a tie the Effect still triggers, before the Defensive Bonus (see the tie rule in `rules/combat.md`).
 
-**Defensive Bonus** — Triggers when you win the RPS resolution as the defender.
+**Defensive Bonus** — Triggers when you win the RPS resolution as the defender — and on ties, unless the attacker's Effect cancels it.
 
 **Range** — Describes the positional relationship required to play this card. See the Range table in `rules/combat.md`.
 
@@ -60,7 +60,9 @@ Your deck is not just mechanics. It's how your character thinks.
 
 ## Card Glossary
 
-**Scry X** — Look at the top X cards of your deck. Return them in any order, placing each on top or on the bottom of your deck.
+Short versions for reading cards. `rules/card-glossary.md` is canonical — if these ever disagree, the glossary wins.
+
+**Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Return them in any order, placing each on top or on the bottom.
 
 **Ongoing Effect** — The card remains face up after use until its stated condition is met, then discards.
 

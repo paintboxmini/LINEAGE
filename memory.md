@@ -8,7 +8,12 @@
 
 ## Campaign Status
 
-**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists not yet recorded — `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md` have placeholders waiting. (Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.)
+**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md`, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox). Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.
+
+**Combat simulator** (`combatsimulations/`)
+PvP duel engine, Python, no dependencies. Plays Frost vs Steele thousands of times with pluggable decision policies (random/greedy/reader). Design instrument only — not canon, changes nothing. Two outputs: an errata queue (`rulings-log.md`, also printed each run) and balance stats. Key finding: the Frost/Steele matchup INVERTS with skill — greedy play favors Steele (Body 4/HP 18 slugfest), reader play favors Frost (Axiom punishing Steele's 50%-Blue deck), empirically confirming Axiom > Paradox as the power card. Initiative worth ~55–59%. Extend by adding policies (3 methods) or more decklists.
+
+Third deck added: `mire` — a Wound-attrition control build (Balance/Wither/Mockery, Rend/Equal Footing/Press the Wound, Partition/Taint/Erode, 3/3/3). Forced the engine to grow Wound status cards, combat-duration stat loss, initiative shift, targeting locks. Finding: Mire is matchup-polarized — loses to Frost's burst ~56% at all skill levels (15 HP dies before Wounds accumulate), pulls dead even vs Steele under reader play. Its home is PvE, where durable enemies give the Wound engine time. Roster is now pluggable (`ROSTER` in content.py); run.py takes deckA polA deckB polB.
 
 ---
 
@@ -92,8 +97,11 @@ Two story arcs in development. Tide Pulls Back adventure written — four encoun
 **The Unheld is a hard edge; sailing lives on rivers**
 Nothing sails or fishes the Unheld Ocean — it is the true edge of reality, not a soft boundary. No islands exist in it. The only exceptions: Glasslight light-cartographers map its edge (never the water), and the People of Promise touch it deliberately (ritual bathing = transgression as worship). Ghost stories preserve the memory of ships that once went past the coast; Corvel is living proof. The continent is laced with interconnected rivers and lakes draining toward the Unheld — Vulture's Nest is the heart of the river web. Tides are an Unheld phenomenon that breathes up the rivers (when the grey water pulls back, rivers drop inland — this keeps the Tide Pull and the Glasslight tide framework working). **The coastline is a hard threshold: unheldness does not cross it, by flowing or by being carried — inland water is mundane, only the tidal motion travels upstream.** This is why Promise bathing must happen at the coast, and why Corvel's vials are ordinary water (what they carry is Pneum's diseases, not unheldness — see `experimental/pneum.md`). The Island in a Ship is unchanged: the Oracle's island is now the only location in the setting not on the continent. Former Unheld islands (Canille, Pneum) relocated to lakes. Eclipsera's Temple of the Sea renamed Temple of the Rivers.
 
+**Stat loss lowers max HP** (`rules/card-glossary.md`, Stat Loss)
+General rule, not a keyword: any card that reduces a stat for a combat (Sunder→Mind, Wither→Body, Erode→Soul) also lowers max HP by 3 per point lost, regardless of which stat, clamping current HP down. Reverts at combat end. Every current/future stat-draining card inherits this; the card only states stat + amount. Surfaced via the combat sim (Mire deck) and generalized from Drew's ruling. Sim implements it in `combatsimulations/engine.py` (Combatant.erode).
+
 **Soul = movement speed**
-Soul governs initiative AND movement speed. High Soul characters move faster and act first. This is why flee/chase uses Soul, not Body. Body is impact, not velocity. Important for future card and mechanic design — don't use Body for movement checks.
+Soul governs initiative AND movement speed. High Soul characters move faster and act first. This is why flee/chase uses Soul, not Body. Body is impact, not velocity. Important for future card and mechanic design — don't use Body for movement checks. Flee is now formalized: 2d10 + Soul vs DC 10 + highest enemy Soul (ambush formula from the other side), GM-adjusted for terrain/obstacles/position/enemy intent — see `rules/combat.md`, Fleeing Combat. Enemies don't roll to flee; enemy disengagement is a GM behavior call.
 
 **Abstract movement**
 No distances in play. "In reach / close / far" is the language. Combat uses abstract positions (Frontline/Backline). When a character moves away from the combat area, that ends the combat — flee function. Enemies can re-engage. Non-combat chasing uses Soul checks. Avoid specific distances in any bestiary or quest content.

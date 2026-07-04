@@ -6,6 +6,19 @@ Use this prompt to generate new 9-card enemy sets. Read the target creature's be
 
 ---
 
+## Onboarding — Required Reading Before Drafting
+
+Do not draft a single card until all of this is done. Cards written without calibration read fine in isolation and wrong next to everything else.
+
+1. **`rules/card-glossary.md`** — full read. When a card uses a keyword, its text must match the canonical definition exactly. If your effect needs a keyword that isn't here, stop — no new keywords without approval.
+2. **Approved keyword list** (`experimental/README.md`) — includes anything pending canon approval. Pending keywords are not usable.
+3. **All three core files** — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`. This is the power baseline: damage dice, effect strength, defensive bonus weight, flavor voice. Also a duplication check — if your effect already exists on a core card, it isn't a signature effect.
+4. **At least two signature sets** — e.g., `cards/alignment-marshal-engine.md`, `cards/stonecoil-hollow.md`, `cards/briar-scratcher.md`. Note how signature cards differ from core: tighter identity, effects that only make sense coming from this creature.
+5. **`rules/cards.md`** — card anatomy, die philosophy (d6 power / d4 utility / d2 precision), deck-building conventions, and You Are Not Your Own Ally. Every "ally"/"enemy" wording must survive that rule.
+6. **`experimental/archives/cut-cards.md`** — what has already been drafted and cut, and why. Do not re-draft a cut card without addressing the reason it was cut.
+
+---
+
 ```
 Create a 9-card enemy set for Tales Untold (3 Red, 3 Blue, 3 Green).
 

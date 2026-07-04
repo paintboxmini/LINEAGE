@@ -15,7 +15,7 @@ Range: Both
 **SHARPEN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target ally deals +2 Mind damage on their next Blue card
+Effect: Target deals +3 damage on their next Blue card attack
 Defensive Bonus: Your next Blue card deals +2 Mind damage
 Range: Both
 *"Precision compounds."*
@@ -25,7 +25,7 @@ Range: Both
 **ANALYZE**
 BLUE — MIND
 Attack: Mind + d2
-Effect: You and your allies scry 1
+Effect: You and your allies scry 2
 Defensive Bonus: Reveal opponent's hand
 Range: Both
 *"Knowledge cuts deeper than steel."*
@@ -54,9 +54,9 @@ Range: Melee
 
 **STUDY**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Discard 1, draw 1
-Defensive Bonus: Discard 1, draw 1
+Defensive Bonus: Apply Predictable to the attacker
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -175,7 +175,7 @@ Range: Both
 **UNDERSTANDING**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Discard 1, then if the discarded card is non-blue, deal +3 damage
+Effect: Discard a Red or Green card. This attack deals +3 damage.
 Defensive Bonus: Scry 2. If you bottom both, heal 4 HP
 Range: Both
 *"Clarity is not given, it is reconstructed."*
@@ -235,7 +235,7 @@ Range: Ranged
 **PARADOX**
 BLUE — MIND
 Attack: Mind + d4
-Special Rule: On reveal, reverse the RPS outcome this turn
+Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal 1
 Defensive Bonus: Lifesteal 2
 Range: Both

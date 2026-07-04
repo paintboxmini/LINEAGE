@@ -80,7 +80,7 @@ The Oracle is the living reward pool — the mechanism by which the world respon
 The Oracle Deck contains:
 - All cards currently available as player rewards
 - Unchosen cards from character creation
-- Enemy specialty cards recovered as loot
+- Enemy signature cards recovered as loot
 
 After each encounter, the GM may add new cards to the Oracle — ones fictionally relevant to what just happened, where the party is, or what they're becoming.
 
@@ -91,7 +91,13 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-At the end of every session, each player draws **3 random cards** from the Oracle and chooses **1** to add to their deck permanently. This is the default rhythm of growth.
+Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
+
+1. **Name** — the Oracle asks one question. The player answers.
+2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.
+3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+
+This is the default rhythm of growth.
 
 The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
 

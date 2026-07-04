@@ -29,7 +29,7 @@ Every location in Eclipsera has its own logic. The Turnroot Weald redirects. Vul
 An enemy needs:
 - **Stats** — Body, Mind, Soul (same as players, same functions)
 - **HP** — use `(3 × Body) + 6`, or pick a number that fits the fiction
-- **A small card set** — 3 to 6 cards is plenty for most enemies
+- **A deck** — 3 themed signature cards plus 4–7 core cards, 7–10 total (see `rules/cards.md`, Deck Building). Enemies draw to hand size (Mind + 1) like everyone else.
 - **A position** — Frontline or Backline to start
 - **An intent** — what does this enemy actually want in this fight?
 
@@ -37,7 +37,7 @@ Intent is the part most GMs skip and most regret skipping. An enemy that wants t
 
 You don't need a backstory. You need an intent.
 
-**Specialty cards** are optional — cards unique to a specific enemy that become loot when they're defeated. These go into the Oracle after the fight. They're a good way to make a memorable enemy leave a permanent mark on the campaign.
+**Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
 ---
 
@@ -62,7 +62,7 @@ A session in Tales Untold typically has:
 
 That last one is important. Not every question needs an answer by session's end. Not every threat needs to be addressed. The world has things happening in it that aren't about the players — and occasionally reminding them of that makes the world feel much larger.
 
-End of session, each player picks a card. That's the mechanical heartbeat. Everything else is negotiable.
+End of session, each player runs the Oracle ritual — a question answered, a card glimpsed and buried, a pick from three. That's the mechanical heartbeat. Everything else is negotiable. The Price step is worth running with intention: the buried card stays in the pool, and what a player glimpses and doesn't get is often what they start playing toward.
 
 ---
 

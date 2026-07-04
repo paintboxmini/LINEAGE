@@ -34,10 +34,11 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Move Position | Frontline ↔ Backline |
 | Use an Item | Activate a carried item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
+| Take Cover | Backline only; fiction must justify it. Gain Evade until you attack. |
 | Interact | Any noncombat action |
-| Flee | DC check set by GM |
+| Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
 
-Draw to hand size at the **start** of your turn.
+Draw to hand size when **initiative is rolled**, then at the **start** of each of your turns.
 
 ---
 
@@ -129,7 +130,7 @@ Melee requires both characters in the Frontline. The Frontline does not protect 
 
 ## Stealth & Ambush
 
-Soul check vs DC = 10 + highest enemy Soul (GM rolls for that creature). On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+Soul check vs DC = 10 + highest Soul on the side being approached. Creatures ambush the same way — the GM rolls their Soul check. On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
 
 ---
 
@@ -160,7 +161,7 @@ Artifacts are resonant jewelry aligned with a Seat's domain.
 
 ## Advancement
 
-**End of session:** GM draws 3 cards from the Oracle → player picks 1.  
+**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1). See `locations/island-in-a-ship.md`.  
 **Stat increases:** Rare. After pivotal character development. GM's call.  
 **Deck changes:** Cards can be added, removed, or forced in as curses/status.
 
