@@ -86,6 +86,17 @@ Prevent the next debuff applied to you. Expires on use.
 
 ---
 
+## Stat Loss
+
+Not a keyword — a shared mechanic. Some cards reduce one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul). Whenever a stat is reduced this way:
+
+- **Your maximum HP drops by 3 for every point lost, regardless of which stat.** Losing Body, Mind, or Soul all cost max HP the same. If your current HP now exceeds your new maximum, it drops to the maximum. If your maximum reaches 0, you Collapse.
+- The lowered stat uses its reduced value for everything else it governs — damage, and its listed derived value — until the loss ends.
+
+Stat loss lasts for the combat unless a card says otherwise, then the stat returns to normal (and lost max HP with it). This applies to every current and future stat-draining card; the card only states the stat and amount.
+
+---
+
 ## Status Cards
 
 Status cards are placed into decks as consequences. They cannot be played. They must be managed.
