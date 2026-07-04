@@ -6,6 +6,19 @@ Use this prompt to generate short roadside or social NPC encounters. Designed fo
 
 ---
 
+## Onboarding — Required Reading Before Drafting
+
+Do not draft until all of this is done. An NPC written without this context sounds like a visitor to the setting instead of a resident of it.
+
+1. **`world/tonal-bible.md`** — the register everything here is written in. Beauty and wrongness in the same space; no heroic-fantasy framing.
+2. **`rules/resolution.md` and the DC table in `rules/core-rules.md`** — including the three Perception modes (Observe / Sense / Read). Noncombat tension runs on these checks; know which mode a moment calls for.
+3. **Existing NPCs** — `locations/vultures-nest.md` (Aege, Bartho, Kino) for how this repo does function, pressure, and hook without exposition.
+4. **The region the encounter lands in** — e.g., `locations/briarwoods.md`, `locations/roadhouse.md` for road encounters. The NPC should feel produced by the place.
+5. **`memory.md` — Active Pending Threads** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook. Touching an established location, faction, or NPC also triggers `alignment-checker.md`.
+6. **Status cards in `rules/card-glossary.md`** (Wound, Exhaust) — if the delayed consequence is mechanical, use the existing pressure systems, not invented ones.
+
+---
+
 ```
 Create a short roadside NPC encounter for Tales Untold.
 
