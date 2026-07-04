@@ -15,6 +15,8 @@ A policy implements:
     name_axiom_color(engine, me, foe) -> 'R' | 'B' | 'G'
 """
 
+from collections import Counter
+
 from engine import can_attack
 
 _AVG = {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, None: 5.0}
@@ -145,10 +147,63 @@ class ReaderPolicy:
         return self._predict(foe) or 'B'
 
 
-POLICIES = {p.name: p for p in [RandomPolicy(), GreedyPolicy(), ReaderPolicy()]}
+class TacticianPolicy:
+    """Built on GREEDY, not reader — the tournament's verdict.
+
+    The sim overturned the intuition that tracking an opponent's lifetime color
+    frequency (reader) is smart. It isn't: recency wins. Greedy — which predicts
+    the foe's NEXT reveal from their LAST one and otherwise maximizes damage —
+    beats reader decisively (up to 90/10 in the Mire mirror). So the tactician
+    inherits greedy's recency-read and aggressive offense, and adds only the one
+    upgrade that helped without hurting any deck: valuing Axiom's color ban (and
+    an unpreventable Spark to finish a low foe).
+
+    Anti-read color flattening was tried and cut — it only helps a deck whose
+    off-colors are as strong as its main color, and loses for everyone else.
+    """
+    name = "tactician"
+
+    @staticmethod
+    def _foe_skew(foe):
+        h = foe.attack_history
+        if not h:
+            return 0.0
+        return h.most_common(1)[0][1] / sum(h.values())
+
+    def _value(self, me, foe, card):
+        v = est_damage(me, card)
+        if card.name == "AXIOM":
+            v += 2 + 3 * self._foe_skew(foe)         # ban bites a predictable foe
+        elif card.name == "SPARK OF VIOLENCE" and foe.hp <= 4:
+            v += 4                                    # unpreventable finisher
+        return v
+
+    def choose_action(self, engine, me, foe):
+        atks = legal_attacks(engine, me, foe)
+        if not atks:
+            return ('move',) if me.hand else None
+        return ('attack', max(atks, key=lambda c: self._value(me, foe, c)))
+
+    def choose_defense(self, engine, me, foe):
+        # recency read: expect the foe to repeat their last attack color
+        pred = foe.last_color
+        if pred is None:
+            return None
+        winners = [c for c in me.hand if not c.is_status and c.color == _BEATEN_BY[pred]]
+        if winners:
+            return min(winners, key=lambda c: est_damage(me, c))
+        return None
+
+    def name_axiom_color(self, engine, me, foe):
+        return foe.last_color or (foe.attack_history.most_common(1)[0][0]
+                                  if foe.attack_history else 'B')
+
+
+POLICIES = {p.name: p for p in
+            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(), TacticianPolicy()]}
 
 
 def make_policy(name):
-    """Fresh instance (reader carries state, so never share)."""
+    """Fresh instance (stateful policies must never be shared)."""
     return {'random': RandomPolicy, 'greedy': GreedyPolicy,
-            'reader': ReaderPolicy}[name]()
+            'reader': ReaderPolicy, 'tactician': TacticianPolicy}[name]()

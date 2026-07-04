@@ -43,43 +43,59 @@ No dependencies. Python 3.8+.
 `policies.py` — swap these to ask different questions:
 
 - **random** — legal-but-thoughtless baseline.
-- **greedy** — always attacks for max expected damage; defends only when it can
-  predict a winning color. No reading, no Axiom exploitation.
-- **reader** — punishes the opponent's most frequent attack color, and aims
-  Axiom's ban at it.
+- **reader** — predicts the opponent's *most-frequent* attack color and counters
+  it. Sounds smart; the tournament shows it's the weakest non-random brain (see
+  below). Kept as a cautionary control.
+- **greedy** — attacks for max expected damage; defends by predicting the foe's
+  *last* color. The strongest of the simple brains.
+- **tactician** — greedy's recency-read and aggression, plus the one upgrade that
+  helped without hurting any deck: valuing Axiom's color ban (and an unpreventable
+  Spark to finish a low foe). The overall strongest brain.
 
-Add your own by implementing three methods (see the module docstring). The
-`reader` is intentionally simple — a level-k or bluff-aware policy is the
-obvious next experiment.
+Add your own by implementing three methods (see the module docstring).
 
 ## Findings (20k duels per cell, seeds fixed)
 
-Win rates for **Frost**:
+A full policy tournament (every brain vs every brain, same deck both sides)
+produced three results, one of which reversed an earlier conclusion.
 
-| Frost \ Steele | random | greedy | reader |
-|----------------|:------:|:------:|:------:|
-| **random**     | 53.9%  | 34.5%  | 56.9%  |
-| **greedy**     | 67.1%  | 38.8%  | 68.4%  |
-| **reader**     | 54.7%  | 64.7%  | 73.4%  |
+1. **Recency beats frequency — decisively.** The `reader` predicts an opponent's
+   *lifetime* most-common color; `greedy` predicts their *last* color. Greedy
+   crushes reader head-to-head: **59/41 in the Frost mirror, 90/10 in the Mire
+   mirror.** Lifetime frequency goes stale; the last card thrown is a far better
+   predictor of the next one. Any real player already knows this — the sim just
+   put a number on it. (An earlier draft of this file called reader the strong
+   brain. It was never tested head-to-head against greedy. It is not.)
 
-Three things jumped out:
+2. **Raw stats win the deck matchup; Axiom narrows but doesn't flip it.** Under
+   the strongest brain (tactician), the deck ranking is **Steele > Frost > Mire**:
 
-1. **The matchup inverts with skill.** Under greedy play, Steele's deck wins the
-   diagonal (60.6%) — his Body 4 / HP 18 win a raw slugfest. Under reader play,
-   Frost wins the diagonal decisively (73.4%). The "better" deck depends entirely
-   on how well it's piloted. That's a feature to protect, not a bug to fix.
+   | | vs Steele | vs Frost | vs Mire |
+   |---|:--:|:--:|:--:|
+   | **Steele** | — | 56.5% | 67.0% |
+   | **Frost**  | 43.5% | — | 67.1% |
+   | **Mire**   | 33.0% | 32.9% | — |
 
-2. **Reading pays, and Axiom is why.** Frost's win rate climbs random→greedy→
-   reader. Steele's deck is 50% Blue; a reader Frost predicts that reliance and
-   points **Axiom**'s ban straight at it. This is the empirical version of the
-   table hunch that Axiom, not Paradox, is the real power card — the sim backs it.
+   Steele's Body 4 / HP 18 beat everyone. Valuing **Axiom** is real and
+   measurable — it wins the Frost mirror 59/41 and lifts Frost's score vs Steele
+   from 38.8% (greedy) to 43.5% (tactician) — but it does **not** overturn
+   Steele's stat advantage. Axiom is an edge, not an "I win" button. *(The earlier
+   "Frost dominates under skill" claim was an artifact of testing with the weak
+   reader brain — corrected here.)*
 
-3. **Initiative is an edge, not a verdict.** Going first wins ~54–59% in
-   Frost-favored cells. Real, worth playing around, not deterministic.
+3. **Anti-read flattening is a trap.** A policy that deliberately varied its own
+   attack colors to be unpredictable *lost* — it only helps a deck whose
+   off-colors are as strong as its main color (Frost), and for stat-skewed or
+   combo decks "unpredictable" just means "playing weak cards." Cut from the
+   tactician. Worth knowing at the table: don't sandbag your best color to be
+   cute unless your other colors are genuinely as threatening.
 
-Caveat: these numbers are only as good as the policies. They compare decks *at a
-given level of play*, and the reader policy is deliberately basic. Treat the
-matrix as "how the decks behave under simple brains," not a final power ranking.
+Initiative is worth ~52–55% under strong play — an edge, not a verdict.
+
+Caveat that cuts the other way now: these are still just four hand-written
+brains. Greedy/tactician are strong but not optimal — a bluff-aware or
+lookahead policy could shift the deck ranking again. Treat the numbers as "how
+the decks behave under the best brain we've written so far."
 
 ## Mire — the Wound-attrition deck (3/3/3)
 
@@ -90,37 +106,36 @@ them in (Press the Wound), while eroding stats for the whole combat (Wither
 −Body, Erode −Soul). Adding it forced the engine to grow real Wound mechanics,
 combat-duration stat loss, initiative shift, and targeting locks.
 
-Win rates (20k duels each):
+Win rates under the strongest brain (tactician, 20k duels each):
 
-| Matchup | greedy vs greedy | reader vs reader |
-|---------|:----------------:|:----------------:|
-| Mire vs Frost  | Frost 55.4% | Frost 54.8% |
-| Mire vs Steele | Steele 67.0% | **50.1% / 49.1% (dead even)** |
-| Mire mirror    | 50/50, **33.4 turns** | 50/50, **9.1 turns** |
+| Matchup | result |
+|---------|:------:|
+| Mire vs Frost  | Frost 67.1% |
+| Mire vs Steele | Steele 67.0% |
+| Mire mirror    | 50/50, ~9 turns |
 
 (Only Wither's Body loss shaves max HP — Body's derived value; Erode drains Soul
 and Sunder drains Mind without touching HP. See the Stat Loss rule.)
 
 What it surfaced:
 
-1. **Attrition needs time it doesn't get.** Mire loses to Frost ~56% at *both*
-   skill levels — its Wound engine wants a long game, and Frost's burst kills it
-   (15 HP) before Wounds pile up. A grinder that can't survive can't grind.
+1. **Attrition needs time it doesn't get.** Under strong play Mire loses ~67% to
+   *both* Frost and Steele — its Wound engine wants a long game, and both decks
+   close the 15-HP grinder before Wounds pile up. A grinder that can't survive
+   can't grind. (Note: against the weak `reader` brain Mire looks competitive —
+   even beating Steele — but that's reader mis-defending, not Mire winning. Under
+   greedy/tactician the illusion evaporates. A good example of why the policy you
+   test with determines the answer you get.)
 
-2. **Reading rescues the Steele matchup.** Under greedy play Steele's fat stats
-   crush Mire 67%; under reader play Mire pulls dead even (50.1%). Wound
-   disruption plus pattern-punishing exactly offsets Steele's HP/Body edge — the
-   same skill-inversion the Frost/Steele pair showed, via a different mechanism.
+2. **Wound payoff is too slow for a duel.** Press the Wound scales with Wounds in
+   the opponent's deck, but seeding enough of them takes more turns than an
+   aggressive opponent grants. The cards are individually fine; the *engine* needs
+   a longer game than PvP provides.
 
-3. **The deck is skill-sensitive in *duration*, not just outcome.** The greedy
-   mirror drags to 37 turns (neither pilot closes — Equal Footing floors and low
-   aggression stall out); the reader mirror ends in 9. A deck whose *game length*
-   triples with pilot skill is a genuine design signal.
-
-Takeaway for the table: Mire is matchup-polarized in PvP — it beats grinders and
-loses to burst. Its real home is PvE, where durable monsters give the Wound
+Takeaway for the table: Mire is bottom-tier in a duel — it loses to burst and to
+raw stats alike. Its real home is PvE, where durable monsters give the Wound
 engine the long game it's built for. That's the sim telling you where the deck
-belongs.
+belongs, not that the deck is weak.
 
 ## The errata queue
 

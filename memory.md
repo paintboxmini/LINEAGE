@@ -11,9 +11,16 @@
 **Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md`, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox). Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.
 
 **Combat simulator** (`combatsimulations/`)
-PvP duel engine, Python, no dependencies. Plays Frost vs Steele thousands of times with pluggable decision policies (random/greedy/reader). Design instrument only — not canon, changes nothing. Two outputs: an errata queue (`rulings-log.md`, also printed each run) and balance stats. Key finding: the Frost/Steele matchup INVERTS with skill — greedy play favors Steele (Body 4/HP 18 slugfest), reader play favors Frost (Axiom punishing Steele's 50%-Blue deck), empirically confirming Axiom > Paradox as the power card. Initiative worth ~55–59%. Extend by adding policies (3 methods) or more decklists.
+PvP duel engine, Python, no dependencies. Roster: frost, steele, mire (pluggable via `ROSTER` in content.py; run.py takes deckA polA deckB polB). Four brains: random/reader/greedy/tactician. Design instrument only — not canon. Outputs: errata queue (`rulings-log.md`, printed each run) + balance stats.
 
-Third deck added: `mire` — a Wound-attrition control build (Balance/Wither/Mockery, Rend/Equal Footing/Press the Wound, Partition/Taint/Erode, 3/3/3). Forced the engine to grow Wound status cards, combat-duration stat loss, initiative shift, targeting locks. Finding: Mire is matchup-polarized — loses to Frost's burst ~56% at all skill levels (15 HP dies before Wounds accumulate), pulls dead even vs Steele under reader play. Its home is PvE, where durable enemies give the Wound engine time. Roster is now pluggable (`ROSTER` in content.py); run.py takes deckA polA deckB polB.
+Corrected findings (an earlier draft tested with the weak `reader` brain and wrongly concluded Frost dominates):
+- **Recency beats frequency.** greedy (predicts foe's LAST color) crushes reader (predicts MOST-COMMON color) head to head — 59/41 Frost mirror, 90/10 Mire mirror. reader is the weakest non-random brain.
+- **Deck ranking under strongest brain (tactician): Steele > Frost > Mire.** Steele's Body 4/HP 18 raw stats win (~57% vs Frost, 67% vs Mire).
+- **Axiom is a real edge, not an "I win."** Valuing Axiom wins the Frost mirror 59% and lifts Frost vs Steele 38.8%→43.5%, but does NOT flip Steele's stat advantage. (Earlier "Axiom > Paradox, Frost dominates" was overstated — Axiom helps, stats win.)
+- **Anti-read color flattening FAILS** — only helps a deck whose off-colors are as strong as its main color; cut from tactician.
+- Initiative ~52–55% under strong play.
+- **Mire is bottom-tier in PvP** (loses ~67% to both Frost and Steele; 15 HP dies before Wounds accumulate). Home is PvE, where durable enemies give the Wound engine its long game.
+tactician = current best brain (greedy recency-read + aggression + Axiom/Spark weighting).
 
 ---
 
