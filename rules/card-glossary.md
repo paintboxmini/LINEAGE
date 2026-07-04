@@ -7,13 +7,13 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 ## Keywords
 
 **Counter Attack**
-Deal this card's Attack damage back to the attacker. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
+Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
 **Debuff**
-Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Wound), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
+Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
 
 **Obscure**
-Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck.
+Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
 **Advantage (Damage)**
 Roll twice for your damage die and take the higher result. This applies to combat damage only. For Advantage on skill checks and saves, see `rules/resolution.md`.
@@ -39,7 +39,7 @@ Evade stacks. Each stack protects against one attack. Only one Evade triggers pe
 Remove a card from play until end of combat. It does not go to the discard pile. Unless the card specifies otherwise, exiled cards are not returned.
 
 **Expose [Color]**
-Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the card's effect. The target does not reveal their hand — selection is blind.
+Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
 Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom. The target cuts into the new position; everyone seated between the old and new position shifts one seat over to make room.
@@ -77,7 +77,7 @@ Look at the top X cards of a deck. If no target is specified, this applies to yo
 The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
 
 **Thorns X**
-Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves.
+Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **Ward**
 Prevent the next debuff applied to you. Expires on use.
@@ -104,7 +104,7 @@ At the end of your turn, discard this card.
 Cannot be played.
 When discarded, take 2 damage.
 At the end of your turn, you may instead discard this card and apply Initiative Shift -1 to yourself.
-Use your action to remove all Exhaust cards from your hand.
+Use your action to remove all Exhaust cards from your hand — removal this way is exile, not a discard, so it deals no damage.
 All Exhaust cards are removed from your deck at short rest.
 
 ---
