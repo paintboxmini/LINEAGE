@@ -2,7 +2,7 @@
 
 Use this prompt to generate new 9-card enemy sets. Read the target creature's bestiary entry and relevant location files before running.
 
-**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Delete it before committing. Nothing from the scratch file goes into the content file.
+**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Nothing from the scratch file goes into the content file.
 
 ---
 
