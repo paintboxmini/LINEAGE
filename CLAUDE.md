@@ -13,10 +13,11 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | Directory | Contents |
 |-----------|----------|
 | `cards/` | Card set files — core (blue-mind, red-body, green-soul) and creature/location signature sets |
-| `rules/` | Core rules quick reference |
+| `rules/` | Core rules, mechanics, and the keyword glossary |
 | `locations/` | Location overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
 | `bestiary/` | Creature stat blocks, abilities, loot, card references |
+| `characters/` | Named NPC profiles |
 | `items/` | Consumables and equipment |
 | `mythology/` | Lore and creation myths |
 | `world/` | Geography, factions, organizations |
@@ -24,7 +25,9 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `experimental/` | Sandbox — lower stakes, free to iterate |
 | `agent-tools/` | Drop-in tools for common design tasks |
 | `printing/` | Print-ready HTML card sheets and the generator script |
-| `decks/` | Campaign decks — Oracle pool, player decks (by character name), major NPCs |
+| `testcampaigndecks/` | This campaign's decks only — player decks (by character name), the Oracle pool, campaign-specific NPCs. General NPC/monster decks are not stored here; they're assembled per the enemy deck convention in `rules/cards.md` |
+| `playtesting/` | Playtest notes, feedback, and session logs |
+| `archives/` | Reserved for deprecated canon content. Currently unused — cut draft cards live in `experimental/archives/` instead |
 
 ## File Format Conventions
 

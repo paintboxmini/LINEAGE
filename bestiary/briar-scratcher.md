@@ -28,10 +28,10 @@ Run 2–3 Scratchers. They don't coordinate — they happen simultaneously.
 
 After each attack a Scratcher repositions. They don't hold ground. Their goal is to apply Wounds and disengage before the party organizes.
 
-**Rounds 1–2:** Light damage. Wounds enter the deck.
-**Round 3+:** Players start drawing Wounds. Hand quality degrades. The lesson lands.
+**Cycles 1–2:** Light damage. Wounds enter the deck.
+**Cycle 3+:** Players start drawing Wounds. Hand quality degrades. The lesson lands.
 
-Keep this short. 2–3 rounds. The point is the marked decks going into Briarwatch, not the Scratchers themselves.
+Keep this short. 2–3 cycles. The point is the marked decks going into Briarwatch, not the Scratchers themselves.
 
 ---
 

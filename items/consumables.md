@@ -32,7 +32,7 @@ Use (1): Target must follow a simple command for 1 turn.
 
 **UNIVERSAL PIN**
 *Consumable — Does not require an action to use.*
-Use (1): Fix a target in place. They cannot be moved this round.
+Use (1): Fix a target in place. They cannot be moved until their next turn.
 
 ---
 

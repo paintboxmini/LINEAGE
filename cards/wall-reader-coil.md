@@ -47,7 +47,7 @@ Range: Both
 **VIBRATION TRACE**
 BLUE — MIND — COIL
 Attack: Mind + d2
-Effect: If target changed position this round, deal +2 damage and apply Staggered.
+Effect: If target changed position since their last turn, deal +2 damage and apply Staggered.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Movement is a confession."*

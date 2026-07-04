@@ -17,7 +17,7 @@ Range: Melee
 **CHARGE**
 RED — BODY — COIL
 Attack: Body + d6
-Effect: If you were in Backline at the start of this round, deal +2 damage and pull target to Frontline.
+Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
 Defensive Bonus: Gain Resist.
 Range: Both
 *"The corridor is not a disadvantage. The corridor is the weapon."*

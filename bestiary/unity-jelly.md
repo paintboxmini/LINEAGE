@@ -1,6 +1,6 @@
 # Unity Jelly
 
-A comb jelly. Translucent, bioluminescent, roughly fist-sized. Found in coastal and estuarine waters — common enough where the currents run warm, rare enough that harvesting two live specimens at once takes patience.
+A comb jelly. Translucent, bioluminescent, roughly fist-sized. Found in lakeshore and river-mouth waters — common enough where the currents run warm, rare enough that harvesting two live specimens at once takes patience.
 
 Individually, they are unremarkable. When two Unity Jellies make contact in water, they fuse — bodies merging over the course of a few minutes into a single organism with combined luminescence and a new chemical profile in the flesh. The fused form does not survive long. The merge is terminal for both.
 
@@ -18,9 +18,9 @@ Keeping two specimens alive and separate during transport requires individual se
 
 ## Harvesting
 
-Net collection from shallow coastal water. The challenge is keeping two live specimens alive and separated long enough to reach the kitchen. Standard sea transport puts them in proximity; dedicated containers are required.
+Net collection from shallow lake water. The challenge is keeping two live specimens alive and separated long enough to reach the kitchen. Standard river transport puts them in proximity; dedicated containers are required.
 
-Senshi sources his through a coastal supplier who has worked out the containment method. He does not explain the containment method to anyone who asks.
+Senshi sources his through a lakeshore supplier who has worked out the containment method. He does not explain the containment method to anyone who asks.
 
 ---
 

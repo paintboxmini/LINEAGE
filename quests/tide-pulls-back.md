@@ -59,7 +59,7 @@ At some point during this scene or shortly after, Steve does something notably f
 
 ## Escalation — The Dock
 
-That night or the following morning: unusual activity at the docks. **The Void Runners** — a smuggling crew — are moving cargo under cover. Investigation reveals resonant items in the shipment, including pieces of documentation pointing to The Final Current as the destination.
+That night or the following morning: unusual activity at the river docks — Glasslight's small quay on the river that runs down through the cliffs to meet the grey water. Nothing sails past that meeting point; the quay is the end of the line, which is exactly why cargo nobody wants inspected ends its journey here. **The Void Runners** — a smuggling crew — are moving cargo under cover. Investigation reveals resonant items in the shipment, including pieces of documentation pointing to The Final Current as the destination.
 
 **The Void Runners** use stolen resonant items as weapons. Some of their crew are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read.
 

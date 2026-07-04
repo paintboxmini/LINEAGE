@@ -8,7 +8,7 @@ Small and quick. Found in packs. Crystal knives and arrowheads worked from harve
 
 **Passive — Scatter:** When a Chitterer takes damage, it and all Chitterers in the same passage gain Evade until the start of their next turn.
 
-**Passive — Noise:** If a Chitterer is attacked and survives the round, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per round regardless of how many Chitterers are attacked.
+**Passive — Noise:** If a Chitterer is attacked and survives, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per cycle regardless of how many Chitterers are attacked.
 
 ---
 

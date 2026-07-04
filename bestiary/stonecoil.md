@@ -42,7 +42,7 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 Stonecoils do not rush. They occupy choke points and hold them.
 
-If the party moves — uses a positional card, changes Frontline/Backline — they trigger STILL WATER's damage window. If a party member attacks and then pulls back, they trigger READ THE STRIKE next round. The creature rewards players who stop moving and commit.
+If the party moves — uses a positional card, changes Frontline/Backline — they trigger STILL WATER's damage window. If a party member attacks and then pulls back, they trigger READ THE STRIKE on their next turn. The creature rewards players who stop moving and commit.
 
 **Do not run.** The Borrowers know this. Players will learn it.
 

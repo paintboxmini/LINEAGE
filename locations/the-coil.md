@@ -1,6 +1,6 @@
 # The Coil
 
-*The island doesn't appear on charts. The Night Ferryman knows when to look for it.*
+*An island in the deep lake east of Vulture's Nest. It doesn't appear on charts. The Night Ferryman knows when to look for it.*
 
 ---
 
@@ -14,7 +14,7 @@ The walls inside are taller than the island looks from the water. Dry stone, clo
 
 ## Appearance Conditions
 
-The island surfaces on a condition the Night Ferryman knows and has not explained. It does not stay. How long it remains above water: he knows this too. He has never missed it.
+The island surfaces from the lake on a condition the Night Ferryman knows and has not explained. It does not stay. How long it remains above water: he knows this too. He has never missed it. The lake is deep enough that nobody has an account of where the island goes when it isn't there.
 
 *Develop the appearance condition when it becomes relevant to the story.*
 

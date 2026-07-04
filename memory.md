@@ -6,6 +6,12 @@
 
 ---
 
+## Campaign Status
+
+**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists not yet recorded — `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md` have placeholders waiting. (Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.)
+
+---
+
 ## Active Pending Threads
 
 **SOFT STEP** (Borrower card, `experimental/archives/cut-cards.md`)
@@ -54,7 +60,7 @@ His official animal title is the Boar. Informally called the Pig — never to hi
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
 **Canille** (`experimental/canille.md`)
-Island village in the Unheld, northeast of Vulture's Nest. Research colony founded by scientists attempting to create sentient life. Three generations of scientists and cubs. Cubs are quadrupedal, pug-faced, ~120lbs, fully furred. White smiling masks on hooks by every door — ceremony, not disguise. Key characters: Hess (oldest founder, knows the answer, won't say it), Cob (third-gen cub, asks the questions nobody will answer). Not yet canon.
+Island village in a lake northeast of Vulture's Nest. Research colony founded by scientists attempting to create sentient life. Three generations of scientists and cubs. Cubs are quadrupedal, pug-faced, ~120lbs, fully furred. White smiling masks on hooks by every door — ceremony, not disguise. Key characters: Hess (oldest founder, knows the answer, won't say it), Cob (third-gen cub, asks the questions nobody will answer). Not yet canon.
 
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) is an alternate encounter for parties exploring off the road near Briarwatch.
@@ -83,6 +89,9 @@ Two story arcs in development. Tide Pulls Back adventure written — four encoun
 
 ## Key Design Decisions (This Project)
 
+**The Unheld is a hard edge; sailing lives on rivers**
+Nothing sails or fishes the Unheld Ocean — it is the true edge of reality, not a soft boundary. No islands exist in it. The only exceptions: Glasslight light-cartographers map its edge (never the water), and the People of Promise touch it deliberately (ritual bathing = transgression as worship). Ghost stories preserve the memory of ships that once went past the coast; Corvel is living proof. The continent is laced with interconnected rivers and lakes draining toward the Unheld — Vulture's Nest is the heart of the river web. Tides are an Unheld phenomenon that breathes up the rivers (when the grey water pulls back, rivers drop inland — this keeps the Tide Pull and the Glasslight tide framework working). **The coastline is a hard threshold: unheldness does not cross it, by flowing or by being carried — inland water is mundane, only the tidal motion travels upstream.** This is why Promise bathing must happen at the coast, and why Corvel's vials are ordinary water (what they carry is Pneum's diseases, not unheldness — see `experimental/pneum.md`). The Island in a Ship is unchanged: the Oracle's island is now the only location in the setting not on the continent. Former Unheld islands (Canille, Pneum) relocated to lakes. Eclipsera's Temple of the Sea renamed Temple of the Rivers.
+
 **Soul = movement speed**
 Soul governs initiative AND movement speed. High Soul characters move faster and act first. This is why flee/chase uses Soul, not Body. Body is impact, not velocity. Important for future card and mechanic design — don't use Body for movement checks.
 
@@ -91,6 +100,9 @@ No distances in play. "In reach / close / far" is the language. Combat uses abst
 
 **Quick reference is `rules/core-rules.md`**
 Canonical rules quick reference. Covers stats, DC table, combat actions, attack resolution, card anatomy, positioning, collapse, resting, cover, stealth/ambush, chase.
+
+**Initiative is a continuous wheel**
+Turn order is a closed loop, not a list that resets each cycle — there are no rounds (see `rules/combat.md`). Seat count equals combatant count; shifts wrap at the ends. Initiative Shift X (`rules/card-glossary.md`) is the only way card effects move someone in the order — it guarantees a positive shift never delays a target's next turn and a negative shift never accelerates it, and large shifts (|X| ≥ seat count) decompose into full revolutions plus a remainder. Slipstream and Synchrony (`cards/blue-mind.md`, `cards/green-soul.md`) are the first cards to treat wheel position itself as a build-around.
 
 
 
@@ -105,6 +117,9 @@ Bearer of the Seat of Love/Binding. Bound beneath Eclipsera. The city's unity ru
 
 **Animal titles = scar tissue**
 The council's animal symbols (Lion, Panther, Bear, Fox, Owl, Pig, Elephant) are not heraldic. They're the shape the Seat left on each person when the attempt failed.
+
+**Deck-building conventions** (canonical home: `rules/cards.md`, Deck Building)
+Player decks: color counts match stats (Mind 4/Body 2/Soul 3 → 4B/2R/3G) — heuristic, not law. Enemy decks: 3 themed signature cards + 4–7 core cards (7–10 total), leaning toward the creature's stat spread. Enemies draw to hand size like players. Opening hands: everyone draws to hand size when initiative is rolled (added to `rules/combat.md`). Worked combat: `rules/combat-example.md` — includes rulings on 4 edge cases, all resolved by Drew. Tie-counts-as-successful-defense is ruled per-card, not universally: WITNESS says so on the card; new cards referencing "successful defense" must carry their own clarifying line until/unless the convention is promoted to a universal rule.
 
 **Card system: signature sets**
 Creature combat decks are filled from core cards. Signature cards are Oracle rewards. Drew determines how many land in a given set after reviewing the full 9. The standard loop: draft 9, red team all 9, fix/cut/replace until all pass, present all 9, Drew decides placement.
@@ -145,7 +160,7 @@ Current keyword list in `experimental/README.md`.
 - `locations/roadhouse.md` — Government inn between Vulture's Nest and Briarwatch. Two Regency guards on rotation. Barracks: weapon rack, chest (d6+2 silver, Barbed Wrap, posting order). Posting order → Voss thread.
 - `locations/briarwoods.md` — Travel region north of Vulture's Nest. Surrounds Roadhouse and Briarwatch. Day 1 and Day 2 routing. Jackrabbits and Scratchers.
 - `locations/briarwatch.md` — Village location, leads into Hollow Below Briarwatch.
-- `locations/the-coil.md` — Labyrinth island off Vulture's Nest coast. Surfaces on condition only the Night Ferryman knows. Hidden wall-following rule; breaking it raises pressure track and alerts minotaurs. Center: open/TBD. Minotaur stat block pending.
+- `locations/the-coil.md` — Labyrinth island in the deep lake east of Vulture's Nest. Surfaces on condition only the Night Ferryman knows. Hidden wall-following rule; breaking it raises pressure track and alerts minotaurs. Center: open/TBD. Minotaur stat block pending.
 
 **Creatures**
 - `bestiary/briar-scratcher.md` — Mind 1/Body 1/Soul 2, HP 9. Road encounter teaching Wounds as deck pressure. Cards: `cards/briar-scratcher.md`.

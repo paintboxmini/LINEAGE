@@ -77,8 +77,8 @@ Range: Ranged
 **THERMAL VECTOR**
 BLUE — MIND — ASHFALL
 Attack: Mind + d2
-Effect: If the target attacked the Tithe Engine last round, deal +2 damage.
-Defensive Bonus: Bonded — if the Engine wins a reveal this round, gain Resist. (See glossary.)
+Effect: If the target attacked the Tithe Engine on their last turn, deal +2 damage.
+Defensive Bonus: Bonded — if the Engine wins a reveal before its next turn, gain Resist. (See glossary.)
 Range: Ranged
 *"The drones punish disobedience."*
 
@@ -92,5 +92,5 @@ Range: Ranged
 Status — Colorless
 Cannot be played. Use your action to remove all Exhaust cards from your hand. Removed from deck at short rest.
 When this card is discarded, take 2 damage.
-At the end of your turn, you may discard this card and lose 1 initiative next round.
+At the end of your turn, you may discard this card and apply Initiative Shift -1 to yourself.
 *"Ash in the lungs. Heat in the blood."*

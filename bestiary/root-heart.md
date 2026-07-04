@@ -40,7 +40,7 @@ It is unclear whether this thing feeds the forest or feeds on it.
 
 **Forest Memory**
 - Attack: Mind + d4
-- Effect: Name a card color — next round, anyone who plays that color triggers a heal of 1 for the Root Heart.
+- Effect: Name a card color — until the Root Heart's next turn, anyone who plays that color triggers a heal of 1 for the Root Heart.
 - Defensive Bonus: Return 1 card from discard pile to the top of the deck.
 - Range: Both
 - *"The Weald remembers every knot ever tied, every path ever walked."*

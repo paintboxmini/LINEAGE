@@ -75,8 +75,8 @@ Players cannot tell which type has been drawn until it triggers. Attack Counters
 
 **Mid-combat:** Play Ward Glyphs to force color avoidance. Play Mirror Glyphs when the party commits to a color they think is protected — they'll deal damage but lose their effects, which is frequently the worse outcome.
 
-**Closing:** Once any glyph has triggered, SIGNATURE THRUST becomes available. Use it on a round where the party has burned resources on glyph management. Move to Frontline with LUNGE first.
+**Closing:** Once any glyph has triggered, SIGNATURE THRUST becomes available. Use it on a turn where the party has burned resources on glyph management. Move to Frontline with LUNGE first.
 
-**FEINT** is best saved for a round where a party member has telegraphed their card choice. The DB — seeing their card and swapping yours — is a complete information advantage for one moment. Use it to close a round Orin would otherwise lose.
+**FEINT's** Defensive Bonus doesn't win the current exchange — Predictable loads the attacker's next reveal instead. Apply it on a turn you expect to keep facing the same attacker, then let their following reveal hand Orin the win.
 
 **Orin does not explain the glyphs.** If asked, Orin says they are stabilization marks. This is technically accurate.

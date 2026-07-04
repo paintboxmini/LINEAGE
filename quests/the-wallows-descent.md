@@ -131,7 +131,7 @@ Four feet across. Depth unknown. Crossing requires extending the body fully — 
 **Crossing check:** DC 13 Body/Sense.
 - **Success:** across cleanly.
 - **Failure by 1–4:** Staggered at the gap. Vibration event — summon 1d4 Descended from the back section.
-- **Failure by 5+:** Partially into the fissure. Staggered, one action to pull free. Significant vibration — summon 1d4 Descended immediately and again next round.
+- **Failure by 5+:** Partially into the fissure. Staggered, one action to pull free. Significant vibration — summon 1d4 Descended immediately and again on the next turn.
 
 Prisoners cross this multiple times per shift. The ones still alive have developed technique.
 

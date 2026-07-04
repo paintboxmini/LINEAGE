@@ -1,6 +1,6 @@
 # Combat
 
-Combat in Tales Untold is fast, positional, and decisive. Rounds are short. Mistakes compound. The goal is not to outlast — it's to outread.
+Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
 ---
 
@@ -18,11 +18,11 @@ To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul 
 
 When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.
 
-**Set up:** Estimate how many rounds of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
+**Set up:** Estimate how many exchanges of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
 
 *Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.*
 
-**Each round (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
+**Each exchange (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
 
 **Caught** — The pursuer's marker reaches the fleeing party's marker.
 
@@ -43,11 +43,15 @@ Turn order resolves highest to lowest.
 - If still tied between players, they choose order among themselves.
 - If still tied between a player and an enemy, the player goes first.
 
-Card effects cannot modify initiative unless the card explicitly states otherwise.
+There are no rounds. Initiative is a continuous wheel — once the last position has acted, the order cycles back to 1st and keeps going. Card effects referencing timing anchor to a combatant's own next turn, not a table-wide round.
+
+Card effects cannot modify initiative unless the card explicitly states otherwise. See **Initiative Shift X** in `rules/card-glossary.md`.
 
 ---
 
 ## Turn Structure
+
+When initiative is rolled, every combatant draws to their maximum hand size — nobody enters the wheel empty-handed.
 
 At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.
 
@@ -79,7 +83,7 @@ Green (Soul)  beats  Blue  (Mind)
 
 **Attacker wins** → deal damage + apply the card's Effect  
 **Defender wins** → no damage + defender triggers Defensive Bonus  
-**Tie** → attacker deals full damage + Effect triggers first, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
+**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
 
 ---
 

@@ -5,8 +5,8 @@
 **INTERRUPT**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Target loses their turn this round, you can't defend until your next turn
-Defensive Bonus: You act first next round
+Effect: Target loses their next turn, you can't defend until your next turn
+Defensive Bonus: Apply Initiative Shift +3 to yourself
 Range: Both
 *"The best move happens before theirs."*
 
@@ -45,7 +45,7 @@ Range: Ranged
 **PREDICT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender can't use items next round
+Effect: Defender can't use items before their next turn
 Defensive Bonus: Scry 1 card of the attacker's deck
 Range: Melee
 *"Tomorrow's victory begins with today's preparation."*
@@ -66,7 +66,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Negate the defender's next item use
-Defensive Bonus: Attacker must attack you next round if able
+Defensive Bonus: Attacker must attack you on their next turn if able
 Range: Both
 *"Attention divided is power diminished."*
 
@@ -125,7 +125,7 @@ Range: Melee
 **ANTICIPATE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Each time you're attacked next round, Scry 2
+Effect: Each time you're attacked before your next turn, Scry 2
 Defensive Bonus: Target's next attack has -3 damage
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
@@ -136,7 +136,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d2
 Effect: Attack deals half damage (rounded up) to an additional enemy
-Defensive Bonus: Enemy must target you again next round if possible
+Defensive Bonus: Enemy must target you again on their next turn if possible
 Range: Both
 *"Every echo remembers what the first sound forgot."*
 
@@ -166,7 +166,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d2
 Effect: Scry 2. If both cards are the same color, deal +4 damage
-Defensive Bonus: Choose a color. That color deals -2 damage to your party next round
+Defensive Bonus: Choose a color. That color deals -2 damage to your party until your next turn
 Range: Both
 *"Truth is a light, not a weapon."*
 
@@ -195,7 +195,7 @@ Range: Both
 **UNNAME**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Target cannot trigger defensive bonuses this round
+Effect: Target cannot trigger defensive bonuses until their next turn
 Defensive Bonus: Opponent discards 1 card at random
 Range: Both
 *"What cannot be spoken cannot hold its shape."*
@@ -215,7 +215,7 @@ Range: Both
 **AXIOM**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Name a color. Defender cannot play that color next turn
+Effect: Name a color. The defender cannot play that color on their next reveal
 Defensive Bonus: Scry 2 cards of attacker's deck
 Range: Both
 *"The wise divide heaven into knowable directions."*
@@ -300,3 +300,13 @@ Effect: Scry 2.
 Defensive Bonus: Attacker gains Staggered.
 Range: Both
 *"He already knew what you'd reach for."*
+
+---
+
+**SLIPSTREAM**
+BLUE — MIND
+Attack: Mind + d2
+Effect: Until the end of combat, whenever an ally passes through your position in the initiative order, draw a card. Ends if you die or leave combat.
+Defensive Bonus: Scry 1.
+Range: Both
+*"Stay close. The gap they leave behind is yours to fill."*

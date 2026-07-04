@@ -75,7 +75,7 @@ Range: Melee
 **WITNESS**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Next ally to successfully defend this round heals 3 HP
+Effect: Next ally to successfully defend before your next turn heals 3 HP. A tie counts as a successful defense.
 Defensive Bonus: Target ally heals 3 HP
 Range: Melee
 *"What is witnessed is what endures."*
@@ -85,8 +85,8 @@ Range: Melee
 **URGENCY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target ally goes next this round
-Defensive Bonus: You go first next round
+Effect: Apply Initiative Shift +3 to target ally
+Defensive Bonus: Apply Initiative Shift +3 to yourself
 Range: Melee
 *"The tide waits for those who know when to flow."*
 
@@ -95,8 +95,8 @@ Range: Melee
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Defender goes last next round
-Defensive Bonus: Attacker goes last next round
+Effect: Apply Initiative Shift -3 to defender
+Defensive Bonus: Apply Initiative Shift -3 to attacker
 Range: Both
 *"Patience places the final stone."*
 
@@ -105,8 +105,8 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: When you are attacked next round, your party may scry 1
-Defensive Bonus: You and your allies deal +2 damage this round
+Effect: If you are attacked before your next turn, your party may scry 1
+Defensive Bonus: You and your allies deal +2 damage until your next turn
 Range: Both
 *"Shared vision illuminates the path forward."*
 
@@ -115,8 +115,8 @@ Range: Both
 **ROUTE-SONG**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target ally goes first next round
-Defensive Bonus: Attacker goes last next round
+Effect: Apply Initiative Shift +3 to target ally
+Defensive Bonus: Apply Initiative Shift -3 to attacker
 Range: Ranged
 *"Hesitation in the face of unity."*
 
@@ -165,7 +165,7 @@ Range: Both
 **CONDUCT**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Ally gets +2 to attack damage this round
+Effect: Ally gets +2 to attack damage on their next attack
 Defensive Bonus: Target ally draws 1 card
 Range: Both
 *"Strength multiplies when it finds its rhythm."*
@@ -285,7 +285,7 @@ Range: Both
 **MOCKERY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target drops 2 positions in Initiative order
+Effect: Apply Initiative Shift -2 to target
 Defensive Bonus: Target must attack you if able on their next turn
 Range: Both
 *"You say the one thing they cannot ignore."*
@@ -319,3 +319,13 @@ Effect: Scry 2.
 Defensive Bonus: Attacker gains Blind.
 Range: Both
 *"You came in loud. You'll leave in the dark."*
+
+---
+
+**SYNCHRONY**
+GREEN — SOUL
+Attack: Soul + d2
+Effect: Until the end of combat, allies next to you in the initiative order heal 1 HP at the start of their turns. Whenever an ally heals this way, you heal 1 HP as well. Ends if you die or leave combat.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Stand where they stand. What heals them, heals you."*

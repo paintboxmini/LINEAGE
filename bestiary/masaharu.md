@@ -22,7 +22,7 @@ The boomstick is custom — longer barrel than it needs to be, adjustment rings 
 
 ## Behavior
 
-Patient. Reads before he acts. Will let a round go by gathering information rather than waste a shot. He knows when you've telegraphed a move and he files it.
+Patient. Reads before he acts. Will let a cycle go by gathering information rather than waste a shot. He knows when you've telegraphed a move and he files it.
 
 Not cruel. Not interested in pain. Interested in resolution.
 
@@ -38,7 +38,7 @@ While Loaded, all his attacks deal +d6 damage.
 
 After any attack — win or lose the reveal — he becomes Unloaded and loses the +d6 bonus until he Reloads.
 
-**Reload:** Costs his full action. Or — free reload triggers automatically when he Scrys 3 or more cards total in a single round (accumulated across all card effects that round). Or — a card effect says "Reload."
+**Reload:** Costs his full action. Or — free reload triggers automatically when he Scrys 3 or more cards total in a single cycle (accumulated across all card effects that cycle). Or — a card effect says "Reload."
 
 ---
 
@@ -50,7 +50,7 @@ High Mind. Low Body. Fragile, precise, dangerous at range.
 - Builds toward a loaded OPEN FIRE through Scry chains.
 - Does not rush. Does not overcommit.
 
-He is most dangerous when he has had one full round to read the party.
+He is most dangerous when he has had one full cycle to read the party.
 
 ---
 
@@ -72,6 +72,6 @@ He is most dangerous when he has had one full round to read the party.
 
 *Green — Soul*
 - DEAD RECKONING — Scry 2; Defensive: Blind on attacker
-- DELAY — Defender goes last next round; Defensive: Attacker goes last next round
+- DELAY — Apply Initiative Shift -3 to defender; Defensive: Apply Initiative Shift -3 to attacker
 - SCRIPTURE OF ECHOES — Both discard 1; heal 4 if different colors; Defensive: ally heals 4
 - READ — Defender reveals hand; Defensive: Name color, discard matching card from attacker's hand

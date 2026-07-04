@@ -56,7 +56,7 @@ Green (Soul) beats  Blue  (Mind)
 
 **Attacker wins** → damage + Effect  
 **Defender wins** → no damage + Defensive Bonus  
-**Tie** → attacker deals damage + Effect first, then Defensive Bonus triggers. If the Effect cancels the Defensive Bonus, Defensive Bonus does not trigger.
+**Tie** → no damage. Attacker's Effect still triggers, then Defensive Bonus triggers. If the Effect cancels the Defensive Bonus, Defensive Bonus does not trigger.
 
 ---
 
@@ -135,7 +135,7 @@ Soul check vs DC = 10 + highest enemy Soul (GM rolls for that creature). On succ
 
 ## Chase
 
-Two-marker track. Fleeing party starts at a position equal to their head start in rounds; pursuer starts at 0. Standard track is 5 steps past the fleeing party's start — extend for larger gaps. Each round: contested Soul (2d10 + Soul), winner advances 1 step. Caught = pursuer reaches them. Escaped = fleeing party reaches the end of the track.
+Two-marker track. Fleeing party starts at a position equal to their head start in exchanges; pursuer starts at 0. Standard track is 5 steps past the fleeing party's start — extend for larger gaps. Each exchange: contested Soul (2d10 + Soul), winner advances 1 step. Caught = pursuer reaches them. Escaped = fleeing party reaches the end of the track.
 
 Discard a card whose name fits → Advantage.
 

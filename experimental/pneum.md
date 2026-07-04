@@ -2,7 +2,7 @@
 
 *Pronounced: new'm*
 
-An island in the Unheld, northeast of Vulture's Nest. Part of a loose People of Promise island group. This subgroup moved here to practice their beliefs in peace.
+A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 
 ---
 
@@ -40,7 +40,7 @@ The People of Promise interpretation: Wild Growth is the Unheld asserting itself
 
 ## Corvel — The Vulture's Nest Thread
 
-Corvel runs a stall at Vulture's Nest selling small vials of grey water. The water is Unheld-touched and causes random illness on contact. He does not disclose this. From his perspective, he is offering communion. He genuinely does not understand the problem with this framing.
+Corvel runs a stall at Vulture's Nest selling small vials of grey water. The water was drawn at the coast, but unheldness does not cross the coastline — by the time a vial reaches the Nest, the water in it is ordinary. What isn't ordinary is what it picked up on the way: the vials are filled aboard Pneum's ritual barges, by hands belonging to a community that collects diseases as worship. Contact causes random illness. Corvel does not disclose this — and does not distinguish it from the water itself. From his perspective, the illness *is* the communion, arriving as it always does: through the body. He genuinely does not understand the problem with this framing.
 
 He was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
 

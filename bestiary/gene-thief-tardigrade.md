@@ -54,8 +54,8 @@ Starting absorptions: Blue active (Evade already running). Absorbed weapon knowl
 
 ---
 
-**Coastal Tardigrade**
-Consumed: fish, crabs, sea spirits.
+**Lakeshore Tardigrade**
+Consumed: fish, crabs, lake spirits.
 Starting absorptions: Red active (Thorns 2 already running from crab-shell integration). Armour 1 from shell plating. Water movement: no penalty in aquatic or wet terrain.
 
 *Suggested flavour:* iridescent sheen. Shell-like plating visible along the dorsal surface. Moves faster near water.
@@ -66,7 +66,7 @@ Starting absorptions: Red active (Thorns 2 already running from crab-shell integ
 
 The Genetic Absorption mechanic rewards parties that pay attention. A party that recognizes the pattern early and switches damage colors deliberately will have a different fight than one that doesn't.
 
-The Dungeon Tardigrade is the most dangerous against experienced parties — it's been watching adventurers long enough to know what they do. The Forest variant is the most likely to be encountered in the wild. The Coastal variant is the most physically durable.
+The Dungeon Tardigrade is the most dangerous against experienced parties — it's been watching adventurers long enough to know what they do. The Forest variant is the most likely to be encountered in the wild. The Lakeshore variant is the most physically durable.
 
 The Adaptation Core is visible. Players who ask what they're looking at can be told: *something that used to be other things.*
 

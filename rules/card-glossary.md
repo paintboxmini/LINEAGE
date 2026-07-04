@@ -41,8 +41,22 @@ Remove a card from play until end of combat. It does not go to the discard pile.
 **Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the card's effect. The target does not reveal their hand — selection is blind.
 
+**Initiative Shift X**
+Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom. The target cuts into the new position; everyone seated between the old and new position shifts one seat over to make room.
+
+The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
+
+A positive shift can never delay the target's next turn; a negative shift can never accelerate it. If the repositioning above would violate that, correct it directly: a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle. A negative shift instead skips the target's turn this cycle; they settle into the new position starting next cycle.
+
+For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution. Then resolve the remaining positional shift normally, including its own correction above if it applies.
+
+To check at the table: see whether the shift's path passes through the position currently taking its turn — landing exactly on it counts as passing through. If it doesn't, no violation is possible — the target simply takes up the new position, done. If it does, apply the correction above.
+
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
+
+**Predictable**
+The next time you would reveal a card for RPS resolution, the opponent may look at it before choosing theirs. Expires on use.
 
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
@@ -89,7 +103,7 @@ At the end of your turn, discard this card.
 *Status — Colorless*
 Cannot be played.
 When discarded, take 2 damage.
-At the end of your turn, you may instead discard this card and permanently lose 1 position in the initiative order for the rest of combat.
+At the end of your turn, you may instead discard this card and apply Initiative Shift -1 to yourself.
 Use your action to remove all Exhaust cards from your hand.
 All Exhaust cards are removed from your deck at short rest.
 

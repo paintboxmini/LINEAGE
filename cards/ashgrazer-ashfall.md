@@ -32,7 +32,7 @@ Range: Melee
 BLUE — MIND — ASHFALL
 Attack: Mind + d2
 Effect: Choose a player. Reveal the top 2 cards of their deck. If either is Exhaust, discard both and deal 3 damage.
-Defensive Bonus: Coordinate — if a Packgrazer wins its reveal this round, the Alpha gains Ward.
+Defensive Bonus: Coordinate — if a Packgrazer wins its reveal before the Alpha's next turn, the Alpha gains Ward.
 Range: Ranged
 *"It knows where you're going before you do."*
 
@@ -55,7 +55,7 @@ Range: Melee
 **FEEDING FRENZY**
 GREEN — SOUL — ASHFALL
 Attack: Soul + d2
-Effect: If any opponent discards a card this round, this attack deals +3 damage until end of round.
+Effect: If any opponent discarded a card since your last turn, this attack deals +3 damage until your next turn.
 Defensive Bonus: Swarm — cannot be targeted if another Packgrazer is in Frontline.
 Range: Melee
 *"The discard is the wound. The Pack finds wounds."*
