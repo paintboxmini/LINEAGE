@@ -91,7 +91,13 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-At the end of every session, the GM draws **3 random cards** from the Oracle for each player, who chooses **1** to add to their deck permanently. This is the default rhythm of growth. The full session-end ritual — Name, Price, Distance — lives at `locations/island-in-a-ship.md`.
+Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
+
+1. **Name** — the Oracle asks one question. The player answers.
+2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.
+3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+
+This is the default rhythm of growth.
 
 The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
 

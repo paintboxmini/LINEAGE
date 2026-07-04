@@ -76,7 +76,7 @@ Questions she asks:
 - *"What did you refuse?"*
 - *"What do you carry forward?"*
 
-**Price** — One card is revealed from the Oracle Deck. It is buried. The player does not receive it. This is the cost of growth — something available that you don't get to take.
+**Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.
 
 **Distance** — Three cards revealed. Player chooses one. That card enters their deck.
 

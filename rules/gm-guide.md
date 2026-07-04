@@ -62,7 +62,7 @@ A session in Tales Untold typically has:
 
 That last one is important. Not every question needs an answer by session's end. Not every threat needs to be addressed. The world has things happening in it that aren't about the players — and occasionally reminding them of that makes the world feel much larger.
 
-End of session, each player picks a card. That's the mechanical heartbeat. Everything else is negotiable.
+End of session, each player runs the Oracle ritual — a question answered, a card glimpsed and buried, a pick from three. That's the mechanical heartbeat. Everything else is negotiable. The Price step is worth running with intention: the buried card stays in the pool, and what a player glimpses and doesn't get is often what they start playing toward.
 
 ---
 
