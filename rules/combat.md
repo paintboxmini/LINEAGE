@@ -30,6 +30,25 @@ When a character flees and the pursuer gives chase, set up a two-marker track in
 
 ---
 
+## Fleeing Combat
+
+Exiting combat mid-fight is an action: **2d10 + Soul vs DC = 10 + the highest Soul stat among enemy combatants** — the ambush formula, run from the other side. Soul gets you into fights unseen and gets you out of them alive.
+
+The formula is the baseline, not the answer. The GM adjusts it for the factors it can't see:
+
+- **Terrain** — open road vs briar walls vs a corridor with one door
+- **What stands between you and out** — an enemy in your path is not an abstraction
+- **Position** — Backline is closer to gone than Frontline
+- **Whether the enemy cares** — a territorial creature that just wants you off its ground may make the check trivial, or unnecessary; a hunter in its own territory pushes it up
+
+**Success:** you leave the combat area and your participation ends. If the enemy gives chase, that's the Chase system above.
+
+**Failure:** the action is spent and you're still in the fight, exactly where everyone can see you.
+
+Enemies don't roll to flee — enemy disengagement is a GM call made from behavior, not a check.
+
+---
+
 ## Initiative
 
 At the start of combat, each participant rolls:
@@ -64,7 +83,7 @@ On your turn, you may take **one action:**
 | Use an Item | Activate an equipped or held item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
-| Flee | Attempt to exit combat (DC check, GM determines difficulty) |
+| Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
 ---
 

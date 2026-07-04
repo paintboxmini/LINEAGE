@@ -162,7 +162,7 @@ A Scratcher fight doesn't end in a kill. They mark and they leave (`bestiary/bri
 
 On A's turn it bolts for the briar wall — moving out of the combat area entirely. Movement in Tales Untold is abstract: leaving the field ends your participation in combat, and if every enemy leaves, **combat is over** (they can re-engage later if the fiction demands). B follows on its turn, Evade unspent, gone between two heartbeats.
 
-Note the asymmetry: enemy disengagement is a GM call, made from behavior — Scratchers leave because leaving is what Scratchers do. A *player* trying to exit combat under pressure uses the **Flee** action, which costs a DC check the GM sets (`rules/combat.md`, Turn Structure). The world doesn't owe the party the same clean exit it gives its animals.
+Note the asymmetry: enemy disengagement is a GM call, made from behavior — Scratchers leave because leaving is what Scratchers do. A *player* trying to exit combat under pressure uses the **Flee** action: 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for the fiction (`rules/combat.md`, Fleeing Combat). The world doesn't owe the party the same clean exit it gives its animals.
 
 No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
