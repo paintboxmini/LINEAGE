@@ -41,7 +41,7 @@ Frost and Steele are walking the road: both **Frontline**. Scratcher A darts out
 
 **Wheel order: Frost → Scratcher A → Steele → Scratcher B → back to Frost.** There are no rounds — the wheel just keeps turning (`rules/combat.md`, Initiative). "Cycle" below is descriptive shorthand for one lap, used only to organize this document.
 
-**Opening hands:** when initiative is rolled, every combatant draws to hand size. *(Ruling — see Edge Cases at the end.)*
+**Opening hands:** when initiative is rolled, every combatant draws to hand size (`rules/combat.md`, Turn Structure — a rule this example surfaced; see Edge Cases at the end).
 
 - Frost draws: ANALYZE, REFRACT, PATIENCE, STRIKE *(5 cards left in deck)*
 - Steele draws: STRIKE, DEAD HEAT, CALCULATE, FLOW
@@ -115,7 +115,7 @@ The Wound arrives. It **cannot be played** and sits in the hand until it discard
 
 **Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 9 → 4. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
 
-Note what Frost could *not* do: his STILLNESS (Ranged) is unplayable against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target.
+Note what Frost could *not* do: his REFRACT (Ranged) is unplayable as an attack against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target. In melee it's only good to him as a defense reveal.
 
 End of turn: the **WOUND discards itself.** Frost's hand: REFRACT, FLOW.
 
@@ -152,7 +152,7 @@ NIP AND TEAR is Melee and B is still Backline. **Action: Move Position** — B c
 
 ### Frost's turn
 
-REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding only FLOW. He draws to 4 — PUSH, STILLNESS, WITNESS — and his deck is now **empty**. Hand: FLOW, PUSH, STILLNESS, WITNESS. The next time he needs to draw, his discard pile — Wound included — shuffles into a new deck first (`rules/combat.md`, Turn Structure). Frost is at 9 HP and his deck is now permanently carrying a passenger.
+REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding only FLOW. He draws to 4 — PUSH, STILLNESS, WITNESS — and his deck is now **empty**. Hand: FLOW, PUSH, STILLNESS, WITNESS. The next time he needs to draw, his discard pile — Wound included — shuffles into a new deck first (`rules/combat.md`, Turn Structure). Frost is at 9 HP and his deck is carrying a passenger it can't put down until the party rests.
 
 **Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d6, Melee). B reveals **SKITTER AWAY** (Blue). **Blue beats Red — defender wins.** No damage. Defensive Bonus: B gains **Evade**.
 
@@ -161,6 +161,8 @@ REFRACT went to the discard pile defending last cycle, so Frost starts this turn
 A Scratcher fight doesn't end in a kill. They mark and they leave (`bestiary/briar-scratcher.md`: *"They're not trying to win. They're marking."*).
 
 On A's turn it bolts for the briar wall — moving out of the combat area entirely. Movement in Tales Untold is abstract: leaving the field ends your participation in combat, and if every enemy leaves, **combat is over** (they can re-engage later if the fiction demands). B follows on its turn, Evade unspent, gone between two heartbeats.
+
+Note the asymmetry: enemy disengagement is a GM call, made from behavior — Scratchers leave because leaving is what Scratchers do. A *player* trying to exit combat under pressure uses the **Flee** action, which costs a DC check the GM sets (`rules/combat.md`, Turn Structure). The world doesn't owe the party the same clean exit it gives its animals.
 
 No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
@@ -193,11 +195,11 @@ Frost's Wound doesn't heal with HP. It rides in his deck into Briarwatch and the
 
 ## Edge Cases This Example Surfaced
 
-Rulings used above, flagged for canon review:
+All four were reviewed and resolved by Drew. Recorded here because the reasoning is part of the reference:
 
-1. **Opening hands.** The rules say you draw to hand size at the start of your turn — nothing says combatants have cards before their first turn, which would make everyone acting late in cycle 1 defenseless. Ruling used: **everyone draws to hand size when initiative is rolled.**
-2. **Evade vs the attacker's card.** The attack card is played and discarded at step 1; Evade resolves after. Ruling used: **a dodged attack still consumes the attacker's card** (and its Effect does not trigger).
-3. **Defensive Bonuses that reference the attack's damage** (e.g., REFRACT's redirect) fire on a defender win, when no damage was dealt. Surfaced while scripting, though the final example doesn't exercise it. Proposed ruling: **roll the attack's damage anyway to resolve the redirect.**
+1. **Opening hands.** The rules said only that you draw at the start of your turn — nothing gave combatants cards before their first turn, which would have made everyone acting late in cycle 1 defenseless. Resolved: **everyone draws to hand size when initiative is rolled** — now canonical in `rules/combat.md`, Turn Structure.
+2. **Evade vs the attacker's card.** The attack card is played and discarded at step 1; Evade resolves after. Resolved: **a dodged attack still consumes the attacker's card** (and its Effect does not trigger).
+3. **Defensive Bonuses that reference the attack's damage** (e.g., REFRACT's redirect) fire on a defender win, when no damage was dealt. Surfaced while scripting, though the final example doesn't exercise it. Resolved: **roll the attack's damage anyway to resolve the redirect.**
 4. **Does a tie count as "successfully defending"?** Cards like WITNESS trigger on a successful defense. A tie prevents all damage and fires the Defensive Bonus, but the defender didn't *win*. **Resolved per-card, not universally:** WITNESS now states on the card that a tie counts. Future cards that care about "successful defense" carry their own clarifying line; if every card ends up ruling the same way, the convention gets promoted to a universal rule.
 
 ---
