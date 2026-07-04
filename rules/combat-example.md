@@ -62,7 +62,7 @@ A defends: reveals **SKITTER AWAY** (Blue). Both cards are discarded.
 
 **Blue vs Blue — tie.** No damage. Per the tie rule (`rules/combat.md`, Attack Resolution): *attacker's Effect still triggers, then defender's Defensive Bonus triggers.*
 
-- ANALYZE Effect: *"You and your allies scry 1."* Frost scries 1 and so does Steele. Note the wording — "you and your allies." Card text must explicitly include *you*; a card that said only "allies" would exclude Frost (**You Are Not Your Own Ally**, `rules/cards.md`).
+- ANALYZE Effect: *"You and your allies scry 2."* Frost scries 2 and so does Steele. Note the wording — "you and your allies." Card text must explicitly include *you*; a card that said only "allies" would exclude Frost (**You Are Not Your Own Ally**, `rules/cards.md`).
 - SKITTER AWAY Defensive Bonus: A gains **Evade** (50% to dodge the next attack against it — `rules/card-glossary.md`).
 
 Neither trigger cancels the other, so both resolve. Frost's hand: REFRACT, PATIENCE, STRIKE.
