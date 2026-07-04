@@ -29,7 +29,7 @@ Every location in Eclipsera has its own logic. The Turnroot Weald redirects. Vul
 An enemy needs:
 - **Stats** — Body, Mind, Soul (same as players, same functions)
 - **HP** — use `(3 × Body) + 6`, or pick a number that fits the fiction
-- **A small card set** — 3 to 6 cards is plenty for most enemies
+- **A deck** — 3 themed signature cards plus 4–7 core cards, 7–10 total (see `rules/cards.md`, Deck Building). Enemies draw to hand size (Mind + 1) like everyone else.
 - **A position** — Frontline or Backline to start
 - **An intent** — what does this enemy actually want in this fight?
 
@@ -37,7 +37,7 @@ Intent is the part most GMs skip and most regret skipping. An enemy that wants t
 
 You don't need a backstory. You need an intent.
 
-**Specialty cards** are optional — cards unique to a specific enemy that become loot when they're defeated. These go into the Oracle after the fight. They're a good way to make a memorable enemy leave a permanent mark on the campaign.
+**Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
 ---
 

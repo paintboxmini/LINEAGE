@@ -34,10 +34,11 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Move Position | Frontline ↔ Backline |
 | Use an Item | Activate a carried item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
+| Take Cover | Backline only; fiction must justify it. Gain Evade until you attack. |
 | Interact | Any noncombat action |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
 
-Draw to hand size at the **start** of your turn.
+Draw to hand size when **initiative is rolled**, then at the **start** of each of your turns.
 
 ---
 

@@ -82,6 +82,7 @@ On your turn, you may take **one action:**
 | Move Position | Shift between Frontline and Backline |
 | Use an Item | Activate an equipped or held item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
+| Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
@@ -146,6 +147,12 @@ Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must
 ### Interact & Position
 
 Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
+
+### Cover
+
+Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
+
+While in cover, you gain **Evade** (`rules/card-glossary.md`). Making an attack drops cover immediately.
 
 ### Confined Spaces
 

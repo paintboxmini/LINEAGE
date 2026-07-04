@@ -65,7 +65,7 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 Cannot change position until the start of your next turn.
 
 **Rushdown**
-Move a target from Backline to Frontline. The user must be in the Frontline. See `rules/combat.md`.
+Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **Quick**
 On your next turn, you may change positions without spending your action.
