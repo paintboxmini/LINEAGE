@@ -118,8 +118,21 @@ class Combatant:
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
 
-    def wounds_everywhere(self):
-        return sum(1 for c in (self.deck + self.hand + self.discard)
+    def erode(self, stat, n=1):
+        """Lower a stat for the combat. Any erosion also lowers max HP by 3 per
+        point (Drew ruling: either Wither or Erode lowers max HP), clamping
+        current HP down and collapsing if it hits 0."""
+        self.stat_mod[stat] -= n
+        self.max_hp = max(1, self.max_hp - 3 * n)
+        if self.hp > self.max_hp:
+            self.hp = self.max_hp
+        if self.hp <= 0 and not self.collapsed:
+            self.collapsed = True
+
+    def wounds_in_play(self):
+        """Wounds currently threatening — deck + hand (not discard). Press the
+        Wound and Taint count these (Drew ruling: hand and deck)."""
+        return sum(1 for c in (self.deck + self.hand)
                    if c.is_status and c.name == 'WOUND')
 
     # --- deck plumbing ---

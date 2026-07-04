@@ -243,11 +243,8 @@ def _balance_defense(engine, me, foe):
 
 
 def _wither_effect(engine, me, foe):
-    foe.stat_mod['body'] -= 1
+    foe.erode('body', 1)   # -1 Body AND -3 max HP for the combat
     engine.shuffle_wound(me)
-    RULING("stat-loss-not-hp",
-           "WITHER -1 Body / ERODE -1 Soul reduce damage and Soul-based rolls for "
-           "the combat but do NOT retroactively lower max HP (set at creation).")
 
 
 def _mockery_effect(engine, me, foe):
@@ -282,11 +279,11 @@ def _equal_footing_defense(engine, me, foe):
 
 
 def _press_the_wound_dmg(engine, me, foe):
-    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_everywhere()
+    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_in_play()
 
 
 def _press_the_wound_defense(engine, me, foe):
-    n = me.wounds_everywhere()
+    n = me.wounds_in_play()
     if n:
         engine.heal(me, 2 * n)
         remove_wounds(me)
@@ -304,7 +301,7 @@ def _partition_defense(engine, me, foe):
 
 
 def _taint_effect(engine, me, foe):
-    if foe.wounds_everywhere() > 0:
+    if foe.wounds_in_play() > 0:
         engine.shuffle_wound(foe)
         engine.shuffle_wound(foe)
     else:
@@ -316,7 +313,7 @@ def _taint_defense(engine, me, foe):
 
 
 def _erode_effect(engine, me, foe):
-    foe.stat_mod['soul'] -= 1
+    foe.erode('soul', 1)   # -1 Soul AND -3 max HP for the combat
     engine.shuffle_wound(me)
 
 

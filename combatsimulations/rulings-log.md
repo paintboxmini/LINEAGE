@@ -49,13 +49,19 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
 
 ### Surfaced by the Mire (Wound-attrition) deck
 
-- **stat-loss-not-hp** — Wither (−1 Body) and Erode (−1 Soul) reduce damage and
-  Soul-based rolls for the combat but do NOT retroactively lower max HP (fixed at
-  creation). Needs confirmation: does losing Body mid-combat also lower current
-  max HP? The engine assumes no.
-- **press-the-wound-counts-everywhere** — "each Wound in defender's deck" is
-  counted across deck + hand + discard (the whole deck as an entity). Assumed;
-  confirm whether Wounds sitting in hand/discard count.
+RESOLVED:
+
+- **stat-erosion-lowers-hp** — Wither (−1 Body) and Erode (−1 Soul) each also
+  lower max HP by 3 per point for the combat, clamping current HP down (Drew
+  ruling: either lowers max HP). This is what made stat erosion a real attrition
+  tool. *Open sub-question if you ever want it: should this ripple to the written
+  rules as a general "mid-combat stat loss adjusts max HP" principle, or stay
+  specific to these cards?*
+- **press-the-wound-counts** — "each Wound in the deck" counts deck + hand, not
+  discard (Drew ruling). Taint's "already has a Wound" check uses the same count.
+
+OPEN:
+
 - **equal-footing-floor** — The def "next attack cannot reduce you below the
   attacker's HP" is consumed by the next attack regardless of outcome; modeled at
   the damage step. The "successful or not" nuance (a missed attack also removes

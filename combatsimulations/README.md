@@ -94,9 +94,13 @@ Win rates (20k duels each):
 
 | Matchup | greedy vs greedy | reader vs reader |
 |---------|:----------------:|:----------------:|
-| Mire vs Frost  | Frost 56.6% | Frost 55.6% |
-| Mire vs Steele | Steele 67.4% | **49.9% / 49.4% (dead even)** |
-| Mire mirror    | 50/50, **37.2 turns** | 50/50, **9.3 turns** |
+| Mire vs Frost  | Frost 54.0% | Frost 53.6% |
+| Mire vs Steele | Steele 65.4% | **Mire 51.8% / Steele 47.4%** |
+| Mire mirror    | 50/50, **31.0 turns** | 50/50, **8.7 turns** |
+
+(Numbers reflect the ruling that Wither/Erode also shave 3 max HP per point —
+which is what nudged Mire from a slight underdog into the Steele matchup and
+sped up the grind.)
 
 What it surfaced:
 
@@ -104,10 +108,11 @@ What it surfaced:
    skill levels — its Wound engine wants a long game, and Frost's burst kills it
    (15 HP) before Wounds pile up. A grinder that can't survive can't grind.
 
-2. **Reading rescues the Steele matchup.** Under greedy play Steele's fat stats
-   crush Mire 67%; under reader play Mire pulls dead even. Wound disruption plus
-   pattern-punishing exactly offsets Steele's HP/Body edge — the same
-   skill-inversion the Frost/Steele pair showed, now with a different mechanism.
+2. **Reading rescues the Steele matchup — and then some.** Under greedy play
+   Steele's fat stats crush Mire 65%; under reader play Mire actually edges ahead
+   (51.8%). Wound disruption plus stat erosion (now biting max HP) more than
+   offsets Steele's HP/Body advantage — the same skill-inversion the Frost/Steele
+   pair showed, reached through a completely different mechanism.
 
 3. **The deck is skill-sensitive in *duration*, not just outcome.** The greedy
    mirror drags to 37 turns (neither pilot closes — Equal Footing floors and low
