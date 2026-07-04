@@ -31,8 +31,12 @@ No dependencies. Python 3.8+.
 - Tokens/keywords the two decks use: Resist (stacking, one per attack), Evade,
   Ward, Axiom's color ban (on the next reveal, attack *or* block), unpreventable
   damage, position/range gating, Blood Tithe's ongoing bleed.
-- Exactly Frost's and Steele's decklists (`testcampaigndecks/`). Ally-only
-  effects are correct no-ops in a duel and are marked DEAD in `content.py`.
+- Three decks in the roster: `frost`, `steele`, and `mire` (a Wound-attrition
+  build). Ally-only effects are correct no-ops in a duel and are marked DEAD in
+  `content.py`.
+- Wound mechanics: status cards that clog the hand, shuffle into decks, are
+  counted (Press the Wound), and exile; plus combat-duration stat loss, initiative
+  shift (Mockery), and targeting locks (Partition).
 
 ## Policies (the "brains")
 
@@ -76,6 +80,44 @@ Three things jumped out:
 Caveat: these numbers are only as good as the policies. They compare decks *at a
 given level of play*, and the reader policy is deliberately basic. Treat the
 matrix as "how the decks behave under simple brains," not a final power ranking.
+
+## Mire — the Wound-attrition deck (3/3/3)
+
+A third deck (`mire` in the roster): Balance, Wither, Mockery / Rend, Equal
+Footing, Press the Wound / Partition, Taint, Erode. Perfectly balanced 3R/3B/3G.
+It wins by shuffling Wounds into the opponent's deck (Rend, Taint) and cashing
+them in (Press the Wound), while eroding stats for the whole combat (Wither
+−Body, Erode −Soul). Adding it forced the engine to grow real Wound mechanics,
+combat-duration stat loss, initiative shift, and targeting locks.
+
+Win rates (20k duels each):
+
+| Matchup | greedy vs greedy | reader vs reader |
+|---------|:----------------:|:----------------:|
+| Mire vs Frost  | Frost 56.6% | Frost 55.6% |
+| Mire vs Steele | Steele 67.4% | **49.9% / 49.4% (dead even)** |
+| Mire mirror    | 50/50, **37.2 turns** | 50/50, **9.3 turns** |
+
+What it surfaced:
+
+1. **Attrition needs time it doesn't get.** Mire loses to Frost ~56% at *both*
+   skill levels — its Wound engine wants a long game, and Frost's burst kills it
+   (15 HP) before Wounds pile up. A grinder that can't survive can't grind.
+
+2. **Reading rescues the Steele matchup.** Under greedy play Steele's fat stats
+   crush Mire 67%; under reader play Mire pulls dead even. Wound disruption plus
+   pattern-punishing exactly offsets Steele's HP/Body edge — the same
+   skill-inversion the Frost/Steele pair showed, now with a different mechanism.
+
+3. **The deck is skill-sensitive in *duration*, not just outcome.** The greedy
+   mirror drags to 37 turns (neither pilot closes — Equal Footing floors and low
+   aggression stall out); the reader mirror ends in 9. A deck whose *game length*
+   triples with pilot skill is a genuine design signal.
+
+Takeaway for the table: Mire is matchup-polarized in PvP — it beats grinders and
+loses to burst. Its real home is PvE, where durable monsters give the Wound
+engine the long game it's built for. That's the sim telling you where the deck
+belongs.
 
 ## The errata queue
 

@@ -47,7 +47,8 @@ class Card:
     """
 
     def __init__(self, name, color, stat, reach, base_die,
-                 damage=None, effect=None, defense=None, special_reveal=None):
+                 damage=None, effect=None, defense=None, special_reveal=None,
+                 is_status=False):
         self.name = name
         self.color = color
         self.stat = stat
@@ -57,11 +58,12 @@ class Card:
         self._effect = effect          # fn(engine, me, foe)  attacker won OR tie
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
+        self.is_status = is_status     # Wound/Exhaust: cannot be played
 
     def damage(self, engine, me, foe):
         if self._damage:
             return self._damage(engine, me, foe)
-        return getattr(me, self.stat) + roll(self.base_die, engine.rng)
+        return me.eff(self.stat) + roll(self.base_die, engine.rng)
 
     def effect(self, engine, me, foe):
         if self._effect:
@@ -105,6 +107,21 @@ class Combatant:
         self.attack_history = Counter()  # public tally of revealed attack colors
         self.collapsed = False
 
+        # combat-duration stat modifiers (Wither -Body, Erode -Soul)
+        self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
+        self.skip_turns = 0              # initiative shift -> skipped turns
+        self.must_target_frontline = False  # Partition: next turn restriction
+        self._damage_floor = None        # Equal Footing def: next-attack HP floor
+        self._rend_guard = False         # Rend def: next hit -> Wound, no damage
+        self._last_hit = 0               # damage dealt by my most recent attack
+
+    def eff(self, stat):
+        return max(0, getattr(self, stat) + self.stat_mod[stat])
+
+    def wounds_everywhere(self):
+        return sum(1 for c in (self.deck + self.hand + self.discard)
+                   if c.is_status and c.name == 'WOUND')
+
     # --- deck plumbing ---
     def build(self, cards, rng):
         self.deck = [cards[n] for n in self.decklist]
@@ -144,6 +161,28 @@ class Duel:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
+        self.wound = cards.get('WOUND')
+
+    def shuffle_wound(self, target):
+        if self.wound is None:
+            return
+        idx = self.rng.randint(0, len(target.deck))
+        target.deck.insert(idx, self.wound)
+
+    def initiative_shift(self, target, amount):
+        n = len(self.combatants)
+        skips = abs(amount) // n
+        if amount < 0:
+            target.skip_turns += skips
+        else:
+            RULING("positive-initiative-shift-unmodeled",
+                   "Positive Initiative Shift (extra turns) is not modeled — no "
+                   "card in the current decks uses it.")
+        if abs(amount) % n:
+            RULING("initiative-shift-remainder",
+                   "Sub-wheel Initiative Shift reorder is simplified to skipped "
+                   "turns in the 2-combatant duel (the positional remainder "
+                   "reduces to tempo loss).")
 
     def _say(self, msg):
         self.log.append(msg)
@@ -175,6 +214,15 @@ class Duel:
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
+        if target._damage_floor is not None:
+            # Equal Footing: this attack cannot reduce target below the floor.
+            cap = max(0, target.hp - target._damage_floor)
+            amount = min(amount, cap)
+            target._damage_floor = None  # removed by any attack
+            RULING("equal-footing-floor",
+                   "EQUAL FOOTING def caps the next attack so it can't reduce you "
+                   "below the attacker's HP at trigger time; consumed by the next "
+                   "attack regardless of outcome (simplified to on-damage here).")
         # a single normal attack cannot push below 0 (clamp); extra damage while
         # collapsed can. We treat any single application atomically.
         pre = target.hp
@@ -217,6 +265,7 @@ class Duel:
         attacker.discard.append(card)
         attacker.last_color = card.color
         attacker.attack_history[card.color] += 1  # revealed = public info
+        attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
         self._say(f"{attacker.name} plays {card.name} ({card.color})")
 
         # Evade resolves before the defender selects a card.
@@ -291,7 +340,17 @@ class Duel:
     def _resolve_attacker_win(self, attacker, defender, card, contested):
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
+        # Rend's defensive guard: the next hit deals no damage and instead
+        # shuffles a Wound into the struck combatant.
+        if defender._rend_guard:
+            defender._rend_guard = False
+            self.shuffle_wound(defender)
+            attacker._last_hit = 0
+            self._say(f"  -> REND guard: no damage, Wound into {defender.name}")
+            card.effect(self, attacker, defender)
+            return
         dealt = self.deal(defender, dmg)
+        attacker._last_hit = dealt
         self._say(f"  -> {attacker.name} hits for {dealt} "
                   f"({defender.name} {defender.hp}/{defender.max_hp})")
         # Thorns: only on a successful MELEE hit against a thorned defender.
@@ -324,22 +383,27 @@ class Duel:
         return self._finish(None)
 
     def take_turn(self, who, foe):
+        if who.skip_turns > 0:
+            who.skip_turns -= 1
+            self._say(f"{who.name} loses their turn (initiative shift)")
+            return
         self.start_of_turn(who)
         if who.collapsed:
             return
         who.draw_to_hand(self.rng)
-        # discard Wounds/status at end handled below; here choose an action.
         action = who.policy.choose_action(self, who, foe)
         if action is None:
             self._say(f"{who.name} takes no action")
-            return
-        kind = action[0]
-        if kind == 'attack':
-            self.attack(who, foe, action[1])
-        elif kind == 'move':
-            who.position = 'backline' if who.position == 'frontline' else 'frontline'
-            self._say(f"{who.name} moves to {who.position}")
-        # end of turn: nothing to discard for these decks (no status cards drawn)
+        else:
+            kind = action[0]
+            if kind == 'attack':
+                self.attack(who, foe, action[1])
+            elif kind == 'move':
+                who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                self._say(f"{who.name} moves to {who.position}")
+        # end of turn: Wounds discard themselves; clear one-turn restrictions.
+        who.hand = [c for c in who.hand if not (c.is_status and c.name == 'WOUND')]
+        who.must_target_frontline = False
 
     def _finish(self, winner):
         self.result = winner.name if winner else 'TIE'

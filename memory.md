@@ -13,6 +13,8 @@
 **Combat simulator** (`combatsimulations/`)
 PvP duel engine, Python, no dependencies. Plays Frost vs Steele thousands of times with pluggable decision policies (random/greedy/reader). Design instrument only — not canon, changes nothing. Two outputs: an errata queue (`rulings-log.md`, also printed each run) and balance stats. Key finding: the Frost/Steele matchup INVERTS with skill — greedy play favors Steele (Body 4/HP 18 slugfest), reader play favors Frost (Axiom punishing Steele's 50%-Blue deck), empirically confirming Axiom > Paradox as the power card. Initiative worth ~55–59%. Extend by adding policies (3 methods) or more decklists.
 
+Third deck added: `mire` — a Wound-attrition control build (Balance/Wither/Mockery, Rend/Equal Footing/Press the Wound, Partition/Taint/Erode, 3/3/3). Forced the engine to grow Wound status cards, combat-duration stat loss, initiative shift, targeting locks. Finding: Mire is matchup-polarized — loses to Frost's burst ~56% at all skill levels (15 HP dies before Wounds accumulate), pulls dead even vs Steele under reader play. Its home is PvE, where durable enemies give the Wound engine time. Roster is now pluggable (`ROSTER` in content.py); run.py takes deckA polA deckB polB.
+
 ---
 
 ## Active Pending Threads

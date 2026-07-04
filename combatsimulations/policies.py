@@ -37,8 +37,15 @@ def est_damage(me, card):
     return getattr(me, card.stat) + _AVG[card.base_die]
 
 
+def playable(hand):
+    """Cards that can actually be played — status cards (Wound) cannot."""
+    return [c for c in hand if not c.is_status]
+
+
 def legal_attacks(engine, me, foe):
-    return [c for c in me.hand if can_attack(me, foe, c)]
+    if me.must_target_frontline and foe.position != 'frontline':
+        return []  # Partition: no legal frontline target
+    return [c for c in me.hand if not c.is_status and can_attack(me, foe, c)]
 
 
 class RandomPolicy:
@@ -53,10 +60,11 @@ class RandomPolicy:
         return None
 
     def choose_defense(self, engine, me, foe):
-        if not me.hand:
+        hand = playable(me.hand)
+        if not hand:
             return None
         if engine.rng.random() < 0.7:
-            return engine.rng.choice(me.hand)
+            return engine.rng.choice(hand)
         return None
 
     def name_axiom_color(self, engine, me, foe):

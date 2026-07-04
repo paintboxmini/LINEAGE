@@ -192,6 +192,134 @@ def _renewal_defense(engine, me, foe):
         foe.discard.append(foe.hand.pop(engine.rng.randrange(len(foe.hand))))
 
 
+# ==================== MIRE (Wound-attrition, 3/3/3) ==========================
+# A control deck built on shuffling Wounds into the opponent's deck (Rend,
+# Taint), then cashing them in (Press the Wound), plus combat-long stat erosion
+# (Wither -Body, Erode -Soul). Perfectly balanced 3R/3B/3G across the RPS wheel.
+
+def _has_color(hand, color):
+    return any(c.color == color and not c.is_status for c in hand)
+
+
+def _discard_one_color(engine, me, color):
+    for i, c in enumerate(me.hand):
+        if c.color == color and not c.is_status:
+            me.discard.append(me.hand.pop(i))
+            return True
+    return False
+
+
+def remove_wounds(target, n=None):
+    """Exile up to n Wounds (all if n is None) from deck+hand+discard."""
+    removed = 0
+    for pile in (target.deck, target.hand, target.discard):
+        i = 0
+        while i < len(pile):
+            if pile[i].is_status and pile[i].name == 'WOUND' and (n is None or removed < n):
+                pile.pop(i)
+                removed += 1
+            else:
+                i += 1
+    return removed
+
+
+# --- Green ---
+def _balance_effect(engine, me, foe):
+    if _has_color(me.hand, 'B') and _has_color(me.hand, 'R'):
+        _discard_one_color(engine, me, 'B')
+        _discard_one_color(engine, me, 'R')
+        engine.deal(foe, me.eff('soul') + roll(4, engine.rng))  # second hit
+        engine._say(f"    BALANCE triggers twice")
+
+
+def _balance_defense(engine, me, foe):
+    if _has_color(me.hand, 'B') and _has_color(me.hand, 'R'):
+        _discard_one_color(engine, me, 'B')
+        _discard_one_color(engine, me, 'R')
+        foe.skip_turns += 1  # knocked down: must spend an action to stand
+        RULING("balance-knockdown",
+               "BALANCE def 'knock down (requires an Action to stand)' is modeled "
+               "as the foe losing their next action to stand up.")
+
+
+def _wither_effect(engine, me, foe):
+    foe.stat_mod['body'] -= 1
+    engine.shuffle_wound(me)
+    RULING("stat-loss-not-hp",
+           "WITHER -1 Body / ERODE -1 Soul reduce damage and Soul-based rolls for "
+           "the combat but do NOT retroactively lower max HP (set at creation).")
+
+
+def _mockery_effect(engine, me, foe):
+    engine.initiative_shift(foe, -2)
+
+
+def _mockery_defense(engine, me, foe):
+    RULING("mockery-taunt-dead",
+           "MOCKERY def 'target must attack you if able' is inert in a 1v1 — the "
+           "foe has only one target already.")
+
+
+# --- Red ---
+def _rend_effect(engine, me, foe):
+    if me._last_hit > 0:
+        engine.shuffle_wound(foe)
+
+
+def _rend_defense(engine, me, foe):
+    me._rend_guard = True
+
+
+def _equal_footing_dmg(engine, me, foe):
+    base = me.eff('body') + roll(4, engine.rng)
+    if foe.position == me.position:
+        base += 2
+    return base
+
+
+def _equal_footing_defense(engine, me, foe):
+    me._damage_floor = foe.hp  # next attack can't take me below attacker's HP
+
+
+def _press_the_wound_dmg(engine, me, foe):
+    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_everywhere()
+
+
+def _press_the_wound_defense(engine, me, foe):
+    n = me.wounds_everywhere()
+    if n:
+        engine.heal(me, 2 * n)
+        remove_wounds(me)
+
+
+# --- Blue ---
+def _partition_effect(engine, me, foe):
+    foe.must_target_frontline = True
+
+
+def _partition_defense(engine, me, foe):
+    RULING("partition-shield-dead",
+           "PARTITION def 'target ally cannot be targeted' has no valid target in "
+           "a 1v1 (You Are Not Your Own Ally).")
+
+
+def _taint_effect(engine, me, foe):
+    if foe.wounds_everywhere() > 0:
+        engine.shuffle_wound(foe)
+        engine.shuffle_wound(foe)
+    else:
+        engine.shuffle_wound(foe)
+
+
+def _taint_defense(engine, me, foe):
+    remove_wounds(me, 1)
+
+
+def _erode_effect(engine, me, foe):
+    foe.stat_mod['soul'] -= 1
+    engine.shuffle_wound(me)
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -240,6 +368,31 @@ def build_cards():
     add("SPIRAL CURRENT", 'G', 'soul', 'both', 4, effect=_spiral_current_effect)  # def DEAD
     add("RENEWAL", 'G', 'soul', 'both', 4, defense=_renewal_defense)              # effect DEAD (allies)
 
+    # Mire — Green
+    add("BALANCE", 'G', 'soul', 'ranged', 4,
+        effect=_balance_effect, defense=_balance_defense)
+    add("WITHER", 'G', 'soul', 'both', 4,
+        effect=_wither_effect, defense=_wither_effect)
+    add("MOCKERY", 'G', 'soul', 'both', 4,
+        effect=_mockery_effect, defense=_mockery_defense)
+    # Mire — Red
+    add("REND", 'R', 'body', 'melee', 4,
+        effect=_rend_effect, defense=_rend_defense)
+    add("EQUAL FOOTING", 'R', 'body', 'both', 4,
+        damage=_equal_footing_dmg, defense=_equal_footing_defense)
+    add("PRESS THE WOUND", 'R', 'body', 'melee', 4,
+        damage=_press_the_wound_dmg, defense=_press_the_wound_defense)
+    # Mire — Blue
+    add("PARTITION", 'B', 'mind', 'both', 2,
+        effect=_partition_effect, defense=_partition_defense)
+    add("TAINT", 'B', 'mind', 'ranged', 2,
+        effect=_taint_effect, defense=_taint_defense)
+    add("ERODE", 'B', 'mind', 'both', 4,
+        effect=_erode_effect, defense=_erode_effect)
+
+    # Status card
+    add("WOUND", None, None, None, None, is_status=True)
+
     return C
 
 
@@ -253,5 +406,18 @@ STEELE_DECK = [
     "PARADOX", "SPIRAL CURRENT", "ALIGN", "ANTICIPATE", "RENEWAL",
 ]
 
+MIRE_DECK = [
+    "BALANCE", "WITHER", "MOCKERY", "REND", "EQUAL FOOTING",
+    "PRESS THE WOUND", "PARTITION", "TAINT", "ERODE",
+]
+
 FROST_STATS = dict(body=3, mind=3, soul=3)
 STEELE_STATS = dict(body=4, mind=3, soul=2)
+MIRE_STATS = dict(body=3, mind=3, soul=3)
+
+# registry so run.py can pit any two decks against each other
+ROSTER = {
+    "frost":  (FROST_STATS, FROST_DECK),
+    "steele": (STEELE_STATS, STEELE_DECK),
+    "mire":   (MIRE_STATS, MIRE_DECK),
+}
