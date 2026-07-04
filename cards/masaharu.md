@@ -19,7 +19,7 @@ Range: Both
 **COLD READ**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Expose Blue — target gains Staggered. Scry 2.
+Effect: Scry 2. Expose Blue — target gains Staggered.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"The tell was always there."*

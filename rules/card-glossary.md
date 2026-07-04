@@ -36,7 +36,7 @@ You gain a specific benefit that persists as long as you do not change positions
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
 **Exile**
-Remove a card from play until end of combat. It does not go to the discard pile. Unless the card specifies otherwise, exiled cards are not returned.
+Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be looked at, moved, or retrieved. When combat ends, exiled cards return to their owner's deck. Unless the card specifies otherwise, nothing returns an exiled card during combat.
 
 **Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
@@ -60,6 +60,8 @@ The next time you would reveal a card for RPS resolution, the opponent may look 
 
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
+
+Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks.
 
 **Rooted**
 Cannot change position until the start of your next turn.
