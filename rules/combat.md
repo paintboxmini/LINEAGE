@@ -168,6 +168,14 @@ Multiple ongoing effects can be active simultaneously unless a card specifies ot
 
 ---
 
+## Simultaneous Effects
+
+When two or more effects would resolve at the same moment — several "start of your turn" triggers, two tokens landing at once — the **controller of those effects chooses the order** they resolve in. If the simultaneous effects have different controllers, the player whose turn it is decides the order.
+
+Order can matter: a heal-then-bleed and a bleed-then-heal end at the same number, but a heal that arrives after a lethal bleed arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie (see BLOOD TITHE, where both parties can bleed to Collapse on the same trigger).
+
+---
+
 ## Collapse & Death
 
 If an attack reduces you to **0 HP**, you Collapse.

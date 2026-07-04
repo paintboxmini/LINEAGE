@@ -8,7 +8,10 @@
 
 ## Campaign Status
 
-**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists not yet recorded — `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md` have placeholders waiting. (Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.)
+**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md`, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox). Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.
+
+**Combat simulator** (`combatsimulations/`)
+PvP duel engine, Python, no dependencies. Plays Frost vs Steele thousands of times with pluggable decision policies (random/greedy/reader). Design instrument only — not canon, changes nothing. Two outputs: an errata queue (`rulings-log.md`, also printed each run) and balance stats. Key finding: the Frost/Steele matchup INVERTS with skill — greedy play favors Steele (Body 4/HP 18 slugfest), reader play favors Frost (Axiom punishing Steele's 50%-Blue deck), empirically confirming Axiom > Paradox as the power card. Initiative worth ~55–59%. Extend by adding policies (3 methods) or more decklists.
 
 ---
 

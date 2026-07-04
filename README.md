@@ -22,3 +22,4 @@ A tabletop role-playing game (TTRPG) currently in development.
 | `playtesting/` | Playtest notes, feedback, and session logs |
 | `agent-tools/` | Drop-in prompts for common design tasks |
 | `printing/` | Print-ready HTML card sheets and the generator script |
+| `combatsimulations/` | PvP duel simulator — a design instrument for surfacing rules gaps and balance findings, not canon |

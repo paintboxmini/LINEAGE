@@ -235,7 +235,7 @@ Range: Ranged
 **PARADOX**
 BLUE — MIND
 Attack: Mind + d4
-Special Rule: On reveal, reverse the RPS outcome this turn
+Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal 1
 Defensive Bonus: Lifesteal 2
 Range: Both
