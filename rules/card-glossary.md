@@ -106,7 +106,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### WOUND
 *Status — Colorless*
 Cannot be played.
-At the end of your turn, discard this card.
+You may use your action to discard this card.
 *Effect when discarded: none.*
 1 Wound may be removed per short rest.
 
