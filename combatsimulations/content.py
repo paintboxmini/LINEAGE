@@ -358,7 +358,7 @@ def build_cards():
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
     add("REPEL", 'R', 'body', 'melee', 2,
         effect=_repel_effect, defense=_repel_effect)
-    add("PAIN IS FUEL", 'R', 'body', 'both', 6,
+    add("PAIN IS FUEL", 'R', 'body', 'both', 4,   # d6 -> d4 rebalance
         effect=_pain_is_fuel_effect, defense=_pain_is_fuel_defense)
     # Steele — Blue
     add("FORGET", 'B', 'mind', 'ranged', 2,

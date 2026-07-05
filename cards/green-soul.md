@@ -54,7 +54,7 @@ Range: Ranged
 
 **ATTUNE**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defensive Bonus: Lose 2 HP. Draw 2 cards, then discard 1.
 Range: Melee

@@ -94,7 +94,7 @@ Range: Ranged
 
 **STILLNESS**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Defender discards 1 card at random
 Defensive Bonus: Attacker discards 1 card at random
 Range: Ranged
@@ -255,7 +255,7 @@ Range: Both
 
 **EXCAVATE**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Place the top card of your discard pile on the bottom of your deck
 Defensive Bonus: Place the top card of your discard pile on the bottom of your deck
 Range: Both

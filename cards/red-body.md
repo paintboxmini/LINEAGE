@@ -44,7 +44,7 @@ Range: Melee
 
 **PUSH**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: Move target to backline
 Defensive Bonus: Move target to backline
 Range: Melee
@@ -264,7 +264,7 @@ Range: Melee
 
 **PAIN IS FUEL**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: Gain Resist.
 Defensive Bonus: Deal 2 damage to the attacker.
 Range: Both
