@@ -424,10 +424,29 @@ VOLK_DECK = [
     "DEFLECT", "TWIN STRIKE",                           # 1 blue, 1 green (implemented)
 ]
 
+# The minmax trifecta — a Latin square of 4/3/2 spreads: each stat takes 4, 3,
+# and 2 exactly once across the three decks, and card colors match the spread
+# (stat-matching heuristic). Steele = Body, Sage = Mind, Adept = Soul.
+#   Steele  Body4/Mind3/Soul2  -> 4R/3B/2G  (canonical campaign deck, kept as-is)
+#   Sage    Mind4/Soul3/Body2  -> 4B/3G/2R
+#   Adept   Soul4/Body3/Mind2  -> 4G/3R/2B
+SAGE_DECK = [
+    "AXIOM", "PARADOX", "FRACTURE", "ANTICIPATE",   # 4 blue
+    "TWIN STRIKE", "SPIRAL CURRENT", "MOCKERY",      # 3 green
+    "PAIN IS FUEL", "GAMBLER'S RUIN",                # 2 red
+]
+ADEPT_DECK = [
+    "TWIN STRIKE", "SPIRAL CURRENT", "BALANCE", "MOCKERY",  # 4 green
+    "PAIN IS FUEL", "GAMBLER'S RUIN", "BLOOD TITHE",        # 3 red
+    "PARADOX", "ALIGN",                                     # 2 blue
+]
+
 FROST_STATS = dict(body=3, mind=3, soul=3)
 STEELE_STATS = dict(body=4, mind=3, soul=2)
 MIRE_STATS = dict(body=3, mind=3, soul=3)
-VOLK_STATS = dict(body=5, mind=2, soul=2)   # HP 21
+VOLK_STATS = dict(body=5, mind=2, soul=2)   # HP 19
+SAGE_STATS = dict(mind=4, soul=3, body=2)
+ADEPT_STATS = dict(soul=4, body=3, mind=2)
 
 # registry so run.py can pit any two decks against each other
 ROSTER = {
@@ -435,4 +454,6 @@ ROSTER = {
     "steele": (STEELE_STATS, STEELE_DECK),
     "mire":   (MIRE_STATS, MIRE_DECK),
     "volk":   (VOLK_STATS, VOLK_DECK),
+    "sage":   (SAGE_STATS, SAGE_DECK),      # Mind 4 — blue archetype
+    "adept":  (ADEPT_STATS, ADEPT_DECK),    # Soul 4 — green archetype
 }
