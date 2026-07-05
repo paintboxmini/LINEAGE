@@ -79,7 +79,10 @@ class Combatant:
     def __init__(self, name, body, mind, soul, decklist, policy):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
-        self.max_hp = 3 * body + 6
+        # Canon HP formula (2*Body + 9) — flattened from 3*Body+6 to decouple HP
+        # from Body and cut its damage+HP double-dip. Crossover at Body 3.
+        self.hp_per_body = 2
+        self.max_hp = self.hp_per_body * body + 9
         self.hp = self.max_hp
         self.hand_size = mind + 1
         self.decklist = list(decklist)   # names, for rebuild
@@ -127,7 +130,7 @@ class Combatant:
         Only Body touches HP (Drew ruling)."""
         self.stat_mod[stat] += delta
         if stat == 'body':
-            self.max_hp = max(1, self.max_hp + 3 * delta)
+            self.max_hp = max(1, self.max_hp + self.hp_per_body * delta)
             if self.hp > self.max_hp:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:

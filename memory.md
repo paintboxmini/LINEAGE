@@ -8,14 +8,14 @@
 
 ## Campaign Status
 
-**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 18) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md`, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox). Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.
+**Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 17 under new HP formula) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `testcampaigndecks/frost.md` and `testcampaigndecks/steele.md`, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox). Directory holds this campaign's decks only: players, Oracle pool, campaign-specific NPCs.
 
 **Combat simulator** (`combatsimulations/`)
 PvP duel engine, Python, no dependencies. Roster: frost, steele, mire (pluggable via `ROSTER` in content.py; run.py takes deckA polA deckB polB). Four brains: random/reader/greedy/tactician. Design instrument only — not canon. Outputs: errata queue (`rulings-log.md`, printed each run) + balance stats.
 
 Corrected findings (an earlier draft tested with the weak `reader` brain and wrongly concluded Frost dominates):
 - **Recency beats frequency.** greedy (predicts foe's LAST color) crushes reader (predicts MOST-COMMON color) head to head — 59/41 Frost mirror, 90/10 Mire mirror. reader is the weakest non-random brain.
-- **Deck ranking under strongest brain (tactician): Steele > Frost > Mire.** Steele's Body 4/HP 18 raw stats win (~57% vs Frost, 67% vs Mire).
+- **Deck ranking under strongest brain (tactician): Steele > Mire > Frost.** Steele's Body 4 raw stats win (red damage + balanced colors, not HP).
 - **Axiom is a real edge, not an "I win."** Valuing Axiom wins the Frost mirror 59% and lifts Frost vs Steele 38.8%→43.5%, but does NOT flip Steele's stat advantage. (Earlier "Axiom > Paradox, Frost dominates" was overstated — Axiom helps, stats win.)
 - **Anti-read color flattening FAILS** — only helps a deck whose off-colors are as strong as its main color; cut from tactician.
 - Initiative ~52–55% under strong play.
@@ -148,8 +148,8 @@ Player decks: color counts match stats (Mind 4/Body 2/Soul 3 → 4B/2R/3G) — h
 **Card system: signature sets**
 Creature combat decks are filled from core cards. Signature cards are Oracle rewards. Drew determines how many land in a given set after reviewing the full 9. The standard loop: draft 9, red team all 9, fix/cut/replace until all pass, present all 9, Drew decides placement.
 
-**HP formula: (3 × Body) + 6**
-Canonical per quick reference. Earlier expanded docs had +3 — that was an error, corrected.
+**HP formula: (2 × Body) + 9** (changed from 3×Body+6 — Drew, via sim experiment)
+Flatter curve to decouple HP from Body and reduce Body's damage+HP double-dip. Crossover at Body 3 (both = 15); trims high Body (B4: 18→17, B5: 19, B8: 25) and lifts low Body (B1: 11, B2: 13). Bites harder at high stats, which is where powerful creatures live. Player impact: Frost stays 15, Steele 18→17. **Existing creature stat blocks keep their authored HP** (gm-guide allows GM-set HP); new content + players use the new formula. Sim uses it (`hp_per_body`). NOTE: the sim showed HP is NOT the main lever for Steele's dominance (even flat HP left Steele at 59% vs Frost) — the real driver is red damage + color spread. Next: subtle damage-distribution rebalance of core cards (some blue/green dice up, some red dice down).
 
 **Range definitions**
 Quick reference sheet is canonical. Melee: both must be Frontline. Ranged: works only while not in Melee range with target.

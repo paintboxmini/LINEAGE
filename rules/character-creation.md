@@ -22,7 +22,7 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Body**
 - Determines damage for Red cards (Attack: Body + die)
-- Sets your maximum HP: **(3 × Body) + 6**
+- Sets your maximum HP: **(2 × Body) + 9**
 
 **Mind**
 - Determines damage for Blue cards (Attack: Mind + die)

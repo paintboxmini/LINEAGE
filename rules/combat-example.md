@@ -12,11 +12,11 @@ The scenario is the standard day-2 road encounter: two Briar Scratchers contest 
 
 ### The Party
 
-**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(3 × Body + 6)* — hand size **4** *(Mind + 1)*
+**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(2 × Body + 9)* — hand size **4** *(Mind + 1)*
 Deck (9 cards, 3R/3B/3G per the stat-matching heuristic):
 STRIKE, PUSH, ENDURE / ANALYZE, REFRACT, STILLNESS / FLOW, PATIENCE, WITNESS
 
-**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 18** — hand size **4**
+**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 17** *(2 × Body + 9)* — hand size **4**
 Deck (9 cards, 4R/3B/2G):
 STRIKE, DEAD HEAT, BRACE, PULL / ANALYZE, CALCULATE, DISTRACT / FLOW, MOCKERY
 
@@ -173,7 +173,7 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 | | HP | Deck state |
 |---|----|-----------|
 | Frost | 9 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest) |
-| Steele | 18 / 18 | Clean — Dead Heat's tie denial dodged the only Wound aimed at him |
+| Steele | 17 / 17 | Clean — Dead Heat's tie denial dodged the only Wound aimed at him |
 | Scratcher A | 4 / 9 | Gone |
 | Scratcher B | 9 / 9 | Gone — never took a hit |
 

@@ -14,7 +14,7 @@ Do not draft until all of this is done. Encounters built without calibration end
 2. **`rules/combat-example.md`** — a full fight played out beat by beat. This is what your encounter will feel like at the table; design for that texture.
 3. **`rules/card-glossary.md`** plus the approved keyword list in `experimental/README.md` — exact keyword phrasing only, nothing pending, nothing new without approval.
 4. **Difficulty tier conventions** (`CLAUDE.md`, Stat Blocks) — Early / Mid / Late definitions. If the brief doesn't state a tier, ask before building.
-5. **Two or three bestiary entries near the target tier** — e.g., `bestiary/briar-scratcher.md` and `bestiary/delve-roller.md` for Early. Calibrate stats against them; HP is always (3 × Body) + 6.
+5. **Two or three bestiary entries near the target tier** — e.g., `bestiary/briar-scratcher.md` and `bestiary/delve-roller.md` for Early. Calibrate stats against them; HP defaults to (2 × Body) + 9 (GM may pick a number that fits the fiction).
 6. **The enemy deck convention** (`rules/cards.md`, Deck Building) — 3 signature cards + 4–7 core cards; enemies draw to hand size like everyone else.
 7. **Encounter examples** — `quests/shifting-burrow.md`, `quests/hollow-below-briarwatch.md` — for structure, tone, and how a lesson gets taught through play.
 

@@ -90,7 +90,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 | Soul | Green | Read | d2 (precision) |
 
 - Standard DC: 13 (DM adjusts ±2 for fiction)
-- HP: (3 × Body) + 6
+- HP: (2 × Body) + 9
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
 
