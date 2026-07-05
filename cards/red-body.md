@@ -295,8 +295,8 @@ Range: Both
 **SUNDER**
 RED — BODY
 Attack: Body + d4
-Effect: Target loses 1 Mind permanently this combat. Shuffle 1 Wound into your deck.
-Defensive Bonus: Target loses 1 Mind permanently this combat. Shuffle 1 Wound into your deck.
+Effect: Target loses 1 Mind permanently this combat.
+Defensive Bonus: Target loses 1 Mind permanently this combat.
 Range: Both
 *"Thought breaks under enough weight."*
 
@@ -306,7 +306,7 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: Deal +2 damage for each Wound in defender's hand and discard pile.
-Defensive Bonus: Heal 2 HP for each Wound in your hand and discard pile. Then exile them.
+Defensive Bonus: Heal 2 HP for each Wound in your hand and discard pile. Then destroy them.
 Range: Melee
 *"It was always going to end here."*
 

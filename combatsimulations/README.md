@@ -69,14 +69,17 @@ produced three results, one of which reversed an earlier conclusion.
    put a number on it. (An earlier draft of this file called reader the strong
    brain. It was never tested head-to-head against greedy. It is not.)
 
-2. **Raw stats win the deck matchup; Axiom narrows but doesn't flip it.** Under
-   the strongest brain (tactician), the deck ranking is **Steele > Frost > Mire**:
+2. **Raw stats top the ranking; Axiom narrows but doesn't flip it.** Under the
+   strongest brain (tactician), the deck ranking is **Steele > Mire > Frost**:
 
    | | vs Steele | vs Frost | vs Mire |
    |---|:--:|:--:|:--:|
-   | **Steele** | — | 66.7% | 68.7% |
-   | **Frost**  | 32.6% | — | 56.0% |
-   | **Mire**   | 30.6% | 42.8% | — |
+   | **Steele** | — | 66.7% | 60.9% |
+   | **Frost**  | 32.6% | — | 39.2% |
+   | **Mire**   | 38.6% | 59.7% | — |
+
+   (Mire jumped over Frost once its self-Wound cost was removed — see the Mire
+   section. Steele's Body 4 / HP 18 still beat everyone.)
 
    Steele's Body 4 / HP 18 beat everyone. Valuing **Axiom** is real and
    measurable — it wins the Frost mirror 59/41 and lifts Frost's score vs Steele
@@ -128,42 +131,37 @@ Win rates under the strongest brain (tactician, 20k duels each):
 
 | Matchup | result |
 |---------|:------:|
-| Mire vs Frost  | Frost 57.2% |
-| Mire vs Steele | Steele 68.7% |
+| Mire vs Frost  | **Mire 59.7%** |
+| Mire vs Steele | Steele 60.9% |
 | Mire mirror    | 50/50 |
-
-*(Mire still bottom-tier; the Wound-persistence change hurt it — see below.)*
 
 (Only Wither's Body loss shaves max HP — Body's derived value; Erode drains Soul
 and Sunder drains Mind without touching HP. See the Stat Loss rule.)
 
-What it surfaced:
+What it surfaced — including a fix loop that worked:
 
-1. **Attrition needs time it doesn't get.** Under strong play Mire loses ~67% to
-   *both* Frost and Steele — its Wound engine wants a long game, and both decks
-   close the 15-HP grinder before Wounds pile up. A grinder that can't survive
-   can't grind. (Note: against the weak `reader` brain Mire looks competitive —
-   even beating Steele — but that's reader mis-defending, not Mire winning. Under
-   greedy/tactician the illusion evaporates. A good example of why the policy you
-   test with determines the answer you get.)
-
-2. **Wound payoff is too slow for a duel.** Press the Wound scales with Wounds in
-   the opponent's deck, but seeding enough of them takes more turns than an
-   aggressive opponent grants. The cards are individually fine; the *engine* needs
-   a longer game than PvP provides.
-
-3. **Design signal — persistent Wounds punish self-wounding cards.** When the
+1. **The sim caught a self-inflicted balance bug, and the fix landed.** When the
    Wound rule changed so Wounds no longer auto-discard (they sit in hand until you
-   spend an action), Mire's own **Wither/Erode** — which shuffle a Wound into
-   *your* deck as their cost — got measurably worse (Mire dropped from ~33% to
-   ~23% vs Frost). Mire drowns in its own costs faster than the opponent drowns in
-   the Wounds it inflicts. Not a bug; a real balance signal worth a look if
-   Wither/Erode ever feel bad at the table.
+   spend an action), Mire's own **Wither/Erode/Sunder** — which used to shuffle a
+   Wound into *your own* deck as a cost — started drowning the deck in its own
+   costs. Mire cratered to ~23% vs Frost. The sim flagged it; the self-Wound cost
+   was removed from those cards; Mire jumped to **59.7% vs Frost.** A clean
+   design-loop: sim surfaces the problem → card change → sim confirms the fix.
 
-Takeaway for the table: Mire is bottom-tier in a duel — it loses to burst and to
-raw stats alike. Its real home is PvE, where durable monsters give the Wound
-engine the long game it's built for. That's the sim telling you where the deck
-belongs, not that the deck is weak.
+2. **Mire is a real PvP deck now — against balance, not against stats.** Freed of
+   its self-cost, the Wound-disruption engine (permanent hand-clog + Press the
+   Wound + stat erosion) beats Frost's balanced burst. It still loses to Steele —
+   Body 4 / HP 18 close the game before attrition matters. Attrition beats
+   tempo-neutral decks and loses to raw-stat aggression. That's a healthy,
+   legible matchup triangle.
+
+3. **Reader-brain illusion, for the record.** Against the weak `reader` brain Mire
+   looked ~even with Steele; under strong play that evaporates. A reminder that
+   the policy you test with determines the answer you get.
+
+Takeaway for the table: Mire went from bottom-tier to mid-tier in one card change
+the sim identified. Its ceiling is still PvE, where durable monsters give the
+Wound engine a long game — but it's no longer a trap pick in a duel.
 
 ## The errata queue
 

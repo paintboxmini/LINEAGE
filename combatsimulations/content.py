@@ -214,9 +214,10 @@ def _discard_one_color(engine, me, color):
 
 
 def remove_wounds(target, n=None):
-    """Exile up to n Wounds (all if n is None) from deck+hand+discard."""
+    """Permanently destroy up to n Wounds (all if n is None) from HAND + DISCARD
+    only — never the deck (Drew: no tracking/searching hidden Wounds)."""
     removed = 0
-    for pile in (target.deck, target.hand, target.discard):
+    for pile in (target.hand, target.discard):
         i = 0
         while i < len(pile):
             if pile[i].is_status and pile[i].name == 'WOUND' and (n is None or removed < n):
@@ -248,8 +249,7 @@ def _balance_defense(engine, me, foe):
 
 def _wither_effect(engine, me, foe):
     if not warded(foe):
-        foe.adjust('body', -1)   # -1 Body AND -3 max HP for the combat
-    engine.shuffle_wound(me)
+        foe.adjust('body', -1)   # -1 Body AND -3 max HP; no self-Wound cost anymore
 
 
 def _mockery_effect(engine, me, foe):
@@ -321,8 +321,7 @@ def _taint_defense(engine, me, foe):
 
 def _erode_effect(engine, me, foe):
     if not warded(foe):
-        foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body)
-    engine.shuffle_wound(me)
+        foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body); no self-cost
 
 
 # ============================ REGISTRY =======================================

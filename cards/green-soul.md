@@ -295,8 +295,8 @@ Range: Both
 **WITHER**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target loses 1 Body this combat. Shuffle 1 Wound into your deck.
-Defensive Bonus: Target loses 1 Body this combat. Shuffle 1 Wound into your deck.
+Effect: Target loses 1 Body this combat.
+Defensive Bonus: Target loses 1 Body this combat.
 Range: Both
 *"The river doesn't fight the stone. It just outlasts it."*
 
@@ -305,8 +305,8 @@ Range: Both
 **FIELD MEDICINE**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Exile 1 Wound from target ally's deck. That ally heals 3 HP.
-Defensive Bonus: Exile all Wounds from your deck.
+Effect: Destroy 1 Wound in target ally's hand or discard pile. That ally heals 3 HP.
+Defensive Bonus: Destroy all Wounds in your hand and discard pile.
 Range: Ranged
 *"Not healed. Held together."*
 
