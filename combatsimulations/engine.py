@@ -94,6 +94,7 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
+        self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
         self.evade = 0
@@ -213,6 +214,16 @@ class Duel:
 
     def other(self, who):
         return self.combatants[1] if who is self.combatants[0] else self.combatants[0]
+
+    # Team API shared with the Battle engine, so one set of card effects serves
+    # both. In a 1v1 there are no allies (ally effects stay no-ops, exactly as
+    # before) and exactly one enemy.
+    def allies(self, me):
+        return []
+
+    def enemies(self, me):
+        foe = self.other(me)
+        return [] if foe.collapsed else [foe]
 
     # --- setup: opening hands drawn when initiative is rolled ---
     def setup(self):

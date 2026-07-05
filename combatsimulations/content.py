@@ -117,10 +117,9 @@ def _forget_defense(engine, me, foe):
 
 def _blood_tithe_effect(engine, me, foe):
     engine.deal(me, 2, unpreventable=True)
-    RULING("blood-tithe-dead-heal",
-           "BLOOD TITHE effect 'heal an ally for 4' has no legal target in a duel "
-           "(You Are Not Your Own Ally) — the 4 HP is wasted; only the 2 self-"
-           "damage applies.")
+    allies = engine.allies(me)     # heal the most-hurt ally 4 (dead in 1v1)
+    if allies:
+        engine.heal(min(allies, key=lambda a: a.hp), 4)
 
 
 def _blood_tithe_defense(engine, me, foe):
@@ -190,10 +189,20 @@ def _anticipate_defense(engine, me, foe):
         foe.next_attack_bonus -= 3  # target's next attack deals -3
 
 
+def _renewal_effect(engine, me, foe):
+    for a in engine.allies(me):    # all allies heal 2 (dead in 1v1)
+        engine.heal(a, 2)
+
+
 def _renewal_defense(engine, me, foe):
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]  # discard a real card
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
+
+
+def _twin_strike_defense(engine, me, foe):
+    for a in engine.allies(me):    # next ally to attack +3 (simplified to all allies)
+        a.next_attack_bonus += 3
 
 
 # ==================== MIRE (Wound-attrition, 3/3/3) ==========================
@@ -257,9 +266,7 @@ def _mockery_effect(engine, me, foe):
 
 
 def _mockery_defense(engine, me, foe):
-    RULING("mockery-taunt-dead",
-           "MOCKERY def 'target must attack you if able' is inert in a 1v1 — the "
-           "foe has only one target already.")
+    foe._forced_target = me   # taunt: attacker must target me next turn (team play)
 
 
 # --- Red ---
@@ -349,7 +356,8 @@ def build_cards():
     add("CLIMB", 'B', 'mind', 'both', 4, defense=_climb_defense)            # effect ~ deck-order, DEAD
     add("FRACTURE", 'B', 'mind', 'ranged', 4, damage=_fracture_dmg)
     # Frost — Green
-    add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg)  # def DEAD (allies)
+    add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
+        defense=_twin_strike_defense)   # def buffs next ally (team play)
 
     # Steele — Red
     add("BLOOD TITHE", 'R', 'body', 'both', 4,
@@ -370,7 +378,8 @@ def build_cards():
     add("ANTICIPATE", 'B', 'mind', 'melee', 4, defense=_anticipate_defense)   # effect DEAD (info)
     # Steele — Green
     add("SPIRAL CURRENT", 'G', 'soul', 'both', 4, effect=_spiral_current_effect)  # def DEAD
-    add("RENEWAL", 'G', 'soul', 'both', 4, defense=_renewal_defense)              # effect DEAD (allies)
+    add("RENEWAL", 'G', 'soul', 'both', 4,
+        effect=_renewal_effect, defense=_renewal_defense)   # effect heals allies (team play)
 
     # Mire — Green
     add("BALANCE", 'G', 'soul', 'ranged', 4,
