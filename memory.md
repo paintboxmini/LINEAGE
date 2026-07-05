@@ -155,6 +155,15 @@ Flatter curve to decouple HP from Body and reduce Body's damage+HP double-dip. C
 
 **GAME LENGTH is the master balance variable (big finding).** Tested shifting ALL damage dice up/down one size (sim only, not applied): dice DOWN → Steele 66%→56% vs Frost (games longer, 8.6 turns); dice UP → Steele 66%→70% (games faster, 7.0 turns). Monotonic. Bigger dice = faster games = raw-stat power converts to wins more directly (fewer decisive hits, less room for reads/card-play). Smaller dice = longer games = flat stat advantage grinds through more RPS variance and dilutes. This unifies all balance findings: HP-flatten helped a little (slightly longer games), single-card dice nerfs did nothing (too small to change length), a blanket dice-DOWN would help a lot (shortens nothing, lengthens everything). The RPS mind-game, reads, and card advantage all NEED turns to exist; speed kills them and rewards whoever hits hardest. So to dilute stat-max: lengthen games (smaller dice / more HP / cheaper defense), never shorten them. Drew's "shift dice UP" suggestion does the opposite — DON'T. No canon change made yet; direction TBD.
 
+**Full lever sweep (all sim-tested, only HP-flatten applied):** for reining in Steele's ~66% dominance —
+- HP decouple 2×Body+9: mild help (~2pts). APPLIED/canon.
+- Single-card dice nerfs (5 cards): ~0 effect (too small to change game length).
+- Dice UP one size: WORSE (66→70%, faster games).
+- Dice DOWN one size: HELPS most (66→56%, longer games) but blunt/drags/feel cost.
+- Remove dice entirely (flat damage): slightly WORSE (66→69%) — removes the underdog's variance, and would gut the "d-scale damage dice" core identity. DON'T.
+- Stat cap (die + min(stat,N)): ruled out by Drew.
+CONCLUSION: the ONLY reliable dilution of stat-max is LENGTHENING games, and within that VARIANCE HELPS THE UNDERDOG (so flat damage / faster games hurt). Best remaining lever = DEFENSE ECONOMY (make blocking more available/effective → longer games, no single hit decisive), which lengthens without shrinking dice or gutting identity. BUT also worth questioning whether it's a problem at all: stat-maxing (Volk) is self-defeating (loses to everyone); Steele's ~66% is modest and comes from GOOD deckbuilding (high primary + viable secondary), which is arguably healthy. Open design question for Drew.
+
 **Range definitions**
 Quick reference sheet is canonical. Melee: both must be Frontline. Ranged: works only while not in Melee range with target.
 
