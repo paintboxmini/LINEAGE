@@ -27,6 +27,8 @@ tactician = best brain (greedy recency-read + aggression + Axiom/Spark weighting
 
 **Self-Wound cost REMOVED from stat-reduction cards (Drew):** Sunder (Mind), Erode (Soul), Wither (Body) no longer "Shuffle 1 Wound into your deck" — that self-cost was crippling under persistent Wounds. Sim confirmed: Mire went ~23% → 59.7% vs Frost. New deck ranking under tactician: Steele > Mire > Frost (Mire jumped Frost). Wound-removal cards (Press def, Taint def, Field Medicine, Shed Skin) now say "destroy" (permanent) not "exile" (which returns at combat end), and remove from hand/discard only. Clean design loop: sim flagged bug → card fix → sim confirmed.
 
+**Stat-maxing finding:** stat-maxing is a TRAP, not a balance problem — the system self-corrects on two axes. Tested a Body-5 red-heavy deck ("volk" in roster): loses to balanced Frost 21%, crushed 89% by the anti-mono `punisher` brain (hoards the counter color to the foe's dominant color — Drew's idea, it works). Mono-color → hard-countered by RPS. Balanced colors on a 5/2/2 line → off-stat cards hit for Mind/Soul 2, toothless (~40-48% vs field). The actually-strong build is Steele's 4/3/2 (high primary + viable secondary color), which is a spread, not a max. If anything's too strong it's the moderate spread, and the lever would be Body's double-dip (damage + HP), not stat allocation. `punisher` and `volk` added to sim.
+
 **Sim next step:** the real goal is a full TEAM-vs-TEAM simulator. Current 1v1 is step one — some cards (Mockery taunt, Partition shield, ally buffs) correctly do nothing in a duel and wait for the team sim. Not expanding to teams yet.
 
 ---

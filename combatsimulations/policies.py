@@ -225,6 +225,43 @@ class TacticianPolicy:
                                   if foe.attack_history else 'B')
 
 
+class PunisherPolicy(TacticianPolicy):
+    """The anti-stat-max brain. Everything the tactician does, plus the piece the
+    tactician lacks: CARD CONSERVATION against a color-reliant opponent.
+
+    When the foe leans hard on one attack color, the counter to that color is
+    precious — it wins the reveal every time the foe attacks. The tactician
+    happily spends its counters as attacks; the punisher hoards them. If the foe
+    is mono-reliant and I'm down to my last counter-color card, I won't fire it as
+    an attack — I hold it to block. That's the maximal legal punishment for
+    over-relying on one stat/color.
+    """
+    name = "punisher"
+    RELIANCE = 0.55  # foe counts as "color-reliant" above this share of one color
+
+    def _dominant(self, foe):
+        h = foe.attack_history
+        if not h:
+            return None
+        color, n = h.most_common(1)[0]
+        return color if n / sum(h.values()) >= self.RELIANCE else None
+
+    def choose_action(self, engine, me, foe):
+        atks = legal_attacks(engine, me, foe)
+        if not atks:
+            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
+        dom = self._dominant(foe)
+        if dom:
+            counter = _BEATEN_BY[dom]                      # color I defend dom with
+            held = [c for c in me.hand if not c.is_status and c.color == counter]
+            non_counter = [c for c in atks if c.color != counter]
+            # if firing a counter would leave me unable to block the dominant
+            # color next turn, attack with something else instead
+            if non_counter and len(held) <= 1:
+                atks = non_counter
+        return ('attack', max(atks, key=lambda c: self._value(engine, me, foe, c)))
+
+
 # Note: a standalone "tracker" brain that PREDICTED from deck state (decklist
 # minus discard) was tried and removed. It lost ~85% to the tactician — in tiny
 # reshuffling decks, "what's left in the deck" barely predicts the next draw, and
@@ -234,10 +271,12 @@ class TacticianPolicy:
 # (_color_exhausted). Situational, as Drew put it — never the whole strategy.
 
 POLICIES = {p.name: p for p in
-            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(), TacticianPolicy()]}
+            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(),
+             TacticianPolicy(), PunisherPolicy()]}
 
 
 def make_policy(name):
     """Fresh instance (stateful policies must never be shared)."""
     return {'random': RandomPolicy, 'greedy': GreedyPolicy,
-            'reader': ReaderPolicy, 'tactician': TacticianPolicy}[name]()
+            'reader': ReaderPolicy, 'tactician': TacticianPolicy,
+            'punisher': PunisherPolicy}[name]()

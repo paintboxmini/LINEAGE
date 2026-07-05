@@ -415,13 +415,24 @@ MIRE_DECK = [
     "PRESS THE WOUND", "PARTITION", "TAINT", "ERODE",
 ]
 
+# VOLK — the stat-maxed test dummy: Body 5 (the cap), red-heavy. Represents the
+# "problem" build — dump every point into one stat and spam its color. Two
+# off-color cards keep it from being trivially hard-countered.
+VOLK_DECK = [
+    "SACRIFICE STRIKE", "BURN BRIGHT", "SPARK OF VIOLENCE", "BLOOD IN THE GAP",
+    "PAIN IS FUEL", "GAMBLER'S RUIN", "BLOOD TITHE",   # 7 red
+    "DEFLECT", "TWIN STRIKE",                           # 1 blue, 1 green (implemented)
+]
+
 FROST_STATS = dict(body=3, mind=3, soul=3)
 STEELE_STATS = dict(body=4, mind=3, soul=2)
 MIRE_STATS = dict(body=3, mind=3, soul=3)
+VOLK_STATS = dict(body=5, mind=2, soul=2)   # HP 21
 
 # registry so run.py can pit any two decks against each other
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
     "steele": (STEELE_STATS, STEELE_DECK),
     "mire":   (MIRE_STATS, MIRE_DECK),
+    "volk":   (VOLK_STATS, VOLK_DECK),
 }

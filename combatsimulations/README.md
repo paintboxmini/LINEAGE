@@ -52,7 +52,11 @@ No dependencies. Python 3.8+.
   help without hurting any deck: valuing Axiom's color ban (and an unpreventable
   Spark to finish), and a **situational deck-tracking safety check** — if a color
   the foe needs to beat your attack is fully exhausted into their discard, that
-  attack is risk-free (finding 4). **The strongest brain.**
+  attack is risk-free (finding 4). **The strongest general brain.**
+- **punisher** — the tactician plus card conservation against a color-reliant
+  opponent: hoard the counter to their dominant color instead of spending it on
+  attacks. Purpose-built to punish stat-maxing (finding 5). Beats the tactician
+  only against mono-color foes; ties it otherwise.
 
 Add your own by implementing three methods (see the module docstring).
 
@@ -110,6 +114,34 @@ produced three results, one of which reversed an earlier conclusion.
    tactician (`_color_exhausted`), and it's pure upside: it lifted the tactician
    over greedy across *every* deck (Frost 59%→65%, Mire 50%→58%). The lesson:
    don't track to guess what's coming; track to know when you can't lose.
+
+5. **Stat-maxing is a trap, not a threat — the system self-corrects on two
+   independent axes.** A Body-5 (the cap) red-heavy deck, "Volk," is the classic
+   dump-everything-in-one-stat build. It *loses*:
+
+   | Volk (Body 5, 7 red) vs | tactician | vs a `punisher` brain |
+   |---|:--:|:--:|
+   | Frost (balanced 3/3/3) | 21.0% | **9.7%** |
+   | Steele (4/3/2)         | 24.2% | 24.0% |
+   | Mire (3/3/3)           | 64.7% | 39.9% |
+
+   Two forces punish it at once:
+   - **RPS hard-counter.** Spam one color and a defender who holds the counter
+     wins *every* reveal. The `punisher` brain (hoard the counter to that color,
+     never spend it attacking) takes Frost from 78% to **89%** against Volk —
+     Drew's anti-mono idea, and it works.
+   - **Wasted off-stat cards.** To stop being predictable you diversify — but on a
+     5/2/2 line your blue/green cards hit for Mind/Soul 2. A Body-5 deck with
+     *balanced* colors is mediocre too (40–48% vs the field): unpredictable but
+     toothless.
+
+   So maxing loses whether you go mono (countered) or diverse (weak off-stat
+   cards). **The actually-strong build is Steele's 4/3/2** — a high primary for
+   power plus a secondary high enough to keep a second color genuinely
+   threatening. That's not maxing, it's a spread. If any allocation is "too
+   strong," it's the moderate one, and the lever would be **Body's double-dip**
+   (it buys damage *and* HP), not anything about maxing. The stat economy already
+   discourages dumping points into one stat — the sim just proved it.
 
 Initiative is worth ~52–55% under strong play — an edge, not a verdict.
 
