@@ -91,3 +91,7 @@ Card effects that reference "allies" or "enemies" never apply to the card's user
 If a card says *"all allies in your position,"* that means every other character sharing your position — not you.
 
 The exception: cards that explicitly name *yourself* as the target (e.g., a self-damage card) apply as written.
+
+### Green counts itself among its allies
+
+**Green (Soul) cards are the exception to the rule above.** A Green card's ally-facing effects — heals, buffs, Resist, card draw, and the like — may treat the user as one of their own allies. When a Green card says "an ally" or "all allies," the caster is a valid target (and "all allies" includes them). This is Green's identity: its support turns inward as readily as outward, so a lone Soul character is never without someone to mend or strengthen. (Green effects that only make sense aimed at *someone else* — redirecting another's incoming damage to you — still need a separate target.)

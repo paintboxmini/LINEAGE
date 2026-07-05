@@ -190,7 +190,7 @@ def _anticipate_defense(engine, me, foe):
 
 
 def _renewal_effect(engine, me, foe):
-    for a in engine.allies(me):    # all allies heal 2 (dead in 1v1)
+    for a in _team(engine, me):    # you and all allies heal 2
         engine.heal(a, 2)
 
 
@@ -201,7 +201,7 @@ def _renewal_defense(engine, me, foe):
 
 
 def _twin_strike_defense(engine, me, foe):
-    for a in engine.allies(me):    # next ally to attack +3 (simplified to all allies)
+    for a in _team(engine, me):    # you or next ally +3
         a.next_attack_bonus += 3
 
 
@@ -336,6 +336,14 @@ def _erode_effect(engine, me, foe):
 # in 1v1 (engine.allies == []) and come alive in a Battle. Targeting heuristics
 # are baked in: heals go to the most-hurt ally, buffs to the best attacker.
 
+# Green's support can target the user too — its effects treat the caster as a
+# valid "ally." This is green's color identity and it's what gives green a floor
+# in 1v1 (where it otherwise has no ally to support). Only Body/Mind's own
+# effects still obey You-Are-Not-Your-Own-Ally.
+def _team(engine, me):
+    return [me] + engine.allies(me)
+
+
 def _best_attacker(allies):
     return max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul'))) \
         if allies else None
@@ -346,15 +354,15 @@ def _most_hurt(allies):
 
 
 def _resonate_effect(engine, me, foe):
-    for a in engine.allies(me):
+    for a in _team(engine, me):
         a.next_attack_bonus += 2          # all allies +2 next attack
 def _resonate_defense(engine, me, foe):
-    for a in engine.allies(me):
+    for a in _team(engine, me):
         a.resist += 1                     # all allies gain Resist 1
 
 
 def _support_effect(engine, me, foe):
-    a = _best_attacker(engine.allies(me))
+    a = _best_attacker(_team(engine, me))
     if a:
         a.next_attack_bonus += 3          # next ally to attack +3
 def _support_defense(engine, me, foe):
@@ -366,7 +374,7 @@ def _support_defense(engine, me, foe):
 
 
 def _conduct_effect(engine, me, foe):
-    a = _best_attacker(engine.allies(me))
+    a = _best_attacker(_team(engine, me))
     if a:
         a.next_attack_bonus += 2
 def _conduct_defense(engine, me, foe):
@@ -378,11 +386,11 @@ def _conduct_defense(engine, me, foe):
 
 
 def _witness_effect(engine, me, foe):
-    a = _most_hurt(engine.allies(me))
+    a = _most_hurt(_team(engine, me))
     if a:
         engine.heal(a, 3)
 def _witness_defense(engine, me, foe):
-    a = _most_hurt(engine.allies(me))
+    a = _most_hurt(_team(engine, me))
     if a:
         engine.heal(a, 3)
 
