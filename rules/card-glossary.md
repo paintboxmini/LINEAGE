@@ -108,7 +108,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 Cannot be played.
 You may use your action to discard this card.
 *Effect when discarded: none.*
-1 Wound may be removed per short rest.
+1 Wound may be permanently removed from hand or discard per short rest.
 
 ---
 
