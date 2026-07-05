@@ -32,48 +32,47 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   rolls summed, not one roll doubled. Drew ruling; matches the sim.
 - **blood-tithe-dead-heal** — In a duel the "heal an ally for 4" half is wasted
   (You Are Not Your Own Ally); Blood Tithe is pure self-harm in 1v1. Working as
-  intended (Drew) — the card is built for party play, and PvP is a design
-  instrument, not a supported mode.
+  intended (Drew) — a party-play card, and PvP is a design instrument.
+- **twin-strike-double-roll** — Two independent (Soul + d2) rolls summed. Drew.
+- **balance-double / balance-knockdown** — Balance's double-hit and its knockdown
+  (foe loses their next action to stand) are the intended implementation. Drew.
+- **stat-change-derived** — A changed stat drives its own derived value in real
+  time: **Body → max HP** (±3/point, clamps HP, can Collapse — Body ONLY touches
+  HP), **Mind → hand size** (live; forces a discard if now over), **Soul →
+  initiative**. Both directions. General rule in `rules/card-glossary.md` (Stat
+  Change); sim in `Combatant.adjust`.
+- **press-the-wound-counts** — Counts Wounds in deck + hand + **discard** (Drew).
+  Taint's "already has a Wound" uses the same count. Sim: `wounds_total`.
+- **wound-persists** — A Wound no longer auto-discards; it sits in the hand
+  occupying a slot until an **action** discards it (or a short rest). Drew; in the
+  glossary WOUND entry, the engine, and the worked example.
+- **debuff-scope** — Debuff = status conditions, status cards, stat reductions,
+  forced moves (Ward blocks these). Discard and scry-your-deck are NOT debuffs and
+  ignore Ward (Obscure answers those instead). Drew; in the glossary Debuff entry.
+- **equal-footing-floor** — Consumed by the next attack against you regardless of
+  outcome (a miss or a defended hit still spends it). Now modeled that way in the
+  engine.
 
-## Open (simplifications / needs a call)
-- **gap-retaliate** — Blood in the Gap's defensive "if damaged before your next
-  turn, steal 2 each time" is modeled as a single next-damage rider, not a
-  persistent per-instance one. Simplified; low impact.
-- **align-scry-simplified** — Align's scry-2 information is not consumed by any
-  policy (no hidden-info brain yet); only its conditional draw is modeled.
-- **ward-blocks-debuff** — Ward/Deflect treats forced move, discard, and damage
-  penalties as debuffs it can block. Follows the glossary Debuff definition;
-  listed so the breadth of "debuff" is visible.
-- **stalemate-cap** — Duels past the turn cap are scored draws (engine safeguard,
-  not a rule). Effectively never triggers with attacking policies.
+## Expected in 1v1 — will matter in the team sim
 
-### Surfaced by the Mire (Wound-attrition) deck
+Not gaps: these are cards whose text needs allies or multiple enemies, so they
+correctly do nothing in a duel. The full goal is a team-vs-team sim; flagged so
+they aren't mistaken for bugs.
 
-RESOLVED:
+- **mockery-taunt-dead / partition-shield-dead** — "must attack you" / "ally
+  can't be targeted" need more than one enemy / an ally to matter.
+- **initiative-shift-remainder** — Mockery's Shift −2 cleanly becomes "skip a
+  turn" on a 2-seat wheel; the positional remainder only bites with 3+ combatants.
+- **positive-initiative-shift-unmodeled** — no current card grants extra turns.
 
-- **stat-loss-derived** — A reduced stat lowers whatever it governs for the
-  combat: Body → −3 max HP per point (clamps current HP, can Collapse); Mind →
-  hand size; Soul → initiative. **Only Body touches HP** (Drew ruling). Now a
-  general rule in `rules/card-glossary.md` (Stat Loss); the sim implements the
-  Body→HP half in `Combatant.erode`.
-- **press-the-wound-counts** — "each Wound in the deck" counts deck + hand, not
-  discard (Drew ruling). Taint's "already has a Wound" check uses the same count.
+## Open (genuine engine simplifications)
 
-OPEN:
-
-- **equal-footing-floor** — The def "next attack cannot reduce you below the
-  attacker's HP" is consumed by the next attack regardless of outcome; modeled at
-  the damage step. The "successful or not" nuance (a missed attack also removes
-  it) is simplified.
-- **balance-knockdown** — "knock down (requires an Action to stand)" is modeled as
-  the foe losing their next action. Confirm that's the intent vs. some other
-  standing cost.
-- **initiative-shift-remainder** — In the 2-combatant duel, Mockery's Shift −2
-  reduces cleanly to "foe skips a turn." The sub-wheel positional remainder that
-  would matter with 3+ combatants is not modeled here.
-- **mockery-taunt-dead / partition-shield-dead** — Both defensive bonuses target
-  an ally / assume multiple enemies, so they're inert in 1v1 (correct by You Are
-  Not Your Own Ally). Flagged as party-play cards, like Blood Tithe.
+- **gap-retaliate** — Blood in the Gap's "steal 2 each time you're damaged" is a
+  single next-damage rider, not a persistent per-instance one. Low impact.
+- **align-scry-simplified** — Align's scry-2 information isn't consumed by any
+  policy; only its conditional draw is modeled.
+- **stalemate-cap** — duels past the turn cap score as draws (engine safeguard,
+  not a rule); effectively never triggers with attacking policies.
 
 ---
 

@@ -44,13 +44,16 @@ No dependencies. Python 3.8+.
 
 - **random** — legal-but-thoughtless baseline.
 - **reader** — predicts the opponent's *most-frequent* attack color and counters
-  it. Sounds smart; the tournament shows it's the weakest non-random brain (see
-  below). Kept as a cautionary control.
+  it. Sounds smart; the tournament shows it's the weakest non-random brain.
+  Cautionary control.
 - **greedy** — attacks for max expected damage; defends by predicting the foe's
-  *last* color. The strongest of the simple brains.
+  *last* color. Strongest of the simple brains.
 - **tactician** — greedy's recency-read and aggression, plus the one upgrade that
   helped without hurting any deck: valuing Axiom's color ban (and an unpreventable
-  Spark to finish a low foe). The overall strongest brain.
+  Spark to finish a low foe). **The strongest brain.**
+- **tracker** — a card-counter that predicts from the foe's tracked deck state
+  (decklist minus discard). It *should* be strongest; it's one of the weakest
+  (loses ~85% to tactician). A documented failure — see finding 4.
 
 Add your own by implementing three methods (see the module docstring).
 
@@ -90,6 +93,18 @@ produced three results, one of which reversed an earlier conclusion.
    tactician. Worth knowing at the table: don't sandbag your best color to be
    cute unless your other colors are genuinely as threatening.
 
+4. **Deck-tracking (card-counting) fails here.** A brain that memorizes the
+   opponent's decklist and watches their discard to infer what's left — cheap,
+   O(1), not even hidden info — *loses ~85%* to the recency brain. The reason is a
+   property of the game: decks are tiny (9–10 cards) and reshuffle constantly, so
+   "what's in the discard" barely predicts the next draw — it all cycles back
+   within a few turns. Worse, a color the foe plays *often* depletes from their
+   deck fastest, so availability-tracking reads it as unlikely right before a
+   reshuffle hands it back. Card-counting needs a large, non-recycling deck
+   (blackjack's shoe). **In small reshuffling decks, recency beats deck-state.**
+   A genuinely useful negative result — it says don't bother tracking, just watch
+   their last move.
+
 Initiative is worth ~52–55% under strong play — an edge, not a verdict.
 
 Caveat that cuts the other way now: these are still just four hand-written
@@ -110,9 +125,11 @@ Win rates under the strongest brain (tactician, 20k duels each):
 
 | Matchup | result |
 |---------|:------:|
-| Mire vs Frost  | Frost 67.1% |
-| Mire vs Steele | Steele 67.0% |
-| Mire mirror    | 50/50, ~9 turns |
+| Mire vs Frost  | Frost 71.0% |
+| Mire vs Steele | Steele 70.3% |
+| Mire mirror    | 50/50 |
+
+*(Numbers dropped after the Wound-persistence change — see below.)*
 
 (Only Wither's Body loss shaves max HP — Body's derived value; Erode drains Soul
 and Sunder drains Mind without touching HP. See the Stat Loss rule.)
@@ -131,6 +148,14 @@ What it surfaced:
    the opponent's deck, but seeding enough of them takes more turns than an
    aggressive opponent grants. The cards are individually fine; the *engine* needs
    a longer game than PvP provides.
+
+3. **Design signal — persistent Wounds punish self-wounding cards.** When the
+   Wound rule changed so Wounds no longer auto-discard (they sit in hand until you
+   spend an action), Mire's own **Wither/Erode** — which shuffle a Wound into
+   *your* deck as their cost — got measurably worse (Mire dropped from ~33% to
+   ~23% vs Frost). Mire drowns in its own costs faster than the opponent drowns in
+   the Wounds it inflicts. Not a bug; a real balance signal worth a look if
+   Wither/Erode ever feel bad at the table.
 
 Takeaway for the table: Mire is bottom-tier in a duel — it loses to burst and to
 raw stats alike. Its real home is PvE, where durable monsters give the Wound

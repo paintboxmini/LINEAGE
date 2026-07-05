@@ -118,22 +118,28 @@ class Combatant:
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
 
-    def erode(self, stat, n=1):
-        """Lower a stat for the combat. Only Body loss touches max HP (Body's
-        derived value): -3 per point, clamping current HP and collapsing at 0.
-        Mind/Soul loss reduces their own derived values (handled via eff())."""
-        self.stat_mod[stat] -= n
+    def adjust(self, stat, delta):
+        """Change a stat for the combat by delta (negative = loss). Each stat
+        drives its own derived value in real time:
+          Body -> max HP (±3 per point; clamp current HP, Collapse at 0)
+          Mind -> hand size (force discard if now over)
+          Soul -> initiative (applies to future rolls only)
+        Only Body touches HP (Drew ruling)."""
+        self.stat_mod[stat] += delta
         if stat == 'body':
-            self.max_hp = max(1, self.max_hp - 3 * n)
+            self.max_hp = max(1, self.max_hp + 3 * delta)
             if self.hp > self.max_hp:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:
                 self.collapsed = True
+        elif stat == 'mind':
+            while len(self.hand) > self.effective_hand_size():
+                self.discard.append(self.hand.pop())  # forced discard down to size
 
-    def wounds_in_play(self):
-        """Wounds currently threatening — deck + hand (not discard). Press the
-        Wound and Taint count these (Drew ruling: hand and deck)."""
-        return sum(1 for c in (self.deck + self.hand)
+    def wounds_total(self):
+        """Every Wound in this deck — deck + hand + discard. Press the Wound and
+        Taint count all of them (Drew ruling: hand, deck, and discard)."""
+        return sum(1 for c in (self.deck + self.hand + self.discard)
                    if c.is_status and c.name == 'WOUND')
 
     # --- deck plumbing ---
@@ -159,7 +165,7 @@ class Combatant:
 
     def effective_hand_size(self):
         bonus = sum(1 for o in self.ongoing if o['kind'] == 'handsize')
-        return self.hand_size + bonus
+        return max(0, self.eff('mind') + 1) + bonus  # Mind drives hand size live
 
     def death_floor(self):
         import math
@@ -232,11 +238,8 @@ class Duel:
             # Equal Footing: this attack cannot reduce target below the floor.
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
-            target._damage_floor = None  # removed by any attack
-            RULING("equal-footing-floor",
-                   "EQUAL FOOTING def caps the next attack so it can't reduce you "
-                   "below the attacker's HP at trigger time; consumed by the next "
-                   "attack regardless of outcome (simplified to on-damage here).")
+            # floor is cleared in attack() after the exchange, so it is removed by
+            # the next attack whether or not that attack dealt damage.
         # a single normal attack cannot push below 0 (clamp); extra damage while
         # collapsed can. We treat any single application atomically.
         pre = target.hp
@@ -290,6 +293,7 @@ class Duel:
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
                 self._say(f"  {defender.name} EVADES — attack misses")
+                defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
         # Defender chooses a defense BLIND — reveals are simultaneous, so the
@@ -311,6 +315,7 @@ class Duel:
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
             self._resolve_attacker_win(attacker, defender, card, contested=False)
+            defender._damage_floor = None
             return
 
         defender.hand.remove(def_card)
@@ -333,6 +338,7 @@ class Duel:
             card.effect(self, attacker, defender)
             attacker._tie = False
             def_card.defense(self, defender, attacker)
+        defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
         base = self._rps_base(atk_card.color, def_card.color)
@@ -415,8 +421,14 @@ class Duel:
             elif kind == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
                 self._say(f"{who.name} moves to {who.position}")
-        # end of turn: Wounds discard themselves; clear one-turn restrictions.
-        who.hand = [c for c in who.hand if not (c.is_status and c.name == 'WOUND')]
+            elif kind == 'discard_wound':
+                for i, c in enumerate(who.hand):
+                    if c.is_status and c.name == 'WOUND':
+                        who.discard.append(who.hand.pop(i))
+                        self._say(f"{who.name} discards a Wound (action)")
+                        break
+        # Wounds no longer leave on their own — they sit until an action or rest
+        # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
 
     def _finish(self, winner):

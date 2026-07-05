@@ -111,13 +111,13 @@ Frost's hand: REFRACT.
 
 Draws to 4 → draws 3 from his 6-card deck: ENDURE, **WOUND**, FLOW. Hand: REFRACT, ENDURE, WOUND, FLOW.
 
-The Wound arrives. It **cannot be played** and sits in the hand until it discards itself at end of turn (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 3-card hand. That's the whole Scratcher lesson, two turns after the claw landed.
+The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 3-card hand, and it stays that way until he pays to fix it. That's the whole Scratcher lesson, two turns after the claw landed.
 
 **Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 9 → 4. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
 
 Note what Frost could *not* do: his REFRACT (Ranged) is unplayable as an attack against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target. In melee it's only good to him as a defense reveal.
 
-End of turn: the **WOUND discards itself.** Frost's hand: REFRACT, FLOW.
+End of turn: the **WOUND stays in hand** — it isn't going anywhere until Frost pays to remove it. Frost's hand: REFRACT, FLOW, WOUND.
 
 ### Scratcher A's turn
 
@@ -152,7 +152,7 @@ NIP AND TEAR is Melee and B is still Backline. **Action: Move Position** — B c
 
 ### Frost's turn
 
-REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding only FLOW. He draws to 4 — PUSH, STILLNESS, WITNESS — and his deck is now **empty**. Hand: FLOW, PUSH, STILLNESS, WITNESS. The next time he needs to draw, his discard pile — Wound included — shuffles into a new deck first (`rules/combat.md`, Turn Structure). Frost is at 9 HP and his deck is carrying a passenger it can't put down until the party rests.
+REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding FLOW and the **WOUND**. He draws to 4 — but the Wound occupies a slot, so he draws only two real cards, PUSH and STILLNESS, and never reaches WITNESS, which stays buried in his deck. Hand: FLOW, PUSH, STILLNESS, WOUND — three cards he can actually play. That's the Wound's real cost: not the 2 damage that put it there, but the card it's quietly keeping out of his hand every turn until he spends an action to be rid of it. Frost is at 9 HP and carrying a passenger he can't put down until the party rests.
 
 **Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d6, Melee). B reveals **SKITTER AWAY** (Blue). **Blue beats Red — defender wins.** No damage. Defensive Bonus: B gains **Evade**.
 
@@ -172,12 +172,12 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
 | | HP | Deck state |
 |---|----|-----------|
-| Frost | 9 / 15 | **1 Wound** in the pile — reshuffles back into his deck; removable at short rest (1 per rest) |
+| Frost | 9 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest) |
 | Steele | 18 / 18 | Clean — Dead Heat's tie denial dodged the only Wound aimed at him |
 | Scratcher A | 4 / 9 | Gone |
 | Scratcher B | 9 / 9 | Gone — never took a hit |
 
-Frost's Wound doesn't heal with HP. It rides in his deck into Briarwatch and the Hollow below it, where a clogged hand starts to matter (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
+Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole action on it or takes a short rest. It rides in his deck into Briarwatch and the Hollow below it, surfacing into his hand to eat a slot every time it's drawn (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
 
 ---
 
@@ -188,7 +188,7 @@ Frost's Wound doesn't heal with HP. It rides in his deck into Briarwatch and the
 - **All four resolution outcomes:** attacker win (damage + Effect), defender win (no damage + Defensive Bonus), tie (no damage, Effect then Defensive Bonus — including the cancellation clause), and the automatic win when the defender declines.
 - **Simultaneous reveal:** defense is a prediction. Frost guessed wrong twice; that's the game.
 - **Range is positional law:** melee needs both Frontline; Ranged fails inside melee range; Both is always legal. B lost a full turn crossing the field to get claw-range.
-- **Status flow:** Evade (spent on one attack, whether or not it dodges), Resist (halves one hit), and the Wound life cycle — enters the deck, clogs a hand for one turn, discards, returns on reshuffle, leaves only at a short rest.
+- **Status flow:** Evade (spent on one attack, whether or not it dodges), Resist (halves one hit), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
 - **You Are Not Your Own Ally** unless the card says "you and."
 
 ---

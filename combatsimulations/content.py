@@ -102,8 +102,11 @@ def _climb_defense(engine, me, foe):
 # ============================ STEELE =========================================
 
 def _forget_effect(engine, me, foe):
-    if foe.hand and not warded(foe):
-        foe.discard.append(foe.hand.pop(engine.rng.randrange(len(foe.hand))))
+    # Discard ignores Ward (not a debuff). Discard a real card, not a Wound —
+    # forcing away their Wound would help them.
+    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
+    if reals:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
 
 
 def _forget_defense(engine, me, foe):
@@ -188,8 +191,9 @@ def _anticipate_defense(engine, me, foe):
 
 
 def _renewal_defense(engine, me, foe):
-    if foe.hand:
-        foe.discard.append(foe.hand.pop(engine.rng.randrange(len(foe.hand))))
+    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]  # discard a real card
+    if reals:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
 
 
 # ==================== MIRE (Wound-attrition, 3/3/3) ==========================
@@ -243,7 +247,8 @@ def _balance_defense(engine, me, foe):
 
 
 def _wither_effect(engine, me, foe):
-    foe.erode('body', 1)   # -1 Body AND -3 max HP for the combat
+    if not warded(foe):
+        foe.adjust('body', -1)   # -1 Body AND -3 max HP for the combat
     engine.shuffle_wound(me)
 
 
@@ -259,7 +264,7 @@ def _mockery_defense(engine, me, foe):
 
 # --- Red ---
 def _rend_effect(engine, me, foe):
-    if me._last_hit > 0:
+    if me._last_hit > 0 and not warded(foe):  # Wound infliction is a debuff
         engine.shuffle_wound(foe)
 
 
@@ -279,11 +284,11 @@ def _equal_footing_defense(engine, me, foe):
 
 
 def _press_the_wound_dmg(engine, me, foe):
-    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_in_play()
+    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_total()
 
 
 def _press_the_wound_defense(engine, me, foe):
-    n = me.wounds_in_play()
+    n = me.wounds_total()
     if n:
         engine.heal(me, 2 * n)
         remove_wounds(me)
@@ -301,7 +306,9 @@ def _partition_defense(engine, me, foe):
 
 
 def _taint_effect(engine, me, foe):
-    if foe.wounds_in_play() > 0:
+    if warded(foe):   # Wound infliction is a debuff
+        return
+    if foe.wounds_total() > 0:
         engine.shuffle_wound(foe)
         engine.shuffle_wound(foe)
     else:
@@ -313,7 +320,8 @@ def _taint_defense(engine, me, foe):
 
 
 def _erode_effect(engine, me, foe):
-    foe.erode('soul', 1)   # -1 Soul AND -3 max HP for the combat
+    if not warded(foe):
+        foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body)
     engine.shuffle_wound(me)
 
 

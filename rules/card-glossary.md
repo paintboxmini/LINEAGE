@@ -10,7 +10,9 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
 **Debuff**
-Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
+Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+
+Two kinds of interference are **not** debuffs and ignore Ward: being made to **discard**, and having your **deck scried**. They interfere but cannot be warded off. (Obscure is the answer to those — see below.)
 
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
@@ -86,15 +88,15 @@ Prevent the next debuff applied to you. Expires on use.
 
 ---
 
-## Stat Loss
+## Stat Change
 
-Not a keyword — a shared mechanic. Some cards reduce one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul). A reduced stat uses its lowered value for everything it governs until the loss ends:
+Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Body** — Red-card damage, and max HP: **each point of Body lost lowers your maximum HP by 3.** If your current HP now exceeds the new maximum, it drops to the maximum; if your maximum reaches 0 you Collapse. Only Body loss touches HP.
-- **Mind** — Blue-card damage, and hand size (Mind + 1).
-- **Soul** — Green-card damage, and initiative (1d6 + Soul).
+- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 3** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Only Body touches HP.
+- **Mind** — Blue-card damage, and hand size (Mind + 1). Hand size changes the moment the stat does. If a Mind loss leaves you holding more cards than your new hand size, discard down to it immediately.
+- **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
-Stat loss lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it changed — returns to normal. This applies to every current and future stat-draining card; the card only states the stat and amount.
+A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
 
 ---
 
@@ -106,7 +108,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 
 ### WOUND
 *Status — Colorless*
-Cannot be played.
+Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
 You may use your action to discard this card.
 *Effect when discarded: none.*
 1 Wound may be removed per short rest.

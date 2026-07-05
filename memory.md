@@ -19,8 +19,13 @@ Corrected findings (an earlier draft tested with the weak `reader` brain and wro
 - **Axiom is a real edge, not an "I win."** Valuing Axiom wins the Frost mirror 59% and lifts Frost vs Steele 38.8%→43.5%, but does NOT flip Steele's stat advantage. (Earlier "Axiom > Paradox, Frost dominates" was overstated — Axiom helps, stats win.)
 - **Anti-read color flattening FAILS** — only helps a deck whose off-colors are as strong as its main color; cut from tactician.
 - Initiative ~52–55% under strong play.
-- **Mire is bottom-tier in PvP** (loses ~67% to both Frost and Steele; 15 HP dies before Wounds accumulate). Home is PvE, where durable enemies give the Wound engine its long game.
+- **Mire is bottom-tier in PvP** (loses ~70% to both Frost and Steele). Home is PvE, where durable enemies give the Wound engine its long game.
+- **Deck-tracking (card-counting) FAILS** — a `tracker` brain that memorizes the foe's decklist and watches discard loses ~85% to recency. Decks are tiny (9-10) and reshuffle constantly, so discard barely predicts the next draw. In small reshuffling decks, recency > deck-state. Kept as documented failure.
 tactician = current best brain (greedy recency-read + aggression + Axiom/Spark weighting).
+
+**Wound rule change (Drew):** Wounds no longer auto-discard — they sit in hand occupying a slot until an action discards one (or short rest). Press the Wound counts deck+hand+discard. Debuff scope: stat reduction + status-card infliction ARE debuffs (Ward blocks); discard + scry-your-deck are NOT (ignore Ward). Stat change drives derived value live: Body→maxHP (only Body touches HP), Mind→hand size (forces discard if over), Soul→initiative; both directions. All in glossary + sim. Design signal: persistent Wounds made Mire's self-wounding Wither/Erode measurably worse (~33%→23% vs Frost).
+
+**Sim next step:** the real goal is a full TEAM-vs-TEAM simulator. Current 1v1 is step one — some cards (Mockery taunt, Partition shield, ally buffs) correctly do nothing in a duel and wait for the team sim. Not expanding to teams yet.
 
 ---
 

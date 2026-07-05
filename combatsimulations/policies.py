@@ -50,6 +50,16 @@ def legal_attacks(engine, me, foe):
     return [c for c in me.hand if not c.is_status and can_attack(me, foe, c)]
 
 
+def clear_wound_if_idle(engine, me, foe):
+    """Wounds persist now (no auto-discard), so a stuck turn is best spent
+    clearing one. Only do it when there's no attack to make — never trade a real
+    action for it in a fast duel."""
+    if any(c.is_status and c.name == 'WOUND' for c in me.hand) \
+            and not legal_attacks(engine, me, foe):
+        return ('discard_wound',)
+    return None
+
+
 class RandomPolicy:
     name = "random"
 
@@ -57,6 +67,9 @@ class RandomPolicy:
         atks = legal_attacks(engine, me, foe)
         if atks:
             return ('attack', engine.rng.choice(atks))
+        w = clear_wound_if_idle(engine, me, foe)
+        if w:
+            return w
         if me.hand and engine.rng.random() < 0.5:
             return ('move',)
         return None
@@ -81,10 +94,8 @@ class GreedyPolicy:
         atks = legal_attacks(engine, me, foe)
         if atks:
             return ('attack', max(atks, key=lambda c: est_damage(me, c)))
-        # no legal attack — a move may open ranged/melee lines
-        if me.hand:
-            return ('move',)
-        return None
+        # no legal attack — clear a Wound if idle, else a move may open lines
+        return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
 
     def choose_defense(self, engine, me, foe):
         # blind: predict the foe repeats their last attack color; hold the color
@@ -117,9 +128,7 @@ class ReaderPolicy:
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
-            if me.hand:
-                return ('move',)
-            return None
+            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
         pred = self._predict(foe)
         if pred is not None:
             # the foe (if also a reader) tends to defend with the color that beats
@@ -181,7 +190,7 @@ class TacticianPolicy:
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
-            return ('move',) if me.hand else None
+            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
         return ('attack', max(atks, key=lambda c: self._value(me, foe, c)))
 
     def choose_defense(self, engine, me, foe):
@@ -199,11 +208,61 @@ class TacticianPolicy:
                                   if foe.attack_history else 'B')
 
 
+class TrackerPolicy(TacticianPolicy):
+    """Card-counter — and an instructive FAILURE. It predicts the foe's next
+    reveal by tracking their deck (decklist minus current discard = what they can
+    still draw) instead of guessing from recency.
+
+    It should be the strongest brain. It is one of the weakest — it loses ~85% to
+    the recency-based tactician. The reason is a property of the game, not the
+    code: Tales Untold decks are tiny (9-10 cards) and reshuffle constantly, so
+    "what's in the discard" barely predicts the next draw — everything cycles back
+    within a few turns. Worse, a color the foe plays *often* is depleted from
+    their deck fastest, so availability-tracking reads it as unlikely right before
+    a reshuffle hands it back. Card-counting needs a large, non-recycling deck
+    (blackjack's shoe); it has nothing to bite on here.
+
+    Cost of the idea Drew asked about: trivial (O(1) per public card, a few
+    counters). Value here: negative. Kept as a documented cautionary result, like
+    `reader`. The lesson: in small reshuffling decks, recency beats deck-state.
+    """
+    name = "tracker"
+
+    @staticmethod
+    def _remaining(engine, foe):
+        full = Counter(engine.cards[n].color for n in foe.decklist
+                       if not engine.cards[n].is_status)
+        spent = Counter(c.color for c in foe.discard if not c.is_status)
+        return full - spent  # Counter subtraction: what's still in deck + hand
+
+    def _predict(self, engine, foe):
+        rem = self._remaining(engine, foe)
+        if not rem:
+            return foe.last_color
+        hist = foe.attack_history
+        # among colors the foe can still draw, the one they favor most
+        return max(rem, key=lambda col: (hist.get(col, 0), rem[col]))
+
+    def choose_defense(self, engine, me, foe):
+        pred = self._predict(engine, foe)
+        if pred is None:
+            return None
+        winners = [c for c in me.hand if not c.is_status and c.color == _BEATEN_BY[pred]]
+        if winners:
+            return min(winners, key=lambda c: est_damage(me, c))
+        return None
+
+    def name_axiom_color(self, engine, me, foe):
+        return self._predict(engine, foe) or 'B'
+
+
 POLICIES = {p.name: p for p in
-            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(), TacticianPolicy()]}
+            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(),
+             TacticianPolicy(), TrackerPolicy()]}
 
 
 def make_policy(name):
     """Fresh instance (stateful policies must never be shared)."""
     return {'random': RandomPolicy, 'greedy': GreedyPolicy,
-            'reader': ReaderPolicy, 'tactician': TacticianPolicy}[name]()
+            'reader': ReaderPolicy, 'tactician': TacticianPolicy,
+            'tracker': TrackerPolicy}[name]()
