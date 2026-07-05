@@ -56,13 +56,26 @@ class TeamTactician:
         return None
 
     def _value(self, battle, me, target, card):
+        # A support-aware valuation: play green's team cards when the team can use
+        # them, not just when they beat max-damage. This is what lets green be
+        # piloted as an anchor instead of a bad attacker.
         v = est_damage(me, card)
-        # small bumps for team-relevant effects so support/control gets played
         allies = battle.allies(me)
-        if card.name in ("RENEWAL", "TWIN STRIKE", "SPIRAL CURRENT") and allies:
-            v += 1.5
-        elif card.name == "MOCKERY":                 # taunt: pull heat off allies
-            v += 1.0 if allies else 0
+        if not allies:
+            return v + (2 if card.name == "AXIOM" else 0)
+        hurt = [a for a in allies if a.hp < a.max_hp * 0.5]
+        lowest = min(allies, key=lambda a: a.hp)
+        big_threat = lowest.hp <= 6
+        if card.name in ("WITNESS", "RENEWAL"):
+            v += 7 if hurt else 1               # heals — huge when someone's low
+        elif card.name == "SHARED BURDEN":
+            v += 6 if big_threat else 1         # tank a dying ally's next hit
+        elif card.name in ("RESONATE", "SUPPORT", "CONDUCT"):
+            v += 4                              # team buffs / card advantage
+        elif card.name == "TWIN STRIKE":
+            v += 2
+        elif card.name == "MOCKERY":
+            v += 3 if big_threat else 1         # taunt heat off a dying ally
         elif card.name == "AXIOM":
             v += 2
         return v

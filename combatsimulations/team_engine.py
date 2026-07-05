@@ -55,6 +55,12 @@ class Battle:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
+        # Shared Burden: a queued redirect sends this ally's next hit to the tank.
+        rt = getattr(target, '_damage_redirect', None)
+        if rt is not None and not rt.collapsed and rt is not target:
+            target._damage_redirect = None
+            self._say(f"    SHARED BURDEN: {target.name}'s damage redirected to {rt.name}")
+            return self.deal(rt, amount, unpreventable, source)
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1

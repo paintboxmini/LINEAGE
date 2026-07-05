@@ -331,6 +331,75 @@ def _erode_effect(engine, me, foe):
         foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body); no self-cost
 
 
+# ==================== GREEN SUPPORT KIT (team play) ==========================
+# The cards that make green the team anchor. All ally-targeting, so they're inert
+# in 1v1 (engine.allies == []) and come alive in a Battle. Targeting heuristics
+# are baked in: heals go to the most-hurt ally, buffs to the best attacker.
+
+def _best_attacker(allies):
+    return max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul'))) \
+        if allies else None
+
+
+def _most_hurt(allies):
+    return min(allies, key=lambda a: a.hp) if allies else None
+
+
+def _resonate_effect(engine, me, foe):
+    for a in engine.allies(me):
+        a.next_attack_bonus += 2          # all allies +2 next attack
+def _resonate_defense(engine, me, foe):
+    for a in engine.allies(me):
+        a.resist += 1                     # all allies gain Resist 1
+
+
+def _support_effect(engine, me, foe):
+    a = _best_attacker(engine.allies(me))
+    if a:
+        a.next_attack_bonus += 3          # next ally to attack +3
+def _support_defense(engine, me, foe):
+    allies = engine.allies(me)
+    if allies:
+        c = allies[0].draw_one(engine.rng)
+        if c:
+            allies[0].hand.append(c)      # 1 ally draws 1
+
+
+def _conduct_effect(engine, me, foe):
+    a = _best_attacker(engine.allies(me))
+    if a:
+        a.next_attack_bonus += 2
+def _conduct_defense(engine, me, foe):
+    a = _most_hurt(engine.allies(me))
+    if a:
+        c = a.draw_one(engine.rng)
+        if c:
+            a.hand.append(c)              # target ally draws 1
+
+
+def _witness_effect(engine, me, foe):
+    a = _most_hurt(engine.allies(me))
+    if a:
+        engine.heal(a, 3)
+def _witness_defense(engine, me, foe):
+    a = _most_hurt(engine.allies(me))
+    if a:
+        engine.heal(a, 3)
+
+
+def _shared_burden_effect(engine, me, foe):
+    a = _most_hurt(engine.allies(me))
+    if a:
+        a._damage_redirect = me           # next hit on that ally lands on me instead
+def _shared_burden_defense(engine, me, foe):
+    a = _most_hurt(engine.allies(me))
+    if a:
+        x = min(4, me.hp - 1)
+        if x > 0:
+            engine.heal(a, x)
+            engine.deal(me, x, unpreventable=True)   # transfer HP to the ally
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -403,6 +472,18 @@ def build_cards():
     add("ERODE", 'B', 'mind', 'both', 4,
         effect=_erode_effect, defense=_erode_effect)
 
+    # Green support kit (team play)
+    add("RESONATE", 'G', 'soul', 'ranged', 4,
+        effect=_resonate_effect, defense=_resonate_defense)
+    add("SUPPORT", 'G', 'soul', 'ranged', 4,
+        effect=_support_effect, defense=_support_defense)
+    add("CONDUCT", 'G', 'soul', 'both', 6,
+        effect=_conduct_effect, defense=_conduct_defense)
+    add("WITNESS", 'G', 'soul', 'melee', 4,
+        effect=_witness_effect, defense=_witness_defense)
+    add("SHARED BURDEN", 'G', 'soul', 'both', 6,
+        effect=_shared_burden_effect, defense=_shared_burden_defense)
+
     # Status card
     add("WOUND", None, None, None, None, is_status=True)
 
@@ -450,12 +531,22 @@ ADEPT_DECK = [
     "PARADOX", "ALIGN",                                     # 2 blue
 ]
 
+# WARDEN — a dedicated green-support build (Soul 4), to test whether green's real
+# support kit + a support-piloting brain makes it the team anchor its identity
+# claims. 7 green (5 support + attacker + taunt), 1 red, 1 blue.
+WARDEN_DECK = [
+    "RESONATE", "SUPPORT", "CONDUCT", "WITNESS", "SHARED BURDEN",
+    "TWIN STRIKE", "MOCKERY",                 # 7 green
+    "PAIN IS FUEL", "PARADOX",                # 1 red, 1 blue
+]
+
 FROST_STATS = dict(body=3, mind=3, soul=3)
 STEELE_STATS = dict(body=4, mind=3, soul=2)
 MIRE_STATS = dict(body=3, mind=3, soul=3)
 VOLK_STATS = dict(body=5, mind=2, soul=2)   # HP 19
 SAGE_STATS = dict(mind=4, soul=3, body=2)
 ADEPT_STATS = dict(soul=4, body=3, mind=2)
+WARDEN_STATS = dict(soul=4, body=3, mind=2)
 
 # registry so run.py can pit any two decks against each other
 ROSTER = {
@@ -465,4 +556,5 @@ ROSTER = {
     "volk":   (VOLK_STATS, VOLK_DECK),
     "sage":   (SAGE_STATS, SAGE_DECK),      # Mind 4 — blue archetype
     "adept":  (ADEPT_STATS, ADEPT_DECK),    # Soul 4 — green archetype
+    "warden": (WARDEN_STATS, WARDEN_DECK),  # Soul 4 — green support anchor
 }
