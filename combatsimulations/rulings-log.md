@@ -41,11 +41,13 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   HP), **Mind → hand size** (live; forces a discard if now over), **Soul →
   initiative**. Both directions. General rule in `rules/card-glossary.md` (Stat
   Change); sim in `Combatant.adjust`.
-- **press-the-wound-counts** — Counts Wounds in deck + hand + **discard** (Drew).
-  Taint's "already has a Wound" uses the same count. Sim: `wounds_total`.
+- **wound-counts-visible** — Press the Wound and Taint count Wounds in **hand +
+  discard only**, never the deck — so nobody has to track or search hidden Wounds
+  (Drew). Sim: `wounds_visible`.
 - **wound-persists** — A Wound no longer auto-discards; it sits in the hand
-  occupying a slot until an **action** discards it (or a short rest). Drew; in the
-  glossary WOUND entry, the engine, and the worked example.
+  occupying a slot until an **action** discards it (to the discard pile). Short
+  rest permanently **destroys** 1 Wound from hand or discard (not the deck). Drew;
+  in the glossary WOUND entry, the engine, and the worked example.
 - **debuff-scope** — Debuff = status conditions, status cards, stat reductions,
   forced moves (Ward blocks these). Discard and scry-your-deck are NOT debuffs and
   ignore Ward (Obscure answers those instead). Drew; in the glossary Debuff entry.

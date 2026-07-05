@@ -111,7 +111,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
 You may use your action to discard this card.
 *Effect when discarded: none.*
-1 Wound may be removed per short rest.
+Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds.
 
 ---
 

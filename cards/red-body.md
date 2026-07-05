@@ -305,8 +305,8 @@ Range: Both
 **PRESS THE WOUND**
 RED — BODY
 Attack: Body + d4
-Effect: Deal +2 damage for each Wound in defender's deck.
-Defensive Bonus: Heal 2 HP for each Wound in your deck. Then exile them.
+Effect: Deal +2 damage for each Wound in defender's hand and discard pile.
+Defensive Bonus: Heal 2 HP for each Wound in your hand and discard pile. Then exile them.
 Range: Melee
 *"It was always going to end here."*
 

@@ -48,12 +48,11 @@ No dependencies. Python 3.8+.
   Cautionary control.
 - **greedy** — attacks for max expected damage; defends by predicting the foe's
   *last* color. Strongest of the simple brains.
-- **tactician** — greedy's recency-read and aggression, plus the one upgrade that
-  helped without hurting any deck: valuing Axiom's color ban (and an unpreventable
-  Spark to finish a low foe). **The strongest brain.**
-- **tracker** — a card-counter that predicts from the foe's tracked deck state
-  (decklist minus discard). It *should* be strongest; it's one of the weakest
-  (loses ~85% to tactician). A documented failure — see finding 4.
+- **tactician** — greedy's recency-read and aggression, plus two upgrades that
+  help without hurting any deck: valuing Axiom's color ban (and an unpreventable
+  Spark to finish), and a **situational deck-tracking safety check** — if a color
+  the foe needs to beat your attack is fully exhausted into their discard, that
+  attack is risk-free (finding 4). **The strongest brain.**
 
 Add your own by implementing three methods (see the module docstring).
 
@@ -75,9 +74,9 @@ produced three results, one of which reversed an earlier conclusion.
 
    | | vs Steele | vs Frost | vs Mire |
    |---|:--:|:--:|:--:|
-   | **Steele** | — | 56.5% | 67.0% |
-   | **Frost**  | 43.5% | — | 67.1% |
-   | **Mire**   | 33.0% | 32.9% | — |
+   | **Steele** | — | 66.7% | 68.7% |
+   | **Frost**  | 32.6% | — | 56.0% |
+   | **Mire**   | 30.6% | 42.8% | — |
 
    Steele's Body 4 / HP 18 beat everyone. Valuing **Axiom** is real and
    measurable — it wins the Frost mirror 59/41 and lifts Frost's score vs Steele
@@ -93,17 +92,21 @@ produced three results, one of which reversed an earlier conclusion.
    tactician. Worth knowing at the table: don't sandbag your best color to be
    cute unless your other colors are genuinely as threatening.
 
-4. **Deck-tracking (card-counting) fails here.** A brain that memorizes the
-   opponent's decklist and watches their discard to infer what's left — cheap,
-   O(1), not even hidden info — *loses ~85%* to the recency brain. The reason is a
-   property of the game: decks are tiny (9–10 cards) and reshuffle constantly, so
-   "what's in the discard" barely predicts the next draw — it all cycles back
-   within a few turns. Worse, a color the foe plays *often* depletes from their
-   deck fastest, so availability-tracking reads it as unlikely right before a
-   reshuffle hands it back. Card-counting needs a large, non-recycling deck
-   (blackjack's shoe). **In small reshuffling decks, recency beats deck-state.**
-   A genuinely useful negative result — it says don't bother tracking, just watch
-   their last move.
+4. **Deck-tracking is situational, not predictive — and that distinction is the
+   whole finding.** A first attempt used deck-state to *predict* the foe's next
+   color (decklist minus discard → what they can still draw). It lost ~85% to the
+   recency brain: decks are tiny and reshuffle constantly, so "what's left" barely
+   predicts the next draw, and a heavily-played color depletes fastest — fooling
+   availability-prediction right before a reshuffle hands it back. Pure tracking
+   was removed.
+
+   But tracking has one narrow, *certain* use: **safe-play detection.** If you
+   know the foe holds only 2 green cards and you see both in their discard, then
+   green is gone from their deck and hand — so any attack green can't beat is
+   risk-free (it cannot lose the reveal). That check is now folded into the
+   tactician (`_color_exhausted`), and it's pure upside: it lifted the tactician
+   over greedy across *every* deck (Frost 59%→65%, Mire 50%→58%). The lesson:
+   don't track to guess what's coming; track to know when you can't lose.
 
 Initiative is worth ~52–55% under strong play — an edge, not a verdict.
 
@@ -125,11 +128,11 @@ Win rates under the strongest brain (tactician, 20k duels each):
 
 | Matchup | result |
 |---------|:------:|
-| Mire vs Frost  | Frost 71.0% |
-| Mire vs Steele | Steele 70.3% |
+| Mire vs Frost  | Frost 57.2% |
+| Mire vs Steele | Steele 68.7% |
 | Mire mirror    | 50/50 |
 
-*(Numbers dropped after the Wound-persistence change — see below.)*
+*(Mire still bottom-tier; the Wound-persistence change hurt it — see below.)*
 
 (Only Wither's Body loss shaves max HP — Body's derived value; Erode drains Soul
 and Sunder drains Mind without touching HP. See the Stat Loss rule.)

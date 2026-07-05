@@ -284,11 +284,11 @@ def _equal_footing_defense(engine, me, foe):
 
 
 def _press_the_wound_dmg(engine, me, foe):
-    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_total()
+    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_visible()
 
 
 def _press_the_wound_defense(engine, me, foe):
-    n = me.wounds_total()
+    n = me.wounds_visible()
     if n:
         engine.heal(me, 2 * n)
         remove_wounds(me)
@@ -308,7 +308,7 @@ def _partition_defense(engine, me, foe):
 def _taint_effect(engine, me, foe):
     if warded(foe):   # Wound infliction is a debuff
         return
-    if foe.wounds_total() > 0:
+    if foe.wounds_visible() > 0:
         engine.shuffle_wound(foe)
         engine.shuffle_wound(foe)
     else:

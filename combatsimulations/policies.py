@@ -179,19 +179,36 @@ class TacticianPolicy:
             return 0.0
         return h.most_common(1)[0][1] / sum(h.values())
 
-    def _value(self, me, foe, card):
+    @staticmethod
+    def _color_exhausted(engine, foe, color):
+        """True if every copy of `color` in the foe's decklist is visible in their
+        discard — so none is live in their deck or hand. This is the SITUATIONAL
+        use of deck-tracking Drew flagged: not a predictor, a safety check. It's
+        cheap and only ever helps, because it only fires on certainty."""
+        full = sum(1 for n in foe.decklist
+                   if not engine.cards[n].is_status and engine.cards[n].color == color)
+        if full == 0:
+            return False
+        seen = sum(1 for c in foe.discard if not c.is_status and c.color == color)
+        return seen >= full
+
+    def _value(self, engine, me, foe, card):
         v = est_damage(me, card)
         if card.name == "AXIOM":
             v += 2 + 3 * self._foe_skew(foe)         # ban bites a predictable foe
         elif card.name == "SPARK OF VIOLENCE" and foe.hp <= 4:
             v += 4                                    # unpreventable finisher
+        # Risk-free read: if the color that beats this attack (as a defender) is
+        # exhausted from the foe's live cards, this attack cannot lose the reveal.
+        if self._color_exhausted(engine, foe, _BEATEN_BY[card.color]):
+            v += 2
         return v
 
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
             return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
-        return ('attack', max(atks, key=lambda c: self._value(me, foe, c)))
+        return ('attack', max(atks, key=lambda c: self._value(engine, me, foe, c)))
 
     def choose_defense(self, engine, me, foe):
         # recency read: expect the foe to repeat their last attack color
@@ -208,61 +225,19 @@ class TacticianPolicy:
                                   if foe.attack_history else 'B')
 
 
-class TrackerPolicy(TacticianPolicy):
-    """Card-counter — and an instructive FAILURE. It predicts the foe's next
-    reveal by tracking their deck (decklist minus current discard = what they can
-    still draw) instead of guessing from recency.
-
-    It should be the strongest brain. It is one of the weakest — it loses ~85% to
-    the recency-based tactician. The reason is a property of the game, not the
-    code: Tales Untold decks are tiny (9-10 cards) and reshuffle constantly, so
-    "what's in the discard" barely predicts the next draw — everything cycles back
-    within a few turns. Worse, a color the foe plays *often* is depleted from
-    their deck fastest, so availability-tracking reads it as unlikely right before
-    a reshuffle hands it back. Card-counting needs a large, non-recycling deck
-    (blackjack's shoe); it has nothing to bite on here.
-
-    Cost of the idea Drew asked about: trivial (O(1) per public card, a few
-    counters). Value here: negative. Kept as a documented cautionary result, like
-    `reader`. The lesson: in small reshuffling decks, recency beats deck-state.
-    """
-    name = "tracker"
-
-    @staticmethod
-    def _remaining(engine, foe):
-        full = Counter(engine.cards[n].color for n in foe.decklist
-                       if not engine.cards[n].is_status)
-        spent = Counter(c.color for c in foe.discard if not c.is_status)
-        return full - spent  # Counter subtraction: what's still in deck + hand
-
-    def _predict(self, engine, foe):
-        rem = self._remaining(engine, foe)
-        if not rem:
-            return foe.last_color
-        hist = foe.attack_history
-        # among colors the foe can still draw, the one they favor most
-        return max(rem, key=lambda col: (hist.get(col, 0), rem[col]))
-
-    def choose_defense(self, engine, me, foe):
-        pred = self._predict(engine, foe)
-        if pred is None:
-            return None
-        winners = [c for c in me.hand if not c.is_status and c.color == _BEATEN_BY[pred]]
-        if winners:
-            return min(winners, key=lambda c: est_damage(me, c))
-        return None
-
-    def name_axiom_color(self, engine, me, foe):
-        return self._predict(engine, foe) or 'B'
-
+# Note: a standalone "tracker" brain that PREDICTED from deck state (decklist
+# minus discard) was tried and removed. It lost ~85% to the tactician — in tiny
+# reshuffling decks, "what's left in the deck" barely predicts the next draw, and
+# a heavily-played color depletes fastest, fooling availability-based prediction
+# right before a reshuffle. Deck-tracking's real value is narrow and certain, not
+# predictive: the exhaustion safety-check now lives inside the tactician
+# (_color_exhausted). Situational, as Drew put it — never the whole strategy.
 
 POLICIES = {p.name: p for p in
-            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(),
-             TacticianPolicy(), TrackerPolicy()]}
+            [RandomPolicy(), GreedyPolicy(), ReaderPolicy(), TacticianPolicy()]}
 
 
 def make_policy(name):
     """Fresh instance (stateful policies must never be shared)."""
     return {'random': RandomPolicy, 'greedy': GreedyPolicy,
-            'reader': ReaderPolicy, 'tactician': TacticianPolicy,
-            'tracker': TrackerPolicy}[name]()
+            'reader': ReaderPolicy, 'tactician': TacticianPolicy}[name]()

@@ -136,10 +136,11 @@ class Combatant:
             while len(self.hand) > self.effective_hand_size():
                 self.discard.append(self.hand.pop())  # forced discard down to size
 
-    def wounds_total(self):
-        """Every Wound in this deck — deck + hand + discard. Press the Wound and
-        Taint count all of them (Drew ruling: hand, deck, and discard)."""
-        return sum(1 for c in (self.deck + self.hand + self.discard)
+    def wounds_visible(self):
+        """Wounds a player can actually see and count — hand + discard, NOT deck
+        (Drew ruling: nobody should have to track or search hidden Wounds). Press
+        the Wound and Taint count these."""
+        return sum(1 for c in (self.hand + self.discard)
                    if c.is_status and c.name == 'WOUND')
 
     # --- deck plumbing ---
