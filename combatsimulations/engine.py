@@ -339,8 +339,9 @@ class Duel:
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
-        if target._damage_floor is not None:
-            # Equal Footing: this attack cannot reduce target below the floor.
+        if not unpreventable and target._damage_floor is not None:
+            # Equal Footing floors ATTACK damage only — unpreventable damage (bleed,
+            # thorns, status, HP costs) is not an attack and ignores the floor.
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
             # floor is cleared in attack() after the exchange, so it is removed by

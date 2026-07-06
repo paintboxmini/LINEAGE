@@ -32,13 +32,13 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
    - **Defender wins:** only the Defensive Bonus triggers; no damage.
    - **Tie:** no damage. The attacker's Effect triggers first, then the Defensive Bonus — unless the Effect cancels it. An effect that only *amplifies damage* (exploding dice, "+X damage") does nothing on a tie; there is no damage to add to (`rules/core-rules.md`).
 
-5. **Damage pipeline — fixed order.** When damage is dealt it is reduced in this order, and each step is itself an invariant:
+5. **Damage pipeline — fixed order.** When *attack* damage is dealt it passes through this pipeline, and each step is itself an invariant:
 
    redirect (Shared Burden) → volunteer shield (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → damage floor (Equal Footing) → apply to HP.
 
    - A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse).
-   - `Unpreventable` damage skips Armour and Resist.
-   - Thorns retaliates against a melee attacker after the hit lands.
+   - **Unpreventable damage bypasses the whole pipeline.** Every step above is an *attack-damage* defense; bleed, thorns, status damage, and HP costs are not attacks, so they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full.
+   - Thorns retaliates against a melee attacker after the hit lands (and is itself unpreventable).
 
 ---
 

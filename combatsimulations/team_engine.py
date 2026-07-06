@@ -58,24 +58,28 @@ class Battle:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
-        # Shared Burden: a queued redirect sends this ally's next hit to the tank.
-        rt = getattr(target, '_damage_redirect', None)
-        if rt is not None and not rt.collapsed and rt is not target:
-            target._damage_redirect = None
-            self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
-            return self.deal(rt, amount, unpreventable, source)
-        # Fortress Stance: a standing ally has volunteered to eat the next hit.
-        for f in self.allies(target):
-            if getattr(f, '_fortress', False):
-                f._fortress = False
-                self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
-                return self.deal(f, amount, unpreventable, source)
+        # Redirect and shield are ATTACK-damage defenses — unpreventable damage
+        # (bleed, thorns, status, HP costs) is not an attack, so it is neither
+        # redirected nor tanked; it lands on the original target, full.
+        if not unpreventable:
+            # Shared Burden: a queued redirect sends this ally's next hit to the tank.
+            rt = getattr(target, '_damage_redirect', None)
+            if rt is not None and not rt.collapsed and rt is not target:
+                target._damage_redirect = None
+                self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
+                return self.deal(rt, amount, unpreventable, source)
+            # Fortress Stance: a standing ally has volunteered to eat the next hit.
+            for f in self.allies(target):
+                if getattr(f, '_fortress', False):
+                    f._fortress = False
+                    self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
+                    return self.deal(f, amount, unpreventable, source)
         if not unpreventable and target.armour > 0:
             amount = max(0, amount - target.armour)
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
-        if target._damage_floor is not None:
+        if not unpreventable and target._damage_floor is not None:
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
         pre = target.hp

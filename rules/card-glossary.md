@@ -83,6 +83,9 @@ The next time you are attacked, you cannot play a defensive card. The attack res
 **Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
+**Unpreventable**
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Bleed, Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+
 **Ward**
 Prevent the next debuff applied to you. Expires on use.
 
