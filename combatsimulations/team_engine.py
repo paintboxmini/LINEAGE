@@ -37,6 +37,7 @@ class Battle:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.wound = cards.get('WOUND')
+        self.pending_turns = []
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -110,10 +111,10 @@ class Battle:
         return seen
 
     def initiative_shift(self, target, amount):
-        n = len(self.all)
-        skips = abs(amount) // n
-        if amount < 0:
-            target.skip_turns += skips
+        if amount > 0:
+            self.pending_turns.append(target)   # extra turn right after the current
+        elif amount < 0:
+            target.skip_turns += 1              # skip the target's next turn
 
     # --- setup: one interleaved initiative wheel over everyone ---
     def setup(self):
@@ -215,6 +216,7 @@ class Battle:
     # --- main loop ---
     def run(self):
         self.setup()
+        self.pending_turns = []
         idx = 0
         n = len(self.order)
         while self.turn_count < self.max_turns:
@@ -224,6 +226,15 @@ class Battle:
             a, b = bool(self.living(0)), bool(self.living(1))
             if not a or not b:
                 return self._finish(a, b)
+            # extra turns from a positive Initiative Shift, immediately after
+            while self.pending_turns and self.turn_count < self.max_turns:
+                extra = self.pending_turns.pop(0)
+                self.turn_count += 1
+                if not extra.collapsed:
+                    self.take_turn(extra)
+                a, b = bool(self.living(0)), bool(self.living(1))
+                if not a or not b:
+                    return self._finish(a, b)
             idx += 1
             self.turn_count += 1
         return self._finish(bool(self.living(0)), bool(self.living(1)))

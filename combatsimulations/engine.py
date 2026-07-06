@@ -202,6 +202,7 @@ class Duel:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.wound = cards.get('WOUND')
+        self.pending_turns = []
 
     def shuffle_wound(self, target):
         if self.wound is None:
@@ -210,19 +211,13 @@ class Duel:
         target.deck.insert(idx, self.wound)
 
     def initiative_shift(self, target, amount):
-        n = len(self.combatants)
-        skips = abs(amount) // n
-        if amount < 0:
-            target.skip_turns += skips
-        else:
-            RULING("positive-initiative-shift-unmodeled",
-                   "Positive Initiative Shift (extra turns) is not modeled — no "
-                   "card in the current decks uses it.")
-        if abs(amount) % n:
-            RULING("initiative-shift-remainder",
-                   "Sub-wheel Initiative Shift reorder is simplified to skipped "
-                   "turns in the 2-combatant duel (the positional remainder "
-                   "reduces to tempo loss).")
+        # Positive: an extra turn right after the current turn (the target crosses
+        # the marker). Negative: the target skips a turn. Simplified to one
+        # crossing per shift — no current card shifts by more than one wheel.
+        if amount > 0:
+            self.pending_turns.append(target)
+        elif amount < 0:
+            target.skip_turns += 1
 
     def scry(self, actor, owner, x):
         """Look at the top x of owner's deck; the actor's policy decides which go
@@ -430,23 +425,38 @@ class Duel:
             self.deal(attacker, defender.thorns, unpreventable=True)
         card.effect(self, attacker, defender)
 
+    def _win_result(self, who, foe):
+        if foe.collapsed and not who.collapsed:
+            return self._finish(who)
+        if who.collapsed and not foe.collapsed:
+            return self._finish(foe)
+        if who.collapsed and foe.collapsed:
+            return self._finish(None)
+        return None
+
     # --- main loop ---
     def run(self):
         self.setup()
+        self.pending_turns = []
         idx = 0
         n = len(self.order)
         while self.turn_count < self.max_turns:
             who = self.order[idx % n]
-            foe = self.other(who)
             if not who.collapsed:
-                self.take_turn(who, foe)
-            # win check
-            if foe.collapsed and not who.collapsed:
-                return self._finish(who)
-            if who.collapsed and not foe.collapsed:
-                return self._finish(foe)
-            if who.collapsed and foe.collapsed:
-                return self._finish(None)  # tie
+                self.take_turn(who, self.other(who))
+            r = self._win_result(who, self.other(who))
+            if r is not None:
+                return r
+            # extra turns from a positive Initiative Shift crossing the marker:
+            # they fire immediately after the current turn.
+            while self.pending_turns and self.turn_count < self.max_turns:
+                extra = self.pending_turns.pop(0)
+                self.turn_count += 1
+                if not extra.collapsed:
+                    self.take_turn(extra, self.other(extra))
+                r = self._win_result(extra, self.other(extra))
+                if r is not None:
+                    return r
             idx += 1
             self.turn_count += 1
         RULING("stalemate-cap",
