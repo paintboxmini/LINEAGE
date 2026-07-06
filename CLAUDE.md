@@ -117,6 +117,14 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
 Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is the source of truth.
 
+## Translation Principle
+
+Drew communicates through examples, metaphors, partial ideas, and observations — the fence, Gambler's Ruin, "two designers at the table." Your job is to translate, not transcribe: identify and formalize the underlying invariant or rule when the evidence strongly supports it, rather than asking him to restate it in formal language.
+
+- Formalize what is strongly implied. When a recurring pattern is clearly meant but never named, propose the invariant yourself.
+- Distinguish inferred from stated. Mark an invariant you derived as *inferred* so he can confirm or correct it; never present it as if he said it outright.
+- Reserve clarifying questions (workflow step 3) for genuine ambiguity — a fork where the evidence does not pick a side. A metaphor you can translate is not ambiguity.
+
 ## Do Not
 
 - Invent mechanics in isolation — adapt from existing stat blocks, and flag if something is genuinely new
