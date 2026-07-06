@@ -36,6 +36,20 @@ def roll(die, rng):
     return rng.randint(1, die)
 
 
+def _ongoing_support_tick(engine, who):
+    """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
+    Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
+    for o in who.ongoing:
+        if o['kind'] == 'synchrony':
+            for a in [who] + engine.allies(who):
+                engine.heal(a, 1)
+        elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
+            allies = engine.allies(who)
+            tgt = (max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul')))
+                   if allies else who)
+            tgt.next_attack_bonus += 2
+
+
 # --- Card model ---------------------------------------------------------------
 class Card:
     """A card is data plus up to three behavior hooks.
@@ -98,6 +112,7 @@ class Combatant:
         # token stacks / flags
         self.resist = 0
         self.evade = 0
+        self.armour = 0                  # flat damage reduction, cleared next turn
         self.thorns = 0
         self.staggered = False
         self.rooted = False
@@ -264,6 +279,8 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)   # Armour applies before Resist
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
@@ -308,12 +325,14 @@ class Duel:
                 RULING("blood-tithe-mutual-death",
                        "If BLOOD TITHE's bleed collapses both parties on the same "
                        "tick, it is a mutual result — scored as a tie (Drew ruling).")
+        _ongoing_support_tick(self, who)
 
     # --- one attack action ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
         attacker.discard.append(card)
         attacker.last_color = card.color
+        attacker._attacked_this = True             # for PATIENCE
         attacker.attack_history[card.color] += 1  # revealed = public info
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
         self._say(f"{attacker.name} plays {card.name} ({card.color})")
@@ -333,7 +352,7 @@ class Duel:
         # policy never sees `card`. It decides from public info only (the
         # attacker's revealed-color history, position, etc.).
         def_card = None
-        if not defender.collapsed and not defender.staggered:
+        if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None:
                 # enforce Axiom ban on the reveal
@@ -436,6 +455,10 @@ class Duel:
         return self._finish(None)
 
     def take_turn(self, who, foe):
+        who.armour = 0            # Armour / can't-defend last until your next turn
+        who.cannot_defend = False
+        who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
+        who._attacked_this = False
         if who.skip_turns > 0:
             who.skip_turns -= 1
             self._say(f"{who.name} loses their turn (initiative shift)")

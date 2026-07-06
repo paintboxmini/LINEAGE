@@ -68,11 +68,19 @@ class TeamTactician(ScryMixin):
         big_threat = lowest.hp <= 6
         if card.name in ("WITNESS", "RENEWAL"):
             v += 7 if hurt else 1               # heals — huge when someone's low
-        elif card.name == "SHARED BURDEN":
-            v += 6 if big_threat else 1         # tank a dying ally's next hit
-        elif card.name in ("RESONATE", "SUPPORT", "CONDUCT"):
-            v += 4                              # team buffs / card advantage
-        elif card.name == "TWIN STRIKE":
+        elif card.name in ("SHARED BURDEN", "INTERCEPT", "FORTRESS STANCE"):
+            v += 6 if big_threat else 1         # tank/redirect a dying ally's hit
+        elif card.name in ("RESONATE", "SUPPORT", "CONDUCT", "COMMUNION"):
+            v += 4                              # green team buffs / card advantage
+        elif card.name in ("GUARD", "RALLY"):
+            v += 3 if hurt else 0              # protection only when an ally's in danger
+        elif card.name in ("INTERRUPT", "DELAY"):
+            v += 4                              # tempo denial — skip an enemy
+        elif card.name == "CHAIN":
+            v += 3 if len(battle.enemies(me)) > 1 else 0   # AoE splash
+        elif card.name == "TRAMPLE":
+            v += 3 if target.hp <= 8 else 0     # finisher that carries over
+        elif card.name in ("TWIN STRIKE", "SYNCHRONY", "ROOTED OATH"):
             v += 2
         elif card.name == "MOCKERY":
             v += 3 if big_threat else 1         # taunt heat off a dying ally

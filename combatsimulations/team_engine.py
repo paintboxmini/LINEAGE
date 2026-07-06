@@ -21,7 +21,7 @@ Policies for teams implement:
 
 import random
 
-from engine import roll, RULING, can_attack
+from engine import roll, RULING, can_attack, _ongoing_support_tick
 
 
 class Battle:
@@ -59,8 +59,16 @@ class Battle:
         rt = getattr(target, '_damage_redirect', None)
         if rt is not None and not rt.collapsed and rt is not target:
             target._damage_redirect = None
-            self._say(f"    SHARED BURDEN: {target.name}'s damage redirected to {rt.name}")
+            self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
             return self.deal(rt, amount, unpreventable, source)
+        # Fortress Stance: a standing ally has volunteered to eat the next hit.
+        for f in self.allies(target):
+            if getattr(f, '_fortress', False):
+                f._fortress = False
+                self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
+                return self.deal(f, amount, unpreventable, source)
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
@@ -124,6 +132,7 @@ class Battle:
         for o in [o for o in who.ongoing if o['kind'] == 'blood_tithe']:
             self.deal(o['controller'], 1, unpreventable=True)
             self.deal(o['victim'], 1, unpreventable=True)
+        _ongoing_support_tick(self, who)
 
     # --- one attack, at a chosen target ---
     def attack(self, attacker, defender, card):
@@ -131,7 +140,15 @@ class Battle:
         attacker.discard.append(card)
         attacker.last_color = card.color
         attacker.attack_history[card.color] += 1
+        attacker._attacked_this = True
         attacker._last_hit = 0
+        # Intercept: a standing ally steps in to defend in the target's place
+        for g in self.allies(defender):
+            if getattr(g, '_intercept', False):
+                g._intercept = False
+                self._say(f"  INTERCEPT: {g.name} defends for {defender.name}")
+                defender = g
+                break
         self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
 
         if defender.evade > 0:
@@ -142,7 +159,7 @@ class Battle:
                 return
 
         def_card = None
-        if not defender.collapsed and not defender.staggered:
+        if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
@@ -212,6 +229,10 @@ class Battle:
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
     def take_turn(self, who):
+        who.armour = 0
+        who.cannot_defend = False
+        who._attacked_last = getattr(who, '_attacked_this', False)
+        who._attacked_this = False
         if who.skip_turns > 0:
             who.skip_turns -= 1
             return

@@ -409,6 +409,142 @@ def _shared_burden_defense(engine, me, foe):
             engine.deal(me, x, unpreventable=True)   # transfer HP to the ally
 
 
+# ==================== EXPANDED SET (team-combat variety) =====================
+# ~20 more cards covering tanks, team buffs, AoE, tempo denial, positioning,
+# ongoing heals, and control. Ally effects route through engine.allies / _team so
+# they're live in a Battle and inert in a duel.
+
+# --- Red: front-line, protection, AoE ---
+def _strike_defense(engine, me, foe):
+    engine.deal(foe, 2, unpreventable=True)
+
+def _guard_effect(engine, me, foe):
+    for a in engine.allies(me):
+        a.armour = max(a.armour, 2)        # allies take -2 from attacks until your next turn
+def _guard_defense(engine, me, foe):
+    for a in engine.allies(me):
+        a.armour = max(a.armour, 2)        # allies gain Armour 2
+
+def _intercept_setup(engine, me, foe):
+    me._intercept = True                   # next time an ally is attacked, I defend
+
+def _fortress_effect(engine, me, foe):
+    me._fortress = True                    # I take the next hit meant for an ally
+def _fortress_defense(engine, me, foe):
+    for a in engine.allies(me):
+        engine.heal(a, 2)
+
+def _rally_effect(engine, me, foe):
+    for a in engine.allies(me):
+        if a.position == 'frontline':
+            a.next_attack_bonus += 2
+def _rally_defense(engine, me, foe):
+    for a in engine.allies(me):
+        if a.position == 'backline':
+            a.next_attack_bonus += 2
+
+def _trample_effect(engine, me, foe):
+    if foe.collapsed:                      # this attack defeated the defender
+        others = [x for x in engine.enemies(me) if x is not foe and x.position == 'frontline']
+        if others:
+            engine.deal(others[0], 3)
+def _trample_defense(engine, me, foe):
+    foe.position = 'backline'              # push the attacker back
+
+def _charge_move(engine, me, foe):
+    me.position = 'frontline'
+    foe.position = 'frontline'
+
+# --- Blue: tempo, control, AoE ---
+def _interrupt_effect(engine, me, foe):
+    foe.skip_turns += 1                    # target loses their next turn
+    me.cannot_defend = True                # you can't defend until your next turn
+def _interrupt_defense(engine, me, foe):
+    engine.initiative_shift(me, 3)         # Initiative Shift +3 (positive: minimal in sim)
+
+def _chain_effect(engine, me, foe):
+    if me._last_hit > 0:
+        half = (me._last_hit + 1) // 2
+        others = [x for x in engine.enemies(me) if x is not foe]
+        if others:
+            engine.deal(others[0], half)   # splash to a second enemy
+def _chain_defense(engine, me, foe):
+    foe._forced_target = me                # taunt the attacker
+
+def _calculate_effect(engine, me, foe):
+    foe.position = 'backline'
+def _calculate_defense(engine, me, foe):
+    foe.position = 'frontline'
+
+def _analyze_effect(engine, me, foe):
+    for a in _team(engine, me):            # you and your allies scry 2
+        engine.scry(a, a, 2)
+
+def _study_effect(engine, me, foe):
+    wounds = [c for c in me.hand if c.is_status and c.name == 'WOUND']
+    drop = wounds[0] if wounds else next((c for c in me.hand if not c.is_status), None)
+    if drop is not None:
+        me.hand.remove(drop); me.discard.append(drop)
+        c = me.draw_one(engine.rng)
+        if c:
+            me.hand.append(c)              # discard 1 (a Wound if held), draw 1
+def _study_defense(engine, me, foe):
+    RULING("predictable-unmodeled",
+           "STUDY's def 'apply Predictable' (see the foe's next reveal) needs a "
+           "hidden-info policy to exploit; modeled as a no-op for now.")
+
+def _profile_effect(engine, me, foe):
+    engine.scry(me, me, 2)
+def _profile_defense(engine, me, foe):
+    foe.staggered = True                   # attacker can't defend the next hit
+
+def _refract_effect(engine, me, foe):
+    foe.next_attack_bonus -= 3             # defender's next attack deals -3
+def _refract_defense(engine, me, foe):
+    foe.next_attack_bonus -= 3
+
+# --- Green: ongoing support, tempo, position ---
+def _synchrony_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'synchrony', 'owner': me})
+def _synchrony_defense(engine, me, foe):
+    me.resist += 1
+
+def _rooted_oath_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'rooted_oath', 'owner': me, 'anchor': me.position})
+def _rooted_oath_defense(engine, me, foe):
+    pool = [a for a in engine.allies(me) if a.position == me.position] or [me]
+    engine.heal(min(pool, key=lambda a: a.hp), 3)
+
+def _urgency_effect(engine, me, foe):
+    a = _best_attacker(engine.allies(me))
+    if a:
+        engine.initiative_shift(a, 3)      # positive: minimal in sim
+def _urgency_defense(engine, me, foe):
+    engine.initiative_shift(me, 3)
+
+def _delay_effect(engine, me, foe):
+    engine.initiative_shift(foe, -3)       # defender skips (negative shift)
+def _delay_defense(engine, me, foe):
+    engine.initiative_shift(foe, -3)
+
+def _communion_effect(engine, me, foe):
+    for a in _team(engine, me):
+        engine.scry(a, a, 1)               # party scry
+def _communion_defense(engine, me, foe):
+    for a in _team(engine, me):
+        a.next_attack_bonus += 2           # you and allies +2 damage next attack
+
+def _mirror_step_effect(engine, me, foe):
+    for c in (me, foe):
+        c.position = 'backline' if c.position == 'frontline' else 'frontline'
+
+def _patience_dmg(engine, me, foe):
+    bonus = 0 if getattr(me, '_attacked_last', False) else 4   # +4 if you waited
+    return me.eff('soul') + roll(4, engine.rng) + bonus
+def _patience_defense(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -493,6 +629,42 @@ def build_cards():
     add("SHARED BURDEN", 'G', 'soul', 'both', 6,
         effect=_shared_burden_effect, defense=_shared_burden_defense)
 
+    # --- Expanded set: Red ---
+    add("STRIKE", 'R', 'body', 'melee', 8, defense=_strike_defense)
+    add("GUARD", 'R', 'body', 'melee', 4, effect=_guard_effect, defense=_guard_defense)
+    add("INTERCEPT", 'R', 'body', 'melee', 4,
+        effect=_intercept_setup, defense=_intercept_setup)
+    add("FORTRESS STANCE", 'R', 'body', 'melee', 4,
+        effect=_fortress_effect, defense=_fortress_defense)
+    add("RALLY", 'R', 'body', 'both', 4, effect=_rally_effect, defense=_rally_defense)
+    add("TRAMPLE", 'R', 'body', 'melee', 6,
+        effect=_trample_effect, defense=_trample_defense)
+    add("CHARGE", 'R', 'body', 'both', 4, effect=_charge_move, defense=_charge_move)
+    # --- Expanded set: Blue ---
+    add("INTERRUPT", 'B', 'mind', 'both', 2,
+        effect=_interrupt_effect, defense=_interrupt_defense)
+    add("CHAIN", 'B', 'mind', 'both', 2, effect=_chain_effect, defense=_chain_defense)
+    add("CALCULATE", 'B', 'mind', 'ranged', 4,
+        effect=_calculate_effect, defense=_calculate_defense)
+    add("ANALYZE", 'B', 'mind', 'both', 2, effect=_analyze_effect)
+    add("STUDY", 'B', 'mind', 'ranged', 6, effect=_study_effect, defense=_study_defense)
+    add("PROFILE", 'B', 'mind', 'both', 4, effect=_profile_effect, defense=_profile_defense)
+    add("REFRACT", 'B', 'mind', 'ranged', 4,
+        effect=_refract_effect, defense=_refract_defense)
+    # --- Expanded set: Green ---
+    add("SYNCHRONY", 'G', 'soul', 'both', 2,
+        effect=_synchrony_effect, defense=_synchrony_defense)
+    add("ROOTED OATH", 'G', 'soul', 'both', 4,
+        effect=_rooted_oath_effect, defense=_rooted_oath_defense)
+    add("URGENCY", 'G', 'soul', 'melee', 4,
+        effect=_urgency_effect, defense=_urgency_defense)
+    add("DELAY", 'G', 'soul', 'both', 6, effect=_delay_effect, defense=_delay_defense)
+    add("COMMUNION", 'G', 'soul', 'both', 4,
+        effect=_communion_effect, defense=_communion_defense)
+    add("MIRROR STEP", 'G', 'soul', 'both', 4, effect=_mirror_step_effect)
+    add("PATIENCE", 'G', 'soul', 'melee', None,
+        damage=_patience_dmg, defense=_patience_defense)
+
     # Status card
     add("WOUND", None, None, None, None, is_status=True)
 
@@ -557,6 +729,18 @@ SAGE_STATS = dict(mind=4, soul=3, body=2)
 ADEPT_STATS = dict(soul=4, body=3, mind=2)
 WARDEN_STATS = dict(soul=4, body=3, mind=2)
 
+# Two archetypes built on the expanded set, for testing the new mechanics in teams.
+VANGUARD_DECK = [   # Body 4 — front-line tank/protection + a little sustain
+    "STRIKE", "GUARD", "INTERCEPT", "FORTRESS STANCE", "RALLY", "TRAMPLE",
+    "WITNESS", "RENEWAL", "PARADOX",
+]
+VANGUARD_STATS = dict(body=4, soul=3, mind=2)
+TEMPO_DECK = [      # Mind 4 — control/tempo denial
+    "INTERRUPT", "CHAIN", "CALCULATE", "PROFILE", "REFRACT", "AXIOM",
+    "DELAY", "PARADOX", "PAIN IS FUEL",
+]
+TEMPO_STATS = dict(mind=4, soul=3, body=2)
+
 # registry so run.py can pit any two decks against each other
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
@@ -566,4 +750,6 @@ ROSTER = {
     "sage":   (SAGE_STATS, SAGE_DECK),      # Mind 4 — blue archetype
     "adept":  (ADEPT_STATS, ADEPT_DECK),    # Soul 4 — green archetype
     "warden": (WARDEN_STATS, WARDEN_DECK),  # Soul 4 — green support anchor
+    "vanguard": (VANGUARD_STATS, VANGUARD_DECK),  # Body 4 — tank/protection
+    "tempo":    (TEMPO_STATS, TEMPO_DECK),        # Mind 4 — control/tempo
 }
