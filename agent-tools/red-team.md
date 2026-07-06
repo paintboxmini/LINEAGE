@@ -129,6 +129,7 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
+- Engine invariants (for the Invariant Violations pass): `rules/invariants.md`
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`
