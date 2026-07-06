@@ -155,8 +155,8 @@ Range: Melee
 **SPARK OF VIOLENCE**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 2 unpreventable damage to any target
-Defensive Bonus: Deal 2 unpreventable damage to any target
+Effect: Deal 2 unpreventable damage to any enemy
+Defensive Bonus: Deal 2 unpreventable damage to any enemy
 Range: Both
 *"Every blaze begins with a decision."*
 
