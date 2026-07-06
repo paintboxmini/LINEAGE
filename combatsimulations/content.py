@@ -127,16 +127,13 @@ def _blood_tithe_defense(engine, me, foe):
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
-    total = me.body + roll(4, engine.rng)
+    die = roll(4, engine.rng)          # the DIE result explodes, not the total
+    total = me.body + die
     rerolls = 0
-    last = total
-    while rerolls < 3 and (last % 2 == 1):
-        last = roll(4, engine.rng)
-        total += last
+    while rerolls < 3 and die % 2 == 1:
+        die = roll(4, engine.rng)
+        total += die
         rerolls += 1
-    RULING("gamblers-ruin-explode",
-           "GAMBLER'S RUIN: every odd result (including added dice) triggers "
-           "another d4, capped at 3 extra rolls total (Drew ruling).")
     return total
 
 

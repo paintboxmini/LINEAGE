@@ -145,7 +145,7 @@ Range: Ranged
 **GAMBLER'S RUIN**
 RED — BODY
 Attack: Body + d4
-Effect: For every odd result rolled, roll again and add to total. (Max 3)
+Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
 Defensive Bonus: Add 1d4 to your next attack
 Range: Melee
 *"Chaos does not promise victory. Only spectacle."*
