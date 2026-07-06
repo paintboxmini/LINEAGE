@@ -48,11 +48,16 @@ Immediately move the target X positions in the initiative order. Positive X move
 
 The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
 
-A positive shift can never delay the target's next turn; a negative shift can never accelerate it. If the repositioning above would violate that, correct it directly: a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle. A negative shift instead skips the target's turn this cycle; they settle into the new position starting next cycle.
+**Crossing the turn marker.** The turn marker is the fixed fence in the wheel (see `rules/combat.md`, The turn marker). A shift *crosses* the marker when the target's repositioning path passes over it; landing exactly on the marker counts as crossing. Crossing is what keeps the guarantee that a positive shift never delays the target's next turn and a negative shift never hastens it:
+- **Crossing forward** (a positive shift lapping past the marker): the target takes one immediate extra turn right now, then settles into its new position starting next cycle.
+- **Crossing backward** (a negative shift lapped past the marker): the target's next turn is skipped, then it settles into its new position starting next cycle.
+A shift that does *not* cross the marker simply seats the target at its new position — no extra turn, no skip.
 
-For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution. Then resolve the remaining positional shift normally, including its own correction above if it applies.
+**On the fence.** The target that is itself taking the current turn — the combatant shifting itself, or one shifted while it is the active turn — is standing *on* the marker. You can hop down from a fence you are standing on without jumping it: moving off the marker is never by itself a crossing. Such a target only crosses if the shift is large enough to carry it a full loop all the way back around to the marker. So a small self-shift just reseats it sooner (positive) or leaves it last in the lap (negative); it never hands the current actor a free turn or a self-inflicted skip.
 
-To check at the table: see whether the shift's path passes through the position currently taking its turn — landing exactly on it counts as passing through. If it doesn't, no violation is possible — the target simply takes up the new position, done. If it does, apply the correction above.
+For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution — and remember a target on the fence measures its first full revolution from the marker it is standing on. Then resolve the remaining positional shift normally.
+
+To check at the table: trace the shift's path and see whether it passes over the seat the marker points at. If the target started on that seat (it is the current turn), ignore the marker it is leaving — only a path that loops all the way back to the marker counts. Otherwise, landing on or passing the marker is a crossing; if it doesn't reach the marker, the target simply takes up the new position, done.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.

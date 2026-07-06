@@ -64,6 +64,8 @@ Turn order resolves highest to lowest.
 
 There are no rounds. Initiative is a continuous wheel — once the last position has acted, the order cycles back to 1st and keeps going. Card effects referencing timing anchor to a combatant's own next turn, not a table-wide round.
 
+**The turn marker.** Picture the wheel as a loop of seats with a fence planted in it — the turn marker. The marker never moves; the combatants circle past it, and whoever the marker points at is the one taking their turn right now. When their turn ends, the wheel advances one seat and the marker points at the next combatant. The marker is the dividing line between "has acted this lap" and "still to act this lap." It matters only for **Initiative Shift** (below): a shift that carries a combatant across the marker changes how many turns they get, because the marker is the seam where the loop closes. A combatant sitting on the marker — the one whose turn it currently is — is *on the fence*: it can be moved off without that counting as a crossing (see **Initiative Shift X**).
+
 Card effects cannot modify initiative unless the card explicitly states otherwise. See **Initiative Shift X** in `rules/card-glossary.md`.
 
 ---
