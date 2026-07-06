@@ -44,20 +44,15 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
-Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom. The target cuts into the new position; everyone seated between the old and new position shifts one seat over to make room.
+Immediately move the target X positions in the initiative order: positive X toward the front (acts sooner), negative X toward the back (acts later). The target cuts into the new seat; everyone between the old and new seat shifts one over to make room.
 
-The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
+The order is a loop — there are no ends to fall off, only the turn marker to cross (see `rules/combat.md`, The turn marker). A shift *crosses* the marker when the target's path passes over it; landing exactly on it counts. A shift that does not reach the marker simply reseats the target. A shift that crosses it does one of the following instead — which is why a positive shift can never delay the target's next turn, nor a negative one hasten it:
+- **Forward** (positive, lapping past the marker): the target takes one extra turn immediately, then settles into its new seat next cycle.
+- **Backward** (negative, lapped past the marker): the target's next turn is skipped, then it settles into its new seat next cycle.
 
-**Crossing the turn marker.** The turn marker is the fixed fence in the wheel (see `rules/combat.md`, The turn marker). A shift *crosses* the marker when the target's repositioning path passes over it; landing exactly on the marker counts as crossing. Crossing is what keeps the guarantee that a positive shift never delays the target's next turn and a negative shift never hastens it:
-- **Crossing forward** (a positive shift lapping past the marker): the target takes one immediate extra turn right now, then settles into its new position starting next cycle.
-- **Crossing backward** (a negative shift lapped past the marker): the target's next turn is skipped, then it settles into its new position starting next cycle.
-A shift that does *not* cross the marker simply seats the target at its new position — no extra turn, no skip.
+**On the fence.** A target shifted while it is taking the current turn is standing *on* the marker — hopping off is not a crossing (see the fence, `rules/combat.md`). It crosses only if the shift carries it a full loop back around to the marker. So a small self-shift just reseats it — never a free turn, never a self-skip.
 
-**On the fence.** The target that is itself taking the current turn — the combatant shifting itself, or one shifted while it is the active turn — is standing *on* the marker. You can hop down from a fence you are standing on without jumping it: moving off the marker is never by itself a crossing. Such a target only crosses if the shift is large enough to carry it a full loop all the way back around to the marker. So a small self-shift just reseats it sooner (positive) or leaves it last in the lap (negative); it never hands the current actor a free turn or a self-inflicted skip.
-
-For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution — and remember a target on the fence measures its first full revolution from the marker it is standing on. Then resolve the remaining positional shift normally.
-
-To check at the table: trace the shift's path and see whether it passes over the seat the marker points at. If the target started on that seat (it is the current turn), ignore the marker it is leaving — only a path that loops all the way back to the marker counts. Otherwise, landing on or passing the marker is a crossing; if it doesn't reach the marker, the target simply takes up the new position, done.
+For shifts of X ≥ N (N = number of combatants): resolve one revolution at a time — one extra turn (positive) or one skipped turn (negative) each — then apply the leftover positional shift. A target on the fence counts its first revolution from the marker it stands on.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
