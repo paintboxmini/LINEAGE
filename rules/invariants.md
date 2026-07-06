@@ -21,6 +21,7 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 2. **Blind, simultaneous selection.** The defender chooses at most one card to reveal *without seeing the attacker's card*. Reveals are simultaneous — the defender decides from public information only (revealed-color history, position), never the played card.
    - *Modifier — Predictable (Study):* for one marked reveal, the holder sees the attacker's card before choosing. Expires on use.
    - *Constraint — Axiom:* a named color cannot be revealed — attack or block — on the next reveal.
+   - *Modifier — Intercept (team):* a standing ally reveals in the target's place, taking over this defense before RPS.
    - A staggered, cannot-defend, or collapsed defender skips selection (attacker wins uncontested).
 
 3. **RPS resolution.** Blue beats Red beats Green beats Blue. Same color is a tie. No defense revealed means the attacker wins uncontested.
@@ -33,7 +34,7 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 
 5. **Damage pipeline — fixed order.** When damage is dealt it is reduced in this order, and each step is itself an invariant:
 
-   redirect (Shared Burden) → volunteer shield (Fortress / Intercept, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → damage floor (Equal Footing) → apply to HP.
+   redirect (Shared Burden) → volunteer shield (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → damage floor (Equal Footing) → apply to HP.
 
    - A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse).
    - `Unpreventable` damage skips Armour and Resist.
@@ -46,9 +47,9 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 Not tied to a single exchange, but always in force.
 
 - **Initiative is a continuous wheel with a fixed turn marker.** There are no rounds. A combatant's position changes only via Initiative Shift; crossing the marker changes how many turns they get (see `rules/combat.md`, The turn marker, and `Initiative Shift X` in `rules/card-glossary.md`).
-- **Blocking costs a card.** Every defense spends a card from hand. Hand size *is* blocking capacity between your turns — nobody blocks for free, and nobody is ever completely undefended (the hand-size floor guarantees it).
+- **Blocking costs a card.** Every defense spends a card from hand. Hand size *is* blocking capacity between your turns — nobody blocks for free. The hand-size floor keeps you from *starting* a turn defenseless, but focus-fire between your turns can still empty your hand.
 - **Derived stats.** Body → max HP (`2 × Body + 9`; only Body changes HP). Mind → hand size. Soul → initiative. Changes apply live, in both directions.
-- **The deck cycles.** Decks are small and reshuffle constantly, so deck-state manipulation (scry, surveil, tracking) is near-neutral *in combat* — the deck recycles what you bury or bin. Read, tempo, and timing effects move outcomes; deck-order effects mostly do not (see `memory.md`).
+- **The deck reshuffles from discard.** When a deck runs out it is rebuilt from its discard pile — cards do not leave the game by default. (Consequence, not a rule: because decks are small and recycle constantly, deck-state manipulation like scry/surveil is near-neutral in combat, while read/tempo/timing effects move outcomes.)
 - **A reveal is private until it happens, public after.** Your pending choice is hidden; your played colors are known history. Predictable is the only thing that breaks the "until it happens" half.
 
 ---
@@ -64,9 +65,10 @@ Every card that bends an invariant, the invariant it bends, and its lifetime. Th
 | Paradox | RPS resolution (inverts) | the exchange |
 | Interrupt | defender may act (cannot-defend) | until your next turn |
 | Stagger | defender may act (skips block) | next attack |
+| Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | wheel position | immediate |
-| Armour / Resist | damage pipeline | per hit / next hit |
-| Fortress / Intercept / Shared Burden | damage pipeline (redirect) | next hit (team) |
+| Armour / Resist | damage pipeline (reduction) | per hit / next hit |
+| Fortress / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 
 ---
