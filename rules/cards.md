@@ -62,7 +62,7 @@ Your deck is not just mechanics. It's how your character thinks.
 
 Short versions for reading cards. `rules/card-glossary.md` is canonical — if these ever disagree, the glossary wins.
 
-**Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Return them in any order, placing each on top or on the bottom.
+**Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Place each on top, on the bottom, or into the discard pile, in any order.
 
 **Ongoing Effect** — The card remains face up after use until its stated condition is met, then discards.
 

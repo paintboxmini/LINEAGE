@@ -75,7 +75,7 @@ Move a target enemy from Backline to Frontline. Cannot target allies. The user m
 On your next turn, you may change positions without spending your action.
 
 **Scry X**
-Look at the top X cards of a deck. If no target is specified, this applies to your own deck. Return them in any order, placing each on top or on the bottom.
+Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
 
 **Staggered**
 The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.

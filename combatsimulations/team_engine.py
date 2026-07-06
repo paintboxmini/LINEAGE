@@ -90,7 +90,11 @@ class Battle:
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
         if not seen:
             return seen
-        top, bottom = actor.policy.scry_plan(self, actor, owner, seen)
+        plan = actor.policy.scry_plan(self, actor, owner, seen)
+        top, bottom = plan[0], plan[1]
+        binned = plan[2] if len(plan) > 2 else []
+        for c in binned:
+            owner.discard.append(c)
         for c in bottom:
             owner.deck.insert(0, c)
         for c in top:

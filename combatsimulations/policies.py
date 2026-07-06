@@ -72,6 +72,10 @@ class ScryMixin:
             real = sorted([c for c in seen if not c.is_status],
                           key=lambda c: est_damage(actor, c))   # best ends last -> drawn first
             wounds = [c for c in seen if c.is_status]
+            # Bottom Wounds, don't bin them: in a single combat, binning to discard
+            # just recycles them faster on the next reshuffle. (Scry CAN bin — the
+            # engine supports it — but that's a rest/Press-the-Wound play, which
+            # lives outside a no-rest duel. See memory.md.)
             return real, wounds
         # enemy deck
         my = actor.attack_history.most_common(1)[0][0] if actor.attack_history else None
