@@ -159,6 +159,8 @@ class Combatant:
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
         self._rend_guard = False         # Rend def: next hit -> Wound, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
+        self._predictable_to = None      # Study def: this foe reads my next reveal
+        self._known_attack = None        # transient: attacker's card, exposed to me
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -369,7 +371,14 @@ class Duel:
         # attacker's revealed-color history, position, etc.).
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+            # Predictable: if this defender marked the attacker, they see the actual
+            # card before choosing — simultaneity broken for one reveal, then expires.
+            if getattr(attacker, '_predictable_to', None) is defender:
+                attacker._predictable_to = None
+                defender._known_attack = card
+                self._say(f"  PREDICTABLE: {defender.name} reads {card.name} before blocking")
             def_card = defender.policy.choose_defense(self, defender, attacker)
+            defender._known_attack = None
             if def_card is not None:
                 # enforce Axiom ban on the reveal
                 if defender.axiom_ban and def_card.color == defender.axiom_ban:

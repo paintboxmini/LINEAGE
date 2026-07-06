@@ -489,9 +489,7 @@ def _study_effect(engine, me, foe):
         if c:
             me.hand.append(c)              # discard 1 (a Wound if held), draw 1
 def _study_defense(engine, me, foe):
-    RULING("predictable-unmodeled",
-           "STUDY's def 'apply Predictable' (see the foe's next reveal) needs a "
-           "hidden-info policy to exploit; modeled as a no-op for now.")
+    foe._predictable_to = me               # Predictable: I read this foe's next reveal
 
 def _profile_effect(engine, me, foe):
     engine.scry(me, me, 2)

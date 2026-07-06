@@ -159,7 +159,14 @@ class Battle:
 
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+            # Predictable: the marked attacker's card is exposed to this defender for
+            # one reveal (see engine.attack), then expires.
+            if getattr(attacker, '_predictable_to', None) is defender:
+                attacker._predictable_to = None
+                defender._known_attack = card
+                self._say(f"  PREDICTABLE: {defender.name} reads {card.name} before blocking")
             def_card = defender.policy.choose_defense(self, defender, attacker)
+            defender._known_attack = None
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
         defender.staggered = False
