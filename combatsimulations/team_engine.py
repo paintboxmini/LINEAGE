@@ -21,7 +21,8 @@ Policies for teams implement:
 
 import random
 
-from engine import roll, RULING, can_attack, _ongoing_support_tick, _apply_shift
+from engine import (roll, RULING, can_attack, _ongoing_support_tick,
+                    _apply_shift, _rotate_current)
 
 
 class Battle:
@@ -230,8 +231,7 @@ class Battle:
             a, b = bool(self.living(0)), bool(self.living(1))
             if not a or not b:
                 return self._finish(a, b)
-            if self.queue and self.queue[0] is who:
-                self.queue.append(self.queue.pop(0))
+            _rotate_current(self, self.queue, who)
             self.turn_count += 1
             while self.pending_turns and self.turn_count < self.max_turns:
                 extra = self.pending_turns.pop(0)

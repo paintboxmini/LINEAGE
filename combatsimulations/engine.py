@@ -60,19 +60,11 @@ def _apply_shift(engine, queue, target, amount):
         return
     i = queue.index(target)
     if i == 0:                                   # shifting the current actor itself
-        # The current actor is mid-turn and about to rotate to the back; its
-        # effective next-cycle slot is the back (index nr). A self / current-actor
-        # shift NEVER grants a bonus turn or a skip — you cannot act sooner than
-        # the turn you are already in:
-        #   positive -> act sooner NEXT cycle, clamped to "next up" (index >=1)
-        #   negative -> act later, clamped to the back
-        queue.pop(0)
-        nr = len(queue)
-        if nr == 0:
-            queue.append(target)
-            return
-        new_i = max(1, nr - amount) if amount > 0 else nr
-        queue.insert(new_i, target)
+        # The current actor is ON the turn marker. It cannot cross a marker it is
+        # sitting on without travelling a full revolution back around to it, so its
+        # repositioning is DEFERRED to rotation time (_rotate_current), where the
+        # full-lap crossing rule lives. Accumulate in case of multiple shifts.
+        engine._pending_self_shift = getattr(engine, '_pending_self_shift', 0) + amount
         return
     queue.remove(target)
     nr = len(queue)
@@ -85,6 +77,40 @@ def _apply_shift(engine, queue, target, amount):
     else:
         new_i = min(nr, i + abs(amount))         # acts that many slots later
     queue.insert(max(1, min(nr, new_i)), target)
+
+
+def _rotate_current(engine, queue, who):
+    """Rotate the just-acted current actor off the front, honoring any initiative
+    shift applied to it THIS turn (a self-shift, or a shift aimed at the current
+    attacker from a defense — both land on the actor while it sits on the marker).
+
+    Default is to the back of the wheel. Because the actor is ON the marker, only a
+    FULL revolution (|amount| >= total seats) crosses it: a positive full lap grants
+    a bonus turn (queued now, settles a lap later), a negative full lap a skipped
+    turn. Anything smaller just repositions within the coming lap — a positive shift
+    comes around sooner, a negative one is already latest so it stays at the back —
+    never a free action, never a skip."""
+    amount = engine.__dict__.pop('_pending_self_shift', 0)
+    if not queue or queue[0] is not who:
+        return
+    queue.pop(0)
+    nr = len(queue)
+    if nr == 0:                                  # nobody else in the wheel
+        queue.append(who)
+        return
+    total = nr + 1                               # seats including the current actor
+    if amount > 0:
+        if amount >= total:                      # lapped forward across the marker
+            engine.pending_turns.append(who)     # bonus turn now
+            queue.append(who)                    # then settle a full lap back
+        else:
+            queue.insert(nr - amount, who)       # come around that many turns sooner
+    elif amount < 0:
+        if -amount >= total:                     # lapped backward across the marker
+            who.skip_turns += 1                  # skip the next turn
+        queue.append(who)                        # already latest; settle at the back
+    else:
+        queue.append(who)                        # no shift: ordinary rotation
 
 
 # --- Card model ---------------------------------------------------------------
@@ -487,9 +513,8 @@ class Duel:
             r = self._win_result(who, self.other(who))
             if r is not None:
                 return r
-            # current actor rotates to the back — unless a shift already moved them
-            if self.queue and self.queue[0] is who:
-                self.queue.append(self.queue.pop(0))
+            # current actor rotates to the back, honoring any shift aimed at it
+            _rotate_current(self, self.queue, who)
             self.turn_count += 1
             # bonus turns from a positive shift crossing the marker: right after
             while self.pending_turns and self.turn_count < self.max_turns:
