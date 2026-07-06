@@ -44,6 +44,49 @@ def playable(hand):
     return [c for c in hand if not c.is_status]
 
 
+def _card_power(card):
+    """Owner-agnostic threat estimate — bigger die = bigger card. Used to rank
+    an opponent's unseen cards during a Scry."""
+    return {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, None: 4.0}.get(card.base_die, 3.0)
+
+
+class ScryMixin:
+    """A composable sub-brain: every action-brain mixes this in and shares one
+    Scry strategy. The engine hands scry_plan the cards seen on top of a deck and
+    it returns (to_top, to_bottom) — to_top[-1] is drawn next.
+
+    Two modes, per Drew's logic:
+      • Your own (or an ally's) deck — set up good draws: surface your best cards,
+        bury Wounds so you don't draw dead.
+      • An enemy's deck — sabotage draws: bury their biggest threats AND the color
+        that would beat your usual attack (so the card that normally answers you
+        is delayed), and leave their junk (and any Wounds!) on top to draw.
+
+    Override scry_plan on a specific brain for card-specific cleverness (e.g.
+    keep a threat on top when you already hold the answer). This default is the
+    "make my attacks safer" line.
+    """
+    def scry_plan(self, engine, actor, owner, seen):
+        own = (owner is actor) or (owner in engine.allies(actor))
+        if own:
+            real = sorted([c for c in seen if not c.is_status],
+                          key=lambda c: est_damage(actor, c))   # best ends last -> drawn first
+            wounds = [c for c in seen if c.is_status]
+            return real, wounds
+        # enemy deck
+        my = actor.attack_history.most_common(1)[0][0] if actor.attack_history else None
+        counter = _BEATEN_BY[my] if my else None    # color that beats my attacks
+        def threat(c):
+            if c.is_status:
+                return -10                          # a Wound of theirs: leave it on top!
+            return _card_power(c) + (5 if (counter and c.color == counter) else 0)
+        ranked = sorted(seen, key=threat)           # weakest first
+        half = max(1, len(ranked) // 2)
+        junk = ranked[:half][::-1]                  # low threat, weakest last -> drawn next
+        bury = ranked[half:]                        # threats + counter color -> bottom
+        return junk, bury
+
+
 def legal_attacks(engine, me, foe):
     if me.must_target_frontline and foe.position != 'frontline':
         return []  # Partition: no legal frontline target
@@ -60,7 +103,7 @@ def clear_wound_if_idle(engine, me, foe):
     return None
 
 
-class RandomPolicy:
+class RandomPolicy(ScryMixin):
     name = "random"
 
     def choose_action(self, engine, me, foe):
@@ -86,7 +129,7 @@ class RandomPolicy:
         return engine.rng.choice(['R', 'B', 'G'])
 
 
-class GreedyPolicy:
+class GreedyPolicy(ScryMixin):
     """Maximize damage; defend only when it can win the reveal."""
     name = "greedy"
 
@@ -115,7 +158,7 @@ class GreedyPolicy:
         return foe.last_color or 'B'
 
 
-class ReaderPolicy:
+class ReaderPolicy(ScryMixin):
     """Punish the opponent's most frequent attack color (from public history)."""
     name = "reader"
 
@@ -156,7 +199,7 @@ class ReaderPolicy:
         return self._predict(foe) or 'B'
 
 
-class TacticianPolicy:
+class TacticianPolicy(ScryMixin):
     """Built on GREEDY, not reader — the tournament's verdict.
 
     The sim overturned the intuition that tracking an opponent's lifetime color

@@ -171,17 +171,21 @@ def _spiral_current_effect(engine, me, foe):
 
 
 def _align_effect(engine, me, foe):
-    if len(me.hand) < me.effective_hand_size():
+    seen = engine.scry(me, me, 2)              # reorder own deck; then conditional draw
+    if len(seen) == 2 and seen[0].color == seen[1].color and seen[0].color is not None:
         c = me.draw_one(engine.rng)
         if c:
             me.hand.append(c)
-    RULING("align-scry-simplified",
-           "ALIGN's scry-2 information step is simplified: the conditional draw is "
-           "modeled, the scry ordering is not (no hidden-info policy consumes it).")
 
 
 def _align_defense(engine, me, foe):
-    me.next_attack_bonus += 2
+    seen = engine.scry(me, me, 2)
+    if len(seen) == 2 and seen[0].color == seen[1].color and seen[0].color is not None:
+        me.next_attack_bonus += 2
+
+
+def _axiom_defense(engine, me, foe):
+    engine.scry(me, foe, 2)                    # scry the attacker's deck (sabotage)
 
 
 def _anticipate_defense(engine, me, foe):
@@ -426,7 +430,7 @@ def build_cards():
     add("SPARK OF VIOLENCE", 'R', 'body', 'both', 4,
         effect=_spark_effect, defense=_spark_effect)
     # Frost — Blue
-    add("AXIOM", 'B', 'mind', 'both', 2, effect=_axiom_effect)
+    add("AXIOM", 'B', 'mind', 'both', 2, effect=_axiom_effect, defense=_axiom_defense)
     add("DEFLECT", 'B', 'mind', 'melee', 4,
         effect=_deflect_effect, defense=_deflect_defense)
     add("REALIGNMENT", 'B', 'mind', 'both', 4, effect=_realignment_effect)  # def DEAD (allies)

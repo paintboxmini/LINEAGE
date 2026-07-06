@@ -67,14 +67,21 @@ they aren't mistaken for bugs.
   turn" on a 2-seat wheel; the positional remainder only bites with 3+ combatants.
 - **positive-initiative-shift-unmodeled** — no current card grants extra turns.
 
-## Open (genuine engine simplifications)
+## Accepted simplifications (final — Drew signed off)
 
-- **gap-retaliate** — Blood in the Gap's "steal 2 each time you're damaged" is a
-  single next-damage rider, not a persistent per-instance one. Low impact.
-- **align-scry-simplified** — Align's scry-2 information isn't consumed by any
-  policy; only its conditional draw is modeled.
+- **gap-retaliate** — Blood in the Gap's "steal 2 each time you're damaged"
+  models a single next-damage rider, not a persistent per-instance one. Accepted
+  as-is; the difference is negligible in practice.
 - **stalemate-cap** — duels past the turn cap score as draws (engine safeguard,
-  not a rule); effectively never triggers with attacking policies.
+  not a rule); effectively never triggers with attacking policies. Accepted.
+
+## Resolved by implementation
+
+- **scry** — Scry is now a real mechanic: `engine.scry(actor, owner, x)` lets a
+  brain reorder the top of any deck (own or enemy), driven by a composable
+  `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Wounds.
+  Enemy-deck: bury their threats and the color that beats your attacks, leave
+  junk (and their Wounds) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
 
 ---
 

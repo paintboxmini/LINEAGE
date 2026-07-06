@@ -9,7 +9,7 @@ sim couldn't show).
     choose_defense(battle, me, attacker) -> card | None
 """
 
-from policies import est_damage, _BEATEN_BY, playable
+from policies import est_damage, _BEATEN_BY, playable, ScryMixin
 
 
 def legal_attacks_team(battle, me, target):
@@ -25,10 +25,10 @@ def can_attack_t(attacker, target, card):
     return both_front if card.reach == 'melee' else (not both_front)
 
 
-class TeamTactician:
+class TeamTactician(ScryMixin):
     """Focus-fire the weakest reachable enemy; attack for max value; defend by
-    recency read. Respects taunts (forced target). This is the team analogue of
-    the duel tactician."""
+    recency read. Respects taunts (forced target). Composes with the shared
+    ScryMixin for deck-manipulation decisions. Team analogue of the duel tactician."""
     name = "team_tactician"
 
     def _pick_target(self, battle, me):

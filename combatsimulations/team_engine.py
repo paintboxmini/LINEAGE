@@ -86,6 +86,17 @@ class Battle:
             return
         target.deck.insert(self.rng.randint(0, len(target.deck)), self.wound)
 
+    def scry(self, actor, owner, x):
+        seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
+        if not seen:
+            return seen
+        top, bottom = actor.policy.scry_plan(self, actor, owner, seen)
+        for c in bottom:
+            owner.deck.insert(0, c)
+        for c in top:
+            owner.deck.append(c)
+        return seen
+
     def initiative_shift(self, target, amount):
         n = len(self.all)
         skips = abs(amount) // n

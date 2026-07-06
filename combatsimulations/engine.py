@@ -209,6 +209,20 @@ class Duel:
                    "turns in the 2-combatant duel (the positional remainder "
                    "reduces to tempo loss).")
 
+    def scry(self, actor, owner, x):
+        """Look at the top x of owner's deck; the actor's policy decides which go
+        back on top and which to the bottom. Returns the cards seen (some cards,
+        e.g. ALIGN, care what they were). to_top[-1] ends up drawn next."""
+        seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
+        if not seen:
+            return seen
+        top, bottom = actor.policy.scry_plan(self, actor, owner, seen)
+        for c in bottom:
+            owner.deck.insert(0, c)
+        for c in top:
+            owner.deck.append(c)
+        return seen
+
     def _say(self, msg):
         self.log.append(msg)
 
