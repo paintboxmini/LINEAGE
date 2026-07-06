@@ -60,8 +60,19 @@ def _apply_shift(engine, queue, target, amount):
         return
     i = queue.index(target)
     if i == 0:                                   # shifting the current actor itself
-        if amount > 0:
-            engine.pending_turns.append(target)  # bonus turn; its wheel slot is unchanged
+        # The current actor is mid-turn and about to rotate to the back; its
+        # effective next-cycle slot is the back (index nr). A self / current-actor
+        # shift NEVER grants a bonus turn or a skip — you cannot act sooner than
+        # the turn you are already in:
+        #   positive -> act sooner NEXT cycle, clamped to "next up" (index >=1)
+        #   negative -> act later, clamped to the back
+        queue.pop(0)
+        nr = len(queue)
+        if nr == 0:
+            queue.append(target)
+            return
+        new_i = max(1, nr - amount) if amount > 0 else nr
+        queue.insert(new_i, target)
         return
     queue.remove(target)
     nr = len(queue)
