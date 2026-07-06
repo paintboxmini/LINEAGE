@@ -50,6 +50,32 @@ def _ongoing_support_tick(engine, who):
             tgt.next_attack_bonus += 2
 
 
+def _apply_shift(engine, queue, target, amount):
+    """Initiative Shift on the live turn queue (queue[0] = current actor, mid-turn).
+    The target is REPOSITIONED by `amount` slots — it settles into that new slot,
+    it is not locked to the slot after the current turn. A positive shift that
+    crosses the current marker also grants a bonus turn now (queued in
+    pending_turns); the target then settles at its shifted slot for later cycles."""
+    if not queue or target not in queue:
+        return
+    i = queue.index(target)
+    if i == 0:                                   # shifting the current actor itself
+        if amount > 0:
+            engine.pending_turns.append(target)  # bonus turn; its wheel slot is unchanged
+        return
+    queue.remove(target)
+    nr = len(queue)
+    if amount > 0:
+        if i - amount <= 0:                      # crosses the current marker
+            engine.pending_turns.append(target)  # bonus turn now
+            new_i = nr                           # then settle at the back (it lapped)
+        else:
+            new_i = i - amount                   # simply acts that many slots sooner
+    else:
+        new_i = min(nr, i + abs(amount))         # acts that many slots later
+    queue.insert(max(1, min(nr, new_i)), target)
+
+
 # --- Card model ---------------------------------------------------------------
 class Card:
     """A card is data plus up to three behavior hooks.
@@ -203,6 +229,7 @@ class Duel:
         self.turn_count = 0
         self.wound = cards.get('WOUND')
         self.pending_turns = []
+        self.queue = []
 
     def shuffle_wound(self, target):
         if self.wound is None:
@@ -211,13 +238,7 @@ class Duel:
         target.deck.insert(idx, self.wound)
 
     def initiative_shift(self, target, amount):
-        # Positive: an extra turn right after the current turn (the target crosses
-        # the marker). Negative: the target skips a turn. Simplified to one
-        # crossing per shift — no current card shifts by more than one wheel.
-        if amount > 0:
-            self.pending_turns.append(target)
-        elif amount < 0:
-            target.skip_turns += 1
+        _apply_shift(self, self.queue, target, amount)
 
     def scry(self, actor, owner, x):
         """Look at the top x of owner's deck; the actor's policy decides which go
@@ -437,28 +458,28 @@ class Duel:
     # --- main loop ---
     def run(self):
         self.setup()
+        self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
-        idx = 0
-        n = len(self.order)
         while self.turn_count < self.max_turns:
-            who = self.order[idx % n]
+            who = self.queue[0]
             if not who.collapsed:
                 self.take_turn(who, self.other(who))
             r = self._win_result(who, self.other(who))
             if r is not None:
                 return r
-            # extra turns from a positive Initiative Shift crossing the marker:
-            # they fire immediately after the current turn.
+            # current actor rotates to the back — unless a shift already moved them
+            if self.queue and self.queue[0] is who:
+                self.queue.append(self.queue.pop(0))
+            self.turn_count += 1
+            # bonus turns from a positive shift crossing the marker: right after
             while self.pending_turns and self.turn_count < self.max_turns:
                 extra = self.pending_turns.pop(0)
-                self.turn_count += 1
                 if not extra.collapsed:
                     self.take_turn(extra, self.other(extra))
                 r = self._win_result(extra, self.other(extra))
                 if r is not None:
                     return r
-            idx += 1
-            self.turn_count += 1
+                self.turn_count += 1
         RULING("stalemate-cap",
                "Duels exceeding max_turns are scored as draws (engine safeguard, "
                "not a game rule).")

@@ -21,7 +21,7 @@ Policies for teams implement:
 
 import random
 
-from engine import roll, RULING, can_attack, _ongoing_support_tick
+from engine import roll, RULING, can_attack, _ongoing_support_tick, _apply_shift
 
 
 class Battle:
@@ -38,6 +38,7 @@ class Battle:
         self.turn_count = 0
         self.wound = cards.get('WOUND')
         self.pending_turns = []
+        self.queue = []
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -111,10 +112,7 @@ class Battle:
         return seen
 
     def initiative_shift(self, target, amount):
-        if amount > 0:
-            self.pending_turns.append(target)   # extra turn right after the current
-        elif amount < 0:
-            target.skip_turns += 1              # skip the target's next turn
+        _apply_shift(self, self.queue, target, amount)
 
     # --- setup: one interleaved initiative wheel over everyone ---
     def setup(self):
@@ -216,27 +214,26 @@ class Battle:
     # --- main loop ---
     def run(self):
         self.setup()
+        self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
-        idx = 0
-        n = len(self.order)
         while self.turn_count < self.max_turns:
-            who = self.order[idx % n]
+            who = self.queue[0]
             if not who.collapsed:
                 self.take_turn(who)
             a, b = bool(self.living(0)), bool(self.living(1))
             if not a or not b:
                 return self._finish(a, b)
-            # extra turns from a positive Initiative Shift, immediately after
+            if self.queue and self.queue[0] is who:
+                self.queue.append(self.queue.pop(0))
+            self.turn_count += 1
             while self.pending_turns and self.turn_count < self.max_turns:
                 extra = self.pending_turns.pop(0)
-                self.turn_count += 1
                 if not extra.collapsed:
                     self.take_turn(extra)
                 a, b = bool(self.living(0)), bool(self.living(1))
                 if not a or not b:
                     return self._finish(a, b)
-            idx += 1
-            self.turn_count += 1
+                self.turn_count += 1
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
     def take_turn(self, who):
