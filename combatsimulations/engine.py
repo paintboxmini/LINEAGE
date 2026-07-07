@@ -36,6 +36,83 @@ def roll(die, rng):
     return rng.randint(1, die)
 
 
+def _ongoing_support_tick(engine, who):
+    """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
+    Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
+    for o in who.ongoing:
+        if o['kind'] == 'synchrony':
+            for a in [who] + engine.allies(who):
+                engine.heal(a, 1)
+        elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
+            allies = engine.allies(who)
+            tgt = (max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul')))
+                   if allies else who)
+            tgt.next_attack_bonus += 2
+
+
+def _apply_shift(engine, queue, target, amount):
+    """Initiative Shift on the live turn queue (queue[0] = current actor, mid-turn).
+    The target is REPOSITIONED by `amount` slots — it settles into that new slot,
+    it is not locked to the slot after the current turn. A positive shift that
+    crosses the current marker also grants a bonus turn now (queued in
+    pending_turns); the target then settles at its shifted slot for later cycles."""
+    if not queue or target not in queue:
+        return
+    i = queue.index(target)
+    if i == 0:                                   # shifting the current actor itself
+        # The current actor is ON the turn marker. It cannot cross a marker it is
+        # sitting on without travelling a full revolution back around to it, so its
+        # repositioning is DEFERRED to rotation time (_rotate_current), where the
+        # full-lap crossing rule lives. Accumulate in case of multiple shifts.
+        engine._pending_self_shift = getattr(engine, '_pending_self_shift', 0) + amount
+        return
+    queue.remove(target)
+    nr = len(queue)
+    if amount > 0:
+        if i - amount <= 0:                      # crosses the current marker
+            engine.pending_turns.append(target)  # bonus turn now
+            new_i = nr                           # then settle at the back (it lapped)
+        else:
+            new_i = i - amount                   # simply acts that many slots sooner
+    else:
+        new_i = min(nr, i + abs(amount))         # acts that many slots later
+    queue.insert(max(1, min(nr, new_i)), target)
+
+
+def _rotate_current(engine, queue, who):
+    """Rotate the just-acted current actor off the front, honoring any initiative
+    shift applied to it THIS turn (a self-shift, or a shift aimed at the current
+    attacker from a defense — both land on the actor while it sits on the marker).
+
+    Default is to the back of the wheel. Because the actor is ON the marker, only a
+    FULL revolution (|amount| >= total seats) crosses it: a positive full lap grants
+    a bonus turn (queued now, settles a lap later), a negative full lap a skipped
+    turn. Anything smaller just repositions within the coming lap — a positive shift
+    comes around sooner, a negative one is already latest so it stays at the back —
+    never a free action, never a skip."""
+    amount = engine.__dict__.pop('_pending_self_shift', 0)
+    if not queue or queue[0] is not who:
+        return
+    queue.pop(0)
+    nr = len(queue)
+    if nr == 0:                                  # nobody else in the wheel
+        queue.append(who)
+        return
+    total = nr + 1                               # seats including the current actor
+    if amount > 0:
+        if amount >= total:                      # lapped forward across the marker
+            engine.pending_turns.append(who)     # bonus turn now
+            queue.append(who)                    # then settle a full lap back
+        else:
+            queue.insert(nr - amount, who)       # come around that many turns sooner
+    elif amount < 0:
+        if -amount >= total:                     # lapped backward across the marker
+            who.skip_turns += 1                  # skip the next turn
+        queue.append(who)                        # already latest; settle at the back
+    else:
+        queue.append(who)                        # no shift: ordinary rotation
+
+
 # --- Card model ---------------------------------------------------------------
 class Card:
     """A card is data plus up to three behavior hooks.
@@ -79,7 +156,10 @@ class Combatant:
     def __init__(self, name, body, mind, soul, decklist, policy):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
-        self.max_hp = 3 * body + 6
+        # Canon HP formula (2*Body + 9) — flattened from 3*Body+6 to decouple HP
+        # from Body and cut its damage+HP double-dip. Crossover at Body 3.
+        self.hp_per_body = 2
+        self.max_hp = self.hp_per_body * body + 9
         self.hp = self.max_hp
         self.hand_size = mind + 1
         self.decklist = list(decklist)   # names, for rebuild
@@ -91,9 +171,11 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
+        self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
         self.evade = 0
+        self.armour = 0                  # flat damage reduction, cleared next turn
         self.thorns = 0
         self.staggered = False
         self.rooted = False
@@ -114,25 +196,35 @@ class Combatant:
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
         self._rend_guard = False         # Rend def: next hit -> Wound, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
+        self._predictable_to = None      # Study def: this foe reads my next reveal
+        self._known_attack = None        # transient: attacker's card, exposed to me
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
 
-    def erode(self, stat, n=1):
-        """Lower a stat for the combat. Any erosion also lowers max HP by 3 per
-        point (Drew ruling: either Wither or Erode lowers max HP), clamping
-        current HP down and collapsing if it hits 0."""
-        self.stat_mod[stat] -= n
-        self.max_hp = max(1, self.max_hp - 3 * n)
-        if self.hp > self.max_hp:
-            self.hp = self.max_hp
-        if self.hp <= 0 and not self.collapsed:
-            self.collapsed = True
+    def adjust(self, stat, delta):
+        """Change a stat for the combat by delta (negative = loss). Each stat
+        drives its own derived value in real time:
+          Body -> max HP (±3 per point; clamp current HP, Collapse at 0)
+          Mind -> hand size (force discard if now over)
+          Soul -> initiative (applies to future rolls only)
+        Only Body touches HP (Drew ruling)."""
+        self.stat_mod[stat] += delta
+        if stat == 'body':
+            self.max_hp = max(1, self.max_hp + self.hp_per_body * delta)
+            if self.hp > self.max_hp:
+                self.hp = self.max_hp
+            if self.hp <= 0 and not self.collapsed:
+                self.collapsed = True
+        elif stat == 'mind':
+            while len(self.hand) > self.effective_hand_size():
+                self.discard.append(self.hand.pop())  # forced discard down to size
 
-    def wounds_in_play(self):
-        """Wounds currently threatening — deck + hand (not discard). Press the
-        Wound and Taint count these (Drew ruling: hand and deck)."""
-        return sum(1 for c in (self.deck + self.hand)
+    def wounds_visible(self):
+        """Wounds a player can actually see and count — hand + discard, NOT deck
+        (Drew ruling: nobody should have to track or search hidden Wounds). Press
+        the Wound and Taint count these."""
+        return sum(1 for c in (self.hand + self.discard)
                    if c.is_status and c.name == 'WOUND')
 
     # --- deck plumbing ---
@@ -158,7 +250,7 @@ class Combatant:
 
     def effective_hand_size(self):
         bonus = sum(1 for o in self.ongoing if o['kind'] == 'handsize')
-        return self.hand_size + bonus
+        return max(0, self.eff('mind') + 1) + bonus  # Mind drives hand size live
 
     def death_floor(self):
         import math
@@ -175,6 +267,8 @@ class Duel:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.wound = cards.get('WOUND')
+        self.pending_turns = []
+        self.queue = []
 
     def shuffle_wound(self, target):
         if self.wound is None:
@@ -183,25 +277,41 @@ class Duel:
         target.deck.insert(idx, self.wound)
 
     def initiative_shift(self, target, amount):
-        n = len(self.combatants)
-        skips = abs(amount) // n
-        if amount < 0:
-            target.skip_turns += skips
-        else:
-            RULING("positive-initiative-shift-unmodeled",
-                   "Positive Initiative Shift (extra turns) is not modeled — no "
-                   "card in the current decks uses it.")
-        if abs(amount) % n:
-            RULING("initiative-shift-remainder",
-                   "Sub-wheel Initiative Shift reorder is simplified to skipped "
-                   "turns in the 2-combatant duel (the positional remainder "
-                   "reduces to tempo loss).")
+        _apply_shift(self, self.queue, target, amount)
+
+    def scry(self, actor, owner, x):
+        """Look at the top x of owner's deck; the actor's policy decides which go
+        back on top and which to the bottom. Returns the cards seen (some cards,
+        e.g. ALIGN, care what they were). to_top[-1] ends up drawn next."""
+        seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
+        if not seen:
+            return seen
+        plan = actor.policy.scry_plan(self, actor, owner, seen)
+        top, bottom = plan[0], plan[1]
+        binned = plan[2] if len(plan) > 2 else []   # Scry can now bin to discard
+        for c in binned:
+            owner.discard.append(c)
+        for c in bottom:
+            owner.deck.insert(0, c)
+        for c in top:
+            owner.deck.append(c)
+        return seen
 
     def _say(self, msg):
         self.log.append(msg)
 
     def other(self, who):
         return self.combatants[1] if who is self.combatants[0] else self.combatants[0]
+
+    # Team API shared with the Battle engine, so one set of card effects serves
+    # both. In a 1v1 there are no allies (ally effects stay no-ops, exactly as
+    # before) and exactly one enemy.
+    def allies(self, me):
+        return []
+
+    def enemies(self, me):
+        foe = self.other(me)
+        return [] if foe.collapsed else [foe]
 
     # --- setup: opening hands drawn when initiative is rolled ---
     def setup(self):
@@ -224,18 +334,18 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)   # Armour applies before Resist
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
-        if target._damage_floor is not None:
-            # Equal Footing: this attack cannot reduce target below the floor.
+        if not unpreventable and target._damage_floor is not None:
+            # Equal Footing floors ATTACK damage only — unpreventable damage (bleed,
+            # thorns, status, HP costs) is not an attack and ignores the floor.
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
-            target._damage_floor = None  # removed by any attack
-            RULING("equal-footing-floor",
-                   "EQUAL FOOTING def caps the next attack so it can't reduce you "
-                   "below the attacker's HP at trigger time; consumed by the next "
-                   "attack regardless of outcome (simplified to on-damage here).")
+            # floor is cleared in attack() after the exchange, so it is removed by
+            # the next attack whether or not that attack dealt damage.
         # a single normal attack cannot push below 0 (clamp); extra damage while
         # collapsed can. We treat any single application atomically.
         pre = target.hp
@@ -271,12 +381,14 @@ class Duel:
                 RULING("blood-tithe-mutual-death",
                        "If BLOOD TITHE's bleed collapses both parties on the same "
                        "tick, it is a mutual result — scored as a tie (Drew ruling).")
+        _ongoing_support_tick(self, who)
 
     # --- one attack action ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
         attacker.discard.append(card)
         attacker.last_color = card.color
+        attacker._attacked_this = True             # for PATIENCE
         attacker.attack_history[card.color] += 1  # revealed = public info
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
         self._say(f"{attacker.name} plays {card.name} ({card.color})")
@@ -289,14 +401,22 @@ class Duel:
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
                 self._say(f"  {defender.name} EVADES — attack misses")
+                defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
         # Defender chooses a defense BLIND — reveals are simultaneous, so the
         # policy never sees `card`. It decides from public info only (the
         # attacker's revealed-color history, position, etc.).
         def_card = None
-        if not defender.collapsed and not defender.staggered:
+        if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+            # Predictable: if this defender marked the attacker, they see the actual
+            # card before choosing — simultaneity broken for one reveal, then expires.
+            if getattr(attacker, '_predictable_to', None) is defender:
+                attacker._predictable_to = None
+                defender._known_attack = card
+                self._say(f"  PREDICTABLE: {defender.name} reads {card.name} before blocking")
             def_card = defender.policy.choose_defense(self, defender, attacker)
+            defender._known_attack = None
             if def_card is not None:
                 # enforce Axiom ban on the reveal
                 if defender.axiom_ban and def_card.color == defender.axiom_ban:
@@ -310,6 +430,7 @@ class Duel:
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
             self._resolve_attacker_win(attacker, defender, card, contested=False)
+            defender._damage_floor = None
             return
 
         defender.hand.remove(def_card)
@@ -332,6 +453,7 @@ class Duel:
             card.effect(self, attacker, defender)
             attacker._tie = False
             def_card.defense(self, defender, attacker)
+        defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
         base = self._rps_base(atk_card.color, def_card.color)
@@ -371,31 +493,49 @@ class Duel:
             self.deal(attacker, defender.thorns, unpreventable=True)
         card.effect(self, attacker, defender)
 
+    def _win_result(self, who, foe):
+        if foe.collapsed and not who.collapsed:
+            return self._finish(who)
+        if who.collapsed and not foe.collapsed:
+            return self._finish(foe)
+        if who.collapsed and foe.collapsed:
+            return self._finish(None)
+        return None
+
     # --- main loop ---
     def run(self):
         self.setup()
-        idx = 0
-        n = len(self.order)
+        self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
+        self.pending_turns = []
         while self.turn_count < self.max_turns:
-            who = self.order[idx % n]
-            foe = self.other(who)
+            who = self.queue[0]
             if not who.collapsed:
-                self.take_turn(who, foe)
-            # win check
-            if foe.collapsed and not who.collapsed:
-                return self._finish(who)
-            if who.collapsed and not foe.collapsed:
-                return self._finish(foe)
-            if who.collapsed and foe.collapsed:
-                return self._finish(None)  # tie
-            idx += 1
+                self.take_turn(who, self.other(who))
+            r = self._win_result(who, self.other(who))
+            if r is not None:
+                return r
+            # current actor rotates to the back, honoring any shift aimed at it
+            _rotate_current(self, self.queue, who)
             self.turn_count += 1
+            # bonus turns from a positive shift crossing the marker: right after
+            while self.pending_turns and self.turn_count < self.max_turns:
+                extra = self.pending_turns.pop(0)
+                if not extra.collapsed:
+                    self.take_turn(extra, self.other(extra))
+                r = self._win_result(extra, self.other(extra))
+                if r is not None:
+                    return r
+                self.turn_count += 1
         RULING("stalemate-cap",
                "Duels exceeding max_turns are scored as draws (engine safeguard, "
                "not a game rule).")
         return self._finish(None)
 
     def take_turn(self, who, foe):
+        who.armour = 0            # Armour / can't-defend last until your next turn
+        who.cannot_defend = False
+        who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
+        who._attacked_this = False
         if who.skip_turns > 0:
             who.skip_turns -= 1
             self._say(f"{who.name} loses their turn (initiative shift)")
@@ -414,8 +554,14 @@ class Duel:
             elif kind == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
                 self._say(f"{who.name} moves to {who.position}")
-        # end of turn: Wounds discard themselves; clear one-turn restrictions.
-        who.hand = [c for c in who.hand if not (c.is_status and c.name == 'WOUND')]
+            elif kind == 'discard_wound':
+                for i, c in enumerate(who.hand):
+                    if c.is_status and c.name == 'WOUND':
+                        who.discard.append(who.hand.pop(i))
+                        self._say(f"{who.name} discards a Wound (action)")
+                        break
+        # Wounds no longer leave on their own — they sit until an action or rest
+        # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
 
     def _finish(self, winner):

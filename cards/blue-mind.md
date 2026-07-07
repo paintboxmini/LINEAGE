@@ -94,7 +94,7 @@ Range: Ranged
 
 **STILLNESS**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Defender discards 1 card at random
 Defensive Bonus: Attacker discards 1 card at random
 Range: Ranged
@@ -255,7 +255,7 @@ Range: Both
 
 **EXCAVATE**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Place the top card of your discard pile on the bottom of your deck
 Defensive Bonus: Place the top card of your discard pile on the bottom of your deck
 Range: Both
@@ -276,8 +276,8 @@ Range: Both
 **ERODE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target loses 1 Soul permanently this combat. Shuffle 1 Wound into your deck.
-Defensive Bonus: Target loses 1 Soul permanently this combat. Shuffle 1 Wound into your deck.
+Effect: Target loses 1 Soul permanently this combat.
+Defensive Bonus: Target loses 1 Soul permanently this combat.
 Range: Both
 *"Understanding something completely is the first step to unmaking it."*
 
@@ -287,7 +287,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Shuffle 1 Wound into target's deck. If they already have a Wound in deck, shuffle 2.
-Defensive Bonus: Exile 1 Wound from your deck.
+Defensive Bonus: Destroy 1 Wound in your hand or discard pile.
 Range: Ranged
 *"Some damage is architecture."*
 

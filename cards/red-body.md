@@ -44,7 +44,7 @@ Range: Melee
 
 **PUSH**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: Move target to backline
 Defensive Bonus: Move target to backline
 Range: Melee
@@ -145,7 +145,7 @@ Range: Ranged
 **GAMBLER'S RUIN**
 RED — BODY
 Attack: Body + d4
-Effect: For every odd result rolled, roll again and add to total. (Max 3)
+Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
 Defensive Bonus: Add 1d4 to your next attack
 Range: Melee
 *"Chaos does not promise victory. Only spectacle."*
@@ -155,8 +155,8 @@ Range: Melee
 **SPARK OF VIOLENCE**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 2 unpreventable damage to any target
-Defensive Bonus: Deal 2 unpreventable damage to any target
+Effect: Deal 2 unpreventable damage to any enemy
+Defensive Bonus: Deal 2 unpreventable damage to any enemy
 Range: Both
 *"Every blaze begins with a decision."*
 
@@ -264,7 +264,7 @@ Range: Melee
 
 **PAIN IS FUEL**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: Gain Resist.
 Defensive Bonus: Deal 2 damage to the attacker.
 Range: Both
@@ -295,8 +295,8 @@ Range: Both
 **SUNDER**
 RED — BODY
 Attack: Body + d4
-Effect: Target loses 1 Mind permanently this combat. Shuffle 1 Wound into your deck.
-Defensive Bonus: Target loses 1 Mind permanently this combat. Shuffle 1 Wound into your deck.
+Effect: Target loses 1 Mind permanently this combat.
+Defensive Bonus: Target loses 1 Mind permanently this combat.
 Range: Both
 *"Thought breaks under enough weight."*
 
@@ -305,8 +305,8 @@ Range: Both
 **PRESS THE WOUND**
 RED — BODY
 Attack: Body + d4
-Effect: Deal +2 damage for each Wound in defender's deck.
-Defensive Bonus: Heal 2 HP for each Wound in your deck. Then exile them.
+Effect: Deal +2 damage for each Wound in defender's hand and discard pile.
+Defensive Bonus: Heal 2 HP for each Wound in your hand and discard pile. Then destroy them.
 Range: Melee
 *"It was always going to end here."*
 

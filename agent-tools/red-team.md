@@ -1,26 +1,73 @@
 # Red Team Prompt
 
-Use this prompt to review cards, encounters, or any game content before it goes to canon.
+Use this prompt to review cards, mechanics, encounters, or any game content before it goes to canon.
+
+The mindset is not "find mistakes." It is: **attack invariants, find degenerate strategies, test architectural assumptions, and identify evolutionary novelty.** Early on this repo mostly needed wording and redundancy fixes; now the simulator is exposing rule architecture, timing policies, and emergent interactions, and the red team attacks those layers too.
 
 ---
 
 ```
 Analyze the following content for Tales Untold.
 
-Focus on:
-- Ambiguity (unclear targeting or timing)
-- Redundancy (duplicate or overlapping effects)
-- Tone mismatch (does it fit the system identity?)
-- Mechanical weakness (effects that don't matter in play)
-- Keyword compliance (only approved keywords in use)
-- Visible reasoning (unfinished thinking left in the output)
+Your job is not to "review everything." It is to ATTACK the content along the
+axes below and report what survives. Assume the content is intentionally
+minimal — do not add complexity unless it solves a demonstrated problem.
 
-Steps:
-1. List at least 3 issues
-2. Explain why each is a problem
-3. Provide corrected versions
+## Attack these layers
 
-Do not rewrite everything — only fix what is necessary.
+1. Invariant violations — CHECK FIRST.
+   - Does this introduce a hidden rule change or a new timing window?
+   - Does it force the engine to special-case resolution?
+   - Does it imply a new POLICY (card selection / reveal / initiative / RPS
+     resolution), not merely a new card effect?
+   If so, name the invariant being bent and say whether it should instead be
+   expressed as a temporary rule modifier rather than a one-off exception.
+
+2. Simulation abuse.
+   - If the mechanic lives in `combatsimulations/` (or is a few lines from being
+     testable there), run it and try to BREAK it: loops, degenerate lines, a
+     dominant strategy, or play that becomes trivial/solved.
+   - If it cannot be simulated, reason the degenerate lines by hand.
+   - State which of the two you did — never imply a sim run that did not happen.
+
+3. Mechanical relevance — does this matter? Would play notice if it were deleted?
+
+4. Mechanical identity — does it create a decision NO other card creates, or is it
+   a stat-swap of something that already exists?
+
+5. Ambiguity — name the type:
+   - Rules ambiguity: a case the mechanic genuinely does not define.
+   - Natural-language ambiguity: wording that can be read two ways.
+
+6. Evolution check (LINEAGE's own lens) — provenance, not play feel:
+   - Which existing mechanic is this closest to?
+   - What genuinely new design space does it open?
+   - Is it a mutation or merely a duplicate?
+   - Could the mutation be expressed more cleanly?
+
+7. Tone & keyword compliance — fits the terse, mechanical voice; only approved
+   keywords in use.
+
+8. Visible reasoning — unfinished thinking left in the output (see the checklist
+   below).
+
+## Also surface one generative finding
+
+Identify ONE interaction with existing mechanics the designer may not have
+intended. It may be a bug to fix — or the most interesting thing here.
+
+## Report
+
+- Rank every finding: CRITICAL (breaks rules, engine, or balance) / MODERATE
+  (matters in play) / COSMETIC (wording, polish). Spend effort accordingly — do
+  not treat a comma like a timing bug.
+- Provide a corrected version only for findings that need one. Fix what is
+  necessary, nothing more.
+- "Leave it alone" is a valid verdict. If a part is already right, or no
+  improvement exists, say so and why — do not invent an edit to feel productive.
+
+End on one line held throughout: assume the content is intentionally minimal; do
+not add complexity unless it solves a demonstrated problem.
 ```
 
 ---
@@ -82,6 +129,9 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
+- Engine invariants (for the Invariant Violations pass): `rules/invariants.md`
+- Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
+- Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`
 - Existing cards for redundancy: `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`
 

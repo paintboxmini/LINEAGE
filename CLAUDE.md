@@ -90,7 +90,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 | Soul | Green | Read | d2 (precision) |
 
 - Standard DC: 13 (DM adjusts ±2 for fiction)
-- HP: (3 × Body) + 6
+- HP: (2 × Body) + 9
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
 
@@ -116,6 +116,14 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 6. **Wait** — After completion, await next instruction. Do not assume next task.
 
 Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is the source of truth.
+
+## Translation Principle
+
+Drew communicates through examples, metaphors, partial ideas, and observations — the fence, Gambler's Ruin, "two designers at the table." Your job is to translate, not transcribe: identify and formalize the underlying invariant or rule when the evidence strongly supports it, rather than asking him to restate it in formal language.
+
+- Formalize what is strongly implied. When a recurring pattern is clearly meant but never named, propose the invariant yourself.
+- Distinguish inferred from stated. Mark an invariant you derived as *inferred* so he can confirm or correct it; never present it as if he said it outright.
+- Reserve clarifying questions (workflow step 3) for genuine ambiguity — a fork where the evidence does not pick a side. A metaphor you can translate is not ambiguity.
 
 ## Do Not
 

@@ -10,7 +10,9 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
 **Debuff**
-Any non-damage effect applied to you by an enemy: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), forced position changes from enemy cards, stat reductions, or hand/deck interference. Does not include damage. Cards that "prevent the next debuff" block the next qualifying effect targeting you, then expire.
+Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+
+Two kinds of interference are **not** debuffs and ignore Ward: being made to **discard**, and having your **deck scried**. They interfere but cannot be warded off. (Obscure is the answer to those — see below.)
 
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
@@ -42,15 +44,15 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
-Immediately move the target X positions in the initiative order. Positive X moves them toward the top of the order; negative X moves them toward the bottom. The target cuts into the new position; everyone seated between the old and new position shifts one seat over to make room.
+Immediately move the target X positions in the initiative order: positive X toward the front (acts sooner), negative X toward the back (acts later). The target cuts into the new seat; everyone between the old and new seat shifts one over to make room.
 
-The order wraps. A positive shift that would carry the target past the top instead drops them at the bottom; a negative shift that would carry them past the bottom instead lifts them to the top.
+The order is a loop — there are no ends to fall off, only the turn marker to cross (see `rules/combat.md`, The turn marker). A shift *crosses* the marker when the target's path passes over it; landing exactly on it counts. A shift that does not reach the marker simply reseats the target. A shift that crosses it does one of the following instead — which is why a positive shift can never delay the target's next turn, nor a negative one hasten it:
+- **Forward** (positive, lapping past the marker): the target takes one extra turn immediately, then settles into its new seat next cycle.
+- **Backward** (negative, lapped past the marker): the target's next turn is skipped, then it settles into its new seat next cycle.
 
-A positive shift can never delay the target's next turn; a negative shift can never accelerate it. If the repositioning above would violate that, correct it directly: a positive shift instead grants the target one immediate turn right now, then they settle into the new position starting next cycle. A negative shift instead skips the target's turn this cycle; they settle into the new position starting next cycle.
+**On the fence.** A target shifted while it is taking the current turn is standing *on* the marker — hopping off is not a crossing (see the fence, `rules/combat.md`). It crosses only if the shift carries it a full loop back around to the marker. So a small self-shift just reseats it — never a free turn, never a self-skip.
 
-For shifts of N or more (N = number of combatants): resolve one full revolution at a time, awarding one additional turn (positive) or one skipped turn (negative) per revolution. Then resolve the remaining positional shift normally, including its own correction above if it applies.
-
-To check at the table: see whether the shift's path passes through the position currently taking its turn — landing exactly on it counts as passing through. If it doesn't, no violation is possible — the target simply takes up the new position, done. If it does, apply the correction above.
+For shifts of X ≥ N (N = number of combatants): resolve one revolution at a time — one extra turn (positive) or one skipped turn (negative) each — then apply the leftover positional shift. A target on the fence counts its first revolution from the marker it stands on.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
@@ -73,7 +75,7 @@ Move a target enemy from Backline to Frontline. Cannot target allies. The user m
 On your next turn, you may change positions without spending your action.
 
 **Scry X**
-Look at the top X cards of a deck. If no target is specified, this applies to your own deck. Return them in any order, placing each on top or on the bottom.
+Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
 
 **Staggered**
 The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
@@ -81,19 +83,23 @@ The next time you are attacked, you cannot play a defensive card. The attack res
 **Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
+**Unpreventable**
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Bleed, Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+
 **Ward**
 Prevent the next debuff applied to you. Expires on use.
 
 ---
 
-## Stat Loss
+## Stat Change
 
-Not a keyword — a shared mechanic. Some cards reduce one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul). Whenever a stat is reduced this way:
+Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Your maximum HP drops by 3 for every point lost, regardless of which stat.** Losing Body, Mind, or Soul all cost max HP the same. If your current HP now exceeds your new maximum, it drops to the maximum. If your maximum reaches 0, you Collapse.
-- The lowered stat uses its reduced value for everything else it governs — damage, and its listed derived value — until the loss ends.
+- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Only Body touches HP.
+- **Mind** — Blue-card damage, and hand size (Mind + 1). Hand size changes the moment the stat does. If a Mind loss leaves you holding more cards than your new hand size, discard down to it immediately.
+- **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
-Stat loss lasts for the combat unless a card says otherwise, then the stat returns to normal (and lost max HP with it). This applies to every current and future stat-draining card; the card only states the stat and amount.
+A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
 
 ---
 
@@ -105,10 +111,10 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 
 ### WOUND
 *Status — Colorless*
-Cannot be played.
+Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
 You may use your action to discard this card.
 *Effect when discarded: none.*
-1 Wound may be permanently removed from hand or discard per short rest.
+Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds.
 
 ---
 

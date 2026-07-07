@@ -104,9 +104,9 @@ if __name__ == "__main__":
     flags = [a for a in sys.argv[1:] if a.startswith("--")]
     n = int(args[0]) if len(args) > 0 else 20000
     a_name = args[1] if len(args) > 1 else "frost"
-    a_pol = args[2] if len(args) > 2 else "reader"
+    a_pol = args[2] if len(args) > 2 else "tactician"
     b_name = args[3] if len(args) > 3 else "steele"
-    b_pol = args[4] if len(args) > 4 else "reader"
+    b_pol = args[4] if len(args) > 4 else "tactician"
     if "--sample" in flags:
         sample(a_name, a_pol, b_name, b_pol)
     else:

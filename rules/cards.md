@@ -62,7 +62,7 @@ Your deck is not just mechanics. It's how your character thinks.
 
 Short versions for reading cards. `rules/card-glossary.md` is canonical — if these ever disagree, the glossary wins.
 
-**Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Return them in any order, placing each on top or on the bottom.
+**Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Place each on top, on the bottom, or into the discard pile, in any order.
 
 **Ongoing Effect** — The card remains face up after use until its stated condition is met, then discards.
 
@@ -91,3 +91,7 @@ Card effects that reference "allies" or "enemies" never apply to the card's user
 If a card says *"all allies in your position,"* that means every other character sharing your position — not you.
 
 The exception: cards that explicitly name *yourself* as the target (e.g., a self-damage card) apply as written.
+
+### Green counts itself among its allies
+
+**Green (Soul) cards are the exception to the rule above.** A Green card's ally-facing effects — heals, buffs, Resist, card draw, and the like — may treat the user as one of their own allies. When a Green card says "an ally" or "all allies," the caster is a valid target (and "all allies" includes them). This is Green's identity: its support turns inward as readily as outward, so a lone Soul character is never without someone to mend or strengthen. (Green effects that only make sense aimed at *someone else* — redirecting another's incoming damage to you — still need a separate target.)
