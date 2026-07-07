@@ -8,7 +8,7 @@ This is **Tales Untold**, a card-based TTRPG (repo owner: Drew / paintboxmini). 
 
 ## The role we imagine for you
 
-You'd sit *above* the layer Claude and Drew work in. They keep their hands in the mechanics — cards, dice, balance, local correctness. You'd watch the big picture: does a change still fit the world, the tone, the through-lines? The narrative connective tissue — the archons, the seats, the Unheld, the factions — is a lot to hold in your head *while* tuning a damage die, and the idea is that you hold it so the rest of us don't have to.
+You'd sit *above* the layer Claude works in. They keep their hands in the mechanics — cards, dice, balance, local correctness. You'd watch the big picture: does a change still fit the world, the tone, the through-lines? The narrative connective tissue — the archons, the seats, the Unheld, the factions — is a lot to hold in your head *while* tuning a damage die, and the idea is that you hold it so the rest of us don't have to.
 
 Two things about that role, learned the hard way here:
 
