@@ -86,12 +86,14 @@ On your turn, you may take **one action:**
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
-| Wait | Take no action on purpose. Gain Initiative Shift +2 that never crosses the marker (see below). Counts as "waiting." |
+| Wait | Take no action; instead move yourself later in the order to a position you choose (Initiative Shift −X). Trades this turn for exact positioning. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
-**Waiting.** Choosing to Wait is doing nothing deliberately, and the consolation is tempo. You gain **Initiative Shift +2** — but because you are on the turn marker and chose to act, it can never carry you *across* the marker (see `rules/card-glossary.md`, Initiative Shift X → On the fence). It only pulls your next turn up to two seats sooner; it can never grant you an extra turn. In a fight small enough that +2 would lap the wheel, it simply reseats you as far forward as it can without crossing. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
+**Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: choose how many seats **X** to move *later* in the order (an Initiative Shift of **−X**, up to one seat short of a full lap), and you act normally when the marker reaches your new position. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
 
-Its main use is **team coordination.** A party spends a Wait to pull a turn forward and slot it next to an ally's, so a setup and its payoff land back-to-back instead of being split by an enemy's turn. The shift persists, so one turn spent waiting can fix a combo cadence for the rest of the fight. (Wait only moves you *earlier* — to hand the initiative to an ally who should act first, that ally is usually the one who Waits into position.)
+The trade is **an action for a position.** You take one fewer action this fight — that is the whole cost; your turn count simply drops relative to everyone else — and in return you land exactly where you want in the order. Because you never move a full lap, a Wait can never cross the marker into a skipped or bonus turn (see `rules/card-glossary.md`, Initiative Shift X → On the fence).
+
+Its main use is **team coordination** — chaining turns into the right sequence. Move yourself to act right after an ally's setup, or right before the ally you are setting up, so a combo resolves without an enemy acting in between. The reposition persists, so one Wait fixes a combo cadence for the rest of the fight. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
 
 ---
 

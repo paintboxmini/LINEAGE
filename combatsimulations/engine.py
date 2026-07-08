@@ -546,10 +546,11 @@ class Duel:
         who.draw_to_hand(self.rng)
         action = who.policy.choose_action(self, who, foe)
         if action is None:
-            # Wait: a deliberate pass grants Initiative Shift +2, capped so it can
-            # never cross the marker (never a bonus turn). See rules/combat.md.
+            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
+            # cadence. Choosing X is a tactical, table-only call; these brains never
+            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
+            # intentionally unmodeled.
             self._say(f"{who.name} waits")
-            self.initiative_shift(who, min(2, len(self.queue) - 1))
         else:
             kind = action[0]
             if kind == 'attack':
