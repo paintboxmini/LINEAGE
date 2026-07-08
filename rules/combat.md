@@ -91,6 +91,8 @@ On your turn, you may take **one action:**
 
 **Waiting.** Choosing to Wait is doing nothing deliberately, and the consolation is tempo. You gain **Initiative Shift +2** — but because you are on the turn marker and chose to act, it can never carry you *across* the marker (see `rules/card-glossary.md`, Initiative Shift X → On the fence). It only pulls your next turn up to two seats sooner; it can never grant you an extra turn. In a fight small enough that +2 would lap the wheel, it simply reseats you as far forward as it can without crossing. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
 
+Its main use is **team coordination.** A party spends a Wait to pull a turn forward and slot it next to an ally's, so a setup and its payoff land back-to-back instead of being split by an enemy's turn. The shift persists, so one turn spent waiting can fix a combo cadence for the rest of the fight. (Wait only moves you *earlier* — to hand the initiative to an ally who should act first, that ally is usually the one who Waits into position.)
+
 ---
 
 ## Attack Resolution
