@@ -1,6 +1,6 @@
 # Unheld Cards
 
-Cards tagged UNHELD are Oracle-obtainable, themed to the grey water and its one lesson: what you stop gripping stops gripping you.
+Cards sourced from the Unheld — obtained at the grey edge, where the water teaches its one lesson: what you stop gripping stops gripping you.
 
 ---
 

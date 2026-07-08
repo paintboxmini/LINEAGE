@@ -47,8 +47,11 @@ Range: [Melee / Ranged / Both]
 ```
 
 - Colors: RED (Body), BLUE (Mind), GREEN (Soul)
-- Location/set tags append after stat: `RED — BODY — WEALD`
-- WEALD and similar tags indicate where a card is obtainable (Oracle deck, region-specific), not a replacement for the color system
+- Source tags append after stat: `RED — BODY — WEALD`
+- **A tag marks a card's acquisition source — its lineage.** It answers "where or from whom was this card obtained": a location (WEALD, ASHFALL, COIL), an archon, a faction (MASON, PROMISE), a specific creature, or the Unheld. It traces provenance, not theme. Rules:
+  - A card carries **at most one tag** (its source). Core cards are universal and carry none.
+  - A tag is never a card's *theme*. Theme lives in the flavor line. (A card about memory is not a MEMORY card; that is what the quote is for.) This is the rule that keeps the tag set finite — sources are countable, themes are not.
+  - The test: *does removing the tag change how the card is obtained?* If not, it is not a tag.
 - Separate cards with `---`
 
 ### Stat Blocks
