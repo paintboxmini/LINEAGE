@@ -261,7 +261,11 @@ class Battle:
         who.draw_to_hand(self.rng)
         action = who.policy.choose_action(self, who)
         if action is None:
-            pass
+            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
+            # cadence. Choosing X is a tactical, table-only call; these brains never
+            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
+            # intentionally unmodeled.
+            self._say(f"{who.name} waits")
         elif action[0] == 'attack':
             _, card, target = action
             if target.collapsed:

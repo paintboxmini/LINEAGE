@@ -546,7 +546,11 @@ class Duel:
         who.draw_to_hand(self.rng)
         action = who.policy.choose_action(self, who, foe)
         if action is None:
-            self._say(f"{who.name} takes no action")
+            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
+            # cadence. Choosing X is a tactical, table-only call; these brains never
+            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
+            # intentionally unmodeled.
+            self._say(f"{who.name} waits")
         else:
             kind = action[0]
             if kind == 'attack':
