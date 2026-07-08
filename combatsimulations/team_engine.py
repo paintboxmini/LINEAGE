@@ -261,7 +261,10 @@ class Battle:
         who.draw_to_hand(self.rng)
         action = who.policy.choose_action(self, who)
         if action is None:
-            pass
+            # Wait: a deliberate pass grants Initiative Shift +2, capped so it can
+            # never cross the marker (never a bonus turn). See rules/combat.md.
+            self._say(f"{who.name} waits")
+            self.initiative_shift(who, min(2, len(self.queue) - 1))
         elif action[0] == 'attack':
             _, card, target = action
             if target.collapsed:

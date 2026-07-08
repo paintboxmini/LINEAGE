@@ -86,7 +86,10 @@ On your turn, you may take **one action:**
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
+| Wait | Take no action on purpose. Gain Initiative Shift +2 that never crosses the marker (see below). Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+**Waiting.** Choosing to Wait is doing nothing deliberately, and the consolation is tempo. You gain **Initiative Shift +2** — but because you are on the turn marker and chose to act, it can never carry you *across* the marker (see `rules/card-glossary.md`, Initiative Shift X → On the fence). It only pulls your next turn up to two seats sooner; it can never grant you an extra turn. In a fight small enough that +2 would lap the wheel, it simply reseats you as far forward as it can without crossing. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
 
 ---
 
