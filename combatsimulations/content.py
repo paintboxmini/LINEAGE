@@ -427,6 +427,10 @@ def _guard_defense(engine, me, foe):
 
 def _intercept_setup(engine, me, foe):
     me._intercept = True                   # next time an ally is attacked, I defend
+def _intercept_defense(engine, me, foe):
+    engine.heal(me, 2)                     # absorbed from FORTRESS STANCE: team heal
+    for a in engine.allies(me):
+        engine.heal(a, 2)
 
 def _fortress_effect(engine, me, foe):
     me._fortress = True                    # I take the next hit meant for an ally
@@ -589,7 +593,6 @@ def build_cards():
         effect=_align_effect, defense=_align_defense)
     add("ANTICIPATE", 'B', 'mind', 'melee', 4, defense=_anticipate_defense)   # effect DEAD (info)
     # Steele — Green
-    add("SPIRAL CURRENT", 'G', 'soul', 'both', 4, effect=_spiral_current_effect)  # def DEAD
     add("RENEWAL", 'G', 'soul', 'both', 4,
         effect=_renewal_effect, defense=_renewal_defense)   # effect heals allies (team play)
 
@@ -620,8 +623,6 @@ def build_cards():
         effect=_resonate_effect, defense=_resonate_defense)
     add("SUPPORT", 'G', 'soul', 'ranged', 4,
         effect=_support_effect, defense=_support_defense)
-    add("CONDUCT", 'G', 'soul', 'both', 6,
-        effect=_conduct_effect, defense=_conduct_defense)
     add("WITNESS", 'G', 'soul', 'melee', 4,
         effect=_witness_effect, defense=_witness_defense)
     add("SHARED BURDEN", 'G', 'soul', 'both', 6,
@@ -631,9 +632,7 @@ def build_cards():
     add("STRIKE", 'R', 'body', 'melee', 8, defense=_strike_defense)
     add("GUARD", 'R', 'body', 'melee', 4, effect=_guard_effect, defense=_guard_defense)
     add("INTERCEPT", 'R', 'body', 'melee', 4,
-        effect=_intercept_setup, defense=_intercept_setup)
-    add("FORTRESS STANCE", 'R', 'body', 'melee', 4,
-        effect=_fortress_effect, defense=_fortress_defense)
+        effect=_intercept_setup, defense=_intercept_defense)
     add("RALLY", 'R', 'body', 'both', 4, effect=_rally_effect, defense=_rally_defense)
     add("TRAMPLE", 'R', 'body', 'melee', 6,
         effect=_trample_effect, defense=_trample_defense)
@@ -676,7 +675,7 @@ FROST_DECK = [
 
 STEELE_DECK = [
     "FORGET", "BLOOD TITHE", "GAMBLER'S RUIN", "REPEL", "PAIN IS FUEL",
-    "PARADOX", "SPIRAL CURRENT", "ALIGN", "ANTICIPATE", "RENEWAL",
+    "PARADOX", "MIRROR STEP", "ALIGN", "ANTICIPATE", "RENEWAL",
 ]
 
 MIRE_DECK = [
@@ -701,11 +700,11 @@ VOLK_DECK = [
 #   Adept   Soul4/Body3/Mind2  -> 4G/3R/2B
 SAGE_DECK = [
     "AXIOM", "PARADOX", "FRACTURE", "ANTICIPATE",   # 4 blue
-    "TWIN STRIKE", "SPIRAL CURRENT", "MOCKERY",      # 3 green
+    "TWIN STRIKE", "MIRROR STEP", "MOCKERY",      # 3 green
     "PAIN IS FUEL", "GAMBLER'S RUIN",                # 2 red
 ]
 ADEPT_DECK = [
-    "TWIN STRIKE", "SPIRAL CURRENT", "BALANCE", "MOCKERY",  # 4 green
+    "TWIN STRIKE", "MIRROR STEP", "BALANCE", "MOCKERY",  # 4 green
     "PAIN IS FUEL", "GAMBLER'S RUIN", "BLOOD TITHE",        # 3 red
     "PARADOX", "ALIGN",                                     # 2 blue
 ]
@@ -714,7 +713,7 @@ ADEPT_DECK = [
 # support kit + a support-piloting brain makes it the team anchor its identity
 # claims. 7 green (5 support + attacker + taunt), 1 red, 1 blue.
 WARDEN_DECK = [
-    "RESONATE", "SUPPORT", "CONDUCT", "WITNESS", "SHARED BURDEN",
+    "RESONATE", "SUPPORT", "SUPPORT", "WITNESS", "SHARED BURDEN",
     "TWIN STRIKE", "MOCKERY",                 # 7 green
     "PAIN IS FUEL", "PARADOX",                # 1 red, 1 blue
 ]
@@ -729,7 +728,7 @@ WARDEN_STATS = dict(soul=4, body=3, mind=2)
 
 # Two archetypes built on the expanded set, for testing the new mechanics in teams.
 VANGUARD_DECK = [   # Body 4 — front-line tank/protection + a little sustain
-    "STRIKE", "GUARD", "INTERCEPT", "FORTRESS STANCE", "RALLY", "TRAMPLE",
+    "STRIKE", "GUARD", "INTERCEPT", "INTERCEPT", "RALLY", "TRAMPLE",
     "WITNESS", "RENEWAL", "PARADOX",
 ]
 VANGUARD_STATS = dict(body=4, soul=3, mind=2)

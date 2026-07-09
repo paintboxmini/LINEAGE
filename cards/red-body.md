@@ -116,7 +116,7 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: The next time an ally is attacked, redirect it to you to defend.
-Defensive Bonus: The next time an ally is attacked, redirect it to you to defend.
+Defensive Bonus: All allies gain 2 HP
 Range: Melee
 *"Stand between the storm and what you protect."*
 
@@ -179,16 +179,6 @@ Effect: All enemies must move to backline if possible
 Defensive Bonus: All enemies must move to backline if possible
 Range: Melee
 *"The gap opens. That's all that matters."*
-
----
-
-**FORTRESS STANCE**
-RED — BODY
-Attack: Body + d4
-Effect: You take the damage the next time an ally is successfully attacked
-Defensive Bonus: All allies gain 2 HP
-Range: Melee
-*"Walls built in flesh outlast walls built in stone."*
 
 ---
 

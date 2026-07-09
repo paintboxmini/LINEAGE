@@ -76,8 +76,8 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 1, return this card to your hand
-Defensive Bonus: Scry 1, return this card to your hand
-Range: Melee
+Defensive Bonus: Place the top card of your discard pile on top of your deck
+Range: Both
 *"Clarity rewards the prepared mind."*
 
 ---
@@ -155,20 +155,10 @@ Range: Ranged
 **ALIGN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2. If both share a color, draw 1
-Defensive Bonus: Scry 2. If both share a color, gain +2 damage next attack
+Effect: Scry 3. If any two share a color, choose: draw 1 card, or +4 damage on your next attack
+Defensive Bonus: Scry 3. If any two share a color, gain +2 damage on your next attack
 Range: Ranged
 *"Clarity sharpens in alignment."*
-
----
-
-**INSIGHT**
-BLUE — MIND
-Attack: Mind + d2
-Effect: Scry 2. If both cards are the same color, deal +4 damage
-Defensive Bonus: Choose a color. That color deals -2 damage to your party until your next turn
-Range: Both
-*"Truth is a light, not a weapon."*
 
 ---
 
@@ -250,16 +240,6 @@ Effect: Look at the bottom 2 cards of your deck. Place any of them on top in any
 Defensive Bonus: Your maximum hand size increases by 1 until the end of this combat
 Range: Both
 *"The higher you rise, the farther you see."*
-
----
-
-**EXCAVATE**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Place the top card of your discard pile on the bottom of your deck
-Defensive Bonus: Place the top card of your discard pile on the bottom of your deck
-Range: Both
-*"What is buried is not always gone."*
 
 ---
 
