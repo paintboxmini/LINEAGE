@@ -22,16 +22,6 @@ Range: Both
 
 ---
 
-**ANALYZE**
-BLUE — MIND
-Attack: Mind + d2
-Effect: You and your allies scry 2
-Defensive Bonus: Reveal opponent's hand
-Range: Both
-*"Knowledge cuts deeper than steel."*
-
----
-
 **CALCULATE**
 BLUE — MIND
 Attack: Mind + d4
@@ -46,7 +36,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender can't use items before their next turn
-Defensive Bonus: Scry 1 card of the attacker's deck
+Defensive Bonus: Negate the attacker's next item use
 Range: Melee
 *"Tomorrow's victory begins with today's preparation."*
 
@@ -125,7 +115,7 @@ Range: Melee
 **ANTICIPATE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Each time you're attacked before your next turn, Scry 2
+Effect: The first time you're attacked before your next turn, Scry 2 and draw 1 card
 Defensive Bonus: Target's next attack has -3 damage
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
@@ -206,7 +196,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Name a color. The defender cannot play that color on their next reveal
-Defensive Bonus: Scry 2 cards of attacker's deck
+Defensive Bonus: Name a color. The attacker cannot play that color on their next reveal
 Range: Both
 *"The wise divide heaven into knowable directions."*
 
@@ -276,7 +266,7 @@ Range: Ranged
 **PROFILE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2.
+Effect: Scry 2, then draw 1 card
 Defensive Bonus: Attacker gains Staggered.
 Range: Both
 *"He already knew what you'd reach for."*
@@ -287,6 +277,6 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Until the end of combat, whenever an ally passes through your position in the initiative order, draw a card. Ends if you die or leave combat.
-Defensive Bonus: Scry 1.
+Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*

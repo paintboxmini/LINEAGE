@@ -182,7 +182,10 @@ def _align_defense(engine, me, foe):
 
 
 def _axiom_defense(engine, me, foe):
-    engine.scry(me, foe, 2)                    # scry the attacker's deck (sabotage)
+    color = me.policy.name_axiom_color(engine, me, foe)   # mirror-ban the attacker
+    if not warded(foe):
+        foe.axiom_ban = color
+        engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
 def _anticipate_defense(engine, me, foe):
@@ -497,6 +500,9 @@ def _study_defense(engine, me, foe):
 
 def _profile_effect(engine, me, foe):
     engine.scry(me, me, 2)
+    c = me.draw_one(engine.rng)            # buffed: scry 2, then draw 1
+    if c:
+        me.hand.append(c)
 def _profile_defense(engine, me, foe):
     foe.staggered = True                   # attacker can't defend the next hit
 
@@ -643,7 +649,6 @@ def build_cards():
     add("CHAIN", 'B', 'mind', 'both', 2, effect=_chain_effect, defense=_chain_defense)
     add("CALCULATE", 'B', 'mind', 'ranged', 4,
         effect=_calculate_effect, defense=_calculate_defense)
-    add("ANALYZE", 'B', 'mind', 'both', 2, effect=_analyze_effect)
     add("STUDY", 'B', 'mind', 'ranged', 6, effect=_study_effect, defense=_study_defense)
     add("PROFILE", 'B', 'mind', 'both', 4, effect=_profile_effect, defense=_profile_defense)
     add("REFRACT", 'B', 'mind', 'ranged', 4,
