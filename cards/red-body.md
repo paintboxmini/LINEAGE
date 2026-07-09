@@ -316,7 +316,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d2
 Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
-Defensive Bonus: Attacker receives Initiative Shift -1.
+Defensive Bonus: Move yourself to immediately follow the attacker in the initiative order.
 Range: Both
 *"Move first and you've already lost."*
 

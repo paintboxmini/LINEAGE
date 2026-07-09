@@ -2,6 +2,8 @@
 
 An **invariant** is a resolution rule the engine holds true unless a card explicitly says otherwise. This file is the canonical list of them.
 
+**The prime invariant — mechanics exist to enforce the fantasy, not to break or subvert it.** Every entry below formalizes a sentence a player believes ("+2 means I act two turns sooner"). When a bookkeeping rule and the believed sentence disagree, the bookkeeping is wrong. This is the first test every new resolution rule must pass.
+
 It has two uses:
 
 - **Reviewing content** — `agent-tools/red-team.md`'s Invariant Violations pass checks a new mechanic against this list. Bending one of these must be intentional and named.
@@ -46,7 +48,7 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 
 Not tied to a single exchange, but always in force.
 
-- **Initiative is a continuous wheel with a fixed turn marker.** There are no rounds. A combatant's position changes only via Initiative Shift; crossing the marker changes how many turns they get (see `rules/combat.md`, The turn marker, and `Initiative Shift X` in `rules/card-glossary.md`).
+- **Initiative Shift ±X means exactly: the target's next turn arrives X turns sooner or later.** There are no rounds. Seats, the marker, pass-overs, and bonus turns are bookkeeping that enforces this sentence; when seat and count disagree, the count wins. The marker sits on a position, not a person; sliding (displacement from someone's cut-in) never changes anyone's count; Waiting sets your count to your chosen seat (the forfeited action is the payment). See `rules/card-glossary.md`, Initiative Shift X.
 - **Blocking costs a card.** Every defense spends a card from hand. Hand size *is* blocking capacity between your turns — nobody blocks for free. The hand-size floor keeps you from *starting* a turn defenseless, but focus-fire between your turns can still empty your hand.
 - **Derived stats.** Body → max HP (`2 × Body + 9`; only Body changes HP). Mind → hand size. Soul → initiative. Changes apply live, in both directions.
 - **The deck reshuffles from discard.** When a deck runs out it is rebuilt from its discard pile — cards do not leave the game by default. (Consequence, not a rule: because decks are small and recycle constantly, deck-state manipulation like scry/surveil is near-neutral in combat, while read/tempo/timing effects move outcomes.)

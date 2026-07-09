@@ -51,45 +51,48 @@ def _ongoing_support_tick(engine, who):
 
 
 def _apply_shift(engine, queue, target, amount):
-    """Initiative Shift on the live turn queue (queue[0] = current actor, mid-turn).
-    The target is REPOSITIONED by `amount` slots — it settles into that new slot,
-    it is not locked to the slot after the current turn. A positive shift that
-    crosses the current marker also grants a bonus turn now (queued in
-    pending_turns); the target then settles at its shifted slot for later cycles."""
+    """Initiative Shift ±X, count-primacy model (rules/card-glossary.md).
+
+    THE INVARIANT: the target's next turn moves by exactly X turns — sooner for
+    positive, later for negative. Queue index IS the count (turns until acting);
+    `defer_turns` holds any owed delay the queue can't express (the marker will
+    PASS the target that many times, each pass costing no time — see the hover
+    branch in the run loops). Seats are bookkeeping; the count is the truth."""
     if not queue or target not in queue:
         return
     i = queue.index(target)
     if i == 0:                                   # shifting the current actor itself
-        # The current actor is ON the turn marker. It cannot cross a marker it is
-        # sitting on without travelling a full revolution back around to it, so its
-        # repositioning is DEFERRED to rotation time (_rotate_current), where the
-        # full-lap crossing rule lives. Accumulate in case of multiple shifts.
+        # The actor is ON the marker mid-turn; its natural next seat is the back
+        # (a full wheel away). Resolution is deferred to rotation time.
         engine._pending_self_shift = getattr(engine, '_pending_self_shift', 0) + amount
         return
     queue.remove(target)
     nr = len(queue)
     if amount > 0:
-        if i - amount <= 0:                      # crosses the current marker
+        # A positive shift first pays down any owed delay, then moves the count.
+        pay = min(target.defer_turns, amount)
+        target.defer_turns -= pay
+        amount -= pay
+        if i - amount <= 0:                      # count hits zero: crosses the marker
             engine.pending_turns.append(target)  # bonus turn now
             new_i = nr                           # then settle at the back (it lapped)
         else:
-            new_i = i - amount                   # simply acts that many slots sooner
+            new_i = i - amount                   # acts exactly that many turns sooner
     else:
-        new_i = min(nr, i + abs(amount))         # acts that many slots later
+        want = i + abs(amount)                   # the count the shift mandates
+        new_i = min(nr, want)
+        target.defer_turns += want - new_i       # owed delay beyond the back: passes
     queue.insert(max(1, min(nr, new_i)), target)
 
 
 def _rotate_current(engine, queue, who):
-    """Rotate the just-acted current actor off the front, honoring any initiative
-    shift applied to it THIS turn (a self-shift, or a shift aimed at the current
-    attacker from a defense — both land on the actor while it sits on the marker).
+    """Rotate the just-acted actor off the marker, honoring any shift applied to it
+    THIS turn (a self-shift, or a defense aimed at the current attacker).
 
-    Default is to the back of the wheel. Because the actor is ON the marker, only a
-    FULL revolution (|amount| >= total seats) crosses it: a positive full lap grants
-    a bonus turn (queued now, settles a lap later), a negative full lap a skipped
-    turn. Anything smaller just repositions within the coming lap — a positive shift
-    comes around sooner, a negative one is already latest so it stays at the back —
-    never a free action, never a skip."""
+    The actor's natural count is a full wheel (it just acted). Positive: it comes
+    around exactly that many turns sooner (a full lap grants the bonus turn, per
+    canon). Negative: it settles at the back owing exactly that many extra turns —
+    the marker passes it once per owed turn. Never a minted turn, never a lost one."""
     amount = engine.__dict__.pop('_pending_self_shift', 0)
     if not queue or queue[0] is not who:
         return
@@ -106,8 +109,7 @@ def _rotate_current(engine, queue, who):
         else:
             queue.insert(nr - amount, who)       # come around that many turns sooner
     elif amount < 0:
-        if -amount >= total:                     # lapped backward across the marker
-            who.skip_turns += 1                  # skip the next turn
+        who.defer_turns += abs(amount)           # exactly that many turns later
         queue.append(who)                        # already latest; settle at the back
     else:
         queue.append(who)                        # no shift: ordinary rotation
@@ -191,7 +193,9 @@ class Combatant:
 
         # combat-duration stat modifiers (Wither -Body, Erode -Soul)
         self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
-        self.skip_turns = 0              # initiative shift -> skipped turns
+        self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
+        self.defer_turns = 0             # owed delay from negative shifts — the
+                                         # marker passes you this many times, free
         self.must_target_frontline = False  # Partition: next turn restriction
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
         self._rend_guard = False         # Rend def: next hit -> Wound, no damage
@@ -509,6 +513,16 @@ class Duel:
         self.pending_turns = []
         while self.turn_count < self.max_turns:
             who = self.queue[0]
+            if who.defer_turns > 0:
+                # The marker reaches their seat before their count is satisfied:
+                # it passes them over. A pass-over costs no time (no tick).
+                if len(self.queue) <= 1:
+                    who.defer_turns = 0          # alone in the wheel: nothing to wait on
+                else:
+                    who.defer_turns -= 1
+                    self.queue.pop(0)
+                    self.queue.insert(1, who)    # hover behind the next actor
+                    continue
             if not who.collapsed:
                 self.take_turn(who, self.other(who))
             r = self._win_result(who, self.other(who))
@@ -538,7 +552,7 @@ class Duel:
         who._attacked_this = False
         if who.skip_turns > 0:
             who.skip_turns -= 1
-            self._say(f"{who.name} loses their turn (initiative shift)")
+            self._say(f"{who.name} loses their turn")
             return
         self.start_of_turn(who)
         if who.collapsed:
