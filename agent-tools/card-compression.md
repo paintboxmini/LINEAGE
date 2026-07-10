@@ -2,6 +2,8 @@
 
 Refactor a card set the way you'd refactor code: find the components that don't pull their weight, recombine the strong ones into fewer, denser cards, and lose no idea in the process. The goal is expressive **density** — power per card — not a smaller set for its own sake.
 
+Division of labor with the simulator: the sim can prove two designs behaviorally *equivalent*; it can never pick between them — equivalence is where its authority ends and this pass's begins. When behavior ties, the simpler mechanic wins: the ideal card reaches its intended behavior with the least machinery. Card text is part of the design — complexity taxes the table (slower turns, misplays) even when it costs the engine nothing.
+
 This pass is only possible because a card is separable (see `world/lineage.md` and the tag convention in `CLAUDE.md`): mechanic, name, flavor, and source are independent strands. Separable strands are what make recombination possible.
 
 **When to run it:** on a set mature enough to have accumulated redundancy — the way you refactor after duplication accrues, not before. On a young set there is nothing to compress; running it early just homogenizes.
