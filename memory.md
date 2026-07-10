@@ -6,6 +6,12 @@
 
 **What doesn't belong here:** keyword definitions (see `rules/card-glossary.md`), workflow rules (see `CLAUDE.md`), location summaries (see `locations/`). If it has a canonical home elsewhere, it goes there.
 
+## Branch map
+
+- `Main` — canon. Humans merge to it.
+- `claude/general-chat-vwvr1` — Claude's working branch (this log's primary author).
+- `claude/crystal-project-chat-76gzcn` — **Codex's workspace.** Provisioned with the full repo state via PR #25 (deliberate — not a mis-based merge). Do not delete or repurpose.
+
 ## Pending propagation
 
 Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty means everything is propagated.
