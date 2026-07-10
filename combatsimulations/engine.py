@@ -163,7 +163,8 @@ class Combatant:
         self.hp_per_body = 2
         self.max_hp = self.hp_per_body * body + 9
         self.hp = self.max_hp
-        self.hand_size = mind + 1
+        self.hand_size = mind        # hand size = Mind (the +1 floor is gone;
+                                     # low Mind compensates via Resist/draw/allies)
         self.decklist = list(decklist)   # names, for rebuild
         self.policy = policy
 
@@ -254,7 +255,7 @@ class Combatant:
 
     def effective_hand_size(self):
         bonus = sum(1 for o in self.ongoing if o['kind'] == 'handsize')
-        return max(0, self.eff('mind') + 1) + bonus  # Mind drives hand size live
+        return max(0, self.eff('mind')) + bonus  # hand size = Mind, live
 
     def death_floor(self):
         import math

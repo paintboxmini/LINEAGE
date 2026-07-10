@@ -7,7 +7,7 @@
 **Mind 5 / Body 4 / Soul 2 — HP 18**  
 **Difficulty:** Mid
 
-**Passive — Dual Strike:** Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire. Hand size is Mind + 1 (6).
+**Passive — Dual Strike:** Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire. Hand size is Mind (5).
 
 **Deck:** 2× each Ward Glyph, 2× each Mirror Glyph, 1× all remaining cards.
 
