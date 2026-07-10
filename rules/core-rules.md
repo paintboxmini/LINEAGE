@@ -7,7 +7,7 @@
 | Stat | Damage | Other |
 |------|--------|-------|
 | Body | Red cards | Max HP = (2 × Body) + 9 |
-| Mind | Blue cards | Hand size = Mind + 1 |
+| Mind | Blue cards | Hand size = Mind |
 | Soul | Green cards | Initiative = 1d6 + Soul |
 
 ---

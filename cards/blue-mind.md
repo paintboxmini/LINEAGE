@@ -22,16 +22,6 @@ Range: Both
 
 ---
 
-**ANALYZE**
-BLUE — MIND
-Attack: Mind + d2
-Effect: You and your allies scry 2
-Defensive Bonus: Reveal opponent's hand
-Range: Both
-*"Knowledge cuts deeper than steel."*
-
----
-
 **CALCULATE**
 BLUE — MIND
 Attack: Mind + d4
@@ -46,7 +36,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender can't use items before their next turn
-Defensive Bonus: Scry 1 card of the attacker's deck
+Defensive Bonus: Negate the attacker's next item use
 Range: Melee
 *"Tomorrow's victory begins with today's preparation."*
 
@@ -76,8 +66,8 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 1, return this card to your hand
-Defensive Bonus: Scry 1, return this card to your hand
-Range: Melee
+Defensive Bonus: Place the top card of your discard pile on top of your deck
+Range: Both
 *"Clarity rewards the prepared mind."*
 
 ---
@@ -125,7 +115,7 @@ Range: Melee
 **ANTICIPATE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Each time you're attacked before your next turn, Scry 2
+Effect: The first time you're attacked before your next turn, Scry 2 and draw 1 card
 Defensive Bonus: Target's next attack has -3 damage
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
@@ -155,20 +145,10 @@ Range: Ranged
 **ALIGN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2. If both share a color, draw 1
-Defensive Bonus: Scry 2. If both share a color, gain +2 damage next attack
+Effect: Scry 3. If any two share a color, choose: draw 1 card, or +4 damage on your next attack
+Defensive Bonus: Scry 3. If any two share a color, gain +2 damage on your next attack
 Range: Ranged
 *"Clarity sharpens in alignment."*
-
----
-
-**INSIGHT**
-BLUE — MIND
-Attack: Mind + d2
-Effect: Scry 2. If both cards are the same color, deal +4 damage
-Defensive Bonus: Choose a color. That color deals -2 damage to your party until your next turn
-Range: Both
-*"Truth is a light, not a weapon."*
 
 ---
 
@@ -216,7 +196,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Name a color. The defender cannot play that color on their next reveal
-Defensive Bonus: Scry 2 cards of attacker's deck
+Defensive Bonus: Name a color. The attacker cannot play that color on their next reveal
 Range: Both
 *"The wise divide heaven into knowable directions."*
 
@@ -253,16 +233,6 @@ Range: Both
 
 ---
 
-**EXCAVATE**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Place the top card of your discard pile on the bottom of your deck
-Defensive Bonus: Place the top card of your discard pile on the bottom of your deck
-Range: Both
-*"What is buried is not always gone."*
-
----
-
 **PHASE LOGIC**
 BLUE — MIND
 Attack: Mind + d2
@@ -296,7 +266,7 @@ Range: Ranged
 **PROFILE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2.
+Effect: Scry 2, then draw 1 card
 Defensive Bonus: Attacker gains Staggered.
 Range: Both
 *"He already knew what you'd reach for."*
@@ -307,6 +277,6 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Until the end of combat, whenever an ally passes through your position in the initiative order, draw a card. Ends if you die or leave combat.
-Defensive Bonus: Scry 1.
+Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*

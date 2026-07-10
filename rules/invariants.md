@@ -2,6 +2,10 @@
 
 An **invariant** is a resolution rule the engine holds true unless a card explicitly says otherwise. This file is the canonical list of them.
 
+**The prime invariant — mechanics exist to enforce the fantasy, not to break or subvert it.** Every entry below formalizes a sentence a player believes ("+2 means I act two turns sooner"). When a bookkeeping rule and the believed sentence disagree, the bookkeeping is wrong. This is the first test every new resolution rule must pass.
+
+The hierarchy beneath every subsystem: **fantasy** (what should the player feel happened?) → **invariant** (what must stay true for that fantasy to cohere?) → **mechanic** (the rules that enforce it) → **implementation** (lists, engines, visualizations). When building or reviewing, ask of any piece: what is the fantasy, what is the canonical state, what is merely derived, and what is only a visualization? Document the canonical layer; teach from the invariant, not from the picture.
+
 It has two uses:
 
 - **Reviewing content** — `agent-tools/red-team.md`'s Invariant Violations pass checks a new mechanic against this list. Bending one of these must be intentional and named.
@@ -46,8 +50,9 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 
 Not tied to a single exchange, but always in force.
 
-- **Initiative is a continuous wheel with a fixed turn marker.** There are no rounds. A combatant's position changes only via Initiative Shift; crossing the marker changes how many turns they get (see `rules/combat.md`, The turn marker, and `Initiative Shift X` in `rules/card-glossary.md`).
-- **Blocking costs a card.** Every defense spends a card from hand. Hand size *is* blocking capacity between your turns — nobody blocks for free. The hand-size floor keeps you from *starting* a turn defenseless, but focus-fire between your turns can still empty your hand.
+- **Initiative Shift ±X means exactly: the target's next turn arrives X turns sooner or later.** There are no rounds. Seats, the marker, pass-overs, and bonus turns are bookkeeping that enforces this sentence; when seat and count disagree, the count wins. The marker sits on a position, not a person; sliding (displacement from someone's cut-in) never changes anyone's count; Waiting sets your count to your chosen seat (the forfeited action is the payment). See `rules/card-glossary.md`, Initiative Shift X.
+- **The linear turn order is the canonical state.** Turns-until-action is *derived* from it (position − 1, with the current actor normalized to position 1), and the wheel is its *visualization* — circular only because turns repeat forever; it exists to make the one awkward property of a list (after the last actor, play continues with the first) easy to read. A shift is a list operation: remove the target, reinsert them X positions away, slide the intervening combatants one step to close the gap. The wheel updates because it is a picture of the list; the derived count is the table check ("how many turns away was I, how many am I now"). One state, three altitudes: the rules are linear, the wheel is circular, the count is arithmetic. Verified properties: the target's next turn moves by exactly X and the new seat persists; each of the X turn-slots passed nudges one turn the opposite way (including next-lap slots); everyone else keeps relative order untouched.
+- **Blocking costs a card.** Every defense spends a card from hand, and hand size (= Mind) *is* blocking capacity between your turns — nobody blocks for free. There is no free defensive floor: a low-Mind combatant runs dry fast and must compensate through the rest of the system — Resist, card draw, ally support, equipment. That pressure is intended; it is what makes Mind a real stat and the support web load-bearing.
 - **Derived stats.** Body → max HP (`2 × Body + 9`; only Body changes HP). Mind → hand size. Soul → initiative. Changes apply live, in both directions.
 - **The deck reshuffles from discard.** When a deck runs out it is rebuilt from its discard pile — cards do not leave the game by default. (Consequence, not a rule: because decks are small and recycle constantly, deck-state manipulation like scry/surveil is near-neutral in combat, while read/tempo/timing effects move outcomes.)
 - **A reveal is private until it happens, public after.** Your pending choice is hidden; your played colors are known history. Predictable is the only thing that breaks the "until it happens" half.

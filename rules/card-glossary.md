@@ -44,15 +44,17 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
 **Initiative Shift X**
-Immediately move the target X positions in the initiative order: positive X toward the front (acts sooner), negative X toward the back (acts later). The target cuts into the new seat; everyone between the old and new seat shifts one over to make room.
+The target's next turn moves by exactly X turns: positive X, they act X turns sooner; negative X, X turns later. That sentence is the whole rule — everything below is how the table keeps it true.
 
-The order is a loop — there are no ends to fall off, only the turn marker to cross (see `rules/combat.md`, The turn marker). A shift *crosses* the marker when the target's path passes over it; landing exactly on it counts. A shift that does not reach the marker simply reseats the target. A shift that crosses it does one of the following instead — which is why a positive shift can never delay the target's next turn, nor a negative one hasten it:
-- **Forward** (positive, lapping past the marker): the target takes one extra turn immediately, then settles into its new seat next cycle.
-- **Backward** (negative, lapped past the marker): the target's next turn is skipped, then it settles into its new seat next cycle.
+Track the target's two numbers: their **seat** in the order, and their **count** — how many turns until they act again. A shift rewrites the count by X and moves them X seats around the wheel (positive toward the marker's next arrival, negative away from it — toward larger position numbers). The target cuts into the new seat; everyone between slides one seat to fill the gap. **Sliding is not a shift** — displaced combatants keep their own counts unchanged.
 
-**On the fence.** A target shifted while it is taking the current turn is standing *on* the marker — hopping off is not a crossing (see the fence, `rules/combat.md`). It crosses only if the shift carries it a full loop back around to the marker. So a small self-shift just reseats it — never a free turn, never a self-skip.
+When seat and count disagree, **the count wins**:
+- If the marker reaches the target's seat *before* their count is satisfied, it **passes them over** — no turn, and a pass-over costs no time. (This is what happens when someone who has just acted is shifted backward into a coming seat: the marker's first visit waves past them.)
+- If the count reaches **zero or below**, the target acts immediately after the current turn — the bonus turn. For shifts of X ≥ N (N = combatants), resolve one bonus turn (positive) or one full-lap pass-over (negative) per revolution, then the remainder normally.
 
-For shifts of X ≥ N (N = number of combatants): resolve one revolution at a time — one extra turn (positive) or one skipped turn (negative) each — then apply the leftover positional shift. A target on the fence counts its first revolution from the marker it stands on.
+The marker sits on a **position, not a person**. If its occupant is shifted or displaced mid-turn, the marker stays put and the turn in progress completes; then the next turn goes to whoever now holds the marker's position, count permitting. A combatant taking their turn has a full wheel between them and their next turn — which is why a small self-shift can never mint a free turn or a self-skip (the fence, `rules/combat.md`).
+
+To check any resolution at the table, ask the target's two numbers: *how many turns away were you? how many are you now?* A positive shift may only lower the second number; a negative shift may only raise it — each by exactly X. If the seats say otherwise, the seats are wrong.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
@@ -96,7 +98,7 @@ Prevent the next debuff applied to you. Expires on use.
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
 - **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Only Body touches HP.
-- **Mind** — Blue-card damage, and hand size (Mind + 1). Hand size changes the moment the stat does. If a Mind loss leaves you holding more cards than your new hand size, discard down to it immediately.
+- **Mind** — Blue-card damage, and hand size (equal to Mind). Hand size changes the moment the stat does. If a Mind loss leaves you holding more cards than your new hand size, discard down to it immediately.
 - **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.

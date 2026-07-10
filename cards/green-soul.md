@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d4
 Effect: You and target both move positions
-Defensive Bonus: Target ally may move positions now
+Defensive Bonus: Allies gain 1 Quick (move position without spending your action on your next turn)
 Range: Both
 *"Change the field, change the fight."*
 
@@ -86,7 +86,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Apply Initiative Shift +3 to target ally
-Defensive Bonus: Apply Initiative Shift +3 to yourself
+Defensive Bonus: Apply Initiative Shift +3 to yourself, or -3 to the attacker (choose)
 Range: Melee
 *"The tide waits for those who know when to flow."*
 
@@ -109,16 +109,6 @@ Effect: If you are attacked before your next turn, your party may scry 1
 Defensive Bonus: You and your allies deal +2 damage until your next turn
 Range: Both
 *"Shared vision illuminates the path forward."*
-
----
-
-**ROUTE-SONG**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Apply Initiative Shift +3 to target ally
-Defensive Bonus: Apply Initiative Shift -3 to attacker
-Range: Ranged
-*"Hesitation in the face of unity."*
 
 ---
 
@@ -149,26 +139,6 @@ Effect: Attacker and defender discard 1 random card each. If they are different 
 Defensive Bonus: Target ally may discard 1 Soul card to heal 4
 Range: Ranged
 *"The system remembers who pays attention."*
-
----
-
-**SPIRAL CURRENT**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: You and target must both move positions
-Defensive Bonus: Allies gain 1 Quick (move position without using your action on your next turn)
-Range: Both
-*"Water teaches stone to dance."*
-
----
-
-**CONDUCT**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Ally gets +2 to attack damage on their next attack
-Defensive Bonus: Target ally draws 1 card
-Range: Both
-*"Strength multiplies when it finds its rhythm."*
 
 ---
 
