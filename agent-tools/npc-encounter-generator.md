@@ -6,16 +6,14 @@ Use this to build short roadside or social NPC encounters — tension without co
 
 ---
 
-## Onboarding — Required Reading Before Drafting
+## Onboarding — Before Drafting
 
 An NPC written without this context sounds like a visitor to the setting instead of a resident of it.
 
-1. **`world/tonal-bible.md`** — the register. Warmth containing something wrong; no heroic-fantasy framing; the world is not organized around the party.
-2. **`rules/resolution.md` and the DC table in `rules/core-rules.md`** — the three Perception modes (Observe / Sense / Read). Noncombat tension runs on these; know which mode a moment calls for.
-3. **Existing NPCs** — `locations/vultures-nest.md` (Aege, Bartho, Kino) and `experimental/the-man-who-buys-wounds.md` (Weck) for how this repo does **Function / Pressure / Hook** without exposition.
-4. **The region** — the location file the encounter lands in. The NPC should feel produced by the place.
-5. **`memory.md` — active threads and the branch map** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook.
-6. **Status cards** (`rules/card-glossary.md` — Wound, Exhaust) — if the encounter has mechanical teeth, use the existing pressure systems, not invented ones. A bargain that touches the Wound economy is strong precisely because the economy is real.
+1. **`agent-tools/exemplars.md`** — the compiled crib: Perception modes and DCs, the Function/Pressure/Hook register (Weck exemplar), status-card pressure, tone in one breath.
+2. **The region** — the location file the encounter lands in. The NPC should feel produced by the place.
+3. **`memory.md` — active threads** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook.
+4. **Escalate to full canon only when needed:** full register → `world/tonal-bible.md`; more voice exemplars → Aege/Bartho/Kino in `locations/vultures-nest.md`; exact status-card text → `rules/card-glossary.md`.
 
 ---
 

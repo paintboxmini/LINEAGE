@@ -6,20 +6,14 @@ Use this to build new Tales Untold encounters. The output is repo files, not a c
 
 ---
 
-## Onboarding — Required Reading Before Drafting
+## Onboarding — Before Drafting
 
 Encounters built without calibration end up the wrong weight for their tier and fight the engine instead of using it.
 
-1. **`rules/combat.md` and `rules/core-rules.md`** — attack resolution, the tie rule, positioning, the range matrix, the initiative wheel, and the **Wait action** (turn-order repositioning is a player tool now; encounters can teach or test it).
-2. **`rules/invariants.md`** — the resolution contract. An encounter mechanic that bends an invariant must say so explicitly and is a red-team flag, not a house rule.
-3. **`rules/combat-example.md`** — a full fight beat by beat. This is the table texture you're designing for.
-4. **`rules/card-glossary.md`** + the approved keyword list in `experimental/README.md` — exact keyword phrasing only. Hand size is **Mind, minimum 2**; nobody is ever reduced below act-plus-one-block.
-5. **Difficulty tiers** (`CLAUDE.md`, Stat Blocks) — Early / Mid / Late. If the brief doesn't state a tier, ask before building.
-6. **Two or three bestiary entries near the target tier** — e.g. `bestiary/briar-scratcher.md`, `bestiary/briarwatch-jackrabbit.md`, `bestiary/fencerow-shrike.md` for Early. Calibrate against them; HP defaults to (2 × Body) + 9, and Early creatures usually run below formula for fiction.
-7. **The enemy deck convention** (`rules/cards.md`) — 3 signature cards + 4–7 core cards, 7–10 total; core picks lean toward the creature's stat spread.
-8. **The tag convention** (`CLAUDE.md`, card format; `world/lineage.md`) — signature cards carry one source tag (the location or creature they're obtained from): `RED — BODY — BRIARWOODS`.
-9. **Encounter exemplars** — `quests/shifting-burrow.md`, `quests/the-larder-fence.md` — for structure, tone, and how a lesson is taught through play rather than explanation.
-10. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
+1. **`agent-tools/exemplars.md`** — the compiled crib: engine facts, tier anchors, formats, deck and tag conventions, skeletons, tone. This replaces the old full-canon read list for routine work.
+2. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
+3. **Escalate to full canon only when needed:** bending or brushing a rule → `rules/invariants.md` + the relevant rules file; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
+4. Tier not stated in the brief? Ask before building.
 
 ---
 
