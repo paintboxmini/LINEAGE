@@ -131,15 +131,15 @@ Dependent systems (sim, print sheets, cross-references) do not rebuild on every 
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 
-## The Canon Gate
+## The Canon Gate — Authority Levels
 
-Content placement follows three tiers — the Translation Principle's ambiguity levels, applied to where work lands:
+Placement is a question of jurisdiction, not magnitude: *who is allowed to commit this kind of change?* A level-1 creature can be the best thing in the set; a level-3 wording tweak can be four words.
 
-- **Tier 1 — ship direct.** Content that only *uses* established canon (encounters, creatures, cards, items, NPCs built from existing truth): land it in the canon directories once the mandatory red-team/alignment passes are clean. Add one line to the post-review queue.
-- **Tier 2 — ship and flag.** Content that *extends* canon without contradicting it (new faction behavior, a new map seat, a deepened NPC): ship it, and flag the extension prominently — in the post-review queue and in chat. Drew's review is veto-after, not approve-first.
-- **Tier 3 — gated, permanently.** Rules, invariants, keywords, core formulas, cosmology (Seats, Archons, the Unheld, races), anything contradicting existing canon, and anything carrying an open world-level hook: it goes to `experimental/` or a chat proposal and waits for Drew's explicit sign-off.
+- **Authority 1 — Established Language** *(agent authority)*. Content that only *uses* existing canon: encounters, creatures, NPCs, cards built from existing mechanics, prose improvements. Ships to canon directories once the mandatory red-team/alignment passes are clean. One line in the post-review queue.
+- **Authority 2 — Canonical Extension** *(agent authority, with audit)*. Adds something new without redefining anything: new faction behavior, a regional custom, a new map seat, a deepened NPC. Ships flagged — prominently, in the queue and in chat; Drew's review is veto-after. **An extension may extend canon but may not redirect existing themes** — if it would change what something already established means or is for, it is not an extension; it is constitutional. (Same test as the Translation Principle: *will this change the meaning of something already established?*)
+- **Authority 3 — Constitutional** *(Drew's authority, permanently)*. Changes to the language itself: formulas, keywords, progression, cosmology (Seats, Archons, the Unheld, races), the prime invariant, anything contradicting existing canon, anything carrying an open world-level hook — anything that changes how other content is interpreted. Goes to `experimental/` or a chat proposal and waits for explicit sign-off.
 
-Every Tier 1/2 ship gets one line under **Recently shipped** at the top of `memory.md`. Drew clears lines as he blesses them, or objects and the item reverts — every ship is one commit away from undone, with the threshold log holding the why. The gate is loose because the automated checks are mandatory and the history is reversible — not because review stopped.
+Every Authority 1/2 ship gets one line under **Recently shipped** at the top of `memory.md`. Drew clears lines by blessing, or objects and the item reverts — every ship is one commit from undone, with the threshold log holding the why. The queue also gives the aggregate view: cumulative drift from many small extensions shows up there as a pattern before it becomes a fact. The gate is loose because the checks are mandatory and the history is reversible — not because review stopped.
 
 ## Translation Principle
 

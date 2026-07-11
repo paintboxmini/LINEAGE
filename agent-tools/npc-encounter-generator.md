@@ -28,7 +28,7 @@ An NPC written without this context sounds like a visitor to the setting instead
 
 ## File Routing
 
-- **Route by the Canon Gate (`CLAUDE.md`):** an NPC carrying an open world-level hook (usually what makes them good) is Tier 3 → `experimental/[name].md`, awaiting Drew's ratification. An NPC built entirely from established canon is Tier 1 → `quests/[name].md` directly, queued for post-review.
+- **Route by the Canon Gate (`CLAUDE.md`):** an NPC carrying an open world-level hook (usually what makes them good) is constitutional (Authority 3) → `experimental/[name].md`, awaiting Drew's ratification. An NPC built entirely from established canon is Authority 1 → `quests/[name].md` directly, queued for post-review.
 - **A recurring, ratified NPC** graduates to `characters/[name].md` (people go in `characters/`, never `bestiary/`, even with a combat statblock) with their encounter in `quests/`.
 - If the NPC has combat cards: `cards/[name].md`, source-tagged per the lineage convention (`CLAUDE.md`, card format).
 
