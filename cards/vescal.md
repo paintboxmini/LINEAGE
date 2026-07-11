@@ -1,6 +1,6 @@
 # Vescal — Signature Cards
 
-Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and support. See `bestiary/vescal.md` for GM notes.
+Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and support. See `characters/vescal.md` for GM notes.
 
 ---
 

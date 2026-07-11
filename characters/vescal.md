@@ -37,7 +37,7 @@ Vescal and Orin operate as freelance peacekeepers under the name **Trutinate**. 
 
 Someone hired them for whatever situation the party finds them in. That someone's interests may or may not align with the party's.
 
-See also: `bestiary/orin-vane.md`
+See also: `characters/orin-vane.md`
 
 ---
 

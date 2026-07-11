@@ -1,6 +1,6 @@
 # Orin Vane — Signature Cards
 
-Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defense Counter Glyphs are visually identical in the fiction. See `bestiary/orin-vane.md` for GM notes.
+Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defense Counter Glyphs are visually identical in the fiction. See `characters/orin-vane.md` for GM notes.
 
 ---
 

@@ -43,7 +43,7 @@ The crossing does not resolve. That is the encounter. What the party leaves with
 
 **If it turns hot:** provoked digging near dusk can bring 2 Borrower Sentries (`quests/shifting-burrow.md`) up to repair the crossing — they will not pursue past the bramble line.
 
-**Hooks:** the sinkhole at Briarwatch (`quests/hollow-below-briarwatch.md`) is a day up the road; the wound-buyer (`quests/the-man-who-buys-wounds.md`) pays best for animals "the ground already picked."
+**Hooks:** the sinkhole at Briarwatch (`quests/hollow-below-briarwatch.md`) is a day up the road; the wound-buyer (`experimental/the-man-who-buys-wounds.md`) pays best for animals "the ground already picked."
 
 ---
 

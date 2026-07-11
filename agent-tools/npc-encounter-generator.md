@@ -1,80 +1,42 @@
-# NPC Encounter Generator Prompt
+# NPC Encounter Generator
 
-Use this prompt to generate short roadside or social NPC encounters. Designed for early game — tension without combat.
+Use this to build short roadside or social NPC encounters — tension without combat, for early game especially. Output is repo files, not a chat block — see File Routing below.
 
-**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Delete it before committing. Nothing from the scratch file goes into the content file.
+**Scratch work:** `experimental/scratch-[task].md` (or the session scratchpad); delete before committing.
 
 ---
 
 ## Onboarding — Required Reading Before Drafting
 
-Do not draft until all of this is done. An NPC written without this context sounds like a visitor to the setting instead of a resident of it.
+An NPC written without this context sounds like a visitor to the setting instead of a resident of it.
 
-1. **`world/tonal-bible.md`** — the register everything here is written in. Beauty and wrongness in the same space; no heroic-fantasy framing.
-2. **`rules/resolution.md` and the DC table in `rules/core-rules.md`** — including the three Perception modes (Observe / Sense / Read). Noncombat tension runs on these checks; know which mode a moment calls for.
-3. **Existing NPCs** — `locations/vultures-nest.md` (Aege, Bartho, Kino) for how this repo does function, pressure, and hook without exposition.
-4. **The region the encounter lands in** — e.g., `locations/briarwoods.md`, `locations/roadhouse.md` for road encounters. The NPC should feel produced by the place.
-5. **`memory.md` — Active Pending Threads** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook. Touching an established location, faction, or NPC also triggers `alignment-checker.md`.
-6. **Status cards in `rules/card-glossary.md`** (Wound, Exhaust) — if the delayed consequence is mechanical, use the existing pressure systems, not invented ones.
-
----
-
-```
-Create a short roadside NPC encounter for Tales Untold.
-
-Constraints:
-- Early game
-- Non-violent by default, but tension must be present
-- Must allow multiple player approaches (ignore, engage, exploit)
-- Must reinforce system themes (movement, consequence, observation, or tradeoffs)
-- Keep it short, clean, and immediately playable
-
-System context:
-- Positioning and movement matter
-- Consequences can be delayed (deck effects like Wound/Exhaust)
-- NPCs should embody system rules, not explain them
-- Avoid long dialogue or lore dumps
-
-Output format:
-
-ENCOUNTER NAME
-
-Intent:
-(What this interaction teaches)
-
-Setup:
-(Where and how players encounter it)
-
-NPC:
-(Name + Function / Pressure / Hook)
-
-Interaction Options:
-- 3–4 ways players might engage (no forced outcomes)
-
-Outcomes:
-(What changes based on player behavior)
-
-Optional Mechanic:
-(If applicable, include a light mechanical interaction)
-
-Before finalizing:
-1. Ensure NPC behavior reflects system rules
-2. Remove any unnecessary exposition
-3. Ensure at least one outcome has delayed consequences
-4. Keep everything concise
-5. Remove any visible reasoning — if design thinking is readable in the output, it didn't finish
-
-Return final version only.
-```
+1. **`world/tonal-bible.md`** — the register. Warmth containing something wrong; no heroic-fantasy framing; the world is not organized around the party.
+2. **`rules/resolution.md` and the DC table in `rules/core-rules.md`** — the three Perception modes (Observe / Sense / Read). Noncombat tension runs on these; know which mode a moment calls for.
+3. **Existing NPCs** — `locations/vultures-nest.md` (Aege, Bartho, Kino) and `experimental/the-man-who-buys-wounds.md` (Weck) for how this repo does **Function / Pressure / Hook** without exposition.
+4. **The region** — the location file the encounter lands in. The NPC should feel produced by the place.
+5. **`memory.md` — active threads and the branch map** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook.
+6. **Status cards** (`rules/card-glossary.md` — Wound, Exhaust) — if the encounter has mechanical teeth, use the existing pressure systems, not invented ones. A bargain that touches the Wound economy is strong precisely because the economy is real.
 
 ---
 
-## Reference Files
+## Design Constraints
 
-- NPC examples: `locations/vultures-nest.md` (Aege, Bartho, Kino)
-- Tone reference: `locations/briarwatch.md`, `locations/roadhouse.md`
-- Delayed consequence examples: `bestiary/briar-scratcher.md`, `quests/shifting-burrow.md`
+- Non-violent by default; the tension is in the terms, the silence, or the thing not explained.
+- **Function / Pressure / Hook** for the NPC — what they do, what they want without saying, what they leave behind.
+- 3–4 player approaches, none forced; refusing or walking on is always a complete answer.
+- Delayed consequences beat immediate ones — a name in a ledger, a debt unpriced, a favor remembered.
+- The NPC embodies system rules; they never explain them.
+- Leave the biggest question deliberately unanswered **and say so in the file** — the answer belongs to Drew, not the generator.
 
----
+## File Routing
 
-*Optional: run `prompt-refinement.md` after completing this task.*
+- **The encounter** → `experimental/[name].md` by default. A new NPC almost always carries an open hook (that is what makes them good), and open hooks are Drew's to ratify — canon placement comes with promotion, not authorship.
+- **A recurring, ratified NPC** graduates to `characters/[name].md` (people go in `characters/`, never `bestiary/`, even with a combat statblock) with their encounter in `quests/`.
+- If the NPC has combat cards: `cards/[name].md`, source-tagged per the lineage convention (`CLAUDE.md`, card format).
+
+## Before Presenting
+
+1. Run `red-team.md` — check any mechanical offer for zone/timing ambiguity (where exactly does the Wound come from; when exactly does the effect happen).
+2. Run `alignment-checker.md` — especially against existing NPC threads.
+3. Flag the open hook explicitly as Drew's to answer.
+4. Remove visible reasoning; present the encounter, the findings, and the flagged hook — nothing else.

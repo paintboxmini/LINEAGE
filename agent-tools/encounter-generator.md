@@ -1,86 +1,47 @@
-# Encounter Generator Prompt
+# Encounter Generator
 
-Use this prompt to generate new Tales Untold encounters. Paste it into a new agent session along with relevant repo context (bestiary entries, card files, current keyword list from `experimental/README.md`).
+Use this to build new Tales Untold encounters. The output is repo files, not a chat block — see File Routing below.
 
-**Before starting:** Create `experimental/scratch-[task].md` for all reasoning, math, and mechanical tradeoffs. Delete it before committing. Nothing from the scratch file goes into the content file.
+**Scratch work:** reasoning, math, and tradeoffs go in `experimental/scratch-[task].md` (or the session scratchpad), never in the content files. Delete scratch files before committing.
 
 ---
 
 ## Onboarding — Required Reading Before Drafting
 
-Do not draft until all of this is done. Encounters built without calibration end up the wrong weight for their tier and fight the engine instead of using it.
+Encounters built without calibration end up the wrong weight for their tier and fight the engine instead of using it.
 
-1. **`rules/combat.md` and `rules/core-rules.md`** — attack resolution, the tie rule, positioning, the range matrix, and the initiative wheel. Encounter mechanics must run on these, not around them.
-2. **`rules/combat-example.md`** — a full fight played out beat by beat. This is what your encounter will feel like at the table; design for that texture.
-3. **`rules/card-glossary.md`** plus the approved keyword list in `experimental/README.md` — exact keyword phrasing only, nothing pending, nothing new without approval.
-4. **Difficulty tier conventions** (`CLAUDE.md`, Stat Blocks) — Early / Mid / Late definitions. If the brief doesn't state a tier, ask before building.
-5. **Two or three bestiary entries near the target tier** — e.g., `bestiary/briar-scratcher.md` and `bestiary/delve-roller.md` for Early. Calibrate stats against them; HP defaults to (2 × Body) + 9 (GM may pick a number that fits the fiction).
-6. **The enemy deck convention** (`rules/cards.md`, Deck Building) — 3 signature cards + 4–7 core cards; enemies draw to hand size like everyone else.
-7. **Encounter examples** — `quests/shifting-burrow.md`, `quests/hollow-below-briarwatch.md` — for structure, tone, and how a lesson gets taught through play.
-
----
-
-```
-Create a full encounter for Tales Untold.
-
-Constraints:
-- Early or mid game (state which)
-- Must teach a mechanic through play (not explanation)
-- Use simple, clean effects
-- Avoid generic damage-only actions
-- Keep complexity appropriate to tier
-
-System context:
-- Positioning matters (Frontline / Backline)
-- Movement can trigger consequences
-- Status cards (Wound, Exhaust, etc.) go into decks
-- Defensive Bonuses trigger when the defender wins the RPS, and on ties (unless the attacker's Effect cancels them)
-
-Output format:
-
-ENCOUNTER NAME
-
-Intent:
-(What this encounter teaches)
-
-Setup:
-(Environment, positioning constraints)
-
-Enemies:
-(Name + short behavioral identity)
-
-Enemy Cards (3):
-- Name (Color — Stat)
-- Attack: Stat + die
-- Effect:
-- Defensive Bonus:
-- Range:
-
-Behavior Notes:
-(How enemies act and what triggers them)
-
-Win Condition:
-
-Before finalizing:
-1. Compare with repo patterns (naming, tone, structure)
-2. Identify at least 2 weaknesses or inconsistencies
-3. Fix them
-4. Ensure no ambiguous targeting, no redundancy with existing cards,
-   and the encounter teaches its intended lesson through mechanics
-5. Remove any visible reasoning — if design thinking is readable in the output, it didn't finish
-
-Return final version only.
-```
+1. **`rules/combat.md` and `rules/core-rules.md`** — attack resolution, the tie rule, positioning, the range matrix, the initiative wheel, and the **Wait action** (turn-order repositioning is a player tool now; encounters can teach or test it).
+2. **`rules/invariants.md`** — the resolution contract. An encounter mechanic that bends an invariant must say so explicitly and is a red-team flag, not a house rule.
+3. **`rules/combat-example.md`** — a full fight beat by beat. This is the table texture you're designing for.
+4. **`rules/card-glossary.md`** + the approved keyword list in `experimental/README.md` — exact keyword phrasing only. Hand size is **Mind, minimum 2**; nobody is ever reduced below act-plus-one-block.
+5. **Difficulty tiers** (`CLAUDE.md`, Stat Blocks) — Early / Mid / Late. If the brief doesn't state a tier, ask before building.
+6. **Two or three bestiary entries near the target tier** — e.g. `bestiary/briar-scratcher.md`, `bestiary/briarwatch-jackrabbit.md`, `bestiary/fencerow-shrike.md` for Early. Calibrate against them; HP defaults to (2 × Body) + 9, and Early creatures usually run below formula for fiction.
+7. **The enemy deck convention** (`rules/cards.md`) — 3 signature cards + 4–7 core cards, 7–10 total; core picks lean toward the creature's stat spread.
+8. **The tag convention** (`CLAUDE.md`, card format; `world/lineage.md`) — signature cards carry one source tag (the location or creature they're obtained from): `RED — BODY — BRIARWOODS`.
+9. **Encounter exemplars** — `quests/shifting-burrow.md`, `quests/the-larder-fence.md` — for structure, tone, and how a lesson is taught through play rather than explanation.
+10. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
 
 ---
 
-## Reference Files
+## Design Constraints
 
-- Keyword list: `experimental/README.md`
-- Keyword definitions: `rules/card-glossary.md`
-- Encounter examples: `quests/shifting-burrow.md`, `quests/hollow-below-briarwatch.md`
-- Tone reference: `cards/alignment-marshal-engine.md`
+- State the tier. Teach one mechanic (Early) or one interaction (Mid) **through play**, never through explanation.
+- Run on the engine, not around it: positioning, the wheel, hand economy, and status-card pressure are your materials. The strongest twists are the ones the rules enforce for you.
+- Simple, clean effects; no generic damage-only enemies; no new keywords without discussion.
+- Effect and Defensive Bonus on a card should not be near-duplicates.
+- Multiple viable player approaches where the fiction allows it; walking away can be a valid answer.
 
----
+## File Routing
 
-*Optional: run `prompt-refinement.md` after completing this task.*
+- **Encounter** → `quests/[name].md` (intent, setup, enemies, GM notes, win condition, related docs).
+- **New creature** → `bestiary/[name].md` (stat block, `**Difficulty:**` line, behavior, `Cards:` reference) + `cards/[name].md` (signature cards, source-tagged).
+- **Named NPC** (a person, even one with a combat statblock) → `characters/[name].md`, never `bestiary/`.
+- **Anything carrying an open world-level hook** (an unexplained entity, a new faction behavior, a mystery whose answer isn't written) → **`experimental/` first.** Drew promotes to canon. Content that only uses established canon may land in canon directories directly.
+- New cards make a print sheet stale — record it under **Pending propagation** in `memory.md` (Work Modes); do not regenerate mid-task.
+
+## Before Presenting
+
+1. Run `red-team.md` (Quest/Encounter pass) — invariants first.
+2. Run `alignment-checker.md` if the encounter touches an existing location, faction, or NPC.
+3. Surface anything that extends canon (new faction behavior, new truth about a place) as an explicit item for Drew's ruling — never let it ride in silently.
+4. Remove visible reasoning. Present the encounters, the review findings, and the flagged rulings — nothing else.
