@@ -26,7 +26,7 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Mind**
 - Determines damage for Blue cards (Attack: Mind + die)
-- Sets your hand size: **Mind**
+- Sets your hand size: **Mind** (minimum 2)
 
 **Soul**
 - Determines damage for Green cards (Attack: Soul + die)
@@ -67,7 +67,7 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 
 ## Hand Size
 
-Your maximum hand size is **Mind**.
+Your maximum hand size is **Mind**, with a minimum of 2 — no one's hand is ever smaller than 2.
 
 At the start of your turn, draw until you reach your hand size. If your deck is empty when you would draw, shuffle your discard pile into a new deck first, then draw.
 

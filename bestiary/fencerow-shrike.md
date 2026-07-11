@@ -30,8 +30,8 @@ Run 2 for a party of 4, cycles staggered — while one perches, the other dives.
 The Shrike runs a two-beat loop, and the loop is the encounter:
 
 1. **Perched** (Backline): hard to reach, watching, Evasive.
-2. **The dive** (its turn): IMPALING DIVE into the Frontline — its one card, spent.
-3. **Grounded** (until its next turn): Frontline, hand empty — Mind 1 means it holds one card, and it just used it. **It cannot defend. Every attack that lands in this window resolves unopposed.**
+2. **The dive** (its turn): IMPALING DIVE into the Frontline — full commitment; the card says so.
+3. **Grounded** (until its next turn): Frontline, wings spent. **It cannot defend — every attack that lands in this window resolves unopposed.**
 4. Next turn: WATCHFUL PERCH back to safety. Repeat.
 
 The lesson is the window. Players who swing at a perched Shrike hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat after a dive — take it apart. The Shrike teaches the party to fight the *order*, not the target.
@@ -42,7 +42,7 @@ The lesson is the window. Players who swing at a perched Shrike hit Evade and wa
 
 ## Tactical Purpose
 
-First encounter after the wheel matters. The Shrike makes turn order visible: its whole threat and its whole weakness live in *when*, not *what*. It also demonstrates the hand-as-shield rule from the enemy side — the party watches an enemy go helpless because its hand is empty, and learns what their own empty hand means.
+First encounter after the wheel matters. The Shrike makes turn order visible: its whole threat and its whole weakness live in *when*, not *what*. It also previews the cost of full commitment — the party watches an enemy trade its defense for a heavier strike, the same bargain Berserker's Price offers them.
 
 ---
 

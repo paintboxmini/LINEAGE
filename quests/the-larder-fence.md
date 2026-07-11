@@ -9,7 +9,7 @@
 Teach players to fight the **turn order**, not the target:
 1. Reading an enemy's cycle on the initiative wheel.
 2. Using the **Wait** action to land turns inside a strike window.
-3. What an empty hand means — shown on the enemy before it happens to them.
+3. The cost of full commitment — an all-in strike buys damage with defense, on their side of the table before it's offered on theirs (Berserker's Price).
 
 ---
 
@@ -25,7 +25,7 @@ A stretch of stone fence where the bramble grows through the gaps — and the br
 
 ## The Rhythm (GM notes)
 
-Each Shrike alternates: **dive** (Impaling Dive into the Frontline, +2 from the perch) → **grounded, hand empty, cannot defend until its turn** → **perch** (back to safety, Evade). Play it punctual, not vicious — it takes one thing per dive when it can (Thorn Larder) and returns to the wire.
+Each Shrike alternates: **dive** (Impaling Dive into the Frontline, +2 from the perch — and by the card's own text, unable to defend until its next turn) → **the grounded window** → **perch** (back to safety, Evade). Play it punctual, not vicious — it takes one thing per dive when it can (Thorn Larder) and returns to the wire.
 
 Let the first dive hurt. Let the first swing at a *perched* Shrike waste itself on Evade. Then let the table notice the grounded one standing in the open with nothing in its claws. Do not explain the window. The wheel is sitting on the table; the players will find it.
 
