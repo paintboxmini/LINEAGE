@@ -48,5 +48,5 @@ These prompts are not optional when their trigger condition is met. Run them wit
    - Whether this connects to an existing pending thread
 4. Execute
 5. Run automatic triggers for the content type produced
-6. Present to Drew — Drew decides what goes to canon
+6. Present to Drew — Tier 1/2 content ships per The Canon Gate (`CLAUDE.md`) and lands in the post-review queue; Tier 3 waits for his sign-off
 7. Wait for next instruction

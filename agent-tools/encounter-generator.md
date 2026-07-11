@@ -30,12 +30,12 @@ Encounters built without calibration end up the wrong weight for their tier and 
 - **Encounter** → `quests/[name].md` (intent, setup, enemies, GM notes, win condition, related docs).
 - **New creature** → `bestiary/[name].md` (stat block, `**Difficulty:**` line, behavior, `Cards:` reference) + `cards/[name].md` (signature cards, source-tagged).
 - **Named NPC** (a person, even one with a combat statblock) → `characters/[name].md`, never `bestiary/`.
-- **Anything carrying an open world-level hook** (an unexplained entity, a new faction behavior, a mystery whose answer isn't written) → **`experimental/` first.** Drew promotes to canon. Content that only uses established canon may land in canon directories directly.
+- **Route by the Canon Gate (`CLAUDE.md`):** established-canon-only content ships direct (Tier 1, post-review queue); clean extensions ship flagged (Tier 2); an open world-level hook, a contradiction, or anything touching rules/cosmology is Tier 3 → `experimental/` until Drew signs off.
 - New cards make a print sheet stale — record it under **Pending propagation** in `memory.md` (Work Modes); do not regenerate mid-task.
 
 ## Before Presenting
 
 1. Run `red-team.md` (Quest/Encounter pass) — invariants first.
 2. Run `alignment-checker.md` if the encounter touches an existing location, faction, or NPC.
-3. Surface anything that extends canon (new faction behavior, new truth about a place) as an explicit item for Drew's ruling — never let it ride in silently.
+3. Anything that extends canon (new faction behavior, new truth about a place) ships flagged (Tier 2) — named explicitly in chat and the post-review queue, never riding in silently.
 4. Remove visible reasoning. Present the encounters, the review findings, and the flagged rulings — nothing else.

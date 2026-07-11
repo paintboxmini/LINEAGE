@@ -131,6 +131,16 @@ Dependent systems (sim, print sheets, cross-references) do not rebuild on every 
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 
+## The Canon Gate
+
+Content placement follows three tiers — the Translation Principle's ambiguity levels, applied to where work lands:
+
+- **Tier 1 — ship direct.** Content that only *uses* established canon (encounters, creatures, cards, items, NPCs built from existing truth): land it in the canon directories once the mandatory red-team/alignment passes are clean. Add one line to the post-review queue.
+- **Tier 2 — ship and flag.** Content that *extends* canon without contradicting it (new faction behavior, a new map seat, a deepened NPC): ship it, and flag the extension prominently — in the post-review queue and in chat. Drew's review is veto-after, not approve-first.
+- **Tier 3 — gated, permanently.** Rules, invariants, keywords, core formulas, cosmology (Seats, Archons, the Unheld, races), anything contradicting existing canon, and anything carrying an open world-level hook: it goes to `experimental/` or a chat proposal and waits for Drew's explicit sign-off.
+
+Every Tier 1/2 ship gets one line under **Recently shipped** at the top of `memory.md`. Drew clears lines as he blesses them, or objects and the item reverts — every ship is one commit away from undone, with the threshold log holding the why. The gate is loose because the automated checks are mandatory and the history is reversible — not because review stopped.
+
 ## Translation Principle
 
 Drew communicates through examples, metaphors, partial ideas, and observations — the fence, Gambler's Ruin, "two designers at the table." Your job is to translate, not transcribe: identify and formalize the underlying invariant or rule when the evidence strongly supports it, rather than asking him to restate it in formal language.

@@ -1,11 +1,11 @@
 # Experimental Folder — Rules
 
-This folder is a sandbox. Content here is draft, not canon.
+This folder holds the genuinely unresolved: open world-level hooks, low-confidence drafts, and Tier-3 material awaiting Drew's lore calls. Content that only uses or cleanly extends established canon ships directly under The Canon Gate (`CLAUDE.md`) and does not wait here.
 
 ## Rules
 
 - Claude may write freely to this folder without explicit permission
-- Nothing moves to canon without Drew's explicit sign-off
+- Tier-3 content (rules, invariants, keywords, cosmology, open hooks, contradictions) moves to canon only with Drew's explicit sign-off; Tier 1/2 content ships per The Canon Gate in `CLAUDE.md`
 - No new keywords introduced without discussion first
 - Cut cards go to `experimental/archives/cut-cards.md` — never deleted, may find solutions later
 
