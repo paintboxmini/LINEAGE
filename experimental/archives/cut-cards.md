@@ -222,3 +222,46 @@ Effect: If target has fewer cards in hand than you, deal +3 damage.
 Defensive Bonus: All enemies in Frontline gain Blind until start of your next turn.
 Range: Melee
 *Cut: Mass Blind defensive bonus duplicates FOGBURST. Hand-count condition also complex to track for a small creature deck.*
+
+
+---
+
+## Alignment Marshal — dropped in the canon revision (salvaged from experimental/alignment-marshal-cards.md before cleanup)
+
+**CORRECTIVE MEASURE**
+GREEN — SOUL — ENGINE
+Attack: Soul + d2
+Effect: Gain Evade.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"The correction mechanism corrects itself."*
+
+---
+
+**PLATFORM SHOVE**
+RED — BODY — ENGINE
+Attack: Body + d4
+Effect: Target moves to Frontline.
+Defensive Bonus: Anchored — Your attacks deal +2 damage.
+Range: Both
+*"Interference is relocated, not removed."*
+
+---
+
+**SEQUENCE LOCK**
+BLUE — MIND — ENGINE
+Attack: Mind + d2
+Effect: Target gains Debuff.
+Defensive Bonus: Gain Ward.
+Range: Both
+*"The sequence will not be interrupted."*
+
+---
+
+**TRAJECTORY HOLD**
+GREEN — SOUL — ENGINE
+Attack: Soul + d2
+Effect: Gain Ward.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"It does not deviate."*

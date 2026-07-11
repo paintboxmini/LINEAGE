@@ -1,6 +1,6 @@
 # The Tide Pulls Back
 
-*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `experimental/lightning-loop.md`.*
+*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `items/lightning-loop.md`.*
 
 ---
 
@@ -131,7 +131,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 ## Resolution
 
-**The Lightning Loop:** the party has it. It doesn't fit any of them either. The item file covers what comes next — `experimental/lightning-loop.md`.
+**The Lightning Loop:** the party has it. It doesn't fit any of them either. The item file covers what comes next — `items/lightning-loop.md`.
 
 **Mirel:** she made choices during this adventure. Whatever she revealed about the Mason lodge, whatever she said to Kaine's followers, whatever she decided about constraint vs. openness — that's where she lands. She doesn't have a clean ending. She has a next step.
 
@@ -162,5 +162,5 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 - `experimental/mirel.md`
 - `experimental/kaine.md`
 - `experimental/steve-and-pip.md`
-- `experimental/lightning-loop.md`
+- `items/lightning-loop.md`
 - `locations/glasslight-reach.md`

@@ -61,6 +61,7 @@ Islands stand in the larger lakes and wide river reaches. They are inhabited, tr
 | Abyssal Ruins | Interior | Vast warped ancient site |
 | Havenrise | Eastern edge | Under development |
 | Roaat | Near Vulture's Nest | Under development |
-| Canille | Lake island, northeast of Vulture's Nest | Island village; experimental |
+| Canille | Lake island, northeast of Vulture's Nest | Island village; the masks |
+| Pneum | Lake island, northeast of Vulture's Nest | People of Promise congregation |
 
 For detailed location entries, see `locations/`.
