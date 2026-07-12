@@ -7,6 +7,7 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 | Prompt | Use When |
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
+| `exemplars.md` | The compiled crib — read INSTEAD of full canon for routine generation; refresh at Sync when canon shifts |
 | `inspiration-guide.md` | Content feels obvious, flat, or generic — find the right angle |
 | `encounter-generator.md` | Designing a new combat encounter |
 | `npc-encounter-generator.md` | Designing a non-combat NPC or roadside encounter |
@@ -47,5 +48,5 @@ These prompts are not optional when their trigger condition is met. Run them wit
    - Whether this connects to an existing pending thread
 4. Execute
 5. Run automatic triggers for the content type produced
-6. Present to Drew — Drew decides what goes to canon
+6. Present to Drew — Authority 1/2 content ships per The Canon Gate (`CLAUDE.md`) and lands in the post-review queue; constitutional (Authority 3) waits for his sign-off
 7. Wait for next instruction

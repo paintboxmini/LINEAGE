@@ -1,6 +1,6 @@
 # Masaharu — Cards
 
-Signature cards for Masaharu. See `bestiary/masaharu.md`.
+Signature cards for Masaharu. See `characters/masaharu.md`.
 
 **These cards are unique to Masaharu. They cannot be awarded to players or transferred to other gunners.**
 
