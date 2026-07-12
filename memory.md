@@ -16,14 +16,15 @@
 
 Authority 1/2 content shipped to canon since Drew's last look (see The Canon Gate, `CLAUDE.md`). Drew clears lines by blessing or objecting; objections revert.
 
-- *(none)*
+- **A1** — `rules/combat-example.md` rewritten for hand = Mind (min 2): both hands 4→3, full draw/hold arithmetic re-walked (same HP outcomes, same lessons). ANALYZE (cut in the scry pass) replaced with PROFILE in both illustrative decks; the cycle-1 teaching beat now demonstrates PROFILE's scry-and-draw plus the You-Are-Not-Your-Own-Ally counterfactual and the green exception.
+- **A2 ⚑ player deck touched** — `testcampaigndecks/steele.md`: SPIRAL CURRENT (retired in the compression merge) swapped for MIRROR STEP, the card that absorbed its effect. Kevin's deck keeps the identical "you and target both move" function. Veto reverts it.
+- **A1** — Briarwatch print sheet regenerated with the 3 Fencerow Shrike cards (print set config updated).
 
 ## Pending propagation
 
 Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty means everything is propagated.
 
-- `rules/combat-example.md` — hand-size change (Mind, min 2): Frost and Steele hand sizes 4→3 and the draw/hold arithmetic need a careful rewrite. (The Scratchers stay at hand 2 — the min-2 floor restored their old value, shrinking this rewrite.)
-- `printing/card-print-briarwatch.html` — 3 new FENCEROW SHRIKE cards (`cards/fencerow-shrike.md`, BRIARWOODS tag) belong in the Briarwatch set; regenerate at next Sync.
+- *(none)*
 
 ---
 
