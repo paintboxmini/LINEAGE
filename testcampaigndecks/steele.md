@@ -20,7 +20,7 @@
 - ANTICIPATE
 
 **Green**
-- SPIRAL CURRENT
+- MIRROR STEP
 - RENEWAL
 
 All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.

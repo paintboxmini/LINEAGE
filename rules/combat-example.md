@@ -12,17 +12,17 @@ The scenario is the standard day-2 road encounter: two Briar Scratchers contest 
 
 ### The Party
 
-**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(2 × Body + 9)* — hand size **4** *(Mind + 1)*
+**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(2 × Body + 9)* — hand size **3** *(= Mind, minimum 2)*
 Deck (9 cards, 3R/3B/3G per the stat-matching heuristic):
-STRIKE, PUSH, ENDURE / ANALYZE, REFRACT, STILLNESS / FLOW, PATIENCE, WITNESS
+STRIKE, PUSH, ENDURE / PROFILE, REFRACT, STILLNESS / FLOW, PATIENCE, WITNESS
 
-**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 17** *(2 × Body + 9)* — hand size **4**
+**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 17** *(2 × Body + 9)* — hand size **3**
 Deck (9 cards, 4R/3B/2G):
-STRIKE, DEAD HEAT, BRACE, PULL / ANALYZE, CALCULATE, DISTRACT / FLOW, MOCKERY
+STRIKE, DEAD HEAT, BRACE, PULL / PROFILE, CALCULATE, DISTRACT / FLOW, MOCKERY
 
 ### The Enemies
 
-**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 9** — hand size **2**
+**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 9** — hand size **2** *(Mind 1, floored at the minimum of 2)*
 Each runs its own copy of the same 7-card deck (3 signature + 4 core, per the enemy deck convention):
 RAKING CUT, SKITTER AWAY, NIP AND TEAR *(signature — `cards/briar-scratcher.md`)* + DART (R), STILLNESS (B), SHADE AWAY (G), FLOW (G)
 
@@ -43,8 +43,8 @@ Frost and Steele are walking the road: both **Frontline**. Scratcher A darts out
 
 **Opening hands:** when initiative is rolled, every combatant draws to hand size (`rules/combat.md`, Turn Structure — a rule this example surfaced; see Edge Cases at the end).
 
-- Frost draws: ANALYZE, REFRACT, PATIENCE, STRIKE *(5 cards left in deck)*
-- Steele draws: STRIKE, DEAD HEAT, CALCULATE, FLOW
+- Frost draws: PROFILE, PATIENCE, STRIKE *(6 cards left in deck)*
+- Steele draws: STRIKE, DEAD HEAT, CALCULATE
 - Scratcher A draws: RAKING CUT, SKITTER AWAY
 - Scratcher B draws: STILLNESS, RAKING CUT
 
@@ -56,16 +56,16 @@ Frost and Steele are walking the road: both **Frontline**. Scratcher A darts out
 
 Start of turn: draw to hand size — hand is already full, no draw.
 
-**Action: Play a Card.** Frost attacks Scratcher A with **ANALYZE** (Blue, Mind + d2, Range: Both). Range check: Frost Frontline → A Frontline is melee range; ANALYZE says Both, so it's legal from anywhere.
+**Action: Play a Card.** Frost attacks Scratcher A with **PROFILE** (Blue, Mind + d4, Range: Both). Range check: Frost Frontline → A Frontline is melee range; PROFILE says Both, so it's legal from anywhere.
 
 A defends: reveals **SKITTER AWAY** (Blue). Both cards are discarded.
 
 **Blue vs Blue — tie.** No damage. Per the tie rule (`rules/combat.md`, Attack Resolution): *attacker's Effect still triggers, then defender's Defensive Bonus triggers.*
 
-- ANALYZE Effect: *"You and your allies scry 2."* Frost scries 2 and so does Steele. Note the wording — "you and your allies." Card text must explicitly include *you*; a card that said only "allies" would exclude Frost (**You Are Not Your Own Ally**, `rules/cards.md`).
+- PROFILE Effect: *"Scry 2, then draw 1 card."* Frost looks at his top two — PUSH and REFRACT — puts REFRACT on top, and draws it. Note that the scry and the draw are Frost's alone: a card granting them to "your allies" would *exclude* Frost (**You Are Not Your Own Ally**, `rules/cards.md`) — unless it were green; green counts itself among its allies.
 - SKITTER AWAY Defensive Bonus: A gains **Evade** (50% to dodge the next attack against it — `rules/card-glossary.md`).
 
-Neither trigger cancels the other, so both resolve. Frost's hand: REFRACT, PATIENCE, STRIKE.
+Neither trigger cancels the other, so both resolve. Frost's hand: PATIENCE, STRIKE, REFRACT.
 
 ### Scratcher A's turn
 
@@ -83,13 +83,13 @@ Frost's hand: REFRACT, STRIKE.
 
 ### Steele's turn
 
-Draws to 4 — hand already full.
+Draws to 3 — hand already full.
 
 **Action:** Steele attacks Scratcher A with **STRIKE** (Red, Body + d8, Melee — both Frontline, legal).
 
 A has **Evade** from cycle 1. Evade resolves *before the defender chooses a card*: roll 1d2 → **1, the attack misses entirely.** The Evade stack is spent. STRIKE was already played and discarded in step 1 of attack resolution, so the card is gone. *(Ruling — see Edge Cases.)* No damage, no Effect, A never had to commit a card.
 
-Steele's hand: DEAD HEAT, CALCULATE, FLOW.
+Steele's hand: DEAD HEAT, CALCULATE.
 
 ### Scratcher B's turn
 
@@ -109,15 +109,15 @@ Frost's hand: REFRACT.
 
 ### Frost's turn
 
-Draws to 4 → draws 3 from his 6-card deck: ENDURE, **WOUND**, FLOW. Hand: REFRACT, ENDURE, WOUND, FLOW.
+Draws to 3 → draws 2 from his 6-card deck: ENDURE and the **WOUND**. Hand: REFRACT, ENDURE, WOUND.
 
-The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 3-card hand, and it stays that way until he pays to fix it. That's the whole Scratcher lesson, two turns after the claw landed.
+The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 2-card hand, and it stays that way until he pays to fix it. That's the whole Scratcher lesson, two turns after the claw landed.
 
 **Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 9 → 4. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
 
 Note what Frost could *not* do: his REFRACT (Ranged) is unplayable as an attack against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target. In melee it's only good to him as a defense reveal.
 
-End of turn: the **WOUND stays in hand** — it isn't going anywhere until Frost pays to remove it. Frost's hand: REFRACT, FLOW, WOUND.
+End of turn: the **WOUND stays in hand** — it isn't going anywhere until Frost pays to remove it. Frost's hand: REFRACT, WOUND.
 
 ### Scratcher A's turn
 
@@ -129,7 +129,7 @@ Damage: Soul 2 + d2 *(rolls 1)* = 3 — but Frost has **Resist**: half rounded d
 
 ### Steele's turn
 
-Draws to 4 → draws BRACE. Hand: DEAD HEAT, CALCULATE, FLOW, BRACE.
+Draws to 3 → draws BRACE. Hand: DEAD HEAT, CALCULATE, BRACE.
 
 **Action:** Steele attacks Scratcher B with **DEAD HEAT** (Red, Body + d6, Ranged). Range check: Frontline → Backline is not melee range — Ranged is legal. B's only card is RAKING CUT; it reveals it — **Red.**
 
@@ -152,7 +152,7 @@ NIP AND TEAR is Melee and B is still Backline. **Action: Move Position** — B c
 
 ### Frost's turn
 
-REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding FLOW and the **WOUND**. He draws to 4 — but the Wound occupies a slot, so he draws only two real cards, PUSH and STILLNESS, and never reaches WITNESS, which stays buried in his deck. Hand: FLOW, PUSH, STILLNESS, WOUND — three cards he can actually play. That's the Wound's real cost: not the 2 damage that put it there, but the card it's quietly keeping out of his hand every turn until he spends an action to be rid of it. Frost is at 9 HP and carrying a passenger he can't put down until the party rests.
+REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding only the **WOUND**. He draws to 3 — but the Wound occupies a slot, so he draws only two real cards, PUSH and STILLNESS, and never reaches FLOW or WITNESS, which stay buried in his deck. Hand: PUSH, STILLNESS, WOUND — two cards he can actually play. That's the Wound's real cost: not the 2 damage that put it there, but the card it's quietly keeping out of his hand every turn until he spends an action to be rid of it. Frost is at 9 HP and carrying a passenger he can't put down until the party rests.
 
 **Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d6, Melee). B reveals **SKITTER AWAY** (Blue). **Blue beats Red — defender wins.** No damage. Defensive Bonus: B gains **Evade**.
 
@@ -184,12 +184,12 @@ Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole a
 ## What This Example Demonstrated
 
 - **Initiative:** 1d6 + Soul; ties break by higher Soul, then player-before-enemy; the order is a wheel with no rounds.
-- **Turn economy:** draw to hand size (Mind + 1) at start of turn, then exactly one action — attack, move, item, Rushdown, interact, or flee.
+- **Turn economy:** draw to hand size (Mind, minimum 2) at start of turn, then exactly one action — attack, move, item, Rushdown, interact, or flee.
 - **All four resolution outcomes:** attacker win (damage + Effect), defender win (no damage + Defensive Bonus), tie (no damage, Effect then Defensive Bonus — including the cancellation clause), and the automatic win when the defender declines.
 - **Simultaneous reveal:** defense is a prediction. Frost guessed wrong twice; that's the game.
 - **Range is positional law:** melee needs both Frontline; Ranged fails inside melee range; Both is always legal. B lost a full turn crossing the field to get claw-range.
 - **Status flow:** Evade (spent on one attack, whether or not it dodges), Resist (halves one hit), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
-- **You Are Not Your Own Ally** unless the card says "you and."
+- **You Are Not Your Own Ally** unless the card says "you and" — green being the standing exception: green counts itself among its allies (`rules/cards.md`).
 
 ---
 

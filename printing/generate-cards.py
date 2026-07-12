@@ -34,6 +34,7 @@ SETS = {
         'title': 'Briarwatch Encounter Set',
         'files': [
             '../cards/briarwatch-jackrabbit.md',
+            '../cards/fencerow-shrike.md',
             '../cards/briar-scratcher.md',
             '../cards/borrower-hollow.md',
             '../cards/stonecoil-hollow.md',
