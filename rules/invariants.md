@@ -23,7 +23,6 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
    - Range gates legality: melee needs both combatants frontline; ranged needs not-both-frontline; "both" is always legal.
 
 2. **Blind, simultaneous selection.** The defender chooses at most one card to reveal *without seeing the attacker's card*. Reveals are simultaneous — the defender decides from public information only (revealed-color history, position), never the played card.
-   - *Modifier — Predictable (Study):* for one marked reveal, the holder sees the attacker's card before choosing. Expires on use.
    - *Constraint — Axiom:* a named color cannot be revealed — attack or block — on the next reveal.
    - *Modifier — Intercept (team):* a standing ally reveals in the target's place, taking over this defense before RPS.
    - A staggered, cannot-defend, or collapsed defender skips selection (attacker wins uncontested).
@@ -41,7 +40,7 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
    redirect (Shared Burden) → volunteer shield (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → damage floor (Equal Footing) → apply to HP.
 
    - A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse).
-   - **Unpreventable damage bypasses the whole pipeline.** Every step above is an *attack-damage* defense; bleed, thorns, status damage, and HP costs are not attacks, so they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full.
+   - **Unpreventable damage bypasses the whole pipeline.** Every step above is an *attack-damage* defense; Thorns, status damage, and HP costs are not attacks, so they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full.
    - Thorns retaliates against a melee attacker after the hit lands (and is itself unpreventable).
 
 ---
@@ -55,7 +54,7 @@ Not tied to a single exchange, but always in force.
 - **Blocking costs a card.** Every defense spends a card from hand, and hand size (= Mind, minimum 2) *is* blocking capacity between your turns — nobody blocks for free. The floor of 2 means no one is ever reduced below act-plus-one-block; beyond that there is no cushion: a low-Mind combatant runs dry fast and must compensate through the rest of the system — Resist, card draw, ally support, equipment. That pressure is intended; it is what makes Mind a real stat and the support web load-bearing.
 - **Derived stats.** Body → max HP (`2 × Body + 9`; only Body changes HP). Mind → hand size. Soul → initiative. Changes apply live, in both directions.
 - **The deck reshuffles from discard.** When a deck runs out it is rebuilt from its discard pile — cards do not leave the game by default. (Consequence, not a rule: because decks are small and recycle constantly, deck-state manipulation like scry/surveil is near-neutral in combat, while read/tempo/timing effects move outcomes.)
-- **A reveal is private until it happens, public after.** Your pending choice is hidden; your played colors are known history. Predictable is the only thing that breaks the "until it happens" half.
+- **A reveal is private until it happens, public after.** Your pending choice is hidden; your played colors are known history. Nothing breaks the blind — reveal simultaneity is absolute.
 
 ---
 
@@ -65,7 +64,6 @@ Every card that bends an invariant, the invariant it bends, and its lifetime. Th
 
 | Modifier | Invariant bent | Lifetime |
 |---|---|---|
-| Predictable (Study) | blind simultaneous selection | next reveal |
 | Axiom | selection legality (color ban) | next reveal |
 | Paradox | RPS resolution (inverts) | the exchange |
 | Interrupt | defender may act (cannot-defend) | until your next turn |

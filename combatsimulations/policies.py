@@ -44,33 +44,6 @@ def playable(hand):
     return [c for c in hand if not c.is_status]
 
 
-def perfect_read_defense(me):
-    """Predictable (Study's def): if the attacker's actual card has been exposed to
-    `me` for this reveal, defend with certainty instead of a blind read.
-      counter held  -> play it (win the RPS outright)
-      else same color held -> tie it (a tie deals no damage — negate the hit)
-      else                 -> decline (can't beat or tie; keep cards)
-    Returns (applies, card): applies=False means no read is active; if True, `card`
-    is the decision (may be None = deliberately decline)."""
-    known = getattr(me, '_known_attack', None)
-    if known is None:
-        return (False, None)
-    counter = _BEATEN_BY[known.color]
-    winners = [c for c in me.hand if not c.is_status and c.color == counter]
-    if winners:
-        return (True, min(winners, key=lambda c: est_damage(me, c)))
-    ties = [c for c in me.hand if not c.is_status and c.color == known.color]
-    if ties:
-        return (True, min(ties, key=lambda c: est_damage(me, c)))
-    return (True, None)
-
-
-def _card_power(card):
-    """Owner-agnostic threat estimate — bigger die = bigger card. Used to rank
-    an opponent's unseen cards during a Scry."""
-    return {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, None: 4.0}.get(card.base_die, 3.0)
-
-
 class ScryMixin:
     """A composable sub-brain: every action-brain mixes this in and shares one
     Scry strategy. The engine hands scry_plan the cards seen on top of a deck and
@@ -143,9 +116,6 @@ class RandomPolicy(ScryMixin):
         return None
 
     def choose_defense(self, engine, me, foe):
-        applies, card = perfect_read_defense(me)
-        if applies:
-            return card
         hand = playable(me.hand)
         if not hand:
             return None
@@ -169,9 +139,6 @@ class GreedyPolicy(ScryMixin):
         return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
 
     def choose_defense(self, engine, me, foe):
-        applies, card = perfect_read_defense(me)
-        if applies:
-            return card
         # blind: predict the foe repeats their last attack color; hold the color
         # that would beat that prediction.
         pred = foe.last_color
@@ -217,9 +184,6 @@ class ReaderPolicy(ScryMixin):
         return ('attack', max(atks, key=lambda c: est_damage(me, c)))
 
     def choose_defense(self, engine, me, foe):
-        applies, card = perfect_read_defense(me)
-        if applies:
-            return card
         # blind: predict the foe's most frequent attack color and hold its counter
         pred = self._predict(foe)
         if pred is None:
@@ -288,9 +252,6 @@ class TacticianPolicy(ScryMixin):
         return ('attack', max(atks, key=lambda c: self._value(engine, me, foe, c)))
 
     def choose_defense(self, engine, me, foe):
-        applies, card = perfect_read_defense(me)
-        if applies:
-            return card
         # recency read: expect the foe to repeat their last attack color
         pred = foe.last_color
         if pred is None:

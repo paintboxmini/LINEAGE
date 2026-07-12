@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Discard 1, draw 1
-Defensive Bonus: Apply Predictable to the attacker
+Defensive Bonus: Gain Evade
 Range: Ranged
 *"Small observations build great understanding."*
 

@@ -9,7 +9,7 @@ sim couldn't show).
     choose_defense(battle, me, attacker) -> card | None
 """
 
-from policies import est_damage, _BEATEN_BY, playable, ScryMixin, perfect_read_defense
+from policies import est_damage, _BEATEN_BY, playable, ScryMixin
 
 
 def legal_attacks_team(battle, me, target):
@@ -89,9 +89,6 @@ class TeamTactician(ScryMixin):
         return v
 
     def choose_defense(self, battle, me, attacker):
-        applies, card = perfect_read_defense(me)
-        if applies:
-            return card
         pred = attacker.last_color
         if pred is None:
             return None

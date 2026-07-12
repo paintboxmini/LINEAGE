@@ -59,9 +59,6 @@ To check any resolution at the table, ask the target's two numbers: *how many tu
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
 
-**Predictable**
-The next time you would reveal a card for RPS resolution, the opponent may look at it before choosing theirs. Expires on use.
-
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
@@ -86,7 +83,7 @@ The next time you are attacked, you cannot play a defensive card. The attack res
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **Unpreventable**
-Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Bleed, Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **Ward**
 Prevent the next debuff applied to you. Expires on use.

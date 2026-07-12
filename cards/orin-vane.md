@@ -119,7 +119,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender must reveal their hand.
-Defensive Bonus: Apply Predictable to the attacker.
+Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"The sword goes where the eyes don't."*
 

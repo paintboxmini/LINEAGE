@@ -62,9 +62,9 @@ Range: [Melee / Ranged / Both]
 **Difficulty:** Early / Mid / Late
 ```
 
-- **Early** — one mechanic, teaches a concept, low decision overhead
-- **Mid** — two interacting mechanics, positioning starts to matter
-- **Late** — full passive/card synergy, pressure from multiple directions
+- **Early** — one lesson taught through play: a simple behavioral loop, a 3-card signature kit, few keywords. Stats 1–3, HP 6–9 (below formula, for fiction). Often disengages rather than dies.
+- **Mid** — a defining passive plus interacting cards; positioning and deck texture matter. Stats up to 5, HP at formula (~15–18). Named individuals live here.
+- **Late** — multiple passives or phases, arena-level pressure, full card synergy. (No promoted anchor yet — calibrate against Root Heart / Tithe Engine.)
 
 If difficulty is not specified, ask before building.
 
