@@ -24,9 +24,9 @@ They are almost entirely gone. Maggie is the last. The name of her people is in 
 
 The Archon's domain: the act of truly seeing someone in their pain. Suffering that is held, understood, metabolized rather than left to accumulate alone. Pain witnessed by another becomes something different than pain endured in isolation.
 
-The Seat has become almost entirely irrelevant. The race that embodied its domain is gone. The world still has suffering — it just goes unwitnessed. Unprocessed. Nobody translates it anymore.
+The Seat stands — Seats do not fade. But the practice of its domain is nearly gone from the world: the race that carried it is gone, and the world still has suffering — it just goes unwitnessed. Unprocessed. Nobody translates it anymore.
 
-The Archon is fading. Their plane of existence is thinning from ours.
+What fades is the Archon. MoroM is thinning from held reality, and a Seat whose Archon fully fades stands **empty** (`mythology/seats.md`, Seat States) — and empty seats are how parts of reality begin breaking down.
 
 ---
 
@@ -76,7 +76,7 @@ What she actually needed was for her parents to show her a future worth living i
 
 Seven sites. Seven hundred sacrifices. The number is not arbitrary.
 
-Six completed sites anchor the Archon partially to held reality. When the seventh reaches one hundred, the Seat of Witnessed Suffering is permanently bound — it can never fully fade, regardless of whether the race continues to decline. The Archon survives.
+Six completed sites anchor the Archon partially to held reality. When the seventh reaches one hundred, MoroM is permanently anchored — the Archon can never fully fade and the Seat never stands empty, regardless of whether the race continues to decline. The Archon survives.
 
 Maggie is the seven hundredth sacrifice. She has always known this. When the seventh site is complete she will kill herself as the final offering, and the work will be finished. She will get to put it down.
 

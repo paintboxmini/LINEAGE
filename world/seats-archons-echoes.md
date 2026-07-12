@@ -28,6 +28,8 @@ What this costs:
 
 Most Archons never relinquish their position. Relinquishing a Seat feels like annihilation. For most, it is.
 
+Archons can also **fade**. A domain whose practice dies in the world starves its expression: the Archon thins and recedes until the Seat stands empty (`mythology/seats.md`, Seat States). The Seat itself never fades — Seats are permanent; what fades is the bearer. Lysander (Time) has faded far enough that the world has forgotten his name. MoroM (Witnessed Suffering) is fading now.
+
 ### Known Archons
 
 **Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipsera carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
@@ -37,6 +39,8 @@ Most Archons never relinquish their position. Relinquishing a Seat feels like an
 **Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipsera before may recognize him.
 
 **Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipsera's continued existence.
+
+**MoroM** *(Witnessed Suffering)* — Fading. The Thessians, who practiced the domain, are gone but for one. What MoroM is now is not written. The one thing anchoring it to held reality is described in `characters/black-maggie.md`.
 
 **The Heron** *(Hunt)* — Mundane talk about fishing, weather, bait, the one that got away. All of it is metaphor. None of it is only metaphor.
 

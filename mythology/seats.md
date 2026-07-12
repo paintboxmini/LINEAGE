@@ -36,8 +36,11 @@ Most bearers never release their Seat. Relinquishing it feels like annihilation.
 | State | Effect |
 |-------|--------|
 | **Filled** | Domain functions normally. |
+| **Fading** | The bearer is thinning — the domain still holds, but goes increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
 | **Empty** | That part of reality begins breaking down. |
 | **Contested** | Two beings fighting for a Seat warp reality until one wins. |
+
+Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
 
 ---
 
@@ -52,8 +55,8 @@ Only speaks of what was. The god of thresholds and transitions. Remembers the pr
 Changes so much that he forgets he is a god. He thinks he's a shapeshifter.
 
 ### Time
-**Bearer:** Lysander
-References continuity and persistence. Identity across moments. *(Players may recognize this deity from a prior campaign.)*
+**Bearer:** Lysander *(fading)*
+References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipsera no longer does. *(Players may recognize this deity from a prior campaign.)*
 
 ### Love / Binding
 **Bearer:** Aurora
@@ -88,6 +91,10 @@ Discusses gathering, abundance, and what's worth preserving.
 Domain: Endings, Finality, Release
 
 Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat.
+
+### Witnessed Suffering
+**Bearer:** MoroM *(fading)*
+The act of truly seeing someone in their pain. Suffering held and witnessed becomes something other than suffering endured alone. Its practice died with the Thessians; MoroM thins. What MoroM is — or was — remains unwritten. See `characters/black-maggie.md`.
 
 ### Knowledge
 Domain: Knowing, Revelation, Pattern
