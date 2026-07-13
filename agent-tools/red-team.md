@@ -15,14 +15,27 @@ minimal — do not add complexity unless it solves a demonstrated problem.
 
 ## Attack these layers
 
-1. Invariant violations — CHECK FIRST.
+1. Engine-invariant violations — CHECK FIRST.
    - Does this introduce a hidden rule change or a new timing window?
    - Does it force the engine to special-case resolution?
    - Does it imply a new POLICY (card selection / reveal / initiative / RPS
      resolution), not merely a new card effect?
-   If so, name the mechanic it overrides, check the override against the prime
-   invariant (`rules/invariants.md`), and say whether it should be expressed as
-   a scoped rule modifier rather than a one-off exception.
+   If so, name the mechanic it overrides (`rules/invariants.md`, Mechanic-override
+   reference) and say whether it should be expressed as a scoped modifier rather
+   than a one-off exception. This pass is narrow — it's about the simulator's
+   computational correctness, not whether the content is well-designed. That's
+   the next pass.
+
+1b. Design Philosophy fit.
+   - Does the deck actually express the creature's behavior, or is it a generic
+     stat-stick with flavor text on top?
+   - Does the mechanic come from the creature's ecology/fiction, or was it picked
+     first and the fiction painted on after?
+   - Does the encounter teach through what the player does, or does it require
+     the GM to explain the lesson?
+   Check against `agent-tools/design-philosophy.md` directly — this is a design
+   standard, not an engine check, and violating it doesn't break anything the
+   simulator would catch.
 
 2. Simulation abuse.
    - If the mechanic lives in `combatsimulations/` (or is a few lines from being
@@ -130,7 +143,8 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
-- Engine invariants (for the Invariant Violations pass): `rules/invariants.md`
+- Engine invariants (for the Engine-Invariant Violations pass): `rules/invariants.md`
+- Design standards (for the Design Philosophy pass): `agent-tools/design-philosophy.md`
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`

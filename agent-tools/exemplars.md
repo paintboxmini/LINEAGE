@@ -1,6 +1,6 @@
 # Exemplars — the Compiled Crib
 
-This is the **Exemplars** layer (see `rules/invariants.md`'s header for the full four-layer map: Rule Definitions / Invariants / Exemplars / Heuristics). Everything below is a concrete implementation chosen because it demonstrates an invariant well — extract the principle, don't copy the specifics. A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. Maintenance heuristic for this file specifically: `agent-tools/heuristics.md`, Promote repeated retrieval.
+This is the **Exemplars** layer (see `CLAUDE.md`, Four Kinds of Canonical Content, for the full map: Rule Definitions / Invariants / Design Philosophy / Exemplars). Everything below is a concrete implementation chosen because it demonstrates a Design Philosophy principle well (`agent-tools/design-philosophy.md`) — extract the principle, don't copy the specifics. A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. If a pattern gets retrieved repeatedly to rediscover it, that's the signal to promote it into this file rather than re-deriving it next time.
 
 Read this + the target's location/bestiary file + anything your specific task actually touches. Go to the full canon files only when the task bends a rule, the crib looks stale, or you're checking a keyword's exact text.
 
@@ -8,7 +8,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 
 ## Engine facts generators always need
 
-*(sources: `rules/combat.md`, `rules/core-rules.md`, `rules/invariants.md`)*
+*(sources: `rules/combat.md`, `rules/core-rules.md`, `rules/card-glossary.md`)*
 
 - RPS: Blue beats Red beats Green beats Blue. Tie = no damage; attacker's Effect fires first, then Defensive Bonus (damage-amplifying effects do nothing on a tie).
 - Reveals are simultaneous and blind. Defending is a prediction, not a reaction.
