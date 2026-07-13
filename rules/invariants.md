@@ -1,47 +1,44 @@
 # Combat Invariants
 
-An **invariant** is a resolution rule the engine holds true unless a card explicitly says otherwise. This file is the canonical list of them.
+## Four layers, kept apart on purpose
 
-**The prime invariant — mechanics exist to enforce the fantasy, not to break or subvert it.** Every entry below formalizes a sentence a player believes ("+2 means I act two turns sooner"). When a bookkeeping rule and the believed sentence disagree, the bookkeeping is wrong. This is the first test every new resolution rule must pass.
+This repo holds four different kinds of canonical content, and they get confused easily because a real piece of content usually touches all four at once. Keeping them in separate files is what stops the confusion from becoming drift.
 
-The hierarchy beneath every subsystem: **fantasy** (what should the player feel happened?) → **invariant** (what must stay true for that fantasy to cohere?) → **mechanic** (the rules that enforce it) → **implementation** (lists, engines, visualizations). When building or reviewing, ask of any piece: what is the fantasy, what is the canonical state, what is merely derived, and what is only a visualization? Document the canonical layer; teach from the invariant, not from the picture.
+1. **Rule Definitions** — vocabulary. What something *is*. Canonical, precise, mechanical: keyword texts (`rules/card-glossary.md`), the HP/hand-size/initiative formulas (`rules/core-rules.md`), the attack-resolution procedure (`rules/combat.md`). A rule definition answers "what does this do," full stop. **Keyword definitions are not invariants** — Staggered's exact text lives in the glossary; this file never restates it.
+2. **Invariants** *(this file)* — constitutional. What must stay true across *every* implementation of a mechanic, not how any one implementation works. An invariant doesn't tell you the bookkeeping; it tells you the sentence the bookkeeping has to keep true. If you can point to a specific procedure and ask "why does it work this way," the invariant is the answer one level up from the procedure — the fantasy the procedure exists to protect.
+3. **Exemplars** (`agent-tools/exemplars.md`) — concrete implementations chosen *because* they demonstrate an invariant well. The Fencerow Shrike is an exemplar, not an invariant: its specific stats, cards, and terrain rules are Rule Definitions; what makes it worth reading is that its design demonstrates several invariants at once (deck expresses behavior, ecology drives mechanics, encounters teach through play). You don't copy an exemplar. You extract the principle and let the next creature be a completely different organism.
+4. **Heuristics** (`agent-tools/heuristics.md`) — operational. Not a truth about the world, a habit about the work: when to promote a pattern, when to escalate an architecture, when to flag instead of quietly resolve. Process, not canon.
+
+Why they blur: an exemplar is *assembled from* rule definitions and *chosen to illustrate* invariants — genuinely two layers braided into one file, by design, because that's what a full concrete example has to be. The layering only breaks down when a file that's supposed to hold ONE layer accidentally absorbs another's job — which is exactly what happened to this file before this section existed: it had quietly become a place to re-derive rule-definition bookkeeping (Initiative Shift's seat/count mechanics, restated almost verbatim from the glossary) and to resolve ambiguity inline, instead of only stating what must stay true. Fixed below; if this file starts doing that again, that's the bug to name.
+
+---
+
+**The prime invariant — mechanics exist to enforce the fantasy, not to break or subvert it.** When a bookkeeping rule and the fantasy it's supposed to protect disagree, the bookkeeping is wrong. This is the first test every new resolution rule must pass.
+
+Two worked examples of the *same* prime invariant, from two different subsystems — read them as illustrations of the pattern, not as what the prime invariant is *about*:
+
+- *Initiative Shift:* the fantasy is "+2 means I act two turns sooner." Seats, the marker, pass-overs, and bonus turns are bookkeeping that exists only to keep that sentence true — none of it is the invariant itself. See Standing Invariants below.
+- *Staggered:* the fantasy is being knocked off balance — caught mid-stumble, unable to set your feet in time to block. The mechanic (no defensive card on the next attack against you) exists to serve that fantasy, and it's *why* a rule-bender that lets an ally "catch" a staggered combatant, or that clears Staggered outright, has to reproduce the fantasy of someone steadying you — not just flip a flag back to false. (Full current mechanics: `rules/card-glossary.md`, Staggered.)
+
+The hierarchy beneath every subsystem: **fantasy** (what should the player feel happened?) → **invariant** (what must stay true for that fantasy to cohere?) → **mechanic** (the rule definition that enforces it) → **implementation** (lists, engines, visualizations). Document the canonical layer; teach from the invariant, not from the picture.
 
 It has two uses:
 
 - **Reviewing content** — `agent-tools/red-team.md`'s Invariant Violations pass checks a new mechanic against this list. Bending one of these must be intentional and named.
-- **Building rule-benders** — a card that changes how resolution works is a *rule modifier*: it declares which invariant it swaps and reverts on expiry, rather than adding a scattered one-off exception. (See the rule-modifier direction in `memory.md`: cards temporarily patch the engine; they are not permanent special cases.)
+- **Building rule-benders** — a card that changes how resolution works is a *rule modifier*: it declares which invariant it swaps and reverts on expiry, rather than adding a scattered one-off exception. Escalation path for the modifier system itself is a heuristic, not an invariant — see `agent-tools/heuristics.md`.
 
 The simulator (`combatsimulations/`) is the executable model of everything here. If this doc and the sim disagree, one of them is a bug.
 
 ---
 
-## The exchange — the resolution loop
+## Invariants of the resolution loop
 
-One attack resolves in a fixed order. Each step is an invariant; the cards that bend it are named beneath it.
+Each of these is a *what must stay true*, not a *how it's implemented*. The step-by-step procedure — Declare, blind reveal, RPS, apply outcome, the damage pipeline's exact order — is a Rule Definition and lives in `rules/combat.md` (Attack Resolution, Range, Positioning, Damage Pipeline). This file states only the invariant each step protects.
 
-1. **Declare.** The attacker plays exactly one card at one target. Its color becomes public history the instant it is played.
-   - Range gates legality: melee needs both combatants frontline; ranged needs not-both-frontline; "both" is always legal.
-
-2. **Blind, simultaneous selection.** The defender chooses at most one card to reveal *without seeing the attacker's card*. Reveals are simultaneous — the defender decides from public information only (revealed-color history, position), never the played card.
-   - *Constraint — Axiom:* a named color cannot be revealed — attack or block — on the next reveal.
-   - *Modifier — Intercept (team):* a standing ally reveals in the target's place, taking over this defense before RPS.
-   - A staggered, cannot-defend, or collapsed defender skips selection (attacker wins uncontested).
-
-3. **RPS resolution.** Blue beats Red beats Green beats Blue. Same color is a tie. No defense revealed means the attacker wins uncontested.
-   - *Modifier — Paradox:* inverts win/loss for an exchange it is part of (ties unaffected).
-
-4. **Apply the outcome.**
-   - **Attacker wins:** deal damage (stat + die + any pending bonus), then the attacker's Effect triggers.
-   - **Defender wins:** only the Defensive Bonus triggers; no damage.
-   - **Tie:** no damage. The attacker's Effect triggers first, then the Defensive Bonus — unless the Effect cancels it. An effect that only *amplifies damage* (exploding dice, "+X damage") does nothing on a tie; there is no damage to add to (`rules/core-rules.md`).
-
-5. **Damage pipeline — fixed order.** When *attack* damage is dealt it passes through this pipeline, and each step is itself an invariant:
-
-   redirect (Shared Burden) → volunteer shield (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → damage floor (Equal Footing) → apply to HP.
-
-   - A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse).
-   - **Unpreventable damage bypasses the whole pipeline.** Every step above is an *attack-damage* defense; Thorns, status damage, and HP costs are not attacks, so they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full.
-   - Thorns retaliates against a melee attacker after the hit lands (and is itself unpreventable).
+- **A reveal is private until it happens, public after.** Your pending choice is hidden from the attacker; your played colors are known history the instant they're played. Nothing breaks the blind — the defender chooses from public information only, never from the card actually in play. Reveal simultaneity is absolute.
+- **An effect that only amplifies damage needs damage to amplify.** Exploding dice, "+X damage," and similar have nothing to act on when an attack deals none — so they do nothing on a tie or a miss. Effects independent of damage (status, stat shifts, repositioning) trigger normally regardless of outcome. (Full outcome table: `rules/combat.md`, Attack Resolution.)
+- **Attack-damage defenses only defend against attacks.** Armour, Resist, damage floors, and redirects all exist to answer *an attack* — so none of them touch Thorns, status damage, or HP costs, which aren't attacks. Unpreventable damage isn't a special case bypassing the pipeline; it was never in the pipeline's jurisdiction to begin with. (Pipeline order: `rules/combat.md`, Damage Pipeline.)
+- **A single attack cannot end a standing combatant.** It clamps at 0 HP (Collapse); only damage taken *after* Collapse can push further. (Full Collapse/Death rules: `rules/combat.md`.)
 
 ---
 
@@ -49,18 +46,17 @@ One attack resolves in a fixed order. Each step is an invariant; the cards that 
 
 Not tied to a single exchange, but always in force.
 
-- **Initiative Shift ±X means exactly: the target's next turn arrives X turns sooner or later.** There are no rounds. Seats, the marker, pass-overs, and bonus turns are bookkeeping that enforces this sentence; when seat and count disagree, the count wins. The marker sits on a position, not a person; sliding (displacement from someone's cut-in) never changes anyone's count; Waiting sets your count to your chosen seat (the forfeited action is the payment). See `rules/card-glossary.md`, Initiative Shift X.
-- **The linear turn order is the canonical state.** Turns-until-action is *derived* from it (position − 1, with the current actor normalized to position 1), and the wheel is its *visualization* — circular only because turns repeat forever; it exists to make the one awkward property of a list (after the last actor, play continues with the first) easy to read. A shift is a list operation: remove the target, reinsert them X positions away, slide the intervening combatants one step to close the gap. The wheel updates because it is a picture of the list; the derived count is the table check ("how many turns away was I, how many am I now"). One state, three altitudes: the rules are linear, the wheel is circular, the count is arithmetic. Verified properties: the target's next turn moves by exactly X and the new seat persists; each of the X turn-slots passed nudges one turn the opposite way (including next-lap slots); everyone else keeps relative order untouched.
-- **Blocking costs a card.** Every defense spends a card from hand, and hand size (= Mind, minimum 2) *is* blocking capacity between your turns — nobody blocks for free. The floor of 2 means no one is ever reduced below act-plus-one-block; beyond that there is no cushion: a low-Mind combatant runs dry fast and must compensate through the rest of the system — Resist, card draw, ally support, equipment. That pressure is intended; it is what makes Mind a real stat and the support web load-bearing.
-- **Derived stats.** Body → max HP (`2 × Body + 9`, always by formula; only Body changes HP). Mind → hand size. Soul → initiative. Deck size → total stats (color counts = each stat); Strength = total stats. Changes apply live, in both directions.
-- **The deck reshuffles from discard.** When a deck runs out it is rebuilt from its discard pile — cards do not leave the game by default. (Consequence, not a rule: because decks are small and recycle constantly, deck-state manipulation like scry/surveil is near-neutral in combat, while read/tempo/timing effects move outcomes.)
-- **A reveal is private until it happens, public after.** Your pending choice is hidden; your played colors are known history. Nothing breaks the blind — reveal simultaneity is absolute.
+- **Initiative Shift ±X means exactly: the target's next turn arrives X turns sooner or later, and nothing else may vary.** The full seat/count/pass-over bookkeeping that keeps this sentence true under every edge case lives in `rules/card-glossary.md`, Initiative Shift X — that bookkeeping is a rule definition, not restated here. What's invariant is narrower and stricter than the bookkeeping: whatever the implementation, the target's count changes by exactly X and nothing about anyone else's relative order does.
+- **The linear turn order is the canonical state; the wheel is its visualization.** Turns-until-action is *derived* from a position in a list (position − 1, current actor normalized to position 1); the wheel is circular only because turns repeat forever, and exists to make one awkward list property (after the last actor, play continues with the first) easy to read at the table. A shift is a list operation — remove, reinsert X positions away, slide the gap closed. One state, three altitudes: the rules are linear, the wheel is circular, the count is arithmetic. This is the invariant a reimplementation has to preserve even if it throws out every other visualization.
+- **Blocking costs a card, and hand size at rest is exactly your blocking capacity between turns.** Nobody blocks for free; a stat floor exists so no one is ever reduced below act-plus-one-block, and beyond that floor there is no cushion — a low-Mind combatant must compensate through the rest of the system (Resist, draw, ally support, equipment), and that pressure is intended. (The actual hand-size formula: `rules/core-rules.md`, Stats.)
+- **Stat changes apply live, in both directions, the instant the stat changes.** Nothing about a combatant is fixed at creation — a drain or a boost immediately cascades to whatever it governs. (The formulas themselves — Body→HP, Mind→hand size, Soul→initiative, total stats→deck size and Strength: `rules/core-rules.md` and `rules/card-glossary.md`, Stat Change.)
+- **The deck reshuffles from discard; cards don't leave the game by default.** Because decks are small and recycle constantly, deck-state manipulation (scry, surveil) is near-neutral in combat, while read/tempo/timing effects are what actually move outcomes. This is a consequence of the invariant, not a separate rule.
 
 ---
 
 ## Current rule modifiers — the registry
 
-Every card that bends an invariant, the invariant it bends, and its lifetime. This is the seed of the future rule-modifier system (`memory.md`, architecture north star).
+Every card that bends an invariant, the invariant it bends, and its lifetime. This is the seed of the future rule-modifier system (`memory.md`, architecture north star; escalation heuristic in `agent-tools/heuristics.md`).
 
 | Modifier | Invariant bent | Lifetime |
 |---|---|---|
@@ -78,6 +74,4 @@ Every card that bends an invariant, the invariant it bends, and its lifetime. Th
 
 ## Adding a rule-bender
 
-Today each modifier is a per-combatant flag read inline at the one pipeline step it affects — the seam already exists. The agreed path (`memory.md`): flags → typed modifiers-with-lifetimes → policy stack. Promote a level only when adding the next bender as a flag has become painful.
-
-Until then, a new bender should: (1) name the invariant above that it changes, (2) set a flag with a clear expiry, (3) read that flag at exactly one pipeline step, (4) revert on expiry. If a mechanic can't be expressed that way — if it needs the engine to special-case resolution in more than one place — that is the signal it wants the policy-stack architecture, and a red flag worth raising before it ships.
+Name the invariant above that the new mechanic changes, set a flag with a clear expiry, read that flag at exactly one pipeline step, revert on expiry. If a mechanic can't be expressed that way, that's a signal worth raising before it ships — see `agent-tools/heuristics.md` for the escalation path.

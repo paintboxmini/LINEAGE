@@ -8,6 +8,7 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
 | `exemplars.md` | The compiled crib — read INSTEAD of full canon for routine generation; refresh at Sync when canon shifts |
+| `heuristics.md` | Operational habits — when to promote a pattern, escalate architecture, or flag instead of quietly resolving |
 | `inspiration-guide.md` | Content feels obvious, flat, or generic — find the right angle |
 | `encounter-generator.md` | Designing a new combat encounter |
 | `npc-encounter-generator.md` | Designing a non-combat NPC or roadside encounter |

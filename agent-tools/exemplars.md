@@ -1,6 +1,6 @@
 # Exemplars — the Compiled Crib
 
-A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. **Maintenance rule:** if an agent repeatedly retrieves examples to rediscover a pattern, promote that pattern into this file.
+This is the **Exemplars** layer (see `rules/invariants.md`'s header for the full four-layer map: Rule Definitions / Invariants / Exemplars / Heuristics). Everything below is a concrete implementation chosen because it demonstrates an invariant well — extract the principle, don't copy the specifics. A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. Maintenance heuristic for this file specifically: `agent-tools/heuristics.md`, Promote repeated retrieval.
 
 Read this + the target's location/bestiary file + anything your specific task actually touches. Go to the full canon files only when the task bends a rule, the crib looks stale, or you're checking a keyword's exact text.
 

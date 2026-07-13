@@ -133,6 +133,17 @@ Dependent systems (sim, print sheets, cross-references) do not rebuild on every 
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 
+## Four Kinds of Canonical Content
+
+Before asking *who may change this* (the Canon Gate, below), know *what kind of thing it is* — the repo holds four layers, deliberately kept in separate files so they can't quietly drift into each other:
+
+1. **Rule Definitions** — vocabulary. What something *is*, mechanically and precisely. Keyword texts (`rules/card-glossary.md`), formulas (`rules/core-rules.md`), procedures (`rules/combat.md`).
+2. **Invariants** (`rules/invariants.md`) — constitutional. What must stay true across *every* implementation, not how any one implementation works. Not vocabulary — the sentence the vocabulary exists to protect.
+3. **Exemplars** (`agent-tools/exemplars.md`) — concrete implementations chosen because they demonstrate invariants well. Extract the principle; don't copy the specifics. A creature can be a strong exemplar and still be nothing like the next one built from the same principles.
+4. **Heuristics** (`agent-tools/heuristics.md`) — operational habits about *how the work gets done*, not truths about the world: when to promote a pattern, when to escalate an architecture, when to flag rather than quietly resolve.
+
+They blur because a real piece of content usually touches more than one at once — that's expected. The bug is a *file* absorbing another layer's job (rule-definition bookkeeping quietly re-derived inside `invariants.md`, for instance) rather than staying narrow and pointing outward. See `rules/invariants.md`'s header for the fuller version of this map and a worked account of that exact bug being caught and fixed.
+
 ## The Canon Gate — Authority Levels
 
 Placement is a question of jurisdiction, not magnitude: *who is allowed to commit this kind of change?* A level-1 creature can be the best thing in the set; a level-3 wording tweak can be four words.
