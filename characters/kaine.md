@@ -48,7 +48,8 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 ## Stat Block
 
-**Mind 4 / Body 2 / Soul 4 — HP 12**
+**Mind 4 / Body 2 / Soul 4 — HP 13**
+**Strength:** 10
 
 **Passive — The Loop (3/combat):** Instead of a normal card play, Kaine fires the Lightning Loop. Choose one target — that creature takes d6 damage. Roll a d6: on 1–2, lightning arcs to another creature in the same position for d4. Kaine chooses which creature the arc hits. While below half HP, the arc target is chosen randomly.
 

@@ -4,7 +4,8 @@
 
 **Cards:** `cards/briarwatch-jackrabbit.md`
 
-**Mind 1 / Body 1 / Soul 3 — HP 6**
+**Mind 1 / Body 1 / Soul 3 — HP 11**
+**Strength:** 5
 
 ---
 

@@ -6,7 +6,8 @@ Taller than a human by a full head. Pale — the color of stone that has never s
 
 It is not hunting. It is navigating. It has been navigating for a very long time. The distinction between those two things depends entirely on whether the party keeps their hand on the wall.
 
-**Mind 3 / Body 4 / Soul 4 — HP 18**
+**Mind 3 / Body 4 / Soul 4 — HP 17**
+**Strength:** 11
 
 **Passive — Wall-Sense:** The Wall-Reader cannot be Blinded. It is always aware of the position and movement of any creature in contact with the walls of its current passage. Darkness, the Silent Room's silence, and Obscure do not affect it.
 

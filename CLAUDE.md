@@ -59,14 +59,16 @@ Range: [Melee / Ranged / Both]
 
 ```
 **Mind X / Body X / Soul X — HP X**
-**Difficulty:** Early / Mid / Late
+**Strength:** N
 ```
 
-- **Early** — one lesson taught through play: a simple behavioral loop, a 3-card signature kit, few keywords. Stats 1–3, HP 6–9 (below formula, for fiction). Often disengages rather than dies.
-- **Mid** — a defining passive plus interacting cards; positioning and deck texture matter. Stats up to 5, HP at formula (~15–18). Named individuals live here.
-- **Late** — multiple passives or phases, arena-level pressure, full card synergy. (No promoted anchor yet — calibrate against Root Heart / Tithe Engine.)
+Three formal rules, uniform for every combatant (players included — the trifecta spreads already obey them):
 
-If difficulty is not specified, ask before building.
+- **HP = (2 × Body) + 9.** Always by formula — no bespoke HP. A creature that should be tougher gets more Body, not an exception.
+- **Deck size = total stats**, with each color's count equal to its stat (a 1/2/3 creature runs 1 Blue / 2 Red / 3 Green — signature cards count toward their color).
+- **Strength = total stats.** This replaces the Early/Mid/Late tiers as the difficulty scale — precise, comparable, and self-documenting against the player baseline of 9. (Future goal: compute per-card action-economy advantage and fold it into the ranking.)
+
+If target Strength is not specified in a brief, ask before building.
 
 ### Bestiary Files
 

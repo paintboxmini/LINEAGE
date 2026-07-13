@@ -19,7 +19,7 @@ A stretch of stone fence where the bramble grows through the gaps — and the br
 
 **Positioning:** the fencerow side of the field is Backline for the Shrikes — perched, out of melee reach. The road is the party's ground.
 
-**Enemies:** 2 Fencerow Shrikes (`bestiary/fencerow-shrike.md`), cycles staggered — one perches while the other dives. Decks: 3 signature cards + STRIKE, PUSH (red), PHASE LOGIC (blue), PATIENCE, FLOW, SHADE AWAY (green) — 9 cards.
+**Enemies:** 2 Fencerow Shrikes (`bestiary/fencerow-shrike.md`), cycles staggered — one perches while the other dives. Decks (size = total stats, 6: 1B/2R/3G): 3 signature cards + STRIKE (red), FLOW and SHADE AWAY (green).
 
 ---
 

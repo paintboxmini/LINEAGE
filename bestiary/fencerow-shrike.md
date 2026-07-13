@@ -4,8 +4,8 @@
 
 **Cards:** `cards/fencerow-shrike.md`
 
-**Mind 1 / Body 2 / Soul 3 — HP 8**
-**Difficulty:** Early
+**Mind 1 / Body 2 / Soul 3 — HP 13**
+**Strength:** 6
 
 ---
 

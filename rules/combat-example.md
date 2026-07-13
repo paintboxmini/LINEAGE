@@ -22,7 +22,7 @@ STRIKE, DEAD HEAT, BRACE, PULL / PROFILE, CALCULATE, DISTRACT / FLOW, MOCKERY
 
 ### The Enemies
 
-**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 9** — hand size **2** *(Mind 1, floored at the minimum of 2)*
+**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 11** *(2 × Body + 9)* — hand size **2** *(Mind 1, floored at the minimum of 2)*
 Each runs its own copy of the same 7-card deck (3 signature + 4 core, per the enemy deck convention):
 RAKING CUT, SKITTER AWAY, NIP AND TEAR *(signature — `cards/briar-scratcher.md`)* + DART (R), STILLNESS (B), SHADE AWAY (G), FLOW (G)
 
@@ -113,7 +113,7 @@ Draws to 3 → draws 2 from his 6-card deck: ENDURE and the **WOUND**. Hand: REF
 
 The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 2-card hand, and it stays that way until he pays to fix it. That's the whole Scratcher lesson, two turns after the claw landed.
 
-**Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 9 → 4. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
+**Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 11 → 6. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
 
 Note what Frost could *not* do: his REFRACT (Ranged) is unplayable as an attack against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target. In melee it's only good to him as a defense reveal.
 
@@ -121,7 +121,7 @@ End of turn: the **WOUND stays in hand** — it isn't going anywhere until Frost
 
 ### Scratcher A's turn
 
-Hand empty → draws 2: DART, SHADE AWAY. A is at 4 HP and has been cut once — it wants one more mark before it leaves.
+Hand empty → draws 2: DART, SHADE AWAY. A is at 6 HP and has been cut once — it wants one more mark before it leaves.
 
 **Action:** A attacks Frost with **SHADE AWAY** (Green, Soul + d2, Melee — legal). Frost defends with **REFRACT** (Blue), predicting another Red claw. **Green beats Blue — attacker wins.**
 
@@ -174,8 +174,8 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 |---|----|-----------|
 | Frost | 9 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest) |
 | Steele | 17 / 17 | Clean — Dead Heat's tie denial dodged the only Wound aimed at him |
-| Scratcher A | 4 / 9 | Gone |
-| Scratcher B | 9 / 9 | Gone — never took a hit |
+| Scratcher A | 6 / 11 | Gone |
+| Scratcher B | 11 / 11 | Gone — never took a hit |
 
 Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole action on it or takes a short rest. It rides in his deck into Briarwatch and the Hollow below it, surfacing into his hand to eat a slot every time it's drawn (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
 
