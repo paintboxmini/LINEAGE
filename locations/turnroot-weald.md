@@ -29,6 +29,7 @@ Notable species:
 - **Echothorn Vine** — the vine of the Thorne Throne. Seeds resonate with a faint echo when shaken. Ground into dust and mixed with reagents, they amplify spells and incantations.
 - **Luminova Leaves** — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
 - **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `quests/turnroot-weald-adventure.md` for full stat block.
+- **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing.md`.
 
 ## Geography
 

@@ -44,12 +44,13 @@ If a player Waits to reposition behind the dive — reward it visibly: the unopp
 
 Kill the Shrikes, wound both to 4 HP or less, or simply leave the field. The Shrikes never pursue past the fight — territorial, not cowardly: a body this size is already past what they can haul back to the larder from any farther out, and Backline (their own firing range) is already the outer edge of that math. Walking away is a complete, legitimate end to this encounter.
 
-**The larder:** whatever the fence is holding. A season of small thefts — coins, a buckle, a hand mirror, wet wool. And one thing that should not be on a fence in the Briarwoods — GM's choice, from whatever thread the table is carrying.
+**The larder:** whatever the fence is holding. A season of small thefts — coins, a buckle, a hand mirror, wet wool. And, if the GM wants it, one thing that should not be on a fence in the Briarwoods at all: a Skeinwing (`bestiary/skeinwing.md`) — a wingspan too wide for the wire, a membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive; that's the point. Swap in whatever thread the table is carrying instead if this doesn't fit.
 
 ---
 
 ## Related Documents
 
 - `bestiary/fencerow-shrike.md`, `cards/fencerow-shrike.md`
+- `bestiary/skeinwing.md` — the rare, recommended contents of the larder
 - `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory; the GM Secret in the bestiary file covers what the town doesn't know
 - `rules/combat.md` — Turn Structure, the Wait action

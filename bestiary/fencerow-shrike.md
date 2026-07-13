@@ -94,6 +94,7 @@ At Strength 9 — even with the party, not below it — two Shrikes are a genuin
 ## Related Documents
 
 - `quests/the-larder-fence.md` — the full encounter
+- `bestiary/skeinwing.md` — not prey, never hunted; the rare, impossible thing the larder sometimes holds by accident
 - `locations/briarwoods.md`, `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory
 - `factions/the-masons.md` — Known Works; the GM Secret above
 - `rules/combat.md` — the Wait action this creature teaches
