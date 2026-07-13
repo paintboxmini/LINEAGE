@@ -1,6 +1,6 @@
 # The Larder Fence
 
-*Standalone road encounter, Briarwoods or the Briarwatch field margins. Strength 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
+*Standalone encounter at Briarwatch's outer perimeter, well past the last field — the town keeps its farmland and its livestock back from the Turnroot border on purpose. Strength 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
 
 ---
 
@@ -16,7 +16,7 @@ Teach players to fight the **turn order**, not the target:
 
 ## Setup
 
-This is not a farmer's fence. It runs taller than a person, stone-cored under decades of bramble nobody cut back, and the thorns on it are wrong-sized — some as long as a finger, hooked back like fishhooks, built to *hold* what they catch rather than just cut it. Hung along it: voles, a hare, something with a collar. All of it placed, spaced, drying. Describe the barbs before the bird — two fenceposts up, a pale shrike the size of a dog tilts its head at the road, and it is the smallest dangerous thing here.
+There is no farm out this far, and no fence a farmer built. Briarwatch keeps its fields and its livestock well back from the Turnroot border — this stretch is past all of that. What stands here runs taller than a person, stone-cored under decades of bramble nobody cut back, and the thorns on it are wrong-sized — some as long as a finger, hooked back like fishhooks, built to *hold* what they catch rather than just cut it. Hung along it: voles, a hare, something with a collar — small things, prey nobody would notice going missing. All of it placed, spaced, drying. Describe the barbs before the bird — two fenceposts up, a pale shrike the size of a dog tilts its head at the road, and it is the smallest dangerous thing here.
 
 **Positioning:** the fence is two zones wearing one name. The wire and bramble strung between the posts — barbed, where the larder hangs — is the **Frontline**: the ground the dive lands on, the ground a grounded Shrike stands on. The tall stone corner **posts** are the **Backline** — clean, structurally part of the same fence, nothing like the wire. Backline means what it always means, ranged distance, nothing more; the Shrike is genuinely perched (the card name means it literally), just up on the post instead of down in the thorns. Melee and the usual range rules apply exactly as normal.
 
@@ -51,5 +51,5 @@ Kill the Shrikes, wound both to 4 HP or less, or simply leave the field. The Shr
 ## Related Documents
 
 - `bestiary/fencerow-shrike.md`, `cards/fencerow-shrike.md`
-- `locations/briarwatch.md` — the missing-livestock notice at the Warden Post points here
+- `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory; the GM Secret in the bestiary file covers what the town doesn't know
 - `rules/combat.md` — Turn Structure, the Wait action

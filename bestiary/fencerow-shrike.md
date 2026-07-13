@@ -1,6 +1,6 @@
 # Fencerow Shrike
 
-*Road encounter in the Briarwoods and the Briarwatch fields. Teaches turn-order reading — strike windows, sequencing, and the Wait action. Pairs with the missing-livestock notice at the Warden Post.*
+*Road encounter at Briarwatch's outer perimeter — the town's boundary against Turnroot Weald, well past any farmland. Teaches turn-order reading — strike windows, sequencing, and the Wait action.*
 
 **Cards:** `cards/fencerow-shrike.md`
 
@@ -15,9 +15,9 @@
 
 A shrike the size of a dog, colored like wet fencepost. It perches on the stone fencerows with its head tilted at road traffic, the way all shrikes do. The bird is not the thing to look at. The fence is.
 
-A larder fence runs taller than a person and thicker than any hedge a farmer meant to plant — stone core buried under decades of bramble nobody cut back, grown past anything that ever needed to hold sheep in. The thorns on it are wrong-sized: some as long as a finger, hooked back on themselves like a fishhook, built to *hold* what they catch rather than just open it. Whether the Weald's growth or generations of shrikes tending the same wire made them that size, nobody in Briarwatch will say for certain out loud. Both answers are the kind you only ask once.
+This is not a farmer's fence, and there is no farm out this far — Briarwatch keeps its fields and its livestock well back from the Turnroot border, and everyone there knows better than to graze anything close to it. What stands here instead is taller than a person and thicker than any hedge, stone core buried under decades of bramble nobody cut back. The thorns on it are wrong-sized: some as long as a finger, hooked back on themselves like a fishhook, built to *hold* what they catch rather than just open it. Whether the Weald grew them or something tended them into shape, nobody in Briarwatch will say for certain out loud. Both answers are the kind you only ask once.
 
-Impaled along it: voles, a hare, something with a collar. All of it placed, spaced, drying — the larder, and the reason the bird keeps coming back.
+Impaled along it: voles, a hare, something with a collar — small things, the kind of prey that wanders this far without anyone missing it. All of it placed, spaced, drying — the larder, and the reason the bird keeps coming back.
 
 The fence is two things wearing one name. The wire and bramble between the posts is where the barbs are, where the larder hangs, where the Shrike strikes and stalls. The posts themselves — squared stone, taller than the wire, corner-set every so many yards — are clean. That's where it watches from.
 
@@ -25,7 +25,15 @@ The fence is two things wearing one name. The wire and bramble between the posts
 
 ## GM Secret — Not Player-Facing
 
-The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to the town it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works. Nothing in this file's player-facing text (Appearance, the folk speculation above) should say so; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
+The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both as a plain stone perimeter to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to the town it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works.
+
+The oversized thorns are not the Masons' work and not the Weald's either, not directly — **the Shrikes did this.** Their stretch of the plain stone perimeter has been adapted, generation over generation, with thorn-brush pulled in from the Weald itself and worked into the wire until it grew into what it is now. Nobody built this larder fence on purpose. The birds did, slowly, out of material that was never supposed to cross the line the fence exists to hold.
+
+**The livestock reports at the Warden Post are unrelated.** Briarwatch doesn't graze anything within reach of the Turnroot border — the farmers know better — so whatever is taking livestock from the north field, it isn't this. Don't let a table connect the two without a reason to.
+
+Nothing in this file's player-facing text (Appearance, the folk speculation above) should say any of this outright; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
+
+*Unforced GM thread, not asserted:* a fence meant to keep the Weald out now has actual Weald-thorn woven into it, by ordinary animal behavior nobody's tracking. Whether that means anything is an open question, not a fact.
 
 ---
 
@@ -77,7 +85,7 @@ This is encounter-specific terrain language, not a global keyword — it isn't i
 
 ## Tactical Purpose
 
-The flagship Briarwoods encounter — a real fight, not just a lesson. The Shrike makes turn order visible (its whole threat and its whole weakness live in *when*, not *what*), previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them), and the fence adds a third, physical axis: positioning has teeth here, literally, and a smart party can turn the Shrike's own wall against it.
+The flagship Briarwoods encounter — a real fight, not just a lesson. The Shrike makes turn order visible (its whole threat and its whole weakness live in *when*, not *what*), previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them), and the fence adds a third, physical axis: positioning has teeth here, literally, and a smart party can turn the Shrike's own wall against it. Play the setting for what it is, even if the party never learns it: this is the town's actual edge, the last built thing before the Weald, and something has quietly made a piece of that boundary its own.
 
 At Strength 9 — even with the party, not below it — two Shrikes are a genuine fight, not a teaching mob. Run them with that weight.
 
@@ -86,6 +94,7 @@ At Strength 9 — even with the party, not below it — two Shrikes are a genuin
 ## Related Documents
 
 - `quests/the-larder-fence.md` — the full encounter
-- `locations/briarwoods.md`, `locations/briarwatch.md` — territory
+- `locations/briarwoods.md`, `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory
+- `factions/the-masons.md` — Known Works; the GM Secret above
 - `rules/combat.md` — the Wait action this creature teaches
 - `rules/card-glossary.md` — Exile (Thorn Larder), Unpreventable (the barbs)
