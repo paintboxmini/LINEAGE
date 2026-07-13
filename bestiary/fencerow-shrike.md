@@ -21,6 +21,14 @@ Impaled along it: voles, a hare, something with a collar. All of it placed, spac
 
 ---
 
+## GM Secret — Not Player-Facing
+
+The fence was not raised by farmers. It was built by the Masons (`factions/the-masons.md`) — reinforced, deliberate, meant to hold a line, not livestock — and Briarwatch has maintained it ever since, generation after generation, without knowing why it started or who first asked them to. To the town it is just the old larder fence, mended out of habit. Nothing in this file's player-facing text (Appearance, the folk speculation above) should say so; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
+
+*Unconfirmed, GM's option to connect:* Briarwatch's watchtower ruins predate the town and nobody knows why the border was there either (`locations/briarwatch.md`). Whether this fence and that older boundary are the same Mason project is not established — a thread to pull if it's useful, not a fact to assert.
+
+---
+
 ## Behavior
 
 It is not aggressive. It is *punctual.* It watches the road, picks its moment, dives once, and returns to the wire with something that used to be yours. It does not fight things head-on because nothing that hunts by rhythm needs to.
@@ -46,9 +54,20 @@ The lesson is the window. Players who swing at a perched Shrike hit Evade and wa
 
 ## The Fence Itself
 
-The fence is not scenery — it is oversized on purpose, and the encounter should say so before a single card is played. Describe the barbs before the bird: hooked, finger-thick, some already dark with old use. The fence stands on the Backline (see Setup). Anyone — player or Shrike — **forced into the Backline** against their will (Push, or any effect that moves a target to Backline without them choosing it) catches a barb: **1 unpreventable damage**, no roll, no defense. It is terrain, not an attack; nothing stops it (`rules/card-glossary.md`, Unpreventable). Pull and Rushdown move the other way, toward the road, and never trigger it.
+The fence is not scenery — it is oversized on purpose, and the encounter should say so before a single card is played. Describe the barbs before the bird: hooked, finger-thick, some already dark with old use.
 
-*Voluntary* movement onto the fence line is safe — the barbs catch what's thrown at them, not what walks in carefully. A Shrike perching (Watchful Perch) never hooks itself. A player Pushing a grounded Shrike back onto its own wall does.
+**The fence occupies the Frontline.** That is the ground the dive lands on and the ground the Shrike is grounded on — Combat Behavior above already plays this way (Perched = Backline, dive = Frontline). Backline here is off the wire entirely: flying, watching, safe.
+
+**Getting Barbed.** A combatant moved onto the fence (to Frontline) by an effect they did not choose to play themselves — Rushdown, Pull's Effect on them, Pull's Defensive Bonus dragging an attacker in — is hooked: **1 unpreventable damage**, immediately, no roll (`rules/card-glossary.md`, Unpreventable — terrain, not an attack, nothing mitigates it). Moving there under your own power — Impaling Dive, Watchful Perch, Move Position, Flow, Dart, anything self-directed — never hooks you. The Shrike built its life on this fence; it never catches itself.
+
+**While Barbed, the hook doesn't let go on its own:**
+- Every attack you make tears it: 1 unpreventable damage.
+- Every successful block tears it: 1 unpreventable damage.
+- Freeing yourself tears it once more — 1 unpreventable damage, whether you leave Frontline (chosen or forced, it doesn't matter once you're already caught) or spend your action working the barb loose while staying put. Either way, you're no longer Barbed the instant you're free.
+
+This is encounter-specific terrain language, not a global keyword — it isn't in `rules/card-glossary.md` and shouldn't be assumed to apply anywhere else without a fresh ruling.
+
+**The turn against the Shrike itself:** force a perched Shrike onto its own fence — a Rushdown at a time of your choosing, not its own dive — and for once, the wire belongs to the party.
 
 ---
 

@@ -19,3 +19,9 @@ Mason lodges are built into the mountains. Members are organized around craft an
 ## Relationship to Other Factions
 
 The Masons and the People of Promise represent opposing orientations toward the same phenomenon. The Masons see the Unheld as a threat to be contained. The People of Promise see it as potential to be embraced. They are not openly at war. They are not allies.
+
+## Known Works (partial, GM-only)
+
+Not for player disclosure — the faction's existence isn't public, and neither is its footprint.
+
+- **The larder fence, Briarwatch** — a reinforced boundary fence, built for reasons unrecorded; Briarwatch's farmers have maintained it for generations without knowing why it started. See `bestiary/fencerow-shrike.md`, GM Secret.

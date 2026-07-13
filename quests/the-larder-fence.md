@@ -18,9 +18,9 @@ Teach players to fight the **turn order**, not the target:
 
 This is not a farmer's fence. It runs taller than a person, stone-cored under decades of bramble nobody cut back, and the thorns on it are wrong-sized — some as long as a finger, hooked back like fishhooks, built to *hold* what they catch rather than just cut it. Hung along it: voles, a hare, something with a collar. All of it placed, spaced, drying. Describe the barbs before the bird — two fenceposts up, a pale shrike the size of a dog tilts its head at the road, and it is the smallest dangerous thing here.
 
-**Positioning:** the fencerow side of the field is Backline for the Shrikes — perched, out of melee reach. The road is the party's ground.
+**Positioning:** the fence itself is the Frontline — the ground the dive lands on and the ground a grounded Shrike stands on. Backline is off the wire entirely: perched, flying, safe. Melee and the usual range rules apply exactly as normal; the fence is *where* Frontline happens to be, not a new zone.
 
-**The barbs:** the fence is the Backline. Anyone — player or Shrike — **forced into the Backline** against their will (Push, or any effect that moves a target there without them choosing it) takes **1 unpreventable damage**, no roll. Pull and Rushdown move the other way and never trigger it. Walking onto the fence on purpose is safe; getting thrown into it is not. See `bestiary/fencerow-shrike.md`, The Fence Itself.
+**The barbs (Barbed status):** anyone — player or Shrike — moved onto the fence (to Frontline) by an effect they didn't choose themselves (Rushdown, Pull) is **Barbed**: 1 unpreventable damage on the hook, then 1 more every attack they make, 1 more every successful block, and 1 more when they finally get free (leaving Frontline or working the barb loose in place). Moving there under your own power never hooks you. Full rule: `bestiary/fencerow-shrike.md`, The Fence Itself.
 
 **Enemies:** 2 Fencerow Shrikes (`bestiary/fencerow-shrike.md`, Mind 2/Body 3/Soul 4, HP 15, Strength 9), cycles staggered — one perches while the other dives. Full deck each (9 — 2B/3R/4G): IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*.
 
@@ -34,7 +34,7 @@ Let the first dive hurt. Let the first swing at a *perched* Shrike waste itself 
 
 If a player Waits to reposition behind the dive — reward it visibly: the unopposed hit lands like a dropped anvil.
 
-**The barbs cut both ways, and a sharp table will notice:** a grounded Shrike (mid-window, Frontline) is one Push away from its own wall. A player with a Push effect can send it straight back onto the barbs it perches on every other turn. Don't point this out — let someone try it once and feel clever.
+**The barbs cut both ways, and a sharp table will notice:** a perched Shrike is one Rushdown away from its own fence, on the party's timing instead of its own. Barbed, it bleeds on every attack and every block it makes from there — the rhythm that was working for it starts working against it. Don't point this out — let someone try it once and feel clever.
 
 ---
 
