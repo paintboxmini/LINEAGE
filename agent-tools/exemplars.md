@@ -13,7 +13,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - RPS: Blue beats Red beats Green beats Blue. Tie = no damage; attacker's Effect fires first, then Defensive Bonus (damage-amplifying effects do nothing on a tie).
 - Reveals are simultaneous and blind. Defending is a prediction, not a reaction.
 - **Hand size = Mind, minimum 2.** Blocking spends a card; hand is blocking capacity between turns.
-- HP = (2 × Body) + 9, always — no bespoke HP; tougher creature = more Body. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Strength = total stats** — the difficulty scale; player baseline is 9.
+- HP = (2 × Body) + 9 is the baseline every generator offers; bosses may go bespoke, marked explicitly. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Strength = total stats** — the difficulty scale; player baseline is 9.
 - Positions: Frontline / Backline. Melee needs both frontline; ranged needs not-both-frontline; "Both" always legal.
 - Initiative: continuous wheel, no rounds. Shift ±X = next turn moves exactly X. **Wait** = forfeit action, choose a later seat (the party's sequencing tool).
 - Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
