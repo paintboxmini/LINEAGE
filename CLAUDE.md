@@ -28,7 +28,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `combatsimulations/` | PvP duel simulator — a design instrument for surfacing rules gaps and balance findings, not canon. Python; no game content lives here |
 | `testcampaigndecks/` | This campaign's decks only — player decks (by character name), the Oracle pool, campaign-specific NPCs. General NPC/monster decks are not stored here; they're assembled per the enemy deck convention in `rules/cards.md` |
 | `playtesting/` | Playtest notes, feedback, and session logs |
-| `archives/` | Reserved for deprecated canon content. Currently unused — cut draft cards live in `experimental/archives/` instead |
+| `archives/` | Reserved for deprecated canon content and retired process notes. Cut draft cards live in `experimental/archives/` instead |
 
 ## File Format Conventions
 

@@ -70,9 +70,26 @@ any other.
 
 ---
 
+## Unplaced Genes
+
+Rule 3 above assumes every strong gene finds a home. If one genuinely can't — no
+compatible survivor exists this pass — log it here rather than deleting it, in the
+same spirit as `experimental/archives/cut-cards.md` but for fragments, not whole
+cards:
+
+- **Source card:** [name] — **Gene:** [the specific mechanic/name/flavor line] —
+  **Why unplaced:** [one line] — **Logged:** [date/session]
+
+Check here before starting a new compression pass — an old orphaned gene may fit
+a card that didn't exist last time.
+
+---
+
 ## What to check against
 
 - Lineage / tag philosophy: `world/lineage.md`, `CLAUDE.md` (card format)
 - Existing cards: `cards/`
 - Keyword definitions: `rules/card-glossary.md`
-- Whether a mechanic actually matters: `combatsimulations/`
+- Whether a mechanic actually matters: reason it out by hand against
+  `agent-tools/red-team.md`'s Mechanical Relevance and Mechanical Identity checks —
+  the simulator is a rough prototype, not a tool for making design decisions

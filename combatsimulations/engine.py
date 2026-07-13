@@ -374,27 +374,31 @@ class Duel:
     # --- one attack action ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
-        attacker.discard.append(card)
-        attacker.last_color = card.color
         attacker._attacked_this = True             # for PATIENCE
-        attacker.attack_history[card.color] += 1  # revealed = public info
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
-        self._say(f"{attacker.name} plays {card.name} ({card.color})")
 
-        # Evade resolves before the defender selects a card.
+        # Evade resolves before the defender selects a card. It only reads
+        # `defender.evade` (a token count), never the card's color, so it is
+        # unaffected by when the reveal fields below get set.
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
+                self._say(f"{attacker.name} plays {card.name} ({card.color})")
                 self._say(f"  {defender.name} EVADES — attack misses")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1  # revealed = public info
                 defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
         # Defender chooses a defense BLIND — reveals are simultaneous, so the
-        # policy never sees `card`. It decides from public info only (the
-        # attacker's revealed-color history, position, etc.).
+        # policy never sees `card`, nor any trace of it: attacker.discard /
+        # last_color / attack_history are NOT mutated until after this call
+        # returns. A "blind prediction" policy can therefore only ever read
+        # history from the attacker's PRIOR attacks, never the current one.
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             def_card = defender.policy.choose_defense(self, defender, attacker)
@@ -408,6 +412,15 @@ class Duel:
                     def_card = None
         # Staggered persists — no auto-clear here. Cleared only by the affected
         # character (or an ally) spending an action to recover (rules/card-glossary.md).
+
+        # Reveal: both cards flip face-up "simultaneously," in code terms right
+        # here, immediately before anything looks at them. The attacker's card
+        # lands in discard now (before RPS/outcome application), so effects
+        # like FORGET that read `foe.discard` after RPS resolves still see it.
+        attacker.discard.append(card)
+        attacker.last_color = card.color
+        attacker.attack_history[card.color] += 1  # revealed = public info
+        self._say(f"{attacker.name} plays {card.name} ({card.color})")
 
         if def_card is None:
             # no defense -> attacker auto-wins (full win)

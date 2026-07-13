@@ -139,9 +139,6 @@ class Battle:
     # --- one attack, at a chosen target ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
-        attacker.discard.append(card)
-        attacker.last_color = card.color
-        attacker.attack_history[card.color] += 1
         attacker._attacked_this = True
         attacker._last_hit = 0
         # Intercept: a standing ally steps in to defend in the target's place
@@ -151,12 +148,18 @@ class Battle:
                 self._say(f"  INTERCEPT: {g.name} defends for {defender.name}")
                 defender = g
                 break
-        self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
 
+        # Evade resolves before the defender selects a card. It only reads
+        # `defender.evade` (a token count), never the card's color, so it is
+        # unaffected by when the reveal fields below get set.
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
+                self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1
                 defender._damage_floor = None
                 return
 
@@ -167,6 +170,13 @@ class Battle:
                 def_card = None
         # Staggered persists — no auto-clear. Cleared only by the affected
         # character (or an ally) spending an action to recover (rules/card-glossary.md).
+
+        # Reveal: both cards flip face-up "simultaneously," in code terms right
+        # here, before anything (including FORGET, later) looks at them.
+        attacker.discard.append(card)
+        attacker.last_color = card.color
+        attacker.attack_history[card.color] += 1
+        self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
 
         if def_card is None:
             self._resolve_attacker_win(attacker, defender, card)
