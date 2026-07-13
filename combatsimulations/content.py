@@ -504,7 +504,7 @@ def _profile_effect(engine, me, foe):
     if c:
         me.hand.append(c)
 def _profile_defense(engine, me, foe):
-    foe.staggered = True                   # attacker can't defend the next hit
+    foe.staggered = True                   # persists: no attack or defend until they recover (or an ally does)
 
 def _refract_effect(engine, me, foe):
     foe.next_attack_bonus -= 3             # defender's next attack deals -3

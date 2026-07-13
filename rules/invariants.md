@@ -18,7 +18,7 @@ Why they blur: an exemplar is *assembled from* rule definitions and *chosen to i
 Two worked examples of the *same* prime invariant, from two different subsystems — read them as illustrations of the pattern, not as what the prime invariant is *about*:
 
 - *Initiative Shift:* the fantasy is "+2 means I act two turns sooner." Seats, the marker, pass-overs, and bonus turns are bookkeeping that exists only to keep that sentence true — none of it is the invariant itself. See Standing Invariants below.
-- *Staggered:* the fantasy is being knocked off balance — caught mid-stumble, unable to set your feet in time to block. The mechanic (no defensive card on the next attack against you) exists to serve that fantasy, and it's *why* a rule-bender that lets an ally "catch" a staggered combatant, or that clears Staggered outright, has to reproduce the fantasy of someone steadying you — not just flip a flag back to false. (Full current mechanics: `rules/card-glossary.md`, Staggered.)
+- *Staggered:* the fantasy is being knocked off balance — caught mid-stumble, unable to fight or brace until you steady yourself. The mechanic (no attacking, no defending, until the affected character or an ally spends an action to recover) exists to serve that fantasy, and it's *why* recovery costs a real action instead of just expiring on a timer: the fantasy is that someone has to actually catch their footing, or be caught by someone else. (Full current mechanics: `rules/card-glossary.md`, Staggered.)
 
 The hierarchy beneath every subsystem: **fantasy** (what should the player feel happened?) → **invariant** (what must stay true for that fantasy to cohere?) → **mechanic** (the rule definition that enforces it) → **implementation** (lists, engines, visualizations). Document the canonical layer; teach from the invariant, not from the picture.
 
@@ -63,7 +63,7 @@ Every card that bends an invariant, the invariant it bends, and its lifetime. Th
 | Axiom | selection legality (color ban) | next reveal |
 | Paradox | RPS resolution (inverts) | the exchange |
 | Interrupt | defender may act (cannot-defend) | until your next turn |
-| Stagger | defender may act (skips block) | next attack |
+| Stagger | may attack, may defend | until recovered (self or ally action) |
 | Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | wheel position | immediate |
 | Armour / Resist | damage pipeline (reduction) | per hit / next hit |

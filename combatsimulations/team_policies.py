@@ -42,13 +42,19 @@ class TeamTactician(ScryMixin):
         return min(foes, key=lambda e: (e.hp, e.max_hp))
 
     def choose_action(self, battle, me):
+        if me.staggered:
+            return ('recover_stagger',)          # can't attack or defend until this clears
+        allies = battle.allies(me)
+        staggered_ally = next((a for a in allies if a.staggered), None)
         target = self._pick_target(battle, me)
         if target is not None:
             atks = legal_attacks_team(battle, me, target)
             if atks:
                 # value = damage + a nudge for effects that matter in teams
                 return ('attack', max(atks, key=lambda c: self._value(battle, me, target, c)), target)
-        # no legal attack: clear a Wound if stuck, else reposition
+        # no legal attack: help a staggered ally before clearing a Wound or moving
+        if staggered_ally is not None:
+            return ('assist_stagger', staggered_ally)
         if any(c.is_status and c.name == 'WOUND' for c in me.hand):
             return ('discard_wound',)
         if me.hand:

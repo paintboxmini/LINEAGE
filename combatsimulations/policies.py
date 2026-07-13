@@ -86,17 +86,22 @@ class ScryMixin:
 
 
 def legal_attacks(engine, me, foe):
+    if me.staggered:
+        return []  # Staggered: cannot attack (or defend) until recovered
     if me.must_target_frontline and foe.position != 'frontline':
         return []  # Partition: no legal frontline target
     return [c for c in me.hand if not c.is_status and can_attack(me, foe, c)]
 
 
-def clear_wound_if_idle(engine, me, foe):
-    """Wounds persist now (no auto-discard), so a stuck turn is best spent
-    clearing one. Only do it when there's no attack to make — never trade a real
-    action for it in a fast duel."""
-    if any(c.is_status and c.name == 'WOUND' for c in me.hand) \
-            and not legal_attacks(engine, me, foe):
+def idle_recovery(engine, me, foe):
+    """What to do with a forced-idle turn (no legal attack), in priority order:
+    recover from Staggered first (you can't act at all until you do), then clear
+    a Wound if one's stuck in hand. Never trade a real attacking turn for either."""
+    if legal_attacks(engine, me, foe):
+        return None
+    if me.staggered:
+        return ('recover_stagger',)
+    if any(c.is_status and c.name == 'WOUND' for c in me.hand):
         return ('discard_wound',)
     return None
 
@@ -108,7 +113,7 @@ class RandomPolicy(ScryMixin):
         atks = legal_attacks(engine, me, foe)
         if atks:
             return ('attack', engine.rng.choice(atks))
-        w = clear_wound_if_idle(engine, me, foe)
+        w = idle_recovery(engine, me, foe)
         if w:
             return w
         if me.hand and engine.rng.random() < 0.5:
@@ -136,7 +141,7 @@ class GreedyPolicy(ScryMixin):
         if atks:
             return ('attack', max(atks, key=lambda c: est_damage(me, c)))
         # no legal attack — clear a Wound if idle, else a move may open lines
-        return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
+        return idle_recovery(engine, me, foe) or (('move',) if me.hand else None)
 
     def choose_defense(self, engine, me, foe):
         # blind: predict the foe repeats their last attack color; hold the color
@@ -169,7 +174,7 @@ class ReaderPolicy(ScryMixin):
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
-            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
+            return idle_recovery(engine, me, foe) or (('move',) if me.hand else None)
         pred = self._predict(foe)
         if pred is not None:
             # the foe (if also a reader) tends to defend with the color that beats
@@ -248,7 +253,7 @@ class TacticianPolicy(ScryMixin):
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
-            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
+            return idle_recovery(engine, me, foe) or (('move',) if me.hand else None)
         return ('attack', max(atks, key=lambda c: self._value(engine, me, foe, c)))
 
     def choose_defense(self, engine, me, foe):
@@ -290,7 +295,7 @@ class PunisherPolicy(TacticianPolicy):
     def choose_action(self, engine, me, foe):
         atks = legal_attacks(engine, me, foe)
         if not atks:
-            return clear_wound_if_idle(engine, me, foe) or (('move',) if me.hand else None)
+            return idle_recovery(engine, me, foe) or (('move',) if me.hand else None)
         dom = self._dominant(foe)
         if dom:
             counter = _BEATEN_BY[dom]                      # color I defend dom with

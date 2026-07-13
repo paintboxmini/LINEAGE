@@ -14,7 +14,8 @@ engines — ally effects route through engine.allies(me), which is empty in a du
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('discard_wound',) | None
+                                 | ('discard_wound',) | ('recover_stagger',)
+                                 | ('assist_stagger', target) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
 """
@@ -164,7 +165,8 @@ class Battle:
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
-        defender.staggered = False
+        # Staggered persists — no auto-clear. Cleared only by the affected
+        # character (or an ally) spending an action to recover (rules/card-glossary.md).
 
         if def_card is None:
             self._resolve_attacker_win(attacker, defender, card)
@@ -281,6 +283,10 @@ class Battle:
                 if c.is_status and c.name == 'WOUND':
                     who.discard.append(who.hand.pop(i))
                     break
+        elif action[0] == 'recover_stagger':
+            who.staggered = False
+        elif action[0] == 'assist_stagger':
+            action[1].staggered = False
         who.must_target_frontline = False
         who._forced_target = None   # taunt is one-shot: consumed by this turn
 

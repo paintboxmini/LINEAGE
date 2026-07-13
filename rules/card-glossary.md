@@ -77,7 +77,7 @@ On your next turn, you may change positions without spending your action.
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
 
 **Staggered**
-The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
+A staggered character cannot attack or defend — every attack against them resolves without opposition, and they cannot play a card as an attack of their own. The condition persists until the affected character spends their action to recover their balance, or an ally spends their action to help them recover it instead. Either way, Staggered ends the instant the action resolves.
 
 **Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.

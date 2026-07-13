@@ -406,7 +406,8 @@ class Duel:
                            "— the ban is on the next reveal, attack or block "
                            "(rules/card-glossary.md Axiom + reveal timing).")
                     def_card = None
-        defender.staggered = False
+        # Staggered persists — no auto-clear here. Cleared only by the affected
+        # character (or an ally) spending an action to recover (rules/card-glossary.md).
 
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
@@ -555,6 +556,9 @@ class Duel:
                         who.discard.append(who.hand.pop(i))
                         self._say(f"{who.name} discards a Wound (action)")
                         break
+            elif kind == 'recover_stagger':
+                who.staggered = False
+                self._say(f"{who.name} recovers their balance (action)")
         # Wounds no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
