@@ -20,8 +20,9 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    - Does it force the engine to special-case resolution?
    - Does it imply a new POLICY (card selection / reveal / initiative / RPS
      resolution), not merely a new card effect?
-   If so, name the invariant being bent and say whether it should instead be
-   expressed as a temporary rule modifier rather than a one-off exception.
+   If so, name the mechanic it overrides, check the override against the prime
+   invariant (`rules/invariants.md`), and say whether it should be expressed as
+   a scoped rule modifier rather than a one-off exception.
 
 2. Simulation abuse.
    - If the mechanic lives in `combatsimulations/` (or is a few lines from being

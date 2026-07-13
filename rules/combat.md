@@ -102,9 +102,9 @@ Its main use is **team coordination** — chaining turns into the right sequence
 ## Attack Resolution
 
 1. Attacker plays and discards 1 card.
-2. Defender may reveal and discard 1 card to defend.
+2. Defender may reveal and discard 1 card to defend — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction.
 3. If the defender cannot or chooses not to defend, the attacker wins automatically.
-4. If both reveal cards simultaneously, resolve using Rock-Paper-Scissors:
+4. Both cards reveal simultaneously and resolve using Rock-Paper-Scissors:
 
 ```
 Blue (Mind)   beats  Red   (Body)
