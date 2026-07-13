@@ -133,9 +133,6 @@ class Battle:
 
     # --- start-of-turn ongoing ticks (Blood Tithe bleed, etc.) ---
     def start_of_turn(self, who):
-        for o in [o for o in who.ongoing if o['kind'] == 'blood_tithe']:
-            self.deal(o['controller'], 1, unpreventable=True)
-            self.deal(o['victim'], 1, unpreventable=True)
         _ongoing_support_tick(self, who)
 
     # --- one attack, at a chosen target ---
@@ -164,14 +161,7 @@ class Battle:
 
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
-            # Predictable: the marked attacker's card is exposed to this defender for
-            # one reveal (see engine.attack), then expires.
-            if getattr(attacker, '_predictable_to', None) is defender:
-                attacker._predictable_to = None
-                defender._known_attack = card
-                self._say(f"  PREDICTABLE: {defender.name} reads {card.name} before blocking")
             def_card = defender.policy.choose_defense(self, defender, attacker)
-            defender._known_attack = None
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
         defender.staggered = False

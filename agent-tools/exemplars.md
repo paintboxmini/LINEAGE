@@ -1,6 +1,6 @@
 # Exemplars — the Compiled Crib
 
-A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync.
+A precompiled digest of the calibration the generators used to re-derive from full canon reads every run. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. **Maintenance rule:** if an agent repeatedly retrieves examples to rediscover a pattern, promote that pattern into this file.
 
 Read this + the target's location/bestiary file + anything your specific task actually touches. Go to the full canon files only when the task bends a rule, the crib looks stale, or you're checking a keyword's exact text.
 
@@ -18,7 +18,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - Initiative: continuous wheel, no rounds. Shift ±X = next turn moves exactly X. **Wait** = forfeit action, choose a later seat (the party's sequencing tool).
 - Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
 - Status cards (Wound, Exhaust) go into decks — the delayed-consequence system.
-- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Obscure, Predictable, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward. **No new keywords without discussion.**
+- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward. **No new keywords without discussion.**
 
 ## Tier calibration (real anchors)
 
@@ -26,9 +26,9 @@ Read this + the target's location/bestiary file + anything your specific task ac
 
 | Tier | Means | Anchors |
 |---|---|---|
-| Early | one mechanic, teaches a concept, low decision overhead | Jackrabbit 1/1/3, HP 6 · Scratcher 1/1/2, HP 9 · Fencerow Shrike 1/2/3, HP 8 |
-| Mid | two interacting mechanics, positioning matters | Orin Vane 5/4/2, HP 18 · Vescal 3/4/3, HP 18 |
-| Late | full passive/card synergy, pressure from multiple directions | (no promoted anchor yet — calibrate against Root Heart / Tithe Engine) |
+| Early | one lesson through play; simple loop; 3-card kit; often disengages | Jackrabbit 1/1/3, HP 6 · Scratcher 1/1/2, HP 9 · Fencerow Shrike 1/2/3, HP 8 |
+| Mid | a defining passive + interacting cards; named individuals | Orin Vane 5/4/2, HP 18 · Vescal 3/4/3, HP 18 |
+| Late | multiple passives/phases, arena pressure | (no promoted anchor yet — calibrate against Root Heart / Tithe Engine) |
 
 Stats read Mind/Body/Soul. If the brief doesn't state a tier, ask before building.
 
@@ -60,7 +60,7 @@ Range: Both
 *"Still is not the same as gone."*
 ```
 
-Enemy deck: 3 signature + 4–7 core, 7–10 total; core color counts lean toward the stat spread. "Ally" wording must survive **You Are Not Your Own Ally** (`rules/cards.md`; green is the exception — green counts itself among its allies).
+Enemy deck: 3 signature + 4–7 core, 7–10 total; core color counts lean toward the stat spread. "Ally" wording must survive **You Are Not Your Own Ally** (`rules/cards.md`) — no color is exempt.
 
 ## Stat block skeleton
 
@@ -69,7 +69,7 @@ Enemy deck: 3 signature + 4–7 core, 7–10 total; core color counts lean towar
 **Difficulty:** Early / Mid / Late
 ```
 
-Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist. Named people go in `characters/`, never `bestiary/`.
+Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks — see `quests/the-larder-fence.md` for the pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.
 
 ## Encounter skeleton
 

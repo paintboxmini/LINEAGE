@@ -123,7 +123,7 @@ def _blood_tithe_effect(engine, me, foe):
 
 
 def _blood_tithe_defense(engine, me, foe):
-    me.ongoing.append({'kind': 'blood_tithe', 'controller': me, 'victim': foe})
+    lifesteal(engine, me, foe, 2)          # Lifesteal 2 (the bleed was cut)
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
@@ -194,7 +194,7 @@ def _anticipate_defense(engine, me, foe):
 
 
 def _renewal_effect(engine, me, foe):
-    for a in _team(engine, me):    # you and all allies heal 2
+    for a in engine.allies(me):    # all allies heal 2 (ally-only: no self)
         engine.heal(a, 2)
 
 
@@ -205,7 +205,7 @@ def _renewal_defense(engine, me, foe):
 
 
 def _twin_strike_defense(engine, me, foe):
-    for a in _team(engine, me):    # you or next ally +3
+    for a in engine.allies(me):    # next ally +3 (ally-only: no self)
         a.next_attack_bonus += 3
 
 
@@ -358,15 +358,15 @@ def _most_hurt(allies):
 
 
 def _resonate_effect(engine, me, foe):
-    for a in _team(engine, me):
-        a.next_attack_bonus += 2          # all allies +2 next attack
+    for a in engine.allies(me):
+        a.next_attack_bonus += 2          # all allies +2 next attack (no self)
 def _resonate_defense(engine, me, foe):
-    for a in _team(engine, me):
-        a.resist += 1                     # all allies gain Resist 1
+    for a in engine.allies(me):
+        a.resist += 1                     # all allies gain Resist 1 (no self)
 
 
 def _support_effect(engine, me, foe):
-    a = _best_attacker(_team(engine, me))
+    a = _best_attacker(engine.allies(me))
     if a:
         a.next_attack_bonus += 3          # next ally to attack +3
 def _support_defense(engine, me, foe):
@@ -390,11 +390,11 @@ def _conduct_defense(engine, me, foe):
 
 
 def _witness_effect(engine, me, foe):
-    a = _most_hurt(_team(engine, me))
+    a = _most_hurt(engine.allies(me))
     if a:
         engine.heal(a, 3)
 def _witness_defense(engine, me, foe):
-    a = _most_hurt(_team(engine, me))
+    a = _most_hurt(engine.allies(me))
     if a:
         engine.heal(a, 3)
 
@@ -496,7 +496,7 @@ def _study_effect(engine, me, foe):
         if c:
             me.hand.append(c)              # discard 1 (a Wound if held), draw 1
 def _study_defense(engine, me, foe):
-    foe._predictable_to = me               # Predictable: I read this foe's next reveal
+    me.evade += 1                          # saw it coming (Predictable was cut)
 
 def _profile_effect(engine, me, foe):
     engine.scry(me, me, 2)

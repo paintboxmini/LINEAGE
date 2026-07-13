@@ -62,7 +62,7 @@ A defends: reveals **SKITTER AWAY** (Blue). Both cards are discarded.
 
 **Blue vs Blue — tie.** No damage. Per the tie rule (`rules/combat.md`, Attack Resolution): *attacker's Effect still triggers, then defender's Defensive Bonus triggers.*
 
-- PROFILE Effect: *"Scry 2, then draw 1 card."* Frost looks at his top two — PUSH and REFRACT — puts REFRACT on top, and draws it. Note that the scry and the draw are Frost's alone: a card granting them to "your allies" would *exclude* Frost (**You Are Not Your Own Ally**, `rules/cards.md`) — unless it were green; green counts itself among its allies.
+- PROFILE Effect: *"Scry 2, then draw 1 card."* Frost looks at his top two — PUSH and REFRACT — puts REFRACT on top, and draws it. Note that the scry and the draw are Frost's alone: a card granting them to "your allies" would *exclude* Frost (**You Are Not Your Own Ally**, `rules/cards.md`).
 - SKITTER AWAY Defensive Bonus: A gains **Evade** (50% to dodge the next attack against it — `rules/card-glossary.md`).
 
 Neither trigger cancels the other, so both resolve. Frost's hand: PATIENCE, STRIKE, REFRACT.
@@ -189,7 +189,7 @@ Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole a
 - **Simultaneous reveal:** defense is a prediction. Frost guessed wrong twice; that's the game.
 - **Range is positional law:** melee needs both Frontline; Ranged fails inside melee range; Both is always legal. B lost a full turn crossing the field to get claw-range.
 - **Status flow:** Evade (spent on one attack, whether or not it dodges), Resist (halves one hit), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
-- **You Are Not Your Own Ally** unless the card says "you and" — green being the standing exception: green counts itself among its allies (`rules/cards.md`).
+- **You Are Not Your Own Ally** unless the card says "you and" (`rules/cards.md`).
 
 ---
 

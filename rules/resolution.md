@@ -50,7 +50,7 @@ Checks are active attempts — you're trying to do something.
 
 Saves are reactive — something is happening to you.
 
-- **Body Save** — Poison, fatigue, falls, cold, pain, forced movement.
+- **Body Save** — Fatigue, falls, cold, pain, forced movement.
 - **Mind Save** — Illusions, manipulation, memory interference.
 - **Soul Save** — Fear, corruption, possession, despair, spiritual confusion.
 

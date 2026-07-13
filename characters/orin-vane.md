@@ -77,6 +77,6 @@ Players cannot tell which type has been drawn until it triggers. Attack Counters
 
 **Closing:** Once any glyph has triggered, SIGNATURE THRUST becomes available. Use it on a turn where the party has burned resources on glyph management. Move to Frontline with LUNGE first.
 
-**FEINT's** Defensive Bonus doesn't win the current exchange — Predictable loads the attacker's next reveal instead. Apply it on a turn you expect to keep facing the same attacker, then let their following reveal hand Orin the win.
+**FEINT's** Defensive Bonus doesn't win the current exchange — it degrades the attacker's next one instead: Blind gives their following attack a 50% chance to fail outright. Apply it when you expect to keep facing the same attacker.
 
 **Orin does not explain the glyphs.** If asked, Orin says they are stabilization marks. This is technically accurate.

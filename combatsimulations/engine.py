@@ -45,9 +45,9 @@ def _ongoing_support_tick(engine, who):
                 engine.heal(a, 1)
         elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
             allies = engine.allies(who)
-            tgt = (max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul')))
-                   if allies else who)
-            tgt.next_attack_bonus += 2
+            if allies:                     # ally-only: no self-fallback (green revert)
+                max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul'))
+                    ).next_attack_bonus += 2
 
 
 def _apply_shift(engine, queue, target, amount):
@@ -201,8 +201,6 @@ class Combatant:
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
         self._rend_guard = False         # Rend def: next hit -> Wound, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
-        self._predictable_to = None      # Study def: this foe reads my next reveal
-        self._known_attack = None        # transient: attacker's card, exposed to me
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -371,21 +369,6 @@ class Duel:
 
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):
-        # collect simultaneous ticks; controller orders them (rules/combat.md
-        # Simultaneous Effects). Here the acting player's own ongoing effects.
-        bleeds = [o for o in who.ongoing if o['kind'] == 'blood_tithe']
-        # BLOOD TITHE: "you and the attacker take 1 at the start of each of your
-        # turns." Controller = the one who played it (defensive bonus).
-        for o in bleeds:
-            controller = o['controller']
-            victim = o['victim']
-            pre_c, pre_v = controller.hp, victim.hp
-            self.deal(controller, 1, unpreventable=True)
-            self.deal(victim, 1, unpreventable=True)
-            if controller.collapsed and victim.collapsed and pre_c > 0 and pre_v > 0:
-                RULING("blood-tithe-mutual-death",
-                       "If BLOOD TITHE's bleed collapses both parties on the same "
-                       "tick, it is a mutual result — scored as a tie (Drew ruling).")
         _ongoing_support_tick(self, who)
 
     # --- one attack action ---
@@ -414,14 +397,7 @@ class Duel:
         # attacker's revealed-color history, position, etc.).
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
-            # Predictable: if this defender marked the attacker, they see the actual
-            # card before choosing — simultaneity broken for one reveal, then expires.
-            if getattr(attacker, '_predictable_to', None) is defender:
-                attacker._predictable_to = None
-                defender._known_attack = card
-                self._say(f"  PREDICTABLE: {defender.name} reads {card.name} before blocking")
             def_card = defender.policy.choose_defense(self, defender, attacker)
-            defender._known_attack = None
             if def_card is not None:
                 # enforce Axiom ban on the reveal
                 if defender.axiom_ban and def_card.color == defender.axiom_ban:
