@@ -10,7 +10,7 @@ Use this to build short roadside or social NPC encounters — tension without co
 
 An NPC written without this context sounds like a visitor to the setting instead of a resident of it.
 
-1. **`agent-tools/exemplars.md`** — the compiled crib: Perception modes and DCs, the Function/Pressure/Hook register (Weck exemplar), status-card pressure, tone in one breath.
+1. **`agent-tools/compiled-crib.md`** — Perception modes and DCs, the Function/Pressure/Hook register (Weck exemplar — see `agent-tools/exemplars.md`), status-card pressure, tone in one breath.
 2. **The region** — the location file the encounter lands in. The NPC should feel produced by the place.
 3. **`memory.md` — active threads** — so the NPC doesn't collide with, duplicate, or accidentally resolve an existing hook.
 4. **Escalate to full canon only when needed:** full register → `world/tonal-bible.md`; more voice exemplars → Aege/Bartho/Kino in `locations/vultures-nest.md`; exact status-card text → `rules/card-glossary.md`.

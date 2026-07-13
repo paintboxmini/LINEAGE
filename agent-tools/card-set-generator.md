@@ -10,10 +10,10 @@ Use this prompt to generate new 9-card enemy sets. Read the target creature's be
 
 Cards written without calibration read fine in isolation and wrong next to everything else.
 
-1. **`agent-tools/exemplars.md`** — the compiled crib: keyword list, card formats with calibrated core + signature exemplars, die philosophy, deck and tag conventions, ally-wording rules.
+1. **`agent-tools/compiled-crib.md`** — keyword list, card formats with calibrated core + signature examples, die philosophy, deck and tag conventions, ally-wording rules.
 2. **The color's core file for your target colors** (`cards/red-body.md` / `blue-mind.md` / `green-soul.md`) — duplication check: if your effect already exists on a core card, it isn't a signature effect.
 3. **`experimental/archives/cut-cards.md`** — do not re-draft a cut card without addressing why it was cut.
-4. **Escalate to full canon only when needed:** a keyword used in a novel way → its exact text in `rules/card-glossary.md`; anything near an invariant → `rules/invariants.md`; one comparable signature set for identity texture (e.g. `cards/fencerow-shrike.md`).
+4. **Escalate to full canon only when needed:** a keyword used in a novel way → its exact text in `rules/card-glossary.md`; a design-quality check → `agent-tools/design-philosophy.md`; touching the simulator's own resolution logic → `rules/invariants.md`; one comparable signature set for identity texture (e.g. `cards/fencerow-shrike.md`).
 
 ---
 
