@@ -19,6 +19,8 @@ A larder fence runs taller than a person and thicker than any hedge a farmer mea
 
 Impaled along it: voles, a hare, something with a collar. All of it placed, spaced, drying — the larder, and the reason the bird keeps coming back.
 
+The fence is two things wearing one name. The wire and bramble between the posts is where the barbs are, where the larder hangs, where the Shrike strikes and stalls. The posts themselves — squared stone, taller than the wire, corner-set every so many yards — are clean. That's where it watches from.
+
 ---
 
 ## GM Secret — Not Player-Facing
@@ -29,7 +31,7 @@ The fence and the watchtower ruins at Briarwatch's edge are the same project: th
 
 ## Behavior
 
-It is not aggressive. It is *punctual.* It watches the road, picks its moment, dives once, and returns to the wire with something that used to be yours. It does not fight things head-on because nothing that hunts by rhythm needs to.
+It is not aggressive. It is *punctual.* It watches the road, picks its moment, dives once, and returns to its post with something that used to be yours. It does not fight things head-on because nothing that hunts by rhythm needs to.
 
 Run 2 for a party of 4, cycles staggered — while one perches, the other dives.
 
@@ -54,11 +56,11 @@ The lesson is the window. Players who swing at a perched Shrike hit Evade and wa
 
 The fence is not scenery — it is oversized on purpose, and the encounter should say so before a single card is played. Describe the barbs before the bird: hooked, finger-thick, some already dark with old use.
 
-**The fence occupies the Frontline.** That is the ground the dive lands on and the ground the Shrike is grounded on — Combat Behavior above already plays this way (Perched = Backline, dive = Frontline). **Backline means what it always means — ranged distance — nothing more** (`rules/combat.md`, Positioning: "both positions are abstract zones"). For this creature, that distance is straight up: perched means airborne, out over the fence, at altitude. Not "behind the wire." Above it.
+**The fence is two zones wearing one name.** The wire and bramble strung between the posts — barbed, where the larder hangs — is the **Frontline**. That's the ground the dive lands on and the ground a grounded Shrike stands on; Combat Behavior above already plays this way (Perched = Backline, dive = Frontline). The **posts** — taller, clean, structurally part of the same fence but nothing like the wire — are the **Backline**. **Backline means what it always means: ranged distance, nothing more** (`rules/combat.md`, Positioning: "both positions are abstract zones"); it's not a euphemism for "flying" or "somewhere off-map." The Shrike is perched, literally, exactly as the card name says — just up on the post, not down in the thorns.
 
 **Getting Barbed.** A combatant moved onto the fence (to Frontline) by an effect they did not choose to play themselves is hooked: **1 unpreventable damage**, immediately, no roll (`rules/card-glossary.md`, Unpreventable — terrain, not an attack, nothing mitigates it). Moving there under your own power — Impaling Dive, Watchful Perch, Move Position, Flow, Dart, anything self-directed — never hooks you. The Shrike built its life on this fence; it never catches itself.
 
-**Rushdown does not reach a flying target — and the Shrike doesn't carry Rushdown either.** Rushdown is a closing-the-gap mechanic: you cover ground to reach someone. You cannot run up to something in the air, so the party cannot Rushdown a perched (Backline) Shrike, and a Shrike could never Rushdown anyone in turn — its whole kit is the dive, not a charge. This is fictional consistency, the same logic that already gates Melee behind "both Frontline" — not a change to what Rushdown means anywhere else. **Pull is unaffected** — a Pull drags its target regardless of distance, and a perched Shrike dragged down onto its own fence is Barbed same as anything else.
+**Rushdown does not reach the post — and the Shrike doesn't carry Rushdown either.** Rushdown is a closing-the-gap mechanic: you cover ground to reach someone standing on it. There's no ground to cover to a bird perched on top of a stone post taller than you — climbing it mid-fight isn't "closing a gap," it's an entirely different problem, and Rushdown doesn't model it. So the party cannot Rushdown a perched (Backline) Shrike, and a Shrike could never Rushdown anyone in turn — its whole kit is the dive, not a charge. This is fictional consistency, the same logic that already gates Melee behind "both Frontline" — not a change to what Rushdown means anywhere else. **Pull is unaffected** — a Pull drags its target regardless of distance or elevation, and a perched Shrike dragged down off its post onto the wire is Barbed same as anything else.
 
 **While Barbed, the hook doesn't let go on its own:**
 - Every attack you make tears it: 1 unpreventable damage.
@@ -67,9 +69,9 @@ The fence is not scenery — it is oversized on purpose, and the encounter shoul
 
 This is encounter-specific terrain language, not a global keyword — it isn't in `rules/card-glossary.md` and shouldn't be assumed to apply anywhere else without a fresh ruling.
 
-**The turn against the Shrike itself:** Pull a perched Shrike down onto its own fence — on the party's timing, not its own — and for once, the wire belongs to them.
+**The turn against the Shrike itself:** Pull a perched Shrike down off its post and onto its own wire — on the party's timing, not its own — and for once, the barbs belong to them.
 
-**Territorial, not pursuant.** A Shrike will not chase past the field. Backline — airborne, at range — is already the outer edge of how far it will extend itself for prey this size; a body heavier than a hare doesn't make it back to the larder from any farther than that. If the party disengages or leaves entirely, the Shrikes let them go. It isn't caution. It's that the math of carrying you home never worked past here.
+**Territorial, not pursuant.** A Shrike will not chase past the field. Even its own post is already the outer edge of how far it will extend itself for prey this size; a body heavier than a hare doesn't make it back to the larder from any farther than that. If the party disengages or leaves entirely, the Shrikes let them go. It isn't caution. It's that the math of carrying you home never worked past here.
 
 ---
 

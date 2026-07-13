@@ -18,9 +18,9 @@ Teach players to fight the **turn order**, not the target:
 
 This is not a farmer's fence. It runs taller than a person, stone-cored under decades of bramble nobody cut back, and the thorns on it are wrong-sized — some as long as a finger, hooked back like fishhooks, built to *hold* what they catch rather than just cut it. Hung along it: voles, a hare, something with a collar. All of it placed, spaced, drying. Describe the barbs before the bird — two fenceposts up, a pale shrike the size of a dog tilts its head at the road, and it is the smallest dangerous thing here.
 
-**Positioning:** the fence itself is the Frontline — the ground the dive lands on and the ground a grounded Shrike stands on. Backline means what it always means, ranged distance, nothing more — for the Shrikes that's straight up: perched means airborne, at altitude, not "behind the wire." Melee and the usual range rules apply exactly as normal; the fence is *where* Frontline happens to be, not a new zone.
+**Positioning:** the fence is two zones wearing one name. The wire and bramble strung between the posts — barbed, where the larder hangs — is the **Frontline**: the ground the dive lands on, the ground a grounded Shrike stands on. The tall stone corner **posts** are the **Backline** — clean, structurally part of the same fence, nothing like the wire. Backline means what it always means, ranged distance, nothing more; the Shrike is genuinely perched (the card name means it literally), just up on the post instead of down in the thorns. Melee and the usual range rules apply exactly as normal.
 
-**Rushdown can't reach a perched Shrike.** You can't run up to something in the air — Rushdown is a closing-the-gap mechanic and there's no gap to close vertically. The Shrikes don't carry it either; their whole kit is the dive. **Pull still works** — it drags regardless of distance.
+**Rushdown can't reach the post.** Climbing a stone post mid-fight to grab what's perched on top isn't "closing a gap" — Rushdown doesn't model it. The Shrikes don't carry Rushdown either; their whole kit is the dive. **Pull still works** — it drags regardless of distance or elevation.
 
 **The barbs (Barbed status):** anyone — player or Shrike — moved onto the fence (to Frontline) by an effect they didn't choose themselves (Pull, from either side) is **Barbed**: 1 unpreventable damage on the hook, then 1 more every attack they make, 1 more every successful block, and 1 more when they finally get free (leaving Frontline or working the barb loose in place). Moving there under your own power never hooks you. Full rule: `bestiary/fencerow-shrike.md`, The Fence Itself.
 
@@ -30,13 +30,13 @@ This is not a farmer's fence. It runs taller than a person, stone-cored under de
 
 ## The Rhythm (GM notes)
 
-Each Shrike alternates: **dive** (Impaling Dive into the Frontline, +2 from the perch — and by the card's own text, unable to defend until its next turn) → **the grounded window** → **perch** (back to safety, Evade). Play it punctual, not vicious — it takes one thing per dive when it can (Thorn Larder exiles a card, not just discards it — the fence keeps what it takes until the fight is over) and returns to the wire.
+Each Shrike alternates: **dive** (Impaling Dive into the Frontline, +2 from the perch — and by the card's own text, unable to defend until its next turn) → **the grounded window** → **perch** (back to safety, Evade). Play it punctual, not vicious — it takes one thing per dive when it can (Thorn Larder exiles a card, not just discards it — the fence keeps what it takes until the fight is over) and returns to its post.
 
 Let the first dive hurt. Let the first swing at a *perched* Shrike waste itself on Evade. Then let the table notice the grounded one standing in the open with nothing in its claws. Do not explain the window. The wheel is sitting on the table; the players will find it.
 
 If a player Waits to reposition behind the dive — reward it visibly: the unopposed hit lands like a dropped anvil.
 
-**The barbs cut both ways, and a sharp table will notice:** a perched Shrike is one Pull away from its own fence, on the party's timing instead of its own. Barbed, it bleeds on every attack and every block it makes from there — the rhythm that was working for it starts working against it. Don't point this out — let someone try it once and feel clever.
+**The barbs cut both ways, and a sharp table will notice:** a perched Shrike is one Pull away from its own post — dragged down onto its own wire, on the party's timing instead of its own. Barbed, it bleeds on every attack and every block it makes from there — the rhythm that was working for it starts working against it. Don't point this out — let someone try it once and feel clever.
 
 ---
 
