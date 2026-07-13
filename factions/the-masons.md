@@ -24,4 +24,4 @@ The Masons and the People of Promise represent opposing orientations toward the 
 
 Not for player disclosure — the faction's existence isn't public, and neither is its footprint.
 
-- **The larder fence, Briarwatch** — a reinforced boundary fence, built for reasons unrecorded; Briarwatch's farmers have maintained it for generations without knowing why it started. See `bestiary/fencerow-shrike.md`, GM Secret.
+- **The Briarwatch line** — the watchtower ruins and the larder fence at Briarwatch's eastern edge are one project, not two: a boundary raised against Turnroot Weald's encroachment, carving out the ground the town now farms. The Masons still visit periodically for maintenance and repair. Briarwatch has tended the fence for generations without knowing why it started or who asked them to. See `bestiary/fencerow-shrike.md` (GM Secret), `locations/briarwatch.md`, `locations/turnroot-weald.md`.

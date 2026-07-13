@@ -36,6 +36,12 @@ The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the 
 
 ---
 
+## GM Secret — Not Player-Facing
+
+Part of "more deliberate than natural": the Masons hold a line against the Weald at Briarwatch specifically — the watchtower ruins and larder fence there are their work, maintained on periodic visits. See `factions/the-masons.md`, Known Works. Whether the Masons contest the Weald anywhere else is not established.
+
+---
+
 ## Related Documents
 
 - `quests/turnroot-weald-adventure.md` — Full adventure system: Pressure Track, Forest Customs, navigation rules, NPC escalation, Mark system, Points of Interest, and encounter framework

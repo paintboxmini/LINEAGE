@@ -23,9 +23,7 @@ Impaled along it: voles, a hare, something with a collar. All of it placed, spac
 
 ## GM Secret — Not Player-Facing
 
-The fence was not raised by farmers. It was built by the Masons (`factions/the-masons.md`) — reinforced, deliberate, meant to hold a line, not livestock — and Briarwatch has maintained it ever since, generation after generation, without knowing why it started or who first asked them to. To the town it is just the old larder fence, mended out of habit. Nothing in this file's player-facing text (Appearance, the folk speculation above) should say so; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
-
-*Unconfirmed, GM's option to connect:* Briarwatch's watchtower ruins predate the town and nobody knows why the border was there either (`locations/briarwatch.md`). Whether this fence and that older boundary are the same Mason project is not established — a thread to pull if it's useful, not a fact to assert.
+The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to the town it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works. Nothing in this file's player-facing text (Appearance, the folk speculation above) should say so; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
 
 ---
 
@@ -56,9 +54,11 @@ The lesson is the window. Players who swing at a perched Shrike hit Evade and wa
 
 The fence is not scenery — it is oversized on purpose, and the encounter should say so before a single card is played. Describe the barbs before the bird: hooked, finger-thick, some already dark with old use.
 
-**The fence occupies the Frontline.** That is the ground the dive lands on and the ground the Shrike is grounded on — Combat Behavior above already plays this way (Perched = Backline, dive = Frontline). Backline here is off the wire entirely: flying, watching, safe.
+**The fence occupies the Frontline.** That is the ground the dive lands on and the ground the Shrike is grounded on — Combat Behavior above already plays this way (Perched = Backline, dive = Frontline). **Backline means what it always means — ranged distance — nothing more** (`rules/combat.md`, Positioning: "both positions are abstract zones"). For this creature, that distance is straight up: perched means airborne, out over the fence, at altitude. Not "behind the wire." Above it.
 
-**Getting Barbed.** A combatant moved onto the fence (to Frontline) by an effect they did not choose to play themselves — Rushdown, Pull's Effect on them, Pull's Defensive Bonus dragging an attacker in — is hooked: **1 unpreventable damage**, immediately, no roll (`rules/card-glossary.md`, Unpreventable — terrain, not an attack, nothing mitigates it). Moving there under your own power — Impaling Dive, Watchful Perch, Move Position, Flow, Dart, anything self-directed — never hooks you. The Shrike built its life on this fence; it never catches itself.
+**Getting Barbed.** A combatant moved onto the fence (to Frontline) by an effect they did not choose to play themselves is hooked: **1 unpreventable damage**, immediately, no roll (`rules/card-glossary.md`, Unpreventable — terrain, not an attack, nothing mitigates it). Moving there under your own power — Impaling Dive, Watchful Perch, Move Position, Flow, Dart, anything self-directed — never hooks you. The Shrike built its life on this fence; it never catches itself.
+
+**Rushdown does not reach a flying target — and the Shrike doesn't carry Rushdown either.** Rushdown is a closing-the-gap mechanic: you cover ground to reach someone. You cannot run up to something in the air, so the party cannot Rushdown a perched (Backline) Shrike, and a Shrike could never Rushdown anyone in turn — its whole kit is the dive, not a charge. This is fictional consistency, the same logic that already gates Melee behind "both Frontline" — not a change to what Rushdown means anywhere else. **Pull is unaffected** — a Pull drags its target regardless of distance, and a perched Shrike dragged down onto its own fence is Barbed same as anything else.
 
 **While Barbed, the hook doesn't let go on its own:**
 - Every attack you make tears it: 1 unpreventable damage.
@@ -67,7 +67,9 @@ The fence is not scenery — it is oversized on purpose, and the encounter shoul
 
 This is encounter-specific terrain language, not a global keyword — it isn't in `rules/card-glossary.md` and shouldn't be assumed to apply anywhere else without a fresh ruling.
 
-**The turn against the Shrike itself:** force a perched Shrike onto its own fence — a Rushdown at a time of your choosing, not its own dive — and for once, the wire belongs to the party.
+**The turn against the Shrike itself:** Pull a perched Shrike down onto its own fence — on the party's timing, not its own — and for once, the wire belongs to them.
+
+**Territorial, not pursuant.** A Shrike will not chase past the field. Backline — airborne, at range — is already the outer edge of how far it will extend itself for prey this size; a body heavier than a hare doesn't make it back to the larder from any farther than that. If the party disengages or leaves entirely, the Shrikes let them go. It isn't caution. It's that the math of carrying you home never worked past here.
 
 ---
 

@@ -42,6 +42,12 @@ The danger in Briarwatch isn't strange. It's wet soil and old limestone and thin
 
 ---
 
+## GM Secret — Not Player-Facing
+
+The watchtower ruins are not unexplained to everyone — the Masons built them, along with the larder fence at the same edge of town, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. They still visit periodically to maintain it. Nobody in Briarwatch knows this. See `factions/the-masons.md`, Known Works.
+
+---
+
 ## Session 1 Routing
 
 Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
