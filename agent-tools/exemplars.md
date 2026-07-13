@@ -1,6 +1,6 @@
 # Exemplars
 
-The best examples of Tales Untold content — specifically content, not tools or process. An exemplar is chosen because it's the embodiment of the ideal: it reflects the Design Philosophy principles (`agent-tools/design-philosophy.md`) better than most of what's around it. Extract the principle it demonstrates; don't copy its specifics into the next thing you build. A creature can be a strong exemplar and still be nothing like the next one built from the same principles.
+The best examples of Tales Untold content — specifically content, not tools or process. An exemplar is chosen because it's the embodiment of the ideal: it reflects the Design Principles (`agent-tools/design-principles.md`) better than most of what's around it. Extract the principle it demonstrates; don't copy its specifics into the next thing you build. A creature can be a strong exemplar and still be nothing like the next one built from the same principles.
 
 This is a short, curated list, not an index. If everything ends up in here, nothing is exemplary.
 

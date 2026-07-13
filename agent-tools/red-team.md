@@ -26,14 +26,14 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    computational correctness, not whether the content is well-designed. That's
    the next pass.
 
-1b. Design Philosophy fit.
+1b. Design Principles fit.
    - Does the deck actually express the creature's behavior, or is it a generic
      stat-stick with flavor text on top?
    - Does the mechanic come from the creature's ecology/fiction, or was it picked
      first and the fiction painted on after?
    - Does the encounter teach through what the player does, or does it require
      the GM to explain the lesson?
-   Check against `agent-tools/design-philosophy.md` directly — this is a design
+   Check against `agent-tools/design-principles.md` directly — this is a design
    standard, not an engine check, and violating it doesn't break anything the
    simulator would catch.
 
@@ -144,7 +144,7 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
 - Engine invariants (for the Engine-Invariant Violations pass): `rules/invariants.md`
-- Design standards (for the Design Philosophy pass): `agent-tools/design-philosophy.md`
+- Design standards (for the Design Principles pass): `agent-tools/design-principles.md`
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`

@@ -12,7 +12,7 @@ Encounters built without calibration end up the wrong weight for their tier and 
 
 1. **`agent-tools/compiled-crib.md`** — engine facts, tier anchors, formats, deck and tag conventions, skeletons, tone. This replaces the old full-canon read list for routine work.
 2. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
-3. **Escalate to full canon only when needed:** touching the simulator's own computational correctness → `rules/invariants.md`; checking design quality → `agent-tools/design-philosophy.md`; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
+3. **Escalate to full canon only when needed:** touching the simulator's own computational correctness → `rules/invariants.md`; checking design quality → `agent-tools/design-principles.md`; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
 4. Target Strength (total stats) not stated in the brief? Ask before building.
 
 ---

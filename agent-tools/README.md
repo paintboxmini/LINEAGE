@@ -8,7 +8,7 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh at Sync when canon shifts |
-| `design-philosophy.md` | What makes content well-made — check new content against this, not just against the rules |
+| `design-principles.md` | What makes content well-made — check new content against this, not just against the rules |
 | `exemplars.md` | The best existing Tales Untold content — read to calibrate what excellent looks like, not for facts |
 | `inspiration-guide.md` | Content feels obvious, flat, or generic — find the right angle |
 | `encounter-generator.md` | Designing a new combat encounter |

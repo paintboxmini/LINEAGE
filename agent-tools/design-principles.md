@@ -1,4 +1,4 @@
-# Design Philosophy
+# Design Principles
 
 What makes Tales Untold content well-made. Not a rule (`rules/card-glossary.md`), not a computational fact about the simulator (`rules/invariants.md`), and not a specific instance of one of these principles in action (`agent-tools/exemplars.md` exists to demonstrate them concretely, extractably). A piece of content can violate one of these and the engine won't break — it will just be weaker, less integrated, or harder to teach from. Checked by `agent-tools/red-team.md` and `agent-tools/alignment-checker.md`, not by whether the sim throws an error.
 
