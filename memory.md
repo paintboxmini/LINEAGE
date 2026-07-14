@@ -63,6 +63,9 @@ tactician = best brain (greedy recency-read + aggression + Axiom/Spark weighting
 
 ## Active Pending Threads
 
+**Initiative Wheel — slots, not seats** (`experimental/initiative-slots.md`)
+Live redesign of Initiative Shift X's wraparound math (the "cyclic permutation" complexity flagged and tabled earlier this session). Explored a full rebuild (linear track, Patchwork-inspired, piece-stacking, LIFO) and set it aside once the real diagnosis landed: the wheel's fence (`rules/combat.md`) only exists to pin down "right now" on a structure with no edges. Current direction keeps the wheel and adds one clamp — a shift can never move a target's count past the marker — which kills the ugly "shifts ≥ N, full-lap pass-over per revolution" clause without touching sliding or seats/counts otherwise. Terminology confirmed: seat → **slot** (position was already claimed by Frontline/Backline); sliding stays distinct from shifting; Initiative Shift X keeps "Shift." Drew: "we still aren't quite there yet" — ordinary pass-overs need re-verification against the new clamp, and the actual glossary/combat.md rewrite hasn't been drafted. `rules/card-glossary.md` and `rules/combat.md` are unchanged and still govern real play. Don't promote to canon without Drew.
+
 **SOFT STEP** (Borrower card, `experimental/archives/cut-cards.md`)
 Mass Evade for position-mates. Passed red team but flagged as strong — needs Drew's deliberate sign-off before entering the Oracle. Don't promote to canon without asking.
 
