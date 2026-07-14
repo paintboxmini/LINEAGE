@@ -46,6 +46,10 @@ Worked example (4 combatants, marker at slot 1): someone at count 2 gets shifted
 - Whether "count" and "slot" terminology both need adjustment now that "seat" → "slot," or whether "count" stays as-is.
 - The actual rewritten `rules/card-glossary.md` Initiative Shift X entry and `rules/combat.md` fence text — not drafted yet, waiting on the above.
 
+**Where this actually got stuck (session close-out note):** Pushed on "what happens to the current actor / sliding at the marker" and kept reaching for patches — a protected slot, a self-shift exception, a congestion rule — instead of finding the real problem. Drew called it correctly: that pattern (inventing a fix for each way something could reach the marker) is a sign the model underneath isn't understood yet, not a sign it's almost done.
+
+The actual confusion, named on reflection: **count is the source of truth for when someone acts; slot is a spatial layer that's allowed to disagree with count** — that's what pass-over and the bonus turn already exist to reconcile, not to prevent. Treating "protect the marker's slot" as the fix was reasoning on the wrong layer — sliding doesn't touch count at all, only relabels slots, so "sliding through the marker" was never actually a scheduling problem. Whatever the real fix is, it likely lives on the count side, not the slot side. Next session should start there — pin down exactly what count and slot each govern, and where they're allowed to diverge, before touching the marker edge case again.
+
 ## Related Documents
 
 - `rules/card-glossary.md` — Initiative Shift X, current (unchanged) canonical text
