@@ -29,7 +29,7 @@ The fence and the watchtower ruins at Briarwatch's edge are the same project: th
 
 The oversized thorns are not the Masons' work and not the Weald's either, not directly — **the Shrikes did this.** Their stretch of the plain stone perimeter has been adapted, generation over generation, with thorn-brush pulled in from the Weald itself and worked into the wire until it grew into what it is now. Nobody built this larder fence on purpose. The birds did, slowly, out of material that was never supposed to cross the line the fence exists to hold.
 
-**The livestock reports at the Warden Post are unrelated.** Briarwatch doesn't graze anything within reach of the Turnroot border — the farmers know better — so whatever is taking livestock from the north field, it isn't this. Don't let a table connect the two without a reason to.
+**The Fenwool reports at the Warden Post are unrelated.** Briarwatch doesn't graze anything within reach of the Turnroot border — the farmers know better — so whatever is taking Fenwool from the north field, it isn't this. Don't let a table connect the two without a reason to.
 
 Nothing in this file's player-facing text (Appearance, the folk speculation above) should say any of this outright; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
 

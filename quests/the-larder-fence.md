@@ -1,6 +1,6 @@
 # The Larder Fence
 
-*Standalone encounter at Briarwatch's outer perimeter, well past the last field — Briarwatch keeps its farmland and its livestock back from the Turnroot border on purpose. Creature Threat Rating 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
+*Standalone encounter at Briarwatch's outer perimeter, well past the last field — Briarwatch keeps its farmland and its Fenwool back from the Turnroot border on purpose. Creature Threat Rating 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
 
 ---
 

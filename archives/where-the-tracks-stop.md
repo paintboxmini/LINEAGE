@@ -14,7 +14,7 @@ Teach the three Perception modes on a real problem, and teach the older lesson u
 
 Livestock tracks cross the road at intervals and don't always continue on the other side. Everyone local knows this. Nobody local stops.
 
-At one crossing, the party has reason to stop — a dropped feed sack, a bleating sound, or simply the tracks themselves: a full set of sheep prints coming out of the bramble, crossing the packed dirt, and ending mid-road. Not scattering. Not doubling back. *Ending,* mid-stride, halfway across.
+At one crossing, the party has reason to stop — a dropped feed sack, a bleating sound, or simply the tracks themselves: a full set of Fenwool prints coming out of the bramble, crossing the packed dirt, and ending mid-road. Not scattering. Not doubling back. *Ending,* mid-stride, halfway across.
 
 The soil past the last print is road dirt like all the rest. The Regency gravel is undisturbed.
 

@@ -12,7 +12,7 @@ Grounded. Damp. Heavy. Overcast. The danger here is not mystical — it is water
 
 ## Opening Conditions
 
-The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Livestock were lost weeks ago when a section of field gave way. A bounty was posted.
+The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Fenwool were lost weeks ago when a section of field gave way. A bounty was posted.
 
 ---
 
@@ -212,7 +212,7 @@ If the party observes Borrower behavior, they can learn predator patterns withou
 
 ### The Stonecoils
 
-Blind ambush reptilians. Several have grown large due to increased diet of Borrowers and livestock.
+Blind ambush reptilians. Several have grown large due to increased diet of Borrowers and Fenwool.
 
 **Key traits:** Hunt via vibration. Prefer narrow choke points. Low metabolic rate. Territorial but not social. Normally confined to deep caves — increased water flow has expanded their range upward.
 

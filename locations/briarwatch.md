@@ -22,7 +22,7 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 ## The Wardens
 
-Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared livestock, strangers on the road, anything that comes up from below.
+Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared Fenwool (`bestiary/fenwool.md`, the farm's livestock), strangers on the road, anything that comes up from below.
 
 One Warden stopped returning from the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody from Briarwatch went looking.
 
@@ -38,7 +38,7 @@ Warden culture is practical and quiet. They don't talk much about what's under t
 
 **The Roadhouse** — government inn on the main road, day one out of Vulture's Nest. Functional. Not charming. Beds that work, food that's fine. Exists because the road needs it to. One traveler going the other direction, usually.
 
-**The Warden Post** — squat stone building at the center of the farmland. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing livestock report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
+**The Warden Post** — squat stone building at the center of the farmland. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
 
 ---
 
@@ -69,3 +69,4 @@ Instructions after Briarwatch point toward the capital. Not back.
 - `bestiary/briarwatch-jackrabbit.md` — surface encounter at the watchtower ruins
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
+- `bestiary/fenwool.md` — what's actually grazing these fields
