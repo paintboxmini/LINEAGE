@@ -1,6 +1,6 @@
-# Briarwatch Jackrabbit Cards
+# Briarwatch Jackalope Cards
 
-Signature cards for the Briarwatch Jackrabbit. Teaching encounter for positioning mechanics.
+Signature cards for the Briarwatch Jackalope. Teaching encounter for positioning mechanics.
 
 ---
 

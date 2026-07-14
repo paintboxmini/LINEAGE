@@ -10,7 +10,7 @@ The ground is soft. Has always been soft. The limestone underneath is why.
 
 Low hills. Overcast most of the year. Fields that produce reliably but require attention — irrigation channels, drainage, watching the soil after rain. The farmers here know the land by feel. They can tell you which field drains slow and which slopes toward the old well property.
 
-The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the larder fence at the eastern edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackrabbits nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields. Ordinary pest trouble, as far as any farmer here is concerned.
+The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the larder fence at the eastern edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackalopes nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields. Ordinary pest trouble, as far as any farmer here is concerned.
 
 The watchtower ruins on the eastern edge predate Briarwatch itself. Nobody knows who built them or why the border was here. The well at their center has been there the whole time too. Most people ignore it.
 
@@ -66,7 +66,7 @@ Instructions after Briarwatch point toward the capital. Not back.
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
 - `locations/vultures-nest.md` — previous stop on the session 1 route
-- `bestiary/briarwatch-jackrabbit.md` — surface encounter at the watchtower ruins
+- `bestiary/briarwatch-jackalope.md` — surface encounter at the watchtower ruins
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields

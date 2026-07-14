@@ -1,6 +1,6 @@
 # Shifting Burrow
 
-*Surface encounter at the Well Property sinkhole. Alternate to the Watchtower Jackrabbits. Runs before the party descends into the Hollow.*
+*Surface encounter at the Well Property sinkhole. Alternate to the Watchtower Jackalopes. Runs before the party descends into the Hollow.*
 
 ---
 

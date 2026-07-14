@@ -12,7 +12,7 @@ Broad, splay-toed feet, spread wide enough that they don't sink into the limesto
 
 ## Behavior
 
-They graze the hedgerow bramble at the field edges — the same regrowing scrub the Briarwatch Jackrabbits and Briar Scratchers work now that it's theirs too (`locations/briarwatch.md`). Nobody planned that overlap. It's just what's left to eat out there.
+They graze the hedgerow bramble at the field edges — the same regrowing scrub the Briarwatch Jackalopes and Briar Scratchers work now that it's theirs too (`locations/briarwatch.md`). Nobody planned that overlap. It's just what's left to eat out there.
 
 Skittish. Herd tight, and herd tighter than the situation usually calls for. A Fenwool herd goes quiet before anything else on the farm does — Briarwatch keeps half an eye on them the way river folk keep half an eye on the water.
 
@@ -30,6 +30,6 @@ Stonecoils take them when hunting range expands upward (`bestiary/stonecoil.md`)
 
 - `locations/briarwatch.md` — where they're kept
 - `bestiary/stonecoil.md` — one real cause of loss
-- `bestiary/briar-scratcher.md`, `bestiary/briarwatch-jackrabbit.md` — share the same hedgerow forage
+- `bestiary/briar-scratcher.md`, `bestiary/briarwatch-jackalope.md` — share the same hedgerow forage
 - `locations/vultures-nest.md` — Bartho's ledger
 - `experimental/the-man-who-buys-wounds.md` — Weck buys the culls

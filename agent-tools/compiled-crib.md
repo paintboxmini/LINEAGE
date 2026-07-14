@@ -28,7 +28,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 
 | Creature Threat Rating | Reads as | Anchors |
 |---|---|---|
-| 4–6 | teaching creatures: one lesson, simple loop, often disengages | Scratcher 4 · Jackrabbit 5 · Borrower 6 |
+| 4–6 | teaching creatures: one lesson, simple loop, often disengages | Scratcher 4 · Jackalope 5 · Borrower 6 |
 | 8–10 | a real fight: defining passive, interacting cards | Stonecoil 8 · Fogcaller 9 · Fencerow Shrike 9 · Vescal 10 |
 | 11+ | above a player: named threats and bosses; toughness comes from stats | Orin Vane 11 · Root Heart 11 · Masaharu 12 · Minotaur 14 · Trisect 15 |
 

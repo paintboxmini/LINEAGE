@@ -33,7 +33,7 @@ SETS = {
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
         'files': [
-            '../cards/briarwatch-jackrabbit.md',
+            '../cards/briarwatch-jackalope.md',
             '../cards/fencerow-shrike.md',
             '../cards/briar-scratcher.md',
             '../cards/borrower-hollow.md',
