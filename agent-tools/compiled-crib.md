@@ -15,24 +15,24 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - RPS: Blue beats Red beats Green beats Blue. Tie = no damage; attacker's Effect fires first, then Defensive Bonus (damage-amplifying effects do nothing on a tie).
 - Reveals are simultaneous and blind. Defending is a prediction, not a reaction.
 - **Hand size = Mind, minimum 2.** Blocking spends a card; hand is blocking capacity between turns.
-- HP = (2 × Body) + 9 is the baseline every generator offers; bosses may go bespoke, marked explicitly. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Strength = total stats** — the difficulty scale; player baseline is 9.
+- HP = (2 × Body) + 9 is the baseline every generator offers; bosses may go bespoke, marked explicitly. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Creature Threat Rating = total stats** — the difficulty scale; player baseline is 9.
 - Positions: Frontline / Backline. Melee needs both frontline; ranged needs not-both-frontline; "Both" always legal.
 - Initiative: continuous wheel, no rounds. Shift ±X = next turn moves exactly X. **Wait** = forfeit action, choose a later seat (the party's sequencing tool).
 - Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
 - Status cards (Wound, Exhaust) go into decks — the delayed-consequence system.
 - Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Advantage, Anchored, Armour X, Blind, Counter Attack, Debuff, Disadvantage, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward. **No new keywords without discussion.**
 
-## Strength calibration (real anchors)
+## Creature Threat Rating calibration (real anchors)
 
-*(sources: `CLAUDE.md` Stat Blocks; the bestiary files named. Strength = total stats; player baseline 9.)*
+*(sources: `CLAUDE.md` Stat Blocks; the bestiary files named. Creature Threat Rating = total stats; player baseline 9.)*
 
-| Strength | Reads as | Anchors |
+| Creature Threat Rating | Reads as | Anchors |
 |---|---|---|
 | 4–6 | teaching creatures: one lesson, simple loop, often disengages | Scratcher 4 · Jackrabbit 5 · Borrower 6 |
 | 8–10 | a real fight: defining passive, interacting cards | Stonecoil 8 · Fogcaller 9 · Fencerow Shrike 9 · Vescal 10 |
 | 11+ | above a player: named threats and bosses; toughness comes from stats | Orin Vane 11 · Root Heart 11 · Masaharu 12 · Minotaur 14 · Trisect 15 |
 
-Stats read Mind/Body/Soul. If the brief doesn't state a target Strength, ask before building.
+Stats read Mind/Body/Soul. If the brief doesn't state a target Creature Threat Rating, ask before building.
 
 ## Card format + two calibrated exemplars
 
@@ -68,7 +68,7 @@ Enemy deck: **size = total stats, color counts = each stat** (signatures count t
 
 ```
 **Mind X / Body X / Soul X — HP X**
-**Strength:** N
+**Creature Threat Rating:** N
 ```
 
 Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks, sized and colored to the stat line — see `bestiary/fencerow-shrike.md` for the full pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.

@@ -13,13 +13,13 @@ Encounters built without calibration end up the wrong weight for their tier and 
 1. **`agent-tools/compiled-crib.md`** — engine facts, tier anchors, formats, deck and tag conventions, skeletons, tone. This replaces the old full-canon read list for routine work.
 2. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
 3. **Escalate to full canon only when needed:** touching the simulator's own computational correctness → `rules/invariants.md`; checking design quality → `agent-tools/design-principles.md`; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
-4. Target Strength (total stats) not stated in the brief? Ask before building.
+4. Target Creature Threat Rating (total stats) not stated in the brief? Ask before building.
 
 ---
 
 ## Design Constraints
 
-- State the target Strength (total stats; player baseline 9). Low-Strength creatures teach one lesson **through play**; higher-Strength ones layer a defining passive and card synergy. Never teach through explanation.
+- State the target Creature Threat Rating (total stats; player baseline 9). Low-rated creatures teach one lesson **through play**; higher-rated ones layer a defining passive and card synergy. Never teach through explanation.
 - Run on the engine, not around it: positioning, the wheel, hand economy, and status-card pressure are your materials. The strongest twists are the ones the rules enforce for you.
 - Simple, clean effects; no generic damage-only enemies; no new keywords without discussion.
 - Effect and Defensive Bonus on a card should not be near-duplicates.

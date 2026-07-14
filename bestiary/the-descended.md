@@ -17,7 +17,7 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 ---
 
 **Mind 2 / Body 3 / Soul 1 — HP 15**
-**Strength:** 6
+**Creature Threat Rating:** 6
 
 ---
 

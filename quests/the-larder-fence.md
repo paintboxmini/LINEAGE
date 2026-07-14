@@ -1,6 +1,6 @@
 # The Larder Fence
 
-*Standalone encounter at Briarwatch's outer perimeter, well past the last field — the town keeps its farmland and its livestock back from the Turnroot border on purpose. Strength 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
+*Standalone encounter at Briarwatch's outer perimeter, well past the last field — the town keeps its farmland and its livestock back from the Turnroot border on purpose. Creature Threat Rating 9 per Shrike (18 total) — a real fight for a 4-player party, tuned deliberately heavier than a pure teaching mob. Combat with a rhythm, and a wall with teeth.*
 
 ---
 
@@ -24,7 +24,7 @@ There is no farm out this far, and no fence a farmer built. Briarwatch keeps its
 
 **The barbs (Barbed status):** anyone — player or Shrike — moved onto the fence (to Frontline) by an effect they didn't choose themselves (Pull, from either side) is **Barbed**: 1 unpreventable damage on the hook, then 1 more every attack they make, 1 more every successful block, and 1 more when they finally get free (leaving Frontline or working the barb loose in place). Moving there under your own power never hooks you. Full rule: `bestiary/fencerow-shrike.md`, The Fence Itself.
 
-**Enemies:** 2 Fencerow Shrikes (`bestiary/fencerow-shrike.md`, Mind 2/Body 3/Soul 4, HP 15, Strength 9), cycles staggered — one perches while the other dives. Full deck each (9 — 2B/3R/4G): IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*.
+**Enemies:** 2 Fencerow Shrikes (`bestiary/fencerow-shrike.md`, Mind 2/Body 3/Soul 4, HP 15, Creature Threat Rating 9), cycles staggered — one perches while the other dives. Full deck each (9 — 2B/3R/4G): IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*.
 
 ---
 

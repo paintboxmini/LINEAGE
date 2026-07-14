@@ -59,16 +59,16 @@ Range: [Melee / Ranged / Both]
 
 ```
 **Mind X / Body X / Soul X — HP X**
-**Strength:** N
+**Creature Threat Rating:** N
 ```
 
 Three formal rules, uniform for every combatant (players included — the trifecta spreads already obey them):
 
 - **HP = (2 × Body) + 9** is the baseline every generator offers. Most creatures take it as-is. **Bosses may go bespoke** — a boss's HP can depart from formula when the fiction calls for it (a threshold-triggered phase, a set-piece number); mark it explicitly (`*(bespoke — boss exception; formula baseline is N)*`) so the departure is never silent.
 - **Deck size = total stats**, with each color's count equal to its stat (a 1/2/3 creature runs 1 Blue / 2 Red / 3 Green — signature cards count toward their color).
-- **Strength = total stats.** This replaces the Early/Mid/Late tiers as the difficulty scale — precise, comparable, and self-documenting against the player baseline of 9. (Future goal: compute per-card action-economy advantage and fold it into the ranking.)
+- **Creature Threat Rating = total stats.** This replaces the Early/Mid/Late tiers as the difficulty scale — precise, comparable, and self-documenting against the player baseline of 9. (Future goal: compute per-card action-economy advantage and fold it into the ranking.)
 
-If target Strength is not specified in a brief, ask before building.
+If target Creature Threat Rating is not specified in a brief, ask before building.
 
 ### Bestiary Files
 

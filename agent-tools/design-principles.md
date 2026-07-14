@@ -11,7 +11,7 @@ What makes Tales Untold content well-made. Not a rule (`rules/card-glossary.md`)
 - **Fiction and mechanics reinforce one another.** Neither stands alone: a mechanic with no fictional reason is arbitrary; fiction with no mechanical expression is decoration.
 - **Local rules emerge from the environment, not arbitrary exception.** When a place needs a special rule (the Larder Fence's barbs, Shifting Burrow's unstable ground), the rule should read as a discovered property of that place, not a bolt-on carve-out from the general system.
 - **Players learn primarily through interaction.**
-- **Difficulty should be precise and computable, not a vague label.** Total stats (Strength) replaced Early/Mid/Late for exactly this reason — see `CLAUDE.md`, Stat Blocks, for the formula.
+- **Difficulty should be precise and computable, not a vague label.** Total stats (Creature Threat Rating) replaced Early/Mid/Late for exactly this reason — see `CLAUDE.md`, Stat Blocks, for the formula.
 
 ---
 

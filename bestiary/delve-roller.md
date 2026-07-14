@@ -3,7 +3,7 @@
 *Cave floor encounter. Armored digger. Punishes reckless attackers.*
 
 **Mind 1 / Body 2 / Soul 1 — HP 13**
-**Strength:** 4
+**Creature Threat Rating:** 4
 
 **Cards:** `cards/delve-roller-hollow.md`
 

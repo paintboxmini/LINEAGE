@@ -5,7 +5,7 @@
 **Cards:** `cards/fencerow-shrike.md`
 
 **Mind 2 / Body 3 / Soul 4 — HP 15**
-**Strength:** 9
+**Creature Threat Rating:** 9
 
 **Deck (9 — 2 Blue / 3 Red / 4 Green):** IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*
 
@@ -87,7 +87,7 @@ This is encounter-specific terrain language, not a global keyword — it isn't i
 
 The flagship Briarwoods encounter — a real fight, not just a lesson. The Shrike makes turn order visible (its whole threat and its whole weakness live in *when*, not *what*), previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them), and the fence adds a third, physical axis: positioning has teeth here, literally, and a smart party can turn the Shrike's own wall against it. Play the setting for what it is, even if the party never learns it: this is the town's actual edge, the last built thing before the Weald, and something has quietly made a piece of that boundary its own.
 
-At Strength 9 — even with the party, not below it — two Shrikes are a genuine fight, not a teaching mob. Run them with that weight.
+At Creature Threat Rating 9 — even with the party, not below it — two Shrikes are a genuine fight, not a teaching mob. Run them with that weight.
 
 ---
 

@@ -3,7 +3,7 @@
 *High-altitude glider. Almost never encountered alive. What the Fencerow Shrike's larder sometimes holds instead of a hare.*
 
 **Mind 2 / Body 1 / Soul 4 — HP 11**
-**Strength:** 7
+**Creature Threat Rating:** 7
 
 *No signature cards. This is not built as a standard combat encounter — see Tactical Purpose.*
 
@@ -49,7 +49,7 @@ Most days it's what it always is: a vole, a hare, something with a collar. Then,
 
 ## Tactical Purpose
 
-Primarily a discovery, not an encounter — the answer to `quests/the-larder-fence.md`'s "one thing that should not be on a fence in the Briarwoods." Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Strength 7 and HP 11 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
+Primarily a discovery, not an encounter — the answer to `quests/the-larder-fence.md`'s "one thing that should not be on a fence in the Briarwoods." Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Creature Threat Rating 7 and HP 11 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
 
 ---
 

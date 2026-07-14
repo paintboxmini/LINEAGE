@@ -5,7 +5,7 @@
 **Cards:** `cards/briarwatch-jackrabbit.md`
 
 **Mind 1 / Body 1 / Soul 3 — HP 11**
-**Strength:** 5
+**Creature Threat Rating:** 5
 
 ---
 

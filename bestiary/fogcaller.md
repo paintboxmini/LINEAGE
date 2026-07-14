@@ -5,7 +5,7 @@
 **Cards:** `cards/fogcaller-basin.md`
 
 **Mind 2 / Body 4 / Soul 3 — HP 17**
-**Strength:** 9
+**Creature Threat Rating:** 9
 Initiative: 1d6 + 3
 
 ---

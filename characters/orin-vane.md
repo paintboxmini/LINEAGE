@@ -5,7 +5,7 @@
 **Cards:** `cards/orin-vane.md`
 
 **Mind 5 / Body 4 / Soul 2 — HP 17**  
-**Strength:** 11
+**Creature Threat Rating:** 11
 
 **Passive — Dual Strike:** Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire. Hand size is Mind (5).
 

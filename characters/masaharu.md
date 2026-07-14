@@ -7,7 +7,7 @@
 *Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Mind, HP, and card count before use.*
 
 **Mind 5 / Body 3 / Soul 4 — HP 15**
-**Strength:** 12
+**Creature Threat Rating:** 12
 
 **Position:** Backline. He does not come to Frontline.
 
