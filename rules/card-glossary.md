@@ -17,11 +17,11 @@ Two kinds of interference are **not** debuffs and ignore Ward: being made to **d
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
-**Advantage (Damage)**
-Roll twice for your damage die and take the higher result. This applies to combat damage only. For Advantage on skill checks and saves, see `rules/resolution.md`.
+**Deadly**
+The next time you roll attack damage, roll it twice and take the higher result. Replaces "Advantage (Damage)" — that name collided with the unrelated skill-check Advantage (`rules/resolution.md`); this one doesn't. Stacks: each stack applies to one future damage roll, not extra dice on the same roll — 2 stacks means your next two damage rolls each get rolled twice, not one roll of three dice.
 
 **Disadvantage (Damage)**
-Roll twice for your damage die and take the lower result. This applies to combat damage only. For Disadvantage on skill checks and saves, see `rules/resolution.md`.
+Roll twice for your damage die and take the lower result. This applies to combat damage only. For Disadvantage on skill checks and saves, see `rules/resolution.md`. *(Still shares a name with the skill-check version — not yet given the Deadly treatment; same overload, unresolved.)*
 
 **Armour X**
 Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
@@ -111,8 +111,8 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### WOUND
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
-Use your action to permanently remove (destroy) 1 Wound from your hand — quick field first aid, available any time you have an action to spend.
-Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile instead — never from your deck, so you never have to search or track hidden Wounds.
+**Quick field first aid** — permanently remove (destroy) 1 Wound from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Wound per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
+Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds. Short rests chain (`rules/core-rules.md`), so clearing several Wounds in one sitting costs time, not repetition.
 
 ---
 
