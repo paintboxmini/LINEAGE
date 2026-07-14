@@ -49,5 +49,4 @@ Sold: one deck is permanently lighter, one name is somewhere it can't be unsigne
 ## Related Documents
 
 - `rules/card-glossary.md` — WOUND (short-rest removal is the honest version of what Weck sells)
-- `quests/where-the-tracks-stop.md` — he pays best for animals from the crossings
 - `world/tonal-bible.md` — warmth containing something wrong
