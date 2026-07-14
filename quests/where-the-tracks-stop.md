@@ -1,6 +1,6 @@
 # Where the Tracks Stop
 
-*Standalone road encounter, day 2 of the Briarwoods road. Early tier. Combat-optional — a place, not a fight.*
+*Standalone road encounter, day 2 of the road to Briarwatch. Early tier. Combat-optional — a place, not a fight.*
 
 ---
 
@@ -12,7 +12,7 @@ Teach the three Perception modes on a real problem, and teach the older lesson u
 
 ## Setup
 
-Livestock tracks cross the road at intervals in the Briarwoods and don't always continue on the other side. Everyone local knows this. Nobody local stops.
+Livestock tracks cross the road at intervals and don't always continue on the other side. Everyone local knows this. Nobody local stops.
 
 At one crossing, the party has reason to stop — a dropped feed sack, a bleating sound, or simply the tracks themselves: a full set of sheep prints coming out of the bramble, crossing the packed dirt, and ending mid-road. Not scattering. Not doubling back. *Ending,* mid-stride, halfway across.
 
@@ -49,5 +49,4 @@ The crossing does not resolve. That is the encounter. What the party leaves with
 
 ## Related Documents
 
-- `locations/briarwoods.md` — the tracks are already canon there; this is one of them, stopped at
 - `rules/core-rules.md` — Perception modes and DCs

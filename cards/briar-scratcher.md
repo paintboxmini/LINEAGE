@@ -5,7 +5,7 @@ Signature cards for the Briar Scratcher. See `bestiary/briar-scratcher.md`.
 ---
 
 **RAKING CUT**
-RED — BODY — BRIARWOODS
+RED — BODY — BRIARWATCH
 Attack: Body + d2
 Effect: On hit, shuffle 1 Wound into target's deck.
 Defensive Bonus: Attacker shuffles 1 Wound into their own discard.
@@ -15,7 +15,7 @@ Range: Melee
 ---
 
 **SKITTER AWAY**
-BLUE — MIND — BRIARWOODS
+BLUE — MIND — BRIARWATCH
 Attack: Mind + d2
 Effect: After attack, may reposition.
 Defensive Bonus: Gain Evade.
@@ -25,7 +25,7 @@ Range: Both
 ---
 
 **NIP AND TEAR**
-GREEN — SOUL — BRIARWOODS
+GREEN — SOUL — BRIARWATCH
 Attack: Soul + d2
 Effect: If target has a Wound in their deck, deal +2 damage.
 Defensive Bonus: Heal 1.

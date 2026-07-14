@@ -54,7 +54,7 @@ Signature card (one source tag = where it's obtained, per `world/lineage.md`; ti
 
 ```
 **WATCHFUL PERCH**
-GREEN — SOUL — BRIARWOODS
+GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
 Effect: Move to the Backline and gain Evade.
 Defensive Bonus: Apply Initiative Shift +2 to yourself.

@@ -21,7 +21,7 @@ This corridor is called **The Spine of Eclipsera**. The Regency maintains it bec
 - The Roadhouse sits at the exact midpoint — 1 day from each
 
 **Side roads off the Kings Road at the Roadhouse:**
-- West → Briarwatch (and the Briarwoods)
+- West → Briarwatch
 - Northeast → Glasslight Reach via an inland route that bypasses the capital. This road splits at least once — one branch leads to Havenrise.
 
 The northeast bypass is how travelers reach Glasslight without passing through Eclipsera. Elias used it coming south. It is less maintained than the Kings Road proper.

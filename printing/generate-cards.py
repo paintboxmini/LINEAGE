@@ -46,7 +46,7 @@ SETS = {
         'type': 'items',
         'files': [
             '../items/consumables.md',
-            '../items/briarwoods-items.md',
+            '../items/briarwatch-items.md',
             '../items/vultures-nest-items.md',
         ],
     },

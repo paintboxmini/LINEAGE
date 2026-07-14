@@ -1,6 +1,6 @@
 # Fencerow Shrike
 
-*Road encounter at Briarwatch's outer perimeter — the town's boundary against Turnroot Weald, well past any farmland. Teaches turn-order reading — strike windows, sequencing, and the Wait action.*
+*Road encounter at Briarwatch's outer perimeter — its boundary against Turnroot Weald, well past any farmland. Teaches turn-order reading — strike windows, sequencing, and the Wait action.*
 
 **Cards:** `cards/fencerow-shrike.md`
 
@@ -25,7 +25,7 @@ The fence is two things wearing one name. The wire and bramble between the posts
 
 ## GM Secret — Not Player-Facing
 
-The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both as a plain stone perimeter to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to the town it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works.
+The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both as a plain stone perimeter to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to them it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works.
 
 The oversized thorns are not the Masons' work and not the Weald's either, not directly — **the Shrikes did this.** Their stretch of the plain stone perimeter has been adapted, generation over generation, with thorn-brush pulled in from the Weald itself and worked into the wire until it grew into what it is now. Nobody built this larder fence on purpose. The birds did, slowly, out of material that was never supposed to cross the line the fence exists to hold.
 
@@ -85,7 +85,7 @@ This is encounter-specific terrain language, not a global keyword — it isn't i
 
 ## Tactical Purpose
 
-The flagship Briarwoods encounter — a real fight, not just a lesson. The Shrike makes turn order visible (its whole threat and its whole weakness live in *when*, not *what*), previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them), and the fence adds a third, physical axis: positioning has teeth here, literally, and a smart party can turn the Shrike's own wall against it. Play the setting for what it is, even if the party never learns it: this is the town's actual edge, the last built thing before the Weald, and something has quietly made a piece of that boundary its own.
+The flagship Briarwatch encounter — a real fight, not just a lesson. The Shrike makes turn order visible (its whole threat and its whole weakness live in *when*, not *what*), previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them), and the fence adds a third, physical axis: positioning has teeth here, literally, and a smart party can turn the Shrike's own wall against it. Play the setting for what it is, even if the party never learns it: this is Briarwatch's actual edge, the last built thing before the Weald, and something has quietly made a piece of that boundary its own.
 
 At Creature Threat Rating 9 — even with the party, not below it — two Shrikes are a genuine fight, not a teaching mob. Run them with that weight.
 
@@ -95,7 +95,7 @@ At Creature Threat Rating 9 — even with the party, not below it — two Shrike
 
 - `quests/the-larder-fence.md` — the full encounter
 - `bestiary/skeinwing.md` — not prey, never hunted; the rare, impossible thing the larder sometimes holds by accident
-- `locations/briarwoods.md`, `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory
+- `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory
 - `factions/the-masons.md` — Known Works; the GM Secret above
 - `rules/combat.md` — the Wait action this creature teaches
 - `rules/card-glossary.md` — Exile (Thorn Larder), Unpreventable (the barbs)

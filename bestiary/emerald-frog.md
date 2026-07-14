@@ -1,6 +1,6 @@
 # Emerald Frog
 
-A forest frog. Vivid green, smooth-skinned, roughly the size of a thumb. Found in damp undergrowth near standing water — common in temperate forests, less common in the Briarwoods where the soil drains fast.
+A forest frog. Vivid green, smooth-skinned, roughly the size of a thumb. Found in damp undergrowth near standing water — common in temperate forests, less common in the limestone country around Briarwatch, where the soil drains too fast.
 
 The size is a function of habitat, not deficiency. Emerald Frogs from wetter, richer environments grow slightly larger. The ones Senshi sources come from a specific woodland region with mineral-rich groundwater. He considers them better.
 

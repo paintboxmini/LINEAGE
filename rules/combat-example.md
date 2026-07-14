@@ -1,4 +1,4 @@
-# A Worked Combat — Briarwoods Road
+# A Worked Combat — The Road to Briarwatch
 
 A complete combat played out beat by beat, with every rule cited as it fires. Written as engine reference — if you are a person or an AI trying to understand how Tales Untold combat actually resolves, read this after `rules/core-rules.md` and `rules/combat.md`.
 

@@ -1,6 +1,6 @@
-# Briarwoods — Items
+# Briarwatch — Items
 
-Consumables and equipment found in or around the Briarwoods region. Sources noted per item.
+Consumables and equipment found in or around Briarwatch. Sources noted per item.
 
 ---
 

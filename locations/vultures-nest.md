@@ -109,7 +109,7 @@ If the party passes through the Scratcher encounter: *"You've been marked. The w
 
 **The Sealed Letter**
 
-At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwoods-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
 
 The letter reads:
 
@@ -198,7 +198,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 - *Ignore it:* It opens on its own later. DM chooses when.
 - *Carry it:* Bad idea. The party will figure out why.
 
-Someone brought it in from the Briarwoods direction. Nobody claimed it.
+Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 ---
 
