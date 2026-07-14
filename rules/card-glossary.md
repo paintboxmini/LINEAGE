@@ -30,10 +30,10 @@ Reduce all incoming attack damage by X. Applies before Resist. Stacks with other
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
-50% chance to miss. When Blind, roll 1d2 before selecting a card to attack with. On a 1, the attack fails entirely. Lasts until the end of your next turn unless the card specifies otherwise.
+50% chance to miss. When an attacker with Blind attacks, roll 1d2 at the same moment as any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is still discarded, same as a missed Evade (it was already committed before this check fires). Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack — Blind is about the attacker's own affliction, Evade is the defender's dodge.
 
 **Evade**
-50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely. Expires after the next attack targeting you, whether or not it triggers.
+50% chance to dodge the next attack declared against you, resolved before you select a card to defend with — the same moment a Blind check on the attacker would also fire (see Blind). Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is still discarded, since it was already played and committed before this check fires. Expires after the next attack targeting you, whether or not it triggers.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
@@ -65,13 +65,13 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks.
 
 **Rooted**
-Cannot change position until the start of your next turn.
+Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
 
 **Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **Quick**
-On your next turn, you may change positions without spending your action.
+On your next turn, you may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
 
 **Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
@@ -86,7 +86,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **Ward**
-Prevent the next debuff applied to you. Expires on use.
+Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.
 
 ---
 
@@ -111,19 +111,15 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### WOUND
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
-You may use your action to discard this card.
-*Effect when discarded: none.*
-Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds.
+Use your action to permanently remove (destroy) 1 Wound from your hand — quick field first aid, available any time you have an action to spend.
+Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile instead — never from your deck, so you never have to search or track hidden Wounds.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
-Cannot be played.
-When discarded, take 2 damage.
-At the end of your turn, you may instead discard this card and apply Initiative Shift -1 to yourself.
-Use your action to remove all Exhaust cards from your hand — removal this way is exile, not a discard, so it deals no damage.
-All Exhaust cards are removed from your deck at short rest.
+Cannot be played. It stays in your hand and occupies a card slot — an Exhaust does not leave on its own.
+Use your action to permanently remove all Exhaust cards from your hand. That's the only way to clear them.
 
 ---
 
