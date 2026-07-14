@@ -20,8 +20,8 @@ Enemies cannot look at or manipulate your hand or deck. Does not prevent status 
 **Deadly**
 The next time you roll attack damage, roll it twice and take the higher result. Replaces "Advantage (Damage)" — that name collided with the unrelated skill-check Advantage (`rules/resolution.md`); this one doesn't. Stacks: each stack applies to one future damage roll, not extra dice on the same roll — 2 stacks means your next two damage rolls each get rolled twice, not one roll of three dice.
 
-**Disadvantage (Damage)**
-Roll twice for your damage die and take the lower result. This applies to combat damage only. For Disadvantage on skill checks and saves, see `rules/resolution.md`. *(Still shares a name with the skill-check version — not yet given the Deadly treatment; same overload, unresolved.)*
+**Weak**
+The next time you roll attack damage, roll it twice and take the lower result. Replaces "Disadvantage (Damage)" — the same overload Deadly resolved on the other side, now closed here too. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **Armour X**
 Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.

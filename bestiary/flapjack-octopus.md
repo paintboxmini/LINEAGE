@@ -18,7 +18,7 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 ## Passives
 
 **Floor Mimic**
-While stationary and Flattened, requires a DC 14 Mind/Observe check to detect. Attacks against an undetected Octopus have Disadvantage until detected or until it attacks.
+While stationary and Flattened, requires a DC 14 Mind/Observe check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
 
 **Self-Tenderizing**
 While Flattened, gains Armour 1 from natural compression of its body.

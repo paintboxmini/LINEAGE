@@ -32,7 +32,7 @@ Use: Heal 2 HP.
 
 **DOCK BROTH**
 *Consumable — Hot, murky, smells like low tide*
-Use: Remove 1 status card from your deck. Gain Disadvantage on your next damage roll.
+Use: Remove 1 status card from your deck. Gain Weak on your next damage roll.
 
 ---
 

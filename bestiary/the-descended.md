@@ -24,7 +24,7 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 ## Passives
 
 **Dark-Adapted**
-The Descended see perfectly in total darkness. Players without a light source have Disadvantage on attacks against them.
+The Descended see perfectly in total darkness. Players without a light source have Weak on attacks against them.
 
 **Vibration Sense**
 The Descended feel movement through the rock. Any impact on the shelf floor — a body falling, a failed check, a forced crossing — triggers their attention. If a vibration event occurs during navigation or combat, summon 1d4 additional Descended from the far section of the shelf.
