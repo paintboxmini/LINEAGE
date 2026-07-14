@@ -12,6 +12,8 @@ Low hills. Overcast most of the year. Fields that produce reliably but require a
 
 The watchtower ruins on the eastern edge predate the town. Nobody knows who built them or why the border was here. The well at their center has been there the whole time too. Most people ignore it.
 
+Valhug Lake sits a short walk past the ruins — deep, cold, and, until last season, the one thing out there nobody worried about.
+
 A sinkhole opened last season. The first one in living memory. It won't be the last.
 
 ---
@@ -29,6 +31,8 @@ Warden culture is practical and quiet. They don't talk much about what's under t
 ## Notable Locations
 
 **The Well Property** — eastern farmland, bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
+
+**Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole — it just never broke the surface here. No visible inlet, no visible outlet; farmers who've fished it their whole lives call it the one part of this ground that never changes. Since the sinkhole, a few have started wondering if that's still true.
 
 **The Roadhouse** — government inn on the main road, day one out of Vulture's Nest. Functional. Not charming. Beds that work, food that's fine. Exists because the road needs it to. One traveler going the other direction, usually.
 
