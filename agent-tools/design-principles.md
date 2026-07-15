@@ -15,4 +15,4 @@ What makes Tales Untold content well-made. Not a rule (`rules/card-glossary.md`)
 
 ---
 
-The Fencerow Shrike (`bestiary/fencerow-shrike.md`) is the current strongest exemplar of several of these at once — see `agent-tools/exemplars.md` for why it's worth reading, not for a template to copy.
+The Tollbird (`bestiary/tollbird.md`) is the current strongest exemplar of several of these at once — see `agent-tools/exemplars.md` for why it's worth reading, not for a template to copy.

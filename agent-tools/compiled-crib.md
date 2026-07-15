@@ -29,14 +29,14 @@ Read this + the target's location/bestiary file + anything your specific task ac
 | Creature Threat Rating | Reads as | Anchors |
 |---|---|---|
 | 4–6 | teaching creatures: one lesson, simple loop, often disengages | Scratcher 4 · Jackalope 5 · Borrower 6 |
-| 8–10 | a real fight: defining passive, interacting cards | Stonecoil 8 · Fogcaller 9 · Fencerow Shrike 9 · Vescal 10 |
+| 8–10 | a real fight: defining passive, interacting cards | Stonecoil 8 · Fogcaller 9 · Tollbird 9 · Vescal 10 |
 | 11+ | above a player: named threats and bosses; toughness comes from stats | Orin Vane 11 · Root Heart 11 · Masaharu 12 · Minotaur 14 · Trisect 15 |
 
 Stats read Mind/Body/Soul. If the brief doesn't state a target Creature Threat Rating, ask before building.
 
 ## Card format + two calibrated exemplars
 
-*(sources: `CLAUDE.md` card format; `cards/green-soul.md`; `cards/fencerow-shrike.md`)*
+*(sources: `CLAUDE.md` card format; `cards/green-soul.md`; `cards/tollbird.md`)*
 
 Core card (universal — no tag; die philosophy: d6 power / d4 utility / d2 precision):
 
@@ -71,7 +71,7 @@ Enemy deck: **size = total stats, color counts = each stat** (signatures count t
 **Creature Threat Rating:** N
 ```
 
-Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks, sized and colored to the stat line — see `bestiary/fencerow-shrike.md` for the full pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.
+Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks, sized and colored to the stat line — see `bestiary/tollbird.md` for the full pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.
 
 ## Encounter skeleton
 

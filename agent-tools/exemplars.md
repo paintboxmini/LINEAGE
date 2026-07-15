@@ -8,7 +8,7 @@ This is a short, curated list, not an index. If everything ends up in here, noth
 
 ## Confirmed
 
-- **The Fencerow Shrike** (`bestiary/fencerow-shrike.md`, `cards/fencerow-shrike.md`, `quests/the-larder-fence.md`) — its deck is a collection of its behaviors (the dive/perch rhythm, Thorn Larder's Exile as literal storage); its terrain rule (Barbed, the post/wire split, Rushdown genuinely unable to reach something perched) is a local rule that emerged from the environment rather than an arbitrary exception; the encounter teaches turn-order reading through the rhythm itself, never through a GM's explanation.
+- **The Tollbird** (`bestiary/tollbird.md`, `cards/tollbird.md`, `quests/the-larder-fence.md`) — its deck is a collection of its behaviors (the dive/perch rhythm, Thorn Larder's Exile as literal storage); its terrain rule (Barbed, the post/wire split, Rushdown genuinely unable to reach something perched) is a local rule that emerged from the environment rather than an arbitrary exception; the encounter teaches turn-order reading through the rhythm itself, never through a GM's explanation.
 
 ## Candidates — proposed, not yet confirmed
 

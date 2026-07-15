@@ -1,6 +1,6 @@
 # Skeinwing
 
-*High-altitude glider. Almost never encountered alive. What the Fencerow Shrike's larder sometimes holds instead of a young jackalope.*
+*High-altitude glider. Almost never encountered alive. What the Tollbird's larder sometimes holds instead of a young jackalope.*
 
 **Mind 2 / Body 1 / Soul 4 — HP 11**
 **Creature Threat Rating:** 7
@@ -37,7 +37,7 @@ It almost never descends below the treeline. Not caution — arithmetic. Every a
 
 It does not die because it is weak. Up where it lives, nothing touches it — nothing else is built to be there, and it is built for nothing else. It dies because everything that makes it extraordinary at altitude means nothing on the ground. Blind, it never needed sight. Fragile, it never needed to survive a hit. Slow to react to a lunge, it never needed to — nothing lunges at six thousand feet. A creature this specialized doesn't have a weak point down here. It doesn't have a here at all. That's the whole tragedy in one sentence: it isn't out of its depth. It's out of its entire premise.
 
-The Fencerow Shrike (`bestiary/fencerow-shrike.md`) doesn't hunt these. It hunts the fence line, the road, the low and the slow and the small. A Skeinwing in the larder isn't a kill. It's a mistake that happened to end near a fence.
+The Tollbird (`bestiary/tollbird.md`) doesn't hunt these. It hunts the fence line, the road, the low and the slow and the small. A Skeinwing in the larder isn't a kill. It's a mistake that happened to end near a fence.
 
 ---
 
@@ -56,5 +56,5 @@ Primarily a discovery, not an encounter — the answer to `quests/the-larder-fen
 ## Related Documents
 
 - `quests/the-larder-fence.md` — where it's most likely to be found, and dead
-- `bestiary/fencerow-shrike.md` — the creature whose larder it ends up in, and why that isn't a hunt
+- `bestiary/tollbird.md` — the creature whose larder it ends up in, and why that isn't a hunt
 - `locations/turnroot-weald.md` — the wider sky it's native to, listed under Flora & Fauna
