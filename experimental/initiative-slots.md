@@ -1,6 +1,8 @@
 # Initiative — Slots, Not Seats (working draft)
 
-**Status: NOT CANON.** Drew: "we still aren't quite there yet." This is a live design thread, not a ruling — `rules/card-glossary.md`'s Initiative Shift X entry and `rules/combat.md`'s fence/marker text are unchanged and still govern actual play until this resolves.
+**Status: NOT CANON, intentionally simmering.** Drew: "let's keep that simmering in the background for now... I think I may need to solve this away from the repo and bring it the replacement." `rules/card-glossary.md`'s Initiative Shift X entry and `rules/combat.md`'s fence/marker text are unchanged and still govern actual play until Drew brings back a resolved version — this file may end up wholly superseded rather than incrementally built on, and that's fine.
+
+**This doesn't block card design.** Drew: "it's a fundamental game pillar but funnily it doesn't have to be finished in order to create on top of it. initiative shift +/- 1-3 on cards is safely established. as long as we don't expand beyond that, then the core system can rise to meet it." Guardrail recorded in `agent-tools/compiled-crib.md`: new cards may use Initiative Shift X, but stay within ±1–3 until this thread resolves.
 
 ---
 
