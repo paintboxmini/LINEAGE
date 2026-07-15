@@ -6,17 +6,19 @@
 
 ## The Island
 
-Stone. Flat and dark, barely above the waterline when it surfaces. No vegetation. No shelter. The labyrinth entrance is the only feature — a low arch cut into rock, deliberate, old. Something built this. Nobody remembers who.
+Not stone — or not only stone. What looks like flat, dark rock barely above the waterline is scaled hide gone hard and grey with age, the pattern only visible if you already know to look for it. It doesn't move while the party is on it. It is not dead either. The water around it runs a few degrees warmer than the rest of the lake, in every season.
 
-The walls inside are taller than the island looks from the water. Dry stone, close-fitted. The passages are wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
+The labyrinth entrance is the only obvious feature — a low arch, deliberate, old, stonework fitted into an opening that wasn't originally there. Something built this. Nobody remembers who.
+
+The walls inside are taller than the coil looks from the water. Dry stone, close-fitted, laid by whoever cut the first passage through and kept building once they were inside. The passages are wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
 
 ---
 
 ## Appearance Conditions
 
-The island surfaces from the lake on a condition the Night Ferryman knows and has not explained. It does not stay. How long it remains above water: he knows this too. He has never missed it. The lake is deep enough that nobody has an account of where the island goes when it isn't there.
+There is no fixed condition, because there is no schedule — only a body large enough that a lake can hide most of it, and restless enough that some part of it eventually breaks the surface. What the Night Ferryman knows, and has never fully explained, is how to read that restlessness before it happens. He has never missed it. How long a surfaced coil stays above water: he knows that too, the same way. The lake is deep enough that nobody has an account of where the rest of it goes, or what it's doing, the remaining time.
 
-*Develop the appearance condition when it becomes relevant to the story.*
+*Develop exactly what the Ferryman is reading — sound, current, something else — when it becomes relevant to the story.*
 
 ---
 
@@ -186,7 +188,7 @@ Chitterers are nearby. Watching. They chitter with low urgency when the party ge
 
 Somewhere in the labyrinth, the passage descends. Stone steps cut into the floor, uneven, worn. The walls narrow. The air is wetter and colder. Sound behaves differently down here — the minotaurs' cries, when they come, seem to rise from above rather than approach from ahead. It's disorienting. The party will know they've been navigating correctly, but the sounds will make them feel like they haven't.
 
-The underground is not a separate labyrinth. It weaves back into the upper passages at unpredictable points. The wall-following rule still applies. The glowing thread still appears. The pressure track carries over.
+The underground is not a separate labyrinth. It's a different ring of the same coil, and the passage between them isn't always where it used to be. Whoever built this cut one continuous path from the entrance to the center once — the wear on the walls still shows it, in places, running through sections that no longer connect to anything. Time, and the body underneath it, have collapsed some of that original path; the underground is where those collapses redirected. The wall-following rule still applies. The glowing thread still appears. The pressure track carries over.
 
 *Each module below works in the upper or lower level. The GM assembles them in whatever order suits the session.*
 
@@ -330,9 +332,21 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 
 ## The Center
 
-The passage widens. The stone is older here — different cut, different color. Whatever is in the center has been here longer than the labyrinth around it.
+The passage widens. The stone here isn't stone anymore, or hasn't been for a long time — the walls curve in a way no mason built, old bone showing through where the reinforcing stonework has finally given out. Whatever is in the center has been here longer than the labyrinth around it, because the labyrinth was cut through to reach it, not built to contain it.
 
-*Story item. Develop when relevant — the labyrinth is a trial for the party's bonds. What they find at the center should reflect how they navigated.*
+*Develop what the party actually finds here when the story knows what it needs — see The Nagamani, below, for what's known about it. The labyrinth is a trial for the party's bonds; what they find at the center should reflect how they navigated.*
+
+---
+
+## The Nagamani
+
+A jewel said to grow in the skull of a great serpent — luminous, fiercely guarded, old folklore told in Vulture's Nest and further out, always about wealth and power for whoever claims it. Nobody who tells the story has been to the center. Nobody who's actually been to the center tells the story the way it gets told.
+
+It is real. It is also nothing close to the size the legend imagines — not a stone you could pocket, closer to a boulder fused into what's left of a skull, and no party that reaches it is carrying it back out. What the legend gets right by accident: a separate, cruder tradition holds that a stone from a serpent's head can draw the venom from a wound. The two traditions aren't usually about the same kind of stone. They are here.
+
+The few who've actually reached the center and lived mostly didn't come for the cure. They came for the legend everyone already knows — and found out, somewhere between the entrance and here, that they needed the other one instead. What they leave with isn't wealth. It's still breathing.
+
+Their accounts, on the rare occasion one gets told at all, don't spread. A story with no proof, about a jewel nobody can produce, competes badly against a story where the ending is a mountain of gold — and loses, every time, to the version people already wanted to believe. The truth doesn't get suppressed. It just isn't as good a story as the lie it's replacing.
 
 ---
 
@@ -354,13 +368,15 @@ The passage widens. The stone is older here — different cut, different color. 
 
 **What the Ferryman is waiting for.** He rows parties there without explanation. He doesn't go in. He doesn't look at the entrance while he waits.
 
-**The appearance condition.** He knows when the island surfaces. He has never missed it. The source of that knowledge is not documented.
+**Exactly what the Ferryman is reading.** He predicts the coil's movement before it surfaces. How — sound, current, something else — is not documented.
 
-**The center.** Left open deliberately. Build toward it when the story knows what it needs.
+**What the party finds at the center, specifically.** The Nagamani is there; what state it's in, and what happens when someone actually reaches it, is left open deliberately. Build toward it when the story knows what it needs.
+
+**Whether a rescue has ever arrived in time.** The Coil rewards patience everywhere except here. Nobody knows if "in time" has ever actually happened, or if the stories about it are exactly as distorted as the stories about the treasure.
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 
-**Why it was built.** The labyrinth is not natural. The rule is not accidental. Someone designed both. That someone is not a thread to pull until the center is decided.
+**Why it was built.** The labyrinth is not natural. The rule is not accidental. Someone cut this path through something that was already there and already old. That someone is not a thread to pull until the center is decided.
 
 ---
 
