@@ -11,9 +11,13 @@
 
 ## Appearance
 
-Something the size of a cat, maybe smaller — hard to say, because it doesn't hold its edges. In full light it's an ordinary dark shape; nobody's gotten close enough in good light to be sure of much else. In dusk, in shadow, anywhere the light is already losing, it comes apart at the outline — a shape wearing more shape than it needs, the extra spilling off like smoke around a flame that hasn't decided how big to burn.
+Cat-sized, low to the ground, body long and narrow — built for slipping through gaps, not covering open ground. Six legs, thin as fingers, each ending in a soft pad instead of a claw. It doesn't need to grip anything. It needs to not be heard.
 
-It has eyes. Everyone agrees on that much. Nothing agrees on how many, or where.
+The coat is a flat, matte black, short-furred, with none of the shine a normal coat throws back at a torch. Down its spine, skull to tail-tip, runs a single unbroken seam of skin thinner than the rest — the wick. It glows: a low amber line banked like a coal, brightening or dimming with the creature's own state rather than the light around it.
+
+It has no eyes. Where eyes would sit on anything else, there's just more of the same flat fur, unbroken. It doesn't need them. The wick reads the room for it.
+
+The tail is the longest part of it, whip-thin, and it's the last thing that stops moving when the rest of the body goes still.
 
 ---
 
