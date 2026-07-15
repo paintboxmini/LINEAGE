@@ -14,7 +14,7 @@ The farmland doesn't stop at a tidy line — it was cut a little way into the We
 
 The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the center is dried up.
 
-Valhug Lake sits in the center of Briarwatch — deep and cold
+Valhug Lake sits in the center of Briarwatch — deep and cold.
 
 A sinkhole opened last season. The first one in living memory. It won't be the last.
 
