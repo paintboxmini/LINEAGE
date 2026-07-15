@@ -36,9 +36,7 @@ Warden culture is practical and quiet. They don't talk much about what's under t
 
 **Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole — it just never broke the surface here. No visible inlet, no visible outlet; farmers who've fished it their whole lives call it the one part of this ground that never changes. Since the sinkhole, a few have started wondering if that's still true.
 
-**The Roadhouse** — government inn on the main road, day one out of Vulture's Nest. Functional. Not charming. Beds that work, food that's fine. Exists because the road needs it to. One traveler going the other direction, usually.
-
-**The Warden Post** — squat stone building at the center of the farmland. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
+**The Warden Post** — squat stone building at the fork where the road finally reaches Briarwatch's fields, day two out of Vulture's Nest. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
 
 ---
 
@@ -65,6 +63,7 @@ Instructions after Briarwatch point toward the capital. Not back.
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
+- `locations/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `locations/vultures-nest.md` — previous stop on the session 1 route
 - `bestiary/briarwatch-jackalope.md` — surface encounter at the watchtower ruins
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
