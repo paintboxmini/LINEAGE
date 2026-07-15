@@ -218,7 +218,7 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 **The Desire Compass** — points where you want to go. Not where you're trying to go. Where you *want* to go. Meaningful distinction in a world where naming a destination changes routing.
 
-**The Warden's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Warden who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
+**The Guard's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Roadhouse guard who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
 

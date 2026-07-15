@@ -32,7 +32,11 @@ One handles the register and the door. Checks it when the party arrives, checks 
 
 They won't start trouble. They will finish it. If the party is cooperative and unremarkable, the guards are furniture.
 
-**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub and a log of road incidents. Guests don't go back there. The door is never locked.
+Their duty runs past the inn's front door — thick-soled boots and waterproofed gear that see real use, not just standard issue. They cover what falls between towns on the Briarwatch side: disappeared Fenwool (`bestiary/fenwool.md`), strangers on the road, anything that comes up out of the ground. A guard, a rotation or two back, stopped returning from a patrol toward the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody went looking.
+
+Guard culture out here is practical and quiet. They don't talk much about what's under the ground. They know it's there.
+
+**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub, a log of road incidents, and the notice board — bounties and local alerts posted alongside it. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of Briarwatch's fields that one of the guards wrote and then didn't sign. Guests don't go back there. The door is never locked.
 
 *Contents for curious parties:*
 
@@ -47,18 +51,6 @@ Below the printed text, added in smaller handwriting and different ink:
 *"— anything from the docks that isn't in the manifest."*
 
 Nobody signed it.
-
----
-
-## The Wardens
-
-Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared Fenwool (`bestiary/fenwool.md`), strangers on the road, anything that comes up from below.
-
-One Warden stopped returning from the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody from Briarwatch went looking.
-
-Warden culture is practical and quiet. They don't talk much about what's under the ground. They know it's there.
-
-**The Warden Post** — squat stone building at the fork, where the standard path finally reaches Briarwatch's fields. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
 
 ---
 
