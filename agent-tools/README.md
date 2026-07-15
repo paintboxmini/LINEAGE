@@ -18,8 +18,6 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 | `card-compression.md` | A card set has grown bloated — recombine weak components into fewer, denser cards |
 | `alignment-checker.md` | Checking whether content fits its intended context (includes Soul Pass) |
 | `player-perspective.md` | Stress-testing content from a first-time player's point of view |
-| `prompt-refinement.md` | Optional — run after any task to improve the prompt used |
-| `meta-agent.md` | Run when a more effective methodology is identified during a session |
 
 ---
 
@@ -35,7 +33,6 @@ These prompts are not optional when their trigger condition is met. Run them wit
 | Any content touching an existing location, faction, or NPC | `alignment-checker.md` |
 | Any content that will be presented to Drew for canon approval | `alignment-checker.md` + Soul Pass |
 | Any new NPC with a combat role | `player-perspective.md` |
-| A more effective methodology is identified during a session | `meta-agent.md` |
 
 ---
 

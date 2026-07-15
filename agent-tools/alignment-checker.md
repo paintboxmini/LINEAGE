@@ -67,5 +67,3 @@ Return only refined additions or changes.
 ---
 
 *Note: Check against `red-team.md`'s Visible Reasoning section before presenting — if design thinking is readable in the output, it didn't finish.*
-
-*Optional: run `prompt-refinement.md` after completing this task.*

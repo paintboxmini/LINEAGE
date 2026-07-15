@@ -158,7 +158,3 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`
 - Existing cards for redundancy: `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`
-
----
-
-*Optional: run `prompt-refinement.md` after completing this task.*

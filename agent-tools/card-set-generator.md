@@ -66,7 +66,3 @@ After generating 9 cards, run the red team pass (`red-team.md`). Fix or replace 
 - Keyword definitions: `rules/card-glossary.md`
 - Card examples: `cards/alignment-marshal-engine.md`, `cards/stonecoil-hollow.md`
 - Loop rules: `experimental/README.md`
-
----
-
-*Optional: run `prompt-refinement.md` after completing this task.*
