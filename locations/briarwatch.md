@@ -1,6 +1,6 @@
 # Briarwatch
 
-Farmland a day's travel northeast of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Stone fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
+Farmland a day's travel northeast of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Red dirt roads, waist-high wood fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
 
 The ground is soft. Has always been soft. The limestone underneath is why.
 
@@ -8,7 +8,7 @@ The ground is soft. Has always been soft. The limestone underneath is why.
 
 ## The Place
 
-Low hills. Overcast most of the year. Fields that produce reliably but require attention — irrigation channels, drainage, watching the soil after rain. The farmers here know the land by feel. They can tell you which field drains slow and which slopes toward the old well property.
+Low hills. Overcast most of the year. Fields that produce reliably but require attention — irrigation channels, drainage, watching the soil after rain. Red dirt roads run between the fields, waist-high wood fences marking where one farm ends and the next begins — nothing built to keep anything out, just to keep the Fenwool from wandering. A handful of farmhouses sit spaced along them, weathered the same gray as the sky. The farmers here know the land by feel. They can tell you which field drains slow and which slopes toward the old well property.
 
 The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the larder fence at the eastern edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackalopes nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields. Ordinary pest trouble, as far as any farmer here is concerned.
 
