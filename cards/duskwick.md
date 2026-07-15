@@ -15,8 +15,8 @@ Range: Melee
 **HALF-SEEN**
 BLUE — MIND
 Attack: Mind + d2
-Effect: This reveal doesn't count. For the rest of combat, effects that check your last-played color skip it.
-Defensive Bonus: Look at the attacker's hand.
+Effect: Look at the Defenders hand and discard 1 of them.
+Defensive Bonus: Gain Obscure
 Range: Both
 *"You're not sure you saw it at all."*
 
@@ -26,6 +26,6 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d6
 Effect: If you are below half HP, you gain Deadly this attack.
-Defensive Bonus: If you are below half HP, gain Resist.
+Defensive Bonus: If you are below half HP, gain Resist and Evade.
 Range: Both
 *"Brightest, right before the dark."*
