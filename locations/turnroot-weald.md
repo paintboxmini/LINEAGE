@@ -35,8 +35,6 @@ Notable species:
 
 The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
 
-The basin — and Briarwatch with it — sits on the Weald's western side. The Ashfall Wastes lie on the other side entirely; putting a basin settlement on the Weald's eastern edge would put it in Ashfall, not farmland.
-
 ---
 
 ## GM Secret — Not Player-Facing
