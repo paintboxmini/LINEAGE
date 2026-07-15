@@ -22,7 +22,7 @@ The day begins under thick cloud cover. The air carries the smell of wet soil. F
 >
 > *"Thanks for coming. Was starting to think nobody would. Lost a dozen head when the ground opened up. There's an old well on the property. Leads down into caves. Always knew it was there. Never thought it'd matter."*
 
-**The farmer's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `experimental/duskwick.md`.
+**The farmer's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick.md`.
 
 ---
 

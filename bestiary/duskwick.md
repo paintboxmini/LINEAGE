@@ -1,13 +1,15 @@
 # Duskwick
 
+*A small nocturnal predator found in Eclipsera and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
+
+**Cards:** `cards/duskwick.md`
+
 **Mind 4 / Body 2 / Soul 5 — HP 13**
 **Creature Threat Rating:** 11
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
 
-Found in Eclipsera and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
-
-*Signature cards below still carry no tag — it isn't tied to one place the way a single-source creature would be, and it wasn't obtained from anywhere. It just showed up.*
+Not tied to one place the way a single-source creature is, and not obtained from anywhere — signature cards carry no tag. It just shows up. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet.
 
 ---
 
@@ -33,36 +35,7 @@ It doesn't press an opening it doesn't need. A clean shot gets a bite and a retr
 
 ---
 
-**SNUFF**
-RED — BODY
-Attack: Body + d4
-Effect: If this attack deals damage, target gains Blind until the end of their next turn.
-Defensive Bonus: Gain Evade.
-Range: Melee
-*"The wick knows the difference between light and looking."*
-
----
-
-**HALF-SEEN**
-BLUE — MIND
-Attack: Mind + d2
-Effect: Gain Obscure until the start of your next turn.
-Defensive Bonus: Scry 1.
-Range: Both
-*"You're not sure you saw it at all."*
-
----
-
-**GUTTERING**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: If you are below half HP, this attack gains Deadly.
-Defensive Bonus: If you are below half HP, gain Resist.
-Range: Both
-*"Brightest, right before the dark."*
-
----
-
 ## Related Documents
 
+- `cards/duskwick.md` — signature cards
 - `quests/hollow-below-briarwatch.md` — a Briarwatch farmer has one as a companion
