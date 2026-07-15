@@ -4,6 +4,8 @@ Optional. Run after completing the primary task. Reflect on the *process* that p
 
 This is a feedback loop: the question is not "did I do a good job?" but "how do I make the next thousand runs better?" And silence is information — many clean runs in a row means the process has converged, which is exactly what you want to see.
 
+A concrete suggestion here is a diagnosis, not yet a fix — `meta-agent.md` is where it actually gets written, since it holds write access to `agent-tools/` and `CLAUDE.md`.
+
 ---
 
 ```

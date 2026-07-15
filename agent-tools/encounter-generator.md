@@ -38,4 +38,4 @@ Encounters built without calibration end up the wrong weight for their tier and 
 1. Run `red-team.md` (Quest/Encounter pass) — invariants first.
 2. Run `alignment-checker.md` if the encounter touches an existing location, faction, or NPC.
 3. Anything that extends canon (new faction behavior, new truth about a place) ships flagged (Authority 2) — named explicitly in chat and the post-review queue, never riding in silently. Extensions extend; they never redirect existing themes.
-4. Remove visible reasoning. Present the encounters, the review findings, and the flagged rulings — nothing else.
+4. Check against `red-team.md`'s Visible Reasoning section. Present the encounters, the review findings, and the flagged rulings — nothing else.

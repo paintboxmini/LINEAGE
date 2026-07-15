@@ -8,7 +8,7 @@ Structural oversight, methodology improvement, and session coordination. Not a c
 
 Run this tool when, during a creative session, you identify a more effective methodology — a better way to structure a workflow, a gap in an existing tool, a pattern that would improve agent performance across sessions.
 
-Do not run this speculatively. Run it when something concrete has been learned.
+Do not run this speculatively. Run it when something concrete has been learned. `prompt-refinement.md` is this tool's usual first half — it diagnoses a process bottleneck after a task; this tool is where the fix actually gets written, since it's the one with write access to `agent-tools/` and `CLAUDE.md`.
 
 ---
 
@@ -51,19 +51,7 @@ Constraints:
 
 ## Session Handoff
 
-At the end of any session where this tool runs, write a handoff note to `memory.md` under a `## Last Session` section (replace any prior entry). Format:
-
-```
-## Last Session
-
-**Date:** [date]
-**Focus:** [what was worked on]
-**Changes made:** [files created, edited, or deleted — one line each]
-**Methodology updates:** [any agent tool or CLAUDE.md changes, and why]
-**Next:** [what the next agent should prioritize or be aware of]
-```
-
-This captures what memory.md's running log cannot — the shape of the session itself.
+Log the methodology change to `memory.md` the same way any other threshold crossing gets logged — a new append-only entry, not a section that gets overwritten. State what the tool or `CLAUDE.md` was before, why it changed, and what it became. A separate, replaced-each-time "Last Session" section would erase exactly the before-state this log exists to keep — see `memory.md`'s own header for why append-only is the rule, not the exception, here.
 
 ---
 
