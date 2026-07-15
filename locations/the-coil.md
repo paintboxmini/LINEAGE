@@ -350,6 +350,14 @@ Their accounts, on the rare occasion one gets told at all, don't spread. A story
 
 ---
 
+## GM Secret
+
+*Not for player disclosure — the faction's existence isn't public, and neither is its footprint here.*
+
+The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. Nothing about their usual methods worked here. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. Unlike Briarwatch's line, nobody comes back to check on this one. Whatever the order's internal record says about it, if it survives at all, marks it closed. See `factions/the-masons.md` (Known Works).
+
+---
+
 ## GM Notes
 
 **Assembly.** The modules are agnostic — string them in any order. The First Fork and the Light/Dark Fork work best early (they introduce the rule and the trial's stakes). The Helping Hands works well as a transition to the underground. Everything else can go anywhere.
@@ -376,10 +384,11 @@ Their accounts, on the rare occasion one gets told at all, don't spread. A story
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 
-**Who came before, and what they were trying to build.** Someone found the coil already this old, already this decayed, and tried to make something stable out of it anyway — the entrance arch is theirs, certainly; maybe more that hasn't been identified as theirs yet. They didn't understand what they'd found. It answered them. What that answering looked like while they were still here, who they were, and what happened to them, is not a thread to pull until the center is decided.
+**What the answering actually looked like, and what happened to them.** Who came before is known now — see GM Secret, above. What the coil actually did to them while they were still here, and whether any of them made it out, is not a thread to pull until the center is decided.
 
 ---
 
 ## Related Documents
 
 - `locations/vultures-nest.md` — The Night Ferryman (Notable Roles)
+- `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
