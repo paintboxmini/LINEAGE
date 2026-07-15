@@ -252,7 +252,7 @@ It is following the same rule the party should be following.
 
 It is not a minotaur. It does not trigger the pressure track. If the party fights it, it fights back. It does not roar.
 
-**Stat block:** `bestiary/wall-reader.md` *(pending)*
+**Stat block:** `bestiary/wall-reader.md`
 
 ---
 
