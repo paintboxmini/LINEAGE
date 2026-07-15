@@ -1,4 +1,10 @@
+# Briarwatch
 
+Farmland a day's travel northeast of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Stone fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
+
+The ground is soft. Has always been soft. The limestone underneath is why.
+
+---
 
 ## The Place
 
@@ -18,8 +24,7 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 **The Well Property** — eastern farmland, bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
 
-**Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole
-
+**Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole — it just never broke the surface here. No visible inlet, no visible outlet; farmers who've fished it their whole lives call it the one part of this ground that never changes. Since the sinkhole, a few have started wondering if that's still true.
 
 ---
 

@@ -50,6 +50,16 @@ Nobody signed it.
 
 ---
 
+## The Wardens
+
+Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared Fenwool (`bestiary/fenwool.md`), strangers on the road, anything that comes up from below.
+
+One Warden stopped returning from the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody from Briarwatch went looking.
+
+Warden culture is practical and quiet. They don't talk much about what's under the ground. They know it's there.
+
+---
+
 ## The Traveler Going the Other Way
 
 The party arrives to find a man hanging out of an upstairs window without any pants. He falls into the bush below before anyone can say anything. There is a pause. He extracts himself, looks at the party, and asks if they happen to have a spare pair.
