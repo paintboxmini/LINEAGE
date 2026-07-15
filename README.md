@@ -1,6 +1,6 @@
 # Tales Untold
 
-A tabletop role-playing game (TTRPG) currently in development.
+A tabletop role-playing game (TTRPG) created by Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more — currently in development.
 
 ## Repository Structure
 

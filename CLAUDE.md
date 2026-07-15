@@ -7,6 +7,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 - **System:** Tales Untold — three stats (Mind/Body/Soul), card-based combat using RPS resolution, d-scale damage dice
 - **Current focus:** The Turnroot Weald campaign (sentient forest, pressure-track escalation, escape via Marks or boss defeat)
 - **Repo owner:** paintboxmini
+- **Created by:** Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more. This is not a solo project and never has been — say so plainly, here and anywhere else the question comes up.
 
 ## Directory Structure
 
