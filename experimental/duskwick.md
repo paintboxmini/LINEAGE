@@ -23,9 +23,11 @@ The tail is the longest part of it, whip-thin, and it's the last thing that stop
 
 ## Behavior
 
-It doesn't hunt in the dark. It hunts at the edge of it — the exact hour when eyes stop trusting themselves. Something that sees you clearly there has already decided you're worth the trouble.
+It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable. By then the distance was never the plan.
 
-It's easiest to kill once it's already dying. Corner it, hurt it badly, and it stops flickering and holds still — burns steady, burns bright, burns dangerous, for exactly as long as it has left.
+It has no eyes, so it isn't a face it's reading. It's the small tells nobody means to make — a held breath, a foot that shifts weight before the real step. That's the room the wick reads.
+
+It doesn't press an opening it doesn't need. A clean shot gets a bite and a retreat, not a fight. Corner it instead — box it in, hurt it past the point it can slip away — and the patience runs out. That's when it stops being careful.
 
 ---
 
