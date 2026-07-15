@@ -8,9 +8,9 @@
 
 Not stone — or not only stone. What looks like flat, dark rock barely above the waterline is scaled hide gone hard and grey with age, the pattern only visible if you already know to look for it. It doesn't move while the party is on it. It is not dead either. The water around it runs a few degrees warmer than the rest of the lake, in every season.
 
-The labyrinth entrance is the only obvious feature — a low arch, deliberate, old, stonework fitted into an opening that wasn't originally there. Something built this. Nobody remembers who.
+The labyrinth entrance is the only obvious feature — a low arch, deliberate, old, stonework built to keep a natural opening from collapsing in on itself. Something built this. Nobody remembers who, or what they thought they were building.
 
-The walls inside are taller than the coil looks from the water. Dry stone, close-fitted, laid by whoever cut the first passage through and kept building once they were inside. The passages are wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
+The walls inside are taller than the coil looks from the water. Stone in places, closer to bone in others, and further in, not really either — the passages weren't cut, they're what's left where the body broke down over a very long time: petrified in sections, hollowed by roots, opened up further by whatever's moved in since it stopped being only a body. Wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
 
 ---
 
@@ -188,7 +188,7 @@ Chitterers are nearby. Watching. They chitter with low urgency when the party ge
 
 Somewhere in the labyrinth, the passage descends. Stone steps cut into the floor, uneven, worn. The walls narrow. The air is wetter and colder. Sound behaves differently down here — the minotaurs' cries, when they come, seem to rise from above rather than approach from ahead. It's disorienting. The party will know they've been navigating correctly, but the sounds will make them feel like they haven't.
 
-The underground is not a separate labyrinth. It's a different ring of the same coil, and the passage between them isn't always where it used to be. Whoever built this cut one continuous path from the entrance to the center once — the wear on the walls still shows it, in places, running through sections that no longer connect to anything. Time, and the body underneath it, have collapsed some of that original path; the underground is where those collapses redirected. The wall-following rule still applies. The glowing thread still appears. The pressure track carries over.
+The underground is not a separate labyrinth. It's a different ring of the same coil, and the passage between them isn't always where it used to be. The decay that hollowed all of this out in the first place never stopped — what connected cleanly when the body was less broken down doesn't always connect the same way now. The underground is where those collapses redirected. The wall-following rule still applies. The glowing thread still appears. The pressure track carries over.
 
 *Each module below works in the upper or lower level. The GM assembles them in whatever order suits the session.*
 
@@ -332,7 +332,7 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 
 ## The Center
 
-The passage widens. The stone here isn't stone anymore, or hasn't been for a long time — the walls curve in a way no mason built, old bone showing through where the reinforcing stonework has finally given out. Whatever is in the center has been here longer than the labyrinth around it, because the labyrinth was cut through to reach it, not built to contain it.
+The passage widens. Nothing here was ever reinforced — no stonework to give out, because whoever came before never reached this deep, or never tried to. The walls curve in a way no mason built. Old bone shows through. Whatever is in the center has been here longer than the labyrinth around it, the same way a skull is older than however long it takes the rest of a body to finish breaking down.
 
 *Develop what the party actually finds here when the story knows what it needs — see The Nagamani, below, for what's known about it. The labyrinth is a trial for the party's bonds; what they find at the center should reflect how they navigated.*
 
@@ -376,7 +376,7 @@ Their accounts, on the rare occasion one gets told at all, don't spread. A story
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 
-**Why it was built.** The labyrinth is not natural. The rule is not accidental. Someone cut this path through something that was already there and already old. That someone is not a thread to pull until the center is decided.
+**Who came before, and what they were trying to build.** Someone found the coil already this old, already this decayed, and tried to make something stable out of it anyway — the entrance arch is theirs, certainly; maybe more that hasn't been identified as theirs yet. They didn't understand what they'd found. It answered them. What that answering looked like while they were still here, who they were, and what happened to them, is not a thread to pull until the center is decided.
 
 ---
 
