@@ -1,6 +1,6 @@
 # Agent Tools
 
-Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memory.md` before using any of these.
+Read `CLAUDE.md` and `memory.md` before using any of these. Kept deliberately small — the refinement-layer tools that used to live here (generators, checkers, curated-content indexes) are archived in `archives/`, not deleted. Drew's call: most of that apparatus was never actually forced by a real failure, just pre-written for hypothetical ones, and the actual work goes better read straight and thought through than run against a checklist. Revisit after real creative mileage on Tales Untold, with fresh eyes — see `memory.md`.
 
 ---
 
@@ -8,44 +8,24 @@ Drop-in prompts for common Tales Untold design tasks. Read `CLAUDE.md` and `memo
 |--------|----------|
 | `repo-orientation.md` | Starting any new task — run this first |
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh at Sync when canon shifts |
-| `design-principles.md` | What makes content well-made — check new content against this, not just against the rules |
-| `exemplars.md` | The best existing Tales Untold content — read to calibrate what excellent looks like, not for facts |
-| `inspiration-guide.md` | Content feels obvious, flat, or generic — find the right angle |
-| `encounter-generator.md` | Designing a new combat encounter |
-| `npc-encounter-generator.md` | Designing a non-combat NPC or roadside encounter |
-| `card-set-generator.md` | Generating a 9-card enemy set |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
-| `card-compression.md` | A card set has grown bloated — recombine weak components into fewer, denser cards |
-| `alignment-checker.md` | Checking whether content fits its intended context (includes Soul Pass) |
-| `player-perspective.md` | Stress-testing content from a first-time player's point of view |
 
 ---
 
 ## Automatic Triggers
 
-These prompts are not optional when their trigger condition is met. Run them without being asked.
-
 | Trigger | Prompt |
 |---------|--------|
 | Start of any session or new task | `repo-orientation.md` |
-| Any card drafted (before presenting) | `red-team.md` |
-| Any encounter or quest content drafted | `red-team.md` (Quest/Encounter pass) |
-| Any content touching an existing location, faction, or NPC | `alignment-checker.md` |
-| Any content that will be presented to Drew for canon approval | `alignment-checker.md` + Soul Pass |
-| Any new NPC with a combat role | `player-perspective.md` |
+| Any card, encounter, or quest content drafted (before presenting) | `red-team.md` |
 
 ---
 
 ## Workflow
 
 1. Orient (`repo-orientation.md`)
-2. Select prompt for the task
-3. **Clarify before executing** — surface clarifications, suggestions, and concerns before writing anything. Wait for Drew's response. Things that commonly need clarification:
-   - Session timing (when does this enter the story?)
-   - Encounter scope (party size, expected length, pressure level)
-   - NPC relationship to party (ally / enemy / neutral / depends on choices)
-   - Whether this connects to an existing pending thread
-4. Execute
-5. Run automatic triggers for the content type produced
-6. Present to Drew — Authority 1/2 content ships per The Canon Gate (`CLAUDE.md`) and lands in the post-review queue; constitutional (Authority 3) waits for his sign-off
-7. Wait for next instruction
+2. Do the work — read the relevant canon, think it through, write it
+3. **Clarify before executing** when something is genuinely ambiguous (see `CLAUDE.md`, Translation Principle) — not by default, only when the evidence doesn't pick a side
+4. Run `red-team.md` on anything going to canon
+5. Present to Drew — Authority 1/2 content ships per The Canon Gate (`CLAUDE.md`) and lands in the post-review queue; constitutional (Authority 3) waits for his sign-off
+6. Wait for next instruction
