@@ -43,14 +43,13 @@ Run 2 for a party of 4, cycles staggered — while one perches, the other dives.
 
 ## Combat Behavior — the Rhythm
 
-The Shrike runs a two-beat loop, and the loop is the encounter:
+The Shrike fights from range when it can. Perched at Backline, it's hard to reach and evasive — WATCHFUL PERCH and SHADE AWAY both hand it Evade, and it leans on either to stay there rather than trade blows. It doesn't commit unless the shot is worth it.
 
-1. **Perched** (Backline): hard to reach, watching, Evasive.
-2. **The dive** (its turn): IMPALING DIVE into the Frontline — full commitment; the card says so.
-3. **Grounded** (until its next turn): Frontline, wings spent. **It cannot defend — every attack that lands in this window resolves unopposed.**
-4. Next turn: WATCHFUL PERCH back to safety. Repeat.
+When it does commit, IMPALING DIVE is the whole statement: full-force strike into the Frontline, bonus damage if it flew in from Backline, and — by the card's own text — **it cannot defend until its next turn.** That's not a script, that's the card. A Shrike that just dove is genuinely open, whatever it does next.
 
-The lesson is the window. Players who swing at a perched Shrike hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat after a dive — take it apart. The Shrike teaches the party to fight the *order*, not the target.
+Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defensive bonus all get it out of the open. But it isn't required to, and a Shrike that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
+
+The lesson is the window, not the pattern. Players who swing at a perched Shrike hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat right after a dive — take it apart. The Shrike teaches the party to fight the *order*, not the target.
 
 **At 4 HP or less** it abandons the fight and its larder both, and does not return this season.
 

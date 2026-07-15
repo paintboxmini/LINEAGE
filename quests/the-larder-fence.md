@@ -30,7 +30,7 @@ There is no farm out this far, and no fence a farmer built. Briarwatch keeps its
 
 ## The Rhythm (GM notes)
 
-Each Shrike alternates: **dive** (Impaling Dive into the Frontline, +2 from the perch — and by the card's own text, unable to defend until its next turn) → **the grounded window** → **perch** (back to safety, Evade). Play it punctual, not vicious — it takes one thing per dive when it can (Thorn Larder exiles a card, not just discards it — the fence keeps what it takes until the fight is over) and returns to its post.
+A Shrike fights from range when it can and commits hard when it can't avoid it. Perched, it's evasive and hard to reach. When it dives — Impaling Dive into the Frontline, +2 from the perch — it's fully committed: by the card's own text, it cannot defend until its next turn. That's the real opening, not a scripted one. Most Shrikes retreat straight back to the post afterward (Watchful Perch is its favorite), but one that hasn't been punished yet may stay Grounded an extra beat to land Thorn Larder first — exiling a card, not just discarding it; the fence keeps what it takes until the fight is over.
 
 Let the first dive hurt. Let the first swing at a *perched* Shrike waste itself on Evade. Then let the table notice the grounded one standing in the open with nothing in its claws. Do not explain the window. The wheel is sitting on the table; the players will find it.
 
