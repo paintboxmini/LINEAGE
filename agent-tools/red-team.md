@@ -79,6 +79,15 @@ intended. It may be a bug to fix — or the most interesting thing here.
   necessary, nothing more.
 - "Leave it alone" is a valid verdict. If a part is already right, or no
   improvement exists, say so and why — do not invent an edit to feel productive.
+- A fix that moves the flagged problem to a different slot on the same content
+  isn't a fix — check that the specific weakness named in the diagnosis is
+  actually gone, not just relocated. (Duskwick's HALF-SEEN had Obscure cut from
+  its Effect for being narrow and thematically mismatched, then the same
+  Obscure reappeared on its Defensive Bonus, unchanged, because it was easier
+  than replacing it. Still narrow, still mismatched, just moved.) If a
+  mechanic was cut for a reason, don't re-add it elsewhere on the same content
+  out of attachment to having used it first — verify the reason it was cut no
+  longer applies before it comes back.
 
 End on one line held throughout: assume the content is intentionally minimal; do
 not add complexity unless it solves a demonstrated problem.
