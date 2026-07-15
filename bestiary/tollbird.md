@@ -13,7 +13,7 @@
 
 ## Appearance
 
-A Tollbird the size of a dog, colored like wet fencepost — pale wood-grey, streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot. It never needed a fence to start this habit. The fence just made it easier.
+A Tollbird the size of a dog, colored like wet fencepost — pale wood-grey, streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot.
 
 It perches with its head tilted at whatever moves below it, tail ticking at a slow, steady beat — the same rhythm it keeps everywhere else in its life. It is not a nervous bird. It is a counting one.
 
@@ -37,7 +37,7 @@ When it does commit, IMPALING DIVE is the whole statement: full-force strike int
 
 Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defensive bonus all get it out of the open. But it isn't required to, and a Tollbird that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
 
-The lesson is the window, not the pattern. Players who swing at a perched Tollbird hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat right after a dive — take it apart. The Tollbird teaches the party to fight the *order*, not the target.
+The lesson is the window. Players who swing at a perched Tollbird hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat right after a dive — take it apart. The Tollbird teaches the party to fight the *order*, not the target.
 
 **At 4 HP or less** it abandons the fight and its larder both, and does not return this season.
 
@@ -45,13 +45,13 @@ The lesson is the window, not the pattern. Players who swing at a perched Tollbi
 
 ## Territory
 
-A Tollbird will not chase past the edge of its hunting ground. Even its own perch is already the outer edge of how far it will extend itself for prey this size; a body heavier than what usually ends up in the larder doesn't make it back from any farther than that. If the party disengages or leaves entirely, the Tollbird lets them go. It isn't caution. It's that the math of carrying you home never worked past here.
+A Tollbird will not chase past the edge of its hunting ground. If the party disengages or leaves entirely, the Tollbird lets them go. It isn't caution. It's that the math of carrying you home never worked past here.
 
 ---
 
 ## Tactical Purpose
 
-The Tollbird makes turn order visible — its whole threat and its whole weakness live in *when*, not *what* — and previews the cost of full commitment (Berserker's Price's bargain, offered to the party before it's offered by them). Wherever it hunts, positioning has teeth: a smart party can turn its own perch against it.
+The Tollbird makes turn order visible — its whole threat and its whole weakness live in *when*, not *what* — and previews the cost of full commitment Wherever it hunts, positioning has teeth: a smart party can turn its own perch against it.
 
 At Creature Threat Rating 9 — even with the party, not below it — a Tollbird is a genuine fight, not a teaching mob. Run it with that weight.
 
