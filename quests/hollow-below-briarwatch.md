@@ -18,9 +18,11 @@ The day begins under thick cloud cover. The air carries the smell of wet soil. F
 
 ## Boxed Read-Aloud — Arrival at the Farm
 
-> The sky hangs low and gray over the farmland. The soil under your boots gives slightly, as though it has not fully decided whether to hold. A wide depression scars one of the fields — fenced off with rope and splintered posts. The farmer stands nearby, hat in hand, looking more tired than frightened.
+> The sky hangs low and gray over the farmland. The soil under your boots gives slightly, as though it has not fully decided whether to hold. A wide depression scars one of the fields — fenced off with rope and splintered posts. The farmer stands nearby, hat in hand, looking more tired than frightened. Something small and matte-black keeps to his heels the whole time, low to the ground, not quite touching him.
 >
 > *"Thanks for coming. Was starting to think nobody would. Lost a dozen head when the ground opened up. There's an old well on the property. Leads down into caves. Always knew it was there. Never thought it'd matter."*
+
+**The farmer's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `experimental/duskwick.md`.
 
 ---
 
