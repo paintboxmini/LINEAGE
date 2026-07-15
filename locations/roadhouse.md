@@ -36,7 +36,7 @@ Their duty runs past the inn's front door — thick-soled boots and waterproofed
 
 Guard culture out here is practical and quiet. They don't talk much about what's under the ground. They know it's there.
 
-**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub, a log of road incidents, and the notice board — bounties and local alerts posted alongside it. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of Briarwatch's fields that one of the guards wrote and then didn't sign. Guests don't go back there. The door is never locked.
+**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub, a log of road incidents, and the notice board — bounties and local alerts posted alongside it. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system west of Briarwatch's fields that one of the guards wrote and then didn't sign. Guests don't go back there. The door is never locked.
 
 *Contents for curious parties:*
 
