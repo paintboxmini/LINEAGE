@@ -51,7 +51,7 @@ A Tollbird will not chase past the edge of its hunting ground. If the party dise
 
 ## Tactical Purpose
 
-The Tollbird makes turn order visible — its whole threat and its whole weakness live in *when*, not *what* — and previews the cost of full commitment Wherever it hunts, positioning has teeth: a smart party can turn its own perch against it.
+The Tollbird makes turn order visible — its whole threat and its whole weakness live in *when*, not *what* — and previews the cost of full commitment. Wherever it hunts, positioning has teeth: a smart party can turn its own perch against it.
 
 At Creature Threat Rating 9 — even with the party, not below it — a Tollbird is a genuine fight, not a teaching mob. Run it with that weight.
 
