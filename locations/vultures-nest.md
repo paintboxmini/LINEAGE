@@ -192,6 +192,8 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 ## The Market
 
+The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin. See `bestiary/duskwick.md`.
+
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
 - *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
@@ -317,3 +319,4 @@ The normal conversation slowly picks back up.
 
 - `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
 - `world/the-regency.md` — Bartho's debt routes players toward Eclipsera
+- `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours

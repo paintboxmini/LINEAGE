@@ -16,6 +16,7 @@ Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
 - A grand library tucked in a quieter corner — scholars and mages, ancient texts
+- Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
 - **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/underground-bazaar.md` and `locations/underground-tavern.md`.
 
 The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
@@ -49,3 +50,4 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 - `locations/underground-tavern.md` — The tavern below the bazaar; Mortis, gambling, baseline drinks
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
 - `locations/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
+- `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
