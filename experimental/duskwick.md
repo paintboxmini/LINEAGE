@@ -7,8 +7,6 @@
 
 Found in Eclipsera and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
 
-*Signature cards below still carry no tag — it isn't tied to one place the way a single-source creature would be, and it wasn't obtained from anywhere. It just showed up.*
-
 ---
 
 ## Appearance
@@ -25,7 +23,7 @@ The tail is the longest part of it, whip-thin, and it's the last thing that stop
 
 ## Behavior
 
-It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable. By then the distance was never the plan.
+It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable.
 
 It has no eyes, so it isn't a face it's reading. It's the small tells nobody means to make — a held breath, a foot that shifts weight before the real step. That's the room the wick reads.
 
@@ -36,10 +34,10 @@ It doesn't press an opening it doesn't need. A clean shot gets a bite and a retr
 **SNUFF**
 RED — BODY
 Attack: Body + d4
-Effect: If this attack deals damage, target gains Blind until the end of their next turn.
+Effect: Defender gains Blind until the end of their next turn.
 Defensive Bonus: Gain Evade.
 Range: Melee
-*"The wick knows the difference between light and looking."*
+*"The wick knows the difference between seeing and looking."*
 
 ---
 
@@ -55,8 +53,8 @@ Range: Both
 
 **GUTTERING**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: If you are below half HP, this attack gains Deadly.
+Attack: Soul + d6
+Effect: If you are below half HP, you gain Deadly this attack.
 Defensive Bonus: If you are below half HP, gain Resist.
 Range: Both
 *"Brightest, right before the dark."*
