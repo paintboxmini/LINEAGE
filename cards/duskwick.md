@@ -5,10 +5,10 @@
 **SNUFF**
 RED — BODY
 Attack: Body + d4
-Effect: If this attack deals damage, target gains Blind until the end of their next turn.
+Effect: Defender gains Blind until the end of their next turn.
 Defensive Bonus: Gain Evade.
 Range: Melee
-*"The wick knows the difference between light and looking."*
+*"The wick knows the difference between seeing and looking."*
 
 ---
 
@@ -24,8 +24,8 @@ Range: Both
 
 **GUTTERING**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: If you are below half HP, this attack gains Deadly.
+Attack: Soul + d6
+Effect: If you are below half HP, you gain Deadly this attack.
 Defensive Bonus: If you are below half HP, gain Resist.
 Range: Both
 *"Brightest, right before the dark."*

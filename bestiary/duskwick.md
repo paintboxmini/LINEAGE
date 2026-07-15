@@ -9,7 +9,7 @@
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
 
-Not tied to one place the way a single-source creature is, and not obtained from anywhere — signature cards carry no tag. It just shows up. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet.
+Found in Eclipsera and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
 
 ---
 
@@ -27,7 +27,7 @@ The tail is the longest part of it, whip-thin, and it's the last thing that stop
 
 ## Behavior
 
-It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable. By then the distance was never the plan.
+It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable.
 
 It has no eyes, so it isn't a face it's reading. It's the small tells nobody means to make — a held breath, a foot that shifts weight before the real step. That's the room the wick reads.
 
