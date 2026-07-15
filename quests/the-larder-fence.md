@@ -57,7 +57,7 @@ The fence and the watchtower ruins at Briarwatch's edge are the same project: th
 
 ## The Rhythm (GM notes)
 
-A Tollbird fights from range when it can and commits hard when it can't avoid it. Perched, it's evasive and hard to reach. When it dives — Impaling Dive into the Frontline, +2 from the perch — it's fully committed: by the card's own text, it cannot defend until its next turn. That's the real opening, not a scripted one. Most Tollbirds retreat straight back to the post afterward (Watchful Perch is its favorite), but one that hasn't been punished yet may stay Grounded an extra beat to land Thorn Larder first — exiling a card, not just discarding it; the fence keeps what it takes until the fight is over.
+General tactics — when it dives, when it retreats, when it holds for Thorn Larder — are covered in `bestiary/tollbird.md`, Combat Behavior. What follows is specific to running this table.
 
 Let the first dive hurt. Let the first swing at a *perched* Tollbird waste itself on Evade. Then let the table notice the grounded one standing in the open with nothing in its claws. Do not explain the window. The wheel is sitting on the table; the players will find it.
 
@@ -69,7 +69,7 @@ If a player Waits to reposition behind the dive — reward it visibly: the unopp
 
 ## Win Condition
 
-Kill the Tollbirds, wound both to 4 HP or less, or simply leave the field. The Tollbirds never pursue past the fight — territorial, not cowardly: a body this size is already past what they can haul back to the larder from any farther out, and Backline (their own firing range) is already the outer edge of that math. Walking away is a complete, legitimate end to this encounter.
+Kill the Tollbirds, wound both to 4 HP or less (they abandon the fight and don't return this season — `bestiary/tollbird.md`, Combat Behavior), or simply leave the field. Tollbirds don't pursue past their hunting ground (`bestiary/tollbird.md`, Territory), so walking away is a complete, legitimate end to this encounter.
 
 **The larder:** whatever the fence is holding. A season of small thefts — coins, a buckle, a hand mirror, wet wool. And, if the GM wants it, one thing that should not be on a fence at Briarwatch's edge at all: a Skeinwing (`bestiary/skeinwing.md`) — a wingspan too wide for the wire, a membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive; that's the point. Swap in whatever thread the table is carrying instead if this doesn't fit.
 
