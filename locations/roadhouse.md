@@ -58,6 +58,8 @@ One Warden stopped returning from the Weald. Their boots ended up at Harwick Sun
 
 Warden culture is practical and quiet. They don't talk much about what's under the ground. They know it's there.
 
+**The Warden Post** — squat stone building at the fork, where the standard path finally reaches Briarwatch's fields. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
+
 ---
 
 ## The Traveler Going the Other Way
