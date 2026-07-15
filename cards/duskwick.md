@@ -16,7 +16,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d2
 Effect: This reveal doesn't count. For the rest of combat, effects that check your last-played color skip it.
-Defensive Bonus: Gain Obscure until the start of your next turn.
+Defensive Bonus: Look at the attacker's hand.
 Range: Both
 *"You're not sure you saw it at all."*
 
