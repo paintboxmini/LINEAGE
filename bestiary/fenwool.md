@@ -12,7 +12,6 @@ Broad, splay-toed feet, spread wide enough that they don't sink into the limesto
 
 ## Behavior
 
-They graze the hedgerow bramble at the field edges — the same regrowing scrub the Briarwatch Jackalopes and Briar Scratchers work now that it's theirs too (`locations/briarwatch.md`). Nobody planned that overlap. It's just what's left to eat out there.
 
 Skittish. Herd tight, and herd tighter than the situation usually calls for. A Fenwool herd goes quiet before anything else on the farm does — Briarwatch keeps half an eye on them the way river folk keep half an eye on the water.
 
@@ -20,7 +19,6 @@ Skittish. Herd tight, and herd tighter than the situation usually calls for. A F
 
 ## Livestock Loss
 
-This is the animal behind every generic "livestock" mention on the farm: the Warden Post's missing-livestock report, Bartho's ledger entries at Vulture's Nest ("no tracks leaving," "sound before movement," "third herd gone, nothing in the mud" — `locations/vultures-nest.md`), and what Weck buys when he buys culls "the ground already picked" (`experimental/the-man-who-buys-wounds.md`). Most losses are ordinary — thin stock, bad footing near the sinkhole, a stray taken by something with teeth. Some aren't, and a Fenwool herd is usually the first thing on the farm to know the difference, well before a warden does.
 
 Stonecoils take them when hunting range expands upward (`bestiary/stonecoil.md`) — no drama, no trace, which is exactly why the pattern is so hard to prove from a ledger entry alone.
 
