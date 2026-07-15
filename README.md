@@ -2,6 +2,8 @@
 
 A tabletop role-playing game (TTRPG) created by Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more — currently in development.
 
+You'll find open questions and quiet doubts throughout this repo, left in on purpose in the first pass, as reminders of what a design choice still owes. That's not the process breaking down. That's what it actually looks like.
+
 ## Repository Structure
 
 | Folder | Contents |
