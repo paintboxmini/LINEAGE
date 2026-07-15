@@ -86,8 +86,6 @@ The first junction inside the Coil. Both objects are visible from the fork befor
 
 *The orb cannot be moved, extinguished, or destroyed by conventional means.*
 
-**What the fork is actually doing:** Splitting the party's attention before they've committed to a wall. Players who go different directions are already on different wall-following paths. Players who debate too long at the junction have already hesitated. The friction starts here.
-
 ---
 
 ## The Light/Dark Fork
@@ -178,7 +176,7 @@ Chitterers are nearby. Watching. They chitter with low urgency when the party ge
 
 **The connection is visible:** The deer's horns are the source material for the crystal weapons. The party doesn't need a roll to make this — it's there if they look at both things at the same time.
 
-**If the party frees the deer:** The Chitterers scatter, chittering furiously as they go. The deer stands still for a moment. Then the glowing thread appears from it — brighter than before, lasting a half-second longer. Perception check to catch it. Then the deer is gone.
+**If the party frees the deer:** The Chitterers scatter, chittering furiously as they go. The deer stands still for a moment. Then the glowing thread appears from it — brighter than before, lasting longer. Perception check to catch it. Then the deer is gone.
 
 **If the party doesn't free the deer:** The Chitterers eventually return. The deer stays where it is. The thread does not appear.
 
@@ -222,7 +220,7 @@ Moving during the contraction: the walls brush shoulders, slow progress, create 
 
 **Waiting for the open phase:** Safe. Slow. If the pressure track is already high and the minotaurs are close, waiting feels impossible. That is the design.
 
-The passage is twenty feet long. The contraction cycle takes about six seconds. The party has to decide: move now, move carefully, or wait.
+The party has to decide: move now, move carefully, or wait.
 
 ---
 
@@ -250,7 +248,7 @@ It is following the same rule the party should be following.
 
 **If the party is on the right wall:** It passes them going the opposite direction without reacting. A glimpse at a junction. Gone.
 
-**If a player breaks the rule near it:** The Wall-Reader stops. Turns toward the sound of the disruption. Remains still for three seconds. Then moves toward it. Not fast — it doesn't need to be fast. It knows the walls.
+**If a player breaks the rule near it:** The Wall-Reader stops. Turns toward the sound of the disruption. Remains still for a moment. Then moves toward it. Not fast — it doesn't need to be fast. It knows the walls.
 
 It is not a minotaur. It does not trigger the pressure track. If the party fights it, it fights back. It does not roar.
 
@@ -262,7 +260,7 @@ It is not a minotaur. It does not trigger the pressure track. If the party fight
 
 A Chitterer, caught in one of its own traps. Tangled in the same fine-spun cord it uses on the deer. It is extremely unhappy about this and not quiet about it.
 
-Other Chitterers are nearby, watching. They chitter with low urgency. They have not freed it themselves — unclear why.
+Other Chitterers are nearby, watching. They chitter with low urgency. They have not freed it themselves.
 
 **If the party frees it:** The freed Chitterer glares at them, chittering something that sounds like a grudging complaint. Then it moves. Not fast, not far — but deliberately, down a specific passage, pausing once to look back. It leads the party a short distance before chittering off into a gap in the wall.
 
