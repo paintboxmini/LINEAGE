@@ -13,7 +13,9 @@
 
 ## Appearance
 
-A Tollbird the size of a dog, colored like wet fencepost — pale wood-grey, streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot.
+A Tollbird stands close to a meter tall at the shoulder, wings spanning just over two — heavier than its shape suggests, built more like a body than a bird: dense muscle over hollow bone, colored like wet fencepost, pale wood-grey streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot.
+
+It can drag a grown adult to the fence. It can't drag one far — which is exactly why the fence matters as much as the bird does. The whole hunt only works because the larder is never more than a dive away.
 
 It perches with its head tilted at whatever moves below it, tail ticking at a slow, steady beat — the same rhythm it keeps everywhere else in its life. It is not a nervous bird. It is a counting one.
 
@@ -45,7 +47,7 @@ The lesson is the window. Players who swing at a perched Tollbird hit Evade and 
 
 ## Territory
 
-A Tollbird will not chase past the edge of its hunting ground. If the party disengages or leaves entirely, the Tollbird lets them go. It isn't caution. It's that the math of carrying you home never worked past here.
+A Tollbird will not chase past the edge of its hunting ground — not because it couldn't win the chase, but because chasing isn't how it hunts. The whole strategy is the ambush and the return; leave the fence far enough behind and there's no larder to drag anyone back to. If the party disengages or leaves entirely, the Tollbird lets them go. It isn't weakness. It's that the hunt it's built for doesn't exist out here.
 
 ---
 
