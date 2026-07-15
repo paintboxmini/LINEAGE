@@ -1,6 +1,6 @@
 # Skeinwing
 
-*High-altitude glider. Almost never encountered alive. What the Fencerow Shrike's larder sometimes holds instead of a hare.*
+*High-altitude glider. Almost never encountered alive. What the Fencerow Shrike's larder sometimes holds instead of a young jackalope.*
 
 **Mind 2 / Body 1 / Soul 4 — HP 11**
 **Creature Threat Rating:** 7
@@ -43,7 +43,7 @@ The Fencerow Shrike (`bestiary/fencerow-shrike.md`) doesn't hunt these. It hunts
 
 ## The Larder, Once
 
-Most days it's what it always is: a vole, a hare, something with a collar. Then, once — hanging where nothing should hang — a wingspan too wide for the wire, a membrane too blue to be anything born on the ground, a tail wound once around a barb like it tried to hold on to something and there was nothing there to hold. Nobody at that fence has ever seen one alive. Whatever the party makes of finding one dead is the whole point.
+Most days it's what it always is: something small and rust-furred, a young jackalope, something with a collar. Then, once — hanging where nothing should hang — a wingspan too wide for the wire, a membrane too blue to be anything born on the ground, a tail wound once around a barb like it tried to hold on to something and there was nothing there to hold. Nobody at that fence has ever seen one alive. Whatever the party makes of finding one dead is the whole point.
 
 ---
 

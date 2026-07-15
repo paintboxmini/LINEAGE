@@ -15,9 +15,9 @@
 
 A shrike the size of a dog, colored like wet fencepost. It perches on the stone fencerows with its head tilted at road traffic, the way all shrikes do. The bird is not the thing to look at. The fence is.
 
-This is not a farmer's fence, and there is no farm out this far — Briarwatch keeps its fields and its livestock well back from the Turnroot border, and everyone there knows better than to graze anything close to it. What stands here instead is taller than a person and thicker than any hedge, stone core buried under decades of bramble nobody cut back. The thorns on it are wrong-sized: some as long as a finger, hooked back on themselves like a fishhook, built to *hold* what they catch rather than just open it. Whether the Weald grew them or something tended them into shape, nobody in Briarwatch will say for certain out loud. Both answers are the kind you only ask once.
+This is not a farmer's fence, and there is no farm out this far — Briarwatch keeps its fields and its livestock well back from the Turnroot border, and everyone there knows better than to graze anything close to it. What stands here instead is taller than a person and thicker than any hedge: underneath, a plain stone-and-wire perimeter, squared posts evenly set — old, careful work, and nobody in Briarwatch remembers who built it or why the border sits exactly here. But the wire between those posts doesn't match the posts. It's grown, not built: bramble and thorn worked into it in uneven, layered snarls, some as long as a finger, hooked back on themselves like fishhooks — built to *hold* what they catch rather than just open it. It doesn't take long watching a Shrike return to the same stretch of wire, thorn-brush already in its claws, to work out who's been doing that part.
 
-Impaled along it: voles, a hare, something with a collar — small things, the kind of prey that wanders this far without anyone missing it. All of it placed, spaced, drying — the larder, and the reason the bird keeps coming back.
+Impaled along it: something small and rust-furred, a young jackalope, something with a collar — small things, the kind of prey that wanders this far without anyone missing it. All of it placed, spaced, drying — the larder, and the reason the bird keeps coming back.
 
 The fence is two things wearing one name. The wire and bramble between the posts is where the barbs are, where the larder hangs, where the Shrike strikes and stalls. The posts themselves — squared stone, taller than the wire, corner-set every so many yards — are clean. That's where it watches from.
 
@@ -25,15 +25,11 @@ The fence is two things wearing one name. The wire and bramble between the posts
 
 ## GM Secret — Not Player-Facing
 
-The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both as a plain stone perimeter to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to them it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works.
-
-The oversized thorns are not the Masons' work and not the Weald's either, not directly — **the Shrikes did this.** Their stretch of the plain stone perimeter has been adapted, generation over generation, with thorn-brush pulled in from the Weald itself and worked into the wire until it grew into what it is now. Nobody built this larder fence on purpose. The birds did, slowly, out of material that was never supposed to cross the line the fence exists to hold.
+The fence and the watchtower ruins at Briarwatch's edge are the same project: the Masons built both as a plain stone perimeter to hold a line against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. They still visit, periodically, to maintain and repair it. Briarwatch has tended the fence for generations without knowing why it started or who first asked them to — to them it's just the old larder fence, mended out of habit. Full record: `factions/the-masons.md`, Known Works. *(This — who built the base perimeter, and why — is the actual secret. That the Shrikes are the ones who thorned it over is not; Appearance already shows a watching party that answer directly.)*
 
 **The Fenwool reports at the Warden Post are unrelated.** Briarwatch doesn't graze anything within reach of the Turnroot border — the farmers know better — so whatever is taking Fenwool from the north field, it isn't this. Don't let a table connect the two without a reason to.
 
-Nothing in this file's player-facing text (Appearance, the folk speculation above) should say any of this outright; if a GM wants it discovered, let the party earn the shape of it, not the sentence.
-
-*Unforced GM thread, not asserted:* a fence meant to keep the Weald out now has actual Weald-thorn woven into it, by ordinary animal behavior nobody's tracking. Whether that means anything is an open question, not a fact.
+*Unforced GM thread, not asserted:* a fence meant to keep the Weald out now has actual Weald-thorn woven into it, in plain view, by ordinary animal behavior nobody in Briarwatch has connected to anything larger. Whether that means anything is an open question, not a fact.
 
 ---
 
@@ -79,7 +75,7 @@ This is encounter-specific terrain language, not a global keyword — it isn't i
 
 **The turn against the Shrike itself:** Pull a perched Shrike down off its post and onto its own wire — on the party's timing, not its own — and for once, the barbs belong to them.
 
-**Territorial, not pursuant.** A Shrike will not chase past the field. Even its own post is already the outer edge of how far it will extend itself for prey this size; a body heavier than a hare doesn't make it back to the larder from any farther than that. If the party disengages or leaves entirely, the Shrikes let them go. It isn't caution. It's that the math of carrying you home never worked past here.
+**Territorial, not pursuant.** A Shrike will not chase past the field. Even its own post is already the outer edge of how far it will extend itself for prey this size; a body heavier than what usually ends up in the larder doesn't make it back from any farther than that. If the party disengages or leaves entirely, the Shrikes let them go. It isn't caution. It's that the math of carrying you home never worked past here.
 
 ---
 
