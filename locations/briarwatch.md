@@ -1,10 +1,4 @@
-# Briarwatch
 
-Farmland a day's travel northeast of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Stone fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
-
-The ground is soft. Has always been soft. The limestone underneath is why.
-
----
 
 ## The Place
 
@@ -20,23 +14,12 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 ---
 
-## The Wardens
-
-Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared Fenwool (`bestiary/fenwool.md`, the farm's livestock), strangers on the road, anything that comes up from below.
-
-One Warden stopped returning from the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody from Briarwatch went looking.
-
-Warden culture is practical and quiet. They don't talk much about what's under the ground. They know it's there.
-
----
-
 ## Notable Locations
 
 **The Well Property** — eastern farmland, bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
 
-**Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole — it just never broke the surface here. No visible inlet, no visible outlet; farmers who've fished it their whole lives call it the one part of this ground that never changes. Since the sinkhole, a few have started wondering if that's still true.
+**Valhug Lake** — Past the watchtower ruins, same eastern stretch as the Well Property. Deep, cold, fed by the same limestone water table that opened the sinkhole
 
-**The Warden Post** — squat stone building at the fork where the road finally reaches Briarwatch's fields, day two out of Vulture's Nest. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system east of the fields that one of the wardens wrote and then didn't sign.
 
 ---
 
