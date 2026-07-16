@@ -10,7 +10,21 @@ Not stone — or not only stone. What looks like flat, dark rock barely above th
 
 The labyrinth entrance is the only obvious feature — a low arch, deliberate, old, stonework built to keep a natural opening from collapsing in on itself. Something built this. Nobody remembers who, or what they thought they were building.
 
-The walls inside are taller than the coil looks from the water. Stone in places, closer to bone in others, and further in, not really either — the passages weren't cut, they're what's left where the body broke down over a very long time: petrified in sections, hollowed by roots, opened up further by whatever's moved in since it stopped being only a body. Wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
+The walls inside are taller than the coil looks from the water. Stone in places, closer to bone in others, and further in, not really either — the passages weren't cut, they're what the body has been becoming for longer than anyone alive has been counting: petrified in sections, hollowed by roots, reshaped by whatever's moved in since it stopped being only a body and started being somewhere. It never finished. It isn't going to. Wide enough for two abreast, narrow enough that you feel the walls on both sides. No torches. The party brings their own light.
+
+---
+
+## What Happened To It
+
+*GM background — the deep history. Not player-facing unless the story earns it.*
+
+It wasn't always this far from anywhere. Long before the labyrinth, long before Vulture's Nest had a name, it was near the Abyssal Ruins the first time the War Engine fired. That was the first strike, not the one still to come — see `quests/war-engine.md`. It was close enough to be hurt.
+
+It fled the only direction that was open: out, into the Unheld. Not carried there — went there, alive, the same way the old ghost-story crews did, generations of sailors who slipped past the coast and came home subtly wrong. Grey water goes mundane at the threshold; it cannot be carried. A living thing that was actually out there doesn't get that mercy. Whatever the Unheld's changes are, they came home with it, the same way reversed handedness and eyes that reflect wrong colors came home with sailors who never should have survived the crossing. See `world/the-unheld.md`.
+
+It didn't stay. It came back the only way anything comes back from the grey water — upstream, against the current, through the river web that laces the whole continent and drains toward the coast. Vulture's Nest sits at the heart of that web. It didn't choose the city. It followed the same water everything else follows, and the water happened to end here.
+
+It has been becoming a labyrinth ever since. Not dying — the Unheld doesn't have an ending in it, and neither, now, does this. Petrified in places, bone in others, flesh in the one spot that never actually closed (see the Breathing Passage, below). Whatever it was before the war and the ocean both marked it, that creature is gone the way anything is gone once it's spent this long becoming something else instead.
 
 ---
 
@@ -212,7 +226,9 @@ Putting it back requires returning to the alcove. The labyrinth does not backtra
 
 ## Module — The Breathing Passage
 
-A corridor that contracts. Slowly, rhythmically — the walls press inward by a few inches, then ease back. Enough to feel. Not enough to trap anyone standing still.
+A corridor of flesh, not stone — the one place in the Coil where the material isn't ambiguous. It's warm. It's the oldest wound on the body and the only one that never closed.
+
+It contracts. Slowly, rhythmically — the walls press inward by a few inches, then ease back. Enough to feel. Not enough to trap anyone standing still.
 
 The rhythm is regular. The party can time it if they watch.
 
@@ -290,17 +306,15 @@ The face waits. It does not repeat itself. It does not react to silence.
 
 ---
 
-## Module — The Mirror Passage
+## Module — The Mirror Maze
 
-Two passages, side by side, identical in every visible way. Same width, same stone, same smell, same darkness ahead. No markings. No worn walls on either side — this section was built to resist reading.
+A section unlike the rest of the labyrinth — the walls here are mirrored, not stone, reflecting the party back at themselves from every angle, subtly wrong each time: a reflection that moves a half-beat late, a left hand shown on the right. No markings, no worn stone. This section resists reading the same way it always has, just at a larger scale now.
 
-One leads forward. One loops back to a section the party has already passed.
+It has more than one way in. Everywhere else in the Coil, the wall leads one direction at a time — here it breaks open into the maze at several points, none of them matching on both sides. This isn't architecture. It's a wound that never closed cleanly, breached more than once, and the maze grew into the gaps afterward.
 
-**The wall-following rule solves this correctly.** A party that has maintained their chosen wall will follow it into the correct passage without hesitation. They may not even notice there was a choice.
+**The wall-following rule still solves it.** A party that has maintained their chosen wall follows it through correctly, the same as anywhere else in the Coil — they may not even register that anything here was different. A party that has broken the rule, or never committed to one, has nothing to read here that isn't a reflection of their own uncertainty. The choice is genuinely 50/50 at every mirrored junction, same as it ever was, just repeated across more of them.
 
-A party that has broken the rule, or never committed to one, will have to guess. There is no environmental clue. The choice is genuinely 50/50 without the rule.
-
-**If they take the loop:** They will eventually recognize a landmark from earlier. The pressure track does not reset. The Ferryman's hint, if they received it and ignored it, will land differently the second time.
+**If they take a wrong turn here:** They will eventually recognize a landmark from earlier, same as before. The pressure track does not reset. The Ferryman's hint, if they received it and ignored it, lands differently read back at them by a mirror than it did the first time.
 
 ---
 
@@ -356,7 +370,7 @@ The legend travels at two different distances. In Vulture's Nest, it's tangled u
 
 *Not for player disclosure — the faction's existence isn't public, and neither is its footprint here.*
 
-The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. Nothing about their usual methods worked here. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. The order's own record marks it closed — officially, nobody's sent back. Unofficially, at least one still comes. Whether the party could ever cross paths with them, mid-attempt, is not decided. See `factions/the-masons.md` (Known Works).
+The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. This one was never a seam, though it read like one from a distance — it was a carrier. The Unheld doesn't cross the coastline in water or cargo, but it travels fine in something that was actually there and came back changed, and once it's inland, riding in a living thing instead of grey water, there's no telling whether it can spread from there. That's not a risk the order tolerates on principle, whatever the actual odds are — see "What Happened To It," above, for the full history. Nothing about their usual methods worked here anyway. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. The order's own record marks it closed — officially, nobody's sent back. Unofficially, at least one still comes. Not obsession, necessarily — "contained" was never the same as "understood," and that gap is the one part of their own discipline they were never able to close. Whether the party could ever cross paths with them, mid-attempt, is not decided. See `factions/the-masons.md` (Known Works).
 
 The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader.md`.
 
@@ -399,3 +413,5 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 - `locations/vultures-nest.md` — The Night Ferryman (Notable Roles)
 - `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
 - `mythology/seats.md`, `world/seats-archons-echoes.md` — Navigation, the Night Ferryman's Seat (GM-only)
+- `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
+- `locations/abyssal-ruins.md`, `locations/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
