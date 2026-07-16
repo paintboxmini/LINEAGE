@@ -358,6 +358,8 @@ The legend travels at two different distances. In Vulture's Nest, it's tangled u
 
 The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. Nothing about their usual methods worked here. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. The order's own record marks it closed — officially, nobody's sent back. Unofficially, at least one still comes. Whether the party could ever cross paths with them, mid-attempt, is not decided. See `factions/the-masons.md` (Known Works).
 
+The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader.md`.
+
 The Night Ferryman is also more than he lets on — an Archon of Navigation (`mythology/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
 
 ---
@@ -388,7 +390,7 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 
-**What the answering actually looked like, and what happened to them.** Who came before is known now — see GM Secret, above. What the coil actually did to them while they were still here, and whether any of them made it out, is not a thread to pull until the center is decided.
+**What the answering actually looked like, and what happened to the rest of them.** At least one of them is the Wall-Reader now — see GM Secret, above. Whether that was the only one, and whether the unofficial visitor knows it, isn't decided.
 
 ---
 
