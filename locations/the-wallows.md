@@ -19,9 +19,9 @@ Aurora is bound at the bottom of this mine. The Boar built his labor operation d
 
 | Layer | What it is |
 |-------|-----------|
-| **Bazaar level** | Upper mouth of the mine. Magic misbehaves. See `locations/underground-bazaar.md`. |
-| **Labor level** | The Demon Court's domain. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end. |
-| **The Threshold** | Where the warping starts. Sticky echoes. Slimes. The cave reaches. |
+| **Bazaar & Tavern level** | Upper mouth of the mine, both at the same depth. Magic misbehaves. See `locations/underground-bazaar.md`, `locations/underground-tavern.md`. |
+| **Labor level** | The Demon Court's domain — the capital's prison in practice, though nobody official calls it that. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end. |
+| **The Threshold** | Where the warping starts, and where the capital's actual jurisdiction stops meaning anything. Sticky echoes. Slimes. The cave reaches. |
 | **The Deep** | Aurora. Not an encounter. Something else. |
 
 ---

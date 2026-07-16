@@ -10,6 +10,12 @@ Eclipsera is not safe. It is merely the most legible place left.
 
 ---
 
+## What Lies Beneath
+
+Three layers belong to the capital, stacked directly under it: **topside** — the temples, the Marketplace, the Gilded Tusk; **the bazaar and tavern**, one level, not two, the city's semi-official economy; and the Demon Court's domain below that, the capital's actual prison, run like a court in miniature and never once called a prison out loud. Below the Demon Court's tunnels, the mine stops behaving like a mine and the capital's jurisdiction stops meaning anything — that isn't the city anymore, whatever's administering it isn't the Regency. Full structure at `locations/the-wallows.md`.
+
+---
+
 ## The Marketplace
 
 A sprawling labyrinth of stalls and shops at the city's center. Goods from every region and a few places that aren't named. Merchants from distant cultures trade alongside each other with the practiced indifference of people who have seen too much to be surprised.
@@ -51,7 +57,9 @@ None of these are built on real knowledge of the Seats — they're local religio
 - `world/the-regency.md` — The governing council and its members
 - `locations/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
 - `locations/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
-- `locations/underground-tavern.md` — The tavern below the bazaar; Mortis, gambling, baseline drinks
+- `locations/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
+- `locations/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, the Threshold, the Deep
+- `factions/demon-court.md` — Warden Pazuzu's hierarchy, the capital's prison in practice
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
 - `locations/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
 - `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
