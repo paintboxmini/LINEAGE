@@ -43,6 +43,9 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
+**Locked**
+A card afflicted with Locked cannot be played, discarded, drawn out of, or exiled — it simply stays exactly where it is, doing nothing, for the rest of the game unless something specifically unlocks it. Unlike Wound or Exhaust, Locked isn't a new card added to your deck. It's one of your own cards taken out of play in place — the way stone doesn't leave the wall it becomes part of. There is no standard removal. No action clears it, no short rest fixes it. Whatever unlocks a Locked card has to come from the same kind of source that locked it in the first place.
+
 **Initiative Shift X**
 The target's next turn moves by exactly X turns: positive X, they act X turns sooner; negative X, X turns later. That sentence is the whole rule — everything below is how the table keeps it true.
 

@@ -240,6 +240,8 @@ Moving during the contraction: the walls brush shoulders, slow progress, create 
 
 The party has to decide: move now, move carefully, or wait.
 
+**Passing through, once, no check:** Each player who passes through gains 1 Locked — their own choice which card. Not a trap to avoid, not a consequence of moving wrong; contact is the whole cost. It only happens once per player here, regardless of how many times they pass back through. Only the Nagamani unlocks it. See the Nagamani, below.
+
 ---
 
 ## Module — The Silent Room
@@ -316,6 +318,8 @@ It has more than one way in. Everywhere else in the Coil, the wall leads one dir
 
 **If they take a wrong turn here:** They will eventually recognize a landmark from earlier, same as before. The pressure track does not reset. The Ferryman's hint, if they received it and ignored it, lands differently read back at them by a mirror than it did the first time.
 
+**Passing through, once, no check:** Each player who passes through gains 1 Locked — their own choice which card, skin gone mirror-smooth wherever it took hold. Same rule as the Breathing Passage: contact is the cost, not a mistake. Once per player regardless of how many passes it takes to get through. Only the Nagamani unlocks it. Between the two modules, no player can end the delve with more than 2 Locked cards.
+
 ---
 
 ## Module — The Helping Hands
@@ -357,6 +361,8 @@ The passage widens. Nothing here was ever reinforced — no stonework to give ou
 A jewel said to grow in the skull of a great serpent — luminous, fiercely guarded, old folklore told in Vulture's Nest and further out, always about wealth and power for whoever claims it. Nobody who tells the story has been to the center. Nobody who's actually been to the center tells the story the way it gets told.
 
 It is real. It is also nothing close to the size the legend imagines — not a stone you could pocket, closer to a boulder fused into what's left of a skull, and no party that reaches it is carrying it back out. What the legend gets right by accident: a separate, cruder tradition holds that a stone from a serpent's head can draw the venom from a wound. The two traditions aren't usually about the same kind of stone. They are here.
+
+Mechanically, this is what "draws the venom" actually means: touching the Nagamani unlocks every Locked card a character is carrying, all at once. It's the only thing in the world that does. That's the real transaction underneath the legend — not a fortune, a reversal.
 
 The few who've actually reached the center and lived mostly didn't come for the cure. They came for the legend everyone already knows — and found out, somewhere between the entrance and here, that they needed the other one instead. What they leave with isn't wealth. It's still breathing.
 

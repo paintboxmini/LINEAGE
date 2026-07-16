@@ -20,7 +20,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - Initiative: continuous wheel, no rounds. Shift ±X = next turn moves exactly X. **Wait** = forfeit action, choose a later seat (the party's sequencing tool). **Card design guardrail: keep Initiative Shift X to ±1–3.** The wheel's underlying seat/count/marker mechanics are mid-redesign (`experimental/initiative-slots.md`, not canon yet) and don't reliably hold up past that range. ±1–3 is the safely-established range already in play on existing cards — don't design past it until that thread resolves.
 - Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
 - Status cards (Wound, Exhaust) go into decks — the delayed-consequence system.
-- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Armour X, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
+- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Armour X, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
 
 ## Creature Threat Rating calibration (real anchors)
 
