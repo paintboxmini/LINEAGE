@@ -348,6 +348,8 @@ The few who've actually reached the center and lived mostly didn't come for the 
 
 Their accounts, on the rare occasion one gets told at all, don't spread. A story with no proof, about a jewel nobody can produce, competes badly against a story where the ending is a mountain of gold — and loses, every time, to the version people already wanted to believe. The truth doesn't get suppressed. It just isn't as good a story as the lie it's replacing.
 
+The legend travels at two different distances. In Vulture's Nest, it's tangled up with real caution — dock gossip that knows the Ferryman by name, that's heard enough half-true warnings to never quite be pure fantasy. In the capital of Eclipsera, it's had every inconvenient detail worn off by the distance: no Ferryman, no bodies, no warnings, just the treasure. That's also where the people with the actual means to fund an expedition are — nobles, guilds, scholars working from library fragments — which makes the capital's version the more dangerous one. The people who believe it hardest are the ones who've never been close enough to hear otherwise.
+
 ---
 
 ## GM Secret

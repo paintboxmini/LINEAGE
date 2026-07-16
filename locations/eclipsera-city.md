@@ -1,6 +1,8 @@
-# Eclipsera (The Capital)
+# The Capital of Eclipsera
 
 The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting light. Its architecture is ancient — Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs. It is a symbol of power that has outlasted several explanations for what that power is.
+
+Casually, people just call it Eclipsera — same as the world it shares a name with. The distinction matters for precision, not for anyone who actually lives here.
 
 The city contains an ancient library where scholars search through forgotten texts for answers to questions the rifts opened. The marketplace draws traders from every region, including some who will not say where they came from.
 
@@ -15,7 +17,7 @@ A sprawling labyrinth of stalls and shops at the city's center. Goods from every
 Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
-- A grand library tucked in a quieter corner — scholars and mages, ancient texts
+- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `locations/the-coil.md` (The Nagamani).
 - Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
 - **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/underground-bazaar.md` and `locations/underground-tavern.md`.
 
@@ -51,3 +53,4 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 - `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
 - `locations/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
 - `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
+- `locations/the-coil.md` — the Nagamani legend, as it's known this far from the source
