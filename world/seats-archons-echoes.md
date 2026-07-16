@@ -19,11 +19,11 @@ Every culture interprets the Seats differently — different names, different fa
 
 An Archon is the highest biological expression of a Seat's domain. They are not chosen. They are not elevated. They are what happens when a being aligns so completely with a domain that they become its inevitable expression.
 
-Archons function as filters or lenses for their Seat. They have no free will. They do not command their domain — they *are* it. Their presence "tints" the reality around them through the nature of what they embody.
+Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain — they *are* it, and to act against it would mean acting against their own nature. Their presence "tints" the reality around them through the nature of what they embody.
 
 What this costs:
 - Internal contradiction ends.
-- Free will dissolves.
+- Free will remains, but total alignment means it never expresses as anything but the domain.
 - The individual becomes function.
 
 Most Archons never relinquish their position. Relinquishing a Seat feels like annihilation. For most, it is.

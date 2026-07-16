@@ -20,7 +20,7 @@ Every culture interprets Seats differently. They name them, personify them, ritu
 
 - Alignment becomes total.
 - Internal contradiction ends.
-- Free will dissolves.
+- Free will remains, but aligned so completely it never points anywhere else. To act against the Seat would mean acting against their own nature — not impossible, just unthinkable in the way betraying yourself is unthinkable.
 - The individual becomes function.
 
 The Seat-Bearer does not command the principle. They become its inevitable expression.
