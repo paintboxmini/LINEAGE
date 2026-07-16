@@ -63,7 +63,7 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 
 ## Related Documents
 
-- `locations/eclipsera-city.md` — the city at the basin's center
+- `locations/capital.md` — the city at the basin's center
 - `bestiary/fogcaller.md`
 - `bestiary/echo.md`
 - `items/fog-basin-items.md`

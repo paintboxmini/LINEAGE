@@ -12,7 +12,7 @@ To sit in a Seat is not to gain power over a domain. It is to become aligned wit
 
 The Seat of Harvest doesn't decide whether crops grow. It *is* the pattern that makes growing possible. When the Seat is filled, harvests happen. When it's empty, fields rot or grow wild.
 
-Every culture interprets Seats differently. They name them, personify them, ritualize them. The Seat remains the same. Cultures do not create Seats — they create stories about them.
+Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, memory, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes, unknowingly, rhyme with one.
 
 ---
 

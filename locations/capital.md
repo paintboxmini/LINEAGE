@@ -42,6 +42,8 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of Justice | Justiciars and enforcers. Law, impartial judgment. |
 | Temple of Unity | Interfaith cathedral at the district's heart. Rarely full. |
 
+None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
+
 ---
 
 ## Related Documents

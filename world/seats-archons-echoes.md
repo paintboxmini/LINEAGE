@@ -11,7 +11,7 @@ The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowl
 - **Empty** — That part of reality begins to break down. Fields rot. Endings stop concluding. Memory fragments.
 - **Contested** — Two beings fighting for the same Seat warp reality around them until one wins or both are destroyed.
 
-Every culture interprets the Seats differently — different names, different faces, different rituals. The Seats remain the same. Culture creates stories about them. It does not create them.
+Most cultures have no knowledge that Seats exist as such. Their religions form independent of any real cosmological awareness — around rivers, fire, memory, whatever a people actually needed explained — and some end up resembling a Seat's real domain almost by accident. Most don't resemble anything. The Seats remain the same either way. Culture does not create Seats — it creates religions that sometimes, unknowingly, rhyme with one.
 
 ---
 
