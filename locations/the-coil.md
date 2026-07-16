@@ -356,6 +356,8 @@ Their accounts, on the rare occasion one gets told at all, don't spread. A story
 
 The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. Nothing about their usual methods worked here. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. The order's own record marks it closed — officially, nobody's sent back. Unofficially, at least one still comes. Whether the party could ever cross paths with them, mid-attempt, is not decided. See `factions/the-masons.md` (Known Works).
 
+The Night Ferryman is also more than he lets on — an Archon of Navigation (`mythology/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
+
 ---
 
 ## GM Notes
@@ -392,3 +394,4 @@ The ones who came before were Masons — the same secret order that maintains th
 
 - `locations/vultures-nest.md` — The Night Ferryman (Notable Roles)
 - `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
+- `mythology/seats.md`, `world/seats-archons-echoes.md` — Navigation, the Night Ferryman's Seat (GM-only)

@@ -106,6 +106,15 @@ Domain: Vitality, Sacrifice, Lineage
 
 Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
 
+### Navigation / Pathfinding
+**Bearer:** The Night Ferryman
+
+Speaks in the smallest instructions that actually work. Pick a hand. Keep it on the wall. Don't change it. Never explains further than that, because there isn't a further — the whole domain is committing to one path and holding it, not knowing where it leads.
+
+Doesn't offer the destination. Doesn't promise the destination is good. Only that there's a way through, and it's simpler than anyone standing at the entrance believes.
+
+*"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
+
 ---
 
 *This list is incomplete. Not all Seats have known bearers. Not all bearers are known.*
