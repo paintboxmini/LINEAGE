@@ -46,6 +46,13 @@ minimal — do not add complexity unless it solves a demonstrated problem.
 
 3. Mechanical relevance — does this matter? Would play notice if it were deleted?
 
+3b. Mechanical grounding — does the fiction claim an effect happens (heals, cures,
+    poisons, transforms, unlocks) that doesn't map to any actual rule or keyword?
+    Narrative language that sounds mechanical isn't the same as being mechanical.
+    (The Nagamani's "draws the venom from a wound" read as a real effect for most
+    of a session before anyone checked whether venom was implemented anywhere.
+    It wasn't.)
+
 4. Mechanical identity — does it create a decision NO other card creates, or is it
    a stat-swap of something that already exists?
 
