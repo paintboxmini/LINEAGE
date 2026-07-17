@@ -6,6 +6,8 @@
 
 **What doesn't belong here:** keyword definitions (see `rules/card-glossary.md`), workflow rules (see `CLAUDE.md`), location summaries (see `locations/`). If it has a canonical home elsewhere, it goes there.
 
+**Timestamps, starting now (2026-07-17, Drew's request):** new entries lead with a real timestamp in Drew's local time — `TZ='America/Chicago' date` (Central, DST-aware — CDT or CST as the calendar actually has it), not a guess. Prospective only; existing entries above this line stay exactly as written, no retroactive stamping.
+
 ## Branch map
 
 - `Main` — canon. Humans merge to it.
