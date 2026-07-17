@@ -467,7 +467,7 @@ def _interrupt_effect(engine, me, foe):
     foe.skip_turns += 1                    # target loses their next turn
     me.cannot_defend = True                # you can't defend until your next turn
 def _interrupt_defense(engine, me, foe):
-    engine.initiative_shift(me, 3)         # Initiative Shift +3 (positive: minimal in sim)
+    engine.initiative_shift(foe, -1)       # -1 to the attacker (foe), not to yourself
 
 def _chain_effect(engine, me, foe):
     if me._last_hit > 0:
@@ -531,9 +531,9 @@ def _urgency_defense(engine, me, foe):
     engine.initiative_shift(me, 1)          # the "-1 to the attacker" choice is unmodeled
 
 def _delay_effect(engine, me, foe):
-    engine.initiative_shift(foe, -3)       # defender skips (negative shift)
+    engine.initiative_shift(foe, -1)       # defender skips (negative shift)
 def _delay_defense(engine, me, foe):
-    engine.initiative_shift(foe, -3)
+    engine.initiative_shift(foe, -1)
 
 def _communion_effect(engine, me, foe):
     for a in _team(engine, me):

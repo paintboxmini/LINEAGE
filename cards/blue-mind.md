@@ -6,7 +6,7 @@
 BLUE — MIND
 Attack: Mind + d2
 Effect: Target loses their next turn, you can't defend until your next turn
-Defensive Bonus: Apply Initiative Shift +3 to yourself
+Defensive Bonus: Apply Initiative Shift -1 to the attacker
 Range: Both
 *"The best move happens before theirs."*
 

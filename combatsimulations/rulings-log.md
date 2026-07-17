@@ -85,9 +85,12 @@ they aren't mistaken for bugs.
   replacing the old count-based approximation this file used to flag as
   imprecise at 3+ combatants. Verified against all confirmed worked cases in
   `rules/initiative-shift-examples.md`. Positive shifts are fully modeled now,
-  including the bonus-turn case — INTERRUPT and URGENCY's +3 shifts can
-  genuinely grant an extra turn where the math calls for it, which the old
-  code never actually produced for this roster. Reshifting a token that
+  including the bonus-turn case — URGENCY's defensive +1 (was +3, rebalanced
+  since) can genuinely grant an extra turn where the math calls for it in a
+  2-token duel, which the old code never actually produced for this roster.
+  INTERRUPT's defensive shift was reworked the same day (now -1 to the
+  attacker, was +3 to self) and no longer applies a positive shift at all.
+  Reshifting a token that
   already holds a pending skip/bonus chip is hard-coded rather than derived:
   the general boundary-crossing formula would predict a bonus in the one
   confirmed case, but the canon ruling says it goes normally, so a reshift of

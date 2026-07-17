@@ -95,8 +95,8 @@ Range: Melee
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Apply Initiative Shift -3 to defender
-Defensive Bonus: Apply Initiative Shift -3 to attacker
+Effect: Apply Initiative Shift -1 to defender
+Defensive Bonus: Apply Initiative Shift -1 to attacker
 Range: Both
 *"Patience places the final stone."*
 

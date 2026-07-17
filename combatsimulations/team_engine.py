@@ -23,7 +23,7 @@ Policies for teams implement:
 import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
-                    _apply_shift, _rotate_current)
+                    _apply_shift, _rotate_current, _leave_wheel)
 
 
 class Battle:
@@ -90,6 +90,7 @@ class Battle:
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             self._say(f"    {target.name} COLLAPSES")
+            _leave_wheel(self, self.queue, target)
         return amount
 
     def heal(self, target, amount):
@@ -231,6 +232,8 @@ class Battle:
         self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
         while self.turn_count < self.max_turns:
+            if not self.queue:      # defensive: shouldn't happen, win-check fires first
+                return self._finish(bool(self.living(0)), bool(self.living(1)))
             who = self.queue[0]
             if not who.collapsed:
                 self.take_turn(who)

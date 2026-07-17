@@ -73,6 +73,6 @@ He is most dangerous when he has had one full cycle to read the party.
 
 *Green — Soul*
 - DEAD RECKONING — Scry 2; Defensive: Blind on attacker
-- DELAY — Apply Initiative Shift -3 to defender; Defensive: Apply Initiative Shift -3 to attacker
+- DELAY — Apply Initiative Shift -1 to defender; Defensive: Apply Initiative Shift -1 to attacker
 - SCRIPTURE OF ECHOES — Both discard 1; heal 4 if different colors; Defensive: ally heals 4
 - READ — Defender reveals hand; Defensive: Name color, discard matching card from attacker's hand

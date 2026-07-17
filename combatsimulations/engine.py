@@ -152,6 +152,36 @@ def _rotate_current(engine, queue, who):
     queue.append(who)
 
 
+def _leave_wheel(engine, queue, who):
+    """A combatant who leaves the fight entirely removes their slot, and the
+    wheel closes around it (rules/combat.md, Joining and leaving). Plain list
+    removal already performs that close — everything after `who`'s slot
+    shifts back by one, same as any other slide. Also clears any pending chip
+    or bonus turn `who` was carrying, since a combatant that's gone can't be
+    skipped or take a bonus turn later. Safe to call on someone not currently
+    in the wheel (a no-op)."""
+    if who in queue:
+        queue.remove(who)
+    who._shift_skip = False
+    if who in engine.pending_turns:
+        engine.pending_turns.remove(who)
+
+
+def _join_wheel(queue, new_combatant, after=None):
+    """A new combatant's token enters the wheel (rules/combat.md, Joining and
+    leaving). A summon enters directly after the token of whoever summoned
+    it — pass that combatant as `after`. A GM-introduced combatant enters
+    when the fiction calls for it (usually the end of a full lap); the
+    caller decides the timing, this just does the insertion — pass
+    `after=None` to append at the back, matching "end of a lap." Not
+    currently wired to any card — no existing card summons — but the wheel's
+    slot count is expected to stay accurate if one ever does."""
+    if after is not None and after in queue:
+        queue.insert(queue.index(after) + 1, new_combatant)
+    else:
+        queue.append(new_combatant)
+
+
 # --- Card model ---------------------------------------------------------------
 class Card:
     """A card is data plus up to three behavior hooks.
@@ -396,6 +426,7 @@ class Duel:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            _leave_wheel(self, self.queue, target)
         return amount
 
     def heal(self, target, amount):
@@ -539,6 +570,8 @@ class Duel:
         self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
         while self.turn_count < self.max_turns:
+            if not self.queue:      # defensive: shouldn't happen, win-check fires first
+                return self._finish(None)
             who = self.queue[0]
             if not who.collapsed:
                 self.take_turn(who, self.other(who))
