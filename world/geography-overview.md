@@ -8,9 +8,13 @@ The continent is rich with rivers and lakes. Where the roads are the Regency's a
 
 ---
 
+## Overall Shape
+
+Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipsera sits at the center of that triangle, not along one edge of it. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
+
 ## The Kings Road — The Spine
 
-The main road of the continent. Runs north to south connecting three cities in a straight line:
+The main road of the continent, connecting Glasslight Reach, Eclipsera, and Vulture's Nest. It is not a straight line — it bends at the capital, since Eclipsera sits at the center of the triangle rather than along one edge of it. From Eclipsera, the road runs roughly north to Glasslight Reach and roughly southeast to Vulture's Nest.
 
 **Glasslight Reach → Eclipsera (capital) → Vulture's Nest**
 
@@ -55,10 +59,10 @@ Islands stand in the larger lakes and wide river reaches. They are inhabited, tr
 |----------|----------|-------|
 | Eclipsera (city) | Center of the known map | Capital; seat of the Regency |
 | Glasslight Reach | Northernmost edge | Cliff town; faces the Soft Edge |
-| Turnroot Weald | Western border | Sentient forest; wraps Ashfall Wastes |
-| Ashfall Wastes | Western interior | Ash-buried ruins; strange heat |
-| Vulture's Nest | Heart of the river web | Major river port; Tideward Compact |
-| Abyssal Ruins | Interior | Vast warped ancient site |
+| Turnroot Weald | Southwest | Sentient forest; wraps Ashfall Wastes |
+| Ashfall Wastes | South of Turnroot Weald | Ash-buried ruins; strange heat |
+| Vulture's Nest | Southeast; heart of the river web | Major river port; Tideward Compact |
+| Abyssal Ruins | South of Vulture's Nest | Vast warped ancient site |
 | Havenrise | Eastern edge | Under development |
 | Roaat | Near Vulture's Nest | Under development |
 | Canille | Lake island, northeast of Vulture's Nest | Island village; the masks |
