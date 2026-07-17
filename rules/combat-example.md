@@ -23,8 +23,8 @@ STRIKE, DEAD HEAT, BRACE, PULL / PROFILE, CALCULATE, DISTRACT / FLOW, MOCKERY
 ### The Enemies
 
 **Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 11** *(2 × Body + 9)* — hand size **2** *(Mind 1, floored at the minimum of 2)*
-Each runs its own copy of the same 7-card deck (3 signature + 4 core, per the enemy deck convention):
-RAKING CUT, SKITTER AWAY, NIP AND TEAR *(signature — `cards/briar-scratcher.md`)* + DART (R), STILLNESS (B), SHADE AWAY (G), FLOW (G)
+Each runs its own copy of the same **4-card deck** *(deck size = total stats = 1+1+2; color counts = each stat: 1R/1B/2G)*, 3 signature + 1 core to fill:
+RAKING CUT, SKITTER AWAY, NIP AND TEAR *(signature — `cards/briar-scratcher.md`)* + SHADE AWAY (G, core)
 
 ### Positions
 
@@ -41,12 +41,12 @@ Frost and Steele are walking the road: both **Frontline**. Scratcher A darts out
 
 **Wheel order: Frost → Scratcher A → Steele → Scratcher B → back to Frost.** There are no rounds — the wheel just keeps turning (`rules/combat.md`, Initiative). "Cycle" below is descriptive shorthand for one lap, used only to organize this document.
 
-**Opening hands:** when initiative is rolled, every combatant draws to hand size (`rules/combat.md`, Turn Structure — a rule this example surfaced; see Edge Cases at the end).
+**Opening hands:** when initiative is rolled, every combatant draws to hand size (`rules/combat.md`, Turn Structure).
 
 - Frost draws: PROFILE, PATIENCE, STRIKE *(6 cards left in deck)*
 - Steele draws: STRIKE, DEAD HEAT, CALCULATE
-- Scratcher A draws: RAKING CUT, SKITTER AWAY
-- Scratcher B draws: STILLNESS, RAKING CUT
+- Scratcher A draws: RAKING CUT, SKITTER AWAY *(2 cards left: NIP AND TEAR, SHADE AWAY)*
+- Scratcher B draws: SKITTER AWAY, RAKING CUT *(2 cards left: NIP AND TEAR, SHADE AWAY)* — B needs the one Both-range card in the deck to threaten anything from Backline, and gets it.
 
 ---
 
@@ -58,28 +58,30 @@ Start of turn: draw to hand size — hand is already full, no draw.
 
 **Action: Play a Card.** Frost attacks Scratcher A with **PROFILE** (Blue, Mind + d4, Range: Both). Range check: Frost Frontline → A Frontline is melee range; PROFILE says Both, so it's legal from anywhere.
 
-A defends: reveals **SKITTER AWAY** (Blue). Both cards are discarded.
+A defends: reveals **SKITTER AWAY** (Blue, Range: Both — legal regardless of position). Both cards are discarded.
 
 **Blue vs Blue — tie.** No damage. Per the tie rule (`rules/combat.md`, Attack Resolution): *attacker's Effect still triggers, then defender's Defensive Bonus triggers.*
 
-- PROFILE Effect: *"Scry 2, then draw 1 card."* Frost looks at his top two — PUSH and REFRACT — puts REFRACT on top, and draws it. Note that the scry and the draw are Frost's alone: a card granting them to "your allies" would *exclude* Frost (**You Are Not Your Own Ally**, `rules/cards.md`).
+- PROFILE Effect: *"Scry 2, then draw 1 card."* Frost looks at his top two — PUSH and REFRACT — puts REFRACT on top, and draws it.
 - SKITTER AWAY Defensive Bonus: A gains **Evade** (50% to dodge the next attack against it — `rules/card-glossary.md`).
 
 Neither trigger cancels the other, so both resolve. Frost's hand: PATIENCE, STRIKE, REFRACT.
 
+A's hand after playing SKITTER AWAY: RAKING CUT. A's deck: NIP AND TEAR, SHADE AWAY.
+
 ### Scratcher A's turn
 
-Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NIP AND TEAR.
+Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NIP AND TEAR. A's deck: SHADE AWAY.
 
 **Action:** A attacks Frost with **RAKING CUT** (Red, Body + d2, Melee — both Frontline, legal).
 
-Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green), hoping Green would beat Blue. A played Red.
+Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Melee — legal, both Frontline), hoping Green would beat Blue. A played Red.
 
 **Red beats Green — attacker wins.** Damage: Body 1 + d2 *(rolls 1)* = **2**. Frost 15 → 13. RAKING CUT Effect: *shuffle 1 Wound into target's deck.* Frost's deck is now 6 cards: PUSH, ENDURE, STILLNESS, FLOW, WITNESS, **WOUND**.
 
 This is the Scratcher doing exactly what it exists to do — the 2 damage is nothing; the Wound is the attack (`bestiary/briar-scratcher.md`, Tactical Purpose).
 
-Frost's hand: REFRACT, STRIKE.
+Frost's hand: STRIKE, REFRACT. A's hand: NIP AND TEAR.
 
 ### Steele's turn
 
@@ -87,21 +89,21 @@ Draws to 3 — hand already full.
 
 **Action:** Steele attacks Scratcher A with **STRIKE** (Red, Body + d8, Melee — both Frontline, legal).
 
-A has **Evade** from cycle 1. Evade resolves *before the defender chooses a card*: roll 1d2 → **1, the attack misses entirely.** The Evade stack is spent. STRIKE was already played and discarded in step 1 of attack resolution, so the card is gone. *(Ruling — see Edge Cases.)* No damage, no Effect, A never had to commit a card.
+A has **Evade** from this cycle. Evade resolves *before the defender chooses a card*: roll 1d2 → **1, the attack misses entirely.** The Evade stack is spent. STRIKE was already played and discarded in step 1 of attack resolution, so the card is gone. *(Ruling — see Edge Cases.)* No damage, no Effect, A never had to commit a card.
 
 Steele's hand: DEAD HEAT, CALCULATE.
 
 ### Scratcher B's turn
 
-Draws to 2 — hand already full (STILLNESS, RAKING CUT).
+Draws to 2 — hand already full (SKITTER AWAY, RAKING CUT).
 
 B is Backline and wants to use RAKING CUT — but it's **Melee, and melee requires both combatants in the Frontline** (Range Matrix, `rules/combat.md`). Illegal from where B stands. Instead:
 
-**Action:** B attacks Frost with **STILLNESS** (Blue, Mind + d2, Ranged). Range check: Backline → Frontline is not melee range, so Ranged is legal.
+**Action:** B attacks Frost with **SKITTER AWAY** (Blue, Mind + d2, Ranged: Both). Range check: Backline → Frontline is not melee range, so Both is legal.
 
-Frost holds REFRACT and STRIKE, and wants both for his own turn. Max incoming damage here is Mind 1 + d2 = 3. **Frost declines to defend.** Per resolution step 3: *no defense → attacker wins automatically* — and an automatic win is a full win. Damage: 1 + d2 *(rolls 2)* = **3**. Frost 13 → 10. STILLNESS Effect: *defender discards 1 card at random* — d2 picks **STRIKE**. Declining to defend saved a card and cost a card; the gamble is real.
+Frost holds REFRACT and STRIKE, and wants both for his own turn. Max incoming damage here is Mind 1 + d2 = 3. **Frost declines to defend.** Per resolution step 3: *no defense → attacker wins automatically.* Damage: 1 + d2 *(rolls 2)* = **3**. Frost 13 → 10. SKITTER AWAY Effect: *after attack, may reposition* — B declines; Backline is already exactly where it wants to be. Unlike a discard effect, this doesn't touch Frost's hand.
 
-Frost's hand: REFRACT.
+Frost's hand: STRIKE, REFRACT *(unchanged)*. B's hand: RAKING CUT. B's deck: NIP AND TEAR, SHADE AWAY.
 
 ---
 
@@ -109,42 +111,43 @@ Frost's hand: REFRACT.
 
 ### Frost's turn
 
-Draws to 3 → draws 2 from his 6-card deck: ENDURE and the **WOUND**. Hand: REFRACT, ENDURE, WOUND.
+Draws to 3 → draws 1 from his 6-card deck: the **WOUND**.
 
-The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost is effectively playing this turn with a 2-card hand, and it stays that way until he pays to fix it. That's the whole Scratcher lesson, two turns after the claw landed.
+The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost's hand: STRIKE, REFRACT, WOUND — two cards he can actually play.
 
-**Action:** Frost attacks Scratcher A with **ENDURE** (Red, Body + d2, Both). A's hand is just NIP AND TEAR; it reveals it — **Green. Red beats Green — attacker wins.** Damage: Body 3 + d2 *(rolls 2)* = **5**. A: 11 → 6. ENDURE Effect: Frost gains **Resist** (next successful enemy attack against him deals half damage, rounded down).
+**Action:** Frost attacks A with **STRIKE** (Red, Body + d8, Melee — both Frontline, legal). A's hand is just NIP AND TEAR; it reveals it — **Green** (Range: Melee, legal). **Red beats Green — attacker wins.** Damage: Body 3 + d8 *(rolls 2)* = **5**. A: 11 → 6. STRIKE Effect: None.
 
-Note what Frost could *not* do: his REFRACT (Ranged) is unplayable as an attack against A — Frontline vs Frontline **is** melee range, and Ranged only works when you're not in melee range with the target. In melee it's only good to him as a defense reveal.
-
-End of turn: the **WOUND stays in hand** — it isn't going anywhere until Frost pays to remove it. Frost's hand: REFRACT, WOUND.
+End of turn: the **WOUND stays in hand.** Frost's hand: REFRACT, WOUND. A's hand: empty. A's deck: SHADE AWAY.
 
 ### Scratcher A's turn
 
-Hand empty → draws 2: DART, SHADE AWAY. A is at 6 HP and has been cut once — it wants one more mark before it leaves.
+Hand empty → draws to 2. A's deck has one card: draws **SHADE AWAY** — deck now empty, still one short of hand size. **"If your deck is empty, shuffle your discard pile into a new deck before drawing"** (`rules/combat.md`, Turn Structure) — A's discard (SKITTER AWAY, RAKING CUT, NIP AND TEAR) reshuffles into a fresh 3-card deck, and A draws again: **RAKING CUT**. Hand: SHADE AWAY, RAKING CUT. A's deck: SKITTER AWAY, NIP AND TEAR — the 4-card deck is small enough to genuinely cycle mid-fight, which the old 7-card version never surfaced.
 
-**Action:** A attacks Frost with **SHADE AWAY** (Green, Soul + d2, Melee — legal). Frost defends with **REFRACT** (Blue), predicting another Red claw. **Green beats Blue — attacker wins.**
+**Action:** A attacks Frost with **SHADE AWAY** (Green, Soul + d2, Melee — both Frontline, legal).
 
-Damage: Soul 2 + d2 *(rolls 1)* = 3 — but Frost has **Resist**: half rounded down → **1**. Frost 10 → 9. Resist expires. SHADE AWAY Effect: A gains Evade.
+Frost's hand is REFRACT and WOUND. REFRACT is **Ranged**, and both combatants are Frontline — melee range applies, so a Ranged card cannot defend here (`rules/card-glossary.md`, Range; the same rule that gates attacking gates defending too). WOUND cannot be played at all. **Frost holds a card and still has no legal defense** — functionally an empty hand. Per resolution step 3, A wins automatically.
+
+Damage: Soul 2 + d2 *(rolls 1)* = 3. SHADE AWAY Effect: A gains **Evade**. Frost 10 → **7**.
+
+Because there was no legal defense to choose, nothing left Frost's hand — REFRACT and WOUND are both still there. A's hand after playing SHADE AWAY: RAKING CUT. A's deck: SKITTER AWAY, NIP AND TEAR.
 
 ### Steele's turn
 
 Draws to 3 → draws BRACE. Hand: DEAD HEAT, CALCULATE, BRACE.
 
-**Action:** Steele attacks Scratcher B with **DEAD HEAT** (Red, Body + d6, Ranged). Range check: Frontline → Backline is not melee range — Ranged is legal. B's only card is RAKING CUT; it reveals it — **Red.**
+**Action:** Steele attacks Scratcher B with **DEAD HEAT** (Red, Body + d6, Ranged). Range check: Frontline → Backline is not melee range — Ranged is legal.
 
-**Red vs Red — tie.** No damage. Now the tie ordering matters:
+B's hand is RAKING CUT — its only card, and **Melee**. B is still Backline: not melee range against a Frontline Steele, so RAKING CUT can't defend here either, the same gap that just caught Frost above. **B has no legal defense.** Steele wins automatically.
 
-1. Attacker's Effect first: DEAD HEAT — *"If this attack ties, the defender's Defensive Bonus does not trigger."*
-2. Defender's Defensive Bonus: RAKING CUT would shuffle a Wound into Steele's discard — **canceled.**
+Damage: Body 4 + d6 *(rolls 3)* = **7**. B: 11 → 4. DEAD HEAT's Effect only fires on a tie, and this isn't one, so it does nothing here — there was no Defensive Bonus in play to cancel anyway.
 
-This is the exact clause in the tie rule: *"If the Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger"* (`rules/combat.md`). Steele traded a tied attack for dodging a Wound. B's hand is now empty.
+RAKING CUT was never a legal option, so it was never revealed — B's hand is unchanged. Steele's hand: CALCULATE, BRACE.
 
 ### Scratcher B's turn
 
-Draws to 2: SKITTER AWAY, NIP AND TEAR.
+Draws to 2 → draws NIP AND TEAR. Hand: RAKING CUT, NIP AND TEAR. B's deck: SHADE AWAY.
 
-NIP AND TEAR is Melee and B is still Backline. **Action: Move Position** — B crosses into its Frontline. Moving costs the whole action (`rules/combat.md`, Turn Structure); B does nothing else this turn. Committing to the Frontline is a real decision — next cycle it can claw, and be clawed.
+NIP AND TEAR is Melee and B is still Backline — and RAKING CUT is Melee too. **Both cards in hand are illegal to attack with from here.** **Action: Move Position** — B crosses into its Frontline. Moving costs the whole action; B does nothing else this turn. The deck resize just made a Backline Scratcher's hand a real liability, not only an attack-range inconvenience — worth flagging as a genuine finding, not a scripted one (see Edge Cases).
 
 ---
 
@@ -152,15 +155,15 @@ NIP AND TEAR is Melee and B is still Backline. **Action: Move Position** — B c
 
 ### Frost's turn
 
-REFRACT went to the discard pile defending last cycle, so Frost starts this turn holding only the **WOUND**. He draws to 3 — but the Wound occupies a slot, so he draws only two real cards, PUSH and STILLNESS, and never reaches FLOW or WITNESS, which stay buried in his deck. Hand: PUSH, STILLNESS, WOUND — two cards he can actually play. That's the Wound's real cost: not the 2 damage that put it there, but the card it's quietly keeping out of his hand every turn until he spends an action to be rid of it. Frost is at 9 HP and carrying a passenger he can't put down until the party rests.
+Frost's hand is REFRACT and WOUND — REFRACT was never legally playable this fight (Ranged, and every exchange so far has been melee range), so it's still sitting there. Draws to 3 → draws PUSH from his deck. Hand: REFRACT, WOUND, PUSH.
 
-**Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d6, Melee). B reveals **SKITTER AWAY** (Blue). **Blue beats Red — defender wins.** No damage. Defensive Bonus: B gains **Evade**.
+**Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d4, Melee). B reveals **NIP AND TEAR** (Green, Melee — legal, both Frontline now). **Green beats Red — defender wins.** No damage. NIP AND TEAR Defensive Bonus: *Heal 1.* B: 4 → 5.
 
 ### Scratchers A and B — the exit
 
 A Scratcher fight doesn't end in a kill. They mark and they leave (`bestiary/briar-scratcher.md`: *"They're not trying to win. They're marking."*).
 
-On A's turn it bolts for the briar wall — moving out of the combat area entirely. Movement in Tales Untold is abstract: leaving the field ends your participation in combat, and if every enemy leaves, **combat is over** (they can re-engage later if the fiction demands). B follows on its turn, Evade unspent, gone between two heartbeats.
+On A's turn it bolts for the briar wall — moving out of the combat area entirely. Movement in Tales Untold is abstract: leaving the field ends your participation in combat, and if every enemy leaves, **combat is over** (they can re-engage later if the fiction demands). B follows on its turn, gone between two heartbeats.
 
 Note the asymmetry: enemy disengagement is a GM call, made from behavior — Scratchers leave because leaving is what Scratchers do. A *player* trying to exit combat under pressure uses the **Flee** action: 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for the fiction (`rules/combat.md`, Fleeing Combat). The world doesn't owe the party the same clean exit it gives its animals.
 
@@ -172,10 +175,10 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
 | | HP | Deck state |
 |---|----|-----------|
-| Frost | 9 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest) |
-| Steele | 17 / 17 | Clean — Dead Heat's tie denial dodged the only Wound aimed at him |
+| Frost | 7 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest); REFRACT never found a legal moment to be played |
+| Steele | 17 / 17 | Clean — never targeted |
 | Scratcher A | 6 / 11 | Gone |
-| Scratcher B | 11 / 11 | Gone — never took a hit |
+| Scratcher B | 5 / 11 | Gone — spent a whole turn just crossing the field, and its Backline hand was dead weight twice over |
 
 Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole action on it or takes a short rest. It rides in his deck into Briarwatch and the Hollow below it, surfacing into his hand to eat a slot every time it's drawn (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
 
@@ -185,10 +188,11 @@ Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole a
 
 - **Initiative:** 1d6 + Soul; ties break by higher Soul, then player-before-enemy; the order is a wheel with no rounds.
 - **Turn economy:** draw to hand size (Mind, minimum 2) at start of turn, then exactly one action — attack, move, item, Rushdown, interact, or flee.
-- **All four resolution outcomes:** attacker win (damage + Effect), defender win (no damage + Defensive Bonus), tie (no damage, Effect then Defensive Bonus — including the cancellation clause), and the automatic win when the defender declines.
-- **Simultaneous reveal:** defense is a prediction. Frost guessed wrong twice; that's the game.
-- **Range is positional law:** melee needs both Frontline; Ranged fails inside melee range; Both is always legal. B lost a full turn crossing the field to get claw-range.
-- **Status flow:** Evade (spent on one attack, whether or not it dodges), Resist (halves one hit), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
+- **Three of the four resolution outcomes:** attacker win (damage + Effect), defender win (no damage + Defensive Bonus), and the automatic win when the defender declines or has nothing legal to offer.
+- **Simultaneous reveal:** defense is a prediction. Frost guessed wrong once; that's the game.
+- **Range is positional law, for both sides of an exchange:** melee needs both Frontline; Ranged fails inside melee range whether it's the card attacking or defending. A hand that holds a card can still have no legal defense — Frost's REFRACT and B's RAKING CUT both sat in hand, useless, at the moments that mattered.
+- **A 4-card deck genuinely cycles mid-fight:** Scratcher A ran its deck dry and reshuffled its discard pile inside a single combat — a real consequence of deck size = total stats that a larger deck wouldn't have surfaced.
+- **Status flow:** Evade (spent on one attack, whether or not it dodges), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
 - **You Are Not Your Own Ally** unless the card says "you and" (`rules/cards.md`).
 
 ---

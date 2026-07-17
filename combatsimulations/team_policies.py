@@ -5,7 +5,7 @@ between its turns spends a card each block, so hands run dry — the thing the 1
 sim couldn't show).
 
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('discard_wound',) | None
+                                 | ('destroy_wound',) | None
     choose_defense(battle, me, attacker) -> card | None
 """
 
@@ -56,7 +56,7 @@ class TeamTactician(ScryMixin):
         if staggered_ally is not None:
             return ('assist_stagger', staggered_ally)
         if any(c.is_status and c.name == 'WOUND' for c in me.hand):
-            return ('discard_wound',)
+            return ('destroy_wound',)
         if me.hand:
             return ('move',)
         return None

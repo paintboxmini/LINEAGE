@@ -14,7 +14,7 @@ engines — ally effects route through engine.allies(me), which is empty in a du
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('discard_wound',) | ('recover_stagger',)
+                                 | ('destroy_wound',) | ('recover_stagger',)
                                  | ('assist_stagger', target) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
@@ -288,10 +288,10 @@ class Battle:
             self.attack(who, target, card)
         elif action[0] == 'move':
             who.position = 'backline' if who.position == 'frontline' else 'frontline'
-        elif action[0] == 'discard_wound':
+        elif action[0] == 'destroy_wound':
             for i, c in enumerate(who.hand):
                 if c.is_status and c.name == 'WOUND':
-                    who.discard.append(who.hand.pop(i))
+                    who.hand.pop(i)
                     break
         elif action[0] == 'recover_stagger':
             who.staggered = False

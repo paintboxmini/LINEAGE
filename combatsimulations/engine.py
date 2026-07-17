@@ -563,11 +563,11 @@ class Duel:
             elif kind == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
                 self._say(f"{who.name} moves to {who.position}")
-            elif kind == 'discard_wound':
+            elif kind == 'destroy_wound':
                 for i, c in enumerate(who.hand):
                     if c.is_status and c.name == 'WOUND':
-                        who.discard.append(who.hand.pop(i))
-                        self._say(f"{who.name} discards a Wound (action)")
+                        who.hand.pop(i)
+                        self._say(f"{who.name} destroys a Wound (action)")
                         break
             elif kind == 'recover_stagger':
                 who.staggered = False

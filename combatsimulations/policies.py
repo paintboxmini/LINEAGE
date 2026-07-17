@@ -102,7 +102,7 @@ def idle_recovery(engine, me, foe):
     if me.staggered:
         return ('recover_stagger',)
     if any(c.is_status and c.name == 'WOUND' for c in me.hand):
-        return ('discard_wound',)
+        return ('destroy_wound',)
     return None
 
 
