@@ -62,12 +62,6 @@ Turn order resolves highest to lowest.
 - If still tied between players, they choose order among themselves.
 - If still tied between a player and an enemy, the player goes first.
 
-There are no rounds. Initiative is a continuous wheel — once the last position has acted, the order cycles back to 1st and keeps going. Card effects referencing timing anchor to a combatant's own next turn, not a table-wide round.
-
-**The turn marker.** Picture the wheel as a loop of seats with a fence planted in it — the turn marker. Whoever the marker points at is taking their turn right now. The marker sits on a **position, not a person**: if the combatant under it is shifted or displaced away mid-turn, the marker stays where it is, the turn in progress completes, and the next turn goes to whoever now occupies the marker's position — count permitting (see **Initiative Shift X** in `rules/card-glossary.md`). A combatant on the marker is *on the fence*: you can hop off a fence you are standing on without it counting as jumping it — they have a full wheel between them and their next turn, so no shift applied mid-turn can mint them a free turn or a self-skip.
-
-Card effects cannot modify initiative unless the card explicitly states otherwise. See **Initiative Shift X** in `rules/card-glossary.md`.
-
 ---
 
 ## Turn Structure

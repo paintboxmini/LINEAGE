@@ -46,19 +46,6 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **Locked**
 A card afflicted with Locked cannot be played, discarded, drawn out of, or exiled — it simply stays exactly where it is, doing nothing, for the rest of the game unless something specifically unlocks it. Unlike Wound or Exhaust, Locked isn't a new card added to your deck. It's one of your own cards taken out of play in place — the way stone doesn't leave the wall it becomes part of. There is no standard removal. No action clears it, no short rest fixes it. Whatever unlocks a Locked card has to come from the same kind of source that locked it in the first place.
 
-**Initiative Shift X**
-The target's next turn moves by exactly X turns: positive X, they act X turns sooner; negative X, X turns later. That sentence is the whole rule — everything below is how the table keeps it true.
-
-Track the target's two numbers: their **seat** in the order, and their **count** — how many turns until they act again. A shift rewrites the count by X and moves them X seats around the wheel (positive toward the marker's next arrival, negative away from it — toward larger position numbers). The target cuts into the new seat; everyone between slides one seat to fill the gap. **Sliding is not a shift** — displaced combatants keep their own counts unchanged.
-
-When seat and count disagree, **the count wins**:
-- If the marker reaches the target's seat *before* their count is satisfied, it **passes them over** — no turn, and a pass-over costs no time. (This is what happens when someone who has just acted is shifted backward into a coming seat: the marker's first visit waves past them.)
-- If the count reaches **zero or below**, the target acts immediately after the current turn — the bonus turn. For shifts of X ≥ N (N = combatants), resolve one bonus turn (positive) or one full-lap pass-over (negative) per revolution, then the remainder normally.
-
-The marker sits on a **position, not a person**. If its occupant is shifted or displaced mid-turn, the marker stays put and the turn in progress completes; then the next turn goes to whoever now holds the marker's position, count permitting. A combatant taking their turn has a full wheel between them and their next turn — which is why a small self-shift can never mint a free turn or a self-skip (the fence, `rules/combat.md`).
-
-To check any resolution at the table, ask the target's two numbers: *how many turns away were you? how many are you now?* A positive shift may only lower the second number; a negative shift may only raise it — each by exactly X. If the seats say otherwise, the seats are wrong.
-
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
 

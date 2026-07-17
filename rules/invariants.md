@@ -8,7 +8,7 @@ This file is scoped to the simulator only. It is not a design standard for what 
 
 ## Confirmed
 
-**The engine tracks a turn-count per combatant, not a position on a wheel.** A human at the table pictures a wheel — a marker moving around a loop of seats — because it's an easy way to see whose turn is coming. The engine doesn't need seats at all. What has to be correct is: for every combatant, how many turns away is their next turn. The wheel is one way to make that count legible to a human; it is not what gets computed. Initiative Shift ±X means: recompute that count by exactly X for the target. Any implementation is correct exactly when it preserves that number — wheel, list, or nothing visual at all. (Table-facing bookkeeping — seats, passes, bonus turns: `rules/card-glossary.md`, Initiative Shift X.)
+*Empty — the previous entry here (turn-count vs. wheel visualization) was Initiative Shift's own invariant, cleared along with the rest of that mechanic's definitions for a fresh rebuild. Nothing else has been confirmed against this file's definition yet.*
 
 ## Candidates — proposed, not yet confirmed
 
