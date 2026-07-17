@@ -23,6 +23,13 @@ Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — G
 | Briarwatch | (−5, −7) |
 | Ashfall Wastes | (−7, −12) |
 | Abyssal Ruins | (7, −12) |
+| Havenrise | (10, 6) |
+| Roaat | (9, −8) |
+| The Coil | (12, −7) |
+| Canille | (10, −3) |
+| Pneum | (11, −4) |
+
+Rough estimates, not confirmed the way the triangle and its edges are — placed from what each location's own file already says (Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"), not from anything more precise. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the old open question — whether they share one lake or sit in separate ones — exactly as open as it was. Clayhollow, Veldmire, and Weatherheart Vale have no stated position anywhere in the repo and aren't placed here; inventing coordinates for them would be inventing geography, not recording it. RavenHold and Island in a Ship are deliberately unmappable by design and are excluded on purpose, not by oversight.
 
 ## The Kings Road
 
@@ -71,17 +78,20 @@ Islands stand in the larger lakes and wide river reaches. They are inhabited, tr
 
 ## Key Landmarks (Summary)
 
-| Location | Position | Notes |
-|----------|----------|-------|
-| Eclipsera (city) | Center of the known map | Capital; seat of the Regency |
-| Glasslight Reach | Northernmost edge | Cliff town; faces the Soft Edge |
-| Turnroot Weald | Southwest | Sentient forest; wraps Ashfall Wastes |
-| Ashfall Wastes | South of Turnroot Weald | Ash-buried ruins; strange heat |
-| Vulture's Nest | Southeast; heart of the river web | Major river port; Tideward Compact |
-| Abyssal Ruins | South of Vulture's Nest | Vast warped ancient site |
-| Havenrise | Eastern edge | Under development |
-| Roaat | Near Vulture's Nest | Under development |
-| Canille | Lake island, northeast of Vulture's Nest | Island village; the masks |
-| Pneum | Lake island, northeast of Vulture's Nest | People of Promise congregation |
+Positions are in the coordinate table above, not repeated here.
+
+| Location | Notes |
+|----------|-------|
+| Eclipsera (city) | Capital; seat of the Regency |
+| Glasslight Reach | Cliff town; faces the Soft Edge |
+| Turnroot Weald | Sentient forest; wraps Ashfall Wastes |
+| Ashfall Wastes | Ash-buried ruins; strange heat |
+| Vulture's Nest | Heart of the river web; Tideward Compact |
+| Abyssal Ruins | Vast warped ancient site |
+| Havenrise | Under development |
+| Roaat | Under development |
+| The Coil | Doesn't appear on charts; the Night Ferryman knows when to look |
+| Canille | Island village; the masks |
+| Pneum | People of Promise congregation |
 
 For detailed location entries, see `locations/`.
