@@ -87,13 +87,13 @@ they aren't mistaken for bugs.
   `rules/initiative-shift-examples.md`. Positive shifts are fully modeled now,
   including the bonus-turn case — INTERRUPT and URGENCY's +3 shifts can
   genuinely grant an extra turn where the math calls for it, which the old
-  code never actually produced for this roster. One gap carried forward, not
-  resolved: reshifting a token that already holds a pending skip/bonus chip
-  clears the chip correctly, but the one confirmed example of this case came
-  out as an ordinary reposition where the engine's general boundary-crossing
-  formula would predict a bonus — the canon ruling itself never specified the
-  underlying arithmetic for that specific interaction, only the outcome, so
-  the engine's behavior may diverge from the table in that one narrow case.
+  code never actually produced for this roster. Reshifting a token that
+  already holds a pending skip/bonus chip is hard-coded rather than derived:
+  the general boundary-crossing formula would predict a bonus in the one
+  confirmed case, but the canon ruling says it goes normally, so a reshift of
+  an already-pending token unconditionally skips the boundary/chip check —
+  asserted as a blanket rule for every variation, since only that one case is
+  confirmed and there's no arithmetic basis to special-case the others.
 
 ---
 

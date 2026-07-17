@@ -76,14 +76,28 @@ def _apply_shift(engine, queue, target, amount):
     and isn't modeled beyond a single crossing.
 
     Reshifting a token that already carries a pending skip or bonus clears it
-    first, then this same logic resolves the new shift fresh. One confirmed
-    case (`rules/initiative-shift-examples.md`, Example 5) came out as an
-    ordinary reposition — no bonus — where this general formula's boundary
-    check would predict one; the discrepancy is unresolved (flagged, not
-    silently papered over) since the canon ruling itself never specified the
-    underlying arithmetic for a reshift specifically, only the outcome."""
+    first. The one confirmed case of this (`rules/initiative-shift-examples.md`,
+    Example 5) came out as an ordinary reposition — no bonus — which the
+    general boundary-crossing formula below would NOT reproduce on its own (it
+    would predict a bonus there). Rather than derive arithmetic nobody has
+    confirmed, that specific case is hard-coded instead: a reshift of an
+    already-pending token never re-triggers the boundary/chip logic, full
+    stop — it always resolves as an ordinary reposition, whatever the raw
+    distance would otherwise suggest. This is asserted as a blanket rule
+    covering every variation (positive or negative new shift, prior skip or
+    prior bonus), not just Example 5's exact numbers, since only the one case
+    is confirmed and there's no basis to special-case the others differently.
+
+    With exactly 3 combatants on the wheel, X's magnitude is reduced by 1
+    (toward zero) before anything else here runs — a shift of ±1 becomes a
+    no-op."""
     if not queue or target not in queue or amount == 0:
         return
+    if len(queue) == 3:
+        amount += -1 if amount > 0 else 1
+        if amount == 0:
+            return
+    was_pending = target._shift_skip or target in engine.pending_turns
     target._shift_skip = False
     if target in engine.pending_turns:
         engine.pending_turns.remove(target)
@@ -96,14 +110,14 @@ def _apply_shift(engine, queue, target, amount):
         # slot, so any positive shift can only mean "sooner than right now,"
         # which becomes a bonus turn this same lap instead (ruling: a
         # positive self-shift always grants an extra turn, any magnitude).
-        if amount > 0:
+        if amount > 0 and not was_pending:
             engine.pending_turns.append(target)
         # negative: staying put (or rotating normally) already can't be
         # "sooner" than right now — no ruling asks for anything more here.
         return
 
     raw = i - amount
-    crossed = raw <= 0 or raw >= total
+    crossed = (raw <= 0 or raw >= total) and not was_pending
     landing = raw % total
     step = -1 if amount > 0 else 1
 
