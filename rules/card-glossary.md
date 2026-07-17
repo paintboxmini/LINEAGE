@@ -51,6 +51,8 @@ A positive shift moves the target's token X positions counterclockwise around th
 
 Multiple shifts applied to the same token at once sum into one net shift before it applies. There is no cap on X in either direction. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. A shift applies normally even to a token that already repositioned itself with Wait this combat.
 
+**Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
+
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
 
