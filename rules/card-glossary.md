@@ -49,7 +49,7 @@ A card afflicted with Locked cannot be played, discarded, drawn out of, or exile
 **Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
-Multiple shifts applied to the same token at once sum into one net shift before it applies. There is no cap on X in either direction. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. A shift applies normally even to a token that already repositioned itself with Wait this combat.
+Multiple shifts applied to the same token at once sum into one net shift before it applies. There is no cap on X in either direction. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. A shift applies normally even to a token that already repositioned itself with Wait this combat.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
