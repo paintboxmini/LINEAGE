@@ -40,7 +40,7 @@ The watchtower ruins are not unexplained to everyone — the Masons built them, 
 
 ## Session 1 Routing
 
-Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
+Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
 ---
 

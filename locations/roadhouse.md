@@ -84,9 +84,9 @@ Nothing is wrong here. That is not reassuring.
 
 ## Session 1 Routing
 
-Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
+Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
-The fork is where the Carrion Guide's route diverges. Standard path continues northeast. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
+The fork is where the Carrion Guide's route diverges. Standard path continues west. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
 
 ---
 

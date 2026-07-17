@@ -77,7 +77,7 @@ Which means the only way anything truly unrecorded moves through the Nest is if 
 
 **Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
-Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
+Routes travelers west toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
 
 Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
 
@@ -271,7 +271,7 @@ The Red Scarves are already in your peripheral vision.
 
 ## Session 1 Routing
 
-Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
+Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
 The Roadhouse is a government inn. Functional, not charming. Beds that work, food that's fine. Exists because the road needs it to. See `locations/roadhouse.md`.
 
