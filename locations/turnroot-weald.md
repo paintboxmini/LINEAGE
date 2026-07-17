@@ -33,7 +33,7 @@ Notable species:
 
 ## Geography
 
-The Turnroot Weald wraps the western edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
+The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
 
 ---
 

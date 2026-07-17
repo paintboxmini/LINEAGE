@@ -33,7 +33,7 @@ The northeast bypass is how travelers reach Glasslight without passing through E
 The known world occupies a basin. Its boundaries are defined by:
 
 - **The Unheld Ocean** to the north, west, and south — grey water that does not obey held reality. It is the edge of the world. Nothing sails it. Nothing fishes it. The only people who go near it are the Glasslight cartographers who map its edge, and the People of Promise, who lower themselves into it on ropes and call that faith.
-- **The Turnroot Weald** wrapping the western edge of the Ashfall Wastes — a sentient forest that insulates the basin from the War Engine beyond.
+- **The Turnroot Weald** wrapping the eastern edge of the Ashfall Wastes — a sentient forest that insulates the basin from the War Engine beyond.
 
 There is nothing beyond the coast. Or nothing anyone has come back to describe. The ghost stories say otherwise — ships that slipped past the shore generations ago, crews that came home wrong or didn't come home at all. The stories are told in river taverns, quietly, and nobody checks them against the water.
 
