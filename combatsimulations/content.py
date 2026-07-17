@@ -526,9 +526,9 @@ def _rooted_oath_defense(engine, me, foe):
 def _urgency_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
     if a:
-        engine.initiative_shift(a, 3)      # positive: minimal in sim
+        engine.initiative_shift(a, 1)
 def _urgency_defense(engine, me, foe):
-    engine.initiative_shift(me, 3)
+    engine.initiative_shift(me, 1)          # the "-1 to the attacker" choice is unmodeled
 
 def _delay_effect(engine, me, foe):
     engine.initiative_shift(foe, -3)       # defender skips (negative shift)
