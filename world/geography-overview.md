@@ -42,12 +42,12 @@ Six segments, not one line: the three edges of the triangle above, plus a spoke 
 
 **The three spokes (corner to center):**
 - Glasslight Reach ↔ Eclipsera
-- Turnroot Weald ↔ Eclipsera
+- Turnroot Weald ↔ Eclipsera — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint
 - Vulture's Nest ↔ Eclipsera — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
 
-**Inns confirmed and built out:** the Roadhouse (`locations/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipsera–Vulture's Nest spoke.
+**Inns confirmed and built out:** the Roadhouse (`locations/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipsera–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host.md`) on the Turnroot–Eclipsera spoke.
 
-**Inns confirmed, not yet built:** the remaining four segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipsera, Turnroot–Eclipsera) each have an inn, evenly spread, same as the two above. Positions and names not yet assigned.
+**Inns confirmed, not yet built:** the remaining three segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipsera) each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
 
 **Travel:**
 - Vulture's Nest → Eclipsera: 2 days
