@@ -68,6 +68,8 @@ The wheel always has exactly as many slots as there are combatants — no empty 
 
 **Joining and leaving.** A summoned combatant's token enters the wheel directly after the token of whoever summoned it. A GM-introduced combatant enters when the fiction calls for it — usually at the end of a full lap. Either way, the wheel gains a slot. A combatant who leaves the fight entirely removes their slot, and the wheel closes around it.
 
+**Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped (see Initiative Shift, `rules/card-glossary.md`); when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
+
 ---
 
 ## Turn Structure
