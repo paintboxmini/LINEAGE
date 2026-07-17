@@ -62,6 +62,8 @@ Turn order resolves highest to lowest.
 - If still tied between players, they choose order among themselves.
 - If still tied between a player and an enemy, the player goes first.
 
+**The Wheel.** Tokens are placed clockwise around the wheel in initiative order — whoever goes first sits at 12 o'clock. A turn marker starts at 12 o'clock. Each turn, the marker moves to the next token in line.
+
 ---
 
 ## Turn Structure

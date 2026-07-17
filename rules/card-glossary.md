@@ -46,6 +46,9 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **Locked**
 A card afflicted with Locked cannot be played, discarded, drawn out of, or exiled — it simply stays exactly where it is, doing nothing, for the rest of the game unless something specifically unlocks it. Unlike Wound or Exhaust, Locked isn't a new card added to your deck. It's one of your own cards taken out of play in place — the way stone doesn't leave the wall it becomes part of. There is no standard removal. No action clears it, no short rest fixes it. Whatever unlocks a Locked card has to come from the same kind of source that locked it in the first place.
 
+**Initiative Shift X**
+A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
+
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
 
