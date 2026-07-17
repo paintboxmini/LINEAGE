@@ -123,7 +123,7 @@ Dependent systems (sim, print sheets, cross-references) do not rebuild on every 
 
 - **Working** (default) — edit the target files only. Record stale dependents under **Pending propagation** at the top of `memory.md` instead of rebuilding them per change.
 - **Sync** — on request or at a natural pause: propagate pending changes through dependents (sim reconciliation, print regeneration, reference sweeps), then clear the ledger.
-- **Release** — full verification: acceptance tests, print sheets regenerated, ledger empty. The combat simulator is a separate instrument Drew consults on his own schedule, not a checklist item, and not something used here to evaluate a change.
+- **Release** — full verification: acceptance tests, print sheets regenerated, the combat simulator reconciled against current canon, ledger empty.
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 

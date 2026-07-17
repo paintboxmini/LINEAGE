@@ -63,9 +63,6 @@ they aren't mistaken for bugs.
 
 - **mockery-taunt-dead / partition-shield-dead** — "must attack you" / "ally
   can't be targeted" need more than one enemy / an ally to matter.
-- **initiative-shift-remainder** — Mockery's Shift −2 cleanly becomes "skip a
-  turn" on a 2-seat wheel; the positional remainder only bites with 3+ combatants.
-- **positive-initiative-shift-unmodeled** — no current card grants extra turns.
 
 ## Accepted simplifications (final — Drew signed off)
 
@@ -82,6 +79,21 @@ they aren't mistaken for bugs.
   `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Wounds.
   Enemy-deck: bury their threats and the color that beats your attacks, leave
   junk (and their Wounds) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
+- **Initiative Shift, rewritten to match the current Wheel** — `_apply_shift`
+  now walks the actual circular path between a token's old and new slot
+  (`rules/combat.md`, `rules/card-glossary.md`), correctly for any wheel size,
+  replacing the old count-based approximation this file used to flag as
+  imprecise at 3+ combatants. Verified against all confirmed worked cases in
+  `rules/initiative-shift-examples.md`. Positive shifts are fully modeled now,
+  including the bonus-turn case — INTERRUPT and URGENCY's +3 shifts can
+  genuinely grant an extra turn where the math calls for it, which the old
+  code never actually produced for this roster. One gap carried forward, not
+  resolved: reshifting a token that already holds a pending skip/bonus chip
+  clears the chip correctly, but the one confirmed example of this case came
+  out as an ordinary reposition where the engine's general boundary-crossing
+  formula would predict a bonus — the canon ruling itself never specified the
+  underlying arithmetic for that specific interaction, only the outcome, so
+  the engine's behavior may diverge from the table in that one narrow case.
 
 ---
 

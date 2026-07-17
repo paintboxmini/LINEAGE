@@ -232,16 +232,6 @@ class Battle:
         self.pending_turns = []
         while self.turn_count < self.max_turns:
             who = self.queue[0]
-            if who.defer_turns > 0:
-                # Marker reaches their seat before their count is satisfied: it
-                # passes them over. A pass-over costs no time (no tick).
-                if len(self.queue) <= 1:
-                    who.defer_turns = 0
-                else:
-                    who.defer_turns -= 1
-                    self.queue.pop(0)
-                    self.queue.insert(1, who)    # hover behind the next actor
-                    continue
             if not who.collapsed:
                 self.take_turn(who)
             a, b = bool(self.living(0)), bool(self.living(1))
@@ -256,6 +246,9 @@ class Battle:
                 a, b = bool(self.living(0)), bool(self.living(1))
                 if not a or not b:
                     return self._finish(a, b)
+                if extra in self.queue:
+                    self.queue.remove(extra)
+                    self.queue.append(extra)
                 self.turn_count += 1
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
@@ -264,8 +257,10 @@ class Battle:
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)
         who._attacked_this = False
-        if who.skip_turns > 0:
-            who.skip_turns -= 1
+        if who._shift_skip or who.skip_turns > 0:
+            who._shift_skip = False
+            if who.skip_turns > 0:
+                who.skip_turns -= 1
             return
         self.start_of_turn(who)
         if who.collapsed:
