@@ -184,7 +184,7 @@ The angle is not.
 - **Soul:** Decide what they're willing to sacrifice
 
 ### If They Do Nothing
-The beam clips the forest edge. Roots vaporize along the Turnroot Weald's eastern boundary. Pressure echoes through the canopy. Something old wakes.
+The beam clips the forest edge. Roots vaporize along the Turnroot Weald's western boundary. Pressure echoes through the canopy. Something old wakes.
 
 ### If They Adjust the Shot
 Turnroot is preserved. The beam hits deeper into the Ruins. Something buried doesn't stay buried.
