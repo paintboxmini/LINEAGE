@@ -12,23 +12,39 @@ The continent is rich with rivers and lakes. Where the roads are the Regency's a
 
 Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipsera sits at the center of that triangle, not along one edge of it. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
 
-## The Kings Road — The Spine
+**Coordinates** (relative grid, not to scale):
 
-The main road of the continent, connecting Glasslight Reach, Eclipsera, and Vulture's Nest. It is not a straight line — it bends at the capital. From Eclipsera, the road runs roughly north to Glasslight Reach and roughly southeast to Vulture's Nest.
+| Location | (x, y) |
+|----------|--------|
+| Eclipsera (capital) | (0, 0) |
+| Glasslight Reach | (0, 10) |
+| Turnroot Weald | (−7, −7) |
+| Vulture's Nest | (7, −7) |
+| Briarwatch | (−5, −7) |
+| Ashfall Wastes | (−7, −12) |
+| Abyssal Ruins | (7, −12) |
 
-**Glasslight Reach → Eclipsera (capital) → Vulture's Nest**
+## The Kings Road
 
-This corridor is called **The Spine of Eclipsera**. The Regency maintains it because the Regency depends on it.
+Six segments, not one line: the three edges of the triangle above, plus a spoke from each corner in to Eclipsera at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
+
+**The three edges:**
+- Glasslight Reach ↔ Turnroot Weald
+- Turnroot Weald ↔ Vulture's Nest — Briarwatch (−5,−7) and the Roadhouse (0,−7) both sit directly on this edge, not on a side road off of it
+- Vulture's Nest ↔ Glasslight Reach
+
+**The three spokes (corner to center):**
+- Glasslight Reach ↔ Eclipsera
+- Turnroot Weald ↔ Eclipsera
+- Vulture's Nest ↔ Eclipsera — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
+
+**Inns confirmed and built out:** the Roadhouse (`locations/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipsera–Vulture's Nest spoke.
+
+**Inns confirmed, not yet built:** the remaining four segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipsera, Turnroot–Eclipsera) each have an inn, evenly spread, same as the two above. Positions and names not yet assigned.
 
 **Travel:**
 - Vulture's Nest → Eclipsera: 2 days
-- The Roadhouse sits at the exact midpoint — 1 day from each
-
-**Side roads off the Kings Road at the Roadhouse:**
-- West → Briarwatch
-- Northeast → Glasslight Reach via an inland route that bypasses the capital. This road splits at least once — one branch leads to Havenrise.
-
-The northeast bypass is how travelers reach Glasslight without passing through Eclipsera. Elias used it coming south. It is less maintained than the Kings Road proper.
+- The Kings Road Inn sits roughly at the midpoint of that spoke — 1 day from each
 
 ---
 
