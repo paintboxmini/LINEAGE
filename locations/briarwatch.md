@@ -1,6 +1,6 @@
 # Briarwatch
 
-Farmland a day's travel northeast of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Red dirt roads, waist-high wood fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
+Farmland a day's travel west of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Red dirt roads, waist-high wood fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
 
 The ground is soft. Has always been soft. The limestone underneath is why.
 
