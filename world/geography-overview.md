@@ -14,7 +14,7 @@ Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — G
 
 ## The Kings Road — The Spine
 
-The main road of the continent, connecting Glasslight Reach, Eclipsera, and Vulture's Nest — nothing to do with Turnroot Weald, the triangle's third point. It is not a straight line — it bends at the capital, because Eclipsera sits at the center of the wider triangle rather than directly between the other two. From Eclipsera, the road runs roughly north to Glasslight Reach and roughly southeast to Vulture's Nest.
+The main road of the continent, connecting Glasslight Reach, Eclipsera, and Vulture's Nest. It is not a straight line — it bends at the capital. From Eclipsera, the road runs roughly north to Glasslight Reach and roughly southeast to Vulture's Nest.
 
 **Glasslight Reach → Eclipsera (capital) → Vulture's Nest**
 
