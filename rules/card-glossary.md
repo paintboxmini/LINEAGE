@@ -12,55 +12,50 @@ Deal this card's Attack damage back to the attacker. If a die is stated instead 
 **Debuff**
 Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
-Two kinds of interference are **not** debuffs and ignore Ward: being made to **discard**, and having your **deck scried**. They interfere but cannot be warded off. (Obscure is the answer to those — see below.)
-
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
 **Deadly**
-The next time you roll attack damage, roll it twice and take the higher result. Replaces "Advantage (Damage)" — that name collided with the unrelated skill-check Advantage (`rules/resolution.md`); this one doesn't. Stacks: each stack applies to one future damage roll, not extra dice on the same roll — 2 stacks means your next two damage rolls each get rolled twice, not one roll of three dice.
+The next time you roll attack damage, roll it twice and take the higher result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **Weak**
-The next time you roll attack damage, roll it twice and take the lower result. Replaces "Disadvantage (Damage)" — the same overload Deadly resolved on the other side, now closed here too. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
-
-**Armour X**
-Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
+The next time you roll attack damage, roll it twice and take the lower result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
-50% chance to miss. When an attacker with Blind attacks, roll 1d2 at the same moment as any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is still discarded, same as a missed Evade (it was already committed before this check fires). Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack — Blind is about the attacker's own affliction, Evade is the defender's dodge.
+50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack — Blind is about the attacker's own affliction, Evade is the defender's dodge.
 
 **Evade**
-50% chance to dodge the next attack declared against you, resolved before you select a card to defend with — the same moment a Blind check on the attacker would also fire (see Blind). Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is still discarded, since it was already played and committed before this check fires. Expires after the next attack targeting you, whether or not it triggers.
+50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
 **Exile**
-Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be looked at, moved, or retrieved. When combat ends, exiled cards return to their owner's deck. Unless the card specifies otherwise, nothing returns an exiled card during combat.
+Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's deck.
 
 **Expose [Color]**
-Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
+Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
 **Locked**
-A card afflicted with Locked cannot be played, discarded, drawn out of, or exiled — it simply stays exactly where it is, doing nothing, for the rest of the game unless something specifically unlocks it. Unlike Wound or Exhaust, Locked isn't a new card added to your deck. It's one of your own cards taken out of play in place — the way stone doesn't leave the wall it becomes part of. There is no standard removal. No action clears it, no short rest fixes it. Whatever unlocks a Locked card has to come from the same kind of source that locked it in the first place.
+A card afflicted with Locked cannot be played. Last until the end of combat unless the card states otherwise.
 
 **Initiative Shift X**
+A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
+
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
 
-**With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.
+**Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
 
-A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
+**With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.
 
 Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. A shift applies normally even to a token that already repositioned itself with Wait this combat. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.
 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
-**Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
-
-**Lifesteal X**
-Deal X damage to the target and heal X HP.
+**Lifesteal**
+Heal for half of this attacks damage.
 
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
@@ -77,7 +72,7 @@ Move a target enemy from Backline to Frontline. Cannot target allies. The user m
 On your next turn, you may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
 
 **Scry X**
-Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
+Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **Staggered**
 A staggered character cannot attack or defend — every attack against them resolves without opposition, and they cannot play a card as an attack of their own. The condition persists until the affected character spends their action to recover their balance, or an ally spends their action to help them recover it instead. Either way, Staggered ends the instant the action resolves.
@@ -97,8 +92,8 @@ Prevent the next debuff applied to you. Triggers automatically the instant a qua
 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Only Body touches HP.
-- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does. If a Mind loss leaves you holding more cards than your new hand size, discard down to it immediately.
+- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP  Only Body touches HP.
+- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does.
 - **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
