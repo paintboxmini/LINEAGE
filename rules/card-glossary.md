@@ -55,7 +55,7 @@ Multiple shifts applied to the same token at once sum into one net shift before 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
 **Lifesteal**
-Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
+Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed. On a Defensive Bonus, no attack damage was dealt (the defender won), so there's nothing to take half of — same as any Defensive Bonus that needs a damage number a defender-win didn't produce (`rules/combat-example.md`, Edge Cases): roll the attacker's damage anyway, and heal half of that instead.
 
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
