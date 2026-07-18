@@ -77,9 +77,9 @@ Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NI
 
 Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Melee — legal, both Frontline), hoping Green would beat Blue. A played Red.
 
-**Red beats Green — attacker wins.** Damage: Body 1 + d2 *(rolls 1)* = **2**. Frost 15 → 13. RAKING CUT Effect: *shuffle 1 Wound into target's deck.* Frost's deck is now 6 cards: PUSH, ENDURE, STILLNESS, FLOW, WITNESS, **WOUND**.
+**Red beats Green — attacker wins.** Damage: Body 1 + d2 *(rolls 1)* = **2**. Frost 15 → 13. RAKING CUT Effect: *insert 1 Injury at the bottom of target's deck.* Frost's deck is now 6 cards, INJURY on the bottom: PUSH, ENDURE, STILLNESS, FLOW, WITNESS, **INJURY**.
 
-This is the Scratcher doing exactly what it exists to do — the 2 damage is nothing; the Wound is the attack (`bestiary/briar-scratcher.md`, Tactical Purpose).
+This is the Scratcher doing exactly what it exists to do — the 2 damage is nothing; the Injury is the attack (`bestiary/briar-scratcher.md`, Tactical Purpose).
 
 Frost's hand: STRIKE, REFRACT. A's hand: NIP AND TEAR.
 
@@ -111,13 +111,13 @@ Frost's hand: STRIKE, REFRACT *(unchanged)*. B's hand: RAKING CUT. B's deck: NIP
 
 ### Frost's turn
 
-Draws to 3 → draws 1 from his 6-card deck: the **WOUND**.
+Draws to 3 → draws 1 from his 6-card deck: the **INJURY**.
 
-The Wound arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost's hand: STRIKE, REFRACT, WOUND — two cards he can actually play.
+The Injury arrives. It **cannot be played** and — unlike a normal card — it does not leave on its own. It sits in Frost's hand taking up a slot until he spends an action to discard it or clears it on a short rest (`rules/card-glossary.md`, Status Cards). Frost's hand: STRIKE, REFRACT, INJURY — two cards he can actually play.
 
 **Action:** Frost attacks A with **STRIKE** (Red, Body + d8, Melee — both Frontline, legal). A's hand is just NIP AND TEAR; it reveals it — **Green** (Range: Melee, legal). **Red beats Green — attacker wins.** Damage: Body 3 + d8 *(rolls 2)* = **5**. A: 11 → 6. STRIKE Effect: None.
 
-End of turn: the **WOUND stays in hand.** Frost's hand: REFRACT, WOUND. A's hand: empty. A's deck: SHADE AWAY.
+End of turn: the **INJURY stays in hand.** Frost's hand: REFRACT, INJURY. A's hand: empty. A's deck: SHADE AWAY.
 
 ### Scratcher A's turn
 
@@ -125,11 +125,11 @@ Hand empty → draws to 2. A's deck has one card: draws **SHADE AWAY** — deck 
 
 **Action:** A attacks Frost with **SHADE AWAY** (Green, Soul + d2, Melee — both Frontline, legal).
 
-Frost's hand is REFRACT and WOUND. REFRACT is **Ranged**, and both combatants are Frontline — melee range applies, so a Ranged card cannot defend here (`rules/card-glossary.md`, Range; the same rule that gates attacking gates defending too). WOUND cannot be played at all. **Frost holds a card and still has no legal defense** — functionally an empty hand. Per resolution step 3, A wins automatically.
+Frost's hand is REFRACT and INJURY. REFRACT is **Ranged**, and both combatants are Frontline — melee range applies, so a Ranged card cannot defend here (`rules/card-glossary.md`, Range; the same rule that gates attacking gates defending too). INJURY cannot be played at all. **Frost holds a card and still has no legal defense** — functionally an empty hand. Per resolution step 3, A wins automatically.
 
 Damage: Soul 2 + d2 *(rolls 1)* = 3. SHADE AWAY Effect: A gains **Evade**. Frost 10 → **7**.
 
-Because there was no legal defense to choose, nothing left Frost's hand — REFRACT and WOUND are both still there. A's hand after playing SHADE AWAY: RAKING CUT. A's deck: SKITTER AWAY, NIP AND TEAR.
+Because there was no legal defense to choose, nothing left Frost's hand — REFRACT and INJURY are both still there. A's hand after playing SHADE AWAY: RAKING CUT. A's deck: SKITTER AWAY, NIP AND TEAR.
 
 ### Steele's turn
 
@@ -155,7 +155,7 @@ NIP AND TEAR is Melee and B is still Backline — and RAKING CUT is Melee too. *
 
 ### Frost's turn
 
-Frost's hand is REFRACT and WOUND — REFRACT was never legally playable this fight (Ranged, and every exchange so far has been melee range), so it's still sitting there. Draws to 3 → draws PUSH from his deck. Hand: REFRACT, WOUND, PUSH.
+Frost's hand is REFRACT and INJURY — REFRACT was never legally playable this fight (Ranged, and every exchange so far has been melee range), so it's still sitting there. Draws to 3 → draws PUSH from his deck. Hand: REFRACT, INJURY, PUSH.
 
 **Action:** Frost attacks B — both Frontline now — with **PUSH** (Red, Body + d4, Melee). B reveals **NIP AND TEAR** (Green, Melee — legal, both Frontline now). **Green beats Red — defender wins.** No damage. NIP AND TEAR Defensive Bonus: *Heal 1.* B: 4 → 5.
 
@@ -175,12 +175,12 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
 | | HP | Deck state |
 |---|----|-----------|
-| Frost | 7 / 15 | **1 Wound** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest); REFRACT never found a legal moment to be played |
+| Frost | 7 / 15 | **1 Injury** clogging his hand — stays until he spends an action to discard it or clears it on a short rest (1 per rest); REFRACT never found a legal moment to be played |
 | Steele | 17 / 17 | Clean — never targeted |
 | Scratcher A | 6 / 11 | Gone |
 | Scratcher B | 5 / 11 | Gone — spent a whole turn just crossing the field, and its Backline hand was dead weight twice over |
 
-Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole action on it or takes a short rest. It rides in his deck into Briarwatch and the Hollow below it, surfacing into his hand to eat a slot every time it's drawn (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
+Frost's Injury doesn't heal with HP, and it won't leave until he spends a whole action on it or takes a short rest. It rides in his deck into Briarwatch and the Hollow below it, surfacing into his hand to eat a slot every time it's drawn (`quests/hollow-below-briarwatch.md`). Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the injured thing.
 
 ---
 
@@ -192,7 +192,7 @@ Frost's Wound doesn't heal with HP, and it won't leave until he spends a whole a
 - **Simultaneous reveal:** defense is a prediction. Frost guessed wrong once; that's the game.
 - **Range is positional law, for both sides of an exchange:** melee needs both Frontline; Ranged fails inside melee range whether it's the card attacking or defending. A hand that holds a card can still have no legal defense — Frost's REFRACT and B's RAKING CUT both sat in hand, useless, at the moments that mattered.
 - **A 4-card deck genuinely cycles mid-fight:** Scratcher A ran its deck dry and reshuffled its discard pile inside a single combat — a real consequence of deck size = total stats that a larger deck wouldn't have surfaced.
-- **Status flow:** Evade (spent on one attack, whether or not it dodges), and the Wound life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
+- **Status flow:** Evade (spent on one attack, whether or not it dodges), and the Injury life cycle — shuffled into the deck, drawn into the hand where it occupies a slot and *stays*, cleared only by spending an action or taking a short rest.
 - **You Are Not Your Own Ally** unless the card says "you and" (`rules/cards.md`).
 
 ---

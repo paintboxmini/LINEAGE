@@ -222,7 +222,7 @@ class Card:
         self._effect = effect          # fn(engine, me, foe)  attacker won OR tie
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
-        self.is_status = is_status     # Wound/Exhaust: cannot be played
+        self.is_status = is_status     # Injury/Exhaust: cannot be played
 
     def damage(self, engine, me, foe):
         if self._damage:
@@ -284,7 +284,7 @@ class Combatant:
         self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
-        self._rend_guard = False         # Rend def: next hit -> Wound, no damage
+        self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
 
     def eff(self, stat):
@@ -308,12 +308,12 @@ class Combatant:
             while len(self.hand) > self.effective_hand_size():
                 self.discard.append(self.hand.pop())  # forced discard down to size
 
-    def wounds_visible(self):
-        """Wounds a player can actually see and count — hand + discard, NOT deck
-        (Drew ruling: nobody should have to track or search hidden Wounds). Press
-        the Wound and Taint count these."""
+    def injuries_visible(self):
+        """Injuries a player can actually see and count — hand + discard, NOT deck
+        (Drew ruling: nobody should have to track or search hidden Injuries). Press
+        the Injury and Taint count these."""
         return sum(1 for c in (self.hand + self.discard)
-                   if c.is_status and c.name == 'WOUND')
+                   if c.is_status and c.name == 'INJURY')
 
     # --- deck plumbing ---
     def build(self, cards, rng):
@@ -354,15 +354,14 @@ class Duel:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.wound = cards.get('WOUND')
+        self.injury_card = cards.get('INJURY')
         self.pending_turns = []
         self.queue = []
 
-    def shuffle_wound(self, target):
-        if self.wound is None:
+    def insert_injury(self, target):
+        if self.injury_card is None:
             return
-        idx = self.rng.randint(0, len(target.deck))
-        target.deck.insert(idx, self.wound)
+        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
@@ -447,9 +446,13 @@ class Duel:
         return amount
 
     def heal(self, target, amount):
-        if target.collapsed:
-            return
+        # Collapse can be healed out of (rules/combat.md, Collapse & Death:
+        # "You may be healed back into combat") — only revive on a healed total
+        # that actually clears 0; anything less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
+        if target.collapsed and target.hp > 0:
+            target.collapsed = False
+            _join_wheel(self.queue, target)
 
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):
@@ -483,6 +486,7 @@ class Duel:
         # last_color / attack_history are NOT mutated until after this call
         # returns. A "blind prediction" policy can therefore only ever read
         # history from the attacker's PRIOR attacks, never the current one.
+        was_staggered = defender.staggered
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             def_card = defender.policy.choose_defense(self, defender, attacker)
@@ -494,8 +498,9 @@ class Duel:
                            "— the ban is on the next reveal, attack or block "
                            "(rules/card-glossary.md Axiom + reveal timing).")
                     def_card = None
-        # Staggered persists — no auto-clear here. Cleared only by the affected
-        # character (or an ally) spending an action to recover (rules/card-glossary.md).
+        if was_staggered:
+            defender.staggered = False
+            self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
 
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, immediately before anything looks at them. The attacker's card
@@ -564,12 +569,12 @@ class Duel:
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         # Rend's defensive guard: the next hit deals no damage and instead
-        # shuffles a Wound into the struck combatant.
+        # shuffles an Injury into the struck combatant.
         if defender._rend_guard:
             defender._rend_guard = False
-            self.shuffle_wound(defender)
+            self.insert_injury(defender)
             attacker._last_hit = 0
-            self._say(f"  -> REND guard: no damage, Wound into {defender.name}")
+            self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
             card.effect(self, attacker, defender)
             return
         dealt = self.deal(defender, dmg)
@@ -640,6 +645,11 @@ class Duel:
         if who.collapsed:
             return
         who.draw_to_hand(self.rng)
+        if who.staggered:
+            who.staggered = False
+            self._say(f"{who.name} is Staggered — this turn's attack is skipped")
+            who.must_target_frontline = False
+            return
         action = who.policy.choose_action(self, who, foe)
         if action is None:
             # Wait (rules/combat.md): forgo the action to reposition -X for a combo
@@ -654,16 +664,13 @@ class Duel:
             elif kind == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
                 self._say(f"{who.name} moves to {who.position}")
-            elif kind == 'destroy_wound':
+            elif kind == 'destroy_injury':
                 for i, c in enumerate(who.hand):
-                    if c.is_status and c.name == 'WOUND':
+                    if c.is_status and c.name == 'INJURY':
                         who.hand.pop(i)
-                        self._say(f"{who.name} destroys a Wound (action)")
+                        self._say(f"{who.name} destroys an Injury (action)")
                         break
-            elif kind == 'recover_stagger':
-                who.staggered = False
-                self._say(f"{who.name} recovers their balance (action)")
-        # Wounds no longer leave on their own — they sit until an action or rest
+        # Injuries no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
 

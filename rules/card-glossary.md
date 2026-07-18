@@ -12,7 +12,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
 **(2) Debuff**
-Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
 **(1) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
@@ -80,7 +80,7 @@ On your next turn, you may change positions without spending your action — a f
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **(9) Staggered**
-A staggered character cannot attack or defend — every attack against them resolves without opposition, and they cannot play a card as an attack of their own. The condition persists until the affected character spends their action to recover their balance, or an ally spends their action to help them recover it instead. Either way, Staggered ends the instant the action resolves.
+The next time you would attack or defend, that one instance is skipped instead — either your attack fails to happen on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens. No action required to clear it; it clears itself.
 
 **(3) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
@@ -111,17 +111,17 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 
 ---
 
-### WOUND
+### INJURY
 *Status — Colorless*
-Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
-**Quick field first aid** — permanently remove (destroy) 1 Wound from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Wound per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
-Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds. Short rests chain (`rules/core-rules.md`), so clearing several Wounds in one sitting costs time, not repetition.
+Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
+**Quick field first aid** — permanently remove (destroy) 1 Injury from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Injury per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
+Once per short rest, permanently remove (destroy) 1 Injury from your hand or discard pile — never from your deck, so you never have to search or track hidden Injuries. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
-Cannot be played. It stays in your hand and occupies a card slot — an Exhaust does not leave on its own.
+Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
 Use your action to permanently remove all Exhaust cards from your hand. That's the only way to clear them.
 
 ---

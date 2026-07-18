@@ -102,8 +102,8 @@ def _climb_defense(engine, me, foe):
 # ============================ STEELE =========================================
 
 def _forget_effect(engine, me, foe):
-    # Discard ignores Ward (not a debuff). Discard a real card, not a Wound —
-    # forcing away their Wound would help them.
+    # Discard ignores Ward (not a debuff). Discard a real card, not an Injury —
+    # forcing away their Injury would help them.
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -219,9 +219,9 @@ def _twin_strike_defense(engine, me, foe):
         a.deadly += 1
 
 
-# ==================== MIRE (Wound-attrition, 3/3/3) ==========================
-# A control deck built on shuffling Wounds into the opponent's deck (Rend,
-# Taint), then cashing them in (Press the Wound), plus combat-long stat erosion
+# ==================== MIRE (Injury-attrition, 3/3/3) ==========================
+# A control deck built on shuffling Injuries into the opponent's deck (Rend,
+# Taint), then cashing them in (Press the Injury), plus combat-long stat erosion
 # (Wither -Body, Erode -Soul). Perfectly balanced 3R/3B/3G across the RPS wheel.
 
 def _has_color(hand, color):
@@ -236,14 +236,14 @@ def _discard_one_color(engine, me, color):
     return False
 
 
-def remove_wounds(target, n=None):
-    """Permanently destroy up to n Wounds (all if n is None) from HAND + DISCARD
-    only — never the deck (Drew: no tracking/searching hidden Wounds)."""
+def remove_injuries(target, n=None):
+    """Permanently destroy up to n Injuries (all if n is None) from HAND + DISCARD
+    only — never the deck (Drew: no tracking/searching hidden Injuries)."""
     removed = 0
     for pile in (target.hand, target.discard):
         i = 0
         while i < len(pile):
-            if pile[i].is_status and pile[i].name == 'WOUND' and (n is None or removed < n):
+            if pile[i].is_status and pile[i].name == 'INJURY' and (n is None or removed < n):
                 pile.pop(i)
                 removed += 1
             else:
@@ -272,7 +272,7 @@ def _balance_defense(engine, me, foe):
 
 def _wither_effect(engine, me, foe):
     if not warded(foe):
-        foe.adjust('body', -1)   # -1 Body AND -3 max HP; no self-Wound cost anymore
+        foe.adjust('body', -1)   # -1 Body AND -3 max HP; no self-Injury cost anymore
 
 
 def _mockery_effect(engine, me, foe):
@@ -285,8 +285,8 @@ def _mockery_defense(engine, me, foe):
 
 # --- Red ---
 def _rend_effect(engine, me, foe):
-    if me._last_hit > 0 and not warded(foe):  # Wound infliction is a debuff
-        engine.shuffle_wound(foe)
+    if me._last_hit > 0 and not warded(foe):  # Injury infliction is a debuff
+        engine.insert_injury(foe)
 
 
 def _rend_defense(engine, me, foe):
@@ -304,15 +304,15 @@ def _equal_footing_defense(engine, me, foe):
     me._damage_floor = foe.hp  # next attack can't take me below attacker's HP
 
 
-def _press_the_wound_dmg(engine, me, foe):
-    return me.eff('body') + roll(4, engine.rng) + 2 * foe.wounds_visible()
+def _press_the_injury_dmg(engine, me, foe):
+    return me.eff('body') + roll(4, engine.rng) + 2 * foe.injuries_visible()
 
 
-def _press_the_wound_defense(engine, me, foe):
-    n = me.wounds_visible()
+def _press_the_injury_defense(engine, me, foe):
+    n = me.injuries_visible()
     if n:
         engine.heal(me, 2 * n)
-        remove_wounds(me)
+        remove_injuries(me)
 
 
 # --- Blue ---
@@ -327,17 +327,17 @@ def _partition_defense(engine, me, foe):
 
 
 def _taint_effect(engine, me, foe):
-    if warded(foe):   # Wound infliction is a debuff
+    if warded(foe):   # Injury infliction is a debuff
         return
-    if foe.wounds_visible() > 0:
-        engine.shuffle_wound(foe)
-        engine.shuffle_wound(foe)
+    if foe.injuries_visible() > 0:
+        engine.insert_injury(foe)
+        engine.insert_injury(foe)
     else:
-        engine.shuffle_wound(foe)
+        engine.insert_injury(foe)
 
 
 def _taint_defense(engine, me, foe):
-    remove_wounds(me, 1)
+    remove_injuries(me, 1)
 
 
 def _erode_effect(engine, me, foe):
@@ -488,13 +488,13 @@ def _analyze_effect(engine, me, foe):
         engine.scry(a, a, 2)
 
 def _study_effect(engine, me, foe):
-    wounds = [c for c in me.hand if c.is_status and c.name == 'WOUND']
-    drop = wounds[0] if wounds else next((c for c in me.hand if not c.is_status), None)
+    injuries = [c for c in me.hand if c.is_status and c.name == 'INJURY']
+    drop = injuries[0] if injuries else next((c for c in me.hand if not c.is_status), None)
     if drop is not None:
         me.hand.remove(drop); me.discard.append(drop)
         c = me.draw_one(engine.rng)
         if c:
-            me.hand.append(c)              # discard 1 (a Wound if held), draw 1
+            me.hand.append(c)              # discard 1 (an Injury if held), draw 1
 def _study_defense(engine, me, foe):
     me.evade += 1                          # saw it coming (Predictable was cut)
 
@@ -504,7 +504,7 @@ def _profile_effect(engine, me, foe):
     if c:
         me.hand.append(c)
 def _profile_defense(engine, me, foe):
-    foe.staggered = True                   # persists: no attack or defend until they recover (or an ally does)
+    foe.staggered = True                   # skips their next attack or defend, then clears itself
 
 def _refract_effect(engine, me, foe):
     foe.weak += 1                          # defender gains Weak
@@ -624,8 +624,8 @@ def build_cards():
         effect=_rend_effect, defense=_rend_defense)
     add("EQUAL FOOTING", 'R', 'body', 'both', 4,
         damage=_equal_footing_dmg, defense=_equal_footing_defense)
-    add("PRESS THE WOUND", 'R', 'body', 'melee', 4,
-        damage=_press_the_wound_dmg, defense=_press_the_wound_defense)
+    add("PRESS THE INJURY", 'R', 'body', 'melee', 4,
+        damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
     # Mire — Blue
     add("PARTITION", 'B', 'mind', 'both', 2,
         effect=_partition_effect, defense=_partition_defense)
@@ -678,7 +678,7 @@ def build_cards():
         damage=_patience_dmg, defense=_patience_defense)
 
     # Status card
-    add("WOUND", None, None, None, None, is_status=True)
+    add("INJURY", None, None, None, None, is_status=True)
 
     return C
 
@@ -695,7 +695,7 @@ STEELE_DECK = [
 
 MIRE_DECK = [
     "BALANCE", "WITHER", "MOCKERY", "REND", "EQUAL FOOTING",
-    "PRESS THE WOUND", "PARTITION", "TAINT", "ERODE",
+    "PRESS THE INJURY", "PARTITION", "TAINT", "ERODE",
 ]
 
 # VOLK — the stat-maxed test dummy: Body 5 (the cap), red-heavy. Represents the

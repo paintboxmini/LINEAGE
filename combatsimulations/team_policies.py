@@ -5,7 +5,7 @@ between its turns spends a card each block, so hands run dry — the thing the 1
 sim couldn't show).
 
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_wound',) | None
+                                 | ('destroy_injury',) | None
     choose_defense(battle, me, attacker) -> card | None
 """
 
@@ -42,21 +42,17 @@ class TeamTactician(ScryMixin):
         return min(foes, key=lambda e: (e.hp, e.max_hp))
 
     def choose_action(self, battle, me):
-        if me.staggered:
-            return ('recover_stagger',)          # can't attack or defend until this clears
-        allies = battle.allies(me)
-        staggered_ally = next((a for a in allies if a.staggered), None)
+        # Staggered no longer routes through here — the engine skips that
+        # turn's action itself, before this is ever called.
         target = self._pick_target(battle, me)
         if target is not None:
             atks = legal_attacks_team(battle, me, target)
             if atks:
                 # value = damage + a nudge for effects that matter in teams
                 return ('attack', max(atks, key=lambda c: self._value(battle, me, target, c)), target)
-        # no legal attack: help a staggered ally before clearing a Wound or moving
-        if staggered_ally is not None:
-            return ('assist_stagger', staggered_ally)
-        if any(c.is_status and c.name == 'WOUND' for c in me.hand):
-            return ('destroy_wound',)
+        # no legal attack: clear an Injury or move
+        if any(c.is_status and c.name == 'INJURY' for c in me.hand):
+            return ('destroy_injury',)
         if me.hand:
             return ('move',)
         return None

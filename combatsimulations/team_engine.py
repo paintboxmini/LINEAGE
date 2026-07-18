@@ -7,15 +7,14 @@ and hand-size-as-blocking-capacity (multiple enemies attack you between your
 turns; every block costs a card).
 
 Design: reuses engine.Combatant / Card / roll / RULING unchanged, and exposes the
-SAME effect-facing API as engine.Duel (deal, heal, shuffle_wound, allies,
+SAME effect-facing API as engine.Duel (deal, heal, insert_injury, allies,
 enemies, _say, rng, cards). So one set of card effects in content.py serves both
 engines — ally effects route through engine.allies(me), which is empty in a duel
 (no behavior change there) and populated here.
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_wound',) | ('recover_stagger',)
-                                 | ('assist_stagger', target) | None
+                                 | ('destroy_injury',) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
 """
@@ -23,7 +22,7 @@ Policies for teams implement:
 import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
-                    _apply_shift, _rotate_current, _leave_wheel)
+                    _apply_shift, _rotate_current, _leave_wheel, _join_wheel)
 
 
 class Battle:
@@ -38,7 +37,7 @@ class Battle:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.wound = cards.get('WOUND')
+        self.injury_card = cards.get('INJURY')
         self.pending_turns = []
         self.queue = []
 
@@ -92,14 +91,18 @@ class Battle:
         return amount
 
     def heal(self, target, amount):
-        if target.collapsed:
-            return
+        # Collapse can be healed out of (rules/combat.md, Collapse & Death:
+        # "You may be healed back into combat") — only revive on a healed total
+        # that actually clears 0; anything less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
+        if target.collapsed and target.hp > 0:
+            target.collapsed = False
+            _join_wheel(self.queue, target)
 
-    def shuffle_wound(self, target):
-        if self.wound is None:
+    def insert_injury(self, target):
+        if self.injury_card is None:
             return
-        target.deck.insert(self.rng.randint(0, len(target.deck)), self.wound)
+        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
 
     def scry(self, actor, owner, x):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
@@ -148,6 +151,7 @@ class Battle:
                 defender = g
                 break
 
+        was_staggered = defender.staggered
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
         # unaffected by when the reveal fields below get set.
@@ -167,8 +171,9 @@ class Battle:
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
-        # Staggered persists — no auto-clear. Cleared only by the affected
-        # character (or an ally) spending an action to recover (rules/card-glossary.md).
+        if was_staggered:
+            defender.staggered = False
+            self._say(f"    {defender.name} was Staggered — this attack goes undefended, then it clears")
 
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, before anything (including FORGET, later) looks at them.
@@ -217,7 +222,7 @@ class Battle:
         attacker.next_attack_bonus = 0
         if defender._rend_guard:
             defender._rend_guard = False
-            self.shuffle_wound(defender)
+            self.insert_injury(defender)
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
@@ -269,6 +274,12 @@ class Battle:
         if who.collapsed:
             return
         who.draw_to_hand(self.rng)
+        if who.staggered:
+            who.staggered = False
+            self._say(f"{who.name} is Staggered — this turn's attack is skipped")
+            who.must_target_frontline = False
+            who._forced_target = None
+            return
         action = who.policy.choose_action(self, who)
         if action is None:
             # Wait (rules/combat.md): forgo the action to reposition -X for a combo
@@ -286,15 +297,11 @@ class Battle:
             self.attack(who, target, card)
         elif action[0] == 'move':
             who.position = 'backline' if who.position == 'frontline' else 'frontline'
-        elif action[0] == 'destroy_wound':
+        elif action[0] == 'destroy_injury':
             for i, c in enumerate(who.hand):
-                if c.is_status and c.name == 'WOUND':
+                if c.is_status and c.name == 'INJURY':
                     who.hand.pop(i)
                     break
-        elif action[0] == 'recover_stagger':
-            who.staggered = False
-        elif action[0] == 'assist_stagger':
-            action[1].staggered = False
         who.must_target_frontline = False
         who._forced_target = None   # taunt is one-shot: consumed by this turn
 

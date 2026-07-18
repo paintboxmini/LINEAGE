@@ -40,7 +40,7 @@ def est_damage(me, card):
 
 
 def playable(hand):
-    """Cards that can actually be played — status cards (Wound) cannot."""
+    """Cards that can actually be played — status cards (Injury) cannot."""
     return [c for c in hand if not c.is_status]
 
 
@@ -51,10 +51,10 @@ class ScryMixin:
 
     Two modes, per Drew's logic:
       • Your own (or an ally's) deck — set up good draws: surface your best cards,
-        bury Wounds so you don't draw dead.
+        bury Injuries so you don't draw dead.
       • An enemy's deck — sabotage draws: bury their biggest threats AND the color
         that would beat your usual attack (so the card that normally answers you
-        is delayed), and leave their junk (and any Wounds!) on top to draw.
+        is delayed), and leave their junk (and any Injuries!) on top to draw.
 
     Override scry_plan on a specific brain for card-specific cleverness (e.g.
     keep a threat on top when you already hold the answer). This default is the
@@ -65,18 +65,18 @@ class ScryMixin:
         if own:
             real = sorted([c for c in seen if not c.is_status],
                           key=lambda c: est_damage(actor, c))   # best ends last -> drawn first
-            wounds = [c for c in seen if c.is_status]
-            # Bottom Wounds, don't bin them: in a single combat, binning to discard
+            injuries = [c for c in seen if c.is_status]
+            # Bottom Injuries, don't bin them: in a single combat, binning to discard
             # just recycles them faster on the next reshuffle. (Scry CAN bin — the
-            # engine supports it — but that's a rest/Press-the-Wound play, which
+            # engine supports it — but that's a rest/Press-the-Injury play, which
             # lives outside a no-rest duel. See memory.md.)
-            return real, wounds
+            return real, injuries
         # enemy deck
         my = actor.attack_history.most_common(1)[0][0] if actor.attack_history else None
         counter = _BEATEN_BY[my] if my else None    # color that beats my attacks
         def threat(c):
             if c.is_status:
-                return -10                          # a Wound of theirs: leave it on top!
+                return -10                          # an Injury of theirs: leave it on top!
             return _card_power(c) + (5 if (counter and c.color == counter) else 0)
         ranked = sorted(seen, key=threat)           # weakest first
         half = max(1, len(ranked) // 2)
@@ -86,23 +86,20 @@ class ScryMixin:
 
 
 def legal_attacks(engine, me, foe):
-    if me.staggered:
-        return []  # Staggered: cannot attack (or defend) until recovered
     if me.must_target_frontline and foe.position != 'frontline':
         return []  # Partition: no legal frontline target
     return [c for c in me.hand if not c.is_status and can_attack(me, foe, c)]
 
 
 def idle_recovery(engine, me, foe):
-    """What to do with a forced-idle turn (no legal attack), in priority order:
-    recover from Staggered first (you can't act at all until you do), then clear
-    a Wound if one's stuck in hand. Never trade a real attacking turn for either."""
+    """What to do with a forced-idle turn (no legal attack): clear an Injury if
+    one's stuck in hand. Never trade a real attacking turn for it. Staggered no
+    longer routes through here — the engine skips that turn's action itself,
+    before a policy ever gets asked to choose one."""
     if legal_attacks(engine, me, foe):
         return None
-    if me.staggered:
-        return ('recover_stagger',)
-    if any(c.is_status and c.name == 'WOUND' for c in me.hand):
-        return ('destroy_wound',)
+    if any(c.is_status and c.name == 'INJURY' for c in me.hand):
+        return ('destroy_injury',)
     return None
 
 
@@ -140,7 +137,7 @@ class GreedyPolicy(ScryMixin):
         atks = legal_attacks(engine, me, foe)
         if atks:
             return ('attack', max(atks, key=lambda c: est_damage(me, c)))
-        # no legal attack — clear a Wound if idle, else a move may open lines
+        # no legal attack — clear an Injury if idle, else a move may open lines
         return idle_recovery(engine, me, foe) or (('move',) if me.hand else None)
 
     def choose_defense(self, engine, me, foe):
