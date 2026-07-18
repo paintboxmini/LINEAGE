@@ -90,14 +90,17 @@ class Battle:
             _leave_wheel(self, self.queue, target)
         return amount
 
-    def heal(self, target, amount):
+    def heal(self, target, amount, source=None):
         # Collapse can be healed out of (rules/combat.md, Collapse & Death:
         # "You may be healed back into combat") — only revive on a healed total
         # that actually clears 0; anything less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
-            _join_wheel(self.queue, target)
+            # Revived one slot after whoever healed them, not straight into the
+            # live rotation — the marker has to complete a full lap before it
+            # reaches them again (Drew: they shouldn't get to act until it does).
+            _join_wheel(self.queue, target, after=source)
 
     def insert_injury(self, target):
         if self.injury_card is None:

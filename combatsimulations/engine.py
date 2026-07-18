@@ -60,7 +60,7 @@ def _ongoing_support_tick(engine, who):
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
-                engine.heal(a, 1)
+                engine.heal(a, 1, source=who)
         elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
             allies = engine.allies(who)
             if allies:                     # ally-only: no self-fallback (green revert)
@@ -191,9 +191,10 @@ def _join_wheel(queue, new_combatant, after=None):
     it — pass that combatant as `after`. A GM-introduced combatant enters
     when the fiction calls for it (usually the end of a full lap); the
     caller decides the timing, this just does the insertion — pass
-    `after=None` to append at the back, matching "end of a lap." Not
-    currently wired to any card — no existing card summons — but the wheel's
-    slot count is expected to stay accurate if one ever does."""
+    `after=None` to append at the back, matching "end of a lap." Now wired to
+    revival from Collapse (`heal()` below, `after=` the healer) — still not
+    wired to any card that summons, but the wheel's slot count is expected to
+    stay accurate if one ever does."""
     if after is not None and after in queue:
         queue.insert(queue.index(after) + 1, new_combatant)
     else:
@@ -445,14 +446,17 @@ class Duel:
             _leave_wheel(self, self.queue, target)
         return amount
 
-    def heal(self, target, amount):
+    def heal(self, target, amount, source=None):
         # Collapse can be healed out of (rules/combat.md, Collapse & Death:
         # "You may be healed back into combat") — only revive on a healed total
         # that actually clears 0; anything less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
-            _join_wheel(self.queue, target)
+            # Revived one slot after whoever healed them, not straight into the
+            # live rotation — the marker has to complete a full lap before it
+            # reaches them again (Drew: they shouldn't get to act until it does).
+            _join_wheel(self.queue, target, after=source)
 
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):

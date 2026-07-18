@@ -119,13 +119,13 @@ def _blood_tithe_effect(engine, me, foe):
     engine.deal(me, 2, unpreventable=True)
     allies = engine.allies(me)     # heal the most-hurt ally 4 (dead in 1v1)
     if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 4)
+        engine.heal(min(allies, key=lambda a: a.hp), 4, source=me)
 
 
 def _blood_tithe_defense(engine, me, foe):
     allies = engine.allies(me)             # heal the most-hurt ally 2 (dead in 1v1)
     if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 2)
+        engine.heal(min(allies, key=lambda a: a.hp), 2, source=me)
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
@@ -205,7 +205,7 @@ def _anticipate_defense(engine, me, foe):
 
 def _renewal_effect(engine, me, foe):
     for a in engine.allies(me):    # all allies heal 2 (ally-only: no self)
-        engine.heal(a, 2)
+        engine.heal(a, 2, source=me)
 
 
 def _renewal_defense(engine, me, foe):
@@ -392,11 +392,11 @@ def _support_defense(engine, me, foe):
 def _witness_effect(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
-        engine.heal(a, 3)
+        engine.heal(a, 3, source=me)
 def _witness_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
-        engine.heal(a, 3)
+        engine.heal(a, 3, source=me)
 
 
 def _shared_burden_effect(engine, me, foe):
@@ -408,7 +408,7 @@ def _shared_burden_defense(engine, me, foe):
     if a:
         x = min(4, me.hp - 1)
         if x > 0:
-            engine.heal(a, x)
+            engine.heal(a, x, source=me)
             engine.deal(me, x, unpreventable=True)   # transfer HP to the ally
 
 
@@ -433,13 +433,13 @@ def _intercept_setup(engine, me, foe):
 def _intercept_defense(engine, me, foe):
     engine.heal(me, 2)                     # absorbed from FORTRESS STANCE: team heal
     for a in engine.allies(me):
-        engine.heal(a, 2)
+        engine.heal(a, 2, source=me)
 
 def _fortress_effect(engine, me, foe):
     me._fortress = True                    # I take the next hit meant for an ally
 def _fortress_defense(engine, me, foe):
     for a in engine.allies(me):
-        engine.heal(a, 2)
+        engine.heal(a, 2, source=me)
 
 def _rally_effect(engine, me, foe):
     for a in engine.allies(me):
@@ -530,7 +530,7 @@ def _rooted_oath_effect(engine, me, foe):
     me.ongoing.append({'kind': 'rooted_oath', 'owner': me, 'anchor': me.position})
 def _rooted_oath_defense(engine, me, foe):
     pool = [a for a in engine.allies(me) if a.position == me.position] or [me]
-    engine.heal(min(pool, key=lambda a: a.hp), 3)
+    engine.heal(min(pool, key=lambda a: a.hp), 3, source=me)
 
 def _urgency_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
