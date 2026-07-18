@@ -6,45 +6,47 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 
 ## Keywords
 
-**Counter Attack**
+*The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-18, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while.*
+
+**(4) Counter Attack**
 Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
-**Debuff**
+**(2) Debuff**
 Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Wound, Exhaust), stat reductions, and forced position changes. Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
-**Obscure**
+**(1) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
-**Deadly**
+**(11) Deadly**
 The next time you roll attack damage, roll it twice and take the higher result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
-**Weak**
+**(6) Weak**
 The next time you roll attack damage, roll it twice and take the lower result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
-**Anchored**
+**(9) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
-**Blind**
+**(11) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
-**Evade**
+**(32) Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
-**Exile**
+**(7) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's deck.
 
-**Expose [Color]**
+**(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
-**Fortress**
+**(1) Fortress**
 The next time an ally would take attack damage, you take it instead.
 
-**Locked**
+**(0) Locked**
 A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
 
-**Initiative Shift X**
+**(8) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
@@ -57,36 +59,36 @@ Multiple shifts applied to the same token at once sum into one net shift before 
 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
-**Lifesteal**
+**(2) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed. Not legal as a Defensive Bonus: a defender-win means no attack damage was dealt, so there's nothing to take half of.
 
-**Resist**
+**(28) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks.
 
-**Rooted**
+**(13) Rooted**
 Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
 
-**Rushdown**
+**(5) Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
-**Quick**
+**(1) Quick**
 On your next turn, you may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
 
-**Scry X**
+**(25) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
-**Staggered**
+**(9) Staggered**
 A staggered character cannot attack or defend — every attack against them resolves without opposition, and they cannot play a card as an attack of their own. The condition persists until the affected character spends their action to recover their balance, or an ally spends their action to help them recover it instead. Either way, Staggered ends the instant the action resolves.
 
-**Thorns X**
+**(3) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
-**Unpreventable**
+**(1) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
-**Ward**
+**(9) Ward**
 Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.
 
 ---
