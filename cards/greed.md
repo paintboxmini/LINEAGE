@@ -16,6 +16,16 @@ Range: Both
 
 ---
 
+**ARC STRIKE**
+RED — BODY
+Attack: Body + d6
+Effect: Rushdown. Deal 2 damage to a second enemy.
+Defensive Bonus: Deal 2 damage to attacker.
+Range: Melee
+*"He doesn't close the distance. He erases it."*
+
+---
+
 **THUNDERBOLT STRIKE**
 RED — BODY
 Attack: Body + d8
