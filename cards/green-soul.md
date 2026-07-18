@@ -242,11 +242,11 @@ Range: Both
 
 ---
 
-**CARRIED WOUND**
+**CARRIED INJURY**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Transfer 1 Wound from any ally to defender
-Defensive Bonus: Transfer 1 Wound from yourself to attacker
+Effect: Transfer 1 Injury from any ally to defender
+Defensive Bonus: Transfer 1 Injury from yourself to attacker
 Range: Both
 *"I'll carry what you can't. They'll carry what I give them."*
 
@@ -275,8 +275,8 @@ Range: Both
 **FIELD MEDICINE**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Destroy 1 Wound in target ally's hand or discard pile. That ally heals 3 HP.
-Defensive Bonus: Destroy all Wounds in your hand and discard pile.
+Effect: Destroy 1 Injury in target ally's hand or discard pile. That ally heals 3 HP.
+Defensive Bonus: Destroy all Injuries in your hand and discard pile.
 Range: Ranged
 *"Not healed. Held together."*
 

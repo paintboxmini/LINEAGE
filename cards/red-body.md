@@ -292,11 +292,11 @@ Range: Both
 
 ---
 
-**PRESS THE WOUND**
+**PRESS THE INJURY**
 RED — BODY
 Attack: Body + d4
-Effect: Deal +2 damage for each Wound in defender's hand and discard pile.
-Defensive Bonus: Heal 2 HP for each Wound in your hand and discard pile. Then destroy them.
+Effect: Deal +2 damage for each Injury in defender's hand and discard pile.
+Defensive Bonus: Heal 2 HP for each Injury in your hand and discard pile. Then destroy them.
 Range: Melee
 *"It was always going to end here."*
 
@@ -305,8 +305,8 @@ Range: Melee
 **REND**
 RED — BODY
 Attack: Body + d4
-Effect: If this attack deals damage, shuffle 1 Wound into defender's deck.
-Defensive Bonus: Next attack against you shuffles 1 Wound into your deck instead of dealing damage.
+Effect: If this attack deals damage, shuffle 1 Injury into defender's deck.
+Defensive Bonus: Next attack against you shuffles 1 Injury into your deck instead of dealing damage.
 Range: Melee
 *"The cut that keeps opening."*
 

@@ -38,7 +38,7 @@ Creature combat decks are filled out with core cards (red-body, blue-mind, green
 
 Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Fortress, Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Ward, Weak
 
-Status cards: Wound, Exhaust, Foglust
+Status cards: Injury, Exhaust, Foglust
 
 **Pending canon approval:** Future-Lock — status card seeded by Future-Lock Wasp venom. Cannot be discarded or removed by short rest. Clears 20 minutes after drawn. Hand full = fully paralyzed. See `bestiary/future-lock-wasp.md`. Needs glossary entry before moving to canon.
 

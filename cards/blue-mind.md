@@ -256,8 +256,8 @@ Range: Both
 **TAINT**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Shuffle 1 Wound into target's deck. If they already have a Wound in deck, shuffle 2.
-Defensive Bonus: Destroy 1 Wound in your hand or discard pile.
+Effect: Shuffle 1 Injury into target's deck. If they already have an Injury in deck, shuffle 2.
+Defensive Bonus: Destroy 1 Injury in your hand or discard pile.
 Range: Ranged
 *"Some damage is architecture."*
 
