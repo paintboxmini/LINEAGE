@@ -9,7 +9,7 @@ Signature cards for Greed. See `characters/greed.md`.
 **LIGHTNING DASH**
 RED — BODY
 Attack: Body + d6
-Effect: Move to any position. If you changed position, deal 2 damage to a second enemy.
+Effect: Move to any position.
 Defensive Bonus: Move to any position.
 Range: Both
 *"He is already somewhere else before the thunder catches up."*
