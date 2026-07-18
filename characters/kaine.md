@@ -59,7 +59,7 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 ---
 
-## Card
+## Cards
 
 **STORM DEBT**
 RED — BODY — PROMISE
@@ -68,6 +68,16 @@ Effect: On a win, target is Staggered.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"The sky doesn't forget what you called down."*
+
+---
+
+**CONDUCT**
+GREEN — SOUL — PROMISE
+Attack: Soul + d4
+Effect: Your strongest ally gains Deadly.
+Defensive Bonus: Your most wounded ally draws 1 card.
+Range: Both
+*"Belief moves like current — find the one who'll carry it best."*
 
 ---
 
