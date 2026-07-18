@@ -36,6 +36,24 @@ def roll(die, rng):
     return rng.randint(1, die)
 
 
+def _rolled_die(die, rng, me):
+    """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
+    each stack applies to one future damage roll — roll twice, take the
+    higher (Deadly) or lower (Weak) result, then consume one stack. Deadly
+    takes priority if both are somehow held at once (not a ruled case,
+    just a defensible tie-break). Custom `_damage` functions (exploding
+    dice, multi-hit cards) roll their own way and are NOT wrapped here —
+    applying "roll twice" generically to an arbitrary custom function risks
+    doubling unrelated side effects, not just the die."""
+    if me.deadly > 0:
+        me.deadly -= 1
+        return max(roll(die, rng), roll(die, rng))
+    if me.weak > 0:
+        me.weak -= 1
+        return min(roll(die, rng), roll(die, rng))
+    return roll(die, rng)
+
+
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
@@ -209,7 +227,7 @@ class Card:
     def damage(self, engine, me, foe):
         if self._damage:
             return self._damage(engine, me, foe)
-        return me.eff(self.stat) + roll(self.base_die, engine.rng)
+        return me.eff(self.stat) + _rolled_die(self.base_die, engine.rng, me)
 
     def effect(self, engine, me, foe):
         if self._effect:
@@ -245,6 +263,8 @@ class Combatant:
         # token stacks / flags
         self.resist = 0
         self.evade = 0
+        self.deadly = 0
+        self.weak = 0
         self.thorns = 0
         self.staggered = False
         self.rooted = False
@@ -502,7 +522,16 @@ class Duel:
             self._resolve_attacker_win(attacker, defender, card, contested=True)
         elif outcome == 'defender':
             self._say(f"  -> {defender.name} wins the reveal")
+            # A clean win means no damage was ever computed (the attacker's
+            # card never resolves). Some Defensive Bonuses need that number
+            # anyway (REFRACT's full-damage redirect) -- roll it here, once,
+            # for their benefit only; it never applies to the attacker's own
+            # turn (their next_attack_bonus/Deadly/Weak stay untouched --
+            # rules/combat.md) and is unset again right after so it can't
+            # leak into a later attack that doesn't ask for it.
+            attacker._redirect_dmg = card.damage(self, attacker, defender)
             def_card.defense(self, defender, attacker)
+            attacker._redirect_dmg = None
         else:  # tie
             self._say("  -> tie")
             # attacker Effect first, then defender Defensive Bonus, unless the

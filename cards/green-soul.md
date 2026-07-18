@@ -15,7 +15,7 @@ Range: Both
 **SUPPORT**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Next ally to attack gets +3 damage
+Effect: Next ally to attack gains Deadly
 Defensive Bonus: 1 ally draws 1 card
 Range: Ranged
 *"Strength flows to those who share it."*
@@ -45,7 +45,7 @@ Range: Melee
 **RESONATE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: All allies get +2 to their next attack
+Effect: All allies gain Deadly
 Defensive Bonus: All allies gain Resist 1
 Range: Ranged
 *"Harmony multiplies strength."*
@@ -106,7 +106,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d4
 Effect: If you are attacked before your next turn, your party may scry 1
-Defensive Bonus: You and your allies deal +2 damage until your next turn
+Defensive Bonus: You and your allies gain Deadly
 Range: Both
 *"Shared vision illuminates the path forward."*
 
@@ -156,7 +156,7 @@ Range: Melee
 GREEN — SOUL
 Attack: (Soul + d2) x 2
 Effect: None
-Defensive Bonus: Next ally to attack adds +3 damage
+Defensive Bonus: Next ally to attack gains Deadly
 Range: Melee
 *"The river splits but remembers it is one water."*
 

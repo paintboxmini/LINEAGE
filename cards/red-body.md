@@ -95,8 +95,8 @@ Range: Both
 **RALLY**
 RED — BODY
 Attack: Body + d4
-Effect: Allies in Frontline deal +2 damage on their next attack
-Defensive Bonus: All allies in Backline deal +2 damage on their next attack
+Effect: Allies in Frontline gain Deadly
+Defensive Bonus: All allies in Backline gain Deadly
 Range: Both
 *"Blood shared is strength doubled."*
 

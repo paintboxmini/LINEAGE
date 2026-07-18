@@ -190,7 +190,10 @@ class Battle:
         if outcome == 'attacker':
             self._resolve_attacker_win(attacker, defender, card)
         elif outcome == 'defender':
+            # see engine.py's Duel.attack() for why this is rolled here
+            attacker._redirect_dmg = card.damage(self, attacker, defender)
             def_card.defense(self, defender, attacker)
+            attacker._redirect_dmg = None
         else:  # tie
             card.effect(self, attacker, defender)
             def_card.defense(self, defender, attacker)

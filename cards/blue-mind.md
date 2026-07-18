@@ -75,8 +75,8 @@ Range: Both
 **REFRACT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Defender's next attack deals -3 damage
-Defensive Bonus: Attacker deals half damage rounded up to a target of your choice
+Effect: Defender gains Weak
+Defensive Bonus: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
 *"Light bends when you know where to place the glass."*
 
@@ -116,7 +116,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d4
 Effect: The first time you're attacked before your next turn, Scry 2 and draw 1 card
-Defensive Bonus: Target's next attack has -3 damage
+Defensive Bonus: Target gains Weak
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
 
@@ -145,8 +145,8 @@ Range: Ranged
 **ALIGN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 3. If any two share a color, choose: draw 1 card, or +4 damage on your next attack
-Defensive Bonus: Scry 3. If any two share a color, gain +2 damage on your next attack
+Effect: Scry 3. If any two share a color, choose: draw 1 card, or gain Deadly
+Defensive Bonus: Scry 3. If any two share a color, gain Deadly
 Range: Ranged
 *"Clarity sharpens in alignment."*
 

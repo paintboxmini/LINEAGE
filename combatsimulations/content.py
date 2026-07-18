@@ -188,7 +188,7 @@ def _align_effect(engine, me, foe):
 def _align_defense(engine, me, foe):
     seen = engine.scry(me, me, 2)
     if len(seen) == 2 and seen[0].color == seen[1].color and seen[0].color is not None:
-        me.next_attack_bonus += 2
+        me.deadly += 1
 
 
 def _axiom_defense(engine, me, foe):
@@ -200,7 +200,7 @@ def _axiom_defense(engine, me, foe):
 
 def _anticipate_defense(engine, me, foe):
     if not warded(foe):
-        foe.next_attack_bonus -= 3  # target's next attack deals -3
+        foe.weak += 1
 
 
 def _renewal_effect(engine, me, foe):
@@ -215,8 +215,8 @@ def _renewal_defense(engine, me, foe):
 
 
 def _twin_strike_defense(engine, me, foe):
-    for a in engine.allies(me):    # next ally +3 (ally-only: no self)
-        a.next_attack_bonus += 3
+    for a in engine.allies(me):    # next ally gains Deadly (ally-only: no self)
+        a.deadly += 1
 
 
 # ==================== MIRE (Wound-attrition, 3/3/3) ==========================
@@ -369,7 +369,7 @@ def _most_hurt(allies):
 
 def _resonate_effect(engine, me, foe):
     for a in engine.allies(me):
-        a.next_attack_bonus += 2          # all allies +2 next attack (no self)
+        a.deadly += 1                     # all allies gain Deadly (no self)
 def _resonate_defense(engine, me, foe):
     for a in engine.allies(me):
         a.resist += 1                     # all allies gain Resist 1 (no self)
@@ -378,7 +378,7 @@ def _resonate_defense(engine, me, foe):
 def _support_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
     if a:
-        a.next_attack_bonus += 3          # next ally to attack +3
+        a.deadly += 1                     # next ally to attack gains Deadly
 def _support_defense(engine, me, foe):
     allies = engine.allies(me)
     if allies:
@@ -387,16 +387,6 @@ def _support_defense(engine, me, foe):
             allies[0].hand.append(c)      # 1 ally draws 1
 
 
-def _conduct_effect(engine, me, foe):
-    a = _best_attacker(_team(engine, me))
-    if a:
-        a.next_attack_bonus += 2
-def _conduct_defense(engine, me, foe):
-    a = _most_hurt(engine.allies(me))
-    if a:
-        c = a.draw_one(engine.rng)
-        if c:
-            a.hand.append(c)              # target ally draws 1
 
 
 def _witness_effect(engine, me, foe):
@@ -454,11 +444,11 @@ def _fortress_defense(engine, me, foe):
 def _rally_effect(engine, me, foe):
     for a in engine.allies(me):
         if a.position == 'frontline':
-            a.next_attack_bonus += 2
+            a.deadly += 1
 def _rally_defense(engine, me, foe):
     for a in engine.allies(me):
         if a.position == 'backline':
-            a.next_attack_bonus += 2
+            a.deadly += 1
 
 def _trample_effect(engine, me, foe):
     if foe.collapsed:                      # this attack defeated the defender
@@ -517,9 +507,18 @@ def _profile_defense(engine, me, foe):
     foe.staggered = True                   # persists: no attack or defend until they recover (or an ally does)
 
 def _refract_effect(engine, me, foe):
-    foe.next_attack_bonus -= 3             # defender's next attack deals -3
+    foe.weak += 1                          # defender gains Weak
 def _refract_defense(engine, me, foe):
-    foe.next_attack_bonus -= 3
+    # redirect the attack's full damage to a target of choice -- only on a
+    # clean win, never a tie (rules/card-glossary.md, REFRACT). `foe._redirect_dmg`
+    # is set by attack() itself right before this fires on a genuine
+    # defender-win, and left unset on a tie, so this is a no-op there.
+    dmg = getattr(foe, '_redirect_dmg', None)
+    if not dmg:
+        return
+    targets = [e for e in engine.enemies(me) if e is not foe]
+    if targets:
+        engine.deal(min(targets, key=lambda e: e.hp), dmg)
 
 # --- Green: ongoing support, tempo, position ---
 def _synchrony_effect(engine, me, foe):
@@ -550,7 +549,7 @@ def _communion_effect(engine, me, foe):
         engine.scry(a, a, 1)               # party scry
 def _communion_defense(engine, me, foe):
     for a in _team(engine, me):
-        a.next_attack_bonus += 2           # you and allies +2 damage next attack
+        a.deadly += 1                      # you and allies gain Deadly
 
 def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
