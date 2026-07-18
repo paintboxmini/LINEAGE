@@ -186,7 +186,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Deal 2 damage to yourself, heal an ally for 4 HP
-Defensive Bonus: Lifesteal
+Defensive Bonus: Heal an ally for 2 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 

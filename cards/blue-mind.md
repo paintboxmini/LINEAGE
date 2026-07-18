@@ -217,7 +217,7 @@ BLUE — MIND
 Attack: Mind + d4
 Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal
-Defensive Bonus: Lifesteal
+Defensive Bonus: Gain Ward
 Range: Both
 *"Reality hesitates."*
 

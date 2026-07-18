@@ -123,7 +123,9 @@ def _blood_tithe_effect(engine, me, foe):
 
 
 def _blood_tithe_defense(engine, me, foe):
-    lifesteal(engine, me, foe, 2)          # Lifesteal 2 (the bleed was cut)
+    allies = engine.allies(me)             # heal the most-hurt ally 2 (dead in 1v1)
+    if allies:
+        engine.heal(min(allies, key=lambda a: a.hp), 2)
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
@@ -155,11 +157,11 @@ def _pain_is_fuel_defense(engine, me, foe):
 
 
 def _paradox_effect(engine, me, foe):
-    lifesteal(engine, me, foe, 1)
+    engine.heal(me, me._last_hit // 2)     # Lifesteal: half of this attack's landed damage
 
 
 def _paradox_defense(engine, me, foe):
-    lifesteal(engine, me, foe, 2)
+    me.ward = True
 
 
 def _spiral_current_effect(engine, me, foe):

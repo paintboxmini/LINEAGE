@@ -25,7 +25,7 @@ The next time you roll attack damage, roll it twice and take the lower result. S
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
-50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
+50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
 **Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
@@ -37,6 +37,9 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 
 **Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
+
+**Fortress**
+The next time an ally would take attack damage, you take it instead.
 
 **Locked**
 A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
@@ -55,7 +58,7 @@ Multiple shifts applied to the same token at once sum into one net shift before 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
 **Lifesteal**
-Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed. On a Defensive Bonus, no attack damage was dealt (the defender won), so there's nothing to take half of — same as any Defensive Bonus that needs a damage number a defender-win didn't produce (`rules/combat-example.md`, Edge Cases): roll the attacker's damage anyway, and heal half of that instead.
+Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed. Not legal as a Defensive Bonus: a defender-win means no attack damage was dealt, so there's nothing to take half of.
 
 **Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
