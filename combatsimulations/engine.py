@@ -245,7 +245,6 @@ class Combatant:
         # token stacks / flags
         self.resist = 0
         self.evade = 0
-        self.armour = 0                  # flat damage reduction, cleared next turn
         self.thorns = 0
         self.staggered = False
         self.rooted = False
@@ -403,8 +402,6 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
-        if not unpreventable and target.armour > 0:
-            amount = max(0, amount - target.armour)   # Armour applies before Resist
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
@@ -601,7 +598,6 @@ class Duel:
         return self._finish(None)
 
     def take_turn(self, who, foe):
-        who.armour = 0            # Armour / can't-defend last until your next turn
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
         who._attacked_this = False

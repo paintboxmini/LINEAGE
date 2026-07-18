@@ -31,7 +31,7 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Stagger | attacker/defender may act | until recovered (self or ally action) |
 | Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | turn order | immediate |
-| Armour / Resist | damage pipeline (reduction) | per hit / next hit |
+| Resist | damage pipeline (reduction) | next hit |
 | Fortress / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 

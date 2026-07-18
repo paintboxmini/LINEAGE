@@ -38,4 +38,4 @@ Use: Remove 1 status card from your deck. Gain Weak on your next damage roll.
 
 **CHEWFAT RATION**
 *Consumable — Dense rendered fat block, travel-wrapped*
-Passive (1 combat): Gain Armour 1. At the end of each of your turns, discard 1 card.
+Passive (1 combat): Gain Resist 1. At the end of each of your turns, discard 1 card.

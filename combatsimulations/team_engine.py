@@ -75,8 +75,6 @@ class Battle:
                     f._fortress = False
                     self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source)
-        if not unpreventable and target.armour > 0:
-            amount = max(0, amount - target.armour)
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
@@ -256,7 +254,6 @@ class Battle:
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
     def take_turn(self, who):
-        who.armour = 0
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)
         who._attacked_this = False

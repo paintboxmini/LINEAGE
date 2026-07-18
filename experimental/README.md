@@ -36,7 +36,7 @@ Creature combat decks are filled out with core cards (red-body, blue-mind, green
 
 ## Existing Keywords
 
-Anchored, Armour X, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Ward, Weak
+Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Ward, Weak
 
 Status cards: Wound, Exhaust, Foglust
 

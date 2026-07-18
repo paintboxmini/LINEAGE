@@ -35,8 +35,8 @@ Range: Both
 **GUARD**
 RED — BODY
 Attack: Body + d4
-Effect: Allies take -2 damage from attacks until your next turn
-Defensive Bonus: Allies gain Armour 2 until your next turn
+Effect: Allies gain Resist 2
+Defensive Bonus: Allies gain Resist 2
 Range: Melee
 *"Protection shared is protection doubled."*
 
@@ -56,7 +56,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Next successful attack against you deals -3 damage
-Defensive Bonus: Gain Armour 3 until end of your next turn
+Defensive Bonus: Gain Resist 3
 Range: Melee
 *"Stand firm and let them come to you."*
 
@@ -186,7 +186,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Deal 2 damage to yourself, heal an ally for 4 HP
-Defensive Bonus: Lifesteal 2
+Defensive Bonus: Lifesteal
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 

@@ -20,7 +20,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - Initiative: tokens placed clockwise in initiative order; a turn marker starts at 12 o'clock and advances one token per turn. **Wait** = forfeit action, choose a later slot (the party's sequencing tool). **Initiative Shift X** always moves the token the full distance — positive counterclockwise (never later), negative clockwise (never sooner); when that would violate the guarantee, a skip or bonus chip preserves it instead of altering the move. Full mechanic: `rules/combat.md`, `rules/card-glossary.md`; worked cases: `rules/initiative-shift-examples.md`.
 - Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
 - Status cards (Wound, Exhaust) go into decks — the delayed-consequence system.
-- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Armour X, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal X, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
+- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
 
 ## Creature Threat Rating calibration (real anchors)
 

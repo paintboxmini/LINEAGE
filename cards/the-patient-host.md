@@ -26,7 +26,7 @@ Range: Both
 RED — BODY — MILESTONE
 Attack: Body + d6
 Effect: Move target to Backline.
-Defensive Bonus: Gain Armour 2.
+Defensive Bonus: Gain Resist 2.
 Range: Melee
 *"Rooms are for guests. You haven't checked in."*
 

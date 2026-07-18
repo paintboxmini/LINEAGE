@@ -68,7 +68,7 @@ Range: Both
 GREEN — SOUL — COIL
 Attack: Soul + d2
 Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Wound.
-Defensive Bonus: Gain Armour 1 until the start of your next turn.
+Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"The labyrinth does not end. Neither does it."*
 

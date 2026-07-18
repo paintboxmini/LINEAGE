@@ -423,10 +423,10 @@ def _strike_defense(engine, me, foe):
 
 def _guard_effect(engine, me, foe):
     for a in engine.allies(me):
-        a.armour = max(a.armour, 2)        # allies take -2 from attacks until your next turn
+        a.resist += 2                      # allies gain Resist 2
 def _guard_defense(engine, me, foe):
     for a in engine.allies(me):
-        a.armour = max(a.armour, 2)        # allies gain Armour 2
+        a.resist += 2                      # allies gain Resist 2
 
 def _intercept_setup(engine, me, foe):
     me._intercept = True                   # next time an ally is attacked, I defend
