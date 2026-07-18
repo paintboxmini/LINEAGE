@@ -156,6 +156,14 @@ def _pain_is_fuel_defense(engine, me, foe):
     engine.deal(foe, 2, unpreventable=True)
 
 
+def _brace_defense(engine, me, foe):
+    me.resist += 3
+    # Effect ("next successful attack against you deals -3") is unmodeled --
+    # no existing engine hook for a single-hit incoming-damage reduction
+    # distinct from Resist's halving; same shape as ANTICIPATE's dead effect.
+    # Not the reason this card is being registered right now.
+
+
 def _paradox_effect(engine, me, foe):
     engine.heal(me, me._last_hit // 2)     # Lifesteal: half of this attack's landed damage
 
@@ -586,6 +594,7 @@ def build_cards():
     # Steele — Red
     add("BLOOD TITHE", 'R', 'body', 'both', 4,
         effect=_blood_tithe_effect, defense=_blood_tithe_defense)
+    add("BRACE", 'R', 'body', 'melee', 4, defense=_brace_defense)
     add("GAMBLER'S RUIN", 'R', 'body', 'melee', None,
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
     add("REPEL", 'R', 'body', 'melee', 2,
@@ -734,8 +743,8 @@ ADEPT_STATS = dict(soul=4, body=3, mind=2)
 WARDEN_STATS = dict(soul=4, body=3, mind=2)
 
 # Two archetypes built on the expanded set, for testing the new mechanics in teams.
-VANGUARD_DECK = [   # Body 4 — front-line tank/protection + a little sustain
-    "STRIKE", "GUARD", "INTERCEPT", "INTERCEPT", "RALLY", "TRAMPLE",
+VANGUARD_DECK = [   # Body 4 — front-line tank/protection with real self-sustain
+    "STRIKE", "GUARD", "INTERCEPT", "TRAMPLE", "BRACE", "PAIN IS FUEL",
     "WITNESS", "RENEWAL", "PARADOX",
 ]
 VANGUARD_STATS = dict(body=4, soul=3, mind=2)

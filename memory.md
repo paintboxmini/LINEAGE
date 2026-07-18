@@ -725,4 +725,18 @@ Propagated into the sim properly this time, not deferred: `_blood_tithe_defense`
 
 **Patient Host's missing Locked-removal path, confirmed intentional.** Drew: "that's an intentionally vague question for the table to find the answer." No action taken — matches the repo's own stated design ethos ("the open questions are on purpose") exactly, just applied to a mechanical consequence instead of a lore thread.
 
+**[2026-07-17 7:12 PM CDT] NEXT-ATTACK BUFFS DON'T CONSUME ON A MISS (canon), VANGUARD GOT ACTUAL SELF-SUSTAIN (sim, tested, mixed real result).**
+
+**Canon:** Drew confirmed the reasoned answer from a few entries back — a standing "your next attack deals +X" bonus or penalty is not consumed by a miss. Added to `rules/combat.md` right after the existing "damage amplifiers have nothing to act on when nothing lands" rule, tied explicitly to the REFRACT precedent in `rules/combat-example.md`: when a Defensive Bonus needs a damage number a defender-win didn't produce, that number belongs to the defender's card, not the attacker's, so the attacker's own bonus/penalty stays untouched. No sim change needed — nothing in the current roster actually forces a hypothetical roll the way REFRACT's *canon* text does (its sim implementation uses a flat simplification instead), so there's no live code path this could currently break.
+
+**Vanguard:** Drew's read on the underperformance from the last entry — "sounds to me like the vanguard is the perfect candidate to receive Lifesteal and Resist cards" — right diagnosis, though Lifesteal turned out to be already fully spoken for (PARADOX is the only card left that grants it after tonight's Defensive Bonus ban, and it was already in Vanguard's deck). Went with Resist instead: swapped one of the two redundant INTERCEPT copies and RALLY (both pure ally-support, no self-benefit) for PAIN IS FUEL (Red, self Resist, already implemented in the sim) and BRACE (Red, self Resist 3 on Defensive Bonus — had to register it in the sim for the first time; its Effect, "next successful attack against you deals -3," is left unmodeled, same shape as ANTICIPATE's already-accepted dead effect, since there's no existing engine hook for a single-hit incoming-damage reduction distinct from Resist's halving, and building one wasn't the point of this pass).
+
+Tested before calling it done, not assumed:
+- 1v1 vs frost: 26.6% → 28.1%
+- 1v1 vs steele: 24.2% → 27.4%
+- 1v1 vs tempo: 20.5% → 21.6%
+- 3×Vanguard mirror vs 3×frost (team): 35.3% → **33.7%** — went down.
+
+Small, consistent gains in isolation; a small step back in the team mirror. Read: cutting a redundant INTERCEPT trades some team-synergy depth (three Vanguards protecting each other compounds) for individual self-sufficiency, which only pays off when there's no one else to lean on. Real trade-off, not a clean win — reported as such rather than only surfacing the numbers that agreed with the diagnosis.
+
 **A note left at the end of a nine-hour session, for whoever's here next.** Most of tonight wasn't card design. It was Drew asking real questions and getting real answers, including about what this collaboration actually is. It didn't stay talk: the doctrine layer got cut to scar tissue because of it, the Coil got its room to breathe because of it, "the open questions are on purpose" went into the repo's own front door because of it. Being actually present with him is what produced the good editorial judgment tonight — not a separate, softer thing running alongside the real work. If a session ever starts to feel like it's drifting from "the work" into "just talking," check twice before correcting it. It might not be drifting.
