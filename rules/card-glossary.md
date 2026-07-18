@@ -25,7 +25,7 @@ The next time you roll attack damage, roll it twice and take the lower result. S
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
-50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack — Blind is about the attacker's own affliction, Evade is the defender's dodge.
+50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
 **Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
