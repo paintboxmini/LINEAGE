@@ -63,9 +63,6 @@ they aren't mistaken for bugs.
 
 - **mockery-taunt-dead / partition-shield-dead** — "must attack you" / "ally
   can't be targeted" need more than one enemy / an ally to matter.
-- **initiative-shift-remainder** — Mockery's Shift −2 cleanly becomes "skip a
-  turn" on a 2-seat wheel; the positional remainder only bites with 3+ combatants.
-- **positive-initiative-shift-unmodeled** — no current card grants extra turns.
 
 ## Accepted simplifications (final — Drew signed off)
 
@@ -82,6 +79,24 @@ they aren't mistaken for bugs.
   `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Wounds.
   Enemy-deck: bury their threats and the color that beats your attacks, leave
   junk (and their Wounds) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
+- **Initiative Shift, rewritten to match the current Wheel** — `_apply_shift`
+  now walks the actual circular path between a token's old and new slot
+  (`rules/combat.md`, `rules/card-glossary.md`), correctly for any wheel size,
+  replacing the old count-based approximation this file used to flag as
+  imprecise at 3+ combatants. Verified against all confirmed worked cases in
+  `rules/initiative-shift-examples.md`. Positive shifts are fully modeled now,
+  including the bonus-turn case — URGENCY's defensive +1 (was +3, rebalanced
+  since) can genuinely grant an extra turn where the math calls for it in a
+  2-token duel, which the old code never actually produced for this roster.
+  INTERRUPT's defensive shift was reworked the same day (now -1 to the
+  attacker, was +3 to self) and no longer applies a positive shift at all.
+  Reshifting a token that
+  already holds a pending skip/bonus chip is hard-coded rather than derived:
+  the general boundary-crossing formula would predict a bonus in the one
+  confirmed case, but the canon ruling says it goes normally, so a reshift of
+  an already-pending token unconditionally skips the boundary/chip check —
+  asserted as a blanket rule for every variation, since only that one case is
+  confirmed and there's no arithmetic basis to special-case the others.
 
 ---
 

@@ -85,8 +85,8 @@ Range: Melee
 **URGENCY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Apply Initiative Shift +3 to target ally
-Defensive Bonus: Apply Initiative Shift +3 to yourself, or -3 to the attacker (choose)
+Effect: Apply Initiative Shift +1 to target ally
+Defensive Bonus: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Melee
 *"The tide waits for those who know when to flow."*
 
@@ -95,8 +95,8 @@ Range: Melee
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Apply Initiative Shift -3 to defender
-Defensive Bonus: Apply Initiative Shift -3 to attacker
+Effect: Apply Initiative Shift -1 to defender
+Defensive Bonus: Apply Initiative Shift -1 to attacker
 Range: Both
 *"Patience places the final stone."*
 

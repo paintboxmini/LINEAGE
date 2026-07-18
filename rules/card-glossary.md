@@ -17,11 +17,11 @@ Two kinds of interference are **not** debuffs and ignore Ward: being made to **d
 **Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
-**Advantage (Damage)**
-Roll twice for your damage die and take the higher result. This applies to combat damage only. For Advantage on skill checks and saves, see `rules/resolution.md`.
+**Deadly**
+The next time you roll attack damage, roll it twice and take the higher result. Replaces "Advantage (Damage)" — that name collided with the unrelated skill-check Advantage (`rules/resolution.md`); this one doesn't. Stacks: each stack applies to one future damage roll, not extra dice on the same roll — 2 stacks means your next two damage rolls each get rolled twice, not one roll of three dice.
 
-**Disadvantage (Damage)**
-Roll twice for your damage die and take the lower result. This applies to combat damage only. For Disadvantage on skill checks and saves, see `rules/resolution.md`.
+**Weak**
+The next time you roll attack damage, roll it twice and take the lower result. Replaces "Disadvantage (Damage)" — the same overload Deadly resolved on the other side, now closed here too. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **Armour X**
 Reduce all incoming attack damage by X. Applies before Resist. Stacks with other damage reduction effects.
@@ -30,10 +30,10 @@ Reduce all incoming attack damage by X. Applies before Resist. Stacks with other
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
 
 **Blind**
-50% chance to miss. When Blind, roll 1d2 before selecting a card to attack with. On a 1, the attack fails entirely. Lasts until the end of your next turn unless the card specifies otherwise.
+50% chance to miss. When an attacker with Blind attacks, roll 1d2 at the same moment as any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is still discarded, same as a missed Evade (it was already committed before this check fires). Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack — Blind is about the attacker's own affliction, Evade is the defender's dodge.
 
 **Evade**
-50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely. Expires after the next attack targeting you, whether or not it triggers.
+50% chance to dodge the next attack declared against you, resolved before you select a card to defend with — the same moment a Blind check on the attacker would also fire (see Blind). Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is still discarded, since it was already played and committed before this check fires. Expires after the next attack targeting you, whether or not it triggers.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
@@ -43,18 +43,21 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the stated color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
+**Locked**
+A card afflicted with Locked cannot be played, discarded, drawn out of, or exiled — it simply stays exactly where it is, doing nothing, for the rest of the game unless something specifically unlocks it. Unlike Wound or Exhaust, Locked isn't a new card added to your deck. It's one of your own cards taken out of play in place — the way stone doesn't leave the wall it becomes part of. There is no standard removal. No action clears it, no short rest fixes it. Whatever unlocks a Locked card has to come from the same kind of source that locked it in the first place.
+
 **Initiative Shift X**
-The target's next turn moves by exactly X turns: positive X, they act X turns sooner; negative X, X turns later. That sentence is the whole rule — everything below is how the table keeps it true.
+Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
 
-Track the target's two numbers: their **seat** in the order, and their **count** — how many turns until they act again. A shift rewrites the count by X and moves them X seats around the wheel (positive toward the marker's next arrival, negative away from it — toward larger position numbers). The target cuts into the new seat; everyone between slides one seat to fill the gap. **Sliding is not a shift** — displaced combatants keep their own counts unchanged.
+**With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.
 
-When seat and count disagree, **the count wins**:
-- If the marker reaches the target's seat *before* their count is satisfied, it **passes them over** — no turn, and a pass-over costs no time. (This is what happens when someone who has just acted is shifted backward into a coming seat: the marker's first visit waves past them.)
-- If the count reaches **zero or below**, the target acts immediately after the current turn — the bonus turn. For shifts of X ≥ N (N = combatants), resolve one bonus turn (positive) or one full-lap pass-over (negative) per revolution, then the remainder normally.
+A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
-The marker sits on a **position, not a person**. If its occupant is shifted or displaced mid-turn, the marker stays put and the turn in progress completes; then the next turn goes to whoever now holds the marker's position, count permitting. A combatant taking their turn has a full wheel between them and their next turn — which is why a small self-shift can never mint a free turn or a self-skip (the fence, `rules/combat.md`).
+Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. A shift applies normally even to a token that already repositioned itself with Wait this combat. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.
 
-To check any resolution at the table, ask the target's two numbers: *how many turns away were you? how many are you now?* A positive shift may only lower the second number; a negative shift may only raise it — each by exactly X. If the seats say otherwise, the seats are wrong.
+For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
+
+**Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
 
 **Lifesteal X**
 Deal X damage to the target and heal X HP.
@@ -65,19 +68,19 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks.
 
 **Rooted**
-Cannot change position until the start of your next turn.
+Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
 
 **Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **Quick**
-On your next turn, you may change positions without spending your action.
+On your next turn, you may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
 
 **Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order. (Binning a card to the discard lets you dig past dead draws, not just reorder them.)
 
 **Staggered**
-The next time you are attacked, you cannot play a defensive card. The attack resolves without opposition.
+A staggered character cannot attack or defend — every attack against them resolves without opposition, and they cannot play a card as an attack of their own. The condition persists until the affected character spends their action to recover their balance, or an ally spends their action to help them recover it instead. Either way, Staggered ends the instant the action resolves.
 
 **Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
@@ -86,7 +89,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **Ward**
-Prevent the next debuff applied to you. Expires on use.
+Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.
 
 ---
 
@@ -111,19 +114,15 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### WOUND
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
-You may use your action to discard this card.
-*Effect when discarded: none.*
-Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds.
+**Quick field first aid** — permanently remove (destroy) 1 Wound from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Wound per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
+Once per short rest, permanently remove (destroy) 1 Wound from your hand or discard pile — never from your deck, so you never have to search or track hidden Wounds. Short rests chain (`rules/core-rules.md`), so clearing several Wounds in one sitting costs time, not repetition.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
-Cannot be played.
-When discarded, take 2 damage.
-At the end of your turn, you may instead discard this card and apply Initiative Shift -1 to yourself.
-Use your action to remove all Exhaust cards from your hand — removal this way is exile, not a discard, so it deals no damage.
-All Exhaust cards are removed from your deck at short rest.
+Cannot be played. It stays in your hand and occupies a card slot — an Exhaust does not leave on its own.
+Use your action to permanently remove all Exhaust cards from your hand. That's the only way to clear them.
 
 ---
 

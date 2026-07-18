@@ -4,8 +4,8 @@
 
 **Cards:** `cards/vescal.md`
 
-**Mind 3 / Body 4 / Soul 3 — HP 18**  
-**Difficulty:** Mid
+**Mind 3 / Body 4 / Soul 3 — HP 17**  
+**Creature Threat Rating:** 10
 
 **Artifact — Scales of Unity:** At the start of combat, gain 1 Ward.
 

@@ -27,7 +27,7 @@ Range: Ranged
 **THORN-BIND**
 GREEN — SOUL — WEALD
 Attack: Soul + d2
-Effect: Target gains Disadvantage.
+Effect: Target gains Weak.
 Defensive Bonus: Target gains Rooted.
 Range: Both
 *"The Weald does not block your exit; it simply makes the price of movement too high."*

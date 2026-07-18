@@ -35,7 +35,7 @@ Range: Melee
 **INK BURST**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target gains Disadvantage on their next attack. Ends Flatten.
+Effect: Target gains Weak on their next attack. Ends Flatten.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
@@ -45,7 +45,7 @@ Range: Melee
 **CAMOUFLAGE SHIFT**
 BLUE — MIND
 Attack: —
-Effect: Flatten immediately. Attacks against the Octopus have Disadvantage until it uses Surge.
+Effect: Flatten immediately. Attacks against the Octopus have Weak until it uses Surge.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"It was never where you were looking."*

@@ -18,7 +18,7 @@ Range: Melee
 RED — BODY — COIL
 Attack: Body + d4
 Effect: Pull target to Frontline.
-Defensive Bonus: Attacker gains Disadvantage.
+Defensive Bonus: Attacker gains Weak.
 Range: Both
 *"There are more hands than you counted."*
 
@@ -87,7 +87,7 @@ Range: Melee
 **WALL BOND**
 GREEN — SOUL — COIL
 Attack: Soul + d4
-Effect: Target gains Disadvantage.
+Effect: Target gains Weak.
 Defensive Bonus: Attacker gains Rooted.
 Range: Melee
 *"You pushed against it. Now you belong to the wall."*

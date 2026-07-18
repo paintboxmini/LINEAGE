@@ -62,11 +62,11 @@ Turn order resolves highest to lowest.
 - If still tied between players, they choose order among themselves.
 - If still tied between a player and an enemy, the player goes first.
 
-There are no rounds. Initiative is a continuous wheel — once the last position has acted, the order cycles back to 1st and keeps going. Card effects referencing timing anchor to a combatant's own next turn, not a table-wide round.
+**The Wheel.** Tokens are placed clockwise around the wheel in initiative order — whoever goes first sits at 12 o'clock. A turn marker starts at 12 o'clock. Each turn, the marker moves to the next token in line.
 
-**The turn marker.** Picture the wheel as a loop of seats with a fence planted in it — the turn marker. Whoever the marker points at is taking their turn right now. The marker sits on a **position, not a person**: if the combatant under it is shifted or displaced away mid-turn, the marker stays where it is, the turn in progress completes, and the next turn goes to whoever now occupies the marker's position — count permitting (see **Initiative Shift X** in `rules/card-glossary.md`). A combatant on the marker is *on the fence*: you can hop off a fence you are standing on without it counting as jumping it — they have a full wheel between them and their next turn, so no shift applied mid-turn can mint them a free turn or a self-skip.
+The wheel always has exactly as many slots as there are combatants — no empty slots. When a token shifts, each token it passes through slides over one slot toward the gap the moving token leaves behind.
 
-Card effects cannot modify initiative unless the card explicitly states otherwise. See **Initiative Shift X** in `rules/card-glossary.md`.
+**Joining and leaving.** A summoned combatant's token enters the wheel directly after the token of whoever summoned it. A GM-introduced combatant enters when the fiction calls for it — usually at the end of a full lap. Either way, the wheel gains a slot. A combatant who leaves the fight entirely removes their slot, and the wheel closes around it.
 
 ---
 
@@ -89,11 +89,11 @@ On your turn, you may take **one action:**
 | Wait | Take no action; instead move yourself later in the order to a position you choose (Initiative Shift −X). Trades this turn for exact positioning. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
-**Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: choose how many seats **X** to move *later* in the order (an Initiative Shift of **−X**), and you act normally when the marker reaches your new position. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
+**Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: choose how many slots **X** to move *later* in the order (an Initiative Shift of **−X**), and you act normally when the marker reaches your new position. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
 
-The trade is **an action for a position.** You take one fewer action this fight — that is the whole cost; your turn count simply drops relative to everyone else — and in return you land exactly where you want in the order. Move a seat or two and you act again shortly, later this cycle. Move X far enough to **lap the wheel** and the marker passes you once per full lap before honoring your seat — a way to opt out of the tempo entirely for a stretch. There is no cap on X, because moving later is always a cost, never a reward — so Wait as little or as much as you like.
+The trade is **an action for a position.** You take one fewer action this fight — that is the whole cost; your turn count simply drops relative to everyone else — and in return you land exactly where you want in the order. Move a slot or two and you act again shortly, later this cycle. Move X far enough to **lap the wheel** and the marker passes you once per full lap before honoring your slot — a way to opt out of the tempo entirely for a stretch. There is no cap on X, because moving later is always a cost, never a reward — so Wait as little or as much as you like.
 
-Waiting sets your count to your new seat's natural arrival: the marker honors your seat the first time it reaches it. You are never passed over for having Waited — you never spent this lap's action; the forfeited action *was* the payment. (This is the difference between Waiting there and being *shifted* there: a shifted combatant's count is written by the shift, and the marker enforces it.)
+Waiting sets your count to your new slot's natural arrival: the marker honors your slot the first time it reaches it. You are never passed over for having Waited — you never spent this lap's action; the forfeited action *was* the payment. (This is the difference between Waiting there and being *shifted* there: a shifted combatant's count is written by the shift, and the marker enforces it.)
 
 Its main use is **team coordination** — chaining turns into the right sequence. Move yourself to act right after an ally's setup, or right before the ally you are setting up, so a combo resolves without an enemy acting in between. The reposition persists, so one Wait fixes a combo cadence for the rest of the fight. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
 
@@ -101,10 +101,10 @@ Its main use is **team coordination** — chaining turns into the right sequence
 
 ## Attack Resolution
 
-1. Attacker plays and discards 1 card.
-2. Defender may reveal and discard 1 card to defend.
+1. Attacker plays 1 card, face down — committed, not yet public.
+2. Defender may choose 1 card to defend with, face down — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction. **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected. A defender with no card in hand that meets the requirement has no legal defense against this attack.
 3. If the defender cannot or chooses not to defend, the attacker wins automatically.
-4. If both reveal cards simultaneously, resolve using Rock-Paper-Scissors:
+4. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
 ```
 Blue (Mind)   beats  Red   (Body)
@@ -117,6 +117,18 @@ Green (Soul)  beats  Blue  (Mind)
 **Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
+
+---
+
+## Damage Pipeline
+
+When *attack* damage is dealt, it passes through this pipeline in fixed order:
+
+**redirect** (Shared Burden) → **volunteer shield** (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
+
+A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
+
+**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
 
 ---
 

@@ -14,7 +14,7 @@ Give the party their first *bargain* — relief now, price unspecified, seller p
 
 A cart stopped neatly at the road's widest point, pointed neither direction in particular. A man in a wool coat too clean for the road, feeding nothing to a horse that doesn't look at him. The cart's bed is empty and scrubbed. It does not smell like animals. It doesn't smell like anything.
 
-He introduces himself as **Weck**. He buys culls — livestock the farms can't keep. Injured, marked, "picked over." He pays fairly and in coin, and the Briarwatch farmers confirm it: good prices, no haggling, never early, never late.
+He introduces himself as **Weck**. He buys culls — Fenwool the farms can't keep. Injured, marked, "picked over." He pays fairly and in coin, and the Briarwatch farmers confirm it: good prices, no haggling, never early, never late.
 
 If anyone in the party is carrying injuries, he mentions — mildly, the way a man mentions weather — that he buys other culls too.
 
@@ -49,5 +49,4 @@ Sold: one deck is permanently lighter, one name is somewhere it can't be unsigne
 ## Related Documents
 
 - `rules/card-glossary.md` — WOUND (short-rest removal is the honest version of what Weck sells)
-- `quests/where-the-tracks-stop.md` — he pays best for animals from the crossings
 - `world/tonal-bible.md` — warmth containing something wrong

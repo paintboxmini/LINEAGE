@@ -2,7 +2,8 @@
 
 *Cave floor encounter. Armored digger. Punishes reckless attackers.*
 
-**Mind 1 / Body 2 / Soul 1 — HP 12**
+**Mind 1 / Body 2 / Soul 1 — HP 13**
+**Creature Threat Rating:** 4
 
 **Cards:** `cards/delve-roller-hollow.md`
 
@@ -60,7 +61,7 @@ One Roller is an obstacle. Two is a problem.
 
 **Cards:** `cards/delve-roller-hollow.md`
 
-Cross-reference: PATIENCE OF STONE in `cards/stonecoil-hollow.md` — Anchored heal while stationary, Advantage on damage roll when hit. Fits the balled-up Roller that stays planted and recovers.
+Cross-reference: PATIENCE OF STONE in `cards/stonecoil-hollow.md` — Anchored heal while stationary, Deadly on damage roll when hit. Fits the balled-up Roller that stays planted and recovers.
 
 ---
 

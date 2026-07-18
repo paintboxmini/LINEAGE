@@ -1,8 +1,8 @@
 # The Roadhouse
 
-A government inn on the Kings Road — the midpoint between Vulture's Nest and the capital. It exists because the road requires it to.
+A government inn on the Kings Road — sitting on the Turnroot Weald–Vulture's Nest edge, not the road to the capital. It exists because the road requires it to.
 
-Two side roads branch here: west to Briarwatch, northeast toward Glasslight Reach (bypassing the capital). See `world/geography-overview.md`.
+West of here, the same road continues on to Briarwatch. See `world/geography-overview.md`.
 
 ---
 
@@ -32,12 +32,16 @@ One handles the register and the door. Checks it when the party arrives, checks 
 
 They won't start trouble. They will finish it. If the party is cooperative and unremarkable, the guards are furniture.
 
-**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub and a log of road incidents. Guests don't go back there. The door is never locked.
+Their duty runs past the inn's front door — thick-soled boots and waterproofed gear that see real use, not just standard issue. They cover what falls between towns on the Briarwatch side: disappeared Fenwool (`bestiary/fenwool.md`), strangers on the road, anything that comes up out of the ground. A guard, a rotation or two back, stopped returning from a patrol toward the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody went looking.
+
+Guard culture out here is practical and quiet. They don't talk much about what's under the ground. They know it's there.
+
+**The Barracks** — a back section closed off from the guest rooms. Two bunks, a weapon rack, a small table with a candle stub, a log of road incidents, and the notice board — bounties and local alerts posted alongside it. Currently: the sinkhole bounty, a missing-Fenwool report from the north field, a note about something moving in the cave system west of Briarwatch's fields that one of the guards wrote and then didn't sign. Guests don't go back there. The door is never locked.
 
 *Contents for curious parties:*
 
 - Weapon rack: two short swords, a crossbow, a quiver of bolts, a shield with a worn crown seal. Standard issue. Nothing remarkable.
-- Under one bunk: a wooden chest, unlocked. A few coins (roll d6+2 silver), a spare uniform folded neatly, a whetstone, one set of Barbed Wrap still in its oilcloth. See `items/briarwoods-items.md`.
+- Under one bunk: a wooden chest, unlocked. A few coins (roll d6+2 silver), a spare uniform folded neatly, a whetstone, one set of Barbed Wrap still in its oilcloth. See `items/briarwatch-items.md`.
 - On the table: a folded posting order with an official wax seal.
 
 **The Posting Order** — standard Regency language. Assignment to Roadhouse waypoint, indefinite duration. Register compliance, cargo documentation. Report irregularities to *Quartermaster Voss, Eclipsera South Gate.*
@@ -80,9 +84,9 @@ Nothing is wrong here. That is not reassuring.
 
 ## Session 1 Routing
 
-Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
+Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
-The fork is where the Carrion Guide's route diverges. Standard path continues northeast. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
+The fork is where the Carrion Guide's route diverges. Standard path continues west. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
 
 ---
 

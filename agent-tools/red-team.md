@@ -15,13 +15,27 @@ minimal — do not add complexity unless it solves a demonstrated problem.
 
 ## Attack these layers
 
-1. Invariant violations — CHECK FIRST.
+1. Engine-invariant violations — CHECK FIRST.
    - Does this introduce a hidden rule change or a new timing window?
    - Does it force the engine to special-case resolution?
    - Does it imply a new POLICY (card selection / reveal / initiative / RPS
      resolution), not merely a new card effect?
-   If so, name the invariant being bent and say whether it should instead be
-   expressed as a temporary rule modifier rather than a one-off exception.
+   If so, name the mechanic it overrides (`rules/invariants.md`, Mechanic-override
+   reference) and say whether it should be expressed as a scoped modifier rather
+   than a one-off exception. This pass is narrow — it's about the simulator's
+   computational correctness, not whether the content is well-designed. That's
+   the next pass.
+
+1b. Design Principles fit.
+   - Does the deck actually express the creature's behavior, or is it a generic
+     stat-stick with flavor text on top?
+   - Does the mechanic come from the creature's ecology/fiction, or was it picked
+     first and the fiction painted on after?
+   - Does the encounter teach through what the player does, or does it require
+     the GM to explain the lesson?
+   Check against `archives/design-principles.md` directly (archived, not
+   deleted; still true) — this is a design standard, not an engine check, and
+   violating it doesn't break anything the simulator would catch.
 
 2. Simulation abuse.
    - If the mechanic lives in `combatsimulations/` (or is a few lines from being
@@ -31,6 +45,13 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    - State which of the two you did — never imply a sim run that did not happen.
 
 3. Mechanical relevance — does this matter? Would play notice if it were deleted?
+
+3b. Mechanical grounding — does the fiction claim an effect happens (heals, cures,
+    poisons, transforms, unlocks) that doesn't map to any actual rule or keyword?
+    Narrative language that sounds mechanical isn't the same as being mechanical.
+    (The Nagamani's "draws the venom from a wound" read as a real effect for most
+    of a session before anyone checked whether venom was implemented anywhere.
+    It wasn't.)
 
 4. Mechanical identity — does it create a decision NO other card creates, or is it
    a stat-swap of something that already exists?
@@ -65,6 +86,15 @@ intended. It may be a bug to fix — or the most interesting thing here.
   necessary, nothing more.
 - "Leave it alone" is a valid verdict. If a part is already right, or no
   improvement exists, say so and why — do not invent an edit to feel productive.
+- A fix that moves the flagged problem to a different slot on the same content
+  isn't a fix — check that the specific weakness named in the diagnosis is
+  actually gone, not just relocated. (Duskwick's HALF-SEEN had Obscure cut from
+  its Effect for being narrow and thematically mismatched, then the same
+  Obscure reappeared on its Defensive Bonus, unchanged, because it was easier
+  than replacing it. Still narrow, still mismatched, just moved.) If a
+  mechanic was cut for a reason, don't re-add it elsewhere on the same content
+  out of attachment to having used it first — verify the reason it was cut no
+  longer applies before it comes back.
 
 End on one line held throughout: assume the content is intentionally minimal; do
 not add complexity unless it solves a demonstrated problem.
@@ -129,12 +159,9 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
-- Engine invariants (for the Invariant Violations pass): `rules/invariants.md`
+- Engine invariants (for the Engine-Invariant Violations pass): `rules/invariants.md`
+- Design standards (for the Design Principles pass): `archives/design-principles.md` — archived, not deleted; still true, no longer maintained as living doctrine
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`
 - Existing cards for redundancy: `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`
-
----
-
-*Optional: run `prompt-refinement.md` after completing this task.*

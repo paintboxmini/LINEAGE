@@ -87,7 +87,7 @@ Range: Both
 **INEVITABILITY**
 GREEN — SOUL — COIL
 Attack: Soul + d4
-Effect: Target gains Disadvantage. If target is Rooted, also apply Staggered.
+Effect: Target gains Weak. If target is Rooted, also apply Staggered.
 Defensive Bonus: Attacker gains Staggered.
 Range: Melee
 *"The bodies at the junctions were not surprises. Not to it."*

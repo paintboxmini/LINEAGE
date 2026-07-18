@@ -33,8 +33,8 @@ SETS = {
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
         'files': [
-            '../cards/briarwatch-jackrabbit.md',
-            '../cards/fencerow-shrike.md',
+            '../cards/briarwatch-jackalope.md',
+            '../cards/tollbird.md',
             '../cards/briar-scratcher.md',
             '../cards/borrower-hollow.md',
             '../cards/stonecoil-hollow.md',
@@ -46,7 +46,7 @@ SETS = {
         'type': 'items',
         'files': [
             '../items/consumables.md',
-            '../items/briarwoods-items.md',
+            '../items/briarwatch-items.md',
             '../items/vultures-nest-items.md',
         ],
     },

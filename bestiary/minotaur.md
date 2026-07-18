@@ -6,7 +6,8 @@ It knows every passage. It has been here longer than anyone the party has met, l
 
 The pressure track exists because of how the minotaurs navigate — not by walls, but by disturbance. Noise, rule-breaks, running, fear. They read disruption the way the Wall-Reader reads stone. The higher the pressure, the more precisely they know where the party is.
 
-**Mind 3 / Body 6 / Soul 5 — HP 24**
+**Mind 3 / Body 6 / Soul 5 — HP 24** *(bespoke — boss exception; formula baseline is 21)*
+**Creature Threat Rating:** 14
 
 **Passive — Labyrinth Bond:** The Minotaur is aware of the current pressure track value at all times. While the track is 5 or higher, all Minotaur attacks deal +d6 damage.
 

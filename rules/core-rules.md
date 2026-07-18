@@ -44,10 +44,10 @@ Draw to hand size when **initiative is rolled**, then at the **start** of each o
 
 ## Attack Resolution
 
-1. Attacker plays and discards 1 card.
-2. Defender may reveal and discard 1 card to defend.
+1. Attacker plays 1 card, face down.
+2. Defender may choose 1 card to defend with, face down — blind, without seeing the attacker's card. The card must meet its own Range requirement for the current positions, same as if the defender were attacking (see Range Matrix below) — no legal card in hand means no legal defense.
 3. No defense → attacker wins automatically.
-4. Both reveal simultaneously → resolve RPS:
+4. Both reveal simultaneously — only now do they become public and move to discard — and resolve RPS:
 
 ```
 Blue (Mind)  beats  Red   (Body)

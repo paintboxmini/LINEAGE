@@ -467,7 +467,7 @@ def _interrupt_effect(engine, me, foe):
     foe.skip_turns += 1                    # target loses their next turn
     me.cannot_defend = True                # you can't defend until your next turn
 def _interrupt_defense(engine, me, foe):
-    engine.initiative_shift(me, 3)         # Initiative Shift +3 (positive: minimal in sim)
+    engine.initiative_shift(foe, -1)       # -1 to the attacker (foe), not to yourself
 
 def _chain_effect(engine, me, foe):
     if me._last_hit > 0:
@@ -504,7 +504,7 @@ def _profile_effect(engine, me, foe):
     if c:
         me.hand.append(c)
 def _profile_defense(engine, me, foe):
-    foe.staggered = True                   # attacker can't defend the next hit
+    foe.staggered = True                   # persists: no attack or defend until they recover (or an ally does)
 
 def _refract_effect(engine, me, foe):
     foe.next_attack_bonus -= 3             # defender's next attack deals -3
@@ -526,14 +526,14 @@ def _rooted_oath_defense(engine, me, foe):
 def _urgency_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
     if a:
-        engine.initiative_shift(a, 3)      # positive: minimal in sim
+        engine.initiative_shift(a, 1)
 def _urgency_defense(engine, me, foe):
-    engine.initiative_shift(me, 3)
+    engine.initiative_shift(me, 1)          # the "-1 to the attacker" choice is unmodeled
 
 def _delay_effect(engine, me, foe):
-    engine.initiative_shift(foe, -3)       # defender skips (negative shift)
+    engine.initiative_shift(foe, -1)       # defender skips (negative shift)
 def _delay_defense(engine, me, foe):
-    engine.initiative_shift(foe, -3)
+    engine.initiative_shift(foe, -1)
 
 def _communion_effect(engine, me, foe):
     for a in _team(engine, me):

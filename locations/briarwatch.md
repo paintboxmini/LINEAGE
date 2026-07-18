@@ -1,6 +1,6 @@
 # Briarwatch
 
-A farming settlement a day's travel northeast of Vulture's Nest. Stone fences, wet fields, old watchtower ruins at the edge of town. The kind of place that has been here long enough to stop explaining itself.
+Farmland a day's travel west of Vulture's Nest, cut a little way into Turnroot Weald's own edge — not a town, a claim. Red dirt roads, waist-high wood fences, wet fields, old watchtower ruins holding the line where the fields stop and the Weald starts. The kind of place that has been here long enough to stop explaining itself.
 
 The ground is soft. Has always been soft. The limestone underneath is why.
 
@@ -8,50 +8,48 @@ The ground is soft. Has always been soft. The limestone underneath is why.
 
 ## The Place
 
-Low hills. Overcast most of the year. Fields that produce reliably but require attention — irrigation channels, drainage, watching the soil after rain. The farmers here know the land by feel. They can tell you which field drains slow and which slopes toward the old well property.
+Low hills. Overcast most of the year. Fields that produce reliably but require attention — irrigation channels, drainage, watching the soil after rain. Red dirt roads run between the fields, waist-high wood fences marking where one farm ends and the next begins — nothing built to keep anything out, just to keep the Fenwool from wandering. A handful of farmhouses sit spaced along them, weathered the same gray as the sky. The farmers here know the land by feel. They can tell you which field drains slow and which slopes toward the old well property.
 
-The watchtower ruins on the eastern edge predate the town. Nobody knows who built them or why the border was here. The well at their center has been there the whole time too. Most people ignore it.
+The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the giant fence at the western edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackalopes nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields. Ordinary pest trouble, as far as any farmer here is concerned.
+
+The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the center is dried up.
+
+Valhug Lake sits in the center of Briarwatch — deep and cold.
 
 A sinkhole opened last season. The first one in living memory. It won't be the last.
 
 ---
 
-## The Wardens
-
-Briarwatch maintains a small unit of local wardens — not soldiers, not exactly. Thick-soled boots, waterproofed gear, familiarity with the cave systems and terrain. They handle what the farms can't: disappeared livestock, strangers on the road, anything that comes up from below.
-
-One Warden stopped returning from the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody from Briarwatch went looking.
-
-Warden culture is practical and quiet. They don't talk much about what's under the ground. They know it's there.
-
----
-
 ## Notable Locations
 
-**The Well Property** — eastern farmland, bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
-
-**The Roadhouse** — government inn on the main road, day one out of Vulture's Nest. Functional. Not charming. Beds that work, food that's fine. Exists because the road needs it to. One traveler going the other direction, usually.
-
-**The Warden Post** — squat stone building near the settlement center. Notice board. Bounties and local alerts. Currently: the sinkhole bounty, a missing livestock report from the north field, a note about something moving in the cave system east of town that one of the wardens wrote and then didn't sign.
+**The Western Property** — bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
 
 ---
 
 ## Tone
 
-The danger in Briarwatch isn't strange. It's wet soil and old limestone and things that were always there being disturbed. The farmers are tired, not dramatic. They've been dealing with this quietly for a season and they want it resolved, not discussed.
+The danger in Briarwatch isn't strange. It's wet soil and old limestone and things that were always there being disturbed. The farmers are tired, not dramatic. They've been dealing with this quietly for a season and they want it resolved.
+
+---
+
+## GM Secret — Not Player-Facing
+
+The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. See `factions/the-masons.md`, Known Works.
 
 ---
 
 ## Session 1 Routing
 
-Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
-
-Instructions after Briarwatch point toward the capital. Not back.
+Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
 ---
 
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
+- `locations/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `locations/vultures-nest.md` — previous stop on the session 1 route
-- `bestiary/briarwatch-jackrabbit.md` — surface encounter at the watchtower ruins
+- `bestiary/briarwatch-jackalope.md` — surface encounter at the watchtower ruins
+- `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
+- `locations/turnroot-weald.md` — the territory this farmland was cut from
+- `bestiary/fenwool.md` — what's actually grazing these fields

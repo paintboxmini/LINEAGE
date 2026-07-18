@@ -12,7 +12,7 @@ To sit in a Seat is not to gain power over a domain. It is to become aligned wit
 
 The Seat of Harvest doesn't decide whether crops grow. It *is* the pattern that makes growing possible. When the Seat is filled, harvests happen. When it's empty, fields rot or grow wild.
 
-Every culture interprets Seats differently. They name them, personify them, ritualize them. The Seat remains the same. Cultures do not create Seats — they create stories about them.
+Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, memory, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes, unknowingly, rhyme with one.
 
 ---
 
@@ -20,7 +20,7 @@ Every culture interprets Seats differently. They name them, personify them, ritu
 
 - Alignment becomes total.
 - Internal contradiction ends.
-- Free will dissolves.
+- Free will remains, but aligned so completely it never points anywhere else. To act against the Seat would mean acting against their own nature — not impossible, just unthinkable in the way betraying yourself is unthinkable.
 - The individual becomes function.
 
 The Seat-Bearer does not command the principle. They become its inevitable expression.
@@ -105,6 +105,15 @@ Knowledge is not wisdom. It is awareness. It governs truth uncovered, memory pre
 Domain: Vitality, Sacrifice, Lineage
 
 Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
+
+### Navigation / Pathfinding
+**Bearer:** The Night Ferryman
+
+Speaks in the smallest instructions that actually work. Pick a hand. Keep it on the wall. Don't change it. Never explains further than that, because there isn't a further — the whole domain is committing to one path and holding it, not knowing where it leads.
+
+Doesn't offer the destination. Doesn't promise the destination is good. Only that there's a way through, and it's simpler than anyone standing at the entrance believes.
+
+*"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
 
 ---
 

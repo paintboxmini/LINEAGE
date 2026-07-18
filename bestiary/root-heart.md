@@ -4,7 +4,8 @@
 
 **Cards:** `cards/root-heart-weald.md`
 
-**Mind 2 / Body 5 / Soul 4 — HP 30**
+**Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 19)*
+**Creature Threat Rating:** 11
 
 **Position:** Immobile. Always counts as being in both Frontline and Backline (gigantic).
 

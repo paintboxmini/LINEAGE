@@ -41,7 +41,7 @@ Her arc: deciding which way to go, on her own terms, without being rescued into 
 **STILL WATER**
 BLUE — MIND — PROMISE
 Attack: Mind + d4
-Effect: On a win, target has Disadvantage on their next card play.
+Effect: On a win, target has Weak on their next card play.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"It is not calm. It is waiting."*

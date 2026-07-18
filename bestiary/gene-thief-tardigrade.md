@@ -9,6 +9,7 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 ---
 
 **Mind 3 / Body 3 / Soul 3 — HP 15**
+**Creature Threat Rating:** 9
 
 ---
 

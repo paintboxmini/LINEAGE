@@ -34,4 +34,4 @@ Feed this prompt a situation, encounter, or location description. The agent resp
 
 Not a replacement for red-teaming — use alongside `red-team.md` for full coverage.
 
-*Note: Remove any visible reasoning from the content before presenting — if design thinking is readable in the output, it didn't finish.*
+*Note: Check against `red-team.md`'s Visible Reasoning section before presenting — if design thinking is readable in the output, it didn't finish.*

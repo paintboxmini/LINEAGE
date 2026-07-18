@@ -51,68 +51,135 @@ def _ongoing_support_tick(engine, who):
 
 
 def _apply_shift(engine, queue, target, amount):
-    """Initiative Shift ±X, count-primacy model (rules/card-glossary.md).
+    """Initiative Shift ±X (rules/card-glossary.md). `queue` IS the wheel —
+    queue[0] is the marker's own slot (whoever's currently acting), queue[1] is
+    next up, and so on: exactly as many slots as combatants (rules/combat.md,
+    The Wheel). A positive shift travels toward index 0 (sooner), wrapping
+    through the far end if it needs to go past 0; negative travels the other
+    way, wrapping through 0 if it needs to go past the far end. Every slot the
+    path actually crosses slides back one step along that path — a genuine
+    circular rotation of the arc between old and new slot, verified against
+    all of `rules/initiative-shift-examples.md`'s worked cases (including one
+    whose overshoot was a full step past the minimum needed to reach the
+    marker's slot — a plain linear list move only gives the right answer when
+    the path doesn't wrap, which is why this walks the path explicitly).
 
-    THE INVARIANT: the target's next turn moves by exactly X turns — sooner for
-    positive, later for negative. Queue index IS the count (turns until acting);
-    `defer_turns` holds any owed delay the queue can't express (the marker will
-    PASS the target that many times, each pass costing no time — see the hover
-    branch in the run loops). Seats are bookkeeping; the count is the truth."""
-    if not queue or target not in queue:
+    Boundary: a path that reaches or passes the marker's own slot can't
+    literally deposit the target there and have it act "in the past," so the
+    guarantee is preserved by a chip instead of by capping the move. Positive:
+    the target gets an immediate bonus turn, and whoever held the marker's
+    slot before this shift is skipped once — compensation for that bonus
+    specifically, not a rule about the marker's slot itself (a negative shift
+    reaching the same slot skips only the target, nobody else, since no bonus
+    was granted to compensate for). A shift large enough to cross the
+    marker's slot more than once in one application has no confirmed ruling
+    and isn't modeled beyond a single crossing.
+
+    Reshifting a token that already carries a pending skip or bonus clears it
+    first. The one confirmed case of this (`rules/initiative-shift-examples.md`,
+    Example 5) came out as an ordinary reposition — no bonus — which the
+    general boundary-crossing formula below would NOT reproduce on its own (it
+    would predict a bonus there). Rather than derive arithmetic nobody has
+    confirmed, that specific case is hard-coded instead: a reshift of an
+    already-pending token never re-triggers the boundary/chip logic, full
+    stop — it always resolves as an ordinary reposition, whatever the raw
+    distance would otherwise suggest. This is asserted as a blanket rule
+    covering every variation (positive or negative new shift, prior skip or
+    prior bonus), not just Example 5's exact numbers, since only the one case
+    is confirmed and there's no basis to special-case the others differently.
+
+    With exactly 3 combatants on the wheel, X's magnitude is reduced by 1
+    (toward zero) before anything else here runs — a shift of ±1 becomes a
+    no-op."""
+    if not queue or target not in queue or amount == 0:
         return
+    if len(queue) == 3:
+        amount += -1 if amount > 0 else 1
+        if amount == 0:
+            return
+    was_pending = target._shift_skip or target in engine.pending_turns
+    target._shift_skip = False
+    if target in engine.pending_turns:
+        engine.pending_turns.remove(target)
+
     i = queue.index(target)
-    if i == 0:                                   # shifting the current actor itself
-        # The actor is ON the marker mid-turn; its natural next seat is the back
-        # (a full wheel away). Resolution is deferred to rotation time.
-        engine._pending_self_shift = getattr(engine, '_pending_self_shift', 0) + amount
+    total = len(queue)
+
+    if i == 0:
+        # the current actor, still mid-turn: already at the earliest possible
+        # slot, so any positive shift can only mean "sooner than right now,"
+        # which becomes a bonus turn this same lap instead (ruling: a
+        # positive self-shift always grants an extra turn, any magnitude).
+        if amount > 0 and not was_pending:
+            engine.pending_turns.append(target)
+        # negative: staying put (or rotating normally) already can't be
+        # "sooner" than right now — no ruling asks for anything more here.
         return
-    queue.remove(target)
-    nr = len(queue)
-    if amount > 0:
-        # A positive shift first pays down any owed delay, then moves the count.
-        pay = min(target.defer_turns, amount)
-        target.defer_turns -= pay
-        amount -= pay
-        if i - amount <= 0:                      # count hits zero: crosses the marker
-            engine.pending_turns.append(target)  # bonus turn now
-            new_i = nr                           # then settle at the back (it lapped)
+
+    raw = i - amount
+    crossed = (raw <= 0 or raw >= total) and not was_pending
+    landing = raw % total
+    step = -1 if amount > 0 else 1
+
+    path = [i]
+    pos = i
+    while pos != landing:
+        pos = (pos + step) % total
+        path.append(pos)
+    occupants = [queue[p] for p in path]      # read before any writes below
+
+    for k in range(len(path) - 1):
+        queue[path[k]] = occupants[k + 1]
+    queue[landing] = target
+
+    if crossed:
+        if amount > 0:
+            displaced = occupants[path.index(0)]
+            displaced._shift_skip = True
+            engine.pending_turns.append(target)
         else:
-            new_i = i - amount                   # acts exactly that many turns sooner
-    else:
-        want = i + abs(amount)                   # the count the shift mandates
-        new_i = min(nr, want)
-        target.defer_turns += want - new_i       # owed delay beyond the back: passes
-    queue.insert(max(1, min(nr, new_i)), target)
+            target._shift_skip = True
 
 
 def _rotate_current(engine, queue, who):
-    """Rotate the just-acted actor off the marker, honoring any shift applied to it
-    THIS turn (a self-shift, or a defense aimed at the current attacker).
-
-    The actor's natural count is a full wheel (it just acted). Positive: it comes
-    around exactly that many turns sooner (a full lap grants the bonus turn, per
-    canon). Negative: it settles at the back owing exactly that many extra turns —
-    the marker passes it once per owed turn. Never a minted turn, never a lost one."""
-    amount = engine.__dict__.pop('_pending_self_shift', 0)
+    """End-of-turn rotation for whoever just acted. If a shift already moved
+    them (their own positive self-shift granted a bonus, handled via
+    pending_turns and never touching queue position), this is a no-op —
+    otherwise: ordinary rotation, off the marker's slot and onto the back."""
     if not queue or queue[0] is not who:
         return
     queue.pop(0)
-    nr = len(queue)
-    if nr == 0:                                  # nobody else in the wheel
-        queue.append(who)
-        return
-    total = nr + 1                               # seats including the current actor
-    if amount > 0:
-        if amount >= total:                      # lapped forward across the marker
-            engine.pending_turns.append(who)     # bonus turn now
-            queue.append(who)                    # then settle a full lap back
-        else:
-            queue.insert(nr - amount, who)       # come around that many turns sooner
-    elif amount < 0:
-        who.defer_turns += abs(amount)           # exactly that many turns later
-        queue.append(who)                        # already latest; settle at the back
+    queue.append(who)
+
+
+def _leave_wheel(engine, queue, who):
+    """A combatant who leaves the fight entirely removes their slot, and the
+    wheel closes around it (rules/combat.md, Joining and leaving). Plain list
+    removal already performs that close — everything after `who`'s slot
+    shifts back by one, same as any other slide. Also clears any pending chip
+    or bonus turn `who` was carrying, since a combatant that's gone can't be
+    skipped or take a bonus turn later. Safe to call on someone not currently
+    in the wheel (a no-op)."""
+    if who in queue:
+        queue.remove(who)
+    who._shift_skip = False
+    if who in engine.pending_turns:
+        engine.pending_turns.remove(who)
+
+
+def _join_wheel(queue, new_combatant, after=None):
+    """A new combatant's token enters the wheel (rules/combat.md, Joining and
+    leaving). A summon enters directly after the token of whoever summoned
+    it — pass that combatant as `after`. A GM-introduced combatant enters
+    when the fiction calls for it (usually the end of a full lap); the
+    caller decides the timing, this just does the insertion — pass
+    `after=None` to append at the back, matching "end of a lap." Not
+    currently wired to any card — no existing card summons — but the wheel's
+    slot count is expected to stay accurate if one ever does."""
+    if after is not None and after in queue:
+        queue.insert(queue.index(after) + 1, new_combatant)
     else:
-        queue.append(who)                        # no shift: ordinary rotation
+        queue.append(new_combatant)
 
 
 # --- Card model ---------------------------------------------------------------
@@ -195,8 +262,7 @@ class Combatant:
         # combat-duration stat modifiers (Wither -Body, Erode -Soul)
         self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
         self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
-        self.defer_turns = 0             # owed delay from negative shifts — the
-                                         # marker passes you this many times, free
+        self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
         self._damage_floor = None        # Equal Footing def: next-attack HP floor
         self._rend_guard = False         # Rend def: next hit -> Wound, no damage
@@ -360,6 +426,7 @@ class Duel:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            _leave_wheel(self, self.queue, target)
         return amount
 
     def heal(self, target, amount):
@@ -374,27 +441,31 @@ class Duel:
     # --- one attack action ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
-        attacker.discard.append(card)
-        attacker.last_color = card.color
         attacker._attacked_this = True             # for PATIENCE
-        attacker.attack_history[card.color] += 1  # revealed = public info
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
-        self._say(f"{attacker.name} plays {card.name} ({card.color})")
 
-        # Evade resolves before the defender selects a card.
+        # Evade resolves before the defender selects a card. It only reads
+        # `defender.evade` (a token count), never the card's color, so it is
+        # unaffected by when the reveal fields below get set.
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
+                self._say(f"{attacker.name} plays {card.name} ({card.color})")
                 self._say(f"  {defender.name} EVADES — attack misses")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1  # revealed = public info
                 defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
         # Defender chooses a defense BLIND — reveals are simultaneous, so the
-        # policy never sees `card`. It decides from public info only (the
-        # attacker's revealed-color history, position, etc.).
+        # policy never sees `card`, nor any trace of it: attacker.discard /
+        # last_color / attack_history are NOT mutated until after this call
+        # returns. A "blind prediction" policy can therefore only ever read
+        # history from the attacker's PRIOR attacks, never the current one.
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             def_card = defender.policy.choose_defense(self, defender, attacker)
@@ -406,7 +477,17 @@ class Duel:
                            "— the ban is on the next reveal, attack or block "
                            "(rules/card-glossary.md Axiom + reveal timing).")
                     def_card = None
-        defender.staggered = False
+        # Staggered persists — no auto-clear here. Cleared only by the affected
+        # character (or an ally) spending an action to recover (rules/card-glossary.md).
+
+        # Reveal: both cards flip face-up "simultaneously," in code terms right
+        # here, immediately before anything looks at them. The attacker's card
+        # lands in discard now (before RPS/outcome application), so effects
+        # like FORGET that read `foe.discard` after RPS resolves still see it.
+        attacker.discard.append(card)
+        attacker.last_color = card.color
+        attacker.attack_history[card.color] += 1  # revealed = public info
+        self._say(f"{attacker.name} plays {card.name} ({card.color})")
 
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
@@ -489,17 +570,9 @@ class Duel:
         self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
         while self.turn_count < self.max_turns:
+            if not self.queue:      # defensive: shouldn't happen, win-check fires first
+                return self._finish(None)
             who = self.queue[0]
-            if who.defer_turns > 0:
-                # The marker reaches their seat before their count is satisfied:
-                # it passes them over. A pass-over costs no time (no tick).
-                if len(self.queue) <= 1:
-                    who.defer_turns = 0          # alone in the wheel: nothing to wait on
-                else:
-                    who.defer_turns -= 1
-                    self.queue.pop(0)
-                    self.queue.insert(1, who)    # hover behind the next actor
-                    continue
             if not who.collapsed:
                 self.take_turn(who, self.other(who))
             r = self._win_result(who, self.other(who))
@@ -516,6 +589,11 @@ class Duel:
                 r = self._win_result(extra, self.other(extra))
                 if r is not None:
                     return r
+                # the bonus recipient still needs to vacate the marker's slot
+                # afterward, exactly like an ordinary turn would
+                if extra in self.queue:
+                    self.queue.remove(extra)
+                    self.queue.append(extra)
                 self.turn_count += 1
         RULING("stalemate-cap",
                "Duels exceeding max_turns are scored as draws (engine safeguard, "
@@ -527,8 +605,10 @@ class Duel:
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
         who._attacked_this = False
-        if who.skip_turns > 0:
-            who.skip_turns -= 1
+        if who._shift_skip or who.skip_turns > 0:
+            who._shift_skip = False
+            if who.skip_turns > 0:
+                who.skip_turns -= 1
             self._say(f"{who.name} loses their turn")
             return
         self.start_of_turn(who)
@@ -549,12 +629,15 @@ class Duel:
             elif kind == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
                 self._say(f"{who.name} moves to {who.position}")
-            elif kind == 'discard_wound':
+            elif kind == 'destroy_wound':
                 for i, c in enumerate(who.hand):
                     if c.is_status and c.name == 'WOUND':
-                        who.discard.append(who.hand.pop(i))
-                        self._say(f"{who.name} discards a Wound (action)")
+                        who.hand.pop(i)
+                        self._say(f"{who.name} destroys a Wound (action)")
                         break
+            elif kind == 'recover_stagger':
+                who.staggered = False
+                self._say(f"{who.name} recovers their balance (action)")
         # Wounds no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False

@@ -10,7 +10,8 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 
 ---
 
-**Mind 5 / Body 5 / Soul 5 — HP 21**
+**Mind 5 / Body 5 / Soul 5 — HP 19**
+**Creature Threat Rating:** 15
 
 ---
 
@@ -34,7 +35,7 @@ Iron chassis. Damage reduced by 1 before Resist.
 Body + d6. A full-weight limb strike. Hits all Frontline targets simultaneously — the radial form gives it coverage no standard attacker matches.
 
 **Exhaust Burst** *(attack)*
-Mind + d4. Hot gas vented directly at a target. Target gains Disadvantage on their next attack.
+Mind + d4. Hot gas vented directly at a target. Target gains Weak on their next attack.
 
 **Fuel Seed** *(attack)*
 Soul + d2. Superheated particulate seeded into a target's lungs. Seeds 1 Exhaust card into target's deck.

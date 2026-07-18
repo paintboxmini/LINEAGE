@@ -68,7 +68,7 @@ Range: Both
 GREEN — SOUL — HOLLOW
 Attack: Soul + d4
 Effect: Anchored — At the start of each of your turns, heal 2 HP.
-Defensive Bonus: Gain Advantage.
+Defensive Bonus: Gain Deadly.
 Range: Melee
 *"The unshaken abide, while chaos churns."*
 

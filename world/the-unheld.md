@@ -26,7 +26,7 @@ Where the Unheld presses close, things become harder to Name, harder to hold, ha
 
 ## Geography
 
-The Unheld Ocean surrounds the known world on three sides. Nothing crosses it. The continent's strong sailing culture lives entirely on the web of rivers and lakes that drains toward the grey water — river sailors are common and valued; ocean sailors do not exist.
+The Unheld Ocean surrounds the known world entirely. Nothing crosses it. The continent's strong sailing culture lives entirely on the web of rivers and lakes that drains toward the grey water — river sailors are common and valued; ocean sailors do not exist.
 
 **The coastline is the threshold.** The Unheld ends where the land begins — hard, exact, without gradient. Inland water is just water. Where a river meets the grey sea, the wrongness stops at the meeting point; whatever the Unheld is, it does not travel upstream, and it cannot be carried. Grey water scooped at the coast and walked inland arrives as ordinary water. Once the Unheld crosses the threshold, it becomes mundane.
 

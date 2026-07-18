@@ -4,14 +4,14 @@
 
 Seats are universal fundamental laws. They exist on a higher plane and affect the entire continent — not just local zones. They are not titles, not powers granted from above. They are structural features of existence: principles that reality already recognizes.
 
-The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, and others that may exist unnamed.
+The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, and others that may exist unnamed.
 
 **Seat States:**
 - **Filled** — Things work normally within that domain.
 - **Empty** — That part of reality begins to break down. Fields rot. Endings stop concluding. Memory fragments.
 - **Contested** — Two beings fighting for the same Seat warp reality around them until one wins or both are destroyed.
 
-Every culture interprets the Seats differently — different names, different faces, different rituals. The Seats remain the same. Culture creates stories about them. It does not create them.
+Most cultures have no knowledge that Seats exist as such. Their religions form independent of any real cosmological awareness — around rivers, fire, memory, whatever a people actually needed explained — and some end up resembling a Seat's real domain almost by accident. Most don't resemble anything. The Seats remain the same either way. Culture does not create Seats — it creates religions that sometimes, unknowingly, rhyme with one.
 
 ---
 
@@ -19,11 +19,11 @@ Every culture interprets the Seats differently — different names, different fa
 
 An Archon is the highest biological expression of a Seat's domain. They are not chosen. They are not elevated. They are what happens when a being aligns so completely with a domain that they become its inevitable expression.
 
-Archons function as filters or lenses for their Seat. They have no free will. They do not command their domain — they *are* it. Their presence "tints" the reality around them through the nature of what they embody.
+Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain — they *are* it, and to act against it would mean acting against their own nature. Their presence "tints" the reality around them through the nature of what they embody.
 
 What this costs:
 - Internal contradiction ends.
-- Free will dissolves.
+- Free will remains, but total alignment means it never expresses as anything but the domain.
 - The individual becomes function.
 
 Most Archons never relinquish their position. Relinquishing a Seat feels like annihilation. For most, it is.
@@ -53,6 +53,8 @@ Archons can also **fade**. A domain whose practice dies in the world starves its
 **The Seat of Knowledge** — Awareness, not wisdom. Truth uncovered. Secrets revealed. Pattern recognized. Nothing hidden escapes it permanently.
 
 **The Seat of Blood** — Vitality, sacrifice, lineage. Life-force and inheritance and oath and cost. It is the price of continuation.
+
+**The Night Ferryman** *(Navigation)* — Rows after curfew at Vulture's Nest, and further out when trust is earned. Speaks only in the smallest instructions that actually work — pick a hand, keep it on the wall, don't change it — and never explains further, because there isn't a further to give. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
 
 ---
 

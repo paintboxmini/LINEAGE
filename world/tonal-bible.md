@@ -32,7 +32,7 @@ The scariest moment is when something starts to make sense. Random chaos is just
 Not as opposites. Not as contrast. The same thing, seen from different angles or different distances. The Unheld is beautiful. It is also not safe. These are not in tension.
 
 **The mundane doesn't yield to the mythic — they coexist.**
-Farmers in Briarwatch deal with sinkholes and missing livestock. The limestone underneath is old enough to have opinions. Neither fact is more real than the other.
+Farmers in Briarwatch deal with sinkholes and missing Fenwool. The limestone underneath is old enough to have opinions. Neither fact is more real than the other.
 
 **Sacrifice costs something real.**
 Not narrative cost — actual weight. Characters lose things they don't get back. The world doesn't balance the scales.

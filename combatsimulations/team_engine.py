@@ -14,7 +14,8 @@ engines — ally effects route through engine.allies(me), which is empty in a du
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('discard_wound',) | None
+                                 | ('destroy_wound',) | ('recover_stagger',)
+                                 | ('assist_stagger', target) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
 """
@@ -22,7 +23,7 @@ Policies for teams implement:
 import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
-                    _apply_shift, _rotate_current)
+                    _apply_shift, _rotate_current, _leave_wheel)
 
 
 class Battle:
@@ -89,6 +90,7 @@ class Battle:
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             self._say(f"    {target.name} COLLAPSES")
+            _leave_wheel(self, self.queue, target)
         return amount
 
     def heal(self, target, amount):
@@ -138,9 +140,6 @@ class Battle:
     # --- one attack, at a chosen target ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
-        attacker.discard.append(card)
-        attacker.last_color = card.color
-        attacker.attack_history[card.color] += 1
         attacker._attacked_this = True
         attacker._last_hit = 0
         # Intercept: a standing ally steps in to defend in the target's place
@@ -150,12 +149,18 @@ class Battle:
                 self._say(f"  INTERCEPT: {g.name} defends for {defender.name}")
                 defender = g
                 break
-        self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
 
+        # Evade resolves before the defender selects a card. It only reads
+        # `defender.evade` (a token count), never the card's color, so it is
+        # unaffected by when the reveal fields below get set.
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
+                self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1
                 defender._damage_floor = None
                 return
 
@@ -164,7 +169,15 @@ class Battle:
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                 def_card = None
-        defender.staggered = False
+        # Staggered persists — no auto-clear. Cleared only by the affected
+        # character (or an ally) spending an action to recover (rules/card-glossary.md).
+
+        # Reveal: both cards flip face-up "simultaneously," in code terms right
+        # here, before anything (including FORGET, later) looks at them.
+        attacker.discard.append(card)
+        attacker.last_color = card.color
+        attacker.attack_history[card.color] += 1
+        self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
 
         if def_card is None:
             self._resolve_attacker_win(attacker, defender, card)
@@ -219,17 +232,9 @@ class Battle:
         self.queue = list(self.order)   # queue[0] = next to act; rotates each turn
         self.pending_turns = []
         while self.turn_count < self.max_turns:
+            if not self.queue:      # defensive: shouldn't happen, win-check fires first
+                return self._finish(bool(self.living(0)), bool(self.living(1)))
             who = self.queue[0]
-            if who.defer_turns > 0:
-                # Marker reaches their seat before their count is satisfied: it
-                # passes them over. A pass-over costs no time (no tick).
-                if len(self.queue) <= 1:
-                    who.defer_turns = 0
-                else:
-                    who.defer_turns -= 1
-                    self.queue.pop(0)
-                    self.queue.insert(1, who)    # hover behind the next actor
-                    continue
             if not who.collapsed:
                 self.take_turn(who)
             a, b = bool(self.living(0)), bool(self.living(1))
@@ -244,6 +249,9 @@ class Battle:
                 a, b = bool(self.living(0)), bool(self.living(1))
                 if not a or not b:
                     return self._finish(a, b)
+                if extra in self.queue:
+                    self.queue.remove(extra)
+                    self.queue.append(extra)
                 self.turn_count += 1
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
@@ -252,8 +260,10 @@ class Battle:
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)
         who._attacked_this = False
-        if who.skip_turns > 0:
-            who.skip_turns -= 1
+        if who._shift_skip or who.skip_turns > 0:
+            who._shift_skip = False
+            if who.skip_turns > 0:
+                who.skip_turns -= 1
             return
         self.start_of_turn(who)
         if who.collapsed:
@@ -276,11 +286,15 @@ class Battle:
             self.attack(who, target, card)
         elif action[0] == 'move':
             who.position = 'backline' if who.position == 'frontline' else 'frontline'
-        elif action[0] == 'discard_wound':
+        elif action[0] == 'destroy_wound':
             for i, c in enumerate(who.hand):
                 if c.is_status and c.name == 'WOUND':
-                    who.discard.append(who.hand.pop(i))
+                    who.hand.pop(i)
                     break
+        elif action[0] == 'recover_stagger':
+            who.staggered = False
+        elif action[0] == 'assist_stagger':
+            action[1].staggered = False
         who.must_target_frontline = False
         who._forced_target = None   # taunt is one-shot: consumed by this turn
 

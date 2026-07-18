@@ -77,7 +77,7 @@ Which means the only way anything truly unrecorded moves through the Nest is if 
 
 **Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
 
-Routes travelers northeast toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
+Routes travelers west toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
 
 Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
 
@@ -109,7 +109,7 @@ If the party passes through the Scratcher encounter: *"You've been marked. The w
 
 **The Sealed Letter**
 
-At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwoods-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
 
 The letter reads:
 
@@ -192,13 +192,15 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 ## The Market
 
+The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin. See `bestiary/duskwick.md`.
+
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
 - *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
 - *Ignore it:* It opens on its own later. DM chooses when.
 - *Carry it:* Bad idea. The party will figure out why.
 
-Someone brought it in from the Briarwoods direction. Nobody claimed it.
+Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 ---
 
@@ -218,7 +220,7 @@ Someone brought it in from the Briarwoods direction. Nobody claimed it.
 
 **The Desire Compass** — points where you want to go. Not where you're trying to go. Where you *want* to go. Meaningful distinction in a world where naming a destination changes routing.
 
-**The Warden's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Warden who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
+**The Guard's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Roadhouse guard who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
 
@@ -269,7 +271,7 @@ The Red Scarves are already in your peripheral vision.
 
 ## Session 1 Routing
 
-Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork northeast (day 2) → Briarwatch.
+Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
 
 The Roadhouse is a government inn. Functional, not charming. Beds that work, food that's fine. Exists because the road needs it to. See `locations/roadhouse.md`.
 
@@ -317,3 +319,4 @@ The normal conversation slowly picks back up.
 
 - `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
 - `world/the-regency.md` — Bartho's debt routes players toward Eclipsera
+- `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours

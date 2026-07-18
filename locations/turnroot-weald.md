@@ -29,10 +29,17 @@ Notable species:
 - **Echothorn Vine** — the vine of the Thorne Throne. Seeds resonate with a faint echo when shaken. Ground into dust and mixed with reagents, they amplify spells and incantations.
 - **Luminova Leaves** — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
 - **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `quests/turnroot-weald-adventure.md` for full stat block.
+- **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing.md`.
 
 ## Geography
 
 The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
+
+---
+
+## GM Secret — Not Player-Facing
+
+Part of "more deliberate than natural": the Masons hold a line against the Weald at Briarwatch specifically — the watchtower ruins and larder fence there are their work, maintained on periodic visits. See `factions/the-masons.md`, Known Works. Whether the Masons contest the Weald anywhere else is not established.
 
 ---
 

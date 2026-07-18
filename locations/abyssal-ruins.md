@@ -1,6 +1,6 @@
 # Abyssal Ruins
 
-Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood.
+Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood. What's known, at least to the few who'd have reason to know it: this was a target once, and something in Ashfall has it aimed again. See `quests/war-engine.md`.
 
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 
@@ -69,3 +69,5 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 - `bestiary/death-ball-sponge.md` — Trench floor hazard
 - `bestiary/flapjack-octopus.md` — Trench ambush predator
 - `bestiary/elder-tower-creature.md` — Ancient Trench organisms
+- `quests/war-engine.md`, `locations/ashfall-wastes.md` — the weapon this was struck by, once already
+- `locations/the-coil.md` — something that was here the first time, and isn't anymore

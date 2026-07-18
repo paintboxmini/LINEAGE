@@ -10,16 +10,16 @@ Use this to build new Tales Untold encounters. The output is repo files, not a c
 
 Encounters built without calibration end up the wrong weight for their tier and fight the engine instead of using it.
 
-1. **`agent-tools/exemplars.md`** — the compiled crib: engine facts, tier anchors, formats, deck and tag conventions, skeletons, tone. This replaces the old full-canon read list for routine work.
+1. **`agent-tools/compiled-crib.md`** — engine facts, tier anchors, formats, deck and tag conventions, skeletons, tone. This replaces the old full-canon read list for routine work.
 2. **The location the encounter lands in** — its file in `locations/`. The best hooks are usually already there; listen before inventing.
-3. **Escalate to full canon only when needed:** bending or brushing a rule → `rules/invariants.md` + the relevant rules file; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
-4. Tier not stated in the brief? Ask before building.
+3. **Escalate to full canon only when needed:** touching the simulator's own computational correctness → `rules/invariants.md`; checking design quality → `agent-tools/design-principles.md`; using a keyword in a novel way → its exact text in `rules/card-glossary.md`; designing off an existing creature → its bestiary entry. If the crib looks stale against canon, flag it for the Pending-propagation ledger.
+4. Target Creature Threat Rating (total stats) not stated in the brief? Ask before building.
 
 ---
 
 ## Design Constraints
 
-- State the tier. Teach one mechanic (Early) or one interaction (Mid) **through play**, never through explanation.
+- State the target Creature Threat Rating (total stats; player baseline 9). Low-rated creatures teach one lesson **through play**; higher-rated ones layer a defining passive and card synergy. Never teach through explanation.
 - Run on the engine, not around it: positioning, the wheel, hand economy, and status-card pressure are your materials. The strongest twists are the ones the rules enforce for you.
 - Simple, clean effects; no generic damage-only enemies; no new keywords without discussion.
 - Effect and Defensive Bonus on a card should not be near-duplicates.
@@ -38,4 +38,4 @@ Encounters built without calibration end up the wrong weight for their tier and 
 1. Run `red-team.md` (Quest/Encounter pass) — invariants first.
 2. Run `alignment-checker.md` if the encounter touches an existing location, faction, or NPC.
 3. Anything that extends canon (new faction behavior, new truth about a place) ships flagged (Authority 2) — named explicitly in chat and the post-review queue, never riding in silently. Extensions extend; they never redirect existing themes.
-4. Remove visible reasoning. Present the encounters, the review findings, and the flagged rulings — nothing else.
+4. Check against `red-team.md`'s Visible Reasoning section. Present the encounters, the review findings, and the flagged rulings — nothing else.
