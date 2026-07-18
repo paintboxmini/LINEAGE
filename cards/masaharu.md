@@ -33,3 +33,13 @@ Effect: If target has Blind or Staggered, deal +2 damage.
 Defensive Bonus: Reload.
 Range: Ranged
 *"One chance. He already knew when to take it."*
+
+---
+
+**STEADY HAND**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Scry 1.
+Defensive Bonus: Scry 1, then draw 1 card. Reload.
+Range: Both
+*"Even on the back foot, he's still counting."*

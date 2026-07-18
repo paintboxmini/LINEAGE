@@ -34,6 +34,7 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 - Gets more dangerous the lower his HP drops (ASHBORN FLARE), which reads as recklessness and is actually a read on his own math.
 - Genuinely useful to allies (EMBER WARD) — not purely a glass cannon leaning on his own safety net.
 - The real tension lives in his hand, not his HP bar: PHOENIX'S LAST BREATH is worthless the instant he plays it as a normal card, and worth everything the instant he doesn't. Watching whether he holds it is watching him decide how close to the edge he's willing to go this fight.
+- Built to pivot cheap. Every core card either hands him more information or options (PROFILE, FOCUS, CLIMB, RENEWAL) or removes a constraint instead of adding a combo (ADAPT erases the color he needs to draw, FLOW erases the position he's stuck in) — none of it demands he commit to a line to pay off. That costs him: no card here is a big spike, and average output is lower than a deck built to punish a fixed pattern (compare PATIENCE, cut from this list for exactly that reason — it pays for staying still, which is the opposite of what he's for). He's built to always have a next move, not the best one.
 
 ---
 
@@ -45,8 +46,8 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 
 *Blue — Mind*
 - PROFILE — Scry 2, then draw 1; Defensive: Attacker gains Staggered
-- REFRACT — Defender gains Weak; Defensive: redirect this attack's full damage on a clean win
-- STILLNESS — Defender discards 1 at random; Defensive: Attacker discards 1 at random
+- FOCUS — Scry 1, return this card to your hand; Defensive: Place top of discard on top of deck
+- CLIMB — Look at bottom 2 of your deck, place any on top; Defensive: Max hand size +1 until end of combat
 
 *Red — Body*
 - STRIKE — Body + d8, no effect; Defensive: Deal 2 to attacker
@@ -55,5 +56,5 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 
 *Green — Soul*
 - RENEWAL — Allies discard-then-draw or heal 2; Defensive: Attacker discards 1 at random
-- WITNESS — Ally heals 3 on successful defense; Defensive: Target ally heals 3
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Move to any position
+- ADAPT — This card counts as all colors (damage only); Defensive: Gain Evade
+- FLOW — You may change position; Defensive: You may change position

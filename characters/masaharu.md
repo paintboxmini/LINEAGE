@@ -59,11 +59,10 @@ He is most dangerous when he has had one full cycle to read the party.
 
 **Signature cards:** `cards/masaharu.md` — unique to Masaharu, not transferable.
 
-**Core cards (3 Blue / 3 Red / 4 Green):**
+**Core cards (2 Blue / 3 Red / 4 Green):**
 
 *Blue — Mind*
 - PROFILE — Scry 2; Defensive: Staggered on attacker
-- ALIGN — Scry 2; Defensive: conditional draw 1
 - AXIOM — Color denial; Defensive: Scry 2 of attacker's deck
 
 *Red — Body*
