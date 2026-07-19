@@ -40,6 +40,7 @@ class Battle:
         self.injury_card = cards.get('INJURY')
         self.pending_turns = []
         self.queue = []
+        self.team_target = {0: None, 1: None}   # each side's shared focus-fire pick (team_policies.py, _pick_target)
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -51,12 +52,14 @@ class Battle:
     def enemies(self, me):
         return [c for c in self.teams[1 - me.team] if not c.collapsed]
 
-    def downed_enemies(self, me):
-        """Collapsed-but-not-dead enemies — a separate pool from enemies()
-        deliberately: normal targeting (focus fire, support cards) should never
-        see them, but a policy can choose to reach into this pool to finish
-        one off (see team_policies.py, FINISH_DOWNED_CHANCE)."""
-        return [c for c in self.teams[1 - me.team] if c.collapsed and not c.is_dead]
+    def targetable(self, me):
+        """Everyone on the enemy side still worth aiming at — living or
+        Collapsed, just not dead. A separate pool from enemies() deliberately:
+        normal support-card/ally logic should never see a Collapsed character,
+        but target *selection* (team_policies.py, _pick_target) draws from
+        this wider pool — a downed enemy is back in play for a fresh random
+        pick, not specially hunted or specially spared."""
+        return [c for c in self.teams[1 - me.team] if not c.is_dead]
 
     def _say(self, msg):
         self.log.append(msg)

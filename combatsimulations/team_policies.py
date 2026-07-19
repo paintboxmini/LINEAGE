@@ -11,13 +11,6 @@ sim couldn't show).
 
 from policies import est_damage, _BEATEN_BY, playable, ScryMixin
 
-# Chance a target-choice, given a downed-but-not-dead enemy to consider,
-# reaches for the kill instead of the normal living-target focus-fire pick.
-# Drew: a downed enemy shouldn't be an automatic pile-on target — give allies
-# a real window to save them, not a guarantee. Tunable; not derived from
-# anything, just a starting point.
-FINISH_DOWNED_CHANCE = 0.25
-
 
 def legal_attacks_team(battle, me, target):
     if me.must_target_frontline and target.position != 'frontline':
@@ -42,14 +35,20 @@ class TeamTactician(ScryMixin):
         forced = getattr(me, '_forced_target', None)
         if forced is not None and not forced.collapsed:
             return forced
-        downed = battle.downed_enemies(me)
-        if downed and battle.rng.random() < FINISH_DOWNED_CHANCE:
-            return battle.rng.choice(downed)   # random, not the "best" one to finish
-        foes = battle.enemies(me)
-        if not foes:
+        # Team plan (Drew): pick a target at random and pile on — stay locked
+        # while they're still standing. The instant they collapse, the lock
+        # drops and the next pick is random again, over everyone still alive
+        # in play (including the one who just went down — they're back in
+        # the pool, not specially hunted or specially spared).
+        cur = battle.team_target.get(me.team)
+        if cur is not None and not cur.collapsed and not cur.is_dead:
+            return cur
+        pool = battle.targetable(me)
+        if not pool:
             return None
-        # focus fire: lowest effective HP first (secure kills, concentrate)
-        return min(foes, key=lambda e: (e.hp, e.max_hp))
+        pick = battle.rng.choice(pool)
+        battle.team_target[me.team] = pick if not pick.collapsed else None
+        return pick
 
     def choose_action(self, battle, me):
         # Staggered no longer routes through here — the engine skips that
