@@ -562,6 +562,95 @@ def _patience_defense(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
 
 
+# ==================== Missing simple core cards (Patient Host deck-fill) =====
+# None of these were ever wired to a roster deck before, so nobody caught the
+# gap until building the Host's actual 24-card deck required all of them.
+
+def _stillness_effect(engine, me, foe):
+    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
+    if reals:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
+_stillness_defense = _stillness_effect   # same text, target is just always foe here
+
+def _focus_effect(engine, me, foe):
+    engine.scry(me, me, 1)   # "returns to hand instead of discard" unmodeled — no engine hook for it
+def _focus_defense(engine, me, foe):
+    if me.discard:
+        me.deck.append(me.discard.pop())   # top of discard -> top of deck (append = top, draws next)
+
+def _understanding_dmg(engine, me, foe):
+    reds_greens = [i for i, c in enumerate(me.hand) if c.color in ('R', 'G')]
+    bonus = 0
+    if reds_greens:
+        me.discard.append(me.hand.pop(engine.rng.choice(reds_greens)))
+        bonus = 3
+    return me.eff('mind') + roll(4, engine.rng) + bonus
+def _understanding_defense(engine, me, foe):
+    engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
+
+def _endure_effect(engine, me, foe):
+    me.resist += 1
+def _endure_defense(engine, me, foe):
+    engine.heal(me, 3)
+
+def _weathered_defense(engine, me, foe):
+    me.ward = True
+# Effect ("if attacked before your next turn, gain +2 HP") unmodeled — same
+# shape as ANTICIPATE's dead effect (a delayed trigger the engine has no hook for).
+
+def _recover_effect(engine, me, foe):
+    c = me.draw_one(engine.rng)
+    if c:
+        me.hand.append(c)
+    engine.heal(me, 2)
+_recover_defense = _recover_effect   # identical text both sides
+
+def _flow_effect(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+_flow_defense = _flow_effect
+
+def _shade_away_effect(engine, me, foe):
+    me.evade += 1
+def _shade_away_defense(engine, me, foe):
+    foe._forced_target = me   # taunt, same pattern as MOCKERY — "rushdown if they
+                               # cannot reach you" unmodeled, matches Mockery's own gap
+
+# STARING CONTEST (Red) — "move to immediately follow a chosen token in
+# initiative order" is a direct requeue, not a numeric shift; no engine hook
+# for it distinct from Initiative Shift X. Left fully unmodeled, registered
+# with no effect/defense, same treatment as Tactical Wait.
+
+
+# ==================== The Patient Host — boss signature cards ================
+
+def _your_turn_will_come_effect(engine, me, foe):
+    engine.initiative_shift(foe, -2)
+def _your_turn_will_come_defense(engine, me, foe):
+    engine.initiative_shift(foe, -2)   # foe = the attacker, from a defense call
+
+def _registered_effect(engine, me, foe):
+    engine.scry(me, foe, 2)   # the Host reads and rearranges the target's own top 2 — "the ledger already knew"
+def _registered_defense(engine, me, foe):
+    me.ward = True
+
+def _no_vacancy_effect(engine, me, foe):
+    foe.position = 'backline'
+def _no_vacancy_defense(engine, me, foe):
+    me.resist += 2
+
+def _ledger_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'ledger', 'owner': me, 'anchor': me.position})
+def _ledger_defense(engine, me, foe):
+    c = me.draw_one(engine.rng)
+    if c:
+        me.hand.append(c)
+
+def _youre_next_effect(engine, me, foe):
+    engine.initiative_shift(me, 2)
+def _youre_next_defense(engine, me, foe):
+    engine.deal(foe, 3, unpreventable=True)
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -677,6 +766,33 @@ def build_cards():
     add("PATIENCE", 'G', 'soul', 'melee', None,
         damage=_patience_dmg, defense=_patience_defense)
 
+    # Missing simple core cards (Patient Host deck-fill)
+    add("STILLNESS", 'B', 'mind', 'ranged', 4,
+        effect=_stillness_effect, defense=_stillness_defense)
+    add("PREDICT", 'B', 'mind', 'melee', 6)   # Sealed unmodeled — no item-usage mechanic exists in the sim
+    add("FOCUS", 'B', 'mind', 'both', 4, effect=_focus_effect, defense=_focus_defense)
+    add("UNDERSTANDING", 'B', 'mind', 'both', 4,
+        damage=_understanding_dmg, defense=_understanding_defense)
+    add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
+    add("WEATHERED", 'R', 'body', 'both', 4, defense=_weathered_defense)  # effect DEAD (delayed trigger)
+    add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
+    add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
+    add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
+    add("SHADE AWAY", 'G', 'soul', 'melee', 2,
+        effect=_shade_away_effect, defense=_shade_away_defense)
+
+    # The Patient Host — boss signature cards
+    add("YOUR TURN WILL COME", 'G', 'soul', 'ranged', 4,
+        effect=_your_turn_will_come_effect, defense=_your_turn_will_come_defense)
+    add("REGISTERED", 'B', 'mind', 'both', 4,
+        effect=_registered_effect, defense=_registered_defense)
+    add("NO VACANCY", 'R', 'body', 'melee', 6,
+        effect=_no_vacancy_effect, defense=_no_vacancy_defense)
+    add("THE LEDGER NEVER CLOSES", 'G', 'soul', 'both', 4,
+        effect=_ledger_effect, defense=_ledger_defense)
+    add("YOU'RE NEXT", 'G', 'soul', 'both', 4,
+        effect=_youre_next_effect, defense=_youre_next_defense)
+
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
 
@@ -753,6 +869,18 @@ TEMPO_DECK = [      # Mind 4 — control/tempo denial
 ]
 TEMPO_STATS = dict(mind=4, soul=3, body=2)
 
+# The Patient Host — CTR 24 boss, bespoke HP (bestiary/the-patient-host.md).
+# Deck exactly as listed there: 5 signature + 19 core-fill, 8 Blue/6 Red/10 Green.
+PATIENT_HOST_DECK = [
+    "REGISTERED",                                                    # signature, blue
+    "NO VACANCY",                                                    # signature, red
+    "YOUR TURN WILL COME", "THE LEDGER NEVER CLOSES", "YOU'RE NEXT", # signature, green
+    "STILLNESS", "PREDICT", "ANTICIPATE", "CALCULATE", "FOCUS", "PARTITION", "UNDERSTANDING",  # blue
+    "GUARD", "ENDURE", "WEATHERED", "STARING CONTEST", "RECOVER",    # red
+    "PATIENCE", "FLOW", "WITNESS", "SHADE AWAY", "URGENCY", "DELAY", "MOCKERY",  # green
+]
+PATIENT_HOST_STATS = dict(body=6, mind=8, soul=10, hp=66)   # formula baseline would be 21 — boss exception
+
 # registry so run.py can pit any two decks against each other
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
@@ -764,4 +892,5 @@ ROSTER = {
     "warden": (WARDEN_STATS, WARDEN_DECK),  # Soul 4 — green support anchor
     "vanguard": (VANGUARD_STATS, VANGUARD_DECK),  # Body 4 — tank/protection
     "tempo":    (TEMPO_STATS, TEMPO_DECK),        # Mind 4 — control/tempo
+    "patient_host": (PATIENT_HOST_STATS, PATIENT_HOST_DECK),  # CTR 24 boss, bespoke HP 66
 }

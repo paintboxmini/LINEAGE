@@ -77,7 +77,7 @@ class ScryMixin:
         def threat(c):
             if c.is_status:
                 return -10                          # an Injury of theirs: leave it on top!
-            return _card_power(c) + (5 if (counter and c.color == counter) else 0)
+            return est_damage(owner, c) + (5 if (counter and c.color == counter) else 0)
         ranked = sorted(seen, key=threat)           # weakest first
         half = max(1, len(ranked) // 2)
         junk = ranked[:half][::-1]                  # low threat, weakest last -> drawn next

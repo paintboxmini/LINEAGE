@@ -41,6 +41,7 @@ class Battle:
         self.pending_turns = []
         self.queue = []
         self.team_target = {0: None, 1: None}   # each side's shared focus-fire pick (team_policies.py, _pick_target)
+        self._resolving = None   # whoever's turn is currently resolving (see engine._apply_shift)
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -286,6 +287,7 @@ class Battle:
         return self._finish(bool(self.living(0)), bool(self.living(1)))
 
     def take_turn(self, who):
+        self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)
         who._attacked_this = False

@@ -61,6 +61,8 @@ def _ongoing_support_tick(engine, who):
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
                 engine.heal(a, 1, source=who)
+        elif o['kind'] == 'ledger' and who.position == o.get('anchor', who.position):
+            engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
         elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
             allies = engine.allies(who)
             if allies:                     # ally-only: no self-fallback (green revert)
@@ -123,11 +125,16 @@ def _apply_shift(engine, queue, target, amount):
     i = queue.index(target)
     total = len(queue)
 
-    if i == 0:
+    if i == 0 or target is getattr(engine, '_resolving', None):
         # the current actor, still mid-turn: already at the earliest possible
         # slot, so any positive shift can only mean "sooner than right now,"
         # which becomes a bonus turn this same lap instead (ruling: a
         # positive self-shift always grants an extra turn, any magnitude).
+        # `target is engine._resolving` covers this same fact during a BONUS
+        # turn, where the acting character isn't at queue[0] at all (that
+        # slot belongs to whoever's next in the untouched normal rotation) —
+        # found via a real crash (YOU'RE NEXT chaining bonus turns into
+        # itself); same rule, just no longer misdetected by queue position.
         if amount > 0 and not was_pending:
             engine.pending_turns.append(target)
         # negative: staying put (or rotating normally) already can't be
@@ -241,13 +248,17 @@ class Card:
 
 # --- Combatant ----------------------------------------------------------------
 class Combatant:
-    def __init__(self, name, body, mind, soul, decklist, policy):
+    def __init__(self, name, body, mind, soul, decklist, policy, hp=None):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
         # Canon HP formula (2*Body + 9) — flattened from 3*Body+6 to decouple HP
         # from Body and cut its damage+HP double-dip. Crossover at Body 3.
         self.hp_per_body = 2
-        self.max_hp = self.hp_per_body * body + 9
+        # Bosses may go bespoke on HP (CLAUDE.md, Stat Blocks) — pass `hp=` to
+        # override the formula baseline; the formula is still what death_floor()
+        # and Body-adjust deltas key off internally, this only overrides the
+        # starting/max number itself.
+        self.max_hp = hp if hp is not None else self.hp_per_body * body + 9
         self.hp = self.max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
                                         # never below act-plus-one-block
@@ -359,6 +370,7 @@ class Duel:
         self.injury_card = cards.get('INJURY')
         self.pending_turns = []
         self.queue = []
+        self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
 
     def insert_injury(self, target):
         if self.injury_card is None:
@@ -652,6 +664,7 @@ class Duel:
         return self._finish(None)
 
     def take_turn(self, who, foe):
+        self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
         who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
         who._attacked_this = False
