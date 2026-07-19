@@ -11,6 +11,13 @@ sim couldn't show).
 
 from policies import est_damage, _BEATEN_BY, playable, ScryMixin
 
+# Chance a target-choice, given a downed-but-not-dead enemy to consider,
+# reaches for the kill instead of the normal living-target focus-fire pick.
+# Drew: a downed enemy shouldn't be an automatic pile-on target — give allies
+# a real window to save them, not a guarantee. Tunable; not derived from
+# anything, just a starting point.
+FINISH_DOWNED_CHANCE = 0.25
+
 
 def legal_attacks_team(battle, me, target):
     if me.must_target_frontline and target.position != 'frontline':
@@ -35,6 +42,9 @@ class TeamTactician(ScryMixin):
         forced = getattr(me, '_forced_target', None)
         if forced is not None and not forced.collapsed:
             return forced
+        downed = battle.downed_enemies(me)
+        if downed and battle.rng.random() < FINISH_DOWNED_CHANCE:
+            return battle.rng.choice(downed)   # random, not the "best" one to finish
         foes = battle.enemies(me)
         if not foes:
             return None

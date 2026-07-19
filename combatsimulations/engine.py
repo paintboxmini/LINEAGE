@@ -278,6 +278,7 @@ class Combatant:
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
         self.collapsed = False
+        self.is_dead = False             # crossed death_floor while Collapsed — permanent
 
         # combat-duration stat modifiers (Wither -Body, Erode -Soul)
         self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
@@ -435,8 +436,9 @@ class Duel:
         # a single normal attack cannot push below 0 (clamp); extra damage while
         # collapsed can. We treat any single application atomically.
         pre = target.hp
+        was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not target.collapsed:
+        if pre > 0 and target.hp < 0 and not was_collapsed:
             RULING("single-hit-floor",
                    "A single attack cannot push a standing combatant below 0 HP "
                    "(clamped to 0 = Collapse). Matches rules/combat.md Collapse.")
@@ -444,12 +446,26 @@ class Duel:
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             _leave_wheel(self, self.queue, target)
+        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
+            # Only reachable already-Collapsed — the single-hit-floor above
+            # protects a standing combatant from dying on the hit that drops
+            # them (rules/combat.md, Collapse & Death: "a single attack cannot
+            # push you below 0"). Death is permanent — no further heal call
+            # can undo it (see heal()).
+            target.is_dead = True
+            RULING("death-floor",
+                   "Collapsed and reduced to or below -ceil(max_hp/2): dead "
+                   "(rules/combat.md, Collapse & Death). Permanent.")
         return amount
 
     def heal(self, target, amount, source=None):
-        # Collapse can be healed out of (rules/combat.md, Collapse & Death:
-        # "You may be healed back into combat") — only revive on a healed total
-        # that actually clears 0; anything less just softens the Collapse state.
+        # Death is permanent (rules/combat.md, Collapse & Death) — unlike
+        # Collapse, nothing heals it. A dead combatant just doesn't respond.
+        if target.is_dead:
+            return
+        # Collapse can be healed out of ("You may be healed back into combat")
+        # — only revive on a healed total that actually clears 0; anything
+        # less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False

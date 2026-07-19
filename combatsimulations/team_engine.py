@@ -51,6 +51,13 @@ class Battle:
     def enemies(self, me):
         return [c for c in self.teams[1 - me.team] if not c.collapsed]
 
+    def downed_enemies(self, me):
+        """Collapsed-but-not-dead enemies — a separate pool from enemies()
+        deliberately: normal targeting (focus fire, support cards) should never
+        see them, but a policy can choose to reach into this pool to finish
+        one off (see team_policies.py, FINISH_DOWNED_CHANCE)."""
+        return [c for c in self.teams[1 - me.team] if c.collapsed and not c.is_dead]
+
     def _say(self, msg):
         self.log.append(msg)
 
@@ -81,19 +88,30 @@ class Battle:
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
         pre = target.hp
+        was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not target.collapsed:
+        if pre > 0 and target.hp < 0 and not was_collapsed:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             self._say(f"    {target.name} COLLAPSES")
             _leave_wheel(self, self.queue, target)
+        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
+            # Only reachable already-Collapsed — a standing combatant is
+            # protected from dying on the hit that drops them. Permanent —
+            # heal() refuses to revive a dead combatant.
+            target.is_dead = True
+            self._say(f"    {target.name} DIES")
         return amount
 
     def heal(self, target, amount, source=None):
-        # Collapse can be healed out of (rules/combat.md, Collapse & Death:
-        # "You may be healed back into combat") — only revive on a healed total
-        # that actually clears 0; anything less just softens the Collapse state.
+        # Death is permanent (rules/combat.md, Collapse & Death) — unlike
+        # Collapse, nothing heals it. A dead combatant just doesn't respond.
+        if target.is_dead:
+            return
+        # Collapse can be healed out of ("You may be healed back into combat")
+        # — only revive on a healed total that actually clears 0; anything
+        # less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
@@ -292,11 +310,11 @@ class Battle:
             self._say(f"{who.name} waits")
         elif action[0] == 'attack':
             _, card, target = action
-            if target.collapsed:
-                alt = self.enemies(who)
-                if not alt:
-                    return
-                target = alt[0]
+            # Targeting a Collapsed-but-not-dead enemy is now a deliberate,
+            # policy-level choice (team_policies.py, FINISH_DOWNED_CHANCE) —
+            # no longer redirected away from here. A Collapsed target auto-hits
+            # (rules/combat.md, Collapse & Death), which attack() already
+            # handles via its own `not defender.collapsed` defense gate.
             self.attack(who, target, card)
         elif action[0] == 'move':
             who.position = 'backline' if who.position == 'frontline' else 'frontline'
