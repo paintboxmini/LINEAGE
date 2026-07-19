@@ -95,8 +95,8 @@ Range: Ranged
 **TRACE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: If target plays the same color as their last card, deal +3 damage
-Defensive Bonus: If attacker used the same color as their last card, remove their ongoing effects
+Effect: If the defender plays the same color as the top card of their discard pile, gain Deadly this attack
+Defensive Bonus: If the attacker plays the same color as the top card of their discard pile, remove their Positive Status Effects
 Range: Ranged
 *"Cartographers see the second time before it happens."*
 
@@ -105,8 +105,8 @@ Range: Ranged
 **DEFLECT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Prevent the next debuff that affects you
-Defensive Bonus: Counter attack
+Effect: Gain Ward
+Defensive Bonus: Counter Attack. Only on a clean win — not a tie.
 Range: Melee
 *"Turn the blow aside and see what follows."*
 
@@ -115,7 +115,7 @@ Range: Melee
 **ANTICIPATE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: The first time you're attacked before your next turn, Scry 2 and draw 1 card
+Effect: When you are attacked before your next turn, draw 1 card before defending. Activates multiple times.
 Defensive Bonus: Target gains Weak
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
@@ -135,7 +135,7 @@ Range: Both
 **FRACTURE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: If the top 3 cards of your discard are 1 of each color, deal +4 damage
+Effect: If the top 3 cards of your discard are 1 of each color, deal 3 damage to either the enemy Frontline or the enemy Backline (your choice)
 Defensive Bonus: If the top 3 cards of your discard are 1 of each color, the attacker must exile the card they played this turn
 Range: Ranged
 *"Cracks reveal hidden structure."*
@@ -145,8 +145,8 @@ Range: Ranged
 **ALIGN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 3. If any two share a color, choose: draw 1 card, or gain Deadly
-Defensive Bonus: Scry 3. If any two share a color, gain Deadly
+Effect: Scry 2. If they share a color, draw 1 and gain Resist
+Defensive Bonus: Scry 2. If they share a color, draw 1 and gain Deadly
 Range: Ranged
 *"Clarity sharpens in alignment."*
 
@@ -154,8 +154,8 @@ Range: Ranged
 
 **UNDERSTANDING**
 BLUE — MIND
-Attack: Mind + d4
-Effect: Discard a Red or Green card. This attack deals +3 damage.
+Attack: Mind + d6
+Effect: Discard a card. This attack gains Deadly.
 Defensive Bonus: Scry 2. If you bottom both, heal 4 HP
 Range: Both
 *"Clarity is not given, it is reconstructed."*
@@ -166,7 +166,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Target enemy can only attack frontline targets next turn
-Defensive Bonus: Target ally cannot be targeted by the next attack
+Defensive Bonus: Target ally cannot be targeted by an attack until your next turn
 Range: Both
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
@@ -175,8 +175,8 @@ Range: Both
 **UNNAME**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Target cannot trigger defensive bonuses until their next turn
-Defensive Bonus: Opponent discards 1 card at random
+Effect: Defender cannot trigger defensive bonuses until their next turn
+Defensive Bonus: Attacker discards 1 card at random
 Range: Both
 *"What cannot be spoken cannot hold its shape."*
 

@@ -26,6 +26,25 @@ def lifesteal(engine, me, foe, x):
     engine.heal(me, dealt)
 
 
+def remove_positive_status(target):
+    """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
+    Fortress, Anchored, Quick. Quick isn't implemented anywhere in the sim yet
+    (see REALIGNMENT), so there's nothing to clear for it here."""
+    target.evade = 0
+    target.resist = 0
+    target.deadly = 0
+    target._fortress = False
+    target.ongoing = [o for o in target.ongoing if 'anchor' not in o]   # Anchored-flavored entries only
+
+
+def _same_as_discard_top(target):
+    """TRACE's condition: did the card just played match what was already
+    sitting on top of the discard pile before it? discard[-1] is the just-
+    played card (already appended by the time Effect/Defense fires);
+    discard[-2] is whatever was on top before that."""
+    return len(target.discard) >= 2 and target.discard[-1].color == target.discard[-2].color
+
+
 # ============================ FROST ==========================================
 
 def _burn_bright_dmg(engine, me, foe):
@@ -37,11 +56,30 @@ def _burn_bright_dmg(engine, me, foe):
 
 
 def _fracture_dmg(engine, me, foe):
-    base = me.mind + roll(4, engine.rng)
+    return me.eff('mind') + roll(4, engine.rng)
+
+
+def _fracture_effect(engine, me, foe):
     top3 = me.discard[-3:]
-    if len(top3) == 3 and len({c.color for c in top3}) == 3:
-        base += 4
-    return base
+    if len(top3) != 3 or len({c.color for c in top3}) != 3:
+        return
+    enemies = engine.enemies(me)
+    front = [e for e in enemies if e.position == 'frontline']
+    back = [e for e in enemies if e.position == 'backline']
+    side = front if len(front) >= len(back) else back   # "your choice" — pick the fuller side
+    for e in side:
+        engine.deal(e, 3)
+
+
+def _trace_dmg(engine, me, foe):
+    if _same_as_discard_top(foe):
+        return me.eff('mind') + max(roll(4, engine.rng), roll(4, engine.rng))   # Deadly, this roll only
+    return me.eff('mind') + roll(4, engine.rng)
+
+
+def _trace_defense(engine, me, foe):
+    if _same_as_discard_top(foe) and not warded(foe):   # foe = attacker here
+        remove_positive_status(foe)
 
 
 def _twin_strike_dmg(engine, me, foe):
@@ -88,6 +126,10 @@ def _deflect_effect(engine, me, foe):
 
 
 def _deflect_defense(engine, me, foe):
+    # Only on a clean win, never a tie — same `_redirect_dmg`-is-set-only-on-a-
+    # clean-win signal REFRACT/FORGET already use.
+    if getattr(foe, '_redirect_dmg', None) is None:
+        return
     engine.deal(foe, me.mind + roll(4, engine.rng), unpreventable=True)  # counter, no new RPS
 
 
@@ -197,16 +239,20 @@ def _spiral_current_effect(engine, me, foe):
 
 
 def _align_effect(engine, me, foe):
-    seen = engine.scry(me, me, 2)              # reorder own deck; then conditional draw
+    seen = engine.scry(me, me, 2)              # reorder own deck; then conditional draw + Resist
     if len(seen) == 2 and seen[0].color == seen[1].color and seen[0].color is not None:
         c = me.draw_one(engine.rng)
         if c:
             me.hand.append(c)
+        me.resist += 1
 
 
 def _align_defense(engine, me, foe):
     seen = engine.scry(me, me, 2)
     if len(seen) == 2 and seen[0].color == seen[1].color and seen[0].color is not None:
+        c = me.draw_one(engine.rng)
+        if c:
+            me.hand.append(c)
         me.deadly += 1
 
 
@@ -215,6 +261,10 @@ def _axiom_defense(engine, me, foe):
     if not warded(foe):
         foe.axiom_ban = color
         engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
+
+
+def _anticipate_effect(engine, me, foe):
+    me._anticipating = True   # draws before defending, every qualifying attack, until my next turn
 
 
 def _anticipate_defense(engine, me, foe):
@@ -340,9 +390,24 @@ def _partition_effect(engine, me, foe):
 
 
 def _partition_defense(engine, me, foe):
-    RULING("partition-shield-dead",
-           "PARTITION def 'target ally cannot be targeted' has no valid target in "
-           "a 1v1 (You Are Not Your Own Ally).")
+    # Dead in a 1v1 (You Are Not Your Own Ally) — engine.allies(me) is always
+    # empty there, same as every other ally-only effect. Real in team play:
+    # shields the most-hurt ally from being targeted by an attack until MY
+    # next turn (take_turn clears it then, tracked via me._partition_shield_target).
+    a = _most_hurt(engine.allies(me))
+    if a:
+        a._partition_shield = True
+        me._partition_shield_target = a
+
+
+def _unname_effect(engine, me, foe):
+    foe._no_defensive_bonus = True   # until foe's own next turn (take_turn clears it)
+
+
+def _unname_defense(engine, me, foe):
+    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
+    if reals:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
 
 
 def _taint_effect(engine, me, foe):
@@ -609,12 +674,12 @@ def _focus_defense(engine, me, foe):
         me.deck.append(me.discard.pop())   # top of discard -> top of deck (append = top, draws next)
 
 def _understanding_dmg(engine, me, foe):
-    reds_greens = [i for i, c in enumerate(me.hand) if c.color in ('R', 'G')]
-    bonus = 0
-    if reds_greens:
-        me.discard.append(me.hand.pop(engine.rng.choice(reds_greens)))
-        bonus = 3
-    return me.eff('mind') + roll(4, engine.rng) + bonus
+    # discard the played card's already gone from hand by this point (removed
+    # at the top of attack()), so any index here is a genuinely different card
+    if me.hand:
+        me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
+        return me.eff('mind') + max(roll(6, engine.rng), roll(6, engine.rng))   # Deadly, this roll only
+    return me.eff('mind') + roll(6, engine.rng)
 def _understanding_defense(engine, me, foe):
     engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
 
@@ -704,7 +769,8 @@ def build_cards():
         effect=_deflect_effect, defense=_deflect_defense)
     add("REALIGNMENT", 'B', 'mind', 'both', 4, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
     add("CLIMB", 'B', 'mind', 'both', 4, effect=_climb_effect, defense=_climb_defense)
-    add("FRACTURE", 'B', 'mind', 'ranged', 4, damage=_fracture_dmg)
+    add("FRACTURE", 'B', 'mind', 'ranged', 4, damage=_fracture_dmg, effect=_fracture_effect)
+    add("TRACE", 'B', 'mind', 'ranged', 4, damage=_trace_dmg, defense=_trace_defense)
     # Frost — Green
     add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
         defense=_twin_strike_defense)   # def buffs next ally (team play)
@@ -726,7 +792,7 @@ def build_cards():
         effect=_paradox_effect, defense=_paradox_defense, special_reveal='paradox')
     add("ALIGN", 'B', 'mind', 'ranged', 4,
         effect=_align_effect, defense=_align_defense)
-    add("ANTICIPATE", 'B', 'mind', 'melee', 4, defense=_anticipate_defense)   # effect DEAD (info)
+    add("ANTICIPATE", 'B', 'mind', 'melee', 4, effect=_anticipate_effect, defense=_anticipate_defense)
     # Steele — Green
     add("RENEWAL", 'G', 'soul', 'both', 4,
         effect=_renewal_effect, defense=_renewal_defense)   # effect heals allies (team play)
@@ -748,6 +814,7 @@ def build_cards():
     # Mire — Blue
     add("PARTITION", 'B', 'mind', 'both', 2,
         effect=_partition_effect, defense=_partition_defense)
+    add("UNNAME", 'B', 'mind', 'both', 2, effect=_unname_effect, defense=_unname_defense)
     add("TAINT", 'B', 'mind', 'ranged', 2,
         effect=_taint_effect, defense=_taint_defense)
     add("ERODE", 'B', 'mind', 'both', 4,
@@ -802,7 +869,7 @@ def build_cards():
         effect=_stillness_effect, defense=_stillness_defense)
     add("PREDICT", 'B', 'mind', 'melee', 6)   # Sealed unmodeled — no item-usage mechanic exists in the sim
     add("FOCUS", 'B', 'mind', 'both', 4, effect=_focus_effect, defense=_focus_defense)
-    add("UNDERSTANDING", 'B', 'mind', 'both', 4,
+    add("UNDERSTANDING", 'B', 'mind', 'both', 6,
         damage=_understanding_dmg, defense=_understanding_defense)
     add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'both', 4, defense=_weathered_defense)  # effect DEAD (delayed trigger)

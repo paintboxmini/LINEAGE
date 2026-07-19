@@ -33,7 +33,7 @@ class TeamTactician(ScryMixin):
 
     def _pick_target(self, battle, me):
         forced = getattr(me, '_forced_target', None)
-        if forced is not None and not forced.collapsed:
+        if forced is not None and not forced.collapsed and not forced._partition_shield:
             return forced
         # Team plan (Drew): pick a target at random and pile on — stay locked
         # while they're still standing. The instant they collapse, the lock
@@ -41,9 +41,11 @@ class TeamTactician(ScryMixin):
         # in play (including the one who just went down — they're back in
         # the pool, not specially hunted or specially spared).
         cur = battle.team_target.get(me.team)
-        if cur is not None and not cur.collapsed and not cur.is_dead:
+        if cur is not None and not cur.collapsed and not cur.is_dead and not cur._partition_shield:
             return cur
-        pool = battle.targetable(me)
+        pool = [c for c in battle.targetable(me) if not c._partition_shield]
+        if not pool:
+            pool = battle.targetable(me)   # everyone shielded somehow — fall back rather than stall
         if not pool:
             return None
         pick = battle.rng.choice(pool)

@@ -285,6 +285,10 @@ class Combatant:
         self.next_attack_bonus = 0
         self.cannot_defend = False       # (unused by these decks, reserved)
         self.ongoing = []               # list of dicts: {'kind':..., ...}
+        self._anticipating = False       # ANTICIPATE: draw before defending, until my next turn
+        self._no_defensive_bonus = False # UNNAME: defensive bonuses don't trigger, until my next turn
+        self._partition_shield = False   # PARTITION: can't be targeted by an attack, until caster's next turn
+        self._partition_shield_target = None  # PARTITION (caster side): who I shielded, to clear on my next turn
 
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
@@ -521,6 +525,10 @@ class Duel:
         was_staggered = defender.staggered
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+            if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
+                c = defender.draw_one(self.rng)
+                if c:
+                    defender.hand.append(c)
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None:
                 # enforce Axiom ban on the reveal
@@ -567,7 +575,8 @@ class Duel:
             # rules/combat.md) and is unset again right after so it can't
             # leak into a later attack that doesn't ask for it.
             attacker._redirect_dmg = card.damage(self, attacker, defender)
-            def_card.defense(self, defender, attacker)
+            if not defender._no_defensive_bonus:   # UNNAME
+                def_card.defense(self, defender, attacker)
             attacker._redirect_dmg = None
         else:  # tie
             self._say("  -> tie")
@@ -577,7 +586,8 @@ class Duel:
             attacker._tie = True
             card.effect(self, attacker, defender)
             attacker._tie = False
-            def_card.defense(self, defender, attacker)
+            if not defender._no_defensive_bonus:   # UNNAME
+                def_card.defense(self, defender, attacker)
         defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
@@ -666,6 +676,12 @@ class Duel:
     def take_turn(self, who, foe):
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
+        who._anticipating = False        # ANTICIPATE, UNNAME: self-clearing, "until my next turn"
+        who._no_defensive_bonus = False
+        shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
+        if shielded is not None:
+            shielded._partition_shield = False
+            who._partition_shield_target = None
         who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
         who._attacked_this = False
         if who._shift_skip or who.skip_turns > 0:
