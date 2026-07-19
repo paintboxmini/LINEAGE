@@ -122,8 +122,8 @@ Prioritize clarity over cleverness. Prefer system-consistent solutions over nove
 Dependent systems (sim, print sheets, cross-references) do not rebuild on every keystroke. Like a compiler, let them go stale and sync deliberately:
 
 - **Working** (default) — edit the target files only. Record stale dependents under **Pending propagation** at the top of `memory.md` instead of rebuilding them per change.
-- **Sync** — on request or at a natural pause: propagate pending changes through dependents (sim reconciliation, print regeneration, reference sweeps), then clear the ledger.
-- **Release** — full verification: acceptance tests, print sheets regenerated, the combat simulator reconciled against current canon, ledger empty.
+- **Sync** — on request or at a natural pause: propagate pending changes through dependents (sim reconciliation, print regeneration, reference sweeps), clear the ledger, and clear `memory.md`'s **Recently shipped** queue once its entries have actually been looked over — that section is meant to be ephemeral, not a permanent log.
+- **Release** — full verification: acceptance tests, print sheets regenerated, the combat simulator reconciled against current canon, ledger empty. Also the right cadence for a full `memory.md` audit — checking its standing entries against live canon and archiving what's since been duplicated or resolved (`archives/`, untouched, not deleted) — since that's expensive enough (multi-pass verification against the whole repo) not to run at every ordinary Sync.
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 
