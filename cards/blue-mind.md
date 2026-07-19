@@ -186,7 +186,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Move to frontline or backline (your choice)
-Defensive Bonus: All allies may draw 1 card and lose 2 HP
+Defensive Bonus: All allies gain Quick
 Range: Both
 *"Reality rearranges for those who see its hidden geometry."*
 
@@ -206,7 +206,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Defender discards 1 card
-Defensive Bonus: Exile the attacker's card until end of combat
+Defensive Bonus: Exile the attacker's card until end of combat. Only on a clean win — not a tie.
 Range: Ranged
 *"Some knowledge is too dangerous to remember."*
 
@@ -226,7 +226,7 @@ Range: Both
 **CLIMB**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Look at the bottom 2 cards of your deck. Place any of them on top in any order.
+Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
 Defensive Bonus: Your maximum hand size increases by 1 until the end of this combat
 Range: Both
 *"The higher you rise, the farther you see."*
@@ -237,7 +237,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d2
 Effect: Gain Evade.
-Defensive Bonus: You may move to the backline
+Defensive Bonus: You may change position
 Range: Both
 *"You struck the possibility, not the outcome."*
 
@@ -246,8 +246,8 @@ Range: Both
 **ERODE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target loses 1 Soul permanently this combat.
-Defensive Bonus: Target loses 1 Soul permanently this combat.
+Effect: Defender loses 1 Soul permanently this combat.
+Defensive Bonus: Attacker loses 1 Soul permanently this combat.
 Range: Both
 *"Understanding something completely is the first step to unmaking it."*
 
@@ -256,8 +256,8 @@ Range: Both
 **TAINT**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Shuffle 1 Injury into target's deck. If they already have an Injury in deck, shuffle 2.
-Defensive Bonus: Destroy 1 Injury in your hand or discard pile.
+Effect: Add 1 Injury to the bottom of the defender's deck.
+Defensive Bonus: Add 1 Injury to the bottom of the attacker's deck.
 Range: Ranged
 *"Some damage is architecture."*
 

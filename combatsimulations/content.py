@@ -93,6 +93,20 @@ def _deflect_defense(engine, me, foe):
 
 def _realignment_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
+# Defensive Bonus ("All allies gain Quick") left unmodeled — Quick itself has
+# never been implemented anywhere in the sim (only one card, MIRROR STEP, has
+# ever granted it, and its own Defensive Bonus is unmodeled for the same
+# reason). Needs the mechanic built once, not per-card.
+
+
+def _climb_effect(engine, me, foe):
+    n = min(2, len(me.deck))
+    bottom = [me.deck.pop(0) for _ in range(n)]   # index 0 = bottom (deck.pop() draws the end = top)
+    for c in bottom:
+        if c.is_status:
+            me.discard.append(c)    # bury the Injury properly rather than hand it back the top
+        else:
+            me.deck.append(c)       # place on top (append = top, drawn next)
 
 
 def _climb_defense(engine, me, foe):
@@ -110,6 +124,11 @@ def _forget_effect(engine, me, foe):
 
 
 def _forget_defense(engine, me, foe):
+    # Only on a clean win, never a tie — `foe._redirect_dmg` is set by attack()
+    # only on a genuine defender-win right before defense() fires (same signal
+    # REFRACT's defense uses), and is None on a tie.
+    if getattr(foe, '_redirect_dmg', None) is None:
+        return
     # exile the attacker's just-played card (top of their discard)
     if foe.discard:
         foe.exile.append(foe.discard.pop())
@@ -329,18 +348,21 @@ def _partition_defense(engine, me, foe):
 def _taint_effect(engine, me, foe):
     if warded(foe):   # Injury infliction is a debuff
         return
-    if foe.injuries_visible() > 0:
-        engine.insert_injury(foe)
-        engine.insert_injury(foe)
-    else:
-        engine.insert_injury(foe)
+    engine.insert_injury(foe)
 
 
 def _taint_defense(engine, me, foe):
-    remove_injuries(me, 1)
+    if warded(foe):   # foe = attacker here; Injury infliction is a debuff either direction
+        return
+    engine.insert_injury(foe)
 
 
 def _erode_effect(engine, me, foe):
+    # Registered as both effect= and defense= below. `foe` means "the other
+    # combatant" in both calling conventions — the defender during Effect,
+    # the attacker during a Defensive Bonus — so this one function already
+    # correctly drains whichever of them the card text calls for without
+    # needing two copies.
     if not warded(foe):
         foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body); no self-cost
 
@@ -672,8 +694,8 @@ def build_cards():
     add("AXIOM", 'B', 'mind', 'both', 2, effect=_axiom_effect, defense=_axiom_defense)
     add("DEFLECT", 'B', 'mind', 'melee', 4,
         effect=_deflect_effect, defense=_deflect_defense)
-    add("REALIGNMENT", 'B', 'mind', 'both', 4, effect=_realignment_effect)  # def DEAD (allies)
-    add("CLIMB", 'B', 'mind', 'both', 4, defense=_climb_defense)            # effect ~ deck-order, DEAD
+    add("REALIGNMENT", 'B', 'mind', 'both', 4, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
+    add("CLIMB", 'B', 'mind', 'both', 4, effect=_climb_effect, defense=_climb_defense)
     add("FRACTURE", 'B', 'mind', 'ranged', 4, damage=_fracture_dmg)
     # Frost — Green
     add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
