@@ -4,6 +4,19 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut during Drew's full card review pass
+
+**SEED**
+GREEN — SOUL
+Attack: Soul + d2
+Effect: Exile 1 card from your hand. Deal its damage in retaliation the next time you are damaged by an attack from the defender.
+Defensive Bonus: Exile 1 card from your discard.
+Range: Both
+*"What appears lost may simply be waiting for the right season."*
+*Cut: Removed from `cards/green-soul.md` by Drew, no reason stated beyond wanting it gone — name and flavor kept for reuse per his explicit request.*
+
+---
+
 ## Borrower — Hollow (mediation arc Oracle reward)
 
 **SHORE UP**

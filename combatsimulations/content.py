@@ -273,31 +273,19 @@ def _renewal_effect(engine, me, foe):
 
 
 def _renewal_defense(engine, me, foe):
-    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]  # discard a real card
-    if reals:
-        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
+    downed = engine.downed_allies(me)
+    if downed:
+        engine.heal(downed[0], 6, source=me)   # revival heal — source= places them right after me in the wheel
 
 
 def _twin_strike_defense(engine, me, foe):
-    for a in engine.allies(me):    # next ally gains Deadly (ally-only: no self)
-        a.deadly += 1
+    foe.weak += 1   # foe = attacker here
 
 
 # ==================== MIRE (Injury-attrition, 3/3/3) ==========================
 # A control deck built on shuffling Injuries into the opponent's deck (Rend,
 # Taint), then cashing them in (Press the Injury), plus combat-long stat erosion
 # (Wither -Body, Erode -Soul). Perfectly balanced 3R/3B/3G across the RPS wheel.
-
-def _has_color(hand, color):
-    return any(c.color == color and not c.is_status for c in hand)
-
-
-def _discard_one_color(engine, me, color):
-    for i, c in enumerate(me.hand):
-        if c.color == color and not c.is_status:
-            me.discard.append(me.hand.pop(i))
-            return True
-    return False
 
 
 def remove_injuries(target, n=None):
@@ -317,21 +305,15 @@ def remove_injuries(target, n=None):
 
 # --- Green ---
 def _balance_effect(engine, me, foe):
-    if _has_color(me.hand, 'B') and _has_color(me.hand, 'R'):
-        _discard_one_color(engine, me, 'B')
-        _discard_one_color(engine, me, 'R')
-        engine.deal(foe, me.eff('soul') + roll(4, engine.rng))  # second hit
-        engine._say(f"    BALANCE triggers twice")
+    if me.hand:
+        me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
+        foe.staggered = True
 
 
 def _balance_defense(engine, me, foe):
-    if _has_color(me.hand, 'B') and _has_color(me.hand, 'R'):
-        _discard_one_color(engine, me, 'B')
-        _discard_one_color(engine, me, 'R')
-        foe.skip_turns += 1  # knocked down: must spend an action to stand
-        RULING("balance-knockdown",
-               "BALANCE def 'knock down (requires an Action to stand)' is modeled "
-               "as the foe losing their next action to stand up.")
+    if me.hand:
+        me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
+        foe.staggered = True   # foe = attacker here
 
 
 def _wither_effect(engine, me, foe):
@@ -449,13 +431,14 @@ def _resonate_defense(engine, me, foe):
 def _support_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
     if a:
-        a.deadly += 1                     # next ally to attack gains Deadly
+        a.deadly += 1                     # target ally gains Deadly
 def _support_defense(engine, me, foe):
-    allies = engine.allies(me)
-    if allies:
-        c = allies[0].draw_one(engine.rng)
-        if c:
-            allies[0].hand.append(c)      # 1 ally draws 1
+    a = _best_attacker(engine.allies(me))
+    if a:
+        for _ in range(2):                # target ally draws 2
+            c = a.draw_one(engine.rng)
+            if c:
+                a.hand.append(c)
 
 
 
@@ -463,17 +446,16 @@ def _support_defense(engine, me, foe):
 def _witness_effect(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
-        engine.heal(a, 3, source=me)
+        engine.heal(a, 6, source=me)
 def _witness_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
-        engine.heal(a, 3, source=me)
+        engine.heal(a, 6, source=me)
 
 
 def _shared_burden_effect(engine, me, foe):
-    a = _most_hurt(engine.allies(me))
-    if a:
-        a._damage_redirect = me           # next hit on that ally lands on me instead
+    me._fortress = True
+    me.evade += 1
 def _shared_burden_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
@@ -625,15 +607,21 @@ def _slipstream_effect(engine, me, foe):
     # itself, and that it's correctly cleared on Collapse (_clear_ongoing_on_collapse).
     me.ongoing.append({'kind': 'slipstream', 'owner': me, 'anchor': me.position})
 
-def _rooted_oath_effect(engine, me, foe):
-    me.ongoing.append({'kind': 'rooted_oath', 'owner': me, 'anchor': me.position})
-def _rooted_oath_defense(engine, me, foe):
-    pool = [a for a in engine.allies(me) if a.position == me.position] or [me]
-    engine.heal(min(pool, key=lambda a: a.hp), 3, source=me)
+def _dig_in_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'dig_in', 'owner': me, 'anchor': me.position})
+_dig_in_defense = _dig_in_effect   # same text both sides
 
-def _urgency_effect(engine, me, foe):
+def _rooted_oath_effect(engine, me, foe):
     a = _best_attacker(engine.allies(me))
     if a:
+        me.ongoing.append({'kind': 'rooted_oath', 'owner': me, 'anchor': me.position, 'target': a})
+def _rooted_oath_defense(engine, me, foe):
+    a = _best_attacker(engine.allies(me))
+    if a:
+        me.ongoing.append({'kind': 'rooted_oath_def', 'owner': me, 'anchor': me.position, 'target': a})
+
+def _urgency_effect(engine, me, foe):
+    for a in engine.allies(me):
         engine.initiative_shift(a, 1)
 def _urgency_defense(engine, me, foe):
     engine.initiative_shift(me, 1)          # the "-1 to the attacker" choice is unmodeled
@@ -654,11 +642,59 @@ def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
         c.position = 'backline' if c.position == 'frontline' else 'frontline'
 
+def _adapt_defense(engine, me, foe):
+    me.evade += 1
+# ADAPT's Effect ("instead of a tie, you win") is handled in rps() by card
+# name, not here — see engine.py's Duel.rps() / team_engine.py's Battle._rps().
+
+# VOID's Effect ("Defender gains Sealed") unmodeled — no item-usage mechanic
+# exists in the sim, same treatment as PREDICT/DISTRACT.
+def _void_defense(engine, me, foe):
+    reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
+    if reals:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
+
+def _acceptance_effect(engine, me, foe):
+    n = len(me.hand)
+    if n:
+        me.discard.extend(me.hand)
+        me.hand = []
+        for _ in range(n):
+            c = me.draw_one(engine.rng)
+            if c:
+                me.hand.append(c)
+def _acceptance_defense(engine, me, foe):
+    # "move position or gain Initiative Shift +1" simplified to the shift for
+    # every ally — the choice a bot can't get wrong, unlike a reposition that
+    # might walk an ally into worse range legality.
+    for a in engine.allies(me):
+        engine.initiative_shift(a, 1)
+
+def _field_medicine_effect(engine, me, foe):
+    allies = engine.allies(me)
+    if not allies:
+        return
+    a = max(allies, key=lambda x: x.injuries_visible())
+    if a.injuries_visible() > 0:
+        remove_injuries(a)
+        engine.heal(a, 3, source=me)
+def _field_medicine_defense(engine, me, foe):
+    if me.injuries_visible() > 0:
+        remove_injuries(me)
+    engine.heal(me, 3)
+
+def _dead_reckoning_effect(engine, me, foe):
+    foe.weak += 1
+def _dead_reckoning_defense(engine, me, foe):
+    foe.blind += 1
+
 def _patience_dmg(engine, me, foe):
     bonus = 0 if getattr(me, '_attacked_last', False) else 4   # +4 if you waited
     return me.eff('soul') + roll(4, engine.rng) + bonus
 def _patience_defense(engine, me, foe):
-    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    a = _most_hurt(engine.allies(me))
+    if a:
+        me.ongoing.append({'kind': 'patience_def', 'owner': me, 'anchor': me.position, 'target': a})
 
 
 # ==================== Missing simple core cards (Patient Host deck-fill) =====
@@ -777,7 +813,7 @@ def build_cards():
     add("TRACE", 'B', 'mind', 'ranged', 4, damage=_trace_dmg, defense=_trace_defense)
     # Frost — Green
     add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
-        defense=_twin_strike_defense)   # def buffs next ally (team play)
+        defense=_twin_strike_defense)
 
     # Steele — Red
     add("BLOOD TITHE", 'R', 'body', 'both', 4,
@@ -798,11 +834,11 @@ def build_cards():
         effect=_align_effect, defense=_align_defense)
     add("ANTICIPATE", 'B', 'mind', 'melee', 4, effect=_anticipate_effect, defense=_anticipate_defense)
     # Steele — Green
-    add("RENEWAL", 'G', 'soul', 'both', 4,
-        effect=_renewal_effect, defense=_renewal_defense)   # effect heals allies (team play)
+    add("RENEWAL", 'G', 'soul', 'both', 2,
+        effect=_renewal_effect, defense=_renewal_defense)
 
     # Mire — Green
-    add("BALANCE", 'G', 'soul', 'ranged', 4,
+    add("BALANCE", 'G', 'soul', 'ranged', 2,
         effect=_balance_effect, defense=_balance_defense)
     add("WITHER", 'G', 'soul', 'both', 4,
         effect=_wither_effect, defense=_wither_effect)
@@ -814,6 +850,7 @@ def build_cards():
     add("EQUAL FOOTING", 'R', 'body', 'both', 2)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
     add("PRESS THE INJURY", 'R', 'body', 'melee', 4,
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
+    add("DIG IN", 'R', 'body', 'melee', 2, effect=_dig_in_effect, defense=_dig_in_defense)
     # Mire — Blue
     add("PARTITION", 'B', 'mind', 'both', 2,
         effect=_partition_effect, defense=_partition_defense)
@@ -829,7 +866,7 @@ def build_cards():
         effect=_resonate_effect, defense=_resonate_defense)
     add("SUPPORT", 'G', 'soul', 'ranged', 4,
         effect=_support_effect, defense=_support_defense)
-    add("WITNESS", 'G', 'soul', 'melee', 4,
+    add("WITNESS", 'G', 'soul', 'melee', 2,
         effect=_witness_effect, defense=_witness_defense)
     add("SHARED BURDEN", 'G', 'soul', 'both', 6,
         effect=_shared_burden_effect, defense=_shared_burden_defense)
@@ -881,8 +918,15 @@ def build_cards():
     add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
+    add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)
+    add("VOID", 'G', 'soul', 'melee', 4, defense=_void_defense)
+    add("ACCEPTANCE", 'G', 'soul', 'both', 4, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 2,
         effect=_shade_away_effect, defense=_shade_away_defense)
+    add("DEAD RECKONING", 'G', 'soul', 'both', 4,
+        effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
+    add("FIELD MEDICINE", 'G', 'soul', 'ranged', 2,
+        effect=_field_medicine_effect, defense=_field_medicine_defense)
 
     # The Patient Host — boss signature cards
     add("YOUR TURN WILL COME", 'G', 'soul', 'ranged', 4,

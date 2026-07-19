@@ -5,7 +5,7 @@
 **MIRROR STEP**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: You and target both move positions
+Effect: You and defender both move positions
 Defensive Bonus: Allies gain 1 Quick (move position without spending your action on your next turn)
 Range: Both
 *"Change the field, change the fight."*
@@ -15,8 +15,8 @@ Range: Both
 **SUPPORT**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Next ally to attack gains Deadly
-Defensive Bonus: 1 ally draws 1 card
+Effect: Target ally gains Deadly
+Defensive Bonus: Target ally draws 2
 Range: Ranged
 *"Strength flows to those who share it."*
 
@@ -25,7 +25,7 @@ Range: Ranged
 **ADAPT**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: This card counts as all colors and elements (for damage only)
+Effect: Instead of a tie, you win
 Defensive Bonus: Gain Evade
 Range: Both
 *"Wise water takes the shape of its container."*
@@ -66,7 +66,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d4
 Effect: If you did not attack last turn, deal +4 damage
-Defensive Bonus: Move to any position
+Defensive Bonus: Anchored — Target ally heals 3 HP
 Range: Melee
 *"The Edge reveals itself to those who wait."*
 
@@ -74,9 +74,9 @@ Range: Melee
 
 **WITNESS**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: Next ally to successfully defend before your next turn heals 3 HP. A tie counts as a successful defense.
-Defensive Bonus: Target ally heals 3 HP
+Attack: Soul + d2
+Effect: Target ally heals 6 HP
+Defensive Bonus: Target ally heals 6 HP
 Range: Melee
 *"What is witnessed is what endures."*
 
@@ -85,7 +85,7 @@ Range: Melee
 **URGENCY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Apply Initiative Shift +1 to target ally
+Effect: Apply Initiative Shift +1 to all allies
 Defensive Bonus: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Melee
 *"The tide waits for those who know when to flow."*
@@ -114,38 +114,18 @@ Range: Both
 
 **BALANCE**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: You may discard 1 Mind card and 1 Body card to trigger this attack twice
-Defensive Bonus: You may discard 1 Mind card and 1 Body card to knock an enemy down (requires an Action to stand)
+Attack: Soul + d2
+Effect: Discard 1 to Stagger the defender
+Defensive Bonus: Discard 1 to Stagger the attacker
 Range: Ranged
 *"Balance does not divide — it multiplies."*
-
----
-
-**SILENCE THE THREAD**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Exile 1 card from your discard pile
-Defensive Bonus: Exile 1 ongoing effect card
-Range: Both
-*"The world reveals its rules in silence."*
-
----
-
-**SCRIPTURE OF ECHOES**
-GREEN — SOUL
-Attack: Soul + d2
-Effect: Attacker and defender discard 1 random card each. If they are different colors, you heal 4 HP.
-Defensive Bonus: Target ally may discard 1 Soul card to heal 4
-Range: Ranged
-*"The system remembers who pays attention."*
 
 ---
 
 **VOID**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Negate the next time the target would gain HP
+Effect: Defender gains Sealed
 Defensive Bonus: Attacker discards 1 card at random
 Range: Melee
 *"Even emptiness has its own terrible weight."*
@@ -156,7 +136,7 @@ Range: Melee
 GREEN — SOUL
 Attack: (Soul + d2) x 2
 Effect: None
-Defensive Bonus: Next ally to attack gains Deadly
+Defensive Bonus: Target enemy gains Weak
 Range: Melee
 *"The river splits but remembers it is one water."*
 
@@ -164,9 +144,9 @@ Range: Melee
 
 **RENEWAL**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d2
 Effect: All allies may discard 1 card then draw 1, or heal 2
-Defensive Bonus: Attacker discards 1 at random
+Defensive Bonus: Target Collapsed ally heals 6 HP
 Range: Both
 *"At the edge of becoming, all possibilities whisper their names."*
 
@@ -175,20 +155,10 @@ Range: Both
 **ACCEPTANCE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target ally may discard their hand, then draws that many cards
-Defensive Bonus: All allies may discard 1 card to move positions
+Effect: You may discard your hand, then draw that many cards
+Defensive Bonus: All allies may move position or gain Initiative Shift +1
 Range: Both
 *"Those who surrender their plans find paths they never imagined."*
-
----
-
-**SEED**
-GREEN — SOUL
-Attack: Soul + d2
-Effect: Exile 1 card from your hand. Deal its damage in retaliation the next time you are damaged by an attack from the defender.
-Defensive Bonus: Exile 1 card from your discard.
-Range: Both
-*"What appears lost may simply be waiting for the right season."*
 
 ---
 
@@ -205,7 +175,7 @@ Range: Melee
 **SHARED BURDEN**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: The next time target ally takes attack damage, you take the damage instead.
+Effect: Gain Fortress and Evade
 Defensive Bonus: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
 *"What I cannot bear alone, we endure together."*
@@ -225,8 +195,8 @@ Range: Melee
 **ROOTED OATH**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Anchored — At the start of your turn one ally gains +2 damage on their next attack this turn.
-Defensive Bonus: One ally in your position gains 3 HP.
+Effect: Anchored — Target ally gains Deadly.
+Defensive Bonus: Anchored — Target ally gains Resist.
 Range: Both
 *"What I refuse to abandon, strengthens us all."*
 
@@ -255,7 +225,7 @@ Range: Both
 **MOCKERY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Apply Initiative Shift -2 to target
+Effect: Apply Initiative Shift -2 to defender
 Defensive Bonus: Target must attack you if able on their next turn
 Range: Both
 *"You say the one thing they cannot ignore."*
@@ -275,8 +245,8 @@ Range: Both
 **FIELD MEDICINE**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Destroy 1 Injury in target ally's hand or discard pile. That ally heals 3 HP.
-Defensive Bonus: Destroy all Injuries in your hand and discard pile.
+Effect: Remove all Injuries from target ally's hand and discard pile. They heal 3 HP.
+Defensive Bonus: Remove all Injuries in your hand and discard pile. Heal 3 HP.
 Range: Ranged
 *"Not healed. Held together."*
 
@@ -285,7 +255,7 @@ Range: Ranged
 **DEAD RECKONING**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Scry 2.
+Effect: Defender gains Weak.
 Defensive Bonus: Attacker gains Blind.
 Range: Both
 *"You came in loud. You'll leave in the dark."*

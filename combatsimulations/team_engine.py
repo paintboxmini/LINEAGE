@@ -51,6 +51,13 @@ class Battle:
     def allies(self, me):
         return [c for c in self.teams[me.team] if c is not me and not c.collapsed]
 
+    def downed_allies(self, me):
+        """Collapsed-but-not-dead allies — for RENEWAL's revival heal. A
+        separate pool from allies() deliberately, same reasoning as
+        targetable(): ordinary ally-targeting should never see a Collapsed
+        teammate, but a card written specifically to revive one needs to."""
+        return [c for c in self.teams[me.team] if c is not me and c.collapsed and not c.is_dead]
+
     def enemies(self, me):
         return [c for c in self.teams[1 - me.team] if not c.collapsed]
 
@@ -174,6 +181,19 @@ class Battle:
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
 
+        # Blind resolves before Evade (rules/card-glossary.md, Blind) — see
+        # engine.py's Duel.attack() for the full reasoning and the noted
+        # simplification (stack consumed on next attack, no wall-clock expiry).
+        if attacker.blind > 0:
+            attacker.blind -= 1
+            if roll(2, self.rng) == 1:
+                self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
+                self._say(f"  {attacker.name} is BLIND — attack fails entirely")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1
+                return
+
         was_staggered = defender.staggered
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
@@ -244,14 +264,15 @@ class Battle:
         if (atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox') \
                 and base != 'tie':
             base = 'defender' if base == 'attacker' else 'attacker'
-        # EQUAL FOOTING: "instead of a tie, you win" — see engine.py's Duel.rps()
-        # for the reasoning; both sides playing it cancels out, stays a tie.
+        # "Instead of a tie, you win" — see engine.py's Duel.rps() for the full
+        # reasoning. EQUAL FOOTING works either side; ADAPT is Effect-only, so
+        # it only ever counts on the attacker side. Both-sided claims cancel out.
         if base == 'tie':
-            atk_eq = atk_card.name == 'EQUAL FOOTING'
-            def_eq = def_card.name == 'EQUAL FOOTING'
-            if atk_eq and not def_eq:
+            atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
+            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
-            elif def_eq and not atk_eq:
+            elif def_wins_tie and not atk_wins_tie:
                 base = 'defender'
         return base
 

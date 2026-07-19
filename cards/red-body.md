@@ -265,8 +265,8 @@ Range: Both
 **DIG IN**
 RED — BODY
 Attack: Body + d2
-Effect: Anchored — At the start of your turn, your attacks deal +2 damage.
-Defensive Bonus: Anchored — Gain Resist 1 while you remain in position.
+Effect: Anchored — Gain Resist 1.
+Defensive Bonus: Anchored — Gain Resist 1.
 Range: Melee
 *"Hold the line. Make them break first."*
 
@@ -295,7 +295,7 @@ Range: Both
 **PRESS THE INJURY**
 RED — BODY
 Attack: Body + d4
-Effect: Deal +2 damage for each Injury in defender's hand and discard pile.
+Effect: The defender announces how many Injuries they have in hand and discard pile, rather than revealing their hand. Deal +2 damage for each.
 Defensive Bonus: Heal 2 HP for each Injury in your hand and discard pile. Then destroy them.
 Range: Melee
 *"It was always going to end here."*

@@ -81,11 +81,20 @@ def _ongoing_support_tick(engine, who):
                 engine.heal(a, 1, source=who)
         elif o['kind'] == 'ledger' and who.position == o.get('anchor', who.position):
             engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
+        elif o['kind'] == 'dig_in' and who.position == o.get('anchor', who.position):
+            who.resist += 1
         elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
-            allies = engine.allies(who)
-            if allies:                     # ally-only: no self-fallback (green revert)
-                max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul'))
-                    ).next_attack_bonus += 2
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                a.deadly += 1
+        elif o['kind'] == 'rooted_oath_def' and who.position == o.get('anchor', who.position):
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                a.resist += 1
+        elif o['kind'] == 'patience_def' and who.position == o.get('anchor', who.position):
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                engine.heal(a, 3, source=who)
 
 
 def _apply_shift(engine, queue, target, amount):
@@ -296,6 +305,7 @@ class Combatant:
         self.deadly = 0
         self.weak = 0
         self.thorns = 0
+        self.blind = 0
         self.staggered = False
         self.rooted = False
         self.ward = False
@@ -434,6 +444,9 @@ class Duel:
     def allies(self, me):
         return []
 
+    def downed_allies(self, me):
+        return []   # no allies in a 1v1 — RENEWAL's revival heal stays a no-op here too
+
     def enemies(self, me):
         foe = self.other(me)
         return [] if foe.collapsed else [foe]
@@ -523,6 +536,22 @@ class Duel:
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
+
+        # Blind resolves before Evade (rules/card-glossary.md, Blind) — it's
+        # the ATTACKER's own stack, checked on their own attack, before the
+        # defender's Evade ever gets a say. Simplification, noted: modeled as
+        # a stack consumed on the next attack, same shape as Evade; the "or
+        # expires at the end of your next turn even if unused" wall-clock
+        # nuance isn't tracked.
+        if attacker.blind > 0:
+            attacker.blind -= 1
+            if roll(2, self.rng) == 1:
+                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"  {attacker.name} is BLIND — attack fails entirely")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1
+                return
 
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
@@ -620,16 +649,18 @@ class Duel:
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
                 base = 'defender' if base == 'attacker' else 'attacker'
-        # EQUAL FOOTING: "instead of a tie, you win" — checked by name, not a
-        # keyword, since only this card does it. If both sides played it,
-        # neither claim wins out; stays a tie (same logic as rules/combat.md's
-        # Simultaneous Effects: no clear order, resolve as a tie).
+        # "Instead of a tie, you win" — checked by name, not a keyword, since
+        # only these cards do it. EQUAL FOOTING works from either side; ADAPT's
+        # is Effect-only (Drew: "ADAPT effect: win on ties" — its Defensive
+        # Bonus stays Gain Evade), so it only ever counts on the attacker side.
+        # If both sides have a live claim, neither wins out — stays a tie, same
+        # logic as rules/combat.md's Simultaneous Effects (no clear order).
         if base == 'tie':
-            atk_eq = atk_card.name == 'EQUAL FOOTING'
-            def_eq = def_card.name == 'EQUAL FOOTING'
-            if atk_eq and not def_eq:
+            atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
+            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
-            elif def_eq and not atk_eq:
+            elif def_wins_tie and not atk_wins_tie:
                 base = 'defender'
         return base
 
