@@ -159,3 +159,4 @@ Every Authority 1/2 ship gets one line under **Recently shipped** at the top of 
 - Create files outside the established directory structure without asking
 - Use emoji in files
 - Write a fact's own justification into canon text. A location or creature file states what is — geography, behavior, appearance — not why it must be that way. Reasoning belongs in `memory.md`'s threshold log, where the before-state and the "why" are the whole point; a content file explaining itself is reasoning that leaked out of process and into product
+- Use specific distances in bestiary or quest content — combat is abstract positioning (Frontline/Backline) and "in reach / close / far," never measured distance
