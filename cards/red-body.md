@@ -94,9 +94,9 @@ Range: Both
 
 **RALLY**
 RED — BODY
-Attack: Body + d4
-Effect: Allies in Frontline gain Deadly
-Defensive Bonus: All allies in Backline gain Deadly
+Attack: Body + d2
+Effect: Pay 5 HP, all allies in Frontline gain Deadly
+Defensive Bonus: Pay 5 HP, all allies in the Backline gain Deadly
 Range: Both
 *"Blood shared is strength doubled."*
 
@@ -105,7 +105,7 @@ Range: Both
 **WEATHERED**
 RED — BODY
 Attack: Body + d4
-Effect: If you are attacked before your next turn, gain +2 HP
+Effect: Each time you are attacked before your next turn, heal 2 HP
 Defensive Bonus: Prevent next debuff
 Range: Both
 *"What doesn't break you, builds you."*
@@ -114,9 +114,9 @@ Range: Both
 
 **INTERCEPT**
 RED — BODY
-Attack: Body + d4
-Effect: The next time an ally is attacked, redirect it to you to defend.
-Defensive Bonus: All allies gain 2 HP
+Attack: Body + d2
+Effect: Gain Fortress and Resist 2
+Defensive Bonus: Gain Fortress and Resist 2
 Range: Melee
 *"Stand between the storm and what you protect."*
 
@@ -135,8 +135,8 @@ Range: Both
 **BLOOD IN THE GAP**
 RED — BODY
 Attack: Body + d2
-Effect: Steal 1 HP from each enemy
-Defensive Bonus: If you are damaged before your next turn, steal 2 HP each time
+Effect: Lifesteal
+Defensive Bonus: Gain Thorns 1
 Range: Ranged
 *"Where pressure gathers, strength follows."*
 
@@ -164,9 +164,9 @@ Range: Both
 
 **SACRIFICE STRIKE**
 RED — BODY
-Attack: Body + d8
-Effect: Pay 2 HP
-Defensive Bonus: Pay 2 HP, deal 1d8 damage to attacker
+Attack: Body + d10
+Effect: Pay 3 HP
+Defensive Bonus: Pay 5 HP, Counter Attack
 Range: Melee
 *"Pain shared is power doubled."*
 
@@ -185,8 +185,8 @@ Range: Melee
 **BLOOD TITHE**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 2 damage to yourself, heal an ally for 4 HP
-Defensive Bonus: Heal an ally for 2 HP
+Effect: Pay 2 HP, target ally heals 4 HP
+Defensive Bonus: Pay 2 HP, target ally heals 6 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 
@@ -204,9 +204,9 @@ Range: Melee
 
 **EQUAL FOOTING**
 RED — BODY
-Attack: Body + d4
-Effect: If defender is in the same position as you, deal +2 damage
-Defensive Bonus: The next attack cannot reduce you below the attacker's current HP (removed by any attack, successful or not)
+Attack: Body + d2
+Effect: Instead of a tie, you win
+Defensive Bonus: Instead of a tie, you win
 Range: Both
 *"Balance does not favor the loud."*
 
@@ -216,7 +216,7 @@ Range: Both
 RED — BODY
 Attack: Body + d6
 Effect: Exile 1 card from your hand. Deal +2 damage this attack.
-Defensive Bonus: Exile up to 2 cards from your discard pile.
+Defensive Bonus: Exile 1 card from your discard pile.
 Range: Ranged
 *"Some flames consume themselves to burn hotter."*
 
@@ -235,8 +235,8 @@ Range: Both
 **BREAK**
 RED — BODY
 Attack: Body + d4
-Effect: If the defender revealed a card, discard 1 random card from their hand.
-Defensive Bonus: Counter attack, melee only (deal this card's damage back to attacker)
+Effect: Defender reveals hand.
+Defensive Bonus: Counter Attack, melee only. Only on a clean win — not a tie.
 Range: Melee
 *"Every defense has a seam."*
 
@@ -244,8 +244,8 @@ Range: Melee
 
 **TRAMPLE**
 RED — BODY
-Attack: Body + d6
-Effect: If this attack defeats the defender, deal 3 damage to another enemy in the frontline.
+Attack: Body + d4
+Effect: If this attack drops (Collapses) the defender, gain another action this turn.
 Defensive Bonus: Push the attacker to the backline.
 Range: Melee
 *"Force does not stop where it lands."*
@@ -256,7 +256,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Gain Resist.
-Defensive Bonus: Deal 2 damage to the attacker.
+Defensive Bonus: Gain Thorns.
 Range: Both
 *"Hit me. I dare you."*
 

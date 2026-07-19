@@ -19,7 +19,7 @@ from collections import Counter
 
 from engine import can_attack
 
-_AVG = {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, None: 5.0}
+_AVG = {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, 10: 5.5, None: 5.0}
 _BEATS = {'R': 'G', 'B': 'R', 'G': 'B'}          # color -> color it beats
 _BEATEN_BY = {v: k for k, v in _BEATS.items()}    # color -> color that beats it
 

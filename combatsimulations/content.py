@@ -21,11 +21,6 @@ def warded(target):
     return False
 
 
-def lifesteal(engine, me, foe, x):
-    dealt = engine.deal(foe, x, unpreventable=True)
-    engine.heal(me, dealt)
-
-
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
     Fortress, Anchored, Quick. Quick isn't implemented anywhere in the sim yet
@@ -53,6 +48,11 @@ def _burn_bright_dmg(engine, me, foe):
         me.exile.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
         base += 2
     return base
+
+
+def _burn_bright_defense(engine, me, foe):
+    if me.discard:
+        me.exile.append(me.discard.pop())
 
 
 def _fracture_dmg(engine, me, foe):
@@ -97,24 +97,20 @@ def _axiom_effect(engine, me, foe):
 
 
 def _sacrifice_strike_effect(engine, me, foe):
-    engine.deal(me, 2, unpreventable=True)  # "Pay 2 HP" — a self-cost on win
+    engine.deal(me, 3, unpreventable=True)  # "Pay 3 HP" — a self-cost on win
 
 
 def _sacrifice_strike_defense(engine, me, foe):
-    engine.deal(me, 2, unpreventable=True)
-    engine.deal(foe, roll(8, engine.rng), unpreventable=True)
+    engine.deal(me, 5, unpreventable=True)
+    engine.deal(foe, me.eff('body') + roll(10, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back
 
 
 def _blood_in_the_gap_effect(engine, me, foe):
-    lifesteal(engine, me, foe, 1)  # "steal 1 HP from each enemy"
+    engine.heal(me, me._last_hit // 2)   # Lifesteal: half of this attack's landed damage
 
 
 def _blood_in_the_gap_defense(engine, me, foe):
-    me.ongoing.append({'kind': 'gap_retaliate', 'owner': me})
-    RULING("gap-retaliate",
-           "BLOOD IN THE GAP defense 'if damaged before your next turn, steal 2 "
-           "each time' is modeled as a retaliate rider; simplified to trigger on "
-           "the next damage instance only.")
+    me.thorns += 1
 
 
 def _spark_effect(engine, me, foe):
@@ -184,9 +180,10 @@ def _blood_tithe_effect(engine, me, foe):
 
 
 def _blood_tithe_defense(engine, me, foe):
-    allies = engine.allies(me)             # heal the most-hurt ally 2 (dead in 1v1)
+    engine.deal(me, 2, unpreventable=True)   # "Pay 2 HP"
+    allies = engine.allies(me)             # heal the most-hurt ally 6 (dead in 1v1)
     if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 2, source=me)
+        engine.heal(min(allies, key=lambda a: a.hp), 6, source=me)
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
@@ -214,7 +211,7 @@ def _pain_is_fuel_effect(engine, me, foe):
 
 
 def _pain_is_fuel_defense(engine, me, foe):
-    engine.deal(foe, 2, unpreventable=True)
+    me.thorns += 1
 
 
 def _brace_effect(engine, me, foe):
@@ -358,17 +355,6 @@ def _rend_effect(engine, me, foe):
 
 def _rend_defense(engine, me, foe):
     me._rend_guard = True
-
-
-def _equal_footing_dmg(engine, me, foe):
-    base = me.eff('body') + roll(4, engine.rng)
-    if foe.position == me.position:
-        base += 2
-    return base
-
-
-def _equal_footing_defense(engine, me, foe):
-    me._damage_floor = foe.hp  # next attack can't take me below attacker's HP
 
 
 def _press_the_injury_dmg(engine, me, foe):
@@ -516,12 +502,10 @@ def _guard_defense(engine, me, foe):
     for a in engine.allies(me):
         a.resist += 1                      # all allies gain Resist
 
-def _intercept_setup(engine, me, foe):
-    me._intercept = True                   # next time an ally is attacked, I defend
-def _intercept_defense(engine, me, foe):
-    engine.heal(me, 2)                     # absorbed from FORTRESS STANCE: team heal
-    for a in engine.allies(me):
-        engine.heal(a, 2, source=me)
+def _intercept_effect(engine, me, foe):
+    me._fortress = True
+    me.resist += 2
+_intercept_defense = _intercept_effect   # same text both sides
 
 def _fortress_effect(engine, me, foe):
     me._fortress = True                    # I take the next hit meant for an ally
@@ -530,21 +514,29 @@ def _fortress_defense(engine, me, foe):
         engine.heal(a, 2, source=me)
 
 def _rally_effect(engine, me, foe):
+    engine.deal(me, 5, unpreventable=True)
     for a in engine.allies(me):
         if a.position == 'frontline':
             a.deadly += 1
 def _rally_defense(engine, me, foe):
+    engine.deal(me, 5, unpreventable=True)
     for a in engine.allies(me):
         if a.position == 'backline':
             a.deadly += 1
 
 def _trample_effect(engine, me, foe):
-    if foe.collapsed:                      # this attack defeated the defender
-        others = [x for x in engine.enemies(me) if x is not foe and x.position == 'frontline']
-        if others:
-            engine.deal(others[0], 3)
+    if foe.collapsed:                      # this attack dropped the defender
+        me._bonus_action = True            # gain another action this turn (take_turn checks this)
 def _trample_defense(engine, me, foe):
     foe.position = 'backline'              # push the attacker back
+
+# BREAK's Effect ("Defender reveals hand") is pure information, no state
+# change — same treatment as READ, never sim-implemented for the same reason.
+def _break_defense(engine, me, foe):
+    # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
+    if getattr(foe, '_redirect_dmg', None) is None:
+        return
+    engine.deal(foe, me.eff('body') + roll(4, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back
 
 def _charge_move(engine, me, foe):
     me.position = 'frontline'
@@ -700,10 +692,10 @@ def _endure_effect(engine, me, foe):
 def _endure_defense(engine, me, foe):
     engine.heal(me, 3)
 
+def _weathered_effect(engine, me, foe):
+    me._weathered = True   # heal 2 each time attacked, until my next turn (engine.attack() checks this)
 def _weathered_defense(engine, me, foe):
     me.ward = True
-# Effect ("if attacked before your next turn, gain +2 HP") unmodeled — same
-# shape as ANTICIPATE's dead effect (a delayed trigger the engine has no hook for).
 
 def _recover_effect(engine, me, foe):
     c = me.draw_one(engine.rng)
@@ -768,11 +760,11 @@ def build_cards():
         C[c.name] = c
 
     # Frost — Red
-    add("SACRIFICE STRIKE", 'R', 'body', 'melee', 8,
+    add("SACRIFICE STRIKE", 'R', 'body', 'melee', 10,
         effect=_sacrifice_strike_effect, defense=_sacrifice_strike_defense)
     add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 2,
         effect=_blood_in_the_gap_effect, defense=_blood_in_the_gap_defense)
-    add("BURN BRIGHT", 'R', 'body', 'ranged', 6, damage=_burn_bright_dmg)
+    add("BURN BRIGHT", 'R', 'body', 'ranged', 6, damage=_burn_bright_dmg, defense=_burn_bright_defense)
     add("SPARK OF VIOLENCE", 'R', 'body', 'both', 4,
         effect=_spark_effect, defense=_spark_effect)
     # Frost — Blue
@@ -819,8 +811,7 @@ def build_cards():
     # Mire — Red
     add("REND", 'R', 'body', 'melee', 4,
         effect=_rend_effect, defense=_rend_defense)
-    add("EQUAL FOOTING", 'R', 'body', 'both', 4,
-        damage=_equal_footing_dmg, defense=_equal_footing_defense)
+    add("EQUAL FOOTING", 'R', 'body', 'both', 2)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
     add("PRESS THE INJURY", 'R', 'body', 'melee', 4,
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
     # Mire — Blue
@@ -846,11 +837,12 @@ def build_cards():
     # --- Expanded set: Red ---
     add("STRIKE", 'R', 'body', 'melee', 8, defense=_strike_defense)
     add("GUARD", 'R', 'body', 'melee', 2, effect=_guard_effect, defense=_guard_defense)
-    add("INTERCEPT", 'R', 'body', 'melee', 4,
-        effect=_intercept_setup, defense=_intercept_defense)
-    add("RALLY", 'R', 'body', 'both', 4, effect=_rally_effect, defense=_rally_defense)
-    add("TRAMPLE", 'R', 'body', 'melee', 6,
+    add("INTERCEPT", 'R', 'body', 'melee', 2,
+        effect=_intercept_effect, defense=_intercept_defense)
+    add("RALLY", 'R', 'body', 'both', 2, effect=_rally_effect, defense=_rally_defense)
+    add("TRAMPLE", 'R', 'body', 'melee', 4,
         effect=_trample_effect, defense=_trample_defense)
+    add("BREAK", 'R', 'body', 'melee', 4, defense=_break_defense)
     add("CHARGE", 'R', 'body', 'both', 4, effect=_charge_move, defense=_charge_move)
     # --- Expanded set: Blue ---
     add("INTERRUPT", 'B', 'mind', 'both', 2,
@@ -885,7 +877,7 @@ def build_cards():
     add("UNDERSTANDING", 'B', 'mind', 'both', 6,
         damage=_understanding_dmg, defense=_understanding_defense)
     add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
-    add("WEATHERED", 'R', 'body', 'both', 4, defense=_weathered_defense)  # effect DEAD (delayed trigger)
+    add("WEATHERED", 'R', 'body', 'both', 4, effect=_weathered_effect, defense=_weathered_defense)
     add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)

@@ -170,13 +170,9 @@ class Battle:
         attacker.hand.remove(card)
         attacker._attacked_this = True
         attacker._last_hit = 0
-        # Intercept: a standing ally steps in to defend in the target's place
-        for g in self.allies(defender):
-            if getattr(g, '_intercept', False):
-                g._intercept = False
-                self._say(f"  INTERCEPT: {g.name} defends for {defender.name}")
-                defender = g
-                break
+
+        if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
+            self.heal(defender, 2)
 
         was_staggered = defender.staggered
         # Evade resolves before the defender selects a card. It only reads
@@ -248,6 +244,15 @@ class Battle:
         if (atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox') \
                 and base != 'tie':
             base = 'defender' if base == 'attacker' else 'attacker'
+        # EQUAL FOOTING: "instead of a tie, you win" — see engine.py's Duel.rps()
+        # for the reasoning; both sides playing it cancels out, stays a tie.
+        if base == 'tie':
+            atk_eq = atk_card.name == 'EQUAL FOOTING'
+            def_eq = def_card.name == 'EQUAL FOOTING'
+            if atk_eq and not def_eq:
+                base = 'attacker'
+            elif def_eq and not atk_eq:
+                base = 'defender'
         return base
 
     def _resolve_attacker_win(self, attacker, defender, card):
@@ -297,8 +302,9 @@ class Battle:
     def take_turn(self, who):
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
-        who._anticipating = False        # ANTICIPATE, UNNAME: self-clearing, "until my next turn"
+        who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
+        who._weathered = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -320,30 +326,40 @@ class Battle:
             who.must_target_frontline = False
             who._forced_target = None
             return
-        action = who.policy.choose_action(self, who)
-        if action is None:
-            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
-            # cadence. Choosing X is a tactical, table-only call; these brains never
-            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
-            # intentionally unmodeled.
-            self._say(f"{who.name} waits")
-        elif action[0] == 'attack':
-            _, card, target = action
-            # Targeting a Collapsed-but-not-dead enemy is now a deliberate,
-            # policy-level choice (team_policies.py, FINISH_DOWNED_CHANCE) —
-            # no longer redirected away from here. A Collapsed target auto-hits
-            # (rules/combat.md, Collapse & Death), which attack() already
-            # handles via its own `not defender.collapsed` defense gate.
-            self.attack(who, target, card)
-        elif action[0] == 'move':
-            who.position = 'backline' if who.position == 'frontline' else 'frontline'
-        elif action[0] == 'destroy_injury':
-            for i, c in enumerate(who.hand):
-                if c.is_status and c.name == 'INJURY':
-                    who.hand.pop(i)
-                    break
-        who.must_target_frontline = False
-        who._forced_target = None   # taunt is one-shot: consumed by this turn
+        extra_actions = 0
+        while True:
+            action = who.policy.choose_action(self, who)
+            if action is None:
+                # Wait (rules/combat.md): forgo the action to reposition -X for a
+                # combo cadence. Choosing X is a tactical, table-only call; these
+                # brains never plan one, so a forced pass is just a lost turn
+                # (X=0). Tactical Wait is intentionally unmodeled.
+                self._say(f"{who.name} waits")
+            elif action[0] == 'attack':
+                _, card, target = action
+                # Targeting a Collapsed-but-not-dead enemy is a deliberate,
+                # policy-level choice (team_policies.py, _pick_target's random
+                # pile-on) — not redirected away from here. A Collapsed target
+                # auto-hits (rules/combat.md, Collapse & Death), which attack()
+                # already handles via its own `not defender.collapsed` gate.
+                self.attack(who, target, card)
+            elif action[0] == 'move':
+                who.position = 'backline' if who.position == 'frontline' else 'frontline'
+            elif action[0] == 'destroy_injury':
+                for i, c in enumerate(who.hand):
+                    if c.is_status and c.name == 'INJURY':
+                        who.hand.pop(i)
+                        break
+            who.must_target_frontline = False
+            who._forced_target = None   # taunt is one-shot: consumed by this turn
+            # TRAMPLE: an extra action within THIS turn, not a wheel bonus turn —
+            # capped so a bug can't hang the sim, though nothing should ever
+            # realistically chain that far.
+            if not who._bonus_action or who.collapsed or extra_actions >= 5:
+                break
+            who._bonus_action = False
+            extra_actions += 1
+            self._say(f"{who.name} gained another action (TRAMPLE)")
 
     def _finish(self, a_alive, b_alive):
         if a_alive and not b_alive:

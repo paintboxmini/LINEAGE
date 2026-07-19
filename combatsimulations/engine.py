@@ -307,6 +307,8 @@ class Combatant:
         self._no_defensive_bonus = False # UNNAME: defensive bonuses don't trigger, until my next turn
         self._partition_shield = False   # PARTITION: can't be targeted by an attack, until caster's next turn
         self._partition_shield_target = None  # PARTITION (caster side): who I shielded, to clear on my next turn
+        self._bonus_action = False       # TRAMPLE: gain another action this turn (not a wheel bonus turn)
+        self._weathered = False          # WEATHERED: heal 2 each time attacked, until my next turn
 
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
@@ -318,7 +320,7 @@ class Combatant:
         self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
         self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
-        self._damage_floor = None        # Equal Footing def: next-attack HP floor
+        self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
         self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
 
@@ -519,6 +521,9 @@ class Duel:
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
 
+        if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
+            self.heal(defender, 2)
+
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
         # unaffected by when the reveal fields below get set.
@@ -615,6 +620,17 @@ class Duel:
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
                 base = 'defender' if base == 'attacker' else 'attacker'
+        # EQUAL FOOTING: "instead of a tie, you win" — checked by name, not a
+        # keyword, since only this card does it. If both sides played it,
+        # neither claim wins out; stays a tie (same logic as rules/combat.md's
+        # Simultaneous Effects: no clear order, resolve as a tie).
+        if base == 'tie':
+            atk_eq = atk_card.name == 'EQUAL FOOTING'
+            def_eq = def_card.name == 'EQUAL FOOTING'
+            if atk_eq and not def_eq:
+                base = 'attacker'
+            elif def_eq and not atk_eq:
+                base = 'defender'
         return base
 
     @staticmethod
@@ -695,8 +711,9 @@ class Duel:
     def take_turn(self, who, foe):
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
-        who._anticipating = False        # ANTICIPATE, UNNAME: self-clearing, "until my next turn"
+        who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
+        who._weathered = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -718,26 +735,36 @@ class Duel:
             self._say(f"{who.name} is Staggered — this turn's attack is skipped")
             who.must_target_frontline = False
             return
-        action = who.policy.choose_action(self, who, foe)
-        if action is None:
-            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
-            # cadence. Choosing X is a tactical, table-only call; these brains never
-            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
-            # intentionally unmodeled.
-            self._say(f"{who.name} waits")
-        else:
-            kind = action[0]
-            if kind == 'attack':
-                self.attack(who, foe, action[1])
-            elif kind == 'move':
-                who.position = 'backline' if who.position == 'frontline' else 'frontline'
-                self._say(f"{who.name} moves to {who.position}")
-            elif kind == 'destroy_injury':
-                for i, c in enumerate(who.hand):
-                    if c.is_status and c.name == 'INJURY':
-                        who.hand.pop(i)
-                        self._say(f"{who.name} destroys an Injury (action)")
-                        break
+        extra_actions = 0
+        while True:
+            action = who.policy.choose_action(self, who, foe)
+            if action is None:
+                # Wait (rules/combat.md): forgo the action to reposition -X for a
+                # combo cadence. Choosing X is a tactical, table-only call; these
+                # brains never plan one, so a forced pass is just a lost turn
+                # (X=0). Tactical Wait is intentionally unmodeled.
+                self._say(f"{who.name} waits")
+            else:
+                kind = action[0]
+                if kind == 'attack':
+                    self.attack(who, foe, action[1])
+                elif kind == 'move':
+                    who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                    self._say(f"{who.name} moves to {who.position}")
+                elif kind == 'destroy_injury':
+                    for i, c in enumerate(who.hand):
+                        if c.is_status and c.name == 'INJURY':
+                            who.hand.pop(i)
+                            self._say(f"{who.name} destroys an Injury (action)")
+                            break
+            # TRAMPLE: an extra action within THIS turn, not a wheel bonus turn —
+            # capped so a bug can't hang the sim, though nothing should ever
+            # realistically chain that far.
+            if not who._bonus_action or who.collapsed or extra_actions >= 5:
+                break
+            who._bonus_action = False
+            extra_actions += 1
+            self._say(f"{who.name} gained another action (TRAMPLE)")
         # Injuries no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
