@@ -5,8 +5,8 @@
 **INTERRUPT**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Target loses their next turn, you can't defend until your next turn
-Defensive Bonus: Apply Initiative Shift -1 to the attacker
+Effect: Defender loses their next turn, you can't defend until your next turn
+Defensive Bonus: Apply Initiative Shift -2 to the attacker
 Range: Both
 *"The best move happens before theirs."*
 
@@ -15,8 +15,8 @@ Range: Both
 **SHARPEN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target deals +3 damage on their next Blue card attack
-Defensive Bonus: Your next Blue card deals +2 Mind damage
+Effect: Target ally gains Deadly
+Defensive Bonus: You gain Deadly
 Range: Both
 *"Precision compounds."*
 
@@ -45,8 +45,8 @@ Range: Melee
 **STUDY**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Discard 1, draw 1
-Defensive Bonus: Gain Evade
+Effect: Discard 2, draw 2
+Defensive Bonus: Gain Deadly
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -65,7 +65,7 @@ Range: Both
 **FOCUS**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 1, return this card to your hand
+Effect: Scry 2, return this card to your hand
 Defensive Bonus: Place the top card of your discard pile on top of your deck
 Range: Both
 *"Clarity rewards the prepared mind."*

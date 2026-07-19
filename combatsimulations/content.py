@@ -489,7 +489,13 @@ def _interrupt_effect(engine, me, foe):
     foe.skip_turns += 1                    # target loses their next turn
     me.cannot_defend = True                # you can't defend until your next turn
 def _interrupt_defense(engine, me, foe):
-    engine.initiative_shift(foe, -1)       # -1 to the attacker (foe), not to yourself
+    engine.initiative_shift(foe, -2)       # -2 to the attacker (foe), not to yourself
+
+def _sharpen_effect(engine, me, foe):
+    a = _best_attacker(engine.allies(me)) or me   # target ally, self if no one else to pick
+    a.deadly += 1
+def _sharpen_defense(engine, me, foe):
+    me.deadly += 1
 
 def _chain_effect(engine, me, foe):
     if me._last_hit > 0:
@@ -510,15 +516,17 @@ def _analyze_effect(engine, me, foe):
         engine.scry(a, a, 2)
 
 def _study_effect(engine, me, foe):
-    injuries = [c for c in me.hand if c.is_status and c.name == 'INJURY']
-    drop = injuries[0] if injuries else next((c for c in me.hand if not c.is_status), None)
-    if drop is not None:
+    for _ in range(2):                     # discard 2, draw 2 — Injuries first if held
+        injuries = [c for c in me.hand if c.is_status and c.name == 'INJURY']
+        drop = injuries[0] if injuries else next((c for c in me.hand if not c.is_status), None)
+        if drop is None:
+            break
         me.hand.remove(drop); me.discard.append(drop)
         c = me.draw_one(engine.rng)
         if c:
-            me.hand.append(c)              # discard 1 (an Injury if held), draw 1
+            me.hand.append(c)
 def _study_defense(engine, me, foe):
-    me.evade += 1                          # saw it coming (Predictable was cut)
+    me.deadly += 1
 
 def _profile_effect(engine, me, foe):
     engine.scry(me, me, 2)
@@ -595,7 +603,7 @@ def _stillness_effect(engine, me, foe):
 _stillness_defense = _stillness_effect   # same text, target is just always foe here
 
 def _focus_effect(engine, me, foe):
-    engine.scry(me, me, 1)   # "returns to hand instead of discard" unmodeled — no engine hook for it
+    engine.scry(me, me, 2)   # "returns to hand instead of discard" unmodeled — no engine hook for it
 def _focus_defense(engine, me, foe):
     if me.discard:
         me.deck.append(me.discard.pop())   # top of discard -> top of deck (append = top, draws next)
@@ -767,6 +775,7 @@ def build_cards():
     # --- Expanded set: Blue ---
     add("INTERRUPT", 'B', 'mind', 'both', 2,
         effect=_interrupt_effect, defense=_interrupt_defense)
+    add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
     add("CHAIN", 'B', 'mind', 'both', 2, effect=_chain_effect, defense=_chain_defense)
     add("CALCULATE", 'B', 'mind', 'ranged', 4,
         effect=_calculate_effect, defense=_calculate_defense)
