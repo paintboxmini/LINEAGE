@@ -51,15 +51,30 @@ def monte_carlo(n, a_names, b_names):
     cards = build_cards()
     wins = Counter()
     turns = 0
+    deaths_a = deaths_b = 0        # total individual deaths, across all battles
+    battles_with_death_a = battles_with_death_b = 0   # "did anyone die this battle" — the number that maps to Drew's 1-in-20-sessions target
     for i in range(n):
         result, battle = one_battle(cards, a_names, b_names, seed=i)
         wins[result] += 1
         turns += battle.turn_count
+        da = sum(1 for c in battle.teams[0] if c.is_dead)
+        db = sum(1 for c in battle.teams[1] if c.is_dead)
+        deaths_a += da
+        deaths_b += db
+        battles_with_death_a += bool(da)
+        battles_with_death_b += bool(db)
     print(f"=== [{'+'.join(a_names)}] vs [{'+'.join(b_names)}] — {n} battles ===")
     print(f"  Team A  {wins[0]:6}  ({100*wins[0]/n:5.1f}%)")
     print(f"  Team B  {wins[1]:6}  ({100*wins[1]/n:5.1f}%)")
     print(f"  TIE     {wins['TIE']:6}  ({100*wins['TIE']/n:5.1f}%)")
     print(f"  avg turns: {turns/n:.1f}")
+    print(f"  Team A deaths: {deaths_a} total ({deaths_a/n:.3f}/battle) — "
+          f"a death occurred in {100*battles_with_death_a/n:.2f}% of battles")
+    print(f"  Team B deaths: {deaths_b} total ({deaths_b/n:.3f}/battle) — "
+          f"a death occurred in {100*battles_with_death_b/n:.2f}% of battles")
+    print(f"  (Drew's target: a PC dies ~once per 20 sessions, party-wide — "
+          f"compare 'battle-with-a-death' rate above against how many of "
+          f"these encounters actually happen per session.)")
 
 
 if __name__ == "__main__":

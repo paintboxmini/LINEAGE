@@ -5,7 +5,7 @@ between its turns spends a card each block, so hands run dry — the thing the 1
 sim couldn't show).
 
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_wound',) | None
+                                 | ('destroy_injury',) | None
     choose_defense(battle, me, attacker) -> card | None
 """
 
@@ -33,30 +33,37 @@ class TeamTactician(ScryMixin):
 
     def _pick_target(self, battle, me):
         forced = getattr(me, '_forced_target', None)
-        if forced is not None and not forced.collapsed:
+        if forced is not None and not forced.collapsed and not forced._partition_shield:
             return forced
-        foes = battle.enemies(me)
-        if not foes:
+        # Team plan (Drew): pick a target at random and pile on — stay locked
+        # while they're still standing. The instant they collapse, the lock
+        # drops and the next pick is random again, over everyone still alive
+        # in play (including the one who just went down — they're back in
+        # the pool, not specially hunted or specially spared).
+        cur = battle.team_target.get(me.team)
+        if cur is not None and not cur.collapsed and not cur.is_dead and not cur._partition_shield:
+            return cur
+        pool = [c for c in battle.targetable(me) if not c._partition_shield]
+        if not pool:
+            pool = battle.targetable(me)   # everyone shielded somehow — fall back rather than stall
+        if not pool:
             return None
-        # focus fire: lowest effective HP first (secure kills, concentrate)
-        return min(foes, key=lambda e: (e.hp, e.max_hp))
+        pick = battle.rng.choice(pool)
+        battle.team_target[me.team] = pick if not pick.collapsed else None
+        return pick
 
     def choose_action(self, battle, me):
-        if me.staggered:
-            return ('recover_stagger',)          # can't attack or defend until this clears
-        allies = battle.allies(me)
-        staggered_ally = next((a for a in allies if a.staggered), None)
+        # Staggered no longer routes through here — the engine skips that
+        # turn's action itself, before this is ever called.
         target = self._pick_target(battle, me)
         if target is not None:
             atks = legal_attacks_team(battle, me, target)
             if atks:
                 # value = damage + a nudge for effects that matter in teams
                 return ('attack', max(atks, key=lambda c: self._value(battle, me, target, c)), target)
-        # no legal attack: help a staggered ally before clearing a Wound or moving
-        if staggered_ally is not None:
-            return ('assist_stagger', staggered_ally)
-        if any(c.is_status and c.name == 'WOUND' for c in me.hand):
-            return ('destroy_wound',)
+        # no legal attack: clear an Injury or move
+        if any(c.is_status and c.name == 'INJURY' for c in me.hand):
+            return ('destroy_injury',)
         if me.hand:
             return ('move',)
         return None

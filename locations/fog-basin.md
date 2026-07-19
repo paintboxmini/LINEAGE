@@ -67,3 +67,4 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 - `bestiary/fogcaller.md`
 - `bestiary/echo.md`
 - `items/fog-basin-items.md`
+- `quests/sour-tomatoes.md` — the Odom place; a family with no fix, and children who need somewhere to go

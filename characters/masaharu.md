@@ -4,7 +4,7 @@
 
 **Cards:** `cards/masaharu.md`
 
-*Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Mind, HP, and card count before use.*
+*Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands him more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
 **Mind 5 / Body 3 / Soul 4 — HP 15**
 **Creature Threat Rating:** 12
@@ -59,11 +59,10 @@ He is most dangerous when he has had one full cycle to read the party.
 
 **Signature cards:** `cards/masaharu.md` — unique to Masaharu, not transferable.
 
-**Core cards (3 Blue / 3 Red / 4 Green):**
+**Core cards (2 Blue / 3 Red / 4 Green):**
 
 *Blue — Mind*
 - PROFILE — Scry 2; Defensive: Staggered on attacker
-- ALIGN — Scry 2; Defensive: conditional draw 1
 - AXIOM — Color denial; Defensive: Scry 2 of attacker's deck
 
 *Red — Body*
@@ -72,7 +71,7 @@ He is most dangerous when he has had one full cycle to read the party.
 - ENDURE — Gain Resist; Defensive: Heal 3 HP
 
 *Green — Soul*
-- DEAD RECKONING — Scry 2; Defensive: Blind on attacker
+- DEAD RECKONING — Defender gains Weak; Defensive: Attacker gains Blind
 - DELAY — Apply Initiative Shift -1 to defender; Defensive: Apply Initiative Shift -1 to attacker
-- SCRIPTURE OF ECHOES — Both discard 1; heal 4 if different colors; Defensive: ally heals 4
+- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3
 - READ — Defender reveals hand; Defensive: Name color, discard matching card from attacker's hand

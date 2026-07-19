@@ -8,7 +8,7 @@ People who went into the Unheld Ocean and came back wrong. Not evil. Unpredictab
 
 **Passive — Unraveling State:** At the start of each Corrupted Bather's turn, the DM selects one state (don't randomize — choose for dramatic effect):
 - *Fluid:* gains Evade, may reposition freely this turn
-- *Grounded:* gains Armour 1, deals +d2 on win
+- *Grounded:* gains Resist 1, deals +d2 on win
 - *Surging:* deals +d4 on win, takes 1 damage after attacking
 
 Their abilities should surprise the party once each. Inconsistency is the mechanical expression of what they are.

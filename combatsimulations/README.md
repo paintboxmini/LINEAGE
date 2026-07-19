@@ -31,11 +31,11 @@ No dependencies. Python 3.8+.
 - Tokens/keywords the two decks use: Resist (stacking, one per attack), Evade,
   Ward, Axiom's color ban (on the next reveal, attack *or* block), unpreventable
   damage, position/range gating, Blood Tithe's ongoing bleed.
-- Three decks in the roster: `frost`, `steele`, and `mire` (a Wound-attrition
+- Three decks in the roster: `frost`, `steele`, and `mire` (an Injury-attrition
   build). Ally-only effects are correct no-ops in a duel and are marked DEAD in
   `content.py`.
-- Wound mechanics: status cards that clog the hand, shuffle into decks, are
-  counted (Press the Wound), and exile; plus combat-duration stat loss, initiative
+- Injury mechanics: status cards that clog the hand, shuffle into decks, are
+  counted (Press the Injury), and exile; plus combat-duration stat loss, initiative
   shift (Mockery), and targeting locks (Partition).
 
 ## Policies (the "brains")
@@ -82,7 +82,7 @@ produced three results, one of which reversed an earlier conclusion.
    | **Frost**  | 32.6% | — | 39.2% |
    | **Mire**   | 38.6% | 59.7% | — |
 
-   (Mire jumped over Frost once its self-Wound cost was removed — see the Mire
+   (Mire jumped over Frost once its self-Injury cost was removed — see the Mire
    section. Steele's Body 4 / HP 18 still beat everyone.)
 
    Steele's Body 4 / HP 18 beat everyone. Valuing **Axiom** is real and
@@ -150,13 +150,13 @@ brains. Greedy/tactician are strong but not optimal — a bluff-aware or
 lookahead policy could shift the deck ranking again. Treat the numbers as "how
 the decks behave under the best brain we've written so far."
 
-## Mire — the Wound-attrition deck (3/3/3)
+## Mire — the Injury-attrition deck (3/3/3)
 
 A third deck (`mire` in the roster): Balance, Wither, Mockery / Rend, Equal
-Footing, Press the Wound / Partition, Taint, Erode. Perfectly balanced 3R/3B/3G.
-It wins by shuffling Wounds into the opponent's deck (Rend, Taint) and cashing
-them in (Press the Wound), while eroding stats for the whole combat (Wither
-−Body, Erode −Soul). Adding it forced the engine to grow real Wound mechanics,
+Footing, Press the Injury / Partition, Taint, Erode. Perfectly balanced 3R/3B/3G.
+It wins by shuffling Injuries into the opponent's deck (Rend, Taint) and cashing
+them in (Press the Injury), while eroding stats for the whole combat (Wither
+−Body, Erode −Soul). Adding it forced the engine to grow real Injury mechanics,
 combat-duration stat loss, initiative shift, and targeting locks.
 
 Win rates under the strongest brain (tactician, 20k duels each):
@@ -173,16 +173,16 @@ and Sunder drains Mind without touching HP. See the Stat Loss rule.)
 What it surfaced — including a fix loop that worked:
 
 1. **The sim caught a self-inflicted balance bug, and the fix landed.** When the
-   Wound rule changed so Wounds no longer auto-discard (they sit in hand until you
+   Injury rule changed so Injuries no longer auto-discard (they sit in hand until you
    spend an action), Mire's own **Wither/Erode/Sunder** — which used to shuffle a
-   Wound into *your own* deck as a cost — started drowning the deck in its own
-   costs. Mire cratered to ~23% vs Frost. The sim flagged it; the self-Wound cost
+   Injury into *your own* deck as a cost — started drowning the deck in its own
+   costs. Mire cratered to ~23% vs Frost. The sim flagged it; the self-Injury cost
    was removed from those cards; Mire jumped to **59.7% vs Frost.** A clean
    design-loop: sim surfaces the problem → card change → sim confirms the fix.
 
 2. **Mire is a real PvP deck now — against balance, not against stats.** Freed of
-   its self-cost, the Wound-disruption engine (permanent hand-clog + Press the
-   Wound + stat erosion) beats Frost's balanced burst. It still loses to Steele —
+   its self-cost, the Injury-disruption engine (permanent hand-clog + Press the
+   Injury + stat erosion) beats Frost's balanced burst. It still loses to Steele —
    Body 4 / HP 18 close the game before attrition matters. Attrition beats
    tempo-neutral decks and loses to raw-stat aggression. That's a healthy,
    legible matchup triangle.
@@ -193,7 +193,7 @@ What it surfaced — including a fix loop that worked:
 
 Takeaway for the table: Mire went from bottom-tier to mid-tier in one card change
 the sim identified. Its ceiling is still PvE, where durable monsters give the
-Wound engine a long game — but it's no longer a trap pick in a duel.
+Injury engine a long game — but it's no longer a trap pick in a duel.
 
 ## The errata queue
 

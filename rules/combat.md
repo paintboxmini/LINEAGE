@@ -116,7 +116,9 @@ Green (Soul)  beats  Blue  (Mind)
 **Defender wins** → no damage + defender triggers Defensive Bonus  
 **Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
 
-An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
+An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Injury," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
+
+A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land (`rules/combat-example.md`, Edge Cases), that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
 
 ---
 
@@ -124,11 +126,11 @@ An Effect that only *adds to or amplifies this attack's damage* has nothing to a
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Fortress, team play) → **Armour** (flat reduction) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Fortress, team play) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
-**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Armour/Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
+**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
 
 ---
 

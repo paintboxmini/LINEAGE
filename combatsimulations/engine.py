@@ -36,18 +36,65 @@ def roll(die, rng):
     return rng.randint(1, die)
 
 
+def _rolled_die(die, rng, me):
+    """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
+    each stack applies to one future damage roll — roll twice, take the
+    higher (Deadly) or lower (Weak) result, then consume one stack. Deadly
+    takes priority if both are somehow held at once (not a ruled case,
+    just a defensible tie-break). Custom `_damage` functions (exploding
+    dice, multi-hit cards) roll their own way and are NOT wrapped here —
+    applying "roll twice" generically to an arbitrary custom function risks
+    doubling unrelated side effects, not just the die."""
+    if me.deadly > 0:
+        me.deadly -= 1
+        return max(roll(die, rng), roll(die, rng))
+    if me.weak > 0:
+        me.weak -= 1
+        return min(roll(die, rng), roll(die, rng))
+    return roll(die, rng)
+
+
+# Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
+# SYNCHRONY) — cleared for real on Collapse, below. Pure-Anchored kinds
+# (rooted_oath, ledger) are deliberately left alone: Anchored's own glossary
+# rule only ends on moving position, never mentions Collapse, and since a
+# Collapsed combatant can't take turns anyway they go dormant on their own —
+# explicitly removing them would be inventing a rule these cards never stated.
+_ENDS_ON_COLLAPSE = {'synchrony', 'slipstream'}
+
+
+def _clear_ongoing_on_collapse(target):
+    """Found via Drew asking whether Collapse actually ends an Anchored/ongoing
+    effect in the sim — it didn't. Nothing ever cleared `ongoing` on collapse,
+    which only became a real (not just theoretical) bug once revival from
+    Collapse became possible: without this, a revived combatant's old
+    "ends if you collapse" effects would silently resume."""
+    target.ongoing = [o for o in target.ongoing if o['kind'] not in _ENDS_ON_COLLAPSE]
+
+
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
-                engine.heal(a, 1)
+                engine.heal(a, 1, source=who)
+        elif o['kind'] == 'ledger' and who.position == o.get('anchor', who.position):
+            engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
+        elif o['kind'] == 'dig_in' and who.position == o.get('anchor', who.position):
+            who.resist += 1
         elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
-            allies = engine.allies(who)
-            if allies:                     # ally-only: no self-fallback (green revert)
-                max(allies, key=lambda a: max(a.eff('body'), a.eff('mind'), a.eff('soul'))
-                    ).next_attack_bonus += 2
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                a.deadly += 1
+        elif o['kind'] == 'rooted_oath_def' and who.position == o.get('anchor', who.position):
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                a.resist += 1
+        elif o['kind'] == 'patience_def' and who.position == o.get('anchor', who.position):
+            a = o.get('target')
+            if a is not None and not a.collapsed:
+                engine.heal(a, 3, source=who)
 
 
 def _apply_shift(engine, queue, target, amount):
@@ -105,11 +152,16 @@ def _apply_shift(engine, queue, target, amount):
     i = queue.index(target)
     total = len(queue)
 
-    if i == 0:
+    if i == 0 or target is getattr(engine, '_resolving', None):
         # the current actor, still mid-turn: already at the earliest possible
         # slot, so any positive shift can only mean "sooner than right now,"
         # which becomes a bonus turn this same lap instead (ruling: a
         # positive self-shift always grants an extra turn, any magnitude).
+        # `target is engine._resolving` covers this same fact during a BONUS
+        # turn, where the acting character isn't at queue[0] at all (that
+        # slot belongs to whoever's next in the untouched normal rotation) —
+        # found via a real crash (YOU'RE NEXT chaining bonus turns into
+        # itself); same rule, just no longer misdetected by queue position.
         if amount > 0 and not was_pending:
             engine.pending_turns.append(target)
         # negative: staying put (or rotating normally) already can't be
@@ -173,9 +225,10 @@ def _join_wheel(queue, new_combatant, after=None):
     it — pass that combatant as `after`. A GM-introduced combatant enters
     when the fiction calls for it (usually the end of a full lap); the
     caller decides the timing, this just does the insertion — pass
-    `after=None` to append at the back, matching "end of a lap." Not
-    currently wired to any card — no existing card summons — but the wheel's
-    slot count is expected to stay accurate if one ever does."""
+    `after=None` to append at the back, matching "end of a lap." Now wired to
+    revival from Collapse (`heal()` below, `after=` the healer) — still not
+    wired to any card that summons, but the wheel's slot count is expected to
+    stay accurate if one ever does."""
     if after is not None and after in queue:
         queue.insert(queue.index(after) + 1, new_combatant)
     else:
@@ -204,12 +257,12 @@ class Card:
         self._effect = effect          # fn(engine, me, foe)  attacker won OR tie
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
-        self.is_status = is_status     # Wound/Exhaust: cannot be played
+        self.is_status = is_status     # Injury/Exhaust: cannot be played
 
     def damage(self, engine, me, foe):
         if self._damage:
             return self._damage(engine, me, foe)
-        return me.eff(self.stat) + roll(self.base_die, engine.rng)
+        return me.eff(self.stat) + _rolled_die(self.base_die, engine.rng, me)
 
     def effect(self, engine, me, foe):
         if self._effect:
@@ -222,13 +275,17 @@ class Card:
 
 # --- Combatant ----------------------------------------------------------------
 class Combatant:
-    def __init__(self, name, body, mind, soul, decklist, policy):
+    def __init__(self, name, body, mind, soul, decklist, policy, hp=None):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
         # Canon HP formula (2*Body + 9) — flattened from 3*Body+6 to decouple HP
         # from Body and cut its damage+HP double-dip. Crossover at Body 3.
         self.hp_per_body = 2
-        self.max_hp = self.hp_per_body * body + 9
+        # Bosses may go bespoke on HP (CLAUDE.md, Stat Blocks) — pass `hp=` to
+        # override the formula baseline; the formula is still what death_floor()
+        # and Body-adjust deltas key off internally, this only overrides the
+        # starting/max number itself.
+        self.max_hp = hp if hp is not None else self.hp_per_body * body + 9
         self.hp = self.max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
                                         # never below act-plus-one-block
@@ -245,8 +302,10 @@ class Combatant:
         # token stacks / flags
         self.resist = 0
         self.evade = 0
-        self.armour = 0                  # flat damage reduction, cleared next turn
+        self.deadly = 0
+        self.weak = 0
         self.thorns = 0
+        self.blind = 0
         self.staggered = False
         self.rooted = False
         self.ward = False
@@ -254,18 +313,25 @@ class Combatant:
         self.next_attack_bonus = 0
         self.cannot_defend = False       # (unused by these decks, reserved)
         self.ongoing = []               # list of dicts: {'kind':..., ...}
+        self._anticipating = False       # ANTICIPATE: draw before defending, until my next turn
+        self._no_defensive_bonus = False # UNNAME: defensive bonuses don't trigger, until my next turn
+        self._partition_shield = False   # PARTITION: can't be targeted by an attack, until caster's next turn
+        self._partition_shield_target = None  # PARTITION (caster side): who I shielded, to clear on my next turn
+        self._bonus_action = False       # TRAMPLE: gain another action this turn (not a wheel bonus turn)
+        self._weathered = False          # WEATHERED: heal 2 each time attacked, until my next turn
 
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
         self.collapsed = False
+        self.is_dead = False             # crossed death_floor while Collapsed — permanent
 
         # combat-duration stat modifiers (Wither -Body, Erode -Soul)
         self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
         self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
         self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
-        self._damage_floor = None        # Equal Footing def: next-attack HP floor
-        self._rend_guard = False         # Rend def: next hit -> Wound, no damage
+        self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
+        self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
 
     def eff(self, stat):
@@ -289,12 +355,12 @@ class Combatant:
             while len(self.hand) > self.effective_hand_size():
                 self.discard.append(self.hand.pop())  # forced discard down to size
 
-    def wounds_visible(self):
-        """Wounds a player can actually see and count — hand + discard, NOT deck
-        (Drew ruling: nobody should have to track or search hidden Wounds). Press
-        the Wound and Taint count these."""
+    def injuries_visible(self):
+        """Injuries a player can actually see and count — hand + discard, NOT deck
+        (Drew ruling: nobody should have to track or search hidden Injuries). Press
+        the Injury and Taint count these."""
         return sum(1 for c in (self.hand + self.discard)
-                   if c.is_status and c.name == 'WOUND')
+                   if c.is_status and c.name == 'INJURY')
 
     # --- deck plumbing ---
     def build(self, cards, rng):
@@ -335,15 +401,15 @@ class Duel:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.wound = cards.get('WOUND')
+        self.injury_card = cards.get('INJURY')
         self.pending_turns = []
         self.queue = []
+        self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
 
-    def shuffle_wound(self, target):
-        if self.wound is None:
+    def insert_injury(self, target):
+        if self.injury_card is None:
             return
-        idx = self.rng.randint(0, len(target.deck))
-        target.deck.insert(idx, self.wound)
+        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
@@ -378,6 +444,9 @@ class Duel:
     def allies(self, me):
         return []
 
+    def downed_allies(self, me):
+        return []   # no allies in a 1v1 — RENEWAL's revival heal stays a no-op here too
+
     def enemies(self, me):
         foe = self.other(me)
         return [] if foe.collapsed else [foe]
@@ -403,8 +472,6 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None):
         if amount <= 0:
             return 0
-        if not unpreventable and target.armour > 0:
-            amount = max(0, amount - target.armour)   # Armour applies before Resist
         if not unpreventable and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
@@ -418,21 +485,44 @@ class Duel:
         # a single normal attack cannot push below 0 (clamp); extra damage while
         # collapsed can. We treat any single application atomically.
         pre = target.hp
+        was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not target.collapsed:
+        if pre > 0 and target.hp < 0 and not was_collapsed:
             RULING("single-hit-floor",
                    "A single attack cannot push a standing combatant below 0 HP "
                    "(clamped to 0 = Collapse). Matches rules/combat.md Collapse.")
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            _clear_ongoing_on_collapse(target)
             _leave_wheel(self, self.queue, target)
+        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
+            # Only reachable already-Collapsed — the single-hit-floor above
+            # protects a standing combatant from dying on the hit that drops
+            # them (rules/combat.md, Collapse & Death: "a single attack cannot
+            # push you below 0"). Death is permanent — no further heal call
+            # can undo it (see heal()).
+            target.is_dead = True
+            RULING("death-floor",
+                   "Collapsed and reduced to or below -ceil(max_hp/2): dead "
+                   "(rules/combat.md, Collapse & Death). Permanent.")
         return amount
 
-    def heal(self, target, amount):
-        if target.collapsed:
+    def heal(self, target, amount, source=None):
+        # Death is permanent (rules/combat.md, Collapse & Death) — unlike
+        # Collapse, nothing heals it. A dead combatant just doesn't respond.
+        if target.is_dead:
             return
+        # Collapse can be healed out of ("You may be healed back into combat")
+        # — only revive on a healed total that actually clears 0; anything
+        # less just softens the Collapse state.
         target.hp = min(target.max_hp, target.hp + amount)
+        if target.collapsed and target.hp > 0:
+            target.collapsed = False
+            # Revived one slot after whoever healed them, not straight into the
+            # live rotation — the marker has to complete a full lap before it
+            # reaches them again (Drew: they shouldn't get to act until it does).
+            _join_wheel(self.queue, target, after=source)
 
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):
@@ -443,6 +533,25 @@ class Duel:
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
+
+        if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
+            self.heal(defender, 2)
+
+        # Blind resolves before Evade (rules/card-glossary.md, Blind) — it's
+        # the ATTACKER's own stack, checked on their own attack, before the
+        # defender's Evade ever gets a say. Simplification, noted: modeled as
+        # a stack consumed on the next attack, same shape as Evade; the "or
+        # expires at the end of your next turn even if unused" wall-clock
+        # nuance isn't tracked.
+        if attacker.blind > 0:
+            attacker.blind -= 1
+            if roll(2, self.rng) == 1:
+                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"  {attacker.name} is BLIND — attack fails entirely")
+                attacker.discard.append(card)
+                attacker.last_color = card.color
+                attacker.attack_history[card.color] += 1
+                return
 
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
@@ -466,8 +575,13 @@ class Duel:
         # last_color / attack_history are NOT mutated until after this call
         # returns. A "blind prediction" policy can therefore only ever read
         # history from the attacker's PRIOR attacks, never the current one.
+        was_staggered = defender.staggered
         def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+            if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
+                c = defender.draw_one(self.rng)
+                if c:
+                    defender.hand.append(c)
             def_card = defender.policy.choose_defense(self, defender, attacker)
             if def_card is not None:
                 # enforce Axiom ban on the reveal
@@ -477,8 +591,9 @@ class Duel:
                            "— the ban is on the next reveal, attack or block "
                            "(rules/card-glossary.md Axiom + reveal timing).")
                     def_card = None
-        # Staggered persists — no auto-clear here. Cleared only by the affected
-        # character (or an ally) spending an action to recover (rules/card-glossary.md).
+        if was_staggered:
+            defender.staggered = False
+            self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
 
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, immediately before anything looks at them. The attacker's card
@@ -505,7 +620,17 @@ class Duel:
             self._resolve_attacker_win(attacker, defender, card, contested=True)
         elif outcome == 'defender':
             self._say(f"  -> {defender.name} wins the reveal")
-            def_card.defense(self, defender, attacker)
+            # A clean win means no damage was ever computed (the attacker's
+            # card never resolves). Some Defensive Bonuses need that number
+            # anyway (REFRACT's full-damage redirect) -- roll it here, once,
+            # for their benefit only; it never applies to the attacker's own
+            # turn (their next_attack_bonus/Deadly/Weak stay untouched --
+            # rules/combat.md) and is unset again right after so it can't
+            # leak into a later attack that doesn't ask for it.
+            attacker._redirect_dmg = card.damage(self, attacker, defender)
+            if not defender._no_defensive_bonus:   # UNNAME
+                def_card.defense(self, defender, attacker)
+            attacker._redirect_dmg = None
         else:  # tie
             self._say("  -> tie")
             # attacker Effect first, then defender Defensive Bonus, unless the
@@ -514,7 +639,8 @@ class Duel:
             attacker._tie = True
             card.effect(self, attacker, defender)
             attacker._tie = False
-            def_card.defense(self, defender, attacker)
+            if not defender._no_defensive_bonus:   # UNNAME
+                def_card.defense(self, defender, attacker)
         defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
@@ -523,6 +649,19 @@ class Duel:
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
                 base = 'defender' if base == 'attacker' else 'attacker'
+        # "Instead of a tie, you win" — checked by name, not a keyword, since
+        # only these cards do it. EQUAL FOOTING works from either side; ADAPT's
+        # is Effect-only (Drew: "ADAPT effect: win on ties" — its Defensive
+        # Bonus stays Gain Evade), so it only ever counts on the attacker side.
+        # If both sides have a live claim, neither wins out — stays a tie, same
+        # logic as rules/combat.md's Simultaneous Effects (no clear order).
+        if base == 'tie':
+            atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
+            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            if atk_wins_tie and not def_wins_tie:
+                base = 'attacker'
+            elif def_wins_tie and not atk_wins_tie:
+                base = 'defender'
         return base
 
     @staticmethod
@@ -538,12 +677,12 @@ class Duel:
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         # Rend's defensive guard: the next hit deals no damage and instead
-        # shuffles a Wound into the struck combatant.
+        # shuffles an Injury into the struck combatant.
         if defender._rend_guard:
             defender._rend_guard = False
-            self.shuffle_wound(defender)
+            self.insert_injury(defender)
             attacker._last_hit = 0
-            self._say(f"  -> REND guard: no damage, Wound into {defender.name}")
+            self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
             card.effect(self, attacker, defender)
             return
         dealt = self.deal(defender, dmg)
@@ -601,8 +740,15 @@ class Duel:
         return self._finish(None)
 
     def take_turn(self, who, foe):
-        who.armour = 0            # Armour / can't-defend last until your next turn
+        self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         who.cannot_defend = False
+        who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
+        who._no_defensive_bonus = False
+        who._weathered = False
+        shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
+        if shielded is not None:
+            shielded._partition_shield = False
+            who._partition_shield_target = None
         who._attacked_last = getattr(who, '_attacked_this', False)  # PATIENCE
         who._attacked_this = False
         if who._shift_skip or who.skip_turns > 0:
@@ -615,30 +761,42 @@ class Duel:
         if who.collapsed:
             return
         who.draw_to_hand(self.rng)
-        action = who.policy.choose_action(self, who, foe)
-        if action is None:
-            # Wait (rules/combat.md): forgo the action to reposition -X for a combo
-            # cadence. Choosing X is a tactical, table-only call; these brains never
-            # plan one, so a forced pass is just a lost turn (X=0). Tactical Wait is
-            # intentionally unmodeled.
-            self._say(f"{who.name} waits")
-        else:
-            kind = action[0]
-            if kind == 'attack':
-                self.attack(who, foe, action[1])
-            elif kind == 'move':
-                who.position = 'backline' if who.position == 'frontline' else 'frontline'
-                self._say(f"{who.name} moves to {who.position}")
-            elif kind == 'destroy_wound':
-                for i, c in enumerate(who.hand):
-                    if c.is_status and c.name == 'WOUND':
-                        who.hand.pop(i)
-                        self._say(f"{who.name} destroys a Wound (action)")
-                        break
-            elif kind == 'recover_stagger':
-                who.staggered = False
-                self._say(f"{who.name} recovers their balance (action)")
-        # Wounds no longer leave on their own — they sit until an action or rest
+        if who.staggered:
+            who.staggered = False
+            self._say(f"{who.name} is Staggered — this turn's attack is skipped")
+            who.must_target_frontline = False
+            return
+        extra_actions = 0
+        while True:
+            action = who.policy.choose_action(self, who, foe)
+            if action is None:
+                # Wait (rules/combat.md): forgo the action to reposition -X for a
+                # combo cadence. Choosing X is a tactical, table-only call; these
+                # brains never plan one, so a forced pass is just a lost turn
+                # (X=0). Tactical Wait is intentionally unmodeled.
+                self._say(f"{who.name} waits")
+            else:
+                kind = action[0]
+                if kind == 'attack':
+                    self.attack(who, foe, action[1])
+                elif kind == 'move':
+                    who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                    self._say(f"{who.name} moves to {who.position}")
+                elif kind == 'destroy_injury':
+                    for i, c in enumerate(who.hand):
+                        if c.is_status and c.name == 'INJURY':
+                            who.hand.pop(i)
+                            self._say(f"{who.name} destroys an Injury (action)")
+                            break
+            # TRAMPLE: an extra action within THIS turn, not a wheel bonus turn —
+            # capped so a bug can't hang the sim, though nothing should ever
+            # realistically chain that far.
+            if not who._bonus_action or who.collapsed or extra_actions >= 5:
+                break
+            who._bonus_action = False
+            extra_actions += 1
+            self._say(f"{who.name} gained another action (TRAMPLE)")
+        # Injuries no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
 

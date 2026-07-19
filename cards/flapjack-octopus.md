@@ -16,7 +16,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d4
 Effect: Target gains Rooted until start of their next turn. Ends Flatten.
-Defensive Bonus: Gain Armour 1.
+Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*
 
@@ -65,7 +65,7 @@ Range: Both
 **FLATTEN**
 GREEN — SOUL
 Attack: —
-Effect: Gain Flatten. Gain Armour 1 until no longer Flattened.
+Effect: Gain Flatten. Gain Resist 1.
 Defensive Bonus: Gain Flatten.
 Range: Both
 *"Pressure becomes protection."*
@@ -75,7 +75,7 @@ Range: Both
 **MIMICRY PULSE**
 GREEN — SOUL
 Attack: Soul + d2
-Effect: Gain Evade. If the Octopus is Flattened, also gain Armour 1 until start of next turn.
+Effect: Gain Evade. If the Octopus is Flattened, also gain Resist 1.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The floor fights back."*

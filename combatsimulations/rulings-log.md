@@ -41,13 +41,13 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   HP), **Mind → hand size** (live; forces a discard if now over), **Soul →
   initiative**. Both directions. General rule in `rules/card-glossary.md` (Stat
   Change); sim in `Combatant.adjust`.
-- **wound-counts-visible** — Press the Wound and Taint count Wounds in **hand +
-  discard only**, never the deck — so nobody has to track or search hidden Wounds
+- **wound-counts-visible** — Press the Injury and Taint count Injuries in **hand +
+  discard only**, never the deck — so nobody has to track or search hidden Injuries
   (Drew). Sim: `wounds_visible`.
-- **wound-persists** — A Wound no longer auto-discards; it sits in the hand
+- **wound-persists** — A Injury no longer auto-discards; it sits in the hand
   occupying a slot until an **action** discards it (to the discard pile). Short
-  rest permanently **destroys** 1 Wound from hand or discard (not the deck). Drew;
-  in the glossary WOUND entry, the engine, and the worked example.
+  rest permanently **destroys** 1 Injury from hand or discard (not the deck). Drew;
+  in the glossary INJURY entry, the engine, and the worked example.
 - **debuff-scope** — Debuff = status conditions, status cards, stat reductions,
   forced moves (Ward blocks these). Discard and scry-your-deck are NOT debuffs and
   ignore Ward (Obscure answers those instead). Drew; in the glossary Debuff entry.
@@ -76,9 +76,9 @@ they aren't mistaken for bugs.
 
 - **scry** — Scry is now a real mechanic: `engine.scry(actor, owner, x)` lets a
   brain reorder the top of any deck (own or enemy), driven by a composable
-  `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Wounds.
+  `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Injuries.
   Enemy-deck: bury their threats and the color that beats your attacks, leave
-  junk (and their Wounds) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
+  junk (and their Injuries) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
 - **Initiative Shift, rewritten to match the current Wheel** — `_apply_shift`
   now walks the actual circular path between a token's old and new slot
   (`rules/combat.md`, `rules/card-glossary.md`), correctly for any wheel size,

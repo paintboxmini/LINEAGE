@@ -70,7 +70,7 @@ Small things are slightly off while he's around. The party compares notes later 
 
 ## Rest
 
-Short rest available. Wounds reduce by 1. Decks reset. The beds work.
+Short rest available. Injuries reduce by 1. Decks reset. The beds work.
 
 This is the last clean rest before Briarwatch.
 

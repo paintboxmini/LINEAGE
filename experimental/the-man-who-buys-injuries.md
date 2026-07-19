@@ -1,4 +1,4 @@
-# The Man Who Buys Wounds
+# The Man Who Buys Injuries
 
 *Standalone roadside NPC encounter, anywhere on the Vulture's Nest–Briarwatch road. Early tier. Non-violent by default; the teeth are in the terms.*
 
@@ -6,7 +6,7 @@
 
 ## Intent
 
-Give the party their first *bargain* — relief now, price unspecified, seller polite. Teaches Wound economy by offering to solve it, and teaches players to read a deal the way they read a creature.
+Give the party their first *bargain* — relief now, price unspecified, seller polite. Teaches Injury economy by offering to solve it, and teaches players to read a deal the way they read a creature.
 
 ---
 
@@ -22,7 +22,7 @@ If anyone in the party is carrying injuries, he mentions — mildly, the way a m
 
 ## The Offer
 
-Weck will remove **one Wound, permanently — from a player's hand, discard pile, or deck, wherever it sits** — he is precise about the word *permanently* — in exchange for:
+Weck will remove **one Injury, permanently — from a player's hand, discard pile, or deck, wherever it sits** — he is precise about the word *permanently* — in exchange for:
 
 1. A token payment to the player of a few coins ("so it's a sale"), and
 2. The player's name, written in his ledger, in their own hand.
@@ -33,7 +33,7 @@ That is the whole price. He answers questions honestly and unhelpfully: *what do
 
 ## Approaches
 
-- **Sell.** The Wound is destroyed — real, immediate, mechanical relief. The name goes in the ledger. Nothing else happens. (Yet. The ledger is a GM hook; what Weck is collecting toward is not written here.)
+- **Sell.** The Injury is destroyed — real, immediate, mechanical relief. The name goes in the ledger. Nothing else happens. (Yet. The ledger is a GM hook; what Weck is collecting toward is not written here.)
 - **Refuse.** He nods, genuinely unbothered, and recommends the Roadhouse stew.
 - **Probe.** Read (DC 13): Weck is not lying about anything, which is worse. Observe (DC 13): the ledger's earlier pages hold many names in many hands; a few are neatly crossed out. He will not say what crossing-out means. He will say it isn't his doing.
 - **Rob or threaten him.** He cooperates completely — hands over the coin, the cart, the ledger, all of it — and the ledger's pages are blank to everyone whose name isn't in it. The party has stolen a horse and an empty book from a man who watched them do it politely. He walks toward Briarwatch. Somewhere behind them, the fair prices stop being mentioned.
@@ -48,5 +48,5 @@ Sold: one deck is permanently lighter, one name is somewhere it can't be unsigne
 
 ## Related Documents
 
-- `rules/card-glossary.md` — WOUND (short-rest removal is the honest version of what Weck sells)
+- `rules/card-glossary.md` — INJURY (short-rest removal is the honest version of what Weck sells)
 - `world/tonal-bible.md` — warmth containing something wrong

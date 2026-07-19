@@ -16,7 +16,7 @@ Range: Melee
 RED — BODY — COIL
 Attack: Body + d6
 Effect: If the defender changed position since their last turn, this attack gains Deadly.
-Defensive Bonus: Gain Armour 2.
+Defensive Bonus: Gain Resist 2.
 Range: Melee
 *"It only ever needed you to move."*
 
