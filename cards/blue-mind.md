@@ -35,8 +35,8 @@ Range: Ranged
 **PREDICT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender can't use items before their next turn
-Defensive Bonus: Negate the attacker's next item use
+Effect: Defender gains Sealed
+Defensive Bonus: Attacker gains Sealed
 Range: Melee
 *"Tomorrow's victory begins with today's preparation."*
 
@@ -55,7 +55,7 @@ Range: Ranged
 **DISTRACT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Negate the defender's next item use
+Effect: Defender gains Sealed
 Defensive Bonus: Attacker must attack you on their next turn if able
 Range: Both
 *"Attention divided is power diminished."*

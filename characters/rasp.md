@@ -4,7 +4,7 @@
 
 **Cards:** `cards/rasp.md`
 
-*Stat block and deck are a starting point. Scale to match where she enters the story — early campaign she's the ally nobody quite remembers helping them, late campaign she's the reason a fight everyone thought was lost, wasn't. Adjust Mind, HP, and card count before use.*
+*Stat block and deck are a starting point. Scale to match where she enters the story — early campaign she's the ally nobody quite remembers helping them, late campaign she's the reason a fight everyone thought was lost, wasn't. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands her more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
 **Mind 4 / Body 3 / Soul 5 — HP 15**
 **Creature Threat Rating:** 12

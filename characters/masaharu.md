@@ -4,7 +4,7 @@
 
 **Cards:** `cards/masaharu.md`
 
-*Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Mind, HP, and card count before use.*
+*Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands him more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
 **Mind 5 / Body 3 / Soul 4 — HP 15**
 **Creature Threat Rating:** 12
