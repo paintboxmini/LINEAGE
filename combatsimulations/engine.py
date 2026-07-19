@@ -54,6 +54,24 @@ def _rolled_die(die, rng, me):
     return roll(die, rng)
 
 
+# Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
+# SYNCHRONY) — cleared for real on Collapse, below. Pure-Anchored kinds
+# (rooted_oath, ledger) are deliberately left alone: Anchored's own glossary
+# rule only ends on moving position, never mentions Collapse, and since a
+# Collapsed combatant can't take turns anyway they go dormant on their own —
+# explicitly removing them would be inventing a rule these cards never stated.
+_ENDS_ON_COLLAPSE = {'synchrony', 'slipstream'}
+
+
+def _clear_ongoing_on_collapse(target):
+    """Found via Drew asking whether Collapse actually ends an Anchored/ongoing
+    effect in the sim — it didn't. Nothing ever cleared `ongoing` on collapse,
+    which only became a real (not just theoretical) bug once revival from
+    Collapse became possible: without this, a revived combatant's old
+    "ends if you collapse" effects would silently resume."""
+    target.ongoing = [o for o in target.ongoing if o['kind'] not in _ENDS_ON_COLLAPSE]
+
+
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
@@ -461,6 +479,7 @@ class Duel:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            _clear_ongoing_on_collapse(target)
             _leave_wheel(self, self.queue, target)
         elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
             # Only reachable already-Collapsed — the single-hit-floor above

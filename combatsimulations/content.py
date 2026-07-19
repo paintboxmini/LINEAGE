@@ -217,12 +217,10 @@ def _pain_is_fuel_defense(engine, me, foe):
     engine.deal(foe, 2, unpreventable=True)
 
 
+def _brace_effect(engine, me, foe):
+    me.resist += 2
 def _brace_defense(engine, me, foe):
-    me.resist += 3
-    # Effect ("next successful attack against you deals -3") is unmodeled --
-    # no existing engine hook for a single-hit incoming-damage reduction
-    # distinct from Resist's halving; same shape as ANTICIPATE's dead effect.
-    # Not the reason this card is being registered right now.
+    me.resist += 2
 
 
 def _paradox_effect(engine, me, foe):
@@ -506,14 +504,17 @@ def _shared_burden_defense(engine, me, foe):
 
 # --- Red: front-line, protection, AoE ---
 def _strike_defense(engine, me, foe):
+    # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
+    if getattr(foe, '_redirect_dmg', None) is None:
+        return
     engine.deal(foe, 2, unpreventable=True)
 
 def _guard_effect(engine, me, foe):
     for a in engine.allies(me):
-        a.resist += 2                      # allies gain Resist 2
+        a.resist += 1                      # all allies gain Resist
 def _guard_defense(engine, me, foe):
     for a in engine.allies(me):
-        a.resist += 2                      # allies gain Resist 2
+        a.resist += 1                      # all allies gain Resist
 
 def _intercept_setup(engine, me, foe):
     me._intercept = True                   # next time an ally is attacked, I defend
@@ -621,6 +622,17 @@ def _synchrony_effect(engine, me, foe):
 def _synchrony_defense(engine, me, foe):
     me.resist += 1
 
+def _slipstream_defense(engine, me, foe):
+    me.evade += 1
+
+def _slipstream_effect(engine, me, foe):
+    # "Whenever an ally passes through your position in the initiative order"
+    # needs the wheel's own path-walk (_apply_shift/_rotate_current) to know
+    # when that happens — no hook for it yet, left unmodeled, same as STARING
+    # CONTEST's positional trigger. What IS real and tested: the ongoing entry
+    # itself, and that it's correctly cleared on Collapse (_clear_ongoing_on_collapse).
+    me.ongoing.append({'kind': 'slipstream', 'owner': me, 'anchor': me.position})
+
 def _rooted_oath_effect(engine, me, foe):
     me.ongoing.append({'kind': 'rooted_oath', 'owner': me, 'anchor': me.position})
 def _rooted_oath_defense(engine, me, foe):
@@ -697,7 +709,7 @@ def _recover_effect(engine, me, foe):
     c = me.draw_one(engine.rng)
     if c:
         me.hand.append(c)
-    engine.heal(me, 2)
+    engine.heal(me, 3)
 _recover_defense = _recover_effect   # identical text both sides
 
 def _flow_effect(engine, me, foe):
@@ -778,7 +790,7 @@ def build_cards():
     # Steele — Red
     add("BLOOD TITHE", 'R', 'body', 'both', 4,
         effect=_blood_tithe_effect, defense=_blood_tithe_defense)
-    add("BRACE", 'R', 'body', 'melee', 4, defense=_brace_defense)
+    add("BRACE", 'R', 'body', 'melee', 2, effect=_brace_effect, defense=_brace_defense)
     add("GAMBLER'S RUIN", 'R', 'body', 'melee', None,
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
     add("REPEL", 'R', 'body', 'melee', 2,
@@ -815,6 +827,7 @@ def build_cards():
     add("PARTITION", 'B', 'mind', 'both', 2,
         effect=_partition_effect, defense=_partition_defense)
     add("UNNAME", 'B', 'mind', 'both', 2, effect=_unname_effect, defense=_unname_defense)
+    add("SLIPSTREAM", 'B', 'mind', 'both', 2, effect=_slipstream_effect, defense=_slipstream_defense)
     add("TAINT", 'B', 'mind', 'ranged', 2,
         effect=_taint_effect, defense=_taint_defense)
     add("ERODE", 'B', 'mind', 'both', 4,
@@ -832,7 +845,7 @@ def build_cards():
 
     # --- Expanded set: Red ---
     add("STRIKE", 'R', 'body', 'melee', 8, defense=_strike_defense)
-    add("GUARD", 'R', 'body', 'melee', 4, effect=_guard_effect, defense=_guard_defense)
+    add("GUARD", 'R', 'body', 'melee', 2, effect=_guard_effect, defense=_guard_defense)
     add("INTERCEPT", 'R', 'body', 'melee', 4,
         effect=_intercept_setup, defense=_intercept_defense)
     add("RALLY", 'R', 'body', 'both', 4, effect=_rally_effect, defense=_rally_defense)
@@ -874,7 +887,7 @@ def build_cards():
     add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'both', 4, defense=_weathered_defense)  # effect DEAD (delayed trigger)
     add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
-    add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
+    add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 2,
         effect=_shade_away_effect, defense=_shade_away_defense)

@@ -6,7 +6,7 @@
 RED — BODY
 Attack: Body + d8
 Effect: None
-Defensive Bonus: Deal 2 damage to attacker
+Defensive Bonus: Deal 2 damage to attacker. Only on a clean win — not a tie.
 Range: Melee
 *"Sometimes the direct path is the wisest path."*
 
@@ -34,9 +34,9 @@ Range: Both
 
 **GUARD**
 RED — BODY
-Attack: Body + d4
-Effect: Allies gain Resist 2
-Defensive Bonus: Allies gain Resist 2
+Attack: Body + d2
+Effect: All allies gain Resist
+Defensive Bonus: All allies gain Resist
 Range: Melee
 *"Protection shared is protection doubled."*
 
@@ -54,9 +54,9 @@ Range: Melee
 
 **BRACE**
 RED — BODY
-Attack: Body + d4
-Effect: Next successful attack against you deals -3 damage
-Defensive Bonus: Gain Resist 3
+Attack: Body + d2
+Effect: Gain Resist 2
+Defensive Bonus: Gain Resist 2
 Range: Melee
 *"Stand firm and let them come to you."*
 
@@ -64,9 +64,9 @@ Range: Melee
 
 **RECOVER**
 RED — BODY
-Attack: Body + d4
-Effect: Draw 1 and heal 2 HP
-Defensive Bonus: Draw 1 card and heal 2 HP
+Attack: Body + d2
+Effect: Draw 1 and heal 3 HP
+Defensive Bonus: Draw 1 and heal 3 HP
 Range: Both
 *"Rest between battles wins the war."*
 
@@ -75,7 +75,7 @@ Range: Both
 **PULL**
 RED — BODY
 Attack: Body + d4
-Effect: Pull target to frontline
+Effect: Pull defender to frontline
 Defensive Bonus: Pull attacker to frontline
 Range: Both
 *"The cliff always pulls things closer."*

@@ -276,7 +276,7 @@ Range: Both
 **SLIPSTREAM**
 BLUE — MIND
 Attack: Mind + d2
-Effect: Until the end of combat, whenever an ally passes through your position in the initiative order, draw a card. Ends if you die or leave combat.
+Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card. Ends if you collapse.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*

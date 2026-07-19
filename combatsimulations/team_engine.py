@@ -22,7 +22,8 @@ Policies for teams implement:
 import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
-                    _apply_shift, _rotate_current, _leave_wheel, _join_wheel)
+                    _apply_shift, _rotate_current, _leave_wheel, _join_wheel,
+                    _clear_ongoing_on_collapse)
 
 
 class Battle:
@@ -98,6 +99,7 @@ class Battle:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            _clear_ongoing_on_collapse(target)
             self._say(f"    {target.name} COLLAPSES")
             _leave_wheel(self, self.queue, target)
         elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
