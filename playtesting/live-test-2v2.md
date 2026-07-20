@@ -66,18 +66,19 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
-- Garnet's hand: RALLY, MOCKERY (STRIKE played turn 2, now in discard)
+- Garnet's hand: RALLY (STRIKE played turn 2, MOCKERY played turn 3, both in discard)
 
 ## Discard piles
 
 - Moss: RENEWAL
-- Garnet: STRIKE
+- Garnet: STRIKE, MOCKERY
 
 ## Status markers (visible to both sides once applied)
 
 - Moss:
 - Garnet:
 - Crimson: Ward (from DEFLECT's Effect, turn 2 — his own to track/spend, noted here since status markers are public)
+- Sky: must attack Garnet next turn if able (from MOCKERY's Defensive Bonus, turn 3 — his own to track, noted here since status markers are public)
 
 ---
 
@@ -99,4 +100,8 @@ Crimson reveals **DEFLECT** (Blue, Mind + d4). Blue beats Red — attacker wins 
 
 **Turn 3 — Sky.** Attacks Garnet. Sky is Backline, Garnet is Frontline — not both Frontline, so Melee is illegal for this exchange, Ranged and Both are fine.
 
-Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). Blind defense: **MOCKERY** (Green, Both, Defensive Bonus: target must attack you if able on their next turn). RALLY's Defensive Bonus is still dead with no Backline allies — true in a tie too — while MOCKERY beats a Blue attack outright and still gets its Defensive Bonus on a Green tie; only loses clean to Red. Sky's deck leans Blue heaviest, so this is the better bet by a real margin, not just default-to-the-one-that-isn't-dead. Awaiting Drew's reveal.
+Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). Blind defense: **MOCKERY** (Green, Both, Defensive Bonus: target must attack you if able on their next turn). RALLY's Defensive Bonus is still dead with no Backline allies — true in a tie too — while MOCKERY beats a Blue attack outright and still gets its Defensive Bonus on a Green tie; only loses clean to Red. Sky's deck leans Blue heaviest, so this is the better bet by a real margin, not just default-to-the-one-that-isn't-dead.
+
+Sky reveals **CALCULATE** (Blue, Ranged, Mind + d4, Effect: move target enemy to Backline; Defensive Bonus: move target to Frontline). Green beats Blue — **defender wins.** No damage. MOCKERY's Defensive Bonus triggers: **Sky must attack Garnet again next turn if able.** The read paid off. Both cards to discard — Garnet's hand is down to RALLY alone.
+
+**Turn 4 — Garnet.** Up next in the wheel — my side's turn to attack.
