@@ -136,7 +136,7 @@ PROFILE's Effect resolves (attacker won): Scry 2 on Crimson's own deck, then dra
 
 Garnet's hand: PROFILE, TWIN STRIKE. Garnet's Frontline, Sky's Backline, so TWIN STRIKE (Melee) is illegal — forced down to one real option again. Announced blind: **PROFILE** (Blue, Both, Mind + d4, Defensive Bonus: Attacker gains Staggered).
 
-Sky reveals **PAIN IS FUEL** (Red, Both, Body + d4, Effect: Gain Resist). Passed on STILLNESS on sight of Garnet's hand size — only one card, so a random-discard Effect wasn't worth much right now.
+Sky reveals **PAIN IS FUEL** (Red, Both, Body + d4, Effect: Gain Resist). Correction on the reasoning — the STILLNESS mention wasn't a genuine tactical pass, it was a plant: narrating the draw was meant to bait a Green pick out of Garnet (Green beats Blue, and STILLNESS is Blue), setting up PAIN IS FUEL's Red to land clean against it. Didn't matter either way — Garnet's only Green card, TWIN STRIKE, was already range-illegal this turn (Melee vs. a Backline Sky), so PROFILE was forced regardless of any read, bait or otherwise.
 
 Blue beats Red — **defender wins clean.** No damage to Garnet, and Sky's own Effect never triggers (attacker-win-or-tie only). PROFILE's Defensive Bonus fires: **Sky gains Staggered** — his next attack or defense gets skipped. Both cards to discard.
 
