@@ -193,3 +193,5 @@ Moss's hand: STILLNESS (now legal — she's Backline, Crimson's Frontline, "not 
 Green beats Blue — **attacker wins clean.** Damage: Soul 2 + roll 1 = **3.** No Resist left to soften it. **Moss takes 3, HP 3 → 0. She Collapses.** ROOTED OATH's Effect resolves (Anchored — target ally gains Deadly): Crimson's pick, presumably Sky. Moss leaves the initiative wheel until healed or revived. Both cards to discard.
 
 **It's down to Garnet alone on my side, against Crimson and Sky both.**
+
+**Called here, turn 18.** Garnet's facing 1v2 with no realistic path back — estimated 3–6 more turns to a loss, not worth playing out for data the last several turns had already given. Full findings and summary: `playtesting/live-test-2v2-review.md`.
