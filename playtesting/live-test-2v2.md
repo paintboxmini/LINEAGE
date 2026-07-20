@@ -20,7 +20,7 @@ Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ## Moss
 
-**Mind 2 / Body 3 / Soul 4 — HP 15**
+**Mind 2 / Body 3 / Soul 4 — HP 15, currently 13** (took 2 from Crimson's STRIKE, turn 5)
 **Creature Threat Rating:** 9
 Hand size 2 (Mind 2, floor).
 
@@ -65,12 +65,12 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
+- Moss's hand: DIG IN (PATIENCE played turn 5; deck remainder: STILLNESS, WITNESS, FOCUS, GUARD, ROOTED OATH, ENDURE)
 - Garnet's hand: PROFILE, TWIN STRIKE (RALLY played turn 4; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
 
 ## Discard piles
 
-- Moss: RENEWAL
+- Moss: RENEWAL, PATIENCE
 - Garnet: STRIKE, MOCKERY, RALLY
 
 ## Status markers (visible to both sides once applied)
@@ -116,4 +116,12 @@ Crimson reveals **PARADOX** (Blue, Both, Mind + d4, Special Rule: reverses the R
 
 Damage: Body 4 + roll 1 = **5. Crimson takes 5, HP 17 → 12.** RALLY's Effect resolves (attacker won): pay 5 HP, all Frontline allies gain **Deadly** — that's both Moss and Garnet. **Garnet pays the cost, HP 13 → 8.** Both cards to discard.
 
-**Turn 5 — Moss.** Wheel wraps back around.
+**Turn 5 — Moss.** Wheel wraps back around. Draws to hand size 2 — hand's now PATIENCE, DIG IN, both Melee. Frontline vs Frontline Crimson is the only legal Melee target (Sky's Backline), so **Moss attacks Crimson.**
+
+Drew ready — STRIKE (Red). Reasoning given up front: with both sides apparently out of Blue this exchange, Red is the safe-or-better pick (only loses to Blue, and there's none in play). Also drew REND this turn and held it back — its Defensive Bonus seeds an Injury into the attacker's deck instead of blocking damage, but Moss's deck still has 6 cards left before that Injury would ever surface, so the delayed payoff wasn't worth it over STRIKE's immediate one.
+
+Moss's card, held back until now per the same protocol: **PATIENCE** (Green, Soul + d4, Range Melee — legal, both Frontline). No "didn't attack last turn" bonus this time, she attacked turn 1.
+
+Red beats Green — **defender wins clean.** No damage to Crimson. STRIKE's Defensive Bonus triggers (clean win, not a tie): **deal 2 damage to the attacker — Moss takes 2, HP 15 → 13.** Moss's banked Deadly isn't spent — her own damage never got computed on a clean loss, so it carries forward. Both cards to discard.
+
+**Turn 6 — Crimson.** Up next in the wheel.
