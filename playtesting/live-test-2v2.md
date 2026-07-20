@@ -30,6 +30,7 @@ Hand size 2 (Mind 2, floor).
 - Green: PATIENCE, RENEWAL, WITNESS, ROOTED OATH
 
 **Position:** Backline (start)
+**Appearance:** Muted greens and browns, moves like she's already decided not to be the first thing you notice. Stands still at range, watching hands more than faces.
 
 ## Garnet
 
@@ -43,6 +44,7 @@ Hand size 3.
 - Green: TWIN STRIKE, MOCKERY
 
 **Position:** Frontline (start)
+**Appearance:** Heavyset, rust-and-burgundy leathers, knuckles taped over old scars. Plants his feet at Frontline like the ground owes him something.
 
 ---
 
