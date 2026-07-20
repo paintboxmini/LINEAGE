@@ -8,7 +8,7 @@
 
 ## Sky (Drew's side, for my own resolution math only — not narrated)
 
-**Mind 4 / Body 3 / Soul 2 — HP 15**
+**Mind 4 / Body 3 / Soul 2 — HP 15, currently 10** (took 5 from Garnet's FORGET, turn 12)
 Hand size 4. Deck 9 (4 Blue / 3 Red / 2 Green).
 
 ## Crimson (Drew's side, for my own resolution math only — not narrated)
@@ -66,17 +66,17 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: *empty* (FOCUS played turn 10; deck order now GUARD-on-top, then STILLNESS, ENDURE, ROOTED OATH, WITNESS)
-- Garnet's hand: TWIN STRIKE, BRACE, FORGET (drew FORGET turn 12; deck remainder: ANTICIPATE)
+- Garnet's hand: TWIN STRIKE, BRACE (FORGET played turn 12; deck remainder: ANTICIPATE)
 
 ## Discard piles
 
 - Moss: RENEWAL, PATIENCE, DIG IN, FOCUS
-- Garnet: STRIKE, MOCKERY, RALLY, PAIN IS FUEL, TRAMPLE
+- Garnet: STRIKE, MOCKERY, RALLY, PAIN IS FUEL, TRAMPLE, FORGET
 
 ## Status markers (visible to both sides once applied)
 
 - Moss: Deadly x1 (turn 4, still banked), Resist x1 (from GUARD's Effect, turn 9)
-- Garnet: Deadly x1 (turn 4, still banked), Resist x2 (x1 from PAIN IS FUEL's tie-Effect turn 8, x1 more from GUARD's Effect turn 9)
+- Garnet: Resist x2 (from turns 8 and 9). Deadly x1, banked since turn 4, finally spent turn 12.
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
 - Sky: clean — Staggered (turn 7) resolved and cleared turn 11 (moved to Frontline instead of attacking), MOCKERY's taunt (turn 3) already spent.
 
@@ -160,4 +160,10 @@ Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to mat
 
 **Garnet attacks Sky with FORGET** — Crimson's already carrying the Rend status (his next hit taken converts to an Injury instead of damage), so pressuring him wouldn't actually cost him HP right now. Sky's untouched all fight; better target for real damage.
 
-Drew ready. Garnet's card, announced blind: **FORGET** (Blue, Ranged, Mind + d2, Effect: Defender discards 1 card). Awaiting Drew's reveal.
+Drew ready. Garnet's card, announced blind: **FORGET** (Blue, Ranged, Mind + d2, Effect: Defender discards 1 card).
+
+Sky's reveal, WITNESS, turned out illegal — Melee, but Garnet (the attacker) is Backline, so "both Frontline" isn't met. Caught after FORGET was already revealed, so a free re-pick would mean choosing with full knowledge of the attack — not blind anymore. New house rule adopted on the spot: illegal picks caught *before* the opponent's card is known can be swapped freely; caught *after*, it's too late, and it resolves as no legal defense.
+
+**No legal defense — attacker wins automatically.** Deadly finally cashes in, banked since turn 4: rolled twice (2, 2), damage = Mind 3 + 2 = **5. Sky takes 5, HP 15 → 10.** FORGET's Effect: Sky discards 1 card at random (his own to resolve). FORGET to Garnet's discard.
+
+**Turn 13 — Moss.** Up next.
