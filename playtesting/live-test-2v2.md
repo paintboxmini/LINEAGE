@@ -78,7 +78,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 - Moss: Deadly x1 (from RALLY's Effect, turn 4 — she's Frontline)
 - Garnet: Deadly x1 (from RALLY's Effect, turn 4 — self-included, also Frontline)
 - Crimson: Ward, still unused (from DEFLECT's Effect, turn 2 — Ward blocks debuffs, not damage, so RALLY's damage didn't spend it; his own to track)
-- Sky: must attack Garnet next turn if able (from MOCKERY's Defensive Bonus, turn 3 — his own to track, noted here since status markers are public)
+- Sky: Staggered (from PROFILE's Defensive Bonus, turn 7 — his own to track). MOCKERY's taunt (turn 3) resolved on schedule turn 7 and is spent.
 
 ---
 
@@ -134,4 +134,10 @@ PROFILE's Effect resolves (attacker won): Scry 2 on Crimson's own deck, then dra
 
 **Turn 7 — Sky.** Up next in the wheel — MOCKERY's Defensive Bonus from turn 3 comes due: **Sky must attack Garnet this turn if able.** Draws to hand size 4, STILLNESS among the new cards.
 
-Garnet's hand: PROFILE, TWIN STRIKE. Garnet's Frontline, Sky's Backline, so TWIN STRIKE (Melee) is illegal — forced down to one real option again. Announced blind: **PROFILE** (Blue, Both, Mind + d4, Defensive Bonus: Attacker gains Staggered). Awaiting Drew's reveal and reasoning.
+Garnet's hand: PROFILE, TWIN STRIKE. Garnet's Frontline, Sky's Backline, so TWIN STRIKE (Melee) is illegal — forced down to one real option again. Announced blind: **PROFILE** (Blue, Both, Mind + d4, Defensive Bonus: Attacker gains Staggered).
+
+Sky reveals **PAIN IS FUEL** (Red, Both, Body + d4, Effect: Gain Resist). Passed on STILLNESS on sight of Garnet's hand size — only one card, so a random-discard Effect wasn't worth much right now.
+
+Blue beats Red — **defender wins clean.** No damage to Garnet, and Sky's own Effect never triggers (attacker-win-or-tie only). PROFILE's Defensive Bonus fires: **Sky gains Staggered** — his next attack or defense gets skipped. Both cards to discard.
+
+**Turn 8 — Garnet.** Up next in the wheel.
