@@ -78,7 +78,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 - Moss: Deadly x1 (turn 4, still banked), Resist x1 (from GUARD's Effect, turn 9)
 - Garnet: Deadly x1 (turn 4, still banked), Resist x2 (x1 from PAIN IS FUEL's tie-Effect turn 8, x1 more from GUARD's Effect turn 9)
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
-- Sky: Staggered (from PROFILE's Defensive Bonus, turn 7 — his own to track). MOCKERY's taunt (turn 3) resolved on schedule turn 7 and is spent.
+- Sky: clean — Staggered (turn 7) resolved and cleared turn 11 (moved to Frontline instead of attacking), MOCKERY's taunt (turn 3) already spent.
 
 ---
 
@@ -154,4 +154,6 @@ Same color — **tie.** No damage. GUARD's Effect triggers on a tie: **both Moss
 
 Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to matter: same color — **tie.** No damage. PROFILE's Effect resolves on Crimson's own deck (Scry 2, draw 1). FOCUS's Defensive Bonus resolves for Moss: **top card of her discard (GUARD) goes back on top of her deck** — she'll draw it again next chance. FOCUS's own "return to hand" line is its Effect, which only applies when she plays it as an attack — defending with it, it discards normally like anything else. Both cards to discard.
 
-**Turn 11 — Sky.** Up next.
+**Turn 11 — Sky.** Staggered from turn 7 comes due — per the glossary, "your attack fails to happen on your turn," not the whole turn forfeit. No attack this turn: Sky moves Backline → Frontline and passes on the rest. Staggered clears (its one job done). No cards revealed, no exchange.
+
+**Turn 12 — Garnet.** Up next.
