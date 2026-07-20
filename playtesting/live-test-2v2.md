@@ -66,7 +66,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
-- Garnet's hand: RALLY (STRIKE played turn 2, MOCKERY played turn 3, both in discard)
+- Garnet's hand: RALLY, PROFILE, TWIN STRIKE (drew 2 turn 4; STRIKE and MOCKERY already in discard; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
 
 ## Discard piles
 
@@ -104,4 +104,4 @@ Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). B
 
 Sky reveals **CALCULATE** (Blue, Ranged, Mind + d4, Effect: move target enemy to Backline; Defensive Bonus: move target to Frontline). Green beats Blue — **defender wins.** No damage. MOCKERY's Defensive Bonus triggers: **Sky must attack Garnet again next turn if able.** The read paid off. Both cards to discard — Garnet's hand is down to RALLY alone.
 
-**Turn 4 — Garnet.** Up next in the wheel — my side's turn to attack.
+**Turn 4 — Garnet.** Draws to hand size 3 (was down to just RALLY). New hand: RALLY, PROFILE, TWIN STRIKE. Attacks Crimson. Card held back pending Drew's blind defense commit.
