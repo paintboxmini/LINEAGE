@@ -20,6 +20,9 @@ Evade, Resist, Deadly, Fortress, Anchored, and Quick. A card that references thi
 **(1) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
+**(2) Reveal Hand** (Break, Read)
+At the table, this means naming each card in hand and its color aloud — not reading the full card text. The opponent learns the shape of your options, not the exact outcomes each one produces. Simulator play doesn't need this distinction; it already has full internal access to hand contents either way.
+
 **(11) Deadly**
 The next time you roll attack damage, roll it twice and take the higher result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
