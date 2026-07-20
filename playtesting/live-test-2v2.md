@@ -43,7 +43,7 @@ Hand size 3.
 - Red: STRIKE, BRACE, PAIN IS FUEL, RALLY
 - Green: TWIN STRIKE, MOCKERY
 
-**Position:** Backline (pushed there turn 8 — TRAMPLE; was Frontline at start)
+**Position:** Frontline (repositioned turn 16; was pushed Backline turn 8 — TRAMPLE)
 **Appearance:** Heavyset, rust-and-burgundy leathers, knuckles taped over old scars. Plants his feet at Frontline like the ground owes him something.
 
 ---
@@ -66,7 +66,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: STILLNESS (drew GUARD + STILLNESS turn 13, GUARD played same turn; deck remainder: ENDURE, ROOTED OATH, WITNESS)
-- Garnet's hand: TWIN STRIKE, BRACE (FORGET played turn 12; deck remainder: ANTICIPATE)
+- Garnet's hand: TWIN STRIKE, BRACE, ANTICIPATE (deck empty; discard reshuffles next time he needs to draw beyond hand)
 
 ## Discard piles
 
@@ -182,4 +182,6 @@ Moss's only card, STILLNESS, is Ranged — illegal for the same reason, so she h
 
 Damage: Mind 4 + roll 1 = 5 raw. Resist eats her last stack: **2 damage, HP 5 → 3.** AXIOM's Effect resolves (attacker won): names a color Moss can't play on her next reveal.
 
-**Turn 16 — Garnet.** Up next. Moss is critical.
+**Turn 16 — Garnet.** Draws his last deck card, ANTICIPATE — deck's empty now (3 in hand + 6 in discard = all 9 accounted for; next draw reshuffles). Hand is TWIN STRIKE, BRACE, ANTICIPATE — **all three Melee**, and he's still Backline. No legal attack again. **Garnet repositions to Frontline.** No exchange.
+
+**Turn 17 — Moss.** Up next. Moss is critical, 3 HP — this turn matters.
