@@ -20,7 +20,7 @@ Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ## Moss
 
-**Mind 2 / Body 3 / Soul 4 — HP 15, currently 3** (13→7→5→3 across turns 5, 6, 14, 15 — Resist saved her twice in a row)
+**Mind 2 / Body 3 / Soul 4 — HP 15, currently 0 — COLLAPSED** (13→7→5→3→0 across turns 5, 6, 14, 15, 18; Death Floor -ceil(15/2) = -8, still well above it — Collapsed, not dead)
 **Creature Threat Rating:** 9
 Hand size 2 (Mind 2, floor).
 
@@ -29,7 +29,7 @@ Hand size 2 (Mind 2, floor).
 - Red: GUARD, ENDURE, DIG IN
 - Green: PATIENCE, RENEWAL, WITNESS, ROOTED OATH
 
-**Position:** Frontline (moved turn 1, was Backline at start — CHARGE)
+**Position:** Backline (turn 17); Collapsed as of turn 18 — off the initiative wheel until revived
 **Appearance:** Muted greens and browns, moves like she's already decided not to be the first thing you notice. Stands still at range, watching hands more than faces.
 
 ## Garnet
@@ -184,4 +184,12 @@ Damage: Mind 4 + roll 1 = 5 raw. Resist eats her last stack: **2 damage, HP 5 �
 
 **Turn 16 — Garnet.** Draws his last deck card, ANTICIPATE — deck's empty now (3 in hand + 6 in discard = all 9 accounted for; next draw reshuffles). Hand is TWIN STRIKE, BRACE, ANTICIPATE — **all three Melee**, and he's still Backline. No legal attack again. **Garnet repositions to Frontline.** No exchange.
 
-**Turn 17 — Moss.** Up next. Moss is critical, 3 HP — this turn matters.
+**Turn 17 — Moss.** Draws WITNESS (hand: STILLNESS, WITNESS). Neither is usable: STILLNESS is Ranged and everyone's Frontline right now; WITNESS is Green, still banned by AXIOM's Effect on her next reveal — this one. No legal attack. **Moss repositions to Backline instead** — purely defensive at 3 HP, and it also fixes STILLNESS's range problem for next time. No exchange.
+
+**Turn 18 — Crimson.** Draws STRIKE. **Attacks Moss with ROOTED OATH** (Green, Both, Soul + d4 — legal regardless of position).
+
+Moss's hand: STILLNESS (now legal — she's Backline, Crimson's Frontline, "not both Frontline" satisfied), WITNESS (still illegal — the Green ban from turn 15 is still live, this is only her second reveal since). Forced to **STILLNESS** (Blue).
+
+Green beats Blue — **attacker wins clean.** Damage: Soul 2 + roll 1 = **3.** No Resist left to soften it. **Moss takes 3, HP 3 → 0. She Collapses.** ROOTED OATH's Effect resolves (Anchored — target ally gains Deadly): Crimson's pick, presumably Sky. Moss leaves the initiative wheel until healed or revived. Both cards to discard.
+
+**It's down to Garnet alone on my side, against Crimson and Sky both.**
