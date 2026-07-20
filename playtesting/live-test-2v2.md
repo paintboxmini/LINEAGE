@@ -59,16 +59,14 @@ Hand size 3.
 
 Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't break it. Per `rules/combat.md`: players choose their own order against each other first (Sky vs. Crimson — Drew's call), then the player(s) go ahead of the enemy on any remaining player-vs-enemy tie (Garnet last).
 
-**Wheel order:** Moss (12 o'clock) → Sky/Crimson in Drew's chosen order → Garnet.
+**Wheel order:** Moss → Crimson → Sky → Garnet (Drew's call).
 
 ---
 
 ## Hands (drawn to hand size at combat start — private)
 
-*To be filled in once decks are shuffled and opening hands drawn.*
-
-- Moss's hand:
-- Garnet's hand:
+- Moss's hand: RENEWAL, PATIENCE (drawn, shuffled deck remainder: STILLNESS, ENDURE, DIG IN, FOCUS, WITNESS, GUARD, ROOTED OATH — bottom to top of draw order)
+- Garnet's hand: *drawn when his turn comes up*
 
 ## Discard piles
 
@@ -85,3 +83,5 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Turn Log
 
 *Updated live as we play.*
+
+**Turn 1 — Moss.** Attacks Crimson. Hand was RENEWAL/PATIENCE; PATIENCE is Melee and Moss is Backline, so it's not a legal play right now — down to one real option. Target declared; card held back pending Drew's blind defense commit per the reveal protocol.
