@@ -86,16 +86,18 @@ On your turn, you may take **one action:**
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
-| Wait | Take no action; instead move yourself later in the order to a position you choose (Initiative Shift −X). Trades this turn for exact positioning. See below. Counts as "waiting." |
+| Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
-**Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: choose how many slots **X** to move *later* in the order (an Initiative Shift of **−X**), and you act normally when the marker reaches your new position. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
+**Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: pick any slot later in the order and reinsert yourself there directly, and you act normally when the marker reaches it. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
 
-The trade is **an action for a position.** You take one fewer action this fight — that is the whole cost; your turn count simply drops relative to everyone else — and in return you land exactly where you want in the order. Move a slot or two and you act again shortly, later this cycle. Move X far enough to **lap the wheel** and the marker passes you once per full lap before honoring your slot — a way to opt out of the tempo entirely for a stretch. There is no cap on X, because moving later is always a cost, never a reward — so Wait as little or as much as you like.
+The trade is **an action for a position.** You take one fewer action this fight — that is the whole cost; your turn count simply drops relative to everyone else — and in return you land exactly where you want in the order. Land a slot or two out and you act again shortly, later this cycle. Land far enough out to **lap the wheel** and the marker passes you once per full lap before honoring your slot — a way to opt out of the tempo entirely for a stretch. There is no cap on how far out you can reinsert, because moving later is always a cost, never a reward — so Wait as little or as much as you like.
 
 Waiting sets your count to your new slot's natural arrival: the marker honors your slot the first time it reaches it. You are never passed over for having Waited — you never spent this lap's action; the forfeited action *was* the payment. (This is the difference between Waiting there and being *shifted* there: a shifted combatant's count is written by the shift, and the marker enforces it.)
 
 Its main use is **team coordination** — chaining turns into the right sequence. Move yourself to act right after an ally's setup, or right before the ally you are setting up, so a combo resolves without an enemy acting in between. The reposition persists, so one Wait fixes a combo cadence for the rest of the fight. Waiting and "passing" are the same choice, and it is what effects that reward holding back — such as Patience — key off.
+
+**Can't Wait twice in a row.** Waiting marks your token; the turn immediately after, you must take a real action — Wait is off the table until that turn resolves, then the mark clears. This is a distinct marker from Staggered's skip, with one job: closing the one real degenerate line in the system, where two combatants trade Waits back and forth forever and neither ever actually acts. Now the worst case is one mutual dodge before someone has to move.
 
 ---
 
