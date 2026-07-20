@@ -66,7 +66,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: *empty* (FOCUS played turn 10; deck order now GUARD-on-top, then STILLNESS, ENDURE, ROOTED OATH, WITNESS)
-- Garnet's hand: TWIN STRIKE, BRACE (PAIN IS FUEL played turn 8; deck remainder: FORGET, ANTICIPATE)
+- Garnet's hand: TWIN STRIKE, BRACE, FORGET (drew FORGET turn 12; deck remainder: ANTICIPATE)
 
 ## Discard piles
 
@@ -156,4 +156,8 @@ Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to mat
 
 **Turn 11 — Sky.** Staggered from turn 7 comes due — per the glossary, "your attack fails to happen on your turn," not the whole turn forfeit. No attack this turn: Sky moves Backline → Frontline and passes on the rest. Staggered clears (its one job done). No cards revealed, no exchange.
 
-**Turn 12 — Garnet.** Up next.
+**Turn 12 — Garnet.** Draws to 3 — TWIN STRIKE and BRACE are both Melee and dead while he's Backline, but the new card, **FORGET** (Blue, Ranged, Mind + d2), is legal precisely *because* he's Backline (Ranged needs not-both-Frontline). Real attack after all.
+
+**Garnet attacks Sky with FORGET** — Crimson's already carrying the Rend status (his next hit taken converts to an Injury instead of damage), so pressuring him wouldn't actually cost him HP right now. Sky's untouched all fight; better target for real damage.
+
+Card held back pending Drew's blind defense commit.
