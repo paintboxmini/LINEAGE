@@ -132,4 +132,6 @@ Crimson reveals **PROFILE** (Blue, Both, Mind + d4). Blue beats Red — **attack
 
 PROFILE's Effect resolves (attacker won): Scry 2 on Crimson's own deck, then draw 1. Saw TRAMPLE and PATIENCE — kept TRAMPLE to hand, sent PATIENCE straight to discard rather than back into the deck (Scry/Surveil's bin option) since PATIENCE rewards not having attacked last turn, and Crimson's been attacking every turn he's had. Deliberately holding off drawing more than necessary to keep PATIENCE out of a reshuffle as long as possible — real, correct reasoning about how the reshuffle-on-empty-deck rule actually works, not just flavor. Both PROFILE and DIG IN to discard.
 
-**Turn 7 — Sky.** Up next in the wheel — and MOCKERY's Defensive Bonus from turn 3 comes due: **Sky must attack Garnet this turn if able.**
+**Turn 7 — Sky.** Up next in the wheel — MOCKERY's Defensive Bonus from turn 3 comes due: **Sky must attack Garnet this turn if able.** Draws to hand size 4, STILLNESS among the new cards.
+
+Garnet's hand: PROFILE, TWIN STRIKE. Garnet's Frontline, Sky's Backline, so TWIN STRIKE (Melee) is illegal — forced down to one real option again. Announced blind: **PROFILE** (Blue, Both, Mind + d4, Defensive Bonus: Attacker gains Staggered). Awaiting Drew's reveal and reasoning.
