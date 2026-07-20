@@ -6,7 +6,7 @@
 RED — BODY
 Attack: Body + d8
 Effect: None
-Defensive Bonus: Deal 2 damage to attacker. Only on a clean win — not a tie.
+Defensive Bonus: Deal 3 damage to attacker, unpreventable. Only on a clean win — not a tie.
 Range: Melee
 *"Sometimes the direct path is the wisest path."*
 

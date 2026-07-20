@@ -475,7 +475,7 @@ def _strike_defense(engine, me, foe):
     # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
     if getattr(foe, '_redirect_dmg', None) is None:
         return
-    engine.deal(foe, 2, unpreventable=True)
+    engine.deal(foe, 3, unpreventable=True)
 
 def _guard_effect(engine, me, foe):
     for a in engine.allies(me):
