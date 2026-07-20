@@ -65,7 +65,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: *empty* (FOCUS played turn 10; deck order now GUARD-on-top, then STILLNESS, ENDURE, ROOTED OATH, WITNESS)
+- Moss's hand: STILLNESS (drew GUARD + STILLNESS turn 13, GUARD played same turn; deck remainder: ENDURE, ROOTED OATH, WITNESS)
 - Garnet's hand: TWIN STRIKE, BRACE (FORGET played turn 12; deck remainder: ANTICIPATE)
 
 ## Discard piles
@@ -162,8 +162,10 @@ Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to mat
 
 Drew ready. Garnet's card, announced blind: **FORGET** (Blue, Ranged, Mind + d2, Effect: Defender discards 1 card).
 
-Sky's reveal, WITNESS, turned out illegal — Melee, but Garnet (the attacker) is Backline, so "both Frontline" isn't met. Caught after FORGET was already revealed, so a free re-pick would mean choosing with full knowledge of the attack — not blind anymore. New house rule adopted on the spot: illegal picks caught *before* the opponent's card is known can be swapped freely; caught *after*, it's too late, and it resolves as no legal defense.
+Sky's reveal, WITNESS, turned out illegal — Melee, but Garnet (the attacker) is Backline, so "both Frontline" isn't met. Caught after FORGET was already revealed, so a free re-pick would mean choosing with full knowledge of the attack — not blind anymore. New house rule adopted on the spot: illegal picks caught *before* the opponent's card is known can be swapped freely; caught *after*, it's too late, and it resolves as no legal defense — refined further, mid-exchange: the misplayed card goes back to hand, not discard, since it was never legally played. The attacker still learns what it was; that's the real cost, not also losing the card.
 
 **No legal defense — attacker wins automatically.** Deadly finally cashes in, banked since turn 4: rolled twice (2, 2), damage = Mind 3 + 2 = **5. Sky takes 5, HP 15 → 10.** FORGET's Effect: Sky discards 1 card at random (his own to resolve). FORGET to Garnet's discard.
 
-**Turn 13 — Moss.** Up next.
+**Turn 13 — Moss.** Draws GUARD (was on top from FOCUS) plus STILLNESS. Everyone's Frontline now except Garnet, so STILLNESS (Ranged) is illegal against either target — forced to GUARD again. **Moss attacks Sky with GUARD** — skipping Crimson, same logic as before: his Rend status converts a hit to an Injury instead of real damage, and Sky's the one who's actually taken damage worth building on.
+
+Card held back pending Drew's blind defense commit.
