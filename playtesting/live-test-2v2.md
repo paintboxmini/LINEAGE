@@ -13,7 +13,7 @@ Hand size 4. Deck 9 (4 Blue / 3 Red / 2 Green).
 
 ## Crimson (Drew's side, for my own resolution math only — not narrated)
 
-**Mind 3 / Body 4 / Soul 2 — HP 17**
+**Mind 3 / Body 4 / Soul 2 — HP 17, currently 12** (took 5 from RALLY, turn 4)
 Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ---
@@ -34,7 +34,7 @@ Hand size 2 (Mind 2, floor).
 
 ## Garnet
 
-**Mind 3 / Body 4 / Soul 2 — HP 17, currently 13** (took 4 from Crimson's DEFLECT, turn 2)
+**Mind 3 / Body 4 / Soul 2 — HP 17, currently 8** (13 after DEFLECT turn 2, then paid 5 HP for RALLY's Effect turn 4)
 **Creature Threat Rating:** 9
 Hand size 3.
 
@@ -66,18 +66,18 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
-- Garnet's hand: RALLY, PROFILE, TWIN STRIKE (drew 2 turn 4; STRIKE and MOCKERY already in discard; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
+- Garnet's hand: PROFILE, TWIN STRIKE (RALLY played turn 4; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
 
 ## Discard piles
 
 - Moss: RENEWAL
-- Garnet: STRIKE, MOCKERY
+- Garnet: STRIKE, MOCKERY, RALLY
 
 ## Status markers (visible to both sides once applied)
 
-- Moss:
-- Garnet:
-- Crimson: Ward (from DEFLECT's Effect, turn 2 — his own to track/spend, noted here since status markers are public)
+- Moss: Deadly x1 (from RALLY's Effect, turn 4 — she's Frontline)
+- Garnet: Deadly x1 (from RALLY's Effect, turn 4 — self-included, also Frontline)
+- Crimson: Ward, still unused (from DEFLECT's Effect, turn 2 — Ward blocks debuffs, not damage, so RALLY's damage didn't spend it; his own to track)
 - Sky: must attack Garnet next turn if able (from MOCKERY's Defensive Bonus, turn 3 — his own to track, noted here since status markers are public)
 
 ---
@@ -104,8 +104,16 @@ Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). B
 
 Sky reveals **CALCULATE** (Blue, Ranged, Mind + d4, Effect: move target enemy to Backline; Defensive Bonus: move target to Frontline). Green beats Blue — **defender wins.** No damage. MOCKERY's Defensive Bonus triggers: **Sky must attack Garnet again next turn if able.** The read paid off. Both cards to discard — Garnet's hand is down to RALLY alone.
 
-*Retrospective, from Drew:* Sky's full turn-3 hand was CALCULATE, PAIN IS FUEL, GAMBLER'S RUIN, WITNESS. In hindsight, WITNESS (Green, assuming Garnet held no Red) would have beaten a Blue defense and tied a Green one — avoided the loss CALCULATE actually walked into. Doesn't change the resolved outcome, just logged for the record.
+*Correction — not retrospection, per Drew.* Sky's full turn-3 hand was CALCULATE, PAIN IS FUEL, GAMBLER'S RUIN, WITNESS. His point wasn't "I now know MOCKERY was Green so WITNESS would've won" — it's that WITNESS was the statistically correct play *before* any reveal, foreknowledge-free (beats Blue, ties Green, only loses to an assumed-unlikely Red). CALCULATE was a deliberate greedier line, not a mistake made in ignorance. Mislabeled this as "retrospective" the first time; noting the actual distinction here since it matters for reading the log honestly.
 
 **Turn 4 — Garnet.** Draws to hand size 3 (was down to just RALLY). New hand: RALLY, PROFILE, TWIN STRIKE. Attacks Crimson.
 
-Drew ready. Garnet's card, announced blind: **RALLY** (Red, Body + d2, Range Both, Effect: Pay 5 HP, all allies in Frontline gain Deadly). Both Moss and Garnet are Frontline right now, so this actually does something for the first time this fight — the two earlier defensive picks of it were dead cards. Awaiting Drew's reveal.
+Drew ready — reasoning given before my reveal, not after: Garnet's last shown color was Green (MOCKERY), and he reads Garnet as a Red main overall, so Blue was his best statistical bet against whatever came next.
+
+Garnet's card, announced blind: **RALLY** (Red, Body + d2, Range Both, Effect: Pay 5 HP, all allies in Frontline gain Deadly).
+
+Crimson reveals **PARADOX** (Blue, Both, Mind + d4, Special Rule: reverses the RPS outcome this turn, unless tied. Effect: Lifesteal. Defensive Bonus: Gain Ward). Base RPS: Blue beats Red, so Crimson would normally win clean here — Paradox's read was right. But its own Special Rule flips that result: **attacker wins instead.** PARADOX's Defensive Bonus never triggers — that's a defender-win-only payoff, and the reversal took the win away from him. Real backfire, not just flavor: playing Paradox into a matchup you'd already won turns a win into a loss.
+
+Damage: Body 4 + roll 1 = **5. Crimson takes 5, HP 17 → 12.** RALLY's Effect resolves (attacker won): pay 5 HP, all Frontline allies gain **Deadly** — that's both Moss and Garnet. **Garnet pays the cost, HP 13 → 8.** Both cards to discard.
+
+**Turn 5 — Moss.** Wheel wraps back around.
