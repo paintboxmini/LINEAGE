@@ -90,4 +90,6 @@ Drew ready. Moss's card, announced blind: **RENEWAL** (Soul + d2, Range Both). A
 
 Crimson reveals **CHARGE** (Red, Body + d4). Red beats Green — defender wins. Per `rules/combat.md`: no damage, Crimson's Defensive Bonus triggers ("You and the attacker move into frontline"). **Moss moves Backline → Frontline.** Both cards to their owners' discards.
 
-**Turn 2 — Crimson.** Up next in the wheel. Declare target and go through the reveal protocol.
+**Turn 2 — Crimson.** Draws to hand size 3. Attacks Garnet. Both are Frontline right now, so Ranged is illegal for either side's defense/attack this exchange — Melee and Both only.
+
+Drew ready. Garnet's blind defense: **STRIKE** (Red, Melee, Defensive Bonus: Deal 2 damage to attacker, only on a clean win). Picked over RALLY (Both, dead right now — no Backline allies to buff) on color-safety against a Red-heavy deck; MOCKERY was the other option but loses outright to a Red attack instead of tying it. Awaiting Drew's reveal.
