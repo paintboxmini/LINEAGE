@@ -34,7 +34,7 @@ Hand size 2 (Mind 2, floor).
 
 ## Garnet
 
-**Mind 3 / Body 4 / Soul 2 — HP 17**
+**Mind 3 / Body 4 / Soul 2 — HP 17, currently 13** (took 4 from Crimson's DEFLECT, turn 2)
 **Creature Threat Rating:** 9
 Hand size 3.
 
@@ -66,17 +66,18 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
-- Garnet's hand: RALLY, STRIKE, MOCKERY (drawn at combat start, per the rule — not held back for his turn; deck remainder: PROFILE, PAIN IS FUEL, BRACE, FORGET, ANTICIPATE, TWIN STRIKE)
+- Garnet's hand: RALLY, MOCKERY (STRIKE played turn 2, now in discard)
 
 ## Discard piles
 
 - Moss: RENEWAL
-- Garnet:
+- Garnet: STRIKE
 
 ## Status markers (visible to both sides once applied)
 
 - Moss:
 - Garnet:
+- Crimson: Ward (from DEFLECT's Effect, turn 2 — his own to track/spend, noted here since status markers are public)
 
 ---
 
@@ -90,6 +91,10 @@ Drew ready. Moss's card, announced blind: **RENEWAL** (Soul + d2, Range Both). A
 
 Crimson reveals **CHARGE** (Red, Body + d4). Red beats Green — defender wins. Per `rules/combat.md`: no damage, Crimson's Defensive Bonus triggers ("You and the attacker move into frontline"). **Moss moves Backline → Frontline.** Both cards to their owners' discards.
 
-**Turn 2 — Crimson.** Draws to hand size 3. Attacks Garnet. Both are Frontline right now, so Ranged is illegal for either side's defense/attack this exchange — Melee and Both only.
+**Turn 2 — Crimson.** Draws to hand size 3. Attacks Garnet — wanted Moss instead (still soft after last turn's positioning), but held no Red card to guarantee the favorable matchup against her, so took the safer bet on Garnet instead. Both are Frontline right now, so Ranged is illegal for either side's defense/attack this exchange — Melee and Both only.
 
-Drew ready. Garnet's blind defense: **STRIKE** (Red, Melee, Defensive Bonus: Deal 2 damage to attacker, only on a clean win). Picked over RALLY (Both, dead right now — no Backline allies to buff) on color-safety against a Red-heavy deck; MOCKERY was the other option but loses outright to a Red attack instead of tying it. Awaiting Drew's reveal.
+Drew ready. Garnet's blind defense: **STRIKE** (Red, Melee, Defensive Bonus: Deal 2 damage to attacker, only on a clean win). Picked over RALLY (Both, dead right now — no Backline allies to buff) on color-safety against a Red-heavy deck; MOCKERY was the other option but loses outright to a Red attack instead of tying it.
+
+Crimson reveals **DEFLECT** (Blue, Mind + d4). Blue beats Red — attacker wins clean. Damage: Mind 3 + roll 1 = **4** (corrected from an initial Body-stat slip). **Garnet takes 4, HP 17 → 13.** DEFLECT's Effect: Crimson gains Ward. STRIKE's Defensive Bonus doesn't trigger — that's a defender-clean-win-only payoff, and Garnet lost this one. Both cards to discard.
+
+**Turn 3 — Sky.** Up next in the wheel.
