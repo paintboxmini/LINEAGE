@@ -29,7 +29,7 @@ Hand size 2 (Mind 2, floor).
 - Red: GUARD, ENDURE, DIG IN
 - Green: PATIENCE, RENEWAL, WITNESS, ROOTED OATH
 
-**Position:** Backline (start)
+**Position:** Frontline (moved turn 1, was Backline at start — CHARGE)
 **Appearance:** Muted greens and browns, moves like she's already decided not to be the first thing you notice. Stands still at range, watching hands more than faces.
 
 ## Garnet
@@ -65,12 +65,12 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: RENEWAL, PATIENCE (drawn, shuffled deck remainder: STILLNESS, ENDURE, DIG IN, FOCUS, WITNESS, GUARD, ROOTED OATH — bottom to top of draw order)
+- Moss's hand: PATIENCE (RENEWAL played turn 1, now in discard)
 - Garnet's hand: RALLY, STRIKE, MOCKERY (drawn at combat start, per the rule — not held back for his turn; deck remainder: PROFILE, PAIN IS FUEL, BRACE, FORGET, ANTICIPATE, TWIN STRIKE)
 
 ## Discard piles
 
-- Moss:
+- Moss: RENEWAL
 - Garnet:
 
 ## Status markers (visible to both sides once applied)
@@ -87,3 +87,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 **Turn 1 — Moss.** Attacks Crimson. Hand was RENEWAL/PATIENCE; PATIENCE is Melee and Moss is Backline, so it's not a legal play right now — down to one real option. Target declared; card held back pending Drew's blind defense commit per the reveal protocol.
 
 Drew ready. Moss's card, announced blind: **RENEWAL** (Soul + d2, Range Both). Awaiting Drew's reveal.
+
+Crimson reveals **CHARGE** (Red, Body + d4). Red beats Green — defender wins. Per `rules/combat.md`: no damage, Crimson's Defensive Bonus triggers ("You and the attacker move into frontline"). **Moss moves Backline → Frontline.** Both cards to their owners' discards.
+
+**Turn 2 — Crimson.** Up next in the wheel. Declare target and go through the reveal protocol.
