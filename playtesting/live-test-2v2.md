@@ -75,7 +75,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Status markers (visible to both sides once applied)
 
-- Moss: Deadly x1 (turn 4, still banked), Resist spent out — 0 left after turn 15. Also: cannot play [color Sky named] on her next reveal (AXIOM's Effect, turn 15).
+- Moss: Deadly x1 (turn 4, still banked), Resist spent out — 0 left after turn 15. Also: cannot play Green on her next reveal (AXIOM's Effect, turn 15) — moot for right now, her only card (STILLNESS) is Blue anyway.
 - Garnet: Resist x3 (turns 8, 9, 13). Deadly x1, banked since turn 4, finally spent turn 12.
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
 - Sky: +1d4 on his next attack, banked (from GAMBLER'S RUIN's Defensive Bonus, turn 13 — his own to track). Staggered and MOCKERY's taunt both already resolved and spent.
