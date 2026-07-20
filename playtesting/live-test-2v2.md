@@ -97,4 +97,6 @@ Drew ready. Garnet's blind defense: **STRIKE** (Red, Melee, Defensive Bonus: Dea
 
 Crimson reveals **DEFLECT** (Blue, Mind + d4). Blue beats Red — attacker wins clean. Damage: Mind 3 + roll 1 = **4** (corrected from an initial Body-stat slip). **Garnet takes 4, HP 17 → 13.** DEFLECT's Effect: Crimson gains Ward. STRIKE's Defensive Bonus doesn't trigger — that's a defender-clean-win-only payoff, and Garnet lost this one. Both cards to discard.
 
-**Turn 3 — Sky.** Up next in the wheel.
+**Turn 3 — Sky.** Attacks Garnet. Sky is Backline, Garnet is Frontline — not both Frontline, so Melee is illegal for this exchange, Ranged and Both are fine.
+
+Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). Blind defense: **MOCKERY** (Green, Both, Defensive Bonus: target must attack you if able on their next turn). RALLY's Defensive Bonus is still dead with no Backline allies — true in a tie too — while MOCKERY beats a Blue attack outright and still gets its Defensive Bonus on a Green tie; only loses clean to Red. Sky's deck leans Blue heaviest, so this is the better bet by a real margin, not just default-to-the-one-that-isn't-dead. Awaiting Drew's reveal.
