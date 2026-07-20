@@ -101,6 +101,8 @@ Its main use is **team coordination** — chaining turns into the right sequence
 
 ## Attack Resolution
 
+**Table rule:** when declaring a target, announce the range you're attacking from too — a quick checkpoint that keeps position and legality fresh in everyone's mind before any card gets committed, not after.
+
 1. Attacker plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction. **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected. A defender with no card in hand that meets the requirement has no legal defense against this attack.
 
