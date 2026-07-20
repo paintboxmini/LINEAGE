@@ -65,19 +65,19 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: *empty* (DIG IN played turn 6; deck remainder: STILLNESS, WITNESS, FOCUS, GUARD, ROOTED OATH, ENDURE — won't draw again until her own turn 9)
+- Moss's hand: FOCUS (drew FOCUS + GUARD turn 9, GUARD played same turn; deck remainder: STILLNESS, ENDURE, ROOTED OATH, WITNESS)
 - Garnet's hand: TWIN STRIKE, BRACE (PAIN IS FUEL played turn 8; deck remainder: FORGET, ANTICIPATE)
 
 ## Discard piles
 
-- Moss: RENEWAL, PATIENCE, DIG IN
-- Garnet: STRIKE, MOCKERY, RALLY
+- Moss: RENEWAL, PATIENCE, DIG IN, GUARD
+- Garnet: STRIKE, MOCKERY, RALLY, PAIN IS FUEL, TRAMPLE
 
 ## Status markers (visible to both sides once applied)
 
-- Moss: Deadly x1 (from RALLY's Effect, turn 4 — she's Frontline)
-- Garnet: Deadly x1 (from RALLY's Effect, turn 4 — self-included, also Frontline)
-- Crimson: Ward, still unused (from DEFLECT's Effect, turn 2 — Ward blocks debuffs, not damage, so RALLY's damage didn't spend it; his own to track)
+- Moss: Deadly x1 (turn 4, still banked), Resist x1 (from GUARD's Effect, turn 9)
+- Garnet: Deadly x1 (turn 4, still banked), Resist x2 (x1 from PAIN IS FUEL's tie-Effect turn 8, x1 more from GUARD's Effect turn 9)
+- Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
 - Sky: Staggered (from PROFILE's Defensive Bonus, turn 7 — his own to track). MOCKERY's taunt (turn 3) resolved on schedule turn 7 and is spent.
 
 ---
@@ -144,4 +144,10 @@ Blue beats Red — **defender wins clean.** No damage to Garnet, and Sky's own E
 
 Crimson defends **TRAMPLE** (Red, Melee — legal, both Frontline). Same color — **tie.** No damage (the pre-rolled Deadly number never gets applied — a tie deals no damage, so it doesn't spend the stack either, same logic as a clean loss; still banked). PAIN IS FUEL's Effect triggers on a tie: **Garnet gains Resist.** TRAMPLE's Defensive Bonus isn't cancelled by anything Garnet's card does, so it triggers too: **Garnet gets pushed to Backline.** Both cards to discard.
 
-**Turn 9 — Moss.** Wheel wraps around. Garnet's now Backline, which will matter for Melee legality going forward.
+**Turn 9 — Moss.** Wheel wraps around. Draws to 2 (FOCUS, GUARD). Attacks Crimson with **GUARD** (Red, Body + d2, Melee — legal, both Frontline).
+
+Crimson defends **REND** (Red, Melee, Body + d4, Effect: shuffle 1 Injury into defender's deck if this hits; Defensive Bonus: next attack against you shuffles 1 Injury into your deck instead of dealing damage). Reasoning given: read Moss by archetype (the green character) rather than by the card actually played — same color either way this time.
+
+Same color — **tie.** No damage. GUARD's Effect triggers on a tie: **both Moss and Garnet gain Resist**, regardless of position. REND's Defensive Bonus isn't cancelled by anything GUARD does, so it triggers too: **the next successful attack against Crimson seeds an Injury into his deck instead of dealing damage** — a real status to track, not yet spent. Both cards to discard.
+
+**Turn 10 — Crimson.** Up next.
