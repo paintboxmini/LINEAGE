@@ -20,7 +20,7 @@ Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ## Moss
 
-**Mind 2 / Body 3 / Soul 4 — HP 15, currently 7** (13 after STRIKE turn 5, then took 6 from PROFILE turn 6)
+**Mind 2 / Body 3 / Soul 4 — HP 15, currently 5** (13 after turn 5, 7 after turn 6, then took 2 more from WITNESS turn 14, Resist-halved)
 **Creature Threat Rating:** 9
 Hand size 2 (Mind 2, floor).
 
@@ -75,7 +75,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Status markers (visible to both sides once applied)
 
-- Moss: Deadly x1 (turn 4, still banked), Resist x2 (turns 9 and 13)
+- Moss: Deadly x1 (turn 4, still banked), Resist x1 (had x2, one stack spent absorbing WITNESS turn 14)
 - Garnet: Resist x3 (turns 8, 9, 13). Deadly x1, banked since turn 4, finally spent turn 12.
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
 - Sky: +1d4 on his next attack, banked (from GAMBLER'S RUIN's Defensive Bonus, turn 13 — his own to track). Staggered and MOCKERY's taunt both already resolved and spent.
@@ -170,4 +170,10 @@ Sky's reveal, WITNESS, turned out illegal — Melee, but Garnet (the attacker) i
 
 Sky defends **GAMBLER'S RUIN** (Red, Melee — legal, both Frontline). Same color — **tie.** No damage. GUARD's Effect resolves: **Moss and Garnet both gain Resist again.** GAMBLER'S RUIN's Defensive Bonus resolves: **Sky adds 1d4 to his next attack**, banked for later. Both cards to discard.
 
-**Turn 14 — Crimson.** Up next.
+**Turn 14 — Crimson.** Attacks Moss with **WITNESS** (Green, Melee, Soul + d2, Effect: target ally heals 6 HP).
+
+Moss's hand is just STILLNESS (Ranged) — both she and Crimson are Frontline, so Ranged doesn't satisfy the "not both Frontline" requirement. **No legal defense — attacker wins automatically**, no illegal-pick wrinkle this time, she genuinely has nothing that works.
+
+Damage: Soul 2 + roll 2 = 4 raw. Moss's Resist eats one stack and halves it: **2 damage, HP 7 → 5.** WITNESS's Effect resolves: target ally heals 6 — **Sky heals up to his max, 15/15.** WITNESS to Crimson's discard.
+
+**Turn 15 — Sky.** Up next. Moss is getting dangerously low.
