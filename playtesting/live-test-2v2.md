@@ -20,7 +20,7 @@ Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ## Moss
 
-**Mind 2 / Body 3 / Soul 4 — HP 15, currently 5** (13 after turn 5, 7 after turn 6, then took 2 more from WITNESS turn 14, Resist-halved)
+**Mind 2 / Body 3 / Soul 4 — HP 15, currently 3** (13→7→5→3 across turns 5, 6, 14, 15 — Resist saved her twice in a row)
 **Creature Threat Rating:** 9
 Hand size 2 (Mind 2, floor).
 
@@ -75,7 +75,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Status markers (visible to both sides once applied)
 
-- Moss: Deadly x1 (turn 4, still banked), Resist x1 (had x2, one stack spent absorbing WITNESS turn 14)
+- Moss: Deadly x1 (turn 4, still banked), Resist spent out — 0 left after turn 15. Also: cannot play [color Sky named] on her next reveal (AXIOM's Effect, turn 15).
 - Garnet: Resist x3 (turns 8, 9, 13). Deadly x1, banked since turn 4, finally spent turn 12.
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
 - Sky: +1d4 on his next attack, banked (from GAMBLER'S RUIN's Defensive Bonus, turn 13 — his own to track). Staggered and MOCKERY's taunt both already resolved and spent.
@@ -176,4 +176,10 @@ Moss's hand is just STILLNESS (Ranged) — both she and Crimson are Frontline, s
 
 Damage: Soul 2 + roll 2 = 4 raw. Moss's Resist eats one stack and halves it: **2 damage, HP 7 → 5.** WITNESS's Effect resolves: target ally heals 6 — **Sky heals up to his max, 15/15.** WITNESS to Crimson's discard.
 
-**Turn 15 — Sky.** Up next. Moss is getting dangerously low.
+**Turn 15 — Sky.** Draws to 4 (SLIP THE BLADE, AXIOM, REFRACT among the new cards). Two range mistakes caught in a row before anything was committed, no penalty on either — REFRACT and STILLNESS are both Ranged, illegal against a Frontline Moss. **Attacks Moss with AXIOM** (Blue, Both, Mind + d2 — legal regardless of position).
+
+Moss's only card, STILLNESS, is Ranged — illegal for the same reason, so she has no legal defense either. Since nothing was actually offered, STILLNESS stays in her hand untouched (different from the earlier illegal-*pick* case — she never attempted this one). **Attacker wins automatically.**
+
+Damage: Mind 4 + roll 1 = 5 raw. Resist eats her last stack: **2 damage, HP 5 → 3.** AXIOM's Effect resolves (attacker won): names a color Moss can't play on her next reveal.
+
+**Turn 16 — Garnet.** Up next. Moss is critical.
