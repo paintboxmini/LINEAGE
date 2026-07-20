@@ -53,9 +53,13 @@ Hand size 3.
 | Combatant | Soul | Roll | Total |
 |---|---|---|---|
 | Moss | 4 | 4 | 8 |
+| Sky | 2 | 5 | 7 |
+| Crimson | 2 | 5 | 7 |
 | Garnet | 2 | 5 | 7 |
 
-Drew rolls for Sky and Crimson on his end and reports totals — full wheel order gets set once all four are in.
+Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't break it. Per `rules/combat.md`: players choose their own order against each other first (Sky vs. Crimson — Drew's call), then the player(s) go ahead of the enemy on any remaining player-vs-enemy tie (Garnet last).
+
+**Wheel order:** Moss (12 o'clock) → Sky/Crimson in Drew's chosen order → Garnet.
 
 ---
 
