@@ -6,7 +6,7 @@
 RED — BODY
 Attack: Body + d8
 Effect: None
-Defensive Bonus: Deal 3 damage to attacker, unpreventable. Only on a clean win — not a tie.
+Defensive Bonus: Deal 3 damage to attacker, unpreventable.
 Range: Melee
 *"Sometimes the direct path is the wisest path."*
 
@@ -155,8 +155,8 @@ Range: Melee
 **SPARK OF VIOLENCE**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 2 unpreventable damage to any enemy
-Defensive Bonus: Deal 2 unpreventable damage to any enemy
+Effect: Deal 3 unpreventable damage to any enemy
+Defensive Bonus: Deal 3 unpreventable damage to any enemy
 Range: Both
 *"Every blaze begins with a decision."*
 

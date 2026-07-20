@@ -15,8 +15,11 @@ def warded(target):
     if target.ward:
         target.ward = False
         RULING("ward-blocks-debuff",
-               "Ward/DEFLECT blocks the next debuff: forced move, discard, or a "
-               "damage penalty all count as debuffs (rules/card-glossary.md Debuff).")
+               "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
+               "stat reductions, discard, Injury/Exhaust seeding, Positive Status "
+               "Effect removal. Never RPS/Initiative/Position pillar manipulation "
+               "(rules/card-glossary.md Debuff) — those callers don't route through "
+               "warded() at all.")
         return True
     return False
 
@@ -90,10 +93,10 @@ def _twin_strike_dmg(engine, me, foe):
 
 
 def _axiom_effect(engine, me, foe):
+    # RPS-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
     color = me.policy.name_axiom_color(engine, me, foe)
-    if not warded(foe):
-        foe.axiom_ban = color
-        engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
+    foe.axiom_ban = color
+    engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
 def _sacrifice_strike_effect(engine, me, foe):
@@ -114,7 +117,7 @@ def _blood_in_the_gap_defense(engine, me, foe):
 
 
 def _spark_effect(engine, me, foe):
-    engine.deal(foe, 2, unpreventable=True)
+    engine.deal(foe, 3, unpreventable=True)
 
 
 def _deflect_effect(engine, me, foe):
@@ -202,7 +205,8 @@ def _gamblers_ruin_defense(engine, me, foe):
 
 
 def _repel_effect(engine, me, foe):
-    if foe.position == 'frontline' and not warded(foe):
+    # Position-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
+    if foe.position == 'frontline':
         foe.position = 'backline'
 
 
@@ -252,10 +256,10 @@ def _align_defense(engine, me, foe):
 
 
 def _axiom_defense(engine, me, foe):
+    # RPS-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
     color = me.policy.name_axiom_color(engine, me, foe)   # mirror-ban the attacker
-    if not warded(foe):
-        foe.axiom_ban = color
-        engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
+    foe.axiom_ban = color
+    engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
 def _anticipate_effect(engine, me, foe):
@@ -472,9 +476,6 @@ def _shared_burden_defense(engine, me, foe):
 
 # --- Red: front-line, protection, AoE ---
 def _strike_defense(engine, me, foe):
-    # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
-    if getattr(foe, '_redirect_dmg', None) is None:
-        return
     engine.deal(foe, 3, unpreventable=True)
 
 def _guard_effect(engine, me, foe):
