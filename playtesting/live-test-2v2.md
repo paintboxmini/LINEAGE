@@ -70,15 +70,15 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Discard piles
 
-- Moss: RENEWAL, PATIENCE, DIG IN, FOCUS
+- Moss: RENEWAL, PATIENCE, DIG IN, FOCUS, GUARD
 - Garnet: STRIKE, MOCKERY, RALLY, PAIN IS FUEL, TRAMPLE, FORGET
 
 ## Status markers (visible to both sides once applied)
 
-- Moss: Deadly x1 (turn 4, still banked), Resist x1 (from GUARD's Effect, turn 9)
-- Garnet: Resist x2 (from turns 8 and 9). Deadly x1, banked since turn 4, finally spent turn 12.
+- Moss: Deadly x1 (turn 4, still banked), Resist x2 (turns 9 and 13)
+- Garnet: Resist x3 (turns 8, 9, 13). Deadly x1, banked since turn 4, finally spent turn 12.
 - Crimson: Ward, still unused (turn 2). New: next successful attack against him seeds an Injury into his deck instead of dealing damage (from REND's Defensive Bonus, turn 9 — his own to track, noted since status markers are public)
-- Sky: clean — Staggered (turn 7) resolved and cleared turn 11 (moved to Frontline instead of attacking), MOCKERY's taunt (turn 3) already spent.
+- Sky: +1d4 on his next attack, banked (from GAMBLER'S RUIN's Defensive Bonus, turn 13 — his own to track). Staggered and MOCKERY's taunt both already resolved and spent.
 
 ---
 
@@ -168,4 +168,6 @@ Sky's reveal, WITNESS, turned out illegal — Melee, but Garnet (the attacker) i
 
 **Turn 13 — Moss.** Draws GUARD (was on top from FOCUS) plus STILLNESS. Everyone's Frontline now except Garnet, so STILLNESS (Ranged) is illegal against either target — forced to GUARD again. **Moss attacks Sky with GUARD** — skipping Crimson, same logic as before: his Rend status converts a hit to an Injury instead of real damage, and Sky's the one who's actually taken damage worth building on.
 
-Card held back pending Drew's blind defense commit.
+Sky defends **GAMBLER'S RUIN** (Red, Melee — legal, both Frontline). Same color — **tie.** No damage. GUARD's Effect resolves: **Moss and Garnet both gain Resist again.** GAMBLER'S RUIN's Defensive Bonus resolves: **Sky adds 1d4 to his next attack**, banked for later. Both cards to discard.
+
+**Turn 14 — Crimson.** Up next.
