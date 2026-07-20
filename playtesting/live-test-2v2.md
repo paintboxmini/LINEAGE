@@ -43,7 +43,7 @@ Hand size 3.
 - Red: STRIKE, BRACE, PAIN IS FUEL, RALLY
 - Green: TWIN STRIKE, MOCKERY
 
-**Position:** Frontline (start)
+**Position:** Backline (pushed there turn 8 — TRAMPLE; was Frontline at start)
 **Appearance:** Heavyset, rust-and-burgundy leathers, knuckles taped over old scars. Plants his feet at Frontline like the ground owes him something.
 
 ---
@@ -66,7 +66,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: *empty* (DIG IN played turn 6; deck remainder: STILLNESS, WITNESS, FOCUS, GUARD, ROOTED OATH, ENDURE — won't draw again until her own turn 9)
-- Garnet's hand: PROFILE, TWIN STRIKE (RALLY played turn 4; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
+- Garnet's hand: TWIN STRIKE, BRACE (PAIN IS FUEL played turn 8; deck remainder: FORGET, ANTICIPATE)
 
 ## Discard piles
 
@@ -140,4 +140,8 @@ Sky reveals **PAIN IS FUEL** (Red, Both, Body + d4, Effect: Gain Resist). Correc
 
 Blue beats Red — **defender wins clean.** No damage to Garnet, and Sky's own Effect never triggers (attacker-win-or-tie only). PROFILE's Defensive Bonus fires: **Sky gains Staggered** — his next attack or defense gets skipped. Both cards to discard.
 
-**Turn 8 — Garnet.** Up next in the wheel.
+**Turn 8 — Garnet.** Draws to 3 (PAIN IS FUEL, BRACE join TWIN STRIKE). Attacks Crimson with **PAIN IS FUEL** (Red, Body + d4, Both).
+
+Crimson defends **TRAMPLE** (Red, Melee — legal, both Frontline). Same color — **tie.** No damage (the pre-rolled Deadly number never gets applied — a tie deals no damage, so it doesn't spend the stack either, same logic as a clean loss; still banked). PAIN IS FUEL's Effect triggers on a tie: **Garnet gains Resist.** TRAMPLE's Defensive Bonus isn't cancelled by anything Garnet's card does, so it triggers too: **Garnet gets pushed to Backline.** Both cards to discard.
+
+**Turn 9 — Moss.** Wheel wraps around. Garnet's now Backline, which will matter for Melee legality going forward.
