@@ -20,7 +20,7 @@ Hand size 3. Deck 9 (3 Blue / 4 Red / 2 Green).
 
 ## Moss
 
-**Mind 2 / Body 3 / Soul 4 — HP 15, currently 13** (took 2 from Crimson's STRIKE, turn 5)
+**Mind 2 / Body 3 / Soul 4 — HP 15, currently 7** (13 after STRIKE turn 5, then took 6 from PROFILE turn 6)
 **Creature Threat Rating:** 9
 Hand size 2 (Mind 2, floor).
 
@@ -65,12 +65,12 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: DIG IN (PATIENCE played turn 5; deck remainder: STILLNESS, WITNESS, FOCUS, GUARD, ROOTED OATH, ENDURE)
+- Moss's hand: *empty* (DIG IN played turn 6; deck remainder: STILLNESS, WITNESS, FOCUS, GUARD, ROOTED OATH, ENDURE — won't draw again until her own turn 9)
 - Garnet's hand: PROFILE, TWIN STRIKE (RALLY played turn 4; deck remainder: FORGET, ANTICIPATE, PAIN IS FUEL, BRACE)
 
 ## Discard piles
 
-- Moss: RENEWAL, PATIENCE
+- Moss: RENEWAL, PATIENCE, DIG IN
 - Garnet: STRIKE, MOCKERY, RALLY
 
 ## Status markers (visible to both sides once applied)
@@ -126,4 +126,10 @@ Red beats Green — **defender wins clean.** No damage to Crimson. STRIKE's Defe
 
 **Turn 6 — Crimson.** Attacks Moss.
 
-Card set. Moss's hand is down to one — DIG IN (Red, Melee, d2, Effect/Defensive Bonus: Anchored — Gain Resist 1). Both Frontline so it's legal, but it's not really a choice this time, just the only card left. Announced blind: **DIG IN.** Its Defensive Bonus isn't clean-win-gated like STRIKE's — it fires on a tie too. Awaiting Drew's reveal.
+Card set. Moss's hand is down to one — DIG IN (Red, Melee, d2, Effect/Defensive Bonus: Anchored — Gain Resist 1). Both Frontline so it's legal, but it's not really a choice this time, just the only card left. Announced blind: **DIG IN.** Its Defensive Bonus isn't clean-win-gated like STRIKE's — it fires on a tie too.
+
+Crimson reveals **PROFILE** (Blue, Both, Mind + d4). Blue beats Red — **attacker wins clean.** Damage: Mind 3 + roll 3 = **6. Moss takes 6, HP 13 → 7.** DIG IN's Defensive Bonus does not trigger — that's a defender-win-or-tie payoff, and Moss lost this one outright.
+
+PROFILE's Effect resolves (attacker won): Scry 2 on Crimson's own deck, then draw 1. Saw TRAMPLE and PATIENCE — kept TRAMPLE to hand, sent PATIENCE straight to discard rather than back into the deck (Scry/Surveil's bin option) since PATIENCE rewards not having attacked last turn, and Crimson's been attacking every turn he's had. Deliberately holding off drawing more than necessary to keep PATIENCE out of a reshuffle as long as possible — real, correct reasoning about how the reshuffle-on-empty-deck rule actually works, not just flavor. Both PROFILE and DIG IN to discard.
+
+**Turn 7 — Sky.** Up next in the wheel — and MOCKERY's Defensive Bonus from turn 3 comes due: **Sky must attack Garnet this turn if able.**
