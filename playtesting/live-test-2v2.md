@@ -104,4 +104,8 @@ Drew ready. Garnet's hand is down to RALLY and MOCKERY (STRIKE already spent). B
 
 Sky reveals **CALCULATE** (Blue, Ranged, Mind + d4, Effect: move target enemy to Backline; Defensive Bonus: move target to Frontline). Green beats Blue — **defender wins.** No damage. MOCKERY's Defensive Bonus triggers: **Sky must attack Garnet again next turn if able.** The read paid off. Both cards to discard — Garnet's hand is down to RALLY alone.
 
-**Turn 4 — Garnet.** Draws to hand size 3 (was down to just RALLY). New hand: RALLY, PROFILE, TWIN STRIKE. Attacks Crimson. Card held back pending Drew's blind defense commit.
+*Retrospective, from Drew:* Sky's full turn-3 hand was CALCULATE, PAIN IS FUEL, GAMBLER'S RUIN, WITNESS. In hindsight, WITNESS (Green, assuming Garnet held no Red) would have beaten a Blue defense and tied a Green one — avoided the loss CALCULATE actually walked into. Doesn't change the resolved outcome, just logged for the record.
+
+**Turn 4 — Garnet.** Draws to hand size 3 (was down to just RALLY). New hand: RALLY, PROFILE, TWIN STRIKE. Attacks Crimson.
+
+Drew ready. Garnet's card, announced blind: **RALLY** (Red, Body + d2, Range Both, Effect: Pay 5 HP, all allies in Frontline gain Deadly). Both Moss and Garnet are Frontline right now, so this actually does something for the first time this fight — the two earlier defensive picks of it were dead cards. Awaiting Drew's reveal.
