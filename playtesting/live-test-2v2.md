@@ -65,12 +65,12 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 
 ## Hands (drawn to hand size at combat start — private)
 
-- Moss's hand: FOCUS (drew FOCUS + GUARD turn 9, GUARD played same turn; deck remainder: STILLNESS, ENDURE, ROOTED OATH, WITNESS)
+- Moss's hand: *empty* (FOCUS played turn 10; deck order now GUARD-on-top, then STILLNESS, ENDURE, ROOTED OATH, WITNESS)
 - Garnet's hand: TWIN STRIKE, BRACE (PAIN IS FUEL played turn 8; deck remainder: FORGET, ANTICIPATE)
 
 ## Discard piles
 
-- Moss: RENEWAL, PATIENCE, DIG IN, GUARD
+- Moss: RENEWAL, PATIENCE, DIG IN, FOCUS
 - Garnet: STRIKE, MOCKERY, RALLY, PAIN IS FUEL, TRAMPLE
 
 ## Status markers (visible to both sides once applied)
@@ -150,4 +150,8 @@ Crimson defends **REND** (Red, Melee, Body + d4, Effect: shuffle 1 Injury into d
 
 Same color — **tie.** No damage. GUARD's Effect triggers on a tie: **both Moss and Garnet gain Resist**, regardless of position. REND's Defensive Bonus isn't cancelled by anything GUARD does, so it triggers too: **the next successful attack against Crimson seeds an Injury into his deck instead of dealing damage** — a real status to track, not yet spent. Both cards to discard.
 
-**Turn 10 — Crimson.** Up next.
+**Turn 10 — Crimson.** Attacks Moss with **PROFILE** (Blue, Both, Mind + d4).
+
+Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to matter: same color — **tie.** No damage. PROFILE's Effect resolves on Crimson's own deck (Scry 2, draw 1). FOCUS's Defensive Bonus resolves for Moss: **top card of her discard (GUARD) goes back on top of her deck** — she'll draw it again next chance. FOCUS's own "return to hand" line is its Effect, which only applies when she plays it as an attack — defending with it, it discards normally like anything else. Both cards to discard.
+
+**Turn 11 — Sky.** Up next.
