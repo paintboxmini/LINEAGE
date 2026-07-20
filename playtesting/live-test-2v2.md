@@ -66,7 +66,7 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 ## Hands (drawn to hand size at combat start — private)
 
 - Moss's hand: RENEWAL, PATIENCE (drawn, shuffled deck remainder: STILLNESS, ENDURE, DIG IN, FOCUS, WITNESS, GUARD, ROOTED OATH — bottom to top of draw order)
-- Garnet's hand: *drawn when his turn comes up*
+- Garnet's hand: RALLY, STRIKE, MOCKERY (drawn at combat start, per the rule — not held back for his turn; deck remainder: PROFILE, PAIN IS FUEL, BRACE, FORGET, ANTICIPATE, TWIN STRIKE)
 
 ## Discard piles
 
@@ -85,3 +85,5 @@ Three-way tie at 7 (Sky, Crimson, Garnet), all Soul 2 — "higher Soul" doesn't 
 *Updated live as we play.*
 
 **Turn 1 — Moss.** Attacks Crimson. Hand was RENEWAL/PATIENCE; PATIENCE is Melee and Moss is Backline, so it's not a legal play right now — down to one real option. Target declared; card held back pending Drew's blind defense commit per the reveal protocol.
+
+Drew ready. Moss's card, announced blind: **RENEWAL** (Soul + d2, Range Both). Awaiting Drew's reveal.
