@@ -124,4 +124,6 @@ Moss's card, held back until now per the same protocol: **PATIENCE** (Green, Sou
 
 Red beats Green — **defender wins clean.** No damage to Crimson. STRIKE's Defensive Bonus triggers (clean win, not a tie): **deal 2 damage to the attacker — Moss takes 2, HP 15 → 13.** Moss's banked Deadly isn't spent — her own damage never got computed on a clean loss, so it carries forward. Both cards to discard.
 
-**Turn 6 — Crimson.** Up next in the wheel.
+**Turn 6 — Crimson.** Attacks Moss.
+
+Card set. Moss's hand is down to one — DIG IN (Red, Melee, d2, Effect/Defensive Bonus: Anchored — Gain Resist 1). Both Frontline so it's legal, but it's not really a choice this time, just the only card left. Announced blind: **DIG IN.** Its Defensive Bonus isn't clean-win-gated like STRIKE's — it fires on a tie too. Awaiting Drew's reveal.
