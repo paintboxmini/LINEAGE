@@ -160,4 +160,4 @@ Moss's hand is down to one — FOCUS (Blue, Both). Forced, but it happens to mat
 
 **Garnet attacks Sky with FORGET** — Crimson's already carrying the Rend status (his next hit taken converts to an Injury instead of damage), so pressuring him wouldn't actually cost him HP right now. Sky's untouched all fight; better target for real damage.
 
-Card held back pending Drew's blind defense commit.
+Drew ready. Garnet's card, announced blind: **FORGET** (Blue, Ranged, Mind + d2, Effect: Defender discards 1 card). Awaiting Drew's reveal.
