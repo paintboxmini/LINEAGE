@@ -269,3 +269,13 @@ Effect: Until the end of combat, allies next to you in the initiative order heal
 Defensive Bonus: Gain Resist.
 Range: Both
 *"Stand where they stand. What heals them, heals you."*
+
+---
+
+**WARSONG**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: If an ally attacked successfully on the turn immediately before yours, all allies gain Deadly.
+Defensive Bonus: Apply Initiative Shift +2 to an ally.
+Range: Both
+*"One voice finds its mark. The rest answer in kind."*

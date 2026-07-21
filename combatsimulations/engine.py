@@ -38,19 +38,23 @@ def roll(die, rng):
 
 def _rolled_die(die, rng, me):
     """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
-    each stack applies to one future damage roll — roll twice, take the
-    higher (Deadly) or lower (Weak) result, then consume one stack. Deadly
-    takes priority if both are somehow held at once (not a ruled case,
-    just a defensible tie-break). Custom `_damage` functions (exploding
-    dice, multi-hit cards) roll their own way and are NOT wrapped here —
-    applying "roll twice" generically to an arbitrary custom function risks
-    doubling unrelated side effects, not just the die."""
+    each stack adds (Deadly) or subtracts (Weak) a flat d4 from this one
+    future damage roll, then consumes one stack. Flat, not proportional to
+    the base die, on purpose — the old "roll twice, take higher/lower"
+    version scaled with base die size (worth +0.25 on a d2, +1.65 on a
+    d10), quietly favoring whichever color rolls the bigger dice regardless
+    of who actually holds the stack. Deadly takes priority if both are
+    somehow held at once (not a ruled case, just a defensible tie-break).
+    Custom `_damage` functions (exploding dice, multi-hit cards) roll their
+    own way and are NOT wrapped here — applying this generically to an
+    arbitrary custom function risks doubling unrelated side effects, not
+    just the die."""
     if me.deadly > 0:
         me.deadly -= 1
-        return max(roll(die, rng), roll(die, rng))
+        return roll(die, rng) + roll(4, rng)
     if me.weak > 0:
         me.weak -= 1
-        return min(roll(die, rng), roll(die, rng))
+        return roll(die, rng) - roll(4, rng)
     return roll(die, rng)
 
 
@@ -172,6 +176,23 @@ def _apply_shift(engine, queue, target, amount):
     crossed = (raw <= 0 or raw >= total) and not was_pending
     landing = raw % total
     step = -1 if amount > 0 else 1
+
+    if landing == i:
+        # |amount| is an exact multiple of the wheel size (found via a real
+        # crash: WARSONG's +2 shift against a 2-seat wheel, once a team
+        # battle had thinned to 2 combatants — the general case is any shift
+        # that's a multiple of the current seat count, at any wheel size).
+        # The target completes one or more full laps and lands back on its
+        # own slot — nobody else's relative order actually changes, so there
+        # is no path to walk and no one to displace. The marker was still
+        # crossed along the way, though, so that consequence still lands on
+        # the target itself.
+        if crossed:
+            if amount > 0:
+                engine.pending_turns.append(target)
+            else:
+                target._shift_skip = True
+        return
 
     path = [i]
     pos = i
@@ -405,6 +426,12 @@ class Duel:
         self.pending_turns = []
         self.queue = []
         self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
+        # RETALIATE/WARSONG/REBUTTAL: "the turn immediately before yours" — frozen
+        # snapshot of the last completed turn, promoted from _this_turn_hit at the
+        # top of take_turn (before that turn's own actions can overwrite it), so a
+        # card's Effect always reads the PRIOR combatant's result, never its own.
+        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False}
+        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False}
 
     def insert_injury(self, target):
         if self.injury_card is None:
@@ -674,6 +701,7 @@ class Duel:
         return 'defender'
 
     def _resolve_attacker_win(self, attacker, defender, card, contested):
+        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         # Rend's defensive guard: the next hit deals no damage and instead
@@ -741,6 +769,8 @@ class Duel:
 
     def take_turn(self, who, foe):
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
+        self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
+        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False}
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False

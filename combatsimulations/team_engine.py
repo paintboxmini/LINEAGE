@@ -43,6 +43,10 @@ class Battle:
         self.queue = []
         self.team_target = {0: None, 1: None}   # each side's shared focus-fire pick (team_policies.py, _pick_target)
         self._resolving = None   # whoever's turn is currently resolving (see engine._apply_shift)
+        # RETALIATE/WARSONG/REBUTTAL: "the turn immediately before yours" — see the
+        # matching comment in engine.py's Duel.__init__ for the full mechanism.
+        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False}
+        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False}
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -277,6 +281,7 @@ class Battle:
         return base
 
     def _resolve_attacker_win(self, attacker, defender, card):
+        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         if defender._rend_guard:
@@ -322,6 +327,8 @@ class Battle:
 
     def take_turn(self, who):
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
+        self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
+        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False}
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False

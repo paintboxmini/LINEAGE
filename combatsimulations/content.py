@@ -632,6 +632,36 @@ def _delay_effect(engine, me, foe):
 def _delay_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
+# ==================== Turn-order payoff trio (Retaliate/Warsong/Rebuttal) =====
+# All three read engine._prior_turn_hit — a frozen snapshot of whoever's turn
+# resolved immediately before this one (see Duel/Battle.take_turn), not a
+# rolling window of the last several turns. Landing next to the right ally or
+# enemy on the wheel is a live tactical choice (Wait, Initiative Shift), not a
+# passive stat — that's the whole point of tying a payoff to it.
+
+def _retaliate_effect(engine, me, foe):
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['target'] is me and prior['actor'] in engine.enemies(me):
+        me.deadly += 2
+def _retaliate_defense(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+
+def _warsong_effect(engine, me, foe):
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['actor'] in engine.allies(me):
+        for a in _team(engine, me):
+            a.deadly += 1
+def _warsong_defense(engine, me, foe):
+    a = _best_attacker(engine.allies(me)) or me
+    engine.initiative_shift(a, 2)
+
+def _rebuttal_effect(engine, me, foe):
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['actor'] in engine.enemies(me):
+        prior['actor'].staggered = True
+def _rebuttal_defense(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+
 def _communion_effect(engine, me, foe):
     for a in _team(engine, me):
         engine.scry(a, a, 1)               # party scry
@@ -926,6 +956,12 @@ def build_cards():
         effect=_shade_away_effect, defense=_shade_away_defense)
     add("DEAD RECKONING", 'G', 'soul', 'both', 4,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
+    add("RETALIATE", 'R', 'body', 'both', 4,
+        effect=_retaliate_effect, defense=_retaliate_defense)
+    add("WARSONG", 'G', 'soul', 'both', 4,
+        effect=_warsong_effect, defense=_warsong_defense)
+    add("REBUTTAL", 'B', 'mind', 'ranged', 4,
+        effect=_rebuttal_effect, defense=_rebuttal_defense)
     add("FIELD MEDICINE", 'G', 'soul', 'ranged', 2,
         effect=_field_medicine_effect, defense=_field_medicine_defense)
 

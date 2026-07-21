@@ -280,3 +280,13 @@ Effect: Anchored — whenever an ally passes through your position in the initia
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
+
+---
+
+**REBUTTAL**
+BLUE — MIND
+Attack: Mind + d4
+Effect: If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Ranged
+*"Every argument has an opening. You just have to still be standing when it appears."*

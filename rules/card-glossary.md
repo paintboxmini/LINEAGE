@@ -24,10 +24,10 @@ Enemies cannot look at or manipulate your hand or deck. Does not prevent status 
 At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue") — not naming individual cards, and not reading full card text. The opponent learns the shape of your options, not which specific cards or what they do. Simulator play doesn't need this distinction; it already has full internal access to hand contents either way.
 
 **(11) Deadly**
-The next time you roll attack damage, roll it twice and take the higher result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, add an additional d4 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(6) Weak**
-The next time you roll attack damage, roll it twice and take the lower result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, subtract an additional d4 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(9) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.

@@ -329,3 +329,13 @@ Effect: If this attack ties, the defender's Defensive Bonus does not trigger.
 Defensive Bonus: Deal 2 damage to the attacker. If this is a tie, deal 4 instead.
 Range: Ranged
 *"A tie should feel safe. It never is."*
+
+---
+
+**RETALIATE**
+RED — BODY
+Attack: Body + d4
+Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Both
+*"Pain is just momentum, redirected."*
