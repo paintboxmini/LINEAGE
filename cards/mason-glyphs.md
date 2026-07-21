@@ -1,11 +1,11 @@
 # Mason Glyphs
 
-Not summoned objects — the fiction is the Mason marking what's already in the environment (a wall, the ground, a statue, anything that will hold the mark), not conjuring something new into the world. A glyph is carved at whatever position (Frontline/Backline) the Mason occupied at the moment of creation, and stays there — it outlasts the Mason who carved it, and doesn't move if they do.
+Mason cards are one specific flavor of a more general mechanic: the **Object** — a persistent, position-anchored battlefield entity, distinct from a summoned creature or a status effect. A Mason's Object happens to be a glyph (the fiction is marking what's already in the environment — a wall, the ground, a statue, anything that will hold the mark — not conjuring something new into the world), but the underlying rule doesn't belong to Masons specifically: a future Construct-themed or Cultivator-themed card could create its own kind of Object (a totem, a ward-stone, whatever fits its own fiction) and reuse the exact same rules below, without inheriting "glyph" as the name for what it made. An Object is created at whatever position (Frontline/Backline) its creator occupied at the moment of creation, and stays there — it outlasts the character who made it, and doesn't move if they do.
 
-Every glyph shares the same rules:
-- **Any attack can target a glyph instead of a combatant.** It never rolls for damage and never triggers the attacking card's Effect — it just destroys the glyph outright. The attacking card is discarded as normal.
-- **Fortress protects a glyph the same way it protects an ally.** If anyone on the glyph's side currently holds Fortress, an attack that would destroy the glyph is redirected to them instead (Fortress's own text: "the next time an ally would take attack damage, you take it instead" — a glyph counts as an ally for this purpose).
-- **Otherwise, a glyph's own effect triggers for free** — no roll, no contest — for whoever occupies its position on their turn. It isn't a combat action; it's an ongoing rule of the battlefield until someone bothers to destroy it.
+Every Object shares the same rules:
+- **Any attack can target an Object instead of a combatant.** It never rolls for damage and never triggers the attacking card's Effect — it just destroys the Object outright. The attacking card is discarded as normal.
+- **Fortress protects an Object the same way it protects an ally.** If anyone on the Object's side currently holds Fortress, an attack that would destroy it is redirected to them instead (Fortress's own text: "the next time an ally would take attack damage, you take it instead" — an Object counts as an ally for this purpose).
+- **Otherwise, an Object's own effect triggers for free** — no roll, no contest — for whoever occupies its position on their turn. It isn't a combat action; it's an ongoing rule of the battlefield until someone bothers to destroy it.
 
 ---
 

@@ -144,9 +144,9 @@ def _clear_ongoing_on_collapse(target):
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
-    spent = []   # SEED: consumed the instant it triggers — unlike every other
+    spent = []   # STAKE: consumed the instant it triggers — unlike every other
                  # 'anchor' kind below, which reapplies every turn for as long
-                 # as the position holds, a seed pays out once and is gone.
+                 # as the position holds, a stake pays out once and is gone.
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
@@ -167,10 +167,10 @@ def _ongoing_support_tick(engine, who):
             a = o.get('target')
             if a is not None and not a.collapsed:
                 engine.heal(a, 3, source=who)
-        elif o['kind'] == 'seed_deadly' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'stake_deadly' and who.position == o.get('anchor', who.position):
             who.deadly += 2
             spent.append(o)
-        elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'stake_resist' and who.position == o.get('anchor', who.position):
             who.resist += 2
             spent.append(o)
         elif o['kind'] == 'anchor_heal2' and who.position == o.get('anchor', who.position):
@@ -231,7 +231,7 @@ def _apply_shift(engine, queue, target, amount):
         if amount == 0:
             return
     if amount > 0:
-        target._shifted_positive = True   # OFF BALANCE: cleared at the start
+        target._shifted_positive = True   # TELLS: cleared at the start
                                            # of target's own next turn
     was_pending = target._shift_skip or target in engine.pending_turns
     target._shift_skip = False
@@ -455,7 +455,7 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
-        self._position_at_last_turn_start = self.position  # ROLLOUT/OFF BALANCE
+        self._position_at_last_turn_start = self.position  # ROLLOUT/TELLS
         self._repositioned_since_last_turn = False          # tracking
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
@@ -504,9 +504,9 @@ class Combatant:
                                            # one turn — consumed at the start of that turn
                                            # regardless of whether it changes anything
         self._skip_draw_next = False      # EMERGENCY REPAIRS: no draw step, next turn only
-        self._shifted_positive = False    # OFF BALANCE: received a + Initiative Shift,
+        self._shifted_positive = False    # TELLS: received a + Initiative Shift,
                                            # cleared at the start of my own next turn
-        self._used_wait = False           # OFF BALANCE: used Wait, same self-clearing shape
+        self._used_wait = False           # TELLS: used Wait, same self-clearing shape
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -1028,7 +1028,7 @@ class Duel:
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
-        # ROLLOUT/OFF BALANCE: did my position change at any point since my
+        # ROLLOUT/TELLS: did my position change at any point since my
         # own last turn began (my own Move, forced repositioning by anyone,
         # Quick, Rushdown as a victim — anything)? Computed once, right here,
         # before this turn's own actions can touch position — stays readable
@@ -1039,7 +1039,7 @@ class Duel:
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
-        who._shifted_positive = False    # OFF BALANCE: same self-clearing shape
+        who._shifted_positive = False    # TELLS: same self-clearing shape
         who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
@@ -1096,7 +1096,7 @@ class Duel:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
-                who._used_wait = True   # OFF BALANCE
+                who._used_wait = True   # TELLS
                 self._say(f"{who.name} waits")
             else:
                 kind = action[0]

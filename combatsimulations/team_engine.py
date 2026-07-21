@@ -399,14 +399,14 @@ class Battle:
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
-        # ROLLOUT/OFF BALANCE: see engine.py's Duel.take_turn for the full reasoning.
+        # ROLLOUT/TELLS: see engine.py's Duel.take_turn for the full reasoning.
         who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
         who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
-        who._shifted_positive = False    # OFF BALANCE: same self-clearing shape
+        who._shifted_positive = False    # TELLS: same self-clearing shape
         who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
@@ -454,7 +454,7 @@ class Battle:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
-                who._used_wait = True   # OFF BALANCE
+                who._used_wait = True   # TELLS
                 self._say(f"{who.name} waits")
             elif action[0] == 'attack':
                 _, card, target = action

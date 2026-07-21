@@ -292,11 +292,11 @@ Range: Both
 
 ---
 
-**SEED**
+**STAKE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
-Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
+Effect: Drive in a stake at your current position. The next time you begin your turn at this position, gain Deadly twice.
+Defensive Bonus: Drive in a stake at your current position. The next time you begin your turn at this position, gain Resist 2.
 Range: Both
 *"Given time, and nowhere else to be."*
 
@@ -329,3 +329,13 @@ Effect: On a clean win only, apply Initiative Shift +2 to self.
 Defensive Bonus: Deal 3 damage to the attacker.
 Range: Both
 *"It's finally your turn."*
+
+---
+
+**LEVEL THE FIELD**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Remove one Positive Status Effect of your choice from each enemy.
+Defensive Bonus: Remove one Positive Status Effect of your choice from each enemy.
+Range: Both
+*"Nobody gets to keep their edge."*

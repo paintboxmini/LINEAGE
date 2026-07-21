@@ -301,3 +301,23 @@ Effect: None.
 Defensive Bonus: Wins ties. On a tie, the attacker's Effect does not trigger.
 Range: Both
 *"You never see the second hit coming. You're still reacting to the first."*
+
+---
+
+**EXPOSED**
+BLUE — MIND
+Attack: Mind + d2
+Effect: If the defender is Staggered, this attack has Critical.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"You don't need strength. You need them to already be falling."*
+
+---
+
+**UNMAKE**
+BLUE — MIND
+Attack: Mind + d2
+Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 3 Exhaust cards to your hand.
+Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
+Range: Both
+*"Everything they built stops mattering at once."*

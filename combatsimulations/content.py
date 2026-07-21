@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown
+from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die
 
 
 def warded(target):
@@ -26,12 +26,15 @@ def warded(target):
 
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
-    Fortress, Anchored, Quick. Quick isn't implemented anywhere in the sim yet
-    (see REALIGNMENT), so there's nothing to clear for it here."""
+    Fortress, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
+    Duel.take_turn) — this docstring was stale from before that; a pending
+    Quick grant is exactly as much a Positive Status Effect as the rest and
+    belongs here too."""
     target.evade = 0
     target.resist = 0
     target.deadly = 0
     target._fortress = False
+    target._quick = False
     target.ongoing = [o for o in target.ongoing if 'anchor' not in o]   # Anchored-flavored entries only
 
 
@@ -803,9 +806,10 @@ def _staring_contest_defense(engine, me, foe):
 # brain can't "choose" the way a real player would at the table; a real
 # player picks freely among whatever's visible. Capped at however many
 # statuses are actually present rather than duplicated — copying/stealing
-# one Deadly twice isn't "two effects." Anchored and Quick are skipped —
-# Anchored lives in `ongoing`, not a simple flag, and Quick has no
-# implementation anywhere yet (same gap noted since Realignment).
+# one Deadly twice isn't "two effects." Anchored and Quick are both skipped
+# here (not by the same reasoning, though): Anchored lives in `ongoing`, not
+# a simple flag; Quick is real now (OVERCOMMIT), just never asked to be
+# copyable/stealable by either of these two cards specifically.
 def _transfer_statuses(me, foe, count, steal):
     order = []
     if foe.deadly > 0:
@@ -840,6 +844,74 @@ def _drain_effect(engine, me, foe):
     _transfer_statuses(me, foe, 1, steal=True)
 def _drain_defense(engine, me, foe):
     _transfer_statuses(me, foe, 1, steal=True)
+
+# Pure removal, no benefit to the caster — same fixed priority order as
+# _transfer_statuses (Deadly > Resist > Evade > Fortress), shared by UNMAKE
+# and LEVEL THE FIELD below. Anchored/Quick skipped for the same reasons as
+# _transfer_statuses.
+def _strip_one_status(target, count=1):
+    order = []
+    if target.deadly > 0:
+        order.append('deadly')
+    if target.resist > 0:
+        order.append('resist')
+    if target.evade > 0:
+        order.append('evade')
+    if getattr(target, '_fortress', False):
+        order.append('fortress')
+    for kind in order[:count]:
+        if kind == 'fortress':
+            target._fortress = False
+        else:
+            setattr(target, kind, getattr(target, kind) - 1)
+
+# UNMAKE (Blue) — the biggest buff-removal in the game: wipes every
+# Positive Status Effect from the target in one go, via the existing
+# `remove_positive_status` helper (already used by TRACE) — and, Drew's
+# explicit call, ignores Ward entirely. A real, deliberate exception to the
+# established Debuff/Ward rule, same category as AFTERIMAGE bypassing Axiom
+# or FRAME-TRAP bypassing RPS — flagged here, not incidental, since
+# normally a Positive-Status-Effect removal is exactly the kind of thing
+# Ward is supposed to stop (`warded()`'s own ruling text). Paid for with a
+# steep Exhaust cost — 3, heavier than OVERCOMMIT's 2, since this both
+# breaks a standing rule and wipes an opponent's entire buff set at once.
+def _unmake_effect(engine, me, foe):
+    remove_positive_status(foe)
+    engine.insert_exhaust(me, 3)
+def _unmake_defense(engine, me, foe):
+    remove_positive_status(foe)
+    engine.insert_exhaust(me, 3)
+
+# LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
+# exactly one Positive Status Effect (same fixed priority as WAITING GAME/
+# DRAIN) from each enemy, respecting Ward normally (`warded()`, same
+# pattern as TRACE) — unlike UNMAKE, this follows the established rule
+# rather than breaking it. In a 1v1 Duel, `engine.enemies(me)` is just the
+# one foe, same as everywhere else this pattern is used.
+def _level_the_field_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if not warded(e):
+            _strip_one_status(e, 1)
+def _level_the_field_defense(engine, me, foe):
+    for e in engine.enemies(me):
+        if not warded(e):
+            _strip_one_status(e, 1)
+
+# EXPOSED (Blue) — the first card to grant Critical (new keyword,
+# `rules/card-glossary.md`): doubles this attack's base damage (stat + die,
+# including any Deadly/Weak already rolled into it) before any other bonus
+# applies. Gated hard by design, not just by naming it and hoping: the
+# trigger needs an already-Staggered target — real setup elsewhere, since
+# Staggered doesn't just happen — and the base die is kept low (d2) so
+# what's being doubled is small on its own; the whole payoff lives in the
+# multiplier, not a separately-large base too.
+def _exposed_damage(engine, me, foe):
+    base = me.eff('mind') + _rolled_die(2, engine.rng, me)
+    if foe.staggered:
+        base *= 2
+    return base
+def _exposed_defense(engine, me, foe):
+    me.evade += 1
 
 # CONSUME (Green) — Parasite's second card, the generic "destroy a card for
 # power" seed Drew flagged and parked earlier ("just having the odds of
@@ -953,23 +1025,25 @@ def _ledger_defense(engine, me, foe):
     if c:
         me.hand.append(c)
 
-# SEED (Cultivator) — tempo-as-a-resource, the first card in this shape:
-# telegraphed, invests now for a bigger payoff later, no counter to track —
-# plants at the caster's current position and pays out the next time THEY
-# begin a turn still standing there (engine._ongoing_support_tick), however
-# many turns that takes. Moving off the position (or being forced off it)
-# just delays the payout, doesn't cancel it — Position is a real lever
-# against this card, not just killing/Warding the caster first (Ward is
-# irrelevant here regardless: this is a positive self-buff, never a debuff,
-# and never applied by anyone else, so it was never in Ward's scope at all).
-# Effect and Defensive Bonus plant the same way, different payoff each —
-# "plant" is flavor, not a fictional action that needs the Effect side's
-# exclusive timing; nothing stops narrating the Defensive Bonus as dropping
-# the seed as part of the block itself.
-def _seed_effect(engine, me, foe):
-    me.ongoing.append({'kind': 'seed_deadly', 'owner': me, 'anchor': me.position})
-def _seed_defense(engine, me, foe):
-    me.ongoing.append({'kind': 'seed_resist', 'owner': me, 'anchor': me.position})
+# STAKE (Cultivator) — renamed from SEED: same mechanic, a less plant-locked
+# name so the card can fit a Construct or Mason deck without the fantasy
+# forcing a growth metaphor. Tempo-as-a-resource, the first card in this
+# shape: telegraphed, invests now for a bigger payoff later, no counter to
+# track — plants at the caster's current position and pays out the next
+# time THEY begin a turn still standing there (engine._ongoing_support_tick),
+# however many turns that takes. Moving off the position (or being forced
+# off it) just delays the payout, doesn't cancel it — Position is a real
+# lever against this card, not just killing/Warding the caster first (Ward
+# is irrelevant here regardless: this is a positive self-buff, never a
+# debuff, and never applied by anyone else, so it was never in Ward's scope
+# at all). Effect and Defensive Bonus stake the same way, different payoff
+# each — "stake" is flavor, not a fictional action that needs the Effect
+# side's exclusive timing; nothing stops narrating the Defensive Bonus as
+# driving it in as part of the block itself.
+def _stake_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'stake_deadly', 'owner': me, 'anchor': me.position})
+def _stake_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'stake_resist', 'owner': me, 'anchor': me.position})
 
 # EMERGENCY REPAIRS (Gambler-adjacent — same "cost lands on your own next
 # turn" shape as BERSERKER'S PRICE, paid in a skipped draw instead of a
@@ -1035,7 +1109,7 @@ def _heave_and_haul_defense(engine, me, foe):
     for a in [me] + engine.allies(me):
         a._quick = True
 
-# OFF BALANCE (was YOU CHANGED WALLS, Wall-Reader) — reworked on promotion,
+# TELLS (was YOU CHANGED WALLS, Wall-Reader) — reworked on promotion,
 # not just renamed. Effect uses "moved" (Drew's own call, the cleaner
 # phrasing) via the new `_repositioned_since_last_turn` tracker (built for
 # this and ROLLOUT below — first time "did X reposition since their last
@@ -1048,10 +1122,10 @@ def _heave_and_haul_defense(engine, me, foe):
 # combatant's own next turn (same shape as `_anticipating`/`_weathered`) —
 # a materially simpler, self-contained approximation of the same intent,
 # not a literal cross-combatant timeline comparison.
-def _off_balance_effect(engine, me, foe):
+def _tells_effect(engine, me, foe):
     if foe._repositioned_since_last_turn:
         me.deadly += 1
-def _off_balance_defense(engine, me, foe):
+def _tells_defense(engine, me, foe):
     if foe._shifted_positive or foe._used_wait:
         me.resist += 1
 
@@ -1073,7 +1147,7 @@ def _patience_of_stone_defense(engine, me, foe):
 # straight to hand after use (`returns_to_hand=True` on the Card itself),
 # regardless of outcome, instead of ever sitting in discard. Needs its own
 # damage function since the +4 bonus is conditional; reuses the same
-# `_repositioned_since_last_turn` tracker as OFF BALANCE, just checking
+# `_repositioned_since_last_turn` tracker as TELLS, just checking
 # yourself instead of the target.
 def _rollout_damage(engine, me, foe):
     base = me.eff('body') + roll(2, engine.rng)
@@ -1252,7 +1326,7 @@ def build_cards():
     add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
-    add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
+    add("STAKE", 'G', 'soul', 'both', 4, effect=_stake_effect, defense=_stake_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 4,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
     add("OVERCOMMIT", 'R', 'body', 'both', 4,
@@ -1262,8 +1336,8 @@ def build_cards():
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 4,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
-    add("OFF BALANCE", 'R', 'body', 'melee', 6,
-        effect=_off_balance_effect, defense=_off_balance_defense)
+    add("TELLS", 'R', 'body', 'melee', 6,
+        effect=_tells_effect, defense=_tells_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 6,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
@@ -1281,6 +1355,10 @@ def build_cards():
     # on that tie, since a won tie IS a clean defender win) are both fully
     # satisfied with no functions of their own.
     add("FRAME-TRAP", 'B', 'mind', 'both', 2)
+    add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
+    add("UNMAKE", 'B', 'mind', 'both', 2, effect=_unmake_effect, defense=_unmake_defense)
+    add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
+        effect=_level_the_field_effect, defense=_level_the_field_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

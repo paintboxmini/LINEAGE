@@ -392,7 +392,7 @@ Range: Melee
 
 ---
 
-**OFF BALANCE**
+**TELLS**
 RED — BODY
 Attack: Body + d6
 Effect: If the defender moved since their last turn, this attack gains Deadly.
