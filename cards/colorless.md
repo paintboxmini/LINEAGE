@@ -6,7 +6,7 @@ This file holds cards that don't carry a fixed color or stat on their face — c
 
 **AFTERIMAGE**
 COLORLESS
-Attack: Mirrors the color and stat of whoever acted immediately before you (defaults to Green/Soul if no one has) + d4
+Attack: Mirrors the color and stat of whoever acted immediately before you + d4. If no one has acted yet, this card auto-loses the reveal outright.
 Effect: Defender gains Blind.
 Defensive Bonus: Gain Evade.
 Range: Both

@@ -190,20 +190,25 @@ class Battle:
         # FOLLOW-UP: fully becomes a copy of whichever ally most recently
         # revealed a card — see engine.py's Duel.attack() for the full
         # reasoning (`physical_card` keeps the true identity for hand/discard
-        # bookkeeping; `card` is swapped to the copy for everything else).
+        # bookkeeping; `card` is swapped to the copy for everything else). No
+        # target -> `card` stays FOLLOW-UP itself (native color None),
+        # caught by the shared colorless-dead check right below.
         physical_card = card
         if card.name == "FOLLOW-UP":
             target = _resolve_follow_up(self, attacker)
-            if target is None:
-                self._say(f"{attacker.name} plays FOLLOW-UP — nothing to copy, auto-loses the reveal")
-                attacker.discard.append(physical_card)
-                return
-            card = target
+            if target is not None:
+                card = target
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — see engine.py's Duel.attack()
         # for the full reasoning.
         atk_color = _effective_color(self, card)
+        if atk_color is None:
+            # Genuinely colorless with nothing to show yet — see engine.py's
+            # Duel.attack() for the full reasoning (no soft Green fallback).
+            self._say(f"{attacker.name} plays {card.name} — nothing to mirror, auto-loses the reveal")
+            attacker.discard.append(physical_card)
+            return
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -253,6 +258,11 @@ class Battle:
                 def_card = chosen
                 if chosen.name == "FOLLOW-UP":
                     def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
+                if def_card is not None and _effective_color(self, def_card) is None:
+                    # AFTERIMAGE (or an unresolved FOLLOW-UP) with nothing to
+                    # mirror — same dead-but-spent path below, not a free
+                    # takeback.
+                    def_card = None
                 if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
                     # Known-banned choice is a free takeback, unlike a dead
                     # FOLLOW-UP below, which is genuinely spent.
@@ -272,12 +282,12 @@ class Battle:
         self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
 
         if physical_def_card is not None and def_card is None:
-            # Defender committed FOLLOW-UP but had nothing to copy — fully
+            # Defender committed a card with nothing to mirror/copy — fully
             # spent, resolves as no legal defense (see engine.py's
             # Duel.attack() for the full reasoning).
             defender.hand.remove(physical_def_card)
             defender.discard.append(physical_def_card)
-            self._say(f"    {defender.name} defends FOLLOW-UP — nothing to copy, no legal defense")
+            self._say(f"    {defender.name} defends {physical_def_card.name} — nothing to mirror, no legal defense")
             self._resolve_attacker_win(attacker, defender, card)
             defender._damage_floor = None
             return

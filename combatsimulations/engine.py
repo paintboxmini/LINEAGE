@@ -67,13 +67,16 @@ def _effective_color(engine, card):
     why Axiom's ban check (comparing against a real color) can never match
     it at the point that check runs. Everywhere else color actually gets
     read or displayed, this resolves it: whoever acted immediately before
-    this turn (engine._prior_turn_hit), falling back to Green if there's
-    nothing to copy (opening hand, or they Waited/Moved instead of
-    attacking). Never mutates the card itself — the same Card object is
-    shared across every deck that includes it, so this is computed fresh
-    at each read instead."""
+    this turn (engine._prior_turn_hit). Returns None if there's nothing to
+    mirror yet (opening hand, or they Waited/Moved instead of attacking) —
+    deliberately no Green fallback (Drew's correction: AFTERIMAGE stays
+    genuinely colorless the same way FOLLOW-UP does; attack() treats a
+    None color here as an auto-loss of the reveal, not a soft default).
+    Never mutates the card itself — the same Card object is shared across
+    every deck that includes it, so this is computed fresh at each read
+    instead."""
     if card.special_reveal == 'mirror_color':
-        return engine._prior_turn_hit.get('color') or 'G'
+        return engine._prior_turn_hit.get('color')
     return card.color
 
 
@@ -653,20 +656,29 @@ class Duel:
         # NOT exempt the way AFTERIMAGE is, since this fully becomes the real
         # card, name and all). `physical_card` keeps the true identity for
         # hand/discard bookkeeping: FOLLOW-UP itself is what returns to the
-        # copier's own discard, never the copied card's name.
+        # copier's own discard, never the copied card's name. No target ->
+        # `card` stays FOLLOW-UP itself (native color None), caught by the
+        # shared colorless-dead check right below — same path AFTERIMAGE
+        # takes with nothing to mirror, one dead-card branch instead of two.
         physical_card = card
         if card.name == "FOLLOW-UP":
             target = _resolve_follow_up(self, attacker)
-            if target is None:
-                self._say(f"{attacker.name} plays FOLLOW-UP — nothing to copy, auto-loses the reveal")
-                attacker.discard.append(physical_card)
-                return
-            card = target
+            if target is not None:
+                card = target
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — that check has to see the
         # genuine colorless state to be bypassed by it at all.
         atk_color = _effective_color(self, card)
+        if atk_color is None:
+            # Genuinely colorless with nothing to show yet — AFTERIMAGE with
+            # no prior reveal to mirror, or FOLLOW-UP with no ally reveal to
+            # copy. No soft fallback (Drew's correction: AFTERIMAGE used to
+            # default to Green here — wrong, it should stay colorless the
+            # same way FOLLOW-UP does) — a real auto-loss of the reveal.
+            self._say(f"{attacker.name} plays {card.name} — nothing to mirror, auto-loses the reveal")
+            attacker.discard.append(physical_card)
+            return
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -727,6 +739,11 @@ class Duel:
                 def_card = chosen
                 if chosen.name == "FOLLOW-UP":
                     def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
+                if def_card is not None and _effective_color(self, def_card) is None:
+                    # AFTERIMAGE (or an unresolved FOLLOW-UP) with nothing to
+                    # mirror — same dead-but-spent path as below, not a free
+                    # takeback: this is the card's own design, not a mistake.
+                    def_card = None
                 if def_card is not None:
                     # enforce Axiom ban on the reveal
                     if defender.axiom_ban and def_card.color == defender.axiom_ban:
@@ -755,13 +772,15 @@ class Duel:
         self._say(f"{attacker.name} plays {card.name} ({atk_color})")
 
         if physical_def_card is not None and def_card is None:
-            # Defender committed FOLLOW-UP but had nothing to copy — fully
-            # spent (they did play a real card), yet resolves as no legal
-            # defense: the same "real whiff, by the card's own design" shape
-            # as WAITING GAME against a buff-less target, not a free mistake.
+            # Defender committed a card that had nothing to mirror/copy —
+            # FOLLOW-UP with no ally reveal, or AFTERIMAGE with no prior
+            # reveal — fully spent (they did play a real card), yet resolves
+            # as no legal defense: the same "real whiff, by the card's own
+            # design" shape as WAITING GAME against a buff-less target, not
+            # a free mistake.
             defender.hand.remove(physical_def_card)
             defender.discard.append(physical_def_card)
-            self._say(f"  {defender.name} defends FOLLOW-UP — nothing to copy, no legal defense")
+            self._say(f"  {defender.name} defends {physical_def_card.name} — nothing to mirror, no legal defense")
             self._resolve_attacker_win(attacker, defender, card, contested=False)
             defender._damage_floor = None
             return

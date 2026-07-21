@@ -892,9 +892,13 @@ def _consume_defense(engine, me, foe):
 # Card object itself, since the same instance is shared across every deck
 # that includes it. The stat mirrors along with the color (you're rolling
 # their identity for this one exchange, not half of it), so damage needs
-# its own function rather than the default me.eff(self.stat) lookup.
+# its own function rather than the default me.eff(self.stat) lookup. No
+# Green fallback here (Drew's correction — AFTERIMAGE stays genuinely
+# colorless if there's nothing to mirror, same as FOLLOW-UP): this function
+# only ever runs on a win/tie past attack()'s own colorless-dead check, so
+# `_prior_turn_hit['color']` is guaranteed real by the time this is called.
 def _afterimage_damage(engine, me, foe):
-    color = engine._prior_turn_hit.get('color') or 'G'
+    color = engine._prior_turn_hit.get('color')
     stat = COLOR_TO_STAT[color]
     return me.eff(stat) + roll(4, engine.rng)
 
