@@ -58,6 +58,12 @@ SETS = {
             '../items/hollow-and-weald-items.md',
         ],
     },
+    'mason': {
+        'title': 'Mason Glyphs',
+        'files': [
+            '../cards/mason-glyphs.md',
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------

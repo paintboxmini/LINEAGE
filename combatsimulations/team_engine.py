@@ -21,7 +21,7 @@ Policies for teams implement:
 
 import random
 
-from engine import (roll, RULING, can_attack, _ongoing_support_tick,
+from engine import (roll, RULING, can_attack, _ongoing_support_tick, _object_tick,
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
                     _stamp_reveal, _resolve_follow_up, _color_label, _rushdown,
@@ -52,6 +52,25 @@ class Battle:
         self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._reveal_seq = 0   # FOLLOW-UP: monotonic clock, stamped on each real reveal
+        self.objects = []   # Mason Glyphs / Objects — see engine.py's Duel.__init__.
+
+    def create_object(self, owner, kind):
+        """See engine.py's Duel.create_object for the full reasoning."""
+        self.objects.append({'kind': kind, 'owner': owner, 'position': owner.position})
+
+    def attack_object(self, attacker, card, obj):
+        """See engine.py's Duel.attack_object for the full reasoning."""
+        owner = obj['owner']
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        if guard is not None:
+            guard._fortress = False
+            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            self.attack(attacker, guard, card)
+            return
+        attacker.hand.remove(card)
+        _discard_or_return(attacker, card)
+        self.objects.remove(obj)
+        self._say(f"{attacker.name} destroys {obj['kind']} at {obj['position']}")
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -190,6 +209,7 @@ class Battle:
     # --- start-of-turn ongoing ticks (Blood Tithe bleed, etc.) ---
     def start_of_turn(self, who):
         _ongoing_support_tick(self, who)
+        _object_tick(self, who)
 
     # --- one attack, at a chosen target ---
     def attack(self, attacker, defender, card):
@@ -464,6 +484,9 @@ class Battle:
                 # auto-hits (rules/combat.md, Collapse & Death), which attack()
                 # already handles via its own `not defender.collapsed` gate.
                 self.attack(who, target, card)
+            elif action[0] == 'attack_object':
+                _, card, obj = action
+                self.attack_object(who, card, obj)
             elif action[0] == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
             elif action[0] == 'destroy_exhaust':

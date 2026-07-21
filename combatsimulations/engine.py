@@ -179,6 +179,35 @@ def _ongoing_support_tick(engine, who):
         who.ongoing = [o for o in who.ongoing if not any(o is s for s in spent)]
 
 
+def _object_tick(engine, who):
+    """Mason Glyphs / Objects (cards/mason-glyphs.md): trigger for free, no
+    roll, no contest, for whoever occupies the matching position on their
+    own turn. Ally-type objects benefit their owner's whole side, the owner
+    included — a standing Object has no "self" left to exclude the way a
+    per-turn ally buff (WARSONG) does, since it isn't cast by anyone
+    anymore once it exists. Hazard-type objects strike the owner's
+    enemies. CIPHER's "gain Obscure" is real canon text but genuinely
+    unmodeled here, same footing as Reveal Hand — Obscure blocks looking at
+    a hand/deck, and this sim's AI already has full internal visibility
+    regardless of what any card says, so there's nothing for it to actually
+    change."""
+    for obj in engine.objects:
+        if who.position != obj['position']:
+            continue
+        owner = obj['owner']
+        kind = obj['kind']
+        if kind == 'mending' and (who is owner or who in engine.allies(owner)):
+            engine.heal(who, 1, source=owner)
+        elif kind == 'honing' and (who is owner or who in engine.allies(owner)):
+            who.next_attack_bonus += 1
+        elif kind == 'barbed' and (who is owner or who in engine.allies(owner)):
+            who.thorns += 1
+        elif kind == 'withering' and who in engine.enemies(owner):
+            who.weak += 1
+        elif kind == 'miring' and who in engine.enemies(owner):
+            engine.initiative_shift(who, -1)
+
+
 def _apply_shift(engine, queue, target, amount):
     """Initiative Shift ±X (rules/card-glossary.md). `queue` IS the wheel —
     queue[0] is the marker's own slot (whoever's currently acting), queue[1] is
@@ -590,6 +619,41 @@ class Duel:
         self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._reveal_seq = 0   # FOLLOW-UP: monotonic clock, stamped on each real reveal
+        self.objects = []   # Mason Glyphs / Objects (cards/mason-glyphs.md): list of
+                             # {'kind', 'owner', 'position'} dicts, engine-level, not
+                             # tied to any Combatant's own state — they outlast their
+                             # creator and exist independently on the battlefield.
+
+    def create_object(self, owner, kind):
+        """Mason Glyphs / Objects: a persistent, position-anchored battlefield
+        entity, created at the owner's current position. No unique ID needed —
+        destruction removes the exact dict by identity."""
+        self.objects.append({'kind': kind, 'owner': owner, 'position': owner.position})
+
+    def attack_object(self, attacker, card, obj):
+        """Attacking an Object instead of a combatant: never rolls for damage,
+        never triggers the attacking card's own Effect — it just destroys the
+        Object outright, and the card is discarded as normal. Fortress
+        intercepts this exactly like it intercepts real attack damage: if
+        anyone on the Object's own side currently holds Fortress, this
+        becomes a genuine attack against THEM instead (full RPS/damage/Effect
+        resolution — the genuine article, not a stand-in), and the Object
+        survives untouched. Not yet reachable by any policy in this sim
+        (no AI decision logic exists for "is destroying this worth it") —
+        a real, deliberate scope limit, same shape as every other "no policy
+        decision infrastructure yet" gap this session. Real players and
+        future smarter policies can call this directly."""
+        owner = obj['owner']
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        if guard is not None:
+            guard._fortress = False
+            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            self.attack(attacker, guard, card)
+            return
+        attacker.hand.remove(card)
+        _discard_or_return(attacker, card)
+        self.objects.remove(obj)
+        self._say(f"{attacker.name} destroys {obj['kind']} at {obj['position']}")
 
     def insert_injury(self, target):
         if self.injury_card is None:
@@ -727,6 +791,7 @@ class Duel:
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):
         _ongoing_support_tick(self, who)
+        _object_tick(self, who)
 
     # --- one attack action ---
     def attack(self, attacker, defender, card):
@@ -1102,6 +1167,8 @@ class Duel:
                 kind = action[0]
                 if kind == 'attack':
                     self.attack(who, foe, action[1])
+                elif kind == 'attack_object':
+                    self.attack_object(who, action[1], action[2])
                 elif kind == 'move':
                     who.position = 'backline' if who.position == 'frontline' else 'frontline'
                     self._say(f"{who.name} moves to {who.position}")

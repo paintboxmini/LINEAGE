@@ -913,6 +913,42 @@ def _exposed_damage(engine, me, foe):
 def _exposed_defense(engine, me, foe):
     me.evade += 1
 
+# Mason Glyphs / Objects (cards/mason-glyphs.md) — the Sync pass. Every glyph
+# just calls `engine.create_object`; the actual per-turn payout lives in
+# `engine._object_tick`, called from both engines' `start_of_turn` alongside
+# the existing green-ongoing tick. CIPHER's "gain Obscure" has no function
+# here at all — see `_object_tick`'s own docstring for why (genuinely
+# unmodeled, same footing as Reveal Hand, not a gap).
+def _mending_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'mending')
+def _mending_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'mending')
+
+def _honing_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'honing')
+def _honing_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'honing')
+
+def _barbed_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'barbed')
+def _barbed_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'barbed')
+
+def _cipher_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'cipher')
+def _cipher_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'cipher')
+
+def _withering_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'withering')
+def _withering_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'withering')
+
+def _miring_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'miring')
+def _miring_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'miring')
+
 # CONSUME (Green) — Parasite's second card, the generic "destroy a card for
 # power" seed Drew flagged and parked earlier ("just having the odds of
 # hitting a stolen card happens are enough"), generalized to your own hand
@@ -1361,6 +1397,19 @@ def build_cards():
     add("UNMAKE", 'B', 'mind', 'both', 2, effect=_unmake_effect, defense=_unmake_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
+    # Mason Glyphs / Objects
+    add("MENDING GLYPH", 'G', 'soul', 'both', 4,
+        effect=_mending_glyph_effect, defense=_mending_glyph_defense)
+    add("HONING GLYPH", 'R', 'body', 'both', 4,
+        effect=_honing_glyph_effect, defense=_honing_glyph_defense)
+    add("BARBED GLYPH", 'R', 'body', 'both', 4,
+        effect=_barbed_glyph_effect, defense=_barbed_glyph_defense)
+    add("CIPHER GLYPH", 'B', 'mind', 'both', 4,
+        effect=_cipher_glyph_effect, defense=_cipher_glyph_defense)
+    add("WITHERING GLYPH", 'G', 'soul', 'both', 4,
+        effect=_withering_glyph_effect, defense=_withering_glyph_defense)
+    add("MIRING GLYPH", 'B', 'mind', 'both', 4,
+        effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)
