@@ -22,8 +22,8 @@ Policies for teams implement:
 import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
-                    _apply_shift, _rotate_current, _leave_wheel, _join_wheel,
-                    _clear_ongoing_on_collapse)
+                    _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
+                    _join_wheel, _clear_ongoing_on_collapse)
 
 
 class Battle:
@@ -159,6 +159,9 @@ class Battle:
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
+
+    def reposition_after(self, me, target):
+        _reposition_after(self.queue, me, target)
 
     # --- setup: one interleaved initiative wheel over everyone ---
     def setup(self):

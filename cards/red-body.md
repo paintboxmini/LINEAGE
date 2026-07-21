@@ -339,3 +339,13 @@ Effect: If an enemy attacked you successfully on the turn immediately before you
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Both
 *"Pain is just momentum, redirected."*
+
+---
+
+**WAITING GAME**
+RED — BODY
+Attack: Body + d2
+Effect: Copy one Positive Status Effect of your choice that the defender currently has.
+Defensive Bonus: Copy one Positive Status Effect of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*

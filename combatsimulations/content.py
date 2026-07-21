@@ -785,10 +785,38 @@ def _shade_away_defense(engine, me, foe):
     foe._forced_target = me   # taunt, same pattern as MOCKERY — "rushdown if they
                                # cannot reach you" unmodeled, matches Mockery's own gap
 
-# STARING CONTEST (Red) — "move to immediately follow a chosen token in
-# initiative order" is a direct requeue, not a numeric shift; no engine hook
-# for it distinct from Initiative Shift X. Left fully unmodeled, registered
-# with no effect/defense, same treatment as Tactical Wait.
+# STARING CONTEST (Red) — genuinely built at last: "move to immediately
+# follow a chosen token" is a direct requeue, not a numeric shift, so it
+# needed its own engine hook (engine.reposition_after) distinct from
+# Initiative Shift X. Mirror archetype, per its own unique pillar-touching
+# mechanic — kept as-is rather than folded into WAITING GAME below.
+def _staring_contest_effect(engine, me, foe):
+    # "any target" simplified to the defender for the bot — same treatment
+    # as every other "your choice of any combatant" card this session.
+    engine.reposition_after(me, foe)
+def _staring_contest_defense(engine, me, foe):
+    engine.reposition_after(me, foe)
+
+# WAITING GAME (Red) — the actual copy-a-buff Mirror card. Picks whichever
+# Positive Status Effect the target holds first, in a fixed check order,
+# since a heuristic brain can't "choose" the way a real player would at the
+# table; a real player picks freely among whatever's visible. Anchored and
+# Quick are skipped — Anchored lives in `ongoing`, not a simple flag, and
+# Quick has no implementation anywhere yet (same gap noted since Realignment).
+def _copy_one_status(me, foe):
+    if foe.deadly > 0:
+        me.deadly += 1
+    elif foe.resist > 0:
+        me.resist += 1
+    elif foe.evade > 0:
+        me.evade += 1
+    elif getattr(foe, '_fortress', False):
+        me._fortress = True
+
+def _waiting_game_effect(engine, me, foe):
+    _copy_one_status(me, foe)
+def _waiting_game_defense(engine, me, foe):
+    _copy_one_status(me, foe)
 
 
 # ==================== The Patient Host — boss signature cards ================
@@ -950,7 +978,10 @@ def build_cards():
         damage=_understanding_dmg, defense=_understanding_defense)
     add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'both', 4, effect=_weathered_effect, defense=_weathered_defense)
-    add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
+    add("STARING CONTEST", 'R', 'body', 'both', 2,
+        effect=_staring_contest_effect, defense=_staring_contest_defense)
+    add("WAITING GAME", 'R', 'body', 'both', 2,
+        effect=_waiting_game_effect, defense=_waiting_game_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

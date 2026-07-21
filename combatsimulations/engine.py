@@ -229,6 +229,21 @@ def _rotate_current(engine, queue, who):
     queue.append(who)
 
 
+def _reposition_after(queue, me, target):
+    """STARING CONTEST: move `me` to immediately follow `target` in the
+    current cycle's order. Deliberately NOT routed through _apply_shift —
+    the card's own text never says "Initiative Shift," just "change your
+    place... the new order takes effect this cycle." No bonus turn, no
+    shift-skip, a plain reorder. Safe to call even when `me` is the
+    currently-resolving actor: _rotate_current already no-ops if queue[0]
+    isn't who anymore by the time the turn ends, so moving the current
+    actor mid-turn here doesn't fight with the normal end-of-turn rotation."""
+    if me not in queue or target not in queue or me is target:
+        return
+    queue.remove(me)
+    queue.insert(queue.index(target) + 1, me)
+
+
 def _leave_wheel(engine, queue, who):
     """A combatant who leaves the fight entirely removes their slot, and the
     wheel closes around it (rules/combat.md, Joining and leaving). Plain list
@@ -444,6 +459,9 @@ class Duel:
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
+
+    def reposition_after(self, me, target):
+        _reposition_after(self.queue, me, target)
 
     def scry(self, actor, owner, x):
         """Look at the top x of owner's deck; the actor's policy decides which go
