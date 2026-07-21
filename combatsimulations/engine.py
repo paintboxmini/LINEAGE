@@ -139,12 +139,16 @@ def _apply_shift(engine, queue, target, amount):
     prior bonus), not just Example 5's exact numbers, since only the one case
     is confirmed and there's no basis to special-case the others differently.
 
-    With exactly 3 combatants on the wheel, X's magnitude is reduced by 1
+    With 3 or fewer combatants on the wheel, X's magnitude is reduced by 1
     (toward zero) before anything else here runs — a shift of ±1 becomes a
-    no-op."""
+    no-op. (Previously gated on exactly 3; Drew's correction — the dampening
+    is meant to apply at 3 *or less*, not just exactly 3. This also happens
+    to be what would have prevented WARSONG's +2-at-2-seats crash from ever
+    reaching the exact-multiple case below in the first place — a +2 dampens
+    to +1 here, which isn't a multiple of 2.)"""
     if not queue or target not in queue or amount == 0:
         return
-    if len(queue) == 3:
+    if len(queue) <= 3:
         amount += -1 if amount > 0 else 1
         if amount == 0:
             return

@@ -647,9 +647,13 @@ def _retaliate_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
 def _warsong_effect(engine, me, foe):
+    # "All allies" excludes the caster, matching URGENCY's own established
+    # convention for the same phrase — inert in a Duel (no allies exist
+    # there), same accepted shape as Resonate/Support/every other team-play
+    # Green card.
     prior = engine._prior_turn_hit
     if prior['hit'] and prior['actor'] in engine.allies(me):
-        for a in _team(engine, me):
+        for a in engine.allies(me):
             a.deadly += 1
 def _warsong_defense(engine, me, foe):
     a = _best_attacker(engine.allies(me)) or me
