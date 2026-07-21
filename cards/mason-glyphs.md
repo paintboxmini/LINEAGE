@@ -46,3 +46,23 @@ Effect: Create a Cipher Glyph at your current position. Until destroyed, any all
 Defensive Bonus: Same as Effect.
 Range: Both
 *"What the eye can't parse, the hand can't take."*
+
+---
+
+**WITHERING GLYPH**
+GREEN — SOUL — MASON
+Attack: Soul + d4
+Effect: Create a Withering Glyph at your current position. Until destroyed, any enemy who takes their turn there gains Weak.
+Defensive Bonus: Same as Effect.
+Range: Both
+*"Nothing that lingers here leaves at full strength."*
+
+---
+
+**MIRING GLYPH**
+BLUE — MIND — MASON
+Attack: Mind + d4
+Effect: Create a Miring Glyph at your current position. Until destroyed, any enemy who takes their turn there suffers Initiative Shift -1.
+Defensive Bonus: Same as Effect.
+Range: Both
+*"The ground doesn't care how fast you meant to be."*
