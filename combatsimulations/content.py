@@ -871,17 +871,34 @@ def _consume_defense(engine, me, foe):
     engine.heal(me, dmg)            # Lifesteal off this counter-hit
     _consume_destroy(engine, me, foe)
 
+# BECOMING (colorless) — the Oracle-drafting card. Unmodeled beyond a safe
+# zero-damage function, same treatment as PREDICT/VOID's item-usage gaps:
+# the Oracle pool (`testcampaigndecks/oracle.md`) is a session-persistent,
+# end-of-session table ritual — a GM-curated pool, a player draft, cards
+# that carry across combats entirely outside this simulator's scope, which
+# resets every deck between duels/battles and has no concept of a shared
+# pool or cross-combat card identity. The 3-uses-then-permanently-destroyed
+# counter is real but lives at the table (character sheet / testcampaign-
+# decks file), not here — same reasoning as why HP-cost-until-next-rest was
+# flagged (not built) earlier this session: state that survives past a
+# single combat's end isn't this engine's job to track.
+def _becoming_damage(engine, me, foe):
+    return 0
+
 # FOLLOW-UP (Mirror, colorless) — the second colorless card, and a stronger
 # transformation than AFTERIMAGE's: this fully BECOMES a copy of whatever an
 # ally most recently revealed (never itself — allies only, matching the
 # WARSONG convention, so it's a guaranteed dead card in a 1v1 Duel, same as
-# every other team-only card), before RPS resolution. No effect/defense/
-# damage of its own is registered at all — every one of those gets replaced
-# by the copied card's real functions once a target is found (engine.py's
-# attack(), both engines). Nothing to copy (no ally has revealed yet, or —
-# structurally impossible today, but still ruled on — their most recent
-# reveal was somehow a status card): auto-loses the reveal outright, a
-# guaranteed loss, not a weak fallback like AFTERIMAGE's default-to-Green.
+# every other team-only card), before RPS resolution. Effect/Defensive Bonus
+# are entirely replaced by the copied card's real functions once a target is
+# found (engine.py's attack(), both engines) — but damage still needs its
+# own function: with nothing to copy, `card` stays FOLLOW-UP's own native
+# object (stat=None), and the reveal can still legitimately reach a damage
+# roll on an uncontested win (Drew's colorless rule — it only loses when
+# actually challenged). Unlike AFTERIMAGE, FOLLOW-UP has no printed formula
+# of its own at all to fall back on, so an unresolved copy deals flat 0.
+def _follow_up_damage(engine, me, foe):
+    return 0
 
 # AFTERIMAGE (Mirror) — colorless until revealed, per Drew's real-table
 # reasoning: Axiom's ban applies at the moment of commitment, and this card
@@ -893,12 +910,16 @@ def _consume_defense(engine, me, foe):
 # that includes it. The stat mirrors along with the color (you're rolling
 # their identity for this one exchange, not half of it), so damage needs
 # its own function rather than the default me.eff(self.stat) lookup. No
-# Green fallback here (Drew's correction — AFTERIMAGE stays genuinely
-# colorless if there's nothing to mirror, same as FOLLOW-UP): this function
-# only ever runs on a win/tie past attack()'s own colorless-dead check, so
-# `_prior_turn_hit['color']` is guaranteed real by the time this is called.
+# Green fallback (Drew's correction: colorless stays colorless, same as
+# FOLLOW-UP) — but this CAN still be called with nothing to mirror, on an
+# uncontested win (no defense, or the defender collapsed/staggered): Drew's
+# rule is that colorless only loses when actually challenged by a real
+# color, not automatically, so the reveal itself can still succeed. With no
+# identity to mirror, there's no stat bonus either — just the bare d4.
 def _afterimage_damage(engine, me, foe):
     color = engine._prior_turn_hit.get('color')
+    if color is None:
+        return roll(4, engine.rng)
     stat = COLOR_TO_STAT[color]
     return me.eff(stat) + roll(4, engine.rng)
 
@@ -1076,7 +1097,8 @@ def build_cards():
         special_reveal='mirror_color')
     add("DRAIN", 'R', 'body', 'both', 2, effect=_drain_effect, defense=_drain_defense)
     add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
-    add("FOLLOW-UP", None, None, 'both', None)
+    add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
+    add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

@@ -24,7 +24,7 @@ import random
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
-                    _stamp_reveal, _resolve_follow_up)
+                    _stamp_reveal, _resolve_follow_up, _color_label)
 
 
 class Battle:
@@ -191,8 +191,10 @@ class Battle:
         # revealed a card — see engine.py's Duel.attack() for the full
         # reasoning (`physical_card` keeps the true identity for hand/discard
         # bookkeeping; `card` is swapped to the copy for everything else). No
-        # target -> `card` stays FOLLOW-UP itself (native color None),
-        # caught by the shared colorless-dead check right below.
+        # target -> `card` stays FOLLOW-UP itself, genuinely colorless
+        # (native color None) — resolved by _rps() below like any other
+        # card, not an automatic whiff (Drew's rule: colorless only loses
+        # when actually challenged by a card with a real color).
         physical_card = card
         if card.name == "FOLLOW-UP":
             target = _resolve_follow_up(self, attacker)
@@ -201,14 +203,9 @@ class Battle:
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — see engine.py's Duel.attack()
-        # for the full reasoning.
+        # for the full reasoning. May be None (colorless, nothing to
+        # mirror/copy) — _rps() handles that case on its own.
         atk_color = _effective_color(self, card)
-        if atk_color is None:
-            # Genuinely colorless with nothing to show yet — see engine.py's
-            # Duel.attack() for the full reasoning (no soft Green fallback).
-            self._say(f"{attacker.name} plays {card.name} — nothing to mirror, auto-loses the reveal")
-            attacker.discard.append(physical_card)
-            return
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -219,7 +216,7 @@ class Battle:
         if attacker.blind > 0:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)}) at {defender.name}")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
                 attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
@@ -235,7 +232,7 @@ class Battle:
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
                 attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
@@ -257,17 +254,13 @@ class Battle:
                 physical_def_card = chosen
                 def_card = chosen
                 if chosen.name == "FOLLOW-UP":
-                    def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
-                if def_card is not None and _effective_color(self, def_card) is None:
-                    # AFTERIMAGE (or an unresolved FOLLOW-UP) with nothing to
-                    # mirror — same dead-but-spent path below, not a free
-                    # takeback.
-                    def_card = None
+                    target = _resolve_follow_up(self, defender)
+                    if target is not None:
+                        def_card = target
+                    # else: def_card stays FOLLOW-UP itself, a legitimate
+                    # colorless defense resolved by _rps() below.
                 if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
-                    # Known-banned choice is a free takeback, unlike a dead
-                    # FOLLOW-UP below, which is genuinely spent.
                     def_card = None
-                    physical_def_card = None
         if was_staggered:
             defender.staggered = False
             self._say(f"    {defender.name} was Staggered — this attack goes undefended, then it clears")
@@ -279,20 +272,11 @@ class Battle:
         attacker.attack_history[atk_color] += 1
         self._this_turn_hit['color'] = atk_color
         _stamp_reveal(self, attacker, card)
-        self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
-
-        if physical_def_card is not None and def_card is None:
-            # Defender committed a card with nothing to mirror/copy — fully
-            # spent, resolves as no legal defense (see engine.py's
-            # Duel.attack() for the full reasoning).
-            defender.hand.remove(physical_def_card)
-            defender.discard.append(physical_def_card)
-            self._say(f"    {defender.name} defends {physical_def_card.name} — nothing to mirror, no legal defense")
-            self._resolve_attacker_win(attacker, defender, card)
-            defender._damage_floor = None
-            return
+        self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)}) at {defender.name}")
 
         if def_card is None:
+            # no defense -> attacker auto-wins (full win), colorless included
+            # — no challenge means no loss (Drew's colorless rule).
             self._resolve_attacker_win(attacker, defender, card)
             defender._damage_floor = None
             return
@@ -321,7 +305,11 @@ class Battle:
     @staticmethod
     def _rps_base(atk, dfn):
         if atk == dfn:
-            return 'tie'
+            return 'tie'   # includes colorless vs colorless (None == None)
+        if atk is None:
+            return 'defender'   # colorless auto-loses to any real color
+        if dfn is None:
+            return 'attacker'   # colorless auto-loses to any real color
         return 'attacker' if (atk, dfn) in {('B', 'R'), ('R', 'G'), ('G', 'B')} else 'defender'
 
     def _rps(self, atk_card, def_card):

@@ -70,14 +70,19 @@ def _effective_color(engine, card):
     this turn (engine._prior_turn_hit). Returns None if there's nothing to
     mirror yet (opening hand, or they Waited/Moved instead of attacking) —
     deliberately no Green fallback (Drew's correction: AFTERIMAGE stays
-    genuinely colorless the same way FOLLOW-UP does; attack() treats a
-    None color here as an auto-loss of the reveal, not a soft default).
-    Never mutates the card itself — the same Card object is shared across
-    every deck that includes it, so this is computed fresh at each read
-    instead."""
+    genuinely colorless the same way FOLLOW-UP does). A None color is a
+    real, legal state, not an error — rps() below resolves what a colorless
+    reveal does against a real one. Never mutates the card itself — the
+    same Card object is shared across every deck that includes it, so this
+    is computed fresh at each read instead."""
     if card.special_reveal == 'mirror_color':
         return engine._prior_turn_hit.get('color')
     return card.color
+
+
+def _color_label(color):
+    """Display only — 'colorless' instead of a bare None in combat logs."""
+    return color if color is not None else 'colorless'
 
 
 def _stamp_reveal(engine, who, card):
@@ -657,9 +662,12 @@ class Duel:
         # card, name and all). `physical_card` keeps the true identity for
         # hand/discard bookkeeping: FOLLOW-UP itself is what returns to the
         # copier's own discard, never the copied card's name. No target ->
-        # `card` stays FOLLOW-UP itself (native color None), caught by the
-        # shared colorless-dead check right below — same path AFTERIMAGE
-        # takes with nothing to mirror, one dead-card branch instead of two.
+        # `card` stays FOLLOW-UP itself: genuinely colorless (native color
+        # None), same footing as AFTERIMAGE with nothing to mirror — resolved
+        # by rps() below, not treated as an automatic whiff (Drew's rule:
+        # "colorless cards auto lose to any color... it only loses when it's
+        # challenged by a card with an actual color" — a colorless card still
+        # wins fully if there's no real defense to challenge it at all).
         physical_card = card
         if card.name == "FOLLOW-UP":
             target = _resolve_follow_up(self, attacker)
@@ -668,17 +676,10 @@ class Duel:
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — that check has to see the
-        # genuine colorless state to be bypassed by it at all.
+        # genuine colorless state to be bypassed by it at all. May be None
+        # (colorless, nothing to mirror/copy) — rps() handles that case on
+        # its own; no early return here.
         atk_color = _effective_color(self, card)
-        if atk_color is None:
-            # Genuinely colorless with nothing to show yet — AFTERIMAGE with
-            # no prior reveal to mirror, or FOLLOW-UP with no ally reveal to
-            # copy. No soft fallback (Drew's correction: AFTERIMAGE used to
-            # default to Green here — wrong, it should stay colorless the
-            # same way FOLLOW-UP does) — a real auto-loss of the reveal.
-            self._say(f"{attacker.name} plays {card.name} — nothing to mirror, auto-loses the reveal")
-            attacker.discard.append(physical_card)
-            return
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -692,7 +693,7 @@ class Duel:
         if attacker.blind > 0:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({atk_color})")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
                 attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
@@ -710,7 +711,7 @@ class Duel:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
-                self._say(f"{attacker.name} plays {card.name} ({atk_color})")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {defender.name} EVADES — attack misses")
                 attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
@@ -738,12 +739,13 @@ class Duel:
                 physical_def_card = chosen
                 def_card = chosen
                 if chosen.name == "FOLLOW-UP":
-                    def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
-                if def_card is not None and _effective_color(self, def_card) is None:
-                    # AFTERIMAGE (or an unresolved FOLLOW-UP) with nothing to
-                    # mirror — same dead-but-spent path as below, not a free
-                    # takeback: this is the card's own design, not a mistake.
-                    def_card = None
+                    target = _resolve_follow_up(self, defender)
+                    if target is not None:
+                        def_card = target
+                    # else: def_card stays FOLLOW-UP itself, genuinely
+                    # colorless (native color None) — a legitimate defense
+                    # choice, resolved by rps() below like any other card,
+                    # not an automatic "no legal defense."
                 if def_card is not None:
                     # enforce Axiom ban on the reveal
                     if defender.axiom_ban and def_card.color == defender.axiom_ban:
@@ -751,11 +753,7 @@ class Duel:
                                "AXIOM's named color cannot be revealed to defend either "
                                "— the ban is on the next reveal, attack or block "
                                "(rules/card-glossary.md Axiom + reveal timing).")
-                        # A known-banned choice is a free takeback (matches the
-                        # illegal-defense-mistake ruling, rules/combat.md) —
-                        # unlike a dead FOLLOW-UP below, which is genuinely spent.
                         def_card = None
-                        physical_def_card = None
         if was_staggered:
             defender.staggered = False
             self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
@@ -769,24 +767,14 @@ class Duel:
         attacker.attack_history[atk_color] += 1  # revealed = public info
         self._this_turn_hit['color'] = atk_color
         _stamp_reveal(self, attacker, card)
-        self._say(f"{attacker.name} plays {card.name} ({atk_color})")
-
-        if physical_def_card is not None and def_card is None:
-            # Defender committed a card that had nothing to mirror/copy —
-            # FOLLOW-UP with no ally reveal, or AFTERIMAGE with no prior
-            # reveal — fully spent (they did play a real card), yet resolves
-            # as no legal defense: the same "real whiff, by the card's own
-            # design" shape as WAITING GAME against a buff-less target, not
-            # a free mistake.
-            defender.hand.remove(physical_def_card)
-            defender.discard.append(physical_def_card)
-            self._say(f"  {defender.name} defends {physical_def_card.name} — nothing to mirror, no legal defense")
-            self._resolve_attacker_win(attacker, defender, card, contested=False)
-            defender._damage_floor = None
-            return
+        self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
 
         if def_card is None:
-            # no defense -> attacker auto-wins (full win)
+            # no defense -> attacker auto-wins (full win); a colorless
+            # attacker still gets the same clean, uncontested win here —
+            # "colorless auto loses to any color... it only loses when it's
+            # challenged by a card with an actual color" (Drew's rule) — no
+            # challenge at all means no loss.
             self._resolve_attacker_win(attacker, defender, card, contested=False)
             defender._damage_floor = None
             return
@@ -796,7 +784,7 @@ class Duel:
         defender.discard.append(physical_def_card)
         defender.last_color = def_color
         _stamp_reveal(self, defender, def_card)
-        self._say(f"  {defender.name} defends {def_card.name} ({def_color})")
+        self._say(f"  {defender.name} defends {def_card.name} ({_color_label(def_color)})")
 
         outcome = self.rps(card, def_card, attacker, defender)
         if outcome == 'attacker':
@@ -850,7 +838,16 @@ class Duel:
     @staticmethod
     def _rps_base(atk, dfn):
         if atk == dfn:
-            return 'tie'
+            return 'tie'   # includes colorless vs colorless (None == None)
+        # Colorless auto-loses to any real color, whichever side it's on —
+        # Drew's rule: "colorless cards auto lose to any color... it only
+        # loses when it's challenged by a card with an actual color." A
+        # colorless card facing no challenge at all never reaches this
+        # function (attack() short-circuits to an uncontested win first).
+        if atk is None:
+            return 'defender'
+        if dfn is None:
+            return 'attacker'
         beats = {('B', 'R'), ('R', 'G'), ('G', 'B')}  # attacker color beats defender color
         if (atk, dfn) in beats:
             return 'attacker'
