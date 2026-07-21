@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING
+from engine import Card, roll, RULING, COLOR_TO_STAT
 
 
 def warded(target):
@@ -818,6 +818,26 @@ def _waiting_game_effect(engine, me, foe):
 def _waiting_game_defense(engine, me, foe):
     _copy_one_status(me, foe)
 
+# AFTERIMAGE (Mirror) — colorless until revealed, per Drew's real-table
+# reasoning: Axiom's ban applies at the moment of commitment, and this card
+# genuinely hasn't chosen a color yet at that point, so no named-color ban
+# can ever catch it. Registered with color=None and special_reveal=
+# 'mirror_color'; engine._effective_color resolves it everywhere else color
+# actually gets read (messaging, history, RPS) — never by mutating this
+# Card object itself, since the same instance is shared across every deck
+# that includes it. The stat mirrors along with the color (you're rolling
+# their identity for this one exchange, not half of it), so damage needs
+# its own function rather than the default me.eff(self.stat) lookup.
+def _afterimage_damage(engine, me, foe):
+    color = engine._prior_turn_hit.get('color') or 'G'
+    stat = COLOR_TO_STAT[color]
+    return me.eff(stat) + roll(4, engine.rng)
+
+def _afterimage_effect(engine, me, foe):
+    foe.blind += 1
+def _afterimage_defense(engine, me, foe):
+    me.evade += 1
+
 
 # ==================== The Patient Host — boss signature cards ================
 
@@ -982,6 +1002,9 @@ def build_cards():
         effect=_staring_contest_effect, defense=_staring_contest_defense)
     add("WAITING GAME", 'R', 'body', 'both', 2,
         effect=_waiting_game_effect, defense=_waiting_game_defense)
+    add("AFTERIMAGE", None, None, 'both', None,
+        damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
+        special_reveal='mirror_color')
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

@@ -58,6 +58,25 @@ def _rolled_die(die, rng, me):
     return roll(die, rng)
 
 
+COLOR_TO_STAT = {'R': 'body', 'B': 'mind', 'G': 'soul'}
+
+
+def _effective_color(engine, card):
+    """AFTERIMAGE: colorless (card.color is None) until revealed — a color
+    this genuinely doesn't have yet, not a placeholder, which is exactly
+    why Axiom's ban check (comparing against a real color) can never match
+    it at the point that check runs. Everywhere else color actually gets
+    read or displayed, this resolves it: whoever acted immediately before
+    this turn (engine._prior_turn_hit), falling back to Green if there's
+    nothing to copy (opening hand, or they Waited/Moved instead of
+    attacking). Never mutates the card itself — the same Card object is
+    shared across every deck that includes it, so this is computed fresh
+    at each read instead."""
+    if card.special_reveal == 'mirror_color':
+        return engine._prior_turn_hit.get('color') or 'G'
+    return card.color
+
+
 # Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
 # SYNCHRONY) — cleared for real on Collapse, below. Pure-Anchored kinds
 # (rooted_oath, ledger) are deliberately left alone: Anchored's own glossary
@@ -445,12 +464,15 @@ class Duel:
         self.pending_turns = []
         self.queue = []
         self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
-        # RETALIATE/WARSONG/REBUTTAL: "the turn immediately before yours" — frozen
-        # snapshot of the last completed turn, promoted from _this_turn_hit at the
-        # top of take_turn (before that turn's own actions can overwrite it), so a
-        # card's Effect always reads the PRIOR combatant's result, never its own.
-        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False}
-        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False}
+        # RETALIATE/WARSONG/REBUTTAL/AFTERIMAGE: "the turn immediately before
+        # yours" — frozen snapshot of the last completed turn, promoted from
+        # _this_turn_hit at the top of take_turn (before that turn's own
+        # actions can overwrite it), so a card's Effect always reads the
+        # PRIOR combatant's result, never its own. 'color' is set at every
+        # reveal regardless of outcome (win, tie, or loss) — AFTERIMAGE cares
+        # what was shown, not who won; 'hit'/'target' stay clean-win-only.
+        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
 
     def insert_injury(self, target):
         if self.injury_card is None:
@@ -582,6 +604,11 @@ class Duel:
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
+        # AFTERIMAGE: resolved once, used everywhere color is read or shown
+        # below EXCEPT the Axiom-ban check further down, which deliberately
+        # keeps reading card.color directly — that check has to see the
+        # genuine colorless state to be bypassed by it at all.
+        atk_color = _effective_color(self, card)
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -595,11 +622,12 @@ class Duel:
         if attacker.blind > 0:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"{attacker.name} plays {card.name} ({atk_color})")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
                 attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1
+                self._this_turn_hit['color'] = atk_color
                 return
 
         # Evade resolves before the defender selects a card. It only reads
@@ -611,11 +639,12 @@ class Duel:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
-                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"{attacker.name} plays {card.name} ({atk_color})")
                 self._say(f"  {defender.name} EVADES — attack misses")
                 attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1  # revealed = public info
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1  # revealed = public info
+                self._this_turn_hit['color'] = atk_color
                 defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
@@ -649,9 +678,10 @@ class Duel:
         # lands in discard now (before RPS/outcome application), so effects
         # like FORGET that read `foe.discard` after RPS resolves still see it.
         attacker.discard.append(card)
-        attacker.last_color = card.color
-        attacker.attack_history[card.color] += 1  # revealed = public info
-        self._say(f"{attacker.name} plays {card.name} ({card.color})")
+        attacker.last_color = atk_color
+        attacker.attack_history[atk_color] += 1  # revealed = public info
+        self._this_turn_hit['color'] = atk_color
+        self._say(f"{attacker.name} plays {card.name} ({atk_color})")
 
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
@@ -659,10 +689,11 @@ class Duel:
             defender._damage_floor = None
             return
 
+        def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
         defender.hand.remove(def_card)
         defender.discard.append(def_card)
-        defender.last_color = def_card.color
-        self._say(f"  {defender.name} defends {def_card.name} ({def_card.color})")
+        defender.last_color = def_color
+        self._say(f"  {defender.name} defends {def_card.name} ({def_color})")
 
         outcome = self.rps(card, def_card, attacker, defender)
         if outcome == 'attacker':
@@ -693,7 +724,7 @@ class Duel:
         defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
-        base = self._rps_base(atk_card.color, def_card.color)
+        base = self._rps_base(_effective_color(self, atk_card), _effective_color(self, def_card))
         # PARADOX reverses the outcome on reveal; a tie is unchanged.
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
@@ -723,7 +754,11 @@ class Duel:
         return 'defender'
 
     def _resolve_attacker_win(self, attacker, defender, card, contested):
-        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True}
+        # Preserve 'color', set earlier in attack() at the reveal point —
+        # replacing the whole dict here would silently drop it on every
+        # clean win, a real bug caught building AFTERIMAGE.
+        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True,
+                                'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         # Rend's defensive guard: the next hit deals no damage and instead
@@ -792,7 +827,7 @@ class Duel:
     def take_turn(self, who, foe):
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
-        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False}
+        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False

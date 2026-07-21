@@ -36,6 +36,12 @@ def est_damage(me, card):
         return me.body + 2.5 + 2.0  # explode expectation, rough
     if card.name == "BURN BRIGHT":
         return me.body + 3.5 + 2
+    if card.name == "AFTERIMAGE":
+        # Colorless — stat isn't known until reveal (mirrors whoever went
+        # immediately before), so there's no single `card.stat` to read here.
+        # Rough estimate: average of the caster's own three stats, since the
+        # real answer depends on engine state this function doesn't have.
+        return (me.body + me.mind + me.soul) / 3 + _AVG[4]
     return getattr(me, card.stat) + _AVG[card.base_die]
 
 
@@ -243,7 +249,9 @@ class TacticianPolicy(ScryMixin):
             v += 4                                    # unpreventable finisher
         # Risk-free read: if the color that beats this attack (as a defender) is
         # exhausted from the foe's live cards, this attack cannot lose the reveal.
-        if self._color_exhausted(engine, foe, _BEATEN_BY[card.color]):
+        # AFTERIMAGE is colorless until reveal — no fixed color to look up here,
+        # so this read just doesn't apply to it (not a knowable safety check).
+        if card.color is not None and self._color_exhausted(engine, foe, _BEATEN_BY[card.color]):
             v += 2
         return v
 

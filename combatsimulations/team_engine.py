@@ -23,7 +23,7 @@ import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
-                    _join_wheel, _clear_ongoing_on_collapse)
+                    _join_wheel, _clear_ongoing_on_collapse, _effective_color)
 
 
 class Battle:
@@ -43,10 +43,11 @@ class Battle:
         self.queue = []
         self.team_target = {0: None, 1: None}   # each side's shared focus-fire pick (team_policies.py, _pick_target)
         self._resolving = None   # whoever's turn is currently resolving (see engine._apply_shift)
-        # RETALIATE/WARSONG/REBUTTAL: "the turn immediately before yours" — see the
-        # matching comment in engine.py's Duel.__init__ for the full mechanism.
-        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False}
-        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False}
+        # RETALIATE/WARSONG/REBUTTAL/AFTERIMAGE: "the turn immediately before
+        # yours" — see the matching comment in engine.py's Duel.__init__ for
+        # the full mechanism.
+        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -184,6 +185,11 @@ class Battle:
         attacker.hand.remove(card)
         attacker._attacked_this = True
         attacker._last_hit = 0
+        # AFTERIMAGE: resolved once, used everywhere color is read or shown
+        # below EXCEPT the Axiom-ban check further down, which deliberately
+        # keeps reading card.color directly — see engine.py's Duel.attack()
+        # for the full reasoning.
+        atk_color = _effective_color(self, card)
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -194,11 +200,12 @@ class Battle:
         if attacker.blind > 0:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
+                self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
                 attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1
+                self._this_turn_hit['color'] = atk_color
                 return
 
         was_staggered = defender.staggered
@@ -208,11 +215,12 @@ class Battle:
         if defender.evade > 0:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
+                self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
                 attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1
+                self._this_turn_hit['color'] = atk_color
                 defender._damage_floor = None
                 return
 
@@ -232,18 +240,20 @@ class Battle:
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, before anything (including FORGET, later) looks at them.
         attacker.discard.append(card)
-        attacker.last_color = card.color
-        attacker.attack_history[card.color] += 1
-        self._say(f"{attacker.name} plays {card.name} ({card.color}) at {defender.name}")
+        attacker.last_color = atk_color
+        attacker.attack_history[atk_color] += 1
+        self._this_turn_hit['color'] = atk_color
+        self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
 
         if def_card is None:
             self._resolve_attacker_win(attacker, defender, card)
             defender._damage_floor = None
             return
 
+        def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
         defender.hand.remove(def_card)
         defender.discard.append(def_card)
-        defender.last_color = def_card.color
+        defender.last_color = def_color
 
         outcome = self._rps(card, def_card)
         if outcome == 'attacker':
@@ -267,7 +277,7 @@ class Battle:
         return 'attacker' if (atk, dfn) in {('B', 'R'), ('R', 'G'), ('G', 'B')} else 'defender'
 
     def _rps(self, atk_card, def_card):
-        base = self._rps_base(atk_card.color, def_card.color)
+        base = self._rps_base(_effective_color(self, atk_card), _effective_color(self, def_card))
         if (atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox') \
                 and base != 'tie':
             base = 'defender' if base == 'attacker' else 'attacker'
@@ -284,7 +294,11 @@ class Battle:
         return base
 
     def _resolve_attacker_win(self, attacker, defender, card):
-        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True}
+        # Preserve 'color', set earlier in attack() at the reveal point —
+        # replacing the whole dict here would silently drop it on every
+        # clean win, a real bug caught building AFTERIMAGE.
+        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True,
+                                'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         if defender._rend_guard:
@@ -331,7 +345,7 @@ class Battle:
     def take_turn(self, who):
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
-        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False}
+        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
