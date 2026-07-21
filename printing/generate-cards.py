@@ -28,6 +28,7 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/red-body.md',
             '../cards/green-soul.md',
+            '../cards/colorless.md',
         ],
     },
     'briarwatch': {
@@ -57,26 +58,35 @@ SETS = {
             '../items/hollow-and-weald-items.md',
         ],
     },
+    'mason': {
+        'title': 'Mason Glyphs',
+        'files': [
+            '../cards/mason-glyphs.md',
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
 
 COLOR_HEX = {
-    'BLUE':  '#2C5F9E',
-    'RED':   '#9E2C2C',
-    'GREEN': '#2A7A3E',
+    'BLUE':      '#2C5F9E',
+    'RED':       '#9E2C2C',
+    'GREEN':     '#2A7A3E',
+    'COLORLESS': '#5A5A5A',
 }
 
 COLOR_BG = {
-    'BLUE':  '#F0F4FA',
-    'RED':   '#FAF0F0',
-    'GREEN': '#F0F7F2',
+    'BLUE':      '#F0F4FA',
+    'RED':       '#FAF0F0',
+    'GREEN':     '#F0F7F2',
+    'COLORLESS': '#F2F2F2',
 }
 
 COLOR_LABEL = {
-    'BLUE':  'Mind',
-    'RED':   'Body',
-    'GREEN': 'Soul',
+    'BLUE':      'Mind',
+    'RED':       'Body',
+    'GREEN':     'Soul',
+    'COLORLESS': 'Colorless',
 }
 
 ITEM_HEX = '#7A5C10'
@@ -111,6 +121,10 @@ def parse_cards(filepath):
                 card['color'] = m.group(1)
                 stat_part = re.split(r'\s*[—\-]+\s*', m.group(2))[0]
                 card['stat'] = stat_part.strip()
+                continue
+
+            if line == 'COLORLESS':
+                card['color'] = 'COLORLESS'
                 continue
 
             if line.startswith('Attack:'):

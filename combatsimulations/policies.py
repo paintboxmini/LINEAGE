@@ -17,11 +17,24 @@ A policy implements:
 
 from collections import Counter
 
-from engine import can_attack
+from engine import can_attack, _effective_color
 
 _AVG = {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, 10: 5.5, None: 5.0}
 _BEATS = {'R': 'G', 'B': 'R', 'G': 'B'}          # color -> color it beats
 _BEATEN_BY = {v: k for k, v in _BEATS.items()}    # color -> color that beats it
+
+
+def _most_common_real_color(history):
+    """Like `history.most_common(1)[0][0]`, but skips a colorless (`None`)
+    entry if it happens to be on top — a colorless reveal is now a real,
+    legal thing that can land in attack_history (Drew's colorless-vs-real
+    RPS rule), and `_BEATEN_BY[None]` has no answer: there's no color that
+    specifically "beats colorless" to predict or ban. Returns None only if
+    every recorded reveal was colorless."""
+    for color, _ in history.most_common():
+        if color is not None:
+            return color
+    return None
 
 
 def est_damage(me, card):
@@ -36,6 +49,18 @@ def est_damage(me, card):
         return me.body + 2.5 + 2.0  # explode expectation, rough
     if card.name == "BURN BRIGHT":
         return me.body + 3.5 + 2
+    if card.name == "BECOMING":
+        return 0   # colorless, pure utility — deals no damage of its own, ever
+    if card.name in ("AFTERIMAGE", "FOLLOW-UP"):
+        # Both colorless — stat isn't known here (mirrors whoever went
+        # immediately before, or becomes a full copy of an ally's most
+        # recent reveal), so there's no single `card.stat` to read. Rough
+        # estimate either way: average of the caster's own three stats,
+        # since the real answer depends on engine state this function
+        # doesn't have. FOLLOW-UP is often worth less than this in practice
+        # (a dead card whenever no ally has revealed yet), but a policy
+        # deciding whether to play it has no cheaper way to guess that here.
+        return (me.body + me.mind + me.soul) / 3 + _AVG[4]
     return getattr(me, card.stat) + _AVG[card.base_die]
 
 
@@ -92,14 +117,17 @@ def legal_attacks(engine, me, foe):
 
 
 def idle_recovery(engine, me, foe):
-    """What to do with a forced-idle turn (no legal attack): clear an Injury if
-    one's stuck in hand. Never trade a real attacking turn for it. Staggered no
+    """What to do with a forced-idle turn (no legal attack): clear an Injury or
+    Exhaust if one's stuck in hand (Injury checked first — same conservative
+    "never trade a real attacking turn for it" policy either way). Staggered no
     longer routes through here — the engine skips that turn's action itself,
     before a policy ever gets asked to choose one."""
     if legal_attacks(engine, me, foe):
         return None
     if any(c.is_status and c.name == 'INJURY' for c in me.hand):
         return ('destroy_injury',)
+    if any(c.is_status and c.name == 'EXHAUST' for c in me.hand):
+        return ('destroy_exhaust',)
     return None
 
 
@@ -152,10 +180,10 @@ class GreedyPolicy(ScryMixin):
         return None
 
     def name_axiom_color(self, engine, me, foe):
-        # ban the color the foe reveals most often
-        if foe.attack_history:
-            return foe.attack_history.most_common(1)[0][0]
-        return foe.last_color or 'B'
+        # ban the color the foe reveals most often — "colorless" isn't a
+        # real ban target (Axiom names R/B/G), so skip a colorless top entry
+        # rather than naming a color that can never actually match anything.
+        return _most_common_real_color(foe.attack_history) or foe.last_color or 'B'
 
 
 class ReaderPolicy(ScryMixin):
@@ -177,8 +205,8 @@ class ReaderPolicy(ScryMixin):
             # the foe (if also a reader) tends to defend with the color that beats
             # OUR most common attack. Break damage ties toward the color that would
             # beat that expected defense.
-            expected_def = _BEATEN_BY[me.attack_history.most_common(1)[0][0]] \
-                if me.attack_history else None
+            my_top = _most_common_real_color(me.attack_history) if me.attack_history else None
+            expected_def = _BEATEN_BY[my_top] if my_top else None
             def key(c):
                 anti = 1 if (expected_def and c.color == _BEATEN_BY[expected_def]) else 0
                 return (est_damage(me, c), anti)
@@ -243,7 +271,13 @@ class TacticianPolicy(ScryMixin):
             v += 4                                    # unpreventable finisher
         # Risk-free read: if the color that beats this attack (as a defender) is
         # exhausted from the foe's live cards, this attack cannot lose the reveal.
-        if self._color_exhausted(engine, foe, _BEATEN_BY[card.color]):
+        # AFTERIMAGE mirrors whoever went immediately before it — colorless on its
+        # face, but that mirrored color is already fixed engine-side by the time
+        # this decision is made (the prior turn already resolved and revealed), so
+        # a real read just looks it up via _effective_color instead of the None
+        # printed on the card — same check every other card gets, one extra step.
+        atk_color = _effective_color(engine, card)
+        if atk_color is not None and self._color_exhausted(engine, foe, _BEATEN_BY[atk_color]):
             v += 2
         return v
 
@@ -264,8 +298,7 @@ class TacticianPolicy(ScryMixin):
         return None
 
     def name_axiom_color(self, engine, me, foe):
-        return foe.last_color or (foe.attack_history.most_common(1)[0][0]
-                                  if foe.attack_history else 'B')
+        return foe.last_color or _most_common_real_color(foe.attack_history) or 'B'
 
 
 class PunisherPolicy(TacticianPolicy):

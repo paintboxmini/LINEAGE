@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING
+from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die
 
 
 def warded(target):
@@ -15,20 +15,26 @@ def warded(target):
     if target.ward:
         target.ward = False
         RULING("ward-blocks-debuff",
-               "Ward/DEFLECT blocks the next debuff: forced move, discard, or a "
-               "damage penalty all count as debuffs (rules/card-glossary.md Debuff).")
+               "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
+               "stat reductions, discard, Injury/Exhaust seeding, Positive Status "
+               "Effect removal. Never RPS/Initiative/Position pillar manipulation "
+               "(rules/card-glossary.md Debuff) — those callers don't route through "
+               "warded() at all.")
         return True
     return False
 
 
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
-    Fortress, Anchored, Quick. Quick isn't implemented anywhere in the sim yet
-    (see REALIGNMENT), so there's nothing to clear for it here."""
+    Fortress, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
+    Duel.take_turn) — this docstring was stale from before that; a pending
+    Quick grant is exactly as much a Positive Status Effect as the rest and
+    belongs here too."""
     target.evade = 0
     target.resist = 0
     target.deadly = 0
     target._fortress = False
+    target._quick = False
     target.ongoing = [o for o in target.ongoing if 'anchor' not in o]   # Anchored-flavored entries only
 
 
@@ -90,10 +96,10 @@ def _twin_strike_dmg(engine, me, foe):
 
 
 def _axiom_effect(engine, me, foe):
+    # RPS-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
     color = me.policy.name_axiom_color(engine, me, foe)
-    if not warded(foe):
-        foe.axiom_ban = color
-        engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
+    foe.axiom_ban = color
+    engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
 def _sacrifice_strike_effect(engine, me, foe):
@@ -114,7 +120,7 @@ def _blood_in_the_gap_defense(engine, me, foe):
 
 
 def _spark_effect(engine, me, foe):
-    engine.deal(foe, 2, unpreventable=True)
+    engine.deal(foe, 3, unpreventable=True)
 
 
 def _deflect_effect(engine, me, foe):
@@ -202,7 +208,8 @@ def _gamblers_ruin_defense(engine, me, foe):
 
 
 def _repel_effect(engine, me, foe):
-    if foe.position == 'frontline' and not warded(foe):
+    # Position-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
+    if foe.position == 'frontline':
         foe.position = 'backline'
 
 
@@ -252,10 +259,10 @@ def _align_defense(engine, me, foe):
 
 
 def _axiom_defense(engine, me, foe):
+    # RPS-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
     color = me.policy.name_axiom_color(engine, me, foe)   # mirror-ban the attacker
-    if not warded(foe):
-        foe.axiom_ban = color
-        engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
+    foe.axiom_ban = color
+    engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
 def _anticipate_effect(engine, me, foe):
@@ -472,10 +479,7 @@ def _shared_burden_defense(engine, me, foe):
 
 # --- Red: front-line, protection, AoE ---
 def _strike_defense(engine, me, foe):
-    # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
-    if getattr(foe, '_redirect_dmg', None) is None:
-        return
-    engine.deal(foe, 2, unpreventable=True)
+    engine.deal(foe, 3, unpreventable=True)
 
 def _guard_effect(engine, me, foe):
     for a in engine.allies(me):
@@ -631,6 +635,40 @@ def _delay_effect(engine, me, foe):
 def _delay_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
+# ==================== Turn-order payoff trio (Retaliate/Warsong/Rebuttal) =====
+# All three read engine._prior_turn_hit — a frozen snapshot of whoever's turn
+# resolved immediately before this one (see Duel/Battle.take_turn), not a
+# rolling window of the last several turns. Landing next to the right ally or
+# enemy on the wheel is a live tactical choice (Wait, Initiative Shift), not a
+# passive stat — that's the whole point of tying a payoff to it.
+
+def _retaliate_effect(engine, me, foe):
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['target'] is me and prior['actor'] in engine.enemies(me):
+        me.deadly += 2
+def _retaliate_defense(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+
+def _warsong_effect(engine, me, foe):
+    # "All allies" excludes the caster, matching URGENCY's own established
+    # convention for the same phrase — inert in a Duel (no allies exist
+    # there), same accepted shape as Resonate/Support/every other team-play
+    # Green card.
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['actor'] in engine.allies(me):
+        for a in engine.allies(me):
+            a.deadly += 1
+def _warsong_defense(engine, me, foe):
+    a = _best_attacker(engine.allies(me)) or me
+    engine.initiative_shift(a, 2)
+
+def _rebuttal_effect(engine, me, foe):
+    prior = engine._prior_turn_hit
+    if prior['hit'] and prior['actor'] in engine.enemies(me):
+        prior['actor'].staggered = True
+def _rebuttal_defense(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+
 def _communion_effect(engine, me, foe):
     for a in _team(engine, me):
         engine.scry(a, a, 1)               # party scry
@@ -750,10 +788,253 @@ def _shade_away_defense(engine, me, foe):
     foe._forced_target = me   # taunt, same pattern as MOCKERY — "rushdown if they
                                # cannot reach you" unmodeled, matches Mockery's own gap
 
-# STARING CONTEST (Red) — "move to immediately follow a chosen token in
-# initiative order" is a direct requeue, not a numeric shift; no engine hook
-# for it distinct from Initiative Shift X. Left fully unmodeled, registered
-# with no effect/defense, same treatment as Tactical Wait.
+# STARING CONTEST (Red) — genuinely built at last: "move to immediately
+# follow a chosen token" is a direct requeue, not a numeric shift, so it
+# needed its own engine hook (engine.reposition_after) distinct from
+# Initiative Shift X. Mirror archetype, per its own unique pillar-touching
+# mechanic — kept as-is rather than folded into WAITING GAME below.
+def _staring_contest_effect(engine, me, foe):
+    # "any target" simplified to the defender for the bot — same treatment
+    # as every other "your choice of any combatant" card this session.
+    engine.reposition_after(me, foe)
+def _staring_contest_defense(engine, me, foe):
+    engine.reposition_after(me, foe)
+
+# Shared by WAITING GAME (Mirror: copy, leaves foe's own untouched) and
+# DRAIN (Parasite: steal, actually removes it from foe) — same fixed check
+# order (Deadly > Resist > Evade > Fortress) either way, since a heuristic
+# brain can't "choose" the way a real player would at the table; a real
+# player picks freely among whatever's visible. Capped at however many
+# statuses are actually present rather than duplicated — copying/stealing
+# one Deadly twice isn't "two effects." Anchored and Quick are both skipped
+# here (not by the same reasoning, though): Anchored lives in `ongoing`, not
+# a simple flag; Quick is real now (OVERCOMMIT), just never asked to be
+# copyable/stealable by either of these two cards specifically.
+def _transfer_statuses(me, foe, count, steal):
+    order = []
+    if foe.deadly > 0:
+        order.append('deadly')
+    if foe.resist > 0:
+        order.append('resist')
+    if foe.evade > 0:
+        order.append('evade')
+    if getattr(foe, '_fortress', False):
+        order.append('fortress')
+    for kind in order[:count]:
+        if kind == 'fortress':
+            me._fortress = True
+            if steal:
+                foe._fortress = False
+        else:
+            setattr(me, kind, getattr(me, kind) + 1)
+            if steal:
+                setattr(foe, kind, getattr(foe, kind) - 1)
+
+def _waiting_game_effect(engine, me, foe):
+    _transfer_statuses(me, foe, 2, steal=False)
+def _waiting_game_defense(engine, me, foe):
+    _transfer_statuses(me, foe, 2, steal=False)
+
+# DRAIN (Red) — Parasite's first card: real predation, not imitation.
+# Steals exactly 1 Positive Status Effect the foe currently holds — removed
+# from them, not just copied, the distinction Drew drew between Mirror
+# ("imitates, takes nothing") and Parasite ("predates: drains, hijacks,
+# steals") when the two archetypes were first named.
+def _drain_effect(engine, me, foe):
+    _transfer_statuses(me, foe, 1, steal=True)
+def _drain_defense(engine, me, foe):
+    _transfer_statuses(me, foe, 1, steal=True)
+
+# Pure removal, no benefit to the caster — same fixed priority order as
+# _transfer_statuses (Deadly > Resist > Evade > Fortress), shared by UNMAKE
+# and LEVEL THE FIELD below. Anchored/Quick skipped for the same reasons as
+# _transfer_statuses.
+def _strip_one_status(target, count=1):
+    order = []
+    if target.deadly > 0:
+        order.append('deadly')
+    if target.resist > 0:
+        order.append('resist')
+    if target.evade > 0:
+        order.append('evade')
+    if getattr(target, '_fortress', False):
+        order.append('fortress')
+    for kind in order[:count]:
+        if kind == 'fortress':
+            target._fortress = False
+        else:
+            setattr(target, kind, getattr(target, kind) - 1)
+
+# UNMAKE (Blue) — the biggest buff-removal in the game: wipes every
+# Positive Status Effect from the target in one go, via the existing
+# `remove_positive_status` helper (already used by TRACE) — and, Drew's
+# explicit call, ignores Ward entirely. A real, deliberate exception to the
+# established Debuff/Ward rule, same category as AFTERIMAGE bypassing Axiom
+# or FRAME-TRAP bypassing RPS — flagged here, not incidental, since
+# normally a Positive-Status-Effect removal is exactly the kind of thing
+# Ward is supposed to stop (`warded()`'s own ruling text). Paid for with a
+# steep Exhaust cost — 3, heavier than OVERCOMMIT's 2, since this both
+# breaks a standing rule and wipes an opponent's entire buff set at once.
+def _unmake_effect(engine, me, foe):
+    remove_positive_status(foe)
+    engine.insert_exhaust(me, 3)
+def _unmake_defense(engine, me, foe):
+    remove_positive_status(foe)
+    engine.insert_exhaust(me, 3)
+
+# LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
+# exactly one Positive Status Effect (same fixed priority as WAITING GAME/
+# DRAIN) from each enemy, respecting Ward normally (`warded()`, same
+# pattern as TRACE) — unlike UNMAKE, this follows the established rule
+# rather than breaking it. In a 1v1 Duel, `engine.enemies(me)` is just the
+# one foe, same as everywhere else this pattern is used.
+def _level_the_field_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if not warded(e):
+            _strip_one_status(e, 1)
+def _level_the_field_defense(engine, me, foe):
+    for e in engine.enemies(me):
+        if not warded(e):
+            _strip_one_status(e, 1)
+
+# EXPOSED (Blue) — the first card to grant Critical (new keyword,
+# `rules/card-glossary.md`): doubles this attack's base damage (stat + die,
+# including any Deadly/Weak already rolled into it) before any other bonus
+# applies. Gated hard by design, not just by naming it and hoping: the
+# trigger needs an already-Staggered target — real setup elsewhere, since
+# Staggered doesn't just happen — and the base die is kept low (d2) so
+# what's being doubled is small on its own; the whole payoff lives in the
+# multiplier, not a separately-large base too.
+def _exposed_damage(engine, me, foe):
+    base = me.eff('mind') + _rolled_die(2, engine.rng, me)
+    if foe.staggered:
+        base *= 2
+    return base
+def _exposed_defense(engine, me, foe):
+    me.evade += 1
+
+# Mason Glyphs / Objects (cards/mason-glyphs.md) — the Sync pass. Every glyph
+# just calls `engine.create_object`; the actual per-turn payout lives in
+# `engine._object_tick`, called from both engines' `start_of_turn` alongside
+# the existing green-ongoing tick. CIPHER's "gain Obscure" has no function
+# here at all — see `_object_tick`'s own docstring for why (genuinely
+# unmodeled, same footing as Reveal Hand, not a gap).
+def _mending_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'mending')
+def _mending_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'mending')
+
+def _honing_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'honing')
+def _honing_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'honing')
+
+def _barbed_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'barbed')
+def _barbed_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'barbed')
+
+def _cipher_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'cipher')
+def _cipher_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'cipher')
+
+def _withering_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'withering')
+def _withering_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'withering')
+
+def _miring_glyph_effect(engine, me, foe):
+    engine.create_object(me, 'miring')
+def _miring_glyph_defense(engine, me, foe):
+    engine.create_object(me, 'miring')
+
+# CONSUME (Green) — Parasite's second card, the generic "destroy a card for
+# power" seed Drew flagged and parked earlier ("just having the odds of
+# hitting a stolen card happens are enough"), generalized to your own hand
+# rather than requiring a stolen card specifically. Mandatory cost, not
+# optional — matches SACRIFICE STRIKE's existing always-fires pattern, and
+# needs no new "pay this or not" decision point in the engine. The
+# Defensive Bonus rolls its own fresh counter-damage (same shape as
+# SACRIFICE STRIKE's Counter Attack) so Lifesteal has something real to
+# heal off on the defense side too — CONSUME's own printed Attack line
+# only pays out automatically on the Effect side. Destruction is permanent
+# — routed to `exile`, never `discard`, so it can't come back even on a
+# mid-combat reshuffle; picked uniformly at random from the remaining
+# hand, same convention FORGET already uses for "remove a card from hand."
+def _consume_destroy(engine, me, foe):
+    reals = [i for i, c in enumerate(me.hand) if not c.is_status]
+    if reals:
+        me.exile.append(me.hand.pop(engine.rng.choice(reals)))
+        foe.weak += 1
+        foe.blind += 1
+
+def _consume_effect(engine, me, foe):
+    engine.heal(me, me._last_hit)   # Lifesteal: full damage just dealt
+    _consume_destroy(engine, me, foe)
+
+def _consume_defense(engine, me, foe):
+    dmg = me.eff('soul') + roll(4, engine.rng)
+    engine.deal(foe, dmg, unpreventable=True)
+    engine.heal(me, dmg)            # Lifesteal off this counter-hit
+    _consume_destroy(engine, me, foe)
+
+# BECOMING (colorless) — the Oracle-drafting card. Unmodeled beyond a safe
+# zero-damage function, same treatment as PREDICT/VOID's item-usage gaps:
+# the Oracle pool (`testcampaigndecks/oracle.md`) is a session-persistent,
+# end-of-session table ritual — a GM-curated pool, a player draft, cards
+# that carry across combats entirely outside this simulator's scope, which
+# resets every deck between duels/battles and has no concept of a shared
+# pool or cross-combat card identity. The 3-uses-then-permanently-destroyed
+# counter is real but lives at the table (character sheet / testcampaign-
+# decks file), not here — same reasoning as why HP-cost-until-next-rest was
+# flagged (not built) earlier this session: state that survives past a
+# single combat's end isn't this engine's job to track.
+def _becoming_damage(engine, me, foe):
+    return 0
+
+# FOLLOW-UP (Mirror, colorless) — the second colorless card, and a stronger
+# transformation than AFTERIMAGE's: this fully BECOMES a copy of whatever an
+# ally most recently revealed (never itself — allies only, matching the
+# WARSONG convention, so it's a guaranteed dead card in a 1v1 Duel, same as
+# every other team-only card), before RPS resolution. Effect/Defensive Bonus
+# are entirely replaced by the copied card's real functions once a target is
+# found (engine.py's attack(), both engines) — but damage still needs its
+# own function: with nothing to copy, `card` stays FOLLOW-UP's own native
+# object (stat=None), and the reveal can still legitimately reach a damage
+# roll on an uncontested win (Drew's colorless rule — it only loses when
+# actually challenged). Unlike AFTERIMAGE, FOLLOW-UP has no printed formula
+# of its own at all to fall back on, so an unresolved copy deals flat 0.
+def _follow_up_damage(engine, me, foe):
+    return 0
+
+# AFTERIMAGE (Mirror) — colorless until revealed, per Drew's real-table
+# reasoning: Axiom's ban applies at the moment of commitment, and this card
+# genuinely hasn't chosen a color yet at that point, so no named-color ban
+# can ever catch it. Registered with color=None and special_reveal=
+# 'mirror_color'; engine._effective_color resolves it everywhere else color
+# actually gets read (messaging, history, RPS) — never by mutating this
+# Card object itself, since the same instance is shared across every deck
+# that includes it. The stat mirrors along with the color (you're rolling
+# their identity for this one exchange, not half of it), so damage needs
+# its own function rather than the default me.eff(self.stat) lookup. No
+# Green fallback (Drew's correction: colorless stays colorless, same as
+# FOLLOW-UP) — but this CAN still be called with nothing to mirror, on an
+# uncontested win (no defense, or the defender collapsed/staggered): Drew's
+# rule is that colorless only loses when actually challenged by a real
+# color, not automatically, so the reveal itself can still succeed. With no
+# identity to mirror, there's no stat bonus either — just the bare d4.
+def _afterimage_damage(engine, me, foe):
+    color = engine._prior_turn_hit.get('color')
+    if color is None:
+        return roll(4, engine.rng)
+    stat = COLOR_TO_STAT[color]
+    return me.eff(stat) + roll(4, engine.rng)
+
+def _afterimage_effect(engine, me, foe):
+    foe.blind += 1
+def _afterimage_defense(engine, me, foe):
+    me.evade += 1
 
 
 # ==================== The Patient Host — boss signature cards ================
@@ -780,7 +1061,164 @@ def _ledger_defense(engine, me, foe):
     if c:
         me.hand.append(c)
 
+# SEED (Cultivator) — tempo-as-a-resource, the first card in this shape:
+# telegraphed, invests now for a bigger payoff later, no counter to track —
+# plants at the caster's current position and pays out the next time THEY
+# begin a turn still standing there (engine._ongoing_support_tick), however
+# many turns that takes. Moving off the position (or being forced off it)
+# just delays the payout, doesn't cancel it — Position is a real lever
+# against this card, not just killing/Warding the caster first (Ward is
+# irrelevant here regardless: this is a positive self-buff, never a debuff,
+# and never applied by anyone else, so it was never in Ward's scope at all).
+# Effect and Defensive Bonus plant the same way, different payoff each —
+# "plant" is flavor, not a fictional action that needs the Effect side's
+# exclusive timing; nothing stops narrating the Defensive Bonus as dropping
+# the seed as part of the block itself. Briefly renamed to STAKE over a
+# too-plant-specific-flavor concern, then reverted the same session — Drew,
+# on reflection: keep it flavored, promote/de-flavor later if it earns a
+# spot in a broader "candidates for core-agnostic reuse" pass, the same
+# process as the bestiary promotion batch, not a pre-emptive strip.
+def _seed_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_deadly', 'owner': me, 'anchor': me.position})
+def _seed_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_resist', 'owner': me, 'anchor': me.position})
+
+# EMERGENCY REPAIRS (Gambler-adjacent — same "cost lands on your own next
+# turn" shape as BERSERKER'S PRICE, paid in a skipped draw instead of a
+# defense window) — Red on its face (Body + d4 attack), but the heal
+# reaches across to Soul specifically: Drew's own read, "now it's really
+# revealing where the cards want to touch other colors" — a card's printed
+# color/stat governs its own Attack roll, nothing stops its Effect text
+# from reading a different stat outright.
+def _emergency_repairs_payout(engine, me, foe):
+    engine.heal(me, 2 * me.eff('soul'))
+    me._skip_draw_next = True
+
+def _emergency_repairs_effect(engine, me, foe):
+    _emergency_repairs_payout(engine, me, foe)
+def _emergency_repairs_defense(engine, me, foe):
+    _emergency_repairs_payout(engine, me, foe)
+
+# OVERCOMMIT (Gambler) — the archetype's actual thesis: a huge upfront
+# swing (all four Positive Status Effects at once) paid for with Exhaust,
+# which costs a full future action to ever clear (rules/card-glossary.md,
+# EXHAUST) rather than costing HP or a single hand card the way every
+# other cost mechanic shipped this session does. First card ever to grant
+# Quick — see engine.py's Duel.take_turn for how the free reposition
+# actually resolves.
+def _overcommit_payout(engine, me, foe):
+    me.deadly += 1
+    me.resist += 1
+    me._quick = True
+    me.evade += 1
+    engine.insert_exhaust(me, 2)
+
+def _overcommit_effect(engine, me, foe):
+    _overcommit_payout(engine, me, foe)
+def _overcommit_defense(engine, me, foe):
+    _overcommit_payout(engine, me, foe)
+
+# ==================== Bestiary promotions to core =============================
+# First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
+# unless noted. Each creature's own card file gets a superseded-by note
+# rather than duplicating the text twice.
+
+# CERTAIN CONTACT (was NEVER LIFTED, Wall-Reader) — Drew's addition on
+# promotion: also ignores Resist and Blind, not just Evade. `ignores` is a
+# small, generic Card-level property (checked directly at the Blind/Evade
+# checks in attack() and the Resist reduction in deal()) rather than a new
+# keyword, since this describes the ATTACK itself, not a status granted to
+# anyone.
+def _certain_contact_defense(engine, me, foe):
+    me.resist += 1
+
+# HEAVE AND HAUL (was TUNNEL KNOWLEDGE, Borrower) — Effect always targets
+# Backline (no policy has real "which position" decision logic to make this
+# a genuine choice with, so the more generally useful default stands in,
+# same simplification shape as Quick's own free action). Defensive Bonus
+# reuses Quick's exact mechanism for "may change position freely" instead of
+# an immediate auto-flip — a real free reposition on everyone's own next
+# turn, not a forced one right now.
+def _heave_and_haul_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'backline':
+            e.position = 'frontline'
+def _heave_and_haul_defense(engine, me, foe):
+    for a in [me] + engine.allies(me):
+        a._quick = True
+
+# TELLS (was YOU CHANGED WALLS, Wall-Reader) — reworked on promotion,
+# not just renamed. Effect uses "moved" (Drew's own call, the cleaner
+# phrasing) via the new `_repositioned_since_last_turn` tracker (built for
+# this and ROLLOUT below — first time "did X reposition since their last
+# turn" has ever been tracked in the sim). Defensive Bonus is a genuinely
+# new condition: gain Resist if the ATTACKER received a positive Initiative
+# Shift or used Wait since their own last turn. Implementation note, flagged
+# rather than silently assumed: "since your last turn" reads most literally
+# as bound to the DEFENDER's own timeline, but the two new flags
+# (`_shifted_positive`, `_used_wait`) are self-clearing on the AFFECTED
+# combatant's own next turn (same shape as `_anticipating`/`_weathered`) —
+# a materially simpler, self-contained approximation of the same intent,
+# not a literal cross-combatant timeline comparison.
+def _tells_effect(engine, me, foe):
+    if foe._repositioned_since_last_turn:
+        me.deadly += 1
+def _tells_defense(engine, me, foe):
+    if foe._shifted_positive or foe._used_wait:
+        me.resist += 1
+
+# IRON GRIP (was CORRECTION GRIP, Alignment Marshal) — unchanged mechanically.
+def _iron_grip_effect(engine, me, foe):
+    foe.rooted = True
+def _iron_grip_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+
+# PATIENCE OF STONE (Delve Roller / Stonecoil, identical in both files —
+# proven twice already) — unchanged, Defensive Bonus stays an unconditional
+# Deadly grant per Drew ("maybe that's okay though").
+def _patience_of_stone_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+def _patience_of_stone_defense(engine, me, foe):
+    me.deadly += 1
+
+# ROLLOUT (Delve Roller) — the Pokemon reference, made real: returns
+# straight to hand after use (`returns_to_hand=True` on the Card itself),
+# regardless of outcome, instead of ever sitting in discard. Needs its own
+# damage function since the +4 bonus is conditional; reuses the same
+# `_repositioned_since_last_turn` tracker as TELLS, just checking
+# yourself instead of the target.
+def _rollout_damage(engine, me, foe):
+    base = me.eff('body') + roll(2, engine.rng)
+    if not me._repositioned_since_last_turn:
+        base += 4
+    return base
+def _rollout_defense(engine, me, foe):
+    me.resist += 1
+
+# SEISMIC REDIRECT (Alignment Marshal) — the first core card to grant
+# Rushdown for real (see engine.py's `_rushdown`, a genuine structural gap
+# closed this session: fully defined as a table action, referenced by name
+# in several bestiary cards, implemented nowhere until now).
+def _seismic_redirect_effect(engine, me, foe):
+    _rushdown(me, foe)
+def _seismic_redirect_defense(engine, me, foe):
+    engine.deal(foe, me.eff('body') + roll(4, engine.rng), unpreventable=True)
+
+# GORE (Minotaur) — unchanged.
+def _gore_damage(engine, me, foe):
+    base = me.eff('body') + roll(6, engine.rng)
+    if foe.position == 'frontline':
+        base += roll(4, engine.rng)
+    return base
+def _gore_defense(engine, me, foe):
+    foe.rooted = True
+
 def _youre_next_effect(engine, me, foe):
+    # Promoted to core: Drew's tweak — only a clean win, not a tie
+    # (`attacker._tie` is set True only while an Effect resolves during a
+    # tie, engine.py's rps()/tie branch).
+    if me._tie:
+        return
     engine.initiative_shift(me, 2)
 def _youre_next_defense(engine, me, foe):
     engine.deal(foe, 3, unpreventable=True)
@@ -915,7 +1353,63 @@ def build_cards():
         damage=_understanding_dmg, defense=_understanding_defense)
     add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'both', 4, effect=_weathered_effect, defense=_weathered_defense)
-    add("STARING CONTEST", 'R', 'body', 'both', 2)   # fully unmodeled — see note above
+    add("STARING CONTEST", 'R', 'body', 'both', 2,
+        effect=_staring_contest_effect, defense=_staring_contest_defense)
+    add("WAITING GAME", 'R', 'body', 'both', 2,
+        effect=_waiting_game_effect, defense=_waiting_game_defense)
+    add("AFTERIMAGE", None, None, 'both', None,
+        damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
+        special_reveal='mirror_color')
+    add("DRAIN", 'R', 'body', 'both', 2, effect=_drain_effect, defense=_drain_defense)
+    add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
+    add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
+    add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
+    add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
+    add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 4,
+        effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
+    add("OVERCOMMIT", 'R', 'body', 'both', 4,
+        effect=_overcommit_effect, defense=_overcommit_defense)
+    # Bestiary promotions
+    add("CERTAIN CONTACT", 'R', 'body', 'melee', 6,
+        defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
+    add("HEAVE AND HAUL", 'G', 'soul', 'both', 4,
+        effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
+    add("TELLS", 'R', 'body', 'melee', 6,
+        effect=_tells_effect, defense=_tells_defense)
+    add("IRON GRIP", 'R', 'body', 'melee', 6,
+        effect=_iron_grip_effect, defense=_iron_grip_defense)
+    add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
+        effect=_patience_of_stone_effect, defense=_patience_of_stone_defense)
+    add("ROLLOUT", 'R', 'body', 'melee', 2,
+        damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
+    add("SEISMIC REDIRECT", 'R', 'body', 'both', 4,
+        effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)
+    add("GORE", 'R', 'body', 'melee', 6, damage=_gore_damage, defense=_gore_defense)
+    # FRAME-TRAP: the auto-win-and-negate-defense special case lives in
+    # attack() (both engines, checked by card.name), and the tie-win lives
+    # in rps() (also by name) -- nothing for content.py to register beyond
+    # the card's base stats. "Effect: none" and "Defensive Bonus: wins ties"
+    # (which structurally already means the attacker's Effect never fires
+    # on that tie, since a won tie IS a clean defender win) are both fully
+    # satisfied with no functions of their own.
+    add("FRAME-TRAP", 'B', 'mind', 'both', 2)
+    add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
+    add("UNMAKE", 'B', 'mind', 'both', 2, effect=_unmake_effect, defense=_unmake_defense)
+    add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
+        effect=_level_the_field_effect, defense=_level_the_field_defense)
+    # Mason Glyphs / Objects
+    add("MENDING GLYPH", 'G', 'soul', 'both', 4,
+        effect=_mending_glyph_effect, defense=_mending_glyph_defense)
+    add("HONING GLYPH", 'R', 'body', 'both', 4,
+        effect=_honing_glyph_effect, defense=_honing_glyph_defense)
+    add("BARBED GLYPH", 'R', 'body', 'both', 4,
+        effect=_barbed_glyph_effect, defense=_barbed_glyph_defense)
+    add("CIPHER GLYPH", 'B', 'mind', 'both', 4,
+        effect=_cipher_glyph_effect, defense=_cipher_glyph_defense)
+    add("WITHERING GLYPH", 'G', 'soul', 'both', 4,
+        effect=_withering_glyph_effect, defense=_withering_glyph_defense)
+    add("MIRING GLYPH", 'B', 'mind', 'both', 4,
+        effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)
@@ -925,6 +1419,12 @@ def build_cards():
         effect=_shade_away_effect, defense=_shade_away_defense)
     add("DEAD RECKONING", 'G', 'soul', 'both', 4,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
+    add("RETALIATE", 'R', 'body', 'both', 4,
+        effect=_retaliate_effect, defense=_retaliate_defense)
+    add("WARSONG", 'G', 'soul', 'both', 4,
+        effect=_warsong_effect, defense=_warsong_defense)
+    add("REBUTTAL", 'B', 'mind', 'ranged', 4,
+        effect=_rebuttal_effect, defense=_rebuttal_defense)
     add("FIELD MEDICINE", 'G', 'soul', 'ranged', 2,
         effect=_field_medicine_effect, defense=_field_medicine_defense)
 
@@ -942,6 +1442,7 @@ def build_cards():
 
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
+    add("EXHAUST", None, None, None, None, is_status=True)
 
     return C
 

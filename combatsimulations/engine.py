@@ -38,20 +38,89 @@ def roll(die, rng):
 
 def _rolled_die(die, rng, me):
     """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
-    each stack applies to one future damage roll — roll twice, take the
-    higher (Deadly) or lower (Weak) result, then consume one stack. Deadly
-    takes priority if both are somehow held at once (not a ruled case,
-    just a defensible tie-break). Custom `_damage` functions (exploding
-    dice, multi-hit cards) roll their own way and are NOT wrapped here —
-    applying "roll twice" generically to an arbitrary custom function risks
-    doubling unrelated side effects, not just the die."""
+    each stack adds (Deadly) or subtracts (Weak) a flat d4 from this one
+    future damage roll, then consumes one stack. Flat, not proportional to
+    the base die, on purpose — the old "roll twice, take higher/lower"
+    version scaled with base die size (worth +0.25 on a d2, +1.65 on a
+    d10), quietly favoring whichever color rolls the bigger dice regardless
+    of who actually holds the stack. Deadly takes priority if both are
+    somehow held at once (not a ruled case, just a defensible tie-break).
+    Custom `_damage` functions (exploding dice, multi-hit cards) roll their
+    own way and are NOT wrapped here — applying this generically to an
+    arbitrary custom function risks doubling unrelated side effects, not
+    just the die."""
     if me.deadly > 0:
         me.deadly -= 1
-        return max(roll(die, rng), roll(die, rng))
+        return roll(die, rng) + roll(4, rng)
     if me.weak > 0:
         me.weak -= 1
-        return min(roll(die, rng), roll(die, rng))
+        return roll(die, rng) - roll(4, rng)
     return roll(die, rng)
+
+
+COLOR_TO_STAT = {'R': 'body', 'B': 'mind', 'G': 'soul'}
+
+
+def _effective_color(engine, card):
+    """AFTERIMAGE: colorless (card.color is None) until revealed — a color
+    this genuinely doesn't have yet, not a placeholder, which is exactly
+    why Axiom's ban check (comparing against a real color) can never match
+    it at the point that check runs. Everywhere else color actually gets
+    read or displayed, this resolves it: whoever acted immediately before
+    this turn (engine._prior_turn_hit). Returns None if there's nothing to
+    mirror yet (opening hand, or they Waited/Moved instead of attacking) —
+    deliberately no Green fallback (Drew's correction: AFTERIMAGE stays
+    genuinely colorless the same way FOLLOW-UP does). A None color is a
+    real, legal state, not an error — rps() below resolves what a colorless
+    reveal does against a real one. Never mutates the card itself — the
+    same Card object is shared across every deck that includes it, so this
+    is computed fresh at each read instead."""
+    if card.special_reveal == 'mirror_color':
+        return engine._prior_turn_hit.get('color')
+    return card.color
+
+
+def _color_label(color):
+    """Display only — 'colorless' instead of a bare None in combat logs."""
+    return color if color is not None else 'colorless'
+
+
+def _stamp_reveal(engine, who, card):
+    """FOLLOW-UP: record that `who` just revealed `card` (attack or defense),
+    for the team-wide 'which ally revealed most recently' lookup below.
+    Records the RESOLVED card actually shown at the table — if `card` is
+    itself a FOLLOW-UP that successfully copied something, this stamps the
+    thing it became, never the literal name "FOLLOW-UP" (which is never
+    what's visible at reveal; a later FOLLOW-UP chains onto what was really
+    shown, not onto an invisible pass-through label). Scoped deliberately to
+    reveal events only (attack/defense plays), not every possible discard
+    source (Scry-bin, forced hand-size trims, etc.) — those are incidental
+    bookkeeping, not something an ally at the table would ever call "what I
+    just did," and every one of them would need its own instrumentation
+    across two engines and a dozen card effects for a case (a status card
+    surfacing here) that can't happen anyway, since status cards are never
+    legal attack or defense choices."""
+    engine._reveal_seq += 1
+    who._last_reveal_seq = engine._reveal_seq
+    who._last_reveal_card = card
+
+
+def _resolve_follow_up(engine, actor):
+    """FOLLOW-UP: becomes a full copy of whichever ally (never `actor`
+    itself — matches the established allies-only convention, e.g. WARSONG)
+    most recently revealed a card this combat. No ally has revealed
+    anything yet (true in an opening hand), or somehow the target is a
+    status card, and it's the same no-op either way, by Drew's ruling: this
+    resolution fails outright — a guaranteed loss of the reveal, not just a
+    weak one, distinct from AFTERIMAGE's "default to Green" fallback."""
+    candidates = [a for a in engine.allies(actor) if a._last_reveal_seq is not None]
+    if not candidates:
+        return None
+    best = max(candidates, key=lambda a: a._last_reveal_seq)
+    target = best._last_reveal_card
+    if target.is_status:
+        return None
+    return target
 
 
 # Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
@@ -75,6 +144,9 @@ def _clear_ongoing_on_collapse(target):
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
+    spent = []   # SEED: consumed the instant it triggers — unlike every other
+                 # 'anchor' kind below, which reapplies every turn for as long
+                 # as the position holds, a seed pays out once and is gone.
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
@@ -95,6 +167,45 @@ def _ongoing_support_tick(engine, who):
             a = o.get('target')
             if a is not None and not a.collapsed:
                 engine.heal(a, 3, source=who)
+        elif o['kind'] == 'seed_deadly' and who.position == o.get('anchor', who.position):
+            who.deadly += 2
+            spent.append(o)
+        elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
+            who.resist += 2
+            spent.append(o)
+        elif o['kind'] == 'anchor_heal2' and who.position == o.get('anchor', who.position):
+            engine.heal(who, 2, source=who)   # IRON GRIP / PATIENCE OF STONE
+    if spent:
+        who.ongoing = [o for o in who.ongoing if not any(o is s for s in spent)]
+
+
+def _object_tick(engine, who):
+    """Mason Glyphs / Objects (cards/mason-glyphs.md): trigger for free, no
+    roll, no contest, for whoever occupies the matching position on their
+    own turn. Ally-type objects benefit their owner's whole side, the owner
+    included — a standing Object has no "self" left to exclude the way a
+    per-turn ally buff (WARSONG) does, since it isn't cast by anyone
+    anymore once it exists. Hazard-type objects strike the owner's
+    enemies. CIPHER's "gain Obscure" is real canon text but genuinely
+    unmodeled here, same footing as Reveal Hand — Obscure blocks looking at
+    a hand/deck, and this sim's AI already has full internal visibility
+    regardless of what any card says, so there's nothing for it to actually
+    change."""
+    for obj in engine.objects:
+        if who.position != obj['position']:
+            continue
+        owner = obj['owner']
+        kind = obj['kind']
+        if kind == 'mending' and (who is owner or who in engine.allies(owner)):
+            engine.heal(who, 1, source=owner)
+        elif kind == 'honing' and (who is owner or who in engine.allies(owner)):
+            who.next_attack_bonus += 1
+        elif kind == 'barbed' and (who is owner or who in engine.allies(owner)):
+            who.thorns += 1
+        elif kind == 'withering' and who in engine.enemies(owner):
+            who.weak += 1
+        elif kind == 'miring' and who in engine.enemies(owner):
+            engine.initiative_shift(who, -1)
 
 
 def _apply_shift(engine, queue, target, amount):
@@ -135,15 +246,22 @@ def _apply_shift(engine, queue, target, amount):
     prior bonus), not just Example 5's exact numbers, since only the one case
     is confirmed and there's no basis to special-case the others differently.
 
-    With exactly 3 combatants on the wheel, X's magnitude is reduced by 1
+    With 3 or fewer combatants on the wheel, X's magnitude is reduced by 1
     (toward zero) before anything else here runs — a shift of ±1 becomes a
-    no-op."""
+    no-op. (Previously gated on exactly 3; Drew's correction — the dampening
+    is meant to apply at 3 *or less*, not just exactly 3. This also happens
+    to be what would have prevented WARSONG's +2-at-2-seats crash from ever
+    reaching the exact-multiple case below in the first place — a +2 dampens
+    to +1 here, which isn't a multiple of 2.)"""
     if not queue or target not in queue or amount == 0:
         return
-    if len(queue) == 3:
+    if len(queue) <= 3:
         amount += -1 if amount > 0 else 1
         if amount == 0:
             return
+    if amount > 0:
+        target._shifted_positive = True   # TELLS: cleared at the start
+                                           # of target's own next turn
     was_pending = target._shift_skip or target in engine.pending_turns
     target._shift_skip = False
     if target in engine.pending_turns:
@@ -172,6 +290,23 @@ def _apply_shift(engine, queue, target, amount):
     crossed = (raw <= 0 or raw >= total) and not was_pending
     landing = raw % total
     step = -1 if amount > 0 else 1
+
+    if landing == i:
+        # |amount| is an exact multiple of the wheel size (found via a real
+        # crash: WARSONG's +2 shift against a 2-seat wheel, once a team
+        # battle had thinned to 2 combatants — the general case is any shift
+        # that's a multiple of the current seat count, at any wheel size).
+        # The target completes one or more full laps and lands back on its
+        # own slot — nobody else's relative order actually changes, so there
+        # is no path to walk and no one to displace. The marker was still
+        # crossed along the way, though, so that consequence still lands on
+        # the target itself.
+        if crossed:
+            if amount > 0:
+                engine.pending_turns.append(target)
+            else:
+                target._shift_skip = True
+        return
 
     path = [i]
     pos = i
@@ -202,6 +337,44 @@ def _rotate_current(engine, queue, who):
         return
     queue.pop(0)
     queue.append(who)
+
+
+def _reposition_after(queue, me, target):
+    """STARING CONTEST: move `me` to immediately follow `target` in the
+    current cycle's order. Deliberately NOT routed through _apply_shift —
+    the card's own text never says "Initiative Shift," just "change your
+    place... the new order takes effect this cycle." No bonus turn, no
+    shift-skip, a plain reorder. Safe to call even when `me` is the
+    currently-resolving actor: _rotate_current already no-ops if queue[0]
+    isn't who anymore by the time the turn ends, so moving the current
+    actor mid-turn here doesn't fight with the normal end-of-turn rotation."""
+    if me not in queue or target not in queue or me is target:
+        return
+    queue.remove(me)
+    queue.insert(queue.index(target) + 1, me)
+
+
+def _rushdown(actor, target):
+    """Rushdown (rules/combat.md): move a Backline enemy to the Frontline.
+    The actor must already be in the Frontline. A structural gap this whole
+    session: fully defined as a table action and referenced by name in
+    several bestiary cards, but never implemented anywhere — SEISMIC
+    REDIRECT is the first card to actually call this. A no-op if either
+    precondition fails (actor not Frontline, or target already Frontline),
+    same shape as every other conditional forced-reposition effect in
+    content.py — the card's own Effect just does nothing that turn rather
+    than being illegal to play."""
+    if actor.position == 'frontline' and target.position == 'backline':
+        target.position = 'frontline'
+
+
+def _discard_or_return(who, card):
+    """Where a just-revealed physical card lands: discard, unless the card's
+    own `returns_to_hand` says otherwise (ROLLOUT)."""
+    if card.returns_to_hand:
+        who.hand.append(card)
+    else:
+        who.discard.append(card)
 
 
 def _leave_wheel(engine, queue, who):
@@ -247,7 +420,7 @@ class Card:
 
     def __init__(self, name, color, stat, reach, base_die,
                  damage=None, effect=None, defense=None, special_reveal=None,
-                 is_status=False):
+                 is_status=False, ignores=frozenset(), returns_to_hand=False):
         self.name = name
         self.color = color
         self.stat = stat
@@ -258,6 +431,19 @@ class Card:
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
         self.is_status = is_status     # Injury/Exhaust: cannot be played
+        # ROLLOUT: some cards return straight to your own hand instead of
+        # the discard pile once played, regardless of outcome — a Card-level
+        # property (checked at every discard-append point in attack(), both
+        # engines) rather than a name-specific special case, in case a
+        # future card wants the same shape.
+        self.returns_to_hand = returns_to_hand
+        # CERTAIN CONTACT: a defense this specific attack ignores outright —
+        # any subset of {'evade', 'blind', 'resist'}. Checked directly at
+        # each relevant point (the Blind/Evade checks in attack(), the
+        # Resist reduction in deal()) rather than a new keyword, since this
+        # isn't a status granted to anyone — it's a property of the attack
+        # itself, same footing as its own color/stat/range.
+        self.ignores = frozenset(ignores)
 
     def damage(self, engine, me, foe):
         if self._damage:
@@ -298,6 +484,8 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
+        self._position_at_last_turn_start = self.position  # ROLLOUT/TELLS
+        self._repositioned_since_last_turn = False          # tracking
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
@@ -333,6 +521,21 @@ class Combatant:
         self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
         self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
+        self._tie = False                # True only while an Effect resolves during
+                                          # a tie (engine.py's rps()/tie branch) — real
+                                          # pre-existing gap, never initialized before
+                                          # now: reading it on a normal win before any
+                                          # tie had ever happened would crash
+        self._last_reveal_seq = None      # FOLLOW-UP: engine._reveal_seq at my last reveal
+        self._last_reveal_card = None     # FOLLOW-UP: the (resolved) card I last revealed
+        self._quick = False               # Quick (card-glossary.md): a free reposition,
+                                           # on top of the normal action, good for exactly
+                                           # one turn — consumed at the start of that turn
+                                           # regardless of whether it changes anything
+        self._skip_draw_next = False      # EMERGENCY REPAIRS: no draw step, next turn only
+        self._shifted_positive = False    # TELLS: received a + Initiative Shift,
+                                           # cleared at the start of my own next turn
+        self._used_wait = False           # TELLS: used Wait, same self-clearing shape
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -402,17 +605,78 @@ class Duel:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.injury_card = cards.get('INJURY')
+        self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
         self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
+        # RETALIATE/WARSONG/REBUTTAL/AFTERIMAGE: "the turn immediately before
+        # yours" — frozen snapshot of the last completed turn, promoted from
+        # _this_turn_hit at the top of take_turn (before that turn's own
+        # actions can overwrite it), so a card's Effect always reads the
+        # PRIOR combatant's result, never its own. 'color' is set at every
+        # reveal regardless of outcome (win, tie, or loss) — AFTERIMAGE cares
+        # what was shown, not who won; 'hit'/'target' stay clean-win-only.
+        self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._reveal_seq = 0   # FOLLOW-UP: monotonic clock, stamped on each real reveal
+        self.objects = []   # Mason Glyphs / Objects (cards/mason-glyphs.md): list of
+                             # {'kind', 'owner', 'position'} dicts, engine-level, not
+                             # tied to any Combatant's own state — they outlast their
+                             # creator and exist independently on the battlefield.
+
+    def create_object(self, owner, kind):
+        """Mason Glyphs / Objects: a persistent, position-anchored battlefield
+        entity, created at the owner's current position. No unique ID needed —
+        destruction removes the exact dict by identity."""
+        self.objects.append({'kind': kind, 'owner': owner, 'position': owner.position})
+
+    def attack_object(self, attacker, card, obj):
+        """Attacking an Object instead of a combatant: never rolls for damage,
+        never triggers the attacking card's own Effect — it just destroys the
+        Object outright, and the card is discarded as normal. Fortress
+        intercepts this exactly like it intercepts real attack damage: if
+        anyone on the Object's own side currently holds Fortress, this
+        becomes a genuine attack against THEM instead (full RPS/damage/Effect
+        resolution — the genuine article, not a stand-in), and the Object
+        survives untouched. Not yet reachable by any policy in this sim
+        (no AI decision logic exists for "is destroying this worth it") —
+        a real, deliberate scope limit, same shape as every other "no policy
+        decision infrastructure yet" gap this session. Real players and
+        future smarter policies can call this directly."""
+        owner = obj['owner']
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        if guard is not None:
+            guard._fortress = False
+            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            self.attack(attacker, guard, card)
+            return
+        attacker.hand.remove(card)
+        _discard_or_return(attacker, card)
+        self.objects.remove(obj)
+        self._say(f"{attacker.name} destroys {obj['kind']} at {obj['position']}")
 
     def insert_injury(self, target):
         if self.injury_card is None:
             return
         target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
 
+    def insert_exhaust(self, target, n=1):
+        """Exhaust (card-glossary.md): goes directly into the target's HAND, not the
+        deck — the difference from an Injury, which has to be drawn before it costs
+        anything. Can legitimately push hand size above the normal draw cap for a
+        turn or more; nothing truncates it back down on its own (same as Mind-loss
+        forcing a discard is the only thing that ever rebalances hand size — see
+        Combatant.adjust) — only a full destroy_exhaust action clears it."""
+        if self.exhaust_card is None:
+            return
+        for _ in range(n):
+            target.hand.append(self.exhaust_card)
+
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
+
+    def reposition_after(self, me, target):
+        _reposition_after(self.queue, me, target)
 
     def scry(self, actor, owner, x):
         """Look at the top x of owner's deck; the actor's policy decides which go
@@ -469,10 +733,10 @@ class Duel:
             c.draw_to_hand(self.rng)
 
     # --- damage application ---
-    def deal(self, target, amount, unpreventable=False, source=None):
+    def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
-        if not unpreventable and target.resist > 0:
+        if not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
         if not unpreventable and target._damage_floor is not None:
@@ -527,12 +791,40 @@ class Duel:
     # --- start-of-turn ongoing ticks (BLOOD TITHE etc.) ---
     def start_of_turn(self, who):
         _ongoing_support_tick(self, who)
+        _object_tick(self, who)
 
     # --- one attack action ---
     def attack(self, attacker, defender, card):
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
+        # FOLLOW-UP: fully BECOMES a copy of whichever ally most recently
+        # revealed a card (before RPS resolution, per Drew's spec) — a
+        # stronger transformation than AFTERIMAGE's color-only mirroring, so
+        # `card` itself is swapped to the copied Card object for everything
+        # below (color, effect, damage, the Axiom-ban check — deliberately
+        # NOT exempt the way AFTERIMAGE is, since this fully becomes the real
+        # card, name and all). `physical_card` keeps the true identity for
+        # hand/discard bookkeeping: FOLLOW-UP itself is what returns to the
+        # copier's own discard, never the copied card's name. No target ->
+        # `card` stays FOLLOW-UP itself: genuinely colorless (native color
+        # None), same footing as AFTERIMAGE with nothing to mirror — resolved
+        # by rps() below, not treated as an automatic whiff (Drew's rule:
+        # "colorless cards auto lose to any color... it only loses when it's
+        # challenged by a card with an actual color" — a colorless card still
+        # wins fully if there's no real defense to challenge it at all).
+        physical_card = card
+        if card.name == "FOLLOW-UP":
+            target = _resolve_follow_up(self, attacker)
+            if target is not None:
+                card = target
+        # AFTERIMAGE: resolved once, used everywhere color is read or shown
+        # below EXCEPT the Axiom-ban check further down, which deliberately
+        # keeps reading card.color directly — that check has to see the
+        # genuine colorless state to be bypassed by it at all. May be None
+        # (colorless, nothing to mirror/copy) — rps() handles that case on
+        # its own; no early return here.
+        atk_color = _effective_color(self, card)
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
@@ -543,30 +835,34 @@ class Duel:
         # a stack consumed on the next attack, same shape as Evade; the "or
         # expires at the end of your next turn even if unused" wall-clock
         # nuance isn't tracked.
-        if attacker.blind > 0:
+        if attacker.blind > 0 and 'blind' not in card.ignores:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
-                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
-                attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1
+                _discard_or_return(attacker, physical_card)
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1
+                self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 return
 
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
         # unaffected by when the reveal fields below get set.
-        if defender.evade > 0:
+        if defender.evade > 0 and 'evade' not in card.ignores:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
                        "and its Effect does not trigger (rules/combat-example.md).")
-                self._say(f"{attacker.name} plays {card.name} ({card.color})")
+                self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {defender.name} EVADES — attack misses")
-                attacker.discard.append(card)
-                attacker.last_color = card.color
-                attacker.attack_history[card.color] += 1  # revealed = public info
+                _discard_or_return(attacker, physical_card)
+                attacker.last_color = atk_color
+                attacker.attack_history[atk_color] += 1  # revealed = public info
+                self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
@@ -577,20 +873,32 @@ class Duel:
         # history from the attacker's PRIOR attacks, never the current one.
         was_staggered = defender.staggered
         def_card = None
+        physical_def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
                 c = defender.draw_one(self.rng)
                 if c:
                     defender.hand.append(c)
-            def_card = defender.policy.choose_defense(self, defender, attacker)
-            if def_card is not None:
-                # enforce Axiom ban on the reveal
-                if defender.axiom_ban and def_card.color == defender.axiom_ban:
-                    RULING("axiom-blocks-defense",
-                           "AXIOM's named color cannot be revealed to defend either "
-                           "— the ban is on the next reveal, attack or block "
-                           "(rules/card-glossary.md Axiom + reveal timing).")
-                    def_card = None
+            chosen = defender.policy.choose_defense(self, defender, attacker)
+            if chosen is not None:
+                physical_def_card = chosen
+                def_card = chosen
+                if chosen.name == "FOLLOW-UP":
+                    target = _resolve_follow_up(self, defender)
+                    if target is not None:
+                        def_card = target
+                    # else: def_card stays FOLLOW-UP itself, genuinely
+                    # colorless (native color None) — a legitimate defense
+                    # choice, resolved by rps() below like any other card,
+                    # not an automatic "no legal defense."
+                if def_card is not None:
+                    # enforce Axiom ban on the reveal
+                    if defender.axiom_ban and def_card.color == defender.axiom_ban:
+                        RULING("axiom-blocks-defense",
+                               "AXIOM's named color cannot be revealed to defend either "
+                               "— the ban is on the next reveal, attack or block "
+                               "(rules/card-glossary.md Axiom + reveal timing).")
+                        def_card = None
         if was_staggered:
             defender.staggered = False
             self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
@@ -599,21 +907,45 @@ class Duel:
         # here, immediately before anything looks at them. The attacker's card
         # lands in discard now (before RPS/outcome application), so effects
         # like FORGET that read `foe.discard` after RPS resolves still see it.
-        attacker.discard.append(card)
-        attacker.last_color = card.color
-        attacker.attack_history[card.color] += 1  # revealed = public info
-        self._say(f"{attacker.name} plays {card.name} ({card.color})")
+        _discard_or_return(attacker, physical_card)
+        attacker.last_color = atk_color
+        attacker.attack_history[atk_color] += 1  # revealed = public info
+        self._this_turn_hit['color'] = atk_color
+        _stamp_reveal(self, attacker, card)
+        self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
 
         if def_card is None:
-            # no defense -> attacker auto-wins (full win)
+            # no defense -> attacker auto-wins (full win); a colorless
+            # attacker still gets the same clean, uncontested win here —
+            # "colorless auto loses to any color... it only loses when it's
+            # challenged by a card with an actual color" (Drew's rule) — no
+            # challenge at all means no loss.
             self._resolve_attacker_win(attacker, defender, card, contested=False)
             defender._damage_floor = None
             return
 
-        defender.hand.remove(def_card)
-        defender.discard.append(def_card)
-        defender.last_color = def_card.color
-        self._say(f"  {defender.name} defends {def_card.name} ({def_card.color})")
+        def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
+        defender.hand.remove(physical_def_card)
+        _discard_or_return(defender, physical_def_card)
+        defender.last_color = def_color
+        _stamp_reveal(self, defender, def_card)
+        self._say(f"  {defender.name} defends {def_card.name} ({_color_label(def_color)})")
+
+        # FRAME-TRAP: if the defender was hit by an attack on the turn
+        # immediately before this one, this attack auto-wins outright — no
+        # RPS at all. The defender's card is already committed and revealed
+        # above (matches the card's own text: it isn't a "no legal defense"
+        # case, the defender genuinely chose and revealed a real card, it's
+        # specifically negated after the fact — no Defensive Bonus, no
+        # damage roll for it, nothing). "Took damage" means a landed
+        # attack specifically (`_prior_turn_hit['hit']`), never Thorns or
+        # any other damage source (Drew's confirmed scope).
+        if card.name == 'FRAME-TRAP' and self._prior_turn_hit['hit'] \
+                and self._prior_turn_hit['target'] is defender:
+            self._say(f"  FRAME-TRAP: {defender.name} was hit last turn — {def_card.name} is negated")
+            self._resolve_attacker_win(attacker, defender, card, contested=True)
+            defender._damage_floor = None
+            return
 
         outcome = self.rps(card, def_card, attacker, defender)
         if outcome == 'attacker':
@@ -644,7 +976,7 @@ class Duel:
         defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
-        base = self._rps_base(atk_card.color, def_card.color)
+        base = self._rps_base(_effective_color(self, atk_card), _effective_color(self, def_card))
         # PARADOX reverses the outcome on reveal; a tie is unchanged.
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
@@ -657,7 +989,11 @@ class Duel:
         # logic as rules/combat.md's Simultaneous Effects (no clear order).
         if base == 'tie':
             atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
-            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            # FRAME-TRAP's tie-win is Defensive-Bonus-only per its own card
+            # text (unlike EQUAL FOOTING, which works from either side) —
+            # same asymmetric shape as ADAPT's attacker-only claim, just on
+            # the other side.
+            def_wins_tie = def_card.name in ('EQUAL FOOTING', 'FRAME-TRAP')
             if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
             elif def_wins_tie and not atk_wins_tie:
@@ -667,13 +1003,27 @@ class Duel:
     @staticmethod
     def _rps_base(atk, dfn):
         if atk == dfn:
-            return 'tie'
+            return 'tie'   # includes colorless vs colorless (None == None)
+        # Colorless auto-loses to any real color, whichever side it's on —
+        # Drew's rule: "colorless cards auto lose to any color... it only
+        # loses when it's challenged by a card with an actual color." A
+        # colorless card facing no challenge at all never reaches this
+        # function (attack() short-circuits to an uncontested win first).
+        if atk is None:
+            return 'defender'
+        if dfn is None:
+            return 'attacker'
         beats = {('B', 'R'), ('R', 'G'), ('G', 'B')}  # attacker color beats defender color
         if (atk, dfn) in beats:
             return 'attacker'
         return 'defender'
 
     def _resolve_attacker_win(self, attacker, defender, card, contested):
+        # Preserve 'color', set earlier in attack() at the reveal point —
+        # replacing the whole dict here would silently drop it on every
+        # clean win, a real bug caught building AFTERIMAGE.
+        self._this_turn_hit = {'actor': attacker, 'target': defender, 'hit': True,
+                                'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
         # Rend's defensive guard: the next hit deals no damage and instead
@@ -685,7 +1035,7 @@ class Duel:
             self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
             card.effect(self, attacker, defender)
             return
-        dealt = self.deal(defender, dmg)
+        dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
         self._say(f"  -> {attacker.name} hits for {dealt} "
                   f"({defender.name} {defender.hp}/{defender.max_hp})")
@@ -741,10 +1091,21 @@ class Duel:
 
     def take_turn(self, who, foe):
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
+        self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
+        self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
+        # ROLLOUT/TELLS: did my position change at any point since my
+        # own last turn began (my own Move, forced repositioning by anyone,
+        # Quick, Rushdown as a victim — anything)? Computed once, right here,
+        # before this turn's own actions can touch position — stays readable
+        # (by myself or anyone else) until my next turn recomputes it.
+        who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
+        who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
+        who._shifted_positive = False    # TELLS: same self-clearing shape
+        who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -760,7 +1121,33 @@ class Duel:
         self.start_of_turn(who)
         if who.collapsed:
             return
-        who.draw_to_hand(self.rng)
+        if who._quick:
+            # Quick (card-glossary.md): a free repositioning action on top of
+            # the normal action, good for exactly this one turn — either a
+            # normal Move or Rushdown (Drew's correction: Rushdown isn't a
+            # granted keyword, it's one of the normal movement options, same
+            # as Move Position itself). "You may" in the glossary text is a
+            # real table choice; the bots here have no position-optimizing
+            # logic to make that choice with, so a simple, deterministic
+            # default stands in rather than adding a new decision axis to
+            # every policy for one small utility grant — flagged, not
+            # silently assumed: Rushdown if already Frontline with a
+            # Backline enemy to drag in (the more aggressive option),
+            # otherwise a plain self-flip. Applies even on a Staggered turn
+            # below: Quick only ever promises the reposition, never the
+            # attack that Staggered skips.
+            who._quick = False
+            if who.position == 'frontline' and foe.position == 'backline':
+                _rushdown(who, foe)
+                self._say(f"{who.name} uses Rushdown for free (Quick), dragging {foe.name} to Frontline")
+            else:
+                who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                self._say(f"{who.name} repositions for free (Quick)")
+        if who._skip_draw_next:
+            who._skip_draw_next = False
+            self._say(f"{who.name} skips their draw step (Emergency Repairs)")
+        else:
+            who.draw_to_hand(self.rng)
         if who.staggered:
             who.staggered = False
             self._say(f"{who.name} is Staggered — this turn's attack is skipped")
@@ -774,14 +1161,21 @@ class Duel:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
+                who._used_wait = True   # TELLS
                 self._say(f"{who.name} waits")
             else:
                 kind = action[0]
                 if kind == 'attack':
                     self.attack(who, foe, action[1])
+                elif kind == 'attack_object':
+                    self.attack_object(who, action[1], action[2])
                 elif kind == 'move':
                     who.position = 'backline' if who.position == 'frontline' else 'frontline'
                     self._say(f"{who.name} moves to {who.position}")
+                elif kind == 'destroy_exhaust':
+                    removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
+                    who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
+                    self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
                 elif kind == 'destroy_injury':
                     for i, c in enumerate(who.hand):
                         if c.is_status and c.name == 'INJURY':

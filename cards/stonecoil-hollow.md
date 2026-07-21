@@ -64,13 +64,7 @@ Range: Both
 
 ---
 
-**PATIENCE OF STONE**
-GREEN — SOUL — HOLLOW
-Attack: Soul + d4
-Effect: Anchored — At the start of each of your turns, heal 2 HP.
-Defensive Bonus: Gain Deadly.
-Range: Melee
-*"The unshaken abide, while chaos churns."*
+*PATIENCE OF STONE was promoted to core (same name, `cards/green-soul.md`) — Stonecoil's deck uses that core card in its place. STILL GROUND above stays as a signature card here — flagged in the promotion review as underpowered/basic for core, not carried over.*
 
 ---
 

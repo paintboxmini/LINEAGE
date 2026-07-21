@@ -280,3 +280,44 @@ Effect: Anchored — whenever an ally passes through your position in the initia
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
+
+---
+
+**REBUTTAL**
+BLUE — MIND
+Attack: Mind + d4
+Effect: If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Ranged
+*"Every argument has an opening. You just have to still be standing when it appears."*
+
+---
+
+**FRAME-TRAP**
+BLUE — MIND
+Attack: Mind + d2
+Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
+Effect: None.
+Defensive Bonus: Wins ties. On a tie, the attacker's Effect does not trigger.
+Range: Both
+*"You never see the second hit coming. You're still reacting to the first."*
+
+---
+
+**EXPOSED**
+BLUE — MIND
+Attack: Mind + d2
+Effect: If the defender is Staggered, this attack has Critical.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"You don't need strength. You need them to already be falling."*
+
+---
+
+**UNMAKE**
+BLUE — MIND
+Attack: Mind + d2
+Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 3 Exhaust cards to your hand.
+Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
+Range: Both
+*"Everything they built stops mattering at once."*

@@ -45,7 +45,7 @@ Recommended core inclusions: PATIENCE, FLOW, ANALYZE, WITNESS, BIND.
 
 Borrowers do not open combat. If fighting, something has gone wrong — either the party escalated or the Stonecoils forced both factions into the same space.
 
-Against Stonecoils: Borrowers Burrow constantly, striking from unexpected angles, never holding position long enough to be vibration-tracked. They use TUNNEL KNOWLEDGE to force Stonecoils out of choke points. They play CLAY BOWL every turn they can.
+Against Stonecoils: Borrowers Burrow constantly, striking from unexpected angles, never holding position long enough to be vibration-tracked. They use HEAVE AND HAUL (promoted to core from this creature's own TUNNEL KNOWLEDGE) to force Stonecoils out of choke points. They play CLAY BOWL every turn they can.
 
 Against the party (hostile): Same tactics. They are harder to hit than their HP suggests. They will retreat before dying — a Borrower at 3 HP uses Burrow and does not re-emerge until combat ends or the odds shift.
 

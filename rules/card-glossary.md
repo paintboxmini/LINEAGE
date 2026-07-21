@@ -12,7 +12,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
 
 **(2) Debuff**
-Any negative effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, forced position changes, and the removal of your Positive Status Effects (below). Does not include damage. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
 **(1) Positive Status Effects**
 Evade, Resist, Deadly, Fortress, Anchored, and Quick. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
@@ -20,11 +20,17 @@ Evade, Resist, Deadly, Fortress, Anchored, and Quick. A card that references thi
 **(1) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
+**(2) Reveal Hand** (Break, Read)
+At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue") — not naming individual cards, and not reading full card text. The opponent learns the shape of your options, not which specific cards or what they do. Simulator play doesn't need this distinction; it already has full internal access to hand contents either way.
+
+**(1) Critical**
+This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
+
 **(11) Deadly**
-The next time you roll attack damage, roll it twice and take the higher result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, add an additional d4 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(6) Weak**
-The next time you roll attack damage, roll it twice and take the lower result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, subtract an additional d4 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(9) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.

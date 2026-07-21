@@ -61,9 +61,11 @@ class TeamTactician(ScryMixin):
             if atks:
                 # value = damage + a nudge for effects that matter in teams
                 return ('attack', max(atks, key=lambda c: self._value(battle, me, target, c)), target)
-        # no legal attack: clear an Injury or move
+        # no legal attack: clear an Injury, then an Exhaust, or move
         if any(c.is_status and c.name == 'INJURY' for c in me.hand):
             return ('destroy_injury',)
+        if any(c.is_status and c.name == 'EXHAUST' for c in me.hand):
+            return ('destroy_exhaust',)
         if me.hand:
             return ('move',)
         return None

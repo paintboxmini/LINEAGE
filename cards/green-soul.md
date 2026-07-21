@@ -269,3 +269,73 @@ Effect: Until the end of combat, allies next to you in the initiative order heal
 Defensive Bonus: Gain Resist.
 Range: Both
 *"Stand where they stand. What heals them, heals you."*
+
+---
+
+**WARSONG**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: If an ally attacked successfully on the turn immediately before yours, all allies gain Deadly.
+Defensive Bonus: Apply Initiative Shift +2 to an ally.
+Range: Both
+*"One voice finds its mark. The rest answer in kind."*
+
+---
+
+**CONSUME**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
+Defensive Bonus: Deal Soul + d4 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Range: Both
+*"Nothing is wasted. Not even you."*
+
+---
+
+**SEED**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
+Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
+Range: Both
+*"Given time, and nowhere else to be."*
+
+---
+
+**HEAVE AND HAUL**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Choose a position. All enemies in that position move to the other position.
+Defensive Bonus: All allies may change position freely on their next turn.
+Range: Both
+*"They don't dominate the space. They know it."*
+
+---
+
+**PATIENCE OF STONE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Anchored — at the start of each of your turns, heal 2 HP.
+Defensive Bonus: Gain Deadly.
+Range: Melee
+*"The unshaken abide, while chaos churns."*
+
+---
+
+**YOU'RE NEXT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: On a clean win only, apply Initiative Shift +2 to self.
+Defensive Bonus: Deal 3 damage to the attacker.
+Range: Both
+*"It's finally your turn."*
+
+---
+
+**LEVEL THE FIELD**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Remove one Positive Status Effect of your choice from each enemy.
+Defensive Bonus: Remove one Positive Status Effect of your choice from each enemy.
+Range: Both
+*"Nobody gets to keep their edge."*

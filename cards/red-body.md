@@ -6,7 +6,7 @@
 RED — BODY
 Attack: Body + d8
 Effect: None
-Defensive Bonus: Deal 2 damage to attacker. Only on a clean win — not a tie.
+Defensive Bonus: Deal 3 damage to attacker, unpreventable.
 Range: Melee
 *"Sometimes the direct path is the wisest path."*
 
@@ -155,8 +155,8 @@ Range: Melee
 **SPARK OF VIOLENCE**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 2 unpreventable damage to any enemy
-Defensive Bonus: Deal 2 unpreventable damage to any enemy
+Effect: Deal 3 unpreventable damage to any enemy
+Defensive Bonus: Deal 3 unpreventable damage to any enemy
 Range: Both
 *"Every blaze begins with a decision."*
 
@@ -329,3 +329,113 @@ Effect: If this attack ties, the defender's Defensive Bonus does not trigger.
 Defensive Bonus: Deal 2 damage to the attacker. If this is a tie, deal 4 instead.
 Range: Ranged
 *"A tie should feel safe. It never is."*
+
+---
+
+**RETALIATE**
+RED — BODY
+Attack: Body + d4
+Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Both
+*"Pain is just momentum, redirected."*
+
+---
+
+**WAITING GAME**
+RED — BODY
+Attack: Body + d2
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defensive Bonus: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*
+
+---
+
+**DRAIN**
+RED — BODY
+Attack: Body + d2
+Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
+Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
+Range: Both
+*"What's yours was never really yours."*
+
+---
+
+**EMERGENCY REPAIRS**
+RED — BODY
+Attack: Body + d4
+Effect: Heal 2 × your Soul. Skip your draw step next turn.
+Defensive Bonus: Heal 2 × your Soul. Skip your draw step next turn.
+Range: Ranged
+*"Not now. Later, we'll deal with later."*
+
+---
+
+**OVERCOMMIT**
+RED — BODY
+Attack: Body + d4
+Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
+Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
+Range: Both
+*"Everything, all at once, and the bill comes due."*
+
+---
+
+**CERTAIN CONTACT**
+RED — BODY
+Attack: Body + d6
+Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
+Defensive Bonus: Gain Resist.
+Range: Melee
+*"Some things you don't have to aim."*
+
+---
+
+**TELLS**
+RED — BODY
+Attack: Body + d6
+Effect: If the defender moved since their last turn, this attack gains Deadly.
+Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
+Range: Melee
+*"Moving is a decision. So is being wrong about it."*
+
+---
+
+**IRON GRIP**
+RED — BODY
+Attack: Body + d6
+Effect: Target gains Rooted.
+Defensive Bonus: Anchored — heal 2 at the start of each of your turns.
+Range: Melee
+*"Stillness, enforced."*
+
+---
+
+**ROLLOUT**
+RED — BODY
+Attack: Body + d2
+Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use, regardless of outcome.
+Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use, regardless of outcome.
+Range: Melee
+*"It was slow once."*
+
+---
+
+**SEISMIC REDIRECT**
+RED — BODY
+Attack: Body + d4
+Effect: Rushdown.
+Defensive Bonus: Counter Attack d4.
+Range: Both
+*"The correction comes to you."*
+
+---
+
+**GORE**
+RED — BODY
+Attack: Body + d6
+Effect: If target is Frontline, deal +d4 additional damage.
+Defensive Bonus: Attacker gains Rooted.
+Range: Melee
+*"It does not aim. It arrives."*

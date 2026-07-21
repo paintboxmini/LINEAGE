@@ -24,10 +24,4 @@ Range: Both
 
 ---
 
-**TUNNEL KNOWLEDGE**
-GREEN — SOUL — HOLLOW
-Attack: Soul + d4
-Effect: Choose a position. All enemies in that position move to the other position.
-Defensive Bonus: All allies may change positions freely.
-Range: Both
-*"They don't dominate the space. They know it."*
+*TUNNEL KNOWLEDGE was promoted to core, de-flavored, and now lives in `cards/green-soul.md` as HEAVE AND HAUL — Borrower's deck uses that core card in its place.*
