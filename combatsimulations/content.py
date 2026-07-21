@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING, COLOR_TO_STAT
+from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown
 
 
 def warded(target):
@@ -1006,7 +1006,107 @@ def _overcommit_effect(engine, me, foe):
 def _overcommit_defense(engine, me, foe):
     _overcommit_payout(engine, me, foe)
 
+# ==================== Bestiary promotions to core =============================
+# First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
+# unless noted. Each creature's own card file gets a superseded-by note
+# rather than duplicating the text twice.
+
+# CERTAIN CONTACT (was NEVER LIFTED, Wall-Reader) — Drew's addition on
+# promotion: also ignores Resist and Blind, not just Evade. `ignores` is a
+# small, generic Card-level property (checked directly at the Blind/Evade
+# checks in attack() and the Resist reduction in deal()) rather than a new
+# keyword, since this describes the ATTACK itself, not a status granted to
+# anyone.
+def _certain_contact_defense(engine, me, foe):
+    me.resist += 1
+
+# HEAVE AND HAUL (was TUNNEL KNOWLEDGE, Borrower) — Effect always targets
+# Backline (no policy has real "which position" decision logic to make this
+# a genuine choice with, so the more generally useful default stands in,
+# same simplification shape as Quick's own free action). Defensive Bonus
+# reuses Quick's exact mechanism for "may change position freely" instead of
+# an immediate auto-flip — a real free reposition on everyone's own next
+# turn, not a forced one right now.
+def _heave_and_haul_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'backline':
+            e.position = 'frontline'
+def _heave_and_haul_defense(engine, me, foe):
+    for a in [me] + engine.allies(me):
+        a._quick = True
+
+# OFF BALANCE (was YOU CHANGED WALLS, Wall-Reader) — reworked on promotion,
+# not just renamed. Effect uses "moved" (Drew's own call, the cleaner
+# phrasing) via the new `_repositioned_since_last_turn` tracker (built for
+# this and ROLLOUT below — first time "did X reposition since their last
+# turn" has ever been tracked in the sim). Defensive Bonus is a genuinely
+# new condition: gain Resist if the ATTACKER received a positive Initiative
+# Shift or used Wait since their own last turn. Implementation note, flagged
+# rather than silently assumed: "since your last turn" reads most literally
+# as bound to the DEFENDER's own timeline, but the two new flags
+# (`_shifted_positive`, `_used_wait`) are self-clearing on the AFFECTED
+# combatant's own next turn (same shape as `_anticipating`/`_weathered`) —
+# a materially simpler, self-contained approximation of the same intent,
+# not a literal cross-combatant timeline comparison.
+def _off_balance_effect(engine, me, foe):
+    if foe._repositioned_since_last_turn:
+        me.deadly += 1
+def _off_balance_defense(engine, me, foe):
+    if foe._shifted_positive or foe._used_wait:
+        me.resist += 1
+
+# IRON GRIP (was CORRECTION GRIP, Alignment Marshal) — unchanged mechanically.
+def _iron_grip_effect(engine, me, foe):
+    foe.rooted = True
+def _iron_grip_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+
+# PATIENCE OF STONE (Delve Roller / Stonecoil, identical in both files —
+# proven twice already) — unchanged, Defensive Bonus stays an unconditional
+# Deadly grant per Drew ("maybe that's okay though").
+def _patience_of_stone_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+def _patience_of_stone_defense(engine, me, foe):
+    me.deadly += 1
+
+# ROLLOUT (Delve Roller) — the Pokemon reference, made real: returns
+# straight to hand after use (`returns_to_hand=True` on the Card itself),
+# regardless of outcome, instead of ever sitting in discard. Needs its own
+# damage function since the +4 bonus is conditional; reuses the same
+# `_repositioned_since_last_turn` tracker as OFF BALANCE, just checking
+# yourself instead of the target.
+def _rollout_damage(engine, me, foe):
+    base = me.eff('body') + roll(2, engine.rng)
+    if not me._repositioned_since_last_turn:
+        base += 4
+    return base
+def _rollout_defense(engine, me, foe):
+    me.resist += 1
+
+# SEISMIC REDIRECT (Alignment Marshal) — the first core card to grant
+# Rushdown for real (see engine.py's `_rushdown`, a genuine structural gap
+# closed this session: fully defined as a table action, referenced by name
+# in several bestiary cards, implemented nowhere until now).
+def _seismic_redirect_effect(engine, me, foe):
+    _rushdown(me, foe)
+def _seismic_redirect_defense(engine, me, foe):
+    engine.deal(foe, me.eff('body') + roll(4, engine.rng), unpreventable=True)
+
+# GORE (Minotaur) — unchanged.
+def _gore_damage(engine, me, foe):
+    base = me.eff('body') + roll(6, engine.rng)
+    if foe.position == 'frontline':
+        base += roll(4, engine.rng)
+    return base
+def _gore_defense(engine, me, foe):
+    foe.rooted = True
+
 def _youre_next_effect(engine, me, foe):
+    # Promoted to core: Drew's tweak — only a clean win, not a tie
+    # (`attacker._tie` is set True only while an Effect resolves during a
+    # tie, engine.py's rps()/tie branch).
+    if me._tie:
+        return
     engine.initiative_shift(me, 2)
 def _youre_next_defense(engine, me, foe):
     engine.deal(foe, 3, unpreventable=True)
@@ -1157,6 +1257,30 @@ def build_cards():
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
     add("OVERCOMMIT", 'R', 'body', 'both', 4,
         effect=_overcommit_effect, defense=_overcommit_defense)
+    # Bestiary promotions
+    add("CERTAIN CONTACT", 'R', 'body', 'melee', 6,
+        defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
+    add("HEAVE AND HAUL", 'G', 'soul', 'both', 4,
+        effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
+    add("OFF BALANCE", 'R', 'body', 'melee', 6,
+        effect=_off_balance_effect, defense=_off_balance_defense)
+    add("IRON GRIP", 'R', 'body', 'melee', 6,
+        effect=_iron_grip_effect, defense=_iron_grip_defense)
+    add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
+        effect=_patience_of_stone_effect, defense=_patience_of_stone_defense)
+    add("ROLLOUT", 'R', 'body', 'melee', 2,
+        damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
+    add("SEISMIC REDIRECT", 'R', 'body', 'both', 4,
+        effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)
+    add("GORE", 'R', 'body', 'melee', 6, damage=_gore_damage, defense=_gore_defense)
+    # FRAME-TRAP: the auto-win-and-negate-defense special case lives in
+    # attack() (both engines, checked by card.name), and the tie-win lives
+    # in rps() (also by name) -- nothing for content.py to register beyond
+    # the card's base stats. "Effect: none" and "Defensive Bonus: wins ties"
+    # (which structurally already means the attacker's Effect never fires
+    # on that tie, since a won tie IS a clean defender win) are both fully
+    # satisfied with no functions of their own.
+    add("FRAME-TRAP", 'B', 'mind', 'both', 2)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

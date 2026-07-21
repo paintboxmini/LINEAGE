@@ -2,22 +2,4 @@
 
 Signature cards for the Delve Roller. See `bestiary/delve-roller.md`.
 
----
-
-**PATIENCE OF STONE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Anchored — At the start of each of your turns, heal 2 HP.
-Defensive Bonus: Gain Deadly.
-Range: Melee
-*"The unshaken abide, while chaos churns."*
-
----
-
-**ROLLOUT**
-RED — BODY — HOLLOW
-Attack: Body + d2
-Effect: If you did not reposition last turn, deal +4 damage.
-Defensive Bonus: Gain Resist.
-Range: Melee
-*"It was slow once."*
+*PATIENCE OF STONE and ROLLOUT were both promoted to core (same names) and now live in `cards/green-soul.md` and `cards/red-body.md` — Delve Roller's deck uses those core cards in their place. ROLLOUT gained a real mechanical addition on promotion: it now returns to hand instead of discard after use, regardless of outcome (the Pokemon reference, made real).*

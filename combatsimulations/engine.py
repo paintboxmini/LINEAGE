@@ -173,6 +173,8 @@ def _ongoing_support_tick(engine, who):
         elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
             who.resist += 2
             spent.append(o)
+        elif o['kind'] == 'anchor_heal2' and who.position == o.get('anchor', who.position):
+            engine.heal(who, 2, source=who)   # IRON GRIP / PATIENCE OF STONE
     if spent:
         who.ongoing = [o for o in who.ongoing if not any(o is s for s in spent)]
 
@@ -228,6 +230,9 @@ def _apply_shift(engine, queue, target, amount):
         amount += -1 if amount > 0 else 1
         if amount == 0:
             return
+    if amount > 0:
+        target._shifted_positive = True   # OFF BALANCE: cleared at the start
+                                           # of target's own next turn
     was_pending = target._shift_skip or target in engine.pending_turns
     target._shift_skip = False
     if target in engine.pending_turns:
@@ -320,6 +325,29 @@ def _reposition_after(queue, me, target):
     queue.insert(queue.index(target) + 1, me)
 
 
+def _rushdown(actor, target):
+    """Rushdown (rules/combat.md): move a Backline enemy to the Frontline.
+    The actor must already be in the Frontline. A structural gap this whole
+    session: fully defined as a table action and referenced by name in
+    several bestiary cards, but never implemented anywhere — SEISMIC
+    REDIRECT is the first card to actually call this. A no-op if either
+    precondition fails (actor not Frontline, or target already Frontline),
+    same shape as every other conditional forced-reposition effect in
+    content.py — the card's own Effect just does nothing that turn rather
+    than being illegal to play."""
+    if actor.position == 'frontline' and target.position == 'backline':
+        target.position = 'frontline'
+
+
+def _discard_or_return(who, card):
+    """Where a just-revealed physical card lands: discard, unless the card's
+    own `returns_to_hand` says otherwise (ROLLOUT)."""
+    if card.returns_to_hand:
+        who.hand.append(card)
+    else:
+        who.discard.append(card)
+
+
 def _leave_wheel(engine, queue, who):
     """A combatant who leaves the fight entirely removes their slot, and the
     wheel closes around it (rules/combat.md, Joining and leaving). Plain list
@@ -363,7 +391,7 @@ class Card:
 
     def __init__(self, name, color, stat, reach, base_die,
                  damage=None, effect=None, defense=None, special_reveal=None,
-                 is_status=False):
+                 is_status=False, ignores=frozenset(), returns_to_hand=False):
         self.name = name
         self.color = color
         self.stat = stat
@@ -374,6 +402,19 @@ class Card:
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
         self.is_status = is_status     # Injury/Exhaust: cannot be played
+        # ROLLOUT: some cards return straight to your own hand instead of
+        # the discard pile once played, regardless of outcome — a Card-level
+        # property (checked at every discard-append point in attack(), both
+        # engines) rather than a name-specific special case, in case a
+        # future card wants the same shape.
+        self.returns_to_hand = returns_to_hand
+        # CERTAIN CONTACT: a defense this specific attack ignores outright —
+        # any subset of {'evade', 'blind', 'resist'}. Checked directly at
+        # each relevant point (the Blind/Evade checks in attack(), the
+        # Resist reduction in deal()) rather than a new keyword, since this
+        # isn't a status granted to anyone — it's a property of the attack
+        # itself, same footing as its own color/stat/range.
+        self.ignores = frozenset(ignores)
 
     def damage(self, engine, me, foe):
         if self._damage:
@@ -414,6 +455,8 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
+        self._position_at_last_turn_start = self.position  # ROLLOUT/OFF BALANCE
+        self._repositioned_since_last_turn = False          # tracking
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
@@ -449,6 +492,11 @@ class Combatant:
         self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
         self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
+        self._tie = False                # True only while an Effect resolves during
+                                          # a tie (engine.py's rps()/tie branch) — real
+                                          # pre-existing gap, never initialized before
+                                          # now: reading it on a normal win before any
+                                          # tie had ever happened would crash
         self._last_reveal_seq = None      # FOLLOW-UP: engine._reveal_seq at my last reveal
         self._last_reveal_card = None     # FOLLOW-UP: the (resolved) card I last revealed
         self._quick = False               # Quick (card-glossary.md): a free reposition,
@@ -456,6 +504,9 @@ class Combatant:
                                            # one turn — consumed at the start of that turn
                                            # regardless of whether it changes anything
         self._skip_draw_next = False      # EMERGENCY REPAIRS: no draw step, next turn only
+        self._shifted_positive = False    # OFF BALANCE: received a + Initiative Shift,
+                                           # cleared at the start of my own next turn
+        self._used_wait = False           # OFF BALANCE: used Wait, same self-clearing shape
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -618,10 +669,10 @@ class Duel:
             c.draw_to_hand(self.rng)
 
     # --- damage application ---
-    def deal(self, target, amount, unpreventable=False, source=None):
+    def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
-        if not unpreventable and target.resist > 0:
+        if not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
             target.resist -= 1  # one stack per attack
         if not unpreventable and target._damage_floor is not None:
@@ -719,12 +770,12 @@ class Duel:
         # a stack consumed on the next attack, same shape as Evade; the "or
         # expires at the end of your next turn even if unused" wall-clock
         # nuance isn't tracked.
-        if attacker.blind > 0:
+        if attacker.blind > 0 and 'blind' not in card.ignores:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
-                attacker.discard.append(physical_card)
+                _discard_or_return(attacker, physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
@@ -734,7 +785,7 @@ class Duel:
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
         # unaffected by when the reveal fields below get set.
-        if defender.evade > 0:
+        if defender.evade > 0 and 'evade' not in card.ignores:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
                 RULING("evade-consumes-attack",
@@ -742,7 +793,7 @@ class Duel:
                        "and its Effect does not trigger (rules/combat-example.md).")
                 self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {defender.name} EVADES — attack misses")
-                attacker.discard.append(physical_card)
+                _discard_or_return(attacker, physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1  # revealed = public info
                 self._this_turn_hit['color'] = atk_color
@@ -791,7 +842,7 @@ class Duel:
         # here, immediately before anything looks at them. The attacker's card
         # lands in discard now (before RPS/outcome application), so effects
         # like FORGET that read `foe.discard` after RPS resolves still see it.
-        attacker.discard.append(physical_card)
+        _discard_or_return(attacker, physical_card)
         attacker.last_color = atk_color
         attacker.attack_history[atk_color] += 1  # revealed = public info
         self._this_turn_hit['color'] = atk_color
@@ -810,10 +861,26 @@ class Duel:
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
         defender.hand.remove(physical_def_card)
-        defender.discard.append(physical_def_card)
+        _discard_or_return(defender, physical_def_card)
         defender.last_color = def_color
         _stamp_reveal(self, defender, def_card)
         self._say(f"  {defender.name} defends {def_card.name} ({_color_label(def_color)})")
+
+        # FRAME-TRAP: if the defender was hit by an attack on the turn
+        # immediately before this one, this attack auto-wins outright — no
+        # RPS at all. The defender's card is already committed and revealed
+        # above (matches the card's own text: it isn't a "no legal defense"
+        # case, the defender genuinely chose and revealed a real card, it's
+        # specifically negated after the fact — no Defensive Bonus, no
+        # damage roll for it, nothing). "Took damage" means a landed
+        # attack specifically (`_prior_turn_hit['hit']`), never Thorns or
+        # any other damage source (Drew's confirmed scope).
+        if card.name == 'FRAME-TRAP' and self._prior_turn_hit['hit'] \
+                and self._prior_turn_hit['target'] is defender:
+            self._say(f"  FRAME-TRAP: {defender.name} was hit last turn — {def_card.name} is negated")
+            self._resolve_attacker_win(attacker, defender, card, contested=True)
+            defender._damage_floor = None
+            return
 
         outcome = self.rps(card, def_card, attacker, defender)
         if outcome == 'attacker':
@@ -857,7 +924,11 @@ class Duel:
         # logic as rules/combat.md's Simultaneous Effects (no clear order).
         if base == 'tie':
             atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
-            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            # FRAME-TRAP's tie-win is Defensive-Bonus-only per its own card
+            # text (unlike EQUAL FOOTING, which works from either side) —
+            # same asymmetric shape as ADAPT's attacker-only claim, just on
+            # the other side.
+            def_wins_tie = def_card.name in ('EQUAL FOOTING', 'FRAME-TRAP')
             if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
             elif def_wins_tie and not atk_wins_tie:
@@ -899,7 +970,7 @@ class Duel:
             self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
             card.effect(self, attacker, defender)
             return
-        dealt = self.deal(defender, dmg)
+        dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
         self._say(f"  -> {attacker.name} hits for {dealt} "
                   f"({defender.name} {defender.hp}/{defender.max_hp})")
@@ -957,10 +1028,19 @@ class Duel:
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
+        # ROLLOUT/OFF BALANCE: did my position change at any point since my
+        # own last turn began (my own Move, forced repositioning by anyone,
+        # Quick, Rushdown as a victim — anything)? Computed once, right here,
+        # before this turn's own actions can touch position — stays readable
+        # (by myself or anyone else) until my next turn recomputes it.
+        who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
+        who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
+        who._shifted_positive = False    # OFF BALANCE: same self-clearing shape
+        who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -977,17 +1057,27 @@ class Duel:
         if who.collapsed:
             return
         if who._quick:
-            # Quick (card-glossary.md): a free reposition on top of the normal
-            # action, good for exactly this one turn. "You may" in the glossary
-            # text is a real table choice; the bots here have no position-
-            # optimizing logic to make that choice with, so it's applied
-            # automatically rather than adding a new decision axis to every
-            # policy for one small utility grant — flagged, not silently
-            # assumed. Applies even on a Staggered turn below: Quick only ever
-            # promises the reposition, never the attack that Staggered skips.
+            # Quick (card-glossary.md): a free repositioning action on top of
+            # the normal action, good for exactly this one turn — either a
+            # normal Move or Rushdown (Drew's correction: Rushdown isn't a
+            # granted keyword, it's one of the normal movement options, same
+            # as Move Position itself). "You may" in the glossary text is a
+            # real table choice; the bots here have no position-optimizing
+            # logic to make that choice with, so a simple, deterministic
+            # default stands in rather than adding a new decision axis to
+            # every policy for one small utility grant — flagged, not
+            # silently assumed: Rushdown if already Frontline with a
+            # Backline enemy to drag in (the more aggressive option),
+            # otherwise a plain self-flip. Applies even on a Staggered turn
+            # below: Quick only ever promises the reposition, never the
+            # attack that Staggered skips.
             who._quick = False
-            who.position = 'backline' if who.position == 'frontline' else 'frontline'
-            self._say(f"{who.name} repositions for free (Quick)")
+            if who.position == 'frontline' and foe.position == 'backline':
+                _rushdown(who, foe)
+                self._say(f"{who.name} uses Rushdown for free (Quick), dragging {foe.name} to Frontline")
+            else:
+                who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                self._say(f"{who.name} repositions for free (Quick)")
         if who._skip_draw_next:
             who._skip_draw_next = False
             self._say(f"{who.name} skips their draw step (Emergency Repairs)")
@@ -1006,6 +1096,7 @@ class Duel:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
+                who._used_wait = True   # OFF BALANCE
                 self._say(f"{who.name} waits")
             else:
                 kind = action[0]

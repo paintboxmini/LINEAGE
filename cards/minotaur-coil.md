@@ -4,13 +4,7 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 
 ---
 
-**GORE**
-RED — BODY — COIL
-Attack: Body + d6
-Effect: If target is Frontline, deal +d4 additional damage.
-Defensive Bonus: Attacker gains Rooted.
-Range: Melee
-*"It does not aim. It arrives."*
+*GORE was promoted to core (same name, `cards/red-body.md`) — Minotaur's deck uses that core card in its place.*
 
 ---
 

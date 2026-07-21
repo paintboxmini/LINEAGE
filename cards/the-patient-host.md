@@ -42,10 +42,4 @@ Range: Both
 
 ---
 
-**YOU'RE NEXT**
-GREEN — SOUL — MILESTONE
-Attack: Soul + d4
-Effect: Apply Initiative Shift +2 to self.
-Defensive Bonus: Deal 3 damage to the attacker.
-Range: Both
-*"It's finally your turn."*
+*YOU'RE NEXT was promoted to core (same name, `cards/green-soul.md`) — the Patient Host's deck uses that core card in its place. Gained a real mechanical tweak on promotion: the Initiative Shift now only applies on a clean win, not a tie.*

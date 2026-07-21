@@ -379,3 +379,63 @@ Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Range: Both
 *"Everything, all at once, and the bill comes due."*
+
+---
+
+**CERTAIN CONTACT**
+RED — BODY
+Attack: Body + d6
+Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
+Defensive Bonus: Gain Resist.
+Range: Melee
+*"Some things you don't have to aim."*
+
+---
+
+**OFF BALANCE**
+RED — BODY
+Attack: Body + d6
+Effect: If the defender moved since their last turn, this attack gains Deadly.
+Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
+Range: Melee
+*"Moving is a decision. So is being wrong about it."*
+
+---
+
+**IRON GRIP**
+RED — BODY
+Attack: Body + d6
+Effect: Target gains Rooted.
+Defensive Bonus: Anchored — heal 2 at the start of each of your turns.
+Range: Melee
+*"Stillness, enforced."*
+
+---
+
+**ROLLOUT**
+RED — BODY
+Attack: Body + d2
+Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use, regardless of outcome.
+Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use, regardless of outcome.
+Range: Melee
+*"It was slow once."*
+
+---
+
+**SEISMIC REDIRECT**
+RED — BODY
+Attack: Body + d4
+Effect: Rushdown.
+Defensive Bonus: Counter Attack d4.
+Range: Both
+*"The correction comes to you."*
+
+---
+
+**GORE**
+RED — BODY
+Attack: Body + d6
+Effect: If target is Frontline, deal +d4 additional damage.
+Defensive Bonus: Attacker gains Rooted.
+Range: Melee
+*"It does not aim. It arrives."*

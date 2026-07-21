@@ -24,7 +24,8 @@ import random
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
-                    _stamp_reveal, _resolve_follow_up, _color_label)
+                    _stamp_reveal, _resolve_follow_up, _color_label, _rushdown,
+                    _discard_or_return)
 
 
 class Battle:
@@ -82,7 +83,7 @@ class Battle:
         self.log.append(msg)
 
     # --- damage / heal (identical semantics to Duel) ---
-    def deal(self, target, amount, unpreventable=False, source=None):
+    def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
         # Redirect and shield are ATTACK-damage defenses — unpreventable damage
@@ -94,14 +95,14 @@ class Battle:
             if rt is not None and not rt.collapsed and rt is not target:
                 target._damage_redirect = None
                 self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
-                return self.deal(rt, amount, unpreventable, source)
+                return self.deal(rt, amount, unpreventable, source, bypass_resist)
             # Fortress Stance: a standing ally has volunteered to eat the next hit.
             for f in self.allies(target):
                 if getattr(f, '_fortress', False):
                     f._fortress = False
                     self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
-                    return self.deal(f, amount, unpreventable, source)
-        if not unpreventable and target.resist > 0:
+                    return self.deal(f, amount, unpreventable, source, bypass_resist)
+        if not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
         if not unpreventable and target._damage_floor is not None:
@@ -221,12 +222,12 @@ class Battle:
         # Blind resolves before Evade (rules/card-glossary.md, Blind) — see
         # engine.py's Duel.attack() for the full reasoning and the noted
         # simplification (stack consumed on next attack, no wall-clock expiry).
-        if attacker.blind > 0:
+        if attacker.blind > 0 and 'blind' not in card.ignores:
             attacker.blind -= 1
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)}) at {defender.name}")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
-                attacker.discard.append(physical_card)
+                _discard_or_return(attacker, physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
@@ -237,12 +238,12 @@ class Battle:
         # Evade resolves before the defender selects a card. It only reads
         # `defender.evade` (a token count), never the card's color, so it is
         # unaffected by when the reveal fields below get set.
-        if defender.evade > 0:
+        if defender.evade > 0 and 'evade' not in card.ignores:
             defender.evade -= 1
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
-                attacker.discard.append(physical_card)
+                _discard_or_return(attacker, physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
@@ -275,7 +276,7 @@ class Battle:
 
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, before anything (including FORGET, later) looks at them.
-        attacker.discard.append(physical_card)
+        _discard_or_return(attacker, physical_card)
         attacker.last_color = atk_color
         attacker.attack_history[atk_color] += 1
         self._this_turn_hit['color'] = atk_color
@@ -291,9 +292,17 @@ class Battle:
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
         defender.hand.remove(physical_def_card)
-        defender.discard.append(physical_def_card)
+        _discard_or_return(defender, physical_def_card)
         defender.last_color = def_color
         _stamp_reveal(self, defender, def_card)
+
+        # FRAME-TRAP: see engine.py's Duel.attack() for the full reasoning.
+        if card.name == 'FRAME-TRAP' and self._prior_turn_hit['hit'] \
+                and self._prior_turn_hit['target'] is defender:
+            self._say(f"  FRAME-TRAP: {defender.name} was hit last turn — {def_card.name} is negated")
+            self._resolve_attacker_win(attacker, defender, card)
+            defender._damage_floor = None
+            return
 
         outcome = self._rps(card, def_card)
         if outcome == 'attacker':
@@ -330,7 +339,7 @@ class Battle:
         # it only ever counts on the attacker side. Both-sided claims cancel out.
         if base == 'tie':
             atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
-            def_wins_tie = def_card.name == 'EQUAL FOOTING'
+            def_wins_tie = def_card.name in ('EQUAL FOOTING', 'FRAME-TRAP')
             if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
             elif def_wins_tie and not atk_wins_tie:
@@ -351,7 +360,7 @@ class Battle:
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
-        dealt = self.deal(defender, dmg)
+        dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
         if defender.thorns > 0 and card.reach == 'melee':
             self.deal(attacker, defender.thorns, unpreventable=True)
@@ -390,10 +399,15 @@ class Battle:
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
+        # ROLLOUT/OFF BALANCE: see engine.py's Duel.take_turn for the full reasoning.
+        who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
+        who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
+        who._shifted_positive = False    # OFF BALANCE: same self-clearing shape
+        who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -410,9 +424,17 @@ class Battle:
             return
         if who._quick:
             # Quick: see engine.py's Duel.take_turn for the full reasoning.
+            # Team fights have more than one possible Rushdown target — pick
+            # any living Backline enemy, same "no real policy decision here"
+            # simplification as the duel version.
             who._quick = False
-            who.position = 'backline' if who.position == 'frontline' else 'frontline'
-            self._say(f"{who.name} repositions for free (Quick)")
+            backline_foe = next((e for e in self.enemies(who) if e.position == 'backline'), None)
+            if who.position == 'frontline' and backline_foe is not None:
+                _rushdown(who, backline_foe)
+                self._say(f"{who.name} uses Rushdown for free (Quick), dragging {backline_foe.name} to Frontline")
+            else:
+                who.position = 'backline' if who.position == 'frontline' else 'frontline'
+                self._say(f"{who.name} repositions for free (Quick)")
         if who._skip_draw_next:
             who._skip_draw_next = False
             self._say(f"{who.name} skips their draw step (Emergency Repairs)")
@@ -432,6 +454,7 @@ class Battle:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
+                who._used_wait = True   # OFF BALANCE
                 self._say(f"{who.name} waits")
             elif action[0] == 'attack':
                 _, card, target = action

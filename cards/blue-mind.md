@@ -290,3 +290,14 @@ Effect: If an enemy attacked successfully on the turn immediately before yours, 
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Ranged
 *"Every argument has an opening. You just have to still be standing when it appears."*
+
+---
+
+**FRAME-TRAP**
+BLUE — MIND
+Attack: Mind + d2
+Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
+Effect: None.
+Defensive Bonus: Wins ties. On a tie, the attacker's Effect does not trigger.
+Range: Both
+*"You never see the second hit coming. You're still reacting to the first."*

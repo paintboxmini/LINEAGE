@@ -4,23 +4,7 @@
 
 ---
 
-**SEISMIC REDIRECT**
-RED — BODY — ENGINE
-Attack: Body + d4
-Effect: Rushdown.
-Defensive Bonus: Counter Attack d4.
-Range: Both
-*"The correction comes to you."*
-
----
-
-**CORRECTION GRIP**
-RED — BODY — ENGINE
-Attack: Body + d6
-Effect: Target gains Rooted.
-Defensive Bonus: Anchored — Heal 2 at the start of each of your turns.
-Range: Melee
-*"Calibration requires stillness."*
+*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md` (Seismic Redirect keeps its name; Correction Grip is de-flavored as IRON GRIP) — Alignment Marshal's deck uses those core cards in their place. Also worth a look sometime, unrelated to this promotion: CORRECTION LOAD below shuffles Exhaust into the target's deck, which doesn't match the glossary's actual rule (Exhaust goes directly into hand, not the deck, unlike Injury) — a pre-existing inconsistency, not touched here.*
 
 ---
 

@@ -299,3 +299,33 @@ Effect: Plant a seed at your current position. The next time you begin your turn
 Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
 Range: Both
 *"Given time, and nowhere else to be."*
+
+---
+
+**HEAVE AND HAUL**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Choose a position. All enemies in that position move to the other position.
+Defensive Bonus: All allies may change position freely on their next turn.
+Range: Both
+*"They don't dominate the space. They know it."*
+
+---
+
+**PATIENCE OF STONE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Anchored — at the start of each of your turns, heal 2 HP.
+Defensive Bonus: Gain Deadly.
+Range: Melee
+*"The unshaken abide, while chaos churns."*
+
+---
+
+**YOU'RE NEXT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: On a clean win only, apply Initiative Shift +2 to self.
+Defensive Bonus: Deal 3 damage to the attacker.
+Range: Both
+*"It's finally your turn."*
