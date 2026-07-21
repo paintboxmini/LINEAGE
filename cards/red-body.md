@@ -359,3 +359,23 @@ Effect: Steal one Positive Status Effect of your choice that the defender curren
 Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
 Range: Both
 *"What's yours was never really yours."*
+
+---
+
+**EMERGENCY REPAIRS**
+RED — BODY
+Attack: Body + d4
+Effect: Heal 2 × your Soul. Skip your draw step next turn.
+Defensive Bonus: Heal 2 × your Soul. Skip your draw step next turn.
+Range: Ranged
+*"Not now. Later, we'll deal with later."*
+
+---
+
+**OVERCOMMIT**
+RED — BODY
+Attack: Body + d4
+Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
+Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
+Range: Both
+*"Everything, all at once, and the bill comes due."*

@@ -971,6 +971,41 @@ def _seed_effect(engine, me, foe):
 def _seed_defense(engine, me, foe):
     me.ongoing.append({'kind': 'seed_resist', 'owner': me, 'anchor': me.position})
 
+# EMERGENCY REPAIRS (Gambler-adjacent — same "cost lands on your own next
+# turn" shape as BERSERKER'S PRICE, paid in a skipped draw instead of a
+# defense window) — Red on its face (Body + d4 attack), but the heal
+# reaches across to Soul specifically: Drew's own read, "now it's really
+# revealing where the cards want to touch other colors" — a card's printed
+# color/stat governs its own Attack roll, nothing stops its Effect text
+# from reading a different stat outright.
+def _emergency_repairs_payout(engine, me, foe):
+    engine.heal(me, 2 * me.eff('soul'))
+    me._skip_draw_next = True
+
+def _emergency_repairs_effect(engine, me, foe):
+    _emergency_repairs_payout(engine, me, foe)
+def _emergency_repairs_defense(engine, me, foe):
+    _emergency_repairs_payout(engine, me, foe)
+
+# OVERCOMMIT (Gambler) — the archetype's actual thesis: a huge upfront
+# swing (all four Positive Status Effects at once) paid for with Exhaust,
+# which costs a full future action to ever clear (rules/card-glossary.md,
+# EXHAUST) rather than costing HP or a single hand card the way every
+# other cost mechanic shipped this session does. First card ever to grant
+# Quick — see engine.py's Duel.take_turn for how the free reposition
+# actually resolves.
+def _overcommit_payout(engine, me, foe):
+    me.deadly += 1
+    me.resist += 1
+    me._quick = True
+    me.evade += 1
+    engine.insert_exhaust(me, 2)
+
+def _overcommit_effect(engine, me, foe):
+    _overcommit_payout(engine, me, foe)
+def _overcommit_defense(engine, me, foe):
+    _overcommit_payout(engine, me, foe)
+
 def _youre_next_effect(engine, me, foe):
     engine.initiative_shift(me, 2)
 def _youre_next_defense(engine, me, foe):
@@ -1118,6 +1153,10 @@ def build_cards():
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
     add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
+    add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 4,
+        effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
+    add("OVERCOMMIT", 'R', 'body', 'both', 4,
+        effect=_overcommit_effect, defense=_overcommit_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)
@@ -1150,6 +1189,7 @@ def build_cards():
 
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
+    add("EXHAUST", None, None, None, None, is_status=True)
 
     return C
 

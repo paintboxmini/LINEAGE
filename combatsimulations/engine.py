@@ -451,6 +451,11 @@ class Combatant:
         self._last_hit = 0               # damage dealt by my most recent attack
         self._last_reveal_seq = None      # FOLLOW-UP: engine._reveal_seq at my last reveal
         self._last_reveal_card = None     # FOLLOW-UP: the (resolved) card I last revealed
+        self._quick = False               # Quick (card-glossary.md): a free reposition,
+                                           # on top of the normal action, good for exactly
+                                           # one turn — consumed at the start of that turn
+                                           # regardless of whether it changes anything
+        self._skip_draw_next = False      # EMERGENCY REPAIRS: no draw step, next turn only
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -520,6 +525,7 @@ class Duel:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.injury_card = cards.get('INJURY')
+        self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
         self._resolving = None   # whoever's turn is currently resolving (see _apply_shift)
@@ -538,6 +544,18 @@ class Duel:
         if self.injury_card is None:
             return
         target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
+
+    def insert_exhaust(self, target, n=1):
+        """Exhaust (card-glossary.md): goes directly into the target's HAND, not the
+        deck — the difference from an Injury, which has to be drawn before it costs
+        anything. Can legitimately push hand size above the normal draw cap for a
+        turn or more; nothing truncates it back down on its own (same as Mind-loss
+        forcing a discard is the only thing that ever rebalances hand size — see
+        Combatant.adjust) — only a full destroy_exhaust action clears it."""
+        if self.exhaust_card is None:
+            return
+        for _ in range(n):
+            target.hand.append(self.exhaust_card)
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
@@ -958,7 +976,23 @@ class Duel:
         self.start_of_turn(who)
         if who.collapsed:
             return
-        who.draw_to_hand(self.rng)
+        if who._quick:
+            # Quick (card-glossary.md): a free reposition on top of the normal
+            # action, good for exactly this one turn. "You may" in the glossary
+            # text is a real table choice; the bots here have no position-
+            # optimizing logic to make that choice with, so it's applied
+            # automatically rather than adding a new decision axis to every
+            # policy for one small utility grant — flagged, not silently
+            # assumed. Applies even on a Staggered turn below: Quick only ever
+            # promises the reposition, never the attack that Staggered skips.
+            who._quick = False
+            who.position = 'backline' if who.position == 'frontline' else 'frontline'
+            self._say(f"{who.name} repositions for free (Quick)")
+        if who._skip_draw_next:
+            who._skip_draw_next = False
+            self._say(f"{who.name} skips their draw step (Emergency Repairs)")
+        else:
+            who.draw_to_hand(self.rng)
         if who.staggered:
             who.staggered = False
             self._say(f"{who.name} is Staggered — this turn's attack is skipped")
@@ -980,6 +1014,10 @@ class Duel:
                 elif kind == 'move':
                     who.position = 'backline' if who.position == 'frontline' else 'frontline'
                     self._say(f"{who.name} moves to {who.position}")
+                elif kind == 'destroy_exhaust':
+                    removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
+                    who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
+                    self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
                 elif kind == 'destroy_injury':
                     for i, c in enumerate(who.hand):
                         if c.is_status and c.name == 'INJURY':

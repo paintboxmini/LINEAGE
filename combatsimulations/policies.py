@@ -117,14 +117,17 @@ def legal_attacks(engine, me, foe):
 
 
 def idle_recovery(engine, me, foe):
-    """What to do with a forced-idle turn (no legal attack): clear an Injury if
-    one's stuck in hand. Never trade a real attacking turn for it. Staggered no
+    """What to do with a forced-idle turn (no legal attack): clear an Injury or
+    Exhaust if one's stuck in hand (Injury checked first — same conservative
+    "never trade a real attacking turn for it" policy either way). Staggered no
     longer routes through here — the engine skips that turn's action itself,
     before a policy ever gets asked to choose one."""
     if legal_attacks(engine, me, foe):
         return None
     if any(c.is_status and c.name == 'INJURY' for c in me.hand):
         return ('destroy_injury',)
+    if any(c.is_status and c.name == 'EXHAUST' for c in me.hand):
+        return ('destroy_exhaust',)
     return None
 
 

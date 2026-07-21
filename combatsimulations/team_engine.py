@@ -40,6 +40,7 @@ class Battle:
         self.log = log if log is not None else []
         self.turn_count = 0
         self.injury_card = cards.get('INJURY')
+        self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
         self.team_target = {0: None, 1: None}   # each side's shared focus-fire pick (team_policies.py, _pick_target)
@@ -144,6 +145,13 @@ class Battle:
         if self.injury_card is None:
             return
         target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
+
+    def insert_exhaust(self, target, n=1):
+        """See engine.py's Duel.insert_exhaust for the full reasoning."""
+        if self.exhaust_card is None:
+            return
+        for _ in range(n):
+            target.hand.append(self.exhaust_card)
 
     def scry(self, actor, owner, x):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
@@ -400,7 +408,16 @@ class Battle:
         self.start_of_turn(who)
         if who.collapsed:
             return
-        who.draw_to_hand(self.rng)
+        if who._quick:
+            # Quick: see engine.py's Duel.take_turn for the full reasoning.
+            who._quick = False
+            who.position = 'backline' if who.position == 'frontline' else 'frontline'
+            self._say(f"{who.name} repositions for free (Quick)")
+        if who._skip_draw_next:
+            who._skip_draw_next = False
+            self._say(f"{who.name} skips their draw step (Emergency Repairs)")
+        else:
+            who.draw_to_hand(self.rng)
         if who.staggered:
             who.staggered = False
             self._say(f"{who.name} is Staggered — this turn's attack is skipped")
@@ -426,6 +443,10 @@ class Battle:
                 self.attack(who, target, card)
             elif action[0] == 'move':
                 who.position = 'backline' if who.position == 'frontline' else 'frontline'
+            elif action[0] == 'destroy_exhaust':
+                removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
+                who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
+                self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
             elif action[0] == 'destroy_injury':
                 for i, c in enumerate(who.hand):
                     if c.is_status and c.name == 'INJURY':
