@@ -1025,25 +1025,27 @@ def _ledger_defense(engine, me, foe):
     if c:
         me.hand.append(c)
 
-# STAKE (Cultivator) — renamed from SEED: same mechanic, a less plant-locked
-# name so the card can fit a Construct or Mason deck without the fantasy
-# forcing a growth metaphor. Tempo-as-a-resource, the first card in this
-# shape: telegraphed, invests now for a bigger payoff later, no counter to
-# track — plants at the caster's current position and pays out the next
-# time THEY begin a turn still standing there (engine._ongoing_support_tick),
-# however many turns that takes. Moving off the position (or being forced
-# off it) just delays the payout, doesn't cancel it — Position is a real
-# lever against this card, not just killing/Warding the caster first (Ward
-# is irrelevant here regardless: this is a positive self-buff, never a
-# debuff, and never applied by anyone else, so it was never in Ward's scope
-# at all). Effect and Defensive Bonus stake the same way, different payoff
-# each — "stake" is flavor, not a fictional action that needs the Effect
-# side's exclusive timing; nothing stops narrating the Defensive Bonus as
-# driving it in as part of the block itself.
-def _stake_effect(engine, me, foe):
-    me.ongoing.append({'kind': 'stake_deadly', 'owner': me, 'anchor': me.position})
-def _stake_defense(engine, me, foe):
-    me.ongoing.append({'kind': 'stake_resist', 'owner': me, 'anchor': me.position})
+# SEED (Cultivator) — tempo-as-a-resource, the first card in this shape:
+# telegraphed, invests now for a bigger payoff later, no counter to track —
+# plants at the caster's current position and pays out the next time THEY
+# begin a turn still standing there (engine._ongoing_support_tick), however
+# many turns that takes. Moving off the position (or being forced off it)
+# just delays the payout, doesn't cancel it — Position is a real lever
+# against this card, not just killing/Warding the caster first (Ward is
+# irrelevant here regardless: this is a positive self-buff, never a debuff,
+# and never applied by anyone else, so it was never in Ward's scope at all).
+# Effect and Defensive Bonus plant the same way, different payoff each —
+# "plant" is flavor, not a fictional action that needs the Effect side's
+# exclusive timing; nothing stops narrating the Defensive Bonus as dropping
+# the seed as part of the block itself. Briefly renamed to STAKE over a
+# too-plant-specific-flavor concern, then reverted the same session — Drew,
+# on reflection: keep it flavored, promote/de-flavor later if it earns a
+# spot in a broader "candidates for core-agnostic reuse" pass, the same
+# process as the bestiary promotion batch, not a pre-emptive strip.
+def _seed_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_deadly', 'owner': me, 'anchor': me.position})
+def _seed_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_resist', 'owner': me, 'anchor': me.position})
 
 # EMERGENCY REPAIRS (Gambler-adjacent — same "cost lands on your own next
 # turn" shape as BERSERKER'S PRICE, paid in a skipped draw instead of a
@@ -1326,7 +1328,7 @@ def build_cards():
     add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
-    add("STAKE", 'G', 'soul', 'both', 4, effect=_stake_effect, defense=_stake_defense)
+    add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 4,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
     add("OVERCOMMIT", 'R', 'body', 'both', 4,

@@ -292,11 +292,11 @@ Range: Both
 
 ---
 
-**STAKE**
+**SEED**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Drive in a stake at your current position. The next time you begin your turn at this position, gain Deadly twice.
-Defensive Bonus: Drive in a stake at your current position. The next time you begin your turn at this position, gain Resist 2.
+Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
+Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
 Range: Both
 *"Given time, and nowhere else to be."*
 

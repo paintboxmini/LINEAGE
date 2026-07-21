@@ -50,6 +50,6 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 - DART — Move self to any position; Defensive: move self to any position
 
 *Green — Soul*
-- STAKE — Drive in a stake at your position, gain Deadly twice the next time you begin your turn there; Defensive: Drive in a stake at your position, gain Resist 2 the next time you begin your turn there
+- SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
 - WITHER — Target loses 1 Body this combat; Defensive: Target loses 1 Body this combat
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Move to any position

@@ -144,9 +144,9 @@ def _clear_ongoing_on_collapse(target):
 def _ongoing_support_tick(engine, who):
     """Start-of-turn ticks for green ongoing support (Synchrony, Rooted Oath).
     Shared by both engines; ally-facing so it's a self-only trickle in a duel."""
-    spent = []   # STAKE: consumed the instant it triggers — unlike every other
+    spent = []   # SEED: consumed the instant it triggers — unlike every other
                  # 'anchor' kind below, which reapplies every turn for as long
-                 # as the position holds, a stake pays out once and is gone.
+                 # as the position holds, a seed pays out once and is gone.
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
@@ -167,10 +167,10 @@ def _ongoing_support_tick(engine, who):
             a = o.get('target')
             if a is not None and not a.collapsed:
                 engine.heal(a, 3, source=who)
-        elif o['kind'] == 'stake_deadly' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'seed_deadly' and who.position == o.get('anchor', who.position):
             who.deadly += 2
             spent.append(o)
-        elif o['kind'] == 'stake_resist' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
             who.resist += 2
             spent.append(o)
         elif o['kind'] == 'anchor_heal2' and who.position == o.get('anchor', who.position):
