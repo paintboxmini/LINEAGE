@@ -9,6 +9,7 @@ Read `CLAUDE.md` and `memory.md` before using any of these. Kept deliberately sm
 | `repo-orientation.md` | Starting any new task — run this first |
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh at Sync when canon shifts |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
+| `archetypes.md` | Building a new card — a design compass, not canon; never surfaces at the table |
 
 ---
 
