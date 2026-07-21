@@ -953,6 +953,24 @@ def _ledger_defense(engine, me, foe):
     if c:
         me.hand.append(c)
 
+# SEED (Cultivator) — tempo-as-a-resource, the first card in this shape:
+# telegraphed, invests now for a bigger payoff later, no counter to track —
+# plants at the caster's current position and pays out the next time THEY
+# begin a turn still standing there (engine._ongoing_support_tick), however
+# many turns that takes. Moving off the position (or being forced off it)
+# just delays the payout, doesn't cancel it — Position is a real lever
+# against this card, not just killing/Warding the caster first (Ward is
+# irrelevant here regardless: this is a positive self-buff, never a debuff,
+# and never applied by anyone else, so it was never in Ward's scope at all).
+# Effect and Defensive Bonus plant the same way, different payoff each —
+# "plant" is flavor, not a fictional action that needs the Effect side's
+# exclusive timing; nothing stops narrating the Defensive Bonus as dropping
+# the seed as part of the block itself.
+def _seed_effect(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_deadly', 'owner': me, 'anchor': me.position})
+def _seed_defense(engine, me, foe):
+    me.ongoing.append({'kind': 'seed_resist', 'owner': me, 'anchor': me.position})
+
 def _youre_next_effect(engine, me, foe):
     engine.initiative_shift(me, 2)
 def _youre_next_defense(engine, me, foe):
@@ -1099,6 +1117,7 @@ def build_cards():
     add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
+    add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

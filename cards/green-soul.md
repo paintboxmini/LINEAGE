@@ -289,3 +289,13 @@ Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destr
 Defensive Bonus: Deal Soul + d4 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
 Range: Both
 *"Nothing is wasted. Not even you."*
+
+---
+
+**SEED**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
+Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
+Range: Both
+*"Given time, and nowhere else to be."*
