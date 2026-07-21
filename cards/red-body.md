@@ -349,3 +349,13 @@ Effect: Copy up to two different Positive Status Effects of your choice that the
 Defensive Bonus: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
 Range: Both
 *"Why build what's already standing right there?"*
+
+---
+
+**DRAIN**
+RED — BODY
+Attack: Body + d2
+Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
+Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
+Range: Both
+*"What's yours was never really yours."*

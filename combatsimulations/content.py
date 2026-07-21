@@ -797,15 +797,16 @@ def _staring_contest_effect(engine, me, foe):
 def _staring_contest_defense(engine, me, foe):
     engine.reposition_after(me, foe)
 
-# WAITING GAME (Red) — the actual copy-a-buff Mirror card. Copies up to two
-# DIFFERENT Positive Status Effects the target holds, in a fixed check order
-# (Deadly > Resist > Evade > Fortress), since a heuristic brain can't "choose"
-# the way a real player would at the table; a real player picks freely among
-# whatever's visible. Capped at 1 per statuses that are present rather than
-# duplicated — copying one Deadly twice isn't "two effects." Anchored and
-# Quick are skipped — Anchored lives in `ongoing`, not a simple flag, and
-# Quick has no implementation anywhere yet (same gap noted since Realignment).
-def _copy_statuses(me, foe, count=2):
+# Shared by WAITING GAME (Mirror: copy, leaves foe's own untouched) and
+# DRAIN (Parasite: steal, actually removes it from foe) — same fixed check
+# order (Deadly > Resist > Evade > Fortress) either way, since a heuristic
+# brain can't "choose" the way a real player would at the table; a real
+# player picks freely among whatever's visible. Capped at however many
+# statuses are actually present rather than duplicated — copying/stealing
+# one Deadly twice isn't "two effects." Anchored and Quick are skipped —
+# Anchored lives in `ongoing`, not a simple flag, and Quick has no
+# implementation anywhere yet (same gap noted since Realignment).
+def _transfer_statuses(me, foe, count, steal):
     order = []
     if foe.deadly > 0:
         order.append('deadly')
@@ -818,13 +819,69 @@ def _copy_statuses(me, foe, count=2):
     for kind in order[:count]:
         if kind == 'fortress':
             me._fortress = True
+            if steal:
+                foe._fortress = False
         else:
             setattr(me, kind, getattr(me, kind) + 1)
+            if steal:
+                setattr(foe, kind, getattr(foe, kind) - 1)
 
 def _waiting_game_effect(engine, me, foe):
-    _copy_statuses(me, foe, 2)
+    _transfer_statuses(me, foe, 2, steal=False)
 def _waiting_game_defense(engine, me, foe):
-    _copy_statuses(me, foe, 2)
+    _transfer_statuses(me, foe, 2, steal=False)
+
+# DRAIN (Red) — Parasite's first card: real predation, not imitation.
+# Steals exactly 1 Positive Status Effect the foe currently holds — removed
+# from them, not just copied, the distinction Drew drew between Mirror
+# ("imitates, takes nothing") and Parasite ("predates: drains, hijacks,
+# steals") when the two archetypes were first named.
+def _drain_effect(engine, me, foe):
+    _transfer_statuses(me, foe, 1, steal=True)
+def _drain_defense(engine, me, foe):
+    _transfer_statuses(me, foe, 1, steal=True)
+
+# CONSUME (Green) — Parasite's second card, the generic "destroy a card for
+# power" seed Drew flagged and parked earlier ("just having the odds of
+# hitting a stolen card happens are enough"), generalized to your own hand
+# rather than requiring a stolen card specifically. Mandatory cost, not
+# optional — matches SACRIFICE STRIKE's existing always-fires pattern, and
+# needs no new "pay this or not" decision point in the engine. The
+# Defensive Bonus rolls its own fresh counter-damage (same shape as
+# SACRIFICE STRIKE's Counter Attack) so Lifesteal has something real to
+# heal off on the defense side too — CONSUME's own printed Attack line
+# only pays out automatically on the Effect side. Destruction is permanent
+# — routed to `exile`, never `discard`, so it can't come back even on a
+# mid-combat reshuffle; picked uniformly at random from the remaining
+# hand, same convention FORGET already uses for "remove a card from hand."
+def _consume_destroy(engine, me, foe):
+    reals = [i for i, c in enumerate(me.hand) if not c.is_status]
+    if reals:
+        me.exile.append(me.hand.pop(engine.rng.choice(reals)))
+        foe.weak += 1
+        foe.blind += 1
+
+def _consume_effect(engine, me, foe):
+    engine.heal(me, me._last_hit)   # Lifesteal: full damage just dealt
+    _consume_destroy(engine, me, foe)
+
+def _consume_defense(engine, me, foe):
+    dmg = me.eff('soul') + roll(4, engine.rng)
+    engine.deal(foe, dmg, unpreventable=True)
+    engine.heal(me, dmg)            # Lifesteal off this counter-hit
+    _consume_destroy(engine, me, foe)
+
+# FOLLOW-UP (Mirror, colorless) — the second colorless card, and a stronger
+# transformation than AFTERIMAGE's: this fully BECOMES a copy of whatever an
+# ally most recently revealed (never itself — allies only, matching the
+# WARSONG convention, so it's a guaranteed dead card in a 1v1 Duel, same as
+# every other team-only card), before RPS resolution. No effect/defense/
+# damage of its own is registered at all — every one of those gets replaced
+# by the copied card's real functions once a target is found (engine.py's
+# attack(), both engines). Nothing to copy (no ally has revealed yet, or —
+# structurally impossible today, but still ruled on — their most recent
+# reveal was somehow a status card): auto-loses the reveal outright, a
+# guaranteed loss, not a weak fallback like AFTERIMAGE's default-to-Green.
 
 # AFTERIMAGE (Mirror) — colorless until revealed, per Drew's real-table
 # reasoning: Axiom's ban applies at the moment of commitment, and this card
@@ -1013,6 +1070,9 @@ def build_cards():
     add("AFTERIMAGE", None, None, 'both', None,
         damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
         special_reveal='mirror_color')
+    add("DRAIN", 'R', 'body', 'both', 2, effect=_drain_effect, defense=_drain_defense)
+    add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
+    add("FOLLOW-UP", None, None, 'both', None)
     add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)

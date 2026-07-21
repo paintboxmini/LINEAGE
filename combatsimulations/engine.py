@@ -77,6 +77,44 @@ def _effective_color(engine, card):
     return card.color
 
 
+def _stamp_reveal(engine, who, card):
+    """FOLLOW-UP: record that `who` just revealed `card` (attack or defense),
+    for the team-wide 'which ally revealed most recently' lookup below.
+    Records the RESOLVED card actually shown at the table — if `card` is
+    itself a FOLLOW-UP that successfully copied something, this stamps the
+    thing it became, never the literal name "FOLLOW-UP" (which is never
+    what's visible at reveal; a later FOLLOW-UP chains onto what was really
+    shown, not onto an invisible pass-through label). Scoped deliberately to
+    reveal events only (attack/defense plays), not every possible discard
+    source (Scry-bin, forced hand-size trims, etc.) — those are incidental
+    bookkeeping, not something an ally at the table would ever call "what I
+    just did," and every one of them would need its own instrumentation
+    across two engines and a dozen card effects for a case (a status card
+    surfacing here) that can't happen anyway, since status cards are never
+    legal attack or defense choices."""
+    engine._reveal_seq += 1
+    who._last_reveal_seq = engine._reveal_seq
+    who._last_reveal_card = card
+
+
+def _resolve_follow_up(engine, actor):
+    """FOLLOW-UP: becomes a full copy of whichever ally (never `actor`
+    itself — matches the established allies-only convention, e.g. WARSONG)
+    most recently revealed a card this combat. No ally has revealed
+    anything yet (true in an opening hand), or somehow the target is a
+    status card, and it's the same no-op either way, by Drew's ruling: this
+    resolution fails outright — a guaranteed loss of the reveal, not just a
+    weak one, distinct from AFTERIMAGE's "default to Green" fallback."""
+    candidates = [a for a in engine.allies(actor) if a._last_reveal_seq is not None]
+    if not candidates:
+        return None
+    best = max(candidates, key=lambda a: a._last_reveal_seq)
+    target = best._last_reveal_card
+    if target.is_status:
+        return None
+    return target
+
+
 # Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
 # SYNCHRONY) — cleared for real on Collapse, below. Pure-Anchored kinds
 # (rooted_oath, ledger) are deliberately left alone: Anchored's own glossary
@@ -392,6 +430,8 @@ class Combatant:
         self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
         self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
+        self._last_reveal_seq = None      # FOLLOW-UP: engine._reveal_seq at my last reveal
+        self._last_reveal_card = None     # FOLLOW-UP: the (resolved) card I last revealed
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -473,6 +513,7 @@ class Duel:
         # what was shown, not who won; 'hit'/'target' stay clean-win-only.
         self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._reveal_seq = 0   # FOLLOW-UP: monotonic clock, stamped on each real reveal
 
     def insert_injury(self, target):
         if self.injury_card is None:
@@ -604,6 +645,23 @@ class Duel:
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
+        # FOLLOW-UP: fully BECOMES a copy of whichever ally most recently
+        # revealed a card (before RPS resolution, per Drew's spec) — a
+        # stronger transformation than AFTERIMAGE's color-only mirroring, so
+        # `card` itself is swapped to the copied Card object for everything
+        # below (color, effect, damage, the Axiom-ban check — deliberately
+        # NOT exempt the way AFTERIMAGE is, since this fully becomes the real
+        # card, name and all). `physical_card` keeps the true identity for
+        # hand/discard bookkeeping: FOLLOW-UP itself is what returns to the
+        # copier's own discard, never the copied card's name.
+        physical_card = card
+        if card.name == "FOLLOW-UP":
+            target = _resolve_follow_up(self, attacker)
+            if target is None:
+                self._say(f"{attacker.name} plays FOLLOW-UP — nothing to copy, auto-loses the reveal")
+                attacker.discard.append(physical_card)
+                return
+            card = target
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — that check has to see the
@@ -624,10 +682,11 @@ class Duel:
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({atk_color})")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
-                attacker.discard.append(card)
+                attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 return
 
         # Evade resolves before the defender selects a card. It only reads
@@ -641,10 +700,11 @@ class Duel:
                        "and its Effect does not trigger (rules/combat-example.md).")
                 self._say(f"{attacker.name} plays {card.name} ({atk_color})")
                 self._say(f"  {defender.name} EVADES — attack misses")
-                attacker.discard.append(card)
+                attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1  # revealed = public info
                 self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
@@ -655,20 +715,30 @@ class Duel:
         # history from the attacker's PRIOR attacks, never the current one.
         was_staggered = defender.staggered
         def_card = None
+        physical_def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
                 c = defender.draw_one(self.rng)
                 if c:
                     defender.hand.append(c)
-            def_card = defender.policy.choose_defense(self, defender, attacker)
-            if def_card is not None:
-                # enforce Axiom ban on the reveal
-                if defender.axiom_ban and def_card.color == defender.axiom_ban:
-                    RULING("axiom-blocks-defense",
-                           "AXIOM's named color cannot be revealed to defend either "
-                           "— the ban is on the next reveal, attack or block "
-                           "(rules/card-glossary.md Axiom + reveal timing).")
-                    def_card = None
+            chosen = defender.policy.choose_defense(self, defender, attacker)
+            if chosen is not None:
+                physical_def_card = chosen
+                def_card = chosen
+                if chosen.name == "FOLLOW-UP":
+                    def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
+                if def_card is not None:
+                    # enforce Axiom ban on the reveal
+                    if defender.axiom_ban and def_card.color == defender.axiom_ban:
+                        RULING("axiom-blocks-defense",
+                               "AXIOM's named color cannot be revealed to defend either "
+                               "— the ban is on the next reveal, attack or block "
+                               "(rules/card-glossary.md Axiom + reveal timing).")
+                        # A known-banned choice is a free takeback (matches the
+                        # illegal-defense-mistake ruling, rules/combat.md) —
+                        # unlike a dead FOLLOW-UP below, which is genuinely spent.
+                        def_card = None
+                        physical_def_card = None
         if was_staggered:
             defender.staggered = False
             self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
@@ -677,11 +747,24 @@ class Duel:
         # here, immediately before anything looks at them. The attacker's card
         # lands in discard now (before RPS/outcome application), so effects
         # like FORGET that read `foe.discard` after RPS resolves still see it.
-        attacker.discard.append(card)
+        attacker.discard.append(physical_card)
         attacker.last_color = atk_color
         attacker.attack_history[atk_color] += 1  # revealed = public info
         self._this_turn_hit['color'] = atk_color
+        _stamp_reveal(self, attacker, card)
         self._say(f"{attacker.name} plays {card.name} ({atk_color})")
+
+        if physical_def_card is not None and def_card is None:
+            # Defender committed FOLLOW-UP but had nothing to copy — fully
+            # spent (they did play a real card), yet resolves as no legal
+            # defense: the same "real whiff, by the card's own design" shape
+            # as WAITING GAME against a buff-less target, not a free mistake.
+            defender.hand.remove(physical_def_card)
+            defender.discard.append(physical_def_card)
+            self._say(f"  {defender.name} defends FOLLOW-UP — nothing to copy, no legal defense")
+            self._resolve_attacker_win(attacker, defender, card, contested=False)
+            defender._damage_floor = None
+            return
 
         if def_card is None:
             # no defense -> attacker auto-wins (full win)
@@ -690,9 +773,10 @@ class Duel:
             return
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
-        defender.hand.remove(def_card)
-        defender.discard.append(def_card)
+        defender.hand.remove(physical_def_card)
+        defender.discard.append(physical_def_card)
         defender.last_color = def_color
+        _stamp_reveal(self, defender, def_card)
         self._say(f"  {defender.name} defends {def_card.name} ({def_color})")
 
         outcome = self.rps(card, def_card, attacker, defender)

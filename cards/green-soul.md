@@ -279,3 +279,13 @@ Effect: If an ally attacked successfully on the turn immediately before yours, a
 Defensive Bonus: Apply Initiative Shift +2 to an ally.
 Range: Both
 *"One voice finds its mark. The rest answer in kind."*
+
+---
+
+**CONSUME**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
+Defensive Bonus: Deal Soul + d4 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Range: Both
+*"Nothing is wasted. Not even you."*

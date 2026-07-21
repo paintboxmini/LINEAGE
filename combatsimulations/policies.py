@@ -36,11 +36,15 @@ def est_damage(me, card):
         return me.body + 2.5 + 2.0  # explode expectation, rough
     if card.name == "BURN BRIGHT":
         return me.body + 3.5 + 2
-    if card.name == "AFTERIMAGE":
-        # Colorless — stat isn't known until reveal (mirrors whoever went
-        # immediately before), so there's no single `card.stat` to read here.
-        # Rough estimate: average of the caster's own three stats, since the
-        # real answer depends on engine state this function doesn't have.
+    if card.name in ("AFTERIMAGE", "FOLLOW-UP"):
+        # Both colorless — stat isn't known here (mirrors whoever went
+        # immediately before, or becomes a full copy of an ally's most
+        # recent reveal), so there's no single `card.stat` to read. Rough
+        # estimate either way: average of the caster's own three stats,
+        # since the real answer depends on engine state this function
+        # doesn't have. FOLLOW-UP is often worth less than this in practice
+        # (a dead card whenever no ally has revealed yet), but a policy
+        # deciding whether to play it has no cheaper way to guess that here.
         return (me.body + me.mind + me.soul) / 3 + _AVG[4]
     return getattr(me, card.stat) + _AVG[card.base_die]
 

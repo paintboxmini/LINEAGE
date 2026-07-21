@@ -23,7 +23,8 @@ import random
 
 from engine import (roll, RULING, can_attack, _ongoing_support_tick,
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
-                    _join_wheel, _clear_ongoing_on_collapse, _effective_color)
+                    _join_wheel, _clear_ongoing_on_collapse, _effective_color,
+                    _stamp_reveal, _resolve_follow_up)
 
 
 class Battle:
@@ -48,6 +49,7 @@ class Battle:
         # the full mechanism.
         self._prior_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
         self._this_turn_hit = {'actor': None, 'target': None, 'hit': False, 'color': None}
+        self._reveal_seq = 0   # FOLLOW-UP: monotonic clock, stamped on each real reveal
 
     # --- team API (shared shape with Duel) ---
     def living(self, team):
@@ -185,6 +187,18 @@ class Battle:
         attacker.hand.remove(card)
         attacker._attacked_this = True
         attacker._last_hit = 0
+        # FOLLOW-UP: fully becomes a copy of whichever ally most recently
+        # revealed a card — see engine.py's Duel.attack() for the full
+        # reasoning (`physical_card` keeps the true identity for hand/discard
+        # bookkeeping; `card` is swapped to the copy for everything else).
+        physical_card = card
+        if card.name == "FOLLOW-UP":
+            target = _resolve_follow_up(self, attacker)
+            if target is None:
+                self._say(f"{attacker.name} plays FOLLOW-UP — nothing to copy, auto-loses the reveal")
+                attacker.discard.append(physical_card)
+                return
+            card = target
         # AFTERIMAGE: resolved once, used everywhere color is read or shown
         # below EXCEPT the Axiom-ban check further down, which deliberately
         # keeps reading card.color directly — see engine.py's Duel.attack()
@@ -202,10 +216,11 @@ class Battle:
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
                 self._say(f"  {attacker.name} is BLIND — attack fails entirely")
-                attacker.discard.append(card)
+                attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 return
 
         was_staggered = defender.staggered
@@ -217,33 +232,55 @@ class Battle:
             if roll(2, self.rng) == 1:
                 self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
                 self._say(f"  {defender.name} EVADES")
-                attacker.discard.append(card)
+                attacker.discard.append(physical_card)
                 attacker.last_color = atk_color
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
+                _stamp_reveal(self, attacker, card)
                 defender._damage_floor = None
                 return
 
         def_card = None
+        physical_def_card = None
         if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
             if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
                 c = defender.draw_one(self.rng)
                 if c:
                     defender.hand.append(c)
-            def_card = defender.policy.choose_defense(self, defender, attacker)
-            if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
-                def_card = None
+            chosen = defender.policy.choose_defense(self, defender, attacker)
+            if chosen is not None:
+                physical_def_card = chosen
+                def_card = chosen
+                if chosen.name == "FOLLOW-UP":
+                    def_card = _resolve_follow_up(self, defender)   # None -> dead, still spent below
+                if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
+                    # Known-banned choice is a free takeback, unlike a dead
+                    # FOLLOW-UP below, which is genuinely spent.
+                    def_card = None
+                    physical_def_card = None
         if was_staggered:
             defender.staggered = False
             self._say(f"    {defender.name} was Staggered — this attack goes undefended, then it clears")
 
         # Reveal: both cards flip face-up "simultaneously," in code terms right
         # here, before anything (including FORGET, later) looks at them.
-        attacker.discard.append(card)
+        attacker.discard.append(physical_card)
         attacker.last_color = atk_color
         attacker.attack_history[atk_color] += 1
         self._this_turn_hit['color'] = atk_color
+        _stamp_reveal(self, attacker, card)
         self._say(f"{attacker.name} plays {card.name} ({atk_color}) at {defender.name}")
+
+        if physical_def_card is not None and def_card is None:
+            # Defender committed FOLLOW-UP but had nothing to copy — fully
+            # spent, resolves as no legal defense (see engine.py's
+            # Duel.attack() for the full reasoning).
+            defender.hand.remove(physical_def_card)
+            defender.discard.append(physical_def_card)
+            self._say(f"    {defender.name} defends FOLLOW-UP — nothing to copy, no legal defense")
+            self._resolve_attacker_win(attacker, defender, card)
+            defender._damage_floor = None
+            return
 
         if def_card is None:
             self._resolve_attacker_win(attacker, defender, card)
@@ -251,9 +288,10 @@ class Battle:
             return
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
-        defender.hand.remove(def_card)
-        defender.discard.append(def_card)
+        defender.hand.remove(physical_def_card)
+        defender.discard.append(physical_def_card)
         defender.last_color = def_color
+        _stamp_reveal(self, defender, def_card)
 
         outcome = self._rps(card, def_card)
         if outcome == 'attacker':
