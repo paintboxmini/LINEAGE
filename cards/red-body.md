@@ -345,7 +345,7 @@ Range: Both
 **WAITING GAME**
 RED — BODY
 Attack: Body + d2
-Effect: Copy one Positive Status Effect of your choice that the defender currently has.
-Defensive Bonus: Copy one Positive Status Effect of your choice that the attacker currently has.
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defensive Bonus: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
 Range: Both
 *"Why build what's already standing right there?"*

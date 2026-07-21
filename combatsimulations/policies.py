@@ -17,7 +17,7 @@ A policy implements:
 
 from collections import Counter
 
-from engine import can_attack
+from engine import can_attack, _effective_color
 
 _AVG = {2: 1.5, 4: 2.5, 6: 3.5, 8: 4.5, 10: 5.5, None: 5.0}
 _BEATS = {'R': 'G', 'B': 'R', 'G': 'B'}          # color -> color it beats
@@ -249,9 +249,13 @@ class TacticianPolicy(ScryMixin):
             v += 4                                    # unpreventable finisher
         # Risk-free read: if the color that beats this attack (as a defender) is
         # exhausted from the foe's live cards, this attack cannot lose the reveal.
-        # AFTERIMAGE is colorless until reveal — no fixed color to look up here,
-        # so this read just doesn't apply to it (not a knowable safety check).
-        if card.color is not None and self._color_exhausted(engine, foe, _BEATEN_BY[card.color]):
+        # AFTERIMAGE mirrors whoever went immediately before it — colorless on its
+        # face, but that mirrored color is already fixed engine-side by the time
+        # this decision is made (the prior turn already resolved and revealed), so
+        # a real read just looks it up via _effective_color instead of the None
+        # printed on the card — same check every other card gets, one extra step.
+        atk_color = _effective_color(engine, card)
+        if atk_color is not None and self._color_exhausted(engine, foe, _BEATEN_BY[atk_color]):
             v += 2
         return v
 

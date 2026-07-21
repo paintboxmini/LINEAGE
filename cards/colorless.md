@@ -1,6 +1,6 @@
 # Colorless Cards
 
-Colorless cards carry no fixed color or stat on their face. They resolve to one only at the reveal step, per their own text — this is the point of them, not an exception to the rule. Because RPS and stat totals aren't known until reveal, colorless cards deliberately fall outside color-locked bans (Axiom and similar) that check at commitment time.
+This file holds cards that don't carry a fixed color or stat on their face — currently cards that resolve to one only at the reveal step, per their own text (the point of them, not an exception to the rule; because RPS and stat totals aren't known until reveal, they deliberately fall outside color-locked bans like Axiom that check at commitment time), and reserved as the future home for any status-effect-only card built without a color or stat of its own.
 
 ---
 

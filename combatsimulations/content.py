@@ -797,26 +797,34 @@ def _staring_contest_effect(engine, me, foe):
 def _staring_contest_defense(engine, me, foe):
     engine.reposition_after(me, foe)
 
-# WAITING GAME (Red) — the actual copy-a-buff Mirror card. Picks whichever
-# Positive Status Effect the target holds first, in a fixed check order,
-# since a heuristic brain can't "choose" the way a real player would at the
-# table; a real player picks freely among whatever's visible. Anchored and
+# WAITING GAME (Red) — the actual copy-a-buff Mirror card. Copies up to two
+# DIFFERENT Positive Status Effects the target holds, in a fixed check order
+# (Deadly > Resist > Evade > Fortress), since a heuristic brain can't "choose"
+# the way a real player would at the table; a real player picks freely among
+# whatever's visible. Capped at 1 per statuses that are present rather than
+# duplicated — copying one Deadly twice isn't "two effects." Anchored and
 # Quick are skipped — Anchored lives in `ongoing`, not a simple flag, and
 # Quick has no implementation anywhere yet (same gap noted since Realignment).
-def _copy_one_status(me, foe):
+def _copy_statuses(me, foe, count=2):
+    order = []
     if foe.deadly > 0:
-        me.deadly += 1
-    elif foe.resist > 0:
-        me.resist += 1
-    elif foe.evade > 0:
-        me.evade += 1
-    elif getattr(foe, '_fortress', False):
-        me._fortress = True
+        order.append('deadly')
+    if foe.resist > 0:
+        order.append('resist')
+    if foe.evade > 0:
+        order.append('evade')
+    if getattr(foe, '_fortress', False):
+        order.append('fortress')
+    for kind in order[:count]:
+        if kind == 'fortress':
+            me._fortress = True
+        else:
+            setattr(me, kind, getattr(me, kind) + 1)
 
 def _waiting_game_effect(engine, me, foe):
-    _copy_one_status(me, foe)
+    _copy_statuses(me, foe, 2)
 def _waiting_game_defense(engine, me, foe):
-    _copy_one_status(me, foe)
+    _copy_statuses(me, foe, 2)
 
 # AFTERIMAGE (Mirror) — colorless until revealed, per Drew's real-table
 # reasoning: Axiom's ban applies at the moment of commitment, and this card
