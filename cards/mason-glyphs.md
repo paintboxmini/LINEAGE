@@ -6,6 +6,7 @@ Every Object shares the same rules:
 - **Any attack can target an Object instead of a combatant.** It never rolls for damage and never triggers the attacking card's Effect — it just destroys the Object outright. The attacking card is discarded as normal.
 - **Fortress protects an Object the same way it protects an ally.** If anyone on the Object's side currently holds Fortress, an attack that would destroy it is redirected to them instead (Fortress's own text: "the next time an ally would take attack damage, you take it instead" — an Object counts as an ally for this purpose).
 - **Otherwise, an Object's own effect triggers for free** — no roll, no contest — for whoever occupies its position on their turn. It isn't a combat action; it's an ongoing rule of the battlefield until someone bothers to destroy it.
+- **An ally-facing Object benefits its creator too, same as anyone else on their side.** Once it exists, an Object isn't "cast" by anyone anymore — there's no caster's turn left to exclude the way a per-turn ally buff excludes itself. If you built it, standing on it pays out for you exactly like it would for anyone else who shares your side.
 
 ---
 
