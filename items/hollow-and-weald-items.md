@@ -6,6 +6,7 @@ Items from the Briarwatch Hollow and the Turnroot Weald region. Hollow items sou
 
 **LUMINOVA LEAVES**
 *Consumable — Translucent, bioluminescent*
+*Source: found tangled in fallen debris, Unstable Cave rubble fall (see `quests/hollow-below-briarwatch.md`) — surface growth swept down with the collapse, still faintly lit when it's dug back out.*
 Use: Heal 2 HP to self or one ally. The leaf goes dark when spent.
 
 ---
