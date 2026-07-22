@@ -7,7 +7,7 @@
 **Mind 2 / Body 4 / Soul 2 — HP 17**
 **Creature Threat Rating:** 8
 
-*A larger, bespoke mated pair (Mind 3/Body 6/Soul 3, CTR 12 each — no new cards, same signature set doubled up) dens in the Rodent Burrow Basin — see `quests/hollow-below-briarwatch.md`, Lower Depth.*
+*A larger, bespoke mated pair (Mind 3/Body 6/Soul 3, CTR 12 each — no new cards, same signature set doubled up) dens in the Mated Stonecoil Nest — see `quests/hollow-below-briarwatch.md`, Lower Depth.*
 
 ---
 

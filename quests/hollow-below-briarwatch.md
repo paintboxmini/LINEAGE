@@ -37,7 +37,7 @@ Sinkhole formed above Flood Shelf Chamber.
 
 This is hydrostatic pressure plus structural compromise. Not curse. Not omen.
 
-**Standing water, a few inches deep, now sits through most of the connecting tunnels** — the same seepage driving everything else in this chain, just visibly pooled rather than working invisibly through the stone. Three places stay dry regardless: the Borrower Settlement (their own drainage work, generations of upkeep), the Rodent Burrow Basin (open and well-drained by its own shape), and the reinforced Living Chamber behind the Heavy Door (built properly, and it still is — see the Transition Zone below). Everywhere else — the Split Seam, the Predator Ambush Corridor, the general connecting passages — is wet underfoot. Not deep enough to slow anyone down or matter mechanically on its own; just there, cold, and worth describing every time the party crosses it.
+**Standing water, a few inches deep, now sits through most of the connecting tunnels** — the same seepage driving everything else in this chain, just visibly pooled rather than working invisibly through the stone. Three places stay dry regardless: the Borrower Settlement (their own drainage work, generations of upkeep), the Mated Stonecoil Nest (open and well-drained by its own shape), and the reinforced Living Chamber behind the Heavy Door (built properly, and it still is — see the Transition Zone below). Everywhere else — the Split Seam, the Predator Ambush Corridor, the general connecting passages — is wet underfoot. Not deep enough to slow anyone down or matter mechanically on its own; just there, cold, and worth describing every time the party crosses it.
 
 ---
 
@@ -126,7 +126,13 @@ Clues: scratch marks at knee height, shed skin fragment, clay bowl listening pos
 
 Medium chamber. One side visibly damp. Old dry mineral ring higher on wall. Soft sediment floor on irrigation-facing side. Underground trickle audible.
 
-Two exits, and they don't carry the same water. The **narrow predator tunnel** is where the audible trickle actually comes from — trace it down and it's the same current running through Deep Stream Channel, well below (Lower Depth), surfacing here under pressure rather than flowing downhill; this is the deep source, not irrigation runoff. The **wider Borrower tunnel** is the Split Seam, above — the flow picks back up there and keeps climbing, toward the Transition Zone. A party that notices the current has a direction, and follows it either way, finds the actual shape of the problem: water rising from below, not just seeping from above. It's the kind of thing the Borrowers would already know how to redirect, if asked (Mediation Arc, Player Pathways, below).
+**Four paths lead out of this chamber, not two** — this is the actual hub of the mid-to-lower Hollow, not a corridor with a couple of side doors:
+- **The tunnel back up to the Split Seam and the Broken Stair Chamber** — the wider, Borrower-widened route the party already climbed down. The current picks up here too, running the same direction, up toward the Transition Zone (see Split Seam, above).
+- **A tunnel to the Borrower Settlement** — wide enough to walk without crouching this close to the surface, narrowing further in.
+- **The tunnel down into the Mated Stonecoil Nest** — where the mated pair dens (Lower Depth, below).
+- **The narrow predator tunnel** — the one path out of this chamber nobody's actually followed yet. This is where the audible trickle comes from, and tracing it leads to Deep Stream Channel, well below: the real, deep source of the water, surfacing here under pressure rather than flowing downhill, not irrigation runoff. It's the one path left to explore, and it's the one that actually answers where all this water keeps coming from.
+
+A party that notices the current has a direction, and follows it, finds the actual shape of the problem: water rising from below, not just seeping from above. It's the kind of thing the Borrowers would already know how to redirect, if asked (Mediation Arc, Player Pathways, below).
 
 Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point with roots protruding through the ceiling. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
 
@@ -137,6 +143,8 @@ Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point
 **Borrower Settlement**
 
 Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on walls. Clay bowls at tunnel mouths. Simple barricades. Borrowers move through 3 ft tunnels; players must crouch or go around. No predators here — they avoid this zone unless starving.
+
+**The flood that opened the sinkhole reached here too, once.** A waterline stain runs along the lower walls, well above current floor level. A few fungal mats show old water-scarring where a healthier patch was scraped back and regrown around the damage. It's old news by the time the party arrives, not a fresh crisis — enough time has passed that the Settlement has largely rebuilt around it: new barricades where old ones rotted, fresh clay bowls replacing cracked ones, the visible signs of a community that took a real hit and came back from it rather than one still in the middle of drowning. Worth describing as evidence, not as an active problem to solve.
 
 ---
 
@@ -168,9 +176,11 @@ Three visible cracks in the ceiling. Loose shale underfoot. The path forward is 
 
 ### Lower Depth
 
-**Rodent Burrow Basin**
+**Mated Stonecoil Nest** *(formerly Rodent Burrow Basin — renamed once the mated pair became the point of the room)*
 
 Shallow bowl-shaped cavern. Evidence of drowned burrows. Fungal patches regrowing. Predator tracks. Fairer terrain for an intentional fight.
+
+One way in, one way out: a single tunnel back to Flood Shelf Chamber above (one of that chamber's four paths, above). Nothing else connects here — a party that clears the Nest is walking back out the way they came in, not discovering a new route forward.
 
 **What's actually denning here: a mated pair of Stonecoils, each noticeably larger than the ones elsewhere in the Hollow — grown fat and confident on farmland livestock they were never supposed to have reach for.** Bespoke stat bump, no new signature cards needed: **Mind 3 / Body 6 / Soul 3 — HP 21, Creature Threat Rating 12, each.** Deck (12 — 3 Blue / 6 Red / 3 Green): DRAG, COIL LATCH, PULL ×2 each *(red)* · VIBRATION LOCK ×2, STILL GROUND *(blue)* · PATIENCE OF STONE, DARK CORRIDOR, SHED SKIN *(green)* — built entirely from `bestiary/stonecoil.md`'s existing signature set, doubled up to fill the larger deck. Tested directly against a 3-player CTR-9 party before being written down: 14.3% win rate for the pair, average 1.37 party collapses per battle — real stakes, not a formality, and not close to the ~0% a single baseline Stonecoil produces in the same matchup.
 
@@ -327,7 +337,7 @@ All physically coherent. No magic required.
 
 | Zone | Type |
 |------|------|
-| Stair Chamber, Rodent Basin | Open Space |
+| Stair Chamber, Mated Stonecoil Nest | Open Space |
 | Split Seam, Predator Corridor | Choke Point |
 | Undercut Pillar, Soft Sediment Floor | Hazard Zone |
 | Borrower Settlement, Deep Stream Edge | Safe Zone |
