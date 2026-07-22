@@ -391,6 +391,8 @@ class Battle:
             return
         dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
+        if dealt > 0:
+            defender._last_attacked_by = attacker
         if defender.thorns > 0 and card.reach == 'melee':
             self.deal(attacker, defender.thorns, unpreventable=True)
         card.effect(self, attacker, defender)

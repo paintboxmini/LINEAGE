@@ -530,6 +530,18 @@ class Combatant:
                                           # tie had ever happened would crash
         self._last_reveal_seq = None      # FOLLOW-UP: engine._reveal_seq at my last reveal
         self._last_reveal_card = None     # FOLLOW-UP: the (resolved) card I last revealed
+        self._last_attacked_by = None     # team AI: whoever last landed a clean-win hit on
+                                           # me (retaliation-targeting experiment) — set in
+                                           # both engines' clean-win damage path, read by
+                                           # team_policies.py's retaliate heuristic
+        self.retaliates = False           # opt-in flag for that heuristic — deliberately
+                                           # NOT inferred from a low Mind stat, since real
+                                           # ROSTER player archetypes (volk/adept/warden/
+                                           # vanguard) already have Mind 2 for unrelated
+                                           # reasons; inferring from the stat silently
+                                           # changed their established behavior and broke
+                                           # the regression suite. Set this explicitly on
+                                           # instinct-driven creatures instead.
         self._quick = False               # Quick (card-glossary.md): a free reposition,
                                            # on top of the normal action, good for exactly
                                            # one turn — consumed at the start of that turn
@@ -1052,6 +1064,8 @@ class Duel:
             return
         dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
+        if dealt > 0:
+            defender._last_attacked_by = attacker
         self._say(f"  -> {attacker.name} hits for {dealt} "
                   f"({defender.name} {defender.hp}/{defender.max_hp})")
         # Thorns: only on a successful MELEE hit against a thorned defender.
