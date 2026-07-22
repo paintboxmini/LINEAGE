@@ -98,6 +98,8 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 *Safe staging area. Introduce dampness. Show mineral streaking on walls.*
 
+**A gap at the bottom of the far wall, low and easy to miss until someone's crouched at floor level:** water is draining into it, steadily, the same flow that's been running underfoot since Flood Shelf Chamber above. It doesn't pool here — this chamber stays dry, per the Causality Chain — because whatever comes down from Flood Shelf finds its own way out through this gap and keeps going, deeper than anyone's mapped. Worth describing, not worth a check to notice; the gap itself answers nothing on its own. Tracing where the flow actually comes from is the real question, and that answer is upstream, not down.
+
 **First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick.md`), same species as the farmer's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
 
 **The Heavy Door** — half-buried in debris off this chamber. Thick stone slab, iron-banded, seals into a carved rectangular frame. When closed: reduces vibration, dampens sound, blocks predator access.
@@ -110,19 +112,21 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 **Split Seam (First Choke Point)**
 
-Natural fissure widened by Borrowers. 5 ft wide, low ceiling, single-file movement, sharp bend mid-way.
+Natural fissure widened by Borrowers. 5 ft wide, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
 
 Confined Space Rule active — only one Frontline per side.
 
 Clues: scratch marks at knee height, shed skin fragment, clay bowl listening post nearby.
 
+**Water moves here — not just sits.** Past the ambient dampness in the rest of the connecting tunnels (Causality Chain, above), this fissure carries an actual current, shallow but current all the same, running past the feet in one clear direction: away from Flood Shelf Chamber, toward the Transition Zone above. Trace it the other way and it leads somewhere real — see Flood Shelf Chamber, below.
+
 ---
 
-**Flood Shelf Chamber**
+**Flood Shelf Chamber** *(the sinkhole chamber — this is the chamber the Causality Chain means when it says "sinkhole formed above Flood Shelf Chamber")*
 
 Medium chamber. One side visibly damp. Old dry mineral ring higher on wall. Soft sediment floor on irrigation-facing side. Underground trickle audible.
 
-Two exits: narrow predator tunnel, wider Borrower tunnel.
+Two exits, and they don't carry the same water. The **narrow predator tunnel** is where the audible trickle actually comes from — trace it down and it's the same current running through Deep Stream Channel, well below (Lower Depth), surfacing here under pressure rather than flowing downhill; this is the deep source, not irrigation runoff. The **wider Borrower tunnel** is the Split Seam, above — the flow picks back up there and keeps climbing, toward the Transition Zone. A party that notices the current has a direction, and follows it either way, finds the actual shape of the problem: water rising from below, not just seeping from above. It's the kind of thing the Borrowers would already know how to redirect, if asked (Mediation Arc, Player Pathways, below).
 
 Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point with roots protruding through the ceiling. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
 
@@ -172,6 +176,8 @@ Shallow bowl-shaped cavern. Evidence of drowned burrows. Fungal patches regrowin
 
 **Not everything in the larder here is dead.** Some of the taken Fenwool are still alive — hurt, terrified, but alive, pinned in the pair's own den rather than already consumed. Rescuing them is a real objective layered on top of the fight itself, not just flavor: a party focused purely on winning the fight can still walk away having let the actual rescue fail.
 
+**A single egg sits in the nest**, tucked past the Fenwool pen where it's easy to miss in the middle of a fight. Retrievable once the pair is dealt with, if anyone thinks to look for it — the mated pair's own explanation for why they've grown bold enough to reach this far up into farmland at all.
+
 ---
 
 **Predator Ambush Corridor**
@@ -182,7 +188,7 @@ Narrow serpentine tunnel. Twisting S-curve. One elevated shelf, one soft floor z
 
 **Deep Stream Channel**
 
-Natural underground stream. Wider. Fast-moving water. Predator avoids strong flow — usable as a safety boundary. Water here originates deeper, not from irrigation.
+Natural underground stream. Wider. Fast-moving water. Predator avoids strong flow — usable as a safety boundary. Water here originates deeper, not from irrigation. **This is the actual source** of the current now rising through Flood Shelf Chamber and the Split Seam above — the same water, followed upstream to where it genuinely starts, not the irrigation seepage that gets blamed for the rest of the dungeon's dampness.
 
 ---
 
