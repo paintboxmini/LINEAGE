@@ -10,7 +10,7 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 
 **CHARGE**
 RED — BODY — COIL
-Attack: Body + d6
+Attack: Body + d8
 Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -20,7 +20,7 @@ Range: Both
 
 **TRAMPLE**
 RED — BODY — COIL
-Attack: Body + d4
+Attack: Body + d6
 Effect: Deal 2 damage to one other Frontline enemy of your choice.
 Defensive Bonus: Gain Thorns 2.
 Range: Melee
@@ -30,7 +30,7 @@ Range: Melee
 
 **MAZE SENSE**
 BLUE — MIND — COIL
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 3 of target's deck.
 Defensive Bonus: Scry 2 of your own deck.
 Range: Both
@@ -40,7 +40,7 @@ Range: Both
 
 **CUT OFF**
 BLUE — MIND — COIL
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If target is in Backline, apply Staggered and pull them to Frontline.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -50,7 +50,7 @@ Range: Both
 
 **PATTERN READ**
 BLUE — MIND — COIL
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Expose Green — if the selected card is Green, apply Rooted.
 Defensive Bonus: Scry 1.
 Range: Both
@@ -60,7 +60,7 @@ Range: Both
 
 **BOUND TO THE STONE**
 GREEN — SOUL — COIL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Injury.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
@@ -70,7 +70,7 @@ Range: Melee
 
 **LABYRINTH ECHO**
 GREEN — SOUL — COIL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Apply Blind to target.
 Defensive Bonus: Attacker gains Blind.
 Range: Both
@@ -80,7 +80,7 @@ Range: Both
 
 **INEVITABILITY**
 GREEN — SOUL — COIL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target gains Weak. If target is Rooted, also apply Staggered.
 Defensive Bonus: Attacker gains Staggered.
 Range: Melee

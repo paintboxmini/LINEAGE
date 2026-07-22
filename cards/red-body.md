@@ -4,7 +4,7 @@
 
 **STRIKE**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d10
 Effect: None
 Defensive Bonus: Deal 3 damage to attacker, unpreventable.
 Range: Melee
@@ -14,7 +14,7 @@ Range: Melee
 
 **CHARGE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: You and the defender move into frontline
 Defensive Bonus: You and the attacker move into frontline
 Range: Both
@@ -24,7 +24,7 @@ Range: Both
 
 **ENDURE**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Gain Resist.
 Defensive Bonus: Heal 3 HP
 Range: Both
@@ -34,7 +34,7 @@ Range: Both
 
 **GUARD**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: All allies gain Resist
 Defensive Bonus: All allies gain Resist
 Range: Melee
@@ -44,7 +44,7 @@ Range: Melee
 
 **PUSH**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Move target to backline
 Defensive Bonus: Move target to backline
 Range: Melee
@@ -54,7 +54,7 @@ Range: Melee
 
 **BRACE**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Gain Resist 2
 Defensive Bonus: Gain Resist 2
 Range: Melee
@@ -64,7 +64,7 @@ Range: Melee
 
 **RECOVER**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Draw 1 and heal 3 HP
 Defensive Bonus: Draw 1 and heal 3 HP
 Range: Both
@@ -74,7 +74,7 @@ Range: Both
 
 **PULL**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Pull defender to frontline
 Defensive Bonus: Pull attacker to frontline
 Range: Both
@@ -84,7 +84,7 @@ Range: Both
 
 **CLIFF SONG**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: You and all allies heal 2 HP
 Defensive Bonus: You and all allies heal 2 HP
 Range: Both
@@ -94,7 +94,7 @@ Range: Both
 
 **RALLY**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Pay 5 HP, all allies in Frontline gain Deadly
 Defensive Bonus: Pay 5 HP, all allies in the Backline gain Deadly
 Range: Both
@@ -104,7 +104,7 @@ Range: Both
 
 **WEATHERED**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Each time you are attacked before your next turn, heal 2 HP
 Defensive Bonus: Prevent next debuff
 Range: Both
@@ -114,7 +114,7 @@ Range: Both
 
 **INTERCEPT**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Gain Fortress and Resist 2
 Defensive Bonus: Gain Fortress and Resist 2
 Range: Melee
@@ -124,7 +124,7 @@ Range: Melee
 
 **DART**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Move self to any position
 Defensive Bonus: Move self to any position
 Range: Both
@@ -134,7 +134,7 @@ Range: Both
 
 **BLOOD IN THE GAP**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Lifesteal
 Defensive Bonus: Gain Thorns 1
 Range: Ranged
@@ -144,9 +144,9 @@ Range: Ranged
 
 **GAMBLER'S RUIN**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
-Defensive Bonus: Add 1d4 to your next attack
+Defensive Bonus: Add 1d6 to your next attack
 Range: Melee
 *"Chaos does not promise victory. Only spectacle."*
 
@@ -154,7 +154,7 @@ Range: Melee
 
 **SPARK OF VIOLENCE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Deal 3 unpreventable damage to any enemy
 Defensive Bonus: Deal 3 unpreventable damage to any enemy
 Range: Both
@@ -174,7 +174,7 @@ Range: Melee
 
 **REPEL**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: All enemies must move to backline if possible
 Defensive Bonus: All enemies must move to backline if possible
 Range: Melee
@@ -184,7 +184,7 @@ Range: Melee
 
 **BLOOD TITHE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Pay 2 HP, target ally heals 4 HP
 Defensive Bonus: Pay 2 HP, target ally heals 6 HP
 Range: Both
@@ -194,7 +194,7 @@ Range: Both
 
 **BERSERKER'S PRICE**
 RED — BODY
-Attack: Body + 2d6
+Attack: Body + 2d8
 Effect: Cannot defend until your next turn
 Defensive Bonus: The attacker cannot defend next time you attack them
 Range: Melee
@@ -204,7 +204,7 @@ Range: Melee
 
 **EQUAL FOOTING**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Instead of a tie, you win
 Defensive Bonus: Instead of a tie, you win
 Range: Both
@@ -214,7 +214,7 @@ Range: Both
 
 **BURN BRIGHT**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Exile 1 card from your hand. Deal +2 damage this attack.
 Defensive Bonus: Exile 1 card from your discard pile.
 Range: Ranged
@@ -224,7 +224,7 @@ Range: Ranged
 
 **SLIP THE BLADE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Evade.
 Defensive Bonus: Move to the frontline.
 Range: Both
@@ -234,7 +234,7 @@ Range: Both
 
 **BREAK**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Defender reveals hand.
 Defensive Bonus: Counter Attack, melee only. Only on a clean win — not a tie.
 Range: Melee
@@ -244,7 +244,7 @@ Range: Melee
 
 **TRAMPLE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: If this attack drops (Collapses) the defender, gain another action this turn.
 Defensive Bonus: Push the attacker to the backline.
 Range: Melee
@@ -254,7 +254,7 @@ Range: Melee
 
 **PAIN IS FUEL**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Resist.
 Defensive Bonus: Gain Thorns.
 Range: Both
@@ -264,7 +264,7 @@ Range: Both
 
 **DIG IN**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Anchored — Gain Resist 1.
 Defensive Bonus: Anchored — Gain Resist 1.
 Range: Melee
@@ -274,7 +274,7 @@ Range: Melee
 
 **GROUNDING STANCE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: You may ignore any ability that forces you to move positions until your next turn.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -284,7 +284,7 @@ Range: Both
 
 **SUNDER**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Target loses 1 Mind permanently this combat.
 Defensive Bonus: Target loses 1 Mind permanently this combat.
 Range: Both
@@ -294,7 +294,7 @@ Range: Both
 
 **PRESS THE INJURY**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: The defender announces how many Injuries they have in hand and discard pile, rather than revealing their hand. Deal +2 damage for each.
 Defensive Bonus: Heal 2 HP for each Injury in your hand and discard pile. Then destroy them.
 Range: Melee
@@ -304,7 +304,7 @@ Range: Melee
 
 **REND**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: If this attack deals damage, shuffle 1 Injury into defender's deck.
 Defensive Bonus: Next attack against you shuffles 1 Injury into your deck instead of dealing damage.
 Range: Melee
@@ -314,7 +314,7 @@ Range: Melee
 
 **STARING CONTEST**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
 Defensive Bonus: Move yourself to immediately follow the attacker in the initiative order.
 Range: Both
@@ -324,7 +324,7 @@ Range: Both
 
 **DEAD HEAT**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If this attack ties, the defender's Defensive Bonus does not trigger.
 Defensive Bonus: Deal 2 damage to the attacker. If this is a tie, deal 4 instead.
 Range: Ranged
@@ -334,7 +334,7 @@ Range: Ranged
 
 **RETALIATE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Both
@@ -344,7 +344,7 @@ Range: Both
 
 **WAITING GAME**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
 Defensive Bonus: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
 Range: Both
@@ -354,7 +354,7 @@ Range: Both
 
 **DRAIN**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
 Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
 Range: Both
@@ -364,7 +364,7 @@ Range: Both
 
 **EMERGENCY REPAIRS**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Heal 2 × your Soul. Skip your draw step next turn.
 Defensive Bonus: Heal 2 × your Soul. Skip your draw step next turn.
 Range: Ranged
@@ -374,7 +374,7 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Range: Both
@@ -384,7 +384,7 @@ Range: Both
 
 **CERTAIN CONTACT**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
 Defensive Bonus: Gain Resist.
 Range: Melee
@@ -394,7 +394,7 @@ Range: Melee
 
 **RHYTHM BREAK**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If the defender moved since their last turn, this attack gains Deadly.
 Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
 Range: Melee
@@ -404,7 +404,7 @@ Range: Melee
 
 **IRON GRIP**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Target gains Rooted.
 Defensive Bonus: Anchored — heal 2 at the start of each of your turns.
 Range: Melee
@@ -414,7 +414,7 @@ Range: Melee
 
 **ROLLOUT**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use, regardless of outcome.
 Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use, regardless of outcome.
 Range: Melee
@@ -424,9 +424,9 @@ Range: Melee
 
 **SEISMIC REDIRECT**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Rushdown.
-Defensive Bonus: Counter Attack d4.
+Defensive Bonus: Counter Attack d6.
 Range: Both
 *"The correction comes to you."*
 
@@ -434,8 +434,8 @@ Range: Both
 
 **GORE**
 RED — BODY
-Attack: Body + d6
-Effect: If target is Frontline, deal +d4 additional damage.
+Attack: Body + d8
+Effect: If target is Frontline, deal +d6 additional damage.
 Defensive Bonus: Attacker gains Rooted.
 Range: Melee
 *"It does not aim. It arrives."*

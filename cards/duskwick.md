@@ -4,7 +4,7 @@
 
 **SNUFF**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Defender gains Blind until the end of their next turn.
 Defensive Bonus: Gain Evade.
 Range: Melee
@@ -14,7 +14,7 @@ Range: Melee
 
 **HALF-SEEN**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Look at the Defenders hand and discard 1 of them.
 Defensive Bonus: Gain Obscure
 Range: Both
@@ -24,7 +24,7 @@ Range: Both
 
 **GUTTERING**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: If you are below half HP, you gain Deadly this attack.
 Defensive Bonus: If you are below half HP, gain Resist and Evade.
 Range: Both

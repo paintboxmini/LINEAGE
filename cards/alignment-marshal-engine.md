@@ -10,7 +10,7 @@
 
 **TARGETING LOCK**
 BLUE — MIND — ENGINE
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Expose Red — inflict Staggered.
 Defensive Bonus: Scry 2.
 Range: Both
@@ -20,7 +20,7 @@ Range: Both
 
 **CALIBRATION PULSE**
 BLUE — MIND — ENGINE
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Target gains Blind.
 Defensive Bonus: Scry 1.
 Range: Both
@@ -30,7 +30,7 @@ Range: Both
 
 **SYSTEM PURGE**
 GREEN — SOUL — ENGINE
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: All Frontline enemies move to Backline.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -40,7 +40,7 @@ Range: Both
 
 **CORRECTION LOAD**
 RED — BODY — ENGINE
-Attack: Body + d4
+Attack: Body + d6
 Effect: Shuffle 1 Exhaust into target's deck.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -50,7 +50,7 @@ Range: Both
 
 **FAULT EXPLOIT**
 BLUE — MIND — ENGINE
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If target has Exhaust in their deck, deal +4 damage.
 Defensive Bonus: Gain Evade.
 Range: Both

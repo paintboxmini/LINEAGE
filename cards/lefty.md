@@ -8,7 +8,7 @@ Signature cards for Lefty. See `characters/lefty.md`.
 
 **HOOK AND HAUL**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Pull all enemies to your position.
 Defensive Bonus: Push all enemies to the opposite position.
 Range: Melee
@@ -18,7 +18,7 @@ Range: Melee
 
 **HOLD FAST**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Lifesteal.
 Defensive Bonus: Gain Resist.
 Range: Melee
@@ -28,7 +28,7 @@ Range: Melee
 
 **IRON ANCHOR**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Target gains Staggered.
 Defensive Bonus: Gain Fortress.
 Range: Both

@@ -8,7 +8,7 @@ Signature cards for Masaharu. See `characters/masaharu.md`.
 
 **CASE FILE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 3. Reload.
 Defensive Bonus: Scry 1.
 Range: Both
@@ -18,7 +18,7 @@ Range: Both
 
 **COLD READ**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 2. Expose Blue — target gains Staggered.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -28,7 +28,7 @@ Range: Both
 
 **OPEN FIRE**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If target has Blind or Staggered, deal +2 damage.
 Defensive Bonus: Reload.
 Range: Ranged
@@ -38,7 +38,7 @@ Range: Ranged
 
 **STEADY HAND**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 1.
 Defensive Bonus: Scry 1, then draw 1 card. Reload.
 Range: Both

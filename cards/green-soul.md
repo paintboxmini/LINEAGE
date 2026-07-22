@@ -4,7 +4,7 @@
 
 **MIRROR STEP**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: You and defender both move positions
 Defensive Bonus: Allies gain 1 Quick (move position without spending your action on your next turn)
 Range: Both
@@ -14,7 +14,7 @@ Range: Both
 
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target ally gains Deadly
 Defensive Bonus: Target ally draws 2
 Range: Ranged
@@ -24,7 +24,7 @@ Range: Ranged
 
 **ADAPT**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Instead of a tie, you win
 Defensive Bonus: Gain Evade
 Range: Both
@@ -34,7 +34,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: You may change position
 Defensive Bonus: You may change position
 Range: Melee
@@ -44,7 +44,7 @@ Range: Melee
 
 **RESONATE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: All allies gain Deadly
 Defensive Bonus: All allies gain Resist 1
 Range: Ranged
@@ -54,7 +54,7 @@ Range: Ranged
 
 **ATTUNE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defensive Bonus: Lose 2 HP. Draw 2 cards, then discard 1.
 Range: Melee
@@ -64,7 +64,7 @@ Range: Melee
 
 **PATIENCE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: If you did not attack last turn, deal +4 damage
 Defensive Bonus: Anchored — Target ally heals 3 HP
 Range: Melee
@@ -74,7 +74,7 @@ Range: Melee
 
 **WITNESS**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Target ally heals 6 HP
 Defensive Bonus: Target ally heals 6 HP
 Range: Melee
@@ -84,7 +84,7 @@ Range: Melee
 
 **URGENCY**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Apply Initiative Shift +1 to all allies
 Defensive Bonus: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Melee
@@ -94,7 +94,7 @@ Range: Melee
 
 **DELAY**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Apply Initiative Shift -1 to defender
 Defensive Bonus: Apply Initiative Shift -1 to attacker
 Range: Both
@@ -104,7 +104,7 @@ Range: Both
 
 **COMMUNION**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: If you are attacked before your next turn, your party may scry 1
 Defensive Bonus: You and your allies gain Deadly
 Range: Both
@@ -114,7 +114,7 @@ Range: Both
 
 **BALANCE**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Discard 1 to Stagger the defender
 Defensive Bonus: Discard 1 to Stagger the attacker
 Range: Ranged
@@ -124,7 +124,7 @@ Range: Ranged
 
 **VOID**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker discards 1 card at random
 Range: Melee
@@ -134,7 +134,7 @@ Range: Melee
 
 **TWIN STRIKE**
 GREEN — SOUL
-Attack: (Soul + d2) x 2
+Attack: (Soul + d4) x 2
 Effect: None
 Defensive Bonus: Target enemy gains Weak
 Range: Melee
@@ -144,7 +144,7 @@ Range: Melee
 
 **RENEWAL**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: All allies may discard 1 card then draw 1, or heal 2
 Defensive Bonus: Target Collapsed ally heals 6 HP
 Range: Both
@@ -154,7 +154,7 @@ Range: Both
 
 **ACCEPTANCE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: You may discard your hand, then draw that many cards
 Defensive Bonus: All allies may move position or gain Initiative Shift +1
 Range: Both
@@ -164,7 +164,7 @@ Range: Both
 
 **SHADE AWAY**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Gain Evade.
 Defensive Bonus: The next enemy must attack you on their turn. They move forward/rushdown if they cannot.
 Range: Melee
@@ -174,7 +174,7 @@ Range: Melee
 
 **SHARED BURDEN**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Gain Fortress and Evade
 Defensive Bonus: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
@@ -184,7 +184,7 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: The Defender gains 1 Rooted (cannot change position until the start of your next turn.)
 Defensive Bonus: The attacker gains 1 Rooted (can't change position next turn.)
 Range: Melee
@@ -194,7 +194,7 @@ Range: Melee
 
 **ROOTED OATH**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Anchored — Target ally gains Deadly.
 Defensive Bonus: Anchored — Target ally gains Resist.
 Range: Both
@@ -204,7 +204,7 @@ Range: Both
 
 **READ**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: The defender must reveal their hand.
 Defensive Bonus: Name a color then choose a card in the attacker's hand. If colors match, discard it.
 Range: Both
@@ -214,7 +214,7 @@ Range: Both
 
 **CARRIED INJURY**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Transfer 1 Injury from any ally to defender
 Defensive Bonus: Transfer 1 Injury from yourself to attacker
 Range: Both
@@ -224,7 +224,7 @@ Range: Both
 
 **MOCKERY**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Apply Initiative Shift -2 to defender
 Defensive Bonus: Target must attack you if able on their next turn
 Range: Both
@@ -234,7 +234,7 @@ Range: Both
 
 **WITHER**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target loses 1 Body this combat.
 Defensive Bonus: Target loses 1 Body this combat.
 Range: Both
@@ -244,7 +244,7 @@ Range: Both
 
 **FIELD MEDICINE**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Remove all Injuries from target ally's hand and discard pile. They heal 3 HP.
 Defensive Bonus: Remove all Injuries in your hand and discard pile. Heal 3 HP.
 Range: Ranged
@@ -254,7 +254,7 @@ Range: Ranged
 
 **DEAD RECKONING**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Defender gains Weak.
 Defensive Bonus: Attacker gains Blind.
 Range: Both
@@ -264,7 +264,7 @@ Range: Both
 
 **SYNCHRONY**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Until the end of combat, allies next to you in the initiative order heal 1 HP at the start of their turns. Whenever an ally heals this way, you heal 1 HP as well. Ends if you die or leave combat.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -274,7 +274,7 @@ Range: Both
 
 **WARSONG**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: If an ally attacked successfully on the turn immediately before yours, all allies gain Deadly.
 Defensive Bonus: Apply Initiative Shift +2 to an ally.
 Range: Both
@@ -284,9 +284,9 @@ Range: Both
 
 **CONSUME**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
-Defensive Bonus: Deal Soul + d4 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Defensive Bonus: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
 Range: Both
 *"Nothing is wasted. Not even you."*
 
@@ -294,7 +294,7 @@ Range: Both
 
 **SEED**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
 Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
 Range: Both
@@ -304,7 +304,7 @@ Range: Both
 
 **HEAVE AND HAUL**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Choose a position. All enemies in that position move to the other position.
 Defensive Bonus: All allies may change position freely on their next turn.
 Range: Both
@@ -314,7 +314,7 @@ Range: Both
 
 **PATIENCE OF STONE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Anchored — at the start of each of your turns, heal 2 HP.
 Defensive Bonus: Gain Deadly.
 Range: Melee
@@ -324,7 +324,7 @@ Range: Melee
 
 **YOU'RE NEXT**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: On a clean win only, apply Initiative Shift +2 to self.
 Defensive Bonus: Deal 3 damage to the attacker.
 Range: Both
@@ -334,7 +334,7 @@ Range: Both
 
 **LEVEL THE FIELD**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Remove one Positive Status Effect of your choice from each enemy.
 Defensive Bonus: Remove one Positive Status Effect of your choice from each enemy.
 Range: Both
@@ -344,7 +344,7 @@ Range: Both
 
 **SMOKE SCREEN**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself. Ward may prevent your own Blind.
 Defensive Bonus: Attacker gains Blind.
 Range: Melee

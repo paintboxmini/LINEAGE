@@ -12,7 +12,7 @@ Includes the Exhaust status card, seeded into player decks during this encounter
 
 **ASH EXHAUST**
 GREEN — SOUL — ASHFALL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: After this attack resolves, each opponent discards 1 card. If a player discarded a Green card this way, shuffle 1 Exhaust into their deck.
 Defensive Bonus: Gain Resist.
 Range: Ranged
@@ -22,7 +22,7 @@ Range: Ranged
 
 **HARVEST CHAIN**
 RED — BODY — ASHFALL
-Attack: Body + d2
+Attack: Body + d4
 Effect: If this attack wins the reveal, Rushdown the target. If the target cannot move positions, deal +2 damage instead.
 Defensive Bonus: Guarded — while Frontline, your Backline cannot be targeted.
 Range: Ranged
@@ -32,7 +32,7 @@ Range: Ranged
 
 **TITHE COLLECTION**
 RED — BODY — ASHFALL
-Attack: Body + d2
+Attack: Body + d4
 Effect: If this attack deals damage, the Engine heals 3 HP. If the target has 3 or fewer cards in hand, heal 5 HP instead.
 Defensive Bonus: Anchored — reduce incoming damage by 2 while Frontline.
 Range: Melee
@@ -42,7 +42,7 @@ Range: Melee
 
 **VENT CYCLE**
 BLUE — MIND — ASHFALL
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: All opponents discard 1 card. For each Exhaust discarded this way, deal 3 damage to that player.
 Defensive Bonus: Ward
 Range: Ranged
@@ -56,7 +56,7 @@ Range: Ranged
 
 **CINDER SPIRAL**
 RED — BODY — ASHFALL
-Attack: Body + d4
+Attack: Body + d6
 Effect: Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it.
 Defensive Bonus: Gain Evade.
 Range: Ranged
@@ -66,7 +66,7 @@ Range: Ranged
 
 **ASH REDIRECT**
 GREEN — SOUL — ASHFALL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: If this attack wins the reveal, choose another enemy. That enemy must discard 1 random card.
 Defensive Bonus: Ward
 Range: Ranged
@@ -76,7 +76,7 @@ Range: Ranged
 
 **THERMAL VECTOR**
 BLUE — MIND — ASHFALL
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If the target attacked the Tithe Engine on their last turn, deal +2 damage.
 Defensive Bonus: Bonded — if the Engine wins a reveal before its next turn, gain Resist. (See glossary.)
 Range: Ranged

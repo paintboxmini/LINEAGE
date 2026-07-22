@@ -6,7 +6,7 @@
 
 **STILL COUNTING**
 GREEN — SOUL — COIL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: If you have not changed position this combat, this attack gains Deadly.
 Defensive Bonus: Gain Resist.
 Range: Both

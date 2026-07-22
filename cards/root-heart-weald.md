@@ -6,7 +6,7 @@ Signature cards derived from the Root Heart's abilities. Tagged as WEALD — obt
 
 **ROOT LASH**
 RED — BODY — WEALD
-Attack: Body + d6
+Attack: Body + d8
 Effect: Pull target to the Frontline.
 Defensive Bonus: Gain Rooted.
 Range: Melee
@@ -16,7 +16,7 @@ Range: Melee
 
 **FOREST MEMORY**
 BLUE — MIND — WEALD
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Name a card color. If the target plays that color on their next turn, heal 2 HP.
 Defensive Bonus: Return 1 card from your discard pile to the top of your deck.
 Range: Both

@@ -8,7 +8,7 @@ Signature cards for Greed. See `characters/greed.md`.
 
 **LIGHTNING DASH**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Move to any position. If you changed position, deal 2 damage to a second enemy.
 Defensive Bonus: Move to any position.
 Range: Both
@@ -18,7 +18,7 @@ Range: Both
 
 **VOLT**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Rushdown. Deal 2 damage to a second enemy.
 Defensive Bonus: Deal 2 damage to attacker.
 Range: Melee
@@ -28,7 +28,7 @@ Range: Melee
 
 **THUNDERBOLT STRIKE**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d10
 Effect: If you did not attack last turn, deal +4 damage.
 Defensive Bonus: Deal 2 damage to attacker.
 Range: Ranged
@@ -38,7 +38,7 @@ Range: Ranged
 
 **THUNDERCLAP**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If you played LIGHTNING DASH or VOLT last turn, this attack also hits every enemy in the Frontline for the same damage.
 Defensive Bonus: Deal 2 damage to attacker.
 Range: Melee

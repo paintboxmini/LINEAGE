@@ -4,7 +4,7 @@
 
 **SURGE**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Target makes DC 12 Body/Sense save or gains Staggered. Ends Flatten.
 Defensive Bonus: Gain Flatten.
 Range: Melee
@@ -14,7 +14,7 @@ Range: Melee
 
 **ENVELOPING PRESS**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Target gains Rooted until start of their next turn. Ends Flatten.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
@@ -24,8 +24,8 @@ Range: Melee
 
 **DEPTH SLAM**
 RED — BODY
-Attack: Body + d6
-Effect: If target is already Staggered, deal +d4 bonus damage. Ends Flatten.
+Attack: Body + d8
+Effect: If target is already Staggered, deal +d6 bonus damage. Ends Flatten.
 Defensive Bonus: Gain Flatten.
 Range: Melee
 *"It does not relent."*
@@ -34,7 +34,7 @@ Range: Melee
 
 **INK BURST**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Target gains Weak on their next attack. Ends Flatten.
 Defensive Bonus: Gain Evade.
 Range: Melee
@@ -54,7 +54,7 @@ Range: Both
 
 **CURRENT SENSE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: After this card resolves, reposition freely to any position.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -74,7 +74,7 @@ Range: Both
 
 **MIMICRY PULSE**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Gain Evade. If the Octopus is Flattened, also gain Resist 1.
 Defensive Bonus: Gain Evade.
 Range: Melee

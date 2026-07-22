@@ -12,7 +12,7 @@ Every Object shares the same rules:
 
 **MENDING GLYPH**
 GREEN — SOUL — MASON
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Create a Mending Glyph at your current position. Until destroyed, any ally who takes their turn there heals 1 HP.
 Defensive Bonus: Same as Effect.
 Range: Both
@@ -22,7 +22,7 @@ Range: Both
 
 **HONING GLYPH**
 RED — BODY — MASON
-Attack: Body + d4
+Attack: Body + d6
 Effect: Create a Honing Glyph at your current position. Until destroyed, any ally who takes their turn there deals 1 additional damage this turn.
 Defensive Bonus: Same as Effect.
 Range: Both
@@ -32,7 +32,7 @@ Range: Both
 
 **BARBED GLYPH**
 RED — BODY — MASON
-Attack: Body + d4
+Attack: Body + d6
 Effect: Create a Barbed Glyph at your current position. Until destroyed, any ally who takes their turn there gains Thorns.
 Defensive Bonus: Same as Effect.
 Range: Both
@@ -42,7 +42,7 @@ Range: Both
 
 **CIPHER GLYPH**
 BLUE — MIND — MASON
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Create a Cipher Glyph at your current position. Until destroyed, any ally who takes their turn there gains Obscure.
 Defensive Bonus: Same as Effect.
 Range: Both
@@ -52,7 +52,7 @@ Range: Both
 
 **WITHERING GLYPH**
 GREEN — SOUL — MASON
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Create a Withering Glyph at your current position. Until destroyed, any enemy who takes their turn there gains Weak.
 Defensive Bonus: Same as Effect.
 Range: Both
@@ -62,7 +62,7 @@ Range: Both
 
 **MIRING GLYPH**
 BLUE — MIND — MASON
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Create a Miring Glyph at your current position. Until destroyed, any enemy who takes their turn there suffers Initiative Shift -1.
 Defensive Bonus: Same as Effect.
 Range: Both
