@@ -344,8 +344,8 @@ Range: Both
 
 **SMOKE SCREEN**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: Target enemy moves to Backline and gains Blind.
+Attack: Soul + d2
+Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself. Ward may prevent your own Blind.
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"Visibility is a luxury."*

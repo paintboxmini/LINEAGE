@@ -900,6 +900,27 @@ def _last_resort_defense(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
 
+# SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
+# Blind on the whole enemy Frontline was the card's actual identity, so it
+# stayed; the gating changed instead of the scope: minimum base die, melee
+# only, clean-win-only (`me._tie` gate, same as YOU'RE NEXT), and it blinds
+# its own caster too. `warded()` blocking that self-inflicted Blind is a
+# real, deliberate extension of Ward's scope, not a silent reuse — Ward's
+# own rule (card-glossary.md Debuff) only ever covers what an ENEMY applies
+# to you; this is the first card where Ward blocks a status a combatant
+# inflicts on themselves. Only the self-Blind is Ward-eligible — the
+# Frontline enemies' Blind lands regardless of whether Ward fires.
+def _smoke_screen_effect(engine, me, foe):
+    if me._tie:
+        return
+    for e in engine.enemies(me):
+        if e.position == 'frontline':
+            e.blind += 1
+    if not warded(me):
+        me.blind += 1
+def _smoke_screen_defense(engine, me, foe):
+    foe.blind += 1
+
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
 # DRAIN) from each enemy, respecting Ward normally (`warded()`, same
@@ -1417,6 +1438,8 @@ def build_cards():
     add("BARRIER", 'B', 'mind', 'both', 2, effect=_barrier_effect, defense=_barrier_defense)
     add("LAST RESORT", 'B', 'mind', 'both', 4,
         effect=_last_resort_effect, defense=_last_resort_defense)
+    add("SMOKE SCREEN", 'G', 'soul', 'melee', 2,
+        effect=_smoke_screen_effect, defense=_smoke_screen_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     # Mason Glyphs / Objects
