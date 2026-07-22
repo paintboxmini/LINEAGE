@@ -37,6 +37,8 @@ Sinkhole formed above Flood Shelf Chamber.
 
 This is hydrostatic pressure plus structural compromise. Not curse. Not omen.
 
+**Standing water, a few inches deep, now sits through most of the connecting tunnels** — the same seepage driving everything else in this chain, just visibly pooled rather than working invisibly through the stone. Three places stay dry regardless: the Borrower Settlement (their own drainage work, generations of upkeep), the Rodent Burrow Basin (open and well-drained by its own shape), and the reinforced Living Chamber behind the Heavy Door (built properly, and it still is — see the Transition Zone below). Everywhere else — the Split Seam, the Predator Ambush Corridor, the general connecting passages — is wet underfoot. Not deep enough to slow anyone down or matter mechanically on its own; just there, cold, and worth describing every time the party crosses it.
+
 ---
 
 ## Subterranean Pressure Track (GM-Facing)

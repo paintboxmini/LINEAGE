@@ -18,7 +18,7 @@ Teach players:
 
 **Reading the ground, before anyone gets close:** Mind (Observe). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
 - *DC 11 (Easy):* The basics — loose soil, exposed roots, and a scatter of small, deliberately round openings along the rim. Burrow entrances, unmistakably dug, not natural cracks.
-- *DC 16+:* Real scale. How far down this actually goes, roughly how many entrances there are, whether anything is currently moving in them. This tier is where the sinkhole stops being a set piece and starts being intelligence.
+- *DC 16+:* Real scale. How far down this actually goes, roughly how many entrances there are, whether anything is currently moving in them. This tier is where the sinkhole stops being a set piece and starts being intelligence. **At this tier, also visible from the rim only — never from inside the tunnels below — a broken stone pillar standing in the center of the pit, sheared off partway up, exactly where the collapse tore through it.** It reads as structural, not natural, if anyone looks twice: too regular, too deliberately placed to be a chance formation. What it actually was, and who built it, is GM knowledge (below) — nothing here confirms that to the party, just that something man-made stood here before the ground gave way.
 
 **Positioning Constraint:** The Backline is uneven and shaky. Moving into or out of the Backline requires a Body check (Easy DC 13):
 - *Success:* Move safely.
@@ -91,6 +91,12 @@ If a player fails the check and gains Exhaust, note it without comment. Let the 
 Eliminate or force retreat of all Borrower Sentries.
 
 The sinkhole entrance is clear. The party can descend.
+
+---
+
+## GM Secret — Not Player-Facing
+
+The broken pillar at the pit's center isn't natural, and it isn't new construction either — it's the Masons' own work, the same underground stabilization effort that built the reinforced Living Chamber behind the Heavy Door deeper in (`quests/hollow-below-briarwatch.md`, Transition Zone). The Western Property sits directly against ground the Masons already tend (their watchtower-and-fence line at Briarwatch's edge, `factions/the-masons.md`, Known Works) — the underground work here was never a separate project, just the same threshold maintenance extended below the surface where it wouldn't be seen. The pillar held for as long as it did. It didn't fail from neglect; the same seepage and pressure buildup already driving the sinkhole (`quests/hollow-below-briarwatch.md`, Causality Chain) is what finally broke it. This is the actual cause the causality chain was always missing a piece of — not just water and limestone, but one piece of deliberate engineering that gave out under exactly the load it was built to resist. The Masons don't know yet. Nobody has told them, and nothing here suggests they're due for a visit soon.
 
 ---
 
