@@ -46,6 +46,20 @@ Same three as Shifting Burrow (`quests/shifting-burrow.md`): BURROW RESHUFFLE, A
 
 ---
 
+## Standing Down — the Peaceful Path
+
+Fighting isn't the only door here, and it shouldn't read as the default one. "They'll decide quickly" (above) cuts both ways — a party that closes the distance calm, unarmed, and unhurried is offering the Sentries the same read a threat would give, just the opposite answer. This is consistent with how the deeper Borrowers are already written (`quests/hollow-below-briarwatch.md`, Factions — sympathetic, distrustful, organized, *not helpless*): the surface guards share that same underlying disposition, just faster to react.
+
+**Reading the room first** (optional, before anyone commits to an approach): Soul (Read), Easy DC 11. Success tells the party plainly what's actually true — the Sentries haven't decided anything yet, hostile or otherwise. It's a held breath, not a trap. This doesn't force the peaceful path; it just tells the party the door is genuinely open if they want it.
+
+**Making the actual approach** — weapons sheathed or never drawn, no fast movement, a clear gesture (words aren't required; these Sentries may not share a language with the party, and shouldn't need to): Soul (Read), Standard DC 13.
+- *Success:* The Sentries stand down. They don't escort or guide, and they don't warm up — but they step back from the well and let the party pass, usually with one final wary gesture that reads as a warning rather than a threat (something in the shape of *don't do anything stupid down there*, however it's mimed). This satisfies the Win Condition below exactly as a fight would.
+- *Failure:* They don't attack outright, but the offer doesn't land either — treat this as the encounter starting as written above (Behavior, Enemy Cards), just without a surprise round either side.
+
+This path was tested live before being written down, not designed cold — a party that read the room correctly, approached without weapons, and made the ask plainly earned exactly this outcome at the table.
+
+---
+
 ## Terrain Interaction
 
 If a player fails the check and the Pressure Track is already at 2 or higher, raise it without comment — let the symptom show up in the next room, not here. Below Pressure 2, a failed check is just a stumble; note it, nothing more.
@@ -56,7 +70,7 @@ If a player fails the check and the Pressure Track is already at 2 or higher, ra
 
 ## Win Condition
 
-Eliminate or force retreat of all Borrower Sentries. The well shaft is clear — the party can descend (or, if this is their exit, surface).
+Eliminate or force retreat of all Borrower Sentries, **or** talk them down (Standing Down, above). Either way the well shaft is clear — the party can descend (or, if this is their exit, surface).
 
 **On the loop:** once a mouth's Sentries are dealt with (killed or driven off) during a delve, that entrance stays clear for the rest of the same trip — they don't restock mid-session. Whether a defeated group is back in force on a later, separate visit is a GM call, same as any other cleared encounter.
 
