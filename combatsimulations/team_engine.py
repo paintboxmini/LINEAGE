@@ -25,7 +25,7 @@ from engine import (roll, RULING, can_attack, _ongoing_support_tick, _object_tic
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
                     _stamp_reveal, _resolve_follow_up, _color_label, _rushdown,
-                    _discard_or_return)
+                    _discard_or_return, _apply_collapse_death_check)
 
 
 class Battle:
@@ -127,22 +127,19 @@ class Battle:
         if not unpreventable and target._damage_floor is not None:
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
+        # HP never goes negative, Collapsed or not (Drew's root-level death-rule
+        # change) — see engine.py's Duel.deal() for the full reasoning. Death is
+        # decided at the attack-resolution call site now, not here.
         pre = target.hp
         was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not was_collapsed:
+        if target.hp < 0:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             _clear_ongoing_on_collapse(target)
             self._say(f"    {target.name} COLLAPSES")
             _leave_wheel(self, self.queue, target)
-        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
-            # Only reachable already-Collapsed — a standing combatant is
-            # protected from dying on the hit that drops them. Permanent —
-            # heal() refuses to revive a dead combatant.
-            target.is_dead = True
-            self._say(f"    {target.name} DIES")
         return amount
 
     def heal(self, target, amount, source=None):
@@ -156,6 +153,7 @@ class Battle:
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
+            target._hits_while_collapsed = 0   # a fresh 2-hit cycle next time they go down
             # Revived one slot after whoever healed them, not straight into the
             # live rotation — the marker has to complete a full lap before it
             # reaches them again (Drew: they shouldn't get to act until it does).
@@ -389,10 +387,12 @@ class Battle:
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
+        was_collapsed_before = defender.collapsed
         dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
         if dealt > 0:
             defender._last_attacked_by = attacker
+        _apply_collapse_death_check(defender, dealt, was_collapsed_before)
         if defender.thorns > 0 and card.reach == 'melee':
             self.deal(attacker, defender.thorns, unpreventable=True)
         card.effect(self, attacker, defender)

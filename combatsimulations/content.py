@@ -49,7 +49,7 @@ def _same_as_discard_top(target):
 # ============================ FROST ==========================================
 
 def _burn_bright_dmg(engine, me, foe):
-    base = me.body + roll(6, engine.rng)
+    base = me.body + roll(8, engine.rng)
     if me.hand:  # exile 1 from hand for +2 this attack
         me.exile.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
         base += 2
@@ -62,7 +62,7 @@ def _burn_bright_defense(engine, me, foe):
 
 
 def _fracture_dmg(engine, me, foe):
-    return me.eff('mind') + roll(4, engine.rng)
+    return me.eff('mind') + roll(6, engine.rng)
 
 
 def _fracture_effect(engine, me, foe):
@@ -79,8 +79,8 @@ def _fracture_effect(engine, me, foe):
 
 def _trace_dmg(engine, me, foe):
     if _same_as_discard_top(foe):
-        return me.eff('mind') + max(roll(4, engine.rng), roll(4, engine.rng))   # Deadly, this roll only
-    return me.eff('mind') + roll(4, engine.rng)
+        return me.eff('mind') + max(roll(6, engine.rng), roll(6, engine.rng))   # Deadly, this roll only
+    return me.eff('mind') + roll(6, engine.rng)
 
 
 def _trace_defense(engine, me, foe):
@@ -92,7 +92,7 @@ def _twin_strike_dmg(engine, me, foe):
     RULING("twin-strike-double-roll",
            "TWIN STRIKE '(Soul + d2) x2' is read as two independent (Soul + d2) "
            "instances summed, not one roll doubled.")
-    return (me.soul + roll(2, engine.rng)) + (me.soul + roll(2, engine.rng))
+    return (me.soul + roll(4, engine.rng)) + (me.soul + roll(4, engine.rng))
 
 
 def _axiom_effect(engine, me, foe):
@@ -108,7 +108,7 @@ def _sacrifice_strike_effect(engine, me, foe):
 
 def _sacrifice_strike_defense(engine, me, foe):
     engine.deal(me, 5, unpreventable=True)
-    engine.deal(foe, me.eff('body') + roll(10, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back
+    engine.deal(foe, me.eff('body') + roll(10, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back (SACRIFICE STRIKE, base die capped at d10)
 
 
 def _blood_in_the_gap_effect(engine, me, foe):
@@ -132,7 +132,7 @@ def _deflect_defense(engine, me, foe):
     # clean-win signal REFRACT/FORGET already use.
     if getattr(foe, '_redirect_dmg', None) is None:
         return
-    engine.deal(foe, me.mind + roll(4, engine.rng), unpreventable=True)  # counter, no new RPS
+    engine.deal(foe, me.mind + roll(6, engine.rng), unpreventable=True)  # counter, no new RPS
 
 
 def _realignment_effect(engine, me, foe):
@@ -193,18 +193,18 @@ def _blood_tithe_defense(engine, me, foe):
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
-    die = roll(4, engine.rng)          # the DIE result explodes, not the total
+    die = roll(6, engine.rng)          # the DIE result explodes, not the total
     total = me.body + die
     rerolls = 0
     while rerolls < 3 and die % 2 == 1:
-        die = roll(4, engine.rng)
+        die = roll(6, engine.rng)
         total += die
         rerolls += 1
     return total
 
 
 def _gamblers_ruin_defense(engine, me, foe):
-    me.next_attack_bonus += roll(4, engine.rng)
+    me.next_attack_bonus += roll(6, engine.rng)
 
 
 def _repel_effect(engine, me, foe):
@@ -347,7 +347,7 @@ def _rend_defense(engine, me, foe):
 
 
 def _press_the_injury_dmg(engine, me, foe):
-    return me.eff('body') + roll(4, engine.rng) + 2 * foe.injuries_visible()
+    return me.eff('body') + roll(6, engine.rng) + 2 * foe.injuries_visible()
 
 
 def _press_the_injury_defense(engine, me, foe):
@@ -522,7 +522,7 @@ def _break_defense(engine, me, foe):
     # Only on a clean win, never a tie (same `_redirect_dmg` signal pattern).
     if getattr(foe, '_redirect_dmg', None) is None:
         return
-    engine.deal(foe, me.eff('body') + roll(4, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back
+    engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)   # Counter Attack: this card's own damage back
 
 def _charge_move(engine, me, foe):
     me.position = 'frontline'
@@ -728,7 +728,7 @@ def _dead_reckoning_defense(engine, me, foe):
 
 def _patience_dmg(engine, me, foe):
     bonus = 0 if getattr(me, '_attacked_last', False) else 4   # +4 if you waited
-    return me.eff('soul') + roll(4, engine.rng) + bonus
+    return me.eff('soul') + roll(6, engine.rng) + bonus
 def _patience_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
@@ -756,8 +756,8 @@ def _understanding_dmg(engine, me, foe):
     # at the top of attack()), so any index here is a genuinely different card
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
-        return me.eff('mind') + max(roll(6, engine.rng), roll(6, engine.rng))   # Deadly, this roll only
-    return me.eff('mind') + roll(6, engine.rng)
+        return me.eff('mind') + max(roll(8, engine.rng), roll(8, engine.rng))   # Deadly, this roll only
+    return me.eff('mind') + roll(8, engine.rng)
 def _understanding_defense(engine, me, foe):
     engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
 
@@ -966,7 +966,7 @@ def _level_the_field_defense(engine, me, foe):
 # what's being doubled is small on its own; the whole payoff lives in the
 # multiplier, not a separately-large base too.
 def _exposed_damage(engine, me, foe):
-    base = me.eff('mind') + _rolled_die(2, engine.rng, me)
+    base = me.eff('mind') + _rolled_die(4, engine.rng, me)
     if foe.staggered:
         base *= 2
     return base
@@ -1034,7 +1034,7 @@ def _consume_effect(engine, me, foe):
     _consume_destroy(engine, me, foe)
 
 def _consume_defense(engine, me, foe):
-    dmg = me.eff('soul') + roll(4, engine.rng)
+    dmg = me.eff('soul') + roll(6, engine.rng)
     engine.deal(foe, dmg, unpreventable=True)
     engine.heal(me, dmg)            # Lifesteal off this counter-hit
     _consume_destroy(engine, me, foe)
@@ -1087,9 +1087,9 @@ def _follow_up_damage(engine, me, foe):
 def _afterimage_damage(engine, me, foe):
     color = engine._prior_turn_hit.get('color')
     if color is None:
-        return roll(4, engine.rng)
+        return roll(6, engine.rng)
     stat = COLOR_TO_STAT[color]
-    return me.eff(stat) + roll(4, engine.rng)
+    return me.eff(stat) + roll(6, engine.rng)
 
 def _afterimage_effect(engine, me, foe):
     foe.blind += 1
@@ -1251,7 +1251,7 @@ def _drag_effect(engine, me, foe):
     if foe.position != 'frontline':
         foe.position = 'frontline'
 def _drag_damage(engine, me, foe):
-    base = me.eff('body') + _rolled_die(4, engine.rng, me)
+    base = me.eff('body') + _rolled_die(6, engine.rng, me)
     if foe.position == 'frontline':
         base += 2
     return base
@@ -1278,7 +1278,7 @@ def _dark_corridor_defense(engine, me, foe):
     me.resist += 1
 
 def _coil_latch_damage(engine, me, foe):
-    base = me.eff('body') + _rolled_die(4, engine.rng, me)
+    base = me.eff('body') + _rolled_die(6, engine.rng, me)
     if foe._repositioned_since_last_turn:
         base += 2
     return base
@@ -1289,7 +1289,7 @@ def _still_ground_effect(engine, me, foe):
     if foe._repositioned_since_last_turn:
         engine.scry(me, me, 1)
 def _still_ground_damage(engine, me, foe):
-    base = me.eff('mind') + _rolled_die(2, engine.rng, me)
+    base = me.eff('mind') + _rolled_die(4, engine.rng, me)
     if foe._repositioned_since_last_turn:
         base += 1
     return base
@@ -1316,7 +1316,7 @@ def _push_defense(engine, me, foe):
 # `_repositioned_since_last_turn` tracker as RHYTHM BREAK, just checking
 # yourself instead of the target.
 def _rollout_damage(engine, me, foe):
-    base = me.eff('body') + roll(2, engine.rng)
+    base = me.eff('body') + roll(4, engine.rng)
     if not me._repositioned_since_last_turn:
         base += 4
     return base
@@ -1330,13 +1330,13 @@ def _rollout_defense(engine, me, foe):
 def _seismic_redirect_effect(engine, me, foe):
     _rushdown(me, foe)
 def _seismic_redirect_defense(engine, me, foe):
-    engine.deal(foe, me.eff('body') + roll(4, engine.rng), unpreventable=True)
+    engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
 
-# GORE (Minotaur) — unchanged.
+# GORE (Minotaur) — base die bumped along with everything else.
 def _gore_damage(engine, me, foe):
-    base = me.eff('body') + roll(6, engine.rng)
+    base = me.eff('body') + roll(8, engine.rng)
     if foe.position == 'frontline':
-        base += roll(4, engine.rng)
+        base += roll(6, engine.rng)
     return base
 def _gore_defense(engine, me, foe):
     foe.rooted = True
@@ -1364,169 +1364,169 @@ def build_cards():
     # Frost — Red
     add("SACRIFICE STRIKE", 'R', 'body', 'melee', 10,
         effect=_sacrifice_strike_effect, defense=_sacrifice_strike_defense)
-    add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 2,
+    add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 4,
         effect=_blood_in_the_gap_effect, defense=_blood_in_the_gap_defense)
-    add("BURN BRIGHT", 'R', 'body', 'ranged', 6, damage=_burn_bright_dmg, defense=_burn_bright_defense)
-    add("SPARK OF VIOLENCE", 'R', 'body', 'both', 4,
+    add("BURN BRIGHT", 'R', 'body', 'ranged', 8, damage=_burn_bright_dmg, defense=_burn_bright_defense)
+    add("SPARK OF VIOLENCE", 'R', 'body', 'both', 6,
         effect=_spark_effect, defense=_spark_effect)
     # Frost — Blue
-    add("AXIOM", 'B', 'mind', 'both', 2, effect=_axiom_effect, defense=_axiom_defense)
-    add("DEFLECT", 'B', 'mind', 'melee', 4,
+    add("AXIOM", 'B', 'mind', 'both', 4, effect=_axiom_effect, defense=_axiom_defense)
+    add("DEFLECT", 'B', 'mind', 'melee', 6,
         effect=_deflect_effect, defense=_deflect_defense)
-    add("REALIGNMENT", 'B', 'mind', 'both', 4, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
-    add("CLIMB", 'B', 'mind', 'both', 4, effect=_climb_effect, defense=_climb_defense)
-    add("FRACTURE", 'B', 'mind', 'ranged', 4, damage=_fracture_dmg, effect=_fracture_effect)
-    add("TRACE", 'B', 'mind', 'ranged', 4, damage=_trace_dmg, defense=_trace_defense)
+    add("REALIGNMENT", 'B', 'mind', 'both', 6, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
+    add("CLIMB", 'B', 'mind', 'both', 6, effect=_climb_effect, defense=_climb_defense)
+    add("FRACTURE", 'B', 'mind', 'ranged', 6, damage=_fracture_dmg, effect=_fracture_effect)
+    add("TRACE", 'B', 'mind', 'ranged', 6, damage=_trace_dmg, defense=_trace_defense)
     # Frost — Green
     add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
         defense=_twin_strike_defense)
 
     # Steele — Red
-    add("BLOOD TITHE", 'R', 'body', 'both', 4,
+    add("BLOOD TITHE", 'R', 'body', 'both', 6,
         effect=_blood_tithe_effect, defense=_blood_tithe_defense)
-    add("BRACE", 'R', 'body', 'melee', 2, effect=_brace_effect, defense=_brace_defense)
+    add("BRACE", 'R', 'body', 'melee', 4, effect=_brace_effect, defense=_brace_defense)
     add("GAMBLER'S RUIN", 'R', 'body', 'melee', None,
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
-    add("REPEL", 'R', 'body', 'melee', 2,
+    add("REPEL", 'R', 'body', 'melee', 4,
         effect=_repel_effect, defense=_repel_effect)
-    add("PAIN IS FUEL", 'R', 'body', 'both', 4,   # d6 -> d4 rebalance
+    add("PAIN IS FUEL", 'R', 'body', 'both', 6,   # d6 -> d4 rebalance
         effect=_pain_is_fuel_effect, defense=_pain_is_fuel_defense)
     # Steele — Blue
-    add("FORGET", 'B', 'mind', 'ranged', 2,
+    add("FORGET", 'B', 'mind', 'ranged', 4,
         effect=_forget_effect, defense=_forget_defense)
-    add("PARADOX", 'B', 'mind', 'both', 4,
+    add("PARADOX", 'B', 'mind', 'both', 6,
         effect=_paradox_effect, defense=_paradox_defense, special_reveal='paradox')
-    add("ALIGN", 'B', 'mind', 'ranged', 4,
+    add("ALIGN", 'B', 'mind', 'ranged', 6,
         effect=_align_effect, defense=_align_defense)
-    add("ANTICIPATE", 'B', 'mind', 'melee', 4, effect=_anticipate_effect, defense=_anticipate_defense)
+    add("ANTICIPATE", 'B', 'mind', 'melee', 6, effect=_anticipate_effect, defense=_anticipate_defense)
     # Steele — Green
-    add("RENEWAL", 'G', 'soul', 'both', 2,
+    add("RENEWAL", 'G', 'soul', 'both', 4,
         effect=_renewal_effect, defense=_renewal_defense)
 
     # Mire — Green
-    add("BALANCE", 'G', 'soul', 'ranged', 2,
+    add("BALANCE", 'G', 'soul', 'ranged', 4,
         effect=_balance_effect, defense=_balance_defense)
-    add("WITHER", 'G', 'soul', 'both', 4,
+    add("WITHER", 'G', 'soul', 'both', 6,
         effect=_wither_effect, defense=_wither_effect)
-    add("MOCKERY", 'G', 'soul', 'both', 4,
+    add("MOCKERY", 'G', 'soul', 'both', 6,
         effect=_mockery_effect, defense=_mockery_defense)
     # Mire — Red
-    add("REND", 'R', 'body', 'melee', 4,
+    add("REND", 'R', 'body', 'melee', 6,
         effect=_rend_effect, defense=_rend_defense)
-    add("EQUAL FOOTING", 'R', 'body', 'both', 2)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
-    add("PRESS THE INJURY", 'R', 'body', 'melee', 4,
+    add("EQUAL FOOTING", 'R', 'body', 'both', 4)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
+    add("PRESS THE INJURY", 'R', 'body', 'melee', 6,
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
-    add("DIG IN", 'R', 'body', 'melee', 2, effect=_dig_in_effect, defense=_dig_in_defense)
+    add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
     # Mire — Blue
-    add("PARTITION", 'B', 'mind', 'both', 2,
+    add("PARTITION", 'B', 'mind', 'both', 4,
         effect=_partition_effect, defense=_partition_defense)
-    add("UNNAME", 'B', 'mind', 'both', 2, effect=_unname_effect, defense=_unname_defense)
-    add("SLIPSTREAM", 'B', 'mind', 'both', 2, effect=_slipstream_effect, defense=_slipstream_defense)
-    add("TAINT", 'B', 'mind', 'ranged', 2,
+    add("UNNAME", 'B', 'mind', 'both', 4, effect=_unname_effect, defense=_unname_defense)
+    add("SLIPSTREAM", 'B', 'mind', 'both', 4, effect=_slipstream_effect, defense=_slipstream_defense)
+    add("TAINT", 'B', 'mind', 'ranged', 4,
         effect=_taint_effect, defense=_taint_defense)
-    add("ERODE", 'B', 'mind', 'both', 4,
+    add("ERODE", 'B', 'mind', 'both', 6,
         effect=_erode_effect, defense=_erode_effect)
 
     # Green support kit (team play)
-    add("RESONATE", 'G', 'soul', 'ranged', 4,
+    add("RESONATE", 'G', 'soul', 'ranged', 6,
         effect=_resonate_effect, defense=_resonate_defense)
-    add("SUPPORT", 'G', 'soul', 'ranged', 4,
+    add("SUPPORT", 'G', 'soul', 'ranged', 6,
         effect=_support_effect, defense=_support_defense)
-    add("WITNESS", 'G', 'soul', 'melee', 2,
+    add("WITNESS", 'G', 'soul', 'melee', 4,
         effect=_witness_effect, defense=_witness_defense)
-    add("SHARED BURDEN", 'G', 'soul', 'both', 6,
+    add("SHARED BURDEN", 'G', 'soul', 'both', 8,
         effect=_shared_burden_effect, defense=_shared_burden_defense)
 
     # --- Expanded set: Red ---
-    add("STRIKE", 'R', 'body', 'melee', 8, defense=_strike_defense)
-    add("GUARD", 'R', 'body', 'melee', 2, effect=_guard_effect, defense=_guard_defense)
-    add("INTERCEPT", 'R', 'body', 'melee', 2,
+    add("STRIKE", 'R', 'body', 'melee', 10, defense=_strike_defense)
+    add("GUARD", 'R', 'body', 'melee', 4, effect=_guard_effect, defense=_guard_defense)
+    add("INTERCEPT", 'R', 'body', 'melee', 4,
         effect=_intercept_effect, defense=_intercept_defense)
-    add("RALLY", 'R', 'body', 'both', 2, effect=_rally_effect, defense=_rally_defense)
-    add("TRAMPLE", 'R', 'body', 'melee', 4,
+    add("RALLY", 'R', 'body', 'both', 4, effect=_rally_effect, defense=_rally_defense)
+    add("TRAMPLE", 'R', 'body', 'melee', 6,
         effect=_trample_effect, defense=_trample_defense)
-    add("BREAK", 'R', 'body', 'melee', 4, defense=_break_defense)
-    add("CHARGE", 'R', 'body', 'both', 4, effect=_charge_move, defense=_charge_move)
+    add("BREAK", 'R', 'body', 'melee', 6, defense=_break_defense)
+    add("CHARGE", 'R', 'body', 'both', 6, effect=_charge_move, defense=_charge_move)
     # --- Expanded set: Blue ---
-    add("INTERRUPT", 'B', 'mind', 'both', 2,
+    add("INTERRUPT", 'B', 'mind', 'both', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
-    add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
-    add("CHAIN", 'B', 'mind', 'both', 2, effect=_chain_effect, defense=_chain_defense)
-    add("CALCULATE", 'B', 'mind', 'ranged', 4,
+    add("SHARPEN", 'B', 'mind', 'both', 6, effect=_sharpen_effect, defense=_sharpen_defense)
+    add("CHAIN", 'B', 'mind', 'both', 4, effect=_chain_effect, defense=_chain_defense)
+    add("CALCULATE", 'B', 'mind', 'ranged', 6,
         effect=_calculate_effect, defense=_calculate_defense)
-    add("STUDY", 'B', 'mind', 'ranged', 6, effect=_study_effect, defense=_study_defense)
-    add("PROFILE", 'B', 'mind', 'both', 4, effect=_profile_effect, defense=_profile_defense)
-    add("REFRACT", 'B', 'mind', 'ranged', 4,
+    add("STUDY", 'B', 'mind', 'ranged', 8, effect=_study_effect, defense=_study_defense)
+    add("PROFILE", 'B', 'mind', 'both', 6, effect=_profile_effect, defense=_profile_defense)
+    add("REFRACT", 'B', 'mind', 'ranged', 6,
         effect=_refract_effect, defense=_refract_defense)
     # --- Expanded set: Green ---
-    add("SYNCHRONY", 'G', 'soul', 'both', 2,
+    add("SYNCHRONY", 'G', 'soul', 'both', 4,
         effect=_synchrony_effect, defense=_synchrony_defense)
-    add("ROOTED OATH", 'G', 'soul', 'both', 4,
+    add("ROOTED OATH", 'G', 'soul', 'both', 6,
         effect=_rooted_oath_effect, defense=_rooted_oath_defense)
-    add("URGENCY", 'G', 'soul', 'melee', 4,
+    add("URGENCY", 'G', 'soul', 'melee', 6,
         effect=_urgency_effect, defense=_urgency_defense)
-    add("DELAY", 'G', 'soul', 'both', 6, effect=_delay_effect, defense=_delay_defense)
-    add("COMMUNION", 'G', 'soul', 'both', 4,
+    add("DELAY", 'G', 'soul', 'both', 8, effect=_delay_effect, defense=_delay_defense)
+    add("COMMUNION", 'G', 'soul', 'both', 6,
         effect=_communion_effect, defense=_communion_defense)
-    add("MIRROR STEP", 'G', 'soul', 'both', 4, effect=_mirror_step_effect)
+    add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect)
     add("PATIENCE", 'G', 'soul', 'melee', None,
         damage=_patience_dmg, defense=_patience_defense)
 
     # Missing simple core cards (Patient Host deck-fill)
-    add("STILLNESS", 'B', 'mind', 'ranged', 4,
+    add("STILLNESS", 'B', 'mind', 'ranged', 6,
         effect=_stillness_effect, defense=_stillness_defense)
-    add("PREDICT", 'B', 'mind', 'melee', 6)   # Sealed unmodeled — no item-usage mechanic exists in the sim
-    add("FOCUS", 'B', 'mind', 'both', 4, effect=_focus_effect, defense=_focus_defense)
-    add("UNDERSTANDING", 'B', 'mind', 'both', 6,
+    add("PREDICT", 'B', 'mind', 'melee', 8)   # Sealed unmodeled — no item-usage mechanic exists in the sim
+    add("FOCUS", 'B', 'mind', 'both', 6, effect=_focus_effect, defense=_focus_defense)
+    add("UNDERSTANDING", 'B', 'mind', 'both', 8,
         damage=_understanding_dmg, defense=_understanding_defense)
-    add("ENDURE", 'R', 'body', 'both', 2, effect=_endure_effect, defense=_endure_defense)
-    add("WEATHERED", 'R', 'body', 'both', 4, effect=_weathered_effect, defense=_weathered_defense)
-    add("STARING CONTEST", 'R', 'body', 'both', 2,
+    add("ENDURE", 'R', 'body', 'both', 4, effect=_endure_effect, defense=_endure_defense)
+    add("WEATHERED", 'R', 'body', 'both', 6, effect=_weathered_effect, defense=_weathered_defense)
+    add("STARING CONTEST", 'R', 'body', 'both', 4,
         effect=_staring_contest_effect, defense=_staring_contest_defense)
-    add("WAITING GAME", 'R', 'body', 'both', 2,
+    add("WAITING GAME", 'R', 'body', 'both', 4,
         effect=_waiting_game_effect, defense=_waiting_game_defense)
     add("AFTERIMAGE", None, None, 'both', None,
         damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
         special_reveal='mirror_color')
-    add("DRAIN", 'R', 'body', 'both', 2, effect=_drain_effect, defense=_drain_defense)
-    add("CONSUME", 'G', 'soul', 'both', 4, effect=_consume_effect, defense=_consume_defense)
+    add("DRAIN", 'R', 'body', 'both', 4, effect=_drain_effect, defense=_drain_defense)
+    add("CONSUME", 'G', 'soul', 'both', 6, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
-    add("SEED", 'G', 'soul', 'both', 4, effect=_seed_effect, defense=_seed_defense)
-    add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 4,
+    add("SEED", 'G', 'soul', 'both', 6, effect=_seed_effect, defense=_seed_defense)
+    add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 6,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
-    add("OVERCOMMIT", 'R', 'body', 'both', 4,
+    add("OVERCOMMIT", 'R', 'body', 'both', 6,
         effect=_overcommit_effect, defense=_overcommit_defense)
     # Bestiary promotions
-    add("CERTAIN CONTACT", 'R', 'body', 'melee', 6,
+    add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
-    add("HEAVE AND HAUL", 'G', 'soul', 'both', 4,
+    add("HEAVE AND HAUL", 'G', 'soul', 'both', 6,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
-    add("RHYTHM BREAK", 'R', 'body', 'melee', 6,
+    add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         effect=_rhythm_break_effect, defense=_rhythm_break_defense)
-    add("IRON GRIP", 'R', 'body', 'melee', 6,
+    add("IRON GRIP", 'R', 'body', 'melee', 8,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
-    add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
+    add("PATIENCE OF STONE", 'G', 'soul', 'melee', 6,
         effect=_patience_of_stone_effect, defense=_patience_of_stone_defense)
     add("DRAG", 'R', 'body', 'both', None,
         effect=_drag_effect, damage=_drag_damage, defense=_drag_defense)
-    add("VIBRATION LOCK", 'B', 'mind', 'both', 2,
+    add("VIBRATION LOCK", 'B', 'mind', 'both', 4,
         effect=_vibration_lock_effect, defense=_vibration_lock_defense)
-    add("SHED SKIN", 'G', 'soul', 'both', 2,
+    add("SHED SKIN", 'G', 'soul', 'both', 4,
         effect=_shed_skin_effect, defense=_shed_skin_defense)
-    add("DARK CORRIDOR", 'G', 'soul', 'melee', 4,
+    add("DARK CORRIDOR", 'G', 'soul', 'melee', 6,
         effect=_dark_corridor_effect, defense=_dark_corridor_defense)
     add("COIL LATCH", 'R', 'body', 'melee', None,
         damage=_coil_latch_damage, defense=_coil_latch_defense)
     add("STILL GROUND", 'B', 'mind', 'both', None,
         effect=_still_ground_effect, damage=_still_ground_damage, defense=_still_ground_defense)
-    add("PULL", 'R', 'body', 'both', 4, effect=_pull_effect, defense=_pull_defense)
-    add("PUSH", 'R', 'body', 'melee', 4, effect=_push_effect, defense=_push_defense)
-    add("ROLLOUT", 'R', 'body', 'melee', 2,
+    add("PULL", 'R', 'body', 'both', 6, effect=_pull_effect, defense=_pull_defense)
+    add("PUSH", 'R', 'body', 'melee', 6, effect=_push_effect, defense=_push_defense)
+    add("ROLLOUT", 'R', 'body', 'melee', 4,
         damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
-    add("SEISMIC REDIRECT", 'R', 'body', 'both', 4,
+    add("SEISMIC REDIRECT", 'R', 'body', 'both', 6,
         effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)
-    add("GORE", 'R', 'body', 'melee', 6, damage=_gore_damage, defense=_gore_defense)
+    add("GORE", 'R', 'body', 'melee', 8, damage=_gore_damage, defense=_gore_defense)
     # FRAME-TRAP: the auto-win-and-negate-defense special case lives in
     # attack() (both engines, checked by card.name), and the tie-win lives
     # in rps() (also by name) -- nothing for content.py to register beyond
@@ -1534,63 +1534,63 @@ def build_cards():
     # (which structurally already means the attacker's Effect never fires
     # on that tie, since a won tie IS a clean defender win) are both fully
     # satisfied with no functions of their own.
-    add("FRAME-TRAP", 'B', 'mind', 'both', 2)
+    add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
-    add("UNMAKE", 'B', 'mind', 'both', 2, effect=_unmake_effect, defense=_unmake_defense)
-    add("BARRIER", 'B', 'mind', 'both', 2, effect=_barrier_effect, defense=_barrier_defense)
-    add("LAST RESORT", 'B', 'mind', 'both', 4,
+    add("UNMAKE", 'B', 'mind', 'both', 4, effect=_unmake_effect, defense=_unmake_defense)
+    add("BARRIER", 'B', 'mind', 'both', 4, effect=_barrier_effect, defense=_barrier_defense)
+    add("LAST RESORT", 'B', 'mind', 'both', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
-    add("SMOKE SCREEN", 'G', 'soul', 'melee', 2,
+    add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
-    add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
+    add("LEVEL THE FIELD", 'G', 'soul', 'both', 6,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
-    add("GENETIC SAMPLE", 'B', 'mind', 'both', 4,
+    add("GENETIC SAMPLE", 'B', 'mind', 'both', 6,
         effect=_genetic_sample_effect, defense=_genetic_sample_defense)
-    add("ADAPTIVE BITE", 'R', 'body', 'melee', 6,
+    add("ADAPTIVE BITE", 'R', 'body', 'melee', 8,
         effect=_adaptive_bite_effect, defense=_adaptive_bite_defense)
-    add("DISSOLVE AND KEEP", 'G', 'soul', 'both', 4,
+    add("DISSOLVE AND KEEP", 'G', 'soul', 'both', 6,
         effect=_dissolve_and_keep_effect, defense=_dissolve_and_keep_defense)
     # Mason Glyphs / Objects
-    add("MENDING GLYPH", 'G', 'soul', 'both', 4,
+    add("MENDING GLYPH", 'G', 'soul', 'both', 6,
         effect=_mending_glyph_effect, defense=_mending_glyph_defense)
-    add("HONING GLYPH", 'R', 'body', 'both', 4,
+    add("HONING GLYPH", 'R', 'body', 'both', 6,
         effect=_honing_glyph_effect, defense=_honing_glyph_defense)
-    add("BARBED GLYPH", 'R', 'body', 'both', 4,
+    add("BARBED GLYPH", 'R', 'body', 'both', 6,
         effect=_barbed_glyph_effect, defense=_barbed_glyph_defense)
-    add("CIPHER GLYPH", 'B', 'mind', 'both', 4,
+    add("CIPHER GLYPH", 'B', 'mind', 'both', 6,
         effect=_cipher_glyph_effect, defense=_cipher_glyph_defense)
-    add("WITHERING GLYPH", 'G', 'soul', 'both', 4,
+    add("WITHERING GLYPH", 'G', 'soul', 'both', 6,
         effect=_withering_glyph_effect, defense=_withering_glyph_defense)
-    add("MIRING GLYPH", 'B', 'mind', 'both', 4,
+    add("MIRING GLYPH", 'B', 'mind', 'both', 6,
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
-    add("RECOVER", 'R', 'body', 'both', 2, effect=_recover_effect, defense=_recover_defense)
-    add("FLOW", 'G', 'soul', 'melee', 4, effect=_flow_effect, defense=_flow_defense)
-    add("ADAPT", 'G', 'soul', 'both', 6, defense=_adapt_defense)
-    add("VOID", 'G', 'soul', 'melee', 4, defense=_void_defense)
-    add("ACCEPTANCE", 'G', 'soul', 'both', 4, effect=_acceptance_effect, defense=_acceptance_defense)
-    add("SHADE AWAY", 'G', 'soul', 'melee', 2,
+    add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
+    add("FLOW", 'G', 'soul', 'melee', 6, effect=_flow_effect, defense=_flow_defense)
+    add("ADAPT", 'G', 'soul', 'both', 8, defense=_adapt_defense)
+    add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
+    add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
+    add("SHADE AWAY", 'G', 'soul', 'melee', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
-    add("DEAD RECKONING", 'G', 'soul', 'both', 4,
+    add("DEAD RECKONING", 'G', 'soul', 'both', 6,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
-    add("RETALIATE", 'R', 'body', 'both', 4,
+    add("RETALIATE", 'R', 'body', 'both', 6,
         effect=_retaliate_effect, defense=_retaliate_defense)
-    add("WARSONG", 'G', 'soul', 'both', 4,
+    add("WARSONG", 'G', 'soul', 'both', 6,
         effect=_warsong_effect, defense=_warsong_defense)
-    add("REBUTTAL", 'B', 'mind', 'ranged', 4,
+    add("REBUTTAL", 'B', 'mind', 'ranged', 6,
         effect=_rebuttal_effect, defense=_rebuttal_defense)
-    add("FIELD MEDICINE", 'G', 'soul', 'ranged', 2,
+    add("FIELD MEDICINE", 'G', 'soul', 'ranged', 4,
         effect=_field_medicine_effect, defense=_field_medicine_defense)
 
     # The Patient Host — boss signature cards
-    add("YOUR TURN WILL COME", 'G', 'soul', 'ranged', 4,
+    add("YOUR TURN WILL COME", 'G', 'soul', 'ranged', 6,
         effect=_your_turn_will_come_effect, defense=_your_turn_will_come_defense)
-    add("REGISTERED", 'B', 'mind', 'both', 4,
+    add("REGISTERED", 'B', 'mind', 'both', 6,
         effect=_registered_effect, defense=_registered_defense)
-    add("NO VACANCY", 'R', 'body', 'melee', 6,
+    add("NO VACANCY", 'R', 'body', 'melee', 8,
         effect=_no_vacancy_effect, defense=_no_vacancy_defense)
-    add("THE LEDGER NEVER CLOSES", 'G', 'soul', 'both', 4,
+    add("THE LEDGER NEVER CLOSES", 'G', 'soul', 'both', 6,
         effect=_ledger_effect, defense=_ledger_defense)
-    add("YOU'RE NEXT", 'G', 'soul', 'both', 4,
+    add("YOU'RE NEXT", 'G', 'soul', 'both', 6,
         effect=_youre_next_effect, defense=_youre_next_defense)
 
     # Status card

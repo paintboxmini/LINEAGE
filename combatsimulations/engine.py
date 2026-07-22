@@ -38,23 +38,26 @@ def roll(die, rng):
 
 def _rolled_die(die, rng, me):
     """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
-    each stack adds (Deadly) or subtracts (Weak) a flat d4 from this one
+    each stack adds (Deadly) or subtracts (Weak) a flat d6 from this one
     future damage roll, then consumes one stack. Flat, not proportional to
     the base die, on purpose — the old "roll twice, take higher/lower"
-    version scaled with base die size (worth +0.25 on a d2, +1.65 on a
-    d10), quietly favoring whichever color rolls the bigger dice regardless
-    of who actually holds the stack. Deadly takes priority if both are
-    somehow held at once (not a ruled case, just a defensible tie-break).
-    Custom `_damage` functions (exploding dice, multi-hit cards) roll their
-    own way and are NOT wrapped here — applying this generically to an
-    arbitrary custom function risks doubling unrelated side effects, not
-    just the die."""
+    version scaled with base die size, quietly favoring whichever color
+    rolls the bigger dice regardless of who actually holds the stack.
+    Deadly takes priority if both are somehow held at once (not a ruled
+    case, just a defensible tie-break). Bonus die bumped d4->d6 alongside
+    the global base-die step-up (Drew: "deadly can be add 1d6") — Weak
+    moved with it for the same reason the two were made symmetric in the
+    first place (flagged, not separately confirmed, but leaving them
+    asymmetric would be a real, unstated inconsistency). Custom `_damage`
+    functions (exploding dice, multi-hit cards) roll their own way and are
+    NOT wrapped here — applying this generically to an arbitrary custom
+    function risks doubling unrelated side effects, not just the die."""
     if me.deadly > 0:
         me.deadly -= 1
-        return roll(die, rng) + roll(4, rng)
+        return roll(die, rng) + roll(6, rng)
     if me.weak > 0:
         me.weak -= 1
-        return roll(die, rng) - roll(4, rng)
+        return roll(die, rng) - roll(6, rng)
     return roll(die, rng)
 
 
@@ -139,6 +142,27 @@ def _clear_ongoing_on_collapse(target):
     Collapse became possible: without this, a revived combatant's old
     "ends if you collapse" effects would silently resume."""
     target.ongoing = [o for o in target.ongoing if o['kind'] not in _ENDS_ON_COLLAPSE]
+
+
+def _apply_collapse_death_check(target, dealt, was_collapsed_before):
+    """Death rule (Drew, big root change): only relevant if this hit landed on
+    someone who was ALREADY Collapsed before it — the hit that causes the
+    initial collapse is free, never counted here (shared by both engines'
+    genuine-attack resolution, called with the pre-hit collapsed state).
+    From 0 HP, killing now takes 2 genuine attack hits, UNLESS the first of
+    those two alone deals damage >= max HP, which is an instant kill on its
+    own. Deliberately not called for Unpreventable/Thorns/status damage —
+    only real attack hits reach this, which is the actual mechanism behind
+    "this weakens unpreventable damage slightly" (Drew): those sources can
+    still hurt a Collapsed character, they just can't kill them anymore."""
+    if not was_collapsed_before or target.is_dead or dealt <= 0:
+        return
+    if target._hits_while_collapsed == 0 and dealt >= target.max_hp:
+        target.is_dead = True
+        return
+    target._hits_while_collapsed += 1
+    if target._hits_while_collapsed >= 2:
+        target.is_dead = True
 
 
 def _ongoing_support_tick(engine, who):
@@ -468,9 +492,9 @@ class Combatant:
         # from Body and cut its damage+HP double-dip. Crossover at Body 3.
         self.hp_per_body = 2
         # Bosses may go bespoke on HP (CLAUDE.md, Stat Blocks) — pass `hp=` to
-        # override the formula baseline; the formula is still what death_floor()
-        # and Body-adjust deltas key off internally, this only overrides the
-        # starting/max number itself.
+        # override the formula baseline; the formula is still what the
+        # one-shot-from-max-HP death check and Body-adjust deltas key off
+        # internally, this only overrides the starting/max number itself.
         self.max_hp = hp if hp is not None else self.hp_per_body * body + 9
         self.hp = self.max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
@@ -513,7 +537,20 @@ class Combatant:
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
         self.collapsed = False
-        self.is_dead = False             # crossed death_floor while Collapsed — permanent
+        self.is_dead = False             # took a 2nd qualifying hit while Collapsed
+                                          # (or one huge enough to skip the count) — permanent
+        self._hits_while_collapsed = 0   # Death rule (Drew, big root change): the hit that
+                                          # collapses you is free; from 0 HP it then takes 2
+                                          # genuine attack hits to actually kill, UNLESS the
+                                          # first of those two alone deals >= max HP damage,
+                                          # which kills outright on its own. Reset on revival
+                                          # (see heal()). Deliberately NOT incremented by
+                                          # Unpreventable damage (Thorns, status, HP costs) —
+                                          # only real attack hits count toward this, which is
+                                          # the actual mechanism behind Drew's own "this
+                                          # weakens unpreventable damage slightly" call: those
+                                          # sources can still hurt a Collapsed character, they
+                                          # just can no longer contribute to killing them.
 
         # combat-duration stat modifiers (Wither -Body, Erode -Soul)
         self.stat_mod = {'body': 0, 'mind': 0, 'soul': 0}
@@ -603,10 +640,6 @@ class Combatant:
     def effective_hand_size(self):
         bonus = sum(1 for o in self.ongoing if o['kind'] == 'handsize')
         return max(2, self.eff('mind')) + bonus  # hand size = Mind (min 2), live
-
-    def death_floor(self):
-        import math
-        return -math.ceil(self.max_hp / 2)
 
 
 # --- The engine ---------------------------------------------------------------
@@ -760,30 +793,24 @@ class Duel:
             amount = min(amount, cap)
             # floor is cleared in attack() after the exchange, so it is removed by
             # the next attack whether or not that attack dealt damage.
-        # a single normal attack cannot push below 0 (clamp); extra damage while
-        # collapsed can. We treat any single application atomically.
+        # HP never goes negative, Collapsed or not (Drew's root-level death-rule
+        # change) — it clamps to 0 and stays there. Actual death is no longer a
+        # function of HP magnitude at all; it's tracked by counting genuine
+        # attack hits landed while already Collapsed (see the attack-resolution
+        # call sites, e.g. _resolve_attacker_win), not decided here in deal().
         pre = target.hp
         was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not was_collapsed:
-            RULING("single-hit-floor",
-                   "A single attack cannot push a standing combatant below 0 HP "
-                   "(clamped to 0 = Collapse). Matches rules/combat.md Collapse.")
+        if target.hp < 0:
+            if not was_collapsed:
+                RULING("single-hit-floor",
+                       "A single attack cannot push a standing combatant below 0 HP "
+                       "(clamped to 0 = Collapse). Matches rules/combat.md Collapse.")
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             _clear_ongoing_on_collapse(target)
             _leave_wheel(self, self.queue, target)
-        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
-            # Only reachable already-Collapsed — the single-hit-floor above
-            # protects a standing combatant from dying on the hit that drops
-            # them (rules/combat.md, Collapse & Death: "a single attack cannot
-            # push you below 0"). Death is permanent — no further heal call
-            # can undo it (see heal()).
-            target.is_dead = True
-            RULING("death-floor",
-                   "Collapsed and reduced to or below -ceil(max_hp/2): dead "
-                   "(rules/combat.md, Collapse & Death). Permanent.")
         return amount
 
     def heal(self, target, amount, source=None):
@@ -797,6 +824,7 @@ class Duel:
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
+            target._hits_while_collapsed = 0   # a fresh 2-hit cycle next time they go down
             # Revived one slot after whoever healed them, not straight into the
             # live rotation — the marker has to complete a full lap before it
             # reaches them again (Drew: they shouldn't get to act until it does).
@@ -1062,10 +1090,12 @@ class Duel:
             self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
             card.effect(self, attacker, defender)
             return
+        was_collapsed_before = defender.collapsed
         dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
         if dealt > 0:
             defender._last_attacked_by = attacker
+        _apply_collapse_death_check(defender, dealt, was_collapsed_before)
         self._say(f"  -> {attacker.name} hits for {dealt} "
                   f"({defender.name} {defender.hp}/{defender.max_hp})")
         # Thorns: only on a successful MELEE hit against a thorned defender.

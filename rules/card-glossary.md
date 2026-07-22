@@ -27,10 +27,10 @@ At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue")
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
 
 **(11) Deadly**
-The next time you roll attack damage, add an additional d4 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(6) Weak**
-The next time you roll attack damage, subtract an additional d4 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
 
 **(9) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
