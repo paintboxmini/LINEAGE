@@ -47,9 +47,10 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
+- `quests/settling-stones.md` and `quests/shifting-burrow.md` — the two mirrored entrances into the Hollow, at the watchtower ruins and the Well Property sinkhole respectively
 - `locations/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `locations/vultures-nest.md` — previous stop on the session 1 route
-- `bestiary/briarwatch-jackalope.md` — surface encounter at the watchtower ruins
+- `bestiary/briarwatch-jackalope.md` — general field encounter, not tied to any one location
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields

@@ -73,22 +73,18 @@ Narrate through dust falling, cracks widening, Borrowers moving their sleeping m
 An old border watchtower from a prior era. What remains is a cracked circular foundation, scattered blocks half-swallowed by grass, and a well at its center with rope long rotted away.
 
 **Read-Aloud:**
-> *Something moves in the rubble. Quick. Low. Pale fur against stone.*
+> *Something moves at the well's edge. Low, deliberate, already watching you back.*
 
-**Encounter:** Briarwatch Jackalopes — see `bestiary/briarwatch-jackalope.md`
+**Encounter:** Settling Stones — see `quests/settling-stones.md`
 
-Large, territorial, fast-breeding ruin scavengers disturbed by sinkhole formation. Skittish but defensive of nesting hollows. Fast charges. Retreat through masonry gaps.
+Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Well Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
 
-*Tactical purpose: introduce unstable footing, warm up combat, establish environmental hazard, cost resources without escalating the ecosystem prematurely.*
-
-**Alternate Surface Encounter:** Shifting Burrow — see `quests/shifting-burrow.md`
-
-Borrower Sentries defending exposed burrow entrances at the sinkhole. Teaches positioning consequence and Backline cost before the descent. Use instead of Jackalopes for a party that needs more mechanical grounding before the Hollow.
+Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
 
 **Checks:**
-- Body (Easy): Climb broken stair safely; failure causes minor damage; loud impact may raise Pressure if already 2+
-- Mind (Easy): Identify nest cluster, predict charge angle
-- Soul (Optional): Drive off rather than kill
+- Body (Easy): Climb broken stair safely to reach the well; failure causes minor damage; loud impact may raise Pressure if already 2+ (the same rubble-noise logic Settling Stones' own Positioning Constraint uses during the fight itself)
+- Mind (Easy): Notice the Sentries holding position before they move
+- Soul (Optional): Signal peaceful intent before violence starts — the Sentries "haven't decided" the party's a threat yet (`quests/settling-stones.md`)
 
 **Entry:** The well shaft is the primary descent. Old drainage channel runs east. Vertical shaft risky but usable.
 

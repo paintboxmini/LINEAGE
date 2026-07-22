@@ -1,6 +1,6 @@
 # Briarwatch Jackalope
 
-*Starter encounter. Surface layer of `quests/hollow-below-briarwatch.md`. Teaching encounter for positioning and initiative.*
+*General field encounter — anywhere in Briarwatch's farmland (ruins, hedgerows, fencelines) the GM wants a light teaching fight for positioning and initiative. No longer tied to the Watchtower Ruins as a scripted dungeon entrance — that's now `quests/settling-stones.md`, Borrower Sentries guarding the well shaft.*
 
 **Cards:** `cards/briarwatch-jackalope.md`
 
@@ -17,9 +17,9 @@ They don't fight to the death. At 1 HP, they attempt to flee. If one escapes, th
 
 ---
 
-## Encounter Setup — Ruined Courtyard
+## Encounter Setup
 
-Start with 3 Jackalopes: 1 Frontline, 2 Backline. They rotate constantly using Bolt.
+Start with 3 Jackalopes: 1 Frontline, 2 Backline. They rotate constantly using Bolt. Works anywhere with room to circle — a ruined courtyard, an open hedgerow, a fence line between fields.
 
 *Teaching moment: Rushdown becomes the obvious tool. The system teaches positioning naturally.*
 

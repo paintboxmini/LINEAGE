@@ -1,6 +1,6 @@
 # Shifting Burrow
 
-*Surface encounter at the Well Property sinkhole. Alternate to the Watchtower Jackalopes. Runs before the party descends into the Hollow.*
+*Surface encounter at the Well Property sinkhole. One of two mirrored entrances into the Hollow Below Briarwatch — the other is Settling Stones (`quests/settling-stones.md`), at the Watchtower Ruins. Same tunnel network, two mouths; runs whichever direction the party uses this one, entrance or exit.*
 
 ---
 
@@ -91,5 +91,6 @@ The sinkhole entrance is clear. The party can descend.
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the descent
+- `quests/settling-stones.md` — the other mouth of the same loop
 - `bestiary/borrower.md` — deeper Borrower behavior differs from surface Sentries
 - `locations/briarwatch.md` — the Well Property context
