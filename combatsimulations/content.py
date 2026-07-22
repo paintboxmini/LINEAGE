@@ -1242,6 +1242,73 @@ def _patience_of_stone_effect(engine, me, foe):
 def _patience_of_stone_defense(engine, me, foe):
     me.deadly += 1
 
+# Stonecoil's remaining signature cards (`cards/stonecoil-hollow.md`) — built
+# to actually test the Rodent Burrow Basin fight rather than eyeball its
+# difficulty. DRAG's own conditional reads foe.position before its Effect
+# can change it — damage() runs before effect() in both engines' attack(),
+# confirmed by reading the call order, not assumed.
+def _drag_effect(engine, me, foe):
+    if foe.position != 'frontline':
+        foe.position = 'frontline'
+def _drag_damage(engine, me, foe):
+    base = me.eff('body') + _rolled_die(4, engine.rng, me)
+    if foe.position == 'frontline':
+        base += 2
+    return base
+def _drag_defense(engine, me, foe):
+    foe.rooted = True
+
+def _vibration_lock_effect(engine, me, foe):
+    seen = engine.scry(me, foe, 1)
+    if seen and foe.last_color is not None and seen[0].color == foe.last_color:
+        foe.blind += 1
+def _vibration_lock_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+
+def _shed_skin_effect(engine, me, foe):
+    remove_injuries(me, 1)
+    me.evade += 1
+def _shed_skin_defense(engine, me, foe):
+    if me.discard:
+        me.exile.append(me.discard.pop())
+
+def _dark_corridor_effect(engine, me, foe):
+    foe.blind += 1
+def _dark_corridor_defense(engine, me, foe):
+    me.resist += 1
+
+def _coil_latch_damage(engine, me, foe):
+    base = me.eff('body') + _rolled_die(4, engine.rng, me)
+    if foe._repositioned_since_last_turn:
+        base += 2
+    return base
+def _coil_latch_defense(engine, me, foe):
+    foe.rooted = True
+
+def _still_ground_effect(engine, me, foe):
+    if foe._repositioned_since_last_turn:
+        engine.scry(me, me, 1)
+def _still_ground_damage(engine, me, foe):
+    base = me.eff('mind') + _rolled_die(2, engine.rng, me)
+    if foe._repositioned_since_last_turn:
+        base += 1
+    return base
+def _still_ground_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+
+# PULL/PUSH (core, cards/red-body.md) — a real, separate gap found while
+# building the above: these two plain repositioning cards were never
+# registered at all, Stonecoil signature or not.
+def _pull_effect(engine, me, foe):
+    foe.position = 'frontline'
+def _pull_defense(engine, me, foe):
+    foe.position = 'frontline'
+
+def _push_effect(engine, me, foe):
+    foe.position = 'backline'
+def _push_defense(engine, me, foe):
+    foe.position = 'backline'
+
 # ROLLOUT (Delve Roller) — the Pokemon reference, made real: returns
 # straight to hand after use (`returns_to_hand=True` on the Card itself),
 # regardless of outcome, instead of ever sitting in discard. Needs its own
@@ -1441,6 +1508,20 @@ def build_cards():
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
         effect=_patience_of_stone_effect, defense=_patience_of_stone_defense)
+    add("DRAG", 'R', 'body', 'both', None,
+        effect=_drag_effect, damage=_drag_damage, defense=_drag_defense)
+    add("VIBRATION LOCK", 'B', 'mind', 'both', 2,
+        effect=_vibration_lock_effect, defense=_vibration_lock_defense)
+    add("SHED SKIN", 'G', 'soul', 'both', 2,
+        effect=_shed_skin_effect, defense=_shed_skin_defense)
+    add("DARK CORRIDOR", 'G', 'soul', 'melee', 4,
+        effect=_dark_corridor_effect, defense=_dark_corridor_defense)
+    add("COIL LATCH", 'R', 'body', 'melee', None,
+        damage=_coil_latch_damage, defense=_coil_latch_defense)
+    add("STILL GROUND", 'B', 'mind', 'both', None,
+        effect=_still_ground_effect, damage=_still_ground_damage, defense=_still_ground_defense)
+    add("PULL", 'R', 'body', 'both', 4, effect=_pull_effect, defense=_pull_defense)
+    add("PUSH", 'R', 'body', 'melee', 4, effect=_push_effect, defense=_push_defense)
     add("ROLLOUT", 'R', 'body', 'melee', 2,
         damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
     add("SEISMIC REDIRECT", 'R', 'body', 'both', 4,
