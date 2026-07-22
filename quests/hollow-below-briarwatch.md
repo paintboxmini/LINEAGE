@@ -178,6 +178,8 @@ Three visible cracks in the ceiling. Loose shale underfoot, sitting in water dee
 | Look around | No | May find buried support beam — DC 13 to place; removes Pressure Die on success |
 | Flee | No | Always open |
 
+**A quiet look before the loud option pays off.** An Easy Observe/Sense check on the rubble pile itself (not just the ceiling) can spot a gap already worth exploiting — clearing it wide enough to pass then costs a single Standard (DC 13) Body check instead of the full 3-success brute-force dig, and doesn't trigger the Pressure Die at all if the check succeeds clean. A critical success clearing that gap can turn up something real in the debris: this rubble is a recent fall, and a live Emerald Frog (`bestiary/emerald-frog.md`) — the Hollow's own rare, gem-toned population, one of the last places they're still found at all — is exactly the kind of find worth surfacing here.
+
 ---
 
 ### Lower Depth
