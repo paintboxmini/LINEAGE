@@ -72,9 +72,15 @@ class TeamTactician(ScryMixin):
             # is themselves down) — still avoid defaulting onto someone
             # already Collapsed if a standing target exists. Same reasoning
             # as the retaliation branch: a Collapsed character shouldn't be
-            # the instinctive next target just because they're in the pool.
+            # the instinctive next target just because they're in the pool —
+            # but "never" was too absolute (Drew): a small chance the creature
+            # still goes after a Collapsed target even with standing options
+            # available keeps real, rare risk alive instead of a hard rule.
+            # Tunable per-combatant (default 5%), not a global constant, so a
+            # specific encounter can be dialed without touching every user.
+            collapse_chance = getattr(me, '_collapse_target_chance', 0.05)
             standing = [c for c in pool if not c.collapsed]
-            if standing:
+            if standing and battle.rng.random() >= collapse_chance:
                 pick = battle.rng.choice(standing)
                 battle.team_target[me.team] = pick
                 return pick
