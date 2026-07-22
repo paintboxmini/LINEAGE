@@ -96,6 +96,8 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 *Safe staging area. Introduce dampness. Show mineral streaking on walls.*
 
+**First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick.md`), same species as the farmer's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
+
 **The Heavy Door** — half-buried in debris off this chamber. Thick stone slab, iron-banded, seals into a carved rectangular frame. When closed: reduces vibration, dampens sound, blocks predator access.
 
 **The Living Chamber (Rest Site)** — inside the door: dry, reinforced ceiling, four carved bunks, small hearth alcove, tool hooks, old supply shelves. Structurally superior to surrounding caves. Survives high Pressure events. The old builders reinforced it properly.
@@ -201,6 +203,8 @@ Small subterranean mole-like humanoids.
 - **Soft-Foot Wrappings** — woven fungal-fiber sandals that reduce vibration transmission
 - **Decoy Scrapers** — loose stones wedged in cracks to discourage predator ambush points
 - **Narrow Crawl Lanes** — tunnels too small for Stonecoils; they don't dominate the space, they survive it
+
+**The warrior's rite is a Stonecoil, killed as a group.** No Borrower fights one alone — that's not bravery here, it's a wasted death against something that outweighs any one of them badly. A warrior is someone who's stood in that group and the group won. Proof is worn, not claimed: a single scale off a killed Stonecoil, carried as jewelry for the rest of that Borrower's life. It's why the Sentries above (`quests/settling-stones.md`, `quests/shifting-burrow.md`) read as faster and more aggressive than their kin deeper in — they're not just guards, they're the ones already blooded. Every Sentry a party actually meets is wearing one.
 
 They have a word for the vibration before a Stonecoil strike. They leave food scraps at certain junctions to redirect hunting paths. They tell stories about "the stone that moves."
 

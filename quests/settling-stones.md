@@ -28,6 +28,8 @@ This applies to both players and Borrower Sentries.
 
 Small, territorial humanoids defending the old well shaft — the oldest known way into the tunnel network, worn smooth by generations of Borrower traffic, not exposed by any recent collapse the way the sinkhole was. Not the same as the Borrowers deeper in the Hollow — these are surface guards, faster and more aggressive than their kin underground. They haven't decided if the party is a threat yet. They'll decide quickly.
 
+Each one wears a single scale, dark and heavy, strung as jewelry — proof they've stood in a group that killed a Stonecoil and survived it (`quests/hollow-below-briarwatch.md`, Borrowers, the warrior's rite). Worth describing; it's the visible reason these three read as more dangerous than an ordinary Borrower.
+
 Run 2–3 Borrower Sentries — same creature, same cards, as `quests/shifting-burrow.md`.
 
 ---
