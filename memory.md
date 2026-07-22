@@ -406,6 +406,9 @@ Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don
 **Phase-Leach** (`bestiary/phase-leach.md`)
 Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds on arcane energy. No mechanics yet.
 
+**Emerald Frog — woodland vs. Hollow-burrow population** (`bestiary/emerald-frog.md`)
+Added a rare, gem-toned Burrow Population to the existing common woodland frog (Senshi's restaurant supply) rather than rewrite the common one's established rarity — read as a non-contradictory extension, not confirmed as the intended read. Drew: "keep that woodland variant issue in memory please we will come back later." Don't resolve or develop further without him — revisit whether this should stay two populations of one species or become something else.
+
 **Roadhouse → Turnroot Weald hook**
 After the party resolves the Hollow Below Briarwatch, Aege (the Carrion Guide) hands them a sealed letter pointing them to the Turnroot Weald — four days west. Hook: her family says the forest's predators are acting strange. She can't go herself. She watched the party on the road and decided they move carefully enough to trust. See `locations/vultures-nest.md` for the full letter and "Finding Aege" GM guidance.
 
