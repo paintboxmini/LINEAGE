@@ -39,6 +39,8 @@ This is hydrostatic pressure plus structural compromise. Not curse. Not omen.
 
 **Standing water, a few inches deep, now sits through most of the connecting tunnels** — the same seepage driving everything else in this chain, just visibly pooled rather than working invisibly through the stone. Three places stay dry regardless: the Borrower Settlement (their own drainage work, generations of upkeep), the Mated Stonecoil Nest (open and well-drained by its own shape), and the reinforced Living Chamber behind the Heavy Door (built properly, and it still is — see the Transition Zone below). Everywhere else — the Split Seam, the Predator Ambush Corridor, the general connecting passages — is wet underfoot. Not deep enough to slow anyone down or matter mechanically on its own; just there, cold, and worth describing every time the party crosses it.
 
+**Depth isn't uniform along the route that actually traces the water back to its source.** Flood Shelf Chamber sits at the shallow end of that trend — a couple of inches, same as everywhere else. Follow the current down through Undercut Pillar, then Unstable Cave, and it gets a little deeper each time, the ordinary consequence of getting closer to Deep Stream Channel rather than any one room's own local damage. A ceiling drip at a given seam (Undercut Pillar's own crack, for instance) is a separate, local symptom of the same hydrostatic pressure — real, worth describing, but not the single traced current itself; the actual tell is the rising water at the party's feet, room by room.
+
 ---
 
 ## Subterranean Pressure Track (GM-Facing)
@@ -154,7 +156,7 @@ Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on
 
 **Undercut Pillar (Structural Hazard)**
 
-Critical load-bearing seam. Clearly thinned. Hairline cracks above. Small debris falling intermittently. Water drip from above seam.
+Critical load-bearing seam. Clearly thinned. Hairline cracks above. Small debris falling intermittently. Water drip from above seam — its own local symptom of the same pressure, distinct from the water underfoot. That's risen too: a couple of inches deeper than Flood Shelf Chamber above, the first real sign of the progression (Causality Chain, above).
 
 - Body Check: reinforce, shore up, or stabilize
 - If damaged in combat: Partial collapse risk
@@ -163,7 +165,7 @@ Critical load-bearing seam. Clearly thinned. Hairline cracks above. Small debris
 
 **Unstable Cave — Pressure Trap**
 
-Three visible cracks in the ceiling. Loose shale underfoot. The path forward is rubble — recent fall, still settling. The silence has weight.
+Three visible cracks in the ceiling. Loose shale underfoot, sitting in water deeper again than Undercut Pillar — the same progression continuing, not a new cause. The path forward is rubble — recent fall, still settling. The silence has weight.
 
 **The Pressure Die:** Place a d6 showing 1 on the table. Every loud or forceful action rolls the die — on a 6, the ceiling drops (DC 16 to dodge).
 
