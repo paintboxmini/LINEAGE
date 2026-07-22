@@ -82,6 +82,8 @@ The Perception modes are your friend here. When players are poking at something,
 
 **Good roleplay should move the difficulty, not remove it.** A scene played well enough that success feels inevitable is still worth a roll — just an easy one. Drop the DC to 5 or 7 instead of skipping the check outright. The dice still matter this way: a bad roll on an easy check is a real, rare stumble worth playing honestly, not a guaranteed miss wearing tension as a costume. This also keeps the reward proportional — the roleplay earned the low DC, not automatic success, so an exceptional roll on top of it can still mean *more* than the baseline outcome, not just the same outcome with extra steps.
 
+**Mechanical detail is earned by a roll, not handed over before one.** When a player looks at something before committing to an action — the top of a rubble pile, the far side of a chasm, a locked door — resist naming the trap's trigger conditions, its DC, or its failure state up front. Let the look be its own free, safe action (an Easy Perception check, gated to what that mode would actually reveal), and answer the question they actually asked before assuming which mechanic they're walking into. A room can define a loud/forceful action that trips a hazard and *also* define a quiet way to learn about it first — both belong in the text, and the quiet option goes first at the table.
+
 ---
 
 ## Death & Consequences
