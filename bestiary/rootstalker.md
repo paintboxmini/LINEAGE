@@ -4,7 +4,8 @@
 
 **Cards:** `cards/rootstalker-weald.md`
 
-**Mind 2 / Body 2 / Soul 3**
+**Mind 2 / Body 2 / Soul 3 — HP 13**
+**Creature Threat Rating:** 7
 
 ---
 
@@ -20,11 +21,11 @@ If the party later finds a tree with a human hand growing from it like a flower 
 
 ## Abilities
 
-**Basic Attack — Root Lash**
+**Basic Attack — Root Lash** (same core card as Root Heart's, `cards/root-heart-weald.md`)
 - Attack: Body + d6
-- Range: Both (can strike from Backline through roots)
-- Effect: On hit, pull target to Frontline (if not already there).
-- Defensive Bonus: Attacker gains Rooted.
+- Range: Melee
+- Effect: Pull target to the Frontline.
+- Defensive Bonus: Gain Rooted.
 
 **Passive — Predator Focus**
 Each consecutive attack on the same target deals +1 damage (stacks up to +3). Resets if target changes or dies.

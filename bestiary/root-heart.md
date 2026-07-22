@@ -31,7 +31,7 @@ It is unclear whether this thing feeds the forest or feeds on it.
 
 ## Abilities
 
-**Basic Attack — Root Lash**
+**Basic Attack — Root Heart's Reach** *(bespoke — this creature's own version, not the core ROOT LASH card; wider range and bigger die reflect its gigantic, immobile-but-everywhere-at-once position)*
 - Attack: Body + d8
 - Range: Any / Any
 - Effect: On hit, pull target to Frontline.
@@ -41,7 +41,7 @@ It is unclear whether this thing feeds the forest or feeds on it.
 
 **Forest Memory**
 - Attack: Mind + d4
-- Effect: Name a card color — until the Root Heart's next turn, anyone who plays that color triggers a heal of 1 for the Root Heart.
+- Effect: Name a card color. If the target plays that color on their next turn, heal 2 HP.
 - Defensive Bonus: Return 1 card from discard pile to the top of the deck.
 - Range: Both
 - *"The Weald remembers every knot ever tied, every path ever walked."*
