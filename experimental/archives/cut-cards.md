@@ -17,6 +17,41 @@ Range: Both
 
 ---
 
+## Vescal — cut during deck rebalance
+
+**INCENSE WARD**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally gains Ward.
+Defensive Bonus: Gain Ward.
+Range: Both
+*"What the smoke touches, the world cannot take."*
+*Cut: Vescal's deck ran Green 7/Blue 2/Red 2 against a Mind 3/Body 4/Soul 3 target — Drew picked this one to go rebalancing the color split back to stat totals.*
+
+---
+
+**BALANCE RESTORED**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Heal target ally 4 HP. Move them to any position.
+Defensive Bonus: Heal yourself 3 HP.
+Range: Both
+*"The scales don't care where you're standing."*
+*Cut: same rebalance as INCENSE WARD, above.*
+
+---
+
+**OPEN DOOR**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally draws 1 card and heals 2 HP.
+Defensive Bonus: Draw 1 card.
+Range: Ranged
+*"The door is always open. That's the point."*
+*Cut: same rebalance as INCENSE WARD, above.*
+
+---
+
 ## Borrower — Hollow (mediation arc Oracle reward)
 
 **SHORE UP**

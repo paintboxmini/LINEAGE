@@ -339,3 +339,13 @@ Effect: Remove one Positive Status Effect of your choice from each enemy.
 Defensive Bonus: Remove one Positive Status Effect of your choice from each enemy.
 Range: Both
 *"Nobody gets to keep their edge."*
+
+---
+
+**SMOKE SCREEN**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target enemy moves to Backline and gains Blind.
+Defensive Bonus: Attacker gains Blind.
+Range: Melee
+*"Visibility is a luxury."*
