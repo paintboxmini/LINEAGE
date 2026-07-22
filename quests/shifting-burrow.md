@@ -42,7 +42,7 @@ Run 2–3 Borrower Sentries.
 
 **BURROW RESHUFFLE**
 BLUE — MIND — HOLLOW
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Move to Backline.
 Defensive Bonus: Gain Evade.
 Range: Melee
@@ -52,7 +52,7 @@ Range: Melee
 
 **ALERT CALL**
 GREEN — SOUL — HOLLOW
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Scry 1. Another Borrower gains Evade until their next turn.
 Defensive Bonus: Attacker gains Staggered.
 Range: Both
@@ -62,7 +62,7 @@ Range: Both
 
 **DIRT CLOD**
 RED — BODY — HOLLOW
-Attack: Body + d4
+Attack: Body + d6
 Effect: Target gains Blind.
 Defensive Bonus: Gain Evade.
 Range: Ranged

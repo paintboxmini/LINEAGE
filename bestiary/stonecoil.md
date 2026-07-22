@@ -24,19 +24,19 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 Full kit: `cards/stonecoil-hollow.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK CORRIDOR, COIL LATCH, STILL GROUND, PULL, ROLLING THUNDER — the last Alpha-only) plus core PATIENCE OF STONE (`cards/green-soul.md`, promoted from this creature's own signature set — Stonecoil's deck uses the core card in its place). Three representative below; see the signature file for the rest.
 
 **COIL LATCH** — RED — BODY
-- Attack: Body + d4
+- Attack: Body + d6
 - Effect: If the target moved this turn, deal +2 damage.
 - Defensive Bonus: Attacker gains Rooted.
 - Range: Melee
 
 **VIBRATION LOCK** — BLUE — MIND
-- Attack: Mind + d2
+- Attack: Mind + d4
 - Effect: Scry 1 of target's deck. If that card matches the color they just played, apply Blind.
 - Defensive Bonus: Scry 1 of your own deck.
 - Range: Both
 
 **PATIENCE OF STONE** — GREEN — SOUL *(core)*
-- Attack: Soul + d4
+- Attack: Soul + d6
 - Effect: Anchored — at the start of each of your turns, heal 2 HP.
 - Defensive Bonus: Gain Deadly.
 - Range: Melee

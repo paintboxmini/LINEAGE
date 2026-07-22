@@ -34,7 +34,7 @@ If Fogcaller drops below half HP, a second Fogcaller enters from the opposite tr
 ## Cards (Used in Combat)
 
 **Shroud** — GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target enemy gains Evade and Blind until start of your next turn.
 Defensive Bonus: You gain Evade until start of your next turn.
 Range: Both
@@ -43,7 +43,7 @@ Range: Both
 ---
 
 **Fogburst** — GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: All enemies in Frontline gain Blind until start of your next turn.
 Defensive Bonus: You may move positions.
 Range: Both
@@ -52,7 +52,7 @@ Range: Both
 ---
 
 **Talon Rush** — RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Move self and target to Frontline.
 Defensive Bonus: Move to any position.
 Range: Melee

@@ -43,7 +43,7 @@ Core card (universal — no tag; die philosophy: d6 power / d4 utility / d2 prec
 ```
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: The next ally to attack deals +3 damage
 Defensive Bonus: A target ally draws 1 card
 Range: Ranged
@@ -55,7 +55,7 @@ Signature card (one source tag = where it's obtained, per `world/lineage.md`; ti
 ```
 **WATCHFUL PERCH**
 GREEN — SOUL — BRIARWATCH
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Move to the Backline and gain Evade.
 Defensive Bonus: Apply Initiative Shift +2 to yourself.
 Range: Both

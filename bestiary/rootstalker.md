@@ -22,7 +22,7 @@ If the party later finds a tree with a human hand growing from it like a flower 
 ## Abilities
 
 **Basic Attack — Root Lash** (same core card as Root Heart's, `cards/root-heart-weald.md`)
-- Attack: Body + d6
+- Attack: Body + d8
 - Range: Melee
 - Effect: Pull target to the Frontline.
 - Defensive Bonus: Gain Rooted.
