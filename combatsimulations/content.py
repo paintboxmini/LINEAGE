@@ -893,6 +893,27 @@ def _barrier_effect(engine, me, foe):
 def _barrier_defense(engine, me, foe):
     me.immune = True
 
+# Gene-Thief Tardigrade signature cards (bestiary/gene-thief-tardigrade.md) —
+# echo the creature's own Genetic Absorption passive rather than duplicating
+# it (that passive is prose-only, GM-ruled, not modeled here — no ROSTER
+# entry for this creature, same footing as every other narrative-only
+# bestiary kit). Synced on request alongside the rest of this session's new
+# cards, not because it entered a tournament roster.
+def _genetic_sample_effect(engine, me, foe):
+    engine.scry(me, foe, 1)
+def _genetic_sample_defense(engine, me, foe):
+    me.evade += 1
+
+def _adaptive_bite_effect(engine, me, foe):
+    me.deadly += 1
+def _adaptive_bite_defense(engine, me, foe):
+    me.thorns += 1
+
+def _dissolve_and_keep_effect(engine, me, foe):
+    engine.heal(me, 2)
+def _dissolve_and_keep_defense(engine, me, foe):
+    engine.heal(me, 2)
+
 def _last_resort_effect(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
@@ -1442,6 +1463,12 @@ def build_cards():
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
+    add("GENETIC SAMPLE", 'B', 'mind', 'both', 4,
+        effect=_genetic_sample_effect, defense=_genetic_sample_defense)
+    add("ADAPTIVE BITE", 'R', 'body', 'melee', 6,
+        effect=_adaptive_bite_effect, defense=_adaptive_bite_defense)
+    add("DISSOLVE AND KEEP", 'G', 'soul', 'both', 4,
+        effect=_dissolve_and_keep_effect, defense=_dissolve_and_keep_defense)
     # Mason Glyphs / Objects
     add("MENDING GLYPH", 'G', 'soul', 'both', 4,
         effect=_mending_glyph_effect, defense=_mending_glyph_defense)
