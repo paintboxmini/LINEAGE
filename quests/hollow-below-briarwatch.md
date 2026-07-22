@@ -206,6 +206,10 @@ They have a word for the vibration before a Stonecoil strike. They leave food sc
 
 If the party observes Borrower behavior, they can learn predator patterns without fighting first. Borrowers may refuse to guide players deeper but might offer: a clay bowl tremor detector, a map of "moving stone" zones, a narrow bypass tunnel, or the warning: *"Do not run."*
 
+**Making first contact peacefully is real, but it isn't automatic — gate it with a roll, even an easy one.** This is first contact with an armed, ambiguous-looking group inside their own home; the Borrowers are established as sympathetic and *not helpless*, not as pushovers. Soul (Read): sitting, open hands, no weapons, genuine unhurried patience — that's Standard, DC 13, same as talking down the surface Sentries (`quests/settling-stones.md`). A stronger overture (kneeling, closing eyes, actually spending a resource on the gesture — a card discard, a real gift) should drop the DC further, down to 5–7 per the general rule now in `rules/gm-guide.md`'s "When to Call for Rolls" — but still roll it. A rare bad roll on an easy check is the honest cost of keeping the dice meaningful even when the roleplay's excellent.
+
+**Success gets the party in the door — it doesn't hand over full comprehension for free.** If the Borrowers offer something that needs interpreting (the map of "moving stone" zones, a spoken warning in a language nobody at the table shares), reading it accurately is its own small Mind check, Easy DC 11 — a bare pass gets the gist, a strong one gets real, actionable detail.
+
 ---
 
 ### The Stonecoils

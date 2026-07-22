@@ -16,6 +16,10 @@ Teach players:
 
 **Location:** The collapsed sinkhole on the Well Property. Loose soil. Exposed roots. The ground hasn't decided what it is yet.
 
+**Reading the ground, before anyone gets close:** Mind (Observe). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
+- *DC 11 (Easy):* The basics — loose soil, exposed roots, and a scatter of small, deliberately round openings along the rim. Burrow entrances, unmistakably dug, not natural cracks.
+- *DC 16+:* Real scale. How far down this actually goes, roughly how many entrances there are, whether anything is currently moving in them. This tier is where the sinkhole stops being a set piece and starts being intelligence.
+
 **Positioning Constraint:** The Backline is uneven and shaky. Moving into or out of the Backline requires a Body check (Easy DC 13):
 - *Success:* Move safely.
 - *Failure:* Add 1 Exhaust to your deck from the strain.

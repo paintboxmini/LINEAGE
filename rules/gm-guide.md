@@ -80,6 +80,8 @@ Not every action needs a roll. If success is guaranteed, describe it and move on
 
 The Perception modes are your friend here. When players are poking at something, ask yourself which mode applies before you ask for a roll. *What are they actually trying to notice?* The answer shapes what they find — and what they miss.
 
+**Good roleplay should move the difficulty, not remove it.** A scene played well enough that success feels inevitable is still worth a roll — just an easy one. Drop the DC to 5 or 7 instead of skipping the check outright. The dice still matter this way: a bad roll on an easy check is a real, rare stumble worth playing honestly, not a guaranteed miss wearing tension as a costume. This also keeps the reward proportional — the roleplay earned the low DC, not automatic success, so an exceptional roll on top of it can still mean *more* than the baseline outcome, not just the same outcome with extra steps.
+
 ---
 
 ## Death & Consequences
