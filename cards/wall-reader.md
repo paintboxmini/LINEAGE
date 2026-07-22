@@ -1,6 +1,6 @@
 # Wall-Reader — Signature Cards
 
-*NEVER LIFTED and YOU CHANGED WALLS were promoted to core, de-flavored, and now live in `cards/red-body.md` as CERTAIN CONTACT and TELLS — Wall-Reader's deck uses those core cards in their place.*
+*NEVER LIFTED and YOU CHANGED WALLS were promoted to core, de-flavored, and now live in `cards/red-body.md` as CERTAIN CONTACT and RHYTHM BREAK — Wall-Reader's deck uses those core cards in their place.*
 
 ---
 

@@ -260,7 +260,7 @@ def _apply_shift(engine, queue, target, amount):
         if amount == 0:
             return
     if amount > 0:
-        target._shifted_positive = True   # TELLS: cleared at the start
+        target._shifted_positive = True   # RHYTHM BREAK: cleared at the start
                                            # of target's own next turn
     was_pending = target._shift_skip or target in engine.pending_turns
     target._shift_skip = False
@@ -484,7 +484,7 @@ class Combatant:
         self.exile = []
 
         self.position = 'frontline'
-        self._position_at_last_turn_start = self.position  # ROLLOUT/TELLS
+        self._position_at_last_turn_start = self.position  # ROLLOUT/RHYTHM BREAK
         self._repositioned_since_last_turn = False          # tracking
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
@@ -497,6 +497,8 @@ class Combatant:
         self.staggered = False
         self.rooted = False
         self.ward = False
+        self.immune = False              # Immunity (card-glossary.md): next attack against
+                                          # me fails before any cards are revealed at all
         self.axiom_ban = None            # color forbidden on next reveal
         self.next_attack_bonus = 0
         self.cannot_defend = False       # (unused by these decks, reserved)
@@ -533,9 +535,9 @@ class Combatant:
                                            # one turn — consumed at the start of that turn
                                            # regardless of whether it changes anything
         self._skip_draw_next = False      # EMERGENCY REPAIRS: no draw step, next turn only
-        self._shifted_positive = False    # TELLS: received a + Initiative Shift,
+        self._shifted_positive = False    # RHYTHM BREAK: received a + Initiative Shift,
                                            # cleared at the start of my own next turn
-        self._used_wait = False           # TELLS: used Wait, same self-clearing shape
+        self._used_wait = False           # RHYTHM BREAK: used Wait, same self-clearing shape
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -798,6 +800,19 @@ class Duel:
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
+
+        # Immunity (card-glossary.md, BARRIER/LAST RESORT): the attack fails
+        # completely before anything else — no FOLLOW-UP resolution, no color
+        # read, no reveal bookkeeping. Stronger than Blind/Evade, both of
+        # which still reveal the attacker's card and log it to attack_history
+        # even on a miss; Immunity means none of that ever happened at all,
+        # so it's checked first, ahead of everything below.
+        if defender.immune:
+            defender.immune = False
+            self._say(f"{defender.name}'s Immunity stops the attack cold")
+            _discard_or_return(attacker, card)
+            return
+
         # FOLLOW-UP: fully BECOMES a copy of whichever ally most recently
         # revealed a card (before RPS resolution, per Drew's spec) — a
         # stronger transformation than AFTERIMAGE's color-only mirroring, so
@@ -1093,7 +1108,7 @@ class Duel:
         self._resolving = who   # see _apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
-        # ROLLOUT/TELLS: did my position change at any point since my
+        # ROLLOUT/RHYTHM BREAK: did my position change at any point since my
         # own last turn began (my own Move, forced repositioning by anyone,
         # Quick, Rushdown as a victim — anything)? Computed once, right here,
         # before this turn's own actions can touch position — stays readable
@@ -1104,7 +1119,7 @@ class Duel:
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
-        who._shifted_positive = False    # TELLS: same self-clearing shape
+        who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
@@ -1161,7 +1176,7 @@ class Duel:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
-                who._used_wait = True   # TELLS
+                who._used_wait = True   # RHYTHM BREAK
                 self._say(f"{who.name} waits")
             else:
                 kind = action[0]

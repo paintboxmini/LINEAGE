@@ -103,6 +103,9 @@ Damage that cannot be defended against. It ignores every defense that applies to
 **(9) Ward**
 Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.
 
+**(2) Immunity**
+The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.
+
 ---
 
 ## Stat Change

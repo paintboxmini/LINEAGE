@@ -321,3 +321,23 @@ Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Ad
 Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
 Range: Both
 *"Everything they built stops mattering at once."*
+
+---
+
+**BARRIER**
+BLUE — MIND
+Attack: Mind + d2
+Effect: Gain Immunity.
+Defensive Bonus: Gain Immunity.
+Range: Both
+*"Not deflected. Not survived. Simply undone."*
+
+---
+
+**LAST RESORT**
+BLUE — MIND
+Attack: Mind + d4
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"When there's nothing left to protect, nothing gets through."*

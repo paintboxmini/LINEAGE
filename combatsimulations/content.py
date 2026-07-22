@@ -882,6 +882,24 @@ def _unmake_defense(engine, me, foe):
     remove_positive_status(foe)
     engine.insert_exhaust(me, 3)
 
+# BARRIER / LAST RESORT — Immunity (card-glossary.md): the actual negation
+# logic lives once in both engines' attack(), checked before anything else
+# is even revealed. These just set the flag. Not added to the Positive
+# Status Effects list — a deliberate, unconfirmed-until-asked scope limit,
+# same footing as Critical: UNMAKE/LEVEL THE FIELD/WAITING GAME/DRAIN don't
+# strip or copy it.
+def _barrier_effect(engine, me, foe):
+    me.immune = True
+def _barrier_defense(engine, me, foe):
+    me.immune = True
+
+def _last_resort_effect(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+def _last_resort_defense(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
 # DRAIN) from each enemy, respecting Ward normally (`warded()`, same
@@ -1147,12 +1165,13 @@ def _heave_and_haul_defense(engine, me, foe):
     for a in [me] + engine.allies(me):
         a._quick = True
 
-# TELLS (was YOU CHANGED WALLS, Wall-Reader) — reworked on promotion,
-# not just renamed. Effect uses "moved" (Drew's own call, the cleaner
-# phrasing) via the new `_repositioned_since_last_turn` tracker (built for
-# this and ROLLOUT below — first time "did X reposition since their last
-# turn" has ever been tracked in the sim). Defensive Bonus is a genuinely
-# new condition: gain Resist if the ATTACKER received a positive Initiative
+# RHYTHM BREAK (was YOU CHANGED WALLS, Wall-Reader; briefly TELLS — renamed
+# again, "isn't gonna work," per Drew) — reworked on promotion, not just
+# renamed. Effect uses "moved" (Drew's own call, the cleaner phrasing) via
+# the new `_repositioned_since_last_turn` tracker (built for this and
+# ROLLOUT below — first time "did X reposition since their last turn" has
+# ever been tracked in the sim). Defensive Bonus is a genuinely new
+# condition: gain Resist if the ATTACKER received a positive Initiative
 # Shift or used Wait since their own last turn. Implementation note, flagged
 # rather than silently assumed: "since your last turn" reads most literally
 # as bound to the DEFENDER's own timeline, but the two new flags
@@ -1160,10 +1179,10 @@ def _heave_and_haul_defense(engine, me, foe):
 # combatant's own next turn (same shape as `_anticipating`/`_weathered`) —
 # a materially simpler, self-contained approximation of the same intent,
 # not a literal cross-combatant timeline comparison.
-def _tells_effect(engine, me, foe):
+def _rhythm_break_effect(engine, me, foe):
     if foe._repositioned_since_last_turn:
         me.deadly += 1
-def _tells_defense(engine, me, foe):
+def _rhythm_break_defense(engine, me, foe):
     if foe._shifted_positive or foe._used_wait:
         me.resist += 1
 
@@ -1185,7 +1204,7 @@ def _patience_of_stone_defense(engine, me, foe):
 # straight to hand after use (`returns_to_hand=True` on the Card itself),
 # regardless of outcome, instead of ever sitting in discard. Needs its own
 # damage function since the +4 bonus is conditional; reuses the same
-# `_repositioned_since_last_turn` tracker as TELLS, just checking
+# `_repositioned_since_last_turn` tracker as RHYTHM BREAK, just checking
 # yourself instead of the target.
 def _rollout_damage(engine, me, foe):
     base = me.eff('body') + roll(2, engine.rng)
@@ -1374,8 +1393,8 @@ def build_cards():
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 4,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
-    add("TELLS", 'R', 'body', 'melee', 6,
-        effect=_tells_effect, defense=_tells_defense)
+    add("RHYTHM BREAK", 'R', 'body', 'melee', 6,
+        effect=_rhythm_break_effect, defense=_rhythm_break_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 6,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 4,
@@ -1395,6 +1414,9 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 2)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'both', 2, effect=_unmake_effect, defense=_unmake_defense)
+    add("BARRIER", 'B', 'mind', 'both', 2, effect=_barrier_effect, defense=_barrier_defense)
+    add("LAST RESORT", 'B', 'mind', 'both', 4,
+        effect=_last_resort_effect, defense=_last_resort_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 4,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     # Mason Glyphs / Objects
