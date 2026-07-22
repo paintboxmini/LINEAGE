@@ -300,6 +300,7 @@ It is relocating. The damage is collateral.
 
 **Mediation Arc** — Broker a water diversion agreement. Help reinforce structural support.
 Requires: Mind checks (deduction), Soul checks (trust), Body checks (reinforcement work).
+Outcome: sinkhole stabilizes, Pressure drops, Borrowers and Briarwatch reach real terms — the only arc where both sides actually come out ahead rather than one side absorbing the cost. A workable engineering idea (the Unstable Cave's own rubble repurposed into a dam, Undercut Pillar reinforcement, a new diversion channel, or some combination) still has to be proposed and understood, not just wished for — a Soul check carries the actual communication if there's a language gap, same as any other first contact with the Borrowers.
 
 **Surgical Intervention Arc** — Quietly reinforce weakened chamber. Collapse unstable section.
 Outcome: sinkholes stop. Borrowers survive. Tension remains unresolved.
