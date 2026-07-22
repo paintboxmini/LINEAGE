@@ -37,7 +37,7 @@ At the start of its turn, the Borrower may Scry 1 of any one combatant's deck. T
 
 In addition to their signature set (`cards/borrower-hollow.md`), Borrowers fill their combat deck with core cards weighted toward Blue and Green. They rarely play Red.
 
-Recommended core inclusions: PATIENCE, FLOW, ANALYZE, WITNESS, BIND.
+Recommended core inclusions: PATIENCE, FLOW, FOCUS, WITNESS, BIND.
 
 ---
 

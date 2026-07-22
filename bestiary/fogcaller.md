@@ -35,7 +35,7 @@ If Fogcaller drops below half HP, a second Fogcaller enters from the opposite tr
 
 **Shroud** — GREEN — SOUL
 Attack: Soul + d4
-Effect: Target enemy gains Evade and Blind (50% to miss attack before defender selects a block card) until start of your next turn.
+Effect: Target enemy gains Evade and Blind until start of your next turn.
 Defensive Bonus: You gain Evade until start of your next turn.
 Range: Both
 *"The fog doesn't hide you. It hides what's coming."*

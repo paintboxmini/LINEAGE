@@ -19,22 +19,24 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 ## Abilities
 
-**Coil Strike** — RED — BODY
-- Attack: Body + d6
-- Effect: If target is in the same position, deal +2 damage.
-- Defensive Bonus: Gain Rooted.
+Full kit: `cards/stonecoil-hollow.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK CORRIDOR, COIL LATCH, STILL GROUND, PULL, ROLLING THUNDER — the last Alpha-only) plus core PATIENCE OF STONE (`cards/green-soul.md`, promoted from this creature's own signature set — Stonecoil's deck uses the core card in its place). Three representative below; see the signature file for the rest.
+
+**COIL LATCH** — RED — BODY
+- Attack: Body + d4
+- Effect: If the target moved this turn, deal +2 damage.
+- Defensive Bonus: Attacker gains Rooted.
 - Range: Melee
 
-**Vibration Lock** — BLUE — MIND
+**VIBRATION LOCK** — BLUE — MIND
 - Attack: Mind + d2
-- Effect: Scry 1 of target's deck. If the card matches the color they just played, apply Blind until start of their next turn.
-- Defensive Bonus: Scry 1 of attacker's deck.
+- Effect: Scry 1 of target's deck. If that card matches the color they just played, apply Blind.
+- Defensive Bonus: Scry 1 of your own deck.
 - Range: Both
 
-**Coil Patience** — GREEN — SOUL
+**PATIENCE OF STONE** — GREEN — SOUL *(core)*
 - Attack: Soul + d4
-- Effect: Anchored — at the start of your next turn, heal 2 HP.
-- Defensive Bonus: Apply Rooted to attacker.
+- Effect: Anchored — at the start of each of your turns, heal 2 HP.
+- Defensive Bonus: Gain Deadly.
 - Range: Melee
 
 ---
@@ -43,7 +45,7 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 Stonecoils do not rush. They occupy choke points and hold them.
 
-If the party moves — uses a positional card, changes Frontline/Backline — they trigger STILL WATER's damage window. If a party member attacks and then pulls back, they trigger READ THE STRIKE on their next turn. The creature rewards players who stop moving and commit.
+If the party moves — uses a positional card, changes Frontline/Backline — they trigger COIL LATCH's or STILL GROUND's damage bonus (both punish having moved). The creature rewards players who stop moving and commit.
 
 **Do not run.** The Borrowers know this. Players will learn it.
 

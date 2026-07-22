@@ -38,16 +38,16 @@ Built to make a fight happen where he wants it, not where it started. HOOK AND H
 **Core cards (2 Blue / 3 Red / 4 Green):**
 
 *Blue — Mind*
-- INTERRUPT — Target loses their next turn, you can't defend until your next turn; Defensive: Apply Initiative Shift -1 to attacker
+- INTERRUPT — Target loses their next turn, you can't defend until your next turn; Defensive: Apply Initiative Shift -2 to attacker
 - PARTITION — Target enemy can only attack frontline targets next turn; Defensive: target ally cannot be targeted by next attack
 
 *Red — Body*
-- GUARD — Allies gain Resist 2; Defensive: allies gain Resist 2
+- GUARD — All allies gain Resist; Defensive: all allies gain Resist
 - PUSH — Move target to backline; Defensive: move target to backline
 - PULL — Pull target to frontline; Defensive: pull attacker to frontline
 
 *Green — Soul*
 - BIND — Defender gains Rooted; Defensive: attacker gains Rooted
-- ROOTED OATH — Anchored: ally gains +2 damage on their next attack; Defensive: one ally in your position gains 3 HP
+- ROOTED OATH — Anchored: target ally gains Deadly; Defensive: Anchored, target ally gains Resist
 - SYNCHRONY — Allies next to you in initiative heal 1 HP at the start of their turns, you heal too; Defensive: Gain Resist
-- SHARED BURDEN — Next time target ally takes attack damage, you take it instead; Defensive: trade HP with an ally
+- SHARED BURDEN — Gain Fortress and Evade; Defensive: choose an amount, target ally gains that much HP and you lose that much HP

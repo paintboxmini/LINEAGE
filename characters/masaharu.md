@@ -63,7 +63,7 @@ He is most dangerous when he has had one full cycle to read the party.
 
 *Blue — Mind*
 - PROFILE — Scry 2; Defensive: Staggered on attacker
-- AXIOM — Color denial; Defensive: Scry 2 of attacker's deck
+- AXIOM — Name a color, defender can't play it on their next reveal; Defensive: Name a color, attacker can't play it on their next reveal
 
 *Red — Body*
 - GROUNDING STANCE — Ignore forced repositioning; Defensive: Resist

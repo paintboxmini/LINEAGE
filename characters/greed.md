@@ -43,14 +43,14 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 
 *Blue — Mind*
 - CHAIN — Half damage to a second enemy; Defensive: enemy must target you again next turn if possible
-- TRACE — +3 damage if target repeats their last color; Defensive: if attacker repeated color, remove their ongoing effects
-- SHARPEN — Target's next Blue attack deals +3; Defensive: your next Blue attack deals +2
-- PHASE LOGIC — Gain Evade; Defensive: may move to backline
+- TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
+- SHARPEN — Target ally gains Deadly; Defensive: gain Deadly
+- PHASE LOGIC — Gain Evade; Defensive: may change position
 
 *Red — Body*
 - CHARGE — You and defender move to frontline; Defensive: you and attacker move to frontline
 
 *Green — Soul*
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: move to any position
-- WITNESS — Next ally to successfully defend heals 3; Defensive: target ally heals 3
+- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
+- WITNESS — Target ally heals 6 HP; Defensive: target ally heals 6 HP
 - FLOW — You may change position; Defensive: you may change position
