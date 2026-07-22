@@ -23,7 +23,7 @@ No current taxonomy applies. Scholars who have examined them cannot agree on whe
 A tube emerges approximately once per minute from each active pore. It extends fully, holds for a few seconds, then begins to retract.
 
 **Harvesting:**
-- DC 12 Body/Sense to cut cleanly before retraction.
+- DC 12 Body/Senses to cut cleanly before retraction.
 - **Success:** 1 tube harvested. Tower is undisturbed.
 - **Failure:** Tube retracts faster than the cut. The Tower retracts all visible tubes and does not extend again for 1 minute.
 - **Touching the Tower body:** Triggers full retraction for 1 minute. Any contact — even incidental — counts.

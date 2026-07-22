@@ -64,7 +64,7 @@ Perception is not a single roll. When a character tries to notice something, the
 
 ---
 
-### Observe (Mind) — Pattern & Detail
+### Reason (Mind) — Pattern & Detail
 
 You notice information that must be interpreted.
 
@@ -74,7 +74,7 @@ You notice information that must be interpreted.
 
 ---
 
-### Sense (Body) — Timing & Physical Signal
+### Senses (Body) — Timing & Physical Signal
 
 You notice signals the body reacts to faster than thought.
 
@@ -98,8 +98,8 @@ You notice what is emotionally, socially, or spiritually present.
 
 When a player says *"I look around"* or *"I try to get a read on this,"* ask one question: **What are you trying to notice?**
 
-- *What it is* → **Observe (Mind)**
-- *When or where it happens* → **Sense (Body)**
+- *What it is* → **Reason (Mind)**
+- *When or where it happens* → **Senses (Body)**
 - *What it intends or signifies* → **Read (Soul)**
 
 This keeps perception active and specific. Vague sensing gets vague results. A player who names what they're looking for — and is right about which mode applies — gets a sharper answer on success.

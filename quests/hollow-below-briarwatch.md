@@ -171,14 +171,14 @@ Three visible cracks in the ceiling. Loose shale underfoot, sitting in water dee
 
 | Action | Pressure Roll? | Notes |
 |--------|----------------|-------|
-| Inspect ceiling | No | Observe/Sense check reveals crack severity |
+| Inspect ceiling | No | Reason/Senses check reveals crack severity |
 | Stabilize cracks | Yes on fail | Slow — DC 13 Body or Mind |
 | Dig through rubble | Yes | 3 successes to clear |
 | Blast through | Yes + Yes | Two rolls |
 | Look around | No | May find buried support beam — DC 13 to place; removes Pressure Die on success |
 | Flee | No | Always open |
 
-**A quiet look before the loud option pays off.** An Easy Observe/Sense check on the rubble pile itself (not just the ceiling) can spot a gap already worth exploiting — clearing it wide enough to pass then costs a single Standard (DC 13) Body check instead of the full 3-success brute-force dig, and doesn't trigger the Pressure Die at all if the check succeeds clean. A critical success clearing that gap can turn up something real in the debris: this rubble is a recent fall, and a live Emerald Frog (`bestiary/emerald-frog.md`) — the Hollow's own rare, gem-toned population, one of the last places they're still found at all — is exactly the kind of find worth surfacing here.
+**A quiet look before the loud option pays off.** An Easy Reason/Senses check on the rubble pile itself (not just the ceiling) can spot a gap already worth exploiting — clearing it wide enough to pass then costs a single Standard (DC 13) Body check instead of the full 3-success brute-force dig, and doesn't trigger the Pressure Die at all if the check succeeds clean. A critical success clearing that gap can turn up something real in the debris: this rubble is a recent fall, and a live Emerald Frog (`bestiary/emerald-frog.md`) — the Hollow's own rare, gem-toned population, one of the last places they're still found at all — is exactly the kind of find worth surfacing here.
 
 ---
 
@@ -207,6 +207,10 @@ Narrow serpentine tunnel. Twisting S-curve. One elevated shelf, one soft floor z
 **Deep Stream Channel**
 
 Natural underground stream. Wider. Fast-moving water. Predator avoids strong flow — usable as a safety boundary. Water here originates deeper, not from irrigation. **This is the actual source** of the current now rising through Flood Shelf Chamber and the Split Seam above — the same water, followed upstream to where it genuinely starts, not the irrigation seepage that gets blamed for the rest of the dungeon's dampness.
+
+**This is the real cutoff.** The channel runs 10 ft deep here — swimmable, but not casually. Crossing it against the current is a Hard (DC 16) Body (Senses) check; failure doesn't drown anyone outright, but it costs equipment, position, or both, GM's call based on the fiction. Give the warnings generously before anyone commits: the water's colder here than anywhere else in the Hollow, moving with a weight that isn't just current — something upstream is displacing it. Debris rides the surface at a rhythm too even to be random. No Stonecoil sign anywhere close to the water's edge, which is itself the tell — even the lesser ones won't come near this.
+
+**Two ways past this point, and only one of them is the fight nobody's built yet.** The intended route doesn't cross the channel at all — it goes back to the Borrowers, who already know how to redirect water like this (Mediation Arc, Player Pathways, below; the Borrowers "divert water to prevent flooding" as a matter of course). Forcing a crossing instead — swimming it, fighting through, pushing past every warning this section gives — is what actually risks waking what's on the other side: the Greater Stonecoil (Old Flow Channel, below), not yet balanced as an encounter. If a party forces this specific chokepoint rather than solving it, that fight is a live GM call, not a pre-built one — run it on the fly, or pause and build it properly first.
 
 ---
 
@@ -278,6 +282,7 @@ It is not roaming. It is below. Sleeping or conserving. It has no interest in th
 **Release conditions:**
 - *Primary* — Pressure 4: structural failure in Old Flow Channel destabilizes the barrier
 - *Secondary* — Abrupt water diversion: players redirect underground flow too aggressively or seal seepage suddenly; rapid pressure change travels downward, releasing it before Pressure 4
+- *Tertiary* — Forcing a crossing at Deep Stream Channel instead of solving it: a party that fights or swims its way past that chokepoint rather than going back for Borrower help risks waking it directly, independent of the Pressure Track
 
 When released, it does not stalk. It moves. Slow, heavy, unstoppable through narrow stone. Bursts through weakened seams. Collapses marginal tunnels. Kills lesser Stonecoils incidentally. Destroys Borrower infrastructure if in path. Avoids strong open water flow. Seeks deeper stable rock.
 

@@ -26,7 +26,7 @@ When a character flees and the pursuer gives chase, set up a two-marker track in
 
 **Caught** — The pursuer's marker reaches the fleeing party's marker.
 
-**Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Observe check, DC set by GM based on terrain and time elapsed).
+**Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Reason check, DC set by GM based on terrain and time elapsed).
 
 ---
 

@@ -22,7 +22,7 @@ Near the Echoing Plaza, it may absorb the ambient screams from the air and proje
 
 ## Combat Notes
 
-The blink interval is the key mechanic. Attacks timed between blinks can land; attacks timed during a blink pass through empty air. Observant players (Mind / Observe) may be able to read the cadence.
+The blink interval is the key mechanic. Attacks timed between blinks can land; attacks timed during a blink pass through empty air. Observant players (Mind / Reason) may be able to read the cadence.
 
 ---
 

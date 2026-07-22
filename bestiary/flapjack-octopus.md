@@ -18,7 +18,7 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 ## Passives
 
 **Floor Mimic**
-While stationary and Flattened, requires a DC 14 Mind/Observe check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
+While stationary and Flattened, requires a DC 14 Mind/Reason check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
 
 **Self-Tenderizing**
 While Flattened, gains Resist 1 from natural compression of its body.
@@ -32,7 +32,7 @@ The Octopus presses flat against the nearest surface. Gaining Flatten costs an a
 
 The Octopus wants to Flatten, wait for detection to lapse, Surge once, then Flatten again. It doesn't commit to extended melee — it scores one hit and resets.
 
-Detection collapses the strategy. A party making active Observe checks removes most of its advantage. The counter is keeping it moving: it can't mimic while repositioning.
+Detection collapses the strategy. A party making active Reason checks removes most of its advantage. The counter is keeping it moving: it can't mimic while repositioning.
 
 Ink Cloud is the reset button. Use it when the party has it pinned — it wipes the board and lets it re-enter stealth.
 

@@ -61,8 +61,8 @@ A navigation check is required when attempting to change location — even when 
 
 | Mode | Stat | Used When |
 |------|------|-----------|
-| Observe | Mind | Reading the environment analytically |
-| Sense | Body | Navigating by physical instinct or feel |
+| Reason | Mind | Reading the environment analytically |
+| Senses | Body | Navigating by physical instinct or feel |
 | Read | Soul | Interpreting the forest's intent or mood |
 
 ---
@@ -163,14 +163,14 @@ Their eyes hold yours.
 
 ### Pressure 3 — The Pathless Child Trial
 
-A skill-based routing challenge. All checks are DC 13. Likely Sense (Body) heavy.
+A skill-based routing challenge. All checks are DC 13. Likely Senses (Body) heavy.
 
-**The Binary Trail** *(Mind / Observe)*
+**The Binary Trail** *(Mind / Reason)*
 You find a barefoot print pressed deep into soft mud, heading North. Simultaneously, a cluster of white flowers ten feet to the East is bent and crushed, as if someone just ran over them.
 
 *Choice:* Follow the Heavy Mark (the print) or the Light Interruption (the flowers)? One leads deeper into the chase; the other leads to a dead end.
 
-**The Whispering Canopy** *(Body / Sense)*
+**The Whispering Canopy** *(Body / Senses)*
 The brush is so thick it feels like a wall, but you see the Child's red cloak flash through a gap to the left. At that exact moment, the branches to your right shiver and thrum rhythmically, as if something just brushed past them.
 
 *Check:* Body check to push through the resisting brush. On failure, the forest tightens and you lose the scent.
@@ -304,11 +304,11 @@ A clearing dense with Luminova growth — translucent leaves emitting soft biolu
 
 Old trees with heavily grooved bark. The overhanging bark creates natural alcoves along each trunk. Closer inspection reveals something inside each one.
 
-DC 13 Mind/Observe to spot the nests before entering. On failure, the party disturbs the colony.
+DC 13 Mind/Reason to spot the nests before entering. On failure, the party disturbs the colony.
 
 **Encounter:** See `bestiary/future-lock-wasp.md` for swarm mechanics, save DCs, and dispersal methods. Fire is risky here — dense canopy, DM discretion on spread.
 
-**Harvest:** DC 14 Body/Sense to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
+**Harvest:** DC 14 Body/Senses to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
 
 **Loot:** Future-Lock Wasp Larvae. See `items/turnroot-weald-items.md`.
 

@@ -16,7 +16,7 @@ Teach players:
 
 **Location:** The collapsed sinkhole on the Well Property. Loose soil. Exposed roots. The ground hasn't decided what it is yet.
 
-**Reading the ground, before anyone gets close:** Mind (Observe). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
+**Reading the ground, before anyone gets close:** Mind (Reason). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
 - *DC 11 (Easy):* The basics — loose soil, exposed roots, and a scatter of small, deliberately round openings along the rim. Burrow entrances, unmistakably dug, not natural cracks.
 - *DC 16+:* Real scale. How far down this actually goes, roughly how many entrances there are, whether anything is currently moving in them. This tier is where the sinkhole stops being a set piece and starts being intelligence. **At this tier, also visible from the rim only — never from inside the tunnels below — a broken stone pillar standing in the center of the pit, sheared off partway up, exactly where the collapse tore through it.** It reads as structural, not natural, if anyone looks twice: too regular, too deliberately placed to be a chance formation. What it actually was, and who built it, is GM knowledge (below) — nothing here confirms that to the party, just that something man-made stood here before the ground gave way.
 

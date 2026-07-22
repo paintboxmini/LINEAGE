@@ -45,7 +45,7 @@ An old pickup sits in the yard when the father and oldest boy are home. **When i
 The scratching-and-crying "cat" reads differently the longer anyone actually listens.
 
 - **DC 13 Read** — the rhythm's wrong for an animal. It pauses when it's yelled at. Cats don't wait to see if you're still angry.
-- **DC 16 Observe** — the holes the mother's broom has already punched through the plaster are placed like someone's aiming, not swatting blind. She's been at this a while.
+- **DC 16 Reason** — the holes the mother's broom has already punched through the plaster are placed like someone's aiming, not swatting blind. She's been at this a while.
 - **Fail both** — the party treats it as a cat, same as the family does, until something forces the truth: she cries a real word, or she's found directly.
 
 ---

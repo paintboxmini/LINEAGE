@@ -12,7 +12,7 @@ The floor is not safe to walk across without attention. The walls are colonized.
 
 The floor of The Trench is covered in Death-Ball Sponge colonies — calcified growths that blend with the pale stone. Moving through without triggering one requires watching where you step.
 
-**Floor check:** DC 13 Mind/Observe to spot a colony before entering it. Failure triggers the sponge — see `bestiary/death-ball-sponge.md` for mechanics.
+**Floor check:** DC 13 Mind/Reason to spot a colony before entering it. Failure triggers the sponge — see `bestiary/death-ball-sponge.md` for mechanics.
 
 The safe paths through the colonies are narrow and irregular. The Flapjack Octopus has mapped them. It lies flat along those paths.
 
@@ -51,7 +51,7 @@ See `bestiary/elder-tower-creature.md`.
 |--------|-------|-------|
 | Death-Ball Sponge | Sponge body | Hooks removed before use — requires tools and time |
 | Flapjack Octopus | Octopus body, ink sac | See `bestiary/flapjack-octopus.md` |
-| Elder Tower Creature | Tubes | DC 12 Body/Sense per tube, patience required |
+| Elder Tower Creature | Tubes | DC 12 Body/Senses per tube, patience required |
 
 All three source ingredients for the Gilded Tusk's Naturalist Collection. See `locations/gilded-tusk.md`.
 

@@ -93,8 +93,8 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
 | Stat | Color | Perception Mode | Damage Die |
 |------|-------|-----------------|------------|
-| Mind | Blue | Observe | d6 (utility) |
-| Body | Red | Sense | d8 (power) |
+| Mind | Blue | Reason | d6 (utility) |
+| Body | Red | Senses | d8 (power) |
 | Soul | Green | Read | d4 (precision) |
 
 *(Bumped +2 sides across the board, 2026-07-22 — a global combat-speed/lethality change, not just a typical-die shift. Every card's own printed die moved the same way; individual `cards/*.md` files still need to be swept to match — see memory.md, Pending propagation.)*
