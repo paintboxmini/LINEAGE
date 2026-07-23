@@ -106,8 +106,16 @@ class ScryMixin:
         ranked = sorted(seen, key=threat)           # weakest first
         half = max(1, len(ranked) // 2)
         junk = ranked[:half][::-1]                  # low threat, weakest last -> drawn next
-        bury = ranked[half:]                        # threats + counter color -> bottom
-        return junk, bury
+        rest = ranked[half:]                        # threats + counter color
+        # The single most dangerous card seen gets binned instead of merely
+        # delayed — why bury a real threat for later when you could get rid
+        # of it now? (Binned defaults to discard; a card can redirect it
+        # elsewhere via scry's bin_to, e.g. REGISTERED sends it to exile.)
+        # Only fires when there's a genuine second tier to draw from — a
+        # Scry 1 card still just leaves its one card on top, unchanged.
+        binned = [rest[-1]] if rest else []
+        bury = rest[:-1] if rest else []
+        return junk, bury, binned
 
 
 def legal_attacks(engine, me, foe):

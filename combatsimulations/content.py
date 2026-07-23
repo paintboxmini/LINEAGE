@@ -1113,7 +1113,10 @@ def _your_turn_will_come_defense(engine, me, foe):
     engine.initiative_shift(foe, -2)   # foe = the attacker, from a defense call
 
 def _registered_effect(engine, me, foe):
-    engine.scry(me, foe, 2)   # the Host reads and rearranges the target's own top 2 — "the ledger already knew"
+    # the Host reads the target's own top 2 — "the ledger already knew" — and
+    # whatever the policy would have sent to discard gets struck from the book
+    # instead: exiled, not just re-filed, so it doesn't come back before combat ends
+    engine.scry(me, foe, 2, bin_to=foe.exile)
 def _registered_defense(engine, me, foe):
     me.ward = True
 

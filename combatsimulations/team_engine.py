@@ -180,15 +180,16 @@ class Battle:
         for _ in range(n):
             target.hand.append(self.exhaust_card)
 
-    def scry(self, actor, owner, x):
+    def scry(self, actor, owner, x, bin_to=None):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
         if not seen:
             return seen
         plan = actor.policy.scry_plan(self, actor, owner, seen)
         top, bottom = plan[0], plan[1]
         binned = plan[2] if len(plan) > 2 else []
+        dest = bin_to if bin_to is not None else owner.discard
         for c in binned:
-            owner.discard.append(c)
+            dest.append(c)
         for c in bottom:
             owner.deck.insert(0, c)
         for c in top:

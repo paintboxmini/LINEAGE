@@ -768,18 +768,23 @@ class Duel:
     def reposition_after(self, me, target):
         _reposition_after(self.queue, me, target)
 
-    def scry(self, actor, owner, x):
+    def scry(self, actor, owner, x, bin_to=None):
         """Look at the top x of owner's deck; the actor's policy decides which go
         back on top and which to the bottom. Returns the cards seen (some cards,
-        e.g. ALIGN, care what they were). to_top[-1] ends up drawn next."""
+        e.g. ALIGN, care what they were). to_top[-1] ends up drawn next.
+        bin_to overrides where the policy's discard-pile choice actually lands
+        (default owner.discard) — e.g. REGISTERED redirects it to owner.exile,
+        since the ledger doesn't just re-file what it doesn't like, it can
+        strike it from the book for the rest of combat."""
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
         if not seen:
             return seen
         plan = actor.policy.scry_plan(self, actor, owner, seen)
         top, bottom = plan[0], plan[1]
         binned = plan[2] if len(plan) > 2 else []   # Scry can now bin to discard
+        dest = bin_to if bin_to is not None else owner.discard
         for c in binned:
-            owner.discard.append(c)
+            dest.append(c)
         for c in bottom:
             owner.deck.insert(0, c)
         for c in top:
