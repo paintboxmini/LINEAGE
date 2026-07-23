@@ -121,7 +121,7 @@ At Briarwatch, after the party finishes their job in the Hollow, Aege hands them
 
 The letter reads:
 
-> Four days west of Briarwatch, there is a forest. I grew up there. I haven't been back in a long time.
+> Past the edge of your own fields, there is a forest. I grew up there. I haven't been back in a long time.
 >
 > My family sent word. The animals at the edges have changed behavior. More aggressive. Moving in patterns they don't usually move in. My family doesn't frighten easily.
 >
