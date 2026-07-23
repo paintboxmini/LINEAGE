@@ -1744,6 +1744,36 @@ TEMPO_DECK = [      # Mind 4 — control/tempo denial
 ]
 TEMPO_STATS = dict(mind=4, soul=3, body=2)
 
+# Four Oracle-drafted test players (2026-07-23) — built by actually simulating
+# `rules/character-creation.md`'s real draft process (3 random cards offered,
+# pick 1, unchosen return to the shared pool, rotate pick order, repeat to 9
+# cards each) against the 103-card core pool that's both printed untagged in
+# cards/*.md and registered below, with a naive "new player" pick heuristic
+# (prefer the offered card matching your highest stat's color, tie-broken by
+# base_die). Not hand-tuned archetypes like the roster above — these stand in
+# for what an actual new table produces, for testing real party comps against
+# real creature encounters rather than symmetric mirrors.
+GARRET_STATS = dict(mind=5, body=2, soul=2)
+GARRET_DECK = [
+    "PARTITION", "BARRIER", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
+    "UNDERSTANDING", "SEISMIC REDIRECT", "UNNAME", "DIG IN",
+]
+BRASCA_STATS = dict(mind=2, body=5, soul=2)
+BRASCA_DECK = [
+    "IRON GRIP", "DOUBLE DOWN", "RALLY", "IRON GRIP", "PUSH",
+    "SACRIFICE STRIKE", "IRON GRIP", "ROLLOUT", "EMERGENCY REPAIRS",
+]
+WYN_STATS = dict(mind=2, body=2, soul=5)
+WYN_DECK = [
+    "DELAY", "YOU'RE NEXT", "URGENCY", "DEAD RECKONING", "VOID",
+    "CHAIN", "SEED", "ACCEPTANCE", "COMMUNION",
+]
+TALLIS_STATS = dict(mind=3, body=3, soul=3)
+TALLIS_DECK = [
+    "PAIN IS FUEL", "SEED", "FRACTURE", "STRIKE", "PREDICT",
+    "BREAK", "BURN BRIGHT", "PREDICT", "RETALIATE",
+]
+
 # The Patient Host — CTR 24 boss, bespoke HP (bestiary/the-patient-host.md).
 # Deck exactly as listed there: 5 signature + 19 core-fill, 8 Blue/6 Red/10 Green.
 PATIENT_HOST_DECK = [
@@ -1768,4 +1798,8 @@ ROSTER = {
     "vanguard": (VANGUARD_STATS, VANGUARD_DECK),  # Body 4 — tank/protection
     "tempo":    (TEMPO_STATS, TEMPO_DECK),        # Mind 4 — control/tempo
     "patient_host": (PATIENT_HOST_STATS, PATIENT_HOST_DECK),  # CTR 24 boss, bespoke HP 66
+    "garret": (GARRET_STATS, GARRET_DECK),    # Oracle-drafted test player, Mind5/Body2/Soul2
+    "brasca": (BRASCA_STATS, BRASCA_DECK),    # Oracle-drafted test player, Mind2/Body5/Soul2
+    "wyn":    (WYN_STATS, WYN_DECK),          # Oracle-drafted test player, Mind2/Body2/Soul5
+    "tallis": (TALLIS_STATS, TALLIS_DECK),    # Oracle-drafted test player, Mind3/Body3/Soul3
 }
