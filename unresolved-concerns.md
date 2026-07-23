@@ -22,7 +22,6 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 ## Canon & World
 
 - **The Underground Bazaar has zero mechanical items** — a real gap, nothing built yet. (How pricing would work there — memory/secret/debt economy, not gold — is open design, not debt itself; don't assume standard gold pricing transfers when this gets built.) *Trail: `rules/items.md`, Underground Bazaar section.*
-- **The Carrion Feather's trigger doesn't fire in the Washed Ashore continuity** — its Source line says "upon delivering the party to Briarwatch," which doesn't happen in that opening (Aege leaves the Roadhouse ahead of them). Needs its own moment if it exists there at all. *Trail: `quests/washed-ashore.md`.*
 
 ## Process
 
