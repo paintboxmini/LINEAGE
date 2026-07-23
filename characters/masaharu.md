@@ -59,7 +59,7 @@ He is most dangerous when he has had one full cycle to read the party.
 
 **Signature cards:** `cards/masaharu.md` — unique to Masaharu, not transferable.
 
-**Core cards (2 Blue / 3 Red / 4 Green):**
+**Core cards (2 Blue / 2 Red / 4 Green):** *(fixed 2026-07-23 — this deck ran a 1-card Red overcount since before this session, 4 total against Body 3; cut ENDURE as the least identity-specific of the three Red core picks. GROUNDING STANCE and BURN BRIGHT both reinforce the immovable-Backline-sniper identity directly; ENDURE was generic Resist/heal filler that any deck could run.)*
 
 *Blue — Mind*
 - PROFILE — Scry 2; Defensive: Staggered on attacker
@@ -68,7 +68,6 @@ He is most dangerous when he has had one full cycle to read the party.
 *Red — Body*
 - GROUNDING STANCE — Ignore forced repositioning; Defensive: Resist
 - BURN BRIGHT — Exile 1 from hand, +2 damage (Ranged); Defensive: Exile from discard
-- ENDURE — Gain Resist; Defensive: Heal 3 HP
 
 *Green — Soul*
 - DEAD RECKONING — Defender gains Weak; Defensive: Attacker gains Blind

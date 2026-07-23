@@ -64,41 +64,13 @@ The third generation is the most comfortable. The cubs have always been there. T
 
 **The Waterfront** — the one place on Canille where masks are never worn. Cubs move here freely. Some villagers have noticed the cubs behave differently at the waterfront. None have asked about it.
 
-**The Old One's House** — the oldest living scientist, at the edge of the village. She doesn't come to the hall much. She watches the cubs from her window. She has a name for what they are — the real name, the answer to the original question — that she has not said out loud in thirty years. She is the last one who knows it.
-
-*Name pending.*
+**The Old One's House** — Hess's house, at the edge of the village (`characters/hess-and-cob.md`). She doesn't come to the hall much. She watches the cubs from her window. She has a name for what they are — the real name, the answer to the original question — that she has not said out loud in thirty years. She is the last one who knows it.
 
 ---
 
 ## Key Characters
 
-**Hess** — the oldest living founder. Slight, slow-moving, still precise in small ways — the way she sets down a cup, the way she corrects a word in conversation. Was formidable once. Published work. Led the colony's early years with real conviction.
-
-At some point she arrived at the answer. She understood what it meant. She did not say it.
-
-The answer: they dropped the original goal of creating an equal, and replaced it with domestication.
-
-She has been watching from her window ever since.
-
-She avoids Cob. If asked why, she would say she finds the young ones tiring. This is not true.
-
-*If the party speaks with her:* she is warm, interested, asks good questions about where they've been. She will not bring up the cubs first. If the party does, she listens carefully and says very little. She does not lie. She also does not say the thing.
-
----
-
-**Cob** — third-generation cub. Medium-sized, darker fur than most, a white patch on the left shoulder that the second-generation family who raised them always called a marking of distinction. Cob has never commented on this.
-
-Cob asks questions. Not aggressively — with genuine curiosity, in the middle of normal conversation, at the moment when everyone has relaxed. *"Why this mask and not the other one?"* *"Who decided what the Kennels should be called?"* *"Do you think Hess is happy?"*
-
-The village has learned to redirect quickly. They are very good at it. They describe Cob as bright, a little unusual, still finding their footing. The third-generation children who grew up alongside Cob are fond of them in the specific way you're fond of someone whose edges you've learned to route around.
-
-Cob is not angry. Anger would be a position. This is something more open than that — a genuine interest in the answers, paired with an awareness that the answers aren't coming. Cob has not decided what to do with this yet.
-
-*At the waterfront, without the mask:* different. Quieter. Sits near the water for long stretches. Occasionally looks back toward the village with an expression nobody from town has seen.
-
-*What Cob has noticed about Hess:* that she changes her route to avoid passing close. That she watches from the window. That she is the only person on the island who looks at Cob like she already knows the answer to every question Cob is asking.
-
-Cob has not approached her. Not yet.
+**Hess and Cob** — the oldest founder and the third-generation cub closest to asking the question that leads to what she knows. Full profiles, backstory, and their relationship to each other now live in `characters/hess-and-cob.md`.
 
 ---
 
@@ -121,3 +93,4 @@ The village stopped asking it. That is not the same as answering no.
 ## Related Documents
 
 - `world/geography-overview.md` — lake island northeast of Vulture's Nest
+- `characters/hess-and-cob.md` — full profiles for the village's two key characters

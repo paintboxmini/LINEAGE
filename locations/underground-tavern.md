@@ -61,11 +61,7 @@ Most of them are losing ground. The tables are where they come to feel like the 
 
 ## Lily — At the Tavern
 
-She comes here sometimes. Always the same corner table if one is free. Mortis pours without being asked.
-
-She and Mortis don't talk much. They don't need to. Two people who know exactly what they are and have made their peace with it in completely different directions.
-
-If players have already encountered Lily in the bazaar and she has a commission, she may be here between hunts. She does not appear troubled by this.
+Full profile now lives in `characters/lily.md`. Comes here sometimes, same corner table if one is free — Mortis pours without being asked, same as he does for Kess.
 
 ---
 

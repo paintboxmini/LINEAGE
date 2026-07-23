@@ -103,19 +103,7 @@ Clients can theoretically reclaim what they've sold — but only by returning th
 
 **Lily — The Dream-Hunter**
 
-She does not advertise. You find out about Lily the way you find out about anything true in the bazaar — someone mentions her sideways while talking about something else.
-
-She sits in the same corner every time. Not because she claimed it. The corner claimed her.
-
-She charges in sleep. One night of yours, paid in advance. Not your memories of it — the sleep itself. You wake rested but the night is simply gone. No dreams. No record. She was there instead.
-
-She will not tell you what she found. She will tell you what's coming. Not when. Just the shape of it.
-
-Her line, delivered after reading the spread:
-
-*"I'm not going to hurt them. I'm just going to be there."*
-
-Players will hear that as reassurance the first time.
+Full profile now lives in `characters/lily.md`. Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
 
 **The Cartographer — Personal Geography**
 
@@ -193,15 +181,7 @@ Granddaughter of the Cartographer. Full profile — backstory, the mine, her con
 
 **Moth**
 
-Carries a coin purse that never gets lighter no matter how much he spends. He does not examine this.
-
-He spends freely. Not carelessly — deliberately. As if the exit math is someone else's problem. As if he decided, at some point, that getting out is not the goal.
-
-Kess finds this maddening. He finds her planning exhausting. They have reached an understanding.
-
-Has been coming here long enough to know the rhythms, the vendors worth finding, the lines worth joining. He plays Liar's Dice at the tavern table most nights — loses cheerfully and consistently, never runs out of swines to lose. The house gremlin has flagged him as a person of interest and cannot find a rule he's breaking. The debt he's accumulated is significant. The gremlin watches him with professional wariness.
-
-What the coin purse arrangement actually is: unknown. What he wants: unknown. Whether he can leave: unknown. These are not gaps to be filled in — they're the design.
+Full profile now lives in `characters/moth.md`. Found here spending freely from a coin purse that never gets lighter, playing Liar's Dice at the tavern table most nights, watched with professional wariness by the house gremlin, who has flagged him as a person of interest and cannot find a rule he's breaking.
 
 ---
 
