@@ -439,3 +439,23 @@ Effect: If target is Frontline, deal +d6 additional damage.
 Defensive Bonus: Attacker gains Rooted.
 Range: Melee
 *"It does not aim. It arrives."*
+
+---
+
+**TABLE STAKES**
+RED — BODY
+Attack: Body + d6
+Effect: Discard 1 random card from your hand. If it was Red, deal 4 unpreventable damage. If it was Blue, target gains Staggered. If it was Green, heal yourself and all allies 3 HP.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Everyone puts something in before they see the cards."*
+
+---
+
+**DOUBLE DOWN**
+RED — BODY
+Attack: Body + d6
+Effect: On a clean win, immediately make another attack against the same defender — a full second RPS exchange, new cards revealed on both sides, resolved completely before your turn ends.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Melee
+*"The house never minds a second bet."*

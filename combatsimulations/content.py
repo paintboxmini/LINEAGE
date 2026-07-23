@@ -1351,6 +1351,38 @@ def _youre_next_effect(engine, me, foe):
 def _youre_next_defense(engine, me, foe):
     engine.deal(foe, 3, unpreventable=True)
 
+# WILD CARD (Gambler archetype, core Green) — no damage/effect/defense of its
+# own registered on purpose: the swap in engine.py's _reveal_top_of_deck_swap
+# (called from both engines' attack(), right after an outcome is reached)
+# always substitutes the top card of the attacker's own deck before any of
+# these would fire. This card's own functions only matter in the genuinely
+# rare case the deck AND discard are both empty (nothing left to reveal) —
+# then it resolves as a plain Soul + d4 hit with no Effect, a harmless
+# do-nothing rather than a crash.
+
+# TABLE STAKES (Gambler archetype, core Red) — discard 1 random card from
+# your own hand (any card, status cards included — discarding an Injury this
+# way is a fine outcome, not excluded the way CONSUME excludes them from its
+# own "destroy for value" cost); the discarded card's own printed color
+# decides what happens. Colorless discards (FOLLOW-UP, BECOMING) or an empty
+# hand simply whiff — the gamble doesn't always pay off.
+def _table_stakes_effect(engine, me, foe):
+    if not me.hand:
+        return
+    idx = engine.rng.choice(range(len(me.hand)))
+    discarded = me.hand.pop(idx)
+    me.discard.append(discarded)
+    if discarded.color == 'R':
+        engine.deal(foe, 4, unpreventable=True)
+    elif discarded.color == 'B':
+        foe.staggered = True
+    elif discarded.color == 'G':
+        engine.heal(me, 3)
+        for ally in engine.allies(me):
+            engine.heal(ally, 3)
+def _table_stakes_defense(engine, me, foe):
+    me.resist += 1
+
 
 # ============================ REGISTRY =======================================
 
@@ -1592,6 +1624,11 @@ def build_cards():
         effect=_ledger_effect, defense=_ledger_defense)
     add("YOU'RE NEXT", 'G', 'soul', 'both', 6,
         effect=_youre_next_effect, defense=_youre_next_defense)
+
+    # Gambler archetype (core) — cards/green-soul.md, cards/red-body.md
+    add("WILD CARD", 'G', 'soul', 'both', 4)
+    add("TABLE STAKES", 'R', 'body', 'both', 6,
+        effect=_table_stakes_effect, defense=_table_stakes_defense)
 
     # Status card
     add("INJURY", None, None, None, None, is_status=True)

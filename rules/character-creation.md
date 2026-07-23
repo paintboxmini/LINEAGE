@@ -133,6 +133,16 @@ A long rest requires genuine safety and uninterrupted time. The GM determines wh
 
 ---
 
+## Archetypes
+
+An archetype is a recognizable playstyle, not a class — a pattern that emerges from which cards and stats a character actually leans on, not a box picked at creation. Most characters are a blend of more than one; a character can fit an archetype well without being *only* that archetype, and usually is a mix in practice.
+
+**The Gambler** — built around variance instead of certainty: cards that hand real value to chance rather than a guaranteed number. Representative cards: WILD CARD (`cards/green-soul.md` — a clean win or a defended hit gets decided by the top of your own deck, not by the card you actually played), TABLE STAKES (`cards/red-body.md` — a random discard from your own hand decides the payoff by color), DOUBLE DOWN (`cards/red-body.md` — risk a full second attack exchange on the strength of the first; canon text only, not yet wired into the sim — see Pending Propagation in `memory.md`). In the actual party: Steele fits the Gambler archetype best, Lefty second — neither purely, same as anyone else.
+
+*More archetypes get added here as they come up. Not a fixed list, not a mechanical category the game itself tracks — a reference for talking about how a character actually plays.*
+
+---
+
 ## Magic Expression
 
 When you play a card, you choose what it looks like.

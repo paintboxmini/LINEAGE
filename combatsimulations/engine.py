@@ -407,6 +407,39 @@ def _discard_or_return(who, card):
         who.discard.append(card)
 
 
+def _reveal_top_of_deck_swap(engine, owner, card):
+    """WILD CARD (Gambler archetype, cards/green-soul.md): its own color decides
+    the RPS reveal, same as any other card, but the moment an outcome is
+    reached that will actually use it, the top card of ITS OWN PLAYER'S deck
+    (`owner` — whichever side is holding WILD CARD, attacker or defender) is
+    revealed and substitutes for WILD CARD entirely: that revealed card's
+    stat/die/Effect/Defensive Bonus drive everything from here on. Symmetric
+    by design — WILD CARD works the same whether played as the attack (Effect
+    side) or chosen as the defense (Defensive Bonus side); each side only
+    ever reveals from its OWN deck, never the opponent's. WILD CARD needs no
+    Effect or Defensive Bonus of its own — it's never the card that actually
+    resolves one. Called once per side, only where that side's resolution
+    will actually use the card (attacker: right after rps() resolves, and on
+    an uncontested win; defender: right before its Defensive Bonus fires, in
+    both the tie and defender-win branches — never in the attacker-win
+    branch, where the defender's card never resolves at all, so revealing
+    there would burn a card off their deck for nothing).
+    Both WILD CARD itself (already sent to discard earlier in attack(), per
+    the normal reveal timing) and the revealed card (discarded here) end up
+    in the discard pile. `draw_one` already reshuffles discard into deck if
+    the deck's empty; if both are empty, there's nothing to reveal — WILD
+    CARD resolves as itself (no Effect, no bonus damage), a rare, clean
+    do-nothing rather than a crash."""
+    if card.name != 'WILD CARD':
+        return card
+    revealed = owner.draw_one(engine.rng)
+    if revealed is None:
+        return card
+    owner.discard.append(revealed)
+    engine._say(f"  WILD CARD reveals {revealed.name} off the top of the deck — it replaces the attack")
+    return revealed
+
+
 def _leave_wheel(engine, queue, who):
     """A combatant who leaves the fight entirely removes their slot, and the
     wheel closes around it (rules/combat.md, Joining and leaving). Plain list
@@ -994,6 +1027,7 @@ class Duel:
             # "colorless auto loses to any color... it only loses when it's
             # challenged by a card with an actual color" (Drew's rule) — no
             # challenge at all means no loss.
+            card = _reveal_top_of_deck_swap(self, attacker, card)
             self._resolve_attacker_win(attacker, defender, card, contested=False)
             defender._damage_floor = None
             return
@@ -1022,6 +1056,7 @@ class Duel:
             return
 
         outcome = self.rps(card, def_card, attacker, defender)
+        card = _reveal_top_of_deck_swap(self, attacker, card)
         if outcome == 'attacker':
             self._resolve_attacker_win(attacker, defender, card, contested=True)
         elif outcome == 'defender':
@@ -1035,6 +1070,7 @@ class Duel:
             # leak into a later attack that doesn't ask for it.
             attacker._redirect_dmg = card.damage(self, attacker, defender)
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
             attacker._redirect_dmg = None
         else:  # tie
@@ -1046,6 +1082,7 @@ class Duel:
             card.effect(self, attacker, defender)
             attacker._tie = False
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
         defender._damage_floor = None  # Equal Footing floor spent by any attack
 

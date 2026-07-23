@@ -25,7 +25,8 @@ from engine import (roll, RULING, can_attack, _ongoing_support_tick, _object_tic
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
                     _stamp_reveal, _resolve_follow_up, _color_label, _rushdown,
-                    _discard_or_return, _apply_collapse_death_check)
+                    _discard_or_return, _apply_collapse_death_check,
+                    _reveal_top_of_deck_swap)
 
 
 class Battle:
@@ -321,6 +322,7 @@ class Battle:
         if def_card is None:
             # no defense -> attacker auto-wins (full win), colorless included
             # — no challenge means no loss (Drew's colorless rule).
+            card = _reveal_top_of_deck_swap(self, attacker, card)
             self._resolve_attacker_win(attacker, defender, card)
             defender._damage_floor = None
             return
@@ -340,17 +342,20 @@ class Battle:
             return
 
         outcome = self._rps(card, def_card)
+        card = _reveal_top_of_deck_swap(self, attacker, card)
         if outcome == 'attacker':
             self._resolve_attacker_win(attacker, defender, card)
         elif outcome == 'defender':
             # see engine.py's Duel.attack() for why this is rolled here
             attacker._redirect_dmg = card.damage(self, attacker, defender)
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
             attacker._redirect_dmg = None
         else:  # tie
             card.effect(self, attacker, defender)
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
         defender._damage_floor = None
 
