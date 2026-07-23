@@ -4,7 +4,7 @@
 
 Seats are universal fundamental laws. They exist on a higher plane and affect the entire continent — not just local zones. They are not titles, not powers granted from above. They are structural features of existence: principles that reality already recognizes.
 
-The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, and others that may exist unnamed.
+The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, Storm, and others that may exist unnamed.
 
 **Seat States:**
 - **Filled** — Things work normally within that domain.
@@ -53,6 +53,8 @@ Archons can also **fade**. A domain whose practice dies in the world starves its
 **The Seat of Knowledge** — Awareness, not wisdom. Truth uncovered. Secrets revealed. Pattern recognized. Nothing hidden escapes it permanently.
 
 **The Seat of Blood** — Vitality, sacrifice, lineage. Life-force and inheritance and oath and cost. It is the price of continuation.
+
+**The Seat of Storm** — Storms, turbulence, the uncontrolled. Weather that answers to nothing. Its current bearer, if any, is not publicly known. See `items/lightning-loop.md` — the one confirmed Storm-aligned Artifact in the world carries only lightning, a narrow slice of the full domain.
 
 **The Night Ferryman** *(Navigation)* — Rows after curfew at Vulture's Nest, and further out when trust is earned. Speaks only in the smallest instructions that actually work — pick a hand, keep it on the wall, don't change it — and never explains further, because there isn't a further to give. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
 

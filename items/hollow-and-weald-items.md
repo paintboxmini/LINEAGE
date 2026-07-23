@@ -6,7 +6,11 @@ Items from the Briarwatch Hollow and the Turnroot Weald region. Hollow items sou
 
 **LUMINOVA LEAVES**
 *Consumable — Translucent, bioluminescent*
+*Source: harvestable in the field, Turnroot Weald (Luminova Clearing)*
+*Price: ~15 gold*
 Use: Heal 2 HP to self or one ally. The leaf goes dark when spent.
+
+Can be dried and ground into **Luminova Powder** (`items/turnroot-weald-items.md`) for increased potency — a real crafting step, not a duplicate item. The raw leaf is weaker but immediate; the powder trades a processing step for roughly double the healing.
 
 ---
 

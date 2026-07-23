@@ -20,11 +20,9 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/hollow-and-weald-items.md`*
 
-- **Luminova Leaves** — heal 2 HP. No confirmed Source line yet — flagged, see below.
+- **Luminova Leaves** — heal 2 HP. ~15 gold. *Source: harvestable in the field, Turnroot Weald (Luminova Clearing).* Can be ground into Luminova Powder (below) for roughly double the potency — a real crafting relationship, not a duplicate.
 - **Clay Bowl Tremor Detector** — party can't be surprised this encounter. *Source: Borrower goodwill.*
 - **Moving-Stone Map** — party acts before all Stonecoils, next combat only. *Source: Borrower goodwill.*
-
-**A real overlap worth resolving eventually**: Luminova Leaves (above, unsourced, heal 2) sits right next to **Luminova Powder** (below, sourced to Luminova Clearing in Turnroot, heal 4) — same plant, two items, one of them never got a proper home. Not fixed here; flagged for whoever touches this next.
 
 ---
 
@@ -34,7 +32,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 **Consumables**
 - **Echothorn Seed** — +2 to next damage/heal roll, free action. ~40 gold. *Source: The Thorne Throne.*
-- **Luminova Powder** — heal 4 HP. ~30 gold. *Source: Luminova Clearing.*
+- **Luminova Powder** — heal 4 HP. ~30 gold. *Source: Luminova Clearing.* Ground from Luminova Leaves (above) — the processed, more potent form of the same plant.
 - **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~60 gold. *Source: Rootstalker (rare).*
 - **Vision Shard** — Scry 3 on any deck. ~100 gold. *Source: The Mirror-Slick Pond.*
 
