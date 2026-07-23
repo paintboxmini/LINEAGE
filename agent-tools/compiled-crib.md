@@ -2,7 +2,7 @@
 
 A practical efficiency tool, not one of the four canonical kinds (`CLAUDE.md`, Four Kinds of Canonical Content) — it's a precompiled digest of facts the generators would otherwise re-derive from full canon reads every run: engine facts, calibration numbers, format templates. It cuts across Rule Definitions, Invariants, and Design Principles for speed; it doesn't hold canon of its own. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. If a pattern gets retrieved repeatedly to rediscover it, that's the signal to promote it into this file rather than re-deriving it next time.
 
-For actual best-in-class Tales Untold content — the pieces worth reading to calibrate what excellent looks like — see `archives/exemplars.md` instead (archived, not deleted; still true). That file is curated content; this one is a cheat-sheet.
+For actual best-in-class Tales Untold content — the pieces worth reading to calibrate what excellent looks like — see `agent-tools/exemplars.md` instead. That file is curated content; this one is a cheat-sheet.
 
 Read this + the target's location/bestiary file + anything your specific task actually touches. Go to the full canon files only when the task bends a rule, the crib looks stale, or you're checking a keyword's exact text.
 

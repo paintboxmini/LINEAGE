@@ -107,7 +107,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 ## Agent Workflow
 
 1. **Orient** — Read `memory.md`, then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
-2. **Do the work** — read the relevant canon, think it through, write it. `red-team.md` is the one surviving review tool; the rest of the old generator/checker layer is archived in `archives/` (see Translation Principle, below, for why).
+2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone, restored 2026-07-23), with `design-principles.md`/`exemplars.md` as the standard both measure against. The old generator layer stays archived in `archives/` (see Translation Principle, below, for why).
 3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Cover:
    - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
    - **Suggestions** — related content worth connecting, mechanical options Drew may not have considered
@@ -135,7 +135,7 @@ Before asking *who may change this* (the Canon Gate, below), know *what kind of 
 
 1. **Rule Definitions** — vocabulary. What something *is*, mechanically and precisely. Keyword texts (`rules/card-glossary.md`), formulas (`rules/core-rules.md`), procedures (`rules/combat.md`).
 2. **Invariants** (`rules/invariants.md`) — narrow, and specific to the combat simulator: a mathematical or computational fact that must hold inside the engine regardless of how a human visualizes the same thing at the table (e.g., total card count is conserved across a combatant's deck, hand, discard, and exile no matter how a human pictures the shuffle). Not a design standard — a computational one.
-3. **Design Principles** and **Exemplars** — archived (`archives/design-principles.md`, `archives/exemplars.md`), not deleted. Still true; no longer maintained as living doctrine. See Translation Principle, below, for why.
+3. **Design Principles** and **Exemplars** — living doctrine again (`agent-tools/design-principles.md`, `agent-tools/exemplars.md`), restored 2026-07-23 after a stint in `archives/`. The 2026-07-15 trim archived them as "true but never forced by a real failure," with a built-in condition: revisit with fresh eyes after real creative work. That condition was met and Drew called them back ("pretty sure those were rock solid and should have stayed"). What something *is* mechanically stays in Rule Definitions; what makes it *well-made* lives here.
 
 They blur because a real piece of content usually touches more than one at once — that's expected. The bug is a *file* absorbing another layer's job rather than staying narrow and pointing outward. This happened twice already, the same way: rule-definition bookkeeping quietly re-derived inside `invariants.md`, and then — even after that fix — design-craft principles ("a deck expresses behavior," "ecology drives mechanics") mislabeled as *invariant* right alongside genuinely computational facts like the turn-count-vs-wheel example, because both had been called by the same name. Both caught, both fixed. See `rules/invariants.md`'s header for the corrected, narrower scope.
 

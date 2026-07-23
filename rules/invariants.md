@@ -2,7 +2,7 @@
 
 An invariant is a mathematical or computational truth inside the combat simulator's engine — something that must hold regardless of how a human visualizes or tracks the same thing at the table. The visualization can vary, or be discarded entirely; the invariant is whatever survives underneath it.
 
-This file is scoped to the simulator only. It is not a design standard for what makes a mechanic feel right (that's `archives/design-principles.md` — archived, not deleted) and not a keyword's rules text (that's `rules/card-glossary.md`).
+This file is scoped to the simulator only. It is not a design standard for what makes a mechanic feel right (that's `agent-tools/design-principles.md`) and not a keyword's rules text (that's `rules/card-glossary.md`).
 
 ---
 
