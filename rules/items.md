@@ -27,7 +27,8 @@ Weapons and Armor both scale on the same three-tier system. Each tier is a **pow
 **The budget doesn't have to go entirely into the flat number.** A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:
 
 - **1 point ≈** +1 flat damage or reduction, **or** granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
-- Larger, spikier effects (Critical, Immunity, Fortress, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
+- Larger, spikier effects (Critical, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
+- **Not every keyword is worth the same point regardless of context — check actual value, don't just price by name.** Fortress reads like a strong defensive keyword but is genuinely one of the weakest through an action-economy lens: the party still eats the same total damage, just redirected onto whoever volunteered — no damage is actually prevented unless it's paired with something that mitigates the hit once it lands (Resist, Evade, and similar). Priced alone, it's worth well under 1 point — cheap enough to bundle in at Tier 1 alongside a real effect (e.g., start combat with Evade 1 and Fortress 1) rather than ever anchoring a tier by itself. The general lesson: price a keyword by what it actually does for the action economy, not by how strong it sounds.
 
 **Worked examples, exactly as specified:**
 - *Tier 1 weapon:* inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)
@@ -54,11 +55,11 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 **Armor**
 - *Tier 1:* Start combat with 1 Resist.
 - *Tier 1:* Inflict Staggered on the first enemy who successfully hits you each combat.
+- *Tier 1:* Start combat with Evade 1 and Fortress 1. (Fortress alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
 - *Tier 2:* −1 damage received; start combat with 1 stack of Thorns.
 - *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
 - *Tier 3:* −1 damage received; start combat with Resist; start combat with Evade. (Three-way split.)
 - *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
-- *Tier 3:* Start combat with Fortress.
 
 ---
 
