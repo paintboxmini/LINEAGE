@@ -27,10 +27,10 @@ At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue")
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
 
 **(11) Deadly**
-The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out — checked before either applies, not a race won by whichever was granted first.
 
 **(6) Weak**
-The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll.
+The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(9) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
@@ -77,7 +77,10 @@ Heal for half the damage this attack actually dealt to HP, rounded down — afte
 **(28) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
-Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks.
+Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
+
+**(0) Vulnerable**
+The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff (removable by Ward, like any other negative auxiliary effect). Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(13) Rooted**
 Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.

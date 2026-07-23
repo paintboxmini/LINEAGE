@@ -121,9 +121,17 @@ class Battle:
                     f._fortress = False
                     self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source, bypass_resist)
-        if not unpreventable and not bypass_resist and target.resist > 0:
+        # Resist/Vulnerable cancel 1-for-1 on consumption — see engine.py's
+        # Duel.deal() for the full reasoning (same pairing as Deadly/Weak).
+        if not unpreventable and target.resist > 0 and target.vulnerable > 0:
+            target.resist -= 1
+            target.vulnerable -= 1
+        elif not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
+        elif not unpreventable and target.vulnerable > 0:
+            amount = (amount * 3) // 2  # +50%, rounded down
+            target.vulnerable -= 1
         if not unpreventable and target._damage_floor is not None:
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)

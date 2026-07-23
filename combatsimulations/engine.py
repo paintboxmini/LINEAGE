@@ -43,8 +43,10 @@ def _rolled_die(die, rng, me):
     the base die, on purpose — the old "roll twice, take higher/lower"
     version scaled with base die size, quietly favoring whichever color
     rolls the bigger dice regardless of who actually holds the stack.
-    Deadly takes priority if both are somehow held at once (not a ruled
-    case, just a defensible tie-break). Bonus die bumped d4->d6 alongside
+    1 stack of Deadly and 1 stack of Weak cancel each other out on
+    consumption, rather than Deadly silently winning — Drew's own resolution
+    of what used to be an unruled tie-break, matching the same pairing given
+    to Resist/Vulnerable below. Bonus die bumped d4->d6 alongside
     the global base-die step-up (Drew: "deadly can be add 1d6") — Weak
     moved with it for the same reason the two were made symmetric in the
     first place (flagged, not separately confirmed, but leaving them
@@ -52,6 +54,10 @@ def _rolled_die(die, rng, me):
     functions (exploding dice, multi-hit cards) roll their own way and are
     NOT wrapped here — applying this generically to an arbitrary custom
     function risks doubling unrelated side effects, not just the die."""
+    if me.deadly > 0 and me.weak > 0:
+        me.deadly -= 1
+        me.weak -= 1
+        return roll(die, rng)
     if me.deadly > 0:
         me.deadly -= 1
         return roll(die, rng) + roll(6, rng)
@@ -513,6 +519,10 @@ class Combatant:
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
+        self.vulnerable = 0               # Vulnerable (card-glossary.md): next successful
+                                          # attack against me deals +50% damage, rounded
+                                          # down. Cancels 1-for-1 with Resist on consumption
+                                          # (deal()), same pairing as Deadly/Weak.
         self.evade = 0
         self.deadly = 0
         self.weak = 0
@@ -783,9 +793,18 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
-        if not unpreventable and not bypass_resist and target.resist > 0:
+        # Resist/Vulnerable cancel 1-for-1 on consumption, same pairing as
+        # Deadly/Weak in _rolled_die (Drew: both pairs cancel rather than
+        # stacking against each other). Checked before either modifier applies.
+        if not unpreventable and target.resist > 0 and target.vulnerable > 0:
+            target.resist -= 1
+            target.vulnerable -= 1
+        elif not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
-            target.resist -= 1  # one stack per attack
+            target.resist -= 1
+        elif not unpreventable and target.vulnerable > 0:
+            amount = (amount * 3) // 2  # +50%, rounded down
+            target.vulnerable -= 1  # one stack per attack
         if not unpreventable and target._damage_floor is not None:
             # Equal Footing floors ATTACK damage only — unpreventable damage (bleed,
             # thorns, status, HP costs) is not an attack and ignores the floor.
