@@ -62,10 +62,10 @@ class Battle:
     def attack_object(self, attacker, card, obj):
         """See engine.py's Duel.attack_object for the full reasoning."""
         owner = obj['owner']
-        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_protect', False)), None)
         if guard is not None:
-            guard._fortress = False
-            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            guard._protect = False
+            self._say(f"    PROTECT: {guard.name} takes the hit meant for {obj['kind']}")
             self.attack(attacker, guard, card)
             return
         attacker.hand.remove(card)
@@ -116,11 +116,11 @@ class Battle:
                 target._damage_redirect = None
                 self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
                 return self.deal(rt, amount, unpreventable, source, bypass_resist)
-            # Fortress Stance: a standing ally has volunteered to eat the next hit.
+            # Protect Stance: a standing ally has volunteered to eat the next hit.
             for f in self.allies(target):
-                if getattr(f, '_fortress', False):
-                    f._fortress = False
-                    self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
+                if getattr(f, '_protect', False):
+                    f._protect = False
+                    self._say(f"    PROTECT: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source, bypass_resist)
         # Resist/Vulnerable cancel 1-for-1 on consumption — see engine.py's
         # Duel.deal() for the full reasoning (same pairing as Deadly/Weak).

@@ -50,4 +50,4 @@ Built to make a fight happen where he wants it, not where it started. HOOK AND H
 - BIND — Defender gains Rooted; Defensive: attacker gains Rooted
 - ROOTED OATH — Anchored: target ally gains Deadly; Defensive: Anchored, target ally gains Resist
 - SYNCHRONY — Allies next to you in initiative heal 1 HP at the start of their turns, you heal too; Defensive: Gain Resist
-- SHARED BURDEN — Gain Fortress and Evade; Defensive: choose an amount, target ally gains that much HP and you lose that much HP
+- SHARED BURDEN — Gain Protect and Evade; Defensive: choose an amount, target ally gains that much HP and you lose that much HP

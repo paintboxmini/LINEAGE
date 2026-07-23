@@ -723,9 +723,9 @@ class Duel:
     def attack_object(self, attacker, card, obj):
         """Attacking an Object instead of a combatant: never rolls for damage,
         never triggers the attacking card's own Effect — it just destroys the
-        Object outright, and the card is discarded as normal. Fortress
+        Object outright, and the card is discarded as normal. Protect
         intercepts this exactly like it intercepts real attack damage: if
-        anyone on the Object's own side currently holds Fortress, this
+        anyone on the Object's own side currently holds Protect, this
         becomes a genuine attack against THEM instead (full RPS/damage/Effect
         resolution — the genuine article, not a stand-in), and the Object
         survives untouched. Not yet reachable by any policy in this sim
@@ -734,10 +734,10 @@ class Duel:
         decision infrastructure yet" gap this session. Real players and
         future smarter policies can call this directly."""
         owner = obj['owner']
-        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_protect', False)), None)
         if guard is not None:
-            guard._fortress = False
-            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            guard._protect = False
+            self._say(f"    PROTECT: {guard.name} takes the hit meant for {obj['kind']}")
             self.attack(attacker, guard, card)
             return
         attacker.hand.remove(card)

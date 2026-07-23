@@ -15,7 +15,7 @@ Deal this card's Attack damage back to the attacker. If a die is stated instead 
 Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
 **(1) Positive Status Effects**
-Evade, Resist, Deadly, Fortress, Anchored, and Quick. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
+Evade, Resist, Deadly, Protect, Anchored, and Quick. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
 
 **(1) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
@@ -49,7 +49,7 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
-**(1) Fortress**
+**(1) Protect**
 The next time an ally would take attack damage, you take it instead.
 
 **(0) Locked**
@@ -101,7 +101,7 @@ The next time you would attack or defend, that one instance is skipped instead �
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **(1) Unpreventable**
-Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Fortress) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **(9) Ward**
 Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.

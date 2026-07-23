@@ -119,7 +119,7 @@ class TeamTactician(ScryMixin):
         big_threat = lowest.hp <= 6
         if card.name in ("WITNESS", "RENEWAL"):
             v += 7 if hurt else 1               # heals — huge when someone's low
-        elif card.name in ("SHARED BURDEN", "INTERCEPT", "FORTRESS STANCE"):
+        elif card.name in ("SHARED BURDEN", "INTERCEPT"):
             v += 6 if big_threat else 1         # tank/redirect a dying ally's hit
         elif card.name in ("RESONATE", "SUPPORT", "CONDUCT", "COMMUNION"):
             v += 4                              # green team buffs / card advantage

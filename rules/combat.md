@@ -132,11 +132,11 @@ A standing bonus or penalty like "your next attack deals +X" is not consumed by 
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Fortress, team play) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
-**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist), reassigned (Shared Burden/Fortress), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
+**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist), reassigned (Shared Burden/Protect), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
 
 ---
 

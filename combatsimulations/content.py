@@ -26,14 +26,14 @@ def warded(target):
 
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
-    Fortress, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
+    Protect, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
     Duel.take_turn) — this docstring was stale from before that; a pending
     Quick grant is exactly as much a Positive Status Effect as the rest and
     belongs here too."""
     target.evade = 0
     target.resist = 0
     target.deadly = 0
-    target._fortress = False
+    target._protect = False
     target._quick = False
     target.ongoing = [o for o in target.ongoing if 'anchor' not in o]   # Anchored-flavored entries only
 
@@ -461,7 +461,7 @@ def _witness_defense(engine, me, foe):
 
 
 def _shared_burden_effect(engine, me, foe):
-    me._fortress = True
+    me._protect = True
     me.evade += 1
 def _shared_burden_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
@@ -489,13 +489,13 @@ def _guard_defense(engine, me, foe):
         a.resist += 1                      # all allies gain Resist
 
 def _intercept_effect(engine, me, foe):
-    me._fortress = True
+    me._protect = True
     me.resist += 2
 _intercept_defense = _intercept_effect   # same text both sides
 
-def _fortress_effect(engine, me, foe):
-    me._fortress = True                    # I take the next hit meant for an ally
-def _fortress_defense(engine, me, foe):
+def _protect_effect(engine, me, foe):
+    me._protect = True                    # I take the next hit meant for an ally
+def _protect_defense(engine, me, foe):
     for a in engine.allies(me):
         engine.heal(a, 2, source=me)
 
@@ -802,7 +802,7 @@ def _staring_contest_defense(engine, me, foe):
 
 # Shared by WAITING GAME (Mirror: copy, leaves foe's own untouched) and
 # DRAIN (Parasite: steal, actually removes it from foe) — same fixed check
-# order (Deadly > Resist > Evade > Fortress) either way, since a heuristic
+# order (Deadly > Resist > Evade > Protect) either way, since a heuristic
 # brain can't "choose" the way a real player would at the table; a real
 # player picks freely among whatever's visible. Capped at however many
 # statuses are actually present rather than duplicated — copying/stealing
@@ -818,13 +818,13 @@ def _transfer_statuses(me, foe, count, steal):
         order.append('resist')
     if foe.evade > 0:
         order.append('evade')
-    if getattr(foe, '_fortress', False):
-        order.append('fortress')
+    if getattr(foe, '_protect', False):
+        order.append('protect')
     for kind in order[:count]:
-        if kind == 'fortress':
-            me._fortress = True
+        if kind == 'protect':
+            me._protect = True
             if steal:
-                foe._fortress = False
+                foe._protect = False
         else:
             setattr(me, kind, getattr(me, kind) + 1)
             if steal:
@@ -846,7 +846,7 @@ def _drain_defense(engine, me, foe):
     _transfer_statuses(me, foe, 1, steal=True)
 
 # Pure removal, no benefit to the caster — same fixed priority order as
-# _transfer_statuses (Deadly > Resist > Evade > Fortress), shared by UNMAKE
+# _transfer_statuses (Deadly > Resist > Evade > Protect), shared by UNMAKE
 # and LEVEL THE FIELD below. Anchored/Quick skipped for the same reasons as
 # _transfer_statuses.
 def _strip_one_status(target, count=1):
@@ -857,11 +857,11 @@ def _strip_one_status(target, count=1):
         order.append('resist')
     if target.evade > 0:
         order.append('evade')
-    if getattr(target, '_fortress', False):
-        order.append('fortress')
+    if getattr(target, '_protect', False):
+        order.append('protect')
     for kind in order[:count]:
-        if kind == 'fortress':
-            target._fortress = False
+        if kind == 'protect':
+            target._protect = False
         else:
             setattr(target, kind, getattr(target, kind) - 1)
 

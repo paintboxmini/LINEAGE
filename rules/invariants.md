@@ -32,7 +32,7 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | turn order | immediate |
 | Resist | damage pipeline (reduction) | next hit |
-| Fortress / Shared Burden | damage pipeline (reassignment) | next hit (team) |
+| Protect / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 
 Adding a new override: name the mechanic it changes, set a flag with a clear expiry, read that flag at exactly one point in the relevant procedure, revert on expiry. Escalating the override system itself beyond flags (to typed modifiers, to a policy stack) is engineering judgment, not an invariant — see `memory.md`'s architecture north star for that path.
