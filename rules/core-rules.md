@@ -159,7 +159,7 @@ Only equipped items have permanent passive effects — everything else about how
 Carried items can be used via the Interact action.  
 Artifacts are resonant jewelry aligned with a Seat's domain.
 
-See `rules/items.md` for the Weapon/Armor tier system and item design guidance.
+See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, and `rules/items.md` for the full catalog of items already in the world.
 
 ---
 

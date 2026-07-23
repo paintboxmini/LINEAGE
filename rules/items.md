@@ -1,80 +1,120 @@
-# Items
+# Items — Catalog by Source
 
-Items are the second design language in Tales Untold, alongside cards — and the newer, less standardized one. This file exists to give item creation the same standing checklist cards already have (`rules/cards.md`), so building an item for a location, an NPC, or a bestiary entry is as routine a step as building its cards.
+Every mechanical item and piece of equipment currently in the world, sorted by where it actually comes from. Built for quick reference when designing a location, NPC, or bestiary entry: who's already trading what, where it makes sense for a new item to show up, and what's already been done so a new entry doesn't quietly duplicate an old one.
 
----
-
-## The Default: Dress However You Want
-
-Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.
-
-**Only equipment that grants an actual mechanical effect is restricted to the three Equipment Slots** (`rules/character-creation.md`): Weapon, Armor, Artifact. The slot system isn't a limit on what a character can *carry* — it's a limit on how much raw mechanical power a character can have *active* at once. Everything else — how it looks, what it's called, how many of them you own — is free.
-
-Carried items (potions, tools, one-use consumables) don't compete for these slots at all. They're used via the Interact action and are a separate category entirely — see the `items/*.md` files for existing examples (`items/briarwatch-items.md`, `items/hollow-and-weald-items.md`, etc.).
+For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing, design guidance — see `rules/equipment.md`. This file is the inventory, not the design guide.
 
 ---
 
-## Weapon and Armor Tiers
+## Briarwatch
 
-Weapons and Armor both scale on the same three-tier system. Each tier is a **power budget** — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer's discretion.
+*Full entries: `items/briarwatch-items.md`*
 
-| Tier | Weapon (default spend) | Armor (default spend) |
-|------|------------------------|------------------------|
-| 1 | +1 attack damage | −1 damage received |
-| 2 | +2 attack damage | −2 damage received |
-| 3 | +3 attack damage | −3 damage received |
-
-**A Tier 3 item (Weapon or Armor) may instead grant +1 to a single stat — Mind, Body, or Soul — with no other bonuses attached.** The entire tier's budget goes into the stat point alone; nothing gets stacked on top of it. Priced at the top tier on purpose: a stat point isn't just a bigger number, it moves other things too (Mind sets hand size 1:1, Body sets max HP, Soul sets the initiative roll), so it's worth more than any single flat bonus or keyword stack at the same tier.
-
-**The budget doesn't have to go entirely into the flat number.** A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:
-
-- **1 point ≈** +1 flat damage or reduction, **or** granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
-- Larger, spikier effects (Critical, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
-- **Not every keyword is worth the same point regardless of context — check actual value, don't just price by name.** Protect reads like a strong defensive keyword but is genuinely one of the weakest through an action-economy lens: the party still eats the same total damage, just redirected onto whoever volunteered — no damage is actually prevented unless it's paired with something that mitigates the hit once it lands (Resist, Evade, and similar). Priced alone, it's worth well under 1 point — cheap enough to bundle in at Tier 1 alongside a real effect (e.g., start combat with Evade 1 and Protect 1) rather than ever anchoring a tier by itself. The general lesson: price a keyword by what it actually does for the action economy, not by how strong it sounds.
-
-**Worked examples, exactly as specified:**
-- *Tier 1 weapon:* inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)
-- *Tier 2 weapon:* +1 attack damage, and gain Deadly at the start of combat. (1 point flat, 1 point self-buff.)
-- *Tier 2 armor:* −1 damage received, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
-
-This is a budget to design against, not a formula to solve — two tier-2 items should feel different from each other even though they cost the same.
+- **Barbed Wrap** — reflect 1 damage when targeted, 1 battle. *Source: Roadhouse barracks.*
+- **Carrion Feather** — negates the first forced reposition, then spent. *Source: given by Aege on delivery to Briarwatch.*
+- **Split Wedge** — Anchored, +2 damage this turn. *Source: farmer's reward, after the Hollow.*
 
 ---
 
-## More Fastball Ideas (Unnamed on Purpose)
+## The Hollow Below Briarwatch & Turnroot Weald (shared)
 
-Straightforward, single-idea equipment across the tiers — no names, no flavor text. They earn an identity when actually built as real "equipment archetypes"; until then they're just budget-legal shapes to pick from or riff on.
+*Full entries: `items/hollow-and-weald-items.md`*
 
-**Weapons**
-- *Tier 1:* Gain Evade the first time you're attacked each combat.
-- *Tier 1:* Scry 1 the first time you attack each combat.
-- *Tier 2:* +1 damage; inflict Blind on a clean win, once per combat.
-- *Tier 2:* Gain Rushdown for free the first time your turn would otherwise need it.
-- *Tier 3:* +2 damage; gain Deadly at the start of combat.
-- *Tier 3:* +1 damage; gain Deadly at the start of combat; inflict Weak on the first successful attack against you. (Three-way split of the same budget.)
-- *Tier 3:* Gain Critical the first time you attack each combat. (Whole budget on one spike.)
-- *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
+- **Luminova Leaves** — heal 2 HP. No confirmed Source line yet — flagged, see below.
+- **Clay Bowl Tremor Detector** — party can't be surprised this encounter. *Source: Borrower goodwill.*
+- **Moving-Stone Map** — party acts before all Stonecoils, next combat only. *Source: Borrower goodwill.*
 
-**Armor**
-- *Tier 1:* Start combat with 1 Resist.
-- *Tier 1:* Inflict Staggered on the first enemy who successfully hits you each combat.
-- *Tier 1:* Start combat with Evade 1 and Protect 1. (Protect alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
-- *Tier 2:* −1 damage received; start combat with 1 stack of Thorns.
-- *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
-- *Tier 3:* −1 damage received; start combat with Resist; start combat with Evade. (Three-way split.)
-- *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
-- *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
+**A real overlap worth resolving eventually**: Luminova Leaves (above, unsourced, heal 2) sits right next to **Luminova Powder** (below, sourced to Luminova Clearing in Turnroot, heal 4) — same plant, two items, one of them never got a proper home. Not fixed here; flagged for whoever touches this next.
 
 ---
 
-## Artifacts
+## Turnroot Weald
 
-Artifacts don't run on the tier budget above — they're a different kind of object entirely. Per `rules/character-creation.md`: "resonant objects closely aligned with a Seat's domain... not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near." An Artifact's mechanics should read as an extension of a specific Seat's actual domain (`mythology/seats.md`), not a generic stat stick reskinned — design these bespoke, one at a time, the way a signature card set gets built for a specific creature rather than pulled from a shared budget table.
+*Full entries: `items/turnroot-weald-items.md` — the most fully built items file in the repo.*
+
+**Consumables**
+- **Echothorn Seed** — +2 to next damage/heal roll, free action. ~40 gold. *Source: The Thorne Throne.*
+- **Luminova Powder** — heal 4 HP. ~30 gold. *Source: Luminova Clearing.*
+- **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~60 gold. *Source: Rootstalker (rare).*
+- **Vision Shard** — Scry 3 on any deck. ~100 gold. *Source: The Mirror-Slick Pond.*
+
+**Equipment**
+- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~80 gold. *Source: The Floating Gallery.*
+- **Spider Silk Rope** — 50 ft, stronger than hemp, doesn't fray. ~50 gold. *Source: The Bone Collector.*
+
+**Harvested Materials**
+- **Root Fibers** — rope, bowstring (+1 ranged), or armor weave (+1 temp HP). ~15 gold/strand. *Source: Rootstalker (common).*
+- **Rootstalker Core** — crafts into a thrown Root Lash Charm or a one-encounter Defensive Barrier. ~250 gold. *Source: Rootstalker (very rare).*
+
+**Passive Items**
+- **Harvest Bead** — +1 HP on the first defensive block each cycle. ~150 gold. *Source: The Bone Collector.*
+
+**Quest Ingredients** *(Senshi, the Gilded Tusk — see below)*
+- **Bone Collector Flesh** — ~40 gold, half if the casing cracks.
+- **Future-Lock Wasp Larvae** — ~35 gold, must be delivered alive within a day.
 
 ---
 
-## Where Items Actually Live
+## Vulture's Nest
 
-Location-specific items go in `items/<location>-items.md`, matching the existing convention (`items/briarwatch-items.md`, `items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`, `items/vultures-nest-items.md`, `items/fog-basin-items.md`). Items with no fixed location source go in `items/consumables.md`. Each entry states its own **Source** line — where or from whom it's actually obtained (a creature, a merchant, a specific harvest method) — already the standing convention across every existing items file, kept up here so it doesn't quietly lapse as more get added.
+*Full entries: `items/vultures-nest-items.md`*
 
-When building out a location, NPC, or bestiary entry, treat at least one real item as part of the standard deliverable set, the same as its cards: does this place, this creature, this person leave something behind worth carrying? Not every entry needs one — but the question should get asked every time, not just when it happens to come up.
+**Dock Equipment** (market, dockside traders)
+- **Dockhook Line** — pull self or target enemy to Frontline.
+- **Low Lantern** — Obscure, 1 combat.
+
+**Foodstuffs** (Marta's Jerky and Bake, general stalls)
+- **Salted Strip** — heal 2 HP.
+- **Dock Broth** — remove 1 status card, gain Weak on next damage roll.
+- **Chewfat Ration** — Resist 1 for a combat, discard 1 card at the end of each turn.
+
+**Harwick Sundries — deliberately mechanics-free.** The Tuning Fork Sword, the Desire Compass, the Guard's Boots, and the Ticking Box (`locations/vultures-nest.md`) are mystery objects on Dess Harwick's counter, built to be developed later if the party returns. Not part of this inventory — don't treat them as priced or mechanical until someone actually builds them out.
+
+---
+
+## Fog Basin
+
+*Full entries: `items/fog-basin-items.md`. Primary source: Pell.*
+
+- **Fog Goggles** *(Artifact)* — never Blind from fog/Fogburst; costs adding FOGLUST (a Blind-on-draw curse card) to your deck. Price varies per customer — Pell charges in memories and secrets, not coin. Worth checking against `rules/equipment.md`'s Artifact framing (Seat-aligned) next time this file gets attention — its current text doesn't name which Seat, if any.
+- **Pell's Lanterns** — four named, single-use, price set by Pell: Lantern of Returning (immune to the Misdirection Trap), Lantern of the First Path (reveals the original path through an area, DC 12 Mind), Lantern of the Unlost (Echoes repeat useful fragments nearby), Lantern of Quiet Wings (Fogcallers won't initiate combat while lit).
+
+---
+
+## Kaine (Storm Seat Artifact)
+
+*Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
+
+- **The Lightning Loop** — a ring, Storm Seat-aligned, currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. Note: "Storm" doesn't currently appear in `mythology/seats.md`'s own Seat list — flagged, not resolved, next time that file gets a real pass.
+
+---
+
+## No Fixed Source
+
+*Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
+
+- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Injury cards at combat's end.
+- **Echo Shell** — repeat your last action, if it's still retrievable from discard.
+- **Blood Phial** — add the target's own last-used card's effect to your attack.
+- **Imprint Sigil** — target follows a simple command, 1 turn.
+- **Universal Pin** — fix a target in place until their next turn.
+- **Phase Draught** — take your turn, then return to your prior position and state at turn's end.
+
+---
+
+## Underground Bazaar — a real gap, not an oversight
+
+Checked directly: nothing in `locations/underground-bazaar.md` has an actual `Use:`/`Effect:` line. Willem's paintings, the Soul Economy trades, Kess's and Moth's own possessions — all narrative, no mechanics, and there's no `items/underground-bazaar-items.md` file yet. Given the location's whole premise (a market that trades in memories, secrets, and soul-economy debt instead of coin), items here would likely need their own pricing logic entirely, not a straight gold-cost — worth thinking through before just bolting standard prices onto bazaar goods.
+
+---
+
+## Who Trades With Whom
+
+A quick reference for where it makes sense for a new item to surface:
+
+- **Senshi (the Gilded Tusk)** buys quest-ingredient ideas straight from Turnroot Weald — Bone Collector Flesh, Future-Lock Wasp Larvae — and turns them into dishes. A new Weald creature with an unusual byproduct is a natural fit for his counter.
+- **Dess Harwick (Vulture's Nest, Harwick Sundries)** deals in practical dockside goods plus whatever gets traded in — the mystery counter items came from unrelated trades she never resolved. A believable place for a found, undeveloped object to land.
+- **Pell (Fog Basin)** is the one dealer whose price is never coin — memories, secrets, names. Anything sold through him should keep that convention rather than getting a flat gold price.
+- **Borrowers (the Hollow)** trade in goodwill, not currency — their two items are both earned, not bought.
+- **Aege / the Briarwatch farmer** hand over items as direct narrative rewards tied to a specific job finished, not shop stock.
+- **The Underground Bazaar** trades in secrets and soul-economy debt — see the gap noted above before assuming standard pricing applies there at all.
