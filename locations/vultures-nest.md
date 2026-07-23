@@ -119,7 +119,7 @@ If the party passes through the Scratcher encounter: *"You've been marked. The w
 
 At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
 
-**This is her family's own letter to her, not one she wrote — and she never opened it herself.** The seal the party breaks is the original one. Consistent with everything already established about her (doesn't talk about her family, doesn't explain herself, watched the road "for the right party" long before this moment): she couldn't bring herself to read it, so she's handing that off too, along with everything else. The party is reading someone else's mail, in someone else's voice, addressed to Aege — not to them.
+**This is her family's own letter to her, not one she wrote.** She read it — that's the whole reason she already knows enough to be "watching the road for the right party" before the party ever showed up (above). What she's handing over is her own letter, resealed, not a fresh one written to explain herself. Consistent with everything already established about her: she doesn't talk about her family, doesn't explain herself, and this way she doesn't have to — the letter says it in their words instead of hers, and she never has to say any of it out loud. The party is reading someone else's mail, in someone else's voice, addressed to Aege — not to them.
 
 The letter reads:
 
