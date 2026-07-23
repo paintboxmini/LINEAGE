@@ -54,3 +54,9 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
 - WITNESS — Target ally heals 6 HP; Defensive: target ally heals 6 HP
 - FLOW — You may change position; Defensive: you may change position
+
+---
+
+## Beyond the Campaign
+
+Greed becomes the bearer of the Storm Seat (`mythology/seats.md`). Nothing about how, or when, is established — this is a fate, not a scene. Left deliberately unwritten, same register as the rest of this world's open threads.

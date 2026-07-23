@@ -107,9 +107,10 @@ Domain: Vitality, Sacrifice, Lineage
 Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
 
 ### Storm
+**Bearer:** Greed (`characters/greed.md`)
 Domain: Storms, Turbulence, the Uncontrolled
 
-Weather that answers to nothing, least of all whoever stands under it. Its current bearer, if any, is not publicly known. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all.
+Weather that answers to nothing, least of all whoever stands under it. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
 
 ### Navigation / Pathfinding
 **Bearer:** The Night Ferryman
