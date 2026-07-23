@@ -52,6 +52,8 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Carried items** (potions, tools, objects picked up in the field) can be used on your turn via the Interact action without occupying an equipment slot.
 
+See `rules/items.md` for the Weapon/Armor tier system and how to design new equipment.
+
 ---
 
 ## Starting Deck

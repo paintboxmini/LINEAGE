@@ -155,9 +155,11 @@ While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an att
 ## Equipment Slots
 
 **Weapon / Armor / Artifact**  
-Only equipped items have permanent passive effects.  
+Only equipped items have permanent passive effects — everything else about how a character dresses or arms themselves is free, unrestricted fiction.  
 Carried items can be used via the Interact action.  
 Artifacts are resonant jewelry aligned with a Seat's domain.
+
+See `rules/items.md` for the Weapon/Armor tier system and item design guidance.
 
 ---
 
