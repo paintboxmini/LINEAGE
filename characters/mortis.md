@@ -19,5 +19,5 @@ He pours Lily a drink without being asked every time she comes in. He does the s
 ## Connections
 
 - **Giblets** — former partner. See `characters/giblets.md`.
-- **Kess** — pulled her out of the mine. Knows what she lost. See `locations/underground-bazaar.md`.
+- **Kess** — pulled her out of the mine. Knows what she lost. See `characters/kess.md`.
 - **Lily** — pours without being asked. Two people who know what they are, at peace in different directions.

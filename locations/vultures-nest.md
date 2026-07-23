@@ -185,7 +185,7 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
-**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Fifteen years ago he took a ship past the coast — the kind of thing that's supposed to exist only in ghost stories, because the ones who try don't come back to tell them. He came back. Alone. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet.
+**Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
@@ -295,5 +295,6 @@ The normal conversation slowly picks back up.
 ## Related Documents
 
 - `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
+- `characters/aege.md`, `characters/corvel.md`, `characters/masaharu.md` — full profiles for NPCs found here
 - `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
 - `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours

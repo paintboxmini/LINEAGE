@@ -255,6 +255,7 @@ The grandmother's map ends here.
 - `locations/the-wallows.md` — location overview
 - `factions/demon-court.md` — Pazuzu, guard hierarchy
 - `locations/underground-bazaar.md` — above
+- `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — pending
 - `bestiary/the-descended.md` — The Shelf inhabitants

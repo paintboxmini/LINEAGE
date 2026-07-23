@@ -187,15 +187,7 @@ Not confined to the bazaar. First encountered here.
 
 **Kess**
 
-Granddaughter of the Cartographer. Uses the Cartographers Guild as a working cover — has a contact named Tomás Kettlewright, Glasslight Reach chapter, who owes her for a job. Moves through the bazaar with a legitimate-seeming reason to be anywhere. Her grandmother's intelligence network runs partly through her. She doesn't advertise this.
-
-Geometric tattoo on the forearm — laughter from her sister's wedding day. The real memory is gone, sold at some point for reasons that made sense at the time. The tattoo is all that's left. Hollow where humor used to live. Not sad about it. Functional.
-
-She has other tattoos. One of them reacts near Giblets' stall. She has not asked why. She knows better than to ask what she sold.
-
-Her mother died in the mine below the bazaar. The Warden had imprisoned her on fabricated debt — leverage against the Cartographer's network. Kess went in to fix it with the only escort who could keep a secret: an ex-adventurer with faulty memory. Something went wrong in the deep. She traded away most of what happened. Mortis pulled them out.
-
-She is working methodically toward paying off the full balance and getting out. She knows where the mine map is. She has plans that extend past her own exit.
+Granddaughter of the Cartographer. Full profile — backstory, the mine, her connections — now lives in `characters/kess.md`. Found here moving through the bazaar with a legitimate-seeming reason to be anywhere; her grandmother's intelligence network runs partly through her, and she doesn't advertise it.
 
 ---
 
