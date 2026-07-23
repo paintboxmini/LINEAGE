@@ -119,17 +119,21 @@ If the party passes through the Scratcher encounter: *"You've been marked. The w
 
 At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
 
+**This is her family's own letter to her, not one she wrote — and she never opened it herself.** The seal the party breaks is the original one. Consistent with everything already established about her (doesn't talk about her family, doesn't explain herself, watched the road "for the right party" long before this moment): she couldn't bring herself to read it, so she's handing that off too, along with everything else. The party is reading someone else's mail, in someone else's voice, addressed to Aege — not to them.
+
 The letter reads:
 
-> Past Briarwatch's own fields, there is a forest. I grew up there. I haven't been back in a long time.
+> Aege —
 >
-> My family sent word. The animals at the edges have changed behavior. More aggressive. Moving in patterns they don't usually move in. My family doesn't frighten easily.
+> It's been a long time. I wouldn't write if it weren't real.
 >
-> I can't go myself. You've shown me you move carefully. That matters more than I can explain right now.
+> The animals at the tree line have gone wrong. Aggressive. Moving in ways none of us have seen before. You know we don't scare easy out here — that's the whole reason this is worth troubling you with.
 >
-> Find them. Find out what's wrong. They'll know you're coming.
+> Come see for yourself, if you can. Or send someone who can.
 >
-> — Aege
+> — home
+
+**The letter never says where "home" is — it doesn't need to, since whoever wrote it already knows.** The party doesn't need it spelled out either: they've spent this entire job standing next to the one forest the letter could possibly mean. Turnroot Weald borders Briarwatch directly, past the watchtower ruins and the larder fence (`locations/briarwatch.md`, `quests/the-larder-fence.md`) — the connection is there to make, not handed over.
 
 *No further instructions.*
 
