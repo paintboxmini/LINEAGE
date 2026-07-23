@@ -1,0 +1,66 @@
+# Aege
+
+*The Carrion Guide. An Echo of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`world/seats-archons-echoes.md`).*
+
+---
+
+## Appearance
+
+Lean, weather-read face. No last name given. Carries a rolled map that never gets unrolled in front of company — she doesn't need it, and showing it would mean explaining herself. Watches feet, not eyes.
+
+---
+
+## Voice
+
+Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
+
+*"You're already ahead of yourselves."*
+*"This path will suit your pace."*
+*"You won't like the other way."*
+
+---
+
+## What She Does
+
+Guides travelers, when asked, toward wherever they're actually headed. Knows the roads, the cuts, the ways that aren't on any map. Reads how someone moves before she agrees to anything — rushing, purposeless repositioning, visible anxiety about formation all tell her something, and she acts on it without saying so.
+
+She doesn't perform mystery. She just doesn't volunteer more than the moment calls for. That's the whole of it.
+
+---
+
+## Backstory
+
+Grew up in the Turnroot Weald. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
+
+Recently, word came from home: the animals at the forest's edges have turned aggressive, moving in patterns nobody's seen before, and her family doesn't scare easily. She's going herself. No one sent her. No one had to.
+
+---
+
+## GM Secret — Not Player-Facing
+
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment. Not the Archon; Death's actual bearer, if one exists, "is not publicly known," and Aege isn't it. She's a reflection of the domain, not its seat.
+
+This is why she's always drawn toward wherever her domain is concentrated — real endings already happened, real potential for more sitting on top of it — the same way the Night Ferryman reads the Coil's own restlessness before it surfaces. It's also the real mechanism behind her already-established habit of seeming to know more than she should about a place, or the people standing in it: she isn't investigating them. She's reading their proximity to where the domain is already active.
+
+Her own reason for going home — her family, the letter — is separate and fully hers. The Echo doesn't explain that part, and shouldn't.
+
+---
+
+## Where She Appears
+
+**Vulture's Nest** (`locations/vultures-nest.md`, Notable Roles) — found near the east gate, the party's actual guide for the leg from Vulture's Nest to Briarwatch. Tells them about her family at the Roadhouse, the first night out. Delivers them to Briarwatch, hands over a Carrion Feather (`items/briarwatch-items.md`), continues on to the Turnroot Weald alone.
+
+**Washed Ashore** (`quests/washed-ashore.md`) — an alternate campaign opening. Met at the Roadhouse instead, already mid-journey on her own; she isn't the party's guide here and doesn't escort them anywhere. Same person, same voice, same situation — just encountered differently.
+
+Same character both times. Not a coincidence, not a retcon — she goes home either way; the party just crosses her path at a different point in that same trip.
+
+---
+
+## Related Documents
+
+- `locations/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
+- `quests/washed-ashore.md` — the alternate telling
+- `locations/roadhouse.md` — where she tells the party about her family
+- `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
+- `mythology/seats.md`, `world/seats-archons-echoes.md` — the Seat of Death, Echoes generally
+- `items/briarwatch-items.md` — the Carrion Feather

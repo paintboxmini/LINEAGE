@@ -75,15 +75,9 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
-**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
+**Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
-Routes travelers west toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
-
-Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
-
-*"You're already ahead of yourselves."*
-*"This path will suit your pace."*
-*"You won't like the other way."*
+Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
 
 **GM — Finding Aege**
 Bartho points the party toward her but doesn't walk them over. They have to find her themselves. Make the search matter.
@@ -93,17 +87,6 @@ Bartho points the party toward her but doesn't walk them over. They have to find
 - *Noticing patterns:* She's there every morning. She leaves mid-afternoon. She's always alone.
 
 If the party rushes to find her without looking: she finds them. But the route she gives them will suit their pace.
-
-**GM — Backstory**
-Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
-
-Recently her family sent word: the animals at the forest's edges have turned aggressive, moving in patterns nobody's seen before, and her family doesn't scare easily. She's going herself. Briarwatch is already on that road.
-
-**GM Secret — Not Player-Facing**
-
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment. Not the Archon — Death's actual bearer, if one exists, "is not publicly known" (`world/seats-archons-echoes.md`), and Aege isn't it.
-
-Briarwatch is where her domain is concentrated right now — real deaths already happened there (the Fenwool taken by the Stonecoils), real potential for more sitting on top of it (the sinkhole's own escalating collapse risk, `quests/hollow-below-briarwatch.md`'s Subterranean Pressure Track). She reads that the way the Night Ferryman reads the Coil's own restlessness before it surfaces.
 
 **Soft Gate — GM Facing**
 
