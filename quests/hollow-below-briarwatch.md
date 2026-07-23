@@ -21,6 +21,10 @@ The day begins under thick cloud cover. The air carries the smell of wet soil. F
 > The sky hangs low and gray over the farmland. The soil under your boots gives slightly, as though it has not fully decided whether to hold. A wide depression scars one of the fields — fenced off with rope and splintered posts. The farmer stands nearby, hat in hand, looking more tired than frightened. Something small and matte-black keeps to his heels the whole time, low to the ground, not quite touching him.
 >
 > *"Thanks for coming. Was starting to think nobody would. Lost a dozen head when the ground opened up. There's an old well on the property. Leads down into caves. Always knew it was there. Never thought it'd matter."*
+>
+> *"There's folk livin' down there too, far as I can tell. Small. Mole-like. Caught glimpses around the old watchtower ruins for years — and every so often, dusk mostly, one'll dart across a field before you get a real look. Never bothered a soul, near as I know. But this collapse... I got a feeling they might've had a hand in it somehow. Couldn't tell you why, couldn't swear to it. I got no business going down there to find out myself. That's the whole reason I sent for you."*
+
+**What the farmer actually knows, plainly stated:** glimpses over years, never contact — enough to suspect, nowhere near enough to know. He's not wrong to wonder (the Borrowers really did widen their tunnel network, per the Causality Chain below), but he has no idea whether that's actually what caused the sinkhole specifically, or whether it's connected to the Fenwool losses at all. His suspicion is a lead, not a briefing — the party still has to find out what's actually true.
 
 **The farmer's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick.md`.
 
