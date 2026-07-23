@@ -88,6 +88,8 @@ Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork west (da
 
 The fork is where the Carrion Guide's route diverges. Standard path continues west. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
 
+**Alternate opening:** in the "Washed Ashore" campaign start (`quests/washed-ashore.md`), the party reaches the Roadhouse on foot from the shoreline instead, and the Carrion Guide is here too — passing through on her own journey from Vulture's Nest to the Turnroot Weald, not stationed here waiting for anyone.
+
 ---
 
 ## Related Documents
@@ -95,3 +97,4 @@ The fork is where the Carrion Guide's route diverges. Standard path continues we
 - `locations/vultures-nest.md` — previous stop; Carrion Guide departs from here
 - `locations/briarwatch.md` — next stop
 - `bestiary/briar-scratcher.md` — encountered on the longer route between here and the fork
+- `quests/washed-ashore.md` — the alternate opening that also passes through here
