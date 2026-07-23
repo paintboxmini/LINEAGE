@@ -99,6 +99,14 @@ Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived i
 
 Recently her family sent word asking for help. She won't go herself. She's been watching the road for the right party.
 
+**GM Secret — Not Player-Facing**
+
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment: the domain expresses itself through her, certain actions feel inevitable, resistance is difficult but choice still exists. Not the Archon — Death's actual bearer, if one exists, "is not publicly known" (`world/seats-archons-echoes.md`), and Aege isn't it. She's a reflection of the domain, not its seat.
+
+This is specifically why she routes travelers toward Briarwatch, not just "west" in general: the Hollow Below Briarwatch is where her domain is concentrated right now — real deaths already happened there (the Fenwool taken by the Stonecoils), and real potential for more sits on top of it (the sinkhole's own escalating collapse risk, `quests/hollow-below-briarwatch.md`'s Subterranean Pressure Track). She doesn't need to be told any of this. She reads where endings are gathering the way the Night Ferryman reads the Coil's own restlessness before it surfaces — a domain-related sense, not investigation. It's also the real answer behind why she always seems to know more than she should about a party she's just met: she isn't reading them specifically, she's reading their proximity to where her domain is already active.
+
+Her own reason for watching the road at all — her family, the Turnroot letter — is separate and still fully hers; the Echo doesn't explain that part, and shouldn't. Two real reasons, not one dressed up as two.
+
 **Soft Gate — GM Facing**
 
 The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."

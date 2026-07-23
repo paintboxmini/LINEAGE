@@ -40,7 +40,9 @@ She's simply there when the party reaches her — no ambush framing, no build-up
 
 She points, once, toward Briarwatch. Then she's gone — not dramatically, just gone, the way she's already established to operate (`locations/vultures-nest.md`: "Doesn't explain decisions").
 
-**She doesn't explain how she knew.** Not that they were new. Not that they came out of the water. Nothing. Same restraint as everything else about this opening — the mystery doesn't get resolved because a scene needs a beat, it gets resolved when the story actually earns it, if it ever does.
+**Why Briarwatch, specifically, is no longer a mystery to the GM — Aege is an Echo of the Seat of Death (`locations/vultures-nest.md`, GM Secret), and Briarwatch is where her domain is concentrated right now (real deaths already, real risk of more). That part has a real answer. It just isn't one she'll ever say out loud, and it isn't one the party has any way to reach yet.**
+
+**What still doesn't have an answer: how she knew *this specific party* was worth pointing anywhere at all** — that they were new, that they came out of the water, any of it. The Echo explains her attention to Briarwatch. It doesn't explain her attention to them. Leave that part genuinely open — the mystery doesn't get resolved because a scene needs a beat, it gets resolved when the story actually earns it, if it ever does.
 
 ---
 

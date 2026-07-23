@@ -90,7 +90,7 @@ Discusses gathering, abundance, and what's worth preserving.
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. The Seat itself is unbearered — but a living Echo of the domain exists, not its Archon. See `world/seats-archons-echoes.md`, Known Echoes.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*

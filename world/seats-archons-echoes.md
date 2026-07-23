@@ -77,3 +77,7 @@ Echoes form when a being's nature, actions, or accumulated experience becomes su
 A distinct category — beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently. These Echoes tend to be the most powerful and the least stable. They exist in permanent proximity to authority they cannot fully hold.
 
 Echoes may be human, animal, spirit, or stranger. Any living identity can become aligned.
+
+### Known Echoes
+
+**Aege, the Carrion Guide** *(Death, Stage II — Alignment)* — Not the Archon; Death's actual bearer remains unknown. Reads where her domain is concentrating (real deaths, real risk of more) rather than investigating it, which is the real reason she routes travelers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she's been told. See `locations/vultures-nest.md`, GM Secret.
