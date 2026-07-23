@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die
+from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die, can_attack
 
 
 def warded(target):
@@ -1377,6 +1377,47 @@ def _table_stakes_effect(engine, me, foe):
 def _table_stakes_defense(engine, me, foe):
     me.resist += 1
 
+# DOUBLE DOWN (Gambler archetype, core Red) — wired into the sim 2026-07-23 on
+# Drew's direct request, after having been shipped as canon-text-only pending
+# playtesting. On a clean win only (never a tie — matches SMOKE SCREEN/YOU'RE
+# NEXT's `me._tie` gate precedent), immediately makes a second attack against
+# the same defender using another legal card from hand — a genuine same-turn
+# bonus attack, outside normal turn structure, which is exactly why this needed
+# real design attention before being trusted in the sim. Guarded against
+# chaining: `_double_down_active` is set for the duration of the bonus attack,
+# and the effect refuses to fire again while it's set — so if the second card
+# is ALSO Double Down and ALSO wins clean, it does not trigger a third attack.
+# Caps the whole chain at exactly one bonus hit, regardless of hand contents.
+# Deliberately does NOT gate on the defender being Collapsed (only on already
+# being dead, since there's no legal target left) — a clean win into an
+# already-Collapsed defender can be the second of the two hits the death rule
+# requires, which reads as a real, intended "finish them" moment for this card
+# rather than an edge case to suppress. Card selection mirrors the shape of
+# `legal_attacks`/`legal_attacks_team` (policies.py/team_policies.py) without
+# importing either — content.py sits below the policy layer in the dependency
+# graph on purpose, so this reimplements the same legality check locally via
+# engine.py's shared `can_attack`, then picks the single highest stat+die card
+# available, a simple stand-in for "the attacker's own best next play" rather
+# than routing through a specific policy's full valuation logic.
+def _double_down_effect(engine, me, foe):
+    if me._tie:
+        return
+    if getattr(me, '_double_down_active', False):
+        return
+    if foe.is_dead:
+        return
+    legal = [c for c in me.hand if not c.is_status and can_attack(me, foe, c)]
+    if not legal:
+        return
+    card2 = max(legal, key=lambda c: me.eff(c.stat) + (c.base_die or 6))
+    me._double_down_active = True
+    try:
+        engine.attack(me, foe, card2)
+    finally:
+        me._double_down_active = False
+def _double_down_defense(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+
 
 # ============================ REGISTRY =======================================
 
@@ -1623,6 +1664,8 @@ def build_cards():
     add("WILD CARD", 'G', 'soul', 'both', 4)
     add("TABLE STAKES", 'R', 'body', 'both', 6,
         effect=_table_stakes_effect, defense=_table_stakes_defense)
+    add("DOUBLE DOWN", 'R', 'body', 'melee', 6,
+        effect=_double_down_effect, defense=_double_down_defense)
 
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
