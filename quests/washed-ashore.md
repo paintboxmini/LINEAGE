@@ -32,7 +32,7 @@ Open rolling fields north of the shoreline, broken up by rocky outcroppings — 
 
 ## Meeting Aege
 
-Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`locations/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as her Vulture's Nest role (`locations/vultures-nest.md`, Notable Roles) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
+Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`locations/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as always (`characters/aege.md`) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
 
 She clocks them fast — new to the road, nothing fixed to be yet — and says so, dry rather than cryptic:
 
@@ -44,7 +44,7 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 
 **One real difference from her Vulture's Nest telling, worth keeping straight**: there, she's the party's actual guide the whole way to Briarwatch, and the Carrion Feather (`items/briarwatch-items.md`) passes to them when she delivers them there before continuing on alone. Here, she never escorts them anywhere — she leaves the Roadhouse ahead of the party and they make their own way to Briarwatch after. The Carrion Feather's usual trigger doesn't fire in this version; if a GM wants it to exist here too, it needs its own moment.
 
-**Why Briarwatch, specifically, still has its real GM-only answer underneath the mundane one above** — Aege is an Echo of the Seat of Death (`locations/vultures-nest.md`, GM Secret), and Briarwatch is where her domain is concentrated right now (real deaths already, real risk of more). Her stated reason ("the nearer, more sensible stop") is true and also isn't the whole truth. The party never gets to reach that part.
+**Why Briarwatch, specifically, still has its real GM-only answer underneath the mundane one above** — Aege is an Echo of the Seat of Death (`characters/aege.md`, GM Secret), and Briarwatch is where her domain is concentrated right now (real deaths already, real risk of more). Her stated reason ("the nearer, more sensible stop") is true and also isn't the whole truth. The party never gets to reach that part.
 
 **What still doesn't have an answer at all: how she knew *this specific party* was worth talking to** — that they were new, that they came out of the water, any of it. The Echo explains her pull toward Briarwatch. It doesn't explain her attention to them specifically. Leave that part genuinely open.
 
@@ -54,14 +54,15 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 
 - **This is a first pass, not a finished module.** Encounters between the shoreline and the Roadhouse, and how the Roadhouse night with Aege actually plays out beat-by-beat, are still open — Drew's own words, "my first thought is," not a locked plan.
 - **The expected campaign shape**: Shoreline → Roadhouse (meets Aege, learns about Turnroot secondhand rather than by letter) → Briarwatch (`quests/hollow-below-briarwatch.md`) → Turnroot Weald, following after her once Briarwatch is done. Not forced — just the likely path, since she gave them a real, human reason to care rather than an assignment.
-- **Aege's situation is the same in both openings now — she got the letter, she's going herself, that's all.** The only real difference is where the party meets her (Vulture's Nest's east gate, where she's their actual guide the whole way to Briarwatch, vs. here at the Roadhouse, where she's just a fellow traveler for one night) and whether she personally escorts them to Briarwatch (yes there, no here). See `locations/vultures-nest.md` for her full profile.
+- **Aege's situation is the same in both openings now — she got the letter, she's going herself, that's all.** The only real difference is where the party meets her (Vulture's Nest's east gate, where she's their actual guide the whole way to Briarwatch, vs. here at the Roadhouse, where she's just a fellow traveler for one night) and whether she personally escorts them to Briarwatch (yes there, no here). See `characters/aege.md` for her full profile.
 - **The unexplained-survival hook is a long-term thread, not a session-one payoff.** Resist the pull to explain it early. It should still be unexplained the first time an NPC reacts to it with astonishment.
 
 ---
 
 ## Related Documents
 
-- `locations/vultures-nest.md` — Aege's established role, the alternate (riverboat) opening this one replaces
+- `characters/aege.md` — her full profile, backstory, and GM Secret
+- `locations/vultures-nest.md` — the alternate (riverboat) opening this one replaces
 - `locations/roadhouse.md` — where the trail leads
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid
