@@ -98,7 +98,7 @@ If the party passes through the Scratcher encounter: *"You've been marked. The w
 
 **Telling the Party**
 
-At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party plainly what she's already told nobody else: her family, the forest, the animals gone wrong. She's not asking them for anything. She's just going, and Briarwatch happens to be on the way.
+At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party plainly what she's already told nobody else: her family, the forest, the roots gone restless deep inside it — not at the edges. She's not asking them for anything. She's just going, and Briarwatch happens to be on the way.
 
 Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once she delivers them to Briarwatch — she continues on to Turnroot Weald from there, alone, whether or not the party follows.
 

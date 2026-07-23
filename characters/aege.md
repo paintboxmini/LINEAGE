@@ -32,7 +32,9 @@ She doesn't perform mystery. She just doesn't volunteer more than the moment cal
 
 Grew up in the Turnroot Weald. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
 
-Recently, word came from home: the animals at the forest's edges have turned aggressive, moving in patterns nobody's seen before, and her family doesn't scare easily. She's going herself. No one sent her. No one had to.
+Recently, word came from home: something's gone wrong deep in the forest, not at its edges — the roots themselves have turned restless, moving in ways nobody's seen before, and her family doesn't scare easily. She's going herself. No one sent her. No one had to.
+
+*Restless roots deep in the Weald resonates with what's already established there — roots that "surface like old roads, then sink again" (`locations/turnroot-weald.md`) and the Root Heart itself (`bestiary/root-heart.md`). Not asserted as the same event — just the same forest, the same motif. Whether this is the Root Heart stirring is a live question, not a decided one.*
 
 ---
 
