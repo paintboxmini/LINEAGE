@@ -12,7 +12,9 @@ Read `CLAUDE.md` and `memory.md` before using any of these. Kept deliberately sm
 | `archetypes.md` | Building a new card — a design compass, not canon; never surfaces at the table |
 | `design-principles.md` | What makes content well-made — the standard red-team and alignment checks measure against |
 | `exemplars.md` | Short curated list of the content that best embodies the principles — extract the principle, don't copy the specifics |
-| `alignment-checker.md` | Verifying new content fits its intended context (location/faction identity, tone, system expectations) before committing — includes the Soul Pass |
+| `alignment-checker.md` | Verifying new content fits its intended context (location/faction identity, tone, system expectations) before committing — includes the Soul Pass, and the finding-the-angle questions for when it fails |
+| `player-perspective.md` | Stress-testing content as a first-time player — intent-first reactions, felt danger vs. mechanical danger; refined against the first real GM playthrough |
+| `card-compression.md` | Refactoring a card set like code — find components that don't pull weight, recombine into denser cards; the sim proves equivalence, this pass picks the winner |
 
 ---
 
