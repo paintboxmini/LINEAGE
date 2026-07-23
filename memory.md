@@ -269,6 +269,8 @@ Authority 1/2 content shipped to canon since Drew's last look (see The Canon Gat
   - **Borrower diet** — Drew asked what Borrowers actually eat; answered and shipped rather than left as chat-only flavor: `bestiary/borrower.md` gained a Diet paragraph built from what already existed (cave rodents, already-established protein source) plus reasonable, non-contradictory extensions (the fungal mats doing double duty as food, not just fuel; surface root vegetables working down through cracks from Briarwatch's own fields, a nice quiet trade the farmers don't know they're part of; blind fish from the deeper stream). Explicitly excluded the Emerald Frog's Hollow population from the everyday diet — it's the one thing established as rare/endangered (open thread, above), and making it a dietary staple would have quietly undercut that before the thread even gets revisited.
   - Not sim-related — pure worldbuilding across all four touched files.
 
+- **A3 — the Emerald Frog thread resolved, Drew's own call, closed out of Active Pending Threads.** He came back to it directly: "perhaps the difference is just in the hardness of the body? these rare ones a solid like gems where the other forest type is soft like a normal frog. but even those shouldn't be labeled as common. the forest type is still rare, just not as rare as the cave type. the forest type is probably still endangered from over harvesting." This is Drew redefining the established fact himself (Constitutional, his call to make, not mine to infer) — resolves cleaner than my own first-pass guess (deeper coloring as the distinguishing trait) and gives the culinary/jewelry split a real physical reason instead of just degree: the Burrow population's body is genuinely solid and gem-hard, which is *why* it can be preserved and worn as jewelry without decaying like ordinary tissue — the forest frog's soft body never could be, no matter how prized. `bestiary/emerald-frog.md` rewritten: forest frog is now rare (not common) and explicitly endangered from Senshi's own standing demand — a real, causal tie to a fact that was already on the page (the dish "requires volume") rather than a new unrelated cause invented for it. Burrow population's write-up updated to lead with hardness, coloring dropped as the emphasized trait. Not sim-related.
+
 ## Pending propagation
 
 Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty means everything is propagated.
@@ -420,9 +422,6 @@ Raw content. Tales Untold adaptation pending. Possible Pendragon connection. Don
 
 **Phase-Leach** (`bestiary/phase-leach.md`)
 Stat block pending. Six-legged panther of violet smoke, blinks/teleports, feeds on arcane energy. No mechanics yet.
-
-**Emerald Frog — woodland vs. Hollow-burrow population** (`bestiary/emerald-frog.md`)
-Added a rare, gem-toned Burrow Population to the existing common woodland frog (Senshi's restaurant supply) rather than rewrite the common one's established rarity — read as a non-contradictory extension, not confirmed as the intended read. Drew: "keep that woodland variant issue in memory please we will come back later." Don't resolve or develop further without him — revisit whether this should stay two populations of one species or become something else.
 
 **The Coil — more history, not yet shared** (`locations/the-coil.md`)
 Drew: "the coil location has more history now. add that to memory too please, we will cover it with the emerald frog stuff." No content given yet — nothing in `locations/the-coil.md` or its GM Secret has changed. Flagged purely so this doesn't get lost before he actually shares it; revisit alongside the Emerald Frog thread above when he's ready. Don't invent or guess at what the new history is.
