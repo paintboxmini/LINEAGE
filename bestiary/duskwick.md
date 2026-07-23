@@ -1,6 +1,6 @@
 # Duskwick
 
-*A small nocturnal predator found in Eclipsera and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
+*A small nocturnal predator found in Eclipseria and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
 
 **Cards:** `cards/duskwick.md`
 
@@ -9,7 +9,7 @@
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
 
-Found in Eclipsera and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
+Found in Eclipseria and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
 
 A cave system is the same kind of edge it already prefers — total dark is just a threshold with no "failing light" left to fail. Ones unconnected to the farmer's companion turn up loose in the Hollow Below Briarwatch's own tunnels, glimpsed and gone the same way they'd be found at the edge of any lit street.
 

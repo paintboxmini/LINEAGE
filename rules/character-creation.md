@@ -129,7 +129,7 @@ Short rests can be chained — three back-to-back is an hour of recovery. The da
 **Duration:** 7½ hours  
 **Effect:** Full heal
 
-A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipsera, they often don't.
+A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don't.
 
 ---
 

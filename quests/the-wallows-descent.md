@@ -230,7 +230,7 @@ Here the passage branches. Without the grandmother's map, both directions look i
 
 ### The Alternate Exit
 
-The passage surfaces through a crack in Eclipsera's outer foundation — a narrow climb, cold air, the sound of wind above. Outside the city walls. No guards. No checkpoint.
+The passage surfaces through a crack in Eclipseria's outer foundation — a narrow climb, cold air, the sound of wind above. Outside the city walls. No guards. No checkpoint.
 
 The grandmother's map ends here.
 

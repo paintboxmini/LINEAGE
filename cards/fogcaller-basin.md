@@ -1,6 +1,6 @@
 # Fogcaller Signature Cards — Basin
 
-Signature cards for the Fogcaller. Obtainable via Oracle deck in the Fog Basin region outside Eclipsera.
+Signature cards for the Fogcaller. Obtainable via Oracle deck in the Fog Basin region outside Eclipseria.
 
 ---
 

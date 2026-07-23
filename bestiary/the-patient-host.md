@@ -1,6 +1,6 @@
 # The Patient Host
 
-*The original innkeeper of the Milestone, on the Turnroot–Eclipsera spoke of the Kings Road. Still checking guests in. Still keeping the ledger. It hasn't been a person for a very long time, and the post never actually required it to stay one.*
+*The original innkeeper of the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road. Still checking guests in. Still keeping the ledger. It hasn't been a person for a very long time, and the post never actually required it to stay one.*
 
 **Cards:** `cards/the-patient-host.md`
 
@@ -69,7 +69,7 @@ No checks for ordinary conversation — the Host is not hiding anything, and it 
 
 ## Related Documents
 
-- `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipsera spoke of the Kings Road
+- `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road
 - `cards/the-patient-host.md` — signature cards
 - `rules/card-glossary.md` — Initiative Shift X and Locked, the two mechanics this kit and its dialogue run on
 - `rules/resolution.md` — Read (Soul), the check behind the ledger's one real transgression

@@ -1,6 +1,6 @@
 # Fogcaller
 
-*Neutral encounter — Basin Fog, outskirts of Eclipsera.*
+*Neutral encounter — Basin Fog, outskirts of Eclipseria.*
 
 **Cards:** `cards/fogcaller-basin.md`
 

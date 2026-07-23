@@ -18,7 +18,7 @@ There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any
 
 **What he's doing with it:** performing signs and wonders. Miracles he attributes to the Unheld's blessing — validation that The Final Current is the true expression of the Promise. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source.
 
-**Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipsera. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
+**Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipseria. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
 
 **Long-term:** for a man like Kaine, it wouldn't end with the Promise community. That's just the first institution with infrastructure he can use.
 

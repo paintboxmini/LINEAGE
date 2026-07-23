@@ -97,7 +97,7 @@ This isn't just predation — it's *curation*. The Bone Collector was building s
 - Are there more Collectors, and do they communicate?
 - Who or what taught a caterpillar to curate like this?
 - What was it building toward?
-- Moral question: Do you report this to Eclipsera authorities, and what would they do with the information?
+- Moral question: Do you report this to Eclipseria authorities, and what would they do with the information?
 
 ---
 

@@ -71,11 +71,11 @@ He has a ledger. Not the port records — a second one, kept on his person. Loss
 
 **Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
 
-He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipsera South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
 
 Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
-**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
+**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
 Routes travelers west toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
 
@@ -131,7 +131,7 @@ The letter reads:
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
-He is in Vulture's Nest because FourthEye is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
 
 FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
@@ -154,7 +154,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"Jonas was at the docks late two nights running. Bartho wasn't with him."*
 
-*"Three sailors came back from Eclipsera different. Not sick. Just... different. They don't talk about it."*
+*"Three sailors came back from Eclipseria different. Not sick. Just... different. They don't talk about it."*
 
 *"Harlow's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
 
@@ -318,5 +318,5 @@ The normal conversation slowly picks back up.
 ## Related Documents
 
 - `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
-- `world/the-regency.md` — Bartho's debt routes players toward Eclipsera
+- `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
 - `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours

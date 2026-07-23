@@ -1,6 +1,6 @@
 # The Fog Basin
 
-The low ground ringing Eclipsera. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. The basin remembers too many paths at once and offers whichever one fits the moment.
+The low ground ringing Eclipseria. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. The basin remembers too many paths at once and offers whichever one fits the moment.
 
 It was here before the city. The city was built on the premise that maps are truth. The basin disagrees.
 

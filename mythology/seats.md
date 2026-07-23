@@ -56,15 +56,15 @@ Changes so much that he forgets he is a god. He thinks he's a shapeshifter.
 
 ### Time
 **Bearer:** Lysander *(fading)*
-References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipsera no longer does. *(Players may recognize this deity from a prior campaign.)*
+References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipseria no longer does. *(Players may recognize this deity from a prior campaign.)*
 
 ### Love / Binding
 **Bearer:** Aurora
-Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipsera's continued existence.
+Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipseria's continued existence.
 
 **Current state: Contested.**
 
-Aurora holds the Seat but is bound and suppressed beneath Eclipsera. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
+Aurora holds the Seat but is bound and suppressed beneath Eclipseria. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
 
 The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully. See `world/the-regency.md`.
 

@@ -14,7 +14,7 @@ You don't need to plan every encounter. You don't need to know where the story e
 
 ## Running Locations
 
-Every location in Eclipsera has its own logic. The Turnroot Weald redirects. Vulture's Nest watches. The Ashfall Wastes press. You don't have to explain this logic to your players — it's often better if you don't. Let them feel it first.
+Every location in Eclipseria has its own logic. The Turnroot Weald redirects. Vulture's Nest watches. The Ashfall Wastes press. You don't have to explain this logic to your players — it's often better if you don't. Let them feel it first.
 
 **Lead with one sensory detail.** Not a paragraph — one thing. The smell of pitch and citrus in Vulture's Nest. The way the Glasslight cliffs sing when wind passes through. One specific detail does more than five general ones.
 

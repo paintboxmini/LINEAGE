@@ -32,13 +32,13 @@ Archons can also **fade**. A domain whose practice dies in the world starves its
 
 ### Known Archons
 
-**Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipsera carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
+**Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipseria carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
 
 **Elias** *(Change)* — Changes so much he has forgotten he is an Archon. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
 
-**Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipsera before may recognize him.
+**Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipseria before may recognize him.
 
-**Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipsera's continued existence.
+**Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipseria's continued existence.
 
 **MoroM** *(Witnessed Suffering)* — Fading. The Thessians, who practiced the domain, are gone but for one. What MoroM is now is not written. The one thing anchoring it to held reality is described in `characters/black-maggie.md`.
 

@@ -1,6 +1,6 @@
 # Echo
 
-*Ambient encounter — Lowland Fog Basin, outskirts of Eclipsera.*
+*Ambient encounter — Lowland Fog Basin, outskirts of Eclipseria.*
 
 Not a threat. Not quite.
 

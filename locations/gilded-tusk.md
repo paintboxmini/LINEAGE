@@ -1,6 +1,6 @@
 # The Gilded Tusk
 
-*The most prominent tavern in Eclipsera. Where policy drinks.*
+*The most prominent tavern in Eclipseria. Where policy drinks.*
 
 ---
 

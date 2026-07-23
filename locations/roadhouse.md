@@ -44,7 +44,7 @@ Guard culture out here is practical and quiet. They don't talk much about what's
 - Under one bunk: a wooden chest, unlocked. A few coins (roll d6+2 silver), a spare uniform folded neatly, a whetstone, one set of Barbed Wrap still in its oilcloth. See `items/briarwatch-items.md`.
 - On the table: a folded posting order with an official wax seal.
 
-**The Posting Order** — standard Regency language. Assignment to Roadhouse waypoint, indefinite duration. Register compliance, cargo documentation. Report irregularities to *Quartermaster Voss, Eclipsera South Gate.*
+**The Posting Order** — standard Regency language. Assignment to Roadhouse waypoint, indefinite duration. Register compliance, cargo documentation. Report irregularities to *Quartermaster Voss, Eclipseria South Gate.*
 
 Below the printed text, added in smaller handwriting and different ink:
 
