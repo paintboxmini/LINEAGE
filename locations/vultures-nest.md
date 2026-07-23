@@ -97,15 +97,13 @@ If the party rushes to find her without looking: she finds them. But the route s
 **GM — Backstory**
 Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
 
-Recently her family sent word asking for help. She won't go herself. She's been watching the road for the right party.
+Recently her family sent word: the animals at the forest's edges have turned aggressive, moving in patterns nobody's seen before, and her family doesn't scare easily. She's going herself. Briarwatch is already on that road.
 
 **GM Secret — Not Player-Facing**
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment: the domain expresses itself through her, certain actions feel inevitable, resistance is difficult but choice still exists. Not the Archon — Death's actual bearer, if one exists, "is not publicly known" (`world/seats-archons-echoes.md`), and Aege isn't it. She's a reflection of the domain, not its seat.
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment. Not the Archon — Death's actual bearer, if one exists, "is not publicly known" (`world/seats-archons-echoes.md`), and Aege isn't it.
 
-This is specifically why she routes travelers toward Briarwatch, not just "west" in general: the Hollow Below Briarwatch is where her domain is concentrated right now — real deaths already happened there (the Fenwool taken by the Stonecoils), and real potential for more sits on top of it (the sinkhole's own escalating collapse risk, `quests/hollow-below-briarwatch.md`'s Subterranean Pressure Track). She doesn't need to be told any of this. She reads where endings are gathering the way the Night Ferryman reads the Coil's own restlessness before it surfaces — a domain-related sense, not investigation. It's also the real answer behind why she always seems to know more than she should about a party she's just met: she isn't reading them specifically, she's reading their proximity to where her domain is already active.
-
-Her own reason for watching the road at all — her family, the Turnroot letter — is separate and still fully hers; the Echo doesn't explain that part, and shouldn't. Two real reasons, not one dressed up as two.
+Briarwatch is where her domain is concentrated right now — real deaths already happened there (the Fenwool taken by the Stonecoils), real potential for more sitting on top of it (the sinkhole's own escalating collapse risk, `quests/hollow-below-briarwatch.md`'s Subterranean Pressure Track). She reads that the way the Night Ferryman reads the Coil's own restlessness before it surfaces.
 
 **Soft Gate — GM Facing**
 
@@ -115,27 +113,11 @@ Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-sc
 
 If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
 
-**The Sealed Letter**
+**Telling the Party**
 
-At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party plainly what she's already told nobody else: her family, the forest, the animals gone wrong. She's not asking them for anything. She's just going, and Briarwatch happens to be on the way.
 
-**This is her family's own letter to her, not one she wrote.** She read it — that's the whole reason she already knows enough to be "watching the road for the right party" before the party ever showed up (above). What she's handing over is her own letter, resealed, not a fresh one written to explain herself. Consistent with everything already established about her: she doesn't talk about her family, doesn't explain herself, and this way she doesn't have to — the letter says it in their words instead of hers, and she never has to say any of it out loud. The party is reading someone else's mail, in someone else's voice, addressed to Aege — not to them.
-
-The letter reads:
-
-> Aege —
->
-> It's been a long time. I wouldn't write if it weren't real.
->
-> The animals at the tree line have gone wrong. Aggressive. Moving in ways none of us have seen before. You know we don't scare easy out here — that's the whole reason this is worth troubling you with.
->
-> Come see for yourself, if you can. Or send someone who can.
->
-> — home
-
-**The letter never says where "home" is — it doesn't need to, since whoever wrote it already knows.** The party doesn't need it spelled out either: they've spent this entire job standing next to the one forest the letter could possibly mean. Turnroot Weald borders Briarwatch directly, past the watchtower ruins and the larder fence (`locations/briarwatch.md`, `quests/the-larder-fence.md`) — the connection is there to make, not handed over.
-
-*No further instructions.*
+Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once she delivers them to Briarwatch — she continues on to Turnroot Weald from there, alone, whether or not the party follows.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
