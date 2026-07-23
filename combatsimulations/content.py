@@ -493,12 +493,6 @@ def _intercept_effect(engine, me, foe):
     me.resist += 2
 _intercept_defense = _intercept_effect   # same text both sides
 
-def _protect_effect(engine, me, foe):
-    me._protect = True                    # I take the next hit meant for an ally
-def _protect_defense(engine, me, foe):
-    for a in engine.allies(me):
-        engine.heal(a, 2, source=me)
-
 def _rally_effect(engine, me, foe):
     engine.deal(me, 5, unpreventable=True)
     for a in engine.allies(me):

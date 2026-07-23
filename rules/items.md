@@ -24,6 +24,8 @@ Weapons and Armor both scale on the same three-tier system. Each tier is a **pow
 | 2 | +2 attack damage | −2 damage received |
 | 3 | +3 attack damage | −3 damage received |
 
+**A Tier 3 item (Weapon or Armor) may instead grant +1 to a single stat — Mind, Body, or Soul — with no other bonuses attached.** The entire tier's budget goes into the stat point alone; nothing gets stacked on top of it. Priced at the top tier on purpose: a stat point isn't just a bigger number, it moves other things too (Mind sets hand size 1:1, Body sets max HP, Soul sets the initiative roll), so it's worth more than any single flat bonus or keyword stack at the same tier.
+
 **The budget doesn't have to go entirely into the flat number.** A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:
 
 - **1 point ≈** +1 flat damage or reduction, **or** granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
@@ -51,6 +53,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 3:* +2 damage; gain Deadly at the start of combat.
 - *Tier 3:* +1 damage; gain Deadly at the start of combat; inflict Weak on the first successful attack against you. (Three-way split of the same budget.)
 - *Tier 3:* Gain Critical the first time you attack each combat. (Whole budget on one spike.)
+- *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 **Armor**
 - *Tier 1:* Start combat with 1 Resist.
@@ -60,6 +63,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
 - *Tier 3:* −1 damage received; start combat with Resist; start combat with Evade. (Three-way split.)
 - *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
+- *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 ---
 
