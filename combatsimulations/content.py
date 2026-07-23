@@ -796,14 +796,18 @@ def _staring_contest_defense(engine, me, foe):
 
 # Shared by WAITING GAME (Mirror: copy, leaves foe's own untouched) and
 # DRAIN (Parasite: steal, actually removes it from foe) — same fixed check
-# order (Deadly > Resist > Evade > Protect) either way, since a heuristic
-# brain can't "choose" the way a real player would at the table; a real
-# player picks freely among whatever's visible. Capped at however many
+# order (Deadly > Resist > Evade > Protect > Immune) either way, since a
+# heuristic brain can't "choose" the way a real player would at the table; a
+# real player picks freely among whatever's visible. Capped at however many
 # statuses are actually present rather than duplicated — copying/stealing
-# one Deadly twice isn't "two effects." Anchored and Quick are both skipped
-# here (not by the same reasoning, though): Anchored lives in `ongoing`, not
-# a simple flag; Quick is real now (OVERCOMMIT), just never asked to be
-# copyable/stealable by either of these two cards specifically.
+# one Deadly twice isn't "two effects." Immune included per its membership in
+# Positive Status Effects (card-glossary.md) and its structural kinship with
+# Evade (both single-charge, expire on trigger) — placed last in priority so
+# it doesn't disturb existing regression behavior for decks without it.
+# Anchored and Quick are both skipped here (not by the same reasoning,
+# though): Anchored lives in `ongoing`, not a simple flag; Quick is real now
+# (OVERCOMMIT), just never asked to be copyable/stealable by either of these
+# two cards specifically.
 def _transfer_statuses(me, foe, count, steal):
     order = []
     if foe.deadly > 0:
@@ -814,11 +818,17 @@ def _transfer_statuses(me, foe, count, steal):
         order.append('evade')
     if getattr(foe, '_protect', False):
         order.append('protect')
+    if foe.immune:
+        order.append('immune')
     for kind in order[:count]:
         if kind == 'protect':
             me._protect = True
             if steal:
                 foe._protect = False
+        elif kind == 'immune':
+            me.immune = True
+            if steal:
+                foe.immune = False
         else:
             setattr(me, kind, getattr(me, kind) + 1)
             if steal:
@@ -840,9 +850,9 @@ def _drain_defense(engine, me, foe):
     _transfer_statuses(me, foe, 1, steal=True)
 
 # Pure removal, no benefit to the caster — same fixed priority order as
-# _transfer_statuses (Deadly > Resist > Evade > Protect), shared by UNMAKE
-# and LEVEL THE FIELD below. Anchored/Quick skipped for the same reasons as
-# _transfer_statuses.
+# _transfer_statuses (Deadly > Resist > Evade > Protect > Immune), shared by
+# UNMAKE and LEVEL THE FIELD below. Anchored/Quick skipped for the same
+# reasons as _transfer_statuses.
 def _strip_one_status(target, count=1):
     order = []
     if target.deadly > 0:
@@ -853,9 +863,13 @@ def _strip_one_status(target, count=1):
         order.append('evade')
     if getattr(target, '_protect', False):
         order.append('protect')
+    if target.immune:
+        order.append('immune')
     for kind in order[:count]:
         if kind == 'protect':
             target._protect = False
+        elif kind == 'immune':
+            target.immune = False
         else:
             setattr(target, kind, getattr(target, kind) - 1)
 
