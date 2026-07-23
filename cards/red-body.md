@@ -305,8 +305,8 @@ Range: Melee
 **REND**
 RED — BODY
 Attack: Body + d6
-Effect: If this attack deals damage, shuffle 1 Injury into defender's deck.
-Defensive Bonus: Next attack against you shuffles 1 Injury into your deck instead of dealing damage.
+Effect: If this attack deals damage, add 1 Injury to the bottom of defender's deck.
+Defensive Bonus: Next attack against you adds 1 Injury to the bottom of your deck instead of dealing damage.
 Range: Melee
 *"The cut that keeps opening."*
 
