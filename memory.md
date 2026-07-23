@@ -360,6 +360,11 @@ Authority 1/2 content shipped to canon since Drew's last look (see The Canon Gat
   - `rules/core-rules.md` and `rules/character-creation.md`'s pointers updated to split correctly — `rules/equipment.md` for design, `rules/items.md` for the catalog.
   - Not sim-related — pure worldbuilding reference material, no `combatsimulations/` changes.
 
+- **A1/A2 — two things flagged last entry both resolved directly by Drew, same session.** "luminova leaves can be ground into a powder to increase potency. they count as 2 different items that both deserve to exist" and "the storm seat is an official seat."
+  - **Luminova Leaves/Powder**: not a duplication after all — a real crafting relationship, raw leaf (weaker, immediate) ground into powder (roughly double potency, needs processing). Gave Leaves the Source line it never had (harvestable in the field, Turnroot Weald's Luminova Clearing — same source as the Powder, just the unprocessed form) and a price (~15 gold, half the Powder's ~30, matching the roughly-halved healing). Added reciprocal cross-references on both entries (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`) and fixed `rules/items.md`'s catalog to describe the real relationship instead of flagging it as an unresolved overlap.
+  - **The Storm Seat**: confirmed real, not a gap. Added a full entry to `mythology/seats.md` (matching the exact format already used for the other unbeared Seats — Death, Knowledge, Blood: a Domain line, no Bearer line, bearer status "not publicly known") and to `world/seats-archons-echoes.md` (added to the "known Seats include" list, plus a matching Known Archons-section entry). Both cite the Lightning Loop as the one confirmed Storm-aligned Artifact, carrying only a narrow slice (lightning) of the full domain. `items/lightning-loop.md`'s own open question about whether the Seat has a bearer stays genuinely open — Drew confirmed the Seat's existence, not who (if anyone) holds it — annotated rather than removed, so the file doesn't quietly overclaim more than was actually confirmed.
+  - Not sim-related — pure worldbuilding, no `combatsimulations/` changes.
+
 ## Pending propagation
 
 Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty means everything is propagated.
