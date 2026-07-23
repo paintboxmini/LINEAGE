@@ -18,7 +18,11 @@ The walls inside are taller than the coil looks from the water. Stone in places,
 
 *GM background — the deep history. Not player-facing unless the story earns it.*
 
-It wasn't always this far from anywhere. Long before the labyrinth, long before Vulture's Nest had a name, it was near the Abyssal Ruins the first time the War Engine fired. That was the first strike, not the one still to come — see `quests/war-engine.md`. It was close enough to be hurt.
+It wasn't always this far from anywhere, and it wasn't always this large, either. What it was, once: a Coralcoil — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), native to the coral-banked reaches where a river runs close to the coast (`world/geography-overview.md`, Rivers and Lakes). Ordinary size under ordinary conditions, same as any Stonecoil — and the same capacity to grow far past that, given enough reason to.
+
+It was given a reason. The civilization that once held the ground the Abyssal Ruins now sit on kept this one in containment, and fed it — deliberately, over what must have been a very long time, toward a very specific purpose: a living weapon, grown rather than built, meant for the war they were already losing against Ashfall. Ashfall built the War Engine. The Ruins built this instead — or were still building it, the slow way, when the question got settled by other means. See `quests/war-engine.md`, `locations/ashfall-wastes.md`.
+
+Long before the labyrinth, long before Vulture's Nest had a name, it was near the Abyssal Ruins the first time the War Engine fired. That was the first strike, not the one still to come — see `quests/war-engine.md`. It was close enough to be hurt. Whatever was holding it — cage, pact, wardwork, nobody left to ask — didn't survive being that close to the Engine either. Hurt and suddenly free of whatever had contained it for however many years, it did the only thing left available to something that size: it moved.
 
 It fled the only direction that was open: out, into the Unheld. Not carried there — went there, alive, the same way the old ghost-story crews did, generations of sailors who slipped past the coast and came home subtly wrong. Grey water goes mundane at the threshold; it cannot be carried. A living thing that was actually out there doesn't get that mercy. Whatever the Unheld's changes are, they came home with it, the same way reversed handedness and eyes that reflect wrong colors came home with sailors who never should have survived the crossing. See `world/the-unheld.md`.
 
@@ -421,3 +425,5 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 - `mythology/seats.md`, `world/seats-archons-echoes.md` — Navigation, the Night Ferryman's Seat (GM-only)
 - `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
 - `locations/abyssal-ruins.md`, `locations/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
+- `bestiary/stonecoil.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat
+- `world/geography-overview.md` — Rivers and Lakes, the coral-banked reaches a Coralcoil actually comes from

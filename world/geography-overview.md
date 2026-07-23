@@ -75,6 +75,8 @@ The water itself stays ordinary. The coastline is a hard threshold — unheldnes
 
 Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
 
+Where a river runs close to the coastline itself, before the water goes grey, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary growth that happens to like the mineral-rich water this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), named for exactly this. See `locations/the-coil.md` for what one became.
+
 ## Key Landmarks (Summary)
 
 Positions are in the coordinate table above, not repeated here.
