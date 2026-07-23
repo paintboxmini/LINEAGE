@@ -106,7 +106,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
 ## Agent Workflow
 
-1. **Orient** — Read `memory.md`, then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
+1. **Orient** — Read `memory.md` and `unresolved-concerns.md` (the scannable index of open debt — flagged issues and deferred decisions; add a line when flagging one, delete it when resolved), then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
 2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone, restored 2026-07-23), with `design-principles.md`/`exemplars.md` as the standard both measure against. The old generator layer stays archived in `archives/` (see Translation Principle, below, for why).
 3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Cover:
    - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
