@@ -1603,13 +1603,10 @@ def _rollout_defense(engine, me, foe):
 def _seismic_redirect_effect(engine, me, foe):
     _rushdown(me, foe)
 def _seismic_redirect_defense(engine, me, foe):
-    # Corrected 2026-07-24, twice: card text is bare "Counter Attack" — no
-    # die stated — which per the glossary's default form means "deal this
-    # card's own Attack damage back" (Body + d6, this card's printed
-    # attack), not the weaker flat-die form. An earlier pass misread the
-    # card as having stated a die ("d6") when the "d6" was never meant to be
-    # part of Counter Attack's own phrasing — it's just this card's own
-    # Attack line, restated. Text corrected to drop the "d6" entirely.
+    # Counter Attack always means this card's own stat + die (Body + d6,
+    # this card's printed Attack) — Counter Attack no longer has a
+    # separate "stated die" form at all (card-glossary.md, simplified
+    # 2026-07-24). Card text is bare "Counter Attack," no die restated.
     engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
 
 # GORE (Minotaur) — base die bumped along with everything else.
