@@ -142,13 +142,15 @@ def _resolve_follow_up(engine, actor):
     return target
 
 
-# Ongoing kinds whose OWN card text says "ends if you die/collapse" (SLIPSTREAM,
-# SYNCHRONY) — cleared for real on Collapse, below. Pure-Anchored kinds
-# (rooted_oath, ledger) are deliberately left alone: Anchored's own glossary
-# rule only ends on moving position, never mentions Collapse, and since a
-# Collapsed combatant can't take turns anyway they go dormant on their own —
-# explicitly removing them would be inventing a rule these cards never stated.
-_ENDS_ON_COLLAPSE = {'synchrony', 'slipstream'}
+# Every Anchored-based ongoing kind, plus SYNCHRONY (whose own card text
+# says "ends if you die or leave combat," independent of Anchored) — all
+# cleared for real on Collapse, below. Collapse ending Anchored used to be
+# modeled only for SLIPSTREAM, as if it were a SLIPSTREAM-specific rule;
+# Drew's direct call 2026-07-24 made it universal (rules/card-glossary.md,
+# Anchored) — every position-anchored ongoing effect ends on Collapse, not
+# just the ones whose own card text happened to say so.
+_ENDS_ON_COLLAPSE = {'synchrony', 'slipstream', 'dig_in', 'rooted_oath', 'rooted_oath_def',
+                     'patience_def', 'seed_deadly', 'seed_resist', 'anchor_heal', 'ledger'}
 
 
 def _clear_ongoing_on_collapse(target):
@@ -156,7 +158,7 @@ def _clear_ongoing_on_collapse(target):
     effect in the sim — it didn't. Nothing ever cleared `ongoing` on collapse,
     which only became a real (not just theoretical) bug once revival from
     Collapse became possible: without this, a revived combatant's old
-    "ends if you collapse" effects would silently resume."""
+    Anchored effects would silently resume."""
     target.ongoing = [o for o in target.ongoing if o['kind'] not in _ENDS_ON_COLLAPSE]
 
 
@@ -689,10 +691,18 @@ class Combatant:
 
     def injuries_visible(self):
         """Injuries a player can actually see and count — hand + discard, NOT deck
-        (Drew ruling: nobody should have to track or search hidden Injuries). Press
-        the Injury and Taint count these."""
+        (Drew ruling: nobody should have to track or search hidden Injuries). Taint
+        and Field Medicine count these."""
         return sum(1 for c in (self.hand + self.discard)
                    if c.is_status and c.name == 'INJURY')
+
+    def status_cards_visible(self):
+        """Every status card (Injury AND Exhaust) a player can see and count —
+        hand + discard, NOT deck, same scope as injuries_visible() above. Press
+        the Injury's count was broadened to this 2026-07-24 (previously Injury
+        only) — Drew's call, since Exhaust is just as visible a status card as
+        Injury and there was no stated reason to exclude it."""
+        return sum(1 for c in (self.hand + self.discard) if c.is_status)
 
     # --- deck plumbing ---
     def build(self, cards, rng):
@@ -933,7 +943,7 @@ class Duel:
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
 
-        # Immunity (card-glossary.md, BARRIER/LAST RESORT): the attack fails
+        # Immunity (card-glossary.md, LAST RESORT): the attack fails
         # completely before anything else — no FOLLOW-UP resolution, no color
         # read, no reveal bookkeeping. Stronger than Blind/Evade, both of
         # which still reveal the attacker's card and log it to attack_history

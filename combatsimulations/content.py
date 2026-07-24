@@ -74,7 +74,7 @@ def _fracture_effect(engine, me, foe):
     back = [e for e in enemies if e.position == 'backline']
     side = front if len(front) >= len(back) else back   # "your choice" — pick the fuller side
     for e in side:
-        engine.deal(e, 3)
+        engine.deal(e, 5)   # bumped 3 -> 5, 2026-07-24
 
 def _fracture_defense(engine, me, foe):
     # Fixed 2026-07-24: no defense= was registered at all — this Defensive
@@ -357,6 +357,22 @@ def remove_injuries(target, n=None):
     return removed
 
 
+def remove_status_cards(target, n=None):
+    """Permanently destroy up to n status cards — Injury OR Exhaust — from HAND
+    + DISCARD only, never the deck. Press the Injury's Defensive Bonus (broadened
+    2026-07-24 to match its now-broader status_cards_visible() count)."""
+    removed = 0
+    for pile in (target.hand, target.discard):
+        i = 0
+        while i < len(pile):
+            if pile[i].is_status and (n is None or removed < n):
+                pile.pop(i)
+                removed += 1
+            else:
+                i += 1
+    return removed
+
+
 # --- Green ---
 def _balance_effect(engine, me, foe):
     if me.hand:
@@ -394,14 +410,17 @@ def _rend_defense(engine, me, foe):
 
 
 def _press_the_injury_dmg(engine, me, foe):
-    return me.eff('body') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me) + 2 * foe.injuries_visible()
+    # Broadened 2026-07-24: counts every status card (Injury + Exhaust), not
+    # just Injury — Drew's call (card-glossary.md's Debuff/status-card scope
+    # already treats them as the same kind of thing).
+    return me.eff('body') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me) + 2 * foe.status_cards_visible()
 
 
 def _press_the_injury_defense(engine, me, foe):
-    n = me.injuries_visible()
+    n = me.status_cards_visible()
     if n:
         engine.heal(me, 2 * n)
-        remove_injuries(me)
+        remove_status_cards(me)
 
 
 # --- Blue ---
@@ -1104,26 +1123,23 @@ def _strip_one_status(target, count=1):
 # established Debuff/Ward rule, same category as AFTERIMAGE bypassing Axiom
 # or FRAME-TRAP bypassing RPS — flagged here, not incidental, since
 # normally a Positive-Status-Effect removal is exactly the kind of thing
-# Ward is supposed to stop (`warded()`'s own ruling text). Paid for with a
-# steep Exhaust cost — 3, heavier than OVERCOMMIT's 2, since this both
-# breaks a standing rule and wipes an opponent's entire buff set at once.
+# Ward is supposed to stop (`warded()`'s own ruling text). Paid for with an
+# Exhaust cost — 2 (reduced from 3, 2026-07-24, Drew's call), same as
+# OVERCOMMIT's.
 def _unmake_effect(engine, me, foe):
     remove_positive_status(foe)
-    engine.insert_exhaust(me, 3)
+    engine.insert_exhaust(me, 2)
 def _unmake_defense(engine, me, foe):
     remove_positive_status(foe)
-    engine.insert_exhaust(me, 3)
+    engine.insert_exhaust(me, 2)
 
-# BARRIER / LAST RESORT — Immunity (card-glossary.md): the actual negation
-# logic lives once in both engines' attack(), checked before anything else
-# is even revealed. These just set the flag. Not added to the Positive
-# Status Effects list — a deliberate, unconfirmed-until-asked scope limit,
-# same footing as Critical: UNMAKE/LEVEL THE FIELD/WAITING GAME/DRAIN don't
-# strip or copy it.
-def _barrier_effect(engine, me, foe):
-    me.immune = True
-def _barrier_defense(engine, me, foe):
-    me.immune = True
+# LAST RESORT — Immunity (card-glossary.md): the actual negation logic
+# lives once in both engines' attack(), checked before anything else is even
+# revealed. This just sets the flag. Not added to the Positive Status
+# Effects list — a deliberate, unconfirmed-until-asked scope limit, same
+# footing as Critical: UNMAKE/LEVEL THE FIELD/WAITING GAME/DRAIN don't strip
+# or copy it. (BARRIER, Immunity's other former source, was cut 2026-07-24 —
+# Drew's call; LAST RESORT is now the only card that grants it.)
 
 # Gene-Thief Tardigrade signature cards (bestiary/gene-thief-tardigrade.md) —
 # echo the creature's own Genetic Absorption passive rather than duplicating
@@ -1886,7 +1902,6 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("BARRIER", 'B', 'mind', 'ranged', 4, effect=_barrier_effect, defense=_barrier_defense)
     add("LAST RESORT", 'B', 'mind', 'both', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
@@ -2035,8 +2050,8 @@ TEMPO_STATS = dict(mind=4, soul=3, body=2)
 # for what an actual new table produces, for testing real party comps against
 # real creature encounters rather than symmetric mirrors.
 GARRET_STATS = dict(mind=5, body=2, soul=2)
-GARRET_DECK = [
-    "PARTITION", "BARRIER", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
+GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
+    "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
     "UNDERSTANDING", "SEISMIC REDIRECT", "UNNAME", "DIG IN",
 ]
 BRASCA_STATS = dict(mind=2, body=5, soul=2)
