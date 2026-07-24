@@ -6,7 +6,7 @@ Signature cards for the Rootstalker. Tagged as WEALD — these cards represent t
 
 **LIMB-SNAPPER**
 RED — BODY — WEALD
-Attack: Body + d4
+Attack: Body + d6
 Effect: If the target is in the Backline, deal +2 damage and pull them to the Frontline.
 Defensive Bonus: Gain Thorns 2.
 Range: Melee, hits Backline
@@ -16,7 +16,7 @@ Range: Melee, hits Backline
 
 **CAMOUFLAGE STRIKE**
 BLUE — MIND — WEALD
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If you are in the Backline, gain Evade.
 Defensive Bonus: Move to the Backline; Scry 1.
 Range: Ranged
@@ -26,7 +26,7 @@ Range: Ranged
 
 **THORN-BIND**
 GREEN — SOUL — WEALD
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Target gains Weak.
 Defensive Bonus: Target gains Rooted.
 Range: Both
@@ -36,7 +36,7 @@ Range: Both
 
 **SPLINTER-BURST**
 RED — BODY — WEALD
-Attack: Body + d4
+Attack: Body + d6
 Effect: Pay 2 HP; deal half the total attack damage (rounded up) to another Frontline enemy.
 Defensive Bonus: Gain Thorns 2.
 Range: Melee

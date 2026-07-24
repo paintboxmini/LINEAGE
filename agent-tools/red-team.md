@@ -33,9 +33,9 @@ minimal — do not add complexity unless it solves a demonstrated problem.
      first and the fiction painted on after?
    - Does the encounter teach through what the player does, or does it require
      the GM to explain the lesson?
-   Check against `archives/design-principles.md` directly (archived, not
-   deleted; still true) — this is a design standard, not an engine check, and
-   violating it doesn't break anything the simulator would catch.
+   Check against `agent-tools/design-principles.md` directly — this is a
+   design standard, not an engine check, and violating it doesn't break
+   anything the simulator would catch.
 
 2. Simulation abuse.
    - If the mechanic lives in `combatsimulations/` (or is a few lines from being
@@ -160,7 +160,7 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
 - Engine invariants (for the Engine-Invariant Violations pass): `rules/invariants.md`
-- Design standards (for the Design Principles pass): `archives/design-principles.md` — archived, not deleted; still true, no longer maintained as living doctrine
+- Design standards (for the Design Principles pass): `agent-tools/design-principles.md` — living doctrine, restored 2026-07-23
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
 - Tone reference: `cards/alignment-marshal-engine.md`

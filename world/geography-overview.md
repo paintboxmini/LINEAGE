@@ -10,13 +10,13 @@ The continent is rich with rivers and lakes. Where the roads are the Regency's a
 
 ## Overall Shape
 
-Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipsera sits at the center of that triangle, not along one edge of it. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
+Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle, not along one edge of it. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
 
 **Coordinates** (relative grid, not to scale):
 
 | Location | (x, y) |
 |----------|--------|
-| Eclipsera (capital) | (0, 0) |
+| Eclipseria (capital) | (0, 0) |
 | Glasslight Reach | (0, 10) |
 | Turnroot Weald | (−7, −7) |
 | Vulture's Nest | (7, −7) |
@@ -33,7 +33,7 @@ Rough estimates, not confirmed the way the triangle and its edges are — placed
 
 ## The Kings Road
 
-Six segments, not one line: the three edges of the triangle above, plus a spoke from each corner in to Eclipsera at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
+Six segments, not one line: the three edges of the triangle above, plus a spoke from each corner in to Eclipseria at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
 
 **The three edges:**
 - Glasslight Reach ↔ Turnroot Weald
@@ -41,16 +41,16 @@ Six segments, not one line: the three edges of the triangle above, plus a spoke 
 - Vulture's Nest ↔ Glasslight Reach
 
 **The three spokes (corner to center):**
-- Glasslight Reach ↔ Eclipsera
-- Turnroot Weald ↔ Eclipsera — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint
-- Vulture's Nest ↔ Eclipsera — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
+- Glasslight Reach ↔ Eclipseria
+- Turnroot Weald ↔ Eclipseria — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint
+- Vulture's Nest ↔ Eclipseria — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
 
-**Inns confirmed and built out:** the Roadhouse (`locations/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipsera–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host.md`) on the Turnroot–Eclipsera spoke.
+**Inns confirmed and built out:** the Roadhouse (`locations/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipseria–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host.md`) on the Turnroot–Eclipseria spoke.
 
-**Inns confirmed, not yet built:** the remaining three segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipsera) each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
+**Inns confirmed, not yet built:** the remaining three segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipseria) each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
 
 **Travel:**
-- Vulture's Nest → Eclipsera: 2 days
+- Vulture's Nest → Eclipseria: 2 days
 - The Kings Road Inn sits roughly at the midpoint of that spoke — 1 day from each
 
 ---
@@ -62,6 +62,8 @@ The known world occupies a basin, surrounded on every side by **the Unheld Ocean
 One more boundary sits inside that outer edge, not part of it: **the Turnroot Weald**, wrapping the eastern edge of the Ashfall Wastes, a sentient forest that insulates the rest of the basin from the War Engine beyond.
 
 There is nothing beyond the coast. Or nothing anyone has come back to describe. The ghost stories say otherwise — ships that slipped past the shore generations ago, crews that came home wrong or didn't come home at all. The stories are told in river taverns, quietly, and nobody checks them against the water.
+
+One campaign opening starts exactly there: a party washed ashore at (−1, −11), on foot, with no memory of the crossing and — unlike every other account — nothing visibly wrong with them. See `quests/washed-ashore.md`.
 
 ## Rivers and Lakes
 
@@ -75,13 +77,15 @@ The water itself stays ordinary. The coastline is a hard threshold — unheldnes
 
 Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
 
+Where a river runs close to the coastline itself, before the water goes grey, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary growth that happens to like the mineral-rich water this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), named for exactly this. See `locations/the-coil.md` for what one became.
+
 ## Key Landmarks (Summary)
 
 Positions are in the coordinate table above, not repeated here.
 
 | Location | Notes |
 |----------|-------|
-| Eclipsera (city) | Capital; seat of the Regency |
+| Eclipseria (city) | Capital; seat of the Regency |
 | Glasslight Reach | Cliff town; faces the Soft Edge |
 | Turnroot Weald | Sentient forest; wraps Ashfall Wastes |
 | Ashfall Wastes | Ash-buried ruins; strange heat |

@@ -13,9 +13,11 @@ In combat, you don't declare an action and roll — you play a card. The card te
 **Color + Stat** — The card's alignment. Red (Body), Blue (Mind), or Green (Soul). Determines which stat is used to calculate damage and how the card interacts with Rock-Paper-Scissors resolution.
 
 **Attack** — Damage dealt when your attack wins: *Stat + die*. The die signals the card's philosophy:
-- **d6** — Raw power. High ceiling, less control.
-- **d4** — Utility. Moderate damage, strong effects.
-- **d2** — Precision. Low damage, high control and information.
+- **d8** — Raw power. High ceiling, less control.
+- **d6** — Utility. Moderate damage, strong effects.
+- **d4** — Precision. Low damage, high control and information.
+
+*(d10 exists on a small number of cards as a genuine outlier above this scale — rare and deliberately unlabeled, same as before the 2026-07-22 dice step-up; it was never a fourth named tier.)*
 
 **Effect** — Triggers when you play this card as an attack and win the resolution — or tie it. On a tie the Effect still triggers, before the Defensive Bonus (see the tie rule in `rules/combat.md`).
 
@@ -34,7 +36,7 @@ In combat, you don't declare an action and roll — you play a card. The card te
 ║  FLOW                            ║
 ║  GREEN — SOUL                    ║
 ╠══════════════════════════════════╣
-║  Attack:           Soul + d4     ║
+║  Attack:           Soul + d6     ║
 ║  Effect:           Change position
 ║  Defensive Bonus:  Change position
 ║  Range:            Melee         ║
@@ -50,9 +52,9 @@ In combat, you don't declare an action and roll — you play a card. The card te
 
 When you look at a hand of cards, the dice tell you who you are right now.
 
-A hand full of d6s is a brawler who hits hard and moves with purpose.
-A hand full of d2s is a strategist watching for the moment everything opens up.
-A hand full of d4s is someone threading the gap between the two.
+A hand full of d8s is a brawler who hits hard and moves with purpose.
+A hand full of d4s is a strategist watching for the moment everything opens up.
+A hand full of d6s is someone threading the gap between the two.
 
 Your deck is not just mechanics. It's how your character thinks.
 

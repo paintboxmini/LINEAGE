@@ -2,7 +2,7 @@
 
 A practical efficiency tool, not one of the four canonical kinds (`CLAUDE.md`, Four Kinds of Canonical Content) — it's a precompiled digest of facts the generators would otherwise re-derive from full canon reads every run: engine facts, calibration numbers, format templates. It cuts across Rule Definitions, Invariants, and Design Principles for speed; it doesn't hold canon of its own. **This file is a build artifact, not a source of truth** — every fact here has a canonical home, cited inline. When canon changes underneath it, add this file to **Pending propagation** in `memory.md` and refresh it at the next Sync. If a pattern gets retrieved repeatedly to rediscover it, that's the signal to promote it into this file rather than re-deriving it next time.
 
-For actual best-in-class Tales Untold content — the pieces worth reading to calibrate what excellent looks like — see `archives/exemplars.md` instead (archived, not deleted; still true). That file is curated content; this one is a cheat-sheet.
+For actual best-in-class Tales Untold content — the pieces worth reading to calibrate what excellent looks like — see `agent-tools/exemplars.md` instead. That file is curated content; this one is a cheat-sheet.
 
 Read this + the target's location/bestiary file + anything your specific task actually touches. Go to the full canon files only when the task bends a rule, the crib looks stale, or you're checking a keyword's exact text.
 
@@ -18,9 +18,9 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - HP = (2 × Body) + 9 is the baseline every generator offers; bosses may go bespoke, marked explicitly. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Creature Threat Rating = total stats** — the difficulty scale; player baseline is 9.
 - Positions: Frontline / Backline. Melee needs both frontline; ranged needs not-both-frontline; "Both" always legal.
 - Initiative: tokens placed clockwise in initiative order; a turn marker starts at 12 o'clock and advances one token per turn. **Wait** = forfeit action, choose a later slot (the party's sequencing tool). **Initiative Shift X** always moves the token the full distance — positive counterclockwise (never later), negative clockwise (never sooner); when that would violate the guarantee, a skip or bonus chip preserves it instead of altering the move. Full mechanic: `rules/combat.md`, `rules/card-glossary.md`; worked cases: `rules/initiative-shift-examples.md`.
-- Standard DC 13. Perception modes: Observe (Mind) / Sense (Body) / Read (Soul).
+- Standard DC 13. Perception modes: Reason (Mind) / Senses (Body) / Read (Soul).
 - Status cards (Injury, Exhaust) go into decks — the delayed-consequence system.
-- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Fortress, Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Sealed, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
+- Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Protect, Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Sealed, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
 
 ## Creature Threat Rating calibration (real anchors)
 
@@ -43,7 +43,7 @@ Core card (universal — no tag; die philosophy: d6 power / d4 utility / d2 prec
 ```
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: The next ally to attack deals +3 damage
 Defensive Bonus: A target ally draws 1 card
 Range: Ranged
@@ -55,7 +55,7 @@ Signature card (one source tag = where it's obtained, per `world/lineage.md`; ti
 ```
 **WATCHFUL PERCH**
 GREEN — SOUL — BRIARWATCH
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Move to the Backline and gain Evade.
 Defensive Bonus: Apply Initiative Shift +2 to yourself.
 Range: Both

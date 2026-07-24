@@ -10,7 +10,7 @@ Status marks what's actually shipped, not what's just named. A named-but-unbuilt
 
 **The Opportunist** — named, not yet fleshed out.
 
-**The Gambler** — embraces variance; wagers now for a bigger (or worse) outcome later. GAMBLER'S RUIN (existing core card) is the dice-variance seed. Berserker's Price (`cards/red-body.md`) is a close cousin in shape, not archetype-tagged to it specifically. In progress: a card trading an upfront benefit for Exhaust cards seeded into hand.
+**The Gambler** — embraces variance; wagers now for a bigger (or worse) outcome later. GAMBLER'S RUIN (existing core card) is the dice-variance seed. Berserker's Price (`cards/red-body.md`) is a close cousin in shape, not archetype-tagged to it specifically. Shipped: WILD CARD (`cards/green-soul.md` — the played card is replaced entirely by the top of your own deck once the RPS outcome is locked in, symmetric on attack or defense), TABLE STAKES (`cards/red-body.md` — a random discard from your own hand decides a bonus effect by color). DOUBLE DOWN (`cards/red-body.md` — a clean win buys a full second attack exchange) is canon text only, deliberately not wired into the sim yet — Drew's own call, pending playtesting first. Real party read: Steele fits this archetype best, Lefty second, neither purely. Still in progress: a card trading an upfront benefit for Exhaust cards seeded into hand.
 
 **The Builder** — Mason philosophy: "I changed the battlefield, deal with it." Zones/Beacons/Hazards as persistent, position-tied area effects. Shipped: MENDING GLYPH, HONING GLYPH, BARBED GLYPH, CIPHER GLYPH (`cards/mason-glyphs.md`) — the first targetable, non-combatant battlefield entities in the game. Combat-simulator support still pending (queued for Sync).
 

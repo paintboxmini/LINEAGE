@@ -8,7 +8,7 @@ Signature cards for Kino. See `characters/kino.md`.
 
 **EMBER CIRCLE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Resist. The first Red attack against you this combat automatically loses the reveal — no card needed to defend it. Discard this card once that triggers.
 Defensive Bonus: Gain Resist.
 Range: Both
@@ -18,7 +18,7 @@ Range: Both
 
 **MIRROR CIRCLE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Gain Ward. The first Blue attack against you this combat automatically loses the reveal — no card needed to defend it. Discard this card once that triggers.
 Defensive Bonus: Gain Ward.
 Range: Both
@@ -28,7 +28,7 @@ Range: Both
 
 **THORN CIRCLE**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Gain Evade. The first Green attack against you this combat automatically loses the reveal — no card needed to defend it. Discard this card once that triggers.
 Defensive Bonus: Gain Evade.
 Range: Both

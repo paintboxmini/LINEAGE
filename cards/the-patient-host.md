@@ -4,7 +4,7 @@
 
 **YOUR TURN WILL COME**
 GREEN — SOUL — MILESTONE
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Apply Initiative Shift -2 to target.
 Defensive Bonus: Apply Initiative Shift -2 to the attacker.
 Range: Ranged
@@ -14,8 +14,8 @@ Range: Ranged
 
 **REGISTERED**
 BLUE — MIND — MILESTONE
-Attack: Mind + d4
-Effect: Scry 2 on the target's deck.
+Attack: Mind + d6
+Effect: Scry 2 on the target's deck. The most dangerous card seen is struck from the book instead of merely re-filed — Exile it rather than sending it to the discard pile.
 Defensive Bonus: Gain Ward.
 Range: Both
 *"Your name was already in the book."*
@@ -24,7 +24,7 @@ Range: Both
 
 **NO VACANCY**
 RED — BODY — MILESTONE
-Attack: Body + d6
+Attack: Body + d8
 Effect: Move target to Backline.
 Defensive Bonus: Gain Resist 2.
 Range: Melee
@@ -34,7 +34,7 @@ Range: Melee
 
 **THE LEDGER NEVER CLOSES**
 GREEN — SOUL — MILESTONE
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Anchored — At the start of each of its turns, heal 3 HP.
 Defensive Bonus: Draw 1 card.
 Range: Both

@@ -1,6 +1,6 @@
 # The Wallows
 
-*The mine beneath Eclipsera. Built by the Boar above a bound Archon. The mine knows this, even if the workers don't.*
+*The mine beneath Eclipseria. Built by the Boar above a bound Archon. The mine knows this, even if the workers don't.*
 
 For the Demon Court faction that governs the labor level, see `factions/demon-court.md`.
 For the bazaar above, see `locations/underground-bazaar.md`.
@@ -56,7 +56,7 @@ The warping is not dangerous in the way the labor level is dangerous. It's dange
 
 ## The Alternate Path
 
-Somewhere in the threshold, threading around Aurora's direct influence, a passage leads up and out — surfacing outside Eclipsera's walls entirely.
+Somewhere in the threshold, threading around Aurora's direct influence, a passage leads up and out — surfacing outside Eclipseria's walls entirely.
 
 The Cartographer mapped this route. She made the map to help her granddaughter get someone out. The map still exists. It is the only reliable navigation through the threshold that doesn't require knowing where Aurora is by feel.
 
@@ -91,6 +91,7 @@ Players who reach the deep will not find a fight. They will find the love of the
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy
 - `locations/underground-bazaar.md` — above
 - `locations/underground-tavern.md` — transitional layer
+- `characters/kess.md` — the rescue attempt whose echo lives here
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding
 - `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
 - `quests/the-wallows-descent.md` — full adventure structure

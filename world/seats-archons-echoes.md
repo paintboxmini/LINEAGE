@@ -4,7 +4,7 @@
 
 Seats are universal fundamental laws. They exist on a higher plane and affect the entire continent — not just local zones. They are not titles, not powers granted from above. They are structural features of existence: principles that reality already recognizes.
 
-The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, and others that may exist unnamed.
+The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, Storm, and others that may exist unnamed.
 
 **Seat States:**
 - **Filled** — Things work normally within that domain.
@@ -32,13 +32,13 @@ Archons can also **fade**. A domain whose practice dies in the world starves its
 
 ### Known Archons
 
-**Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipsera carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
+**Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipseria carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
 
 **Elias** *(Change)* — Changes so much he has forgotten he is an Archon. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
 
-**Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipsera before may recognize him.
+**Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipseria before may recognize him.
 
-**Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipsera's continued existence.
+**Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipseria's continued existence.
 
 **MoroM** *(Witnessed Suffering)* — Fading. The Thessians, who practiced the domain, are gone but for one. What MoroM is now is not written. The one thing anchoring it to held reality is described in `characters/black-maggie.md`.
 
@@ -53,6 +53,8 @@ Archons can also **fade**. A domain whose practice dies in the world starves its
 **The Seat of Knowledge** — Awareness, not wisdom. Truth uncovered. Secrets revealed. Pattern recognized. Nothing hidden escapes it permanently.
 
 **The Seat of Blood** — Vitality, sacrifice, lineage. Life-force and inheritance and oath and cost. It is the price of continuation.
+
+**The Seat of Storm** — Storms, turbulence, the uncontrolled. Weather that answers to nothing. Its current bearer, if any, is not publicly known. See `items/lightning-loop.md` — the one confirmed Storm-aligned Artifact in the world carries only lightning, a narrow slice of the full domain.
 
 **The Night Ferryman** *(Navigation)* — Rows after curfew at Vulture's Nest, and further out when trust is earned. Speaks only in the smallest instructions that actually work — pick a hand, keep it on the wall, don't change it — and never explains further, because there isn't a further to give. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
 
@@ -77,3 +79,7 @@ Echoes form when a being's nature, actions, or accumulated experience becomes su
 A distinct category — beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently. These Echoes tend to be the most powerful and the least stable. They exist in permanent proximity to authority they cannot fully hold.
 
 Echoes may be human, animal, spirit, or stranger. Any living identity can become aligned.
+
+### Known Echoes
+
+**Aege, the Carrion Guide** *(Death, Stage II — Alignment)* — Not the Archon; Death's actual bearer remains unknown. Reads where her domain is concentrating (real deaths, real risk of more) rather than investigating it, which is the real reason she routes travelers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she's been told. See `locations/vultures-nest.md`, GM Secret.

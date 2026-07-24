@@ -56,15 +56,15 @@ Changes so much that he forgets he is a god. He thinks he's a shapeshifter.
 
 ### Time
 **Bearer:** Lysander *(fading)*
-References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipsera no longer does. *(Players may recognize this deity from a prior campaign.)*
+References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipseria no longer does. *(Players may recognize this deity from a prior campaign.)*
 
 ### Love / Binding
 **Bearer:** Aurora
-Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipsera's continued existence.
+Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipseria's continued existence.
 
 **Current state: Contested.**
 
-Aurora holds the Seat but is bound and suppressed beneath Eclipsera. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
+Aurora holds the Seat but is bound and suppressed beneath Eclipseria. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
 
 The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully. See `world/the-regency.md`.
 
@@ -90,7 +90,7 @@ Discusses gathering, abundance, and what's worth preserving.
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. The Seat itself is unbearered — but a living Echo of the domain exists, not its Archon. See `world/seats-archons-echoes.md`, Known Echoes.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*
@@ -105,6 +105,12 @@ Knowledge is not wisdom. It is awareness. It governs truth uncovered, memory pre
 Domain: Vitality, Sacrifice, Lineage
 
 Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
+
+### Storm
+**Bearer:** Greed (`characters/greed.md`)
+Domain: Storms, Turbulence, the Uncontrolled
+
+Weather that answers to nothing, least of all whoever stands under it. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
 
 ### Navigation / Pathfinding
 **Bearer:** The Night Ferryman

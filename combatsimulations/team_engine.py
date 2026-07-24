@@ -25,7 +25,8 @@ from engine import (roll, RULING, can_attack, _ongoing_support_tick, _object_tic
                     _apply_shift, _reposition_after, _rotate_current, _leave_wheel,
                     _join_wheel, _clear_ongoing_on_collapse, _effective_color,
                     _stamp_reveal, _resolve_follow_up, _color_label, _rushdown,
-                    _discard_or_return)
+                    _discard_or_return, _correct_return_on_loss, _apply_collapse_death_check,
+                    _reveal_top_of_deck_swap)
 
 
 class Battle:
@@ -61,10 +62,10 @@ class Battle:
     def attack_object(self, attacker, card, obj):
         """See engine.py's Duel.attack_object for the full reasoning."""
         owner = obj['owner']
-        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_fortress', False)), None)
+        guard = next((f for f in [owner] + self.allies(owner) if getattr(f, '_protect', False)), None)
         if guard is not None:
-            guard._fortress = False
-            self._say(f"    FORTRESS: {guard.name} takes the hit meant for {obj['kind']}")
+            guard._protect = False
+            self._say(f"    PROTECT: {guard.name} takes the hit meant for {obj['kind']}")
             self.attack(attacker, guard, card)
             return
         attacker.hand.remove(card)
@@ -115,34 +116,39 @@ class Battle:
                 target._damage_redirect = None
                 self._say(f"    SHARED BURDEN: {target.name}'s damage -> {rt.name}")
                 return self.deal(rt, amount, unpreventable, source, bypass_resist)
-            # Fortress Stance: a standing ally has volunteered to eat the next hit.
+            # Protect Stance: a standing ally has volunteered to eat the next hit.
             for f in self.allies(target):
-                if getattr(f, '_fortress', False):
-                    f._fortress = False
-                    self._say(f"    FORTRESS: {f.name} takes the hit for {target.name}")
+                if getattr(f, '_protect', False):
+                    f._protect = False
+                    self._say(f"    PROTECT: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source, bypass_resist)
-        if not unpreventable and not bypass_resist and target.resist > 0:
+        # Resist/Vulnerable cancel 1-for-1 on consumption — see engine.py's
+        # Duel.deal() for the full reasoning (same pairing as Deadly/Weak).
+        if not unpreventable and target.resist > 0 and target.vulnerable > 0:
+            target.resist -= 1
+            target.vulnerable -= 1
+        elif not unpreventable and not bypass_resist and target.resist > 0:
             amount = amount // 2
             target.resist -= 1
+        elif not unpreventable and target.vulnerable > 0:
+            amount = (amount * 3) // 2  # +50%, rounded down
+            target.vulnerable -= 1
         if not unpreventable and target._damage_floor is not None:
             cap = max(0, target.hp - target._damage_floor)
             amount = min(amount, cap)
+        # HP never goes negative, Collapsed or not (Drew's root-level death-rule
+        # change) — see engine.py's Duel.deal() for the full reasoning. Death is
+        # decided at the attack-resolution call site now, not here.
         pre = target.hp
         was_collapsed = target.collapsed
         target.hp -= amount
-        if pre > 0 and target.hp < 0 and not was_collapsed:
+        if target.hp < 0:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
             _clear_ongoing_on_collapse(target)
             self._say(f"    {target.name} COLLAPSES")
             _leave_wheel(self, self.queue, target)
-        elif was_collapsed and not target.is_dead and target.hp <= target.death_floor():
-            # Only reachable already-Collapsed — a standing combatant is
-            # protected from dying on the hit that drops them. Permanent —
-            # heal() refuses to revive a dead combatant.
-            target.is_dead = True
-            self._say(f"    {target.name} DIES")
         return amount
 
     def heal(self, target, amount, source=None):
@@ -156,6 +162,7 @@ class Battle:
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
+            target._hits_while_collapsed = 0   # a fresh 2-hit cycle next time they go down
             # Revived one slot after whoever healed them, not straight into the
             # live rotation — the marker has to complete a full lap before it
             # reaches them again (Drew: they shouldn't get to act until it does).
@@ -173,15 +180,16 @@ class Battle:
         for _ in range(n):
             target.hand.append(self.exhaust_card)
 
-    def scry(self, actor, owner, x):
+    def scry(self, actor, owner, x, bin_to=None):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
         if not seen:
             return seen
         plan = actor.policy.scry_plan(self, actor, owner, seen)
         top, bottom = plan[0], plan[1]
         binned = plan[2] if len(plan) > 2 else []
+        dest = bin_to if bin_to is not None else owner.discard
         for c in binned:
-            owner.discard.append(c)
+            dest.append(c)
         for c in bottom:
             owner.deck.insert(0, c)
         for c in top:
@@ -216,6 +224,15 @@ class Battle:
         attacker.hand.remove(card)
         attacker._attacked_this = True
         attacker._last_hit = 0
+
+        # Immunity (card-glossary.md) — see engine.py's Duel.attack() for the
+        # full reasoning. Checked before anything else, including FOLLOW-UP.
+        if defender.immune:
+            defender.immune = False
+            self._say(f"{defender.name}'s Immunity stops the attack cold")
+            _discard_or_return(attacker, card)
+            return
+
         # FOLLOW-UP: fully becomes a copy of whichever ally most recently
         # revealed a card — see engine.py's Duel.attack() for the full
         # reasoning (`physical_card` keeps the true identity for hand/discard
@@ -238,6 +255,9 @@ class Battle:
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
+        if defender._communion_active:   # COMMUNION: party scries 1, whatever the outcome
+            for a in [defender] + self.allies(defender):
+                self.scry(a, a, 1)
 
         # Blind resolves before Evade (rules/card-glossary.md, Blind) — see
         # engine.py's Duel.attack() for the full reasoning and the noted
@@ -306,6 +326,7 @@ class Battle:
         if def_card is None:
             # no defense -> attacker auto-wins (full win), colorless included
             # — no challenge means no loss (Drew's colorless rule).
+            card = _reveal_top_of_deck_swap(self, attacker, card)
             self._resolve_attacker_win(attacker, defender, card)
             defender._damage_floor = None
             return
@@ -325,17 +346,22 @@ class Battle:
             return
 
         outcome = self._rps(card, def_card)
+        card = _reveal_top_of_deck_swap(self, attacker, card)
         if outcome == 'attacker':
+            _correct_return_on_loss(defender, physical_def_card)   # ROLLOUT: defender's reveal lost
             self._resolve_attacker_win(attacker, defender, card)
         elif outcome == 'defender':
+            _correct_return_on_loss(attacker, physical_card)   # ROLLOUT: attacker's reveal lost
             # see engine.py's Duel.attack() for why this is rolled here
             attacker._redirect_dmg = card.damage(self, attacker, defender)
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
             attacker._redirect_dmg = None
         else:  # tie
             card.effect(self, attacker, defender)
             if not defender._no_defensive_bonus:   # UNNAME
+                def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
         defender._damage_floor = None
 
@@ -374,14 +400,23 @@ class Battle:
                                 'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
+        # ATTUNE: +2 damage for the rest of combat with whatever color was
+        # discarded to earn it — see engine.py's Duel._resolve_attacker_win
+        # for the full reasoning, same mechanism here.
+        if any(o.get('kind') == 'attune' and o.get('color') == card.color for o in attacker.ongoing):
+            dmg += 2
         if defender._rend_guard:
             defender._rend_guard = False
             self.insert_injury(defender)
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
+        was_collapsed_before = defender.collapsed
         dealt = self.deal(defender, dmg, bypass_resist=('resist' in card.ignores))
         attacker._last_hit = dealt
+        if dealt > 0:
+            defender._last_attacked_by = attacker
+        _apply_collapse_death_check(defender, dealt, was_collapsed_before)
         if defender.thorns > 0 and card.reach == 'melee':
             self.deal(attacker, defender.thorns, unpreventable=True)
         card.effect(self, attacker, defender)
@@ -419,15 +454,17 @@ class Battle:
         self._resolving = who   # see engine._apply_shift — covers bonus turns, not just queue[0]
         self._prior_turn_hit = self._this_turn_hit   # freeze last turn's result before this turn can overwrite it
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
-        # ROLLOUT/TELLS: see engine.py's Duel.take_turn for the full reasoning.
+        # ROLLOUT/RHYTHM BREAK: see engine.py's Duel.take_turn for the full reasoning.
         who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
         who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"
         who._no_defensive_bonus = False
         who._weathered = False
-        who._shifted_positive = False    # TELLS: same self-clearing shape
+        who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
+        who._grounded = False            # GROUNDING STANCE: same self-clearing shape
+        who._communion_active = False    # COMMUNION: same self-clearing shape
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
@@ -474,7 +511,7 @@ class Battle:
                 # combo cadence. Choosing X is a tactical, table-only call; these
                 # brains never plan one, so a forced pass is just a lost turn
                 # (X=0). Tactical Wait is intentionally unmodeled.
-                who._used_wait = True   # TELLS
+                who._used_wait = True   # RHYTHM BREAK
                 self._say(f"{who.name} waits")
             elif action[0] == 'attack':
                 _, card, target = action

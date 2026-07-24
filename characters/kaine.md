@@ -18,7 +18,7 @@ There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any
 
 **What he's doing with it:** performing signs and wonders. Miracles he attributes to the Unheld's blessing — validation that The Final Current is the true expression of the Promise. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source.
 
-**Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipsera. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
+**Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipseria. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
 
 **Long-term:** for a man like Kaine, it wouldn't end with the Promise community. That's just the first institution with infrastructure he can use.
 
@@ -63,7 +63,7 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 **STORM DEBT**
 RED — BODY — PROMISE
-Attack: Body + d6
+Attack: Body + d8
 Effect: On a win, target is Staggered.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
@@ -73,7 +73,7 @@ Range: Melee
 
 **CONDUCT**
 GREEN — SOUL — PROMISE
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Your strongest ally gains Deadly.
 Defensive Bonus: Your most wounded ally draws 1 card.
 Range: Both
@@ -83,7 +83,7 @@ Range: Both
 
 **SILENCE THE THREAD**
 GREEN — SOUL — PROMISE
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Exile 1 card from your discard pile
 Defensive Bonus: Exile 1 ongoing effect card
 Range: Both
@@ -93,7 +93,7 @@ Range: Both
 
 **SCRIPTURE OF ECHOES**
 GREEN — SOUL — PROMISE
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Attacker and defender discard 1 random card each. If they are different colors, you heal 4 HP.
 Defensive Bonus: Target ally may discard 1 Soul card to heal 4
 Range: Ranged

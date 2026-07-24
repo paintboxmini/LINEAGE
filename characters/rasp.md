@@ -41,15 +41,15 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 *Blue — Mind*
 - STILLNESS — Defender discards 1 at random; Defensive: Attacker discards 1 at random
-- TRACE — +3 damage if target repeats their last color; Defensive: remove attacker's ongoing effects if they repeated color
-- PHASE LOGIC — Gain Evade; Defensive: may move to backline
+- TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
+- PHASE LOGIC — Gain Evade; Defensive: may change position
 - FORGET — Defender discards 1; Defensive: Exile the attacker's card until end of combat
 
 *Red — Body*
-- STRIKE — Body + d8, no effect; Defensive: Deal 2 to attacker
+- STRIKE — Body + d8, no effect; Defensive: Deal 3 damage to attacker, unpreventable
 - DART — Move self to any position; Defensive: move self to any position
 
 *Green — Soul*
 - SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
 - WITHER — Target loses 1 Body this combat; Defensive: Target loses 1 Body this combat
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Move to any position
+- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP

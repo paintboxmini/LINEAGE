@@ -7,6 +7,10 @@
 **Mind 2 / Body 4 / Soul 2 — HP 17**
 **Creature Threat Rating:** 8
 
+*A larger, bespoke mated pair (Mind 3/Body 6/Soul 3, CTR 12 each — no new cards, same signature set doubled up) dens in the Mated Stonecoil Nest — see `quests/hollow-below-briarwatch.md`, Lower Depth.*
+
+*A river-dwelling relative, the Coralcoil, natively lives where a river's coral-banked reaches run close to the coast (`world/geography-overview.md`, Rivers and Lakes). Same species logic, same capacity to grow far past ordinary size — one grown monstrously and irrevocably is what the Coil actually is. See `locations/the-coil.md`, "What Happened To It" (GM-only). No separate stat block yet — not needed unless an ordinary, unaltered Coralcoil becomes its own encounter.*
+
 ---
 
 ## Description
@@ -19,22 +23,24 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 ## Abilities
 
-**Coil Strike** — RED — BODY
+Full kit: `cards/stonecoil-hollow.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK CORRIDOR, COIL LATCH, STILL GROUND, PULL, ROLLING THUNDER — the last Alpha-only) plus core PATIENCE OF STONE (`cards/green-soul.md`, promoted from this creature's own signature set — Stonecoil's deck uses the core card in its place). Three representative below; see the signature file for the rest.
+
+**COIL LATCH** — RED — BODY
 - Attack: Body + d6
-- Effect: If target is in the same position, deal +2 damage.
-- Defensive Bonus: Gain Rooted.
+- Effect: If the target moved this turn, deal +2 damage.
+- Defensive Bonus: Attacker gains Rooted.
 - Range: Melee
 
-**Vibration Lock** — BLUE — MIND
-- Attack: Mind + d2
-- Effect: Scry 1 of target's deck. If the card matches the color they just played, apply Blind until start of their next turn.
-- Defensive Bonus: Scry 1 of attacker's deck.
+**VIBRATION LOCK** — BLUE — MIND
+- Attack: Mind + d4
+- Effect: Scry 1 of target's deck. If that card matches the color they just played, apply Blind.
+- Defensive Bonus: Scry 1 of your own deck.
 - Range: Both
 
-**Coil Patience** — GREEN — SOUL
-- Attack: Soul + d4
-- Effect: Anchored — at the start of your next turn, heal 2 HP.
-- Defensive Bonus: Apply Rooted to attacker.
+**PATIENCE OF STONE** — GREEN — SOUL *(core)*
+- Attack: Soul + d6
+- Effect: Anchored — at the start of each of your turns, heal 2 HP.
+- Defensive Bonus: Gain Deadly.
 - Range: Melee
 
 ---
@@ -43,7 +49,7 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 Stonecoils do not rush. They occupy choke points and hold them.
 
-If the party moves — uses a positional card, changes Frontline/Backline — they trigger STILL WATER's damage window. If a party member attacks and then pulls back, they trigger READ THE STRIKE on their next turn. The creature rewards players who stop moving and commit.
+If the party moves — uses a positional card, changes Frontline/Backline — they trigger COIL LATCH's or STILL GROUND's damage bonus (both punish having moved). The creature rewards players who stop moving and commit.
 
 **Do not run.** The Borrowers know this. Players will learn it.
 

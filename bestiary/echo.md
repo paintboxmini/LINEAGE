@@ -1,6 +1,6 @@
 # Echo
 
-*Ambient encounter — Lowland Fog Basin, outskirts of Eclipsera.*
+*Ambient encounter — Lowland Fog Basin, outskirts of Eclipseria.*
 
 Not a threat. Not quite.
 
@@ -11,7 +11,7 @@ Not a threat. Not quite.
 A shape in the fog. Vaguely humanoid. Moving parallel to the party at the edge of visibility. It doesn't approach. It doesn't flee. It just keeps pace.
 
 - DC 11 Read — it's mimicking someone's gait. Whoever it's mimicking feels faintly cold.
-- DC 13 Observe — there are two more behind the first.
+- DC 13 Reason — there are two more behind the first.
 
 If ignored, they disperse before the Fogcallers arrive.
 

@@ -71,19 +71,13 @@ He has a ledger. Not the port records — a second one, kept on his person. Loss
 
 **Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
 
-He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipsera South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
 
 Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
-**Aege — The Carrion Guide** — Stands near the east gate. Lean, weather-read face. Rolled map that never gets unrolled in front of company. Watches feet, not eyes. No last name given.
+**Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
-Routes travelers west toward Briarwatch. Knows the roads, the cuts, the ways that aren't on any map. Bartho points the party to her before they leave.
-
-Speaks in terms of paths, not places. Doesn't explain decisions. If the party earns a comment, it arrives flat.
-
-*"You're already ahead of yourselves."*
-*"This path will suit your pace."*
-*"You won't like the other way."*
+Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
 
 **GM — Finding Aege**
 Bartho points the party toward her but doesn't walk them over. They have to find her themselves. Make the search matter.
@@ -94,11 +88,6 @@ Bartho points the party toward her but doesn't walk them over. They have to find
 
 If the party rushes to find her without looking: she finds them. But the route she gives them will suit their pace.
 
-**GM — Backstory**
-Aege grew up in the Turnroot Weald, four days west. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
-
-Recently her family sent word asking for help. She won't go herself. She's been watching the road for the right party.
-
 **Soft Gate — GM Facing**
 
 The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."
@@ -107,23 +96,11 @@ Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-sc
 
 If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
 
-**The Sealed Letter**
+**Telling the Party**
 
-At Briarwatch, after the party finishes their job in the Hollow, Aege hands them a sealed letter and a Carrion Feather (see `items/briarwatch-items.md`). Plain wax, no sigil. She says nothing about it except: *"Open it when you're done here."*
+At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party plainly what she's already told nobody else: her family, the forest, the roots gone restless deep inside it — not at the edges. She's not asking them for anything. She's just going, and Briarwatch happens to be on the way.
 
-The letter reads:
-
-> Four days west of Briarwatch, there is a forest. I grew up there. I haven't been back in a long time.
->
-> My family sent word. The animals at the edges have changed behavior. More aggressive. Moving in patterns they don't usually move in. My family doesn't frighten easily.
->
-> I can't go myself. You've shown me you move carefully. That matters more than I can explain right now.
->
-> Find them. Find out what's wrong. They'll know you're coming.
->
-> — Aege
-
-*No further instructions.*
+Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once she delivers them to Briarwatch — she continues on to Turnroot Weald from there, alone, whether or not the party follows.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
@@ -131,7 +108,7 @@ The letter reads:
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
-He is in Vulture's Nest because FourthEye is spreading through Eclipsera's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
 
 FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
@@ -154,7 +131,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"Jonas was at the docks late two nights running. Bartho wasn't with him."*
 
-*"Three sailors came back from Eclipsera different. Not sick. Just... different. They don't talk about it."*
+*"Three sailors came back from Eclipseria different. Not sick. Just... different. They don't talk about it."*
 
 *"Harlow's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
 
@@ -208,7 +185,7 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
-**Corvel's stall** — no name, no pitch. Leather-skinned man selling necklaces with small vials of grey water. Fifteen years ago he took a ship past the coast — the kind of thing that's supposed to exist only in ghost stories, because the ones who try don't come back to tell them. He came back. Alone. Doesn't talk about it. The vials are the closest thing he has to a reason for still being here. Connected to the People of Promise — the party won't know this yet.
+**Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
@@ -318,5 +295,6 @@ The normal conversation slowly picks back up.
 ## Related Documents
 
 - `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
-- `world/the-regency.md` — Bartho's debt routes players toward Eclipsera
+- `characters/aege.md`, `characters/corvel.md`, `characters/masaharu.md` — full profiles for NPCs found here
+- `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
 - `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours

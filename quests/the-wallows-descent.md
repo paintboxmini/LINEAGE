@@ -120,7 +120,7 @@ Initiates draw this assignment by being unlucky. They guard from the entrance si
 
 If a character Collapses on the shelf, the Descended will drag them toward the fissure and deeper. They do not kill immediately. They pull. A Collapsed party member is a clock — retrieve them or lose them to the deep.
 
-**Navigation on the shelf:** DC 11 Body/Sense per movement action or cost double. All characters — including Initiates — are belly-flat. The Descended move freely.
+**Navigation on the shelf:** DC 11 Body/Senses per movement action or cost double. All characters — including Initiates — are belly-flat. The Descended move freely.
 
 ---
 
@@ -128,7 +128,7 @@ If a character Collapses on the shelf, the Descended will drag them toward the f
 
 Four feet across. Depth unknown. Crossing requires extending the body fully — hands on the far edge, feet on the near, pulling across flat.
 
-**Crossing check:** DC 13 Body/Sense.
+**Crossing check:** DC 13 Body/Senses.
 - **Success:** across cleanly.
 - **Failure by 1–4:** Staggered at the gap. Vibration event — summon 1d4 Descended from the back section.
 - **Failure by 5+:** Partially into the fissure. Staggered, one action to pull free. Significant vibration — summon 1d4 Descended immediately and again on the next turn.
@@ -230,7 +230,7 @@ Here the passage branches. Without the grandmother's map, both directions look i
 
 ### The Alternate Exit
 
-The passage surfaces through a crack in Eclipsera's outer foundation — a narrow climb, cold air, the sound of wind above. Outside the city walls. No guards. No checkpoint.
+The passage surfaces through a crack in Eclipseria's outer foundation — a narrow climb, cold air, the sound of wind above. Outside the city walls. No guards. No checkpoint.
 
 The grandmother's map ends here.
 
@@ -255,6 +255,7 @@ The grandmother's map ends here.
 - `locations/the-wallows.md` — location overview
 - `factions/demon-court.md` — Pazuzu, guard hierarchy
 - `locations/underground-bazaar.md` — above
+- `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — pending
 - `bestiary/the-descended.md` — The Shelf inhabitants

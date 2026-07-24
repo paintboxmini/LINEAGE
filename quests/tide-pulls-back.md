@@ -94,7 +94,7 @@ A Mind check (DC 13) while watching: the ring. It doesn't fit him. That detail e
 
 Stealth or direct: getting into Kaine's inner space to find what he's actually planning. Mirel guides them to the cliff entrance — the Mason lodge gives her knowledge of the rock she wouldn't otherwise have.
 
-**Inside:** evidence of his broader plans. Written correspondence with Promise community leaders in other Eclipsera districts — not threatening letters, persuasive ones. He's been building toward a transition of leadership framed as spiritual evolution.
+**Inside:** evidence of his broader plans. Written correspondence with Promise community leaders in other Eclipseria districts — not threatening letters, persuasive ones. He's been building toward a transition of leadership framed as spiritual evolution.
 
 **The cliff-ward threat:** Kaine plans to use the Lightning Loop during the next Full Tide ceremony — a visible display powerful enough to cement his standing as the Unheld's chosen voice. He doesn't plan to destroy the Mason stabilization glyphs. He doesn't know they're there. But a hostile lightning storm during a ceremony on those cliffs will find them anyway. The Masons will know. The Promise community will not.
 

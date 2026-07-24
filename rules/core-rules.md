@@ -83,9 +83,11 @@ Green (Soul) beats  Blue  (Mind)
 
 | Mode | Stat | Use When... |
 |------|------|-------------|
-| Observe | Mind | Noticing *what* something is |
-| Sense | Body | Noticing *when or where* something happens |
+| Reason | Mind | Noticing *what* something is |
+| Senses | Body | Noticing *when or where* something happens |
 | Read | Soul | Noticing *what something intends or signifies* |
+
+*(Renamed 2026-07-22 — "Observe" implied eyesight specifically, which reads as Body's territory, not Mind's; "Sense" (singular) risked blurring with Soul's own mode. Mind is reasoning/deduction, Body is the physical senses, Soul is instinct/intuition — that line is now sharp in the names themselves, not just the "Use When" column.)*
 
 ---
 
@@ -153,9 +155,11 @@ While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an att
 ## Equipment Slots
 
 **Weapon / Armor / Artifact**  
-Only equipped items have permanent passive effects.  
+Only equipped items have permanent passive effects — everything else about how a character dresses or arms themselves is free, unrestricted fiction.  
 Carried items can be used via the Interact action.  
 Artifacts are resonant jewelry aligned with a Seat's domain.
+
+See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, and `rules/items.md` for the full catalog of items already in the world.
 
 ---
 

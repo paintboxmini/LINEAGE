@@ -8,6 +8,7 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
+*Price: ~40 gold*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
@@ -17,15 +18,17 @@ Small, crystalline seeds that resonate with a faint, haunting echo when shaken. 
 
 ### Luminova Powder
 *Source: Luminova Clearing*
+*Price: ~30 gold*
 
-Dried and crushed Luminova Leaves — translucent, bioluminescent. The powder glows faintly in the dark.
+Dried and crushed Luminova Leaves (`items/hollow-and-weald-items.md`) — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
 
 **Use:** Single-use. Heal 4 HP to self or one ally.
 
 ---
 
 ### Sap Vial
-*Source: Rootstalker (rare — DC 14 Sense/Body to collect without wasting)*
+*Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
+*Price: ~60 gold*
 
 Thick, dark-green sap that smells metallic and green.
 
@@ -39,6 +42,7 @@ Thick, dark-green sap that smells metallic and green.
 
 ### Vision Shard
 *Source: The Mirror-Slick Pond*
+*Price: ~100 gold*
 
 A fragment of something pulled from the surface of the black water — or perhaps left there. It reflects things that haven't happened yet, or things that almost happened.
 
@@ -50,6 +54,7 @@ A fragment of something pulled from the surface of the black water — or perhap
 
 ### Rusted Armor
 *Source: The Floating Gallery*
+*Price: ~80 gold*
 
 A piece of armor recovered from the forest's repulsion field. Clean of rust only where the hovering leaves once brushed past it. Still functional, if battered.
 
@@ -59,6 +64,7 @@ A piece of armor recovered from the forest's repulsion field. Clean of rust only
 
 ### Spider Silk Rope
 *Source: The Bone Collector*
+*Price: ~50 gold*
 
 Fifty feet of spider silk harvested from the Bone Collector's lair. Finer than any spun thread, stronger than braided hemp.
 
@@ -70,6 +76,7 @@ Fifty feet of spider silk harvested from the Bone Collector's lair. Finer than a
 
 ### Root Fibers
 *Source: Rootstalker (common — 1d6+2 strands per kill)*
+*Price: ~15 gold per strand*
 
 Thin, flexible, incredibly strong. Still faintly warm when fresh; pulse slowly when held. Wither and die if left in direct sunlight too long.
 
@@ -82,6 +89,7 @@ Thin, flexible, incredibly strong. Still faintly warm when fresh; pulse slowly w
 
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
+*Price: ~250 gold*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 
@@ -95,6 +103,7 @@ A fist-sized knot of pale wood threaded with red veins. Still twitches occasiona
 
 ### Harvest Bead
 *Source: The Bone Collector*
+*Price: ~150 gold*
 
 A bead made from a precisely carved vertebra, threaded on silk. One of dozens in the Collector's lair, arranged in a sequence that almost makes sense.
 
@@ -103,18 +112,20 @@ A bead made from a precisely carved vertebra, threaded on silk. One of dozens in
 ---
 
 ### Bone Collector Flesh
-*Source: The Bone Collector — harvested fresh only (DC 12 Body/Sense check to preserve the casing intact)*
+*Source: The Bone Collector — harvested fresh only (DC 12 Body/Senses check to preserve the casing intact)*
+*Price: ~40 gold (Senshi's going rate — half that if the casing cracked on harvest)*
 
 The body of a caterpillar roughly the size of a large dog, with a patchwork casing of insect husks and bone fragments woven over it. The flesh beneath changes flavor depending on what the Collector had incorporated — bitter-mineral from bone, sweet-fatty from chitin, metallic-bright from weapon fittings. No two specimens are identical.
 
 **Quest item:** Required for Senshi's Bone Collector Crisps at the Gilded Tusk. He will inspect it. Deliver intact or negotiate a discount.
 
-**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). DC 12 Body/Sense to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
+**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). DC 12 Body/Senses to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
 
 ---
 
 ### Future-Lock Wasp Larvae
-*Source: The Hanging Gallery — DC 14 Body/Sense, or free harvest after swarm dispersal*
+*Source: The Hanging Gallery — DC 14 Body/Senses, or free harvest after swarm dispersal*
+*Price: ~35 gold (Senshi's going rate — must be delivered alive within a day)*
 
 Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis venom is concentrated in the larval stage. Smell faintly chemical.
 
@@ -125,5 +136,5 @@ Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis ven
 ## Harvesting Rules
 
 Harvesting from the Turnroot Weald requires time and care:
-- Harvesting takes a short rest **or** a successful DC 12 Body/Sense check to avoid wasting the material.
+- Harvesting takes a short rest **or** a successful DC 12 Body/Senses check to avoid wasting the material.
 - At high Pressure levels, harvesting from the forest (especially from Rootstalkers) raises Pressure by 1. The forest notices.

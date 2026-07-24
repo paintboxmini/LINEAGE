@@ -48,6 +48,42 @@ class TeamTactician(ScryMixin):
             pool = battle.targetable(me)   # everyone shielded somehow — fall back rather than stall
         if not pool:
             return None
+        # Retaliation heuristic (experiment, Drew): an instinct-driven creature
+        # shouldn't re-roll a fresh random target the instant its current one
+        # collapses — it should go after whoever's actually been hurting it.
+        # This also has a real side effect on the death-rate problem: a random
+        # re-lock can land right back on the character who just went down
+        # (they're still in the pool), which is the only way Death actually
+        # triggers (a second hit while already Collapsed); retaliating against
+        # the last live attacker instead means the just-downed character isn't
+        # the default next target, giving them real room to be revived before
+        # anything can finish them off. Deliberately an explicit opt-in flag
+        # (`me.retaliates`), not inferred from a low Mind stat — several real
+        # ROSTER player archetypes (volk/adept/warden/vanguard) have Mind 2 for
+        # unrelated reasons, and inferring from the stat silently changed their
+        # established behavior and broke the regression suite the first time
+        # this was tried.
+        if getattr(me, 'retaliates', False):
+            last = getattr(me, '_last_attacked_by', None)
+            if last is not None and last in pool and not last.collapsed:
+                battle.team_target[me.team] = last
+                return last
+            # No valid retaliation target (opening turn, or the last attacker
+            # is themselves down) — still avoid defaulting onto someone
+            # already Collapsed if a standing target exists. Same reasoning
+            # as the retaliation branch: a Collapsed character shouldn't be
+            # the instinctive next target just because they're in the pool —
+            # but "never" was too absolute (Drew): a small chance the creature
+            # still goes after a Collapsed target even with standing options
+            # available keeps real, rare risk alive instead of a hard rule.
+            # Tunable per-combatant (default 5%), not a global constant, so a
+            # specific encounter can be dialed without touching every user.
+            collapse_chance = getattr(me, '_collapse_target_chance', 0.05)
+            standing = [c for c in pool if not c.collapsed]
+            if standing and battle.rng.random() >= collapse_chance:
+                pick = battle.rng.choice(standing)
+                battle.team_target[me.team] = pick
+                return pick
         pick = battle.rng.choice(pool)
         battle.team_target[me.team] = pick if not pick.collapsed else None
         return pick
@@ -83,7 +119,7 @@ class TeamTactician(ScryMixin):
         big_threat = lowest.hp <= 6
         if card.name in ("WITNESS", "RENEWAL"):
             v += 7 if hurt else 1               # heals — huge when someone's low
-        elif card.name in ("SHARED BURDEN", "INTERCEPT", "FORTRESS STANCE"):
+        elif card.name in ("SHARED BURDEN", "INTERCEPT"):
             v += 6 if big_threat else 1         # tank/redirect a dying ally's hit
         elif card.name in ("RESONATE", "SUPPORT", "CONDUCT", "COMMUNION"):
             v += 4                              # green team buffs / card advantage

@@ -4,7 +4,8 @@
 
 **Cards:** `cards/rootstalker-weald.md`
 
-**Mind 2 / Body 2 / Soul 3**
+**Mind 2 / Body 2 / Soul 3 — HP 13**
+**Creature Threat Rating:** 7
 
 ---
 
@@ -20,11 +21,11 @@ If the party later finds a tree with a human hand growing from it like a flower 
 
 ## Abilities
 
-**Basic Attack — Root Lash**
-- Attack: Body + d6
-- Range: Both (can strike from Backline through roots)
-- Effect: On hit, pull target to Frontline (if not already there).
-- Defensive Bonus: Attacker gains Rooted.
+**Basic Attack — Root Lash** (same core card as Root Heart's, `cards/root-heart-weald.md`)
+- Attack: Body + d8
+- Range: Melee
+- Effect: Pull target to the Frontline.
+- Defensive Bonus: Gain Rooted.
 
 **Passive — Predator Focus**
 Each consecutive attack on the same target deals +1 damage (stacks up to +3). Resets if target changes or dies.
@@ -43,7 +44,7 @@ Spawns on failed navigation at Pressure 2+. At Pressure 3+, may appear in the St
 
 ## Loot
 
-Harvesting takes a short rest or a successful DC 12 Body/Sense check to avoid wasting.
+Harvesting takes a short rest or a successful DC 12 Body/Senses check to avoid wasting.
 
 **Note:** If Pressure is high, harvesting raises it by 1. The forest notices you taking pieces of itself.
 
@@ -64,7 +65,7 @@ Thin, flexible, incredibly strong. Still faintly warm; pulse slowly when held. W
 ---
 
 ### Sap Vial
-*Rare — 1 per kill. DC 14 Sense/Body check to collect without wasting.*
+*Rare — 1 per kill. DC 14 Senses/Body check to collect without wasting.*
 
 Thick, dark-green sap. Smells metallic and green.
 

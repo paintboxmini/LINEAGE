@@ -6,7 +6,7 @@ Signature cards for the Borrowers. Tagged as HOLLOW — obtainable via the Oracl
 
 **CRAWL LANE**
 RED — BODY — HOLLOW
-Attack: Body + d4
+Attack: Body + d6
 Effect: Move to any position. If you move to Backline, gain Evade.
 Defensive Bonus: Move to any position.
 Range: Both
@@ -16,7 +16,7 @@ Range: Both
 
 **CLAY BOWL**
 BLUE — MIND — HOLLOW
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 2 of target's deck.
 Defensive Bonus: Scry 2 of your own deck.
 Range: Both

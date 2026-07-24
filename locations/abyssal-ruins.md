@@ -2,6 +2,8 @@
 
 Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood. What's known, at least to the few who'd have reason to know it: this was a target once, and something in Ashfall has it aimed again. See `quests/war-engine.md`.
 
+The civilization that held this ground before the ruin was already losing that war when the strike came. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `locations/the-coil.md`, "What Happened To It" (GM-only).
+
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 
 The ruins are rich with knowledge, artifacts, and power. Exposure carries risk. The nature of that risk is not consistent, which is the part scholars find most troubling.
@@ -13,7 +15,7 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 ## Notable Landmarks
 
 **The Central Gateway**
-At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipsera. Everything here radiates outward from it.
+At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it.
 
 **The Shattered Spires**
 Toppled towers from the original civilization. Hollow shells now. Frequently occupied by Rift-Stalkers — creatures that have slipped through from other planes.
@@ -46,7 +48,7 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 
 *NPCs referenced below — Lord Percival, Sitrump the Scribe, Big Marcus — are not yet in the repo.*
 
-- **The Owl's Request:** Lord Percival has hired a party to retrieve a Rift-Core from the Obsidian Observatory, intended to power a ward protecting Eclipsera's Marketplace.
+- **The Owl's Request:** Lord Percival has hired a party to retrieve a Rift-Core from the Obsidian Observatory, intended to power a ward protecting Eclipseria's Marketplace.
 - **A Ghostly Lead:** Sitrump the Scribe found a scroll suggesting the late King Bradley didn't die in the North — he was brought here in secret fifteen years ago.
 - **The Missing Link:** A merchant from the Secret Underground Market was last seen heading toward the ruins with a chest of forbidden artifacts that need to be recovered or contained.
 
@@ -70,4 +72,4 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 - `bestiary/flapjack-octopus.md` — Trench ambush predator
 - `bestiary/elder-tower-creature.md` — Ancient Trench organisms
 - `quests/war-engine.md`, `locations/ashfall-wastes.md` — the weapon this was struck by, once already
-- `locations/the-coil.md` — something that was here the first time, and isn't anymore
+- `locations/the-coil.md` — the living weapon this civilization was still growing when the Engine struck, and isn't anymore

@@ -1,6 +1,6 @@
 # Duskwick
 
-*A small nocturnal predator found in Eclipsera and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
+*A small nocturnal predator found in Eclipseria and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
 
 **Cards:** `cards/duskwick.md`
 
@@ -9,7 +9,9 @@
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
 
-Found in Eclipsera and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
+Found in Eclipseria and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with a farmer at Briarwatch's Well Property (`quests/hollow-below-briarwatch.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
+
+A cave system is the same kind of edge it already prefers — total dark is just a threshold with no "failing light" left to fail. Ones unconnected to the farmer's companion turn up loose in the Hollow Below Briarwatch's own tunnels, glimpsed and gone the same way they'd be found at the edge of any lit street.
 
 ---
 
@@ -32,6 +34,8 @@ It hunts alone and it hunts patient — no den, no territory it bothers defendin
 It has no eyes, so it isn't a face it's reading. It's the small tells nobody means to make — a held breath, a foot that shifts weight before the real step. That's the room the wick reads.
 
 It doesn't press an opening it doesn't need. A clean shot gets a bite and a retreat, not a fight. Corner it instead — box it in, hurt it past the point it can slip away — and the patience runs out. That's when it stops being careful.
+
+**Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`), just innate rather than granted by a played card. HALF-SEEN's own Defensive Bonus grants Evade rather than Obscure for exactly this reason — the passive already covers Obscure unconditionally, so the card earns its slot doing something the passive doesn't.
 
 ---
 

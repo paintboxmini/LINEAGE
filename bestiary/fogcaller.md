@@ -1,6 +1,6 @@
 # Fogcaller
 
-*Neutral encounter — Basin Fog, outskirts of Eclipsera.*
+*Neutral encounter — Basin Fog, outskirts of Eclipseria.*
 
 **Cards:** `cards/fogcaller-basin.md`
 
@@ -34,8 +34,8 @@ If Fogcaller drops below half HP, a second Fogcaller enters from the opposite tr
 ## Cards (Used in Combat)
 
 **Shroud** — GREEN — SOUL
-Attack: Soul + d4
-Effect: Target enemy gains Evade and Blind (50% to miss attack before defender selects a block card) until start of your next turn.
+Attack: Soul + d6
+Effect: Target enemy gains Evade and Blind until start of your next turn.
 Defensive Bonus: You gain Evade until start of your next turn.
 Range: Both
 *"The fog doesn't hide you. It hides what's coming."*
@@ -43,7 +43,7 @@ Range: Both
 ---
 
 **Fogburst** — GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: All enemies in Frontline gain Blind until start of your next turn.
 Defensive Bonus: You may move positions.
 Range: Both
@@ -52,7 +52,7 @@ Range: Both
 ---
 
 **Talon Rush** — RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Move self and target to Frontline.
 Defensive Bonus: Move to any position.
 Range: Melee
@@ -72,7 +72,7 @@ Then it picks the most isolated target and moves.
 
 ## The Tell
 
-- DC 13 Sense — you hear the wings fold a half second before the fog hits.
+- DC 13 Senses — you hear the wings fold a half second before the fog hits.
 - DC 16 Read — you realize it's not hunting randomly. It targeted the Backline first. It understands positioning.
 
 ---

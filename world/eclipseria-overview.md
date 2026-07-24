@@ -1,6 +1,6 @@
-# Eclipsera — World Overview
+# Eclipseria — World Overview
 
-Eclipsera is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
+Eclipseria is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
 
 The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
 
@@ -24,7 +24,7 @@ For deeper geography, see `world/geography-overview.md`.
 
 ## What Holds the World Together
 
-Reality in Eclipsera is not self-sustaining. It is maintained by:
+Reality in Eclipseria is not self-sustaining. It is maintained by:
 
 - **The Seats** — universal laws that govern fundamental principles (Time, Memory, War, etc.). They exist on a higher plane and affect the entire continent.
 - **The Archons** — beings who have become the fullest biological expression of a Seat. They have no free will. They filter and "tint" the reality around them through their domain.
@@ -39,7 +39,7 @@ For the Unheld in depth, see `world/the-unheld.md`.
 
 ## Survival Tone
 
-Eclipsera rewards attentiveness, adaptability, and restraint. Recklessness is punished. Patience and cleverness can open paths through even the most hostile regions.
+Eclipseria rewards attentiveness, adaptability, and restraint. Recklessness is punished. Patience and cleverness can open paths through even the most hostile regions.
 
 The world does not guarantee safety or fairness. It does not distribute danger evenly. But it responds — in its own way, differently in each place — to those who learn how it works.
 

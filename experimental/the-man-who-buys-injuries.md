@@ -35,7 +35,7 @@ That is the whole price. He answers questions honestly and unhelpfully: *what do
 
 - **Sell.** The Injury is destroyed — real, immediate, mechanical relief. The name goes in the ledger. Nothing else happens. (Yet. The ledger is a GM hook; what Weck is collecting toward is not written here.)
 - **Refuse.** He nods, genuinely unbothered, and recommends the Roadhouse stew.
-- **Probe.** Read (DC 13): Weck is not lying about anything, which is worse. Observe (DC 13): the ledger's earlier pages hold many names in many hands; a few are neatly crossed out. He will not say what crossing-out means. He will say it isn't his doing.
+- **Probe.** Read (DC 13): Weck is not lying about anything, which is worse. Reason (DC 13): the ledger's earlier pages hold many names in many hands; a few are neatly crossed out. He will not say what crossing-out means. He will say it isn't his doing.
 - **Rob or threaten him.** He cooperates completely — hands over the coin, the cart, the ledger, all of it — and the ledger's pages are blank to everyone whose name isn't in it. The party has stolen a horse and an empty book from a man who watched them do it politely. He walks toward Briarwatch. Somewhere behind them, the fair prices stop being mentioned.
 
 ---

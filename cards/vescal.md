@@ -10,7 +10,7 @@ Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and sup
 
 **CENSURE**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2 — they cannot change position for 2 turns.
 Defensive Bonus: Attacker gains Rooted 2.
 Range: Melee
@@ -24,7 +24,7 @@ Range: Melee
 
 **SANCTUARY**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Anchored — At the start of your turn, all allies heal 3 HP.
 Defensive Bonus: Target ally heals 3 HP.
 Range: Melee
@@ -34,7 +34,7 @@ Range: Melee
 
 **INCENSE WARD**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target ally gains Ward.
 Defensive Bonus: Gain Ward.
 Range: Both
@@ -44,7 +44,7 @@ Range: Both
 
 **RESIST BLESSING**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: All allies gain Resist.
 Defensive Bonus: Gain Resist.
 Range: Ranged
@@ -52,44 +52,10 @@ Range: Ranged
 
 ---
 
-**BALANCE RESTORED**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Heal target ally 4 HP. Move them to any position.
-Defensive Bonus: Heal yourself 3 HP.
-Range: Both
-*"The scales don't care where you're standing."*
-
----
-
-**OPEN DOOR**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Target ally draws 1 card and heals 2 HP.
-Defensive Bonus: Draw 1 card.
-Range: Ranged
-*"The door is always open. That's the point."*
-
----
-
-## Control Cards
-
----
-
-**SMOKE SCREEN**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Target enemy moves to Backline. Apply Blind to all Frontline enemies.
-Defensive Bonus: Attacker gains Blind.
-Range: Melee
-*"Visibility is a luxury."*
-
----
-
 **BINDING RITE**
 BLUE — MIND
-Attack: Mind + d2
-Effect: Target enemy gains Rooted. If they are already Rooted, shuffle 1 Injury into their deck.
+Attack: Mind + d4
+Effect: Target enemy gains Rooted. If they are already Rooted, add 1 Injury to the bottom of their deck.
 Defensive Bonus: Attacker gains Rooted.
 Range: Melee
 *"The temple still has jurisdiction here."*
@@ -102,7 +68,7 @@ Range: Melee
 
 **CENSER SWING**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If target is Frontline, deal +2 damage.
 Defensive Bonus: Push attacker to Backline.
 Range: Melee
@@ -112,7 +78,7 @@ Range: Melee
 
 **CHAIN REACH**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: If target is Backline, deal +3 damage.
 Defensive Bonus: Counter Attack.
 Range: Both
@@ -126,8 +92,12 @@ Range: Both
 
 **TRUTINATE SIGNAL**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Orin may immediately play 1 card from their hand as a free action this turn.
 Defensive Bonus: Scry 1 of Orin's deck.
 Range: Both
 *"No signal needed. They already know."*
+
+---
+
+*INCENSE WARD, OPEN DOOR, and BALANCE RESTORED were cut from Vescal's deck during a rebalance to match his stat total (`characters/vescal.md`) — preserved at `experimental/archives/cut-cards.md`. SMOKE SCREEN was cut from here too, but reworked and promoted to core instead of archived — same name, rebalanced text, now lives in `cards/green-soul.md`.*

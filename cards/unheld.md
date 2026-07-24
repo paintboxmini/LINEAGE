@@ -6,7 +6,7 @@ Cards sourced from the Unheld — obtained at the grey edge, where the water tea
 
 **LOOSE GRIP**
 GREEN — SOUL — UNHELD
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Initiative Shift +2
 Defensive Bonus: Ignore the next negative Initiative Shift used against you
 Range: Both

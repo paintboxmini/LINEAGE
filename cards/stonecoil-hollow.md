@@ -6,7 +6,7 @@ Signature cards for the Stonecoil. Tagged as HOLLOW — obtainable via the Oracl
 
 **DRAG**
 RED — BODY — HOLLOW
-Attack: Body + d4
+Attack: Body + d6
 Effect: Pull defender to Frontline. If defender is already in Frontline, deal +2 damage instead.
 Defensive Bonus: Attacker gains Rooted.
 Range: Both
@@ -16,7 +16,7 @@ Range: Both
 
 **VIBRATION LOCK**
 BLUE — MIND — HOLLOW
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 1 of target's deck. If that card matches the color they just played, apply Blind.
 Defensive Bonus: Scry 1 of your own deck.
 Range: Both
@@ -26,7 +26,7 @@ Range: Both
 
 **SHED SKIN**
 GREEN — SOUL — HOLLOW
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Destroy 1 Injury in your hand or discard pile. Gain Evade.
 Defensive Bonus: Exile 1 card from your discard pile.
 Range: Both
@@ -36,7 +36,7 @@ Range: Both
 
 **DARK CORRIDOR**
 GREEN — SOUL — HOLLOW
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Apply Blind to defender.
 Defensive Bonus: Gain Resist.
 Range: Melee
@@ -46,7 +46,7 @@ Range: Melee
 
 **COIL LATCH**
 RED — BODY — HOLLOW
-Attack: Body + d4
+Attack: Body + d6
 Effect: If the target moved this turn, deal +2 damage.
 Defensive Bonus: Attacker gains Rooted.
 Range: Melee
@@ -56,7 +56,7 @@ Range: Melee
 
 **STILL GROUND**
 BLUE — MIND — HOLLOW
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If the target changed positions since their last turn, deal +1 damage and Scry 1.
 Defensive Bonus: Scry 1 of your own deck.
 Range: Both
@@ -70,7 +70,7 @@ Range: Both
 
 **PULL**
 RED — BODY — HOLLOW
-Attack: Body + d4
+Attack: Body + d6
 Effect: Pull target to frontline
 Defensive Bonus: Pull attacker to frontline
 Range: Both
@@ -80,7 +80,7 @@ Range: Both
 
 **ROLLING THUNDER**
 RED — BODY — HOLLOW
-Attack: Body + d6
+Attack: Body + d8
 Special Rule: Alpha only. 1 copy. Resolve RPS separately against each Frontline target.
 Effect: Attack all Frontline targets simultaneously. Targets hit are pushed to Backline.
 Defensive Bonus: All Frontline targets gain Rooted.

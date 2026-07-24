@@ -6,7 +6,7 @@ Signature cards for the Briarwatch Jackalope. Teaching encounter for positioning
 
 **BOLT**
 GREEN — SOUL — BRIARWATCH
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Move to Backline.
 Defensive Bonus: Move to Backline.
 Range: Melee
@@ -16,7 +16,7 @@ Range: Melee
 
 **NIP**
 RED — BODY — BRIARWATCH
-Attack: Body + d4
+Attack: Body + d6
 Effect: If you are in the Backline, deal +2 damage.
 Defensive Bonus: None.
 Range: Melee
@@ -26,7 +26,7 @@ Range: Melee
 
 **FREEZE**
 BLUE — MIND — BRIARWATCH
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 1.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -36,7 +36,7 @@ Range: Both
 
 **QUICKSTEP**
 GREEN — SOUL — BRIARWATCH
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Move to any position.
 Defensive Bonus: Move to any position.
 Range: Both

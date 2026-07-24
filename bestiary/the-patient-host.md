@@ -1,6 +1,6 @@
 # The Patient Host
 
-*The original innkeeper of the Milestone, on the Turnroot–Eclipsera spoke of the Kings Road. Still checking guests in. Still keeping the ledger. It hasn't been a person for a very long time, and the post never actually required it to stay one.*
+*The original innkeeper of the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road. Still checking guests in. Still keeping the ledger. It hasn't been a person for a very long time, and the post never actually required it to stay one.*
 
 **Cards:** `cards/the-patient-host.md`
 
@@ -31,7 +31,7 @@ It is not hostile to guests who wait their turn. It is, if anything, a genuinely
 
 ## Combat Behavior
 
-Everything in its kit is about who gets to move and when, not raw damage — this is a controller, not a brute, and it wins fights by making sure they take a very long time to start feeling like fights at all. **YOUR TURN WILL COME** delays whoever's pushing hardest, twice over if they keep pushing (attack and defense both apply the same Shift). **REGISTERED** looks at what's coming in a target's deck before it arrives — the ledger already knew. **NO VACANCY** physically ejects anyone in its Frontline back to the Backline, the one card in its kit that reads as a shove rather than a delay. **THE LEDGER NEVER CLOSES** keeps it in the fight far longer than its stat line alone would suggest, healing every turn it stands still — which, given nothing else in its kit asks it to move, is most of them. **YOU'RE NEXT** is the capstone: it decides, personally, that this is finally your turn, jumps itself ahead on the wheel to make sure of it, and makes anyone who tried to interrupt regret cutting the line.
+Everything in its kit is about who gets to move and when, not raw damage — this is a controller, not a brute, and it wins fights by making sure they take a very long time to start feeling like fights at all. **YOUR TURN WILL COME** delays whoever's pushing hardest, twice over if they keep pushing (attack and defense both apply the same Shift). **REGISTERED** looks at what's coming in a target's deck before it arrives — the ledger already knew — and doesn't just misfile whatever it doesn't like. It strikes it from the book entirely, gone for the rest of the fight. **NO VACANCY** physically ejects anyone in its Frontline back to the Backline, the one card in its kit that reads as a shove rather than a delay. **THE LEDGER NEVER CLOSES** keeps it in the fight far longer than its stat line alone would suggest, healing every turn it stands still — which, given nothing else in its kit asks it to move, is most of them. **YOU'RE NEXT** is the capstone: it decides, personally, that this is finally your turn, jumps itself ahead on the wheel to make sure of it, and makes anyone who tried to interrupt regret cutting the line.
 
 The Host never panics, never escalates out of anger — it has none. It reads as exactly as patient losing as it does winning, which is worse.
 
@@ -69,7 +69,7 @@ No checks for ordinary conversation — the Host is not hiding anything, and it 
 
 ## Related Documents
 
-- `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipsera spoke of the Kings Road
+- `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road
 - `cards/the-patient-host.md` — signature cards
 - `rules/card-glossary.md` — Initiative Shift X and Locked, the two mechanics this kit and its dialogue run on
 - `rules/resolution.md` — Read (Soul), the check behind the ledger's one real transgression

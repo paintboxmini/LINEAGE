@@ -105,7 +105,7 @@ What happens in the cave after death is not written here. That is a table discov
 
 ## Session 0 — First Visit
 
-The night the players hear the sailor's story — drinking on deck, the night before arrival in Eclipsera — the Island finds them for the first time.
+The night the players hear the sailor's story — drinking on deck, the night before arrival in Eclipseria — the Island finds them for the first time.
 
 This is when characters are named and decks are built. The Oracle sees who they are before they do. Every card they draw for the rest of the campaign was seen first by someone who doesn't use her eyes.
 

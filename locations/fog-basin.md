@@ -1,6 +1,6 @@
 # The Fog Basin
 
-The low ground ringing Eclipsera. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. The basin remembers too many paths at once and offers whichever one fits the moment.
+The low ground ringing Eclipseria. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. The basin remembers too many paths at once and offers whichever one fits the moment.
 
 It was here before the city. The city was built on the premise that maps are truth. The basin disagrees.
 
@@ -12,8 +12,8 @@ It was here before the city. The city was built on the premise that maps are tru
 
 **The Misdirection Trap.** The fog shifts. The path the party was following is gone. A new one appears — worn, obvious, inviting. It leads somewhere that isn't where they intended.
 
-- DC 13 Sense — something about the new path feels wrong. Too worn for how rarely this basin gets traveled.
-- DC 16 Observe — the vegetation along the new path is crushed from one direction only. Things were led *out* of somewhere along this path. Not into it.
+- DC 13 Senses — something about the new path feels wrong. Too worn for how rarely this basin gets traveled.
+- DC 16 Reason — the vegetation along the new path is crushed from one direction only. Things were led *out* of somewhere along this path. Not into it.
 - Fail both — they follow it. Where it leads is the GM's call.
 
 **Echoes.** Shapes in the fog that mimic travelers who passed before. See `bestiary/echo.md`. Their presence signals Fogcallers nearby.

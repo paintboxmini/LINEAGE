@@ -19,7 +19,7 @@ The venom interrupts biological futures — metamorphosis, transformation, any s
 - Takes up a hand slot when drawn. It cannot be played.
 - The venom is slow-moving. Cards seeded into the deck have no effect until drawn — the character may not realize they've been stung until the card surfaces during combat or card cycling.
 - Once drawn, the venom begins to metabolize. Each Future-Lock card clears from the deck **20 minutes after it is drawn** (DM tracks). Multiple cards each have their own timer.
-- When a character's hand contains only Future-Lock cards, they are **fully paralyzed** — they cannot act until another character spends their full turn extracting venom (DC 12 Mind/Observe, removes 1 Future-Lock card from hand).
+- When a character's hand contains only Future-Lock cards, they are **fully paralyzed** — they cannot act until another character spends their full turn extracting venom (DC 12 Mind/Reason, removes 1 Future-Lock card from hand).
 
 Hand size is Mind. A Mind 2 character has 2 slots. A Mind 4 character has 4.
 
@@ -58,7 +58,7 @@ The swarm has counters. Characters who find them don't get stung again.
 
 Deep in the Weald, a cluster of old trees with heavily grooved bark hosts a permanent colony. The bark overhangs create natural alcoves — each one contains a nest. The canopy here is dense enough that fire is risky (DM discretion on whether torch use threatens to spread).
 
-This is a named hazard site, not a combat encounter. Parties scouting the gallery carefully (DC 13 Mind/Observe) can identify the nests before disturbing them. Parties moving quickly or distracted by the forest customs will not.
+This is a named hazard site, not a combat encounter. Parties scouting the gallery carefully (DC 13 Mind/Reason) can identify the nests before disturbing them. Parties moving quickly or distracted by the forest customs will not.
 
 ---
 
@@ -66,7 +66,7 @@ This is a named hazard site, not a combat encounter. Parties scouting the galler
 
 The larvae inside the nests are Senshi's ingredient. Harvesting requires removing the larvae without triggering the swarm.
 
-**DC 14 Body/Sense** to extract larvae from an active nest without disturbing the adults. On failure, the swarm lifts — proceed to swarm mechanics. On success, 1d4 larvae harvested per nest.
+**DC 14 Body/Senses** to extract larvae from an active nest without disturbing the adults. On failure, the swarm lifts — proceed to swarm mechanics. On success, 1d4 larvae harvested per nest.
 
 A dispersed swarm (fire or water used) leaves the nest temporarily unguarded — larvae can be harvested without a check for 1 minute.
 

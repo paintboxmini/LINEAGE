@@ -4,17 +4,17 @@
 
 **INTERRUPT**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Defender loses their next turn, you can't defend until your next turn
 Defensive Bonus: Apply Initiative Shift -2 to the attacker
-Range: Both
+Range: Ranged
 *"The best move happens before theirs."*
 
 ---
 
 **SHARPEN**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Target ally gains Deadly
 Defensive Bonus: You gain Deadly
 Range: Both
@@ -24,7 +24,7 @@ Range: Both
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Move target enemy to backline
 Defensive Bonus: Move target to frontline
 Range: Ranged
@@ -34,7 +34,7 @@ Range: Ranged
 
 **PREDICT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker gains Sealed
 Range: Melee
@@ -44,7 +44,7 @@ Range: Melee
 
 **STUDY**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Discard 2, draw 2
 Defensive Bonus: Gain Deadly
 Range: Ranged
@@ -54,27 +54,27 @@ Range: Ranged
 
 **DISTRACT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker must attack you on their next turn if able
-Range: Both
+Range: Ranged
 *"Attention divided is power diminished."*
 
 ---
 
 **FOCUS**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
 Defensive Bonus: Place the top card of your discard pile on top of your deck
-Range: Both
+Range: Ranged
 *"Clarity rewards the prepared mind."*
 
 ---
 
 **REFRACT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Defender gains Weak
 Defensive Bonus: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
@@ -84,7 +84,7 @@ Range: Ranged
 
 **STILLNESS**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Defender discards 1 card at random
 Defensive Bonus: Attacker discards 1 card at random
 Range: Ranged
@@ -94,7 +94,7 @@ Range: Ranged
 
 **TRACE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: If the defender plays the same color as the top card of their discard pile, gain Deadly this attack
 Defensive Bonus: If the attacker plays the same color as the top card of their discard pile, remove their Positive Status Effects
 Range: Ranged
@@ -104,7 +104,7 @@ Range: Ranged
 
 **DEFLECT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Gain Ward
 Defensive Bonus: Counter Attack. Only on a clean win — not a tie.
 Range: Melee
@@ -114,7 +114,7 @@ Range: Melee
 
 **ANTICIPATE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: When you are attacked before your next turn, draw 1 card before defending. Activates multiple times.
 Defensive Bonus: Target gains Weak
 Range: Melee
@@ -124,18 +124,18 @@ Range: Melee
 
 **CHAIN**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
 Defensive Bonus: Enemy must target you again on their next turn if possible
-Range: Both
+Range: Ranged
 *"Every echo remembers what the first sound forgot."*
 
 ---
 
 **FRACTURE**
 BLUE — MIND
-Attack: Mind + d4
-Effect: If the top 3 cards of your discard are 1 of each color, deal 3 damage to either the enemy Frontline or the enemy Backline (your choice)
+Attack: Mind + d6
+Effect: If the top 3 cards of your discard are 1 of each color, deal 5 damage to either the enemy Frontline or the enemy Backline (your choice)
 Defensive Bonus: If the top 3 cards of your discard are 1 of each color, the attacker must exile the card they played this turn
 Range: Ranged
 *"Cracks reveal hidden structure."*
@@ -144,7 +144,7 @@ Range: Ranged
 
 **ALIGN**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 2. If they share a color, draw 1 and gain Resist
 Defensive Bonus: Scry 2. If they share a color, draw 1 and gain Deadly
 Range: Ranged
@@ -154,37 +154,37 @@ Range: Ranged
 
 **UNDERSTANDING**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Discard a card. This attack gains Deadly.
 Defensive Bonus: Scry 2. If you bottom both, heal 4 HP
-Range: Both
+Range: Ranged
 *"Clarity is not given, it is reconstructed."*
 
 ---
 
 **PARTITION**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Target enemy can only attack frontline targets next turn
 Defensive Bonus: Target ally cannot be targeted by an attack until your next turn
-Range: Both
+Range: Ranged
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
 ---
 
 **UNNAME**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Defender cannot trigger defensive bonuses until their next turn
 Defensive Bonus: Attacker discards 1 card at random
-Range: Both
+Range: Ranged
 *"What cannot be spoken cannot hold its shape."*
 
 ---
 
 **REALIGNMENT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Move to frontline or backline (your choice)
 Defensive Bonus: All allies gain Quick
 Range: Both
@@ -194,17 +194,17 @@ Range: Both
 
 **AXIOM**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Name a color. The defender cannot play that color on their next reveal
 Defensive Bonus: Name a color. The attacker cannot play that color on their next reveal
-Range: Both
+Range: Ranged
 *"The wise divide heaven into knowable directions."*
 
 ---
 
 **FORGET**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Defender discards 1 card
 Defensive Bonus: Exile the attacker's card until end of combat. Only on a clean win — not a tie.
 Range: Ranged
@@ -214,28 +214,28 @@ Range: Ranged
 
 **PARADOX**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal
 Defensive Bonus: Gain Ward
-Range: Both
+Range: Ranged
 *"Reality hesitates."*
 
 ---
 
 **CLIMB**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
 Defensive Bonus: Your maximum hand size increases by 1 until the end of this combat
-Range: Both
+Range: Ranged
 *"The higher you rise, the farther you see."*
 
 ---
 
 **PHASE LOGIC**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Gain Evade.
 Defensive Bonus: You may change position
 Range: Both
@@ -245,17 +245,17 @@ Range: Both
 
 **ERODE**
 BLUE — MIND
-Attack: Mind + d4
-Effect: Defender loses 1 Soul permanently this combat.
-Defensive Bonus: Attacker loses 1 Soul permanently this combat.
-Range: Both
+Attack: Mind + d6
+Effect: Defender loses 1 Soul this combat.
+Defensive Bonus: Attacker loses 1 Soul this combat.
+Range: Ranged
 *"Understanding something completely is the first step to unmaking it."*
 
 ---
 
 **TAINT**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Add 1 Injury to the bottom of the defender's deck.
 Defensive Bonus: Add 1 Injury to the bottom of the attacker's deck.
 Range: Ranged
@@ -265,18 +265,18 @@ Range: Ranged
 
 **PROFILE**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 2, then draw 1 card
 Defensive Bonus: Attacker gains Staggered.
-Range: Both
+Range: Ranged
 *"He already knew what you'd reach for."*
 
 ---
 
 **SLIPSTREAM**
 BLUE — MIND
-Attack: Mind + d2
-Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card. Ends if you collapse.
+Attack: Mind + d4
+Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
@@ -285,7 +285,7 @@ Range: Both
 
 **REBUTTAL**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Ranged
@@ -295,7 +295,7 @@ Range: Ranged
 
 **FRAME-TRAP**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
 Effect: None.
 Defensive Bonus: Wins ties. On a tie, the attacker's Effect does not trigger.
@@ -306,7 +306,7 @@ Range: Both
 
 **EXPOSED**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: If the defender is Staggered, this attack has Critical.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -316,8 +316,18 @@ Range: Both
 
 **UNMAKE**
 BLUE — MIND
-Attack: Mind + d2
-Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 3 Exhaust cards to your hand.
-Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
-Range: Both
+Attack: Mind + d4
+Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 2 Exhaust cards to your hand.
+Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 2 Exhaust cards to your hand.
+Range: Ranged
 *"Everything they built stops mattering at once."*
+
+---
+
+**LAST RESORT**
+BLUE — MIND
+Attack: Mind + d6
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"When there's nothing left to protect, nothing gets through."*

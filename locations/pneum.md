@@ -40,9 +40,7 @@ The People of Promise interpretation: Wild Growth is the Unheld asserting itself
 
 ## Corvel — The Vulture's Nest Thread
 
-Corvel runs a stall at Vulture's Nest selling small vials of grey water. The water was drawn at the coast, but unheldness does not cross the coastline — by the time a vial reaches the Nest, the water in it is ordinary. What isn't ordinary is what it picked up on the way: the vials are filled aboard Pneum's ritual barges, by hands belonging to a community that collects diseases as worship. Contact causes random illness. Corvel does not disclose this — and does not distinguish it from the water itself. From his perspective, the illness *is* the communion, arriving as it always does: through the body. He genuinely does not understand the problem with this framing.
-
-He was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
+Full profile — his own crossing, what the vials really are — now lives in `characters/corvel.md`. What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
 
 The Compact's position: unknown diseases, possible outbreak, crosses hard lines (too destructive, too visible). Corvel's position: he has nothing to recant.
 
@@ -59,5 +57,6 @@ These people are warm, communal, and completely sincere. The wrongness isn't cru
 ## Related Documents
 
 - `locations/vultures-nest.md` — Corvel's stall, the quarantined barge, People of Promise plot hook
+- `characters/corvel.md` — his full profile
 - `world/tonal-bible.md`
 - `world/geography-overview.md`

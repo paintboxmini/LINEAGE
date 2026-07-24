@@ -2,7 +2,7 @@
 
 An invariant is a mathematical or computational truth inside the combat simulator's engine — something that must hold regardless of how a human visualizes or tracks the same thing at the table. The visualization can vary, or be discarded entirely; the invariant is whatever survives underneath it.
 
-This file is scoped to the simulator only. It is not a design standard for what makes a mechanic feel right (that's `archives/design-principles.md` — archived, not deleted) and not a keyword's rules text (that's `rules/card-glossary.md`).
+This file is scoped to the simulator only. It is not a design standard for what makes a mechanic feel right (that's `agent-tools/design-principles.md`) and not a keyword's rules text (that's `rules/card-glossary.md`).
 
 ---
 
@@ -32,7 +32,7 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | turn order | immediate |
 | Resist | damage pipeline (reduction) | next hit |
-| Fortress / Shared Burden | damage pipeline (reassignment) | next hit (team) |
+| Protect / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 
 Adding a new override: name the mechanic it changes, set a flag with a clear expiry, read that flag at exactly one point in the relevant procedure, revert on expiry. Escalating the override system itself beyond flags (to typed modifiers, to a policy stack) is engineering judgment, not an invariant — see `memory.md`'s architecture north star for that path.

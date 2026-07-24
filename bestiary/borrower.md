@@ -15,6 +15,8 @@ Small, mole-like, and precise. Borrowers carved most of the tunnel network in th
 
 They are not fighters. They are survivors who have learned to fight.
 
+**Diet:** Cave rodents, trapped and cured, are the everyday protein (`quests/hollow-below-briarwatch.md`, Factions). The fungal mats they cultivate for fuel and insulation are eaten too, not just burned — a practical people don't grow a thing twice for two different reasons if one crop can do both. Roots and tubers work their way down through cracks from Briarwatch's own fields above and get harvested where they hang, a quiet, one-directional trade the farmers overhead have never noticed they're part of. Blind fish from the deeper stream channels round it out when the trapping's thin. Nothing rare, nothing prized — the Emerald Frog's Hollow population (`bestiary/emerald-frog.md`) is the one exception, and it isn't a Borrower staple; it's too scarce to be anyone's regular meal.
+
 ---
 
 ## Abilities
@@ -37,7 +39,7 @@ At the start of its turn, the Borrower may Scry 1 of any one combatant's deck. T
 
 In addition to their signature set (`cards/borrower-hollow.md`), Borrowers fill their combat deck with core cards weighted toward Blue and Green. They rarely play Red.
 
-Recommended core inclusions: PATIENCE, FLOW, ANALYZE, WITNESS, BIND.
+Recommended core inclusions: PATIENCE, FLOW, FOCUS, WITNESS, BIND.
 
 ---
 

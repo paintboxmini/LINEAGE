@@ -12,7 +12,7 @@ Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defe
 
 **CRIMSON WARD**
 RED — BODY
-Attack: Body + d2
+Attack: Body + d4
 Effect: Set a Red Attack Counter. Until triggered, the next Red card played against you is negated before RPS resolves.
 Defensive Bonus: Attacker discards 1 card at random.
 Range: Ranged
@@ -22,7 +22,7 @@ Range: Ranged
 
 **AZURE WARD**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Set a Blue Attack Counter. Until triggered, the next Blue card played against you is negated before RPS resolves.
 Defensive Bonus: Scry 2.
 Range: Ranged
@@ -32,7 +32,7 @@ Range: Ranged
 
 **VERDANT WARD**
 GREEN — SOUL
-Attack: Soul + d2
+Attack: Soul + d4
 Effect: Set a Green Attack Counter. Until triggered, the next Green card played against you is negated before RPS resolves.
 Defensive Bonus: Gain Resist.
 Range: Ranged
@@ -48,7 +48,7 @@ Range: Ranged
 
 **CRIMSON MIRROR**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Evade.
 Defensive Bonus: Set a Red Defense Counter. Until triggered, the next Red card used as a defense against you is negated before RPS resolves.
 Range: Ranged
@@ -58,7 +58,7 @@ Range: Ranged
 
 **AZURE MIRROR**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 2.
 Defensive Bonus: Set a Blue Defense Counter. Until triggered, the next Blue card used as a defense against you is negated before RPS resolves.
 Range: Ranged
@@ -68,7 +68,7 @@ Range: Ranged
 
 **VERDANT MIRROR**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: All allies gain +1 to their next attack.
 Defensive Bonus: Set a Green Defense Counter. Until triggered, the next Green card used as a defense against you is negated before RPS resolves.
 Range: Ranged
@@ -82,7 +82,7 @@ Range: Ranged
 
 **LUNGE**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d10
 Effect: Move to Frontline. If target is Backline, deal +2 damage.
 Defensive Bonus: Move to Backline.
 Range: Melee
@@ -107,7 +107,7 @@ Range: Melee
 
 **STEP ASIDE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Move to any position. Attacker must attack you on their next turn if able.
 Defensive Bonus: Gain Evade.
 Range: Both
@@ -117,7 +117,7 @@ Range: Both
 
 **FEINT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Defender must reveal their hand.
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
@@ -127,7 +127,7 @@ Range: Melee
 
 **INK THE AIR**
 BLUE — MIND
-Attack: Mind + d2
+Attack: Mind + d4
 Effect: Scry 3. You may place any Ward or Mirror Glyph cards found on top of your deck in any order.
 Defensive Bonus: Scry 1.
 Range: Ranged
@@ -137,7 +137,7 @@ Range: Ranged
 
 **SURVEY**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d6
 Effect: Scry 2 of target's deck. If both cards share a color, deal +3 damage.
 Defensive Bonus: Scry 1 of any deck.
 Range: Ranged

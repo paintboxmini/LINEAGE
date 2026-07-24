@@ -30,7 +30,7 @@ The Descended see perfectly in total darkness. Players without a light source ha
 The Descended feel movement through the rock. Any impact on the shelf floor — a body falling, a failed check, a forced crossing — triggers their attention. If a vibration event occurs during navigation or combat, summon 1d4 additional Descended from the far section of the shelf.
 
 **Adapted Movement**
-The Descended move freely through any cave geometry. In open passages they crouch-run. On the shelf they slither. The transition between the two is seamless — they do not slow for the shelf entrance. Players moving through the shelf are slowed by the ceiling; the Descended are not. All player movement on the shelf requires a DC 11 Body/Sense check or costs double. The Descended ignore this entirely.
+The Descended move freely through any cave geometry. In open passages they crouch-run. On the shelf they slither. The transition between the two is seamless — they do not slow for the shelf entrance. Players moving through the shelf are slowed by the ceiling; the Descended are not. All player movement on the shelf requires a DC 11 Body/Senses check or costs double. The Descended ignore this entirely.
 
 ---
 

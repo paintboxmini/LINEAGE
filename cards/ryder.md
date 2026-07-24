@@ -8,7 +8,7 @@ Signature cards for Ryder. See `characters/ryder.md`.
 
 **PHOENIX'S LAST BREATH**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Heal 2 HP
 Defensive Bonus: Heal 2 HP
 Range: Both
@@ -19,7 +19,7 @@ Range: Both
 
 **ASHBORN FLARE**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If you are below half HP, deal +3 damage.
 Defensive Bonus: Heal 2 HP.
 Range: Ranged
@@ -29,7 +29,7 @@ Range: Ranged
 
 **EMBER WARD**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Target ally gains Resist 1.
 Defensive Bonus: Gain Evade.
 Range: Both
