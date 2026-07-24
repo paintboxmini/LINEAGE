@@ -2,6 +2,8 @@
 
 Canonical definitions for all keywords and status cards used in Tales Untold. When a card uses a keyword, this is the ruling. Card text that contradicts this file should be treated as an error.
 
+This file is meant to be printed and handed to players. State the rule, plainly, and stop — no *why* it's shaped that way, no *how* the simulator happens to implement it. That reasoning has a home (`memory.md`, code comments) and it isn't here.
+
 ---
 
 ## Keywords
