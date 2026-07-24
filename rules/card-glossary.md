@@ -33,7 +33,7 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(10) Anchored**
-You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately.
+You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse. *(Collapse ending Anchored made explicit and universal 2026-07-24 — previously only SLIPSTREAM's own card text said so, as if it were a SLIPSTREAM-specific rule rather than how Anchored itself works; Drew's direct call. SLIPSTREAM's card text no longer restates it, same as no Anchored card restates "ends if you move.")*
 
 **(14) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
@@ -104,7 +104,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **(15) Ward**
-Prevent the next debuff applied to you. Triggers automatically the instant a qualifying debuff would apply — no declaration required. Expires on use.
+Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use. *(Trimmed 2026-07-24 — this entry used to restate Debuff's own scope; Debuff already defines what does and doesn't qualify, so Ward just points there now.)*
 
 **(2) Immunity**
 The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.

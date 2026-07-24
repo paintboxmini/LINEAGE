@@ -285,8 +285,8 @@ Range: Both
 **SUNDER**
 RED — BODY
 Attack: Body + d6
-Effect: Target loses 1 Mind permanently this combat.
-Defensive Bonus: Target loses 1 Mind permanently this combat.
+Effect: Target loses 1 Mind this combat.
+Defensive Bonus: Target loses 1 Mind this combat.
 Range: Melee
 *"Thought breaks under enough weight."*
 
@@ -295,8 +295,8 @@ Range: Melee
 **PRESS THE INJURY**
 RED — BODY
 Attack: Body + d6
-Effect: The defender announces how many Injuries they have in hand and discard pile, rather than revealing their hand. Deal +2 damage for each.
-Defensive Bonus: Heal 2 HP for each Injury in your hand and discard pile. Then destroy them.
+Effect: The defender announces how many status cards (Injury and Exhaust) they have in hand and discard pile, rather than revealing their hand. Deal +2 damage for each.
+Defensive Bonus: Heal 2 HP for each status card (Injury and Exhaust) in your hand and discard pile. Then destroy them.
 Range: Melee
 *"It was always going to end here."*
 

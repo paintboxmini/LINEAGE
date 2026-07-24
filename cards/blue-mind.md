@@ -135,7 +135,7 @@ Range: Ranged
 **FRACTURE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: If the top 3 cards of your discard are 1 of each color, deal 3 damage to either the enemy Frontline or the enemy Backline (your choice)
+Effect: If the top 3 cards of your discard are 1 of each color, deal 5 damage to either the enemy Frontline or the enemy Backline (your choice)
 Defensive Bonus: If the top 3 cards of your discard are 1 of each color, the attacker must exile the card they played this turn
 Range: Ranged
 *"Cracks reveal hidden structure."*
@@ -246,8 +246,8 @@ Range: Both
 **ERODE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender loses 1 Soul permanently this combat.
-Defensive Bonus: Attacker loses 1 Soul permanently this combat.
+Effect: Defender loses 1 Soul this combat.
+Defensive Bonus: Attacker loses 1 Soul this combat.
 Range: Ranged
 *"Understanding something completely is the first step to unmaking it."*
 
@@ -276,7 +276,7 @@ Range: Ranged
 **SLIPSTREAM**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card. Ends if you collapse.
+Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
@@ -317,20 +317,10 @@ Range: Both
 **UNMAKE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 3 Exhaust cards to your hand.
-Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
+Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 2 Exhaust cards to your hand.
+Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 2 Exhaust cards to your hand.
 Range: Ranged
 *"Everything they built stops mattering at once."*
-
----
-
-**BARRIER**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Gain Immunity.
-Defensive Bonus: Gain Immunity.
-Range: Ranged
-*"Not deflected. Not survived. Simply undone."*
 
 ---
 
