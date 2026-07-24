@@ -9,7 +9,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 *The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-23, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted for real across all 241 card blocks in `cards/*.md` (up from 216 at the 2026-07-18 snapshot), not estimated forward from the old numbers.*
 
 **(5) Counter Attack**
-Deal this card's Attack damage back to the attacker. If a die is stated instead (e.g., Counter Attack d4), roll that die and deal the result. Melee only unless the card specifies otherwise. The counter is not a separate attack — it does not trigger a new RPS resolution.
+Deal this card's Attack damage back to the attacker.
 
 **(1) Debuff**
 Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, forced discard, forced hand reveal, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
@@ -18,16 +18,16 @@ Any negative *auxiliary* effect an enemy applies to you: status conditions (Blin
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
 
 **(2) Obscure**
-Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise. Not exclusive to cards — a creature can carry this innately and permanently, no card or roll required (e.g. Duskwick, `bestiary/duskwick.md`); the keyword defines the mechanic, not who's allowed to grant it. Genuinely unmodeled in the simulator (which already has full internal hand/deck visibility regardless of what any card claims) — same footing as Sealed's "no item-usage mechanic exists in the sim," real canon that just isn't sim-testable, not a reason to remove it.
+Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
-**(3) Reveal Hand** (Break, Read, Feint)
-At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue") — not naming individual cards, and not reading full card text. The opponent learns the shape of your options, not which specific cards or what they do. Simulator play doesn't need this distinction; it already has full internal access to hand contents either way.
+**(3) Reveal HAND**
+At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue")
 
 **(1) Critical**
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
 
 **(19) Deadly**
-The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out — checked before either applies, not a race won by whichever was granted first.
+The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out 
 
 **(10) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
@@ -44,7 +44,7 @@ You gain a specific benefit that persists as long as you do not change positions
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
 **(6) Exile**
-Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's deck.
+Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
 **(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
@@ -72,7 +72,7 @@ Multiple shifts applied to the same token at once sum into one net shift before 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
 **(4) Lifesteal**
-Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed. Not legal as a Defensive Bonus: a defender-win means no attack damage was dealt, so there's nothing to take half of.
+Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
 **(34) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
@@ -89,13 +89,13 @@ Cannot voluntarily change position until the start of your next turn. Forced rep
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **(3) Quick**
-On your next turn, you may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
+You may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
 
 **(24) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **(12) Staggered**
-The next time you would attack or defend, that one instance is skipped instead — either your attack fails to happen on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens. No action required to clear it; it clears itself.
+The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
 **(7) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
