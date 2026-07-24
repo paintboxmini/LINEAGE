@@ -226,14 +226,14 @@ def _object_tick(engine, who):
     included — a standing Object has no "self" left to exclude the way a
     per-turn ally buff (WARSONG) does, since it isn't cast by anyone
     anymore once it exists. Hazard-type objects strike the owner's
-    enemies. CIPHER now grants Ward (2026-07-24) — Drew's call retiring
-    Obscure as a card keyword entirely ("the persistent obscure deserves to
-    be a creature passive not a card keyword"); Ward is a real, testable
-    mechanic where Obscure never was (this sim's AI already has full
-    internal hand/deck visibility regardless of what any card says, so
-    Obscure had nothing to actually change) and, with forced discard and
-    hand reveal now Debuffs too, protects almost the same thing Obscure
-    used to."""
+    enemies. CIPHER now grants Ward (2026-07-24) instead of Obscure — kept
+    even after Obscure itself was restored as a keyword (see
+    rules/card-glossary.md), since this specific swap was never really about
+    Obscure's categorization: Obscure is genuinely unmodeled in this sim
+    (full internal hand/deck visibility regardless of what any card says),
+    so it was dead text on this card either way. Ward is a real, testable
+    mechanic, and with forced discard and hand reveal now Debuffs too, it
+    protects almost the same thing Obscure would have."""
     for obj in engine.objects:
         if who.position != obj['position']:
             continue

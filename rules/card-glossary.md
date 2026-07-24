@@ -17,6 +17,9 @@ Any negative *auxiliary* effect an enemy applies to you: status conditions (Blin
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
 
+**(2) Obscure**
+Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise. Not exclusive to cards — a creature can carry this innately and permanently, no card or roll required (e.g. Duskwick, `bestiary/duskwick.md`); the keyword defines the mechanic, not who's allowed to grant it. Genuinely unmodeled in the simulator (which already has full internal hand/deck visibility regardless of what any card claims) — same footing as Sealed's "no item-usage mechanic exists in the sim," real canon that just isn't sim-testable, not a reason to remove it. *(Briefly retired as a card keyword 2026-07-24, restored the same day — removing it solved nothing; every future user of the same mechanic would've had to redescribe it in their own words instead of pointing at one ruling. Drew's own correction.)*
+
 **(3) Reveal Hand** (Break, Read, Feint)
 At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue") — not naming individual cards, and not reading full card text. The opponent learns the shape of your options, not which specific cards or what they do. Simulator play doesn't need this distinction; it already has full internal access to hand contents either way.
 
