@@ -35,7 +35,7 @@ It has no eyes, so it isn't a face it's reading. It's the small tells nobody mea
 
 It doesn't press an opening it doesn't need. A clean shot gets a bite and a retreat, not a fight. Corner it instead — box it in, hurt it past the point it can slip away — and the patience runs out. That's when it stops being careful.
 
-**Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`), just innate rather than granted by a played card. HALF-SEEN's own Defensive Bonus already grants Obscure too, redundant with this passive on paper but not in practice — the passive covers Duskwick whether or not it happens to be holding that card.
+**Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`), just innate rather than granted by a played card. HALF-SEEN's own Defensive Bonus grants Evade rather than Obscure for exactly this reason — the passive already covers Obscure unconditionally, so the card earns its slot doing something the passive doesn't.
 
 ---
 
