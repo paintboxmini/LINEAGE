@@ -35,6 +35,8 @@ It has no eyes, so it isn't a face it's reading. It's the small tells nobody mea
 
 It doesn't press an opening it doesn't need. A clean shot gets a bite and a retreat, not a fight. Corner it instead — box it in, hurt it past the point it can slip away — and the patience runs out. That's when it stops being careful.
 
+**Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it; enemies never get to look at or manipulate its hand or deck, same as the keyword's own rule, just innate rather than granted. (Obscure retired as a general card keyword 2026-07-24 — this is what a persistent version of it actually looks like: a trait some creatures simply have, not something any card grants.)
+
 ---
 
 ## Related Documents
