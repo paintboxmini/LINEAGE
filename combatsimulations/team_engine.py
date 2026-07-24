@@ -395,6 +395,11 @@ class Battle:
                                 'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
+        # ATTUNE: +2 damage for the rest of combat with whatever color was
+        # discarded to earn it — see engine.py's Duel._resolve_attacker_win
+        # for the full reasoning, same mechanism here.
+        if any(o.get('kind') == 'attune' and o.get('color') == card.color for o in attacker.ongoing):
+            dmg += 2
         if defender._rend_guard:
             defender._rend_guard = False
             self.insert_injury(defender)
@@ -453,6 +458,7 @@ class Battle:
         who._weathered = False
         who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
+        who._grounded = False            # GROUNDING STANCE: same self-clearing shape
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False

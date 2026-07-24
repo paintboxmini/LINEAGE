@@ -223,7 +223,7 @@ def _gamblers_ruin_defense(engine, me, foe):
 
 def _repel_effect(engine, me, foe):
     # Position-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
-    if foe.position == 'frontline':
+    if foe.position == 'frontline' and not foe._grounded:   # GROUNDING STANCE
         foe.position = 'backline'
 
 
@@ -559,9 +559,11 @@ def _chain_defense(engine, me, foe):
     foe._forced_target = me                # taunt the attacker
 
 def _calculate_effect(engine, me, foe):
-    foe.position = 'backline'
+    if not foe._grounded:   # GROUNDING STANCE
+        foe.position = 'backline'
 def _calculate_defense(engine, me, foe):
-    foe.position = 'frontline'
+    if not foe._grounded:
+        foe.position = 'frontline'
 
 def _analyze_effect(engine, me, foe):
     for a in _team(engine, me):            # you and your allies scry 2
@@ -772,6 +774,126 @@ def _understanding_dmg(engine, me, foe):
     return base
 def _understanding_defense(engine, me, foe):
     engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
+
+# ==================== 13 core cards found unregistered (2026-07-23 audit) ===
+# Never wired to any roster deck, so never caught — same shape as the
+# Patient-Host-deck-fill gap above, found this time by a systematic sweep of
+# cards/*.md against content.py rather than a specific deck build surfacing it.
+
+def _distract_effect(engine, me, foe):
+    pass   # Sealed: item-usage gate, no item mechanic exists in the sim (PREDICT's own precedent)
+def _distract_defense(engine, me, foe):
+    foe._forced_target = me   # taunt, same mechanism as MOCKERY's defense
+
+def _phase_logic_effect(engine, me, foe):
+    me.evade += 1
+def _phase_logic_defense(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'   # "may" -> always, established convention
+
+def _cliff_song_heal(engine, me, foe):
+    engine.heal(me, 2)
+    for a in engine.allies(me):
+        engine.heal(a, 2)
+_cliff_song_effect = _cliff_song_heal
+_cliff_song_defense = _cliff_song_heal
+
+def _dart_move(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'   # "any position" -> toggle, no policy hook for a free choice
+_dart_effect = _dart_move
+_dart_defense = _dart_move
+
+def _berserkers_price_dmg(engine, me, foe):
+    return me.eff('body') + roll(8, engine.rng) + roll(8, engine.rng) + _deadly_weak_bonus(engine.rng, me)
+def _berserkers_price_effect(engine, me, foe):
+    me.cannot_defend = True   # until my own next turn (take_turn resets it) — the flag already existed, reserved, unused until now
+def _berserkers_price_defense(engine, me, foe):
+    # "next time you attack them" simplified to "their very next turn" — no
+    # per-target future-restriction exists in the engine, and in practice
+    # there's only ever one live attacker to simplify away from anyway.
+    foe.cannot_defend = True
+
+def _slip_the_blade_effect(engine, me, foe):
+    me.evade += 1
+def _slip_the_blade_defense(engine, me, foe):
+    me.position = 'frontline'
+
+def _grounding_stance_effect(engine, me, foe):
+    me._grounded = True   # until my own next turn — checked by PUSH/PULL/CALCULATE/REPEL/NO VACANCY below.
+    # NOT checked by MIRROR STEP, HEAVE AND HAUL, TRAMPLE's defensive push, or
+    # Rushdown — threading a guard through every forced-reposition source in
+    # the game was more than this pass covered; flagged here rather than
+    # silently claiming full coverage.
+def _grounding_stance_defense(engine, me, foe):
+    me.resist += 1
+
+def _sunder_effect(engine, me, foe):
+    if not warded(foe):
+        foe.adjust('mind', -1)
+_sunder_defense = _sunder_effect
+
+def _dead_heat_effect(engine, me, foe):
+    if me._tie:   # DEAD HEAT-style cancel — engine.py's tie branch checks for exactly this
+        foe._no_defensive_bonus = True
+def _dead_heat_defense(engine, me, foe):
+    engine.deal(foe, 4 if me._tie else 2, unpreventable=True)
+
+def _attune_effect(engine, me, foe):
+    reals = [i for i, c in enumerate(me.hand) if not c.is_status]
+    if not reals:
+        return
+    discarded = me.hand.pop(engine.rng.choice(reals))
+    me.discard.append(discarded)
+    # Existing ongoing entries for the same color don't stack — refreshing
+    # the color is enough; a second copy would double-count in
+    # _resolve_attacker_win's lookup below.
+    if not any(o.get('kind') == 'attune' and o.get('color') == discarded.color for o in me.ongoing):
+        me.ongoing.append({'kind': 'attune', 'owner': me, 'color': discarded.color})
+def _attune_defense(engine, me, foe):
+    engine.deal(me, 2, unpreventable=True)
+    for _ in range(2):
+        c = me.draw_one(engine.rng)
+        if c:
+            me.hand.append(c)
+    reals = [i for i, c in enumerate(me.hand) if not c.is_status]
+    if reals:
+        me.discard.append(me.hand.pop(engine.rng.choice(reals)))
+
+def _bind_effect(engine, me, foe):
+    foe.rooted = True
+def _bind_defense(engine, me, foe):
+    foe.rooted = True   # foe = attacker here, same convention as GORE's defense
+
+def _read_effect(engine, me, foe):
+    pass   # "defender must reveal their hand" — pure info, no state change (BREAK's own precedent)
+def _read_defense(engine, me, foe):
+    # "Name a color" has no real choice to make without a live opponent to
+    # bluff against — picks whichever color the foe has actually shown most,
+    # same heuristic ANTICIPATE-style cards already use elsewhere.
+    color = foe.attack_history.most_common(1)[0][0] if foe.attack_history else None
+    if color is None:
+        return
+    matches = [i for i, c in enumerate(foe.hand) if not c.is_status and c.color == color]
+    if matches:
+        foe.discard.append(foe.hand.pop(engine.rng.choice(matches)))
+
+def _carried_injury_effect(engine, me, foe):
+    # Ally-sourced — a genuine no-op in 1v1 (You Are Not Your Own Ally), same
+    # footing as every other "from any ally" effect in this file. Correct in
+    # team play: pulls from whichever ally is actually carrying one.
+    source = next((a for a in engine.allies(me) if any(c.is_status and c.name == 'INJURY' for c in a.hand)), None)
+    if source is None:
+        return
+    idx = next(i for i, c in enumerate(source.hand) if c.is_status and c.name == 'INJURY')
+    injury = source.hand.pop(idx)
+    engine.insert_injury(foe)
+    # the source's own copy is spent, not duplicated — insert_injury gives
+    # the defender a fresh one from the shared injury_card, so discard this one
+    _ = injury
+def _carried_injury_defense(engine, me, foe):
+    if any(c.is_status and c.name == 'INJURY' for c in me.hand):
+        idx = next(i for i, c in enumerate(me.hand) if c.is_status and c.name == 'INJURY')
+        me.hand.pop(idx)
+        engine.insert_injury(foe)   # foe = attacker here
 
 def _endure_effect(engine, me, foe):
     me.resist += 1
@@ -1139,7 +1261,8 @@ def _registered_defense(engine, me, foe):
     me.ward = True
 
 def _no_vacancy_effect(engine, me, foe):
-    foe.position = 'backline'
+    if not foe._grounded:   # GROUNDING STANCE
+        foe.position = 'backline'
 def _no_vacancy_defense(engine, me, foe):
     me.resist += 2
 
@@ -1329,14 +1452,18 @@ def _still_ground_defense(engine, me, foe):
 # building the above: these two plain repositioning cards were never
 # registered at all, Stonecoil signature or not.
 def _pull_effect(engine, me, foe):
-    foe.position = 'frontline'
+    if not foe._grounded:   # GROUNDING STANCE
+        foe.position = 'frontline'
 def _pull_defense(engine, me, foe):
-    foe.position = 'frontline'
+    if not foe._grounded:
+        foe.position = 'frontline'
 
 def _push_effect(engine, me, foe):
-    foe.position = 'backline'
+    if not foe._grounded:   # GROUNDING STANCE
+        foe.position = 'backline'
 def _push_defense(engine, me, foe):
-    foe.position = 'backline'
+    if not foe._grounded:
+        foe.position = 'backline'
 
 # ROLLOUT (Delve Roller) — the Pokemon reference, made real: returns
 # straight to hand after use (`returns_to_hand=True` on the Card itself),
@@ -1581,6 +1708,25 @@ def build_cards():
     add("FOCUS", 'B', 'mind', 'ranged', 6, effect=_focus_effect, defense=_focus_defense)
     add("UNDERSTANDING", 'B', 'mind', 'ranged', 8,
         damage=_understanding_dmg, defense=_understanding_defense)
+
+    # 13 more core cards found unregistered (2026-07-23 text-vs-sim audit)
+    add("DISTRACT", 'B', 'mind', 'ranged', 6, effect=_distract_effect, defense=_distract_defense)
+    add("PHASE LOGIC", 'B', 'mind', 'both', 4, effect=_phase_logic_effect, defense=_phase_logic_defense)
+    add("CLIFF SONG", 'R', 'body', 'both', 4, effect=_cliff_song_effect, defense=_cliff_song_defense)
+    add("DART", 'R', 'body', 'both', 6, effect=_dart_effect, defense=_dart_defense)
+    add("BERSERKER'S PRICE", 'R', 'body', 'melee', None,
+        damage=_berserkers_price_dmg, effect=_berserkers_price_effect, defense=_berserkers_price_defense)
+    add("SLIP THE BLADE", 'R', 'body', 'both', 6, effect=_slip_the_blade_effect, defense=_slip_the_blade_defense)
+    add("GROUNDING STANCE", 'R', 'body', 'both', 6,
+        effect=_grounding_stance_effect, defense=_grounding_stance_defense)
+    add("SUNDER", 'R', 'body', 'melee', 6, effect=_sunder_effect, defense=_sunder_defense)
+    add("DEAD HEAT", 'R', 'body', 'ranged', 8, effect=_dead_heat_effect, defense=_dead_heat_defense)
+    add("ATTUNE", 'G', 'soul', 'melee', 6, effect=_attune_effect, defense=_attune_defense)
+    add("BIND", 'G', 'soul', 'melee', 6, effect=_bind_effect, defense=_bind_defense)
+    add("READ", 'G', 'soul', 'ranged', 6, effect=_read_effect, defense=_read_defense)
+    add("CARRIED INJURY", 'G', 'soul', 'both', 4,
+        effect=_carried_injury_effect, defense=_carried_injury_defense)
+
     add("ENDURE", 'R', 'body', 'melee', 4, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'melee', 6, effect=_weathered_effect, defense=_weathered_defense)
     add("STARING CONTEST", 'R', 'body', 'melee', 4,

@@ -578,7 +578,8 @@ class Combatant:
                                           # me fails before any cards are revealed at all
         self.axiom_ban = None            # color forbidden on next reveal
         self.next_attack_bonus = 0
-        self.cannot_defend = False       # (unused by these decks, reserved)
+        self.cannot_defend = False       # BERSERKER'S PRICE: until my own next turn
+        self._grounded = False           # GROUNDING STANCE: ignore forced repositioning, until my own next turn
         self.ongoing = []               # list of dicts: {'kind':..., ...}
         self._anticipating = False       # ANTICIPATE: draw before defending, until my next turn
         self._no_defensive_bonus = False # UNNAME: defensive bonuses don't trigger, until my next turn
@@ -1152,6 +1153,12 @@ class Duel:
                                 'color': self._this_turn_hit.get('color')}
         dmg = card.damage(self, attacker, defender) + attacker.next_attack_bonus
         attacker.next_attack_bonus = 0
+        # ATTUNE: +2 damage for the rest of combat with whatever color was
+        # discarded to earn it — the one universal choke point every card's
+        # damage passes through, so this works regardless of which card
+        # triggers it rather than needing a check duplicated per card.
+        if any(o.get('kind') == 'attune' and o.get('color') == card.color for o in attacker.ongoing):
+            dmg += 2
         # Rend's defensive guard: the next hit deals no damage and instead
         # shuffles an Injury into the struck combatant.
         if defender._rend_guard:
@@ -1236,6 +1243,7 @@ class Duel:
         who._weathered = False
         who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
+        who._grounded = False            # GROUNDING STANCE: same self-clearing shape
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False
