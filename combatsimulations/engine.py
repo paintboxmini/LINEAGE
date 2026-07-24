@@ -36,35 +36,45 @@ def roll(die, rng):
     return rng.randint(1, die)
 
 
-def _rolled_die(die, rng, me):
-    """The base damage die, modified by Deadly/Weak (rules/card-glossary.md):
-    each stack adds (Deadly) or subtracts (Weak) a flat d6 from this one
-    future damage roll, then consumes one stack. Flat, not proportional to
-    the base die, on purpose — the old "roll twice, take higher/lower"
-    version scaled with base die size, quietly favoring whichever color
-    rolls the bigger dice regardless of who actually holds the stack.
-    1 stack of Deadly and 1 stack of Weak cancel each other out on
-    consumption, rather than Deadly silently winning — Drew's own resolution
-    of what used to be an unruled tie-break, matching the same pairing given
-    to Resist/Vulnerable below. Bonus die bumped d4->d6 alongside
-    the global base-die step-up (Drew: "deadly can be add 1d6") — Weak
-    moved with it for the same reason the two were made symmetric in the
-    first place (flagged, not separately confirmed, but leaving them
-    asymmetric would be a real, unstated inconsistency). Custom `_damage`
-    functions (exploding dice, multi-hit cards) roll their own way and are
-    NOT wrapped here — applying this generically to an arbitrary custom
-    function risks doubling unrelated side effects, not just the die."""
+def _deadly_weak_bonus(rng, me):
+    """The Deadly/Weak swing for exactly one damage roll (rules/card-
+    glossary.md): +d6 (Deadly), -d6 (Weak), or 0 if they cancel or neither
+    is held — checks and consumes one stack of whichever applies. Split out
+    of `_rolled_die` (2026-07-23) so a custom `_damage` function can add
+    this to its own hand-rolled total instead of reimplementing the stack/
+    cancel logic itself. That reimplementation is exactly what didn't happen
+    for 8 cards (BURN BRIGHT, FRACTURE, TRACE, TWIN STRIKE, GAMBLER'S RUIN,
+    PRESS THE INJURY, PATIENCE, UNDERSTANDING) — none of them touched
+    `me.deadly`/`me.weak` at all, so a held stack from an earlier card
+    silently vanished, neither applied nor consumed, the moment a player
+    played one of these instead of an ordinary card. Drew, direct: "the sim
+    should be fixed it doesn't match how the game plays at the table.\""""
     if me.deadly > 0 and me.weak > 0:
         me.deadly -= 1
         me.weak -= 1
-        return roll(die, rng)
+        return 0
     if me.deadly > 0:
         me.deadly -= 1
-        return roll(die, rng) + roll(6, rng)
+        return roll(6, rng)
     if me.weak > 0:
         me.weak -= 1
-        return roll(die, rng) - roll(6, rng)
-    return roll(die, rng)
+        return -roll(6, rng)
+    return 0
+
+
+def _rolled_die(die, rng, me):
+    """The base damage die, modified by Deadly/Weak via `_deadly_weak_bonus`
+    (rules/card-glossary.md) — flat, not proportional to the base die, on
+    purpose (the old "roll twice, take higher/lower" version scaled with
+    base die size, quietly favoring whichever color rolls the bigger dice
+    regardless of who actually holds the stack). 1 stack of Deadly and 1
+    stack of Weak cancel each other out on consumption, rather than Deadly
+    silently winning — Drew's own resolution of what used to be an unruled
+    tie-break, matching the same pairing given to Resist/Vulnerable below.
+    Bonus die bumped d4->d6 alongside the global base-die step-up (Drew:
+    "deadly can be add 1d6") — Weak moved with it for the same reason the
+    two were made symmetric in the first place."""
+    return roll(die, rng) + _deadly_weak_bonus(rng, me)
 
 
 COLOR_TO_STAT = {'R': 'body', 'B': 'mind', 'G': 'soul'}

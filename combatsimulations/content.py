@@ -7,7 +7,7 @@ Ally) and are marked DEAD — the sim will show how much dead weight each deck
 carries into single combat. Simplifications are logged via RULING().
 """
 
-from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die, can_attack
+from engine import Card, roll, RULING, COLOR_TO_STAT, _rushdown, _rolled_die, _deadly_weak_bonus, can_attack
 
 
 def warded(target):
@@ -49,7 +49,7 @@ def _same_as_discard_top(target):
 # ============================ FROST ==========================================
 
 def _burn_bright_dmg(engine, me, foe):
-    base = me.body + roll(8, engine.rng)
+    base = me.body + roll(8, engine.rng) + _deadly_weak_bonus(engine.rng, me)
     if me.hand:  # exile 1 from hand for +2 this attack
         me.exile.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
         base += 2
@@ -62,7 +62,7 @@ def _burn_bright_defense(engine, me, foe):
 
 
 def _fracture_dmg(engine, me, foe):
-    return me.eff('mind') + roll(6, engine.rng)
+    return me.eff('mind') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me)
 
 
 def _fracture_effect(engine, me, foe):
@@ -78,12 +78,16 @@ def _fracture_effect(engine, me, foe):
 
 
 def _trace_dmg(engine, me, foe):
+    # Base roll still respects a Deadly/Weak stack the caster is already
+    # holding from an earlier card (was silently dropped before 2026-07-23 —
+    # see _deadly_weak_bonus). The card's own "gain Deadly this attack"
+    # condition, when it fires, is a second, independent +d6 on top of that —
+    # a card-granted bonus for this specific attack, not routed through the
+    # stack system (it isn't a stack the caster is holding for later).
+    base = me.eff('mind') + _rolled_die(6, engine.rng, me)
     if _same_as_discard_top(foe):
-        # Deadly, this roll only — flat +d6, matching the current standard
-        # Deadly mechanic (_rolled_die), not the deprecated roll-twice-take-
-        # higher version this card was still running (caught 2026-07-23).
-        return me.eff('mind') + roll(6, engine.rng) + roll(6, engine.rng)
-    return me.eff('mind') + roll(6, engine.rng)
+        base += roll(6, engine.rng)
+    return base
 
 
 def _trace_defense(engine, me, foe):
@@ -95,7 +99,10 @@ def _twin_strike_dmg(engine, me, foe):
     RULING("twin-strike-double-roll",
            "TWIN STRIKE '(Soul + d2) x2' is read as two independent (Soul + d2) "
            "instances summed, not one roll doubled.")
-    return (me.soul + roll(4, engine.rng)) + (me.soul + roll(4, engine.rng))
+    # Two independent damage rolls means a held Deadly/Weak stack can apply
+    # to either (or, with 2+ stacks, both) — each _rolled_die call checks and
+    # consumes its own stack, same as if these were two separate cards.
+    return (me.soul + _rolled_die(4, engine.rng, me)) + (me.soul + _rolled_die(4, engine.rng, me))
 
 
 def _axiom_effect(engine, me, foe):
@@ -203,7 +210,11 @@ def _gamblers_ruin_dmg(engine, me, foe):
         die = roll(6, engine.rng)
         total += die
         rerolls += 1
-    return total
+    # Deadly/Weak apply once, to the attack overall, added after the
+    # explosion resolves — kept out of the loop above so a Deadly-inflated
+    # roll can't itself trigger (or a Weak-deflated one avoid) an explosion
+    # that shouldn't have happened.
+    return total + _deadly_weak_bonus(engine.rng, me)
 
 
 def _gamblers_ruin_defense(engine, me, foe):
@@ -350,7 +361,7 @@ def _rend_defense(engine, me, foe):
 
 
 def _press_the_injury_dmg(engine, me, foe):
-    return me.eff('body') + roll(6, engine.rng) + 2 * foe.injuries_visible()
+    return me.eff('body') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me) + 2 * foe.injuries_visible()
 
 
 def _press_the_injury_defense(engine, me, foe):
@@ -725,7 +736,7 @@ def _dead_reckoning_defense(engine, me, foe):
 
 def _patience_dmg(engine, me, foe):
     bonus = 0 if getattr(me, '_attacked_last', False) else 4   # +4 if you waited
-    return me.eff('soul') + roll(6, engine.rng) + bonus
+    return me.eff('soul') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me) + bonus
 def _patience_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
@@ -751,11 +762,14 @@ def _focus_defense(engine, me, foe):
 def _understanding_dmg(engine, me, foe):
     # discard the played card's already gone from hand by this point (removed
     # at the top of attack()), so any index here is a genuinely different card
+    # Base roll respects a held Deadly/Weak stack (_rolled_die); the card's
+    # own "this attack gains Deadly" is a second, independent +d6 on top when
+    # the discard actually happens, same shape as TRACE above.
+    base = me.eff('mind') + _rolled_die(8, engine.rng, me)
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
-        # Deadly, this roll only — flat +d6, same fix as TRACE above.
-        return me.eff('mind') + roll(8, engine.rng) + roll(6, engine.rng)
-    return me.eff('mind') + roll(8, engine.rng)
+        base += roll(6, engine.rng)
+    return base
 def _understanding_defense(engine, me, foe):
     engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
 
