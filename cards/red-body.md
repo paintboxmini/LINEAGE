@@ -415,8 +415,8 @@ Range: Melee
 **ROLLOUT**
 RED — BODY
 Attack: Body + d4
-Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use, regardless of outcome.
-Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use, regardless of outcome.
+Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use.
+Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use.
 Range: Melee
 *"It was slow once."*
 
@@ -426,7 +426,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d6
 Effect: Rushdown.
-Defensive Bonus: Counter Attack d6.
+Defensive Bonus: Counter Attack.
 Range: Melee
 *"The correction comes to you."*
 

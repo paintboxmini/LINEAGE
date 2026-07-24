@@ -166,7 +166,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Evade.
-Defensive Bonus: The next enemy must attack you on their turn. They move forward/rushdown if they cannot.
+Defensive Bonus: Gain Evade.
 Range: Melee
 *"You become the mark that shouldn't be there, wearing darkness as perfect armor."*
 
@@ -215,8 +215,8 @@ Range: Ranged
 **CARRIED INJURY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Transfer 1 Injury from any ally to defender
-Defensive Bonus: Transfer 1 Injury from yourself to attacker
+Effect: Transfer 1 status card from any ally's hand or discard to the defender
+Defensive Bonus: Transfer 1 status card from your hand or discard to the attacker
 Range: Both
 *"I'll carry what you can't. They'll carry what I give them."*
 
@@ -265,7 +265,7 @@ Range: Ranged
 **SYNCHRONY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Until the end of combat, allies next to you in the initiative order heal 1 HP at the start of their turns. Whenever an ally heals this way, you heal 1 HP as well. Ends if you die or leave combat.
+Effect: Until the end of combat, allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
 Defensive Bonus: Gain Resist.
 Range: Both
 *"Stand where they stand. What heals them, heals you."*
@@ -275,7 +275,7 @@ Range: Both
 **WARSONG**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: If an ally attacked successfully on the turn immediately before yours, all allies gain Deadly.
+Effect: All allies gain Deadly.
 Defensive Bonus: Apply Initiative Shift +2 to an ally.
 Range: Both
 *"One voice finds its mark. The rest answer in kind."*
@@ -315,7 +315,7 @@ Range: Both
 **PATIENCE OF STONE**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Anchored — at the start of each of your turns, heal 2 HP.
+Effect: Anchored — at the start of each of your turns, heal 5 HP.
 Defensive Bonus: Gain Deadly.
 Range: Melee
 *"The unshaken abide, while chaos churns."*
@@ -345,18 +345,7 @@ Range: Both
 **SMOKE SCREEN**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself. Ward may prevent your own Blind.
+Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"Visibility is a luxury."*
-
----
-
-**WILD CARD**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: None — see below.
-Defensive Bonus: None — see below.
-Range: Both
-*Works the same whether you play it to attack or hold it to defend. Once the reveal decides the outcome, and only if your side of it is actually going to resolve, replace this card with the top card of your own deck — its stat, die, and whichever text applies (Effect if you attacked, Defensive Bonus if you defended) take over completely from here. Both this card and the revealed one go to your discard pile.*
-*"The hand you're dealt is never the hand you play."*
