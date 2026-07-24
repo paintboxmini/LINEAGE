@@ -1451,14 +1451,14 @@ def build_cards():
     add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 4,
         effect=_blood_in_the_gap_effect, defense=_blood_in_the_gap_defense)
     add("BURN BRIGHT", 'R', 'body', 'ranged', 8, damage=_burn_bright_dmg, defense=_burn_bright_defense)
-    add("SPARK OF VIOLENCE", 'R', 'body', 'both', 6,
+    add("SPARK OF VIOLENCE", 'R', 'body', 'melee', 6,
         effect=_spark_effect, defense=_spark_effect)
     # Frost — Blue
-    add("AXIOM", 'B', 'mind', 'both', 4, effect=_axiom_effect, defense=_axiom_defense)
+    add("AXIOM", 'B', 'mind', 'ranged', 4, effect=_axiom_effect, defense=_axiom_defense)
     add("DEFLECT", 'B', 'mind', 'melee', 6,
         effect=_deflect_effect, defense=_deflect_defense)
     add("REALIGNMENT", 'B', 'mind', 'both', 6, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
-    add("CLIMB", 'B', 'mind', 'both', 6, effect=_climb_effect, defense=_climb_defense)
+    add("CLIMB", 'B', 'mind', 'ranged', 6, effect=_climb_effect, defense=_climb_defense)
     add("FRACTURE", 'B', 'mind', 'ranged', 6, damage=_fracture_dmg, effect=_fracture_effect)
     add("TRACE", 'B', 'mind', 'ranged', 6, damage=_trace_dmg, defense=_trace_defense)
     # Frost — Green
@@ -1473,12 +1473,12 @@ def build_cards():
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
     add("REPEL", 'R', 'body', 'melee', 4,
         effect=_repel_effect, defense=_repel_effect)
-    add("PAIN IS FUEL", 'R', 'body', 'both', 6,   # d6 -> d4 rebalance
+    add("PAIN IS FUEL", 'R', 'body', 'melee', 6,   # d6 -> d4 rebalance
         effect=_pain_is_fuel_effect, defense=_pain_is_fuel_defense)
     # Steele — Blue
     add("FORGET", 'B', 'mind', 'ranged', 4,
         effect=_forget_effect, defense=_forget_defense)
-    add("PARADOX", 'B', 'mind', 'both', 6,
+    add("PARADOX", 'B', 'mind', 'ranged', 6,
         effect=_paradox_effect, defense=_paradox_defense, special_reveal='paradox')
     add("ALIGN", 'B', 'mind', 'ranged', 6,
         effect=_align_effect, defense=_align_defense)
@@ -1490,9 +1490,9 @@ def build_cards():
     # Mire — Green
     add("BALANCE", 'G', 'soul', 'ranged', 4,
         effect=_balance_effect, defense=_balance_defense)
-    add("WITHER", 'G', 'soul', 'both', 6,
+    add("WITHER", 'G', 'soul', 'ranged', 6,
         effect=_wither_effect, defense=_wither_effect)
-    add("MOCKERY", 'G', 'soul', 'both', 6,
+    add("MOCKERY", 'G', 'soul', 'ranged', 6,
         effect=_mockery_effect, defense=_mockery_defense)
     # Mire — Red
     add("REND", 'R', 'body', 'melee', 6,
@@ -1502,13 +1502,13 @@ def build_cards():
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
     add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
     # Mire — Blue
-    add("PARTITION", 'B', 'mind', 'both', 4,
+    add("PARTITION", 'B', 'mind', 'ranged', 4,
         effect=_partition_effect, defense=_partition_defense)
-    add("UNNAME", 'B', 'mind', 'both', 4, effect=_unname_effect, defense=_unname_defense)
+    add("UNNAME", 'B', 'mind', 'ranged', 4, effect=_unname_effect, defense=_unname_defense)
     add("SLIPSTREAM", 'B', 'mind', 'both', 4, effect=_slipstream_effect, defense=_slipstream_defense)
     add("TAINT", 'B', 'mind', 'ranged', 4,
         effect=_taint_effect, defense=_taint_defense)
-    add("ERODE", 'B', 'mind', 'both', 6,
+    add("ERODE", 'B', 'mind', 'ranged', 6,
         effect=_erode_effect, defense=_erode_effect)
 
     # Green support kit (team play)
@@ -1530,16 +1530,16 @@ def build_cards():
     add("TRAMPLE", 'R', 'body', 'melee', 6,
         effect=_trample_effect, defense=_trample_defense)
     add("BREAK", 'R', 'body', 'melee', 6, defense=_break_defense)
-    add("CHARGE", 'R', 'body', 'both', 6, effect=_charge_move, defense=_charge_move)
+    add("CHARGE", 'R', 'body', 'melee', 6, effect=_charge_move, defense=_charge_move)
     # --- Expanded set: Blue ---
-    add("INTERRUPT", 'B', 'mind', 'both', 4,
+    add("INTERRUPT", 'B', 'mind', 'ranged', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
     add("SHARPEN", 'B', 'mind', 'both', 6, effect=_sharpen_effect, defense=_sharpen_defense)
-    add("CHAIN", 'B', 'mind', 'both', 4, effect=_chain_effect, defense=_chain_defense)
+    add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
     add("CALCULATE", 'B', 'mind', 'ranged', 6,
         effect=_calculate_effect, defense=_calculate_defense)
     add("STUDY", 'B', 'mind', 'ranged', 8, effect=_study_effect, defense=_study_defense)
-    add("PROFILE", 'B', 'mind', 'both', 6, effect=_profile_effect, defense=_profile_defense)
+    add("PROFILE", 'B', 'mind', 'ranged', 6, effect=_profile_effect, defense=_profile_defense)
     add("REFRACT", 'B', 'mind', 'ranged', 6,
         effect=_refract_effect, defense=_refract_defense)
     # --- Expanded set: Green ---
@@ -1549,8 +1549,8 @@ def build_cards():
         effect=_rooted_oath_effect, defense=_rooted_oath_defense)
     add("URGENCY", 'G', 'soul', 'melee', 6,
         effect=_urgency_effect, defense=_urgency_defense)
-    add("DELAY", 'G', 'soul', 'both', 8, effect=_delay_effect, defense=_delay_defense)
-    add("COMMUNION", 'G', 'soul', 'both', 6,
+    add("DELAY", 'G', 'soul', 'ranged', 8, effect=_delay_effect, defense=_delay_defense)
+    add("COMMUNION", 'G', 'soul', 'ranged', 6,
         effect=_communion_effect, defense=_communion_defense)
     add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect)
     add("PATIENCE", 'G', 'soul', 'melee', None,
@@ -1560,26 +1560,26 @@ def build_cards():
     add("STILLNESS", 'B', 'mind', 'ranged', 6,
         effect=_stillness_effect, defense=_stillness_defense)
     add("PREDICT", 'B', 'mind', 'melee', 8)   # Sealed unmodeled — no item-usage mechanic exists in the sim
-    add("FOCUS", 'B', 'mind', 'both', 6, effect=_focus_effect, defense=_focus_defense)
-    add("UNDERSTANDING", 'B', 'mind', 'both', 8,
+    add("FOCUS", 'B', 'mind', 'ranged', 6, effect=_focus_effect, defense=_focus_defense)
+    add("UNDERSTANDING", 'B', 'mind', 'ranged', 8,
         damage=_understanding_dmg, defense=_understanding_defense)
-    add("ENDURE", 'R', 'body', 'both', 4, effect=_endure_effect, defense=_endure_defense)
-    add("WEATHERED", 'R', 'body', 'both', 6, effect=_weathered_effect, defense=_weathered_defense)
-    add("STARING CONTEST", 'R', 'body', 'both', 4,
+    add("ENDURE", 'R', 'body', 'melee', 4, effect=_endure_effect, defense=_endure_defense)
+    add("WEATHERED", 'R', 'body', 'melee', 6, effect=_weathered_effect, defense=_weathered_defense)
+    add("STARING CONTEST", 'R', 'body', 'melee', 4,
         effect=_staring_contest_effect, defense=_staring_contest_defense)
     add("WAITING GAME", 'R', 'body', 'both', 4,
         effect=_waiting_game_effect, defense=_waiting_game_defense)
     add("AFTERIMAGE", None, None, 'both', None,
         damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
         special_reveal='mirror_color')
-    add("DRAIN", 'R', 'body', 'both', 4, effect=_drain_effect, defense=_drain_defense)
-    add("CONSUME", 'G', 'soul', 'both', 6, effect=_consume_effect, defense=_consume_defense)
+    add("DRAIN", 'R', 'body', 'melee', 4, effect=_drain_effect, defense=_drain_defense)
+    add("CONSUME", 'G', 'soul', 'melee', 6, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
-    add("SEED", 'G', 'soul', 'both', 6, effect=_seed_effect, defense=_seed_defense)
+    add("SEED", 'G', 'soul', 'melee', 6, effect=_seed_effect, defense=_seed_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 6,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
-    add("OVERCOMMIT", 'R', 'body', 'both', 6,
+    add("OVERCOMMIT", 'R', 'body', 'melee', 6,
         effect=_overcommit_effect, defense=_overcommit_defense)
     # Bestiary promotions
     add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
@@ -1608,7 +1608,7 @@ def build_cards():
     add("PUSH", 'R', 'body', 'melee', 6, effect=_push_effect, defense=_push_defense)
     add("ROLLOUT", 'R', 'body', 'melee', 4,
         damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
-    add("SEISMIC REDIRECT", 'R', 'body', 'both', 6,
+    add("SEISMIC REDIRECT", 'R', 'body', 'melee', 6,
         effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)
     add("GORE", 'R', 'body', 'melee', 8, damage=_gore_damage, defense=_gore_defense)
     # FRAME-TRAP: the auto-win-and-negate-defense special case lives in
@@ -1620,8 +1620,8 @@ def build_cards():
     # satisfied with no functions of their own.
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
-    add("UNMAKE", 'B', 'mind', 'both', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("BARRIER", 'B', 'mind', 'both', 4, effect=_barrier_effect, defense=_barrier_defense)
+    add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
+    add("BARRIER", 'B', 'mind', 'ranged', 4, effect=_barrier_effect, defense=_barrier_defense)
     add("LAST RESORT", 'B', 'mind', 'both', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
@@ -1654,9 +1654,9 @@ def build_cards():
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
-    add("DEAD RECKONING", 'G', 'soul', 'both', 6,
+    add("DEAD RECKONING", 'G', 'soul', 'ranged', 6,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
-    add("RETALIATE", 'R', 'body', 'both', 6,
+    add("RETALIATE", 'R', 'body', 'melee', 6,
         effect=_retaliate_effect, defense=_retaliate_defense)
     add("WARSONG", 'G', 'soul', 'both', 6,
         effect=_warsong_effect, defense=_warsong_defense)
