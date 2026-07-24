@@ -1786,6 +1786,20 @@ WYN_DECK = [
     "CHAIN", "SEED", "ACCEPTANCE", "COMMUNION",
 ]
 TALLIS_STATS = dict(mind=3, body=3, soul=3)
+
+# WARPER — a dedicated position-manipulation test deck, built to Drew's own
+# range-distribution heuristic (2026-07-23): 4 Ranged / 3 Both / 2 Melee
+# instead of the Both-heavy default most of the roster above quietly fell
+# into. 6 of 9 cards directly force a reposition (self or foe): CALCULATE,
+# PUSH, PULL, REPEL, MIRROR STEP, HEAVE AND HAUL. Built to answer one
+# question — how often does an opponent actually have to burn a turn on the
+# Move action against real, sustained position pressure?
+WARPER_STATS = dict(mind=4, body=3, soul=2)
+WARPER_DECK = [
+    "CALCULATE", "STILLNESS", "TRACE", "FRACTURE",   # 4 Blue, all Ranged
+    "PUSH", "REPEL", "PULL",                          # 3 Red — 2 Melee, 1 Both
+    "MIRROR STEP", "HEAVE AND HAUL",                  # 2 Green, both Both
+]
 TALLIS_DECK = [
     "PAIN IS FUEL", "SEED", "FRACTURE", "STRIKE", "PREDICT",
     "BREAK", "BURN BRIGHT", "PREDICT", "RETALIATE",
@@ -1819,4 +1833,5 @@ ROSTER = {
     "brasca": (BRASCA_STATS, BRASCA_DECK),    # Oracle-drafted test player, Mind2/Body5/Soul2
     "wyn":    (WYN_STATS, WYN_DECK),          # Oracle-drafted test player, Mind2/Body2/Soul5
     "tallis": (TALLIS_STATS, TALLIS_DECK),    # Oracle-drafted test player, Mind3/Body3/Soul3
+    "warper": (WARPER_STATS, WARPER_DECK),    # Position-manipulation test deck, Mind4/Body3/Soul2
 }
