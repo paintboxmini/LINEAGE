@@ -183,8 +183,12 @@ def _climb_defense(engine, me, foe):
 # ============================ STEELE =========================================
 
 def _forget_effect(engine, me, foe):
-    # Discard ignores Ward (not a debuff). Discard a real card, not an Injury —
-    # forcing away their Injury would help them.
+    # Fixed 2026-07-24: forced discard is now a Debuff, Ward-blockable — this
+    # comment used to say the opposite ("ignores Ward, not a debuff"), which
+    # was the rule before Drew's direct call expanding Debuff's scope.
+    # Discard a real card, not an Injury — forcing away their Injury would help them.
+    if warded(foe):
+        return
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -421,6 +425,8 @@ def _unname_effect(engine, me, foe):
 
 
 def _unname_defense(engine, me, foe):
+    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
+        return
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -751,6 +757,8 @@ def _adapt_defense(engine, me, foe):
 # VOID's Effect ("Defender gains Sealed") unmodeled — no item-usage mechanic
 # exists in the sim, same treatment as PREDICT/DISTRACT.
 def _void_defense(engine, me, foe):
+    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
+        return
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -803,6 +811,10 @@ def _patience_defense(engine, me, foe):
 # gap until building the Host's actual 24-card deck required all of them.
 
 def _stillness_effect(engine, me, foe):
+    # Fixed 2026-07-24: forced discard is now a Debuff, Ward-blockable
+    # (rules/card-glossary.md, Debuff's scope expanded per Drew's direct call).
+    if warded(foe):
+        return
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -922,6 +934,8 @@ def _read_defense(engine, me, foe):
     # "Name a color" has no real choice to make without a live opponent to
     # bluff against — picks whichever color the foe has actually shown most,
     # same heuristic ANTICIPATE-style cards already use elsewhere.
+    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
+        return
     color = foe.attack_history.most_common(1)[0][0] if foe.attack_history else None
     if color is None:
         return

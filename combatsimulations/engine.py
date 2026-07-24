@@ -226,11 +226,14 @@ def _object_tick(engine, who):
     included — a standing Object has no "self" left to exclude the way a
     per-turn ally buff (WARSONG) does, since it isn't cast by anyone
     anymore once it exists. Hazard-type objects strike the owner's
-    enemies. CIPHER's "gain Obscure" is real canon text but genuinely
-    unmodeled here, same footing as Reveal Hand — Obscure blocks looking at
-    a hand/deck, and this sim's AI already has full internal visibility
-    regardless of what any card says, so there's nothing for it to actually
-    change."""
+    enemies. CIPHER now grants Ward (2026-07-24) — Drew's call retiring
+    Obscure as a card keyword entirely ("the persistent obscure deserves to
+    be a creature passive not a card keyword"); Ward is a real, testable
+    mechanic where Obscure never was (this sim's AI already has full
+    internal hand/deck visibility regardless of what any card says, so
+    Obscure had nothing to actually change) and, with forced discard and
+    hand reveal now Debuffs too, protects almost the same thing Obscure
+    used to."""
     for obj in engine.objects:
         if who.position != obj['position']:
             continue
@@ -244,6 +247,8 @@ def _object_tick(engine, who):
             who.thorns += 1
         elif kind == 'withering' and who in engine.enemies(owner):
             who.weak += 1
+        elif kind == 'cipher' and (who is owner or who in engine.allies(owner)):
+            who.ward = True
         elif kind == 'miring' and who in engine.enemies(owner):
             engine.initiative_shift(who, -1)
 
