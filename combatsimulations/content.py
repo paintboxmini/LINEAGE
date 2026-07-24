@@ -718,11 +718,10 @@ def _warsong_effect(engine, me, foe):
     # "All allies" excludes the caster, matching URGENCY's own established
     # convention for the same phrase — inert in a Duel (no allies exist
     # there), same accepted shape as Resonate/Support/every other team-play
-    # Green card.
-    prior = engine._prior_turn_hit
-    if prior['hit'] and prior['actor'] in engine.allies(me):
-        for a in engine.allies(me):
-            a.deadly += 1
+    # Green card. Simplified 2026-07-24: was gated on "an ally attacked
+    # successfully last turn," per Drew's direct text now unconditional.
+    for a in engine.allies(me):
+        a.deadly += 1
 def _warsong_defense(engine, me, foe):
     a = _best_attacker(engine.allies(me)) or me
     engine.initiative_shift(a, 2)
@@ -943,24 +942,40 @@ def _read_defense(engine, me, foe):
     if matches:
         foe.discard.append(foe.hand.pop(engine.rng.choice(matches)))
 
+def _take_any_status(who):
+    """Find and remove one status card (Injury or Exhaust) from hand or
+    discard — whichever this combatant is holding. Returns the name found
+    ('INJURY'/'EXHAUST') or None. Broadened 2026-07-24 (was Injury-in-hand
+    only) per Drew's direct text: "transfer 1 status card from your hand or
+    discard.\""""
+    for zone in (who.hand, who.discard):
+        for i, c in enumerate(zone):
+            if c.is_status:
+                name = c.name
+                zone.pop(i)
+                return name
+    return None
+
+def _give_status(engine, target, name):
+    if name == 'INJURY':
+        engine.insert_injury(target)
+    elif name == 'EXHAUST':
+        engine.insert_exhaust(target)
+
 def _carried_injury_effect(engine, me, foe):
     # Ally-sourced — a genuine no-op in 1v1 (You Are Not Your Own Ally), same
     # footing as every other "from any ally" effect in this file. Correct in
-    # team play: pulls from whichever ally is actually carrying one.
-    source = next((a for a in engine.allies(me) if any(c.is_status and c.name == 'INJURY' for c in a.hand)), None)
+    # team play: pulls from whichever ally is actually carrying a status card.
+    source = next((a for a in engine.allies(me) if any(c.is_status for c in a.hand + a.discard)), None)
     if source is None:
         return
-    idx = next(i for i, c in enumerate(source.hand) if c.is_status and c.name == 'INJURY')
-    injury = source.hand.pop(idx)
-    engine.insert_injury(foe)
-    # the source's own copy is spent, not duplicated — insert_injury gives
-    # the defender a fresh one from the shared injury_card, so discard this one
-    _ = injury
+    name = _take_any_status(source)
+    if name:
+        _give_status(engine, foe, name)
 def _carried_injury_defense(engine, me, foe):
-    if any(c.is_status and c.name == 'INJURY' for c in me.hand):
-        idx = next(i for i, c in enumerate(me.hand) if c.is_status and c.name == 'INJURY')
-        me.hand.pop(idx)
-        engine.insert_injury(foe)   # foe = attacker here
+    name = _take_any_status(me)
+    if name:
+        _give_status(engine, foe, name)   # foe = attacker here
 
 def _endure_effect(engine, me, foe):
     me.resist += 1
@@ -986,8 +1001,10 @@ _flow_defense = _flow_effect
 def _shade_away_effect(engine, me, foe):
     me.evade += 1
 def _shade_away_defense(engine, me, foe):
-    foe._forced_target = me   # taunt, same pattern as MOCKERY — "rushdown if they
-                               # cannot reach you" unmodeled, matches Mockery's own gap
+    # New Defensive Bonus 2026-07-24 (was the MOCKERY-style forced-target
+    # taunt, which had an unmodeled "rushdown if they cannot reach you"
+    # clause anyway) — simple Gain Evade instead, matching the Effect side.
+    me.evade += 1
 
 # STARING CONTEST (Red) — genuinely built at last: "move to immediately
 # follow a chosen token" is a direct requeue, not a numeric shift, so it
@@ -1462,13 +1479,13 @@ def _rhythm_break_defense(engine, me, foe):
 def _iron_grip_effect(engine, me, foe):
     foe.rooted = True
 def _iron_grip_defense(engine, me, foe):
-    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+    me.ongoing.append({'kind': 'anchor_heal', 'owner': me, 'anchor': me.position, 'amount': 2})
 
 # PATIENCE OF STONE (Delve Roller / Stonecoil, identical in both files —
-# proven twice already) — unchanged, Defensive Bonus stays an unconditional
-# Deadly grant per Drew ("maybe that's okay though").
+# proven twice already) — Defensive Bonus stays an unconditional Deadly
+# grant per Drew ("maybe that's okay though"). Heal bumped 2 -> 5, 2026-07-24.
 def _patience_of_stone_effect(engine, me, foe):
-    me.ongoing.append({'kind': 'anchor_heal2', 'owner': me, 'anchor': me.position})
+    me.ongoing.append({'kind': 'anchor_heal', 'owner': me, 'anchor': me.position, 'amount': 5})
 def _patience_of_stone_defense(engine, me, foe):
     me.deadly += 1
 
@@ -1544,9 +1561,12 @@ def _push_defense(engine, me, foe):
         foe.position = 'backline'
 
 # ROLLOUT (Delve Roller) — the Pokemon reference, made real: returns
-# straight to hand after use (`returns_to_hand=True` on the Card itself),
-# regardless of outcome, instead of ever sitting in discard. Needs its own
-# damage function since the +4 bonus is conditional; reuses the same
+# straight to hand after use (`returns_to_hand=True` on the Card itself)
+# instead of ever sitting in discard. Fixed 2026-07-24: text used to say
+# "regardless of outcome" — cut, since a reveal that lost the RPS exchange
+# shouldn't get to keep the card; `_correct_return_on_loss` (engine.py)
+# moves it to discard instead once the outcome is actually known. Needs its
+# own damage function since the +4 bonus is conditional; reuses the same
 # `_repositioned_since_last_turn` tracker as RHYTHM BREAK, just checking
 # yourself instead of the target.
 def _rollout_damage(engine, me, foe):
@@ -1567,12 +1587,14 @@ def _rollout_defense(engine, me, foe):
 def _seismic_redirect_effect(engine, me, foe):
     _rushdown(me, foe)
 def _seismic_redirect_defense(engine, me, foe):
-    # Fixed 2026-07-24: "Counter Attack d6" is the glossary's stated-die form
-    # — flat d6, no stat added (rules/card-glossary.md: "If a die is stated
-    # instead, roll that die and deal the result"). Was dealing stat+d6, the
-    # stronger unqualified Counter Attack. The only card in cards/ using this
-    # exact phrasing, so this is the glossary clause's one real test case.
-    engine.deal(foe, roll(6, engine.rng), unpreventable=True)
+    # Corrected 2026-07-24, twice: card text is bare "Counter Attack" — no
+    # die stated — which per the glossary's default form means "deal this
+    # card's own Attack damage back" (Body + d6, this card's printed
+    # attack), not the weaker flat-die form. An earlier pass misread the
+    # card as having stated a die ("d6") when the "d6" was never meant to be
+    # part of Counter Attack's own phrasing — it's just this card's own
+    # Attack line, restated. Text corrected to drop the "d6" entirely.
+    engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
 
 # GORE (Minotaur) — base die bumped along with everything else.
 def _gore_damage(engine, me, foe):
@@ -1593,15 +1615,6 @@ def _youre_next_effect(engine, me, foe):
     engine.initiative_shift(me, 2)
 def _youre_next_defense(engine, me, foe):
     engine.deal(foe, 3, unpreventable=True)
-
-# WILD CARD (Gambler archetype, core Green) — no damage/effect/defense of its
-# own registered on purpose: the swap in engine.py's _reveal_top_of_deck_swap
-# (called from both engines' attack(), right after an outcome is reached)
-# always substitutes the top card of the attacker's own deck before any of
-# these would fire. This card's own functions only matter in the genuinely
-# rare case the deck AND discard are both empty (nothing left to reveal) —
-# then it resolves as a plain Soul + d4 hit with no Effect, a harmless
-# do-nothing rather than a crash.
 
 # TABLE STAKES (Gambler archetype, core Red) — discard 1 random card from
 # your own hand (any card, status cards included — discarding an Injury this
@@ -1930,7 +1943,6 @@ def build_cards():
         effect=_youre_next_effect, defense=_youre_next_defense)
 
     # Gambler archetype (core) — cards/green-soul.md, cards/red-body.md
-    add("WILD CARD", 'G', 'soul', 'both', 4)
     add("TABLE STAKES", 'R', 'body', 'both', 6,
         effect=_table_stakes_effect, defense=_table_stakes_defense)
     add("DOUBLE DOWN", 'R', 'body', 'melee', 6,

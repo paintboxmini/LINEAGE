@@ -190,7 +190,7 @@ def _ongoing_support_tick(engine, who):
     for o in who.ongoing:
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
-                engine.heal(a, 1, source=who)
+                engine.heal(a, 2, source=who)   # bumped 1 -> 2, 2026-07-24
         elif o['kind'] == 'ledger' and who.position == o.get('anchor', who.position):
             engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
         elif o['kind'] == 'dig_in' and who.position == o.get('anchor', who.position):
@@ -213,8 +213,13 @@ def _ongoing_support_tick(engine, who):
         elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
             who.resist += 2
             spent.append(o)
-        elif o['kind'] == 'anchor_heal2' and who.position == o.get('anchor', who.position):
-            engine.heal(who, 2, source=who)   # IRON GRIP / PATIENCE OF STONE
+        elif o['kind'] == 'anchor_heal' and who.position == o.get('anchor', who.position):
+            # IRON GRIP (2) / PATIENCE OF STONE (5, bumped 2026-07-24) — used
+            # to share a single hardcoded 'anchor_heal2' kind, which meant
+            # bumping one card's heal silently bumped the other's too. Now
+            # each card stores its own amount instead of both trusting the
+            # same magic number.
+            engine.heal(who, o.get('amount', 2), source=who)
     if spent:
         who.ongoing = [o for o in who.ongoing if not any(o is s for s in spent)]
 
@@ -419,6 +424,19 @@ def _discard_or_return(who, card):
     if card.returns_to_hand:
         who.hand.append(card)
     else:
+        who.discard.append(card)
+
+
+def _correct_return_on_loss(who, card):
+    """ROLLOUT: fixed 2026-07-24 — its card text used to claim "regardless of
+    outcome," but a card whose own reveal lost the RPS exchange shouldn't get
+    to keep it. `_discard_or_return` above always fires before the outcome is
+    even known (the reveal itself happens at step 1, same as every card), so
+    a card that DID lose gets moved from hand back to discard here, right
+    after the outcome is actually resolved — a correction, not a redesign of
+    where the discard-or-return decision structurally happens."""
+    if card.returns_to_hand and card in who.hand:
+        who.hand.remove(card)
         who.discard.append(card)
 
 
@@ -1083,8 +1101,10 @@ class Duel:
         outcome = self.rps(card, def_card, attacker, defender)
         card = _reveal_top_of_deck_swap(self, attacker, card)
         if outcome == 'attacker':
+            _correct_return_on_loss(defender, physical_def_card)   # ROLLOUT: defender's reveal lost
             self._resolve_attacker_win(attacker, defender, card, contested=True)
         elif outcome == 'defender':
+            _correct_return_on_loss(attacker, physical_card)   # ROLLOUT: attacker's reveal lost
             self._say(f"  -> {defender.name} wins the reveal")
             # A clean win means no damage was ever computed (the attacker's
             # card never resolves). Some Defensive Bonuses need that number
