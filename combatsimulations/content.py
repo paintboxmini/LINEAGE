@@ -16,10 +16,10 @@ def warded(target):
         target.ward = False
         RULING("ward-blocks-debuff",
                "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
-               "stat reductions, discard, Injury/Exhaust seeding, Positive Status "
-               "Effect removal. Never RPS/Initiative/Position pillar manipulation "
-               "(rules/card-glossary.md Debuff) — those callers don't route through "
-               "warded() at all.")
+               "stat reductions, discard, Injury/Exhaust seeding, disabling a "
+               "Defensive Bonus, Positive Status Effect removal. Never "
+               "RPS/Initiative/Position pillar manipulation (rules/card-glossary.md "
+               "Debuff) — those callers don't route through warded() at all.")
         return True
     return False
 
@@ -489,7 +489,9 @@ def _partition_defense(engine, me, foe):
 
 
 def _unname_effect(engine, me, foe):
-    foe._no_defensive_bonus = True   # until foe's own next turn (take_turn clears it)
+    # Ward-blockable (card-glossary.md, Debuff) — Drew's call 2026-07-24, for
+    # simplicity: a Debuff, full stop, no carved-out exception.
+    debuff(foe, lambda: setattr(foe, '_no_defensive_bonus', True))   # until foe's own next turn (take_turn clears it)
 
 
 def _unname_defense(engine, me, foe):
