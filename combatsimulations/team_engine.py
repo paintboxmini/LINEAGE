@@ -255,6 +255,9 @@ class Battle:
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
+        if defender._communion_active:   # COMMUNION: party scries 1, whatever the outcome
+            for a in [defender] + self.allies(defender):
+                self.scry(a, a, 1)
 
         # Blind resolves before Evade (rules/card-glossary.md, Blind) — see
         # engine.py's Duel.attack() for the full reasoning and the noted
@@ -459,6 +462,7 @@ class Battle:
         who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
         who._grounded = False            # GROUNDING STANCE: same self-clearing shape
+        who._communion_active = False    # COMMUNION: same self-clearing shape
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False

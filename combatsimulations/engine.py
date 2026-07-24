@@ -587,6 +587,7 @@ class Combatant:
         self._partition_shield_target = None  # PARTITION (caster side): who I shielded, to clear on my next turn
         self._bonus_action = False       # TRAMPLE: gain another action this turn (not a wheel bonus turn)
         self._weathered = False          # WEATHERED: heal 2 each time attacked, until my next turn
+        self._communion_active = False   # COMMUNION: party scries 1 if attacked, until my next turn
 
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
@@ -951,6 +952,9 @@ class Duel:
 
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
+        if defender._communion_active:   # COMMUNION: party scries 1, whatever the outcome
+            for a in [defender] + self.allies(defender):
+                self.scry(a, a, 1)
 
         # Blind resolves before Evade (rules/card-glossary.md, Blind) — it's
         # the ATTACKER's own stack, checked on their own attack, before the
@@ -1244,6 +1248,7 @@ class Duel:
         who._shifted_positive = False    # RHYTHM BREAK: same self-clearing shape
         who._used_wait = False
         who._grounded = False            # GROUNDING STANCE: same self-clearing shape
+        who._communion_active = False    # COMMUNION: same self-clearing shape
         shielded = who._partition_shield_target   # PARTITION: caster clears the shield they granted
         if shielded is not None:
             shielded._partition_shield = False

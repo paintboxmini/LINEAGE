@@ -76,6 +76,15 @@ def _fracture_effect(engine, me, foe):
     for e in side:
         engine.deal(e, 3)
 
+def _fracture_defense(engine, me, foe):
+    # Fixed 2026-07-24: no defense= was registered at all — this Defensive
+    # Bonus never fired once, regardless of discard-pile state.
+    top3 = me.discard[-3:]
+    if len(top3) != 3 or len({c.color for c in top3}) != 3:
+        return
+    if foe.discard:   # foe = attacker here; their just-played card is on top
+        foe.exile.append(foe.discard.pop())
+
 
 def _trace_dmg(engine, me, foe):
     # Base roll still respects a Deadly/Weak stack the caster is already
@@ -147,10 +156,14 @@ def _deflect_defense(engine, me, foe):
 
 def _realignment_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
-# Defensive Bonus ("All allies gain Quick") left unmodeled — Quick itself has
-# never been implemented anywhere in the sim (only one card, MIRROR STEP, has
-# ever granted it, and its own Defensive Bonus is unmodeled for the same
-# reason). Needs the mechanic built once, not per-card.
+def _realignment_defense(engine, me, foe):
+    # Fixed 2026-07-24: this was marked unmodeled citing "Quick has never
+    # been implemented anywhere in the sim" — stale by the time OVERCOMMIT
+    # shipped Quick for real (`_quick`, checked in both engines' take_turn).
+    # "All allies" excludes the caster, matching WARSONG/URGENCY's own
+    # established convention for the same phrase.
+    for a in engine.allies(me):
+        a._quick = True
 
 
 def _climb_effect(engine, me, foe):
@@ -223,8 +236,12 @@ def _gamblers_ruin_defense(engine, me, foe):
 
 def _repel_effect(engine, me, foe):
     # Position-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
-    if foe.position == 'frontline' and not foe._grounded:   # GROUNDING STANCE
-        foe.position = 'backline'
+    # Fixed 2026-07-24: was single-target (just `foe`) — text says "all
+    # enemies," invisible in a 1v1 (only one enemy exists) but a real gap in
+    # team play against SMOKE SCREEN's own correct "all enemies" precedent.
+    for e in engine.enemies(me):
+        if e.position == 'frontline' and not e._grounded:   # GROUNDING STANCE
+            e.position = 'backline'
 
 
 def _pain_is_fuel_effect(engine, me, foe):
@@ -289,8 +306,20 @@ def _anticipate_defense(engine, me, foe):
 
 
 def _renewal_effect(engine, me, foe):
-    for a in engine.allies(me):    # all allies heal 2 (ally-only: no self)
-        engine.heal(a, 2, source=me)
+    # Fixed 2026-07-24: was unconditional heal, no discard-then-draw branch
+    # at all. Real per-ally choice now: cycle a held status card (Injury/
+    # Exhaust) if there's one worth clearing, otherwise take the flat heal —
+    # a simple, real heuristic for "which is better right now" rather than
+    # always defaulting to the same branch.
+    for a in engine.allies(me):    # ally-only: no self
+        statuses = [i for i, c in enumerate(a.hand) if c.is_status]
+        if statuses:
+            a.discard.append(a.hand.pop(statuses[0]))
+            c = a.draw_one(engine.rng)
+            if c:
+                a.hand.append(c)
+        else:
+            engine.heal(a, 2, source=me)
 
 
 def _renewal_defense(engine, me, foe):
@@ -480,7 +509,12 @@ def _shared_burden_effect(engine, me, foe):
 def _shared_burden_defense(engine, me, foe):
     a = _most_hurt(engine.allies(me))
     if a:
-        x = min(4, me.hp - 1)
+        # Fixed 2026-07-24: "choose an amount" had no policy hook to make a
+        # real choice with, so it silently capped at a flat, undocumented 4.
+        # Give as much as the ally is actually missing, capped by what I can
+        # afford to lose without collapsing myself — a real amount tied to
+        # the ally's actual need, not an arbitrary number.
+        x = min(a.max_hp - a.hp, me.hp - 1)
         if x > 0:
             engine.heal(a, x, source=me)
             engine.deal(me, x, unpreventable=True)   # transfer HP to the ally
@@ -544,8 +578,13 @@ def _interrupt_defense(engine, me, foe):
     engine.initiative_shift(foe, -2)       # -2 to the attacker (foe), not to yourself
 
 def _sharpen_effect(engine, me, foe):
-    a = _best_attacker(engine.allies(me)) or me   # target ally, self if no one else to pick
-    a.deadly += 1
+    # Ally-only (You Are Not Your Own Ally) — correctly a no-op in 1v1, same
+    # convention as SUPPORT/ROOTED OATH's identical "target ally" pattern.
+    # Fixed 2026-07-24: used to fall back to buffing the caster when no ally
+    # existed, which quietly buffed every solo duel instead of doing nothing.
+    a = _best_attacker(engine.allies(me))
+    if a:
+        a.deadly += 1
 def _sharpen_defense(engine, me, foe):
     me.deadly += 1
 
@@ -606,6 +645,16 @@ def _refract_defense(engine, me, foe):
 
 # --- Green: ongoing support, tempo, position ---
 def _synchrony_effect(engine, me, foe):
+    # Flagged, not fully fixed, 2026-07-24: text is "allies NEXT TO YOU IN
+    # THE INITIATIVE ORDER heal 1 HP AT THE START OF THEIR TURNS" — the same
+    # "wheel's own path-walk" gap SLIPSTREAM's own effect already names as
+    # unmodeled (no hook exists for initiative-adjacency). The tick below
+    # (engine.py's _ongoing_support_tick) instead heals ALL allies, at the
+    # start of the CASTER's turn — a real, working simplification, just not
+    # the card's actual scope. Left as-is rather than torn out to a no-op
+    # (SLIPSTREAM's route): a broader, imprecise heal at least does
+    # something, and building genuine adjacency tracking is new engineering,
+    # not a bug fix.
     me.ongoing.append({'kind': 'synchrony', 'owner': me})
 def _synchrony_defense(engine, me, foe):
     me.resist += 1
@@ -680,8 +729,12 @@ def _rebuttal_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
 def _communion_effect(engine, me, foe):
-    for a in _team(engine, me):
-        engine.scry(a, a, 1)               # party scry
+    # Fixed 2026-07-24: was scrying immediately and unconditionally, no
+    # deferred trigger at all. "If you are attacked before your next turn"
+    # is the same shape as WEATHERED's own "each time you are attacked" —
+    # a simple flag checked in attack() itself (engine.py, right next to
+    # WEATHERED's check), not an unconditional same-turn effect.
+    me._communion_active = True
 def _communion_defense(engine, me, foe):
     for a in _team(engine, me):
         a.deadly += 1                      # you and allies gain Deadly
@@ -1233,11 +1286,15 @@ def _follow_up_damage(engine, me, foe):
 # color, not automatically, so the reveal itself can still succeed. With no
 # identity to mirror, there's no stat bonus either — just the bare d4.
 def _afterimage_damage(engine, me, foe):
+    # Bonus catch, same class as ROLLOUT/GORE above, found by re-grepping
+    # every `_*_damage` function rather than trusting the earlier `_*_dmg`-
+    # only sweep. Not one of the 12 coreset findings (this is a Mirror
+    # signature card) — fixed anyway since it's the identical one-line gap.
     color = engine._prior_turn_hit.get('color')
     if color is None:
-        return roll(6, engine.rng)
+        return _rolled_die(6, engine.rng, me)
     stat = COLOR_TO_STAT[color]
-    return me.eff(stat) + roll(6, engine.rng)
+    return me.eff(stat) + _rolled_die(6, engine.rng, me)
 
 def _afterimage_effect(engine, me, foe):
     foe.blind += 1
@@ -1373,9 +1430,16 @@ def _heave_and_haul_defense(engine, me, foe):
 # combatant's own next turn (same shape as `_anticipating`/`_weathered`) —
 # a materially simpler, self-contained approximation of the same intent,
 # not a literal cross-combatant timeline comparison.
-def _rhythm_break_effect(engine, me, foe):
+def _rhythm_break_dmg(engine, me, foe):
+    # Fixed 2026-07-24: text says "this attack gains Deadly" (immediate) but
+    # the old effect= version did `me.deadly += 1`, deferring it to a future
+    # roll — disagreed with its own card text. Made immediate instead of
+    # rewriting the text, for consistency with TRACE/UNDERSTANDING, the
+    # other two cards using this exact phrasing (both already same-attack).
+    base = me.eff('body') + _rolled_die(8, engine.rng, me)
     if foe._repositioned_since_last_turn:
-        me.deadly += 1
+        base += roll(6, engine.rng)
+    return base
 def _rhythm_break_defense(engine, me, foe):
     if foe._shifted_positive or foe._used_wait:
         me.resist += 1
@@ -1472,7 +1536,10 @@ def _push_defense(engine, me, foe):
 # `_repositioned_since_last_turn` tracker as RHYTHM BREAK, just checking
 # yourself instead of the target.
 def _rollout_damage(engine, me, foe):
-    base = me.eff('body') + roll(4, engine.rng)
+    # Fixed 2026-07-24: named `_rollout_damage`, not `_rollout_dmg` — missed
+    # in the first Deadly/Weak-stack sweep because the search only matched
+    # the `_*_dmg` naming pattern.
+    base = me.eff('body') + roll(4, engine.rng) + _deadly_weak_bonus(engine.rng, me)
     if not me._repositioned_since_last_turn:
         base += 4
     return base
@@ -1486,11 +1553,17 @@ def _rollout_defense(engine, me, foe):
 def _seismic_redirect_effect(engine, me, foe):
     _rushdown(me, foe)
 def _seismic_redirect_defense(engine, me, foe):
-    engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
+    # Fixed 2026-07-24: "Counter Attack d6" is the glossary's stated-die form
+    # — flat d6, no stat added (rules/card-glossary.md: "If a die is stated
+    # instead, roll that die and deal the result"). Was dealing stat+d6, the
+    # stronger unqualified Counter Attack. The only card in cards/ using this
+    # exact phrasing, so this is the glossary clause's one real test case.
+    engine.deal(foe, roll(6, engine.rng), unpreventable=True)
 
 # GORE (Minotaur) — base die bumped along with everything else.
 def _gore_damage(engine, me, foe):
-    base = me.eff('body') + roll(8, engine.rng)
+    # Fixed 2026-07-24: same naming-pattern miss as ROLLOUT above.
+    base = me.eff('body') + roll(8, engine.rng) + _deadly_weak_bonus(engine.rng, me)
     if foe.position == 'frontline':
         base += roll(6, engine.rng)
     return base
@@ -1602,9 +1675,10 @@ def build_cards():
     add("AXIOM", 'B', 'mind', 'ranged', 4, effect=_axiom_effect, defense=_axiom_defense)
     add("DEFLECT", 'B', 'mind', 'melee', 6,
         effect=_deflect_effect, defense=_deflect_defense)
-    add("REALIGNMENT", 'B', 'mind', 'both', 6, effect=_realignment_effect)  # def DEAD (Quick unmodeled)
+    add("REALIGNMENT", 'B', 'mind', 'both', 6, effect=_realignment_effect, defense=_realignment_defense)
     add("CLIMB", 'B', 'mind', 'ranged', 6, effect=_climb_effect, defense=_climb_defense)
-    add("FRACTURE", 'B', 'mind', 'ranged', 6, damage=_fracture_dmg, effect=_fracture_effect)
+    add("FRACTURE", 'B', 'mind', 'ranged', 6,
+        damage=_fracture_dmg, effect=_fracture_effect, defense=_fracture_defense)
     add("TRACE", 'B', 'mind', 'ranged', 6, damage=_trace_dmg, defense=_trace_defense)
     # Frost — Green
     add("TWIN STRIKE", 'G', 'soul', 'melee', None, damage=_twin_strike_dmg,
@@ -1751,7 +1825,7 @@ def build_cards():
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 6,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
-        effect=_rhythm_break_effect, defense=_rhythm_break_defense)
+        damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 8,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 6,
