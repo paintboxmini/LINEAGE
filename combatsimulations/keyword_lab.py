@@ -31,31 +31,44 @@ import content
 from engine import Card, Combatant, Duel
 from policies import TacticianPolicy
 
-# keyword -> (attr name on Combatant, is a bool flag rather than a stack)
+# keyword -> (attr name on Combatant, is a bool flag rather than a stack,
+# is it a Debuff per card-glossary.md — i.e. does a real card apply it to the
+# FOE, not the caster). Getting this backwards silently tests "how much does
+# self-inflicted Weak hurt you" instead of "how strong is Weak as a debuff" —
+# caught by hand once (2026-07-23): the four lowest-ranked keywords in the
+# first round-robin pass were exactly Blind/Vulnerable/Weak/Staggered, all
+# self-targeted by mistake. Rooted is a Debuff too (card-glossary.md, Debuff)
+# even though granting it to yourself isn't obviously harmful in a vacuum —
+# targeted at foe here for consistency with its actual glossary category and
+# how real cards use it (an enemy applies it to you), not by vibes.
 KEYWORD_GRANTS = {
-    "deadly": ("deadly", False),
-    "weak": ("weak", False),
-    "resist": ("resist", False),
-    "vulnerable": ("vulnerable", False),
-    "evade": ("evade", False),
-    "thorns": ("thorns", False),
-    "blind": ("blind", False),
-    "ward": ("ward", True),
-    "immune": ("immune", True),
-    "rooted": ("rooted", True),
-    "staggered": ("staggered", True),
-    "quick": ("_quick", True),
+    "deadly": ("deadly", False, "self"),
+    "weak": ("weak", False, "foe"),
+    "resist": ("resist", False, "self"),
+    "vulnerable": ("vulnerable", False, "foe"),
+    "evade": ("evade", False, "self"),
+    "thorns": ("thorns", False, "self"),
+    "blind": ("blind", False, "foe"),
+    "ward": ("ward", True, "self"),
+    "immune": ("immune", True, "self"),
+    "rooted": ("rooted", True, "foe"),
+    "staggered": ("staggered", True, "foe"),
+    "quick": ("_quick", True, "self"),
 }
 
 
-def _make_grant_fn(attr, is_bool, amount):
+def _make_grant_fn(attr, is_bool, amount, target):
     if is_bool:
         def fn(engine, me, foe):
-            setattr(me, attr, True)
+            setattr(target(me, foe), attr, True)
     else:
         def fn(engine, me, foe):
-            setattr(me, attr, getattr(me, attr) + amount)
+            t = target(me, foe)
+            setattr(t, attr, getattr(t, attr) + amount)
     return fn
+
+
+_TARGET = {"self": lambda me, foe: me, "foe": lambda me, foe: foe}
 
 
 def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b):
@@ -71,8 +84,8 @@ def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b):
     add("FILLER_G", "G", "soul")
 
     for label, kw, amount in (("A", keyword_a, amount_a), ("B", keyword_b, amount_b)):
-        attr, is_bool = KEYWORD_GRANTS[kw]
-        fn = _make_grant_fn(attr, is_bool, amount)
+        attr, is_bool, target = KEYWORD_GRANTS[kw]
+        fn = _make_grant_fn(attr, is_bool, amount, _TARGET[target])
         add(f"GRANT_{label}", "R", "body", effect=fn, defense=fn)
 
     filler = ["FILLER_R"] * 3 + ["FILLER_B"] * 3 + ["FILLER_G"] * 2   # 8 cards
