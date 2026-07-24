@@ -97,7 +97,7 @@ GREEN — SOUL
 Attack: Soul + d8
 Effect: Apply Initiative Shift -1 to defender
 Defensive Bonus: Apply Initiative Shift -1 to attacker
-Range: Both
+Range: Ranged
 *"Patience places the final stone."*
 
 ---
@@ -107,7 +107,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: If you are attacked before your next turn, your party may scry 1
 Defensive Bonus: You and your allies gain Deadly
-Range: Both
+Range: Ranged
 *"Shared vision illuminates the path forward."*
 
 ---
@@ -207,7 +207,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: The defender must reveal their hand.
 Defensive Bonus: Name a color then choose a card in the attacker's hand. If colors match, discard it.
-Range: Both
+Range: Ranged
 *"You tell the truth with your eyes."*
 
 ---
@@ -227,7 +227,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift -2 to defender
 Defensive Bonus: Target must attack you if able on their next turn
-Range: Both
+Range: Ranged
 *"You say the one thing they cannot ignore."*
 
 ---
@@ -237,7 +237,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Target loses 1 Body this combat.
 Defensive Bonus: Target loses 1 Body this combat.
-Range: Both
+Range: Ranged
 *"The river doesn't fight the stone. It just outlasts it."*
 
 ---
@@ -257,7 +257,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Defender gains Weak.
 Defensive Bonus: Attacker gains Blind.
-Range: Both
+Range: Ranged
 *"You came in loud. You'll leave in the dark."*
 
 ---
@@ -287,7 +287,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
 Defensive Bonus: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
-Range: Both
+Range: Melee
 *"Nothing is wasted. Not even you."*
 
 ---
@@ -297,7 +297,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
 Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
-Range: Both
+Range: Melee
 *"Given time, and nowhere else to be."*
 
 ---

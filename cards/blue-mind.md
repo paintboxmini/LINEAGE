@@ -7,7 +7,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Defender loses their next turn, you can't defend until your next turn
 Defensive Bonus: Apply Initiative Shift -2 to the attacker
-Range: Both
+Range: Ranged
 *"The best move happens before theirs."*
 
 ---
@@ -57,7 +57,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker must attack you on their next turn if able
-Range: Both
+Range: Ranged
 *"Attention divided is power diminished."*
 
 ---
@@ -67,7 +67,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
 Defensive Bonus: Place the top card of your discard pile on top of your deck
-Range: Both
+Range: Ranged
 *"Clarity rewards the prepared mind."*
 
 ---
@@ -127,7 +127,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
 Defensive Bonus: Enemy must target you again on their next turn if possible
-Range: Both
+Range: Ranged
 *"Every echo remembers what the first sound forgot."*
 
 ---
@@ -157,7 +157,7 @@ BLUE — MIND
 Attack: Mind + d8
 Effect: Discard a card. This attack gains Deadly.
 Defensive Bonus: Scry 2. If you bottom both, heal 4 HP
-Range: Both
+Range: Ranged
 *"Clarity is not given, it is reconstructed."*
 
 ---
@@ -167,7 +167,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Target enemy can only attack frontline targets next turn
 Defensive Bonus: Target ally cannot be targeted by an attack until your next turn
-Range: Both
+Range: Ranged
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
 ---
@@ -177,7 +177,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Defender cannot trigger defensive bonuses until their next turn
 Defensive Bonus: Attacker discards 1 card at random
-Range: Both
+Range: Ranged
 *"What cannot be spoken cannot hold its shape."*
 
 ---
@@ -197,7 +197,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Name a color. The defender cannot play that color on their next reveal
 Defensive Bonus: Name a color. The attacker cannot play that color on their next reveal
-Range: Both
+Range: Ranged
 *"The wise divide heaven into knowable directions."*
 
 ---
@@ -218,7 +218,7 @@ Attack: Mind + d6
 Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal
 Defensive Bonus: Gain Ward
-Range: Both
+Range: Ranged
 *"Reality hesitates."*
 
 ---
@@ -228,7 +228,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
 Defensive Bonus: Your maximum hand size increases by 1 until the end of this combat
-Range: Both
+Range: Ranged
 *"The higher you rise, the farther you see."*
 
 ---
@@ -248,7 +248,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender loses 1 Soul permanently this combat.
 Defensive Bonus: Attacker loses 1 Soul permanently this combat.
-Range: Both
+Range: Ranged
 *"Understanding something completely is the first step to unmaking it."*
 
 ---
@@ -268,7 +268,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, then draw 1 card
 Defensive Bonus: Attacker gains Staggered.
-Range: Both
+Range: Ranged
 *"He already knew what you'd reach for."*
 
 ---
@@ -319,7 +319,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 3 Exhaust cards to your hand.
 Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 3 Exhaust cards to your hand.
-Range: Both
+Range: Ranged
 *"Everything they built stops mattering at once."*
 
 ---
@@ -329,7 +329,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Gain Immunity.
 Defensive Bonus: Gain Immunity.
-Range: Both
+Range: Ranged
 *"Not deflected. Not survived. Simply undone."*
 
 ---

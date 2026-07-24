@@ -17,7 +17,7 @@ RED — BODY
 Attack: Body + d6
 Effect: You and the defender move into frontline
 Defensive Bonus: You and the attacker move into frontline
-Range: Both
+Range: Melee
 *"Momentum carries those brave enough to commit."*
 
 ---
@@ -27,7 +27,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Gain Resist.
 Defensive Bonus: Heal 3 HP
-Range: Both
+Range: Melee
 *"What doesn't kill you has to try harder next time."*
 
 ---
@@ -107,7 +107,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Each time you are attacked before your next turn, heal 2 HP
 Defensive Bonus: Prevent next debuff
-Range: Both
+Range: Melee
 *"What doesn't break you, builds you."*
 
 ---
@@ -157,7 +157,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Deal 3 unpreventable damage to any enemy
 Defensive Bonus: Deal 3 unpreventable damage to any enemy
-Range: Both
+Range: Melee
 *"Every blaze begins with a decision."*
 
 ---
@@ -257,7 +257,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Gain Resist.
 Defensive Bonus: Gain Thorns.
-Range: Both
+Range: Melee
 *"Hit me. I dare you."*
 
 ---
@@ -287,7 +287,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Target loses 1 Mind permanently this combat.
 Defensive Bonus: Target loses 1 Mind permanently this combat.
-Range: Both
+Range: Melee
 *"Thought breaks under enough weight."*
 
 ---
@@ -317,7 +317,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
 Defensive Bonus: Move yourself to immediately follow the attacker in the initiative order.
-Range: Both
+Range: Melee
 *"Move first and you've already lost."*
 
 ---
@@ -337,7 +337,7 @@ RED — BODY
 Attack: Body + d6
 Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
-Range: Both
+Range: Melee
 *"Pain is just momentum, redirected."*
 
 ---
@@ -357,7 +357,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
 Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
-Range: Both
+Range: Melee
 *"What's yours was never really yours."*
 
 ---
@@ -377,7 +377,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
-Range: Both
+Range: Melee
 *"Everything, all at once, and the bill comes due."*
 
 ---
@@ -427,7 +427,7 @@ RED — BODY
 Attack: Body + d6
 Effect: Rushdown.
 Defensive Bonus: Counter Attack d6.
-Range: Both
+Range: Melee
 *"The correction comes to you."*
 
 ---
