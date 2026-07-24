@@ -79,7 +79,10 @@ def _fracture_effect(engine, me, foe):
 
 def _trace_dmg(engine, me, foe):
     if _same_as_discard_top(foe):
-        return me.eff('mind') + max(roll(6, engine.rng), roll(6, engine.rng))   # Deadly, this roll only
+        # Deadly, this roll only — flat +d6, matching the current standard
+        # Deadly mechanic (_rolled_die), not the deprecated roll-twice-take-
+        # higher version this card was still running (caught 2026-07-23).
+        return me.eff('mind') + roll(6, engine.rng) + roll(6, engine.rng)
     return me.eff('mind') + roll(6, engine.rng)
 
 
@@ -750,7 +753,8 @@ def _understanding_dmg(engine, me, foe):
     # at the top of attack()), so any index here is a genuinely different card
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
-        return me.eff('mind') + max(roll(8, engine.rng), roll(8, engine.rng))   # Deadly, this roll only
+        # Deadly, this roll only — flat +d6, same fix as TRACE above.
+        return me.eff('mind') + roll(8, engine.rng) + roll(6, engine.rng)
     return me.eff('mind') + roll(8, engine.rng)
 def _understanding_defense(engine, me, foe):
     engine.scry(me, me, 2)   # "heal 4 if you bottom both" unmodeled — needs scry-outcome introspection the engine doesn't expose
