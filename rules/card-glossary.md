@@ -136,7 +136,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### INJURY
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
-**Quick field first aid** — permanently remove (destroy) 1 Injury from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Injury per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
+**Quick field first aid** — permanently remove (destroy) 1 Injury from your hand. In combat this costs your action. Outside combat it requires a short rest. Either way it only clears one Injury per use; a player working through
 Once per short rest, permanently remove (destroy) 1 Injury from your hand or discard pile — never from your deck, so you never have to search or track hidden Injuries. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
 
 ---
