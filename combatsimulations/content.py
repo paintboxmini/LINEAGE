@@ -1758,6 +1758,44 @@ def _double_down_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
 
+# BRIARWATCH JACKALOPE signature cards (`cards/briarwatch-jackalope.md`) —
+# registered for the first time 2026-07-28, for the party-vs-3-Jackalopes
+# test Drew asked for. Teaching-encounter identity (constant repositioning,
+# low HP, quick fights) translated directly rather than left unmodeled, since
+# the whole point of this creature is testing positioning/Rushdown.
+def _bolt_effect(engine, me, foe):
+    me.position = 'backline'
+_bolt_defense = _bolt_effect
+
+def _nip_dmg(engine, me, foe):
+    base = me.eff('body') + _rolled_die(6, engine.rng, me)
+    if me.position == 'backline':
+        base += 2
+    return base
+# Defensive Bonus: None — no defense function registered.
+
+# NAME COLLISION, flagged not silently worked around: Flapjack Octopus also
+# has a card named FREEZE (`cards/flapjack-octopus.md`) with different text.
+# Neither is registered elsewhere, so no conflict today, but only one card
+# named "FREEZE" can ever exist in the sim's name-keyed registry at once —
+# a real canon issue (two unrelated creatures printing the same card name),
+# not just a sim one. Registering Briarwatch's version here since it's the
+# one this task needs; Flapjack's would need a rename or its own resolution
+# whenever it's registered.
+def _jackalope_freeze_effect(engine, me, foe):
+    engine.scry(me, me, 1)
+def _jackalope_freeze_defense(engine, me, foe):
+    me.evade += 1
+
+def _quickstep_effect(engine, me, foe):
+    # "Move to any position" — no real choice logic for a bot to make this
+    # decision with, so a simple deterministic toggle stands in (same
+    # simplification shape as MIRROR STEP's identical toggle), not a real
+    # optimization.
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+_quickstep_defense = _quickstep_effect
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -2025,6 +2063,14 @@ def build_cards():
     add("DOUBLE DOWN", 'R', 'body', 'melee', 6,
         effect=_double_down_effect, defense=_double_down_defense)
 
+    # Briarwatch Jackalope (bestiary) — cards/briarwatch-jackalope.md
+    add("BOLT", 'G', 'soul', 'melee', 6, effect=_bolt_effect, defense=_bolt_defense)
+    add("NIP", 'R', 'body', 'melee', None, damage=_nip_dmg)
+    add("FREEZE", 'B', 'mind', 'both', 4,
+        effect=_jackalope_freeze_effect, defense=_jackalope_freeze_defense)
+    add("QUICKSTEP", 'G', 'soul', 'both', 6,
+        effect=_quickstep_effect, defense=_quickstep_defense)
+
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
     add("EXHAUST", None, None, None, None, is_status=True)
@@ -2164,6 +2210,13 @@ GARNET_DECK = [
     "TWIN STRIKE", "MOCKERY",                   # 2 green
 ]
 
+# Briarwatch Jackalope (`bestiary/briarwatch-jackalope.md`) — Mind1/Body1/
+# Soul3, CTR 5. Deck size = total stats = 5 (1 Blue/1 Red/3 Green). 4
+# signature cards cover Blue1/Red1/Green2; FLOW (core) fills the 3rd Green,
+# matching the creature's own constant-repositioning identity.
+JACKALOPE_STATS = dict(mind=1, body=1, soul=3)
+JACKALOPE_DECK = ["FREEZE", "NIP", "BOLT", "QUICKSTEP", "FLOW"]
+
 GARRET_STATS = dict(mind=5, body=2, soul=2)
 GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
     "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
@@ -2232,4 +2285,5 @@ ROSTER = {
     "sky":     (SKY_STATS, SKY_DECK),          # Drew's own, live 2v2 test, partial reconstruction
     "moss":    (MOSS_STATS, MOSS_DECK),        # Claude's side, same live 2v2 test, fully recorded
     "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
+    "jackalope": (JACKALOPE_STATS, JACKALOPE_DECK),  # Briarwatch Jackalope, CTR 5
 }
