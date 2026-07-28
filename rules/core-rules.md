@@ -109,6 +109,8 @@ Green (Soul) beats  Blue  (Mind)
 
 Short rests can be chained. Long rests require genuine safety.
 
+A rest of either length reshuffles your discard pile into your deck and refreshes your hand to full.
+
 ---
 
 ## Positioning
