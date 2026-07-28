@@ -138,6 +138,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
 In combat, use your action to destroy 1 Injury from your hand.
 Once per short rest, destroy 1 Injury from your hand, discard pile, or deck. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
+On a long rest, all Injuries are destroyed.
 
 ---
 
