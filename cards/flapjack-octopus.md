@@ -89,3 +89,13 @@ Effect: Reposition freely to any position. Immediately Flatten. Gain Evade.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Gone before the ink clears."*
+
+---
+
+**FREEZE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Scry 2.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"The water holds its breath too."*
