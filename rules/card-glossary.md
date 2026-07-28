@@ -136,15 +136,15 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### INJURY
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
-**Quick field first aid** — permanently remove (destroy) 1 Injury from your hand. In combat this costs your action. Outside combat it requires a short rest. Either way it only clears one Injury per use; a player working through
-Once per short rest, permanently remove (destroy) 1 Injury from your hand or discard pile — never from your deck, so you never have to search or track hidden Injuries. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
+In combat, use your action to destroy 1 Injury from your hand.
+Once per short rest, destroy 1 Injury from your hand or discard pile — never from your deck, so you never have to search or track hidden Injuries. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
 Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
-Use your action to permanently remove all Exhaust cards from your hand. That's the only way to clear them.
+Use your action to destroy all Exhaust cards from your hand. That's the only way to clear them.
 
 ---
 
