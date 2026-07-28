@@ -18,8 +18,6 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   Effects.
 - **paradox-tie** — Paradox reverses a win/loss, but a tie has no outcome to
   reverse and is unchanged. On the card.
-- **simultaneous-order** — When effects resolve at once, their controller orders
-  them; different controllers → the active player decides. In `rules/combat.md`.
 - **single-hit-floor** — A single attack cannot push a standing combatant below 0
   (clamp to Collapse). Matches `rules/combat.md` Collapse.
 - **evade-consumes-attack** — A dodged attack still spends the attacker's card and

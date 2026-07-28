@@ -106,11 +106,12 @@ Its main use is **team coordination** — chaining turns into the right sequence
 **Table rule:** when declaring a target, announce the range you're attacking from too — a quick checkpoint that keeps position and legality fresh in everyone's mind before any card gets committed, not after.
 
 1. Attacker plays 1 card, face down — committed, not yet public.
-2. Defender may choose 1 card to defend with, face down — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction. **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected. A defender with no card in hand that meets the requirement has no legal defense against this attack.
+2. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Evade checks the defender's. See `rules/card-glossary.md` (Blind, Evade) for each's exact trigger and odds. Both resolve here, before the defender ever picks a card.
+3. Defender may choose 1 card to defend with, face down — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction. **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected. A defender with no card in hand that meets the requirement has no legal defense against this attack.
 
 **A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
-3. If the defender cannot or chooses not to defend, the attacker wins automatically.
-4. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
+4. If the defender cannot or chooses not to defend, the attacker wins automatically.
+5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
 ```
 Blue (Mind)   beats  Red   (Body)
@@ -130,13 +131,15 @@ A standing bonus or penalty like "your next attack deals +X" is not consumed by 
 
 ## Damage Pipeline
 
+The base roll is **Stat + die, with Deadly/Weak folded in** (`rules/card-glossary.md`) — a Deadly stack adds a d6, a Weak stack subtracts one, and one of each cancels before either applies. That total is what enters the pipeline below.
+
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Resist** (halve, one stack spent per hit) → **damage floor** (Equal Footing) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
-**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist), reassigned (Shared Burden/Protect), or capped (Equal Footing). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
+**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist) or reassigned (Shared Burden/Protect). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
 
 ---
 
@@ -206,6 +209,8 @@ Multiple ongoing effects can be active simultaneously unless a card specifies ot
 When two or more effects would resolve at the same moment — several "start of your turn" triggers, two tokens landing at once — the **controller of those effects chooses the order** they resolve in. If the simultaneous effects have different controllers, the player whose turn it is decides the order.
 
 Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie.
+
+**This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defensive Bonus are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defensive Bonus, always, on every tie. Nobody, including the attacker, chooses that order.
 
 ---
 
