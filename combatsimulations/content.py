@@ -140,10 +140,10 @@ def _fracture_defense(engine, me, foe):
 def _trace_dmg(engine, me, foe):
     # Base roll still respects a Deadly/Weak stack the caster is already
     # holding from an earlier card (was silently dropped before 2026-07-23 —
-    # see _deadly_weak_bonus). The card's own "gain Deadly this attack"
-    # condition, when it fires, is a second, independent +d6 on top of that —
-    # a card-granted bonus for this specific attack, not routed through the
-    # stack system (it isn't a stack the caster is holding for later).
+    # see _deadly_weak_bonus). Card text reworded 2026-07-28 to drop the word
+    # "Deadly" entirely (Drew's call) — this was never the stackable keyword,
+    # just a flat conditional +1d6 on this attack's own roll; still a second,
+    # independent bonus die on top of any held stack, not routed through it.
     base = me.eff('mind') + _rolled_die(6, engine.rng, me)
     if _same_as_discard_top(foe):
         base += roll(6, engine.rng)
@@ -892,9 +892,10 @@ def _focus_defense(engine, me, foe):
 def _understanding_dmg(engine, me, foe):
     # discard the played card's already gone from hand by this point (removed
     # at the top of attack()), so any index here is a genuinely different card
-    # Base roll respects a held Deadly/Weak stack (_rolled_die); the card's
-    # own "this attack gains Deadly" is a second, independent +d6 on top when
-    # the discard actually happens, same shape as TRACE above.
+    # Base roll respects a held Deadly/Weak stack (_rolled_die); card text
+    # reworded 2026-07-28 to drop "Deadly" (Drew's call, same reasoning as
+    # TRACE above) — this is a flat conditional +1d6 on top when the discard
+    # actually happens, independent of any held stack.
     base = me.eff('mind') + _rolled_die(8, engine.rng, me)
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
@@ -1531,11 +1532,12 @@ def _heave_and_haul_defense(engine, me, foe):
 # a materially simpler, self-contained approximation of the same intent,
 # not a literal cross-combatant timeline comparison.
 def _rhythm_break_dmg(engine, me, foe):
-    # Fixed 2026-07-24: text says "this attack gains Deadly" (immediate) but
+    # Fixed 2026-07-24: text said "this attack gains Deadly" (immediate) but
     # the old effect= version did `me.deadly += 1`, deferring it to a future
     # roll — disagreed with its own card text. Made immediate instead of
-    # rewriting the text, for consistency with TRACE/UNDERSTANDING, the
-    # other two cards using this exact phrasing (both already same-attack).
+    # rewriting the text at the time, for consistency with TRACE/UNDERSTANDING.
+    # Card text reworded 2026-07-28 to drop "Deadly" entirely (Drew's call) —
+    # this was always a flat conditional +1d6, never the stackable keyword.
     base = me.eff('body') + _rolled_die(8, engine.rng, me)
     if foe._repositioned_since_last_turn:
         base += roll(6, engine.rng)
