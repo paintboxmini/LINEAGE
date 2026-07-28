@@ -518,7 +518,8 @@ class Card:
 
     def __init__(self, name, color, stat, reach, base_die,
                  damage=None, effect=None, defense=None, special_reveal=None,
-                 is_status=False, ignores=frozenset(), returns_to_hand=False):
+                 is_status=False, ignores=frozenset(), returns_to_hand=False,
+                 wins_ties=False):
         self.name = name
         self.color = color
         self.stat = stat
@@ -542,6 +543,10 @@ class Card:
         # isn't a status granted to anyone — it's a property of the attack
         # itself, same footing as its own color/stat/range.
         self.ignores = frozenset(ignores)
+        # EQUAL FOOTING/ADAPT/CERTAINTY: Special Rule, "wins ties," symmetric
+        # (applies whether this card is played as attack or defense). Checked
+        # generically in rps()/_rps() instead of by card name.
+        self.wins_ties = wins_ties
 
     def damage(self, engine, me, foe):
         if self._damage:
@@ -637,7 +642,6 @@ class Combatant:
         self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
         self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
-        self._damage_floor = None        # orphaned: EQUAL FOOTING's old defense used this, no longer does (see rps()); infrastructure left in place, harmless if unused
         self._rend_guard = False         # Rend def: next hit -> Injury, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
         self._tie = False                # True only while an Effect resolves during
@@ -888,13 +892,6 @@ class Duel:
         elif not unpreventable and target.vulnerable > 0:
             amount = (amount * 3) // 2  # +50%, rounded down
             target.vulnerable -= 1  # one stack per attack
-        if not unpreventable and target._damage_floor is not None:
-            # Equal Footing floors ATTACK damage only — unpreventable damage (bleed,
-            # thorns, status, HP costs) is not an attack and ignores the floor.
-            cap = max(0, target.hp - target._damage_floor)
-            amount = min(amount, cap)
-            # floor is cleared in attack() after the exchange, so it is removed by
-            # the next attack whether or not that attack dealt damage.
         # HP never goes negative, Collapsed or not (Drew's root-level death-rule
         # change) — it clamps to 0 and stays there. Actual death is no longer a
         # function of HP magnitude at all; it's tracked by counting genuine
@@ -1023,7 +1020,6 @@ class Duel:
                 attacker.attack_history[atk_color] += 1  # revealed = public info
                 self._this_turn_hit['color'] = atk_color
                 _stamp_reveal(self, attacker, card)
-                defender._damage_floor = None  # Equal Footing floor spent by any attack
                 return
 
         # Defender chooses a defense BLIND — reveals are simultaneous, so the
@@ -1082,7 +1078,6 @@ class Duel:
             # challenge at all means no loss.
             card = _reveal_top_of_deck_swap(self, attacker, card)
             self._resolve_attacker_win(attacker, defender, card, contested=False)
-            defender._damage_floor = None
             return
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
@@ -1105,7 +1100,6 @@ class Duel:
                 and self._prior_turn_hit['target'] is defender:
             self._say(f"  FRAME-TRAP: {defender.name} was hit last turn — {def_card.name} is negated")
             self._resolve_attacker_win(attacker, defender, card, contested=True)
-            defender._damage_floor = None
             return
 
         outcome = self.rps(card, def_card, attacker, defender)
@@ -1139,7 +1133,6 @@ class Duel:
             if not defender._no_defensive_bonus:   # UNNAME
                 def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
-        defender._damage_floor = None  # Equal Footing floor spent by any attack
 
     def rps(self, atk_card, def_card, attacker, defender):
         base = self._rps_base(_effective_color(self, atk_card), _effective_color(self, def_card))
@@ -1147,19 +1140,17 @@ class Duel:
         if atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox':
             if base != 'tie':
                 base = 'defender' if base == 'attacker' else 'attacker'
-        # "Instead of a tie, you win" — checked by name, not a keyword, since
-        # only these cards do it. EQUAL FOOTING works from either side; ADAPT's
-        # is Effect-only (Drew: "ADAPT effect: win on ties" — its Defensive
-        # Bonus stays Gain Evade), so it only ever counts on the attacker side.
-        # If both sides have a live claim, neither wins out — stays a tie, same
-        # logic as rules/combat.md's Simultaneous Effects (no clear order).
+        # "Wins ties" (EQUAL FOOTING/ADAPT/CERTAINTY): a real Special Rule,
+        # checked via the generic Card.wins_ties flag (card-glossary.md). If
+        # both sides have a live claim, neither wins out — stays a tie, per
+        # each card's own printed cancellation clause and rules/combat.md's
+        # Simultaneous Effects carve-out.
         if base == 'tie':
-            atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
+            atk_wins_tie = atk_card.wins_ties
             # FRAME-TRAP's tie-win is Defensive-Bonus-only per its own card
-            # text (unlike EQUAL FOOTING, which works from either side) —
-            # same asymmetric shape as ADAPT's attacker-only claim, just on
-            # the other side.
-            def_wins_tie = def_card.name in ('EQUAL FOOTING', 'FRAME-TRAP')
+            # text (a different, asymmetric mechanic — not part of the
+            # wins_ties flag family) and stays a name check.
+            def_wins_tie = def_card.wins_ties or def_card.name == 'FRAME-TRAP'
             if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
             elif def_wins_tie and not atk_wins_tie:

@@ -813,10 +813,9 @@ def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
         c.position = 'backline' if c.position == 'frontline' else 'frontline'
 
-def _adapt_defense(engine, me, foe):
-    me.evade += 1
-# ADAPT's Effect ("instead of a tie, you win") is handled in rps() by card
-# name, not here — see engine.py's Duel.rps() / team_engine.py's Battle._rps().
+# ADAPT (Green), EQUAL FOOTING (Red), and CERTAINTY (Blue) below are the
+# "wins ties" Special Rule family — vanilla otherwise, no effect/defense
+# function needed at all. See engine.py's Card.wins_ties / Duel.rps().
 
 # VOID's Effect ("Defender gains Sealed") unmodeled — no item-usage mechanic
 # exists in the sim, same treatment as PREDICT/DISTRACT.
@@ -1810,7 +1809,7 @@ def build_cards():
     # Mire — Red
     add("REND", 'R', 'body', 'melee', 6,
         effect=_rend_effect, defense=_rend_defense)
-    add("EQUAL FOOTING", 'R', 'body', 'both', 4)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
+    add("EQUAL FOOTING", 'R', 'body', 'melee', 8, wins_ties=True)   # Special Rule, vanilla otherwise
     add("PRESS THE INJURY", 'R', 'body', 'melee', 6,
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
     add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
@@ -1980,7 +1979,8 @@ def build_cards():
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 6, effect=_flow_effect, defense=_flow_defense)
-    add("ADAPT", 'G', 'soul', 'both', 8, defense=_adapt_defense)
+    add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
+    add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,
