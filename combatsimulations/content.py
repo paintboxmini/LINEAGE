@@ -1774,14 +1774,18 @@ def _nip_dmg(engine, me, foe):
     return base
 # Defensive Bonus: None — no defense function registered.
 
-# NAME COLLISION, flagged not silently worked around: Flapjack Octopus also
-# has a card named FREEZE (`cards/flapjack-octopus.md`) with different text.
-# Neither is registered elsewhere, so no conflict today, but only one card
-# named "FREEZE" can ever exist in the sim's name-keyed registry at once —
-# a real canon issue (two unrelated creatures printing the same card name),
-# not just a sim one. Registering Briarwatch's version here since it's the
-# one this task needs; Flapjack's would need a rename or its own resolution
-# whenever it's registered.
+# Corrected 2026-07-28: an earlier version of this comment claimed Flapjack
+# Octopus already had its own FREEZE — checked directly, it didn't; that was
+# a real mistake (misattributed during an unrelated keyword scan), not a
+# real collision, and got corrected the same session. Flapjack Octopus DOES
+# now have its own FREEZE (`cards/flapjack-octopus.md`, Scry 2 — Drew's
+# deliberate call, same thematic fit, bumped from Briarwatch's Scry 1), so
+# there IS a real naming collision now, just not the one first reported.
+# `build_cards()`'s registry is name-keyed — only one "FREEZE" can be
+# registered at once. This is Briarwatch's. Flapjack's isn't wired into the
+# sim yet; whenever it is, it'll need a distinct internal registration key
+# (its printed/canon name can stay "FREEZE" either way — only the Python
+# dict key has to differ).
 def _jackalope_freeze_effect(engine, me, foe):
     engine.scry(me, me, 1)
 def _jackalope_freeze_defense(engine, me, foe):
