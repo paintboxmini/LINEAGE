@@ -2107,19 +2107,35 @@ TEMPO_STATS = dict(mind=4, soul=3, body=2)
 # choices were deliberately hidden during that test and never fully recorded —
 # only their stats, color/range counts, and whichever cards happened to get
 # revealed during the one fight are known. The known cards are used as-is;
-# remaining slots are a flagged reconstruction (Drew's call, 2026-07-28) filling
-# in plausible core cards matching the known color split, not the real deck.
+# remaining slots are a flagged reconstruction (Drew's call, 2026-07-28).
+#
+# Range distribution derived the same way color is derived from stats — but
+# deliberately de-correlated (Drew's own point: if every Ranged card were also
+# Blue, range would leak color information during RPS prediction). The known
+# real reveals already fixed some of this before any reconstruction happened:
+# Crimson's 7 known cards already included 5 Melee (one over his own naive
+# 4-Melee derivation), matching his own memory of "only 2 ranged" better than
+# the derivation did. Sky's 3 known reveals were already all-Blue, all-Ranged,
+# which made his own hand-worked "2 Blue in Ranged" table impossible to hit —
+# left as historical fact (Ranged 3, unchanged) rather than diluted with a
+# 4th card for the sake of matching a target that was already unreachable.
 CRIMSON_STATS = dict(body=4, mind=3, soul=2)
+# Melee 5 / Ranged 2 / Both 2. Ranged and Both both color-mixed on purpose
+# (1 Blue + 1 Red; 1 Green + 1 Blue) rather than monochrome.
 CRIMSON_DECK = [
-    "DEFLECT", "PROFILE", "INTERRUPT",              # 3 blue (INTERRUPT: reconstructed)
-    "CHARGE", "REND", "TRAMPLE", "STRIKE",           # 4 red (STRIKE: reconstructed)
+    "DEFLECT", "PROFILE", "SHARPEN",                 # 3 blue (SHARPEN: reconstructed, Both)
+    "CHARGE", "REND", "TRAMPLE", "BURN BRIGHT",      # 4 red (BURN BRIGHT: reconstructed, Ranged)
     "WITNESS", "ROOTED OATH",                        # 2 green
 ]
 SKY_STATS = dict(mind=4, body=3, soul=2)
+# Ranged 3 (all Blue, unchanged from the known reveals) / Melee 3 / Both 3 —
+# an even split once Ranged was left at 3 rather than grown to 4; Melee kept
+# low per Drew's own memory ("only 2 melees"), the leftover slot went to Both
+# instead, which is color-mixed (Blue/Red/Green) same as Melee (Red/Red/Green).
 SKY_DECK = [
-    "CALCULATE", "PROFILE", "AXIOM", "STILLNESS",    # 4 blue (STILLNESS: reconstructed)
-    "GAMBLER'S RUIN", "STRIKE", "ENDURE",             # 3 red (STRIKE, ENDURE: reconstructed)
-    "FLOW", "WITNESS",                                # 2 green (both: reconstructed)
+    "CALCULATE", "PROFILE", "AXIOM", "REALIGNMENT",  # 4 blue (REALIGNMENT: reconstructed, Both)
+    "GAMBLER'S RUIN", "STRIKE", "RECOVER",            # 3 red (STRIKE: reconstructed Melee, RECOVER: reconstructed Both)
+    "PATIENCE", "MIRROR STEP",                        # 2 green (both: reconstructed — Melee, Both)
 ]
 
 GARRET_STATS = dict(mind=5, body=2, soul=2)
