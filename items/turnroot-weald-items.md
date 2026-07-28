@@ -20,9 +20,9 @@ Small, crystalline seeds that resonate with a faint, haunting echo when shaken. 
 *Source: Luminova Clearing*
 *Price: ~30 gold*
 
-Dried and crushed Luminova Leaves (`items/hollow-and-weald-items.md`) — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
+Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of processing — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
 
-**Use:** Single-use. Heal 4 HP to self or one ally.
+**Use:** Single-use. Heal 8 HP to self or one ally (Bonus Action).
 
 ---
 
