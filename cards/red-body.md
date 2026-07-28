@@ -146,7 +146,7 @@ Range: Ranged
 RED — BODY
 Attack: Body + d6
 Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
-Defensive Bonus: Add 1d6 to your next attack
+Defensive Bonus: Gain Deadly
 Range: Melee
 *"Chaos does not promise victory. Only spectacle."*
 
@@ -164,8 +164,8 @@ Range: Melee
 
 **SACRIFICE STRIKE**
 RED — BODY
-Attack: Body + d10
-Effect: Pay 3 HP
+Attack: Body + d10. Pay 3 HP.
+Effect: None.
 Defensive Bonus: Pay 5 HP, Counter Attack
 Range: Melee
 *"Pain shared is power doubled."*
@@ -185,8 +185,8 @@ Range: Melee
 **BLOOD TITHE**
 RED — BODY
 Attack: Body + d6
-Effect: Pay 2 HP, target ally heals 4 HP
-Defensive Bonus: Pay 2 HP, target ally heals 6 HP
+Effect: Pay 2 HP, target ally heals 6 HP
+Defensive Bonus: Pay 2 HP, target ally heals 8 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 

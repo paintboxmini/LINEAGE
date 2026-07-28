@@ -172,8 +172,13 @@ def _axiom_effect(engine, me, foe):
     engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
-def _sacrifice_strike_effect(engine, me, foe):
-    engine.deal(me, 3, unpreventable=True)  # "Pay 3 HP" — a self-cost on win
+def _sacrifice_strike_dmg(engine, me, foe):
+    # Reworded 2026-07-28 (Drew's call): "Pay 3 HP" moved from Effect (which
+    # fires on a win OR a tie) onto the Attack line — damage() only ever runs
+    # on an attacker win, so this narrows the cost to win-only, dropping the
+    # old tie case entirely. Effect is genuinely None now, not just relabeled.
+    engine.deal(me, 3, unpreventable=True)
+    return me.eff('body') + _rolled_die(10, engine.rng, me)
 
 
 def _sacrifice_strike_defense(engine, me, foe):
@@ -258,16 +263,16 @@ def _forget_defense(engine, me, foe):
 
 def _blood_tithe_effect(engine, me, foe):
     engine.deal(me, 2, unpreventable=True)
-    allies = engine.allies(me)     # heal the most-hurt ally 4 (dead in 1v1)
+    allies = engine.allies(me)     # heal the most-hurt ally 6 (dead in 1v1)
     if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 4, source=me)
+        engine.heal(min(allies, key=lambda a: a.hp), 6, source=me)
 
 
 def _blood_tithe_defense(engine, me, foe):
     engine.deal(me, 2, unpreventable=True)   # "Pay 2 HP"
-    allies = engine.allies(me)             # heal the most-hurt ally 6 (dead in 1v1)
+    allies = engine.allies(me)             # heal the most-hurt ally 8 (dead in 1v1)
     if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 6, source=me)
+        engine.heal(min(allies, key=lambda a: a.hp), 8, source=me)
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
@@ -286,7 +291,11 @@ def _gamblers_ruin_dmg(engine, me, foe):
 
 
 def _gamblers_ruin_defense(engine, me, foe):
-    me.next_attack_bonus += roll(6, engine.rng)
+    # Reworded 2026-07-28 (Drew's call) — was a pre-rolled flat bonus banked
+    # in next_attack_bonus, now the real Deadly stack: rolled fresh whenever
+    # the next attack actually happens, consumable/cancelable like any other
+    # held Deadly, and correctly respected by _deadly_weak_bonus everywhere.
+    me.deadly += 1
 
 
 def _repel_effect(engine, me, foe):
@@ -373,13 +382,13 @@ def _renewal_effect(engine, me, foe):
             if c:
                 a.hand.append(c)
         else:
-            engine.heal(a, 2, source=me)
+            engine.heal(a, 4, source=me)
 
 
 def _renewal_defense(engine, me, foe):
     downed = engine.downed_allies(me)
     if downed:
-        engine.heal(downed[0], 6, source=me)   # revival heal — source= places them right after me in the wheel
+        engine.heal(downed[0], 8, source=me)   # revival heal — source= places them right after me in the wheel
 
 
 def _twin_strike_defense(engine, me, foe):
@@ -1760,7 +1769,7 @@ def build_cards():
 
     # Frost — Red
     add("SACRIFICE STRIKE", 'R', 'body', 'melee', 10,
-        effect=_sacrifice_strike_effect, defense=_sacrifice_strike_defense)
+        damage=_sacrifice_strike_dmg, defense=_sacrifice_strike_defense)
     add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 4,
         effect=_blood_in_the_gap_effect, defense=_blood_in_the_gap_defense)
     add("BURN BRIGHT", 'R', 'body', 'ranged', 8, damage=_burn_bright_dmg, defense=_burn_bright_defense)
