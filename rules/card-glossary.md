@@ -2,32 +2,36 @@
 
 Canonical definitions for all keywords and status cards used in Tales Untold. When a card uses a keyword, this is the ruling. Card text that contradicts this file should be treated as an error.
 
+This file is meant to be printed and handed to players. State the rule, plainly, and stop — no *why* it's shaped that way, no *how* the simulator happens to implement it. Most of the time that reasoning doesn't need a home at all; if it's a live design question worth remembering, it goes in `memory.md`, not here.
+
+**Special Rule** — some cards carry a Special Rule line instead of, or alongside, an Effect and Defensive Bonus. It overrides normal resolution exactly as printed on that card.
+
 ---
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-23, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted for real across all 241 card blocks in `cards/*.md` (up from 216 at the 2026-07-18 snapshot), not estimated forward from the old numbers.*
+*The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-28, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted for real across all 240 card blocks in `cards/*.md` (down from 241 at the 2026-07-23 snapshot), not estimated forward from the old numbers.*
 
 **(5) Counter Attack**
 Deal this card's Attack damage back to the attacker.
 
 **(1) Debuff**
-Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, forced discard, forced hand reveal, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, forced discard, forced hand reveal, disabling your Defensive Bonus, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
 
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
 
-**(2) Obscure**
+**(0) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
 
-**(3) Reveal HAND**
-At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue")
+**(3) Reveal Hand**
+At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue").
 
 **(1) Critical**
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
 
-**(19) Deadly**
-The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out 
+**(14) Deadly**
+The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
 **(10) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
@@ -43,13 +47,13 @@ You gain a specific benefit that persists as long as you do not change positions
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
-**(6) Exile**
+**(7) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
 **(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
-**(4) Protect**
+**(3) Protect**
 The next time an ally would take attack damage, you take it instead.
 
 **(0) Locked**
@@ -82,10 +86,10 @@ Resist stacks. Each stack halves one successful attack; only one stack applies t
 **(0) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff (removable by Ward, like any other negative auxiliary effect). Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
-**(14) Rooted**
+**(13) Rooted**
 Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
 
-**(5) Rushdown**
+**(4) Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **(3) Quick**
@@ -103,10 +107,10 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **(4) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
-**(15) Ward**
+**(9) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
-**(2) Immunity**
+**(1) Immunity**
 The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.
 
 ---
@@ -132,15 +136,16 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 ### INJURY
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
-**Quick field first aid** — permanently remove (destroy) 1 Injury from your hand. In combat this costs your action. Outside combat it doesn't require a full action or a short rest at all — tearing a strip of cloth and wrapping it is an ordinary beat, not a resource-gated one, and the GM shouldn't block it. Either way it only clears one Injury per use; a player working through several in a row outside combat should be pointed toward a short rest instead of chaining the quick version for free.
-Once per short rest, permanently remove (destroy) 1 Injury from your hand or discard pile — never from your deck, so you never have to search or track hidden Injuries. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
+In combat, use your action to destroy 1 Injury from your hand.
+Once per short rest, destroy 1 Injury from your hand, discard pile, or deck. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
+On a long rest, all Injuries are destroyed.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
 Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
-Use your action to permanently remove all Exhaust cards from your hand. That's the only way to clear them.
+Use your action to destroy all Exhaust cards from your hand. A short or long rest also destroys all Exhaust cards you're holding.
 
 ---
 

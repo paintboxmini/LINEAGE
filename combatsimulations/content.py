@@ -16,12 +16,63 @@ def warded(target):
         target.ward = False
         RULING("ward-blocks-debuff",
                "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
-               "stat reductions, discard, Injury/Exhaust seeding, Positive Status "
-               "Effect removal. Never RPS/Initiative/Position pillar manipulation "
-               "(rules/card-glossary.md Debuff) — those callers don't route through "
-               "warded() at all.")
+               "stat reductions, discard, Injury/Exhaust seeding, disabling a "
+               "Defensive Bonus, Positive Status Effect removal. Never "
+               "RPS/Initiative/Position pillar manipulation (rules/card-glossary.md "
+               "Debuff) — those callers don't route through warded() at all.")
         return True
     return False
+
+
+def debuff(target, apply_fn):
+    """The one gate every simple Debuff-granting effect should route through
+    (card-glossary.md, Ward/Debuff), instead of calling warded() ad hoc — or
+    not at all — per card. If target is Warded, the Ward is consumed here and
+    apply_fn() never runs, so a compound grant (e.g. Weak-and-Blind together)
+    either fully lands or fully doesn't, never half-resolves. Returns whether
+    the debuff actually landed. Built 2026-07-24 after an audit found ~20 real
+    cards silently skipping warded() entirely — the same recurring miss
+    Drew named directly ("the sim... based it incorrectly off of where the
+    status comes from instead of correctly identifying debuffs and preventing
+    them," unresolved-concerns.md) — the same shape of fix as
+    _deadly_weak_bonus for Deadly/Weak: one shared function instead of dozens
+    of places each individually free to forget the check."""
+    if warded(target):
+        return False
+    apply_fn()
+    return True
+
+
+def apply_blind(target, n=1):
+    debuff(target, lambda: setattr(target, 'blind', target.blind + n))
+
+
+def apply_weak(target, n=1):
+    debuff(target, lambda: setattr(target, 'weak', target.weak + n))
+
+
+def apply_rooted(target):
+    debuff(target, lambda: setattr(target, 'rooted', True))
+
+
+def apply_staggered(target):
+    debuff(target, lambda: setattr(target, 'staggered', True))
+
+
+def apply_stat_drain(target, stat, n=1):
+    debuff(target, lambda: target.adjust(stat, -n))
+
+
+def apply_injury(engine, target):
+    debuff(target, lambda: engine.insert_injury(target))
+
+
+def apply_exhaust(engine, target, n=1):
+    debuff(target, lambda: engine.insert_exhaust(target, n))
+
+
+def strip_positive_status(target):
+    return debuff(target, lambda: remove_positive_status(target))
 
 
 def remove_positive_status(target):
@@ -89,10 +140,10 @@ def _fracture_defense(engine, me, foe):
 def _trace_dmg(engine, me, foe):
     # Base roll still respects a Deadly/Weak stack the caster is already
     # holding from an earlier card (was silently dropped before 2026-07-23 —
-    # see _deadly_weak_bonus). The card's own "gain Deadly this attack"
-    # condition, when it fires, is a second, independent +d6 on top of that —
-    # a card-granted bonus for this specific attack, not routed through the
-    # stack system (it isn't a stack the caster is holding for later).
+    # see _deadly_weak_bonus). Card text reworded 2026-07-28 to drop the word
+    # "Deadly" entirely (Drew's call) — this was never the stackable keyword,
+    # just a flat conditional +1d6 on this attack's own roll; still a second,
+    # independent bonus die on top of any held stack, not routed through it.
     base = me.eff('mind') + _rolled_die(6, engine.rng, me)
     if _same_as_discard_top(foe):
         base += roll(6, engine.rng)
@@ -100,8 +151,8 @@ def _trace_dmg(engine, me, foe):
 
 
 def _trace_defense(engine, me, foe):
-    if _same_as_discard_top(foe) and not warded(foe):   # foe = attacker here
-        remove_positive_status(foe)
+    if _same_as_discard_top(foe):   # foe = attacker here
+        strip_positive_status(foe)
 
 
 def _twin_strike_dmg(engine, me, foe):
@@ -305,8 +356,7 @@ def _anticipate_effect(engine, me, foe):
 
 
 def _anticipate_defense(engine, me, foe):
-    if not warded(foe):
-        foe.weak += 1
+    apply_weak(foe)
 
 
 def _renewal_effect(engine, me, foe):
@@ -333,7 +383,7 @@ def _renewal_defense(engine, me, foe):
 
 
 def _twin_strike_defense(engine, me, foe):
-    foe.weak += 1   # foe = attacker here
+    apply_weak(foe)   # foe = attacker here
 
 
 # ==================== MIRE (Injury-attrition, 3/3/3) ==========================
@@ -377,18 +427,17 @@ def remove_status_cards(target, n=None):
 def _balance_effect(engine, me, foe):
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
-        foe.staggered = True
+        apply_staggered(foe)
 
 
 def _balance_defense(engine, me, foe):
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
-        foe.staggered = True   # foe = attacker here
+        apply_staggered(foe)   # foe = attacker here
 
 
 def _wither_effect(engine, me, foe):
-    if not warded(foe):
-        foe.adjust('body', -1)   # -1 Body AND -3 max HP; no self-Injury cost anymore
+    apply_stat_drain(foe, 'body')   # -1 Body AND -3 max HP; no self-Injury cost anymore
 
 
 def _mockery_effect(engine, me, foe):
@@ -401,8 +450,8 @@ def _mockery_defense(engine, me, foe):
 
 # --- Red ---
 def _rend_effect(engine, me, foe):
-    if me._last_hit > 0 and not warded(foe):  # Injury infliction is a debuff
-        engine.insert_injury(foe)
+    if me._last_hit > 0:
+        apply_injury(engine, foe)
 
 
 def _rend_defense(engine, me, foe):
@@ -440,7 +489,9 @@ def _partition_defense(engine, me, foe):
 
 
 def _unname_effect(engine, me, foe):
-    foe._no_defensive_bonus = True   # until foe's own next turn (take_turn clears it)
+    # Ward-blockable (card-glossary.md, Debuff) — Drew's call 2026-07-24, for
+    # simplicity: a Debuff, full stop, no carved-out exception.
+    debuff(foe, lambda: setattr(foe, '_no_defensive_bonus', True))   # until foe's own next turn (take_turn clears it)
 
 
 def _unname_defense(engine, me, foe):
@@ -452,15 +503,11 @@ def _unname_defense(engine, me, foe):
 
 
 def _taint_effect(engine, me, foe):
-    if warded(foe):   # Injury infliction is a debuff
-        return
-    engine.insert_injury(foe)
+    apply_injury(engine, foe)
 
 
 def _taint_defense(engine, me, foe):
-    if warded(foe):   # foe = attacker here; Injury infliction is a debuff either direction
-        return
-    engine.insert_injury(foe)
+    apply_injury(engine, foe)   # foe = attacker here
 
 
 def _erode_effect(engine, me, foe):
@@ -469,8 +516,7 @@ def _erode_effect(engine, me, foe):
     # the attacker during a Defensive Bonus — so this one function already
     # correctly drains whichever of them the card text calls for without
     # needing two copies.
-    if not warded(foe):
-        foe.adjust('soul', -1)   # -1 Soul (no HP change — Soul isn't Body); no self-cost
+    apply_stat_drain(foe, 'soul')   # -1 Soul (no HP change — Soul isn't Body); no self-cost
 
 
 # ==================== GREEN SUPPORT KIT (team play) ==========================
@@ -652,10 +698,10 @@ def _profile_effect(engine, me, foe):
     if c:
         me.hand.append(c)
 def _profile_defense(engine, me, foe):
-    foe.staggered = True                   # skips their next attack or defend, then clears itself
+    apply_staggered(foe)                   # skips their next attack or defend, then clears itself
 
 def _refract_effect(engine, me, foe):
-    foe.weak += 1                          # defender gains Weak
+    apply_weak(foe)                        # defender gains Weak
 def _refract_defense(engine, me, foe):
     # redirect the attack's full damage to a target of choice -- only on a
     # clean win, never a tie (rules/card-glossary.md, REFRACT). `foe._redirect_dmg`
@@ -748,7 +794,7 @@ def _warsong_defense(engine, me, foe):
 def _rebuttal_effect(engine, me, foe):
     prior = engine._prior_turn_hit
     if prior['hit'] and prior['actor'] in engine.enemies(me):
-        prior['actor'].staggered = True
+        apply_staggered(prior['actor'])
 def _rebuttal_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
@@ -767,10 +813,9 @@ def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
         c.position = 'backline' if c.position == 'frontline' else 'frontline'
 
-def _adapt_defense(engine, me, foe):
-    me.evade += 1
-# ADAPT's Effect ("instead of a tie, you win") is handled in rps() by card
-# name, not here — see engine.py's Duel.rps() / team_engine.py's Battle._rps().
+# ADAPT (Green), EQUAL FOOTING (Red), and CERTAINTY (Blue) below are the
+# "wins ties" Special Rule family — vanilla otherwise, no effect/defense
+# function needed at all. See engine.py's Card.wins_ties / Duel.rps().
 
 # VOID's Effect ("Defender gains Sealed") unmodeled — no item-usage mechanic
 # exists in the sim, same treatment as PREDICT/DISTRACT.
@@ -811,9 +856,9 @@ def _field_medicine_defense(engine, me, foe):
     engine.heal(me, 3)
 
 def _dead_reckoning_effect(engine, me, foe):
-    foe.weak += 1
+    apply_weak(foe)
 def _dead_reckoning_defense(engine, me, foe):
-    foe.blind += 1
+    apply_blind(foe)
 
 def _patience_dmg(engine, me, foe):
     bonus = 0 if getattr(me, '_attacked_last', False) else 4   # +4 if you waited
@@ -847,9 +892,10 @@ def _focus_defense(engine, me, foe):
 def _understanding_dmg(engine, me, foe):
     # discard the played card's already gone from hand by this point (removed
     # at the top of attack()), so any index here is a genuinely different card
-    # Base roll respects a held Deadly/Weak stack (_rolled_die); the card's
-    # own "this attack gains Deadly" is a second, independent +d6 on top when
-    # the discard actually happens, same shape as TRACE above.
+    # Base roll respects a held Deadly/Weak stack (_rolled_die); card text
+    # reworded 2026-07-28 to drop "Deadly" (Drew's call, same reasoning as
+    # TRACE above) — this is a flat conditional +1d6 on top when the discard
+    # actually happens, independent of any held stack.
     base = me.eff('mind') + _rolled_die(8, engine.rng, me)
     if me.hand:
         me.discard.append(me.hand.pop(engine.rng.randrange(len(me.hand))))
@@ -910,8 +956,7 @@ def _grounding_stance_defense(engine, me, foe):
     me.resist += 1
 
 def _sunder_effect(engine, me, foe):
-    if not warded(foe):
-        foe.adjust('mind', -1)
+    apply_stat_drain(foe, 'mind')
 _sunder_defense = _sunder_effect
 
 def _dead_heat_effect(engine, me, foe):
@@ -942,9 +987,9 @@ def _attune_defense(engine, me, foe):
         me.discard.append(me.hand.pop(engine.rng.choice(reals)))
 
 def _bind_effect(engine, me, foe):
-    foe.rooted = True
+    apply_rooted(foe)
 def _bind_defense(engine, me, foe):
-    foe.rooted = True   # foe = attacker here, same convention as GORE's defense
+    apply_rooted(foe)   # foe = attacker here, same convention as GORE's defense
 
 def _read_effect(engine, me, foe):
     pass   # "defender must reveal their hand" — pure info, no state change (BREAK's own precedent)
@@ -985,16 +1030,22 @@ def _carried_injury_effect(engine, me, foe):
     # Ally-sourced — a genuine no-op in 1v1 (You Are Not Your Own Ally), same
     # footing as every other "from any ally" effect in this file. Correct in
     # team play: pulls from whichever ally is actually carrying a status card.
+    # Ward checked BEFORE taking from source (not via _give_status itself) —
+    # otherwise a Warded target would still cost the ally their card with
+    # nothing transferred, silently destroying it instead of blocking the
+    # whole transfer the way a Debuff being Warded should.
     source = next((a for a in engine.allies(me) if any(c.is_status for c in a.hand + a.discard)), None)
-    if source is None:
+    if source is None or warded(foe):
         return
     name = _take_any_status(source)
     if name:
         _give_status(engine, foe, name)
 def _carried_injury_defense(engine, me, foe):
+    if warded(foe):   # foe = attacker here
+        return
     name = _take_any_status(me)
     if name:
-        _give_status(engine, foe, name)   # foe = attacker here
+        _give_status(engine, foe, name)
 
 def _endure_effect(engine, me, foe):
     me.resist += 1
@@ -1184,11 +1235,10 @@ def _smoke_screen_effect(engine, me, foe):
         return
     for e in engine.enemies(me):
         if e.position == 'frontline':
-            e.blind += 1
-    if not warded(me):
-        me.blind += 1
+            e.blind += 1   # deliberately NOT apply_blind — lands regardless of Ward, see above
+    apply_blind(me)
 def _smoke_screen_defense(engine, me, foe):
-    foe.blind += 1
+    apply_blind(foe)
 
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
@@ -1274,8 +1324,12 @@ def _consume_destroy(engine, me, foe):
     reals = [i for i, c in enumerate(me.hand) if not c.is_status]
     if reals:
         me.exile.append(me.hand.pop(engine.rng.choice(reals)))
-        foe.weak += 1
-        foe.blind += 1
+        # Weak and Blind land together as one Debuff grant, not two separate
+        # ones — a single Ward blocks both or neither, never just one.
+        def _apply():
+            foe.weak += 1
+            foe.blind += 1
+        debuff(foe, _apply)
 
 def _consume_effect(engine, me, foe):
     engine.heal(me, me._last_hit)   # Lifesteal: full damage just dealt
@@ -1344,7 +1398,7 @@ def _afterimage_damage(engine, me, foe):
     return me.eff(stat) + _rolled_die(6, engine.rng, me)
 
 def _afterimage_effect(engine, me, foe):
-    foe.blind += 1
+    apply_blind(foe)
 def _afterimage_defense(engine, me, foe):
     me.evade += 1
 
@@ -1478,11 +1532,12 @@ def _heave_and_haul_defense(engine, me, foe):
 # a materially simpler, self-contained approximation of the same intent,
 # not a literal cross-combatant timeline comparison.
 def _rhythm_break_dmg(engine, me, foe):
-    # Fixed 2026-07-24: text says "this attack gains Deadly" (immediate) but
+    # Fixed 2026-07-24: text said "this attack gains Deadly" (immediate) but
     # the old effect= version did `me.deadly += 1`, deferring it to a future
     # roll — disagreed with its own card text. Made immediate instead of
-    # rewriting the text, for consistency with TRACE/UNDERSTANDING, the
-    # other two cards using this exact phrasing (both already same-attack).
+    # rewriting the text at the time, for consistency with TRACE/UNDERSTANDING.
+    # Card text reworded 2026-07-28 to drop "Deadly" entirely (Drew's call) —
+    # this was always a flat conditional +1d6, never the stackable keyword.
     base = me.eff('body') + _rolled_die(8, engine.rng, me)
     if foe._repositioned_since_last_turn:
         base += roll(6, engine.rng)
@@ -1493,7 +1548,7 @@ def _rhythm_break_defense(engine, me, foe):
 
 # IRON GRIP (was CORRECTION GRIP, Alignment Marshal) — unchanged mechanically.
 def _iron_grip_effect(engine, me, foe):
-    foe.rooted = True
+    apply_rooted(foe)
 def _iron_grip_defense(engine, me, foe):
     me.ongoing.append({'kind': 'anchor_heal', 'owner': me, 'anchor': me.position, 'amount': 2})
 
@@ -1519,12 +1574,12 @@ def _drag_damage(engine, me, foe):
         base += 2
     return base
 def _drag_defense(engine, me, foe):
-    foe.rooted = True
+    apply_rooted(foe)
 
 def _vibration_lock_effect(engine, me, foe):
     seen = engine.scry(me, foe, 1)
     if seen and foe.last_color is not None and seen[0].color == foe.last_color:
-        foe.blind += 1
+        apply_blind(foe)
 def _vibration_lock_defense(engine, me, foe):
     engine.scry(me, me, 1)
 
@@ -1536,7 +1591,7 @@ def _shed_skin_defense(engine, me, foe):
         me.exile.append(me.discard.pop())
 
 def _dark_corridor_effect(engine, me, foe):
-    foe.blind += 1
+    apply_blind(foe)
 def _dark_corridor_defense(engine, me, foe):
     me.resist += 1
 
@@ -1546,7 +1601,7 @@ def _coil_latch_damage(engine, me, foe):
         base += 2
     return base
 def _coil_latch_defense(engine, me, foe):
-    foe.rooted = True
+    apply_rooted(foe)
 
 def _still_ground_effect(engine, me, foe):
     if foe._repositioned_since_last_turn:
@@ -1603,13 +1658,10 @@ def _rollout_defense(engine, me, foe):
 def _seismic_redirect_effect(engine, me, foe):
     _rushdown(me, foe)
 def _seismic_redirect_defense(engine, me, foe):
-    # Corrected 2026-07-24, twice: card text is bare "Counter Attack" — no
-    # die stated — which per the glossary's default form means "deal this
-    # card's own Attack damage back" (Body + d6, this card's printed
-    # attack), not the weaker flat-die form. An earlier pass misread the
-    # card as having stated a die ("d6") when the "d6" was never meant to be
-    # part of Counter Attack's own phrasing — it's just this card's own
-    # Attack line, restated. Text corrected to drop the "d6" entirely.
+    # Counter Attack always means this card's own stat + die (Body + d6,
+    # this card's printed Attack) — Counter Attack no longer has a
+    # separate "stated die" form at all (card-glossary.md, simplified
+    # 2026-07-24). Card text is bare "Counter Attack," no die restated.
     engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
 
 # GORE (Minotaur) — base die bumped along with everything else.
@@ -1620,7 +1672,7 @@ def _gore_damage(engine, me, foe):
         base += roll(6, engine.rng)
     return base
 def _gore_defense(engine, me, foe):
-    foe.rooted = True
+    apply_rooted(foe)
 
 def _youre_next_effect(engine, me, foe):
     # Promoted to core: Drew's tweak — only a clean win, not a tie
@@ -1647,7 +1699,7 @@ def _table_stakes_effect(engine, me, foe):
     if discarded.color == 'R':
         engine.deal(foe, 4, unpreventable=True)
     elif discarded.color == 'B':
-        foe.staggered = True
+        apply_staggered(foe)
     elif discarded.color == 'G':
         engine.heal(me, 3)
         for ally in engine.allies(me):
@@ -1759,7 +1811,7 @@ def build_cards():
     # Mire — Red
     add("REND", 'R', 'body', 'melee', 6,
         effect=_rend_effect, defense=_rend_defense)
-    add("EQUAL FOOTING", 'R', 'body', 'both', 4)   # "instead of a tie, you win" — handled in rps(), no effect/defense function needed
+    add("EQUAL FOOTING", 'R', 'body', 'melee', 8, wins_ties=True)   # Special Rule, vanilla otherwise
     add("PRESS THE INJURY", 'R', 'body', 'melee', 6,
         damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
     add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
@@ -1929,7 +1981,8 @@ def build_cards():
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 6, effect=_flow_effect, defense=_flow_defense)
-    add("ADAPT", 'G', 'soul', 'both', 8, defense=_adapt_defense)
+    add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
+    add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,

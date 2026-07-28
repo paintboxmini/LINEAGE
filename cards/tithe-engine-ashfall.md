@@ -90,5 +90,5 @@ Range: Ranged
 
 **EXHAUST**
 Status — Colorless
-Cannot be played. It stays in your hand and occupies a card slot. Use your action to permanently remove all Exhaust cards from your hand — the only way to clear them.
+Cannot be played. It stays in your hand and occupies a card slot. Use your action to destroy all Exhaust cards from your hand — the only way to clear them.
 *"Ash in the lungs. Heat in the blood."*

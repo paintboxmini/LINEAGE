@@ -109,7 +109,7 @@ produced three results, one of which reversed an earlier conclusion.
 
    But tracking has one narrow, *certain* use: **safe-play detection.** If you
    know the foe holds only 2 green cards and you see both in their discard, then
-   green is gone from their deck and hand — so any attack green can't beat is
+   green is gone from their deck and hand — so any attack green can beat is
    risk-free (it cannot lose the reveal). That check is now folded into the
    tactician (`_color_exhausted`), and it's pure upside: it lifted the tactician
    over greedy across *every* deck (Frost 59%→65%, Mire 50%→58%). The lesson:

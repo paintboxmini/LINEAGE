@@ -133,9 +133,6 @@ class Battle:
         elif not unpreventable and target.vulnerable > 0:
             amount = (amount * 3) // 2  # +50%, rounded down
             target.vulnerable -= 1
-        if not unpreventable and target._damage_floor is not None:
-            cap = max(0, target.hp - target._damage_floor)
-            amount = min(amount, cap)
         # HP never goes negative, Collapsed or not (Drew's root-level death-rule
         # change) — see engine.py's Duel.deal() for the full reasoning. Death is
         # decided at the attack-resolution call site now, not here.
@@ -288,7 +285,6 @@ class Battle:
                 attacker.attack_history[atk_color] += 1
                 self._this_turn_hit['color'] = atk_color
                 _stamp_reveal(self, attacker, card)
-                defender._damage_floor = None
                 return
 
         def_card = None
@@ -328,7 +324,6 @@ class Battle:
             # — no challenge means no loss (Drew's colorless rule).
             card = _reveal_top_of_deck_swap(self, attacker, card)
             self._resolve_attacker_win(attacker, defender, card)
-            defender._damage_floor = None
             return
 
         def_color = _effective_color(self, def_card)   # resolved AFTER the Axiom check above
@@ -342,7 +337,6 @@ class Battle:
                 and self._prior_turn_hit['target'] is defender:
             self._say(f"  FRAME-TRAP: {defender.name} was hit last turn — {def_card.name} is negated")
             self._resolve_attacker_win(attacker, defender, card)
-            defender._damage_floor = None
             return
 
         outcome = self._rps(card, def_card)
@@ -363,7 +357,6 @@ class Battle:
             if not defender._no_defensive_bonus:   # UNNAME
                 def_card = _reveal_top_of_deck_swap(self, defender, def_card)
                 def_card.defense(self, defender, attacker)
-        defender._damage_floor = None
 
     @staticmethod
     def _rps_base(atk, dfn):
@@ -380,12 +373,12 @@ class Battle:
         if (atk_card.special_reveal == 'paradox' or def_card.special_reveal == 'paradox') \
                 and base != 'tie':
             base = 'defender' if base == 'attacker' else 'attacker'
-        # "Instead of a tie, you win" — see engine.py's Duel.rps() for the full
-        # reasoning. EQUAL FOOTING works either side; ADAPT is Effect-only, so
-        # it only ever counts on the attacker side. Both-sided claims cancel out.
+        # "Wins ties" — see engine.py's Duel.rps() for the full reasoning.
+        # Generic Card.wins_ties flag; FRAME-TRAP stays a separate name check
+        # (asymmetric, defense-only, not part of the flag family).
         if base == 'tie':
-            atk_wins_tie = atk_card.name in ('EQUAL FOOTING', 'ADAPT')
-            def_wins_tie = def_card.name in ('EQUAL FOOTING', 'FRAME-TRAP')
+            atk_wins_tie = atk_card.wins_ties
+            def_wins_tie = def_card.wins_ties or def_card.name == 'FRAME-TRAP'
             if atk_wins_tie and not def_wins_tie:
                 base = 'attacker'
             elif def_wins_tie and not atk_wins_tie:

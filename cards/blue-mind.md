@@ -94,8 +94,8 @@ Range: Ranged
 
 **TRACE**
 BLUE — MIND
-Attack: Mind + d6
-Effect: If the defender plays the same color as the top card of their discard pile, gain Deadly this attack
+Attack: Mind + d6. If the defender plays the same color as the top card of their discard pile, +1d6.
+Effect: None.
 Defensive Bonus: If the attacker plays the same color as the top card of their discard pile, remove their Positive Status Effects
 Range: Ranged
 *"Cartographers see the second time before it happens."*
@@ -154,8 +154,8 @@ Range: Ranged
 
 **UNDERSTANDING**
 BLUE — MIND
-Attack: Mind + d8
-Effect: Discard a card. This attack gains Deadly.
+Attack: Mind + d8. Discard a card; if you do, +1d6.
+Effect: None.
 Defensive Bonus: Scry 2. If you bottom both, heal 4 HP
 Range: Ranged
 *"Clarity is not given, it is reconstructed."*
@@ -301,6 +301,17 @@ Effect: None.
 Defensive Bonus: Wins ties. On a tie, the attacker's Effect does not trigger.
 Range: Both
 *"You never see the second hit coming. You're still reacting to the first."*
+
+---
+
+**CERTAINTY**
+BLUE — MIND
+Attack: Mind + d6
+Special Rule: Wins ties. If the attacker's and defender's cards both carry this Special Rule, they cancel — it stays a tie.
+Effect: None.
+Defensive Bonus: None.
+Range: Ranged
+*"Where others hesitate, the answer was already written."*
 
 ---
 
