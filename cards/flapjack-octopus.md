@@ -92,10 +92,4 @@ Range: Both
 
 ---
 
-**FREEZE**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Scry 2.
-Defensive Bonus: Gain Evade.
-Range: Both
-*"The water holds its breath too."*
+*FREEZE is shared with Briarwatch Jackalope (`cards/briarwatch-jackalope.md`) — same card, same text (Scry 2), not a separate design. Flapjack Octopus's deck uses that entry in its place.*
