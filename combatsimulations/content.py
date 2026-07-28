@@ -2147,6 +2147,23 @@ SKY_DECK = [
     "PATIENCE", "MIRROR STEP",                        # 2 green (both: reconstructed — Melee, Both)
 ]
 
+# MOSS and GARNET — Claude's side of the same live 2v2 test. Unlike Crimson/
+# Sky, both full 9-card decklists were actually recorded in the transcript
+# (`playtesting/live-test-2v2.md`) — no reconstruction, no guessing, every
+# card below is the real, played deck.
+MOSS_STATS = dict(mind=2, body=3, soul=4)
+MOSS_DECK = [
+    "STILLNESS", "FOCUS",                      # 2 blue
+    "GUARD", "ENDURE", "DIG IN",                # 3 red
+    "PATIENCE", "RENEWAL", "WITNESS", "ROOTED OATH",  # 4 green
+]
+GARNET_STATS = dict(mind=3, body=4, soul=2)
+GARNET_DECK = [
+    "FORGET", "ANTICIPATE", "PROFILE",          # 3 blue
+    "STRIKE", "BRACE", "PAIN IS FUEL", "RALLY",  # 4 red
+    "TWIN STRIKE", "MOCKERY",                   # 2 green
+]
+
 GARRET_STATS = dict(mind=5, body=2, soul=2)
 GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
     "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
@@ -2213,4 +2230,6 @@ ROSTER = {
     "warper": (WARPER_STATS, WARPER_DECK),    # Position-manipulation test deck, Mind4/Body3/Soul2
     "crimson": (CRIMSON_STATS, CRIMSON_DECK),  # Drew's own, live 2v2 test, partial reconstruction
     "sky":     (SKY_STATS, SKY_DECK),          # Drew's own, live 2v2 test, partial reconstruction
+    "moss":    (MOSS_STATS, MOSS_DECK),        # Claude's side, same live 2v2 test, fully recorded
+    "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
 }
