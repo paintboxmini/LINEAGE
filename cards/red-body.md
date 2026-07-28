@@ -395,8 +395,8 @@ Range: Melee
 
 **RHYTHM BREAK**
 RED — BODY
-Attack: Body + d8
-Effect: If the defender moved since their last turn, this attack gains Deadly.
+Attack: Body + d8. If the defender moved since their last turn, +1d6.
+Effect: None.
 Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
 Range: Melee
 *"Moving is a decision. So is being wrong about it."*
