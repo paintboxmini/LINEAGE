@@ -145,7 +145,7 @@ On a long rest, all Injuries are destroyed.
 ### EXHAUST
 *Status — Colorless*
 Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
-Use your action to destroy all Exhaust cards from your hand. That's the only way to clear them.
+Use your action to destroy all Exhaust cards from your hand. A short or long rest also destroys all Exhaust cards you're holding.
 
 ---
 

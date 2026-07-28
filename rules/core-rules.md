@@ -104,8 +104,8 @@ Green (Soul) beats  Blue  (Mind)
 
 | Rest | Duration | Effect | Limit |
 |------|----------|--------|-------|
-| Short | 20 min | 1d6 + Body HP | 3/day |
-| Long | 7½ hours | Full heal, all Injuries destroyed | Once/day |
+| Short | 20 min | 1d6 + Body HP, all Exhaust destroyed | 3/day |
+| Long | 7½ hours | Full heal, all Injuries and Exhaust destroyed | Once/day |
 
 Short rests can be chained. Long rests require genuine safety.
 
