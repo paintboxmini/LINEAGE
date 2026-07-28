@@ -2102,6 +2102,26 @@ TEMPO_STATS = dict(mind=4, soul=3, body=2)
 # base_die). Not hand-tuned archetypes like the roster above — these stand in
 # for what an actual new table produces, for testing real party comps against
 # real creature encounters rather than symmetric mirrors.
+# CRIMSON and SKY — Drew's own, from the live 2v2 test (`playtesting/live-test-2v2.md`).
+# Real, human-built decks, same category as Frost/Steele, but their exact card
+# choices were deliberately hidden during that test and never fully recorded —
+# only their stats, color/range counts, and whichever cards happened to get
+# revealed during the one fight are known. The known cards are used as-is;
+# remaining slots are a flagged reconstruction (Drew's call, 2026-07-28) filling
+# in plausible core cards matching the known color split, not the real deck.
+CRIMSON_STATS = dict(body=4, mind=3, soul=2)
+CRIMSON_DECK = [
+    "DEFLECT", "PROFILE", "INTERRUPT",              # 3 blue (INTERRUPT: reconstructed)
+    "CHARGE", "REND", "TRAMPLE", "STRIKE",           # 4 red (STRIKE: reconstructed)
+    "WITNESS", "ROOTED OATH",                        # 2 green
+]
+SKY_STATS = dict(mind=4, body=3, soul=2)
+SKY_DECK = [
+    "CALCULATE", "PROFILE", "AXIOM", "STILLNESS",    # 4 blue (STILLNESS: reconstructed)
+    "GAMBLER'S RUIN", "STRIKE", "ENDURE",             # 3 red (STRIKE, ENDURE: reconstructed)
+    "FLOW", "WITNESS",                                # 2 green (both: reconstructed)
+]
+
 GARRET_STATS = dict(mind=5, body=2, soul=2)
 GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
     "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
@@ -2166,4 +2186,6 @@ ROSTER = {
     "wyn":    (WYN_STATS, WYN_DECK),          # Oracle-drafted test player, Mind2/Body2/Soul5
     "tallis": (TALLIS_STATS, TALLIS_DECK),    # Oracle-drafted test player, Mind3/Body3/Soul3
     "warper": (WARPER_STATS, WARPER_DECK),    # Position-manipulation test deck, Mind4/Body3/Soul2
+    "crimson": (CRIMSON_STATS, CRIMSON_DECK),  # Drew's own, live 2v2 test, partial reconstruction
+    "sky":     (SKY_STATS, SKY_DECK),          # Drew's own, live 2v2 test, partial reconstruction
 }
