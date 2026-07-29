@@ -158,17 +158,21 @@ _TARGET = {"self": lambda me, foe: me, "foe": lambda me, foe: foe}
 
 
 def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b,
-                      condition_a=None, condition_b=None):
+                      condition_a=None, condition_b=None, base_die_a=6, base_die_b=6):
     """Registers FILLER_R/B/G (neutral, no Effect, Range: Both, d6) and one
-    GRANT_<KEYWORD> card per side, sharing the same die/range/color/stat so
-    the only variable between the two decks is which keyword each grants.
-    condition_a/condition_b are names from CONDITIONS (or None for an
-    unconditional grant, the original behavior). Returns
-    (deck_a, deck_b, counter_a, counter_b) — the counters are empty dicts
-    when the matching condition is None (nothing to measure)."""
-    def add(name, color, stat, effect=None, defense=None):
+    GRANT_<KEYWORD> card per side, sharing the same range/color/stat so the
+    only variables between the two decks are which keyword each grants and
+    (if base_die_a/b differ) each GRANT card's own die — e.g. to check what
+    a die-size bump does to a specific gated card (RETALIATE at d8 instead
+    of its current d6). Filler stays d6 regardless — it's generic deck
+    padding, not the card under test. condition_a/condition_b are names
+    from CONDITIONS (or None for an unconditional grant, the original
+    behavior). Returns (deck_a, deck_b, counter_a, counter_b) — the
+    counters are empty dicts when the matching condition is None (nothing
+    to measure)."""
+    def add(name, color, stat, effect=None, defense=None, base_die=6):
         cards[name] = Card(name=name, color=color, stat=stat, reach="both",
-                            base_die=6, effect=effect, defense=defense, damage=None)
+                            base_die=base_die, effect=effect, defense=defense, damage=None)
 
     add("FILLER_R", "R", "body")
     add("FILLER_B", "B", "mind")
@@ -184,29 +188,32 @@ def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b,
 
     counter_a = {"hit": 0, "total": 0}
     counter_b = {"hit": 0, "total": 0}
-    for label, kw, amount, cond_name, counter in (
-        ("A", keyword_a, amount_a, condition_a, counter_a),
-        ("B", keyword_b, amount_b, condition_b, counter_b),
+    for label, kw, amount, cond_name, counter, base_die in (
+        ("A", keyword_a, amount_a, condition_a, counter_a, base_die_a),
+        ("B", keyword_b, amount_b, condition_b, counter_b, base_die_b),
     ):
         attr, is_bool, target = KEYWORD_GRANTS[kw]
         condition = CONDITIONS[cond_name] if cond_name else None
         fn = _make_grant_fn(attr, is_bool, amount, _TARGET[target], condition, counter)
-        add(f"GRANT_{label}", "R", "body", effect=fn, defense=fn)
+        add(f"GRANT_{label}", "R", "body", effect=fn, defense=fn, base_die=base_die)
 
     deck_a = filler + ["GRANT_A"]
     deck_b = filler + ["GRANT_B"]
     return deck_a, deck_b, counter_a, counter_b
 
 
-def _make_damage_bonus_fn(stat, condition, counter):
-    """TRACE/STILL COUNTING's shape: base = stat + d6 (respects a held
+def _make_damage_bonus_fn(stat, condition, counter, base_die=6):
+    """TRACE/STILL COUNTING's shape: base = stat + base_die (respects a held
     Deadly/Weak stack, same as the real cards' own base roll), +1d6 more if
     the gate is true (an independent second die, NOT routed through Deadly/
     Weak — matches _trace_dmg's own comment on why its bonus uses plain
     roll() instead of _rolled_die()). condition=None means the bonus always
-    applies (the UNGATED comparison case)."""
+    applies (the UNGATED comparison case). base_die only scales the card's
+    OWN base roll — the "+1d6" bonus is a separate, independently-named
+    die in the real card text and stays d6 regardless (matches RHYTHM
+    BREAK's real shape: "Attack: Body + d8. If X, +1d6.")."""
     def fn(engine, me, foe):
-        base = me.eff(stat) + _rolled_die(6, engine.rng, me)
+        base = me.eff(stat) + _rolled_die(base_die, engine.rng, me)
         if condition is None:
             return base + roll(6, engine.rng)
         counter['total'] += 1
@@ -217,13 +224,17 @@ def _make_damage_bonus_fn(stat, condition, counter):
     return fn
 
 
-def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_name=None, counter=None, deck_id=""):
+def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_name=None,
+                             counter=None, deck_id="", base_die=6):
     """One filler+1-special-card deck (same shape as build_test_cards) where
     the special card's Attack line carries a raw +1d6 bonus instead of a
     KEYWORD_GRANTS keyword — TRACE/STILL COUNTING's actual shape, which
     doesn't fit build_test_cards at all. mode is 'gated' (condition_name's
     real gate), 'ungated' (bonus always applies — isolates what the gate
     costs), or 'plain' (no bonus at all — the vanilla-card baseline).
+    base_die scales only the SPECIAL card's own base roll (e.g. to check
+    what a die-size bump does to TRACE) — filler stays d6 regardless, same
+    reasoning as build_test_cards's base_die_a/b.
     needs_mover is decided once by the caller for the whole test (not
     per-deck) and applied to every mode uniformly — the MOVER card only
     matters for GATED's own condition, but if it changed the filler mix
@@ -233,8 +244,8 @@ def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_nam
     Bonus text (TRACE strips status, STILL COUNTING grants Resist) is a
     second, unrelated mechanic — mixing it in here would confound the one
     thing this test isolates, the Attack-line gate."""
-    def add(name, c, s, damage=None, effect=None, defense=None):
-        cards[name] = Card(name=name, color=c, stat=s, reach="both", base_die=6,
+    def add(name, c, s, damage=None, effect=None, defense=None, die=6):
+        cards[name] = Card(name=name, color=c, stat=s, reach="both", base_die=die,
                             damage=damage, effect=effect, defense=defense)
 
     add("FILLER_R" + deck_id, "R", "body")
@@ -251,35 +262,42 @@ def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_nam
     if mode == 'plain':
         fn = None
     elif mode == 'ungated':
-        fn = _make_damage_bonus_fn(stat, None, None)
+        fn = _make_damage_bonus_fn(stat, None, None, base_die)
     else:  # gated
-        fn = _make_damage_bonus_fn(stat, CONDITIONS[condition_name], counter)
-    add("SPECIAL" + deck_id, color, stat, damage=fn)
+        fn = _make_damage_bonus_fn(stat, CONDITIONS[condition_name], counter, base_die)
+    add("SPECIAL" + deck_id, color, stat, damage=fn, die=base_die)
 
     return filler + ["SPECIAL" + deck_id]
 
 
-def run_damage_bonus_test(color, stat, condition_name, n):
+def run_damage_bonus_test(color, stat, condition_name, n, base_die=6):
     """The 'different approach' TRACE/STILL COUNTING need: not keyword-vs-
     keyword, but GATED-vs-UNGATED (what does the gate itself cost?) and
     GATED-vs-PLAIN (is the gated card worth its slot at all?), holding
-    color/stat/filler identical throughout so the gate is the only variable."""
+    color/stat/filler identical throughout so the gate is the only variable.
+    base_die (default 6, the current printed die) lets a bumped die (e.g. 8)
+    be checked the same way, PLAIN included, so "is it worth its slot"
+    reflects the same bumped base, not a stale d6 comparison."""
     needs_mover = condition_name in _MOVER_CONDITIONS
     for opponent_mode, note in (("ungated", "cost of the gate itself"),
                                  ("plain", "value of the card at all")):
         cards = content.build_cards()
         counter = {"hit": 0, "total": 0}
-        deck_gated = build_damage_bonus_deck(cards, color, stat, "gated", needs_mover, condition_name, counter, deck_id="1")
-        deck_other = build_damage_bonus_deck(cards, color, stat, opponent_mode, needs_mover, deck_id="2")
+        deck_gated = build_damage_bonus_deck(cards, color, stat, "gated", needs_mover, condition_name,
+                                              counter, deck_id="1", base_die=base_die)
+        deck_other = build_damage_bonus_deck(cards, color, stat, opponent_mode, needs_mover,
+                                              deck_id="2", base_die=base_die)
         run(n, deck_gated, deck_other, cards,
-            f"GATED({condition_name}) vs {opponent_mode.upper()} [{note}]", counter, None)
+            f"GATED({condition_name}, d{base_die}) vs {opponent_mode.upper()}(d{base_die}) [{note}]", counter, None)
         # swap sides to rule out going-first asymmetry
         cards2 = content.build_cards()
         counter2 = {"hit": 0, "total": 0}
-        deck_other2 = build_damage_bonus_deck(cards2, color, stat, opponent_mode, needs_mover, deck_id="1")
-        deck_gated2 = build_damage_bonus_deck(cards2, color, stat, "gated", needs_mover, condition_name, counter2, deck_id="2")
+        deck_other2 = build_damage_bonus_deck(cards2, color, stat, opponent_mode, needs_mover,
+                                               deck_id="1", base_die=base_die)
+        deck_gated2 = build_damage_bonus_deck(cards2, color, stat, "gated", needs_mover, condition_name,
+                                               counter2, deck_id="2", base_die=base_die)
         run(n, deck_other2, deck_gated2, cards2,
-            f"{opponent_mode.upper()} vs GATED({condition_name}) (sides swapped)", None, counter2)
+            f"{opponent_mode.upper()}(d{base_die}) vs GATED({condition_name}, d{base_die}) (sides swapped)", None, counter2)
 
 
 def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
@@ -320,10 +338,19 @@ def main():
                     help="color of the special card in --die-bonus mode (default B, TRACE's own)")
     p.add_argument("--die-bonus-stat", choices=["mind", "body", "soul"], default="mind",
                     help="stat of the special card in --die-bonus mode (default mind, TRACE's own)")
+    p.add_argument("--die-bonus-base-die", type=int, choices=[2, 4, 6, 8, 10], default=6,
+                    help="base die of the special card in --die-bonus mode (default 6) — bump "
+                         "this to check what a die-size change does to a real gated card")
+    p.add_argument("--base-die-a", type=int, choices=[2, 4, 6, 8, 10], default=6,
+                    help="base die of GRANT_A in keyword mode (default 6) — bump this to check "
+                         "what a die-size change does to a real gated card")
+    p.add_argument("--base-die-b", type=int, choices=[2, 4, 6, 8, 10], default=6,
+                    help="base die of GRANT_B in keyword mode (default 6)")
     args = p.parse_args()
 
     if args.die_bonus:
-        run_damage_bonus_test(args.die_bonus_color, args.die_bonus_stat, args.die_bonus, args.n)
+        run_damage_bonus_test(args.die_bonus_color, args.die_bonus_stat, args.die_bonus,
+                               args.n, args.die_bonus_base_die)
         return
 
     if not args.keyword_a or not args.keyword_b:
@@ -332,15 +359,15 @@ def main():
     cards = content.build_cards()
     deck_a, deck_b, counter_a, counter_b = build_test_cards(
         cards, args.keyword_a, args.amount, args.keyword_b, args.amount,
-        args.condition_a, args.condition_b)
+        args.condition_a, args.condition_b, args.base_die_a, args.base_die_b)
 
-    run(args.n, deck_a, deck_b, cards, f"A={args.keyword_a} vs B={args.keyword_b}", counter_a, counter_b)
+    run(args.n, deck_a, deck_b, cards, f"A={args.keyword_a}(d{args.base_die_a}) vs B={args.keyword_b}(d{args.base_die_b})", counter_a, counter_b)
     # swap sides to rule out any going-first asymmetry
     cards2 = content.build_cards()
     deck_b2, deck_a2, counter_b2, counter_a2 = build_test_cards(
         cards2, args.keyword_b, args.amount, args.keyword_a, args.amount,
-        args.condition_b, args.condition_a)
-    run(args.n, deck_b2, deck_a2, cards2, f"A={args.keyword_b} vs B={args.keyword_a} (sides swapped)", counter_b2, counter_a2)
+        args.condition_b, args.condition_a, args.base_die_b, args.base_die_a)
+    run(args.n, deck_b2, deck_a2, cards2, f"A={args.keyword_b}(d{args.base_die_b}) vs B={args.keyword_a}(d{args.base_die_a}) (sides swapped)", counter_b2, counter_a2)
 
 
 if __name__ == "__main__":
