@@ -77,6 +77,13 @@ CONDITIONS = {
     "foe_backline": lambda engine, me, foe: foe.position == 'backline',
     "foe_frontline": lambda engine, me, foe: foe.position == 'frontline',
     "foe_moved": lambda engine, me, foe: foe._repositioned_since_last_turn,
+    # RETALIATE's real gate ("if you were hit last turn by the foe"), same
+    # engine._prior_turn_hit check _retaliate_effect itself makes in content.py.
+    "was_hit_last_turn": lambda engine, me, foe: (
+        engine._prior_turn_hit['hit']
+        and engine._prior_turn_hit['target'] is me
+        and engine._prior_turn_hit['actor'] in engine.enemies(me)
+    ),
 }
 
 # Every predicate above is position-based, and the FILLER cards never move
