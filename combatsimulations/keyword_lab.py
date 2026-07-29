@@ -31,13 +31,26 @@ keyword's real expected value (win-rate delta already includes the gate) can
 be read straight off the output instead of hand-computing value(Y) x P(X).
     python3 keyword_lab.py deadly evade --condition-a foe_moved   # RHYTHM BREAK's gate
     python3 keyword_lab.py deadly ward --condition-a backline     # NIP's gate
+
+Raw die-bonus testing (2026-07-29): TRACE and STILL COUNTING don't grant a
+KEYWORD_GRANTS keyword at all — their Attack line reads "+1d6" directly
+("Attack: Mind + d6. If [condition], +1d6."), a raw bonus die, not a status
+flag. That shape needs a different comparison than keyword-vs-keyword: three
+otherwise-identical decks (GATED = the real card's own condition, UNGATED =
+the same +1d6 with no gate at all, PLAIN = no bonus, a vanilla d6 attack),
+run GATED-vs-UNGATED (isolates exactly what the gate costs) and GATED-vs-
+PLAIN (is the gated card worth its slot at all). --die-bonus switches modes;
+keyword_a/keyword_b are ignored when it's set.
+    python3 keyword_lab.py --die-bonus foe_discard_streak --die-bonus-color B --die-bonus-stat mind   # TRACE
+    python3 keyword_lab.py --die-bonus self_never_moved --die-bonus-color G --die-bonus-stat soul     # STILL COUNTING
 """
 
 import argparse
 from collections import Counter
 
 import content
-from engine import Card, Combatant, Duel
+from engine import Card, Combatant, Duel, roll, _rolled_die
+from content import _same_as_discard_top
 from policies import TacticianPolicy
 
 # keyword -> (attr name on Combatant, is a bool flag rather than a stack,
@@ -84,6 +97,19 @@ CONDITIONS = {
         and engine._prior_turn_hit['target'] is me
         and engine._prior_turn_hit['actor'] in engine.enemies(me)
     ),
+    # TRACE's real gate: did the foe's last two discards share a color? Same
+    # check _trace_dmg itself makes (content._same_as_discard_top(foe)).
+    "foe_discard_streak": lambda engine, me, foe: _same_as_discard_top(foe),
+    # STILL COUNTING's real gate: "have you not changed position this
+    # combat" — cumulative, not just since-last-turn (that's foe_moved's
+    # job). No engine-level tracker for "ever repositioned" exists (only
+    # _repositioned_since_last_turn, a one-turn window), and building one
+    # would mean touching Combatant.position engine-wide for a test-only
+    # need. Instead tracked locally: _mover_fn (the only thing that can
+    # move a combatant in these test decks) sets _ever_repositioned itself,
+    # which is exact here because it's the sole mover in play — would NOT
+    # generalize to a real mixed deck with multiple move cards.
+    "self_never_moved": lambda engine, me, foe: not getattr(me, '_ever_repositioned', False),
 }
 
 # Every predicate above is position-based, and the FILLER cards never move
@@ -95,10 +121,12 @@ CONDITIONS = {
 # position condition is requested, build_test_cards adds a MOVER filler
 # (toggles own position, identical in both decks, so it's not a confound)
 # to give the condition an honest chance to fire.
-_MOVER_CONDITIONS = {"backline", "frontline", "foe_backline", "foe_frontline", "foe_moved"}
+_MOVER_CONDITIONS = {"backline", "frontline", "foe_backline", "foe_frontline",
+                      "foe_moved", "self_never_moved"}
 
 
 def _mover_fn(engine, me, foe):
+    me._ever_repositioned = True
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
 
 
@@ -170,6 +198,90 @@ def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b,
     return deck_a, deck_b, counter_a, counter_b
 
 
+def _make_damage_bonus_fn(stat, condition, counter):
+    """TRACE/STILL COUNTING's shape: base = stat + d6 (respects a held
+    Deadly/Weak stack, same as the real cards' own base roll), +1d6 more if
+    the gate is true (an independent second die, NOT routed through Deadly/
+    Weak — matches _trace_dmg's own comment on why its bonus uses plain
+    roll() instead of _rolled_die()). condition=None means the bonus always
+    applies (the UNGATED comparison case)."""
+    def fn(engine, me, foe):
+        base = me.eff(stat) + _rolled_die(6, engine.rng, me)
+        if condition is None:
+            return base + roll(6, engine.rng)
+        counter['total'] += 1
+        if condition(engine, me, foe):
+            counter['hit'] += 1
+            base += roll(6, engine.rng)
+        return base
+    return fn
+
+
+def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_name=None, counter=None, deck_id=""):
+    """One filler+1-special-card deck (same shape as build_test_cards) where
+    the special card's Attack line carries a raw +1d6 bonus instead of a
+    KEYWORD_GRANTS keyword — TRACE/STILL COUNTING's actual shape, which
+    doesn't fit build_test_cards at all. mode is 'gated' (condition_name's
+    real gate), 'ungated' (bonus always applies — isolates what the gate
+    costs), or 'plain' (no bonus at all — the vanilla-card baseline).
+    needs_mover is decided once by the caller for the whole test (not
+    per-deck) and applied to every mode uniformly — the MOVER card only
+    matters for GATED's own condition, but if it changed the filler mix
+    only on the GATED side, that would itself become a second confound on
+    top of the one thing this test isolates.
+    Defensive Bonus deliberately left unset: the real cards' own Defensive
+    Bonus text (TRACE strips status, STILL COUNTING grants Resist) is a
+    second, unrelated mechanic — mixing it in here would confound the one
+    thing this test isolates, the Attack-line gate."""
+    def add(name, c, s, damage=None, effect=None, defense=None):
+        cards[name] = Card(name=name, color=c, stat=s, reach="both", base_die=6,
+                            damage=damage, effect=effect, defense=defense)
+
+    add("FILLER_R" + deck_id, "R", "body")
+    add("FILLER_B" + deck_id, "B", "mind")
+    add("FILLER_G" + deck_id, "G", "soul")
+    filler = [f"FILLER_R{deck_id}"] * 3 + [f"FILLER_B{deck_id}"] * 3
+
+    if needs_mover:
+        add("MOVER" + deck_id, "G", "soul", effect=_mover_fn, defense=_mover_fn)
+        filler += [f"FILLER_G{deck_id}", "MOVER" + deck_id]   # 8 cards total
+    else:
+        filler += [f"FILLER_G{deck_id}"] * 2                  # 8 cards total
+
+    if mode == 'plain':
+        fn = None
+    elif mode == 'ungated':
+        fn = _make_damage_bonus_fn(stat, None, None)
+    else:  # gated
+        fn = _make_damage_bonus_fn(stat, CONDITIONS[condition_name], counter)
+    add("SPECIAL" + deck_id, color, stat, damage=fn)
+
+    return filler + ["SPECIAL" + deck_id]
+
+
+def run_damage_bonus_test(color, stat, condition_name, n):
+    """The 'different approach' TRACE/STILL COUNTING need: not keyword-vs-
+    keyword, but GATED-vs-UNGATED (what does the gate itself cost?) and
+    GATED-vs-PLAIN (is the gated card worth its slot at all?), holding
+    color/stat/filler identical throughout so the gate is the only variable."""
+    needs_mover = condition_name in _MOVER_CONDITIONS
+    for opponent_mode, note in (("ungated", "cost of the gate itself"),
+                                 ("plain", "value of the card at all")):
+        cards = content.build_cards()
+        counter = {"hit": 0, "total": 0}
+        deck_gated = build_damage_bonus_deck(cards, color, stat, "gated", needs_mover, condition_name, counter, deck_id="1")
+        deck_other = build_damage_bonus_deck(cards, color, stat, opponent_mode, needs_mover, deck_id="2")
+        run(n, deck_gated, deck_other, cards,
+            f"GATED({condition_name}) vs {opponent_mode.upper()} [{note}]", counter, None)
+        # swap sides to rule out going-first asymmetry
+        cards2 = content.build_cards()
+        counter2 = {"hit": 0, "total": 0}
+        deck_other2 = build_damage_bonus_deck(cards2, color, stat, opponent_mode, needs_mover, deck_id="1")
+        deck_gated2 = build_damage_bonus_deck(cards2, color, stat, "gated", needs_mover, condition_name, counter2, deck_id="2")
+        run(n, deck_other2, deck_gated2, cards2,
+            f"{opponent_mode.upper()} vs GATED({condition_name}) (sides swapped)", None, counter2)
+
+
 def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
     wins = Counter()
     total_turns = 0
@@ -191,8 +303,8 @@ def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("keyword_a", choices=sorted(KEYWORD_GRANTS))
-    p.add_argument("keyword_b", choices=sorted(KEYWORD_GRANTS))
+    p.add_argument("keyword_a", nargs="?", choices=sorted(KEYWORD_GRANTS))
+    p.add_argument("keyword_b", nargs="?", choices=sorted(KEYWORD_GRANTS))
     p.add_argument("amount", nargs="?", type=int, default=1,
                     help="stack count / value for both keywords if they take one (default 1)")
     p.add_argument("--n", type=int, default=20000)
@@ -200,7 +312,22 @@ def main():
                     help="only grant keyword_a when this real card-gate condition is true (default: unconditional)")
     p.add_argument("--condition-b", choices=sorted(CONDITIONS), default=None,
                     help="only grant keyword_b when this real card-gate condition is true (default: unconditional)")
+    p.add_argument("--die-bonus", choices=sorted(CONDITIONS), default=None,
+                    help="switch modes entirely: test a raw +1d6 Attack-line bonus gated on "
+                         "this condition (TRACE/STILL COUNTING's shape) instead of a keyword "
+                         "grant. keyword_a/keyword_b are ignored when this is set.")
+    p.add_argument("--die-bonus-color", choices=["R", "B", "G"], default="B",
+                    help="color of the special card in --die-bonus mode (default B, TRACE's own)")
+    p.add_argument("--die-bonus-stat", choices=["mind", "body", "soul"], default="mind",
+                    help="stat of the special card in --die-bonus mode (default mind, TRACE's own)")
     args = p.parse_args()
+
+    if args.die_bonus:
+        run_damage_bonus_test(args.die_bonus_color, args.die_bonus_stat, args.die_bonus, args.n)
+        return
+
+    if not args.keyword_a or not args.keyword_b:
+        p.error("keyword_a and keyword_b are required unless --die-bonus is given")
 
     cards = content.build_cards()
     deck_a, deck_b, counter_a, counter_b = build_test_cards(
