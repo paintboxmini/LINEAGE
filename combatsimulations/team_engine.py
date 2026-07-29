@@ -449,6 +449,9 @@ class Battle:
         self._this_turn_hit = {'actor': who, 'target': None, 'hit': False, 'color': None}
         # ROLLOUT/RHYTHM BREAK: see engine.py's Duel.take_turn for the full reasoning.
         who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
+        # STILL COUNTING: see engine.py's Duel.take_turn for the full reasoning.
+        if who.position != who._position_at_last_turn_start:
+            who._ever_repositioned = True
         who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"

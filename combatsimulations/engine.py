@@ -589,6 +589,10 @@ class Combatant:
         self.position = 'frontline'
         self._position_at_last_turn_start = self.position  # ROLLOUT/RHYTHM BREAK
         self._repositioned_since_last_turn = False          # tracking
+        self._ever_repositioned = False  # STILL COUNTING: cumulative across
+                                          # the whole combat, never reset (see
+                                          # take_turn, same check point as
+                                          # _repositioned_since_last_turn above)
         self.team = 0                    # 0 or 1; set by the Battle in team play
         # token stacks / flags
         self.resist = 0
@@ -1266,6 +1270,11 @@ class Duel:
         # before this turn's own actions can touch position — stays readable
         # (by myself or anyone else) until my next turn recomputes it.
         who._repositioned_since_last_turn = (who.position != who._position_at_last_turn_start)
+        # STILL COUNTING: same check, but cumulative across the whole combat
+        # (never reset, unlike the one-turn flag above) — "have you not
+        # changed position this combat," not "since your last turn."
+        if who.position != who._position_at_last_turn_start:
+            who._ever_repositioned = True
         who._position_at_last_turn_start = who.position
         who.cannot_defend = False
         who._anticipating = False        # ANTICIPATE, UNNAME, WEATHERED: self-clearing, "until my next turn"

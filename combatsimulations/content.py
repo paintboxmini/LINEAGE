@@ -1555,6 +1555,24 @@ def _rhythm_break_defense(engine, me, foe):
     if foe._shifted_positive or foe._used_wait:
         me.resist += 1
 
+# STILL COUNTING (Wall-Reader, `cards/wall-reader.md`) — found unregistered
+# entirely (2026-07-29 dice-pass audit): real canon text, never wired into
+# the sim. Unlike RHYTHM BREAK/CERTAIN CONTACT, Wall-Reader's other two
+# cards, this one wasn't promoted to core — stays a signature card here.
+# "Have not changed position this combat" is cumulative, not a one-turn
+# window like RHYTHM BREAK's `_repositioned_since_last_turn` — needed the
+# new `_ever_repositioned` tracker (engine.py's Combatant, set in both
+# engines' take_turn). Same base-roll/bonus-die split as TRACE: the base d6
+# respects a held Deadly/Weak stack via `_rolled_die`, the +1d6 bonus is an
+# independent second die via plain `roll()`, not routed through the stack.
+def _still_counting_dmg(engine, me, foe):
+    base = me.eff('soul') + _rolled_die(6, engine.rng, me)
+    if not me._ever_repositioned:
+        base += roll(6, engine.rng)
+    return base
+def _still_counting_defense(engine, me, foe):
+    me.resist += 1
+
 # IRON GRIP (was CORRECTION GRIP, Alignment Marshal) — unchanged mechanically.
 def _iron_grip_effect(engine, me, foe):
     apply_rooted(foe)
@@ -1966,6 +1984,8 @@ def build_cards():
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
+    add("STILL COUNTING", 'G', 'soul', 'both', 6,
+        damage=_still_counting_dmg, defense=_still_counting_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 8,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 6,
