@@ -276,11 +276,11 @@ def _blood_tithe_defense(engine, me, foe):
 
 
 def _gamblers_ruin_dmg(engine, me, foe):
-    die = roll(6, engine.rng)          # the DIE result explodes, not the total
+    die = roll(4, engine.rng)          # the DIE result explodes, not the total (d6 -> d4, 2026-07-29)
     total = me.body + die
     rerolls = 0
     while rerolls < 3 and die % 2 == 1:
-        die = roll(6, engine.rng)
+        die = roll(4, engine.rng)
         total += die
         rerolls += 1
     # Deadly/Weak apply once, to the attack overall, added after the
