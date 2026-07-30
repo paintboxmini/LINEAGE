@@ -2338,3 +2338,200 @@ ROSTER = {
     "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
     "jackalope": (JACKALOPE_STATS, JACKALOPE_DECK),  # Briarwatch Jackalope, CTR 5
 }
+
+
+# ============================ CARD_TAGS =======================================
+# Mechanical-category tags per card (2026-07-29, Drew: "let's make new card
+# buckets... build it out as tags in content.py") — supports the ongoing
+# dice-balance pass by letting keyword_lab.py (or a human) pull every card
+# that shares a mechanical shape, instead of eyeballing the pool by hand.
+#
+# A separate dict, not a Card.tags field threaded through all ~240 add()
+# calls — this stays reviewable as one block, and adding a new tag category
+# later means editing one dict, not touching hundreds of scattered
+# registrations. Keyed by bucket, not by card (Drew's own framing was
+# "a bucket for X" — this matches that shape directly: CARD_TAGS["movement"]
+# is the whole bucket). Tags aren't mutually exclusive — most cards carry
+# zero, some carry several (OVERDRIVE: keyword:deadly:self AND
+# keyword:evade:self AND keyword:quick:self AND cost:exhaust).
+#
+# Vocabulary:
+#   movement              — actually repositions self or foe (sets
+#                            .position); a card that only READS position for
+#                            a conditional check (GORE, NIP) isn't here
+#   initiative             — applies Initiative Shift X
+#   rps                    — alters reveal/RPS resolution itself, not just
+#                            the attack that follows it — rare and load-
+#                            bearing, matches Drew's own "rare RPS-changing
+#                            ones like Axiom" framing. All 7 confirmed:
+#                            AXIOM (axiom_ban), PARADOX (special_reveal),
+#                            AFTERIMAGE (special_reveal), EQUAL FOOTING/
+#                            ADAPT/CERTAINTY (wins_ties), FRAME-TRAP
+#                            (hardcoded name-check in both engines)
+#   keyword:<name>:self    — grants that keyword to the caster
+#   keyword:<name>:ally    — grants it to an ally (dead in 1v1 Duel — see
+#                            team_only below; needs keyword_lab.py --team)
+#   keyword:<name>:foe     — applies it to the foe (a Debuff)
+#                            (only deadly/resist/weak/vulnerable/evade/
+#                            thorns/blind/ward/immune/rooted/staggered/quick
+#                            are covered — the 12 keywords keyword_lab.py's
+#                            own KEYWORD_GRANTS already knows how to test)
+#   gated_damage           — a raw damage bonus (die or flat) on the Attack
+#                            line, gated on a condition or a cost, rather
+#                            than a keyword grant — doesn't fit any keyword
+#                            bucket at all. Confirmed by reading each hit,
+#                            not by text-matching "if" (that first pass
+#                            caught a false positive — TWIN STRIKE's "if"
+#                            is inside a RULING() comment string, not real
+#                            conditional logic)
+#   cost:hp / cost:exhaust / cost:discard
+#                          — self-cost mechanism paid to cast. (Injury-as-
+#                            cost checked directly, 2026-07-29 — no
+#                            registered card implements it; a generic
+#                            apply_injury() helper exists but nothing calls
+#                            it. cost:discard corrected down hard from an
+#                            initial rough-sweep guess of ~24 to a verified
+#                            3 — that sweep was matching "discard" anywhere,
+#                            including foe-forced-discard and Scry's own
+#                            discard routing, not discard-as-a-cost
+#                            specifically; cross-checked against actual
+#                            "discard a card"/"discard 1" phrasing in
+#                            cards/*.md, not just content.py code shape)
+#   heal                   — heals self or an ally
+#   scry                   — deck/hand manipulation (Scry, discard-then-draw)
+#   glyph                  — places a persistent Mason Glyph/Object
+#   ongoing                — deferred/anchored payout (me.ongoing.append)
+#   status_transfer        — moves a status between combatants (steal, copy,
+#                            mirror, strip, or push your own Injury/Exhaust
+#                            onto a foe) rather than granting a fresh one
+#   team_only              — reads "ally"/"allies" (engine.allies(...)) — a
+#                            real no-op in a 1v1 Duel; needs
+#                            keyword_lab.py's --team mode (2026-07-29) to
+#                            test at all. Verified via actual engine.allies(
+#                            calls, not a text grep — a naive "ally" search
+#                            over-matches on words like "finally"/"actually"
+#                            in comments
+#
+# Coverage note: every bucket above was verified by reading the actual
+# function bodies (grep the specific attribute mutation / engine call, then
+# read each hit), not by trusting a rough text sweep — an early pass had
+# real errors (movement's first draft included cards that only READ
+# position, not moved anyone; cost:exhaust missed OVERDRIVE; a rumored
+# ~7-card Injury-infliction bucket turned out to be zero cards, just the
+# word "Injury" in a couple of card names; cost:discard was off by 8x).
+# Two more incidental findings while verifying, worth naming rather than
+# quietly working around: SPIRAL CURRENT and ANALYZE both have a real
+# `_..._effect` function defined in this file but no add(...) registration
+# anywhere — dead code, not playable cards, excluded from every bucket
+# below. And GUTTERING (`cards/duskwick.md`) is real canon text but, like
+# STILL COUNTING before today, was never wired into the sim at all — also
+# excluded, since there's no registered card to tag.
+CARD_TAGS = {
+    "movement": frozenset({
+        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "FLOW",
+        "HEAVE AND HAUL", "MIRROR STEP", "NO VACANCY", "PHASE LOGIC",
+        "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
+        "SLIP THE BLADE", "TRAMPLE",
+    }),
+    "initiative": frozenset({
+        "ACCEPTANCE", "DELAY", "DOUBLE DOWN", "INTERRUPT", "MOCKERY",
+        "REBUTTAL", "RETALIATE", "URGENCY", "WARSONG",
+        "YOUR TURN WILL COME", "YOU'RE NEXT",
+    }),
+    "rps": frozenset({
+        "AXIOM", "PARADOX", "AFTERIMAGE", "EQUAL FOOTING", "ADAPT",
+        "CERTAINTY", "FRAME-TRAP",
+    }),
+
+    "keyword:deadly:self": frozenset({
+        "GAMBLER'S RUIN", "ALIGN", "SHARPEN", "STUDY", "RETALIATE",
+        "ADAPTIVE BITE", "OVERDRIVE", "PATIENCE OF STONE", "COMMUNION",
+        "SEED",
+    }),
+    "keyword:deadly:ally": frozenset({
+        "RESONATE", "SUPPORT", "RALLY", "SHARPEN", "WARSONG", "COMMUNION",
+        "ROOTED OATH",
+    }),
+    "keyword:weak:foe": frozenset({
+        "ANTICIPATE", "TWIN STRIKE", "REFRACT", "DEAD RECKONING", "CONSUME",
+        "WITHERING GLYPH",
+    }),
+    "keyword:resist:self": frozenset({
+        "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
+        "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN CONTACT",
+        "RHYTHM BREAK", "STILL COUNTING", "DARK CORRIDOR", "ROLLOUT",
+        "TABLE STAKES", "DIG IN", "SEED",
+    }),
+    "keyword:resist:ally": frozenset({"RESONATE", "GUARD", "ROOTED OATH"}),
+    "keyword:vulnerable:self": frozenset({"OVERCOMMIT"}),   # deliberate exception —
+        # every other real card applies Vulnerable to a foe (it's a Debuff);
+        # OVERCOMMIT self-inflicts it on purpose, card text says so directly
+    "keyword:evade:self": frozenset({
+        "SHARED BURDEN", "SLIPSTREAM", "PHASE LOGIC", "SLIP THE BLADE",
+        "SHADE AWAY", "GENETIC SAMPLE", "EXPOSED", "AFTERIMAGE", "OVERDRIVE",
+        "SHED SKIN", "FREEZE",
+    }),
+    "keyword:thorns:self": frozenset({
+        "BLOOD IN THE GAP", "PAIN IS FUEL", "ADAPTIVE BITE", "BARBED GLYPH",
+    }),
+    "keyword:blind:foe": frozenset({
+        "DEAD RECKONING", "SMOKE SCREEN", "CONSUME", "AFTERIMAGE",
+        "VIBRATION LOCK", "DARK CORRIDOR",
+    }),
+    "keyword:blind:self": frozenset({"SMOKE SCREEN"}),   # yes, both — SMOKE
+        # SCREEN blinds every enemy Frontline AND its own caster in the same effect
+    "keyword:ward:self": frozenset({
+        "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
+    }),
+    "keyword:immune:self": frozenset({"LAST RESORT"}),   # conditional: only below half HP
+    "keyword:rooted:foe": frozenset({
+        "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE",
+    }),
+    "keyword:staggered:foe": frozenset({
+        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES",
+    }),
+    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL"}),
+    "keyword:quick:ally": frozenset({"REALIGNMENT"}),
+
+    "gated_damage": frozenset({
+        "TRACE", "RHYTHM BREAK", "STILL COUNTING", "NIP", "UNDERSTANDING",
+        "BURN BRIGHT", "PATIENCE",
+    }),
+
+    "cost:hp": frozenset({
+        "SACRIFICE STRIKE", "BLOOD TITHE", "SHARED BURDEN", "RALLY", "ATTUNE",
+    }),
+    "cost:exhaust": frozenset({"OVERDRIVE", "UNMAKE"}),
+    "cost:discard": frozenset({"ATTUNE", "BALANCE", "UNDERSTANDING"}),
+
+    "heal": frozenset({
+        "BLOOD IN THE GAP", "BLOOD TITHE", "CLIFF SONG", "CONSUME",
+        "DISSOLVE AND KEEP", "EMERGENCY REPAIRS", "ENDURE", "FIELD MEDICINE",
+        "PARADOX", "PRESS THE INJURY", "RECOVER", "RENEWAL", "SHARED BURDEN",
+        "TABLE STAKES", "WITNESS",
+    }),
+    "scry": frozenset({
+        "ALIGN", "FOCUS", "FREEZE", "GENETIC SAMPLE", "PROFILE",
+        "REGISTERED", "STILL GROUND", "UNDERSTANDING", "VIBRATION LOCK",
+    }),
+    "glyph": frozenset({
+        "BARBED GLYPH", "CIPHER GLYPH", "HONING GLYPH", "MENDING GLYPH",
+        "MIRING GLYPH", "WITHERING GLYPH",
+    }),
+    "ongoing": frozenset({
+        "ATTUNE", "CLIMB", "DIG IN", "IRON GRIP", "THE LEDGER NEVER CLOSES",
+        "PATIENCE", "PATIENCE OF STONE", "ROOTED OATH", "SEED", "SLIPSTREAM",
+        "SYNCHRONY",
+    }),
+    "status_transfer": frozenset({
+        "WAITING GAME", "DRAIN", "UNMAKE", "LEVEL THE FIELD", "TRACE",
+        "CARRIED INJURY",
+    }),
+    "team_only": frozenset({
+        "ACCEPTANCE", "BLOOD TITHE", "CARRIED INJURY", "CLIFF SONG",
+        "COMMUNION", "FIELD MEDICINE", "GUARD", "HEAVE AND HAUL",
+        "PARTITION", "PATIENCE", "RALLY", "REALIGNMENT", "RENEWAL",
+        "RESONATE", "ROOTED OATH", "SHARED BURDEN", "SHARPEN", "SUPPORT",
+        "TABLE STAKES", "URGENCY", "WARSONG", "WITNESS",
+    }),
+}
