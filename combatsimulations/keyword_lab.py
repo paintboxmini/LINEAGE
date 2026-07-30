@@ -100,6 +100,21 @@ CONDITIONS = {
     # TRACE's real gate: did the foe's last two discards share a color? Same
     # check _trace_dmg itself makes (content._same_as_discard_top(foe)).
     "foe_discard_streak": lambda engine, me, foe: _same_as_discard_top(foe),
+    # TRACE's gate, "lowered by 1" (2026-07-29, Drew's own framing after the
+    # payoff-bump pass found the ~10% trigger rate itself was the actual
+    # problem, not either payoff form) — the real gate has no numeric dial
+    # to decrement, so this is a translation, flagged as one: instead of
+    # requiring the just-played card to match ONLY the single immediately-
+    # preceding discard, it also succeeds if it matches the one before that
+    # — one additional card added to the lookback window, the most literal
+    # "one step looser" reading of the actual mechanic. Test-only — not
+    # wired into content.py's real TRACE, which still matches
+    # foe_discard_streak exactly above.
+    "foe_discard_streak_loose": lambda engine, me, foe: (
+        len(foe.discard) >= 2
+        and (foe.discard[-1].color == foe.discard[-2].color
+             or (len(foe.discard) >= 3 and foe.discard[-1].color == foe.discard[-3].color))
+    ),
     # STILL COUNTING's real gate: "have you not changed position this
     # combat" — cumulative, not just since-last-turn (that's foe_moved's
     # job). No engine-level tracker for "ever repositioned" exists (only
