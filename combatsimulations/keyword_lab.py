@@ -202,39 +202,48 @@ def build_test_cards(cards, keyword_a, amount_a, keyword_b, amount_b,
     return deck_a, deck_b, counter_a, counter_b
 
 
-def _make_damage_bonus_fn(stat, condition, counter, base_die=6):
+def _make_damage_bonus_fn(stat, condition, counter, base_die=6, bonus_dice=1):
     """TRACE/STILL COUNTING's shape: base = stat + base_die (respects a held
-    Deadly/Weak stack, same as the real cards' own base roll), +1d6 more if
-    the gate is true (an independent second die, NOT routed through Deadly/
-    Weak — matches _trace_dmg's own comment on why its bonus uses plain
-    roll() instead of _rolled_die()). condition=None means the bonus always
-    applies (the UNGATED comparison case). base_die only scales the card's
-    OWN base roll — the "+1d6" bonus is a separate, independently-named
-    die in the real card text and stays d6 regardless (matches RHYTHM
-    BREAK's real shape: "Attack: Body + d8. If X, +1d6.")."""
+    Deadly/Weak stack, same as the real cards' own base roll), +bonus_dice
+    more d6 if the gate is true (independent dice, NOT routed through
+    Deadly/Weak — matches _trace_dmg's own comment on why its bonus uses
+    plain roll() instead of _rolled_die()). condition=None means the bonus
+    always applies (the UNGATED comparison case). base_die only scales the
+    card's OWN base roll — the bonus die(s) are a separate, independently-
+    named part of the real card text and stay d6 regardless (matches
+    RHYTHM BREAK's real shape: "Attack: Body + d8. If X, +1d6."). bonus_dice
+    is the payoff lever (default 1, matching the real "+1d6" text) — bump
+    to check what a bigger payoff does to a gate that's already at its
+    real trigger rate."""
     def fn(engine, me, foe):
         base = me.eff(stat) + _rolled_die(base_die, engine.rng, me)
+        bonus = sum(roll(6, engine.rng) for _ in range(bonus_dice))
         if condition is None:
-            return base + roll(6, engine.rng)
+            return base + bonus
         counter['total'] += 1
         if condition(engine, me, foe):
             counter['hit'] += 1
-            base += roll(6, engine.rng)
+            base += bonus
         return base
     return fn
 
 
 def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_name=None,
-                             counter=None, deck_id="", base_die=6):
+                             counter=None, deck_id="", base_die=6, bonus_dice=1):
     """One filler+1-special-card deck (same shape as build_test_cards) where
-    the special card's Attack line carries a raw +1d6 bonus instead of a
+    the special card's Attack line carries a raw +Nd6 bonus instead of a
     KEYWORD_GRANTS keyword — TRACE/STILL COUNTING's actual shape, which
     doesn't fit build_test_cards at all. mode is 'gated' (condition_name's
     real gate), 'ungated' (bonus always applies — isolates what the gate
-    costs), or 'plain' (no bonus at all — the vanilla-card baseline).
+    costs), or 'plain' (no bonus at all — the vanilla-card baseline;
+    bonus_dice has no effect in this mode).
     base_die scales only the SPECIAL card's own base roll (e.g. to check
     what a die-size bump does to TRACE) — filler stays d6 regardless, same
-    reasoning as build_test_cards's base_die_a/b.
+    reasoning as build_test_cards's base_die_a/b. bonus_dice scales the
+    gated payoff itself (e.g. to check what a bigger bonus does instead of
+    a bigger base die) — held equal between GATED and UNGATED so "cost of
+    the gate" is measured at the same payoff level, same principle as
+    base_die.
     needs_mover is decided once by the caller for the whole test (not
     per-deck) and applied to every mode uniformly — the MOVER card only
     matters for GATED's own condition, but if it changed the filler mix
@@ -262,42 +271,45 @@ def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_nam
     if mode == 'plain':
         fn = None
     elif mode == 'ungated':
-        fn = _make_damage_bonus_fn(stat, None, None, base_die)
+        fn = _make_damage_bonus_fn(stat, None, None, base_die, bonus_dice)
     else:  # gated
-        fn = _make_damage_bonus_fn(stat, CONDITIONS[condition_name], counter, base_die)
+        fn = _make_damage_bonus_fn(stat, CONDITIONS[condition_name], counter, base_die, bonus_dice)
     add("SPECIAL" + deck_id, color, stat, damage=fn, die=base_die)
 
     return filler + ["SPECIAL" + deck_id]
 
 
-def run_damage_bonus_test(color, stat, condition_name, n, base_die=6):
+def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice=1):
     """The 'different approach' TRACE/STILL COUNTING need: not keyword-vs-
     keyword, but GATED-vs-UNGATED (what does the gate itself cost?) and
     GATED-vs-PLAIN (is the gated card worth its slot at all?), holding
     color/stat/filler identical throughout so the gate is the only variable.
     base_die (default 6, the current printed die) lets a bumped die (e.g. 8)
     be checked the same way, PLAIN included, so "is it worth its slot"
-    reflects the same bumped base, not a stale d6 comparison."""
+    reflects the same bumped base, not a stale d6 comparison. bonus_dice
+    (default 1, the current printed "+1d6") lets a bigger payoff be checked
+    instead of/alongside a bigger die — the other lever named when TRACE
+    first came up as underpowered."""
     needs_mover = condition_name in _MOVER_CONDITIONS
     for opponent_mode, note in (("ungated", "cost of the gate itself"),
                                  ("plain", "value of the card at all")):
         cards = content.build_cards()
         counter = {"hit": 0, "total": 0}
         deck_gated = build_damage_bonus_deck(cards, color, stat, "gated", needs_mover, condition_name,
-                                              counter, deck_id="1", base_die=base_die)
+                                              counter, deck_id="1", base_die=base_die, bonus_dice=bonus_dice)
         deck_other = build_damage_bonus_deck(cards, color, stat, opponent_mode, needs_mover,
-                                              deck_id="2", base_die=base_die)
+                                              deck_id="2", base_die=base_die, bonus_dice=bonus_dice)
         run(n, deck_gated, deck_other, cards,
-            f"GATED({condition_name}, d{base_die}) vs {opponent_mode.upper()}(d{base_die}) [{note}]", counter, None)
+            f"GATED({condition_name}, d{base_die}+{bonus_dice}d6) vs {opponent_mode.upper()}(d{base_die}) [{note}]", counter, None)
         # swap sides to rule out going-first asymmetry
         cards2 = content.build_cards()
         counter2 = {"hit": 0, "total": 0}
         deck_other2 = build_damage_bonus_deck(cards2, color, stat, opponent_mode, needs_mover,
-                                               deck_id="1", base_die=base_die)
+                                               deck_id="1", base_die=base_die, bonus_dice=bonus_dice)
         deck_gated2 = build_damage_bonus_deck(cards2, color, stat, "gated", needs_mover, condition_name,
-                                               counter2, deck_id="2", base_die=base_die)
+                                               counter2, deck_id="2", base_die=base_die, bonus_dice=bonus_dice)
         run(n, deck_other2, deck_gated2, cards2,
-            f"{opponent_mode.upper()}(d{base_die}) vs GATED({condition_name}, d{base_die}) (sides swapped)", None, counter2)
+            f"{opponent_mode.upper()}(d{base_die}) vs GATED({condition_name}, d{base_die}+{bonus_dice}d6) (sides swapped)", None, counter2)
 
 
 def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
@@ -341,6 +353,10 @@ def main():
     p.add_argument("--die-bonus-base-die", type=int, choices=[2, 4, 6, 8, 10], default=6,
                     help="base die of the special card in --die-bonus mode (default 6) — bump "
                          "this to check what a die-size change does to a real gated card")
+    p.add_argument("--die-bonus-payoff-dice", type=int, default=1,
+                    help="number of d6 the gate grants in --die-bonus mode (default 1, matching "
+                         "the real '+1d6' text) — bump this to check what a bigger payoff does "
+                         "instead of/alongside a bigger base die")
     p.add_argument("--base-die-a", type=int, choices=[2, 4, 6, 8, 10], default=6,
                     help="base die of GRANT_A in keyword mode (default 6) — bump this to check "
                          "what a die-size change does to a real gated card")
@@ -350,7 +366,7 @@ def main():
 
     if args.die_bonus:
         run_damage_bonus_test(args.die_bonus_color, args.die_bonus_stat, args.die_bonus,
-                               args.n, args.die_bonus_base_die)
+                               args.n, args.die_bonus_base_die, args.die_bonus_payoff_dice)
         return
 
     if not args.keyword_a or not args.keyword_b:
