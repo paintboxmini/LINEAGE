@@ -91,11 +91,21 @@ def remove_positive_status(target):
 
 
 def _same_as_discard_top(target):
-    """TRACE's condition: did the card just played match what was already
-    sitting on top of the discard pile before it? discard[-1] is the just-
-    played card (already appended by the time Effect/Defense fires);
-    discard[-2] is whatever was on top before that."""
-    return len(target.discard) >= 2 and target.discard[-1].color == target.discard[-2].color
+    """TRACE's condition: did the card just played match either of the top
+    two cards already sitting in the discard pile before it? discard[-1] is
+    the just-played card (already appended by the time Effect/Defense
+    fires); discard[-2] and discard[-3] are what was on top before that.
+    Widened from checking only discard[-2] (2026-07-29, Drew: "lower
+    TRACE's gate by 1") — the keyword_lab dice-pass check found the ~10%
+    trigger rate on the original single-card check, not the payoff or base
+    die (both tried first and ruled out), was the actual reason the card
+    underperformed."""
+    d = target.discard
+    if len(d) < 2:
+        return False
+    if d[-1].color == d[-2].color:
+        return True
+    return len(d) >= 3 and d[-1].color == d[-3].color
 
 
 # ============================ FROST ==========================================
@@ -143,11 +153,14 @@ def _trace_dmg(engine, me, foe):
     # holding from an earlier card (was silently dropped before 2026-07-23 —
     # see _deadly_weak_bonus). Card text reworded 2026-07-28 to drop the word
     # "Deadly" entirely (Drew's call) — this was never the stackable keyword,
-    # just a flat conditional +1d6 on this attack's own roll; still a second,
-    # independent bonus die on top of any held stack, not routed through it.
+    # just a flat conditional bonus on this attack's own roll; still a
+    # second, independent bonus (now 2d6, bumped from 1d6 2026-07-29 —
+    # payoff alone didn't fix the card, per the dice-pass check, but shipped
+    # together with the widened gate above, not on its own) on top of any
+    # held stack, not routed through it.
     base = me.eff('mind') + _rolled_die(6, engine.rng, me)
     if _same_as_discard_top(foe):
-        base += roll(6, engine.rng)
+        base += roll(6, engine.rng) + roll(6, engine.rng)
     return base
 
 
