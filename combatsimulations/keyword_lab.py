@@ -43,6 +43,19 @@ PLAIN (is the gated card worth its slot at all). --die-bonus switches modes;
 keyword_a/keyword_b are ignored when it's set.
     python3 keyword_lab.py --die-bonus foe_discard_streak --die-bonus-color B --die-bonus-stat mind   # TRACE
     python3 keyword_lab.py --die-bonus self_never_moved --die-bonus-color G --die-bonus-stat soul     # STILL COUNTING
+
+Team battles (2026-07-29): everything above runs a 1v1 Duel, which is blind
+to anything that only matters with real teammates present — ally-targeting
+text ("target ally", "all allies") is a no-op in a Duel, and focus-fire /
+blocking-capacity dynamics (a combatant attacked several times between its
+own turns spends a card each block, so hands run dry) simply don't exist
+there. --team switches every mode above (keyword grants, conditions,
+die-bonus) to team_engine.Battle instead, with --team-size (default 3)
+combatants per side, all running the same real team policy (team_tactician)
+team_run.py itself uses — not a blanket default, opt in only when the
+mechanic under test is actually team-shaped.
+    python3 keyword_lab.py deadly evade --team                       # is Deadly still ahead with real teammates around?
+    python3 keyword_lab.py --die-bonus foe_moved --team --team-size 4
 """
 
 import argparse
@@ -52,6 +65,8 @@ import content
 from engine import Card, Combatant, Duel, roll, _rolled_die
 from content import _same_as_discard_top
 from policies import TacticianPolicy
+from team_engine import Battle
+from team_policies import make_team_policy
 
 # keyword -> (attr name on Combatant, is a bool flag rather than a stack,
 # is it a Debuff per card-glossary.md — i.e. does a real card apply it to the
@@ -294,7 +309,7 @@ def build_damage_bonus_deck(cards, color, stat, mode, needs_mover, condition_nam
     return filler + ["SPECIAL" + deck_id]
 
 
-def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice=1):
+def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice=1, runner=None):
     """The 'different approach' TRACE/STILL COUNTING need: not keyword-vs-
     keyword, but GATED-vs-UNGATED (what does the gate itself cost?) and
     GATED-vs-PLAIN (is the gated card worth its slot at all?), holding
@@ -304,7 +319,11 @@ def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice
     reflects the same bumped base, not a stale d6 comparison. bonus_dice
     (default 1, the current printed "+1d6") lets a bigger payoff be checked
     instead of/alongside a bigger die — the other lever named when TRACE
-    first came up as underpowered."""
+    first came up as underpowered. runner defaults to the 1v1 run() below;
+    pass run_team (or a partial binding team_size) to run this as a team
+    battle instead — the deck-building logic is identical either way, only
+    how the deck gets fought out changes."""
+    runner = runner or run
     needs_mover = condition_name in _MOVER_CONDITIONS
     for opponent_mode, note in (("ungated", "cost of the gate itself"),
                                  ("plain", "value of the card at all")):
@@ -314,8 +333,8 @@ def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice
                                               counter, deck_id="1", base_die=base_die, bonus_dice=bonus_dice)
         deck_other = build_damage_bonus_deck(cards, color, stat, opponent_mode, needs_mover,
                                               deck_id="2", base_die=base_die, bonus_dice=bonus_dice)
-        run(n, deck_gated, deck_other, cards,
-            f"GATED({condition_name}, d{base_die}+{bonus_dice}d6) vs {opponent_mode.upper()}(d{base_die}) [{note}]", counter, None)
+        runner(n, deck_gated, deck_other, cards,
+               f"GATED({condition_name}, d{base_die}+{bonus_dice}d6) vs {opponent_mode.upper()}(d{base_die}) [{note}]", counter, None)
         # swap sides to rule out going-first asymmetry
         cards2 = content.build_cards()
         counter2 = {"hit": 0, "total": 0}
@@ -323,8 +342,8 @@ def run_damage_bonus_test(color, stat, condition_name, n, base_die=6, bonus_dice
                                                deck_id="1", base_die=base_die, bonus_dice=bonus_dice)
         deck_gated2 = build_damage_bonus_deck(cards2, color, stat, "gated", needs_mover, condition_name,
                                                counter2, deck_id="2", base_die=base_die, bonus_dice=bonus_dice)
-        run(n, deck_other2, deck_gated2, cards2,
-            f"{opponent_mode.upper()}(d{base_die}) vs GATED({condition_name}, d{base_die}+{bonus_dice}d6) (sides swapped)", None, counter2)
+        runner(n, deck_other2, deck_gated2, cards2,
+               f"{opponent_mode.upper()}(d{base_die}) vs GATED({condition_name}, d{base_die}+{bonus_dice}d6) (sides swapped)", None, counter2)
 
 
 def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
@@ -337,6 +356,36 @@ def run(n, deck_a, deck_b, cards, label, counter_a=None, counter_b=None):
         wins[d.run()] += 1
         total_turns += d.turn_count
     print(f"{label}: A {wins['A']:6} ({100*wins['A']/n:5.1f}%)  "
+          f"B {wins['B']:6} ({100*wins['B']/n:5.1f}%)  "
+          f"TIE {wins.get('TIE', 0):6} ({100*wins.get('TIE', 0)/n:5.1f}%)  "
+          f"avg turns {total_turns/n:.1f}")
+    for tag, counter in (("A", counter_a), ("B", counter_b)):
+        if counter and counter["total"]:
+            pct = 100 * counter["hit"] / counter["total"]
+            print(f"    condition {tag}: true on {counter['hit']}/{counter['total']} plays ({pct:.1f}%)")
+
+
+def run_team(n, deck_a, deck_b, cards, label, team_size, counter_a=None, counter_b=None):
+    """Same A/B comparison as run() above, but team_size-vs-team_size via
+    team_engine.Battle instead of a 1v1 Duel — every teammate on a side
+    runs the identical deck (same isolate-one-variable principle as the
+    rest of this file, just with real allies now actually present for
+    ally-targeting text to reach), using team_tactician (team_policies.py),
+    the real team-aware policy team_run.py itself uses — TacticianPolicy
+    doesn't even have the right interface (it picks a single foe; team
+    battles pick a target among several)."""
+    wins = Counter()
+    total_turns = 0
+    for i in range(n):
+        team_a = [Combatant(f"A{j+1}", body=3, mind=3, soul=3, decklist=deck_a, policy=make_team_policy())
+                  for j in range(team_size)]
+        team_b = [Combatant(f"B{j+1}", body=3, mind=3, soul=3, decklist=deck_b, policy=make_team_policy())
+                  for j in range(team_size)]
+        battle = Battle(team_a, team_b, cards, seed=i)
+        result = battle.run()
+        wins[{0: 'A', 1: 'B', 'TIE': 'TIE'}[result]] += 1
+        total_turns += battle.turn_count
+    print(f"{label} [team x{team_size}]: A {wins['A']:6} ({100*wins['A']/n:5.1f}%)  "
           f"B {wins['B']:6} ({100*wins['B']/n:5.1f}%)  "
           f"TIE {wins.get('TIE', 0):6} ({100*wins.get('TIE', 0)/n:5.1f}%)  "
           f"avg turns {total_turns/n:.1f}")
@@ -377,11 +426,21 @@ def main():
                          "what a die-size change does to a real gated card")
     p.add_argument("--base-die-b", type=int, choices=[2, 4, 6, 8, 10], default=6,
                     help="base die of GRANT_B in keyword mode (default 6)")
+    p.add_argument("--team", action="store_true",
+                    help="run team_size-vs-team_size battles (team_engine.Battle) instead of "
+                         "1v1 duels, for cards/mechanics that only matter with real teammates "
+                         "present (ally-targeting text, focus-fire, blocking capacity) — not a "
+                         "default, opt in when the mechanic under test is actually team-shaped")
+    p.add_argument("--team-size", type=int, default=3,
+                    help="combatants per side in --team mode (default 3, matching team_run.py)")
     args = p.parse_args()
+
+    runner = (lambda n, da, db, c, label, ca=None, cb=None:
+              run_team(n, da, db, c, label, args.team_size, ca, cb)) if args.team else run
 
     if args.die_bonus:
         run_damage_bonus_test(args.die_bonus_color, args.die_bonus_stat, args.die_bonus,
-                               args.n, args.die_bonus_base_die, args.die_bonus_payoff_dice)
+                               args.n, args.die_bonus_base_die, args.die_bonus_payoff_dice, runner)
         return
 
     if not args.keyword_a or not args.keyword_b:
@@ -392,13 +451,13 @@ def main():
         cards, args.keyword_a, args.amount, args.keyword_b, args.amount,
         args.condition_a, args.condition_b, args.base_die_a, args.base_die_b)
 
-    run(args.n, deck_a, deck_b, cards, f"A={args.keyword_a}(d{args.base_die_a}) vs B={args.keyword_b}(d{args.base_die_b})", counter_a, counter_b)
+    runner(args.n, deck_a, deck_b, cards, f"A={args.keyword_a}(d{args.base_die_a}) vs B={args.keyword_b}(d{args.base_die_b})", counter_a, counter_b)
     # swap sides to rule out any going-first asymmetry
     cards2 = content.build_cards()
     deck_b2, deck_a2, counter_b2, counter_a2 = build_test_cards(
         cards2, args.keyword_b, args.amount, args.keyword_a, args.amount,
         args.condition_b, args.condition_a, args.base_die_b, args.base_die_a)
-    run(args.n, deck_b2, deck_a2, cards2, f"A={args.keyword_b}(d{args.base_die_b}) vs B={args.keyword_a}(d{args.base_die_a}) (sides swapped)", counter_b2, counter_a2)
+    runner(args.n, deck_b2, deck_a2, cards2, f"A={args.keyword_b}(d{args.base_die_b}) vs B={args.keyword_a}(d{args.base_die_a}) (sides swapped)", counter_b2, counter_a2)
 
 
 if __name__ == "__main__":
