@@ -77,7 +77,8 @@ def strip_positive_status(target):
 
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
-    Protect, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
+    Protect, Anchored, Quick. Quick is real now (OVERDRIVE, formerly
+    OVERCOMMIT's own mechanic before the 2026-07-29 split — engine.py's
     Duel.take_turn) — this docstring was stale from before that; a pending
     Quick grant is exactly as much a Positive Status Effect as the rest and
     belongs here too."""
@@ -1109,8 +1110,9 @@ def _staring_contest_defense(engine, me, foe):
 # it doesn't disturb existing regression behavior for decks without it.
 # Anchored and Quick are both skipped here (not by the same reasoning,
 # though): Anchored lives in `ongoing`, not a simple flag; Quick is real now
-# (OVERCOMMIT), just never asked to be copyable/stealable by either of these
-# two cards specifically.
+# (OVERDRIVE, formerly OVERCOMMIT's own mechanic before the 2026-07-29
+# split), just never asked to be copyable/stealable by either of these two
+# cards specifically.
 def _transfer_statuses(me, foe, count, steal):
     order = []
     if foe.deadly > 0:
@@ -1185,7 +1187,8 @@ def _strip_one_status(target, count=1):
 # normally a Positive-Status-Effect removal is exactly the kind of thing
 # Ward is supposed to stop (`warded()`'s own ruling text). Paid for with an
 # Exhaust cost — 2 (reduced from 3, 2026-07-24, Drew's call), same as
-# OVERCOMMIT's.
+# OVERDRIVE's (formerly OVERCOMMIT's own mechanic before the 2026-07-29
+# split).
 def _unmake_effect(engine, me, foe):
     remove_positive_status(foe)
     engine.insert_exhaust(me, 2)
@@ -1478,24 +1481,37 @@ def _emergency_repairs_effect(engine, me, foe):
 def _emergency_repairs_defense(engine, me, foe):
     _emergency_repairs_payout(engine, me, foe)
 
-# OVERCOMMIT (Gambler) — the archetype's actual thesis: a huge upfront
-# swing (all four Positive Status Effects at once) paid for with Exhaust,
-# which costs a full future action to ever clear (rules/card-glossary.md,
-# EXHAUST) rather than costing HP or a single hand card the way every
-# other cost mechanic shipped this session does. First card ever to grant
-# Quick — see engine.py's Duel.take_turn for how the free reposition
-# actually resolves.
-def _overcommit_payout(engine, me, foe):
+# OVERDRIVE (Gambler; was OVERCOMMIT's own mechanic until 2026-07-29 —
+# Drew's call, "OVERCOMMIT is just... too much rn," split into two cards:
+# this one keeps the original buff-bundle-for-Exhaust idea, OVERCOMMIT
+# itself became a plain strong attack, below) — the archetype's actual
+# thesis: a huge upfront swing (all four Positive Status Effects at once)
+# paid for with Exhaust, which costs a full future action to ever clear
+# (rules/card-glossary.md, EXHAUST) rather than costing HP or a single
+# hand card the way every other cost mechanic shipped this session does.
+# First card ever to grant Quick — see engine.py's Duel.take_turn for how
+# the free reposition actually resolves.
+def _overdrive_payout(engine, me, foe):
     me.deadly += 1
     me.resist += 1
     me._quick = True
     me.evade += 1
     engine.insert_exhaust(me, 2)
 
-def _overcommit_effect(engine, me, foe):
-    _overcommit_payout(engine, me, foe)
-def _overcommit_defense(engine, me, foe):
-    _overcommit_payout(engine, me, foe)
+def _overdrive_effect(engine, me, foe):
+    _overdrive_payout(engine, me, foe)
+def _overdrive_defense(engine, me, foe):
+    _overdrive_payout(engine, me, foe)
+
+# OVERCOMMIT (Gambler) — redesigned 2026-07-29 (Drew's call) from the
+# buff-bundle above (moved to OVERDRIVE) into what he described as "a
+# strong attack that self inflicts vulnerable." Self-cost lives on the
+# Attack line via damage=, same convention as SACRIFICE STRIKE's own "Pay
+# 3 HP" — applies only on a win (damage= never fires on a tie), not
+# unconditionally regardless of outcome.
+def _overcommit_dmg(engine, me, foe):
+    me.vulnerable += 1
+    return me.eff('body') + _rolled_die(10, engine.rng, me)
 
 # ==================== Bestiary promotions to core =============================
 # First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
@@ -1975,8 +1991,9 @@ def build_cards():
     add("SEED", 'G', 'soul', 'melee', 6, effect=_seed_effect, defense=_seed_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 6,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
-    add("OVERCOMMIT", 'R', 'body', 'melee', 6,
-        effect=_overcommit_effect, defense=_overcommit_defense)
+    add("OVERCOMMIT", 'R', 'body', 'melee', 10, damage=_overcommit_dmg)
+    add("OVERDRIVE", 'R', 'body', 'melee', 6,
+        effect=_overdrive_effect, defense=_overdrive_defense)
     # Bestiary promotions
     add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
