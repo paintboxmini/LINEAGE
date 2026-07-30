@@ -2071,7 +2071,10 @@ def build_cards():
         effect=_shade_away_effect, defense=_shade_away_defense)
     add("DEAD RECKONING", 'G', 'soul', 'ranged', 6,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
-    add("RETALIATE", 'R', 'body', 'melee', 6,
+    add("RETALIATE", 'R', 'body', 'melee', 8,   # d6 -> d8, 2026-07-29: below its own
+        # stat's baseline die (Body = d8, CLAUDE.md) at d6; the keyword_lab
+        # dice-pass check found this fixes the gate's real underpowered win
+        # rate (~46% -> ~51% vs a flat Evade+1 reference)
         effect=_retaliate_effect, defense=_retaliate_defense)
     add("WARSONG", 'G', 'soul', 'both', 6,
         effect=_warsong_effect, defense=_warsong_defense)

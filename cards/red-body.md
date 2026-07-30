@@ -375,6 +375,16 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
+Attack: Body + d10. Gain Vulnerable.
+Effect: None.
+Defensive Bonus: None.
+Range: Melee
+*"You don't swing like that unless you mean it."*
+
+---
+
+**OVERDRIVE**
+RED — BODY
 Attack: Body + d6
 Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
