@@ -93,6 +93,34 @@ SETS = {
             'MIRROR STEP', 'RENEWAL',
         ],
     },
+    'oracle': {
+        'title': 'Oracle Deck',
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # `../testcampaigndecks/oracle.md` — matches `content.py`'s ORACLE_DECK
+        # verbatim (20 Red / 20 Blue / 20 Green).
+        'cards': [
+            # Red (20)
+            'ATTRITION', 'BLINDSIDE', 'BLOOD IN THE GAP', 'CHARGE', 'ENDURE',
+            'EQUAL FOOTING', 'FOOTWORK', "GAMBLER'S RUIN", 'GORE', 'GUARD',
+            'OPEN GUARD', 'PAIN IS FUEL', 'PULL', 'REELING', 'REPEL',
+            'RETALIATE', 'SLIP THE BLADE', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            # Blue (20)
+            'ANTICIPATE', 'AXIOM', 'CALCULATE', 'CERTAINTY', 'DEAD END',
+            'DEFLECT', 'FOCUS', 'FORESEEN', 'INTERRUPT', 'LAST RESORT',
+            'MARKED', 'PHASE LOGIC', 'PROFILE', 'REALIGNMENT', 'REBUTTAL',
+            'REFRACT', 'RETORT', 'SHARPEN', 'STUDY', 'VEIL',
+            # Green (20)
+            'ADAPT', 'BALANCE', 'BIND', 'BRISTLE', 'COMMUNION',
+            'DEAD RECKONING', 'HEAVE AND HAUL', 'INSTINCT', 'MIRROR STEP',
+            'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'SMOKE SCREEN',
+            'STEADFAST', 'SUPPORT', 'TWIN STRIKE', 'UNTOUCHED', 'URGENCY',
+            "YOU'RE NEXT",
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
