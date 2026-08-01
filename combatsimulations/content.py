@@ -2391,12 +2391,20 @@ ROSTER = {
 #                            apply_injury() helper exists but nothing calls
 #                            it. cost:discard corrected down hard from an
 #                            initial rough-sweep guess of ~24 to a verified
-#                            3 — that sweep was matching "discard" anywhere,
+#                            7 — that sweep was matching "discard" anywhere,
 #                            including foe-forced-discard and Scry's own
 #                            discard routing, not discard-as-a-cost
-#                            specifically; cross-checked against actual
-#                            "discard a card"/"discard 1" phrasing in
-#                            cards/*.md, not just content.py code shape)
+#                            specifically. Still got 3 of the 7 wrong on the
+#                            first re-verification pass too (2026-07-29,
+#                            during the Oracle-deck curation): STUDY
+#                            ("Discard 2, draw 2"), TABLE STAKES ("Discard
+#                            1 random card..."), and ACCEPTANCE ("may
+#                            discard your hand...") don't match "discard a
+#                            card"/"discard 1" phrasing exactly, so a
+#                            pattern-based check missed them too — this
+#                            list is now from a full manual read of every
+#                            "discard" hit in the three core files, not a
+#                            phrase pattern)
 #   heal                   — heals self or an ally
 #   scry                   — deck/hand manipulation (Scry, discard-then-draw)
 #   glyph                  — places a persistent Mason Glyph/Object
@@ -2418,7 +2426,9 @@ ROSTER = {
 # real errors (movement's first draft included cards that only READ
 # position, not moved anyone; cost:exhaust missed OVERDRIVE; a rumored
 # ~7-card Injury-infliction bucket turned out to be zero cards, just the
-# word "Injury" in a couple of card names; cost:discard was off by 8x).
+# word "Injury" in a couple of card names; cost:discard was off by 8x on
+# the first pass, then still 3 cards short even after that correction —
+# see cost:discard's own note above for the full trail).
 # Two more incidental findings while verifying, worth naming rather than
 # quietly working around: SPIRAL CURRENT and ANALYZE both have a real
 # `_..._effect` function defined in this file but no add(...) registration
@@ -2502,7 +2512,10 @@ CARD_TAGS = {
         "SACRIFICE STRIKE", "BLOOD TITHE", "SHARED BURDEN", "RALLY", "ATTUNE",
     }),
     "cost:exhaust": frozenset({"OVERDRIVE", "UNMAKE"}),
-    "cost:discard": frozenset({"ATTUNE", "BALANCE", "UNDERSTANDING"}),
+    "cost:discard": frozenset({
+        "ATTUNE", "BALANCE", "UNDERSTANDING", "STUDY", "TABLE STAKES",
+        "ACCEPTANCE", "RENEWAL",
+    }),
 
     "heal": frozenset({
         "BLOOD IN THE GAP", "BLOOD TITHE", "CLIFF SONG", "CONSUME",
