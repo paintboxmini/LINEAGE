@@ -490,3 +490,43 @@ Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both
 *"Still standing counts for everything."*
+
+---
+
+**ATTRITION**
+RED — BODY
+Attack: Body + d6
+Effect: Target gains Weak.
+Defensive Bonus: Target gains Weak.
+Range: Melee
+*"Wear them down. That's the whole plan."*
+
+---
+
+**REELING**
+RED — BODY
+Attack: Body + d4
+Effect: Target gains Staggered.
+Defensive Bonus: Target gains Staggered.
+Range: Melee
+*"The second hit is always harder to see coming."*
+
+---
+
+**FOOTWORK**
+RED — BODY
+Attack: Body + d6
+Effect: Gain Quick.
+Defensive Bonus: Gain Quick.
+Range: Both
+*"Move first. Think later."*
+
+---
+
+**BLINDSIDE**
+RED — BODY
+Attack: Body + d8
+Effect: Target gains Blind.
+Defensive Bonus: Target gains Blind.
+Range: Melee
+*"They never see the one that matters."*

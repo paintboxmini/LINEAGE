@@ -1308,6 +1308,61 @@ def _untouched_defense(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
 
+# ATTRITION / REELING / FOOTWORK / BLINDSIDE (Red), RETORT / VEIL / DEAD END
+# (Blue), BRISTLE / INSTINCT (Green) — Oracle keyword-coverage pass, second
+# round, 2026-08-01: Weak, Staggered, Quick, and Blind were all at zero in
+# Red; Thorns and Rooted at zero in Blue; Thorns and Ward at zero in Green.
+# Every foe-debuff routes through the existing apply_weak/apply_staggered/
+# apply_blind/apply_rooted helpers (Ward-respecting); every self-buff
+# (Thorns, Quick, Ward) sets the attribute directly, matching how every
+# other self-buff of the same keyword already does it in this file (Thorns:
+# _pain_is_fuel_defense; Quick: _overdrive_payout; Ward: _deflect_effect) —
+# Ward never blocks a self-application, so these correctly skip debuff().
+def _attrition_effect(engine, me, foe):
+    apply_weak(foe)
+def _attrition_defense(engine, me, foe):
+    apply_weak(foe)
+
+def _reeling_effect(engine, me, foe):
+    apply_staggered(foe)
+def _reeling_defense(engine, me, foe):
+    apply_staggered(foe)
+
+def _footwork_effect(engine, me, foe):
+    me._quick = True
+def _footwork_defense(engine, me, foe):
+    me._quick = True
+
+def _blindside_effect(engine, me, foe):
+    apply_blind(foe)
+def _blindside_defense(engine, me, foe):
+    apply_blind(foe)
+
+def _retort_effect(engine, me, foe):
+    me.thorns += 1
+def _retort_defense(engine, me, foe):
+    me.thorns += 1
+
+def _veil_effect(engine, me, foe):
+    apply_blind(foe)
+def _veil_defense(engine, me, foe):
+    apply_blind(foe)
+
+def _dead_end_effect(engine, me, foe):
+    apply_rooted(foe)
+def _dead_end_defense(engine, me, foe):
+    apply_rooted(foe)
+
+def _bristle_effect(engine, me, foe):
+    me.thorns += 1
+def _bristle_defense(engine, me, foe):
+    me.thorns += 1
+
+def _instinct_effect(engine, me, foe):
+    me.ward = True
+def _instinct_defense(engine, me, foe):
+    me.ward = True
+
 # SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
 # Blind on the whole enemy Frontline was the card's actual identity, so it
 # stayed; the gating changed instead of the scope: minimum base die, melee
@@ -2127,6 +2182,12 @@ def build_cards():
         effect=_foreseen_effect, defense=_foreseen_defense)
     add("MARKED", 'B', 'mind', 'ranged', 6,
         effect=_marked_effect, defense=_marked_defense)
+    add("RETORT", 'B', 'mind', 'ranged', 4,
+        effect=_retort_effect, defense=_retort_defense)
+    add("VEIL", 'B', 'mind', 'ranged', 6,
+        effect=_veil_effect, defense=_veil_defense)
+    add("DEAD END", 'B', 'mind', 'ranged', 8,
+        effect=_dead_end_effect, defense=_dead_end_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
     add("STEADFAST", 'G', 'soul', 'melee', 4,
@@ -2135,10 +2196,22 @@ def build_cards():
         effect=_opening_effect, defense=_opening_defense)
     add("UNTOUCHED", 'G', 'soul', 'both', 8,
         effect=_untouched_effect, defense=_untouched_defense)
+    add("BRISTLE", 'G', 'soul', 'melee', 4,
+        effect=_bristle_effect, defense=_bristle_defense)
+    add("INSTINCT", 'G', 'soul', 'both', 6,
+        effect=_instinct_effect, defense=_instinct_defense)
     add("OPEN GUARD", 'R', 'body', 'melee', 6,
         effect=_open_guard_effect, defense=_open_guard_defense)
     add("UNBROKEN", 'R', 'body', 'both', 8,
         effect=_unbroken_effect, defense=_unbroken_defense)
+    add("ATTRITION", 'R', 'body', 'melee', 6,
+        effect=_attrition_effect, defense=_attrition_defense)
+    add("REELING", 'R', 'body', 'melee', 4,
+        effect=_reeling_effect, defense=_reeling_defense)
+    add("FOOTWORK", 'R', 'body', 'both', 6,
+        effect=_footwork_effect, defense=_footwork_defense)
+    add("BLINDSIDE", 'R', 'body', 'melee', 8,
+        effect=_blindside_effect, defense=_blindside_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 6,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     add("GENETIC SAMPLE", 'B', 'mind', 'both', 6,
@@ -2550,7 +2623,7 @@ CARD_TAGS = {
     }),
     "keyword:weak:foe": frozenset({
         "ANTICIPATE", "TWIN STRIKE", "REFRACT", "DEAD RECKONING", "CONSUME",
-        "WITHERING GLYPH",
+        "WITHERING GLYPH", "ATTRITION",
     }),
     "keyword:resist:self": frozenset({
         "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
@@ -2573,24 +2646,26 @@ CARD_TAGS = {
     }),
     "keyword:thorns:self": frozenset({
         "BLOOD IN THE GAP", "PAIN IS FUEL", "ADAPTIVE BITE", "BARBED GLYPH",
+        "RETORT", "BRISTLE",
     }),
     "keyword:blind:foe": frozenset({
         "DEAD RECKONING", "SMOKE SCREEN", "CONSUME", "AFTERIMAGE",
-        "VIBRATION LOCK", "DARK CORRIDOR",
+        "VIBRATION LOCK", "DARK CORRIDOR", "BLINDSIDE", "VEIL",
     }),
     "keyword:blind:self": frozenset({"SMOKE SCREEN"}),   # yes, both — SMOKE
         # SCREEN blinds every enemy Frontline AND its own caster in the same effect
     "keyword:ward:self": frozenset({
         "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
+        "INSTINCT",
     }),
     "keyword:immune:self": frozenset({"LAST RESORT", "UNBROKEN", "UNTOUCHED"}),   # all conditional: only below half HP
     "keyword:rooted:foe": frozenset({
-        "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE",
+        "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE", "DEAD END",
     }),
     "keyword:staggered:foe": frozenset({
-        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES",
+        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING",
     }),
-    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL"}),
+    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK"}),
     "keyword:quick:ally": frozenset({"REALIGNMENT"}),
 
     "gated_damage": frozenset({

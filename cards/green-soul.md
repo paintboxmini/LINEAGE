@@ -380,3 +380,23 @@ Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both
 *"You cannot strike what was never fully here."*
+
+---
+
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Melee
+*"Touch carefully. It touches back."*
+
+---
+
+**INSTINCT**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Ward.
+Defensive Bonus: Gain Ward.
+Range: Both
+*"The body knows before the mind agrees."*

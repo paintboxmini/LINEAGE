@@ -362,3 +362,33 @@ Effect: Target gains Vulnerable.
 Defensive Bonus: Target gains Vulnerable.
 Range: Ranged
 *"Once you've seen the pattern, you can't unsee it."*
+
+---
+
+**RETORT**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Ranged
+*"Every insult carries its own answer."*
+
+---
+
+**VEIL**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Target gains Blind.
+Defensive Bonus: Target gains Blind.
+Range: Ranged
+*"What you can't see, you can't counter."*
+
+---
+
+**DEAD END**
+BLUE — MIND
+Attack: Mind + d8
+Effect: Target gains Rooted.
+Defensive Bonus: Target gains Rooted.
+Range: Ranged
+*"Some paths were never actually open."*
