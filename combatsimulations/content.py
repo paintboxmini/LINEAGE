@@ -15,13 +15,12 @@ def warded(target):
     if target.ward:
         target.ward = False
         RULING("ward-blocks-debuff",
-               "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
-               "stat reductions, disabling a Defensive Bonus, Positive Status Effect "
-               "removal. Never RPS/Initiative/Position pillar manipulation, hand "
-               "manipulation (discard, hand reveal), deck manipulation (scry/reorder/"
-               "exile), or status-card injection (Injury/Exhaust) — (rules/card-glossary.md "
-               "Debuff, narrowed 2026-08-01) — those callers don't route through "
-               "warded() at all.")
+               "Ward/DEFLECT blocks exactly six things (rules/card-glossary.md Debuff, "
+               "narrowed 2026-08-01): Weak, Blind, Vulnerable, Staggered, Rooted, and "
+               "stat reductions. Never disabling a Defensive Bonus, Positive Status "
+               "Effect removal, RPS/Initiative/Position pillar manipulation, hand/deck "
+               "manipulation, or status-card injection — those callers don't route "
+               "through warded() at all.")
         return True
     return False
 
@@ -87,7 +86,11 @@ def apply_exhaust(engine, target, n=1):
 
 
 def strip_positive_status(target):
-    return debuff(target, lambda: remove_positive_status(target))
+    # No longer Ward-gated: Debuff narrowed to exactly Weak/Blind/Vulnerable/
+    # Staggered/Rooted/stat reductions on 2026-08-01 (rules/card-glossary.md);
+    # Positive Status Effect removal isn't one of the six.
+    remove_positive_status(target)
+    return True
 
 
 def remove_positive_status(target):
@@ -525,9 +528,11 @@ def _partition_defense(engine, me, foe):
 
 
 def _unname_effect(engine, me, foe):
-    # Ward-blockable (card-glossary.md, Debuff) — Drew's call 2026-07-24, for
-    # simplicity: a Debuff, full stop, no carved-out exception.
-    debuff(foe, lambda: setattr(foe, '_no_defensive_bonus', True))   # until foe's own next turn (take_turn clears it)
+    # No longer Ward-gated: Debuff narrowed to exactly Weak/Blind/Vulnerable/
+    # Staggered/Rooted/stat reductions on 2026-08-01 (rules/card-glossary.md);
+    # Defensive-Bonus-disable isn't one of the six. Matches DEAD HEAT's own
+    # identical effect, which was never gated in the first place.
+    foe._no_defensive_bonus = True   # until foe's own next turn (take_turn clears it)
 
 
 def _unname_defense(engine, me, foe):
