@@ -2122,7 +2122,7 @@ def build_cards():
     add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
     add("CALCULATE", 'B', 'mind', 'ranged', 8,
         effect=_calculate_effect, defense=_calculate_defense)
-    add("STUDY", 'B', 'mind', 'ranged', 8, effect=_study_effect, defense=_study_defense)
+    add("STUDY", 'B', 'mind', 'ranged', 4, effect=_study_effect, defense=_study_defense)
     add("PROFILE", 'B', 'mind', 'ranged', 6, effect=_profile_effect, defense=_profile_defense)
     add("REFRACT", 'B', 'mind', 'ranged', 4,
         effect=_refract_effect, defense=_refract_defense)
