@@ -2499,6 +2499,34 @@ PATIENT_HOST_DECK = [
 ]
 PATIENT_HOST_STATS = dict(body=6, mind=8, soul=10, hp=66)   # formula baseline would be 21 — boss exception
 
+# ORACLE — the full 60-card starter pool (testcampaigndecks/oracle.md), not
+# a real character build. Wired in 2026-08-01 so the whole curated pool can
+# actually be run through the sim (win rate, dice/keyword distribution
+# checks) instead of only existing as a markdown list. Mind3/Body3/Soul3 —
+# neutral, matching Frost/Steele's own baseline reference point, since the
+# Oracle itself isn't tied to any one character's stats. A 60-card decklist
+# is far outside the normal deck-size-matches-stats convention (same kind
+# of grandfathered exception as Frost/Steele's own 10-card decks) —
+# Combatant.decklist has no length constraint, confirmed directly.
+ORACLE_STATS = dict(mind=3, body=3, soul=3)
+ORACLE_DECK = [
+    # Red (20)
+    "ATTRITION", "BLINDSIDE", "BLOOD IN THE GAP", "CHARGE", "ENDURE",
+    "EQUAL FOOTING", "FOOTWORK", "GAMBLER'S RUIN", "GORE", "GUARD",
+    "OPEN GUARD", "PAIN IS FUEL", "PULL", "REELING", "REPEL", "RETALIATE",
+    "SLIP THE BLADE", "TRAMPLE", "UNBROKEN", "WEATHERED",
+    # Blue (20)
+    "ANTICIPATE", "AXIOM", "CALCULATE", "CERTAINTY", "DEAD END", "DEFLECT",
+    "FOCUS", "FORESEEN", "INTERRUPT", "LAST RESORT", "MARKED",
+    "PHASE LOGIC", "PROFILE", "REALIGNMENT", "REBUTTAL", "REFRACT",
+    "RETORT", "SHARPEN", "STUDY", "VEIL",
+    # Green (20)
+    "ADAPT", "BALANCE", "BIND", "BRISTLE", "COMMUNION", "DEAD RECKONING",
+    "HEAVE AND HAUL", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
+    "RESONATE", "SHADE AWAY", "SMOKE SCREEN", "STEADFAST", "SUPPORT",
+    "TWIN STRIKE", "UNTOUCHED", "URGENCY", "YOU'RE NEXT",
+]
+
 # registry so run.py can pit any two decks against each other
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
@@ -2521,6 +2549,7 @@ ROSTER = {
     "moss":    (MOSS_STATS, MOSS_DECK),        # Claude's side, same live 2v2 test, fully recorded
     "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
     "jackalope": (JACKALOPE_STATS, JACKALOPE_DECK),  # Briarwatch Jackalope, CTR 5
+    "oracle": (ORACLE_STATS, ORACLE_DECK),  # full 60-card starter pool, not a real character build
 }
 
 
