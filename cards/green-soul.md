@@ -14,7 +14,7 @@ Range: Both
 
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Target ally gains Deadly
 Defensive Bonus: Target ally draws 2
 Range: Ranged
@@ -35,7 +35,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: You may change position
 Defensive Bonus: You may change position
 Range: Melee
@@ -43,9 +43,19 @@ Range: Melee
 
 ---
 
+**EDDY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Move the defender to the other position.
+Defensive Bonus: Gain Quick.
+Range: Both
+*"The current doesn't ask permission."*
+
+---
+
 **RESONATE**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: All allies gain Deadly
 Defensive Bonus: All allies gain Resist 1
 Range: Ranged
@@ -105,7 +115,7 @@ Range: Ranged
 
 **COMMUNION**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: If you are attacked before your next turn, your party may scry 1
 Defensive Bonus: You and your allies gain Deadly
 Range: Ranged
@@ -146,8 +156,8 @@ Range: Melee
 **RENEWAL**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: All allies may discard 1 card then draw 1, or heal 2
-Defensive Bonus: Target Collapsed ally heals 6 HP
+Effect: All allies may discard 1 card then draw 1, or heal 4
+Defensive Bonus: Target Collapsed ally heals 8 HP
 Range: Both
 *"At the edge of becoming, all possibilities whisper their names."*
 
@@ -185,7 +195,7 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: The Defender gains 1 Rooted (cannot change position until the start of your next turn.)
 Defensive Bonus: The attacker gains 1 Rooted (can't change position next turn.)
 Range: Melee
@@ -255,7 +265,7 @@ Range: Ranged
 
 **DEAD RECKONING**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Defender gains Weak.
 Defensive Bonus: Attacker gains Blind.
 Range: Ranged
@@ -305,7 +315,7 @@ Range: Melee
 
 **HEAVE AND HAUL**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Choose a position. All enemies in that position move to the other position.
 Defensive Bonus: All allies may change position freely on their next turn.
 Range: Both
@@ -350,3 +360,53 @@ Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies,
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"Visibility is a luxury."*
+
+---
+
+**STEADFAST**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Melee
+*"The current breaks around what does not move."*
+
+---
+
+**OPENING**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
+Range: Melee
+*"There is always a moment. This is it."*
+
+---
+
+**UNTOUCHED**
+GREEN — SOUL
+Attack: Soul + d8
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"You cannot strike what was never fully here."*
+
+---
+
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Melee
+*"Touch carefully. It touches back."*
+
+---
+
+**INSTINCT**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Ward.
+Defensive Bonus: Gain Ward.
+Range: Both
+*"The body knows before the mind agrees."*

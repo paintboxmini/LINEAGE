@@ -25,12 +25,14 @@ Range: Melee
 ---
 
 **FREEZE**
-BLUE — MIND — BRIARWATCH
+BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 1.
+Effect: Scry 2.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"They disappear by refusing to move."*
+
+*Shared with Flapjack Octopus (`cards/flapjack-octopus.md`) — same card, same text, not a separate design.*
 
 ---
 

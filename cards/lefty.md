@@ -6,11 +6,21 @@ Signature cards for Lefty. See `characters/lefty.md`.
 
 ---
 
-**HOOK AND HAUL**
+**HEAVE**
 RED — BODY
 Attack: Body + d8
-Effect: Pull all enemies to your position.
-Defensive Bonus: Push all enemies to the opposite position.
+Effect: All enemies in the Frontline move to the Backline.
+Defensive Bonus: All enemies in the Frontline move to the Backline.
+Range: Melee
+*"One swing clears more room than a retreat ever could."*
+
+---
+
+**HAUL**
+RED — BODY
+Attack: Body + d8
+Effect: All enemies in the Backline move to the Frontline.
+Defensive Bonus: All enemies in the Backline move to the Frontline.
 Range: Melee
 *"The chain doesn't ask who it catches."*
 
@@ -29,7 +39,7 @@ Range: Melee
 **IRON ANCHOR**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Target gains Staggered.
+Effect: Defender gains Staggered.
 Defensive Bonus: Gain Protect.
 Range: Both
 *"One good throw is all the cross has ever needed."*

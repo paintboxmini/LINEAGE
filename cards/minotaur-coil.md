@@ -31,7 +31,7 @@ Range: Melee
 **MAZE SENSE**
 BLUE — MIND — COIL
 Attack: Mind + d4
-Effect: Scry 3 of target's deck.
+Effect: Scry 3 of Defender's deck.
 Defensive Bonus: Scry 2 of your own deck.
 Range: Both
 *"You are moving through its memory."*
@@ -81,7 +81,7 @@ Range: Both
 **INEVITABILITY**
 GREEN — SOUL — COIL
 Attack: Soul + d6
-Effect: Target gains Weak. If target is Rooted, also apply Staggered.
+Effect: Defender gains Weak. If Defender is Rooted, also apply Staggered.
 Defensive Bonus: Attacker gains Staggered.
 Range: Melee
 *"The bodies at the junctions were not surprises. Not to it."*

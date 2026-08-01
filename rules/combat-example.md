@@ -4,7 +4,7 @@ A complete combat played out beat by beat, with every rule cited as it fires. Wr
 
 The scenario is the standard day-2 road encounter: two Briar Scratchers contest the road to Briarwatch (`bestiary/briar-scratcher.md`). The party is Frost and Steele.
 
-**The decks below are illustrative, not canon.** They are built by the table's deck-building conventions (see `rules/cards.md` — Deck Building) to show legal construction. The party's real decks live in `testcampaigndecks/`.
+**The decks below are illustrative, not canon.** They are built by the table's deck-building conventions (see `rules/cards.md` — Deck Building) to show legal construction. The party's real decks live in `characters/frost.md` and `characters/steele.md`.
 
 ---
 

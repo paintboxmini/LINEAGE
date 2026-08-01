@@ -16,6 +16,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - Reveals are simultaneous and blind. Defending is a prediction, not a reaction.
 - **Hand size = Mind, minimum 2.** Blocking spends a card; hand is blocking capacity between turns.
 - HP = (2 × Body) + 9 is the baseline every generator offers; bosses may go bespoke, marked explicitly. **Deck size = total stats** (color counts = each stat; signatures count toward their color). **Creature Threat Rating = total stats** — the difficulty scale; player baseline is 9.
+- **Range counts derive from the same stat numbers as color counts, reassigned to range buckets**: Mind → Ranged, Body → Melee, Soul → Both. Within each range bucket, color mix should approximate the deck's overall color percentages rather than concentrating one color into one bucket (e.g. every Ranged card also being Blue) — that leaks color from publicly-known range legality during RPS prediction. Default starting point, not a hard constraint — real decks may deviate for a stated reason (Crimson/Sky, `combatsimulations/content.py`, lean into Frontline/Backline specialization on purpose rather than following this default). Worked example, Mind4/Body3/Soul2 (colors Blue4/Red3/Green2): ranges Ranged4/Melee3/Both2, each internally ~4/9 Blue, ~3/9 Red, ~2/9 Green. *(Drew's heuristic, 2026-07-28.)*
 - Positions: Frontline / Backline. Melee needs both frontline; ranged needs not-both-frontline; "Both" always legal.
 - Initiative: tokens placed clockwise in initiative order; a turn marker starts at 12 o'clock and advances one token per turn. **Wait** = forfeit action, choose a later slot (the party's sequencing tool). **Initiative Shift X** always moves the token the full distance — positive counterclockwise (never later), negative clockwise (never sooner); when that would violate the guarantee, a skip or bonus chip preserves it instead of altering the move. Full mechanic: `rules/combat.md`, `rules/card-glossary.md`; worked cases: `rules/initiative-shift-examples.md`.
 - Standard DC 13. Perception modes: Reason (Mind) / Senses (Body) / Read (Soul).
@@ -62,7 +63,7 @@ Range: Both
 *"Still is not the same as gone."*
 ```
 
-Enemy deck: **size = total stats, color counts = each stat** (signatures count toward their color); 3 signature + core to fill. "Ally" wording must survive **You Are Not Your Own Ally** (`rules/cards.md`) — no color is exempt.
+Enemy deck: **size = total stats, color counts = each stat** (signatures count toward their color); 3 signature + core to fill. Range counts derive the same way — see Engine Facts above. "Ally" wording must survive **You Are Not Your Own Ally** (`rules/cards.md`) — no color is exempt.
 
 ## Stat block skeleton
 

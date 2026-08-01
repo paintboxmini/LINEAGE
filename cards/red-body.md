@@ -106,7 +106,7 @@ Range: Both
 RED — BODY
 Attack: Body + d6
 Effect: Each time you are attacked before your next turn, heal 2 HP
-Defensive Bonus: Prevent next debuff
+Defensive Bonus: Gain Ward
 Range: Melee
 *"What doesn't break you, builds you."*
 
@@ -144,9 +144,9 @@ Range: Ranged
 
 **GAMBLER'S RUIN**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
-Defensive Bonus: Add 1d6 to your next attack
+Defensive Bonus: Gain Deadly
 Range: Melee
 *"Chaos does not promise victory. Only spectacle."*
 
@@ -164,8 +164,8 @@ Range: Melee
 
 **SACRIFICE STRIKE**
 RED — BODY
-Attack: Body + d10
-Effect: Pay 3 HP
+Attack: Body + d10. Pay 3 HP.
+Effect: None.
 Defensive Bonus: Pay 5 HP, Counter Attack
 Range: Melee
 *"Pain shared is power doubled."*
@@ -185,8 +185,8 @@ Range: Melee
 **BLOOD TITHE**
 RED — BODY
 Attack: Body + d6
-Effect: Pay 2 HP, target ally heals 4 HP
-Defensive Bonus: Pay 2 HP, target ally heals 6 HP
+Effect: Pay 2 HP, target ally heals 6 HP
+Defensive Bonus: Pay 2 HP, target ally heals 8 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 
@@ -335,7 +335,7 @@ Range: Ranged
 
 **RETALIATE**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Melee
@@ -375,6 +375,16 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
+Attack: Body + d10. Gain Vulnerable.
+Effect: None.
+Defensive Bonus: None.
+Range: Melee
+*"You don't swing like that unless you mean it."*
+
+---
+
+**OVERDRIVE**
+RED — BODY
 Attack: Body + d6
 Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
 Defensive Bonus: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
@@ -406,7 +416,7 @@ Range: Melee
 **IRON GRIP**
 RED — BODY
 Attack: Body + d8
-Effect: Target gains Rooted.
+Effect: Defender gains Rooted.
 Defensive Bonus: Anchored — heal 2 at the start of each of your turns.
 Range: Melee
 *"Stillness, enforced."*
@@ -460,3 +470,63 @@ Effect: On a clean win, immediately make another attack against the same defende
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Melee
 *"The house never minds a second bet."*
+
+---
+
+**OPEN GUARD**
+RED — BODY
+Attack: Body + d6
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
+Range: Melee
+*"Every stance has a seam."*
+
+---
+
+**UNBROKEN**
+RED — BODY
+Attack: Body + d8
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"Still standing counts for everything."*
+
+---
+
+**ATTRITION**
+RED — BODY
+Attack: Body + d6
+Effect: Defender gains Weak.
+Defensive Bonus: Attacker gains Weak.
+Range: Melee
+*"Wear them down. That's the whole plan."*
+
+---
+
+**REELING**
+RED — BODY
+Attack: Body + d4
+Effect: Defender gains Staggered.
+Defensive Bonus: Attacker gains Staggered.
+Range: Melee
+*"The second hit is always harder to see coming."*
+
+---
+
+**FOOTWORK**
+RED — BODY
+Attack: Body + d6
+Effect: Gain Quick.
+Defensive Bonus: Gain Quick.
+Range: Both
+*"Move first. Think later."*
+
+---
+
+**BLINDSIDE**
+RED — BODY
+Attack: Body + d8
+Effect: Defender gains Blind.
+Defensive Bonus: Attacker gains Blind.
+Range: Melee
+*"They never see the one that matters."*

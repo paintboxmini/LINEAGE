@@ -46,7 +46,9 @@ def est_damage(me, card):
     if card.name == "TWIN STRIKE":
         return 2 * (me.soul + 1.5)
     if card.name == "GAMBLER'S RUIN":
-        return me.body + 2.5 + 2.0  # explode expectation, rough
+        return me.body + 2.5 + 2.0  # 2.5 = d4 average (_AVG[4]) since the
+        # 2026-07-29 d6->d4 rebalance (content.py's _gamblers_ruin_dmg);
+        # explode expectation itself still rough
     if card.name == "BURN BRIGHT":
         return me.body + 3.5 + 2
     if card.name == "BECOMING":

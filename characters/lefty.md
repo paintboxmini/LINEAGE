@@ -27,7 +27,7 @@ Doesn't talk about the cave. Doesn't have to — everyone who was there already 
 
 ## Combat Identity
 
-Built to make a fight happen where he wants it, not where it started. HOOK AND HAUL drags every enemy on the field to him at once — the chain doesn't discriminate. IRON ANCHOR staggers what needs staggering and lets him volunteer to eat a hit meant for someone else in the same motion. HOLD FAST keeps him standing through all of it, since the whole plan only works as long as he's the one holding the line.
+Built to make a fight happen where he wants it, not where it started. HEAVE throws the whole enemy Frontline back; HAUL drags the whole enemy Backline in — the chain doesn't discriminate, it just decides which direction the fight moves. IRON ANCHOR staggers what needs staggering and lets him volunteer to eat a hit meant for someone else in the same motion. HOLD FAST keeps him standing through all of it, since the whole plan only works as long as he's the one holding the line.
 
 ---
 

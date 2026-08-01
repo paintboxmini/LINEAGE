@@ -14,7 +14,7 @@ Range: Ranged
 
 **SHARPEN**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Target ally gains Deadly
 Defensive Bonus: You gain Deadly
 Range: Both
@@ -24,7 +24,7 @@ Range: Both
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Move target enemy to backline
 Defensive Bonus: Move target to frontline
 Range: Ranged
@@ -44,7 +44,7 @@ Range: Melee
 
 **STUDY**
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d4
 Effect: Discard 2, draw 2
 Defensive Bonus: Gain Deadly
 Range: Ranged
@@ -74,7 +74,7 @@ Range: Ranged
 
 **REFRACT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Defender gains Weak
 Defensive Bonus: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
@@ -94,9 +94,9 @@ Range: Ranged
 
 **TRACE**
 BLUE — MIND
-Attack: Mind + d6. If the defender plays the same color as the top card of their discard pile, +1d6.
+Attack: Mind + d6. If the defender plays the same color as either of the top two cards of their discard pile, +2d6.
 Effect: None.
-Defensive Bonus: If the attacker plays the same color as the top card of their discard pile, remove their Positive Status Effects
+Defensive Bonus: If the attacker plays the same color as either of the top two cards of their discard pile, remove their Positive Status Effects
 Range: Ranged
 *"Cartographers see the second time before it happens."*
 
@@ -116,7 +116,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: When you are attacked before your next turn, draw 1 card before defending. Activates multiple times.
-Defensive Bonus: Target gains Weak
+Defensive Bonus: Attacker gains Weak
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
 
@@ -337,8 +337,58 @@ Range: Ranged
 
 **LAST RESORT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both
 *"When there's nothing left to protect, nothing gets through."*
+
+---
+
+**FORESEEN**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Ranged
+*"You already knew where the blow would land."*
+
+---
+
+**MARKED**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
+Range: Ranged
+*"Once you've seen the pattern, you can't unsee it."*
+
+---
+
+**RETORT**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Ranged
+*"Every insult carries its own answer."*
+
+---
+
+**VEIL**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Blind.
+Defensive Bonus: Attacker gains Blind.
+Range: Ranged
+*"What you can't see, you can't counter."*
+
+---
+
+**DEAD END**
+BLUE — MIND
+Attack: Mind + d8
+Effect: Defender gains Rooted.
+Defensive Bonus: Attacker gains Rooted.
+Range: Ranged
+*"Some paths were never actually open."*

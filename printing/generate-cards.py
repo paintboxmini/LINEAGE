@@ -64,6 +64,63 @@ SETS = {
             '../cards/mason-glyphs.md',
         ],
     },
+    'frost': {
+        'title': "Frost's Deck",
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # `../characters/frost.md` — order matches that file's own
+        # Red/Blue/Green grouping, not registration order in the core files.
+        'cards': [
+            'SACRIFICE STRIKE', 'BLOOD IN THE GAP', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
+            'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
+            'TWIN STRIKE',
+        ],
+    },
+    'steele': {
+        'title': "Steele's Deck",
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # `../characters/steele.md`
+        'cards': [
+            'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
+            'FORGET', 'PARADOX', 'ALIGN', 'ANTICIPATE',
+            'MIRROR STEP', 'RENEWAL',
+        ],
+    },
+    'oracle': {
+        'title': 'Oracle Deck',
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
+        # verbatim (20 Red / 20 Blue / 20 Green).
+        'cards': [
+            # Red (20)
+            'ATTRITION', 'BLINDSIDE', 'BLOOD IN THE GAP', 'CHARGE', 'ENDURE',
+            'EQUAL FOOTING', 'FOOTWORK', "GAMBLER'S RUIN", 'GORE', 'GUARD',
+            'OPEN GUARD', 'PAIN IS FUEL', 'PULL', 'PUSH', 'REELING',
+            'RETALIATE', 'SLIP THE BLADE', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            # Blue (20)
+            'ANTICIPATE', 'AXIOM', 'CALCULATE', 'CERTAINTY', 'DEAD END',
+            'DEFLECT', 'FOCUS', 'FORESEEN', 'INTERRUPT', 'LAST RESORT',
+            'MARKED', 'PHASE LOGIC', 'PROFILE', 'REALIGNMENT', 'REBUTTAL',
+            'REFRACT', 'RETORT', 'SHARPEN', 'STUDY', 'VEIL',
+            # Green (20)
+            'ADAPT', 'BALANCE', 'BIND', 'BRISTLE', 'COMMUNION',
+            'DEAD RECKONING', 'EDDY', 'INSTINCT', 'MIRROR STEP',
+            'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'SMOKE SCREEN',
+            'STEADFAST', 'SUPPORT', 'TWIN STRIKE', 'UNTOUCHED', 'URGENCY',
+            "YOU'RE NEXT",
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -203,12 +260,24 @@ def load_set(set_name):
     parser = parse_items if is_items else parse_cards
 
     seen = set()
+    by_name = {}
     all_cards = []
     for f in cfg['files']:
         for card in parser(f):
             if card['name'] not in seen:
                 seen.add(card['name'])
                 all_cards.append(card)
+                by_name[card['name']] = card
+
+    # Optional explicit whitelist (e.g. a specific character's deck) — filters
+    # and reorders to match the list exactly, instead of every card in `files`.
+    if 'cards' in cfg:
+        missing = [n for n in cfg['cards'] if n not in by_name]
+        if missing:
+            raise SystemExit(f"generate-cards.py: card(s) not found for set "
+                              f"'{set_name}': {', '.join(missing)}")
+        return [by_name[n] for n in cfg['cards']]
+
     return all_cards
 
 

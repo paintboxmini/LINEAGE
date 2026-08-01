@@ -15,7 +15,7 @@ Range: Melee
 **ENVELOPING PRESS**
 RED — BODY
 Attack: Body + d6
-Effect: Target gains Rooted until start of their next turn. Ends Flatten.
+Effect: Defender gains Rooted until start of their next turn. Ends Flatten.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*
@@ -35,7 +35,7 @@ Range: Melee
 **INK BURST**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Target gains Weak on their next attack. Ends Flatten.
+Effect: Defender gains Weak on their next attack. Ends Flatten.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
@@ -89,3 +89,7 @@ Effect: Reposition freely to any position. Immediately Flatten. Gain Evade.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Gone before the ink clears."*
+
+---
+
+*FREEZE is shared with Briarwatch Jackalope (`cards/briarwatch-jackalope.md`) — same card, same text (Scry 2), not a separate design. Flapjack Octopus's deck uses that entry in its place.*

@@ -51,6 +51,15 @@ def apply_weak(target, n=1):
     debuff(target, lambda: setattr(target, 'weak', target.weak + n))
 
 
+def apply_vulnerable(target, n=1):
+    """No card applied Vulnerable to a foe anywhere in the pool before
+    2026-08-01 (OVERCOMMIT's is a deliberate self-inflicted exception, not
+    routed through debuff() since Ward never blocks a self-application) —
+    the Oracle keyword-coverage pass needed it for real, so it's built here
+    the same shape as apply_weak/apply_blind, not invented fresh."""
+    debuff(target, lambda: setattr(target, 'vulnerable', target.vulnerable + n))
+
+
 def apply_rooted(target):
     debuff(target, lambda: setattr(target, 'rooted', True))
 
@@ -77,7 +86,8 @@ def strip_positive_status(target):
 
 def remove_positive_status(target):
     """Positive Status Effects (rules/card-glossary.md): Evade, Resist, Deadly,
-    Protect, Anchored, Quick. Quick is real now (OVERCOMMIT, engine.py's
+    Protect, Anchored, Quick. Quick is real now (OVERDRIVE, formerly
+    OVERCOMMIT's own mechanic before the 2026-07-29 split — engine.py's
     Duel.take_turn) — this docstring was stale from before that; a pending
     Quick grant is exactly as much a Positive Status Effect as the rest and
     belongs here too."""
@@ -90,11 +100,21 @@ def remove_positive_status(target):
 
 
 def _same_as_discard_top(target):
-    """TRACE's condition: did the card just played match what was already
-    sitting on top of the discard pile before it? discard[-1] is the just-
-    played card (already appended by the time Effect/Defense fires);
-    discard[-2] is whatever was on top before that."""
-    return len(target.discard) >= 2 and target.discard[-1].color == target.discard[-2].color
+    """TRACE's condition: did the card just played match either of the top
+    two cards already sitting in the discard pile before it? discard[-1] is
+    the just-played card (already appended by the time Effect/Defense
+    fires); discard[-2] and discard[-3] are what was on top before that.
+    Widened from checking only discard[-2] (2026-07-29, Drew: "lower
+    TRACE's gate by 1") — the keyword_lab dice-pass check found the ~10%
+    trigger rate on the original single-card check, not the payoff or base
+    die (both tried first and ruled out), was the actual reason the card
+    underperformed."""
+    d = target.discard
+    if len(d) < 2:
+        return False
+    if d[-1].color == d[-2].color:
+        return True
+    return len(d) >= 3 and d[-1].color == d[-3].color
 
 
 # ============================ FROST ==========================================
@@ -142,11 +162,14 @@ def _trace_dmg(engine, me, foe):
     # holding from an earlier card (was silently dropped before 2026-07-23 —
     # see _deadly_weak_bonus). Card text reworded 2026-07-28 to drop the word
     # "Deadly" entirely (Drew's call) — this was never the stackable keyword,
-    # just a flat conditional +1d6 on this attack's own roll; still a second,
-    # independent bonus die on top of any held stack, not routed through it.
+    # just a flat conditional bonus on this attack's own roll; still a
+    # second, independent bonus (now 2d6, bumped from 1d6 2026-07-29 —
+    # payoff alone didn't fix the card, per the dice-pass check, but shipped
+    # together with the widened gate above, not on its own) on top of any
+    # held stack, not routed through it.
     base = me.eff('mind') + _rolled_die(6, engine.rng, me)
     if _same_as_discard_top(foe):
-        base += roll(6, engine.rng)
+        base += roll(6, engine.rng) + roll(6, engine.rng)
     return base
 
 
@@ -172,8 +195,13 @@ def _axiom_effect(engine, me, foe):
     engine._say(f"    AXIOM bans {color} on {foe.name}'s next reveal")
 
 
-def _sacrifice_strike_effect(engine, me, foe):
-    engine.deal(me, 3, unpreventable=True)  # "Pay 3 HP" — a self-cost on win
+def _sacrifice_strike_dmg(engine, me, foe):
+    # Reworded 2026-07-28 (Drew's call): "Pay 3 HP" moved from Effect (which
+    # fires on a win OR a tie) onto the Attack line — damage() only ever runs
+    # on an attacker win, so this narrows the cost to win-only, dropping the
+    # old tie case entirely. Effect is genuinely None now, not just relabeled.
+    engine.deal(me, 3, unpreventable=True)
+    return me.eff('body') + _rolled_die(10, engine.rng, me)
 
 
 def _sacrifice_strike_defense(engine, me, foe):
@@ -258,24 +286,24 @@ def _forget_defense(engine, me, foe):
 
 def _blood_tithe_effect(engine, me, foe):
     engine.deal(me, 2, unpreventable=True)
-    allies = engine.allies(me)     # heal the most-hurt ally 4 (dead in 1v1)
-    if allies:
-        engine.heal(min(allies, key=lambda a: a.hp), 4, source=me)
-
-
-def _blood_tithe_defense(engine, me, foe):
-    engine.deal(me, 2, unpreventable=True)   # "Pay 2 HP"
-    allies = engine.allies(me)             # heal the most-hurt ally 6 (dead in 1v1)
+    allies = engine.allies(me)     # heal the most-hurt ally 6 (dead in 1v1)
     if allies:
         engine.heal(min(allies, key=lambda a: a.hp), 6, source=me)
 
 
+def _blood_tithe_defense(engine, me, foe):
+    engine.deal(me, 2, unpreventable=True)   # "Pay 2 HP"
+    allies = engine.allies(me)             # heal the most-hurt ally 8 (dead in 1v1)
+    if allies:
+        engine.heal(min(allies, key=lambda a: a.hp), 8, source=me)
+
+
 def _gamblers_ruin_dmg(engine, me, foe):
-    die = roll(6, engine.rng)          # the DIE result explodes, not the total
+    die = roll(4, engine.rng)          # the DIE result explodes, not the total (d6 -> d4, 2026-07-29)
     total = me.body + die
     rerolls = 0
     while rerolls < 3 and die % 2 == 1:
-        die = roll(6, engine.rng)
+        die = roll(4, engine.rng)
         total += die
         rerolls += 1
     # Deadly/Weak apply once, to the attack overall, added after the
@@ -286,7 +314,11 @@ def _gamblers_ruin_dmg(engine, me, foe):
 
 
 def _gamblers_ruin_defense(engine, me, foe):
-    me.next_attack_bonus += roll(6, engine.rng)
+    # Reworded 2026-07-28 (Drew's call) — was a pre-rolled flat bonus banked
+    # in next_attack_bonus, now the real Deadly stack: rolled fresh whenever
+    # the next attack actually happens, consumable/cancelable like any other
+    # held Deadly, and correctly respected by _deadly_weak_bonus everywhere.
+    me.deadly += 1
 
 
 def _repel_effect(engine, me, foe):
@@ -373,13 +405,13 @@ def _renewal_effect(engine, me, foe):
             if c:
                 a.hand.append(c)
         else:
-            engine.heal(a, 2, source=me)
+            engine.heal(a, 4, source=me)
 
 
 def _renewal_defense(engine, me, foe):
     downed = engine.downed_allies(me)
     if downed:
-        engine.heal(downed[0], 6, source=me)   # revival heal — source= places them right after me in the wheel
+        engine.heal(downed[0], 8, source=me)   # revival heal — source= places them right after me in the wheel
 
 
 def _twin_strike_defense(engine, me, foe):
@@ -812,6 +844,12 @@ def _communion_defense(engine, me, foe):
 def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
         c.position = 'backline' if c.position == 'frontline' else 'frontline'
+# Defensive Bonus ("Allies gain 1 Quick") was text-only until 2026-08-01 —
+# `add()` below never passed a `defense=` at all. Same pattern as
+# REALIGNMENT's own ally-Quick grant, which does work.
+def _mirror_step_defense(engine, me, foe):
+    for a in engine.allies(me):
+        a._quick = True
 
 # ADAPT (Green), EQUAL FOOTING (Red), and CERTAINTY (Blue) below are the
 # "wins ties" Special Rule family — vanilla otherwise, no effect/defense
@@ -1068,6 +1106,19 @@ def _flow_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
 _flow_defense = _flow_effect
 
+# EDDY (Oracle, 2026-08-01) — replaces HEAVE AND HAUL in the Oracle list;
+# HEAVE AND HAUL itself is untouched, still a real playable core card (still
+# in `warper`'s deck), just too strong for a starter pool: all-enemies forced
+# movement plus a team-wide free Quick on one card. EDDY keeps the same
+# niche (Green movement manipulation) at starter scale — single-target,
+# same toggle pattern as FLOW/REALIGNMENT but on the foe instead of self —
+# with Quick moved to its own line, self-only, so Green keeps a working
+# Quick source in the Oracle without carrying the original card's stacking.
+def _eddy_effect(engine, me, foe):
+    foe.position = 'backline' if foe.position == 'frontline' else 'frontline'
+def _eddy_defense(engine, me, foe):
+    me._quick = True
+
 def _shade_away_effect(engine, me, foe):
     me.evade += 1
 def _shade_away_defense(engine, me, foe):
@@ -1100,8 +1151,9 @@ def _staring_contest_defense(engine, me, foe):
 # it doesn't disturb existing regression behavior for decks without it.
 # Anchored and Quick are both skipped here (not by the same reasoning,
 # though): Anchored lives in `ongoing`, not a simple flag; Quick is real now
-# (OVERCOMMIT), just never asked to be copyable/stealable by either of these
-# two cards specifically.
+# (OVERDRIVE, formerly OVERCOMMIT's own mechanic before the 2026-07-29
+# split), just never asked to be copyable/stealable by either of these two
+# cards specifically.
 def _transfer_statuses(me, foe, count, steal):
     order = []
     if foe.deadly > 0:
@@ -1176,7 +1228,8 @@ def _strip_one_status(target, count=1):
 # normally a Positive-Status-Effect removal is exactly the kind of thing
 # Ward is supposed to stop (`warded()`'s own ruling text). Paid for with an
 # Exhaust cost — 2 (reduced from 3, 2026-07-24, Drew's call), same as
-# OVERCOMMIT's.
+# OVERDRIVE's (formerly OVERCOMMIT's own mechanic before the 2026-07-29
+# split).
 def _unmake_effect(engine, me, foe):
     remove_positive_status(foe)
     engine.insert_exhaust(me, 2)
@@ -1220,6 +1273,115 @@ def _last_resort_defense(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
 
+# FORESEEN (Oracle starter deck, 2026-08-01) — plain unconditional Resist
+# both sides, same shape as BRACE (Red)/PAIN IS FUEL (Red)'s bare grants.
+# Built to fill a real, measured gap: Blue's Oracle-19 had no clean,
+# unconditional self-Resist card (ALIGN's is conditional on a shared-color
+# check) — checked via CARD_TAGS["keyword:resist:self"] before writing
+# this, not assumed.
+def _foreseen_effect(engine, me, foe):
+    me.resist += 1
+def _foreseen_defense(engine, me, foe):
+    me.resist += 1
+
+# OPEN GUARD / MARKED / OPENING (Oracle keyword-coverage pass, 2026-08-01) —
+# one per color, plain unconditional Vulnerable on the foe both sides. Fills
+# the starkest gap the outside-designer review found: Vulnerable was at
+# zero anywhere in the Oracle-59, and checking further, zero anywhere in
+# the whole 240-card pool except OVERCOMMIT's own deliberate self-exception
+# (see apply_vulnerable's docstring). Same bare-grant shape as
+# FORESEEN/STEADFAST — under-designed on purpose, matching the pool's own
+# bar, not an oversight.
+def _open_guard_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _open_guard_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+def _marked_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _marked_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+def _opening_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _opening_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+# UNBROKEN / UNTOUCHED (Oracle keyword-coverage pass, 2026-08-01) — same
+# exact shape as LAST RESORT (Blue): "if your HP is 6 or less, gain
+# Immunity," both sides. Immune was at 1 total across the whole Oracle-59
+# (LAST RESORT itself, conditional) and zero in Red/Green specifically —
+# matching LAST RESORT's own threshold exactly rather than picking a new,
+# unexplained number.
+def _unbroken_effect(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+def _unbroken_defense(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+
+def _untouched_effect(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+def _untouched_defense(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+
+# ATTRITION / REELING / FOOTWORK / BLINDSIDE (Red), RETORT / VEIL / DEAD END
+# (Blue), BRISTLE / INSTINCT (Green) — Oracle keyword-coverage pass, second
+# round, 2026-08-01: Weak, Staggered, Quick, and Blind were all at zero in
+# Red; Thorns and Rooted at zero in Blue; Thorns and Ward at zero in Green.
+# Every foe-debuff routes through the existing apply_weak/apply_staggered/
+# apply_blind/apply_rooted helpers (Ward-respecting); every self-buff
+# (Thorns, Quick, Ward) sets the attribute directly, matching how every
+# other self-buff of the same keyword already does it in this file (Thorns:
+# _pain_is_fuel_defense; Quick: _overdrive_payout; Ward: _deflect_effect) —
+# Ward never blocks a self-application, so these correctly skip debuff().
+def _attrition_effect(engine, me, foe):
+    apply_weak(foe)
+def _attrition_defense(engine, me, foe):
+    apply_weak(foe)
+
+def _reeling_effect(engine, me, foe):
+    apply_staggered(foe)
+def _reeling_defense(engine, me, foe):
+    apply_staggered(foe)
+
+def _footwork_effect(engine, me, foe):
+    me._quick = True
+def _footwork_defense(engine, me, foe):
+    me._quick = True
+
+def _blindside_effect(engine, me, foe):
+    apply_blind(foe)
+def _blindside_defense(engine, me, foe):
+    apply_blind(foe)
+
+def _retort_effect(engine, me, foe):
+    me.thorns += 1
+def _retort_defense(engine, me, foe):
+    me.thorns += 1
+
+def _veil_effect(engine, me, foe):
+    apply_blind(foe)
+def _veil_defense(engine, me, foe):
+    apply_blind(foe)
+
+def _dead_end_effect(engine, me, foe):
+    apply_rooted(foe)
+def _dead_end_defense(engine, me, foe):
+    apply_rooted(foe)
+
+def _bristle_effect(engine, me, foe):
+    me.thorns += 1
+def _bristle_defense(engine, me, foe):
+    me.thorns += 1
+
+def _instinct_effect(engine, me, foe):
+    me.ward = True
+def _instinct_defense(engine, me, foe):
+    me.ward = True
+
 # SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
 # Blind on the whole enemy Frontline was the card's actual identity, so it
 # stayed; the gating changed instead of the scope: minimum base die, melee
@@ -1239,6 +1401,15 @@ def _smoke_screen_effect(engine, me, foe):
     apply_blind(me)
 def _smoke_screen_defense(engine, me, foe):
     apply_blind(foe)
+
+# STEADFAST (Oracle starter deck, 2026-08-01) — plain unconditional Resist
+# both sides, same shape as FORESEEN (Blue) above. Same real, measured gap
+# on the Green side: Green's Oracle-19 had zero self-Resist grants at all
+# (RESONATE's is ally-only), checked via CARD_TAGS before writing this.
+def _steadfast_effect(engine, me, foe):
+    me.resist += 1
+def _steadfast_defense(engine, me, foe):
+    me.resist += 1
 
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
@@ -1343,7 +1514,7 @@ def _consume_defense(engine, me, foe):
 
 # BECOMING (colorless) — the Oracle-drafting card. Unmodeled beyond a safe
 # zero-damage function, same treatment as PREDICT/VOID's item-usage gaps:
-# the Oracle pool (`testcampaigndecks/oracle.md`) is a session-persistent,
+# the Oracle pool (`Oracle/baseoracledeck.md`) is a session-persistent,
 # end-of-session table ritual — a GM-curated pool, a player draft, cards
 # that carry across combats entirely outside this simulator's scope, which
 # resets every deck between duels/battles and has no concept of a shared
@@ -1469,24 +1640,37 @@ def _emergency_repairs_effect(engine, me, foe):
 def _emergency_repairs_defense(engine, me, foe):
     _emergency_repairs_payout(engine, me, foe)
 
-# OVERCOMMIT (Gambler) — the archetype's actual thesis: a huge upfront
-# swing (all four Positive Status Effects at once) paid for with Exhaust,
-# which costs a full future action to ever clear (rules/card-glossary.md,
-# EXHAUST) rather than costing HP or a single hand card the way every
-# other cost mechanic shipped this session does. First card ever to grant
-# Quick — see engine.py's Duel.take_turn for how the free reposition
-# actually resolves.
-def _overcommit_payout(engine, me, foe):
+# OVERDRIVE (Gambler; was OVERCOMMIT's own mechanic until 2026-07-29 —
+# Drew's call, "OVERCOMMIT is just... too much rn," split into two cards:
+# this one keeps the original buff-bundle-for-Exhaust idea, OVERCOMMIT
+# itself became a plain strong attack, below) — the archetype's actual
+# thesis: a huge upfront swing (all four Positive Status Effects at once)
+# paid for with Exhaust, which costs a full future action to ever clear
+# (rules/card-glossary.md, EXHAUST) rather than costing HP or a single
+# hand card the way every other cost mechanic shipped this session does.
+# First card ever to grant Quick — see engine.py's Duel.take_turn for how
+# the free reposition actually resolves.
+def _overdrive_payout(engine, me, foe):
     me.deadly += 1
     me.resist += 1
     me._quick = True
     me.evade += 1
     engine.insert_exhaust(me, 2)
 
-def _overcommit_effect(engine, me, foe):
-    _overcommit_payout(engine, me, foe)
-def _overcommit_defense(engine, me, foe):
-    _overcommit_payout(engine, me, foe)
+def _overdrive_effect(engine, me, foe):
+    _overdrive_payout(engine, me, foe)
+def _overdrive_defense(engine, me, foe):
+    _overdrive_payout(engine, me, foe)
+
+# OVERCOMMIT (Gambler) — redesigned 2026-07-29 (Drew's call) from the
+# buff-bundle above (moved to OVERDRIVE) into what he described as "a
+# strong attack that self inflicts vulnerable." Self-cost lives on the
+# Attack line via damage=, same convention as SACRIFICE STRIKE's own "Pay
+# 3 HP" — applies only on a win (damage= never fires on a tie), not
+# unconditionally regardless of outcome.
+def _overcommit_dmg(engine, me, foe):
+    me.vulnerable += 1
+    return me.eff('body') + _rolled_die(10, engine.rng, me)
 
 # ==================== Bestiary promotions to core =============================
 # First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
@@ -1517,6 +1701,73 @@ def _heave_and_haul_defense(engine, me, foe):
     for a in [me] + engine.allies(me):
         a._quick = True
 
+# HEAVE / HAUL (Lefty, `cards/lefty.md`) — 2026-08-01, replacing Lefty's own
+# HOOK AND HAUL (a single card that pulled everyone to him / pushed everyone
+# away). Drew's original description, confirmed directly rather than
+# assumed after the record showed HEAVE AND HAUL above was never actually
+# Lefty's despite the shared name: HEAVE throws the whole enemy Frontline
+# back, HAUL drags the whole enemy Backline in — two unconditional, forced,
+# single-direction cards instead of one card doing both. Not team_only:
+# engine.enemies(me) always includes the current 1v1 foe too, unlike the
+# ally-referencing cards that tag actually covers.
+def _heave_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'frontline':
+            e.position = 'backline'
+_heave_defense = _heave_effect
+
+def _haul_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'backline':
+            e.position = 'frontline'
+_haul_defense = _haul_effect
+
+# HOLD FAST / IRON ANCHOR (Lefty, `cards/lefty.md`) — 2026-08-01, registering
+# his two remaining signature cards (HEAVE/HAUL already done above). Neither
+# was ever in build_cards(); Lefty himself isn't in ROSTER, so this is zero
+# regression risk anywhere in the standing suite.
+def _hold_fast_effect(engine, me, foe):
+    engine.heal(me, me._last_hit // 2)   # Lifesteal: half of landed damage,
+    # same bare-"Lifesteal" precedent as BLOOD IN THE GAP (no attached cost,
+    # unlike CONSUME's full-damage version, which pays for the bigger number)
+def _hold_fast_defense(engine, me, foe):
+    me.resist += 1
+
+def _iron_anchor_effect(engine, me, foe):
+    apply_staggered(foe)
+def _iron_anchor_defense(engine, me, foe):
+    me._protect = True
+
+# AEGE (Carrion Guide, `cards/aege.md`) — 2026-08-01, built per Drew's direct
+# request: stat and deck her, CTR 13-17. Reads the field before committing to
+# anything, same instinct that has her reading a traveler's tells before she
+# agrees to guide them (`characters/aege.md`, Voice/What She Does). Deliberately
+# not aggressive — control and information over damage, matching a guide who
+# isn't built to win a fight through force. WHERE IT'S GATHERING is her GM
+# Secret in disguise: plays as plain information-gathering, its printed text
+# never says why she always seems to know which way a fight is about to go.
+def _watches_feet_effect(engine, me, foe):
+    if foe.position == 'backline':
+        apply_weak(foe)
+def _watches_feet_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+
+def _known_ground_effect(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    a = _best_attacker(engine.allies(me))
+    if a:
+        a.position = 'backline' if a.position == 'frontline' else 'frontline'
+def _known_ground_defense(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    me.evade += 1
+
+def _where_its_gathering_effect(engine, me, foe):
+    engine.scry(me, foe, 2)
+def _where_its_gathering_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+    if me.hp <= 6:
+        me.ward = True
+
 # RHYTHM BREAK (was YOU CHANGED WALLS, Wall-Reader; briefly TELLS — renamed
 # again, "isn't gonna work," per Drew) — reworked on promotion, not just
 # renamed. Effect uses "moved" (Drew's own call, the cleaner phrasing) via
@@ -1545,6 +1796,24 @@ def _rhythm_break_dmg(engine, me, foe):
 def _rhythm_break_defense(engine, me, foe):
     if foe._shifted_positive or foe._used_wait:
         me.resist += 1
+
+# STILL COUNTING (Wall-Reader, `cards/wall-reader.md`) — found unregistered
+# entirely (2026-07-29 dice-pass audit): real canon text, never wired into
+# the sim. Unlike RHYTHM BREAK/CERTAIN CONTACT, Wall-Reader's other two
+# cards, this one wasn't promoted to core — stays a signature card here.
+# "Have not changed position this combat" is cumulative, not a one-turn
+# window like RHYTHM BREAK's `_repositioned_since_last_turn` — needed the
+# new `_ever_repositioned` tracker (engine.py's Combatant, set in both
+# engines' take_turn). Same base-roll/bonus-die split as TRACE: the base d6
+# respects a held Deadly/Weak stack via `_rolled_die`, the +1d6 bonus is an
+# independent second die via plain `roll()`, not routed through the stack.
+def _still_counting_dmg(engine, me, foe):
+    base = me.eff('soul') + _rolled_die(6, engine.rng, me)
+    if not me._ever_repositioned:
+        base += roll(6, engine.rng)
+    return base
+def _still_counting_defense(engine, me, foe):
+    me.resist += 1
 
 # IRON GRIP (was CORRECTION GRIP, Alignment Marshal) — unchanged mechanically.
 def _iron_grip_effect(engine, me, foe):
@@ -1749,6 +2018,42 @@ def _double_down_defense(engine, me, foe):
     engine.initiative_shift(foe, -1)
 
 
+# BRIARWATCH JACKALOPE signature cards (`cards/briarwatch-jackalope.md`) —
+# registered for the first time 2026-07-28, for the party-vs-3-Jackalopes
+# test Drew asked for. Teaching-encounter identity (constant repositioning,
+# low HP, quick fights) translated directly rather than left unmodeled, since
+# the whole point of this creature is testing positioning/Rushdown.
+def _bolt_effect(engine, me, foe):
+    me.position = 'backline'
+_bolt_defense = _bolt_effect
+
+def _nip_dmg(engine, me, foe):
+    base = me.eff('body') + _rolled_die(6, engine.rng, me)
+    if me.position == 'backline':
+        base += 2
+    return base
+# Defensive Bonus: None — no defense function registered.
+
+# FREEZE (2026-07-28): one card, shared by Briarwatch Jackalope AND Flapjack
+# Octopus (`cards/briarwatch-jackalope.md`, `cards/flapjack-octopus.md`) —
+# Drew's direct call, same shape as PATIENCE OF STONE being identical across
+# Delve Roller and Stonecoil. Not a name collision needing two registrations;
+# one definition correctly serves both creatures' decks. Scry bumped 1->2 to
+# match both files.
+def _jackalope_freeze_effect(engine, me, foe):
+    engine.scry(me, me, 2)
+def _jackalope_freeze_defense(engine, me, foe):
+    me.evade += 1
+
+def _quickstep_effect(engine, me, foe):
+    # "Move to any position" — no real choice logic for a bot to make this
+    # decision with, so a simple deterministic toggle stands in (same
+    # simplification shape as MIRROR STEP's identical toggle), not a real
+    # optimization.
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+_quickstep_defense = _quickstep_effect
+
+
 # ============================ REGISTRY =======================================
 
 def build_cards():
@@ -1760,7 +2065,7 @@ def build_cards():
 
     # Frost — Red
     add("SACRIFICE STRIKE", 'R', 'body', 'melee', 10,
-        effect=_sacrifice_strike_effect, defense=_sacrifice_strike_defense)
+        damage=_sacrifice_strike_dmg, defense=_sacrifice_strike_defense)
     add("BLOOD IN THE GAP", 'R', 'body', 'ranged', 4,
         effect=_blood_in_the_gap_effect, defense=_blood_in_the_gap_defense)
     add("BURN BRIGHT", 'R', 'body', 'ranged', 8, damage=_burn_bright_dmg, defense=_burn_bright_defense)
@@ -1826,9 +2131,9 @@ def build_cards():
         effect=_erode_effect, defense=_erode_effect)
 
     # Green support kit (team play)
-    add("RESONATE", 'G', 'soul', 'ranged', 6,
+    add("RESONATE", 'G', 'soul', 'ranged', 4,
         effect=_resonate_effect, defense=_resonate_defense)
-    add("SUPPORT", 'G', 'soul', 'ranged', 6,
+    add("SUPPORT", 'G', 'soul', 'ranged', 4,
         effect=_support_effect, defense=_support_defense)
     add("WITNESS", 'G', 'soul', 'melee', 4,
         effect=_witness_effect, defense=_witness_defense)
@@ -1848,13 +2153,13 @@ def build_cards():
     # --- Expanded set: Blue ---
     add("INTERRUPT", 'B', 'mind', 'ranged', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
-    add("SHARPEN", 'B', 'mind', 'both', 6, effect=_sharpen_effect, defense=_sharpen_defense)
+    add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
     add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
-    add("CALCULATE", 'B', 'mind', 'ranged', 6,
+    add("CALCULATE", 'B', 'mind', 'ranged', 8,
         effect=_calculate_effect, defense=_calculate_defense)
-    add("STUDY", 'B', 'mind', 'ranged', 8, effect=_study_effect, defense=_study_defense)
+    add("STUDY", 'B', 'mind', 'ranged', 4, effect=_study_effect, defense=_study_defense)
     add("PROFILE", 'B', 'mind', 'ranged', 6, effect=_profile_effect, defense=_profile_defense)
-    add("REFRACT", 'B', 'mind', 'ranged', 6,
+    add("REFRACT", 'B', 'mind', 'ranged', 4,
         effect=_refract_effect, defense=_refract_defense)
     # --- Expanded set: Green ---
     add("SYNCHRONY", 'G', 'soul', 'both', 4,
@@ -1864,9 +2169,9 @@ def build_cards():
     add("URGENCY", 'G', 'soul', 'melee', 6,
         effect=_urgency_effect, defense=_urgency_defense)
     add("DELAY", 'G', 'soul', 'ranged', 8, effect=_delay_effect, defense=_delay_defense)
-    add("COMMUNION", 'G', 'soul', 'ranged', 6,
+    add("COMMUNION", 'G', 'soul', 'ranged', 4,
         effect=_communion_effect, defense=_communion_defense)
-    add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect)
+    add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect, defense=_mirror_step_defense)
     add("PATIENCE", 'G', 'soul', 'melee', None,
         damage=_patience_dmg, defense=_patience_defense)
 
@@ -1891,7 +2196,7 @@ def build_cards():
     add("SUNDER", 'R', 'body', 'melee', 6, effect=_sunder_effect, defense=_sunder_defense)
     add("DEAD HEAT", 'R', 'body', 'ranged', 8, effect=_dead_heat_effect, defense=_dead_heat_defense)
     add("ATTUNE", 'G', 'soul', 'melee', 6, effect=_attune_effect, defense=_attune_defense)
-    add("BIND", 'G', 'soul', 'melee', 6, effect=_bind_effect, defense=_bind_defense)
+    add("BIND", 'G', 'soul', 'melee', 4, effect=_bind_effect, defense=_bind_defense)
     add("READ", 'G', 'soul', 'ranged', 6, effect=_read_effect, defense=_read_defense)
     add("CARRIED INJURY", 'G', 'soul', 'both', 4,
         effect=_carried_injury_effect, defense=_carried_injury_defense)
@@ -1912,15 +2217,32 @@ def build_cards():
     add("SEED", 'G', 'soul', 'melee', 6, effect=_seed_effect, defense=_seed_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 6,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
-    add("OVERCOMMIT", 'R', 'body', 'melee', 6,
-        effect=_overcommit_effect, defense=_overcommit_defense)
+    add("OVERCOMMIT", 'R', 'body', 'melee', 10, damage=_overcommit_dmg)
+    add("OVERDRIVE", 'R', 'body', 'melee', 6,
+        effect=_overdrive_effect, defense=_overdrive_defense)
     # Bestiary promotions
     add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
-    add("HEAVE AND HAUL", 'G', 'soul', 'both', 6,
+    add("HEAVE AND HAUL", 'G', 'soul', 'both', 8,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
+    add("HEAVE", 'R', 'body', 'melee', 8,
+        effect=_heave_effect, defense=_heave_defense)
+    add("HAUL", 'R', 'body', 'melee', 8,
+        effect=_haul_effect, defense=_haul_defense)
+    add("HOLD FAST", 'R', 'body', 'melee', 6,
+        effect=_hold_fast_effect, defense=_hold_fast_defense)
+    add("IRON ANCHOR", 'B', 'mind', 'both', 6,
+        effect=_iron_anchor_effect, defense=_iron_anchor_defense)
+    add("WATCHES FEET", 'G', 'soul', 'melee', 4,
+        effect=_watches_feet_effect, defense=_watches_feet_defense)
+    add("KNOWN GROUND", 'G', 'soul', 'both', 6,
+        effect=_known_ground_effect, defense=_known_ground_defense)
+    add("WHERE IT'S GATHERING", 'B', 'mind', 'both', 6,
+        effect=_where_its_gathering_effect, defense=_where_its_gathering_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
+    add("STILL COUNTING", 'G', 'soul', 'both', 6,
+        damage=_still_counting_dmg, defense=_still_counting_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 8,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
     add("PATIENCE OF STONE", 'G', 'soul', 'melee', 6,
@@ -1954,10 +2276,42 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("LAST RESORT", 'B', 'mind', 'both', 6,
+    add("LAST RESORT", 'B', 'mind', 'both', 8,
         effect=_last_resort_effect, defense=_last_resort_defense)
+    add("FORESEEN", 'B', 'mind', 'ranged', 6,
+        effect=_foreseen_effect, defense=_foreseen_defense)
+    add("MARKED", 'B', 'mind', 'ranged', 6,
+        effect=_marked_effect, defense=_marked_defense)
+    add("RETORT", 'B', 'mind', 'ranged', 4,
+        effect=_retort_effect, defense=_retort_defense)
+    add("VEIL", 'B', 'mind', 'ranged', 6,
+        effect=_veil_effect, defense=_veil_defense)
+    add("DEAD END", 'B', 'mind', 'ranged', 8,
+        effect=_dead_end_effect, defense=_dead_end_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
+    add("STEADFAST", 'G', 'soul', 'melee', 4,
+        effect=_steadfast_effect, defense=_steadfast_defense)
+    add("OPENING", 'G', 'soul', 'melee', 4,
+        effect=_opening_effect, defense=_opening_defense)
+    add("UNTOUCHED", 'G', 'soul', 'both', 8,
+        effect=_untouched_effect, defense=_untouched_defense)
+    add("BRISTLE", 'G', 'soul', 'melee', 4,
+        effect=_bristle_effect, defense=_bristle_defense)
+    add("INSTINCT", 'G', 'soul', 'both', 6,
+        effect=_instinct_effect, defense=_instinct_defense)
+    add("OPEN GUARD", 'R', 'body', 'melee', 6,
+        effect=_open_guard_effect, defense=_open_guard_defense)
+    add("UNBROKEN", 'R', 'body', 'both', 8,
+        effect=_unbroken_effect, defense=_unbroken_defense)
+    add("ATTRITION", 'R', 'body', 'melee', 6,
+        effect=_attrition_effect, defense=_attrition_defense)
+    add("REELING", 'R', 'body', 'melee', 4,
+        effect=_reeling_effect, defense=_reeling_defense)
+    add("FOOTWORK", 'R', 'body', 'both', 6,
+        effect=_footwork_effect, defense=_footwork_defense)
+    add("BLINDSIDE", 'R', 'body', 'melee', 8,
+        effect=_blindside_effect, defense=_blindside_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 6,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     add("GENETIC SAMPLE", 'B', 'mind', 'both', 6,
@@ -1980,16 +2334,20 @@ def build_cards():
     add("MIRING GLYPH", 'B', 'mind', 'both', 6,
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
-    add("FLOW", 'G', 'soul', 'melee', 6, effect=_flow_effect, defense=_flow_defense)
+    add("FLOW", 'G', 'soul', 'melee', 8, effect=_flow_effect, defense=_flow_defense)
+    add("EDDY", 'G', 'soul', 'both', 4, effect=_eddy_effect, defense=_eddy_defense)
     add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
     add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
-    add("DEAD RECKONING", 'G', 'soul', 'ranged', 6,
+    add("DEAD RECKONING", 'G', 'soul', 'ranged', 4,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
-    add("RETALIATE", 'R', 'body', 'melee', 6,
+    add("RETALIATE", 'R', 'body', 'melee', 8,   # d6 -> d8, 2026-07-29: below its own
+        # stat's baseline die (Body = d8, CLAUDE.md) at d6; the keyword_lab
+        # dice-pass check found this fixes the gate's real underpowered win
+        # rate (~46% -> ~51% vs a flat Evade+1 reference)
         effect=_retaliate_effect, defense=_retaliate_defense)
     add("WARSONG", 'G', 'soul', 'both', 6,
         effect=_warsong_effect, defense=_warsong_defense)
@@ -2015,6 +2373,14 @@ def build_cards():
         effect=_table_stakes_effect, defense=_table_stakes_defense)
     add("DOUBLE DOWN", 'R', 'body', 'melee', 6,
         effect=_double_down_effect, defense=_double_down_defense)
+
+    # Briarwatch Jackalope (bestiary) — cards/briarwatch-jackalope.md
+    add("BOLT", 'G', 'soul', 'melee', 6, effect=_bolt_effect, defense=_bolt_defense)
+    add("NIP", 'R', 'body', 'melee', None, damage=_nip_dmg)
+    add("FREEZE", 'B', 'mind', 'both', 4,
+        effect=_jackalope_freeze_effect, defense=_jackalope_freeze_defense)
+    add("QUICKSTEP", 'G', 'soul', 'both', 6,
+        effect=_quickstep_effect, defense=_quickstep_defense)
 
     # Status card
     add("INJURY", None, None, None, None, is_status=True)
@@ -2102,6 +2468,82 @@ TEMPO_STATS = dict(mind=4, soul=3, body=2)
 # base_die). Not hand-tuned archetypes like the roster above — these stand in
 # for what an actual new table produces, for testing real party comps against
 # real creature encounters rather than symmetric mirrors.
+# CRIMSON and SKY — Drew's own, from the live 2v2 test (`playtesting/live-test-2v2.md`).
+# Real, human-built decks, same category as Frost/Steele, but their exact card
+# choices were deliberately hidden during that test and never fully recorded —
+# only their stats, color/range counts, and whichever cards happened to get
+# revealed during the one fight are known. The known cards are used as-is;
+# remaining slots are a flagged reconstruction (Drew's call, 2026-07-28).
+#
+# Range distribution derived the same way color is derived from stats — but
+# deliberately de-correlated (Drew's own point: if every Ranged card were also
+# Blue, range would leak color information during RPS prediction). The known
+# real reveals already fixed some of this before any reconstruction happened:
+# Crimson's 7 known cards already included 5 Melee (one over his own naive
+# 4-Melee derivation), matching his own memory of "only 2 ranged" better than
+# the derivation did. Sky's 3 known reveals were already all-Blue, all-Ranged,
+# which made his own hand-worked "2 Blue in Ranged" table impossible to hit —
+# left as historical fact (Ranged 3, unchanged) rather than diluted with a
+# 4th card for the sake of matching a target that was already unreachable.
+CRIMSON_STATS = dict(body=4, mind=3, soul=2)
+# Melee 5 / Ranged 2 / Both 2. Ranged and Both both color-mixed on purpose
+# (1 Blue + 1 Red; 1 Green + 1 Blue) rather than monochrome.
+CRIMSON_DECK = [
+    "DEFLECT", "PROFILE", "SHARPEN",                 # 3 blue (SHARPEN: reconstructed, Both)
+    "CHARGE", "REND", "TRAMPLE", "BURN BRIGHT",      # 4 red (BURN BRIGHT: reconstructed, Ranged)
+    "WITNESS", "ROOTED OATH",                        # 2 green
+]
+SKY_STATS = dict(mind=4, body=3, soul=2)
+# Ranged 3 (all Blue, unchanged from the known reveals) / Melee 3 / Both 3 —
+# an even split once Ranged was left at 3 rather than grown to 4; Melee kept
+# low per Drew's own memory ("only 2 melees"), the leftover slot went to Both
+# instead, which is color-mixed (Blue/Red/Green) same as Melee (Red/Red/Green).
+SKY_DECK = [
+    "CALCULATE", "PROFILE", "AXIOM", "REALIGNMENT",  # 4 blue (REALIGNMENT: reconstructed, Both)
+    "GAMBLER'S RUIN", "STRIKE", "RECOVER",            # 3 red (STRIKE: reconstructed Melee, RECOVER: reconstructed Both)
+    "PATIENCE", "MIRROR STEP",                        # 2 green (both: reconstructed — Melee, Both)
+]
+
+# MOSS and GARNET — Claude's side of the same live 2v2 test. Unlike Crimson/
+# Sky, both full 9-card decklists were actually recorded in the transcript
+# (`playtesting/live-test-2v2.md`) — no reconstruction, no guessing, every
+# card below is the real, played deck.
+MOSS_STATS = dict(mind=2, body=3, soul=4)
+MOSS_DECK = [
+    "STILLNESS", "FOCUS",                      # 2 blue
+    "GUARD", "ENDURE", "DIG IN",                # 3 red
+    "PATIENCE", "RENEWAL", "WITNESS", "ROOTED OATH",  # 4 green
+]
+GARNET_STATS = dict(mind=3, body=4, soul=2)
+GARNET_DECK = [
+    "FORGET", "ANTICIPATE", "PROFILE",          # 3 blue
+    "STRIKE", "BRACE", "PAIN IS FUEL", "RALLY",  # 4 red
+    "TWIN STRIKE", "MOCKERY",                   # 2 green
+]
+
+# Briarwatch Jackalope (`bestiary/briarwatch-jackalope.md`) — Mind1/Body1/
+# Soul3, CTR 5. Deck size = total stats = 5 (1 Blue/1 Red/3 Green). 4
+# signature cards cover Blue1/Red1/Green2; FLOW (core) fills the 3rd Green,
+# matching the creature's own constant-repositioning identity.
+JACKALOPE_STATS = dict(mind=1, body=1, soul=3)
+JACKALOPE_DECK = ["FREEZE", "NIP", "BOLT", "QUICKSTEP", "FLOW"]
+
+# Aege, the Carrion Guide (`characters/aege.md`, `cards/aege.md`) — 2026-08-01.
+# Mind5/Body3/Soul7, CTR 15, within the requested CTR 13-17 range. Deck size
+# = total stats = 15 (5 Blue/3 Red/7 Green). 3 signature cards (2 Green/1
+# Blue) plus core fill leaning control/information over damage, matching a
+# guide who reads a fight rather than forces one.
+AEGE_STATS = dict(mind=5, body=3, soul=7)
+AEGE_DECK = [
+    # Blue (5)
+    "WHERE IT'S GATHERING", "PROFILE", "FOCUS", "ANTICIPATE", "CERTAINTY",
+    # Red (3)
+    "GROUNDING STANCE", "DART", "WEATHERED",
+    # Green (7)
+    "WATCHES FEET", "KNOWN GROUND", "READ", "FLOW", "INSTINCT", "DELAY",
+    "SHADE AWAY",
+]
+
 GARRET_STATS = dict(mind=5, body=2, soul=2)
 GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
     "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
@@ -2149,6 +2591,34 @@ PATIENT_HOST_DECK = [
 ]
 PATIENT_HOST_STATS = dict(body=6, mind=8, soul=10, hp=66)   # formula baseline would be 21 — boss exception
 
+# ORACLE — the full 60-card starter pool (Oracle/baseoracledeck.md), not
+# a real character build. Wired in 2026-08-01 so the whole curated pool can
+# actually be run through the sim (win rate, dice/keyword distribution
+# checks) instead of only existing as a markdown list. Mind3/Body3/Soul3 —
+# neutral, matching Frost/Steele's own baseline reference point, since the
+# Oracle itself isn't tied to any one character's stats. A 60-card decklist
+# is far outside the normal deck-size-matches-stats convention (same kind
+# of grandfathered exception as Frost/Steele's own 10-card decks) —
+# Combatant.decklist has no length constraint, confirmed directly.
+ORACLE_STATS = dict(mind=3, body=3, soul=3)
+ORACLE_DECK = [
+    # Red (20)
+    "ATTRITION", "BLINDSIDE", "BLOOD IN THE GAP", "CHARGE", "ENDURE",
+    "EQUAL FOOTING", "FOOTWORK", "GAMBLER'S RUIN", "GORE", "GUARD",
+    "OPEN GUARD", "PAIN IS FUEL", "PULL", "PUSH", "REELING", "RETALIATE",
+    "SLIP THE BLADE", "TRAMPLE", "UNBROKEN", "WEATHERED",
+    # Blue (20)
+    "ANTICIPATE", "AXIOM", "CALCULATE", "CERTAINTY", "DEAD END", "DEFLECT",
+    "FOCUS", "FORESEEN", "INTERRUPT", "LAST RESORT", "MARKED",
+    "PHASE LOGIC", "PROFILE", "REALIGNMENT", "REBUTTAL", "REFRACT",
+    "RETORT", "SHARPEN", "STUDY", "VEIL",
+    # Green (20)
+    "ADAPT", "BALANCE", "BIND", "BRISTLE", "COMMUNION", "DEAD RECKONING",
+    "EDDY", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
+    "RESONATE", "SHADE AWAY", "SMOKE SCREEN", "STEADFAST", "SUPPORT",
+    "TWIN STRIKE", "UNTOUCHED", "URGENCY", "YOU'RE NEXT",
+]
+
 # registry so run.py can pit any two decks against each other
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
@@ -2166,4 +2636,254 @@ ROSTER = {
     "wyn":    (WYN_STATS, WYN_DECK),          # Oracle-drafted test player, Mind2/Body2/Soul5
     "tallis": (TALLIS_STATS, TALLIS_DECK),    # Oracle-drafted test player, Mind3/Body3/Soul3
     "warper": (WARPER_STATS, WARPER_DECK),    # Position-manipulation test deck, Mind4/Body3/Soul2
+    "crimson": (CRIMSON_STATS, CRIMSON_DECK),  # Drew's own, live 2v2 test, partial reconstruction
+    "sky":     (SKY_STATS, SKY_DECK),          # Drew's own, live 2v2 test, partial reconstruction
+    "moss":    (MOSS_STATS, MOSS_DECK),        # Claude's side, same live 2v2 test, fully recorded
+    "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
+    "jackalope": (JACKALOPE_STATS, JACKALOPE_DECK),  # Briarwatch Jackalope, CTR 5
+    "aege": (AEGE_STATS, AEGE_DECK),  # Carrion Guide, CTR 15
+    "oracle": (ORACLE_STATS, ORACLE_DECK),  # full 60-card starter pool, not a real character build
+}
+
+
+# ============================ CARD_TAGS =======================================
+# Mechanical-category tags per card (2026-07-29, Drew: "let's make new card
+# buckets... build it out as tags in content.py") — supports the ongoing
+# dice-balance pass by letting keyword_lab.py (or a human) pull every card
+# that shares a mechanical shape, instead of eyeballing the pool by hand.
+#
+# A separate dict, not a Card.tags field threaded through all ~240 add()
+# calls — this stays reviewable as one block, and adding a new tag category
+# later means editing one dict, not touching hundreds of scattered
+# registrations. Keyed by bucket, not by card (Drew's own framing was
+# "a bucket for X" — this matches that shape directly: CARD_TAGS["movement"]
+# is the whole bucket). Tags aren't mutually exclusive — most cards carry
+# zero, some carry several (OVERDRIVE: keyword:deadly:self AND
+# keyword:evade:self AND keyword:quick:self AND cost:exhaust).
+#
+# Vocabulary:
+#   movement              — actually repositions self or foe (sets
+#                            .position); a card that only READS position for
+#                            a conditional check (GORE, NIP) isn't here
+#   initiative             — applies Initiative Shift X
+#   rps                    — alters reveal/RPS resolution itself, not just
+#                            the attack that follows it — rare and load-
+#                            bearing, matches Drew's own "rare RPS-changing
+#                            ones like Axiom" framing. All 7 confirmed:
+#                            AXIOM (axiom_ban), PARADOX (special_reveal),
+#                            AFTERIMAGE (special_reveal), EQUAL FOOTING/
+#                            ADAPT/CERTAINTY (wins_ties), FRAME-TRAP
+#                            (hardcoded name-check in both engines)
+#   keyword:<name>:self    — grants that keyword to the caster
+#   keyword:<name>:ally    — grants it to an ally (dead in 1v1 Duel — see
+#                            team_only below; needs keyword_lab.py --team)
+#   keyword:<name>:foe     — applies it to the foe (a Debuff)
+#                            (only deadly/resist/weak/vulnerable/evade/
+#                            thorns/blind/ward/immune/rooted/staggered/quick
+#                            are covered — the 12 keywords keyword_lab.py's
+#                            own KEYWORD_GRANTS already knows how to test)
+#   gated_damage           — a raw damage bonus (die or flat) on the Attack
+#                            line, gated on a condition or a cost, rather
+#                            than a keyword grant — doesn't fit any keyword
+#                            bucket at all. Confirmed by reading each hit,
+#                            not by text-matching "if" (that first pass
+#                            caught a false positive — TWIN STRIKE's "if"
+#                            is inside a RULING() comment string, not real
+#                            conditional logic)
+#   cost:hp / cost:exhaust / cost:discard
+#                          — self-cost mechanism paid to cast. (Injury-as-
+#                            cost checked directly, 2026-07-29 — no
+#                            registered card implements it; a generic
+#                            apply_injury() helper exists but nothing calls
+#                            it. cost:discard corrected down hard from an
+#                            initial rough-sweep guess of ~24 to a verified
+#                            7 — that sweep was matching "discard" anywhere,
+#                            including foe-forced-discard and Scry's own
+#                            discard routing, not discard-as-a-cost
+#                            specifically. Still got 3 of the 7 wrong on the
+#                            first re-verification pass too (2026-07-29,
+#                            during the Oracle-deck curation): STUDY
+#                            ("Discard 2, draw 2"), TABLE STAKES ("Discard
+#                            1 random card..."), and ACCEPTANCE ("may
+#                            discard your hand...") don't match "discard a
+#                            card"/"discard 1" phrasing exactly, so a
+#                            pattern-based check missed them too — this
+#                            list is now from a full manual read of every
+#                            "discard" hit in the three core files, not a
+#                            phrase pattern)
+#   heal                   — heals self or an ally
+#   scry                   — deck/hand manipulation (Scry, discard-then-draw)
+#   glyph                  — places a persistent Mason Glyph/Object
+#   ongoing                — deferred/anchored payout (me.ongoing.append)
+#   status_transfer        — moves a status between combatants (steal, copy,
+#                            mirror, strip, or push your own Injury/Exhaust
+#                            onto a foe) rather than granting a fresh one
+#   team_only              — reads "ally"/"allies" (engine.allies(...)) — a
+#                            real no-op in a 1v1 Duel; needs
+#                            keyword_lab.py's --team mode (2026-07-29) to
+#                            test at all. Verified via actual engine.allies(
+#                            calls, not a text grep — a naive "ally" search
+#                            over-matches on words like "finally"/"actually"
+#                            in comments
+#   target_choice           — the card text says "Target" (SUPPORT's
+#                            "Target ally," PARTITION's "Target enemy") —
+#                            the caster genuinely picks who receives the
+#                            effect, unlike Attacker/Defender (bound to
+#                            whoever's in this specific RPS exchange, no
+#                            choice) or "all allies"/"all enemies" (applies
+#                            to everyone, also no choice). Distinction
+#                            formalized in rules/cards.md, 2026-08-01, after
+#                            8 new cards this session used "Target" when
+#                            they meant Attacker/Defender — real code check
+#                            confirmed the mismatch (foe is a plain
+#                            positional parameter, zero selection logic) and
+#                            a further sweep found the same error already
+#                            existed on 8 older cards (ANTICIPATE, IRON
+#                            GRIP, and six unregistered signature/creature
+#                            cards) — all 16 fixed. This bucket is a first-
+#                            pass sweep of the three core files only
+#                            (cards/red-body.md, blue-mind.md,
+#                            green-soul.md) — signature/creature files
+#                            not swept for target_choice membership, unlike
+#                            every other bucket above
+#
+# Coverage note: every bucket above was verified by reading the actual
+# function bodies (grep the specific attribute mutation / engine call, then
+# read each hit), not by trusting a rough text sweep — an early pass had
+# real errors (movement's first draft included cards that only READ
+# position, not moved anyone; cost:exhaust missed OVERDRIVE; a rumored
+# ~7-card Injury-infliction bucket turned out to be zero cards, just the
+# word "Injury" in a couple of card names; cost:discard was off by 8x on
+# the first pass, then still 3 cards short even after that correction —
+# see cost:discard's own note above for the full trail).
+# Two more incidental findings while verifying, worth naming rather than
+# quietly working around: SPIRAL CURRENT and ANALYZE both have a real
+# `_..._effect` function defined in this file but no add(...) registration
+# anywhere — dead code, not playable cards, excluded from every bucket
+# below. And GUTTERING (`cards/duskwick.md`) is real canon text but, like
+# STILL COUNTING before today, was never wired into the sim at all — also
+# excluded, since there's no registered card to tag.
+CARD_TAGS = {
+    "movement": frozenset({
+        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "EDDY", "FLOW",
+        "HAUL", "HEAVE", "HEAVE AND HAUL", "KNOWN GROUND", "MIRROR STEP", "NO VACANCY",
+        "PHASE LOGIC", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
+        "SLIP THE BLADE", "TRAMPLE",
+    }),
+    "initiative": frozenset({
+        "ACCEPTANCE", "DELAY", "DOUBLE DOWN", "INTERRUPT", "MOCKERY",
+        "REBUTTAL", "RETALIATE", "URGENCY", "WARSONG",
+        "YOUR TURN WILL COME", "YOU'RE NEXT",
+    }),
+    "rps": frozenset({
+        "AXIOM", "PARADOX", "AFTERIMAGE", "EQUAL FOOTING", "ADAPT",
+        "CERTAINTY", "FRAME-TRAP",
+    }),
+
+    "keyword:deadly:self": frozenset({
+        "GAMBLER'S RUIN", "ALIGN", "SHARPEN", "STUDY", "RETALIATE",
+        "ADAPTIVE BITE", "OVERDRIVE", "PATIENCE OF STONE", "COMMUNION",
+        "SEED",
+    }),
+    "keyword:deadly:ally": frozenset({
+        "RESONATE", "SUPPORT", "RALLY", "SHARPEN", "WARSONG", "COMMUNION",
+        "ROOTED OATH",
+    }),
+    "keyword:weak:foe": frozenset({
+        "ANTICIPATE", "TWIN STRIKE", "REFRACT", "DEAD RECKONING", "CONSUME",
+        "WITHERING GLYPH", "ATTRITION", "WATCHES FEET",   # conditional — only if foe is Backline
+    }),
+    "keyword:resist:self": frozenset({
+        "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
+        "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN CONTACT",
+        "RHYTHM BREAK", "STILL COUNTING", "DARK CORRIDOR", "ROLLOUT",
+        "TABLE STAKES", "DIG IN", "SEED", "FORESEEN", "STEADFAST", "HOLD FAST",
+    }),
+    "keyword:resist:ally": frozenset({"RESONATE", "GUARD", "ROOTED OATH"}),
+    "keyword:vulnerable:self": frozenset({"OVERCOMMIT"}),   # deliberate exception —
+        # every other real card applies Vulnerable to a foe (it's a Debuff);
+        # OVERCOMMIT self-inflicts it on purpose, card text says so directly
+    "keyword:vulnerable:foe": frozenset({"OPEN GUARD", "MARKED", "OPENING"}),   # new
+        # 2026-08-01 (Oracle keyword-coverage pass) — the first real foe-
+        # Vulnerable grants anywhere in the pool; apply_vulnerable() didn't
+        # exist before these three needed it
+    "keyword:evade:self": frozenset({
+        "SHARED BURDEN", "SLIPSTREAM", "PHASE LOGIC", "SLIP THE BLADE",
+        "SHADE AWAY", "GENETIC SAMPLE", "EXPOSED", "AFTERIMAGE", "OVERDRIVE",
+        "SHED SKIN", "FREEZE", "KNOWN GROUND",
+    }),
+    "keyword:thorns:self": frozenset({
+        "BLOOD IN THE GAP", "PAIN IS FUEL", "ADAPTIVE BITE", "BARBED GLYPH",
+        "RETORT", "BRISTLE",
+    }),
+    "keyword:blind:foe": frozenset({
+        "DEAD RECKONING", "SMOKE SCREEN", "CONSUME", "AFTERIMAGE",
+        "VIBRATION LOCK", "DARK CORRIDOR", "BLINDSIDE", "VEIL",
+    }),
+    "keyword:blind:self": frozenset({"SMOKE SCREEN"}),   # yes, both — SMOKE
+        # SCREEN blinds every enemy Frontline AND its own caster in the same effect
+    "keyword:ward:self": frozenset({
+        "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
+        "INSTINCT", "WHERE IT'S GATHERING",   # conditional — only if HP <= 6
+    }),
+    "keyword:immune:self": frozenset({"LAST RESORT", "UNBROKEN", "UNTOUCHED"}),   # all conditional: only below half HP
+    "keyword:rooted:foe": frozenset({
+        "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE", "DEAD END",
+    }),
+    "keyword:staggered:foe": frozenset({
+        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING", "IRON ANCHOR",
+    }),
+    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK", "EDDY"}),
+    "keyword:quick:ally": frozenset({"REALIGNMENT", "MIRROR STEP"}),
+
+    "gated_damage": frozenset({
+        "TRACE", "RHYTHM BREAK", "STILL COUNTING", "NIP", "UNDERSTANDING",
+        "BURN BRIGHT", "PATIENCE",
+    }),
+
+    "cost:hp": frozenset({
+        "SACRIFICE STRIKE", "BLOOD TITHE", "SHARED BURDEN", "RALLY", "ATTUNE",
+    }),
+    "cost:exhaust": frozenset({"OVERDRIVE", "UNMAKE"}),
+    "cost:discard": frozenset({
+        "ATTUNE", "BALANCE", "UNDERSTANDING", "STUDY", "TABLE STAKES",
+        "ACCEPTANCE", "RENEWAL",
+    }),
+
+    "heal": frozenset({
+        "BLOOD IN THE GAP", "BLOOD TITHE", "CLIFF SONG", "CONSUME",
+        "DISSOLVE AND KEEP", "EMERGENCY REPAIRS", "ENDURE", "FIELD MEDICINE",
+        "PARADOX", "PRESS THE INJURY", "RECOVER", "RENEWAL", "SHARED BURDEN",
+        "TABLE STAKES", "WITNESS",
+    }),
+    "scry": frozenset({
+        "ALIGN", "FOCUS", "FREEZE", "GENETIC SAMPLE", "PROFILE",
+        "REGISTERED", "STILL GROUND", "UNDERSTANDING", "VIBRATION LOCK",
+        "WATCHES FEET", "WHERE IT'S GATHERING",
+    }),
+    "glyph": frozenset({
+        "BARBED GLYPH", "CIPHER GLYPH", "HONING GLYPH", "MENDING GLYPH",
+        "MIRING GLYPH", "WITHERING GLYPH",
+    }),
+    "ongoing": frozenset({
+        "ATTUNE", "CLIMB", "DIG IN", "IRON GRIP", "THE LEDGER NEVER CLOSES",
+        "PATIENCE", "PATIENCE OF STONE", "ROOTED OATH", "SEED", "SLIPSTREAM",
+        "SYNCHRONY",
+    }),
+    "status_transfer": frozenset({
+        "WAITING GAME", "DRAIN", "UNMAKE", "LEVEL THE FIELD", "TRACE",
+        "CARRIED INJURY",
+    }),
+    "team_only": frozenset({
+        "ACCEPTANCE", "BLOOD TITHE", "CARRIED INJURY", "CLIFF SONG",
+        "COMMUNION", "FIELD MEDICINE", "GUARD", "HEAVE AND HAUL",
+        "PARTITION", "PATIENCE", "RALLY", "REALIGNMENT", "RENEWAL",
+        "RESONATE", "ROOTED OATH", "SHARED BURDEN", "SHARPEN", "SUPPORT",
+        "TABLE STAKES", "URGENCY", "WARSONG", "WITNESS",
+    }),
+    "target_choice": frozenset({
+        "SHARPEN", "CALCULATE", "PARTITION", "SUPPORT", "PATIENCE",
+        "WITNESS", "TWIN STRIKE", "SHARED BURDEN", "ROOTED OATH",
+        "FIELD MEDICINE", "BLOOD TITHE",
+    }),
 }
