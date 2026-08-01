@@ -1938,9 +1938,9 @@ def build_cards():
         effect=_erode_effect, defense=_erode_effect)
 
     # Green support kit (team play)
-    add("RESONATE", 'G', 'soul', 'ranged', 6,
+    add("RESONATE", 'G', 'soul', 'ranged', 4,
         effect=_resonate_effect, defense=_resonate_defense)
-    add("SUPPORT", 'G', 'soul', 'ranged', 6,
+    add("SUPPORT", 'G', 'soul', 'ranged', 4,
         effect=_support_effect, defense=_support_defense)
     add("WITNESS", 'G', 'soul', 'melee', 4,
         effect=_witness_effect, defense=_witness_defense)
@@ -1960,13 +1960,13 @@ def build_cards():
     # --- Expanded set: Blue ---
     add("INTERRUPT", 'B', 'mind', 'ranged', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
-    add("SHARPEN", 'B', 'mind', 'both', 6, effect=_sharpen_effect, defense=_sharpen_defense)
+    add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
     add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
-    add("CALCULATE", 'B', 'mind', 'ranged', 6,
+    add("CALCULATE", 'B', 'mind', 'ranged', 8,
         effect=_calculate_effect, defense=_calculate_defense)
     add("STUDY", 'B', 'mind', 'ranged', 8, effect=_study_effect, defense=_study_defense)
     add("PROFILE", 'B', 'mind', 'ranged', 6, effect=_profile_effect, defense=_profile_defense)
-    add("REFRACT", 'B', 'mind', 'ranged', 6,
+    add("REFRACT", 'B', 'mind', 'ranged', 4,
         effect=_refract_effect, defense=_refract_defense)
     # --- Expanded set: Green ---
     add("SYNCHRONY", 'G', 'soul', 'both', 4,
@@ -1976,7 +1976,7 @@ def build_cards():
     add("URGENCY", 'G', 'soul', 'melee', 6,
         effect=_urgency_effect, defense=_urgency_defense)
     add("DELAY", 'G', 'soul', 'ranged', 8, effect=_delay_effect, defense=_delay_defense)
-    add("COMMUNION", 'G', 'soul', 'ranged', 6,
+    add("COMMUNION", 'G', 'soul', 'ranged', 4,
         effect=_communion_effect, defense=_communion_defense)
     add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect)
     add("PATIENCE", 'G', 'soul', 'melee', None,
@@ -2003,7 +2003,7 @@ def build_cards():
     add("SUNDER", 'R', 'body', 'melee', 6, effect=_sunder_effect, defense=_sunder_defense)
     add("DEAD HEAT", 'R', 'body', 'ranged', 8, effect=_dead_heat_effect, defense=_dead_heat_defense)
     add("ATTUNE", 'G', 'soul', 'melee', 6, effect=_attune_effect, defense=_attune_defense)
-    add("BIND", 'G', 'soul', 'melee', 6, effect=_bind_effect, defense=_bind_defense)
+    add("BIND", 'G', 'soul', 'melee', 4, effect=_bind_effect, defense=_bind_defense)
     add("READ", 'G', 'soul', 'ranged', 6, effect=_read_effect, defense=_read_defense)
     add("CARRIED INJURY", 'G', 'soul', 'both', 4,
         effect=_carried_injury_effect, defense=_carried_injury_defense)
@@ -2030,7 +2030,7 @@ def build_cards():
     # Bestiary promotions
     add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
-    add("HEAVE AND HAUL", 'G', 'soul', 'both', 6,
+    add("HEAVE AND HAUL", 'G', 'soul', 'both', 8,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
@@ -2069,7 +2069,7 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("LAST RESORT", 'B', 'mind', 'both', 6,
+    add("LAST RESORT", 'B', 'mind', 'both', 8,
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("FORESEEN", 'B', 'mind', 'ranged', 6,
         effect=_foreseen_effect, defense=_foreseen_defense)
@@ -2099,14 +2099,14 @@ def build_cards():
     add("MIRING GLYPH", 'B', 'mind', 'both', 6,
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
-    add("FLOW", 'G', 'soul', 'melee', 6, effect=_flow_effect, defense=_flow_defense)
+    add("FLOW", 'G', 'soul', 'melee', 8, effect=_flow_effect, defense=_flow_defense)
     add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
     add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
-    add("DEAD RECKONING", 'G', 'soul', 'ranged', 6,
+    add("DEAD RECKONING", 'G', 'soul', 'ranged', 4,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
     add("RETALIATE", 'R', 'body', 'melee', 8,   # d6 -> d8, 2026-07-29: below its own
         # stat's baseline die (Body = d8, CLAUDE.md) at d6; the keyword_lab

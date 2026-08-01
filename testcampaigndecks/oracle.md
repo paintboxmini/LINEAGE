@@ -52,7 +52,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - STUDY
 - UNDERSTANDING
 
-**Green** (20)
+**Green** (19)
 - ACCEPTANCE
 - ADAPT
 - BALANCE
@@ -71,7 +71,6 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - SUPPORT
 - TWIN STRIKE
 - URGENCY
-- WARSONG
 - YOU'RE NEXT
 
-FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both sides, filling a real gap: neither color had a clean self-Resist grant before (`memory.md`).
+FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both sides, filling a real gap: neither color had a clean self-Resist grant before (`memory.md`). WARSONG cut (2026-08-01) — its Effect duplicated RESONATE's verbatim ("All allies gain Deadly"); Green sits at 19, closing further deferred to the keyword-coverage pass.

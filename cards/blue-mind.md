@@ -14,7 +14,7 @@ Range: Ranged
 
 **SHARPEN**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Target ally gains Deadly
 Defensive Bonus: You gain Deadly
 Range: Both
@@ -24,7 +24,7 @@ Range: Both
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Move target enemy to backline
 Defensive Bonus: Move target to frontline
 Range: Ranged
@@ -74,7 +74,7 @@ Range: Ranged
 
 **REFRACT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Defender gains Weak
 Defensive Bonus: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
@@ -337,7 +337,7 @@ Range: Ranged
 
 **LAST RESORT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both

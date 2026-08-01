@@ -14,7 +14,7 @@ Range: Both
 
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Target ally gains Deadly
 Defensive Bonus: Target ally draws 2
 Range: Ranged
@@ -35,7 +35,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: You may change position
 Defensive Bonus: You may change position
 Range: Melee
@@ -45,7 +45,7 @@ Range: Melee
 
 **RESONATE**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: All allies gain Deadly
 Defensive Bonus: All allies gain Resist 1
 Range: Ranged
@@ -105,7 +105,7 @@ Range: Ranged
 
 **COMMUNION**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: If you are attacked before your next turn, your party may scry 1
 Defensive Bonus: You and your allies gain Deadly
 Range: Ranged
@@ -185,7 +185,7 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: The Defender gains 1 Rooted (cannot change position until the start of your next turn.)
 Defensive Bonus: The attacker gains 1 Rooted (can't change position next turn.)
 Range: Melee
@@ -255,7 +255,7 @@ Range: Ranged
 
 **DEAD RECKONING**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Defender gains Weak.
 Defensive Bonus: Attacker gains Blind.
 Range: Ranged
@@ -305,7 +305,7 @@ Range: Melee
 
 **HEAVE AND HAUL**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Choose a position. All enemies in that position move to the other position.
 Defensive Bonus: All allies may change position freely on their next turn.
 Range: Both
