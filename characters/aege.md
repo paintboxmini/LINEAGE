@@ -2,6 +2,13 @@
 
 *The Carrion Guide. An Echo of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`world/seats-archons-echoes.md`).*
 
+**Cards:** `cards/aege.md`
+
+*Stat block and deck are a starting point, sized for a mid-campaign encounter (CTR 15, within the CTR 13-17 range asked for) — scale Body/total stats the same as any other named character if she ends up fought earlier or later than that. She is not built to be sought out: nothing here assumes players go looking for a fight with her, only that she can hold her own if one finds her anyway.*
+
+**Mind 5 / Body 3 / Soul 7 — HP 15**
+**Creature Threat Rating:** 15
+
 ---
 
 ## Appearance
@@ -58,6 +65,40 @@ Same character both times. Not a coincidence, not a retcon — she goes home eit
 
 ---
 
+## Combat Identity
+
+Reads the field before she commits to anything, same as she reads a traveler's feet before she agrees to guide them. WATCHES FEET catches whoever's already given away that they're not standing their ground. KNOWN GROUND moves her — and whoever she chooses to bring with her — through the fight the same way she moves a party through unmapped country, no different in kind from ordinary guiding. WHERE IT'S GATHERING is the one card that's really her GM Secret in disguise: it plays as plain information-gathering at the table, and nothing in its text says why she always seems to know which way a fight is about to go.
+
+Her core picks lean the same direction — control and information over damage (STARING CONTEST's own initiative-order trick was close, but GROUNDING STANCE fit tighter: the one thing a guide who knows the ground shouldn't be is pushed off it), evasion over endurance, always reading rather than reacting. She isn't built to win a fight through force. If she's fighting at all, something has already gone wrong with the actual plan, which was never to fight.
+
+---
+
+## Deck
+
+**Signature cards:** `cards/aege.md` — unique to Aege, not transferable.
+
+**Core cards (5 Blue / 3 Red / 7 Green):**
+
+*Blue — Mind*
+- PROFILE — Scry 2, then draw 1; Defensive: attacker gains Staggered
+- FOCUS — Scry 2, return this card to your hand; Defensive: place the top card of your discard pile on top of your deck
+- ANTICIPATE — draw 1 before defending, before your next turn, activates multiple times; Defensive: attacker gains Weak
+- CERTAINTY — wins ties (cancels if both sides play it)
+
+*Red — Body*
+- GROUNDING STANCE — may ignore any ability that forces you to move positions until your next turn; Defensive: gain Resist
+- DART — move self to any position; Defensive: move self to any position
+- WEATHERED — heal 2 HP each time you're attacked before your next turn; Defensive: prevent next debuff
+
+*Green — Soul*
+- READ — defender must reveal their hand; Defensive: name a color, discard a matching card from the attacker's hand
+- FLOW — may change position; Defensive: may change position
+- INSTINCT — gain Ward; Defensive: gain Ward
+- DELAY — apply Initiative Shift -1 to defender; Defensive: apply Initiative Shift -1 to attacker
+- SHADE AWAY — gain Evade; Defensive: gain Evade
+
+---
+
 ## Related Documents
 
 - `locations/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
@@ -66,3 +107,4 @@ Same character both times. Not a coincidence, not a retcon — she goes home eit
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
 - `mythology/seats.md`, `world/seats-archons-echoes.md` — the Seat of Death, Echoes generally
 - `items/briarwatch-items.md` — the Carrion Feather
+- `cards/aege.md` — signature cards

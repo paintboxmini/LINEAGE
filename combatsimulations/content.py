@@ -1703,6 +1703,36 @@ def _haul_effect(engine, me, foe):
             e.position = 'frontline'
 _haul_defense = _haul_effect
 
+# AEGE (Carrion Guide, `cards/aege.md`) — 2026-08-01, built per Drew's direct
+# request: stat and deck her, CTR 13-17. Reads the field before committing to
+# anything, same instinct that has her reading a traveler's tells before she
+# agrees to guide them (`characters/aege.md`, Voice/What She Does). Deliberately
+# not aggressive — control and information over damage, matching a guide who
+# isn't built to win a fight through force. WHERE IT'S GATHERING is her GM
+# Secret in disguise: plays as plain information-gathering, its printed text
+# never says why she always seems to know which way a fight is about to go.
+def _watches_feet_effect(engine, me, foe):
+    if foe.position == 'backline':
+        apply_weak(foe)
+def _watches_feet_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+
+def _known_ground_effect(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    a = _best_attacker(engine.allies(me))
+    if a:
+        a.position = 'backline' if a.position == 'frontline' else 'frontline'
+def _known_ground_defense(engine, me, foe):
+    me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    me.evade += 1
+
+def _where_its_gathering_effect(engine, me, foe):
+    engine.scry(me, foe, 2)
+def _where_its_gathering_defense(engine, me, foe):
+    engine.scry(me, me, 1)
+    if me.hp <= 6:
+        me.ward = True
+
 # RHYTHM BREAK (was YOU CHANGED WALLS, Wall-Reader; briefly TELLS — renamed
 # again, "isn't gonna work," per Drew) — reworked on promotion, not just
 # renamed. Effect uses "moved" (Drew's own call, the cleaner phrasing) via
@@ -2164,6 +2194,12 @@ def build_cards():
         effect=_heave_effect, defense=_heave_defense)
     add("HAUL", 'R', 'body', 'melee', 8,
         effect=_haul_effect, defense=_haul_defense)
+    add("WATCHES FEET", 'G', 'soul', 'melee', 4,
+        effect=_watches_feet_effect, defense=_watches_feet_defense)
+    add("KNOWN GROUND", 'G', 'soul', 'both', 6,
+        effect=_known_ground_effect, defense=_known_ground_defense)
+    add("WHERE IT'S GATHERING", 'B', 'mind', 'both', 6,
+        effect=_where_its_gathering_effect, defense=_where_its_gathering_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
     add("STILL COUNTING", 'G', 'soul', 'both', 6,
@@ -2452,6 +2488,22 @@ GARNET_DECK = [
 JACKALOPE_STATS = dict(mind=1, body=1, soul=3)
 JACKALOPE_DECK = ["FREEZE", "NIP", "BOLT", "QUICKSTEP", "FLOW"]
 
+# Aege, the Carrion Guide (`characters/aege.md`, `cards/aege.md`) — 2026-08-01.
+# Mind5/Body3/Soul7, CTR 15, within the requested CTR 13-17 range. Deck size
+# = total stats = 15 (5 Blue/3 Red/7 Green). 3 signature cards (2 Green/1
+# Blue) plus core fill leaning control/information over damage, matching a
+# guide who reads a fight rather than forces one.
+AEGE_STATS = dict(mind=5, body=3, soul=7)
+AEGE_DECK = [
+    # Blue (5)
+    "WHERE IT'S GATHERING", "PROFILE", "FOCUS", "ANTICIPATE", "CERTAINTY",
+    # Red (3)
+    "GROUNDING STANCE", "DART", "WEATHERED",
+    # Green (7)
+    "WATCHES FEET", "KNOWN GROUND", "READ", "FLOW", "INSTINCT", "DELAY",
+    "SHADE AWAY",
+]
+
 GARRET_STATS = dict(mind=5, body=2, soul=2)
 GARRET_DECK = [   # BARRIER swapped for DEFLECT, 2026-07-24 (BARRIER cut)
     "PARTITION", "DEFLECT", "SHARPEN", "SPARK OF VIOLENCE", "GORE",
@@ -2549,6 +2601,7 @@ ROSTER = {
     "moss":    (MOSS_STATS, MOSS_DECK),        # Claude's side, same live 2v2 test, fully recorded
     "garnet":  (GARNET_STATS, GARNET_DECK),    # Claude's side, same live 2v2 test, fully recorded
     "jackalope": (JACKALOPE_STATS, JACKALOPE_DECK),  # Briarwatch Jackalope, CTR 5
+    "aege": (AEGE_STATS, AEGE_DECK),  # Carrion Guide, CTR 15
     "oracle": (ORACLE_STATS, ORACLE_DECK),  # full 60-card starter pool, not a real character build
 }
 
@@ -2673,7 +2726,7 @@ ROSTER = {
 CARD_TAGS = {
     "movement": frozenset({
         "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "FLOW",
-        "HAUL", "HEAVE", "HEAVE AND HAUL", "MIRROR STEP", "NO VACANCY",
+        "HAUL", "HEAVE", "HEAVE AND HAUL", "KNOWN GROUND", "MIRROR STEP", "NO VACANCY",
         "PHASE LOGIC", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
         "SLIP THE BLADE", "TRAMPLE",
     }),
@@ -2698,7 +2751,7 @@ CARD_TAGS = {
     }),
     "keyword:weak:foe": frozenset({
         "ANTICIPATE", "TWIN STRIKE", "REFRACT", "DEAD RECKONING", "CONSUME",
-        "WITHERING GLYPH", "ATTRITION",
+        "WITHERING GLYPH", "ATTRITION", "WATCHES FEET",   # conditional — only if foe is Backline
     }),
     "keyword:resist:self": frozenset({
         "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
@@ -2717,7 +2770,7 @@ CARD_TAGS = {
     "keyword:evade:self": frozenset({
         "SHARED BURDEN", "SLIPSTREAM", "PHASE LOGIC", "SLIP THE BLADE",
         "SHADE AWAY", "GENETIC SAMPLE", "EXPOSED", "AFTERIMAGE", "OVERDRIVE",
-        "SHED SKIN", "FREEZE",
+        "SHED SKIN", "FREEZE", "KNOWN GROUND",
     }),
     "keyword:thorns:self": frozenset({
         "BLOOD IN THE GAP", "PAIN IS FUEL", "ADAPTIVE BITE", "BARBED GLYPH",
@@ -2731,7 +2784,7 @@ CARD_TAGS = {
         # SCREEN blinds every enemy Frontline AND its own caster in the same effect
     "keyword:ward:self": frozenset({
         "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
-        "INSTINCT",
+        "INSTINCT", "WHERE IT'S GATHERING",   # conditional — only if HP <= 6
     }),
     "keyword:immune:self": frozenset({"LAST RESORT", "UNBROKEN", "UNTOUCHED"}),   # all conditional: only below half HP
     "keyword:rooted:foe": frozenset({
@@ -2766,6 +2819,7 @@ CARD_TAGS = {
     "scry": frozenset({
         "ALIGN", "FOCUS", "FREEZE", "GENETIC SAMPLE", "PROFILE",
         "REGISTERED", "STILL GROUND", "UNDERSTANDING", "VIBRATION LOCK",
+        "WATCHES FEET", "WHERE IT'S GATHERING",
     }),
     "glyph": frozenset({
         "BARBED GLYPH", "CIPHER GLYPH", "HONING GLYPH", "MENDING GLYPH",
