@@ -470,3 +470,23 @@ Effect: On a clean win, immediately make another attack against the same defende
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
 Range: Melee
 *"The house never minds a second bet."*
+
+---
+
+**OPEN GUARD**
+RED — BODY
+Attack: Body + d6
+Effect: Target gains Vulnerable.
+Defensive Bonus: Target gains Vulnerable.
+Range: Melee
+*"Every stance has a seam."*
+
+---
+
+**UNBROKEN**
+RED — BODY
+Attack: Body + d8
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"Still standing counts for everything."*

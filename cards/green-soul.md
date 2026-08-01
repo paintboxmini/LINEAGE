@@ -360,3 +360,23 @@ Effect: Gain Resist.
 Defensive Bonus: Gain Resist.
 Range: Melee
 *"The current breaks around what does not move."*
+
+---
+
+**OPENING**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target gains Vulnerable.
+Defensive Bonus: Target gains Vulnerable.
+Range: Melee
+*"There is always a moment. This is it."*
+
+---
+
+**UNTOUCHED**
+GREEN — SOUL
+Attack: Soul + d8
+Effect: If your HP is 6 or less, gain Immunity.
+Defensive Bonus: If your HP is 6 or less, gain Immunity.
+Range: Both
+*"You cannot strike what was never fully here."*

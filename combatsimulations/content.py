@@ -51,6 +51,15 @@ def apply_weak(target, n=1):
     debuff(target, lambda: setattr(target, 'weak', target.weak + n))
 
 
+def apply_vulnerable(target, n=1):
+    """No card applied Vulnerable to a foe anywhere in the pool before
+    2026-08-01 (OVERCOMMIT's is a deliberate self-inflicted exception, not
+    routed through debuff() since Ward never blocks a self-application) —
+    the Oracle keyword-coverage pass needed it for real, so it's built here
+    the same shape as apply_weak/apply_blind, not invented fresh."""
+    debuff(target, lambda: setattr(target, 'vulnerable', target.vulnerable + n))
+
+
 def apply_rooted(target):
     debuff(target, lambda: setattr(target, 'rooted', True))
 
@@ -1256,6 +1265,49 @@ def _foreseen_effect(engine, me, foe):
 def _foreseen_defense(engine, me, foe):
     me.resist += 1
 
+# OPEN GUARD / MARKED / OPENING (Oracle keyword-coverage pass, 2026-08-01) —
+# one per color, plain unconditional Vulnerable on the foe both sides. Fills
+# the starkest gap the outside-designer review found: Vulnerable was at
+# zero anywhere in the Oracle-59, and checking further, zero anywhere in
+# the whole 240-card pool except OVERCOMMIT's own deliberate self-exception
+# (see apply_vulnerable's docstring). Same bare-grant shape as
+# FORESEEN/STEADFAST — under-designed on purpose, matching the pool's own
+# bar, not an oversight.
+def _open_guard_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _open_guard_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+def _marked_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _marked_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+def _opening_effect(engine, me, foe):
+    apply_vulnerable(foe)
+def _opening_defense(engine, me, foe):
+    apply_vulnerable(foe)
+
+# UNBROKEN / UNTOUCHED (Oracle keyword-coverage pass, 2026-08-01) — same
+# exact shape as LAST RESORT (Blue): "if your HP is 6 or less, gain
+# Immunity," both sides. Immune was at 1 total across the whole Oracle-59
+# (LAST RESORT itself, conditional) and zero in Red/Green specifically —
+# matching LAST RESORT's own threshold exactly rather than picking a new,
+# unexplained number.
+def _unbroken_effect(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+def _unbroken_defense(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+
+def _untouched_effect(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+def _untouched_defense(engine, me, foe):
+    if me.hp <= 6:
+        me.immune = True
+
 # SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
 # Blind on the whole enemy Frontline was the card's actual identity, so it
 # stayed; the gating changed instead of the scope: minimum base die, melee
@@ -2073,10 +2125,20 @@ def build_cards():
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("FORESEEN", 'B', 'mind', 'ranged', 6,
         effect=_foreseen_effect, defense=_foreseen_defense)
+    add("MARKED", 'B', 'mind', 'ranged', 6,
+        effect=_marked_effect, defense=_marked_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
     add("STEADFAST", 'G', 'soul', 'melee', 4,
         effect=_steadfast_effect, defense=_steadfast_defense)
+    add("OPENING", 'G', 'soul', 'melee', 4,
+        effect=_opening_effect, defense=_opening_defense)
+    add("UNTOUCHED", 'G', 'soul', 'both', 8,
+        effect=_untouched_effect, defense=_untouched_defense)
+    add("OPEN GUARD", 'R', 'body', 'melee', 6,
+        effect=_open_guard_effect, defense=_open_guard_defense)
+    add("UNBROKEN", 'R', 'body', 'both', 8,
+        effect=_unbroken_effect, defense=_unbroken_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 6,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     add("GENETIC SAMPLE", 'B', 'mind', 'both', 6,
@@ -2500,6 +2562,10 @@ CARD_TAGS = {
     "keyword:vulnerable:self": frozenset({"OVERCOMMIT"}),   # deliberate exception —
         # every other real card applies Vulnerable to a foe (it's a Debuff);
         # OVERCOMMIT self-inflicts it on purpose, card text says so directly
+    "keyword:vulnerable:foe": frozenset({"OPEN GUARD", "MARKED", "OPENING"}),   # new
+        # 2026-08-01 (Oracle keyword-coverage pass) — the first real foe-
+        # Vulnerable grants anywhere in the pool; apply_vulnerable() didn't
+        # exist before these three needed it
     "keyword:evade:self": frozenset({
         "SHARED BURDEN", "SLIPSTREAM", "PHASE LOGIC", "SLIP THE BLADE",
         "SHADE AWAY", "GENETIC SAMPLE", "EXPOSED", "AFTERIMAGE", "OVERDRIVE",
@@ -2517,7 +2583,7 @@ CARD_TAGS = {
     "keyword:ward:self": frozenset({
         "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
     }),
-    "keyword:immune:self": frozenset({"LAST RESORT"}),   # conditional: only below half HP
+    "keyword:immune:self": frozenset({"LAST RESORT", "UNBROKEN", "UNTOUCHED"}),   # all conditional: only below half HP
     "keyword:rooted:foe": frozenset({
         "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE",
     }),

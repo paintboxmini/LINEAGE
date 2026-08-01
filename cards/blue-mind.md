@@ -352,3 +352,13 @@ Effect: Gain Resist.
 Defensive Bonus: Gain Resist.
 Range: Ranged
 *"You already knew where the blow would land."*
+
+---
+
+**MARKED**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Target gains Vulnerable.
+Defensive Bonus: Target gains Vulnerable.
+Range: Ranged
+*"Once you've seen the pattern, you can't unsee it."*
