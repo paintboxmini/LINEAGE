@@ -11,7 +11,7 @@ engine had to assume a ruling the rules don't state is logged via RULING() and
 collected in the run report — that log IS the deliverable, not an afterthought.
 
 Scope: implements exactly the cards in Frost's and Steele's decks
-(testcampaigndecks/). Effects that only touch allies are correctly no-ops in a
+(characters/frost.md, characters/steele.md). Effects that only touch allies are correctly no-ops in a
 duel (You Are Not Your Own Ally) — the sim will show them as dead weight.
 
 No external dependencies. Python 3.8+.

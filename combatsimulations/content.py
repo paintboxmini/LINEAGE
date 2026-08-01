@@ -1508,7 +1508,7 @@ def _consume_defense(engine, me, foe):
 
 # BECOMING (colorless) — the Oracle-drafting card. Unmodeled beyond a safe
 # zero-damage function, same treatment as PREDICT/VOID's item-usage gaps:
-# the Oracle pool (`testcampaigndecks/oracle.md`) is a session-persistent,
+# the Oracle pool (`Oracle/baseoracledeck.md`) is a session-persistent,
 # end-of-session table ritual — a GM-curated pool, a player draft, cards
 # that carry across combats entirely outside this simulator's scope, which
 # resets every deck between duels/battles and has no concept of a shared
@@ -2565,7 +2565,7 @@ PATIENT_HOST_DECK = [
 ]
 PATIENT_HOST_STATS = dict(body=6, mind=8, soul=10, hp=66)   # formula baseline would be 21 — boss exception
 
-# ORACLE — the full 60-card starter pool (testcampaigndecks/oracle.md), not
+# ORACLE — the full 60-card starter pool (Oracle/baseoracledeck.md), not
 # a real character build. Wired in 2026-08-01 so the whole curated pool can
 # actually be run through the sim (win rate, dice/keyword distribution
 # checks) instead of only existing as a markdown list. Mind3/Body3/Soul3 —

@@ -10,9 +10,9 @@ You'll find open questions and quiet doubts throughout this repo, left in on pur
 |--------|----------|
 | `rules/` | Core rules, mechanics, and the keyword glossary |
 | `cards/` | Card sets — core (blue-mind, red-body, green-soul) and creature/location signature sets |
-| `testcampaigndecks/` | This campaign's decks only — player decks (by character name), the Oracle pool, campaign-specific NPCs. General NPC/monster decks are not stored here; they're assembled per the enemy deck convention in `rules/cards.md` |
+| `Oracle/` | The Oracle deck — the shared starter pool players draft from at character creation and draw from at end of session |
 | `bestiary/` | Creature stat blocks, abilities, loot, and card references |
-| `characters/` | Named NPC profiles |
+| `characters/` | Named NPC profiles, and player character decks (by character name) |
 | `items/` | Consumables and equipment |
 | `locations/` | Location overviews and settings |
 | `quests/` | Adventure systems — pressure tracks, encounters, NPCs |

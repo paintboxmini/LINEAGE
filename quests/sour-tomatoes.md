@@ -70,7 +70,7 @@ Do not offer the party a version of this where the father can be reasoned with. 
 
 ## Where the Kids Go
 
-Steele's orphanage — rebuilt on the site of the one that burned when he was a child living in it — is a standing answer to exactly this question. See `testcampaigndecks/steele.md` for his history with it. If Steele is in this party or reachable by it, the connection is direct: he built the place that didn't exist for him, and now it's real for someone else. If he isn't present, the orphanage still exists and still takes them — it just costs the party a longer trip to get there.
+Steele's orphanage — rebuilt on the site of the one that burned when he was a child living in it — is a standing answer to exactly this question. See `characters/steele.md` for his history with it. If Steele is in this party or reachable by it, the connection is direct: he built the place that didn't exist for him, and now it's real for someone else. If he isn't present, the orphanage still exists and still takes them — it just costs the party a longer trip to get there.
 
 ---
 
@@ -103,4 +103,4 @@ They're cherry tomatoes off her own vine, picked too late, gone soft and split. 
 ## Related Documents
 
 - `locations/fog-basin.md` — where this sits in the world
-- `testcampaigndecks/steele.md` — Steele's orphanage, the destination for the kids
+- `characters/steele.md` — Steele's orphanage, the destination for the kids

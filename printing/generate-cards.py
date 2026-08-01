@@ -71,7 +71,7 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../testcampaigndecks/frost.md` — order matches that file's own
+        # `../characters/frost.md` — order matches that file's own
         # Red/Blue/Green grouping, not registration order in the core files.
         'cards': [
             'SACRIFICE STRIKE', 'BLOOD IN THE GAP', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
@@ -86,7 +86,7 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../testcampaigndecks/steele.md`
+        # `../characters/steele.md`
         'cards': [
             'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
             'FORGET', 'PARADOX', 'ALIGN', 'ANTICIPATE',
@@ -100,7 +100,7 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../testcampaigndecks/oracle.md` — matches `content.py`'s ORACLE_DECK
+        # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
         # verbatim (20 Red / 20 Blue / 20 Green).
         'cards': [
             # Red (20)
