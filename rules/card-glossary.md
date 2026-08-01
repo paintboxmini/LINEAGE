@@ -120,7 +120,7 @@ The next attack against you fails completely, before any cards are revealed — 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
 - **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP. Only Body touches HP.
-- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does.
+- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does. A hand already above the new, lower size is not discarded down — you simply can't draw back up until it naturally falls below the cap.
 - **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.

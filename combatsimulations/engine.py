@@ -683,7 +683,9 @@ class Combatant:
         """Change a stat for the combat by delta (negative = loss). Each stat
         drives its own derived value in real time:
           Body -> max HP (±3 per point; clamp current HP, Collapse at 0)
-          Mind -> hand size (force discard if now over)
+          Mind -> hand size (a hand already above the new size is NOT forced
+                  to discard down — removed 2026-08-01, Drew's ruling. It just
+                  can't draw back up until it naturally falls below the cap.)
           Soul -> initiative (applies to future rolls only)
         Only Body touches HP (Drew ruling)."""
         self.stat_mod[stat] += delta
@@ -693,9 +695,6 @@ class Combatant:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:
                 self.collapsed = True
-        elif stat == 'mind':
-            while len(self.hand) > self.effective_hand_size():
-                self.discard.append(self.hand.pop())  # forced discard down to size
 
     def injuries_visible(self):
         """Injuries a player can actually see and count — hand + discard, NOT deck
