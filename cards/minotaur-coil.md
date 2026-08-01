@@ -31,7 +31,7 @@ Range: Melee
 **MAZE SENSE**
 BLUE — MIND — COIL
 Attack: Mind + d4
-Effect: Scry 3 of target's deck.
+Effect: Scry 3 of Defender's deck.
 Defensive Bonus: Scry 2 of your own deck.
 Range: Both
 *"You are moving through its memory."*
