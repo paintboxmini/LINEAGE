@@ -115,7 +115,7 @@ SETS = {
             'REFRACT', 'RETORT', 'SHARPEN', 'STUDY', 'VEIL',
             # Green (20)
             'ADAPT', 'BALANCE', 'BIND', 'BRISTLE', 'COMMUNION',
-            'DEAD RECKONING', 'HEAVE AND HAUL', 'INSTINCT', 'MIRROR STEP',
+            'DEAD RECKONING', 'EDDY', 'INSTINCT', 'MIRROR STEP',
             'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'SMOKE SCREEN',
             'STEADFAST', 'SUPPORT', 'TWIN STRIKE', 'UNTOUCHED', 'URGENCY',
             "YOU'RE NEXT",

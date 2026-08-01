@@ -59,7 +59,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - BRISTLE
 - COMMUNION
 - DEAD RECKONING
-- HEAVE AND HAUL
+- EDDY
 - INSTINCT
 - MIRROR STEP
 - MOCKERY
@@ -81,3 +81,5 @@ FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both
 **Keyword-coverage pass, round 2 (2026-08-01):** ATTRITION (Weak), REELING (Staggered), FOOTWORK (Quick), BLINDSIDE (Blind) close every keyword Red had at zero. RETORT (Thorns), VEIL (Blind), DEAD END (Rooted) do the same for Blue. BRISTLE (Thorns), INSTINCT (Ward) close Green's last two. **BRACE cut** — Resist was at 10, 6 of them Red; BRACE was the most purely-redundant (PAIN IS FUEL pairs Resist with Thorns, BRACE was Resist and nothing else).
 
 **Slimmed back to 60 (2026-08-01)** — the pass above grew the pool to 72; re-trimmed to 20/20/20, cutting only from the pre-coverage-pass cards (every keyword-coverage card from both rounds above is untouched). Cut: DART, PUSH, GROUNDING STANCE, INTERCEPT, RALLY (Red — RALLY specifically for its 5 HP cost, steep for a starter; the rest for redundant movement/Resist already covered elsewhere in Red); UNDERSTANDING, CLIMB, PARTITION, ALIGN (Blue — UNDERSTANDING for quietly outpunching its Blue peers, d8 plus a guaranteed +1d6; the rest for being the least-essential utility picks); FLOW, ACCEPTANCE, DELAY (Green — DELAY specifically chosen over HEAVE AND HAUL despite both being Initiative-adjacent, since HEAVE AND HAUL is Green's only Quick source and cutting it would have reopened a gap this same pass just closed). Full reasoning and final per-keyword counts: `memory.md`. All 8 cards with "Target gains X" wording (OPEN GUARD, MARKED, OPENING, ATTRITION, REELING, BLINDSIDE, VEIL, DEAD END) corrected to "Defender gains X" / "Attacker gains X" — the code was always bound to the current RPS opponent, never a free choice of target; the wording was simply wrong.
+
+**HEAVE AND HAUL replaced by EDDY (2026-08-01)** — the exact card the entry above worked hard to keep turned out to be too strong for a starter pool after all: all-enemies forced movement plus a team-wide free Quick, stacked on one card. EDDY keeps the niche (Green movement manipulation) and Green's one working Quick source, scaled to starter level — single-target reposition, Quick moved to its own self-only line, d4 instead of d8. HEAVE AND HAUL itself is untouched everywhere else in the pool. Full reasoning: `memory.md`.

@@ -1100,6 +1100,19 @@ def _flow_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
 _flow_defense = _flow_effect
 
+# EDDY (Oracle, 2026-08-01) — replaces HEAVE AND HAUL in the Oracle list;
+# HEAVE AND HAUL itself is untouched, still a real playable core card (still
+# in `warper`'s deck), just too strong for a starter pool: all-enemies forced
+# movement plus a team-wide free Quick on one card. EDDY keeps the same
+# niche (Green movement manipulation) at starter scale — single-target,
+# same toggle pattern as FLOW/REALIGNMENT but on the foe instead of self —
+# with Quick moved to its own line, self-only, so Green keeps a working
+# Quick source in the Oracle without carrying the original card's stacking.
+def _eddy_effect(engine, me, foe):
+    foe.position = 'backline' if foe.position == 'frontline' else 'frontline'
+def _eddy_defense(engine, me, foe):
+    me._quick = True
+
 def _shade_away_effect(engine, me, foe):
     me.evade += 1
 def _shade_away_defense(engine, me, foe):
@@ -2296,6 +2309,7 @@ def build_cards():
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 8, effect=_flow_effect, defense=_flow_defense)
+    add("EDDY", 'G', 'soul', 'both', 4, effect=_eddy_effect, defense=_eddy_defense)
     add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
     add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
@@ -2574,7 +2588,7 @@ ORACLE_DECK = [
     "RETORT", "SHARPEN", "STUDY", "VEIL",
     # Green (20)
     "ADAPT", "BALANCE", "BIND", "BRISTLE", "COMMUNION", "DEAD RECKONING",
-    "HEAVE AND HAUL", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
+    "EDDY", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
     "RESONATE", "SHADE AWAY", "SMOKE SCREEN", "STEADFAST", "SUPPORT",
     "TWIN STRIKE", "UNTOUCHED", "URGENCY", "YOU'RE NEXT",
 ]
@@ -2725,7 +2739,7 @@ ROSTER = {
 # excluded, since there's no registered card to tag.
 CARD_TAGS = {
     "movement": frozenset({
-        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "FLOW",
+        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "EDDY", "FLOW",
         "HAUL", "HEAVE", "HEAVE AND HAUL", "KNOWN GROUND", "MIRROR STEP", "NO VACANCY",
         "PHASE LOGIC", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
         "SLIP THE BLADE", "TRAMPLE",
@@ -2793,7 +2807,7 @@ CARD_TAGS = {
     "keyword:staggered:foe": frozenset({
         "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING",
     }),
-    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK"}),
+    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK", "EDDY"}),
     "keyword:quick:ally": frozenset({"REALIGNMENT"}),
 
     "gated_damage": frozenset({
