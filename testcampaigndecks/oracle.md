@@ -6,7 +6,7 @@ Cards available in the Oracle pool for this campaign. At end of session, GM draw
 
 ## Current Pool
 
-Starter tier — simplest, lowest power/impact cards from the three core sets. Each card here touches one of the three core pillars (RPS, Initiative, Position — `agent-tools/mechanics-perspective.md`) or a standard keyword; none use discard, status injection (Injury/Exhaust), or hand reveal. All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
+Starter tier — simplest, lowest power/impact cards from the three core sets. Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword; none force the opponent to discard, inject a status (Injury/Exhaust), force a hand reveal, or presuppose a system (Anchored, an RPS auto-win/reversal, a precondition set by another card, an open-ended amount choice) the pool doesn't otherwise introduce. All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`. Selection trail: `memory.md`.
 
 **Red** (20)
 - BLOOD IN THE GAP
@@ -15,11 +15,11 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - DART
 - ENDURE
 - EQUAL FOOTING
+- GAMBLER'S RUIN
 - GORE
 - GROUNDING STANCE
 - GUARD
 - INTERCEPT
-- IRON GRIP
 - PAIN IS FUEL
 - PULL
 - PUSH
@@ -36,23 +36,25 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - AXIOM
 - CALCULATE
 - CERTAINTY
+- CLIMB
 - DEFLECT
-- EXPOSED
 - FOCUS
-- FRAME-TRAP
 - INTERRUPT
 - LAST RESORT
-- PARADOX
+- PARTITION
 - PHASE LOGIC
 - PROFILE
 - REALIGNMENT
 - REBUTTAL
 - REFRACT
 - SHARPEN
-- SLIPSTREAM
+- STUDY
+- UNDERSTANDING
 
-**Green** (20)
+**Green** (19 — see note below)
+- ACCEPTANCE
 - ADAPT
+- BALANCE
 - BIND
 - COMMUNION
 - DEAD RECKONING
@@ -61,11 +63,8 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - HEAVE AND HAUL
 - MIRROR STEP
 - MOCKERY
-- PATIENCE OF STONE
 - RESONATE
-- ROOTED OATH
 - SHADE AWAY
-- SHARED BURDEN
 - SMOKE SCREEN
 - SUPPORT
 - TWIN STRIKE
@@ -73,4 +72,4 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - WARSONG
 - YOU'RE NEXT
 
-**Blue is 19, not 20** — after cutting STUDY ("Discard 2, draw 2," a real discard mechanic missed by an early automated pass and caught reading the actual card text), no remaining core Blue card satisfies both "touches a pillar/keyword/Scry" and "no discard/status/hand-reveal." The unused remainder (FRACTURE, DISTRACT, STILLNESS, CLIMB, FORGET, ERODE, TAINT, PARTITION, UNNAME) either forces a discard, injects a status, or doesn't touch a pillar/keyword/Scry at all. Flagged rather than forcing a 20th pick that breaks a stated rule.
+**Blue and Green both land at 19, not 20** — no remaining core card in either color clears every rule above without reintroducing one of them. Flagged rather than padded to the round number.
