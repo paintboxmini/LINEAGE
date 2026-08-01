@@ -476,8 +476,8 @@ Range: Melee
 **OPEN GUARD**
 RED — BODY
 Attack: Body + d6
-Effect: Target gains Vulnerable.
-Defensive Bonus: Target gains Vulnerable.
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
 Range: Melee
 *"Every stance has a seam."*
 
@@ -496,8 +496,8 @@ Range: Both
 **ATTRITION**
 RED — BODY
 Attack: Body + d6
-Effect: Target gains Weak.
-Defensive Bonus: Target gains Weak.
+Effect: Defender gains Weak.
+Defensive Bonus: Attacker gains Weak.
 Range: Melee
 *"Wear them down. That's the whole plan."*
 
@@ -506,8 +506,8 @@ Range: Melee
 **REELING**
 RED — BODY
 Attack: Body + d4
-Effect: Target gains Staggered.
-Defensive Bonus: Target gains Staggered.
+Effect: Defender gains Staggered.
+Defensive Bonus: Attacker gains Staggered.
 Range: Melee
 *"The second hit is always harder to see coming."*
 
@@ -526,7 +526,7 @@ Range: Both
 **BLINDSIDE**
 RED — BODY
 Attack: Body + d8
-Effect: Target gains Blind.
-Defensive Bonus: Target gains Blind.
+Effect: Defender gains Blind.
+Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"They never see the one that matters."*

@@ -358,8 +358,8 @@ Range: Ranged
 **MARKED**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Target gains Vulnerable.
-Defensive Bonus: Target gains Vulnerable.
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
 Range: Ranged
 *"Once you've seen the pattern, you can't unsee it."*
 
@@ -378,8 +378,8 @@ Range: Ranged
 **VEIL**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Target gains Blind.
-Defensive Bonus: Target gains Blind.
+Effect: Defender gains Blind.
+Defensive Bonus: Attacker gains Blind.
 Range: Ranged
 *"What you can't see, you can't counter."*
 
@@ -388,7 +388,7 @@ Range: Ranged
 **DEAD END**
 BLUE — MIND
 Attack: Mind + d8
-Effect: Target gains Rooted.
-Defensive Bonus: Target gains Rooted.
+Effect: Defender gains Rooted.
+Defensive Bonus: Attacker gains Rooted.
 Range: Ranged
 *"Some paths were never actually open."*

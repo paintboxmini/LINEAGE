@@ -366,8 +366,8 @@ Range: Melee
 **OPENING**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target gains Vulnerable.
-Defensive Bonus: Target gains Vulnerable.
+Effect: Defender gains Vulnerable.
+Defensive Bonus: Attacker gains Vulnerable.
 Range: Melee
 *"There is always a moment. This is it."*
 
