@@ -30,7 +30,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - TRAMPLE
 - WEATHERED
 
-**Blue** (19 — see note below)
+**Blue** (20)
 - ALIGN
 - ANTICIPATE
 - AXIOM
@@ -39,6 +39,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - CLIMB
 - DEFLECT
 - FOCUS
+- FORESEEN
 - INTERRUPT
 - LAST RESORT
 - PARTITION
@@ -51,7 +52,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - STUDY
 - UNDERSTANDING
 
-**Green** (19 — see note below)
+**Green** (20)
 - ACCEPTANCE
 - ADAPT
 - BALANCE
@@ -66,10 +67,11 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - RESONATE
 - SHADE AWAY
 - SMOKE SCREEN
+- STEADFAST
 - SUPPORT
 - TWIN STRIKE
 - URGENCY
 - WARSONG
 - YOU'RE NEXT
 
-**Blue and Green both land at 19, not 20** — no remaining core card in either color clears every rule above without reintroducing one of them. Flagged rather than padded to the round number.
+FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both sides, filling a real gap: neither color had a clean self-Resist grant before (`memory.md`).

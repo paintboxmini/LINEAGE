@@ -342,3 +342,13 @@ Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both
 *"When there's nothing left to protect, nothing gets through."*
+
+---
+
+**FORESEEN**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Ranged
+*"You already knew where the blow would land."*

@@ -1245,6 +1245,17 @@ def _last_resort_defense(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
 
+# FORESEEN (Oracle starter deck, 2026-08-01) — plain unconditional Resist
+# both sides, same shape as BRACE (Red)/PAIN IS FUEL (Red)'s bare grants.
+# Built to fill a real, measured gap: Blue's Oracle-19 had no clean,
+# unconditional self-Resist card (ALIGN's is conditional on a shared-color
+# check) — checked via CARD_TAGS["keyword:resist:self"] before writing
+# this, not assumed.
+def _foreseen_effect(engine, me, foe):
+    me.resist += 1
+def _foreseen_defense(engine, me, foe):
+    me.resist += 1
+
 # SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
 # Blind on the whole enemy Frontline was the card's actual identity, so it
 # stayed; the gating changed instead of the scope: minimum base die, melee
@@ -1264,6 +1275,15 @@ def _smoke_screen_effect(engine, me, foe):
     apply_blind(me)
 def _smoke_screen_defense(engine, me, foe):
     apply_blind(foe)
+
+# STEADFAST (Oracle starter deck, 2026-08-01) — plain unconditional Resist
+# both sides, same shape as FORESEEN (Blue) above. Same real, measured gap
+# on the Green side: Green's Oracle-19 had zero self-Resist grants at all
+# (RESONATE's is ally-only), checked via CARD_TAGS before writing this.
+def _steadfast_effect(engine, me, foe):
+    me.resist += 1
+def _steadfast_defense(engine, me, foe):
+    me.resist += 1
 
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
@@ -2051,8 +2071,12 @@ def build_cards():
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
     add("LAST RESORT", 'B', 'mind', 'both', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
+    add("FORESEEN", 'B', 'mind', 'ranged', 6,
+        effect=_foreseen_effect, defense=_foreseen_defense)
     add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
         effect=_smoke_screen_effect, defense=_smoke_screen_defense)
+    add("STEADFAST", 'G', 'soul', 'melee', 4,
+        effect=_steadfast_effect, defense=_steadfast_defense)
     add("LEVEL THE FIELD", 'G', 'soul', 'both', 6,
         effect=_level_the_field_effect, defense=_level_the_field_defense)
     add("GENETIC SAMPLE", 'B', 'mind', 'both', 6,
@@ -2470,7 +2494,7 @@ CARD_TAGS = {
         "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
         "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN CONTACT",
         "RHYTHM BREAK", "STILL COUNTING", "DARK CORRIDOR", "ROLLOUT",
-        "TABLE STAKES", "DIG IN", "SEED",
+        "TABLE STAKES", "DIG IN", "SEED", "FORESEEN", "STEADFAST",
     }),
     "keyword:resist:ally": frozenset({"RESONATE", "GUARD", "ROOTED OATH"}),
     "keyword:vulnerable:self": frozenset({"OVERCOMMIT"}),   # deliberate exception —

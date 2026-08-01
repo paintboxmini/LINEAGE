@@ -350,3 +350,13 @@ Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies,
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"Visibility is a luxury."*
+
+---
+
+**STEADFAST**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Melee
+*"The current breaks around what does not move."*
