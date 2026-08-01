@@ -29,6 +29,16 @@ In combat, you don't declare an action and roll — you play a card. The card te
 
 ---
 
+## "Attacker" / "Defender" vs. "Target"
+
+Two different words in card text, two different mechanics — not interchangeable:
+
+**Attacker** / **Defender** means whoever you're resolving *this specific RPS exchange* against. No choice is ever involved — it's fixed by who attacked and who defended this reveal (e.g. "Defender gains Rooted," "Attacker gains Weak").
+
+**Target** means you genuinely choose who receives the effect — an ally among several ("Target ally gains Deadly"), or a specific enemy when more than one is present ("Target enemy can only attack frontline targets"). If a card doesn't actually let the player choose, it isn't a Target effect, even if the caster and recipient could theoretically differ — write it as Attacker/Defender instead.
+
+---
+
 ## Card Example
 
 ```

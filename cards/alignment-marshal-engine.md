@@ -21,7 +21,7 @@ Range: Both
 **CALIBRATION PULSE**
 BLUE — MIND — ENGINE
 Attack: Mind + d6
-Effect: Target gains Blind.
+Effect: Defender gains Blind.
 Defensive Bonus: Scry 1.
 Range: Both
 *"Geometric lines sketch across nearby surfaces."*

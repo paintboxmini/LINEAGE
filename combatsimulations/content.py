@@ -2603,6 +2603,27 @@ ROSTER = {
 #                            calls, not a text grep — a naive "ally" search
 #                            over-matches on words like "finally"/"actually"
 #                            in comments
+#   target_choice           — the card text says "Target" (SUPPORT's
+#                            "Target ally," PARTITION's "Target enemy") —
+#                            the caster genuinely picks who receives the
+#                            effect, unlike Attacker/Defender (bound to
+#                            whoever's in this specific RPS exchange, no
+#                            choice) or "all allies"/"all enemies" (applies
+#                            to everyone, also no choice). Distinction
+#                            formalized in rules/cards.md, 2026-08-01, after
+#                            8 new cards this session used "Target" when
+#                            they meant Attacker/Defender — real code check
+#                            confirmed the mismatch (foe is a plain
+#                            positional parameter, zero selection logic) and
+#                            a further sweep found the same error already
+#                            existed on 8 older cards (ANTICIPATE, IRON
+#                            GRIP, and six unregistered signature/creature
+#                            cards) — all 16 fixed. This bucket is a first-
+#                            pass sweep of the three core files only
+#                            (cards/red-body.md, blue-mind.md,
+#                            green-soul.md) — signature/creature files
+#                            not swept for target_choice membership, unlike
+#                            every other bucket above
 #
 # Coverage note: every bucket above was verified by reading the actual
 # function bodies (grep the specific attribute mutation / engine call, then
@@ -2736,5 +2757,10 @@ CARD_TAGS = {
         "PARTITION", "PATIENCE", "RALLY", "REALIGNMENT", "RENEWAL",
         "RESONATE", "ROOTED OATH", "SHARED BURDEN", "SHARPEN", "SUPPORT",
         "TABLE STAKES", "URGENCY", "WARSONG", "WITNESS",
+    }),
+    "target_choice": frozenset({
+        "SHARPEN", "CALCULATE", "PARTITION", "SUPPORT", "PATIENCE",
+        "WITNESS", "TWIN STRIKE", "SHARED BURDEN", "ROOTED OATH",
+        "FIELD MEDICINE", "BLOOD TITHE",
     }),
 }

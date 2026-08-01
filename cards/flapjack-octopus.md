@@ -15,7 +15,7 @@ Range: Melee
 **ENVELOPING PRESS**
 RED — BODY
 Attack: Body + d6
-Effect: Target gains Rooted until start of their next turn. Ends Flatten.
+Effect: Defender gains Rooted until start of their next turn. Ends Flatten.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*
@@ -35,7 +35,7 @@ Range: Melee
 **INK BURST**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Target gains Weak on their next attack. Ends Flatten.
+Effect: Defender gains Weak on their next attack. Ends Flatten.
 Defensive Bonus: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
