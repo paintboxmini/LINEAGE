@@ -106,7 +106,7 @@ SETS = {
             # Red (20)
             'ATTRITION', 'BLINDSIDE', 'BLOOD IN THE GAP', 'CHARGE', 'ENDURE',
             'EQUAL FOOTING', 'FOOTWORK', "GAMBLER'S RUIN", 'GORE', 'GUARD',
-            'OPEN GUARD', 'PAIN IS FUEL', 'PULL', 'REELING', 'REPEL',
+            'OPEN GUARD', 'PAIN IS FUEL', 'PULL', 'PUSH', 'REELING',
             'RETALIATE', 'SLIP THE BLADE', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
             # Blue (20)
             'ANTICIPATE', 'AXIOM', 'CALCULATE', 'CERTAINTY', 'DEAD END',

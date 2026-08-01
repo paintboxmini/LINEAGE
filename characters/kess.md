@@ -34,7 +34,7 @@ Her mother's echo persists in the Wallows' Echo Cavern (`locations/the-wallows.m
 
 - **Giblets** — the escort who went into the mine with her. Her tattoo reacts near his stall; neither of them has asked why. See `characters/giblets.md`.
 - **Mortis** — pulled them both out. Knows what she lost. Pours her a drink without being asked, same as he does for Lily. See `characters/mortis.md`.
-- **Moth** — a fellow bazaar regular. She finds him maddening; he finds her planning exhausting. They've reached an understanding. Not yet built out with his own file — see `locations/underground-bazaar.md`.
+- **Moth** — a fellow bazaar regular. She finds him maddening; he finds her planning exhausting. They've reached an understanding. See `characters/moth.md`.
 - **The Cartographer** — her grandmother. See `locations/underground-bazaar.md`.
 
 ---

@@ -844,6 +844,12 @@ def _communion_defense(engine, me, foe):
 def _mirror_step_effect(engine, me, foe):
     for c in (me, foe):
         c.position = 'backline' if c.position == 'frontline' else 'frontline'
+# Defensive Bonus ("Allies gain 1 Quick") was text-only until 2026-08-01 —
+# `add()` below never passed a `defense=` at all. Same pattern as
+# REALIGNMENT's own ally-Quick grant, which does work.
+def _mirror_step_defense(engine, me, foe):
+    for a in engine.allies(me):
+        a._quick = True
 
 # ADAPT (Green), EQUAL FOOTING (Red), and CERTAINTY (Blue) below are the
 # "wins ties" Special Rule family — vanilla otherwise, no effect/defense
@@ -1716,6 +1722,22 @@ def _haul_effect(engine, me, foe):
             e.position = 'frontline'
 _haul_defense = _haul_effect
 
+# HOLD FAST / IRON ANCHOR (Lefty, `cards/lefty.md`) — 2026-08-01, registering
+# his two remaining signature cards (HEAVE/HAUL already done above). Neither
+# was ever in build_cards(); Lefty himself isn't in ROSTER, so this is zero
+# regression risk anywhere in the standing suite.
+def _hold_fast_effect(engine, me, foe):
+    engine.heal(me, me._last_hit // 2)   # Lifesteal: half of landed damage,
+    # same bare-"Lifesteal" precedent as BLOOD IN THE GAP (no attached cost,
+    # unlike CONSUME's full-damage version, which pays for the bigger number)
+def _hold_fast_defense(engine, me, foe):
+    me.resist += 1
+
+def _iron_anchor_effect(engine, me, foe):
+    apply_staggered(foe)
+def _iron_anchor_defense(engine, me, foe):
+    me._protect = True
+
 # AEGE (Carrion Guide, `cards/aege.md`) — 2026-08-01, built per Drew's direct
 # request: stat and deck her, CTR 13-17. Reads the field before committing to
 # anything, same instinct that has her reading a traveler's tells before she
@@ -2149,7 +2171,7 @@ def build_cards():
     add("DELAY", 'G', 'soul', 'ranged', 8, effect=_delay_effect, defense=_delay_defense)
     add("COMMUNION", 'G', 'soul', 'ranged', 4,
         effect=_communion_effect, defense=_communion_defense)
-    add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect)
+    add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect, defense=_mirror_step_defense)
     add("PATIENCE", 'G', 'soul', 'melee', None,
         damage=_patience_dmg, defense=_patience_defense)
 
@@ -2207,6 +2229,10 @@ def build_cards():
         effect=_heave_effect, defense=_heave_defense)
     add("HAUL", 'R', 'body', 'melee', 8,
         effect=_haul_effect, defense=_haul_defense)
+    add("HOLD FAST", 'R', 'body', 'melee', 6,
+        effect=_hold_fast_effect, defense=_hold_fast_defense)
+    add("IRON ANCHOR", 'B', 'mind', 'both', 6,
+        effect=_iron_anchor_effect, defense=_iron_anchor_defense)
     add("WATCHES FEET", 'G', 'soul', 'melee', 4,
         effect=_watches_feet_effect, defense=_watches_feet_defense)
     add("KNOWN GROUND", 'G', 'soul', 'both', 6,
@@ -2579,7 +2605,7 @@ ORACLE_DECK = [
     # Red (20)
     "ATTRITION", "BLINDSIDE", "BLOOD IN THE GAP", "CHARGE", "ENDURE",
     "EQUAL FOOTING", "FOOTWORK", "GAMBLER'S RUIN", "GORE", "GUARD",
-    "OPEN GUARD", "PAIN IS FUEL", "PULL", "REELING", "REPEL", "RETALIATE",
+    "OPEN GUARD", "PAIN IS FUEL", "PULL", "PUSH", "REELING", "RETALIATE",
     "SLIP THE BLADE", "TRAMPLE", "UNBROKEN", "WEATHERED",
     # Blue (20)
     "ANTICIPATE", "AXIOM", "CALCULATE", "CERTAINTY", "DEAD END", "DEFLECT",
@@ -2771,7 +2797,7 @@ CARD_TAGS = {
         "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
         "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN CONTACT",
         "RHYTHM BREAK", "STILL COUNTING", "DARK CORRIDOR", "ROLLOUT",
-        "TABLE STAKES", "DIG IN", "SEED", "FORESEEN", "STEADFAST",
+        "TABLE STAKES", "DIG IN", "SEED", "FORESEEN", "STEADFAST", "HOLD FAST",
     }),
     "keyword:resist:ally": frozenset({"RESONATE", "GUARD", "ROOTED OATH"}),
     "keyword:vulnerable:self": frozenset({"OVERCOMMIT"}),   # deliberate exception —
@@ -2805,10 +2831,10 @@ CARD_TAGS = {
         "BIND", "IRON GRIP", "DRAG", "COIL LATCH", "GORE", "DEAD END",
     }),
     "keyword:staggered:foe": frozenset({
-        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING",
+        "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING", "IRON ANCHOR",
     }),
     "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK", "EDDY"}),
-    "keyword:quick:ally": frozenset({"REALIGNMENT"}),
+    "keyword:quick:ally": frozenset({"REALIGNMENT", "MIRROR STEP"}),
 
     "gated_damage": frozenset({
         "TRACE", "RHYTHM BREAK", "STILL COUNTING", "NIP", "UNDERSTANDING",
