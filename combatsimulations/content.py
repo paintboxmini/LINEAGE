@@ -1682,6 +1682,27 @@ def _heave_and_haul_defense(engine, me, foe):
     for a in [me] + engine.allies(me):
         a._quick = True
 
+# HEAVE / HAUL (Lefty, `cards/lefty.md`) — 2026-08-01, replacing Lefty's own
+# HOOK AND HAUL (a single card that pulled everyone to him / pushed everyone
+# away). Drew's original description, confirmed directly rather than
+# assumed after the record showed HEAVE AND HAUL above was never actually
+# Lefty's despite the shared name: HEAVE throws the whole enemy Frontline
+# back, HAUL drags the whole enemy Backline in — two unconditional, forced,
+# single-direction cards instead of one card doing both. Not team_only:
+# engine.enemies(me) always includes the current 1v1 foe too, unlike the
+# ally-referencing cards that tag actually covers.
+def _heave_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'frontline':
+            e.position = 'backline'
+_heave_defense = _heave_effect
+
+def _haul_effect(engine, me, foe):
+    for e in engine.enemies(me):
+        if e.position == 'backline':
+            e.position = 'frontline'
+_haul_defense = _haul_effect
+
 # RHYTHM BREAK (was YOU CHANGED WALLS, Wall-Reader; briefly TELLS — renamed
 # again, "isn't gonna work," per Drew) — reworked on promotion, not just
 # renamed. Effect uses "moved" (Drew's own call, the cleaner phrasing) via
@@ -2139,6 +2160,10 @@ def build_cards():
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 8,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
+    add("HEAVE", 'R', 'body', 'melee', 8,
+        effect=_heave_effect, defense=_heave_defense)
+    add("HAUL", 'R', 'body', 'melee', 8,
+        effect=_haul_effect, defense=_haul_defense)
     add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
     add("STILL COUNTING", 'G', 'soul', 'both', 6,
@@ -2598,8 +2623,8 @@ ROSTER = {
 CARD_TAGS = {
     "movement": frozenset({
         "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "FLOW",
-        "HEAVE AND HAUL", "MIRROR STEP", "NO VACANCY", "PHASE LOGIC",
-        "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
+        "HAUL", "HEAVE", "HEAVE AND HAUL", "MIRROR STEP", "NO VACANCY",
+        "PHASE LOGIC", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
         "SLIP THE BLADE", "TRAMPLE",
     }),
     "initiative": frozenset({
