@@ -199,9 +199,11 @@ Some consequences become cards. A status card can't be played, and it doesn't le
 
 ## Collapse & Death
 
-Reduced to 0 HP → **Collapse.** You cannot act, cannot defend, and are automatically hit by anything targeting you. A single attack can't push a standing combatant below 0, but further damage while already Collapsed can. Reach **negative half your Max HP (rounded up)** → death.
+Reduced to 0 HP → **Collapse.** You go to the ground, and you are **Down** until you get up. A single attack can't push a standing combatant below 0, but further damage while already Collapsed can. Reach **negative half your Max HP (rounded up)** → death.
 
-While Collapsed, you can still be healed back into the fight, and recover 1d4 HP every 3 in-game hours if left alone.
+While Down you cannot attack, cannot change position, and cannot defend — so attacks against you land automatically. You can still be healed back into the fight, and recover 1d4 HP every 3 in-game hours if left alone.
+
+**Healing does not stand you up.** It ends the Collapse; getting off the ground costs your action on your turn, and you act normally from the turn after that. A revived ally is alive and still a turn away from being useful — which is why catching someone *before* they go down is worth more than picking them up after.
 
 If the whole party goes down, the GM decides the outcome from the enemy's own nature and intent — death is possible, not automatic. Captivity, humiliation, forced retreat, and stranger fates are all real options. The GM can also declare instant death outright when the fiction genuinely demands it (a beheading, a fall into the void) — a rare override, not a default.
 

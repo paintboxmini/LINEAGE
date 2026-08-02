@@ -626,6 +626,11 @@ class Combatant:
         self.last_color = None           # most recent attack color (public)
         self.attack_history = Counter()  # public tally of revealed attack colors
         self.collapsed = False
+        self.down = False                # on the ground (rules/combat.md, While Down).
+                                          # Set when you Collapse; healing above 0 clears
+                                          # `collapsed` but NOT this — standing costs an
+                                          # action, so a revived ally is alive-but-prone
+                                          # for one more turn.
         self.is_dead = False             # took a 2nd qualifying hit while Collapsed
                                           # (or one huge enough to skip the count) — permanent
         self._hits_while_collapsed = 0   # Death rule (Drew, big root change): the hit that
@@ -695,6 +700,7 @@ class Combatant:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:
                 self.collapsed = True
+                self.down = True
 
     def injuries_visible(self):
         """Injuries a player can actually see and count — hand + discard, NOT deck
@@ -911,6 +917,7 @@ class Duel:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            target.down = True   # on the ground until they spend an action standing
             _clear_ongoing_on_collapse(target)
             _leave_wheel(self, self.queue, target)
         return amount
@@ -926,6 +933,9 @@ class Duel:
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
+            # `down` deliberately NOT cleared here (rules/combat.md, Standing Up):
+            # healing ends the Collapse but leaves them on the ground. Standing
+            # costs their own action on their next turn.
             target._hits_while_collapsed = 0   # a fresh 2-hit cycle next time they go down
             # Revived one slot after whoever healed them, not straight into the
             # live rotation — the marker has to complete a full lap before it
@@ -1033,7 +1043,8 @@ class Duel:
         was_staggered = defender.staggered
         def_card = None
         physical_def_card = None
-        if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+        if (not defender.collapsed and not defender.down and not defender.staggered
+                and not defender.cannot_defend):
             if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
                 c = defender.draw_one(self.rng)
                 if c:
@@ -1297,6 +1308,12 @@ class Duel:
             return
         self.start_of_turn(who)
         if who.collapsed:
+            return
+        if who.down:
+            # Alive but on the ground — standing consumes the whole action
+            # (rules/combat.md, Standing Up). They act normally next turn.
+            who.down = False
+            self._say(f"{who.name} stands up")
             return
         if who._quick:
             # Quick (card-glossary.md): a free repositioning action on top of

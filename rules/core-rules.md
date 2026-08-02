@@ -95,7 +95,9 @@ Green (Soul) beats  Blue  (Mind)
 
 ## Collapse & Death
 
-- Reach **0 HP** → Collapse (cannot act, cannot defend, auto-hit)
+- Reach **0 HP** → Collapse. You are on the ground — **Down**
+- While Down: cannot attack, cannot defend (attacks auto-hit), cannot change position
+- Healing above 0 ends the Collapse but does not stand you up — **standing costs your action**
 - Reach **−(Max HP ÷ 2, rounded up)** → Death
 - Every **3 in-game hours** Collapsed → recover **1d4 HP**
 - GM may declare instant death if the fiction demands it

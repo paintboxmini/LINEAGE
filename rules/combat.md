@@ -224,13 +224,23 @@ If an attack reduces you to **0 HP**, you Collapse.
 - Additional damage taken while Collapsed *can* reduce you below 0.
 - If you reach **negative half your Max HP (rounded up)**, you die.
 
-### While Collapsed
+You are on the ground. That is literal, and it stays true until you spend an action getting up.
 
-- You cannot act.
-- You cannot defend.
-- You are automatically hit by any attack targeting you.
+### While Down
+
+You are Down from the moment you Collapse until you stand. Healing above 0 HP ends the Collapse — it does not stand you up.
+
+- You cannot attack.
+- You cannot defend, so any attack targeting you lands automatically.
+- You cannot change position.
 - You may be healed back into combat.
 - Every **3 in-game hours** spent Collapsed, recover **1d4 HP**.
+
+### Standing Up
+
+Once you are above 0 HP, **standing costs your action** on your turn. You are Down until you spend it, and you act normally from your next turn onward.
+
+A revived ally is not immediately back in the fight. They are alive, on the ground, and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.
 
 ### If the Entire Party Collapses
 

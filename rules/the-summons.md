@@ -88,7 +88,9 @@ You will guess wrong. Everyone guesses wrong. Guessing wrong is not a failure st
 
 **On cutting.** When you strike at something, you are doing what the Knife did, in miniature and badly. You are insisting on one outcome over all the others available. Sometimes the world grants it. Sometimes the thing you cut at was insisting harder.
 
-**On being cut.** You will be. The damage is real and it accumulates and there is no round where it quietly goes away. When enough of it lands, you Collapse — you are still there, you are simply no longer able to argue with what happens next. You can be brought back from that. Hands can reach you.
+**On being cut.** You will be. The damage is real and it accumulates and there is no round where it quietly goes away. When enough of it lands, you Collapse — you go down, and you are still there, and you are simply no longer able to argue with what happens next. You can be brought back from that. Hands can reach you.
+
+But understand what being brought back is and is not. Someone closing your wounds does not put you back on your feet; it only stops the leaving. Getting up is its own act and it costs you the moment you might have used for something else. There is always a stretch where you are alive again and still on the ground, and the fight does not pause politely while you find your legs. This is why the people who are good at this catch each other *before* the fall.
 
 Past that there is a floor, and under the floor there is nothing, and I will not be at that table when you arrive. When someone dies here, I am not the one who meets them. There is another door, and I do not go through it, and I do not know what is on the other side. Anyone who tells you they do is selling you something.
 

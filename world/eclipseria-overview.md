@@ -2,6 +2,10 @@
 
 Eclipseria is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
 
+And it rains. Not storms — a slow rain, most days, most hours. Everything is a little damp; everyone has either made peace with that or left. It is background, not event, and people stop hearing it long before they stop feeling it.
+
+**The world was born dying.** This is not decline and not a curse — it is the founding condition. Reality here was wounded into holding (`mythology/creation-myth-the-three-cuts.md`), and those wounds have never closed, because a closed wound holds nothing open. Eclipseria is working exactly as it was made to, at exactly the cost it was made to demand. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
+
 The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
 
 Danger comes from monsters, yes. But also from the environment, from other people whose motives are opaque and unstable, and from the quieter pressure of places that seem to want something from you.
