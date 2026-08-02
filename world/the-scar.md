@@ -1,6 +1,6 @@
 # The Scar
 
-*A persistent presence in the In-Between (`world/the-in-between.md`). Encountered early. Not resolved.*
+*A persistent presence in the In-Between (`world/the-in-between.md`). Encountered early. Unresolved to every player and every NPC in the world; the GM Secret below says who it is.*
 
 *No stat block. The Scar has never been fought, does not approach, and does not respond to being attacked. If that changes, it is a campaign event and not a stat line.*
 
@@ -52,13 +52,29 @@ Between rungs, months of nothing. The rungs are not a countdown and should never
 
 ---
 
-## What This File Does Not Establish
+## GM Secret — Not Player-Facing
 
-What it is. What it wants. Whether it wants. What happens at the end of the ladder. Whether there is an end.
+**The Scar is King Pendragon.** See `world/the-regency.md`, The Pendragon Attempt.
 
-**One reading, offered as a reading and not as truth.** The Three Cuts have never stopped bleeding, and cannot: *"healing would close them, and a closed wound holds nothing open"* (`mythology/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is a body where the closing already finished — and by the myth's own sentence, a thing that closed holds nothing open, which is a description of a hollow center arrived at from the other direction.
+He and five companions tried to claim the Seat of Love/Binding. They failed. The five survivors lost their internal contradiction and became archetypes — the file describes their animal titles as *"scar tissue, not heraldry,"* and says the attempt *"left marks on everyone in the room."* Pendragon went the whole distance. Nuance did not burn away from him; **he** burned away, and what stayed was the marks.
 
-That reading is available to anyone who knows the myth. Nothing in the world confirms it. It is not written down here as fact, and a GM who resolves it at the table has spent something that cannot be re-earned.
+The council believes he died. He did not. That is true, and it is worse.
+
+It also explains where he is. A thing with no interior cannot be held anywhere that requires holding, so he is in the only ground nobody pays to hold.
+
+**This changes nothing a player sees.** No NPC knows. No book has an entry. The Regency does not know its founder is walking around outside the walls, and Oswald's ongoing project to claim the same Seat is being run by people who think the first attempt simply killed him.
+
+---
+
+## Still Not Established
+
+What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
+
+Knowing the name is not knowing the thing. A GM who has read this section still has nothing to tell a player, and that is correct.
+
+*(One resonance, unresolved: he failed at the Seat of Love and Binding, and what he does now is attend people, follow them, and never once approach. Nothing establishes that these are related.)*
+
+**The myth's own logic, for a GM who wants it.** The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`mythology/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. That the cosmology and the political history arrive at the same empty middle is not a coincidence anyone in the world has noticed.
 
 *(Separately: the ghost stories in `world/the-unheld.md` say crews that sailed past the coast came home with unfamiliar scars. Nothing connects the two. The resemblance is left standing.)*
 
@@ -69,4 +85,5 @@ That reading is available to anyone who knows the myth. Nothing in the world con
 - `world/the-in-between.md` — where it is, and why the Cuts are thin there
 - `mythology/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
-- `world/seats-archons-echoes.md` — the taxonomy the Scar is conspicuously not in
+- `world/the-regency.md` — the Pendragon Attempt, and who this is
+- `world/seats-archons-echoes.md` — failed Seat-takers, and the taxonomy the Scar is conspicuously not in

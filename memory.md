@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A3 (Drew's call) — Pendragon is the Scar.** Resolves "what he became" and closes the Gluttony Abomination as a candidate. GM Secret only; the Scar's wants and whether anything of him remains stay open. Propagated across 5 files. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A3 (Drew's call) — `world/the-scar.md` created; `the-in-between.md` wired to it.** A persistent campaign-long presence, built as a cadence/escalation system rather than a creature. Its nature, its wants, and the end of the ladder are all deliberately unestablished. Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A3 (Drew's call) — `world/the-in-between.md` created; three files wired to it.** The overworld now has a name and properties. Cosmology, so his authority throughout: he named it, set the three properties, ruled that the coastline stays hard, and confirmed displaced-not-random encounters. Full reasoning in Standing Reasoning.
@@ -52,10 +54,10 @@ Two engines, both Python, no dependencies: `engine.py` (1v1 duels, `run.py`) and
 Mass Evade for position-mates. Passed red team but flagged as strong — needs Drew's deliberate sign-off before entering the Oracle. Don't promote to canon without asking.
 
 **Pendragon Arc** (`world/the-regency.md`, `mythology/seats.md`)
-Bones are in place. What's locked: five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. Pendragon didn't die — became something. Connection to Gluttony Abomination in bestiary is a possible thread, not confirmed. Whether the council turned on him or he paid the full price is unresolved. Don't develop further without Drew.
+Five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. **"What he became" is now answered: he is the Scar** (`world/the-scar.md`, GM Secret) — Drew's call, 2026-08-02. The Gluttony Abomination thread is closed by that answer; the Abomination is a fallen priest and nothing else.
+Still open, and still Drew's: what the Scar wants, whether anything of Pendragon remains in it, why it attends this party, and whether the council turned on him or he paid the full price. Don't develop those without him.
 
-**Gluttony Abomination** (`bestiary/gluttony-abomination.md`)
-*Mechanics closed 2026-08-02 — adapted at CTR 17 (Mind 3/Body 8/Soul 6, HP 25), cards in `cards/gluttony-abomination.md`.* **What stays open is the fiction, not the stat block:** the possible Pendragon connection is still unconfirmed and still Drew's. Don't develop that thread without him.
+**Gluttony Abomination** — *thread closed 2026-08-02.* Mechanics adapted at CTR 17; the Pendragon connection it was carrying is resolved the other way (Pendragon is the Scar), so the Abomination is simply a fallen priest of the Abyssal Ruins cathedral. Nothing about it is pending.
 
 **Roadhouse → Turnroot Weald hook** — *trimmed 2026-08-01 audit; the full backstory, both tellings, and the GM Secret now live properly in `characters/aege.md` (built out further tonight with a real combat kit), not just this thread's own summary.*
 Aege (the Carrion Guide) guides the party from Vulture's Nest toward Briarwatch, tells them at the Roadhouse about her family — something's gone wrong deep in the Weald, roots turned restless — then delivers them to Briarwatch, hands over a Carrion Feather, and continues on alone to the Turnroot Weald. See `characters/aege.md` for the maintained version; `locations/vultures-nest.md` for the Session-1 routing specifics.
@@ -121,6 +123,13 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Pendragon is the Scar. Drew's call (A3), and it closes the oldest open thread in the repo.** *Was:* `world/the-regency.md` said "The council believes he died in the attempt. He did not. What he became is unresolved," and named the Gluttony Abomination as a possible answer, unconfirmed. *Now:* he is the pale figure in the In-Between.
+  - **I raised the connection and deliberately did not make it**, then asked how far to take it rather than assuming — because "make the connection" spans from a hook to a resolution, and those are different files. Worth recording that the ask was the right call for a second reason I hadn't weighted: confirming it **closes the Gluttony Abomination** as a Pendragon candidate, a consequence Drew may not have had in view when he said yes. He took the full resolution knowingly.
+  - **The supporting vocabulary was already in canon, which is why this fits rather than gets bolted on.** `the-regency.md` already described the survivors' animal titles as *"scar tissue, not heraldry"* and said the attempt *"left marks on everyone in the room."* The five lost internal contradiction and became archetypes; Pendragon went the whole distance — nuance didn't burn away from him, **he** did, and the marks are what stayed. Nobody wrote that to set this up. It was just sitting there.
+  - **It also answers a question nobody had asked: why he's in the In-Between.** A thing with no interior cannot be held anywhere that requires holding, so he is in the only ground nobody pays for. That falls straight out of the haven rule written an hour earlier.
+  - **Guarded against flattening the entity.** The Scar's whole design rested on unknowability, and a name can spend that. So: identity is GM-only and changes nothing a player sees; **what it wants, whether anything of him remains, and why it attends this party stay unestablished**, with the file saying outright that knowing the name is not knowing the thing. The Love/Binding resonance — he failed at the Seat of Binding, and what he does now is attend people and never approach — is noted as a resonance and explicitly not resolved.
+  - Propagated to `world/the-regency.md`, `world/the-scar.md`, both Active Pending Threads entries, and a stale "don't touch it" instruction in `playtesting/first-impressions-sonnet-4-6.md` — annotated with a date rather than rewritten, since the observation was accurate when written and only the instruction expired.
 
 **[2026-08-02] The Scar — a persistent presence in the In-Between. Drew's call (A3).** Pale human figure, every inch scar tissue, no eyelids or lips or ears or nose, every aperture open onto nothing. Always substantially larger than whoever is looking at it. Encountered early, follows the party most of the campaign, and almost every encounter is a moment of *being attended to* rather than a meeting.
   - **Filed in `world/`, not `bestiary/`.** It has no stat block, is never fought, and does not respond to being attacked. Putting it beside `the-unheld.md` and `the-in-between.md` says what it is; putting it in the bestiary would have implied a fight the fiction doesn't contain. The no-stat-block line is written into the file explicitly, same as Weck and Iron, so nobody "completes" it later.
