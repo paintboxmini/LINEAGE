@@ -141,7 +141,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **Steve:** still in the crowd somewhere. Still Steve. His bathing hasn't happened yet. That's a different story.
 
-*His arc continues later — see `experimental/steve-and-pip.md`.*
+*His arc continues later — see `characters/steve-and-pip.md`.*
 
 ---
 
@@ -161,8 +161,8 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 - `factions/people-of-promise.md`
 - `factions/the-masons.md`
-- `experimental/mirel.md`
-- `experimental/kaine.md`
-- `experimental/steve-and-pip.md`
+- `characters/mirel.md`
+- `characters/kaine.md`
+- `characters/steve-and-pip.md`
 - `items/lightning-loop.md`
 - `locations/glasslight-reach.md`

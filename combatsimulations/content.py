@@ -189,7 +189,7 @@ def _trace_defense(engine, me, foe):
 
 def _twin_strike_dmg(engine, me, foe):
     RULING("twin-strike-double-roll",
-           "TWIN STRIKE '(Soul + d2) x2' is read as two independent (Soul + d2) "
+           "TWIN STRIKE '(Soul + d4) x2' is read as two independent (Soul + d4) "
            "instances summed, not one roll doubled.")
     # Two independent damage rolls means a held Deadly/Weak stack can apply
     # to either (or, with 2+ stacks, both) — each _rolled_die call checks and
@@ -1435,7 +1435,7 @@ def _level_the_field_defense(engine, me, foe):
 # including any Deadly/Weak already rolled into it) before any other bonus
 # applies. Gated hard by design, not just by naming it and hoping: the
 # trigger needs an already-Staggered target — real setup elsewhere, since
-# Staggered doesn't just happen — and the base die is kept low (d2) so
+# Staggered doesn't just happen — and the base die is kept low (d4) so
 # what's being doubled is small on its own; the whole payoff lives in the
 # multiplier, not a separately-large base too.
 def _exposed_damage(engine, me, foe):

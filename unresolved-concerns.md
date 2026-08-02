@@ -15,5 +15,7 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 
 ## Canon & World
 
+- **`bestiary/wallows-slime.md` is referenced twice by `quests/the-wallows-descent.md` and has never been written** — both references say "pending" explicitly, so this is acknowledged debt rather than a broken link, but the quest ships a creature the bestiary can't stat. Surfaced by the 2026-08-02 Sync reference sweep. *Trail: `memory.md`, Active Pending Threads — Wallows Slime, which has the creature's behavior already worked out (reaches, envelops, doesn't attack; forcing extraction raises Seat Influence). Only the stat block is missing.*
+
 - **The Underground Bazaar has zero mechanical items** — a real gap, nothing built yet, and Drew's own flag for a genuine future deep-design pass on the location: buying/selling mechanics are meant to be a highlight there, not an afterthought. (How pricing would work — memory/secret/debt economy, not gold — is open design, not debt itself; don't assume standard gold pricing transfers when this gets built.) *Trail: `rules/items.md`, Underground Bazaar section.*
 
