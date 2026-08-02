@@ -66,7 +66,7 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 
 - `quests/abyssal-ruins-cathedral.md` — The Cathedral encounter: the Gluttony Abomination, tremor-door mechanic, the stabilizing crystal
 - `locations/abyssal-trench.md` — The Trench sub-area: sponge hazards, Flapjack Octopus, Elder Tower Creatures
-- `bestiary/gluttony-abomination.md` — The fallen priest boss (mechanics pending)
+- `bestiary/gluttony-abomination.md` — The fallen priest boss
 - `bestiary/phase-leach.md` — The Phase-Leach (Rift-Stalker)
 - `bestiary/death-ball-sponge.md` — Trench floor hazard
 - `bestiary/flapjack-octopus.md` — Trench ambush predator

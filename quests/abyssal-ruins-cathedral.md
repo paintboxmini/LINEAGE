@@ -57,6 +57,6 @@ See `bestiary/gluttony-abomination.md`.
 
 ---
 
-## Notes (Raw)
+## Notes
 
-*This encounter was generated from rough source material and has not been fully adapted to Tales Untold mechanics. Stat block, card set, and DCs are pending. The core design ideas — tremor-door mechanic, crystal-as-stabilizer, priest backstory — are preserved here for future development.*
+*Adapted to Tales Untold 2026-08-02. The Abomination's stat block, passives, and the tremor-door DCs live in `bestiary/gluttony-abomination.md`; its cards are in `cards/gluttony-abomination.md`. The crystal-as-stabilizer remains open by design.*

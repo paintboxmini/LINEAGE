@@ -2,7 +2,12 @@
 
 *Rift-Stalker. Common predator of the Abyssal Ruins, slipped through the central violet gateway.*
 
-**Cards:** *Pending.*
+**Cards:** `cards/phase-leach.md`
+
+**Mind 2 / Body 1 / Soul 3 — HP 11**
+**Creature Threat Rating:** 6
+
+**Deck (6 — 2 Blue / 1 Red / 3 Green):** PHASE LOGIC, BORROWED SCREAM *(blue)* · OBSIDIAN SIX *(red)* · MIRROR STEP, MOCKERY, SIPHON *(green)*
 
 ---
 
@@ -20,12 +25,27 @@ Near the Echoing Plaza, it may absorb the ambient screams from the air and proje
 
 ---
 
-## Combat Notes
+## Passives
 
-The blink interval is the key mechanic. Attacks timed between blinks can land; attacks timed during a blink pass through empty air. Observant players (Mind / Reason) may be able to read the cadence.
+**Blink**
+At the start of each of its turns, the Phase-Leach gains Evade.
+
+**Feeds on Resonance**
+It goes for whoever is carrying or has most recently used a resonant item. Absent that, it attacks normally. It is not making a threat assessment — the choice is about what is worth eating, and a Phase-Leach will cross a whole room past an easier target to get to the thing that is lit up.
 
 ---
 
-## Stat Block
+## Combat Notes
 
-*Pending — not yet adapted to Tales Untold system.*
+The blink interval is the key mechanic. Attacks timed between blinks land; attacks timed during one pass through empty air.
+
+A Reason check (DC 13) reads the cadence. On a success, that character's next attack this combat ignores Evade. The read is the counter, and it is available to anyone willing to spend the attention on it.
+
+Body 1 is the answer to everything else about it. Eleven HP, Armour nothing. Once a hit lands, it does not take many.
+
+---
+
+## Related Documents
+
+- `locations/abyssal-ruins.md` — the ruins and the central violet gateway it came through
+- `bestiary/gluttony-abomination.md` — what waits in the cathedral past the plaza
