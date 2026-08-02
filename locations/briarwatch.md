@@ -24,6 +24,8 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 ## Notable Locations
 
+**The Abandoned Homestead** — off the road on the way in. A claim that failed: well caved in, fences broken outward, briarbundles still standing in the fields. Something large has taken up residence in the doorway. See `quests/the-abandoned-homestead.md`.
+
 **The Western Property** — bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
 
 ---
@@ -56,5 +58,6 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields
+- `quests/the-abandoned-homestead.md` — the claim that didn't hold, on the road in
 - `bestiary/briarbundles.md` — the field guardians the farmers build every autumn
 - `bestiary/the-first-bundle.md` — the oldest one
