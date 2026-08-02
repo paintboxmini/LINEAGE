@@ -18,6 +18,13 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-01 2:55 PM CDT] A1 — Card font enlarged, with automatic step-down so nothing clips.** Drew: "the font on the cards is far too small."
+  - **Measured before choosing a size rather than just bumping.** Median card is ~138 characters across all fields; the worst outlier (FOLLOW-UP) is 414. Cards are fixed at 60×84mm with `overflow: hidden`, so a flat bump big enough to help the median would have silently truncated the wordy ones — which is worse than small text, because you can't tell it happened.
+  - Base sizes up substantially: body text **7.5pt → 9.5pt**, card name 10 → 12pt, flavor 6.5 → 8pt, labels 6 → 7pt, item text 7.5 → 9.5pt.
+  - Added two automatic density tiers keyed off a card's own total text length — cards over ~195 characters step down one notch, over ~285 step down two. **225 of 258 cards (87%) get the full-size text**; 26 step down once, 7 step down twice. The 7 are exactly the known outliers (FOLLOW-UP, FRAME-TRAP, CONSUME, DRAIN, TRACE, FRACTURE, SENSE THE SPENT) — still larger than they were before this change in most cases, and legible rather than cut off.
+  - Regenerated via the new `generate-all.sh`, which correctly flagged all eight card sheets as stale and rebuilt only the three card PDFs that exist. Also generated `card-print-core.pdf` for the first time so the full core set can actually be eyeballed at the new size.
+
+
 **[2026-08-01 2:30 PM CDT] A1 — `printing/generate-all.sh`, plus three keyword lists that had drifted apart.** Drew: "add the generate-all" and "include Armour in the keyword glossary."
   - **`generate-all.sh`** rebuilds all eight card sets and both rules documents, diffs against git to find what was actually stale, and rebuilds **only** the PDFs whose HTML moved (a Chrome launch each is the slow part). `--check` exits non-zero if anything was stale, if that's ever wanted in a hook. The header records *why* it exists: three Syncs running, the only stale artifact was a card sheet, and every miss had the same shape — a rules edit that touched `cards/`/`items/` incidentally, rules PDFs regenerated because those were the artifact in mind, card sheets forgotten. Reasoning has failed that three for three; rebuilding and diffing has caught it three for three.
   - **Tested it properly instead of assuming.** First attempt was an invalid test — I hand-edited a generated sheet, but the script regenerates *then* diffs, so it correctly repaired my edit and reported clean. Real test: change a card *source*, run it, confirm it names the affected sheet. It did (`card-print-mason.html`), then reported clean again once the source was reverted.
