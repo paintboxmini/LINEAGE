@@ -6,6 +6,16 @@ A Seat may be vacant or occupied. It cannot be destroyed.
 
 ---
 
+## Seats and the Cuts
+
+**Seats exist because the Cuts do.** The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position *within that structure*. No Cuts, no structure; no structure, nothing to sit in.
+
+This settles two statements that have both been written down and read like rivals. `mythology/creation-myth-the-three-cuts.md` says *"Where any Cut weakened, the Unheld pressed close."* `world/eclipseria-overview.md` says *"Where the Seats weaken, the Unheld presses in."* Both are true. **Where a Cut thins, every Seat thins with it** — the second statement is the first, one step downstream.
+
+It does not run the other way. A Seat standing Empty breaks its own domain (see Seat States) without thinning a Cut. The Cuts are the deeper of the two, and damage travels down from them, not up.
+
+---
+
 ## What a Seat Is
 
 To sit in a Seat is not to gain power over a domain. It is to become aligned with a principle reality already recognizes.

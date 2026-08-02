@@ -36,7 +36,7 @@ Reality in Eclipseria is not self-sustaining. It is maintained by:
 - **The Archons** — beings who have become the fullest biological expression of a Seat. They have no free will. They filter and "tint" the reality around them through their domain.
 - **The Regency** — a human bureaucratic council with no divine power, managing the practical infrastructure of civilization: citizens, roads, halfway-inns.
 
-The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in.
+The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts). The Cuts are the deeper of the two.
 
 For the full cosmological system, see `world/seats-archons-echoes.md`.
 For the Unheld in depth, see `world/the-unheld.md`.

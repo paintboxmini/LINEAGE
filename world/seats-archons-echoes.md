@@ -73,7 +73,7 @@ Echoes form when a being's nature, actions, or accumulated experience becomes su
 
 **Stage II — Alignment:** The domain begins expressing itself through the being. Personality simplifies. Certain actions feel inevitable. Domain-related abilities manifest. Choice still exists — but resistance becomes difficult.
 
-**Stage III — Incarnation:** Identity and domain become inseparable. The being no longer expresses the domain. The domain expresses itself through the being. This is not godhood. It is necessity.
+**Stage III — Incarnation:** Identity and domain become inseparable. The being no longer expresses the domain. The domain expresses itself through the being. This is not godhood. It is necessity. **Stage III is what becoming an Archon is** (`mythology/echoes.md` heads it "Incarnation (Archon)") — which does not make an Archon a god, since Archons are not chosen and not elevated either. The highest stable form of Echo and the fullest biological expression of a domain are one thing under two names.
 
 ### Failed Seat-Takers
 
