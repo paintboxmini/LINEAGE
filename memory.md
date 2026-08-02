@@ -18,16 +18,21 @@
 
 ## Recently shipped (post-review queue)
 
-*Cleared 2026-08-02 at Sync — Drew reviewed the batch ("nothing flagged on my end") and separately ratified the three new tags. Cleared entries: the Wound rename, Weck's NPC file, the `experimental/` promotions, the Scratch Files removal, the bestiary signature-card job (9 creatures / 27 cards, including the Chitterer + Trisect calibration pass), and the Trisect/crib die sweep. History lives in git; the reasoning behind each lives below in Standing Reasoning where it earned a place.*
+*Previous batch cleared 2026-08-02 at Sync — Drew reviewed it ("nothing flagged on my end") and ratified the three new tags.*
+
+**[2026-08-02] A2 — Briarbundles: five-creature Briarwatch family, 15 cards.** Haywight 5, Tatterman 6, Briarbound 7, Mossking 10, First Bundle 17. `bestiary/briarbundles.md` + `bestiary/the-first-bundle.md`, BRIARWATCH-tagged. Flagged A2 because the family adds a new regional institution — farmers building guardians every autumn — and because the folklore carries an open world-level thread by design. Full reasoning in Standing Reasoning.
+
+**[2026-08-02] A1 — Wallows Slime built** (CTR 7, `bestiary/wallows-slime.md` + cards). Closes the last "pending" stat block referenced by a shipped quest.
+
+**[2026-08-02] A1 — Glossary keyword counts recounted.** Header claimed a 240-block snapshot from 2026-07-28; the real number is now **303** after tonight's card work, and 18 counts were wrong (Thorns 7→20, Rooted 13→22, Resist 34→44, Vulnerable 0→6). Recounted mechanically and the header now documents both the basis and the counting rule, so the next reader knows what the numbers actually measure.
+
+*(A3 items this session — the Exhaust zone widening and Armour/Thorns stacking — are Drew's own calls and live in Standing Reasoning, not here. This queue is for ships awaiting his veto.)*
 
 ## Pending propagation
 
 Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty means everything is propagated.
 
 *(2026-08-01 audit: five closed/struck-through bullets that lived here — DOUBLE DOWN, an old print-sheet staleness note, Mason Glyphs, the global dice sync, and the Patient Host thread — removed outright rather than kept as `~~struck~~` clutter. All five point to real resolutions already sitting in git history or `bestiary/the-patient-host.md` itself; a permanently-closed bullet isn't a stale dependent anymore, it's dead weight in a section whose whole job is showing what's still open. Also archived, same pass: ~99 lines of finished 2026-07-18/19 card-review-batch history that had been sitting under this header despite being neither stale nor a dependent — just old shipped work that never got relocated once it wrapped. Moved to `archives/key-design-decisions.md`, verbatim.)*
-
-- *(Cleared 2026-08-02 — and the entry was wrong.)* It claimed EXHAUST disposal was "not implemented in the sim (only flagged as `is_status` — no seeding or removal logic)." Both halves already existed and both work: `engine.insert_exhaust()` seeds into hand, the `destroy_exhaust` action clears every copy from hand, and `policies.idle_recovery` routes to it. Verified directly rather than by reading. **The real gap was different and worse:** zero of the 22 roster decks contained a card that can produce an Exhaust, so the entire path had never executed once in a simulation. A mechanic nothing exercises is indistinguishable from a broken one — which is exactly how it got mislogged. Fixed by adding a 23rd roster deck (`burnout`, OVERDRIVE + UNMAKE); the rest action now fires in ~20% of its duels. Frost/Steele baselines byte-identical.
-
 ---
 
 ## Campaign Status
