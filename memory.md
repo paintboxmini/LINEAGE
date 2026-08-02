@@ -30,7 +30,7 @@
 
 **[2026-08-02] A1 — Wallows Slime built** (CTR 7, `bestiary/wallows-slime.md` + cards). Closes the last "pending" stat block referenced by a shipped quest.
 
-**[2026-08-02] A1 — Glossary keyword counts recounted.** Header claimed a 240-block snapshot from 2026-07-28; the real number is now **303** after tonight's card work, and 18 counts were wrong (Thorns 7→20, Rooted 13→22, Resist 34→44, Vulnerable 0→6). Recounted mechanically and the header now documents both the basis and the counting rule, so the next reader knows what the numbers actually measure.
+**[2026-08-02] A1 — Glossary keyword counts recounted, then corrected again.** Header claimed a 240-block snapshot from 2026-07-28; 18 counts were wrong (Thorns 7→20, Rooted 13→22, Resist 34→44, Vulnerable 0→6). **The first recount was itself incomplete** — it matched on a colored header line and so silently dropped `cards/colorless.md`'s three cards, then reported the result as "all 303 card blocks." Caught at the next Sync by a block count that disagreed by more than the one card I had added since. Real total is **307** (304 colored + 3 colorless), and three counts moved again once the colorless cards were included: Blind 16→18, Evade 43→44, Initiative Shift 18→19. The header now states the colored/colorless split explicitly, and `verify.py` gained an eighth check that compares the header's stated block count against the real one — validated by breaking the number on purpose and confirming it fails. The durable fix isn't the corrected number, it's that nothing states a count nothing verifies.
 
 *(A3 items this session — the Exhaust zone widening and Armour/Thorns stacking — are Drew's own calls and live in Standing Reasoning, not here. This queue is for ships awaiting his veto.)*
 

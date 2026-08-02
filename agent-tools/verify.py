@@ -252,6 +252,22 @@ def check_item_keywords():
                   f'{len(known)} glossary keywords')
 
 
+def check_glossary_count(canon):
+    """The glossary header states how many card blocks its keyword counts were
+    taken over. That number drifted twice in one day — once because cards were
+    added after the count, once because my own recount matched on a colored
+    header line and silently dropped cards/colorless.md. A stated number nothing
+    verifies is a number that will be wrong."""
+    text = open('rules/card-glossary.md', encoding='utf-8').read()
+    m = re.search(r'Recounted across all (\d+) card blocks', text)
+    if not m:
+        return report('glossary block count', ['header no longer states a block count'])
+    stated, actual = int(m.group(1)), len(canon)
+    bad = ([] if stated == actual else
+           [f'header says {stated} card blocks, cards/ has {actual} — recount the keyword numbers'])
+    return report('glossary block count matches cards/', bad, f'{actual} blocks')
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -273,6 +289,7 @@ def main():
     check_refs()
     check_sim(canon)
     check_item_keywords()
+    check_glossary_count(canon)
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:

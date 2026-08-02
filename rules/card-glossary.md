@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-02, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 303 card blocks in `cards/*.md` (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-02, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 307 card blocks in `cards/*.md` — 304 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -41,10 +41,10 @@ The next time you roll attack damage, subtract an additional d6 from the result.
 **(11) Anchored**
 You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
-**(16) Blind**
+**(18) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
-**(43) Evade**
+**(44) Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -66,7 +66,7 @@ A card afflicted with Locked cannot be played. Lasts until the end of combat unl
 **(5) Sealed**
 You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
-**(18) Initiative Shift X**
+**(19) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
