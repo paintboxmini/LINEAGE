@@ -6,11 +6,9 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 
 *GORE was promoted to core (same name, `cards/red-body.md`) — Minotaur's deck uses that core card in its place.*
 
-***Unresolved name collision (flagged 2026-08-01):** the CHARGE and TRAMPLE below are **not** the core cards of the same names in `cards/red-body.md` — those are different designs (core CHARGE is d6 mutual-frontline; core TRAMPLE grants a bonus action on a Collapse). Only the core versions are registered in the simulator, so any deck list naming "CHARGE" or "TRAMPLE" currently resolves to the core card, not the COIL one printed here. Both COIL designs are good and worth keeping; resolving this means renaming them. Awaiting Drew's call — see `unresolved-concerns.md`.*
-
 ---
 
-**CHARGE**
+**HEADLONG**
 RED — BODY — COIL
 Attack: Body + d8
 Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
@@ -20,7 +18,7 @@ Range: Both
 
 ---
 
-**TRAMPLE**
+**WIDE SWING**
 RED — BODY — COIL
 Attack: Body + d6
 Effect: Deal 2 damage to one other Frontline enemy of your choice.
