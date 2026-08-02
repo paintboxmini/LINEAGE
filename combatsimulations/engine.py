@@ -808,17 +808,33 @@ class Duel:
             return
         target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
-    def insert_exhaust(self, target, n=1):
-        """Exhaust (card-glossary.md): goes directly into the target's HAND, not the
-        deck — the difference from a Wound, which has to be drawn before it costs
-        anything. Can legitimately push hand size above the normal draw cap for a
-        turn or more; nothing truncates it back down on its own (same as Mind-loss
-        forcing a discard is the only thing that ever rebalances hand size — see
-        Combatant.adjust) — only a full destroy_exhaust action clears it."""
+    def insert_exhaust(self, target, n=1, to_deck=False):
+        """Exhaust (card-glossary.md). WHERE it lands is the source card's choice,
+        not a property of the keyword — widened 2026-08-02 (Drew) after the Ashfall
+        arc turned out to be built entirely on deck-insertion while the glossary
+        said hand-only. Core cards (OVERDRIVE, UNMAKE) add to hand; the Ashfall
+        cards shuffle into the deck.
+
+        to_deck=False — straight to hand, costing the slot immediately. Can
+        legitimately push hand size above the normal draw cap for a turn or more;
+        nothing truncates it back down on its own (Mind-loss forcing a discard is
+        the only thing that ever rebalances hand size — see Combatant.adjust).
+        to_deck=True — SHUFFLED to a random position, not buried at the bottom the
+        way insert_wound does it. The canon wording is "shuffle 1 Exhaust into
+        their deck," and the difference is real: a bottom-inserted card is a known
+        quantity you can play around, a shuffled one is not.
+
+        Either way, only a rest clears it — destroy_exhaust for the hand, and the
+        full hand/deck/discard sweep on a short or long rest (not modelled here,
+        since rests happen between combats)."""
         if self.exhaust_card is None:
             return
         for _ in range(n):
-            target.hand.append(self.exhaust_card)
+            if to_deck:
+                target.deck.insert(self.rng.randrange(len(target.deck) + 1),
+                                   self.exhaust_card)
+            else:
+                target.hand.append(self.exhaust_card)
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)

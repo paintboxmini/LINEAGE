@@ -172,12 +172,18 @@ class Battle:
             return
         target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
-    def insert_exhaust(self, target, n=1):
-        """See engine.py's Duel.insert_exhaust for the full reasoning."""
+    def insert_exhaust(self, target, n=1, to_deck=False):
+        """See engine.py's Duel.insert_exhaust for the full reasoning. Kept
+        signature-identical on purpose — content.py calls this through whichever
+        engine is running, so a divergence here is a silent behaviour split."""
         if self.exhaust_card is None:
             return
         for _ in range(n):
-            target.hand.append(self.exhaust_card)
+            if to_deck:
+                target.deck.insert(self.rng.randrange(len(target.deck) + 1),
+                                   self.exhaust_card)
+            else:
+                target.hand.append(self.exhaust_card)
 
     def scry(self, actor, owner, x, bin_to=None):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
