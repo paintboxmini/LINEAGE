@@ -220,6 +220,38 @@ def check_sim(canon):
                   f'{overlap} cards reconciled')
 
 
+def check_item_keywords():
+    """Every keyword an item file names must exist in the glossary, and items may
+    not restate a keyword's rule in longhand. Both failure modes were live until
+    2026-08-02: SPLIT WEDGE claimed Anchored for a one-turn effect (Anchored is
+    explicitly persistent and re-triggering), and BARBED WRAP wrote out Thorns by
+    hand in a strictly wider form. Neither is visible to any other check."""
+    gl = open('rules/card-glossary.md', encoding='utf-8').read()
+    known = {m.group(2).replace(' X', '').replace(' [Color]', '').strip()
+             for m in re.finditer(r'^\*\*\((\d+)\) ([A-Za-z \[\]X]+)\*\*', gl, re.M)}
+    longhand = [
+        (r'reduce (?:all )?(?:incoming )?damage by \d', 'Armour X'),
+        (r'deal \d+ damage to (?:the )?attacker', 'Thorns X'),
+        (r'take half damage', 'Resist'),
+    ]
+    bad = []
+    for path in sorted(glob.glob('items/*.md')) + sorted(glob.glob('rules/equipment.md')):
+        text = open(path, encoding='utf-8').read()
+        f = path.split('/')[-1]
+        for line in text.splitlines():
+            if not re.match(r'^(?:Use|Effect|Activates|Passive)', line):
+                continue
+            for pat, kw in longhand:
+                if re.search(pat, line, re.I) and kw.split()[0] not in line:
+                    bad.append(f'{f}: writes {kw} longhand -> {line.strip()[:70]}')
+            # Anchored must describe a persisting benefit, never a one-turn one.
+            if 'Anchored' in line and re.search(r'\bthis turn\b', line) \
+                    and 'start of each' not in line:
+                bad.append(f'{f}: Anchored used for a one-turn effect -> {line.strip()[:70]}')
+    return report('item keyword usage (no invented or longhand keywords)', bad,
+                  f'{len(known)} glossary keywords')
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -240,6 +272,7 @@ def main():
     check_stat_blocks()
     check_refs()
     check_sim(canon)
+    check_item_keywords()
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:

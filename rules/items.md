@@ -10,9 +10,9 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/briarwatch-items.md`*
 
-- **Barbed Wrap** — reflect 1 damage when targeted, 1 battle. *Source: Roadhouse barracks.*
+- **Barbed Wrap** — Thorns 1 for the battle. *Source: Roadhouse barracks.*
 - **Carrion Feather** — negates the first forced reposition, then spent. *Source: given by Aege on delivery to Briarwatch.*
-- **Split Wedge** — Anchored, +2 damage this turn. *Source: farmer's reward, after the Hollow.*
+- **Split Wedge** — Anchored, +2 damage per turn while you hold position. *Source: farmer's reward, after the Hollow.*
 
 ---
 
