@@ -15,11 +15,12 @@ def warded(target):
     if target.ward:
         target.ward = False
         RULING("ward-blocks-debuff",
-               "Ward/DEFLECT blocks the next auxiliary debuff — status conditions, "
-               "stat reductions, discard, Injury/Exhaust seeding, disabling a "
-               "Defensive Bonus, Positive Status Effect removal. Never "
-               "RPS/Initiative/Position pillar manipulation (rules/card-glossary.md "
-               "Debuff) — those callers don't route through warded() at all.")
+               "Ward/DEFLECT blocks exactly six things (rules/card-glossary.md Debuff, "
+               "narrowed 2026-08-01): Weak, Blind, Vulnerable, Staggered, Rooted, and "
+               "stat reductions. Never disabling a Defensive Bonus, Positive Status "
+               "Effect removal, RPS/Initiative/Position pillar manipulation, hand/deck "
+               "manipulation, or status-card injection — those callers don't route "
+               "through warded() at all.")
         return True
     return False
 
@@ -73,15 +74,23 @@ def apply_stat_drain(target, stat, n=1):
 
 
 def apply_injury(engine, target):
-    debuff(target, lambda: engine.insert_injury(target))
+    # Status-card injection was Ward-blockable (routed through debuff()) until
+    # 2026-08-01, when Drew narrowed Debuff's scope to exclude it, along with
+    # hand and deck manipulation (rules/card-glossary.md). Calls engine
+    # directly now — never gated by Ward.
+    engine.insert_injury(target)
 
 
 def apply_exhaust(engine, target, n=1):
-    debuff(target, lambda: engine.insert_exhaust(target, n))
+    engine.insert_exhaust(target, n)
 
 
 def strip_positive_status(target):
-    return debuff(target, lambda: remove_positive_status(target))
+    # No longer Ward-gated: Debuff narrowed to exactly Weak/Blind/Vulnerable/
+    # Staggered/Rooted/stat reductions on 2026-08-01 (rules/card-glossary.md);
+    # Positive Status Effect removal isn't one of the six.
+    remove_positive_status(target)
+    return True
 
 
 def remove_positive_status(target):
@@ -262,12 +271,10 @@ def _climb_defense(engine, me, foe):
 # ============================ STEELE =========================================
 
 def _forget_effect(engine, me, foe):
-    # Fixed 2026-07-24: forced discard is now a Debuff, Ward-blockable — this
-    # comment used to say the opposite ("ignores Ward, not a debuff"), which
-    # was the rule before Drew's direct call expanding Debuff's scope.
+    # Ward-blockable 2026-07-24 through 2026-08-01, then reverted: Drew
+    # narrowed Debuff's scope to exclude hand manipulation, so forced discard
+    # ignores Ward again (rules/card-glossary.md).
     # Discard a real card, not an Injury — forcing away their Injury would help them.
-    if warded(foe):
-        return
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -521,14 +528,17 @@ def _partition_defense(engine, me, foe):
 
 
 def _unname_effect(engine, me, foe):
-    # Ward-blockable (card-glossary.md, Debuff) — Drew's call 2026-07-24, for
-    # simplicity: a Debuff, full stop, no carved-out exception.
-    debuff(foe, lambda: setattr(foe, '_no_defensive_bonus', True))   # until foe's own next turn (take_turn clears it)
+    # No longer Ward-gated: Debuff narrowed to exactly Weak/Blind/Vulnerable/
+    # Staggered/Rooted/stat reductions on 2026-08-01 (rules/card-glossary.md);
+    # Defensive-Bonus-disable isn't one of the six. Matches DEAD HEAT's own
+    # identical effect, which was never gated in the first place.
+    foe._no_defensive_bonus = True   # until foe's own next turn (take_turn clears it)
 
 
 def _unname_defense(engine, me, foe):
-    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
-        return
+    # Forced discard ignores Ward (rules/card-glossary.md, Debuff narrowed
+    # 2026-08-01) — unlike _unname_effect above, which disables a Defensive
+    # Bonus and stays Ward-gated.
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -858,8 +868,7 @@ def _mirror_step_defense(engine, me, foe):
 # VOID's Effect ("Defender gains Sealed") unmodeled — no item-usage mechanic
 # exists in the sim, same treatment as PREDICT/DISTRACT.
 def _void_defense(engine, me, foe):
-    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
-        return
+    # Forced discard ignores Ward (rules/card-glossary.md, Debuff narrowed 2026-08-01)
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -912,10 +921,8 @@ def _patience_defense(engine, me, foe):
 # gap until building the Host's actual 24-card deck required all of them.
 
 def _stillness_effect(engine, me, foe):
-    # Fixed 2026-07-24: forced discard is now a Debuff, Ward-blockable
-    # (rules/card-glossary.md, Debuff's scope expanded per Drew's direct call).
-    if warded(foe):
-        return
+    # Forced discard ignores Ward (rules/card-glossary.md, Debuff narrowed
+    # 2026-08-01 — was briefly Ward-blockable 2026-07-24 through today).
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -1035,8 +1042,7 @@ def _read_defense(engine, me, foe):
     # "Name a color" has no real choice to make without a live opponent to
     # bluff against — picks whichever color the foe has actually shown most,
     # same heuristic ANTICIPATE-style cards already use elsewhere.
-    if warded(foe):   # forced discard is a Debuff now, see STILLNESS above
-        return
+    # Forced discard ignores Ward (rules/card-glossary.md, Debuff narrowed 2026-08-01).
     color = foe.attack_history.most_common(1)[0][0] if foe.attack_history else None
     if color is None:
         return
@@ -1068,19 +1074,17 @@ def _carried_injury_effect(engine, me, foe):
     # Ally-sourced — a genuine no-op in 1v1 (You Are Not Your Own Ally), same
     # footing as every other "from any ally" effect in this file. Correct in
     # team play: pulls from whichever ally is actually carrying a status card.
-    # Ward checked BEFORE taking from source (not via _give_status itself) —
-    # otherwise a Warded target would still cost the ally their card with
-    # nothing transferred, silently destroying it instead of blocking the
-    # whole transfer the way a Debuff being Warded should.
+    # No Ward check: status-card injection ignores Ward (rules/card-glossary.md,
+    # Debuff narrowed 2026-08-01) — this used to check warded(foe) before
+    # taking from source specifically so a Warded target wouldn't cost the
+    # ally their card for nothing; that guard is gone along with the gate itself.
     source = next((a for a in engine.allies(me) if any(c.is_status for c in a.hand + a.discard)), None)
-    if source is None or warded(foe):
+    if source is None:
         return
     name = _take_any_status(source)
     if name:
         _give_status(engine, foe, name)
 def _carried_injury_defense(engine, me, foe):
-    if warded(foe):   # foe = attacker here
-        return
     name = _take_any_status(me)
     if name:
         _give_status(engine, foe, name)

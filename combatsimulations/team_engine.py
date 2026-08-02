@@ -143,6 +143,7 @@ class Battle:
             target.hp = 0
         if target.hp <= 0 and not target.collapsed:
             target.collapsed = True
+            target.down = True   # on the ground until they spend an action standing
             _clear_ongoing_on_collapse(target)
             self._say(f"    {target.name} COLLAPSES")
             _leave_wheel(self, self.queue, target)
@@ -159,6 +160,7 @@ class Battle:
         target.hp = min(target.max_hp, target.hp + amount)
         if target.collapsed and target.hp > 0:
             target.collapsed = False
+            # `down` deliberately NOT cleared here (rules/combat.md, Standing Up).
             target._hits_while_collapsed = 0   # a fresh 2-hit cycle next time they go down
             # Revived one slot after whoever healed them, not straight into the
             # live rotation — the marker has to complete a full lap before it
@@ -289,7 +291,8 @@ class Battle:
 
         def_card = None
         physical_def_card = None
-        if not defender.collapsed and not defender.staggered and not defender.cannot_defend:
+        if (not defender.collapsed and not defender.down and not defender.staggered
+                and not defender.cannot_defend):
             if defender._anticipating:   # ANTICIPATE: draw before defending, every qualifying attack
                 c = defender.draw_one(self.rng)
                 if c:
@@ -474,6 +477,12 @@ class Battle:
             return
         self.start_of_turn(who)
         if who.collapsed:
+            return
+        if who.down:
+            # Alive but on the ground — standing consumes the whole action
+            # (rules/combat.md, Standing Up). See engine.py's Duel.take_turn.
+            who.down = False
+            self._say(f"    {who.name} stands up")
             return
         if who._quick:
             # Quick: see engine.py's Duel.take_turn for the full reasoning.

@@ -22,6 +22,8 @@ The Named-and-Paid thing strained to swallow everything else. The Knife separate
 
 Where all Three Cuts held, reality persisted. Where any Cut weakened, the Unheld pressed close.
 
+The Cuts have never stopped bleeding. They cannot — healing would close them, and a closed wound holds nothing open. Everything that exists does so out of an injury that is still being sustained. This is what is meant by a world born dying: not failing, not cursed, but paying continuously for the fact of being anything at all.
+
 ---
 
 *This myth is never written the same way twice.*

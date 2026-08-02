@@ -2,6 +2,8 @@
 
 A character in Tales Untold is defined by three stats, a deck of nine cards, and what they carry. Everything else is fiction built on top of those foundations.
 
+Once your character exists, `rules/player-guide.md` covers how combat and exploration actually work at the table.
+
 ---
 
 ## Stats

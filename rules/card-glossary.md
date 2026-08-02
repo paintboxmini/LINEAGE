@@ -12,14 +12,16 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 *The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-28, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted for real across all 240 card blocks in `cards/*.md` (down from 241 at the 2026-07-23 snapshot), not estimated forward from the old numbers.*
 
+**At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
+
 **(5) Counter Attack**
 Deal this card's Attack damage back to the attacker.
 
 **(1) Debuff**
-Any negative *auxiliary* effect an enemy applies to you: status conditions (Blind, Rooted, Staggered), status cards forced into your deck (Injury, Exhaust), stat reductions, forced discard, forced hand reveal, disabling your Defensive Bonus, and the removal of your Positive Status Effects (below). Does not include damage, and does not include anything that manipulates one of the three core pillars — RPS (color-denial, e.g. Axiom), Initiative (Initiative Shift X), or Position (forced movement, e.g. Repel, Calculate, Trample, Push/Pull) — those stay fully live even against Ward, by design; the pillars are meant to always be contestable. Cards that "prevent the next debuff" (Ward, Deflect) block the next qualifying effect targeting you, then expire.
+Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward and Deflect can prevent.
 
 **(5) Positive Status Effects**
-Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once. Removing them from someone is a Debuff (above) — Ward can prevent it.
+Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
 **(0) Obscure**
 Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
@@ -60,7 +62,7 @@ The next time an ally would take attack damage, you take it instead.
 A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
 
 **(3) Sealed**
-You cannot Use an Item, whether by Action or Bonus Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
+You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
 **(15) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
@@ -84,7 +86,7 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
 
 **(0) Vulnerable**
-The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff (removable by Ward, like any other negative auxiliary effect). Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
+The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(13) Rooted**
 Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
@@ -120,7 +122,7 @@ The next attack against you fails completely, before any cards are revealed — 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
 - **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP. Only Body touches HP.
-- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does.
+- **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does. A hand already above the new, lower size is not discarded down — you simply can't draw back up until it naturally falls below the cap.
 - **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
