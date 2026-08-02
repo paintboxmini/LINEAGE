@@ -92,6 +92,8 @@ Reduce all incoming attack damage by X. It applies to every attack, for the whol
 
 Armour applies **before** Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker's Effect resolves normally, it simply has no damage to work with.
 
+**Armour stacks additively into a single value.** Armour 2 and Armour 1 held at once are Armour 3, reducing every attack by 3 for the rest of the fight. This is a different shape of stacking from Resist and Vulnerable: those stack as charges, each spent on one attack. Armour is never spent, so its stacks add up instead of queuing up.
+
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
 **(0) Vulnerable**
@@ -114,6 +116,8 @@ The next time you would attack or defend, that one instance is skipped instead �
 
 **(7) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
+
+**Thorns stacks additively into a single value**, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.
 
 **(4) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.

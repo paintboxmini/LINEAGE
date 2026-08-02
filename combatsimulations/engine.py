@@ -604,6 +604,7 @@ class Combatant:
         self.deadly = 0
         self.weak = 0
         self.thorns = 0
+        self.armour = 0   # flat reduction, stacks additively (rules/card-glossary.md)
         self.blind = 0
         self.staggered = False
         self.rooted = False
@@ -905,6 +906,16 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
+        # Armour: flat reduction, applied BEFORE Resist/Vulnerable per the fixed
+        # pipeline in rules/combat.md — redirect -> Protect -> Armour -> Resist/
+        # Vulnerable -> HP. Never consumed and never expires, so `armour` is a
+        # single additive total rather than a stack count (Drew 2026-08-02:
+        # Armour and Thorns stack additively). Unpreventable ignores it, same as
+        # every other attack-damage defense. An attack reduced to 0 still landed
+        # — the Effect resolves, it just has nothing to work with — so this
+        # clamps at 0 and falls through rather than returning early.
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)
         # Resist/Vulnerable cancel 1-for-1 on consumption, same pairing as
         # Deadly/Weak in _rolled_die (Drew: both pairs cancel rather than
         # stacking against each other). Checked before either modifier applies.

@@ -122,6 +122,12 @@ class Battle:
                     f._protect = False
                     self._say(f"    PROTECT: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source, bypass_resist)
+        # Armour: flat reduction, after redirect/Protect and BEFORE Resist —
+        # the fixed pipeline in rules/combat.md. Additive total, never consumed.
+        # See engine.py's Duel.deal() for the full reasoning; kept in step here
+        # on purpose, since a divergence would be a silent damage-math split.
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)
         # Resist/Vulnerable cancel 1-for-1 on consumption — see engine.py's
         # Duel.deal() for the full reasoning (same pairing as Deadly/Weak).
         if not unpreventable and target.resist > 0 and target.vulnerable > 0:
