@@ -102,7 +102,7 @@ An Effect that only adds to *this attack's* damage does nothing on a miss or a t
 
 ## Damage Pipeline
 
-When attack damage lands, it passes through, in order: **redirect** (e.g. Shared Burden) → **volunteer shield** (Protect) → **Armour** (flat reduction some creatures have) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.
+When attack damage lands, it passes through, in order: **redirect** (e.g. Shared Burden) → **volunteer shield** (Protect) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.
 
 A single attack can never push a standing combatant below 0 HP — that's a Collapse, not a kill.
 
@@ -174,6 +174,7 @@ You don't have to explain the metaphysics. Neither does your character.
 |---------|---------------|
 | Deadly | Next damage roll, add a d6. Stacks; cancels 1-for-1 with Weak. |
 | Weak | Next damage roll, subtract a d6. Stacks; cancels 1-for-1 with Deadly. |
+| Armour X | Reduce all incoming attack damage by X, every attack, all fight. Applies before Resist/Vulnerable. Never expires. |
 | Resist | Next successful attack against you, take half damage. Cancels 1-for-1 with Vulnerable. |
 | Vulnerable | Next successful attack against you, take 50% more damage. Cancels 1-for-1 with Resist. |
 | Evade | 50% chance the next attack against you misses outright, checked before you choose a defense. |
