@@ -52,7 +52,9 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain. They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-**Carried items** (potions, tools, objects picked up in the field) can be used on your turn via the Interact action without occupying an equipment slot.
+**Carried items** (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.
+
+**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a coat, a set of tools. None of it has stats and none of it has a gold value; it grants no bonus, fills no slot, and can't be sold. It is fiction, and it is also genuinely useful: what a character happens to be carrying is a standing answer to noncombat problems (a sword digs; a bow puts out a light across a room). See `rules/player-guide.md`, *What You Showed Up With*.
 
 See `rules/equipment.md` for the Weapon/Armor tier system and how to design new equipment, and `rules/items.md` for the full catalog of items already in the world.
 
@@ -140,7 +142,7 @@ These moments should feel earned, not scheduled.
 ### Short Rest
 **Duration:** 20 minutes  
 **Limit:** 3 per day  
-**Effect:** Recover **1d6 + Body** HP
+**Effect:** Recover **2d6 + Body** HP
 
 Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.
 

@@ -1,6 +1,6 @@
 # Player Guide — Combat & Exploration
 
-Your stats, then how combat and exploration actually work at the table. Full character creation — background, starting deck, equipment — lives in `rules/character-creation.md`.
+Your stats and your gear, then how combat and exploration actually work at the table. The rest of character creation — background, and how the starting deck gets drafted — lives in `rules/character-creation.md`.
 
 ---
 
@@ -152,6 +152,20 @@ Range: Melee
 
 ---
 
+## What It Looks Like
+
+When you play a card, **you choose what it looks like.**
+
+The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
+
+A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+
+None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
+
+You don't have to explain the metaphysics. Neither does your character.
+
+---
+
 ## Keywords Quick Reference
 
 *Initiative Shift X is covered above, under Initiative & The Wheel — not repeated here.*
@@ -290,7 +304,7 @@ Not one roll — the GM reads what kind of signal is actually present and assign
 
 | Rest | Duration | Heals | Also clears | Limit |
 |------|----------|-------|--------------|-------|
-| Short | 20 minutes | 1d6 + Body HP | All Exhaust; may destroy 1 Injury from hand, discard, or deck | 3/day, can be chained |
+| Short | 20 minutes | 2d6 + Body HP | All Exhaust; may destroy 1 Injury from hand, discard, or deck | 3/day, can be chained |
 | Long | 7½ hours | Full heal | All Injuries and all Exhaust | Once/day, requires genuine safety |
 
 Either length reshuffles your discard into your deck and refreshes your hand to full.
@@ -302,6 +316,22 @@ Either length reshuffles your discard into your deck and refreshes your hand to 
 Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item Action / Item Action in combat. Artifacts are resonant items aligned with a Seat's domain.
 
 Full tier system and the world's item catalog: `rules/equipment.md` and `rules/items.md`.
+
+---
+
+## What You Showed Up With
+
+You choose what your character wears and what they carry. A sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made.
+
+**None of it has stats. None of it has a gold value.** Your starting garb and weapon are not equipment in the mechanical sense — they grant no bonus, occupy no slot, and cannot be sold. Nobody is going to ask you what your sword's damage is. The cards are your damage. The gear is who you are.
+
+**It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
+
+- A sword can dig. It can pry, wedge a door, cut a rope at arm's length, and reach something you'd rather not reach with your hand.
+- A bow can shoot out a light across a room you don't want to cross.
+- A heavy coat is a rope, a sack, a way to carry something too hot to hold, or the reason the cold doesn't get a check out of you.
+
+So choose it as fiction, then use it as leverage. The character who thought about what they brought will find more doors open than the one who wrote "sword" and stopped thinking about it. That is the whole design: no numbers on it, real consequences from it.
 
 ---
 
