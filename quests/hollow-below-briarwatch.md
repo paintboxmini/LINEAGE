@@ -18,15 +18,15 @@ The day begins under thick cloud cover. The air carries the smell of wet soil. F
 
 ## Boxed Read-Aloud — Arrival at the Farm
 
-> The sky hangs low and gray over the farmland. The soil under your boots gives slightly, as though it has not fully decided whether to hold. A wide depression scars one of the fields — fenced off with rope and splintered posts. The farmer stands nearby, hat in hand, looking more tired than frightened. Something small and matte-black keeps to his heels the whole time, low to the ground, not quite touching him.
+> The sky hangs low and gray over the farmland. The soil under your boots gives slightly, as though it has not fully decided whether to hold. A wide depression scars one of the fields — fenced off with rope and splintered posts. The farmer — **Iron** — stands nearby, hat in hand, looking more tired than frightened. Something small and matte-black keeps to his heels the whole time, low to the ground, not quite touching him.
 >
 > *"Thanks for coming. Was starting to think nobody would. Lost a dozen head when the ground opened up. There's an old well on the property. Leads down into caves. Always knew it was there. Never thought it'd matter."*
 >
 > *"There's folk livin' down there too, far as I can tell. Small. Mole-like. Caught glimpses around the old watchtower ruins for years — and every so often, dusk mostly, one'll dart across a field before you get a real look. Never bothered a soul, near as I know. But this collapse... I got a feeling they might've had a hand in it somehow. Couldn't tell you why, couldn't swear to it. I got no business going down there to find out myself. That's the whole reason I sent for you."*
 
-**What the farmer actually knows, plainly stated:** glimpses over years, never contact — enough to suspect, nowhere near enough to know. He's not wrong to wonder (the Borrowers really did widen their tunnel network, per the Causality Chain below), but he has no idea whether that's actually what caused the sinkhole specifically, or whether it's connected to the Fenwool losses at all. His suspicion is a lead, not a briefing — the party still has to find out what's actually true.
+**What Iron actually knows, plainly stated:** glimpses over years, never contact — enough to suspect, nowhere near enough to know. He's not wrong to wonder (the Borrowers really did widen their tunnel network, per the Causality Chain below), but he has no idea whether that's actually what caused the sinkhole specifically, or whether it's connected to the Fenwool losses at all. His suspicion is a lead, not a briefing — the party still has to find out what's actually true.
 
-**The farmer's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick.md`.
+**Iron's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick.md`.
 
 ---
 
@@ -70,7 +70,7 @@ You never announce a number. You narrate symptoms.
 - High: *"This might go wrong during the fight."*
 - Critical: *"The cave might choose for you."*
 
-Narrate through dust falling, cracks widening, Borrowers moving their sleeping mats further back, new soil sag reported by the farmer. Players understand things are worsening — not by how much. That uncertainty is the pressure.
+Narrate through dust falling, cracks widening, Borrowers moving their sleeping mats further back, new soil sag reported by Iron. Players understand things are worsening — not by how much. That uncertainty is the pressure.
 
 ---
 
@@ -110,7 +110,7 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 **A gap at the bottom of the far wall, low and easy to miss until someone's crouched at floor level:** water is draining into it, steadily, the same flow that's been running underfoot since Flood Shelf Chamber above. It doesn't pool here — this chamber stays dry, per the Causality Chain — because whatever comes down from Flood Shelf finds its own way out through this gap and keeps going, deeper than anyone's mapped. Worth describing, not worth a check to notice; the gap itself answers nothing on its own. Tracing where the flow actually comes from is the real question, and that answer is upstream, not down.
 
-**First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick.md`), same species as the farmer's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
+**First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick.md`), same species as Iron's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
 
 **The Heavy Door** — half-buried in debris off this chamber. Thick stone slab, iron-banded, seals into a carved rectangular frame. When closed: reduces vibration, dampens sound, blocks predator access.
 

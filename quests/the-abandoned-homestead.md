@@ -6,7 +6,7 @@
 
 ## Intent
 
-The party is about to meet a farmer who is still holding his claim together (`quests/hollow-below-briarwatch.md`). This is the same region, the same soft ground, the same limestone underneath, and the same year — with a different outcome already finished.
+The party is about to meet **Iron**, a farmer still holding his claim together (`characters/iron.md`, `quests/hollow-below-briarwatch.md`). This is the same region, the same soft ground, the same limestone underneath, and the same year — with a different outcome already finished.
 
 Nobody explains that. The house does it.
 
@@ -46,7 +46,7 @@ It is in the doorway. Not inside, not outside — in the band where the light st
 Mechanically: a party that has not spotted it grants the Duskwick **the first attack of the encounter, uncontested** (same terms as the Briarbound's Learned the Shape, `bestiary/briarbundles.md`), and that attack is made from inside its own threshold, so THRESHOLD's condition is live — it has not been attacked, and it opens at +4 with Blind.
 
 - Senses or Reason, DC 15, from the yard: the band of weathering on the floor is interrupted. Something is standing in it.
-- Its wick is the tell, and it is banked almost out. Anyone who has seen a Duskwick before (the farmer's companion, if the party has already met him) gets this at DC 11 instead.
+- Its wick is the tell, and it is banked almost out. Anyone who has seen a Duskwick before (Iron's companion, if the party has already met him) gets this at DC 11 instead.
 
 **How it ends.** Back out of the doorway. It will not follow into open ground — that is true of every Duskwick and it is true of this one at four times the mass. The fight only continues as long as the party keeps standing in the one place it is built to win.
 
@@ -72,7 +72,7 @@ Hold the two fresh bundles until someone looks at the bundles specifically. It i
 
 **Do not answer the fresh bundles.** Not this session, not with a note found in the house, not with the Duskwick. Somebody or something is still tying bundles at a house with nobody in it. That is the whole of what is established.
 
-If the party later stands in the Western Property's field and sees the sinkhole, the rope fence, and the tired man who owns it — that is the encounter this one was for. Nothing needs to be said there either.
+If the party later stands in the Western Property's field and sees the sinkhole, the rope fence, and Iron standing at the edge of it — that is the encounter this one was for. Nothing needs to be said there either.
 
 ---
 
@@ -92,8 +92,9 @@ Nothing killed anyone here. The Duskwick came years later, to an empty house wit
 
 ## Related Documents
 
-- `quests/hollow-below-briarwatch.md` — the farmer this foreshadows, and the tunnel network under both claims
+- `characters/iron.md` — the farmer this foreshadows
+- `quests/hollow-below-briarwatch.md` — his sinkhole, and the tunnel network under both claims
 - `locations/briarwatch.md` — the region, the soft ground, the limestone
-- `bestiary/duskwick.md` — the large one, and the farmer's companion of the same species
+- `bestiary/duskwick.md` — the large one, and Iron's companion of the same species
 - `bestiary/briarbundles.md` — what the four in the field are, and why nobody takes them down
 - `bestiary/fenwool.md` — the animal the doll was made from
