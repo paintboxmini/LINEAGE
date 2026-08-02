@@ -63,6 +63,8 @@ That night or the following morning: unusual activity at the river docks — Gla
 
 **The Void Runners** use stolen resonant items as weapons. Some of their crew are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read.
 
+Stat blocks: `bestiary/void-runner.md` and `bestiary/corrupted-bather.md`.
+
 **What the cargo reveals:**
 Kaine has been building a supply of resonant material. The Lightning Loop is the centerpiece but not the only item. He has been preparing for something larger than miracle performances.
 
