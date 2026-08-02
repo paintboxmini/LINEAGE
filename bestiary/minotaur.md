@@ -9,6 +9,8 @@ The pressure track exists because of how the minotaurs navigate — not by walls
 **Mind 3 / Body 6 / Soul 5 — HP 24** *(bespoke — boss exception; formula baseline is 21)*
 **Creature Threat Rating:** 14
 
+
+**Deck (14 — 3 Blue / 6 Red / 5 Green):** MAZE SENSE, CUT OFF, PATTERN READ *(blue)* · CHARGE, TRAMPLE, GORE, IRON GRIP, SEISMIC REDIRECT, CERTAIN CONTACT *(red)* · BOUND TO THE STONE, LABYRINTH ECHO, INEVITABILITY, BIND, PATIENCE *(green)*
 **Passive — Labyrinth Bond:** The Minotaur is aware of the current pressure track value at all times. While the track is 5 or higher, all Minotaur attacks deal +d6 damage.
 
 **Passive — Corridor Fighter:** The Minotaur does not suffer movement penalties in narrow corridors. Creatures in Frontline with a Minotaur inside a corridor cannot move to Backline without first disengaging — this requires an action and a successful Body check (DC 13).

@@ -15,6 +15,8 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 **Mind 2 / Body 3 / Soul 1 — HP 15**
 **Creature Threat Rating:** 6
 
+
+**Deck (6 — 2 Blue / 3 Red / 1 Green):** INK BURST, CAMOUFLAGE SHIFT *(blue)* · SURGE, ENVELOPING PRESS, DEPTH SLAM *(red)* · FLATTEN *(green)*
 ---
 
 ## Passives

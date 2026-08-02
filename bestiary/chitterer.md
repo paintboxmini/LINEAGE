@@ -7,6 +7,8 @@ Small and quick. Found in packs. Crystal knives and arrowheads worked from harve
 **Mind 1 / Body 1 / Soul 2 — HP 11**
 **Creature Threat Rating:** 4
 
+
+**Deck (4 — 1 Blue / 1 Red / 2 Green):** FOCUS *(blue)* · DART *(red)* · FLOW, DELAY *(green)*
 **Passive — Scatter:** When a Chitterer takes damage, it and all Chitterers in the same passage gain Evade until the start of their next turn.
 
 **Passive — Noise:** If a Chitterer is attacked and survives, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per cycle regardless of how many Chitterers are attacked.

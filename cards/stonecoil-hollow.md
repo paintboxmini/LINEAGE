@@ -68,13 +68,7 @@ Range: Both
 
 ---
 
-**PULL**
-RED — BODY — HOLLOW
-Attack: Body + d6
-Effect: Pull target to frontline
-Defensive Bonus: Pull attacker to frontline
-Range: Both
-*"The cliff always pulls things closer."*
+*PULL was promoted to core (same name, `cards/red-body.md`) — Stonecoil's deck uses that core card in its place.*
 
 ---
 

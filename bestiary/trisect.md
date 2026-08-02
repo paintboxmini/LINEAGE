@@ -13,6 +13,8 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 **Mind 5 / Body 5 / Soul 5 — HP 19**
 **Creature Threat Rating:** 15
 
+
+**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, INTERRUPT, EXPOSED *(blue)* · SUNDER, CERTAIN CONTACT, REND, RHYTHM BREAK, OVERDRIVE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, DEAD RECKONING *(green)*
 ---
 
 ## Passives

@@ -19,6 +19,8 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 **Mind 2 / Body 3 / Soul 1 — HP 15**
 **Creature Threat Rating:** 6
 
+
+**Deck (6 — 2 Blue / 3 Red / 1 Green):** STILLNESS, UNNAME *(blue)* · PULL, SEISMIC REDIRECT, IRON GRIP *(red)* · BIND *(green)*
 ---
 
 ## Passives

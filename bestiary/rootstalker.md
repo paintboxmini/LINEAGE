@@ -7,6 +7,8 @@
 **Mind 2 / Body 2 / Soul 3 — HP 13**
 **Creature Threat Rating:** 7
 
+
+**Deck (7 — 2 Blue / 2 Red / 3 Green):** CAMOUFLAGE STRIKE, VEIL *(blue)* · LIMB-SNAPPER, SPLINTER-BURST *(red)* · THORN-BIND, BRISTLE, PATIENCE *(green)*
 ---
 
 ## Description

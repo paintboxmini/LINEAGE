@@ -28,7 +28,10 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 ## The Bone Collector
 
-**Mind 4 / Body 4 / Soul 2**
+**Mind 4 / Body 4 / Soul 2 — HP 17**
+**Creature Threat Rating:** 10
+
+**Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, PROFILE, STILLNESS, UNNAME *(blue)* · GORE, BURN BRIGHT, SPARK OF VIOLENCE, RETALIATE *(red)* · BRISTLE, CONSUME *(green)*
 
 **Passive — Stitched Armor:** The Collector takes −2 damage from all attacks.
 

@@ -7,6 +7,8 @@
 **Mind 3 / Body 1 / Soul 2 — HP 11**
 **Creature Threat Rating:** 6
 
+
+**Deck (6 — 3 Blue / 1 Red / 2 Green):** CLAY BOWL, FOCUS, ANTICIPATE *(blue)* · CRAWL LANE *(red)* · PATIENCE, BIND *(green)*
 ---
 
 ## Description

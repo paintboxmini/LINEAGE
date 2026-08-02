@@ -5,6 +5,8 @@
 **Mind 1 / Body 1 / Soul 2 — HP 11**
 **Creature Threat Rating:** 4
 
+
+**Deck (4 — 1 Blue / 1 Red / 2 Green):** SKITTER AWAY *(blue)* · RAKING CUT *(red)* · NIP AND TEAR, BRISTLE *(green)*
 **Cards:** `cards/briar-scratcher.md`
 
 ---

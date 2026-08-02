@@ -7,6 +7,8 @@
 **Mind 2 / Body 4 / Soul 2 — HP 17**
 **Creature Threat Rating:** 8
 
+
+**Deck (8 — 2 Blue / 4 Red / 2 Green):** VIBRATION LOCK, STILL GROUND *(blue)* · DRAG, COIL LATCH, ROLLING THUNDER, PULL *(red)* · SHED SKIN, DARK CORRIDOR *(green)*
 *A larger, bespoke mated pair (Mind 3/Body 6/Soul 3, CTR 12 each — no new cards, same signature set doubled up) dens in the Mated Stonecoil Nest — see `quests/hollow-below-briarwatch.md`, Lower Depth.*
 
 *A river-dwelling relative, the Coralcoil, natively lives where a river's coral-banked reaches run close to the coast (`world/geography-overview.md`, Rivers and Lakes). Same species logic, same capacity to grow far past ordinary size — one grown monstrously and irrevocably is what the Coil actually is. See `locations/the-coil.md`, "What Happened To It" (GM-only). No separate stat block yet — not needed unless an ordinary, unaltered Coralcoil becomes its own encounter.*
