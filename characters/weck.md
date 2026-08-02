@@ -1,6 +1,6 @@
 # Weck
 
-*Travelling buyer of culls. Works the Vulture's Nest–Briarwatch road and further. See `quests/the-man-who-buys-injuries.md`.*
+*Travelling buyer of culls. Works the Vulture's Nest–Briarwatch road and further. See `quests/the-man-who-buys-wounds.md`.*
 
 *No stat block. Weck does not fight — not as a tactic, not under threat. If the party attacks him he cooperates, and that is the whole of his response.*
 
@@ -14,9 +14,9 @@ A wool coat too clean for the road. A cart stopped neatly at whatever the road's
 
 ## What He Does
 
-He buys culls. Fenwool the farms can't keep — injured, marked, picked over. He pays fairly and in coin, and the Briarwatch farmers confirm it: good prices, no haggling, never early, never late. This part of his business is entirely legitimate and entirely verifiable, which is what makes the rest of it work.
+He buys culls. Fenwool the farms can't keep — wounded, marked, picked over. He pays fairly and in coin, and the Briarwatch farmers confirm it: good prices, no haggling, never early, never late. This part of his business is entirely legitimate and entirely verifiable, which is what makes the rest of it work.
 
-He also buys injuries. He removes one Injury permanently — from hand, discard, or deck, wherever it sits — for a token payment of a few coins ("so it's a sale") and the seller's name, written in his ledger, in their own hand. One purchase per customer. He does not press, upsell, or repeat the offer to someone who has refused.
+He also buys wounds. He removes one Wound permanently — from hand, discard, or deck, wherever it sits — for a token payment of a few coins ("so it's a sale") and the seller's name, written in his ledger, in their own hand. One purchase per customer. He does not press, upsell, or repeat the offer to someone who has refused.
 
 ---
 
@@ -53,6 +53,6 @@ Anywhere on a road, at GM discretion. Same cart, same coat, further up whatever 
 
 ## Related Documents
 
-- `quests/the-man-who-buys-injuries.md` — the encounter itself
-- `rules/card-glossary.md` — INJURY; short-rest removal is the honest version of what he sells
+- `quests/the-man-who-buys-wounds.md` — the encounter itself
+- `rules/card-glossary.md` — WOUND; short-rest removal is the honest version of what he sells
 - `world/tonal-bible.md` — warmth containing something wrong

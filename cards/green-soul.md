@@ -223,7 +223,7 @@ Range: Ranged
 
 ---
 
-**CARRIED INJURY**
+**CARRIED WOUND**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Transfer 1 status card from any ally's hand or discard to the defender
@@ -256,8 +256,8 @@ Range: Ranged
 **FIELD MEDICINE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Remove all Injuries from target ally's hand and discard pile. They heal 3 HP.
-Defensive Bonus: Remove all Injuries in your hand and discard pile. Heal 3 HP.
+Effect: Remove all Wounds from target ally's hand and discard pile. They heal 3 HP.
+Defensive Bonus: Remove all Wounds in your hand and discard pile. Heal 3 HP.
 Range: Ranged
 *"Not healed. Held together."*
 

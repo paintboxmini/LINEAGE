@@ -77,9 +77,9 @@ Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NI
 
 Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Melee — legal, both Frontline), hoping Green would beat Blue. A played Red.
 
-**Red beats Green — attacker wins.** Damage: Body 1 + d4 *(rolls 2)* = **3**. Frost 15 → 12. RAKING CUT Effect: *insert 1 Injury at the bottom of target's deck.* Frost's deck is now 6 cards, INJURY on the bottom: STILLNESS, PUSH, ENDURE, FLOW, WITNESS, **INJURY**.
+**Red beats Green — attacker wins.** Damage: Body 1 + d4 *(rolls 2)* = **3**. Frost 15 → 12. RAKING CUT Effect: *insert 1 Wound at the bottom of target's deck.* Frost's deck is now 6 cards, WOUND on the bottom: STILLNESS, PUSH, ENDURE, FLOW, WITNESS, **WOUND**.
 
-This is the Scratcher doing exactly what it exists to do — the 3 damage is nothing; the Injury is the attack (`bestiary/briar-scratcher.md`, Tactical Purpose).
+This is the Scratcher doing exactly what it exists to do — the 3 damage is nothing; the Wound is the attack (`bestiary/briar-scratcher.md`, Tactical Purpose).
 
 Frost's hand: STRIKE, REFRACT. A's hand: NIP AND TEAR.
 
@@ -111,7 +111,7 @@ Frost's hand: STRIKE, REFRACT *(unchanged)*. B's hand: RAKING CUT. B's deck: NIP
 
 ### Frost's turn
 
-Draws to 3 → draws 1 from his 6-card deck: **STILLNESS**. The Injury is still sitting 5 cards down, at the bottom — bottom-insertion means it costs him later, not now. Frost's hand: STRIKE, REFRACT, STILLNESS — a fully playable hand, for the moment.
+Draws to 3 → draws 1 from his 6-card deck: **STILLNESS**. The Wound is still sitting 5 cards down, at the bottom — bottom-insertion means it costs him later, not now. Frost's hand: STRIKE, REFRACT, STILLNESS — a fully playable hand, for the moment.
 
 **Action:** Frost attacks A with **STRIKE** (Red, Body + d10, Melee — both Frontline, legal). A's hand is just NIP AND TEAR; it reveals it — **Green** (Range: Melee, legal). **Red beats Green — attacker wins.** Damage: Body 3 + d10 *(rolls 4)* = **7**. A: 11 → 4. STRIKE Effect: None.
 
@@ -173,12 +173,12 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 
 | | HP | Deck state |
 |---|----|-----------|
-| Frost | 5 / 15 | **1 Injury**, still 3 cards down in his deck (behind ENDURE, FLOW, WITNESS) — inserted at the bottom, never drawn this fight; REFRACT and STILLNESS both still in hand, neither ever found a legal moment to defend with |
+| Frost | 5 / 15 | **1 Wound**, still 3 cards down in his deck (behind ENDURE, FLOW, WITNESS) — inserted at the bottom, never drawn this fight; REFRACT and STILLNESS both still in hand, neither ever found a legal moment to defend with |
 | Steele | 17 / 17 | Clean — never targeted |
 | Scratcher A | 4 / 11 | Gone |
 | Scratcher B | 3 / 11 | Gone — spent a whole turn just crossing the field, and its Backline hand was dead weight twice over |
 
-Frost's Injury never surfaced this fight — bottom-insertion means it doesn't cost him now, it costs him later, whenever he actually draws down to it. It rides in his deck into Briarwatch and the Hollow below it, eventually surfacing into his hand to eat a slot the turn it's finally drawn (`quests/hollow-below-briarwatch.md`), where it won't heal with HP and won't leave until he spends a whole action on it or takes a short rest. Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the injured thing.
+Frost's Wound never surfaced this fight — bottom-insertion means it doesn't cost him now, it costs him later, whenever he actually draws down to it. It rides in his deck into Briarwatch and the Hollow below it, eventually surfacing into his hand to eat a slot the turn it's finally drawn (`quests/hollow-below-briarwatch.md`), where it won't heal with HP and won't leave until he spends a whole action on it or takes a short rest. Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
 
 ---
 
@@ -190,7 +190,7 @@ Frost's Injury never surfaced this fight — bottom-insertion means it doesn't c
 - **Simultaneous reveal:** defense is a prediction. Frost guessed wrong once; that's the game.
 - **Range is positional law, for both sides of an exchange:** melee needs both Frontline; Ranged fails inside melee range whether it's the card attacking or defending. A hand that holds cards can still have no legal defense — Frost's REFRACT and STILLNESS, and B's RAKING CUT, all sat in hand, useless, at the moments that mattered.
 - **A 4-card deck genuinely cycles mid-fight:** Scratcher A ran its deck dry and reshuffled its discard pile inside a single combat — a real consequence of deck size = total stats that a larger deck wouldn't have surfaced.
-- **Status flow:** Evade (spent on one attack, whether or not it dodges), and the start of the Injury life cycle — inserted at the bottom of the deck, not shuffled in at random, which is why it never surfaced in a fight this short. It costs nothing immediately and everything eventually: once it's finally drawn, it occupies a hand slot and *stays* there, cleared only by spending an action or taking a short rest.
+- **Status flow:** Evade (spent on one attack, whether or not it dodges), and the start of the Wound life cycle — inserted at the bottom of the deck, not shuffled in at random, which is why it never surfaced in a fight this short. It costs nothing immediately and everything eventually: once it's finally drawn, it occupies a hand slot and *stays* there, cleared only by spending an action or taking a short rest.
 - **You Are Not Your Own Ally** unless the card says "you and" (`rules/cards.md`).
 
 ---

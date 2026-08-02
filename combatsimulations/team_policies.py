@@ -5,7 +5,7 @@ between its turns spends a card each block, so hands run dry — the thing the 1
 sim couldn't show).
 
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_injury',) | None
+                                 | ('destroy_wound',) | None
     choose_defense(battle, me, attacker) -> card | None
 """
 
@@ -97,9 +97,9 @@ class TeamTactician(ScryMixin):
             if atks:
                 # value = damage + a nudge for effects that matter in teams
                 return ('attack', max(atks, key=lambda c: self._value(battle, me, target, c)), target)
-        # no legal attack: clear an Injury, then an Exhaust, or move
-        if any(c.is_status and c.name == 'INJURY' for c in me.hand):
-            return ('destroy_injury',)
+        # no legal attack: clear a Wound, then an Exhaust, or move
+        if any(c.is_status and c.name == 'WOUND' for c in me.hand):
+            return ('destroy_wound',)
         if any(c.is_status and c.name == 'EXHAUST' for c in me.hand):
             return ('destroy_exhaust',)
         if me.hand:

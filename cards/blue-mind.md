@@ -256,8 +256,8 @@ Range: Ranged
 **TAINT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Add 1 Injury to the bottom of the defender's deck.
-Defensive Bonus: Add 1 Injury to the bottom of the attacker's deck.
+Effect: Add 1 Wound to the bottom of the defender's deck.
+Defensive Bonus: Add 1 Wound to the bottom of the attacker's deck.
 Range: Ranged
 *"Some damage is architecture."*
 

@@ -41,7 +41,7 @@ It doesn't retreat. It has nowhere better to be.
 
 The Delve Roller will not leave Frontline voluntarily. If repositioned, it returns next turn.
 
-**Claws:** On a hit, shuffle 1 Injury into the target's deck. The cut is not deep. The contamination is.
+**Claws:** On a hit, shuffle 1 Wound into the target's deck. The cut is not deep. The contamination is.
 
 **Antennae:** Passive vibration sense — the Roller cannot be Blind. Blind effects applied to it have no effect.
 
@@ -51,7 +51,7 @@ The Delve Roller will not leave Frontline voluntarily. If repositioned, it retur
 
 ## Encounter Notes
 
-Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Injuries. Fighting it costs time.
+Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
 
 Pairs with Stonecoils: the Roller occupies the front, the Stonecoil waits behind the next turn. Party is Wounded before the ambush lands.
 

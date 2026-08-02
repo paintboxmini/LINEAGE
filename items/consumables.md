@@ -8,7 +8,7 @@ General use items without a fixed location source. Sources and availability left
 *Consumable*
 Use (1) — Duration: 1 combat.
 Gain Armour 1 and your attacks deal +1d6 damage.
-End of combat: Shuffle 2 Injury cards into your deck.
+End of combat: Shuffle 2 Wound cards into your deck.
 
 ---
 

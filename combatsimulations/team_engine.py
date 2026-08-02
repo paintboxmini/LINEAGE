@@ -7,14 +7,14 @@ and hand-size-as-blocking-capacity (multiple enemies attack you between your
 turns; every block costs a card).
 
 Design: reuses engine.Combatant / Card / roll / RULING unchanged, and exposes the
-SAME effect-facing API as engine.Duel (deal, heal, insert_injury, allies,
+SAME effect-facing API as engine.Duel (deal, heal, insert_wound, allies,
 enemies, _say, rng, cards). So one set of card effects in content.py serves both
 engines — ally effects route through engine.allies(me), which is empty in a duel
 (no behavior change there) and populated here.
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_injury',) | None
+                                 | ('destroy_wound',) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
 """
@@ -41,7 +41,7 @@ class Battle:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.injury_card = cards.get('INJURY')
+        self.wound_card = cards.get('WOUND')
         self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
@@ -167,10 +167,10 @@ class Battle:
             # reaches them again (Drew: they shouldn't get to act until it does).
             _join_wheel(self.queue, target, after=source)
 
-    def insert_injury(self, target):
-        if self.injury_card is None:
+    def insert_wound(self, target):
+        if self.wound_card is None:
             return
-        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
+        target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
     def insert_exhaust(self, target, n=1):
         """See engine.py's Duel.insert_exhaust for the full reasoning."""
@@ -403,7 +403,7 @@ class Battle:
             dmg += 2
         if defender._rend_guard:
             defender._rend_guard = False
-            self.insert_injury(defender)
+            self.insert_wound(defender)
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
@@ -535,9 +535,9 @@ class Battle:
                 removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
                 who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
                 self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
-            elif action[0] == 'destroy_injury':
+            elif action[0] == 'destroy_wound':
                 for i, c in enumerate(who.hand):
-                    if c.is_status and c.name == 'INJURY':
+                    if c.is_status and c.name == 'WOUND':
                         who.hand.pop(i)
                         break
             who.must_target_frontline = False

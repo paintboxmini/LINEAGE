@@ -305,8 +305,8 @@ Not one roll — the GM reads what kind of signal is actually present and assign
 
 | Rest | Duration | Heals | Also clears | Limit |
 |------|----------|-------|--------------|-------|
-| Short | 20 minutes | 2d6 + Body HP | All Exhaust (hand, deck, and discard); may destroy 1 Injury from hand, discard, or deck | 3/day, can be chained |
-| Long | 7½ hours | Full heal | All Injuries, and all Exhaust (hand, deck, and discard) | Once/day, requires genuine safety |
+| Short | 20 minutes | 2d6 + Body HP | All Exhaust (hand, deck, and discard); may destroy 1 Wound from hand, discard, or deck | 3/day, can be chained |
+| Long | 7½ hours | Full heal | All Wounds, and all Exhaust (hand, deck, and discard) | Once/day, requires genuine safety |
 
 Either length reshuffles your discard into your deck and refreshes your hand to full.
 

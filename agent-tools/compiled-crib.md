@@ -20,7 +20,7 @@ Read this + the target's location/bestiary file + anything your specific task ac
 - Positions: Frontline / Backline. Melee needs both frontline; ranged needs not-both-frontline; "Both" always legal.
 - Initiative: tokens placed clockwise in initiative order; a turn marker starts at 12 o'clock and advances one token per turn. **Wait** = forfeit action, choose a later slot (the party's sequencing tool). **Initiative Shift X** always moves the token the full distance — positive counterclockwise (never later), negative clockwise (never sooner); when that would violate the guarantee, a skip or bonus chip preserves it instead of altering the move. Full mechanic: `rules/combat.md`, `rules/card-glossary.md`; worked cases: `rules/initiative-shift-examples.md`.
 - Standard DC 13. Perception modes: Reason (Mind) / Senses (Body) / Read (Soul).
-- Status cards (Injury, Exhaust) go into decks — the delayed-consequence system.
+- Status cards (Wound, Exhaust) go into decks — the delayed-consequence system.
 - Approved keywords (canonical texts in `rules/card-glossary.md`; list maintained in `experimental/README.md`): Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Protect, Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Sealed, Staggered, Thorns X, Unpreventable, Ward, Weak. **No new keywords without discussion.**
 
 ## Creature Threat Rating calibration (real anchors)
@@ -84,7 +84,7 @@ Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exi
 
 *(exemplars: Aege/Bartho/Kino in `locations/vultures-nest.md`; Weck in `characters/weck.md`)*
 
-Four lines of Weck, as the register to hit: *a cart that doesn't smell like animals; buys culls at fair prices, never early, never late; will buy one Injury for coin and your name in his ledger, in your own hand; answers questions honestly and unhelpfully, which is worse.* — Function (buyer), Pressure (the terms), Hook (the ledger, deliberately unanswered). Refusing is always a complete answer. NPCs embody rules; they never explain them.
+Four lines of Weck, as the register to hit: *a cart that doesn't smell like animals; buys culls at fair prices, never early, never late; will buy one Wound for coin and your name in his ledger, in your own hand; answers questions honestly and unhelpfully, which is worse.* — Function (buyer), Pressure (the terms), Hook (the ledger, deliberately unanswered). Refusing is always a complete answer. NPCs embody rules; they never explain them.
 
 ## Tone in one breath
 

@@ -173,7 +173,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain an Injury. See `bestiary/briar-scratcher.md`.
+- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
 - *Ignore it:* It opens on its own later. DM chooses when.
 - *Carry it:* Bad idea. The party will figure out why.
 

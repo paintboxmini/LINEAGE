@@ -91,7 +91,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
 
-- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Injury cards at combat's end.
+- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
 - **Echo Shell** — repeat your last action, if it's still retrievable from discard.
 - **Blood Phial** — add the target's own last-used card's effect to your attack.
 - **Imprint Sigil** — target follows a simple command, 1 turn.

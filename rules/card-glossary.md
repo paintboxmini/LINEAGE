@@ -52,7 +52,7 @@ Evade stacks. Each stack protects against one attack. Only one Evade triggers pe
 **(7) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
-**A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer an Injury, an Exhaust, or a curse permanently in the middle of a fight.
+**A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
 
 **(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
@@ -144,18 +144,18 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 
 ---
 
-### INJURY
+### WOUND
 *Status — Colorless*
-Cannot be played. It stays in your hand and occupies a card slot — an Injury does not leave on its own.
-In combat, use your action to destroy 1 Injury from your hand.
-Once per short rest, destroy 1 Injury from your hand, discard pile, or deck. Short rests chain (`rules/core-rules.md`), so clearing several Injuries in one sitting costs time, not repetition.
-On a long rest, all Injuries are destroyed.
+Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
+In combat, use your action to destroy 1 Wound from your hand.
+Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/core-rules.md`), so clearing several Wounds in one sitting costs time, not repetition.
+On a long rest, all Wounds are destroyed.
 
 ---
 
 ### EXHAUST
 *Status — Colorless*
-Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
+Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from a Wound, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 
@@ -164,7 +164,7 @@ A short or long rest removes every copy of Exhaust from your hand, deck, and dis
 ### A ROOTED HEART
 *Status — Curse*
 Cannot be played. At the end of your turn, discard it if it is in your hand.
-It costs you the draw and the hand slot for one turn, then cycles back through your deck on the next reshuffle — it does not clog your hand the way an Injury does, it simply keeps coming back.
+It costs you the draw and the hand slot for one turn, then cycles back through your deck on the next reshuffle — it does not clog your hand the way a Wound does, it simply keeps coming back.
 Removal: story dependent. Exiling it destroys it (see Exile).
 *"Something of the Weald is in you now. It is patient about it."*
 
