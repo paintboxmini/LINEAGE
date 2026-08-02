@@ -1,6 +1,6 @@
 # Player Guide — Combat & Exploration
 
-For players who already have a character — three stats, a nine-card deck, and gear. Building one lives in `rules/character-creation.md`; this is what you need once you're actually sitting at the table.
+Your stats, then how combat and exploration actually work at the table. Full character creation — background, starting deck, equipment — lives in `rules/character-creation.md`.
 
 ---
 
@@ -8,13 +8,15 @@ For players who already have a character — three stats, a nine-card deck, and 
 
 ## The Stats
 
+All characters begin with Body 2 / Mind 2 / Soul 2, then distribute 3 more points among the three — no stat above 5 at character creation.
+
 | Stat | Colors your damage | Also drives |
 |------|---------------------|-------------|
 | Body | Red cards | Max HP = (2 × Body) + 9 |
 | Mind | Blue cards | Hand size = Mind (minimum 2) |
 | Soul | Green cards | Initiative = 1d6 + Soul |
 
-A card's color determines which stat powers its damage, no matter which stat is highest on your sheet.
+A card's color determines which stat powers its damage, no matter which stat is highest on your sheet. Stats also decide which mode you use for checks, saves, and perception (Part Two) — a spread built around Soul reads rooms and holds oaths, around Mind anticipates and controls, around Body endures, positions, and breaks things. Your stat spread is a statement about how your character solves problems.
 
 ---
 
@@ -280,3 +282,11 @@ Either length reshuffles your discard into your deck and refreshes your hand to 
 Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item action/bonus action in combat. Artifacts are resonant items aligned with a Seat's domain.
 
 Full tier system and the world's item catalog: `rules/equipment.md` and `rules/items.md`.
+
+---
+
+## The Oracle (End of Session)
+
+At the close of every session, each player meets the Oracle alone. She speaks in three frames — **Name, Price, Distance** — and you'll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don't get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.
+
+Growth is never handed over whole. Where this actually happens, and what it's like to sit across from her, is worth meeting for yourself rather than reading about in advance.
