@@ -60,12 +60,27 @@ See `rules/equipment.md` for the Weapon/Armor tier system and how to design new 
 
 ## Starting Deck
 
+Every character starts with **9 cards** drafted from the Oracle deck. *How* they get drafted is up to the table — what follows are two methods that work, not a required procedure. Any process that ends with nine cards chosen under real constraint is doing the job.
+
+### Method One — The Shared Offer
+
 1. The GM presents **3 random cards** from the available pool.
 2. Each player takes turns choosing **1** card.
 3. Unchosen cards return to the pool.
 4. Repeat, rotating pick order, until every player has **9 cards**.
 
 Pick order alternates each round — if Player A picks first in round one, Player B picks first in round two. The pool is shared. Early picks shape what remains. A deck built alongside others is never identical to one built alone.
+
+### Method Two — The Passing Piles
+
+1. Split the Oracle deck into **piles as equal as they'll divide**, one per player.
+2. Everyone looks at their own pile and takes **1 card** from it.
+3. Pass the remaining pile **to the left**.
+4. Repeat until every player has **9 cards**. Whatever is left in the piles returns to the Oracle.
+
+This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
+
+*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.*
 
 ---
 
