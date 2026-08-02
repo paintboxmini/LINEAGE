@@ -202,7 +202,7 @@ They don't attack. They move toward the party slowly, reaching. Getting envelope
 
 *Tactical note: slimes can be moved around. They follow warmth. A player who moves slowly enough will find the slimes part around them.*
 
-**Stat block:** pending — `bestiary/wallows-slime.md`
+**Stat block:** `bestiary/wallows-slime.md`
 
 ---
 
@@ -257,5 +257,5 @@ The grandmother's map ends here.
 - `locations/underground-bazaar.md` — above
 - `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
-- `bestiary/wallows-slime.md` — pending
+- `bestiary/wallows-slime.md` — stat block, passives, and the signature cards
 - `bestiary/the-descended.md` — The Shelf inhabitants

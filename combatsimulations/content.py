@@ -2624,8 +2624,25 @@ ORACLE_DECK = [
 ]
 
 # registry so run.py can pit any two decks against each other
+# Burnout — the Exhaust diagnostic deck (3/3/3).
+# Added 2026-08-02. Not a design archetype and not anyone's character: it exists
+# because ZERO of the other 22 roster decks contain a card that can produce an
+# Exhaust, so the whole Exhaust path — insert_exhaust, the destroy_exhaust rest
+# action, and idle_recovery's routing to it — had never executed once in a
+# simulation despite being fully implemented. A mechanic nothing exercises is
+# indistinguishable from a mechanic that is broken. This deck runs both of the
+# core cards that self-inflict Exhaust (OVERDRIVE, UNMAKE) so the path stays
+# live and any regression in it shows up in an ordinary sweep.
+BURNOUT_STATS = dict(mind=3, body=3, soul=3)
+BURNOUT_DECK = [
+    "UNMAKE", "FOCUS", "STUDY",             # blue
+    "OVERDRIVE", "STRIKE", "ENDURE",        # red
+    "FLOW", "WITNESS", "SUPPORT",           # green
+]
+
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
+    "burnout": (BURNOUT_STATS, BURNOUT_DECK),  # Exhaust-path diagnostic, not an archetype
     "steele": (STEELE_STATS, STEELE_DECK),
     "mire":   (MIRE_STATS, MIRE_DECK),
     "volk":   (VOLK_STATS, VOLK_DECK),
