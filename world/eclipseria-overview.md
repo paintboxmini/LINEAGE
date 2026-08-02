@@ -20,6 +20,8 @@ The known world is a basin surrounded by the Unheld Ocean — a vast, lightless 
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and the halfway-inns between them.
 
+Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — unnamed, unmapped, and thin, where the Three Cuts hold least. It is most of the world by area and nobody is from it. The maintained roads are the reason a crossing is routine instead of an expedition, and they are maintained *because* of what the ground does when nobody pays for it.
+
 The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond.
 
 For deeper geography, see `world/geography-overview.md`.
