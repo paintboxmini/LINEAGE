@@ -1,6 +1,6 @@
 # The Trisect
 
-**Cards:** `cards/trisect-ashfall.md` *(pending)*
+**Cards:** `cards/trisect-ashfall.md`
 
 Three limbs. Radially symmetric — no front, no back, no preferred direction. Iron and compressed steel. Each limb terminates in a heavy flat plate that serves equally as a foot or a striking surface depending on what the Trisect decides.
 
@@ -14,7 +14,7 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 **Creature Threat Rating:** 15
 
 
-**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, INTERRUPT, EXPOSED *(blue)* · SUNDER, CERTAIN CONTACT, REND, RHYTHM BREAK, OVERDRIVE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, DEAD RECKONING *(green)*
+**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, EXPOSED, EVEN CHURN *(blue)* · SUNDER, CERTAIN CONTACT, REND, RHYTHM BREAK, IDLE TO ENGAGE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, LOW GREY HAZE *(green)*
 ---
 
 ## Passives
