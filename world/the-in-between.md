@@ -71,10 +71,17 @@ How it got there is not explained, in this file or at the table. Nobody in the w
 
 ---
 
+## The Scar
+
+One thing in the In-Between is not displaced, not passing through, and not explained: a pale figure that attends. It does not approach and has never done anything. See `world/the-scar.md`.
+
+---
+
 ## Related Documents
 
 - `mythology/creation-myth-the-three-cuts.md` — the Cuts, and what happens where one weakens
 - `world/the-unheld.md` — the other thinness, and the coastline that stays hard
 - `world/geography-overview.md` — the hubs, the two-day standard, the maintained roads
 - `locations/roadhouse.md` — a haven, and what is paying for it
+- `world/the-scar.md` — the one persistent presence here
 - `rules/the-summons.md` — the Oracle's account of the same three Cuts, in her own voice
