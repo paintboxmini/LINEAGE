@@ -102,7 +102,7 @@ An Effect that only adds to *this attack's* damage does nothing on a miss or a t
 
 ## Damage Pipeline
 
-When attack damage lands, it passes through, in order: **redirect** (e.g. Shared Burden) → **volunteer shield** (Protect) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.
+When attack damage lands, it passes through, in order: **redirect** (e.g. Shared Burden) → **volunteer shield** (Protect) → **Armour** (flat reduction some creatures have) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.
 
 A single attack can never push a standing combatant below 0 HP — that's a Collapse, not a kill.
 
@@ -304,8 +304,8 @@ Not one roll — the GM reads what kind of signal is actually present and assign
 
 | Rest | Duration | Heals | Also clears | Limit |
 |------|----------|-------|--------------|-------|
-| Short | 20 minutes | 2d6 + Body HP | All Exhaust; may destroy 1 Injury from hand, discard, or deck | 3/day, can be chained |
-| Long | 7½ hours | Full heal | All Injuries and all Exhaust | Once/day, requires genuine safety |
+| Short | 20 minutes | 2d6 + Body HP | All Exhaust (hand, deck, and discard); may destroy 1 Injury from hand, discard, or deck | 3/day, can be chained |
+| Long | 7½ hours | Full heal | All Injuries, and all Exhaust (hand, deck, and discard) | Once/day, requires genuine safety |
 
 Either length reshuffles your discard into your deck and refreshes your hand to full.
 

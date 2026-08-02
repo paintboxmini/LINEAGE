@@ -363,7 +363,7 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 <p>An Effect that only adds to <em>this attack&#x27;s</em> damage does nothing on a miss or a tie — there&#x27;s no hit to add to. Effects that do something else (apply a status, reposition, shift a stat) trigger normally regardless.</p>
 <hr>
 <h2>Damage Pipeline</h2>
-<p>When attack damage lands, it passes through, in order: <strong>redirect</strong> (e.g. Shared Burden) → <strong>volunteer shield</strong> (Protect) → <strong>Resist / Vulnerable</strong> (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.</p>
+<p>When attack damage lands, it passes through, in order: <strong>redirect</strong> (e.g. Shared Burden) → <strong>volunteer shield</strong> (Protect) → <strong>Armour</strong> (flat reduction some creatures have) → <strong>Resist / Vulnerable</strong> (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.</p>
 <p>A single attack can never push a standing combatant below 0 HP — that&#x27;s a Collapse, not a kill.</p>
 <p><strong>Unpreventable</strong> damage skips this pipeline entirely — Thorns, status damage, and HP costs aren&#x27;t attacks, so nothing above applies to them. They land in full.</p>
 <hr>
@@ -629,14 +629,14 @@ Range: Melee
 <td>Short</td>
 <td>20 minutes</td>
 <td>2d6 + Body HP</td>
-<td>All Exhaust; may destroy 1 Injury from hand, discard, or deck</td>
+<td>All Exhaust (hand, deck, and discard); may destroy 1 Injury from hand, discard, or deck</td>
 <td>3/day, can be chained</td>
 </tr>
 <tr>
 <td>Long</td>
 <td>7½ hours</td>
 <td>Full heal</td>
-<td>All Injuries and all Exhaust</td>
+<td>All Injuries, and all Exhaust (hand, deck, and discard)</td>
 <td>Once/day, requires genuine safety</td>
 </tr>
 </tbody></table>

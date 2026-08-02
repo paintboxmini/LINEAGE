@@ -23,7 +23,7 @@ Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vib
 
 ## Passive — Rolled Shell
 
-Reduce all incoming damage by 1. This applies to every attack, every source.
+**Armour 1** (`rules/card-glossary.md`). Reduce all incoming attack damage by 1, every attack, all fight.
 
 Low-damage attacks may deal 0. The shell does not care.
 
@@ -45,7 +45,7 @@ The Delve Roller will not leave Frontline voluntarily. If repositioned, it retur
 
 **Antennae:** Passive vibration sense — the Roller cannot be Blind. Blind effects applied to it have no effect.
 
-**Shell:** Rolled Shell passive applies before any other damage reduction. Resist stacks — a Roller that gains Resist takes half of the already-reduced damage.
+**Shell:** Armour applies before any other damage reduction. Resist stacks — a Roller that gains Resist takes half of the already-reduced damage. Unpreventable damage (Thorns, status damage, HP costs) ignores the shell entirely.
 
 ---
 

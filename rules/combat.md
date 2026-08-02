@@ -137,7 +137,7 @@ The base roll is **Stat + die, with Deadly/Weak folded in** (`rules/card-glossar
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Armour** (flat reduction, creature passive) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 

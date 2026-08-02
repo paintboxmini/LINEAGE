@@ -26,8 +26,8 @@ Each color's first hit kills one engine — pistons lock in that housing, its ex
 
 Track at the table: which colors have hit. The engines are visible. One dark, two running. Two dark, one running. Players can see exactly where they stand.
 
-**Resist 1**
-Iron chassis.
+**Armour 2**
+Iron chassis. Every hit that lands on the Trisect comes off two lighter — flat, permanent, never consumed. Wearing it down is the whole fight; chip damage barely registers.
 
 ---
 

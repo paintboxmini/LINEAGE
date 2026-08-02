@@ -25,7 +25,7 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 While stationary and Flattened, requires a DC 14 Mind/Reason check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
 
 **Self-Tenderizing**
-While Flattened, gains Resist 1 from natural compression of its body.
+While Flattened, gains **Armour 1** from natural compression of its body — flat reduction for as long as it stays flat.
 
 **Flattened**
 The Octopus presses flat against the nearest surface. Gaining Flatten costs an action — played as a card. While Flattened, Floor Mimic and Self-Tenderizing are both active. Flatten ends when the Octopus plays Surge, Enveloping Press, Depth Slam, or Ink Burst.

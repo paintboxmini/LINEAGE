@@ -59,7 +59,7 @@ Starting absorptions: Blue active (Evade already running). Absorbed weapon knowl
 
 **Lakeshore Tardigrade**
 Consumed: fish, crabs, lake spirits.
-Starting absorptions: Red active (Thorns 2 already running from crab-shell integration). Resist 1 from shell plating. Water movement: no penalty in aquatic or wet terrain.
+Starting absorptions: Red active (Thorns 2 already running from crab-shell integration). Armour 1 from shell plating. Water movement: no penalty in aquatic or wet terrain.
 
 *Suggested flavour:* iridescent sheen. Shell-like plating visible along the dorsal surface. Moves faster near water.
 

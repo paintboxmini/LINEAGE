@@ -85,6 +85,13 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
 
+**(2) Armour X** *(creature passive)*
+Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.
+
+Armour applies **before** Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker's Effect resolves normally, it simply has no damage to work with.
+
+Armour is a creature trait, not a card keyword — it belongs on stat blocks. Players get Resist.
+
 **(0) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
@@ -107,7 +114,7 @@ The next time you would attack or defend, that one instance is skipped instead �
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **(4) Unpreventable**
-Damage that cannot be defended against. It ignores every defense that applies to attack damage — Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **(9) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
@@ -147,7 +154,8 @@ On a long rest, all Injuries are destroyed.
 ### EXHAUST
 *Status — Colorless*
 Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
-Use your action to destroy all Exhaust cards from your hand. A short or long rest also destroys all Exhaust cards you're holding.
+Use your action to rest in place: every Exhaust card in your hand is destroyed.
+A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 
 ---
 
