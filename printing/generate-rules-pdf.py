@@ -4,10 +4,12 @@ a normal flowing document, not the 3x3 sleeve-card grid generate-cards.py
 produces. No external Markdown library (same "no dependencies" convention
 as generate-cards.py and the combat simulator itself) — a small, targeted
 converter for exactly the Markdown constructs these docs actually use:
-# / ## headers, tables, one fenced code block, horizontal rules,
-bold/italic/inline-code, and plain bullet/numbered lists. No nesting,
-no images, no real hyperlinks (backtick file paths render as inline code,
-not anchors).
+# / ## headers, tables, fenced code blocks, horizontal rules,
+bold/italic/inline-code, plain bullet/numbered lists, and blockquotes
+(used for the Oracle's voice in the summons packet — styled with an
+amber left border to read as a distinct register from the rules text).
+No nesting, no images, no real hyperlinks (backtick file paths render
+as inline code, not anchors).
 
 Usage:
   python3 generate-rules-pdf.py                    → rules/player-guide.md
@@ -110,6 +112,25 @@ def convert(md_text, title):
             out.append(parse_table(block))
             continue
 
+        # Blockquote — the Oracle's own voice in the summons packet. Blank
+        # lines inside a quote start a new paragraph within the same block.
+        if line.startswith('>'):
+            paras = [[]]
+            while i < n and (lines[i].startswith('>') or
+                             (lines[i].strip() == '' and i + 1 < n and lines[i + 1].startswith('>'))):
+                # A bare '>' (or a truly blank line between quoted blocks) breaks
+                # the paragraph without ending the quote.
+                content = lines[i].lstrip('>').strip()
+                if content == '':
+                    if paras[-1]:
+                        paras.append([])
+                else:
+                    paras[-1].append(content)
+                i += 1
+            inner = ''.join(f'<p>{inline(" ".join(p))}</p>' for p in paras if p)
+            out.append(f'<blockquote>{inner}</blockquote>')
+            continue
+
         # Bullet list
         if line.startswith('- '):
             block = []
@@ -136,7 +157,8 @@ def convert(md_text, title):
         while i < n and lines[i].strip() != '' and not (
             lines[i].startswith('#') or lines[i].startswith('|') or
             lines[i].startswith('```') or lines[i].strip() == '---' or
-            lines[i].startswith('- ') or re.match(r'^\d+\.\s', lines[i])
+            lines[i].startswith('- ') or lines[i].startswith('>') or
+            re.match(r'^\d+\.\s', lines[i])
         ):
             block.append(lines[i])
             i += 1
@@ -256,6 +278,22 @@ table.doc-table tr:nth-child(even) td {{
   background: #f7f9fc;
 }}
 
+blockquote {{
+  margin: 0 0 4mm 0;
+  padding: 2mm 0 2mm 5mm;
+  border-left: 2px solid #9a7b2f;
+  color: #3a3226;
+  font-style: italic;
+}}
+
+blockquote p {{
+  margin: 0 0 2mm 0;
+}}
+
+blockquote p:last-child {{
+  margin-bottom: 0;
+}}
+
 strong {{
   font-weight: bold;
 }}
@@ -281,26 +319,50 @@ em {{
 </html>'''
 
 
+# Named multi-document builds. `packet` is the thing that actually goes out
+# to players: the Oracle's summons, then the plain mechanical guide behind it.
+PACKETS = {
+    'packet': {
+        'title': 'A Summons to Eclipseria',
+        'files': ['the-summons.md', 'player-guide.md'],
+    },
+}
+
+
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    fname = sys.argv[1] if len(sys.argv) > 1 else 'player-guide.md'
-    src = f'../rules/{fname}'
-    if not os.path.exists(src):
-        print(f'Not found: {src}')
-        sys.exit(1)
+    arg = sys.argv[1] if len(sys.argv) > 1 else 'player-guide.md'
 
-    with open(src, encoding='utf-8') as f:
-        md_text = f.read()
-
-    title_match = re.match(r'^#\s+(.+)$', md_text.split('\n', 1)[0])
-    title = title_match.group(1) if title_match else fname
-
-    out_name = fname[:-3] if fname.endswith('.md') else fname
-    output = f'{out_name}.html'
+    if arg in PACKETS:
+        cfg = PACKETS[arg]
+        parts = []
+        for fname in cfg['files']:
+            src = f'../rules/{fname}'
+            if not os.path.exists(src):
+                print(f'Not found: {src}')
+                sys.exit(1)
+            with open(src, encoding='utf-8') as f:
+                parts.append(f.read().strip())
+        md_text = '\n\n'.join(parts)
+        title = cfg['title']
+        output = f'{arg}.html'
+        srclabel = ' + '.join(cfg['files'])
+    else:
+        fname = arg
+        src = f'../rules/{fname}'
+        if not os.path.exists(src):
+            print(f'Not found: {src}')
+            sys.exit(1)
+        with open(src, encoding='utf-8') as f:
+            md_text = f.read()
+        title_match = re.match(r'^#\s+(.+)$', md_text.split('\n', 1)[0])
+        title = title_match.group(1) if title_match else fname
+        output = f'{fname[:-3] if fname.endswith(".md") else fname}.html'
+        srclabel = src
 
     with open(output, 'w', encoding='utf-8') as f:
         f.write(convert(md_text, title))
 
-    print(f'{src} → {output}')
+    print(f'{srclabel} → {output}')
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')
