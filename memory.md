@@ -18,6 +18,9 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-01 9:55 AM CDT] A1 — STRIKE walkthrough fixed: Defensive Bonus triggers on a tie too, not just a win.** Drew: "in the strike description it should say win or tie as the defender not just on a win." Real miss — this file's own Attack Resolution section already states the rule plainly ("Tie → ... the defender's Defensive Bonus triggers ... unless the attacker's Effect cancels it") and I didn't apply it to my own worked example one section later. Fixed to "win *or tie* as the defender," with the reason spelled out since it's specific to this card: STRIKE's own Effect is None, so there's nothing to cancel the Defensive Bonus on a tie.
+  - Regenerated `printing/player-guide.html`/`.pdf`; verified the corrected sentence renders intact.
+
 **[2026-08-01 9:50 AM CDT] A1 — Worked example added to `rules/player-guide.md`'s Reading Your Cards, using Red's STRIKE.** Drew: "let's show an example card like reds STRIKE to show explain each part of the card."
   - Real card text pulled directly from `cards/red-body.md`, not reconstructed from memory. Field-by-field breakdown (Name, Color+Stat, Attack, Effect, Defensive Bonus, Range, Flavor), same ASCII-card-box presentation `rules/cards.md`'s own Card Example already uses for FLOW.
   - **Checked STRIKE's own claim before writing it, rather than assuming**: wanted to say its blank Effect is "the cost" of its d10, so checked all six live d10 cards first (STRIKE, SACRIFICE STRIKE, OVERCOMMIT, THUNDERBOLT STRIKE, LUNGE, SIGNATURE THRUST). STRIKE turns out to be the only one with a genuinely empty Effect — the others (THUNDERBOLT STRIKE, LUNGE) have no HP/self-debuff cost either but still do something conditional, and SIGNATURE THRUST is gated by a Special Rule. Wrote STRIKE's explanation to the accurate, narrower claim (the one with nothing else going on), not the broader "d10 always costs something" framing.
