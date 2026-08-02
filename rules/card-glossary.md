@@ -62,7 +62,7 @@ The next time an ally would take attack damage, you take it instead.
 A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
 
 **(3) Sealed**
-You cannot Use an Item, whether by Action or Bonus Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
+You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
 **(15) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.

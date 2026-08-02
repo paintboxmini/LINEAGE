@@ -47,7 +47,7 @@ Melee requires both of you in the Frontline. Everything else is Ranged range.
 
 Draw to your hand size the moment initiative is rolled, then again at the start of every one of your own turns. If your deck runs out, shuffle your discard into a fresh deck first.
 
-Each turn: **one Action, plus one Bonus Action.**
+Each turn: **one Action, plus one Item Action.**
 
 | Action | What it does |
 |--------|--------------|
@@ -60,7 +60,7 @@ Each turn: **one Action, plus one Bonus Action.**
 | Wait | See below |
 | Flee | Attempt to leave the fight — see Fleeing Combat |
 
-Your **Bonus Action** can only Use an Item. Using an Item is also legal as your regular Action — spend both that way and you use two items in one turn, at the cost of not attacking.
+Your **Item Action** does exactly what its name says and nothing else. Using an Item is also legal as your regular Action — spend both that way and you use two items in one turn, at the cost of not attacking.
 
 **Wait.** Give up your action on purpose, and in exchange, reinsert your turn token anywhere later in the initiative order — you're standing on the turn marker, so "later" is the only direction available. Land a slot or two out and you act again shortly; land far enough to lap the wheel and you sit out a stretch entirely. There's no cap on how far you can push it, since moving later is always a cost, never a reward. Its main use is coordinating with allies — sliding yourself right after a setup, or right before the ally you're setting up. You can't Wait two turns in a row; the turn after a Wait, you must take a real action.
 
@@ -179,7 +179,7 @@ Range: Melee
 | Exile | Removed from play for the rest of combat — doesn't go to discard, can't be retrieved. Returns to discard when combat ends. |
 | Expose [Color] | Blindly pick a card from the target's hand; if it's the named color, the stated effect applies. |
 | Locked | That card can't be played, until end of combat unless stated otherwise. |
-| Sealed | Can't Use an Item — action, bonus action, or passive — until end of your next turn unless stated otherwise. |
+| Sealed | Can't Use an Item — Action, Item Action, or passive — until end of your next turn unless stated otherwise. |
 | Obscure | Enemies can't look at or manipulate your hand or deck (doesn't stop status cards being added). |
 | Reveal Hand | At the table: state your color counts in hand ("2 Red, 1 Blue"). |
 | Rushdown | Move a target enemy from Backline to Frontline. You must be Frontline; can't target allies. |
@@ -299,7 +299,7 @@ Either length reshuffles your discard into your deck and refreshes your hand to 
 
 ## Equipment
 
-Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item action/bonus action in combat. Artifacts are resonant items aligned with a Seat's domain.
+Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item Action / Item Action in combat. Artifacts are resonant items aligned with a Seat's domain.
 
 Full tier system and the world's item catalog: `rules/equipment.md` and `rules/items.md`.
 

@@ -26,7 +26,7 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 
 ---
 
-## Combat — 1 Action + 1 Bonus Action Per Turn
+## Combat — 1 Action + 1 Item Action Per Turn
 
 | Action | Notes |
 |--------|-------|
@@ -38,7 +38,7 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Interact | Any noncombat action |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
 
-Your Bonus Action may only be used to Use an Item. Your Action may also be spent to Use an Item instead of one of the options above — a combatant who spends both this way uses 2 items in one turn, at the cost of not attacking (or otherwise acting) that turn.
+Your Item Action does exactly what its name says and nothing else. Your Action may also be spent to Use an Item instead of one of the options above — a combatant who spends both this way uses 2 items in one turn, at the cost of not attacking (or otherwise acting) that turn.
 
 Draw to hand size when **initiative is rolled**, then at the **start** of each of your turns.
 

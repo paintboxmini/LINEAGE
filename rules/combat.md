@@ -76,7 +76,7 @@ When initiative is rolled, every combatant draws to their maximum hand size — 
 
 At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.
 
-On your turn, you may take **one action**, plus **one Bonus Action:**
+On your turn, you may take **one Action**, plus **one Item Action:**
 
 | Action | Description |
 |--------|-------------|
@@ -89,7 +89,7 @@ On your turn, you may take **one action**, plus **one Bonus Action:**
 | Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
-**Bonus Action.** Your Bonus Action may only be used to Use an Item — it doesn't open up any of the other options above. Using an Item is also still legal as your regular Action, in place of the options above, so a combatant who spends both their Action and Bonus Action this way uses 2 items in a single turn, at the cost of not attacking (or taking any other action) that turn.
+**Item Action.** It does exactly what its name says and nothing else — it cannot be spent on any other option in the table above. Using an Item is also still legal as your regular Action, so a combatant who spends both this way uses 2 items in a single turn, at the cost of not attacking (or taking any other action) that turn.
 
 **Waiting.** To Wait is to give up your action on purpose. In exchange you reposition: pick any slot later in the order and reinsert yourself there directly, and you act normally when the marker reaches it. You are standing on the turn marker, so you can only move later — you cannot act sooner than the turn you are already in — which is the only direction Wait ever needs.
 
