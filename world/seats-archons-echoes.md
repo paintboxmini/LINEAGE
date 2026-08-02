@@ -6,8 +6,9 @@ Seats are universal fundamental laws. They exist on a higher plane and affect th
 
 The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, Storm, and others that may exist unnamed.
 
-**Seat States:**
+**Seat States** *(canonical table: `mythology/seats.md`. Summarised here; edit there.)*
 - **Filled** — Things work normally within that domain.
+- **Fading** — The bearer is thinning. The domain still holds but goes increasingly unmediated. Endpoint: Empty.
 - **Empty** — That part of reality begins to break down. Fields rot. Endings stop concluding. Memory fragments.
 - **Contested** — Two beings fighting for the same Seat warp reality around them until one wins or both are destroyed.
 
