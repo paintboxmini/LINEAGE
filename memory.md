@@ -18,6 +18,12 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-01 3:30 PM CDT] A1 — Scratch Files convention removed from `experimental/README.md`.** Drew: "it doesn't need the scratch files section in the readme." Straightforward, given I'd just admitted I never used it — a convention nobody follows is worse than no convention, because it makes the doc describe a workflow that isn't real.
+  - **Checked what depended on it before deleting.** One live reference: `agent-tools/red-team.md`'s "Visible Reasoning" checklist told reviewers to flag scaffolding *"that belong in a scratch file."* Reworded to *"that never got resolved into finished content"* — same check, no longer pointing at a convention that no longer exists.
+  - **Confirmed nothing unique was lost.** The section's one general principle — "content files contain only finalized output" — is already stated more forcefully in `CLAUDE.md`'s Do Not list: *"a content file explaining itself is reasoning that leaked out of process and into product."* The scratch-file mechanism was a suggested *means*; the rule it served survives in the stronger place.
+  - Zero dangling references remain. `experimental/README.md` is now Rules, Standard Card Loop, Existing Keywords, and the Stonecoil note.
+
+
 **[2026-08-01 3:20 PM CDT] A2 — Three files promoted out of `experimental/`; the folder is now only what it says it is.** Drew asked whether anything in there had value, and whether I ever actually use the space.
   - **Straight answer first: I don't, and haven't once this session.** Everything went directly to canon directories. The Canon Gate routes Authority-3 work to `experimental/` *or a chat proposal* to wait for sign-off — but Drew has been present and deciding in real time, so nothing ever needed parking. The waiting-room path doesn't trigger when there's no waiting.
   - **Also worth admitting: `experimental/README.md` documents a "Scratch Files" convention I have never followed** — `experimental/scratch-[task].md` for reasoning through stat-block math and balance tradeoffs before committing. I've been doing that reasoning in throwaway shell/Python instead, which is ephemeral and verifiable but bypasses a stated repo convention. Not proposing a change; just naming it plainly, since Drew asked precisely this.
