@@ -65,7 +65,7 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 RED — BODY — PROMISE
 Attack: Body + d8
 Effect: On a win, target is Staggered.
-Defensive Bonus: Gain Resist 1.
+Defensive Bonus: Gain Armour 1.
 Range: Melee
 *"The sky doesn't forget what you called down."*
 

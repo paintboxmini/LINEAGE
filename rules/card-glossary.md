@@ -52,6 +52,8 @@ Evade stacks. Each stack protects against one attack. Only one Evade triggers pe
 **(7) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
+**A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer an Injury, an Exhaust, or a curse permanently in the middle of a fight.
+
 **(4) Expose [Color]**
 Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
 
@@ -85,12 +87,12 @@ The next time an enemy successfully attacks you, take half damage rounded down. 
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
 
-**(2) Armour X** *(creature passive)*
+**(3) Armour X**
 Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.
 
 Armour applies **before** Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker's Effect resolves normally, it simply has no damage to work with.
 
-Armour is a creature trait, not a card keyword — it belongs on stat blocks. Players get Resist.
+Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
 **(0) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
@@ -156,6 +158,17 @@ On a long rest, all Injuries are destroyed.
 Goes directly into your hand when applied — not into the deck. It cannot be played and occupies a card slot; an Exhaust does not leave on its own. This is the difference from an Injury, which enters the deck and has to be drawn before it costs you anything: Exhaust costs you the slot immediately.
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
+
+---
+
+### A ROOTED HEART
+*Status — Curse*
+Cannot be played. At the end of your turn, discard it if it is in your hand.
+It costs you the draw and the hand slot for one turn, then cycles back through your deck on the next reshuffle — it does not clog your hand the way an Injury does, it simply keeps coming back.
+Removal: story dependent. Exiling it destroys it (see Exile).
+*"Something of the Weald is in you now. It is patient about it."*
+
+*Source: the Root Heart's GRAFT. See `cards/root-heart-weald.md`.*
 
 ---
 

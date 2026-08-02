@@ -20,9 +20,9 @@ Weapons and Armor both scale on the same three-tier system. Each tier is a **pow
 
 | Tier | Weapon (default spend) | Armor (default spend) | Approximate Value |
 |------|------------------------|------------------------|--------------------|
-| 1 | +1 attack damage | −1 damage received | ~200 gold |
-| 2 | +2 attack damage | −2 damage received | ~800 gold |
-| 3 | +3 attack damage | −3 damage received | ~2,000 gold |
+| 1 | +1 attack damage | Armour 1 | ~200 gold |
+| 2 | +2 attack damage | Armour 2 | ~800 gold |
+| 3 | +3 attack damage | Armour 3 | ~2,000 gold |
 
 The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.
 
@@ -37,7 +37,7 @@ The gold values are a reference point for pricing at market or as loot, not a ha
 **Worked examples, exactly as specified:**
 - *Tier 1 weapon:* inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)
 - *Tier 2 weapon:* +1 attack damage, and gain Deadly at the start of combat. (1 point flat, 1 point self-buff.)
-- *Tier 2 armor:* −1 damage received, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
+- *Tier 2 armor:* Armour 1, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
 
 This is a budget to design against, not a formula to solve — two tier-2 items should feel different from each other even though they cost the same.
 
@@ -61,9 +61,9 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 1:* Start combat with 1 Resist.
 - *Tier 1:* Inflict Staggered on the first enemy who successfully hits you each combat.
 - *Tier 1:* Start combat with Evade 1 and Protect 1. (Protect alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
-- *Tier 2:* −1 damage received; start combat with 1 stack of Thorns.
+- *Tier 2:* Armour 1; start combat with 1 stack of Thorns.
 - *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
-- *Tier 3:* −1 damage received; start combat with Resist; start combat with Evade. (Three-way split.)
+- *Tier 3:* Armour 1; start combat with Resist; start combat with Evade. (Three-way split.)
 - *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
