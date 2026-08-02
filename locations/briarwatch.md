@@ -14,6 +14,8 @@ The farmland doesn't stop at a tidy line — it was cut a little way into the We
 
 The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the center is dried up.
 
+Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer builds them. Nobody takes them down. See `bestiary/briarbundles.md`.
+
 Valhug Lake sits in the center of Briarwatch — deep and cold.
 
 A sinkhole opened last season. The first one in living memory. It won't be the last.
@@ -54,3 +56,5 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields
+- `bestiary/briarbundles.md` — the field guardians the farmers build every autumn
+- `bestiary/the-first-bundle.md` — the oldest one
