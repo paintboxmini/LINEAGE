@@ -1,5 +1,7 @@
 # Tales Untold — Quick Reference
 
+*Internal reference — GM and design use. **Not** the player-facing document; players receive `rules/player-guide.md` only. Keep this accurate anyway: it feeds new content, so an error here propagates.*
+
 ---
 
 ## Stats
@@ -36,6 +38,7 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Take Cover | Backline only; fiction must justify it. Gain Evade until you attack. |
 | Interact | Any noncombat action |
+| Wait | Take no action; reinsert yourself anywhere later in the order. Can't be used two turns in a row. See `rules/combat.md` |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
 
 Your Item Action does exactly what its name says and nothing else. Your Action may also be spent to Use an Item instead of one of the options above — a combatant who spends both this way uses 2 items in one turn, at the cost of not attacking (or otherwise acting) that turn.
@@ -47,9 +50,10 @@ Draw to hand size when **initiative is rolled**, then at the **start** of each o
 ## Attack Resolution
 
 1. Attacker plays 1 card, face down.
-2. Defender may choose 1 card to defend with, face down — blind, without seeing the attacker's card. The card must meet its own Range requirement for the current positions, same as if the defender were attacking (see Range Matrix below) — no legal card in hand means no legal defense.
-3. No defense → attacker wins automatically.
-4. Both reveal simultaneously — only now do they become public and move to discard — and resolve RPS:
+2. Blind (attacker's stack), then Evade (defender's stack) resolve — both before the defender picks a card.
+3. Defender may choose 1 card to defend with, face down — blind, without seeing the attacker's card. The card must meet its own Range requirement for the current positions, same as if the defender were attacking (see Range Matrix below) — no legal card in hand means no legal defense.
+4. No defense → attacker wins automatically.
+5. Both reveal simultaneously — only now do they become public and move to discard — and resolve RPS:
 
 ```
 Blue (Mind)  beats  Red   (Body)
@@ -69,9 +73,11 @@ Green (Soul) beats  Blue  (Mind)
 
 | Die | Philosophy |
 |-----|------------|
-| d6 | Raw power |
-| d4 | Utility |
-| d2 | Precision & control |
+| d8 | Raw power |
+| d6 | Utility |
+| d4 | Precision & control |
+
+*(d10 exists on a small number of cards as a deliberate outlier above this scale — never a fourth named tier.)*
 
 | Range Term | Meaning |
 |------------|---------|
@@ -162,7 +168,7 @@ While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an att
 
 **Weapon / Armor / Artifact**  
 Only equipped items have permanent passive effects — everything else about how a character dresses or arms themselves is free, unrestricted fiction.  
-Carried items can be used via the Interact action.  
+Carried items are used via the Use an Item action, or your Item Action.  
 Artifacts are resonant jewelry aligned with a Seat's domain.
 
 See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, and `rules/items.md` for the full catalog of items already in the world.
