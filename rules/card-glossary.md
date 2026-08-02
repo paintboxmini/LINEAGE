@@ -12,7 +12,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 *The number before each keyword is how many cards in `cards/` grant it — a snapshot as of 2026-07-28, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted for real across all 240 card blocks in `cards/*.md` (down from 241 at the 2026-07-23 snapshot), not estimated forward from the old numbers.*
 
-**At the table — status-effect tokens.** Blind, Weak, Deadly, Vulnerable, Resist, Staggered, and Rooted don't need separate physical tokens. The card that applied the effect *is* the token — set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`), just applied to these seven.
+**At the table — status-effect tokens.** Blind, Weak, Deadly, Vulnerable, Resist, Staggered, and Rooted don't need separate physical tokens. The card that applied the effect *is* the token — set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`), applied to these seven. Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. Using one of these effects has a real cost beyond the RPS risk of playing it.
 
 **(5) Counter Attack**
 Deal this card's Attack damage back to the attacker.

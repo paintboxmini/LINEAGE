@@ -253,7 +253,7 @@ em {
 <p>At the start of combat, everyone rolls <strong>1d6 + Soul</strong>. Highest goes first.</p>
 <p><strong>Ties</strong> — higher Soul goes first; still tied between two players, they choose; still tied between a player and an enemy, the player goes first.</p>
 <p>Tokens sit clockwise around a wheel in initiative order, whoever went first at 12 o&#x27;clock. A turn marker advances to the next token each turn. The wheel always has exactly as many slots as there are combatants — when someone joins or leaves, the wheel gains or closes a slot, and everyone between shifts over one.</p>
-<p><strong>Initiative Shift X</strong> (a card effect) moves a token X slots — positive = counterclockwise (sooner), negative = clockwise (later). A positive shift can never make its target act later than they already would; a negative shift can never make them act sooner. At exactly 3 combatants, shift magnitude is reduced by 1 toward zero before applying — the wheel is most sensitive there. Large enough shifts turn into a skipped turn or an immediate bonus turn rather than breaking those rules. Full mechanics and worked cases: <code>rules/card-glossary.md</code> (Initiative Shift X) and <code>rules/initiative-shift-examples.md</code>.</p>
+<p><strong>Initiative Shift X</strong> (a card effect) moves a token X slots around the wheel — positive shifts it sooner, negative shifts it later. Full mechanics: <code>rules/card-glossary.md</code> (Initiative Shift X) and <code>rules/initiative-shift-examples.md</code>.</p>
 <hr>
 <h2>Attack Resolution</h2>
 <ol><li><strong>Attacker plays a card, face down.</strong> Committed, not yet public.</li><li><strong>Blind, then Evade check.</strong> Blind checks the attacker&#x27;s own stack; Evade checks the defender&#x27;s. Both resolve here, before the defender picks anything.</li><li><strong>Defender chooses a card to defend with, face down — blind.</strong> No peeking at the attacker&#x27;s card. The chosen card must satisfy its own Range for the current positions, same as if the defender were attacking. No legal card in hand means no legal defense.</li><li><strong>No defense → attacker wins automatically.</strong></li><li><strong>Both reveal simultaneously.</strong> Only now do the cards become public and move to discard. Resolve Rock-Paper-Scissors:</li></ol>
@@ -417,8 +417,7 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 <p>Full canonical wording for all of these: <code>rules/card-glossary.md</code>.</p>
 <hr>
 <h2>Status Cards</h2>
-<p><strong>Injury</strong> — enters your deck as a consequence. Can&#x27;t be played; sits in your hand occupying a slot until removed. In combat, spend your action to destroy one from your hand. Once per short rest, destroy one from hand, discard, or deck. A long rest destroys all of them.</p>
-<p><strong>Exhaust</strong> — goes straight into your hand (not your deck) when applied — the slot cost is immediate, not something you have to draw into. Spend your action to destroy all Exhaust in your hand at once. Any rest, short or long, clears all of it.</p>
+<p>Some consequences become cards. A status card can&#x27;t be played, and it doesn&#x27;t leave your hand or deck on its own — it has to be managed.</p>
 <hr>
 <h2>Collapse &amp; Death</h2>
 <p>Reduced to 0 HP → <strong>Collapse.</strong> You cannot act, cannot defend, and are automatically hit by anything targeting you. A single attack can&#x27;t push a standing combatant below 0, but further damage while already Collapsed can. Reach <strong>negative half your Max HP (rounded up)</strong> → death.</p>

@@ -74,7 +74,7 @@ At the start of combat, everyone rolls **1d6 + Soul**. Highest goes first.
 
 Tokens sit clockwise around a wheel in initiative order, whoever went first at 12 o'clock. A turn marker advances to the next token each turn. The wheel always has exactly as many slots as there are combatants — when someone joins or leaves, the wheel gains or closes a slot, and everyone between shifts over one.
 
-**Initiative Shift X** (a card effect) moves a token X slots — positive = counterclockwise (sooner), negative = clockwise (later). A positive shift can never make its target act later than they already would; a negative shift can never make them act sooner. At exactly 3 combatants, shift magnitude is reduced by 1 toward zero before applying — the wheel is most sensitive there. Large enough shifts turn into a skipped turn or an immediate bonus turn rather than breaking those rules. Full mechanics and worked cases: `rules/card-glossary.md` (Initiative Shift X) and `rules/initiative-shift-examples.md`.
+**Initiative Shift X** (a card effect) moves a token X slots around the wheel — positive shifts it sooner, negative shifts it later. Full mechanics: `rules/card-glossary.md` (Initiative Shift X) and `rules/initiative-shift-examples.md`.
 
 ---
 
@@ -173,9 +173,7 @@ Full canonical wording for all of these: `rules/card-glossary.md`.
 
 ## Status Cards
 
-**Injury** — enters your deck as a consequence. Can't be played; sits in your hand occupying a slot until removed. In combat, spend your action to destroy one from your hand. Once per short rest, destroy one from hand, discard, or deck. A long rest destroys all of them.
-
-**Exhaust** — goes straight into your hand (not your deck) when applied — the slot cost is immediate, not something you have to draw into. Spend your action to destroy all Exhaust in your hand at once. Any rest, short or long, clears all of it.
+Some consequences become cards. A status card can't be played, and it doesn't leave your hand or deck on its own — it has to be managed.
 
 ---
 
