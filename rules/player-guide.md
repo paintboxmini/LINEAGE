@@ -122,13 +122,33 @@ The die tells you the card's philosophy:
 | d6 | Utility — moderate damage, strong effects |
 | d4 | Precision — low damage, high control and information |
 
-(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, always paired with a real cost.)
+(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)
 
 Some cards carry a **Special Rule** line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.
 
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
 - **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
+
+### An Example — STRIKE
+
+```
+STRIKE
+RED — BODY
+Attack: Body + d10
+Effect: None
+Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Range: Melee
+"Sometimes the direct path is the wisest path."
+```
+
+- **Name** — STRIKE.
+- **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
+- **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
+- **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
+- **Defensive Bonus: Deal 3 damage to attacker, unpreventable** — win as the defender and you deal a flat 3 back. "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Range: Melee** — you and your target must both be in the Frontline to play this card.
+- **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
 
 ---
 
