@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A1 — `agent-tools/verify.py`: the acceptance tests Release mode has always assumed existed.** `CLAUDE.md`'s Release definition has said "acceptance tests" since it was written, and there were none — every check had been hand-retyped as a throwaway script, repeatedly. Deck validation alone got rewritten half a dozen times in one night, each slightly differently, and one variant was wrong in a way that hid a real problem. Six checks: card format (Range vocabulary, tags, required lines), bestiary decks, stat blocks (HP formula unless bespoke, CTR = total stats), cross-references, simulator (CARD_TAGS, ROSTER, engine signature parity, and a full sim-vs-canon card reconciliation), and print-artifact staleness. Exits nonzero, so it works as a gate. It prints every failure rather than a sample — a verifier that truncates reads as green.
+
 *Previous batch cleared 2026-08-02 at Sync — Drew reviewed it ("nothing flagged on my end") and ratified the three new tags.*
 
 **[2026-08-02] A2 — Briarbundles: five-creature Briarwatch family, 15 cards.** Haywight 5, Tatterman 6, Briarbound 7, Mossking 10, First Bundle 17. `bestiary/briarbundles.md` + `bestiary/the-first-bundle.md`, BRIARWATCH-tagged. Flagged A2 because the family adds a new regional institution — farmers building guardians every autumn — and because the folklore carries an open world-level thread by design. Full reasoning in Standing Reasoning.
@@ -78,7 +80,7 @@ Labor level, far end of main corridor. Nearly-exhausted diamond vein. Two-foot c
 Mine beneath Eclipsera. Five layers: bazaar → labor level → threshold → deep (Aurora). The Boar built it knowingly above Aurora's binding site. Labor level runs on proximity compliance — workers feel Aurora's warmth as patience. Threshold: sticky echoes, slimes, cave reaches. Alternate exit threads through the threshold to outside the city walls — the Cartographer's map shows this route. Aurora at the bottom: not an encounter, dissolution through love. Don't develop the deep without Drew. Quest file written: two pressure tracks (Demon Court awareness / Seat influence), modular encounter nodes, hidden behavioral rules for the Seat track.
 
 **Wallows Slime** (`bestiary/wallows-slime.md`)
-Threshold creature. Reaches, envelops, doesn't attack. Warm. Forcing extraction raises Seat Influence by 1. Gentle extraction does not. Stat block pending.
+*Closed 2026-08-02 — built at CTR 7 with cards.* Reaches, envelops, doesn't attack. Warm. Forcing extraction raises Seat Influence by 1; gentle extraction does not. The extraction rule stays a Seat-track question owned by `quests/the-wallows-descent.md`, not a combat one.
 
 **Warden Pazuzu / The Demon Court** (`factions/demon-court.md`)
 Pazuzu runs the Wallows labor operation for the Boar. Built his guard hierarchy as a mirror of the Regency council — demon masks instead of animal titles. Tiers: Pazuzu (apex), Overseers (armored, unarmed), chain whip guards, Initiates (yellow, entry checkpoint). Direwolves for pursuit — trained to operate in the upper threshold. Pazuzu considers himself the Boar's eighth councillor. The Regency does not acknowledge the Demon Court. Pazuzu has never gone to the deep and has not examined why.
@@ -104,9 +106,8 @@ Last survivor of the Thessians — nomadic healers who transferred and witnessed
 All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef's hat at all times, short-tempered, food is sacred.
 - Non-combat entries complete: unity-jelly, phantom-tail-slug, high-altitude-bat, emerald-frog, bicolor-spider, sapphire-ant
 - Hazard entries complete: future-lock-wasp (deck contamination, 20min removal after drawn, Body/Soul save), death-ball-sponge (Rooted floor trap, DC 13 spot)
-- Full stat blocks complete: gene-thief-tardigrade, bone-collector, flapjack-octopus, elder-tower-creature
+- Full stat blocks complete: gene-thief-tardigrade, bone-collector, flapjack-octopus. *(Elder Tower Creature deliberately has none — its own file opens "Not a combat encounter. An environmental presence." It was listed here as complete, which was simply wrong; corrected 2026-08-02.)*
 - Environmental entries complete: elder-tower-creature (harvest tubes, patience puzzle)
-- ~~**Pending:** Flapjack Octopus card set — drafted in `experimental/cards-flapjack-octopus.md`, needs Drew's sign-off on placement~~ — **closed, found during the 2026-08-01 audit.** `cards/flapjack-octopus.md` exists in real canon; `experimental/cards-flapjack-octopus.md` no longer does. Already placed, just never marked done here.
 - **Pending:** Future-Lock status card needs glossary entry before canon — new keyword, requires approval. *(Confirmed still open, 2026-08-01 — zero mentions of Future-Lock anywhere in `rules/card-glossary.md`.)*
 - Bone Collector wired to Gilded Tusk (Senshi commission) and Turnroot Weald (Web-Forest POI)
 - Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
@@ -122,6 +123,12 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Release pass — what the first real full verification actually found.** Six checks now green; the ledger is empty; 167 sim cards reconcile against canon.
+  - **Two cards printed a Range that does not exist.** WATCHES FEET (`cards/aege.md`) and LIMB-SNAPPER (`cards/rootstalker-weald.md`) both read `Range: Melee, hits Backline`. `rules/combat.md` defines Range as a closed set — Melee / Ranged / Both — with an explicit attacker×target matrix in which Melee against a Backline target is ✗. So as printed, both cards' Effects were unreachable: each one only triggers *against a Backline target*, which their own Range forbade. Corrected to **Both**, the only value in the vocabulary that makes their printed Effect fire. Flagging the judgment: Both is very slightly wider than the longhand appears to intend (it also legalises a Backline attacker), and reverting is one edit if Drew reads it differently.
+  - The sim had silently modelled WATCHES FEET as plain `melee`, dropping the "hits Backline" clause entirely — so canon, the card, and the engine disagreed three ways. Now reconciled. Measured rather than assumed: Aege's win rate against Frost moved 86.7% → 85.7% over 4,000 duels. Frost/Steele untouched.
+  - **memory.md audit found four false claims about live canon**, all of the same species — statements that were true when written and never revisited. Two phantom files (`locations/briarwoods.md`, `items/briarwoods-items.md`) that have never existed under those names; two stale HP figures predating the HP formula change (Briar Scratcher 9→11, Delve Roller 12→13, both now formula-correct); a Delve Roller passive still described as "−1 all incoming damage" rather than Armour 1; and a claim that the Elder Tower Creature's stat block was complete, when its own file opens *"Not a combat encounter. An environmental presence."* — it should never have one.
+  - **A near-miss worth recording.** Force-rebuilding all six PDFs reported every one as changed, which I nearly logged as six stale artifacts. Chrome's PDF output is not byte-deterministic — two rebuilds from identical HTML produce different hashes at identical byte length. Nothing was stale. It also vindicates `generate-all.sh`'s design of diffing the *HTML* and rebuilding PDFs only downstream of a real change: PDFs cannot be compared by hash at all.
 
 **[2026-08-02] Armour and Thorns stack additively. Drew: "armour and thorns stack, update the glossary."** *Was:* undefined — the four charge-based keywords (Resist, Vulnerable, Deadly, Weak) all state their stacking behaviour outright, and these two said nothing, which is what forced three Briarbundle cards to be designed around the question earlier the same night.
   - **They could not stack the way the others do, and the entries had to say so.** Resist and Vulnerable stack as *charges* — each spent on one attack. Armour and Thorns are explicitly never consumed and never expire, so charge-stacking is incoherent for them. They stack **additively into a single value**: Armour 2 and Armour 1 held together are Armour 3 against every attack for the rest of the fight. Both entries now name the contrast explicitly, because a reader who pattern-matches to Resist's wording gets it wrong.
@@ -220,20 +227,18 @@ Current keyword list in `experimental/README.md`.
 **Locations**
 - `locations/vultures-nest.md` — Session 0/1 hub. Aege, Bartho, Kino, Corvel, Moving Crate. Tideward Compact: Bartho (dockmaster), Jonas (ledger-keeper + Regency informant), Harlow (pirate faction). Condoned smuggling: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance — anything with a council cut and no Regency visibility. Hard lines: too destructive, too visible, or no cut = quiet final response. Masaharu investigating FourthEye supply chain.
 - `locations/roadhouse.md` — Government inn between Vulture's Nest and Briarwatch. Two Regency guards on rotation. Barracks: weapon rack, chest (d6+2 silver, Barbed Wrap, posting order). Posting order → Voss thread.
-- `locations/briarwoods.md` — Travel region north of Vulture's Nest. Surrounds Roadhouse and Briarwatch. Day 1 and Day 2 routing. Jackrabbits and Scratchers.
 - `locations/briarwatch.md` — Village location, leads into Hollow Below Briarwatch.
 - `locations/the-coil.md` — Labyrinth island in the deep lake east of Vulture's Nest. Surfaces on condition only the Night Ferryman knows. Hidden wall-following rule; breaking it raises pressure track and alerts minotaurs. Center: open/TBD.
 
 **Creatures**
-- `bestiary/briar-scratcher.md` — Mind 1/Body 1/Soul 2, HP 9. Road encounter teaching Wounds as deck pressure. Cards: `cards/briar-scratcher.md`.
-- `bestiary/delve-roller.md` — Mind 1/Body 2/Soul 1, HP 12. Rolled Shell passive (−1 all incoming damage). Immune to Blind. Cards: `cards/delve-roller-hollow.md`.
+- `bestiary/briar-scratcher.md` — Mind 1/Body 1/Soul 2, HP 11. Road encounter teaching Wounds as deck pressure. Cards: `cards/briar-scratcher.md`.
+- `bestiary/delve-roller.md` — Mind 1/Body 2/Soul 1, HP 13. Rolled Shell passive (Armour 1). Immune to Blind. Cards: `cards/delve-roller-hollow.md`.
 
 **Quests / Encounters**
 - `quests/shifting-burrow.md` and `quests/settling-stones.md` — the two mirrored surface entrances into the Hollow (Well Property sinkhole / Watchtower Ruins well shaft), same tunnel network, a party can enter one and exit the other. Both run Borrower Sentries, same cards (BURROW RESHUFFLE, ALERT CALL, DIRT CLOD); each has its own terrain rule (Shifting Burrow: soft ground, fail = Exhaust; Settling Stones: loose rubble, fail = raises Pressure if already 2+).
 - `quests/hollow-below-briarwatch.md` — References both as the Surface Layer's paired entrances. Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to the Watchtower Ruins specifically — general field encounter now.
 
 **Items**
-- `items/briarwoods-items.md` — Barbed Wrap, Carrion Feather, Split Wedge.
 - `items/vultures-nest-items.md` — Dockhook Line, Low Lantern, Salted Strip, Dock Broth, Chewfat Ration.
 - `items/consumables.md` — Terrormite Capsule, Echo Shell, Blood Phial, Imprint Sigil, Universal Pin, Phase Draught.
 

@@ -2237,7 +2237,7 @@ def build_cards():
         effect=_hold_fast_effect, defense=_hold_fast_defense)
     add("IRON ANCHOR", 'B', 'mind', 'both', 6,
         effect=_iron_anchor_effect, defense=_iron_anchor_defense)
-    add("WATCHES FEET", 'G', 'soul', 'melee', 4,
+    add("WATCHES FEET", 'G', 'soul', 'both', 4,
         effect=_watches_feet_effect, defense=_watches_feet_defense)
     add("KNOWN GROUND", 'G', 'soul', 'both', 6,
         effect=_known_ground_effect, defense=_known_ground_defense)
