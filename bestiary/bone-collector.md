@@ -28,12 +28,14 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 ## The Bone Collector
 
+**Cards:** `cards/bone-collector.md`
+
 **Mind 4 / Body 4 / Soul 2 — HP 17**
 **Creature Threat Rating:** 10
 
-**Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, PROFILE, STILLNESS, UNNAME *(blue)* · GORE, BURN BRIGHT, SPARK OF VIOLENCE, RETALIATE *(red)* · BRISTLE, CONSUME *(green)*
+**Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, STILLNESS, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*
 
-**Passive — Stitched Armor:** The Collector takes −2 damage from all attacks.
+**Passive — Stitched Armor:** Armour 2.
 
 **Appearance:** A massive caterpillar wearing a patchwork case of large insect husks, leather bracers, bone fragments, weapon hilts, and jewelry — all precisely woven together.
 

@@ -39,14 +39,14 @@ Stats read Mind/Body/Soul. If the brief doesn't state a target Creature Threat R
 
 *(sources: `CLAUDE.md` card format; `cards/green-soul.md`; `cards/tollbird.md`)*
 
-Core card (universal — no tag; die philosophy: d6 power / d4 utility / d2 precision):
+Core card (universal — no tag; die philosophy: d8 power / d6 utility / d4 precision):
 
 ```
 **SUPPORT**
 GREEN — SOUL
-Attack: Soul + d6
-Effect: The next ally to attack deals +3 damage
-Defensive Bonus: A target ally draws 1 card
+Attack: Soul + d4
+Effect: Target ally gains Deadly
+Defensive Bonus: Target ally draws 2
 Range: Ranged
 *"Strength flows to those who share it."*
 ```

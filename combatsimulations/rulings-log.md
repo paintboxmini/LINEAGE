@@ -26,12 +26,12 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   either; the ban is on the next reveal, attack or block. Consistent with the
   reveal-timing rules; worth a one-line confirmation on the card if you want it
   airtight.
-- **twin-strike-double-roll** — `(Soul + d2) x2` is two independent (Soul + d2)
+- **twin-strike-double-roll** — `(Soul + d4) x2` is two independent (Soul + d4)
   rolls summed, not one roll doubled. Drew ruling; matches the sim.
 - **blood-tithe-dead-heal** — In a duel the "heal an ally for 4" half is wasted
   (You Are Not Your Own Ally); Blood Tithe is pure self-harm in 1v1. Working as
   intended (Drew) — a party-play card, and PvP is a design instrument.
-- **twin-strike-double-roll** — Two independent (Soul + d2) rolls summed. Drew.
+- **twin-strike-double-roll** — Two independent (Soul + d4) rolls summed. Drew.
 - **balance-double / balance-knockdown** — Balance's double-hit and its knockdown
   (foe loses their next action to stand) are the intended implementation. Drew.
 - **stat-change-derived** — A changed stat drives its own derived value in real
