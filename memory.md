@@ -18,6 +18,11 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-01 9:42 AM CDT] A1 — Status-effect token convention generalized to buffs, not just debuffs.** Drew: "works the same way for buffs, if you give an ally deadly or resist or whatever, then the card stays out until the status leaves."
+  - The note previously named a specific 7-keyword list (Blind, Weak, Deadly, Vulnerable, Resist, Staggered, Rooted) — already an odd mix, since Deadly and Resist are ordinarily Positive Status Effects, only in that list because the convention happened to apply to them too. Drew's "or whatever" confirmed the real shape: this isn't about a specific keyword list at all, it's a general table technique that applies to any temporary status, buff or debuff, self/ally/foe alike. Rewrote `rules/card-glossary.md`'s note to say that directly — references the two established categories (Debuff, Positive Status Effect) instead of re-enumerating individual keywords, which was always going to be incomplete the moment a card outside the original seven came up.
+  - The resource-cost correction from last pass carries over unchanged and now reads correctly for both directions: "a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally."
+  - Still deliberately not in `rules/player-guide.md` — same exclusion Drew gave the first time this topic came up.
+
 **[2026-08-01 9:35 AM CDT] A1 — Two sections of `rules/player-guide.md` pulled back to glossary-level generality; a real correction to last pass's token-convention note.** Drew: "let's include the glossary. only describe what status cards are generally don't give examples or over explain them. same idea for initiative shift."
   - **Status Cards** — replaced the Injury/Exhaust breakdown (removal mechanics, hand-vs-deck distinction) with one general line matching `card-glossary.md`'s own opening framing for the concept. Nothing actually lost — the rest-based removal facts already live in the guide's own Resting table.
   - **Initiative Shift X** — cut to the direct order-change fact only (positive sooner, negative later); dropped the "can never act later/sooner" reasoning, the 3-combatant reduction rule, and the skip/bonus-turn mechanism entirely, per Drew's explicit list of what to leave out. Kept a bare pointer to the full mechanics files for anyone who wants the depth.
