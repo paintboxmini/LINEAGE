@@ -1429,6 +1429,50 @@ def _steadfast_effect(engine, me, foe):
 def _steadfast_defense(engine, me, foe):
     me.resist += 1
 
+# --- Oracle 12/6/3 pass, 2026-08-03 -----------------------------------------
+# Drew fixed the starter pool's range composition at 12/6/3 per colour along
+# each colour's identity (Blue ranged / Red melee / Green both). Two slices
+# could not be filled from core: Blue melee had 3 cards in the entire colour
+# and needed 6, and Green Both ran out of candidates that clear the pool's own
+# eligibility bar. These seven exist to fill those slices at starter scale.
+#
+# The four Green ones are deliberately the coverage that the Green melee cut
+# displaced — STEADFAST's Resist, SHADE AWAY's Evade, BRISTLE's Thorns and
+# URGENCY's Initiative — re-homed from Melee into Both, which is where Green's
+# identity now says that coverage belongs. Not filler: the same keywords at
+# the range the colour is supposed to live at.
+def _hesitate_effect(engine, me, foe):
+    engine.initiative_shift(foe, -1)
+_hesitate_defense = _hesitate_effect
+
+def _tell_effect(engine, me, foe):
+    apply_weak(foe)
+_tell_defense = _tell_effect
+
+def _second_guess_effect(engine, me, foe):
+    apply_staggered(foe)
+_second_guess_defense = _second_guess_effect
+
+def _settle_effect(engine, me, foe):
+    me.resist += 1
+_settle_defense = _settle_effect
+
+def _give_way_effect(engine, me, foe):
+    me.evade += 1
+_give_way_defense = _give_way_effect
+
+def _bramble_effect(engine, me, foe):
+    me.thorns += 1
+_bramble_defense = _bramble_effect
+
+# QUICKEN's printed Defensive Bonus shifts an ALLY; in a Duel there is no ally,
+# so both halves resolve on self. Same simplification the engine already makes
+# for other ally-targeting cards in 1v1 — see the team engine for the real
+# multi-target path.
+def _quicken_effect(engine, me, foe):
+    engine.initiative_shift(me, 1)
+_quicken_defense = _quicken_effect
+
 # LEVEL THE FIELD (Green) — the lighter, team-wide counterpart: strips
 # exactly one Positive Status Effect (same fixed priority as WAITING GAME/
 # DRAIN) from each enemy, respecting Ward normally (`warded()`, same
@@ -2368,6 +2412,21 @@ def build_cards():
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
     add("SHADE AWAY", 'G', 'soul', 'melee', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
+    # Oracle 12/6/3 pass, 2026-08-03 — see the block above _hesitate_effect.
+    add("HESITATE", 'B', 'mind', 'melee', 4,
+        effect=_hesitate_effect, defense=_hesitate_defense)
+    add("TELL", 'B', 'mind', 'melee', 6,
+        effect=_tell_effect, defense=_tell_defense)
+    add("SECOND GUESS", 'B', 'mind', 'melee', 4,
+        effect=_second_guess_effect, defense=_second_guess_defense)
+    add("SETTLE", 'G', 'soul', 'both', 4,
+        effect=_settle_effect, defense=_settle_defense)
+    add("GIVE WAY", 'G', 'soul', 'both', 4,
+        effect=_give_way_effect, defense=_give_way_defense)
+    add("BRAMBLE", 'G', 'soul', 'both', 4,
+        effect=_bramble_effect, defense=_bramble_defense)
+    add("QUICKEN", 'G', 'soul', 'both', 6,
+        effect=_quicken_effect, defense=_quicken_defense)
     add("DEAD RECKONING", 'G', 'soul', 'ranged', 4,
         effect=_dead_reckoning_effect, defense=_dead_reckoning_defense)
     add("RETALIATE", 'R', 'body', 'melee', 8,   # d6 -> d8, 2026-07-29: below its own
@@ -2627,22 +2686,27 @@ PATIENT_HOST_STATS = dict(body=6, mind=8, soul=10, hp=66)   # formula baseline w
 # of grandfathered exception as Frost/Steele's own 10-card decks) —
 # Combatant.decklist has no length constraint, confirmed directly.
 ORACLE_STATS = dict(mind=3, body=3, soul=3)
+# Fixed composition, 2026-08-03 (Drew): 21 per colour, split 12/6/3 along each
+# colour's range identity — Red melee, Blue ranged, Green both. The counts are
+# the specification; this list is checked against them programmatically.
 ORACLE_DECK = [
-    # Red (20)
-    "ATTRITION", "BLINDSIDE", "BLOOD IN THE GAP", "CHARGE", "ENDURE",
-    "EQUAL FOOTING", "FOOTWORK", "GAMBLER'S RUIN", "GORE", "GUARD",
-    "OPEN GUARD", "PAIN IS FUEL", "PULL", "PUSH", "REELING", "RETALIATE",
-    "SLIP THE BLADE", "TRAMPLE", "UNBROKEN", "WEATHERED",
-    # Blue (20)
-    "ANTICIPATE", "AXIOM", "CALCULATE", "CERTAINTY", "DEAD END", "DEFLECT",
-    "FOCUS", "FORESEEN", "INTERRUPT", "LAST RESORT", "MARKED",
-    "SIDESTEP", "PROFILE", "REALIGNMENT", "REBUTTAL", "REFRACT",
-    "RETORT", "SHARPEN", "STUDY", "VEIL",
-    # Green (20)
-    "ADAPT", "BALANCE", "BIND", "BRISTLE", "COMMUNION", "DEAD RECKONING",
-    "SWAY", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
-    "RESONATE", "SHADE AWAY", "DUST", "STEADFAST", "SUPPORT",
-    "TWIN STRIKE", "UNTOUCHED", "URGENCY", "YOU'RE NEXT",
+    # Red (21) — melee 12 / both 6 / ranged 3
+    "ATTRITION", "BLINDSIDE", "CHARGE", "ENDURE", "GORE", "GUARD",
+    "OPEN GUARD", "PAIN IS FUEL", "PUSH", "REELING", "UNBROKEN", "WEATHERED",
+    "CLIFF SONG", "FOOTWORK", "GROUNDING STANCE", "PULL", "RECOVER",
+    "SLIP THE BLADE",
+    "BLOOD IN THE GAP", "EMERGENCY REPAIRS", "STARING CONTEST",
+    # Blue (21) — ranged 12 / melee 6 / both 3
+    "AXIOM", "CALCULATE", "DEAD END", "FOCUS", "FORESEEN", "LAST RESORT",
+    "MARKED", "PROFILE", "REFRACT", "RETORT", "STUDY", "VEIL",
+    "ANTICIPATE", "DEFLECT", "PREDICT", "HESITATE", "TELL", "SECOND GUESS",
+    "REALIGNMENT", "SHARPEN", "SIDESTEP",
+    # Green (21) — both 12 / ranged 6 / melee 3
+    "ACCEPTANCE", "BRAMBLE", "GIVE WAY", "INSTINCT", "LEVEL THE FIELD",
+    "MIRROR STEP", "QUICKEN", "RENEWAL", "SETTLE", "SWAY", "UNTOUCHED",
+    "YOU'RE NEXT",
+    "BALANCE", "COMMUNION", "DEAD RECKONING", "MOCKERY", "RESONATE", "SUPPORT",
+    "BIND", "DUST", "OPENING",
 ]
 
 # registry so run.py can pit any two decks against each other

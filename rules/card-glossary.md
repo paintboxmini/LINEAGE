@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-02, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 307 card blocks in `cards/*.md` — 304 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-02, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 314 card blocks in `cards/*.md` — 311 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -35,7 +35,7 @@ This attack's base damage (stat + die, including any Deadly/Weak already rolled 
 **(17) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
-**(16) Weak**
+**(17) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(11) Anchored**
@@ -44,7 +44,7 @@ You gain a specific benefit that persists as long as you do not change positions
 **(18) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
-**(44) Evade**
+**(45) Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -66,7 +66,7 @@ A card afflicted with Locked cannot be played. Lasts until the end of combat unl
 **(5) Sealed**
 You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
-**(19) Initiative Shift X**
+**(21) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
@@ -82,7 +82,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(44) Resist**
+**(45) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -111,10 +111,10 @@ You may change positions without spending your action — a free move in additio
 **(29) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
-**(14) Staggered**
+**(15) Staggered**
 The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
-**(20) Thorns X**
+**(21) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **Thorns stacks additively into a single value**, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.

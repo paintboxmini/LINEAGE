@@ -392,3 +392,33 @@ Effect: Defender gains Rooted.
 Defensive Bonus: Attacker gains Rooted.
 Range: Ranged
 *"Some paths were never actually open."*
+
+---
+
+**HESITATE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Apply Initiative Shift -1 to the defender.
+Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Range: Melee
+*"You watched them decide. That took a moment they needed."*
+
+---
+
+**TELL**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Weak.
+Defensive Bonus: Attacker gains Weak.
+Range: Melee
+*"Everyone has one. Most people never learn theirs."*
+
+---
+
+**SECOND GUESS**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Defender gains Staggered.
+Defensive Bonus: Attacker gains Staggered.
+Range: Melee
+*"Close enough to ask them the question they can't answer."*

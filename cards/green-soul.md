@@ -410,3 +410,43 @@ Effect: Gain Ward.
 Defensive Bonus: Gain Ward.
 Range: Both
 *"The body knows before the mind agrees."*
+
+---
+
+**SETTLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Nothing to brace against. Just lower."*
+
+---
+
+**GIVE WAY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Evade.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"Meet it and you break. Move and it passes."*
+
+---
+
+**BRAMBLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Both
+*"Everything that reaches through leaves some of itself."*
+
+---
+
+**QUICKEN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Apply Initiative Shift +1 to yourself.
+Defensive Bonus: Apply Initiative Shift +1 to an ally.
+Range: Both
+*"Sooner is its own kind of strength."*
