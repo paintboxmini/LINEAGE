@@ -61,3 +61,5 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 - `quests/the-abandoned-homestead.md` — the claim that didn't hold, on the road in
 - `bestiary/briarbundles.md` — the field guardians the farmers build every autumn
 - `bestiary/the-first-bundle.md` — the oldest one
+- `quests/the-larder-fence.md` — the Tollbirds' stretch of the giant fence, out past the last field
+- `quests/the-man-who-buys-wounds.md` — Weck, on the road in

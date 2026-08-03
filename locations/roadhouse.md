@@ -98,3 +98,4 @@ The fork is where the Carrion Guide's route diverges. Standard path continues we
 - `locations/briarwatch.md` — next stop
 - `bestiary/briar-scratcher.md` — encountered on the longer route between here and the fork
 - `quests/washed-ashore.md` — the alternate opening that also passes through here
+- `quests/the-man-who-buys-wounds.md` — Weck, working this same road
