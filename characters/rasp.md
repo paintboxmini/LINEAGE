@@ -42,7 +42,7 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 *Blue — Mind*
 - STILLNESS — Defender discards 1 at random; Defensive: Attacker discards 1 at random
 - TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
-- PHASE LOGIC — Gain Evade; Defensive: may change position
+- SIDESTEP — Gain Evade; Defensive: may change position
 - FORGET — Defender discards 1; Defensive: Exile the attacker's card until end of combat
 
 *Red — Body*

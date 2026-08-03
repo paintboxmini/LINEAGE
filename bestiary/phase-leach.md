@@ -7,7 +7,7 @@
 **Mind 2 / Body 1 / Soul 3 — HP 9**
 **Creature Threat Rating:** 6
 
-**Deck (6 — 2 Blue / 1 Red / 3 Green):** PHASE LOGIC, BORROWED SCREAM *(blue)* · OBSIDIAN SIX *(red)* · MIRROR STEP, MOCKERY, SIPHON *(green)*
+**Deck (6 — 2 Blue / 1 Red / 3 Green):** SIDESTEP, BORROWED SCREAM *(blue)* · OBSIDIAN SIX *(red)* · MIRROR STEP, MOCKERY, SIPHON *(green)*
 
 ---
 

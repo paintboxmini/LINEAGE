@@ -332,7 +332,7 @@ def _repel_effect(engine, me, foe):
     # Position-pillar manipulation — not a Debuff, Ward never touches it (rules/card-glossary.md).
     # Fixed 2026-07-24: was single-target (just `foe`) — text says "all
     # enemies," invisible in a 1v1 (only one enemy exists) but a real gap in
-    # team play against SMOKE SCREEN's own correct "all enemies" precedent.
+    # team play against DUST's own correct "all enemies" precedent.
     for e in engine.enemies(me):
         if e.position == 'frontline' and not e._grounded:   # GROUNDING STANCE
             e.position = 'backline'
@@ -959,9 +959,9 @@ def _distract_effect(engine, me, foe):
 def _distract_defense(engine, me, foe):
     foe._forced_target = me   # taunt, same mechanism as MOCKERY's defense
 
-def _phase_logic_effect(engine, me, foe):
+def _sidestep_effect(engine, me, foe):
     me.evade += 1
-def _phase_logic_defense(engine, me, foe):
+def _sidestep_defense(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'   # "may" -> always, established convention
 
 def _cliff_song_heal(engine, me, foe):
@@ -1110,17 +1110,18 @@ def _flow_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
 _flow_defense = _flow_effect
 
-# EDDY (Oracle, 2026-08-01) — replaces HEAVE AND HAUL in the Oracle list;
+# SWAY (Oracle, 2026-08-01, shipped then as EDDY; renamed 2026-08-03 for a
+# plainer starter-pool name) — replaces HEAVE AND HAUL in the Oracle list;
 # HEAVE AND HAUL itself is untouched, still a real playable core card (still
 # in `warper`'s deck), just too strong for a starter pool: all-enemies forced
-# movement plus a team-wide free Quick on one card. EDDY keeps the same
+# movement plus a team-wide free Quick on one card. SWAY keeps the same
 # niche (Green movement manipulation) at starter scale — single-target,
 # same toggle pattern as FLOW/REALIGNMENT but on the foe instead of self —
 # with Quick moved to its own line, self-only, so Green keeps a working
 # Quick source in the Oracle without carrying the original card's stacking.
-def _eddy_effect(engine, me, foe):
+def _sway_effect(engine, me, foe):
     foe.position = 'backline' if foe.position == 'frontline' else 'frontline'
-def _eddy_defense(engine, me, foe):
+def _sway_defense(engine, me, foe):
     me._quick = True
 
 def _shade_away_effect(engine, me, foe):
@@ -1398,7 +1399,8 @@ def _instinct_effect(engine, me, foe):
 def _instinct_defense(engine, me, foe):
     me.ward = True
 
-# SMOKE SCREEN (Vescal signature, promoted to core and rebalanced — the AOE
+# DUST (Vescal signature SMOKE SCREEN, promoted to core and rebalanced;
+# renamed DUST 2026-08-03 for a plainer starter-pool name — the AOE
 # Blind on the whole enemy Frontline was the card's actual identity, so it
 # stayed; the gating changed instead of the scope: minimum base die, melee
 # only, clean-win-only (`me._tie` gate, same as YOU'RE NEXT), and it blinds
@@ -1408,14 +1410,14 @@ def _instinct_defense(engine, me, foe):
 # to you; this is the first card where Ward blocks a status a combatant
 # inflicts on themselves. Only the self-Blind is Ward-eligible — the
 # Frontline enemies' Blind lands regardless of whether Ward fires.
-def _smoke_screen_effect(engine, me, foe):
+def _dust_effect(engine, me, foe):
     if me._tie:
         return
     for e in engine.enemies(me):
         if e.position == 'frontline':
             e.blind += 1   # deliberately NOT apply_blind — lands regardless of Ward, see above
     apply_blind(me)
-def _smoke_screen_defense(engine, me, foe):
+def _dust_defense(engine, me, foe):
     apply_blind(foe)
 
 # STEADFAST (Oracle starter deck, 2026-08-01) — plain unconditional Resist
@@ -2002,7 +2004,7 @@ def _table_stakes_defense(engine, me, foe):
 
 # DOUBLE DOWN (Gambler archetype, core Red) — wired into the sim 2026-07-23 on
 # Drew's direct request, after having been shipped as canon-text-only pending
-# playtesting. On a clean win only (never a tie — matches SMOKE SCREEN/YOU'RE
+# playtesting. On a clean win only (never a tie — matches DUST/YOU'RE
 # NEXT's `me._tie` gate precedent), immediately makes a second attack against
 # the same defender using another legal card from hand — a genuine same-turn
 # bonus attack, outside normal turn structure, which is exactly why this needed
@@ -2209,7 +2211,7 @@ def build_cards():
 
     # 13 more core cards found unregistered (2026-07-23 text-vs-sim audit)
     add("DISTRACT", 'B', 'mind', 'ranged', 6, effect=_distract_effect, defense=_distract_defense)
-    add("PHASE LOGIC", 'B', 'mind', 'both', 4, effect=_phase_logic_effect, defense=_phase_logic_defense)
+    add("SIDESTEP", 'B', 'mind', 'both', 4, effect=_sidestep_effect, defense=_sidestep_defense)
     add("CLIFF SONG", 'R', 'body', 'both', 4, effect=_cliff_song_effect, defense=_cliff_song_defense)
     add("DART", 'R', 'body', 'both', 6, effect=_dart_effect, defense=_dart_defense)
     add("BERSERKER'S PRICE", 'R', 'body', 'melee', None,
@@ -2312,8 +2314,8 @@ def build_cards():
         effect=_veil_effect, defense=_veil_defense)
     add("DEAD END", 'B', 'mind', 'ranged', 8,
         effect=_dead_end_effect, defense=_dead_end_defense)
-    add("SMOKE SCREEN", 'G', 'soul', 'melee', 4,
-        effect=_smoke_screen_effect, defense=_smoke_screen_defense)
+    add("DUST", 'G', 'soul', 'melee', 4,
+        effect=_dust_effect, defense=_dust_defense)
     add("STEADFAST", 'G', 'soul', 'melee', 4,
         effect=_steadfast_effect, defense=_steadfast_defense)
     add("OPENING", 'G', 'soul', 'melee', 4,
@@ -2359,7 +2361,7 @@ def build_cards():
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
     add("FLOW", 'G', 'soul', 'melee', 8, effect=_flow_effect, defense=_flow_defense)
-    add("EDDY", 'G', 'soul', 'both', 4, effect=_eddy_effect, defense=_eddy_defense)
+    add("SWAY", 'G', 'soul', 'both', 4, effect=_sway_effect, defense=_sway_defense)
     add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
     add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
     add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
@@ -2634,12 +2636,12 @@ ORACLE_DECK = [
     # Blue (20)
     "ANTICIPATE", "AXIOM", "CALCULATE", "CERTAINTY", "DEAD END", "DEFLECT",
     "FOCUS", "FORESEEN", "INTERRUPT", "LAST RESORT", "MARKED",
-    "PHASE LOGIC", "PROFILE", "REALIGNMENT", "REBUTTAL", "REFRACT",
+    "SIDESTEP", "PROFILE", "REALIGNMENT", "REBUTTAL", "REFRACT",
     "RETORT", "SHARPEN", "STUDY", "VEIL",
     # Green (20)
     "ADAPT", "BALANCE", "BIND", "BRISTLE", "COMMUNION", "DEAD RECKONING",
-    "EDDY", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
-    "RESONATE", "SHADE AWAY", "SMOKE SCREEN", "STEADFAST", "SUPPORT",
+    "SWAY", "INSTINCT", "MIRROR STEP", "MOCKERY", "OPENING",
+    "RESONATE", "SHADE AWAY", "DUST", "STEADFAST", "SUPPORT",
     "TWIN STRIKE", "UNTOUCHED", "URGENCY", "YOU'RE NEXT",
 ]
 
@@ -2806,9 +2808,9 @@ ROSTER = {
 # excluded, since there's no registered card to tag.
 CARD_TAGS = {
     "movement": frozenset({
-        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "EDDY", "FLOW",
+        "BOLT", "CALCULATE", "CHARGE", "DART", "DRAG", "SWAY", "FLOW",
         "HAUL", "HEAVE", "HEAVE AND HAUL", "KNOWN GROUND", "MIRROR STEP", "NO VACANCY",
-        "PHASE LOGIC", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
+        "SIDESTEP", "PULL", "PUSH", "QUICKSTEP", "REALIGNMENT", "REPEL",
         "SLIP THE BLADE", "TRAMPLE",
     }),
     "initiative": frozenset({
@@ -2849,7 +2851,7 @@ CARD_TAGS = {
         # Vulnerable grants anywhere in the pool; apply_vulnerable() didn't
         # exist before these three needed it
     "keyword:evade:self": frozenset({
-        "SHARED BURDEN", "SLIPSTREAM", "PHASE LOGIC", "SLIP THE BLADE",
+        "SHARED BURDEN", "SLIPSTREAM", "SIDESTEP", "SLIP THE BLADE",
         "SHADE AWAY", "GENETIC SAMPLE", "EXPOSED", "AFTERIMAGE", "OVERDRIVE",
         "SHED SKIN", "FREEZE", "KNOWN GROUND",
     }),
@@ -2858,10 +2860,10 @@ CARD_TAGS = {
         "RETORT", "BRISTLE",
     }),
     "keyword:blind:foe": frozenset({
-        "DEAD RECKONING", "SMOKE SCREEN", "CONSUME", "AFTERIMAGE",
+        "DEAD RECKONING", "DUST", "CONSUME", "AFTERIMAGE",
         "VIBRATION LOCK", "DARK CORRIDOR", "BLINDSIDE", "VEIL",
     }),
-    "keyword:blind:self": frozenset({"SMOKE SCREEN"}),   # yes, both — SMOKE
+    "keyword:blind:self": frozenset({"DUST"}),   # yes, both — SMOKE
         # SCREEN blinds every enemy Frontline AND its own caster in the same effect
     "keyword:ward:self": frozenset({
         "DEFLECT", "PARADOX", "WEATHERED", "REGISTERED", "CIPHER GLYPH",
@@ -2874,7 +2876,7 @@ CARD_TAGS = {
     "keyword:staggered:foe": frozenset({
         "BALANCE", "PROFILE", "REBUTTAL", "TABLE STAKES", "REELING", "IRON ANCHOR",
     }),
-    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK", "EDDY"}),
+    "keyword:quick:self": frozenset({"OVERDRIVE", "HEAVE AND HAUL", "FOOTWORK", "SWAY"}),
     "keyword:quick:ally": frozenset({"REALIGNMENT", "MIRROR STEP"}),
 
     "gated_damage": frozenset({

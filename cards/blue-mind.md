@@ -233,7 +233,7 @@ Range: Ranged
 
 ---
 
-**PHASE LOGIC**
+**SIDESTEP**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Gain Evade.

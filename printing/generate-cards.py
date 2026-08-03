@@ -111,12 +111,12 @@ SETS = {
             # Blue (20)
             'ANTICIPATE', 'AXIOM', 'CALCULATE', 'CERTAINTY', 'DEAD END',
             'DEFLECT', 'FOCUS', 'FORESEEN', 'INTERRUPT', 'LAST RESORT',
-            'MARKED', 'PHASE LOGIC', 'PROFILE', 'REALIGNMENT', 'REBUTTAL',
+            'MARKED', 'SIDESTEP', 'PROFILE', 'REALIGNMENT', 'REBUTTAL',
             'REFRACT', 'RETORT', 'SHARPEN', 'STUDY', 'VEIL',
             # Green (20)
             'ADAPT', 'BALANCE', 'BIND', 'BRISTLE', 'COMMUNION',
-            'DEAD RECKONING', 'EDDY', 'INSTINCT', 'MIRROR STEP',
-            'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'SMOKE SCREEN',
+            'DEAD RECKONING', 'SWAY', 'INSTINCT', 'MIRROR STEP',
+            'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'DUST',
             'STEADFAST', 'SUPPORT', 'TWIN STRIKE', 'UNTOUCHED', 'URGENCY',
             "YOU'RE NEXT",
         ],

@@ -45,7 +45,7 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 - CHAIN — Half damage to a second enemy; Defensive: enemy must target you again next turn if possible
 - TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
 - SHARPEN — Target ally gains Deadly; Defensive: gain Deadly
-- PHASE LOGIC — Gain Evade; Defensive: may change position
+- SIDESTEP — Gain Evade; Defensive: may change position
 
 *Red — Body*
 - CHARGE — You and defender move to frontline; Defensive: you and attacker move to frontline

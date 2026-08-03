@@ -42,7 +42,7 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - INTERRUPT
 - LAST RESORT
 - MARKED
-- PHASE LOGIC
+- SIDESTEP
 - PROFILE
 - REALIGNMENT
 - REBUTTAL
@@ -59,14 +59,14 @@ Starter tier — simplest, lowest power/impact cards from the three core sets. E
 - BRISTLE
 - COMMUNION
 - DEAD RECKONING
-- EDDY
+- SWAY
 - INSTINCT
 - MIRROR STEP
 - MOCKERY
 - OPENING
 - RESONATE
 - SHADE AWAY
-- SMOKE SCREEN
+- DUST
 - STEADFAST
 - SUPPORT
 - TWIN STRIKE
@@ -82,6 +82,6 @@ FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both
 
 **Slimmed back to 60 (2026-08-01)** — the pass above grew the pool to 72; re-trimmed to 20/20/20, cutting only from the pre-coverage-pass cards (every keyword-coverage card from both rounds above is untouched). Cut: DART, PUSH, GROUNDING STANCE, INTERCEPT, RALLY (Red — RALLY specifically for its 5 HP cost, steep for a starter; the rest for redundant movement/Resist already covered elsewhere in Red); UNDERSTANDING, CLIMB, PARTITION, ALIGN (Blue — UNDERSTANDING for quietly outpunching its Blue peers, d8 plus a guaranteed +1d6; the rest for being the least-essential utility picks); FLOW, ACCEPTANCE, DELAY (Green — DELAY specifically chosen over HEAVE AND HAUL despite both being Initiative-adjacent, since HEAVE AND HAUL is Green's only Quick source and cutting it would have reopened a gap this same pass just closed). Full reasoning and final per-keyword counts: `memory.md`. All 8 cards with "Target gains X" wording (OPEN GUARD, MARKED, OPENING, ATTRITION, REELING, BLINDSIDE, VEIL, DEAD END) corrected to "Defender gains X" / "Attacker gains X" — the code was always bound to the current RPS opponent, never a free choice of target; the wording was simply wrong.
 
-**HEAVE AND HAUL replaced by EDDY (2026-08-01)** — the exact card the entry above worked hard to keep turned out to be too strong for a starter pool after all: all-enemies forced movement plus a team-wide free Quick, stacked on one card. EDDY keeps the niche (Green movement manipulation) and Green's one working Quick source, scaled to starter level — single-target reposition, Quick moved to its own self-only line, d4 instead of d8. HEAVE AND HAUL itself is untouched everywhere else in the pool. Full reasoning: `memory.md`.
+**HEAVE AND HAUL replaced by EDDY (2026-08-01)** *(EDDY was renamed **SWAY** on 2026-08-03 — this entry keeps the name it had on the day, since that is what happened.)* — the exact card the entry above worked hard to keep turned out to be too strong for a starter pool after all: all-enemies forced movement plus a team-wide free Quick, stacked on one card. It keeps the niche (Green movement manipulation) and Green's one working Quick source, scaled to starter level — single-target reposition, Quick moved to its own self-only line, d4 instead of d8. HEAVE AND HAUL itself is untouched everywhere else in the pool. Full reasoning: `memory.md`.
 
 **REPEL replaced by PUSH (2026-08-01)** — same shape of problem as HEAVE AND HAUL: REPEL's Effect and Defensive Bonus were both the same unconditional all-enemies-to-Backline function, no differentiation between the two sides at all. PUSH — cut in the original slimming pass above as redundant with REPEL, no longer true once REPEL is the thing leaving — is the exact single-target sibling this pool should have had: PULL's own directional counterpart, already core-legal, no new card needed. Full reasoning: `memory.md`.

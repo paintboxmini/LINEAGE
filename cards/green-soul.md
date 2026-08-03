@@ -43,7 +43,7 @@ Range: Melee
 
 ---
 
-**EDDY**
+**SWAY**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Move the defender to the other position.
@@ -353,7 +353,7 @@ Range: Both
 
 ---
 
-**SMOKE SCREEN**
+**DUST**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
