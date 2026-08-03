@@ -488,7 +488,7 @@ RED — BODY
 Attack: Body + d8
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
-Range: Both
+Range: Melee
 *"Still standing counts for everything."*
 
 ---

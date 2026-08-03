@@ -1318,10 +1318,17 @@ def _opening_defense(engine, me, foe):
 # matching LAST RESORT's own threshold exactly rather than picking a new,
 # unexplained number.
 #
-# The three share an effect, not a die. All three printed d8 until 2026-08-03,
-# when Drew put the trifecta on the traditional 4/6/8 spread — d6 Mind, d8
-# Body, d4 Soul. The divergence is the die philosophy applied, not drift:
-# UNTOUCHED now carries the same Immunity gate on the smallest die in the game.
+# The three share an effect and nothing else. All three printed d8 / Range:
+# Both until 2026-08-03, when Drew split them by color twice over: the
+# traditional 4/6/8 spread (d6 Mind, d8 Body, d4 Soul), then Blue ranged /
+# Red melee / Green both. Neither divergence is drift.
+#
+# The Range split is the one that bites, and it bites unevenly. Range gates
+# DEFENSE as well as attack (rules/combat.md) — and the Immunity grant sits on
+# both halves of all three cards. So UNBROKEN, which kept the biggest die,
+# cannot defend at all unless both combatants are Frontline; LAST RESORT
+# cannot defend while in melee range. UNTOUCHED keeps Both and is the only one
+# of the three that always answers.
 def _unbroken_effect(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
@@ -2293,7 +2300,7 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("LAST RESORT", 'B', 'mind', 'both', 6,
+    add("LAST RESORT", 'B', 'mind', 'ranged', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("FORESEEN", 'B', 'mind', 'ranged', 6,
         effect=_foreseen_effect, defense=_foreseen_defense)
@@ -2319,7 +2326,7 @@ def build_cards():
         effect=_instinct_effect, defense=_instinct_defense)
     add("OPEN GUARD", 'R', 'body', 'melee', 6,
         effect=_open_guard_effect, defense=_open_guard_defense)
-    add("UNBROKEN", 'R', 'body', 'both', 8,
+    add("UNBROKEN", 'R', 'body', 'melee', 8,
         effect=_unbroken_effect, defense=_unbroken_defense)
     add("ATTRITION", 'R', 'body', 'melee', 6,
         effect=_attrition_effect, defense=_attrition_defense)
