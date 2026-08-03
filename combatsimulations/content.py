@@ -2003,10 +2003,15 @@ def _seismic_redirect_defense(engine, me, foe):
     # 2026-07-24). Card text is bare "Counter Attack," no die restated.
     engine.deal(foe, me.eff('body') + roll(6, engine.rng), unpreventable=True)
 
-# GORE (Minotaur) — base die bumped along with everything else.
+# GORE — Range Melee -> Both, base die d8 -> d4, 2026-08-03 (Drew). As Melee,
+# "if target is Frontline" was checking a condition Melee's own legality
+# already guaranteed (both combatants must be Frontline to play a Melee card
+# at all) -- the +d6 branch below fired every single time, not conditionally.
+# Both makes the check real again: the target can now legitimately be
+# Backline when this is played, so the d4 floor with a real (not guaranteed)
+# d6 kicker replaces the old always-d8-plus-d6.
 def _gore_damage(engine, me, foe):
-    # Fixed 2026-07-24: same naming-pattern miss as ROLLOUT above.
-    base = me.eff('body') + roll(8, engine.rng) + _deadly_weak_bonus(engine.rng, me)
+    base = me.eff('body') + roll(4, engine.rng) + _deadly_weak_bonus(engine.rng, me)
     if foe.position == 'frontline':
         base += roll(6, engine.rng)
     return base
@@ -2335,7 +2340,7 @@ def build_cards():
         damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
     add("SEISMIC REDIRECT", 'R', 'body', 'melee', 6,
         effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)
-    add("GORE", 'R', 'body', 'melee', 8, damage=_gore_damage, defense=_gore_defense)
+    add("GORE", 'R', 'body', 'both', 4, damage=_gore_damage, defense=_gore_defense)
     # FRAME-TRAP: the auto-win-and-negate-defense special case lives in
     # attack() (both engines, checked by card.name), and the tie-win lives
     # in rps() (also by name) -- nothing for content.py to register beyond
@@ -2691,7 +2696,9 @@ ORACLE_STATS = dict(mind=3, body=3, soul=3)
 # the specification; this list is checked against them programmatically.
 ORACLE_DECK = [
     # Red (21) — melee 12 / both 6 / ranged 3
-    "ATTRITION", "BLINDSIDE", "CHARGE", "ENDURE", "GORE", "GUARD",
+    # GORE swapped for INTERCEPT 2026-08-03: GORE's own bugfix (Melee -> Both)
+    # would have broken this composition, since it was one of the Melee-12.
+    "ATTRITION", "BLINDSIDE", "CHARGE", "ENDURE", "GUARD", "INTERCEPT",
     "OPEN GUARD", "PAIN IS FUEL", "PUSH", "REELING", "UNBROKEN", "WEATHERED",
     "CLIFF SONG", "FOOTWORK", "GROUNDING STANCE", "PULL", "RECOVER",
     "SLIP THE BLADE",
