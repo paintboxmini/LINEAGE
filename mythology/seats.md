@@ -100,7 +100,7 @@ Discusses gathering, abundance, and what's worth preserving. Attentive to what g
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. No bearer is known. A living Echo of the domain exists — Aege, the Carrion Guide — but an Echo is not an Archon and does not fill a Seat. See `mythology/echoes.md`, Known Echoes.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Echo of the domain, which is not the same as filling it. See `mythology/echoes.md`, Known Echoes.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*

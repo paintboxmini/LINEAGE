@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A3 (Drew's call) — Aege fated to the Seat of Death.** Written as a fate rather than a present-tense Archonhood, matching the Greed/Storm pattern, to avoid deleting the character. Closes the Seat-of-Death question from the consolidation. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A2 — Cosmology consolidated.** `mythology/` now owns Seats, Archons, and Echoes one apiece; `world/seats-archons-echoes.md` reduced to an index. New file `mythology/archons.md`. Two divergences found and one flagged for Drew (whether the Seat of Death is genuinely Empty or merely unknown). Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A3 (Drew's call) — Cuts over Seats.** Seats exist because the Cuts do; Cut-thinning weakens Seats by extension, not the reverse. Both A3 questions from the world audit closed. `mythology/seats.md` gained a **Seats and the Cuts** section; the overview and the Echo-stage endpoint reconciled. Full reasoning in Standing Reasoning.
@@ -133,6 +135,13 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Aege is fated to the Seat of Death. Drew: "Aege can be deaths archon. someone has to do it."** Answers the vacancy I had flagged an hour earlier when the Stage III / Archonhood equivalence landed — a Stage II Echo of Death sitting one rung below an unfilled Seat.
+  - **Written as a fate, not a promotion, and that was a judgment call worth stating.** "Can be" is permissive, and reading it as *"she is Stage III now"* would have required contradicting her own file, which says outright *"Not the Archon... Aege isn't it,"* and would have collided with what Archonhood costs: `mythology/archons.md` says internal contradiction ends and **the individual becomes function**. Aege's whole usable surface is the opposite of that — a woman with a family, a worry about the Weald, and a reason to keep walking strangers to places. Making her Death-as-function today would delete the Session 1 guide to fill a roster slot.
+  - **The fated form gives Drew everything he asked for and costs nothing.** The Seat has an answer. Aege is unchanged at the table. And it uses a pattern already in canon rather than inventing one — `characters/greed.md` does exactly this with Storm: *"a fate, not a scene,"* how and when deliberately unestablished. Two Seats now sit unheld-with-a-named-successor, which reads as a deliberate shape rather than two loose ends.
+  - **It also closes the question I raised during consolidation** — whether the Seat of Death is genuinely Empty or merely unknown. It is unheld, with a fated bearer. Same as Storm. That concern is off `unresolved-concerns.md`.
+  - **What her file gained is a cost, stated plainly.** The Echo section now says what Stage III would take from her, and names the family and the worry as *what Stage II still permits*. Nothing about her present behaviour is to be played as a countdown, and she does not know.
+  - **Reversible in one edit if Drew meant the present tense.** Flagged in chat rather than assumed silently.
 
 **[2026-08-02] Cosmology consolidated — one home per fact. Drew: "let's consolidate them."** *Was:* `world/seats-archons-echoes.md` restated the Seats, the Echo stages, and the Seat roster in full, alongside `mythology/seats.md` and `mythology/echoes.md`. *Now:* `mythology/` owns all three systems; the world file is a 33-line index (down from 86) that defines nothing.
   - **The duplication had already produced three real divergences, and consolidating is what surfaced two of them.** The Seat States table had lost the **Fading** state in the world file (patched earlier the same night). Beyond that: **the Seat roster was doubled** — thirteen Seats in `mythology/seats.md`, the same thirteen as "Known Archons" in the world file — and the two disagreed about **Storm** and about **Death**.

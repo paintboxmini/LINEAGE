@@ -84,7 +84,7 @@ Echoes may be human, animal, spirit, or stranger. Any living identity can become
 
 ## Known Echoes
 
-**Aege, the Carrion Guide** *(Death, Stage II — Alignment)* — Not the Archon; Death's bearer is not known. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `locations/vultures-nest.md` (GM Secret).
+**Aege, the Carrion Guide** *(Death, Stage II — Alignment; **fated to the Seat**)* — Not the Archon yet, and the Seat is not filled. She is one stage from Incarnation, and Incarnation is Archonhood (`mythology/archons.md`). When that happens, or whether anyone survives being guided by her afterward, is unestablished. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `locations/vultures-nest.md` (GM Secret).
 
 **King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved; see `world/the-scar.md`.
 

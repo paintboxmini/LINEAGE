@@ -1,6 +1,6 @@
 # Aege
 
-*The Carrion Guide. An Echo of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`world/seats-archons-echoes.md`).*
+*The Carrion Guide. An Echo of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`mythology/seats.md`). She is also fated to bear that Seat; see the Echo section below.*
 
 **Cards:** `cards/aege.md`
 
@@ -47,7 +47,11 @@ Recently, word came from home: something's gone wrong deep in the forest, not at
 
 ## GM Secret — Not Player-Facing
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/echoes.md`) — Stage II, Alignment. Not the Archon; Death's actual bearer, if one exists, "is not publicly known," and Aege isn't it. She's a reflection of the domain, not its seat.
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/echoes.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
+
+**She is fated to bear it.** How and when are deliberately unestablished — a fate, not a scene, the same shape as Greed and the Storm Seat (`characters/greed.md`). Nothing in her behaviour today should be played as a countdown, and she does not know.
+
+What it costs, when it comes, is written down: Stage III is Incarnation, where *"identity and domain become inseparable"* and *"the individual becomes function"* (`mythology/archons.md`). Everything below this line — the family, the worry about the Weald, the reason she keeps walking people to places — is what Stage II still permits her, and what Archonhood would end.
 
 This is why she's always drawn toward wherever her domain is concentrated — real endings already happened, real potential for more sitting on top of it — the same way the Night Ferryman reads the Coil's own restlessness before it surfaces. It's also the real mechanism behind her already-established habit of seeming to know more than she should about a place, or the people standing in it: she isn't investigating them. She's reading their proximity to where the domain is already active.
 
