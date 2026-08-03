@@ -27,9 +27,9 @@ These are exact counts, not a lean. Any card entering or leaving the pool has to
 - EMERGENCY REPAIRS
 - ENDURE
 - FOOTWORK
-- GORE
 - GROUNDING STANCE
 - GUARD
+- INTERCEPT
 - OPEN GUARD
 - PAIN IS FUEL
 - PULL
@@ -106,3 +106,5 @@ FORESEEN and STEADFAST are new (2026-08-01) — plain, unconditional Resist both
 *Cuts made on the eligibility bar, not just on counts.* **EQUAL FOOTING** (Red), **CERTAINTY** (Blue) and **ADAPT** (Green) all carry *"Wins ties"* — an RPS auto-win, which this pool's own criteria exclude. They were a deliberate one-per-colour trifecta and they left as a set; all three remain untouched in core. **RETALIATE** (Red) and **REBUTTAL** (Blue) both key off "if an enemy attacked successfully on the turn immediately before yours" — a precondition set by another turn. **INTERRUPT** cut for turn denial, **TRAMPLE** for granting an extra action, **GAMBLER'S RUIN** for exploding dice. Green's melee cut to 3 keeps one clean keyword grant each: BIND (Rooted), DUST (Blind), OPENING (Vulnerable).
 
 *Previously-cut cards returning.* **PUSH, GROUNDING STANCE, ACCEPTANCE** and **DART**'s slot-mates were trimmed in the 2026-08-01 slimming for redundancy at a 20-card pool. Red Both is only nine cards deep in core and several fail the bar, so RECOVER, CLIFF SONG and GROUNDING STANCE come back to fill it. That is the counts binding, not a reversal of the earlier reasoning.
+
+**GORE swapped for INTERCEPT (2026-08-03).** GORE's own bug got fixed the same day — Range Melee → Both, since as Melee its *"if target is Frontline"* condition checked something Melee's own legality already guaranteed, so the bonus fired unconditionally every time. Full reasoning: `memory.md`. Fixing it broke this pool's Red Melee-12, so GORE left as a set member and **INTERCEPT** took its slot: `Body + d4`, *Gain Protect and Resist 2* both sides — a pure double-keyword grant, the same shape as GUARD and PAIN IS FUEL already in the pool. Count and composition unchanged.

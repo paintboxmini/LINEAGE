@@ -105,7 +105,8 @@ SETS = {
         # 12/6/3 along each colour's range identity.
         'cards': [
             # Red (21) — melee 12 / both 6 / ranged 3
-            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GORE', 'GUARD',
+            # GORE swapped for INTERCEPT 2026-08-03 — see content.py.
+            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'INTERCEPT',
             'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
             'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
