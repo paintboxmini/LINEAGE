@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A2 — Seeker's Price rebuilt as a working toll wall.** Paying in buys forest signs on a copper/silver/gold ladder; gold routes to the Root Heart. New third escape condition (**Paid Passage**). Tollworn Plate's branches rekeyed to having paid. Origin: Drew's own playthrough. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A2 — Tollworn Plate**, the campaign's first real equipment: Tier 1 armor (Armour 1) at Seeker's Price in Turnroot, before the Root Heart, one only, party chooses the wearer. Taking it costs Pressure unless they hold a Mark. Deliberately one session ahead of the gold curve; stated as such in `rules/equipment.md`.
 
 **[2026-08-02] A1 — Gold pacing clarified as per character.** The rule never specified; Drew's call is per character, ~5 sessions to a first Tier 1 item each. Rule and all eight quest reward lines updated; the intended session spine recorded in Campaign Status as what the number is calibrated against.
@@ -141,6 +143,15 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Seeker's Price is a working toll wall, not scenery — and I had it running backwards.** Drew, on reading the Tollworn Plate work: *"in my self playthrough I push a coin into the wood to gain guided passage for awhile."*
+  - **The file said so and I read past it.** *"These are payments made by travelers for safe passage"* — I took that as backstory explaining why metal was in the trees, and built the Plate around taking things **out**. The wall's actual function is people paying **in**, and the direction I designed for is the transgressive one. The line was doing mechanical work and I read it as flavour.
+  - **Drew's playthrough is the source of the mechanic, not an illustration of it.** He pressed in a gold piece, bought guided passage, and that opened the path to the Root Heart and became his session's climax — he saw the boss and a way out opened. Every tier below that is extrapolated from what he actually did.
+  - **Two existing rules carry almost all of it, which is why it needed no new subsystem.** Navigation already says *"No check is required when following forest signs"* and that signs *"must be earned, not handed out freely"* — paying the wall is how you earn them. And tonight's currency scale (10 copper = 1 silver = 1 gold) makes copper/silver/gold a meaningful ladder at a wall whose other tolls are pocket change. That scale was written for pricing consumables hours earlier and turned out to be load-bearing here by accident.
+  - **Three exits now, and they map onto the world's own logic:** earn it (three Marks), win it (kill the Heart), buy it (Paid Passage). Drew's call that the way out is a real rule rather than his session wrapping up.
+  - **Two gaps the verification step caught, both of which would have broken it at a table.** The Root Heart's behaviour toward a paying party was unstated — a GM would reasonably run it as a boss encounter, collapsing the third exit back into the second; it now says outright that the Heart does not attack. And "a gold piece" sits a foot from a 200-gold Plate in the same wall, which reads as an error unless stated: **the wall reads the gesture, not the sum.** Fifty gold buys exactly what one buys.
+  - **Paid Passage is cheap and I left it cheap, deliberately.** It returns nothing — no Marks, no kill, no loot, the Heart alive behind them. Cheap because empty is the correct trade; the alternative was bolting on an artificial cost to make the ledger look balanced.
+  - The Plate's no-Pressure branch moved off the Mark system and onto *having paid into this wall*. The wall keeps its own books, separate from the forest's general customs — and taking a toll back out is worse than ordinary theft, because it undoes a transaction the forest already closed on someone else's behalf.
 
 **[2026-08-02] The campaign's first real equipment: the Tollworn Plate, Turnroot session 4. Drew: "turnroot session 4 should drop the first piece of armor before the boss fight. 1 piece ahead of time with the party choosing who wears it."**
   - **Placed at Seeker's Price, which already described itself as the answer.** That POI is a wall of copper coins and rusted gear fused into bark — *"payments made by travelers for safe passage"* — with an existing rule that taking anything raises Pressure by 1. The armor did not need inventing a home; it needed noticing that one was already written. Somebody wore this to the edge of the Weald and decided they wanted through more than they wanted armor.

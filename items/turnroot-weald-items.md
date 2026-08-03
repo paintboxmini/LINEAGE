@@ -63,7 +63,7 @@ A piece of armor recovered from the forest's repulsion field. Clean of rust only
 ---
 
 ### Tollworn Plate
-*Source: Seeker's Price — cut or given out of the fused wall*
+*Source: Seeker's Price — somebody's toll, and the wall is still taking them*
 *Price: ~200 gold (Tier 1 armor, `rules/equipment.md`) — though selling it is its own kind of answer*
 
 A chest and shoulder piece, old pattern, rust in the seams and bark grown into the strap holes. Somebody wore this to the edge of the Weald and decided they wanted through more than they wanted armor.
@@ -72,7 +72,9 @@ It comes out of the wall in one piece if the wood lets go. If it doesn't, it com
 
 **Equipment — Armor (Tier 1). Effect:** Armour 1.
 
-**Only one exists here**, and only one person can wear it. See `quests/turnroot-weald-adventure.md`, Seeker's Price.
+**Only one exists here**, and only one person can wear it.
+
+Getting it out is free if the party has ever paid into that wall, and costs **Pressure +1** if they have not — taking back a toll the forest already accepted. See `quests/turnroot-weald-adventure.md`, Seeker's Price.
 
 ---
 
