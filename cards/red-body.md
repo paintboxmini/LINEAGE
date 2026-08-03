@@ -57,7 +57,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Gain Resist 2
 Defensive Bonus: Gain Resist 2
-Range: Melee
+Range: Both
 *"Stand firm and let them come to you."*
 
 ---
@@ -268,7 +268,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Anchored — Gain Resist 1.
 Defensive Bonus: Anchored — Gain Resist 1.
-Range: Melee
+Range: Both
 *"Hold the line. Make them break first."*
 
 ---
@@ -298,7 +298,7 @@ RED — BODY
 Attack: Body + d6
 Effect: The defender announces how many status cards they have in hand and discard pile. Deal +2 damage for each.
 Defensive Bonus: Heal 2 HP for each status card in your hand and discard pile. Then destroy them.
-Range: Melee
+Range: Both
 *"It was always going to end here."*
 
 ---
@@ -358,7 +358,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
 Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
-Range: Melee
+Range: Ranged
 *"What's yours was never really yours."*
 
 ---
@@ -398,7 +398,7 @@ RED — BODY
 Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
 Defensive Bonus: Gain Resist.
-Range: Melee
+Range: Ranged
 *"Some things you don't have to aim."*
 
 ---

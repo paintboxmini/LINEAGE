@@ -2157,7 +2157,7 @@ def build_cards():
     # Steele — Red
     add("BLOOD TITHE", 'R', 'body', 'both', 6,
         effect=_blood_tithe_effect, defense=_blood_tithe_defense)
-    add("BRACE", 'R', 'body', 'melee', 4, effect=_brace_effect, defense=_brace_defense)
+    add("BRACE", 'R', 'body', 'both', 4, effect=_brace_effect, defense=_brace_defense)
     add("GAMBLER'S RUIN", 'R', 'body', 'melee', None,
         damage=_gamblers_ruin_dmg, defense=_gamblers_ruin_defense)
     add("REPEL", 'R', 'body', 'melee', 4,
@@ -2165,7 +2165,7 @@ def build_cards():
     add("PAIN IS FUEL", 'R', 'body', 'melee', 6,   # d6 -> d4 rebalance
         effect=_pain_is_fuel_effect, defense=_pain_is_fuel_defense)
     # Steele — Blue
-    add("FORGET", 'B', 'mind', 'ranged', 4,
+    add("FORGET", 'B', 'mind', 'melee', 4,
         effect=_forget_effect, defense=_forget_defense)
     add("PARADOX", 'B', 'mind', 'ranged', 6,
         effect=_paradox_effect, defense=_paradox_defense, special_reveal='paradox')
@@ -2187,15 +2187,15 @@ def build_cards():
     add("REND", 'R', 'body', 'melee', 6,
         effect=_rend_effect, defense=_rend_defense)
     add("EQUAL FOOTING", 'R', 'body', 'melee', 8, wins_ties=True)   # Special Rule, vanilla otherwise
-    add("PRESS THE WOUND", 'R', 'body', 'melee', 6,
+    add("PRESS THE WOUND", 'R', 'body', 'both', 6,
         damage=_press_the_wound_dmg, defense=_press_the_wound_defense)
-    add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
+    add("DIG IN", 'R', 'body', 'both', 4, effect=_dig_in_effect, defense=_dig_in_defense)
     # Mire — Blue
     add("PARTITION", 'B', 'mind', 'ranged', 4,
         effect=_partition_effect, defense=_partition_defense)
-    add("UNNAME", 'B', 'mind', 'ranged', 4, effect=_unname_effect, defense=_unname_defense)
+    add("UNNAME", 'B', 'mind', 'melee', 4, effect=_unname_effect, defense=_unname_defense)
     add("SLIPSTREAM", 'B', 'mind', 'both', 4, effect=_slipstream_effect, defense=_slipstream_defense)
-    add("TAINT", 'B', 'mind', 'ranged', 4,
+    add("TAINT", 'B', 'mind', 'melee', 4,
         effect=_taint_effect, defense=_taint_defense)
     add("ERODE", 'B', 'mind', 'ranged', 6,
         effect=_erode_effect, defense=_erode_effect)
@@ -2205,7 +2205,7 @@ def build_cards():
         effect=_resonate_effect, defense=_resonate_defense)
     add("SUPPORT", 'G', 'soul', 'ranged', 4,
         effect=_support_effect, defense=_support_defense)
-    add("WITNESS", 'G', 'soul', 'melee', 4,
+    add("WITNESS", 'G', 'soul', 'ranged', 4,
         effect=_witness_effect, defense=_witness_defense)
     add("SHARED BURDEN", 'G', 'soul', 'both', 8,
         effect=_shared_burden_effect, defense=_shared_burden_defense)
@@ -2221,7 +2221,7 @@ def build_cards():
     add("BREAK", 'R', 'body', 'melee', 6, defense=_break_defense)
     add("CHARGE", 'R', 'body', 'melee', 6, effect=_charge_move, defense=_charge_move)
     # --- Expanded set: Blue ---
-    add("INTERRUPT", 'B', 'mind', 'ranged', 4,
+    add("INTERRUPT", 'B', 'mind', 'melee', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
     add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
     add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
@@ -2236,13 +2236,13 @@ def build_cards():
         effect=_synchrony_effect, defense=_synchrony_defense)
     add("ROOTED OATH", 'G', 'soul', 'both', 6,
         effect=_rooted_oath_effect, defense=_rooted_oath_defense)
-    add("URGENCY", 'G', 'soul', 'melee', 6,
+    add("URGENCY", 'G', 'soul', 'both', 6,
         effect=_urgency_effect, defense=_urgency_defense)
     add("DELAY", 'G', 'soul', 'ranged', 8, effect=_delay_effect, defense=_delay_defense)
     add("COMMUNION", 'G', 'soul', 'ranged', 4,
         effect=_communion_effect, defense=_communion_defense)
     add("MIRROR STEP", 'G', 'soul', 'both', 6, effect=_mirror_step_effect, defense=_mirror_step_defense)
-    add("PATIENCE", 'G', 'soul', 'melee', None,
+    add("PATIENCE", 'G', 'soul', 'both', None,
         damage=_patience_dmg, defense=_patience_defense)
 
     # Missing simple core cards (Patient Host deck-fill)
@@ -2254,7 +2254,7 @@ def build_cards():
         damage=_understanding_dmg, defense=_understanding_defense)
 
     # 13 more core cards found unregistered (2026-07-23 text-vs-sim audit)
-    add("DISTRACT", 'B', 'mind', 'ranged', 6, effect=_distract_effect, defense=_distract_defense)
+    add("DISTRACT", 'B', 'mind', 'melee', 6, effect=_distract_effect, defense=_distract_defense)
     add("SIDESTEP", 'B', 'mind', 'both', 4, effect=_sidestep_effect, defense=_sidestep_defense)
     add("CLIFF SONG", 'R', 'body', 'both', 4, effect=_cliff_song_effect, defense=_cliff_song_defense)
     add("DART", 'R', 'body', 'both', 6, effect=_dart_effect, defense=_dart_defense)
@@ -2265,7 +2265,7 @@ def build_cards():
         effect=_grounding_stance_effect, defense=_grounding_stance_defense)
     add("SUNDER", 'R', 'body', 'melee', 6, effect=_sunder_effect, defense=_sunder_defense)
     add("DEAD HEAT", 'R', 'body', 'ranged', 8, effect=_dead_heat_effect, defense=_dead_heat_defense)
-    add("ATTUNE", 'G', 'soul', 'melee', 6, effect=_attune_effect, defense=_attune_defense)
+    add("ATTUNE", 'G', 'soul', 'both', 6, effect=_attune_effect, defense=_attune_defense)
     add("BIND", 'G', 'soul', 'melee', 4, effect=_bind_effect, defense=_bind_defense)
     add("READ", 'G', 'soul', 'ranged', 6, effect=_read_effect, defense=_read_defense)
     add("CARRIED WOUND", 'G', 'soul', 'both', 4,
@@ -2280,18 +2280,18 @@ def build_cards():
     add("AFTERIMAGE", None, None, 'both', None,
         damage=_afterimage_damage, effect=_afterimage_effect, defense=_afterimage_defense,
         special_reveal='mirror_color')
-    add("DRAIN", 'R', 'body', 'melee', 4, effect=_drain_effect, defense=_drain_defense)
+    add("DRAIN", 'R', 'body', 'ranged', 4, effect=_drain_effect, defense=_drain_defense)
     add("CONSUME", 'G', 'soul', 'melee', 6, effect=_consume_effect, defense=_consume_defense)
     add("FOLLOW-UP", None, None, 'both', None, damage=_follow_up_damage)
     add("BECOMING", None, None, 'both', None, damage=_becoming_damage)
-    add("SEED", 'G', 'soul', 'melee', 6, effect=_seed_effect, defense=_seed_defense)
+    add("SEED", 'G', 'soul', 'both', 6, effect=_seed_effect, defense=_seed_defense)
     add("EMERGENCY REPAIRS", 'R', 'body', 'ranged', 6,
         effect=_emergency_repairs_effect, defense=_emergency_repairs_defense)
     add("OVERCOMMIT", 'R', 'body', 'melee', 10, damage=_overcommit_dmg)
     add("OVERDRIVE", 'R', 'body', 'melee', 6,
         effect=_overdrive_effect, defense=_overdrive_defense)
     # Bestiary promotions
-    add("CERTAIN CONTACT", 'R', 'body', 'melee', 8,
+    add("CERTAIN CONTACT", 'R', 'body', 'ranged', 8,
         defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 8,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
@@ -2315,7 +2315,7 @@ def build_cards():
         damage=_still_counting_dmg, defense=_still_counting_defense)
     add("IRON GRIP", 'R', 'body', 'melee', 8,
         effect=_iron_grip_effect, defense=_iron_grip_defense)
-    add("PATIENCE OF STONE", 'G', 'soul', 'melee', 6,
+    add("PATIENCE OF STONE", 'G', 'soul', 'both', 6,
         effect=_patience_of_stone_effect, defense=_patience_of_stone_defense)
     add("DRAG", 'R', 'body', 'both', None,
         effect=_drag_effect, damage=_drag_damage, defense=_drag_defense)
@@ -2360,7 +2360,7 @@ def build_cards():
         effect=_dead_end_effect, defense=_dead_end_defense)
     add("DUST", 'G', 'soul', 'melee', 4,
         effect=_dust_effect, defense=_dust_defense)
-    add("STEADFAST", 'G', 'soul', 'melee', 4,
+    add("STEADFAST", 'G', 'soul', 'both', 4,
         effect=_steadfast_effect, defense=_steadfast_defense)
     add("OPENING", 'G', 'soul', 'melee', 4,
         effect=_opening_effect, defense=_opening_defense)
@@ -2404,13 +2404,13 @@ def build_cards():
     add("MIRING GLYPH", 'B', 'mind', 'both', 6,
         effect=_miring_glyph_effect, defense=_miring_glyph_defense)
     add("RECOVER", 'R', 'body', 'both', 4, effect=_recover_effect, defense=_recover_defense)
-    add("FLOW", 'G', 'soul', 'melee', 8, effect=_flow_effect, defense=_flow_defense)
+    add("FLOW", 'G', 'soul', 'ranged', 8, effect=_flow_effect, defense=_flow_defense)
     add("SWAY", 'G', 'soul', 'both', 4, effect=_sway_effect, defense=_sway_defense)
     add("ADAPT", 'G', 'soul', 'both', 4, wins_ties=True)   # Special Rule, vanilla otherwise
     add("CERTAINTY", 'B', 'mind', 'ranged', 6, wins_ties=True)   # Special Rule, vanilla otherwise
-    add("VOID", 'G', 'soul', 'melee', 6, defense=_void_defense)
+    add("VOID", 'G', 'soul', 'ranged', 6, defense=_void_defense)
     add("ACCEPTANCE", 'G', 'soul', 'both', 6, effect=_acceptance_effect, defense=_acceptance_defense)
-    add("SHADE AWAY", 'G', 'soul', 'melee', 4,
+    add("SHADE AWAY", 'G', 'soul', 'both', 4,
         effect=_shade_away_effect, defense=_shade_away_defense)
     # Oracle 12/6/3 pass, 2026-08-03 — see the block above _hesitate_effect.
     add("HESITATE", 'B', 'mind', 'melee', 4,
@@ -2436,7 +2436,7 @@ def build_cards():
         effect=_retaliate_effect, defense=_retaliate_defense)
     add("WARSONG", 'G', 'soul', 'both', 6,
         effect=_warsong_effect, defense=_warsong_defense)
-    add("REBUTTAL", 'B', 'mind', 'ranged', 6,
+    add("REBUTTAL", 'B', 'mind', 'melee', 6,
         effect=_rebuttal_effect, defense=_rebuttal_defense)
     add("FIELD MEDICINE", 'G', 'soul', 'ranged', 4,
         effect=_field_medicine_effect, defense=_field_medicine_defense)

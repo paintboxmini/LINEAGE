@@ -75,7 +75,7 @@ Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NI
 
 **Action:** A attacks Frost with **RAKING CUT** (Red, Body + d4, Melee — both Frontline, legal).
 
-Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Melee — legal, both Frontline), hoping Green would beat Blue. A played Red.
+Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Both — legal, both Frontline), hoping Green would beat Blue. A played Red.
 
 **Red beats Green — attacker wins.** Damage: Body 1 + d4 *(rolls 2)* = **3**. Frost 15 → 12. RAKING CUT Effect: *insert 1 Wound at the bottom of target's deck.* Frost's deck is now 6 cards, WOUND on the bottom: STILLNESS, PUSH, ENDURE, FLOW, WITNESS, **WOUND**.
 

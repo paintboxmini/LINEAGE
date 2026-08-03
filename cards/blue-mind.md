@@ -7,7 +7,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Defender loses their next turn, you can't defend until your next turn
 Defensive Bonus: Apply Initiative Shift -2 to the attacker
-Range: Ranged
+Range: Melee
 *"The best move happens before theirs."*
 
 ---
@@ -57,7 +57,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker must attack you on their next turn if able
-Range: Ranged
+Range: Melee
 *"Attention divided is power diminished."*
 
 ---
@@ -177,7 +177,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Defender cannot trigger defensive bonuses until their next turn
 Defensive Bonus: Attacker discards 1 card at random
-Range: Ranged
+Range: Melee
 *"What cannot be spoken cannot hold its shape."*
 
 ---
@@ -207,7 +207,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Defender discards 1 card
 Defensive Bonus: Exile the attacker's card until end of combat. Only on a clean win — not a tie.
-Range: Ranged
+Range: Melee
 *"Some knowledge is too dangerous to remember."*
 
 ---
@@ -258,7 +258,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Add 1 Wound to the bottom of the defender's deck.
 Defensive Bonus: Add 1 Wound to the bottom of the attacker's deck.
-Range: Ranged
+Range: Melee
 *"Some damage is architecture."*
 
 ---
@@ -288,7 +288,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.
 Defensive Bonus: Apply Initiative Shift -1 to the attacker.
-Range: Ranged
+Range: Melee
 *"Every argument has an opening. You just have to still be standing when it appears."*
 
 ---
