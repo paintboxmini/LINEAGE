@@ -14,8 +14,6 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 
 **Body-size exemption to the strict distance rule.** Drew ruled 2026-08-03 that `CLAUDE.md`'s ban on measured distances in quest and bestiary content is strict, and sixteen measurements were removed. Three survive on my reading that a creature's own size is a size, not a distance: `bestiary/tollbird.md` and `quests/the-larder-fence.md` ("close to a meter tall"), `bestiary/skeinwing.md` (altitude). Held as hand-listed exemptions in `verify.py`'s `check_distances` so they can't grow quietly. One edit if Drew reads the rule as reaching them. Trail: `memory.md`, the 2026-08-03 contradiction-hunt entry.
 
-**`cards/vescal.md`'s CENSER SWING carries the same vacuous-conditional bug GORE just had.** Range: Melee, Effect: *"If target is Frontline, deal +2 damage."* Melee legality already requires the target to be Frontline, so the condition can never be false — the bonus is unconditional, worded as if it isn't. GORE was fixed 2026-08-03 (Range → Both, die reduced) specifically because this made its condition real again; the identical fix would apply here, but Drew asked about GORE specifically and this wasn't in scope. Trail: `memory.md`, the 2026-08-03 GORE entry.
-
 ## Canon & World
 
 **"Immune" used loosely in `rules/items.md`.** A Pell lantern is described as *"immune to the Misdirection Trap."* **Immunity** is a defined keyword meaning one-shot negation of the next attack. Same collision as `bestiary/fogcaller.md`'s, which was fixed; this one was left because it is out-of-combat prose about a navigation hazard, not a stat block. Recorded so it reads as a decision rather than an oversight. Trail: same entry.
