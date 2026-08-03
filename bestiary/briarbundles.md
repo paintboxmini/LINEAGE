@@ -22,7 +22,7 @@ They are not hostile. They guard. The trouble is that a thing built to keep the 
 
 Farmers build briarbundles every autumn. Nobody tears the old ones down — that would be rude, or unlucky, or simply not done; ask three farmers and get three answers.
 
-The old ones disappear over winter. Everyone assumes the weather took them.
+Old ones go missing over winter. Not all of them — some stand for years, weathering down to armature and wire — and not in any pattern anyone has bothered to write down. Everyone assumes the weather took the ones that went.
 
 Nobody has noticed that every spring, the First Bundle is a little larger.
 

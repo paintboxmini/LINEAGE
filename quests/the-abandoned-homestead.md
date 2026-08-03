@@ -70,7 +70,7 @@ The temptation is to make this sad on purpose. Don't. The house is not a tragedy
 
 Hold the two fresh bundles until someone looks at the bundles specifically. It is the one detail that does not fit the story the rest of the yard is telling, and a party that catches it will stop treating the place as scenery.
 
-**Do not answer the fresh bundles.** Not this session, not with a note found in the house, not with the Duskwick. Somebody or something is still tying bundles at a house with nobody in it. That is the whole of what is established.
+**Nothing on this property answers the fresh bundles.** Not a note found in the house, not the Duskwick, not the GM's own voice. Somebody is still tying bundles at a house with nobody in it, and that is the whole of what the yard can tell anyone. There is an answer and it is standing in a different field — see the GM Secret. The party reaches it by putting two houses together and asking, or they do not reach it.
 
 If the party later stands in the Western Property's field and sees the sinkhole, the rope fence, and Iron standing at the edge of it — that is the encounter this one was for. Nothing needs to be said there either.
 
@@ -86,13 +86,17 @@ Nothing killed anyone here. The Duskwick came years later, to an empty house wit
 
 **The doll is a deliberate misdirection and should stay one.** A toy dropped in the yard between the door and the well reads as a death, and most tables will read it that way. It wasn't. A child left a toy outside during a move that took days, and nobody went back for it. If a player asks directly, the GM does not confirm or deny — there is nothing here that could tell them. The mundane answer is the worse one and it only works if it stays unspoken.
 
-**The fresh bundles are not explained.** Not here, not in `bestiary/briarbundles.md`, not in `bestiary/the-first-bundle.md`. The folklore established in those files — old bundles vanish over winter, the First Bundle is larger every spring, nobody has connected the two — is the only frame the table gets. Do not resolve it to make this encounter land better. It lands without it.
+**Iron ties the fresh bundles.** He has since the family left. He comes over in autumn with cuttings under his arm, puts two up, and goes home. He has never mentioned it to anyone and does not hold it as a decision he made — asked directly, he says somebody should, and that is the whole of the answer he has. He will not lie about it and he will not offer it. The party gets this only by putting the two claims together and asking him, and it should stay that way; a GM who volunteers it has spent the encounter's best card for nothing.
+
+**He does not go inside.** Iron works the field and nothing else. The house is not his and there is nothing in it he wants, so he has never crossed that threshold — which is why he does not know what is standing in the doorway, and why the Duskwick has never had reason to notice him. A party that reads the yard and leaves has done exactly what he does every autumn.
+
+**What is still unexplained is the winter.** Old bundles vanish and the First Bundle is larger every spring, and nobody in the world has connected those two facts (`bestiary/briarbundles.md`, `bestiary/the-first-bundle.md`). Iron answers who ties the new ones. He does not answer where the old ones go, he has never wondered, and neither should this file.
 
 ---
 
 ## Related Documents
 
-- `characters/iron.md` — the farmer this foreshadows
+- `characters/iron.md` — the farmer this foreshadows, and the man tying the fresh bundles
 - `quests/hollow-below-briarwatch.md` — his sinkhole, and the tunnel network under both claims
 - `locations/briarwatch.md` — the region, the soft ground, the limestone
 - `bestiary/duskwick.md` — the large one, and Iron's companion of the same species
