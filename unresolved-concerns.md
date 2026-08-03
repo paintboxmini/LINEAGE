@@ -8,12 +8,10 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 
 ---
 
-**Currently empty.** Every entry this file has carried is closed as of 2026-08-02 — gear/gold pacing, quest rewards, the RETALIATE/OVERCOMMIT/SEED balance question, and the Underground Bazaar. That is a real state, not a missing section: there is no known debt outstanding. The headers below stay so the next entry has somewhere to go.
-
 ## Mechanics & Balance
 
-*(none)*
+**Body-size exemption to the strict distance rule.** Drew ruled 2026-08-03 that `CLAUDE.md`'s ban on measured distances in quest and bestiary content is strict, and sixteen measurements were removed. Three survive on my reading that a creature's own size is a size, not a distance: `bestiary/tollbird.md` and `quests/the-larder-fence.md` ("close to a meter tall"), `bestiary/skeinwing.md` (altitude). Held as hand-listed exemptions in `verify.py`'s `check_distances` so they can't grow quietly. One edit if Drew reads the rule as reaching them. Trail: `memory.md`, the 2026-08-03 contradiction-hunt entry.
 
 ## Canon & World
 
-*(none)*
+**"Immune" used loosely in `rules/items.md`.** A Pell lantern is described as *"immune to the Misdirection Trap."* **Immunity** is a defined keyword meaning one-shot negation of the next attack. Same collision as `bestiary/fogcaller.md`'s, which was fixed; this one was left because it is out-of-combat prose about a navigation hazard, not a stat block. Recorded so it reads as a decision rather than an oversight. Trail: same entry.
