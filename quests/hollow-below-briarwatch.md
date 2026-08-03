@@ -12,7 +12,7 @@ Grounded. Damp. Heavy. Overcast. The danger here is not mystical — it is water
 
 ## Opening Conditions
 
-The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Fenwool were lost weeks ago when a section of field gave way. A bounty was posted.
+The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Fenwool went missing weeks ago, around the time a section of field gave way, and everyone here has taken the two for the same event. A bounty was posted.
 
 ---
 
