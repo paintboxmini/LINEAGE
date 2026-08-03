@@ -18,33 +18,7 @@
 
 ## Recently shipped (post-review queue)
 
-**[2026-08-02] A1 — Sync: duplicate cross-references found and gated.** Three files listed the same target twice in their reference blocks. One was mine — repointing `world/the-scar.md` collapsed two old links onto `mythology/echoes.md` and left both lines. Two were pre-existing in `locations/fog-basin.md`, which listed the Fogcaller and the Echo in both its annotated **Encounters** block and again, bare, under Related Documents; the annotated versions survive.
-  - Invisible to every existing check, because both entries resolve fine. `verify.py` gained a ninth check for it, validated by planting a duplicate, confirming the failure, and removing it.
-  - Post-consolidation reference sweep otherwise clean: nothing outside `world/eclipseria-overview.md` still treats `world/seats-archons-echoes.md` as holding content, and it points there as an index by name.
-
-**[2026-08-02] A3 (Drew's call) — Aege fated to the Seat of Death.** Written as a fate rather than a present-tense Archonhood, matching the Greed/Storm pattern, to avoid deleting the character. Closes the Seat-of-Death question from the consolidation. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A2 — Cosmology consolidated.** `mythology/` now owns Seats, Archons, and Echoes one apiece; `world/seats-archons-echoes.md` reduced to an index. New file `mythology/archons.md`. Two divergences found and one flagged for Drew (whether the Seat of Death is genuinely Empty or merely unknown). Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A3 (Drew's call) — Cuts over Seats.** Seats exist because the Cuts do; Cut-thinning weakens Seats by extension, not the reverse. Both A3 questions from the world audit closed. `mythology/seats.md` gained a **Seats and the Cuts** section; the overview and the Echo-stage endpoint reconciled. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A1 — World-layer audit.** Cosmology read against itself; two factual fixes (the Scar's place in the Failed Seat-Taker category; the missing **Fading** Seat State), two A3 questions logged to `unresolved-concerns.md`. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A1 — Sync: the In-Between reached the top-level world file; one superseded note annotated.** `world/eclipseria-overview.md`'s "The Shape of the World" described the basin, the Unheld edge, the rivers and the two-day hub spacing — and had no idea the overworld existed. Anyone orienting from the overview would have missed the thing that is most of the world by area. Now stated there, with the causal link the section was missing: the roads are maintained *because* of what the ground does when nobody pays for it.
-  - **Verified and deliberately not propagated: the In-Between is not going into the player packet.** `rules/player-guide.md` is a rules document (checks, saves, perception, resting) and carries no geography at all; `rules/the-summons.md` is a mythic invitation. Players experience the In-Between at the table in one sentence from the GM, and the summons already teaches Distance conceptually, which is the half that matters. Adding travel logistics to the summons would dilute the one document in the repo that is finished. Recording the check so it isn't reopened as an unasked question.
-  - **A superseded note in this file, annotated rather than erased.** The Scar entry's "deliberately not linked to Pendragon — flagged so Drew can make the connection if he wants one" was reversed within the hour by Drew doing exactly that. Left as written with a superseded marker, because the withholding was the correct call at the time and the record of it is worth more than a clean file. Same treatment as the stale playtest instruction earlier tonight.
-
-**[2026-08-02] A3 (Drew's call) — Pendragon is the Scar.** Resolves "what he became" and closes the Gluttony Abomination as a candidate. GM Secret only; the Scar's wants and whether anything of him remains stay open. Propagated across 5 files. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A3 (Drew's call) — `world/the-scar.md` created; `the-in-between.md` wired to it.** A persistent campaign-long presence, built as a cadence/escalation system rather than a creature. Its nature, its wants, and the end of the ladder are all deliberately unestablished. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A3 (Drew's call) — `world/the-in-between.md` created; three files wired to it.** The overworld now has a name and properties. Cosmology, so his authority throughout: he named it, set the three properties, ruled that the coastline stays hard, and confirmed displaced-not-random encounters. Full reasoning in Standing Reasoning.
-
-**[2026-08-02] A1 — The Western Property farmer is named **Iron**; `characters/iron.md` created.** Drew's call. He had been "the farmer" across five files since Briarwatch was written — the sinkhole owner, the man with the Duskwick, the one the party is sent to help, and as of tonight the person the abandoned homestead foreshadows. Named and propagated everywhere, including `agent-tools/player-perspective.md`, which had been citing him as the worked example of an NPC needing bounded knowledge.
-  - Character file built from established canon only — the hat, the rope fence, the season of waiting, the Duskwick that isn't his, and the explicit limit on what he knows. **No backstory invented.** He has no family, no history, and no opinion about the Borrowers in this file, because canon has never given him any and a named NPC is not a licence to fill him in.
-  - Follows the session's own NPC pattern (Weck, Corvel, Aege): the character file holds what travels with him, the quest keeps the scene. **No stat block, stated explicitly** — he doesn't fight and nothing asks him to, same as Weck.
-
-*Cleared 2026-08-02 — Drew reviewed all six ("clear the queue, all six reviewed"): the abandoned homestead + large Duskwick, the "farmer Steele" catch, `agent-tools/verify.py`, the Briarbundles family, the Wallows Slime, and the twice-corrected glossary recount. Reasoning for each lives in Standing Reasoning; history is in git.*
+*Cleared 2026-08-02 — Drew reviewed the batch ("clear the queue, all nine reviewed"). **Ten entries, not nine**: the count reported to him was correct when given, then the sync pass he was approving shipped a tenth of its own (the duplicate-cross-reference fix), which he had already seen reported in chat. Cleared: Iron named + `characters/iron.md`; `world/the-in-between.md`; `world/the-scar.md`; Pendragon is the Scar; the In-Between reaching the world overview; the world-layer audit; Cuts over Seats; the cosmology consolidation; Aege fated to the Seat of Death; and the cross-reference dedupe. Reasoning for each lives in Standing Reasoning; history is in git.*
 
 ## Pending propagation
 
