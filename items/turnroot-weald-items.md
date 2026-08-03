@@ -28,7 +28,7 @@ Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of pr
 
 ### Sap Vial
 *Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
-*Price: ~60 gold*
+*Price: ~25 gold*
 
 Thick, dark-green sap that smells metallic and green.
 
@@ -42,7 +42,7 @@ Thick, dark-green sap that smells metallic and green.
 
 ### Vision Shard
 *Source: The Mirror-Slick Pond*
-*Price: ~100 gold*
+*Price: ~45 gold*
 
 A fragment of something pulled from the surface of the black water — or perhaps left there. It reflects things that haven't happened yet, or things that almost happened.
 
@@ -54,7 +54,7 @@ A fragment of something pulled from the surface of the black water — or perhap
 
 ### Rusted Armor
 *Source: The Floating Gallery*
-*Price: ~80 gold*
+*Price: ~20 gold*
 
 A piece of armor recovered from the forest's repulsion field. Clean of rust only where the hovering leaves once brushed past it. Still functional, if battered.
 
@@ -82,14 +82,14 @@ Thin, flexible, incredibly strong. Still faintly warm when fresh; pulse slowly w
 
 **Uses:**
 - **Rope:** 50 ft per 3 strands (stronger than hemp)
-- **Bowstring:** +1 to ranged attack rolls if used in crafting
+- **Bowstring:** +1 to ranged attack rolls if used in crafting. The finished bow is a **Tier 1 weapon** and is priced as one (`rules/equipment.md`) — the strand is the material, not the bonus.
 - **Armor weave:** Add +1 temp HP to a single piece of armor (breaks after that temp HP is used)
 
 ---
 
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
-*Price: ~250 gold*
+*Price: ~60 gold*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 

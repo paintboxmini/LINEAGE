@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A2 — Price coherence pass** (Drew granted full authority). Senshi's unit slip fixed; a ~15 gold per single-use point scale derived from the existing Luminova pair and written into `rules/equipment.md`; four incoherent prices corrected; **17 previously unpriced items priced**; Pell's memory-economy left deliberately goldless and now stated as such. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A2 — Gold pacing.** Currency defined (10 copper = 1 silver = 1 gold), a pacing rule added to `rules/equipment.md` (a session ≈ one fifth of the tier being shopped for), income channels stated in `rules/items.md`, and Iron's payment written into the Session 1 quest as the worked example. Closes the pacing concern; opens two follow-ups. Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A1 — SEED measured, no change made.** 50.8–52.9% in duels, 52.0% in 3v3; its position gate cashes 99–100% of the time it gets the chance, so the "deferred Deadly" is a one-turn delay rather than a gamble. Closes the last of the three cards in the old balance concern. Full reasoning in Standing Reasoning.
@@ -119,6 +121,18 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Prices made coherent — Drew: "all prices were mostly ceremonial... you have full authority to make the prices coherent."** Followed the pacing work, and confirmed the Senshi 35 silver → 35 gold slip as a slip.
+  - **The bigger finding was absence, not error: four of the six `items/` files had no prices at all.** `briarwatch-items.md`, `consumables.md`, `vultures-nest-items.md` and most of `hollow-and-weald-items.md` listed effects and sources with no number anywhere. Only `turnroot-weald-items.md` was fully priced. So "make the prices coherent" was mostly "make the prices exist."
+  - **The scale was already in the world and nobody had written it down.** Luminova Leaves heal 4 for ~15 gold; Luminova Powder heals 8 for ~30 — and the file already states the crafting relationship between them. That is a clean **~15 gold per single-use point**, using the same 1-point vocabulary `rules/equipment.md` already defines for tiers. Derived from shipped content rather than invented, then written into the pricing file with the anchor named so the next person can check it.
+  - **Four real incoherences, each with a reason recorded in the diff:**
+    - **Sap Vial 60 → 25.** It was strictly dominated by Echothorn Seed at 40 — Echothorn gives +2 to a damage *or* healing roll, costs no action, and has no drawback; Sap Vial gave less, cost an action, and Rooted you afterward, for half again the price. Same failure shape as OVERCOMMIT earlier tonight.
+    - **Rootstalker Core 250 → 60.** A single-use item priced above a Tier 1 *permanent* (200). Rarity justifies a premium, not outranking gear that works every fight for the rest of the campaign.
+    - **Vision Shard 100 → 45** (Scry 3 ≈ 3 points) and **Rusted Armor 80 → 20** (5 temp HP, once ≈ 1.25 points).
+    - **Root Fibers** kept at 15/strand, but its "+1 to ranged attack rolls if used in crafting" is a *permanent* bonus — Tier 1 territory. Clarified in text rather than repriced: the strand is the material, the finished bow is a Tier 1 weapon and prices as one.
+  - **17 previously unpriced items given numbers**, all derived from the same scale: 8–15g for one point (Salted Strip's heal 2 at 8, Barbed Wrap's Thorns 1 at 15), 25–30g for two (Echo Shell, Imprint Sigil, Phase Draught), 45g for the Split Wedge's repeating in-combat damage.
+  - **`items/fog-basin-items.md` deliberately left with no gold prices.** Pell trades in a memory, a secret, or a name. An item with no gold price is not an oversight when its seller does not take gold — that is now stated in the pricing rule so the next pass doesn't "fix" it, and it is the same premise the Underground Bazaar is waiting to be built on.
+  - Full curve after the pass: 8–15g single-point, 20–30g two-point, 35–50g premium and sale rates, 60g rare craftable, 150g for the one permanent passive — which sits correctly below Tier 1's 200. Item card sheets regenerated.
 
 **[2026-08-02] Gold pacing built — and the concern was asking for the wrong thing.** Open since 2026-07-24, phrased as wanting "a reference frame for how fast a party should accumulate gear and gold, likely a gold-per-session metric." Reading the repo first showed a number was never the missing piece.
   - **The demand side was complete; the supply side barely existed.** Equipment tiers (~200/~800/~2,000), ~15 priced consumables, a consistent `*Price: ~N gold*` convention — against **one** gold loot entry in the whole bestiary, **zero** quests paying anything, and characters starting with no money by explicit rule. The Session 1 route yielded `d6+2 silver` from a chest, in a denomination with no defined value. A gold-per-session target would have been a number with no mechanism behind it.

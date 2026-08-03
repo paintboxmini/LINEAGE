@@ -69,6 +69,23 @@ The ratio is the rule; the numbers are what it produces. A GM needs to know exac
 
 **The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
 
+## Pricing Consumables
+
+Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
+
+A consumable spends the same point once. **Price single-use items at roughly 15 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
+
+The anchor is already in the world: Luminova Leaves heal 4 HP for ~15 gold, and Luminova Powder heals 8 for ~30 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+
+Adjust from there for what actually happens at the table:
+
+- **A real drawback lowers the price.** Something that Roots you afterward, or costs a card every turn, is worth less than the same effect clean.
+- **Free-action use raises it.** Not spending your action is worth about a point on its own.
+- **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
+- **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
+
+**Not everything is priced in gold, and that is deliberate.** Pell sells fog goggles for a memory, a secret, or a name (`items/fog-basin-items.md`), and the Underground Bazaar is built on the same premise. An item with no gold price is not an oversight when its seller doesn't take gold — say what they take instead.
+
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
 ---
