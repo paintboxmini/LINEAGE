@@ -491,17 +491,17 @@ body {{
 }}
 
 .card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
-.card.dense .flavor {{ font-size: 7pt; }}
+.card.dense .flavor {{ font-size: 8pt; }}
 .card.dense .card-name {{ font-size: 11pt; }}
 
 .card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
-.card.denser .flavor {{ font-size: 6.2pt; }}
+.card.denser .flavor {{ font-size: 7pt; }}
 .card.denser .card-name {{ font-size: 10pt; }}
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
 
 .flavor {{
   font-style: italic;
-  font-size: 8pt;
+  font-size: 9pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
