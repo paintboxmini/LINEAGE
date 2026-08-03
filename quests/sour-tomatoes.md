@@ -77,7 +77,7 @@ Steele's orphanage — rebuilt on the site of the one that burned when he was a 
 ## NPCs
 
 **The Father**
-**Mind 2 / Body 5 / Soul 3 — HP 19**
+**Mind 2 / Body 5 / Soul 3 — HP 21**
 **Creature Threat Rating:** 10
 *Stat block and deck are a starting point — scale to the party.*
 

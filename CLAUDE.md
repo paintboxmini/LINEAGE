@@ -66,7 +66,7 @@ Range: [Melee / Ranged / Both]
 
 Three formal rules, uniform for every combatant (players included — the trifecta spreads already obey them):
 
-- **HP = (2 × Body) + 9** is the baseline every generator offers. Most creatures take it as-is. **Bosses may go bespoke** — a boss's HP can depart from formula when the fiction calls for it (a threshold-triggered phase, a set-piece number); mark it explicitly (`*(bespoke — boss exception; formula baseline is N)*`) so the departure is never silent.
+- **HP = (3 × Body) + 6** is the baseline every generator offers. Most creatures take it as-is. **Bosses may go bespoke** — a boss's HP can depart from formula when the fiction calls for it (a threshold-triggered phase, a set-piece number); mark it explicitly (`*(bespoke — boss exception; formula baseline is N)*`) so the departure is never silent.
 - **Deck size = total stats**, with each color's count equal to its stat (a 1/2/3 creature runs 1 Blue / 2 Red / 3 Green — signature cards count toward their color).
 - **Creature Threat Rating = total stats.** This replaces the Early/Mid/Late tiers as the difficulty scale — precise, comparable, and self-documenting against the player baseline of 9. (Future goal: compute per-card action-economy advantage and fold it into the ranking.)
 
@@ -100,7 +100,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 *(Bumped +2 sides across the board, 2026-07-22 — a global combat-speed/lethality change, not just a typical-die shift. Every card's own printed die moved the same way; individual `cards/*.md` files still need to be swept to match — see memory.md, Pending propagation.)*
 
 - Standard DC: 13 (DM adjusts ±2 for fiction)
-- HP: (2 × Body) + 9 (baseline; bosses may go bespoke)
+- HP: (3 × Body) + 6 (baseline; bosses may go bespoke)
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
 

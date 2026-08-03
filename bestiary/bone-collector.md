@@ -30,7 +30,7 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Cards:** `cards/bone-collector.md`
 
-**Mind 4 / Body 4 / Soul 2 — HP 17**
+**Mind 4 / Body 4 / Soul 2 — HP 18**
 **Creature Threat Rating:** 10
 
 **Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, STILLNESS, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*

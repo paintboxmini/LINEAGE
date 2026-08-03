@@ -4,7 +4,7 @@
 
 **Cards:** `cards/wall-reader.md`
 
-**Mind 1 / Body 4 / Soul 3 — HP 17**
+**Mind 1 / Body 4 / Soul 3 — HP 18**
 **Creature Threat Rating:** 8
 
 **Deck (8 — 1 Blue / 4 Red / 3 Green):** CERTAIN CONTACT, RHYTHM BREAK, GROUNDING STANCE, DIG IN *(red)* · STILLNESS *(blue)* · STILL COUNTING, PATIENCE, FLOW *(green)*

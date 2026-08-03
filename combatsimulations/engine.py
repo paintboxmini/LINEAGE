@@ -567,14 +567,19 @@ class Combatant:
     def __init__(self, name, body, mind, soul, decklist, policy, hp=None):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
-        # Canon HP formula (2*Body + 9) — flattened from 3*Body+6 to decouple HP
-        # from Body and cut its damage+HP double-dip. Crossover at Body 3.
-        self.hp_per_body = 2
+        # Canon HP formula (3*Body + 6). This is a REVERSION, 2026-08-03,
+        # Drew's call: the repo ran 3*Body+6, flattened it to 2*Body+9 to
+        # decouple HP from Body and cut Body's damage+HP double-dip, and has
+        # now gone back. Crossover is Body 3 either way (both give 15), so the
+        # change is entirely at the tails — Body 1 drops 11 -> 9, Body 8 rises
+        # 25 -> 30. Body is doubly valuable again, which is the thing the
+        # flatten existed to prevent; see memory.md for the trail.
+        self.hp_per_body = 3
         # Bosses may go bespoke on HP (CLAUDE.md, Stat Blocks) — pass `hp=` to
         # override the formula baseline; the formula is still what the
         # one-shot-from-max-HP death check and Body-adjust deltas key off
         # internally, this only overrides the starting/max number itself.
-        self.max_hp = hp if hp is not None else self.hp_per_body * body + 9
+        self.max_hp = hp if hp is not None else self.hp_per_body * body + 6
         self.hp = self.max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
                                         # never below act-plus-one-block

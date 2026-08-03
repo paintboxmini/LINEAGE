@@ -28,7 +28,7 @@ Every location in Eclipseria has its own logic. The Turnroot Weald redirects. Vu
 
 An enemy needs:
 - **Stats** — Body, Mind, Soul (same as players, same functions)
-- **HP** — use `(2 × Body) + 9`, or pick a number that fits the fiction
+- **HP** — use `(3 × Body) + 6`, or pick a number that fits the fiction
 - **A deck** — size = the creature's total stats, color counts = each stat; 3 themed signature cards + core fill (see `rules/cards.md`, Deck Building). Enemies draw to hand size (Mind, minimum 2) like everyone else.
 - **A position** — Frontline or Backline to start
 - **An intent** — what does this enemy actually want in this fight?

@@ -4,7 +4,7 @@
 
 **Cards:** `cards/duskwick.md`
 
-**Mind 4 / Body 2 / Soul 5 — HP 13**
+**Mind 4 / Body 2 / Soul 5 — HP 12**
 **Creature Threat Rating:** 11
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
@@ -19,7 +19,7 @@ A cave system is the same kind of edge it already prefers — total dark is just
 
 *Abandoned homestead, Briarwatch (`quests/the-abandoned-homestead.md`).*
 
-**Mind 4 / Body 4 / Soul 6 — HP 17**
+**Mind 4 / Body 4 / Soul 6 — HP 18**
 **Creature Threat Rating:** 14
 
 **Deck (14 — 4 Blue / 4 Red / 6 Green):** HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · SNUFF, DART, GORE, PAIN IS FUEL *(red)* · GUTTERING, THRESHOLD, SHADE AWAY, INSTINCT, DEAD RECKONING, MOCKERY *(green)*

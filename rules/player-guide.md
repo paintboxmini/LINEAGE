@@ -12,7 +12,7 @@ All characters begin with Body 2 / Mind 2 / Soul 2, then distribute 3 more point
 
 | Stat | Colors your damage | Also drives |
 |------|---------------------|-------------|
-| Body | Red cards | Max HP = (2 × Body) + 9 |
+| Body | Red cards | Max HP = (3 × Body) + 6 |
 | Mind | Blue cards | Hand size = Mind (minimum 2) |
 | Soul | Green cards | Initiative = 1d6 + Soul |
 

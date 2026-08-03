@@ -4,7 +4,7 @@
 
 **Cards:** `cards/stonecoil-hollow.md`
 
-**Mind 2 / Body 4 / Soul 2 — HP 17**
+**Mind 2 / Body 4 / Soul 2 — HP 18**
 **Creature Threat Rating:** 8
 
 

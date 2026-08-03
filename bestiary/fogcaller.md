@@ -4,7 +4,7 @@
 
 **Cards:** `cards/fogcaller-basin.md`
 
-**Mind 2 / Body 4 / Soul 3 — HP 17**
+**Mind 2 / Body 4 / Soul 3 — HP 18**
 **Creature Threat Rating:** 9
 
 **Deck (9 — 2 Blue / 4 Red / 3 Green):** VEIL, AXIOM *(blue)* · TALON RUSH, BLINDSIDE, STARING CONTEST, DART *(red)* · SHROUD, FOGBURST, SMOKE SCREEN *(green)*

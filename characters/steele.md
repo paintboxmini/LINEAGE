@@ -1,7 +1,7 @@
 # Steele
 
 **Player:** Kevin  
-**Mind 3 / Body 4 / Soul 2 — HP 17**
+**Mind 3 / Body 4 / Soul 2 — HP 18**
 
 ---
 
