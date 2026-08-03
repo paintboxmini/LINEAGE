@@ -100,6 +100,14 @@ The broken pillar at the pit's center isn't natural, and it isn't new constructi
 
 ---
 
+## What It Pays
+
+**Nothing on its own.** This is one of the two entrances to the Hollow Below Briarwatch, not a separate job — the payment for the whole descent is Iron's, in `quests/hollow-below-briarwatch.md`.
+
+Running both entrances does not pay twice.
+
+---
+
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the descent

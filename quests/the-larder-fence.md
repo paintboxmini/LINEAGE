@@ -75,6 +75,14 @@ Kill the Tollbirds, wound both to 4 HP or less (they abandon the fight and don't
 
 ---
 
+## What It Pays
+
+**~20 gold of value** — half a session at Tier 1 (`rules/equipment.md`, Pacing), because this is one encounter rather than a night's work.
+
+Briarwatch pays it in livestock terms, since that is what the Tollbird was costing them: a Fenwool, or the price of one, or a standing account at whichever farm lost the fewest this season. Nobody hired the party — they fixed something the farmers had stopped expecting help with, and the farmers are not going to let that pass unmarked.
+
+---
+
 ## Related Documents
 
 - `bestiary/tollbird.md`, `cards/tollbird.md` — the creature; general appearance, behavior, and kit, transferable to any Tollbird encounter

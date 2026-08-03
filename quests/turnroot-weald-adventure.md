@@ -359,3 +359,13 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
+
+---
+
+## What It Pays
+
+This is a framework rather than a single session, so it pays by the session rather than in a lump: **~40 gold of value per session at Tier 1**, rising with the party (`rules/equipment.md`, Pacing).
+
+**Most of it should arrive as harvest, not as fee.** The Weald is the most thoroughly priced region in the world — `items/turnroot-weald-items.md` lists what things are worth and Senshi at the Gilded Tusk buys specimens outright. A party that engages with the forest as a place with things in it will out-earn a party waiting to be paid, which is the correct incentive for this region and worth letting them discover rather than telling them.
+
+Payment for specific jobs, where a job exists, comes from whoever asked — and in the Weald that is rarely anyone official.

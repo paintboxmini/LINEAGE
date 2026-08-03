@@ -157,6 +157,16 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 ---
 
+## What It Pays
+
+**~160 gold of value** across the arc — roughly a session at Tier 2 (`rules/equipment.md`, Pacing).
+
+Mirel is not a patron. She is a person who needed to talk to someone outside her community, and she has nothing to give. The money comes from whichever faction ends up owing the party — the People of Promise if the community is protected, the Masons if the Reach is, the Tideward Compact if the smuggling line is broken in a way that suits them. Only one of them pays, and which one is the party's own doing.
+
+If the party has managed to make all three owe them something, that is worth more than gold and should be handled as standing, not coin.
+
+---
+
 ## Related Documents
 
 - `factions/people-of-promise.md`

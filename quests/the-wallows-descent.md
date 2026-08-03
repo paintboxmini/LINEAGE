@@ -250,6 +250,18 @@ The grandmother's map ends here.
 
 ---
 
+## What It Pays
+
+**Nothing, and that is not an oversight.**
+
+Nobody hires anyone to go into the Wallows. Every objective in Opening Conditions is the party's own — a debt that has run out of room, someone on a dead-end branch, the Warden, a name heard in the echoes. There is no client, so there is no fee.
+
+What the descent is worth is what they came for: the alternate path out of the city, or the person, or the thing that needed ending. A GM who wants to hand out gold here should reconsider — payment would imply somebody sanctioned this, and nobody did.
+
+Salvage is a different question and is fair game. The labour level has debt-slaves' possessions, the Demon Court has property, and the threshold has whatever the deep has been keeping. What the party carries out is theirs; nobody is going to hand it to them.
+
+---
+
 ## Related Documents
 
 - `locations/the-wallows.md` — location overview

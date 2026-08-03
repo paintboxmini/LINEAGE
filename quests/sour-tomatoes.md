@@ -100,6 +100,16 @@ They're cherry tomatoes off her own vine, picked too late, gone soft and split. 
 
 ---
 
+## What It Pays
+
+**Nothing. Do not put a number here.**
+
+The Odom place has no money, the family has nothing to give, and the only question the encounter actually asks is what happens to the children who are still alive. A payment would answer a different question, and a worse one.
+
+If the party takes the children somewhere — Steele's orphanage is the standing answer (`characters/steele.md`) — that is the outcome. It is not a transaction and nobody thanks them in coin.
+
+---
+
 ## Related Documents
 
 - `locations/fog-basin.md` — where this sits in the world

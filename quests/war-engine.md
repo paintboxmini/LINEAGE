@@ -222,3 +222,13 @@ Metal scraping on metal. Gradual. Unhurried.
 No one announces victory. No one declares failure.
 
 The weapon fired. The world absorbed it. And something inside the engine continues, as though the event was merely a scheduled function.
+
+---
+
+## What It Pays
+
+**~160 gold of value** — a session at Tier 2 (`rules/equipment.md`, Pacing), paid by whoever sent them.
+
+**But the contract was to disable a war machine, and there is no machine to disable.** Whatever the party does here, they will be reporting something their employer did not ask for and may not believe. How that lands is the GM's call: paid in full for a job nobody can verify, paid partially and quietly, or paid and then asked never to mention it again.
+
+The version to avoid is the employer simply accepting the story and handing over coin. Somebody sent a party to break an engine; they came back saying the castle *is* the engine. That is a problem for the person holding the purse.

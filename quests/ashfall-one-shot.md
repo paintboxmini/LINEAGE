@@ -75,3 +75,13 @@ See `bestiary/tithe-engine.md` and `bestiary/ashgrazer.md`.
 **Remove:** Obsidian statue guardians. Chest puzzles. Mural exposition. Psychological pressure.
 
 **Keep:** Fossil towers. Engines under ash. Fires that burn cold. Embers that flare unpredictably.
+
+---
+
+## What It Pays
+
+**~160 gold of value per session** — Tier 2 rates (`rules/equipment.md`, Pacing), across this session and `quests/war-engine.md`.
+
+Somebody sent them (see `quests/war-engine.md`, Core Concept), and whoever that is pays on delivery rather than up front, because Ashfall has a reputation and advances do not come back. The GM decides who — the Regency wanting the Wastes surveyed, a faction wanting the Engine quiet, or a private party who will not say why.
+
+**Salvage is the other half.** The War Relic Layer is the real payday and is not the employer's business. Anything the party carries out of the ash is theirs to sell, and Ashfall relics price well above ordinary goods precisely because so few people come back with any.
