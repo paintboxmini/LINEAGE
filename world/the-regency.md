@@ -14,7 +14,7 @@ This is the official position. The actual history is different. See **The Pendra
 
 ## Council Members
 
-Each member carries an animal title. Officially: informal, earned or assigned by reputation. Actually: the shape the Seat left on them.
+Each member carries an animal title. Officially: informal, earned or assigned by reputation. Actually: the shape the Seat left on them — for the five who were in the room. Isabella and Percival came later and have no such mark; theirs are titles in the official sense only, taken up because that is what a council member has. Nobody has ever said this out loud, and neither of them knows there is a difference.
 
 **Original members** (present at the Pendragon Attempt): Oswald, Cedric, Elara, Archibald, Eveline.
 **Later additions** (recruited after): Isabella, Percival.
