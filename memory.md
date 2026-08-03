@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A1 — Gold pacing clarified as per character.** The rule never specified; Drew's call is per character, ~5 sessions to a first Tier 1 item each. Rule and all eight quest reward lines updated; the intended session spine recorded in Campaign Status as what the number is calibrated against.
+
 **[2026-08-02] A2 — Card trading at the Underground Bazaar.** Cards sold freely, bought rarely, paid for in cards/memories/secrets and never coin; tags survive a trade. `rules/items.md`'s Bazaar "gap" replaced with the answer. Closes the final entry in `unresolved-concerns.md`. Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A1 — Reward lines on all fourteen quests.** Nine paid from the pacing rule; five state plainly that they pay nothing and why (`sour-tomatoes`, `the-wallows-descent`, both Hollow entrances, `the-abandoned-homestead`). Closes the last pacing follow-up. Full reasoning in Standing Reasoning.
@@ -42,6 +44,18 @@ Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty mea
 ## Campaign Status
 
 **Session 1 played.** Party: Frost (Ollie, Mind 3/Body 3/Soul 3, HP 15) and Steele (Kevin, Mind 3/Body 4/Soul 2, HP 17 under new HP formula) — two members, test run. They made it halfway to Briarwatch. Decklists recorded in `characters/frost.md` and `characters/steele.md` *(moved from `testcampaigndecks/`, 2026-08-01 — that directory is retired; the Oracle deck now lives in `Oracle/baseoracledeck.md`)*, Oracle picks logged (Frost: Spark of Violence; Steele: Paradox).
+
+**Intended session spine (Drew, 2026-08-02)** — the shape the gold pacing is calibrated against:
+
+| Session | Where |
+|---|---|
+| 1 | Vulture's Nest → Roadhouse → Briarwatch, ending at the ruins about to go into the burrows |
+| 2 | The Hollow solved |
+| 3 | Turnroot Weald |
+| 4 | Turnroot finished |
+| 5 | Eclipseria — the capital |
+
+This is why gear pacing targets five sessions to a first Tier 1 item **per character**: it lands each character's first real equipment at roughly the moment the campaign reaches the city that sells it. Not a schedule to enforce — a reference the economy was built against.
 
 **Combat simulator** (`combatsimulations/`) — *rewritten 2026-08-01, audit; the previous version of this paragraph (roster: frost/steele/mire only, "Wound" terminology, "team sim not built yet") had gone stale and is archived at `archives/key-design-decisions.md`.*
 Two engines, both Python, no dependencies: `engine.py` (1v1 duels, `run.py`) and `team_engine.py` (N-vs-N battles, `team_run.py`), sharing `content.py`'s card definitions. 23 decks currently in `ROSTER` (22 archetypes/characters + `burnout`, a diagnostic deck that exists only to keep the Exhaust path executing) — Frost/Steele are the one real hand-built ground-truth pair (see Standing Reasoning); everything else is built in-repo with varying depth of Drew's input. Five policy brains: random/reader/greedy/tactician/punisher. Design instrument only, not canon. Outputs: errata queue (`rulings-log.md`) + Monte Carlo balance stats, including team-battle death-rate tracking against Drew's "a PC dies ~once per 20 sessions" target.
@@ -125,6 +139,11 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Gold pacing is per character, not per party — and the rule as first written never said which.** Drew asked directly; the answer is per character, first Tier 1 item at ~5 sessions each.
+  - **This was a gap I noticed and then left.** While designing I worked out that 40 gold a session party-wide would take a four-person party twenty sessions to equip, wrote it down in chat as a consideration, and then wrote the rule saying "the party" without resolving it either way. Drew had to ask. The failure wasn't the ambiguity, it was noticing the ambiguity and shipping anyway.
+  - **Fixed at the source and downstream.** `rules/equipment.md` now states per-character explicitly, gives the multiply-by-party-size instruction, and says a four-person Tier 1 session is ~160 gold between them. All eight quest reward lines restated as per-character figures so they scale automatically rather than needing a second pass when party size changes.
+  - **The number stopped being arbitrary once Drew gave the session spine.** Session 1 ends at the ruins, 2 solves the Hollow, 3–4 are Turnroot, 5 is the capital. Five sessions to a first Tier 1 item means **gear arrives at the moment the party first stands somewhere that sells it**. That's now written into the rule as *why five*, and the spine is recorded in Campaign Status — the pacing was calibrated against a real campaign shape, not picked off a curve.
 
 **[2026-08-02] Card trading at the Underground Bazaar — the last open concern, closed by being answered rather than filled. Drew: "the underground bazaar is where card trading happens. it's rare outside of the bazaar."** The concern had read "the Bazaar has zero mechanical items — a real gap." It was never an items gap. The Bazaar doesn't sell items; it sells cards, and no `items/underground-bazaar-items.md` is coming.
   - **Most of it was already written in two files nobody had connected.** `locations/underground-bazaar.md` already said *"Players who spend time in the bazaar may begin acquiring experiences worth crystallizing. Cards in this system represent those experiences"* — the soul economy was always described as trading crystallized experience. And `world/lineage.md` already settled provenance by saying the tag *"remembers the tradition."* Drew's sentence completed a thought the repo had been holding in two halves.

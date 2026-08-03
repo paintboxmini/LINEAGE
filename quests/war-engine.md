@@ -227,7 +227,7 @@ The weapon fired. The world absorbed it. And something inside the engine continu
 
 ## What It Pays
 
-**~160 gold of value** — a session at Tier 2 (`rules/equipment.md`, Pacing), paid by whoever sent them.
+**~160 gold per character** — a session at Tier 2 (`rules/equipment.md`, Pacing; multiply by party size), paid by whoever sent them.
 
 **But the contract was to disable a war machine, and there is no machine to disable.** Whatever the party does here, they will be reporting something their employer did not ask for and may not believe. How that lands is the GM's call: paid in full for a job nobody can verify, paid partially and quietly, or paid and then asked never to mention it again.
 

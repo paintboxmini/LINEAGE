@@ -80,7 +80,7 @@ See `bestiary/tithe-engine.md` and `bestiary/ashgrazer.md`.
 
 ## What It Pays
 
-**~160 gold of value per session** — Tier 2 rates (`rules/equipment.md`, Pacing), across this session and `quests/war-engine.md`.
+**~160 gold per character per session** — Tier 2 rates (`rules/equipment.md`, Pacing; multiply by party size), across this session and `quests/war-engine.md`.
 
 Somebody sent them (see `quests/war-engine.md`, Core Concept), and whoever that is pays on delivery rather than up front, because Ashfall has a reputation and advances do not come back. The GM decides who — the Regency wanting the Wastes surveyed, a faction wanting the Engine quiet, or a private party who will not say why.
 

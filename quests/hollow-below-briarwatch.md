@@ -328,7 +328,7 @@ Players may notice the recurring mark pattern if they look closely. They do not 
 
 ## What Iron Pays
 
-Roughly a session's work at Tier 1 — about **40 gold** of value (`rules/equipment.md`, Pacing) — and he does not hand it over as coin, because he does not have it as coin.
+Roughly a session's work at Tier 1 — about **40 gold per character** (`rules/equipment.md`, Pacing; multiply by party size) — and he does not hand it over as coin, because he does not have it as coin.
 
 What he has is a farm that is still standing because of them. Any of these, or a mix, and the GM should pick the one the table has earned:
 

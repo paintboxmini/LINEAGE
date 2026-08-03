@@ -364,7 +364,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 
 ## What It Pays
 
-This is a framework rather than a single session, so it pays by the session rather than in a lump: **~40 gold of value per session at Tier 1**, rising with the party (`rules/equipment.md`, Pacing).
+This is a framework rather than a single session, so it pays by the session rather than in a lump: **~40 gold per character per session at Tier 1**, rising with the party (`rules/equipment.md`, Pacing; multiply by party size).
 
 **Most of it should arrive as harvest, not as fee.** The Weald is the most thoroughly priced region in the world — `items/turnroot-weald-items.md` lists what things are worth and Senshi at the Gilded Tusk buys specimens outright. A party that engages with the forest as a place with things in it will out-earn a party waiting to be paid, which is the correct incentive for this region and worth letting them discover rather than telling them.
 

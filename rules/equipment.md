@@ -55,15 +55,19 @@ The Gilded Tusk's menu (`locations/gilded-tusk.md`) shows the whole range in one
 
 ## Pacing — How Fast Gear Should Arrive
 
-**A session's work is worth about one fifth of the tier the party is currently shopping in.**
+**A session's work is worth about one fifth of the tier being shopped for — per character, not per party.**
 
-| Shopping at | A session pays roughly | Sessions to afford it |
+| Shopping at | A session pays each character | Sessions to afford it |
 |---|---|---|
 | Tier 1 (~200 gold) | ~40 gold | ~5 |
 | Tier 2 (~800 gold) | ~160 gold | ~5 |
 | Tier 3 (~2,000 gold) | ~400 gold | ~5 |
 
+**Multiply by party size for what a job actually pays.** A four-person party finishing a Tier 1 session has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+
 The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
+
+**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria (`memory.md`, Campaign Status). Gear arrives when the party first stands somewhere that sells it.
 
 **Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
 

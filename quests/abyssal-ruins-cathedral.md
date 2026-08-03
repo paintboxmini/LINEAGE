@@ -67,6 +67,6 @@ See `bestiary/gluttony-abomination.md`.
 
 **No commission — nobody sent them.** This is a delve, and the ruins pay in what the ruins contain.
 
-The Gluttony Abomination's cathedral is a lair with centuries of offerings in it; treat what is recoverable as **~160 gold of value** (a session at Tier 2, `rules/equipment.md`), weighted toward things that are awkward to carry and awkward to sell.
+The Gluttony Abomination's cathedral is a lair with centuries of offerings in it; treat what is recoverable as **~160 gold per character** (a session at Tier 2, `rules/equipment.md`; multiply by party size), weighted toward things that are awkward to carry and awkward to sell.
 
 **The crystal in the chamber beyond is not loot and must not be priced.** It is a stabilising force; removing it collapses the passage the party crossed to get here. Any GM tempted to let them sell it should read that section again.
