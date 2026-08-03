@@ -8,7 +8,7 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 
 ---
 
-**CHARGE**
+**HEADLONG**
 RED — BODY — COIL
 Attack: Body + d8
 Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
@@ -18,7 +18,7 @@ Range: Both
 
 ---
 
-**TRAMPLE**
+**WIDE SWING**
 RED — BODY — COIL
 Attack: Body + d6
 Effect: Deal 2 damage to one other Frontline enemy of your choice.
@@ -61,7 +61,7 @@ Range: Both
 **BOUND TO THE STONE**
 GREEN — SOUL — COIL
 Attack: Soul + d4
-Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Injury.
+Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Wound.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"The labyrinth does not end. Neither does it."*

@@ -61,9 +61,9 @@ body {
 }
 
 .card-name {
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.12;
   flex: 1;
   letter-spacing: 0.01em;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .card-sub {
-  font-size: 6.5pt;
+  font-size: 7.5pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 3px;
@@ -97,14 +97,14 @@ body {
 }
 
 .tbl td {
-  font-size: 7.5pt;
-  line-height: 1.3;
+  font-size: 9.5pt;
+  line-height: 1.28;
   vertical-align: top;
   padding: 1.5px 0;
 }
 
 .tbl .lbl {
-  font-size: 6pt;
+  font-size: 7pt;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -115,9 +115,18 @@ body {
   padding-top: 2px;
 }
 
+.card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
+.card.dense .flavor { font-size: 7pt; }
+.card.dense .card-name { font-size: 11pt; }
+
+.card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
+.card.denser .flavor { font-size: 6.2pt; }
+.card.denser .card-name { font-size: 10pt; }
+.card.denser .tbl .lbl { font-size: 6pt; }
+
 .flavor {
   font-style: italic;
-  font-size: 6.5pt;
+  font-size: 8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -126,8 +135,8 @@ body {
 }
 
 .item-effect {
-  font-size: 7.5pt;
-  line-height: 1.4;
+  font-size: 9.5pt;
+  line-height: 1.35;
   flex: 1;
 }
 </style>
@@ -140,7 +149,7 @@ body {
   </div>
   <div class="card-sub" style="color:#7A5C10">Consumable — Translucent, bioluminescent</div>
   <div class="divider" style="background:#7A5C1044"></div>
-  <div class="item-effect">Use: Heal 2 HP to self or one ally. The leaf goes dark when spent.</div>
+  <div class="item-effect">Use: Heal 4 HP to self or one ally (Item Action). The leaf goes dark when spent.<br>Can be dried and ground into **Luminova Powder** (`items/turnroot-weald-items.md`) for increased potency — a real crafting step, not a duplicate item. The raw leaf is weaker but immediate; the powder trades a processing step for roughly double the healing.</div>
 </div>
 <div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
   <div class="card-top">
@@ -148,7 +157,7 @@ body {
   </div>
   <div class="card-sub" style="color:#7A5C10">Consumable — Hollow clay bowl, Borrower-made</div>
   <div class="divider" style="background:#7A5C1044"></div>
-  <div class="item-effect">Use (1) while exploring: Press to any stone surface and listen. If an ambush is nearby, the bowl rattles — your party cannot be surprised this encounter.</div>
+  <div class="item-effect"></div>
 </div>
 <div class="card" style="background:#FBF8F0;border-color:#7A5C1099">
   <div class="card-top">
@@ -156,7 +165,7 @@ body {
   </div>
   <div class="card-sub" style="color:#7A5C10">Consumable — Clay-marked leather, Borrower cartography</div>
   <div class="divider" style="background:#7A5C1044"></div>
-  <div class="item-effect">Use (1): Your party acts before all Stonecoils at the start of the next combat. Cannot be used after combat begins.</div>
+  <div class="item-effect"></div>
 </div>
 </div>
 </body>

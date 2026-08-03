@@ -7,6 +7,8 @@
 **Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 19)*
 **Creature Threat Rating:** 11
 
+
+**Deck (11 — 2 Blue / 5 Red / 4 Green):** FOREST MEMORY, TAINT *(blue)* · ROOT LASH, IRON GRIP, REND, PRESS THE WOUND, RETALIATE *(red)* · BIND, BRISTLE, PATIENCE OF STONE, GRAFT *(green)*
 **Position:** Immobile. Always counts as being in both Frontline and Backline (gigantic).
 
 ---

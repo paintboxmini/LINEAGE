@@ -73,12 +73,12 @@ def apply_stat_drain(target, stat, n=1):
     debuff(target, lambda: target.adjust(stat, -n))
 
 
-def apply_injury(engine, target):
+def apply_wound(engine, target):
     # Status-card injection was Ward-blockable (routed through debuff()) until
     # 2026-08-01, when Drew narrowed Debuff's scope to exclude it, along with
     # hand and deck manipulation (rules/card-glossary.md). Calls engine
     # directly now — never gated by Ward.
-    engine.insert_injury(target)
+    engine.insert_wound(target)
 
 
 def apply_exhaust(engine, target, n=1):
@@ -189,7 +189,7 @@ def _trace_defense(engine, me, foe):
 
 def _twin_strike_dmg(engine, me, foe):
     RULING("twin-strike-double-roll",
-           "TWIN STRIKE '(Soul + d2) x2' is read as two independent (Soul + d2) "
+           "TWIN STRIKE '(Soul + d4) x2' is read as two independent (Soul + d4) "
            "instances summed, not one roll doubled.")
     # Two independent damage rolls means a held Deadly/Weak stack can apply
     # to either (or, with 2+ stacks, both) — each _rolled_die call checks and
@@ -259,7 +259,7 @@ def _climb_effect(engine, me, foe):
     bottom = [me.deck.pop(0) for _ in range(n)]   # index 0 = bottom (deck.pop() draws the end = top)
     for c in bottom:
         if c.is_status:
-            me.discard.append(c)    # bury the Injury properly rather than hand it back the top
+            me.discard.append(c)    # bury the Wound properly rather than hand it back the top
         else:
             me.deck.append(c)       # place on top (append = top, drawn next)
 
@@ -274,7 +274,7 @@ def _forget_effect(engine, me, foe):
     # Ward-blockable 2026-07-24 through 2026-08-01, then reverted: Drew
     # narrowed Debuff's scope to exclude hand manipulation, so forced discard
     # ignores Ward again (rules/card-glossary.md).
-    # Discard a real card, not an Injury — forcing away their Injury would help them.
+    # Discard a real card, not a Wound — forcing away their Wound would help them.
     reals = [i for i, c in enumerate(foe.hand) if not c.is_status]
     if reals:
         foe.discard.append(foe.hand.pop(engine.rng.choice(reals)))
@@ -400,7 +400,7 @@ def _anticipate_defense(engine, me, foe):
 
 def _renewal_effect(engine, me, foe):
     # Fixed 2026-07-24: was unconditional heal, no discard-then-draw branch
-    # at all. Real per-ally choice now: cycle a held status card (Injury/
+    # at all. Real per-ally choice now: cycle a held status card (Wound/
     # Exhaust) if there's one worth clearing, otherwise take the flat heal —
     # a simple, real heuristic for "which is better right now" rather than
     # always defaulting to the same branch.
@@ -425,20 +425,20 @@ def _twin_strike_defense(engine, me, foe):
     apply_weak(foe)   # foe = attacker here
 
 
-# ==================== MIRE (Injury-attrition, 3/3/3) ==========================
-# A control deck built on shuffling Injuries into the opponent's deck (Rend,
-# Taint), then cashing them in (Press the Injury), plus combat-long stat erosion
+# ==================== MIRE (Wound-attrition, 3/3/3) ==========================
+# A control deck built on shuffling Wounds into the opponent's deck (Rend,
+# Taint), then cashing them in (Press the Wound), plus combat-long stat erosion
 # (Wither -Body, Erode -Soul). Perfectly balanced 3R/3B/3G across the RPS wheel.
 
 
-def remove_injuries(target, n=None):
-    """Permanently destroy up to n Injuries (all if n is None) from HAND + DISCARD
-    only — never the deck (Drew: no tracking/searching hidden Injuries)."""
+def remove_wounds(target, n=None):
+    """Permanently destroy up to n Wounds (all if n is None) from HAND + DISCARD
+    only — never the deck (Drew: no tracking/searching hidden Wounds)."""
     removed = 0
     for pile in (target.hand, target.discard):
         i = 0
         while i < len(pile):
-            if pile[i].is_status and pile[i].name == 'INJURY' and (n is None or removed < n):
+            if pile[i].is_status and pile[i].name == 'WOUND' and (n is None or removed < n):
                 pile.pop(i)
                 removed += 1
             else:
@@ -447,8 +447,8 @@ def remove_injuries(target, n=None):
 
 
 def remove_status_cards(target, n=None):
-    """Permanently destroy up to n status cards — Injury OR Exhaust — from HAND
-    + DISCARD only, never the deck. Press the Injury's Defensive Bonus (broadened
+    """Permanently destroy up to n status cards — Wound OR Exhaust — from HAND
+    + DISCARD only, never the deck. Press the Wound's Defensive Bonus (broadened
     2026-07-24 to match its now-broader status_cards_visible() count)."""
     removed = 0
     for pile in (target.hand, target.discard):
@@ -476,7 +476,7 @@ def _balance_defense(engine, me, foe):
 
 
 def _wither_effect(engine, me, foe):
-    apply_stat_drain(foe, 'body')   # -1 Body AND -3 max HP; no self-Injury cost anymore
+    apply_stat_drain(foe, 'body')   # -1 Body AND -3 max HP; no self-Wound cost anymore
 
 
 def _mockery_effect(engine, me, foe):
@@ -490,21 +490,21 @@ def _mockery_defense(engine, me, foe):
 # --- Red ---
 def _rend_effect(engine, me, foe):
     if me._last_hit > 0:
-        apply_injury(engine, foe)
+        apply_wound(engine, foe)
 
 
 def _rend_defense(engine, me, foe):
     me._rend_guard = True
 
 
-def _press_the_injury_dmg(engine, me, foe):
-    # Broadened 2026-07-24: counts every status card (Injury + Exhaust), not
-    # just Injury — Drew's call (card-glossary.md's Debuff/status-card scope
+def _press_the_wound_dmg(engine, me, foe):
+    # Broadened 2026-07-24: counts every status card (Wound + Exhaust), not
+    # just Wound — Drew's call (card-glossary.md's Debuff/status-card scope
     # already treats them as the same kind of thing).
     return me.eff('body') + roll(6, engine.rng) + _deadly_weak_bonus(engine.rng, me) + 2 * foe.status_cards_visible()
 
 
-def _press_the_injury_defense(engine, me, foe):
+def _press_the_wound_defense(engine, me, foe):
     n = me.status_cards_visible()
     if n:
         engine.heal(me, 2 * n)
@@ -545,11 +545,11 @@ def _unname_defense(engine, me, foe):
 
 
 def _taint_effect(engine, me, foe):
-    apply_injury(engine, foe)
+    apply_wound(engine, foe)
 
 
 def _taint_defense(engine, me, foe):
-    apply_injury(engine, foe)   # foe = attacker here
+    apply_wound(engine, foe)   # foe = attacker here
 
 
 def _erode_effect(engine, me, foe):
@@ -722,9 +722,9 @@ def _analyze_effect(engine, me, foe):
         engine.scry(a, a, 2)
 
 def _study_effect(engine, me, foe):
-    for _ in range(2):                     # discard 2, draw 2 — Injuries first if held
-        injuries = [c for c in me.hand if c.is_status and c.name == 'INJURY']
-        drop = injuries[0] if injuries else next((c for c in me.hand if not c.is_status), None)
+    for _ in range(2):                     # discard 2, draw 2 — Wounds first if held
+        wounds = [c for c in me.hand if c.is_status and c.name == 'WOUND']
+        drop = wounds[0] if wounds else next((c for c in me.hand if not c.is_status), None)
         if drop is None:
             break
         me.hand.remove(drop); me.discard.append(drop)
@@ -893,13 +893,13 @@ def _field_medicine_effect(engine, me, foe):
     allies = engine.allies(me)
     if not allies:
         return
-    a = max(allies, key=lambda x: x.injuries_visible())
-    if a.injuries_visible() > 0:
-        remove_injuries(a)
+    a = max(allies, key=lambda x: x.wounds_visible())
+    if a.wounds_visible() > 0:
+        remove_wounds(a)
         engine.heal(a, 3, source=me)
 def _field_medicine_defense(engine, me, foe):
-    if me.injuries_visible() > 0:
-        remove_injuries(me)
+    if me.wounds_visible() > 0:
+        remove_wounds(me)
     engine.heal(me, 3)
 
 def _dead_reckoning_effect(engine, me, foe):
@@ -1051,9 +1051,9 @@ def _read_defense(engine, me, foe):
         foe.discard.append(foe.hand.pop(engine.rng.choice(matches)))
 
 def _take_any_status(who):
-    """Find and remove one status card (Injury or Exhaust) from hand or
+    """Find and remove one status card (Wound or Exhaust) from hand or
     discard — whichever this combatant is holding. Returns the name found
-    ('INJURY'/'EXHAUST') or None. Broadened 2026-07-24 (was Injury-in-hand
+    ('WOUND'/'EXHAUST') or None. Broadened 2026-07-24 (was Wound-in-hand
     only) per Drew's direct text: "transfer 1 status card from your hand or
     discard.\""""
     for zone in (who.hand, who.discard):
@@ -1065,12 +1065,12 @@ def _take_any_status(who):
     return None
 
 def _give_status(engine, target, name):
-    if name == 'INJURY':
-        engine.insert_injury(target)
+    if name == 'WOUND':
+        engine.insert_wound(target)
     elif name == 'EXHAUST':
         engine.insert_exhaust(target)
 
-def _carried_injury_effect(engine, me, foe):
+def _carried_wound_effect(engine, me, foe):
     # Ally-sourced — a genuine no-op in 1v1 (You Are Not Your Own Ally), same
     # footing as every other "from any ally" effect in this file. Correct in
     # team play: pulls from whichever ally is actually carrying a status card.
@@ -1084,7 +1084,7 @@ def _carried_injury_effect(engine, me, foe):
     name = _take_any_status(source)
     if name:
         _give_status(engine, foe, name)
-def _carried_injury_defense(engine, me, foe):
+def _carried_wound_defense(engine, me, foe):
     name = _take_any_status(me)
     if name:
         _give_status(engine, foe, name)
@@ -1435,7 +1435,7 @@ def _level_the_field_defense(engine, me, foe):
 # including any Deadly/Weak already rolled into it) before any other bonus
 # applies. Gated hard by design, not just by naming it and hoping: the
 # trigger needs an already-Staggered target — real setup elsewhere, since
-# Staggered doesn't just happen — and the base die is kept low (d2) so
+# Staggered doesn't just happen — and the base die is kept low (d4) so
 # what's being doubled is small on its own; the whole payoff lives in the
 # multiplier, not a separately-large base too.
 def _exposed_damage(engine, me, foe):
@@ -1673,8 +1673,16 @@ def _overdrive_defense(engine, me, foe):
 # 3 HP" — applies only on a win (damage= never fires on a tie), not
 # unconditionally regardless of outcome.
 def _overcommit_dmg(engine, me, foe):
+    # +1d6 added 2026-08-02. As printed the card was STRICTLY DOMINATED by
+    # STRIKE — same color, stat, d10 and Range, but STRIKE also carries a real
+    # Defensive Bonus and no self-debuff, so there was no board state where you
+    # would rather hold this. Measured at 44.1% vs STRIKE in decks identical but
+    # for the one card; +1d6 brings it to 50.6%, +2d6 overshoots to 57.5%.
+    # The Vulnerable and the absent Defensive Bonus both stay — the card's whole
+    # identity is offence bought with exposure, and it now actually buys some.
     me.vulnerable += 1
-    return me.eff('body') + _rolled_die(10, engine.rng, me)
+    return (me.eff('body') + _rolled_die(10, engine.rng, me)
+            + engine.rng.randint(1, 6))
 
 # ==================== Bestiary promotions to core =============================
 # First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
@@ -1857,7 +1865,7 @@ def _vibration_lock_defense(engine, me, foe):
     engine.scry(me, me, 1)
 
 def _shed_skin_effect(engine, me, foe):
-    remove_injuries(me, 1)
+    remove_wounds(me, 1)
     me.evade += 1
 def _shed_skin_defense(engine, me, foe):
     if me.discard:
@@ -1958,7 +1966,7 @@ def _youre_next_defense(engine, me, foe):
     engine.deal(foe, 3, unpreventable=True)
 
 # TABLE STAKES (Gambler archetype, core Red) — discard 1 random card from
-# your own hand (any card, status cards included — discarding an Injury this
+# your own hand (any card, status cards included — discarding a Wound this
 # way is a fine outcome, not excluded the way CONSUME excludes them from its
 # own "destroy for value" cost); the discarded card's own printed color
 # decides what happens. Colorless discards (FOLLOW-UP, BECOMING) or an empty
@@ -2121,8 +2129,8 @@ def build_cards():
     add("REND", 'R', 'body', 'melee', 6,
         effect=_rend_effect, defense=_rend_defense)
     add("EQUAL FOOTING", 'R', 'body', 'melee', 8, wins_ties=True)   # Special Rule, vanilla otherwise
-    add("PRESS THE INJURY", 'R', 'body', 'melee', 6,
-        damage=_press_the_injury_dmg, defense=_press_the_injury_defense)
+    add("PRESS THE WOUND", 'R', 'body', 'melee', 6,
+        damage=_press_the_wound_dmg, defense=_press_the_wound_defense)
     add("DIG IN", 'R', 'body', 'melee', 4, effect=_dig_in_effect, defense=_dig_in_defense)
     # Mire — Blue
     add("PARTITION", 'B', 'mind', 'ranged', 4,
@@ -2202,8 +2210,8 @@ def build_cards():
     add("ATTUNE", 'G', 'soul', 'melee', 6, effect=_attune_effect, defense=_attune_defense)
     add("BIND", 'G', 'soul', 'melee', 4, effect=_bind_effect, defense=_bind_defense)
     add("READ", 'G', 'soul', 'ranged', 6, effect=_read_effect, defense=_read_defense)
-    add("CARRIED INJURY", 'G', 'soul', 'both', 4,
-        effect=_carried_injury_effect, defense=_carried_injury_defense)
+    add("CARRIED WOUND", 'G', 'soul', 'both', 4,
+        effect=_carried_wound_effect, defense=_carried_wound_defense)
 
     add("ENDURE", 'R', 'body', 'melee', 4, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'melee', 6, effect=_weathered_effect, defense=_weathered_defense)
@@ -2237,7 +2245,7 @@ def build_cards():
         effect=_hold_fast_effect, defense=_hold_fast_defense)
     add("IRON ANCHOR", 'B', 'mind', 'both', 6,
         effect=_iron_anchor_effect, defense=_iron_anchor_defense)
-    add("WATCHES FEET", 'G', 'soul', 'melee', 4,
+    add("WATCHES FEET", 'G', 'soul', 'both', 4,
         effect=_watches_feet_effect, defense=_watches_feet_defense)
     add("KNOWN GROUND", 'G', 'soul', 'both', 6,
         effect=_known_ground_effect, defense=_known_ground_defense)
@@ -2387,7 +2395,7 @@ def build_cards():
         effect=_quickstep_effect, defense=_quickstep_defense)
 
     # Status card
-    add("INJURY", None, None, None, None, is_status=True)
+    add("WOUND", None, None, None, None, is_status=True)
     add("EXHAUST", None, None, None, None, is_status=True)
 
     return C
@@ -2405,7 +2413,7 @@ STEELE_DECK = [
 
 MIRE_DECK = [
     "BALANCE", "WITHER", "MOCKERY", "REND", "EQUAL FOOTING",
-    "PRESS THE INJURY", "PARTITION", "TAINT", "ERODE",
+    "PRESS THE WOUND", "PARTITION", "TAINT", "ERODE",
 ]
 
 # VOLK — the stat-maxed test dummy: Body 5 (the cap), red-heavy. Represents the
@@ -2624,8 +2632,25 @@ ORACLE_DECK = [
 ]
 
 # registry so run.py can pit any two decks against each other
+# Burnout — the Exhaust diagnostic deck (3/3/3).
+# Added 2026-08-02. Not a design archetype and not anyone's character: it exists
+# because ZERO of the other 22 roster decks contain a card that can produce an
+# Exhaust, so the whole Exhaust path — insert_exhaust, the destroy_exhaust rest
+# action, and idle_recovery's routing to it — had never executed once in a
+# simulation despite being fully implemented. A mechanic nothing exercises is
+# indistinguishable from a mechanic that is broken. This deck runs both of the
+# core cards that self-inflict Exhaust (OVERDRIVE, UNMAKE) so the path stays
+# live and any regression in it shows up in an ordinary sweep.
+BURNOUT_STATS = dict(mind=3, body=3, soul=3)
+BURNOUT_DECK = [
+    "UNMAKE", "FOCUS", "STUDY",             # blue
+    "OVERDRIVE", "STRIKE", "ENDURE",        # red
+    "FLOW", "WITNESS", "SUPPORT",           # green
+]
+
 ROSTER = {
     "frost":  (FROST_STATS, FROST_DECK),
+    "burnout": (BURNOUT_STATS, BURNOUT_DECK),  # Exhaust-path diagnostic, not an archetype
     "steele": (STEELE_STATS, STEELE_DECK),
     "mire":   (MIRE_STATS, MIRE_DECK),
     "volk":   (VOLK_STATS, VOLK_DECK),
@@ -2695,10 +2720,10 @@ ROSTER = {
 #                            is inside a RULING() comment string, not real
 #                            conditional logic)
 #   cost:hp / cost:exhaust / cost:discard
-#                          — self-cost mechanism paid to cast. (Injury-as-
+#                          — self-cost mechanism paid to cast. (Wound-as-
 #                            cost checked directly, 2026-07-29 — no
 #                            registered card implements it; a generic
-#                            apply_injury() helper exists but nothing calls
+#                            apply_wound() helper exists but nothing calls
 #                            it. cost:discard corrected down hard from an
 #                            initial rough-sweep guess of ~24 to a verified
 #                            7 — that sweep was matching "discard" anywhere,
@@ -2720,7 +2745,7 @@ ROSTER = {
 #   glyph                  — places a persistent Mason Glyph/Object
 #   ongoing                — deferred/anchored payout (me.ongoing.append)
 #   status_transfer        — moves a status between combatants (steal, copy,
-#                            mirror, strip, or push your own Injury/Exhaust
+#                            mirror, strip, or push your own Wound/Exhaust
 #                            onto a foe) rather than granting a fresh one
 #   team_only              — reads "ally"/"allies" (engine.allies(...)) — a
 #                            real no-op in a 1v1 Duel; needs
@@ -2756,8 +2781,8 @@ ROSTER = {
 # read each hit), not by trusting a rough text sweep — an early pass had
 # real errors (movement's first draft included cards that only READ
 # position, not moved anyone; cost:exhaust missed OVERDRIVE; a rumored
-# ~7-card Injury-infliction bucket turned out to be zero cards, just the
-# word "Injury" in a couple of card names; cost:discard was off by 8x on
+# ~7-card Wound-infliction bucket turned out to be zero cards, just the
+# word "Wound" in a couple of card names; cost:discard was off by 8x on
 # the first pass, then still 3 cards short even after that correction —
 # see cost:discard's own note above for the full trail).
 # Two more incidental findings while verifying, worth naming rather than
@@ -2857,7 +2882,7 @@ CARD_TAGS = {
     "heal": frozenset({
         "BLOOD IN THE GAP", "BLOOD TITHE", "CLIFF SONG", "CONSUME",
         "DISSOLVE AND KEEP", "EMERGENCY REPAIRS", "ENDURE", "FIELD MEDICINE",
-        "PARADOX", "PRESS THE INJURY", "RECOVER", "RENEWAL", "SHARED BURDEN",
+        "PARADOX", "PRESS THE WOUND", "RECOVER", "RENEWAL", "SHARED BURDEN",
         "TABLE STAKES", "WITNESS",
     }),
     "scry": frozenset({
@@ -2876,10 +2901,10 @@ CARD_TAGS = {
     }),
     "status_transfer": frozenset({
         "WAITING GAME", "DRAIN", "UNMAKE", "LEVEL THE FIELD", "TRACE",
-        "CARRIED INJURY",
+        "CARRIED WOUND",
     }),
     "team_only": frozenset({
-        "ACCEPTANCE", "BLOOD TITHE", "CARRIED INJURY", "CLIFF SONG",
+        "ACCEPTANCE", "BLOOD TITHE", "CARRIED WOUND", "CLIFF SONG",
         "COMMUNION", "FIELD MEDICINE", "GUARD", "HEAVE AND HAUL",
         "PARTITION", "PATIENCE", "RALLY", "REALIGNMENT", "RENEWAL",
         "RESONATE", "ROOTED OATH", "SHARED BURDEN", "SHARPEN", "SUPPORT",

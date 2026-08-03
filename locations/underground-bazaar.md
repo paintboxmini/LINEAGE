@@ -44,6 +44,26 @@ Refugees and desperate people sell memories, sensations, and experiences to surv
 
 Players who spend time in the bazaar may begin acquiring experiences worth crystallizing. Cards in this system represent those experiences — named, concrete, discardable as power words when it matters.
 
+### Card Trading
+
+**This is where cards change hands. It effectively does not happen anywhere else.**
+
+The soul economy crystallizes experience into tradeable form, and a card *is* crystallized experience — a named, concrete way of acting that somebody learned somewhere. Elsewhere in the world a card is earned: from the Oracle, or from the place that taught it. Here it can simply be bought, from someone who needed to sell it more than they needed to keep it.
+
+**Selling is always open.** The bazaar will take any card off anyone — common ones included. It is not discerning, because the sellers are not in a position to negotiate. This is the refugee end of the soul economy and it is the same transaction the tattooist's needle is queued for: people getting what they can before they let go of the rest.
+
+**Once sold, it is gone.** The card leaves the deck permanently. No buy-back, no regret clause, and the vendor will not remember the seller.
+
+**Buying is rare, and the stock is not.** What sits on a table here is almost always **tagged** — a technique from somewhere specific, a way of doing things that some place or person still teaches. Nobody stocks the common stuff, because everyone already knows it. A party with money and no leverage will find nothing worth having; a party with something genuinely uncommon to trade will find they are suddenly very interesting.
+
+**Nothing here is bought with coin.** A card is experience, so it costs experience: another card, a real memory, or a secret with weight to it. A party that offers gold for a card is not haggling badly — they have misunderstood the shop, and the vendor will say so once and then stop talking.
+
+**The Pig's debt is unaffected either way** (below). He is not interested in pieces of people; he has a whole bazaar for that. What the party owes him accrues because they were here, not because of what they traded.
+
+**A bought card is a lineage you cannot personally back.** Its tag does not change hands — the tag records the tradition, not the transaction (`world/lineage.md`). Somebody walks out of here holding a WEALD card having never stood in the Weald. That is not a loophole; it is exactly what this market is, and the tag is what makes it legible.
+
+---
+
 ### The Pig's Debt
 
 Separate from the soul economy entirely. The Pig (Lord Archibald) provides the infrastructure that makes the bazaar possible. Everyone who spends time here accumulates debt — tracked by the gremlins.

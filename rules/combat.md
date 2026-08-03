@@ -125,7 +125,7 @@ Green (Soul)  beats  Blue  (Mind)
 **Defender wins** → no damage + defender triggers Defensive Bonus  
 **Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
 
-An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Injury," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
+An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
 
 A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land (`rules/combat-example.md`, Edge Cases), that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
 
@@ -137,7 +137,7 @@ The base roll is **Stat + die, with Deadly/Weak folded in** (`rules/card-glossar
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Armour** (flat reduction, creature passive) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 

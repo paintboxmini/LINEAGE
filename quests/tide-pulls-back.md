@@ -63,6 +63,8 @@ That night or the following morning: unusual activity at the river docks — Gla
 
 **The Void Runners** use stolen resonant items as weapons. Some of their crew are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read.
 
+Stat blocks: `bestiary/void-runner.md` and `bestiary/corrupted-bather.md`.
+
 **What the cargo reveals:**
 Kaine has been building a supply of resonant material. The Lightning Loop is the centerpiece but not the only item. He has been preparing for something larger than miracle performances.
 
@@ -139,7 +141,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **Steve:** still in the crowd somewhere. Still Steve. His bathing hasn't happened yet. That's a different story.
 
-*His arc continues later — see `experimental/steve-and-pip.md`.*
+*His arc continues later — see `characters/steve-and-pip.md`.*
 
 ---
 
@@ -155,12 +157,22 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 ---
 
+## What It Pays
+
+**~160 gold per character** across the arc — roughly a session at Tier 2 (`rules/equipment.md`, Pacing; multiply by party size).
+
+Mirel is not a patron. She is a person who needed to talk to someone outside her community, and she has nothing to give. The money comes from whichever faction ends up owing the party — the People of Promise if the community is protected, the Masons if the Reach is, the Tideward Compact if the smuggling line is broken in a way that suits them. Only one of them pays, and which one is the party's own doing.
+
+If the party has managed to make all three owe them something, that is worth more than gold and should be handled as standing, not coin.
+
+---
+
 ## Related Documents
 
 - `factions/people-of-promise.md`
 - `factions/the-masons.md`
-- `experimental/mirel.md`
-- `experimental/kaine.md`
-- `experimental/steve-and-pip.md`
+- `characters/mirel.md`
+- `characters/kaine.md`
+- `characters/steve-and-pip.md`
 - `items/lightning-loop.md`
 - `locations/glasslight-reach.md`

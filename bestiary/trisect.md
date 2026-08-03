@@ -1,6 +1,6 @@
 # The Trisect
 
-**Cards:** `cards/trisect-ashfall.md` *(pending)*
+**Cards:** `cards/trisect-ashfall.md`
 
 Three limbs. Radially symmetric — no front, no back, no preferred direction. Iron and compressed steel. Each limb terminates in a heavy flat plate that serves equally as a foot or a striking surface depending on what the Trisect decides.
 
@@ -13,6 +13,8 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 **Mind 5 / Body 5 / Soul 5 — HP 19**
 **Creature Threat Rating:** 15
 
+
+**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, EXPOSED, EVEN CHURN *(blue)* · SUNDER, CERTAIN CONTACT, REND, RHYTHM BREAK, IDLE TO ENGAGE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, LOW GREY HAZE *(green)*
 ---
 
 ## Passives
@@ -24,21 +26,21 @@ Each color's first hit kills one engine — pistons lock in that housing, its ex
 
 Track at the table: which colors have hit. The engines are visible. One dark, two running. Two dark, one running. Players can see exactly where they stand.
 
-**Resist 1**
-Iron chassis.
+**Armour 2**
+Iron chassis. Every hit that lands on the Trisect comes off two lighter — flat, permanent, never consumed. Wearing it down is the whole fight; chip damage barely registers.
 
 ---
 
 ## Actions
 
 **Piston Drive** *(attack)*
-Body + d6. A full-weight limb strike. Hits all Frontline targets simultaneously — the radial form gives it coverage no standard attacker matches.
+Body + d8. A full-weight limb strike. Hits all Frontline targets simultaneously — the radial form gives it coverage no standard attacker matches.
 
 **Exhaust Burst** *(attack)*
-Mind + d4. Hot gas vented directly at a target. Target gains Weak on their next attack.
+Mind + d6. Hot gas vented directly at a target. Target gains Weak on their next attack.
 
 **Fuel Seed** *(attack)*
-Soul + d2. Superheated particulate seeded into a target's lungs. Seeds 1 Exhaust card into target's deck.
+Soul + d4. Superheated particulate seeded into a target's lungs. Seeds 1 Exhaust card into target's deck.
 
 ---
 

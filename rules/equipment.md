@@ -20,9 +20,9 @@ Weapons and Armor both scale on the same three-tier system. Each tier is a **pow
 
 | Tier | Weapon (default spend) | Armor (default spend) | Approximate Value |
 |------|------------------------|------------------------|--------------------|
-| 1 | +1 attack damage | −1 damage received | ~200 gold |
-| 2 | +2 attack damage | −2 damage received | ~800 gold |
-| 3 | +3 attack damage | −3 damage received | ~2,000 gold |
+| 1 | +1 attack damage | Armour 1 | ~200 gold |
+| 2 | +2 attack damage | Armour 2 | ~800 gold |
+| 3 | +3 attack damage | Armour 3 | ~2,000 gold |
 
 The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.
 
@@ -37,9 +37,62 @@ The gold values are a reference point for pricing at market or as loot, not a ha
 **Worked examples, exactly as specified:**
 - *Tier 1 weapon:* inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)
 - *Tier 2 weapon:* +1 attack damage, and gain Deadly at the start of combat. (1 point flat, 1 point self-buff.)
-- *Tier 2 armor:* −1 damage received, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
+- *Tier 2 armor:* Armour 1, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
 
 This is a budget to design against, not a formula to solve — two tier-2 items should feel different from each other even though they cost the same.
+
+---
+
+## Currency
+
+**10 copper = 1 silver. 10 silver = 1 gold.**
+
+All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night's lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.
+
+The Gilded Tusk's menu (`locations/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
+
+---
+
+## Pacing — How Fast Gear Should Arrive
+
+**A session's work is worth about one fifth of the tier being shopped for — per character, not per party.**
+
+| Shopping at | A session pays each character | Sessions to afford it |
+|---|---|---|
+| Tier 1 (~200 gold) | ~40 gold | ~5 |
+| Tier 2 (~800 gold) | ~160 gold | ~5 |
+| Tier 3 (~2,000 gold) | ~400 gold | ~5 |
+
+**Multiply by party size for what a job actually pays.** A four-person party finishing a Tier 1 session has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+
+The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
+
+**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria (`memory.md`, Campaign Status). Gear arrives when the party first stands somewhere that sells it.
+
+**Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
+
+**The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
+
+## Pricing Consumables
+
+Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
+
+A consumable spends the same point once. **Price single-use items at roughly 15 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
+
+The anchor is already in the world: Luminova Leaves heal 4 HP for ~15 gold, and Luminova Powder heals 8 for ~30 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+
+Adjust from there for what actually happens at the table:
+
+- **A real drawback lowers the price.** Something that Roots you afterward, or costs a card every turn, is worth less than the same effect clean.
+- **Free-action use raises it.** Not spending your action is worth about a point on its own.
+- **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
+- **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
+
+**Not everything is priced in gold, and that is deliberate.** Pell sells fog goggles for a memory, a secret, or a name (`items/fog-basin-items.md`), and the Underground Bazaar is built on the same premise. An item with no gold price is not an oversight when its seller doesn't take gold — say what they take instead.
+
+**Found gear is off this curve entirely, and the campaign deliberately front-runs it once.** The Tollworn Plate at Seeker's Price (`quests/turnroot-weald-adventure.md`) is Tier 1 armor placed in session 4 — one session ahead of when anyone could afford it, before the Root Heart, for one character the party picks. That is not the curve breaking; it is the curve being one channel of two.
+
+**Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
 ---
 
@@ -61,9 +114,9 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 1:* Start combat with 1 Resist.
 - *Tier 1:* Inflict Staggered on the first enemy who successfully hits you each combat.
 - *Tier 1:* Start combat with Evade 1 and Protect 1. (Protect alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
-- *Tier 2:* −1 damage received; start combat with 1 stack of Thorns.
+- *Tier 2:* Armour 1; start combat with 1 stack of Thorns.
 - *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
-- *Tier 3:* −1 damage received; start combat with Resist; start combat with Evade. (Three-way split.)
+- *Tier 3:* Armour 1; start combat with Resist; start combat with Evade. (Three-way split.)
 - *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 

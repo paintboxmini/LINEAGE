@@ -113,7 +113,7 @@ The structure on the beach their first night: the ship they're already on.
 
 ### Deck Building
 
-Players take turns selecting cards from the Oracle deck until each has 9.
+Players take turns selecting cards from the Oracle deck until each has 9. The method below is one option — see `rules/character-creation.md` for this one and the passing-piles alternative; either works here.
 
 1. DM draws 3 cards at random from the Oracle deck and lays them face up.
 2. The active player chooses 1. The others are set aside.

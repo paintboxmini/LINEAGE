@@ -145,7 +145,7 @@ Do not add new content unless necessary — refine what exists.
 
 Unfinished reasoning leaves marks. Flag any of the following:
 
-- **Mechanical scaffolding** — action lists, design intent notes, or structural placeholders that belong in a scratch file
+- **Mechanical scaffolding** — action lists, design intent notes, or structural placeholders that never got resolved into finished content
 - **Self-explaining content** — text that tells you what a mechanic is supposed to do instead of just doing it ("this passive is intended to teach X")
 - **Designer hedging** — conditional language that reflects uncertainty rather than fiction ("this could also work as...")
 - **Justification text** — narrative reasons for why a mechanic exists, written as if convincing someone rather than describing the world

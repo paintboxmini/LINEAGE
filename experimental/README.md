@@ -9,17 +9,6 @@ This folder holds the genuinely unresolved: open world-level hooks, low-confiden
 - No new keywords introduced without discussion first
 - Cut cards go to `experimental/archives/cut-cards.md` — never deleted, may find solutions later
 
-## Scratch Files
-
-Before committing to card designs or stat blocks, agents may create a scratch file to reason through mechanics first.
-
-- Name it `experimental/scratch-[task].md`
-- Write freely — this is thinking space, not content
-- Delete it when the work is committed
-- Never leave a scratch file in a pushed commit
-
-Every agent tool that produces content should use a scratch file for any reasoning that isn't the final output. If you're working through stat block math, card balance decisions, or mechanical tradeoffs — that goes in the scratch file, not in the content file. Content files contain only finalized output.
-
 ## Standard Card Loop
 
 **Target: full set of 9 cards that all pass red team. Drew picks where they go.**
@@ -36,9 +25,9 @@ Creature combat decks are filled out with core cards (red-body, blue-mind, green
 
 ## Existing Keywords
 
-Anchored, Blind, Counter Attack, Deadly, Debuff, Evade, Exile, Expose [Color], Protect, Initiative Shift X, Lifesteal, Locked, Obscure, Quick, Resist, Rooted, Rushdown, Scry X, Sealed, Staggered, Thorns X, Ward, Weak
+Anchored, Armour X, Blind, Counter Attack, Critical, Deadly, Debuff, Evade, Exile, Expose [Color], Immunity, Initiative Shift X, Lifesteal, Locked, Obscure, Positive Status Effects, Protect, Quick, Resist, Reveal Hand, Rooted, Rushdown, Scry X, Sealed, Staggered, Thorns X, Unpreventable, Vulnerable, Ward, Weak
 
-Status cards: Injury, Exhaust, Foglust
+Status cards: Wound, Exhaust, Foglust, A Rooted Heart
 
 **Pending canon approval:** Future-Lock — status card seeded by Future-Lock Wasp venom. Cannot be discarded or removed by short rest. Clears 20 minutes after drawn. Hand full = fully paralyzed. See `bestiary/future-lock-wasp.md`. Needs glossary entry before moving to canon.
 

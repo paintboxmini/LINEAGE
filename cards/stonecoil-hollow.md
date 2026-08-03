@@ -27,7 +27,7 @@ Range: Both
 **SHED SKIN**
 GREEN — SOUL — HOLLOW
 Attack: Soul + d4
-Effect: Destroy 1 Injury in your hand or discard pile. Gain Evade.
+Effect: Destroy 1 Wound in your hand or discard pile. Gain Evade.
 Defensive Bonus: Exile 1 card from your discard pile.
 Range: Both
 *"What the stone leaves behind, the coil does not miss."*
@@ -68,13 +68,7 @@ Range: Both
 
 ---
 
-**PULL**
-RED — BODY — HOLLOW
-Attack: Body + d6
-Effect: Pull target to frontline
-Defensive Bonus: Pull attacker to frontline
-Range: Both
-*"The cliff always pulls things closer."*
+*PULL was promoted to core (same name, `cards/red-body.md`) — Stonecoil's deck uses that core card in its place.*
 
 ---
 

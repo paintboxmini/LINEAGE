@@ -61,7 +61,15 @@ They failed. Aurora already held the Seat. The attempt left marks on everyone in
 - They are all failed Seat-takers. See `mythology/echoes.md` (Stage III proximity without Incarnation — the most unstable form).
 
 **What happened to Pendragon:**
-The council believes he died in the attempt. He did not. What he became is unresolved. The connection between him and the Gluttony Abomination in the bestiary is a possible thread — not confirmed. *This arc requires more development before it runs at the table.*
+The council believes he died in the attempt. He did not.
+
+**He is the Scar** (`world/the-scar.md`). The failure did to him what it did to the other five, taken all the way: they lost internal contradiction and became archetypes, and he lost everything and became the marks. A pale figure that is nothing but scar tissue with nothing inside it. "He did not die" is true, and it is worse than the alternative, and nobody in the Regency knows either half of that sentence.
+
+It also explains where he is. A thing with no interior cannot be held anywhere that requires holding — so he is in the In-Between (`world/the-in-between.md`), the only ground nobody is paying for.
+
+*What he wants, whether anything of him remains, and why he attends the party at all are all unresolved and should stay that way. The identity is the answer; it is not the whole answer.*
+
+*(The Gluttony Abomination was previously listed here as a possible Pendragon thread. That is closed — it is a fallen priest of the Abyssal Ruins cathedral and nothing more, per `bestiary/gluttony-abomination.md`.)*
 
 **What the council built on top of it:**
 Aurora — the actual bearer of the Seat they tried to take — is bound beneath Eclipseria. The city's unity runs on her. They couldn't claim the Seat so they contained its bearer. The Regency's power is not administrative. It is extractive.

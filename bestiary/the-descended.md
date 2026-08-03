@@ -1,6 +1,6 @@
 # The Descended
 
-**Cards:** `cards/the-descended.md` *(pending)*
+**Cards:** `cards/the-descended.md`
 
 Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. The eyes are large and lidless, adapted to total darkness. The teeth have sharpened themselves on whatever the deep provides.
 
@@ -19,6 +19,8 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 **Mind 2 / Body 3 / Soul 1 — HP 15**
 **Creature Threat Rating:** 6
 
+
+**Deck (6 — 2 Blue / 3 Red / 1 Green):** STILLNESS, FELT YOU COMING *(blue)* · SEISMIC REDIRECT, IRON GRIP, SLITHER LUNGE *(red)* · DOWNWARD *(green)*
 ---
 
 ## Passives
@@ -37,7 +39,7 @@ The Descended move freely through any cave geometry. In open passages they crouc
 ## Actions
 
 **Slither Strike** *(attack)*
-Body + d6. A fast lunge from floor level — below the sightlines players expect.
+Body + d8. A fast lunge from floor level — below the sightlines players expect.
 
 **Drag** *(on Staggered target)*
 The Descended seizes a Staggered character and pulls them toward the far section of the shelf. Target must pass DC 13 Body or be repositioned away from the party. A dragged character out of the party's reach is alone on the shelf with what's hunting them.

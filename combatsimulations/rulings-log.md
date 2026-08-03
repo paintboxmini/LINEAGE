@@ -26,12 +26,12 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   either; the ban is on the next reveal, attack or block. Consistent with the
   reveal-timing rules; worth a one-line confirmation on the card if you want it
   airtight.
-- **twin-strike-double-roll** — `(Soul + d2) x2` is two independent (Soul + d2)
+- **twin-strike-double-roll** — `(Soul + d4) x2` is two independent (Soul + d4)
   rolls summed, not one roll doubled. Drew ruling; matches the sim.
 - **blood-tithe-dead-heal** — In a duel the "heal an ally for 4" half is wasted
   (You Are Not Your Own Ally); Blood Tithe is pure self-harm in 1v1. Working as
   intended (Drew) — a party-play card, and PvP is a design instrument.
-- **twin-strike-double-roll** — Two independent (Soul + d2) rolls summed. Drew.
+- **twin-strike-double-roll** — Two independent (Soul + d4) rolls summed. Drew.
 - **balance-double / balance-knockdown** — Balance's double-hit and its knockdown
   (foe loses their next action to stand) are the intended implementation. Drew.
 - **stat-change-derived** — A changed stat drives its own derived value in real
@@ -39,13 +39,13 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
   HP), **Mind → hand size** (live; forces a discard if now over), **Soul →
   initiative**. Both directions. General rule in `rules/card-glossary.md` (Stat
   Change); sim in `Combatant.adjust`.
-- **wound-counts-visible** — Press the Injury and Taint count Injuries in **hand +
-  discard only**, never the deck — so nobody has to track or search hidden Injuries
+- **wound-counts-visible** — Press the Wound and Taint count Wounds in **hand +
+  discard only**, never the deck — so nobody has to track or search hidden Wounds
   (Drew). Sim: `wounds_visible`.
-- **wound-persists** — A Injury no longer auto-discards; it sits in the hand
+- **wound-persists** — A Wound no longer auto-discards; it sits in the hand
   occupying a slot until an **action** discards it (to the discard pile). Short
-  rest permanently **destroys** 1 Injury from hand or discard (not the deck). Drew;
-  in the glossary INJURY entry, the engine, and the worked example.
+  rest permanently **destroys** 1 Wound from hand or discard (not the deck). Drew;
+  in the glossary WOUND entry, the engine, and the worked example.
 - **debuff-scope** — Debuff = status conditions, status cards, stat reductions,
   forced moves (Ward blocks these). Discard and scry-your-deck are NOT debuffs and
   ignore Ward (Obscure answers those instead). Drew; in the glossary Debuff entry.
@@ -74,9 +74,9 @@ they aren't mistaken for bugs.
 
 - **scry** — Scry is now a real mechanic: `engine.scry(actor, owner, x)` lets a
   brain reorder the top of any deck (own or enemy), driven by a composable
-  `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Injuries.
+  `ScryMixin` sub-brain every policy shares. Own-deck: surface value, bury Wounds.
   Enemy-deck: bury their threats and the color that beats your attacks, leave
-  junk (and their Injuries) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
+  junk (and their Wounds) on top. Wired to ALIGN (own) and AXIOM's defense (enemy).
 - **Initiative Shift, rewritten to match the current Wheel** — `_apply_shift`
   now walks the actual circular path between a token's old and new slot
   (`rules/combat.md`, `rules/card-glossary.md`), correctly for any wheel size,

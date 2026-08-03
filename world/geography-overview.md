@@ -4,6 +4,8 @@
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and halfway-inns between them.
 
+Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — unmapped, unowned, and thin. The maintained roads are the reason a two-day crossing is routine rather than an expedition.
+
 The continent is rich with rivers and lakes. Where the roads are the Regency's arteries, the rivers are everyone else's — cargo, passengers, and anything that prefers not to pass a Regency checkpoint moves by water. River sailors are common, skilled, and proud of it.
 
 ---

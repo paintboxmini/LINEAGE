@@ -6,7 +6,7 @@ Cards available in the Oracle pool for this campaign. At end of session, GM draw
 
 ## Current Pool
 
-Starter tier — simplest, lowest power/impact cards from the three core sets. Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword; none force the opponent to discard, inject a status (Injury/Exhaust), force a hand reveal, or presuppose a system (Anchored, an RPS auto-win/reversal, a precondition set by another card, an open-ended amount choice) the pool doesn't otherwise introduce. All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`. Selection trail: `memory.md`.
+Starter tier — simplest, lowest power/impact cards from the three core sets. Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword; none force the opponent to discard, inject a status (Wound/Exhaust), force a hand reveal, or presuppose a system (Anchored, an RPS auto-win/reversal, a precondition set by another card, an open-ended amount choice) the pool doesn't otherwise introduce. All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`. Selection trail: `memory.md`.
 
 **Red** (20)
 - ATTRITION

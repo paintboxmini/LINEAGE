@@ -5,6 +5,8 @@
 **Mind 1 / Body 2 / Soul 1 — HP 13**
 **Creature Threat Rating:** 4
 
+
+**Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · ROLLOUT, GORE *(red)* · PATIENCE OF STONE *(green)*
 **Cards:** `cards/delve-roller-hollow.md`
 
 ---
@@ -21,7 +23,7 @@ Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vib
 
 ## Passive — Rolled Shell
 
-Reduce all incoming damage by 1. This applies to every attack, every source.
+**Armour 1** (`rules/card-glossary.md`). Reduce all incoming attack damage by 1, every attack, all fight.
 
 Low-damage attacks may deal 0. The shell does not care.
 
@@ -39,17 +41,17 @@ It doesn't retreat. It has nowhere better to be.
 
 The Delve Roller will not leave Frontline voluntarily. If repositioned, it returns next turn.
 
-**Claws:** On a hit, shuffle 1 Injury into the target's deck. The cut is not deep. The contamination is.
+**Claws:** On a hit, shuffle 1 Wound into the target's deck. The cut is not deep. The contamination is.
 
 **Antennae:** Passive vibration sense — the Roller cannot be Blind. Blind effects applied to it have no effect.
 
-**Shell:** Rolled Shell passive applies before any other damage reduction. Resist stacks — a Roller that gains Resist takes half of the already-reduced damage.
+**Shell:** Armour applies before any other damage reduction. Resist stacks — a Roller that gains Resist takes half of the already-reduced damage. Unpreventable damage (Thorns, status damage, HP costs) ignores the shell entirely.
 
 ---
 
 ## Encounter Notes
 
-Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Injuries. Fighting it costs time.
+Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
 
 Pairs with Stonecoils: the Roller occupies the front, the Stonecoil waits behind the next turn. Party is Wounded before the ambush lands.
 

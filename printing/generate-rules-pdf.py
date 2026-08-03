@@ -349,7 +349,8 @@ if __name__ == '__main__':
         output = f'{arg}.html'
         srclabel = ' + '.join(cfg['files'])
     else:
-        fname = arg
+        # tolerate a bare stem ('player-guide') as well as 'player-guide.md'
+        fname = arg if arg.endswith('.md') else f'{arg}.md'
         src = f'../rules/{fname}'
         if not os.path.exists(src):
             print(f'Not found: {src}')

@@ -14,4 +14,4 @@ This is a short, curated list, not an index. If everything ends up in here, noth
 
 ## Candidates — proposed, not yet confirmed
 
-- **Weck** (`experimental/the-man-who-buys-injuries.md`) — an NPC whose mechanic (permanently removing an Injury for coin and a name in his ledger) *is* his character; nothing about him is explained, only enacted.
+- **Weck** (`characters/weck.md`) — an NPC whose mechanic (permanently removing a Wound for coin and a name in his ledger) *is* his character; nothing about him is explained, only enacted.

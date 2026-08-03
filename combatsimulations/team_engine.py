@@ -7,14 +7,14 @@ and hand-size-as-blocking-capacity (multiple enemies attack you between your
 turns; every block costs a card).
 
 Design: reuses engine.Combatant / Card / roll / RULING unchanged, and exposes the
-SAME effect-facing API as engine.Duel (deal, heal, insert_injury, allies,
+SAME effect-facing API as engine.Duel (deal, heal, insert_wound, allies,
 enemies, _say, rng, cards). So one set of card effects in content.py serves both
 engines — ally effects route through engine.allies(me), which is empty in a duel
 (no behavior change there) and populated here.
 
 Policies for teams implement:
     choose_action(battle, me) -> ('attack', card, target) | ('move',)
-                                 | ('destroy_injury',) | None
+                                 | ('destroy_wound',) | None
     choose_defense(battle, me, attacker) -> card | None
     name_axiom_color(battle, me, foe) -> 'R'|'B'|'G'
 """
@@ -41,7 +41,7 @@ class Battle:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.injury_card = cards.get('INJURY')
+        self.wound_card = cards.get('WOUND')
         self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
@@ -122,6 +122,12 @@ class Battle:
                     f._protect = False
                     self._say(f"    PROTECT: {f.name} takes the hit for {target.name}")
                     return self.deal(f, amount, unpreventable, source, bypass_resist)
+        # Armour: flat reduction, after redirect/Protect and BEFORE Resist —
+        # the fixed pipeline in rules/combat.md. Additive total, never consumed.
+        # See engine.py's Duel.deal() for the full reasoning; kept in step here
+        # on purpose, since a divergence would be a silent damage-math split.
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)
         # Resist/Vulnerable cancel 1-for-1 on consumption — see engine.py's
         # Duel.deal() for the full reasoning (same pairing as Deadly/Weak).
         if not unpreventable and target.resist > 0 and target.vulnerable > 0:
@@ -167,17 +173,23 @@ class Battle:
             # reaches them again (Drew: they shouldn't get to act until it does).
             _join_wheel(self.queue, target, after=source)
 
-    def insert_injury(self, target):
-        if self.injury_card is None:
+    def insert_wound(self, target):
+        if self.wound_card is None:
             return
-        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
+        target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
-    def insert_exhaust(self, target, n=1):
-        """See engine.py's Duel.insert_exhaust for the full reasoning."""
+    def insert_exhaust(self, target, n=1, to_deck=False):
+        """See engine.py's Duel.insert_exhaust for the full reasoning. Kept
+        signature-identical on purpose — content.py calls this through whichever
+        engine is running, so a divergence here is a silent behaviour split."""
         if self.exhaust_card is None:
             return
         for _ in range(n):
-            target.hand.append(self.exhaust_card)
+            if to_deck:
+                target.deck.insert(self.rng.randrange(len(target.deck) + 1),
+                                   self.exhaust_card)
+            else:
+                target.hand.append(self.exhaust_card)
 
     def scry(self, actor, owner, x, bin_to=None):
         seen = [owner.deck.pop() for _ in range(min(x, len(owner.deck)))]
@@ -403,7 +415,7 @@ class Battle:
             dmg += 2
         if defender._rend_guard:
             defender._rend_guard = False
-            self.insert_injury(defender)
+            self.insert_wound(defender)
             attacker._last_hit = 0
             card.effect(self, attacker, defender)
             return
@@ -535,9 +547,9 @@ class Battle:
                 removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
                 who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
                 self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
-            elif action[0] == 'destroy_injury':
+            elif action[0] == 'destroy_wound':
                 for i, c in enumerate(who.hand):
-                    if c.is_status and c.name == 'INJURY':
+                    if c.is_status and c.name == 'WOUND':
                         who.hand.pop(i)
                         break
             who.must_target_frontline = False

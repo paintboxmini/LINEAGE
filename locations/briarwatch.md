@@ -14,6 +14,8 @@ The farmland doesn't stop at a tidy line — it was cut a little way into the We
 
 The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the center is dried up.
 
+Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer builds them. Nobody takes them down. See `bestiary/briarbundles.md`.
+
 Valhug Lake sits in the center of Briarwatch — deep and cold.
 
 A sinkhole opened last season. The first one in living memory. It won't be the last.
@@ -22,7 +24,9 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 ## Notable Locations
 
-**The Western Property** — bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. The farmer who owns it has been waiting for help longer than he'd like to admit. See `quests/hollow-below-briarwatch.md`.
+**The Abandoned Homestead** — off the road on the way in. A claim that failed: well caved in, fences broken outward, briarbundles still standing in the fields. Something large has taken up residence in the doorway. See `quests/the-abandoned-homestead.md`.
+
+**The Western Property** — bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. **Iron**, the farmer who owns it, has been waiting for help longer than he'd like to admit (`characters/iron.md`). See `quests/hollow-below-briarwatch.md`.
 
 ---
 
@@ -54,3 +58,6 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
 - `locations/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields
+- `quests/the-abandoned-homestead.md` — the claim that didn't hold, on the road in
+- `bestiary/briarbundles.md` — the field guardians the farmers build every autumn
+- `bestiary/the-first-bundle.md` — the oldest one

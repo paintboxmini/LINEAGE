@@ -20,6 +20,8 @@ The known world is a basin surrounded by the Unheld Ocean — a vast, lightless 
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and the halfway-inns between them.
 
+Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — unnamed, unmapped, and thin, where the Three Cuts hold least. It is most of the world by area and nobody is from it. The maintained roads are the reason a crossing is routine instead of an expedition, and they are maintained *because* of what the ground does when nobody pays for it.
+
 The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond.
 
 For deeper geography, see `world/geography-overview.md`.
@@ -34,9 +36,9 @@ Reality in Eclipseria is not self-sustaining. It is maintained by:
 - **The Archons** — beings who have become the fullest biological expression of a Seat. They have no free will. They filter and "tint" the reality around them through their domain.
 - **The Regency** — a human bureaucratic council with no divine power, managing the practical infrastructure of civilization: citizens, roads, halfway-inns.
 
-The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in.
+The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts). The Cuts are the deeper of the two.
 
-For the full cosmological system, see `world/seats-archons-echoes.md`.
+For the full cosmological system, see `mythology/seats.md`, `mythology/archons.md`, and `mythology/echoes.md` — or `world/seats-archons-echoes.md` for an index of the three.
 For the Unheld in depth, see `world/the-unheld.md`.
 
 ---

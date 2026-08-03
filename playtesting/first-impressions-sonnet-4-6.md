@@ -15,7 +15,7 @@ In good shape. Pending threads are clearly flagged with file references and acti
 - **Minotaur** (The Coil) — stat block pending. The Coil has pressure track logic but no functional combat encounter at the center.
 - **Underground Tavern gambling / Senshi's menu** — both marked pending. Fine if not needed soon, but accumulating design debt.
 
-The Pendragon/Gluttony Abomination thread is correctly handled in memory — possible, not confirmed, hold until Drew. Don't touch it.
+The Pendragon/Gluttony Abomination thread is correctly handled in memory — possible, not confirmed, hold until Drew. Don't touch it. *(Resolved 2026-08-02: Drew ruled that Pendragon is the Scar, which closes the Abomination as a candidate. The observation above was accurate when written; the instruction is superseded.)*
 
 ---
 

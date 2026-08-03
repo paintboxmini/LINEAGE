@@ -61,9 +61,9 @@ body {
 }
 
 .card-name {
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.12;
   flex: 1;
   letter-spacing: 0.01em;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .card-sub {
-  font-size: 6.5pt;
+  font-size: 7.5pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 3px;
@@ -97,14 +97,14 @@ body {
 }
 
 .tbl td {
-  font-size: 7.5pt;
-  line-height: 1.3;
+  font-size: 9.5pt;
+  line-height: 1.28;
   vertical-align: top;
   padding: 1.5px 0;
 }
 
 .tbl .lbl {
-  font-size: 6pt;
+  font-size: 7pt;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -115,9 +115,18 @@ body {
   padding-top: 2px;
 }
 
+.card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
+.card.dense .flavor { font-size: 7pt; }
+.card.dense .card-name { font-size: 11pt; }
+
+.card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
+.card.denser .flavor { font-size: 6.2pt; }
+.card.denser .card-name { font-size: 10pt; }
+.card.denser .tbl .lbl { font-size: 6pt; }
+
 .flavor {
   font-style: italic;
-  font-size: 6.5pt;
+  font-size: 8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -126,8 +135,8 @@ body {
 }
 
 .item-effect {
-  font-size: 7.5pt;
-  line-height: 1.4;
+  font-size: 9.5pt;
+  line-height: 1.35;
   flex: 1;
 }
 </style>
@@ -226,7 +235,7 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">TRACE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -266,7 +275,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Attack deals half damage (rounded up) to an additional enemy</td></tr><tr><td class="lbl">Defense</td><td>Enemy must target you again on their next turn if possible</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Every echo remembers what the first sound forgot.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">FRACTURE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -296,7 +305,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d8. Discard a card; if you do, +1d6.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>Scry 2. If you bottom both, heal 4 HP</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Clarity is not given, it is reconstructed.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">PARTITION</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -328,7 +337,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Move to frontline or backline (your choice)</td></tr><tr><td class="lbl">Defense</td><td>All allies gain Quick</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Reality rearranges for those who see its hidden geometry.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">AXIOM</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -358,7 +367,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Special</td><td>On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.</td></tr><tr><td class="lbl">Effect</td><td>Lifesteal</td></tr><tr><td class="lbl">Defense</td><td>Gain Ward</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Reality hesitates.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">CLIMB</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -395,7 +404,7 @@ body {
   </div>
   <div class="card-sub" style="color:#2C5F9E">Mind</div>
   <div class="divider" style="background:#2C5F9E44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Add 1 Injury to the bottom of the defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Add 1 Injury to the bottom of the attacker&#x27;s deck.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Add 1 Wound to the bottom of the defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Add 1 Wound to the bottom of the attacker&#x27;s deck.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Some damage is architecture.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
@@ -420,7 +429,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Anchored — whenever an ally passes through your position in the initiative order, draw a card.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Stay close. The gap they leave behind is yours to fill.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">REBUTTAL</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -430,7 +439,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -1 to the attacker.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Every argument has an opening. You just have to still be standing when it appears.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">FRAME-TRAP</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -460,7 +469,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>If the defender is Staggered, this attack has Critical.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;You don&#x27;t need strength. You need them to already be falling.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
     <div class="card-name">UNMAKE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -828,9 +837,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Target loses 1 Mind this combat.</td></tr><tr><td class="lbl">Defense</td><td>Target loses 1 Mind this combat.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Thought breaks under enough weight.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
-    <div class="card-name">PRESS THE INJURY</div>
+    <div class="card-name">PRESS THE WOUND</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -838,17 +847,17 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>The defender announces how many status cards they have in hand and discard pile. Deal +2 damage for each.</td></tr><tr><td class="lbl">Defense</td><td>Heal 2 HP for each status card in your hand and discard pile. Then destroy them.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;It was always going to end here.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">REND</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
   <div class="divider" style="background:#9E2C2C44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>If this attack deals damage, add 1 Injury to the bottom of defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Next attack against you adds 1 Injury to the bottom of your deck instead of dealing damage.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>If this attack deals damage, add 1 Wound to the bottom of defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Next attack against you adds 1 Wound to the bottom of your deck instead of dealing damage.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;The cut that keeps opening.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">STARING CONTEST</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -880,7 +889,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -1 to the attacker.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Pain is just momentum, redirected.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">WAITING GAME</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -890,7 +899,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>Copy up to two different Positive Status Effects of your choice that the defender currently has.</td></tr><tr><td class="lbl">Defense</td><td>Copy up to two different Positive Status Effects of your choice that the attacker currently has.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Why build what&#x27;s already standing right there?&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card denser" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">DRAIN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -917,10 +926,10 @@ body {
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
   <div class="divider" style="background:#9E2C2C44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d10. Gain Vulnerable.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>None.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d10 + 1d6. Gain Vulnerable.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>None.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;You don&#x27;t swing like that unless you mean it.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">OVERDRIVE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -940,7 +949,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>This attack cannot be Evaded, Resisted, or affected by Blind.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Some things you don&#x27;t have to aim.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">RHYTHM BREAK</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -962,7 +971,7 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">ROLLOUT</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -992,7 +1001,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>If target is Frontline, deal +d6 additional damage.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Rooted.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;It does not aim. It arrives.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">TABLE STAKES</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1002,7 +1011,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Discard 1 random card from your hand. If it was Red, deal 4 unpreventable damage. If it was Blue, target gains Staggered. If it was Green, heal yourself and all allies 3 HP.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Everyone puts something in before they see the cards.&#8221;</div>
 </div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">DOUBLE DOWN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1298,9 +1307,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>The defender must reveal their hand.</td></tr><tr><td class="lbl">Defense</td><td>Name a color then choose a card in the attacker&#x27;s hand. If colors match, discard it.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;You tell the truth with your eyes.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
   <div class="card-top">
-    <div class="card-name">CARRIED INJURY</div>
+    <div class="card-name">CARRIED WOUND</div>
     <div class="dot" style="background:#2A7A3E"></div>
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
@@ -1337,7 +1346,7 @@ body {
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
   <div class="divider" style="background:#2A7A3E44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Remove all Injuries from target ally&#x27;s hand and discard pile. They heal 3 HP.</td></tr><tr><td class="lbl">Defense</td><td>Remove all Injuries in your hand and discard pile. Heal 3 HP.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Remove all Wounds from target ally&#x27;s hand and discard pile. They heal 3 HP.</td></tr><tr><td class="lbl">Defense</td><td>Remove all Wounds in your hand and discard pile. Heal 3 HP.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Not healed. Held together.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
@@ -1350,7 +1359,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Weak.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Blind.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;You came in loud. You&#x27;ll leave in the dark.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
   <div class="card-top">
     <div class="card-name">SYNCHRONY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1370,7 +1379,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>All allies gain Deadly.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift +2 to an ally.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;One voice finds its mark. The rest answer in kind.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card denser" style="background:#F0F7F2;border-color:#2A7A3E99">
   <div class="card-top">
     <div class="card-name">CONSUME</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1380,7 +1389,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.</td></tr><tr><td class="lbl">Defense</td><td>Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Nothing is wasted. Not even you.&#8221;</div>
 </div>
-<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
   <div class="card-top">
     <div class="card-name">SEED</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1492,7 +1501,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Gain Ward.</td></tr><tr><td class="lbl">Defense</td><td>Gain Ward.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;The body knows before the mind agrees.&#8221;</div>
 </div>
-<div class="card" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card dense" style="background:#F2F2F2;border-color:#5A5A5A99">
   <div class="card-top">
     <div class="card-name">AFTERIMAGE</div>
     <div class="dot" style="background:#5A5A5A"></div>
@@ -1502,7 +1511,7 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mirrors the color and stat of whoever acted immediately before you + d6. If no one has acted yet, this stays genuinely colorless (no default) — just the flat d6, no stat bonus.</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Blind.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Whatever they were becomes what I am.&#8221;</div>
 </div>
-<div class="card" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card denser" style="background:#F2F2F2;border-color:#5A5A5A99">
   <div class="card-top">
     <div class="card-name">FOLLOW-UP</div>
     <div class="dot" style="background:#5A5A5A"></div>
@@ -1514,7 +1523,7 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card dense" style="background:#F2F2F2;border-color:#5A5A5A99">
   <div class="card-top">
     <div class="card-name">BECOMING</div>
     <div class="dot" style="background:#5A5A5A"></div>

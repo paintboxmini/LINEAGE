@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tales Untold — Briarwatch Encounter Set (20 cards, 3 pages)</title>
+<title>Tales Untold — Briarwatch Encounter Set (19 cards, 3 pages)</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -61,9 +61,9 @@ body {
 }
 
 .card-name {
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.12;
   flex: 1;
   letter-spacing: 0.01em;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .card-sub {
-  font-size: 6.5pt;
+  font-size: 7.5pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 3px;
@@ -97,14 +97,14 @@ body {
 }
 
 .tbl td {
-  font-size: 7.5pt;
-  line-height: 1.3;
+  font-size: 9.5pt;
+  line-height: 1.28;
   vertical-align: top;
   padding: 1.5px 0;
 }
 
 .tbl .lbl {
-  font-size: 6pt;
+  font-size: 7pt;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -115,9 +115,18 @@ body {
   padding-top: 2px;
 }
 
+.card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
+.card.dense .flavor { font-size: 7pt; }
+.card.dense .card-name { font-size: 11pt; }
+
+.card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
+.card.denser .flavor { font-size: 6.2pt; }
+.card.denser .card-name { font-size: 10pt; }
+.card.denser .tbl .lbl { font-size: 6pt; }
+
 .flavor {
   font-style: italic;
-  font-size: 6.5pt;
+  font-size: 8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -126,8 +135,8 @@ body {
 }
 
 .item-effect {
-  font-size: 7.5pt;
-  line-height: 1.4;
+  font-size: 9.5pt;
+  line-height: 1.35;
   flex: 1;
 }
 </style>
@@ -211,8 +220,8 @@ body {
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
   <div class="divider" style="background:#9E2C2C44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>On hit, add 1 Injury to the bottom of the defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Attacker adds 1 Injury to their own discard.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
-  <div class="flavor">&#8220;The claws are small. The Injury is not.&#8221;</div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>On hit, add 1 Wound to the bottom of the defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Attacker adds 1 Wound to their own discard.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The claws are small. The Wound is not.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
   <div class="card-top">
@@ -233,7 +242,7 @@ body {
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
   <div class="divider" style="background:#2A7A3E44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>If target has an Injury in their deck, deal +2 damage.</td></tr><tr><td class="lbl">Defense</td><td>Heal 1.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>If target has a Wound in their deck, deal +2 damage.</td></tr><tr><td class="lbl">Defense</td><td>Heal 1.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;The cut remembers the first one.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
@@ -283,7 +292,7 @@ body {
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
   <div class="divider" style="background:#2A7A3E44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Destroy 1 Injury in your hand or discard pile. Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>Exile 1 card from your discard pile.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Destroy 1 Wound in your hand or discard pile. Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>Exile 1 card from your discard pile.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;What the stone leaves behind, the coil does not miss.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
@@ -318,17 +327,7 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
-  <div class="card-top">
-    <div class="card-name">PULL</div>
-    <div class="dot" style="background:#9E2C2C"></div>
-  </div>
-  <div class="card-sub" style="color:#9E2C2C">Body</div>
-  <div class="divider" style="background:#9E2C2C44"></div>
-  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Pull target to frontline</td></tr><tr><td class="lbl">Defense</td><td>Pull attacker to frontline</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
-  <div class="flavor">&#8220;The cliff always pulls things closer.&#8221;</div>
-</div>
-<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
   <div class="card-top">
     <div class="card-name">ROLLING THUNDER</div>
     <div class="dot" style="background:#9E2C2C"></div>

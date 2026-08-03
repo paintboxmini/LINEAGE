@@ -1,12 +1,14 @@
 # Chitterer
 
-**Cards:** `cards/chitterer.md` *(pending)*
+**Cards:** `cards/chitterer.md`
 
 Small and quick. Found in packs. Crystal knives and arrowheads worked from harvested horn — the connection to the crystal-horned deer is visible if the party looks at both at once. They do not start fights but they finish the ones started against them.
 
 **Mind 1 / Body 1 / Soul 2 — HP 11**
 **Creature Threat Rating:** 4
 
+
+**Deck (4 — 1 Blue / 1 Red / 2 Green):** WARNING SHOT *(blue)* · CRYSTAL EDGE *(red)* · PACK LOGIC, DELAY *(green)*
 **Passive — Scatter:** When a Chitterer takes damage, it and all Chitterers in the same passage gain Evade until the start of their next turn.
 
 **Passive — Noise:** If a Chitterer is attacked and survives, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per cycle regardless of how many Chitterers are attacked.

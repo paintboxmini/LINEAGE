@@ -9,6 +9,7 @@ Items found at, traded through, or native to Vulture's Nest. Sources noted per i
 **DOCKHOOK LINE**
 *Consumable — Weighted hook on heavy rope*
 *Source: Vulture's Nest market or dockside traders*
+*Price: ~15 gold*
 Use (1): Pull yourself or a target enemy to Frontline.
 
 ---
@@ -16,6 +17,7 @@ Use (1): Pull yourself or a target enemy to Frontline.
 **LOW LANTERN**
 *Consumable — Squat iron lantern, smoked glass*
 *Source: Vulture's Nest market*
+*Price: ~15 gold*
 Use (1): Gain Obscure for 1 combat.
 
 ---
@@ -26,16 +28,16 @@ Use (1): Gain Obscure for 1 combat.
 
 **SALTED STRIP**
 *Consumable — Dried, heavily salted meat*
-Use: Heal 2 HP.
+*Price: ~8 gold*
 
 ---
 
 **DOCK BROTH**
 *Consumable — Hot, murky, smells like low tide*
-Use: Remove 1 status card from your deck. Gain Weak on your next damage roll.
+*Price: ~10 gold*
 
 ---
 
 **CHEWFAT RATION**
 *Consumable — Dense rendered fat block, travel-wrapped*
-Passive (1 combat): Gain Resist 1. At the end of each of your turns, discard 1 card.
+*Price: ~12 gold*

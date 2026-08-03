@@ -7,10 +7,10 @@ Signature cards for the Briar Scratcher. See `bestiary/briar-scratcher.md`.
 **RAKING CUT**
 RED — BODY — BRIARWATCH
 Attack: Body + d4
-Effect: On hit, add 1 Injury to the bottom of the defender's deck.
-Defensive Bonus: Attacker adds 1 Injury to their own discard.
+Effect: On hit, add 1 Wound to the bottom of the defender's deck.
+Defensive Bonus: Attacker adds 1 Wound to their own discard.
 Range: Melee
-*"The claws are small. The Injury is not."*
+*"The claws are small. The Wound is not."*
 
 ---
 
@@ -27,7 +27,7 @@ Range: Both
 **NIP AND TEAR**
 GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
-Effect: If target has an Injury in their deck, deal +2 damage.
+Effect: If target has a Wound in their deck, deal +2 damage.
 Defensive Bonus: Heal 1.
 Range: Melee
 *"The cut remembers the first one."*

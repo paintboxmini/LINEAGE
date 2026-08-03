@@ -44,7 +44,7 @@ def _deadly_weak_bonus(rng, me):
     this to its own hand-rolled total instead of reimplementing the stack/
     cancel logic itself. That reimplementation is exactly what didn't happen
     for 8 cards (BURN BRIGHT, FRACTURE, TRACE, TWIN STRIKE, GAMBLER'S RUIN,
-    PRESS THE INJURY, PATIENCE, UNDERSTANDING) — none of them touched
+    PRESS THE WOUND, PATIENCE, UNDERSTANDING) — none of them touched
     `me.deadly`/`me.weak` at all, so a held stack from an earlier card
     silently vanished, neither applied nor consumed, the moment a player
     played one of these instead of an ordinary card. Drew, direct: "the sim
@@ -529,7 +529,7 @@ class Card:
         self._effect = effect          # fn(engine, me, foe)  attacker won OR tie
         self._defense = defense        # fn(engine, me, foe)  defender won OR tie
         self.special_reveal = special_reveal  # e.g. 'paradox'
-        self.is_status = is_status     # Injury/Exhaust: cannot be played
+        self.is_status = is_status     # Wound/Exhaust: cannot be played
         # ROLLOUT: some cards return straight to your own hand instead of
         # the discard pile once played, regardless of outcome — a Card-level
         # property (checked at every discard-append point in attack(), both
@@ -604,6 +604,7 @@ class Combatant:
         self.deadly = 0
         self.weak = 0
         self.thorns = 0
+        self.armour = 0   # flat reduction, stacks additively (rules/card-glossary.md)
         self.blind = 0
         self.staggered = False
         self.rooted = False
@@ -651,7 +652,7 @@ class Combatant:
         self.skip_turns = 0              # lost turns (Interrupt) — these cost a turn
         self._shift_skip = False         # Initiative Shift's skip chip (card-glossary.md)
         self.must_target_frontline = False  # Partition: next turn restriction
-        self._rend_guard = False         # Rend def: next hit -> Injury, no damage
+        self._rend_guard = False         # Rend def: next hit -> Wound, no damage
         self._last_hit = 0               # damage dealt by my most recent attack
         self._tie = False                # True only while an Effect resolves during
                                           # a tie (engine.py's rps()/tie branch) — real
@@ -702,19 +703,19 @@ class Combatant:
                 self.collapsed = True
                 self.down = True
 
-    def injuries_visible(self):
-        """Injuries a player can actually see and count — hand + discard, NOT deck
-        (Drew ruling: nobody should have to track or search hidden Injuries). Taint
+    def wounds_visible(self):
+        """Wounds a player can actually see and count — hand + discard, NOT deck
+        (Drew ruling: nobody should have to track or search hidden Wounds). Taint
         and Field Medicine count these."""
         return sum(1 for c in (self.hand + self.discard)
-                   if c.is_status and c.name == 'INJURY')
+                   if c.is_status and c.name == 'WOUND')
 
     def status_cards_visible(self):
-        """Every status card (Injury AND Exhaust) a player can see and count —
-        hand + discard, NOT deck, same scope as injuries_visible() above. Press
-        the Injury's count was broadened to this 2026-07-24 (previously Injury
+        """Every status card (Wound AND Exhaust) a player can see and count —
+        hand + discard, NOT deck, same scope as wounds_visible() above. Press
+        the Wound's count was broadened to this 2026-07-24 (previously Wound
         only) — Drew's call, since Exhaust is just as visible a status card as
-        Injury and there was no stated reason to exclude it."""
+        Wound and there was no stated reason to exclude it."""
         return sum(1 for c in (self.hand + self.discard) if c.is_status)
 
     # --- deck plumbing ---
@@ -752,7 +753,7 @@ class Duel:
         self.max_turns = max_turns
         self.log = log if log is not None else []
         self.turn_count = 0
-        self.injury_card = cards.get('INJURY')
+        self.wound_card = cards.get('WOUND')
         self.exhaust_card = cards.get('EXHAUST')
         self.pending_turns = []
         self.queue = []
@@ -803,22 +804,38 @@ class Duel:
         self.objects.remove(obj)
         self._say(f"{attacker.name} destroys {obj['kind']} at {obj['position']}")
 
-    def insert_injury(self, target):
-        if self.injury_card is None:
+    def insert_wound(self, target):
+        if self.wound_card is None:
             return
-        target.deck.insert(0, self.injury_card)   # bottom of deck — deck.pop() draws from the end
+        target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
-    def insert_exhaust(self, target, n=1):
-        """Exhaust (card-glossary.md): goes directly into the target's HAND, not the
-        deck — the difference from an Injury, which has to be drawn before it costs
-        anything. Can legitimately push hand size above the normal draw cap for a
-        turn or more; nothing truncates it back down on its own (same as Mind-loss
-        forcing a discard is the only thing that ever rebalances hand size — see
-        Combatant.adjust) — only a full destroy_exhaust action clears it."""
+    def insert_exhaust(self, target, n=1, to_deck=False):
+        """Exhaust (card-glossary.md). WHERE it lands is the source card's choice,
+        not a property of the keyword — widened 2026-08-02 (Drew) after the Ashfall
+        arc turned out to be built entirely on deck-insertion while the glossary
+        said hand-only. Core cards (OVERDRIVE, UNMAKE) add to hand; the Ashfall
+        cards shuffle into the deck.
+
+        to_deck=False — straight to hand, costing the slot immediately. Can
+        legitimately push hand size above the normal draw cap for a turn or more;
+        nothing truncates it back down on its own (Mind-loss forcing a discard is
+        the only thing that ever rebalances hand size — see Combatant.adjust).
+        to_deck=True — SHUFFLED to a random position, not buried at the bottom the
+        way insert_wound does it. The canon wording is "shuffle 1 Exhaust into
+        their deck," and the difference is real: a bottom-inserted card is a known
+        quantity you can play around, a shuffled one is not.
+
+        Either way, only a rest clears it — destroy_exhaust for the hand, and the
+        full hand/deck/discard sweep on a short or long rest (not modelled here,
+        since rests happen between combats)."""
         if self.exhaust_card is None:
             return
         for _ in range(n):
-            target.hand.append(self.exhaust_card)
+            if to_deck:
+                target.deck.insert(self.rng.randrange(len(target.deck) + 1),
+                                   self.exhaust_card)
+            else:
+                target.hand.append(self.exhaust_card)
 
     def initiative_shift(self, target, amount):
         _apply_shift(self, self.queue, target, amount)
@@ -889,6 +906,16 @@ class Duel:
     def deal(self, target, amount, unpreventable=False, source=None, bypass_resist=False):
         if amount <= 0:
             return 0
+        # Armour: flat reduction, applied BEFORE Resist/Vulnerable per the fixed
+        # pipeline in rules/combat.md — redirect -> Protect -> Armour -> Resist/
+        # Vulnerable -> HP. Never consumed and never expires, so `armour` is a
+        # single additive total rather than a stack count (Drew 2026-08-02:
+        # Armour and Thorns stack additively). Unpreventable ignores it, same as
+        # every other attack-damage defense. An attack reduced to 0 still landed
+        # — the Effect resolves, it just has nothing to work with — so this
+        # clamps at 0 and falls through rather than returning early.
+        if not unpreventable and target.armour > 0:
+            amount = max(0, amount - target.armour)
         # Resist/Vulnerable cancel 1-for-1 on consumption, same pairing as
         # Deadly/Weak in _rolled_die (Drew: both pairs cancel rather than
         # stacking against each other). Checked before either modifier applies.
@@ -1204,12 +1231,12 @@ class Duel:
         if any(o.get('kind') == 'attune' and o.get('color') == card.color for o in attacker.ongoing):
             dmg += 2
         # Rend's defensive guard: the next hit deals no damage and instead
-        # shuffles an Injury into the struck combatant.
+        # shuffles a Wound into the struck combatant.
         if defender._rend_guard:
             defender._rend_guard = False
-            self.insert_injury(defender)
+            self.insert_wound(defender)
             attacker._last_hit = 0
-            self._say(f"  -> REND guard: no damage, Injury into {defender.name}")
+            self._say(f"  -> REND guard: no damage, Wound into {defender.name}")
             card.effect(self, attacker, defender)
             return
         was_collapsed_before = defender.collapsed
@@ -1370,11 +1397,11 @@ class Duel:
                     removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
                     who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
                     self._say(f"{who.name} destroys all Exhaust cards ({removed}) (action)")
-                elif kind == 'destroy_injury':
+                elif kind == 'destroy_wound':
                     for i, c in enumerate(who.hand):
-                        if c.is_status and c.name == 'INJURY':
+                        if c.is_status and c.name == 'WOUND':
                             who.hand.pop(i)
-                            self._say(f"{who.name} destroys an Injury (action)")
+                            self._say(f"{who.name} destroys a Wound (action)")
                             break
             # TRAMPLE: an extra action within THIS turn, not a wheel bonus turn —
             # capped so a bug can't hang the sim, though nothing should ever
@@ -1384,7 +1411,7 @@ class Duel:
             who._bonus_action = False
             extra_actions += 1
             self._say(f"{who.name} gained another action (TRAMPLE)")
-        # Injuries no longer leave on their own — they sit until an action or rest
+        # Wounds no longer leave on their own — they sit until an action or rest
         # clears them. Only per-turn restrictions reset here.
         who.must_target_frontline = False
 

@@ -34,7 +34,7 @@ Range: Ranged
 RED — BODY — ASHFALL
 Attack: Body + d4
 Effect: If this attack deals damage, the Engine heals 3 HP. If the target has 3 or fewer cards in hand, heal 5 HP instead.
-Defensive Bonus: Anchored — reduce incoming damage by 2 while Frontline.
+Defensive Bonus: Anchored — gain Armour 2 while Frontline.
 Range: Melee
 *"War machines do not stop working just because the war ended."*
 
@@ -90,5 +90,5 @@ Range: Ranged
 
 **EXHAUST**
 Status — Colorless
-Cannot be played. It stays in your hand and occupies a card slot. Use your action to destroy all Exhaust cards from your hand — the only way to clear them.
+Cannot be played. Canonical text: `rules/card-glossary.md`, EXHAUST.
 *"Ash in the lungs. Heat in the blood."*

@@ -16,6 +16,8 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 | 3 | Lethal Forest | Deadly traps activate on movement between scenes. Pathless Child Trial triggers. |
 | 4 | Root Heart | Boss encounter. Beating the Root Heart opens escape. |
 
+**Pressure 4 is not the only road to the Root Heart.** A gold piece paid into Seeker's Price opens the way there directly, at whatever Pressure the party is currently carrying — voluntarily, and much earlier than the track would have taken them.
+
 ---
 
 ## Forest Customs
@@ -56,6 +58,8 @@ A navigation check is required when attempting to change location — even when 
 - The direction the moss grows
 - The slope of terrain
 - Birds and other wildlife
+
+**Signs can also be bought.** Seeker's Price takes coin pressed into the wood and gives signs back — see that entry for what each denomination buys.
 
 **Standard check:** DC 13 using one of three modes. DM can adjust ±2 based on fiction (e.g., +2 in dense roots, −2 when following earned moss signs).
 
@@ -200,9 +204,19 @@ Marks represent alignment with the forest. They do not reduce Pressure.
 
 ## Escape Conditions
 
-Exit is possible by either:
-1. **Collecting all 3 Marks** — the forest releases you
-2. **Defeating the Root Heart** — boss encounter at Pressure 4
+Three ways out, and the forest treats them as equally valid:
+
+1. **Collecting all 3 Marks** — the forest releases you. *Earn it.*
+2. **Defeating the Root Heart** — boss encounter at Pressure 4. *Win it.*
+3. **Paid Passage** — pay gold into Seeker's Price, be guided to the Root Heart, and *look at it*. The forest lets you leave. *Buy it.*
+
+**The Root Heart does not attack a party that paid.** The forest brought them; the Heart honours that. They stand in front of it, they get as long a look as they want, and nothing happens. A GM who runs it as a boss encounter anyway has collapsed the third exit back into the second.
+
+**On the third.** The transaction completed. They asked to be taken to the heart of it, they were taken, and they saw. Nothing further is owed in either direction, and the Root Heart is still alive behind them — the only exit that ends with that being true.
+
+It is not a shortcut past the others so much as a different bargain. Marks cost three separate acts of alignment with a forest that is hard to align with — including sacrificing a trait to the Knot-Keeper. The boss fight costs a boss fight.
+
+**Paid Passage costs almost nothing and returns almost nothing.** No Marks. No kill. No loot off the Heart. The party leaves with exactly what they walked in holding, minus a coin, having looked at the thing everyone else in the Weald is trying to survive. It is cheap because it is empty, and that is the correct trade rather than a hole in it — a table that takes this exit will feel the difference without anyone at the table saying so.
 
 ---
 
@@ -270,7 +284,42 @@ In the damp soil: a child's footprint.
 
 **The Sound:** When wind blows, the metal chimes against the wood — hollow and metallic.
 
-**The Reveal:** These are payments made by travelers for safe passage. If a player tries to take anything: Pressure increases by 1.
+**The Reveal:** These are payments made by travelers for safe passage. **The wall still takes them.**
+
+---
+
+**Paying in.** Press a coin into the wood and it accepts — closes over the metal without ceremony, the way a mouth takes something offered. What the party gets back is *signs*: the moss, the slope, the birds, all of it suddenly legible. Following forest signs requires no Navigation check (see Navigation), and this is how those signs are earned.
+
+**What you give decides what you are shown.**
+
+| Payment | What the forest gives back |
+|---|---|
+| **Copper** | Signs for the next leg. One location change, no Navigation check. |
+| **Silver** | Signs that hold. No Navigation checks until Pressure next rises. |
+| **Gold** | It routes you to the centre. **The way to the Root Heart opens.** |
+
+**Do not advertise the third row.** A party offering a whole gold piece at a wall of coppers is not asking for directions — it is asking to be taken to the thing, and the forest's answer to that question is always the same place. Let them find that out by doing it.
+
+**The wall reads the gesture, not the sum.** One gold coin is a trivial amount of money — the Tollworn Plate a foot away is worth two hundred of them. That is the point. The wall is not being bought; it is being *addressed*, in a denomination nobody else here uses, and it answers accordingly. A party that presses in fifty gold gets exactly what one buys.
+
+This is also the only way to reach the Root Heart **on the party's terms** rather than being forced into it at Pressure 4. The forest is perfectly willing. It just takes the request literally.
+
+---
+
+**Taking out.** The standing rule holds — **Pressure +1** — and it is worse than ordinary theft. These tolls were *accepted*. Taking one back undoes a transaction the forest already closed, on behalf of someone who paid it and walked away.
+
+**The Plate.** Set into the wall, chest-high, is a piece of armor — old pattern, rust in the seams, bark grown through the strap holes. The **Tollworn Plate** (`items/turnroot-weald-items.md`): Tier 1 armor, **Armour 1**. It is the first real equipment the campaign hands over, and it should arrive **before the Root Heart**, not after.
+
+**How they get it out decides what it costs:**
+
+- **If they have paid into this wall** — any denomination, at any point — the wood lets go. No Pressure. They are taking out less than they put in, and the wall keeps its own books.
+- **If they have not** — Pressure +1. They go into that fight wearing something somebody else bought their life with.
+
+**A party that pays gold and then pries the Plate out is trying to have both.** The wall permits it. Let them feel it anyway.
+
+**There is exactly one, and the party has to decide who wears it.** Do not let this pass as inventory management. It is the first time the group has had to put something real on one person, and the choice is worth the minute it takes — the one who has been going down most, the one at the front, the one who asked. Whoever it is, everyone watched it happen.
+
+If the party cannot agree, the plate stays in the wall. The forest is content to keep it.
 
 ---
 
@@ -351,6 +400,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Echothorn Seed | Thorne Throne | See `items/turnroot-weald-items.md` |
 | Luminova Powder | Luminova Clearing | See `items/turnroot-weald-items.md` |
 | Rusted Armor | Floating Gallery | See `items/turnroot-weald-items.md` |
+| **Tollworn Plate** | **Seeker's Price** | **Tier 1 armor — the campaign's first real equipment. One only; party chooses the wearer.** |
 | Vision Shard | Mirror-Slick Pond | See `items/turnroot-weald-items.md` |
 | Root Fibers | Rootstalker (common) | See `items/turnroot-weald-items.md` |
 | Sap Vial | Rootstalker (rare) | See `items/turnroot-weald-items.md` |
@@ -359,3 +409,15 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
+
+---
+
+## What It Pays
+
+This is a framework rather than a single session, so it pays by the session rather than in a lump: **~40 gold per character per session at Tier 1**, rising with the party (`rules/equipment.md`, Pacing; multiply by party size).
+
+**Most of it should arrive as harvest, not as fee.** The Weald is the most thoroughly priced region in the world — `items/turnroot-weald-items.md` lists what things are worth and Senshi at the Gilded Tusk buys specimens outright. A party that engages with the forest as a place with things in it will out-earn a party waiting to be paid, which is the correct incentive for this region and worth letting them discover rather than telling them.
+
+Payment for specific jobs, where a job exists, comes from whoever asked — and in the Weald that is rarely anyone official.
+
+**The Tollworn Plate is not part of this number.** It is found gear, off the gold curve entirely (`rules/equipment.md`, Pacing), and it is the campaign's first real piece of equipment — placed at Seeker's Price, before the Root Heart, one only. Do not price the session's income around it and do not hand out a second one.

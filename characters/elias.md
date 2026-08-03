@@ -1,6 +1,6 @@
 # Elias
 
-*Archon of Change. Does not know this. See `world/seats-archons-echoes.md`.*
+*Archon of Change. Does not know this. See `mythology/seats.md` (Change) and `mythology/archons.md`.*
 
 ---
 

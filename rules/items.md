@@ -4,15 +4,17 @@ Every mechanical item and piece of equipment currently in the world, sorted by w
 
 For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing, design guidance — see `rules/equipment.md`. This file is the inventory, not the design guide.
 
+**Where the money comes from.** Two channels, and only two: somebody pays the party for solving a problem, or the party sells something they found and carried out (Senshi's going rates in `items/turnroot-weald-items.md` are the worked example). Creatures do not drop coins. How fast any of it should accumulate is `rules/equipment.md`, Pacing.
+
 ---
 
 ## Briarwatch
 
 *Full entries: `items/briarwatch-items.md`*
 
-- **Barbed Wrap** — reflect 1 damage when targeted, 1 battle. *Source: Roadhouse barracks.*
+- **Barbed Wrap** — Thorns 1 for the battle. *Source: Roadhouse barracks.*
 - **Carrion Feather** — negates the first forced reposition, then spent. *Source: given by Aege on delivery to Briarwatch.*
-- **Split Wedge** — Anchored, +2 damage this turn. *Source: farmer's reward, after the Hollow.*
+- **Split Wedge** — Anchored, +2 damage per turn while you hold position. *Source: farmer's reward, after the Hollow.*
 
 ---
 
@@ -91,7 +93,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
 
-- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Injury cards at combat's end.
+- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
 - **Echo Shell** — repeat your last action, if it's still retrievable from discard.
 - **Blood Phial** — add the target's own last-used card's effect to your attack.
 - **Imprint Sigil** — target follows a simple command, 1 turn.
@@ -100,9 +102,11 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ---
 
-## Underground Bazaar — a real gap, not an oversight
+## Underground Bazaar — no items, by design
 
-Checked directly: nothing in `locations/underground-bazaar.md` has an actual `Use:`/`Effect:` line. Willem's paintings, the Soul Economy trades, Kess's and Moth's own possessions — all narrative, no mechanics, and there's no `items/underground-bazaar-items.md` file yet. Given the location's whole premise (a market that trades in memories, secrets, and soul-economy debt instead of coin), items here would likely need their own pricing logic entirely, not a straight gold-cost — worth thinking through before just bolting standard prices onto bazaar goods.
+The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`locations/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
+
+There is no `items/underground-bazaar-items.md` and none is coming. Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
 
 ---
 
@@ -115,4 +119,4 @@ A quick reference for where it makes sense for a new item to surface:
 - **Pell (Fog Basin)** is the one dealer whose price is never coin — memories, secrets, names. Anything sold through him should keep that convention rather than getting a flat gold price.
 - **Borrowers (the Hollow)** trade in goodwill, not currency — their two items are both earned, not bought.
 - **Aege / the Briarwatch farmer** hand over items as direct narrative rewards tied to a specific job finished, not shop stock.
-- **The Underground Bazaar** trades in secrets and soul-economy debt — see the gap noted above before assuming standard pricing applies there at all.
+- **The Underground Bazaar** trades in cards, bought with cards, memories, or secrets — never coin. See above; it has no item stock and is not supposed to.

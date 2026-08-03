@@ -312,7 +312,15 @@ def card_to_html(card):
     if card.get('flavor'):
         flavor = f'<div class="flavor">&#8220;{h(card["flavor"])}&#8221;</div>'
 
-    return f'''<div class="card" style="background:{bg_color};border-color:{hex_color}99">
+    # Body text is set large by default, because most cards are short — median
+    # is ~140 characters. A handful run 300+ and would overflow a fixed 84mm
+    # card at that size, so those step down instead of clipping. Better a
+    # slightly smaller wordy card than a truncated one.
+    weight = sum(len(str(card.get(k, ''))) for k in
+                 ('attack', 'special_rule', 'effect', 'defensive_bonus', 'range', 'flavor'))
+    density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
+
+    return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
   <div class="card-top">
     <div class="card-name">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
@@ -425,9 +433,9 @@ body {{
 }}
 
 .card-name {{
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.12;
   flex: 1;
   letter-spacing: 0.01em;
 }}
@@ -442,7 +450,7 @@ body {{
 }}
 
 .card-sub {{
-  font-size: 6.5pt;
+  font-size: 7.5pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 3px;
@@ -461,14 +469,14 @@ body {{
 }}
 
 .tbl td {{
-  font-size: 7.5pt;
-  line-height: 1.3;
+  font-size: 9.5pt;
+  line-height: 1.28;
   vertical-align: top;
   padding: 1.5px 0;
 }}
 
 .tbl .lbl {{
-  font-size: 6pt;
+  font-size: 7pt;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -479,9 +487,18 @@ body {{
   padding-top: 2px;
 }}
 
+.card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
+.card.dense .flavor {{ font-size: 7pt; }}
+.card.dense .card-name {{ font-size: 11pt; }}
+
+.card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
+.card.denser .flavor {{ font-size: 6.2pt; }}
+.card.denser .card-name {{ font-size: 10pt; }}
+.card.denser .tbl .lbl {{ font-size: 6pt; }}
+
 .flavor {{
   font-style: italic;
-  font-size: 6.5pt;
+  font-size: 8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -490,8 +507,8 @@ body {{
 }}
 
 .item-effect {{
-  font-size: 7.5pt;
-  line-height: 1.4;
+  font-size: 9.5pt;
+  line-height: 1.35;
   flex: 1;
 }}
 </style>

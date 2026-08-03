@@ -21,3 +21,13 @@ Effect: Name a card color. If the target plays that color on their next turn, he
 Defensive Bonus: Return 1 card from your discard pile to the top of your deck.
 Range: Both
 *"The Weald does not forget. It catalogues."*
+
+---
+
+**GRAFT**
+GREEN — SOUL — WEALD
+Attack: Soul + d4
+Effect: Add 1 A ROOTED HEART to the bottom of the defender's deck.
+Defensive Bonus: Attacker gains Rooted.
+Range: Both
+*"It does not kill the tree it takes. It only makes the tree partly itself."*

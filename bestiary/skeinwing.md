@@ -2,10 +2,13 @@
 
 *High-altitude glider. Almost never encountered alive. What the Tollbird's larder sometimes holds instead of a young jackalope.*
 
+**Cards:** `cards/skeinwing.md`
+
 **Mind 2 / Body 1 / Soul 4 — HP 11**
 **Creature Threat Rating:** 7
 
-*No signature cards. This is not built as a standard combat encounter — see Tactical Purpose.*
+
+**Deck (7 — 2 Blue / 1 Red / 4 Green):** DEFLECT, TOO HIGH TO HEAR *(blue)* · FROM ABOVE *(red)* · SYNCHRONY, UNTOUCHED, COMMUNION, ENTWINED *(green)*
 
 ---
 

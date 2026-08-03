@@ -7,6 +7,8 @@
 **Mind 1 / Body 1 / Soul 3 — HP 11**
 **Creature Threat Rating:** 5
 
+
+**Deck (5 — 1 Blue / 1 Red / 3 Green):** FREEZE *(blue)* · NIP *(red)* · BOLT, QUICKSTEP, MOCKERY *(green)*
 ---
 
 ## Description

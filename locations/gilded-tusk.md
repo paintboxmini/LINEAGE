@@ -178,7 +178,7 @@ He places a folded note on the table without sitting down.
 
 He goes back to the kitchen.
 
-The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **35 silver** for a fresh specimen delivered intact.
+The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **35 gold** for a fresh specimen delivered intact.
 
 *If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
 

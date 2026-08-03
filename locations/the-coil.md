@@ -422,7 +422,7 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 
 - `locations/vultures-nest.md` — The Night Ferryman (Notable Roles)
 - `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
-- `mythology/seats.md`, `world/seats-archons-echoes.md` — Navigation, the Night Ferryman's Seat (GM-only)
+- `mythology/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
 - `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
 - `locations/abyssal-ruins.md`, `locations/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
 - `bestiary/stonecoil.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat

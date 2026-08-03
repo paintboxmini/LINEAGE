@@ -4,7 +4,7 @@
 
 ---
 
-*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md` (Seismic Redirect keeps its name; Correction Grip is de-flavored as IRON GRIP) — Alignment Marshal's deck uses those core cards in their place. Also worth a look sometime, unrelated to this promotion: CORRECTION LOAD below shuffles Exhaust into the target's deck, which doesn't match the glossary's actual rule (Exhaust goes directly into hand, not the deck, unlike Injury) — a pre-existing inconsistency, not touched here.*
+*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md` (Seismic Redirect keeps its name; Correction Grip is de-flavored as IRON GRIP) — Alignment Marshal's deck uses those core cards in their place.*
 
 ---
 

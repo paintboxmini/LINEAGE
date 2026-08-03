@@ -202,7 +202,7 @@ They don't attack. They move toward the party slowly, reaching. Getting envelope
 
 *Tactical note: slimes can be moved around. They follow warmth. A player who moves slowly enough will find the slimes part around them.*
 
-**Stat block:** pending — `bestiary/wallows-slime.md`
+**Stat block:** `bestiary/wallows-slime.md`
 
 ---
 
@@ -250,6 +250,18 @@ The grandmother's map ends here.
 
 ---
 
+## What It Pays
+
+**Nothing, and that is not an oversight.**
+
+Nobody hires anyone to go into the Wallows. Every objective in Opening Conditions is the party's own — a debt that has run out of room, someone on a dead-end branch, the Warden, a name heard in the echoes. There is no client, so there is no fee.
+
+What the descent is worth is what they came for: the alternate path out of the city, or the person, or the thing that needed ending. A GM who wants to hand out gold here should reconsider — payment would imply somebody sanctioned this, and nobody did.
+
+Salvage is a different question and is fair game. The labour level has debt-slaves' possessions, the Demon Court has property, and the threshold has whatever the deep has been keeping. What the party carries out is theirs; nobody is going to hand it to them.
+
+---
+
 ## Related Documents
 
 - `locations/the-wallows.md` — location overview
@@ -257,5 +269,5 @@ The grandmother's map ends here.
 - `locations/underground-bazaar.md` — above
 - `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
 - `mythology/seats.md` — Aurora, Seat of Love/Binding
-- `bestiary/wallows-slime.md` — pending
+- `bestiary/wallows-slime.md` — stat block, passives, and the signature cards
 - `bestiary/the-descended.md` — The Shelf inhabitants

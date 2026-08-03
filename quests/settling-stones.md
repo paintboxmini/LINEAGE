@@ -78,6 +78,14 @@ Eliminate or force retreat of all Borrower Sentries, **or** talk them down (Stan
 
 ---
 
+## What It Pays
+
+**Nothing on its own.** This is one of the two entrances to the Hollow Below Briarwatch, not a separate job — the payment for the whole descent is Iron's, in `quests/hollow-below-briarwatch.md`.
+
+Running both entrances does not pay twice.
+
+---
+
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the descent this entrance leads to; the Subterranean Pressure Track

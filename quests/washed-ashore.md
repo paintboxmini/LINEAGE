@@ -59,6 +59,16 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 
 ---
 
+## What It Pays
+
+**Nothing in coin, and the party has none to start with** — this is a campaign opening (`rules/character-creation.md`: characters begin with no money).
+
+What they get instead is footing: passage, a name that opens one door, somebody at Vulture's Nest who owes them the benefit of the doubt. Worth more than forty gold to a party with nothing, and it costs the world nothing to give.
+
+Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) begin once they are actually working.
+
+---
+
 ## Related Documents
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret

@@ -230,7 +230,7 @@ em {
 <hr>
 <p><em>What follows is the plain shape of all of this — the same rules, stated flatly, without me. Read it after. Keep it beside you. You will want the exact numbers eventually, and I have never been very good at those.</em></p>
 <h1 class="section-break">Player Guide — Combat &amp; Exploration</h1>
-<p>Your stats, then how combat and exploration actually work at the table. Full character creation — background, starting deck, equipment — lives in <code>rules/character-creation.md</code>.</p>
+<p>Your stats and your gear, then how combat and exploration actually work at the table. The rest of character creation — background, and how the starting deck gets drafted — lives in <code>rules/character-creation.md</code>.</p>
 <hr>
 <h1 class="section-break">Part One: Combat</h1>
 <h2>The Stats</h2>
@@ -363,7 +363,7 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 <p>An Effect that only adds to <em>this attack&#x27;s</em> damage does nothing on a miss or a tie — there&#x27;s no hit to add to. Effects that do something else (apply a status, reposition, shift a stat) trigger normally regardless.</p>
 <hr>
 <h2>Damage Pipeline</h2>
-<p>When attack damage lands, it passes through, in order: <strong>redirect</strong> (e.g. Shared Burden) → <strong>volunteer shield</strong> (Protect) → <strong>Resist / Vulnerable</strong> (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.</p>
+<p>When attack damage lands, it passes through, in order: <strong>redirect</strong> (e.g. Shared Burden) → <strong>volunteer shield</strong> (Protect) → <strong>Armour</strong> (flat reduction) → <strong>Resist / Vulnerable</strong> (one stack of each cancels the other first; otherwise Resist halves, Vulnerable adds 50%, rounded down) → HP.</p>
 <p>A single attack can never push a standing combatant below 0 HP — that&#x27;s a Collapse, not a kill.</p>
 <p><strong>Unpreventable</strong> damage skips this pipeline entirely — Thorns, status damage, and HP costs aren&#x27;t attacks, so nothing above applies to them. They land in full.</p>
 <hr>
@@ -402,6 +402,13 @@ Range: Melee
 &quot;Sometimes the direct path is the wisest path.&quot;</pre>
 <ul><li><strong>Name</strong> — STRIKE.</li><li><strong>Color + Stat</strong> — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.</li><li><strong>Attack: Body + d10</strong> — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.</li><li><strong>Effect: None</strong> — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE&#x27;s whole design is spent on the number alone.</li><li><strong>Defensive Bonus: Deal 3 damage to attacker, unpreventable</strong> — win <em>or tie</em> as the defender and you deal a flat 3 back (STRIKE&#x27;s own Effect is None, so it never cancels the Defensive Bonus on a tie). &quot;Unpreventable&quot; means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.</li><li><strong>Range: Melee</strong> — you and your target must both be in the Frontline to play this card.</li><li><strong>Flavor text</strong> — <em>&quot;Sometimes the direct path is the wisest path.&quot;</em> Not a rule. Just the world&#x27;s own read on a card built with nothing to hide.</li></ul>
 <hr>
+<h2>What It Looks Like</h2>
+<p>When you play a card, <strong>you choose what it looks like.</strong></p>
+<p>The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn&#x27;t tell you is how your character gets there. That part is yours.</p>
+<p>A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.</p>
+<p>None of it is wrong as long as it fits your character. The cards are a frame. You&#x27;re the one making it mean something.</p>
+<p>You don&#x27;t have to explain the metaphysics. Neither does your character.</p>
+<hr>
 <h2>Keywords Quick Reference</h2>
 <p><em>Initiative Shift X is covered above, under Initiative &amp; The Wheel — not repeated here.</em></p>
 <table class="doc-table">
@@ -416,6 +423,10 @@ Range: Melee
 <tr>
 <td>Weak</td>
 <td>Next damage roll, subtract a d6. Stacks; cancels 1-for-1 with Deadly.</td>
+</tr>
+<tr>
+<td>Armour X</td>
+<td>Reduce all incoming attack damage by X, every attack, all fight. Applies before Resist/Vulnerable. Never expires.</td>
 </tr>
 <tr>
 <td>Resist</td>
@@ -621,15 +632,15 @@ Range: Melee
 <tr>
 <td>Short</td>
 <td>20 minutes</td>
-<td>1d6 + Body HP</td>
-<td>All Exhaust; may destroy 1 Injury from hand, discard, or deck</td>
+<td>2d6 + Body HP</td>
+<td>All Exhaust (hand, deck, and discard); may destroy 1 Wound from hand, discard, or deck</td>
 <td>3/day, can be chained</td>
 </tr>
 <tr>
 <td>Long</td>
 <td>7½ hours</td>
 <td>Full heal</td>
-<td>All Injuries and all Exhaust</td>
+<td>All Wounds, and all Exhaust (hand, deck, and discard)</td>
 <td>Once/day, requires genuine safety</td>
 </tr>
 </tbody></table>
@@ -638,6 +649,13 @@ Range: Melee
 <h2>Equipment</h2>
 <p>Three slots: <strong>Weapon, Armor, Artifact.</strong> Only what&#x27;s actually equipped carries a permanent passive effect — everything else about how you look or what you&#x27;re carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item Action / Item Action in combat. Artifacts are resonant items aligned with a Seat&#x27;s domain.</p>
 <p>Full tier system and the world&#x27;s item catalog: <code>rules/equipment.md</code> and <code>rules/items.md</code>.</p>
+<hr>
+<h2>What You Showed Up With</h2>
+<p>You choose what your character wears and what they carry. A sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made.</p>
+<p><strong>None of it has stats. None of it has a gold value.</strong> Your starting garb and weapon are not equipment in the mechanical sense — they grant no bonus, occupy no slot, and cannot be sold. Nobody is going to ask you what your sword&#x27;s damage is. The cards are your damage. The gear is who you are.</p>
+<p><strong>It still matters, constantly.</strong> Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:</p>
+<ul><li>A sword can dig. It can pry, wedge a door, cut a rope at arm&#x27;s length, and reach something you&#x27;d rather not reach with your hand.</li><li>A bow can shoot out a light across a room you don&#x27;t want to cross.</li><li>A heavy coat is a rope, a sack, a way to carry something too hot to hold, or the reason the cold doesn&#x27;t get a check out of you.</li></ul>
+<p>So choose it as fiction, then use it as leverage. The character who thought about what they brought will find more doors open than the one who wrote &quot;sword&quot; and stopped thinking about it. That is the whole design: no numbers on it, real consequences from it.</p>
 <hr>
 <h2>The Oracle (End of Session)</h2>
 <p>At the close of every session, each player meets the Oracle alone. She speaks in three frames — <strong>Name, Price, Distance</strong> — and you&#x27;ll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don&#x27;t get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.</p>
