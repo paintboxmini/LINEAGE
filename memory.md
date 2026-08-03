@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A1 — SEED measured, no change made.** 50.8–52.9% in duels, 52.0% in 3v3; its position gate cashes 99–100% of the time it gets the chance, so the "deferred Deadly" is a one-turn delay rather than a gamble. Closes the last of the three cards in the old balance concern. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A1 — OVERCOMMIT rebalanced; RETALIATE confirmed already fixed.** OVERCOMMIT was strictly dominated by STRIKE (44.1% vs 55.9%); now `Body + d10 + 1d6` at 50.6%. RETALIATE needed no change and the queued fallback would have made it worse. SEED untouched and explicitly not covered. Full reasoning in Standing Reasoning.
 
 *Cleared 2026-08-02 — Drew reviewed the batch ("clear the queue, all nine reviewed"). **Ten entries, not nine**: the count reported to him was correct when given, then the sync pass he was approving shipped a tenth of its own (the duplicate-cross-reference fix), which he had already seen reported in chat. Cleared: Iron named + `characters/iron.md`; `world/the-in-between.md`; `world/the-scar.md`; Pendragon is the Scar; the In-Between reaching the world overview; the world-layer audit; Cuts over Seats; the cosmology consolidation; Aege fated to the Seat of Death; and the cross-reference dedupe. Reasoning for each lives in Standing Reasoning; history is in git.*
@@ -115,6 +117,14 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] SEED measured — no change needed, and its "gate" turns out not to be one.** Drew asked for the third card from the old concern after OVERCOMMIT and RETALIATE. Same harness: decks identical but for the one card, sides swapped.
+  - **Win rate is fine.** SEED reads **50.8% vs STEADFAST, 51.2% vs SHADE AWAY, 52.9% vs WITNESS** in duels, and **52.0%** in 3v3 with sides swapped. Parity to slightly ahead against three green Soul peers. Nothing here is underpowered.
+  - **The finding is that the condition almost never fails.** SEED's payoff is gated on beginning a later turn at the position where the seed was planted. Instrumented: of turns that started with a live seed, it was at anchor **100% in duels** and **99% in 3v3** — only 1% were broken by having been moved. Roughly **70% of plants cash overall**, and the 30% that don't are fights that simply ended first, not conditions that failed.
+  - **So the "self-deferred Deadly" framing overstates the cost.** SEED is not Deadly ×2 at risk; it is Deadly ×2 delayed by one turn. That is a real cost — a turn of tempo, and the fight ending first — but it is not the gamble the concern implied, and no compensation is owed for a gate that fires essentially every time it gets the chance.
+  - **I did not trust the duel number.** 100% is exactly the shape of a duel artifact, since position changes cost an action and nothing in a 1v1 pressures movement — and the repo already treats duels as degenerate for position-shaped mechanics (Standing Reasoning, the Wheel entry). Re-ran in 3v3 where forced repositioning actually exists. It moved from 100% to 99%, which is the honest answer rather than the convenient one.
+  - **Also caught: I nearly reported the team result backwards.** `Battle.run()` returns `0`/`1` for team A/B, not a label, and my first team run had no side swap at all. Checked `_finish()` for the convention and re-ran swapped before quoting anything — same class of mistake as misreading `one_duel`'s return earlier tonight.
+  - **Verdict: leave SEED alone.** The old concern is now fully closed across all three cards it named — RETALIATE was already fixed, OVERCOMMIT was strictly dominated and is repaired, SEED never needed anything.
 
 **[2026-08-02] RETALIATE/OVERCOMMIT balance resolved — and the concern was describing the wrong problem.** Drew asked for the tuning pass that had been queued since 2026-07-23. The queued framing was *"RETALIATE/OVERCOMMIT/SEED's self-deferred Deadly,"* with dice/range as the first lever and an extra Deadly stack as the named fallback. Measuring found that framing wrong on both cards it named.
   - **RETALIATE needed nothing. The work was already done and nobody closed the ticket.** Its die was raised d6 → d8 on 2026-07-29, and `keyword_lab.py` now reads it at **~51%** against a flat Evade reference with its gate firing on **42%** of plays. The named fallback was measured too: a **third** Deadly stack drops it to ~50.2%, slightly *worse*, because fights average 4.3 turns and each stack is spent on one future damage roll — a stack that never gets cashed is a stack wasted. Applying the queued fallback would have been a downgrade.
