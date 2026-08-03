@@ -385,7 +385,7 @@ Range: Melee
 
 **UNTOUCHED**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d4
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both

@@ -1317,6 +1317,11 @@ def _opening_defense(engine, me, foe):
 # (LAST RESORT itself, conditional) and zero in Red/Green specifically —
 # matching LAST RESORT's own threshold exactly rather than picking a new,
 # unexplained number.
+#
+# The three share an effect, not a die. All three printed d8 until 2026-08-03,
+# when Drew put the trifecta on the traditional 4/6/8 spread — d6 Mind, d8
+# Body, d4 Soul. The divergence is the die philosophy applied, not drift:
+# UNTOUCHED now carries the same Immunity gate on the smallest die in the game.
 def _unbroken_effect(engine, me, foe):
     if me.hp <= 6:
         me.immune = True
@@ -2288,7 +2293,7 @@ def build_cards():
     add("FRAME-TRAP", 'B', 'mind', 'both', 4)
     add("EXPOSED", 'B', 'mind', 'both', None, damage=_exposed_damage, defense=_exposed_defense)
     add("UNMAKE", 'B', 'mind', 'ranged', 4, effect=_unmake_effect, defense=_unmake_defense)
-    add("LAST RESORT", 'B', 'mind', 'both', 8,
+    add("LAST RESORT", 'B', 'mind', 'both', 6,
         effect=_last_resort_effect, defense=_last_resort_defense)
     add("FORESEEN", 'B', 'mind', 'ranged', 6,
         effect=_foreseen_effect, defense=_foreseen_defense)
@@ -2306,7 +2311,7 @@ def build_cards():
         effect=_steadfast_effect, defense=_steadfast_defense)
     add("OPENING", 'G', 'soul', 'melee', 4,
         effect=_opening_effect, defense=_opening_defense)
-    add("UNTOUCHED", 'G', 'soul', 'both', 8,
+    add("UNTOUCHED", 'G', 'soul', 'both', 4,
         effect=_untouched_effect, defense=_untouched_defense)
     add("BRISTLE", 'G', 'soul', 'melee', 4,
         effect=_bristle_effect, defense=_bristle_defense)
