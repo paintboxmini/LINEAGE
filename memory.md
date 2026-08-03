@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A1 — Reward lines on all fourteen quests.** Nine paid from the pacing rule; five state plainly that they pay nothing and why (`sour-tomatoes`, `the-wallows-descent`, both Hollow entrances, `the-abandoned-homestead`). Closes the last pacing follow-up. Full reasoning in Standing Reasoning.
+
 **[2026-08-02] A2 — Price coherence pass** (Drew granted full authority). Senshi's unit slip fixed; a ~15 gold per single-use point scale derived from the existing Luminova pair and written into `rules/equipment.md`; four incoherent prices corrected; **17 previously unpriced items priced**; Pell's memory-economy left deliberately goldless and now stated as such. Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A2 — Gold pacing.** Currency defined (10 copper = 1 silver = 1 gold), a pacing rule added to `rules/equipment.md` (a session ≈ one fifth of the tier being shopped for), income channels stated in `rules/items.md`, and Iron's payment written into the Session 1 quest as the worked example. Closes the pacing concern; opens two follow-ups. Full reasoning in Standing Reasoning.
@@ -121,6 +123,17 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] Reward lines applied — and five of the fourteen quests correctly pay nothing.** Drew: "apply reward lines." The queued framing was "twelve quests with no reward line," which assumed twelve rewards. Reading them first said otherwise.
+  - **Every quest now states what it pays, including the ones that pay nothing.** That is the actual deliverable: a GM opening any quest file gets an answer either way, instead of finding silence and having to guess whether it was a decision or an omission. Five say nothing, and each says *why*.
+  - **`sour-tomatoes.md` — "Nothing. Do not put a number here."** The encounter's only real question is what happens to the children who are still alive. A payment answers a different and worse question. The clearest case where applying the rule mechanically would have damaged the thing it was applied to.
+  - **`the-wallows-descent.md` — nobody hires anyone to go into the Wallows.** Every objective in its Opening Conditions is the party's own: a debt with no room left, someone on a dead-end branch, the Warden, a name heard in the echoes. No client, so no fee — and paying would imply somebody sanctioned the descent, which nobody did. Salvage is separately fair game and says so.
+  - **`settling-stones.md` and `shifting-burrow.md` pay nothing because they are two doors into the same descent.** Iron pays for the Hollow; running both does not pay twice. Worth stating outright, since a GM running them as standalone encounters would reasonably assume each earned its own fee.
+  - **The Ashfall arc had an employer hiding in one sentence.** `war-engine.md`'s Core Concept opens *"They were sent to disable a war machine."* So both Ashfall sessions pay Tier 2 — and war-engine's reward note carries the complication the fiction creates: the contract was to break an engine, there is no engine, and the party has to report that to whoever holds the purse. The version to avoid is the employer simply believing them and paying.
+  - **`abyssal-ruins-cathedral.md` pays in lair, not commission**, with an explicit line that the stabilising crystal is not loot and must not be priced — it holds the passage the party crossed to reach it.
+  - **`turnroot-weald-adventure.md` pays by the session rather than in a lump**, being a framework and not a night's work — and most of it should arrive as *harvest*. It is the most thoroughly priced region in the world and Senshi buys outright, so a party that treats the forest as a place with things in it out-earns one waiting to be paid. Left for the table to discover rather than be told.
+  - Amounts throughout are the pacing rule applied, not invented: ~20g for a single encounter at Tier 1, ~40g for a session, ~160g at Tier 2.
+  - **Process note:** the script that wrote this entry died on a bad substring match *after* the quest files were already written, so the first commit shipped the content with neither the log nor the concern closed. Caught on the next check rather than at the time — worth remembering that a multi-step edit script failing halfway leaves a half-finished state that still passes `verify.py`, because nothing it checks knows what was supposed to happen.
 
 **[2026-08-02] Prices made coherent — Drew: "all prices were mostly ceremonial... you have full authority to make the prices coherent."** Followed the pacing work, and confirmed the Senshi 35 silver → 35 gold slip as a slip.
   - **The bigger finding was absence, not error: four of the six `items/` files had no prices at all.** `briarwatch-items.md`, `consumables.md`, `vultures-nest-items.md` and most of `hollow-and-weald-items.md` listed effects and sources with no number anywhere. Only `turnroot-weald-items.md` was fully priced. So "make the prices coherent" was mostly "make the prices exist."
