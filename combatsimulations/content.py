@@ -2227,7 +2227,7 @@ def build_cards():
 
     add("ENDURE", 'R', 'body', 'melee', 4, effect=_endure_effect, defense=_endure_defense)
     add("WEATHERED", 'R', 'body', 'melee', 6, effect=_weathered_effect, defense=_weathered_defense)
-    add("STARING CONTEST", 'R', 'body', 'melee', 4,
+    add("STARING CONTEST", 'R', 'body', 'ranged', 4,
         effect=_staring_contest_effect, defense=_staring_contest_defense)
     add("WAITING GAME", 'R', 'body', 'both', 4,
         effect=_waiting_game_effect, defense=_waiting_game_defense)
@@ -2263,7 +2263,7 @@ def build_cards():
         effect=_known_ground_effect, defense=_known_ground_defense)
     add("WHERE IT'S GATHERING", 'B', 'mind', 'both', 6,
         effect=_where_its_gathering_effect, defense=_where_its_gathering_defense)
-    add("RHYTHM BREAK", 'R', 'body', 'melee', 8,
+    add("RHYTHM BREAK", 'R', 'body', 'ranged', 8,
         damage=_rhythm_break_dmg, defense=_rhythm_break_defense)
     add("STILL COUNTING", 'G', 'soul', 'both', 6,
         damage=_still_counting_dmg, defense=_still_counting_defense)
@@ -2285,7 +2285,7 @@ def build_cards():
         effect=_still_ground_effect, damage=_still_ground_damage, defense=_still_ground_defense)
     add("PULL", 'R', 'body', 'both', 6, effect=_pull_effect, defense=_pull_defense)
     add("PUSH", 'R', 'body', 'melee', 6, effect=_push_effect, defense=_push_defense)
-    add("ROLLOUT", 'R', 'body', 'melee', 4,
+    add("ROLLOUT", 'R', 'body', 'both', 4,
         damage=_rollout_damage, defense=_rollout_defense, returns_to_hand=True)
     add("SEISMIC REDIRECT", 'R', 'body', 'melee', 6,
         effect=_seismic_redirect_effect, defense=_seismic_redirect_defense)

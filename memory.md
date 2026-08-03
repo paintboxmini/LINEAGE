@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-03] A1 — Three red cards re-ranged.** Drew set the counts (2 to Ranged, 1 to Both); I picked the cards from fiction. STARING CONTEST and RHYTHM BREAK to Ranged, ROLLOUT to Both. Red is now Melee 66% / Both 23% / Ranged 11%. SEISMIC REDIRECT was the obvious-looking pick and had to be rejected — Rushdown requires the user to be Frontline. Full reasoning in Standing Reasoning.
+
 **[2026-08-03] A3 — HP formula reverted to (3 × Body) + 6.** Drew's call. Reverses the earlier flatten to 2×Body+9. 32 stat blocks recomputed, 14 unchanged at the Body-3 crossover, 3 bespoke baselines rebased, formula text updated in `CLAUDE.md` and five rules files, sim and both `verify.py` gates moved with it. Measured: it pushes the Frost/Steele matchup ~3 points *toward* even, not away. Full reasoning in Standing Reasoning.
 
 **[2026-08-03] A1 — Immunity trifecta split by Range.** Drew's call: Blue ranged, Red melee, Green both. LAST RESORT to Ranged, UNBROKEN to Melee, UNTOUCHED unchanged. Range gates defense as well as attack, which is where these cards live. Measured cost: Blue −3.8, Red −2.4. Also caught and fixed a confound in the measuring harness that had invalidated one of the die figures reported earlier the same day. Full reasoning in Standing Reasoning.
@@ -159,6 +161,12 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-03] Three red cards re-ranged — Drew set the counts, I picked the cards.** Drew: *"2 red cards needs changed to ranged. and 1 to both."* Red was the most range-locked color at 72% Melee against Blue's 74% Ranged; it now reads Melee 66% / Both 23% / **Ranged 11%**.
+  - **The selection rule was fiction that survives the mechanics, and that second half did real work.** **SEISMIC REDIRECT** was the obvious pick and is wrong: its Effect is *"Rushdown,"* and the glossary says Rushdown requires **the user to be in the Frontline**. A Ranged card can only be played while *not* in melee range, so the card would have gated itself out of its own effect. Caught by reading the keyword rather than the card name — the same species as the "Immune to Blind" collision earlier today, where a word that sounds right names something else.
+  - **REPEL was rejected for the inverse reason.** *"All enemies must move to backline"* is about opening a gap; as Ranged it could only be played once the gap already existed. The fiction points at range and the mechanic points away from it.
+  - **What was chosen, and why each survives both tests.** **STARING CONTEST** — pure initiative manipulation off eye contact, *"Move first and you've already lost."* It needs line of sight, not contact, and Melee actively contradicted it; this is a correction more than a nudge. **RHYTHM BREAK** — its own gate is *"if the defender moved since their last turn,"* which is a read taken across a field; a Backline attacker watching someone reposition is the card's fiction stated exactly. **ROLLOUT** to Both — the whole card is about positional discipline (*"if you did not reposition last turn"*) and it returns to hand; a card whose identity is movement being locked to one position was the odd one out. None of the three carries a keyword with a positional requirement, which is what makes them safe to move.
+  - **Left alone deliberately:** BLINDSIDE was a strong second candidate for Ranged (Blind applied before contact reads well) and lost to RHYTHM BREAK only on tightness of fit. Worth knowing if a future pass wants a third.
 
 **[2026-08-03] HP back to (3 × Body) + 6 — a reversion, and I flagged it as one before building.** Drew: *"max HP= 3xBody + 6."* (A3.)
   - **This undoes a documented decision, which is why it got named rather than just executed.** `archives/key-design-decisions.md` records the opposite move: *"HP formula: (2 × Body) + 9 (changed from 3×Body+6 — Drew, via sim experiment). Flatter curve to decouple HP from Body and reduce Body's damage+HP double-dip."* Body drives red damage dice *and* HP, so a steeper HP curve makes one stat pay twice. The only live trace of that reasoning was a comment in `engine.py`; the rest was archived. Stated to Drew, then built — it is his formula and his jurisdiction, and it is one commit from undone.

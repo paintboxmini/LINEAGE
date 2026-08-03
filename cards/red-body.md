@@ -318,7 +318,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
 Defensive Bonus: Move yourself to immediately follow the attacker in the initiative order.
-Range: Melee
+Range: Ranged
 *"Move first and you've already lost."*
 
 ---
@@ -408,7 +408,7 @@ RED — BODY
 Attack: Body + d8. If the defender moved since their last turn, +1d6.
 Effect: None.
 Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
-Range: Melee
+Range: Ranged
 *"Moving is a decision. So is being wrong about it."*
 
 ---
@@ -428,7 +428,7 @@ RED — BODY
 Attack: Body + d4
 Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use.
 Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use.
-Range: Melee
+Range: Both
 *"It was slow once."*
 
 ---
