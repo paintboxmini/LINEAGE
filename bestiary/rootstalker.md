@@ -60,7 +60,7 @@ Harvesting takes a short rest or a successful DC 12 Body/Senses check to avoid w
 Thin, flexible, incredibly strong. Still faintly warm; pulse slowly when held. Wither and die if left in sunlight too long.
 
 **Uses:**
-- Rope: 50 ft per 3 strands (stronger than hemp)
+- Rope: a usable length per 3 strands, stronger than hemp — see `items/turnroot-weald-items.md` for the spec
 - Bowstring: +1 to ranged attack rolls if used for crafting
 - Armor weave: add +1 temp HP to a single piece (breaks after use)
 

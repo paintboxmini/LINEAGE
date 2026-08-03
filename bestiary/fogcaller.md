@@ -23,7 +23,7 @@ It never calls. It doesn't need to.
 ## Abilities
 
 **Fog Vision** — Passive
-Immune to Blind. Hunts perfectly in its own weapon.
+Blind has no effect on it. Hunts perfectly in its own weapon.
 
 **Grip Walk** — Passive
 Cannot be pushed or pulled from its position while in Frontline. PUSH, PULL, and REPEL have no effect.

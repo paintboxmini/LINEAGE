@@ -208,7 +208,7 @@ They don't attack. They move toward the party slowly, reaching. Getting envelope
 
 ### The Reaching Walls
 
-The passage narrows. Not abruptly — gradually, over the course of a hundred feet, until the party is pressing against the walls to move through.
+The passage narrows. Not abruptly — gradually, over long enough that nobody can name the point it started, until the party is pressing against the walls to move through.
 
 The walls are warm.
 

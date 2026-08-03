@@ -16,7 +16,7 @@ Nobody explains that. The house does it.
 
 Set back from the road, far enough that the party has to choose to walk to it. Gray boards, gray sky, gray fence line. From the road it reads as one more Briarwatch farmhouse, because that is what it is.
 
-The difference shows at about fifty paces: nothing is maintained and nothing is looted.
+The difference shows well before anyone reaches the fence: nothing is maintained and nothing is looted.
 
 ---
 

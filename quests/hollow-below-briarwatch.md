@@ -100,7 +100,7 @@ Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to
 
 ### Transition Zone — Broken Stair Chamber
 
-Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One obvious tunnel forward. One narrow Borrower crawl lane, hidden.
+Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clear separation possible. One obvious tunnel forward. One narrow Borrower crawl lane, hidden.
 
 *Safe staging area. Introduce dampness. Show mineral streaking on walls.*
 
@@ -124,7 +124,7 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 **Split Seam (First Choke Point)**
 
-Natural fissure widened by Borrowers. 5 ft wide, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
+Natural fissure widened by Borrowers. Shoulder-width, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
 
 Confined Space Rule active — only one Frontline per side.
 
@@ -146,7 +146,7 @@ Medium chamber. One side visibly damp. Old dry mineral ring higher on wall. Soft
 
 A party that notices the current has a direction, and follows it, finds the actual shape of the problem: water rising from below, not just seeping from above. It's the kind of thing the Borrowers would already know how to redirect, if asked (Mediation Arc, Player Pathways, below).
 
-Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point with roots protruding through the ceiling. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
+Contains the **Vertical Soil Break** — a rough failure point in the ceiling, wide enough for a person to be lowered through, with roots protruding around the edge. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
 
 ---
 
@@ -154,7 +154,7 @@ Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point
 
 **Borrower Settlement**
 
-Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on walls. Clay bowls at tunnel mouths. Simple barricades. Borrowers move through 3 ft tunnels; players must crouch or go around. No predators here — they avoid this zone unless starving.
+Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on walls. Clay bowls at tunnel mouths. Simple barricades. Borrowers move through tunnels cut to their own height; players must crouch or go around. No predators here — they avoid this zone unless starving.
 
 **The flood that opened the sinkhole reached here too, once.** A waterline stain runs along the lower walls, well above current floor level. A few fungal mats show old water-scarring where a healthier patch was scraped back and regrown around the damage. It's old news by the time the party arrives, not a fresh crisis — enough time has passed that the Settlement has largely rebuilt around it: new barricades where old ones rotted, fresh clay bowls replacing cracked ones, the visible signs of a community that took a real hit and came back from it rather than one still in the middle of drowning. Worth describing as evidence, not as an active problem to solve.
 
@@ -214,7 +214,7 @@ Narrow serpentine tunnel. Twisting S-curve. One elevated shelf, one soft floor z
 
 Natural underground stream. Wider. Fast-moving water. Predator avoids strong flow — usable as a safety boundary. Water here originates deeper, not from irrigation. **This is the actual source** of the current now rising through Flood Shelf Chamber and the Split Seam above — the same water, followed upstream to where it genuinely starts, not the irrigation seepage that gets blamed for the rest of the dungeon's dampness.
 
-**This is the real cutoff.** The channel runs 10 ft deep here — swimmable, but not casually. Crossing it against the current is a Hard (DC 16) Body (Senses) check; failure doesn't drown anyone outright, but it costs equipment, position, or both, GM's call based on the fiction. Give the warnings generously before anyone commits: the water's colder here than anywhere else in the Hollow, moving with a weight that isn't just current — something upstream is displacing it. Debris rides the surface at a rhythm too even to be random. No Stonecoil sign anywhere close to the water's edge, which is itself the tell — even the lesser ones won't come near this.
+**This is the real cutoff.** The channel runs well over a person's head here — swimmable, but not casually. Crossing it against the current is a Hard (DC 16) Body (Senses) check; failure doesn't drown anyone outright, but it costs equipment, position, or both, GM's call based on the fiction. Give the warnings generously before anyone commits: the water's colder here than anywhere else in the Hollow, moving with a weight that isn't just current — something upstream is displacing it. Debris rides the surface at a rhythm too even to be random. No Stonecoil sign anywhere close to the water's edge, which is itself the tell — even the lesser ones won't come near this.
 
 **Two ways past this point, and only one of them is the fight nobody's built yet.** The intended route doesn't cross the channel at all — it goes back to the Borrowers, who already know how to redirect water like this (Mediation Arc, Player Pathways, below; the Borrowers "divert water to prevent flooding" as a matter of course). Forcing a crossing instead — swimming it, fighting through, pushing past every warning this section gives — is what actually risks waking what's on the other side: the Greater Stonecoil (Old Flow Channel, below), not yet balanced as an encounter. If a party forces this specific chokepoint rather than solving it, that fight is a live GM call, not a pre-built one — run it on the fly, or pause and build it properly first.
 
