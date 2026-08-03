@@ -43,6 +43,36 @@ This is a budget to design against, not a formula to solve — two tier-2 items 
 
 ---
 
+## Currency
+
+**10 copper = 1 silver. 10 silver = 1 gold.**
+
+All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night's lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.
+
+The Gilded Tusk's menu (`locations/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
+
+---
+
+## Pacing — How Fast Gear Should Arrive
+
+**A session's work is worth about one fifth of the tier the party is currently shopping in.**
+
+| Shopping at | A session pays roughly | Sessions to afford it |
+|---|---|---|
+| Tier 1 (~200 gold) | ~40 gold | ~5 |
+| Tier 2 (~800 gold) | ~160 gold | ~5 |
+| Tier 3 (~2,000 gold) | ~400 gold | ~5 |
+
+The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
+
+**Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
+
+**The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
+
+**Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
+
+---
+
 ## More Fastball Ideas (Unnamed on Purpose)
 
 Straightforward, single-idea equipment across the tiers — no names, no flavor text. They earn an identity when actually built as real "equipment archetypes"; until then they're just budget-legal shapes to pick from or riff on.

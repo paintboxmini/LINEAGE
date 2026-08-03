@@ -4,6 +4,8 @@ Every mechanical item and piece of equipment currently in the world, sorted by w
 
 For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing, design guidance — see `rules/equipment.md`. This file is the inventory, not the design guide.
 
+**Where the money comes from.** Two channels, and only two: somebody pays the party for solving a problem, or the party sells something they found and carried out (Senshi's going rates in `items/turnroot-weald-items.md` are the worked example). Creatures do not drop coins. How fast any of it should accumulate is `rules/equipment.md`, Pacing.
+
 ---
 
 ## Briarwatch

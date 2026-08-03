@@ -326,6 +326,20 @@ Players may notice the recurring mark pattern if they look closely. They do not 
 
 ---
 
+## What Iron Pays
+
+Roughly a session's work at Tier 1 — about **40 gold** of value (`rules/equipment.md`, Pacing) — and he does not hand it over as coin, because he does not have it as coin.
+
+What he has is a farm that is still standing because of them. Any of these, or a mix, and the GM should pick the one the table has earned:
+
+- **Fenwool.** Two head, worth roughly the sum, and a real problem to move — Weck buys culls on that road (`characters/weck.md`), which turns the payment into a second scene rather than a line on a sheet.
+- **The neighbours pool it.** Briarwatch farmers are tired, not poor, and a fixed sinkhole is worth a collection. This is the version where the party gets thanked by people they never met.
+- **He owes them, and says so plainly.** No goods change hands. The party leaves with a farmer's standing debt in a region they will pass through again, which is worth more than forty gold and costs Iron nothing he has.
+
+If the party refuses payment outright, he will not argue and will not forget.
+
+---
+
 ## Aftermath
 
 Days or weeks later: surveyors arrive. Quiet. Stone-scrapers, measuring rods, chalk, line plumbs. They examine the pillar seam, the door lintel crack, the water line in the Flood Shelf, the scoring degradation. They don't accuse. They assess.
