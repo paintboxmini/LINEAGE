@@ -268,6 +268,28 @@ def check_glossary_count(canon):
     return report('glossary block count matches cards/', bad, f'{actual} blocks')
 
 
+def check_duplicate_refs():
+    """A file that lists the same target twice in its bullet references. Cheap to
+    create during a repoint (two old links collapse onto one new file) and
+    invisible to every other check, since both entries resolve fine."""
+    import collections
+    bad = []
+    for path in sorted(glob.glob('**/*.md', recursive=True)):
+        if path.startswith('archives/'):
+            continue
+        targets = []
+        for line in open(path, encoding='utf-8').read().splitlines():
+            if not line.startswith('- `'):
+                continue
+            m = re.search(r'`([^`]+)`', line)
+            if m and '/' in m.group(1):
+                targets.append(m.group(1))
+        for tgt, n in collections.Counter(targets).items():
+            if n > 1:
+                bad.append(f'{path}: lists {tgt} {n} times')
+    return report('no duplicate cross-references', bad)
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -290,6 +312,7 @@ def main():
     check_sim(canon)
     check_item_keywords()
     check_glossary_count(canon)
+    check_duplicate_refs()
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:

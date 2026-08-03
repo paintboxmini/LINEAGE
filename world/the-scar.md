@@ -90,5 +90,4 @@ Knowing the name is not knowing the thing. A GM who has read this section still 
 - `mythology/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is
-- `mythology/echoes.md` — Failed Seat-Takers, the category he is squarely in, and his own entry under Known Echoes
-- `mythology/echoes.md` — the three stages of alignment, and why he may be off the end of them
+- `mythology/echoes.md` — Failed Seat-Takers, his own entry under Known Echoes, and the three Degrees of Alignment he may be off the end of

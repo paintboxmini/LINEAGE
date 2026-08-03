@@ -18,6 +18,10 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A1 — Sync: duplicate cross-references found and gated.** Three files listed the same target twice in their reference blocks. One was mine — repointing `world/the-scar.md` collapsed two old links onto `mythology/echoes.md` and left both lines. Two were pre-existing in `locations/fog-basin.md`, which listed the Fogcaller and the Echo in both its annotated **Encounters** block and again, bare, under Related Documents; the annotated versions survive.
+  - Invisible to every existing check, because both entries resolve fine. `verify.py` gained a ninth check for it, validated by planting a duplicate, confirming the failure, and removing it.
+  - Post-consolidation reference sweep otherwise clean: nothing outside `world/eclipseria-overview.md` still treats `world/seats-archons-echoes.md` as holding content, and it points there as an index by name.
+
 **[2026-08-02] A3 (Drew's call) — Aege fated to the Seat of Death.** Written as a fate rather than a present-tense Archonhood, matching the Greed/Storm pattern, to avoid deleting the character. Closes the Seat-of-Death question from the consolidation. Full reasoning in Standing Reasoning.
 
 **[2026-08-02] A2 — Cosmology consolidated.** `mythology/` now owns Seats, Archons, and Echoes one apiece; `world/seats-archons-echoes.md` reduced to an index. New file `mythology/archons.md`. Two divergences found and one flagged for Drew (whether the Seat of Death is genuinely Empty or merely unknown). Full reasoning in Standing Reasoning.
