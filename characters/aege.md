@@ -47,7 +47,7 @@ Recently, word came from home: something's gone wrong deep in the forest, not at
 
 ## GM Secret — Not Player-Facing
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `world/seats-archons-echoes.md`) — Stage II, Alignment. Not the Archon; Death's actual bearer, if one exists, "is not publicly known," and Aege isn't it. She's a reflection of the domain, not its seat.
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/echoes.md`) — Stage II, Alignment. Not the Archon; Death's actual bearer, if one exists, "is not publicly known," and Aege isn't it. She's a reflection of the domain, not its seat.
 
 This is why she's always drawn toward wherever her domain is concentrated — real endings already happened, real potential for more sitting on top of it — the same way the Night Ferryman reads the Coil's own restlessness before it surfaces. It's also the real mechanism behind her already-established habit of seeming to know more than she should about a place, or the people standing in it: she isn't investigating them. She's reading their proximity to where the domain is already active.
 
@@ -105,6 +105,7 @@ Her core picks lean the same direction — control and information over damage (
 - `quests/washed-ashore.md` — the alternate telling
 - `locations/roadhouse.md` — where she tells the party about her family
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
-- `mythology/seats.md`, `world/seats-archons-echoes.md` — the Seat of Death, Echoes generally
+- `mythology/seats.md` — the Seat of Death
+- `mythology/echoes.md` — Echoes, the Degrees of Alignment, and her own entry under Known Echoes
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/aege.md` — signature cards

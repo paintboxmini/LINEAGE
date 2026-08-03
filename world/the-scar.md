@@ -62,7 +62,7 @@ The council believes he died. He did not. That is true, and it is worse.
 
 It also explains where he is. A thing with no interior cannot be held anywhere that requires holding, so he is in the only ground nobody pays to hold.
 
-**He is a failed Seat-taker, by the definition already written.** `world/seats-archons-echoes.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
+**He is a failed Seat-taker, by the definition already written.** `mythology/echoes.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
 
 **What is genuinely unclear is his stage, and that is not a gap to fill.** All three Degrees of Alignment (`mythology/echoes.md`) describe what happens to *an identity* — Stage III is "identity and domain become inseparable." The Scar has no identity for a domain to become inseparable from. He may be Stage III taken past its own definition, or he may be off the end of a scale that was never built to measure him. Do not resolve this to tidy the taxonomy.
 
@@ -90,5 +90,5 @@ Knowing the name is not knowing the thing. A GM who has read this section still 
 - `mythology/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is
-- `world/seats-archons-echoes.md` — Failed Seat-Takers, the category he is squarely in
+- `mythology/echoes.md` — Failed Seat-Takers, the category he is squarely in, and his own entry under Known Echoes
 - `mythology/echoes.md` — the three stages of alignment, and why he may be off the end of them

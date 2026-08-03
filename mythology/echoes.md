@@ -77,3 +77,21 @@ Some Echoes are created when a being attempts to claim a Seat and fails.
 They survive the contact. But the Seat leaves its mark permanently.
 
 These Echoes are often the most powerful and the least stable. They exist in permanent proximity to authority they cannot fully hold.
+
+Echoes may be human, animal, spirit, or stranger. Any living identity can become aligned.
+
+---
+
+## Known Echoes
+
+**Aege, the Carrion Guide** *(Death, Stage II — Alignment)* — Not the Archon; Death's bearer is not known. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `locations/vultures-nest.md` (GM Secret).
+
+**King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved; see `world/the-scar.md`.
+
+---
+
+## Related Documents
+
+- `mythology/seats.md` — the Seats these align to, and their bearers
+- `mythology/archons.md` — Stage III, from the other side
+- `world/the-scar.md` — a failed Seat-taker the stages may not reach

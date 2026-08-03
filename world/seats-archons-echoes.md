@@ -1,86 +1,33 @@
 # Seats, Archons, and Echoes
 
-## Seats
+*An index. The cosmology itself lives in `mythology/` — this page exists so anyone orienting from `world/eclipseria-overview.md` can find it, and so there is one place that says how the three fit together.*
 
-Seats are universal fundamental laws. They exist on a higher plane and affect the entire continent — not just local zones. They are not titles, not powers granted from above. They are structural features of existence: principles that reality already recognizes.
-
-The known Seats include: Harvest, Death, War, Memory, Change, Time, Blood, Knowledge, Navigation, Storm, and others that may exist unnamed.
-
-**Seat States** *(canonical table: `mythology/seats.md`. Summarised here; edit there.)*
-- **Filled** — Things work normally within that domain.
-- **Fading** — The bearer is thinning. The domain still holds but goes increasingly unmediated. Endpoint: Empty.
-- **Empty** — That part of reality begins to break down. Fields rot. Endings stop concluding. Memory fragments.
-- **Contested** — Two beings fighting for the same Seat warp reality around them until one wins or both are destroyed.
-
-Most cultures have no knowledge that Seats exist as such. Their religions form independent of any real cosmological awareness — around rivers, fire, memory, whatever a people actually needed explained — and some end up resembling a Seat's real domain almost by accident. Most don't resemble anything. The Seats remain the same either way. Culture does not create Seats — it creates religions that sometimes, unknowingly, rhyme with one.
+**Nothing here is canonical. Every definition below is a one-line summary of a file that owns it.** This page used to restate all three systems in full, and the copies drifted: the Seat States table lost the **Fading** state, and the Seat of Storm ended up with two different bearers. Summarise here; edit there.
 
 ---
 
-## Archons
+## How the Three Fit Together
 
-An Archon is the highest biological expression of a Seat's domain. They are not chosen. They are not elevated. They are what happens when a being aligns so completely with a domain that they become its inevitable expression.
+**Seats** are the positions. **Archons** are what a being becomes at the top of the ladder. **Echoes** are everyone on the ladder below that.
 
-Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain — they *are* it, and to act against it would mean acting against their own nature. Their presence "tints" the reality around them through the nature of what they embody.
+A Seat exists whether or not anyone occupies it. An Echo is a living being whose identity has aligned with a Seat's domain without holding it. An Archon is an Echo who reached the last stage — the two are one thing under two names, which is why there is no separate process for becoming one.
 
-What this costs:
-- Internal contradiction ends.
-- Free will remains, but total alignment means it never expresses as anything but the domain.
-- The individual becomes function.
-
-Most Archons never relinquish their position. Relinquishing a Seat feels like annihilation. For most, it is.
-
-Archons can also **fade**. A domain whose practice dies in the world starves its expression: the Archon thins and recedes until the Seat stands empty (`mythology/seats.md`, Seat States). The Seat itself never fades — Seats are permanent; what fades is the bearer. Lysander (Time) has faded far enough that the world has forgotten his name. MoroM (Witnessed Suffering) is fading now.
-
-### Known Archons
-
-**Silas** *(Memory)* — The Archon of Memory. He remembers the previous incarnation of reality — the old ways, the connections that have lapsed, the world before it became this one. Because Silas filters Memory, all memories in Eclipseria carry a tint of *longing*. This is not Silas's choice. It is what he is. He only speaks of what was. He is the god of thresholds and transitions.
-
-**Elias** *(Change)* — Changes so much he has forgotten he is an Archon. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
-
-**Lysander** *(Time)* — References continuity and persistence. Identity across moments. Those who have run campaigns in Eclipseria before may recognize him.
-
-**Aurora** *(Love / Binding)* — Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate. Bound and chained beneath the ground. Fueling Eclipseria's continued existence.
-
-**MoroM** *(Witnessed Suffering)* — Fading. The Thessians, who practiced the domain, are gone but for one. What MoroM is now is not written. The one thing anchoring it to held reality is described in `characters/black-maggie.md`.
-
-**The Heron** *(Hunt)* — Mundane talk about fishing, weather, bait, the one that got away. All of it is metaphor. None of it is only metaphor.
-
-**The Seat of War** *(Unnamed)* — Obsessed with conflict, breaking points, and necessary endings. Does not appear to have a stable form.
-
-**Mira** *(Harvest)* — Discusses gathering, abundance, and what is worth preserving. Attentive to what gets lost in the keeping.
-
-**The Seat of Death** — Death is not evil. Death is conclusion. Nothing escapes this Seat. Its current bearer, if any, is not publicly known.
-
-**The Seat of Knowledge** — Awareness, not wisdom. Truth uncovered. Secrets revealed. Pattern recognized. Nothing hidden escapes it permanently.
-
-**The Seat of Blood** — Vitality, sacrifice, lineage. Life-force and inheritance and oath and cost. It is the price of continuation.
-
-**The Seat of Storm** — Storms, turbulence, the uncontrolled. Weather that answers to nothing. Its current bearer, if any, is not publicly known. See `items/lightning-loop.md` — the one confirmed Storm-aligned Artifact in the world carries only lightning, a narrow slice of the full domain.
-
-**The Night Ferryman** *(Navigation)* — Rows after curfew at Vulture's Nest, and further out when trust is earned. Speaks only in the smallest instructions that actually work — pick a hand, keep it on the wall, don't change it — and never explains further, because there isn't a further to give. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
+Seats exist because the Three Cuts do (`mythology/seats.md`, Seats and the Cuts). Where a Cut thins, every Seat thins with it.
 
 ---
 
-## Echoes
+## Where Each Thing Lives
 
-An Echo is a living being whose identity has become aligned with the domain of a Seat — not holding one, reflecting one.
+| Concept | Canonical file | What it holds |
+|---|---|---|
+| **Seats** | `mythology/seats.md` | What a Seat is, Seats and the Cuts, To Take a Seat, the Seat States table, and the full roster of Seats with their bearers |
+| **Archons** | `mythology/archons.md` | What an Archon is, what it costs, fading, and why Stage III and Archonhood are the same thing |
+| **Echoes** | `mythology/echoes.md` | What an Echo is, the three Degrees of Alignment, Failed Seat-Takers, and Known Echoes |
 
-Echoes form when a being's nature, actions, or accumulated experience becomes sufficiently aligned with a Seat's domain. This can happen through devotion, repeated action, traumatic transformation, ritual exposure, proximity to Seat-level forces, failed attempts to claim a Seat, or slow unconscious drift over time. Not all Echoes choose it. Many never realize what they are becoming.
+---
 
-### Degrees of Alignment
+## Related Documents
 
-**Stage I — Resonance:** Instincts sharpen. Behavior patterns stabilize. Minor unnatural effects appear. Free will remains largely intact.
-
-**Stage II — Alignment:** The domain begins expressing itself through the being. Personality simplifies. Certain actions feel inevitable. Domain-related abilities manifest. Choice still exists — but resistance becomes difficult.
-
-**Stage III — Incarnation:** Identity and domain become inseparable. The being no longer expresses the domain. The domain expresses itself through the being. This is not godhood. It is necessity. **Stage III is what becoming an Archon is** (`mythology/echoes.md` heads it "Incarnation (Archon)") — which does not make an Archon a god, since Archons are not chosen and not elevated either. The highest stable form of Echo and the fullest biological expression of a domain are one thing under two names.
-
-### Failed Seat-Takers
-
-A distinct category — beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently. These Echoes tend to be the most powerful and the least stable. They exist in permanent proximity to authority they cannot fully hold.
-
-Echoes may be human, animal, spirit, or stranger. Any living identity can become aligned.
-
-### Known Echoes
-
-**Aege, the Carrion Guide** *(Death, Stage II — Alignment)* — Not the Archon; Death's actual bearer remains unknown. Reads where her domain is concentrating (real deaths, real risk of more) rather than investigating it, which is the real reason she routes travelers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she's been told. See `locations/vultures-nest.md`, GM Secret.
+- `mythology/creation-myth-the-three-cuts.md` — why any of this exists
+- `world/the-regency.md` — the Pendragon Attempt, the most consequential failed Seat-claim in the setting
+- `world/eclipseria-overview.md` — the wider shape of the world this sits inside

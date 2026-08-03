@@ -51,5 +51,5 @@ That is the problem the adventure leaves behind.
 ## Open
 
 - Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? *(Storm is confirmed as a real Seat — `mythology/seats.md`, `world/seats-archons-echoes.md` — but whether anyone actually holds it is still unanswered.)*
+- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? *(No. `mythology/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)*
 - What does the ring do to water beyond fizzing — are there other minor effects Kaine hasn't explored or is hiding?

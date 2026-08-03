@@ -1,6 +1,6 @@
 # Seats
 
-Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They are not powers granted by gods or cultures — they are structural features of existence, as permanent as the Three Cuts.
+Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire continent — not local zones. They are not powers granted by gods or cultures — they are structural features of existence, as permanent as the Three Cuts.
 
 A Seat may be vacant or occupied. It cannot be destroyed.
 
@@ -57,12 +57,12 @@ Seats themselves never fade. A Seat is a permanent structural feature of existen
 ## The Seats
 
 ### Memory
-**Bearer:** Silas
-Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating connections.
+**Bearer:** Silas *(Archon)*
+Because Silas filters Memory, all memory in Eclipseria carries a tint of *longing*. That is not his choice; it is what he is. Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating connections.
 
 ### Change
-**Bearer:** Elias
-Changes so much that he forgets he is a god. He thinks he's a shapeshifter.
+**Bearer:** Elias *(Archon)*
+Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
 
 ### Time
 **Bearer:** Lysander *(fading)*
@@ -91,16 +91,16 @@ The Heron is never impatient. It does not pursue. It holds very still and pays a
 
 ### War
 **Bearer:** Unnamed
-Obsessed with conflict, breaking points, and necessary endings.
+Obsessed with conflict, breaking points, and necessary endings. Does not appear to have a stable form.
 
 ### Harvest / Fertility
-**Bearer:** Mira
-Discusses gathering, abundance, and what's worth preserving.
+**Bearer:** Mira *(Archon)*
+Discusses gathering, abundance, and what's worth preserving. Attentive to what gets lost in the keeping.
 
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. The Seat itself is unbearered — but a living Echo of the domain exists, not its Archon. See `world/seats-archons-echoes.md`, Known Echoes.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. No bearer is known. A living Echo of the domain exists — Aege, the Carrion Guide — but an Echo is not an Archon and does not fill a Seat. See `mythology/echoes.md`, Known Echoes.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*
@@ -117,7 +117,7 @@ Domain: Vitality, Sacrifice, Lineage
 Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
 
 ### Storm
-**Bearer:** Greed (`characters/greed.md`)
+**Bearer:** None seated. **Greed is fated to it** (`characters/greed.md`) — how and when is deliberately unestablished, so the Seat reads as unheld in the present tense and every other file that says so is correct.
 Domain: Storms, Turbulence, the Uncontrolled
 
 Weather that answers to nothing, least of all whoever stands under it. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
@@ -131,6 +131,10 @@ Doesn't offer the destination. Doesn't promise the destination is good. Only tha
 
 *"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
 
+Rows after curfew at Vulture's Nest, and further out when trust is earned. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
+
 ---
 
 *This list is incomplete. Not all Seats have known bearers. Not all bearers are known.*
+
+*Bearers marked* **(Archon)** *have reached Incarnation — see `mythology/archons.md`. A Seat with a bearer who is not an Archon, or with no bearer at all, is still a Seat; the position does not depend on anyone sitting in it.*
