@@ -375,7 +375,7 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
-Attack: Body + d10. Gain Vulnerable.
+Attack: Body + d10 + 1d6. Gain Vulnerable.
 Effect: None.
 Defensive Bonus: None.
 Range: Melee

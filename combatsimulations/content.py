@@ -1673,8 +1673,16 @@ def _overdrive_defense(engine, me, foe):
 # 3 HP" — applies only on a win (damage= never fires on a tie), not
 # unconditionally regardless of outcome.
 def _overcommit_dmg(engine, me, foe):
+    # +1d6 added 2026-08-02. As printed the card was STRICTLY DOMINATED by
+    # STRIKE — same color, stat, d10 and Range, but STRIKE also carries a real
+    # Defensive Bonus and no self-debuff, so there was no board state where you
+    # would rather hold this. Measured at 44.1% vs STRIKE in decks identical but
+    # for the one card; +1d6 brings it to 50.6%, +2d6 overshoots to 57.5%.
+    # The Vulnerable and the absent Defensive Bonus both stay — the card's whole
+    # identity is offence bought with exposure, and it now actually buys some.
     me.vulnerable += 1
-    return me.eff('body') + _rolled_die(10, engine.rng, me)
+    return (me.eff('body') + _rolled_die(10, engine.rng, me)
+            + engine.rng.randint(1, 6))
 
 # ==================== Bestiary promotions to core =============================
 # First batch, per the bestiary-card audit — de-flavored, mechanics unchanged
