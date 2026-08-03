@@ -62,6 +62,20 @@ A piece of armor recovered from the forest's repulsion field. Clean of rust only
 
 ---
 
+### Tollworn Plate
+*Source: Seeker's Price — cut or given out of the fused wall*
+*Price: ~200 gold (Tier 1 armor, `rules/equipment.md`) — though selling it is its own kind of answer*
+
+A chest and shoulder piece, old pattern, rust in the seams and bark grown into the strap holes. Somebody wore this to the edge of the Weald and decided they wanted through more than they wanted armor.
+
+It comes out of the wall in one piece if the wood lets go. If it doesn't, it comes out in one piece anyway, and the tree keeps the strap.
+
+**Equipment — Armor (Tier 1). Effect:** Armour 1.
+
+**Only one exists here**, and only one person can wear it. See `quests/turnroot-weald-adventure.md`, Seeker's Price.
+
+---
+
 ### Spider Silk Rope
 *Source: The Bone Collector*
 *Price: ~50 gold*

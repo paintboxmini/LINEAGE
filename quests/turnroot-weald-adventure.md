@@ -272,6 +272,17 @@ In the damp soil: a child's footprint.
 
 **The Reveal:** These are payments made by travelers for safe passage. If a player tries to take anything: Pressure increases by 1.
 
+**The Plate.** Set into the wall, chest-high, is a piece of armor — old pattern, rust in the seams, bark grown through the strap holes. The **Tollworn Plate** (`items/turnroot-weald-items.md`): Tier 1 armor, **Armour 1**. It is the first real piece of equipment the campaign is meant to hand over, and it should arrive **before the Root Heart**, not after.
+
+**How they get it out decides what it costs:**
+
+- **Holding at least one Mark** (see Mark System): the wood lets go. No Pressure. The forest is not giving them a present — it is settling up with someone who has already paid something.
+- **Holding no Marks**: it is theft, and the standing rule applies. **Pressure +1**, which is one step closer to the forced Root Heart encounter. They will go into that fight with armor they took from a wall of other people's tolls.
+
+**There is exactly one, and the party has to decide who wears it.** Do not let this pass as inventory management. It is the first time the group has had to put something real on one person, and the choice is worth the minute it takes — the one who has been going down most, the one at the front, the one who asked. Whoever it is, everyone watched it happen.
+
+If the party cannot agree, the plate stays in the wall. The forest is content to keep it.
+
 ---
 
 ### The Half-Sunken Shrine
@@ -351,6 +362,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Echothorn Seed | Thorne Throne | See `items/turnroot-weald-items.md` |
 | Luminova Powder | Luminova Clearing | See `items/turnroot-weald-items.md` |
 | Rusted Armor | Floating Gallery | See `items/turnroot-weald-items.md` |
+| **Tollworn Plate** | **Seeker's Price** | **Tier 1 armor — the campaign's first real equipment. One only; party chooses the wearer.** |
 | Vision Shard | Mirror-Slick Pond | See `items/turnroot-weald-items.md` |
 | Root Fibers | Rootstalker (common) | See `items/turnroot-weald-items.md` |
 | Sap Vial | Rootstalker (rare) | See `items/turnroot-weald-items.md` |
@@ -369,3 +381,5 @@ This is a framework rather than a single session, so it pays by the session rath
 **Most of it should arrive as harvest, not as fee.** The Weald is the most thoroughly priced region in the world — `items/turnroot-weald-items.md` lists what things are worth and Senshi at the Gilded Tusk buys specimens outright. A party that engages with the forest as a place with things in it will out-earn a party waiting to be paid, which is the correct incentive for this region and worth letting them discover rather than telling them.
 
 Payment for specific jobs, where a job exists, comes from whoever asked — and in the Weald that is rarely anyone official.
+
+**The Tollworn Plate is not part of this number.** It is found gear, off the gold curve entirely (`rules/equipment.md`, Pacing), and it is the campaign's first real piece of equipment — placed at Seeker's Price, before the Root Heart, one only. Do not price the session's income around it and do not hand out a second one.

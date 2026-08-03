@@ -90,6 +90,8 @@ Adjust from there for what actually happens at the table:
 
 **Not everything is priced in gold, and that is deliberate.** Pell sells fog goggles for a memory, a secret, or a name (`items/fog-basin-items.md`), and the Underground Bazaar is built on the same premise. An item with no gold price is not an oversight when its seller doesn't take gold — say what they take instead.
 
+**Found gear is off this curve entirely, and the campaign deliberately front-runs it once.** The Tollworn Plate at Seeker's Price (`quests/turnroot-weald-adventure.md`) is Tier 1 armor placed in session 4 — one session ahead of when anyone could afford it, before the Root Heart, for one character the party picks. That is not the curve breaking; it is the curve being one channel of two.
+
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
 ---

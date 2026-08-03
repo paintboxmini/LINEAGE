@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-02] A2 — Tollworn Plate**, the campaign's first real equipment: Tier 1 armor (Armour 1) at Seeker's Price in Turnroot, before the Root Heart, one only, party chooses the wearer. Taking it costs Pressure unless they hold a Mark. Deliberately one session ahead of the gold curve; stated as such in `rules/equipment.md`.
+
 **[2026-08-02] A1 — Gold pacing clarified as per character.** The rule never specified; Drew's call is per character, ~5 sessions to a first Tier 1 item each. Rule and all eight quest reward lines updated; the intended session spine recorded in Campaign Status as what the number is calibrated against.
 
 **[2026-08-02] A2 — Card trading at the Underground Bazaar.** Cards sold freely, bought rarely, paid for in cards/memories/secrets and never coin; tags survive a trade. `rules/items.md`'s Bazaar "gap" replaced with the answer. Closes the final entry in `unresolved-concerns.md`. Full reasoning in Standing Reasoning.
@@ -139,6 +141,13 @@ WHY NOT NOW (my caution, Drew agreed by choosing "log as direction"): building t
 ---
 
 ## Standing Reasoning (no other canonical home)
+
+**[2026-08-02] The campaign's first real equipment: the Tollworn Plate, Turnroot session 4. Drew: "turnroot session 4 should drop the first piece of armor before the boss fight. 1 piece ahead of time with the party choosing who wears it."**
+  - **Placed at Seeker's Price, which already described itself as the answer.** That POI is a wall of copper coins and rusted gear fused into bark — *"payments made by travelers for safe passage"* — with an existing rule that taking anything raises Pressure by 1. The armor did not need inventing a home; it needed noticing that one was already written. Somebody wore this to the edge of the Weald and decided they wanted through more than they wanted armor.
+  - **The existing Pressure rule became the cost, and the Mark system became the alternative.** With at least one Mark, the wood lets go and there is no Pressure — the forest settling up with someone who has already paid something. With no Marks it is theft, Pressure +1, one step nearer the *forced* Root Heart. So taking it without standing brings the boss closer, and they walk into that fight wearing a wall's worth of other people's tolls. Both branches use rules that were already there.
+  - **Tier 1, plain Armour 1, no split budget.** It is the first equipment anyone in this campaign will own; it should teach the keyword and nothing else.
+  - **"One only, party picks" is written as a table beat, not an inventory line** — with the instruction not to let it pass as bookkeeping, and a real out: if the party cannot agree, the plate stays in the wall and the forest is content to keep it.
+  - **It deliberately front-runs the gold curve by one session and both files now say so.** Pacing puts a first Tier 1 purchase at session 5, at the capital; this is session 4, found. Stated in `rules/equipment.md` so the two don't read as contradicting, and excluded from Turnroot's own income figure so a GM doesn't budget the session around it.
 
 **[2026-08-02] Gold pacing is per character, not per party — and the rule as first written never said which.** Drew asked directly; the answer is per character, first Tier 1 item at ~5 sessions each.
   - **This was a gap I noticed and then left.** While designing I worked out that 40 gold a session party-wide would take a four-person party twenty sessions to equip, wrote it down in chat as a consideration, and then wrote the rule saying "the party" without resolving it either way. Drew had to ask. The failure wasn't the ambiguity, it was noticing the ambiguity and shipping anyway.
