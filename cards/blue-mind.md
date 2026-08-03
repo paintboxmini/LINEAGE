@@ -5,7 +5,7 @@
 **INTERRUPT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Defender loses their next turn, you can't defend until your next turn
+Effect: Apply Initiative Shift +2 to yourself.
 Defensive Bonus: Apply Initiative Shift -2 to the attacker
 Range: Melee
 *"The best move happens before theirs."*
@@ -55,8 +55,8 @@ Range: Ranged
 **DISTRACT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender gains Sealed
-Defensive Bonus: Attacker must attack you on their next turn if able
+Effect: Apply Initiative Shift -2 to the defender.
+Defensive Bonus: Apply Initiative Shift -2 to the attacker.
 Range: Melee
 *"Attention divided is power diminished."*
 
@@ -66,7 +66,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
-Defensive Bonus: Place the top card of your discard pile on top of your deck
+Defensive Bonus: Apply Initiative Shift +2 to yourself.
 Range: Ranged
 *"Clarity rewards the prepared mind."*
 

@@ -684,9 +684,12 @@ def _charge_move(engine, me, foe):
     foe.position = 'frontline'
 
 # --- Blue: tempo, control, AoE ---
+# INTERRUPT reworked 2026-08-03 (Drew): Effect was turn-denial (skip_turns +
+# cannot_defend); now a plain self Initiative Shift, matching QUICKEN's shape.
+# skip_turns is now unused anywhere in the engine — no other card grants it —
+# left in place rather than removed; a future card may want it again.
 def _interrupt_effect(engine, me, foe):
-    foe.skip_turns += 1                    # target loses their next turn
-    me.cannot_defend = True                # you can't defend until your next turn
+    engine.initiative_shift(me, 2)
 def _interrupt_defense(engine, me, foe):
     engine.initiative_shift(foe, -2)       # -2 to the attacker (foe), not to yourself
 
@@ -930,9 +933,10 @@ _stillness_defense = _stillness_effect   # same text, target is just always foe 
 
 def _focus_effect(engine, me, foe):
     engine.scry(me, me, 2)   # "returns to hand instead of discard" unmodeled — no engine hook for it
+# Defensive Bonus reworked 2026-08-03 (Drew): was "top of discard to top of
+# deck"; now a plain self Initiative Shift, matching QUICKEN/INTERRUPT's shape.
 def _focus_defense(engine, me, foe):
-    if me.discard:
-        me.deck.append(me.discard.pop())   # top of discard -> top of deck (append = top, draws next)
+    engine.initiative_shift(me, 2)
 
 def _understanding_dmg(engine, me, foe):
     # discard the played card's already gone from hand by this point (removed
@@ -954,10 +958,15 @@ def _understanding_defense(engine, me, foe):
 # Patient-Host-deck-fill gap above, found this time by a systematic sweep of
 # cards/*.md against content.py rather than a specific deck build surfacing it.
 
+# DISTRACT reworked 2026-08-03 (Drew): was Sealed (an unmodeled item-usage
+# gate) / taunt; now a plain Initiative Shift -2 both sides, same shape as
+# OPEN GUARD's Vulnerable grant — identical code both directions since foe
+# means "the one being attacked" during Effect and "the attacker" during
+# Defensive Bonus.
 def _distract_effect(engine, me, foe):
-    pass   # Sealed: item-usage gate, no item mechanic exists in the sim (PREDICT's own precedent)
+    engine.initiative_shift(foe, -2)
 def _distract_defense(engine, me, foe):
-    foe._forced_target = me   # taunt, same mechanism as MOCKERY's defense
+    engine.initiative_shift(foe, -2)
 
 def _sidestep_effect(engine, me, foe):
     me.evade += 1
