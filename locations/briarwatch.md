@@ -12,7 +12,7 @@ Low hills. Overcast most of the year. Fields that produce reliably but require a
 
 The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the giant fence at the western edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackalopes nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields. Ordinary pest trouble, as far as any farmer here is concerned.
 
-The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the center is dried up.
+The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the ruins' center is dried up.
 
 Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer builds them. Nobody takes them down. See `bestiary/briarbundles.md`.
 
@@ -26,7 +26,7 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 **The Abandoned Homestead** — off the road on the way in. A claim that failed: well caved in, fences broken outward, briarbundles still standing in the fields. Something large has taken up residence in the doorway. See `quests/the-abandoned-homestead.md`.
 
-**The Western Property** — bordered by the watchtower ruins. The sinkhole is here. Fenced off with rope and splintered posts. **Iron**, the farmer who owns it, has been waiting for help longer than he'd like to admit (`characters/iron.md`). See `quests/hollow-below-briarwatch.md`.
+**The Western Property** — bordered by the watchtower ruins; farmers who have been here long enough still call it the old well property, after the shaft that goes down into the caves. The sinkhole is here. Fenced off with rope and splintered posts. **Iron**, the farmer who owns it, has been waiting for help longer than he'd like to admit (`characters/iron.md`). See `quests/hollow-below-briarwatch.md`.
 
 ---
 
@@ -51,7 +51,7 @@ Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2)
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
-- `quests/settling-stones.md` and `quests/shifting-burrow.md` — the two mirrored entrances into the Hollow, at the watchtower ruins and the Well Property sinkhole respectively
+- `quests/settling-stones.md` and `quests/shifting-burrow.md` — the two mirrored entrances into the Hollow, at the watchtower ruins and the Western Property sinkhole respectively
 - `locations/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `locations/vultures-nest.md` — previous stop on the session 1 route
 - `bestiary/briarwatch-jackalope.md` — general field encounter, not tied to any one location

@@ -1,6 +1,6 @@
 # Shifting Burrow
 
-*Surface encounter at the Well Property sinkhole. One of two mirrored entrances into the Hollow Below Briarwatch — the other is Settling Stones (`quests/settling-stones.md`), at the Watchtower Ruins. Same tunnel network, two mouths; runs whichever direction the party uses this one, entrance or exit.*
+*Surface encounter at the Western Property sinkhole. One of two mirrored entrances into the Hollow Below Briarwatch — the other is Settling Stones (`quests/settling-stones.md`), at the Watchtower Ruins. Same tunnel network, two mouths; runs whichever direction the party uses this one, entrance or exit.*
 
 ---
 
@@ -14,7 +14,7 @@ Teach players:
 
 ## Setup
 
-**Location:** The collapsed sinkhole on the Well Property. Loose soil. Exposed roots. The ground hasn't decided what it is yet.
+**Location:** The collapsed sinkhole on the Western Property. Loose soil. Exposed roots. The ground hasn't decided what it is yet.
 
 **Reading the ground, before anyone gets close:** Mind (Reason). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
 - *DC 11 (Easy):* The basics — loose soil, exposed roots, and a scatter of small, deliberately round openings along the rim. Burrow entrances, unmistakably dug, not natural cracks.
@@ -113,4 +113,4 @@ Running both entrances does not pay twice.
 - `quests/hollow-below-briarwatch.md` — the descent
 - `quests/settling-stones.md` — the other mouth of the same loop
 - `bestiary/borrower.md` — deeper Borrower behavior differs from surface Sentries
-- `locations/briarwatch.md` — the Well Property context
+- `locations/briarwatch.md` — the Western Property context

@@ -9,7 +9,7 @@
 
 **Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, STILLNESS, PHASE LOGIC, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DEAD RECKONING, MOCKERY *(green)*
 
-Found in Eclipseria and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with Iron, the farmer at Briarwatch's Well Property (`characters/iron.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
+Found in Eclipseria and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with Iron, the farmer at Briarwatch's Western Property (`characters/iron.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
 
 A cave system is the same kind of edge it already prefers — total dark is just a threshold with no "failing light" left to fail. Ones unconnected to Iron's companion turn up loose in the Hollow Below Briarwatch's own tunnels, glimpsed and gone the same way they'd be found at the edge of any lit street.
 

@@ -85,7 +85,7 @@ An old border watchtower from a prior era. What remains is a cracked circular fo
 
 **Encounter:** Settling Stones — see `quests/settling-stones.md`
 
-Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Well Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
+Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Western Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
 
 Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
 
@@ -116,7 +116,7 @@ Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clea
 
 **The Living Chamber (Rest Site)** — inside the door: dry, reinforced ceiling, four carved bunks, small hearth alcove, tool hooks, old supply shelves. Structurally superior to surrounding caves. Survives high Pressure events. The old builders reinforced it properly.
 
-**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Well Property sinkhole closed (`quests/shifting-burrow.md`, GM Secret) and the giant fence posts topside at the larder fence (`quests/the-larder-fence.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
+**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Western Property sinkhole closed (`quests/shifting-burrow.md`, GM Secret) and the giant fence posts topside at the larder fence (`quests/the-larder-fence.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
 
 ---
 

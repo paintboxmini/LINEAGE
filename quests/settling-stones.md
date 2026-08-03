@@ -1,6 +1,6 @@
 # Settling Stones
 
-*Surface encounter at the Watchtower Ruins, guarding the well shaft. One of two mirrored entrances into the Hollow Below Briarwatch — the other is Shifting Burrow, at the Well Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths; a party can enter one and exit the other.*
+*Surface encounter at the Watchtower Ruins, guarding the well shaft. One of two mirrored entrances into the Hollow Below Briarwatch — the other is Shifting Burrow, at the Western Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths; a party can enter one and exit the other.*
 
 ---
 
