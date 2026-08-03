@@ -10,6 +10,8 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 
 ## Mechanics & Balance
 
+**`rules/card-glossary.md`'s per-keyword counts need a real mechanical recount.** The header numbers are a stated snapshot. On 2026-08-03 I wrote a recount script while adding seven cards and it disagreed with the header on **16 keywords, in both directions** — including decreases, which adding cards cannot cause. That means my counting rule differs from whatever produced the header, and I could not tell which was right. I updated only the six keywords the seven new cards demonstrably touch (Initiative Shift +2; Weak, Staggered, Resist, Evade, Thorns +1 each) and left the rest alone rather than overwrite live numbers from an unvalidated regex. Someone should settle the counting rule once and recount properly. `verify.py`'s `check_glossary_count` only checks the block total, not the per-keyword numbers. Trail: `memory.md`, the 2026-08-03 Oracle 12/6/3 entry.
+
 **Body-size exemption to the strict distance rule.** Drew ruled 2026-08-03 that `CLAUDE.md`'s ban on measured distances in quest and bestiary content is strict, and sixteen measurements were removed. Three survive on my reading that a creature's own size is a size, not a distance: `bestiary/tollbird.md` and `quests/the-larder-fence.md` ("close to a meter tall"), `bestiary/skeinwing.md` (altitude). Held as hand-listed exemptions in `verify.py`'s `check_distances` so they can't grow quietly. One edit if Drew reads the rule as reaching them. Trail: `memory.md`, the 2026-08-03 contradiction-hunt entry.
 
 ## Canon & World
