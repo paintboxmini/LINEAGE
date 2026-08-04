@@ -4,7 +4,7 @@
 
 Small and quick. Found in packs. Crystal knives and arrowheads worked from harvested horn — the connection to the crystal-horned deer is visible if the party looks at both at once. They do not start fights but they finish the ones started against them.
 
-**Mind 1 / Body 1 / Soul 2 — HP 11**
+**Mind 1 / Body 1 / Soul 2 — HP 9**
 **Creature Threat Rating:** 4
 
 

@@ -30,7 +30,7 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Cards:** `cards/bone-collector.md`
 
-**Mind 4 / Body 4 / Soul 2 — HP 17**
+**Mind 4 / Body 4 / Soul 2 — HP 18**
 **Creature Threat Rating:** 10
 
 **Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, STILLNESS, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*
@@ -109,7 +109,7 @@ This isn't just predation — it's *curation*. The Bone Collector was building s
 ## Treasure
 
 - **2d6 × 10 gold**
-- **Spider Silk Rope** (50 ft — as silk rope but twice as strong)
+- **Spider Silk Rope** — as silk rope but twice as strong; length and full entry in `items/turnroot-weald-items.md`
 - **Harvest Bead** — A bead made from a precisely carved vertebra, threaded on silk, one of dozens arranged in a sequence that almost makes sense. **Passive:** +1 HP on first defensive block each cycle.
 
 See `items/turnroot-weald-items.md` for item entries.

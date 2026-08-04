@@ -12,7 +12,7 @@ Grounded. Damp. Heavy. Overcast. The danger here is not mystical — it is water
 
 ## Opening Conditions
 
-The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Fenwool were lost weeks ago when a section of field gave way. A bounty was posted.
+The day begins under thick cloud cover. The air carries the smell of wet soil. Fields feel softer underfoot than they should. Fenwool went missing weeks ago, around the time a section of field gave way, and everyone here has taken the two for the same event. A bounty was posted.
 
 ---
 
@@ -85,7 +85,7 @@ An old border watchtower from a prior era. What remains is a cracked circular fo
 
 **Encounter:** Settling Stones — see `quests/settling-stones.md`
 
-Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Well Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
+Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Western Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
 
 Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
 
@@ -100,7 +100,7 @@ Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to
 
 ### Transition Zone — Broken Stair Chamber
 
-Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One obvious tunnel forward. One narrow Borrower crawl lane, hidden.
+Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clear separation possible. One obvious tunnel forward. One narrow Borrower crawl lane, hidden.
 
 *Safe staging area. Introduce dampness. Show mineral streaking on walls.*
 
@@ -116,7 +116,7 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 **The Living Chamber (Rest Site)** — inside the door: dry, reinforced ceiling, four carved bunks, small hearth alcove, tool hooks, old supply shelves. Structurally superior to surrounding caves. Survives high Pressure events. The old builders reinforced it properly.
 
-**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Well Property sinkhole closed (`quests/shifting-burrow.md`, GM Secret) and the giant fence posts topside at the larder fence (`quests/the-larder-fence.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
+**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Western Property sinkhole closed (`quests/shifting-burrow.md`, GM Secret) and the giant fence posts topside at the larder fence (`quests/the-larder-fence.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
 
 ---
 
@@ -124,7 +124,7 @@ Wide chamber (~30 ft across), ceiling 15 ft high. Clear separation possible. One
 
 **Split Seam (First Choke Point)**
 
-Natural fissure widened by Borrowers. 5 ft wide, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
+Natural fissure widened by Borrowers. Shoulder-width, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
 
 Confined Space Rule active — only one Frontline per side.
 
@@ -146,7 +146,7 @@ Medium chamber. One side visibly damp. Old dry mineral ring higher on wall. Soft
 
 A party that notices the current has a direction, and follows it, finds the actual shape of the problem: water rising from below, not just seeping from above. It's the kind of thing the Borrowers would already know how to redirect, if asked (Mediation Arc, Player Pathways, below).
 
-Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point with roots protruding through the ceiling. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
+Contains the **Vertical Soil Break** — a rough failure point in the ceiling, wide enough for a person to be lowered through, with roots protruding around the edge. Faint daylight at certain hours. Players can drop pebbles and hear them fall, or bypass watchtower entry entirely using rope anchor from the surface.
 
 ---
 
@@ -154,7 +154,7 @@ Contains the **Vertical Soil Break** — a rough 4–6 ft diameter failure point
 
 **Borrower Settlement**
 
-Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on walls. Clay bowls at tunnel mouths. Simple barricades. Borrowers move through 3 ft tunnels; players must crouch or go around. No predators here — they avoid this zone unless starving.
+Cluster of widened tunnels. Low-roofed communal space. Fungal mats cultivated on walls. Clay bowls at tunnel mouths. Simple barricades. Borrowers move through tunnels cut to their own height; players must crouch or go around. No predators here — they avoid this zone unless starving.
 
 **The flood that opened the sinkhole reached here too, once.** A waterline stain runs along the lower walls, well above current floor level. A few fungal mats show old water-scarring where a healthier patch was scraped back and regrown around the damage. It's old news by the time the party arrives, not a fresh crisis — enough time has passed that the Settlement has largely rebuilt around it: new barricades where old ones rotted, fresh clay bowls replacing cracked ones, the visible signs of a community that took a real hit and came back from it rather than one still in the middle of drowning. Worth describing as evidence, not as an active problem to solve.
 
@@ -196,7 +196,7 @@ Shallow bowl-shaped cavern. Evidence of drowned burrows. Fungal patches regrowin
 
 One way in, one way out: a single tunnel back to Flood Shelf Chamber above (one of that chamber's four paths, above). Nothing else connects here — a party that clears the Nest is walking back out the way they came in, not discovering a new route forward.
 
-**What's actually denning here: a mated pair of Stonecoils, each noticeably larger than the ones elsewhere in the Hollow — grown fat and confident on farmland livestock they were never supposed to have reach for.** Bespoke stat bump, no new signature cards needed: **Mind 3 / Body 6 / Soul 3 — HP 21, Creature Threat Rating 12, each.** Deck (12 — 3 Blue / 6 Red / 3 Green): DRAG, COIL LATCH, PULL ×2 each *(red)* · VIBRATION LOCK ×2, STILL GROUND *(blue)* · PATIENCE OF STONE, DARK CORRIDOR, SHED SKIN *(green)* — built entirely from `bestiary/stonecoil.md`'s existing signature set, doubled up to fill the larger deck. Tested directly against a 3-player CTR-9 party before being written down: 14.3% win rate for the pair, average 1.37 party collapses per battle — real stakes, not a formality, and not close to the ~0% a single baseline Stonecoil produces in the same matchup.
+**What's actually denning here: a mated pair of Stonecoils, each noticeably larger than the ones elsewhere in the Hollow — grown fat and confident on farmland livestock they were never supposed to have reach for.** Bespoke stat bump, no new signature cards needed: **Mind 3 / Body 6 / Soul 3 — HP 24, Creature Threat Rating 12, each.** Deck (12 — 3 Blue / 6 Red / 3 Green): DRAG, COIL LATCH, PULL ×2 each *(red)* · VIBRATION LOCK ×2, STILL GROUND *(blue)* · PATIENCE OF STONE, DARK CORRIDOR, SHED SKIN *(green)* — built entirely from `bestiary/stonecoil.md`'s existing signature set, doubled up to fill the larger deck. Tested directly against a 3-player CTR-9 party before being written down: 14.3% win rate for the pair, average 1.37 party collapses per battle — real stakes, not a formality, and not close to the ~0% a single baseline Stonecoil produces in the same matchup.
 
 **Not everything in the larder here is dead.** Some of the taken Fenwool are still alive — hurt, terrified, but alive, pinned in the pair's own den rather than already consumed. Rescuing them is a real objective layered on top of the fight itself, not just flavor: a party focused purely on winning the fight can still walk away having let the actual rescue fail.
 
@@ -214,7 +214,7 @@ Narrow serpentine tunnel. Twisting S-curve. One elevated shelf, one soft floor z
 
 Natural underground stream. Wider. Fast-moving water. Predator avoids strong flow — usable as a safety boundary. Water here originates deeper, not from irrigation. **This is the actual source** of the current now rising through Flood Shelf Chamber and the Split Seam above — the same water, followed upstream to where it genuinely starts, not the irrigation seepage that gets blamed for the rest of the dungeon's dampness.
 
-**This is the real cutoff.** The channel runs 10 ft deep here — swimmable, but not casually. Crossing it against the current is a Hard (DC 16) Body (Senses) check; failure doesn't drown anyone outright, but it costs equipment, position, or both, GM's call based on the fiction. Give the warnings generously before anyone commits: the water's colder here than anywhere else in the Hollow, moving with a weight that isn't just current — something upstream is displacing it. Debris rides the surface at a rhythm too even to be random. No Stonecoil sign anywhere close to the water's edge, which is itself the tell — even the lesser ones won't come near this.
+**This is the real cutoff.** The channel runs well over a person's head here — swimmable, but not casually. Crossing it against the current is a Hard (DC 16) Body (Senses) check; failure doesn't drown anyone outright, but it costs equipment, position, or both, GM's call based on the fiction. Give the warnings generously before anyone commits: the water's colder here than anywhere else in the Hollow, moving with a weight that isn't just current — something upstream is displacing it. Debris rides the surface at a rhythm too even to be random. No Stonecoil sign anywhere close to the water's edge, which is itself the tell — even the lesser ones won't come near this.
 
 **Two ways past this point, and only one of them is the fight nobody's built yet.** The intended route doesn't cross the channel at all — it goes back to the Borrowers, who already know how to redirect water like this (Mediation Arc, Player Pathways, below; the Borrowers "divert water to prevent flooding" as a matter of course). Forcing a crossing instead — swimming it, fighting through, pushing past every warning this section gives — is what actually risks waking what's on the other side: the Greater Stonecoil (Old Flow Channel, below), not yet balanced as an encounter. If a party forces this specific chokepoint rather than solving it, that fight is a live GM call, not a pre-built one — run it on the fly, or pause and build it properly first.
 

@@ -38,12 +38,12 @@ GREEN — SOUL
 Attack: Soul + d8
 Effect: You may change position
 Defensive Bonus: You may change position
-Range: Melee
+Range: Ranged
 *"Water finds its way without forcing."*
 
 ---
 
-**EDDY**
+**SWAY**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Move the defender to the other position.
@@ -68,7 +68,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defensive Bonus: Lose 2 HP. Draw 2 cards, then discard 1.
-Range: Melee
+Range: Both
 *"The wise listen to what wants to be heard."*
 
 ---
@@ -78,7 +78,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: If you did not attack last turn, deal +4 damage
 Defensive Bonus: Anchored — Target ally heals 3 HP
-Range: Melee
+Range: Both
 *"The Edge reveals itself to those who wait."*
 
 ---
@@ -88,7 +88,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Target ally heals 6 HP
 Defensive Bonus: Target ally heals 6 HP
-Range: Melee
+Range: Ranged
 *"What is witnessed is what endures."*
 
 ---
@@ -98,7 +98,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift +1 to all allies
 Defensive Bonus: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
-Range: Melee
+Range: Both
 *"The tide waits for those who know when to flow."*
 
 ---
@@ -138,7 +138,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker discards 1 card at random
-Range: Melee
+Range: Ranged
 *"Even emptiness has its own terrible weight."*
 
 ---
@@ -178,7 +178,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Evade.
 Defensive Bonus: Gain Evade.
-Range: Melee
+Range: Both
 *"You become the mark that shouldn't be there, wearing darkness as perfect armor."*
 
 ---
@@ -308,7 +308,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Plant a seed at your current position. The next time you begin your turn at this position, gain Deadly twice.
 Defensive Bonus: Plant a seed at your current position. The next time you begin your turn at this position, gain Resist 2.
-Range: Melee
+Range: Both
 *"Given time, and nowhere else to be."*
 
 ---
@@ -328,7 +328,7 @@ GREEN — SOUL
 Attack: Soul + d6
 Effect: Anchored — at the start of each of your turns, heal 5 HP.
 Defensive Bonus: Gain Deadly.
-Range: Melee
+Range: Both
 *"The unshaken abide, while chaos churns."*
 
 ---
@@ -353,7 +353,7 @@ Range: Both
 
 ---
 
-**SMOKE SCREEN**
+**DUST**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
@@ -368,7 +368,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Resist.
 Defensive Bonus: Gain Resist.
-Range: Melee
+Range: Both
 *"The current breaks around what does not move."*
 
 ---
@@ -385,7 +385,7 @@ Range: Melee
 
 **UNTOUCHED**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d4
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
 Range: Both
@@ -410,3 +410,43 @@ Effect: Gain Ward.
 Defensive Bonus: Gain Ward.
 Range: Both
 *"The body knows before the mind agrees."*
+
+---
+
+**SETTLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Nothing to brace against. Just lower."*
+
+---
+
+**GIVE WAY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Evade.
+Defensive Bonus: Gain Evade.
+Range: Both
+*"Meet it and you break. Move and it passes."*
+
+---
+
+**BRAMBLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns.
+Defensive Bonus: Gain Thorns.
+Range: Both
+*"Everything that reaches through leaves some of itself."*
+
+---
+
+**QUICKEN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Apply Initiative Shift +1 to yourself.
+Defensive Bonus: Apply Initiative Shift +1 to an ally.
+Range: Both
+*"Sooner is its own kind of strength."*

@@ -4,7 +4,7 @@
 
 **Cards:** `cards/the-first-bundle.md`
 
-**Mind 5 / Body 6 / Soul 6 — HP 21**
+**Mind 5 / Body 6 / Soul 6 — HP 24**
 **Creature Threat Rating:** 17
 
 **Deck (17 — 5 Blue / 6 Red / 6 Green):** ANOTHER JOINT, UNNAME, AXIOM, ERODE, UNMAKE *(blue)* · FENCE-POST REACH, GORE, REND, IRON GRIP, BRACE, RETALIATE *(red)* · THE WOOL IS MUSCLE, BIND, SYNCHRONY, FIELD MEDICINE, SHARED BURDEN, ROOTED OATH *(green)*
@@ -28,8 +28,8 @@ It unfolds one stage each time its HP crosses a quarter of its maximum. Each sta
 | Stage | At | It gains |
 |---|---|---|
 | **Folded** | start | Takes no action on the first cycle. Any attack against it that cycle deals double damage. |
-| **First joint** | below 16 HP | Its attacks gain Range Both. |
-| **Second joint** | below 11 HP | Its attacks apply Rooted. Armour 2. |
+| **First joint** | below 18 HP | Its attacks gain Range Both. |
+| **Second joint** | below 12 HP | Its attacks apply Rooted. Armour 2. |
 | **Open** | below 6 HP | Gains Deadly at the start of each of its turns. |
 
 The first row is the whole encounter compressed. A party that recognizes what the heap is and commits everything before it moves can end this in a cycle. A party that waits to be sure is fighting something else by then.

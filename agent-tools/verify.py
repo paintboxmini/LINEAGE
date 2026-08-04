@@ -142,7 +142,7 @@ def check_stat_blocks():
             trailing = m.group(5)
             n += 1
             f = path.split('/')[-1]
-            formula = 2 * body + 9
+            formula = 3 * body + 6
             if hp != formula and 'bespoke' not in trailing.lower():
                 bad.append(f'{f}: HP {hp} != formula {formula} and not marked bespoke')
             after = text[m.end():m.end() + 200]
@@ -290,6 +290,94 @@ def check_duplicate_refs():
     return report('no duplicate cross-references', bad)
 
 
+RESTATED_DIRS = ('quests', 'locations', 'world', 'factions', 'items')
+
+# A creature's own body size is a size, not a distance between things, so the
+# strict rule below does not reach it. Three exemptions, listed by hand rather
+# than pattern-matched, so the set cannot grow without someone noticing.
+DISTANCE_EXEMPT = {
+    ('quests/the-larder-fence.md', 'stands close to a meter tall'),
+    ('bestiary/tollbird.md', 'stands close to a meter tall at the shoulder'),
+    ('bestiary/skeinwing.md', 'nothing lunges at six thousand feet'),
+}
+
+DISTANCE_RE = re.compile(
+    r'[^.!?\n]{0,70}\b(?:\d+(?:[–-]\d+)? ?(?:ft\.?|feet|foot|yards?|meters?|metres?|'
+    r'miles?|inch(?:es)?)|(?:twenty|thirty|forty|fifty|sixty|hundred|thousand)[- ]'
+    r'(?:feet|foot|yards?|paces|miles?)|meter tall|\d+ ?(?:yards?|paces))\b'
+    r'[^.!?\n]{0,50}', re.I)
+
+
+def _bestiary_blocks():
+    """{'bestiary/x.md': [(mind, body, soul, hp), ...]} for every stat block."""
+    blocks = {}
+    for path in sorted(glob.glob('bestiary/*.md')):
+        text = open(path, encoding='utf-8').read()
+        blocks[path] = [tuple(int(x) for x in m.groups()) for m in re.finditer(
+            r'Mind (\d+) ?/ ?Body (\d+) ?/ ?Soul (\d+)[ ,—-]+HP (\d+)', text)]
+    return blocks
+
+
+def check_restated_stat_blocks():
+    """A stat block written outside bestiary/ must agree with its source.
+
+    Five quest files restate creature numbers for GM convenience. They agreed
+    when written; nothing stopped them drifting afterward. `characters/` is
+    skipped by design — player and NPC blocks have no bestiary source.
+    """
+    src = _bestiary_blocks()
+    bad = []
+    n = 0
+    for d in RESTATED_DIRS:
+        for path in sorted(glob.glob(f'{d}/*.md')):
+            text = open(path, encoding='utf-8').read()
+            for m in re.finditer(
+                    r'Mind (\d+) ?/ ?Body (\d+) ?/ ?Soul (\d+)[ ,—-]+HP (\d+)', text):
+                mind, body, soul, hp = (int(x) for x in m.groups())
+                n += 1
+                window = text[max(0, m.start() - 400):m.end() + 250]
+                named = {f'bestiary/{f}.md' for f in
+                         re.findall(r'`bestiary/([A-Za-z0-9_\-]+)\.md`', window)}
+                bespoke = 'bespoke' in window.lower()
+                # CTR is searched forward only. A backward window picks up the
+                # previous creature's rating — sour-tomatoes stacks two blocks
+                # a few lines apart, and the first draft of this check read
+                # Cole's stats against his father's number.
+                ctr = re.search(r'Creature Threat Rating:?\*{0,2} (\d+)',
+                                text[m.end():m.end() + 200])
+                if ctr and int(ctr.group(1)) != mind + body + soul:
+                    bad.append(f'{path}: CTR {ctr.group(1)} != total stats '
+                               f'{mind + body + soul}')
+                if named and not bespoke:
+                    known = {b for f in named for b in src.get(f, [])}
+                    if known and (mind, body, soul, hp) not in known:
+                        bad.append(
+                            f'{path}: restates {mind}/{body}/{soul} HP {hp}, which '
+                            f'matches no block in {", ".join(sorted(named))}')
+                elif not bespoke and hp != 3 * body + 6:
+                    bad.append(f'{path}: HP {hp} != formula {3 * body + 6} '
+                               f'and not marked bespoke')
+    return report('restated stat blocks match their bestiary source', bad,
+                  f'{n} restatements')
+
+
+def check_distances():
+    """No measured distance in quest or bestiary content (CLAUDE.md, Do Not).
+
+    Combat is abstract positioning. Drew ruled the scope strict on 2026-08-03:
+    room dimensions and object specs go too, not just combat reach.
+    """
+    bad = []
+    for d in ('quests', 'bestiary'):
+        for path in sorted(glob.glob(f'{d}/*.md')):
+            for m in DISTANCE_RE.finditer(open(path, encoding='utf-8').read()):
+                snippet = m.group(0).strip()
+                if any(path == p and e in snippet for p, e in DISTANCE_EXEMPT):
+                    continue
+                bad.append(f'{path}: {snippet}')
+    return report('no measured distances in quests/ or bestiary/', bad)
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -313,6 +401,8 @@ def main():
     check_item_keywords()
     check_glossary_count(canon)
     check_duplicate_refs()
+    check_restated_stat_blocks()
+    check_distances()
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:

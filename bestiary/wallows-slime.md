@@ -4,7 +4,7 @@
 
 **Cards:** `cards/wallows-slime.md`
 
-**Mind 1 / Body 2 / Soul 4 — HP 13**
+**Mind 1 / Body 2 / Soul 4 — HP 12**
 **Creature Threat Rating:** 7
 
 **Deck (7 — 1 Blue / 2 Red / 4 Green):** YOUR OWN HEARTBEAT *(blue)* · FOLLOWS WARMTH, IRON GRIP *(red)* · ENVELOP, BIND, FIELD MEDICINE, SHARED BURDEN *(green)*

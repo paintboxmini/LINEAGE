@@ -101,24 +101,27 @@ SETS = {
             '../cards/green-soul.md',
         ],
         # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim (20 Red / 20 Blue / 20 Green).
+        # verbatim. Fixed composition since 2026-08-03: 21 per colour, split
+        # 12/6/3 along each colour's range identity.
         'cards': [
-            # Red (20)
-            'ATTRITION', 'BLINDSIDE', 'BLOOD IN THE GAP', 'CHARGE', 'ENDURE',
-            'EQUAL FOOTING', 'FOOTWORK', "GAMBLER'S RUIN", 'GORE', 'GUARD',
-            'OPEN GUARD', 'PAIN IS FUEL', 'PULL', 'PUSH', 'REELING',
-            'RETALIATE', 'SLIP THE BLADE', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
-            # Blue (20)
-            'ANTICIPATE', 'AXIOM', 'CALCULATE', 'CERTAINTY', 'DEAD END',
-            'DEFLECT', 'FOCUS', 'FORESEEN', 'INTERRUPT', 'LAST RESORT',
-            'MARKED', 'PHASE LOGIC', 'PROFILE', 'REALIGNMENT', 'REBUTTAL',
-            'REFRACT', 'RETORT', 'SHARPEN', 'STUDY', 'VEIL',
-            # Green (20)
-            'ADAPT', 'BALANCE', 'BIND', 'BRISTLE', 'COMMUNION',
-            'DEAD RECKONING', 'EDDY', 'INSTINCT', 'MIRROR STEP',
-            'MOCKERY', 'OPENING', 'RESONATE', 'SHADE AWAY', 'SMOKE SCREEN',
-            'STEADFAST', 'SUPPORT', 'TWIN STRIKE', 'UNTOUCHED', 'URGENCY',
-            "YOU'RE NEXT",
+            # Red (21) — melee 12 / both 6 / ranged 3
+            # GORE swapped for INTERCEPT 2026-08-03 — see content.py.
+            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'INTERCEPT',
+            'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
+            'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
+            'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
+            'EMERGENCY REPAIRS', 'STARING CONTEST',
+            # Blue (21) — ranged 12 / melee 6 / both 3
+            'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
+            'LAST RESORT', 'MARKED', 'PROFILE', 'REFRACT', 'RETORT', 'STUDY',
+            'VEIL', 'ANTICIPATE', 'DEFLECT', 'PREDICT', 'HESITATE', 'TELL',
+            'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
+            # Green (21) — both 12 / ranged 6 / melee 3
+            'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
+            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SETTLE',
+            'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
+            'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
+            'DUST', 'OPENING',
         ],
     },
 }
@@ -488,17 +491,17 @@ body {{
 }}
 
 .card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
-.card.dense .flavor {{ font-size: 7pt; }}
+.card.dense .flavor {{ font-size: 8pt; }}
 .card.dense .card-name {{ font-size: 11pt; }}
 
 .card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
-.card.denser .flavor {{ font-size: 6.2pt; }}
+.card.denser .flavor {{ font-size: 7pt; }}
 .card.denser .card-name {{ font-size: 10pt; }}
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
 
 .flavor {{
   font-style: italic;
-  font-size: 8pt;
+  font-size: 9pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;

@@ -18,7 +18,7 @@ The only real question the party can answer is what happens to the children who 
 
 ## The Property
 
-A house and a shed, fifty yards apart, at the end of a track the fog keeps half-erasing. The house is close, dark, cluttered — years of trash nobody was cleaning. The shed is smaller, kept, and lived in by choice, not neglect.
+A house and a shed, far enough apart that walking between them is a decision, at the end of a track the fog keeps half-erasing. The house is close, dark, cluttered — years of trash nobody was cleaning. The shed is smaller, kept, and lived in by choice, not neglect.
 
 An old pickup sits in the yard when the father and oldest boy are home. **When it's gone, so are they — and it will come back.** That return is the only clock this scene needs. Whatever the party does, they're doing it on borrowed time, not a fixed one.
 
@@ -36,7 +36,7 @@ An old pickup sits in the yard when the father and oldest boy are home. **When i
 
 **The youngest.** Four years old. Nonverbal. Lives in the crawlspace above her mother's bed. The only sound she makes is the sound the yard cats make when they're hungry, because that's the only language anyone ever responded to. Her mother calls her a cat. So does everyone else, most days, including the middle children, who know better and say it anyway because it's easier. Nobody in the house is certain of her real name.
 
-**Grandma.** Lives alone in the shed, fifty yards off. Not the source of the family's dysfunction — just the only adult on the property who still notices the children exist.
+**Grandma.** Lives alone in the shed, across the yard. Not the source of the family's dysfunction — just the only adult on the property who still notices the children exist.
 
 ---
 
@@ -77,7 +77,7 @@ Steele's orphanage — rebuilt on the site of the one that burned when he was a 
 ## NPCs
 
 **The Father**
-**Mind 2 / Body 5 / Soul 3 — HP 19**
+**Mind 2 / Body 5 / Soul 3 — HP 21**
 **Creature Threat Rating:** 10
 *Stat block and deck are a starting point — scale to the party.*
 

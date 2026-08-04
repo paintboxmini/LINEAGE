@@ -12,17 +12,17 @@ The scenario is the standard day-2 road encounter: two Briar Scratchers contest 
 
 ### The Party
 
-**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(2 × Body + 9)* — hand size **3** *(= Mind, minimum 2)*
+**Frost** — Mind 3 / Body 3 / Soul 3 — **HP 15** *(3 × Body + 6)* — hand size **3** *(= Mind, minimum 2)*
 Deck (9 cards, 3R/3B/3G per the stat-matching heuristic):
 STRIKE, PUSH, ENDURE / PROFILE, REFRACT, STILLNESS / FLOW, PATIENCE, WITNESS
 
-**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 17** *(2 × Body + 9)* — hand size **3**
+**Steele** — Mind 3 / Body 4 / Soul 2 — **HP 18** *(3 × Body + 6)* — hand size **3**
 Deck (9 cards, 4R/3B/2G):
 STRIKE, DEAD HEAT, BRACE, PULL / PROFILE, CALCULATE, DISTRACT / FLOW, MOCKERY
 
 ### The Enemies
 
-**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 11** *(2 × Body + 9)* — hand size **2** *(Mind 1, floored at the minimum of 2)*
+**Briar Scratcher ×2** — Mind 1 / Body 1 / Soul 2 — **HP 9** *(3 × Body + 6)* — hand size **2** *(Mind 1, floored at the minimum of 2)*
 Each runs its own copy of the same **4-card deck** *(deck size = total stats = 1+1+2; color counts = each stat: 1R/1B/2G)*, 3 signature + 1 core to fill:
 RAKING CUT, SKITTER AWAY, NIP AND TEAR *(signature — `cards/briar-scratcher.md`)* + SHADE AWAY (G, core)
 
@@ -75,7 +75,7 @@ Start of turn: draws to hand size 2 → draws NIP AND TEAR. Hand: RAKING CUT, NI
 
 **Action:** A attacks Frost with **RAKING CUT** (Red, Body + d4, Melee — both Frontline, legal).
 
-Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Melee — legal, both Frontline), hoping Green would beat Blue. A played Red.
+Frost chooses to defend. **Reveals are simultaneous — defending is a prediction, not a reaction.** A defended with Blue last time, so Frost reads it as a Mind-leaning creature and reveals **PATIENCE** (Green, Range: Both — legal, both Frontline), hoping Green would beat Blue. A played Red.
 
 **Red beats Green — attacker wins.** Damage: Body 1 + d4 *(rolls 2)* = **3**. Frost 15 → 12. RAKING CUT Effect: *insert 1 Wound at the bottom of target's deck.* Frost's deck is now 6 cards, WOUND on the bottom: STILLNESS, PUSH, ENDURE, FLOW, WITNESS, **WOUND**.
 
@@ -174,9 +174,9 @@ No initiative to unwind, no cleanup step. The wheel simply stops mattering.
 | | HP | Deck state |
 |---|----|-----------|
 | Frost | 5 / 15 | **1 Wound**, still 3 cards down in his deck (behind ENDURE, FLOW, WITNESS) — inserted at the bottom, never drawn this fight; REFRACT and STILLNESS both still in hand, neither ever found a legal moment to defend with |
-| Steele | 17 / 17 | Clean — never targeted |
-| Scratcher A | 4 / 11 | Gone |
-| Scratcher B | 3 / 11 | Gone — spent a whole turn just crossing the field, and its Backline hand was dead weight twice over |
+| Steele | 18 / 18 | Clean — never targeted |
+| Scratcher A | 2 / 9 | Gone |
+| Scratcher B | 1 / 9 | Gone — spent a whole turn just crossing the field, and its Backline hand was dead weight twice over |
 
 Frost's Wound never surfaced this fight — bottom-insertion means it doesn't cost him now, it costs him later, whenever he actually draws down to it. It rides in his deck into Briarwatch and the Hollow below it, eventually surfacing into his hand to eat a slot the turn it's finally drawn (`quests/hollow-below-briarwatch.md`), where it won't heal with HP and won't leave until he spends a whole action on it or takes a short rest. Two more Scratcher encounters without a rest and the party's decks — not their HP bars — are the wounded thing.
 

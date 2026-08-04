@@ -4,7 +4,7 @@
 
 **Cards:** `cards/skeinwing.md`
 
-**Mind 2 / Body 1 / Soul 4 — HP 11**
+**Mind 2 / Body 1 / Soul 4 — HP 9**
 **Creature Threat Rating:** 7
 
 
@@ -52,7 +52,7 @@ Most days it's what it always is: something small and rust-furred, a young jacka
 
 ## Tactical Purpose
 
-Primarily a discovery, not an encounter — the answer to `quests/the-larder-fence.md`'s "one thing that should not be on a fence at Briarwatch's edge." Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Creature Threat Rating 7 and HP 11 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
+Primarily a discovery, not an encounter — the answer to `quests/the-larder-fence.md`'s "one thing that should not be on a fence at Briarwatch's edge." Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Creature Threat Rating 7 and HP 9 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
 
 ---
 

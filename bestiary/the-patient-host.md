@@ -4,7 +4,7 @@
 
 **Cards:** `cards/the-patient-host.md`
 
-**Mind 8 / Body 6 / Soul 10 — HP 66** *(bespoke — boss exception; formula baseline is 21)*
+**Mind 8 / Body 6 / Soul 10 — HP 66** *(bespoke — boss exception; formula baseline is 24)*
 **Creature Threat Rating:** 24
 
 **Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, PREDICT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, RECOVER *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, YOU'RE NEXT *(green)*

@@ -57,7 +57,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Gain Resist 2
 Defensive Bonus: Gain Resist 2
-Range: Melee
+Range: Both
 *"Stand firm and let them come to you."*
 
 ---
@@ -268,7 +268,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Anchored — Gain Resist 1.
 Defensive Bonus: Anchored — Gain Resist 1.
-Range: Melee
+Range: Both
 *"Hold the line. Make them break first."*
 
 ---
@@ -298,7 +298,7 @@ RED — BODY
 Attack: Body + d6
 Effect: The defender announces how many status cards they have in hand and discard pile. Deal +2 damage for each.
 Defensive Bonus: Heal 2 HP for each status card in your hand and discard pile. Then destroy them.
-Range: Melee
+Range: Both
 *"It was always going to end here."*
 
 ---
@@ -318,7 +318,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
 Defensive Bonus: Move yourself to immediately follow the attacker in the initiative order.
-Range: Melee
+Range: Ranged
 *"Move first and you've already lost."*
 
 ---
@@ -358,7 +358,7 @@ RED — BODY
 Attack: Body + d4
 Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
 Defensive Bonus: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
-Range: Melee
+Range: Ranged
 *"What's yours was never really yours."*
 
 ---
@@ -398,7 +398,7 @@ RED — BODY
 Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
 Defensive Bonus: Gain Resist.
-Range: Melee
+Range: Ranged
 *"Some things you don't have to aim."*
 
 ---
@@ -408,7 +408,7 @@ RED — BODY
 Attack: Body + d8. If the defender moved since their last turn, +1d6.
 Effect: None.
 Defensive Bonus: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
-Range: Melee
+Range: Ranged
 *"Moving is a decision. So is being wrong about it."*
 
 ---
@@ -428,7 +428,7 @@ RED — BODY
 Attack: Body + d4
 Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use.
 Defensive Bonus: Gain Resist. This card returns to your hand instead of your discard pile after use.
-Range: Melee
+Range: Both
 *"It was slow once."*
 
 ---
@@ -445,10 +445,10 @@ Range: Melee
 
 **GORE**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d4
 Effect: If target is Frontline, deal +d6 additional damage.
 Defensive Bonus: Attacker gains Rooted.
-Range: Melee
+Range: Both
 *"It does not aim. It arrives."*
 
 ---
@@ -488,7 +488,7 @@ RED — BODY
 Attack: Body + d8
 Effect: If your HP is 6 or less, gain Immunity.
 Defensive Bonus: If your HP is 6 or less, gain Immunity.
-Range: Both
+Range: Melee
 *"Still standing counts for everything."*
 
 ---

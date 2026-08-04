@@ -68,10 +68,10 @@ Range: Melee
 
 **CENSER SWING**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d6
 Effect: If target is Frontline, deal +2 damage.
 Defensive Bonus: Push attacker to Backline.
-Range: Melee
+Range: Both
 *"Peaceful men learn where to swing."*
 
 ---
@@ -100,4 +100,4 @@ Range: Both
 
 ---
 
-*INCENSE WARD, OPEN DOOR, and BALANCE RESTORED were cut from Vescal's deck during a rebalance to match his stat total (`characters/vescal.md`) — preserved at `experimental/archives/cut-cards.md`. SMOKE SCREEN was cut from here too, but reworked and promoted to core instead of archived — same name, rebalanced text, now lives in `cards/green-soul.md`.*
+*INCENSE WARD, OPEN DOOR, and BALANCE RESTORED were cut from Vescal's deck during a rebalance to match his stat total (`characters/vescal.md`) — preserved at `experimental/archives/cut-cards.md`. SMOKE SCREEN was cut from here too, but reworked and promoted to core instead of archived rather than deleted; it lives in `cards/green-soul.md` and was renamed **DUST** on 2026-08-03.*

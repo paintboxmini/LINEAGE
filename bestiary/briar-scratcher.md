@@ -2,7 +2,7 @@
 
 *Road encounter. Teaches Wounds as deck pressure. Run before Briarwatch on day 2 of travel.*
 
-**Mind 1 / Body 1 / Soul 2 — HP 11**
+**Mind 1 / Body 1 / Soul 2 — HP 9**
 **Creature Threat Rating:** 4
 
 
