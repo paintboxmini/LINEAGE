@@ -1,0 +1,31 @@
+# Patch — `locations/capital.md`
+
+Insert under **The Marketplace** (after the existing key-features list), and add a Forge subsection under **The Temple District**.
+
+---
+
+## Addition — Marketplace (vendors)
+
+**Vendors that matter for gear:**
+
+- **Nessa Coil — Crossroads Sundries.** Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Full stock: `items/capital-items.md`.
+- **Brother Alden — Resonant Goods.** Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still keeps their archive for secrets paid in kind. Full stock: `items/capital-items.md`.
+
+Ordinary stall food, cloth, and tools stay GM-improv. The two named counters are the mechanical shelves.
+
+---
+
+## Addition — Temple District (Forge)
+
+**Temple of the Forge** — the working counter, not the shrine.
+
+- **Harlan Vetch**, master smith: weapons and the high rack (Tier 2 on display).
+- **Sera Vetch**, fitter: armor, adjustments, and the person who will hold a piece until the party agrees who wears it.
+
+Tier 1 arms and plate, priced to the Session 5 curve. Stock and effects: `items/capital-items.md`.
+
+---
+
+## Related Documents (append)
+
+- `items/capital-items.md` — Forge and Marketplace mechanical stock
