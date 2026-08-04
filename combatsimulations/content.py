@@ -2160,7 +2160,7 @@ def build_cards():
     add("DEFLECT", 'B', 'mind', 'melee', 6,
         effect=_deflect_effect, defense=_deflect_defense)
     add("REALIGNMENT", 'B', 'mind', 'both', 6, effect=_realignment_effect, defense=_realignment_defense)
-    add("CLIMB", 'B', 'mind', 'ranged', 6, effect=_climb_effect, defense=_climb_defense)
+    add("CLIMB", 'B', 'mind', 'melee', 6, effect=_climb_effect, defense=_climb_defense)
     add("FRACTURE", 'B', 'mind', 'ranged', 6,
         damage=_fracture_dmg, effect=_fracture_effect, defense=_fracture_defense)
     add("TRACE", 'B', 'mind', 'ranged', 6, damage=_trace_dmg, defense=_trace_defense)
@@ -2183,7 +2183,7 @@ def build_cards():
         effect=_forget_effect, defense=_forget_defense)
     add("PARADOX", 'B', 'mind', 'ranged', 6,
         effect=_paradox_effect, defense=_paradox_defense, special_reveal='paradox')
-    add("ALIGN", 'B', 'mind', 'ranged', 6,
+    add("ALIGN", 'B', 'mind', 'ranged', 4,
         effect=_align_effect, defense=_align_defense)
     add("ANTICIPATE", 'B', 'mind', 'melee', 6, effect=_anticipate_effect, defense=_anticipate_defense)
     # Steele — Green
