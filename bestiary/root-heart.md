@@ -52,8 +52,8 @@ It is unclear whether this thing feeds the forest or feeds on it.
 
 ---
 
-**Passive — Pulse**
-At the start of each of the Root Heart's turns, all Frontline enemies take 1 damage.
+**Passive — Pulse** *(Overgrowth)*
+At the start of each of the Root Heart's turns, all Frontline enemies take Pulse damage — 1, escalating per Retaliation Phase below. This is the Root Heart's current, active state; see GM Notes for what's driving it and Post-Defeat for what changes once it isn't.
 
 *The fibrous mass contracts. Sap seeps thick and dark. The forest tightens.*
 
@@ -63,13 +63,19 @@ At the start of each of the Root Heart's turns, all Frontline enemies take 1 dam
 
 Triggered at **20 HP** and **10 HP** thresholds.
 
-When HP drops below a threshold: the Root Heart triggers a Pulse immediately, outside of its normal turn.
+When HP drops below a threshold: the Root Heart triggers a Pulse immediately, outside of its normal turn. *(bespoke — Overgrowth Phase only)* Each threshold crossed also permanently adds +1 to Pulse's damage: 1 → 2 after 20 HP, 2 → 3 after 10 HP. Cutting it back doesn't calm it down. It gets worse, right up until it actually goes down.
 
 ---
 
 ## Win Condition
 
 When HP reaches 0, the cavity pulses open. All players may make a **free final action** before the encounter ends.
+
+---
+
+## GM Notes — Why It's Aggressive Now
+
+The Root Heart cycles between a dormant state and this one — Overgrowth. Growing outward is its default; the Masons' containment line at Briarwatch (`factions/the-masons.md`, Known Works) has held the Weald's natural expansion back for as long as the fence has stood, and the pressure that would normally spend itself outward has nowhere left to go but in. This is that cycle at its current peak, not a reaction to the party, to Paid Passage, or to the toll wall — all three are simply present when it happens to be turning, not the cause of it. Full mechanism: `characters/aege.md`, GM Secret.
 
 ---
 
@@ -80,3 +86,5 @@ The Root Heart does not rot.
 The cavity it leaves behind does not empty. Within days, thin white threads begin knitting the wound closed from every direction. The forest never rejects it. It only contains it.
 
 In some places along its exposed body, you can see rings — not of age, but of interruption. Growth that was cut away before. Growth that returned thicker.
+
+**Defeating it ends Overgrowth.** Pulse stops — there is nothing ambient left to feel. Rootstalkers revert to what they were: custom-enforcers, not open predators (`bestiary/rootstalker.md`). The Holdfast stops shrinking. This cycle is closed for good; nothing here foreshadows the next one.

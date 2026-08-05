@@ -18,6 +18,8 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 
 **Pressure 4 is not the only road to the Root Heart.** A gold piece paid into Seeker's Price opens the way there directly, at whatever Pressure the party is currently carrying — voluntarily, and much earlier than the track would have taken them.
 
+**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart.md`, GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
+
 ---
 
 ## Forest Customs

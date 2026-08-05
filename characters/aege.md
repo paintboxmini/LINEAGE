@@ -61,7 +61,7 @@ This is why she's always drawn toward wherever her domain is concentrated — re
 
 Her own reason for going home — her family, the letter — is separate and fully hers. The Echo doesn't explain that part, and shouldn't.
 
-**The family and the Heart.** The Root Heart's aggression is not random weather. Something in the deep has shifted — the same pressure track the party will walk is the pressure her people have been living under for months. Whether the Heart is reacting to the party, to the Masons' line at Briarwatch, to Paid Passage and the toll wall, or to something older is not established. What is established: Rootstalkers that once ignored forest-people now treat them as prey, and the safe walks have collapsed to a small holdfast region deeper in than the usual POI ring (`quests/turnroot-weald-adventure.md`, The Holdfast).
+**The family and the Heart.** The Root Heart's aggression is not random weather. It cycles between dormant and an active **Overgrowth** phase (`bestiary/root-heart.md`, GM Notes), and it's mid-cycle now — but the cycle turning inward instead of out traces to a real cause: the Masons' containment line at Briarwatch (`factions/the-masons.md`, Known Works) has held the Weald's natural expansion back for as long as the fence has stood. Blocked from growing outward, the pressure of that growth has nowhere to go but in. The party's arrival, Paid Passage, and the toll wall are not the cause — all three are simply present while it happens to be turning, coincidence rather than trigger. Rootstalkers that once ignored forest-people now treat them as prey, and the safe walks have collapsed to a small holdfast region deeper in than the usual POI ring (`quests/turnroot-weald-adventure.md`, The Holdfast) — both are downstream of the same Overgrowth, not two separate changes.
 
 Aege's return is not a rescue mission she will ask the party to join. It is why she was on the road. If the party's path through the Weald crosses her people's ground, that is a meeting the forest allowed — and she may already be there.
 
@@ -119,6 +119,8 @@ Her core picks lean the same direction — control and information over damage (
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
 - `quests/turnroot-weald-adventure.md` — The Holdfast, her people's ground
 - `bestiary/rootstalker.md` — what's hunting them
+- `bestiary/root-heart.md` — Overgrowth, the real reason the Weald has turned
+- `factions/the-masons.md` — the Briarwatch line, the actual cause behind the Heart's cycle
 - `mythology/seats.md` — the Seat of Death
 - `mythology/echoes.md` — Echoes, the Degrees of Alignment, and her own entry under Known Echoes
 - `items/briarwatch-items.md` — the Carrion Feather
