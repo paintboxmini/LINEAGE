@@ -57,6 +57,8 @@ See **The Naturalist Collection** below.
 **Lyra Moon-Singer** *(entertainer, half-elf)*
 Plays a lyre. Uses minor illusion to manifest small spirit dancers on the tabletops while she performs.
 
+One piece in her rotation is older than anything else she plays — worn to fragments in places, the words shifting depending who taught it to whom, but the shape always holds: someone searching for a healer far from home, one who takes another's suffering into her own hands so the sufferer doesn't have to carry it alone. Lyra doesn't know where it came from. She plays it because the room always goes quiet for it, and a performer learns which songs do that.
+
 **Sitrump the Scribe** *(regular, gnome)*
 Always at the same corner table, surrounded by scrolls from the Library of Arcane Knowledge. Obsessed with unmasking Lord Archibald (The Pig) and Lady Eveline (The Elephant). Extremely paranoid.
 

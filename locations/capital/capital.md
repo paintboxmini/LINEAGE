@@ -23,7 +23,7 @@ A sprawling labyrinth of stalls and shops at the city's center. Goods from every
 Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
-- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `locations/the-coil.md` (The Nagamani).
+- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `locations/the-coil.md` (The Nagamani). A slim, dismissive volume shelved nearby describes a tribe of healers somewhere south who supposedly draw suffering out of the sick and keep it themselves — the author calls the whole practice unverified superstition and spends more words mocking the claim than describing it. Whoever wrote it never saw the gift worked, and says so almost proudly.
 - Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
 - **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/capital/underground-bazaar.md` and `locations/capital/underground-tavern.md`.
 
