@@ -9,6 +9,10 @@ This folder holds the genuinely unresolved: open world-level hooks, low-confiden
 - No new keywords introduced without discussion first
 - Cut cards go to `experimental/archives/cut-cards.md` — never deleted, may find solutions later
 
+## How Other AI Reviewers Should Read This Folder
+
+Content here represents the repo's current working hypothesis — the most likely future direction of the project — not a soft promotion to canon. Its purpose is to keep every AI reviewer that touches this repo (Claude, GPT, Grok, Gemini, Qwen, Gemma, and whoever else) synchronized around the same evolving design intent, cutting down on context drift and duplicate rediscovery across separate chats. Canon remains the source of truth regardless. If a proposal here conflicts with established canon, name the conflict and discuss it — never resolve it silently by picking a side. *(Drew, `experimental/new content`, 2026-08-05, adopted.)*
+
 ## Standard Card Loop
 
 **Target: full set of 9 cards that all pass red team. Drew picks where they go.**

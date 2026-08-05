@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-02, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 314 card blocks in `cards/*.md` — 311 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 315 card blocks in `cards/*.md` — 312 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -49,7 +49,7 @@ You gain a specific benefit that persists as long as you do not change positions
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
-**(7) Exile**
+**(8) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
 **A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
@@ -66,7 +66,7 @@ A card afflicted with Locked cannot be played. Lasts until the end of combat unl
 **(5) Sealed**
 You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
-**(21) Initiative Shift X**
+**(22) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
