@@ -21,6 +21,8 @@ Predators execute the forest's will.
 
 Those who stay long-term develop habits instead of maps. They tie cords to their wrists, hum route-songs, or simply let the wood guide them completely. NPCs here freely offer directions to locations — the forest makes them generous about this. It costs them nothing.
 
+Forest families still live under canopy year-round. Their safe range has collapsed toward the deep — see The Holdfast (`quests/turnroot-weald-adventure.md`).
+
 ## Flora & Fauna
 
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.

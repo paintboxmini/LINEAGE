@@ -323,6 +323,28 @@ If the party cannot agree, the plate stays in the wall. The forest is content to
 
 ---
 
+### The Holdfast *(Aege's people)*
+
+A small region of the Weald that still behaves. Moss signs stay true. Roots do not surface underfoot mid-stride. Rootstalkers have been seen at the edge and turned away — or have not, and the holdfast is smaller this week than last.
+
+**Who lives here.** A forest family: a handful of adults, fewer children, no permanent structures that would insult the canopy. Cord-wrist customs — the same grammar as the Knot-Keeper's bracelets, practiced without the sacrifice. They will share water and a route-song. They will not leave with the party.
+
+**What they know.**
+- The Root Heart is awake in a way it was not a season ago.
+- Rootstalkers have taken three of theirs in the last month — not redirected, *taken*. Bodies not found.
+- The safe ground is measured in walks, not miles, and it is shorter every time someone counts.
+- A daughter left years ago. They do not use her name with strangers. If Aege is present, no introduction is required.
+
+**Customs.** These people already keep the Forest Customs. Thanking them for help is safe; thanking *the forest* in their hearing is still a violation. They will correct the party once, flatly.
+
+**Pressure.** Arriving here does not raise Pressure. Fighting a Rootstalker on the holdfast's edge does. If the party leads a Rootstalker *into* the holdfast, Pressure +1 and the family's trust is spent.
+
+**Aege.** If she has already parted from the party at Briarwatch, she may be found here when the party arrives — or the family may say she passed through and went deeper, toward the Heart. She does not use the party as escort. She will accept their company if they are already going the same way.
+
+**Loot / payment.** Nothing for sale. If the party clears a Rootstalker that was pressing the edge, the family may offer a route-song that functions as forest signs for one navigation (no check) — the same gift Seeker's Price sells for copper, given freely once.
+
+---
+
 ### The Half-Sunken Shrine
 
 A shrine overtaken by roots. A single intact bronze bell hangs, undisturbed by growth around it. The roots seem to curl away from the bell specifically.

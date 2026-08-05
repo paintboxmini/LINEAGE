@@ -37,11 +37,15 @@ She doesn't perform mystery. She just doesn't volunteer more than the moment cal
 
 ## Backstory
 
-Grew up in the Turnroot Weald. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture. Her family is still there. She doesn't talk about them.
+Grew up in the Turnroot Weald. Left as a child. Has lived in and around Vulture's Nest since. She knows the forest the way you know a place you left before you understood it — not as terrain, as texture.
 
-Recently, word came from home: something's gone wrong deep in the forest, not at its edges — the roots themselves have turned restless, moving in ways nobody's seen before, and her family doesn't scare easily. She's going herself. No one sent her. No one had to.
+Her family are people of the forest — not visitors, not edge-dwellers. They stay under canopy year-round, keep the same customs the adventure tracks as law, and never needed maps because the Weald always routed them where they needed to be. They do not scare easily. They do not leave.
 
-*Restless roots deep in the Weald resonates with what's already established there — roots that "surface like old roads, then sink again" (`locations/turnroot-weald.md`) and the Root Heart itself (`bestiary/root-heart.md`). Not asserted as the same event — just the same forest, the same motif. Whether this is the Root Heart stirring is a live question, not a decided one.*
+Word reached her at the Nest: the Root Heart has turned aggressive. The ground her people can safely walk has shrunk to a fraction of what it was, and the Rootstalkers — predators that used to pass a forest family without interest — have started hunting them.
+
+She is going herself. No one sent her. No one had to.
+
+She doesn't volunteer more of it than that. What the hunting actually looks like, how bad the ground has gotten, what the Heart's mood means for the people still under canopy — those are details she spends only if a party earns them, or if they meet her again past Briarwatch.
 
 ---
 
@@ -56,6 +60,10 @@ What it costs, when it comes, is written down: Stage III is Incarnation, where *
 This is why she's always drawn toward wherever her domain is concentrated — real endings already happened, real potential for more sitting on top of it — the same way the Night Ferryman reads the Coil's own restlessness before it surfaces. It's also the real mechanism behind her already-established habit of seeming to know more than she should about a place, or the people standing in it: she isn't investigating them. She's reading their proximity to where the domain is already active.
 
 Her own reason for going home — her family, the letter — is separate and fully hers. The Echo doesn't explain that part, and shouldn't.
+
+**The family and the Heart.** The Root Heart's aggression is not random weather. Something in the deep has shifted — the same pressure track the party will walk is the pressure her people have been living under for months. Whether the Heart is reacting to the party, to the Masons' line at Briarwatch, to Paid Passage and the toll wall, or to something older is not established. What is established: Rootstalkers that once ignored forest-people now treat them as prey, and the safe walks have collapsed to a small holdfast region deeper in than the usual POI ring (`quests/turnroot-weald-adventure.md`, The Holdfast).
+
+Aege's return is not a rescue mission she will ask the party to join. It is why she was on the road. If the party's path through the Weald crosses her people's ground, that is a meeting the forest allowed — and she may already be there.
 
 ---
 
@@ -109,6 +117,8 @@ Her core picks lean the same direction — control and information over damage (
 - `quests/washed-ashore.md` — the alternate telling
 - `locations/roadhouse.md` — where she tells the party about her family
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
+- `quests/turnroot-weald-adventure.md` — The Holdfast, her people's ground
+- `bestiary/rootstalker.md` — what's hunting them
 - `mythology/seats.md` — the Seat of Death
 - `mythology/echoes.md` — Echoes, the Degrees of Alignment, and her own entry under Known Echoes
 - `items/briarwatch-items.md` — the Carrion Feather
