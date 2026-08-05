@@ -1,0 +1,13 @@
+Rooted (corrected):
+Cannot voluntarily change position until the end of your next turn. Forced repositioning remains unaffected.
+
+Understood. Restating the intended behavior:
+
+**GRAPPLE — clarified persistence**
+
+- When GRAPPLE resolves, it designates an **original target** (the defender if you attacked, the attacker if you defended).
+- That original target gains Rooted.
+- As long as **you** remain Anchored, the Rooted continues to apply to that same original target on subsequent turns. It does not jump to whoever happens to be attacking or defending you later.
+- Anchored is the voluntary condition you maintain (by not moving) to keep the effect alive. It functions as a self-imposed Rooted that you can choose to end by moving, at which point the ongoing Rooted on the original target also ends.
+
+So the card creates a lasting lock on one specific person, sustained by your own willingness to stay put.
