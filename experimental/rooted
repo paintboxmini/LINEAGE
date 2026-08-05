@@ -36,10 +36,15 @@ Intent: Anchored grants a benefit for as long as *you* do not move. While you re
 
 ---
 
-**Quick — duration clarification**
+**Quick — precise fade timing**
 
-Glossary should read:  
 **Quick**  
-You may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it. Quick fades at the end of your turn whether you used the free move or not.
+You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it.
 
-Current text can be read as “keep Quick indefinitely until you spend the free move.” That is not the intent. It is a same-turn grant only.
+**Duration:** Quick is gained when the effect resolves and lasts until the **end of your current turn**.  
+- If you gain it on your own turn, you may use the free move that same turn; it then fades when your turn ends.  
+- If you gain it on someone else’s turn (e.g. from a Defensive Bonus), you hold it until the end of *your* next turn, then it fades.  
+- Unused Quick still fades. It does not persist indefinitely until spent.
+
+**Short form for glossary:**  
+*Lasts until the end of your current turn (or the end of your next turn if gained off-turn). Fades whether used or not.*
