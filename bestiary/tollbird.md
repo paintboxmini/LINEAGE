@@ -13,7 +13,7 @@
 
 ## Appearance
 
-A Tollbird stands close to a meter tall at the shoulder, wings spanning just over two — heavier than its shape suggests, built more like a body than a bird: dense muscle over hollow bone, colored like wet fencepost, pale wood-grey streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot.
+A Tollbird stands about waist-height at the shoulder, wings spanning wider than a grown man's outstretched arms — heavier than its shape suggests, built more like a body than a bird: dense muscle over hollow bone, colored like wet fencepost, pale wood-grey streaked dark where rain sits longest. Its beak curves back on itself before the tip, hooked like the thorns it works with, and so do the two longest claws on each foot.
 
 It can drag a grown adult to the fence. It can't drag one far — which is exactly why the fence matters as much as the bird does. The whole hunt only works because the larder is never more than a dive away.
 

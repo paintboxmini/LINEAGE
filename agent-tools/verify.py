@@ -292,15 +292,6 @@ def check_duplicate_refs():
 
 RESTATED_DIRS = ('quests', 'locations', 'world', 'factions', 'items')
 
-# A creature's own body size is a size, not a distance between things, so the
-# strict rule below does not reach it. Three exemptions, listed by hand rather
-# than pattern-matched, so the set cannot grow without someone noticing.
-DISTANCE_EXEMPT = {
-    ('quests/the-larder-fence.md', 'stands close to a meter tall'),
-    ('bestiary/tollbird.md', 'stands close to a meter tall at the shoulder'),
-    ('bestiary/skeinwing.md', 'nothing lunges at six thousand feet'),
-}
-
 DISTANCE_RE = re.compile(
     r'[^.!?\n]{0,70}\b(?:\d+(?:[–-]\d+)? ?(?:ft\.?|feet|foot|yards?|meters?|metres?|'
     r'miles?|inch(?:es)?)|(?:twenty|thirty|forty|fifty|sixty|hundred|thousand)[- ]'
@@ -372,8 +363,6 @@ def check_distances():
         for path in sorted(glob.glob(f'{d}/*.md')):
             for m in DISTANCE_RE.finditer(open(path, encoding='utf-8').read()):
                 snippet = m.group(0).strip()
-                if any(path == p and e in snippet for p, e in DISTANCE_EXEMPT):
-                    continue
                 bad.append(f'{path}: {snippet}')
     return report('no measured distances in quests/ or bestiary/', bad)
 
