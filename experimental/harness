@@ -1,0 +1,97 @@
+I think you're identifying the right optimization target.
+
+Claude's expensive work should be the work that requires Claude's judgment. Everything else is overhead.
+
+If I were redesigning the harness, I'd separate the Canon Gate into explicit phases:
+
+Phase 1 – Intake (cheap)
+
+Read new experimental/ content.
+
+Classify what it touches (rules, lore, items, quests, etc.).
+
+Detect possible conflicts.
+
+If no conflicts are found, proceed automatically.
+
+
+Phase 2 – Integration (cheap)
+
+Move or merge content.
+
+Update indexes.
+
+Update cross-references.
+
+Propagate renamed concepts.
+
+Log changes.
+
+
+This is mostly mechanical.
+
+Phase 3 – Arbitration (expensive) Only invoked when:
+
+Canon conflicts.
+
+Authority-level questions.
+
+Rule redefinitions.
+
+Architectural inconsistencies.
+
+Ambiguous placement.
+
+
+Only here should Claude spend lots of reasoning tokens.
+
+
+---
+
+The biggest mindset shift is this:
+
+> Default to integrating, not evaluating.
+
+
+
+Right now it sounds like Claude still feels responsible for proving every proposal deserves to exist.
+
+But you've already done that evaluation while creating it.
+
+Claude should instead assume:
+
+> "This proposal has creative approval. My job is to determine whether it fits cleanly into the existing architecture."
+
+
+
+That's a much narrower—and cheaper—question.
+
+There's another opportunity too. Your harness could explicitly distinguish between:
+
+Semantic work (thinking)
+
+Mechanical work (editing)
+
+
+Mechanical work is things like:
+
+moving files,
+
+updating links,
+
+fixing references,
+
+changing headings,
+
+propagating names.
+
+
+Those don't need deep deliberation. If the harness recognizes them as deterministic tasks, it can avoid spending a large reasoning budget on them.
+
+In software terms, you're moving from a pipeline where every commit goes through a full design review to one where:
+
+routine changes merge automatically,
+
+anything structurally risky opens a review,
+
+constitutional changes require you.
