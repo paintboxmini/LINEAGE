@@ -10,18 +10,9 @@ Individually: harmless. As a swarm: a paralysis event.
 
 ## Future-Lock Venom
 
-The venom interrupts biological futures — metamorphosis, transformation, any state change the body is working toward. In large enough doses it halts all voluntary motion.
+The venom interrupts what a body was about to do next. In combat terms it is the keyword **Future-Lock X** (`rules/card-glossary.md`): the stung character's effective hand size drops by X, no floor at 2 the way a Mind loss has one — reach 0 and they draw nothing, can't act, until someone else spends their action pulling a stack off them.
 
-**Future-Lock** is a status card seeded into the affected character's deck.
-
-- Cannot be discarded by any means during play.
-- Cannot be removed by short rest.
-- Takes up a hand slot when drawn. It cannot be played.
-- The venom is slow-moving. Cards seeded into the deck have no effect until drawn — the character may not realize they've been stung until the card surfaces during combat or card cycling.
-- Once drawn, the venom begins to metabolize. Each Future-Lock card clears from the deck **20 minutes after it is drawn** (DM tracks). Multiple cards each have their own timer.
-- When a character's hand contains only Future-Lock cards, they are **fully paralyzed** — they cannot act until another character spends their full turn extracting venom (DC 12 Mind/Reason, removes 1 Future-Lock card from hand).
-
-Hand size is Mind. A Mind 2 character has 2 slots. A Mind 4 character has 4.
+Outside a fight the same venom makes the hands slow and the next action arrive a half-beat late — enough that a navigation check or a careful harvest can fail for no obvious reason. The mechanical weight is in combat; the fiction is continuous.
 
 ---
 
@@ -29,16 +20,18 @@ Hand size is Mind. A Mind 2 character has 2 slots. A Mind 4 character has 4.
 
 Wasps do not attack unless a nest is disturbed. Nests are found in root cavities, beneath bark overhang, and occasionally anchored to the underside of fallen logs. They do not announce themselves.
 
-On disturbance, a swarm lifts. Each character in the area makes a **2d10 + Body save** to endure the sting and resist the venom taking hold.
+On disturbance, a swarm lifts. Each character in the area makes a **2d10 + Body save**.
 
 | Result | Consequence |
 |--------|-------------|
 | 15+ | No sting — evaded cleanly |
-| 10–14 | 1 Future-Lock card seeded into deck |
-| 5–9 | 2 Future-Lock cards seeded into deck |
-| Below 5 | 3 Future-Lock cards seeded into deck |
+| 10–14 | Future-Lock 1 |
+| 5–9 | Future-Lock 2 |
+| Below 5 | Future-Lock 3 |
 
-The swarm persists for up to 3 rounds in the disturbed area. Each round spent in the area requires a new save. Moving out of the nest zone ends further checks.
+The swarm persists for up to 3 rounds in the disturbed area. Each round spent in the area requires a new save; applications stack. Moving out of the nest zone ends further checks.
+
+If the party is not in combat when stung, track the stacks and apply them at the start of the next combat (hand size reduced before the first draw of that fight). A long rest clears unspent stacks that never reached a fight.
 
 ---
 
@@ -74,9 +67,9 @@ A dispersed swarm (fire or water used) leaves the nest temporarily unguarded —
 
 ## GM Notes
 
-Future-Lock cards are deck contamination that compounds through the dungeon. A party that gets hit twice before the boss encounter arrives with clogged hands.
+Future-Lock stacks compound through the dungeon. A party that gets hit twice before the boss encounter arrives with less hand to work with before the fight even starts.
 
-The paralysis state is not instant death — it's a rescue problem. A paralyzed character needs another character to spend their turn extracting venom. Two paralyzed characters at once is a wipe risk.
+The paralysis state is not instant death — it's a rescue problem. A character at 0 hand size needs another character to spend their action extracting a stack. Two paralyzed characters at once is a wipe risk.
 
 The creative counters (fire, water) are the intended release valve. Reward parties that recognize the pattern and adapt. Punish parties that panic and keep swinging at the swarm.
 
