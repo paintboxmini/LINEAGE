@@ -367,6 +367,51 @@ def check_distances():
     return report('no measured distances in quests/ or bestiary/', bad)
 
 
+HP_FORMULA_RE = re.compile(r'(\d+)\s*×\s*Body\)?\s*\+\s*(\d+)')
+
+HP_FORMULA_FILES = (
+    'CLAUDE.md',
+    'rules/core-rules.md',
+    'rules/player-guide.md',
+    'rules/gm-guide.md',
+    'rules/character-creation.md',
+    'rules/combat-example.md',
+    'agent-tools/compiled-crib.md',
+)
+
+
+def check_hp_formula():
+    """The HP formula is restated in seven files instead of living in one
+    canonical spot, each restatement free to drift independently — flagged
+    as the harness's biggest single propagation risk (Drew, 2026-08-05, the
+    Harness Audit's point 3). Not fixed by deleting the restatements — each
+    genuinely serves standalone readability in its own file (a GM reading
+    gm-guide.md shouldn't have to jump to core-rules.md for one number) —
+    fixed by making drift between them impossible to miss instead. Canonical
+    value is `rules/core-rules.md`'s, per CLAUDE.md's own Rule Definitions
+    taxonomy ("formulas (`rules/core-rules.md`)").
+    """
+    seen = {}
+    bad = []
+    for path in HP_FORMULA_FILES:
+        text = open(path, encoding='utf-8').read()
+        matches = set(HP_FORMULA_RE.findall(text))
+        if not matches:
+            bad.append(f'{path}: HP formula not found (moved or reworded?)')
+            continue
+        if len(matches) > 1:
+            bad.append(f'{path}: states multiple different HP formulas: {sorted(matches)}')
+        seen[path] = matches
+    canonical = seen.get('rules/core-rules.md')
+    if canonical:
+        for path, matches in seen.items():
+            if path != 'rules/core-rules.md' and matches != canonical:
+                bad.append(f'{path}: HP formula {sorted(matches)} != '
+                           f'canonical {sorted(canonical)} (rules/core-rules.md)')
+    return report('HP formula consistent across canonical files', bad,
+                  f'{len(seen)} files checked')
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -392,6 +437,7 @@ def main():
     check_duplicate_refs()
     check_restated_stat_blocks()
     check_distances()
+    check_hp_formula()
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:
