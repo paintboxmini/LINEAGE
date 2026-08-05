@@ -77,7 +77,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 *Full entries: `items/fog-basin-items.md`. Primary source: Pell.*
 
 - **Fog Goggles** *(Artifact)* — never Blind from fog/Fogburst; costs adding FOGLUST (a Blind-on-draw curse card) to your deck. Price varies per customer — Pell charges in memories and secrets, not coin. Which Seat, if any, it's aligned to is open design, not a gap to close — same register as the rest of the Fog Basin's unresolved edges.
-- **Pell's Lanterns** — four named, single-use, price set by Pell: Lantern of Returning (immune to the Misdirection Trap), Lantern of the First Path (reveals the original path through an area, DC 12 Mind), Lantern of the Unlost (Echoes repeat useful fragments nearby), Lantern of Quiet Wings (Fogcallers won't initiate combat while lit).
+- **Pell's Lanterns** — four named, single-use, price set by Pell: Lantern of Returning (the fog cannot lead you astray while lit — Misdirection Trap has no effect), Lantern of the First Path (reveals the original path through an area, DC 12 Mind), Lantern of the Unlost (Echoes repeat useful fragments nearby), Lantern of Quiet Wings (Fogcallers won't initiate combat while lit).
 
 ---
 
