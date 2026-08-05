@@ -27,6 +27,12 @@ Key features:
 - Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
 - **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/capital/underground-bazaar.md` and `locations/capital/underground-tavern.md`.
 
+**Vendors that matter for gear:**
+- **Nessa Coil — Crossroads Sundries.** Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Full stock: `items/capital-items.md`.
+- **Brother Alden — Resonant Goods.** Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still keeps their archive for secrets paid in kind. Full stock: `items/capital-items.md`.
+
+Ordinary stall food, cloth, and tools stay GM-improv. The two named counters are the mechanical shelves.
+
 The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
 
 ---
@@ -39,7 +45,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 |--------|-----------|
 | Temple of the Sun | Sun god. Gilded walls, open courtyard. Daily gatherings. |
 | Shrine of the Moon | Moon goddess. Gardens, lanterns, solace. |
-| Temple of the Forge | Craftsmanship and industry. Artisans and blacksmiths. |
+| Temple of the Forge | Craftsmanship and industry. Artisans and blacksmiths. See below — the working counter, not just the shrine. |
 | Sanctuary of Nature | Nature spirits. Dense grove. Druids. |
 | Temple of Knowledge | Ancient library. Scholars. Seekers of understanding. |
 | Temple of the Rivers | River god. Reflective pool. Sailors and fishermen. |
@@ -50,11 +56,14 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
 
+**Temple of the Forge** — the working counter, not the shrine. **Harlan Vetch**, master smith, runs the weapons and the high rack (Tier 2 on display). **Sera Vetch** fits armor, and holds a piece until the party agrees who wears it. Tier 1 arms and plate, priced to the Session 5 curve. Full stock and effects: `items/capital-items.md`.
+
 ---
 
 ## Related Documents
 
 - `world/the-regency.md` — The governing council and its members
+- `items/capital-items.md` — Temple of the Forge and Marketplace mechanical stock
 - `locations/capital/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
 - `locations/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
 - `locations/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt

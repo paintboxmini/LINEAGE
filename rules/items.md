@@ -81,6 +81,34 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ---
 
+## Capital of Eclipseria
+
+*Full entries: `items/capital-items.md`*
+
+**Temple of the Forge (Harlan & Sera Vetch)**
+- **Temple Edge** — Weapon, +1 attack damage. ~200 gold.
+- **First Glance** — Weapon, Evade on first attack against you each combat. ~200 gold.
+- **Opening Mark** — Weapon, Scry 1 on your first attack each combat. ~200 gold.
+- **Holdfast Head** — Weapon, once/combat on successful melee: target Rooted until end of their next turn. ~200 gold.
+- **Temple Plate** — Armor, Armour 1. ~200 gold.
+- **First Blood** — Armor, start combat with Resist 1. ~200 gold.
+- **Rebuke Mail** — Armor, first successful hit against you each combat: attacker Staggered. ~200 gold.
+- **Warding Harness** — Armor, start combat with Evade and Protect 1. ~200 gold.
+- **Blind Edge** *(display, Tier 2)* — +1 damage; once/combat on clean win, Blind. ~800 gold.
+- **Thorned Cuirass** *(display, Tier 2)* — Armour 1; start combat with Thorns 1. ~800 gold.
+
+**Marketplace — Nessa Coil (Crossroads Sundries)**
+- Regional resale at markup: Luminova Leaves/Powder, Echothorn Seed, Sap Vial, Nest dock goods, Barbed Wrap. Source files keep the lower price; she charges the capital column in `items/capital-items.md`.
+- General consumables when stocked: Universal Pin, Terrormite Capsule, Echo Shell, Blood Phial, Imprint Sigil, Phase Draught.
+
+**Marketplace — Brother Alden (Resonant Goods)**
+- **Mile-Marker Ring** — carried; 1/combat, Move Position may include Rushdown. ~60 gold.
+- **Ledger Weight** — carried; 1/combat, force defender re-reveal at cost of a discard. ~45 gold.
+- **The Quiet Index** *(Artifact — Knowledge)* — start-of-combat Scry 1; 1/session read an author's intent on something written/carved. ~400 gold + a true secret archived.
+- **Cord of the Held** *(Artifact — Love/Binding)* — 1/combat prevent an ally Collapse (they stay at 1 HP); then inert until long rest. ~250 gold + a real vow.
+
+---
+
 ## Kaine (Storm Seat Artifact)
 
 *Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
@@ -120,3 +148,6 @@ A quick reference for where it makes sense for a new item to surface:
 - **Borrowers (the Hollow)** trade in goodwill, not currency — their two items are both earned, not bought.
 - **Aege / the Briarwatch farmer** hand over items as direct narrative rewards tied to a specific job finished, not shop stock.
 - **The Underground Bazaar** trades in cards, bought with cards, memories, or secrets — never coin. See above; it has no item stock and is not supposed to.
+- **Harlan & Sera Vetch (Temple of the Forge)** — capital-made weapons and armor. The honest first Tier 1 counter the gold pacing was built against.
+- **Nessa Coil (Marketplace)** — regional consumables at markup. Does not buy quest-reward or goodwill items.
+- **Brother Alden (Marketplace)** — resonant objects and Artifacts. Secrets and vows are part of the price when the object is Seat-true.
