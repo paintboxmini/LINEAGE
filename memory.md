@@ -83,9 +83,6 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 **FourthEye pipeline**
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. **The Cellar Custodians are the last link before it reaches the Bazaar** (Drew, 2026-08-05) — the deep tunnels they patrol are the same ones the drug has to move through to reach the Bazaar's hidden pocket. Who's actually dirty and how far up it goes stays unestablished, same as the Nest-side operator. See `locations/vultures-nest.md` (Masaharu, Rumors), `locations/capital/underground-bazaar.md` (Giblets), `factions/the-cellar-custodians.md` (GM Secret).
 
-**Wallows Slime** (`bestiary/wallows-slime.md`)
-*Closed 2026-08-02 — built at CTR 7 with cards.* Reaches, envelops, doesn't attack. Warm. Forcing extraction raises Seat Influence by 1; gentle extraction does not. The extraction rule stays a Seat-track question owned by `quests/the-wallows-descent.md`, not a combat one.
-
 **Warden Pazuzu / The Demon Court** (`factions/demon-court.md`)
 Pazuzu runs the Wallows labor operation for the Boar. Built his guard hierarchy as a mirror of the Regency council — demon masks instead of animal titles. Tiers: Pazuzu (apex), Overseers (armored, unarmed), chain whip guards, Initiates (yellow, entry checkpoint). Direwolves for pursuit — trained to operate in the upper threshold. Pazuzu considers himself the Boar's eighth councillor. The Regency does not acknowledge the Demon Court. Pazuzu has never gone to the deep and has not examined why.
 
