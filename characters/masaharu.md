@@ -62,7 +62,7 @@ He is most dangerous when he has had one full cycle to read the party.
 **Core cards (2 Blue / 2 Red / 4 Green):** *(fixed 2026-07-23 — this deck ran a 1-card Red overcount since before this session, 4 total against Body 3; cut ENDURE as the least identity-specific of the three Red core picks. GROUNDING STANCE and BURN BRIGHT both reinforce the immovable-Backline-sniper identity directly; ENDURE was generic Resist/heal filler that any deck could run.)*
 
 *Blue — Mind*
-- PROFILE — Scry 2; Defensive: Staggered on attacker
+- PROFILE — Scry 2; Defensive: look at the top card of the attacker's hand
 - AXIOM — Name a color, defender can't play it on their next reveal; Defensive: Name a color, attacker can't play it on their next reveal
 
 *Red — Body*

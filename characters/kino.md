@@ -42,14 +42,14 @@ Everyone can see exactly which colors are covered. That's the point — he's not
 *Blue — Mind*
 - DEFLECT — Gain Ward; Defensive: Counter Attack, only on a clean win — not a tie
 - PARADOX — Reverses the RPS outcome on reveal; Effect: Lifesteal; Defensive: Gain Ward
-- FOCUS — Scry 2, return this card to your hand; Defensive: Place top of discard on top of deck
+- FOCUS — Scry 2, return this card to your hand; Defensive: Apply Initiative Shift +2 to yourself
 - AXIOM — Name a color, defender can't play it next reveal; Defensive: Name a color, attacker can't play it next reveal
 
 *Red — Body*
 - STRIKE — Body + d8, no effect; Defensive: Deal 3 damage to attacker, unpreventable
-- BREAK — Defender reveals hand; Defensive: Counter Attack, melee only, only on a clean win — not a tie
+- BREAK — Defender reveals hand; Defensive: Counter Attack, only on a clean win — not a tie
 
 *Green — Soul*
 - DEAD RECKONING — Defender gains Weak; Defensive: Attacker gains Blind
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
-- SHADE AWAY — Gain Evade; Defensive: Next enemy must attack you on their turn if able
+- SHADE AWAY — Gain Evade; Defensive: Gain Evade

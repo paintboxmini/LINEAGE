@@ -84,8 +84,8 @@ Her core picks lean the same direction — control and information over damage (
 **Core cards (5 Blue / 3 Red / 7 Green):**
 
 *Blue — Mind*
-- PROFILE — Scry 2, then draw 1; Defensive: attacker gains Staggered
-- FOCUS — Scry 2, return this card to your hand; Defensive: place the top card of your discard pile on top of your deck
+- PROFILE — Scry 2, then draw 1; Defensive: look at the top card of the attacker's hand
+- FOCUS — Scry 2, return this card to your hand; Defensive: Apply Initiative Shift +2 to yourself
 - ANTICIPATE — draw 1 before defending, before your next turn, activates multiple times; Defensive: attacker gains Weak
 - CERTAINTY — wins ties (cancels if both sides play it)
 
@@ -96,7 +96,7 @@ Her core picks lean the same direction — control and information over damage (
 
 *Green — Soul*
 - READ — defender must reveal their hand; Defensive: name a color, discard a matching card from the attacker's hand
-- FLOW — may change position; Defensive: may change position
+- FLOW — may change position, gain Evade; Defensive: may change position, gain Evade
 - INSTINCT — gain Ward; Defensive: gain Ward
 - DELAY — apply Initiative Shift -1 to defender; Defensive: apply Initiative Shift -1 to attacker
 - SHADE AWAY — gain Evade; Defensive: gain Evade

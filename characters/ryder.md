@@ -45,8 +45,8 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 **Core cards (3 Blue / 3 Red / 3 Green):**
 
 *Blue — Mind*
-- PROFILE — Scry 2, then draw 1; Defensive: Attacker gains Staggered
-- FOCUS — Scry 2, return this card to your hand; Defensive: Place top of discard on top of deck
+- PROFILE — Scry 2, then draw 1; Defensive: Look at the top card of the attacker's hand
+- FOCUS — Scry 2, return this card to your hand; Defensive: Apply Initiative Shift +2 to yourself
 - CLIMB — Look at bottom 2 of your deck, discard any of them or place any of them on top; Defensive: Max hand size +1 until end of combat
 
 *Red — Body*
@@ -57,4 +57,4 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 *Green — Soul*
 - RENEWAL — All allies may discard 1 then draw 1, or heal 2; Defensive: Target Collapsed ally heals 6 HP
 - ADAPT — Instead of a tie, you win; Defensive: Gain Evade
-- FLOW — You may change position; Defensive: You may change position
+- FLOW — You may change position, gain Evade; Defensive: You may change position, gain Evade

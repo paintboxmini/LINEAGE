@@ -53,7 +53,7 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 *Green — Soul*
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
 - WITNESS — Target ally heals 6 HP; Defensive: target ally heals 6 HP
-- FLOW — You may change position; Defensive: you may change position
+- FLOW — You may change position, gain Evade; Defensive: you may change position, gain Evade
 
 ---
 
