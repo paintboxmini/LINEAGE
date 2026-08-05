@@ -30,4 +30,4 @@ Located by web structure — the orbs are large and well-built, visible in the r
 
 ## Culinary Note
 
-See `locations/gilded-tusk.md` — Bicolor Spider Tempura. Orange: sweet, nutty. Blue: savory. Tempura batter preserves both. Do not ask Senshi to remove the legs. The legs are the point.
+See `locations/capital/gilded-tusk.md` — Bicolor Spider Tempura. Orange: sweet, nutty. Blue: savory. Tempura batter preserves both. Do not ask Senshi to remove the legs. The legs are the point.

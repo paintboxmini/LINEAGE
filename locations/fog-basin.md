@@ -63,6 +63,6 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 
 ## Related Documents
 
-- `locations/capital.md` — the city at the basin's center
+- `locations/capital/capital.md` — the city at the basin's center
 - `items/fog-basin-items.md`
 - `quests/sour-tomatoes.md` — the Odom place; a family with no fix, and children who need somewhere to go

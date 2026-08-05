@@ -53,7 +53,7 @@ He will send the party under without ceremony. He'll tell them one thing before 
 
 ## Connections
 
-**The Dream Hunter** (`locations/underground-bazaar.md`) — comes from here, or came from here. Knows what the darkness at the edge is, or knew someone who did.
+**The Dream Hunter** (`locations/capital/underground-bazaar.md`) — comes from here, or came from here. Knows what the darkness at the edge is, or knew someone who did.
 
 *Story hook: pending — determine what pulls the party to this island before building the adventure.*
 
@@ -70,4 +70,4 @@ The casually strange details should feel lived-in, not performed. The villagers 
 ## Related Documents
 
 - `world/tonal-bible.md`
-- `locations/underground-bazaar.md` — Dream Hunter
+- `locations/capital/underground-bazaar.md` — Dream Hunter

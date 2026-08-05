@@ -190,7 +190,7 @@ See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-a
 
 - **A Favor for the Fox:** Lady Elara's agents need guards to escort a quartz shipment from Glasslight Reach through the Marketplace. *Reward: a merchant's pass for one day.*
 - **Lost Lore:** The Library of Arcane Knowledge offers a reward for a stolen "whispering book" taken by a cutpurse. *Reward: access to the book's contents.*
-- **The Prince's Appetite:** A royal page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar. *Reward: 25 gp.* See `locations/underground-bazaar.md`.
+- **The Prince's Appetite:** A royal page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar. *Reward: 25 gp.* See `locations/capital/underground-bazaar.md`.
 
 ---
 

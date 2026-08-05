@@ -1,6 +1,6 @@
 # The Weavers
 
-*Secret faction. This is not where Aurora is held. That's already established — `locations/the-wallows.md`, the Deep, guarded by the Demon Court. The Weavers are the half of the extraction nobody wrote down: what happens to what's drawn out of her once it leaves the Deep.*
+*Secret faction. This is not where Aurora is held. That's already established — `locations/capital/the-wallows.md`, the Deep, guarded by the Demon Court. The Weavers are the half of the extraction nobody wrote down: what happens to what's drawn out of her once it leaves the Deep.*
 
 ## What They Are
 
@@ -85,15 +85,15 @@ A hybrid kit — textile implements scaled up, electrical gear pressed into serv
 
 **The Boar / Demon Court.** Physically overlapping, not coordinated. The collection frames sit inside the Boar's own mine, worked by the Boar's own prisoners, under the Demon Court's own supervision — Archibald and Pazuzu have both, at one point or another, walked past the detail without a second look. What neither of them has is the rest of the picture: that the spools leaving that gallery aren't going to a scrap yard or a smelter, that a second apparatus exists to receive them, or that it answers to a member of their own council. If this ever surfaces at the table, that gap is the reveal — not that the Weavers were hidden, but that the thing hiding them was how unremarkable they looked.
 
-**The Cellar Custodians.** The Waterworks' own guild, and the Weavers' closest physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. See `factions/the-cellar-custodians.md`, `locations/the-waterworks.md`.
+**The Cellar Custodians.** The Waterworks' own guild, and the Weavers' closest physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. See `factions/the-cellar-custodians.md`, `locations/capital/the-waterworks.md`.
 
 ---
 
 ## Related Documents
 
-- `locations/the-wallows.md` — the Deep, where the thread actually originates; the Weavers never go there
+- `locations/capital/the-wallows.md` — the Deep, where the thread actually originates; the Weavers never go there
 - `factions/demon-court.md` — Pazuzu's apparatus, host to the collection detail without knowing what it collects
-- `locations/the-waterworks.md` — the citywide layer the Weavers' grid runs through
+- `locations/capital/the-waterworks.md` — the citywide layer the Weavers' grid runs through
 - `factions/the-cellar-custodians.md` — the guild that shares those tunnels
 - `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for
 - `factions/people-of-promise.md` — the faction most likely to recognize what this is, and least likely to forgive it

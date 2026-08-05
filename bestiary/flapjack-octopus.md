@@ -44,4 +44,4 @@ Ink Cloud is the reset button. Use it when the party has it pinned — it wipes 
 
 ## Culinary Note
 
-See `locations/gilded-tusk.md` — Flapjack Octopus Pancakes. The self-tenderizing produces even cooking throughout. Senshi considers this his most elegant dish.
+See `locations/capital/gilded-tusk.md` — Flapjack Octopus Pancakes. The self-tenderizing produces even cooking throughout. Senshi considers this his most elegant dish.

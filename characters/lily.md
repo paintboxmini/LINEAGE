@@ -1,6 +1,6 @@
 # Lily
 
-*The Dream-Hunter. Underground Bazaar. See `locations/underground-bazaar.md`, `locations/underground-tavern.md`.*
+*The Dream-Hunter. Underground Bazaar. See `locations/capital/underground-bazaar.md`, `locations/capital/underground-tavern.md`.*
 
 ---
 
@@ -45,6 +45,6 @@ If players have already met her in the bazaar and she has a commission open, she
 
 ## Related Documents
 
-- `locations/underground-bazaar.md` — where she's found, the Soul Economy
-- `locations/underground-tavern.md` — where she's found between hunts
+- `locations/capital/underground-bazaar.md` — where she's found, the Soul Economy
+- `locations/capital/underground-tavern.md` — where she's found between hunts
 - `characters/mortis.md`, `characters/kess.md` — the other two people this same courtesy extends to

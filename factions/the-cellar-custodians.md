@@ -58,8 +58,8 @@ Industrial, not ceremonial — everything doubles as a weapon or looks like it c
 
 ## Related Documents
 
-- `locations/the-waterworks.md` — the layer the guild runs
+- `locations/capital/the-waterworks.md` — the layer the guild runs
 - `factions/the-weavers.md` — the guild sharing their tunnels
-- `locations/the-wallows.md` — adjacent, not shared, territory
+- `locations/capital/the-wallows.md` — adjacent, not shared, territory
 - `world/geography-overview.md` — the rivers feeding the capital's intake
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding

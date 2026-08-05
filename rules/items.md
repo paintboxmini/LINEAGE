@@ -104,7 +104,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ## Underground Bazaar — no items, by design
 
-The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`locations/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
+The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`locations/capital/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
 
 There is no `items/underground-bazaar-items.md` and none is coming. Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
 

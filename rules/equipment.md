@@ -49,7 +49,7 @@ This is a budget to design against, not a formula to solve — two tier-2 items 
 
 All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night's lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.
 
-The Gilded Tusk's menu (`locations/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
+The Gilded Tusk's menu (`locations/capital/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
 
 ---
 

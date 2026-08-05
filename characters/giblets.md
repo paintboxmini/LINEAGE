@@ -1,6 +1,6 @@
 # Giblets
 
-*FourthEye stall, Underground Bazaar. See `locations/underground-bazaar.md`.*
+*FourthEye stall, Underground Bazaar. See `locations/capital/underground-bazaar.md`.*
 
 ---
 

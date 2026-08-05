@@ -53,7 +53,7 @@ See `bestiary/elder-tower-creature.md`.
 | Flapjack Octopus | Octopus body, ink sac | See `bestiary/flapjack-octopus.md` |
 | Elder Tower Creature | Tubes | DC 12 Body/Senses per tube, patience required |
 
-All three source ingredients for the Gilded Tusk's Naturalist Collection. See `locations/gilded-tusk.md`.
+All three source ingredients for the Gilded Tusk's Naturalist Collection. See `locations/capital/gilded-tusk.md`.
 
 ---
 

@@ -2,9 +2,9 @@
 
 *Semi-official. Everyone knows it exists. The authorities profit from it. No official acknowledgment it exists.*
 
-A small, hidden pocket inside the Waterworks — not a level of its own. See `locations/the-waterworks.md`.
-For the tavern, same level, see `locations/underground-tavern.md`.
-For the mine below the tavern, see `locations/the-wallows.md`.
+A small, hidden pocket inside the Waterworks — not a level of its own. See `locations/capital/the-waterworks.md`.
+For the tavern, same level, see `locations/capital/underground-tavern.md`.
+For the mine below the tavern, see `locations/capital/the-wallows.md`.
 The Pig's role in this location: see `world/the-regency.md` (Lord Archibald, the Boar).
 
 ---

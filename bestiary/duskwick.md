@@ -58,5 +58,5 @@ It doesn't press an opening it doesn't need. A clean shot gets a bite and a retr
 
 - `cards/duskwick.md` — signature cards
 - `quests/hollow-below-briarwatch.md` — a Briarwatch farmer has one as a companion
-- `locations/capital.md` — the Marketplace, after the lamps dim
+- `locations/capital/capital.md` — the Marketplace, after the lamps dim
 - `locations/vultures-nest.md` — the Market's off-hours

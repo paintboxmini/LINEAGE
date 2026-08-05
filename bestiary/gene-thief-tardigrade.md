@@ -77,4 +77,4 @@ The Adaptation Core is visible. Players who ask what they're looking at can be t
 
 ## Culinary Note
 
-See `locations/gilded-tusk.md` — Gene-Thief Tartare. Raw preparation. Flavor depends on what the specimen consumed. Senshi doesn't always know until service.
+See `locations/capital/gilded-tusk.md` — Gene-Thief Tartare. Raw preparation. Flavor depends on what the specimen consumed. Senshi doesn't always know until service.
