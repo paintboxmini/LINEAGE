@@ -60,6 +60,14 @@ The Diamond Shelf assignment goes to Initiates. Low ceiling, belly crawl, the ba
 
 ---
 
+## The Collection Detail
+
+One work assignment among many, and treated that way. A rotating handful of prisoners tend a cluster of black-crystal fixtures in a side gallery off the main corridor, coiling something that catches the light strangely and handing full spools up to a maintenance crew that collects on a set schedule.
+
+It is filed, guarded, and rotated exactly like every other labor-level detail, because as far as anyone assigned to it can tell, that's exactly what it is. Overseers already know and have decided not to think about it — the same posture the Court takes toward everything below the labor tunnels. Nobody in the chain has ever been told what the spools are. Nobody has asked. See `factions/the-weavers.md`.
+
+---
+
 ## The Direwolves
 
 Not ranked. Not masked. Used.
@@ -82,3 +90,4 @@ The Boar knows what is at the bottom of the mine. Pazuzu knows that the Boar kno
 
 - `locations/the-wallows.md` — the mine
 - `world/the-regency.md` — the Boar, the council
+- `factions/the-weavers.md` — the guild the collection detail unknowingly feeds

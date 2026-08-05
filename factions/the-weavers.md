@@ -1,6 +1,6 @@
 # The Weavers
 
-*Secret faction. Draft — Authority 3, awaiting Drew's sign-off before this moves to `factions/`. Built from `experimental/Extraction`'s brainstorm, restructured around one clarification: this is not where Aurora is held. That's already established — `locations/the-wallows.md`, the Deep, guarded by the Demon Court. The Weavers are the half of the extraction nobody wrote down: what happens to what's drawn out of her once it leaves the Deep.*
+*Secret faction. This is not where Aurora is held. That's already established — `locations/the-wallows.md`, the Deep, guarded by the Demon Court. The Weavers are the half of the extraction nobody wrote down: what happens to what's drawn out of her once it leaves the Deep.*
 
 ## What They Are
 
@@ -26,6 +26,16 @@ They keep the city bound the same way they keep it lit: as background infrastruc
 
 ---
 
+## The Collection Point
+
+The threads originate at the labor level of the Wallows, not at the Deep itself. A cluster of collection frames — squat, black-crystal fixtures bolted into the tunnel wall — sits in a side gallery off the main labor corridor, close enough to Aurora's influence for the threads to gather there on their own, far enough that the assigned workers never see anything resembling her.
+
+The Demon Court files it as a maintenance detail like any other: a rotating handful of prisoners, overseen the same as every other work assignment, running lines and clearing frames on a schedule nobody questions. The work reads as tedious and mechanical, because that's genuinely all it looks like from inside the labor level — tending fixtures, coiling something that catches the light strangely, handing full spools up to a Weaver crew that collects on a set rotation and never lingers.
+
+Neither the prisoners assigned to it nor the guards overseeing them know what the spools become once they leave the mine. See `factions/demon-court.md`.
+
+---
+
 ## Hierarchy
 
 **Line Hands.** The largest rank by far — street-level and shallow-tunnel electrical maintenance, pole work, fault response, night call-outs. They've all seen an air-ripple thread at some point and been given the standard explanation (residual charge, old city load). Most accept it. A minority carry a low-grade unease they've learned to keep to themselves.
@@ -38,7 +48,7 @@ They keep the city bound the same way they keep it lit: as background infrastruc
 
 **The Quiet Chair.** Not always the guild's public head. The only one who routinely walks the whole loom, crystal to finished tapestry, and understands what the work is doing to Aurora and to the city. Receives sealed instructions when the extraction needs to be deepened, redirected, or prepared for a larger change.
 
-**Where those instructions come from is the load-bearing secret, not the crystals.** The Chair answers to Oswald's circle — not the Boar, not the Regency as a body. This is not the same apparatus that guards the Deep: Archibald built the Wallows and the Demon Court, and neither he nor Pazuzu knows the Weavers exist as anything but a utility guild. Oswald's long game (`world/the-regency.md`, The Pendragon Attempt) needs the binding *usable*, not just contained — a grid he can eventually redirect toward his own claim, when it's ready, without the rest of the council watching him build it. Two structures now touch Aurora's extraction, unstaffed by each other, unknown to each other's leadership. Neither the Boar nor Pazuzu has ever gone looking for a second grid, because from where they stand there's no reason to think one exists.
+**Where those instructions come from is the load-bearing secret, not the crystals.** The Chair answers to Oswald's circle — not the Boar, not the Regency as a body. This is not the same apparatus that guards the Deep: Archibald built the Wallows and the Demon Court, and neither he nor Pazuzu knows the Weavers exist as anything but a utility guild running a routine maintenance detail on their labor level. Oswald's long game (`world/the-regency.md`, The Pendragon Attempt) needs the binding *usable*, not just contained — a grid he can eventually redirect toward his own claim, when it's ready, without the rest of the council watching him build it. Two structures now touch Aurora's extraction, unstaffed by each other, unknown to each other's leadership. The secret was never that the collection detail is invisible — Pazuzu has walked past it. It's that nobody who can see it has any reason to look past the cover story.
 
 ---
 
@@ -73,14 +83,18 @@ A hybrid kit — textile implements scaled up, electrical gear pressed into serv
 
 **The Masons.** Deliberately not connected, and that's worth stating outright rather than leaving it to be reinvented later. The Masons' jurisdiction is the Unheld specifically — thresholds where held reality meets what shouldn't touch it (`factions/the-masons.md`). Aurora's binding is a Seat matter, not an Unheld one; the two cosmological systems were kept explicitly distinct in the 2026-08-02 audit. Any overlap between the Weavers and the Masons is physical at most — two crews with adjacent tunnel territory — never a shared subject of expertise. A Mason has no more reason to recognize a Weaver's crystal for what it is than a Weaver has to recognize a stabilization glyph.
 
-**The Boar / Demon Court.** No relationship, and the absence is the point. Archibald owns the Bazaar and the Wallows — the collection site, guarded, singular, entirely his. He has no idea a second apparatus exists downstream of what his own mine draws up. If this ever surfaces at the table, that gap is the reveal: two of the most powerful men in the city have each been quietly certain they controlled the whole of something neither of them actually does.
+**The Boar / Demon Court.** Physically overlapping, not coordinated. The collection frames sit inside the Boar's own mine, worked by the Boar's own prisoners, under the Demon Court's own supervision — Archibald and Pazuzu have both, at one point or another, walked past the detail without a second look. What neither of them has is the rest of the picture: that the spools leaving that gallery aren't going to a scrap yard or a smelter, that a second apparatus exists to receive them, or that it answers to a member of their own council. If this ever surfaces at the table, that gap is the reveal — not that the Weavers were hidden, but that the thing hiding them was how unremarkable they looked.
+
+**The Cellar Custodians.** The Waterworks' own guild, and the Weavers' closest physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. See `factions/the-cellar-custodians.md`, `locations/the-waterworks.md`.
 
 ---
 
 ## Related Documents
 
 - `locations/the-wallows.md` — the Deep, where the thread actually originates; the Weavers never go there
-- `factions/demon-court.md` — Pazuzu's apparatus, unaware this exists
+- `factions/demon-court.md` — Pazuzu's apparatus, host to the collection detail without knowing what it collects
+- `locations/the-waterworks.md` — the citywide layer the Weavers' grid runs through
+- `factions/the-cellar-custodians.md` — the guild that shares those tunnels
 - `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for
 - `factions/people-of-promise.md` — the faction most likely to recognize what this is, and least likely to forgive it
 - `factions/the-masons.md` — deliberately not related; see above

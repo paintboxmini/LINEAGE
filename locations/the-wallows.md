@@ -19,8 +19,8 @@ Aurora is bound at the bottom of this mine. The Boar built his labor operation d
 
 | Layer | What it is |
 |-------|-----------|
-| **Bazaar & Tavern level** | Upper mouth of the mine, both at the same depth. Magic misbehaves. See `locations/underground-bazaar.md`, `locations/underground-tavern.md`. |
-| **Labor level** | The Demon Court's domain — the capital's prison in practice, though nobody official calls it that. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end. |
+| **The Waterworks** | Citywide utility layer, not specific to the mine — runs beneath the entire capital. The Bazaar & Tavern is a small, hidden pocket inside it, not its own level. See `locations/the-waterworks.md`, `locations/underground-bazaar.md`, `locations/underground-tavern.md`. |
+| **Labor level** | The Demon Court's domain — the capital's prison in practice, though nobody official calls it that. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end, and a separate collection detail feeding the Weavers' grid. |
 | **The Threshold** | Where the warping starts, and where the capital's actual jurisdiction stops meaning anything. Sticky echoes. Slimes. The cave reaches. |
 | **The Deep** | Aurora. Not an encounter. Something else. |
 
@@ -37,6 +37,8 @@ The Demon Court does not discuss what lies below the labor tunnels. Initiates le
 **Entry from the bazaar:** through the tavern floor, down a guarded shaft. The Initiates run this checkpoint. First thing anyone coming up sees is yellow.
 
 **The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended.md`.
+
+**The collection detail** — a side gallery off the main corridor, unrelated to the Shelf. A rotating handful of prisoners tend a cluster of black-crystal fixtures bolted to the wall, coiling something that catches the light strangely and handing full spools up to a maintenance crew that collects on a set rotation. Filed and guarded like any other work assignment. Nobody working it, or watching it, knows what the spools actually are. See `factions/the-weavers.md`.
 
 ---
 
@@ -89,8 +91,10 @@ Players who reach the deep will not find a fight. They will find the love of the
 ## Related Documents
 
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy
-- `locations/underground-bazaar.md` — above
-- `locations/underground-tavern.md` — transitional layer
+- `locations/the-waterworks.md` — the citywide layer above, hiding the bazaar and tavern
+- `locations/underground-bazaar.md` — hidden within the Waterworks
+- `locations/underground-tavern.md` — hidden within the Waterworks; transitional layer
+- `factions/the-weavers.md` — the collection detail on the labor level
 - `characters/kess.md` — the rescue attempt whose echo lives here
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding
 - `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
