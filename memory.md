@@ -75,9 +75,6 @@ Two engines, both Python, no dependencies: `engine.py` (1v1 duels, `run.py`) and
 Five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. **"What he became" is now answered: he is the Scar** (`world/the-scar.md`, GM Secret) — Drew's call, 2026-08-02. The Gluttony Abomination thread is closed by that answer; the Abomination is a fallen priest and nothing else.
 Still open, and still Drew's: what the Scar wants, whether anything of Pendragon remains in it, why it attends this party, and whether the council turned on him or he paid the full price. Don't develop those without him.
 
-**Roadhouse → Turnroot Weald hook** — *trimmed 2026-08-01 audit; the full backstory, both tellings, and the GM Secret now live properly in `characters/aege.md` (built out further tonight with a real combat kit), not just this thread's own summary.*
-Aege (the Carrion Guide) guides the party from Vulture's Nest toward Briarwatch, tells them at the Roadhouse about her family — something's gone wrong deep in the Weald, roots turned restless — then delivers them to Briarwatch, hands over a Carrion Feather, and continues on alone to the Turnroot Weald. See `characters/aege.md` for the maintained version; `locations/vultures-nest.md` for the Session-1 routing specifics.
-
 **B thread — Quartermaster Voss**
 Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the FourthEye thread. Don't develop until party pulls on it.
 
