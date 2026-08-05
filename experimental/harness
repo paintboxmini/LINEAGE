@@ -107,6 +107,8 @@ Missing propagation target
 Authority-level uncertainty
 Everything else should merge.
 
+"Integrate approved proposals with zero regressions."
+
 Another thing I'd consider is having Claude produce an Integration Report instead of a review.
 For example:
 
