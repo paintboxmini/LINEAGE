@@ -156,8 +156,6 @@ Secondary hook, only activates if party explored the Roadhouse barracks and foun
 **FourthEye pipeline**
 Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. See `locations/vultures-nest.md` (Masaharu, Rumors) and `locations/capital/underground-bazaar.md` (Giblets).
 
-**Kess & Moth — Bazaar recurring characters** — *trimmed 2026-08-01 audit; both now have their own character files (`characters/kess.md`, `characters/moth.md`), which have grown past this thread's summary.* Real, unfixed cross-file staleness found while checking: `characters/kess.md` still says Moth is "not yet built out with his own file — see `locations/capital/underground-bazaar.md`," which is no longer true now that `characters/moth.md` exists with real content. Flagged here, not fixed — a one-line correction in `characters/kess.md`, not something this audit expanded scope to touch. `locations/capital/underground-bazaar.md`'s own "Recurring Visitors — Moth & Kess" section may also now duplicate rather than summarize, same pattern already resolved for Aege/Corvel's location-vs-character-file split — worth the same trim next time that file is touched directly.
-
 **The Descended** (`bestiary/the-descended.md`)
 Former humans from the deep. Range through cave system, upper limit is Diamond Shelf. Crouch-run in open passages, seamless transition to belly-slither at shelf entrance. Primary drive: drag things deeper. Collapsed characters are prioritized — dragged toward fissure, DM judges pace. Demon Court uses them as deterrent through whisper/fear — nobody knows what they are, only what happens. Stat block: Mind 2 / Body 3 / Soul 1, HP 15.
 
@@ -193,10 +191,9 @@ Last survivor of the Thessians — nomadic healers who transferred and witnessed
 **Senshi / The Naturalist Collection** (`locations/capital/gilded-tusk.md`)
 All 12 bestiary entries written. Senshi is Thessian — horns hidden under chef's hat at all times, short-tempered, food is sacred.
 - Non-combat entries complete: unity-jelly, phantom-tail-slug, high-altitude-bat, emerald-frog, bicolor-spider, sapphire-ant
-- Hazard entries complete: future-lock-wasp (deck contamination, 20min removal after drawn, Body/Soul save), death-ball-sponge (Rooted floor trap, DC 13 spot)
+- Hazard entries complete: future-lock-wasp (direct hand-size reduction via the Future-Lock X keyword, no floor at 2, shipped 2026-08-04 — see `rules/card-glossary.md`), death-ball-sponge (Rooted floor trap, DC 13 spot)
 - Full stat blocks complete: gene-thief-tardigrade, bone-collector, flapjack-octopus. *(Elder Tower Creature deliberately has none — its own file opens "Not a combat encounter. An environmental presence." It was listed here as complete, which was simply wrong; corrected 2026-08-02.)*
 - Environmental entries complete: elder-tower-creature (harvest tubes, patience puzzle)
-- **Pending:** Future-Lock status card needs glossary entry before canon — new keyword, requires approval. *(Confirmed still open, 2026-08-01 — zero mentions of Future-Lock anywhere in `rules/card-glossary.md`.)*
 - Bone Collector wired to Gilded Tusk (Senshi commission) and Turnroot Weald (Web-Forest POI)
 - Future-Lock Wasp wired to Turnroot Weald (Hanging Gallery POI)
 - Abyssal Trench created (`locations/abyssal-trench.md`) — oceanic sub-area with sponge hazard, octopus, elder towers
