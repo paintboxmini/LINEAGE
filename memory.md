@@ -86,9 +86,6 @@ Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the baz
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
-**Canille** (`experimental/canille.md`)
-Island village in a lake northeast of Vulture's Nest. Research colony founded by scientists attempting to create sentient life. Three generations of scientists and cubs. Cubs are quadrupedal, pug-faced, ~120lbs, fully furred. White smiling masks on hooks by every door — ceremony, not disguise. Key characters: Hess (oldest founder, knows the answer, won't say it), Cob (third-gen cub, asks the questions nobody will answer). Not yet canon.
-
 **Road encounters**
 Day 1 travel between Vulture's Nest and Briarwatch is now the Briarwoods. Jackrabbits and Briar Scratchers are present. No formal random encounter table yet — DM discretion. Shifting Burrow (`quests/shifting-burrow.md`) and Settling Stones (`quests/settling-stones.md`) are the two mirrored surface entrances into the Hollow Below Briarwatch (Well Property sinkhole / Watchtower Ruins), not road encounters proper — a party can enter one and exit the other. Briarwatch Jackalopes are now a general field encounter, not tied to either entrance.
 
