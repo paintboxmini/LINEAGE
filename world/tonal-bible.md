@@ -37,6 +37,8 @@ Farmers in Briarwatch deal with sinkholes and missing Fenwool. The limestone und
 **Sacrifice costs something real.**
 Not narrative cost — actual weight. Characters lose things they don't get back. The world doesn't balance the scales.
 
+**Eclipseria's people do this to themselves.** The most disturbing thread in this world isn't external monsters — it's what its own people choose, routinely, without being forced to. Self-inflicted suffering isn't an occasional dark beat here; it's close to a baseline fact of how people cope, worship, bargain, and survive. The Weavers keep repairing an extraction they know is wrong because the alternative harms people who never agreed to any of it either. The Underground Tavern runs on pure barter — memories, years of life, pieces of identity, traded on purpose, for relief that doesn't cure anything. The People of Promise treat lowering themselves into the Unheld as worship, not risk. Horror and tragedy are the two registers this repo tends to underplay — when building toward either, push harder, not softer. *(Drew, `experimental/The Unheld`, 2026-08-04.)*
+
 **The child's logic has access the adult doesn't.**
 Things that seem inexplicable from a rational frame are obvious from a mythic one. Build locations and creatures that reward this kind of reading.
 
