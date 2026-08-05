@@ -16,6 +16,8 @@ The sacred and the mundane are not separated. A marketplace is a temple. A meal 
 
 **Wild magic** — The People of Promise use blood rituals, songs, and other uncontrolled methods. Where the Masons constrain magic, the People of Promise open to it.
 
+**Tricky language** — Some of what sounds like doctrine is a working. The line at the top of this page reads as a description of the Unheld until it's heard closely: the second half never actually says "of it." Spoken with intent, it isn't describing anything — it's a wish, aimed wherever the speaker points it, phrased so its own grammar refuses to stay confined to the subject it appears to be about. This is how the People of Promise try to draw the Unheld's influence into the ordinary world without going anywhere near the coast: not through ritual alone, through sentences built to slip their leash. Uncontrolled like everything else they do — nobody claims to know how often it actually works, or on what.
+
 **Ritual bathing** — The central communal practice, and the community's defining transgression. Nobody else in the known world touches the Unheld. No fishing, no sailing, no wading at the grey shore — the edge of the world is treated as exactly that. The People of Promise break this convention on purpose, publicly, as worship.
 
 The bathing must happen at the coast. Unheldness does not cross the coastline — water carried inland arrives ordinary, and no vessel preserves it. To touch the Unheld, you go to the Unheld. The community treats this as doctrine rather than inconvenience: the Promise comes to no one; you descend to it.
