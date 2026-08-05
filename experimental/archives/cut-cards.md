@@ -100,7 +100,7 @@ Attack: Soul + d4
 Effect: Gain Evade. All allies in your position gain Evade.
 Defensive Bonus: Move to any position.
 Range: Both
-*Cut: Flagged — mass Evade for position-mates is strong enough that it needs Drew's eyes before entering the Oracle. Not a balance failure, a deliberate hold.*
+*Cut: Ruled on by Drew, 2026-08-05 — fine at creature/Borrower power level, too strong for players. Stays out of the Oracle (or any player-facing pool) as written; not a balance failure at the creature level, a player-facing power ceiling issue specifically.*
 
 ---
 
