@@ -24,7 +24,7 @@ Range: Both
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d6
 Effect: Move target enemy to backline
 Defensive Bonus: Move target to frontline
 Range: Ranged
@@ -34,7 +34,7 @@ Range: Ranged
 
 **PREDICT**
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d6
 Effect: Defender gains Sealed
 Defensive Bonus: Attacker gains Sealed
 Range: Melee
@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d4
 Effect: Discard 2, draw 2
-Defensive Bonus: Gain Deadly
+Defensive Bonus: Scry 1
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -267,7 +267,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, then draw 1 card
-Defensive Bonus: Attacker gains Staggered.
+Defensive Bonus: Look at the top card of the attacker's hand.
 Range: Ranged
 *"He already knew what you'd reach for."*
 
@@ -276,7 +276,7 @@ Range: Ranged
 **SLIPSTREAM**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Anchored — whenever an ally passes through your position in the initiative order, draw a card.
+Effect: Anchored — the next time an ally passes through your position in the initiative order, draw a card.
 Defensive Bonus: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
@@ -387,7 +387,7 @@ Range: Ranged
 
 **DEAD END**
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d6
 Effect: Defender gains Rooted.
 Defensive Bonus: Attacker gains Rooted.
 Range: Ranged

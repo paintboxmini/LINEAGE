@@ -734,16 +734,23 @@ def _study_effect(engine, me, foe):
         c = me.draw_one(engine.rng)
         if c:
             me.hand.append(c)
+# Reworked 2026-08-04 (Drew, "take a swing"): was Gain Deadly, an unrelated
+# combat keyword next to a pure hand-cycling Effect. Scry 1 keeps both halves
+# of the card about seeing/shaping your own deck, same family as ALIGN/PROFILE.
 def _study_defense(engine, me, foe):
-    me.deadly += 1
+    engine.scry(me, me, 1)
 
 def _profile_effect(engine, me, foe):
     engine.scry(me, me, 2)
     c = me.draw_one(engine.rng)            # buffed: scry 2, then draw 1
     if c:
         me.hand.append(c)
+# Reworked 2026-08-04 (Drew, "take a swing"): was Attacker gains Staggered, an
+# unrelated status grant next to a card-manipulation Effect. Now matches its
+# own flavor ("He already knew what you'd reach for") instead of fighting it.
+# Pure info, no state change — same precedent as _read_effect's hand-reveal.
 def _profile_defense(engine, me, foe):
-    apply_staggered(foe)                   # skips their next attack or defend, then clears itself
+    pass
 
 def _refract_effect(engine, me, foe):
     apply_weak(foe)                        # defender gains Weak
@@ -779,11 +786,15 @@ def _slipstream_defense(engine, me, foe):
     me.evade += 1
 
 def _slipstream_effect(engine, me, foe):
-    # "Whenever an ally passes through your position in the initiative order"
-    # needs the wheel's own path-walk (_apply_shift/_rotate_current) to know
-    # when that happens — no hook for it yet, left unmodeled, same as STARING
-    # CONTEST's positional trigger. What IS real and tested: the ongoing entry
-    # itself, and that it's correctly cleared on Collapse (_clear_ongoing_on_collapse).
+    # Reworded 2026-08-04 (Drew): "whenever" -> "the next time," so the trigger
+    # reads as a bounded, once-per-check event rather than a continuous listener
+    # — the glossary's own Anchored entry fixes the cadence at "the start of
+    # each of your turns," and "whenever" contradicted that. Still unmodeled:
+    # "the next time an ally passes through your position in the initiative
+    # order" needs the wheel's own path-walk (_apply_shift/_rotate_current) to
+    # know when that happens — no hook for it yet, same as STARING CONTEST's
+    # positional trigger. What IS real and tested: the ongoing entry itself,
+    # and that it's correctly cleared on Collapse (_clear_ongoing_on_collapse).
     me.ongoing.append({'kind': 'slipstream', 'owner': me, 'anchor': me.position})
 
 def _dig_in_effect(engine, me, foe):
@@ -1115,8 +1126,14 @@ def _recover_effect(engine, me, foe):
     engine.heal(me, 3)
 _recover_defense = _recover_effect   # identical text both sides
 
+# Reworked 2026-08-04 (Drew: "needs reworked") — reposition-only was the
+# weakest effect in the file on its biggest die, no stated cost or payload.
+# Added Evade: keeps FLOW's self-mobility niche distinct from SWAY (which
+# moves the DEFENDER), uses only existing keywords, and "water finds its way
+# without forcing" fits Evade as well as any keyword in the game.
 def _flow_effect(engine, me, foe):
     me.position = 'backline' if me.position == 'frontline' else 'frontline'
+    me.evade += 1
 _flow_defense = _flow_effect
 
 # SWAY (Oracle, 2026-08-01, shipped then as EDDY; renamed 2026-08-03 for a
@@ -2233,13 +2250,13 @@ def build_cards():
     add("TRAMPLE", 'R', 'body', 'melee', 6,
         effect=_trample_effect, defense=_trample_defense)
     add("BREAK", 'R', 'body', 'melee', 6, defense=_break_defense)
-    add("CHARGE", 'R', 'body', 'melee', 6, effect=_charge_move, defense=_charge_move)
+    add("CHARGE", 'R', 'body', 'both', 6, effect=_charge_move, defense=_charge_move)
     # --- Expanded set: Blue ---
     add("INTERRUPT", 'B', 'mind', 'melee', 4,
         effect=_interrupt_effect, defense=_interrupt_defense)
     add("SHARPEN", 'B', 'mind', 'both', 4, effect=_sharpen_effect, defense=_sharpen_defense)
     add("CHAIN", 'B', 'mind', 'ranged', 4, effect=_chain_effect, defense=_chain_defense)
-    add("CALCULATE", 'B', 'mind', 'ranged', 8,
+    add("CALCULATE", 'B', 'mind', 'ranged', 6,
         effect=_calculate_effect, defense=_calculate_defense)
     add("STUDY", 'B', 'mind', 'ranged', 4, effect=_study_effect, defense=_study_defense)
     add("PROFILE", 'B', 'mind', 'ranged', 6, effect=_profile_effect, defense=_profile_defense)
@@ -2262,7 +2279,7 @@ def build_cards():
     # Missing simple core cards (Patient Host deck-fill)
     add("STILLNESS", 'B', 'mind', 'ranged', 6,
         effect=_stillness_effect, defense=_stillness_defense)
-    add("PREDICT", 'B', 'mind', 'melee', 8)   # Sealed unmodeled — no item-usage mechanic exists in the sim
+    add("PREDICT", 'B', 'mind', 'melee', 6)   # Sealed unmodeled — no item-usage mechanic exists in the sim
     add("FOCUS", 'B', 'mind', 'ranged', 6, effect=_focus_effect, defense=_focus_defense)
     add("UNDERSTANDING", 'B', 'mind', 'ranged', 8,
         damage=_understanding_dmg, defense=_understanding_defense)
@@ -2370,7 +2387,7 @@ def build_cards():
         effect=_retort_effect, defense=_retort_defense)
     add("VEIL", 'B', 'mind', 'ranged', 6,
         effect=_veil_effect, defense=_veil_defense)
-    add("DEAD END", 'B', 'mind', 'ranged', 8,
+    add("DEAD END", 'B', 'mind', 'ranged', 6,
         effect=_dead_end_effect, defense=_dead_end_defense)
     add("DUST", 'G', 'soul', 'melee', 4,
         effect=_dust_effect, defense=_dust_defense)

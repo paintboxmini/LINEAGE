@@ -36,8 +36,8 @@ Range: Both
 **FLOW**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: You may change position
-Defensive Bonus: You may change position
+Effect: You may change position. Gain Evade.
+Defensive Bonus: You may change position. Gain Evade.
 Range: Ranged
 *"Water finds its way without forcing."*
 

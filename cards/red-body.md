@@ -17,7 +17,7 @@ RED — BODY
 Attack: Body + d6
 Effect: You and the defender move into frontline
 Defensive Bonus: You and the attacker move into frontline
-Range: Melee
+Range: Both
 *"Momentum carries those brave enough to commit."*
 
 ---
@@ -237,7 +237,7 @@ Range: Both
 RED — BODY
 Attack: Body + d6
 Effect: Defender reveals hand.
-Defensive Bonus: Counter Attack, melee only. Only on a clean win — not a tie.
+Defensive Bonus: Counter Attack. Only on a clean win — not a tie.
 Range: Melee
 *"Every defense has a seam."*
 
