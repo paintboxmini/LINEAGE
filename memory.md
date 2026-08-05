@@ -18,6 +18,8 @@
 
 ## Recently shipped (post-review queue)
 
+**[2026-08-05] A1 — A fourth measured distance in `bestiary/skeinwing.md` reworded, found incidentally while fixing the other three.** "A wingspan of six or seven feet" → "wider than a grown man is tall" — never caught by `verify.py`'s `check_distances`, since its regex only matches digit-based numbers or specific large number-words, not spelled-out small ones like "six or seven." The gap in the regex itself wasn't touched — just the one line it happened to miss.
+
 **[2026-08-05] A1 — The three creature-size distance exemptions reworded away; `verify.py`'s hand-list removed.** Drew's call, closing the concern from `unresolved-concerns.md` (the strict distance ban's one open question) rather than leaving it as a permanent hand-list. `bestiary/tollbird.md` and `quests/the-larder-fence.md`'s "stands close to a meter tall" → "stands about waist-height at the shoulder"; tollbird.md's wingspan "just over two [meters]" → "wider than a grown man's outstretched arms"; `bestiary/skeinwing.md`'s "nothing lunges at six thousand feet" → "nothing lunges up where it flies." All three keep their original meaning (relative size/altitude) without a number. `DISTANCE_EXEMPT` and its lookup removed from `agent-tools/verify.py` — the check now passes with zero exemptions rather than three hand-held ones. Closes the matching `unresolved-concerns.md` entry.
 
 *Cleared 2026-08-05 — Drew requested a sync pass and reviewed the queue in summary before clearing. Grouped by thread, oldest to newest; full reasoning for every item lives in Standing Reasoning and git history regardless of this line being cleared.*
