@@ -2,6 +2,8 @@
 
 *Subculture. Based in Glasslight Reach.*
 
+*"Nothing can be spoken of it. Anything that can be spoken cannot be understood."*
+
 ## Philosophy
 
 The Unheld is not a threat. It is infinite potential — the origin of all things and the destination of all things.
