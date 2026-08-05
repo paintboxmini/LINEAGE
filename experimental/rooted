@@ -48,3 +48,7 @@ You may change positions without spending your action — a free move in additio
 
 **Short form for glossary:**  
 *Lasts until the end of your current turn (or the end of your next turn if gained off-turn). Fades whether used or not.*
+
+Body ↔ max HP rate
+Character creation / HP formula: HP = (3 × Body) + 6 → each Body point is worth 3 HP.
+Glossary Stat Change: “each point of Body changes your maximum HP by 2.”this is wrong change it to 3.
