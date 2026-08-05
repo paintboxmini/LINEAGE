@@ -18,3 +18,28 @@ Effect: Anchored — You ignore any ability that forces you to move positions.
 Defensive Bonus: Gain Resist.
 Range: Both
 *"Stand where you choose. Let the world move instead."*
+
+
+---
+
+**BERSERKER’S PRICE — duration clarification**
+
+Effect: Cannot defend until your next turn.  
+Intent: You go all-in and leave yourself open. The restriction lasts from resolution until the start of your next turn. You cannot defend against any attacks in that window.
+
+---
+
+**PATIENCE — Defensive Bonus clarification**
+
+Defensive Bonus: Anchored — Target ally heals 3 HP.  
+Intent: Anchored grants a benefit for as long as *you* do not move. While you remain Anchored, the ally heal continues to apply on its trigger (same ongoing-support pattern as ROOTED OATH). It is not a one-shot heal.
+
+---
+
+**Quick — duration clarification**
+
+Glossary should read:  
+**Quick**  
+You may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it. Quick fades at the end of your turn whether you used the free move or not.
+
+Current text can be read as “keep Quick indefinitely until you spend the free move.” That is not the intent. It is a same-turn grant only.
