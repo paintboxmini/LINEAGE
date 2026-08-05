@@ -95,3 +95,35 @@ routine changes merge automatically,
 anything structurally risky opens a review,
 
 constitutional changes require you.
+
+almost formalize a presumption of integration.
+Something like:
+Experimental content approved by Drew is presumed ready for integration. The Canon Gate should integrate by default. Escalate only when one of the following occurs:
+Canon conflict
+Constitutional rule change
+Ambiguous placement
+Cross-system contradiction
+Missing propagation target
+Authority-level uncertainty
+Everything else should merge.
+
+Another thing I'd consider is having Claude produce an Integration Report instead of a review.
+For example:
+
+Integration Report
+
+✓ No canonical conflicts.
+
+Affected files:
+- capital.md
+- economy.md
+- glossary.md
+
+Propagation:
+- Added Guild Permit terminology
+- Updated Bazaar references
+- Added permit costs to economy table
+
+Status:
+READY TO MERGE
+That takes Claude out of the role of "creative reviewer" and puts them squarely into "repository maintainer."
