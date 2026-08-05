@@ -75,3 +75,21 @@ So: no more silent fantasy-breakers at the same scale as Rooted. What’s left i
 
 New rule:
 “Until your next turn” (no start/end specified) always means the effect fades at the start of your next turn.
+
+**Rooted — timing clarification (copy-paste)**
+
+**Rooted**  
+Cannot voluntarily change position until the **end of your next turn**.  
+Forced repositioning (Rushdown, Pull, Push, and similar) is unaffected.
+
+**Timing**
+- Applied immediately on resolution.
+- Lasts through the rest of the current round and the afflicted character’s **entire next turn**.
+- Fades at the **end** of that next turn.
+- Does **not** fade at the start of their next turn (that reading made the keyword inert).
+
+**Anchored + Rooted (e.g. GRAPPLE)**  
+If an effect is Anchored and re-applies Rooted to a fixed original target: at the start of each of your turns while you remain Anchored, that same target gains Rooted again (full duration: until the end of *their* next turn). Moving ends Anchored and stops further re-application.
+
+**Card text**  
+Cards that grant Rooted should say “gains Rooted” only. Do not restate duration on the card; the glossary owns it.
