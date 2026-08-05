@@ -328,8 +328,8 @@ Range: Both
 **UNMAKE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Remove every Positive Status Effect from the defender, ignoring Ward. Add 2 Exhaust cards to your hand.
-Defensive Bonus: Remove every Positive Status Effect from the attacker, ignoring Ward. Add 2 Exhaust cards to your hand.
+Effect: Remove every Positive Status Effect from the defender. Add 2 Exhaust cards to your hand.
+Defensive Bonus: Remove every Positive Status Effect from the attacker. Add 2 Exhaust cards to your hand.
 Range: Ranged
 *"Everything they built stops mattering at once."*
 

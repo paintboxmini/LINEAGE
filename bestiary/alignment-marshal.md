@@ -5,7 +5,7 @@
 **Mind 2 / Body 4 / Soul 1 — HP 18**
 **Creature Threat Rating:** 7
 
-**Deck (7 — 2 Blue / 4 Red / 1 Green):** TARGETING LOCK, FAULT EXPLOIT *(blue)* · CORRECTION LOAD, IRON GRIP, CERTAIN CONTACT, REND *(red)* · SYSTEM PURGE *(green)*
+**Deck (7 — 2 Blue / 4 Red / 1 Green):** TARGETING LOCK, FAULT EXPLOIT *(blue)* · CORRECTION LOAD, IRON GRIP, CERTAIN STRIKE, REND *(red)* · SYSTEM PURGE *(green)*
 
 For encounter structure and reveal phases, see `quests/war-engine.md`.
 

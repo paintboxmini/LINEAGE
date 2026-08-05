@@ -536,7 +536,7 @@ class Card:
         # engines) rather than a name-specific special case, in case a
         # future card wants the same shape.
         self.returns_to_hand = returns_to_hand
-        # CERTAIN CONTACT: a defense this specific attack ignores outright —
+        # CERTAIN STRIKE: a defense this specific attack ignores outright —
         # any subset of {'evade', 'blind', 'resist'}. Checked directly at
         # each relevant point (the Blind/Evade checks in attack(), the
         # Resist reduction in deal()) rather than a new keyword, since this

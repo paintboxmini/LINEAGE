@@ -14,7 +14,7 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 **Creature Threat Rating:** 15
 
 
-**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, EXPOSED, EVEN CHURN *(blue)* · SUNDER, CERTAIN CONTACT, REND, RHYTHM BREAK, IDLE TO ENGAGE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, LOW GREY HAZE *(green)*
+**Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, EXPOSED, EVEN CHURN *(blue)* · SUNDER, CERTAIN STRIKE, REND, RHYTHM BREAK, IDLE TO ENGAGE *(red)* · WITHER, LEVEL THE FIELD, VOID, BIND, LOW GREY HAZE *(green)*
 ---
 
 ## Passives

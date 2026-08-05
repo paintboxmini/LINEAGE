@@ -393,7 +393,7 @@ Range: Melee
 
 ---
 
-**CERTAIN CONTACT**
+**CERTAIN STRIKE**
 RED — BODY
 Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.

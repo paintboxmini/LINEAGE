@@ -1773,13 +1773,14 @@ def _overcommit_dmg(engine, me, foe):
 # unless noted. Each creature's own card file gets a superseded-by note
 # rather than duplicating the text twice.
 
-# CERTAIN CONTACT (was NEVER LIFTED, Wall-Reader) — Drew's addition on
-# promotion: also ignores Resist and Blind, not just Evade. `ignores` is a
-# small, generic Card-level property (checked directly at the Blind/Evade
-# checks in attack() and the Resist reduction in deal()) rather than a new
-# keyword, since this describes the ATTACK itself, not a status granted to
-# anyone.
-def _certain_contact_defense(engine, me, foe):
+# CERTAIN STRIKE (was NEVER LIFTED, Wall-Reader; renamed from CERTAIN CONTACT
+# 2026-08-04 — the naming/mechanics audit flagged "Contact" reading melee on a
+# card that's correctly Ranged) — Drew's addition on promotion: also ignores
+# Resist and Blind, not just Evade. `ignores` is a small, generic Card-level
+# property (checked directly at the Blind/Evade checks in attack() and the
+# Resist reduction in deal()) rather than a new keyword, since this describes
+# the ATTACK itself, not a status granted to anyone.
+def _certain_strike_defense(engine, me, foe):
     me.resist += 1
 
 # HEAVE AND HAUL (was TUNNEL KNOWLEDGE, Borrower) — Effect always targets
@@ -1895,7 +1896,7 @@ def _rhythm_break_defense(engine, me, foe):
 
 # STILL COUNTING (Wall-Reader, `cards/wall-reader.md`) — found unregistered
 # entirely (2026-07-29 dice-pass audit): real canon text, never wired into
-# the sim. Unlike RHYTHM BREAK/CERTAIN CONTACT, Wall-Reader's other two
+# the sim. Unlike RHYTHM BREAK/CERTAIN STRIKE, Wall-Reader's other two
 # cards, this one wasn't promoted to core — stays a signature card here.
 # "Have not changed position this combat" is cumulative, not a one-turn
 # window like RHYTHM BREAK's `_repositioned_since_last_turn` — needed the
@@ -2322,8 +2323,8 @@ def build_cards():
     add("OVERDRIVE", 'R', 'body', 'melee', 6,
         effect=_overdrive_effect, defense=_overdrive_defense)
     # Bestiary promotions
-    add("CERTAIN CONTACT", 'R', 'body', 'ranged', 8,
-        defense=_certain_contact_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
+    add("CERTAIN STRIKE", 'R', 'body', 'ranged', 8,
+        defense=_certain_strike_defense, ignores=frozenset({'evade', 'resist', 'blind'}))
     add("HEAVE AND HAUL", 'G', 'soul', 'both', 8,
         effect=_heave_and_haul_effect, defense=_heave_and_haul_defense)
     add("HEAVE", 'R', 'body', 'melee', 8,
@@ -2935,7 +2936,7 @@ CARD_TAGS = {
     }),
     "keyword:resist:self": frozenset({
         "PAIN IS FUEL", "BRACE", "ALIGN", "INTERCEPT", "SYNCHRONY",
-        "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN CONTACT",
+        "GROUNDING STANCE", "ENDURE", "NO VACANCY", "CERTAIN STRIKE",
         "RHYTHM BREAK", "STILL COUNTING", "DARK CORRIDOR", "ROLLOUT",
         "TABLE STAKES", "DIG IN", "SEED", "FORESEEN", "STEADFAST", "HOLD FAST",
     }),
