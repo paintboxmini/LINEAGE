@@ -75,8 +75,6 @@ Two engines, both Python, no dependencies: `engine.py` (1v1 duels, `run.py`) and
 Five original council members + Pendragon attempted Seat of Love/Binding, failed, Aurora held. **"What he became" is now answered: he is the Scar** (`world/the-scar.md`, GM Secret) — Drew's call, 2026-08-02. The Gluttony Abomination thread is closed by that answer; the Abomination is a fallen priest and nothing else.
 Still open, and still Drew's: what the Scar wants, whether anything of Pendragon remains in it, why it attends this party, and whether the council turned on him or he paid the full price. Don't develop those without him.
 
-**Gluttony Abomination** — *thread closed 2026-08-02.* Mechanics adapted at CTR 17; the Pendragon connection it was carrying is resolved the other way (Pendragon is the Scar), so the Abomination is simply a fallen priest of the Abyssal Ruins cathedral. Nothing about it is pending.
-
 **Roadhouse → Turnroot Weald hook** — *trimmed 2026-08-01 audit; the full backstory, both tellings, and the GM Secret now live properly in `characters/aege.md` (built out further tonight with a real combat kit), not just this thread's own summary.*
 Aege (the Carrion Guide) guides the party from Vulture's Nest toward Briarwatch, tells them at the Roadhouse about her family — something's gone wrong deep in the Weald, roots turned restless — then delivers them to Briarwatch, hands over a Carrion Feather, and continues on alone to the Turnroot Weald. See `characters/aege.md` for the maintained version; `locations/vultures-nest.md` for the Session-1 routing specifics.
 
