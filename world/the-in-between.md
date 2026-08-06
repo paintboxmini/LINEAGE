@@ -83,5 +83,6 @@ One thing in the In-Between is not displaced, not passing through, and not expla
 - `world/the-unheld.md` — the other thinness, and the coastline that stays hard
 - `world/geography-overview.md` — the hubs, the two-day standard, the maintained roads
 - `locations/roadhouse.md` — a haven, and what is paying for it
+- `locations/apnea.md` — the same thinness, contained and tended rather than diffuse, and what happens when the tending falls behind
 - `world/the-scar.md` — the one persistent presence here
 - `rules/the-summons.md` — the Oracle's account of the same three Cuts, in her own voice

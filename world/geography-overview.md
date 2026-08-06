@@ -30,8 +30,9 @@ Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — G
 | The Coil | (12, −7) |
 | Canille | (10, −3) |
 | Pneum | (11, −4) |
+| Apnea | (4, −10) |
 
-Rough estimates, not confirmed the way the triangle and its edges are — placed from what each location's own file already says (Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"), not from anything more precise. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the old open question — whether they share one lake or sit in separate ones — exactly as open as it was. Clayhollow, Veldmire, and Weatherheart Vale have no stated position anywhere in the repo and aren't placed here; inventing coordinates for them would be inventing geography, not recording it. RavenHold and Island in a Ship are deliberately unmappable by design and are excluded on purpose, not by oversight.
+Rough estimates, not confirmed the way the triangle and its edges are — placed from what each location's own file already says (Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"; Apnea "south-southwest of Vulture's Nest," its own lake, deliberately apart from the Canille/Pneum/Coil cluster), not from anything more precise. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the old open question — whether they share one lake or sit in separate ones — exactly as open as it was. Clayhollow, Veldmire, and Weatherheart Vale have no stated position anywhere in the repo and aren't placed here; inventing coordinates for them would be inventing geography, not recording it. RavenHold and Island in a Ship are deliberately unmappable by design and are excluded on purpose, not by oversight.
 
 ## The Kings Road
 
@@ -98,5 +99,6 @@ Positions are in the coordinate table above, not repeated here.
 | The Coil | Doesn't appear on charts; the Night Ferryman knows when to look |
 | Canille | Island village; the masks |
 | Pneum | People of Promise congregation |
+| Apnea | Hospice island; the dreaming layer |
 
 For detailed location entries, see `locations/`.

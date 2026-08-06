@@ -40,6 +40,7 @@ If players have already met her in the bazaar and she has a commission open, she
 
 - **Mortis** — pours for her without being asked, same as he does for Kess. Professional courtesy between people who've spent too long in the space between.
 - **Kess** — a fellow bazaar regular Mortis extends the same quiet courtesy to; whether Lily and Kess know each other beyond that isn't established.
+- **Apnea** (`locations/apnea.md`) — one commission among many, on its face. She's never been there. Something about that particular island sits differently with her than her other clients' nights do. She has never explained it, even to herself.
 
 ---
 
@@ -48,3 +49,4 @@ If players have already met her in the bazaar and she has a commission open, she
 - `locations/capital/underground-bazaar.md` — where she's found, the Soul Economy
 - `locations/capital/underground-tavern.md` — where she's found between hunts
 - `characters/mortis.md`, `characters/kess.md` — the other two people this same courtesy extends to
+- `locations/apnea.md` — a commission that sits differently with her, unexplained
