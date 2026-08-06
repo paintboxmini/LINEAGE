@@ -94,8 +94,6 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical — if t
 
 **Enemy decks.** Deck size equals the creature's **total stats**, with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
 
-For a full worked combat using both conventions, see `rules/combat-example.md`.
-
 ---
 
 ## Important: You Are Not Your Own Ally

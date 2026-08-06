@@ -21,7 +21,7 @@ Regenerate the live list any time with `python3 run.py` (it prints at the end).
 - **single-hit-floor** — A single attack cannot push a standing combatant below 0
   (clamp to Collapse). Matches `rules/combat.md` Collapse.
 - **evade-consumes-attack** — A dodged attack still spends the attacker's card and
-  its Effect doesn't fire. From `rules/combat-example.md`.
+  its Effect doesn't fire. `rules/card-glossary.md`, Evade.
 - **axiom-blocks-defense** — Axiom's banned color can't be revealed to *defend*
   either; the ban is on the next reveal, attack or block. Consistent with the
   reveal-timing rules; worth a one-line confirmation on the card if you want it

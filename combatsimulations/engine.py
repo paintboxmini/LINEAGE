@@ -6,9 +6,9 @@ run large numbers of 1v1 duels and surface rules gaps, balance outliers, and
 emergent tactics.
 
 Ground truth: rules/combat.md, rules/core-rules.md, rules/card-glossary.md,
-rules/cards.md, and the worked example in rules/combat-example.md. Any place the
-engine had to assume a ruling the rules don't state is logged via RULING() and
-collected in the run report — that log IS the deliverable, not an afterthought.
+rules/cards.md. Any place the engine had to assume a ruling the rules don't
+state is logged via RULING() and collected in the run report — that log IS
+the deliverable, not an afterthought.
 
 Scope: implements exactly the cards in Frost's and Steele's decks
 (characters/frost.md, characters/steele.md). Effects that only touch allies are correctly no-ops in a
@@ -1112,7 +1112,7 @@ class Duel:
             if roll(2, self.rng) == 1:
                 RULING("evade-consumes-attack",
                        "A dodged attack still consumes the attacker's played card "
-                       "and its Effect does not trigger (rules/combat-example.md).")
+                       "and its Effect does not trigger (rules/card-glossary.md, Evade).")
                 self._say(f"{attacker.name} plays {card.name} ({_color_label(atk_color)})")
                 self._say(f"  {defender.name} EVADES — attack misses")
                 _discard_or_return(attacker, physical_card)

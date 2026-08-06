@@ -127,7 +127,7 @@ Green (Soul)  beats  Blue  (Mind)
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
 
-A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land (`rules/combat-example.md`, Edge Cases), that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
+A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land, that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
 
 ---
 

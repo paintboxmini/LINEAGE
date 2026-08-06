@@ -375,13 +375,12 @@ HP_FORMULA_FILES = (
     'rules/player-guide.md',
     'rules/gm-guide.md',
     'rules/character-creation.md',
-    'rules/combat-example.md',
     'agent-tools/compiled-crib.md',
 )
 
 
 def check_hp_formula():
-    """The HP formula is restated in seven files instead of living in one
+    """The HP formula is restated in six files instead of living in one
     canonical spot, each restatement free to drift independently — flagged
     as the harness's biggest single propagation risk (Drew, 2026-08-05, the
     Harness Audit's point 3). Not fixed by deleting the restatements — each

@@ -1,3 +1,7 @@
+*Archived 2026-08-06 from `rules/combat-example.md` — Drew: "it's been pretty damn token expensive for something no human will use. archive it and remove all references to it." Retired outright, not fixed: its PROFILE Range bug (see `memory.md`, Recently Shipped) turned out to require rewriting most of the fight to resolve correctly, for a document nobody was reading. Preserved verbatim, not a current-state reference — the one real rule it uniquely stated (a dodged attack's Effect doesn't trigger, Edge Case 2 below) was folded into `rules/card-glossary.md`'s Evade entry before this file was pulled from rotation, so nothing was lost by retiring it.*
+
+---
+
 # A Worked Combat — The Road to Briarwatch
 
 A complete combat played out beat by beat, with every rule cited as it fires. Written as engine reference — if you are a person or an AI trying to understand how Tales Untold combat actually resolves, read this after `rules/core-rules.md` and `rules/combat.md`.

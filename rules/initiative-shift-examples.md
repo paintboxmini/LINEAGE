@@ -78,4 +78,3 @@ d's pending skip chip is removed — a fresh shift on a chip-holding token cance
 
 - `rules/combat.md` — The Wheel: slot count, sliding, joining and leaving
 - `rules/card-glossary.md` — Initiative Shift X: the full rule text these examples illustrate
-- `rules/combat-example.md` — a full combat walked beat by beat, in the same reference style
