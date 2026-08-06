@@ -64,6 +64,14 @@ SETS = {
             '../cards/mason-glyphs.md',
         ],
     },
+    'washed-ashore': {
+        'title': 'Washed Ashore Encounter Set',
+        'files': [
+            '../cards/wrackclaw.md',
+            '../cards/hullback.md',
+            '../cards/trisect-ashfall.md',
+        ],
+    },
     'frost': {
         'title': "Frost's Deck",
         'files': [
