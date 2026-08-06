@@ -15,7 +15,7 @@ Range: Melee
 **ENVELOPING PRESS**
 RED — BODY
 Attack: Body + d6
-Effect: Defender gains Rooted until start of their next turn. Ends Flatten.
+Effect: Defender gains Rooted. Ends Flatten.
 Defensive Bonus: Gain Resist 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*

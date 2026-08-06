@@ -43,7 +43,7 @@ The three variants below describe dietary history and starting state only.
 
 **Forest Tardigrade**
 Consumed: deer, wolves, dryads.
-Starting absorptions: Green active (healing already running). Pre-absorbed dryad material gives it a vine-entangle on melee hit — target is Rooted until the start of its next turn. Pack awareness from wolf absorption: aware of flanking, cannot be surprised by repositioning.
+Starting absorptions: Green active (healing already running). Pre-absorbed dryad material gives it a vine-entangle on melee hit — target gains Rooted. Pack awareness from wolf absorption: aware of flanking, cannot be surprised by repositioning.
 
 *Suggested flavour:* antler-like protrusions visible through the translucent skin. Moves with unhurried patience.
 

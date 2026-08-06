@@ -100,13 +100,17 @@ Armour is the system's general-purpose flat damage reduction: it shows up as a c
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(23) Rooted**
-Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
+Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
+
+**Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted at the start of each of your turns for as long as you remain Anchored, full duration each time. Moving ends your own Anchored and stops further re-application; it does not strip a Rooted already in effect.
+
+**Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
 **(4) Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **(5) Quick**
-You may change positions without spending your action — a free move in addition to your normal action that turn, not a replacement for it.
+You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it. Gained on your own turn, it's usable that same turn and fades when the turn ends. Gained off-turn (a Defensive Bonus, typically), it's held until the end of your next turn. Fades either way whether spent or not — it never carries indefinitely.
 
 **(29) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
@@ -137,7 +141,7 @@ Reduces your effective hand size by X. Stacks additively into a single running t
 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 2** (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP. Only Body touches HP.
+- **Body** — Red-card damage, and max HP: **each point of Body changes your maximum HP by 3**, matching the HP formula ((3 × Body) + 6) itself (down when lost, up when gained). If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP. Only Body touches HP.
 - **Mind** — Blue-card damage, and hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls). Hand size changes the moment the stat does. A hand already above the new, lower size is not discarded down — you simply can't draw back up until it naturally falls below the cap.
 - **Soul** — Green-card damage, and initiative (1d6 + Soul), applied to rolls made after the change.
 
