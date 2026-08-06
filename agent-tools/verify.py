@@ -196,7 +196,7 @@ def check_sim(canon):
     import inspect
     import engine
     import team_engine
-    for meth in ('deal', 'insert_exhaust', 'insert_wound'):
+    for meth in ('deal', 'insert_exhaust', 'insert_wound', 'attack'):
         a = getattr(engine.Duel, meth, None)
         b = getattr(team_engine.Battle, meth, None)
         if a and b and str(inspect.signature(a)) != str(inspect.signature(b)):

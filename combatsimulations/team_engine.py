@@ -319,8 +319,18 @@ class Battle:
                         def_card = target
                     # else: def_card stays FOLLOW-UP itself, a legitimate
                     # colorless defense resolved by _rps() below.
-                if def_card is not None and defender.axiom_ban and def_card.color == defender.axiom_ban:
-                    def_card = None
+                if def_card is not None:
+                    # enforce Axiom ban on the reveal — see engine.py's
+                    # Duel.attack() for the full reasoning.
+                    if defender.axiom_ban and def_card.color == defender.axiom_ban:
+                        RULING("axiom-blocks-defense",
+                               "AXIOM's named color cannot be revealed to defend either "
+                               "— the ban is on the next reveal, attack or block "
+                               "(rules/card-glossary.md Axiom + reveal timing).")
+                        def_card = None
+                    # One-shot: consumed by this reveal whether or not it
+                    # actually forced a block (2026-08-05 fix, see memory.md).
+                    defender.axiom_ban = None
         if was_staggered:
             defender.staggered = False
             self._say(f"    {defender.name} was Staggered — this attack goes undefended, then it clears")

@@ -611,14 +611,20 @@ class Combatant:
         self.thorns = 0
         self.armour = 0   # flat reduction, stacks additively (rules/card-glossary.md)
         self.blind = 0
-        self.staggered = False
         self.rooted = False
         self.ward = False
         self.immune = False              # Immunity (card-glossary.md): next attack against
                                           # me fails before any cards are revealed at all
-        self.axiom_ban = None            # color forbidden on next reveal
         self.next_attack_bonus = 0
-        self.cannot_defend = False       # BERSERKER'S PRICE: until my own next turn
+        # ARCHITECTURAL NORTH STAR, Step 2 (memory.md, 2026-08-05): typed
+        # modifiers with lifetimes, replacing three raw flags that used to
+        # live here directly (staggered, axiom_ban, cannot_defend). Plain
+        # dict, not a new class — matches this file's own existing idiom for
+        # per-combatant kind-tagged state (see `ongoing` below,
+        # `_this_turn_hit`/`_prior_turn_hit` on Duel). Exposed as properties
+        # immediately after __init__ so every existing read/write site
+        # (content.py, keyword_lab.py) keeps working unchanged.
+        self._modifiers = {}   # kind -> (value, lifetime)
         self._grounded = False           # GROUNDING STANCE: ignore forced repositioning, until my own next turn
         self.ongoing = []               # list of dicts: {'kind':..., ...}
         self._anticipating = False       # ANTICIPATE: draw before defending, until my next turn
@@ -686,6 +692,46 @@ class Combatant:
         self._shifted_positive = False    # RHYTHM BREAK: received a + Initiative Shift,
                                            # cleared at the start of my own next turn
         self._used_wait = False           # RHYTHM BREAK: used Wait, same self-clearing shape
+
+    # --- typed modifiers (ARCHITECTURAL NORTH STAR, Step 2) --------------------
+    # Three properties over `_modifiers`, each a drop-in replacement for the raw
+    # attribute it used to be — no call site anywhere (content.py, keyword_lab.py,
+    # either engine) needed to change. The lifetime string is metadata for
+    # readability; the actual clearing still happens at the same call sites it
+    # always did (take_turn()'s reset block, attack()'s was_staggered capture).
+    @property
+    def axiom_ban(self):
+        m = self._modifiers.get('axiom_ban')
+        return m[0] if m else None
+
+    @axiom_ban.setter
+    def axiom_ban(self, color):
+        if color is None:
+            self._modifiers.pop('axiom_ban', None)
+        else:
+            self._modifiers['axiom_ban'] = (color, 'next_reveal')
+
+    @property
+    def cannot_defend(self):
+        return 'cannot_defend' in self._modifiers
+
+    @cannot_defend.setter
+    def cannot_defend(self, val):
+        if val:
+            self._modifiers['cannot_defend'] = (True, 'own_next_turn')
+        else:
+            self._modifiers.pop('cannot_defend', None)
+
+    @property
+    def staggered(self):
+        return 'staggered' in self._modifiers
+
+    @staggered.setter
+    def staggered(self, val):
+        if val:
+            self._modifiers['staggered'] = (True, 'until_consumed')
+        else:
+            self._modifiers.pop('staggered', None)
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
@@ -1101,6 +1147,11 @@ class Duel:
                                "— the ban is on the next reveal, attack or block "
                                "(rules/card-glossary.md Axiom + reveal timing).")
                         def_card = None
+                    # One-shot: the ban is consumed by this reveal whether or
+                    # not it actually forced a block — matches the card's own
+                    # documented "next reveal" scope (previously never cleared
+                    # at all; 2026-08-05 fix, see memory.md).
+                    defender.axiom_ban = None
         if was_staggered:
             defender.staggered = False
             self._say(f"  {defender.name} was Staggered — this attack goes undefended, then it clears")
