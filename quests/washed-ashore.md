@@ -50,6 +50,36 @@ Open rolling fields north of the shoreline, broken up by rocky outcroppings — 
 
 ---
 
+## The Walk — Crossing the In-Between
+
+Everything past the beach's own fields is the In-Between (`world/the-in-between.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road. Doubly true here: this crossing starts at the one hard edge of reality the setting has, so the ordinary In-Between thinness (the Cuts holding least) picks up right where the coastline's own thinness (the Unheld) leaves off, one kind of edge handing off to another with no gap between them.
+
+**Run this as a toolkit, not a script.** Nothing below has to happen in order, and nothing has to happen at all — "most crossings are two days of moving and a night at an inn" is still the baseline (`world/the-in-between.md`, At the Table). Use one terrain beat, one sighting, and skip the fight entirely if the table's pace wants that. The one rule that isn't optional: never describe the same terrain twice in a single crossing.
+
+### Terrain — pick and mix, never repeat
+
+- The rolling fields thin out and the grass underfoot turns to packed grey clay with no line where one became the other — the kind of ground that should be somewhere with less rain than this.
+- A stand of trees rises out of nothing, old-growth, canopy thick enough to dim the flat daylight to dusk. It's gone again almost as soon as it started. Nobody sees where it ends from the inside.
+- The trail crosses a streambed with real current in it, cold and clear, running toward no lake or river anyone in the party could name a direction for.
+- Fog sits in a hollow of ground for exactly as long as it takes to cross it, and not a step longer — clear ahead, clear behind, thick enough in the middle that the party can't see each other's faces.
+- The ground goes soft and salt-white for a stretch, cracked in the geometric way a dry lakebed cracks, though nothing about this coast has ever had a lake reported on it.
+
+### Strange Sightings (1 or 2, GM's pick)
+
+Not fought. Not explained. The point is being seen and not accounted for — see `world/the-in-between.md`, Encounters ("nothing here is more dangerous than it is at home... it is worse to meet, because everything a person actually uses to predict a creature is knowledge about a place, and there is no place").
+
+**A Skeinwing, grounded.** (`bestiary/skeinwing.md` — a high-altitude glider "almost never encountered alive.") Wings half-folded in the grass, alive, breathing, making no move to take off or flee. It's a week's flight from any altitude it could have fallen from, at minimum. If the party leaves it alone, it's gone by the time anyone looks back.
+
+**A Stonecoil, coiled in the open.** (`bestiary/stonecoil.md` — normally "encountered from mid-depth downward," Hollow Below Briarwatch.) Motionless in tall grass under open sky, exactly the dormant coil-at-a-bend posture it holds underground at a fissure junction. No fissure here. No junction. It doesn't uncoil while anyone's watching.
+
+### Possible Combat — a Trisect, CTR 19
+
+**One encounter, clearly avoidable, built to the new standard** (`CLAUDE.md`, Stat Blocks — 3 players ≈ CTR 27; this sits a deliberate step under that, not yet the ceiling). A Trisect (`bestiary/trisect.md`, CTR 15 — Ashfall Wastes' three-limbed war machine, iron and combustion engines, hundreds of miles from where it's built to operate) idles in the open, trailed by a single Wrackclaw (`bestiary/wrackclaw.md`, CTR 4) picking at whatever the machine's leaking. Both stat blocks unaltered — the In-Between doesn't make anything more dangerous than it is at home, it just puts things next to each other that were never going to meet otherwise. Total CTR 19.
+
+It idles before it engages (`bestiary/trisect.md`) — slow, visible from a real distance across open ground, giving the party a genuine choice to route around it rather than a forced fight. Worth playing that choice straight: nothing here explains why a war machine is walking a coastal trail it has no business near, and nothing should.
+
+---
+
 ## Meeting Aege
 
 Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`locations/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as always (`characters/aege.md`) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
@@ -97,6 +127,8 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 - `locations/roadhouse.md` — where the trail leads
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
+- `world/the-in-between.md` — the rules the whole Walk section runs on
+- `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where Aege points them
