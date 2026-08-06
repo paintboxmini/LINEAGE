@@ -471,3 +471,13 @@ Effect: If this attack deals damage, defender gains Weak and Staggered.
 Defensive Bonus: Attacker gains Weak.
 Range: Ranged
 *"They already believe they have lost."*
+
+---
+
+**AID**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally heals 4 and draws 1.
+Defensive Bonus: Target ally gains Resist and draws 1.
+Range: Ranged
+*"I make the opening. You take it."*
