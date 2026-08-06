@@ -6,7 +6,7 @@
 
 To almost everyone in Eclipseria, the Weavers keep the lights on. They wear practical gear, carry the right tools, and have standing access to the tunnels and conduits nobody else bothers with. Their work is filed as municipal maintenance because that's what it looks like from the outside.
 
-What they actually maintain is a second grid, laid alongside and inside the first. Thin as air-ripples, carried in and beside the ordinary conductive lines, is a current far deeper than electricity — Aurora's binding, drawn thread by thread out of the Deep and spun into something that can be distributed. The Weavers don't go anywhere near where she is. They never have to. By the time a thread reaches a Weaver's hands, it has already traveled a long way from its source, through channels that were never built for it and now can't be separated from it.
+What they actually maintain is a second Grid, laid alongside and inside the first — most people never learn there are two. Thin as air-ripples, carried in and beside the ordinary conductive lines, is a current far deeper than electricity — Aurora's binding, drawn thread by thread out of the Deep and spun into something that can be distributed. The Weavers don't go anywhere near where she is. They never have to. By the time a thread reaches a Weaver's hands, it has already traveled a long way from its source, through channels that were never built for it and now can't be separated from it.
 
 They keep the city bound the same way they keep it lit: as background infrastructure, running so long it stopped looking like a choice anyone made.
 
@@ -20,7 +20,7 @@ They keep the city bound the same way they keep it lit: as background infrastruc
 
 **The cords.** At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and taking up thread the way they'd draw, tension, and take up cable, because that is exactly what they were built to do.
 
-**The tapestry.** In long chambers beneath the civic districts, finished cords are woven directly into the city's foundation and utility grid — load-bearing, not decorative, run parallel to power lines and water mains so the two systems are physically interleaved. This is what actually holds the binding stable at civic scale. It cannot be switched off. It has to be unwoven, one row at a time, and nobody currently alive knows how to do that safely.
+**The Grid.** In long chambers beneath the civic districts, finished cords are woven directly into the city's foundation and utility lines — load-bearing, not decorative, run parallel to power lines and water mains so the two systems are physically interleaved. "Tapestry" leans decorative; the Grid is closer to the truth — this is infrastructure, maintained as civic duty, catastrophic if it fails. Rank-and-file language stays this plain: "the Grid," "section four," "re-weave the north belt," "grid tension." A failing section is a "grid break," never "a tear." The craft verbs underneath don't change — spin, twist, cord, weave, unweave, tension, splice. This is what actually holds the binding stable at civic scale. It cannot be switched off. It has to be unwoven, one row at a time, and nobody currently alive knows how to do that safely.
 
 **What it costs to notice.** Certain plazas stay oddly calm through arguments that should have gone worse. Banners in the central districts barely move, as if the air is thicker there. Reflections lag half a beat behind the person walking past. Animals avoid certain intersections without crossing them. None of it reads as wrong. It reads as *how the capital has always felt.* That normalcy is the product. The horror is that it's been delivered on time, every day, for longer than anyone currently drawing a wage from the city can account for.
 
@@ -36,6 +36,18 @@ Neither the prisoners assigned to it nor the guards overseeing them know what th
 
 ---
 
+## The Source Chamber
+
+The Collection Point is not the only place thread comes from. It's the only place *the guild* comes from — the passive, ambient supply that keeps the ordinary Grid fed, gathered by people who never see anything resembling Aurora. One person goes closer than that.
+
+**Eveline** works the source directly — skill, not title. Where the labor-level frames catch what drifts off Aurora on its own, Eveline's own chamber sits close enough that nothing drifts; she draws it. No ordinary Weaver has been inside, and the guild's official language never calls it a room at all. What comes out of it doesn't go through the same twist frames as everything else — richer, denser, closer to source than anything the collection halls ever see. It's the difference between what keeps the lights ambient-warm and what would actually make the binding *usable*, on purpose, by someone who knew how to ask for it.
+
+The rank-and-file believe they're maintaining a necessary civic mystery: the walls produce, their craft makes it load-bearing, the city holds. Eveline is not a mystery to them so much as a fact they've stopped examining — an authority who appears rarely, corrects things precisely, and is answered without question because the work she hands down always holds. Whether "Eveline" the guild answers to and Lady Eveline of the Regency council are known to be the same person, by anyone below the Quiet Chair, is not established. Likely not.
+
+**This runs alongside the Quiet Chair's own channel, not through it.** The Quiet Chair still receives Oswald's sealed instructions and still answers for the Grid's political direction — that's a separate question from who can actually work the source. Whether Eveline knows what her craft is ultimately being turned toward, and what she thinks of it if she does, is exactly the kind of thing she'd never say. She never speaks. Not mute — chooses silence (`world/the-regency.md`, Behavioral Contract). This is one more thing it might be covering.
+
+---
+
 ## Hierarchy
 
 **Line Hands.** The largest rank by far — street-level and shallow-tunnel electrical maintenance, pole work, fault response, night call-outs. They've all seen an air-ripple thread at some point and been given the standard explanation (residual charge, old city load). Most accept it. A minority carry a low-grade unease they've learned to keep to themselves.
@@ -44,9 +56,9 @@ Neither the prisoners assigned to it nor the guards overseeing them know what th
 
 **Line Keepers.** Senior technicians. They decide when a cord is ready to go deeper and when the upper grid needs throttling. Most believe they're maintaining an old founding mechanism that still serves the city. Very few have any idea what it's actually drawn from. Moral weight starts here — enough of the picture to feel responsible, not enough power to change what they're responsible for.
 
-**Threadwrights.** Few in number. The actual weavers — pattern density, repairs, the long balance of which districts get more or less binding force. They know the source is a living Seat-bearer. They know the work is extractive. They keep the tapestry intact anyway, because sudden failure would be catastrophic for people who had no say in any of it, and that math doesn't change no matter how they feel about the answer.
+**Threadwrights.** Few in number. The actual weavers — pattern density, repairs, the long balance of which districts get more or less binding force. They know the source is a living Seat-bearer. They know the work is extractive. They keep the Grid intact anyway, because sudden failure would be catastrophic for people who had no say in any of it, and that math doesn't change no matter how they feel about the answer.
 
-**The Quiet Chair.** Not always the guild's public head. The only one who routinely walks the whole loom, crystal to finished tapestry, and understands what the work is doing to Aurora and to the city. Receives sealed instructions when the extraction needs to be deepened, redirected, or prepared for a larger change.
+**The Quiet Chair.** Not always the guild's public head. The only one who routinely walks the whole Grid, crystal to finished lattice, and understands what the work is doing to Aurora and to the city. Receives sealed instructions when the extraction needs to be deepened, redirected, or prepared for a larger change.
 
 **Where those instructions come from is the load-bearing secret, not the crystals.** The Chair answers to Oswald's circle — not the Boar, not the Regency as a body. This is not the same apparatus that guards the Deep: Archibald built the Wallows and the Demon Court, and neither he nor Pazuzu knows the Weavers exist as anything but a utility guild running a routine maintenance detail on their labor level. Oswald's long game (`world/the-regency.md`, The Pendragon Attempt) needs the binding *usable*, not just contained — a grid he can eventually redirect toward his own claim, when it's ready, without the rest of the council watching him build it. Two structures now touch Aurora's extraction, unstaffed by each other, unknown to each other's leadership. The secret was never that the collection detail is invisible — Pazuzu has walked past it. It's that nobody who can see it has any reason to look past the cover story.
 
@@ -71,8 +83,8 @@ A hybrid kit — textile implements scaled up, electrical gear pressed into serv
 - **Ripple Hooks** — slender rods with a soft, non-reflective tip, used to lift a single thread without breaking it.
 - **Sorting Combs** — irregular-toothed combs that separate live thread from spent or tangled thread by feel as much as sight.
 - **Twist Frames** — rotating collars that spin dozens of threads into one stable cord; a cord that loses its pulse during spinning is discarded, not salvaged.
-- **Ground Shuttles** — forearm-length shuttles that carry finished cord through the tapestry's warp, run through channels cut directly into stone.
-- **Resonance Forks** — struck near a cord or a section of tapestry; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual.
+- **Ground Shuttles** — forearm-length shuttles that carry finished cord through the Grid's warp, run through channels cut directly into stone.
+- **Resonance Forks** — struck near a cord or a section of the Grid; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual.
 - **Cold Shears** — kept in locked cabinets, used only when a cord must be deliberately cut. The decision is never casual.
 
 ---
@@ -95,7 +107,7 @@ A hybrid kit — textile implements scaled up, electrical gear pressed into serv
 - `factions/demon-court.md` — Pazuzu's apparatus, host to the collection detail without knowing what it collects
 - `locations/capital/the-waterworks.md` — the citywide layer the Weavers' grid runs through
 - `factions/the-cellar-custodians.md` — the guild that shares those tunnels
-- `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for
+- `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for; Eveline, the guild's actual craft-master
 - `factions/people-of-promise.md` — the faction most likely to recognize what this is, and least likely to forgive it
 - `factions/the-masons.md` — deliberately not related; see above
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding

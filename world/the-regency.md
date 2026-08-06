@@ -27,7 +27,7 @@ Each member carries an animal title. Officially: informal, earned or assigned by
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
 | Lord Percival | The Owl | Scholarship. The only one actively studying the rifts. |
 | Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors. Informally: the Pig — never to his face. See `locations/capital/underground-bazaar.md`, `locations/capital/the-wallows.md`. |
-| Lady Eveline | The Elephant | Silent. Observant. No public position on anything. See behavioral note below. |
+| Lady Eveline | The Elephant | Silent. Observant. No public position on anything — except the one portfolio nobody's ever thought to question: critical infrastructure. The Cellar Custodians and the Weavers both answer to her office, on paper, without her ever saying a word about either. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
 
 ---
 
@@ -100,3 +100,4 @@ Recruited after the attempt. They inherited power without full knowledge of its 
 - She responds to information with small physical reactions only. That's the only read you get.
 - She attends everything. Votes nothing.
 - She has been on the council longer than any record accounts for.
+- Critical infrastructure is her one official portfolio — the Cellar Custodians, the Weavers. She has never been seen to exercise it. It's exercised anyway. See `factions/the-weavers.md`, The Source Chamber.
