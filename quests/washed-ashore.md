@@ -1,12 +1,12 @@
 # Washed Ashore
 
-*An alternate campaign opening — the party does not arrive by riverboat into Vulture's Nest (`locations/vultures-nest.md`, "On the Boat — Night Before Arrival"). They arrive from the Unheld Ocean itself, on foot, already on the wrong side of a threshold nobody survives crossing. Drew's own framing, still being worked out in real time — treat the specifics below as a strong first pass, not a locked sequence.*
+*The campaign's opening, replacing the old riverboat arrival into Vulture's Nest (`locations/vultures-nest.md` — no longer part of the plan; the sailor's story that used to open that scene is archived at `archives/sailors-story-2026-08-06.md`). The party arrives from the Unheld Ocean itself, on foot, already on the wrong side of a threshold nobody survives crossing. Drew's own framing, still being worked out in real time — treat the specifics below as a strong first pass, not a locked sequence.*
 
 ---
 
 ## The Hook
 
-The party wakes washed ashore on the beach at the edge of the Unheld Ocean — coordinates roughly **(−1, −11)** on the relative grid (`world/geography-overview.md`), south of the King's Road triangle, hard against the coastline itself. No memory of the crossing. No ship, no wreckage, nothing to explain how they got here or where "here" was before it was this.
+The party wakes washed ashore on the beach at the edge of the Unheld Ocean — coordinates roughly **(0, −11)** on the relative grid (`world/geography-overview.md`), directly south of the Roadhouse (0, −7), about a day's journey on foot. No memory of the crossing. No ship, no wreckage, nothing to explain how they got here or where "here" was before it was this.
 
 **How they crossed the Unheld without coming back changed goes deliberately unexplained.** Every existing account of a living thing crossing that threshold says it comes back marked — reversed handedness, eyes that reflect wrong colors, subtler things (`world/the-unheld.md`). This party doesn't show any of it. Don't resolve why. Let it sit exactly as unresolved as the Ferryman's own unexplained knowledge at the Coil, or what the Stone Voice already knows about the party before anyone's said a word — same register, same restraint.
 
@@ -19,6 +19,12 @@ The party wakes washed ashore on the beach at the edge of the Unheld Ocean — c
 > Cold sand. The sound is wrong before anything else registers — no gulls, no surf breaking the way surf should, just a low, even hush like the water itself is holding still. The light overhead is the same flat, sourceless grey as everywhere else in this world, and for a moment that's the only thing that feels normal. Behind you: water, endless, the color of an overcast sky with no horizon where it should end. Ahead: pale sand giving way to rolling grass, and beyond that, rock breaking up out of the ground in long grey outcroppings.
 >
 > Nobody remembers getting here.
+
+---
+
+## Session 0 — The First Night
+
+This is also the party's actual Session 0. Before the trail, before the Roadhouse — the first night on this beach is when the Island in a Ship finds them (`locations/island-in-a-ship.md`, Session 0 — First Visit), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
 
 ---
 
@@ -72,7 +78,8 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 ## Related Documents
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret
-- `locations/vultures-nest.md` — the alternate (riverboat) opening this one replaces
+- `locations/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
+- `locations/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
 - `locations/roadhouse.md` — where the trail leads
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid

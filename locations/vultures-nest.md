@@ -4,7 +4,7 @@ A river port rebuilt so many times on top of itself that no one remembers the or
 
 The smell: pitch, citrus peel, river silt, wet wood.
 
-For the session 1 opening scene, see the Entry section below.
+No longer the campaign's default opening (`quests/washed-ashore.md`, 2026-08-06) — still a fully live location a party can reach on its own, by the same routes anyone else in Eclipseria would take.
 
 ---
 
@@ -232,7 +232,7 @@ Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
 
 ---
 
-## Entry — Session 1 Opening
+## Entry — If the Party Arrives Here
 
 *The static reaches you before the docks do. A low continuous hiss beneath gulls and rigging, riding the water upstream — like the Unheld talking to itself at the far end of the river, and the river repeating it.*
 
@@ -244,57 +244,13 @@ The market begins where the docks end and doesn't announce itself. Unpaved road 
 
 The Red Scarves are already in your peripheral vision.
 
----
-
-## Session 1 Routing
-
-Vulture's Nest → Roadhouse (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
-
-The Roadhouse is a government inn. Functional, not charming. Beds that work, food that's fine. Exists because the road needs it to. See `locations/roadhouse.md`.
-
-Instructions after Briarwatch point to the capital — not back to Vulture's Nest.
-
----
-
-## On the Boat — Night Before Arrival
-
-Late, on the riverboat's last night out. Most of the crew has turned in. A few travelers and off-watch sailors have drifted to the deck with whatever was left in the bottles. The Nest isn't visible yet — one more bend, maybe two — but the smell of it has arrived on the water: woodsmoke, pitch, something green off the banks.
-
-The talk is easy. The kind that happens when people don't have to be anywhere until morning.
-
-**Rumors — overheard or offered freely:**
-
-- One sailor, younger, keeps checking the water. He's booked passage back the moment the ship resupplies. The Thorngate Festival starts the week after next — free wine in the square, the Regency parade, trade exhibitions he's been looking forward to for months. He hasn't missed it in three years and he's not starting now.
-
-- A woman near the rail mentions the Regency's south gate inspection has been running tighter lately. More thorough. Nobody's saying why out loud. She doesn't seem bothered — just noting it the way you note weather.
-
-Then someone says: *"If you're going to tell it, tell it."*
-
-## The Sailor's Story
-
-A sailor sits alone. Salt-stiff coat. Hands wrapped in linen. Not drinking.
-
-Someone says: *"If you're going to tell it, tell it."*
-
-He doesn't look up. Says: *"Last time I came here an island grew outta the ship."*
-
-He tells it flat. Clear water, no storm, woke to birds and rustling trees, sand on the deck boards, railings still there but trees beyond the hull, a cavern in the middle, a waterfall that doesn't touch the deck. *"You don't leave. Not the way you came."*
-
-Someone asks how he's here then.
-
-*"I didn't go all the way down."*
-
-He unwinds one linen wrapping. Grey markings on the forearm — fine lines, like tide patterns. His hand trembles when he finally lifts his drink.
-
-The normal conversation slowly picks back up.
-
-*See `locations/island-in-a-ship.md` for what he found.*
+*No longer paired with a riverboat arrival or the sailor's story — that scene is archived (`archives/sailors-story-2026-08-06.md`), tied to an opening the campaign no longer uses. This boxed text still works as-is for a party that reaches Vulture's Nest by any other route, at any point in the campaign.*
 
 ---
 
 ## Related Documents
 
-- `locations/island-in-a-ship.md` — The Archipelago, the Oracle, session end ritual
+- `quests/washed-ashore.md` — the campaign's current opening, which this location no longer takes part in
 - `characters/aege.md`, `characters/corvel.md`, `characters/masaharu.md` — full profiles for NPCs found here
 - `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
 - `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours
