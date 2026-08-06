@@ -1,0 +1,95 @@
+Rooted (corrected):
+Cannot voluntarily change position until the end of your next turn. Forced repositioning remains unaffected.
+
+Understood. Restating the intended behavior:
+
+**GRAPPLE — clarified persistence**
+
+- When GRAPPLE resolves, it designates an **original target** (the defender if you attacked, the attacker if you defended).
+- That original target gains Rooted.
+- As long as **you** remain Anchored, the Rooted continues to apply to that same original target on subsequent turns. It does not jump to whoever happens to be attacking or defending you later.
+- Anchored is the voluntary condition you maintain (by not moving) to keep the effect alive. It functions as a self-imposed Rooted that you can choose to end by moving, at which point the ongoing Rooted on the original target also ends.
+
+So the card creates a lasting lock on one specific person, sustained by your own willingness to stay put.
+
+RED — BODY
+Attack: Body + d6
+Effect: Anchored — You ignore any ability that forces you to move positions.
+Defensive Bonus: Gain Resist.
+Range: Both
+*"Stand where you choose. Let the world move instead."*
+
+
+---
+
+**BERSERKER’S PRICE — duration clarification**
+
+Effect: Cannot defend until your next turn.  
+Intent: You go all-in and leave yourself open. The restriction lasts from resolution until the start of your next turn. You cannot defend against any attacks in that window.
+
+---
+
+**PATIENCE — Defensive Bonus clarification**
+
+Defensive Bonus: Anchored — Target ally heals 3 HP.  
+Intent: Anchored grants a benefit for as long as *you* do not move. While you remain Anchored, the ally heal continues to apply on its trigger (same ongoing-support pattern as ROOTED OATH). It is not a one-shot heal.
+
+---
+
+**Quick — precise fade timing**
+
+**Quick**  
+You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it.
+
+**Duration:** Quick is gained when the effect resolves and lasts until the **end of your current turn**.  
+- If you gain it on your own turn, you may use the free move that same turn; it then fades when your turn ends.  
+- If you gain it on someone else’s turn (e.g. from a Defensive Bonus), you hold it until the end of *your* next turn, then it fades.  
+- Unused Quick still fades. It does not persist indefinitely until spent.
+
+**Short form for glossary:**  
+*Lasts until the end of your current turn (or the end of your next turn if gained off-turn). Fades whether used or not.*
+
+Body ↔ max HP rate
+Character creation / HP formula: HP = (3 × Body) + 6 → each Body point is worth 3 HP.
+Glossary Stat Change: “each point of Body changes your maximum HP by 2.”this is wrong change it to 3.
+
+**If those seven are landed, the big structural holes are closed.**
+
+What’s left is smaller:
+
+### Edge cases worth a one-line ruling someday
+- **Quick while Rooted** — free move vs “cannot voluntarily change position.” Rooted should win; Quick is spent with no move, or can’t be spent. Not written.
+- **Anchored + forced move immunity (GROUNDING STANCE) vs effects that end Anchored on move** — already consistent (you never move, so Anchored holds). Fine.
+- **GRAPPLE’s sustained Rooted loop** — we defined it in conversation (re-applies to the original target at the start of your turn while you stay Anchored). Confirm that text is what actually went on the card.
+- **Off-turn Quick** (SWAY defense, etc.) — you hold it until the end of *your* next turn. Clear from the new Quick ruling; just make sure card text doesn’t reintroduce “on your next turn” as a special case unless intentional (MIRROR STEP).
+
+### Process / pipeline (not rules text)
+- Sim still needs Rooted actually enforced and expired if that code hasn’t been updated yet.
+- Sealed stays narrative-only until an item-usage hook exists.
+- Any remaining “until your next turn” without start/end should get the same pass Berserker’s got.
+
+### Nothing else large is jumping out
+Initiative Shift, Collapse floor, Ward/Debuff scope, Armour→Resist order, Deadly/Weak and Resist/Vulnerable cancel, Thorns (melee only), hand-size floor, status-card-as-token cost — those all have coherent written rules.
+
+So: no more silent fantasy-breakers at the same scale as Rooted. What’s left is edge-case polish and keeping the sim honest with the text.
+
+New rule:
+“Until your next turn” (no start/end specified) always means the effect fades at the start of your next turn.
+
+**Rooted — timing clarification (copy-paste)**
+
+**Rooted**  
+Cannot voluntarily change position until the **end of your next turn**.  
+Forced repositioning (Rushdown, Pull, Push, and similar) is unaffected.
+
+**Timing**
+- Applied immediately on resolution.
+- Lasts through the rest of the current round and the afflicted character’s **entire next turn**.
+- Fades at the **end** of that next turn.
+- Does **not** fade at the start of their next turn (that reading made the keyword inert).
+
+**Anchored + Rooted (e.g. GRAPPLE)**  
+If an effect is Anchored and re-applies Rooted to a fixed original target: at the start of each of your turns while you remain Anchored, that same target gains Rooted again (full duration: until the end of *their* next turn). Moving ends Anchored and stops further re-application.
+
+**Card text**  
+Cards that grant Rooted should say “gains Rooted” only. Do not restate duration on the card; the glossary owns it.

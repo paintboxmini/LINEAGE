@@ -1,0 +1,96 @@
+**Locked.**
+
+**Eveline — Head Weaver**  
+Not only the silent council presence over the wing. She is the one who can actually work the source. Skill, not just title. The other Weavers answer to her craft as much as to her authority.
+
+**The divide**
+
+**Source chamber** (Eveline only, or those she alone permits)  
+Aurora bound to the Seat. Hair splayed into the first loom. The true origin of the binding thread. No ordinary Weaver enters here. They are not told what it is.
+
+**The collection halls** (the working Weavers)  
+Thousands of strands emerge from the walls as if the stone itself were exhaling them. Each one looks like a ripple in the air — a heat-haze filament, barely visible, slightly resistant to the hand. No one here calls it hair. No one has reason to. They gather the ripples, twist them into stable cords, and carry those cords to the long chambers where the city-tapestry is woven into foundation and grid.
+
+**What the rank-and-file believe**  
+They are maintaining a necessary civic mystery. The walls produce the raw material; their craft makes it load-bearing; the city holds. Questions about the source are not encouraged and, after a while, stop occurring. The work is exacting, quiet, and framed as duty.
+
+**What Eveline knows**  
+The ripples are Aurora. The tapestry is continuous extraction. The city’s unity is not infrastructure with a strange feedstock — it is a person, still present, still feeding the loom.
+
+The two layers never meet in conversation. Only in the material that passes through the walls.
+
+Agreed. **Grid** is stronger.
+
+“Tapestry” leans decorative and mythic. The thing you’ve actually built is load-bearing infrastructure: interleaved with mains, foundations, and power, maintained as civic duty, catastrophic if it fails. **Grid** says that in one word.
+
+Weaving stays as the *craft* — how the ripples become cords, how cords are worked into the lattice, how a section is re-woven under tension. The product is the **Grid**: the city’s binding lattice, not a textile that happens to be important.
+
+**Suggested language**
+
+- Rank-and-file: “the Grid,” “section 4,” “re-weave the north belt,” “grid tension.”  
+- Craft verbs stay: spin, twist, cord, weave, unweave, tension, splice.  
+- Eveline / source: still the true feedstock; the Grid is what the city stands on.  
+- Failure: “grid break,” “local grid wrongness,” not “a tear in the tapestry.”
+
+1. Sound and temperature in the collection halls
+The ripples aren’t silent. A low, continuous pressure-change sound — more like distant surf in a pipe than a voice. The air is a degree warmer near active wall-sections. Gives GMs something sensory before any reveal.
+2. What a “bad section” looks like to workers
+When a grid segment is failing: cords go slack or over-tight, the heat-haze filaments thin or cluster, and tools start sticking as if the air were syrupy. Rank-and-file have procedures for this (tag the section, call a senior, re-tension). They treat it as engineering. The file should give them that procedure so the halls feel worked-in, not only symbolic.
+3. One object that shouldn’t be there
+A single plain stool or worn cushion in the source chamber, placed where someone could sit in view of the Seat without touching the loom. Implies Eveline (or a predecessor) stays long enough to need it. No speech, no note. Just the fact of duration.
+4. Shift culture
+Weavers don’t gossip about the feedstock, but they do mark time: who is good at twist, who is trusted on high-tension belts, which corridors are “loud” after a re-weave. A couple of named ranks or crew habits would make the guild feel inhabited when the party only ever meets the public face.
+5. The wall as one-way membrane
+Ripples come out. Nothing the Weavers have tried goes back in. Officially: the source is a generation process, not a room. Unofficially (GM): the membrane protects the secret and the Seat. Useful if anyone ever tries to force the walls.
+6. North-grid incident, three years ago — Temple District:
+Doors built static over minutes. Handles stung. Metal latches crawled with a fine charge. Then the doors burst open — not swung, thrown — with a sharp bzzt and the smell of hot dust. Anyone who forced one shut got a nastier shock for the trouble; it wasn’t long before the door flew open again. Lamps in the same blocks surged and dipped in time with the discharges. The event lasted most of a week until the Weavers finished the re-tension.
+General rule for GMs
+Grid trouble reads as power trouble first: static, surges, shocks, things that should stay closed or stay open refusing to obey, lights that remember the wrong state. Keep symptoms inside the electrical/utility register. No free-floating “wrongness” that isn’t doing the Grid’s actual job badly.
+
+**Weavers’ Repair Mechanics**
+
+### Detection
+- **Surface first:** static buildup, door discharges, lamp surge/dip, shocks on metal — localized to a district or corridor belt.  
+- **Hall instruments:** tension gauges on the cord trunks, “loud” sections (that pipe-surf sound rises or goes uneven), filaments from the wall thinning, clustering, or sticking to tools.  
+- **Senior read:** experienced Weavers can feel slack vs over-tight by hand on the cord; Eveline can read wider lattice state without walking every belt.
+
+### Classification
+| Grade | Meaning | Response |
+|-------|---------|----------|
+| **Watch** | Minor uneven tension, mild surface static | Log, schedule into next shift’s pass |
+| **Tag** | Clear local fault; power symptoms ongoing | Section tagged, traffic limited if needed, repair crew assigned |
+| **Emergency** | Rapid worsening, repeated discharges, risk of cascade into adjacent belts | All hands on that belt; haste rules apply (see below) |
+
+### Standard repair (Tag)
+1. **Isolate** — clamp or pin the section so slack doesn’t run into neighboring weave.  
+2. **Strip** — cut out the failed cord length; failed material is treated as dead (no longer warm, filaments go inert).  
+3. **Feed** — draw fresh cord from the collection halls (new ripples → twist → cord).  
+4. **Splice / re-weave** — work the new cord into the Grid path under measured tension; match the interleave with the physical mains and supports in that corridor.  
+5. **Charge test** — controlled restore; watch surface district for residual static.  
+6. **Sign off** — senior marks the section clear; instruments return to baseline.
+
+Time scale: hours to a day or two for a single belt segment, depending on access and severity.
+
+### Emergency re-tension (Emergency)
+- Skip leisurely strip where possible; **pull existing lattice tighter** and splice under load.  
+- Faster surface recovery.  
+- **Cost at the source:** haste pulls harder on the feedstock. Collection-hall filaments run denser and hotter for a while; in the source chamber the draw on Aurora increases. Rank-and-file only see “the walls are generous today.” Eveline feels the real bill.  
+- After emergency work, a follow-up standard pass is supposed to relax the over-tight path. That follow-up is sometimes delayed.
+
+### Tools and constraints
+- Tools never fully “bite” the live ripple; they guide and twist. Once cord is densified, ordinary smithing logic applies (clamp, cut, splice) plus Grid-specific tension discipline.  
+- **Nothing goes back through the wall.** Failed cord is disposed by guild procedure (ash, burial, or sealed discard — pick one and keep it consistent); it is not returned to source.  
+- Repair is always **re-weave or replace**, never “reset from a switch.” The Grid has no off state, only local isolation.
+
+### Who does what
+- **Crew:** twist, feed, basic splice, watch gauges.  
+- **Senior Weaver:** tension authority, isolate/restore decisions, when to call Emergency.  
+- **Eveline:** source-end management, cascade risk, anything that requires changing how hard the lattice draws. She may never appear on the repair floor and still be the reason an emergency stops getting worse.
+
+### Table-facing use
+- Party hears of district static storms → Weavers “working a Tag on the north belt.”  
+- Party needs a district stable for a plan → negotiate timing with a senior, or interfere and risk Emergency haste.  
+- Party ever reaches collection halls → they can witness feed and twist without learning the source.  
+- Only source-chamber knowledge turns “emergency re-tension” into what it actually is: turning up extraction to save the city’s power layer.
+
+That’s the repair loop: detect as power failure, fix as craft under tension, bill the source when you rush.
