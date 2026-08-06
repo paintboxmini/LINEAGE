@@ -46,3 +46,51 @@ Ripples come out. Nothing the Weavers have tried goes back in. Officially: the s
 Doors built static over minutes. Handles stung. Metal latches crawled with a fine charge. Then the doors burst open — not swung, thrown — with a sharp bzzt and the smell of hot dust. Anyone who forced one shut got a nastier shock for the trouble; it wasn’t long before the door flew open again. Lamps in the same blocks surged and dipped in time with the discharges. The event lasted most of a week until the Weavers finished the re-tension.
 General rule for GMs
 Grid trouble reads as power trouble first: static, surges, shocks, things that should stay closed or stay open refusing to obey, lights that remember the wrong state. Keep symptoms inside the electrical/utility register. No free-floating “wrongness” that isn’t doing the Grid’s actual job badly.
+
+**Weavers’ Repair Mechanics**
+
+### Detection
+- **Surface first:** static buildup, door discharges, lamp surge/dip, shocks on metal — localized to a district or corridor belt.  
+- **Hall instruments:** tension gauges on the cord trunks, “loud” sections (that pipe-surf sound rises or goes uneven), filaments from the wall thinning, clustering, or sticking to tools.  
+- **Senior read:** experienced Weavers can feel slack vs over-tight by hand on the cord; Eveline can read wider lattice state without walking every belt.
+
+### Classification
+| Grade | Meaning | Response |
+|-------|---------|----------|
+| **Watch** | Minor uneven tension, mild surface static | Log, schedule into next shift’s pass |
+| **Tag** | Clear local fault; power symptoms ongoing | Section tagged, traffic limited if needed, repair crew assigned |
+| **Emergency** | Rapid worsening, repeated discharges, risk of cascade into adjacent belts | All hands on that belt; haste rules apply (see below) |
+
+### Standard repair (Tag)
+1. **Isolate** — clamp or pin the section so slack doesn’t run into neighboring weave.  
+2. **Strip** — cut out the failed cord length; failed material is treated as dead (no longer warm, filaments go inert).  
+3. **Feed** — draw fresh cord from the collection halls (new ripples → twist → cord).  
+4. **Splice / re-weave** — work the new cord into the Grid path under measured tension; match the interleave with the physical mains and supports in that corridor.  
+5. **Charge test** — controlled restore; watch surface district for residual static.  
+6. **Sign off** — senior marks the section clear; instruments return to baseline.
+
+Time scale: hours to a day or two for a single belt segment, depending on access and severity.
+
+### Emergency re-tension (Emergency)
+- Skip leisurely strip where possible; **pull existing lattice tighter** and splice under load.  
+- Faster surface recovery.  
+- **Cost at the source:** haste pulls harder on the feedstock. Collection-hall filaments run denser and hotter for a while; in the source chamber the draw on Aurora increases. Rank-and-file only see “the walls are generous today.” Eveline feels the real bill.  
+- After emergency work, a follow-up standard pass is supposed to relax the over-tight path. That follow-up is sometimes delayed.
+
+### Tools and constraints
+- Tools never fully “bite” the live ripple; they guide and twist. Once cord is densified, ordinary smithing logic applies (clamp, cut, splice) plus Grid-specific tension discipline.  
+- **Nothing goes back through the wall.** Failed cord is disposed by guild procedure (ash, burial, or sealed discard — pick one and keep it consistent); it is not returned to source.  
+- Repair is always **re-weave or replace**, never “reset from a switch.” The Grid has no off state, only local isolation.
+
+### Who does what
+- **Crew:** twist, feed, basic splice, watch gauges.  
+- **Senior Weaver:** tension authority, isolate/restore decisions, when to call Emergency.  
+- **Eveline:** source-end management, cascade risk, anything that requires changing how hard the lattice draws. She may never appear on the repair floor and still be the reason an emergency stops getting worse.
+
+### Table-facing use
+- Party hears of district static storms → Weavers “working a Tag on the north belt.”  
+- Party needs a district stable for a plan → negotiate timing with a senior, or interfere and risk Emergency haste.  
+- Party ever reaches collection halls → they can witness feed and twist without learning the source.  
+- Only source-chamber knowledge turns “emergency re-tension” into what it actually is: turning up extraction to save the city’s power layer.
+
+That’s the repair loop: detect as power failure, fix as craft under tension, bill the source when you rush.
