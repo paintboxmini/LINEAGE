@@ -42,7 +42,7 @@ Open rolling fields north of the shoreline, broken up by rocky outcroppings — 
 
 **Wrackclaw** (`bestiary/wrackclaw.md`, CTR 4) — the coast's first real threat, encountered on the sand itself or just past it. A swarm of small scavengers that reads a freshly-washed-up party the same way it reads driftwood. Doesn't drop anything worth looting — the payoff here is surviving the party's first fight with nothing but starting cards, not gear.
 
-**Hullback** (`bestiary/hullback.md`, CTR 6) — a solitary, much older predator holding the rock outcroppings inland of the tideline. A real, optional risk: avoidable by giving the rocks distance, genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from — see `items/washed-ashore-items.md`.
+**Hullback** (`bestiary/hullback.md`, CTR 10 — calibrated against the full party, not a single attacker) — a solitary, much older predator holding the rock outcroppings inland of the tideline. A real, optional risk: avoidable by giving the rocks distance, genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from — see `items/washed-ashore-items.md`.
 
 **The open tideline** — searchable without a fight, mostly texture, a place a GM can seed a second small find if the table wants one without routing everything through Hullback. See `items/washed-ashore-items.md`, The Open Tideline.
 

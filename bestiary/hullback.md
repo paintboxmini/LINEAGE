@@ -4,12 +4,14 @@
 
 *Solitary field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`). One per stretch of coast; a GM running a second one anywhere nearby should have a reason.*
 
-**Mind 1 / Body 4 / Soul 1 — HP 18**
-**Creature Threat Rating:** 6
+**Mind 2 / Body 6 / Soul 2 — HP 24**
+**Creature Threat Rating:** 10
 
-**Deck (6 — 1 Blue / 4 Red / 1 Green):** PATIENT WAIT *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE *(red)* · DRAG UNDER *(green)*
+*CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9 (`CLAUDE.md`, Stat Blocks), and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Sitting at 10 rather than pushed toward actual dungeon-boss territory (Root Heart 11 bespoke, Minotaur 14, Gluttony Abomination and the First Bundle both 17) keeps this a real early-game risk, not a wall.*
 
-Deck size = total stats. 3 signature + 3 core to fill: HULLGUARD, PATIENT WAIT, DRAG UNDER (signature — `cards/hullback.md`) + STRIKE, ENDURE, BRACE (R, core).
+**Deck (10 — 2 Blue / 6 Red / 2 Green):** PATIENT WAIT, TRACE *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE, IRON GRIP, PULL *(red)* · DRAG UNDER, STEADFAST *(green)*
+
+Deck size = total stats. 3 signature + 7 core to fill: HULLGUARD, PATIENT WAIT, DRAG UNDER (signature — `cards/hullback.md`) + STRIKE, ENDURE, BRACE, IRON GRIP, PULL (R, core), TRACE (B, core), STEADFAST (G, core).
 
 ---
 
