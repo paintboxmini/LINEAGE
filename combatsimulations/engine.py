@@ -1071,6 +1071,15 @@ class Duel:
         # its own; no early return here.
         atk_color = _effective_color(self, card)
 
+        # AXIOM, attacker side: `can_attack()` already kept a banned color out
+        # of `card` (it was never a legal selection), so this reveal — this
+        # attack — is the "next reveal" the ban named, consumed here whether
+        # or not it would have mattered. Mirrors the defender-side one-shot
+        # consumption below; a banned combatant playing defense still clears
+        # it the same way if they reveal first as an attacker instead.
+        if attacker.axiom_ban:
+            attacker.axiom_ban = None
+
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
         if defender._communion_active:   # COMMUNION: party scries 1, whatever the outcome
@@ -1478,6 +1487,15 @@ class Duel:
 
 # --- range legality -----------------------------------------------------------
 def can_attack(attacker, defender, card):
+    # AXIOM (card-glossary.md): "cannot play that color on their next
+    # reveal" — a selection-time filter, not a post-reveal whiff, so it has
+    # to live here, the one chokepoint every card-selection site (both
+    # policies.py's legal_attacks, team_policies.py's legal_attacks_team,
+    # and content.py's DOUBLE DOWN bonus attack) already calls through.
+    # Reads card.color directly, not the effective/mirrored color — same
+    # deliberate choice as the existing defense-side check in attack().
+    if attacker.axiom_ban and card.color == attacker.axiom_ban:
+        return False
     if card.reach == 'both':
         return True
     both_front = attacker.position == 'frontline' and defender.position == 'frontline'

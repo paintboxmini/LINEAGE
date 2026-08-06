@@ -19,6 +19,11 @@ def legal_attacks_team(battle, me, target):
 
 
 def can_attack_t(attacker, target, card):
+    # AXIOM (card-glossary.md) — see engine.py's can_attack() for the full
+    # reasoning. Same selection-time filter, mirrored here since this file
+    # doesn't import engine.py's version.
+    if attacker.axiom_ban and card.color == attacker.axiom_ban:
+        return False
     if card.reach == 'both':
         return True
     both_front = attacker.position == 'frontline' and target.position == 'frontline'

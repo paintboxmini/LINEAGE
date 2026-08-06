@@ -264,6 +264,12 @@ class Battle:
         # mirror/copy) — _rps() handles that case on its own.
         atk_color = _effective_color(self, card)
 
+        # AXIOM, attacker side — see engine.py's Duel.attack() for the full
+        # reasoning. can_attack_t() already kept a banned color unselectable,
+        # so this reveal consumes the ban regardless.
+        if attacker.axiom_ban:
+            attacker.axiom_ban = None
+
         if defender._weathered:   # WEATHERED: heal 2 each time attacked, whatever the outcome
             self.heal(defender, 2)
         if defender._communion_active:   # COMMUNION: party scries 1, whatever the outcome
