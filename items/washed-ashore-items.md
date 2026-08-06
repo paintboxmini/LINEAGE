@@ -11,8 +11,8 @@ Available once Hullback (`bestiary/hullback.md`) is killed, driven off, or aband
 **WRECK-IRON CUTTER**
 *Weapon — a boarding blade, pitted with rust but the edge still holds*
 *Source: Hullback's den*
-*Reference price: ~200 gold (Tier 1)*
-A Tier 1 weapon (`rules/equipment.md`): the first successful attack against an enemy each combat inflicts Weak.
+*Reference price: ~30 gold*
+The first successful attack against an enemy each combat inflicts Weak. **Breaks after 2 combats** — the rust wins eventually, whether or not it's swung again. Not a permanent Tier 1 item (`rules/equipment.md`); priced and durability-limited to match — a real Tier 1 effect, borrowed for two fights, not owned outright.
 
 ---
 

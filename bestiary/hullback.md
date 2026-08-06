@@ -4,14 +4,14 @@
 
 *Solitary field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`). One per stretch of coast; a GM running a second one anywhere nearby should have a reason.*
 
-**Mind 2 / Body 6 / Soul 2 — HP 24**
-**Creature Threat Rating:** 10
+**Mind 3 / Body 7 / Soul 3 — HP 27**
+**Creature Threat Rating:** 13
 
-*CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9 (`CLAUDE.md`, Stat Blocks), and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Sitting at 10 rather than pushed toward actual dungeon-boss territory (Root Heart 11 bespoke, Minotaur 14, Gluttony Abomination and the First Bundle both 17) keeps this a real early-game risk, not a wall.*
+*CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9 (`CLAUDE.md`, Stat Blocks), and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Now roughly level with this repo's actual dungeon bosses (Root Heart 11 bespoke, Minotaur 14) rather than sitting below them — deliberately, per the deck-size note below, since the bigger numbers are paired with a smaller toolkit rather than a bigger one.*
 
-**Deck (10 — 2 Blue / 6 Red / 2 Green):** PATIENT WAIT, TRACE *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE, IRON GRIP, PULL *(red)* · DRAG UNDER, STEADFAST *(green)*
+**Deck (6 — 1 Blue / 4 Red / 1 Green):** PATIENT WAIT *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE *(red)* · DRAG UNDER *(green)*
 
-Deck size = total stats. 3 signature + 7 core to fill: HULLGUARD, PATIENT WAIT, DRAG UNDER (signature — `cards/hullback.md`) + STRIKE, ENDURE, BRACE, IRON GRIP, PULL (R, core), TRACE (B, core), STEADFAST (G, core).
+**Bespoke — deck size does not equal total stats.** The formula baseline for Mind 3/Body 7/Soul 3 would be a 13-card deck; this one is fixed at 6, Drew's explicit call. Signature cards stay HULLGUARD, PATIENT WAIT, DRAG UNDER (`cards/hullback.md`); core fill is STRIKE, ENDURE, BRACE (R) — the same six cards this creature ran before its second stat bump, just backing bigger numbers now. It hits harder and survives longer, but doesn't get more tools for it — a smaller, more predictable hand than its own stat line would normally buy.
 
 ---
 
