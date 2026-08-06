@@ -461,3 +461,13 @@ Effect: Apply Initiative Shift +1 to yourself.
 Defensive Bonus: Apply Initiative Shift +1 to an ally.
 Range: Both
 *"Sooner is its own kind of strength."*
+
+---
+
+**INTIMIDATE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: If this attack deals damage, defender gains Weak and Staggered.
+Defensive Bonus: Attacker gains Weak.
+Range: Ranged
+*"They already believe they have lost."*

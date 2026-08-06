@@ -1,18 +1,6 @@
-GRAPPLE
-RED — BODY
-Attack: Body + d6
-Effect: Anchored — Defender gains Rooted.
-Defensive Bonus: Anchored — Attacker gains Rooted.
-Range: Melee
-"Once you have them, you both stay."
+Four of the original five shipped 2026-08-05: GRAPPLE and SHIELD BASH → `cards/red-body.md`; INTIMIDATE → `cards/green-soul.md`; CALLED SHOT → `cards/blue-mind.md`. Full reasoning in `memory.md`.
 
-INTIMIDATE
-GREEN — SOUL
-Attack: Soul + d4
-Effect: If this attack deals damage, Defender gains Weak and Staggered.
-Defensive Bonus: Attacker gains Weak.
-Range: Ranged
-"They already believe they have lost."
+One held pending Drew's call — reads too close to the existing SUPPORT card (`cards/green-soul.md`) to ship as a straight addition:
 
 AID
 GREEN — SOUL
@@ -21,19 +9,3 @@ Effect: Target ally gains Deadly and draws 1.
 Defensive Bonus: Target ally gains Resist and draws 1.
 Range: Ranged
 "I make the opening. You take it."
-
-CALLED SHOT
-BLUE — MIND
-Attack: Mind + d4
-Effect: If this attack deals damage, defender gains Blind and Vulnerable.
-Defensive Bonus: Gain Evade.
-Range: Ranged
-"Not the body. The eye. The hand. The joint."
-
-SHIELD BASH
-RED — BODY
-Attack: Body + d4
-Effect: Defender gains Staggered.
-Defensive Bonus: Counter Attack. Gain Resist. on a clean win only.
-Range: Melee
-"The shield is also a weapon."

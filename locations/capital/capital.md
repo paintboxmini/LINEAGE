@@ -10,6 +10,41 @@ Eclipseria is not safe. It is merely the most legible place left.
 
 ---
 
+## Arrival — The Southwest Gate
+
+The road drops out of the Fog Basin and the wall rises ahead like a cliff.
+
+The gate itself is enormous — wrought iron, black and cold, wide enough for three wagons abreast but tall enough that the top is lost in the permanent yellow-grey haze. Gargoyles line the arch and the flanking towers: stone creatures in every stage of mid-snarl, mid-crouch, mid-leap. Some look purely ornamental. Others look like they might decide otherwise if the wrong person walks under them.
+
+Two heavy portcullises, one behind the other. The space between them is a kill box, arrow slits on both sides and murder holes overhead.
+
+The guards are unfriendly by policy, not by mood. They wear the Bear's colours — dark leather over mail, the stylised bear-head badge on the left shoulder (Lord Cedric, `world/the-regency.md` — city walls and military security is his sphere). They do not banter. They do not smile for newcomers. They have seen too many people try to walk interesting things into the capital.
+
+**Procedure at the gate:**
+1. Halt. Weapons stay sheathed and visible.
+2. One guard steps forward with a slate — name, origin, stated business. They write slowly and deliberately.
+3. Thorough search. Bags opened on the stone. Cloaks patted. Obvious magical items get a longer look and a quiet note on the slate. They aren't looking for excuses to refuse entry — they're looking for anything that should be taxed, registered, or quietly reported upward.
+4. Entry fee, per the table below.
+5. A stamped clay token or paper pass is issued. *"Keep it on you. Lose it and you're a problem."*
+
+They do not explain the rules of the city. They do not offer directions beyond *"Marketplace is central. Don't make us come looking."*
+
+If the party is carrying anything that smells of the Weald, the Wallows, or open Unheld influence, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
+
+**Gate fees, per person:**
+
+| Declared stay | Fee | Notes |
+|---|---|---|
+| 1 day | 5 silver | Cheap enough that almost anyone can enter |
+| 3 days | 1 gold | Short visit |
+| 1 week | 3 gold | Standard adventurer stay |
+| 1 month | 10 gold | Serious time in the city |
+| Indefinite / open | 25 gold | Or "register as resident" — higher friction |
+
+A day pass is trivial, a week is comfortable for a party a couple of sessions into their pacing, and a month still sits well below the cost of actual gear (`rules/equipment.md`). Overstaying or losing the pass makes you "a problem" — left to the table, not a stated mechanical penalty.
+
+---
+
 ## What Lies Beneath
 
 Three layers belong to the capital, stacked directly under it: **topside** — the temples, the Marketplace, the Gilded Tusk; **the Waterworks**, a citywide utility layer running under the entire capital, not just the mine shaft — the bazaar and tavern are a small, hidden pocket inside it, not a level of their own; and the Demon Court's domain below that, the capital's actual prison, run like a court in miniature and never once called a prison out loud. Below the Demon Court's tunnels, the mine stops behaving like a mine and the capital's jurisdiction stops meaning anything — that isn't the city anymore, whatever's administering it isn't the Regency. Full structure at `locations/capital/the-waterworks.md`, `locations/capital/the-wallows.md`.
@@ -17,6 +52,20 @@ Three layers belong to the capital, stacked directly under it: **topside** — t
 ---
 
 ## The Marketplace
+
+The gate spits you out into noise.
+
+The road widens into a broad plaza of cracked flagstones, and the Marketplace unfolds from there in every direction at once — a living labyrinth of canvas, timber, and old stone. Stalls lean against one another like drunks. Awnings overlap. Alleys appear and disappear depending on which way the crowd is moving. Somewhere a bell is ringing that no one seems to answer.
+
+The light is the same flat yellow-grey as the rest of the world, but down here it is thick with motion. Dust, spice, lamp-smoke, and the particular smell of too many people in one place for too long. Frankincense drifts from the Temple District. Something fried and unfamiliar cuts through it.
+
+Vendors call without urgency. They have seen every kind of traveler and have already decided what you are worth. A woman in layered scarves sells vials of something that changes colour when you look away. A man with paint-stained fingers works on a portrait that shows no face at all — only shifting symbols. Children weave between legs, some of them selling nothing, some of them selling information, some of them just watching.
+
+High above the stalls, the Citadel's towers are visible between the hanging lanterns. Closer, the white marble of older buildings shows through the market's temporary skin.
+
+Duskwicks will start appearing once the lamps are lit — small, quiet, working the gaps. For now it is still full day, or what passes for it.
+
+The crowd does not part for you. It simply continues, and you are already inside it.
 
 A sprawling labyrinth of stalls and shops at the city's center. Goods from every region and a few places that aren't named. Merchants from distant cultures trade alongside each other with the practiced indifference of people who have seen too much to be surprised.
 
@@ -30,8 +79,9 @@ Key features:
 **Vendors that matter for gear:**
 - **Nessa Coil — Crossroads Sundries.** Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Full stock: `items/capital-items.md`.
 - **Brother Alden — Resonant Goods.** Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still keeps their archive for secrets paid in kind. Full stock: `items/capital-items.md`.
+- **The woman in layered scarves** — the vial-seller glimpsed above has a name for her stall, not herself: **Layered Scarves**, ordinary healing draughts with one unexplained quirk (the liquid shifts colour whenever nobody's looking at it). Four more locked general stalls beyond her — **Iron & Twine** (tools, rope, travel gear), **The Salt Pot** (hot food, rations), **Quill & Measure** (writing, maps, courier service), **Odds & Ends** (second-hand curios). Full stock: `items/capital-items.md`.
 
-Ordinary stall food, cloth, and tools stay GM-improv. The two named counters are the mechanical shelves.
+Ordinary stall food, cloth, and tools beyond these five stay GM-improv. The named counters are the mechanical shelves.
 
 The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
 

@@ -107,6 +107,10 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **The Quiet Index** *(Artifact — Knowledge)* — start-of-combat Scry 1; 1/session read an author's intent on something written/carved. ~400 gold + a true secret archived.
 - **Cord of the Held** *(Artifact — Love/Binding)* — 1/combat prevent an ally Collapse (they stay at 1 HP); then inert until long rest. ~250 gold + a real vow.
 
+**Marketplace — General Stalls** *(Layered Scarves, Iron & Twine, The Salt Pot, Quill & Measure, Odds & Ends)*
+- **Layered Scarves** — healing draughts, no formal Positive Status Effect: 4/8/12 HP at 15/30/45 gold, matching the existing Luminova rate. Unexplained colour-shift quirk, cosmetic only.
+- The other four are non-mechanical: rope, blades, food, maps, courier service, and second-hand curios, priced to sit inside the existing economy. Full stock: `items/capital-items.md`.
+
 ---
 
 ## Kaine (Storm Seat Artifact)

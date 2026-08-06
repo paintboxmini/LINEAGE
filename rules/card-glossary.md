@@ -10,11 +10,11 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 315 card blocks in `cards/*.md` — 312 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 319 card blocks in `cards/*.md` — 316 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade").*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
-**(5) Counter Attack**
+**(6) Counter Attack**
 Deal this card's Attack damage back to the attacker.
 
 **(1) Debuff**
@@ -35,16 +35,16 @@ This attack's base damage (stat + die, including any Deadly/Weak already rolled 
 **(17) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
-**(17) Weak**
+**(18) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(11) Anchored**
-You gain a specific benefit that persists as long as you do not change positions. The benefit is stated on the card and triggers at the start of each of your turns. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
+**(12) Anchored**
+A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
-**(18) Blind**
+**(19) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
-**(45) Evade**
+**(46) Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -82,7 +82,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(45) Resist**
+**(46) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -96,10 +96,10 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(6) Vulnerable**
+**(7) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
-**(22) Rooted**
+**(23) Rooted**
 Cannot voluntarily change position until the start of your next turn. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
 
 **(4) Rushdown**
@@ -111,7 +111,7 @@ You may change positions without spending your action — a free move in additio
 **(29) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
-**(15) Staggered**
+**(17) Staggered**
 The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
 **(21) Thorns X**

@@ -120,6 +120,84 @@ Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still
 
 ---
 
+## Marketplace — General Stalls
+
+Five locked, stocked stalls beyond Nessa Coil and Brother Alden — ordinary Marketplace commerce, priced to sit cleanly inside the existing economy. Everything else on offer (stall food, cloth, incidental tools) stays GM-improv.
+
+### Layered Scarves
+
+The woman glimpsed selling vials that "change colour when you look away" — ordinary healing draughts with one persistent, unexplained quirk. She's never offered a reason and doesn't find the question interesting.
+
+**Minor Draught** — Heal 4 HP. ~15 gold. Clear red when watched; drifts through green, violet, and amber the moment attention leaves it.
+**Standard Draught** — Heal 8 HP. ~30 gold. Deep crimson under observation; shifts through bruised purple to flat grey unobserved.
+**Strong Draught** — Heal 12 HP. ~45 gold. Almost black-red in sight; turns a pale, untrustworthy blue the instant no one's watching.
+
+She keeps them in a shallow tray lined with dark cloth, takes the coin, and offers nothing further.
+
+---
+
+### Iron & Twine
+
+Practical tools, rope, basic weapons, travel gear.
+
+| Item | Effect / Notes | Price |
+|---|---|---|
+| Hemp Rope (50 ft) | Ordinary rope | 5 silver |
+| Travel Pack | Holds a reasonable amount of gear | 1 gold |
+| Whetstone | Keeps an edge | 3 silver |
+| Basic Short Blade | Simple melee weapon, no tier bonus | 8 gold |
+| Heavy Cloak | Warm, waterproof enough | 2 gold |
+| Iron Spikes (set of 10) | Climbing / utility | 5 silver |
+| Lantern + oil (4 hrs) | Ordinary light | 8 silver |
+
+---
+
+### The Salt Pot
+
+Hot food and travel rations. Always busy.
+
+| Item | Effect / Notes | Price |
+|---|---|---|
+| Bowl of Stew | Heal 2 HP, fills you | 4 silver |
+| Travel Rations (3 days) | No mechanical effect, just food | 1 gold |
+| Salted Meat Bundle | 1 week of protein | 2 gold |
+| Hot Tea | Small comfort | 2 silver |
+| Fried Something-on-a-Stick | Heal 1 HP | 3 silver |
+
+---
+
+### Quill & Measure
+
+Writing, city maps, messages.
+
+| Item | Effect / Notes | Price |
+|---|---|---|
+| Blank Journal | 50 pages | 1 gold |
+| Ink & Quills (set) | — | 5 silver |
+| Simple City Map | Accurate street-level map of topside capital | 2 gold |
+| Message Running (in-city) | Same-day delivery inside the walls | 5 silver |
+| Sealed Letter Service | Courier to another major hub, 1–2 weeks | 3 gold |
+
+Not the Cartographer's kind of map (`characters/kess.md`) — an ordinary printed street plan of topside, bought for coin, telling you nothing she couldn't be paid to leave out.
+
+---
+
+### Odds & Ends
+
+Second-hand goods and minor curios. Everything slightly used.
+
+| Item | Effect / Notes | Price |
+|---|---|---|
+| Used Backpack | Slightly worn but serviceable | 8 silver |
+| Brass Compass | Points north most of the time | 1 gold |
+| Bundle of Candles (12) | — | 4 silver |
+| Old Cloak (patched) | Warm enough | 5 silver |
+| Small Mirror | Ordinary | 3 silver |
+| Mystery Box (locked) | Contents unknown; she won't open it | 5 gold |
+| Worn Deck of Cards | Ordinary playing cards | 2 silver |
+
+---
+
 ## Related Documents
 
 - `locations/capital/capital.md` — the Marketplace, the Temple District

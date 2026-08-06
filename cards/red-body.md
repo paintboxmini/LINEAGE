@@ -530,3 +530,23 @@ Effect: Defender gains Blind.
 Defensive Bonus: Attacker gains Blind.
 Range: Melee
 *"They never see the one that matters."*
+
+---
+
+**GRAPPLE**
+RED — BODY
+Attack: Body + d6
+Effect: Anchored — Defender gains Rooted.
+Defensive Bonus: Anchored — Attacker gains Rooted.
+Range: Melee
+*"Once you have them, you both stay."*
+
+---
+
+**SHIELD BASH**
+RED — BODY
+Attack: Body + d4
+Effect: Defender gains Staggered.
+Defensive Bonus: Counter Attack. Gain Resist. On a clean win only.
+Range: Melee
+*"The shield is also a weapon."*
