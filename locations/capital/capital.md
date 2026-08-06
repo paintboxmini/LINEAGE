@@ -83,7 +83,35 @@ Key features:
 
 Ordinary stall food, cloth, and tools beyond these five stay GM-improv. The named counters are the mechanical shelves.
 
+**Marketplace Regulation.** Every stall — permanent or a single day's pitch — operates under standing rules enforced by the **Marketplace Wardens**, Lady Elara's own staff, not any single craft guild. A stall needs a **Marketplace License**: a stamped paper plus a small brass token hung visibly; day-pitch sellers (blanket traders, food carts) pay a daily fee instead and get a chalk mark on the nearest pillar. Scales and measures are checked against the Citadel standard twice a year. Goods have to be what the sign claims — a healing draught that does nothing is a fine, one that actively harms is expulsion and possible criminal charge. Open soul-economy trades (memories, experiences, crystallized cards) are illegal topside; that traffic belongs in the Underground Bazaar. Enforcement is a three-strike ladder — warning, fine, stall closed or license revoked — and the Wardens care more about public order and Elara's revenue than moral purity: quiet, commercial magic is tolerated, flashy or dangerous working gets shut down fast.
+
+**License fees, annual, per stall:**
+
+| Stall Type | Fee | Notes |
+|---|---|---|
+| Day pitch / blanket | 5 silver/day | Chalk mark only, no permanent token |
+| Small fixed stall | 8 gold | One table or narrow frontage |
+| Standard stall | 15 gold | Typical covered stall |
+| Large / corner stall | 30 gold | Extra space, high-traffic location |
+| Multi-stall operation | 50 gold | Two or more adjacent pitches under one license |
+
+Late renewal adds 50% after 30 days, then the license is suspended. What the rules deliberately leave alone: the Underground Bazaar and everything beneath it, private deals inside privacy tents or back rooms, the Pig's debt system, and most of the actual smuggling — Cellar Custodians territory. See `factions/the-cellar-custodians.md`.
+
 The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
+
+---
+
+## The Inner Precinct
+
+Past the Marketplace's noise, closer to the Citadel, the chaos gives way to something more deliberate. The Inner Precinct is the true administrative ring around the seat of power — four Halls, each standing under the physical and political shadow of the council member who runs it. There are no intermediary guildmasters here; the council members are the operational heads of their own branches, and the Halls are simply where that work happens.
+
+**Traders' Hall.** Closest to the Marketplace edge and the most publicly accessible of the four — a broad, low building of pale stone, arches and long counters open to the day, a constant low murmur of voices and shifting paper. Licenses, Wardens, disputes, the daily commercial paperwork. Lady Elara's people work here; she rarely does.
+
+**Custodians' Hall.** Sunk half a storey into the ground, darker stone, iron-bound doors. The air leaking out smells of oil, wet rock, hot metal — chimneys and vent stacks on the roof like breathing apparatus for something larger underneath. Shift boards, tool storage, the public face of the water system. Controlled entry. Lady Eveline's infrastructure arm, same as the Weavers' Hall below.
+
+**Weavers' Hall.** Narrower and taller, close-fitted stone, high thin windows that let in light but little sound. A single carved lintel shows a simplified loom. The upper rooms are ordered and quiet — bolt racks, pattern tables, soft-footed clerks handling surface textile and lighting contracts. The lower levels are restricted and colder. The building feels tightly held together, as if the stones were under the same tension as the work done within. Also Eveline's.
+
+**Adventurers' Hall.** Squat, square, plainly military — thick walls, narrow windows, a small drill yard at the side, a single reinforced door under a plain iron sign. A long contract board, a scarred registration counter, weapon racks kept locked. It reads like a barracks annex that was told to deal with civilians and never quite softened, because that's close to what it is: the public desk for the **freelancer branch of Lord Cedric's military**. A registered party is an irregular unit under the Bear's authority, not a member of some separate guild — contracts are security and reconnaissance work the city doesn't want on its permanent payroll, and discipline, blacklisting, and priority of work all flow from Cedric's office. Most parties, this one included, will meet the city through this counter before they meet anyone on the council directly.
 
 ---
 

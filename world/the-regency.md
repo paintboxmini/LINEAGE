@@ -57,6 +57,22 @@ Elara's Wardens occasionally "inspect" the temple precinct and are received with
 
 ---
 
+## Lady Elara — Daily Market Operations
+
+She does not walk the stalls every morning. She does not need to.
+
+**Morning.** The Marketplace Wardens — her direct staff — open the day from the Traders' Hall (`locations/capital/capital.md`, The Inner Precinct): overnight incident reports, licenses due or overdue, stalls that failed to open, the night-shift gate tallies. A short written summary reaches her office in the Citadel by mid-morning. She reads it once; anything that smells of real money or real trouble gets a second look, everything else is already handled.
+
+**Midday.** She works the private ledger — tariffs, license renewals, the common-fund percentage, and the quieter side-arrangements that keep certain high-volume traders cooperative. She rarely issues direct orders. A name, a stall, a shipment gets a single notation, and the Wardens understand exactly what the mark means.
+
+**Afternoon.** Selective presence. Most days she doesn't appear in the Marketplace at all. The days she does, it's deliberate — a slow walk through one section, a short conversation with a specific vendor, a visible pause at a stall that's been causing friction. The visit itself is the message. She doesn't raise her voice. The Fox's presence is enough to settle or unsettle an entire row.
+
+**Evening.** Final review — gate numbers, unusual transactions the Wardens flagged, goods that bled across from the Underground Bazaar (she doesn't control the Pig's domain, but she tracks it). Tomorrow's priorities are decided here and left on the desk for the morning staff.
+
+She does not set individual stall prices, does not personally collect fines, does not touch the soul economy or card trading — the Pig's layer, not hers — and does not explain herself. The Marketplace runs because her systems run. When something breaks, the break is usually someone testing whether the Fox is still paying attention. She is.
+
+---
+
 ## The Pendragon Attempt (GM Context)
 
 *This is the buried core of Eclipseria's political history. Do not surface it prematurely.*
@@ -89,6 +105,26 @@ The first claim failed. The council has not stopped. The current long-term proje
 
 **Isabella and Percival:**
 Recruited after the attempt. They inherited power without full knowledge of its source. Percival is actively investigating — the Abyssal Ruins work is not civic scholarship. Isabella's position is undetermined. *Both are table discoveries.*
+
+---
+
+## Council Dynamics — Power Struggles (GM Context)
+
+*Texture for how these seven actually treat each other, not a plot to execute. Nobody on the council states any of this out loud.*
+
+**Oswald vs. almost everyone.** He's openly consolidating power around the Prince while privately preparing a second attempt on the Seat of Binding (The Pendragon Attempt, above). Every other original member has reason to watch him — Elara and Archibald both lose ground if he centralizes further, and Cedric's military loyalty is the prize he most wants and least fully owns. The letter hidden at Table #9 (`locations/capital/gilded-tusk.md`) is addressed to Percival and names exactly this plan — whether it ever actually reaches him is a table discovery, not a settled fact.
+
+**Elara vs. Archibald.** Open market against underground market. She tracks every coin that moves in the light; he owns the economy that moves in the dark. They need each other — goods bleed both ways — and resent each other for it. The Cellar Custodians sit in the middle of that friction; Eveline holding them is what keeps either side from simply seizing the tunnels. See `factions/the-cellar-custodians.md`.
+
+**Cedric vs. Oswald.** Cedric controls the walls, the gates, and now the Adventurers' Hall's irregulars (`locations/capital/capital.md`, The Inner Precinct) — the only council member who can put armed force on the street without asking anyone's permission. Oswald needs that force loyal. Cedric hasn't fully given it.
+
+**Eveline vs. the table.** She holds both halves of critical infrastructure — water and the Grid — never speaks, never votes, and has outlasted the records. Everyone assumes neutrality. No one is certain of it. That both infrastructure wings answer to her office is a quiet veto: any serious move against her risks the city's actual survival. See `factions/the-weavers.md`, The Source Chamber.
+
+**Percival vs. the original five.** He's the only one actively studying the rifts, and he doesn't carry the Seat-scar the original five all share — which means he's starting to dig without knowing why certain doors don't open. Isabella's position relative to him is undetermined.
+
+**Isabella.** Least defined of the seven. Contracts and legal maneuvering give her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted.
+
+**Working balance.** Oswald pushes upward and inward. Elara and Archibald circle each other over the two economies. Cedric holds the sword and hasn't decided whose hand it ultimately serves. Eveline holds the foundation and says nothing. Percival digs. Isabella watches the contracts. The council functions because no single member can yet afford to break it — that, not any real trust, is what's keeping the peace.
 
 ---
 
