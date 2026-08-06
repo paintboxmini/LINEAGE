@@ -106,7 +106,18 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
 
-**Temple of the Forge** — the working counter, not the shrine. **Harlan Vetch**, master smith, runs the weapons and the high rack (Tier 2 on display). **Sera Vetch** fits armor, and holds a piece until the party agrees who wears it. Tier 1 arms and plate, priced to the Session 5 curve. Full stock and effects: `items/capital-items.md`.
+**Temple of the Forge** — the working counter, not the shrine. You hear it before you see it: hammers, the low roar of the main hearth, the sharp hiss of quenching metal. Dark, soot-stained stone, iron-bound shutters for the night. No grand idol in the courtyard — a single massive anvil stands under open sky instead, scarred by generations of ceremonial and working strikes. Offerings left on it are small tools, broken blades, a pinch of good ore. Coin left there is politely returned; the Forge does not take money as worship.
+
+**Harlan Vetch**, master smith — older, heavy-shouldered, decides whether a commission is accepted, and speaks for the temple when something more than a simple purchase is required. Runs the weapons and the high rack (Tier 2 on display). To him the work itself is the offering: a blade forged for profit alone is a lesser blade, and a piece rushed or dishonestly made will fail exactly when it's needed most — not metaphor to Harlan, observed fact. **Sera Vetch** fits armor, and holds a piece until the party agrees who wears it. Tier 1 arms and plate, priced to the Session 5 curve. A rotating **Duty Smith** tends the public counter for everything smaller — sharpening, mending, re-hafting, priced in silver, same day if the queue allows.
+
+**Three independent artisans** rent hearth space under the temple roof — not clergy, paying for heat and anvil time and the right to sell under the Forge's name:
+- **Brannok "Sparks"** — fast, reliable blades and tools, nothing fancy. Friendly, slightly manic, always upselling a better edge. Won't touch armor or anything that calls itself "art." Typical stock: ordinary weapons, occasionally a Tier 1 short blade when he has the metal for it.
+- **Sister Calda** — armor built for what actually fails in a fight, not for looking good failing. Once worked the city walls under Cedric's people; left the formal ranks, never stopped building gear that keeps people standing. Curt, slow, will not be rushed. Typical stock: Tier 1 armor, occasionally both a flat bonus and a start-of-combat stack if the buyer pays up front and waits.
+- **Vesper** — light, precise work: rapiers, balanced sidearms, finesse components. Soft-spoken, treats metal like it has opinions. Keeps a locked cabinet, opened only for people who ask the right questions. Typical stock: Tier 1 finesse weapons, often with a conditional effect.
+
+Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The three artisans' stock is typical, not catalogued — price and build it to the same Tier 1 budget (`rules/equipment.md`) case by case.
+
+**Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle, not just habit** — see `world/the-regency.md`, Elara's entry, for the standing friction this creates.
 
 ---
 

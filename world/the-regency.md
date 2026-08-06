@@ -47,6 +47,16 @@ What different city factions say about the council. Collected from marketplace m
 
 ---
 
+## Elara vs. the Forge
+
+A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch (`locations/capital/capital.md`, Temple of the Forge) refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is a category error he treats as a quiet blasphemy. Forge-made mechanical gear is sold at the temple itself or through its resident artisans — never on the open Marketplace boards, never under a Traders' license.
+
+Elara's Wardens occasionally "inspect" the temple precinct and are received with cold courtesy and minimal cooperation. Neither side has forced a confrontation: she can slow certain metal shipments and fuel allotments; he can make certain commissions simply unavailable to anyone known to be close to the Fox. Both believe they're defending the proper order of the city — hers administrative, his religious.
+
+**Harlan's doctrine, in practice, not preached:** the work is the offering, not the product it produces. A forge fire kept for profit alone is a lesser fire — artisans may rent hearth space only because they still do the work under the temple's own roof and heat; moving that same labor to a purely commercial stall breaks the chain. A rushed or dishonestly made piece fails exactly when it's needed most, which he treats as observed fact, not metaphor. Smiths who leave for commercial license aren't banned from the district, but they lose hearth rights and the temple's protection.
+
+---
+
 ## The Pendragon Attempt (GM Context)
 
 *This is the buried core of Eclipseria's political history. Do not surface it prematurely.*
