@@ -38,6 +38,7 @@ VALID_RANGE = {'Melee', 'Ranged', 'Both'}
 VALID_TAGS = {
     'ASHFALL', 'BASIN', 'BRIARWATCH', 'COIL', 'ENGINE', 'HOLLOW', 'MASON',
     'MILESTONE', 'UNHELD', 'WEALD', 'WALLOWS', 'GLASSLIGHT', 'ABYSS',
+    'SHORELINE',
 }
 
 NAME_RE = r'^\*\*([A-Z][A-Z0-9\'’ \-,!?&]+)\*\*\s*$'

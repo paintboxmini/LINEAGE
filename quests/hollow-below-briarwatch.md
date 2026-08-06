@@ -124,7 +124,7 @@ Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clea
 
 **Split Seam (First Choke Point)**
 
-Natural fissure widened by Borrowers. Shoulder-width, low ceiling, single-file movement, sharp bend mid-way. This is the fissure Steele and Ryder crept through on the way down — a Stonecoil dormant at the bend, coiled tight and unmoving, the whole crossing made without waking it.
+Natural fissure widened by Borrowers. Shoulder-width, low ceiling, single-file movement, sharp bend mid-way. A Stonecoil sits dormant at the bend, coiled tight and unmoving — a crossing here is a crossing made without waking it, or it isn't.
 
 Confined Space Rule active — only one Frontline per side.
 

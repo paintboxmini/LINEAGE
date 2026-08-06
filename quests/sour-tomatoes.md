@@ -70,7 +70,7 @@ Do not offer the party a version of this where the father can be reasoned with. 
 
 ## Where the Kids Go
 
-Steele's orphanage — rebuilt on the site of the one that burned when he was a child living in it — is a standing answer to exactly this question. See `characters/steele.md` for his history with it. If Steele is in this party or reachable by it, the connection is direct: he built the place that didn't exist for him, and now it's real for someone else. If he isn't present, the orphanage still exists and still takes them — it just costs the party a longer trip to get there.
+An orphanage in the Fog Basin, rebuilt on the site of one that burned, is a standing answer to exactly this question — real, operating, takes children with nowhere else to go. Who rebuilt it and why is open; a GM who wants the parallel (someone who lived through the same fire, as a child, in this same building) is free to build it, but nothing here requires a specific founder. It just costs the party a longer trip to get there.
 
 ---
 
@@ -106,11 +106,10 @@ They're cherry tomatoes off her own vine, picked too late, gone soft and split. 
 
 The Odom place has no money, the family has nothing to give, and the only question the encounter actually asks is what happens to the children who are still alive. A payment would answer a different question, and a worse one.
 
-If the party takes the children somewhere — Steele's orphanage is the standing answer (`characters/steele.md`) — that is the outcome. It is not a transaction and nobody thanks them in coin.
+If the party takes the children somewhere — the rebuilt Fog Basin orphanage (see Where the Kids Go, above) is the standing answer — that is the outcome. It is not a transaction and nobody thanks them in coin.
 
 ---
 
 ## Related Documents
 
 - `locations/fog-basin.md` — where this sits in the world
-- `characters/steele.md` — Steele's orphanage, the destination for the kids

@@ -36,6 +36,20 @@ Open rolling fields north of the shoreline, broken up by rocky outcroppings — 
 
 ---
 
+## Discoverables
+
+**This opening is deliberately low-resource.** The party has clothes and weapons already in hand (flavor only — no mechanical bonus, per `rules/character-creation.md`) and nothing else: no gold, no items. Everything between the beach and the Roadhouse exists partly to answer the obvious question — *where does their first real gear actually come from* — before anyone's had a chance to earn a coin the normal way.
+
+**Wrackclaw** (`bestiary/wrackclaw.md`, CTR 4) — the coast's first real threat, encountered on the sand itself or just past it. A swarm of small scavengers that reads a freshly-washed-up party the same way it reads driftwood. Doesn't drop anything worth looting — the payoff here is surviving the party's first fight with nothing but starting cards, not gear.
+
+**Hullback** (`bestiary/hullback.md`, CTR 6) — a solitary, much older predator holding the rock outcroppings inland of the tideline. A real, optional risk: avoidable by giving the rocks distance, genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from — see `items/washed-ashore-items.md`.
+
+**The open tideline** — searchable without a fight, mostly texture, a place a GM can seed a second small find if the table wants one without routing everything through Hullback. See `items/washed-ashore-items.md`, The Open Tideline.
+
+**Pacing note.** A party that fights or avoids Hullback and searches the tideline reaches the Roadhouse with, at most, one Tier 1 weapon, one consumable, and a small handful of coin — well below where the normal gold curve would have them at this point (`rules/equipment.md`), which is the intended shape for an opening built around having nothing. Treat anything found here as a genuine windfall, not a baseline to expect again before the curve actually catches up.
+
+---
+
 ## Meeting Aege
 
 Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`locations/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as always (`characters/aege.md`) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
@@ -81,6 +95,8 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 - `locations/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
 - `locations/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
 - `locations/roadhouse.md` — where the trail leads
+- `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
+- `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid
 - `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where Aege points them
