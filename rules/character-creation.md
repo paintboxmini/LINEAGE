@@ -94,25 +94,12 @@ The Oracle answers by revealing one card from its deck and burying it again. Tha
 
 From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
 
----
-+### The Oracle’s Price
-+
-+When the flaw is declared, the Oracle answers.
-+
-+The GM draws one card from the Oracle deck, shows it to the player, and then buries it back into the deck. The player does not receive the card. This is the **Price** of naming the flaw.
-+
-+The revealed card is a glimpse of what the declaration has set in motion. It may later return through ordinary Oracle rewards, appear as a forced card, or shape a future consequence. The player is allowed to remember what they saw.
-+
-+The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
-+
-+The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
-+The Oracle is permitted to remember what it has already shown.
-+
-+Once declared, the flaw is part of the character. When fiction places the statement under pressure, the table treats it as real. The player is expected to lean into it; the GM is expected to present situations that test it. A flaw may evolve through later advancement, but the original declaration and its Price remain part of the character’s history.
-+
-+---
-+
+The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
 
+The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
+The Oracle is permitted to remember what it has already shown.
+
+---
 
 ## Hand Size
 
