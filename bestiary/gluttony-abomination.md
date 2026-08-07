@@ -4,7 +4,7 @@
 
 **Cards:** `cards/gluttony-abomination.md`
 
-**Mind 3 / Body 8 / Soul 6 — HP 30**
+**Mind 3 / Body 8 / Soul 6 — HP 33**
 **Creature Threat Rating:** 17
 
 **Deck (17 — 3 Blue / 8 Red / 6 Green):** UNNAME, VEIL, THE ROOM LEANS IN *(blue)* · GORE, TRAMPLE, CERTAIN STRIKE, REND, PULL, RECOVER, GROUNDING STANCE, ALWAYS ONE MORE *(red)* · CONSUME, PATIENCE OF STONE, HEAVE AND HAUL, SWAY, LEVEL THE FIELD, MAWS *(green)*

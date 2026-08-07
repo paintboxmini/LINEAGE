@@ -4,7 +4,7 @@
 
 **Cards:** `cards/the-first-bundle.md`
 
-**Mind 5 / Body 6 / Soul 6 — HP 24**
+**Mind 5 / Body 6 / Soul 6 — HP 29**
 **Creature Threat Rating:** 17
 
 **Deck (17 — 5 Blue / 6 Red / 6 Green):** ANOTHER JOINT, UNNAME, AXIOM, ERODE, UNMAKE *(blue)* · FENCE-POST REACH, GORE, REND, IRON GRIP, BRACE, RETALIATE *(red)* · THE WOOL IS MUSCLE, BIND, SYNCHRONY, FIELD MEDICINE, SHARED BURDEN, ROOTED OATH *(green)*

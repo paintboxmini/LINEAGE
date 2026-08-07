@@ -6,7 +6,7 @@
 
 **Cards:** `cards/root-heart-weald.md`
 
-**Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 21)*
+**Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 21 — unchanged by the 2026-08-06 HP formula update, coincidentally: 3×5+4+2 lands on the same 21 that 3×5+6 did)*
 **Creature Threat Rating:** 11
 
 

@@ -84,18 +84,16 @@ Nothing is wrong here. That is not reassuring.
 
 ## Session 1 Routing
 
-Vulture's Nest → **Roadhouse** (day 1, overnight) → Briarwatch fork west (day 2) → Briarwatch.
+Unheld Ocean shoreline (`quests/washed-ashore.md`) → **Roadhouse** (day 1) → Briarwatch (day 2). The party arrives on foot from the beach, not from Vulture's Nest — the Carrion Guide is here too, passing through on her own journey from Vulture's Nest to the Turnroot Weald, not stationed here waiting for anyone.
 
-The fork is where the Carrion Guide's route diverges. Standard path continues west. The longer path adds time, terrain, and exposure. See `locations/vultures-nest.md`.
-
-**Alternate opening:** in the "Washed Ashore" campaign start (`quests/washed-ashore.md`), the party reaches the Roadhouse on foot from the shoreline instead, and the Carrion Guide is here too — passing through on her own journey from Vulture's Nest to the Turnroot Weald, not stationed here waiting for anyone.
+**Former opening, retired:** the old riverboat start routed Vulture's Nest → Roadhouse → Briarwatch fork west → Briarwatch, with the Carrion Guide meeting the party at Vulture's Nest's east gate and a Soft Gate mechanic (`locations/vultures-nest.md`) choosing between a standard and a longer, Briar-Scratcher-marked route. Kept for reference — still fully playable if a party ever does arrive via Vulture's Nest — but no longer the default.
 
 ---
 
 ## Related Documents
 
-- `locations/vultures-nest.md` — previous stop; Carrion Guide departs from here
+- `quests/washed-ashore.md` — the campaign's opening; the party reaches the Roadhouse from here
+- `locations/vultures-nest.md` — the former opening's starting point, still a live location
 - `locations/briarwatch.md` — next stop
-- `bestiary/briar-scratcher.md` — encountered on the longer route between here and the fork
-- `quests/washed-ashore.md` — the alternate opening that also passes through here
+- `bestiary/briar-scratcher.md` — encountered on the road, in either opening
 - `quests/the-man-who-buys-wounds.md` — Weck, working this same road

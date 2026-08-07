@@ -4,7 +4,7 @@
 
 **Cards:** `cards/rootstalker-weald.md`
 
-**Mind 2 / Body 2 / Soul 3 — HP 12**
+**Mind 2 / Body 2 / Soul 3 — HP 11**
 **Creature Threat Rating:** 7
 
 

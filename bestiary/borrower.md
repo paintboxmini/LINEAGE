@@ -4,7 +4,7 @@
 
 **Cards:** `cards/borrower-hollow.md`
 
-**Mind 3 / Body 1 / Soul 2 — HP 9**
+**Mind 3 / Body 1 / Soul 2 — HP 8**
 **Creature Threat Rating:** 6
 
 

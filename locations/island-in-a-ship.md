@@ -105,11 +105,11 @@ What happens in the cave after death is not written here. That is a table discov
 
 ## Session 0 — First Visit
 
-The night the players hear the sailor's story — drinking on deck, the night before arrival in Eclipseria — the Island finds them for the first time.
+The night the players wash ashore (`quests/washed-ashore.md`) — no memory of the crossing, no ship, nothing behind them but the Unheld Ocean itself — the Island finds them for the first time.
 
 This is when characters are named and decks are built. The Oracle sees who they are before they do. Every card they draw for the rest of the campaign was seen first by someone who doesn't use her eyes.
 
-The structure on the beach their first night: the ship they're already on.
+The structure on the beach their first night: there isn't one to reflect yet — the last threshold they crossed was the Unheld itself, which has no structure at all. The island appears as bare as the Constants describe it: sand, the Oracle at her table, the cave. Nothing layered on top. The first Island a party ever sees is the plainest one they'll ever see — every later visit reflects somewhere they've actually been.
 
 ### Deck Building
 
@@ -126,5 +126,5 @@ After decks are built, players assign their stats.
 
 ## Related Documents
 
-- `locations/vultures-nest.md` — The sailor's story; how players first hear about the Island
+- `quests/washed-ashore.md` — how players first reach the Island now, the night they wash ashore
 - `rules/core-rules.md` — Card advancement mechanics

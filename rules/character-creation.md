@@ -24,15 +24,17 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Body**
 - Determines damage for Red cards (Attack: Body + die)
-- Sets your maximum HP: **(3 × Body) + 6**
+- Sets your maximum HP: **(3 × Body) + Soul + Mind** — Body's own share is weighted 3× the other two
 
 **Mind**
 - Determines damage for Blue cards (Attack: Mind + die)
 - Sets your hand size: **Mind** (minimum 2)
+- Also feeds your maximum HP, at 1× weight (see Body, above)
 
 **Soul**
 - Determines damage for Green cards (Attack: Soul + die)
 - Sets your initiative modifier: **1d6 + Soul**
+- Also feeds your maximum HP, at 1× weight (see Body, above)
 
 Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.
 
@@ -83,6 +85,40 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
 
 *Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.*
+
+---
+
+### Declaring a Price
+
+At the close of character creation the player speaks one binding statement beginning with I never, I must, I always, I cannot, Once I…, or Whenever….
+
+The Oracle answers by revealing one card from its deck and burying it again. That glimpse is the Price of the declaration. The card is not gained, but it is remembered.
+
+From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
+
+The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
+
+The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
+The Oracle is permitted to remember what it has already shown.
+
+---
+
+Examples
+
+Once I have given my word before witnesses, I treat it as part of the structure of the world.
+Whenever I am offered a safer path that requires me to look away, I refuse it.
+I never abandon someone who has trusted me.
+I cannot refuse a direct plea made in true need.
+I must keep every promise I have spoken, no matter the cost.
+I always finish what I start, even after its purpose has eroded.
+I never leave a wound I have noticed unaddressed.
+I cannot accept help that would place me in debt.
+I must name what others refuse to name.
+I always press against any constraint or oath until I know whether it holds.
+I never look away from a reflection of my own past failure.
+Once I have claimed someone as mine, I cannot leave them behind.
+Whenever the edge of the Unheld is near, I move toward it.
+I must settle every debt I carry, whether owed by me or to me.
 
 ---
 

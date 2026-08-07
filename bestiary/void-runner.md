@@ -6,7 +6,7 @@ Smuggling crew. Use stolen resonant items as weapons. Some travel with Corrupted
 
 **Cards:** `cards/void-runner.md`
 
-**Mind 2 / Body 3 / Soul 1 — HP 15**
+**Mind 2 / Body 3 / Soul 1 — HP 12**
 **Creature Threat Rating:** 6
 
 **Deck (6 — 2 Blue / 3 Red / 1 Green):** STILLNESS, OFF THE EDGE *(blue)* · STRIKE, SPARK OF VIOLENCE, BORROWED POWER *(red)* · NOTHING PERSONAL *(green)*

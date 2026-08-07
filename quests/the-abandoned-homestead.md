@@ -37,7 +37,7 @@ If a player asks what happened here, the honest GM answer is that nothing in the
 
 ## The Duskwick
 
-**The large one** — `bestiary/duskwick.md`, The Large One. Mind 4 / Body 4 / Soul 6, HP 18, Creature Threat Rating 14.
+**The large one** — `bestiary/duskwick.md`, The Large One. Mind 4 / Body 4 / Soul 6, HP 22, Creature Threat Rating 14.
 
 It is in the doorway. Not inside, not outside — in the band where the light stops, which is where a Duskwick is always going to be if a building offers it one. It has been eating well and it has not had to work for it.
 
