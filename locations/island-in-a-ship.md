@@ -113,6 +113,31 @@ This is when characters are named and decks are built. The Oracle sees who they 
 
 The structure on the beach their first night: there isn't one to reflect yet — the last threshold they crossed was the Unheld itself, which has no structure at all. The island appears as bare as the Constants describe it: sand, the Oracle at her table, the cave. Nothing layered on top. The first Island a party ever sees is the plainest one they'll ever see — every later visit reflects somewhere they've actually been.
 
+### Setting the Tone
+
+Session 0 shouldn't feel like "now we do character creation." It's a conversation that slowly becomes something else, until the table realizes they've already crossed.
+
+- **Slightly formal from the start.** Not theatrical. A quiet elevation above normal table banter — speak a little more carefully, leave the pauses longer, don't rush to fill silence.
+- **No menu language.** Avoid "what kind of character do you want" or "pick three traits." Stay inside questions that could be asked of the person sitting across from you.
+- **Never announce the Oracle.** Just start asking the kind of questions she asks (above), and start handling cards the way the ritual handles them. The table feels the shift before they can name it.
+- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. The card that follows is the world's answer.
+
+**A rehearsal beat, before the real one.** Early on — after the first personal question, before anyone's spoken a binding statement — draw one card from the Oracle deck, show it, and bury it, without saying what it means. This isn't a formal Price. It's the gesture, taught once before it has to mean anything.
+
+**Opening beats, roughly in this order:**
+
+1. Lights a little lower, phones away, one clear space on the table that will later hold the cards. Set the premise without game language:
+
+   > "You wake up somewhere that is not here. You are still yourself, but the body and the life you had are gone. What remains is whatever you carry inside."
+
+   Let them react. Answer questions in the same register. No cards yet.
+2. Ask something personal and pointed — the Oracle's own Name questions, still sounding like conversation: *"What did you leave behind that still has your name on it?"* / *"What do you refuse to look away from?"* / *"What have you always paid for, whether you wanted to or not?"*
+3. The rehearsal beat, above.
+4. Invite the declaration: *"Before the world finishes taking its shape around you, name one thing that is still true of you."* They speak it. Draw the real Price card, show it, bury it. Hold the silence longer than feels comfortable.
+5. From here, stats and the nine-card draft (below) can proceed inside the same tone. Never announce that "the game has started" — by the time the deck is finished, they're already on the island.
+
+**Small techniques.** Complete sentences, not rapid clarifying questions. If a player jokes to break tension, acknowledge it, then return to the quieter register without comment. Handle every card — even ordinary draft cards — with the same deliberate care; the ritual becomes ritual by repetition. Never say "the Oracle says" — just ask, or reveal.
+
 ### Deck Building
 
 Players take turns selecting cards from the Oracle deck until each has 9. The method below is one option — see `rules/character-creation.md` for this one and the passing-piles alternative; either works here.

@@ -72,6 +72,8 @@ That last one is important. Not every question needs an answer by session's end.
 
 End of session, each player runs the Oracle ritual — a question answered, a card glimpsed and buried, a pick from three. That's the mechanical heartbeat. Everything else is negotiable. The Price step is worth running with intention: the buried card stays in the pool, and what a player glimpses and doesn't get is often what they start playing toward.
 
+The very first time this ritual runs — Session 0, character creation — deserves its own tone: see `locations/island-in-a-ship.md`, Setting the Tone.
+
 ---
 
 ## When to Call for Rolls
