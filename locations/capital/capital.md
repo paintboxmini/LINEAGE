@@ -111,7 +111,7 @@ Past the Marketplace's noise, closer to the Citadel, the chaos gives way to some
 
 **Weavers' Hall.** Narrower and taller, close-fitted stone, high thin windows that let in light but little sound. A single carved lintel shows a simplified loom. The upper rooms are ordered and quiet — bolt racks, pattern tables, soft-footed clerks handling surface textile and lighting contracts. The lower levels are restricted and colder. The building feels tightly held together, as if the stones were under the same tension as the work done within. Also Eveline's.
 
-**Adventurers' Hall.** Squat, square, plainly military — thick walls, narrow windows, a small drill yard at the side, a single reinforced door under a plain iron sign. A long contract board, a scarred registration counter, weapon racks kept locked. It reads like a barracks annex that was told to deal with civilians and never quite softened, because that's close to what it is: the public desk for the **freelancer branch of Lord Cedric's military**. A registered party is an irregular unit under the Bear's authority, not a member of some separate guild — contracts are security and reconnaissance work the city doesn't want on its permanent payroll, and discipline, blacklisting, and priority of work all flow from Cedric's office. Most parties, this one included, will meet the city through this counter before they meet anyone on the council directly.
+**Adventurers' Hall.** Squat, square, plainly military — thick walls, narrow windows, a small drill yard at the side, a single reinforced door under a plain iron sign. A long contract board, a scarred registration counter, weapon racks kept locked. It reads like a barracks annex that was told to deal with civilians and never quite softened, because that's close to what it is: the public desk for the **freelancer branch of Lord Cedric's military**. A registered party is an irregular unit under the Bear's authority, not a member of some separate guild — contracts are security and reconnaissance work the city doesn't want on its permanent payroll, and discipline, blacklisting, and priority of work all flow from Cedric's office. Most parties, this one included, will meet the city through this counter before they meet anyone on the council directly. Full contract board: `locations/capital/adventurers-hall.md`.
 
 ---
 
@@ -152,6 +152,7 @@ Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The
 ## Related Documents
 
 - `world/the-regency.md` — The governing council and its members
+- `locations/capital/adventurers-hall.md` — The full contract board
 - `items/capital-items.md` — Temple of the Forge and Marketplace mechanical stock
 - `locations/capital/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
 - `locations/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
