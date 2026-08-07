@@ -88,6 +88,40 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 ---
 
+### Declaring a Price
+
+At the close of character creation the player speaks one binding statement beginning with I never, I must, I always, I cannot, Once I…, or Whenever….
+
+The Oracle answers by revealing one card from its deck and burying it again. That glimpse is the Price of the declaration. The card is not gained, but it is remembered.
+
+From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
+
+The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
+
+The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
+The Oracle is permitted to remember what it has already shown.
+
+---
+
+Examples
+
+Once I have given my word before witnesses, I treat it as part of the structure of the world.
+Whenever I am offered a safer path that requires me to look away, I refuse it.
+I never abandon someone who has trusted me.
+I cannot refuse a direct plea made in true need.
+I must keep every promise I have spoken, no matter the cost.
+I always finish what I start, even after its purpose has eroded.
+I never leave a wound I have noticed unaddressed.
+I cannot accept help that would place me in debt.
+I must name what others refuse to name.
+I always press against any constraint or oath until I know whether it holds.
+I never look away from a reflection of my own past failure.
+Once I have claimed someone as mine, I cannot leave them behind.
+Whenever the edge of the Unheld is near, I move toward it.
+I must settle every debt I carry, whether owed by me or to me.
+
+---
+
 ## Hand Size
 
 Your maximum hand size is **Mind**, with a minimum of 2 — no one's hand is ever smaller than 2.
