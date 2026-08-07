@@ -76,7 +76,9 @@ Questions she asks:
 - *"What did you refuse?"*
 - *"What do you carry forward?"*
 
-**Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.
+**Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.  
+The Oracle may remember. A card previously revealed and buried as a creation Price (or as an earlier session Price) can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+The Oracle is permitted to remember what it has already shown.
 
 **Distance** — Three cards revealed. Player chooses one. That card enters their deck.
 

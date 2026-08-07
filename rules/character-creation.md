@@ -151,7 +151,9 @@ Players may also propose custom cards as the campaign develops. These enter the 
 Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
 
 1. **Name** — the Oracle asks one question. The player answers.
-2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.
+2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
+   The Oracle may remember. A card previously revealed and buried as a creation Price (or as an earlier session Price) can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+   The Oracle is permitted to remember what it has already shown.
 3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
 This is the default rhythm of growth.
