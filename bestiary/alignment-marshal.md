@@ -2,7 +2,7 @@
 
 *Chase boss of the War Engine. Correction mechanism, not guardian. Activates when players interfere with a critical subsystem.*
 
-**Mind 2 / Body 4 / Soul 1 — HP 18**
+**Mind 2 / Body 4 / Soul 1 — HP 15**
 **Creature Threat Rating:** 7
 
 **Deck (7 — 2 Blue / 4 Red / 1 Green):** TARGETING LOCK, FAULT EXPLOIT *(blue)* · CORRECTION LOAD, IRON GRIP, CERTAIN STRIKE, REND *(red)* · SYSTEM PURGE *(green)*

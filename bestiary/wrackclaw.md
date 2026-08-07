@@ -4,7 +4,7 @@
 
 *General field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`), and any other stretch of that same coast a GM wants to use one on. Not tied to a single beach.*
 
-**Mind 1 / Body 2 / Soul 1 — HP 12**
+**Mind 1 / Body 2 / Soul 1 — HP 8**
 **Creature Threat Rating:** 4
 
 **Deck (4 — 1 Blue / 2 Red / 1 Green):** SIDELONG SCUTTLE *(blue)* · PINCH, STRIKE *(red)* · CARRION PULL *(green)*

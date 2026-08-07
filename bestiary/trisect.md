@@ -10,7 +10,7 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 
 ---
 
-**Mind 5 / Body 5 / Soul 5 — HP 21**
+**Mind 5 / Body 5 / Soul 5 — HP 25**
 **Creature Threat Rating:** 15
 
 

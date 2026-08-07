@@ -77,14 +77,14 @@ An orphanage in the Fog Basin, rebuilt on the site of one that burned, is a stan
 ## NPCs
 
 **The Father**
-**Mind 2 / Body 5 / Soul 3 — HP 21**
+**Mind 2 / Body 5 / Soul 3 — HP 20**
 **Creature Threat Rating:** 10
 *Stat block and deck are a starting point — scale to the party.*
 
 Deck (5 Red / 2 Blue / 3 Green): SACRIFICE STRIKE, PAIN IS FUEL, BLOOD TITHE, RALLY, TRAMPLE — FORGET, INTERRUPT — MOCKERY, DEAD RECKONING, TWIN STRIKE.
 
 **Cole**
-**Mind 2 / Body 3 / Soul 2 — HP 15**
+**Mind 2 / Body 3 / Soul 2 — HP 13**
 **Creature Threat Rating:** 7
 *Deliberately overlaps his father's deck — PAIN IS FUEL, BLOOD TITHE, TWIN STRIKE, and MOCKERY are all shared. He didn't develop his own style. He copied the only one he was ever shown.*
 

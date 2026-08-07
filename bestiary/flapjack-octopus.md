@@ -12,7 +12,7 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 
 ---
 
-**Mind 2 / Body 3 / Soul 1 — HP 15**
+**Mind 2 / Body 3 / Soul 1 — HP 12**
 **Creature Threat Rating:** 6
 
 

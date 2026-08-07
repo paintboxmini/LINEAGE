@@ -2,7 +2,7 @@
 
 *Cave floor encounter. Armored digger. Punishes reckless attackers.*
 
-**Mind 1 / Body 2 / Soul 1 — HP 12**
+**Mind 1 / Body 2 / Soul 1 — HP 8**
 **Creature Threat Rating:** 4
 
 

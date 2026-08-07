@@ -12,9 +12,9 @@ All characters begin with Body 2 / Mind 2 / Soul 2, then distribute 3 more point
 
 | Stat | Colors your damage | Also drives |
 |------|---------------------|-------------|
-| Body | Red cards | Max HP = (3 × Body) + 6 |
-| Mind | Blue cards | Hand size = Mind (minimum 2) |
-| Soul | Green cards | Initiative = 1d6 + Soul |
+| Body | Red cards | Max HP = (3 × Body) + Soul + Mind |
+| Mind | Blue cards | Hand size = Mind (minimum 2); also feeds Max HP |
+| Soul | Green cards | Initiative = 1d6 + Soul; also feeds Max HP |
 
 A card's color determines which stat powers its damage, no matter which stat is highest on your sheet. Stats also decide which mode you use for checks, saves, and perception (Part Two) — a spread built around Soul reads rooms and holds oaths, around Mind anticipates and controls, around Body endures, positions, and breaks things. Your stat spread is a statement about how your character solves problems.
 

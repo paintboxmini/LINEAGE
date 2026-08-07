@@ -567,19 +567,22 @@ class Combatant:
     def __init__(self, name, body, mind, soul, decklist, policy, hp=None):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
-        # Canon HP formula (3*Body + 6). This is a REVERSION, 2026-08-03,
-        # Drew's call: the repo ran 3*Body+6, flattened it to 2*Body+9 to
-        # decouple HP from Body and cut Body's damage+HP double-dip, and has
-        # now gone back. Crossover is Body 3 either way (both give 15), so the
-        # change is entirely at the tails — Body 1 drops 11 -> 9, Body 8 rises
-        # 25 -> 30. Body is doubly valuable again, which is the thing the
-        # flatten existed to prevent; see memory.md for the trail.
-        self.hp_per_body = 3
+        # Canon HP formula (3*Body + Soul + Mind), Drew's call 2026-08-06 —
+        # was 3*Body+6 (itself a 2026-08-03 reversion of a 2*Body+9 flatten;
+        # see memory.md for that trail). This change is a different shape,
+        # not another flatten/steepen of the same curve: Mind and Soul now
+        # feed max HP too, at 1 point per point each, alongside Body's
+        # unchanged 3-per-point weight. hp_per_stat holds the per-point rate
+        # for all three, keyed the same way `adjust()` below reads it.
+        self.hp_per_stat = {'body': 3, 'mind': 1, 'soul': 1}
         # Bosses may go bespoke on HP (CLAUDE.md, Stat Blocks) — pass `hp=` to
         # override the formula baseline; the formula is still what the
-        # one-shot-from-max-HP death check and Body-adjust deltas key off
+        # one-shot-from-max-HP death check and stat-adjust deltas key off
         # internally, this only overrides the starting/max number itself.
-        self.max_hp = hp if hp is not None else self.hp_per_body * body + 6
+        self.max_hp = hp if hp is not None else (
+            self.hp_per_stat['body'] * body
+            + self.hp_per_stat['mind'] * mind
+            + self.hp_per_stat['soul'] * soul)
         self.hp = self.max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
                                         # never below act-plus-one-block
@@ -744,10 +747,14 @@ class Combatant:
                   to discard down — removed 2026-08-01, Drew's ruling. It just
                   can't draw back up until it naturally falls below the cap.)
           Soul -> initiative (applies to future rolls only)
-        Only Body touches HP (Drew ruling)."""
+        All three stats now touch max HP (Drew ruling, 2026-08-06 — was Body
+        only), at the same per-point weight the formula itself uses:
+        hp_per_stat[stat]. Mind and Soul keep their own existing derived
+        values too (hand size, initiative) on top of this — HP is additive,
+        not a replacement for what they already governed."""
         self.stat_mod[stat] += delta
-        if stat == 'body':
-            self.max_hp = max(1, self.max_hp + self.hp_per_body * delta)
+        if stat in self.hp_per_stat:
+            self.max_hp = max(1, self.max_hp + self.hp_per_stat[stat] * delta)
             if self.hp > self.max_hp:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:

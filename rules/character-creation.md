@@ -24,15 +24,17 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Body**
 - Determines damage for Red cards (Attack: Body + die)
-- Sets your maximum HP: **(3 × Body) + 6**
+- Sets your maximum HP: **(3 × Body) + Soul + Mind** — Body's own share is weighted 3× the other two
 
 **Mind**
 - Determines damage for Blue cards (Attack: Mind + die)
 - Sets your hand size: **Mind** (minimum 2)
+- Also feeds your maximum HP, at 1× weight (see Body, above)
 
 **Soul**
 - Determines damage for Green cards (Attack: Soul + die)
 - Sets your initiative modifier: **1d6 + Soul**
+- Also feeds your maximum HP, at 1× weight (see Body, above)
 
 Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.
 

@@ -143,7 +143,7 @@ def check_stat_blocks():
             trailing = m.group(5)
             n += 1
             f = path.split('/')[-1]
-            formula = 3 * body + 6
+            formula = 3 * body + soul + mind
             if hp != formula and 'bespoke' not in trailing.lower():
                 bad.append(f'{f}: HP {hp} != formula {formula} and not marked bespoke')
             after = text[m.end():m.end() + 200]
@@ -346,8 +346,8 @@ def check_restated_stat_blocks():
                         bad.append(
                             f'{path}: restates {mind}/{body}/{soul} HP {hp}, which '
                             f'matches no block in {", ".join(sorted(named))}')
-                elif not bespoke and hp != 3 * body + 6:
-                    bad.append(f'{path}: HP {hp} != formula {3 * body + 6} '
+                elif not bespoke and hp != 3 * body + soul + mind:
+                    bad.append(f'{path}: HP {hp} != formula {3 * body + soul + mind} '
                                f'and not marked bespoke')
     return report('restated stat blocks match their bestiary source', bad,
                   f'{n} restatements')
@@ -368,7 +368,7 @@ def check_distances():
     return report('no measured distances in quests/ or bestiary/', bad)
 
 
-HP_FORMULA_RE = re.compile(r'(\d+)\s*×\s*Body\)?\s*\+\s*(\d+)')
+HP_FORMULA_RE = re.compile(r'(\d+)\s*×\s*Body\)?\s*\+\s*Soul\s*\+\s*Mind')
 
 HP_FORMULA_FILES = (
     'CLAUDE.md',

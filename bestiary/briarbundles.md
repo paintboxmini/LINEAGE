@@ -34,7 +34,7 @@ Nobody has noticed that every spring, the First Bundle is a little larger.
 
 Bundles of sheared fenwool tied upright with twine. At dusk they are simply not where you left them.
 
-**Mind 1 / Body 1 / Soul 3 — HP 9**
+**Mind 1 / Body 1 / Soul 3 — HP 7**
 **Creature Threat Rating:** 5
 
 **Deck (5 — 1 Blue / 1 Red / 3 Green):** DUSK COUNT *(blue)* · TWINE AND WEIGHT *(red)* · NOT WHERE YOU LEFT IT, SWAY, MIRROR STEP *(green)*
@@ -51,7 +51,7 @@ The lightest of the family and the one that teaches the party to track a battlef
 
 Two poles tied into a cross, wrapped in old work clothes. No face. When one turns toward you, there was no turning.
 
-**Mind 2 / Body 1 / Soul 3 — HP 9**
+**Mind 2 / Body 1 / Soul 3 — HP 8**
 **Creature Threat Rating:** 6
 
 **Deck (6 — 2 Blue / 1 Red / 3 Green):** FACING YOU NOW, UNNAME *(blue)* · TWO POLES *(red)* · NO FACE, ADAPT, INSTINCT *(green)*
@@ -68,7 +68,7 @@ Free repositioning means it is never out of range and never caught out of positi
 
 Dense tangles of thorn vine that have learned a human silhouette, because a human silhouette is the easiest shape to catch things with.
 
-**Mind 1 / Body 3 / Soul 3 — HP 15**
+**Mind 1 / Body 3 / Soul 3 — HP 13**
 **Creature Threat Rating:** 7
 
 **Deck (7 — 1 Blue / 3 Red / 3 Green):** THE EASIEST SHAPE *(blue)* · CLOSE THE TANGLE, IRON GRIP, GROUNDING STANCE *(red)* · THORNFAST, BIND, ROOTED OATH *(green)*
@@ -88,7 +88,7 @@ The family's grappler, and deliberately the least mysterious of the four: it is 
 
 Old field guardians, built up over generations by every farmer who worked a given stretch. They were never alive. Then enough people believed they were protecting the fields.
 
-**Mind 2 / Body 5 / Soul 3 — HP 21**
+**Mind 2 / Body 5 / Soul 3 — HP 20**
 **Creature Threat Rating:** 10
 
 **Deck (10 — 2 Blue / 5 Red / 3 Green):** GENERATIONS OF HANDS, FORESEEN *(blue)* · THE FIELD IS THE LINE, ENDURE, BRACE, GORE, DIG IN *(red)* · KEEPING PEOPLE OUT, SHARED BURDEN, PATIENCE OF STONE *(green)*
