@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 326 card blocks in `cards/*.md` — 323 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped again 2026-08-06 for Wrackclaw and Hullback's six new cards). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted.*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 329 card blocks in `cards/*.md` — 326 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, and again 2026-08-07 for Fermata's three). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the four keywords Fermata's cards demonstrably touch (Locked, Sealed, Vulnerable, Resist).*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -60,10 +60,10 @@ Choose 1 card in the target's hand without looking. If the chosen card matches t
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(0) Locked**
+**(2) Locked**
 A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
 
-**(5) Sealed**
+**(7) Sealed**
 You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
 **(22) Initiative Shift X**
@@ -82,7 +82,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(47) Resist**
+**(48) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -96,7 +96,7 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(7) Vulnerable**
+**(8) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(23) Rooted**

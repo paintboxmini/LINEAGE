@@ -125,13 +125,21 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
 
-- **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold.
 - **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
 - **Echo Shell** — repeat your last action, if it's still retrievable from discard.
 - **Blood Phial** — add the target's own last-used card's effect to your attack.
 - **Imprint Sigil** — target follows a simple command, 1 turn.
 - **Universal Pin** — fix a target in place until their next turn.
 - **Phase Draught** — take your turn, then return to your prior position and state at turn's end.
+
+---
+
+## The Silent Choir
+
+*Full entries: `items/the-silent-choir-items.md`. Source: `locations/the-silent-choir.md`, held by Fermata (`bestiary/fermata.md`). Neither item is for sale.*
+
+- **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold. Already loose in the world; this is its origin, not a standing offer to find a second.
+- **The Silent Ring** *(Artifact)* — once per combat, name an enemy: no ally "Target ally" effect may reach them until the end of their next turn. Won, not bought.
 
 ---
 
