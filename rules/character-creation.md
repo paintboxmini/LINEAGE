@@ -86,6 +86,16 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 ---
 
+### Declaring a Flaw
+
+At the close of character creation the player speaks one binding statement beginning with I never, I must, I always, I cannot, Once I…, or Whenever….
+
+The Oracle answers by revealing one card from its deck and burying it again. That glimpse is the Price of the declaration. The card is not gained, but it is remembered.
+
+From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
+
+---
+
 ## Hand Size
 
 Your maximum hand size is **Mind**, with a minimum of 2 — no one's hand is ever smaller than 2.
