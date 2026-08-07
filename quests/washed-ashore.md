@@ -50,9 +50,21 @@ Open rolling fields north of the shoreline, broken up by rocky outcroppings — 
 
 ---
 
+## The River Crossing
+
+Before the In-Between begins, the trail runs beside a real river for a stretch — ordinary, not unheld, though like every river on the continent it drains toward the Unheld same as the rest (`world/geography-overview.md`, Rivers and Lakes). It cuts across the trail once, at a simple wood-and-rope bridge: rope dark with old wet, planks worn smooth down the middle. The current underneath is ordinary, and ordinary-loud — a real sound, after however many hours of the Unheld's own hush.
+
+Where the river runs closest to the coast, its banks turn to coral — the same general fact `world/geography-overview.md` already establishes for any river meeting the grey water, not something unique to this one. Muted colors here, not tropical: dusty pink, grey-green, fitting the world's flat light. A **Flapjack Octopus** (`bestiary/flapjack-octopus.md` — not tied to a single body of water) works the coral shelves under the span: one dart of movement, then gone.
+
+**Wrackclaw** (`bestiary/wrackclaw.md`) also work this stretch, wherever the river meets the white sand near the coast — the same swarm, just a second place to meet it. **Hullback** may be glimpsed here too, at a distance and without a fight: a single dark curve breaking the river's wider water near where it meets the Unheld, gone before anyone gets a second look. This is not a second Hullback and not a second encounter — it's the same solitary creature the party may already have met (or avoided) at the rock outcroppings, seen once from somewhere it isn't fought.
+
+The Unheld itself, alongside all this, stays exactly what it always is: empty. No coral, no octopus, no Wrackclaw, no Hullback in the grey water — the coastline is a hard threshold, and nothing lives on the wrong side of it (`world/the-unheld.md`).
+
+---
+
 ## The Walk — Crossing the In-Between
 
-Everything past the beach's own fields is the In-Between (`world/the-in-between.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road. Doubly true here: this crossing starts at the one hard edge of reality the setting has, so the ordinary In-Between thinness (the Cuts holding least) picks up right where the coastline's own thinness (the Unheld) leaves off, one kind of edge handing off to another with no gap between them.
+Everything past the river crossing is the In-Between (`world/the-in-between.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road. Doubly true here: this crossing starts at the one hard edge of reality the setting has, so the ordinary In-Between thinness (the Cuts holding least) picks up right where the coastline's own thinness (the Unheld) leaves off, one kind of edge handing off to another with no gap between them.
 
 **Run this as a toolkit, not a script.** Nothing below has to happen in order, and nothing has to happen at all — "most crossings are two days of moving and a night at an inn" is still the baseline (`world/the-in-between.md`, At the Table). Use one terrain beat, one sighting, and skip the fight entirely if the table's pace wants that. The one rule that isn't optional: never describe the same terrain twice in a single crossing.
 
@@ -88,7 +100,17 @@ She clocks them fast — new to the road, nothing fixed to be yet — and says s
 
 > *"New arrivals. Should earn your keep before the road decides to test you instead."*
 
-From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`locations/briarwatch.md`, `quests/the-larder-fence.md`); her family's still in there; they sent word that something's gone wrong deep in the forest, not at its edges — the roots themselves have turned restless, moving in ways nobody's seen before — and her family doesn't scare easily. She's going herself — she's not asking anyone else to go in her place — and Briarwatch is already on that road, not a detour to it. She mentions it to the party as their own first stop regardless — real work, real pay, a place to actually get their footing before anything as strange as a sentient forest.
+The party has nothing to eat with — no coin, nothing yet earned (`rules/character-creation.md`: no starting money). The Roadhouse bed is free, paid for by the Regency same as the roof over it (`locations/roadhouse.md`); the food is not. Aege puts food on the table before it becomes a problem, plain about it rather than making a show of it:
+
+> *"Eat. Road's longer on an empty stomach. You can owe the world something useful later."*
+
+From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`locations/briarwatch.md`, `quests/the-larder-fence.md`); her family's still in there, and they don't scare easily:
+
+> *"My family's in the Turnroot. Past the watch and the fence, under the trees. They don't scare easy. They sent word the roots have gone restless — deep in, not at the edge. I'm going. Not sending anyone in my place."*
+
+The roots themselves have turned restless, moving in ways nobody's seen before, and she's going herself — she's not asking anyone else to go in her place. Briarwatch is already on that road, not a detour to it, and she says as much if the party mentions the job board:
+
+> *"Briarwatch pays. Real work, not stories. You saw the postings — that's not decoration."*
 
 In the morning she's simply gone ahead — she doesn't wait for an answer, doesn't ask the party to commit to anything. If they want to catch up to her, or just look in on what she was worried about, Turnroot Weald is right there past Briarwatch's own fence line whenever they're done in the Hollow — no extra travel required to reach it.
 
@@ -126,6 +148,7 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 - `locations/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
 - `locations/roadhouse.md` — where the trail leads
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
+- `bestiary/flapjack-octopus.md` — the river crossing's creature
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
 - `world/the-in-between.md` — the rules the whole Walk section runs on
 - `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
