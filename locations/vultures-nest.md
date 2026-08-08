@@ -104,6 +104,8 @@ Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
+He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
+
 **Masaharu** — *(name is a deliberate tonal outlier — old player character)* — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
@@ -147,6 +149,8 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
+Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now, not the eyes ever were. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it.
+
 ---
 
 ## The Red Scarves
@@ -189,6 +193,8 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
+Her mother ran the counter the same way — take what's offered, don't ask, the Nest's own rule made personal — and Dess has never once broken it, not even for the back room, not even for the man in the top hat. She tells herself the not-asking is professionalism, same as it's always been. It doesn't feel like professionalism anymore. She hasn't found the sentence that would let her admit that, so she keeps not asking, same as always, and hopes the difference doesn't show.
+
 ---
 
 ## Harwick Sundries — Counter Items
@@ -212,6 +218,8 @@ Smells like old ale, smoked fish, and river-damp wood. Loud enough that conversa
 **Salla** — the barkeep. Short, wide, moves fast. Hair pinned back with a fishhook that has seen use. Keeps a sawn-off boat hook behind the bar. Nobody has seen her use it, but it's never dusty.
 
 Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
+
+She believes the bar is the one place in the Nest where nothing that followed you in gets to finish what it started — pour, listen, don't ask, and whatever's chasing someone loses the scent at the door. Mostly true, which is the problem: the one time it wasn't, the boat hook is the reason there's still a Listing Keel to run. She doesn't tell that story. She keeps the hook within reach and calls it habit.
 
 *"Ale or the brown stuff?"*
 
