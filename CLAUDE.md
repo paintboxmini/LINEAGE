@@ -97,7 +97,7 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 | Body | Red | Senses | d8 (power) |
 | Soul | Green | Read | d4 (precision) |
 
-*(Bumped +2 sides across the board, 2026-07-22 — a global combat-speed/lethality change, not just a typical-die shift. Every card's own printed die moved the same way; individual `cards/*.md` files still need to be swept to match — see memory.md, Pending propagation.)*
+*(Bumped +2 sides across the board, 2026-07-22 — a global combat-speed/lethality change, not just a typical-die shift. Every card's own printed die moved the same way. The `cards/*.md` sweep this note used to point to as pending was closed in the 2026-08-01 `memory.md` audit — resolved, not still open.)*
 
 - Standard DC: 13 (DM adjusts ±2 for fiction)
 - HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)

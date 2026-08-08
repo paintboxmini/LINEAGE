@@ -36,15 +36,15 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **Echothorn Seed** — +2 to next damage/heal roll, free action. ~40 gold. *Source: The Thorne Throne.*
 - **Luminova Powder** — heal 8 HP. ~30 gold. *Source: Luminova Clearing.* Ground from 1 Luminova Leaf (above) and 1 hour of processing — the more potent form of the same plant.
 - **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~25 gold. *Source: Rootstalker (rare).*
-- **Vision Shard** — Scry 3 on any deck. ~100 gold. *Source: The Mirror-Slick Pond.*
+- **Vision Shard** — Scry 3 on any deck. ~45 gold. *Source: The Mirror-Slick Pond.*
 
 **Equipment**
-- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~80 gold. *Source: The Floating Gallery.*
+- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~20 gold. *Source: The Floating Gallery.*
 - **Spider Silk Rope** — 50 ft, stronger than hemp, doesn't fray. ~50 gold. *Source: The Bone Collector.*
 
 **Harvested Materials**
 - **Root Fibers** — rope, bowstring (+1 ranged), or armor weave (+1 temp HP). ~15 gold/strand. *Source: Rootstalker (common).*
-- **Rootstalker Core** — crafts into a thrown Root Lash Charm or a one-encounter Defensive Barrier. ~250 gold. *Source: Rootstalker (very rare).*
+- **Rootstalker Core** — crafts into a thrown Root Lash Charm or a one-encounter Defensive Barrier. ~60 gold. *Source: Rootstalker (very rare).*
 
 **Passive Items**
 - **Harvest Bead** — +1 HP on the first defensive block each cycle. ~150 gold. *Source: The Bone Collector.*
@@ -125,7 +125,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
 
-- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
+- **Terrormite Capsule** — Armour 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
 - **Echo Shell** — repeat your last action, if it's still retrievable from discard.
 - **Blood Phial** — add the target's own last-used card's effect to your attack.
 - **Imprint Sigil** — target follows a simple command, 1 turn.

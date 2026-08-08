@@ -30,7 +30,7 @@ If a card in your hand has a name that meaningfully supports what you're attempt
 - **Advantage** — Roll 3d10, discard the lowest.
 - **Disadvantage** — Roll 3d10, discard the highest.
 
-*Note: Advantage and Disadvantage on skill checks and saves use the 3d10 system above — a separate mechanic from combat. The combat-damage versions are named **Deadly** (roll twice, take higher) and **Weak** (roll twice, take lower) specifically so neither collides with the skill-check terms here. See `rules/card-glossary.md`.*
+*Note: Advantage and Disadvantage on skill checks and saves use the 3d10 system above — a separate mechanic from combat. The combat-damage versions are named **Deadly** and **Weak** specifically so neither collides with the skill-check terms here — but they don't work the same way as the roll above. Deadly adds a d6 to the next damage roll; Weak subtracts one; a held stack of each cancels 1-for-1 on consumption. See `rules/card-glossary.md` for the actual rule.*
 
 The table must agree the card meaningfully supports the action. When in doubt, ask: *would a reasonable person look at this card name and understand the connection?*
 
