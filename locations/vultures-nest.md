@@ -75,6 +75,8 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
+Jonas believes a complete record is the one thing nobody can ever blame you for — a doctrine he brought with him from Glasslight, a town where being loud or being wrong were close to the same offense. He has never once, in his whole career, left something out of a ledger on purpose. Whatever isn't currently in this one is the first time that's stopped being true, and he still doesn't have a name for what changed.
+
 **Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
 Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
@@ -186,6 +188,8 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 ---
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
+
+She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 

@@ -61,6 +61,8 @@ Plays a lyre. Uses minor illusion to manifest small spirit dancers on the tablet
 
 One piece in her rotation is older than anything else she plays — worn to fragments in places, the words shifting depending who taught it to whom, but the shape always holds: someone searching for a healer far from home, one who takes another's suffering into her own hands so the sufferer doesn't have to carry it alone. Lyra doesn't know where it came from. She plays it because the room always goes quiet for it, and a performer learns which songs do that.
 
+She trusts inherited songs the way she doesn't trust her own — a tune that's survived being passed hand to hand, mistaught and reshaped a hundred times, has to have something true left in it or it wouldn't have survived at all. She wrote something of her own once, about something that actually happened to her. It didn't survive one performance. She hasn't tried again. She'd say she just prefers the old material. It might be closer to the truth that borrowed grief is easier to play in front of people than her own.
+
 **Sitrump the Scribe** *(regular, gnome)*
 Always at the same corner table, surrounded by scrolls from the Library of Arcane Knowledge. Obsessed with unmasking Lord Archibald (The Pig) and Lady Eveline (The Elephant). Extremely paranoid.
 
