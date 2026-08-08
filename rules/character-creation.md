@@ -90,16 +90,13 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 ### Declaring a Price
 
-At the close of character creation the player speaks one binding statement beginning with I never, I must, I always, I cannot, Once I…, or Whenever….
+At the close of character creation the player speaks one binding statement beginning with *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*.
 
-The Oracle answers by revealing one card from its deck and burying it again. That glimpse is the Price of the declaration. The card is not gained, but it is remembered.
+The statement is the Price. No card is revealed at this step — the declaration itself is the act that matters.
 
-From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
+Speaking it is a pledge to live by it. From that moment the statement is true at the table. When it is tested, the fiction treats it as binding. The player is expected to lean into it; the GM is expected to present situations that test it.
 
-The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
-
-The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
-The Oracle is permitted to remember what it has already shown.
+Breaking the pledge incurs a higher cost — a curse, a forced card, a permanent mark, or another consequence the world exacts for the failure to keep what was named.
 
 ---
 
@@ -152,7 +149,7 @@ Advancement is the Oracle ritual, run by each player at every session's end (`lo
 
 1. **Name** — the Oracle asks one question. The player answers.
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
-   The Oracle may remember. A card previously revealed and buried as a creation Price (or as an earlier session Price) can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
    The Oracle is permitted to remember what it has already shown.
 3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 

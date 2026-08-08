@@ -77,7 +77,7 @@ Questions she asks:
 - *"What do you carry forward?"*
 
 **Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.  
-The Oracle may remember. A card previously revealed and buried as a creation Price (or as an earlier session Price) can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
 The Oracle is permitted to remember what it has already shown.
 
 **Distance** — Three cards revealed. Player chooses one. That card enters their deck.
@@ -120,9 +120,7 @@ Session 0 shouldn't feel like "now we do character creation." It's a conversatio
 - **Slightly formal from the start.** Not theatrical. A quiet elevation above normal table banter — speak a little more carefully, leave the pauses longer, don't rush to fill silence.
 - **No menu language.** Avoid "what kind of character do you want" or "pick three traits." Stay inside questions that could be asked of the person sitting across from you.
 - **Never announce the Oracle.** Just start asking the kind of questions she asks (above), and start handling cards the way the ritual handles them. The table feels the shift before they can name it.
-- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. The card that follows is the world's answer.
-
-**A rehearsal beat, before the real one.** Early on — after the first personal question, before anyone's spoken a binding statement — draw one card from the Oracle deck, show it, and bury it, without saying what it means. This isn't a formal Price. It's the gesture, taught once before it has to mean anything.
+- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. No card follows it — the statement itself is the Price. The weight has to come from the pledge and the silence around it, not from a reveal.
 
 **Opening beats, roughly in this order:**
 
@@ -132,9 +130,8 @@ Session 0 shouldn't feel like "now we do character creation." It's a conversatio
 
    Let them react. Answer questions in the same register. No cards yet.
 2. Ask something personal and pointed — the Oracle's own Name questions, still sounding like conversation: *"What did you leave behind that still has your name on it?"* / *"What do you refuse to look away from?"* / *"What have you always paid for, whether you wanted to or not?"*
-3. The rehearsal beat, above.
-4. Invite the declaration: *"Before the world finishes taking its shape around you, name one thing that is still true of you."* They speak it. Draw the real Price card, show it, bury it. Hold the silence longer than feels comfortable.
-5. From here, stats and the nine-card draft (below) can proceed inside the same tone. Never announce that "the game has started" — by the time the deck is finished, they're already on the island.
+3. Invite the declaration: *"Before the world finishes taking its shape around you, name one thing that is still true of you."* They speak it. No card, no gesture — just the sentence and the silence after it. Hold that silence longer than feels comfortable.
+4. From here, stats and the nine-card draft (below) can proceed inside the same tone. Never announce that "the game has started" — by the time the deck is finished, they're already on the island.
 
 **Small techniques.** Complete sentences, not rapid clarifying questions. If a player jokes to break tension, acknowledge it, then return to the quieter register without comment. Handle every card — even ordinary draft cards — with the same deliberate care; the ritual becomes ritual by repetition. Never say "the Oracle says" — just ask, or reveal.
 
