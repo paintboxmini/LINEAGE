@@ -34,3 +34,13 @@ When they are brought back up:
 ## Relationship to Other Factions
 
 The People of Promise and the Masons hold opposing views of the same force. See `factions/the-masons.md`.
+
+---
+
+## Related Documents
+
+- `locations/glasslight-reach.md` — where the congregation is based
+- `characters/kaine.md` — The Final Current, a sect within the Promise pushing dissolution faster
+- `characters/corren.md` — an elder bather who never hardens
+- `characters/sael.md` — holds the rope, distrusts who it's held for
+- `characters/wren.md` — loves the practice enough to keep someone else from it
