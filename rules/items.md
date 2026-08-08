@@ -89,7 +89,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **Temple Edge** — Weapon, +1 attack damage. ~200 gold.
 - **First Glance** — Weapon, Evade on first attack against you each combat. ~200 gold.
 - **Opening Mark** — Weapon, Scry 1 on your first attack each combat. ~200 gold.
-- **Holdfast Head** — Weapon, once/combat on successful melee: target Rooted until end of their next turn. ~200 gold.
+- **Holdfast Head** — Weapon, every successful melee attack: defender gains Rooted until end of their next turn. ~250 gold.
 - **Temple Plate** — Armor, Armour 1. ~200 gold.
 - **First Blood** — Armor, start combat with Resist 1. ~200 gold.
 - **Rebuke Mail** — Armor, first successful hit against you each combat: attacker Staggered. ~200 gold.

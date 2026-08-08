@@ -30,9 +30,9 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ---
 
 ### Holdfast Head
-*Price: ~200 gold (Tier 1 weapon)*
+*Price: ~250 gold (Tier 1 weapon — priced above the flat Tier 1 anchor, Drew's call, for a stronger-than-usual effect)*
 
-**Equipment — Weapon (Tier 1). Effect:** Once per combat, on a successful melee attack: target gains Rooted until the end of their next turn.
+**Equipment — Weapon (Tier 1). Effect:** Every successful melee attack inflicts Rooted on the defender, until the end of their next turn.
 
 ---
 
