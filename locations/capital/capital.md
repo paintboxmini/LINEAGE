@@ -121,18 +121,30 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 
 | Temple | Dedication |
 |--------|-----------|
-| Temple of the Sun | Sun god. Gilded walls, open courtyard. Daily gatherings. |
-| Shrine of the Moon | Moon goddess. Gardens, lanterns, solace. |
+| Temple of the Sun | Sun god. Gilded walls, open courtyard. Daily gatherings. See below. |
+| Shrine of the Moon | Moon goddess. Gardens, lanterns, solace. See below. |
 | Temple of the Forge | Craftsmanship and industry. Artisans and blacksmiths. See below — the working counter, not just the shrine. |
-| Sanctuary of Nature | Nature spirits. Dense grove. Druids. |
-| Temple of Knowledge | Ancient library. Scholars. Seekers of understanding. |
+| Sanctuary of Nature | Herbalists and cultivators. See below — not what the name implies. |
+| Temple of Knowledge | The Library of Arcane Knowledge, one building under two names. See below. |
 | Temple of the Rivers | River god. Reflective pool. Sailors and fishermen. |
-| Temple of Healing | Divine healers. Clerics, paladins. Wounded and weary. |
-| Temple of Dreams | Dreams and the ethereal. Visions. Cryptic guidance. |
-| Temple of Justice | Justiciars and enforcers. Law, impartial judgment. |
-| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full. |
+| Temple of Healing | The capital's hospital. See below. |
+| Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
+| Temple of Justice | A working courtroom. See below. |
+| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
+
+**Temple of Knowledge** — the Library of Arcane Knowledge, one building under two names: scholars use the temple's title, everyone else just says the Library. The stacks run deeper than the visible building suggests, catalogued by a system nobody outside the order has fully learned. Sitrump the Scribe (`locations/capital/gilded-tusk.md`) draws his scrolls from here and explains that fact to anyone who'll listen. The Lost Lore notice on the Gilded Tusk's board is the Library's posting, not the Marketplace's. Brother Alden ran its resonant archive once; he left, and took the habit of trading knowledge for a real cost with him — the archive itself stayed behind, still the Library's (`items/capital-items.md`, Brother Alden).
+
+**Temple of Dreams** — the place people go to have a dream read, not to have one taken. A dreamer pays for a session, describes what they remember — or doesn't, the reading works either way, differently — and a Temple reader offers an interpretation: what it means, what it's warning against, sometimes a flat fortune with no dream attached if that's what was paid for. This is not Lily's trade (`characters/lily.md`, Underground Bazaar). Lily buys a night of someone's sleep outright and reports back only a fragment of what's coming; the Temple never takes the dream at all, only interprets what the dreamer already has. Two different economies built on the same raw material, sitting in the same city without ever quite noticing each other.
+
+**Temple of Healing** — the capital's actual hospital, run as a temple because that was the framework available when the city needed one. Wounds, sickness, the kind of hurt a short rest doesn't reach. Divine healers work the wards; payment is expected but nobody is turned away for lack of it — the Temple keeps its own ledger of debts rather than refusing care, and collects on it later, quietly, in ways never advertised to the person who was healed. The honest first place in the capital to treat something a consumable can't fix.
+
+**Temple of the Sun and Shrine of the Moon** — a matched pair, less by design than by the city needing both halves of the same instinct to have somewhere to go. The Sun holds daily gatherings, gilded and loud, life treated as something meant to be spent openly — passion, vitality, the parts of being alive that want an audience. The Moon holds quiet ground: gardens, lanterns, the funerary rites and grief-work the Sun doesn't touch. Neither claims the other is wrong. Most of the city moves between both without treating it as a contradiction — loud at a wedding, quiet at a graveside, same person, different roof.
+
+**Sanctuary of Nature** — herbalists, not mystics. The ground this far from anywhere green doesn't give plants up easily, and cultivation here is a hard-fought craft, not a communion — sweat, blood, and years of understanding exactly which patch of barren dirt will hold a root if it's forced to. What the Sanctuary grows becomes potions, salves, and reagents, sold through its own grove-counter — a different economy from Nessa Coil's regional resale (Marketplace, above): this is grown in the capital's own dirt, at the actual cost of making it grow.
+
+**Temple of Justice** — a working courtroom, not a shrine with a metaphor attached to it. Disputes that outgrow a handshake get adjudicated here: contracts, debts, claims against another citizen, occasionally a criminal matter the Regency's own apparatus would rather not be seen touching directly. **Lady Isabella** (`world/the-regency.md`, The Panther — Contracts and legal maneuvering) is a regular. Devout, by her own account; the merchants' half of her reputation says otherwise — *"she visits the Temple of Justice often... though some say she's just studying how to bypass it"* (`world/the-regency.md`, Rumors). Both readings are probably true at once. The Temple doesn't seem to mind which one brought her, as long as she keeps coming.
 
 **Temple of the Forge** — the working counter, not the shrine. You hear it before you see it: hammers, the low roar of the main hearth, the sharp hiss of quenching metal. Dark, soot-stained stone, iron-bound shutters for the night. No grand idol in the courtyard — a single massive anvil stands under open sky instead, scarred by generations of ceremonial and working strikes. Offerings left on it are small tools, broken blades, a pinch of good ore. Coin left there is politely returned; the Forge does not take money as worship.
 
