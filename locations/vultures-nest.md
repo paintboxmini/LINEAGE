@@ -195,6 +195,8 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 Her mother ran the counter the same way — take what's offered, don't ask, the Nest's own rule made personal — and Dess has never once broken it, not even for the back room, not even for the man in the top hat. She tells herself the not-asking is professionalism, same as it's always been. It doesn't feel like professionalism anymore. She hasn't found the sentence that would let her admit that, so she keeps not asking, same as always, and hopes the difference doesn't show.
 
+Ask her why, and the answer gets further from the truth the more casually it's asked. First: *"It wasn't my place."* Pressed harder: *"Because that's how my mother taught me to do the job."* Pressed harder than that, past the point where most people stop: *"Because I was paid to do what I was told."* All three are true. Only the last one is the actual reason, and she only gives it to someone who's earned hearing that the first two were cover.
+
 ---
 
 ## Harwick Sundries — Counter Items

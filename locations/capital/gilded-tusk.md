@@ -47,6 +47,8 @@ At the back: a staircase curling upward. A door beside it. Closed.
 **"Big" Marcus** *(barkeep, human)*
 Barrel-chested. Leather apron over a stained silk tunic. Prosthetic brass ear — a gift from an enchanted artisan. Knows every rumor about the Regency Council. Treats the party well as long as they have coin. Enforces one rule: **No Magic in the Pit.**
 
+He thinks of himself as apolitical — just a barkeep, no side, no stake — and genuinely doesn't see that the No Magic rule is the reason this room is one of the only places in the capital where the Council's own rivals can sit within arm's reach of each other and not worry about it. That wasn't always true here. He doesn't tell that story either, and the brass ear is the only part of it anyone's ever gotten out of him — a gift, he says, when someone asks, and lets them decide whether "gift" was the right word.
+
 **Senshi** *(cook, Thessian)*
 Short-tempered. No-nonsense about everything except food, which is the only subject he treats as sacred. Gets personally offended when people refuse on the basis of legs, size, or unfamiliarity. Has been known to emerge from the kitchen specifically to argue with a customer who sent something back.
 
