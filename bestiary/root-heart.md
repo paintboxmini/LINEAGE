@@ -15,6 +15,18 @@
 
 ---
 
+## What It Is
+
+*Drew's call, 2026-08-08 — origin, not a mechanical change.*
+
+Not an invader. Not a separate being that took up residence. The Root Heart is **the Weald, concentrated** — the place where the forest's own growth tips past balance and has to be cut back. It is not a parasite on the Weald and not a guardian assigned from outside. When the canopy, the roots, and the routing all lean one way for too long, they lean *here*.
+
+**Periodically, it overgrows.** The forest — or those who live under it — cuts it back. The cut does not kill it. White threads knit the wound; growth returns thicker (see Post-Defeat, below). The rings visible along its body once cut open aren't age rings. They're **interruptions**: each one a season when someone pruned the centre and the centre answered by growing again. This campaign's cut, if the party makes it, is one more ring — not the first, and per Post-Defeat, not foreshadowed as the last.
+
+This is why containing the Heart *is* the forest's own maintenance, not a symptom of something gone wrong with it. "Feeds the forest or feeds on it" (Read-Aloud Description, below) was always the wrong fork — in Overgrowth, it's doing both at once.
+
+---
+
 ## Read-Aloud Description
 
 At first, it looks like a tree that grew in the wrong direction.

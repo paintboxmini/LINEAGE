@@ -18,35 +18,93 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 
 **Pressure 4 is not the only road to the Root Heart.** A gold piece paid into Seeker's Price opens the way there directly, at whatever Pressure the party is currently carrying — voluntarily, and much earlier than the track would have taken them.
 
-**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart.md`, GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
+**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart.md`, What It Is / GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
+
+### Rootstalker Trail Quality (Overgrowth)
+
+Under the old, pre-Overgrowth ruleset, Rootstalkers only entered play on failed navigation at Pressure 2+ (`bestiary/rootstalker.md`, still the correct behavior once Overgrowth ends — see Post-Defeat). **Overgrowth changes when they start, not what they are:** the mobile pruning tools have turned on the people they used to pass, and that hunger is present in the woods from the moment the party steps under canopy — not gated behind a Pressure threshold or a failed check. What Pressure controls instead is how well they hold the party's trail once they're already looking.
+
+| Pressure | Trail quality | What it looks like at the table |
+|----------|---------------|----------------------------------|
+| 0 | Thin | Glimpses, wrong turns, a Rootstalker that loses the scent. Ambush is possible but unreliable — the forest is hunting, not yet locked on. |
+| 1 | Firming | They find the trail more often. A failed navigation or a loud custom violation is enough for contact. |
+| 2 | Reliable | Failed navigation triggers ambush as the original table states. Even successful travel may draw a stalker if the party is noisy or marked. |
+| 3 | Locked | The trail is held. Moving between scenes risks contact whether navigation succeeds or not. Stalker Nest becomes a live threat, not a POI the party can stumble past safely. |
+| 4 | Centre | Forced Root Heart. Stalkers may still be present as the forest's outer edge of the same hunger. |
+
+Pressure still only rises on failed navigation or customs violations (DM may hold for strong compliance, same as always). Overgrowth doesn't make Pressure climb on its own — it only means the hunters were already in the woods when the party arrived.
+
+**After the cut,** the Weald returns to the ruleset this file already describes everywhere else — that's the normal state, not a new one:
+
+| State | What runs |
+|-------|-----------|
+| **Overgrowth** (this campaign, until Root Heart falls) | Rootstalkers hunt from entry; trail quality scales with Pressure (above); Forest Customs enforced hard; the Holdfast under pressure |
+| **Normal** (after a successful cut, or any future visit past this one) | Rootstalkers gate at Pressure 2+ on failed navigation only (`bestiary/rootstalker.md`); no baseline hunting from step-in; forest-people range recovers over time |
+
+The party's own cut, if they make it, is one more ring (`bestiary/root-heart.md`, What It Is).
 
 ---
 
-## Forest Customs
+## Forest Customs — Sharpened (Overgrowth)
 
-Meta rules for the table. Violations trigger immediate consequences (see matrix below).
+Meta rules for the table. Under canopy, the Weald treats them as law. **Overgrowth doesn't add new laws — it enforces the existing ones with less patience,** which is why three customs (the ones the Moss-Warden asks about) have widened into six, and the consequences now scale with current Pressure instead of landing flat.
 
-| Custom | Violation |
-|--------|-----------|
-| Never name a destination aloud under canopy. | Routing interference — forest forces you somewhere unexpected. |
-| Don't thank the forest (it assumes debt). | Debt assumption trap — forest expects increasing favors. Increase Pressure by 1. |
-| Step over objects in your path; going around counts as refusal. | Refusal penalty — path becomes more treacherous. |
+Violations are judged by what was *done and said*, not by intent. A player who means well and breaks a custom still broke it.
+
+| Custom | What counts as violation |
+|--------|---------------------------|
+| **Do not name a destination under canopy.** | Saying where you are going, where you came from, or where you hope to arrive. Includes "back to the road," "the Heart," "Aege's people," "the way we came," and pointing while naming. Soft references ("somewhere safer," "out") are still naming if the table can tell what you meant. |
+| **Do not thank the forest.** | Thanks, gratitude, or debt acknowledged *to the Weald or its signs* — trees, roots, moss, birds, "luck," "the path that opened." Thanking a *person* (Aege, a forest-family member, another PC) is safe. Thanking "whatever got us here" is not. |
+| **Step over what lies in your path.** | Going around a fallen branch, a root, a stone, a body, or a pool counts as refusal. Stopping to clear it and then walking the cleared line is also refusal — you reshaped the path instead of taking it. Stepping over is the only clean option. If it's too large to step over, the path wasn't offered; turn back or take a different route. |
+| **Do not leave a mark that claims.** | Blazes, cairns, tied ribbons, mapped notes left on trees, nails, or anything that says *we were here and this way is ours*. The forest erases these and treats the attempt as a claim on its ground. Temporary rope for a climb is fine if it comes with you when you leave. |
+| **Do not take without a reciprocal gesture.** | Harvest (leaves, fibers, larvae, cores) requires a small, deliberate return — a coin pressed into bark, water poured at the root, a knot left untied for the next walker, silence held for a count of ten. Pocketing and walking on is theft. The gesture doesn't have to be valuable; it has to be *offered*. |
+| **Do not speak of leaving as a plan.** | Discussing exit strategy, "when we're done," "once we find a way out," or counting days until the capital, while under canopy, is treated as naming a destination you haven't been given. You may leave. You may not *schedule* it out loud. |
+
+The first three are the ones the Moss-Warden will ask about (her riddle, below, is unchanged spine). The last three are the ones parties invent for themselves and then trip over.
 
 ### Violation Consequence Matrix
 
-**Naming a destination:**
-- Pressure 0–1: Misroute to neutral node
-- Pressure 2: Misroute + hostile flora
-- Pressure 3: Rootstalker ambush
-- Pressure 4: Forest tightens → forced Root Heart encounter
+Consequences scale with Pressure. Under Overgrowth, Rootstalker trail quality is already climbing on the same track (above) — a custom violation can hand them the scent.
 
-**Thanking the forest:** Pressure increases by 1 immediately.
+**Naming a destination**
+| Pressure | Consequence |
+|----------|-------------|
+| 0 | Misroute to a neutral node. Trail thins for the stalkers this time. |
+| 1 | Misroute. Next navigation DC +2. |
+| 2 | Misroute into hostile flora **or** Rootstalker contact (DM picks which fits the fiction). |
+| 3 | Rootstalker ambush on a held trail. |
+| 4 | Forest tightens — toward the Heart, not away from it. |
 
-**Going around instead of over:** DM chooses one consequence appropriate to current Pressure:
-- Increase DC of next navigation by 2
-- Trigger a trap roll
-- Increment Pressure
-- Spawn an environmental complication
+**Thanking the forest**
+- Pressure +1 immediately, every time.
+- At Pressure 2+, the forest may also "collect" — a small item goes missing from a pack, or a wound refuses to close until something is left behind. Not lethal; noticeable.
+
+**Stepping around (refusal)**
+| Pressure | Consequence |
+|----------|-------------|
+| 0–1 | Next navigation DC +2, or the path behind closes (cannot backtrack the way you came this scene). |
+| 2 | Trap roll or environmental complication **and** DC +2. |
+| 3 | Pressure +1 **or** Rootstalker contact. |
+| 4 | Both. |
+
+**Leaving a claim-mark**
+- Pressure +1 the first time.
+- The mark is gone by the time they look back. If they insist on re-marking, treat as a second violation at the next Pressure band up.
+
+**Taking without gesture**
+- The thing taken withers, sours, or fails when used (Luminova leaf heals half; fiber rope frays on first load; larvae arrive dead for Senshi).
+- Second offense in the same visit: Pressure +1, and Rootstalkers treat the party as thieves of the body — trail quality one band higher than current Pressure until the party makes a deliberate reciprocal offering somewhere the forest can see it.
+
+**Speaking of leaving as a plan**
+- Same band as **naming a destination** (it's naming, deferred).
+- Soft first warning only if Pressure is 0 and the line was ambiguous; after that, full matrix.
+
+**Table notes:**
+- **Stacking.** Two different customs broken in one scene can both fire. Naming + thanking is a common pair.
+- **Whispers and notes.** Writing a destination on paper under canopy is still naming if it's read aloud later under canopy. Passing a written note silently is the loophole that exists until the DM decides it doesn't.
+- **Forest-people.** They keep these customs without thinking. They will correct the party once, flatly. A second correction isn't coming; the forest will.
+- **Aege.** She doesn't explain the list. She'll change the subject, take a path that makes the broken custom expensive, or say *"You're already ahead of yourselves."* and wait.
+- **Compliance.** The DM may hold Pressure for a stretch of clean conduct — the track still only rises on failures and violations — but Overgrowth means the hunters were already out. Clean conduct doesn't send them home; it only keeps the trail thin.
 
 Custom violations may also justify failed navigation or direct escalation at DM discretion.
 
@@ -237,6 +295,27 @@ Halfway through, the corridor narrows. Roots tighten. Then stop.
 There is a pocket. Not a chamber — just a widening.
 
 In the damp soil: a child's footprint.
+
+---
+
+### The Fallen Tree *(custom enforcement — ties to "Step over what lies in your path")*
+
+A trunk has come down across the only clean line the signs were offering. Not a branch — a full tree, crown still tangled in the canopy on one side, root-plate lifted on the other. Bark is wet. Branches form a rough ladder if you commit to the climb. There's no gap underneath a person can crawl without going around.
+
+**The custom is absolute here.**
+
+| Choice | Result |
+|--------|--------|
+| Go around | Refusal — full consequence matrix for stepping around |
+| Clear it / cut a path | Refusal — you reshaped the path instead of taking it |
+| Take a different route entirely | Naming/refusal hybrid — the forest offered *this* path; leaving it is treated as going around |
+| **Climb over** | Clean. No Pressure. No custom break. |
+
+There's no third option that stays legal. They go over, or they raise the track.
+
+**The Climb — DC 17 Body (Senses or raw exertion, DM's read of the fiction).** Only one character must succeed. On a success, that character reaches the crown and can lower a rope, extend a hand, or haul the others up — the rest follow without individual checks once the first is set. **Advantage** if at least one ally helps from below (boost, braced rope, calling holds) — helping is an action or a clear fiction commitment, not free while also climbing. On a **failure**, the climber falls or slides back to the near side; no damage required unless the fiction is nasty, the cost is time, noise, and another attempt. A loud failure is a gift to anything tracking them — treat as a minor noise event against current Rootstalker trail quality (above). Tools (rope, a Dockhook Line) justify Advantage or a second helper; they don't lower the DC. The tree is the test, not the kit.
+
+**What's in the crown.** The first climber reaches the top *alone*. The others are still on the trunk or the ground. A **Flower Snake** (`bestiary/flower-snake.md`) has been still the whole climb — pattern matches blossom and bark. It strikes while the climber is alone. See that file's Ambush section for the check. This isn't a Rootstalker. The forest isn't pruning anyone here — something smaller is using the custom as cover.
 
 ---
 
