@@ -34,6 +34,7 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Resist | damage pipeline (reduction) | next hit |
 | Protect / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
+| Ledger Weight | card selection (post-reveal redo, attacker-on-defender only) | one reveal |
 
 Adding a new override: name the mechanic it changes, set a flag with a clear expiry, read that flag at exactly one point in the relevant procedure, revert on expiry. Escalating the override system itself beyond flags (to typed modifiers, to a policy stack) is engineering judgment, not an invariant — see `memory.md`'s architecture north star for that path.
 
