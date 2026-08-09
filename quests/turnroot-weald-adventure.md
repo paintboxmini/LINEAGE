@@ -512,6 +512,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
+| Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `locations/capital/gilded-tusk.md`. See `bestiary/kiwi-bird.md`. |
 
 ---
 

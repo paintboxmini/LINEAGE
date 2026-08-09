@@ -132,6 +132,10 @@ Orange-and-blue coloring indicates different flavor profiles in each half. Orang
 Wasp larvae, carefully prepared. The metamorphosis venom is neutralized in the cooking — improperly done, it prevents magical transformation for 24 hours. Senshi's is properly done. He will not entertain questions about this.
 — Creature pending: `bestiary/future-lock-wasp.md`
 
+**Kiwi Bird, Whole-Roasted** *(currently off the menu — see Senshi's Second Commission, below)*
+Small forest forager, Turnroot Weald. Famous, among the few who've caught one, for flesh that tastes and tears like fruit rather than meat. Senshi has a theory about why (something about a diet of nothing but fallen fruit for generations) and no proof, which has never once stopped him from stating it as fact.
+— Creature pending: `bestiary/kiwi-bird.md`
+
 **Gene-Thief Tartare** *(12 gold — Adventurer's Special)*
 Raw tardigrade, preparation method varies by specimen. Each one has consumed something different — the flavor reflects it. Temporarily grants resistance to one damage type based on what the creature absorbed. Senshi doesn't always know which type until service.
 *Ask what's in season.*
@@ -189,6 +193,18 @@ The note describes the creature's lair: fog, ancient webs, something large that 
 *If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
 
 See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
+
+---
+
+## Senshi's Second Commission — Kiwi Birds
+
+This one doesn't come with a folded note or a kitchen appearance. He mentions it between courses, mid-conversation, the way he mentions most things he actually cares about:
+
+> *"You want to know what real flesh tastes like — not fish pretending, not fowl pretending, actually fruit — find me a kiwi bird. Whole, alive if you can manage it, dead is fine if you can't. Turnroot undergrowth. Small. Fast to lose, not fast to catch, if that makes sense to you."*
+
+No deadline, no threat, unlike the Bone Collector ask. He'll wait. **Price: 12 gold per bird, live specimens worth more** — he won't say how much more until he's actually looking at one.
+
+See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory as the rest of Senshi's ingredients — see `quests/turnroot-weald-adventure.md`.
 
 ---
 

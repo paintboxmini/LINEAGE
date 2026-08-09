@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 335 card blocks in `cards/*.md` — 332 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, again 2026-08-07 for Fermata's three, and again 2026-08-08 for the Flower Snake's six). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the keywords each new batch of cards demonstrably touches (Fermata: Locked, Sealed, Vulnerable, Resist; Flower Snake: Evade, Weak, Vulnerable, Resist, Deadly, Rooted, Ward).*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 339 card blocks in `cards/*.md` — 336 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, 2026-08-07 for Fermata's three, 2026-08-08 for the Flower Snake's six, and again the same day for the Kiwi Bird's four). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the keywords each new batch of cards demonstrably touches (Fermata: Locked, Sealed, Vulnerable, Resist; Flower Snake: Evade, Weak, Vulnerable, Resist, Deadly, Rooted, Ward; Kiwi Bird: Evade, Resist).*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -44,7 +44,7 @@ A specific benefit persists as long as you do not change positions, triggering a
 **(19) Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
 
-**(51) Evade**
+**(55) Evade**
 50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded, and its Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -82,7 +82,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(50) Resist**
+**(51) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.

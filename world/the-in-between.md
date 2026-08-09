@@ -79,6 +79,7 @@ One thing in the In-Between is not displaced, not passing through, and not expla
 
 ## Related Documents
 
+- `factions/the-cartographers-guild.md` — who actually walks the roads and keeps them what the Havens rule says they have to be
 - `mythology/creation-myth-the-three-cuts.md` — the Cuts, and what happens where one weakens
 - `world/the-unheld.md` — the other thinness, and the coastline that stays hard
 - `world/geography-overview.md` — the hubs, the two-day standard, the maintained roads
