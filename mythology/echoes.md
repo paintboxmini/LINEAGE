@@ -88,6 +88,8 @@ Echoes may be human, animal, spirit, or stranger. Any living identity can become
 
 **King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved; see `world/the-scar.md`.
 
+**Fermata** *(Song and Silence, stage unresolved)* — a being whose entire nature is one sustained note holding an entire boundary of silence, guarding the site the Silent Blade was cut from. Confirmed as an Echo of this Seat rather than merely resembling one; which stage of Alignment it's reached is left open on purpose, same shape as Aege's own unresolved stage. See `bestiary/fermata.md`, `locations/the-silent-choir.md`.
+
 ---
 
 ## Related Documents

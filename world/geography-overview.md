@@ -76,6 +76,8 @@ The basin drains toward the Unheld. A web of interconnected rivers laces the who
 
 The rivers breathe with the Unheld. When the grey water pulls back from the coast, the rivers drop with it — a tide that arrives from downstream, felt hundreds of miles inland. River folk plan around it. Some plan jobs around it.
 
+Anywhere on this whole network, a line can go in the water. See `rules/river-fishing.md` for The Pull — a real-time table minigame, not a combat mechanic, played for a fish and nothing heavier.
+
 The water itself stays ordinary. The coastline is a hard threshold — unheldness does not cross it, not by flowing and not by being carried. Only the motion comes upstream. See `world/the-unheld.md`.
 
 Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
