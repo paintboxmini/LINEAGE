@@ -14,14 +14,14 @@ This is the official position. The actual history is different. See **The Pendra
 
 ## Council Members
 
-Each member carries an animal title. Officially: informal, earned or assigned by reputation. Actually: the shape the Seat left on them — for the five who were in the room. Isabella and Percival came later and have no such mark; theirs are titles in the official sense only, taken up because that is what a council member has. Nobody has ever said this out loud, and neither of them knows there is a difference.
+Each member wears an animal mask — officially regalia, informal, earned or assigned by reputation same as the titles they're named for. Actually: for the five who were in the room, the mask is the shape the Seat left on them, worn as much to cover what that did to their faces as to declare who they are. Isabella and Percival came later and have no such mark underneath; they wear the same mask for the same office, tokens rather than scars, taken up because that's what a council member wears. Nobody has ever said any of this out loud, and neither of the two newest members knows there's a difference.
 
 **Original members** (present at the Pendragon Attempt): Oswald, Cedric, Elara, Archibald, Eveline.
 **Later additions** (recruited after): Isabella, Percival.
 
 | Member | Title | Sphere |
 |--------|-------|--------|
-| Lord Oswald | The Lion | Regent. Consolidates power around the Prince. Sets the law that binds the government itself — what the Regency may do, not what its citizens may do. |
+| Lord Oswald | The Lion | Regent — in title only. He's ruled outright since the throne's line ended. Sets the law that binds the government itself — what the Regency may do, not what its citizens may do. |
 | Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`locations/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
 | Lord Cedric | The Bear | City walls and military security. |
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
@@ -37,13 +37,15 @@ What different city factions say about the council. Collected from marketplace m
 
 | Member | Merchants Say | Devout Say |
 |--------|--------------|------------|
-| Lord Oswald | "He talks a big game about strength, but he's just fattening the Prince to keep the throne warm." | "A steady hand. Without the Regent, the roads would have gone back to blank years ago." |
+| Lord Oswald | "A hundred years of 'Regent' and still no one to hand the crown to. Call it what it is." | "A steady hand. Without the Regent, the roads would have gone back to blank years ago." |
 | Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She sits the Temple of Justice bench herself, often... though some say the Supreme Magistrate knows the court's every gap because she wrote half of them." |
 | Lord Cedric | "A man's man. Keeps the walls high and the bandits at bay. Drinks like a fish, though." | "He honors the Forge. He knows that peace is only maintained through the strength of steel." |
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The two-day roads stay two days because someone like him never stopped checking." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
 | Lady Eveline | "She never speaks, but she sees everything. Like a statue that follows you with its eyes." | *(No devout account recorded.)* |
+
+**What the city wonders, and never quite asks out loud.** Five of the seven masks have been on the same five faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The five under the masks today aren't the same five who started — the Regency simply never announces the swap. None of it is confirmed. None of it is denied, either, because nobody with an answer has ever been asked directly, and the masks make it very hard to be sure who you'd even be asking.
 
 ---
 
@@ -82,8 +84,9 @@ Before the Regency existed, there was a party. King Pendragon and five companion
 They failed. Aurora already held the Seat. The attempt left marks on everyone in the room.
 
 **What the failure did:**
-- Each surviving member lost internal contradiction. Nuance burned away. They became more purely what they were already leaning toward — archetypes, not people. The animal titles are scar tissue, not heraldry.
+- Each surviving member lost internal contradiction. Nuance burned away. They became more purely what they were already leaning toward — archetypes, not people. The animal masks are scar tissue, not heraldry.
 - The Seat's domain partially expressed itself through them. They can't fully hold it, but they can't fully release it either.
+- **Their aging slowed to almost nothing, the same way their nuance did.** The Seat's touch didn't just burn away who they were — it loosened how thoroughly they're anchored as ordinary people, in every sense the word covers, aging included (`world/the-in-between.md`, Havens: ordinary loss is what keeps a real thing in place; theirs stopped accruing at the usual rate). All five are well over a hundred years old. None of it shows. The masks are part of how they've gotten away with that in public this long.
 - They are all failed Seat-takers. See `mythology/echoes.md` (Stage III proximity without Incarnation — the most unstable form).
 
 **What happened to Pendragon:**
@@ -96,6 +99,9 @@ It also explains where he is. A thing with no interior cannot be held anywhere t
 *What he wants, whether anything of him remains, and why he attends the party at all are all unresolved and should stay that way. The identity is the answer; it is not the whole answer.*
 
 *(The Gluttony Abomination was previously listed here as a possible Pendragon thread. That is closed — it is a fallen priest of the Abyssal Ruins cathedral and nothing more, per `bestiary/gluttony-abomination.md`.)*
+
+**What happened to the throne:**
+Pendragon's presumed death left an heir — a Prince, next in line, with the five companions holding the throne "in trust" while he was prepared for coronation. He never took it. A hidden Regency member killed him, right before the ceremony — who, is not established, and isn't meant to be; it may not even be one of the five. With no one left to hand power back to, "in trust" quietly became permanent. Oswald has ruled as the Regency's actual head, in practice its sovereign, ever since — Regent because the title outlived the reason for it, not because anyone still believes the arrangement is temporary.
 
 **What the council built on top of it:**
 Aurora — the actual bearer of the Seat they tried to take — is bound beneath Eclipseria. The city's unity runs on her. They couldn't claim the Seat so they contained its bearer. The Regency's power is not administrative. It is extractive.
@@ -112,7 +118,7 @@ Recruited after the attempt. They inherited power without full knowledge of its 
 
 *Texture for how these seven actually treat each other, not a plot to execute. Nobody on the council states any of this out loud.*
 
-**Oswald vs. almost everyone.** He's openly consolidating power around the Prince while privately preparing a second attempt on the Seat of Binding (The Pendragon Attempt, above). Every other original member has reason to watch him — Elara and Archibald both lose ground if he centralizes further, and Cedric's military loyalty is the prize he most wants and least fully owns. The letter hidden at Table #9 (`locations/capital/gilded-tusk.md`) is addressed to Percival and names exactly this plan — whether it ever actually reaches him is a table discovery, not a settled fact.
+**Oswald vs. almost everyone.** He's openly consolidating personal power while privately preparing another attempt on the Seat of Binding (The Pendragon Attempt, above). Every other original member has reason to watch him — Elara and Archibald both lose ground if he centralizes further, and Cedric's military loyalty is the prize he most wants and least fully owns. The letter hidden at Table #9 (`locations/capital/gilded-tusk.md`) is addressed to Percival and names exactly this plan — whether it ever actually reaches him is a table discovery, not a settled fact.
 
 **Elara vs. Archibald.** Open market against underground market. She tracks every coin that moves in the light; he owns the economy that moves in the dark. They need each other — goods bleed both ways — and resent each other for it. The Cellar Custodians sit in the middle of that friction; Eveline holding them is what keeps either side from simply seizing the tunnels. See `factions/the-cellar-custodians.md`.
 
@@ -153,5 +159,3 @@ Tall, stiff-postured — not cold. Formal, but the kind of formal most people re
 **Wound:** whether a Seat can actually be taken from a bearer who won't yield one is not settled fact — the Seat of Love/Binding's own state (`mythology/seats.md`, Seat States) is **Contested**, "two beings fighting for a Seat warp reality until one wins." **Oswald would never call what happened at the Pendragon Attempt a failure, and he isn't wrong to refuse the word.** Aurora is bound beneath the city right now, the extraction running, the Weavers keeping the binding usable (`factions/the-weavers.md`) — to him that isn't aftermath or a consolation prize after losing. It's the same attempt, still executing, decades into itself, with the original moment as its opening move rather than its ending. Nobody knows what a Contest actually turns on. Oswald's private account doesn't deny that uncertainty — he denies that it matters. His conclusion is that whatever is keeping the Seat out of his hands somewhere in this enormous, still-running machine of binding and extracting and positioning is precision, because that hands him a variable he can act on. The alternative — that the real variable might be something no amount of discipline touches, and the attempt could run another thirty years exactly as precisely as he can make it and still not resolve — is the one he's never let himself hold long enough to test.
 
 **Refusal:** not a refusal that the Seat is unwinnable — nothing has told him that, and Contested says otherwise. His refusal is narrower and worse: he will not sit with not knowing what actually wins it. Precision is the belief that lets him keep the attempt moving instead of standing still in front of a question with no answer.
-
-**With the Prince, something in him reads differently than the general warmth does.** The usual pleasantness is measured — approval given because a thing was done well, the reward half of the same system that produces the temper. What passes between him and the Prince doesn't feel measured the same way, and that's what makes it worth noting instead of filing under "he's a pleasant man." Whether that's the last unperformed thing left in him, or the most convincing performance he gives — precisely because it's the one that keeps a throne warm and pliable — isn't settled, not even by people close enough to have opinions. *(Table discovery. Don't resolve it at the table any more than this file resolves it here.)*
