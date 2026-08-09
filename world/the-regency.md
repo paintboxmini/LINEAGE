@@ -25,7 +25,7 @@ Each member carries an animal title. Officially: informal, earned or assigned by
 | Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`locations/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
 | Lord Cedric | The Bear | City walls and military security. |
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
-| Lord Percival | The Owl | Scholarship. The only one actively studying the rifts. The Cartographers Guild (`factions/the-cartographers-guild.md`) answers to his office — every survey ledger a Route Walk produces is rift data, whether the surveyor filing it knows that or not. |
+| Lord Percival | The Owl | Cartography. Head of the Cartographers Guild (`factions/the-cartographers-guild.md`) — routes, surveys, way-marking, what's still passable and what isn't. |
 | Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors. Informally: the Pig — never to his face. See `locations/capital/underground-bazaar.md`, `locations/capital/the-wallows.md`. |
 | Lady Eveline | The Elephant | Silent. Observant. No public position on anything — except the one portfolio nobody's ever thought to question: critical infrastructure. The Cellar Custodians and the Weavers both answer to her office, on paper, without her ever saying a word about either. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
 
@@ -37,11 +37,11 @@ What different city factions say about the council. Collected from marketplace m
 
 | Member | Merchants Say | Devout Say |
 |--------|--------------|------------|
-| Lord Oswald | "He talks a big game about strength, but he's just fattening the Prince to keep the throne warm." | "A steady hand. Without the Regent, the rifts would have swallowed Eclipseria years ago." |
+| Lord Oswald | "He talks a big game about strength, but he's just fattening the Prince to keep the throne warm." | "A steady hand. Without the Regent, the roads would have gone back to blank years ago." |
 | Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She sits the Temple of Justice bench herself, often... though some say the Supreme Magistrate knows the court's every gap because she wrote half of them." |
 | Lord Cedric | "A man's man. Keeps the walls high and the bandits at bay. Drinks like a fish, though." | "He honors the Forge. He knows that peace is only maintained through the strength of steel." |
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
-| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of wisdom. He is the only one truly trying to understand why the rifts are opening." |
+| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The two-day roads stay two days because someone like him never stopped checking." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
 | Lady Eveline | "She never speaks, but she sees everything. Like a statue that follows you with its eyes." | *(No devout account recorded.)* |
 
@@ -120,7 +120,7 @@ Recruited after the attempt. They inherited power without full knowledge of its 
 
 **Eveline vs. the table.** She holds both halves of critical infrastructure — water and the Grid — never speaks, never votes, and has outlasted the records. Everyone assumes neutrality. No one is certain of it. That both infrastructure wings answer to her office is a quiet veto: any serious move against her risks the city's actual survival. See `factions/the-weavers.md`, The Source Chamber.
 
-**Percival vs. the original five.** He's the only one actively studying the rifts, and he doesn't carry the Seat-scar the original five all share — which means he's starting to dig without knowing why certain doors don't open. Isabella's position relative to him is undetermined.
+**Percival vs. the original five.** He's the only one who runs an institution touching every mile of road outside the city, and he doesn't carry the Seat-scar the original five all share — which means every anomaly a route walk reports reaches him without any of the context for why certain doors don't open. Isabella's position relative to him is undetermined.
 
 **Isabella.** Her office is the most clearly defined of the seven — Supreme Magistrate is a real title with a real court under it. Her *loyalties* are the least defined. Presiding over contracts and legal maneuvering gives her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted.
 

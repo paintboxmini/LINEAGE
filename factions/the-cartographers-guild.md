@@ -30,7 +30,7 @@ Headquartered in Glasslight Reach — a natural fit, not an assignment: the city
 
 Chartered, not secret — the opposite posture from the Masons (`factions/the-masons.md`), who tend a different kind of threshold in total silence. The Regency pays for the Guild's work outright; this is the "someone" in `world/the-in-between.md`'s own rule that a safe stretch of road is "a place someone is paying to hold." Travelers know the roads are guild-surveyed. They just don't think about what that means until a route walk is late and a cairn they were counting on isn't where it should be.
 
-**Answers to Lord Percival, The Owl** (`world/the-regency.md`) — the natural office for it: he's the only council member actively studying the rifts, and a survey ledger is rift data whether the surveyor filing it thinks of it that way or not. A stretch reported "gone — swallowed back into blank" is exactly the kind of finding his study wants and the only kind of institution positioned to keep producing it on a schedule. The Guild's own purpose is unaffected either way; a route walk gets logged the same regardless of who reads the ledger after.
+**Headed by Lord Percival, The Owl** (`world/the-regency.md`) — cartography is his seat on the council, not an oversight assignment tacked onto something else. Every survey ledger reaches him because it's his own institution's record, not because it's routed to him from elsewhere. He's the only council member without a Seat-scar from the Pendragon Attempt, which means every stretch a Route Walk reports "gone — swallowed back into blank" reaches him as a real, logged anomaly, with none of the context the other five carry for why certain doors don't open.
 
 ---
 
@@ -41,4 +41,4 @@ Chartered, not secret — the opposite posture from the Masons (`factions/the-ma
 - `locations/capital/underground-bazaar.md` — the Cartographer, an individual, not this institution
 - `world/geography-overview.md` — the roads themselves
 - `factions/the-masons.md` — the other threshold-tending institution, run the opposite way
-- `world/the-regency.md` — Lord Percival, the council office the Guild answers to
+- `world/the-regency.md` — Lord Percival, whose council seat this is

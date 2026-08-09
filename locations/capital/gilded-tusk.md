@@ -221,6 +221,6 @@ See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory a
 Table #9 has an owl carved into its underside. Beneath it: a loose mosaic tile. Beneath the tile: a letter addressed to Lord Percival, warning him that Lord Oswald (The Lion) is planning something that will result in the removal of the other council members.
 
 **Player choice:**
-- Deliver it to Lord Percival — he's the one trying to understand the rifts, possibly the most trustworthy
+- Deliver it to Lord Percival — he runs the Cartographers Guild, about as far from Oswald's inner circle as a council seat gets, possibly the most trustworthy
 - Attempt to blackmail Lord Oswald
 - Sit on it and watch what happens

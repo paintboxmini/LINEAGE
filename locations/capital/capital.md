@@ -4,7 +4,7 @@ The city that gives the world its name sits at the heart of the known map, surro
 
 Casually, people just call it Eclipseria — same as the world it shares a name with. The distinction matters for precision, not for anyone who actually lives here.
 
-The city contains an ancient library where scholars search through forgotten texts for answers to questions the rifts opened. The marketplace draws traders from every region, including some who will not say where they came from.
+The city contains an ancient library where scholars search through forgotten texts, chasing whichever explanation for the Citadel's power hasn't been discarded yet. The marketplace draws traders from every region, including some who will not say where they came from.
 
 Eclipseria is not safe. It is merely the most legible place left.
 
