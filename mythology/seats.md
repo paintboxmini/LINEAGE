@@ -133,6 +133,16 @@ Doesn't offer the destination. Doesn't promise the destination is good. Only tha
 
 Rows after curfew at Vulture's Nest, and further out when trust is earned. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
 
+### Song and Silence
+**Bearer:** None seated.
+
+Domain: the space between an utterance and its absence — what a sound makes possible by existing, and what a silence makes possible by holding. Not two opposed things. The same edge, read from either side, the way a held note and the quiet after it are made of the same breath.
+
+Two resonances noticed so far, neither confirmed as more than resonance — same rule as every other coincidental echo in this list, nobody involved knows why the shape fits:
+
+- **Fermata** (`bestiary/fermata.md`, `locations/the-silent-choir.md`) — a being whose entire nature is one sustained note holding an entire boundary of silence. If anything in the world is close to this Seat, it's this. Whether that's Echo-alignment, something closer to the Seat than an Echo usually gets, or just the shape a thing like Fermata would take with or without a Seat behind it is deliberately unresolved — the same register as Aege's own uncertainty about her stage. The Silent Ring's Seat alignment (`items/the-silent-choir-items.md`, previously left fully open) has a real candidate now. Still not closed on purpose.
+- **Glasslight Reach's singing streets** (`locations/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `locations/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street.
+
 ---
 
 *This list is incomplete. Not all Seats have known bearers. Not all bearers are known.*

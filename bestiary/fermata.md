@@ -74,4 +74,5 @@ See `locations/the-silent-choir.md` for the full table-level rule (players commu
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause
+- `mythology/seats.md` — Song and Silence, the closest thing to a Seat this creature has, not confirmed as more than that
 - `rules/card-glossary.md` — Locked, Sealed, Staggered, Vulnerable, Evade
