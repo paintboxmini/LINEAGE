@@ -18,7 +18,7 @@ What they actually do is narrower, and it never finishes: **they walk the paid-f
 
 - **Route Walks** — the core labor. A surveyor walks an assigned stretch of road on a fixed rotation, checking it against the last survey, correcting what's drifted, reporting what's gone.
 - **Way-marking** — cairns, posts, carved distance-markers. Not decoration; the physical anchor a route walk checks against next time. A marker that's vanished is itself the finding.
-- **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted less, not more — the In-Between doesn't hold still, and a route that never needs correcting is a route nobody's actually walked recently.
+- **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted less, not more — the In-Between doesn't hold still, and a route that never needs correcting is a route nobody's actually walked recently. A fresh survey's own trustworthy window is short to begin with, about a week (`world/the-in-between.md`, Havens) — the paper is a receipt, not the payment — which is why the rotation exists at all instead of a single definitive map.
 
 ## Structure
 
@@ -30,6 +30,8 @@ Headquartered in Glasslight Reach — a natural fit, not an assignment: the city
 
 Chartered, not secret — the opposite posture from the Masons (`factions/the-masons.md`), who tend a different kind of threshold in total silence. The Regency pays for the Guild's work outright; this is the "someone" in `world/the-in-between.md`'s own rule that a safe stretch of road is "a place someone is paying to hold." Travelers know the roads are guild-surveyed. They just don't think about what that means until a route walk is late and a cairn they were counting on isn't where it should be.
 
+**Answers to Lord Percival, The Owl** (`world/the-regency.md`) — the natural office for it: he's the only council member actively studying the rifts, and a survey ledger is rift data whether the surveyor filing it thinks of it that way or not. A stretch reported "gone — swallowed back into blank" is exactly the kind of finding his study wants and the only kind of institution positioned to keep producing it on a schedule. The Guild's own purpose is unaffected either way; a route walk gets logged the same regardless of who reads the ledger after.
+
 ---
 
 ## Related Documents
@@ -39,3 +41,4 @@ Chartered, not secret — the opposite posture from the Masons (`factions/the-ma
 - `locations/capital/underground-bazaar.md` — the Cartographer, an individual, not this institution
 - `world/geography-overview.md` — the roads themselves
 - `factions/the-masons.md` — the other threshold-tending institution, run the opposite way
+- `world/the-regency.md` — Lord Percival, the council office the Guild answers to

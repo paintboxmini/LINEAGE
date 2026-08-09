@@ -46,6 +46,10 @@ The Regency maintains the roads and the halfway-inns. The Roadhouse has a crown 
 
 None of these is safe because its stretch of ground is calm. Each is safe because the payment has not stopped.
 
+**Not every kind of payment holds the same weight.** A glyph carved into a post is a standing payment — it keeps holding for exactly as long as the glyph itself does, which is why a Mason returns to recut one before it wears smooth rather than after. A map is different in kind, not just degree: it's a record of a payment already spent, not an ongoing one. A Route Walk survey names a stretch and pays for it once, in the walking — what the map holds afterward is the memory of that, not the thing itself, and memory fades faster than stone. A fresh survey is trusted to hold a path for about a week (`factions/the-cartographers-guild.md`) before the Guild treats it as unconfirmed again. The paper isn't the payment. It's a receipt, and a receipt is not the same as the debt still being paid.
+
+*(GM-facing: this is the Second Cut — Price — running at ground level (`mythology/creation-myth-the-three-cuts.md`: "the loss that anchors a real thing in place"). A glyph is continuous loss, renewed on a schedule; a map is a single, already-spent loss with nothing left renewing it. `rules/character-creation.md`'s Declaring a Price is the identical Cut at a person's scale — the adherence, not the statement, is what's actually paid. Nobody in Eclipseria draws this connection out loud. They wouldn't need to, any more than they'd explain that walking takes time.)*
+
 Where payment stops, the ground goes back. How long that takes is not established, has never been measured, and varies — a claim can stand empty for years and still be a claim (`quests/the-abandoned-homestead.md`), or it can stop being anywhere at all. Nobody has worked out what makes the difference.
 
 ---
@@ -80,7 +84,9 @@ One thing in the In-Between is not displaced, not passing through, and not expla
 ## Related Documents
 
 - `factions/the-cartographers-guild.md` — who actually walks the roads and keeps them what the Havens rule says they have to be
+- `factions/the-masons.md` — glyph-work, the standing-payment end of Havens
 - `mythology/creation-myth-the-three-cuts.md` — the Cuts, and what happens where one weakens
+- `rules/character-creation.md` — Declaring a Price, the same Cut at a person's scale
 - `world/the-unheld.md` — the other thinness, and the coastline that stays hard
 - `world/geography-overview.md` — the hubs, the two-day standard, the maintained roads
 - `locations/roadhouse.md` — a haven, and what is paying for it
