@@ -92,9 +92,9 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 At the close of character creation the player speaks one binding statement beginning with *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*.
 
-The statement is the Price. No card is revealed at this step — the declaration itself is the act that matters.
+**The adherence is the Price — not the statement.** Speaking the words costs nothing by itself; anyone can say a sentence. What's actually paid is everything that follows: every choice the pledge constrains, every situation where keeping it costs something real. No card is revealed at this step — there's nothing to reveal yet. The cost hasn't started accruing; it hasn't happened.
 
-Speaking it is a pledge to live by it. From that moment the statement is true at the table. When it is tested, the fiction treats it as binding. The player is expected to lean into it; the GM is expected to present situations that test it.
+From that moment the statement is true at the table. When it is tested, the fiction treats it as binding. The player is expected to lean into it; the GM is expected to present situations that test it — the Price is being paid in exactly those moments, not at the moment of speaking.
 
 Breaking the pledge incurs a higher cost — a curse, a forced card, a permanent mark, or another consequence the world exacts for the failure to keep what was named.
 

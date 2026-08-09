@@ -120,7 +120,7 @@ Session 0 shouldn't feel like "now we do character creation." It's a conversatio
 - **Slightly formal from the start.** Not theatrical. A quiet elevation above normal table banter — speak a little more carefully, leave the pauses longer, don't rush to fill silence.
 - **No menu language.** Avoid "what kind of character do you want" or "pick three traits." Stay inside questions that could be asked of the person sitting across from you.
 - **Never announce the Oracle.** Just start asking the kind of questions she asks (above), and start handling cards the way the ritual handles them. The table feels the shift before they can name it.
-- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. No card follows it — the statement itself is the Price. The weight has to come from the pledge and the silence around it, not from a reveal.
+- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. No card follows it, and the statement itself isn't the Price either — the *adherence* is. What happens tonight is only the opening of a cost that gets paid later, in play, every time the pledge is actually tested. The weight in the room right now comes from the pledge and the silence around it, not from a reveal.
 
 **Opening beats, roughly in this order:**
 
