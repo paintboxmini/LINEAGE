@@ -7,7 +7,7 @@ A carved-out hollow in the Fog Basin (`locations/fog-basin.md`). Not more fog â€
 ## Shape
 
 - **Circular clearing.** Packed ground, worn paths that are habits more than streets.
-- **Walls:** hanging sheets (cloth, sail, tarp, stitched hide) in a rough ring. Beyond the sheets: basin fog. Inside: the settlement.
+- **Walls:** hanging sheets (cloth, sail, tarp, stitched hide) in a rough ring. **They keep the fog out** â€” not a symbolic boundary, an actual one. Beyond them: basin. Inside: the clearing and the inward-facing shacks, clear air, ordinary visibility. `locations/fog-basin.md`'s Blind terrain rule doesn't reach past the sheet-line.
 - **Shacks face inward**, backs to the sheets. Doors open toward the center, never toward the white.
 - **Center:** trampled common ground; often a landmark (dry well collar, post cluster, or the path of the nightly collection bowl). Paths radiate inward.
 
