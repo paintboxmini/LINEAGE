@@ -24,9 +24,4 @@ Also not here: **Pending Propagation** (operational staleness — print sheets, 
 
 **`items/consumables.md`'s five oldest entries are stubs, not thin flavor: Echo Shell, Blood Phial, Imprint Sigil, Universal Pin, Phase Draught.** Each has a name, a type tag, and a price — no flavor line, and no effect text even in their own "full entry" file; the actual mechanics only exist one level removed, in `rules/items.md`'s summary bullets. Unlike Harwick Sundries' mystery counter (`locations/vultures-nest.md`), which is unbuilt on purpose and says so, nothing marks these five as deliberately incomplete — they just read that way, and the names themselves ("Universal Pin," "Imprint Sigil") are generic enough to fail the alignment-checker's own "could this exist in any TTRPG" test. Flagged 2026-08-07 in conversation, not fixed — Drew wants them held until development surfaces where each actually belongs (a source, an ecology, a reason it exists) rather than given flavor text cold.
 
----
-
-## Process & Harness
-
-**Authority 3 (constitutional-tier canon — formulas, keywords, progression, cosmology, core Design Principles) no longer waits for sign-off before it ships.** Changed 2026-08-08 — Drew, direct: *"A3 changes are allowed by anyone. they are always noted."* It now ships the same way Authority 2 already did: noted prominently in the queue and in chat, review is veto-after rather than sign-off-before. This is deliberately accepted, not a mistake, and not a bug to fix — but it's the highest-stakes tier, the hardest to unwind if a bad one lands and other content gets built on top of it before anyone catches it, and it just lost its only pre-ship gate. Worth tracking as a real, live risk rather than letting it disappear into `memory.md`'s prose once the entry ages out of Recently Shipped. Trail: `memory.md`, the 2026-08-08 Canon Gate entry; `CLAUDE.md`, The Canon Gate — Authority Levels.
 
