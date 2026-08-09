@@ -137,3 +137,21 @@ Recruited after the attempt. They inherited power without full knowledge of its 
 - She attends everything. Votes nothing.
 - She has been on the council longer than any record accounts for.
 - Critical infrastructure is her one official portfolio — the Cellar Custodians, the Weavers. She has never been seen to exercise it. It's exercised anyway. See `factions/the-weavers.md`, The Source Chamber.
+
+---
+
+## Lord Oswald — What the Title Cost Him
+
+Tall, stiff-postured, formal past the point of warmth — in council, in the Citadel's halls, anywhere anyone might be watching. The Lion doesn't raise his voice in public. He has never needed to; the volume is done for him, by rank.
+
+**Behind a closed door, the formality is load-bearing, not natural — and it fails.** An order followed imperfectly reads to him as an order defied; he does not distinguish between the two. What starts as correction can become violence with very little warning, and the people who've seen it happen once do not require a second demonstration to stay exact.
+
+*"I did not ask for effort. I asked for the result. Those are not the same instruction, whatever it felt like from where you were standing."*
+
+**Belief:** an order that isn't executed exactly is the same as no order at all — precision is the only thing standing between control and collapse.
+
+**Wound:** the first attempt on the Seat of Love/Binding didn't fail because Aurora already held it and no discipline in the world could have changed that (The Pendragon Attempt, above). Oswald's private account of that day is different, and he has built the rest of his life on top of it: it failed because it wasn't executed cleanly enough. Six people, one moment, and somebody wasn't precise.
+
+**Refusal:** he will not entertain the structural version — that the Seat was never takeable that way, full stop, and no amount of discipline would have changed the outcome. The structural version means the second attempt, the one his entire life is currently organized around, might be unwinnable no matter what he does. The discipline version is survivable. He has never let himself hold the other one long enough to test it.
+
+**With the Prince, something in him that's supposed to be gone isn't quite.** Rare, brief, and genuine-looking — the one place the formality visibly costs him something to maintain, rather than the other way around. Whether that's the last piece of whatever he was before the Attempt burned the rest of it off, or the most controlled performance he gives — precisely because it's the one that keeps a throne warm and pliable — isn't settled, not even by people close enough to have opinions. *(Table discovery. Don't resolve it at the table any more than this file resolves it here.)*
