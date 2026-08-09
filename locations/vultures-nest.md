@@ -75,6 +75,8 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
 
+Jonas believes a complete record is the one thing nobody can ever blame you for — a doctrine he brought with him from Glasslight, a town where being loud or being wrong were close to the same offense. He has never once, in his whole career, left something out of a ledger on purpose. Whatever isn't currently in this one is the first time that's stopped being true, and he still doesn't have a name for what changed.
+
 **Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
 Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
@@ -103,6 +105,8 @@ At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party 
 Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once she delivers them to Briarwatch — she continues on to Turnroot Weald from there, alone, whether or not the party follows.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
+
+He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
 
 **Masaharu** — *(name is a deliberate tonal outlier — old player character)* — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
@@ -147,6 +151,8 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
+Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now, not the eyes ever were. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it.
+
 ---
 
 ## The Red Scarves
@@ -183,11 +189,17 @@ Someone brought it in from the Briarwatch road. Nobody claimed it.
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
+She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
+
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
 **Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
+
+Her mother ran the counter the same way — take what's offered, don't ask, the Nest's own rule made personal — and Dess has never once broken it, not even for the back room, not even for the man in the top hat. She tells herself the not-asking is professionalism, same as it's always been. It doesn't feel like professionalism anymore. She hasn't found the sentence that would let her admit that, so she keeps not asking, same as always, and hopes the difference doesn't show.
+
+Ask her why, and the answer gets further from the truth the more casually it's asked. First: *"It wasn't my place."* Pressed harder: *"Because that's how my mother taught me to do the job."* Pressed harder than that, past the point where most people stop: *"Because I was paid to do what I was told."* All three are true. Only the last one is the actual reason, and she only gives it to someone who's earned hearing that the first two were cover.
 
 ---
 
@@ -212,6 +224,8 @@ Smells like old ale, smoked fish, and river-damp wood. Loud enough that conversa
 **Salla** — the barkeep. Short, wide, moves fast. Hair pinned back with a fishhook that has seen use. Keeps a sawn-off boat hook behind the bar. Nobody has seen her use it, but it's never dusty.
 
 Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
+
+She believes the bar is the one place in the Nest where nothing that followed you in gets to finish what it started — pour, listen, don't ask, and whatever's chasing someone loses the scent at the door. Mostly true, which is the problem: the one time it wasn't, the boat hook is the reason there's still a Listing Keel to run. She doesn't tell that story. She keeps the hook within reach and calls it habit.
 
 *"Ale or the brown stuff?"*
 

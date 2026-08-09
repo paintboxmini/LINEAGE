@@ -24,4 +24,4 @@ Activates automatically: The first time an ability would force you to move posit
 *Consumable — Iron wedge, worn grip, field tool*
 *Source: Briarwatch farmer reward (after resolving the Hollow Below)*
 *Price: ~45 gold*
-Use (1): Anchored — at the start of each of your turns, your attacks deal +2 damage this turn. Ends the moment you change position.
+Use (1): Anchored — while active, your attacks deal +2 damage. Ends the moment you change position.

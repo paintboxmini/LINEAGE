@@ -148,9 +148,13 @@ He also paints objects before they're sold into the soul economy — a last reco
 
 Friendly. Chatty. Knows everyone who's ever tried to hold onto something.
 
+He believes nothing is really gone as long as somebody remembers exactly what it looked like — which is a generous thing to offer strangers and a strange thing to need this badly himself. Something of his own went once with no record left behind at all, nothing he painted, nothing anyone else did either. He calls the hidden collection professional archiving. It started, and maybe still is, the one thing he built so that could never happen to him twice.
+
 **Bella — The Dinner Juggler**
 
 Evening performance, every night, same time. She juggles bites of actual food — a roasted leg, a wedge of pie, a steaming fish — and eats each one at precise intervals while keeping the rest airborne. Never drops a crumb. Adds courses throughout. Crowd contributes unusual currencies to a hat: coins, pressed flowers, small keys that chime.
+
+Believes that if you make something impossibly hard look effortless often enough, people will trust you with the things that actually matter — an old conviction from before the Bazaar, back when trust was the one thing she dropped and couldn't catch again in time. She has not dropped a single bite since. Ask her and she'll call it showmanship. It reads more like proof, performed nightly, to an audience that was never actually the point.
 
 ---
 

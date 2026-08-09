@@ -44,3 +44,4 @@ Her mother's echo persists in the Wallows' Echo Cavern (`locations/capital/the-w
 - `locations/capital/underground-bazaar.md` — where she's found, the Cartographer, the soul economy
 - `locations/capital/the-wallows.md`, `quests/the-wallows-descent.md` — the mine, the Echo Cavern, her mother's echo
 - `characters/giblets.md`, `characters/mortis.md` — the same incident, from their own sides
+- `locations/glasslight-reach.md` — Tomás Kettlewright's chapter, and the favor he owes her

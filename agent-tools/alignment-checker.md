@@ -73,7 +73,7 @@ The Soul Pass detects flatness; it doesn't fix it. When something comes back fla
 
 **Stuck on a creature:** ecology before combat role — what does it eat, where does it sleep, what avoids it? What does it do when there's nobody to fight? Find the beautiful version and the wrong version and build toward the overlap.
 
-**Stuck on an NPC:** what have they seen that the party hasn't (their edge)? What have they decided to stop thinking about (their flaw)? What do they do when nobody is watching (their truth)? Warm and wrong, or cold and right — both are interesting, neither is safe.
+**Stuck on an NPC:** what have they seen that the party hasn't (their edge)? What have they decided to stop thinking about (their flaw)? What do they do when nobody is watching (their truth)? Warm and wrong, or cold and right — both are interesting, neither is safe. For the fuller, generative version of this — belief, wound, and what a person says when that belief is actually challenged — see `agent-tools/finding-a-voice.md`.
 
 **The last check:** does it feel like it belongs to *this* world, or could it exist in any TTRPG? If it could exist anywhere, find the thing that makes it only possible here — under this sky, against the Unheld, with these rules. That thing is usually already in the content somewhere; it just needs to be moved to the front.
 

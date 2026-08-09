@@ -47,6 +47,8 @@ At the back: a staircase curling upward. A door beside it. Closed.
 **"Big" Marcus** *(barkeep, human)*
 Barrel-chested. Leather apron over a stained silk tunic. Prosthetic brass ear — a gift from an enchanted artisan. Knows every rumor about the Regency Council. Treats the party well as long as they have coin. Enforces one rule: **No Magic in the Pit.**
 
+He thinks of himself as apolitical — just a barkeep, no side, no stake — and genuinely doesn't see that the No Magic rule is the reason this room is one of the only places in the capital where the Council's own rivals can sit within arm's reach of each other and not worry about it. That wasn't always true here. He doesn't tell that story either, and the brass ear is the only part of it anyone's ever gotten out of him — a gift, he says, when someone asks, and lets them decide whether "gift" was the right word.
+
 **Senshi** *(cook, Thessian)*
 Short-tempered. No-nonsense about everything except food, which is the only subject he treats as sacred. Gets personally offended when people refuse on the basis of legs, size, or unfamiliarity. Has been known to emerge from the kitchen specifically to argue with a customer who sent something back.
 
@@ -58,6 +60,8 @@ See **The Naturalist Collection** below.
 Plays a lyre. Uses minor illusion to manifest small spirit dancers on the tabletops while she performs.
 
 One piece in her rotation is older than anything else she plays — worn to fragments in places, the words shifting depending who taught it to whom, but the shape always holds: someone searching for a healer far from home, one who takes another's suffering into her own hands so the sufferer doesn't have to carry it alone. Lyra doesn't know where it came from. She plays it because the room always goes quiet for it, and a performer learns which songs do that.
+
+She trusts inherited songs the way she doesn't trust her own — a tune that's survived being passed hand to hand, mistaught and reshaped a hundred times, has to have something true left in it or it wouldn't have survived at all. She wrote something of her own once, about something that actually happened to her. It didn't survive one performance. She hasn't tried again. She'd say she just prefers the old material. It might be closer to the truth that borrowed grief is easier to play in front of people than her own.
 
 **Sitrump the Scribe** *(regular, gnome)*
 Always at the same corner table, surrounded by scrolls from the Library of Arcane Knowledge. Obsessed with unmasking Lord Archibald (The Pig) and Lady Eveline (The Elephant). Extremely paranoid.
@@ -128,6 +132,10 @@ Orange-and-blue coloring indicates different flavor profiles in each half. Orang
 Wasp larvae, carefully prepared. The metamorphosis venom is neutralized in the cooking — improperly done, it prevents magical transformation for 24 hours. Senshi's is properly done. He will not entertain questions about this.
 — Creature pending: `bestiary/future-lock-wasp.md`
 
+**Kiwi Bird, Whole-Roasted** *(currently off the menu — see Senshi's Second Commission, below)*
+Small forest forager, Turnroot Weald. Famous, among the few who've caught one, for flesh that tastes and tears like fruit rather than meat. Senshi has a theory about why (something about a diet of nothing but fallen fruit for generations) and no proof, which has never once stopped him from stating it as fact.
+— Creature pending: `bestiary/kiwi-bird.md`
+
 **Gene-Thief Tartare** *(12 gold — Adventurer's Special)*
 Raw tardigrade, preparation method varies by specimen. Each one has consumed something different — the flavor reflects it. Temporarily grants resistance to one damage type based on what the creature absorbed. Senshi doesn't always know which type until service.
 *Ask what's in season.*
@@ -185,6 +193,18 @@ The note describes the creature's lair: fog, ancient webs, something large that 
 *If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
 
 See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
+
+---
+
+## Senshi's Second Commission — Kiwi Birds
+
+This one doesn't come with a folded note or a kitchen appearance. He mentions it between courses, mid-conversation, the way he mentions most things he actually cares about:
+
+> *"You want to know what real flesh tastes like — not fish pretending, not fowl pretending, actually fruit — find me a kiwi bird. Whole, alive if you can manage it, dead is fine if you can't. Turnroot undergrowth. Small. Fast to lose, not fast to catch, if that makes sense to you."*
+
+No deadline, no threat, unlike the Bone Collector ask. He'll wait. **Price: 12 gold per bird, live specimens worth more** — he won't say how much more until he's actually looking at one.
+
+See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory as the rest of Senshi's ingredients — see `quests/turnroot-weald-adventure.md`.
 
 ---
 

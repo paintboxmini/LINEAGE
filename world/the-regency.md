@@ -21,8 +21,8 @@ Each member carries an animal title. Officially: informal, earned or assigned by
 
 | Member | Title | Sphere |
 |--------|-------|--------|
-| Lord Oswald | The Lion | Regent. Consolidates power around the Prince. |
-| Lady Isabella | The Panther | Contracts and legal maneuvering. Temple of Justice regular. |
+| Lord Oswald | The Lion | Regent. Consolidates power around the Prince. Sets the law that binds the government itself — what the Regency may do, not what its citizens may do. |
+| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`locations/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
 | Lord Cedric | The Bear | City walls and military security. |
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
 | Lord Percival | The Owl | Scholarship. The only one actively studying the rifts. |
@@ -38,7 +38,7 @@ What different city factions say about the council. Collected from marketplace m
 | Member | Merchants Say | Devout Say |
 |--------|--------------|------------|
 | Lord Oswald | "He talks a big game about strength, but he's just fattening the Prince to keep the throne warm." | "A steady hand. Without the Regent, the rifts would have swallowed Eclipseria years ago." |
-| Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She visits the Temple of Justice often... though some say she's just studying how to bypass it." |
+| Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She sits the Temple of Justice bench herself, often... though some say the Supreme Magistrate knows the court's every gap because she wrote half of them." |
 | Lord Cedric | "A man's man. Keeps the walls high and the bandits at bay. Drinks like a fish, though." | "He honors the Forge. He knows that peace is only maintained through the strength of steel." |
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of wisdom. He is the only one truly trying to understand why the rifts are opening." |
@@ -122,7 +122,7 @@ Recruited after the attempt. They inherited power without full knowledge of its 
 
 **Percival vs. the original five.** He's the only one actively studying the rifts, and he doesn't carry the Seat-scar the original five all share — which means he's starting to dig without knowing why certain doors don't open. Isabella's position relative to him is undetermined.
 
-**Isabella.** Least defined of the seven. Contracts and legal maneuvering give her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted.
+**Isabella.** Her office is the most clearly defined of the seven — Supreme Magistrate is a real title with a real court under it. Her *loyalties* are the least defined. Presiding over contracts and legal maneuvering gives her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted.
 
 **Working balance.** Oswald pushes upward and inward. Elara and Archibald circle each other over the two economies. Cedric holds the sword and hasn't decided whose hand it ultimately serves. Eveline holds the foundation and says nothing. Percival digs. Isabella watches the contracts. The council functions because no single member can yet afford to break it — that, not any real trust, is what's keeping the peace.
 

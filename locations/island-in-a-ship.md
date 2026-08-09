@@ -76,7 +76,9 @@ Questions she asks:
 - *"What did you refuse?"*
 - *"What do you carry forward?"*
 
-**Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.
+**Price** — One card is revealed from the Oracle Deck. It is buried — returned to the Oracle deck, not removed from it. The player does not receive it. This is the cost of growth — something available that you don't get to take *yet*. The card remains in the pool; a player who wants it can plan toward it, and hope it surfaces again.  
+The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+The Oracle is permitted to remember what it has already shown.
 
 **Distance** — Three cards revealed. Player chooses one. That card enters their deck.
 
@@ -110,6 +112,28 @@ The night the players wash ashore (`quests/washed-ashore.md`) — no memory of t
 This is when characters are named and decks are built. The Oracle sees who they are before they do. Every card they draw for the rest of the campaign was seen first by someone who doesn't use her eyes.
 
 The structure on the beach their first night: there isn't one to reflect yet — the last threshold they crossed was the Unheld itself, which has no structure at all. The island appears as bare as the Constants describe it: sand, the Oracle at her table, the cave. Nothing layered on top. The first Island a party ever sees is the plainest one they'll ever see — every later visit reflects somewhere they've actually been.
+
+### Setting the Tone
+
+Session 0 shouldn't feel like "now we do character creation." It's a conversation that slowly becomes something else, until the table realizes they've already crossed.
+
+- **Slightly formal from the start.** Not theatrical. A quiet elevation above normal table banter — speak a little more carefully, leave the pauses longer, don't rush to fill silence.
+- **No menu language.** Avoid "what kind of character do you want" or "pick three traits." Stay inside questions that could be asked of the person sitting across from you.
+- **Never announce the Oracle.** Just start asking the kind of questions she asks (above), and start handling cards the way the ritual handles them. The table feels the shift before they can name it.
+- **The declaration is the hinge.** When a player speaks their binding statement (`rules/character-creation.md`, Declaring a Price), give it more weight than anything that came before. No card follows it, and the statement itself isn't the Price either — the *adherence* is. What happens tonight is only the opening of a cost that gets paid later, in play, every time the pledge is actually tested. The weight in the room right now comes from the pledge and the silence around it, not from a reveal.
+
+**Opening beats, roughly in this order:**
+
+1. Lights a little lower, phones away, one clear space on the table that will later hold the cards. Set the premise without game language:
+
+   > "You wake up somewhere that is not here. You are still yourself, but the body and the life you had are gone. What remains is whatever you carry inside."
+
+   Let them react. Answer questions in the same register. No cards yet.
+2. Ask something personal and pointed — the Oracle's own Name questions, still sounding like conversation: *"What did you leave behind that still has your name on it?"* / *"What do you refuse to look away from?"* / *"What have you always paid for, whether you wanted to or not?"*
+3. Invite the declaration: *"Before the world finishes taking its shape around you, name one thing that is still true of you."* They speak it. No card, no gesture — just the sentence and the silence after it. Hold that silence longer than feels comfortable.
+4. From here, stats and the nine-card draft (below) can proceed inside the same tone. Never announce that "the game has started" — by the time the deck is finished, they're already on the island.
+
+**Small techniques.** Complete sentences, not rapid clarifying questions. If a player jokes to break tension, acknowledge it, then return to the quieter register without comment. Handle every card — even ordinary draft cards — with the same deliberate care; the ritual becomes ritual by repetition. Never say "the Oracle says" — just ask, or reveal.
 
 ### Deck Building
 

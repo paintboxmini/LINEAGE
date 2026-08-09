@@ -30,9 +30,9 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ---
 
 ### Holdfast Head
-*Price: ~200 gold (Tier 1 weapon)*
+*Price: ~250 gold (Tier 1 weapon — priced above the flat Tier 1 anchor, Drew's call, for a stronger-than-usual effect)*
 
-**Equipment — Weapon (Tier 1). Effect:** Once per combat, on a successful melee attack: target gains Rooted until the end of their next turn.
+**Equipment — Weapon (Tier 1). Effect:** Every successful melee attack inflicts Rooted on the defender, until the end of their next turn.
 
 ---
 
@@ -102,7 +102,9 @@ Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still
 ### Ledger Weight
 *Price: ~45 gold — carried*
 
-**Use:** Once per combat, force the defender to re-reveal their chosen card — costs them a discard.
+**Use:** Once per combat, when you attack and the reveal happens: the defender's just-revealed card is discarded, and they immediately choose a replacement from their remaining hand, face-up — no blind pick, since your card is already public. RPS re-resolves against the new card.
+
+*Attacker-on-defender only. The wielder cannot use this on their own reveal, as attacker or as defender — it denies an opponent their first answer, it never fixes the wielder's own blind guess. That restriction is load-bearing, not flavor: letting either side redo their own already-revealed card would break the simultaneous-blind-reveal principle the whole resolution system runs on (`rules/combat.md`; `combatsimulations/README.md`). Same override family as Axiom/Paradox (`rules/invariants.md`, Mechanic-override reference) — one reveal, one direction, then it's spent for the combat.*
 
 ---
 

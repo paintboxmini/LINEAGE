@@ -90,16 +90,13 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 ### Declaring a Price
 
-At the close of character creation the player speaks one binding statement beginning with I never, I must, I always, I cannot, Once I…, or Whenever….
+At the close of character creation the player speaks one binding statement beginning with *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*.
 
-The Oracle answers by revealing one card from its deck and burying it again. That glimpse is the Price of the declaration. The card is not gained, but it is remembered.
+**The adherence is the Price — not the statement.** Speaking the words costs nothing by itself; anyone can say a sentence. What's actually paid is everything that follows: every choice the pledge constrains, every situation where keeping it costs something real. No card is revealed at this step — there's nothing to reveal yet. The cost hasn't started accruing; it hasn't happened.
 
-From that moment the statement is true at the table. When it is tested, the fiction treats it as binding.
+From that moment the statement is true at the table. When it is tested, the fiction treats it as binding. The player is expected to lean into it; the GM is expected to present situations that test it — the Price is being paid in exactly those moments, not at the moment of speaking.
 
-The Price is not a mechanical penalty applied immediately. It is the world acknowledging that the character has named something true about themselves and that the naming has a cost.
-
-The Price paid at creation is not discarded by later rituals. If the same card later surfaces as a session Price, the Oracle is allowed to treat it as an echo or escalation of the original declaration rather than ordinary chance.  
-The Oracle is permitted to remember what it has already shown.
+Breaking the pledge incurs a higher cost — a curse, a forced card, a permanent mark, or another consequence the world exacts for the failure to keep what was named.
 
 ---
 
@@ -151,7 +148,9 @@ Players may also propose custom cards as the campaign develops. These enter the 
 Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
 
 1. **Name** — the Oracle asks one question. The player answers.
-2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.
+2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
+   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
+   The Oracle is permitted to remember what it has already shown.
 3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
 This is the default rhythm of growth.

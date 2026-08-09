@@ -35,16 +35,16 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 **Consumables**
 - **Echothorn Seed** — +2 to next damage/heal roll, free action. ~40 gold. *Source: The Thorne Throne.*
 - **Luminova Powder** — heal 8 HP. ~30 gold. *Source: Luminova Clearing.* Ground from 1 Luminova Leaf (above) and 1 hour of processing — the more potent form of the same plant.
-- **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~60 gold. *Source: Rootstalker (rare).*
-- **Vision Shard** — Scry 3 on any deck. ~100 gold. *Source: The Mirror-Slick Pond.*
+- **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~25 gold. *Source: Rootstalker (rare).*
+- **Vision Shard** — Scry 3 on any deck. ~45 gold. *Source: The Mirror-Slick Pond.*
 
 **Equipment**
-- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~80 gold. *Source: The Floating Gallery.*
+- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~20 gold. *Source: The Floating Gallery.*
 - **Spider Silk Rope** — 50 ft, stronger than hemp, doesn't fray. ~50 gold. *Source: The Bone Collector.*
 
 **Harvested Materials**
 - **Root Fibers** — rope, bowstring (+1 ranged), or armor weave (+1 temp HP). ~15 gold/strand. *Source: Rootstalker (common).*
-- **Rootstalker Core** — crafts into a thrown Root Lash Charm or a one-encounter Defensive Barrier. ~250 gold. *Source: Rootstalker (very rare).*
+- **Rootstalker Core** — crafts into a thrown Root Lash Charm or a one-encounter Defensive Barrier. ~60 gold. *Source: Rootstalker (very rare).*
 
 **Passive Items**
 - **Harvest Bead** — +1 HP on the first defensive block each cycle. ~150 gold. *Source: The Bone Collector.*
@@ -89,7 +89,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **Temple Edge** — Weapon, +1 attack damage. ~200 gold.
 - **First Glance** — Weapon, Evade on first attack against you each combat. ~200 gold.
 - **Opening Mark** — Weapon, Scry 1 on your first attack each combat. ~200 gold.
-- **Holdfast Head** — Weapon, once/combat on successful melee: target Rooted until end of their next turn. ~200 gold.
+- **Holdfast Head** — Weapon, every successful melee attack: defender gains Rooted until end of their next turn. ~250 gold.
 - **Temple Plate** — Armor, Armour 1. ~200 gold.
 - **First Blood** — Armor, start combat with Resist 1. ~200 gold.
 - **Rebuke Mail** — Armor, first successful hit against you each combat: attacker Staggered. ~200 gold.
@@ -125,13 +125,21 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entries: `items/consumables.md`. Sources and availability left to GM discretion.*
 
-- **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold.
-- **Terrormite Capsule** — Resist 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
+- **Terrormite Capsule** — Armour 1 and +1d6 damage, 1 combat; costs 2 Wound cards at combat's end.
 - **Echo Shell** — repeat your last action, if it's still retrievable from discard.
 - **Blood Phial** — add the target's own last-used card's effect to your attack.
 - **Imprint Sigil** — target follows a simple command, 1 turn.
 - **Universal Pin** — fix a target in place until their next turn.
 - **Phase Draught** — take your turn, then return to your prior position and state at turn's end.
+
+---
+
+## The Silent Choir
+
+*Full entries: `items/the-silent-choir-items.md`. Source: `locations/the-silent-choir.md`, held by Fermata (`bestiary/fermata.md`). Neither item is for sale.*
+
+- **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold. Already loose in the world; this is its origin, not a standing offer to find a second.
+- **The Silent Ring** *(Artifact)* — once per combat, name an enemy: no ally "Target ally" effect may reach them until the end of their next turn. Won, not bought.
 
 ---
 
