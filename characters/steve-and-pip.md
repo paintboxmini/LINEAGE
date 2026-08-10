@@ -16,7 +16,7 @@ His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-na
 
 ## Pip
 
-Later — after Mirel's arc, unconnected to Kaine or the Current in any way — Steve finally goes through with the ordinary rite of passage: one bath, once, normal congregation custom (`factions/people-of-promise.md`). This is where it goes wrong, and it has nothing to do with him ever having been courted by Kaine. Formed from fragments of Steve's consciousness during that bathing — specifically because the pulleys got stuck.
+**Clean separation, on purpose:** this happens visibly after Kaine's own arc is over, not overlapping it. No Current pressure during the bath itself — it's the ordinary one-time rite of passage, nothing else, and nobody from the Current is part of making it happen. Steve finally goes through with it: one bath, once, normal congregation custom (`factions/people-of-promise.md`), unconnected to Kaine or the Current in any way at the moment it happens. This is where it goes wrong, and it has nothing to do with him ever having been courted by Kaine. Formed from fragments of Steve's consciousness during that bathing — specifically because the pulleys got stuck.
 
 Steve was lowered into the Unheld Ocean for his first bathing. Standard procedure. Then the pulleys seized. He was down there much longer than anyone intended, longer than anyone should be, longer than doctrine accounts for. When he came back up, Pip came with him.
 
@@ -37,7 +37,7 @@ Pulleys fail → Steve is down too long → Pip forms on the way up → Steve be
 **The party's choice:** intervene or don't.
 
 - **Intervene** — warn people, try to separate Steve from the crowd, try to understand what Pip actually is. The fallout changes shape. It doesn't disappear.
-- **Do nothing** — Pip runs his week. The pull fades. People who joined the Promise community because of Steve's draw are left with real questions about what happened to them. Social fallout within the community. Kaine's remnant may try to exploit it.
+- **Do nothing** — Pip runs his week. The pull fades. People who joined the Promise community because of Steve's draw are left with real questions about what happened to them. Social fallout within the community. **Any leftover Final Current interest shows up here and nowhere earlier** — Kaine's remnant may try to exploit it once Pip is already real and drawing a crowd, never before.
 
 The ripples are emergent. They depend on what the party adds. Don't pre-write the resolution.
 
