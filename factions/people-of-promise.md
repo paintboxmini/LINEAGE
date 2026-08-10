@@ -18,18 +18,28 @@ The sacred and the mundane are not separated. A marketplace is a temple. A meal 
 
 **Tricky language** — Some of what sounds like doctrine is a working. The line at the top of this page reads as a description of the Unheld until it's heard closely: the second half never actually says "of it." Spoken with intent, it isn't describing anything — it's a wish, aimed wherever the speaker points it, phrased so its own grammar refuses to stay confined to the subject it appears to be about. This is how the People of Promise try to draw the Unheld's influence into the ordinary world without going anywhere near the coast: not through ritual alone, through sentences built to slip their leash. Uncontrolled like everything else they do — nobody claims to know how often it actually works, or on what.
 
-**Ritual bathing** — The central communal practice, and the community's defining transgression. Nobody else in the known world touches the Unheld. No fishing, no sailing, no wading at the grey shore — the edge of the world is treated as exactly that. The People of Promise break this convention on purpose, publicly, as worship.
+**The Last Bath** — the actual completion the Promise teaches, and the only bathing the doctrine was ever written to describe. The dead are lowered into the Unheld and released. The body does not come back. No second surface, no fluid, no hardened, no *how did you change* — completion is literal, not a metaphor for something survivable. *"Everything eventually returns to the Unheld"* means exactly that, read plainly: dead, and once.
+
+**Ritual bathing** — what the Glasslight congregation actually, routinely does with the living, and has for longer than anyone currently practicing it can say with certainty. Not the doctrine — a custom that grew up alongside the Last Bath and was never formally distinguished from it, congregation to congregation, generation over generation, until most practicing it don't know there's a difference to draw. Nobody else in the known world touches the Unheld, living or dead. No fishing, no sailing, no wading at the grey shore. The Promise breaks that convention twice: once, in doctrine, at death — and constantly, in practice, with people who intend to keep breathing afterward.
 
 The bathing must happen at the coast. Unheldness does not cross the coastline — water carried inland arrives ordinary, and no vessel preserves it. To touch the Unheld, you go to the Unheld. The community treats this as doctrine rather than inconvenience: the Promise comes to no one; you descend to it.
 
 Congregations lower participants down the cliffside into the Unheld Ocean using wooden platforms suspended by ropes and pulleys. The bather descends into the grey water while the community above holds the line.
 
-In the water, bathers experience *potentials* — different possible versions of themselves. Paths not taken. Selves that could have been. The experience is not uniform and cannot be predicted.
+In the water, living bathers experience *potentials* — different possible versions of themselves. Paths not taken. Selves that could have been. The experience is not uniform and cannot be predicted.
 
 When they are brought back up:
 - Some come back **fluid** — open, changed, possibilities still moving in them.
 - Some come back **hardened** — more certain of who they are, as if the potential collapsed into resolution.
 - All come back **changed**.
+
+**None of this is what the doctrine actually describes.** The Last Bath is one-way. What the congregation calls ritual bathing is something else wearing its language — survivable, repeatable, not yet examined closely by anyone with the standing to say so out loud. Elder Kaine is the one who did. See `characters/kaine.md`.
+
+| | Orthodox Promise | The Final Current |
+|--|---|---|
+| Who enters | The dead | The living |
+| Body | Released — no return | Returned — changed |
+| Language | Completion, last bath | Potential, unlock, bath *now* |
 
 ## Relationship to Other Factions
 

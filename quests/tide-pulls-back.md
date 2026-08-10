@@ -41,12 +41,12 @@ She also mentions, sideways and only if the party seems safe: she's heard of a g
 
 Mirel takes the party somewhere quieter. She shows them the Mason's chisel under her cloak. Explains she's been learning constraint magic in secret — she found the Mason lodge in the cliffs by following a glyph she'd been dreaming about.
 
-She describes The Final Current's practices: accelerated dissolution, followers who come back from the bathing pushed further than they should be. She's seen people come back fluid and then get pushed back in. That isn't Promise doctrine. That's something else.
+She describes The Final Current's practices: Kaine's claim that coming back from the water proves the Promise's true completion — the Last Bath's, the one doctrine says is final (`factions/people-of-promise.md`) — can be unlocked before death. Not just the drift the whole congregation already quietly lives with; a specific, public claim nobody else in the community makes out loud. Followers who come back fluid get pushed back in, repeatedly, chasing more of it. She's seen it happen. That claim isn't Promise doctrine. That's something else.
 
 **What Mirel knows:**
 - Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
-- Steve — a new initiate, hasn't bathed yet, harmless-seeming — follows Kaine everywhere. She finds him difficult to take seriously. *This is the correct reaction to Steve.*
+- Steve — a new initiate, hasn't bathed yet, harmless-seeming — follows Kaine everywhere. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine.md`, The Pitch).
 
 **What Mirel doesn't know:**
 - The Lightning Loop is a Storm Seat resonant item

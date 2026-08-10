@@ -28,13 +28,19 @@ There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any
 
 ## The Final Current
 
-Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the ritual bathing, the same language, the same philosophy. The difference is in what they do with people who come out of the water wrong.
+Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same platforms, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's the claim: that *Return* — coming back alive from what the doctrine only ever describes as final — is proof, not drift. That the Last Bath's completion can be unlocked before death, by anyone willing to go far enough. Most of the congregation has never had to reconcile what they practice with what the doctrine actually claims. Kaine has, and decided the doctrine was simply describing something that could happen sooner.
 
-Standard Promise practice: people who come back changed are supported, integrated, given time.
+Standard congregation practice: people who come back fluid are supported, integrated, given time to settle.
 
-The Final Current practice: people who come back fluid are pushed further. The dissolution is the point. Getting there faster is the work.
+The Final Current practice: people who come back fluid are pushed back in. Repeatedly. The visible marks on his longest-devoted followers read, to Kaine and to them, as proof rather than damage — animal eyes, patches of stone-like skin, moss where hair should grow, ears gone long and furred, a nose flattened dark like something that hunts by scent, claws, a tail on more than one of them. **Unlocked**, in his theology. Not wrong. Ahead.
 
-**Steve** is a new initiate who hasn't bathed yet when the party encounters him. His bathing is a thread in Kaine's plans — or close enough to one that it matters.
+**The pitch.** Kaine doesn't argue doctrine with a new initiate. He shows them a body. Standing among his followers at a gathering, he gestures at whoever's changed the most visibly and says it plainly:
+
+> *"Look around you, at the other members here today. If you want to unlock your true potential like these devouts, then it's time to take your bath."*
+
+The grin that goes with it is too large for the sentence.
+
+**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and goes ahead with the rites anyway. His bathing is a thread in Kaine's plans — or close enough to one that it matters.
 
 ---
 
