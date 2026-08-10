@@ -23,6 +23,8 @@ The first demonstrations are deliberately ordinary in appearance:
 
 These are different expressions of the same underlying capability. The Loop's energy can be transferred through a target and expressed mechanically according to the target and effect: restorative water, renewed vitality, ignition, or direct lightning. A future expression such as granting Quick is a natural extension of the established capability rather than a new metaphysical rule.
 
+**What it costs him stays open on purpose** (`rules/equipment.md`, Artifacts — the Price). Not a flat HP tax — whatever reality takes for lightning specifically, expressed through whatever the Loop was just asked to do. The shape is already implied by what he's used it for: restorative water could cost him equivalent vitality — he heals, he pays. Igniting wood could burn him on the way to burning what he touched. Lightning at range could arc somewhere he didn't aim it — a devotee, not the pole. None of that has necessarily happened yet. Invent the actual cost the first time a GM needs one, in a form that answers what was just asked of the ring — not a number, a consequence.
+
 The miracles are real. The deception is their provenance. The people watching are given Kaine's interpretation of what they are seeing: the bath unlocked him. The Loop remains hidden inside the story.
 
 The exact origin of the Loop is unknown and intentionally open.
