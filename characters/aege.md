@@ -55,7 +55,7 @@ She doesn't volunteer more of it than that. What the hunting actually looks like
 
 ## GM Secret — Not Player-Facing
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/echoes.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/resonant-people.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
 
 **She is fated to bear it.** How and when are deliberately unestablished — a fate, not a scene, the same shape as Greed and the Storm Seat (`characters/greed.md`). Nothing in her behaviour today should be played as a countdown, and she does not know.
 
@@ -126,6 +126,6 @@ Her core picks lean the same direction — control and information over damage (
 - `bestiary/root-heart.md` — Overgrowth, the real reason the Weald has turned
 - `factions/the-masons.md` — the Briarwatch line, the actual cause behind the Heart's cycle
 - `mythology/seats.md` — the Seat of Death
-- `mythology/echoes.md` — Echoes, the Degrees of Alignment, and her own entry under Known Echoes
+- `mythology/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/aege.md` — signature cards

@@ -54,7 +54,7 @@ Most bearers never release their Seat. Relinquishing it feels like annihilation.
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
 
-**A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all.** Even a Seat standing Empty can leave behind an Echo, or a Resonant Item, still faithfully aligned to what it once distributed whole (`mythology/echoes.md`, `mythology/resonant-items.md`). The current is unmediated, not severed.
+**A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all.** Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Location, still faithfully aligned to what it once distributed whole (`mythology/resonant-people.md`, `mythology/resonant-items.md`, `mythology/resonant-locations.md`). The current is unmediated, not severed.
 
 **Binding and Holding are not the same thing.** A Seat powerful enough for it can bind its domain completely — perfectly, at scale, in a way that looks indistinguishable from permanence. That is not the same as being exempt from Price (`mythology/creation-myth-the-three-cuts.md`, the Second Cut — nothing is exempt from Price, ever, no matter how it's attempted). A domain held the ordinary way pays piecemeal, continuously, the way every Haven does (`world/the-in-between.md`); let the payment lapse and it goes back gradually, sometimes over years. A domain bound instead of held doesn't pay as it goes — the debt still accrues, just uncollected, until it's called in whole. When it is, nothing fades. It's unmade entirely, in a single stroke, all at once. A working this way isn't a shortcut around Price. It's a loan against a future that eventually, always, comes to collect it in full. (First recorded case: the Pendragon Attempt, `world/the-regency.md`, GM Secret.)
 
@@ -106,7 +106,7 @@ Discusses gathering, abundance, and what's worth preserving. Attentive to what g
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Echo of the domain, which is not the same as filling it. See `mythology/echoes.md`, Known Echoes.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Resonant Person of the domain, which is not the same as filling it. See `mythology/resonant-people.md`, Known Resonant People.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*
@@ -150,8 +150,8 @@ Domain: the space between an utterance and its absence — what a sound makes po
 
 Two resonances noticed so far, neither confirmed as more than resonance — same rule as every other coincidental echo in this list, nobody involved knows why the shape fits:
 
-- **Fermata** (`bestiary/fermata.md`, `locations/the-silent-choir.md`) — **confirmed Echo of this Seat**, Drew's direct call. A being whose entire nature is one sustained note holding an entire boundary of silence — see `mythology/echoes.md`, Known Echoes, for the full entry. Which stage of Alignment it's actually reached is left open on purpose, same register as Aege's own uncertainty about hers. The Silent Ring's Seat alignment (`items/the-silent-choir-items.md`) is settled by the same confirmation — Song and Silence, no longer just a candidate.
-- **Glasslight Reach's singing streets** (`locations/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `locations/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street.
+- **Fermata** (`bestiary/fermata.md`, `locations/the-silent-choir.md`) — **confirmed Resonant Person of this Seat**, Drew's direct call. A being whose entire nature is one sustained note holding an entire boundary of silence — see `mythology/resonant-people.md`, Known Resonant People, for the full entry. Which stage of Alignment it's actually reached is left open on purpose, same register as Aege's own uncertainty about hers. The Silent Ring's Seat alignment (`items/the-silent-choir-items.md`) is settled by the same confirmation — Song and Silence, no longer just a candidate.
+- **Glasslight Reach's singing streets** (`locations/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `locations/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street. A candidate Resonant Location on the strength of that resonance alone (`mythology/resonant-locations.md`) — the Seat it belongs to is not yet confirmed the way Fermata's was.
 
 ---
 

@@ -17,4 +17,16 @@ What makes Tales Untold content well-made. Not a rule (`rules/card-glossary.md`)
 
 ---
 
+## Distance — What Can Never Be
+
+*(The Third Cut — `mythology/creation-myth-the-three-cuts.md`. Name establishes what something is. Price establishes what it costs to act. Distance establishes what stands permanently out of reach.)*
+
+Every NPC worth building carries something reality will not let them close: a relationship they can't repair, a child they can't have, forgiveness they can't receive, a version of themselves they can no longer become. It doesn't have to be tragic in presentation — it has to be genuinely unreachable, not merely difficult. Test: *if this person could have exactly one thing that would make their life feel complete, what is it, and why can reality never give it to them?*
+
+Every resonant object carries the equivalent — not a state it desires, but a state of being it can never inhabit. A sword can never be a plow. A crown can never be the person who wears it. Test: *if this object could become exactly one other thing that would complete its nature, what is it, and why can it never be that?*
+
+Distance isn't a hard ceiling — it's tension a story can cross. When it is, that's not a rules violation; it's the story doing something that matters. Don't spend it cheap: a Distance a GM resolves in one session was never real weight, just a delayed reveal.
+
+---
+
 The Tollbird (`bestiary/tollbird.md`) is the current strongest exemplar of several of these at once — see `agent-tools/exemplars.md` for why it's worth reading, not for a template to copy.

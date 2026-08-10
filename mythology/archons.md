@@ -6,7 +6,7 @@
 
 ## What an Archon Is
 
-An Archon is the highest biological expression of a Seat's domain. They are not chosen. They are not elevated. They are what happens when a being aligns so completely with a domain that they become its inevitable expression.
+An Archon is the highest expression a Seat's domain can reach. For a living being, that means its highest *biological* expression — the culmination of the Resonant Person ladder (`mythology/resonant-people.md`). A Resonant Item can reach the same culmination by its own, separate, non-biological path (`mythology/resonant-items.md`) — the two never merge into one ladder, but neither stops short of the same summit. None of this is chosen. None of it is elevation. It is what happens when something aligns so completely with a domain that it becomes its inevitable expression.
 
 Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain; they *are* it, and acting against it would mean acting against their own nature. Their presence "tints" the reality around them through what they embody.
 
@@ -32,11 +32,11 @@ Act in the grain of an Archon's will, and the debt reality demands for reaching 
 
 ---
 
-## Archons and Echoes Are the Same Ladder
+## Archons and Resonant People Are the Same Ladder
 
-Becoming an Archon is not a separate process from becoming an Echo. It is the end of that process.
+Becoming an Archon is not a separate process from becoming a Resonant Person. It is the end of that process.
 
-**Stage III — Incarnation is Archonhood** (`mythology/echoes.md`). An Echo at Stage III and an Archon are one thing under two names: the highest stable form of Echo, and the fullest biological expression of a domain. This does not make an Archon a god — Archons are not chosen and not elevated, and the stage is described as necessity rather than godhood.
+**Stage III — Incarnation is Archonhood** (`mythology/resonant-people.md`). A Resonant Person at Stage III and an Archon are one thing under two names: the highest stable form a Resonant Person can reach, and the fullest biological expression of a domain. This does not make an Archon a god — Archons are not chosen and not elevated, and the stage is described as necessity rather than godhood.
 
 ---
 
@@ -56,8 +56,8 @@ The Seat itself never fades. Seats are permanent structural features of existenc
 ## Related Documents
 
 - `mythology/seats.md` — what a Seat is, the Seat States, and the full roster of Seats and their bearers
-- `mythology/echoes.md` — the ladder an Archon is the top of, and the Failed Seat-Takers who never reached it
+- `mythology/resonant-people.md` — the ladder an Archon is the top of, and the Failed Seat-Takers who never reached it
 - `mythology/creation-myth-the-three-cuts.md` — why Seats exist at all
-- `mythology/resonant-items.md` — the object-equivalent of an Echo, and what an Archon's will does to its Price
+- `mythology/resonant-items.md` — the object-equivalent of a Resonant Person, its own separate path to Archon, and what an Archon's will does to its Price
 - `rules/equipment.md` — Artifacts, how Price is actually paid
 - `characters/black-maggie.md` — the one thing anchoring MoroM to held reality

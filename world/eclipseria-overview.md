@@ -38,7 +38,7 @@ Reality in Eclipseria is not self-sustaining. It is maintained by:
 
 The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts). The Cuts are the deeper of the two.
 
-For the full cosmological system, see `mythology/seats.md`, `mythology/archons.md`, and `mythology/echoes.md` — or `world/seats-archons-echoes.md` for an index of the three.
+For the full cosmological system, see `mythology/seats.md`, `mythology/archons.md`, `mythology/resonant-people.md`, `mythology/resonant-items.md`, and `mythology/resonant-locations.md` — or `world/seats-archons-echoes.md` for an index of all five.
 For the Unheld in depth, see `world/the-unheld.md`.
 
 ---
