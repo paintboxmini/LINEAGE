@@ -20,7 +20,7 @@ The sacred and the mundane are not separated. A marketplace is a temple. A meal 
 
 **The Last Bath** — the actual completion the Promise teaches, and the only bathing the doctrine was ever written to describe. The dead are lowered into the Unheld and released. The body does not come back. No second surface, no fluid, no hardened, no *how did you change* — completion is literal, not a metaphor for something survivable. *"Everything eventually returns to the Unheld"* means exactly that, read plainly: dead, and once.
 
-**Ritual bathing** — what the Glasslight congregation actually, routinely does with the living, and has for longer than anyone currently practicing it can say with certainty. Not the doctrine — a custom that grew up alongside the Last Bath and was never formally distinguished from it, congregation to congregation, generation over generation, until most practicing it don't know there's a difference to draw. Nobody else in the known world touches the Unheld, living or dead. No fishing, no sailing, no wading at the grey shore. The Promise breaks that convention twice: once, in doctrine, at death — and constantly, in practice, with people who intend to keep breathing afterward.
+**Ritual bathing** — what the Glasslight congregation actually does with the living, and has for longer than anyone currently practicing it can say with certainty. **Once. A rite of passage, not a loop.** A person goes down when they're ready, comes back changed, and lives with whatever that was for the rest of their life — the same register as a naming day or a wedding, a threshold crossed once and not revisited. Not the doctrine — a custom that grew up alongside the Last Bath and was never formally distinguished from it, congregation to congregation, generation over generation, until most practicing it don't know there's a difference to draw. Nobody else in the known world touches the Unheld, living or dead. No fishing, no sailing, no wading at the grey shore. The Promise breaks that convention twice: once, in doctrine, at death — and once, in practice, per person, with someone who intends to keep breathing afterward.
 
 The bathing must happen at the coast. Unheldness does not cross the coastline — water carried inland arrives ordinary, and no vessel preserves it. To touch the Unheld, you go to the Unheld. The community treats this as doctrine rather than inconvenience: the Promise comes to no one; you descend to it.
 
@@ -33,13 +33,14 @@ When they are brought back up:
 - Some come back **hardened** — more certain of who they are, as if the potential collapsed into resolution.
 - All come back **changed**.
 
-**None of this is what the doctrine actually describes.** The Last Bath is one-way. What the congregation calls ritual bathing is something else wearing its language — survivable, repeatable, not yet examined closely by anyone with the standing to say so out loud. Elder Kaine is the one who did. See `characters/kaine.md`.
+**None of this is what the doctrine actually describes.** The Last Bath is one-way. What the congregation calls ritual bathing is something else wearing its language — survivable, and meant to happen exactly once, not yet examined closely by anyone with the standing to say so out loud. Elder Kaine is the one who did — and the one thing he changed about the practice itself, not just the claim around it, is the *once*. See `characters/kaine.md`.
 
-| | Orthodox Promise | The Final Current |
-|--|---|---|
-| Who enters | The dead | The living |
-| Body | Released — no return | Returned — changed |
-| Language | Completion, last bath | Potential, unlock, bath *now* |
+| | Orthodox Promise | Normal Custom | The Final Current |
+|--|---|---|---|
+| Who enters | The dead | The living | The living |
+| How often | Never returns — one-way | Once, a rite of passage | Again and again |
+| Body | Released — no return | Returned — changed | Returned — pushed further each time |
+| Language | Completion, last bath | Changed, fluid, hardened | Potential, unlock, bath *now* |
 
 ## Relationship to Other Factions
 

@@ -4,7 +4,9 @@
 
 ---
 
-One of the oldest still bathing regularly. Every descent comes back a little more open than the last — most people who bathe this many times harden eventually, settle into whichever version of themselves the water handed back and stop reaching for the others. Corren never has. He comes up from the Unheld softer each time, more porous, more willing, and he has stopped being able to tell whether that's growth or erosion. He no longer asks.
+One of the only people in the congregation who bathes more than once. Normal custom is a single descent, a rite of passage lived with afterward (`factions/people-of-promise.md`, Ritual Bathing) — Corren never stopped after his first. Nobody's told him to. He's old enough, and was doing it long enough before anyone thought to question it, that stopping him now would cost the congregation more than letting him continue does. **He is not Kaine's.** Nobody who knows him would mistake the two — Corren has no doctrine about it, makes no claim about what it proves, gathers no one around him to watch. It's just his, privately, and has been for longer than the Final Current has existed.
+
+Every descent comes back a little more open than the last. Corren never hardens the way a first-time bather sometimes does. He comes up from the Unheld softer each time, more porous, more willing, and he has stopped being able to tell whether that's growth or erosion. He no longer asks.
 
 He remembers versions of people that don't exist anymore — the self a friend had before a hard decade, the self a stranger showed him once in the water and never became. He greets people by those selves. Not out of confusion; he's not senile and everyone around him knows it. It's fidelity. He genuinely believes the self he glimpsed was as real as the one standing in front of him, maybe realer, and he refuses to pretend otherwise for the sake of comfort.
 
@@ -18,6 +20,7 @@ People find him warm, at first. Being seen that generously is rare. It curdles f
 
 ## Related Documents
 
-- `factions/people-of-promise.md` — ritual bathing, the potentials, what "changed" means here
+- `factions/people-of-promise.md` — ritual bathing, the potentials, what "changed" means here, and why once is the norm Corren doesn't follow
 - `locations/glasslight-reach.md` — where the congregation lives
 - `rules/character-creation.md` — Declaring a Price, the closest formal shape to what Corren keeps saying
+- `characters/kaine.md` — the other person in Glasslight who doesn't stop at once, and nothing like Corren otherwise
