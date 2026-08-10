@@ -1,12 +1,12 @@
 # Steve (and Pip)
 
-*Kaine cult initiate. The most unremarkable person in any room — until he isn't.*
+*Backed out of Kaine's cult before it took. The most unremarkable person in any room — until he isn't.*
 
 ---
 
 ## Steve
 
-New member of Kaine's radical Promise sect. Hasn't ritual bathed yet when the party encounters him in Mirel's arc. Vanilla. Agreeable. The kind of person whose name you forget while they're still talking.
+Was being courted into Kaine's radical Promise sect — got the pitch, the grin, the "look at the unlocked," and backed out on the spot (`characters/kaine.md`, The Pitch). Never bathed under Kaine. Never will. Hasn't done the ordinary rite of passage yet either when the party encounters him in Mirel's arc — just a man hanging around a group he no longer belongs to, having not found anywhere better to stand. Vanilla. Agreeable. The kind of person whose name you forget while they're still talking.
 
 He does something notably foolish during the Mirel arc. The party will remember him for it — not fondly, but clearly.
 
@@ -16,7 +16,7 @@ His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-na
 
 ## Pip
 
-Formed from fragments of Steve's consciousness during the ritual bathing — specifically because the pulleys got stuck.
+Later — after Mirel's arc, unconnected to Kaine or the Current in any way — Steve finally goes through with the ordinary rite of passage: one bath, once, normal congregation custom (`factions/people-of-promise.md`). This is where it goes wrong, and it has nothing to do with him ever having been courted by Kaine. Formed from fragments of Steve's consciousness during that bathing — specifically because the pulleys got stuck.
 
 Steve was lowered into the Unheld Ocean for his first bathing. Standard procedure. Then the pulleys seized. He was down there much longer than anyone intended, longer than anyone should be, longer than doctrine accounts for. When he came back up, Pip came with him.
 

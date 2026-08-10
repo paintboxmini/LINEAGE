@@ -46,7 +46,7 @@ She describes The Final Current's practices: Kaine's claim that coming back from
 **What Mirel knows:**
 - Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
-- Steve — a new initiate, hasn't bathed yet, harmless-seeming — follows Kaine everywhere. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine.md`, The Pitch).
+- Steve — a new initiate, hasn't bathed, harmless-seeming — still hangs around Kaine's people without being one of them anymore. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine.md`, The Pitch) — and watched Steve go pale and back out of it on the spot. No Current bath under Kaine. He just hasn't found anywhere else to be yet.
 
 **What Mirel doesn't know:**
 - The Lightning Loop is a Storm Seat resonant item
@@ -81,7 +81,7 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 
 **What they find:** a carved-out space in the cliff, Promise iconography mixed with something that reads as older and less gentle. A gathering space. Kaine's followers here are true believers — people who have come back from hard bathings and emerged certain. They are not villains. They are people who found the accelerated dissolution and decided it was what they'd been looking for.
 
-**Steve is here.** He is being prepared for his bathing. He seems fine with this. He is not asking any of the right questions. The party may try to warn him. He will thank them and not change his plans. He is Steve.
+**Steve is here.** Not being prepared for anything — just present, the way he's present wherever Kaine's people gather, since he backed out of the bathing and never found anywhere better to stand. He is not asking any of the right questions about why he's still around. The party may try to get him to leave. He will thank them and not actually leave. He is Steve.
 
 **The Water Trick:**
 If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
@@ -112,7 +112,7 @@ Stealth or direct: getting into Kaine's inner space to find what he's actually p
 
 The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below, the ritual bathing platform being lowered. Kaine's followers are positioned throughout the crowd.
 
-**Steve is here.** In the crowd, near Kaine's followers, watching the ceremony with the focused attention of someone trying to look like they understand what's happening. He has not bathed yet. He is waiting for his turn.
+**Steve is here.** In the crowd, near Kaine's followers without being one of them, watching the ceremony with the focused attention of someone trying to look like he still belongs there. He has not bathed. He isn't waiting for his turn — there isn't one coming. He's just watching, the way he watches everything.
 
 The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
 
@@ -141,7 +141,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **The Promise community:** shaken. Kaine's followers have to reckon with what the miracle was. The moderates have to reckon with how far it got before anyone noticed. The Masons — quietly — have to assess the glyph situation.
 
-**Steve:** still in the crowd somewhere. Still Steve. His bathing hasn't happened yet. That's a different story.
+**Steve:** still in the crowd somewhere. Still Steve. He never bathed under Kaine and never will. His own, ordinary bathing — normal custom, nothing to do with any of this — is a different story entirely.
 
 *His arc continues later — see `characters/steve-and-pip.md`.*
 

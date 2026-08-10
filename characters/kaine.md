@@ -40,7 +40,7 @@ The Final Current practice: people who come back fluid go back in. Again. And ag
 
 The grin that goes with it is too large for the sentence.
 
-**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and goes ahead with the rites anyway. His bathing is a thread in Kaine's plans — or close enough to one that it matters.
+**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and backs out. No Current bath under Kaine. Steve is never his success story — his later, separate decision to take the ordinary first bath has nothing to do with Kaine at all (`characters/steve-and-pip.md`).
 
 ---
 
