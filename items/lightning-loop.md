@@ -6,7 +6,7 @@
 
 A ring. The Loop is small enough to conceal among other rings on Kaine's hand, or to wear on a chain as a necklace when he wants the source of his signs harder to identify. He does not present it as the source of anything he does.
 
-The Loop grants Kaine limited control over lightning. The extent and origin of that power are not established here.
+The Loop grants Kaine limited control over lightning. The Loop's lightning can be expressed as energizing force through people and objects, not only as a direct electrical strike. The same underlying energy can produce different mechanical manifestations depending on what it is expressed through. The exact limits of this capability are not established here.
 
 ---
 
@@ -16,10 +16,12 @@ The Loop is concealed from the people who watch Kaine perform his signs and wond
 
 The first demonstrations are deliberately ordinary in appearance:
 
-- He touches ordinary water and it becomes restorative. Someone drinks it and feels its effect.
-- He touches a pile of wood and it ignites.
+- He touches ordinary water and the water becomes restorative. The Loop's energy is expressed through the water rather than as a visible lightning strike.
+- He touches a pile of wood and it ignites. A spark is enough to start the fire.
 - He touches a tired, depressed person and leaves them energized.
 - On one occasion he uses raw lightning at range, striking a metal pole.
+
+These are different expressions of the same underlying capability. The Loop's energy can be transferred through a target and expressed mechanically according to the target and effect: restorative water, renewed vitality, ignition, or direct lightning. A future expression such as granting Quick is a natural extension of the established capability rather than a new metaphysical rule.
 
 The miracles are real. The deception is their provenance. The people watching are given Kaine's interpretation of what they are seeing: the bath unlocked him. The Loop remains hidden inside the story.
 
@@ -29,7 +31,7 @@ The exact origin of the Loop is unknown and intentionally open.
 
 ## After Kaine
 
-If the party takes the ring, they hold something Storm Seat-aligned that grants limited control over lightning. What the Loop ultimately is, where it came from, and what its connection to the Storm Seat means remain unanswered.
+If the party takes the ring, they hold something Storm Seat-aligned that grants limited control over lightning and can express that energy through people and objects in different ways. What the Loop ultimately is, where it came from, and what its connection to the Storm Seat means remain unanswered.
 
 ---
 
