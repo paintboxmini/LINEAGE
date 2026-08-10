@@ -81,7 +81,7 @@ Heavy spiced mead in a pewter mug. Rumored to be the same recipe King Bradley dr
 Roasted boar haunch with Roman-style garum and thick trenchers of bread.
 
 **Honeyed Locusts**
-A delicacy from the lake islands northeast of Vulture's Nest. Crunchy, sweet. Popular with the Prince's guards.
+A delicacy from the lake islands northeast of Vulture's Nest. Crunchy, sweet. Popular with the Citadel guard.
 
 ---
 
@@ -212,7 +212,7 @@ See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory a
 
 - **A Favor for the Fox:** Lady Elara's agents need guards to escort a quartz shipment from Glasslight Reach through the Marketplace. *Reward: a merchant's pass for one day.*
 - **Lost Lore:** The Library of Arcane Knowledge offers a reward for a stolen "whispering book" taken by a cutpurse. *Reward: access to the book's contents.*
-- **The Prince's Appetite:** A royal page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar. *Reward: 25 gp.* See `locations/capital/underground-bazaar.md`.
+- **The Regent's Appetite:** A Citadel page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar, meant for Lord Oswald's own table. *Reward: 25 gp.* See `locations/capital/underground-bazaar.md`.
 
 ---
 
@@ -221,6 +221,6 @@ See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory a
 Table #9 has an owl carved into its underside. Beneath it: a loose mosaic tile. Beneath the tile: a letter addressed to Lord Percival, warning him that Lord Oswald (The Lion) is planning something that will result in the removal of the other council members.
 
 **Player choice:**
-- Deliver it to Lord Percival — he's the one trying to understand the rifts, possibly the most trustworthy
+- Deliver it to Lord Percival — he runs the Cartographers Guild, about as far from Oswald's inner circle as a council seat gets, possibly the most trustworthy
 - Attempt to blackmail Lord Oswald
 - Sit on it and watch what happens

@@ -8,7 +8,7 @@ To almost everyone in Eclipseria, the Weavers keep the lights on. They wear prac
 
 What they actually maintain is a second Grid, laid alongside and inside the first — most people never learn there are two. Thin as air-ripples, carried in and beside the ordinary conductive lines, is a current far deeper than electricity — Aurora's binding, drawn thread by thread out of the Deep and spun into something that can be distributed. The Weavers don't go anywhere near where she is. They never have to. By the time a thread reaches a Weaver's hands, it has already traveled a long way from its source, through channels that were never built for it and now can't be separated from it.
 
-They keep the city bound the same way they keep it lit: as background infrastructure, running so long it stopped looking like a choice anyone made.
+They keep the city bound the same way they keep it lit: as background infrastructure, running so long it stopped looking like a choice anyone made. A century of quiet development is what the Grid, the nodes, and every item built to draw on it actually needed to reach this scale (`world/the-regency.md`, What Happened to the Throne) — nothing here was built fast.
 
 ---
 

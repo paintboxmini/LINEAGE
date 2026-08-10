@@ -1,5 +1,9 @@
 # RavenHold
 
+**Deprecated 2026-08-09.** Drew: *"its deprecated. I don't want it referenced by accident. not even vaguely like an NPC who remembers stories about a place of safety... yadayadayada. no active pending. im forgetting about it."* Pulled out of `locations/` and off every canon cross-reference so it stops sitting anywhere active. Not a "coming back later" placeholder — do not reference it, even obliquely (no NPC rumor about "a place of safety," no unnamed hint, nothing that rhymes with it). If this is ever revisited, that's a fresh decision Drew makes explicitly, not something to notice and pick back up on its own.
+
+---
+
 *Not on any map outsiders can find. Travelers who pass close enough to feel the air change — suddenly warmer, sweeter, slower — will swear afterward that they dreamed the place, or that it was only a single afternoon that stretched impossibly long. Those who actually step inside never speak of it again, not because they are forbidden, but because the words feel too small afterward.*
 
 ---

@@ -18,17 +18,21 @@ What they actually do is narrower, and it never finishes: **they walk the paid-f
 
 - **Route Walks** — the core labor. A surveyor walks an assigned stretch of road on a fixed rotation, checking it against the last survey, correcting what's drifted, reporting what's gone.
 - **Way-marking** — cairns, posts, carved distance-markers. Not decoration; the physical anchor a route walk checks against next time. A marker that's vanished is itself the finding.
-- **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted less, not more — the In-Between doesn't hold still, and a route that never needs correcting is a route nobody's actually walked recently.
+- **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted less, not more — the In-Between doesn't hold still, and a route that never needs correcting is a route nobody's actually walked recently. A fresh path map's own trustworthy window is short to begin with, about a month (`world/the-in-between.md`, Havens) — the paper is a receipt, not the payment — which is why the rotation exists at all instead of a single definitive map.
 
 ## Structure
 
 Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`locations/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
+
+**The Glasslight chapter itself blurs that line more than the charter admits.** Staffed out of the same civic tradition, its members turn out light maps — Soft Edge surveys, city-light studies — alongside the actual route work, sold and displayed at the chapter's own gallery (`locations/glasslight-reach.md`, The Gallery). Elsewhere in the kingdom, a chapter is roads and nothing else. Here, it's both — a regional specialty, not a rewrite of what the Guild is chartered to do.
 
 **Not to be confused with "the Cartographer"** (`locations/capital/underground-bazaar.md`, Kess's grandmother) — an individual, not an institution, who trades in maps that show a place *for* the person looking at it, paid for in secrets rather than coin. Different register entirely. The Guild's maps are the same for everyone and are only ever trying to be accurate, not personal.
 
 ## Relationship to the Regency
 
 Chartered, not secret — the opposite posture from the Masons (`factions/the-masons.md`), who tend a different kind of threshold in total silence. The Regency pays for the Guild's work outright; this is the "someone" in `world/the-in-between.md`'s own rule that a safe stretch of road is "a place someone is paying to hold." Travelers know the roads are guild-surveyed. They just don't think about what that means until a route walk is late and a cairn they were counting on isn't where it should be.
+
+**Headed by Lord Percival, The Owl** (`world/the-regency.md`) — cartography is his seat on the council, not an oversight assignment tacked onto something else. Every survey ledger reaches him because it's his own institution's record, not because it's routed to him from elsewhere. He's the only council member without a Seat-scar from the Pendragon Attempt, which means every stretch a Route Walk reports "gone — swallowed back into blank" reaches him as a real, logged anomaly, with none of the context the other five carry for why certain doors don't open.
 
 ---
 
@@ -39,3 +43,4 @@ Chartered, not secret — the opposite posture from the Masons (`factions/the-ma
 - `locations/capital/underground-bazaar.md` — the Cartographer, an individual, not this institution
 - `world/geography-overview.md` — the roads themselves
 - `factions/the-masons.md` — the other threshold-tending institution, run the opposite way
+- `world/the-regency.md` — Lord Percival, whose council seat this is

@@ -52,6 +52,8 @@ Most bearers never release their Seat. Relinquishing it feels like annihilation.
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
 
+**Binding and Holding are not the same thing.** A Seat powerful enough for it can bind its domain completely — perfectly, at scale, in a way that looks indistinguishable from permanence. That is not the same as being exempt from Price (`mythology/creation-myth-the-three-cuts.md`, the Second Cut — nothing is exempt from Price, ever, no matter how it's attempted). A domain held the ordinary way pays piecemeal, continuously, the way every Haven does (`world/the-in-between.md`); let the payment lapse and it goes back gradually, sometimes over years. A domain bound instead of held doesn't pay as it goes — the debt still accrues, just uncollected, until it's called in whole. When it is, nothing fades. It's unmade entirely, in a single stroke, all at once. A working this way isn't a shortcut around Price. It's a loan against a future that eventually, always, comes to collect it in full. (First recorded case: the Pendragon Attempt, `world/the-regency.md`, GM Secret.)
+
 ---
 
 ## The Seats

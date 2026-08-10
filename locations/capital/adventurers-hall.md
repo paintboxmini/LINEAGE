@@ -79,8 +79,6 @@ Some jobs never make it to a posting, because there's nothing an official notice
 
 **Roaat.** *"Anyone still doing runs out to Roaat? Nobody's confirmed a delivery in a season. Just want to know if the road's still good."* Same shape as Havenrise — a real gap in trade contact, not yet a real place (`locations/roaat.md`).
 
-**RavenHold — unnamed, unmapped.** *"Third one this year. Traveler comes back from the Vulture's Nest–Glasslight road not quite right — quiet, won't talk about the missing days, swears it was only an afternoon. Families want to know what's out there. Nobody's found where 'there' is."* This is `world/geography-overview.md`'s edge cases finally getting a face — the job is investigating disappearances near a road, not a destination a party can be sent to, because RavenHold refuses to be found on purpose (`locations/ravenhold.md`). A party could chase this for a long time before the valley decides to let them in — if it ever does.
-
 **The Mother of Many — Underground Bazaar.** *"Oversized specimen, vendor stall, east row. Management would very much like it handled before the offspring mature. Ask for the gremlin with the ledger."* Already written as a real, playable fight with its own clock (`locations/capital/underground-bazaar.md`, The Mother of Many) — just Bazaar business, not Regency business, so it stays off the official board even though it's as concrete a job as anything on it.
 
 ---
