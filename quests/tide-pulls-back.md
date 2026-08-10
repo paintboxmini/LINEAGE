@@ -84,11 +84,13 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 **Steve is here.** He is being prepared for his bathing. He seems fine with this. He is not asking any of the right questions. The party may try to warn him. He will thank them and not change his plans. He is Steve.
 
 **The Water Trick:**
-If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty about the Unheld's presence in the water. He distributes small amounts. The people who drink it feel something. They look moved.
+If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
 
-A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is.
+A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing (`characters/kaine.md`, The Goal).
 
 A Mind check (DC 13) while watching: the ring. It doesn't fit him. That detail exists before the party knows why it matters.
+
+A second look, same DC (or harder, if the GM wants it rarer): he doesn't look unlocked enough for his own story. Long-devotees carry visible marks. Kaine carries one — small, ordinary, the kind a single bath leaves, not a hundred (`characters/kaine.md`, Character Notes). Certainty in the voice. Almost nothing on the face.
 
 ---
 
