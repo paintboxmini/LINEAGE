@@ -22,6 +22,16 @@ Most Archons never relinquish their position. Relinquishing a Seat feels like an
 
 ---
 
+## An Archon's Will Shapes Price
+
+An Archon's nature is not only what becomes possible near them. It is what becomes *costly*.
+
+Act in the grain of an Archon's will, and the debt reality demands for reaching past the ordinary lightens. Act against it, and the debt deepens. The Archon does not simply permit or forbid — they tilt the whole economy of consequence toward what they are and away from what they are not.
+
+**This requires a bearer.** A Seat with no one seated has no will to align with or defy — magnitude alone sets the price, nothing bends the scale either way. The Storm Seat stands this way now (`mythology/seats.md`; Greed is fated to it, not yet seated); whatever a Storm-aligned working costs today, it costs on weight alone. See `rules/equipment.md`, Artifacts, for how Price is actually paid.
+
+---
+
 ## Archons and Echoes Are the Same Ladder
 
 Becoming an Archon is not a separate process from becoming an Echo. It is the end of that process.
@@ -48,4 +58,6 @@ The Seat itself never fades. Seats are permanent structural features of existenc
 - `mythology/seats.md` — what a Seat is, the Seat States, and the full roster of Seats and their bearers
 - `mythology/echoes.md` — the ladder an Archon is the top of, and the Failed Seat-Takers who never reached it
 - `mythology/creation-myth-the-three-cuts.md` — why Seats exist at all
+- `mythology/resonant-items.md` — the object-equivalent of an Echo, and what an Archon's will does to its Price
+- `rules/equipment.md` — Artifacts, how Price is actually paid
 - `characters/black-maggie.md` — the one thing anchoring MoroM to held reality

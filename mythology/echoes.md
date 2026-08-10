@@ -4,6 +4,8 @@ An Echo is a living being whose identity has become aligned with the domain of a
 
 An Echo does not hold a Seat. It reflects one.
 
+This is not devotion with a rank attached. Nobody is promoted into an Echo. The alignment itself changes what the being is — and whatever capability follows is that change made visible, not a gift handed down for good behavior.
+
 ---
 
 ## What Makes an Echo
@@ -96,4 +98,5 @@ Echoes may be human, animal, spirit, or stranger. Any living identity can become
 
 - `mythology/seats.md` — the Seats these align to, and their bearers
 - `mythology/archons.md` — Stage III, from the other side
+- `mythology/resonant-items.md` — the same alignment, in an object instead of a person
 - `world/the-scar.md` — a failed Seat-taker the stages may not reach

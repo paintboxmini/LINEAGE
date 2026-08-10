@@ -52,7 +52,7 @@ Every character has **3 equipment slots:**
 
 Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.
 
-**Artifacts** are resonant objects closely aligned with a Seat's domain. They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
+**Artifacts** are resonant objects closely aligned with a Seat's domain (`mythology/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
 **Carried items** (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.
 
