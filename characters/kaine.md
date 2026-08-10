@@ -50,6 +50,8 @@ He's convincing. The Promise philosophy genuinely supports his reading of it —
 
 His tells: he doesn't ask questions. He states things. He is absolutely certain in a community that prizes openness to potential. That certainty is the wrong shape for where he claims to be standing.
 
+**Where the method actually came from (GM Secret — not public, not known even inside the Final Current).** The failed Echo gave him the conviction: the Promise is true, the pace is wrong. It didn't give him a technique. That came later, from watching Corren (`characters/corren.md`) go under again and again, alone, unritualized, no doctrine attached, for reasons Kaine never asked about and Corren never offered. What Kaine saw wasn't a method. It was a man trying, quietly and repeatedly, to finally not come back. Kaine took the shape of it — go under again, and again — and inverted what it meant: not a slow reach for the ending the Last Bath gives the dead, but proof that going under enough times unlocks *more*, not less. Whether that's a genuine misreading or a choice he made because the truth was less useful to him is exactly the kind of thing Kaine has never once examined about himself.
+
 ---
 
 ## Stat Block

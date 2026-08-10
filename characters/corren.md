@@ -14,6 +14,10 @@ People find him warm, at first. Being seen that generously is rare. It curdles f
 
 **What he's decided to stop thinking about:** whether the reason he keeps softening is that the Unheld is showing him something true, or that he's simply the one person in the congregation who never learned how to stop the water from getting in.
 
+**What it actually is (GM Secret — not known to Kaine's followers, not said aloud by Corren, not confirmed to the table unless a GM decides the moment has earned it).** He isn't chasing growth. He's chasing the same completion the Last Bath gives the dead (`factions/people-of-promise.md`) — quietly, alone, without ever once calling it that. Every descent is another attempt at the erosion going all the way: the porousness finally winning, nothing coming back up the ropes at all. It hasn't happened yet. The question above — growth or erosion, he no longer asks — is the closest he has ever come to admitting it, even to himself.
+
+**Kaine watched this, once, long before the Final Current existed** (`characters/kaine.md`, Character Notes) — and built a doctrine out of mistaking, or choosing to mistake, one man's private wish to finally stop for a technique anyone could use to become more.
+
 **The declaration he keeps making.** Before every bath, Corren says the same private words — a version of a vow, close enough to a binding statement that anyone who's heard both would notice. He has said it more times than anyone alive has said anything similar and meant it. Whatever answers a declaration like that is, by every account of how it's supposed to work, still owed. Corren treats the repetition as proof he hasn't yet said it truly enough to be heard — not as evidence that something, somewhere, simply hasn't collected.
 
 ---
