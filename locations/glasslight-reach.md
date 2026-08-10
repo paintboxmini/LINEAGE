@@ -51,7 +51,7 @@ Hana is usually at that window, and nowhere else in the gallery. Doesn't browse,
 
 What lies beyond the northernmost waters. The name describes how it looks — sky and water dissolving into each other, no line where one ends — not what it is. What it is, is absolute. Nothing sails past it. Nothing fishes it. The ghost stories about the ships that once tried are older here than anywhere, and told less often.
 
-Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it.
+Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it. The People of Promise have their own reading of it, unconnected to what any cartographer thinks — see `factions/people-of-promise.md`, Ritual Bathing.
 
 The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved.
 
