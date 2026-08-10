@@ -16,7 +16,7 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 
 There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any hands, including his. Kaine wants it — and has it, or is close to having it, when the party arrives.
 
-**What he's doing with it:** performing signs and wonders. Miracles he attributes to the Unheld's blessing — validation that The Final Current is the true expression of the Promise. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source.
+**What he's doing with it:** performing signs and wonders — and telling everyone, himself included, that they come from repeated bathing in the Unheld. The same story he sells the Current, applied to himself: proof that going under again and again is what unlocked this. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source that isn't him at all. **The ring is misdirection** — see Character Notes, below.
 
 **Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipseria. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
 
@@ -28,11 +28,11 @@ There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any
 
 ## The Final Current
 
-Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same platforms, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's the claim: that *Return* — coming back alive from what the doctrine only ever describes as final — is proof, not drift. That the Last Bath's completion can be unlocked before death, by anyone willing to go far enough. Most of the congregation has never had to reconcile what they practice with what the doctrine actually claims. Kaine has, and decided the doctrine was simply describing something that could happen sooner.
+Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same platforms, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's two things layered together. First, the claim: that *Return* — coming back alive from what the doctrine only ever describes as final — is proof, not drift. That the Last Bath's completion can be unlocked before death, by anyone willing to go far enough. Second, and this is the part that's a real change to the practice itself, not just a story told about it: **he doesn't stop at once.** Normal custom is a single bath, a rite of passage, lived with afterward (`factions/people-of-promise.md`, Ritual Bathing). One time isn't enough for Kaine. If it didn't take, or didn't take enough, the answer is always another bath.
 
-Standard congregation practice: people who come back fluid are supported, integrated, given time to settle.
+Normal custom: a person goes down once, comes back changed, and that's the practice — done, lived with, never revisited.
 
-The Final Current practice: people who come back fluid are pushed back in. Repeatedly. The visible marks on his longest-devoted followers read, to Kaine and to them, as proof rather than damage — animal eyes, patches of stone-like skin, moss where hair should grow, ears gone long and furred, a nose flattened dark like something that hunts by scent, claws, a tail on more than one of them. **Unlocked**, in his theology. Not wrong. Ahead.
+The Final Current practice: people who come back fluid go back in. Again. And again, if it still hasn't "taken." More baths, in his theology, means more unlocking — never a reason to stop, only a reason to keep going until he likes what climbs out. The visible marks on his longest-devoted followers — the ones who've been under more times than anyone can casually count — read, to Kaine and to them, as proof rather than damage: animal eyes, patches of stone-like skin, moss where hair should grow, ears gone long and furred, a nose flattened dark like something that hunts by scent, claws, a tail on more than one of them. **Unlocked**, in his theology. Not wrong. Ahead.
 
 **The pitch.** Kaine doesn't argue doctrine with a new initiate. He shows them a body. Standing among his followers at a gathering, he gestures at whoever's changed the most visibly and says it plainly:
 
@@ -40,7 +40,7 @@ The Final Current practice: people who come back fluid are pushed back in. Repea
 
 The grin that goes with it is too large for the sentence.
 
-**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and goes ahead with the rites anyway. His bathing is a thread in Kaine's plans — or close enough to one that it matters.
+**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and backs out. No Current bath under Kaine. Steve is never his success story — his later, separate decision to take the ordinary first bath has nothing to do with Kaine at all (`characters/steve-and-pip.md`).
 
 ---
 
@@ -49,6 +49,10 @@ The grin that goes with it is too large for the sentence.
 He's convincing. The Promise philosophy genuinely supports his reading of it — he's not distorting the doctrine, he's accelerating it. Promise moderates find him difficult to argue with because he's using their own language.
 
 His tells: he doesn't ask questions. He states things. He is absolutely certain in a community that prizes openness to potential. That certainty is the wrong shape for where he claims to be standing.
+
+**The tell is on his body.** Long-devotees carry the marks real repetition leaves — animal eyes, stone-like patches, moss, furred ears, a flattened dark nose, claws, a tail on more than one of them (The Final Current, above). Kaine has one change. Small. Well inside the ordinary range a single rite-of-passage bath leaves (`factions/people-of-promise.md`, Ritual Bathing). He does not look like a man who has gone under again and again — because he hasn't. The gospel says endless return. The skin says once. Anyone who looks past the certainty in his voice and actually checks the claim against what's on his face finds a man selling a cost he's barely paid.
+
+**Where the method actually came from (GM Secret — not public, not known even inside the Final Current).** The failed Echo gave him the conviction: the Promise is true, the pace is wrong. It didn't give him a technique. That came from one specific afternoon, low tide, Kaine hidden up in the cliffs for reasons that had nothing to do with Corren at first (`characters/corren.md`, Death). Corren went down alone, onto rock the tide only bares for a few hours at a stretch, and waited. What happened to him took longer and went further than any bathing Kaine had ever seen — thrashing, changing, past fluid, past anything the congregation has a word for. Right before Corren was completely undone, he passed through a form Kaine read, watching from above, as powerful. Desirable. Kaine never went down. There was nothing left to go down for. What he kept wasn't a method he understood — it was a single image, and a conviction he built backward from it: that going under enough times doesn't end in disappearing, it ends in *that*. He has never told anyone what he actually saw, not even his most devoted, and has never once let himself sit with the plain fact of it: he watched a man succeed at disappearing, and walked away with the moment just before as a technique for becoming more instead.
 
 ---
 
