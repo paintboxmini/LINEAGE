@@ -16,13 +16,13 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 
 There is a resonant item aligned with the Storm Seat. Unstable. Dangerous in any hands, including his. Kaine wants it — and has it, or is close to having it, when the party arrives.
 
-**What he's doing with it:** performing signs and wonders — and telling everyone, himself included, that they come from repeated bathing in the Unheld. The same story he sells the Current, applied to himself: proof that going under again and again is what unlocked this. The item works. The signs are real. He just doesn't fully control what he's holding, and his followers have no idea the wonders have a source that isn't him at all. **The ring is misdirection** — see Character Notes, below.
+**What he's doing with it:** performing signs and wonders — and telling everyone that they come from repeated bathing in the Unheld. He knows the Loop is producing the wonders; he conceals it and lets the story of his own "unlocking" explain what people witness. The signs are real. The source is hidden. See `items/lightning-loop.md`.
 
 **Mid-term goal:** use The Final Current's growing credibility to absorb the entire People of Promise community across Eclipseria. Not through violence — through doctrine. He isn't distorting the Promise, he's accelerating it. That's what makes him hard to argue with.
 
 **Long-term:** for a man like Kaine, it wouldn't end with the Promise community. That's just the first institution with infrastructure he can use.
 
-**The problem the item creates:** stopping Kaine doesn't resolve it. The party inherits something unstable and Storm Seat-aligned with no obvious safe answer for what to do with it. Kaine is the urgent threat. The item is the lasting one.
+**The problem the item creates:** stopping Kaine doesn't resolve it. The party inherits something Storm Seat-aligned with limited control over lightning and no obvious answer for what it is or where it came from. Kaine is the urgent threat. The item is the lasting one.
 
 ---
 
@@ -51,6 +51,8 @@ He's convincing. The Promise philosophy genuinely supports his reading of it —
 His tells: he doesn't ask questions. He states things. He is absolutely certain in a community that prizes openness to potential. That certainty is the wrong shape for where he claims to be standing.
 
 **The tell is on his body.** Long-devotees carry the marks real repetition leaves — animal eyes, stone-like patches, moss, furred ears, a flattened dark nose, claws, a tail on more than one of them (The Final Current, above). Kaine has one change. Small. Well inside the ordinary range a single rite-of-passage bath leaves (`factions/people-of-promise.md`, Ritual Bathing). He does not look like a man who has gone under again and again — because he hasn't. The gospel says endless return. The skin says once. Anyone who looks past the certainty in his voice and actually checks the claim against what's on his face finds a man selling a cost he's barely paid.
+
+**The miracles.** Kaine's followers can see genuine signs and wonders and choose to hear his explanation of them rather than inspect their source. The first are intimate and useful: ordinary water becomes restorative when he touches it; wood catches fire when he touches it; a tired and depressed person leaves energized after he touches them. He can also call lightning at range, including one public demonstration against a metal pole. None of these effects needs a separate theology to explain it to the people watching. The visible fact is enough: Kaine touches something, and something happens. He tells them the Unheld unlocked this in him through repeated bathing. The concealed Lightning Loop is what produces the wonders, and Kaine knows that. He does not wear it as a public symbol of the Promise. It can disappear among other rings on his hand, or be worn as a necklace when he wants it less conspicuous. See `items/lightning-loop.md`.
 
 **Where the method actually came from (GM Secret — not public, not known even inside the Final Current).** The failed Echo gave him the conviction: the Promise is true, the pace is wrong. It didn't give him a technique. That came from one specific afternoon, low tide, Kaine hidden up in the cliffs for reasons that had nothing to do with Corren at first (`characters/corren.md`, Death). Corren went down alone, onto rock the tide only bares for a few hours at a stretch, and waited. What happened to him took longer and went further than any bathing Kaine had ever seen — thrashing, changing, past fluid, past anything the congregation has a word for. Right before Corren was completely undone, he passed through a form Kaine read, watching from above, as powerful. Desirable. Kaine never went down. There was nothing left to go down for. What he kept wasn't a method he understood — it was a single image, and a conviction he built backward from it: that going under enough times doesn't end in disappearing, it ends in *that*. He has never told anyone what he actually saw, not even his most devoted, and has never once let himself sit with the plain fact of it: he watched a man succeed at disappearing, and walked away with the moment just before as a technique for becoming more instead.
 
@@ -113,6 +115,6 @@ Range: Ranged
 
 ## Open
 
-- What does he intend to do with the Storm Seat resonant item?
-- Does he have a name for the item, or does he only know what it is by effect?
-- Is he aware of the Mason lodge in the cliffs, and does he see it as a threat or an irrelevance?
+- Where did Kaine get the Lightning Loop?
+- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`mythology/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)
+- What else can Kaine make the Loop do?
