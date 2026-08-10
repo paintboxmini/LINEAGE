@@ -35,6 +35,8 @@ Most cultures don't know Seats exist as such. A religion isn't interpretation of
 
 The Seat-Bearer does not command the principle. They become its inevitable expression.
 
+**The bearer controls the distribution of the domain through the world.** The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. The bearer does not invent or own the domain. They determine where and how fully its expression reaches the world.
+
 To become an Archon is not godhood. It is not dominion. It is necessity.
 
 Most bearers never release their Seat. Relinquishing it feels like annihilation.
@@ -45,9 +47,9 @@ Most bearers never release their Seat. Relinquishing it feels like annihilation.
 
 | State | Effect |
 |-------|--------|
-| **Filled** | Domain functions normally. |
-| **Fading** | The bearer is thinning — the domain still holds, but goes increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
-| **Empty** | That part of reality begins breaking down. |
+| **Filled** | Domain is correctly distributed and functions normally. |
+| **Fading** | The bearer is thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
+| **Empty** | The domain's distribution loses its organizing bearer and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places, absent in others, or otherwise wrong. |
 | **Contested** | Two beings fighting for a Seat warp reality until one wins. |
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
@@ -122,7 +124,11 @@ Blood governs life-force, inheritance, oath, and cost. It is the price of contin
 **Bearer:** None seated. **Greed is fated to it** (`characters/greed.md`) — how and when is deliberately unestablished, so the Seat reads as unheld in the present tense and every other file that says so is correct.
 Domain: Storms, Turbulence, the Uncontrolled
 
-Weather that answers to nothing, least of all whoever stands under it. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
+Storms behaving violently or unpredictably are not signs of an Empty Seat. That is Storm functioning normally: the domain itself is turbulence and the uncontrolled.
+
+When the Storm Seat is Empty, the problem is distribution. Storm no longer has a bearer controlling where and how fully the domain expresses. One region may experience superstorms while another experiences an unnatural absence of storms. The domain has not simply vanished; its expression has become uneven and wrong.
+
+At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
 
 ### Navigation / Pathfinding
 **Bearer:** The Night Ferryman

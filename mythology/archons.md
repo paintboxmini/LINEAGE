@@ -10,6 +10,8 @@ An Archon is the highest biological expression of a Seat's domain. They are not 
 
 Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain; they *are* it, and acting against it would mean acting against their own nature. Their presence "tints" the reality around them through what they embody.
 
+**An Archon also controls the distribution of the domain through the world.** The Seat is the underlying principle; the Archon is the bearer through whom that principle is distributed across reality. The Archon does not own or invent the domain. They control where and how fully its expression reaches the world. When an Archon is fading, that distribution weakens. When the Seat is empty, there is no bearer maintaining that distribution and the domain begins expressing unevenly or incorrectly.
+
 What this costs:
 
 - Internal contradiction ends.
@@ -31,6 +33,8 @@ Becoming an Archon is not a separate process from becoming an Echo. It is the en
 ## Fading
 
 Archons can **fade**. A domain whose practice dies in the world starves its expression: the Archon thins and recedes until the Seat stands empty (`mythology/seats.md`, Seat States).
+
+**Fading also means the domain's expression is weakened while the Archon is still present.** The Seat does not simply stop functioning at the moment the bearer begins to fade. Its domain continues to exist, but the Archon's ability to distribute that domain through the world diminishes. The effects become weaker, thinner, or less fully expressed until the bearer recedes entirely and the Seat stands empty.
 
 The Seat itself never fades. Seats are permanent structural features of existence; what fades is the bearer.
 
