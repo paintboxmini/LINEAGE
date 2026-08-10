@@ -1,30 +1,38 @@
 # Corren
 
-*Elder bather, People of Promise. Glasslight Reach.*
+*Elder bather, People of Promise. Glasslight Reach. Dead — and his death is the hidden origin of the Final Current. Nobody but Kaine knows that.*
 
 ---
 
-One of the only people in the congregation who bathes more than once. Normal custom is a single descent, a rite of passage lived with afterward (`factions/people-of-promise.md`, Ritual Bathing) — Corren never stopped after his first. Nobody's told him to. He's old enough, and was doing it long enough before anyone thought to question it, that stopping him now would cost the congregation more than letting him continue does. **He is not Kaine's.** Nobody who knows him would mistake the two — Corren has no doctrine about it, makes no claim about what it proves, gathers no one around him to watch. It's just his, privately, and has been for longer than the Final Current has existed.
+One of the only people in the congregation who ever bathed more than once. Normal custom is a single descent, a rite of passage lived with afterward (`factions/people-of-promise.md`, Ritual Bathing) — Corren never stopped after his first. Nobody told him to. He was old enough, and had been doing it long enough before anyone thought to question it, that stopping him cost the congregation more than letting him continue did. **He was never Kaine's.** Nobody who knew him would have mistaken the two — Corren had no doctrine about it, made no claim about what it proved, gathered no one around him to watch. It was just his, privately, for longer than the Final Current has existed.
 
-Every descent comes back a little more open than the last. Corren never hardens the way a first-time bather sometimes does. He comes up from the Unheld softer each time, more porous, more willing, and he has stopped being able to tell whether that's growth or erosion. He no longer asks.
+Every descent came back a little more open than the last. Corren never hardened the way a first-time bather sometimes does. He came up from the Unheld softer each time, more porous, more willing, and he'd stopped being able to tell whether that was growth or erosion. He no longer asked.
 
-He remembers versions of people that don't exist anymore — the self a friend had before a hard decade, the self a stranger showed him once in the water and never became. He greets people by those selves. Not out of confusion; he's not senile and everyone around him knows it. It's fidelity. He genuinely believes the self he glimpsed was as real as the one standing in front of him, maybe realer, and he refuses to pretend otherwise for the sake of comfort.
+He remembered versions of people that don't exist anymore — the self a friend had before a hard decade, the self a stranger showed him once in the water and never became. He greeted people by those selves. Not out of confusion; he wasn't senile and everyone around him knew it. It was fidelity. He genuinely believed the self he'd glimpsed was as real as the one standing in front of him, maybe realer, and he refused to pretend otherwise for the sake of comfort.
 
-People find him warm, at first. Being seen that generously is rare. It curdles fast for anyone he's called by a name they buried on purpose — an old cruelty, an old cowardice, a person they worked hard to stop being. Corren doesn't do this to wound. He genuinely doesn't understand why it would. To him, every version is still owed the courtesy of being real.
+People found him warm, at first. Being seen that generously is rare. It curdled fast for anyone he called by a name they'd buried on purpose — an old cruelty, an old cowardice, a person they'd worked hard to stop being. Corren didn't do this to wound. He genuinely didn't understand why it would. To him, every version was still owed the courtesy of being real.
 
-**What he's decided to stop thinking about:** whether the reason he keeps softening is that the Unheld is showing him something true, or that he's simply the one person in the congregation who never learned how to stop the water from getting in.
+**What he'd decided to stop thinking about:** whether the reason he kept softening was that the Unheld was showing him something true, or that he was simply the one person in the congregation who never learned how to stop the water from getting in.
 
-**What it actually is (GM Secret — not known to Kaine's followers, not said aloud by Corren, not confirmed to the table unless a GM decides the moment has earned it).** He isn't chasing growth. He's chasing the same completion the Last Bath gives the dead (`factions/people-of-promise.md`) — quietly, alone, without ever once calling it that. Every descent is another attempt at the erosion going all the way: the porousness finally winning, nothing coming back up the ropes at all. It hasn't happened yet. The question above — growth or erosion, he no longer asks — is the closest he has ever come to admitting it, even to himself.
+**What it actually was (GM Secret — not known to Kaine's followers, never said aloud by Corren while he lived, not confirmed to the table unless a GM decides the moment has earned it).** He wasn't chasing growth. He was chasing the same completion the Last Bath gives the dead (`factions/people-of-promise.md`) — quietly, alone, without ever once calling it that. Every descent was another attempt at the erosion going all the way: the porousness finally winning, nothing coming back up the ropes at all. The question above — growth or erosion, he no longer asked — was the closest he ever came to admitting it, even to himself.
 
-**Kaine watched this, once, long before the Final Current existed** (`characters/kaine.md`, Character Notes) — and built a doctrine out of mistaking, or choosing to mistake, one man's private wish to finally stop for a technique anyone could use to become more.
+**The declaration he kept making.** Before every bath, Corren said the same private words — a version of a vow, close enough to a binding statement that anyone who'd heard both would notice. He'd said it more times than anyone alive has said anything similar and meant it. Whatever answers a declaration like that is, by every account of how it's supposed to work, still owed. Corren treated the repetition as proof he hadn't yet said it truly enough to be heard — not as evidence that something, somewhere, simply hadn't collected.
 
-**The declaration he keeps making.** Before every bath, Corren says the same private words — a version of a vow, close enough to a binding statement that anyone who's heard both would notice. He has said it more times than anyone alive has said anything similar and meant it. Whatever answers a declaration like that is, by every account of how it's supposed to work, still owed. Corren treats the repetition as proof he hasn't yet said it truly enough to be heard — not as evidence that something, somewhere, simply hasn't collected.
+---
+
+## Death (GM Secret — the founding moment of the Final Current, known to no one but Kaine, told by him to no one)
+
+Low tide. Corren went down alone — no ropes, no congregation, onto rock the water only leaves bare a few hours at a stretch, standing where he'd never needed to stand before because the water had always reached him without it. Kaine was already up in the cliffs, hidden, for reasons that had nothing to do with Corren at first.
+
+Corren waited. Then it took him the way it never had before — thrashing, changing, faster and further than any descent before it, past fluid, past anything the congregation has a word for. Right before he was undone completely — the porousness finally winning, nothing left to climb back up the rocks — he passed through a form that Kaine, watching from above, read as powerful. Desirable. The single image the rest of Kaine's life has been built on top of.
+
+Kaine never went down to him. There was nothing left to go down for by the time he might have. What the congregation knows: Corren went under one day and didn't come back — sad, not shocking, the water finally taking one of its oldest the way everyone had quietly assumed it eventually would. What Kaine knows, and has told no one, not even his most devoted: he watched a man try to disappear, and kept the shape of the moment before disappearance as the whole point. See `characters/kaine.md`, Where the Method Actually Came From.
 
 ---
 
 ## Related Documents
 
-- `factions/people-of-promise.md` — ritual bathing, the potentials, what "changed" means here, and why once is the norm Corren doesn't follow
+- `factions/people-of-promise.md` — ritual bathing, the potentials, what "changed" means here, and why once is the norm Corren never followed
 - `locations/glasslight-reach.md` — where the congregation lives
-- `rules/character-creation.md` — Declaring a Price, the closest formal shape to what Corren keeps saying
-- `characters/kaine.md` — the other person in Glasslight who doesn't stop at once, and nothing like Corren otherwise
+- `rules/character-creation.md` — Declaring a Price, the closest formal shape to what Corren kept saying
+- `characters/kaine.md` — what he built out of watching this
