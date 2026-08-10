@@ -1,6 +1,6 @@
 # RavenHold
 
-**Archived 2026-08-09, not deprecated.** Drew: *"it's a good location, it also can't take any of my focus right now."* Shelved on purpose — pulled out of `locations/` specifically so it stops sitting with active canon and can't get referenced or built on by accident while it's not being actively developed. Fully intact, meant to come back once there's focus for it. Every cross-reference into this file was removed from canon when it moved (`memory.md`, the 2026-08-09 archival entry, has the list). Do not restore or build on this without Drew.
+**Deprecated 2026-08-09.** Drew: *"its deprecated. I don't want it referenced by accident. not even vaguely like an NPC who remembers stories about a place of safety... yadayadayada. no active pending. im forgetting about it."* Pulled out of `locations/` and off every canon cross-reference so it stops sitting anywhere active. Not a "coming back later" placeholder — do not reference it, even obliquely (no NPC rumor about "a place of safety," no unnamed hint, nothing that rhymes with it). If this is ever revisited, that's a fresh decision Drew makes explicitly, not something to notice and pick back up on its own.
 
 ---
 
