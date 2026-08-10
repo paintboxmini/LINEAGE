@@ -1,6 +1,6 @@
 # The Silent Choir
 
-*Deliberately unmappable, same register as `locations/ravenhold.md` and `locations/island-in-a-ship.md`. Not on the coordinate grid. This is a place a GM drops in when the fiction calls for it, not a destination a party can decide to travel toward.*
+*Deliberately unmappable, same register as `locations/island-in-a-ship.md`. Not on the coordinate grid. This is a place a GM drops in when the fiction calls for it, not a destination a party can decide to travel toward.*
 
 A chamber built for sound that has none. Stone tiered like an amphitheater, or a choir loft, or something older than either word — carved seats facing a center that holds nothing but a single standing figure and, once, a blade. Whoever cut this room out of the rock understood acoustics well enough to make every seat hear a whisper from the center. Nobody has whispered here in longer than anyone currently alive has been counting.
 
@@ -54,6 +54,6 @@ Let the players actually sit in the quiet before anything happens. The silence i
 - `cards/fermata.md` — its signature cards
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the principle Fermata's note runs on
-- `locations/ravenhold.md`, `locations/island-in-a-ship.md` — the other deliberately unmappable places
+- `locations/island-in-a-ship.md` — the other deliberately unmappable place
 - `locations/capital/underground-bazaar.md` — the Cartographer, one plausible way in
 - `rules/card-glossary.md` — Locked, Sealed, Reveal Hand

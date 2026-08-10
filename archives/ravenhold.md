@@ -1,5 +1,9 @@
 # RavenHold
 
+**Archived 2026-08-09, not deprecated.** Drew: *"it's a good location, it also can't take any of my focus right now."* Shelved on purpose — pulled out of `locations/` specifically so it stops sitting with active canon and can't get referenced or built on by accident while it's not being actively developed. Fully intact, meant to come back once there's focus for it. Every cross-reference into this file was removed from canon when it moved (`memory.md`, the 2026-08-09 archival entry, has the list). Do not restore or build on this without Drew.
+
+---
+
 *Not on any map outsiders can find. Travelers who pass close enough to feel the air change — suddenly warmer, sweeter, slower — will swear afterward that they dreamed the place, or that it was only a single afternoon that stretched impossibly long. Those who actually step inside never speak of it again, not because they are forbidden, but because the words feel too small afterward.*
 
 ---
