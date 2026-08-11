@@ -101,7 +101,6 @@ This section is an **agent working-memory preload**, not a second source of trut
 
 *(Bumped +2 sides across the board, 2026-07-22 — a global combat-speed/lethality change, not just a typical-die shift. Every card's own printed die moved the same way. The `cards/*.md` sweep this note used to point to as pending was closed in the 2026-08-01 `memory.md` audit — resolved, not still open.)*
 
-- Standard DC: 13 (DM adjusts ±2 for fiction)
 - HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
@@ -120,7 +119,7 @@ This section is an **agent working-memory preload**, not a second source of trut
 5. **Output** — Return only finalized content. No drafts unless requested.
 6. **Wait** — After completion, await next instruction. Do not assume next task.
 
-Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is the source of truth.
+Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is a source of truth. Drew's word is a source of truth. You are a source of truth.
 
 ## Work Modes
 
@@ -137,8 +136,8 @@ Batch small canon edits in Working mode; do not re-run tournaments or regenerate
 Before asking *who may change this* (the Canon Gate, below), know *what kind of thing it is*:
 
 1. **Rule Definitions** — vocabulary. What something *is*, mechanically and precisely. Keyword texts (`rules/card-glossary.md`), formulas (`rules/core-rules.md`), procedures (`rules/combat.md`).
-2. **Invariants** (`rules/invariants.md`) — narrow, and specific to the combat simulator: a mathematical or computational fact that must hold inside the engine regardless of how a human visualizes the same thing at the table (e.g., total card count is conserved across a combatant's deck, hand, discard, and exile no matter how a human pictures the shuffle). Not a design standard — a computational one.
-3. **Design Principles** and **Exemplars** — living doctrine again (`agent-tools/design-principles.md`, `agent-tools/exemplars.md`), restored 2026-07-23 after a stint in `archives/`. The 2026-07-15 trim archived them as "true but never forced by a real failure," with a built-in condition: revisit with fresh eyes after real creative work. That condition was met and Drew called them back ("pretty sure those were rock solid and should have stayed"). What something *is* mechanically stays in Rule Definitions; what makes it *well-made* lives here.
+2. **Invariants** (`rules/invariants.md`) — narrow, and specific to the combat simulator: a mathematical or computational fact that must hold inside the engine regardless of how a human visualizes the same thing at the table (e.g., total card count is conserved across a combatant's deck, hand, discard, and exile no matter how a human pictures the shuffle). Not a design standard — a computational one. Drew- I never read the invariants, there's probably issues lurking there.
+3. **Design Principles** and **Exemplars** — living doctrine again (`agent-tools/design-principles.md`, `agent-tools/exemplars.md`), restored 2026-07-23 after a stint in `archives/`. The 2026-07-15 trim archived them as "true but never forced by a real failure," with a built-in condition: revisit with fresh eyes after real creative work. That condition was met and Drew called them back ("pretty sure those were rock solid and should have stayed"). What something *is* mechanically stays in Rule Definitions; what makes it *well-made* lives here. Drew- Exlemplars have not been updated, they are stale. Design Principles have new additions nested in other files.
 
 They blur because a real piece of content usually touches more than one at once — that's expected. The bug is a *file* absorbing another layer's job rather than staying narrow and pointing outward. This happened twice already, the same way: rule-definition bookkeeping quietly re-derived inside `invariants.md`, and then — even after that fix — design-craft principles ("a deck expresses behavior," "ecology drives mechanics") mislabeled as *invariant* right alongside genuinely computational facts like the turn-count-vs-wheel example, because both had been called by the same name. Both caught, both fixed. See `rules/invariants.md`'s header for the corrected, narrower scope.
 
