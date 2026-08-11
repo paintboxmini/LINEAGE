@@ -4,7 +4,7 @@
 
 **Session Target:** 2 hours. Escalating environmental strain, resource tension, one major buried relic event.
 
-For location overview, see `locations/ashfall-wastes.md`.
+For location overview, see `places/ashfall-wastes.md`.
 
 ---
 

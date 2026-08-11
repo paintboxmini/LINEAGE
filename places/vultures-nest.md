@@ -52,7 +52,7 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `locations/the-coil.md`.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `places/the-coil.md`.
 
 ---
 

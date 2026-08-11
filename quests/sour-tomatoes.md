@@ -4,7 +4,7 @@
 
 **Session Target:** 1–2 hours. One property, one confrontation, one real choice.
 
-For location overview, see `locations/fog-basin.md`.
+For location overview, see `places/fog-basin.md`.
 
 ---
 
@@ -112,4 +112,4 @@ If the party takes the children somewhere — the rebuilt Fog Basin orphanage (s
 
 ## Related Documents
 
-- `locations/fog-basin.md` — where this sits in the world
+- `places/fog-basin.md` — where this sits in the world

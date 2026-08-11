@@ -49,7 +49,7 @@ This is a budget to design against, not a formula to solve — two tier-2 items 
 
 All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night's lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.
 
-The Gilded Tusk's menu (`locations/capital/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
+The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
 
 ---
 
@@ -126,7 +126,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 
 Artifacts don't run on the tier budget above — they're a different kind of object entirely. Per `rules/character-creation.md`: "resonant objects closely aligned with a Seat's domain... not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near." An Artifact's mechanics should read as an extension of a specific Seat's actual domain (`mythology/seats.md`), not a generic stat stick reskinned — design these bespoke, one at a time, the way a signature card set gets built for a specific creature rather than pulled from a shared budget table. No standard gold value for the same reason — an Artifact's worth is cosmological before it's economic, and pricing one at market undersells what it actually is.
 
-**Name comes first**, the same way it does for a person or a place (`rules/people.md`, `rules/locations.md`) — giving the object a face instead of leaving it a generic instance of its type. "A sword" isn't Named. The Lightning Loop (`items/lightning-loop.md`) is. An Artifact earns its Name the way anything does: specificity, not a formula — what it is, exactly, and why it's this one and not another.
+**Name comes first**, the same way it does for a person or a place (`rules/people.md`, `rules/places.md`) — giving the object a face instead of leaving it a generic instance of its type. "A sword" isn't Named. The Lightning Loop (`items/lightning-loop.md`) is. An Artifact earns its Name the way anything does: specificity, not a formula — what it is, exactly, and why it's this one and not another.
 
 **The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`mythology/seats.md`, Binding and Holding) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
 

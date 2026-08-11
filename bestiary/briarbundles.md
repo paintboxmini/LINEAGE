@@ -1,6 +1,6 @@
 # Briarbundles
 
-*Field guardians of Briarwatch. Many names, and many forms. See `locations/briarwatch.md`.*
+*Field guardians of Briarwatch. Many names, and many forms. See `places/briarwatch.md`.*
 
 **Cards:** `cards/briarbundles.md`
 
@@ -109,6 +109,6 @@ A GM should make the fence line visible early. The lesson lands when the party w
 ## Related Documents
 
 - `bestiary/the-first-bundle.md` — the oldest one, and what the winters have been going to
-- `locations/briarwatch.md` — the fields, the fences, and the Masons' line
+- `places/briarwatch.md` — the fields, the fences, and the Masons' line
 - `bestiary/fenwool.md` — the animal a Haywight's wool was sheared from
 - `factions/the-masons.md` — the other things built along this border to hold it

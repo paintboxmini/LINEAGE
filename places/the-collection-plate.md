@@ -1,13 +1,13 @@
 # The Collection Plate
 
-A carved-out hollow in the Fog Basin (`locations/fog-basin.md`). Not more fog — a circular clearing the basin tolerates, held open by hanging sheets and human habit.
+A carved-out hollow in the Fog Basin (`places/fog-basin.md`). Not more fog — a circular clearing the basin tolerates, held open by hanging sheets and human habit.
 
 ---
 
 ## Shape
 
 - **Circular clearing.** Packed ground, worn paths that are habits more than streets.
-- **Walls:** hanging sheets (cloth, sail, tarp, stitched hide) in a rough ring. **They keep the fog out** — not a symbolic boundary, an actual one. Beyond them: basin. Inside: the clearing and the inward-facing shacks, clear air, ordinary visibility. `locations/fog-basin.md`'s Blind terrain rule doesn't reach past the sheet-line.
+- **Walls:** hanging sheets (cloth, sail, tarp, stitched hide) in a rough ring. **They keep the fog out** — not a symbolic boundary, an actual one. Beyond them: basin. Inside: the clearing and the inward-facing shacks, clear air, ordinary visibility. `places/fog-basin.md`'s Blind terrain rule doesn't reach past the sheet-line.
 - **Shacks face inward**, backs to the sheets. Doors open toward the center, never toward the white.
 - **Center:** trampled common ground; often a landmark (dry well collar, post cluster, or the path of the nightly collection bowl). Paths radiate inward.
 
@@ -57,7 +57,7 @@ A collection plate passes through a crowd and gathers what people can spare. Thi
 
 ## Related Documents
 
-- `locations/fog-basin.md` — basin rules, Misdirection, Pell
+- `places/fog-basin.md` — basin rules, Misdirection, Pell
 - `bestiary/fogcaller.md` — hunt in the fog, not the Plate interior
 - `bestiary/echo.md` — paths into the ring
 - `items/fog-basin-items.md` — Pell's prices and gear

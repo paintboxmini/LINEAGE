@@ -1,6 +1,6 @@
 # Moth
 
-*Underground Bazaar regular. See `locations/capital/underground-bazaar.md`.*
+*Underground Bazaar regular. See `places/capital/underground-bazaar.md`.*
 
 ---
 
@@ -28,5 +28,5 @@ What the coin purse arrangement actually is: unknown. What he wants: unknown. Wh
 
 ## Related Documents
 
-- `locations/capital/underground-bazaar.md` — where he's found, the gremlin's debt-tracking, the tavern's Liar's Dice table
+- `places/capital/underground-bazaar.md` — where he's found, the gremlin's debt-tracking, the tavern's Liar's Dice table
 - `characters/kess.md` — his counterpart

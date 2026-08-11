@@ -1,6 +1,6 @@
 # The Silent Choir
 
-*Deliberately unmappable, same register as `locations/island-in-a-ship.md`. Not on the coordinate grid. This is a place a GM drops in when the fiction calls for it, not a destination a party can decide to travel toward.*
+*Deliberately unmappable, same register as `places/island-in-a-ship.md`. Not on the coordinate grid. This is a place a GM drops in when the fiction calls for it, not a destination a party can decide to travel toward.*
 
 A chamber built for sound that has none. Stone tiered like an amphitheater, or a choir loft, or something older than either word — carved seats facing a center that holds nothing but a single standing figure and, once, a blade. Whoever cut this room out of the rock understood acoustics well enough to make every seat hear a whisper from the center. Nobody has whispered here in longer than anyone currently alive has been counting.
 
@@ -8,7 +8,7 @@ A chamber built for sound that has none. Stone tiered like an amphitheater, or a
 
 ## How It's Found
 
-Never by map, never by asking a local, never on purpose the first time. A GM plants the way in: a door that shouldn't be quiet behind it and is, a passage where footsteps stop making sound three steps before the party notices, a rumor traded for something real rather than bought outright (`locations/capital/underground-bazaar.md`, the Cartographer — her maps sometimes show places that shouldn't be on them; this is exactly the kind of place). Once found, it can be found again. It was never lost — it was simply never on the way to anywhere.
+Never by map, never by asking a local, never on purpose the first time. A GM plants the way in: a door that shouldn't be quiet behind it and is, a passage where footsteps stop making sound three steps before the party notices, a rumor traded for something real rather than bought outright (`places/capital/underground-bazaar.md`, the Cartographer — her maps sometimes show places that shouldn't be on them; this is exactly the kind of place). Once found, it can be found again. It was never lost — it was simply never on the way to anywhere.
 
 ---
 
@@ -16,7 +16,7 @@ Never by map, never by asking a local, never on purpose the first time. A GM pla
 
 This is the whole point of the room, and it is a real rule, not just a description.
 
-**While inside the Choir, players may not speak aloud to communicate — in character or out of it.** Plans, warnings, "watch out," a joke to break the tension — none of it. Communication happens by gesture, by pointing, by a note passed hand to hand. This runs for the whole scene, not just combat, and it is the GM's job to actually hold the table to it — the rule works by being real, the same way the Session 0 ceremony works by actually slowing down (`locations/island-in-a-ship.md`, Setting the Tone). A table that quietly ignores it has not run the room.
+**While inside the Choir, players may not speak aloud to communicate — in character or out of it.** Plans, warnings, "watch out," a joke to break the tension — none of it. Communication happens by gesture, by pointing, by a note passed hand to hand. This runs for the whole scene, not just combat, and it is the GM's job to actually hold the table to it — the rule works by being real, the same way the Session 0 ceremony works by actually slowing down (`places/island-in-a-ship.md`, Setting the Tone). A table that quietly ignores it has not run the room.
 
 **What this replaces mechanically:** any card that would require Reveal Hand (`rules/card-glossary.md` — "stating the color counts in hand aloud") instead means silently showing the hand, briefly, to whoever needs to see it. Same information, same cost, no exception carved into the keyword itself — just how it's performed here. Nothing about the card's actual text changes.
 
@@ -54,6 +54,6 @@ Let the players actually sit in the quiet before anything happens. The silence i
 - `cards/fermata.md` — its signature cards
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the principle Fermata's note runs on
-- `locations/island-in-a-ship.md` — the other deliberately unmappable place
-- `locations/capital/underground-bazaar.md` — the Cartographer, one plausible way in
+- `places/island-in-a-ship.md` — the other deliberately unmappable place
+- `places/capital/underground-bazaar.md` — the Cartographer, one plausible way in
 - `rules/card-glossary.md` — Locked, Sealed, Reveal Hand

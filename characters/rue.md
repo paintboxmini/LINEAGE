@@ -20,5 +20,5 @@ She does not raise her voice. Glasslight doesn't, as a rule — loud certainty i
 
 ## Related Documents
 
-- `locations/glasslight-reach.md` — the town, the light-cartographers, the Soft Edge
+- `places/glasslight-reach.md` — the town, the light-cartographers, the Soft Edge
 - `characters/kaine.md`, `characters/thess.md` — other Glasslight figures shaped by something that didn't resolve cleanly

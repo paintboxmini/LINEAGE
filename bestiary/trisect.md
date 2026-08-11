@@ -66,7 +66,7 @@ Piston Drive hitting all Frontline targets simultaneously is the primary danger.
 
 ## Related Documents
 
-- `locations/ashfall-wastes.md`
+- `places/ashfall-wastes.md`
 - `quests/ashfall-one-shot.md`
 - `bestiary/tithe-engine.md`
 - `bestiary/ashgrazer.md`

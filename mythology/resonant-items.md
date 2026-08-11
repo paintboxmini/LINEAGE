@@ -45,7 +45,7 @@ This is why a Resonant Item doesn't need its Seat Filled to work. A domain can s
 ## Related Documents
 
 - `mythology/resonant-people.md` — the living version of the same alignment
-- `mythology/resonant-locations.md` — the same alignment, in a place instead of an object
+- `mythology/resonant-places.md` — the same alignment, in a place instead of an object
 - `mythology/seats.md` — the domain being expressed, and what its state does and doesn't determine
 - `mythology/archons.md` — an Archon's will shapes the Price of using what's Resonant to them, and the item's own separate path to the same summit
 - `rules/equipment.md` — Artifacts, how Price is actually paid

@@ -26,8 +26,8 @@ Stonecoils take them when hunting range expands upward (`bestiary/stonecoil.md`)
 
 ## Related Documents
 
-- `locations/briarwatch.md` — where they're kept
+- `places/briarwatch.md` — where they're kept
 - `bestiary/stonecoil.md` — one real cause of loss
 - `bestiary/briar-scratcher.md`, `bestiary/briarwatch-jackalope.md` — share the same hedgerow forage
-- `locations/vultures-nest.md` — Bartho's ledger
+- `places/vultures-nest.md` — Bartho's ledger
 - `quests/the-man-who-buys-wounds.md` — Weck buys the culls

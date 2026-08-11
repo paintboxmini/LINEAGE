@@ -16,7 +16,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 |-----------|----------|
 | `cards/` | Card set files — core (blue-mind, red-body, green-soul) and creature/location signature sets |
 | `rules/` | Core rules, mechanics, and the keyword glossary |
-| `locations/` | Location overviews (world-level descriptions) |
+| `places/` | Place overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
 | `bestiary/` | Creature stat blocks, abilities, loot, card references |
 | `characters/` | Named NPC profiles, and player character decks (by character name) |

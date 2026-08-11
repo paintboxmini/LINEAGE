@@ -29,6 +29,6 @@ Kaine never went down to him. There was nothing left to go down for by the time 
 ## Related Documents
 
 - `factions/people-of-promise.md` — ritual bathing, the potentials, what "changed" means here, and the once-only norm Corren broke exactly once
-- `locations/glasslight-reach.md` — where the congregation lives
+- `places/glasslight-reach.md` — where the congregation lives
 - `rules/character-creation.md` — Declaring a Price, the closest formal shape to what Corren kept saying
 - `characters/kaine.md` — what he built out of watching this

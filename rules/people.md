@@ -8,7 +8,7 @@ Name, Price, and Distance (`mythology/creation-myth-the-three-cuts.md`) applied 
 
 Naming a person is giving them a face (Drew) — turning a function or a role into one specific, particular identity instead of an instance of a category. "A guard" isn't Named. A guard with an actual name, an actual reason to be standing there, and one detail that's theirs alone, is. A player character gets this at character creation, through stats and a starting deck (`rules/character-creation.md`) — the build itself is the face. An NPC gets it the same way any Named thing does: not through a formula, through specificity.
 
-This is the formal first step, same as it is for places and things (`rules/locations.md`, `rules/equipment.md`) — not because a mechanic enforces it, but because skipping it is how "a guard" stays a guard instead of becoming somebody.
+This is the formal first step, same as it is for places and things (`rules/places.md`, `rules/equipment.md`) — not because a mechanic enforces it, but because skipping it is how "a guard" stays a guard instead of becoming somebody.
 
 ---
 

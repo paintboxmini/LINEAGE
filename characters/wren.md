@@ -19,5 +19,5 @@ The people inside that household are, by most visible measures, well cared for. 
 ## Related Documents
 
 - `factions/people-of-promise.md` — the ritual bathing this is all built around not having
-- `locations/glasslight-reach.md` — the household, the congregation, the town's own careful volume
+- `places/glasslight-reach.md` — the household, the congregation, the town's own careful volume
 - `characters/kaine.md` — a much louder, much more public version of deciding what's true on someone else's behalf

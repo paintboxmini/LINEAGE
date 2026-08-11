@@ -2,8 +2,8 @@
 
 *Same level as the bazaar, tucked away from the main thoroughfare. No name anyone uses twice. Where the bazaar's worst customers go when the oversaturation gets heavy.*
 
-Part of the bazaar complex — together, a small hidden pocket inside the Waterworks, not a level of their own. See `locations/capital/underground-bazaar.md` for the full location, `locations/capital/the-waterworks.md` for the layer around it.
-The mine below begins here. See `locations/capital/the-wallows.md`.
+Part of the bazaar complex — together, a small hidden pocket inside the Waterworks, not a level of their own. See `places/capital/underground-bazaar.md` for the full location, `places/capital/the-waterworks.md` for the layer around it.
+The mine below begins here. See `places/capital/the-wallows.md`.
 
 ---
 

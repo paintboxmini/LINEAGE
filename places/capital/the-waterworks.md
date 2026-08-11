@@ -2,8 +2,8 @@
 
 *A citywide utility layer, spun in directly beneath the capital — not a room under the mine, a floor under the whole city. The Underground Bazaar is a small, hidden pocket inside it, not a layer of its own.*
 
-For the Bazaar and Tavern hidden within, see `locations/capital/underground-bazaar.md`, `locations/capital/underground-tavern.md`.
-For the mine shaft that descends through it, see `locations/capital/the-wallows.md`.
+For the Bazaar and Tavern hidden within, see `places/capital/underground-bazaar.md`, `places/capital/underground-tavern.md`.
+For the mine shaft that descends through it, see `places/capital/the-wallows.md`.
 For the guild that runs it, see `factions/the-cellar-custodians.md`.
 
 ---
@@ -44,16 +44,16 @@ In the coldest or stillest cisterns, the water carries a faint, cold blue-white 
 
 Tucked into a stretch of the Waterworks that reads as unremarkable maintenance access — a service junction like a hundred others — is the entrance to the Underground Bazaar and, past it, the Underground Tavern. Neither takes up meaningful space against the scale of the Waterworks around them; from a Custodian's maintenance log, it's a few chambers that draw slightly more foot traffic than the rest of the level and get a wider berth during shift changes.
 
-The Bazaar predates most of the current Waterworks infrastructure and was simply built around, not into — the Custodians route pipe and cable past it the way a city routes a road around an old building nobody wants to demolish. The mine shaft to the Wallows begins at the Tavern floor, same as it always has. See `locations/capital/underground-bazaar.md`, `locations/capital/underground-tavern.md`, `locations/capital/the-wallows.md`.
+The Bazaar predates most of the current Waterworks infrastructure and was simply built around, not into — the Custodians route pipe and cable past it the way a city routes a road around an old building nobody wants to demolish. The mine shaft to the Wallows begins at the Tavern floor, same as it always has. See `places/capital/underground-bazaar.md`, `places/capital/underground-tavern.md`, `places/capital/the-wallows.md`.
 
 ---
 
 ## Related Documents
 
-- `locations/capital/underground-bazaar.md` — the hidden pocket
-- `locations/capital/underground-tavern.md` — the hidden pocket's other half, and the mine's upper mouth
-- `locations/capital/the-wallows.md` — the mine shaft descending through this layer
-- `locations/capital/capital.md` — the city above
+- `places/capital/underground-bazaar.md` — the hidden pocket
+- `places/capital/underground-tavern.md` — the hidden pocket's other half, and the mine's upper mouth
+- `places/capital/the-wallows.md` — the mine shaft descending through this layer
+- `places/capital/capital.md` — the city above
 - `factions/the-cellar-custodians.md` — who runs this level
 - `factions/the-weavers.md` — the guild sharing these tunnels
 - `world/geography-overview.md` — the continent-wide river network this feeds from

@@ -46,5 +46,5 @@ First encounter of the session. Introduces Wounds as a deck pressure system befo
 
 ## Related Documents
 
-- `locations/vultures-nest.md` — Carrion Guide routes this encounter on the longer path
+- `places/vultures-nest.md` — Carrion Guide routes this encounter on the longer path
 - `quests/hollow-below-briarwatch.md` — where Wound-clogged decks will matter

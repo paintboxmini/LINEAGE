@@ -20,4 +20,4 @@ She turns the same eye on herself, without mercy, in private, and it isn't self-
 
 ## Related Documents
 
-- `locations/glasslight-reach.md` — the light-cartographer economy, the prism trade
+- `places/glasslight-reach.md` — the light-cartographer economy, the prism trade

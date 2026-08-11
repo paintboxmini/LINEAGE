@@ -63,7 +63,7 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 
 ## Related Documents
 
-- `locations/capital/capital.md` — the city at the basin's center
+- `places/capital/capital.md` — the city at the basin's center
 - `items/fog-basin-items.md`
 - `quests/sour-tomatoes.md` — the Odom place; a family with no fix, and children who need somewhere to go
-- `locations/the-collection-plate.md` — hollow settlement in the basin; hanging sheets, inward shacks, hard to leave by fear not by lock
+- `places/the-collection-plate.md` — hollow settlement in the basin; hanging sheets, inward shacks, hard to leave by fear not by lock

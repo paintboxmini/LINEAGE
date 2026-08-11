@@ -44,7 +44,7 @@ The watchtower ruins are not unexplained to everyone — the Masons built them, 
 
 ## Session 1 Routing
 
-Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of the route — see `locations/roadhouse.md`, Session 1 Routing, for the retired riverboat opening.
+Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of the route — see `places/roadhouse.md`, Session 1 Routing, for the retired riverboat opening.
 
 ---
 
@@ -52,12 +52,12 @@ Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Bri
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
 - `quests/settling-stones.md` and `quests/shifting-burrow.md` — the two mirrored entrances into the Hollow, at the watchtower ruins and the Western Property sinkhole respectively
-- `locations/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
+- `places/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `quests/washed-ashore.md` — where the session 1 route actually starts now
-- `locations/vultures-nest.md` — the former opening's location, no longer on the route
+- `places/vultures-nest.md` — the former opening's location, no longer on the route
 - `bestiary/briarwatch-jackalope.md` — general field encounter, not tied to any one location
 - `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
-- `locations/turnroot-weald.md` — the territory this farmland was cut from
+- `places/turnroot-weald.md` — the territory this farmland was cut from
 - `bestiary/fenwool.md` — what's actually grazing these fields
 - `quests/the-abandoned-homestead.md` — the claim that didn't hold, on the road in
 - `bestiary/briarbundles.md` — the field guardians the farmers build every autumn

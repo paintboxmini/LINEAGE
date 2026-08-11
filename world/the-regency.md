@@ -23,11 +23,11 @@ Each member wears an animal mask — officially regalia, informal, earned or ass
 | Member | Title | Sphere |
 |--------|-------|--------|
 | Lord Oswald | The Lion | Regent — in title only. He's ruled outright since the throne's line ended. Sets the law that binds the government itself — what the Regency may do, not what its citizens may do. |
-| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`locations/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
+| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`places/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
 | Lord Cedric | The Bear | City walls and military security. |
 | Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
 | Lord Percival | The Owl | Cartography. Head of the Cartographers Guild (`factions/the-cartographers-guild.md`) — routes, surveys, way-marking, what's still passable and what isn't. |
-| Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors. Informally: the Pig — never to his face. See `locations/capital/underground-bazaar.md`, `locations/capital/the-wallows.md`. |
+| Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors. Informally: the Pig — never to his face. See `places/capital/underground-bazaar.md`, `places/capital/the-wallows.md`. |
 | Lady Eveline | The Elephant | Silent. Observant. No public position on anything — except the one portfolio nobody's ever thought to question: critical infrastructure. The Cellar Custodians and the Weavers both answer to her office, on paper, without her ever saying a word about either. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
 
 ---
@@ -52,7 +52,7 @@ What different city factions say about the council. Collected from marketplace m
 
 ## Elara vs. the Forge
 
-A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch (`locations/capital/capital.md`, Temple of the Forge) refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is a category error he treats as a quiet blasphemy. Forge-made mechanical gear is sold at the temple itself or through its resident artisans — never on the open Marketplace boards, never under a Traders' license.
+A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch (`places/capital/capital.md`, Temple of the Forge) refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is a category error he treats as a quiet blasphemy. Forge-made mechanical gear is sold at the temple itself or through its resident artisans — never on the open Marketplace boards, never under a Traders' license.
 
 Elara's Wardens occasionally "inspect" the temple precinct and are received with cold courtesy and minimal cooperation. Neither side has forced a confrontation: she can slow certain metal shipments and fuel allotments; he can make certain commissions simply unavailable to anyone known to be close to the Fox. Both believe they're defending the proper order of the city — hers administrative, his religious.
 
@@ -64,7 +64,7 @@ Elara's Wardens occasionally "inspect" the temple precinct and are received with
 
 She does not walk the stalls every morning. She does not need to.
 
-**Morning.** The Marketplace Wardens — her direct staff — open the day from the Traders' Hall (`locations/capital/capital.md`, The Inner Precinct): overnight incident reports, licenses due or overdue, stalls that failed to open, the night-shift gate tallies. A short written summary reaches her office in the Citadel by mid-morning. She reads it once; anything that smells of real money or real trouble gets a second look, everything else is already handled.
+**Morning.** The Marketplace Wardens — her direct staff — open the day from the Traders' Hall (`places/capital/capital.md`, The Inner Precinct): overnight incident reports, licenses due or overdue, stalls that failed to open, the night-shift gate tallies. A short written summary reaches her office in the Citadel by mid-morning. She reads it once; anything that smells of real money or real trouble gets a second look, everything else is already handled.
 
 **Midday.** She works the private ledger — tariffs, license renewals, the common-fund percentage, and the quieter side-arrangements that keep certain high-volume traders cooperative. She rarely issues direct orders. A name, a stall, a shipment gets a single notation, and the Wardens understand exactly what the mark means.
 
@@ -124,11 +124,11 @@ Recruited into seats that were already empty a second time — not the first Owl
 
 *Texture for how these seven actually treat each other, not a plot to execute. Nobody on the council states any of this out loud.*
 
-**Oswald vs. almost everyone.** He's openly consolidating personal power while privately preparing another attempt on the Seat of Binding (The Pendragon Attempt, above). Every other original member has reason to watch him — Elara and Archibald both lose ground if he centralizes further, and Cedric's military loyalty is the prize he most wants and least fully owns. The letter hidden at Table #9 (`locations/capital/gilded-tusk.md`) is addressed to Percival and names exactly this plan — whether it ever actually reaches him is a table discovery, not a settled fact.
+**Oswald vs. almost everyone.** He's openly consolidating personal power while privately preparing another attempt on the Seat of Binding (The Pendragon Attempt, above). Every other original member has reason to watch him — Elara and Archibald both lose ground if he centralizes further, and Cedric's military loyalty is the prize he most wants and least fully owns. The letter hidden at Table #9 (`places/capital/gilded-tusk.md`) is addressed to Percival and names exactly this plan — whether it ever actually reaches him is a table discovery, not a settled fact.
 
 **Elara vs. Archibald.** Open market against underground market. She tracks every coin that moves in the light; he owns the economy that moves in the dark. They need each other — goods bleed both ways — and resent each other for it. The Cellar Custodians sit in the middle of that friction; Eveline holding them is what keeps either side from simply seizing the tunnels. See `factions/the-cellar-custodians.md`.
 
-**Cedric vs. Oswald.** Cedric controls the walls, the gates, and now the Adventurers' Hall's irregulars (`locations/capital/capital.md`, The Inner Precinct) — the only council member who can put armed force on the street without asking anyone's permission. Oswald needs that force loyal. Cedric hasn't fully given it.
+**Cedric vs. Oswald.** Cedric controls the walls, the gates, and now the Adventurers' Hall's irregulars (`places/capital/capital.md`, The Inner Precinct) — the only council member who can put armed force on the street without asking anyone's permission. Oswald needs that force loyal. Cedric hasn't fully given it.
 
 **Eveline vs. the table.** She holds both halves of critical infrastructure — water and the Grid — never speaks, never votes, and has outlasted the records. Everyone assumes neutrality. No one is certain of it. That both infrastructure wings answer to her office is a quiet veto: any serious move against her risks the city's actual survival. See `factions/the-weavers.md`, The Source Chamber.
 

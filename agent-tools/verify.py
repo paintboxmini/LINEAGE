@@ -164,7 +164,7 @@ def check_refs():
             if not os.path.exists(m.group(1)) and 'filename' not in m.group(1):
                 bad.append(f'{path} -> {m.group(1)} (missing)')
         # Directory-qualified paths only: bare `red-team.md` is prose shorthand.
-        for m in re.finditer(r'`((?:cards|bestiary|rules|quests|locations|characters|items|'
+        for m in re.finditer(r'`((?:cards|bestiary|rules|quests|places|characters|items|'
                              r'world|mythology|factions|Oracle|agent-tools|playtesting)/'
                              r'[A-Za-z0-9_\-/]+\.md)`', text):
             target = m.group(1)
@@ -291,7 +291,7 @@ def check_duplicate_refs():
     return report('no duplicate cross-references', bad)
 
 
-RESTATED_DIRS = ('quests', 'locations', 'world', 'factions', 'items')
+RESTATED_DIRS = ('quests', 'places', 'world', 'factions', 'items')
 
 DISTANCE_RE = re.compile(
     r'[^.!?\n]{0,70}\b(?:\d+(?:[–-]\d+)? ?(?:ft\.?|feet|foot|yards?|meters?|metres?|'

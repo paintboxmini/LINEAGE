@@ -1,6 +1,6 @@
 # Fermata
 
-*Solitary boss encounter. `locations/the-silent-choir.md` — guardian of the Silent Choir, keeper of what the Silent Blade was cut from.*
+*Solitary boss encounter. `places/the-silent-choir.md` — guardian of the Silent Choir, keeper of what the Silent Blade was cut from.*
 
 **Cards:** `cards/fermata.md`
 
@@ -41,7 +41,7 @@ One Fermata, Frontline, always. It does not pursue outside the Choir's own bound
 
 ## The Ringing Silence — Running the Choir
 
-See `locations/the-silent-choir.md` for the full table-level rule (players communicate only by gesture or written note while inside). The combat consequence of that rule lives here:
+See `places/the-silent-choir.md` for the full table-level rule (players communicate only by gesture or written note while inside). The combat consequence of that rule lives here:
 
 **Passive — The Held Note.** While this passive is active, no sound exists in the Choir except Fermata's own. If Fermata is ever afflicted with Staggered, or otherwise forced to lose a turn, the note breaks for one full round: ambient sound floods back in all at once, and Fermata gains Vulnerable until the start of its next turn. This is the fight's real opening — not a damage race, a chance to land one clean hit while the boundary is down.
 
@@ -70,7 +70,7 @@ See `locations/the-silent-choir.md` for the full table-level rule (players commu
 
 ## Related Documents
 
-- `locations/the-silent-choir.md` — where this fight happens, and the table rule it runs on
+- `places/the-silent-choir.md` — where this fight happens, and the table rule it runs on
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause

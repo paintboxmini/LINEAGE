@@ -70,6 +70,8 @@ Everyone begins level — two of each — and then you press your thumb down on 
 
 Choose carefully. This spread is not a build. It is a statement about how you intend to solve things, and the world will take you at your word.
 
+That is the only time I will Name you whole. But you will keep doing it in miniature, every time you play a card and declare *this is who I am right now* — a small, repeated First Cut, over and over, for as long as the fight lasts. What it costs you to have said it is a different matter entirely. That is the Second Cut's job, not mine.
+
 ---
 
 ## The Second Cut in You — Price

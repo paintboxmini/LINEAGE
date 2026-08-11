@@ -18,4 +18,4 @@ The Reach is gentle with him — Glasslight is gentle with almost everyone, and 
 
 - `characters/kaine.md` — the same failure, carried the opposite direction
 - `mythology/resonant-people.md` — Failed Seat-Takers, the shape both of them share
-- `locations/glasslight-reach.md` — where he's lived with it since
+- `places/glasslight-reach.md` — where he's lived with it since

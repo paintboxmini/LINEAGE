@@ -1,4 +1,4 @@
-*Archived 2026-08-06 from `locations/vultures-nest.md`'s "On the Boat — Night Before Arrival" and "The Sailor's Story" sections. Drew: "Vultures nest isn't in the plan anymore. players wash up on the beaches of the unheld ocean directly south of the roadhouse, about a days journey." — with no riverboat arrival, this scene never happens. Preserved verbatim, not a current-state reference. The Island in a Ship's Session 0 trigger (`locations/island-in-a-ship.md`) was re-anchored to the washing-ashore moment itself rather than this scene; the sailor and his own crossing are not referenced anywhere else in canon.*
+*Archived 2026-08-06 from `places/vultures-nest.md`'s "On the Boat — Night Before Arrival" and "The Sailor's Story" sections. Drew: "Vultures nest isn't in the plan anymore. players wash up on the beaches of the unheld ocean directly south of the roadhouse, about a days journey." — with no riverboat arrival, this scene never happens. Preserved verbatim, not a current-state reference. The Island in a Ship's Session 0 trigger (`places/island-in-a-ship.md`) was re-anchored to the washing-ashore moment itself rather than this scene; the sailor and his own crossing are not referenced anywhere else in canon.*
 
 ---
 
@@ -34,4 +34,4 @@ He unwinds one linen wrapping. Grey markings on the forearm — fine lines, like
 
 The normal conversation slowly picks back up.
 
-*See `locations/island-in-a-ship.md` for what he found.*
+*See `places/island-in-a-ship.md` for what he found.*

@@ -47,5 +47,5 @@ Body 1 is the answer to everything else about it. Eleven HP, Armour nothing. Onc
 
 ## Related Documents
 
-- `locations/abyssal-ruins.md` — the ruins and the central violet gateway it came through
+- `places/abyssal-ruins.md` — the ruins and the central violet gateway it came through
 - `bestiary/gluttony-abomination.md` — what waits in the cathedral past the plaza

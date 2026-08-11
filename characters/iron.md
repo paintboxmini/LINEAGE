@@ -65,6 +65,6 @@ If the party has already passed the abandoned homestead (`quests/the-abandoned-h
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the Hollow, and what's actually under his fields
 - `quests/the-abandoned-homestead.md` — the claim that didn't hold, and the field he still keeps
 - `bestiary/briarbundles.md` — what he ties, and the folklore around not taking them down
-- `locations/briarwatch.md` — the Western Property and the wider farmland
+- `places/briarwatch.md` — the Western Property and the wider farmland
 - `bestiary/duskwick.md` — his companion, and the large one at the homestead
 - `bestiary/fenwool.md` — the livestock the farms keep losing

@@ -68,7 +68,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **Dock Broth** — remove 1 status card, gain Weak on next damage roll.
 - **Chewfat Ration** — Resist 1 for a combat, discard 1 card at the end of each turn.
 
-**Harwick Sundries — deliberately mechanics-free.** The Tuning Fork Sword, the Desire Compass, the Guard's Boots, and the Ticking Box (`locations/vultures-nest.md`) are mystery objects on Dess Harwick's counter, built to be developed later if the party returns. Not part of this inventory — don't treat them as priced or mechanical until someone actually builds them out.
+**Harwick Sundries — deliberately mechanics-free.** The Tuning Fork Sword, the Desire Compass, the Guard's Boots, and the Ticking Box (`places/vultures-nest.md`) are mystery objects on Dess Harwick's counter, built to be developed later if the party returns. Not part of this inventory — don't treat them as priced or mechanical until someone actually builds them out.
 
 ---
 
@@ -136,7 +136,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ## The Silent Choir
 
-*Full entries: `items/the-silent-choir-items.md`. Source: `locations/the-silent-choir.md`, held by Fermata (`bestiary/fermata.md`). Neither item is for sale.*
+*Full entries: `items/the-silent-choir-items.md`. Source: `places/the-silent-choir.md`, held by Fermata (`bestiary/fermata.md`). Neither item is for sale.*
 
 - **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold. Already loose in the world; this is its origin, not a standing offer to find a second.
 - **The Silent Ring** *(Artifact)* — once per combat, name an enemy: no ally "Target ally" effect may reach them until the end of their next turn. Won, not bought.
@@ -145,7 +145,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ## Underground Bazaar — no items, by design
 
-The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`locations/capital/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
+The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`places/capital/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
 
 There is no `items/underground-bazaar-items.md` and none is coming. Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
 

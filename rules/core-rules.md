@@ -177,7 +177,7 @@ See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, a
 
 ## Advancement
 
-**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1). See `locations/island-in-a-ship.md`.  
+**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1). See `places/island-in-a-ship.md`.  
 **Stat increases:** Rare. After pivotal character development. GM's call.  
 **Deck changes:** Cards can be added, removed, or forced in as curses/status.
 

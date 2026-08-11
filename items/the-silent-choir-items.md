@@ -1,6 +1,6 @@
 # The Silent Choir — Items
 
-*Full location: `locations/the-silent-choir.md`. Both items below trace back to the same room; neither is for sale.*
+*Full location: `places/the-silent-choir.md`. Both items below trace back to the same room; neither is for sale.*
 
 ---
 
@@ -26,7 +26,7 @@ Effect: Once per combat, name an enemy. Until the end of their next turn, no all
 
 ## Related Documents
 
-- `locations/the-silent-choir.md` — where both of these are from
+- `places/the-silent-choir.md` — where both of these are from
 - `bestiary/fermata.md` — the guardian, and how the Ring is actually won
 - `rules/equipment.md` — Artifacts, and the Silent Blade's Tier 3 budget
 - `items/fog-basin-items.md` — Fog Goggles, the precedent for leaving an Artifact's Seat alignment open

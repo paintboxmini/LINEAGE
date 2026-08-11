@@ -50,6 +50,6 @@ A clean catch (no PECK ever played, nothing else in the fight) yields the whole 
 
 ## Related Documents
 
-- `locations/capital/gilded-tusk.md` — Senshi's Commission, the actual reason anyone's hunting these
+- `places/capital/gilded-tusk.md` — Senshi's Commission, the actual reason anyone's hunting these
 - `quests/turnroot-weald-adventure.md` — where it's found
 - `rules/card-glossary.md` — Evade, Quick

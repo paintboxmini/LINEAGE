@@ -14,7 +14,7 @@ You'll find open questions and quiet doubts throughout this repo, left in on pur
 | `bestiary/` | Creature stat blocks, abilities, loot, and card references |
 | `characters/` | Named NPC profiles, and player character decks (by character name) |
 | `items/` | Consumables and equipment |
-| `locations/` | Location overviews and settings |
+| `places/` | Place overviews and settings |
 | `quests/` | Adventure systems — pressure tracks, encounters, NPCs |
 | `factions/` | Faction documents |
 | `world/` | Geography, factions, and organizations |

@@ -10,7 +10,7 @@
 
 **Seats** are the positions. **Archons** are what something becomes at the top of the ladder. Everything on the ladder below that is **Resonant** — aligned with a Seat's domain without holding it.
 
-A Seat exists whether or not anyone occupies it. A Resonant Person is a living being aligned with a Seat's domain; a Resonant Item is an object aligned the same way; a Resonant Location is a place aligned the same way again. An Archon is a Resonant Person (or, by its own separate path, a Resonant Item) who reached the last stage — the two never merge into one ladder, but neither stops short of the same summit.
+A Seat exists whether or not anyone occupies it. A Resonant Person is a living being aligned with a Seat's domain; a Resonant Item is an object aligned the same way; a Resonant Place is a place aligned the same way again. An Archon is a Resonant Person (or, by its own separate path, a Resonant Item) who reached the last stage — the two never merge into one ladder, but neither stops short of the same summit.
 
 Seats exist because the Three Cuts do (`mythology/seats.md`, Seats and the Cuts). Where a Cut thins, every Seat thins with it.
 
@@ -24,7 +24,7 @@ Seats exist because the Three Cuts do (`mythology/seats.md`, Seats and the Cuts)
 | **Archons** | `mythology/archons.md` | What an Archon is, what it costs, fading, and why Stage III and Archonhood are the same thing |
 | **Resonant People** | `mythology/resonant-people.md` | What a Resonant Person is, the three Degrees of Alignment, Failed Seat-Takers, and Known Resonant People |
 | **Resonant Items** | `mythology/resonant-items.md` | Intentional vs. Accumulated Resonance, sentience and choosing a wielder, and expression rather than ownership |
-| **Resonant Locations** | `mythology/resonant-locations.md` | How a place becomes Resonant, and the two Known Resonant Locations |
+| **Resonant Places** | `mythology/resonant-places.md` | How a place becomes Resonant, and the two Known Resonant Places |
 
 ---
 

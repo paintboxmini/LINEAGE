@@ -45,4 +45,4 @@ The pulse sound from the towers is regular. Its absence is the tell. If the towe
 
 ## Culinary Note
 
-See `locations/capital/gilded-tusk.md` — Elder Tower Aged Jerky. Preserved tube protein. Flavor unlike anything with a known taxonomy. Bring your own cleric if worried. Senshi is not worried.
+See `places/capital/gilded-tusk.md` — Elder Tower Aged Jerky. Preserved tube protein. Flavor unlike anything with a known taxonomy. Bring your own cleric if worried. Senshi is not worried.

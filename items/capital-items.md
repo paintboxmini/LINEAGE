@@ -1,6 +1,6 @@
 # Capital of Eclipseria — Items & Loot
 
-Items sold in the capital. For location context, see `locations/capital/capital.md`.
+Items sold in the capital. For location context, see `places/capital/capital.md`.
 
 ---
 
@@ -202,6 +202,6 @@ Second-hand goods and minor curios. Everything slightly used.
 
 ## Related Documents
 
-- `locations/capital/capital.md` — the Marketplace, the Temple District
+- `places/capital/capital.md` — the Marketplace, the Temple District
 - `rules/equipment.md` — the tier system these prices are built against
 - `rules/items.md` — full catalog, cross-referenced by source

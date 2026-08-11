@@ -1,6 +1,6 @@
 # Fog Basin — Items
 
-Items native to the Fog Basin outside Eclipseria. Primary source: Pell. For location context, see `locations/fog-basin.md`.
+Items native to the Fog Basin outside Eclipseria. Primary source: Pell. For location context, see `places/fog-basin.md`.
 
 ---
 

@@ -29,7 +29,7 @@ A resonant place carries the same boundary at its own scale — not a state it d
 
 Distance isn't a hard ceiling — it's tension a story can cross. When it is, that's not a rules violation; it's the story doing something that matters. Don't spend it cheap: a Distance a GM resolves in one session was never real weight, just a delayed reveal.
 
-See `rules/people.md` and `rules/locations.md` for Distance alongside Name and Price, applied per subject.
+See `rules/people.md` and `rules/places.md` for Distance alongside Name and Price, applied per subject.
 
 ---
 

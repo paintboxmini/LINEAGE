@@ -147,7 +147,7 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
+Advancement is the Oracle ritual, run by each player at every session's end (`places/island-in-a-ship.md`):
 
 1. **Name** — the Oracle asks one question. The player answers.
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  

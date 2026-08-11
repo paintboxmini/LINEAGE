@@ -60,4 +60,4 @@ Primarily a discovery, not an encounter — the answer to `quests/the-larder-fen
 
 - `quests/the-larder-fence.md` — where it's most likely to be found, and dead
 - `bestiary/tollbird.md` — the creature whose larder it ends up in, and why that isn't a hunt
-- `locations/turnroot-weald.md` — the wider sky it's native to, listed under Flora & Fauna
+- `places/turnroot-weald.md` — the wider sky it's native to, listed under Flora & Fauna
