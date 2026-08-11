@@ -66,17 +66,6 @@ Several cuts were driven explicitly by the eligibility bar rather than by raw st
 
 Previously cut cards could return when the fixed composition demanded them. That was not treated as a reversal of their earlier evaluation: the composition constraint had changed what problem they were solving.
 
-## Local corrections during construction
-
-Several individual card decisions exposed useful rules about pool construction:
-
-- GORE's range/condition interaction revealed that a conditional bonus can become unconditional when its condition is guaranteed by the card's own range. The card's correction changed the pool's Red Melee count, requiring a replacement.
-- HEAVE AND HAUL was retained during coverage work because Green needed a Quick source, then rejected as too strong for a starter pool because it combined forced movement with team-wide free Quick. EDDY (later renamed SWAY) preserved the tactical niche at starter scale.
-- REPEL was replaced by PUSH when it became clear that its two sides repeated the same unconditional all-enemies movement effect without differentiation.
-- Wording errors such as "Target gains X" were corrected to identify the RPS opponent as the actual defender/attacker target; the simulator had already been resolving the intended relationship.
-
-These were not isolated balance tweaks. They reinforced the same larger principle: **the Oracle pool should teach the system's vocabulary without introducing exceptional rules that obscure the vocabulary itself.**
-
 ## Why the 63-card list was retired
 
 The 63-card composition was a completed selection exercise, not the final authored Oracle.
