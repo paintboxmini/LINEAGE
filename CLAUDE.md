@@ -1,8 +1,5 @@
 # LINEAGE — Claude Context
 
-## WHAT I NEED TO KNOW
-
-```text
 WHAT I NEED TO KNOW
 ├── identity / scope
 ├── repo orientation
@@ -11,7 +8,6 @@ WHAT I NEED TO KNOW
 ├── authority / canon gate
 ├── workflow
 └── minimal mechanical preload
-```
 
 This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRPG system. Content here is written for a DM and their table, not for publication. Tone is direct, evocative, and mechanical — no purple prose, no padding.
 
@@ -118,22 +114,6 @@ This section is an **agent working-memory preload**, not a second source of trut
 - Combat positions: Frontline / Backline
 - Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
 
-## Active Design Reasoning — Design Principles
-
-These are living design principles: standards for making and evaluating Tales Untold content. They are part of Claude's active reasoning model, not a historical log. Rule Definitions say what something is mechanically; these principles say what makes content well-made. Exemplars remain separate because they demonstrate these principles concretely.
-
-- **Mechanics exist to reflect the fantasy.** A resolution rule that produces a mechanic without a felt truth behind it is broken, no matter how clean the math is. This is the standard every new mechanic gets checked against.
-- **A creature's deck is a collection of its behaviors.** The deck doesn't just enable what a creature can do — card by card, it should *be* what the creature does.
-- **Ecology drives mechanics.** A creature's environment and biology generate its rules. The rules aren't picked first with fiction painted on after.
-- **Encounters teach through interaction, not explanation.** A lesson lands because the player did something and felt the consequence — not because a GM explained the rule beforehand.
-- **Fiction and mechanics reinforce one another.** Neither stands alone: a mechanic with no fictional reason is arbitrary; fiction with no mechanical expression is decoration.
-- **Local rules emerge from the environment, not arbitrary exception.** When a place needs a special rule, the rule should read as a discovered property of that place, not a bolt-on carve-out from the general system.
-- **Difficulty should be precise and computable, not a vague label.** CTR is the current, incomplete expression of this principle, not an adequate measurement yet. Do not mistake the current framework for the principle it is trying to express.
-- **A mechanic without impact doesn't matter. Meaning without mechanics doesn't either.** Both halves are load-bearing: a mechanic that changes nothing about play is decoration, and a piece of fiction the system can't touch mechanically isn't really in the game, just described near it.
-- **Standard fights, where the players hold a real advantage, should resolve in about 3 turns per combatant.** The validated 5–6 turns per combatant case represents a fight without that player-side advantage and is a useful boss-tier comparison. Measure future tests against both numbers rather than treating either as a universal target.
-- **Body's advantage is raw combat power.** Body has higher raw damage and contributes more strongly to maximum HP. Its common melee range and greater frontline vulnerability are constraints on that power, not reasons to remove the raw-stat advantage. This adds fidelity to the original color logic rather than replacing it: colors should retain distinct strengths and tradeoffs.
-- **A build that ignores one of the three combat pillars — RPS, Initiative, or Position — takes on real, legible risk.** That is fine when intentional, not accidental. Content that cannot interact with any pillar is probably inert; a build that deliberately gives one up should have a recognizable reason or compensating strength.
-
 ## Name, Price, and Distance
 
 These are the three Cuts applied across people, places, and things. They are one framework, not three isolated writing prompts: **Name** establishes identity and distinction, **Price** establishes the meaningful cost of acting or expressing that identity, and **Distance** defines the relationships and boundaries between things — what is unreachable, what is close, and what distinctions can eventually cease to hold.
@@ -201,7 +181,7 @@ Distance is not merely a hard ceiling. A story can cross a Distance or collapse 
 ## Agent Workflow
 
 1. **Orient** — Read `memory.md` and `unresolved-concerns.md` (the scannable index of open debt — flagged issues and deferred decisions; add a line when flagging one, delete it when resolved), then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
-2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone, restored 2026-07-23), with the Design Principles in this file and `agent-tools/exemplars.md` as the standard both measure against. The old generator layer stays archived in `archives/` (see Translation Principle, below, for why).
+2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone, restored 2026-07-23), with the Design Principles in `agent-tools/design-principles.md` and the current exemplar content as the standards both measure against. The old generator layer stays archived in `archives/` (see Translation Principle, below, for why).
    - **Building a new bestiary entry's deck:** before drafting cards, scan `bestiary/` for creatures whose cards already portray the same behavior (freeze-and-flee, reposition-and-flee, a particular debuff, etc.). Not a ban on reuse — a behavior can legitimately belong to more than one creature — but check first so a repeat is a deliberate choice, not an accident caught later by `red-team.md`'s Evolution check (mutation vs. duplicate) or missed entirely.
 3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Cover:
    - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
@@ -230,9 +210,9 @@ Before asking *who may change this* (the Canon Gate, below), know *what kind of 
 
 1. **Rule Definitions** — vocabulary. What something *is*, mechanically and precisely. Keyword texts (`rules/card-glossary.md`), formulas (`rules/core-rules.md`), procedures (`rules/combat.md`).
 2. **Invariants** (`rules/invariants.md`) — narrow, and specific to the combat simulator: a mathematical or computational fact that must hold inside the engine regardless of how a human visualizes the same thing at the table (e.g., total card count is conserved across a combatant's deck, hand, discard, and exile no matter how a human pictures the shuffle). Not a design standard — a computational one.
-3. **Design Principles** and **Exemplars** — living doctrine. Design Principles are embedded above in this file as active reasoning; Exemplars remain in `agent-tools/exemplars.md` as concrete demonstrations. What something *is* mechanically stays in Rule Definitions; what makes it *well-made* lives in the Design Principles above.
+3. **Design Principles** and **Exemplars** — living doctrine. Design Principles live in `agent-tools/design-principles.md`; concrete exemplars are identified in the content itself or in relevant archives. What something *is* mechanically stays in Rule Definitions; what makes it *well-made* lives in Design Principles.
 
-They blur because a real piece of content usually touches more than one at once — that's expected. The bug is a *file* absorbing another layer's job rather than staying narrow and pointing outward. Rule-definition bookkeeping belongs in Rule Definitions; computational invariants belong in `rules/invariants.md`; design-craft principles belong in the Design Principles above.
+They blur because a real piece of content usually touches more than one at once — that's expected. The bug is a *file* absorbing another layer's job rather than staying narrow and pointing outward. Rule-definition bookkeeping belongs in Rule Definitions; computational invariants belong in `rules/invariants.md`; design-craft principles belong in `agent-tools/design-principles.md`.
 
 ## Translation Principle
 
