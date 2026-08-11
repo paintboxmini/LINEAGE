@@ -4,11 +4,7 @@
 
 Memory preserves concise historical context for major decisions when that context materially improves future reasoning. A memory entry records the problem, the decisive reasoning or failed alternatives that explain the decision, the resulting principle/rule, and only the minimum provenance necessary to understand why it matters. It does not preserve complete deliberations, chronological work logs, implementation details, or every rejected idea. Those belong in archives.
 
-**compression test:** If removing a detail would not make a future design decision materially harder to understand or prevent a known mistake, remove it from memory.
-
 Memory is not a transcript of how we thought. It is the smallest durable explanation of why the current design is the way it is.
-
-**Timestamps, starting now (2026-07-17, Drew's request):** new entries lead with a real timestamp in Drew's local time — `TZ='America/Chicago' date` (Central, DST-aware — CDT or CST as the calendar actually has it), not a guess. Prospective only; existing entries above this line stay exactly as written, no retroactive stamping.
 
 ## Branch map
 
@@ -49,7 +45,7 @@ Possible future connections noticed while doing other work, that don't require a
 **ARCHITECTURAL NORTH STAR — typed modifiers, Step 3.** Step 2 shipped 2026-08-05/06 (typed modifiers with lifetimes for `axiom_ban`, `cannot_defend`, `staggered`, plus the AXIOM attacker-side gap closed same week — full reasoning archived, `archives/key-design-decisions.md`). Step 3 — the full policy stack — remains explicitly deferred, not abandoned: only worth building once a modifier-as-special-case has become genuinely painful. This is the only live pointer to that sequencing call left after the 2026-08-11 restructure moved Step 2's reasoning trail to archives.
 
 **B thread — Quartermaster Voss**
-Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the FourthEye thread. Don't develop until party pulls on it.
+Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipseria South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the FourthEye thread. Don't develop until party pulls on it.
 
 **FourthEye pipeline**
 Drug spreading through Eclipseria's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. **The Cellar Custodians are the last link before it reaches the Bazaar** (Drew, 2026-08-05) — the deep tunnels they patrol are the same ones the drug has to move through to reach the Bazaar's hidden pocket. Who's actually dirty and how far up it goes stays unestablished, same as the Nest-side operator. See `places/vultures-nest.md` (Masaharu, Rumors), `places/capital/underground-bazaar.md` (Giblets), `factions/the-cellar-custodians.md` (GM Secret).
