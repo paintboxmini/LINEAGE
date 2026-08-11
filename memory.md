@@ -4,15 +4,13 @@
 
 **What doesn't belong here:** keyword definitions (see `rules/card-glossary.md`), workflow rules (see `CLAUDE.md`), location summaries (see `places/`). If it has a canonical home elsewhere, it goes there.
 
-**Attribution — log actual provenance, not just whose words closed the loop.** A "Drew's call" entry that only quotes his final message, when the caution or the framing of the choice originated from me, misattributes — even when the quote itself is real and accurate. If I raised a concern, proposed the options, or supplied the reasoning, the entry says so; his decision is which option he picked, not the origin of the idea being cautioned about. (Confirmed as a real, recurring failure mode 2026-07-23, DOUBLE DOWN — see Active Reasoning. Checking a quote's accuracy isn't enough; check what came before it.) This file is not a record of "what Drew said" — it's mine to write, including my own reasoning, disagreements, and observations, not only his input laundered into decisions.
-
 **Timestamps, starting now (2026-07-17, Drew's request):** new entries lead with a real timestamp in Drew's local time — `TZ='America/Chicago' date` (Central, DST-aware — CDT or CST as the calendar actually has it), not a guess. Prospective only; existing entries above this line stay exactly as written, no retroactive stamping.
 
 ## Branch map
 
 - `Main` — canon. Humans merge to it.
 - `claude/general-chat-vwvr1` — Claude's working branch (this log's primary author).
-- `claude/crystal-project-chat-76gzcn` — **Codex's workspace.** Provisioned with the full repo state via PR #25 (deliberate — not a mis-based merge). Do not delete or repurpose. Codex's availability is limited by plan tier and Drew is not upgrading it — don't design workflows that depend on Codex being responsive.
+- `claude/crystal-project-chat-76gzcn` 
 
 ## Recently shipped (post-review queue)
 
