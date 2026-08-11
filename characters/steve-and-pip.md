@@ -16,13 +16,13 @@ His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-na
 
 ## Pip
 
-**Clean separation, on purpose:** this happens visibly after Kaine's own arc is over, not overlapping it. No Current pressure during the bath itself — it's the ordinary one-time rite of passage, nothing else, and nobody from the Current is part of making it happen. Steve finally goes through with it: one bath, once, normal congregation custom (`factions/people-of-promise.md`), unconnected to Kaine or the Current in any way at the moment it happens. This is where it goes wrong, and it has nothing to do with him ever having been courted by Kaine. Formed from fragments of Steve's consciousness during that bathing — specifically because the pulleys got stuck.
+**Clean separation, on purpose:** this happens visibly after Kaine's arc is over — no Current pressure, no connection to him at all, at the moment it happens. Steve finally goes through with the ordinary rite of passage: one bath, normal congregation custom (`factions/people-of-promise.md`). This is where it goes wrong, and it has nothing to do with him ever having been courted by Kaine. Pip formed from fragments of Steve's consciousness during that bathing.
 
 Steve was lowered into the Unheld Ocean for his first bathing. Standard procedure. Then the pulleys seized. He was down there much longer than anyone intended, longer than anyone should be, longer than doctrine accounts for. When he came back up, Pip came with him.
 
 A bubble dragon. Small, iridescent, made of something that's already halfway gone. Big rainbow eyes. Wings like soap film. Orbits Steve constantly. Has been slowly popping since the moment he existed — small pieces of him disappearing at irregular intervals. He will be entirely gone within a week.
 
-Nobody chose this. The winch just failed.
+Nobody chose this.
 
 **What Pip does:** people flock to Steve. Not to Pip — they may not even fully register Pip is there. But wherever Steve goes, people find themselves wanting to be near him, to listen to him, to follow. The pull is warm and sourceless. Steve has no idea what to do with this.
 

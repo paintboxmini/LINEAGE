@@ -1,6 +1,6 @@
 # Mortis
 
-*Bartender, Underground Tavern. See `locations/capital/underground-tavern.md`.*
+*Bartender, Underground Tavern. See `places/capital/underground-tavern.md`.*
 
 ---
 

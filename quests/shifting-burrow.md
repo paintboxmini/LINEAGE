@@ -113,4 +113,4 @@ Running both entrances does not pay twice.
 - `quests/hollow-below-briarwatch.md` — the descent
 - `quests/settling-stones.md` — the other mouth of the same loop
 - `bestiary/borrower.md` — deeper Borrower behavior differs from surface Sentries
-- `locations/briarwatch.md` — the Western Property context
+- `places/briarwatch.md` — the Western Property context

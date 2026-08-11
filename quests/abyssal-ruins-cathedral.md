@@ -1,6 +1,6 @@
 # The Cathedral — Abyssal Ruins
 
-*Encounter location within the Abyssal Ruins. For ruins overview, see `locations/abyssal-ruins.md`.*
+*Encounter location within the Abyssal Ruins. For ruins overview, see `places/abyssal-ruins.md`.*
 
 ---
 

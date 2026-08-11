@@ -95,4 +95,4 @@ They're not afraid of him. They're in transaction with him. Pell leaves offering
 
 They are apex negotiators of the basin. They understand territory, offerings, and the patterns of travelers. Pell is the only human who learned the etiquette.
 
-See `locations/fog-basin.md`.
+See `places/fog-basin.md`.

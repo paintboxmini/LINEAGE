@@ -22,11 +22,11 @@ What they actually do is narrower, and it never finishes: **they walk the paid-f
 
 ## Structure
 
-Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`locations/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
+Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`places/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
 
-**The Glasslight chapter itself blurs that line more than the charter admits.** Staffed out of the same civic tradition, its members turn out light maps — Soft Edge surveys, city-light studies — alongside the actual route work, sold and displayed at the chapter's own gallery (`locations/glasslight-reach.md`, The Gallery). Elsewhere in the kingdom, a chapter is roads and nothing else. Here, it's both — a regional specialty, not a rewrite of what the Guild is chartered to do.
+**The Glasslight chapter itself blurs that line more than the charter admits.** Staffed out of the same civic tradition, its members turn out light maps — Soft Edge surveys, city-light studies — alongside the actual route work, sold and displayed at the chapter's own gallery (`places/glasslight-reach.md`, The Gallery). Elsewhere in the kingdom, a chapter is roads and nothing else. Here, it's both — a regional specialty, not a rewrite of what the Guild is chartered to do.
 
-**Not to be confused with "the Cartographer"** (`locations/capital/underground-bazaar.md`, Kess's grandmother) — an individual, not an institution, who trades in maps that show a place *for* the person looking at it, paid for in secrets rather than coin. Different register entirely. The Guild's maps are the same for everyone and are only ever trying to be accurate, not personal.
+**Not to be confused with "the Cartographer"** (`places/capital/underground-bazaar.md`, Kess's grandmother) — an individual, not an institution, who trades in maps that show a place *for* the person looking at it, paid for in secrets rather than coin. Different register entirely. The Guild's maps are the same for everyone and are only ever trying to be accurate, not personal.
 
 ## Relationship to the Regency
 
@@ -39,8 +39,8 @@ Chartered, not secret — the opposite posture from the Masons (`factions/the-ma
 ## Related Documents
 
 - `world/the-in-between.md` — Havens, the rule the Guild's whole purpose runs on
-- `locations/glasslight-reach.md` — headquarters, and the light-cartographers the Guild is related to but distinct from
-- `locations/capital/underground-bazaar.md` — the Cartographer, an individual, not this institution
+- `places/glasslight-reach.md` — headquarters, and the light-cartographers the Guild is related to but distinct from
+- `places/capital/underground-bazaar.md` — the Cartographer, an individual, not this institution
 - `world/geography-overview.md` — the roads themselves
 - `factions/the-masons.md` — the other threshold-tending institution, run the opposite way
 - `world/the-regency.md` — Lord Percival, whose council seat this is

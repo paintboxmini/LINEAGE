@@ -1,6 +1,6 @@
 # Giblets
 
-*FourthEye stall, Underground Bazaar. See `locations/capital/underground-bazaar.md`.*
+*FourthEye stall, Underground Bazaar. See `places/capital/underground-bazaar.md`.*
 
 ---
 
@@ -25,5 +25,5 @@ Three Regency hard lines violated: too addictive, too destructive, council gets 
 - **Mortis** — former partner. The falling out was about resurrections. See `characters/mortis.md`.
 - **Kess** — the escort job that went wrong: he went into the mine below the Underground Bazaar with her, after her mother. Something happened down there that neither of them has ever asked the other about — one of Kess's tattoos reacts near his stall. Mortis pulled them both out and never told either of them what the other lost. See `characters/kess.md`.
 - **Vulture's Nest operator** — identity unknown. The forward-pointing thread.
-- **Masaharu** — at Vulture's Nest tracing the supply chain backward. See `locations/vultures-nest.md`.
+- **Masaharu** — at Vulture's Nest tracing the supply chain backward. See `places/vultures-nest.md`.
 - **FourthEye pipeline** — see `memory.md` for the full thread.

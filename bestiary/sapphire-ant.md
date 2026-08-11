@@ -22,4 +22,4 @@ Foragers collected individually with small glass tubes — a slow process requir
 
 ## Culinary Note
 
-See `locations/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.
+See `places/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.

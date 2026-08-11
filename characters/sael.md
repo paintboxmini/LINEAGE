@@ -19,4 +19,4 @@ Polite about it. Efficient about it. Never raises the subject unprompted — Gla
 ## Related Documents
 
 - `factions/people-of-promise.md` — the ritual bathing, what "fluid" and "hardened" mean
-- `locations/glasslight-reach.md` — the platforms, the town's own quiet register
+- `places/glasslight-reach.md` — the platforms, the town's own quiet register

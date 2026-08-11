@@ -55,7 +55,7 @@ She doesn't volunteer more of it than that. What the hunting actually looks like
 
 ## GM Secret — Not Player-Facing
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/echoes.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
+Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/resonant-people.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
 
 **She is fated to bear it.** How and when are deliberately unestablished — a fate, not a scene, the same shape as Greed and the Storm Seat (`characters/greed.md`). Nothing in her behaviour today should be played as a countdown, and she does not know.
 
@@ -75,7 +75,7 @@ Aege's return is not a rescue mission she will ask the party to join. It is why 
 
 **Washed Ashore** (`quests/washed-ashore.md`) — the campaign's current opening. Met at the Roadhouse, already mid-journey on her own; she isn't the party's guide here and doesn't escort them anywhere.
 
-**Vulture's Nest** (`locations/vultures-nest.md`, Notable Roles) — the former opening, retired but still fully playable if a party arrives this way. Found near the east gate, the party's actual guide for the leg from Vulture's Nest to Briarwatch. Tells them about her family at the Roadhouse, the first night out. Delivers them to Briarwatch, hands over a Carrion Feather (`items/briarwatch-items.md`), continues on to the Turnroot Weald alone.
+**Vulture's Nest** (`places/vultures-nest.md`, Notable Roles) — the former opening, retired but still fully playable if a party arrives this way. Found near the east gate, the party's actual guide for the leg from Vulture's Nest to Briarwatch. Tells them about her family at the Roadhouse, the first night out. Delivers them to Briarwatch, hands over a Carrion Feather (`items/briarwatch-items.md`), continues on to the Turnroot Weald alone.
 
 Same character both times. Not a coincidence, not a retcon — she goes home either way; the party just crosses her path at a different point in that same trip.
 
@@ -117,15 +117,15 @@ Her core picks lean the same direction — control and information over damage (
 
 ## Related Documents
 
-- `locations/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
+- `places/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
 - `quests/washed-ashore.md` — the alternate telling
-- `locations/roadhouse.md` — where she tells the party about her family
-- `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
+- `places/roadhouse.md` — where she tells the party about her family
+- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
 - `quests/turnroot-weald-adventure.md` — The Holdfast, her people's ground
 - `bestiary/rootstalker.md` — what's hunting them
 - `bestiary/root-heart.md` — Overgrowth, the real reason the Weald has turned
 - `factions/the-masons.md` — the Briarwatch line, the actual cause behind the Heart's cycle
 - `mythology/seats.md` — the Seat of Death
-- `mythology/echoes.md` — Echoes, the Degrees of Alignment, and her own entry under Known Echoes
+- `mythology/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/aege.md` — signature cards

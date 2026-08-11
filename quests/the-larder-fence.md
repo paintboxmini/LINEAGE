@@ -87,7 +87,7 @@ Briarwatch pays it in livestock terms, since that is what the Tollbird was costi
 
 - `bestiary/tollbird.md`, `cards/tollbird.md` — the creature; general appearance, behavior, and kit, transferable to any Tollbird encounter
 - `bestiary/skeinwing.md` — the rare, recommended contents of the larder
-- `locations/briarwatch.md`, `locations/turnroot-weald.md` — territory
+- `places/briarwatch.md`, `places/turnroot-weald.md` — territory
 - `factions/the-masons.md` — Known Works; the GM Secret above
 - `rules/combat.md` — Turn Structure, the Wait action
 - `rules/card-glossary.md` — Exile (Thorn Larder), Unpreventable (the barbs)

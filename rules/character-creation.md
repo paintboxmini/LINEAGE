@@ -52,7 +52,7 @@ Every character has **3 equipment slots:**
 
 Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.
 
-**Artifacts** are resonant objects closely aligned with a Seat's domain. They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
+**Artifacts** are resonant objects closely aligned with a Seat's domain (`mythology/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
 **Carried items** (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.
 
@@ -89,6 +89,8 @@ This one plays differently. You see a whole pile at once, which means you also s
 ---
 
 ### Declaring a Price
+
+*(Price, the Second Cut — `rules/people.md` for how Name, Price, and Distance apply to people generally.)*
 
 At the close of character creation the player speaks one binding statement beginning with *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*.
 
@@ -145,7 +147,7 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-Advancement is the Oracle ritual, run by each player at every session's end (`locations/island-in-a-ship.md`):
+Advancement is the Oracle ritual, run by each player at every session's end (`places/island-in-a-ship.md`):
 
 1. **Name** — the Oracle asks one question. The player answers.
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  

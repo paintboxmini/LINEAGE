@@ -78,7 +78,7 @@ If the party later stands in the Western Property's field and sees the sinkhole,
 
 ## GM Secret — Not Player-Facing
 
-The well went first. The limestone under Briarwatch is the same limestone under this claim (`locations/briarwatch.md`), and the Hollow's tunnel network runs wider than anyone above ground has established (`quests/hollow-below-briarwatch.md`). The family lost their water, then their ground, then the argument about staying. They left in order and they left slowly — which is why nothing is smashed and nothing was worth carrying.
+The well went first. The limestone under Briarwatch is the same limestone under this claim (`places/briarwatch.md`), and the Hollow's tunnel network runs wider than anyone above ground has established (`quests/hollow-below-briarwatch.md`). The family lost their water, then their ground, then the argument about staying. They left in order and they left slowly — which is why nothing is smashed and nothing was worth carrying.
 
 The fences were broken outward by the Fenwool, over one winter, unattended.
 
@@ -98,7 +98,7 @@ Nothing killed anyone here. The Duskwick came years later, to an empty house wit
 
 - `characters/iron.md` — the farmer this foreshadows, and the man tying the fresh bundles
 - `quests/hollow-below-briarwatch.md` — his sinkhole, and the tunnel network under both claims
-- `locations/briarwatch.md` — the region, the soft ground, the limestone
+- `places/briarwatch.md` — the region, the soft ground, the limestone
 - `bestiary/duskwick.md` — the large one, and Iron's companion of the same species
 - `bestiary/briarbundles.md` — what the four in the field are, and why nobody takes them down
 - `bestiary/fenwool.md` — the animal the doll was made from

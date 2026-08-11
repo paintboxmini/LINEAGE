@@ -1,6 +1,6 @@
 # Washed Ashore
 
-*The campaign's opening, replacing the old riverboat arrival into Vulture's Nest (`locations/vultures-nest.md` — no longer part of the plan; the sailor's story that used to open that scene is archived at `archives/sailors-story-2026-08-06.md`). The party arrives from the Unheld Ocean itself, on foot, already on the wrong side of a threshold nobody survives crossing. Drew's own framing, still being worked out in real time — treat the specifics below as a strong first pass, not a locked sequence.*
+*The campaign's opening, replacing the old riverboat arrival into Vulture's Nest (`places/vultures-nest.md` — no longer part of the plan; the sailor's story that used to open that scene is archived at `archives/sailors-story-2026-08-06.md`). The party arrives from the Unheld Ocean itself, on foot, already on the wrong side of a threshold nobody survives crossing. Drew's own framing, still being worked out in real time — treat the specifics below as a strong first pass, not a locked sequence.*
 
 ---
 
@@ -10,7 +10,7 @@ The party wakes washed ashore on the beach at the edge of the Unheld Ocean — c
 
 **How they crossed the Unheld without coming back changed goes deliberately unexplained.** Every existing account of a living thing crossing that threshold says it comes back marked — reversed handedness, eyes that reflect wrong colors, subtler things (`world/the-unheld.md`). This party doesn't show any of it. Don't resolve why. Let it sit exactly as unresolved as the Ferryman's own unexplained knowledge at the Coil, or what the Stone Voice already knows about the party before anyone's said a word — same register, same restraint.
 
-**How the world reacts, if this ever comes up.** People in Eclipseria who hear this — a whole party, crossing and coming back with nothing wrong that anyone can see — respond with one of two things: complete astonishment, or flat disbelief. Nothing in between. The only known precedent is Corvel, at Vulture's Nest (`locations/vultures-nest.md`) — one man, alone, fifteen years ago, who doesn't talk about it and clearly came back marked by *something*. A whole party, unmarked, is not a story anyone has a frame for yet.
+**How the world reacts, if this ever comes up.** People in Eclipseria who hear this — a whole party, crossing and coming back with nothing wrong that anyone can see — respond with one of two things: complete astonishment, or flat disbelief. Nothing in between. The only known precedent is Corvel, at Vulture's Nest (`places/vultures-nest.md`) — one man, alone, fifteen years ago, who doesn't talk about it and clearly came back marked by *something*. A whole party, unmarked, is not a story anyone has a frame for yet.
 
 ---
 
@@ -24,7 +24,7 @@ The party wakes washed ashore on the beach at the edge of the Unheld Ocean — c
 
 ## Session 0 — The First Night
 
-This is also the party's actual Session 0. Before the trail, before the Roadhouse — the first night on this beach is when the Island in a Ship finds them (`locations/island-in-a-ship.md`, Session 0 — First Visit), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
+This is also the party's actual Session 0. Before the trail, before the Roadhouse — the first night on this beach is when the Island in a Ship finds them (`places/island-in-a-ship.md`, Session 0 — First Visit), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
 
 ---
 
@@ -32,7 +32,7 @@ This is also the party's actual Session 0. Before the trail, before the Roadhous
 
 Open rolling fields north of the shoreline, broken up by rocky outcroppings — nothing dense enough to hide real danger, nothing so open the party feels exposed. A faint trail picks up a short walk inland and holds a roughly northward line.
 
-**The trail leads to the Roadhouse** (`locations/roadhouse.md`, coordinates (0, −7)) — the nearest real waypoint, and the first place with people in it. Following the trail is the obvious move and the correct one; nothing here punishes a party for doing the sensible thing.
+**The trail leads to the Roadhouse** (`places/roadhouse.md`, coordinates (0, −7)) — the nearest real waypoint, and the first place with people in it. Following the trail is the obvious move and the correct one; nothing here punishes a party for doing the sensible thing.
 
 ---
 
@@ -94,17 +94,17 @@ It idles before it engages (`bestiary/trisect.md`) — slow, visible from a real
 
 ## Meeting Aege
 
-Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`locations/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as always (`characters/aege.md`) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
+Not a mystical roadside encounter — an ordinary one. The party reaches the Roadhouse (`places/roadhouse.md`) at the end of their walk from the shoreline, and **Aege, the Carrion Guide** happens to be there too, for one night only. She's not stationed here and she's not waiting for them: she's traveling from Vulture's Nest to the Turnroot Weald on her own business, and the Roadhouse sits on her road same as it now sits on theirs. Same person, same voice as always (`characters/aege.md`) — watches feet, not eyes, doesn't waste words — just met somewhere ordinary this time, over a shared table, not out on an open trail.
 
 She clocks them fast — new to the road, nothing fixed to be yet — and says so, dry rather than cryptic:
 
 > *"New arrivals. Should earn your keep before the road decides to test you instead."*
 
-The party has nothing to eat with — no coin, nothing yet earned (`rules/character-creation.md`: no starting money). The Roadhouse bed is free, paid for by the Regency same as the roof over it (`locations/roadhouse.md`); the food is not. Aege puts food on the table before it becomes a problem, plain about it rather than making a show of it:
+The party has nothing to eat with — no coin, nothing yet earned (`rules/character-creation.md`: no starting money). The Roadhouse bed is free, paid for by the Regency same as the roof over it (`places/roadhouse.md`); the food is not. Aege puts food on the table before it becomes a problem, plain about it rather than making a show of it:
 
 > *"Eat. Road's longer on an empty stomach. You can owe the world something useful later."*
 
-From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`locations/briarwatch.md`, `quests/the-larder-fence.md`); her family's still in there, and they don't scare easily:
+From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`places/briarwatch.md`, `quests/the-larder-fence.md`); her family's still in there, and they don't scare easily:
 
 > *"My family's in the Turnroot. Past the watch and the fence, under the trees. They don't scare easy. They sent word the roots have gone restless — deep in, not at the edge. I'm going. Not sending anyone in my place."*
 
@@ -144,9 +144,9 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 ## Related Documents
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret
-- `locations/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
-- `locations/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
-- `locations/roadhouse.md` — where the trail leads
+- `places/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
+- `places/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
+- `places/roadhouse.md` — where the trail leads
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
 - `bestiary/flapjack-octopus.md` — the river crossing's creature
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
@@ -154,4 +154,4 @@ Normal Tier 1 rates (~40 gold per character per session, `rules/equipment.md`) b
 - `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid
-- `locations/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where Aege points them
+- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where Aege points them

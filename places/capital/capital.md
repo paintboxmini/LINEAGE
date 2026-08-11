@@ -47,7 +47,7 @@ A day pass is trivial, a week is comfortable for a party a couple of sessions in
 
 ## What Lies Beneath
 
-Three layers belong to the capital, stacked directly under it: **topside** — the temples, the Marketplace, the Gilded Tusk; **the Waterworks**, a citywide utility layer running under the entire capital, not just the mine shaft — the bazaar and tavern are a small, hidden pocket inside it, not a level of their own; and the Demon Court's domain below that, the capital's actual prison, run like a court in miniature and never once called a prison out loud. Below the Demon Court's tunnels, the mine stops behaving like a mine and the capital's jurisdiction stops meaning anything — that isn't the city anymore, whatever's administering it isn't the Regency. Full structure at `locations/capital/the-waterworks.md`, `locations/capital/the-wallows.md`.
+Three layers belong to the capital, stacked directly under it: **topside** — the temples, the Marketplace, the Gilded Tusk; **the Waterworks**, a citywide utility layer running under the entire capital, not just the mine shaft — the bazaar and tavern are a small, hidden pocket inside it, not a level of their own; and the Demon Court's domain below that, the capital's actual prison, run like a court in miniature and never once called a prison out loud. Below the Demon Court's tunnels, the mine stops behaving like a mine and the capital's jurisdiction stops meaning anything — that isn't the city anymore, whatever's administering it isn't the Regency. Full structure at `places/capital/the-waterworks.md`, `places/capital/the-wallows.md`.
 
 ---
 
@@ -72,9 +72,9 @@ A sprawling labyrinth of stalls and shops at the city's center. Goods from every
 Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
-- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `locations/the-coil.md` (The Nagamani). A slim, dismissive volume shelved nearby describes a tribe of healers somewhere south who supposedly draw suffering out of the sick and keep it themselves — the author calls the whole practice unverified superstition and spends more words mocking the claim than describing it. Whoever wrote it never saw the gift worked, and says so almost proudly.
+- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `places/the-coil.md` (The Nagamani). A slim, dismissive volume shelved nearby describes a tribe of healers somewhere south who supposedly draw suffering out of the sick and keep it themselves — the author calls the whole practice unverified superstition and spends more words mocking the claim than describing it. Whoever wrote it never saw the gift worked, and says so almost proudly.
 - Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
-- **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `locations/capital/underground-bazaar.md` and `locations/capital/underground-tavern.md`.
+- **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `places/capital/underground-bazaar.md` and `places/capital/underground-tavern.md`.
 
 **Vendors that matter for gear:**
 - **Nessa Coil — Crossroads Sundries.** Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Full stock: `items/capital-items.md`. Believes the markup is honesty, not greed — everyone pays for convenience one way or another, she just says the number out loud instead of hiding it in a smile. She carried goods herself once, out of a region that isn't the capital, and got paid what someone decided a fair price looked like for someone in her position. She has never once let a customer decide that for her since, and doesn't think of the two facts as connected.
@@ -97,7 +97,7 @@ Ordinary stall food, cloth, and tools beyond these five stay GM-improv. The name
 
 Late renewal adds 50% after 30 days, then the license is suspended. What the rules deliberately leave alone: the Underground Bazaar and everything beneath it, private deals inside privacy tents or back rooms, the Pig's debt system, and most of the actual smuggling — Cellar Custodians territory. See `factions/the-cellar-custodians.md`.
 
-The Regency ward protecting the marketplace is currently at risk. See `locations/abyssal-ruins.md` (Owl's Request) for context.
+The Regency ward protecting the marketplace is currently at risk. See `places/abyssal-ruins.md` (Owl's Request) for context.
 
 ---
 
@@ -111,7 +111,7 @@ Past the Marketplace's noise, closer to the Citadel, the chaos gives way to some
 
 **Weavers' Hall.** Narrower and taller, close-fitted stone, high thin windows that let in light but little sound. A single carved lintel shows a simplified loom. The upper rooms are ordered and quiet — bolt racks, pattern tables, soft-footed clerks handling surface textile and lighting contracts. The lower levels are restricted and colder. The building feels tightly held together, as if the stones were under the same tension as the work done within. Also Eveline's.
 
-**Adventurers' Hall.** Squat, square, plainly military — thick walls, narrow windows, a small drill yard at the side, a single reinforced door under a plain iron sign. A long contract board, a scarred registration counter, weapon racks kept locked. It reads like a barracks annex that was told to deal with civilians and never quite softened, because that's close to what it is: the public desk for the **freelancer branch of Lord Cedric's military**. A registered party is an irregular unit under the Bear's authority, not a member of some separate guild — contracts are security and reconnaissance work the city doesn't want on its permanent payroll, and discipline, blacklisting, and priority of work all flow from Cedric's office. Most parties, this one included, will meet the city through this counter before they meet anyone on the council directly. Full contract board: `locations/capital/adventurers-hall.md`.
+**Adventurers' Hall.** Squat, square, plainly military — thick walls, narrow windows, a small drill yard at the side, a single reinforced door under a plain iron sign. A long contract board, a scarred registration counter, weapon racks kept locked. It reads like a barracks annex that was told to deal with civilians and never quite softened, because that's close to what it is: the public desk for the **freelancer branch of Lord Cedric's military**. A registered party is an irregular unit under the Bear's authority, not a member of some separate guild — contracts are security and reconnaissance work the city doesn't want on its permanent payroll, and discipline, blacklisting, and priority of work all flow from Cedric's office. Most parties, this one included, will meet the city through this counter before they meet anyone on the council directly. Full contract board: `places/capital/adventurers-hall.md`.
 
 ---
 
@@ -134,7 +134,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
 
-**Temple of Knowledge** — the Library of Arcane Knowledge, one building under two names: scholars use the temple's title, everyone else just says the Library. The stacks run deeper than the visible building suggests, catalogued by a system nobody outside the order has fully learned. Sitrump the Scribe (`locations/capital/gilded-tusk.md`) draws his scrolls from here and explains that fact to anyone who'll listen. The Lost Lore notice on the Gilded Tusk's board is the Library's posting, not the Marketplace's. Brother Alden ran its resonant archive once; he left, and took the habit of trading knowledge for a real cost with him — the archive itself stayed behind, still the Library's (`items/capital-items.md`, Brother Alden).
+**Temple of Knowledge** — the Library of Arcane Knowledge, one building under two names: scholars use the temple's title, everyone else just says the Library. The stacks run deeper than the visible building suggests, catalogued by a system nobody outside the order has fully learned. Sitrump the Scribe (`places/capital/gilded-tusk.md`) draws his scrolls from here and explains that fact to anyone who'll listen. The Lost Lore notice on the Gilded Tusk's board is the Library's posting, not the Marketplace's. Brother Alden ran its resonant archive once; he left, and took the habit of trading knowledge for a real cost with him — the archive itself stayed behind, still the Library's (`items/capital-items.md`, Brother Alden).
 
 **Osric**, head archivist, believes an unrecorded fact is a fact that didn't happen — every acquisition gets catalogued, dated, cross-indexed, regardless of what it costs to hold or how dangerous it would be loose in the wrong hands. Years ago, something came through uncatalogued because he judged it too minor to bother with. It mattered later, to someone who needed the record and couldn't find it, and by then it was gone for good. He has never once made that call again. He'd say the discipline is diligence. It might be that he can no longer tell the difference between preserving knowledge and simply refusing to lose anything a second time.
 
@@ -189,17 +189,17 @@ Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The
 ## Related Documents
 
 - `world/the-regency.md` — The governing council and its members
-- `locations/capital/adventurers-hall.md` — The full contract board
+- `places/capital/adventurers-hall.md` — The full contract board
 - `items/capital-items.md` — Temple of the Forge and Marketplace mechanical stock
-- `locations/capital/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
-- `locations/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
-- `locations/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
-- `locations/capital/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
-- `locations/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, the Threshold, the Deep
+- `places/capital/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
+- `places/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
+- `places/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
+- `places/capital/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
+- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, the Threshold, the Deep
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy, the capital's prison in practice
 - `factions/the-cellar-custodians.md` — Who runs the Waterworks
 - `factions/the-weavers.md` — The secret guild sharing those tunnels
-- `locations/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
-- `locations/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
+- `places/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
+- `places/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
 - `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
-- `locations/the-coil.md` — the Nagamani legend, as it's known this far from the source
+- `places/the-coil.md` — the Nagamani legend, as it's known this far from the source

@@ -1,6 +1,6 @@
 # The Hollow Below Briarwatch
 
-A Tales Untold adventure module. For location context, see `locations/briarwatch.md`.
+A Tales Untold adventure module. For location context, see `places/briarwatch.md`.
 
 ---
 

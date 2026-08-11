@@ -86,14 +86,14 @@ Nothing is wrong here. That is not reassuring.
 
 Unheld Ocean shoreline (`quests/washed-ashore.md`) → **Roadhouse** (day 1) → Briarwatch (day 2). The party arrives on foot from the beach, not from Vulture's Nest — the Carrion Guide is here too, passing through on her own journey from Vulture's Nest to the Turnroot Weald, not stationed here waiting for anyone.
 
-**Former opening, retired:** the old riverboat start routed Vulture's Nest → Roadhouse → Briarwatch fork west → Briarwatch, with the Carrion Guide meeting the party at Vulture's Nest's east gate and a Soft Gate mechanic (`locations/vultures-nest.md`) choosing between a standard and a longer, Briar-Scratcher-marked route. Kept for reference — still fully playable if a party ever does arrive via Vulture's Nest — but no longer the default.
+**Former opening, retired:** the old riverboat start routed Vulture's Nest → Roadhouse → Briarwatch fork west → Briarwatch, with the Carrion Guide meeting the party at Vulture's Nest's east gate and a Soft Gate mechanic (`places/vultures-nest.md`) choosing between a standard and a longer, Briar-Scratcher-marked route. Kept for reference — still fully playable if a party ever does arrive via Vulture's Nest — but no longer the default.
 
 ---
 
 ## Related Documents
 
 - `quests/washed-ashore.md` — the campaign's opening; the party reaches the Roadhouse from here
-- `locations/vultures-nest.md` — the former opening's starting point, still a live location
-- `locations/briarwatch.md` — next stop
+- `places/vultures-nest.md` — the former opening's starting point, still a live location
+- `places/briarwatch.md` — next stop
 - `bestiary/briar-scratcher.md` — encountered on the road, in either opening
 - `quests/the-man-who-buys-wounds.md` — Weck, working this same road

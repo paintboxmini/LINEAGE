@@ -6,7 +6,7 @@ Consumables and equipment found in or around Briarwatch. Sources noted per item.
 
 **BARBED WRAP**
 *Consumable — Strips of wire-wrapped leather*
-*Source: Roadhouse barracks (see `locations/roadhouse.md`)*
+*Source: Roadhouse barracks (see `places/roadhouse.md`)*
 *Price: ~15 gold*
 Use (1): Gain Thorns 1 for the rest of the battle.
 

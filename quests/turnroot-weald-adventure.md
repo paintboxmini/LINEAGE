@@ -1,6 +1,6 @@
 # The Turnroot Weald — Adventure System
 
-A full campaign framework for running the Turnroot Weald. For location overview and world context, see `locations/turnroot-weald.md`.
+A full campaign framework for running the Turnroot Weald. For location overview and world context, see `places/turnroot-weald.md`.
 
 ---
 
@@ -512,7 +512,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
-| Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `locations/capital/gilded-tusk.md`. See `bestiary/kiwi-bird.md`. |
+| Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `places/capital/gilded-tusk.md`. See `bestiary/kiwi-bird.md`. |
 
 ---
 

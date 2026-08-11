@@ -19,5 +19,5 @@ Prolonged exposure is draining. The landscape seems to press unresolved things u
 - `bestiary/ashgrazer.md` — Ashgrazer Alpha and Packgrazer (Cindersink)
 - `cards/tithe-engine-ashfall.md` — Tithe Engine, Scorch Drone, and Exhaust status cards
 - `cards/ashgrazer-ashfall.md` — Ashgrazer Alpha and Packgrazer cards
-- `locations/abyssal-ruins.md` — what the Engine was aimed at, and was aimed at again
-- `locations/the-coil.md` — something that was near the Ruins the first time it fired, and survived
+- `places/abyssal-ruins.md` — what the Engine was aimed at, and was aimed at again
+- `places/the-coil.md` — something that was near the Ruins the first time it fired, and survived

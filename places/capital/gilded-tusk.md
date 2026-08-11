@@ -68,7 +68,7 @@ Always at the same corner table, surrounded by scrolls from the Library of Arcan
 
 > *"Lower your voice! Do you want the Pig to hear? He has ears in the walls, I tell you. Actual ears. I've seen the masonry twitch when Lady Eveline walks by..."*
 
-Hook: Sitrump found a scroll suggesting the late King Bradley didn't die in the North — see `locations/abyssal-ruins.md` (Ghostly Lead).
+Hook: Sitrump found a scroll suggesting the late King Bradley didn't die in the North — see `places/abyssal-ruins.md` (Ghostly Lead).
 
 ---
 
@@ -212,7 +212,7 @@ See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory a
 
 - **A Favor for the Fox:** Lady Elara's agents need guards to escort a quartz shipment from Glasslight Reach through the Marketplace. *Reward: a merchant's pass for one day.*
 - **Lost Lore:** The Library of Arcane Knowledge offers a reward for a stolen "whispering book" taken by a cutpurse. *Reward: access to the book's contents.*
-- **The Regent's Appetite:** A Citadel page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar, meant for Lord Oswald's own table. *Reward: 25 gp.* See `locations/capital/underground-bazaar.md`.
+- **The Regent's Appetite:** A Citadel page seeks a chef — or an adventurer — to source a rare spice sold only in the Underground Bazaar, meant for Lord Oswald's own table. *Reward: 25 gp.* See `places/capital/underground-bazaar.md`.
 
 ---
 

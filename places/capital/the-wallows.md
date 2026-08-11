@@ -3,7 +3,7 @@
 *The mine beneath Eclipseria. Built by the Boar above a bound Archon. The mine knows this, even if the workers don't.*
 
 For the Demon Court faction that governs the labor level, see `factions/demon-court.md`.
-For the bazaar above, see `locations/capital/underground-bazaar.md`.
+For the bazaar above, see `places/capital/underground-bazaar.md`.
 
 ---
 
@@ -19,7 +19,7 @@ Aurora is bound at the bottom of this mine. The Boar built his labor operation d
 
 | Layer | What it is |
 |-------|-----------|
-| **The Waterworks** | Citywide utility layer, not specific to the mine — runs beneath the entire capital. The Bazaar & Tavern is a small, hidden pocket inside it, not its own level. See `locations/capital/the-waterworks.md`, `locations/capital/underground-bazaar.md`, `locations/capital/underground-tavern.md`. |
+| **The Waterworks** | Citywide utility layer, not specific to the mine — runs beneath the entire capital. The Bazaar & Tavern is a small, hidden pocket inside it, not its own level. See `places/capital/the-waterworks.md`, `places/capital/underground-bazaar.md`, `places/capital/underground-tavern.md`. |
 | **Labor level** | The Demon Court's domain — the capital's prison in practice, though nobody official calls it that. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end, and a separate collection detail feeding the Weavers' grid. |
 | **The Threshold** | Where the warping starts, and where the capital's actual jurisdiction stops meaning anything. Sticky echoes. Slimes. The cave reaches. |
 | **The Deep** | Aurora. Not an encounter. Something else. |
@@ -91,9 +91,9 @@ Players who reach the deep will not find a fight. They will find the love of the
 ## Related Documents
 
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy
-- `locations/capital/the-waterworks.md` — the citywide layer above, hiding the bazaar and tavern
-- `locations/capital/underground-bazaar.md` — hidden within the Waterworks
-- `locations/capital/underground-tavern.md` — hidden within the Waterworks; transitional layer
+- `places/capital/the-waterworks.md` — the citywide layer above, hiding the bazaar and tavern
+- `places/capital/underground-bazaar.md` — hidden within the Waterworks
+- `places/capital/underground-tavern.md` — hidden within the Waterworks; transitional layer
 - `factions/the-weavers.md` — the collection detail on the labor level
 - `characters/kess.md` — the rescue attempt whose echo lives here
 - `mythology/seats.md` — Aurora, the Seat of Love/Binding

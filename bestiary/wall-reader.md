@@ -51,5 +51,5 @@ The Wall-Reader is a mirror, not a monster — its kit exists to make the Coil's
 
 ## Related Documents
 
-- `locations/the-coil.md` — the Wall-Reader's module, and the wall-following rule it shares with the party
+- `places/the-coil.md` — the Wall-Reader's module, and the wall-following rule it shares with the party
 - `cards/wall-reader.md` — signature cards

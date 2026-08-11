@@ -177,4 +177,4 @@ If the party has managed to make all three owe them something, that is worth mor
 - `characters/kaine.md`
 - `characters/steve-and-pip.md`
 - `items/lightning-loop.md`
-- `locations/glasslight-reach.md`
+- `places/glasslight-reach.md`

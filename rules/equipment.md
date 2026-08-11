@@ -49,7 +49,7 @@ This is a budget to design against, not a formula to solve — two tier-2 items 
 
 All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night's lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.
 
-The Gilded Tusk's menu (`locations/capital/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
+The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.
 
 ---
 
@@ -125,6 +125,24 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 ## Artifacts
 
 Artifacts don't run on the tier budget above — they're a different kind of object entirely. Per `rules/character-creation.md`: "resonant objects closely aligned with a Seat's domain... not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near." An Artifact's mechanics should read as an extension of a specific Seat's actual domain (`mythology/seats.md`), not a generic stat stick reskinned — design these bespoke, one at a time, the way a signature card set gets built for a specific creature rather than pulled from a shared budget table. No standard gold value for the same reason — an Artifact's worth is cosmological before it's economic, and pricing one at market undersells what it actually is.
+
+**Name comes first**, the same way it does for a person or a place (`rules/people.md`, `rules/places.md`) — giving the object a face instead of leaving it a generic instance of its type. "A sword" isn't Named. The Lightning Loop (`items/lightning-loop.md`) is. An Artifact earns its Name the way anything does: specificity, not a formula — what it is, exactly, and why it's this one and not another.
+
+**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`mythology/seats.md`, Binding and Holding) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
+
+**Price scales with magnitude.** A minor working costs less than a major one — heal a scrape versus heal a mortal wound, spark a candle versus level a wall. The relationship isn't a lookup table, but the direction always holds: the more reality an effect bends, the more it costs to bend it.
+
+**An Archon's will can lighten or deepen that cost** (`mythology/archons.md`, An Archon's Will Shapes Price) — acting in the grain of a seated Archon's nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.
+
+**The Price doesn't have to land entirely on whoever triggered it.** An effect can cost an ally something too, without that lessening what the actor themselves still pays — the consequence propagates through whoever the working actually touched, it doesn't get divided up and handed off.
+
+**Nobody chooses their own Price, and Resonance doesn't come with an instruction manual.** A wielder might know an item is dangerous from experience, tradition, or a scar that's still healing, without knowing the actual law behind it — two people can hold the same item with two different, incomplete understandings of what it costs. Skill and familiarity can shift *where or how* a Price lands, not whether it's paid or how much — that's the difference between understanding a law well enough to act inside it and having any authority over it at all.
+
+**Don't predefine every Artifact's Price up front.** Establish what the item does and what domain it draws on; let the actual cost emerge the first time a GM needs one, in a form that answers that specific use — then treat that as the pattern going forward, rather than inventing a generic tax nobody asked for. The Lightning Loop's Price (`items/lightning-loop.md`) is deliberately still open for exactly this reason.
+
+**Distance** applies too, though it isn't a system this section prices — see `agent-tools/design-principles.md`, Distance — What Can Never Be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
+
+See `mythology/resonant-items.md` for what makes an object Resonant in the first place — Intentional or Accumulated — and why a Resonant Item doesn't need its Seat Filled to work at all.
 
 ---
 

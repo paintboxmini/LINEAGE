@@ -82,7 +82,7 @@ The Soul Pass detects flatness; it doesn't fix it. When something comes back fla
 ## Reference Files
 
 - System tone: `CLAUDE.md`
-- Location examples: `locations/briarwatch.md`, `locations/vultures-nest.md`
+- Location examples: `places/briarwatch.md`, `places/vultures-nest.md`
 - Faction examples: `world/the-regency.md`
 - Mechanics: `rules/card-glossary.md`, `rules/combat.md`
 

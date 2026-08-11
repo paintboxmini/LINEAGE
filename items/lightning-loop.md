@@ -4,52 +4,40 @@
 
 ---
 
-A ring. Worn on the first finger of Kaine's right hand, just past the first knuckle. It clearly does not fit him. He does not acknowledge this.
+A ring. The Loop is small enough to conceal among other rings on Kaine's hand, or to wear on a chain as a necklace when he wants the source of his signs harder to identify. He does not present it as the source of anything he does.
 
-It does not carry the full range of the Storm Seat's power. It carries lightning — specifically and only lightning. And lightning is something you can point in a direction. It is not something you can fully control.
+The Loop grants Kaine limited control over lightning. The Loop's lightning can be expressed as energizing force through people and objects, not only as a direct electrical strike. The same underlying energy can produce different mechanical manifestations depending on what it is expressed through. The exact limits of this capability are not established here.
 
 ---
 
 ## What Kaine Does With It
 
-**The water trick:**
-He dips his finger into a vessel of ordinary water. The ring reacts — the water fizzes and pops, a visible sign that something is happening. He claims to imbue it with the Unheld Ocean's essence in a form safe to drink. He distributes it to his followers.
+The Loop is concealed from the people who watch Kaine perform his signs and wonders. Kaine knows exactly what is producing them. He tells the Final Current that the wonders are the result of what repeated bathing in the Unheld has unlocked in him.
 
-It heals 1 HP. The effect is real. That is enough.
+The first demonstrations are deliberately ordinary in appearance:
 
-The performance around it is everything: the stillness before the finger goes in, the fizzling reaction, the certainty in his voice when he describes what the Unheld is giving them. He has done this many times. He is very good at it.
+- He touches ordinary water and the water becomes restorative. The Loop's energy is expressed through the water rather than as a visible lightning strike.
+- He touches a pile of wood and it ignites. A spark is enough to start the fire.
+- He touches a tired, depressed person and leaves them energized.
+- On one occasion he uses raw lightning at range, striking a metal pole.
 
-**The confrontation:**
-He raises his finger. A hostile lightning storm responds.
+These are different expressions of the same underlying capability. The Loop's energy can be transferred through a target and expressed mechanically according to the target and effect: restorative water, renewed vitality, ignition, or direct lightning. A future expression such as granting Quick is a natural extension of the established capability rather than a new metaphysical rule.
 
-He can point it. He cannot stop it on a timeline of his choosing. He cannot guarantee it won't arc sideways. His followers in the room are not safe. He knows this. In a confrontation, he has decided that is acceptable.
+**What it costs him stays open on purpose** (`rules/equipment.md`, Artifacts — the Price). Not a flat HP tax — whatever reality takes for lightning specifically, expressed through whatever the Loop was just asked to do. The shape is already implied by what he's used it for: restorative water could cost him equivalent vitality — he heals, he pays. Igniting wood could burn him on the way to burning what he touched. Lightning at range could arc somewhere he didn't aim it — a devotee, not the pole. None of that has necessarily happened yet. Invent the actual cost the first time a GM needs one, in a form that answers what was just asked of the ring — not a number, a consequence.
 
----
+The miracles are real. The deception is their provenance. The people watching are given Kaine's interpretation of what they are seeing: the bath unlocked him. The Loop remains hidden inside the story.
 
-## The Instability
-
-The loop in the name is the problem. Lightning that cannot be fully resolved keeps cycling. Kaine has learned to work with this — to point and move, to use the chaos as cover, to end situations before the feedback becomes a liability.
-
-He has not always succeeded at this. He does not discuss the times he has not.
-
----
-
-## What the Ring Knows
-
-It does not fit his finger. It was not made for him — or was not made for a person at all. Whether the Storm Seat is aware of how it's being used is a question nobody in the story has thought to ask yet.
+The exact origin of the Loop is unknown and intentionally open.
 
 ---
 
 ## After Kaine
 
-If the party takes the ring: they hold something Storm Seat-aligned that cannot be fully controlled. It is not safe to wear. It is not obviously safe to destroy. It is not clear who it belongs to.
-
-That is the problem the adventure leaves behind.
+If the party takes the ring, they hold something Storm Seat-aligned that grants limited control over lightning and can express that energy through people and objects in different ways. What the Loop ultimately is, where it came from, and what its connection to the Storm Seat means remain unanswered.
 
 ---
 
 ## Open
 
 - Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? *(No. `mythology/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)*
-- What does the ring do to water beyond fizzing — are there other minor effects Kaine hasn't explored or is hiding?
+- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`mythology/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)

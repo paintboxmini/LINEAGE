@@ -10,7 +10,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 339 card blocks in `cards/*.md` — 336 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, 2026-08-07 for Fermata's three, 2026-08-08 for the Flower Snake's six, and again the same day for the Kiwi Bird's four). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the keywords each new batch of cards demonstrably touches (Fermata: Locked, Sealed, Vulnerable, Resist; Flower Snake: Evade, Weak, Vulnerable, Resist, Deadly, Rooted, Ward; Kiwi Bird: Evade, Resist).*
+*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 340 card blocks in `cards/*.md` — 337 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, 2026-08-07 for Fermata's three, 2026-08-08 for the Flower Snake's six, the same day for the Kiwi Bird's four, and 2026-08-10 for STILL POINT). Counted mechanically: a keyword named in an Effect, Defensive Bonus, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the keywords each new batch of cards demonstrably touches (Fermata: Locked, Sealed, Vulnerable, Resist; Flower Snake: Evade, Weak, Vulnerable, Resist, Deadly, Rooted, Ward; Kiwi Bird: Evade, Resist; STILL POINT: Anchored, Scry, Ward).*
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
@@ -38,7 +38,7 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 **(19) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(12) Anchored**
+**(13) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
 **(19) Blind**
@@ -112,7 +112,7 @@ Move a target enemy from Backline to Frontline. Cannot target allies. The user m
 **(5) Quick**
 You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it. Gained on your own turn, it's usable that same turn and fades when the turn ends. Gained off-turn (a Defensive Bonus, typically), it's held until the end of your next turn. Fades either way whether spent or not — it never carries indefinitely.
 
-**(29) Scry X**
+**(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **(17) Staggered**
@@ -126,7 +126,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **(4) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
-**(14) Ward**
+**(15) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
 **(3) Immunity**

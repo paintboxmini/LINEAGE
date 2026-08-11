@@ -42,7 +42,7 @@ One condition, wearing three faces. Each is a Cut gone thin.
 
 **A safe place in the In-Between is a place someone is paying to hold.** That is the whole rule and it has no exceptions.
 
-The Regency maintains the roads and the halfway-inns. The Roadhouse has a crown seal above the door, two guards on rotation, and exists because the road requires it to (`locations/roadhouse.md`). The Masons return periodically to carve fresh glyphs into the fence posts at Briarwatch (`factions/the-masons.md`). Farmers tie new bundles every autumn and never take the old ones down (`bestiary/briarbundles.md`).
+The Regency maintains the roads and the halfway-inns. The Roadhouse has a crown seal above the door, two guards on rotation, and exists because the road requires it to (`places/roadhouse.md`). The Masons return periodically to carve fresh glyphs into the fence posts at Briarwatch (`factions/the-masons.md`). Farmers tie new bundles every autumn and never take the old ones down (`bestiary/briarbundles.md`).
 
 None of these is safe because its stretch of ground is calm. Each is safe because the payment has not stopped.
 
@@ -89,7 +89,7 @@ One thing in the In-Between is not displaced, not passing through, and not expla
 - `rules/character-creation.md` — Declaring a Price, the same Cut at a person's scale
 - `world/the-unheld.md` — the other thinness, and the coastline that stays hard
 - `world/geography-overview.md` — the hubs, the two-day standard, the maintained roads
-- `locations/roadhouse.md` — a haven, and what is paying for it
-- `locations/apnea.md` — the same thinness, contained and tended rather than diffuse, and what happens when the tending falls behind
+- `places/roadhouse.md` — a haven, and what is paying for it
+- `places/apnea.md` — the same thinness, contained and tended rather than diffuse, and what happens when the tending falls behind
 - `world/the-scar.md` — the one persistent presence here
 - `rules/the-summons.md` — the Oracle's account of the same three Cuts, in her own voice

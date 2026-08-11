@@ -24,4 +24,4 @@ Senshi's supplier works the cliffs above Glasslight Reach. He does not share the
 
 ## Culinary Note
 
-See `locations/capital/gilded-tusk.md` — High-Altitude Bat Wing Crisps. Wing membranes twice-fried to a delicate crisp. Honey mead for dipping. Senshi does not understand the problem with wings.
+See `places/capital/gilded-tusk.md` — High-Altitude Bat Wing Crisps. Wing membranes twice-fried to a delicate crisp. Honey mead for dipping. Senshi does not understand the problem with wings.

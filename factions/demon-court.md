@@ -88,6 +88,6 @@ The Boar knows what is at the bottom of the mine. Pazuzu knows that the Boar kno
 
 ## Related Documents
 
-- `locations/capital/the-wallows.md` — the mine
+- `places/capital/the-wallows.md` — the mine
 - `world/the-regency.md` — the Boar, the council
 - `factions/the-weavers.md` — the guild the collection detail unknowingly feeds

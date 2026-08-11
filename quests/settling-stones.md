@@ -92,4 +92,4 @@ Running both entrances does not pay twice.
 - `quests/shifting-burrow.md` — the other mouth of the same loop
 - `bestiary/borrower.md` — deeper Borrower behavior differs from surface Sentries
 - `bestiary/briarwatch-jackalope.md` — no longer tied to this location; now a general field encounter
-- `locations/briarwatch.md` — the Watchtower Ruins context
+- `places/briarwatch.md` — the Watchtower Ruins context

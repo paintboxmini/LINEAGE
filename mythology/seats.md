@@ -35,6 +35,8 @@ Most cultures don't know Seats exist as such. A religion isn't interpretation of
 
 The Seat-Bearer does not command the principle. They become its inevitable expression.
 
+**The bearer controls the distribution of the domain through the world.** The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. The bearer does not invent or own the domain. They determine where and how fully its expression reaches the world.
+
 To become an Archon is not godhood. It is not dominion. It is necessity.
 
 Most bearers never release their Seat. Relinquishing it feels like annihilation.
@@ -45,12 +47,16 @@ Most bearers never release their Seat. Relinquishing it feels like annihilation.
 
 | State | Effect |
 |-------|--------|
-| **Filled** | Domain functions normally. |
-| **Fading** | The bearer is thinning — the domain still holds, but goes increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
-| **Empty** | That part of reality begins breaking down. |
+| **Filled** | Domain is correctly distributed and functions normally. |
+| **Fading** | The bearer is thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
+| **Empty** | The domain's distribution loses its organizing bearer and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places, absent in others, or otherwise wrong. |
 | **Contested** | Two beings fighting for a Seat warp reality until one wins. |
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
+
+**Filled doesn't mean one bearer.** A living being, a Resonant Item, and a Resonant Place can each independently reach Archon on the same Seat — three separate ladders, each ending at the same summit (`mythology/archons.md`, Multiple Bearers, One Seat). None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the *same* ladder for the one bearer-slot that ladder allows. Crossing ladders isn't a contest, because nothing is being taken from anyone.
+
+**A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all.** Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole (`mythology/resonant-people.md`, `mythology/resonant-items.md`, `mythology/resonant-places.md`). The current is unmediated, not severed.
 
 **Binding and Holding are not the same thing.** A Seat powerful enough for it can bind its domain completely — perfectly, at scale, in a way that looks indistinguishable from permanence. That is not the same as being exempt from Price (`mythology/creation-myth-the-three-cuts.md`, the Second Cut — nothing is exempt from Price, ever, no matter how it's attempted). A domain held the ordinary way pays piecemeal, continuously, the way every Haven does (`world/the-in-between.md`); let the payment lapse and it goes back gradually, sometimes over years. A domain bound instead of held doesn't pay as it goes — the debt still accrues, just uncollected, until it's called in whole. When it is, nothing fades. It's unmade entirely, in a single stroke, all at once. A working this way isn't a shortcut around Price. It's a loan against a future that eventually, always, comes to collect it in full. (First recorded case: the Pendragon Attempt, `world/the-regency.md`, GM Secret.)
 
@@ -102,7 +108,7 @@ Discusses gathering, abundance, and what's worth preserving. Attentive to what g
 ### Death
 Domain: Endings, Finality, Release
 
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Echo of the domain, which is not the same as filling it. See `mythology/echoes.md`, Known Echoes.
+Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Resonant Person of the domain, which is not the same as filling it. See `mythology/resonant-people.md`, Known Resonant People.
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*
@@ -122,7 +128,11 @@ Blood governs life-force, inheritance, oath, and cost. It is the price of contin
 **Bearer:** None seated. **Greed is fated to it** (`characters/greed.md`) — how and when is deliberately unestablished, so the Seat reads as unheld in the present tense and every other file that says so is correct.
 Domain: Storms, Turbulence, the Uncontrolled
 
-Weather that answers to nothing, least of all whoever stands under it. At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
+Storms behaving violently or unpredictably are not signs of an Empty Seat. That is Storm functioning normally: the domain itself is turbulence and the uncontrolled.
+
+When the Storm Seat is Empty, the problem is distribution. Storm no longer has a bearer controlling where and how fully the domain expresses. One region may experience superstorms while another experiences an unnatural absence of storms. The domain has not simply vanished; its expression has become uneven and wrong.
+
+At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
 
 ### Navigation / Pathfinding
 **Bearer:** The Night Ferryman
@@ -133,7 +143,7 @@ Doesn't offer the destination. Doesn't promise the destination is good. Only tha
 
 *"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
 
-Rows after curfew at Vulture's Nest, and further out when trust is earned. Whether he knows what he is himself is not established. See `locations/vultures-nest.md`, `locations/the-coil.md`.
+Rows after curfew at Vulture's Nest, and further out when trust is earned. Whether he knows what he is himself is not established. See `places/vultures-nest.md`, `places/the-coil.md`.
 
 ### Song and Silence
 **Bearer:** None seated.
@@ -142,8 +152,8 @@ Domain: the space between an utterance and its absence — what a sound makes po
 
 Two resonances noticed so far, neither confirmed as more than resonance — same rule as every other coincidental echo in this list, nobody involved knows why the shape fits:
 
-- **Fermata** (`bestiary/fermata.md`, `locations/the-silent-choir.md`) — **confirmed Echo of this Seat**, Drew's direct call. A being whose entire nature is one sustained note holding an entire boundary of silence — see `mythology/echoes.md`, Known Echoes, for the full entry. Which stage of Alignment it's actually reached is left open on purpose, same register as Aege's own uncertainty about hers. The Silent Ring's Seat alignment (`items/the-silent-choir-items.md`) is settled by the same confirmation — Song and Silence, no longer just a candidate.
-- **Glasslight Reach's singing streets** (`locations/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `locations/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street.
+- **Fermata** (`bestiary/fermata.md`, `places/the-silent-choir.md`) — **confirmed Resonant Person of this Seat**, Drew's direct call. A being whose entire nature is one sustained note holding an entire boundary of silence — see `mythology/resonant-people.md`, Known Resonant People, for the full entry. Which stage of Alignment it's actually reached is left open on purpose, same register as Aege's own uncertainty about hers. The Silent Ring's Seat alignment (`items/the-silent-choir-items.md`) is settled by the same confirmation — Song and Silence, no longer just a candidate.
+- **Glasslight Reach's singing streets** (`places/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `places/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street. A candidate Resonant Place on the strength of that resonance alone (`mythology/resonant-places.md`) — the Seat it belongs to is not yet confirmed the way Fermata's was.
 
 ---
 
