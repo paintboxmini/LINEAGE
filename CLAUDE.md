@@ -205,7 +205,7 @@ Prioritize clarity over cleverness. Prefer system-consistent solutions over nove
 
 Dependent systems (sim, print sheets, cross-references) do not rebuild on every keystroke. Like a compiler, let them go stale and sync deliberately:
 
-- **Working** (default) — edit the target files only. Record stale dependents under **Pending propagation** at the top of `memory.md` instead of rebuilding them per change.
+- **Working** (default) — edit the target files only. Record stale dependents under **Pending propagation** in `unresolved-concerns.md` instead of rebuilding them per change.
 - **Sync** — on request or at a natural pause: propagate pending changes through dependents (sim reconciliation, print regeneration, reference sweeps), clear the ledger. Also scan **Active Reasoning** for entries that are *closed* — fully absorbed into the canon text they explain, no longer cited as precedent by newer entries, no open follow-up thread depending on them — and move those, verbatim, to `archives/key-design-decisions.md` (the established destination for this, used since 2026-07-19). This is a per-entry judgment on material already in front of you, not a repo-wide check, so it belongs at Sync cadence rather than waiting for Release. When a Sync pass batches multiple *unrelated* pieces of new engine surface (new mechanics that don't share underlying code, just a landing date), build and verify them as separable pieces even though they ship in the same pass — batching buys one review-and-regression cycle instead of several, not a license to treat the combined diff as one thing. More surface area landing at once means more to untangle if something breaks; test each piece on its own before trusting the combination.
 - **Release** — full verification: acceptance tests, print sheets regenerated, the combat simulator reconciled against current canon, ledger empty. Also the right cadence for the expensive half of the `memory.md` audit: checking whatever remains in **Active Pending Threads** and **Active Reasoning** against live canon for drift — has something changed elsewhere in the repo that makes an old entry's claims stale or wrong, not just whether the entry is done being useful (that's Sync's job now). This is genuinely expensive (multi-pass verification against the whole repo) and doesn't belong at ordinary Sync cadence.
 
@@ -254,6 +254,35 @@ Placement is a question of jurisdiction, not magnitude: *who is allowed to commi
 Every Authority 1/2 ship gets one line at the top of `archives/key-design-decisions.md`'s Work Log — The Trail (2026-08-11, Drew: *"recently shipped should be an archive thing"* — logged directly to its permanent home now, newest-first, no staging in `memory.md` first). Drew clears lines by blessing (reading and saying nothing), or objects and the item reverts — every ship is one commit from undone, with the entry itself holding the why. The log also gives the aggregate view: cumulative drift from many small extensions shows up there as a pattern before it becomes a fact. The gate is loose because the checks are mandatory and the history is reversible — not because review stopped.
 
 **Write-up length follows decision difficulty, not ship count.** A deterministic fix — a duration bug, a renamed term propagated across files, a typo — gets its one line in the Work Log and stops there. `memory.md`'s **Active Reasoning** section is reserved for ships that actually required reconciling a conflict or making a judgment call the repo didn't already answer, not for restating a Recently-shipped paragraph a second time at greater length. Writing the same reasoning twice, once compressed and once expanded, is duplication, not diligence.
+
+## Campaign Status
+
+**Intended session spine (Drew, 2026-08-02)** — the shape the gold pacing is calibrated against:
+
+| Session | Where |
+|---|---|
+| 1 | Unheld Ocean shoreline → Roadhouse → Briarwatch, ending at the ruins about to go into the burrows *(was Vulture's Nest → Roadhouse → Briarwatch; retired 2026-08-06, `archives/key-design-decisions.md`)* |
+| 2 | The Hollow solved |
+| 3 | Turnroot Weald |
+| 4 | Turnroot finished |
+| 5 | Eclipseria — the capital |
+
+This is why gear pacing targets five sessions to a first Tier 1 item **per character**: it lands each character's first real equipment at roughly the moment the campaign reaches the city that sells it. Not a schedule to enforce — a reference the economy was built against.
+
+## Active Threads
+
+Possible future connections noticed while doing other work, that don't require answering them. If something here actually needs an answer for current work to tie into the repo correctly, that's debt, not this — it belongs in `unresolved-concerns.md` instead.
+
+**ARCHITECTURAL NORTH STAR — typed modifiers, Step 3.** Step 2 shipped 2026-08-05/06 (typed modifiers with lifetimes for `axiom_ban`, `cannot_defend`, `staggered`, plus the AXIOM attacker-side gap closed same week — full reasoning archived, `archives/key-design-decisions.md`). Step 3 — the full policy stack — remains explicitly deferred, not abandoned: only worth building once a modifier-as-special-case has become genuinely painful. This is the only live pointer to that sequencing call left after the 2026-08-11 restructure moved Step 2's reasoning trail to archives.
+
+**B thread — Quartermaster Voss**
+Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipseria South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the FourthEye thread. Don't develop until party pulls on it.
+
+**FourthEye pipeline**
+Drug spreading through Eclipseria's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. **The Cellar Custodians are the last link before it reaches the Bazaar** (Drew, 2026-08-05) — the deep tunnels they patrol are the same ones the drug has to move through to reach the Bazaar's hidden pocket. Who's actually dirty and how far up it goes stays unestablished, same as the Nest-side operator. See `places/vultures-nest.md` (Masaharu, Rumors), `places/capital/underground-bazaar.md` (Giblets), `factions/the-cellar-custodians.md` (GM Secret).
+
+**Bazaar uprising thread** (future)
+Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
 
 ## Do Not
 
