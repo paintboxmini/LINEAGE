@@ -1,8 +1,14 @@
 # LINEAGE — Memory
 
-**What belongs here:** active threads, mid-session decisions, things in flight that the repo can't capture on its own.
+## Canon / Memory / Archive
 
-**What doesn't belong here:** keyword definitions (see `rules/card-glossary.md`), workflow rules (see `CLAUDE.md`), location summaries (see `places/`). If it has a canonical home elsewhere, it goes there.
+- **Canon = what.** The canonical files are the authoritative statement of what the game, world, and system currently are.
+- **Memory = why.** Memory preserves concise historical context for major decisions when that context materially improves future reasoning. A memory entry records the problem, the decisive reasoning or failed alternatives that explain the decision, the resulting principle or rule, and only the minimum provenance necessary to understand why it matters.
+- **Archive = what happened.** Archives preserve the fuller historical record: complete deliberations, chronological work logs, implementation archaeology, discarded drafts, experiments, and other provenance that does not need to remain in active memory.
+
+Memory is not a transcript of how we thought. It is the smallest durable explanation of why the current design is the way it is.
+
+**Compression test:** if removing a detail would not make a future design decision materially harder to understand or prevent a known mistake, remove it from memory. Do not preserve complete deliberations, chronological work logs, implementation details, or every rejected idea here merely because they are historically interesting; those belong in archives.
 
 **Timestamps, starting now (2026-07-17, Drew's request):** new entries lead with a real timestamp in Drew's local time — `TZ='America/Chicago' date` (Central, DST-aware — CDT or CST as the calendar actually has it), not a guess. Prospective only; existing entries above this line stay exactly as written, no retroactive stamping.
 
