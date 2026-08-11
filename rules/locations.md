@@ -4,9 +4,9 @@ Name, Price, and Distance (`mythology/creation-myth-the-three-cuts.md`) applied 
 
 ---
 
-## Name
+## Name — Giving a Face
 
-What a location is — its nature, its geography, what happens there. No separate mechanic: a location's Name is established the same way `locations/` overviews already establish it, through ordinary world-building. Every location has a Name. Not every location is Resonant (`mythology/resonant-locations.md`) — Resonance is a further alignment with a Seat's domain, not a requirement for existing.
+The same act as it is for a person (`rules/people.md`): turning a generic instance of a type into one particular, specific place. "A forest" isn't Named. Turnroot Weald — sentient, hunting, escalating the longer anyone stays — is. What "a face" means for a place isn't literal; it's the detail, or cluster of details, that makes it recognizably itself instead of interchangeable with any other forest, any other ruin, any other market square. Established through the ordinary `locations/` overview format, not a separate mechanic. Every location has a Name. Not every location is Resonant (`mythology/resonant-locations.md`) — Resonance is a further alignment with a Seat's domain, not a requirement for existing.
 
 ---
 

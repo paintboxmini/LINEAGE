@@ -30,9 +30,11 @@ A place can't pay the way a person or an item does — it has no vitality to spe
 
 ---
 
-## No Confirmed Ceiling
+## The Third Ladder Also Ends at Archon
 
-A Resonant Person's ladder ends at Archon. A Resonant Item reaches the same summit by its own separate path (`mythology/archons.md`). Whether a place can reach an equivalent culmination — and what that would even mean for something that can't act — is unestablished. Left open on purpose rather than resolved just to complete the pattern.
+A Resonant Location's ladder ends the same place the other two do: Archon (Drew, confirming directly — "it does" and "it means a location can fill a seat"). Reached not through biology, the way a person's ladder is, or through use, the way an item's is, but through the same accumulation that makes a place Resonant in the first place — enough history, held long enough, that the place stops merely expressing the domain and becomes its full, distributed bearer. When that happens, the Seat is Filled by the place itself, alongside — not instead of — whatever else has independently reached the same summit (`mythology/archons.md`, Multiple Bearers, One Seat).
+
+Neither Known Resonant Location, above, has reached it. What that would actually look like, for something that can't act the way a person or an item can, is still unbuilt — confirmed as real, not yet built as fiction.
 
 ---
 

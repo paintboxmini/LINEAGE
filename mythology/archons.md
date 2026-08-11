@@ -6,7 +6,7 @@
 
 ## What an Archon Is
 
-An Archon is the highest expression a Seat's domain can reach. For a living being, that means its highest *biological* expression — the culmination of the Resonant Person ladder (`mythology/resonant-people.md`). A Resonant Item can reach the same culmination by its own, separate, non-biological path (`mythology/resonant-items.md`) — the two never merge into one ladder, but neither stops short of the same summit. None of this is chosen. None of it is elevation. It is what happens when something aligns so completely with a domain that it becomes its inevitable expression.
+An Archon is the highest expression a Seat's domain can reach. For a living being, that means its highest *biological* expression — the culmination of the Resonant Person ladder (`mythology/resonant-people.md`). A Resonant Item can reach the same culmination by its own, separate, non-biological path (`mythology/resonant-items.md`). A Resonant Location can reach it too, by a third path again — accumulation rather than biology or use (`mythology/resonant-locations.md`). None of the three ladders merge into one, but none of them stops short of the same summit. None of this is chosen. None of it is elevation. It is what happens when something aligns so completely with a domain that it becomes its inevitable expression.
 
 Archons function as filters or lenses for their Seat. Their free will doesn't disappear — it aligns so completely with the domain that it never points anywhere else. They do not command their domain; they *are* it, and acting against it would mean acting against their own nature. Their presence "tints" the reality around them through what they embody.
 
@@ -37,6 +37,14 @@ Act in the grain of an Archon's will, and the debt reality demands for reaching 
 Becoming an Archon is not a separate process from becoming a Resonant Person. It is the end of that process.
 
 **Stage III — Incarnation is Archonhood** (`mythology/resonant-people.md`). A Resonant Person at Stage III and an Archon are one thing under two names: the highest stable form a Resonant Person can reach, and the fullest biological expression of a domain. This does not make an Archon a god — Archons are not chosen and not elevated, and the stage is described as necessity rather than godhood.
+
+---
+
+## Multiple Bearers, One Seat
+
+A Seat's three ladders don't compete with each other. A living being, a Resonant Item, and a Resonant Location can each independently reach Archon on the same Seat — all three Filled at once, if all three have actually walked their own ladder that far. A person-Archon doesn't displace an item-Archon; neither displaces a place that reached the same summit by its own accumulation.
+
+**Contested** (`mythology/seats.md`, Seat States) is a different thing entirely: two claimants on the *same* ladder, fighting for the one bearer-slot that ladder allows. Cross-ladder coexistence isn't a contest, because nothing is being taken from anyone — three separate paths can each reach the same summit without any of them being on the others' trail.
 
 ---
 
