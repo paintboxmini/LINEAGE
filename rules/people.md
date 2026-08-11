@@ -4,9 +4,16 @@ Name, Price, and Distance (`mythology/creation-myth-the-three-cuts.md`) applied 
 
 ---
 
-## Name — Giving a Face
+## Name — What They Are, and What They're Called
 
-Naming a person is giving them a face (Drew) — turning a function or a role into one specific, particular identity instead of an instance of a category. "A guard" isn't Named. A guard with an actual name, an actual reason to be standing there, and one detail that's theirs alone, is. A player character gets this at character creation, through stats and a starting deck (`rules/character-creation.md`) — the build itself is the face. An NPC gets it the same way any Named thing does: not through a formula, through specificity.
+Naming a person is more than a metaphor for specificity — Drew's own breakdown, and he flagged it as probably incomplete rather than a closed list: **what something is, an actual name, traits, and history.**
+
+- **What they are.** The essential nature or role underneath everything else — what the rest of the build actually sits on top of.
+- **An actual name.** Not a placeholder — "a guard" isn't Named. A guard with a real name is.
+- **Traits.** The particulars that make them recognizable — how they carry themselves, what they say, what they do that nobody else quite does.
+- **History.** Where they came from, and what already happened to them before the story found them.
+
+A player character gets the first part at character creation, through stats and a starting deck (`rules/character-creation.md`); the rest — the name itself, traits, history — gets built alongside it, not skipped because the stats did the mechanical work. An NPC gets all four the same way any Named thing does: not through a formula, through specificity, worked through rather than stopped at whichever piece came easiest.
 
 This is the formal first step, same as it is for places and things (`rules/places.md`, `rules/equipment.md`) — not because a mechanic enforces it, but because skipping it is how "a guard" stays a guard instead of becoming somebody.
 

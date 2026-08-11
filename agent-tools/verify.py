@@ -157,7 +157,11 @@ def check_stat_blocks():
 def check_refs():
     bad = []
     for path in glob.glob('**/*.md', recursive=True):
-        if path.startswith('archives/'):
+        # archives/ is deprecated content; memory.md is a threshold log whose
+        # own header rule is that existing entries "stay exactly as written" —
+        # neither is live canon prose, so a renamed/deleted file mentioned in
+        # either is historical record, not a broken link.
+        if path.startswith('archives/') or path == 'memory.md':
             continue
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(r'^\*\*Cards:\*\* `([^`]+)`', text, re.M):
