@@ -23,8 +23,6 @@ Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty mea
 
 ## Campaign Status
 
-**Clean slate, 2026-08-06 — Drew: "remove anything that says Frost and Steele are players."** The actual campaign has no established party. `characters/frost.md` and `characters/steele.md` are retained, unarchived, purely as the combat simulator's hand-built ground-truth reference pair (real decks a real player built, still load-bearing for balance calibration — see `combatsimulations/engine.py`'s scope comment and Active Reasoning below) — not as this campaign's PCs, past or present. A short test session was played under those two characters (`playtesting/session-1-combat-review.md`, real data, kept as history) before this reset; it doesn't establish who the actual party is going forward. **The real opening is `quests/washed-ashore.md`.** Expected size: **3 players, +/- 1.** No predetermined characters — the party gets built at the actual Session 0 (`places/island-in-a-ship.md`), the night they wash ashore. **Low-resource survival start:** characters begin with clothes and weapons already in hand (no mechanical benefit — flavor only, per `rules/character-creation.md`'s no-starting-gold baseline), but no gold and no items at all otherwise. The beach itself needs to be a real, immediate source of first gear — built out in `quests/washed-ashore.md`, The Walk (see Active Pending Threads, Road encounters).
-
 **Intended session spine (Drew, 2026-08-02)** — the shape the gold pacing is calibrated against:
 
 | Session | Where |
@@ -36,9 +34,6 @@ Stale dependents awaiting a Sync pass (see Work Modes in `CLAUDE.md`). Empty mea
 | 5 | Eclipseria — the capital |
 
 This is why gear pacing targets five sessions to a first Tier 1 item **per character**: it lands each character's first real equipment at roughly the moment the campaign reaches the city that sells it. Not a schedule to enforce — a reference the economy was built against.
-
-**Combat simulator** (`combatsimulations/`) — *rewritten 2026-08-01, audit; the previous version of this paragraph (roster: frost/steele/mire only, "Wound" terminology, "team sim not built yet") had gone stale and is archived at `archives/key-design-decisions.md`.*
-Two engines, both Python, no dependencies: `engine.py` (1v1 duels, `run.py`) and `team_engine.py` (N-vs-N battles, `team_run.py`), sharing `content.py`'s card definitions. 23 decks currently in `ROSTER` (22 archetypes/characters + `burnout`, a diagnostic deck that exists only to keep the Exhaust path executing) — Frost/Steele are the one real hand-built ground-truth pair (see Active Reasoning); everything else is built in-repo with varying depth of Drew's input. Five policy brains: random/reader/greedy/tactician/punisher. Design instrument only, not canon. Outputs: errata queue (`rulings-log.md`) + Monte Carlo balance stats, including team-battle death-rate tracking against Drew's "a PC dies ~once per 20 sessions" target.
 
 ---
 
