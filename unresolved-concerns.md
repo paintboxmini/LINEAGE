@@ -6,6 +6,8 @@ A scannable index of everything currently open that will eventually need a decis
 
 Also not here: **Pending Propagation** (operational staleness — print sheets, sim sync) stays in `memory.md` where the Sync workflow already looks for it. Entries below may point there, but the ledger itself doesn't move.
 
+Also not here, same reason as the deliberately-open questions above: **Active Pending Threads** (`memory.md`) — possible future connections noticed while doing other work that don't require answering them. If it doesn't need an answer for current work to tie into the repo correctly, it's a thread, not debt; it lives there, not here.
+
 ---
 
 ## Mechanics & Balance
