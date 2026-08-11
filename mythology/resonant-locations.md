@@ -16,6 +16,12 @@ Unlike a person or an item, a place can't act — only accumulate. Everything th
 
 ---
 
+## Price, at a Place's Scale
+
+A place can't pay the way a person or an item does — it has no vitality to spend, nothing to degrade. What it has instead is an existing, already-built mechanic that does the same job: **the pressure track.** Failing to move through a Resonant Location the way its domain demands — a failed navigation, a violated custom — is failing to pay it, and the debt doesn't vanish, it accumulates: the place escalates against whoever's standing in it, exactly the way Price already works everywhere else in this cosmology (`world/the-regency.md`, Binding and Holding — debt "called in whole" instead of paid piecemeal). Holding at a level for real compliance is paying it down without clearing it. See `rules/locations.md` for the applied mechanics.
+
+---
+
 ## Known Resonant Locations
 
 **Glasslight Reach** — the cliff fractures sing when wind passes through them, and nobody in the town knows why. Song and Silence is the closer fit among the Seats (`mythology/seats.md`, Song and Silence), but the alignment is unconfirmed — the same register Fermata's alignment sat in before it was confirmed. The resonance is real. Which domain it belongs to isn't settled yet.
@@ -35,5 +41,6 @@ A Resonant Person's ladder ends at Archon. A Resonant Item reaches the same summ
 - `mythology/resonant-people.md` — the living version of the same alignment
 - `mythology/resonant-items.md` — the object version of the same alignment
 - `mythology/seats.md` — the domains these might align to, and their bearers
+- `rules/locations.md` — Name, Price, and Distance applied to locations, mechanically
 - `locations/glasslight-reach.md`
 - `locations/turnroot-weald.md`

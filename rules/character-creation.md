@@ -90,6 +90,8 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 ### Declaring a Price
 
+*(Price, the Second Cut — `rules/people.md` for how Name, Price, and Distance apply to people generally.)*
+
 At the close of character creation the player speaks one binding statement beginning with *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*.
 
 **The adherence is the Price — not the statement.** Speaking the words costs nothing by itself; anyone can say a sentence. What's actually paid is everything that follows: every choice the pledge constrains, every situation where keeping it costs something real. No card is revealed at this step — there's nothing to reveal yet. The cost hasn't started accruing; it hasn't happened.

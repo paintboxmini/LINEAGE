@@ -25,7 +25,11 @@ Every NPC worth building carries something reality will not let them close: a re
 
 Every resonant object carries the equivalent — not a state it desires, but a state of being it can never inhabit. A sword can never be a plow. A crown can never be the person who wears it. Test: *if this object could become exactly one other thing that would complete its nature, what is it, and why can it never be that?*
 
+A resonant place carries the same boundary at its own scale — not a state it desires, but a domain it can never fully become. Turnroot Weald can hunt, trap, and escalate against anyone inside it; it can never become safe ground, because the pressure that makes it what it is doesn't have an off state, only a held one. Test: *if this place could resolve into exactly one other kind of place, permanently, what would that be, and why can it never actually settle there?*
+
 Distance isn't a hard ceiling — it's tension a story can cross. When it is, that's not a rules violation; it's the story doing something that matters. Don't spend it cheap: a Distance a GM resolves in one session was never real weight, just a delayed reveal.
+
+See `rules/people.md` and `rules/locations.md` for Distance alongside Name and Price, applied per subject.
 
 ---
 
