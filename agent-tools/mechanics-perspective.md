@@ -37,4 +37,4 @@ survive contact with a real table — each with the specific fix, kept minimal.
 
 ## How to Use
 
-Feed it a card, stat block, item, or encounter mechanic. Use alongside — not instead of — `red-team.md` (attacks) and `player-perspective.md` (felt experience). Reference points it should be checking against: `rules/equipment.md`'s tier budget, `agent-tools/design-principles.md` (including the pillar-risk principle), CTR anchors in `compiled-crib.md`.
+Feed it a card, stat block, item, or encounter mechanic. Use alongside — not instead of — `red-team.md` (attacks) and `player-perspective.md` (felt experience). Reference points it should be checking against: `rules/equipment.md`'s tier budget, `agent-tools/design-principles.md`, `rules/combat.md`'s Core Combat Philosophy (the pillar-risk principle), CTR anchors in `compiled-crib.md`.

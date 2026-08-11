@@ -6,6 +6,20 @@ Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mista
 
 ---
 
+## Core Combat Philosophy
+
+Three things decide a fight, and a build's stance toward all three, together, is what actually gets read:
+
+- **Balance between The 3 Aspects** — Mind, Body, and Soul (`rules/character-creation.md`), the canonical name for the three stats. Every color answers another: red overwhelms green, green outlasts blue, blue unmakes red. No Aspect is strongest on its own; a deck built around one alone is legible, countered risk, not a winning strategy. Mechanically, this is what **RPS** means throughout this document — the color triangle, resolved through Aspect balance.
+- **Control distance.** Frontline and Backline. Some things only work up close; some only work at range. Moving between them costs the action you'd have spent doing something else. Shorthand: **Position.**
+- **Act before your opponent does.** The initiative wheel, not a fixed turn order — shifting where you sit in it is one of the few ways to act again before the table would otherwise expect you to. Shorthand: **Initiative.**
+
+**RPS / Initiative / Position** is the shorthand used throughout this ruleset for the three above. **A build that ignores one entirely takes on real, legible risk — fine, as long as it's intentional, not accidental.** Most real builds carry at least one tool against at least one of the three; a card or engine that looks unanswerable in a given test needs to be checked against whether that specific build had a tool for the pillar it's actually being asked to answer, before it's read as overtuned rather than matchup-specific.
+
+**Default to telegraphed effects over hidden ones.** A hidden delayed payoff is just a surprise; a visible one is a real bet the opponent gets a turn to answer it. When a new mechanic could go either way on visibility, give the other side a chance to react — don't default to concealment for its own sake.
+
+---
+
 ## Stealth & Ambush
 
 To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat on the side being approached. Creatures ambush the same way — when the ambusher is an NPC or creature, the GM makes its Soul check.
