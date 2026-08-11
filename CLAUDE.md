@@ -1,5 +1,18 @@
 # LINEAGE — Claude Context
 
+## WHAT I NEED TO KNOW
+
+```text
+WHAT I NEED TO KNOW
+├── identity / scope
+├── repo orientation
+├── living principles
+├── translation principle
+├── authority / canon gate
+├── workflow
+└── minimal mechanical preload
+```
+
 This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRPG system. Content here is written for a DM and their table, not for publication. Tone is direct, evocative, and mechanical — no purple prose, no padding.
 
 ## What This Repo Is
