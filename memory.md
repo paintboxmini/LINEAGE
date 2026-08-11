@@ -72,21 +72,6 @@ Reasoning that's currently being used or actively improved on — not a running 
 
 ---
 
-## Workflow Rules
-
-**No new keywords without Drew's approval.**
-Current keyword list in `experimental/README.md`.
-
-**Card loop**
-1. Draft 9 (3R/3B/3G) in experimental.
-2. Red team all 9 against: balance, keyword compliance, creature fidelity, early-game fit, Oracle reward value.
-3. Fix what can be fixed. Cut what can't.
-4. Generate replacements for any cuts (matching color).
-5. Loop until all 9 pass red team.
-6. Present all 9 to Drew with your read on which are strongest — Drew decides where they land (signature set, Oracle, archive, etc.).
-
----
-
 ## Multi-Agent Notes
 
 Different agents naturally specialize based on which parts of the repo they engage with. Drew is content adjudicator. Don't pre-define agent roles — the environment does that work.
