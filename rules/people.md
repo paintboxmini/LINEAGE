@@ -12,9 +12,9 @@ What a person is. For a player character, this is the stats and starting deck bu
 
 ## Price — Declaring a Price
 
-**For player characters**, Price already has a home: `rules/character-creation.md`, Declaring a Price. A player speaks one binding statement at character creation, and everything that statement constrains from then on is what gets paid — not the words themselves.
+Price already has a home: `rules/character-creation.md`, Declaring a Price — one binding statement beginning *I never*, *I must*, *I always*, *I cannot*, *Once I…*, or *Whenever…*. Everything that statement constrains from then on is what gets paid, not the words themselves.
 
-**For NPCs, this is an open gap, not a resolved rule.** The cosmology says nothing is exempt from Price (`mythology/creation-myth-the-three-cuts.md`) — that applies to NPCs the same as anyone else. But Declaring a Price as written is a player-facing character-creation step; there's no equivalent prompt for what an NPC's Price is or how it surfaces in play. An NPC-building pass could reasonably ask the same question a player answers for their own character — what do they never do, what do they always do, what does keeping that cost them — but that's a design proposal, not something already established. Don't treat an NPC as having a Price already defined just because this file names the gap.
+**The rule applies to NPCs the same way it applies to player characters** (Drew, confirming). The *ritual* is player-facing — spoken aloud at a table, at character creation — but the underlying mechanic isn't specific to that moment. An NPC worth building can carry the same kind of binding statement, declared by the GM during design rather than spoken at a table: what they never do, what they always do, what keeping it costs them when the story tests it. Not every NPC needs one stated explicitly — the same restraint Distance already asks for applies here — but when an NPC's Price matters to the story, it's built the same way a player's is, not invented as a separate system.
 
 ---
 
