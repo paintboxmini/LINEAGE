@@ -229,19 +229,16 @@ Scope: lore and canon, rules text, card wording, session drafts, and the agent h
 
 The full reasoning trail and incident history lives in `archives/consolidated/translation-principle.md` and `archives/translation-principle-full.md`. This section is the operational form only.
 
-## The Canon Gate — Authority Levels
+## The Canon Gate
 
-Placement is a question of jurisdiction, not magnitude: *who is allowed to commit this kind of change?* A level-1 creature can be the best thing in the set; a level-3 wording tweak can be four words. This is a different axis from how confident you are in reading what Drew means — that's Translation Principle, above.
+1. **Determine what kind of change this is.**
+2. **Translate the request without silently redefining it.**
+3. **Check it against current canon.**
+4. **Integrate ordinary approved work.**
+5. **Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.**
+6. **Reserve constitutional authority for Drew.**
 
-- **Authority 1 — Established Language** *(agent authority)*. Content that only *uses* existing canon: encounters, creatures, NPCs, cards built from existing mechanics, prose improvements. Ships to canon directories once the mandatory `red-team.md` pass is clean. One line in the post-review queue (`archives/key-design-decisions.md`, Work Log — The Trail).
-- **Authority 2 — Canonical Extension** *(agent authority, with audit)*. Adds something new without redefining anything: new faction behavior, a regional custom, a new map seat, a deepened NPC. Ships flagged — prominently, in the queue and in chat; Drew's review is veto-after. **An extension may extend canon but may not redirect existing themes** — apply Translation Principle's redefinition test, above; if it says yes, this isn't an extension, it's constitutional, and it must be surfaced rather than silently executed.
-- **Authority 3 — Constitutional** *(Drew's authority, permanently)*. Changes to the language itself: formulas, keywords, progression, cosmology (Seats, Archons, the Unheld, races), core Design Principles, anything contradicting existing canon, anything carrying an open world-level hook — anything that changes how other content is interpreted. Goes to `experimental/` or a chat proposal and waits for explicit sign-off. **No standing queue for this** — Drew, 2026-08-11: *"a3 recommendation don't need their own section. I'll respond to those in chat."* Constitutional-level observations get raised in conversation directly, the same as any other flag, not logged into a tracked backlog. **Unaddressed A3 observations worth preserving go to `unresolved-concerns.md`.**
-
-**Reviewing `experimental/` before it ships.** Content that arrives there — especially material drafted elsewhere (another AI conversation, a brainstorm dropped in whole) — gets read against current canon, not just against itself, before any Authority 1/2/3 ship. A same-file read catches internal inconsistency; only a read against the rest of the repo catches a closed thread being reopened, an established identity being mutated, or an invented fact duplicating one that already exists. This is what "Canon Gate" means in practice, not just the authority-level bookkeeping above. Full review stays mandatory.
-
-Every Authority 1/2 ship gets one line at the top of `archives/key-design-decisions.md`'s Work Log — The Trail (2026-08-11, Drew: *"recently shipped should be an archive thing"* — logged directly to its permanent home now, newest-first, no staging in `memory.md` first). Drew clears lines by blessing (reading and saying nothing), or objects and the item reverts — every ship is one commit from undone, with the entry itself holding the why. The log also gives the aggregate view: cumulative drift from many small extensions shows up there as a pattern before it becomes a fact. The gate is loose because the checks are mandatory and the history is reversible — not because review stopped.
-
-**Write-up length follows decision difficulty, not ship count.** A deterministic fix — a duration bug, a renamed term propagated across files, a typo — gets its one line in the Work Log and stops there. `memory.md`'s **Active Reasoning** section is reserved for ships that actually required reconciling a conflict or making a judgment call the repo didn't already answer, not for restating a Recently-shipped paragraph a second time at greater length. Writing the same reasoning twice, once compressed and once expanded, is duplication, not diligence.
+Detailed authority-level distinctions and the historical evolution of this gate are preserved in `archives/consolidated/canon-gate.md`.
 
 ## Do Not
 
