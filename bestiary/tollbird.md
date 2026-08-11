@@ -1,6 +1,4 @@
-# Tollbird — EXEMPLAR
-
-*An exemplar of Tales Untold content: study the principles it embodies; do not copy its specifics.*
+# Tollbird
 
 *A Tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and the Wait action.*
 
