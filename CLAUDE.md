@@ -91,6 +91,8 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 
 ## Stat System Quick Reference
 
+This section is an **agent working-memory preload**, not a second source of truth. The detailed rule files remain authoritative when precision or conflict requires checking. Keep the frequently needed baseline here so an agent does not have to re-read basic rules for every task.
+
 | Stat | Color | Perception Mode | Damage Die |
 |------|-------|-----------------|------------|
 | Mind | Blue | Reason | d6 (utility) |
