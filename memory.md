@@ -1,14 +1,12 @@
 # LINEAGE — Memory
 
-## Canon / Memory / Archive
+## Memory is a bounded representation
 
-- **Canon = what.** The canonical files are the authoritative statement of what the game, world, and system currently are.
-- **Memory = why.** Memory preserves concise historical context for major decisions when that context materially improves future reasoning. A memory entry records the problem, the decisive reasoning or failed alternatives that explain the decision, the resulting principle or rule, and only the minimum provenance necessary to understand why it matters.
-- **Archive = what happened.** Archives preserve the fuller historical record: complete deliberations, chronological work logs, implementation archaeology, discarded drafts, experiments, and other provenance that does not need to remain in active memory.
+Memory preserves concise historical context for major decisions when that context materially improves future reasoning. A memory entry records the problem, the decisive reasoning or failed alternatives that explain the decision, the resulting principle/rule, and only the minimum provenance necessary to understand why it matters. It does not preserve complete deliberations, chronological work logs, implementation details, or every rejected idea. Those belong in archives.
+
+**compression test:** If removing a detail would not make a future design decision materially harder to understand or prevent a known mistake, remove it from memory.
 
 Memory is not a transcript of how we thought. It is the smallest durable explanation of why the current design is the way it is.
-
-**Compression test:** if removing a detail would not make a future design decision materially harder to understand or prevent a known mistake, remove it from memory. Do not preserve complete deliberations, chronological work logs, implementation details, or every rejected idea here merely because they are historically interesting; those belong in archives.
 
 **Timestamps, starting now (2026-07-17, Drew's request):** new entries lead with a real timestamp in Drew's local time — `TZ='America/Chicago' date` (Central, DST-aware — CDT or CST as the calendar actually has it), not a guess. Prospective only; existing entries above this line stay exactly as written, no retroactive stamping.
 
@@ -54,7 +52,7 @@ Possible future connections noticed while doing other work, that don't require a
 Secondary hook, only activates if party explored the Roadhouse barracks and found the posting order. Unsigned line: "anything from the docks that isn't in the manifest." Points to unsanctioned smuggling from Vulture's Nest to the capital. Voss is at Eclipsera South Gate. Voss's intake reports are cross-referenced against Jonas's ledger — condoned goods appear in both. The supply chain that doesn't appear in either is the FourthEye thread. Don't develop until party pulls on it.
 
 **FourthEye pipeline**
-Drug spreading through Eclipsera's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. **The Cellar Custodians are the last link before it reaches the Bazaar** (Drew, 2026-08-05) — the deep tunnels they patrol are the same ones the drug has to move through to reach the Bazaar's hidden pocket. Who's actually dirty and how far up it goes stays unestablished, same as the Nest-side operator. See `places/vultures-nest.md` (Masaharu, Rumors), `places/capital/underground-bazaar.md` (Giblets), `factions/the-cellar-custodians.md` (GM Secret).
+Drug spreading through Eclipseria's Underground Bazaar (Giblets' stall is the bazaar-end node). Supply chain runs from Vulture's Nest, bypasses Jonas's ledger entirely, never appears in Voss's intake. Masaharu is at the Nest tracing it backward. Identity of the Nest-side operator: unknown. Giblets' "plan connected to someone he used to work with" is the forward-pointing thread. Three Regency hard lines violated: too addictive, too destructive, council gets no cut. **The Cellar Custodians are the last link before it reaches the Bazaar** (Drew, 2026-08-05) — the deep tunnels they patrol are the same ones the drug has to move through to reach the Bazaar's hidden pocket. Who's actually dirty and how far up it goes stays unestablished, same as the Nest-side operator. See `places/vultures-nest.md` (Masaharu, Rumors), `places/capital/underground-bazaar.md` (Giblets), `factions/the-cellar-custodians.md` (GM Secret).
 
 **Bazaar uprising thread** (future)
 Kess is positioned as a future organizer: Cartographers Guild network, grandmother's intelligence cache, personal grievance, methodical temperament. Moth as wildcard (nothing to lose). FourthEye pipeline crossing Regency hard lines as potential lever. Don't develop without Drew — flag as long thread.
