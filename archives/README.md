@@ -12,9 +12,9 @@ Consolidation is selective. Do not preserve complete deliberations, chronologica
 
 `retired/` is a temporary review area for artifacts that may contain valuable material before they are deleted. Review each artifact fully and extract anything that belongs in canon, memory, unresolved concerns, agent tooling/harness, or a consolidated historical trail. Once the review is complete, delete the retired artifact. `retired/` is not a permanent archive category.
 
-## Changelogs and Worklogs
+## Changelog
 
-Changelogs and worklogs are source material for consolidation, not permanent archive categories. Review them for historically valuable information, incorporate that information into the appropriate consolidated trails, and delete the originals only after an independent review confirms that their lasting value has been preserved or deliberately rejected.
+The live, ongoing changelog is not an archive category — it's its own repository layer, `changelog.md` at the repo root (`CLAUDE.md`, Repository Layers), moved out of this directory on 2026-08-12. It records that something changed and why; it does not hold the reasoning trail behind the change. A closed-out worklog fragment that shows up here (an old batch, something inherited from before the split) is source material for consolidation the same as any other historical artifact — review it, fold anything durable into the appropriate consolidated trail, delete the original once its lasting value is preserved or deliberately rejected. The live changelog itself is never that kind of material; it doesn't get consolidated away.
 
 ## Authority
 

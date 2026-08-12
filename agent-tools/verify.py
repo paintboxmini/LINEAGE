@@ -161,10 +161,14 @@ def check_refs():
         # own header rule is that existing entries "stay exactly as written";
         # unresolved-concerns.md's Pending Propagation entries carry the same
         # kind of historical rename narration since the 2026-08-12 gpt-branch
-        # merge relocated that section there from memory.md. None of the three
-        # is live canon prose, so a renamed/deleted file mentioned in any of
-        # them is historical record, not a broken link.
-        if path.startswith('archives/') or path in ('memory.md', 'unresolved-concerns.md'):
+        # merge relocated that section there from memory.md; changelog.md is
+        # the same ship-by-ship record that used to live inside archives/ (as
+        # "Work Log — The Trail") before the 2026-08-12 Changelog/Archives
+        # split gave it its own file — its entries describe what was true
+        # when shipped, same historical-record status it had inside archives/.
+        # None of these four is live canon prose, so a renamed/deleted file
+        # mentioned in any of them is historical record, not a broken link.
+        if path.startswith('archives/') or path in ('memory.md', 'unresolved-concerns.md', 'changelog.md'):
             continue
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(r'^\*\*Cards:\*\* `([^`]+)`', text, re.M):

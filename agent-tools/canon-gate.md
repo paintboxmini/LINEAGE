@@ -28,6 +28,8 @@ A3 observations do not need a standing recommendation queue. Raise them in conve
 
 Approved work is presumed ready for integration. The agent's responsibility is to integrate it cleanly and catch genuine risks, not repeatedly relitigate creative approval.
 
+Every Authority 1/2 ship gets one entry in `changelog.md` — the navigable record of what changed and why, one of the repository's six layers (`CLAUDE.md`, Repository Layers). At the top, newest-first, the moment it lands — not staged elsewhere first. Distinct from `archives/`: the changelog entry records that something changed and why; if there's a real reasoning trail behind it worth preserving, that goes to `archives/` directly, not folded into the changelog entry itself.
+
 Experimental content must be checked against current canon before shipping. A same-file read catches internal inconsistency; a repository-level read catches conflicts with established identity, reopened closed threads, duplicated facts, or changes that affect other systems.
 
 Escalate when there is a:

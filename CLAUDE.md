@@ -45,7 +45,20 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `combatsimulations/` | PvP duel simulator — a design instrument for surfacing rules gaps and balance findings, not canon. Python; no game content lives here |
 | `Oracle/` | The Oracle deck — the shared starter pool players draft from at character creation and draw from at end of session |
 | `playtesting/` | Playtest notes, feedback, and session logs |
-| `archives/` | Reserved for deprecated canon content and retired process notes. Cut draft cards live in `experimental/archives/` instead |
+| `archives/` | Historical design trails — what was discovered, considered, rejected, or consolidated. Not authoritative over current canon; see `archives/README.md`. Cut draft cards live in `experimental/archives/` instead |
+
+## Repository Layers
+
+Drew, 2026-08-12, the target shape for how the repository holds information — six layers, each answering a different question:
+
+- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`, `Oracle/`, `printing/`, `combatsimulations/`, `characters/`).
+- **Agent tools** (`agent-tools/`) — how to perform recurring work.
+- **Memory** (`memory.md`) — compact durable reasoning that still matters.
+- **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
+- **Changelog** (`changelog.md`) — the navigable record of what changed in the repository and why.
+- **Git history** — the ultimate byte-level rollback/reference layer.
+
+`unresolved-concerns.md` isn't a seventh layer — it's a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
 
 ## File Format Conventions
 
@@ -237,6 +250,7 @@ The full reasoning trail and incident history lives in `archives/consolidated/tr
 4. **Integrate ordinary approved work.**
 5. **Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.**
 6. **Reserve constitutional authority for Drew.**
+7. **Log every Authority 1/2 ship in `changelog.md`** — one entry, at the top, the moment it lands. Constitutional (Authority 3) work waits for Drew's sign-off first; log it once shipped.
 
 Detailed authority-level distinctions and the historical evolution of this gate are preserved in `archives/consolidated/canon-gate.md`.
 
