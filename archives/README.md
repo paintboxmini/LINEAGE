@@ -14,7 +14,7 @@ Consolidation is selective. Do not preserve complete deliberations, chronologica
 
 ## Changelog
 
-The live, ongoing changelog is not an archive category — it's its own repository layer, `changelog.md` at the repo root (`CLAUDE.md`, Repository Layers), moved out of this directory on 2026-08-12. It records that something changed and why; it does not hold the reasoning trail behind the change. A closed-out worklog fragment that shows up here (an old batch, something inherited from before the split) is source material for consolidation the same as any other historical artifact — review it, fold anything durable into the appropriate consolidated trail, delete the original once its lasting value is preserved or deliberately rejected. The live changelog itself is never that kind of material; it doesn't get consolidated away.
+The live, ongoing changelog is not an archive category — it's its own repository layer. It records that something changed and why; it does not hold the reasoning trail behind the change. A closed-out worklog fragment that shows up here (an old batch, something inherited from before the split) is source material for consolidation the same as any other historical artifact — review it, fold anything durable into the appropriate consolidated trail. 
 
 ## Authority
 
