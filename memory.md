@@ -1,6 +1,6 @@
 # LINEAGE — Memory
 
-## Memory is a bounded representation
+## Memory is the why
 
 Memory preserves concise historical context for major decisions when that context materially improves future reasoning. A memory entry records the problem, the decisive reasoning or failed alternatives that explain the decision, the resulting principle/rule, and only the minimum provenance necessary to understand why it matters. It does not preserve complete deliberations, chronological work logs, implementation details, or every rejected idea. Those belong in archives.
 
