@@ -2,7 +2,7 @@
 
 Eclipseria is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
 
-And it rains. Not storms — a slow rain, most days, most hours. Everything is a little damp; everyone has either made peace with that or left. It is background, not event, and people stop hearing it long before they stop feeling it.
+And it rains. A slow drizzle, most days, most hours. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
 **The world was born dying.** This is not decline and not a curse — it is the founding condition. Reality here was wounded into holding (`mythology/creation-myth-the-three-cuts.md`), and those wounds have never closed, because a closed wound holds nothing open. Eclipseria is working exactly as it was made to, at exactly the cost it was made to demand. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
 
@@ -16,13 +16,13 @@ The world responds to those who pay attention. Every region has its own logic, i
 
 ## The Shape of the World
 
-The known world is a basin surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, draining toward the grey water — and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
+The known world is a small continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
 Major hubs are roughly two days of travel apart. The Regency maintains the roads and the halfway-inns between them.
 
-Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — unnamed, unmapped, and thin, where the Three Cuts hold least. It is most of the world by area and nobody is from it. The maintained roads are the reason a crossing is routine instead of an expedition, and they are maintained *because* of what the ground does when nobody pays for it.
+Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — partially mapped, with just enough glyph posts to slow the instability. Where the lines between far off locations blend together. It is most of the world by area and nobody is from it. The maintained roads are the reason travel between the 4 major havens for people is routine instead of an expedition, and they are maintained.
 
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond.
+The Turnroot Weald wraps the eastern edge of the Ashfall Wastes.
 
 For deeper geography, see `world/geography-overview.md`.
 
@@ -33,10 +33,10 @@ For deeper geography, see `world/geography-overview.md`.
 Reality in Eclipseria is not self-sustaining. It is maintained by:
 
 - **The Seats** — universal laws that govern fundamental principles (Time, Memory, War, etc.). They exist on a higher plane and affect the entire continent.
-- **The Archons** — beings who have become the fullest biological expression of a Seat. They have no free will. They filter and "tint" the reality around them through their domain.
-- **The Regency** — a human bureaucratic council with no divine power, managing the practical infrastructure of civilization: citizens, roads, halfway-inns.
+- **The Archons** — beings who have become the fullest expression of a Seat. They control the distribution of their domain.
+- **The Regency** — a human bureaucratic council that rules the Capital and has heavy influence in the surrounding regions. 
 
-The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts). The Cuts are the deeper of the two.
+The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts).
 
 For the full cosmological system, see `mythology/seats.md`, `mythology/archons.md`, `mythology/resonant-people.md`, `mythology/resonant-items.md`, and `mythology/resonant-places.md` — or `world/seats-archons-echoes.md` for an index of all five.
 For the Unheld in depth, see `world/the-unheld.md`.
