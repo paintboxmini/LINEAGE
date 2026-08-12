@@ -1,34 +1,30 @@
 # The Regency
 
-The Regency is a 100% human bureaucratic council. They hold no divine power and make no claim to any.
+The Regency is a bureaucratic council of mixed races.
 
-Their jurisdiction is practical: managing citizens, maintaining roads, and operating the halfway-inns between major hubs. They are the reason travel across the continent is possible at a predictable pace.
+Their jurisdiction is practical: managing citizens, maintaining roads, and operating the halfway-inns between major hubs. They are the reason travel in the triangle is possible at a predictable pace.
 
-The Regency governs from the Citadel at the center of Eclipseria (the city). Their authority is administrative, not metaphysical. They are a symbol of power that has outlasted several explanations for what that power is.
-
-The Regency does not comment on the Seats. The Seats do not comment on the Regency.
-
-This is the official position. The actual history is different. See **The Pendragon Attempt** below.
+The Regency governs from the Citadel at the center of Eclipseria (the city).
 
 ---
 
 ## Council Members
 
-Each member wears an animal mask — officially regalia, informal, earned or assigned by reputation same as the titles they're named for. Actually: for the five who survived the room, the mask is the shape the Seat left on them, worn as much to cover what that did to their faces as to declare who they are. Isabella and Percival have no such mark underneath; they wear the same mask for the same office, tokens rather than scars, taken up because that's what a council member wears. Nobody has ever said any of this out loud, and neither of them knows there's a difference.
+Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the five who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
 
-**The original party was seven companions and Pendragon — eight in the room.** Two of the seven died in the fight: the first to hold the Owl, the first to hold the Panther. Names lost to the official record; the Regency doesn't keep one.
-**Five survived and became the first council:** Oswald, Cedric, Elara, Archibald, Eveline.
-**Isabella and Percival hold the Owl and Panther now — but they aren't the first to have replaced the dead.** Both seats turned over at least once before landing on them. Who held them in between, and what happened to those people, is unrecorded — deliberately, or just because nobody thought a mask needed a name attached.
+**The original party was seven companions and Pendragon — eight in the room.** Two of the seven died in the fight: the first to hold the Owl, the first to hold the Panther.
+**Five members of the council survived:** Oswald, Cedric, Elara, Archibald, Eveline.
+**Isabella and Percival hold the Owl and Panther now — but they aren't the first to have replaced the dead.** Both positions turned over at least once before landing on them. Who held them in between, and what happened to those people, is design debt.
 
 | Member | Title | Sphere |
 |--------|-------|--------|
-| Lord Oswald | The Lion | Regent — in title only. He's ruled outright since the throne's line ended. Sets the law that binds the government itself — what the Regency may do, not what its citizens may do. |
-| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`places/capital/capital.md`) — the court for businesses and citizens, Regency-controlled, with no authority over the government that controls it. Contracts and legal maneuvering are her tools inside that court, not a separate hobby. |
-| Lord Cedric | The Bear | City walls and military security. |
-| Lady Elara | The Fox | Trade and the marketplace. Every coin in Eclipseria. |
-| Lord Percival | The Owl | Cartography. Head of the Cartographers Guild (`factions/the-cartographers-guild.md`) — routes, surveys, way-marking, what's still passable and what isn't. |
-| Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors. Informally: the Pig — never to his face. See `places/capital/underground-bazaar.md`, `places/capital/the-wallows.md`. |
-| Lady Eveline | The Elephant | Silent. Observant. No public position on anything — except the one portfolio nobody's ever thought to question: critical infrastructure. The Cellar Custodians and the Weavers both answer to her office, on paper, without her ever saying a word about either. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
+| Lord Oswald | The Lion | Regent — in title only. He's ruled outright since the throne's line ended. |
+| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`places/capital/capital.md`) — the court for businesses and citizens. Contracts and legal maneuvering are her tools inside that court. |
+| Lord Cedric | The Bear | Military commander. |
+| Lady Elara | The Fox | Trade and the marketplace. Every coin in the capital. |
+| Lord Percival | The Owl | Cartographer. silent, observant, keeps records. |
+| Lord Archibald | The Boar | Operates the Underground Bazaar's infrastructure. Debt paid in favors or parts of yourself you can't stand to lose. Informally: the Pig — never to his face. See `places/capital/underground-bazaar.md`, `places/capital/the-wallows.md`. |
+| Lady Eveline | The Elephant | critical infrastructure. The Cellar Custodians and the Weavers both answer to her office. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
 
 ---
 
@@ -44,9 +40,9 @@ What different city factions say about the council. Collected from marketplace m
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The two-day roads stay two days because someone like him never stopped checking." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
-| Lady Eveline | "She never speaks, but she sees everything. Like a statue that follows you with its eyes." | *(No devout account recorded.)* |
+| Lady Eveline | "She never speaks, but she hears everything. |
 
-**What the city wonders, and never quite asks out loud.** Five of the seven masks have been on the same five faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The five under the masks today aren't the same five who started — the Regency simply never announces the swap. None of it is confirmed. None of it is denied, either, because nobody with an answer has ever been asked directly, and the masks make it very hard to be sure who you'd even be asking.
+**What the city wonders, and never quite asks out loud.** Five of the seven masks have been on the same five faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The five under the masks today aren't the same five who started. They're undead, their ancient, it's unatural, ect.— the Regency simply never announces the swap. None of it is confirmed. None of it is denied, either, because nobody with an answer has ever been asked directly, and the masks make it very hard to be sure who you'd even be asking.
 
 ---
 
