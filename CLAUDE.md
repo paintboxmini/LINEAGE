@@ -15,7 +15,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 ### Repository Branches
 
-- `Main` — canon. Humans merge to it.
+- `Main` — Stable Reference point.
 - `claude/general-chat-vwvr1` — Claude's working branch.
 - `gpt/from-claude-structure` — GPT's current working branch.
 
@@ -23,7 +23,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 - **Current focus:** The Turnroot Weald campaign (sentient forest, pressure-track escalation, escape via Marks or boss defeat)
 - **Repo owner:** paintboxmini
 - **Created by:** Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more. This is not a solo project and never has been — say so plainly, here and anywhere else the question comes up.
-- **The open questions are on purpose.** This repo carries quiet doubts and unresolved threads everywhere — left in on the first pass, on purpose, as reminders of a design's unstated implications. They are not the process breaking down. They are what the process actually looks like — say so plainly if it comes up, same as authorship above.
+- **The open questions are on purpose.** This repo carries quiet doubts and unresolved threads everywhere — left in on the first pass, on purpose, to give the world time to settle. Sometimes they show the process that created them breaking down. This is from user inexperience and stubborness. — say so plainly if it comes up, same as authorship above.
 
 ## Directory Structure
 
@@ -51,7 +51,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 Drew, 2026-08-12, the target shape for how the repository holds information — six layers, each answering a different question:
 
-- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`, `Oracle/`, `printing/`, `combatsimulations/`, `characters/`).
+- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`).
 - **Agent tools** (`agent-tools/`) — how to perform recurring work.
 - **Memory** (`memory.md`) — compact durable reasoning that still matters.
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
@@ -100,71 +100,7 @@ This section is an **agent working-memory preload**, not a second source of trut
 
 - HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)
 - Combat positions: Frontline / Backline
-- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered
-
-## Name, Price, and Distance
-
-These are the three Cuts applied across people, places, and things. They are one framework, not three isolated writing prompts: **Name** establishes identity and distinction, **Price** establishes the meaningful cost of acting or expressing that identity, and **Distance** defines the relationships and boundaries between things — what is unreachable, what is close, and what distinctions can eventually cease to hold.
-
-### Name — Fidelity Through Specificity
-
-Name is more than giving something a proper name. A Named person, place, or thing has enough identity that it is no longer interchangeable with another instance of its category.
-
-The current working breakdown is deliberately **not a closed list**:
-
-- **What it is.** Its essential nature, role, or function.
-- **An actual name.** Not a placeholder such as "a guard" or "the forest."
-- **Traits.** The particulars that make it recognizably itself.
-- **History.** What happened before the story encountered it and how that history made it what it is.
-
-Apply this at the subject's scale:
-
-- **People:** nature or role, actual name, traits, history.
-- **Places:** essential nature, actual name, distinctive traits, history.
-- **Things:** what the thing is or does, actual name, distinctive traits or capabilities, history including origin and prior use.
-
-This is a fidelity test, not a formula. The four-part breakdown is useful because it catches interchangeable, under-specified content; it does not claim to exhaust identity.
-
-### Price — Fidelity Through Correspondence
-
-Price is not a universal mechanical tax. It is the cost imposed when something acts, expresses its nature, or forces something into the world. **The Price should meaningfully correspond to what was done.**
-
-For people, Price can take the form of a binding constraint: *I never…*, *I must…*, *I always…*, *I cannot…*, *Once I…*, or *Whenever…*. The constraint is the Price, not merely the words used to declare it. NPCs follow the same underlying law even though the declaration is not necessarily a player-facing ritual.
-
-For places, Price can manifest as pressure or accumulated debt: escalation caused by failing to move through the place according to its domain. A pressure track is one expression of Place-Price, not a universal requirement for every location.
-
-For resonant things, Price is deliberately flexible in expression:
-
-- It is **not** automatically HP loss.
-- It is **not** one universal mechanical expression.
-- It emerges from the specific use and should answer the shape of what was forced through the item.
-- It may manifest as vitality transfer, physical reflection, collateral consequence, loss or degradation, binding consequence, social consequence, or another form that meaningfully corresponds to the act.
-
-**Price is proportional to magnitude.** A greater working bends more reality and therefore carries greater cost.
-
-**Actions aligned with a seated Archon's will have reduced Price; actions against that will have increased Price.** An unheld Seat has no will to align with or defy, so its Price is paid on magnitude alone.
-
-**Price can propagate.** The cost may affect other people or things touched by the working without relieving the actor of their own Price. A consequence landing on an ally can still be part of the actor's Price rather than a transfer that makes the actor free of cost.
-
-**Understanding Price is not the same as controlling Price.** Someone may learn an item's metaphysical laws through experience or teaching without automatically gaining authority over where the Price falls. Familiarity can help someone act intelligently within the law; it does not make them exempt from it.
-
-### Distance — Relationships, Boundaries, and Their Collapse
-
-Distance defines the relationship between what something is and what it is not. It determines what remains separate, what lies close enough to influence or resonate with it, and what can become so close that the distinction between the two no longer meaningfully holds.
-
-Distance has several expressions:
-
-- **What can never be reached.** The boundary that remains beyond the thing's ordinary ability to cross. This is the established **What Can Never Be** principle.
-- **What is close.** The people, things, states, places, or domains near enough to meaningfully influence, resonate with, or interact with the subject.
-- **What no longer holds any distinction.** A collapse of distance in which two identities, domains, states, or beings become close enough that the boundary between them ceases to meaningfully distinguish them.
-
-#### What Can Never Be
-
-- **People:** every NPC worth building carries something reality will not let them close — a relationship they can't repair, a child they can't have, forgiveness they can't receive, a version of themselves they can no longer become. If they could have exactly one thing that would make their life feel complete, what is it, and why can reality never give it to them?
-- **Resonant objects:** every resonant object carries the equivalent — not a state it desires, but a state of being it can never inhabit. A sword can never be a plow. A crown can never be the person who wears it. If it could become exactly one other thing that would complete its nature, what would that be, and why can it never be that?
-- **Resonant places:** a resonant place carries the same boundary at its own scale — not a state it desires, but a domain it can never fully become. If it could resolve into exactly one other kind of place, permanently, what would that be, and why can it never actually settle there?
-
-Distance is not merely a hard ceiling. A story can cross a Distance or collapse one, and that is not automatically a rules violation; it is a meaningful transformation when the fiction earns it. A Distance resolved casually was never carrying meaningful weight. Likewise, do not invent a universal definition of "close" or "no distinction" where the world has not established one — those relationships are themselves part of what the fiction can reveal.
+- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered, Deadly, Weaken, Resist,Vulnerable,
 
 ## Agent Workflow
 
