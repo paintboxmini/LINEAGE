@@ -147,7 +147,7 @@ This section is an **agent working-memory preload**, not a second source of trut
 
 - HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)
 - Combat positions: Frontline / Backline
-- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered, Deadly, Weaken, Resist,Vulnerable,ect.
+- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered, Deadly, Weaken, Resist, Vulnerable, Protect, and Immunity.
 
 ## Do Not
 
