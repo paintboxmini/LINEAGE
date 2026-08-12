@@ -1,5 +1,7 @@
 # LINEAGE — Claude Context
 
+planned structure for Claude.md -
+
 WHAT I NEED TO KNOW
 ├── identity / scope
 ├── repo orientation
@@ -49,7 +51,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 ## Repository Layers
 
-Drew, 2026-08-12, the target shape for how the repository holds information — six layers, each answering a different question:
+Drew, 2026-08-12, the target shape for how the repository holds information — 7 layers, each answering a different question:
 
 - **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`).
 - **Agent tools** (`agent-tools/`) — how to perform recurring work.
@@ -57,7 +59,7 @@ Drew, 2026-08-12, the target shape for how the repository holds information — 
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
 - **Changelog** (`changelog.md`) — the navigable record of what changed in the repository and why.
 - **Git history** — the ultimate byte-level rollback/reference layer.
-- **Backlog** (`unresolved-concerns.md`) is a seventh layer — it's a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
+- **Backlog** (`unresolved-concerns.md`) — a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
 
 ## File Format Conventions
 
