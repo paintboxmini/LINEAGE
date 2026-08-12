@@ -65,7 +65,7 @@ That third one matters most and gets skipped most often. This world is full of p
 
 ## What This Doesn't Override
 
-Some characters are thin on purpose, and this tool isn't a mandate to fix them. Weck's opacity is the character (`characters/weck.md`, `agent-tools/exemplars.md` — a candidate exemplar precisely because nothing about him is explained, only enacted). Moth's file states outright that his want isn't a gap to fill, it's the design. Steve is written to actively resist interiority as a joke (`characters/steve-and-pip.md`). A flat antagonist can be a deliberate choice, not an oversight (Cole, `quests/sour-tomatoes.md`).
+Some characters are thin on purpose, and this tool isn't a mandate to fix them. Weck's opacity is the character (`characters/weck.md` — a candidate exemplar precisely because nothing about him is explained, only enacted). Moth's file states outright that his want isn't a gap to fill, it's the design. Steve is written to actively resist interiority as a joke (`characters/steve-and-pip.md`). A flat antagonist can be a deliberate choice, not an oversight (Cole, `quests/sour-tomatoes.md`).
 
 The question before applying this is the same redefinition-test instinct as everywhere else in this repo: is the thinness a gap, or is it load-bearing? If a file already tells you the ambiguity is the point, this tool has nothing to add.
 

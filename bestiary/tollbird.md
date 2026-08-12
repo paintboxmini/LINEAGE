@@ -1,6 +1,6 @@
 # Tollbird
 
-*A tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and the Wait action.*
+*A Tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and the Wait action.*
 
 **Cards:** `cards/tollbird.md`
 

@@ -4,9 +4,16 @@ Name, Price, and Distance (`mythology/creation-myth-the-three-cuts.md`) applied 
 
 ---
 
-## Name — Giving a Face
+## Name — What It Is, and What It's Called
 
-The same act as it is for a person (`rules/people.md`): turning a generic instance of a type into one particular, specific place. "A forest" isn't Named. Turnroot Weald — sentient, hunting, escalating the longer anyone stays — is. What "a face" means for a place isn't literal; it's the detail, or cluster of details, that makes it recognizably itself instead of interchangeable with any other forest, any other ruin, any other market square. Established through the ordinary `places/` overview format, not a separate mechanic. Every place has a Name. Not every place is Resonant (`mythology/resonant-places.md`) — Resonance is a further alignment with a Seat's domain, not a requirement for existing.
+The same four parts as a person (`rules/people.md`), applied at a place's scale — Drew's own breakdown, flagged as probably incomplete rather than closed: **what something is, an actual name, traits, and history.**
+
+- **What it is.** The essential nature underneath the specifics — "a forest" isn't Named yet at this stage, just categorized.
+- **An actual name.** Turnroot Weald, not "the forest." A place earns a name the same way a person does — specificity, not a placeholder.
+- **Traits.** The detail, or cluster of details, that makes it recognizably itself instead of interchangeable with any other forest, any other ruin, any other market square — Turnroot's sentience, its hunting, its pressure escalating the longer anyone stays.
+- **History.** What already happened there before the story found it — what built the place into what it now is.
+
+Established through the ordinary `places/` overview format, not a separate mechanic. Every place has a Name. Not every place is Resonant (`mythology/resonant-places.md`) — Resonance is a further alignment with a Seat's domain, not a requirement for existing.
 
 ---
 
@@ -28,7 +35,7 @@ The same act as it is for a person (`rules/people.md`): turning a generic instan
 
 ## Distance — What a Place Can Never Be
 
-See `agent-tools/design-principles.md`, Distance — What Can Never Be, for the actual principle and worked test. In short: a resonant place can't fully become some other kind of place, permanently — Turnroot Weald can never become safe ground, because the pressure that makes it what it is has no off state, only a held one. `mythology/resonant-places.md`'s "No Confirmed Ceiling" section is the related, still-open question of whether a place can reach an equivalent to Archon at all — a different question from Distance, not to be conflated with it.
+See `agent-tools/design-principles.md`, Distance — What Can Never Be, for the actual principle and worked test. In short: a resonant place can't fully become some other kind of place, permanently — Turnroot Weald can never become safe ground, because the pressure that makes it what it is has no off state, only a held one. `mythology/resonant-places.md`'s "The Third Ladder Also Ends at Archon" section is the related, separate question of whether a place can reach an Archon-equivalent at all (confirmed: yes) — a different question from Distance, not to be conflated with it.
 
 ---
 

@@ -1,13 +1,25 @@
 # Archives — Scope
 
-This folder contains historical designs and superseded ideas. Nothing here is canonical unless explicitly restored. Files are retained for inspiration and design archaeology.
+Archives preserve durable historical trails of the project's design. They are not current sources of truth and should not be used as working memory.
 
-What belongs here:
+## Consolidated
 
-- Superseded mechanics (old initiative systems, retired deck rules)
-- Abandoned NPC versions
-- Worldbuilding that was intentionally replaced
-- Design journals and brainstorming
-- Old AI outputs that contained one or two useful ideas
+`consolidated/` is the permanent home for historical design trails. These preserve only the historical reasoning that materially helps explain why a current design is the way it is or prevents a known mistake from being repeated.
 
-The rest can live in git history.
+Consolidation is selective. Do not preserve complete deliberations, chronological work logs, obsolete formulas, or every rejected idea merely because they exist.
+
+## Retired
+
+`retired/` is a temporary review area for artifacts that may contain valuable material before they are deleted. Review each artifact fully and extract anything that belongs in canon, memory, unresolved concerns, agent tooling/harness, or a consolidated historical trail. Once the review is complete, delete the retired artifact. `retired/` is not a permanent archive category.
+
+## Changelog
+
+The live, ongoing changelog is not an archive category — it's its own repository layer, `changelog.md` at the repo root (`CLAUDE.md`, Repository Layers), moved out of this directory on 2026-08-12. It records that something changed and why; it does not hold the reasoning trail behind the change. A closed-out worklog fragment that shows up here (an old batch, something inherited from before the split) is source material for consolidation the same as any other historical artifact — review it, fold anything durable into the appropriate consolidated trail, delete the original once its lasting value is preserved or deliberately rejected. The live changelog itself is never that kind of material; it doesn't get consolidated away.
+
+## Authority
+
+Archives are never authoritative over current canon. When historical material conflicts with current canon, current canon wins.
+
+The archive preserves why and how the project became what it is; it does not determine what the project is now.
+
+Consolidated trails should be discoverable by their filenames and do not require a separate registry or metadata layer. The original historical source files remain in place until independent review is complete. Do not delete source material solely because a consolidation exists.

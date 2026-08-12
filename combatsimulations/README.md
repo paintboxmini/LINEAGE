@@ -1,23 +1,36 @@
 # Combat Simulations
 
-A PvP duel simulator for Tales Untold. It plays Frost vs Steele thousands of
-times to surface rules gaps, balance outliers, and emergent tactics that are
-hard to see from the table.
+Two engines for Tales Untold: `engine.py` runs 1v1 duels (Frost vs Steele,
+thousands of times) and `team_engine.py` runs N-vs-N team battles, both
+surfacing rules gaps, balance outliers, and emergent tactics that are hard to
+see from the table. They share `content.py`'s card definitions.
 
 This is a **design instrument, not canon.** Nothing here changes the game. Its
 output is two things: a list of rulings the written rules don't yet cover (the
-errata queue), and statistics about how the two real decks actually behave.
+errata queue), and statistics about how the decks actually behave — including,
+for team battles, death-rate tracking against Drew's target of roughly one PC
+death per 20 sessions.
 
 ## Running it
 
 ```
 cd combatsimulations
-python3 run.py                          # 20k duels, reader vs reader
-python3 run.py 50000 greedy greedy      # pick policies and count
-python3 run.py 1 reader reader --sample # one verbose transcript
+python3 run.py                          # duels: 20k, reader vs reader
+python3 run.py 50000 greedy greedy      # duels: pick policies and count
+python3 run.py 1 reader reader --sample # duels: one verbose transcript
+python3 team_run.py                     # team battles
 ```
 
 No dependencies. Python 3.8+.
+
+## The roster
+
+`content.py`'s `ROSTER` currently holds 23 decks: 22 archetypes/characters plus
+`burnout`, a diagnostic deck that exists only to keep the Exhaust path
+executing. Frost and Steele are the one real, hand-built ground-truth pair
+(actual decks a real player built) — everything else is built in-repo with
+varying depth of Drew's input, so treat Frost/Steele comparisons as the
+anchor and the rest as directional.
 
 ## What's modeled
 
@@ -31,9 +44,10 @@ No dependencies. Python 3.8+.
 - Tokens/keywords the two decks use: Resist (stacking, one per attack), Evade,
   Ward, Axiom's color ban (on the next reveal, attack *or* block), unpreventable
   damage, position/range gating, Blood Tithe's ongoing bleed.
-- Three decks in the roster: `frost`, `steele`, and `mire` (a Wound-attrition
-  build). Ally-only effects are correct no-ops in a duel and are marked DEAD in
-  `content.py`.
+- The findings below are from `frost`, `steele`, and `mire` (a Wound-attrition
+  build) — the tournament predates the roster's growth to 23 decks (see The
+  roster, above). Ally-only effects are correct no-ops in a duel and are
+  marked DEAD in `content.py`.
 - Wound mechanics: status cards that clog the hand, shuffle into decks, are
   counted (Press the Wound), and exile; plus combat-duration stat loss, initiative
   shift (Mockery), and targeting locks (Partition).
