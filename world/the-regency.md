@@ -1,6 +1,6 @@
 # The Regency
 
-The Regency is a bureaucratic council of mixed races.
+The Regency is a council of mixed races.
 
 Their jurisdiction is practical: managing citizens, maintaining roads, and operating the halfway-inns between major hubs. They are the reason travel in the triangle is possible at a predictable pace.
 
