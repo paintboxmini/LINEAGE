@@ -2,7 +2,7 @@
 
 ## What this trail preserves
 
-This is the historical evolution of the Oracle pool: how a generic reward pool became a deliberately constrained starter-selection pool, how the pool's composition rules were discovered, and why the 2026-08-03 63-card composition was ultimately retired rather than treated as canon.
+This is the historical evolution of the Oracle pool: how a generic reward pool became a deliberately constrained starter-selection pool, how the pool's composition rules were discovered, how a bug in one of its pinned cards got fixed without breaking the composition, and why the 2026-08-03 63-card composition was ultimately retired rather than treated as canon.
 
 The current Oracle mechanic is authoritative elsewhere. This file preserves the reasoning trail, not the current card list.
 
@@ -66,6 +66,30 @@ Several cuts were driven explicitly by the eligibility bar rather than by raw st
 
 Previously cut cards could return when the fixed composition demanded them. That was not treated as a reversal of their earlier evaluation: the composition constraint had changed what problem they were solving.
 
+## GORE, the pinned slot, and a condition that was never real
+
+The same day the 12/6/3 composition target was fixed, Drew asked how GORE actually worked — and the honest answer was that it didn't, quite. GORE's Effect read *"If target is Frontline, deal +d6 additional damage,"* printed on a card whose own Range was Melee — and Melee is legal only when both combatants are already Frontline. GORE could never legally be played against a target that wasn't Frontline, so the "if" could never resolve false. The simulator's own damage function implemented this literally: a branch that always fired whenever the function ran at all.
+
+The same diagnosis turned up on `cards/vescal.md`'s CENSER SWING (Range Melee, *"If target is Frontline, deal +2 damage"*) — a twin, not a one-off, reported alongside GORE's own fix and corrected the same way, at a proportionally smaller die cut (a flat +2 kicker, not a d6 one, so the compensating cut stopped one die step short of GORE's).
+
+Drew's fix made the sentence true instead of rewriting it: **Range Melee → Both, base die d8 → d4.** Moving to Both is what turns "if target is Frontline" back into a real, sometimes-false condition — the target can now legitimately be Backline when GORE is played. The die drop is what pays for that: a guaranteed d8 became a floor of d4 with a genuine, not guaranteed, d6 kicker on top.
+
+The fix collided immediately with the pool's own pinned composition. GORE was one of the Oracle's fixed **Red Melee-12**, set the same day. Moving it to Both would have silently dropped Red to 11/7/3. **INTERCEPT** was swapped into the vacated slot — a plain "Gain Protect and Resist 2" grant, the same shape as GUARD and PAIN IS FUEL already in the pool, and notably a card that had been cut from this exact pool on 2026-08-01 for redundancy at a 20-card size. GORE's departure reopened exactly the slot INTERCEPT had been trimmed from — a closed loop, not a coincidence chased for its own sake.
+
+Measured, not just reasoned through: a levelled duel series (GORE plus generic filler vs. a mirrored control, 20,000 paired seeds) showed the fixed version (d4/Both) at 34.2% against the as-printed version (d8/Melee) at 33.0% — a small **+1.2 point** net gain, meaning Both's added flexibility outweighs the smaller guaranteed floor at this stat level. Reported, not acted on further; Drew had already set both numbers deliberately in the same instruction that ordered the fix.
+
+This became the template for two more range-condition collisions the same session (STILLNESS, then CHARGE) — by the third occurrence, with the pool already frozen pending Drew's own hand-build (see below), the right call was to do nothing about the composition and flag the collision rather than force another swap into a file that was about to be emptied anyway.
+
+## "Delete the Oracle folder" — the instruction that got a pause instead of a keystroke
+
+Drew's actual words the next day were blunt: *"Delete the Oracle folder and its contents entirely."* Taken literally, that would have removed a directory `CLAUDE.md`'s own canonical structure table describes as *"the shared starter pool players draft from at character creation and draw from at end of session,"* referenced from `README.md`, `memory.md`, the combat simulator, and the print pipeline — and would have discarded, with zero stated reason, a composition that had just received a fixed 12/6/3 target, seven newly-written cards, and a bug-driven card swap (GORE → INTERCEPT, above), all in that same session. Documented shared infrastructure, wide reference fan-out, hours of very recent deliberate work, no reason given: exactly the shape of request this repo's own safety posture says to confirm rather than execute silently.
+
+The question came back with three concrete options rather than a bare "are you sure," so the answer could be specific instead of a yes/no: cut the mechanic entirely with full cleanup, delete just the file and leave the code dangling, or something narrower. Drew's actual answer matched none of the three exactly: *"the mechanics are staying but the folder needs to be at least emptied. I'm going to build it by hand from the coreset right before session 1."* The mechanic — the rule, the eligibility criteria, the 12/6/3 target — stays. Only the specific 63-card selection goes, because Drew wants to make that selection himself rather than use the AI-drafted one.
+
+The 63-card build was archived rather than deleted, unprompted — house convention (superseded material moves to `archives/`, "untouched, not deleted"), not a new call. It represented real, reusable design reasoning — which keywords were at zero and got covered, why certain cards were too strong for a starter pool, the eligibility bar that eliminated three "Wins ties" cards as a set — that Drew might want to reference later even though he wasn't using the selection as-is.
+
+A gap was left deliberately, and named as a judgment call rather than buried for a future reader to discover: the combat simulator's `ORACLE_DECK` and the print pipeline's oracle card list are hand-maintained duplicates of what used to be in the markdown file, never generated from it — emptying the markdown broke nothing mechanically; the simulator and print pipeline kept running exactly as before. But that also means canon (the now-empty `Oracle/baseoracledeck.md`) and code disagreed about what the Oracle pool contained, and would keep disagreeing until Drew's hand-built version replaced both. Left alone on the reasoning that nobody asked for the code changed and touching working simulator/print logic uninstructed is a real risk for zero requested benefit.
+
 ## Why the 63-card list was retired
 
 The 63-card composition was a completed selection exercise, not the final authored Oracle.
@@ -86,4 +110,7 @@ The 63-card list therefore remains preserved as historical groundwork rather tha
 - Coverage matters: the pool should expose the meaningful vocabulary of each color rather than accidentally hiding entire mechanics.
 - Range composition can be an explicit expression of color identity rather than an emergent statistical result.
 - Hard composition constraints can legitimately cause previously rejected cards to return and previously acceptable cards to leave; the constraint changes the role the candidate must fill.
+- A card's own printed condition can be structurally vacuous — always true by construction, not by intent — and the fix is to change the field that made it vacuous (Range) rather than the sentence.
+- A card fix that touches a pool's pinned composition needs its own resolution, not a silent gap; swapping in a card the same pool cut for redundancy earlier closes the loop cleanly.
 - A generated composition can be valuable historical design work without becoming canon. Preserve the reasoning, then author the actual pool deliberately.
+- A literal, sweeping instruction against documented shared infrastructure and recent deliberate work is exactly the shape of request to confirm with concrete options rather than execute silently — the actual answer narrowed the blast radius from "delete the mechanic" to "empty one file."

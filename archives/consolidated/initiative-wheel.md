@@ -4,7 +4,7 @@
 
 ## What this trail preserves
 
-This is the historical design trail for LINEAGE's initiative wheel: how turn order evolved from a conventional ordered sequence into a continuous positional structure, where the difficult cases came from, and which distinctions ultimately mattered.
+This is the historical design trail for LINEAGE's initiative wheel: how turn order evolved from a conventional ordered sequence into a continuous positional structure, where the difficult cases came from, which distinctions ultimately mattered, and how the saga reached its actual closure.
 
 This is historical context, not the current rules authority. Current initiative rules live in the canonical combat and glossary files.
 
@@ -59,19 +59,35 @@ This explained why several attempted fixes felt wrong. Efforts to protect the ma
 
 Sliding changes the arrangement of slots; it does not by itself change the underlying count. The marker's interaction with count is therefore the layer that needs to explain pass-overs and bonus/skip behavior.
 
-That distinction became more valuable than any individual patch.
+That distinction became more valuable than any individual patch — and it is the thread the rest of this trail pulls on to actually reach resolution.
 
-## The current historical direction
+## The resolution: from clamp model to closed system
 
-The working direction was to **keep the wheel and remove the need for large wraparound arithmetic by imposing a boundary condition on shifts**: a shift should not be allowed to move a target's effective scheduling position past the marker in the direction that would violate its invariant.
+The clamp direction described above — bound the shift against the marker instead of wrapping through full laps — was carried forward, but it was a waypoint, not the destination. Over three sessions, five distinct models were tried and discarded in sequence, each retired by one of Drew's own table-run counterexamples, before the model that survived turned out to already match his table intuition all along.
 
-A representative example used four combatants with the marker at slot 1. A target at count 2 shifted negatively by 2 would naively land at count 4, which would represent a full lap and therefore an immediate return to the actor. Under the clamp model, the shift instead stops at the position immediately before the marker's next visit.
+**Initiative Shift, fully implemented.** Turn order became a rotating queue — the current actor at the front, rotating to the back each turn. A shift repositions its target by the requested amount and the target *settles* into that new slot; it is not pinned to wherever the shift first placed it. A positive shift that crosses the current marker grants an immediate bonus turn; a negative shift delays the target by that many real slots, rather than only ever producing a binary skip. This closed a live bug where small negative shifts against large teams had been silently doing nothing.
 
-The attraction of this approach was that it removed the need to count complete revolutions merely to preserve the invariant. The wheel could remain the underlying structure.
+**Self-shift and the fence, corrected across two wrong passes.** The current actor is a special case: they stand *on* the turn marker, not some distance ahead of it. The first handling let a current actor grant themselves a bonus turn on any positive self-shift — wrong, since a self-shift shouldn't be a free action. The fix over-corrected the other way, clamping self-shifts so they could never cross at all — also wrong, per Drew's own clarification: standing on the marker, your first unit of movement takes you *off* it without crossing it; you only cross by completing a full revolution. What finally held was the same underlying rule applied consistently rather than special-cased for the actor: a shift crosses the marker once the target's forward distance to it is covered, and for the combatant standing on the marker, that distance is one full lap. Drew's own name for the model: the marker is a fixed **fence**, and "you can hop off a fence you're standing on without jumping it." This is what shipped to canon — `rules/combat.md` defines the turn marker as that fence, and `rules/card-glossary.md` defines crossing it and standing "on the fence" — replacing an earlier, self-contradicting canon draft that still had a pre-fence wraparound sentence sitting next to the new crossing rule.
 
-However, this direction was **not yet treated as final canon in the historical working document**. Ordinary non-wraparound pass-overs still needed full re-verification, terminology around count and slot remained under examination, and the canonical glossary/combat wording had not yet been rewritten at the time of the archived discussion.
+**Wait/Pass, finalized as an uncapped later-positioning trade.** An early version granted a Wait Initiative Shift +2 (come around sooner) — wrong for the same reason as the first self-shift attempt: you're standing on the marker when you Wait, so you can't act sooner than now regardless, and team sequencing usually needs *later* positioning (to follow an ally's setup), not sooner. The corrected model: Wait forfeits the action and moves the waiter −X (X slots later), uncapped, because moving backward can only ever cost a turn on a full lap — it can never grant one — so there is nothing left to protect by capping it.
 
-The lesson is therefore more durable than the provisional implementation: **when a cyclic initiative model becomes difficult, distinguish the spatial layer (slot and sliding) from the scheduling layer (count and the marker) before adding exceptions.**
+**COUNT-PRIMACY.** An initiative audit surfaced a real hole: a defensive negative shift on the attacker — who is standing on the marker — worked out by naive seat-walking, could land them in a seat that was actually *sooner*, a "slow" that accelerated. Two further bookkeeping patches failed before Drew named the actual invariant: **"the mechanics exist to enforce the fantasy, not to break or subvert it."** The fantasy is the definition — ±X means the target's next turn moves by exactly X turns, full stop. Enforcing that requires tracking two things at once: seat (the spatial, intuitive layer) and count (turns until the target acts — the layer that is actually true). When the two disagree, **the count wins**: an early marker arrival is a pass-over that costs no time; a count that reaches zero or below is a bonus turn; sliding from someone else's shift never changes a bystander's count. Verified by a 370-case exactness sweep across wheel sizes 4–8, every index, every shift magnitude and sign, self-shifts included: every shift moved the next turn by exactly X, with no exceptions left to special-case.
+
+**The canonical coordinates.** Drew asked for the one piece of the model he hadn't yet made fully explicit himself: how a shift ripples through *everyone else's* count, not just the target's. Formalized and engine-verified against a 73-case schedule-diff sweep on top of the earlier exactness sweep: a non-crossing shift is one relocation — the target's next turn moves exactly X and the reseat persists; each of the X slots the target passes through nudges one turn the opposite way; nobody else moves. This is exactly Drew's own visual procedure — "insert the target, slide everyone they passed" — which means he had already internalized the correct model in seat-coordinates; the formal pass proved it rather than replacing it. The wheel is the human-facing rendering; the countdown vector — turns until each combatant's next action — is the underlying state both engines and the canon reason from.
+
+**Hierarchy finalized.** The representation question closed with one further refinement, superseding the countdown-vector-as-canonical framing directly above it: **linear order is canonical; the countdown is derived from position** (turns-until-action = position minus one, current actor normalized to one); the wheel is UI that exists only to visualize wraparound, because turns repeat forever and a line does not. A shift is a list operation — remove, reinsert at ±X, slide the intervening entries by one — and the wheel updates because it pictures the list, not the other way around.
+
+**INITIATIVE: SOLVED AND CLOSED.** Drew's own words: "As solved as it will need to be for the rest of the game's design." The fantasy is defined, the prime invariant is proven rather than asserted (370-case exactness sweep plus 73-case cascade sweep, all wheel sizes, all positions, both signs, self-shifts included), the canon is written at three altitudes — linear order canonical, count derived, wheel visualization — across `rules/invariants.md`, `rules/card-glossary.md`, and `rules/combat.md` — and both engines are aligned to it. Wait, the fence, the marker, displacement, and crossing all now derive from the single invariant, with no special cases left standing. **Initiative is now a protected system — Level-3 in the Translation Principle's authority taxonomy: reopening it requires playtest evidence, not impulse, the same fence the core HP formula sits behind.**
+
+The arc in full, for the record: rotating queue → fence → marker+flag → count-primacy → linear-order hierarchy. Five models across three sessions, each killed by one of Drew's own table-run counterexamples, ending at the discovery that his table intuition *was* the specification all along.
+
+## The coda: duels are degenerate, four is the peak
+
+Two further rulings landed after closure, both dated 2026-08-11. Neither reopens the protected model — both describe where it applies best, not a change to how it works.
+
+**The wheel is a team instrument; duels are geometrically degenerate.** Drew noticed the wheel "has problems in duels." The diagnosis: a 2-seat wheel has no interior to reposition within — the only place to move is across the marker, which is a crossing by definition — so every Initiative Shift in a duel collapses to one of three extremes (no-op, bonus turn, or skip), and the rich middle ground of subtle repositioning simply doesn't exist there. Not a bug; geometry. Decision: keep the wheel as-is for team fights, since real table combat is essentially always four or more combatants; pure 1v1 is the simulator's domain, not real play, and bespoke duel rules can wait until 1v1 sparring is ever a real mode.
+
+**Four combatants is the peak of Initiative Shift's impact — not the floor.** A follow-up correction to the entry above: it isn't that impact keeps climbing past the four-seat threshold. Drew, direct: "initiative shifting is at its highest impact in a 4 combatant fight. 3 and shifts get reduced." Two seats (a duel) is degenerate as already established; three is reduced from peak; four is where the mechanic does its best work — confirmed live at a 2v2 table test that was, itself, exactly that four-seat sweet spot. What happens past four combatants is a separate, later finding, not this one: `agent-tools/design-principles.md` now carries Drew's own 2026-08-12 addition that impact decreases again past four, stated as fact and not yet explained. This trail records only the earlier half of that shape; the design-principles file is the current, complete word on the full curve — check there rather than treating this entry as the last word on combatant count.
 
 ## Why this mattered to the broader system
 
@@ -83,6 +99,8 @@ The historical pressure on the system was therefore not simply "make Initiative 
 
 > Preserve a continuous, manipulable initiative structure while making the relationship between position, scheduling, and the turn marker understandable enough to support card design.
 
+That pressure is what the resolution above actually discharged: the model that shipped is legible enough that "±X moves your next turn by exactly X" is the whole rule a player needs to hold, with the seat/count distinction doing the work underneath rather than leaking into play.
+
 ## What was learned
 
 1. **A wheel creates a reference-point problem that a linear list does not.**
@@ -91,10 +109,14 @@ The historical pressure on the system was therefore not simply "make Initiative 
 4. **Slot and count are distinct concepts.** Confusing them produces patches that solve the wrong layer.
 5. **Large cyclic shifts are a symptom worth diagnosing, not an invitation to pile on more wraparound exceptions.**
 6. **The wheel is valuable enough to preserve if its invariants can be expressed without exposing its underlying arithmetic to play.**
+7. **The model that finally worked was the one already in use at the table.** Formalizing Drew's own visual procedure — insert the target, slide everyone it passed — rather than replacing it with something cleverer, was the actual unlock; the "canonical coordinates" pass proved his intuition rather than correcting it.
+8. **A closed system stays closed until real evidence reopens it, not until someone has a better idea.** The two 2026-08-11 rulings landed after closure without reopening the model itself — narrow, table-tested, and additive to *where* the system applies, which is what "protected" is supposed to allow.
 
 ## Related canonical and working documents
 
 - `rules/combat.md` — current initiative and wheel rules
 - `rules/card-glossary.md` — current Initiative Shift X definition
 - `rules/initiative-shift-examples.md` — worked cases
+- `rules/invariants.md` — the prime invariant ("the mechanics exist to enforce the fantasy") and the linear-order/count/wheel representation hierarchy
+- `agent-tools/design-principles.md` — the four-combatant peak finding and its 2026-08-12 continuation (impact decreasing past four)
 - `archives/initiative-slots.md` — source working draft that supplied part of this historical trail
