@@ -13,6 +13,12 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 ## What This Repo Is
 
+### Repository Branches
+
+- `Main` — canon. Humans merge to it.
+- `claude/general-chat-vwvr1` — Claude's working branch.
+- `gpt/from-claude-structure` — GPT's current working branch.
+
 - **System:** Tales Untold — three stats (Mind/Body/Soul), card-based combat using RPS resolution, d-scale damage dice
 - **Current focus:** The Turnroot Weald campaign (sentient forest, pressure-track escalation, escape via Marks or boss defeat)
 - **Repo owner:** paintboxmini
