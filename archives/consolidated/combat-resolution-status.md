@@ -166,4 +166,4 @@ The current combat rules are the authority. This trail preserves why those rules
 
 ## Provenance
 
-The principal historical material is the archived combat work and simulation findings in `archives/key-design-decisions.md`, the retired worked combat example preserved at `archives/combat-example-2026-08-06.md`, and the current canonical implementations in `rules/combat.md` and `rules/card-glossary.md`.
+The principal historical material was the archived combat work and simulation findings in `archives/key-design-decisions.md`, retired and consolidated into this file on 2026-08-12. What survives of it lives here now, not in that file. Also see the retired worked combat example preserved at `archives/combat-example-2026-08-06.md`, and the current canonical implementations in `rules/combat.md` and `rules/card-glossary.md`.

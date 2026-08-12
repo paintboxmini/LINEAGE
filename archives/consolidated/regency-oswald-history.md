@@ -4,7 +4,7 @@ This is the earliest seed material for the Regency's hidden history — the Pend
 
 ## Where this came from
 
-This material was moved into `archives/key-design-decisions.md` on 2026-07-19, as part of a wholesale relocation of `memory.md`'s old "Key Design Decisions" section. That section's own header is explicit about what it is: entries preserved exactly as originally written, none edited or corrected even where later canon moved past them. The Pendragon Attempt entries sit near the top of that file, among the very first batch of lore ever compressed into `memory.md` — this is close to day one of the cosmology existing at all.
+This material was moved into `archives/key-design-decisions.md` on 2026-07-19, as part of a wholesale relocation of `memory.md`'s old "Key Design Decisions" section, and consolidated here on 2026-08-12 when that file was retired. It was preserved exactly as originally written, never edited or corrected even where later canon moved past it. The Pendragon Attempt entries sat near the top of that file, among the very first batch of lore ever compressed into `memory.md` — this is close to day one of the cosmology existing at all.
 
 ## The seed, as originally written
 
@@ -34,4 +34,4 @@ Current canon for the Pendragon Attempt, Aurora, Oswald, and the council lives i
 
 - `changelog.md` — the full correction trail (search "Pendragon" and "Oswald")
 - `world/the-regency.md` — current canon
-- `archives/key-design-decisions.md` — the original entries this file summarizes, preserved verbatim, lines 26–33 of the 2026-07-19 batch
+- `archives/key-design-decisions.md` — retired 2026-08-12; held the original entries this file summarizes (lines 26–33 of the 2026-07-19 batch), preserved verbatim, before consolidation here

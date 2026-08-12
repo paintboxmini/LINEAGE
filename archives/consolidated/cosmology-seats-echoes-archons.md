@@ -4,7 +4,7 @@ This is the design trail for how Seats, their bearers, and the beings aligned to
 
 ## The Unheld as a hard edge, not a soft one
 
-Before Seats were even defined as a system, one boundary was already locked down: the Unheld Ocean's coastline. From the earliest 2026-07-19 batch of `memory.md` entries (now `archives/key-design-decisions.md`): nothing sails or fishes the Unheld, no islands exist in it, and unheldness itself does not cross the coastline by flowing or by being carried — inland water is mundane, only the tidal motion travels upstream. This is why ritual bathing has to happen at the coast, and it's the reason the Island in a Ship stayed the setting's one deliberate exception rather than becoming a precedent. The hard-threshold framing mattered later precisely because it kept getting cited as the template for other cosmological edges — including, eventually, what a Seat can and can't do.
+Before Seats were even defined as a system, one boundary was already locked down: the Unheld Ocean's coastline. From the earliest 2026-07-19 batch of `memory.md` entries (later moved to `archives/key-design-decisions.md`, retired and consolidated into this file on 2026-08-12): nothing sails or fishes the Unheld, no islands exist in it, and unheldness itself does not cross the coastline by flowing or by being carried — inland water is mundane, only the tidal motion travels upstream. This is why ritual bathing has to happen at the coast, and it's the reason the Island in a Ship stayed the setting's one deliberate exception rather than becoming a precedent. The hard-threshold framing mattered later precisely because it kept getting cited as the template for other cosmological edges — including, eventually, what a Seat can and can't do.
 
 ## Seats and Echoes, defined for the first time
 
@@ -55,6 +55,6 @@ Current canon for Seats, Archons, and Resonant People (formerly Echoes) lives in
 - `mythology/archons.md` — current Archon rules, including fading and multiple bearers on one Seat
 - `mythology/resonant-people.md` — current name and rules for what this trail calls Echoes
 - `mythology/resonant-items.md`, `mythology/resonant-places.md` — the two later ladders not covered by this trail
-- `archives/key-design-decisions.md` — the original entries this file traces, including the verbatim 2026-07-19 seed material and the Black Maggie / Aege / consolidation entries
+- `archives/key-design-decisions.md` — retired 2026-08-12; held the original entries this file traces (the verbatim 2026-07-19 seed material and the Black Maggie / Aege / consolidation entries) before they were consolidated here
 - `characters/black-maggie.md` — the promoted file this trail's ratification produced
 - `characters/aege.md` — the fated-not-promoted Resonant Person this trail describes

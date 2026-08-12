@@ -4,7 +4,7 @@
 
 This is the historical design trail for Briarwatch: how a placeholder "farming settlement" with unnamed livestock and a nearby travel-woodland became a single, coherent piece of ecology — a farm-claim cut into Turnroot Weald's own edge, with a named grazing animal, a two-fence system built for two different reasons, and a creature (the Tollbird, née Fencerow Shrike) whose kit, stat block, and larder all trace back to the same fact: this ground used to belong to the forest.
 
-This is the largest single cluster in `archives/key-design-decisions.md` (roughly its 2026-07-19 entries covering Briarwatch, Roadhouse, the Wardens, the Fencerow Shrike/Tollbird, Skeinwing, and the Masons). This file folds that cluster into one narrative trail, in the order the corrections actually landed. It is historical context, not current authority — current facts live in `places/briarwatch.md`, `places/roadhouse.md`, `bestiary/tollbird.md`, `bestiary/skeinwing.md`, `quests/the-larder-fence.md`, and `factions/the-masons.md`.
+This was the largest single cluster in `archives/key-design-decisions.md` (roughly its 2026-07-19 entries covering Briarwatch, Roadhouse, the Wardens, the Fencerow Shrike/Tollbird, Skeinwing, and the Masons) before that file was retired on 2026-08-12. This file folds that cluster into one narrative trail, in the order the corrections actually landed. It is historical context, not current authority — current facts live in `places/briarwatch.md`, `places/roadhouse.md`, `bestiary/tollbird.md`, `bestiary/skeinwing.md`, `quests/the-larder-fence.md`, and `factions/the-masons.md`.
 
 ## The starting problem: a placeholder wearing a name
 
@@ -40,7 +40,7 @@ Not an arbitrary pick, and not left permanently unstated either — the continen
 
 ## Briarwatch added to exemplars (later retired)
 
-Drew, direct: *"briarwatch is a location exemplar."* It became the first location entry in what was then `agent-tools/exemplars.md`, framed around a different angle than the Tollbird's own entry — where the creature demonstrates a kit as behavior, Briarwatch demonstrated a location's entire identity worked through as one piece of ecology: displaced wildlife, two fences built of different materials for opposite reasons, a GM Secret that hides only what's genuinely unknowable. The exemplars tool itself no longer exists — it was later folded into a broader doctrine-layer cut and archived along with the rest of `agent-tools/`'s refinement-doctrine files. That cut is its own separate story, recorded elsewhere in `archives/key-design-decisions.md`; it doesn't change anything the Briarwatch entry itself established.
+Drew, direct: *"briarwatch is a location exemplar."* It became the first location entry in what was then `agent-tools/exemplars.md`, framed around a different angle than the Tollbird's own entry — where the creature demonstrates a kit as behavior, Briarwatch demonstrated a location's entire identity worked through as one piece of ecology: displaced wildlife, two fences built of different materials for opposite reasons, a GM Secret that hides only what's genuinely unknowable. The exemplars tool itself no longer exists — it was later folded into a broader doctrine-layer cut and archived along with the rest of `agent-tools/`'s refinement-doctrine files. That cut is its own separate story, recorded in `archives/consolidated/agent-tools-and-harness-evolution.md`; it doesn't change anything the Briarwatch entry itself established.
 
 ## Turnroot Weald moved west, larder fence vs. giant fence clarified
 
@@ -141,4 +141,4 @@ Briarwatch's ecosystem was also the proving ground for a stress test of the enco
 - `bestiary/fenwool.md` — the named livestock
 - `places/turnroot-weald.md` — the territory Briarwatch was cut from
 - `quests/hollow-below-briarwatch.md` — where the Borrower-livestock thread landed
-- `archives/key-design-decisions.md` — the source log this trail consolidates
+- `archives/key-design-decisions.md` — retired 2026-08-12; was the source log this trail consolidates
