@@ -5,11 +5,10 @@ planned structure for Claude.md -
 WHAT I NEED TO KNOW
 ├── identity / scope
 ├── repo orientation
-├── living principles
-├── translation principle
-├── authority / canon gate
+├── canon gate
 ├── workflow
 └── minimal mechanical preload
+├── what not to do
 
 This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRPG system. Content here is written for a DM and their table, not for publication. Tone is direct, evocative, and mechanical — no purple prose, no padding.
 
@@ -89,19 +88,13 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 - Commit in logical groups (one concern per commit)
 - Always push with `-u origin <branch>`
 
-## Stat System Quick Reference
+## Canon Gate
 
-This section is an **agent working-memory preload**, not a second source of truth. The detailed rule files remain authoritative when precision or conflict requires checking. Keep the frequently needed baseline here so an agent does not have to re-read basic rules for every task.
-
-| Stat | Color | Perception Mode | Damage Die |
-|------|-------|-----------------|------------|
-| Mind | Blue | Reason | d6 (utility) |
-| Body | Red | Senses | d8 (power) |
-| Soul | Green | Read | d4 (precision) |
-
-- HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)
-- Combat positions: Frontline / Backline
-- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered, Deadly, Weaken, Resist,Vulnerable,
+Determine what kind of change this is.
+Check it against current canon.
+Integrate ordinary approved work.
+Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.
+Reserve canon-level authority for Drew.
 
 ## Agent Workflow
 
@@ -140,6 +133,20 @@ Content
 What specifically exists within the game.
 People, creatures, places, items, cards, encounters, and other instantiated game content.
 
+
+## Stat System Quick Reference
+
+This section is an **agent working-memory preload**, not a second source of truth. The detailed rule files remain authoritative when precision or conflict requires checking. Keep the frequently needed baseline here so an agent does not have to re-read basic rules for every task.
+
+| Stat | Color | Perception Mode | Damage Die |
+|------|-------|-----------------|------------|
+| Mind | Blue | Reason | d6 (utility) |
+| Body | Red | Senses | d8 (power) |
+| Soul | Green | Read | d4 (precision) |
+
+- HP: (3 × Body) + Soul + Mind (baseline; bosses may go bespoke)
+- Combat positions: Frontline / Backline
+- Special token types in use: Rooted, Thorns, Evade, Blind, Staggered, Deadly, Weaken, Resist,Vulnerable,ect.
 
 ## Do Not
 
