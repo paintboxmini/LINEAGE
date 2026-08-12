@@ -116,19 +116,11 @@ This section is an **agent working-memory preload**, not a second source of trut
 5. **Output** — Return only finalized content. No drafts unless requested.
 6. **Wait** — After completion, await next instruction. Do not assume next task.
 
-Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is a source of truth. Drew's word is a source of truth. You are a source of truth.
+Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is a source of truth.
 
-## Work Modes
 
-Dependent systems (sim, print sheets, cross-references) do not rebuild on every keystroke. Like a compiler, let them go stale and sync deliberately:
 
-- **Working** (default) — edit the target files only. Record stale dependents under **Pending propagation** at the top of `memory.md` instead of rebuilding them per change.
-- **Sync** — on request or at a natural pause: propagate pending changes through dependents (sim reconciliation, print regeneration, reference sweeps), clear the ledger. Also scan **Active Reasoning** for entries that are **closed** — fully absorbed into the canon text they explain, no longer cited as precedent by newer entries, no open follow-up thread depending on them — and move those, verbatim, to `archives/` for later archive review. This is a per-entry judgment on material already in front of you, not a repo-wide check, so it belongs at Sync cadence rather than waiting for Release. When a Sync pass batches multiple *unrelated* pieces of new engine surface (new mechanics that don't share underlying code, just a landing date), build and verify them as separable pieces even though they ship in the same pass — batching buys one review-and-regression cycle instead of several, not a license to treat the combined diff as one thing. More surface area landing at once means more to untangle if something breaks; test each piece on its own before trusting the combination.
-- **Release** — full verification: acceptance tests, print sheets regenerated, the combat simulator reconciled against current canon, ledger empty. Also the right cadence for the expensive half of the `memory.md` audit: checking whatever remains in **Active Pending Threads** and **Active Reasoning** against live canon for drift — has something changed elsewhere in the repo that makes an old entry's claims stale or wrong, not just whether it's done being useful (that's Sync's job now). This is genuinely expensive (multi-pass verification against the whole repo) and doesn't belong at ordinary Sync cadence.
-
-Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
-
-### Canonical Content
+### Canon layer
 
 Tales Untold has three canonical domains:
 
@@ -144,13 +136,6 @@ What is true about Eclipsera.
 
 Setting facts, mythology, cosmology, history, locations, factions, Seats, Archons, and other truths about the world.
 
-Content
-
-What specifically exists within the game.
-
-People, creatures, places, items, cards, encounters, and other instantiated game content.
-
-These three domains are Tales Untold canon. A change to any of them can change what the game is.
 
 Project Constitution
 
@@ -158,42 +143,23 @@ The repository also contains a separate layer governing how Tales Untold is deve
 
 The Project Constitution applies to Drew, agents, and anyone else working in the repository. It governs authority, translation, canon handling, review, change propagation, and preservation of design reasoning.
 
-The Project Constitution is not Tales Untold canon. It is the shared working agreement that protects and develops the canon.
+The Project Constitution is not Tales Untold. It is the shared working agreement that protects and develops the game.
 
-When a change touches the constitution itself, treat it as a constitutional change rather than silently applying it as ordinary design work.
+When a change touches the constitution itself, treat it as a canon layer change rather than silently applying it as ordinary design work.
 
-
-## Translation Principle
-
-Scope: lore and canon, rules text, card wording, session drafts, and the agent harness itself — anywhere Drew's compressed input becomes written content.
-
-- **Translate compressed input into explicit form when the evidence supports it.** Tone, register, imagery, examples, metaphors, and partial ideas can be expanded when the underlying meaning is strongly supported.
-- **Distinguish direct rulings from agent inference.** Drew's explicit statements are rulings. Your own conclusions are inferences; do not present them as if Drew stated them.
-- **Never silently redefine established meaning.** If an interpretation would change something already established, stop and surface the conflict rather than reconciling it invisibly.
-- **Surface genuine design forks instead of choosing invisibly.** If multiple plausible interpretations would materially change the design, expose the fork and let Drew decide.
-- **Leave genuinely unspecified details unspecified.** Do not manufacture missing facts merely to make prose or a design feel complete.
-- **Do not invent specific facts to make prose complete.** Do not fill in unprovided numbers, durations, frequencies, causes, motives, headcounts, or mechanisms as incidental details.
-- **Do not sand over unresolved conflicts with fluent prose.** If the underlying conflict has no actual resolution, don't hide it behind language that merely sounds resolved.
-- **Flag apparent conflicts when Drew's own new statement may contradict established material.** Name the established fact and the apparent conflict; let Drew decide rather than silently privileging either one.
-
-The full reasoning trail and incident history lives in `archives/consolidated/translation-principle.md` and `archives/translation-principle-full.md`. This section is the operational form only.
 
 ## The Canon Gate
 
 1. **Determine what kind of change this is.**
-2. **Translate the request without silently redefining it.**
-3. **Check it against current canon.**
-4. **Integrate ordinary approved work.**
-5. **Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.**
-6. **Reserve constitutional authority for Drew.**
-7. **Log every Authority 1/2 ship in `changelog.md`** — one entry, at the top, the moment it lands. Constitutional (Authority 3) work waits for Drew's sign-off first; log it once shipped.
-
-Detailed authority-level distinctions and the historical evolution of this gate are preserved in `archives/consolidated/canon-gate.md`.
+2. **Check it against current canon.**
+3. **Integrate ordinary approved work.**
+4. **Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.**
+5. **Reserve canon level authority for Drew.**
+6. **Log every ship in `changelog.md`** — one entry, at the top, the moment it lands. Canon (Authority 3) work waits for Drew's sign-off first; log it once shipped.
 
 ## Do Not
 
-- Invent mechanics in isolation — adapt from existing stat blocks, and flag if something is genuinely new
+- Invent mechanics in isolation — flag if something is genuinely new
 - Create files outside the established directory structure without asking
 - Use emoji in files
-- Write a fact's own justification into canon text. A location or creature file states what is — geography, behavior, appearance — not why it must be that way. Reasoning belongs in `memory.md`'s threshold log, where the before-state and the "why" are the whole point; a content file explaining itself is reasoning that leaked out of process and into product
 - Use specific distances in bestiary or quest content — combat is abstract positioning (Frontline/Backline) and "in reach / close / far," never measured distance
