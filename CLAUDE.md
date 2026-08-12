@@ -95,6 +95,7 @@ Check it against current canon.
 Integrate ordinary approved work.
 Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.
 Reserve canon-level authority for Drew.
+Log every ship in changelog.md — one entry, at the top, the moment it lands.
 
 ## Agent Workflow
 
