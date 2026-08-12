@@ -52,7 +52,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 Drew, 2026-08-12, the target shape for how the repository holds information — 7 layers, each answering a different question:
 
-- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`).
+- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`, `characters/`, Oracle/).
 - **Agent tools** (`agent-tools/`) — how to perform recurring work.
 - **Memory** (`memory.md`) — compact durable reasoning that still matters.
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
