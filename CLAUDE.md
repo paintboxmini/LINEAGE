@@ -119,8 +119,6 @@ This section is an **agent working-memory preload**, not a second source of trut
 
 Prioritize clarity over cleverness. Prefer system-consistent solutions over novel ones. The repo is a source of truth.
 
-
-
 ### Canon layer
 
 Tales Untold has three canonical domains:
@@ -142,25 +140,6 @@ Content
 What specifically exists within the game.
 People, creatures, places, items, cards, encounters, and other instantiated game content.
 
-Project Constitution
-
-The repository also contains a separate layer governing how Tales Untold is developed and maintained.
-
-The Project Constitution applies to Drew, agents, and anyone else working in the repository. It governs authority, translation, canon handling, review, change propagation, and preservation of design reasoning.
-
-The Project Constitution is not Tales Untold. It is the shared working agreement that protects and develops the game.
-
-When a change touches the constitution itself, treat it as a canon layer change rather than silently applying it as ordinary design work.
-
-
-## The Canon Gate
-
-1. **Determine what kind of change this is.**
-2. **Check it against current canon.**
-3. **Integrate ordinary approved work.**
-4. **Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.**
-5. **Reserve canon level authority for Drew.**
-6. **Log every ship in `changelog.md`** — one entry, at the top, the moment it lands. Canon (Authority 3) work waits for Drew's sign-off first; log it once shipped.
 
 ## Do Not
 
