@@ -179,6 +179,39 @@ Dependent systems (sim, print sheets, cross-references) do not rebuild on every 
 
 Batch small canon edits in Working mode; do not re-run tournaments or regenerate print sheets for every card tweak.
 
+### Canonical Content
+
+Tales Untold has three canonical domains:
+
+Rules
+
+How the game works.
+
+Mechanical rules, procedures, formulas, keywords, card rules, character rules, combat rules, and other statements that determine game behavior.
+
+World
+
+What is true about Eclipsera.
+
+Setting facts, mythology, cosmology, history, locations, factions, Seats, Archons, and other truths about the world.
+
+Content
+
+What specifically exists within the game.
+
+People, creatures, places, items, cards, encounters, and other instantiated game content.
+
+These three domains are Tales Untold canon. A change to any of them can change what the game is.
+
+Project Constitution
+
+The repository also contains a separate layer governing how Tales Untold is developed and maintained.
+
+The Project Constitution applies to Drew, agents, and anyone else working in the repository. It governs authority, translation, canon handling, review, change propagation, and preservation of design reasoning.
+
+The Project Constitution is not Tales Untold canon. It is the shared working agreement that protects and develops the canon.
+
+When a change touches the constitution itself, treat it as a constitutional change rather than silently applying it as ordinary design work.
 
 
 ## Translation Principle
