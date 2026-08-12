@@ -8,7 +8,7 @@ A liminal space between locations, where features of far off locations blur toge
 
 ---
 
-**The land does not stay separate.** *(Distance — the boundary that keeps a thing from spreading until it has eaten everything else.)* Terrain does not transition; it bleeds. Salt flat blends with old-growth forest. A river runs through country with no watershed that could feed it. 
+Terrain does not transition; it bleeds. Salt flat blends with old-growth forest. A river runs through country with no watershed that could feed it. 
 
 ---
 
