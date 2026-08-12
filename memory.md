@@ -6,12 +6,6 @@ Memory preserves concise historical context for major decisions when that contex
 
 Memory is not a transcript of how we thought. It is the smallest durable explanation of why the current design is the way it is.
 
-## Branch map
-
-- `Main` — canon. Humans merge to it.
-- `claude/general-chat-vwvr1` — Claude's working branch (this log's primary author).
-- `claude/crystal-project-chat-76gzcn` 
-
 ---
 
 ## Multi-Agent Notes
