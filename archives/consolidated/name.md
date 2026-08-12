@@ -71,3 +71,35 @@ The framework is strongest when these distinctions are preserved rather than for
 - Name, Price, and Distance are related structural concepts but describe different relationships.
 - A single object or action may engage more than one Cut at different conceptual levels; that does not make the Cuts interchangeable.
 - For cards specifically, **identity is Name while spending is Price**. The distinction resolved a real conflict between the combat mapping and the already-shipped Three Cuts framing.
+
+## Cuts over Seats — the cosmological hierarchy settled
+
+The Three Cuts don't merely parallel the Seat structure; they are structurally prior to it. Drew's ruling (2026-08-02) settled the question directly: **"both. if the cuts weaken the seats must also be weakened by extension. the seats only exist because of the cuts."**
+
+Two statements had looked like rivals but weren't. `mythology/creation-myth-the-three-cuts.md` and `rules/the-summons.md` both say *"Where any Cut weakened, the Unheld pressed close."* `world/eclipseria-overview.md` says *"Where the Seats weaken, the Unheld presses in."* Drew's ruling makes the second a downstream case of the first: Seats are fixed positions **inside** the structure the Cuts made. No Cuts, no structure, nothing for a Seat to sit in.
+
+The asymmetry has to be written in explicitly, because it does not run both ways: a Seat standing Empty breaks its own domain without thinning a Cut — damage travels **down** from the Cuts, not up. Drew's sentence only licensed one direction; the symmetric reading is the kind of thing a later reader would assume for free if nobody said otherwise.
+
+`mythology/seats.md` already described Seats as "as permanent as the Three Cuts," which sat right next to this fact without ever stating it. Equal permanence is not the same claim as dependency — the file had the first without the second. This is now written into `mythology/seats.md` as a **Seats and the Cuts** section, and the `eclipseria-overview.md` line was reframed (not replaced) to read as the downstream case it actually is.
+
+**Durable lesson:** Name establishes what a thing is, but that identity can still sit inside a larger structural hierarchy without collapsing into it. Seats are Named, permanent structural features — but their permanence and their existence are different claims, and only Drew's ruling made which one depends on which explicit.
+
+## The In-Between — a Cuts-thinness phenomenon, not a new mechanic
+
+Drew ruled the overworld canon on 2026-08-02: *"Was:* the space between locations had no name and no properties; `world/geography-overview.md` said only that hubs are two days apart and the Regency maintains the roads between them. *Now:* everything that isn't a named place is the In-Between, where the Three Cuts hold least."
+
+The In-Between isn't a fourth structural category bolted onto Name/Price/Distance — it's what all three Cuts look like when they go thin at once, in one place. Drew gave three properties: no consistent landscape, no predictable encounters, no safe havens. Those aren't three separate rules; they're one condition wearing three faces, each mapping onto one of the Three Cuts:
+
+- **Landscape bleeds instead of transitioning → thin Distance.** The boundary that ordinarily separates one place from another is failing, so terrain doesn't hold its edges.
+- **Nothing is legible before it arrives → thin Name.** Encounters can't be predicted from location because the In-Between has no stable identity for anything to be known by in advance.
+- **Nothing stays anchored → thin Price.** Safe havens don't exist because nothing is being paid to hold a line there.
+
+Written this way, a GM can extrapolate a fourth property correctly without having to ask — the mapping is the myth's own if-then applied to Drew's premise (*"Where any Cut weakened, the Unheld pressed close"*), not an invention layered on top of it.
+
+**A real contradiction surfaced and was resolved by direction, not amendment.** `world/the-unheld.md` states the coastline is a threshold "hard, exact, without gradient." An In-Between defined purely as gradient-thinness would have made that false. Drew's resolution: the coastline stays hard. The Unheld is *outside, pressing in*, and stops dead at the land; the In-Between is the world *failing to hold itself from the inside*. Same symptoms, opposite cause — the coastline paragraph itself needed no edit, only a pointer so the next reader doesn't have to rediscover the distinction.
+
+**The haven rule turned out to be half-written in canon already.** `geography-overview.md`'s line that the Regency maintains the roads and halfway-inns is the Price-side rule, stated as an operational fact rather than named as one. Generalized: **a safe place in the In-Between is a place someone is paying to hold** — the Roadhouse's crown seal, the Masons' fresh glyphs, the farmers' new bundles every autumn. This turns the built-things-holding-a-line motif already scattered across Briarwatch into the setting's general law rather than a regional quirk. Where payment stops, the ground goes back — how fast is deliberately left unestablished, which is what lets `quests/the-abandoned-homestead.md` sit unexplained.
+
+**Encounters are displaced, not random** (Drew confirmed). "No predictable encounters" is easy to state and unrunnable on its own — the bestiary is organized by location, so a GM has nothing to reach for. The actual instruction: pull any creature, put it where it makes no sense, don't account for it. Stat blocks do not change. What's lost is the knowledge a person actually predicts with — where a thing lives, what it wants at this hour — and that knowledge is about places, and in the In-Between there is no place.
+
+**Durable lesson:** the In-Between demonstrates Name/Price/Distance operating as one condition at three different altitudes simultaneously, not as three independent checklist items. When a single phenomenon needs explaining, checking whether it maps onto a thinning of all three Cuts at once is a real diagnostic, not just a naming exercise after the fact.
