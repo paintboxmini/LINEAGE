@@ -53,24 +53,10 @@ All files are Markdown. Follow existing formatting exactly.
 
 ### Cards
 
-```
-**CARD NAME**
-COLOR — STAT
-Attack: Stat + dX
-Effect: [description]
-Defensive Bonus: [description]
-Range: [Melee / Ranged / Both]
-*"flavor quote"*
-```
+Use `agent-tools/card-creation.md` when creating or editing cards.
 
-- Colors: RED (Body), BLUE (Mind), GREEN (Soul)
-- Source tags append after stat: `RED — BODY — WEALD`
-- **A tag marks a card's acquisition source — its lineage.** It answers "where or from whom was this card obtained": a location (WEALD, ASHFALL, COIL), an archon, a faction (MASON, PROMISE), a specific creature, or the Unheld. It traces provenance, not theme. Rules:
-  - A card carries **at most one tag** (its source). Core cards are universal and carry none.
-  - A tag is never a card's *theme*. Theme lives in the flavor line. (A card about memory is not a MEMORY card; that is what the quote is for.) This is the rule that keeps the tag set finite — sources are countable, themes are not.
-  - The test: *does removing the tag change how the card is obtained?* If not, it is not a tag.
-  - The world-truth this expresses — living traditions, diffused universality, names vs. tags — lives in `world/lineage.md`.
-- Separate cards with `---`
+Canonical card rules remain in `rules/cards.md` and `rules/card-glossary.md`; lineage/tag meaning remains in `world/lineage.md`.
+
 
 ### Stat Blocks
 
