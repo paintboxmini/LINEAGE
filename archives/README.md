@@ -22,14 +22,4 @@ Archives are never authoritative over current canon. When historical material co
 
 The archive preserves why and how the project became what it is; it does not determine what the project is now.
 
-## Current Consolidated Trails
-
-The `consolidated/` directory currently contains the completed historical trails from the present archive pass. These are intentionally small and should not be expanded merely to preserve additional detail.
-
-- `initiative-wheel.md` — initiative wheel design trail and exemplar
-- `canon-gate.md` — evolution of the Canon Gate and authority model
-- `hp-stat-derived-values.md` — durable finding about stat-derived values and HP balance
-- `team-archetype-balance.md` — discovery that color balance must be evaluated in the format where each color's role exists
-- `combat-resolution-status.md` — combat resolution and status design trail
-
-The original historical source files remain in place until independent review is complete. Do not delete source material solely because a consolidation exists.
+Consolidated trails should be discoverable by their filenames and do not require a separate registry or metadata layer. The original historical source files remain in place until independent review is complete. Do not delete source material solely because a consolidation exists.
