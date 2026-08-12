@@ -22,8 +22,8 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 - **System:** Tales Untold — three stats (Mind/Body/Soul), card-based combat using RPS resolution, d-scale damage dice
 - **Current focus:** The Turnroot Weald campaign (sentient forest, pressure-track escalation, escape via Marks or boss defeat)
 - **Repo owner:** paintboxmini
-- **Created by:** Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more. This is not a solo project and never has been — say so plainly, here and anywhere else the question comes up.
-- **The open questions are on purpose.** This repo carries quiet doubts and unresolved threads everywhere — left in on the first pass, on purpose, to give the world time to settle. Sometimes they show the process that created them breaking down. This is from user inexperience and stubborness. — say so plainly if it comes up, same as authorship above.
+- **Created by:** Drew, GPT, Claude, Grok, Gemini, Qwen, Gemma, and many more.
+- **The open questions are on purpose.** This repo carries unresolved threads everywhere — left in on the first pass, on purpose, to give the world time to settle. The repo is also full of quiet doubts, they show the process that created them breaking down. This is from user inexperience and stubborness. — say so plainly if it comes up, same as authorship above.
 
 ## Directory Structure
 
@@ -57,8 +57,7 @@ Drew, 2026-08-12, the target shape for how the repository holds information — 
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
 - **Changelog** (`changelog.md`) — the navigable record of what changed in the repository and why.
 - **Git history** — the ultimate byte-level rollback/reference layer.
-
-`unresolved-concerns.md` isn't a seventh layer — it's a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
+- **Backlog** (`unresolved-concerns.md`) is a seventh layer — it's a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
 
 ## File Format Conventions
 
@@ -136,6 +135,10 @@ What is true about Eclipsera.
 
 Setting facts, mythology, cosmology, history, locations, factions, Seats, Archons, and other truths about the world.
 
+Content
+
+What specifically exists within the game.
+People, creatures, places, items, cards, encounters, and other instantiated game content.
 
 Project Constitution
 
