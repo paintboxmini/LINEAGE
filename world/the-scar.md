@@ -22,8 +22,6 @@ Looking into any of those openings is like looking into an empty room with no fa
 
 Nothing.
 
-That is the entry, not an omission. It does not approach, speak, block a road, take anything, or respond to being addressed. No character has ever needed to roll anything because of it.
-
 What it does is **attend**. The overwhelming majority of encounters are a moment where someone becomes aware of being looked at — the specific sensation of a face the size of the sky having turned toward you. The figure may or may not be visible when this happens. The attention arrives first and does not depend on the body being present.
 
 ---
@@ -64,23 +62,15 @@ It also explains where he is. A thing with no interior cannot be held anywhere t
 
 **He is a failed Seat-taker, by the definition already written.** `mythology/resonant-people.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
 
-**What is genuinely unclear is his stage, and that is not a gap to fill.** All three Degrees of Alignment (`mythology/resonant-people.md`) describe what happens to *an identity* — Stage III is "identity and domain become inseparable." The Scar has no identity for a domain to become inseparable from. He may be Stage III taken past its own definition, or he may be off the end of a scale that was never built to measure him. Do not resolve this to tidy the taxonomy.
+What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
 
-**This changes nothing a player sees.** No NPC knows. No book has an entry. The Regency does not know its founder is walking around outside the walls, and Oswald's ongoing project to claim the same Seat is being run by people who think the first attempt simply killed him.
+The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`mythology/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. 
 
 ---
 
 ## Still Not Established
 
-What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
-
-Knowing the name is not knowing the thing. A GM who has read this section still has nothing to tell a player, and that is correct.
-
-*(One resonance, unresolved: he failed at the Seat of Love and Binding, and what he does now is attend people, follow them, and never once approach. Nothing establishes that these are related.)*
-
-**The myth's own logic, for a GM who wants it.** The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`mythology/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. That the cosmology and the political history arrive at the same empty middle is not a coincidence anyone in the world has noticed.
-
-*(Separately: the ghost stories in `world/the-unheld.md` say crews that sailed past the coast came home with unfamiliar scars. Nothing connects the two. The resemblance is left standing.)*
+One resonance: he failed at the Seat of Love and Binding, and what he does now is attend people, follow them, and never once approach. Nothing establishes that these are related.)*
 
 ---
 
