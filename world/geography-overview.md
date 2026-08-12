@@ -12,7 +12,7 @@ The continent is rich with rivers and lakes. Where the roads are the Regency's a
 
 ## Overall Shape
 
-Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle, not along one edge of it. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
+Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
 
 **Coordinates** (relative grid, not to scale):
 
@@ -36,12 +36,8 @@ Rough estimates, not confirmed the way the triangle and its edges are — placed
 
 ## The Kings Road
 
-Six segments, not one line: the three edges of the triangle above, plus a spoke from each corner in to Eclipseria at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
+Six segments: the three edges of the triangle above, plus a spoke from each corner in to the Capital at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
 
-**The three edges:**
-- Glasslight Reach ↔ Turnroot Weald
-- Turnroot Weald ↔ Vulture's Nest — Briarwatch (−5,−7) and the Roadhouse (0,−7) both sit directly on this edge, not on a side road off of it
-- Vulture's Nest ↔ Glasslight Reach
 
 **The three spokes (corner to center):**
 - Glasslight Reach ↔ Eclipseria
@@ -58,11 +54,9 @@ Six segments, not one line: the three edges of the triangle above, plus a spoke 
 
 ---
 
-## The Basin
+The known world is surrounded on every side by **the Unheld Ocean** — grey static water. It is the edge of the world. Nothing sails it. Nothing fishes it. The only people who go near it are the Glasslight cartographers who map its edge, and the People of Promise, who lower themselves into it on ropes and call that faith.
 
-The known world occupies a basin, surrounded on every side by **the Unheld Ocean** — grey water that does not obey held reality. It is the edge of the world. Nothing sails it. Nothing fishes it. The only people who go near it are the Glasslight cartographers who map its edge, and the People of Promise, who lower themselves into it on ropes and call that faith.
-
-One more boundary sits inside that outer edge, not part of it: **the Turnroot Weald**, wrapping the eastern edge of the Ashfall Wastes, a sentient forest that insulates the rest of the basin from the War Engine beyond.
+**the Turnroot Weald**, wrapping the eastern edge of the Ashfall Wastes, a sentient forest that insulates the rest of the continent from the War Engine beyond.
 
 There is nothing beyond the coast. Or nothing anyone has come back to describe. The ghost stories say otherwise — ships that slipped past the shore generations ago, crews that came home wrong or didn't come home at all. The stories are told in river taverns, quietly, and nobody checks them against the water.
 
@@ -70,19 +64,17 @@ One campaign opening starts exactly there: a party washed ashore at (−1, −11
 
 ## Rivers and Lakes
 
-The basin drains toward the Unheld. A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again on the way to the grey coast. This web is the continent's second road system — and its first, if you ask a sailor.
+A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again on the way to the grey coast. This web is the continent's second road system — and its first, if you ask a sailor.
 
 **Vulture's Nest sits at the heart of the web.** More river tonnage passes its docks than the rest of the continent combined. If it moves by water, it moves through the Nest.
 
-The rivers breathe with the Unheld. When the grey water pulls back from the coast, the rivers drop with it — a tide that arrives from downstream, felt hundreds of miles inland. River folk plan around it. Some plan jobs around it.
+Anywhere on this whole network, a line can go in the water. See `rules/river-fishing.md` for The Pull — a real-time table minigame, not a combat mechanic.
 
-Anywhere on this whole network, a line can go in the water. See `rules/river-fishing.md` for The Pull — a real-time table minigame, not a combat mechanic, played for a fish and nothing heavier.
-
-The water itself stays ordinary. The coastline is a hard threshold — unheldness does not cross it, not by flowing and not by being carried. Only the motion comes upstream. See `world/the-unheld.md`.
+The water itself stays ordinary. The coastline is a hard threshold — unheldness does not cross it, not by flowing and not by being carried. See `world/the-unheld.md`.
 
 Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
 
-Where a river runs close to the coastline itself, before the water goes grey, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary growth that happens to like the mineral-rich water this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), named for exactly this. See `places/the-coil.md` for what one became.
+Where a river runs close to the coastline itself, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), named for exactly this. See `places/the-coil.md` for what one became.
 
 ## Key Landmarks (Summary)
 
