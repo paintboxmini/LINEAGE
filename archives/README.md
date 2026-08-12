@@ -8,14 +8,6 @@ Archives preserve durable historical trails of the project's design. They are no
 
 Consolidation is selective. Do not preserve complete deliberations, chronological work logs, obsolete formulas, or every rejected idea merely because they exist.
 
-## Retired
-
-`retired/` is a temporary review area for artifacts that may contain valuable material before they are deleted. Review each artifact fully and extract anything that belongs in canon, memory, unresolved concerns, agent tooling/harness, or a consolidated historical trail. Once the review is complete, delete the retired artifact. `retired/` is not a permanent archive category.
-
-## Changelog
-
-The live, ongoing changelog is not an archive category — it's its own repository layer. It records that something changed and why; it does not hold the reasoning trail behind the change. A closed-out worklog fragment that shows up here (an old batch, something inherited from before the split) is source material for consolidation the same as any other historical artifact — review it, fold anything durable into the appropriate consolidated trail. 
-
 ## Authority
 
 Archives are never authoritative over current canon. When historical material conflicts with current canon, current canon wins.
