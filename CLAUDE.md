@@ -105,7 +105,7 @@ Full reasoning trail and incident history: `archives/consolidated/translation-pr
 
 ## Canon Gate
 
-Talk it through first — a back-and-forth conversation, not a formal plan. Once we're both on the same page, it's safe to write. (2026-08-12, Drew: the old Authority 1/2/3 tiers were excessive.)
+Talk it through first (Agent Workflow, step 3) — once we're both on the same page, it's safe to write. (2026-08-12, Drew: the old Authority 1/2/3 tiers were excessive.)
 Check it against current canon before writing.
 Escalate genuine conflicts, ambiguity, or propagation failures rather than resolving them silently.
 Log every ship in changelog.md — one entry, at the top, the moment it lands.
@@ -115,7 +115,7 @@ Log every ship in changelog.md — one entry, at the top, the moment it lands.
 1. **Orient** — Read `memory.md` and `unresolved-concerns.md` (the scannable index of open debt — flagged issues and deferred decisions; add a line when flagging one, delete it when resolved), then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
 2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone), with the Design Principles in `agent-tools/design-principles.md` and relevant archive exemplars as the standards both measure against. The old generator layer stays archived in `archives/`.
    - **Building a new bestiary entry's deck:** before drafting cards, scan `bestiary/` for creatures whose cards already portray the same behavior (freeze-and-flee, reposition-and-flee, a particular debuff, etc.). Not a ban on reuse — a behavior can legitimately belong to more than one creature — but check first so a repeat is a deliberate choice, not an accident caught later by `red-team.md`'s Evolution check (mutation vs. duplicate) or missed entirely.
-3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Distinct from Canon Gate's talk-first conversation, which happens before a task starts; this is for gaps, ambiguity, or conflicts that only surface once you're actually in the writing, on an already-agreed task. Cover:
+3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Cover:
    - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
    - **Suggestions** — related content worth connecting, mechanical options Drew may not have considered
    - **Concerns** — conflicts with existing content, scope that feels too large or too small, missing prerequisites
