@@ -16,15 +16,25 @@ A Resonant Item is what an object becomes when it aligns so closely with a Seat'
 
 ---
 
-## Sentience Begins at Alignment, Not at Resonance
+## Degrees of Alignment
 
-Sentience isn't automatic the moment an object becomes Resonant. Resonant Items pass through the same Degrees of Alignment a Resonant Person does (`world/resonant-people.md`, Degrees of Alignment) — the staging is shared cosmology, not a person-specific mechanic — and sentience begins at **Stage II — Alignment**, the same point a domain first starts expressing itself through the bearer rather than merely sharpening what's already there.
+Resonant Items pass through the same three-stage structure a Resonant Person does (`world/resonant-people.md`, Degrees of Alignment) — the staging is shared cosmology, not a person-specific mechanic. The first two stages share their names; the third doesn't, because an item was never going to reach its summit by taking on flesh.
 
 **Stage I — Resonance.** Instinct only. The item can still refuse or accept a wielder at this stage — that doesn't require a mind, only a strong enough pull toward or away from what it's being asked to be near. Most Resonant Items sit here. Nobody is home yet to have an opinion about the wielder specifically.
 
-**Stage II — Alignment, and beyond.** The domain begins expressing itself through the object. This is where sentience actually starts: a second party present in the relationship, capable of a real reaction to its wielder rather than an instinct-level accept-or-refuse. A wielder carrying a Stage II (or further) item isn't only asking what it does. They're finding out what it thinks of them.
+**Stage II — Alignment.** The domain begins expressing itself through the object. This is the stage where sentience becomes *possible* — see Sentience, below, for why it isn't automatic even here.
 
-**Resonant Items choose their wielders at every stage** — a person doesn't simply equip one, the item accepts them or it doesn't — but what that choosing actually *is* changes with the stage. At Stage I it's instinct. At Stage II and beyond, it's a decision made by something that can be said to want. What acceptance looks like, and what happens when it's withheld, is left open per item rather than answered here in general.
+**Stage III — Embodiment (Archon).** The item's own path to Archonhood (`world/archons.md`, Multiple Bearers, One Seat) — the object-flavored version of what Incarnation is for a Resonant Person: domain and object become inseparable. The highest stable form a Resonant Item can reach.
+
+---
+
+## Sentience
+
+Sentience isn't a property an item earns on its own. It's what happens in the relationship between a Stage II+ item and a Stage II+ wielder — a Resonant Person themselves aligned deeply enough that a domain is expressing through them too. Two things reaching that far toward the fabric of reality can recognize each other, whether or not they're reaching toward the same Seat. Seats aren't rivals competing for the same ground; a wielder and an item aligned to different domains aren't in conflict — their domains overlap and fill each other's gaps, the same way the fabric of reality does everywhere else. A Storm-aligned item at Stage II, carried by a Grief-aligned wielder at Stage II, isn't a contradiction. It's two edges of the same cloth meeting.
+
+Below Stage II on either side — an unaligned wielder, or an item that's still purely instinct — nothing happens beyond the ordinary Stage I accept-or-refuse. Sentience lives in the relationship, not in either side alone; the same item that's silent in one wielder's hands might genuinely be present in another's.
+
+**Resonant Items choose their wielders at every stage** — a person doesn't simply equip one, the item accepts them or it doesn't — but what that choosing actually *is* changes with the stage. At Stage I it's instinct. At Stage II, paired with an equally-aligned wielder, it's a decision made by something that can be said to want. What acceptance looks like, and what happens when it's withheld, is left open per item rather than answered here in general.
 
 ---
 
