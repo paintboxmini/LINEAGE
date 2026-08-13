@@ -24,7 +24,7 @@ Seats exist because the Three Cuts do (`world/seats.md`, Seats and the Cuts). Wh
 | **Archons** | `world/archons.md` | What an Archon is, what it costs, fading, and why Stage III and Archonhood are the same thing |
 | **Resonant People** | `world/resonant-people.md` | What a Resonant Person is, the three Degrees of Alignment, Failed Seat-Takers, and Known Resonant People |
 | **Resonant Items** | `world/resonant-items.md` | Intentional vs. Accumulated Resonance, the three Degrees of Alignment (Resonance/Alignment/Embodiment), relational sentience, and expression rather than ownership |
-| **Resonant Places** | `world/resonant-places.md` | How a place becomes Resonant, and the two Known Resonant Places |
+| **Resonant Places** | `world/resonant-places.md` | How a place becomes Resonant, the three Degrees of Alignment (Resonance/Alignment/Hallowing), and the two Known Resonant Places |
 
 ---
 

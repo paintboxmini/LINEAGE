@@ -35,7 +35,7 @@ Established through the ordinary `places/` overview format, not a separate mecha
 
 ## Distance — What a Place Can Never Be
 
-See `agent-tools/design-principles.md`, Distance — What Can Never Be, for the actual principle and worked test. In short: a resonant place can't fully become some other kind of place, permanently — Turnroot Weald can never become safe ground, because the pressure that makes it what it is has no off state, only a held one. `world/resonant-places.md`'s "The Third Ladder Also Ends at Archon" section is the related, separate question of whether a place can reach an Archon-equivalent at all (confirmed: yes) — a different question from Distance, not to be conflated with it.
+See `agent-tools/design-principles.md`, Distance — What Can Never Be, for the actual principle and worked test. In short: a resonant place can't fully become some other kind of place, permanently — Turnroot Weald can never become safe ground, because the pressure that makes it what it is has no off state, only a held one. `world/resonant-places.md`'s Degrees of Alignment section (Stage III — Hallowing) is the related, separate question of whether a place can reach an Archon-equivalent at all (confirmed: yes) — a different question from Distance, not to be conflated with it.
 
 ---
 
