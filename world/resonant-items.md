@@ -16,11 +16,15 @@ A Resonant Item is what an object becomes when it aligns so closely with a Seat'
 
 ---
 
-## Sentience
+## Sentience Begins at Alignment, Not at Resonance
 
-A Resonant Item is alive in one specific sense: it has sentience, and that sentience can be interacted with by whoever wields it. This isn't a mind the wielder comes to own — it's a second party present in the relationship, from the moment the item becomes Resonant onward, whether it was built that way from the first stroke or earned its way there through Accumulated Resonance. A wielder carrying a Resonant Item isn't only asking what it does. They're finding out what it thinks of them.
+Sentience isn't automatic the moment an object becomes Resonant. Resonant Items pass through the same Degrees of Alignment a Resonant Person does (`world/resonant-people.md`, Degrees of Alignment) — the staging is shared cosmology, not a person-specific mechanic — and sentience begins at **Stage II — Alignment**, the same point a domain first starts expressing itself through the bearer rather than merely sharpening what's already there.
 
-**Resonant Items choose their wielders.** A person doesn't simply equip one — the item accepts them, or it doesn't. What that acceptance looks like, and what happens when it's withheld, is left open per weapon rather than answered here in general.
+**Stage I — Resonance.** Instinct only. The item can still refuse or accept a wielder at this stage — that doesn't require a mind, only a strong enough pull toward or away from what it's being asked to be near. Most Resonant Items sit here. Nobody is home yet to have an opinion about the wielder specifically.
+
+**Stage II — Alignment, and beyond.** The domain begins expressing itself through the object. This is where sentience actually starts: a second party present in the relationship, capable of a real reaction to its wielder rather than an instinct-level accept-or-refuse. A wielder carrying a Stage II (or further) item isn't only asking what it does. They're finding out what it thinks of them.
+
+**Resonant Items choose their wielders at every stage** — a person doesn't simply equip one, the item accepts them or it doesn't — but what that choosing actually *is* changes with the stage. At Stage I it's instinct. At Stage II and beyond, it's a decision made by something that can be said to want. What acceptance looks like, and what happens when it's withheld, is left open per item rather than answered here in general.
 
 ---
 
