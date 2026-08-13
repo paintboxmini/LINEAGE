@@ -86,7 +86,7 @@ Resolving the boundary for a session buys the village one calm stretch, nothing 
 - `characters/lily.md` — the Dream-Hunter, the hook that brings a party here
 - `places/capital/underground-bazaar.md` — where Lily is found
 - `world/the-in-between.md` — the Three Cuts, Havens, the mechanism Apnea's boundary shares
-- `mythology/creation-myth-the-three-cuts.md` — Name, Price, Distance
+- `world/creation-myth-the-three-cuts.md` — Name, Price, Distance
 - `world/geography-overview.md` — Apnea's position, its own lake south-southwest of Vulture's Nest
 - `world/tonal-bible.md`
 - `characters/aege.md` — the same shape of deliberately-open fate, for comparison

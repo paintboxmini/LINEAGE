@@ -268,6 +268,6 @@ Salvage is a different question and is fair game. The labour level has debt-slav
 - `factions/demon-court.md` — Pazuzu, guard hierarchy
 - `places/capital/underground-bazaar.md` — above
 - `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
-- `mythology/seats.md` — Aurora, Seat of Love/Binding
+- `world/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — stat block, passives, and the signature cards
 - `bestiary/the-descended.md` — The Shelf inhabitants

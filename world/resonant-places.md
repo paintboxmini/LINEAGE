@@ -24,15 +24,15 @@ A place can't pay the way a person or an item does — it has no vitality to spe
 
 ## Known Resonant Places
 
-**Glasslight Reach** — the cliff fractures sing when wind passes through them, and nobody in the town knows why. Song and Silence is the closer fit among the Seats (`mythology/seats.md`, Song and Silence), but the alignment is unconfirmed — the same register Fermata's alignment sat in before it was confirmed. The resonance is real. Which domain it belongs to isn't settled yet.
+**Glasslight Reach** — the cliff fractures sing when wind passes through them, and nobody in the town knows why. Song and Silence is the closer fit among the Seats (`world/seats.md`, Song and Silence), but the alignment is unconfirmed — the same register Fermata's alignment sat in before it was confirmed. The resonance is real. Which domain it belongs to isn't settled yet.
 
-**Turnroot Weald** — a forest whose sentience isn't metaphor, and whose pressure escalates the longer anyone stays inside it. Named here as a Resonant Place because its nature already behaves like one. Its Seat is unestablished — nothing in the current roster (`mythology/seats.md`) accounts for what it is, and this file isn't the place to manufacture an answer nobody's found yet.
+**Turnroot Weald** — a forest whose sentience isn't metaphor, and whose pressure escalates the longer anyone stays inside it. Named here as a Resonant Place because its nature already behaves like one. Its Seat is unestablished — nothing in the current roster (`world/seats.md`) accounts for what it is, and this file isn't the place to manufacture an answer nobody's found yet.
 
 ---
 
 ## The Third Ladder Also Ends at Archon
 
-A Resonant Place's ladder ends the same place the other two do: Archon (Drew, confirming directly — "it does" and "it means a location can fill a seat"). Reached not through biology, the way a person's ladder is, or through use, the way an item's is, but through the same accumulation that makes a place Resonant in the first place — enough history, held long enough, that the place stops merely expressing the domain and becomes its full, distributed bearer. When that happens, the Seat is Filled by the place itself, alongside — not instead of — whatever else has independently reached the same summit (`mythology/archons.md`, Multiple Bearers, One Seat).
+A Resonant Place's ladder ends the same place the other two do: Archon (Drew, confirming directly — "it does" and "it means a location can fill a seat"). Reached not through biology, the way a person's ladder is, or through use, the way an item's is, but through the same accumulation that makes a place Resonant in the first place — enough history, held long enough, that the place stops merely expressing the domain and becomes its full, distributed bearer. When that happens, the Seat is Filled by the place itself, alongside — not instead of — whatever else has independently reached the same summit (`world/archons.md`, Multiple Bearers, One Seat).
 
 Neither Known Resonant Place, above, has reached it. What that would actually look like, for something that can't act the way a person or an item can, is still unbuilt — confirmed as real, not yet built as fiction.
 
@@ -40,9 +40,9 @@ Neither Known Resonant Place, above, has reached it. What that would actually lo
 
 ## Related Documents
 
-- `mythology/resonant-people.md` — the living version of the same alignment
-- `mythology/resonant-items.md` — the object version of the same alignment
-- `mythology/seats.md` — the domains these might align to, and their bearers
+- `world/resonant-people.md` — the living version of the same alignment
+- `world/resonant-items.md` — the object version of the same alignment
+- `world/seats.md` — the domains these might align to, and their bearers
 - `rules/places.md` — Name, Price, and Distance applied to places, mechanically
 - `places/glasslight-reach.md`
 - `places/turnroot-weald.md`

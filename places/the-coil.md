@@ -384,7 +384,7 @@ The ones who came before were Masons — the same secret order that maintains th
 
 The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader.md`.
 
-The Night Ferryman is also more than he lets on — an Archon of Navigation (`mythology/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
+The Night Ferryman is also more than he lets on — an Archon of Navigation (`world/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
 
 ---
 
@@ -422,7 +422,7 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 
 - `places/vultures-nest.md` — The Night Ferryman (Notable Roles)
 - `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
-- `mythology/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
+- `world/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
 - `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
 - `places/abyssal-ruins.md`, `places/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
 - `bestiary/stonecoil.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat

@@ -74,5 +74,5 @@ See `places/the-silent-choir.md` for the full table-level rule (players communic
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause
-- `mythology/seats.md`, `mythology/resonant-people.md` — Song and Silence, confirmed as this creature's Seat; which stage of Alignment is deliberately left open
+- `world/seats.md`, `world/resonant-people.md` — Song and Silence, confirmed as this creature's Seat; which stage of Alignment is deliberately left open
 - `rules/card-glossary.md` — Locked, Sealed, Staggered, Vulnerable, Evade

@@ -17,8 +17,7 @@ You'll find open questions and quiet doubts throughout this repo, left in on pur
 | `places/` | Place overviews and settings |
 | `quests/` | Adventure systems — pressure tracks, encounters, NPCs |
 | `factions/` | Faction documents |
-| `world/` | Geography, factions, and organizations |
-| `mythology/` | Lore and creation myths |
+| `world/` | Geography, factions, organizations, lore and creation myths, cosmology (Seats, Archons, Resonance) |
 | `experimental/` | Sandbox — draft content, lower stakes, free to iterate |
 | `archives/` | Historical design trails — what was discovered, considered, rejected, or consolidated. Not authoritative over current canon; see `archives/README.md`. Cut draft cards live in `experimental/archives/` instead |
 | `playtesting/` | Playtest notes, feedback, and session logs |

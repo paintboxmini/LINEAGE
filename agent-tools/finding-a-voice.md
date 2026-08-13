@@ -76,5 +76,5 @@ The question before applying this is the same redefinition-test instinct as ever
 - `agent-tools/alignment-checker.md` — the Soul Pass and "Stuck on an NPC," this method's compressed form
 - `agent-tools/design-principles.md` — the equivalent doctrine for mechanics and creatures, not people
 - `world/tonal-bible.md` — "the world is not organized around the protagonist's journey," the principle this whole method is in service of
-- `mythology/seats.md` — the domains four voices can disagree about
+- `world/seats.md` — the domains four voices can disagree about
 - `rules/invariants.md` — the engine-facing version of "a fixed thing everything else has to hold true against"

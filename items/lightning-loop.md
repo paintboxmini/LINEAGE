@@ -40,4 +40,4 @@ If the party takes the ring, they hold something Storm Seat-aligned that grants 
 ## Open
 
 - Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`mythology/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)
+- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`world/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)

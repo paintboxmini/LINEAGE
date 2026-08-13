@@ -30,7 +30,7 @@ A Resonant Person in the making rarely acts alone. The things they carry pass th
 
 This isn't coincidence. Person and object are living through the same pattern. Both may end up expressions of the same Seat, each carrying evidence of how they got there: the Resonant Person in what they've become, the item in what it was used for.
 
-**This is correlation, not contagion.** Wielding a Resonant Item doesn't make its wielder a Resonant Person, and becoming a Resonant Person doesn't make what someone carries Resonant with them. Each alignment is still earned or built on its own terms (see How an Object Becomes Resonant, above) — shared history makes both more likely, not automatic. An item's own path toward its own Archon, should it walk one, is its own; it doesn't require its wielder to be walking a parallel path at all (`mythology/archons.md`).
+**This is correlation, not contagion.** Wielding a Resonant Item doesn't make its wielder a Resonant Person, and becoming a Resonant Person doesn't make what someone carries Resonant with them. Each alignment is still earned or built on its own terms (see How an Object Becomes Resonant, above) — shared history makes both more likely, not automatic. An item's own path toward its own Archon, should it walk one, is its own; it doesn't require its wielder to be walking a parallel path at all (`world/archons.md`).
 
 ---
 
@@ -38,15 +38,15 @@ This isn't coincidence. Person and object are living through the same pattern. B
 
 Neither a Resonant Person nor a Resonant Item contains a Seat. Neither owns the domain it carries. Both are alignments — proof that something reached far enough toward a domain that the domain started reaching back.
 
-This is why a Resonant Item doesn't need its Seat Filled to work. A domain can stay real, and reachable, through a Resonant Person or an object aligned to it, even while the Seat itself stands Empty (`mythology/seats.md`, Seat States). The bearer thins. The alignment doesn't have to.
+This is why a Resonant Item doesn't need its Seat Filled to work. A domain can stay real, and reachable, through a Resonant Person or an object aligned to it, even while the Seat itself stands Empty (`world/seats.md`, Seat States). The bearer thins. The alignment doesn't have to.
 
 ---
 
 ## Related Documents
 
-- `mythology/resonant-people.md` — the living version of the same alignment
-- `mythology/resonant-places.md` — the same alignment, in a place instead of an object
-- `mythology/seats.md` — the domain being expressed, and what its state does and doesn't determine
-- `mythology/archons.md` — an Archon's will shapes the Price of using what's Resonant to them, and the item's own separate path to the same summit
+- `world/resonant-people.md` — the living version of the same alignment
+- `world/resonant-places.md` — the same alignment, in a place instead of an object
+- `world/seats.md` — the domain being expressed, and what its state does and doesn't determine
+- `world/archons.md` — an Archon's will shapes the Price of using what's Resonant to them, and the item's own separate path to the same summit
 - `rules/equipment.md` — Artifacts, how Price is actually paid
 - `items/lightning-loop.md` — Storm-aligned; Intentional or Accumulated origin still unknown on purpose

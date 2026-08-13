@@ -37,8 +37,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `bestiary/` | Creature stat blocks, abilities, loot, card references |
 | `characters/` | Named NPC profiles, and player character decks (by character name) |
 | `items/` | Consumables and equipment |
-| `mythology/` | Lore and creation myths |
-| `world/` | Geography, factions, organizations |
+| `world/` | Geography, factions, organizations, lore and creation myths, cosmology (Seats, Archons, Resonance) |
 | `factions/` | Faction documents |
 | `experimental/` | Sandbox — lower stakes, free to iterate |
 | `agent-tools/` | Drop-in tools for common design tasks |
@@ -52,7 +51,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 Drew, 2026-08-12, the target shape for how the repository holds information — 7 layers, each answering a different question:
 
-- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `mythology/`, `factions/`, `characters/`, Oracle/).
+- **Live Canon** — what is true now. The directories above (`cards/`, `rules/`, `world/`, `bestiary/`, `places/`, `quests/`, `items/`, `factions/`, `characters/`, Oracle/).
 - **Agent tools** (`agent-tools/`) — how to perform recurring work.
 - **Memory** (`memory.md`) — compact durable reasoning that still matters.
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.

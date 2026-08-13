@@ -96,6 +96,6 @@ Players who reach the deep will not find a fight. They will find the love of the
 - `places/capital/underground-tavern.md` — hidden within the Waterworks; transitional layer
 - `factions/the-weavers.md` — the collection detail on the labor level
 - `characters/kess.md` — the rescue attempt whose echo lives here
-- `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `world/seats.md` — Aurora, the Seat of Love/Binding
 - `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
 - `quests/the-wallows-descent.md` — full adventure structure

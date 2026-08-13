@@ -4,7 +4,7 @@ Eclipseria is a twilight world in flux. A sickly yellow haze sits permanently ov
 
 And it rains. A slow drizzle, most days, most hours. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
-**The world was born dying.** This is not decline and not a curse — it is the founding condition. Reality here was wounded into holding (`mythology/creation-myth-the-three-cuts.md`), and those wounds have never closed, because a closed wound holds nothing open. Eclipseria is working exactly as it was made to, at exactly the cost it was made to demand. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
+**The world was born dying.** This is not decline and not a curse — it is the founding condition. Reality here was wounded into holding (`world/creation-myth-the-three-cuts.md`), and those wounds have never closed, because a closed wound holds nothing open. Eclipseria is working exactly as it was made to, at exactly the cost it was made to demand. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
 
 The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
 
@@ -36,9 +36,9 @@ Reality in Eclipseria is not self-sustaining. It is maintained by:
 - **The Archons** — beings who have become the fullest expression of a Seat. They control the distribution of their domain.
 - **The Regency** — a human bureaucratic council that rules the Capital and has heavy influence in the surrounding regions. 
 
-The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`mythology/seats.md`, Seats and the Cuts).
+The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`world/seats.md`, Seats and the Cuts).
 
-For the full cosmological system, see `mythology/seats.md`, `mythology/archons.md`, `mythology/resonant-people.md`, `mythology/resonant-items.md`, and `mythology/resonant-places.md` — or `world/seats-archons-echoes.md` for an index of all five.
+For the full cosmological system, see `world/seats.md`, `world/archons.md`, `world/resonant-people.md`, `world/resonant-items.md`, and `world/resonant-places.md` — or `world/seats-archons-echoes.md` for an index of all five.
 For the Unheld in depth, see `world/the-unheld.md`.
 
 ---

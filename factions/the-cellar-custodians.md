@@ -71,4 +71,4 @@ The Custodians are the last link in the FourthEye supply chain before it reaches
 - `world/the-regency.md` — Lady Eveline, the council-level overseer neither guild sees exercised
 - `places/capital/the-wallows.md` — adjacent, not shared, territory
 - `world/geography-overview.md` — the rivers feeding the capital's intake
-- `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `world/seats.md` — Aurora, the Seat of Love/Binding

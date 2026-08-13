@@ -60,11 +60,11 @@ The council believes he died. He did not. That is true, and it is worse.
 
 It also explains where he is. A thing with no interior cannot be held anywhere that requires holding, so he is in the only ground nobody pays to hold.
 
-**He is a failed Seat-taker, by the definition already written.** `mythology/resonant-people.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
+**He is a failed Seat-taker, by the definition already written.** `world/resonant-people.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
 
 What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
 
-The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`mythology/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. 
+The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`world/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. 
 
 ---
 
@@ -77,7 +77,7 @@ One resonance: he failed at the Seat of Love and Binding, and what he does now i
 ## Related Documents
 
 - `world/the-in-between.md` — where it is, and why the Cuts are thin there
-- `mythology/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
+- `world/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is
-- `mythology/resonant-people.md` — Failed Seat-Takers, his own entry under Known Resonant People, and the three Degrees of Alignment he may be off the end of
+- `world/resonant-people.md` — Failed Seat-Takers, his own entry under Known Resonant People, and the three Degrees of Alignment he may be off the end of

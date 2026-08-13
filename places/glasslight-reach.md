@@ -68,7 +68,7 @@ The light-cartographers map the edge. Only the edge. Their atlases record where 
 - `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
 - `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
 - `characters/corren.md`, `characters/sael.md`, `characters/wren.md` — the Promise congregation, three ways of carrying it
-- `mythology/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
+- `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
 - `factions/the-cartographers-guild.md` — headquartered here; related to the light-cartographers but a distinct institution
 - `characters/kess.md` — Tomás Kettlewright, the Gallery showpiece's painter, already owes her a standing favor
 - `world/the-unheld.md` — the coastline threshold the Gallery's showpiece is checked against

@@ -110,4 +110,4 @@ A hybrid kit — textile implements scaled up, electrical gear pressed into serv
 - `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for; Eveline, the guild's actual craft-master
 - `factions/people-of-promise.md` — the faction most likely to recognize what this is, and least likely to forgive it
 - `factions/the-masons.md` — deliberately not related; see above
-- `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `world/seats.md` — Aurora, the Seat of Love/Binding
