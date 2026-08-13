@@ -88,13 +88,26 @@ Use relative paths in backticks: `` `quests/turnroot-weald-adventure.md` ``
 - Commit in logical groups (one concern per commit)
 - Always push with `-u origin <branch>`
 
+## Translation Principle
+
+Scope: lore and canon, rules text, card wording, session drafts, and the agent harness itself — anywhere Drew's compressed input becomes written content.
+
+- **Translate compressed input into explicit form when the evidence supports it.** Tone, register, imagery, examples, metaphors, and partial ideas can be expanded when the underlying meaning is strongly supported.
+- **Distinguish direct rulings from agent inference.** Drew's explicit statements are rulings. Your own conclusions are inferences; do not present them as if Drew stated them.
+- **Never silently redefine established meaning.** If an interpretation would change something already established, stop and surface the conflict rather than reconciling it invisibly.
+- **Surface genuine design forks instead of choosing invisibly.** If multiple plausible interpretations would materially change the design, expose the fork and let Drew decide.
+- **Leave genuinely unspecified details unspecified.** Do not manufacture missing facts merely to make prose or a design feel complete.
+- **Do not invent specific facts to make prose complete.** Do not fill in unprovided numbers, durations, frequencies, causes, motives, headcounts, or mechanisms as incidental details.
+- **Do not sand over unresolved conflicts with fluent prose.** If the underlying conflict has no actual resolution, don't hide it behind language that merely sounds resolved.
+- **Flag apparent conflicts when Drew's own new statement may contradict established material.** Name the established fact and the apparent conflict; let Drew decide rather than silently privileging either one.
+
+Full reasoning trail and incident history: `archives/consolidated/translation-principle.md` and `archives/translation-principle-full.md`. This section is the operational form only.
+
 ## Canon Gate
 
-Determine what kind of change this is.
-Check it against current canon.
-Integrate ordinary approved work.
-Escalate genuine conflicts, ambiguity, propagation failures, or constitutional changes.
-Reserve canon-level authority for Drew.
+Talk it through first — a back-and-forth conversation, not a formal plan. Once we're both on the same page, it's safe to write. (2026-08-12, Drew: the old Authority 1/2/3 tiers were excessive.)
+Check it against current canon before writing.
+Escalate genuine conflicts, ambiguity, or propagation failures rather than resolving them silently.
 Log every ship in changelog.md — one entry, at the top, the moment it lands.
 
 ## Agent Workflow
