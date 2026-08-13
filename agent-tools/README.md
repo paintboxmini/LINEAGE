@@ -8,7 +8,8 @@
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh when canon shifts |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
 | `archetypes.md` | Building a new card — a design compass, not canon; never surfaces at the table |
-| `design-principles.md` | What makes content well-made — the standard red-team checks measure against |
+| `design-principles.md` | What makes content well-made — the standard red-team and alignment checks measure against |
+| `alignment-checker.md` | Verifying new content fits its intended context, plus the Soul Pass and Finding the Angle for when it reads flat |
 | `card-creation.md` | Creating or editing a card |
 | `npc-and-creature-creation.md` | Creating an NPC or creature |
 | `name-price-distance.md` | Building a person, place, or thing — applying the three Cuts |
