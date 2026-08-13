@@ -4,6 +4,7 @@
 
 | Prompt | Use When |
 |--------|----------|
+| `repo-orientation` | read when working on canon |
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh when canon shifts |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
 | `archetypes.md` | Building a new card — a design compass, not canon; never surfaces at the table |
