@@ -59,9 +59,13 @@ This isn't dangerous the way the labor level is dangerous. It's dangerous the wa
 
 Without the map: navigating the deep is possible but disorienting. The sticky echoes make direction unreliable. The reaching geometry of the caves changes. Players who attempt it without the map are not necessarily lost — but they will not find the exit quickly, and the deep will have more time with them.
 
-**At the center**, players will not find a fight. They will find the love of the infinite directed at them without reservation. This is not safe. It is not hostile. It is both of those things at once and neither.
+**At the center, the mine opens into the Loom.**
 
-*What that contact actually looks like is still open. Don't develop it further without Drew.*
+She is chained to it. The machinery is real — vast, old, built the day the Pendragon Attempt tried and failed to finish its work (`world/the-regency.md`). Her hair spills out from her in every direction, threaded directly into it, feeding the same Grid that runs beneath every district above (`factions/the-weavers.md`). This is not a metaphor players are meant to intuit. It is the literal shape of the Seat: Aurora fused to a throne built to hold her, in the one place built to hold both.
+
+Players who reach her will not find a fight. They will find the love of the infinite directed at them without reservation, radiating from a woman chained to a loom that has not stopped running in a hundred years. This is not safe. It is not hostile. It is both of those things at once and neither.
+
+*What that contact actually looks like — what she says, if anything, what it costs to be that close to her — is still open. Don't develop it further without Drew.*
 
 ---
 
