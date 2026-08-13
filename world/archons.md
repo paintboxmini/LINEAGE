@@ -46,6 +46,8 @@ A Seat's three ladders don't compete with each other. A living being, a Resonant
 
 **Contested** (`world/seats.md`, Seat States) is a different thing entirely: two claimants on the *same* ladder, fighting for the one bearer-slot that ladder allows. Cross-ladder coexistence isn't a contest, because nothing is being taken from anyone — three separate paths can each reach the same summit without any of them being on the others' trail.
 
+**When all three converge, the Seat stops being only an abstract position and becomes a literal one.** Each ladder's summit produces a different kind of physical role, and the three complete each other: an Embodied item is the one of the three actually built to be held — it becomes the seat itself, the throne. A Hallowed place is the extent that throne stands in — not furniture, but the room or the ground around it. An Incarnated person is the one fused to it — the Archon, seated. The word "Seat" was never only a metaphor; it was waiting for all three ladders to actually arrive at the same summit at once. Nothing established in this world has reached that yet — no Seat currently holds all three at Archon simultaneously — but this is the shape full convergence takes when it happens: a throne, in a hallowed room, with someone fused into it.
+
 ---
 
 ## Fading
@@ -67,5 +69,6 @@ The Seat itself never fades. Seats are permanent structural features of existenc
 - `world/resonant-people.md` — the ladder an Archon is the top of, and the Failed Seat-Takers who never reached it
 - `world/creation-myth-the-three-cuts.md` — why Seats exist at all
 - `world/resonant-items.md` — the object-equivalent of a Resonant Person, its own separate path to Archon, and what an Archon's will does to its Price
+- `world/resonant-places.md` — the place-equivalent of a Resonant Person, and its own separate path to Archon
 - `rules/equipment.md` — Artifacts, how Price is actually paid
 - `characters/black-maggie.md` — the one thing anchoring MoroM to held reality
