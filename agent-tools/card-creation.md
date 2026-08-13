@@ -127,4 +127,4 @@ Before presenting the card as finished, ask:
 9. Is the source tag real and appropriately specific?
 10. Does the card belong in the existing set, rather than merely resembling something already there?
 
-For adversarial review, run `agent-tools/red-team.md` after creation. For mature sets where redundancy has accumulated, `agent-tools/card-compression.md` is the appropriate later pass — not a substitute for creating the card correctly in the first place.
+For adversarial review, run `agent-tools/red-team.md` after creation.

@@ -20,7 +20,7 @@ You'll find open questions and quiet doubts throughout this repo, left in on pur
 | `world/` | Geography, factions, and organizations |
 | `mythology/` | Lore and creation myths |
 | `experimental/` | Sandbox — draft content, lower stakes, free to iterate |
-| `archives/` | Reserved for deprecated canon content. Currently unused — cut draft cards live in `experimental/archives/` instead |
+| `archives/` | Historical design trails — what was discovered, considered, rejected, or consolidated. Not authoritative over current canon; see `archives/README.md`. Cut draft cards live in `experimental/archives/` instead |
 | `playtesting/` | Playtest notes, feedback, and session logs |
 | `agent-tools/` | Drop-in prompts for common design tasks |
 | `printing/` | Print-ready HTML card sheets and the generator script |
