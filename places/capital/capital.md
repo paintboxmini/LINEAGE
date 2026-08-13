@@ -195,7 +195,7 @@ Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The
 - `places/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
 - `places/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
 - `places/capital/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
-- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, the Threshold, the Deep
+- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, and the Deep
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy, the capital's prison in practice
 - `factions/the-cellar-custodians.md` — Who runs the Waterworks
 - `factions/the-weavers.md` — The secret guild sharing those tunnels

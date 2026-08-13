@@ -21,8 +21,7 @@ Aurora is bound at the bottom of this mine. The Boar built his labor operation d
 |-------|-----------|
 | **The Waterworks** | Citywide utility layer, not specific to the mine — runs beneath the entire capital. The Bazaar & Tavern is a small, hidden pocket inside it, not its own level. See `places/capital/the-waterworks.md`, `places/capital/underground-bazaar.md`, `places/capital/underground-tavern.md`. |
 | **Labor level** | The Demon Court's domain — the capital's prison in practice, though nobody official calls it that. Work tunnels, cells, the Warden's court. Diamond Shelf at the far end, and a separate collection detail feeding the Weavers' grid. |
-| **The Threshold** | Where the warping starts, and where the capital's actual jurisdiction stops meaning anything. Sticky echoes. Slimes. The cave reaches. |
-| **The Deep** | Aurora. Not an encounter. Something else. |
+| **The Deep** | Where the capital's actual jurisdiction stops meaning anything. Aurora, felt first and then entirely — sticky echoes, slimes, the cave reaches, then Aurora herself, no hard line between any of it. Not an encounter. Something else. |
 
 ---
 
@@ -42,49 +41,37 @@ The Demon Court does not discuss what lies below the labor tunnels. Initiates le
 
 ---
 
-## The Threshold
+## The Deep
 
-Below the labor level the mine stops behaving like a mine.
+Below the labor level, the mine stops behaving like a mine — and stops being the capital's. Whatever authority the Warden or the Demon Court has ends here, whether or not they admit it.
+
+Aurora is here. All of it. Not a room, not a chamber — the mine simply becomes her, the way a river becomes the sea. No clear line, just a point where the distinction stops mattering, from the first faint symptom of her all the way to the center.
 
 **Sticky echoes** — sound doesn't leave. Speak and your words stay, layering on top of every voice that came before. Enough time passes and you're moving through the accumulated record of everyone who's been here. Players may hear voices they recognize. Some of those voices belong to people who should have come back and didn't.
 
-**Slimes** — they don't attack. They reach. They want proximity. Getting enveloped isn't violent — it's warm. That's the problem. Creatures of the threshold that express what the deep is full of.
+**Slimes** — they don't attack. They reach. They want proximity. Getting enveloped isn't violent — it's warm. That's the problem. Early expressions of what the deep is full of.
 
 **Cave reaches** — collapses that feel less like structural failure and more like the stone closing in affectionately. Passages narrow behind you. Ceilings have come down just enough to require pressing against the walls to pass. The mine is not trying to kill you. It is trying to keep you.
 
-The warping is not dangerous in the way the labor level is dangerous. It's dangerous in the way forgetting your name is dangerous. Players who spend too long in the threshold should feel the edges of themselves getting soft.
+This isn't dangerous the way the labor level is dangerous. It's dangerous the way forgetting your name is dangerous. Players who spend too long down here should feel the edges of themselves getting soft.
 
----
+**The Alternate Path.** Somewhere in the deep, threading around its center, a passage leads up and out — surfacing outside Eclipseria's walls entirely. The Cartographer mapped this route. She made the map to help her granddaughter get someone out. The map still exists. It is the only reliable navigation through the deep that doesn't require knowing where Aurora is by feel.
 
-## The Alternate Path
+Without the map: navigating the deep is possible but disorienting. The sticky echoes make direction unreliable. The reaching geometry of the caves changes. Players who attempt it without the map are not necessarily lost — but they will not find the exit quickly, and the deep will have more time with them.
 
-Somewhere in the threshold, threading around Aurora's direct influence, a passage leads up and out — surfacing outside Eclipseria's walls entirely.
+**At the center**, players will not find a fight. They will find the love of the infinite directed at them without reservation. This is not safe. It is not hostile. It is both of those things at once and neither.
 
-The Cartographer mapped this route. She made the map to help her granddaughter get someone out. The map still exists. It is the only reliable navigation through the threshold that doesn't require knowing where Aurora is by feel.
-
-Without the map: navigating the threshold is possible but disorienting. The sticky echoes make direction unreliable. The reaching geometry of the caves changes. Players who attempt it without the map are not necessarily lost — but they will not find the exit quickly, and the threshold will have more time with them.
-
----
-
-## The Deep
-
-Aurora is here.
-
-Not a room. Not a chamber. The mine simply becomes her at a certain depth, the way a river becomes the sea — no clear line, just a point where the distinction stops mattering.
-
-Players who reach the deep will not find a fight. They will find the love of the infinite directed at them without reservation. This is not safe. It is not hostile. It is both of those things at once and neither.
-
-*This layer is open. Don't develop further without Drew.*
+*What that contact actually looks like is still open. Don't develop it further without Drew.*
 
 ---
 
 ## GM Notes
 
-**The Warden's awareness:** Pazuzu knows the threshold exists and maintains a careful distance from it. He has never gone to the deep. He does not intend to. He has told himself this is professional discipline. It is not only that.
+**The Warden's awareness:** Pazuzu knows the deep exists and maintains a careful distance from it. He has never gone down. He does not intend to. He has told himself this is professional discipline. It is not only that.
 
-**Direwolf tracking:** The direwolves can follow a scent into the upper threshold. They have been conditioned to operate at that depth without dissolving. This makes them uniquely dangerous in a mine escape scenario — the threshold doesn't stop them the way it stops people.
+**Direwolf tracking:** The direwolves can follow a scent partway into the deep. They have been conditioned to operate there without dissolving. This makes them uniquely dangerous in a mine escape scenario — the deep doesn't stop them the way it stops people.
 
-**Kess's memory:** Something happened in the threshold during the rescue attempt. The sticky echoes may retain a record of it. Players who spend time here may hear things that don't belong to them.
+**Kess's memory:** Something happened in the deep during the rescue attempt. The sticky echoes may retain a record of it. Players who spend time here may hear things that don't belong to them.
 
 ---
 
