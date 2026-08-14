@@ -242,7 +242,7 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 
 - A Glasslight lens shows a color that only appears here at low tide.
 - A People of Promise ritual barge docks and nobody lets it leave.
-- An atlas arrives from Glasslight showing a door into the Unheld — anyone who looks at it dreams of the door.
+- An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water (`world/the-unheld.md`). That precision is why anyone who looks at it dreams of the door.
 
 ---
 

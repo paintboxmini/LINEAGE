@@ -29,7 +29,7 @@ The guards are unfriendly by policy, not by mood. They wear the Bear's colours â
 
 They do not explain the rules of the city. They do not offer directions beyond *"Marketplace is central. Don't make us come looking."*
 
-If the party is carrying anything that smells of the Weald, the Wallows, or open Unheld influence, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
+If the party is carrying anything that smells of the Weald or the Wallows, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
 
 **Gate fees, per person:**
 
