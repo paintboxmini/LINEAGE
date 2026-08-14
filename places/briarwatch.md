@@ -22,6 +22,16 @@ A sinkhole opened last season. The first one in living memory. It won't be the l
 
 ---
 
+## Arrival
+
+The first thing the road shows on the way in: Iron at his fence line on the Western Property, clearing brambles from the hedgerow — not idle work, he's been told exactly where to cut. A Regency cartographer stands a short way off, sighting toward the sinkhole with a theodolite, calling out where the brush needs to come down next so the survey line stays clear (`factions/the-cartographers-guild.md`). Fenwool output feeding the capital has dropped since the ground opened, and someone was sent to put a number on the damage before anyone higher up decides what Briarwatch is actually owed, or actually worth.
+
+Iron does the clearing without much comment. He's been waiting for real help a lot longer than a survey, and it shows in how little he says to the man directing him. The cartographer, for his part, is polite, thorough, and entirely uninterested in anything the sinkhole might actually be — he's here to measure lost grazing acreage, not to ask what's underneath it.
+
+The sinkhole itself is visible from the road, a dark gap in a fenced-off field, roped and posted the way Iron's own property already has it (`characters/iron.md`). Nobody's gone near it since the survey started. Nobody who lives here needs to be told why.
+
+---
+
 ## Notable Locations
 
 **The Abandoned Homestead** — off the road on the way in. A claim that failed: well caved in, fences broken outward, briarbundles still standing in the fields. Something large has taken up residence in the doorway. See `quests/the-abandoned-homestead.md`.
