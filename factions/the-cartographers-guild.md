@@ -20,6 +20,16 @@ What they actually do is narrower, and it never finishes: **they walk the paid-f
 - **Way-marking** — cairns, posts, carved distance-markers. Not decoration; the physical anchor a route walk checks against next time. A marker that's vanished is itself the finding.
 - **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted less, not more — the In-Between doesn't hold still, and a route that never needs correcting is a route nobody's actually walked recently. A fresh path map's own trustworthy window is short to begin with, about a month (`world/the-in-between.md`, Havens) — the paper is a receipt, not the payment — which is why the rotation exists at all instead of a single definitive map.
 
+## Tools
+
+Traditional surveying equipment, nothing exotic — the roads don't need light-cartography's precision, they need repeatability.
+
+- **Plumb Lines** — weighted cord, reads level and vertical against a landscape that can't be trusted to hold still.
+- **Chain Tapes** — long, spooled measuring tape, rolled out and reeled back in on every stretch, checked against the last survey's numbers.
+- **Marking Stakes** — wooden stakes with flag markers, driven at each waypoint; a stake gone missing is itself a finding, not just an inconvenience.
+- **Theodolites** — angle-sighting telescopes, used to fix a route's bearing precisely enough that drift shows up as drift and not just error.
+- **Field Kits** — protractor, ruler, and a survey ledger, for turning a day's readings into a corrected line on the map back at the chapter house.
+
 ## Structure
 
 Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`places/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. Many surveyors are Glasskin themselves, trained first on the Soft Edge — the single fastest-changing, least trackable phenomenon anywhere in the kingdom (`places/glasslight-reach.md`, The Soft Edge). Even a mediocre light-cartographer has spent years catching drift nobody else could follow; turned outward onto the comparatively slower instability of a road, that same discipline is exactly what a Route Walk needs. Leaving the Reach for a life of route walks isn't a rejection of that training. It's the same skill, aimed somewhere new. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
