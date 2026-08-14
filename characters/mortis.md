@@ -4,13 +4,13 @@
 
 ---
 
-A necromancer. Precise. Detached in the way of someone who has gotten very comfortable with death magic and has been paying for that comfort ever since.
+A necromancer. Precise. Comfortable with death magic in a way most people never get to be, because most people never had a reason to get that good at it.
 
-He and Giblets used to work together. They don't anymore. The falling out had something to do with how readily Mortis was willing to sacrifice a friend's life to the work — how many times, how casually, with how little apparent cost to himself. Giblets has been brought back enough times to know the difference between someone who brings you back because they need you and someone who brings you back because they can.
+He and Giblets were partners for years, before either of them settled in the capital — adventuring work, the kind that gets people killed. Giblets died for it more than once, always buying Mortis time or covering his back, never asked to and never once regretting it. Mortis brought him back every time. He never left him behind, and it never once occurred to him to.
 
-Mortis resents every resurrection he ever performed. He knows exactly what that resentment makes him.
+They retired together — not from each other, from the work itself. Mortis took the tavern. Giblets took the stall. Different corners of the same bazaar, still each other's closest thing to family.
 
-He went into the mine once. Not for a job — he doesn't take jobs. To pull two people out who had gone in after something that went badly wrong. He brought Giblets back from what he found down there. He knows what Kess lost. He has never mentioned it to either of them.
+He went into the mine once since. Not for a job — he doesn't take jobs. To pull two people out who had gone in after something that went badly wrong. He brought Giblets back from what he found down there — no different from any other time. He knows what Kess lost. He has never mentioned it to either of them.
 
 He pours Lily a drink without being asked every time she comes in. He does the same for Kess. Professional courtesy between people who have all spent too long in the space between.
 
@@ -18,6 +18,6 @@ He pours Lily a drink without being asked every time she comes in. He does the s
 
 ## Connections
 
-- **Giblets** — former partner. See `characters/giblets.md`.
+- **Giblets** — retired partner. Family, not just history. See `characters/giblets.md`.
 - **Kess** — pulled her out of the mine. Knows what she lost. See `characters/kess.md`.
 - **Lily** — pours without being asked. Two people who know what they are, at peace in different directions.
