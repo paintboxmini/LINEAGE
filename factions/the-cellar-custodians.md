@@ -22,7 +22,7 @@ A handful of the deepest stations do more than move water. They condition and di
 
 **The Head Custodian.** Public-facing, publicly accountable, genuinely in charge of the ordinary water supply — and, separately, briefed on the conditioning stations by an arrangement the guild doesn't examine too hard. Unlike the Weavers' Quiet Chair, the Head Custodian's authority isn't a secret; what's secret is one specific thing they're also responsible for.
 
-**Above the Head Custodian, on paper: Lady Eveline** (`world/the-regency.md`, The Elephant) — the Regency's critical-infrastructure portfolio, the Custodians' half of it. Not secret the way the Weavers' arrangement is; just never exercised where anyone's watching. The Head Custodian could name their council overseer if asked. Nobody's ever had reason to ask.
+**Above the Head Custodian, on paper: Lord Cedric** (`world/the-regency.md`, The Bear) — the same military portfolio that holds the walls and the gates, extended down into the tunnels where the actual fighting is. Not secret the way the Weavers' arrangement is; just never exercised where anyone's watching. The Head Custodian could name their council overseer if asked. Nobody's ever had reason to ask.
 
 ---
 
@@ -68,7 +68,7 @@ The Custodians are the last link in the FourthEye supply chain before it reaches
 
 - `places/capital/the-waterworks.md` — the layer the guild runs
 - `factions/the-weavers.md` — the guild sharing their tunnels
-- `world/the-regency.md` — Lady Eveline, the council-level overseer neither guild sees exercised
+- `world/the-regency.md` — Lord Cedric, the council-level overseer never seen exercised
 - `places/capital/the-wallows.md` — adjacent, not shared, territory
 - `world/geography-overview.md` — the rivers feeding the capital's intake
 - `world/seats.md` — Aurora, the Seat of Love/Binding
