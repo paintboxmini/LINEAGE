@@ -12,9 +12,10 @@ The Regency governs from the Citadel at the center of Eclipseria (the city).
 
 Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the five who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
 
-**The original party was seven companions and Pendragon — eight in the room.** Two of the seven died in the fight: the first to hold the Owl, the first to hold the Panther.
-**Five members of the council survived:** Oswald, Cedric, Elara, Archibald, Eveline.
-**Isabella and Percival hold the Owl and Panther now — but they aren't the first to have replaced the dead.** Both positions turned over at least once before landing on them. Who held them in between, and what happened to those people, is design debt.
+**The original party was seven companions and Pendragon — eight in the room.** Two of the seven died in the fight: the first to hold the Owl, the first to hold the Elephant.
+**Five members of the council survived:** Oswald, Cedric, Elara, Archibald, Isabella.
+**Percival holds the Owl now — but he isn't the first to have replaced the dead.** The position turned over at least once before landing on him. Who held it in between, and what happened to that person, is design debt.
+**Eveline holds the Elephant now, and hers is a different case.** Not unrecorded churn — a single, deliberate succession. See Lady Eveline — Behavioral Contract, below, for what that actually means.
 
 | Member | Title | Sphere |
 |--------|-------|--------|
@@ -126,8 +127,8 @@ Aurora — the actual bearer of the Seat they tried to take — is bound beneath
 **The ongoing attempt:**
 The first fight broke off unresolved, not lost outright, and the council has never stopped — all five surviving founders, knowingly, still working the same shared plan: grind Contested down until it settles into a permanent, total Binding, Aurora never leaving the Seat. What the other four don't know is that Oswald is also working something else, alone — a private line of study into what removing Aurora, rather than binding her further, would actually do, and whether it could bring his brother back whole (What Oswald believes, above). He has never told them, because it isn't their plan, and would read, correctly, as a betrayal of the one they actually agreed to a century ago. What "taking a Seat's bearer out" would even require, and whether it's possible at all against a living, unwilling Archon, is a real unknown — the same one Oswald himself refuses to sit with too closely. His letter at Table #9 of the Gilded Tusk reads, to whoever intercepted it, as a threat to the other council members — not wrong so much as incomplete: what he's actually risking isn't their authority, it's the entire shared project the five of them have spent a century building, for a hope none of them share and none of them sanctioned.
 
-**Isabella and Percival:**
-Recruited into seats that were already empty a second time — not the first Owl and Panther, and not their first replacements either (Council Members, above). Whatever happened to whoever held the titles in between is unrecorded. They inherited power without full knowledge of its source, same as anyone stepping into an office with a history nobody hands over. Percival is actively investigating — the Abyssal Ruins work is not civic scholarship. Isabella's position is undetermined. *Both are table discoveries.*
+**Percival:**
+Recruited into a seat that was already empty a second time — not the first Owl, and not the first replacement either (Council Members, above). Whatever happened to whoever held the title in between is unrecorded. He inherited power without full knowledge of its source, same as anyone stepping into an office with a history nobody hands over. He is actively investigating — the Abyssal Ruins work is not civic scholarship. *A table discovery.*
 
 ---
 
@@ -141,11 +142,11 @@ Recruited into seats that were already empty a second time — not the first Owl
 
 **Cedric vs. Oswald.** Cedric controls the walls, the gates, and now the Adventurers' Hall's irregulars (`places/capital/capital.md`, The Inner Precinct) — the only council member who can put armed force on the street without asking anyone's permission. Oswald needs that force loyal. Cedric hasn't fully given it.
 
-**Eveline vs. the table.** She holds both halves of critical infrastructure — water and the Grid — never speaks, never votes, and has outlasted the records. Everyone assumes neutrality. No one is certain of it. That both infrastructure wings answer to her office is a quiet veto: any serious move against her risks the city's actual survival. See `factions/the-weavers.md`, The Source Chamber.
+**Eveline vs. the table.** She holds both halves of critical infrastructure — water and the Grid — never speaks, never votes. Everyone assumes neutrality. No one is certain of it, and no one at the table knows how recently the seat actually changed hands. That both infrastructure wings answer to her office is a quiet veto: any serious move against her risks the city's actual survival. See `factions/the-weavers.md`, The Source Chamber.
 
-**Percival vs. the original five.** He's the only one who runs an institution touching every mile of road outside the city, and he doesn't carry the Seat-scar the original five all share — which means every anomaly a route walk reports reaches him without any of the context for why certain doors don't open. Isabella's position relative to him is undetermined.
+**Percival vs. the original five.** He's the only one who runs an institution touching every mile of road outside the city, and he doesn't carry the Seat-scar the original five all share — which means every anomaly a route walk reports reaches him without any of the context for why certain doors don't open.
 
-**Isabella.** Her office is the most clearly defined of the seven — Supreme Magistrate is a real title with a real court under it. Her *loyalties* are the least defined. Presiding over contracts and legal maneuvering gives her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted.
+**Isabella.** Her office is the most clearly defined of the seven — Supreme Magistrate is a real title with a real court under it. Her *loyalties* are the least defined. Presiding over contracts and legal maneuvering gives her soft power over everyone else's deals — she can end up the swing vote, the quiet knife, or the one who finally picks a side. Currently uncommitted. Whether that's strategy or the same thing the fight left in all five originals — nothing left that can feel strongly enough about a side to commit to it — isn't settled. Isabella may not know which one it is either.
 
 **Working balance.** Oswald pushes upward and inward. Elara and Archibald circle each other over the two economies. Cedric holds the sword and hasn't decided whose hand it ultimately serves. Eveline holds the foundation and says nothing. Percival digs. Isabella watches the contracts. The council functions because no single member can yet afford to break it — that, not any real trust, is what's keeping the peace.
 
@@ -153,13 +154,14 @@ Recruited into seats that were already empty a second time — not the first Owl
 
 ## Lady Eveline — Behavioral Contract
 
-*No backstory. No motivation. That's a table discovery.*
+*Her behavior is fixed. What she actually feels underneath it, and what she'd do if it were ever safe to show it, is not — that's a table discovery.*
 
 - She never speaks. Not mute — chooses silence.
 - She responds to information with small physical reactions only. That's the only read you get.
 - She attends everything. Votes nothing.
-- She has been on the council longer than any record accounts for.
 - Critical infrastructure is her one official portfolio — the Cellar Custodians, the Weavers. She has never been seen to exercise it. It's exercised anyway. See `factions/the-weavers.md`, The Source Chamber.
+
+**What Eveline is (GM Secret):** The original Elephant died in the fight, same as the first Owl and first Panther (Council Members, above). The seat went to a great-granddaughter of the founding line — Pendragon and Oswald's blood — raised from childhood specifically to fill it. She was taught what the council needed her to believe: that Aurora's Binding isn't a person's suffering, that the domain is a resource and the resource is the whole truth of it. It didn't take. She sees exactly what the Loom does to a person, every time she's inside it, and does the work anyway — silent, precise, compliant — because nobody raising her ever showed her a door marked refuse. The silence isn't neutrality. It's what the fear looks like once it's had time to go still.
 
 ---
 
