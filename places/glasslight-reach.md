@@ -18,12 +18,15 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 - Streets are long fractures. The cliff sings when wind passes through them.
 - Windows are where the quartz is thin enough to be almost-air.
 
-## The People
+## The People — the Glasskin
 
-- Many are faintly translucent — frosted-glass skin, softly visible veins.
-- Tails are common and varied; they move with emotion.
-- They speak gently and rarely interrupt, as if loud certainty could crack something.
-- The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
+Outsiders call them Glasskin, or cruder, "glass-skins" — never what they call themselves, and never fully accurate either way. What reads as frosted, translucent skin is actually a short, dense coat covering the entire body, felt-or-suede-textured, semi-transparent enough that the skin and its veins show softly through it — camouflage, evolved for the pale quartz cliffs and the cold that comes with them. Eyes are ordinary and human-looking, the one feature that isn't strange at a glance. Ears are long and slender, tapering to tufts of hair; the tail matches. A thicker mane runs from the crown of the head down the neck. Hands and feet carry real claws — digging into unstable stone isn't incidental to how they live here, it's how the town gets built and rebuilt at all.
+
+They speak the common tongue like anyone else, day to day. But the cliffs sing — long fractures that hum when wind passes through them — and this people's own true name for themselves is made of that same sound. Not a word. A chord. No single voice can produce it alone; it takes a group actually singing together to pronounce it correctly, which means the truest thing they call themselves is something none of them can say by themselves, ever, only with each other. When the cliff is singing, they hum along, trying to match its tones. When it goes quiet too long, they hum anyway — filling the silence rather than leaving it sit empty.
+
+Some go further than matching tone for tone — reading the cliffsong for meaning, the way any people reads weather or stars, finding pattern and message in what the stone is doing. Not the same current as the People of Promise's own theology (`factions/people-of-promise.md`) — a separate, older relationship to a separate phenomenon, nature listened to rather than a thing to be saved from.
+
+They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
 
 ## Economy
 

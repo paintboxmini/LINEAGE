@@ -22,7 +22,7 @@ What they actually do is narrower, and it never finishes: **they walk the paid-f
 
 ## Structure
 
-Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`places/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
+Headquartered in Glasslight Reach — a natural fit, not an assignment: the city's whole culture already treats precision-cartography as noble work (`places/glasslight-reach.md`, the light-cartographers), and the Guild recruits out of the same discipline. Many surveyors are Glasskin themselves — the same instinct that reads the cliffsong for meaning turns outward easily, onto roads and stretches of kingdom nobody's precisely recorded yet. Leaving the Reach for a life of route walks isn't a rejection of that instinct. It's the same one, aimed somewhere new. **They are not the same institution.** Light-cartographers map the Soft Edge specifically — the one line even they can't call finished, watching whether it's moved. The Guild borrows the same rigor and sends its surveyors out onto the kingdom's roads instead, a different problem entirely, solved the same patient way.
 
 **The Glasslight chapter itself blurs that line more than the charter admits.** Staffed out of the same civic tradition, its members turn out light maps — Soft Edge surveys, city-light studies — alongside the actual route work, sold and displayed at the chapter's own gallery (`places/glasslight-reach.md`, The Gallery). Elsewhere in the kingdom, a chapter is roads and nothing else. Here, it's both — a regional specialty, not a rewrite of what the Guild is chartered to do.
 
@@ -33,6 +33,8 @@ Headquartered in Glasslight Reach — a natural fit, not an assignment: the city
 Chartered, not secret — the opposite posture from the Masons (`factions/the-masons.md`), who tend a different kind of threshold in total silence. The Regency pays for the Guild's work outright; this is the "someone" in `world/the-in-between.md`'s own rule that a safe stretch of road is "a place someone is paying to hold." Travelers know the roads are guild-surveyed. They just don't think about what that means until a route walk is late and a cairn they were counting on isn't where it should be.
 
 **Headed by Lord Percival, The Owl** (`world/the-regency.md`) — cartography is his seat on the council, not an oversight assignment tacked onto something else. Every survey ledger reaches him because it's his own institution's record, not because it's routed to him from elsewhere. He's the only council member without a Seat-scar from the Pendragon Attempt, which means every stretch a Route Walk reports "gone — swallowed back into blank" reaches him as a real, logged anomaly, with none of the context the other five carry for why certain doors don't open.
+
+He's alone at that table a second way the others don't share, too. He's Glasskin (`places/glasslight-reach.md`) — and his own people's true name for themselves takes more than one voice, sung together, to say at all. There's no one else of his kind in the room to sing it with.
 
 ---
 
