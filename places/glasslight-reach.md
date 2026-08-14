@@ -28,6 +28,8 @@ Some go further than matching tone for tone — reading the cliffsong for meanin
 
 They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
 
+Most who leave don't stop wanting to come back, even just for a visit. Losing the town doesn't just mean losing a place — it means losing the only other voices that can complete your own name with you. That pull doesn't fade the way ordinary homesickness does.
+
 ## Economy
 
 The economy runs on light. Light-cartographers are the nobility — their books full of swatches, lens-angles, humidity notes, annotations of hues that don't have names.
@@ -56,7 +58,7 @@ What lies beyond the northernmost waters. The name describes how it looks — sk
 
 Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it. The People of Promise have their own reading of it, unconnected to what any cartographer thinks — see `factions/people-of-promise.md`, Ritual Bathing.
 
-The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved.
+The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved. Nothing else in the kingdom changes this fast or this illegibly; training on it is training on the hardest version of a skill that gets used everywhere else at a gentler pace (`factions/the-cartographers-guild.md`, Structure).
 
 ---
 
