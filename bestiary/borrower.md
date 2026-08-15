@@ -23,7 +23,7 @@ They are not fighters. They are survivors who have learned to fight.
 
 ## Culture
 
-No single chief — authority is task-shaped and temporary, whoever's actually good at the thing that needs doing right now. A tunnel-sense elder calls the dig. A listening-post keeper calls the danger. A cook calls the ration. Nobody defers to a Borrower outside their own competence, and nobody expects them to.
+Elders hold real authority — more than one at a time, chosen for something closer to accumulated trust than any single skill, backed by armed guards when it matters. Day-to-day work still runs by competence underneath that: a tunnel-sense expert calls the dig, a listening-post keeper calls the danger, a cook calls the ration. Nobody defers to a Borrower outside their own competence for the small things. For anything that touches the whole warren — including what an outsider walks away with — it's the Elders' call. See `quests/hollow-below-briarwatch.md`, Factions, for the actual meeting.
 
 Homes are shared sleeping-mat chambers, several families to a room, moved deeper or shallower as the Stonecoils' range shifts — nothing built to last, because nothing down here has stayed safe long enough to be worth building permanent. The clay bowls pressed against the walls aren't just early warning against Stonecoils; they're how a chamber knows what's coming before it would otherwise hear it, which is as close to security as anyone gets in the Hollow.
 
