@@ -65,7 +65,7 @@ The last thing she does before bed is to give them a Carrion Feather.
 
 In the morning she's simply gone ahead — she doesn't wait for an answer, doesn't ask the party to commit to anything. If they want to catch up to her, or just look in on what she was worried about, Turnroot Weald is right there past Briarwatch's own fence line whenever they're done in the Hollow — no extra travel required to reach it.
 
-**What still doesn't have an answer at all: how she knew *this specific party* was worth talking to** — that they were new, that they came out of the water, any of it. The Echo explains her pull toward Briarwatch. It doesn't explain her attention to them specifically. Leave that part genuinely open.
+**What still doesn't have an answer at all: how she knew *this specific party* was worth talking to** — that they were new, that they came out of the water, any of it. Her alignment to Death explains her pull toward Briarwatch. It doesn't explain her attention to them specifically. Leave that part genuinely open.
 
 ---
 

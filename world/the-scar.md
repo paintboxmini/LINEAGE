@@ -60,7 +60,7 @@ The council believes he died. He did not. That is true, and it is worse.
 
 It also explains where he is. A thing with no interior cannot be held anywhere that requires holding, so he is in the only ground nobody pays to hold.
 
-**He is a failed Seat-taker, by the definition already written.** `world/resonant-people.md` defines the category as *"beings who attempted to claim a Seat and survived the contact without succeeding. The Seat leaves its mark permanently."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way. The category also says such Echoes are *"the most powerful and the least stable,"* which is worth holding next to a thing that has never once done anything.
+**He is a failed Seat-taker, by the definition already written.** `world/resonant-people.md` defines the category plainly: a being who attempts to claim a Seat and fails, survives the contact, and carries the mark of it permanently — often *"the most powerful and the least stable."* That is Pendragon in one sentence, and `world/the-regency.md` already classes his five companions the same way, which is worth holding next to a thing that has never once done anything.
 
 What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
 

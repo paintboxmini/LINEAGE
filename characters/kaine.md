@@ -4,7 +4,7 @@
 
 ---
 
-Promise-raised, old enough to have watched many people return to the Unheld, young enough to still be angry about what he's seen. A failed Echo — he reached toward something and it didn't take, and he has reframed the failure as clarity: the Promise is true, only the pace is wrong. Everyone is moving too slowly toward something inevitable.
+Promise-raised, old enough to have watched many people return to the Unheld, young enough to still be angry about what he's seen. A failed Seat-taker — he reached toward something and it didn't take, and he has reframed the failure as clarity: the Promise is true, only the pace is wrong. Everyone is moving too slowly toward something inevitable.
 
 He leads The Final Current, a sect within the Promise community built to accelerate dissolution — not waiting for natural death to return people to the Unheld, but helping it along.
 
@@ -52,7 +52,7 @@ His tells: he doesn't ask questions. He states things. He is absolutely certain 
 
 **The miracles.** Kaine's followers see genuine signs and wonders and choose to hear his explanation of them rather than inspect their source. The first are intimate and useful: ordinary water becomes restorative when he touches it, wood catches fire when he touches it, a tired and depressed person leaves energized after he touches them. He can also call lightning at range, including one public demonstration against a metal pole. None of these effects needs a separate theology to explain it — the visible fact is enough: Kaine touches something, and something happens. He tells them the Unheld unlocked this in him through repeated bathing. The concealed Lightning Loop is what actually produces the wonders, and Kaine knows it. He does not wear it as a public symbol of the Promise — it can disappear among other rings on his hand, or be worn as a necklace when he wants it less conspicuous. See `items/lightning-loop.md`.
 
-**Where the method actually came from (GM Secret — not public, not known even inside the Final Current).** The failed Echo gave him the conviction: the Promise is true, the pace is wrong. It didn't give him a technique. That came from one specific afternoon, low tide, Kaine hidden up in the cliffs for reasons that had nothing to do with Corren at first (`characters/corren.md`, Death). Corren went down alone, onto rock the tide only bares for a few hours at a stretch, and waited. What happened to him took longer and went further than any bathing Kaine had ever seen — thrashing, changing, past fluid, past anything the congregation has a word for. Right before Corren was completely undone, he passed through a form Kaine read, watching from above, as powerful. Desirable. Kaine never went down. There was nothing left to go down for. What he kept wasn't a method he understood — it was a single image, and a conviction he built backward from it: that going under enough times doesn't end in disappearing, it ends in *that*. He has never told anyone what he actually saw, not even his most devoted, and has never once let himself sit with the plain fact of it: he watched a man succeed at disappearing, and walked away with the moment just before as a technique for becoming more instead.
+**Where the method actually came from (GM Secret — not public, not known even inside the Final Current).** His failure gave him the conviction: the Promise is true, the pace is wrong. It didn't give him a technique. That came from one specific afternoon, low tide, Kaine hidden up in the cliffs for reasons that had nothing to do with Corren at first (`characters/corren.md`, Death). Corren went down alone, onto rock the tide only bares for a few hours at a stretch, and waited. What happened to him took longer and went further than any bathing Kaine had ever seen — thrashing, changing, past fluid, past anything the congregation has a word for. Right before Corren was completely undone, he passed through a form Kaine read, watching from above, as powerful. Desirable. Kaine never went down. There was nothing left to go down for. What he kept wasn't a method he understood — it was a single image, and a conviction he built backward from it: that going under enough times doesn't end in disappearing, it ends in *that*. He has never told anyone what he actually saw, not even his most devoted, and has never once let himself sit with the plain fact of it: he watched a man succeed at disappearing, and walked away with the moment just before as a technique for becoming more instead.
 
 ---
 
@@ -101,7 +101,7 @@ Range: Both
 
 ---
 
-**SCRIPTURE OF ECHOES**
+**SCRIPTURE OF RESONANCE**
 GREEN — SOUL — PROMISE
 Attack: Soul + d4
 Effect: Attacker and defender discard 1 random card each. If they are different colors, you heal 4 HP.
