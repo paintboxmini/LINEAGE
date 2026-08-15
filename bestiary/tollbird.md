@@ -19,7 +19,7 @@ It can drag a grown adult to the fence. It can't drag one far — which is exact
 
 It perches with its head tilted at whatever moves below it, tail ticking at a slow, steady beat — the same rhythm it keeps everywhere else in its life. It is not a nervous bird. It is a counting one.
 
-It impales its prey on whatever the environment gives it — thorn, wire, a broken branch, its own beak and claws if nothing sharper is fixed nearby — anything that will hold a body still while it dries. The result is always a larder: prey cached in place, returned to, added to over time. What that looks like depends entirely on where it's hunting — see `quests/the-larder-fence.md` for one worked example.
+It impales its prey on whatever the environment gives it — thorn, wire, a broken branch, its own beak and claws if nothing sharper is fixed nearby — anything that will hold a body still while it dries. The result is always a larder: prey cached in place, returned to, added to over time. What that looks like depends entirely on where it's hunting — see `places/briarwatch.md`, The Larder Fence, for one worked example.
 
 ---
 
@@ -61,7 +61,7 @@ At Creature Threat Rating 9 — even with the party, not below it — a Tollbird
 
 ## Related Documents
 
-- `quests/the-larder-fence.md` — a worked encounter using this creature, terrain and all
+- `places/briarwatch.md` — The Larder Fence, a worked encounter using this creature, terrain and all
 - `bestiary/skeinwing.md` — not prey, never hunted; the rare, impossible thing a larder can hold by accident
 - `rules/combat.md` — the Wait action this creature teaches
 - `rules/card-glossary.md` — Exile (Thorn Larder)

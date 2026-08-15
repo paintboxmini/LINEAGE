@@ -17,7 +17,7 @@ A cave system is the same kind of edge it already prefers — total dark is just
 
 ## The Large One
 
-*Abandoned homestead, Briarwatch (`quests/the-abandoned-homestead.md`).*
+*Abandoned homestead, Briarwatch (`places/briarwatch.md`, The Abandoned Homestead).*
 
 **Mind 4 / Body 4 / Soul 6 — HP 22**
 **Creature Threat Rating:** 14

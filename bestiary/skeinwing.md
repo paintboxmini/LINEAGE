@@ -52,12 +52,12 @@ Most days it's what it always is: something small and rust-furred, a young jacka
 
 ## Tactical Purpose
 
-Primarily a discovery, not an encounter — the answer to `quests/the-larder-fence.md`'s "one thing that should not be on a fence at Briarwatch's edge." Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Creature Threat Rating 7 and HP 9 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
+Primarily a discovery, not an encounter — the answer to `places/briarwatch.md`'s "one thing that should not be on a fence at Briarwatch's edge" (The Larder Fence). Its stat block exists for completeness and for the rare table that wants to run it live (an injured Skeinwing found grounded, dying, maybe savable) — not for a fair fight. Creature Threat Rating 7 and HP 9 reflect what it *would* be if it had to defend itself, which is almost never what actually happens to one.
 
 ---
 
 ## Related Documents
 
-- `quests/the-larder-fence.md` — where it's most likely to be found, and dead
+- `places/briarwatch.md` — The Larder Fence, where it's most likely to be found, and dead
 - `bestiary/tollbird.md` — the creature whose larder it ends up in, and why that isn't a hunt
 - `places/turnroot-weald.md` — the wider sky it's native to, listed under Flora & Fauna

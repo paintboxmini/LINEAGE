@@ -76,7 +76,7 @@ Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exi
 
 ## Encounter skeleton
 
-*(exemplars: `quests/shifting-burrow.md`, `quests/the-larder-fence.md`)*
+*(exemplars: `quests/shifting-burrow.md`, `places/briarwatch.md` — The Larder Fence)*
 
 `# Name` → *italic one-line placement note* → **Intent** (what it teaches, through play not explanation) → **Setup** (environment, positioning constraints) → **Enemies** (who + deck) → **GM notes** (behavior, triggers, when to let the lesson land) → **Win Condition** → **Related Documents**.
 

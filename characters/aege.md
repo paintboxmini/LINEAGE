@@ -120,7 +120,7 @@ Her core picks lean the same direction — control and information over damage (
 - `places/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
 - `quests/washed-ashore.md` — the alternate telling
 - `places/roadhouse.md` — where she tells the party about her family
-- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
+- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where her road runs through
 - `quests/turnroot-weald-adventure.md` — The Holdfast, her people's ground
 - `bestiary/rootstalker.md` — what's hunting them
 - `bestiary/root-heart.md` — Overgrowth, the real reason the Weald has turned
