@@ -60,5 +60,6 @@ Range: Ranged
 
 ## Open
 
-- Does she complete the transition to Mason practice, or arrive somewhere in between?
 - What specifically triggered the doubts — a bathing experience, someone else's dissolution, something she witnessed?
+
+**Resolved:** she completes the transition. She becomes the current Mason's apprentice — the next successor in his line, not a side student (`factions/the-masons.md`, Structure). Not fated toward any Seat or Resonance; this is a craft and a choice she makes, nothing cosmological pulling her toward it.
