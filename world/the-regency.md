@@ -160,7 +160,7 @@ Recruited into a seat that was already empty a second time — not the first Owl
 - She never speaks. Not mute — chooses silence.
 - She responds to information with small physical reactions only. That's the only read you get.
 - She attends everything. Votes nothing.
-- Critical infrastructure is her one official portfolio — the Cellar Custodians, the Weavers. She has never been seen to exercise it. It's exercised anyway. See `factions/the-weavers.md`, The Source Chamber.
+- The Weavers are her one official portfolio. She has never been seen to exercise it. It's exercised anyway. See `factions/the-weavers.md`, The Source Chamber.
 
 **What Eveline is (GM Secret):** The original Elephant died in the fight, same as the first Owl and first Panther (Council Members, above). The seat went to a great-granddaughter of the founding line — Pendragon and Oswald's blood — raised from childhood specifically to fill it. She was taught what the council needed her to believe: that Aurora's Binding isn't a person's suffering, that the domain is a resource and the resource is the whole truth of it. It didn't take. She sees exactly what the Loom does to a person, every time she's inside it, and does the work anyway — silent, precise, compliant — because nobody raising her ever showed her a door marked refuse. The silence isn't neutrality. It's what the fear looks like once it's had time to go still.
 

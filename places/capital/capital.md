@@ -107,7 +107,7 @@ Past the Marketplace's noise, closer to the Citadel, the chaos gives way to some
 
 **Traders' Hall.** Closest to the Marketplace edge and the most publicly accessible of the four — a broad, low building of pale stone, arches and long counters open to the day, a constant low murmur of voices and shifting paper. Licenses, Wardens, disputes, the daily commercial paperwork. Lady Elara's people work here; she rarely does.
 
-**Custodians' Hall.** Sunk half a storey into the ground, darker stone, iron-bound doors. The air leaking out smells of oil, wet rock, hot metal — chimneys and vent stacks on the roof like breathing apparatus for something larger underneath. Shift boards, tool storage, the public face of the water system. Controlled entry. Lady Eveline's infrastructure arm, same as the Weavers' Hall below.
+**Custodians' Hall.** Sunk half a storey into the ground, darker stone, iron-bound doors. The air leaking out smells of wet rock and standing water — no smoke, no chimneys, nothing burning; whatever this building is breathing, it's tidal, not industrial. Shift boards, tool storage, the public face of the water system. Controlled entry. Lord Cedric's infrastructure arm — the same military portfolio that holds the walls and the gates, extended down into the tunnels.
 
 **Weavers' Hall.** Narrower and taller, close-fitted stone, high thin windows that let in light but little sound. A single carved lintel shows a simplified loom. The upper rooms are ordered and quiet — bolt racks, pattern tables, soft-footed clerks handling surface textile and lighting contracts. The lower levels are restricted and colder. The building feels tightly held together, as if the stones were under the same tension as the work done within. Also Eveline's.
 

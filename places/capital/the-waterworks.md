@@ -28,7 +28,7 @@ Four rivers feed the capital's intake, part of the same continent-wide network d
 
 **The Ledger.** Slower and browner, coming in from the agricultural districts. Used for volume more than quality — the Custodians call it "honest but coarse" and mean it as a compliment.
 
-**The Quiet Arm.** A smaller, partially subterranean tributary that joins the Vein under the oldest parts of the city. Officially just another intake. Unofficially, the most restricted condenser stations sit on the Arm, because the water there behaves strangely before any treatment is applied to it at all.
+**The Quiet Arm.** A smaller, partially subterranean tributary that joins the Vein under the oldest parts of the city. Officially just another intake. Unofficially, the most restricted conditioning stations sit on the Arm, because the water there behaves strangely before any treatment is applied to it at all.
 
 ---
 

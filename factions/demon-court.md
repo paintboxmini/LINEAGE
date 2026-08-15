@@ -20,7 +20,7 @@ The masks serve two functions: rank signifier and fear instrument. Prisoners see
 
 The lead demon. His mask is a clear standout — larger, more elaborate, the apex of the hierarchy made visible.
 
-Runs the Wallows labor operation on behalf of the Boar. Manages the debt slave workforce, maintains the threshold boundary, keeps the alternate path sealed. His authority in the Wallows is absolute and he exercises it like a man who believes the surface is watching and approving.
+Runs the Wallows labor operation on behalf of the Boar. Manages the debt slave workforce, maintains the boundary into the Deep, keeps the alternate path sealed. His authority in the Wallows is absolute and he exercises it like a man who believes the surface is watching and approving.
 
 Visions of grandeur are not a flaw in his character. They are his character. He genuinely believes the Demon Court is a legitimate institution. He is not wrong that it functions like one.
 
@@ -72,9 +72,9 @@ It is filed, guarded, and rotated exactly like every other labor-level detail, b
 
 Not ranked. Not masked. Used.
 
-Trackers and pursuit animals. They follow a scent into the upper threshold — trained to operate at that depth without losing themselves to it. This makes them dangerous in ways the guards aren't: they don't hesitate at the warping boundary, they don't feel the warmth, they don't slow.
+Trackers and pursuit animals. They follow a scent partway into the deep — trained to operate at that depth without losing themselves to it. This makes them dangerous in ways the guards aren't: they don't hesitate at the warping boundary, they don't feel the warmth, they don't slow.
 
-Used for escape prevention. If something gets out of the labor level and into the threshold, Pazuzu sends the direwolves.
+Used for escape prevention. If something gets out of the labor level and into the deep, Pazuzu sends the direwolves.
 
 ---
 

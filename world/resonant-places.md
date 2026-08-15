@@ -38,6 +38,8 @@ A place can't pay the way a person or an item does — it has no vitality to spe
 
 **Glasslight Reach** *(candidate Song and Silence, Stage I — Resonance)* — the cliff fractures sing when wind passes through them, and nobody in the town knows why. Song and Silence is the closer fit among the Seats (`world/seats.md`, Song and Silence), but the alignment is unconfirmed — the same register Fermata's alignment sat in before it was confirmed. The resonance is real, and reads as ambient and unexplained rather than active — a trace, not a behavior — which is what puts it at Stage I rather than higher. Which domain it belongs to isn't settled yet.
 
+**The Temple of the Rivers, Eclipseria** *(candidate Song and Silence, Stage I — Resonance)* — a reflective pool fed by a channel bled off the capital's own tidal intake, rising and falling on the same breathing rhythm as the rivers themselves (`world/geography-overview.md`). Song and Silence is the closer fit, unconfirmed the same way Glasslight's cliffs are — a third guess landing near the same edge, not proof of anything. The temple's own theology calls it something else entirely (`places/capital/capital.md`, The Temple District).
+
 **Turnroot Weald** *(Seat unestablished, Stage II — Alignment)* — a forest whose sentience isn't metaphor, and whose pressure escalates the longer anyone stays inside it. Named here as a Resonant Place because its nature already behaves like one, and that behavior — the domain actively doing something through the place, not just marking it — is what puts it at Stage II rather than Stage I. Its Seat is unestablished — nothing in the current roster (`world/seats.md`) accounts for what it is, and this file isn't the place to manufacture an answer nobody's found yet.
 
 ---
