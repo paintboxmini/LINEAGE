@@ -78,23 +78,123 @@ Narrate through dust falling, cracks widening, Borrowers moving their sleeping m
 
 ### Surface Layer — Watchtower Ruins
 
-An old border watchtower from a prior era. What remains is a cracked circular foundation, scattered blocks half-swallowed by grass, and a well at its center with rope long rotted away.
+An old border watchtower from a prior era. What remains is a cracked circular foundation, scattered blocks half-swallowed by grass, and a well at its center with rope long rotted away. The stone underfoot isn't stable ground — it's a ruin that's still settling, generations after the tower itself gave up.
 
 **Read-Aloud:**
 > *Something moves at the well's edge. Low, deliberate, already watching you back.*
 
-**Encounter:** Settling Stones — see `quests/settling-stones.md`
-
-Borrower Sentries defending the well shaft — one of two mirrored entrances into the Hollow, the other being Shifting Burrow at the Western Property sinkhole (`quests/shifting-burrow.md`). Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Settling Stones' own note on Pressure and repeat visits.
+One of two mirrored entrances into the Hollow — the other is the Western Property Sinkhole, below. Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Terrain Interaction, below.
 
 Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
 
 **Checks:**
-- Body (Easy): Climb broken stair safely to reach the well; failure causes minor damage; loud impact may raise Pressure if already 2+ (the same rubble-noise logic Settling Stones' own Positioning Constraint uses during the fight itself)
+- Body (Easy): Climb broken stair safely to reach the well; failure causes minor damage; loud impact may raise Pressure if already 2+
 - Mind (Easy): Notice the Sentries holding position before they move
-- Soul (Optional): Signal peaceful intent before violence starts — the Sentries "haven't decided" the party's a threat yet (`quests/settling-stones.md`)
+- Soul (Optional): Signal peaceful intent before violence starts — the Sentries "haven't decided" the party's a threat yet (see Standing Down, below)
 
 **Entry:** The well shaft is the primary descent. Old drainage channel runs east. Vertical shaft risky but usable.
+
+**Intent:** Teaches that movement has a cost here too, but a different one than the sinkhole entrance below — not straining against soft ground, but risking noise on top of unstable stone. A first taste of the Pressure Track's actual lesson: an action taken here, at the surface, can make something worse in a room the party hasn't reached yet.
+
+**Positioning Constraint:** Moving into or out of certain positions means picking a path across loose, broken masonry. A Body check (Easy DC 13):
+- *Success:* Move safely, quietly.
+- *Failure:* You dislodge debris — a loud impact. If the Pressure Track is already at 2 or higher, raise it by 1. Below that, nothing happens yet — the ruin doesn't care until something underneath is already listening.
+
+This applies to both players and Borrower Sentries.
+
+**Enemies — Borrower Sentries.** Small, territorial humanoids defending the old well shaft — the oldest known way into the tunnel network, worn smooth by generations of Borrower traffic, not exposed by any recent collapse the way the sinkhole was. Not the same as the Borrowers deeper in the Hollow — these are surface guards, faster and more aggressive than their kin underground. They haven't decided if the party is a threat yet. They'll decide quickly.
+
+Each one wears a single scale, dark and heavy, strung as jewelry — proof they've stood in a group that killed a Stonecoil and survived it (Factions, below, the warrior's rite). Worth describing; it's the visible reason these three read as more dangerous than an ordinary Borrower.
+
+Run 2–3 Borrower Sentries — same creature, same cards, as the Western Property entrance below.
+
+**Enemy Cards:**
+
+**BURROW RESHUFFLE**
+BLUE — MIND — HOLLOW
+Attack: Mind + d6
+Effect: Move to Backline.
+Defensive Bonus: Gain Evade.
+Range: Melee
+*"The hole was always there. They just made it obvious."*
+
+**ALERT CALL**
+GREEN — SOUL — HOLLOW
+Attack: Soul + d6
+Effect: Scry 1. Another Borrower gains Evade until their next turn.
+Defensive Bonus: Attacker gains Staggered.
+Range: Both
+*"One signal. Everyone adjusts."*
+
+**DIRT CLOD**
+RED — BODY — HOLLOW
+Attack: Body + d6
+Effect: Target gains Blind.
+Defensive Bonus: Gain Evade.
+Range: Ranged
+*"Loose soil. Bad timing."*
+
+**Behavior:**
+- Borrower Sentries target Frontline players first but aim to disrupt positioning rather than deal maximum damage.
+- They know this rubble field. They aren't slowed by choosing footing the way an outsider is — don't make them roll the Positioning Constraint themselves unless it matters for a specific effect.
+- Sentries retreat (flee) when reduced to 1 HP. They go down into the well shaft. The entrance is now open.
+
+**Standing Down — the Peaceful Path.** Fighting isn't the only door here, and it shouldn't read as the default one. "They'll decide quickly" cuts both ways — a party that closes the distance calm, unarmed, and unhurried is offering the Sentries the same read a threat would give, just the opposite answer. This is consistent with how the deeper Borrowers are already written (Factions, below — sympathetic, distrustful, organized, *not helpless*): the surface guards share that same underlying disposition, just faster to react.
+
+*Reading the room first* (optional, before anyone commits to an approach): Soul (Read), Easy DC 11. Success tells the party plainly what's actually true — the Sentries haven't decided anything yet, hostile or otherwise. It's a held breath, not a trap. This doesn't force the peaceful path; it just tells the party the door is genuinely open if they want it.
+
+*Making the actual approach* — weapons sheathed or never drawn, no fast movement, a clear gesture (words aren't required; these Sentries may not share a language with the party, and shouldn't need to): Soul (Read), Standard DC 13.
+- *Success:* The Sentries stand down. They don't escort or guide, and they don't warm up — but they step back from the well and let the party pass, usually with one final wary gesture that reads as a warning rather than a threat (something in the shape of *don't do anything stupid down there*, however it's mimed). This satisfies the Win Condition below exactly as a fight would.
+- *Failure:* They don't attack outright, but the offer doesn't land either — treat this as the encounter starting as written above, just without a surprise round either side.
+
+This path was tested live before being written down, not designed cold — a party that read the room correctly, approached without weapons, and made the ask plainly earned exactly this outcome at the table.
+
+**Terrain Interaction.** If a player fails the Positioning Constraint check and the Pressure Track is already at 2 or higher, raise it without comment — let the symptom show up in the next room, not here. Below Pressure 2, a failed check is just a stumble; note it, nothing more.
+
+Worth knowing, not something to force: this rule is nearly inert the first time a party uses this entrance, since Pressure starts at 0 — but if this mouth ends up being the party's *exit* after time spent deeper in the Hollow, Pressure will likely already be elevated, and the same rubble that did nothing on the way in can matter a great deal on the way out. That's the loop working as intended, not a balance gap to fix.
+
+**Win Condition:** Eliminate or force retreat of all Borrower Sentries, **or** talk them down (Standing Down, above). Either way the well shaft is clear — the party can descend (or, if this is their exit, surface).
+
+On the loop: once a mouth's Sentries are dealt with (killed or driven off) during a delve, that entrance stays clear for the rest of the same trip — they don't restock mid-session. Whether a defeated group is back in force on a later, separate visit is a GM call, same as any other cleared encounter.
+
+---
+
+### Surface Layer — Western Property Sinkhole
+
+The collapsed sinkhole on the Western Property. Loose soil. Exposed roots. The ground hasn't decided what it is yet.
+
+One of two mirrored entrances into the Hollow — the other is the Watchtower Ruins, above. Same tunnel network, two mouths; runs whichever direction the party uses this one, entrance or exit.
+
+**Intent:** Teaches the importance of managing Frontline/Backline positioning, and the consequences of movement within unstable environments.
+
+**Reading the ground, before anyone gets close:** Mind (Reason). Don't hand over everything on a bare pass — this is a tiered read, and the good stuff is worth making players earn with the dice, not just with attention.
+- *DC 11 (Easy):* The basics — loose soil, exposed roots, and a scatter of small, deliberately round openings along the rim. Burrow entrances, unmistakably dug, not natural cracks.
+- *DC 16+:* Real scale. How far down this actually goes, roughly how many entrances there are, whether anything is currently moving in them. This tier is where the sinkhole stops being a set piece and starts being intelligence. **At this tier, also visible from the rim only — never from inside the tunnels below — a broken stone pillar standing in the center of the pit, sheared off partway up, exactly where the collapse tore through it.** It reads as structural, not natural, if anyone looks twice: too regular, too deliberately placed to be a chance formation. What it actually was, and who built it, is GM knowledge (below) — nothing here confirms that to the party, just that something man-made stood here before the ground gave way.
+
+**Positioning Constraint:** The Backline is uneven and shaky. Moving into or out of the Backline requires a Body check (Easy DC 13):
+- *Success:* Move safely.
+- *Failure:* Add 1 Exhaust to your deck from the strain.
+
+This applies to both players and Borrower Sentries.
+
+**Enemies — Borrower Sentries.** Small, territorial humanoids defending burrow entrances exposed by the collapse. Not the same as the Borrowers deeper in the Hollow — these are surface guards, faster and more aggressive than their kin underground. They haven't decided if the party is a threat yet. They'll decide quickly.
+
+Each one wears a single scale, dark and heavy, strung as jewelry — proof they've stood in a group that killed a Stonecoil and survived it (Factions, below, the warrior's rite). Worth describing; it's the visible reason these three read as more dangerous than an ordinary Borrower.
+
+Run 2–3 Borrower Sentries — same creature, same cards, as the Watchtower Ruins entrance above.
+
+**Behavior:**
+- Borrower Sentries target Frontline players first but aim to disrupt positioning rather than deal maximum damage.
+- If a player moves to the Backline, Sentries shift focus to them — the unstable terrain is their advantage.
+- Sentries retreat (flee) when reduced to 1 HP. They go down into the burrow. The entrance is now open.
+
+**Terrain Interaction:** The Backline check creates a natural hesitation around repositioning. Players learn that movement has cost before they encounter the Stonecoils, where it has more cost.
+
+If a player fails the check and gains Exhaust, note it without comment. Let the deck tell the story later.
+
+**Win Condition:** Eliminate or force retreat of all Borrower Sentries. The sinkhole entrance is clear. The party can descend.
+
+**GM Secret — Not Player-Facing:** The broken pillar at the pit's center isn't natural, and it isn't new construction either — it's the Masons' own work, the same underground stabilization effort that built the reinforced Living Chamber behind the Heavy Door deeper in (Transition Zone, below). The Western Property sits directly against ground the Masons already tend (their watchtower-and-fence line at Briarwatch's edge, `factions/the-masons.md`, Known Works) — the underground work here was never a separate project, just the same threshold maintenance extended below the surface where it wouldn't be seen. The pillar held for as long as it did. It didn't fail from neglect; the same seepage and pressure buildup already driving the sinkhole (Causality Chain, above) is what finally broke it. This is the actual cause the causality chain was always missing a piece of — not just water and limestone, but one piece of deliberate engineering that gave out under exactly the load it was built to resist. The Masons don't know yet. Nobody has told them, and nothing here suggests they're due for a visit soon.
 
 ---
 
@@ -116,7 +216,7 @@ Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clea
 
 **The Living Chamber (Rest Site)** — inside the door: dry, reinforced ceiling, four carved bunks, small hearth alcove, tool hooks, old supply shelves. Structurally superior to surrounding caves. Survives high Pressure events. The old builders reinforced it properly.
 
-**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Western Property sinkhole closed (`quests/shifting-burrow.md`, GM Secret) and the giant fence posts topside at the larder fence (`places/briarwatch.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
+**The Quarry Offshoot** — a narrow passage off the back of the Living Chamber, easy to overlook among the tool hooks and supply shelves, opens into a small worked chamber: squared block-cuts still visible in the walls, the same disciplined tool-marks as the Heavy Door itself. A real, physical space, plainly a quarry to anyone who looks — what it actually supplied is the part that isn't obvious. This is where the stone came from for both the support pillar that used to hold the Western Property sinkhole closed (Surface Layer — Western Property Sinkhole, above) and the giant fence posts topside at the larder fence (`places/briarwatch.md`, `factions/the-masons.md`) — one small quarry, cut once, feeding two separate projects above and below ground. Nobody living remembers this room; it's in no Borrower account of these tunnels and no Briarwatch story about the fence.
 
 ---
 
@@ -244,7 +344,7 @@ Small subterranean mole-like humanoids.
 - **Decoy Scrapers** — loose stones wedged in cracks to discourage predator ambush points
 - **Narrow Crawl Lanes** — tunnels too small for Stonecoils; they don't dominate the space, they survive it
 
-**The warrior's rite is a Stonecoil, killed as a group.** No Borrower fights one alone — that's not bravery here, it's a wasted death against something that outweighs any one of them badly. A warrior is someone who's stood in that group and the group won. Proof is worn, not claimed: a single scale off a killed Stonecoil, carried as jewelry for the rest of that Borrower's life. **A given Borrower typically only ever earns one — killing a Stonecoil at all is a once-in-a-lifetime achievement, not something repeated or stacked.** It's why the Sentries above (`quests/settling-stones.md`, `quests/shifting-burrow.md`) read as faster and more aggressive than their kin deeper in — they're not just guards, they're the ones already blooded, and there's exactly one scale each to show for it. Every Sentry a party actually meets is wearing one.
+**The warrior's rite is a Stonecoil, killed as a group.** No Borrower fights one alone — that's not bravery here, it's a wasted death against something that outweighs any one of them badly. A warrior is someone who's stood in that group and the group won. Proof is worn, not claimed: a single scale off a killed Stonecoil, carried as jewelry for the rest of that Borrower's life. **A given Borrower typically only ever earns one — killing a Stonecoil at all is a once-in-a-lifetime achievement, not something repeated or stacked.** It's why the surface Sentries (Surface Layer, above) read as faster and more aggressive than their kin deeper in — they're not just guards, they're the ones already blooded, and there's exactly one scale each to show for it. Every Sentry a party actually meets is wearing one.
 
 **Duskwicks (`bestiary/duskwick.md`) are the more survivable predator problem — a real, ongoing nuisance rather than the once-in-a-lifetime kind.** Small, opportunistic, no interest in a fight it doesn't already have won — a Duskwick is a threat the Borrowers actually deal with regularly, not a rite of passage. Unlike a Stonecoil, killing or driving one off doesn't earn a scale or a story; it's closer to pest control than combat.
 
@@ -256,7 +356,7 @@ They have a word for the vibration before a Stonecoil strike. They leave food sc
 
 If the party observes Borrower behavior instead, they can learn predator patterns without fighting first. Short of the full mediation above, Borrowers may still refuse to guide players deeper but offer: a clay bowl tremor detector, a narrow bypass tunnel, or the warning: *"Do not run."*
 
-**Making first contact peacefully is real, but it isn't automatic — gate it with a roll, even an easy one.** This is first contact with an armed, ambiguous-looking group inside their own home; the Borrowers are established as sympathetic and *not helpless*, not as pushovers. Soul (Read): sitting, open hands, no weapons, genuine unhurried patience — that's Standard, DC 13, same as talking down the surface Sentries (`quests/settling-stones.md`). A stronger overture (kneeling, closing eyes, actually spending a resource on the gesture — a card discard, a real gift) should drop the DC further, down to 5–7 per the general rule now in `rules/gm-guide.md`'s "When to Call for Rolls" — but still roll it. A rare bad roll on an easy check is the honest cost of keeping the dice meaningful even when the roleplay's excellent.
+**Making first contact peacefully is real, but it isn't automatic — gate it with a roll, even an easy one.** This is first contact with an armed, ambiguous-looking group inside their own home; the Borrowers are established as sympathetic and *not helpless*, not as pushovers. Soul (Read): sitting, open hands, no weapons, genuine unhurried patience — that's Standard, DC 13, same as talking down the surface Sentries (Surface Layer, above). A stronger overture (kneeling, closing eyes, actually spending a resource on the gesture — a card discard, a real gift) should drop the DC further, down to 5–7 per the general rule now in `rules/gm-guide.md`'s "When to Call for Rolls" — but still roll it. A rare bad roll on an easy check is the honest cost of keeping the dice meaningful even when the roleplay's excellent.
 
 **The room itself should feel dangerous even when the outcome isn't in serious doubt.** Two beats, played every time regardless of how the check goes — they're texture, not a second roll, and they don't change the resolution:
 - **The instant the party makes any overture at all** — sitting, hands open, whatever it is — the youngest, most impulsive Borrower in the room reacts on pure reflex: a thrown stone, or whatever's in reach, flung hard at the nearest party member before anyone older can stop it. It's a startle response, not a coordinated attack — have it miss clean or glance off harmlessly (a pack, a boot, nothing worth an actual damage roll), and have an elder or older Sentry physically restrain the thrower immediately after, visibly furious at them for it. The point isn't the stone. It's that not everyone down here is as controlled as the one doing the talking, and the party should feel that gap for a second before the scene settles.

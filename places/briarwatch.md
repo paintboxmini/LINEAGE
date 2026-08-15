@@ -104,7 +104,7 @@ The danger in Briarwatch isn't strange. It's wet soil and old limestone and thin
 
 ## GM Secret — Not Player-Facing
 
-The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. See `factions/the-masons.md`, Known Works.
+The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. The same line extends below ground: a reinforced chamber and support pillar under the Western Property, holding back the same pressure the watchtower line holds back above. That pillar has since failed — the actual cause of the sinkhole, not just water and limestone alone. The Masons don't know yet either (`quests/hollow-below-briarwatch.md`, Surface Layer — Western Property Sinkhole, GM Secret). See `factions/the-masons.md`, Known Works.
 
 ---
 
@@ -117,7 +117,6 @@ Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Bri
 ## Related Documents
 
 - `quests/hollow-below-briarwatch.md` — the sinkhole, the caves, the Borrowers, the Stonecoils
-- `quests/settling-stones.md` and `quests/shifting-burrow.md` — the two mirrored entrances into the Hollow, at the watchtower ruins and the Western Property sinkhole respectively
 - `places/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `quests/washed-ashore.md` — where the session 1 route actually starts now
 - `places/vultures-nest.md` — the former opening's location, no longer on the route

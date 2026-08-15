@@ -19,7 +19,7 @@ Established through the ordinary `places/` overview format, not a separate mecha
 
 ## Price — The Pressure Track
 
-**A place's Price is paid, or accrued, through its pressure track.** This isn't a new mechanic invented for this file — it's the one already built and running across `quests/turnroot-weald-adventure.md`, `places/the-coil.md`, `quests/hollow-below-briarwatch.md`, `quests/sour-tomatoes.md`, `quests/settling-stones.md`, and `quests/the-wallows-descent.md`. What's new is naming what it's always been: the Second Cut, expressed at a place's scale. A place can't spend vitality or degrade an object the way a person or item pays — what it can do is escalate against whoever's standing in it, and that escalation *is* the debt (`world/resonant-places.md`, Price at a Place's Scale).
+**A place's Price is paid, or accrued, through its pressure track.** This isn't a new mechanic invented for this file — it's the one already built and running across `quests/turnroot-weald-adventure.md`, `places/the-coil.md`, `quests/hollow-below-briarwatch.md`, `quests/sour-tomatoes.md`, and `quests/the-wallows-descent.md`. What's new is naming what it's always been: the Second Cut, expressed at a place's scale. A place can't spend vitality or degrade an object the way a person or item pays — what it can do is escalate against whoever's standing in it, and that escalation *is* the debt (`world/resonant-places.md`, Price at a Place's Scale).
 
 **The shared shape, across every existing implementation:**
 
