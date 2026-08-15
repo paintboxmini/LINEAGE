@@ -244,7 +244,7 @@ The grandmother's map ends here.
 
 **Pazuzu pursuing:** if the awareness track maxed before the party reached the deep's entrance, Pazuzu follows as far as the door. He unlocks it. He stands at the entrance and considers. He does not cross. He will be here when the party comes back up, if they come back up through the mine.
 
-**The direwolves and the deep:** they track as far as the echo cavern. The sticky echoes confuse them — too many scents, too many directions. They cannot follow further. This is not widely known.
+**The direwolves and the deep:** they're personally unaffected by the deep's warping — conditioned to operate there without dissolving, the way it affects people (`places/capital/the-wallows.md`, GM Notes) — but they track by scent, and the sticky echoes layer too many overlapping trails past the echo cavern for a nose to sort. They don't hesitate to go further. They just lose the thread there. This is not widely known.
 
 **The compliance warmth:** players who spend time in the upper labor level may notice something. A quiet. A patience. A not-quite-wanting-to-leave that has nothing to do with the situation. This is the edge of Aurora's influence at the labor level depth. The Warden has calibrated this. It is working as designed.
 

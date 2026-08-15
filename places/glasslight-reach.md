@@ -10,6 +10,10 @@ Ropes and pulleys carry cargo and the tired. Stairs cut, worn, and re-cut. Ladde
 
 You don't so much arrive at Glasslight Reach as finish climbing it.
 
+**Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
+
+**Hidden somewhere in the cliffs, not public knowledge and not meant to be, is a Mason lodge** — the order's whole discipline is walking in, doing the work, and leaving before anyone notices they were there. See `factions/the-masons.md`, `characters/mirel.md`.
+
 ## What It Looks Like
 
 - The sea is white and foaming. It leeches color from the air directly above it.

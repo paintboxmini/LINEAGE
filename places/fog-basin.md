@@ -27,6 +27,12 @@ It was here before the city. The city was built on the premise that maps are tru
 
 ---
 
+## The Orphanage
+
+Rebuilt on the site of one that burned — real, operating, takes children with nowhere else to go (`quests/sour-tomatoes.md`, Where the Kids Go). Steele grew up in the original, was inside when it burned, and rebuilt it himself later on the same ground (`characters/steele.md`). A longer trip for anyone bringing children here from elsewhere in the basin, but a standing answer, not an open question.
+
+---
+
 ## Pell
 
 Small, ancient, deeply unbothered. Found in the basin with a lantern and a coat with too many pockets.
@@ -66,4 +72,5 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 - `places/capital/capital.md` — the city at the basin's center
 - `items/fog-basin-items.md`
 - `quests/sour-tomatoes.md` — the Odom place; a family with no fix, and children who need somewhere to go
+- `characters/steele.md` — rebuilt the orphanage on the ground where he grew up
 - `places/the-collection-plate.md` — hollow settlement in the basin; hanging sheets, inward shacks, hard to leave by fear not by lock

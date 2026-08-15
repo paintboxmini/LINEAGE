@@ -15,7 +15,10 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 ## Notable Landmarks
 
 **The Central Gateway**
-At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it.
+At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
+
+**The Cathedral**
+A fallen priest's ground, tremor-door sealed, holding the stabilizing crystal that keeps the Central Gateway from collapsing. Full encounter: `quests/abyssal-ruins-cathedral.md`.
 
 **The Shattered Spires**
 Toppled towers from the original civilization. Hollow shells now. Frequently occupied by Rift-Stalkers — creatures that have slipped through from other planes.

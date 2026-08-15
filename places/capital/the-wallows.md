@@ -73,7 +73,7 @@ Players who reach her will not find a fight. They will find the love of the infi
 
 **The Warden's awareness:** Pazuzu knows the deep exists and maintains a careful distance from it. He has never gone down. He does not intend to. He has told himself this is professional discipline. It is not only that.
 
-**Direwolf tracking:** The direwolves can follow a scent partway into the deep. They have been conditioned to operate there without dissolving. This makes them uniquely dangerous in a mine escape scenario — the deep doesn't stop them the way it stops people.
+**Direwolf tracking:** The direwolves have been conditioned to operate in the deep without dissolving — the warping that unmakes a person's sense of self doesn't touch them the way it touches people, which is exactly what makes them uniquely dangerous in a mine escape scenario. What does stop them is scent itself: past the echo cavern, the sticky echoes layer too many overlapping trails for a nose to sort, and a direwolf tracking a specific scent loses the thread there, even though it could keep walking. Not a limit on the dog. A limit on what scent can still mean that deep (`quests/the-wallows-descent.md`, GM Notes).
 
 **Kess's memory:** Something happened in the deep during the rescue attempt. The sticky echoes may retain a record of it. Players who spend time here may hear things that don't belong to them.
 
