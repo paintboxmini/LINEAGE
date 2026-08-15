@@ -96,6 +96,16 @@ Impaled along it: small things that wander this far without anyone missing them,
 
 ---
 
+## The Hollow Below
+
+What's actually under the Western Property sinkhole — and, by the same tunnel network, under the Watchtower Ruins' well shaft on the other side of the farmland. Two mouths, one system.
+
+From either entrance, the tunnels open into a broken stair chamber holding a reinforced rest room behind a heavy stone door — Mason-built, generations old, the one dry, defensible space in the whole network. Past that, the passages widen into open caverns: a hub chamber with paths branching toward a Borrower settlement, a mated pair of Stonecoils denning in the depths, and a stream running colder and deeper the further it's followed. At the very bottom, past a throat the old watchtower engineers deliberately narrowed, something larger sleeps.
+
+Full mechanical structure, room by room, checks and all: `quests/hollow-below-briarwatch.md`.
+
+---
+
 ## Tone
 
 The danger in Briarwatch isn't strange. It's wet soil and old limestone and things that were always there being disturbed. The farmers are tired, not dramatic. They've been dealing with this quietly for a season and they want it resolved.
