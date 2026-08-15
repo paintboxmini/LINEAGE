@@ -25,3 +25,11 @@ Full session-by-session history archived at `archives/multi-agent-notes.md`.
 How common Resonance actually is across Eclipseria isn't decided, and doesn't need to be — Drew (2026-08-14): "I haven't decided how common resonance is yet." Treating it as a population question is the wrong frame regardless. Resonance is a completion signal for design work, not a claim about how many people/places/items in the world happen to have it: once something reads as resonant, that's the marker it's been developed completely enough to hand to players, not evidence the world is thick with it.
 
 Working consequence for the Degrees of Alignment framework (`world/resonant-people.md`, `world/resonant-items.md`, `world/resonant-places.md`): "Resonant" is expected to narrow over time to mean what's currently called Stage II — Aligned — rather than covering the full Stage I–III ladder. Stage I (instinct-level, unclassified) falls out of the term entirely. Eventual chart: Archon / Seat / Hallowed Ground at the top, Resonant People / Places / Items (= currently Aligned) below that, everything else beneath. Not executed yet — a target to write toward, not a rename to run today.
+
+---
+
+## Hold Off on Unheld Lore During Story-Crafting
+
+Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.
+
+**One deliberate exception, not a contradiction of the above:** seed an early scene of the "orthodox" death rite — releasing the deceased into the Unheld at the coastline — several sessions before the party ever reaches Glasslight Reach. Ordinary custom, not deep lore or Promise theology specifically; the point is quiet foreshadowing so Glasslight's own Unheld-adjacent content doesn't land from nowhere later. Keep it that light — a witnessed tradition, not a hook into cosmology.
