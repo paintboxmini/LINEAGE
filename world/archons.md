@@ -50,6 +50,8 @@ A Seat's three ladders don't compete with each other. A living being, a Resonant
 
 **Love/Binding is the first Seat to actually complete it.** Aurora (Incarnate), the Loom she's fused to (Embodied), and Eclipseria itself (Hallowed) are all three, right now, on the same Seat (`world/seats.md`, Love/Binding). It's still Contested — that's a person-ladder fight nobody's won, unrelated to whether the other two ladders have independently arrived — which is exactly the case this section already said doesn't stop cross-ladder convergence from being real. No other Seat has reached it yet.
 
+**Change came close, and stopped short on purpose.** Its Archon (Elias) and its item (the Thorne Throne, Turnroot Weald) both independently reached Stage III — but the place never followed, and never will while its Archon holds the seat, because finishing it needs an Archon willing to hold still long enough for a place to catch up, and stillness is the one thing Change's own nature won't permit (`world/seats.md`, Change). Two ladders at the summit isn't three.
+
 ---
 
 ## Fading

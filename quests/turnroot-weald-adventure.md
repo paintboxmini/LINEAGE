@@ -327,6 +327,8 @@ There's no third option that stays legal. They go over, or they raise the track.
 
 **Loot:** Echothorn Seeds. See `items/turnroot-weald-items.md`.
 
+**GM Secret — Not Player-Facing.** This is the manifested Seat of Change — a Resonant Item at Stage III, Embodiment (`world/seats.md`, Change). It was a thorn whip once, carried and used by Elias without him ever noticing how long, until continued use pushed it past a whip and into whatever this is now. The moment it finished becoming this, he left it and never came back. Nobody in Turnroot Weald knows what it actually is or who left it. The low looping hum is the closest thing to an explanation anyone here has — the forest repeating an intent nobody's left to explain, over and over, the same way the vine itself is one strand wrapped around its own pattern millions of times.
+
 ---
 
 ### The Floating Gallery
