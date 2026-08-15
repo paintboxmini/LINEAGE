@@ -1,15 +1,5 @@
 # LINEAGE — Claude Context
 
-planned structure for Claude.md -
-
-WHAT I NEED TO KNOW
-├── identity / scope
-├── repo orientation
-├── canon gate
-├── workflow
-└── minimal mechanical preload
-├── what not to do
-
 This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRPG system. Content here is written for a DM and their table, not for publication. Tone is direct, evocative, and mechanical — no purple prose, no padding.
 
 ## What This Repo Is
