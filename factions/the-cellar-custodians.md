@@ -10,7 +10,7 @@ What actually sets them apart from an ordinary utility guild is the reason the j
 
 The river channels get watched from the water, not just from the gates — a rotation of small, fast craft working the approaches immediately outside the walls, close enough to the capital that catching a problem out there beats meeting it at a sluice already under pressure. Reading a tide to time a gate and reading it to hold a boat steady in the same current are close enough to the same skill that the crossover is routine. It's widely known as the best posting in the guild: real respect, real skill, and a lot less time spent waist-deep in a cold cistern.
 
-A handful of the deepest cisterns do more than hold water. They condition and distribute a diluted form of the same binding force the Weavers carry through the wire grid, cooled and thinned enough to move through open channel instead of wire. The Custodians who staff those stations know this. Most Custodians never do.
+A handful of the deepest cisterns do more than hold water. Wire carries the Grid's current to lights and machines — the water carries something wire can't reach: the domain itself, cooled and thinned enough to move through open channel, dosed directly into what the whole city drinks and bathes in. Not power. Presence. The same civic calm that keeps a plaza quiet through an argument that should have gone worse doesn't only drift there on its own — some of it is put there, on purpose, by whoever actually runs the conditioning stations. The Custodians who staff those stations know this. Most Custodians never do.
 
 ---
 
