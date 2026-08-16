@@ -98,9 +98,7 @@ Does she grieve what she's become? Does she believe this is the only way to pres
 
 ## Open
 
-- The race's name
 - How many completed sites vs. in-progress sites
 - Whether the haunting at completed sites can be addressed — and how
-- The race's name — Maggie may be the last who knows it
 - Maggie's age and how she has survived this long
 - Whether more members of her race will appear later
