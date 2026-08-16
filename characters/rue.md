@@ -1,6 +1,6 @@
 # Rue
 
-*Light-cartographer, formerly of the Soft Edge survey. Glasslight Reach.*
+*Glasskin. Light-cartographer, formerly of the Soft Edge survey. Glasslight Reach.*
 
 ---
 

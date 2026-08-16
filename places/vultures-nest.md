@@ -58,14 +58,14 @@ Some people plan jobs around this tide. Nobody explains which jobs.
 
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `places/the-coil.md`.
+**The Night Ferryman** — River Folk. Rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `places/the-coil.md`.
 
 ---
 
 ## Key NPCs
 
 **Bartho Underfist — The Quiet Dockmaster**
-Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
+River Folk. Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
 
 Players arrive already in debt to him — the passage downriver requires something coin can't settle. He doesn't explain the full terms. He directs them to Briarwatch. Jonas writes it down.
 
