@@ -16,9 +16,9 @@ The world responds to those who pay attention. Every region has its own logic, i
 
 ## The Shape of the World
 
-The known world is a small continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
+The known world is a continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
-Major hubs are roughly two days of travel apart. The Regency maintains the roads and the halfway-inns between them.
+Major hubs are roughly four to five days of travel apart. The Regency maintains the roads and the halfway-inns between them.
 
 Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — partially mapped, with just enough glyph posts to slow the instability. Where the lines between far off locations blend together. It is most of the world by area and nobody is from it. The maintained roads are the reason travel between the 4 major havens for people is routine instead of an expedition, and they are maintained.
 

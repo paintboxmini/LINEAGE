@@ -10,7 +10,7 @@ Not by mapping the In-Between itself — that's not difficult, it's provably imp
 
 What they actually do is narrower, and it never finishes: **they walk the paid-for roads, over and over, and keep them exactly what they're supposed to be.** Confirm the road is still where the last survey put it. Confirm the cairns are standing, the approach markers to the halfway-inns haven't drifted, the distance between two points hasn't quietly lied the way distance does out there. Where something's wrong, they re-mark it. Where a stretch has genuinely gone — swallowed back into blank because the payment holding it stopped, exactly as `world/the-in-between.md`'s Havens rule says it will — they report it, and the Regency decides whether reclaiming it is worth the cost.
 
-**The fact that "two days between hubs" is a routine crossing instead of an expedition is the Guild's work, continuously spent and continuously needed again.** Nothing they do stays done. That is the job, not a failure of it.
+**The fact that "four to five days between hubs" is a routine crossing instead of an expedition is the Guild's work, continuously spent and continuously needed again.** Nothing they do stays done. That is the job, not a failure of it.
 
 ---
 

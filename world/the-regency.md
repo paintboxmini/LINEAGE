@@ -39,7 +39,7 @@ What different city factions say about the council. Collected from marketplace m
 | Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She sits the Temple of Justice bench herself, often... though some say the Supreme Magistrate knows the court's every gap because she wrote half of them." |
 | Lord Cedric | "A man's man. Keeps the walls high and the bandits at bay. Drinks like a fish, though." | "He honors the Forge. He knows that peace is only maintained through the strength of steel." |
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
-| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The two-day roads stay two days because someone like him never stopped checking." |
+| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The roads stay as short as they can be because someone like him never stopped checking." |
 | Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
 | Lady Eveline | "She never speaks, but she hears everything. |
 
