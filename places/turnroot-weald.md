@@ -17,13 +17,17 @@ The Weald does not trap people. It redirects them. Whether that distinction matt
 
 Predators execute the forest's will.
 
-## The People
+## The People — the Wealdfolk
+
+*(Working name — Drew's call whether it sticks.)*
+
+Skin runs mottled, patterned like bark seen in low canopy light — not scaled, not furred, just marked, and the mark doesn't sit still: a birthmark on the left cheek in childhood can turn up nearer the jaw by middle age. Nobody's alarmed by it. It's just what skin does here. Eyes sit larger than an outsider's, pupils wide enough to drink what little light reaches the forest floor, and throw back a faint color in torchlight the way an animal's do — though no two Wealdfolk agree on what color their own eyes actually are, and nobody's ever caught one lying about it on purpose.
 
 Those who stay long-term develop habits instead of maps. They tie cords to their wrists, hum route-songs, or simply let the wood guide them completely. NPCs here freely offer directions to locations — the forest makes them generous about this. It costs them nothing.
 
-Forest families still live under canopy year-round. Their safe range has collapsed toward the deep — see The Holdfast (`quests/turnroot-weald-adventure.md`).
+Their safe range has collapsed toward the deep — see The Holdfast (`quests/turnroot-weald-adventure.md`).
 
-**Where they came from:** descendants of the same civilization that once logged this forest by machine out of Ashfall — specifically the ones who were already living and working in these woods, not at the Ashfall home ground, when Ashfall itself was buried. Generations removed from the war that made the forest what it is. Whether any of them still know that history is a separate, open question.
+**Where they came from:** descendants of the same civilization that once logged this forest by machine out of Ashfall — specifically the ones who were already living and working in these woods, not at the Ashfall home ground, when Ashfall itself was buried. What generations inside a place the Seat of Change reached first did to their bodies wasn't sudden and wasn't a punishment — the drifting skin, the eyes, are just what happens to people who live that long somewhere Aligned to Change (`world/seats.md`, Change; `world/resonant-places.md`, Turnroot Weald). Generations removed from the war that made the forest what it is. Whether any of them still know that history is a separate, open question.
 
 ## Flora & Fauna
 

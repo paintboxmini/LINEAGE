@@ -16,7 +16,7 @@ Nomadic healers. A small tribe — the peoples of the world knew to seek them ou
 
 They were not an evil people. The Archon they served was kind and benevolent.
 
-Believed to have originated in the Abyssal Ruins region — the ancient civilization that fell there, long before the ruins earned that name (`places/abyssal-ruins.md`). Not confirmed; the connection is a likely thread, not a settled fact.
+Originated in the Abyssal Ruins region — the ancient civilization that fell there, long before the ruins earned that name (`places/abyssal-ruins.md`). Nomadic by the time anyone else's histories noticed them, which fits: a people scattered out of a fallen homeland has nowhere fixed left to be nomadic *from*.
 
 A dying race. Fewer than one in a hundred people alive today can claim Thessian blood, and Maggie is one of the last, not the only one — she has simply never found the others. The name of her people is in a tongue almost nobody speaks anymore — she may be the only one who still knows it.
 

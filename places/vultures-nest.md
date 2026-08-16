@@ -8,7 +8,11 @@ No longer the campaign's default opening (`quests/washed-ashore.md`, 2026-08-06)
 
 ---
 
-## The People
+## The People — the River Folk
+
+Skin runs a shade darker at the fingertips and toe-tips than the rest of the body — not paint, not decoration, just where a lifetime in and out of the water leaves its mark. A thin webbing runs between fingers and toes, thicker on those who've spent more years in the water than out of it; children are barely webbed at all, and the oldest river pilots barely have separate fingers left to speak of. Hair worn slicked back, wet or oiled, out of practicality first — but it's just how a River Folk face is supposed to look, on land or off it.
+
+Native to the whole river web, not just the Nest — but Vulture's Nest is where all of them actually trade, with each other and with the rest of the continent (`world/geography-overview.md`), which makes it the closest thing they have to a capital of their own.
 
 - Everyone has two names — the one they answer to, and the one they only share with their closest.
 - Children learn knots before letters. Lies before prayers.
