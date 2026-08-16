@@ -4,7 +4,7 @@ Once-thriving regions now buried under layers of gray-black ash. Broken cities a
 
 Ancient engines, war relics, and half-functioning constructs lie scattered beneath the surface. Heat behaves strangely — fires burn low and cold while buried embers ignite suddenly underfoot.
 
-This was never someone else's ruin. The War Engine was Ashfall's own, aimed outward at an enemy it did in fact defeat — see `quests/war-engine.md`. Whether burying your own home under the ash of winning still counts as victory isn't a question anyone was left alive here to answer.
+This was never someone else's ruin. The War Engine was Ashfall's own, aimed outward at an enemy it did in fact defeat — see `quests/war-engine.md`. What's now Turnroot Weald was Ashfall's forest once, logged by machine for generations, until the civilization at Abyssal Ruins answered by waking something the forest already had in it — the Root Heart (`bestiary/root-heart.md`) — and the trees stopped being just trees. Ashfall aimed the Engine at whoever had done the waking, not at the forest itself. Whether burying your own home under the ash of winning still counts as victory isn't a question anyone was left alive here to answer.
 
 Prolonged exposure is draining. The landscape seems to press unresolved things upward — memories, decisions, old arguments. Travelers report this consistently enough that it is no longer reported at all.
 

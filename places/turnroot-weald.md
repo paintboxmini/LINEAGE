@@ -23,6 +23,8 @@ Those who stay long-term develop habits instead of maps. They tie cords to their
 
 Forest families still live under canopy year-round. Their safe range has collapsed toward the deep — see The Holdfast (`quests/turnroot-weald-adventure.md`).
 
+**Where they came from:** descendants of the same civilization that once logged this forest by machine out of Ashfall — specifically the ones who were already living and working in these woods, not at the Ashfall home ground, when Ashfall itself was buried. Generations removed from the war that made the forest what it is. Whether any of them still know that history is a separate, open question.
+
 ## Flora & Fauna
 
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.
@@ -35,7 +37,7 @@ Notable species:
 
 ## Geography
 
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
+The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural — made into one, long ago, when the civilization at Abyssal Ruins answered Ashfall's machine-deforestation of these same woods by waking what the forest already had in it. See `places/abyssal-ruins.md`, "Where the war actually started"; `bestiary/root-heart.md`, Origin.
 
 ---
 
