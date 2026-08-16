@@ -37,7 +37,7 @@ Notable species:
 
 ## Geography
 
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural — made into one, long ago, when the civilization at Abyssal Ruins answered Ashfall's machine-deforestation of these same woods by waking what the forest already had in it. See `places/abyssal-ruins.md`, "Where the war actually started"; `bestiary/root-heart.md`, Origin.
+The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural — made into one, long ago, when the civilization at Abyssal Ruins answered Ashfall's machine-deforestation of these same woods by pushing the forest's own Resonance with the Seat of Change (`world/seats.md`, Change) to Alignment. Sentience is what that Alignment looked like. See `places/abyssal-ruins.md`, "Where the war actually started"; `bestiary/root-heart.md`, Origin; `world/resonant-places.md`, Turnroot Weald.
 
 ---
 
