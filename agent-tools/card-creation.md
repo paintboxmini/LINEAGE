@@ -56,9 +56,13 @@ Do not use the name to smuggle a mechanical rule that the text does not establis
 
 Write the smallest clear expression of the intended behavior.
 
-Prefer existing canonical keywords when they exactly express the intended rule. Do not create a new keyword merely to make one card's wording shorter.
+**Plain mechanical text is a first-class option, not a failure to find the right keyword.** Much of the existing set already works this way — CALCULATE's *"Move target enemy to backline,"* STUDY's *"Discard 2, draw 2,"* the Root Heart's FOREST MEMORY naming a color and paying out if the target plays it — sitting alongside cards that use Deadly, Sealed, or Scry. Reach for a keyword when one *exactly* expresses the rule. Write it out plainly when none does.
 
-Do not duplicate a keyword's definition on the card unless the canonical format specifically requires it.
+Do not create a new keyword merely to make one card's wording shorter. Do not duplicate a keyword's definition on the card unless the canonical format specifically requires it.
+
+**Compression — how keywords are actually earned.** A keyword's job is to compress something the game already keeps saying. When the same mechanic has been written out longhand across enough cards, that repetition is the qualification: it has become vocabulary, and folding it into `rules/card-glossary.md` is bookkeeping catching up to practice rather than an invention. **Flag the candidate; do not mint it mid-card** (`CLAUDE.md`, Do Not — *"flag if something is genuinely new"*). How many repeats earn it isn't set — that's a judgment call surfaced for Drew, not a bar an agent clears on its own.
+
+Frequency isn't the only justification. `rules/card-glossary.md` carries keywords used by a single card — Obscure, Critical — because the rule itself is intricate enough that restating it in full every time would cost more than a defined term does. Compression answers repetition; a defined term can also answer complexity.
 
 ### Defensive Bonus
 
@@ -97,6 +101,7 @@ Before finalizing a card:
 - Check `world/lineage.md` for source/tag questions.
 - Inspect nearby cards in `cards/` for established wording and formatting.
 - Check whether the proposed effect duplicates an existing card without creating a meaningful new decision.
+- If the card writes a mechanic out longhand, check whether other cards already say the same thing. A repeat isn't a problem — it's a compression candidate worth flagging (see Mechanic, above).
 
 If current canon and the requested card conflict, do not silently redefine canon. Surface the conflict.
 
@@ -126,5 +131,6 @@ Before presenting the card as finished, ask:
 8. Does the flavor reinforce rather than contradict the card?
 9. Is the source tag real and appropriately specific?
 10. Does the card belong in the existing set, rather than merely resembling something already there?
+11. If it states a mechanic in longhand, has the set now written that same mechanic out often enough to flag for compression into a keyword?
 
 For adversarial review, run `agent-tools/red-team.md` after creation.

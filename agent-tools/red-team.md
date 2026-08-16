@@ -66,8 +66,11 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    - Is it a mutation or merely a duplicate?
    - Could the mutation be expressed more cleanly?
 
-7. Tone & keyword compliance — fits the terse, mechanical voice; only approved
-   keywords in use.
+7. Tone & keyword compliance — fits the terse, mechanical voice; any keyword it
+   uses is an approved one. Plain longhand text is legitimate where no keyword
+   exactly fits — but if the set now states that same mechanic longhand across
+   several cards, flag it as a keyword-compression candidate
+   (`agent-tools/card-creation.md`, Mechanic).
 
 8. Visible reasoning — unfinished thinking left in the output (see the checklist
    below).
