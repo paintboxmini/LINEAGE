@@ -12,7 +12,7 @@ Their concern isn't only the boundary itself — it's whatever the boundary's fa
 
 ## Methods
 
-- **Stabilization glyphs** — carved into cliff faces at key locations to anchor held reality against Unheld pressure.
+- **Stabilization glyphs** — carved into cliff faces at key locations to anchor held reality against Unheld pressure. Cut with chisels, not drawn — chisel width and depth aren't a style choice, they're the whole tradeoff. A large chisel cuts shallow but wide, and the glyph it leaves hits hard and fades fast. A thin, sharp chisel cuts deep and narrow, and what it leaves lasts far longer at a fraction of the strength. Chalk and string mark the cut before the chisel ever touches stone — measured first, committed second, same discipline that runs through everything else the order does.
 - **Surveyor tools** — specialized instruments used to track the Unheld's local effects: drift rates, boundary erosion, anomalous behavior.
 - **Constrained magic** — unlike the wild magic of the People of Promise, Mason practice is disciplined, systematic, and deliberately limited in scope: wards and bindings built to let a Mason walk into a destabilized zone, do the work, and walk back out again before the zone can do to them what it does to everyone else.
 
