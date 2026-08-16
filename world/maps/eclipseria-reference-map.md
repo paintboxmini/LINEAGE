@@ -1,0 +1,8 @@
+# Eclipseria — Reference Map
+
+`eclipseria-reference-map.png` — an AI-generated prototype, built as a style and shape reference for Drew's own hand-drawn physical map (2026-08-16). Not a finished asset, not player-facing, and two things on it are **not canon:**
+
+- **The road network.** The image shows a denser web of connector roads than actually exists. The real network is six segments, no more: the three edges of the Glasslight Reach / Turnroot Weald / Vulture's Nest triangle, plus one spoke from each of those three corners in to Eclipseria at the center. See `world/geography-overview.md`, The Kings Road.
+- **The throne icon marking the capital.** It's a generic cartography symbol for "seat of political power," not a claim that Eclipseria is a **Seat** in the cosmological sense (`world/seats.md`). The two senses of "seat" happening to collide on this image is coincidental, not intentional overlap — flagging it here so it doesn't read as one later.
+
+Everything else — continent shape, the triangle layout, the river loop with its density concentrated around Vulture's Nest, Glasslight's cliffs, Turnroot wrapping Ashfall's eastern edge, Abyssal Ruins sitting apart from the mainland — was built to track `world/geography-overview.md` as closely as an image generator allows. Abyssal Ruins sitting offshore is itself a live tension worth remembering: canon currently has no explanation for how anyone would reach it, since nothing sails the Unheld (`world/geography-overview.md`: "Nothing sails it. Nothing fishes it."). Prototyped here because Drew wanted to see it, not because it's been reconciled.
