@@ -118,7 +118,7 @@ Death is not evil. Death is conclusion. It governs termination, closure, rest, a
 
 ### Witnessed Suffering
 **Bearer:** MoroM *(fading)*
-The act of truly seeing someone in their pain. Suffering held and witnessed becomes something other than suffering endured alone. Its practice died with the Thessians; MoroM thins. What MoroM is — or was — remains unwritten. See `characters/black-maggie.md`.
+The act of truly seeing someone in their pain. Suffering held and witnessed becomes something other than suffering endured alone. Its practice is dying with the Thessians, nearly extinct rather than gone; MoroM thins. What MoroM is — or was — remains unwritten. See `characters/black-maggie.md`.
 
 ### Knowledge
 Domain: Knowing, Revelation, Pattern

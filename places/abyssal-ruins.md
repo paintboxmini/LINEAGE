@@ -2,7 +2,7 @@
 
 Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood. What's known, at least to the few who'd have reason to know it: this was a target once, and something in Ashfall has it aimed again. See `quests/war-engine.md`.
 
-The civilization that held this ground before the ruin was already losing that war when the strike came. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
+The civilization that held this ground before the ruin was already losing that war when the strike came. Believed, not confirmed, to be where the Thessians originated (`characters/black-maggie.md`) — a dying race now, scattered thin across the world, long before anyone connected the two. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
 
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 

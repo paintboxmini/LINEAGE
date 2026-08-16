@@ -4,7 +4,7 @@
 
 *"Nothing can be spoken of it. Anything that can be spoken cannot be understood."*
 
-Almost entirely human. The Glasslight congregation is no exception — human pilgrims drawn to the town, not the native Glasskin (`places/glasslight-reach.md`, The People — the Glasskin), who hold their own separate, older relationship to the cliffs and never adopted the Promise's theology as their own.
+Mostly human, not exclusively. The Glasslight congregation is no exception — mostly human pilgrims drawn to the town, with some Glasskin (`places/glasslight-reach.md`, The People — the Glasskin) among them. The Glasskin as a people hold their own separate, older relationship to the cliffs, and never adopted the Promise's theology as their own — but a Glasskin individual joining the congregation isn't unheard of.
 
 ## Philosophy
 

@@ -63,7 +63,7 @@ Archons can **fade**. A domain whose practice dies in the world starves its expr
 The Seat itself never fades. Seats are permanent structural features of existence; what fades is the bearer.
 
 - **Lysander** *(Time)* has faded far enough that the world has forgotten his name.
-- **MoroM** *(Witnessed Suffering)* is fading now — the Thessians who practiced the domain are gone but for one.
+- **MoroM** *(Witnessed Suffering)* is fading now — the Thessians who practiced the domain are dying out, fewer than one in a hundred left, and Maggie is the only one still practicing it at all.
 
 ---
 
