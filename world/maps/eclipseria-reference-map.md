@@ -2,7 +2,7 @@
 
 `eclipseria-reference-map.png` — an AI-generated prototype, built as a style and shape reference for Drew's own hand-drawn physical map (2026-08-16). Not a finished asset, not player-facing.
 
-**A living note — keep this current as place content changes,** not just a one-time caveat list. If a place file's geography changes in a way that makes the image more (or less) wrong, update the relevant section below rather than leaving it to drift.
+**A living note — keep this current as place content changes,** not just a one-time caveat list. If a place file's geography changes in a way that makes the image more (or less) wrong, update the relevant section below rather than leaving it to drift. The prompt that generates this image is tracked the same way, in `eclipseria-map-prompt.md` — update both together.
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## Missing from the image
 
-- **Briarwatch.** Not shown at all — a real gap, not a deliberate omission. Sits a day's travel west of Vulture's Nest, cut into Turnroot Weald's own edge (`places/briarwatch.md`).
+- **Briarwatch.** Missing from the current PNG. Added to `eclipseria-map-prompt.md` already — this stays listed here until the image is actually regenerated. Sits a day's travel west of Vulture's Nest, cut into Turnroot Weald's own edge (`places/briarwatch.md`).
 - **Havenrise, Roaat, Canille, Pneum, Apnea.** All five have stated positions in `world/geography-overview.md`'s coordinate table and arguably belong on a "known lands" map the same way Briarwatch does. Left off here, not confirmed as intentional.
 
 **Correctly absent — do not add these:**
