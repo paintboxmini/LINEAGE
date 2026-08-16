@@ -1,1 +1,0 @@
-Vultures Nest . It sits at a large intersection of rivers with lots of local islands in the larger rivers and in the lakes surrounding it. Currently it's conflicted about which place actually sits at the center of the river web. That would be the capital. But vultures nest is positioned to trade and interact with all the island communities.
