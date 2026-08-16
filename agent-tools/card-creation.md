@@ -107,14 +107,24 @@ If current canon and the requested card conflict, do not silently redefine canon
 
 ### Convergence Check
 
-Find the cards already doing something mechanically similar — not the same card, the same *move* — and compare how they say it. Then run the actual test:
+Find the cards already doing something mechanically similar — not the same card, the same *move* — and compare how they say it. Then run the test:
 
-**Would rewriting this card to follow the established convention fundamentally alter what it does, or how its behavior reads at the table?**
+**Would rewriting this card to follow the established convention change what it does, or how its behavior reads at the table?**
 
-- **No** — align it. Match the established expression. A near-variant that behaves identically but phrases itself differently is drift, and it costs twice: the rule gets harder to learn, and two wordings of one mechanic can never compress into a single keyword (see Mechanic, above). Convergence is what makes compression possible later.
-- **Yes** — keep the divergence, and be able to say what it buys. If the difference is load-bearing, that difference *is* the card's design, and it should survive review on those terms.
+"Fundamentally" can't carry that question by itself, so check it against something concrete. A difference is load-bearing if aligning would change:
 
-The default is convergence. Divergence has to earn itself.
+- the decision the card exists to create (Step 1)
+- when, or whether, the effect triggers
+- what it interacts with — keywords, positions, other cards in the same deck
+- whether the four strands still agree (Step 6)
+
+If none of those move, the difference is wording, not design.
+
+- **Clearly nothing moves** — align it. Match the established expression. A near-variant that behaves identically but phrases itself differently is drift: the rule gets harder to learn, and every extra wording of one mechanic raises the cost of ever compressing it into a keyword later (see Mechanic, above).
+- **Clearly something moves** — keep the divergence, and say plainly what it buys. That difference *is* the card's design, and it should survive review on those terms.
+- **Close call** — **flag it; do not resolve it inside a rewrite.** Present both versions and what each costs, and let Drew choose. If you find yourself assembling an argument for why the two are "basically the same," that effort is the signal: this is a design decision, not a formatting one. Same escalation as compression, for the same reason (`CLAUDE.md`, Canon Gate — surface genuine design forks rather than choosing invisibly).
+
+The default is convergence. Divergence has to earn itself — but it earns it in the open, not quietly inside an agent's rewrite.
 
 ## 6. Creation Test
 
@@ -143,6 +153,6 @@ Before presenting the card as finished, ask:
 9. Is the source tag real and appropriately specific?
 10. Does the card belong in the existing set, rather than merely resembling something already there?
 11. If it states a mechanic in longhand, has the set now written that same mechanic out often enough to flag for compression into a keyword?
-12. Is it a near-variant of how an existing card already expresses the same move — and if aligning to that convention wouldn't fundamentally change its behavior, has it been aligned?
+12. Is it a near-variant of how an existing card already expresses the same move — and has that been aligned, justified, or flagged for Drew, rather than settled quietly?
 
 For adversarial review, run `agent-tools/red-team.md` after creation.
