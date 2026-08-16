@@ -67,6 +67,8 @@ High above the stalls, the Citadel's towers are visible between the hanging lant
 
 Duskwicks will start appearing once the lamps are lit — small, quiet, working the gaps. For now it is still full day, or what passes for it.
 
+Once the lamps *are* lit, the whole character of the place changes. The crowd thins, the smoke settles, and the rose-lamps take over — one at nearly every stall corner and post, their purple light catching in glassware, on dew-damp canvas, in the eyes of whatever's still awake in a cage somewhere nearby. It's the one hour the Marketplace looks like it was designed rather than accumulated. Nobody built it to be beautiful. For a while, before the gate opens again, it just is.
+
 The crowd does not part for you. It simply continues, and you are already inside it.
 
 A sprawling labyrinth of stalls and shops at the city's center. Goods from every region and a few places that aren't named. Merchants from distant cultures trade alongside each other with the practiced indifference of people who have seen too much to be surprised.
