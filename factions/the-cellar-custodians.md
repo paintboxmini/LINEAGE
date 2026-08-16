@@ -1,28 +1,30 @@
 # The Cellar Custodians
 
-*The guild that runs the Waterworks. Grease-monkey and boiler-room, organized like a combat brigade because the job actually requires one.*
+*The guild that runs the Waterworks, and the first line the city has against what comes in through the river channels or up from the deep. Sluice and cistern, organized like a combat brigade because the job actually requires one.*
 
 ## What They Are
 
-Everyone who's ever had a hot bath in Eclipseria owes it to the Custodians, and almost nobody thinks about them for longer than it takes to notice the water's cold. They keep the pump condensers running, the boilers fed, the pipe network from the Vein and the Mourn and the Ledger and the Quiet Arm reaching every district on schedule. It's real, unglamorous, essential work, and they take open pride in it.
+Everyone who's ever filled a bucket at a public cistern in Eclipseria owes it to the Custodians, and almost nobody thinks about them for longer than it takes to notice the well's run dry. There's no indoor plumbing in the capital — there's the tide. The Custodians catch the inland pulse at exactly the right moment, gate it through channels cut into the bedrock, and seal it into elevated holding cisterns before the outflow can pull it back out. Gravity does the rest, feeding wells, public fountains, and bathhouses across every district on a schedule the tide sets, not the guild. It's real, unglamorous, essential work, and they take open pride in it.
 
-What sets them apart from an ordinary utility crew is what the job costs. The deep tunnels have a serious pest problem — subterranean things that treat a lone maintenance worker as a meal, not an obstacle. A Line Hand can die on a routine pipe run the same as a soldier can die on patrol. The Custodians organize around that fact rather than around it, and the discipline shows: drilled response procedures, standing patrols, weapons issued alongside wrenches. Heavy boots, stained canvas, tool belts, heat-resistant gloves — and, on anyone who's done a full tour of the deep stations, a sidearm they know how to use.
+What actually sets them apart from an ordinary utility guild is the reason the job exists at all. The Waterworks is the one layer of the capital genuinely open on two sides — the river channels feeding it from outside the walls, and whatever the deep tunnels let up from below. Reading the tide and holding the gates is half the job. The other half is standing at the one door the capital never got around to building, because until the Custodians, the water did that work by itself. A Line Hand can die defending a gate the same as a soldier can die on patrol. The Custodians organize around that fact rather than around it, and the discipline shows: drilled response procedures, standing patrols, weapons issued alongside gate hooks. Heavy boots, stained canvas, tool belts, oiled gloves — and, on anyone who's done a full tour of the deep cisterns, a sidearm they know how to use.
 
-A handful of the deepest stations do more than move water. They condition and distribute a diluted form of the same binding force the Weavers carry through the wire grid, cooled and thinned enough to move through pipe. The Custodians who staff those stations know this. Most Custodians never do.
+The river channels get watched from the water, not just from the gates — a rotation of small, fast craft working the approaches immediately outside the walls, close enough to the capital that catching a problem out there beats meeting it at a sluice already under pressure. Reading a tide to time a gate and reading it to hold a boat steady in the same current are close enough to the same skill that the crossover is routine. It's widely known as the best posting in the guild: real respect, real skill, and a lot less time spent waist-deep in a cold cistern.
+
+A handful of the deepest cisterns do more than hold water. Wire carries the Grid's current to lights and machines — the water carries something wire can't reach: the domain itself, cooled and thinned enough to move through open channel, dosed directly into what the whole city drinks and bathes in. Not power. Presence. The same civic calm that keeps a plaza quiet through an argument that should have gone worse doesn't only drift there on its own — some of it is put there, on purpose, by whoever actually runs the conditioning stations. The Custodians who staff those stations know this. Most Custodians never do.
 
 ---
 
 ## Structure
 
-**Line Crews.** The bulk of the guild — pipe runs, condenser maintenance, boiler shifts, pest response. Organized in fireteams rather than solo assignments, standard practice after enough Line Hands died working alone. Everyone carries a weapon and knows how to use it before they're trusted with a wrench.
+**Line Crews.** The bulk of the guild — gate watches, cistern maintenance, tide-timing, pest response. Organized in fireteams rather than solo assignments, standard practice after enough Line Hands died working alone. Everyone carries a weapon and knows how to use it before they're trusted with a gate hook.
 
-**Station Chiefs.** Run a single deep station — its condensers, its crew rotation, its kill count. A Chief's authority is absolute inside their station and stops dead at the door. Rivalries between stations are common and mostly harmless; cooperation happens when the pest problem demands it and not much before.
+**Station Chiefs.** Run a single deep cistern — its gates, its crew rotation, its kill count. A Chief's authority is absolute inside their station and stops dead at the door. Rivalries between stations are common and mostly harmless; cooperation happens when the pest problem demands it and not much before.
 
-**The Boilerwrights.** The guild's technical core — the people who actually understand the condensers well enough to redesign them, not just maintain them. Few in number, disproportionately respected. A subset of Boilerwrights are cleared for the conditioning stations and know exactly what those stations are really doing.
+**The Sluicewrights.** The guild's technical core — the people who read the tide precisely enough to know exactly when a gate opens and when it seals, to the minute, every cycle, without fail. Few in number, disproportionately respected. A subset of Sluicewrights are cleared for the conditioning stations and know exactly what those stations are really doing.
 
 **The Head Custodian.** Public-facing, publicly accountable, genuinely in charge of the ordinary water supply — and, separately, briefed on the conditioning stations by an arrangement the guild doesn't examine too hard. Unlike the Weavers' Quiet Chair, the Head Custodian's authority isn't a secret; what's secret is one specific thing they're also responsible for.
 
-**Above the Head Custodian, on paper: Lady Eveline** (`world/the-regency.md`, The Elephant) — the Regency's critical-infrastructure portfolio, the Custodians' half of it. Not secret the way the Weavers' arrangement is; just never exercised where anyone's watching. The Head Custodian could name their council overseer if asked. Nobody's ever had reason to ask.
+**Above the Head Custodian, on paper: Lord Cedric** (`world/the-regency.md`, The Bear) — the same military portfolio that holds the walls and the gates, extended down into the tunnels where the actual fighting is. Not secret the way the Weavers' arrangement is; just never exercised where anyone's watching. The Head Custodian could name their council overseer if asked. Nobody's ever had reason to ask.
 
 ---
 
@@ -40,11 +42,11 @@ A handful of the deepest stations do more than move water. They condition and di
 
 Industrial, not ceremonial — everything doubles as a weapon or looks like it could.
 
-- **Pipe Wrenches** — standard issue, heavy enough to matter in a fight and everyone knows it.
-- **Steam Lances** — pressure-release tools repurposed as a first response against anything that comes up a drain; a face full of scalding steam ends most encounters before they start.
-- **Pressure Gauges** — read on sight by anyone who's done a full tour; a Boilerwright can diagnose a condenser's health from across a chamber.
+- **Gate Hooks** — long-handled, heavy enough to work a stuck sluice or matter in a fight, and everyone knows it.
+- **Flood Lances** — sluice-release tools repurposed as a first response against anything that comes up a channel; a full gate's pressure released at close range ends most encounters before they start.
+- **Tide Gauges** — read on sight by anyone who's done a full tour; a Sluicewright can call a gate's timing from across a chamber without checking twice.
 - **Ward Lanterns** — heavy, oil-fed lights built to survive a fall and keep burning; deep-station crews never move without one lit.
-- **Sealed Manifolds** — used only at the conditioning stations, locked to anyone below Boilerwright rank. Opening one without clearance is a firing offense, enforced without exception.
+- **Sealed Sluice Keys** — used only at the conditioning stations, locked to anyone below Sluicewright rank. Opening one without clearance is a firing offense, enforced without exception.
 
 ---
 
@@ -68,7 +70,7 @@ The Custodians are the last link in the FourthEye supply chain before it reaches
 
 - `places/capital/the-waterworks.md` — the layer the guild runs
 - `factions/the-weavers.md` — the guild sharing their tunnels
-- `world/the-regency.md` — Lady Eveline, the council-level overseer neither guild sees exercised
+- `world/the-regency.md` — Lord Cedric, the council-level overseer never seen exercised
 - `places/capital/the-wallows.md` — adjacent, not shared, territory
 - `world/geography-overview.md` — the rivers feeding the capital's intake
-- `mythology/seats.md` — Aurora, the Seat of Love/Binding
+- `world/seats.md` — Aurora, the Seat of Love/Binding

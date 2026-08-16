@@ -1,6 +1,6 @@
 # Black Maggie
 
-*Last survivor of an ancient race. Servant of a forgotten Archon. The only practitioner left of a gift she has entirely inverted.*
+*One of the last of a dying race. Servant of a forgotten Archon. The only practitioner left of a gift she has entirely inverted.*
 
 ---
 
@@ -16,7 +16,9 @@ Nomadic healers. A small tribe — the peoples of the world knew to seek them ou
 
 They were not an evil people. The Archon they served was kind and benevolent.
 
-They are almost entirely gone. Maggie is the last. The name of her people is in a tongue almost nobody speaks anymore — she may be the only one who still knows it.
+Believed to have originated in the Abyssal Ruins region — the ancient civilization that fell there, long before the ruins earned that name (`places/abyssal-ruins.md`). Not confirmed; the connection is a likely thread, not a settled fact.
+
+A dying race. Fewer than one in a hundred people alive today can claim Thessian blood, and Maggie is one of the last, not the only one — she has simply never found the others. The name of her people is in a tongue almost nobody speaks anymore — she may be the only one who still knows it.
 
 ---
 
@@ -24,9 +26,9 @@ They are almost entirely gone. Maggie is the last. The name of her people is in 
 
 The Archon's domain: the act of truly seeing someone in their pain. Suffering that is held, understood, metabolized rather than left to accumulate alone. Pain witnessed by another becomes something different than pain endured in isolation.
 
-The Seat stands — Seats do not fade. But the practice of its domain is nearly gone from the world: the race that carried it is gone, and the world still has suffering — it just goes unwitnessed. Unprocessed. Nobody translates it anymore.
+The Seat stands — Seats do not fade. But the practice of its domain is nearly gone from the world: the race that carried it is dying, scattered too thin to sustain the practice, and the world still has suffering — it just goes unwitnessed. Unprocessed. Nobody translates it anymore.
 
-What fades is the Archon. MoroM is thinning from held reality, and a Seat whose Archon fully fades stands **empty** (`mythology/seats.md`, Seat States) — and empty seats are how parts of reality begin breaking down.
+What fades is the Archon. MoroM is thinning from held reality, and a Seat whose Archon fully fades stands **empty** (`world/seats.md`, Seat States) — and empty seats are how parts of reality begin breaking down.
 
 ---
 
@@ -98,9 +100,7 @@ Does she grieve what she's become? Does she believe this is the only way to pres
 
 ## Open
 
-- The race's name
 - How many completed sites vs. in-progress sites
 - Whether the haunting at completed sites can be addressed — and how
-- The race's name — Maggie may be the last who knows it
 - Maggie's age and how she has survived this long
 - Whether more members of her race will appear later

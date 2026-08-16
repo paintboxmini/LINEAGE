@@ -18,7 +18,7 @@ The party enters the Wallows through the Underground Tavern floor — a guarded 
 - Debt has gone too far. The exit fee is impossible. The alternate path is the only way out of the city.
 - Someone the party cares about is working a dead-end branch. They're getting them out.
 - The Warden has something that needs to end. The grandmother's map is in play.
-- Something in the threshold is calling. Someone heard their own name in the echoes.
+- Something in the deep is calling. Someone heard their own name in the echoes.
 
 The structure accommodates any of these. The pressure tracks don't care why the party is here.
 
@@ -53,7 +53,7 @@ Measures how aware the Demon Court is of the party's unauthorized presence. Neve
 
 ### Track 2 — Seat Influence (Deeper Layers)
 
-Measures how far Aurora's nature has reached into the party. Begins at 0 when the party crosses into the threshold. Never announce a number. Narrate what the players feel.
+Measures how far Aurora's nature has reached into the party. Begins at 0 when the party crosses into the deep. Never announce a number. Narrate what the players feel.
 
 | Level | State | Symptoms |
 |-------|-------|----------|
@@ -64,7 +64,7 @@ Measures how far Aurora's nature has reached into the party. Begins at 0 when th
 | 4 | Held | Moving feels like leaving something important behind. Players must make active choices to continue descending or ascending. |
 | 5+ | Aurora | The distinction between the party and the cave is difficult to locate. This is not a fight. There is no winning condition here — only the choice to hold on or let go. |
 
-**Influence rises by 1:** entering each deeper section (automatic), rushing through the threshold (she wants you to linger), violence against threshold creatures (she doesn't fight), physically forcing a companion away from something drawing them.
+**Influence rises by 1:** entering each deeper section (automatic), rushing through the deep (she wants you to linger), violence against its creatures (she doesn't fight), physically forcing a companion away from something drawing them.
 
 **Influence drops by 1:** a party member grounds another — names them, touches them, says something specific and true. Only deliberate human contact reduces it. Nothing mechanical does.
 
@@ -154,17 +154,17 @@ Pazuzu holds audience here when he isn't making rounds. Two chain whip guards fl
 
 ---
 
-### The Threshold Entrance
+### The Deep's Entrance
 
 At the far end of the main corridor. A sealed passage — iron door, heavy lock, no guard posted because no prisoner has ever gotten this far and the Warden doesn't advertise what's beyond it.
 
 **The lock:** requires either a key (the Warden has it) or time and a relevant skill. Forcing it loudly raises awareness by 1.
 
-Crossing the threshold entrance does not reset the awareness track. The direwolves can follow a scent through the door. The Demon Court does not pursue beyond the first section of the threshold — they know where it leads and have decided not to.
+Crossing into the deep does not reset the awareness track. The direwolves can follow a scent through the door. The Demon Court does not pursue beyond the first section of the deep — they know where it leads and have decided not to.
 
 ---
 
-## The Deeper Layers — The Threshold
+## The Deeper Layers — The Deep
 
 *Each section entered raises Seat Influence by 1 automatically.*
 
@@ -224,7 +224,7 @@ Here the passage branches. Without the grandmother's map, both directions look i
 
 **With the map:** the correct passage is marked. The map shows not where things are but where they are *for you* — meaning it shows the exit for whoever is holding it. Two party members examining the same map may see different paths. The one who wants to leave most clearly will see it most clearly.
 
-**Without the map:** Mind check, DC 15. Failure sends the party down the longer route — more threshold time, Influence rises by 1. Success on a second attempt is automatic.
+**Without the map:** Mind check, DC 15. Failure sends the party down the longer route — more time in the deep, Influence rises by 1. Success on a second attempt is automatic.
 
 ---
 
@@ -234,7 +234,7 @@ The passage surfaces through a crack in Eclipseria's outer foundation — a narr
 
 The grandmother's map ends here.
 
-**What the party carries out with them:** whatever they came for, if they found it. Whatever the threshold gave them, whether they wanted it or not. The Influence track doesn't reset at the exit — it fades slowly once they're in open air. Players at 3+ will feel it for a while.
+**What the party carries out with them:** whatever they came for, if they found it. Whatever the deep gave them, whether they wanted it or not. The Influence track doesn't reset at the exit — it fades slowly once they're in open air. Players at 3+ will feel it for a while.
 
 ---
 
@@ -242,9 +242,9 @@ The grandmother's map ends here.
 
 **Kess's mother:** her echo is in the Echo Cavern. The GM decides what form it takes and what it says. It should not explain everything. It should say one true thing.
 
-**Pazuzu pursuing:** if the awareness track maxed before the party reached the threshold entrance, Pazuzu follows as far as the door. He unlocks it. He stands at the entrance and considers. He does not cross. He will be here when the party comes back up, if they come back up through the mine.
+**Pazuzu pursuing:** if the awareness track maxed before the party reached the deep's entrance, Pazuzu follows as far as the door. He unlocks it. He stands at the entrance and considers. He does not cross. He will be here when the party comes back up, if they come back up through the mine.
 
-**The direwolves and the threshold:** they track as far as the echo cavern. The sticky echoes confuse them — too many scents, too many directions. They cannot follow further. This is not widely known.
+**The direwolves and the deep:** they're personally unaffected by the deep's warping — conditioned to operate there without dissolving, the way it affects people (`places/capital/the-wallows.md`, GM Notes) — but they track by scent, and the sticky echoes layer too many overlapping trails past the echo cavern for a nose to sort. They don't hesitate to go further. They just lose the thread there. This is not widely known.
 
 **The compliance warmth:** players who spend time in the upper labor level may notice something. A quiet. A patience. A not-quite-wanting-to-leave that has nothing to do with the situation. This is the edge of Aurora's influence at the labor level depth. The Warden has calibrated this. It is working as designed.
 
@@ -258,7 +258,7 @@ Nobody hires anyone to go into the Wallows. Every objective in Opening Condition
 
 What the descent is worth is what they came for: the alternate path out of the city, or the person, or the thing that needed ending. A GM who wants to hand out gold here should reconsider — payment would imply somebody sanctioned this, and nobody did.
 
-Salvage is a different question and is fair game. The labour level has debt-slaves' possessions, the Demon Court has property, and the threshold has whatever the deep has been keeping. What the party carries out is theirs; nobody is going to hand it to them.
+Salvage is a different question and is fair game. The labour level has debt-slaves' possessions, the Demon Court has property, and the deep has whatever it's been keeping. What the party carries out is theirs; nobody is going to hand it to them.
 
 ---
 
@@ -268,6 +268,6 @@ Salvage is a different question and is fair game. The labour level has debt-slav
 - `factions/demon-court.md` — Pazuzu, guard hierarchy
 - `places/capital/underground-bazaar.md` — above
 - `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
-- `mythology/seats.md` — Aurora, Seat of Love/Binding
+- `world/seats.md` — Aurora, Seat of Love/Binding
 - `bestiary/wallows-slime.md` — stat block, passives, and the signature cards
 - `bestiary/the-descended.md` — The Shelf inhabitants

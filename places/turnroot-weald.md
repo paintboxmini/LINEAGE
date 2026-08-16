@@ -28,7 +28,7 @@ Forest families still live under canopy year-round. Their safe range has collaps
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.
 
 Notable species:
-- **Echothorn Vine** — the vine of the Thorne Throne. Seeds resonate with a faint echo when shaken. Ground into dust and mixed with reagents, they amplify spells and incantations.
+- **Echothorn Vine** — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken, but the vine repeating itself, over and over, the same growth doubling back on its own pattern until it became something else entirely. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
 - **Luminova Leaves** — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
 - **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `bestiary/rootstalker.md` for the full stat block.
 - **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing.md`.

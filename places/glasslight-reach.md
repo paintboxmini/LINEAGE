@@ -10,6 +10,10 @@ Ropes and pulleys carry cargo and the tired. Stairs cut, worn, and re-cut. Ladde
 
 You don't so much arrive at Glasslight Reach as finish climbing it.
 
+**Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
+
+**Hidden somewhere in the cliffs, not public knowledge and not meant to be, is a Mason lodge** — the order's whole discipline is walking in, doing the work, and leaving before anyone notices they were there. See `factions/the-masons.md`, `characters/mirel.md`.
+
 ## What It Looks Like
 
 - The sea is white and foaming. It leeches color from the air directly above it.
@@ -18,12 +22,17 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 - Streets are long fractures. The cliff sings when wind passes through them.
 - Windows are where the quartz is thin enough to be almost-air.
 
-## The People
+## The People — the Glasskin
 
-- Many are faintly translucent — frosted-glass skin, softly visible veins.
-- Tails are common and varied; they move with emotion.
-- They speak gently and rarely interrupt, as if loud certainty could crack something.
-- The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
+Outsiders call them Glasskin, or cruder, "glass-skins" — never what they call themselves, and never fully accurate either way. What reads as frosted, translucent skin is actually a short, dense coat covering the entire body, felt-or-suede-textured, semi-transparent enough that the skin and its veins show softly through it — camouflage, evolved for the pale quartz cliffs and the cold that comes with them. Eyes are ordinary and human-looking, the one feature that isn't strange at a glance. Ears are long and slender, tapering to tufts of hair; the tail matches. A thicker mane runs from the crown of the head down the neck. Hands and feet carry real claws — digging into unstable stone isn't incidental to how they live here, it's how the town gets built and rebuilt at all.
+
+They speak the common tongue like anyone else, day to day. But the cliffs sing — long fractures that hum when wind passes through them — and this people's own true name for themselves is made of that same sound. Not a word. A chord. No single voice can produce it alone; it takes a group actually singing together to pronounce it correctly, which means the truest thing they call themselves is something none of them can say by themselves, ever, only with each other. When the cliff is singing, they hum along, trying to match its tones. When it goes quiet too long, they hum anyway — filling the silence rather than leaving it sit empty. Wind runs its own rhythm underneath all of it, faster than the cliff's own voice and not always in step with it — tight and quick some days, long still gaps between breaths on others. It's on the slow days, when the gaps stretch out, that the Glasskin do the most filling in. The cliff has less to say. They say it instead.
+
+Some go further than matching tone for tone — reading the cliffsong for meaning, the way any people reads weather or stars, finding pattern and message in what the stone is doing. Not the same current as the People of Promise's own theology (`factions/people-of-promise.md`) — a separate, older relationship to a separate phenomenon, nature listened to rather than a thing to be saved from.
+
+They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
+
+Most who leave don't stop wanting to come back, even just for a visit. Losing the town doesn't just mean losing a place — it means losing the only other voices that can complete your own name with you. That pull doesn't fade the way ordinary homesickness does.
 
 ## Economy
 
@@ -39,7 +48,7 @@ Ink, paper, sweet breads, minerals, roasted bird and other flying things — the
 
 Half the wall is light maps — the Glasslight chapter's own specialty (`factions/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, same underlying limit as the silvered paper the rest of the economy runs on (see Economy, above) — light doesn't hold a hue forever no matter how carefully it's set. A light map is worked harder and holds longer than a plain export sheet, about a week before the color gives out, but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
 
-One piece is the exception, and it isn't for sale: a Tomás Kettlewright Soft Edge survey, Guild chapter window bait, the light-dance prominent in the background. A skill showpiece — it leaves out the standard cautionary notes lesser charts carry, because whoever stops to actually look at this one is assumed to already know them. It doesn't fade like the rest of the wall because Kettlewright himself won't let it — he comes back to retouch it before the color gives out, the same discipline as a Mason recutting a post, which is as much why it's the showpiece as the skill is. It isn't the Unheld itself, whatever it looks like — the coastline holds that line the same as it holds every other one (`world/the-unheld.md`) — just a picture of the thing beyond it, and pictures don't carry anything inland that water couldn't either.
+One piece is the exception, and it isn't for sale: a Tomás Kettlewright piece, Guild chapter window bait, the light-dance rendered prominent in the background. Not a survey — a painting, worked in the same light-based pigments the rest of the wall uses, so it fades the way everything here does unless it's maintained. That it's a painting and not a technical light-cartography survey is the whole reason it's safe to make and safe to hang: an instrument-precise recording is close enough to the real thing that the Guild only ever maps the edge and never the water, for exactly this reason (`world/the-unheld.md`) — precision that close risks the viewer's own grip on what's actually in front of them. A painting never asks to be mistaken for that. It's legibly someone's hand and eye, once removed, and once-removed is what makes it safe no matter how skilled the hand is. It leaves out the standard cautionary notes lesser charts carry, because whoever stops to actually look at this one is assumed to already know them. It doesn't fade like the rest of the wall because Kettlewright himself won't let it — he comes back to retouch it before the color gives out, the same discipline as a Mason recutting a post, which is as much why it's the showpiece as the skill is. It isn't the Unheld itself, whatever it looks like — the coastline holds that line the same as it holds every other one (`world/the-unheld.md`) — just a picture of the thing beyond it, and pictures don't carry anything inland that water couldn't either.
 
 *(Kettlewright, Glasslight Reach chapter, already owes Kess a standing favor — `characters/kess.md`.)*
 
@@ -53,11 +62,11 @@ What lies beyond the northernmost waters. The name describes how it looks — sk
 
 Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it. The People of Promise have their own reading of it, unconnected to what any cartographer thinks — see `factions/people-of-promise.md`, Ritual Bathing.
 
-The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved.
+The light-cartographers map the edge. Only the edge. Their atlases record where the colors stop behaving — and every year, whether that line has moved. Nothing else in the kingdom changes this fast or this illegibly; training on it is training on the hardest version of a skill that gets used everywhere else at a gentler pace (`factions/the-cartographers-guild.md`, Structure).
 
 ---
 
-*Glasslight Reach is home to the People of Promise. See `factions/people-of-promise.md`.*
+*Glasslight Reach is home to the People of Promise — mostly human pilgrims settled in a town that isn't theirs by blood, with a few Glasskin among them. See `factions/people-of-promise.md`.*
 
 ---
 
@@ -68,7 +77,7 @@ The light-cartographers map the edge. Only the edge. Their atlases record where 
 - `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
 - `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
 - `characters/corren.md`, `characters/sael.md`, `characters/wren.md` — the Promise congregation, three ways of carrying it
-- `mythology/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
+- `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
 - `factions/the-cartographers-guild.md` — headquartered here; related to the light-cartographers but a distinct institution
 - `characters/kess.md` — Tomás Kettlewright, the Gallery showpiece's painter, already owes her a standing favor
 - `world/the-unheld.md` — the coastline threshold the Gallery's showpiece is checked against

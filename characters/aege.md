@@ -1,6 +1,6 @@
 # Aege
 
-*The Carrion Guide. An Echo of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`mythology/seats.md`). She is also fated to bear that Seat; see the Echo section below.*
+*The Carrion Guide. A Resonant Person of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`world/seats.md`). She is also fated to bear that Seat; see GM Secret, below.*
 
 **Cards:** `cards/aege.md`
 
@@ -55,15 +55,15 @@ She doesn't volunteer more of it than that. What the hunting actually looks like
 
 ## GM Secret — Not Player-Facing
 
-Aege is an Echo of the Seat of Death (`mythology/seats.md`, `mythology/resonant-people.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
+Aege is a Resonant Person of the Seat of Death (`world/seats.md`, `world/resonant-people.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
 
 **She is fated to bear it.** How and when are deliberately unestablished — a fate, not a scene, the same shape as Greed and the Storm Seat (`characters/greed.md`). Nothing in her behaviour today should be played as a countdown, and she does not know.
 
-What it costs, when it comes, is written down: Stage III is Incarnation, where *"identity and domain become inseparable"* and *"the individual becomes function"* (`mythology/archons.md`). Everything below this line — the family, the worry about the Weald, the reason she keeps walking people to places — is what Stage II still permits her, and what Archonhood would end.
+What it costs, when it comes, is written down: Stage III is Incarnation, where *"identity and domain become inseparable"* and *"the individual becomes function"* (`world/archons.md`). Everything below this line — the family, the worry about the Weald, the reason she keeps walking people to places — is what Stage II still permits her, and what Archonhood would end.
 
 This is why she's always drawn toward wherever her domain is concentrated — real endings already happened, real potential for more sitting on top of it — the same way the Night Ferryman reads the Coil's own restlessness before it surfaces. It's also the real mechanism behind her already-established habit of seeming to know more than she should about a place, or the people standing in it: she isn't investigating them. She's reading their proximity to where the domain is already active.
 
-Her own reason for going home — her family, the letter — is separate and fully hers. The Echo doesn't explain that part, and shouldn't.
+Her own reason for going home — her family, the letter — is separate and fully hers. Her alignment to Death doesn't explain that part, and shouldn't.
 
 **The family and the Heart.** The Root Heart's aggression is not random weather. It cycles between dormant and an active **Overgrowth** phase (`bestiary/root-heart.md`, GM Notes), and it's mid-cycle now — but the cycle turning inward instead of out traces to a real cause: the Masons' containment line at Briarwatch (`factions/the-masons.md`, Known Works) has held the Weald's natural expansion back for as long as the fence has stood. Blocked from growing outward, the pressure of that growth has nowhere to go but in — **by design, not by accident.** The Masons chose this cycle as the contained cost of stopping something they judged more dangerous. Aege's family is paying an installment on a decision made by people they have never met and will never know made it. The party's arrival, Paid Passage, and the toll wall are not the cause — all three are simply present while it happens to be turning, coincidence rather than trigger. Rootstalkers that once ignored forest-people now treat them as prey, and the safe walks have collapsed to a small holdfast region deeper in than the usual POI ring (`quests/turnroot-weald-adventure.md`, The Holdfast) — both are downstream of the same Overgrowth, not two separate changes.
 
@@ -120,12 +120,12 @@ Her core picks lean the same direction — control and information over damage (
 - `places/vultures-nest.md` — Finding Aege, Soft Gate mechanics, the Vulture's Nest telling
 - `quests/washed-ashore.md` — the alternate telling
 - `places/roadhouse.md` — where she tells the party about her family
-- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md`, `quests/the-larder-fence.md` — where her road runs through
+- `places/briarwatch.md`, `quests/hollow-below-briarwatch.md` — where her road runs through
 - `quests/turnroot-weald-adventure.md` — The Holdfast, her people's ground
 - `bestiary/rootstalker.md` — what's hunting them
 - `bestiary/root-heart.md` — Overgrowth, the real reason the Weald has turned
 - `factions/the-masons.md` — the Briarwatch line, the actual cause behind the Heart's cycle
-- `mythology/seats.md` — the Seat of Death
-- `mythology/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
+- `world/seats.md` — the Seat of Death
+- `world/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/aege.md` — signature cards

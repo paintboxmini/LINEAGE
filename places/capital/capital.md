@@ -2,6 +2,8 @@
 
 The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting light. Its architecture is ancient — Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs. It is a symbol of power that has outlasted several explanations for what that power is.
 
+After dark, the streets don't dim the way an ordinary city's would. Gilded lampposts line every major thoroughfare — crowned finials, glass domes on filigreed brass pedestals, each one holding a rose worked entirely in glass: layered petals, a stem, leaves with their veins still cut into the surface. Only the bloom actually glows — the same purple-edged shimmer the Weavers carry through the Grid (`factions/the-weavers.md`), stepped down gentle enough to look grown rather than wired. The leaves aren't lit themselves; they just catch enough of that light to read green, the way real leaves would catch real light. Nobody questions why the flowers never wilt. That's not the kind of question the capital rewards.
+
 Casually, people just call it Eclipseria — same as the world it shares a name with. The distinction matters for precision, not for anyone who actually lives here.
 
 The city contains an ancient library where scholars search through forgotten texts, chasing whichever explanation for the Citadel's power hasn't been discarded yet. The marketplace draws traders from every region, including some who will not say where they came from.
@@ -29,7 +31,7 @@ The guards are unfriendly by policy, not by mood. They wear the Bear's colours �
 
 They do not explain the rules of the city. They do not offer directions beyond *"Marketplace is central. Don't make us come looking."*
 
-If the party is carrying anything that smells of the Weald, the Wallows, or open Unheld influence, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
+If the party is carrying anything that smells of the Weald or the Wallows, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
 
 **Gate fees, per person:**
 
@@ -64,6 +66,8 @@ Vendors call without urgency. They have seen every kind of traveler and have alr
 High above the stalls, the Citadel's towers are visible between the hanging lanterns. Closer, the white marble of older buildings shows through the market's temporary skin.
 
 Duskwicks will start appearing once the lamps are lit — small, quiet, working the gaps. For now it is still full day, or what passes for it.
+
+Once the lamps *are* lit, the whole character of the place changes. The crowd thins, the smoke settles, and the rose-lamps take over — one at nearly every stall corner and post, their purple light catching in glassware, on dew-damp canvas, in the eyes of whatever's still awake in a cage somewhere nearby. It's the one hour the Marketplace looks like it was designed rather than accumulated. Nobody built it to be beautiful. For a while, before the gate opens again, it just is.
 
 The crowd does not part for you. It simply continues, and you are already inside it.
 
@@ -107,7 +111,7 @@ Past the Marketplace's noise, closer to the Citadel, the chaos gives way to some
 
 **Traders' Hall.** Closest to the Marketplace edge and the most publicly accessible of the four — a broad, low building of pale stone, arches and long counters open to the day, a constant low murmur of voices and shifting paper. Licenses, Wardens, disputes, the daily commercial paperwork. Lady Elara's people work here; she rarely does.
 
-**Custodians' Hall.** Sunk half a storey into the ground, darker stone, iron-bound doors. The air leaking out smells of oil, wet rock, hot metal — chimneys and vent stacks on the roof like breathing apparatus for something larger underneath. Shift boards, tool storage, the public face of the water system. Controlled entry. Lady Eveline's infrastructure arm, same as the Weavers' Hall below.
+**Custodians' Hall.** Sunk half a storey into the ground, darker stone, iron-bound doors. The air leaking out smells of wet rock and standing water — no smoke, no chimneys, nothing burning; whatever this building is breathing, it's tidal, not industrial. Shift boards, tool storage, the public face of the water system. Controlled entry. Lord Cedric's infrastructure arm — the same military portfolio that holds the walls and the gates, extended down into the tunnels.
 
 **Weavers' Hall.** Narrower and taller, close-fitted stone, high thin windows that let in light but little sound. A single carved lintel shows a simplified loom. The upper rooms are ordered and quiet — bolt racks, pattern tables, soft-footed clerks handling surface textile and lighting contracts. The lower levels are restricted and colder. The building feels tightly held together, as if the stones were under the same tension as the work done within. Also Eveline's.
 
@@ -126,13 +130,13 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of the Forge | Craftsmanship and industry. Artisans and blacksmiths. See below — the working counter, not just the shrine. |
 | Sanctuary of Nature | Herbalists and cultivators. See below — not what the name implies. |
 | Temple of Knowledge | The Library of Arcane Knowledge, one building under two names. See below. |
-| Temple of the Rivers | River god. Reflective pool. Sailors and fishermen. |
+| Temple of the Rivers | River god. Reflective pool. Sailors and fishermen. See below. |
 | Temple of Healing | The capital's hospital. See below. |
 | Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
 | Temple of Justice | A working courtroom. See below. |
 | Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
 
-None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `mythology/seats.md`.
+None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `world/seats.md`.
 
 **Temple of Knowledge** — the Library of Arcane Knowledge, one building under two names: scholars use the temple's title, everyone else just says the Library. The stacks run deeper than the visible building suggests, catalogued by a system nobody outside the order has fully learned. Sitrump the Scribe (`places/capital/gilded-tusk.md`) draws his scrolls from here and explains that fact to anyone who'll listen. The Lost Lore notice on the Gilded Tusk's board is the Library's posting, not the Marketplace's. Brother Alden ran its resonant archive once; he left, and took the habit of trading knowledge for a real cost with him — the archive itself stayed behind, still the Library's (`items/capital-items.md`, Brother Alden).
 
@@ -171,6 +175,10 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 
 **Magistrate Ambrose** sits a lower bench under her and believes impartiality only means something if it costs the powerful something too — a ruling that never once inconveniences someone with real power isn't impartial, it's just quiet favor with better paperwork. He knows exactly what the court actually is. He keeps ruling like it isn't anyway, on his own bench, in the cases small enough that nobody above him has already decided the outcome. Ruled against Isabella once, on a contract technicality she clearly hadn't expected to lose on — a real risk, given whose court it actually is — and has watched her come back more often since rather than less. Whether that's respect, curiosity, or her own quiet audit of exactly how far a subordinate will go is a question he's decided isn't his to answer from a lower bench. He's also, privately, ruled *for* power under real pressure exactly once, years before that, and has been trying to prove to himself he isn't that judge anymore ever since. He'd never say which ruling is more honestly him.
 
+**Temple of the Rivers** — a low stone hall built around a wide reflective pool, fed by a narrow channel bled off the city's own intake, the water rising and falling on a rhythm nobody in the temple has ever explained and everyone stopped questioning generations ago. Sailors and fishermen come here before a long haul, not after — the pool doesn't promise safe return, only shows anyone patient enough to sit with it what kind of crossing they're actually in for. The core teaching, repeated at every gathering: the rivers are the blood of Eclipseria, and the city lives because they move. It's the wrong word for what they're actually circling — Blood is a real domain of its own, unrelated to any of this (`world/seats.md`) — but the shape lands close enough that the pool still works, the same way every other guess in this district lands somewhere without landing right. What the temple is actually echoing, unconfirmed and unclaimed, is Song and Silence (`world/seats.md`) — the pulse and the pause, read as sound in Glasslight's cliffs, as one sustained note in Fermata, and here, in the capital, as water going in and going still and going out again. Made of the same breath, whichever shape it's wearing.
+
+**Fenn**, the pool-keeper, believes the water tells the truth to anyone patient enough to actually watch it — not fortune-telling, just attention, the same discipline any sailor already needs to read a current. She lost her brother to the fastest water in the whole system, the reach nearest the capital's own heart, and has never once told a grieving family the pool showed her something it didn't. She's also never once told them it showed nothing. What she actually sees, sitting at that pool at dawn, she keeps for herself — the one silence in a temple built entirely on the idea that everything worth knowing moves.
+
 **Temple of the Forge** — the working counter, not the shrine. You hear it before you see it: hammers, the low roar of the main hearth, the sharp hiss of quenching metal. Dark, soot-stained stone, iron-bound shutters for the night. No grand idol in the courtyard — a single massive anvil stands under open sky instead, scarred by generations of ceremonial and working strikes. Offerings left on it are small tools, broken blades, a pinch of good ore. Coin left there is politely returned; the Forge does not take money as worship.
 
 **Harlan Vetch**, master smith — older, heavy-shouldered, decides whether a commission is accepted, and speaks for the temple when something more than a simple purchase is required. Runs the weapons and the high rack (Tier 2 on display). To him the work itself is the offering: a blade forged for profit alone is a lesser blade, and a piece rushed or dishonestly made will fail exactly when it's needed most — not metaphor to Harlan, observed fact. **Sera Vetch** fits armor, and holds a piece until the party agrees who wears it. Tier 1 arms and plate, priced to the Session 5 curve. Where Harlan's sacred act is the forging, Sera's is the fitting — she'll say, if pushed, that a perfect blade offered with the wrong care is still just a blade, but armor that doesn't sit right on the actual body wearing it gets someone killed slower than no armor at all, and slower is worse, not better. She has never said this to Harlan directly. She's fairly sure he'd agree with her, which is its own reason not to test it. A rotating **Duty Smith** tends the public counter for everything smaller — sharpening, mending, re-hafting, priced in silver, same day if the queue allows.
@@ -195,7 +203,7 @@ Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The
 - `places/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
 - `places/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
 - `places/capital/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
-- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, the Threshold, the Deep
+- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, and the Deep
 - `factions/demon-court.md` — Warden Pazuzu's hierarchy, the capital's prison in practice
 - `factions/the-cellar-custodians.md` — Who runs the Waterworks
 - `factions/the-weavers.md` — The secret guild sharing those tunnels

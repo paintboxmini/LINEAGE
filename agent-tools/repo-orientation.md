@@ -26,7 +26,6 @@ Then proceed with the assigned task using those patterns.
 |------|-----|
 | `CLAUDE.md` | System overview, conventions, do-not list |
 | `memory.md` | Active threads, pending work, key decisions |
-| `experimental/README.md` | Approved keyword list, card loop rules |
 | `rules/card-glossary.md` | All keyword definitions |
 | `rules/core-rules.md` | Canonical stats, HP formula, range rules, quick reference |
 

@@ -24,7 +24,7 @@ It was given a reason. The civilization that once held the ground the Abyssal Ru
 
 Long before the labyrinth, long before Vulture's Nest had a name, it was near the Abyssal Ruins the first time the War Engine fired. That was the first strike, not the one still to come — see `quests/war-engine.md`. It was close enough to be hurt. Whatever was holding it — cage, pact, wardwork, nobody left to ask — didn't survive being that close to the Engine either. Hurt and suddenly free of whatever had contained it for however many years, it did the only thing left available to something that size: it moved.
 
-It fled the only direction that was open: out, into the Unheld. Not carried there — went there, alive, the same way the old ghost-story crews did, generations of sailors who slipped past the coast and came home subtly wrong. Grey water goes mundane at the threshold; it cannot be carried. A living thing that was actually out there doesn't get that mercy. Whatever the Unheld's changes are, they came home with it, the same way reversed handedness and eyes that reflect wrong colors came home with sailors who never should have survived the crossing. See `world/the-unheld.md`.
+It fled the only direction that was open: out of the river and into the Unheld, at the one point close enough to jump — the same coral-banked reach where the river runs nearest the coast, the ground it had always called home (`world/geography-overview.md`, Rivers and Lakes). Not carried there — went there, alive, the same way the old ghost-story crews did, generations of sailors who slipped past the coast and came home subtly wrong. Grey water goes mundane at the threshold; it cannot be carried. A living thing that was actually out there doesn't get that mercy. Whatever the Unheld's changes are, they came home with it, the same way reversed handedness and eyes that reflect wrong colors came home with sailors who never should have survived the crossing. See `world/the-unheld.md`.
 
 It didn't stay. It came back the only way anything comes back from the grey water — upstream, against the current, through the river web that laces the whole continent and drains toward the coast. Vulture's Nest sits at the heart of that web. It didn't choose the city. It followed the same water everything else follows, and the water happened to end here.
 
@@ -384,7 +384,7 @@ The ones who came before were Masons — the same secret order that maintains th
 
 The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader.md`.
 
-The Night Ferryman is also more than he lets on — an Archon of Navigation (`mythology/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
+The Night Ferryman is also more than he lets on — an Archon of Navigation (`world/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
 
 ---
 
@@ -422,7 +422,7 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`my
 
 - `places/vultures-nest.md` — The Night Ferryman (Notable Roles)
 - `factions/the-masons.md` — Known Works, the Coil as their one failure (GM-only)
-- `mythology/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
+- `world/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
 - `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
 - `places/abyssal-ruins.md`, `places/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
 - `bestiary/stonecoil.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat

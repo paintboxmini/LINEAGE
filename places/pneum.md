@@ -26,15 +26,11 @@ The diseases must be visible. This is not negotiable in their theology.
 
 ---
 
-## The Seat of Wild Growth
+## Wild Growth — A Reflection, Not a Seat
 
-The metaphysical foundation. Wild Growth in neutral terms: the fundamental tendency of living things to take up more space. Grass, tumors, civilizations, infections — the same drive, neither good nor bad.
+Wild Growth was never its own Seat. Calling it one was bad design; corrected here. What the People of Promise's theology actually rhymes with, the same accidental way every local religion in Eclipseria rhymes with a Seat nobody knows exists (`world/seats.md`, Love/Binding — the Temple of Unity's own version of this), is **Change** — Elias's Seat (`world/seats.md`, `characters/elias.md`). They don't know that. They've built an entire theology around disease and proliferation as "the Unheld asserting itself in held reality," and what they're actually circling, however imperfectly, is a domain that reshapes what a thing is without asking its permission first. Elias's own entry says it plainly about himself: "he is not wrong about what he does. He is wrong about what he is." The People of Promise are wrong about what they're worshipping in exactly the same shape.
 
-The People of Promise interpretation: Wild Growth is the Unheld asserting itself in held reality. Disease is one of its purest expressions — foreign life proliferating inside a host, pushing toward dissolution.
-
-**The Archon** — the person in whom the Unheld has taken the deepest root while still nominally alive. Not someone who looks ill. Someone who looks impossibly, disturbingly vital. Too much life. Like something about to burst. The horror isn't illness — it's surplus.
-
-*Archon identity and location: pending.*
+Disease read as sacred proliferation, "too much life, something about to burst" — that's their metaphor, not a mechanic. No separate Archon. No Unheld literally taking root in a living host. Whatever inspired that image is theirs to have imagined, not a GM-facing truth about how any of this actually works.
 
 ---
 

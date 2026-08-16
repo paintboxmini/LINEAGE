@@ -84,7 +84,7 @@ These are often the most powerful and the least stable — living in permanent p
 
 ## Known Resonant People
 
-**Aege, the Carrion Guide** *(Death, Stage II — Alignment; **fated to the Seat**)* — Not the Archon yet, and the Seat is not filled. She is one stage from Incarnation, and Incarnation is Archonhood (`mythology/archons.md`). When that happens, or whether anyone survives being guided by her afterward, is unestablished. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `places/vultures-nest.md` (GM Secret).
+**Aege, the Carrion Guide** *(Death, Stage II — Alignment; **fated to the Seat**)* — Not the Archon yet, and the Seat is not filled. She is one stage from Incarnation, and Incarnation is Archonhood (`world/archons.md`). When that happens, or whether anyone survives being guided by her afterward, is unestablished. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `places/vultures-nest.md` (GM Secret).
 
 **King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved; see `world/the-scar.md`.
 
@@ -94,8 +94,8 @@ These are often the most powerful and the least stable — living in permanent p
 
 ## Related Documents
 
-- `mythology/seats.md` — the Seats these align to, and their bearers
-- `mythology/archons.md` — Stage III, from the other side
-- `mythology/resonant-items.md` — the same alignment, in an object instead of a person
-- `mythology/resonant-places.md` — the same alignment, in a place instead of a person
+- `world/seats.md` — the Seats these align to, and their bearers
+- `world/archons.md` — Stage III, from the other side
+- `world/resonant-items.md` — the same alignment, in an object instead of a person
+- `world/resonant-places.md` — the same alignment, in a place instead of a person
 - `world/the-scar.md` — a failed Seat-taker the stages may not reach

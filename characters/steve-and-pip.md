@@ -12,6 +12,8 @@ He does something notably foolish during the Mirel arc. The party will remember 
 
 His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-name, his name is Steve.
 
+Something real grew between him and Mirel (`characters/mirel.md`) in the space between Kaine's arc ending and his own bathing — nobody arranged it, nobody in the Promise noticed, and it never got the chance to become anything either of them would have had time to name properly. Everyone else who'd met him already had him filed as forgettable. She was the one person who didn't.
+
 ---
 
 ## Pip
@@ -21,6 +23,8 @@ His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-na
 Steve was lowered into the Unheld Ocean for his first bathing. Standard procedure. Then the pulleys seized. He was down there much longer than anyone intended, longer than anyone should be, longer than doctrine accounts for. When he came back up, Pip came with him.
 
 A bubble dragon. Small, iridescent, made of something that's already halfway gone. Big rainbow eyes. Wings like soap film. Orbits Steve constantly. Has been slowly popping since the moment he existed — small pieces of him disappearing at irregular intervals. He will be entirely gone within a week.
+
+**Each bubble is a memory, not just a piece of him in the abstract.** When one pops, whatever it was carrying is gone from Steve too — not blocked, not suppressed, actually gone, the way a room is empty once whatever was in it has been carried out. Most of what's going is small: a smell, a street he used to take, a joke he used to tell. One of them is Mirel. Nobody can say which bubble that is until it's already popped, and by then there's nothing left to warn.
 
 Nobody chose this.
 
@@ -48,4 +52,5 @@ The ripples are emergent. They depend on what the party adds. Don't pre-write th
 - What does Steve's foolish act in the Mirel arc look like?
 - Is Pip aware? Can he communicate, or is he pure presence?
 - Does Steve know what Pip is, or does he just know something strange is happening?
-- What happens to Steve after Pip is gone — does the absence of Pip leave something missing in him too?
+
+**Resolved — what happens to Steve after Pip is gone:** yes, something is missing, and it's not abstract. Whatever memory each bubble carried is gone when it pops, including, by the time Pip is entirely gone, his memory of Mirel and whatever grew between them. He doesn't come out the other side grieving a loss he can feel. He comes out not knowing there was one. The grief belongs entirely to her.

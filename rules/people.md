@@ -1,6 +1,6 @@
 # People
 
-Name, Price, and Distance (`mythology/creation-myth-the-three-cuts.md`) applied to designing a person — player character or NPC. This file doesn't redefine any of the three — it points at where each one actually lives.
+Name, Price, and Distance (`world/creation-myth-the-three-cuts.md`) applied to designing a person — player character or NPC. This file doesn't redefine any of the three — it points at where each one actually lives.
 
 ---
 
@@ -37,5 +37,5 @@ See `agent-tools/design-principles.md`, Distance — What Can Never Be, for the 
 
 - `rules/character-creation.md` — Declaring a Price, the player-facing mechanic
 - `agent-tools/design-principles.md` — the Distance principle, worked for people, items, and places alike
-- `mythology/creation-myth-the-three-cuts.md` — Name, Price, and Distance at their source
-- `mythology/resonant-people.md` — what a person becomes when their alignment with a Seat's domain goes further than an ordinary life
+- `world/creation-myth-the-three-cuts.md` — Name, Price, and Distance at their source
+- `world/resonant-people.md` — what a person becomes when their alignment with a Seat's domain goes further than an ordinary life

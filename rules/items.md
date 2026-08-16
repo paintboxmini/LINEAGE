@@ -117,7 +117,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 *Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
 
-- **The Lightning Loop** — a ring, Storm Seat-aligned, currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. The Storm Seat itself is now borne by Greed (`mythology/seats.md`) — whether that has any bearing on Kaine's own claim to this Artifact is unestablished, on purpose.
+- **The Lightning Loop** — a ring, Storm Seat-aligned, currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. The Storm Seat itself is now borne by Greed (`world/seats.md`) — whether that has any bearing on Kaine's own claim to this Artifact is unestablished, on purpose.
 
 ---
 

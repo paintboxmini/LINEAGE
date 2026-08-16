@@ -2,15 +2,15 @@
 
 Knowledge always has a lineage.
 
-Nothing in Eclipseria is known from nowhere. Every technique, every card, every way of surviving a fight was learned from something — and carries the mark of where it came from. A card's **tag** is that mark: it records the *most specific source players can still meaningfully identify.* Not the ultimate origin — the point where the trail still leads somewhere real.
+Nothing in Eclipseria is known from nowhere. Every technique, every card, every way of surviving a fight was learned from something — and carries the mark of where it came from. A card's **tag** is that mark: it records the origin location.
 
 **Location tags are living traditions whose origin is still recognized.** A WEALD card is a way of doing things the Weald still teaches. Name it, and someone can point you back to it. The tradition is alive; the source still answers when you knock.
 
 **Tagless cards are not without origin.** Their lineage has diffused through the world until no single location can meaningfully claim them — known everywhere, taught by everyone, worn smooth by so many hands the fingerprints are gone. A tagless card is not knowledge from nowhere. It is knowledge from *everywhere* — a source spread so wide it passed out of any one place's keeping. Universality is not the absence of a source. It is a source that became the world.
 
-**Card names carry the individual.** Authorship, a signature technique, a unique expression — these live in the name, not the tag. The name remembers the *person*; the tag remembers the *tradition*. A master's singular move is a named card, never a new tag — so individual genius never fragments the source system. The two layers hold each other up: names keep the people, tags keep the lineages, and neither has to carry the other's weight.
+**Card names carry the individual.** Authorship, a signature technique, a unique expression — these live in the name, not the tag. The name remembers the *person*; the tag remembers the *tradition*. A master's signature move is a named card, never a new tag — so individual genius never fragments the source system. The two layers hold each other up: names keep the people, tags keep the lineages, and neither has to carry the other's weight.
 
-**A tag survives a change of hands.** Knowledge can be sold — that is the whole premise of the Underground Bazaar (`places/capital/underground-bazaar.md`) — and when it is, the tag does not transfer to the seller or the shop. It still records where the technique is *taught*, not who last held it. So a card can be carried by someone with no connection to its source at all: a WEALD card in the hands of somebody who has never stood in the Weald. The lineage is intact and the bearer's claim on it is not. The tag was never a certificate of having been there; it is a record of where the trail still leads.
+**A tag survives a change of hands.** Knowledge can be traded — that is the whole premise of the Underground Bazaar (`places/capital/underground-bazaar.md`) — and when it is, the tag does not become the seller or the shop. It still records where the technique is *taught*, not who last held it. So a card can be carried by someone with no connection to its source at all: a WEALD card in the hands of somebody who has never stood in the Weald. The lineage is intact and the bearer's claim on it is not. The tag was never a certificate of having been there; it is a record of where the trail still leads.
 
 ---
 

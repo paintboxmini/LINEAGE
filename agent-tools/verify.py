@@ -176,7 +176,7 @@ def check_refs():
                 bad.append(f'{path} -> {m.group(1)} (missing)')
         # Directory-qualified paths only: bare `red-team.md` is prose shorthand.
         for m in re.finditer(r'`((?:cards|bestiary|rules|quests|places|characters|items|'
-                             r'world|mythology|factions|Oracle|agent-tools|playtesting)/'
+                             r'world|factions|Oracle|agent-tools|playtesting)/'
                              r'[A-Za-z0-9_\-/]+\.md)`', text):
             target = m.group(1)
             if os.path.exists(target) or 'filename' in target:

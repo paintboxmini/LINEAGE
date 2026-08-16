@@ -1,6 +1,6 @@
 # Wallows Slime
 
-*Threshold creature, the Wallows. Gathers in galleries where the walls are wet and warm. See `quests/the-wallows-descent.md` and `places/capital/the-wallows.md`.*
+*A creature of the deep, the Wallows. Gathers in galleries where the walls are wet and warm. See `quests/the-wallows-descent.md` and `places/capital/the-wallows.md`.*
 
 **Cards:** `cards/wallows-slime.md`
 
@@ -59,5 +59,5 @@ The stat block exists for the same reason the Skeinwing's does — completeness,
 ## Related Documents
 
 - `quests/the-wallows-descent.md` — the Slime Gallery, extraction, and the Influence track
-- `places/capital/the-wallows.md` — the threshold, and what the slimes are an expression of
+- `places/capital/the-wallows.md` — the deep, and what the slimes are an expression of
 - `bestiary/the-patient-host.md` — the other creature that is only dangerous if you insist

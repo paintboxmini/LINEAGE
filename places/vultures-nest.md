@@ -1,6 +1,6 @@
 # Vulture's Nest
 
-A river port rebuilt so many times on top of itself that no one remembers the original shoreline. The town sits at the heart of the continent's river web — every waterway of consequence passes through or near it, and more tonnage crosses its docks than the rest of the continent combined. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
+A river port rebuilt so many times on top of itself that no one remembers the original shoreline. Not the web's actual center — the capital holds that (`world/geography-overview.md`) — but the town sits at a major intersection all its own, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more tonnage crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
 The smell: pitch, citrus peel, river silt, wet wood.
 
@@ -242,7 +242,7 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 
 - A Glasslight lens shows a color that only appears here at low tide.
 - A People of Promise ritual barge docks and nobody lets it leave.
-- An atlas arrives from Glasslight showing a door into the Unheld — anyone who looks at it dreams of the door.
+- An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water (`world/the-unheld.md`). That precision is why anyone who looks at it dreams of the door.
 
 ---
 

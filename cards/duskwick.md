@@ -1,6 +1,6 @@
 # Duskwick — Signature Cards
 
-The first three are carried by any Duskwick. THRESHOLD is specific to the large one at the abandoned homestead (`quests/the-abandoned-homestead.md`) and is the only card here that carries a tag — the others have none, because a Duskwick turns up at the edges of half the settled world and no single place is its source.
+The first three are carried by any Duskwick. THRESHOLD is specific to the large one at the abandoned homestead (`places/briarwatch.md`, The Abandoned Homestead) and is the only card here that carries a tag — the others have none, because a Duskwick turns up at the edges of half the settled world and no single place is its source.
 
 ---
 

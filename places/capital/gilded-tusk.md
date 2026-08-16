@@ -218,9 +218,9 @@ See `bestiary/kiwi-bird.md` for the encounter. Same general Turnroot territory a
 
 ## The Secret Hook — Table #9
 
-Table #9 has an owl carved into its underside. Beneath it: a loose mosaic tile. Beneath the tile: a letter addressed to Lord Percival, warning him that Lord Oswald (The Lion) is planning something that will result in the removal of the other council members.
+Table #9 has an owl carved into its underside. Beneath it: a loose mosaic tile. Beneath the tile: a letter addressed to Lord Percival — unsigned, the hand unfamiliar. It doesn't warn him about anything current. It's a lead on who actually killed the Prince the night before his coronation, a hundred years gone cold: a name, a place, a detail that never made it into any official record. Who wrote it, how long it's been under that tile, and where the trail actually leads once someone starts pulling it are all table discoveries — see `world/the-regency.md`, What Happened to the Throne.
 
 **Player choice:**
 - Deliver it to Lord Percival — he runs the Cartographers Guild, about as far from Oswald's inner circle as a council seat gets, possibly the most trustworthy
-- Attempt to blackmail Lord Oswald
+- Follow the lead themselves before handing it over
 - Sit on it and watch what happens

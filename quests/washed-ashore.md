@@ -53,7 +53,7 @@ The party has nothing to eat with — no coin, nothing yet earned (`rules/charac
 
 > *"Eat. Road's longer on an empty stomach. You can owe the world something useful later."*
 
-From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`places/briarwatch.md`, `quests/the-larder-fence.md`); her family's still in there, and they don't scare easily:
+From there it's a real conversation, not a pronouncement-and-vanish. Over the evening she tells them plainly: she grew up in a forest that presses right up against Briarwatch's own western edge — the Turnroot Weald, held back from the fields only by the watchtower ruins and the larder fence (`places/briarwatch.md`); her family's still in there, and they don't scare easily:
 
 > *"My family's in the Turnroot. Past the watch and the fence, under the trees. They don't scare easy. They sent word the roots have gone restless — deep in, not at the edge. I'm going. Not sending anyone in my place."*
 
@@ -65,7 +65,7 @@ The last thing she does before bed is to give them a Carrion Feather.
 
 In the morning she's simply gone ahead — she doesn't wait for an answer, doesn't ask the party to commit to anything. If they want to catch up to her, or just look in on what she was worried about, Turnroot Weald is right there past Briarwatch's own fence line whenever they're done in the Hollow — no extra travel required to reach it.
 
-**What still doesn't have an answer at all: how she knew *this specific party* was worth talking to** — that they were new, that they came out of the water, any of it. The Echo explains her pull toward Briarwatch. It doesn't explain her attention to them specifically. Leave that part genuinely open.
+**What still doesn't have an answer at all: how she knew *this specific party* was worth talking to** — that they were new, that they came out of the water, any of it. Her alignment to Death explains her pull toward Briarwatch. It doesn't explain her attention to them specifically. Leave that part genuinely open.
 
 ---
 

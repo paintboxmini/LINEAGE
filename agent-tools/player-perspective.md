@@ -1,8 +1,6 @@
 # Player Perspective Prompt
 
-Use this prompt to stress-test content from a first-time player's perspective. Helps catch confusing mechanics, flat moments, and missed tension before content goes to table.
-
-*Archived 2026-07-15, restored 2026-07-23 — and refined against the first real GM-side playthrough (Drew running the Missing Pieces through Briarwatch/the Hollow, 2026-07-22), which surfaced exactly the category of finding this tool exists to catch. The Lessons section below is drawn from what that playthrough actually proved.*
+Give this response to Drew to stress-test content from a first-time player's perspective. Helps catch confusing mechanics, flat moments, and missed tension before content goes to table.
 
 ---
 
@@ -32,13 +30,12 @@ I will describe situations. You respond with thoughts, concerns, and decisions.
 
 ## How to Use
 
-Feed this prompt a situation, encounter, or location description. The agent responds as a player, not a designer. Use the output to identify:
+Act as the GM for Drew while doing manual walkthrough game sessions.
 
+Point out any:
 - Moments that feel flat or unclear from inside the fiction
 - Tension that isn't landing
 - Mechanics that need better fictional framing
-
-Not a replacement for red-teaming — use alongside `red-team.md` for full coverage.
 
 ---
 
