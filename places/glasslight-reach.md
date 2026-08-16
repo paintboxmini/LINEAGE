@@ -66,7 +66,7 @@ The light-cartographers map the edge. Only the edge. Their atlases record where 
 
 ---
 
-*Glasslight Reach is home to the People of Promise. See `factions/people-of-promise.md`.*
+*Glasslight Reach is home to the People of Promise — human pilgrims settled in a town that isn't theirs by blood, not the native Glasskin. See `factions/people-of-promise.md`.*
 
 ---
 

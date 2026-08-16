@@ -4,6 +4,8 @@
 
 *"Nothing can be spoken of it. Anything that can be spoken cannot be understood."*
 
+Almost entirely human. The Glasslight congregation is no exception — human pilgrims drawn to the town, not the native Glasskin (`places/glasslight-reach.md`, The People — the Glasskin), who hold their own separate, older relationship to the cliffs and never adopted the Promise's theology as their own.
+
 ## Philosophy
 
 The Unheld is not a threat. It is infinite potential — the origin of all things and the destination of all things.
