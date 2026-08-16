@@ -66,7 +66,7 @@ One campaign opening starts exactly there: a party washed ashore at (−1, −11
 
 A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again on the way to the grey coast. This web is the continent's second road system — and its first, if you ask a sailor.
 
-**Vulture's Nest sits at the heart of the web.** More river tonnage passes its docks than the rest of the continent combined. If it moves by water, it moves through the Nest.
+**Vulture's Nest isn't the web's actual center — that's the capital, sitting dead at the loop's shortest, fastest point (above) — but it sits at a major intersection all its own,** ringed by local islands in the surrounding rivers and lakes, and it's where all of them actually trade, with each other and with the rest of the continent. More river tonnage passes its docks than anywhere else. If it moves by water between the islands, it moves through the Nest.
 
 Anywhere on this whole network, a line can go in the water. See `rules/river-fishing.md` for The Pull — a real-time table minigame, not a combat mechanic.
 
