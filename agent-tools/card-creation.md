@@ -105,6 +105,17 @@ Before finalizing a card:
 
 If current canon and the requested card conflict, do not silently redefine canon. Surface the conflict.
 
+### Convergence Check
+
+Find the cards already doing something mechanically similar — not the same card, the same *move* — and compare how they say it. Then run the actual test:
+
+**Would rewriting this card to follow the established convention fundamentally alter what it does, or how its behavior reads at the table?**
+
+- **No** — align it. Match the established expression. A near-variant that behaves identically but phrases itself differently is drift, and it costs twice: the rule gets harder to learn, and two wordings of one mechanic can never compress into a single keyword (see Mechanic, above). Convergence is what makes compression possible later.
+- **Yes** — keep the divergence, and be able to say what it buys. If the difference is load-bearing, that difference *is* the card's design, and it should survive review on those terms.
+
+The default is convergence. Divergence has to earn itself.
+
 ## 6. Creation Test
 
 A finished card should have four strands that agree:
@@ -132,5 +143,6 @@ Before presenting the card as finished, ask:
 9. Is the source tag real and appropriately specific?
 10. Does the card belong in the existing set, rather than merely resembling something already there?
 11. If it states a mechanic in longhand, has the set now written that same mechanic out often enough to flag for compression into a keyword?
+12. Is it a near-variant of how an existing card already expresses the same move — and if aligning to that convention wouldn't fundamentally change its behavior, has it been aligned?
 
 For adversarial review, run `agent-tools/red-team.md` after creation.
