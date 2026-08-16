@@ -8,6 +8,16 @@ Memory is not a transcript of how we thought. It is the smallest durable explana
 
 ---
 
+## Branch map
+
+**Default assumption:** `claude/general-chat-vwvr1` is the most current working branch. Agents should read and orient there unless Drew explicitly names a different branch to examine.
+
+- `claude/general-chat-vwvr1` — working trunk (default source of truth for current work)
+- `Main` — human merge target; not the daily desk
+- Other named branches (`gpt/…`, snapshots, experiments) — only when Drew points at them
+
+---
+
 ## Multi-Agent Notes
 
 Different agents naturally specialize based on which parts of the repo they engage with. Drew is content adjudicator. Don't pre-define agent roles — the environment does that work.
