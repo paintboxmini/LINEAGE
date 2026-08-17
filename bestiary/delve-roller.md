@@ -7,7 +7,7 @@
 
 
 **Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · ROLLOUT, GORE *(red)* · PATIENCE OF STONE *(green)*
-**Cards:** `cards/delve-roller-hollow.md`
+*(no signature cards — see the note below)***Cards:** *(none)*
 
 ---
 
@@ -61,9 +61,9 @@ One Roller is an obstacle. Two is a problem.
 
 ## Cards
 
-**Cards:** `cards/delve-roller-hollow.md`
+*(no signature cards — see the note below)***Cards:** *(none)*
 
-PATIENCE OF STONE (promoted to core, `cards/green-soul.md`) — Anchored heal while stationary, Deadly on defense. Fits the balled-up Roller that stays planted and recovers. Stonecoil shares the identical card, same core reference now.
+PATIENCE OF STONE (promoted to core, `cards/patience-of-stone.md`) — Anchored heal while stationary, Deadly on defense. Fits the balled-up Roller that stays planted and recovers. Stonecoil shares the identical card, same core reference now.
 
 ---
 

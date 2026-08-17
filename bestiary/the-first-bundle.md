@@ -2,7 +2,7 @@
 
 *Boss. Briarwatch's fields, or whichever one it is standing in this year. The oldest briarbundle — see `bestiary/briarbundles.md` for the family and the folklore.*
 
-**Cards:** `cards/the-first-bundle.md`
+**Cards:** `cards/another-joint.md`, `cards/fence-post-reach.md`, `cards/the-wool-is-muscle.md`
 
 **Mind 5 / Body 6 / Soul 6 — HP 29**
 **Creature Threat Rating:** 17

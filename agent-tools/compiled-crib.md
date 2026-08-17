@@ -37,7 +37,7 @@ Stats read Mind/Body/Soul. If the brief doesn't state a target Creature Threat R
 
 ## Card format + two calibrated exemplars
 
-*(sources: `CLAUDE.md` card format; `cards/green-soul.md`; `cards/tollbird.md`)*
+*(sources: `CLAUDE.md` card format; `cards/buckets/green.md`; `cards/tollbird.md`)*
 
 Core card (universal — no tag; die philosophy: d8 power / d6 utility / d4 precision):
 

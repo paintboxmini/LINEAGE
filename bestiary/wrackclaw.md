@@ -1,6 +1,6 @@
 # Wrackclaw
 
-**Cards:** `cards/wrackclaw.md`
+**Cards:** `cards/carrion-pull.md`, `cards/pinch.md`, `cards/sidelong-scuttle.md`
 
 *General field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`), and any other stretch of that same coast a GM wants to use one on. Not tied to a single beach.*
 
@@ -9,7 +9,7 @@
 
 **Deck (4 — 1 Blue / 2 Red / 1 Green):** SIDELONG SCUTTLE *(blue)* · PINCH, STRIKE *(red)* · CARRION PULL *(green)*
 
-Deck size = total stats. 3 signature + 1 core to fill: PINCH, SIDELONG SCUTTLE, CARRION PULL (signature — `cards/wrackclaw.md`) + STRIKE (R, core).
+Deck size = total stats. 3 signature + 1 core to fill: PINCH, SIDELONG SCUTTLE, CARRION PULL (signature — `cards/sidelong-scuttle.md`) + STRIKE (R, core).
 
 ---
 

@@ -2,7 +2,7 @@
 
 *A creature of the deep, the Wallows. Gathers in galleries where the walls are wet and warm. See `quests/the-wallows-descent.md` and `places/capital/the-wallows.md`.*
 
-**Cards:** `cards/wallows-slime.md`
+**Cards:** `cards/envelop.md`, `cards/follows-warmth.md`, `cards/your-own-heartbeat.md`
 
 **Mind 1 / Body 2 / Soul 4 — HP 11**
 **Creature Threat Rating:** 7

@@ -2,7 +2,7 @@
 
 *Signature predator of the Turnroot Weald. During Overgrowth (this campaign, `bestiary/root-heart.md`) — hunting from the moment the party steps under canopy; Pressure controls trail quality, not whether they're looking at all (`quests/turnroot-weald-adventure.md`, Rootstalker Trail Quality). Once Overgrowth ends, reverts to the original gate: appears at Pressure 2+ when navigation fails.*
 
-**Cards:** `cards/rootstalker-weald.md`
+**Cards:** `cards/camouflage-strike.md`, `cards/limb-snapper.md`, `cards/splinter-burst.md`, `cards/thorn-bind.md`
 
 **Mind 2 / Body 2 / Soul 3 — HP 11**
 **Creature Threat Rating:** 7

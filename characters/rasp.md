@@ -2,7 +2,7 @@
 
 *Doesn't raise her voice. Can't, really. Doesn't need to.*
 
-**Cards:** `cards/rasp.md`
+**Cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`, `cards/small-doses.md`, `cards/thin-skin.md`, `cards/two-cuts.md`
 
 *Stat block and deck are a starting point. Scale to match where she enters the story — early campaign she's the ally nobody quite remembers helping them, late campaign she's the reason a fight everyone thought was lost, wasn't. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands her more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
@@ -35,7 +35,7 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 ## Deck
 
-**Signature cards:** `cards/rasp.md` — unique to Rasp, not transferable to other poisoners.
+**Signature cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`, `cards/small-doses.md`, `cards/thin-skin.md`, `cards/two-cuts.md` — unique to Rasp, not transferable to other poisoners.
 
 *Deck totals include signature cards: Blue 4 / Red 3 / Green 5, matching Mind 4 / Body 3 / Soul 5.*
 
@@ -56,4 +56,4 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 - SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
 
-*Cut 2026-08-17 in the poison rework: STILLNESS (redundant with FORGET — both forced discard) and WITHER (no longer a core-set card; see `cards/stat-adjusters.md`).*
+*Cut 2026-08-17 in the poison rework: STILLNESS (redundant with FORGET — both forced discard) and WITHER (no longer a core-set card; see `cards/wither.md`).*

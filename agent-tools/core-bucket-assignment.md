@@ -197,7 +197,7 @@ Set by hand; do not recompute away.
 
 ## What this does not decide
 
-- **Which cards leave the core sets.** The pool-slimming pass has not happened. Every card here is still in `cards/red-body.md`, `cards/blue-mind.md`, or `cards/green-soul.md`.
+- **Which cards leave the core sets.** The pool-slimming pass has not happened. Every card here is still in `cards/buckets/red.md`, `cards/buckets/blue.md`, or `cards/buckets/green.md`.
 - **Whether a bucket earns its own card file.** Cleansing and plain attack hold one card each — an argument for merging later, not for forcing members in now.
 - **Non-core cards.** Signature sets, location pools, and `cards/stat-adjusters.md` are unbucketed.
 

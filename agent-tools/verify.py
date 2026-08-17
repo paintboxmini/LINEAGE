@@ -56,29 +56,35 @@ def report(name, failures, detail=None):
 
 
 def load_canon():
-    """Every card block in cards/*.md, colored or colorless."""
+    """Every card in cards/. One card per file since the 2026-08-17 split — the
+    filename is the card's slug, the file holds exactly one card block plus its
+    metadata footer. Card *sets* are no longer implied by file grouping; each
+    card names its own set on a `**Set:**` line, and `cards/buckets/` records
+    behaviour membership."""
     cards = {}
     for path in sorted(glob.glob('cards/*.md')):
-        for block in open(path, encoding='utf-8').read().split('\n---\n'):
-            m = re.search(NAME_RE, block, re.M)
-            if not m:
-                continue
-            colored = re.search(r'^(RED|BLUE|GREEN) — (BODY|MIND|SOUL)(?: — ([A-Z]+))?\s*$',
-                                block, re.M)
-            colorless = re.search(r'^COLORLESS\s*$', block, re.M)
-            if not (colored or colorless):
-                continue
-            rng = re.search(r'^Range: (.+)$', block, re.M)
-            die = re.search(r'^Attack: .*?\bd(\d+)', block, re.M)
-            cards[m.group(1).strip()] = {
-                'color': colored.group(1)[0] if colored else None,
-                'stat': colored.group(2).lower() if colored else None,
-                'tag': colored.group(3) if colored else None,
-                'range': rng.group(1).strip() if rng else None,
-                'die': int(die.group(1)) if die else None,
-                'file': path,
-                'block': block,
-            }
+        text = open(path, encoding='utf-8').read()
+        m = re.search(NAME_RE, text, re.M)
+        if not m:
+            continue
+        colored = re.search(r'^(RED|BLUE|GREEN) — (BODY|MIND|SOUL)(?: — ([A-Z]+))?\s*$',
+                            text, re.M)
+        colorless = re.search(r'^COLORLESS\s*$', text, re.M)
+        if not (colored or colorless):
+            continue
+        rng = re.search(r'^Range: (.+)$', text, re.M)
+        die = re.search(r'^Attack: .*?\bd(\d+)', text, re.M)
+        cset = re.search(r'^\*\*Set:\*\* (.+)$', text, re.M)
+        cards[m.group(1).strip()] = {
+            'color': colored.group(1)[0] if colored else None,
+            'stat': colored.group(2).lower() if colored else None,
+            'tag': colored.group(3) if colored else None,
+            'range': rng.group(1).strip() if rng else None,
+            'die': int(die.group(1)) if die else None,
+            'set': cset.group(1).strip() if cset else None,
+            'file': path,
+            'block': text,
+        }
     return cards
 
 

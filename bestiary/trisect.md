@@ -1,6 +1,6 @@
 # The Trisect
 
-**Cards:** `cards/trisect-ashfall.md`
+**Cards:** `cards/even-churn.md`, `cards/idle-to-engage.md`, `cards/low-grey-haze.md`
 
 Three limbs. Radially symmetric — no front, no back, no preferred direction. Iron and compressed steel. Each limb terminates in a heavy flat plate that serves equally as a foot or a striking surface depending on what the Trisect decides.
 

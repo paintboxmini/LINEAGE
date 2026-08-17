@@ -17,7 +17,6 @@ Prolonged exposure is draining. The landscape seems to press unresolved things u
 - `bestiary/alignment-marshal.md` — Alignment Marshal (War Engine chase boss)
 - `bestiary/tithe-engine.md` — The Tithe Engine and Scorch Drones (Calcine Flats)
 - `bestiary/ashgrazer.md` — Ashgrazer Alpha and Packgrazer (Cindersink)
-- `cards/tithe-engine-ashfall.md` — Tithe Engine, Scorch Drone, and Exhaust status cards
-- `cards/ashgrazer-ashfall.md` — Ashgrazer Alpha and Packgrazer cards
+- Tithe Engine, Scorch Drone, Ashgrazer and Packgrazer cards — see each creature's bestiary entry for its card files
 - `places/abyssal-ruins.md` — what the Engine was aimed at, and was aimed at again
 - `places/the-coil.md` — something that was near the Ruins the first time it fired, and survived

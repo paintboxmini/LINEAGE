@@ -1,6 +1,6 @@
 # Flapjack Octopus
 
-**Cards:** `cards/flapjack-octopus.md`
+**Cards:** `cards/camouflage-shift.md`, `cards/current-sense.md`, `cards/depth-slam.md`, `cards/dissolve-contact.md`, `cards/enveloping-press.md`, `cards/flatten.md`, `cards/ink-burst.md`, `cards/mimicry-pulse.md`, `cards/surge.md`
 
 *Also a general field encounter — any riverbed or riverbank the GM wants an ambush-and-camouflage fight, not exclusive to The Trench. Not tied to a single body of water; wherever there's a river, a Flapjack Octopus can be there.*
 

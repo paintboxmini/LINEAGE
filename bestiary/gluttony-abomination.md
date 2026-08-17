@@ -2,7 +2,7 @@
 
 *Boss encounter. Location: the Altar Room of the Cathedral, Abyssal Ruins. For full encounter context, see `quests/abyssal-ruins-cathedral.md`.*
 
-**Cards:** `cards/gluttony-abomination.md`
+**Cards:** `cards/always-one-more.md`, `cards/maws.md`, `cards/the-room-leans-in.md`
 
 **Mind 3 / Body 8 / Soul 6 — HP 33**
 **Creature Threat Rating:** 17

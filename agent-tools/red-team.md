@@ -166,5 +166,5 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 - Design standards (for the Design Principles pass): `agent-tools/design-principles.md` — living doctrine, restored 2026-07-23
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`
-- Tone reference: `cards/alignment-marshal-engine.md`
-- Existing cards for redundancy: `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`
+- Tone reference: `cards/targeting-lock.md`
+- Existing cards for redundancy: `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`

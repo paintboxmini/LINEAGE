@@ -16,7 +16,7 @@ This is the mechanical half of Drew's own stated approach (2026-08-16): *"the ha
 
 `Oracle/baseoracledeck.md` states them, and they are unusually checkable for a design rule:
 
-- **Starter tier** — simplest, lowest power/impact cards from the three core sets (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`). Core cards only.
+- **Starter tier** — simplest, lowest power/impact cards from the three core sets (`cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`). Core cards only.
 - Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword.
 - **None** force opponent discard, inject a status (Wound/Exhaust), force a hand reveal, or presuppose a system the pool doesn't otherwise introduce (Anchored, an RPS auto-win or reversal, a precondition set by another card, an open-ended amount choice).
 

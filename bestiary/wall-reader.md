@@ -2,14 +2,14 @@
 
 *A blind figure in the Coil's lower passages, following the same wall-following rule the party is. It was a person, once. Not anymore.*
 
-**Cards:** `cards/wall-reader.md`
+**Cards:** `cards/still-counting.md`
 
 **Mind 1 / Body 4 / Soul 3 — HP 16**
 **Creature Threat Rating:** 8
 
 **Deck (8 — 1 Blue / 4 Red / 3 Green):** CERTAIN STRIKE, RHYTHM BREAK, GROUNDING STANCE, DIG IN *(red)* · STILLNESS *(blue)* · STILL COUNTING, PATIENCE, FLOW *(green)*
 
-*CERTAIN STRIKE and RHYTHM BREAK are the promoted-to-core versions of this creature's original NEVER LIFTED and YOU CHANGED WALLS (`cards/red-body.md`) — same cards, de-flavored names.*
+*CERTAIN STRIKE and RHYTHM BREAK are the promoted-to-core versions of this creature's original NEVER LIFTED and YOU CHANGED WALLS (`cards/certain-strike.md`) — same cards, de-flavored names.*
 
 ---
 
@@ -52,4 +52,4 @@ The Wall-Reader is a mirror, not a monster — its kit exists to make the Coil's
 ## Related Documents
 
 - `places/the-coil.md` — the Wall-Reader's module, and the wall-following rule it shares with the party
-- `cards/wall-reader.md` — signature cards
+- `cards/still-counting.md` — signature cards

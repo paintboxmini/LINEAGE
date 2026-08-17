@@ -2,7 +2,7 @@
 
 *A small nocturnal predator found in Eclipseria and Vulture's Nest, living at the edges the way a stray alley cat does. Hunts at the threshold of failing light.*
 
-**Cards:** `cards/duskwick.md`
+**Cards:** `cards/guttering.md`, `cards/half-seen.md`, `cards/snuff.md`, `cards/threshold.md`
 
 **Mind 4 / Body 2 / Soul 5 — HP 15**
 **Creature Threat Rating:** 11

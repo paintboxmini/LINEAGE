@@ -22,7 +22,7 @@ This is the whole point of the room, and it is a real rule, not just a descripti
 
 **What it doesn't do:** stop players from thinking, planning silently, or acting on unspoken agreement. It only removes the sentence that would have made the plan easy. A party that has played together long enough to read each other without words will find this room asks less of them than a party that hasn't.
 
-**The real stakes:** READ (`cards/green-soul.md`) forces a hand reveal the normal way when played *by* someone in the room against Fermata — the irony is not an accident. Speaking here, or playing a card built to force someone else to, is the loudest thing a person can do in a place built entirely around not doing it.
+**The real stakes:** READ (`cards/read.md`) forces a hand reveal the normal way when played *by* someone in the room against Fermata — the irony is not an accident. Speaking here, or playing a card built to force someone else to, is the loudest thing a person can do in a place built entirely around not doing it.
 
 ---
 

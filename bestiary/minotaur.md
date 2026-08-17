@@ -1,6 +1,6 @@
 # Minotaur
 
-**Cards:** `cards/minotaur-coil.md`
+**Cards:** `cards/bound-to-the-stone.md`, `cards/cut-off.md`, `cards/headlong.md`, `cards/inevitability.md`, `cards/labyrinth-echo.md`, `cards/maze-sense.md`, `cards/pattern-read.md`, `cards/wide-swing.md`
 
 It knows every passage. It has been here longer than anyone the party has met, longer than the dock badges on the bodies, longer than whatever built the labyrinth remembers. When it moves through the corridors, it doesn't hurry. The labyrinth does that work for it.
 

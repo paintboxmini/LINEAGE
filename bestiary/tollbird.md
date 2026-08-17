@@ -2,7 +2,7 @@
 
 *A Tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and the Wait action.*
 
-**Cards:** `cards/tollbird.md`
+**Cards:** `cards/impaling-dive.md`, `cards/thorn-larder.md`, `cards/watchful-perch.md`
 
 **Mind 2 / Body 3 / Soul 4 — HP 15**
 **Creature Threat Rating:** 9

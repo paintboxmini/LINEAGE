@@ -147,7 +147,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"The man with the boomstick has been asking about the Moving Crate."*
 
-**Stat block and cards:** `characters/masaharu.md`, `cards/masaharu.md`
+**Stat block and cards:** `characters/masaharu.md`, `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md`
 
 **Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 

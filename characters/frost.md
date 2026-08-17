@@ -23,7 +23,7 @@
 **Green**
 - TWIN STRIKE
 
-All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
+All core cards — `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`.
 
 ---
 

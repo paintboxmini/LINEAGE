@@ -1,6 +1,6 @@
 # The Descended
 
-**Cards:** `cards/the-descended.md`
+**Cards:** `cards/downward.md`, `cards/felt-you-coming.md`, `cards/slither-lunge.md`
 
 Pale. Hairless. Arms pressed flat at their sides — not pinned, simply unused. The eyes are large and lidless, adapted to total darkness. The teeth have sharpened themselves on whatever the deep provides.
 

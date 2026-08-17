@@ -2,14 +2,14 @@
 
 *The original innkeeper of the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road. Still checking guests in. Still keeping the ledger. It hasn't been a person for a very long time, and the post never actually required it to stay one.*
 
-**Cards:** `cards/the-patient-host.md`
+**Cards:** `cards/no-vacancy.md`, `cards/registered.md`, `cards/the-ledger-never-closes.md`, `cards/your-turn-will-come.md`
 
 **Mind 8 / Body 6 / Soul 10 — HP 66** *(bespoke — boss exception; formula baseline is 36)*
 **Creature Threat Rating:** 24
 
 **Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, PREDICT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, RECOVER *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, YOU'RE NEXT *(green)*
 
-*YOU'RE NEXT was promoted to core (`cards/green-soul.md`) — no longer a Patient Host signature, moved from the signature list above to the core green count it already occupied.*
+*YOU'RE NEXT was promoted to core (`cards/youre-next.md`) — no longer a Patient Host signature, moved from the signature list above to the core green count it already occupied.*
 
 ---
 
@@ -76,6 +76,6 @@ No checks for ordinary conversation — the Host is not hiding anything, and it 
 ## Related Documents
 
 - `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road
-- `cards/the-patient-host.md` — signature cards
+- `cards/no-vacancy.md`, `cards/registered.md`, `cards/the-ledger-never-closes.md`, `cards/your-turn-will-come.md` — signature cards
 - `rules/card-glossary.md` — Initiative Shift X and Locked, the two mechanics this kit and its dialogue run on
 - `rules/resolution.md` — Read (Soul), the check behind the ledger's one real transgression

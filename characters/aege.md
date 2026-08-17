@@ -2,7 +2,7 @@
 
 *The Carrion Guide. A Resonant Person of the Seat of Death — whether she knows it herself isn't established, same as the Night Ferryman's own Navigation (`world/seats.md`). She is also fated to bear that Seat; see GM Secret, below.*
 
-**Cards:** `cards/aege.md`
+**Cards:** `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md`
 
 *Stat block and deck are a starting point, sized for a mid-campaign encounter (CTR 15, within the CTR 13-17 range asked for) — scale Body/total stats the same as any other named character if she ends up fought earlier or later than that. She is not built to be sought out: nothing here assumes players go looking for a fight with her, only that she can hold her own if one finds her anyway.*
 
@@ -91,7 +91,7 @@ Her core picks lean the same direction — control and information over damage (
 
 ## Deck
 
-**Signature cards:** `cards/aege.md` — unique to Aege, not transferable.
+**Signature cards:** `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md` — unique to Aege, not transferable.
 
 **Core cards (5 Blue / 3 Red / 7 Green):**
 
@@ -128,4 +128,4 @@ Her core picks lean the same direction — control and information over damage (
 - `world/seats.md` — the Seat of Death
 - `world/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
 - `items/briarwatch-items.md` — the Carrion Feather
-- `cards/aege.md` — signature cards
+- `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md` — signature cards

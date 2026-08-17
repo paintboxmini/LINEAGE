@@ -2,7 +2,7 @@
 
 *Mage-sword fencer. Former Mason survey cartographer. Available for hire, particular about clients.*
 
-**Cards:** `cards/orin-vane.md`
+**Cards:** `cards/azure-mirror.md`, `cards/azure-ward.md`, `cards/crimson-mirror.md`, `cards/crimson-ward.md`, `cards/feint.md`, `cards/ink-the-air.md`, `cards/lunge.md`, `cards/signature-thrust.md`, `cards/step-aside.md`, `cards/survey.md`, `cards/verdant-mirror.md`, `cards/verdant-ward.md`
 
 **Mind 5 / Body 4 / Soul 2 — HP 18**  
 **Creature Threat Rating:** 11

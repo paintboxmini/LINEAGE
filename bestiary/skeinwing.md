@@ -2,7 +2,7 @@
 
 *High-altitude glider. Almost never encountered alive. What the Tollbird's larder sometimes holds instead of a young jackalope.*
 
-**Cards:** `cards/skeinwing.md`
+**Cards:** `cards/entwined.md`, `cards/from-above.md`, `cards/too-high-to-hear.md`
 
 **Mind 2 / Body 1 / Soul 4 — HP 9**
 **Creature Threat Rating:** 7

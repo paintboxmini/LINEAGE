@@ -4,7 +4,7 @@
 
 **A party guided here by the wall is not attacked.** They paid, the forest brought them, and the Heart honours that — they look at it for as long as they want and then leave, which is its own way out (`quests/turnroot-weald-adventure.md`, Escape Conditions). Everything below is the fight, and the fight is only one of the two ways this thing gets used.
 
-**Cards:** `cards/root-heart-weald.md`
+**Cards:** `cards/forest-memory.md`, `cards/graft.md`, `cards/root-lash.md`
 
 **Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 21 — unchanged by the 2026-08-06 HP formula update, coincidentally: 3×5+4+2 lands on the same 21 that 3×5+6 did)*
 **Creature Threat Rating:** 11

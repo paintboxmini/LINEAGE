@@ -2,7 +2,7 @@
 
 *Rift-Stalker. Common predator of the Abyssal Ruins, slipped through the central violet gateway.*
 
-**Cards:** `cards/phase-leach.md`
+**Cards:** `cards/borrowed-scream.md`, `cards/obsidian-six.md`, `cards/siphon.md`
 
 **Mind 2 / Body 1 / Soul 3 — HP 8**
 **Creature Threat Rating:** 6

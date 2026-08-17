@@ -13,7 +13,7 @@ Effect: Exile 1 card from your hand. Deal its damage in retaliation the next tim
 Defensive Bonus: Exile 1 card from your discard.
 Range: Both
 *"What appears lost may simply be waiting for the right season."*
-*Cut: Removed from `cards/green-soul.md` by Drew, no reason stated beyond wanting it gone — name and flavor kept for reuse per his explicit request.*
+*Cut: Removed from `cards/buckets/green.md` by Drew, no reason stated beyond wanting it gone — name and flavor kept for reuse per his explicit request.*
 
 ---
 

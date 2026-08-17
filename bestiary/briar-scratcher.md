@@ -7,7 +7,7 @@
 
 
 **Deck (4 — 1 Blue / 1 Red / 2 Green):** SKITTER AWAY *(blue)* · RAKING CUT *(red)* · NIP AND TEAR, BRISTLE *(green)*
-**Cards:** `cards/briar-scratcher.md`
+**Cards:** `cards/nip-and-tear.md`, `cards/raking-cut.md`, `cards/skitter-away.md`
 
 ---
 

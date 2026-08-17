@@ -2,7 +2,7 @@
 
 *War relic encounter. Location: the Calcine Flats, where the war machines died and didn't stop moving.*
 
-**Cards:** `cards/tithe-engine-ashfall.md`
+**Cards:** `cards/ash-exhaust.md`, `cards/ash-redirect.md`, `cards/cinder-spiral.md`, `cards/harvest-chain.md`, `cards/thermal-vector.md`, `cards/tithe-collection.md`, `cards/vent-cycle.md`
 
 ---
 

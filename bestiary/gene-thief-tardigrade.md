@@ -1,6 +1,6 @@
 # Gene-Thief Tardigrade
 
-**Cards:** `cards/gene-thief-tardigrade.md` *(baseline only — variant cards are DM-built)*
+**Cards:** `cards/adaptive-bite.md`, `cards/dissolve-and-keep.md`, `cards/genetic-sample.md` *(baseline only — variant cards are DM-built)*
 
 Translucent body, eight stubby legs, size of a large dog. The Adaptation Core is visible through the skin — a shifting mass of absorbed genetic material at the creature's center. No two tardigrades look identical. The Core reflects everything they've ever consumed.
 

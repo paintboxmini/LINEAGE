@@ -2,7 +2,7 @@
 
 *Small ambush predator. Lives in canopy clutter, fallen crowns, and blossom-heavy tangles in the Turnroot Weald. Not a Pressure-gated spawn — it's here because the tree is. See `quests/turnroot-weald-adventure.md`, The Fallen Tree.*
 
-**Cards:** `cards/flower-snake.md`
+**Cards:** `cards/bloom-stillness.md`, `cards/coil-drop.md`, `cards/needle-bite.md`, `cards/petal-feint.md`, `cards/shed.md`, `cards/venom-mind.md`
 
 **Mind 3 / Body 1 / Soul 2 — HP 8**
 **Creature Threat Rating:** 6

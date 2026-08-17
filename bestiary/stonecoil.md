@@ -2,7 +2,7 @@
 
 *Primary predator of the Hollow Below Briarwatch. Encountered from mid-depth downward.*
 
-**Cards:** `cards/stonecoil-hollow.md`
+**Cards:** `cards/coil-latch.md`, `cards/dark-corridor.md`, `cards/drag.md`, `cards/rolling-thunder.md`, `cards/shed-skin.md`, `cards/still-ground.md`, `cards/vibration-lock.md`
 
 **Mind 2 / Body 4 / Soul 2 — HP 16**
 **Creature Threat Rating:** 8
@@ -25,7 +25,7 @@ They hunt via vibration. They prefer narrow choke points. They are territorial b
 
 ## Abilities
 
-Full kit: `cards/stonecoil-hollow.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK CORRIDOR, COIL LATCH, STILL GROUND, PULL, ROLLING THUNDER — the last Alpha-only) plus core PATIENCE OF STONE (`cards/green-soul.md`, promoted from this creature's own signature set — Stonecoil's deck uses the core card in its place). Three representative below; see the signature file for the rest.
+Full kit: `cards/rolling-thunder.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK CORRIDOR, COIL LATCH, STILL GROUND, PULL, ROLLING THUNDER — the last Alpha-only) plus core PATIENCE OF STONE (`cards/patience-of-stone.md`, promoted from this creature's own signature set — Stonecoil's deck uses the core card in its place). Three representative below; see the signature file for the rest.
 
 **COIL LATCH** — RED — BODY
 - Attack: Body + d6

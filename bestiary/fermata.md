@@ -2,7 +2,7 @@
 
 *Solitary boss encounter. `places/the-silent-choir.md` — guardian of the Silent Choir, keeper of what the Silent Blade was cut from.*
 
-**Cards:** `cards/fermata.md`
+**Cards:** `cards/dirge.md`, `cards/sealed-chord.md`, `cards/the-held-note.md`
 
 **Mind 10 / Body 12 / Soul 20 — HP 66**
 **Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27, `CLAUDE.md`, Stat Blocks. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*

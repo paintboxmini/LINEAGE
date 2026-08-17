@@ -16,7 +16,7 @@ The AI-selected 63-card composition that stood here through 2026-08-03 — every
 
 ## Eligibility Criteria (the mechanic — this part stays)
 
-Starter tier — simplest, lowest power/impact cards from the three core sets. Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword; none force the opponent to discard, inject a status (Wound/Exhaust), force a hand reveal, or presuppose a system (Anchored, an RPS auto-win/reversal, a precondition set by another card, an open-ended amount choice) the pool doesn't otherwise introduce. All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
+Starter tier — simplest, lowest power/impact cards from the three core sets. Each card touches one of the three core pillars (RPS, Initiative, Position) or a standard keyword; none force the opponent to discard, inject a status (Wound/Exhaust), force a hand reveal, or presuppose a system (Anchored, an RPS auto-win/reversal, a precondition set by another card, an open-ended amount choice) the pool doesn't otherwise introduce. All core cards — `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`.
 
 **Fixed composition target (2026-08-03, Drew): 21 per colour, split 12 / 6 / 3 along that colour's range identity.**
 

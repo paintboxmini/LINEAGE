@@ -2,7 +2,7 @@
 
 *The Pale Hunger. Location: the Cindersink, a basin where exhaust collects and doesn't disperse. The ash is warm underfoot. Has been for years.*
 
-**Cards:** `cards/ashgrazer-ashfall.md`
+**Cards:** `cards/ashbury.md`, `cards/feeding-frenzy.md`, `cards/heat-trace.md`, `cards/sense-the-spent.md`, `cards/the-pack-remembers.md`
 
 ---
 

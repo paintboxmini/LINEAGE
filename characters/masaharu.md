@@ -2,7 +2,7 @@
 
 *Regency-backed detective. Loner. Traveling. Always in the middle of something.*
 
-**Cards:** `cards/masaharu.md`
+**Cards:** `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md`
 
 *Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a threat, late campaign he's a serious one. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands him more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
@@ -57,7 +57,7 @@ He is most dangerous when he has had one full cycle to read the party.
 
 ## Deck
 
-**Signature cards:** `cards/masaharu.md` — unique to Masaharu, not transferable.
+**Signature cards:** `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md` — unique to Masaharu, not transferable.
 
 **Core cards (2 Blue / 2 Red / 4 Green):** *(fixed 2026-07-23 — this deck ran a 1-card Red overcount since before this session, 4 total against Body 3; cut ENDURE as the least identity-specific of the three Red core picks. GROUNDING STANCE and BURN BRIGHT both reinforce the immovable-Backline-sniper identity directly; ENDURE was generic Resist/heal filler that any deck could run.)*
 

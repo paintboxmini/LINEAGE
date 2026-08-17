@@ -2,7 +2,7 @@
 
 *Neutral encounter — Basin Fog, outskirts of Eclipseria.*
 
-**Cards:** `cards/fogcaller-basin.md`
+**Cards:** `cards/fogburst.md`, `cards/shroud.md`, `cards/talon-rush.md`
 
 **Mind 2 / Body 4 / Soul 3 — HP 17**
 **Creature Threat Rating:** 9

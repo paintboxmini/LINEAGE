@@ -91,4 +91,4 @@ The event was a scheduled function. The schedule continues.
 
 ## Cards
 
-**Cards:** `cards/alignment-marshal-engine.md`
+**Cards:** `cards/calibration-pulse.md`, `cards/correction-load.md`, `cards/fault-exploit.md`, `cards/system-purge.md`, `cards/targeting-lock.md`

@@ -4,7 +4,7 @@
 
 People who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. The Void Runners use them because they're hard to read — which cuts both ways.
 
-**Cards:** `cards/corrupted-bather.md`
+**Cards:** `cards/cuts-both-ways.md`, `cards/nothing-to-read.md`, `cards/undertow.md`
 
 **Mind 2 / Body 3 / Soul 3 — HP 14**
 **Creature Threat Rating:** 8

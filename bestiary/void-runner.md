@@ -4,7 +4,7 @@
 
 Smuggling crew. Use stolen resonant items as weapons. Some travel with Corrupted Bathers. Dangerous in numbers.
 
-**Cards:** `cards/void-runner.md`
+**Cards:** `cards/borrowed-power.md`, `cards/nothing-personal.md`, `cards/off-the-edge.md`
 
 **Mind 2 / Body 3 / Soul 1 — HP 12**
 **Creature Threat Rating:** 6

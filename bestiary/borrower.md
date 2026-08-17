@@ -2,7 +2,7 @@
 
 *Subterranean humanoids native to the Hollow Below Briarwatch. Not hostile by default — but not defenseless.*
 
-**Cards:** `cards/borrower-hollow.md`
+**Cards:** `cards/clay-bowl.md`, `cards/crawl-lane.md`
 
 **Mind 3 / Body 1 / Soul 2 — HP 8**
 **Creature Threat Rating:** 6
@@ -51,7 +51,7 @@ At the start of its turn, the Borrower may Scry 1 of any one combatant's deck. T
 
 ## Combat Cards
 
-In addition to their signature set (`cards/borrower-hollow.md`), Borrowers fill their combat deck with core cards weighted toward Blue and Green. They rarely play Red.
+In addition to their signature set (`cards/clay-bowl.md`, `cards/crawl-lane.md`), Borrowers fill their combat deck with core cards weighted toward Blue and Green. They rarely play Red.
 
 Recommended core inclusions: PATIENCE, FLOW, FOCUS, WITNESS, BIND.
 

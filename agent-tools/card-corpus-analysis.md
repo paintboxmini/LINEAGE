@@ -111,7 +111,7 @@ The reverse of compression, and the answer to a problem that was open until 2026
 
 There is no natural cliff in the distribution to justify a different number — usage tails smoothly from the high fifties down to one — so 4 is a judgment about review volume, which is exactly what it should be.
 
-**Expose is the live case, and it is mid-decompression right now.** `Expose [Color]` is defined in the glossary and used by four cards. Three use the compressed form (*"Expose Red — inflict Staggered"*). The fourth, in `cards/tithe-engine-ashfall.md`, restates the keyword's whole definition inline: *"Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it."* That is the keyword and its longhand definition on the same card, which `agent-tools/card-creation.md` explicitly says not to do. It should be resolved deliberately in one direction — not left as one card explaining itself while three don't.
+**Expose is the live case, and it is mid-decompression right now.** `Expose [Color]` is defined in the glossary and used by four cards. Three use the compressed form (*"Expose Red — inflict Staggered"*). The fourth, in `cards/cinder-spiral.md`, restates the keyword's whole definition inline: *"Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it."* That is the keyword and its longhand definition on the same card, which `agent-tools/card-creation.md` explicitly says not to do. It should be resolved deliberately in one direction — not left as one card explaining itself while three don't.
 
 ### 5. Oracle Eligibility — moved out
 

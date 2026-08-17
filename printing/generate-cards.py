@@ -24,22 +24,20 @@ import sys
 SETS = {
     'core': {
         'title': 'Core Cards',
-        'files': [
-            '../cards/blue-mind.md',
-            '../cards/red-body.md',
-            '../cards/green-soul.md',
-            '../cards/colorless.md',
-        ],
+        # Membership comes from the colour buckets since the 2026-08-17
+        # one-card-per-file split — `cards/` no longer groups by set.
+        'files': ['../cards/*.md'],
+        'buckets': ['red', 'blue', 'green', 'colorless'],
     },
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
-        'files': [
-            '../cards/briarwatch-jackalope.md',
-            '../cards/tollbird.md',
-            '../cards/briar-scratcher.md',
-            '../cards/borrower-hollow.md',
-            '../cards/stonecoil-hollow.md',
-            '../cards/delve-roller-hollow.md',
+        'files': ['../cards/*.md'],
+        'cards': [
+            'BOLT', 'FREEZE', 'NIP', 'QUICKSTEP',
+            'IMPALING DIVE', 'THORN LARDER', 'WATCHFUL PERCH', 'NIP AND TEAR',
+            'RAKING CUT', 'SKITTER AWAY', 'CLAY BOWL', 'CRAWL LANE',
+            'COIL LATCH', 'DARK CORRIDOR', 'DRAG', 'ROLLING THUNDER',
+            'SHED SKIN', 'STILL GROUND', 'VIBRATION LOCK',
         ],
     },
     'items': {
@@ -60,25 +58,24 @@ SETS = {
     },
     'mason': {
         'title': 'Mason Glyphs',
-        'files': [
-            '../cards/mason-glyphs.md',
+        'files': ['../cards/*.md'],
+        'cards': [
+            'BARBED GLYPH', 'CIPHER GLYPH', 'HONING GLYPH', 'MENDING GLYPH',
+            'MIRING GLYPH', 'WITHERING GLYPH',
         ],
     },
     'washed-ashore': {
         'title': 'Washed Ashore Encounter Set',
-        'files': [
-            '../cards/wrackclaw.md',
-            '../cards/hullback.md',
-            '../cards/trisect-ashfall.md',
+        'files': ['../cards/*.md'],
+        'cards': [
+            'CARRION PULL', 'PINCH', 'SIDELONG SCUTTLE', 'DRAG UNDER',
+            'HULLGUARD', 'PATIENT WAIT', 'EVEN CHURN', 'IDLE TO ENGAGE',
+            'LOW GREY HAZE',
         ],
     },
     'frost': {
         'title': "Frost's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
+        'files': ['../cards/*.md'],
         # `../characters/frost.md` — order matches that file's own
         # Red/Blue/Green grouping, not registration order in the core files.
         'cards': [
@@ -89,11 +86,7 @@ SETS = {
     },
     'steele': {
         'title': "Steele's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
+        'files': ['../cards/*.md'],
         # `../characters/steele.md`
         'cards': [
             'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
@@ -103,11 +96,7 @@ SETS = {
     },
     'oracle': {
         'title': 'Oracle Deck',
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
+        'files': ['../cards/*.md'],
         # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
         # verbatim. Fixed composition since 2026-08-03: 21 per colour, split
         # 12/6/3 along each colour's range identity.
@@ -270,15 +259,33 @@ def load_set(set_name):
     is_items = cfg.get('type') == 'items'
     parser = parse_items if is_items else parse_cards
 
+    import glob as _glob
+    paths = []
+    for pat in cfg['files']:
+        paths += sorted(_glob.glob(pat)) if '*' in pat else [pat]
+
     seen = set()
     by_name = {}
     all_cards = []
-    for f in cfg['files']:
+    for f in paths:
         for card in parser(f):
             if card['name'] not in seen:
                 seen.add(card['name'])
                 all_cards.append(card)
                 by_name[card['name']] = card
+
+    # Membership by bucket — the colour sets live in `cards/buckets/` now that
+    # `cards/` is one file per card and no longer groups by set.
+    if 'buckets' in cfg:
+        want = []
+        for b in cfg['buckets']:
+            with open(f'../cards/buckets/{b}.md', encoding='utf-8') as bf:
+                want += re.findall(r'^- \[(.+?)\]\(', bf.read(), re.M)
+        missing = [n for n in want if n not in by_name]
+        if missing:
+            raise SystemExit(f"generate-cards.py: bucket card(s) not found for set "
+                             f"'{set_name}': {', '.join(missing)}")
+        return [by_name[n] for n in want]
 
     # Optional explicit whitelist (e.g. a specific character's deck) — filters
     # and reorders to match the list exactly, instead of every card in `files`.

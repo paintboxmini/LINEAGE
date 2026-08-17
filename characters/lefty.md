@@ -2,7 +2,7 @@
 
 *Doesn't flinch, doesn't retreat, doesn't need two hands to hold the line.*
 
-**Cards:** `cards/lefty.md`
+**Cards:** `cards/haul.md`, `cards/heave.md`, `cards/hold-fast.md`, `cards/iron-anchor.md`
 
 *Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's the reason a fight the party can't win yet doesn't have to be won, late campaign he's the one enemies learn to target first and still can't move. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands him more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
@@ -33,7 +33,7 @@ Built to make a fight happen where he wants it, not where it started. HEAVE thro
 
 ## Deck
 
-**Signature cards:** `cards/lefty.md` — unique to Lefty, not transferable.
+**Signature cards:** `cards/haul.md`, `cards/heave.md`, `cards/hold-fast.md`, `cards/iron-anchor.md` — unique to Lefty, not transferable.
 
 **Core cards (2 Blue / 3 Red / 4 Green):**
 

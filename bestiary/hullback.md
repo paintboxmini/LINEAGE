@@ -1,6 +1,6 @@
 # Hullback
 
-**Cards:** `cards/hullback.md`
+**Cards:** `cards/drag-under.md`, `cards/hullguard.md`, `cards/patient-wait.md`
 
 *Solitary field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`). One per stretch of coast; a GM running a second one anywhere nearby should have a reason.*
 
@@ -11,7 +11,7 @@
 
 **Deck (6 — 1 Blue / 4 Red / 1 Green):** PATIENT WAIT *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE *(red)* · DRAG UNDER *(green)*
 
-**Bespoke — deck size does not equal total stats.** The formula baseline for Mind 3/Body 7/Soul 3 would be a 13-card deck; this one is fixed at 6, Drew's explicit call. Signature cards stay HULLGUARD, PATIENT WAIT, DRAG UNDER (`cards/hullback.md`); core fill is STRIKE, ENDURE, BRACE (R) — the same six cards this creature ran before its second stat bump, just backing bigger numbers now. It hits harder and survives longer, but doesn't get more tools for it — a smaller, more predictable hand than its own stat line would normally buy.
+**Bespoke — deck size does not equal total stats.** The formula baseline for Mind 3/Body 7/Soul 3 would be a 13-card deck; this one is fixed at 6, Drew's explicit call. Signature cards stay HULLGUARD, PATIENT WAIT, DRAG UNDER (`cards/patient-wait.md`); core fill is STRIKE, ENDURE, BRACE (R) — the same six cards this creature ran before its second stat bump, just backing bigger numbers now. It hits harder and survives longer, but doesn't get more tools for it — a smaller, more predictable hand than its own stat line would normally buy.
 
 ---
 

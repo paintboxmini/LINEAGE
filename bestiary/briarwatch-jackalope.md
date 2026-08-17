@@ -2,7 +2,7 @@
 
 *General field encounter — anywhere in Briarwatch's farmland (ruins, hedgerows, fencelines) the GM wants a light teaching fight for positioning and initiative. No longer tied to the Watchtower Ruins as a scripted dungeon entrance — that's now `quests/hollow-below-briarwatch.md`, Surface Layer, Borrower Sentries guarding the well shaft.*
 
-**Cards:** `cards/briarwatch-jackalope.md`
+**Cards:** `cards/bolt.md`, `cards/freeze.md`, `cards/nip.md`, `cards/quickstep.md`
 
 **Mind 1 / Body 1 / Soul 3 — HP 7**
 **Creature Threat Rating:** 5

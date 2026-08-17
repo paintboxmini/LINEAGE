@@ -2,7 +2,7 @@
 
 *Small flightless forager, Turnroot Weald undergrowth. Famous — among the handful of people who've ever actually caught one — for flesh that tastes and tears like fruit, not meat. Not a threat. A skill problem.*
 
-**Cards:** `cards/kiwi-bird.md`
+**Cards:** `cards/peck.md`, `cards/rustle-and-gone.md`, `cards/still-as-litter.md`, `cards/underbrush-dash.md`
 
 **Mind 1 / Body 1 / Soul 2 — HP 6**
 **Creature Threat Rating:** 4

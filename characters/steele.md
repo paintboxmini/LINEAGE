@@ -29,7 +29,7 @@ Steele grew up in an orphanage in the Fog Basin. It burned. He was inside when i
 - MIRROR STEP
 - RENEWAL
 
-All core cards — `cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`.
+All core cards — `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`.
 
 ---
 

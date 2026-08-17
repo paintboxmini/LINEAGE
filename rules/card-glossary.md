@@ -178,7 +178,7 @@ It costs you the draw and the hand slot for one turn, then cycles back through y
 Removal: story dependent. Exiling it destroys it (see Exile).
 *"Something of the Weald is in you now. It is patient about it."*
 
-*Source: the Root Heart's GRAFT. See `cards/root-heart-weald.md`.*
+*Source: the Root Heart's GRAFT. See `cards/graft.md`.*
 
 ---
 

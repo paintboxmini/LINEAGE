@@ -2,7 +2,7 @@
 
 *Katana and current. He strikes twice before you finish flinching from the first.*
 
-**Cards:** `cards/greed.md`
+**Cards:** `cards/lightning-dash.md`, `cards/thunderbolt-strike.md`, `cards/thunderclap.md`, `cards/volt.md`
 
 *Stat block and deck are a starting point. Scale to match where he enters the story — early campaign he's a hot-headed rival or a reckless ally, late campaign he's someone who's finally learned to time the storm instead of just throwing it. Adjust Body (sets HP) and total stats (sets card count) freely. Mind is worth more than it looks when you scale it: it sets hand size 1:1 (`rules/card-glossary.md`, Stat Change), so raising it hands him more options every turn, not just a bigger number on the sheet — scale it deliberately, not as a free knob alongside the other two.*
 
@@ -37,7 +37,7 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 
 ## Deck
 
-**Signature cards:** `cards/greed.md` — unique to Greed, not transferable.
+**Signature cards:** `cards/lightning-dash.md`, `cards/thunderbolt-strike.md`, `cards/thunderclap.md`, `cards/volt.md` — unique to Greed, not transferable.
 
 **Core cards (4 Blue / 1 Red / 3 Green):**
 
