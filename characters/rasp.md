@@ -37,7 +37,7 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 **Signature cards:** `cards/rasp.md` — unique to Rasp, not transferable.
 
-**Core cards (4 Blue / 2 Red / 3 Green):**
+**Non-signature cards (4 Blue / 2 Red / 3 Green):**
 
 *Blue — Mind*
 - STILLNESS — Defender discards 1 at random; Defensive: Attacker discards 1 at random
@@ -51,5 +51,5 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 *Green — Soul*
 - SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
-- WITHER — Target loses 1 Body this combat; Defensive: Target loses 1 Body this combat
+- WITHER — Target loses 1 Body this combat; Defensive: Target loses 1 Body this combat *(`cards/stat-adjusters.md` — no longer a core-set card as of 2026-08-17)*
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
