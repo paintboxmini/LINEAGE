@@ -25,4 +25,3 @@ It doesn't attack immediately. It fogs first. Watches the party react. Learns wh
 It's reading them.
 
 Then it picks the most isolated target and moves.
-

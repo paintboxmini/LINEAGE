@@ -9,7 +9,6 @@ Initiative: 1d6 + 3
 ## Contents
 
 - [mechanics](mechanics.md)
-- [cards used in combat](cards-used-in-combat.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
 - [relationship with pell](relationship-with-pell.md)

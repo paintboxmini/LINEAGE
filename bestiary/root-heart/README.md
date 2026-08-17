@@ -11,8 +11,6 @@
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [origin](origin.md)
-- [post defeat](post-defeat.md)
 - [read aloud description](read-aloud-description.md)
-- [retaliation phase](retaliation-phase.md)
 - [what it is](what-it-is.md)
 

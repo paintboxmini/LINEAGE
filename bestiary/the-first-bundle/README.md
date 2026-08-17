@@ -9,7 +9,6 @@
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [unfolding](unfolding.md)
 
 ## Related Documents
 

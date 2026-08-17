@@ -1,4 +1,8 @@
-# Death Ball Sponge — Hazard Mechanics
+# Death Ball Sponge — Mechanics
+
+---
+
+## Hazard Mechanics
 
 **Spotting:** DC 13 Mind/Reason to recognize a colony before entering it. Lighting in The Trench is dim and bioluminescent — sponges blend with the pale floor. On a failed check, the party walks into it.
 
@@ -9,4 +13,3 @@
 - **Work it loose:** DC 12 Body/Senses check on your turn, or spend a full action to detach carefully. No damage on success.
 
 **Colony:** Dense clusters of 4–8 sponges across a patch of floor. Moving through a colony without a successful spot check requires a DC 11 Body/Senses check per character or trigger a sponge.
-

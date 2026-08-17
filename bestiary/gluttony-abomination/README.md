@@ -10,5 +10,6 @@
 - [gm notes](gm-notes.md)
 - [origin](origin.md)
 - [profile](profile.md)
-- [the artwork](the-artwork.md)
 - [tremors](tremors.md)
+
+---
