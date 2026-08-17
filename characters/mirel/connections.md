@@ -5,4 +5,3 @@
 - Connected to the Mason lodge hidden in the Glasslight cliffs — she knows the entrance
 - **Sebastian** (`characters/sebastian/README.md`) — the Mason who found her at the seams and gave her the chisel
 
----

@@ -12,5 +12,3 @@
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
 
----
-

@@ -9,4 +9,3 @@ Pulleys fail → Steve is down too long → Pip forms on the way up → Steve be
 
 The ripples are emergent. They depend on what the party adds. Don't pre-write the resolution.
 
----

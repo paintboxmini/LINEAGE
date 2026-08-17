@@ -37,4 +37,3 @@ If the party moves — uses a positional card, changes Frontline/Backline — th
 
 **Do not run.** The Borrowers know this. Players will learn it.
 
----

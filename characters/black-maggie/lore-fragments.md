@@ -20,9 +20,6 @@ Younger children don't know what "curling things" means. Older children suspect.
 > *But nothing comes back from where she belongs.*
 
 ---
-
----
-
 ## Haunted-Place Rumours
 
 Each of these belongs to a different location. None of them reference the others. None of them mention a name.
@@ -55,9 +52,6 @@ What the locals believe: debt. Or shame. Something the family was hiding.
 What's true: completed site. The house was not empty when Maggie used it. The family did not leave voluntarily.
 
 ---
-
----
-
 ---
 
 **Timing:** the rhyme should appear early — heard in passing, a child in a village square, a mother hushing kids at a tavern. It registers as local color.
@@ -68,4 +62,3 @@ What's true: completed site. The house was not empty when Maggie used it. The fa
 
 **When the party connects them:** they'll realize the sites are spread over a wide area and a long timeline. That's when the scale of Maggie's work becomes visible.
 
----

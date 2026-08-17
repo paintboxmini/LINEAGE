@@ -8,4 +8,3 @@ Work is constant and communal: digging, tending the fungal mats, curing cave rod
 
 They don't fight for territory or pride. They fight because the Stonecoils don't negotiate and the tunnels don't stop needing to be dug. A Borrower's ideal outcome to almost anything is the version where nobody had to fight at all — not principle, just experience: fighting costs tunnels, and tunnels are the one thing they can't dig fast enough to replace.
 
----

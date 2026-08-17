@@ -21,5 +21,3 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 - [profile](profile.md)
 - [the goal](the-goal.md)
 
----
-

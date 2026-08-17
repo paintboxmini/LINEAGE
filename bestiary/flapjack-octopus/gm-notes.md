@@ -6,4 +6,3 @@ Detection collapses the strategy. A party making active Reason checks removes mo
 
 Ink Cloud is the reset button. Use it when the party has it pinned — it wipes the board and lets it re-enter stealth.
 
----

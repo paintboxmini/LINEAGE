@@ -4,4 +4,3 @@ Rootstalkers used to pass a forest family without interest — pruning answers a
 
 Older stories, and anyone who left the Weald years ago, won't know this. Anyone who's been under canopy this season will. See `characters/aege/README.md` (GM Secret) for what's behind it — this file only states what changed, not why.
 
----

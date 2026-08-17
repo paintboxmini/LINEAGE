@@ -8,5 +8,3 @@
 
 - `places/canille.md` — the village, the masks, the cubs generally, the Founding Hall, the Old One's House
 
----
-

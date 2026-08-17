@@ -19,5 +19,3 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 - `bestiary/tithe-engine/README.md`
 - `bestiary/ashgrazer/README.md`
 
----
-

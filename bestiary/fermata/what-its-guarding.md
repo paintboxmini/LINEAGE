@@ -6,4 +6,3 @@ Fermata's note is the push-back. One sustained, continuous, unbroken sound, loud
 
 Whether this was Fermata's job before it became this, or the reason it became this in the first place, is not written down here. Same register as Aege's fate, the Root Heart's cycle before it had a named cause. A GM who wants the answer can build one. The silence doesn't volunteer it.
 
----

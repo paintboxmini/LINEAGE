@@ -4,4 +4,3 @@ Deep in the Weald, a cluster of old trees with heavily grooved bark hosts a perm
 
 This is a named hazard site, not a combat encounter. Parties scouting the gallery carefully (DC 13 Mind/Reason) can identify the nests before disturbing them. Parties moving quickly or distracted by the forest customs will not.
 
----

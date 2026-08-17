@@ -6,4 +6,3 @@
 
 Same character both times. Not a coincidence, not a retcon — she goes home either way; the party just crosses her path at a different point in that same trip.
 
----

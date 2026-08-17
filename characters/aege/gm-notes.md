@@ -18,4 +18,3 @@ Her own reason for going home — her family, the letter — is separate and ful
 
 Aege's return is not a rescue mission she will ask the party to join. It is why she was on the road. If the party's path through the Weald crosses her people's ground, that is a meeting the forest allowed — and she may already be there.
 
----

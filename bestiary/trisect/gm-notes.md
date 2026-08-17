@@ -8,4 +8,3 @@ Piston Drive hitting all Frontline targets simultaneously is the primary danger.
 
 **Sequence note:** if run after the Tithe Engine, the Exhaust cards seeded there are already in play. Fuel Seed compounds that debt.
 
----

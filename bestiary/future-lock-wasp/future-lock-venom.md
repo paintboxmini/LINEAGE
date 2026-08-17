@@ -8,4 +8,3 @@ The venom interrupts what a body was about to do next.
 
 Outside a fight the same venom makes the hands slow and the next action arrive a half-beat late — enough that a navigation check or a careful harvest can fail for no obvious reason. The mechanical weight is in combat; the fiction is continuous.
 
----

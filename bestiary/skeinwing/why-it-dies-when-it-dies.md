@@ -4,4 +4,3 @@ It does not die because it is weak. Up where it lives, nothing touches it — no
 
 The Tollbird (`bestiary/tollbird/README.md`) doesn't hunt these. It hunts the fence line, the road, the low and the slow and the small. A Skeinwing in the larder isn't a kill. It's a mistake that happened to end near a fence.
 
----

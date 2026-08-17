@@ -10,6 +10,3 @@ Cob is not angry. Anger would be a position. This is something more open than th
 
 **At the waterfront, without the mask:** different. Quieter. Sits near the water for long stretches. Occasionally looks back toward the village with an expression nobody from town has seen.
 
----
-
----

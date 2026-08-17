@@ -29,4 +29,3 @@ Soul + d4. Every mouth on that side of the body opens at once. Hits all Frontlin
 **Swallow** *(on a Collapsed target)*
 The Abomination begins consuming a Collapsed character where they lie. At the start of its next turn, if that character is still Collapsed and still in its position, they take 6 unpreventable damage. Allies have one turn to heal them, stand them up, or drag them clear.
 
----

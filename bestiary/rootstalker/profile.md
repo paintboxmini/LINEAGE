@@ -8,4 +8,3 @@ The Rootstalker severs whatever part of the player violated the forest's etiquet
 
 If the party later finds a tree with a human hand growing from it like a flower — still twitching — that's their missing piece.
 
----

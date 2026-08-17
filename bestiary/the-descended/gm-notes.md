@@ -8,4 +8,3 @@ The Descended range upward from the deep into the lower prison levels. They stop
 
 During active combat they will not cross back through the fissure in pursuit of fleeing characters. A Collapsed character on the near side of the fissure is a different matter — they will cross for that.
 
----

@@ -4,4 +4,3 @@ Unknown. They predate the ruins. They may predate the civilization that built th
 
 No current taxonomy applies. Scholars who have examined them cannot agree on whether they are animal, fungal, or something that predates the distinction.
 
----

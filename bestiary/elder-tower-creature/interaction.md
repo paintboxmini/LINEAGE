@@ -11,4 +11,3 @@ A tube emerges approximately once per minute from each active pore. It extends f
 **Climbing:**
 The surface is slick. DC 14 Body to ascend (standard tree is DC 10). Higher pores produce more tubes — up to 3 harvestable per successful check near the crown. Falls from the upper section carry real risk.
 
----

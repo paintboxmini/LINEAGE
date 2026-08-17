@@ -6,4 +6,3 @@ In Appalachian folk tradition these are haints: the dead who don't know they're 
 
 Echoes are harmless. But they are a signal. Where Echoes are, Fogcallers are not far behind. The basin sends the memory before it sends the predator.
 
----

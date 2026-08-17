@@ -20,4 +20,3 @@ One Hullback, Frontline, usually found holding ground near the rock outcroppings
 | Forced repositioning at range | DRAG UNDER works exactly like Wrackclaw's CARRION PULL, but from a creature that's otherwise built to be fought head-on, not kited |
 | Real risk, real reward | This is the first fight in the campaign explicitly built to be worth skipping — not every encounter needs fighting to be correctly played |
 
----

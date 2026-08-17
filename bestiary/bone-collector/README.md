@@ -14,5 +14,3 @@
 - [setting](setting.md)
 - [treasure](treasure.md)
 
----
-

@@ -18,4 +18,3 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Hook:** Soft scraping sounds move deeper in the web-maze. Something large, moving between silk highways.
 
----

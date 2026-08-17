@@ -12,4 +12,3 @@
 
 **Retreat:** Minotaurs do not pursue the party to the center. They do not exit the labyrinth. If the party reaches the entrance arch and passes through, the Minotaurs stop at the threshold.
 
----

@@ -24,4 +24,3 @@ Her core picks lean the same direction — control and information over damage (
 
 *Green — Soul* — [READ](../cards/read.md), [FLOW](../cards/flow.md), [INSTINCT](../cards/instinct.md), [DELAY](../cards/delay.md), [SHADE AWAY](../cards/shade-away.md)
 
----

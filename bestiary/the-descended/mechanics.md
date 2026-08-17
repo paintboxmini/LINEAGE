@@ -32,4 +32,3 @@ The Descended are not hunters in the conventional sense. Their drive is to bring
 **Pack Surge** *(passive — 3+ Descended present)*
 When three or more Descended are active in the encounter, each gains +1 to attack rolls. They coordinate without speaking.
 
----

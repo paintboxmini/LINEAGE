@@ -23,9 +23,6 @@ At distance and in poor light a Briarbound reads as a person standing in a field
 The family's grappler, and deliberately the least mysterious of the four: it is a plant that catches things, and everything it does follows from that. Rooted and Thorns are the whole kit. It cannot chase anyone, which is the answer to it, and it does not need to chase anyone standing where it can reach.
 
 ---
-
----
-
 ## Haywight
 
 Bundles of sheared fenwool tied upright with twine. At dusk they are simply not where you left them.
@@ -42,9 +39,6 @@ A Haywight does not move while anyone is looking at it. Out of combat this is ab
 The lightest of the family and the one that teaches the party to track a battlefield rather than a target. A party that keeps pressure on it never sees the passive fire. A party that ignores it finds it somewhere inconvenient.
 
 ---
-
----
-
 ## Mossking
 
 Old field guardians, built up over generations by every farmer who worked a given stretch. They were never alive. Then enough people believed they were protecting the fields.
@@ -66,9 +60,6 @@ The heaviest of the four and the only one that will genuinely kill a party — a
 A GM should make the fence line visible early. The lesson lands when the party works out that the fight was optional after they have already started it.
 
 ---
-
----
-
 ## Tatterman
 
 Two poles tied into a cross, wrapped in old work clothes. No face. When one turns toward you, there was no turning.
@@ -84,4 +75,3 @@ A Tatterman changes position freely between turns, at no action cost, as often a
 **Tactical Purpose**
 Free repositioning means it is never out of range and never caught out of position, which sounds worse than it plays — Body 1 and eleven HP mean it dies to almost anything that connects. The problem is connecting on the turn you planned to.
 
----

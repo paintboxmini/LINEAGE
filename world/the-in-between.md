@@ -16,4 +16,3 @@ Terrain does not transition; it bleeds. Salt flat blends with old-growth forest.
 
 One thing in the In-Between is not displaced, not passing through, and not explained: a pale figure that attends. See `world/the-scar.md`.
 
----

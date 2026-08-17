@@ -6,4 +6,3 @@ The Masons didn't sanction the combat application. Orin left before they could f
 
 Now operates independently. Available for hire. Particular about clients in ways Orin does not fully explain. Has a reputation for finishing what they're paid for and not discussing it afterward. The mineral compound used for glyph-drawing is the same compound used in Mason stabilization work — same motion, same material. Different intent.
 
----

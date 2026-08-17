@@ -6,4 +6,3 @@
 
 *Navigation without triggering them is possible. Moving slowly, avoiding the fissure crossing while they are alert, distributing weight carefully — the players who understand what they're dealing with will approach it differently than the players who don't.*
 
----

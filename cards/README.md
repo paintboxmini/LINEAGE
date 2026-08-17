@@ -14,7 +14,6 @@ Before 2026-08-17 cards were grouped into ~50 files, each with a header. Those h
 
 **Two of these were general rules living in card files and have been relocated to `rules/combat.md`** — the **Object** mechanic (which said outright it isn't Mason-specific) and the colourless resolution rule. Their entries below point at the new homes rather than duplicating the text.
 
-
 ### aege.md
 
 # Aege — Cards
@@ -88,7 +87,6 @@ Signature cards for the Chitterer. See `bestiary/chitterer/README.md`. Tagged as
 ### colorless.md
 
 **Relocated 2026-08-17 to `rules/combat.md`, Attack Resolution → Colorless cards** — it was a general rule living in a card file, not a set note.
-
 
 ### corrupted-bather.md
 
@@ -195,7 +193,6 @@ Signature cards for Masaharu. See `characters/masaharu/README.md`.
 ### mason-glyphs.md
 
 **Relocated 2026-08-17 to `rules/combat.md`, Objects** — it was a general rule living in a card file, not a set note.
-
 
 ### minotaur-coil.md
 

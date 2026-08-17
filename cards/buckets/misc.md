@@ -6,7 +6,6 @@
 
 ## Homed here (0)
 
-
 ## Also indexed here (1)
 
 - [STEAL](../steal.md)  *(home: self-inflicted cost)*

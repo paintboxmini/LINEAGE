@@ -13,9 +13,6 @@ When it moves: *Tick. Tick. Tick.* Like an enormous clock correcting itself.
 It doesn't roar. It calibrates.
 
 ---
-
----
-
 ## Behavior
 
 It is not a guardian. It is not a villain. It is a correction mechanism.
@@ -28,4 +25,3 @@ It moves through maintenance shafts. Climbs internal scaffolding. Emerges where 
 
 Not a damage sponge. A positioning predator.
 
----

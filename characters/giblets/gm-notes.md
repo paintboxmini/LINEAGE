@@ -10,4 +10,3 @@ The supply chain keeping his stall stocked bypasses the Tideward Compact's ledge
 
 Three Regency hard lines violated: too addictive, too destructive, council gets no cut.
 
----

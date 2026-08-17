@@ -8,4 +8,3 @@ Vescal still trusts the process. He stopped trusting that patience alone creates
 
 He and Orin found each other on a job neither of them could finish alone. They haven't separated since.
 
----

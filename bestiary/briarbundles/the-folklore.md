@@ -8,4 +8,3 @@ Nobody has noticed that every spring, the First Bundle is a little larger.
 
 *(How that happens is not established anywhere and should not be answered at the table. See `bestiary/the-first-bundle/README.md`.)*
 
----

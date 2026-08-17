@@ -8,6 +8,3 @@ Came from Glasslight Reach. Avoided the capital on the way down. Doesn't like th
 
 He doesn't ask where the party is going. Plans are not something he finds interesting. He leaves toward Vulture's Nest in the morning.
 
----
-
----

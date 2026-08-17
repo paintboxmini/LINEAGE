@@ -6,4 +6,3 @@ The paralysis state is not instant death — it's a rescue problem. A character 
 
 The creative counters (fire, water) are the intended release valve. Reward parties that recognize the pattern and adapt. Punish parties that panic and keep swinging at the swarm.
 
----

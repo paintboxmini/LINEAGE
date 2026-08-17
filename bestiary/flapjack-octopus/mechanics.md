@@ -16,4 +16,3 @@ While Flattened, gains **Armour 1** from natural compression of its body — fla
 **Flattened**
 The Octopus presses flat against the nearest surface. Gaining Flatten costs an action — played as a card. While Flattened, Floor Mimic and Self-Tenderizing are both active. Flatten ends when the Octopus plays Surge, Enveloping Press, Depth Slam, or Ink Burst.
 
----

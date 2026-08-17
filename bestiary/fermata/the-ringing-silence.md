@@ -6,4 +6,3 @@ See `places/the-silent-choir.md` for the full table-level rule (players communic
 
 **Passive — Undivided Attention.** The first Red card played against Fermata each combat resolves normally, but Fermata gains Evade in response, active until its own next turn. Loud, direct force gets noticed and answered. It does not get punished twice — this triggers once per combat, not on every Red card after the first.
 
----

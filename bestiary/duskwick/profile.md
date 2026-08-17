@@ -11,9 +11,6 @@ It has no eyes. Where eyes would sit on anything else, there's just more of the 
 The tail is the longest part of it, whip-thin, and it's the last thing that stops moving when the rest of the body goes still.
 
 ---
-
----
-
 ## Behavior
 
 It hunts alone and it hunts patient — no den, no territory it bothers defending, just wherever the light happens to be thin enough that hour. It doesn't chase. It waits at the threshold and lets something walk into the exact moment its own eyes stop being reliable.
@@ -24,4 +21,3 @@ It doesn't press an opening it doesn't need. A clean shot gets a bite and a retr
 
 **Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`), just innate rather than granted by a played card. HALF-SEEN's own Defensive Bonus grants Evade rather than Obscure for exactly this reason — the passive already covers Obscure unconditionally, so the card earns its slot doing something the passive doesn't.
 
----

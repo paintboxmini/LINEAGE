@@ -4,5 +4,3 @@ Time, Memory, and Change - the most foundational of the Seats.
 
 Resonant items are not explicitly sentient. Please remove anything that says that they are.
 
-
-

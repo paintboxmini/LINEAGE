@@ -27,5 +27,3 @@ When she approaches the party she's looking for someone outside the community. N
 - [gm notes](gm-notes.md)
 - [open](open.md)
 
----
-

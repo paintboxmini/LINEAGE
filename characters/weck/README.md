@@ -17,5 +17,3 @@
 - `rules/card-glossary.md` — WOUND; short-rest removal is the honest version of what he sells
 - `world/tonal-bible.md` — warmth containing something wrong
 
----
-

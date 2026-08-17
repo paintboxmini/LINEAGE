@@ -11,5 +11,3 @@
 - [notes](notes.md)
 - [profile](profile.md)
 
----
-

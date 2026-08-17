@@ -11,9 +11,6 @@ GREEN — SOUL, Backline. They circle, they redirect, they punish anyone who tri
 **Behavior:** Drones punish players who tunnel the engine. They coordinate — if the engine wins a reveal, drones gain Resist.
 
 ---
-
----
-
 ## The Tithe Engine
 
 RED — BODY dominant. It is the Frontline. There is no going around it.
@@ -26,4 +23,3 @@ RED — BODY dominant. It is the Frontline. There is no going around it.
 
 **Reveal:** The engine isn't attacking them. It's harvesting. There's a cage on its undercarriage. Someone is already inside. Alive. Deciding whether to fight changes the math on that life.
 
----

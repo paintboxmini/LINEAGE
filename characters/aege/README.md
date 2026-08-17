@@ -29,5 +29,3 @@
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md` — signature cards
 
----
-

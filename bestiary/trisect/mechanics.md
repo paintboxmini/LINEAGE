@@ -31,13 +31,9 @@ Mind + d6. Hot gas vented directly at a target. Target gains Weak on their next 
 Soul + d4. Superheated particulate seeded into a target's lungs. Seeds 1 Exhaust card into target's deck.
 
 ---
-
----
-
 ## Backfire
 
 The first time each color successfully hits an engine, the impact triggers a pressure release. The attacker takes 2 damage from the blowback.
 
 Progress costs something. Ashfall doesn't offer clean options.
 
----

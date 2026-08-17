@@ -26,4 +26,3 @@ It's reading them.
 
 Then it picks the most isolated target and moves.
 
----

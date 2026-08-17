@@ -21,4 +21,3 @@ The party needs to burst it before it adapts, or accept that it finishes the fig
 **Amalgam Body**
 Each Tardigrade reflects its dietary history. The baseline form starts combat with no pre-existing absorptions. Variants begin with absorptions already active — listed under their entry. Track absorbed colors on a separate note during play.
 
----

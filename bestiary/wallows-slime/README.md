@@ -15,5 +15,3 @@
 - `places/capital/the-wallows.md` — the deep, and what the slimes are an expression of
 - `bestiary/the-patient-host/README.md` — the other creature that is only dangerous if you insist
 
----
-

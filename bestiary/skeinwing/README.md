@@ -18,5 +18,3 @@
 - `bestiary/tollbird/README.md` — the creature whose larder it ends up in, and why that isn't a hunt
 - `places/turnroot-weald.md` — the wider sky it's native to, listed under Flora & Fauna
 
----
-

@@ -16,5 +16,3 @@
 - `characters/mortis/README.md`, `characters/kess/README.md` — the other two people this same courtesy extends to
 - `places/apnea.md` — a commission that sits differently with her, unexplained
 
----
-

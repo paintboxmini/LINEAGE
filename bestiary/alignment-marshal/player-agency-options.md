@@ -6,4 +6,3 @@
 
 **Reprogram it:** It becomes escort instead of pursuer. Or turns the shot slightly — the last degree of arc the players couldn't reach alone.
 
----

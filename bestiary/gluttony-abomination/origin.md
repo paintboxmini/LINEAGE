@@ -6,4 +6,3 @@ Beneath that: an inability to resist physical indulgence, particularly food. Sec
 
 He is now the thing he preached against.
 
----

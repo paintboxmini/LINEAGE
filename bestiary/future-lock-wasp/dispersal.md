@@ -8,4 +8,3 @@ The swarm has counters. Characters who find them don't get stung again.
 
 **Leaving the area:** Move out of the nest zone. One final save on the round of departure, then the swarm returns to the nest.
 
----

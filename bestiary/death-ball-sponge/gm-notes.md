@@ -6,4 +6,3 @@ The Flapjack Octopus has learned the safe paths between colonies. It lies flat a
 
 A column of colonized floor between the party and an exit is a meaningful obstacle. Getting through without triggering anything requires time or luck.
 
----

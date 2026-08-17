@@ -8,6 +8,3 @@ His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-na
 
 Something real grew between him and Mirel (`characters/mirel/README.md`) in the space between Kaine's arc ending and his own bathing — nobody arranged it, nobody in the Promise noticed, and it never got the chance to become anything either of them would have had time to name properly. Everyone else who'd met him already had him filed as forgettable. She was the one person who didn't.
 
----
-
----

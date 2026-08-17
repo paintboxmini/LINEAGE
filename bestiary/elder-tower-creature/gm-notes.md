@@ -6,4 +6,3 @@ The towers have been growing here longer than anyone can establish. Some have ru
 
 The pulse sound from the towers is regular. Its absence is the tell. If the towers go silent, something else has entered The Trench.
 
----

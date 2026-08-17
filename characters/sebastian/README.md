@@ -23,5 +23,3 @@ He works out of a lodge at the Soft Edge (`places/glasslight-reach.md`) — one 
 - `places/the-coil.md` — the failure he still visits
 - `places/glasslight-reach.md` — the Soft Edge, where his lodge stands
 
----
-

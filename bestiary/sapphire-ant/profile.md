@@ -6,4 +6,3 @@ Standard colonial structure — queen, workers, soldiers. The soldiers have a mo
 
 Colonies are not aggressive unless the mound is directly disturbed. Foragers are easily collected away from the colony.
 
----

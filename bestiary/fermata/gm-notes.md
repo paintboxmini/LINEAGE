@@ -4,4 +4,3 @@
 
 **Defeating it is not obviously the right choice**, and the file doesn't resolve which way is better. Ending Fermata's watch might simply free something that never asked to be doing this forever. It might also let the Blade's own nature start spreading again with nothing left to hold the line. Both are true possibilities and neither is confirmed — leave it open at the table the way the Root Heart's own aftermath was left open before its cause was ever named.
 
----

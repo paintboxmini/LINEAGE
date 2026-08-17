@@ -27,11 +27,7 @@ The stat block exists for the same reason the Skeinwing's does — completeness,
 **Creature Threat Rating 7 measures how hard it is to get away from, not how hard it hits.** Soul 4 is the whole creature: it feels where you are, and it is patient. Body 2 and no damage output are the rest of it.
 
 ---
-
----
-
 ## Extraction
 
 Getting someone out is always possible and never contested. How it is done is the whole of it, and it is a Seat Influence question, not a combat one — see `quests/the-wallows-descent.md`, the Slime Gallery.
 
----

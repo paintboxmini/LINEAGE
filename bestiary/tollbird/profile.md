@@ -11,13 +11,9 @@ It perches with its head tilted at whatever moves below it, tail ticking at a sl
 It impales its prey on whatever the environment gives it — thorn, wire, a broken branch, its own beak and claws if nothing sharper is fixed nearby — anything that will hold a body still while it dries. The result is always a larder: prey cached in place, returned to, added to over time. What that looks like depends entirely on where it's hunting — see `places/briarwatch.md`, The Larder Fence, for one worked example.
 
 ---
-
----
-
 ## Behavior
 
 It is not aggressive. It is *punctual.* It watches its stretch of territory, picks its moment, dives once, and returns to its post with something that used to be someone's. It does not fight things head-on because nothing that hunts by rhythm needs to.
 
 Run 2 for a party of 4, cycles staggered — while one perches, the other dives.
 
----

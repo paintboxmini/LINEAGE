@@ -8,4 +8,3 @@ What happened instead is that generations of people stood in the same fields and
 
 They are not hostile. They guard. The trouble is that a thing built to keep the harvest in and the wild out has no way to tell a traveller from either.
 
----

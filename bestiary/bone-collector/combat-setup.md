@@ -19,4 +19,3 @@ The Bone Collector hides within one pile each cycle of the initiative wheel.
 | Wrong guess | — | Attack hits corpse pile, no damage |
 | Correct guess | — | Normal attack resolution |
 
----

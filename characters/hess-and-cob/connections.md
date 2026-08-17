@@ -8,4 +8,3 @@ That she changes her route to avoid passing close. That she watches from the win
 
 Cob has not approached her. Not yet.
 
----

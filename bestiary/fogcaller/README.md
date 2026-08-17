@@ -15,5 +15,3 @@ Initiative: 1d6 + 3
 - [relationship with pell](relationship-with-pell.md)
 - [the tell](the-tell.md)
 
----
-

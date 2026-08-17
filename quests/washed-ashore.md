@@ -30,7 +30,6 @@ Sections of the river turn to coral — Muted colors here, not tropical: dusty p
 
 **Hullback** (`bestiary/hullback/README.md`, CTR 17 — calibrated against the full party, not a single attacker, with a deliberately capped 9-card deck rather than the 13 its stats would normally buy) — a solitary, much older predator holding the rock outcroppings cave in the river. A real, optional risk: avoidable by giving the rocks distance, genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from — see `items/washed-ashore-items.md`.
 
-
 **The trail leads to the Roadhouse** (`places/roadhouse.md`, coordinates (0, −7)) — the nearest real waypoint, and the first place with people in it.
 
 ---

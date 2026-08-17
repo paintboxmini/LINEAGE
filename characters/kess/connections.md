@@ -5,4 +5,3 @@
 - **Moth** — a fellow bazaar regular. She finds him maddening; he finds her planning exhausting. They've reached an understanding. See `characters/moth/README.md`.
 - **The Cartographer** — her grandmother. See `places/capital/underground-bazaar.md`.
 
----

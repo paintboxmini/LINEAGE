@@ -4,4 +4,3 @@ The color difference reflects a genuine chemical divergence in the body tissue. 
 
 Senshi considers the cut the whole technique.
 
----

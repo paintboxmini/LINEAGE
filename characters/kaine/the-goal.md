@@ -10,4 +10,3 @@ A resonant item aligned with the Storm Seat — unstable, dangerous in any hands
 
 **The problem the item creates:** stopping Kaine doesn't resolve it. The party inherits something Storm Seat-aligned, with limited control over lightning and no obvious answer for what it is or where it came from. Kaine is the urgent threat. The item is the lasting one.
 
----

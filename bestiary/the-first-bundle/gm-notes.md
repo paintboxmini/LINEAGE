@@ -6,4 +6,3 @@ The Folded stage is a real window and should be played honestly — if a player 
 
 Armour 2 does not arrive until the third stage on purpose. Early damage matters more than late damage against this thing, which inverts the usual shape of a boss fight and rewards the party that committed.
 
----

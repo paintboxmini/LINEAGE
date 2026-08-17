@@ -8,4 +8,3 @@ Not an invader. Not a separate being that took up residence. The Root Heart is *
 
 This is why containing the Heart *is* the forest's own maintenance, not a symptom of something gone wrong with it. **The Heart was never a parasite.** There was never a separate Weald for it to feed on — it isn't a part living off a whole, because it *is* Turnroot as a whole, the same way any single ring still holds the entire tree. "Feeds the forest or feeds on it" (Read-Aloud Description, below) is a question that only makes sense if the two were ever separable. They aren't. **The parasite analogy belongs to unchecked growth itself, not to the thing growing** — Overgrowth is what behaves like something feeding on balance. The Heart is only where that's visible.
 
----

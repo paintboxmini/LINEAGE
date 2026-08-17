@@ -10,4 +10,3 @@ Corren waited. Then it took him the way his first bath never had — thrashing, 
 
 Kaine never went down to him. There was nothing left to go down for by the time he might have. To the congregation, Corren simply went under one day and didn't come back — sad, and genuinely shocking, since as far as anyone knew there was no reason to expect a second bath. What Kaine knows, and has told no one, not even his most devoted: he watched a man break a rule nobody breaks, try to disappear doing it, and kept the shape of the moment before disappearance as the whole point. See `characters/kaine/README.md`, Where the Method Actually Came From.
 
----

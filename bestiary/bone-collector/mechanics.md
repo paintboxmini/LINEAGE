@@ -21,4 +21,3 @@
 
 **Retreat:** Retreats at 5 HP.
 
----

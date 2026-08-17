@@ -17,4 +17,3 @@ The Host never panics, never escalates out of anger — it has none. It reads as
 
 A CTR 24 threat inside an official, guarded, Regency-maintained waypoint is the whole point: "official and guarded" was never the same promise as "safe," and the Milestone is where that gap finally gets tested against three players and however long they've got before the wheel itself starts working against them. It's built to be a genuine, extended set-piece — not a lesson encounter, a marquee one — and its kit is deliberately the heaviest Initiative Shift concentration in the game so far, because the horror here isn't a monster, it's an institution that never stopped functioning after the person who ran it should have mattered.
 
----

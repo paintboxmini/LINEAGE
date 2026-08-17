@@ -13,4 +13,3 @@
 | Ambush auto-hit is rare and real | Most encounters in this campaign start with a normal reveal; this one doesn't, and the ambush check above is why |
 | Not every fight wants full engagement | Below half HP it disengages on its own — chasing it into the canopy is a choice, not a requirement |
 
----

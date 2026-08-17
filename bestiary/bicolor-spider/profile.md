@@ -6,4 +6,3 @@ Solitary. Territorial. Females are significantly larger than males and are the h
 
 The venom is mildly toxic to small animals, negligible to humans — handling is safe with reasonable care.
 
----

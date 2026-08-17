@@ -13,4 +13,3 @@ At the start of each of its turns, the Phase-Leach gains Evade.
 **Feeds on Resonance**
 It goes for whoever is carrying or has most recently used a resonant item. Absent that, it attacks normally. It is not making a threat assessment — the choice is about what is worth eating, and a Phase-Leach will cross a whole room past an easier target to get to the thing that is lit up.
 
----

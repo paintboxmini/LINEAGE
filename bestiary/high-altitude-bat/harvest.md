@@ -7,9 +7,6 @@ Harvested at roost during daylight hours when the colony is inactive. A single t
 Senshi's supplier works the cliffs above Glasslight Reach. He does not share the contact.
 
 ---
-
----
-
 ## Culinary Note
 
 See `places/capital/gilded-tusk.md` — High-Altitude Bat Wing Crisps. Wing membranes twice-fried to a delicate crisp. Honey mead for dipping. Senshi does not understand the problem with wings.

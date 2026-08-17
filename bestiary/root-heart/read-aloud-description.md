@@ -14,4 +14,3 @@ The surrounding forest does not scream. It tightens. Leaves curl slightly at the
 
 It is unclear whether this thing feeds the forest or feeds on it.
 
----

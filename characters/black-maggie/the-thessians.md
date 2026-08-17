@@ -8,6 +8,3 @@ Originated in the Abyssal Ruins region — the ancient civilization that fell th
 
 A dying race. Fewer than one in a hundred people alive today can claim Thessian blood, and Maggie is one of the last, not the only one — she has simply never found the others. The name of her people is in a tongue almost nobody speaks anymore — she may be the only one who still knows it.
 
----
-
----

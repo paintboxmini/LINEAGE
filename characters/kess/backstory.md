@@ -6,4 +6,3 @@ Something went wrong in the deep. She traded away most of what happened — a re
 
 Her mother's echo persists in the Wallows' Echo Cavern (`places/capital/the-wallows.md`, `quests/the-wallows-descent.md`) — fragments of the rescue attempt survive there: her own voice, Giblets', something that stopped mid-sentence. The GM decides how much surfaces and when; it should say one true thing, not explain everything.
 
----

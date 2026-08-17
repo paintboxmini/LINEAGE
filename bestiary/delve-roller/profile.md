@@ -9,13 +9,9 @@ The claws don't match. Disproportionately large, jointed differently from the le
 Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vibration before the body needs to respond.
 
 ---
-
----
-
 ## Behavior
 
 Slow until it isn't. The Delve Roller doesn't pursue — it occupies. It finds a choke point and waits. Players who push through it learn the claws are there. Players who stand at range learn the antennae read them anyway.
 
 It doesn't retreat. It has nowhere better to be.
 
----

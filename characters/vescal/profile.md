@@ -6,4 +6,3 @@ Broad. Moves slowly and deliberately — the censer needs room to swing properly
 
 Speaks in the measured cadence of someone who spent years conducting ritual. In combat it sounds like official pronouncement.
 
----

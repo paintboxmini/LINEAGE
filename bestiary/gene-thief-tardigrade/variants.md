@@ -28,4 +28,3 @@ Starting absorptions: Red active (Thorns 2 already running from crab-shell integ
 
 *Suggested flavour:* iridescent sheen. Shell-like plating visible along the dorsal surface. Moves faster near water.
 
----

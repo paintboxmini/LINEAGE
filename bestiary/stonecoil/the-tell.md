@@ -9,4 +9,3 @@ Players can avoid lethal engagement by noticing:
 
 Mind checks reveal: it prefers ambush over open fight; it won't cross heavy water flow; it avoids bright open chambers; it uses the same choke point repeatedly.
 
----

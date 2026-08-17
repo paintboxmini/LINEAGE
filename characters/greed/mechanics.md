@@ -26,4 +26,3 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 
 *Green — Soul* — [PATIENCE](../cards/patience.md), [WITNESS](../cards/witness.md), [FLOW](../cards/flow.md)
 
----

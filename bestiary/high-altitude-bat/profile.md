@@ -6,4 +6,3 @@ Colonial roosting in cliff cavities. Hunts insects at dusk using echolocation. N
 
 The colony structure means harvesting a single specimen is difficult without disturbing others. Experienced collectors know which roost margins produce isolated individuals.
 
----

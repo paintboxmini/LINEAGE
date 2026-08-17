@@ -6,4 +6,3 @@ A hermit-crab shape wearing a fragment of an actual hull as its shell — planki
 
 It doesn't hunt. It doesn't need to — prey this far out is rare enough that waiting costs it nothing, and its own shell already does most of the work a chase would. When something finally gets close enough, it moves fast for something its size, drags what it catches back toward its den among the rocks, and goes back to waiting.
 
----

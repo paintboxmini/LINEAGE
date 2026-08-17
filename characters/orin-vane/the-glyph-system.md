@@ -8,4 +8,3 @@ Orin inscribes glyphs in the air with the tip of the foil — left hand traces t
 
 Players cannot tell which type has been drawn until it triggers. Attack Counters punish committing to a color. Defense Counters punish the effects of that color while letting damage through. The uncertainty is structural — avoidance and engagement are both wrong answers until the party has enough information to distinguish them.
 
----

@@ -15,4 +15,3 @@ The swarm persists for up to 3 rounds in the disturbed area. Each round spent in
 
 If the party is not in combat when stung, track the stacks and apply them at the start of the next combat (hand size reduced before the first draw of that fight). A long rest clears unspent stacks that never reached a fight.
 
----

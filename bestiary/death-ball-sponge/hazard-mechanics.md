@@ -10,4 +10,3 @@
 
 **Colony:** Dense clusters of 4–8 sponges across a patch of floor. Moving through a colony without a successful spot check requires a DC 11 Body/Senses check per character or trigger a sponge.
 
----

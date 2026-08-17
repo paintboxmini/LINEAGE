@@ -15,5 +15,3 @@ He and Mortis were partners for years, back when the work was adventuring instea
 - [connections](connections.md)
 - [gm notes](gm-notes.md)
 
----
-

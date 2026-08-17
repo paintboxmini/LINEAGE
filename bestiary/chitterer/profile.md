@@ -11,4 +11,3 @@ If attacked: they fight back, then scatter. They do not pursue.
 - Leaving the caged Chitterer trapped or harming it triggers Noise immediately, before combat begins
 - They will not enter the Silent Room
 
----

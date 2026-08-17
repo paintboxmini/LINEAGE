@@ -20,4 +20,3 @@ Not a different creature. A Duskwick that found a house with no one in it, a doo
 
 It still will not chase. It has never needed to.
 
----

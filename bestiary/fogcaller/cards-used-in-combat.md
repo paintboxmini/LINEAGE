@@ -25,4 +25,3 @@ Defensive Bonus: Move to any position.
 Range: Melee
 *"It closes distance before you realize it moved."*
 
----

@@ -22,4 +22,3 @@ One Fermata, Frontline, always. It does not pursue outside the Choir's own bound
 | Reading a tell in a fight with no sound | Every card here still resolves on sight, not sound — a lesson in what actually carries information at the table once talking it through stops being an option |
 | A fight that rewards *not* fighting | The waiting-it-out resolution is the first time a party's best move might be doing nothing at all, on purpose, for real minutes |
 
----

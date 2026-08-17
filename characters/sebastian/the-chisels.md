@@ -11,6 +11,3 @@ Sebastian's own working set carries six chisels, each individually Resonant, eac
 
 Individual names for the six aren't set — each carries its own, decided one at a time, not assigned as a matching set. See `factions/the-masons.md` for the full chisel mechanic (chalk and string mark the cut before the chisel ever touches stone — measured first, committed second).
 
----
-
----

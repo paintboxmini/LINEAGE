@@ -59,7 +59,6 @@ Use `agent-tools/card-creation.md` when creating or editing cards.
 
 Canonical card rules remain in `rules/cards.md` and `rules/card-glossary.md`; lineage/tag meaning remains in `world/lineage.md`.
 
-
 ### Bestiary and Character Entries
 
 One folder per entry. `README.md` carries the title, subtitle, a Contents list and Related Documents. `mechanics.md` carries the stat block, Creature Threat Rating, Deck line, passives, abilities, loot and combat identity — the stat block and deck stay in the same file because deck size equals total stats and per-colour counts equal the individual stats, so they are one invariant. `profile.md` carries appearance and behaviour. Anything else gets its own file.
@@ -142,7 +141,6 @@ Content
 
 What specifically exists within the game.
 People, creatures, places, items, cards, encounters, and other instantiated game content.
-
 
 ## Stat System Quick Reference
 

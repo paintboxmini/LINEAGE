@@ -6,4 +6,3 @@ Metal scraping on metal. Gradual. Unhurried.
 
 The event was a scheduled function. The schedule continues.
 
----

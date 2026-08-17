@@ -23,4 +23,3 @@ This isn't just predation — it's *curation*. The Bone Collector was building s
 | 18 | Nature | This isn't normal caterpillar behavior — something taught it to organize |
 | 20 | Insight | The patterns suggest it was building toward something larger |
 
----

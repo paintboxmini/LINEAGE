@@ -10,4 +10,3 @@ Someone hired them for whatever situation the party finds them in. That someone'
 
 See also: `characters/orin-vane/README.md`
 
----

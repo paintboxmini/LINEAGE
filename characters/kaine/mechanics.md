@@ -13,4 +13,3 @@
 
 **Passive — Volatile:** When Kaine drops below half HP, The Loop loses its targeting — arc targets are chosen randomly for the remainder of the combat.
 
----

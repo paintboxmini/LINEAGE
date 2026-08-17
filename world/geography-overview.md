@@ -38,7 +38,6 @@ Rough estimates, not confirmed the way the triangle and its edges are — placed
 
 Six segments: the three edges of the triangle above, plus a spoke from each corner in to the Capital at the center. All six are official Regency roads, maintained the same way, each with an official inn on it — a government installation, guards stationed, not a private business.
 
-
 **The three spokes (corner to center):**
 - Glasslight Reach ↔ Eclipseria
 - Turnroot Weald ↔ Eclipseria — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint

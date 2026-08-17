@@ -20,4 +20,3 @@ Keep this short. 2–3 cycles. The point is the marked decks going into Briarwat
 
 First encounter of the session. Introduces Wounds as a deck pressure system before players face anything that can exploit them. The Briar Scratcher doesn't need to threaten HP — it threatens future hands.
 
----

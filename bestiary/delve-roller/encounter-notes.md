@@ -6,4 +6,3 @@ Pairs with Stonecoils: the Roller occupies the front, the Stonecoil waits behind
 
 One Roller is an obstacle. Two is a problem.
 
----

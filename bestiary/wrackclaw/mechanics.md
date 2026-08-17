@@ -22,4 +22,3 @@ Start with 3–4 Wrackclaws, all Frontline — they don't hang back, they don't 
 | Evade | Every Wrackclaw defensive card burrows into wet sand — a defense a brand-new party has to actually fail against before they trust it's real |
 | Numbers over individual threat | Each hit is small; four of them landing in the same round is not |
 
----

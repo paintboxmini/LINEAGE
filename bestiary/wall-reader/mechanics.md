@@ -17,4 +17,3 @@ The counter is the obvious one, because it's the same counter the whole Coil has
 
 The Wall-Reader is a mirror, not a monster — its kit exists to make the Coil's own lesson mechanical instead of implied: follow the rule, hold still, don't panic. It reads as a name for what happens to someone who followed that lesson forever, not as an enemy with a grudge. A party that never breaks the rule near it can walk straight through an encounter with this creature and never draw a card.
 
----

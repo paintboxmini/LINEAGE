@@ -6,4 +6,3 @@ The Dungeon Tardigrade is the most dangerous against experienced parties — it'
 
 The Adaptation Core is visible. Players who ask what they're looking at can be told: *something that used to be other things.*
 
----

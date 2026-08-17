@@ -6,4 +6,3 @@ Large flightless hunting bird. Chest-high on a human. Feathers the exact gray of
 
 It never calls. It doesn't need to.
 
----

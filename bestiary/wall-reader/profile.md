@@ -9,9 +9,6 @@ One arm ends differently than the other. The left hand — always the left — h
 It moves without hurry, the marked hand always in contact, trailing stone at shoulder height in the same corridor the party is being asked to walk. Nothing about it suggests violence. Nothing about it suggests peace either. It is simply, completely, still doing the one thing it has been doing since before it was this.
 
 ---
-
----
-
 ## Behavior
 
 It was a person, once. Nothing in the Coil says who, or when, or how long the rule has had them — that isn't the kind of thing this place gives up, and it doesn't need to. What's left isn't tragic the way a fresh death is tragic. It's older than that. It followed the wall-rule so completely, for so long, that the following outlasted the person doing it.
@@ -22,4 +19,3 @@ Breaking the rule near it changes that instantly. It stops. Turns toward the dis
 
 If it catches you, it doesn't seem to enjoy it, and it doesn't seem to regret it either. It isn't cruel. It's just no longer capable of being anything else.
 
----

@@ -8,4 +8,3 @@ This isn't a monster that wants to kill them. It's hungry and they wandered into
 
 It was here before the road was.
 
----

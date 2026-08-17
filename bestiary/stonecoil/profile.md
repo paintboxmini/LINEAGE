@@ -6,4 +6,3 @@ Blind ambush reptilians. Several have grown large due to increased diet of Borro
 
 They hunt via vibration. They prefer narrow choke points. They are territorial but not social. They will not cross heavy water flow.
 
----

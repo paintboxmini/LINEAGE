@@ -6,4 +6,3 @@ A tremor is not enough on its own. On the turn immediately following one, a char
 
 The party needs the Abomination swinging, needs it connecting, and needs someone to stop fighting long enough to answer. A party that turtles perfectly never opens the door. A party that never breaks off to sync never opens it either.
 
----

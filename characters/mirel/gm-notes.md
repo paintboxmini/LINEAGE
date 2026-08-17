@@ -10,4 +10,3 @@ Her arc: deciding which way to go, on her own terms, without being rescued into 
 
 **She should not be saved.** She should be accompanied.
 
----

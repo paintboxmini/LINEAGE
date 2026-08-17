@@ -14,4 +14,3 @@ No checks for ordinary conversation — the Host is not hiding anything, and it 
 
 **Reading ahead to an entry that hasn't been written yet, or tearing a page out** — the one real transgression, and the Host notices it instantly; there's no check for whether it catches you, only for what you walk away with. **2d10 + Soul vs DC 13** (Read — understanding fast enough to control what you're looking at before the entry closes back over). **Success:** the player learns one true thing before it does (GM's call, tied to the scene — a real fact, not a vague omen). **Failure:** the Host applies **Locked** (`rules/card-glossary.md`) to one card in the player's hand or deck — but this one is explicitly exempt from the ordinary end-of-combat expiration. It doesn't lift when the fight does. Whatever unlocks it has to come from the same kind of source that locked it — which here means the ledger itself, not a short rest or the fight simply ending.
 
----

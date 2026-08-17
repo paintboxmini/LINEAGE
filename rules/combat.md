@@ -155,7 +155,6 @@ This file holds cards that don't carry a fixed color or stat on their face — c
 
 Membership: `cards/buckets/colorless.md`.
 
-
 ---
 
 ## Damage Pipeline

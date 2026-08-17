@@ -22,4 +22,3 @@ Equipped: Attacks made with Blue cards deal +1 damage.
 *Artifact — Annotated Mason cartography, partially redacted*
 Equipped: At the start of combat, Scry 1 of your own deck.
 
----

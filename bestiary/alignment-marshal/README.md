@@ -13,5 +13,3 @@ For encounter structure and reveal phases, see `quests/war-engine.md`.
 - [post firing](post-firing.md)
 - [profile](profile.md)
 
----
-

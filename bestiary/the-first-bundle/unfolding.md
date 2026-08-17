@@ -13,4 +13,3 @@ It unfolds one stage each time its HP crosses a quarter of its maximum. Each sta
 
 The first row is the whole encounter compressed. A party that recognizes what the heap is and commits everything before it moves can end this in a cycle. A party that waits to be sure is fighting something else by then.
 
----

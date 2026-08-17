@@ -6,4 +6,3 @@ Insectivorous. Active at dawn and dusk. The call is a soft, rapid trill that car
 
 Not toxic. Some visually similar species are — Senshi is aware of this.
 
----

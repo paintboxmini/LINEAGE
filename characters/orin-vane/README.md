@@ -12,5 +12,3 @@
 - [profile](profile.md)
 - [the glyph system](the-glyph-system.md)
 
----
-

@@ -25,4 +25,3 @@ The Tollbird makes turn order visible — its whole threat and its whole weaknes
 
 At Creature Threat Rating 9 — even with the party, not below it — a Tollbird is a genuine fight, not a teaching mob. Run it with that weight.
 
----

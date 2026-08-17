@@ -24,4 +24,3 @@ Never a fight in the normal sense. A DC 13 Body/Senses check to spot one before 
 
 A clean catch (no PECK ever played, nothing else in the fight) yields the whole bird intact — what Senshi actually wants. A messier catch still yields something, just not enough for the dish he has in mind.
 
----

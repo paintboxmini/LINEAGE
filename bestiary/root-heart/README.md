@@ -16,5 +16,3 @@
 - [retaliation phase](retaliation-phase.md)
 - [what it is](what-it-is.md)
 
----
-

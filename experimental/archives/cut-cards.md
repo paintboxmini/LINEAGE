@@ -271,7 +271,6 @@ Defensive Bonus: All enemies in Frontline gain Blind until start of your next tu
 Range: Melee
 *Cut: Mass Blind defensive bonus duplicates FOGBURST. Hand-count condition also complex to track for a small creature deck.*
 
-
 ---
 
 ## Alignment Marshal — dropped in the canon revision (salvaged from experimental/alignment-marshal-cards.md before cleanup)

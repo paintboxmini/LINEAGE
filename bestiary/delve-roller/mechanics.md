@@ -32,4 +32,3 @@ ROLLOUT (promoted to core, `cards/rollout.md`) — the roll itself: +4 damage if
 
 PATIENCE OF STONE (promoted to core, `cards/patience-of-stone.md`) — Anchored heal while stationary, Deadly on defense. Fits the balled-up Roller that stays planted and recovers. Stonecoil shares the identical card, same core reference now.
 
----

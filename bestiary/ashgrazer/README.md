@@ -12,5 +12,3 @@
 - [oracle seed](oracle-seed.md)
 - [trigger](trigger.md)
 
----
-

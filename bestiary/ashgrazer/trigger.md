@@ -8,4 +8,3 @@ A player purges an Exhaust card. The vibration of spent heat hitting the ground.
 
 **Reveal:** They're not aggressive. They're hungry. Players who go still — skip their action, make no attack — are ignored for that turn. The Pale Hunger doesn't want a fight. It wants the dying.
 
----

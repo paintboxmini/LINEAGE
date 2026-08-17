@@ -10,4 +10,3 @@ She is going herself. No one sent her. No one had to.
 
 She doesn't volunteer more of it than that. What the hunting actually looks like, how bad the ground has gotten, what the Heart's mood means for the people still under canopy — those are details she spends only if a party earns them, or if they meet her again past Briarwatch.
 
----

@@ -13,5 +13,3 @@ Whether this is reproduction, predation, or something the classification system 
 - [harvest](harvest.md)
 - [profile](profile.md)
 
----
-

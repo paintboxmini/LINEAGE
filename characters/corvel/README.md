@@ -16,5 +16,3 @@
 - `places/pneum.md` — the barge, the quarantine, the thread that leads there
 - `world/the-unheld.md` — why the water itself is harmless by the time it arrives
 
----
-

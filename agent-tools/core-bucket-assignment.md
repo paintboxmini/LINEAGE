@@ -31,9 +31,6 @@ Buckets must exist before the core sets can mean "Oracle candidates only," and b
 
 A bucket names **what a card is for**, never the keyword it uses. Drew: *"discard by itself doesn't tell us the useful part about what a card is doing."*
 
-
-
-
 ## The second pass — the other 198
 
 The first pass covered only the three core sets (143 of 341). The remaining 198 — every signature set, location pool and the stat adjusters — were classified on 2026-08-17 using the same Special Rule → Effect → Defensive Bonus ordering.
@@ -43,7 +40,6 @@ The first pass covered only the three core sets (143 of 341). The remaining 198 
 **A precision fix worth keeping.** Position words appear as *conditions* as often as effects, and the first run misread them: CAMOUFLAGE STRIKE (*"If you are in the Backline, gain Evade"*) filed as position rather than defense, CENSER SWING (*"If target is Frontline, deal +2 damage"*) as position rather than damage amp. Stripping `if …,` clauses before classifying — the condition is context, the remainder is what the card *does* — moved position from 69 homes down to 43 and corrected roughly twenty cards. The same fix over-tightened once and lost THE ROOM LEANS IN (*"Pull all enemies to the Frontline"*), hand-restored.
 
 **Hand-assigned in this pass:** SIGNATURE THRUST → position (it manipulates glyphs, which are Objects and position-anchored), BECOMING → card flow (permanent hand replacement), FOLLOW-UP → buff removal (it copies another card wholesale), ANOTHER JOINT → control (Staggered is its unconditional effect; the Rooted is conditional escalation), THE ROOM LEANS IN → position.
-
 
 ## Counts
 

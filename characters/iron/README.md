@@ -20,5 +20,3 @@
 - `bestiary/duskwick/README.md` — his companion, and the large one at the homestead
 - `bestiary/fenwool/README.md` — the livestock the farms keep losing
 
----
-

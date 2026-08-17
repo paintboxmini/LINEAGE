@@ -6,4 +6,3 @@ A Reason check (DC 13) reads the cadence. On a success, that character's next at
 
 Body 1 is the answer to everything else about it. Eleven HP, Armour nothing. Once a hit lands, it does not take many.
 
----

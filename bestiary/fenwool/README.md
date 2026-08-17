@@ -16,5 +16,3 @@ Domesticated grazer, kept across Briarwatch's fields. Not a reptile, not a preda
 - `places/vultures-nest.md` — Bartho's ledger
 - `quests/the-man-who-buys-wounds.md` — Weck buys the culls
 
----
-

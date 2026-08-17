@@ -15,9 +15,6 @@ The grin that goes with it is too large for the sentence.
 **Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and backs out. No Current bath under Kaine. Steve is never his success story — his later, separate decision to take the ordinary first bath has nothing to do with Kaine at all (`characters/steve-and-pip/README.md`).
 
 ---
-
----
-
 ---
 
 ## Related Documents
