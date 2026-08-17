@@ -4,13 +4,14 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (25)
+## Homed here (26)
 
 - [AID](../aid.md)
 - [BARBED GLYPH](../barbed-glyph.md)
 - [CARRIED WOUND](../carried-wound.md)
 - [CIPHER GLYPH](../cipher-glyph.md)
 - [CLIFF SONG](../cliff-song.md)
+- [CONDUCT](../conduct.md)  *(also: damage amp, card flow)*
 - [CUTS BOTH WAYS](../cuts-both-ways.md)  *(also: damage amp)*
 - [EMBER WARD](../ember-ward.md)  *(also: defense)*
 - [ENTWINED](../entwined.md)

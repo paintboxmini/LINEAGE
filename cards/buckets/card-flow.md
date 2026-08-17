@@ -4,7 +4,7 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (27)
+## Homed here (28)
 
 - [ACCEPTANCE](../acceptance.md)  *(also: initiative)*
 - [ALIGN](../align.md)
@@ -24,6 +24,7 @@
 - [MAZE SENSE](../maze-sense.md)
 - [PROFILE](../profile.md)
 - [REGISTERED](../registered.md)  *(also: defense)*
+- [SILENCE THE THREAD](../silence-the-thread.md)
 - [STEADY HAND](../steady-hand.md)
 - [STILL GROUND](../still-ground.md)
 - [STUDY](../study.md)
@@ -34,10 +35,11 @@
 - [VIBRATION LOCK](../vibration-lock.md)
 - [WHERE IT'S GATHERING](../where-its-gathering.md)
 
-## Also indexed here (14)
+## Also indexed here (15)
 
 - [BURN BRIGHT](../burn-bright.md)  *(home: payoff)*
 - [CALIBRATION PULSE](../calibration-pulse.md)  *(home: control)*
+- [CONDUCT](../conduct.md)  *(home: team support)*
 - [FOREST MEMORY](../forest-memory.md)  *(home: sustain)*
 - [FORGET](../forget.md)  *(home: hand denial)*
 - [FRACTURE](../fracture.md)  *(home: position)*

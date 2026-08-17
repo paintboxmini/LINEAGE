@@ -4,7 +4,7 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (11)
+## Homed here (12)
 
 - [ASH EXHAUST](../ash-exhaust.md)  *(also: defense)*
 - [CRIMSON WARD](../crimson-ward.md)
@@ -13,6 +13,7 @@
 - [HALF-SEEN](../half-seen.md)  *(also: defense)*
 - [PRECISE REMOVAL](../precise-removal.md)  *(also: card flow)*
 - [READ](../read.md)
+- [SCRIPTURE OF RESONANCE](../scripture-of-resonance.md)  *(also: sustain)*
 - [SILK THREAD MEASURE](../silk-thread-measure.md)  *(also: card flow)*
 - [STILLNESS](../stillness.md)
 - [UNNAME](../unname.md)

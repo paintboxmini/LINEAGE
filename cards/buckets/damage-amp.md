@@ -53,11 +53,12 @@
 - [VENT CYCLE](../vent-cycle.md)  *(also: defense)*
 - [WIDE SWING](../wide-swing.md)
 
-## Also indexed here (16)
+## Also indexed here (17)
 
 - [ANOTHER JOINT](../another-joint.md)  *(home: control)*
 - [BLOOD IN THE GAP](../blood-in-the-gap.md)  *(home: sustain)*
 - [CLOSE THE TANGLE](../close-the-tangle.md)  *(home: position)*
+- [CONDUCT](../conduct.md)  *(home: team support)*
 - [CUTS BOTH WAYS](../cuts-both-ways.md)  *(home: team support)*
 - [DEFLECT](../deflect.md)  *(home: defense)*
 - [MAWS](../maws.md)  *(home: sustain)*

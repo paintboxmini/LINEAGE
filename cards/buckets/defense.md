@@ -48,7 +48,7 @@
 - [UNTOUCHED](../untouched.md)
 - [VERDANT WARD](../verdant-ward.md)
 
-## Also indexed here (69)
+## Also indexed here (72)
 
 - [AFTERIMAGE](../afterimage.md)  *(home: control)*
 - [ALWAYS ONE MORE](../always-one-more.md)  *(home: sustain)*
@@ -62,6 +62,7 @@
 - [CERTAIN STRIKE](../certain-strike.md)  *(home: control)*
 - [COIL DROP](../coil-drop.md)  *(home: position)*
 - [COLD READ](../cold-read.md)  *(home: card flow)*
+- [CONTROLLED RETURN](../controlled-return.md)  *(home: position)*
 - [CORRECTION LOAD](../correction-load.md)  *(home: status inserters)*
 - [CUT OFF](../cut-off.md)  *(home: control)*
 - [DARK CORRIDOR](../dark-corridor.md)  *(home: control)*
@@ -105,6 +106,8 @@
 - [SNUFF](../snuff.md)  *(home: control)*
 - [STEP ASIDE](../step-aside.md)  *(home: position)*
 - [STILL POINT](../still-point.md)  *(home: position)*
+- [STILL WATER](../still-water.md)  *(home: control)*
+- [STORM DEBT](../storm-debt.md)  *(home: control)*
 - [SYNCHRONY](../synchrony.md)  *(home: team support)*
 - [SYSTEM PURGE](../system-purge.md)  *(home: position)*
 - [TABLE STAKES](../table-stakes.md)  *(home: self-inflicted cost)*

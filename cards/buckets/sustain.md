@@ -21,7 +21,7 @@
 - [UNDERSTANDING](../understanding.md)
 - [WEATHERED](../weathered.md)  *(also: defense)*
 
-## Also indexed here (8)
+## Also indexed here (9)
 
 - [ASHBORN FLARE](../ashborn-flare.md)  *(home: damage amp)*
 - [DRAG UNDER](../drag-under.md)  *(home: position)*
@@ -31,3 +31,4 @@
 - [PACK LOGIC](../pack-logic.md)  *(home: team support)*
 - [PARADOX](../paradox.md)  *(home: rps manipulation)*
 - [PRESS THE WOUND](../press-the-wound.md)  *(home: payoff)*
+- [SCRIPTURE OF RESONANCE](../scripture-of-resonance.md)  *(home: hand denial)*

@@ -40,6 +40,15 @@ VALID_TAGS = {
     'ASHFALL', 'BASIN', 'BRIARWATCH', 'COIL', 'ENGINE', 'HOLLOW', 'MASON',
     'MILESTONE', 'UNHELD', 'WEALD', 'WALLOWS', 'GLASSLIGHT', 'ABYSS',
     'SHORELINE',
+    # PROMISE is provisional. It arrived on 2026-08-17 with six cards that had
+    # been living inside characters/kaine/ and characters/mirel/ rather than in
+    # cards/, so no tag check had ever seen them. `world/lineage.md` says a tag
+    # records an origin *location* — the People of Promise are a tradition
+    # spanning congregations, and their home location is GLASSLIGHT. Whether
+    # tradition-tags are legitimate is Drew's call; logged in
+    # `unresolved-concerns.md`. Registered rather than silently retagged so the
+    # cards keep saying what they were written to say.
+    'PROMISE',
 }
 
 NAME_RE = r'^\*\*([A-Z][A-Z0-9\'’ \-,!?&]+)\*\*\s*$'

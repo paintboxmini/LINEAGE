@@ -4,7 +4,7 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (73)
+## Homed here (74)
 
 - [BIND](../bind.md)
 - [BOLT](../bolt.md)
@@ -16,6 +16,7 @@
 - [CHARGE](../charge.md)
 - [CLOSE THE TANGLE](../close-the-tangle.md)  *(also: damage amp)*
 - [COIL DROP](../coil-drop.md)  *(also: defense)*
+- [CONTROLLED RETURN](../controlled-return.md)  *(also: defense)*
 - [CRAWL LANE](../crawl-lane.md)
 - [DART](../dart.md)
 - [DEAD END](../dead-end.md)

@@ -4,7 +4,7 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (49)
+## Homed here (51)
 
 - [AFTERIMAGE](../afterimage.md)  *(also: defense)*
 - [ANOTHER JOINT](../another-joint.md)  *(also: damage amp, defense, position)*
@@ -42,6 +42,8 @@
 - [SHIELD BASH](../shield-bash.md)  *(also: defense)*
 - [SLOW HANDS](../slow-hands.md)
 - [SNUFF](../snuff.md)  *(also: defense)*
+- [STILL WATER](../still-water.md)  *(also: defense)*
+- [STORM DEBT](../storm-debt.md)  *(also: defense)*
 - [SURGE](../surge.md)
 - [TARGETING LOCK](../targeting-lock.md)  *(also: card flow)*
 - [TELL](../tell.md)

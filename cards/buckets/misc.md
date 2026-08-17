@@ -6,7 +6,6 @@
 
 ## Homed here (0)
 
-*(none yet)*
 
 ## Also indexed here (1)
 
