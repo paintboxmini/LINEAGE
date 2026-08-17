@@ -24,6 +24,7 @@ import re
 import subprocess
 import sys
 import glob
+import collections
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -107,12 +108,17 @@ def check_card_format(canon):
 def parse_decks():
     """Yield (label, path, declared_total, {color: [names]}) for every deck line.
 
+    Covers characters/ as well as bestiary/ — until 2026-08-17 this globbed
+    bestiary only, so 12 character stat blocks and 2 character decks had never
+    been validated at all. Found by the coverage assertion below, not by anyone
+    noticing.
+
     Globs every file in each entry folder, not just mechanics.md: multi-variant
     entries (Ashgrazer, Briarbundles, the Tithe Engine) keep each variant's stat
     block and deck in that variant's own section file. Narrowing this to
     mechanics.md on 2026-08-17 silently dropped 6 of 37 decks from validation
     while still reporting PASS."""
-    for path in sorted(glob.glob('bestiary/*/*.md')):
+    for path in _stat_files():
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(r'\*\*Deck \((\d+) — (\d+) Blue / (\d+) Red / (\d+) Green\):\*\*(.+)',
                              text):
@@ -129,7 +135,7 @@ def check_decks(canon):
     n = 0
     for path, total, want, got in parse_decks():
         n += 1
-        f = path.split('/')[-1]
+        f = '/'.join(path.split('/')[-2:])
         if sum(want.values()) != total:
             bad.append(f'{f}: declared total {total} != {want}')
         for col, k in want.items():
@@ -140,6 +146,12 @@ def check_decks(canon):
                     bad.append(f'{f}: {name!r} is not a card in cards/')
                 elif canon[name]['color'] and canon[name]['color'] != colors[col]:
                     bad.append(f"{f}: {name} is {canon[name]['color']}, listed under {col}")
+    on_disk = sum(len(re.findall(r'\*\*Deck \(\d+ — ', open(p, encoding='utf-8').read()))
+                  for p in _stat_files())
+    if n != on_disk:
+        bad.append(f'COVERAGE: {on_disk} deck lines exist across entry files, this check read {n}. '
+                   'A deck line the check never parsed reports identical to a clean one — '
+                   'that is how 6 of 37 went silently unvalidated on 2026-08-17.')
     return report('bestiary decks (size, per-color counts, card resolution)', bad,
                   f'{n} decks')
 
@@ -147,14 +159,14 @@ def check_decks(canon):
 def check_stat_blocks():
     bad = []
     n = 0
-    for path in sorted(glob.glob('bestiary/*/*.md')):
+    for path in _stat_files():
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(
                 r'\*\*Mind (\d+) / Body (\d+) / Soul (\d+) — HP (\d+)\*\*(.*)', text):
             mind, body, soul, hp = (int(x) for x in m.groups()[:4])
             trailing = m.group(5)
             n += 1
-            f = path.split('/')[-1]
+            f = '/'.join(path.split('/')[-2:])
             formula = 3 * body + soul + mind
             if hp != formula and 'bespoke' not in trailing.lower():
                 bad.append(f'{f}: HP {hp} != formula {formula} and not marked bespoke')
@@ -162,6 +174,10 @@ def check_stat_blocks():
             ctr = re.search(r'\*\*Creature Threat Rating:\*\* (\d+)', after)
             if ctr and int(ctr.group(1)) != mind + body + soul:
                 bad.append(f'{f}: CTR {ctr.group(1)} != total stats {mind + body + soul}')
+    on_disk = sum(len(re.findall(r'\*\*Mind \d+ / Body \d+ / Soul \d+ — HP \d+\*\*', open(p, encoding='utf-8').read()))
+                  for p in _stat_files())
+    if n != on_disk:
+        bad.append(f'COVERAGE: {on_disk} stat blocks exist across entry files, this check read {n}.')
     return report('stat blocks (HP formula unless bespoke, CTR = total stats)', bad,
                   f'{n} blocks')
 
@@ -435,6 +451,72 @@ def check_hp_formula():
                   f'{len(seen)} files checked')
 
 
+ENTRY_GLOBS = ('bestiary/*/*.md', 'characters/*/*.md')
+
+# Deck and stat-block validation covers bestiary/ only. characters/ is a
+# DECLARED exclusion, not an accidental one — widening the checks to it on
+# 2026-08-17 surfaced 11 real pre-existing discrepancies (9 character HP values
+# that predate the 2026-08-06 three-stat HP formula, and Orin Vane's prose-style
+# deck line the parser cannot read). Those are canon decisions for Drew, not
+# something a checker should silently rewrite. Logged in
+# `unresolved-concerns.md`; widen this the moment they're resolved.
+STAT_SCOPE = ('bestiary/*/*.md',)
+
+
+def _entry_files():
+    out = []
+    for g in ENTRY_GLOBS:
+        out += sorted(glob.glob(g))
+    return out
+
+
+def _stat_files():
+    out = []
+    for g in STAT_SCOPE:
+        out += sorted(glob.glob(g))
+    return out
+
+
+def check_entry_structure():
+    """Structural invariants for bestiary/ and characters/ entry folders.
+
+    Every bug the 2026-08-17 restructures produced was invisible to the checks
+    that existed: content duplicated into two files, a Contents list pointing at
+    files that no longer existed, a heading appearing twice because two scripted
+    passes each handled part of the same fold. None of those break a
+    cross-reference or a deck, so nothing caught them until someone happened to
+    look. These are cheap and always on.
+    """
+    bad = []
+    for d in sorted(glob.glob('bestiary/*/') + glob.glob('characters/*/')):
+        readme = d + 'README.md'
+        if not os.path.exists(readme):
+            bad.append(f'{d}: no README.md')
+            continue
+        s = open(readme, encoding='utf-8').read()
+        if s.count('\n## Contents\n') > 1:
+            bad.append(f'{readme}: {s.count(chr(10) + "## Contents" + chr(10))} Contents blocks')
+        listed = {m.group(1) for m in re.finditer(r'^- \[[^\]]+\]\(([^)]+)\)$', s, re.M)}
+        actual = {os.path.basename(p) for p in glob.glob(d + '*.md')} - {'README.md'}
+        if listed:
+            for f in sorted(listed - actual):
+                bad.append(f'{readme}: Contents lists {f}, which does not exist')
+            for f in sorted(actual - listed):
+                bad.append(f'{readme}: {f} exists but is not in Contents')
+    for path in _entry_files():
+        text = open(path, encoding='utf-8').read()
+        heads = [m.group(1).strip() for m in re.finditer(r'^## (.+)$', text, re.M)]
+        for h, n in collections.Counter(heads).items():
+            if n > 1:
+                bad.append(f'{path}: heading "{h}" appears {n} times')
+        # a bold label immediately preceded by backticked paths is the signature
+        # of a botched reference rewrite (2026-08-17 produced 44 of them)
+        if re.search(r'^`[^`]+\.md`(?:, `[^`]+\.md`)*\*\*', text, re.M):
+            bad.append(f'{path}: malformed label — reference list ran into a bold heading')
+    return report('entry folders (Contents accurate, no duplicated sections)', bad,
+                  f'{len(glob.glob("bestiary/*/") + glob.glob("characters/*/"))} entries')
+
+
 def check_oracle_sync():
     """The Oracle pool is mirrored in two places that were never derived from it
     — `combatsimulations/content.py`'s ORACLE_DECK and `printing/generate-cards.py`'s
@@ -523,6 +605,7 @@ def main():
     check_restated_stat_blocks()
     check_distances()
     check_hp_formula()
+    check_entry_structure()
     check_oracle_sync()
     if quick:
         print('SKIP  print artifacts current (--quick)')
