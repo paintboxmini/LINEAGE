@@ -11,7 +11,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
+- [profile](profile.md)
 - [the den](the-den.md)
 
 ## Related Documents

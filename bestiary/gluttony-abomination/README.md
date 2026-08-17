@@ -7,8 +7,8 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [origin](origin.md)
-- [appearance](appearance.md)
-- [tremors](tremors.md)
-- [the artwork](the-artwork.md)
 - [gm notes](gm-notes.md)
+- [origin](origin.md)
+- [profile](profile.md)
+- [the artwork](the-artwork.md)
+- [tremors](tremors.md)

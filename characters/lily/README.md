@@ -7,9 +7,9 @@
 ## Contents
 
 - [appearance presence](appearance-presence.md)
-- [what she does](what-she-does.md)
 - [at the tavern](at-the-tavern.md)
 - [connections](connections.md)
+- [what she does](what-she-does.md)
 
 ## Related Documents
 

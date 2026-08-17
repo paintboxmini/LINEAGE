@@ -9,11 +9,11 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [voice](voice.md)
-- [what she does](what-she-does.md)
 - [backstory](backstory.md)
 - [gm secret](gm-secret.md)
+- [profile](profile.md)
+- [voice](voice.md)
+- [what she does](what-she-does.md)
 - [where she appears](where-she-appears.md)
 
 ## Related Documents

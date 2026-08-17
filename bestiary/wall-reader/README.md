@@ -9,8 +9,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
+- [profile](profile.md)
 
 ## Related Documents
 

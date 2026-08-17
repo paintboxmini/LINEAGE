@@ -10,6 +10,6 @@ The surface is covered in fine hooks and pores that weep a contact enzyme. The e
 
 ## Contents
 
-- [hazard mechanics](hazard-mechanics.md)
 - [gm notes](gm-notes.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [hazard mechanics](hazard-mechanics.md)

@@ -8,7 +8,6 @@ Found in forest margins and cave entrances where there is both vegetation and ro
 
 ## Contents
 
+- [harvest](harvest.md)
+- [profile](profile.md)
 - [the two halves](the-two-halves.md)
-- [behavior](behavior.md)
-- [harvesting](harvesting.md)
-- [culinary note](culinary-note.md)

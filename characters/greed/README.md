@@ -9,6 +9,5 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
 - [beyond the campaign](beyond-the-campaign.md)
+- [profile](profile.md)

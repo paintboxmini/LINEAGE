@@ -1,9 +1,5 @@
-# Future Lock Wasp — Harvest — Larvae
+# Future Lock Wasp — Harvest
 
-The larvae inside the nests are Senshi's ingredient. Harvesting requires removing the larvae without triggering the swarm.
+## Culinary Note
 
-**DC 14 Body/Senses** to extract larvae from an active nest without disturbing the adults. On failure, the swarm lifts — proceed to swarm mechanics. On success, 1d4 larvae harvested per nest.
-
-A dispersed swarm (fire or water used) leaves the nest temporarily unguarded — larvae can be harvested without a check for 1 minute.
-
----
+See `places/capital/gilded-tusk.md` — Future-Lock Fricassee. Larvae, carefully prepared. The metamorphosis venom is neutralized in cooking. Improperly prepared, it prevents magical transformation for 24 hours. Senshi's is properly done.

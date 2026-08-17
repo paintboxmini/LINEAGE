@@ -7,10 +7,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [unfolding](unfolding.md)
-- [gm secret](gm-secret.md)
 - [gm notes](gm-notes.md)
+- [gm secret](gm-secret.md)
+- [profile](profile.md)
+- [unfolding](unfolding.md)
 
 ## Related Documents
 

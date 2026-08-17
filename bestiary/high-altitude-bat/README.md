@@ -8,6 +8,5 @@ The thin air produces a distinctive physiology: less fat, denser muscle fiber, m
 
 ## Contents
 
-- [behavior](behavior.md)
-- [harvesting](harvesting.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [profile](profile.md)

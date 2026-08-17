@@ -7,4 +7,4 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
+- [profile](profile.md)

@@ -6,9 +6,8 @@ Domesticated grazer, kept across Briarwatch's fields. Not a reptile, not a preda
 
 ## Contents
 
-- [appearance](appearance.md)
-- [behavior](behavior.md)
 - [livestock loss](livestock-loss.md)
+- [profile](profile.md)
 
 ## Related Documents
 

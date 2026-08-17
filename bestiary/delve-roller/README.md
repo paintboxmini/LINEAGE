@@ -2,16 +2,15 @@
 
 *Cave floor encounter. Armored digger. Punishes reckless attackers.*
 
-*(no signature cards — see the note below)***Cards:** *(none)*
+**Cards:** no signature set. Both of this creature's original cards were promoted to core and it runs those instead — `cards/rollout.md` and `cards/patience-of-stone.md`. ROLLOUT gained a real mechanical addition on promotion: it returns to hand instead of discard after use, unless its own reveal loses the RPS exchange. Full deck in `mechanics.md`.
 
 ---
 
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
 - [encounter notes](encounter-notes.md)
+- [profile](profile.md)
 
 ## Related Documents
 

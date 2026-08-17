@@ -6,9 +6,9 @@
 
 ## Contents
 
-- [whats known](whats-known.md)
-- [whats deliberately not known](whats-deliberately-not-known.md)
 - [connections](connections.md)
+- [whats deliberately not known](whats-deliberately-not-known.md)
+- [whats known](whats-known.md)
 
 ## Related Documents
 

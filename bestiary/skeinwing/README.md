@@ -7,11 +7,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
+- [profile](profile.md)
 - [the invariant](the-invariant.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
-- [why it dies when it dies](why-it-dies-when-it-dies.md)
 - [the larder once](the-larder-once.md)
+- [why it dies when it dies](why-it-dies-when-it-dies.md)
 
 ## Related Documents
 

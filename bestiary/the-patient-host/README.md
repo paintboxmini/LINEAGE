@@ -9,11 +9,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
-- [when it fights](when-it-fights.md)
 - [gm secret](gm-secret.md)
+- [profile](profile.md)
 - [talking to the host](talking-to-the-host.md)
+- [when it fights](when-it-fights.md)
 
 ## Related Documents
 

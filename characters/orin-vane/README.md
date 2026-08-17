@@ -7,9 +7,9 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
 - [backstory](backstory.md)
-- [personality](personality.md)
-- [items](items.md)
-- [the glyph system](the-glyph-system.md)
 - [gm notes](gm-notes.md)
+- [items](items.md)
+- [personality](personality.md)
+- [profile](profile.md)
+- [the glyph system](the-glyph-system.md)

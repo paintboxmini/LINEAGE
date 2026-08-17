@@ -13,6 +13,6 @@ They do not attack. They respond to touch, proximity, and vibration by retractin
 ## Contents
 
 - [classification](classification.md)
-- [interaction](interaction.md)
 - [gm notes](gm-notes.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [interaction](interaction.md)

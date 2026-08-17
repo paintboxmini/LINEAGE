@@ -10,6 +10,5 @@ The tail regrows over several weeks.
 
 ## Contents
 
-- [behavior](behavior.md)
-- [harvesting](harvesting.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [profile](profile.md)

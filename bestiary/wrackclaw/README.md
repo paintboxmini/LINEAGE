@@ -9,8 +9,8 @@ Deck size = total stats. 3 signature + 1 core to fill: PINCH, SIDELONG SCUTTLE, 
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
 - [gm notes](gm-notes.md)
+- [profile](profile.md)
 
 ## Related Documents
 

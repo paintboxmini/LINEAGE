@@ -12,5 +12,5 @@ He and Mortis were partners for years, back when the work was adventuring instea
 
 ## Contents
 
-- [the plan](the-plan.md)
 - [connections](connections.md)
+- [the plan](the-plan.md)

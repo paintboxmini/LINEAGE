@@ -8,6 +8,5 @@ The colony's diet is the notable feature: foraging in mineral-dense substrate pr
 
 ## Contents
 
-- [behavior](behavior.md)
-- [harvesting](harvesting.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [profile](profile.md)

@@ -8,11 +8,11 @@
 
 ## Contents
 
-- [appearance](appearance.md)
-- [what he does](what-he-does.md)
-- [voice](voice.md)
-- [the ledger](the-ledger.md)
 - [gm secret](gm-secret.md)
+- [profile](profile.md)
+- [the ledger](the-ledger.md)
+- [voice](voice.md)
+- [what he does](what-he-does.md)
 - [where he appears](where-he-appears.md)
 
 ## Related Documents

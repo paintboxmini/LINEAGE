@@ -11,6 +11,6 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
-- [the tell](the-tell.md)
+- [profile](profile.md)
 - [the greater stonecoil](the-greater-stonecoil.md)
+- [the tell](the-tell.md)

@@ -9,8 +9,7 @@ For encounter structure and reveal phases, see `quests/war-engine.md`.
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
-- [behavior](behavior.md)
 - [it never truly dies](it-never-truly-dies.md)
 - [player agency options](player-agency-options.md)
 - [post firing](post-firing.md)
+- [profile](profile.md)

@@ -7,7 +7,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
-- [culture](culture.md)
 - [combat cards](combat-cards.md)
+- [culture](culture.md)
 - [notes](notes.md)
+- [profile](profile.md)

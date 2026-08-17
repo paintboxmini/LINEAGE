@@ -16,4 +16,4 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)

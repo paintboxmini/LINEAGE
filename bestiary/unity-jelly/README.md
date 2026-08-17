@@ -10,7 +10,6 @@ Whether this is reproduction, predation, or something the classification system 
 
 ## Contents
 
-- [behavior](behavior.md)
-- [harvesting](harvesting.md)
+- [harvest](harvest.md)
 - [legal status](legal-status.md)
-- [culinary note](culinary-note.md)
+- [profile](profile.md)

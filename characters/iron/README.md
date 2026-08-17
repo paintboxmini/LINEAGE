@@ -9,11 +9,11 @@
 ## Contents
 
 - [appearance manner](appearance-manner.md)
-- [what he owns](what-he-owns.md)
-- [what he knows](what-he-knows.md)
-- [the neighbours field](the-neighbours-field.md)
-- [the duskwick](the-duskwick.md)
 - [running him](running-him.md)
+- [the duskwick](the-duskwick.md)
+- [the neighbours field](the-neighbours-field.md)
+- [what he knows](what-he-knows.md)
+- [what he owns](what-he-owns.md)
 
 ## Related Documents
 

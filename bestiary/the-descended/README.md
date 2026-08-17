@@ -19,6 +19,6 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 ## Contents
 
 - [mechanics](mechanics.md)
-- [trigger behavior](trigger-behavior.md)
 - [gm notes](gm-notes.md)
 - [lore note](lore-note.md)
+- [trigger behavior](trigger-behavior.md)

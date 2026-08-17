@@ -7,6 +7,6 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
 - [forest people as prey](forest-people-as-prey.md)
 - [playstyle](playstyle.md)
+- [profile](profile.md)

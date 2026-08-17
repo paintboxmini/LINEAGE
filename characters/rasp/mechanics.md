@@ -8,7 +8,9 @@
 
 Built to be ignored until it's too late for that to matter. OUT OF REACH is the whole thesis: while she holds the Backline, she isn't a valid target at all — not evaded, not resisted, not there. That ends the instant she acts.
 
-Mostly chip damage, dealt through poisons that each land as an ordinary keyword rather than a mechanic of her own. SLOW HANDS is the one that rewards holding the Backline — it doubles into Weak 3 only from there, the same position OUT OF REACH's passive depends on, so her safety and her best turn want the same thing. THIN SKIN sharpens against a target already carrying something, and TWO CUTS and SMALL DOSES are what put that something there. Most fights, she's chipping, not closing.
+She is a poisoner, and every card in her kit is a different poison. SLOW HANDS is the numbing one — the arm still works, it just costs something to lift — and it only reaches its full Weak 3 from the Backline, the same position OUT OF REACH's passive depends on, so her safety and her best turn want the same thing. THIN SKIN is the thinning one, and it bites harder on someone already carrying a dose. TWO CUTS is the daggers: neither wound deep, both slow to close. SMALL DOSES is the one nobody notices on the day.
+
+None of it is a bespoke mechanic — each poison lands as an ordinary keyword, and the poison lives in the fiction and the naming rather than in new rules. Most fights, she's chipping, not closing.
 
 ---
 

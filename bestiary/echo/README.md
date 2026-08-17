@@ -8,6 +8,6 @@ Not a threat. Not quite.
 
 ## Contents
 
-- [description](description.md)
-- [what they are](what-they-are.md)
 - [notes](notes.md)
+- [profile](profile.md)
+- [what they are](what-they-are.md)

@@ -12,10 +12,10 @@ He works out of a lodge at the Soft Edge (`places/glasslight-reach.md`) — one 
 
 ## Contents
 
-- [the chisels](the-chisels.md)
 - [mirel](mirel.md)
-- [the coil](the-coil.md)
 - [open](open.md)
+- [the chisels](the-chisels.md)
+- [the coil](the-coil.md)
 
 ## Related Documents
 

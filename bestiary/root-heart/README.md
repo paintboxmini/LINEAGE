@@ -9,10 +9,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [what it is](what-it-is.md)
+- [gm notes](gm-notes.md)
 - [origin](origin.md)
+- [post defeat](post-defeat.md)
 - [read aloud description](read-aloud-description.md)
 - [retaliation phase](retaliation-phase.md)
+- [what it is](what-it-is.md)
 - [win condition](win-condition.md)
-- [gm notes](gm-notes.md)
-- [post defeat](post-defeat.md)

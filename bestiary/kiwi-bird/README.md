@@ -7,8 +7,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
-- [behavior](behavior.md)
+- [profile](profile.md)
 
 ## Related Documents
 

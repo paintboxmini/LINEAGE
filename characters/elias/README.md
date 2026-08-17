@@ -14,9 +14,9 @@ He pushes away anything that might remind him of what he is. Not defensively —
 
 ## Contents
 
-- [what he does](what-he-does.md)
-- [what happens near him](what-happens-near-him.md)
-- [the roadhouse encounter](the-roadhouse-encounter.md)
 - [in the world](in-the-world.md)
-- [what he left behind](what-he-left-behind.md)
+- [the roadhouse encounter](the-roadhouse-encounter.md)
+- [what happens near him](what-happens-near-him.md)
+- [what he does](what-he-does.md)
 - [what he doesnt know](what-he-doesnt-know.md)
+- [what he left behind](what-he-left-behind.md)

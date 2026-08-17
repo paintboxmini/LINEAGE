@@ -9,7 +9,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [appearance](appearance.md)
 - [backstory](backstory.md)
-- [trutinate](trutinate.md)
 - [gm notes](gm-notes.md)
+- [profile](profile.md)
+- [trutinate](trutinate.md)

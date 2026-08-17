@@ -6,10 +6,10 @@
 
 ## Contents
 
-- [appearance](appearance.md)
 - [backstory](backstory.md)
-- [what he actually sells](what-he-actually-sells.md)
 - [connections](connections.md)
+- [profile](profile.md)
+- [what he actually sells](what-he-actually-sells.md)
 
 ## Related Documents
 

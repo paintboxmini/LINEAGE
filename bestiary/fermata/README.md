@@ -9,10 +9,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [description](description.md)
-- [what its guarding](what-its-guarding.md)
-- [the ringing silence](the-ringing-silence.md)
 - [gm notes](gm-notes.md)
+- [profile](profile.md)
+- [the ringing silence](the-ringing-silence.md)
+- [what its guarding](what-its-guarding.md)
 
 ## Related Documents
 

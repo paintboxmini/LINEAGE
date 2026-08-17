@@ -11,6 +11,6 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 ## Contents
 
 - [mechanics](mechanics.md)
-- [variants](variants.md)
 - [gm notes](gm-notes.md)
-- [culinary note](culinary-note.md)
+- [harvest](harvest.md)
+- [variants](variants.md)

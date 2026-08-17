@@ -26,7 +26,9 @@ The Delve Roller will not leave Frontline voluntarily. If repositioned, it retur
 
 ## Cards
 
-*(no signature cards — see the note below)***Cards:** *(none)*
+**No signature set.** Both of this creature's original cards were promoted to core, and it runs those instead — see `README.md`.
+
+ROLLOUT (promoted to core, `cards/rollout.md`) — the roll itself: +4 damage if it didn't reposition last turn, and it returns to hand instead of the discard pile after use, so the Roller keeps rolling. The return is the mechanical addition it gained on promotion.
 
 PATIENCE OF STONE (promoted to core, `cards/patience-of-stone.md`) — Anchored heal while stationary, Deadly on defense. Fits the balled-up Roller that stays planted and recovers. Stonecoil shares the identical card, same core reference now.
 

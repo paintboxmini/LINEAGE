@@ -6,8 +6,8 @@
 
 ## Contents
 
-- [hess](hess.md)
 - [cob](cob.md)
+- [hess](hess.md)
 - [what cob has noticed about hess](what-cob-has-noticed-about-hess.md)
 - [why theyre one file](why-theyre-one-file.md)
 

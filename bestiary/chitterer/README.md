@@ -7,4 +7,4 @@ Small and quick. Found in packs. Crystal knives and arrowheads worked from harve
 ## Contents
 
 - [mechanics](mechanics.md)
-- [behavior](behavior.md)
+- [profile](profile.md)

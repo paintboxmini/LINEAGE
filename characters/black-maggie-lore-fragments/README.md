@@ -6,6 +6,6 @@
 
 ## Contents
 
-- [the childrens rhyme](the-childrens-rhyme.md)
-- [haunted place rumors](haunted-place-rumors.md)
 - [gm notes](gm-notes.md)
+- [haunted place rumors](haunted-place-rumors.md)
+- [the childrens rhyme](the-childrens-rhyme.md)
