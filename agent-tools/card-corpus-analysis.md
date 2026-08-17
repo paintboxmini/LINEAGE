@@ -58,6 +58,12 @@ Cross-tabulate **color × range × mechanical function**. The first two axes are
 
 **What it can't decide:** whether a hole should be filled. Some cells are empty because the design says so — Blue holding almost no d8 is Mind's identity as the utility stat, not a gap. An empty cell is a question about why, and *"because it shouldn't exist"* is a complete and common answer.
 
+**Even coverage is not the goal, and a thin function is not automatically a defect.** Drew (2026-08-17), on RPS being the thinnest function in the set: *"rps is thinnest because manipulating it should be rare. it's a combat pillar because it's a focus point for tactical combat. same as position and initiative. not the same thing as a focus point for design space."*
+
+That distinction governs how every result here is read. **Being a combat pillar means a mechanic is a focus point at the table — not an axis cards should be evenly spread across.** The grid measures where cards exist; it says nothing about where they ought to. Do not report a sparse function as a gap on the strength of its sparseness alone, and do not treat the pillars as targets to fill out.
+
+**Settled, do not re-flag: RPS is deliberately thin.** It is empty in two cells and a lone singleton in four more, and that is the design working. Anything reporting it as a blind spot is repeating a question already answered.
+
 ### 1b. Structural Grids
 
 The cheap version of the above, on parser-native axes only: color × range, color × die, color × tag, range × die. No taxonomy required, so no judgment baked in. Useful as a sanity check on the set's stated identities, and it runs even if the function taxonomy is still unsettled.
@@ -72,7 +78,7 @@ Normalize each card's Effect and Defensive Bonus text (lowercase, numbers to `N`
 
 **Output:** ranked recurring longhand expressions, with the cards involved. Feeds the compression rule directly (`agent-tools/card-creation.md`, Mechanic).
 
-**What it can't decide:** whether a cluster has earned a keyword. That's flagged for Drew — no threshold is set, on purpose.
+**What it can't decide:** whether a cluster has earned a keyword. That's flagged for Drew — **no threshold is set for compression, on purpose.** (Decompression does have one; see Keyword Trimming. The asymmetry is intended: retiring a keyword is reversible and mechanical, minting one is a design commitment.)
 
 ### 3. Power Outliers
 
@@ -95,12 +101,15 @@ The reverse of compression, and the answer to a problem that was open until 2026
    - **Umbrella terms** (Debuff, Positive Status Effects) — defined so *other rules* can name a set. They aren't printed as effects, so a card count is meaningless for them. Never candidates.
    - **Damage and rule properties** (Unpreventable, Critical) — describe how something behaves; referenced by other glossary entries.
    - **Actions** (Exile) — referenced by rules and status cards, not only by cards.
+   - **Item and status mechanics** (Future-Lock X) — defined in the card glossary but never printed on a card, because they arrive from items or status cards instead. These sit at zero card usage permanently and will flag on every run forever if not filtered. Zero usage here means "wrong category," not "dead keyword." Found the hard way on the 2026-08-17 run.
 2. **Count live usage**, not the glossary's stated number. Those counts are a dated snapshot and the file says so.
-3. **Flag everything at or below the threshold** for review.
+3. **Flag everything at or below the threshold** for review, **sorted by definition length, shortest first.** Length is a secondary sort, never a second threshold — it just puts the obvious candidates on top. A 68-character rule on three cards inlines without argument; a 281-character one with ordering subtleties does not.
 4. **Apply the table-cost test** per flagged keyword. Decompress only where longhand is genuinely cheaper for a player.
 5. **If decompressing:** rewrite every card that uses it with the longhand, remove the glossary entry, and log it. Partial decompression is the failure mode to avoid — see Expose, below.
 
-**Threshold: not set. Needs Drew's call.** At ≤4 the review list is roughly a dozen of 31 glossary entries, and several of those are category errors that step 1 removes. There's no natural cliff in the distribution to snap to — usage tails off smoothly from the high fifties down to one — so the number is a judgment about how much review work is wanted at once, not something the data settles. Recommend running step 1's category filter and a live recount first, then picking the threshold against the list that actually results.
+**Threshold: 4 or fewer cards** (2026-08-17, Drew). Measured against the live corpus after Expose's retirement, that flags 10 of 30 glossary entries. That is the intended size, not an overshoot: the count only opens the review, and most of the ten survive the table-cost test on sight. Sorted by definition length the list resolves quickly — Protect (3 cards, 68 characters) and Reveal Hand (1 card, 81) read as candidates immediately, while Critical (281, with ordering subtleties) and Armour X (stacking rules) read as keeps just as fast.
+
+There is no natural cliff in the distribution to justify a different number — usage tails smoothly from the high fifties down to one — so 4 is a judgment about review volume, which is exactly what it should be.
 
 **Expose is the live case, and it is mid-decompression right now.** `Expose [Color]` is defined in the glossary and used by four cards. Three use the compressed form (*"Expose Red — inflict Staggered"*). The fourth, in `cards/tithe-engine-ashfall.md`, restates the keyword's whole definition inline: *"Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it."* That is the keyword and its longhand definition on the same card, which `agent-tools/card-creation.md` explicitly says not to do. It should be resolved deliberately in one direction — not left as one card explaining itself while three don't.
 
@@ -148,9 +157,12 @@ The word *interesting* does not appear as a filter anywhere in this scope, on pu
 - **Any write to `cards/`.** Read-only, without exception.
 - **Replacing `verify.py`.** That enforces correctness and gates every commit. This one has no pass/fail and blocks nothing.
 
+## Running It
+
+**On demand** (2026-08-17, Drew). Not folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow). This answers a design question when someone is asking it; the staleness sweep answers a correctness question on a schedule. Different jobs, different cadence.
+
+**Output lands in `experimental/` while the tool is in development** (2026-08-17, Drew) — the sandbox layer, lower stakes, free to iterate (`CLAUDE.md`, Directory Structure). Reports are working artifacts, not canon. Where output belongs once the tool has settled is a later question; don't promote it out of `experimental/` without asking.
+
 ## Open Questions Before Building
 
-1. **What is the decompression threshold?** See Keyword Trimming — recommend deciding it against a category-filtered live recount rather than in the abstract.
-2. Where does output go — a generated report file, or straight to the session?
-3. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
-4. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
+1. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
