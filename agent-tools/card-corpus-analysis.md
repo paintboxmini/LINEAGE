@@ -30,11 +30,31 @@ Three reasons, in order of weight:
 
 ### 1. Design Space Grid — the primary analysis
 
-Cross-tabulate **color × range × mechanical function**. The first two axes are structural and come free from the parser. The third has to be derived: classify each card by what its Effect and Defensive Bonus actually *do* — initiative, position, draw/filter, damage modification, defense, control, healing, hand information, and so on.
+Cross-tabulate **color × range × mechanical function**. The first two axes are structural and come free from the parser. The third has to be derived: classify each card by what its Effect and Defensive Bonus actually *do*, against the settled taxonomy below.
 
 **Output:** the empty and near-empty cells, stated as prompts. *"Nothing in the set is a Green/Melee card that touches initiative."* Near-empty (one or two cards) is often as interesting as empty — a cell with a single occupant may be an accident rather than a design.
 
-**The function taxonomy is the whole tool, and it is a design artifact — not something to derive automatically.** Different categories produce different holes. A taxonomy that splits "control" into root/blind/stagger finds gaps a coarser one hides; one that merges draw and scry hides gaps a finer one finds. Whatever list gets used should be Drew's call and should be written down here once settled, because changing it silently changes every result the tool has ever produced.
+#### The Taxonomy — Settled
+
+**Nine functions, anchored on the three core pillars** (2026-08-17, Drew). The first three are the game's own established vocabulary (`Oracle/baseoracledeck.md`, `agent-tools/archetypes.md`); the other six are the keyword glossary's real domains.
+
+| Function | What lands here |
+|---|---|
+| **RPS** | Tie resolution, auto-wins, reversals, attacks cancelled before resolution, color counters |
+| **Initiative** | Initiative Shift X, turn order, extra or skipped turns |
+| **Position** | Frontline/Backline movement, forced movement, Rushdown, Rooted, **Anchored**, **Quick** |
+| **Economy** | Draw, Scry, discard, deck search, Exile, shuffle, return-to-hand |
+| **Information** | Reveal, look-at, blind selection, naming a color, Obscure |
+| **Damage mod** | Deadly, Weak, Vulnerable, Critical, Thorns, Counter Attack, Unpreventable, flat bonus damage |
+| **Defense** | Evade, Resist, Ward, Armour, Protect, Immunity, Deflect |
+| **Control** | Staggered, Blind, Sealed, Locked, and any "cannot play/attack/defend/use" |
+| **Sustain** | Heal, Lifesteal, HP restoration |
+
+**Multi-label.** A card counts in every function it touches. *"Scry 2. Choose 1 card in the target's hand without looking…"* is both Economy and Information. Forcing a single label would hide real coverage.
+
+**Assign by what the glossary says a mechanic does, never by surface wording.** This is the rule that matters most, and it was learned by getting it wrong. On the first pass Anchored and Quick were filed under Initiative because they *sound* like timing. They aren't: Anchored is a benefit that persists **while you don't move**, and Quick is **a free move**. Both are Position. That single misassignment silently filled `G/Melee/Initiative` — the exact gap Drew had already identified from memory — and the tool reported no hole where a real one exists. A taxonomy is only as good as the assignments under it.
+
+**Changing this table changes every result the tool has ever produced.** Treat an edit here as a design decision with its own discussion, not a tuning knob. Granularity was tested at 5, 9, and 10 categories before settling: the empty-cell rate held at 6–7% throughout, so this was never a signal-to-noise tradeoff — it is a choice about which distinctions are worth seeing.
 
 **What it can't decide:** whether a hole should be filled. Some cells are empty because the design says so — Blue holding almost no d8 is Mind's identity as the utility stat, not a gap. An empty cell is a question about why, and *"because it shouldn't exist"* is a complete and common answer.
 
@@ -95,7 +115,11 @@ Its own tool (2026-08-17, Drew). See `agent-tools/oracle-eligibility.md`. It mea
 Run once against the live corpus, 2026-08-17, to confirm the analyses find real things. **A one-time check, not a maintained table — recount rather than trust these.**
 
 - **Structural grids match the set's stated design.** Red skews Melee, Blue skews Ranged, Green skews Both — the same identity `Oracle/baseoracledeck.md`'s 12/6/3 split encodes. Die spread confirms Body/d8 as the power stat, with Blue holding a single d8 in the entire set.
-- **The design space grid works, and independently confirmed the hole Drew named.** A trial taxonomy of eight functions over color × range produced 72 cells, of which 5 were empty: `R/Both/initiative`, `B/Melee/position`, `B/Melee/heal`, **`G/Melee/initiative`** — the exact cell Drew identified from memory — and `G/Melee/hand-info`. Five prompts out of 72 cells is the right order of magnitude to act on. Note the taxonomy used was ad hoc and unratified; a different one yields a different five.
+- **The design space grid works, and independently confirmed the hole Drew named.** Under the settled nine-function taxonomy, 81 cells, 7 empty:
+
+  `R/Both/RPS` · `R/Both/Initiative` · `B/Melee/Sustain` · **`G/Melee/Initiative`** · `G/Melee/Economy` · `G/Melee/Information` · `G/Ranged/RPS`
+
+  Plus ten cells holding exactly one card, which are often the better prompts — a lone occupant may be an accident rather than a design. Notable singletons: `B/Melee/Position` (BINDING RITE), `G/Ranged/Position` (FLOW), `R/Both/Information` (EMBER CIRCLE), `B/Both/Sustain` (FOREST MEMORY). RPS is a singleton in four separate cells and empty in two more — the thinnest function in the set by a wide margin, which is worth a look on its own.
 - **Recurrence clustering needs filtering to be worth anything.** Naive clustering flagged ~105 cards; nearly all were healthy keyword reuse. Filtered to longhand only, the signal narrowed to ~16 recurring expressions across ~40 cards.
 - **The run's headline finding was rejected on review, which is the useful part.** The largest cluster was a family of conditional damage riders — at least seven cards across three conditions. It read as an obvious compression candidate and it isn't one; Drew cut the whole category (see the exclusion under Recurrence Clustering). Worth recording rather than quietly deleting: the analysis correctly found the biggest repetition in the set, and the biggest repetition in the set is one that should stay as it is. Frequency ranking will keep surfacing things that shouldn't be compressed. Treat every cluster as a question, never a recommendation.
 
@@ -126,8 +150,7 @@ The word *interesting* does not appear as a filter anywhere in this scope, on pu
 
 ## Open Questions Before Building
 
-1. **What is the function taxonomy?** The design space grid is only as good as this list, and it is Drew's call, not a derivation. The validation run used an unratified eight-category guess.
-2. **What is the decompression threshold?** See Keyword Trimming — recommend deciding it against a category-filtered live recount rather than in the abstract.
-3. Where does output go — a generated report file, or straight to the session?
-4. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
-5. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
+1. **What is the decompression threshold?** See Keyword Trimming — recommend deciding it against a category-filtered live recount rather than in the abstract.
+2. Where does output go — a generated report file, or straight to the session?
+3. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
+4. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
