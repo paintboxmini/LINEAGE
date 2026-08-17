@@ -51,7 +51,11 @@ Drew (2026-08-17): *"card creation is design and reasoning. An established workf
 
 **The standing rule:** where guidance in `card-creation.md` would flatten what makes a specific card worth having, the card wins and the guidance yields. Compression stayed because it only ever flags. Anything that would resolve a design question inside a rewrite doesn't belong in an authoring tool.
 
-**Live thread, undecided.** Compression and convergence together form a ratchet toward keyword coverage with no counter-pressure and no path for retiring a keyword that stopped earning its place. Needs a decision about what deliberately stays uncompressed. Related and also open: a proposed batch-generation tool (high-volume candidates → mechanical filtering → survivors into normal authoring and red-team) that would give corpus-level work like convergence somewhere real to live.
+**The ratchet problem, since resolved.** Compression plus convergence formed a one-way pull toward keyword coverage with nothing pushing back — run far enough, every effect becomes a keyword and cards collapse toward *"Attack: X + die. Effect: [Keyword]"*, which is the condition Drew objected to in the first place. Removing convergence took out half of it. Drew supplied the other half on 2026-08-17, ruling that conditional triggers stay uncompressed: *"it would work but would require more memorization/table lookup for players."*
+
+That gives the compression rule its missing counter-pressure, and it generalizes past the one case. **A keyword's real cost is paid by the player, in lookup.** Repetition is necessary but not sufficient — compress what is intricate or opaque in longhand, leave what is already self-explanatory however often it recurs. The largest repeated pattern in the set is a family of conditional triggers across at least seven cards, and it is correctly staying exactly as it is.
+
+**Still open:** no path exists for retiring a keyword that stopped earning its place. The glossary only grows.
 
 ---
 

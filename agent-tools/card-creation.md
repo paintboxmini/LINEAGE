@@ -66,6 +66,10 @@ Do not create a new keyword merely to make one card's wording shorter. Do not du
 
 Frequency isn't the only justification. `rules/card-glossary.md` carries keywords used by a single card — Obscure, Critical — because the rule itself is intricate enough that restating it in full every time would cost more than a defined term does. Compression answers repetition; a defined term can also answer complexity.
 
+**Frequency isn't sufficient either — the keyword has to be cheaper at the table.** A keyword's real cost is paid by the player, in lookup. Text that explains itself where it sits costs a reader nothing; turning it into a defined term trades a line of plain English for one more entry the table has to memorize or go find. So repetition alone is not the bar. **Compress what is intricate or opaque in longhand. Leave what is already self-explanatory, however often it recurs.**
+
+Worked example, and the ruling behind this: **conditional triggers stay uncompressed.** *"If you did not attack last turn," "if you changed position since your last turn," "if you are in the backline"* recur across at least seven cards — the single largest repeated longhand pattern in the set. They are still not compression candidates. Drew (2026-08-17): *"making keywords out of them doesn't seem right. it would work but would require more memorization/table lookup for players."* The longhand is the better expression despite the repetition, and that is the general shape to apply elsewhere.
+
 ### Defensive Bonus
 
 Treat the Defensive Bonus as part of the card's identity, not as free extra text. It should create a meaningful defensive choice or reinforce the card's intended function.

@@ -26,7 +26,7 @@ Three reasons, in order of weight:
 
 ---
 
-## The Four Analyses
+## The Analyses
 
 ### 1. Coverage Grid
 
@@ -42,6 +42,8 @@ Normalize each card's Effect and Defensive Bonus text (lowercase, numbers to `N`
 
 **Critical distinction, or the output is noise:** a keyword used by many cards is the keyword system working. Eight cards granting Evade is not drift. The real signal is **longhand text that recurs** — a mechanic the set keeps writing out because it has no defined term. Filter keyword-only grants before clustering.
 
+**Excluded from the scan: conditional triggers.** *"If you did not attack last turn," "if you changed position since your last turn," "if you are in the backline"* — these recur, and they are deliberately not compression candidates. Reporting them is a false positive, not a finding. (2026-08-17, Drew. Reasoning and the general rule it establishes: `agent-tools/card-creation.md`, Mechanic.)
+
 **Output:** ranked recurring longhand expressions, with the cards involved. Feeds the compression rule directly (`agent-tools/card-creation.md`, Mechanic).
 
 **What it can't decide:** whether a cluster has earned a keyword. That's flagged for Drew — no threshold is set, on purpose.
@@ -54,13 +56,9 @@ Normalize each card's Effect and Defensive Bonus text (lowercase, numbers to `N`
 
 **What it can't decide:** whether an outlier is wrong. Bosses are bespoke by design, and `bestiary/root-heart.md` carries an explicit HP exception for exactly this reason.
 
-### 4. Oracle Eligibility
+### 4. Oracle Eligibility — moved out
 
-`Oracle/baseoracledeck.md` states hard, checkable criteria: starter tier, no forced discard, no status injection, no hand reveal, no presupposed systems — and a fixed composition target of 21 per color split 12/6/3 along that color's range identity.
-
-**Output:** which current cards pass, and how the eligible pool distributes against the 9-cell target. This is the "refine the pool and see what falls out" pass, run mechanically.
-
-**What it can't decide:** the final 63. Drew clears the pool by hand; this narrows what he's choosing from.
+Its own tool (2026-08-17, Drew). See `agent-tools/oracle-eligibility.md`. It measures the corpus against a stated target rather than describing a distribution, which makes it a different kind of pass from the three above.
 
 ---
 
@@ -69,7 +67,8 @@ Normalize each card's Effect and Defensive Bonus text (lowercase, numbers to `N`
 Run once against the live corpus, 2026-08-17, to confirm the analyses find real things. **A one-time check, not a maintained table — recount rather than trust these.**
 
 - **Coverage grid works and matches stated design.** Red skews Melee, Blue skews Ranged, Green skews Both — the same identity `Oracle/baseoracledeck.md`'s 12/6/3 split encodes. Die spread confirms Body/d8 as the power stat, with Blue holding a single d8 in the entire set.
-- **Recurrence clustering finds real compression candidates once keyword grants are filtered.** Naive clustering flagged ~105 cards; nearly all were healthy keyword reuse. Filtered, the signal narrowed to ~16 recurring longhand expressions across ~40 cards. The strongest is a family of **conditional damage riders** — *"if you did not attack last turn,"* *"if you changed position since your last turn,"* *"if you are in the backline"* — each written longhand, at least seven cards between them. That family is a live compression candidate today, already sitting in the corpus.
+- **Recurrence clustering needs filtering to be worth anything.** Naive clustering flagged ~105 cards; nearly all were healthy keyword reuse. Filtered to longhand only, the signal narrowed to ~16 recurring expressions across ~40 cards.
+- **The run's headline finding was rejected on review, which is the useful part.** The largest cluster was a family of conditional damage riders — at least seven cards across three conditions. It read as an obvious compression candidate and it isn't one; Drew cut the whole category (see the exclusion under Recurrence Clustering). Worth recording rather than quietly deleting: the analysis correctly found the biggest repetition in the set, and the biggest repetition in the set is one that should stay as it is. Frequency ranking will keep surfacing things that shouldn't be compressed. Treat every cluster as a question, never a recommendation.
 
 ## Parsing Hazards Found During Validation
 
@@ -100,4 +99,4 @@ The word *interesting* does not appear as a filter anywhere in this scope, on pu
 
 1. Where does output go — a generated report file, or straight to the session?
 2. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
-3. Does the Oracle eligibility pass belong here, or is it its own tool? It's the one analysis with a stated target to measure against rather than a distribution to describe.
+3. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
