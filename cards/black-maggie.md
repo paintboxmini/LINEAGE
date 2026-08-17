@@ -2,7 +2,7 @@
 
 *The last practitioner of a gift she has entirely inverted. Her people took suffering into themselves to heal; she moves it into other people on purpose. See `characters/black-maggie.md`.*
 
-**These cards are unique to Black Maggie. They cannot be awarded to players or transferred.**
+**These cards are unique to Black Maggie. They cannot be transferred.**
 
 ---
 

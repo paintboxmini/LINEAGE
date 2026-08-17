@@ -2,7 +2,7 @@
 
 Signature cards for Aege, the Carrion Guide. See `characters/aege.md`.
 
-**These cards are unique to Aege. They cannot be awarded to players or transferred to other guides.**
+**These cards are unique to Aege. They cannot be transferred to other guides.**
 
 ---
 

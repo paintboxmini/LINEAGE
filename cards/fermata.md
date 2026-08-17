@@ -1,6 +1,6 @@
 **Cards:** Signature set for Fermata. See `bestiary/fermata.md`.
 
-**These cards are unique to Fermata. They cannot be awarded to players or transferred to other guardians.**
+**These cards are unique to Fermata. They cannot be transferred to other guardians.**
 
 ---
 

@@ -2,7 +2,7 @@
 
 Signature cards for Lefty. See `characters/lefty.md`.
 
-**These cards are unique to Lefty. They cannot be awarded to players or transferred to other tanks.**
+**These cards are unique to Lefty. They cannot be transferred to other tanks.**
 
 ---
 

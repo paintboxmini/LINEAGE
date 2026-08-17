@@ -2,7 +2,7 @@
 
 Signature cards for Kino. See `characters/kino.md`.
 
-**These cards are unique to Kino. They cannot be awarded to players or transferred to other fencers.**
+**These cards are unique to Kino. They cannot be transferred to other fencers.**
 
 ---
 

@@ -2,7 +2,7 @@
 
 Signature cards for Ryder. See `characters/ryder.md`.
 
-**These cards are unique to Ryder. They cannot be awarded to players or transferred to other sorcerers.**
+**These cards are unique to Ryder. They cannot be transferred to other sorcerers.**
 
 ---
 

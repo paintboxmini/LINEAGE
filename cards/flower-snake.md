@@ -1,6 +1,6 @@
 **Cards:** Signature set for the Flower Snake. See `bestiary/flower-snake.md`.
 
-**These cards are unique to the Flower Snake. They cannot be awarded to players or transferred to other ambush predators.**
+**These cards are unique to the Flower Snake. They cannot be transferred to other ambush predators.**
 
 ---
 

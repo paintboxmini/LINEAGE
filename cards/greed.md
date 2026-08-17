@@ -2,7 +2,7 @@
 
 Signature cards for Greed. See `characters/greed.md`.
 
-**These cards are unique to Greed. They cannot be awarded to players or transferred to other lightning duelists.**
+**These cards are unique to Greed. They cannot be transferred to other lightning duelists.**
 
 ---
 

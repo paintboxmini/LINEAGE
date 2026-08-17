@@ -1,6 +1,6 @@
 **Cards:** Signature set for the Kiwi Bird. See `bestiary/kiwi-bird.md`.
 
-**These cards are unique to the Kiwi Bird. They cannot be awarded to players or transferred to other foragers.**
+**These cards are unique to the Kiwi Bird. They cannot be transferred to other foragers.**
 
 ---
 

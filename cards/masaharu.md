@@ -2,7 +2,7 @@
 
 Signature cards for Masaharu. See `characters/masaharu.md`.
 
-**These cards are unique to Masaharu. They cannot be awarded to players or transferred to other gunners.**
+**These cards are unique to Masaharu. They cannot be transferred to other gunners.**
 
 ---
 
