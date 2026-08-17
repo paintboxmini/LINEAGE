@@ -1,8 +1,8 @@
-# Rasp — Cards
+# Rasp — Signature Cards
 
-Signature cards for Rasp. See `characters/rasp.md`.
+**These cards are unique to Rasp. They cannot be transferred to other poisoners.**
 
-**These cards are unique to Rasp. They cannot be awarded to players or transferred to other poisoners.**
+*Four poisons, each expressed through an existing keyword rather than a bespoke mechanic — the concept lives in the fiction and the naming, not in new rules (2026-08-17, Drew). The one piece of genuinely new design is OUT OF REACH's passive, which is her whole thesis.*
 
 ---
 
@@ -17,20 +17,40 @@ Range: Both
 
 ---
 
-**QUIET POISON**
+**SLOW HANDS**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target takes 1 damage at the start of each of their turns until the end of combat.
-Defensive Bonus: Attacker takes 1 damage at the start of each of their turns until the end of combat.
-Range: Melee
-*"Small enough to ignore. That's the point."*
+Effect: Target gains Weak. If you are in the Backline, they gain Weak 3 instead.
+Defensive Bonus: Attacker gains Weak.
+Range: Ranged
+*"The arm still works. It just costs something to lift now."*
 
 ---
 
-**SEPTIC STRIKE**
+**THIN SKIN**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target gains Vulnerable. If they have a status card in hand, deck, or discard pile, they gain Vulnerable 2 instead.
+Defensive Bonus: Attacker gains Vulnerable.
+Range: Ranged
+*"Nothing dramatic. Things just stop bouncing off."*
+
+---
+
+**TWO CUTS**
 RED — BODY
 Attack: Body + d6
-Effect: If the target is currently taking damage from QUIET POISON, deal +6 damage and end that effect immediately.
-Defensive Bonus: Deal 2 damage to attacker.
+Effect: Add 1 Wound to the bottom of the defender's deck. If this attack deals damage, add a second.
+Defensive Bonus: Add 1 Wound to the bottom of the attacker's deck.
 Range: Melee
-*"Once in a while, everything she planted comes due at once."*
+*"Both daggers. Neither one deep. It's the pair that does it."*
+
+---
+
+**SMALL DOSES**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Add 1 Exhaust card to the target's hand.
+Defensive Bonus: Add 1 Exhaust card to the attacker's hand.
+Range: Ranged
+*"Nothing you'd notice on the day. You notice by the end of the week."*

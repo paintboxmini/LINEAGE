@@ -35,12 +35,15 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 ## Deck
 
-**Signature cards:** `cards/rasp.md` — unique to Rasp, not transferable.
+**Signature cards:** `cards/rasp.md` — unique to Rasp, not transferable to other poisoners.
 
-**Non-signature cards (4 Blue / 2 Red / 3 Green):**
+*Deck totals include signature cards: Blue 4 / Red 3 / Green 5, matching Mind 4 / Body 3 / Soul 5.*
+
+**Signature (1 Blue / 1 Red / 3 Green):** SMALL DOSES *(blue)* · TWO CUTS *(red)* · OUT OF REACH, SLOW HANDS, THIN SKIN *(green)*
+
+**Non-signature (3 Blue / 2 Red / 2 Green):**
 
 *Blue — Mind*
-- STILLNESS — Defender discards 1 at random; Defensive: Attacker discards 1 at random
 - TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
 - SIDESTEP — Gain Evade; Defensive: may change position
 - FORGET — Defender discards 1; Defensive: Exile the attacker's card until end of combat
@@ -51,5 +54,6 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 *Green — Soul*
 - SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
-- WITHER — Target loses 1 Body this combat; Defensive: Target loses 1 Body this combat *(`cards/stat-adjusters.md` — no longer a core-set card as of 2026-08-17)*
 - PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
+
+*Cut 2026-08-17 in the poison rework: STILLNESS (redundant with FORGET — both forced discard) and WITHER (no longer a core-set card; see `cards/stat-adjusters.md`).*
