@@ -41,19 +41,11 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 
 **Core cards (4 Blue / 1 Red / 3 Green):**
 
-*Blue — Mind*
-- CHAIN — Half damage to a second enemy; Defensive: enemy must target you again next turn if possible
-- TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
-- SHARPEN — Target ally gains Deadly; Defensive: gain Deadly
-- SIDESTEP — Gain Evade; Defensive: may change position
+*Blue — Mind* — [CHAIN](../cards/chain.md), [TRACE](../cards/trace.md), [SHARPEN](../cards/sharpen.md), [SIDESTEP](../cards/sidestep.md)
 
-*Red — Body*
-- CHARGE — You and defender move to frontline; Defensive: you and attacker move to frontline
+*Red — Body* — [CHARGE](../cards/charge.md)
 
-*Green — Soul*
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
-- WITNESS — Target ally heals 6 HP; Defensive: target ally heals 6 HP
-- FLOW — You may change position, gain Evade; Defensive: you may change position, gain Evade
+*Green — Soul* — [PATIENCE](../cards/patience.md), [WITNESS](../cards/witness.md), [FLOW](../cards/flow.md)
 
 ---
 

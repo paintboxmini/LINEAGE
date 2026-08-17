@@ -43,17 +43,10 @@ Mostly chip damage — QUIET POISON ticks small and steady, more distraction tha
 
 **Non-signature (3 Blue / 2 Red / 2 Green):**
 
-*Blue — Mind*
-- TRACE — Gain Deadly if the defender repeats the top color of their own discard pile; Defensive: if the attacker repeats it, remove their Positive Status Effects
-- SIDESTEP — Gain Evade; Defensive: may change position
-- FORGET — Defender discards 1; Defensive: Exile the attacker's card until end of combat
+*Blue — Mind* — [TRACE](../cards/trace.md), [SIDESTEP](../cards/sidestep.md), [FORGET](../cards/forget.md)
 
-*Red — Body*
-- STRIKE — Body + d8, no effect; Defensive: Deal 3 damage to attacker, unpreventable
-- DART — Move self to any position; Defensive: move self to any position
+*Red — Body* — [STRIKE](../cards/strike.md), [DART](../cards/dart.md)
 
-*Green — Soul*
-- SEED — Plant a seed at your position, gain Deadly twice the next time you begin your turn there; Defensive: Plant a seed at your position, gain Resist 2 the next time you begin your turn there
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
+*Green — Soul* — [SEED](../cards/seed.md), [PATIENCE](../cards/patience.md)
 
 *Cut 2026-08-17 in the poison rework: STILLNESS (redundant with FORGET — both forced discard) and WITHER (no longer a core-set card; see `cards/wither.md`).*

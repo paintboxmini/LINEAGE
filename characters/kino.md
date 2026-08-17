@@ -39,17 +39,8 @@ Everyone can see exactly which colors are covered. That's the point — he's not
 
 **Core cards (4 Blue / 2 Red / 3 Green):**
 
-*Blue — Mind*
-- DEFLECT — Gain Ward; Defensive: Counter Attack, only on a clean win — not a tie
-- PARADOX — Reverses the RPS outcome on reveal; Effect: Lifesteal; Defensive: Gain Ward
-- FOCUS — Scry 2, return this card to your hand; Defensive: Apply Initiative Shift +2 to yourself
-- AXIOM — Name a color, defender can't play it next reveal; Defensive: Name a color, attacker can't play it next reveal
+*Blue — Mind* — [DEFLECT](../cards/deflect.md), [PARADOX](../cards/paradox.md), [FOCUS](../cards/focus.md), [AXIOM](../cards/axiom.md)
 
-*Red — Body*
-- STRIKE — Body + d8, no effect; Defensive: Deal 3 damage to attacker, unpreventable
-- BREAK — Defender reveals hand; Defensive: Counter Attack, only on a clean win — not a tie
+*Red — Body* — [STRIKE](../cards/strike.md), [BREAK](../cards/break.md)
 
-*Green — Soul*
-- DEAD RECKONING — Defender gains Weak; Defensive: Attacker gains Blind
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3 HP
-- SHADE AWAY — Gain Evade; Defensive: Gain Evade
+*Green — Soul* — [DEAD RECKONING](../cards/dead-reckoning.md), [PATIENCE](../cards/patience.md), [SHADE AWAY](../cards/shade-away.md)

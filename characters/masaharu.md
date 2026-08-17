@@ -61,16 +61,8 @@ He is most dangerous when he has had one full cycle to read the party.
 
 **Core cards (2 Blue / 2 Red / 4 Green):** *(fixed 2026-07-23 — this deck ran a 1-card Red overcount since before this session, 4 total against Body 3; cut ENDURE as the least identity-specific of the three Red core picks. GROUNDING STANCE and BURN BRIGHT both reinforce the immovable-Backline-sniper identity directly; ENDURE was generic Resist/heal filler that any deck could run.)*
 
-*Blue — Mind*
-- PROFILE — Scry 2; Defensive: look at the top card of the attacker's hand
-- AXIOM — Name a color, defender can't play it on their next reveal; Defensive: Name a color, attacker can't play it on their next reveal
+*Blue — Mind* — [PROFILE](../cards/profile.md), [AXIOM](../cards/axiom.md)
 
-*Red — Body*
-- GROUNDING STANCE — Ignore forced repositioning; Defensive: Resist
-- BURN BRIGHT — Exile 1 from hand, +2 damage (Ranged); Defensive: Exile from discard
+*Red — Body* — [GROUNDING STANCE](../cards/grounding-stance.md), [BURN BRIGHT](../cards/burn-bright.md)
 
-*Green — Soul*
-- DEAD RECKONING — Defender gains Weak; Defensive: Attacker gains Blind
-- DELAY — Apply Initiative Shift -1 to defender; Defensive: Apply Initiative Shift -1 to attacker
-- PATIENCE — +4 damage if you didn't attack last turn; Defensive: Anchored, target ally heals 3
-- READ — Defender reveals hand; Defensive: Name color, discard matching card from attacker's hand
+*Green — Soul* — [DEAD RECKONING](../cards/dead-reckoning.md), [DELAY](../cards/delay.md), [PATIENCE](../cards/patience.md), [READ](../cards/read.md)

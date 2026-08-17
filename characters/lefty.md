@@ -37,17 +37,8 @@ Built to make a fight happen where he wants it, not where it started. HEAVE thro
 
 **Core cards (2 Blue / 3 Red / 4 Green):**
 
-*Blue — Mind*
-- INTERRUPT — Target loses their next turn, you can't defend until your next turn; Defensive: Apply Initiative Shift -2 to attacker
-- PARTITION — Target enemy can only attack frontline targets next turn; Defensive: target ally cannot be targeted by next attack
+*Blue — Mind* — [INTERRUPT](../cards/interrupt.md), [PARTITION](../cards/partition.md)
 
-*Red — Body*
-- GUARD — All allies gain Resist; Defensive: all allies gain Resist
-- PUSH — Move target to backline; Defensive: move target to backline
-- PULL — Pull target to frontline; Defensive: pull attacker to frontline
+*Red — Body* — [GUARD](../cards/guard.md), [PUSH](../cards/push.md), [PULL](../cards/pull.md)
 
-*Green — Soul*
-- BIND — Defender gains Rooted; Defensive: attacker gains Rooted
-- ROOTED OATH — Anchored: target ally gains Deadly; Defensive: Anchored, target ally gains Resist
-- SYNCHRONY — Allies next to you in initiative heal 1 HP at the start of their turns, you heal too; Defensive: Gain Resist
-- SHARED BURDEN — Gain Protect and Evade; Defensive: choose an amount, target ally gains that much HP and you lose that much HP
+*Green — Soul* — [BIND](../cards/bind.md), [ROOTED OATH](../cards/rooted-oath.md), [SYNCHRONY](../cards/synchrony.md), [SHARED BURDEN](../cards/shared-burden.md)
