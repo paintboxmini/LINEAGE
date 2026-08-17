@@ -1,4 +1,6 @@
-# Kaine — The Final Current
+# The Final Current
+
+*A sect within the People of Promise (`factions/people-of-promise.md`). Founded and led by Elder Kaine (`characters/kaine/README.md`), based in Glasslight Reach.*
 
 Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same platforms, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's two claims layered together. First: that *Return* — coming back alive from what doctrine only ever describes as final — is proof, not drift, and that the Last Bath's completion can be unlocked before death by anyone willing to go far enough. Second, and this one is a real change to the practice itself, not just a story told about it: **he doesn't stop at once.** Normal custom is a single bath, a rite of passage, lived with afterward (`factions/people-of-promise.md`, Ritual Bathing). One time isn't enough for Kaine — if it didn't take, or didn't take enough, the answer is always another bath.
 
@@ -15,3 +17,13 @@ The grin that goes with it is too large for the sentence.
 ---
 
 ---
+
+---
+
+## Related Documents
+
+- `factions/people-of-promise.md` — the congregation it operates inside, and the doctrine it departs from
+- `characters/kaine/README.md` — its founder; his own failure, and the moment he built the method from
+- `characters/corren/gm-notes.md` — the death nobody else understands, and the sect's real origin
+- `quests/tide-pulls-back.md` — where a party first hears of it
+- `items/lightning-loop.md` — the concealed source of Kaine's signs and wonders

@@ -37,9 +37,9 @@ When they are brought back up:
 - Some come back **hardened** — more certain of who they are, as if the potential collapsed into resolution.
 - All come back **changed**.
 
-**None of this is what the doctrine actually describes.** The Last Bath is one-way. What the congregation calls ritual bathing is something else wearing its language — survivable, and meant to happen exactly once, not yet examined closely by anyone with the standing to say so out loud. Elder Kaine is the one who did — and the one thing he changed about the practice itself, not just the claim around it, is the *once*. See `characters/kaine/README.md`.
+**None of this is what the doctrine actually describes.** The Last Bath is one-way. What the congregation calls ritual bathing is something else wearing its language — survivable, and meant to happen exactly once, not yet examined closely by anyone with the standing to say so out loud. Elder Kaine is the one who did — and the one thing he changed about the practice itself, not just the claim around it, is the *once*. See `factions/the-final-current.md`.
 
-| | Orthodox Promise | Normal Custom | The Final Current |
+| | Orthodox Promise | Normal Custom | The Final Current (`factions/the-final-current.md`) |
 |--|---|---|---|
 | Who enters | The dead | The living | The living |
 | How often | Never returns — one-way | Once, a rite of passage | Again and again |
@@ -55,7 +55,8 @@ The People of Promise and the Masons hold opposing views of the same force. See 
 ## Related Documents
 
 - `places/glasslight-reach.md` — where the congregation is based
-- `characters/kaine/README.md` — The Final Current, a sect within the Promise pushing dissolution faster
+- `factions/the-final-current.md` — the sect within the Promise pushing dissolution faster
+- `characters/kaine/README.md` — the Elder who founded it
 - `characters/corren/README.md` — bathed once, ordinary, then broke the norm decades later; his death is a secret nobody in the congregation actually understands
 - `characters/sael/README.md` — holds the rope, distrusts who it's held for
 - `characters/wren/README.md` — loves the practice enough to keep someone else from it

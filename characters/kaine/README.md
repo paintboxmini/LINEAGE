@@ -10,6 +10,8 @@ He leads The Final Current, a sect within the Promise community built to acceler
 
 He is not a monster in his own mind. He is the only one willing to say what everyone already knows.
 
+**Founder and leader of The Final Current** (`factions/the-final-current.md`) — the sect itself lives there; this entry is the man.
+
 ---
 
 ## Contents
@@ -17,7 +19,6 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 - [mechanics](mechanics.md)
 - [open](open.md)
 - [profile](profile.md)
-- [the final current](the-final-current.md)
 - [the goal](the-goal.md)
 
 ---

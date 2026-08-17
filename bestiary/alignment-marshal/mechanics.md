@@ -29,3 +29,13 @@ It doesn't need to kill them. It needs the firing sequence clean.
 ## Cards
 
 **Cards:** `cards/calibration-pulse.md`, `cards/correction-load.md`, `cards/fault-exploit.md`, `cards/system-purge.md`, `cards/targeting-lock.md`
+
+---
+
+## It Never Truly Dies
+
+At most: stalled. Because the engine must fire.
+
+If players destroy it, its pieces don't fall apart. They realign. Like it's still trying to complete a trajectory.
+
+---

@@ -31,3 +31,11 @@ At the start of each of the Root Heart's turns, all Frontline enemies take Pulse
 *The fibrous mass contracts. Sap seeps thick and dark. The forest tightens.*
 
 ---
+
+---
+
+## Win Condition
+
+When HP reaches 0, the cavity pulses open. All players may make a **free final action** before the encounter ends.
+
+---

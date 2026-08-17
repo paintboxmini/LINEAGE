@@ -7,6 +7,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
 - [the larder once](the-larder-once.md)
 - [why it dies when it dies](why-it-dies-when-it-dies.md)
@@ -19,8 +20,3 @@
 
 ---
 
-## The Invariant
-
-The sky is home. The ground is danger. Everything else about this creature follows from that one sentence.
-
----

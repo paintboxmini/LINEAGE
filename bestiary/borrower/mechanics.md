@@ -30,3 +30,13 @@ Against Stonecoils: Borrowers Burrow constantly, striking from unexpected angles
 Against the party (hostile): Same tactics. They are harder to hit than their HP suggests. They will retreat before dying — a Borrower at 3 HP uses Burrow and does not re-emerge until combat ends or the odds shift.
 
 ---
+
+---
+
+## Combat Cards
+
+In addition to their signature set (`cards/clay-bowl.md`, `cards/crawl-lane.md`), Borrowers fill their combat deck with core cards weighted toward Blue and Green. They rarely play Red.
+
+Recommended core inclusions: PATIENCE, FLOW, FOCUS, WITNESS, BIND.
+
+---
