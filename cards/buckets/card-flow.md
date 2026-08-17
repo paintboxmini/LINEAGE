@@ -1,12 +1,10 @@
 # Card Flow
 
-*Moving your own cards around: draw, Scry, deck manipulation, Exile, returns to hand.*
+*Moving your own cards around: draw, Scry, deck manipulation, returns to hand.*
 
-**Card list only — the full cards live in `cards/`.** This file records membership; it is not a source of card text. Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
+**Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
 ## Homed here (9)
-
-Cards that move to this bucket when the Oracle pool is slimmed.
 
 - ACCEPTANCE  *(also: initiative)*
 - ALIGN
@@ -18,11 +16,8 @@ Cards that move to this bucket when the Oracle pool is slimmed.
 - PROFILE
 - STUDY
 
-## Also indexed here (4)
-
-Homed in another bucket, but they genuinely do this too. Search should find them here.
+## Also indexed here (3)
 
 - BURN BRIGHT  *(home: payoff)*
 - FORGET  *(home: hand denial)*
 - FRACTURE  *(home: position)*
-- STEAL  *(home: buff removal)*

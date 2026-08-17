@@ -1,12 +1,10 @@
 # Position
 
-*Moving yourself or someone else, or gaining something for holding still. Includes Anchored, Rooted, Rushdown, Quick, and Position-gated payoffs.*
+*Moving yourself or someone else, or gaining something for holding still. Anchored, Rooted, Rushdown, Quick, Position-gated payoffs.*
 
-**Card list only — the full cards live in `cards/`.** This file records membership; it is not a source of card text. Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
+**Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
 ## Homed here (30)
-
-Cards that move to this bucket when the Oracle pool is slimmed.
 
 - BIND
 - CALCULATE
@@ -40,8 +38,6 @@ Cards that move to this bucket when the Oracle pool is slimmed.
 - TRAMPLE
 
 ## Also indexed here (5)
-
-Homed in another bucket, but they genuinely do this too. Search should find them here.
 
 - OVERDRIVE  *(home: self-inflicted cost)*
 - PATIENCE  *(home: damage amp)*

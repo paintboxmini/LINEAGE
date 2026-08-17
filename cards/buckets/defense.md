@@ -2,11 +2,9 @@
 
 *Refusing or reducing incoming damage — Evade, Resist, Ward, Armour, Protect, Immunity, Deflect.*
 
-**Card list only — the full cards live in `cards/`.** This file records membership; it is not a source of card text. Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
+**Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
 ## Homed here (16)
-
-Cards that move to this bucket when the Oracle pool is slimmed.
 
 - BRACE
 - DEFLECT  *(also: damage amp)*
@@ -26,8 +24,6 @@ Cards that move to this bucket when the Oracle pool is slimmed.
 - UNTOUCHED
 
 ## Also indexed here (14)
-
-Homed in another bucket, but they genuinely do this too. Search should find them here.
 
 - CALLED SHOT  *(home: control)*
 - CERTAIN STRIKE  *(home: control)*

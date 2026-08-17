@@ -23,20 +23,21 @@ Buckets must exist before the core sets can mean "Oracle candidates only," and b
 **Special Rules were missed on the first pass and changed two homes when added** (2026-08-17, Drew: *"make sure to get a read on what special rules are doing as well"*):
 
 - **PARADOX** was homed under sustain for its Lifesteal. Its Special Rule *reverses the RPS outcome* — a headline RPS-pillar mechanic that was absent from the bucket entirely. Now homes under rps manipulation, sustain and defense secondary.
-- **STEAL** was homed under initiative, matched off an Initiative Shift in its defensive line. Its Effect takes a consumable off the defender; its Special Rule exiles itself after use. Now homes under buff removal, with card flow and initiative secondary.
+- **STEAL** was homed under initiative, matched off an Initiative Shift in its defensive line. All three of its lines do different things, and Drew set each one: the Special Rule exiles the card after use, which is a **self-inflicted cost** and its home; the Effect steals a consumable, which is **misc**; the Defensive Bonus is **initiative**. One card, three buckets — the clearest case in the set for why home-plus-index was needed.
 
 **FRAME-TRAP** keeps its rps manipulation home but gained two secondaries. Drew: *"FRAME-TRAP's special rule interacts with the rps pillar. it relies on the previous ally winning rps."* Its Special Rule auto-wins only if the defender was hit on the turn immediately before — so it also cashes in an existing condition (**payoff**) and depends on an ally having acted first (**team support**). Neither was visible from Effect or Defensive Bonus alone.
 
-**STEAL is the only item-touching card in all 143 core cards** — and in the whole 341-card corpus. Item theft is a singleton behaviour, not a bucket; it sits under buff removal on the broader "takes from the opponent" reading rather than getting a file of its own.
+**STEAL is the only item-touching card in all 143 core cards** — and in the whole 341-card corpus. Item theft is a singleton behaviour, so it indexes to **misc**: a holding pen for behaviours too rare to justify a bucket, revisited if a second card ever joins one.
 
 A bucket names **what a card is for**, never the keyword it uses. Drew: *"discard by itself doesn't tell us the useful part about what a card is doing."*
+
 
 
 ## Counts
 
 | Bucket | Homes | Indexed |
 |---|--:|--:|
-| **self-inflicted cost** | 10 | 10 |
+| **self-inflicted cost** | 11 | 11 |
 | **position** | 30 | 35 |
 | **control** | 19 | 23 |
 | **damage amp** | 12 | 22 |
@@ -44,25 +45,26 @@ A bucket names **what a card is for**, never the keyword it uses. Drew: *"discar
 | **initiative** | 10 | 16 |
 | **team support** | 10 | 16 |
 | **sustain** | 5 | 9 |
-| **card flow** | 9 | 13 |
+| **card flow** | 9 | 12 |
 | **hand denial** | 5 | 7 |
 | **payoff** | 4 | 5 |
-| **buff removal** | 4 | 6 |
+| **buff removal** | 3 | 5 |
 | **rps manipulation** | 5 | 5 |
 | **status inserters** | 2 | 2 |
 | **cleansing** | 1 | 1 |
 | **plain attack** | 1 | 1 |
+| **misc** | 0 | 1 |
 | | **143** | |
 
-### self-inflicted cost — 10 homed, 10 indexed
+### self-inflicted cost — 11 homed, 11 indexed
 
-A benefit bought with a real price paid by the user. The cost is the card's identity, not a drawback bolted on.
+A benefit bought with a real price paid by the user, including a card that exiles itself. The cost is the card's identity, not a drawback bolted on.
 
-BALANCE *(G)*, BERSERKER'S PRICE *(R)* → control, BLOOD TITHE *(R)* → team support, EMERGENCY REPAIRS *(R)* → sustain, OVERDRIVE *(R)* → position, RALLY *(R)* → position, SACRIFICE STRIKE *(R)* → damage amp, SHARED BURDEN *(G)* → defense/team support, TABLE STAKES *(R)* → defense/team support, UNMAKE *(B)* → buff removal
+BALANCE *(G)*, BERSERKER'S PRICE *(R)* → control, BLOOD TITHE *(R)* → team support, EMERGENCY REPAIRS *(R)* → sustain, OVERDRIVE *(R)* → position, RALLY *(R)* → position, SACRIFICE STRIKE *(R)* → damage amp, SHARED BURDEN *(G)* → defense/team support, STEAL *(G)* → initiative/misc, TABLE STAKES *(R)* → defense/team support, UNMAKE *(B)* → buff removal
 
 ### position — 30 homed, 35 indexed
 
-Moving yourself or someone else, or gaining something for holding still. Anchored, Rooted, Rushdown, Quick, Position-gated payoffs.
+Moving yourself or someone else, or gaining something for holding still.
 
 BIND *(G)*, CALCULATE *(B)*, CHARGE *(R)*, DART *(R)*, DEAD END *(B)*, DIG IN *(R)*, DUST *(G)* → control, FLOW *(G)*, FOOTWORK *(R)*, FRACTURE *(B)* → card flow, GORE *(R)*, GRAPPLE *(R)*, GROUNDING STANCE *(R)* → defense, HEAVE AND HAUL *(G)*, IRON GRIP *(R)*, MIRROR STEP *(G)*, PARTITION *(B)* → team support, PATIENCE OF STONE *(G)* → damage amp, PULL *(R)*, PUSH *(R)*, REALIGNMENT *(B)*, REPEL *(R)*, ROOTED OATH *(G)*, SEED *(G)* → damage amp/defense, SEISMIC REDIRECT *(R)* → damage amp, SLIPSTREAM *(B)* → defense, STARING CONTEST *(R)*, STILL POINT *(B)* → defense, SWAY *(G)*, TRAMPLE *(R)*
 
@@ -70,7 +72,7 @@ BIND *(G)*, CALCULATE *(B)*, CHARGE *(R)*, DART *(R)*, DEAD END *(B)*, DIG IN *(
 
 ### control — 19 homed, 23 indexed
 
-Taking away what a target can do or how well — Staggered, Blind, Sealed, Locked, Weak, Vulnerable.
+Taking away what a target can do or how well.
 
 ATTRITION *(R)*, AXIOM *(B)*, BLINDSIDE *(R)*, CALLED SHOT *(B)* → defense, CERTAIN STRIKE *(R)* → defense, DEAD RECKONING *(G)*, INTIMIDATE *(G)*, MARKED *(B)*, OPEN GUARD *(R)*, OPENING *(G)*, PREDICT *(B)*, REBUTTAL *(B)* → initiative, REELING *(R)*, REFRACT *(B)*, SECOND GUESS *(B)*, SHIELD BASH *(R)* → defense, TELL *(B)*, TWIN STRIKE *(G)*, VEIL *(B)*
 
@@ -116,17 +118,17 @@ BLOOD IN THE GAP *(R)* → damage amp, CONSUME *(G)*, RECOVER *(R)*, UNDERSTANDI
 
 *Also indexed here:* EMERGENCY REPAIRS, ENDURE, PARADOX, PRESS THE WOUND
 
-### card flow — 9 homed, 13 indexed
+### card flow — 9 homed, 12 indexed
 
 Moving your own cards around.
 
 ACCEPTANCE *(G)* → initiative, ALIGN *(B)*, ANTICIPATE *(B)* → control, ATTUNE *(G)*, CLIMB *(B)*, COMMUNION *(G)* → team support, FOCUS *(B)* → initiative, PROFILE *(B)*, STUDY *(B)*
 
-*Also indexed here:* BURN BRIGHT, FORGET, FRACTURE, STEAL
+*Also indexed here:* BURN BRIGHT, FORGET, FRACTURE
 
 ### hand denial — 5 homed, 7 indexed
 
-Reaching into a hand you cannot see — forced discard, forced reveal.
+Reaching into a hand you cannot see.
 
 FORGET *(B)* → card flow, READ *(G)*, STILLNESS *(B)*, UNNAME *(B)*, VOID *(G)* → control
 
@@ -140,11 +142,11 @@ BURN BRIGHT *(R)* → card flow, PRESS THE WOUND *(R)* → hand denial/sustain, 
 
 *Also indexed here:* FRAME-TRAP
 
-### buff removal — 4 homed, 6 indexed
+### buff removal — 3 homed, 5 indexed
 
 Taking from the opponent — stripping, stealing, or copying what they already have.
 
-DRAIN *(R)*, LEVEL THE FIELD *(G)*, STEAL *(G)* → card flow/initiative, WAITING GAME *(R)*
+DRAIN *(R)*, LEVEL THE FIELD *(G)*, WAITING GAME *(R)*
 
 *Also indexed here:* TRACE, UNMAKE
 
@@ -172,6 +174,13 @@ No effect on any line.
 
 OVERCOMMIT *(R)*
 
+### misc — 0 homed, 1 indexed
+
+Behaviours with exactly one card in the corpus. A holding pen, revisited if a second card joins.
+
+*(none homed here yet)*
+
+*Also indexed here:* STEAL
 
 ---
 
@@ -180,7 +189,8 @@ OVERCOMMIT *(R)*
 Set by hand; do not recompute away.
 
 - **CLIMB** → card flow · **CHAIN** → damage amp · **SEED** → position · **DEFLECT** → defense
-- **DRAIN, LEVEL THE FIELD, WAITING GAME, STEAL** → buff removal — a bucket the first pass missed entirely; the first three had fallen into plain attack.
+- **DRAIN, LEVEL THE FIELD, WAITING GAME** → buff removal — a bucket the first pass missed entirely; all three had fallen into plain attack.
+- **STEAL** → self-inflicted cost, with misc and initiative secondary (2026-08-17, Drew).
 - **FRAME-TRAP** → payoff and team support as secondaries, from reading its Special Rule.
 
 **The misfilings clustered on archetype cards.** SEED is The Cultivator's shipped example, GAMBLER'S RUIN The Gambler's, WAITING GAME The Mirror's. They resist mechanical sorting because their identity is a strategy rather than a mechanic — the gap Drew predicted keyword sorting would leave, arriving as data. That is what `cards/archetypes/` is for.
