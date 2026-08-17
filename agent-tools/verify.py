@@ -423,6 +423,68 @@ def check_hp_formula():
                   f'{len(seen)} files checked')
 
 
+def check_oracle_sync():
+    """The Oracle pool is mirrored in two places that were never derived from it
+    — `combatsimulations/content.py`'s ORACLE_DECK and `printing/generate-cards.py`'s
+    oracle card set — and kept in sync by hand. Hand-sync is exactly the failure
+    mode this file exists to catch.
+
+    Two invariants, deliberately different in strength:
+
+    1. The two code lists must always agree with each other. Both claim to hold
+       the same pool; if they disagree, one is stale no matter what the pool is.
+    2. They must match `Oracle/baseoracledeck.md` — but only when that file
+       actually lists a pool. It is deliberately empty right now (Drew is
+       building it by hand), and an empty pool is a stated state, not a
+       failure. The moment it is populated this check starts enforcing.
+    """
+    def names(text):
+        return re.findall(r'["\']([A-Z][A-Z0-9\'’ \-]+)["\']', text)
+
+    def block(path, start_re):
+        src = open(path, encoding='utf-8').read()
+        m = re.search(start_re, src, re.S)
+        if not m:
+            return None
+        depth, i = 0, m.end() - 1
+        for j in range(i, len(src)):
+            if src[j] == '[':
+                depth += 1
+            elif src[j] == ']':
+                depth -= 1
+                if depth == 0:
+                    return names(src[i:j])
+        return None
+
+    sim = block('combatsimulations/content.py', r'ORACLE_DECK\s*=\s*\[')
+    pr = block('printing/generate-cards.py', r"'title':\s*'Oracle Deck'.*?'cards':\s*\[")
+    bad = []
+    if sim is None:
+        bad.append("combatsimulations/content.py: ORACLE_DECK not found")
+    if pr is None:
+        bad.append("printing/generate-cards.py: Oracle Deck 'cards' list not found")
+
+    detail = None
+    if sim is not None and pr is not None:
+        for n in sorted(set(sim) - set(pr)):
+            bad.append(f'{n}: in content.py ORACLE_DECK, missing from generate-cards.py')
+        for n in sorted(set(pr) - set(sim)):
+            bad.append(f'{n}: in generate-cards.py, missing from content.py ORACLE_DECK')
+
+        pool_src = open('Oracle/baseoracledeck.md', encoding='utf-8').read()
+        pool = set(re.findall(NAME_RE, pool_src, re.M))
+        if pool:
+            for n in sorted(pool - set(sim)):
+                bad.append(f'{n}: in the Oracle pool, missing from both code lists')
+            for n in sorted(set(sim) - pool):
+                bad.append(f'{n}: in the code lists, not in the Oracle pool')
+            detail = f'{len(pool)} pooled cards'
+        else:
+            detail = (f'{len(sim)} mirrored; pool file empty by design, '
+                      'cross-check skipped')
+    return report('Oracle pool mirrors in sync', bad, detail)
+
+
 def check_print():
     script = 'printing/generate-all.sh'
     if not os.access(script, os.X_OK):
@@ -449,6 +511,7 @@ def main():
     check_restated_stat_blocks()
     check_distances()
     check_hp_formula()
+    check_oracle_sync()
     if quick:
         print('SKIP  print artifacts current (--quick)')
     else:

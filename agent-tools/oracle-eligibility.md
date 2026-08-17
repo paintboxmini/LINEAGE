@@ -34,7 +34,7 @@ Exact counts, not a lean. All nine cells hold or the pool is wrong.
 
 1. **Eligible / ineligible**, per card, with the specific criterion that disqualified each rejection. A rejection without a named reason is useless — the point is to see whether the criteria are cutting what they should.
 2. **The nine-cell fill.** How many eligible cards exist per colour × range cell, against the 12/6/3 target. Cells that can't be filled from the current corpus are the real finding: they say the core sets don't contain what the target asks for.
-3. **Sync status.** `combatsimulations/content.py`'s `ORACLE_DECK` and `printing/generate-cards.py`'s oracle card set still hold the old 63-card list, kept in sync by hand and never derived from the pool file. Report whether they match whatever the pool currently is.
+3. ~~**Sync status.**~~ **Moved to `agent-tools/verify.py`** as `check_oracle_sync` (2026-08-17, Drew: *"make it a verify check"*). It's a pass/fail correctness condition, which is verify's job, not this tool's. It holds two invariants of different strength: `combatsimulations/content.py`'s `ORACLE_DECK` and `printing/generate-cards.py`'s oracle set must always agree with each other, and both must match `Oracle/baseoracledeck.md` — but only once that file actually lists a pool, since it is deliberately empty right now. The cross-check arms itself the moment Drew populates it.
 
 ## What It Cannot Decide
 
@@ -51,4 +51,4 @@ Two judgment calls it can surface but not settle:
 
 ## Open Questions Before Building
 
-1. Should the sync check against `content.py` / `generate-cards.py` live here, or become a real `verify.py` check? It's a pass/fail correctness condition, which is verify's job rather than this tool's.
+*None. All settled as of 2026-08-17.*
