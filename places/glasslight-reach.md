@@ -12,7 +12,7 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
 
-**Hidden somewhere in the cliffs, not public knowledge and not meant to be, is a Mason lodge** — the order's whole discipline is walking in, doing the work, and leaving before anyone notices they were there. See `factions/the-masons.md`, `characters/mirel.md`.
+**Hidden somewhere in the cliffs, not public knowledge and not meant to be, is a Mason lodge** — the order's whole discipline is walking in, doing the work, and leaving before anyone notices they were there. See `factions/the-masons.md`, `characters/mirel/README.md`.
 
 ## What It Looks Like
 
@@ -30,7 +30,7 @@ They speak the common tongue like anyone else, day to day. But the cliffs sing �
 
 Some go further than matching tone for tone — reading the cliffsong for meaning, the way any people reads weather or stars, finding pattern and message in what the stone is doing. Not the same current as the People of Promise's own theology (`factions/people-of-promise.md`) — a separate, older relationship to a separate phenomenon, nature listened to rather than a thing to be saved from.
 
-They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
+They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue/README.md`, `characters/marren/README.md`, `characters/thess/README.md`.
 
 Most who leave don't stop wanting to come back, even just for a visit. Losing the town doesn't just mean losing a place — it means losing the only other voices that can complete your own name with you. That pull doesn't fade the way ordinary homesickness does.
 
@@ -50,7 +50,7 @@ Half the wall is light maps — the Glasslight chapter's own specialty (`faction
 
 One piece is the exception, and it isn't for sale: a Tomás Kettlewright piece, Guild chapter window bait, the light-dance rendered prominent in the background. Not a survey — a painting, worked in the same light-based pigments the rest of the wall uses, so it fades the way everything here does unless it's maintained. That it's a painting and not a technical light-cartography survey is the whole reason it's safe to make and safe to hang: an instrument-precise recording is close enough to the real thing that the Guild only ever maps the edge and never the water, for exactly this reason (`world/the-unheld.md`) — precision that close risks the viewer's own grip on what's actually in front of them. A painting never asks to be mistaken for that. It's legibly someone's hand and eye, once removed, and once-removed is what makes it safe no matter how skilled the hand is. It leaves out the standard cautionary notes lesser charts carry, because whoever stops to actually look at this one is assumed to already know them. It doesn't fade like the rest of the wall because Kettlewright himself won't let it — he comes back to retouch it before the color gives out, the same discipline as a Mason recutting a post, which is as much why it's the showpiece as the skill is. It isn't the Unheld itself, whatever it looks like — the coastline holds that line the same as it holds every other one (`world/the-unheld.md`) — just a picture of the thing beyond it, and pictures don't carry anything inland that water couldn't either.
 
-*(Kettlewright, Glasslight Reach chapter, already owes Kess a standing favor — `characters/kess.md`.)*
+*(Kettlewright, Glasslight Reach chapter, already owes Kess a standing favor — `characters/kess/README.md`.)*
 
 An apprentice tends the floor. Polite, guild-trained, and tired of the question — no, it's not for sale, no matter how it's asked.
 
@@ -74,11 +74,11 @@ The light-cartographers map the edge. Only the edge. Their atlases record where 
 
 - `quests/tide-pulls-back.md` — the adventure set here and on the cliffs
 - `factions/people-of-promise.md` — who lives here
-- `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
-- `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
-- `characters/corren.md`, `characters/sael.md`, `characters/wren.md` — the Promise congregation, three ways of carrying it
+- `characters/mirel/README.md`, `characters/kaine/README.md` — named figures of the Reach
+- `characters/rue/README.md`, `characters/marren/README.md`, `characters/thess/README.md` — light-cartography and its costs
+- `characters/corren/README.md`, `characters/sael/README.md`, `characters/wren/README.md` — the Promise congregation, three ways of carrying it
 - `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
 - `factions/the-cartographers-guild.md` — headquartered here; related to the light-cartographers but a distinct institution
-- `characters/kess.md` — Tomás Kettlewright, the Gallery showpiece's painter, already owes her a standing favor
+- `characters/kess/README.md` — Tomás Kettlewright, the Gallery showpiece's painter, already owes her a standing favor
 - `world/the-unheld.md` — the coastline threshold the Gallery's showpiece is checked against
 - `items/lightning-loop.md` — what the cliffs are holding

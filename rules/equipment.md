@@ -69,7 +69,7 @@ The ratio is the rule; the numbers are what it produces. A GM needs to know exac
 
 **Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria (`memory.md`, Campaign Status). Gear arrives when the party first stands somewhere that sells it.
 
-**Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
+**Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector/README.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
 
 **The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
 

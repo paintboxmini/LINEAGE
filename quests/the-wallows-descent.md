@@ -136,7 +136,7 @@ Four feet across. Depth unknown. Crossing requires extending the body fully — 
 Prisoners cross this multiple times per shift. The ones still alive have developed technique.
 
 **Combat on the shelf:**
-See `bestiary/the-descended.md` for full stat block and abilities.
+See `bestiary/the-descended/README.md` for full stat block and abilities.
 
 *The party that spreads out — one watching each direction while another crosses — is reading the room correctly. The shelf rewards parties that think in positions.*
 
@@ -202,7 +202,7 @@ They don't attack. They move toward the party slowly, reaching. Getting envelope
 
 *Tactical note: slimes can be moved around. They follow warmth. A player who moves slowly enough will find the slimes part around them.*
 
-**Stat block:** `bestiary/wallows-slime.md`
+**Stat block:** `bestiary/wallows-slime/README.md`
 
 ---
 
@@ -267,7 +267,7 @@ Salvage is a different question and is fair game. The labour level has debt-slav
 - `places/capital/the-wallows.md` — location overview
 - `factions/demon-court.md` — Pazuzu, guard hierarchy
 - `places/capital/underground-bazaar.md` — above
-- `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
+- `characters/kess/README.md`, `characters/giblets/README.md` — whose rescue attempt this is
 - `world/seats.md` — Aurora, Seat of Love/Binding
-- `bestiary/wallows-slime.md` — stat block, passives, and the signature cards
-- `bestiary/the-descended.md` — The Shelf inhabitants
+- `bestiary/wallows-slime/README.md` — stat block, passives, and the signature cards
+- `bestiary/the-descended/README.md` — The Shelf inhabitants

@@ -6,7 +6,7 @@
 
 **THE SILENT BLADE**
 *Weapon (Tier 3) — "A blade that never dulls."*
-*Source: cut, found, or given at the Silent Choir — Fermata has never specified which (`bestiary/fermata.md`). Already loose in the world; this entry is the item's catalog listing, not a standing offer to find another.*
+*Source: cut, found, or given at the Silent Choir — Fermata has never specified which (`bestiary/fermata/README.md`). Already loose in the world; this entry is the item's catalog listing, not a standing offer to find another.*
 *Price: ~2,000 gold*
 Passive — every attack this weapon makes gains Deadly, while the attack is Melee (or Both, played at Melee range — both you and the target in the Frontline, `rules/combat.md`, Range Matrix). Ranged attacks made with it don't qualify — closing to melee is the cost.
 
@@ -16,7 +16,7 @@ Passive — every attack this weapon makes gains Deadly, while the attack is Mel
 
 **THE SILENT RING**
 *Artifact — a plain band, unmarked, cold regardless of how long it's worn*
-*Source: the Silent Choir, held by Fermata. Not bought, not sold — won by defeating Fermata, or left behind if a party earns its trust the quieter way (`bestiary/fermata.md`, Encounter Setup).*
+*Source: the Silent Choir, held by Fermata. Not bought, not sold — won by defeating Fermata, or left behind if a party earns its trust the quieter way (`bestiary/fermata/README.md`, Encounter Setup).*
 *Price: none — an Artifact's worth is cosmological before it's economic (`rules/equipment.md`, Artifacts), and this one was never for sale to begin with.*
 Effect: Once per combat, name an enemy. Until the end of their next turn, no ally's "Target ally" effect (buffs, heals, coordination) may target them. Whatever help they'd normally get, they don't — for a moment, they're entirely on their own.
 
@@ -27,6 +27,6 @@ Effect: Once per combat, name an enemy. Until the end of their next turn, no all
 ## Related Documents
 
 - `places/the-silent-choir.md` — where both of these are from
-- `bestiary/fermata.md` — the guardian, and how the Ring is actually won
+- `bestiary/fermata/README.md` — the guardian, and how the Ring is actually won
 - `rules/equipment.md` — Artifacts, and the Silent Blade's Tier 3 budget
 - `items/fog-basin-items.md` — Fog Goggles, the precedent for leaving an Artifact's Seat alignment open

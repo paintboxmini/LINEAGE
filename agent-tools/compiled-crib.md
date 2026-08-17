@@ -72,7 +72,7 @@ Enemy deck: **size = total stats, color counts = each stat** (signatures count t
 **Creature Threat Rating:** N
 ```
 
-Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks, sized and colored to the stat line — see `bestiary/tollbird.md` for the full pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.
+Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exist, and should list a **recommended full deck** (3 signature + core picks, sized and colored to the stat line — see `bestiary/tollbird/README.md` for the full pattern; backfilling older entries is queued work). Named people go in `characters/`, never `bestiary/`.
 
 ## Encounter skeleton
 
@@ -82,7 +82,7 @@ Bestiary files open with `**Cards:** \`cards/name.md\`` when signature cards exi
 
 ## NPC voice (Function / Pressure / Hook)
 
-*(exemplars: Aege/Bartho/Kino in `places/vultures-nest.md`; Weck in `characters/weck.md`)*
+*(exemplars: Aege/Bartho/Kino in `places/vultures-nest.md`; Weck in `characters/weck/README.md`)*
 
 Four lines of Weck, as the register to hit: *a cart that doesn't smell like animals; buys culls at fair prices, never early, never late; will buy one Wound for coin and your name in his ledger, in your own hand; answers questions honestly and unhelpfully, which is worse.* — Function (buyer), Pressure (the terms), Hook (the ledger, deliberately unanswered). Refusing is always a complete answer. NPCs embody rules; they never explain them.
 

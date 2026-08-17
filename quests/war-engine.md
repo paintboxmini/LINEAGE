@@ -141,7 +141,7 @@ One real combat encounter is enough. Let it be short, sharp, dangerous, and posi
 
 ## The Alignment Marshal
 
-See `bestiary/alignment-marshal.md`.
+See `bestiary/alignment-marshal/README.md`.
 
 ### Reveal Structure
 

@@ -70,7 +70,7 @@ Do not offer the party a version of this where the father can be reasoned with. 
 
 ## Where the Kids Go
 
-An orphanage in the Fog Basin, rebuilt on the site of one that burned, is a standing answer to exactly this question — real, operating, takes children with nowhere else to go. Steele rebuilt it, on the same ground where he grew up and survived the fire that took the original (`places/fog-basin.md`, `characters/steele.md`). It just costs the party a longer trip to get there.
+An orphanage in the Fog Basin, rebuilt on the site of one that burned, is a standing answer to exactly this question — real, operating, takes children with nowhere else to go. Steele rebuilt it, on the same ground where he grew up and survived the fire that took the original (`places/fog-basin.md`, `characters/steele/README.md`). It just costs the party a longer trip to get there.
 
 ---
 

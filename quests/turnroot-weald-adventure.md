@@ -18,11 +18,11 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 
 **Pressure 4 is not the only road to the Root Heart.** A gold piece paid into Seeker's Price opens the way there directly, at whatever Pressure the party is currently carrying — voluntarily, and much earlier than the track would have taken them.
 
-**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart.md`, What It Is / GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
+**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart/README.md`, What It Is / GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
 
 ### Rootstalker Trail Quality (Overgrowth)
 
-Under the old, pre-Overgrowth ruleset, Rootstalkers only entered play on failed navigation at Pressure 2+ (`bestiary/rootstalker.md`, still the correct behavior once Overgrowth ends — see Post-Defeat). **Overgrowth changes when they start, not what they are:** the mobile pruning tools have turned on the people they used to pass, and that hunger is present in the woods from the moment the party steps under canopy — not gated behind a Pressure threshold or a failed check. What Pressure controls instead is how well they hold the party's trail once they're already looking.
+Under the old, pre-Overgrowth ruleset, Rootstalkers only entered play on failed navigation at Pressure 2+ (`bestiary/rootstalker/README.md`, still the correct behavior once Overgrowth ends — see Post-Defeat). **Overgrowth changes when they start, not what they are:** the mobile pruning tools have turned on the people they used to pass, and that hunger is present in the woods from the moment the party steps under canopy — not gated behind a Pressure threshold or a failed check. What Pressure controls instead is how well they hold the party's trail once they're already looking.
 
 | Pressure | Trail quality | What it looks like at the table |
 |----------|---------------|----------------------------------|
@@ -39,9 +39,9 @@ Pressure still only rises on failed navigation or customs violations (DM may hol
 | State | What runs |
 |-------|-----------|
 | **Overgrowth** (this campaign, until Root Heart falls) | Rootstalkers hunt from entry; trail quality scales with Pressure (above); Forest Customs enforced hard; the Holdfast under pressure |
-| **Normal** (after a successful cut, or any future visit past this one) | Rootstalkers gate at Pressure 2+ on failed navigation only (`bestiary/rootstalker.md`); no baseline hunting from step-in; forest-people range recovers over time |
+| **Normal** (after a successful cut, or any future visit past this one) | Rootstalkers gate at Pressure 2+ on failed navigation only (`bestiary/rootstalker/README.md`); no baseline hunting from step-in; forest-people range recovers over time |
 
-The party's own cut, if they make it, is one more ring (`bestiary/root-heart.md`, What It Is).
+The party's own cut, if they make it, is one more ring (`bestiary/root-heart/README.md`, What It Is).
 
 ---
 
@@ -315,7 +315,7 @@ There's no third option that stays legal. They go over, or they raise the track.
 
 **The Climb — DC 17 Body (Senses or raw exertion, DM's read of the fiction).** Only one character must succeed. On a success, that character reaches the crown and can lower a rope, extend a hand, or haul the others up — the rest follow without individual checks once the first is set. **Advantage** if at least one ally helps from below (boost, braced rope, calling holds) — helping is an action or a clear fiction commitment, not free while also climbing. On a **failure**, the climber falls or slides back to the near side; no damage required unless the fiction is nasty, the cost is time, noise, and another attempt. A loud failure is a gift to anything tracking them — treat as a minor noise event against current Rootstalker trail quality (above). Tools (rope, a Dockhook Line) justify Advantage or a second helper; they don't lower the DC. The tree is the test, not the kit.
 
-**What's in the crown.** The first climber reaches the top *alone*. The others are still on the trunk or the ground. A **Flower Snake** (`bestiary/flower-snake.md`) has been still the whole climb — pattern matches blossom and bark. It strikes while the climber is alone. See that file's Ambush section for the check. This isn't a Rootstalker. The forest isn't pruning anyone here — something smaller is using the custom as cover.
+**What's in the crown.** The first climber reaches the top *alone*. The others are still on the trunk or the ground. A **Flower Snake** (`bestiary/flower-snake/README.md`) has been still the whole climb — pattern matches blossom and bark. It strikes while the climber is alone. See that file's Ambush section for the check. This isn't a Rootstalker. The forest isn't pruning anyone here — something smaller is using the custom as cover.
 
 ---
 
@@ -442,7 +442,7 @@ A shrine overtaken by roots. A single intact bronze bell hangs, undisturbed by g
 
 **The Reveal:** An underground Rootstalker nest. Half-formed Rootstalkers are being *extruded* from the thick root lattice of the den walls. Sleeping Rootstalkers lie in the den — players who are not careful will wake them.
 
-See `bestiary/rootstalker.md` for stat block and loot.
+See `bestiary/rootstalker/README.md` for stat block and loot.
 
 ---
 
@@ -460,7 +460,7 @@ Old trees with heavily grooved bark. The overhanging bark creates natural alcove
 
 DC 13 Mind/Reason to spot the nests before entering. On failure, the party disturbs the colony.
 
-**Encounter:** See `bestiary/future-lock-wasp.md` for swarm mechanics, save DCs, and dispersal methods. Fire is risky here — dense canopy, DM discretion on spread.
+**Encounter:** See `bestiary/future-lock-wasp/README.md` for swarm mechanics, save DCs, and dispersal methods. Fire is risky here — dense canopy, DM discretion on spread.
 
 **Harvest:** DC 14 Body/Senses to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
 
@@ -478,7 +478,7 @@ A massive spider corpse hangs center-web. Investigation reveals it died first. S
 
 Soft scraping sounds move deeper in the web-maze. Something large, moving between silk highways.
 
-**Encounter:** See `bestiary/bone-collector.md` for the full encounter, cycle structure, and investigation aftermath.
+**Encounter:** See `bestiary/bone-collector/README.md` for the full encounter, cycle structure, and investigation aftermath.
 
 **Loot:** Spider Silk Rope, Harvest Bead, Bone Collector Flesh. See `items/turnroot-weald-items.md`.
 
@@ -514,7 +514,7 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Bone Collector Flesh | The Bone Collector | See `items/turnroot-weald-items.md` |
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
-| Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `places/capital/gilded-tusk.md`. See `bestiary/kiwi-bird.md`. |
+| Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `places/capital/gilded-tusk.md`. See `bestiary/kiwi-bird/README.md`. |
 
 ---
 

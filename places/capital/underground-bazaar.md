@@ -108,7 +108,7 @@ Giblets is a ghoul — unhinged in a way that is not the same as tragic. The sta
 
 The line in front of the stall is the bazaar's most famous feature. It grows. It does not shrink. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
 
-See `characters/giblets.md`.
+See `characters/giblets/README.md`.
 
 **The Tattooist — Keeper of Echoes**
 
@@ -124,7 +124,7 @@ Clients can theoretically reclaim what they've sold — but only by returning th
 
 **Lily — The Dream-Hunter**
 
-Full profile now lives in `characters/lily.md`. Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
+Full profile now lives in `characters/lily/README.md`. Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
 
 **The Cartographer — Personal Geography**
 
@@ -200,13 +200,13 @@ Not confined to the bazaar. First encountered here.
 
 **Kess**
 
-Granddaughter of the Cartographer. Full profile — backstory, the mine, her connections — now lives in `characters/kess.md`. Found here moving through the bazaar with a legitimate-seeming reason to be anywhere; her grandmother's intelligence network runs partly through her, and she doesn't advertise it.
+Granddaughter of the Cartographer. Full profile — backstory, the mine, her connections — now lives in `characters/kess/README.md`. Found here moving through the bazaar with a legitimate-seeming reason to be anywhere; her grandmother's intelligence network runs partly through her, and she doesn't advertise it.
 
 ---
 
 **Moth**
 
-Full profile now lives in `characters/moth.md`. Found here spending freely from a coin purse that never gets lighter, playing Liar's Dice at the tavern table most nights, watched with professional wariness by the house gremlin, who has flagged him as a person of interest and cannot find a rule he's breaking.
+Full profile now lives in `characters/moth/README.md`. Found here spending freely from a coin purse that never gets lighter, playing Liar's Dice at the tavern table most nights, watched with professional wariness by the house gremlin, who has flagged him as a person of interest and cannot find a rule he's breaking.
 
 ---
 

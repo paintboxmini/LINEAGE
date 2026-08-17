@@ -83,7 +83,7 @@ Which means the only way anything truly unrecorded moves through the Nest is if 
 
 Jonas believes a complete record is the one thing nobody can ever blame you for — a doctrine he brought with him from Glasslight, a town where being loud or being wrong were close to the same offense. He has never once, in his whole career, left something out of a ledger on purpose. Whatever isn't currently in this one is the first time that's stopped being true, and he still doesn't have a name for what changed.
 
-**Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
+**Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege/README.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
 
 Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
 
@@ -100,7 +100,7 @@ If the party rushes to find her without looking: she finds them. But the route s
 
 The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."
 
-Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
+Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher/README.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
 
 If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
 
@@ -147,7 +147,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"The man with the boomstick has been asking about the Moving Crate."*
 
-**Stat block and cards:** `characters/masaharu.md`, `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md`
+**Stat block and cards:** `characters/masaharu/README.md`, `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md`
 
 **Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 
@@ -181,11 +181,11 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 ## The Market
 
-The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin. See `bestiary/duskwick.md`.
+The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin. See `bestiary/duskwick/README.md`.
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
+- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher/README.md`.
 - *Ignore it:* It opens on its own later. DM chooses when.
 - *Carry it:* Bad idea. The party will figure out why.
 
@@ -199,7 +199,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 
 **Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
 
-**Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
+**Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel/README.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
 
 **Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
 
@@ -271,6 +271,6 @@ The Red Scarves are already in your peripheral vision.
 ## Related Documents
 
 - `quests/washed-ashore.md` — the campaign's current opening, which this location no longer takes part in
-- `characters/aege.md`, `characters/corvel.md`, `characters/masaharu.md` — full profiles for NPCs found here
+- `characters/aege/README.md`, `characters/corvel/README.md`, `characters/masaharu/README.md` — full profiles for NPCs found here
 - `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
-- `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours
+- `bestiary/duskwick/README.md` — small stray predators worked into the Market's off-hours

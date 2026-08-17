@@ -115,7 +115,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ## Kaine (Storm Seat Artifact)
 
-*Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
+*Full entry: `items/lightning-loop.md`, `characters/kaine/README.md`.*
 
 - **The Lightning Loop** — a ring, Storm Seat-aligned, currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. The Storm Seat itself is now borne by Greed (`world/seats.md`) — whether that has any bearing on Kaine's own claim to this Artifact is unestablished, on purpose.
 
@@ -136,7 +136,7 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ## The Silent Choir
 
-*Full entries: `items/the-silent-choir-items.md`. Source: `places/the-silent-choir.md`, held by Fermata (`bestiary/fermata.md`). Neither item is for sale.*
+*Full entries: `items/the-silent-choir-items.md`. Source: `places/the-silent-choir.md`, held by Fermata (`bestiary/fermata/README.md`). Neither item is for sale.*
 
 - **The Silent Blade** *(Weapon, Tier 3)* — every Melee (or Both, at melee range) attack gains Deadly. ~2,000 gold. Already loose in the world; this is its origin, not a standing offer to find a second.
 - **The Silent Ring** *(Artifact)* — once per combat, name an enemy: no ally "Target ally" effect may reach them until the end of their next turn. Won, not bought.

@@ -53,13 +53,13 @@ This information is available through investigation. The crystal pulses in appar
 
 ## The Gluttony Abomination
 
-See `bestiary/gluttony-abomination.md`.
+See `bestiary/gluttony-abomination/README.md`.
 
 ---
 
 ## Notes
 
-*Adapted to Tales Untold 2026-08-02. The Abomination's stat block, passives, and the tremor-door DCs live in `bestiary/gluttony-abomination.md`; its cards are in `cards/gluttony-abomination.md`. The crystal-as-stabilizer remains open by design.*
+*Adapted to Tales Untold 2026-08-02. The Abomination's stat block, passives, and the tremor-door DCs live in `bestiary/gluttony-abomination/README.md`; its cards are in `cards/gluttony-abomination.md`. The crystal-as-stabilizer remains open by design.*
 
 ---
 

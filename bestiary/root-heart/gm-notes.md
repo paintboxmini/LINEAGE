@@ -1,0 +1,5 @@
+# Root Heart — GM Notes — Why It's Aggressive Now
+
+The Root Heart cycles between a dormant state and this one — Overgrowth. Growing outward is its default; the Masons' containment line at Briarwatch (`factions/the-masons.md`, Known Works) has held the Weald's natural expansion back for as long as the fence has stood, and the pressure that would normally spend itself outward has nowhere left to go but in. **That redirection is not an accident the fence happened to cause — it's what the fence was built to do.** The Masons understood that unchecked growth here would behave parasitically if left an open outward path, and chose this cycle, this cost, as the contained alternative. This is that cycle at its current peak, not a reaction to the party, to Paid Passage, or to the toll wall — all three are simply present when it happens to be turning, not the cause of it. Full mechanism: `characters/aege/README.md`, GM Secret.
+
+---

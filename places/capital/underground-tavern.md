@@ -23,7 +23,7 @@ The clientele: debt collectors, failed alchemists, vendors who got in too deep w
 
 A necromancer. Precise. Runs the place with no apparent interest in anything except keeping it running. Pours without being asked for the right people.
 
-See `characters/mortis.md`.
+See `characters/mortis/README.md`.
 
 ---
 
@@ -61,7 +61,7 @@ Most of them are losing ground. The tables are where they come to feel like the 
 
 ## Lily — At the Tavern
 
-Full profile now lives in `characters/lily.md`. Comes here sometimes, same corner table if one is free — Mortis pours without being asked, same as he does for Kess.
+Full profile now lives in `characters/lily/README.md`. Comes here sometimes, same corner table if one is free — Mortis pours without being asked, same as he does for Kess.
 
 ---
 

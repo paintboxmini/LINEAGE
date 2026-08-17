@@ -6,7 +6,7 @@ Everything here is found, not bought — there's no vendor on this stretch of co
 
 ## Hullback's Den
 
-Available once Hullback (`bestiary/hullback.md`) is killed, driven off, or abandons the fight — see that file, Encounter Setup. Years of salvage from whatever this stretch of coast has wrecked, picked over by something that never had a reason to throw anything back.
+Available once Hullback (`bestiary/hullback/README.md`) is killed, driven off, or abandons the fight — see that file, Encounter Setup. Years of salvage from whatever this stretch of coast has wrecked, picked over by something that never had a reason to throw anything back.
 
 **WRECK-IRON CUTTER**
 *Weapon — a boarding blade, pitted with rust but the edge still holds*
@@ -42,6 +42,6 @@ Available without a fight — a GM call on how long a search takes and what the 
 ## Related Documents
 
 - `quests/washed-ashore.md` — where all of this is found
-- `bestiary/hullback.md` — the den this gear comes out of
-- `bestiary/wrackclaw.md` — the coast's other resident; carries nothing worth looting
+- `bestiary/hullback/README.md` — the den this gear comes out of
+- `bestiary/wrackclaw/README.md` — the coast's other resident; carries nothing worth looting
 - `rules/equipment.md` — the pricing curve these reference prices are checked against

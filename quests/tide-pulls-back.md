@@ -1,6 +1,6 @@
 # The Tide Pulls Back
 
-*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `items/lightning-loop.md`.*
+*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel/README.md`, `characters/kaine/README.md`, `characters/steve-and-pip/README.md`, `items/lightning-loop.md`.*
 
 ---
 
@@ -46,7 +46,7 @@ She describes The Final Current's practices: Kaine's claim that coming back from
 **What Mirel knows:**
 - Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
-- Steve — a new initiate, hasn't bathed, harmless-seeming — still hangs around Kaine's people without being one of them anymore. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine.md`, The Pitch) — and watched Steve go pale and back out of it on the spot. No Current bath under Kaine. He just hasn't found anywhere else to be yet.
+- Steve — a new initiate, hasn't bathed, harmless-seeming — still hangs around Kaine's people without being one of them anymore. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine/README.md`, The Pitch) — and watched Steve go pale and back out of it on the spot. No Current bath under Kaine. He just hasn't found anywhere else to be yet.
 
 **What Mirel doesn't know:**
 - The Lightning Loop is a Storm Seat resonant item
@@ -63,7 +63,7 @@ That night or the following morning: unusual activity at the river docks — Gla
 
 **The Void Runners** use stolen resonant items as weapons. Some of their crew are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read.
 
-Stat blocks: `bestiary/void-runner.md` and `bestiary/corrupted-bather.md`.
+Stat blocks: `bestiary/void-runner/README.md` and `bestiary/corrupted-bather/README.md`.
 
 **What the cargo reveals:**
 Kaine has been building a supply of resonant material. The Lightning Loop is the centerpiece but not the only item. He has been preparing for something larger than miracle performances.
@@ -86,11 +86,11 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 **The Water Trick:**
 If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
 
-A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing (`characters/kaine.md`, The Goal).
+A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing (`characters/kaine/README.md`, The Goal).
 
 A Mind check (DC 13) while watching: the ring. It doesn't fit him. That detail exists before the party knows why it matters.
 
-A second look, same DC (or harder, if the GM wants it rarer): he doesn't look unlocked enough for his own story. Long-devotees carry visible marks. Kaine carries one — small, ordinary, the kind a single bath leaves, not a hundred (`characters/kaine.md`, Character Notes). Certainty in the voice. Almost nothing on the face.
+A second look, same DC (or harder, if the GM wants it rarer): he doesn't look unlocked enough for his own story. Long-devotees carry visible marks. Kaine carries one — small, ordinary, the kind a single bath leaves, not a hundred (`characters/kaine/README.md`, Character Notes). Certainty in the voice. Almost nothing on the face.
 
 ---
 
@@ -143,7 +143,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **Steve:** still in the crowd somewhere. Still Steve. He never bathed under Kaine and never will. His own, ordinary bathing — normal custom, nothing to do with any of this — is a different story entirely.
 
-*His arc continues later — see `characters/steve-and-pip.md`.*
+*His arc continues later — see `characters/steve-and-pip/README.md`.*
 
 ---
 
@@ -173,8 +173,8 @@ If the party has managed to make all three owe them something, that is worth mor
 
 - `factions/people-of-promise.md`
 - `factions/the-masons.md`
-- `characters/mirel.md`
-- `characters/kaine.md`
-- `characters/steve-and-pip.md`
+- `characters/mirel/README.md`
+- `characters/kaine/README.md`
+- `characters/steve-and-pip/README.md`
 - `items/lightning-loop.md`
 - `places/glasslight-reach.md`

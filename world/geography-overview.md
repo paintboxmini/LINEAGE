@@ -44,7 +44,7 @@ Six segments: the three edges of the triangle above, plus a spoke from each corn
 - Turnroot Weald ↔ Eclipseria — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint
 - Vulture's Nest ↔ Eclipseria — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
 
-**Inns confirmed and built out:** the Roadhouse (`places/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipseria–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host.md`) on the Turnroot–Eclipseria spoke.
+**Inns confirmed and built out:** the Roadhouse (`places/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipseria–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host/README.md`) on the Turnroot–Eclipseria spoke.
 
 **Inns confirmed, not yet built:** the remaining three segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipseria) each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
 
@@ -80,7 +80,7 @@ Wind doesn't share the loop. It breathes the same in-and-out the tide does, only
 
 Islands stand in the larger lakes and wide river reaches. They are inhabited, trade-connected, and reachable by ordinary boats. Whatever strangeness they hold is their own.
 
-Where a river runs close to the coastline itself, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), named for exactly this. See `places/the-coil.md` for what one became.
+Where a river runs close to the coastline itself, its banks turn to coral — reef growth thick enough to shape the channel, not just line it. Nothing unheld about the coral; it's ordinary this close to the threshold. It's also, incidentally, a native habitat for Coralcoils — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil/README.md`), named for exactly this. See `places/the-coil.md` for what one became.
 
 ## Key Landmarks (Summary)
 

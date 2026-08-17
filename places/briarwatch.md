@@ -14,7 +14,7 @@ The farmland doesn't stop at a tidy line — it was cut a little way into the We
 
 The watchtower ruins on the western side predate Briarwatch itself. Nobody knows who built them or why. The well at the ruins' center is dried up.
 
-Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer builds them. Nobody takes them down. See `bestiary/briarbundles.md`.
+Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer builds them. Nobody takes them down. See `bestiary/briarbundles/README.md`.
 
 Valhug Lake sits in the center of Briarwatch — deep and cold.
 
@@ -28,7 +28,7 @@ The first thing the road shows on the way in: Iron at his fence line on the West
 
 Iron does the clearing without much comment. He's been waiting for real help a lot longer than a survey, and it shows in how little he says to the man directing him. The cartographer, for his part, is polite, thorough, and entirely uninterested in anything the sinkhole might actually be — he's here to measure lost grazing acreage, not to ask what's underneath it.
 
-The sinkhole itself is visible from the road, a dark gap in a fenced-off field, roped and posted the way Iron's own property already has it (`characters/iron.md`). Nobody's gone near it since the survey started. Nobody who lives here needs to be told why.
+The sinkhole itself is visible from the road, a dark gap in a fenced-off field, roped and posted the way Iron's own property already has it (`characters/iron/README.md`). Nobody's gone near it since the survey started. Nobody who lives here needs to be told why.
 
 ---
 
@@ -36,7 +36,7 @@ The sinkhole itself is visible from the road, a dark gap in a fenced-off field, 
 
 **The Abandoned Homestead** — off the road on the way in. A claim that failed, and something's taken up residence in the doorway. Full location and encounter below.
 
-**The Western Property** — bordered by the watchtower ruins; farmers who have been here long enough still call it the old well property, after the shaft that goes down into the caves. The sinkhole is here. Fenced off with rope and splintered posts. **Iron**, the farmer who owns it, has been waiting for help longer than he'd like to admit (`characters/iron.md`). See `quests/hollow-below-briarwatch.md`.
+**The Western Property** — bordered by the watchtower ruins; farmers who have been here long enough still call it the old well property, after the shaft that goes down into the caves. The sinkhole is here. Fenced off with rope and splintered posts. **Iron**, the farmer who owns it, has been waiting for help longer than he'd like to admit (`characters/iron/README.md`). See `quests/hollow-below-briarwatch.md`.
 
 **The Larder Fence** — well past the last field, out past the watchtower ruins. The Tollbirds' stretch of the old Masons' fence. Full location and encounter below.
 
@@ -56,15 +56,15 @@ Off the road on the way in, set back far enough that the party has to choose to 
 
 If a player asks what happened here, the honest GM answer is that nothing in the house says. That's not a dodge. Let it sit.
 
-**Something is living in the doorway** — the large Duskwick (`bestiary/duskwick.md`, The Large One: Mind 4 / Body 4 / Soul 6, HP 22, Creature Threat Rating 14). It's in the band where the light stops, which is where a Duskwick is always going to be if a building offers it one — it's been eating well and hasn't had to work for it. It doesn't ambush the yard; it ambushes the *doorway*, the first character who crosses the threshold from either direction. A party that searches the yard, reads every detail, and leaves has a completely uneventful visit and never knows.
+**Something is living in the doorway** — the large Duskwick (`bestiary/duskwick/README.md`, The Large One: Mind 4 / Body 4 / Soul 6, HP 22, Creature Threat Rating 14). It's in the band where the light stops, which is where a Duskwick is always going to be if a building offers it one — it's been eating well and hasn't had to work for it. It doesn't ambush the yard; it ambushes the *doorway*, the first character who crosses the threshold from either direction. A party that searches the yard, reads every detail, and leaves has a completely uneventful visit and never knows.
 
-A party that hasn't spotted it grants the Duskwick the first attack of the encounter, uncontested (same terms as the Briarbound's Learned the Shape, `bestiary/briarbundles.md`), made from inside its own threshold — THRESHOLD's condition is live, it hasn't been attacked, and it opens at +4 with Blind. Senses or Reason, DC 15 from the yard, spots the interrupted weathering band; anyone who's already met Iron's own Duskwick gets this at DC 11 instead. It won't follow into open ground, same as every Duskwick — disengaging always works.
+A party that hasn't spotted it grants the Duskwick the first attack of the encounter, uncontested (same terms as the Briarbound's Learned the Shape, `bestiary/briarbundles/README.md`), made from inside its own threshold — THRESHOLD's condition is live, it hasn't been attacked, and it opens at +4 with Blind. Senses or Reason, DC 15 from the yard, spots the interrupted weathering band; anyone who's already met Iron's own Duskwick gets this at DC 11 instead. It won't follow into open ground, same as every Duskwick — disengaging always works.
 
 **Three endings, all complete:** never stop (the party passes it on the road, foreshadowing still works); stop, read the yard, leave (the best version, no fight); or cross the threshold, fight, and end it when the Duskwick drops or the party stops standing in the doorway. Killing it isn't a reward — there's no loot, and the house is still empty.
 
 **Running it:** don't make this sad on purpose. The house isn't a tragedy being performed — it's a place where the work stopped and the weather kept going. Hold the two fresh bundles until someone looks at the bundles specifically; it's the one detail that doesn't fit the rest of the yard's story. Nothing on the property answers them — that answer is standing in a different field.
 
-**GM Secret:** The well went first — same limestone as the rest of Briarwatch, and the Hollow's tunnel network runs wider underneath than anyone above ground has established. The family lost their water, then their ground, then the argument about staying, and left in order, slowly — nothing's smashed, nothing was worth carrying. The fences were broken outward by the Fenwool, over one winter, unattended. Nothing killed anyone here; the Duskwick came years later, to an empty house with a good doorway. The doll is a deliberate misdirection and should stay one — a toy left outside during a days-long move, nobody went back for it; if a player asks directly, don't confirm or deny, the mundane answer is the worse one and only works unspoken. **Iron ties the fresh bundles** — has since the family left, comes over in autumn with cuttings, puts two up, goes home, has never mentioned it and doesn't hold it as a decision he made. Asked directly he says somebody should, and that's the whole answer he has; the party only gets this by putting the two claims together and asking him. He doesn't go inside — the house isn't his, so he's never crossed the threshold, which is why he's never met the Duskwick either. What's still unexplained is the winter: old bundles vanish and the First Bundle is larger every spring, and nobody's connected those two facts (`bestiary/briarbundles.md`, `bestiary/the-first-bundle.md`). Iron answers who ties the new ones. He doesn't answer where the old ones go.
+**GM Secret:** The well went first — same limestone as the rest of Briarwatch, and the Hollow's tunnel network runs wider underneath than anyone above ground has established. The family lost their water, then their ground, then the argument about staying, and left in order, slowly — nothing's smashed, nothing was worth carrying. The fences were broken outward by the Fenwool, over one winter, unattended. Nothing killed anyone here; the Duskwick came years later, to an empty house with a good doorway. The doll is a deliberate misdirection and should stay one — a toy left outside during a days-long move, nobody went back for it; if a player asks directly, don't confirm or deny, the mundane answer is the worse one and only works unspoken. **Iron ties the fresh bundles** — has since the family left, comes over in autumn with cuttings, puts two up, goes home, has never mentioned it and doesn't hold it as a decision he made. Asked directly he says somebody should, and that's the whole answer he has; the party only gets this by putting the two claims together and asking him. He doesn't go inside — the house isn't his, so he's never crossed the threshold, which is why he's never met the Duskwick either. What's still unexplained is the winter: old bundles vanish and the First Bundle is larger every spring, and nobody's connected those two facts (`bestiary/briarbundles/README.md`, `bestiary/the-first-bundle/README.md`). Iron answers who ties the new ones. He doesn't answer where the old ones go.
 
 ---
 
@@ -76,7 +76,7 @@ Not a farmer's fence — squared stone posts, evenly set, standing several times
 
 Impaled along it: small things that wander this far without anyone missing them, and — hung heavier than the rest — a whole Fenwool, fleece still damp. **This one is unrelated to the tracked Fenwool losses at the Roadhouse** — Briarwatch doesn't graze anything within reach of this border, so whatever's taking Fenwool from the north field, it isn't this. The one in the larder wandered off alone, from somewhere else, and paid for it. A stray, not a pattern — don't let a table connect it to the tracked losses without a reason to.
 
-**Enemies:** 2 Tollbirds (`bestiary/tollbird.md`, Mind 2/Body 3/Soul 4, HP 15, Creature Threat Rating 9 each — 18 total, a real fight for a 4-player party), cycles staggered, one perches while the other dives.
+**Enemies:** 2 Tollbirds (`bestiary/tollbird/README.md`, Mind 2/Body 3/Soul 4, HP 15, Creature Threat Rating 9 each — 18 total, a real fight for a 4-player party), cycles staggered, one perches while the other dives.
 
 **Positioning:** the fence is two zones wearing one name. The barbed cable and bramble is the Frontline — the ground the dive lands on. The stone corner posts are the Backline, genuinely perched up on the post. Rushdown can't reach a perched Tollbird — there's no ground to cover to something standing on top of a stone post — and the Tollbirds don't carry Rushdown either, since their whole kit is the dive, not a charge. Pull is unaffected: dragged down off its post onto the cable, a Tollbird is Barbed same as anything else.
 
@@ -88,7 +88,7 @@ Impaled along it: small things that wander this far without anyone missing them,
 
 **Win condition:** kill the Tollbirds, wound both to 4 HP or less (they abandon the fight and don't return this season), or simply leave — Tollbirds don't pursue past their hunting ground, so walking away is a complete, legitimate end.
 
-**The larder itself:** the everyday catch, the stray Fenwool, coins and a buckle and a hand mirror worked in among the drying bodies — and, hanging further along, a Skeinwing (`bestiary/skeinwing.md`), wingspan too wide for the cable, membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive.
+**The larder itself:** the everyday catch, the stray Fenwool, coins and a buckle and a hand mirror worked in among the drying bodies — and, hanging further along, a Skeinwing (`bestiary/skeinwing/README.md`), wingspan too wide for the cable, membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive.
 
 **What it pays:** ~20 gold per character, half a session at Tier 1 (`rules/equipment.md`, Pacing). Briarwatch pays it in livestock terms — a Fenwool, or the price of one, or a standing account at whichever farm lost the fewest this season. Nobody hired the party; they fixed something the farmers had stopped expecting help with, and the farmers aren't going to let that pass unmarked.
 
@@ -130,13 +130,13 @@ Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Bri
 - `places/roadhouse.md` — the stop immediately before Briarwatch on the route, not part of Briarwatch itself
 - `quests/washed-ashore.md` — where the session 1 route actually starts now
 - `places/vultures-nest.md` — the former opening's location, no longer on the route
-- `bestiary/briarwatch-jackalope.md` — general field encounter, not tied to any one location
-- `bestiary/briar-scratcher.md` — displaced from the Weald, now working the fencelines
+- `bestiary/briarwatch-jackalope/README.md` — general field encounter, not tied to any one location
+- `bestiary/briar-scratcher/README.md` — displaced from the Weald, now working the fencelines
 - `places/turnroot-weald.md` — the territory this farmland was cut from
-- `bestiary/fenwool.md` — what's actually grazing these fields
-- `bestiary/briarbundles.md` — the field guardians the farmers build every autumn
-- `bestiary/the-first-bundle.md` — the oldest one
-- `bestiary/skeinwing.md` — the rare, recommended contents of the Larder Fence
-- `bestiary/duskwick.md` — the large one at the Abandoned Homestead, and Iron's companion of the same species
-- `bestiary/tollbird.md` — the Larder Fence's residents
+- `bestiary/fenwool/README.md` — what's actually grazing these fields
+- `bestiary/briarbundles/README.md` — the field guardians the farmers build every autumn
+- `bestiary/the-first-bundle/README.md` — the oldest one
+- `bestiary/skeinwing/README.md` — the rare, recommended contents of the Larder Fence
+- `bestiary/duskwick/README.md` — the large one at the Abandoned Homestead, and Iron's companion of the same species
+- `bestiary/tollbird/README.md` — the Larder Fence's residents
 - `quests/the-man-who-buys-wounds.md` — Weck, on the road in

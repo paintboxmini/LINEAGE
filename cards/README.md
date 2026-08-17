@@ -19,7 +19,7 @@ Before 2026-08-17 cards were grouped into ~50 files, each with a header. Those h
 
 # Aege — Cards
 
-Signature cards for Aege, the Carrion Guide. See `characters/aege.md`.
+Signature cards for Aege, the Carrion Guide. See `characters/aege/README.md`.
 
 **These cards are unique to Aege. They cannot be transferred to other guides.**
 
@@ -27,7 +27,7 @@ Signature cards for Aege, the Carrion Guide. See `characters/aege.md`.
 
 # Alignment Marshal — Cards
 
-**Cards:** Signature set for the Alignment Marshal. See `bestiary/alignment-marshal.md`.
+**Cards:** Signature set for the Alignment Marshal. See `bestiary/alignment-marshal/README.md`.
 
 ### ashgrazer-ashfall.md
 
@@ -39,7 +39,7 @@ Signature cards for the Ashgrazer Alpha and Packgrazer. Tagged as ASHFALL — ob
 
 # Black Maggie — Signature Cards
 
-*The last practitioner of a gift she has entirely inverted. Her people took suffering into themselves to heal; she moves it into other people on purpose. See `characters/black-maggie.md`.*
+*The last practitioner of a gift she has entirely inverted. Her people took suffering into themselves to heal; she moves it into other people on purpose. See `characters/black-maggie/README.md`.*
 
 **These cards are unique to Black Maggie. They cannot be transferred.**
 
@@ -51,7 +51,7 @@ Signature cards for the Ashgrazer Alpha and Packgrazer. Tagged as ASHFALL — ob
 
 # The Bone Collector — Signature Cards
 
-Signature cards for the Bone Collector. See `bestiary/bone-collector.md`. Tagged as WEALD — obtainable via the Oracle deck after encounters in Turnroot Weald.
+Signature cards for the Bone Collector. See `bestiary/bone-collector/README.md`. Tagged as WEALD — obtainable via the Oracle deck after encounters in Turnroot Weald.
 
 ### borrower-hollow.md
 
@@ -63,13 +63,13 @@ Signature cards for the Borrowers. Tagged as HOLLOW — obtainable via the Oracl
 
 # Briar Scratcher — Cards
 
-Signature cards for the Briar Scratcher. See `bestiary/briar-scratcher.md`.
+Signature cards for the Briar Scratcher. See `bestiary/briar-scratcher/README.md`.
 
 ### briarbundles.md
 
 # Briarbundles — Signature Cards
 
-Signature cards for the four field forms. See `bestiary/briarbundles.md`. Tagged as BRIARWATCH — obtainable via the Oracle deck after encounters in Briarwatch.
+Signature cards for the four field forms. See `bestiary/briarbundles/README.md`. Tagged as BRIARWATCH — obtainable via the Oracle deck after encounters in Briarwatch.
 
 The First Bundle's own cards are in the the first bundle set.
 
@@ -83,7 +83,7 @@ Signature cards for the Briarwatch Jackalope. Teaching encounter for positioning
 
 # Chitterer — Signature Cards
 
-Signature cards for the Chitterer. See `bestiary/chitterer.md`. Tagged as COIL — obtainable via the Oracle deck after encounters in The Coil.
+Signature cards for the Chitterer. See `bestiary/chitterer/README.md`. Tagged as COIL — obtainable via the Oracle deck after encounters in The Coil.
 
 ### colorless.md
 
@@ -94,13 +94,13 @@ Signature cards for the Chitterer. See `bestiary/chitterer.md`. Tagged as COIL �
 
 # Corrupted Bather — Signature Cards
 
-Signature cards for the Corrupted Bather. See `bestiary/corrupted-bather.md`. Tagged as UNHELD — obtainable via the Oracle deck after encounters with what the Unheld Ocean returns.
+Signature cards for the Corrupted Bather. See `bestiary/corrupted-bather/README.md`. Tagged as UNHELD — obtainable via the Oracle deck after encounters with what the Unheld Ocean returns.
 
 ### delve-roller-hollow.md
 
 # Delve Roller — Cards
 
-Signature cards for the Delve Roller. See `bestiary/delve-roller.md`.
+Signature cards for the Delve Roller. See `bestiary/delve-roller/README.md`.
 
 *PATIENCE OF STONE and ROLLOUT were both promoted to core (same names) and now live in `cards/buckets/green.md` and `cards/buckets/red.md` — Delve Roller's deck uses those core cards in their place. ROLLOUT gained a real mechanical addition on promotion: it now returns to hand instead of discard after use (the Pokemon reference, made real) — unless its own reveal loses the RPS exchange.*
 
@@ -112,7 +112,7 @@ The first three are carried by any Duskwick. THRESHOLD is specific to the large 
 
 ### fermata.md
 
-**Cards:** Signature set for Fermata. See `bestiary/fermata.md`.
+**Cards:** Signature set for Fermata. See `bestiary/fermata/README.md`.
 
 **These cards are unique to Fermata. They cannot be transferred to other guardians.**
 
@@ -122,7 +122,7 @@ The first three are carried by any Duskwick. THRESHOLD is specific to the large 
 
 ### flower-snake.md
 
-**Cards:** Signature set for the Flower Snake. See `bestiary/flower-snake.md`.
+**Cards:** Signature set for the Flower Snake. See `bestiary/flower-snake/README.md`.
 
 **These cards are unique to the Flower Snake. They cannot be transferred to other ambush predators.**
 
@@ -136,19 +136,19 @@ Signature cards for the Fogcaller. Obtainable via Oracle deck in the Fog Basin r
 
 # Gene-Thief Tardigrade — Signature Cards
 
-Baseline signature set — see `bestiary/gene-thief-tardigrade.md` for the Genetic Absorption/Amalgam Body passives these cards echo but don't duplicate. Variant tardigrades (Forest/Dungeon/Lakeshore) are DM-built on top of this baseline, per that file's own note.
+Baseline signature set — see `bestiary/gene-thief-tardigrade/README.md` for the Genetic Absorption/Amalgam Body passives these cards echo but don't duplicate. Variant tardigrades (Forest/Dungeon/Lakeshore) are DM-built on top of this baseline, per that file's own note.
 
 ### gluttony-abomination.md
 
 # The Gluttony Abomination — Signature Cards
 
-Signature cards for the Gluttony Abomination. See `bestiary/gluttony-abomination.md`. Tagged as ABYSS — obtainable via the Oracle deck after encounters in the Abyssal Ruins.
+Signature cards for the Gluttony Abomination. See `bestiary/gluttony-abomination/README.md`. Tagged as ABYSS — obtainable via the Oracle deck after encounters in the Abyssal Ruins.
 
 ### greed.md
 
 # Greed — Cards
 
-Signature cards for Greed. See `characters/greed.md`.
+Signature cards for Greed. See `characters/greed/README.md`.
 
 **These cards are unique to Greed. They cannot be transferred to other lightning duelists.**
 
@@ -160,19 +160,19 @@ Signature cards for Greed. See `characters/greed.md`.
 
 # Hullback — Cards
 
-Signature cards for the Hullback. See `bestiary/hullback.md`.
+Signature cards for the Hullback. See `bestiary/hullback/README.md`.
 
 ### kino.md
 
 # Kino — Cards
 
-Signature cards for Kino. See `characters/kino.md`.
+Signature cards for Kino. See `characters/kino/README.md`.
 
 **These cards are unique to Kino. They cannot be transferred to other fencers.**
 
 ### kiwi-bird.md
 
-**Cards:** Signature set for the Kiwi Bird. See `bestiary/kiwi-bird.md`.
+**Cards:** Signature set for the Kiwi Bird. See `bestiary/kiwi-bird/README.md`.
 
 **These cards are unique to the Kiwi Bird. They cannot be transferred to other foragers.**
 
@@ -180,7 +180,7 @@ Signature cards for Kino. See `characters/kino.md`.
 
 # Lefty — Cards
 
-Signature cards for Lefty. See `characters/lefty.md`.
+Signature cards for Lefty. See `characters/lefty/README.md`.
 
 **These cards are unique to Lefty. They cannot be transferred to other tanks.**
 
@@ -188,7 +188,7 @@ Signature cards for Lefty. See `characters/lefty.md`.
 
 # Masaharu — Cards
 
-Signature cards for Masaharu. See `characters/masaharu.md`.
+Signature cards for Masaharu. See `characters/masaharu/README.md`.
 
 **These cards are unique to Masaharu. They cannot be transferred to other gunners.**
 
@@ -207,13 +207,13 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 
 # Orin Vane — Signature Cards
 
-Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defense Counter Glyphs are visually identical in the fiction. See `characters/orin-vane.md` for GM notes.
+Signature cards for Orin Vane, mage-sword fencer. Attack Counter Glyphs and Defense Counter Glyphs are visually identical in the fiction. See `characters/orin-vane/README.md` for GM notes.
 
 ### phase-leach.md
 
 # Phase-Leach — Signature Cards
 
-Signature cards for the Phase-Leach. See `bestiary/phase-leach.md`. Tagged as ABYSS — obtainable via the Oracle deck after encounters in the Abyssal Ruins.
+Signature cards for the Phase-Leach. See `bestiary/phase-leach/README.md`. Tagged as ABYSS — obtainable via the Oracle deck after encounters in the Abyssal Ruins.
 
 ### rasp.md
 
@@ -243,7 +243,7 @@ Signature cards for the Rootstalker. Tagged as WEALD — these cards represent t
 
 # Ryder — Cards
 
-Signature cards for Ryder. See `characters/ryder.md`.
+Signature cards for Ryder. See `characters/ryder/README.md`.
 
 **These cards are unique to Ryder. They cannot be transferred to other sorcerers.**
 
@@ -251,7 +251,7 @@ Signature cards for Ryder. See `characters/ryder.md`.
 
 # Skeinwing — Signature Cards
 
-Signature cards for the Skeinwing. See `bestiary/skeinwing.md`. Tagged as WEALD — obtainable via the Oracle deck after encounters in Turnroot Weald.
+Signature cards for the Skeinwing. See `bestiary/skeinwing/README.md`. Tagged as WEALD — obtainable via the Oracle deck after encounters in Turnroot Weald.
 
 ### stat-adjusters.md
 
@@ -261,7 +261,7 @@ Cards that change one of a character's three stats for the duration of a combat.
 
 **Deliberately tagless** (2026-08-17, Drew). A tag records the origin location of a living tradition (`world/lineage.md`); these cards have no single source that teaches them. They are grouped by what they do, not by where they came from.
 
-**Pulled from the core sets 2026-08-17.** Not starter material: a stat change ripples into max HP, hand size, and initiative at once, which is more moving parts than a first-session card should ask a player to track. Out of the starter pool, still fully in the world — several creatures already run them (`bestiary/trisect.md` runs all three, `bestiary/the-first-bundle.md` runs ERODE, `characters/rasp.md` runs WITHER), and they remain reachable as rewards the same as any other card.
+**Pulled from the core sets 2026-08-17.** Not starter material: a stat change ripples into max HP, hand size, and initiative at once, which is more moving parts than a first-session card should ask a player to track. Out of the starter pool, still fully in the world — several creatures already run them (`bestiary/trisect/README.md` runs all three, `bestiary/the-first-bundle/README.md` runs ERODE, `characters/rasp/README.md` runs WITHER), and they remain reachable as rewards the same as any other card.
 
 **Not signature cards.** Nothing here belongs to one creature or character; that is the whole reason this file exists rather than folding them into somebody's set.
 
@@ -277,13 +277,13 @@ Signature cards for the Stonecoil. Tagged as HOLLOW — obtainable via the Oracl
 
 # The Descended — Signature Cards
 
-Signature cards for the Descended. See `bestiary/the-descended.md`. Tagged as WALLOWS — obtainable via the Oracle deck after encounters in the Wallows.
+Signature cards for the Descended. See `bestiary/the-descended/README.md`. Tagged as WALLOWS — obtainable via the Oracle deck after encounters in the Wallows.
 
 ### the-first-bundle.md
 
 # The First Bundle — Signature Cards
 
-Signature cards for the First Bundle. See `bestiary/the-first-bundle.md`. Tagged as BRIARWATCH — obtainable via the Oracle deck after encounters in Briarwatch.
+Signature cards for the First Bundle. See `bestiary/the-first-bundle/README.md`. Tagged as BRIARWATCH — obtainable via the Oracle deck after encounters in Briarwatch.
 
 ### the-patient-host.md
 
@@ -305,19 +305,19 @@ Includes the Exhaust status card, seeded into player decks during this encounter
 
 # The Trisect — Signature Cards
 
-Signature cards for the Trisect. See `bestiary/trisect.md`. Tagged as ASHFALL — obtainable via the Oracle deck after encounters in the Ashfall Wastes.
+Signature cards for the Trisect. See `bestiary/trisect/README.md`. Tagged as ASHFALL — obtainable via the Oracle deck after encounters in the Ashfall Wastes.
 
 ### vescal.md
 
 # Vescal — Signature Cards
 
-Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and support. See `characters/vescal.md` for GM notes.
+Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and support. See `characters/vescal/README.md` for GM notes.
 
 ### void-runner.md
 
 # Void Runner — Signature Cards
 
-Signature cards for the Void Runner. See `bestiary/void-runner.md`. Tagged as GLASSLIGHT — obtainable via the Oracle deck after encounters at Glasslight Reach.
+Signature cards for the Void Runner. See `bestiary/void-runner/README.md`. Tagged as GLASSLIGHT — obtainable via the Oracle deck after encounters at Glasslight Reach.
 
 ### wall-reader.md
 
@@ -329,10 +329,10 @@ Signature cards for the Void Runner. See `bestiary/void-runner.md`. Tagged as GL
 
 # Wallows Slime — Signature Cards
 
-Signature cards for the Wallows Slime. See `bestiary/wallows-slime.md`. Tagged as WALLOWS — obtainable via the Oracle deck after encounters in the Wallows.
+Signature cards for the Wallows Slime. See `bestiary/wallows-slime/README.md`. Tagged as WALLOWS — obtainable via the Oracle deck after encounters in the Wallows.
 
 ### wrackclaw.md
 
 # Wrackclaw — Cards
 
-Signature cards for the Wrackclaw. See `bestiary/wrackclaw.md`.
+Signature cards for the Wrackclaw. See `bestiary/wrackclaw/README.md`.

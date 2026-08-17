@@ -1,6 +1,6 @@
 # The Coward
 
-*confirmed as Rasp's own kit (`characters/rasp.md`), generalized into a reusable template rather than being personal to her specifically. Untargetable-while-Backline as the thesis (OUT OF REACH), chip damage over commitment.*
+*confirmed as Rasp's own kit (`characters/rasp/README.md`), generalized into a reusable template rather than being personal to her specifically. Untargetable-while-Backline as the thesis (OUT OF REACH), chip damage over commitment.*
 
 **Card list only — the full cards live in `cards/`.** Archetypes are an *index*, not a filing system: a card lives in exactly one bucket (`cards/buckets/`) but can carry any archetype, and an archetype routinely spans several buckets. Source of truth for what each archetype means: `agent-tools/archetypes.md`.
 

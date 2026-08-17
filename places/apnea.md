@@ -59,7 +59,7 @@ He'll send the party under without ceremony. He'll tell them one thing before th
 
 ## Connections
 
-**Lily, the Dream-Hunter** (`characters/lily.md`, `places/capital/underground-bazaar.md`) — takes payment in a night of someone's sleep and reports back only the shape of what's coming, never the substance. She has never been to Apnea and knows nothing about it firsthand — what she knows, she knows the way she knows anything: secondhand, through what she's bought. Apnea sits differently with her than her other clients' nights do, in a way she's never explained even to herself.
+**Lily, the Dream-Hunter** (`characters/lily/README.md`, `places/capital/underground-bazaar.md`) — takes payment in a night of someone's sleep and reports back only the shape of what's coming, never the substance. She has never been to Apnea and knows nothing about it firsthand — what she knows, she knows the way she knows anything: secondhand, through what she's bought. Apnea sits differently with her than her other clients' nights do, in a way she's never explained even to herself.
 
 **The hook.** A family in the capital paid to learn whether a relative sent to Apnea years ago is even still alive — dream-years don't track waking-years, and it's entirely possible to have lived out a full life and died, dream-side, while the body back on the ward is still just another bed. They went to Lily. She took the night, and told them only this: it isn't the one they're asking about. Something at that island is close to slipping, and has been close for a long time.
 
@@ -83,10 +83,10 @@ Resolving the boundary for a session buys the village one calm stretch, nothing 
 
 ## Related Documents
 
-- `characters/lily.md` — the Dream-Hunter, the hook that brings a party here
+- `characters/lily/README.md` — the Dream-Hunter, the hook that brings a party here
 - `places/capital/underground-bazaar.md` — where Lily is found
 - `world/the-in-between.md` — the Three Cuts, Havens, the mechanism Apnea's boundary shares
 - `world/creation-myth-the-three-cuts.md` — Name, Price, Distance
 - `world/geography-overview.md` — Apnea's position, its own lake south-southwest of Vulture's Nest
 - `world/tonal-bible.md`
-- `characters/aege.md` — the same shape of deliberately-open fate, for comparison
+- `characters/aege/README.md` — the same shape of deliberately-open fate, for comparison

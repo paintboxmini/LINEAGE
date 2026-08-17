@@ -66,7 +66,7 @@ The question is never "what does it mean?" It is always "is it still dangerous?"
 | The Tithe Engine | Calcine Flats | Players cross open ground — it remembers what open ground is for |
 | The Pale Hunger | Cindersink | A player purges an Exhaust card |
 
-See `bestiary/tithe-engine.md` and `bestiary/ashgrazer.md`.
+See `bestiary/tithe-engine/README.md` and `bestiary/ashgrazer/README.md`.
 
 ---
 

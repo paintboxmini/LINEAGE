@@ -12,7 +12,7 @@ The floor is not safe to walk across without attention. The walls are colonized.
 
 The floor of The Trench is covered in Death-Ball Sponge colonies — calcified growths that blend with the pale stone. Moving through without triggering one requires watching where you step.
 
-**Floor check:** DC 13 Mind/Reason to spot a colony before entering it. Failure triggers the sponge — see `bestiary/death-ball-sponge.md` for mechanics.
+**Floor check:** DC 13 Mind/Reason to spot a colony before entering it. Failure triggers the sponge — see `bestiary/death-ball-sponge/README.md` for mechanics.
 
 The safe paths through the colonies are narrow and irregular. The Flapjack Octopus has mapped them. It lies flat along those paths.
 
@@ -23,7 +23,7 @@ The safe paths through the colonies are narrow and irregular. The Flapjack Octop
 **Flapjack Octopus**
 Ambush predators that lie flat between sponge colonies. A party careful enough to navigate the floor may step over one without ever detecting it. Found in the middle section of The Trench, between the entry ramps and the deepest point.
 
-See `bestiary/flapjack-octopus.md`.
+See `bestiary/flapjack-octopus/README.md`.
 
 ---
 
@@ -32,7 +32,7 @@ At the deepest point — three to five Tower Creatures growing from the floor. F
 
 The towers pulse with a slow, regular sound. When the sound stops, something has disturbed them.
 
-See `bestiary/elder-tower-creature.md`.
+See `bestiary/elder-tower-creature/README.md`.
 
 ---
 
@@ -50,7 +50,7 @@ See `bestiary/elder-tower-creature.md`.
 | Source | Yield | Notes |
 |--------|-------|-------|
 | Death-Ball Sponge | Sponge body | Hooks removed before use — requires tools and time |
-| Flapjack Octopus | Octopus body, ink sac | See `bestiary/flapjack-octopus.md` |
+| Flapjack Octopus | Octopus body, ink sac | See `bestiary/flapjack-octopus/README.md` |
 | Elder Tower Creature | Tubes | DC 12 Body/Senses per tube, patience required |
 
 All three source ingredients for the Gilded Tusk's Naturalist Collection. See `places/capital/gilded-tusk.md`.
@@ -60,6 +60,6 @@ All three source ingredients for the Gilded Tusk's Naturalist Collection. See `p
 ## Related Documents
 
 - `places/abyssal-ruins.md`
-- `bestiary/death-ball-sponge.md`
-- `bestiary/flapjack-octopus.md`
-- `bestiary/elder-tower-creature.md`
+- `bestiary/death-ball-sponge/README.md`
+- `bestiary/flapjack-octopus/README.md`
+- `bestiary/elder-tower-creature/README.md`

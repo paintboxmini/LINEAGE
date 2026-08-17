@@ -2,9 +2,9 @@
 
 Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood. What's known, at least to the few who'd have reason to know it: this was a target once, and something in Ashfall has it aimed again. See `quests/war-engine.md`.
 
-**Where the war actually started:** what's now Turnroot Weald was ordinary forest once, cleared generation over generation by Ashfall's own machines — already Resonant with the Seat of Change the whole time (`world/seats.md`, Change), the quiet way any place can be before anyone acts on it. This civilization watched Ashfall's deforestation and answered it with a working of their own: not planting anything new, but pushing that existing Resonance to Alignment (`world/resonant-places.md`). Sentience is what Alignment looked like, here. The forest started fighting back. Ashfall turned its war machine on the ones responsible for that working instead of on the trees themselves. See `places/turnroot-weald.md`, `places/ashfall-wastes.md`, `bestiary/root-heart.md`.
+**Where the war actually started:** what's now Turnroot Weald was ordinary forest once, cleared generation over generation by Ashfall's own machines — already Resonant with the Seat of Change the whole time (`world/seats.md`, Change), the quiet way any place can be before anyone acts on it. This civilization watched Ashfall's deforestation and answered it with a working of their own: not planting anything new, but pushing that existing Resonance to Alignment (`world/resonant-places.md`). Sentience is what Alignment looked like, here. The forest started fighting back. Ashfall turned its war machine on the ones responsible for that working instead of on the trees themselves. See `places/turnroot-weald.md`, `places/ashfall-wastes.md`, `bestiary/root-heart/README.md`.
 
-The civilization that held this ground before the ruin was already losing that war when the strike came. This is where the Thessians came from (`characters/black-maggie.md`) — a dying race now, scattered thin across the world, long after their home was struck. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
+The civilization that held this ground before the ruin was already losing that war when the strike came. This is where the Thessians came from (`characters/black-maggie/README.md`) — a dying race now, scattered thin across the world, long after their home was struck. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
 
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 
@@ -71,10 +71,10 @@ Undead and constructs twisted by prolonged rift exposure. Faster and more errati
 
 - `quests/abyssal-ruins-cathedral.md` — The Cathedral encounter: the Gluttony Abomination, tremor-door mechanic, the stabilizing crystal
 - `places/abyssal-trench.md` — The Trench sub-area: sponge hazards, Flapjack Octopus, Elder Tower Creatures
-- `bestiary/gluttony-abomination.md` — The fallen priest boss
-- `bestiary/phase-leach.md` — The Phase-Leach (Rift-Stalker)
-- `bestiary/death-ball-sponge.md` — Trench floor hazard
-- `bestiary/flapjack-octopus.md` — Trench ambush predator
-- `bestiary/elder-tower-creature.md` — Ancient Trench organisms
+- `bestiary/gluttony-abomination/README.md` — The fallen priest boss
+- `bestiary/phase-leach/README.md` — The Phase-Leach (Rift-Stalker)
+- `bestiary/death-ball-sponge/README.md` — Trench floor hazard
+- `bestiary/flapjack-octopus/README.md` — Trench ambush predator
+- `bestiary/elder-tower-creature/README.md` — Ancient Trench organisms
 - `quests/war-engine.md`, `places/ashfall-wastes.md` — the weapon this was struck by, once already
 - `places/the-coil.md` — the living weapon this civilization was still growing when the Engine struck, and isn't anymore

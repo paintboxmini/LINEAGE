@@ -18,7 +18,7 @@ Status marks what's actually shipped, not what's just named. A named-but-unbuilt
 
 **The Collector** — named, not yet fleshed out.
 
-**The Coward** — confirmed as Rasp's own kit (`characters/rasp.md`), generalized into a reusable template rather than being personal to her specifically. Untargetable-while-Backline as the thesis (OUT OF REACH), chip damage over commitment.
+**The Coward** — confirmed as Rasp's own kit (`characters/rasp/README.md`), generalized into a reusable template rather than being personal to her specifically. Untargetable-while-Backline as the thesis (OUT OF REACH), chip damage over commitment.
 
 **The Judge** — "very Tales Untold" (Drew). Punishes symmetry/pattern — e.g., both Frontlines occupied. Not yet built.
 

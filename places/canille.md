@@ -64,13 +64,13 @@ The third generation is the most comfortable. The cubs have always been there. T
 
 **The Waterfront** — the one place on Canille where masks are never worn. Cubs move here freely. Some villagers have noticed the cubs behave differently at the waterfront. None have asked about it.
 
-**The Old One's House** — Hess's house, at the edge of the village (`characters/hess-and-cob.md`). She doesn't come to the hall much. She watches the cubs from her window. She has a name for what they are — the real name, the answer to the original question — that she has not said out loud in thirty years. She is the last one who knows it.
+**The Old One's House** — Hess's house, at the edge of the village (`characters/hess-and-cob/README.md`). She doesn't come to the hall much. She watches the cubs from her window. She has a name for what they are — the real name, the answer to the original question — that she has not said out loud in thirty years. She is the last one who knows it.
 
 ---
 
 ## Key Characters
 
-**Hess and Cob** — the oldest founder and the third-generation cub closest to asking the question that leads to what she knows. Full profiles, backstory, and their relationship to each other now live in `characters/hess-and-cob.md`.
+**Hess and Cob** — the oldest founder and the third-generation cub closest to asking the question that leads to what she knows. Full profiles, backstory, and their relationship to each other now live in `characters/hess-and-cob/README.md`.
 
 ---
 
@@ -93,4 +93,4 @@ The village stopped asking it. That is not the same as answering no.
 ## Related Documents
 
 - `world/geography-overview.md` — lake island northeast of Vulture's Nest
-- `characters/hess-and-cob.md` — full profiles for the village's two key characters
+- `characters/hess-and-cob/README.md` — full profiles for the village's two key characters

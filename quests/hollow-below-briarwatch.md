@@ -26,7 +26,7 @@ The day begins under thick cloud cover. The air carries the smell of wet soil. F
 
 **What Iron actually knows, plainly stated:** glimpses over years, never contact — enough to suspect, nowhere near enough to know. He's not wrong to wonder (the Borrowers really did widen their tunnel network, per the Causality Chain below), but he has no idea whether that's actually what caused the sinkhole specifically, or whether it's connected to the Fenwool losses at all. His suspicion is a lead, not a briefing — the party still has to find out what's actually true.
 
-**Iron's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick.md`.
+**Iron's shadow:** if asked, he'll say it just started showing up a season back and never left. He doesn't feed it. It doesn't seem to need him to. Not his, exactly — it just hasn't gone anywhere. See `bestiary/duskwick/README.md`.
 
 ---
 
@@ -85,7 +85,7 @@ An old border watchtower from a prior era. What remains is a cracked circular fo
 
 One of two mirrored entrances into the Hollow — the other is the Western Property Sinkhole, below. Same tunnel network, two mouths: a party can descend through one and surface through the other. Whichever mouth ends up being the party's *exit* is worth running in earnest even if they already fought through the other on the way in — see Terrain Interaction, below.
 
-Briarwatch Jackalopes (`bestiary/briarwatch-jackalope.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
+Briarwatch Jackalopes (`bestiary/briarwatch-jackalope/README.md`) are no longer tied to this location specifically — they're a general field encounter now, usable anywhere in Briarwatch's farmland when a light teaching fight is wanted.
 
 **Checks:**
 - Body (Easy): Climb broken stair safely to reach the well; failure causes minor damage; loud impact may raise Pressure if already 2+
@@ -210,7 +210,7 @@ Wide chamber, high enough overhead that nothing on the ceiling is in reach. Clea
 
 **A gap at the bottom of the far wall, low and easy to miss until someone's crouched at floor level:** water is draining into it, steadily, the same flow that's been running underfoot since Flood Shelf Chamber above. It doesn't pool here — this chamber stays dry, per the Causality Chain — because whatever comes down from Flood Shelf finds its own way out through this gap and keeps going, deeper than anyone's mapped. Worth describing, not worth a check to notice; the gap itself answers nothing on its own. Tracing where the flow actually comes from is the real question, and that answer is upstream, not down.
 
-**First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick.md`), same species as Iron's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
+**First thing down the well, before anyone's eyes adjust:** something small and matte-black breaks from the shadows at the chamber's edge — a low amber ember-line down its spine, there and gone before anyone gets a real look. A Duskwick (`bestiary/duskwick/README.md`), same species as Iron's own companion topside, just as much at home in a threshold this dark as it is at the edge of failing light up above. It doesn't press the encounter — a glimpse and a retreat is the whole interaction. Pure atmosphere, not a combat cue.
 
 **The Heavy Door** — half-buried in debris off this chamber. Thick stone slab, iron-banded, seals into a carved rectangular frame. When closed: reduces vibration, dampens sound, blocks predator access.
 
@@ -284,7 +284,7 @@ Three visible cracks in the ceiling. Loose shale underfoot, sitting in water dee
 | Look around | No | May find buried support beam — DC 13 to place; removes Pressure Die on success |
 | Flee | No | Always open |
 
-**A quiet look before the loud option pays off.** An Easy Reason/Senses check on the rubble pile itself (not just the ceiling) can spot a gap already worth exploiting — clearing it wide enough to pass then costs a single Standard (DC 13) Body check instead of the full 3-success brute-force dig, and doesn't trigger the Pressure Die at all if the check succeeds clean. A critical success clearing that gap can turn up something real in the debris: this rubble is a recent fall, and a live Emerald Frog (`bestiary/emerald-frog.md`) — the Hollow's own rare, gem-toned population, one of the last places they're still found at all — is exactly the kind of find worth surfacing here.
+**A quiet look before the loud option pays off.** An Easy Reason/Senses check on the rubble pile itself (not just the ceiling) can spot a gap already worth exploiting — clearing it wide enough to pass then costs a single Standard (DC 13) Body check instead of the full 3-success brute-force dig, and doesn't trigger the Pressure Die at all if the check succeeds clean. A critical success clearing that gap can turn up something real in the debris: this rubble is a recent fall, and a live Emerald Frog (`bestiary/emerald-frog/README.md`) — the Hollow's own rare, gem-toned population, one of the last places they're still found at all — is exactly the kind of find worth surfacing here.
 
 ---
 
@@ -296,7 +296,7 @@ Shallow bowl-shaped cavern. Evidence of drowned burrows. Fungal patches regrowin
 
 One way in, one way out: a single tunnel back to Flood Shelf Chamber above (one of that chamber's four paths, above). Nothing else connects here — a party that clears the Nest is walking back out the way they came in, not discovering a new route forward.
 
-**What's actually denning here: a mated pair of Stonecoils, each noticeably larger than the ones elsewhere in the Hollow — grown fat and confident on farmland livestock they were never supposed to have reach for.** Bespoke stat bump, no new signature cards needed: **Mind 3 / Body 6 / Soul 3 — HP 24, Creature Threat Rating 12, each.** Deck (12 — 3 Blue / 6 Red / 3 Green): DRAG, COIL LATCH, PULL ×2 each *(red)* · VIBRATION LOCK ×2, STILL GROUND *(blue)* · PATIENCE OF STONE, DARK CORRIDOR, SHED SKIN *(green)* — built entirely from `bestiary/stonecoil.md`'s existing signature set, doubled up to fill the larger deck. Tested directly against a 3-player CTR-9 party before being written down: 14.3% win rate for the pair, average 1.37 party collapses per battle — real stakes, not a formality, and not close to the ~0% a single baseline Stonecoil produces in the same matchup.
+**What's actually denning here: a mated pair of Stonecoils, each noticeably larger than the ones elsewhere in the Hollow — grown fat and confident on farmland livestock they were never supposed to have reach for.** Bespoke stat bump, no new signature cards needed: **Mind 3 / Body 6 / Soul 3 — HP 24, Creature Threat Rating 12, each.** Deck (12 — 3 Blue / 6 Red / 3 Green): DRAG, COIL LATCH, PULL ×2 each *(red)* · VIBRATION LOCK ×2, STILL GROUND *(blue)* · PATIENCE OF STONE, DARK CORRIDOR, SHED SKIN *(green)* — built entirely from `bestiary/stonecoil/README.md`'s existing signature set, doubled up to fill the larger deck. Tested directly against a 3-player CTR-9 party before being written down: 14.3% win rate for the pair, average 1.37 party collapses per battle — real stakes, not a formality, and not close to the ~0% a single baseline Stonecoil produces in the same matchup.
 
 **Not everything in the larder here is dead.** Some of the taken Fenwool are still alive — hurt, terrified, but alive, pinned in the pair's own den rather than already consumed. Rescuing them is a real objective layered on top of the fight itself, not just flavor: a party focused purely on winning the fight can still walk away having let the actual rescue fail.
 
@@ -346,13 +346,13 @@ Small subterranean mole-like humanoids.
 
 **The warrior's rite is a Stonecoil, killed as a group.** No Borrower fights one alone — that's not bravery here, it's a wasted death against something that outweighs any one of them badly. A warrior is someone who's stood in that group and the group won. Proof is worn, not claimed: a single scale off a killed Stonecoil, carried as jewelry for the rest of that Borrower's life. **A given Borrower typically only ever earns one — killing a Stonecoil at all is a once-in-a-lifetime achievement, not something repeated or stacked.** It's why the surface Sentries (Surface Layer, above) read as faster and more aggressive than their kin deeper in — they're not just guards, they're the ones already blooded, and there's exactly one scale each to show for it. Every Sentry a party actually meets is wearing one.
 
-**Duskwicks (`bestiary/duskwick.md`) are the more survivable predator problem — a real, ongoing nuisance rather than the once-in-a-lifetime kind.** Small, opportunistic, no interest in a fight it doesn't already have won — a Duskwick is a threat the Borrowers actually deal with regularly, not a rite of passage. Unlike a Stonecoil, killing or driving one off doesn't earn a scale or a story; it's closer to pest control than combat.
+**Duskwicks (`bestiary/duskwick/README.md`) are the more survivable predator problem — a real, ongoing nuisance rather than the once-in-a-lifetime kind.** Small, opportunistic, no interest in a fight it doesn't already have won — a Duskwick is a threat the Borrowers actually deal with regularly, not a rite of passage. Unlike a Stonecoil, killing or driving one off doesn't earn a scale or a story; it's closer to pest control than combat.
 
 They have a word for the vibration before a Stonecoil strike. They leave food scraps at certain junctions to redirect hunting paths. They tell stories about "the stone that moves."
 
 **Elders hold real authority — more than one at a time, chosen for something closer to accumulated trust than any single skill.** Day-to-day work still runs by competence — a tunnel-sense expert calls the dig, a listening-post keeper calls the danger — but anything that affects the whole warren, including what an outsider walks away with, is an Elder's call, made with armed guards standing close whenever one actually holds court.
 
-**First contact, if the party pursues it instead of fighting through:** a young Borrower breaks cover first and throws a single stone — not aimed to hit, aimed to be heard, a warning that the party's been watched for longer than they realized. Armed guards close the distance right behind it, unhurried, already in position before anyone clocks they'd been flanked. What happens next is the Elder's to decide, not the guards' — if the party doesn't escalate, an Elder steps forward, sizes them up, and may simply offer the map of "moving stone" zones outright, no negotiation required beyond having not struck first. This is the mediation arc `bestiary/borrower.md` already points to by name — completing it here is what keeps the Borrowers from appearing as enemies for the rest of the delve.
+**First contact, if the party pursues it instead of fighting through:** a young Borrower breaks cover first and throws a single stone — not aimed to hit, aimed to be heard, a warning that the party's been watched for longer than they realized. Armed guards close the distance right behind it, unhurried, already in position before anyone clocks they'd been flanked. What happens next is the Elder's to decide, not the guards' — if the party doesn't escalate, an Elder steps forward, sizes them up, and may simply offer the map of "moving stone" zones outright, no negotiation required beyond having not struck first. This is the mediation arc `bestiary/borrower/README.md` already points to by name — completing it here is what keeps the Borrowers from appearing as enemies for the rest of the delve.
 
 If the party observes Borrower behavior instead, they can learn predator patterns without fighting first. Short of the full mediation above, Borrowers may still refuse to guide players deeper but offer: a clay bowl tremor detector, a narrow bypass tunnel, or the warning: *"Do not run."*
 
@@ -436,7 +436,7 @@ Roughly a session's work at Tier 1 — about **40 gold per character** (`rules/e
 
 What he has is a farm that is still standing because of them. Any of these, or a mix, and the GM should pick the one the table has earned:
 
-- **Fenwool.** Two head, worth roughly the sum, and a real problem to move — Weck buys culls on that road (`characters/weck.md`), which turns the payment into a second scene rather than a line on a sheet.
+- **Fenwool.** Two head, worth roughly the sum, and a real problem to move — Weck buys culls on that road (`characters/weck/README.md`), which turns the payment into a second scene rather than a line on a sheet.
 - **The neighbours pool it.** Briarwatch farmers are tired, not poor, and a fixed sinkhole is worth a collection. This is the version where the party gets thanked by people they never met.
 - **He owes them, and says so plainly.** No goods change hands. The party leaves with a farmer's standing debt in a region they will pass through again, which is worth more than forty gold and costs Iron nothing he has.
 

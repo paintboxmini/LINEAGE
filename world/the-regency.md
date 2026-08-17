@@ -109,7 +109,7 @@ It also explains where he is. A thing with no interior cannot be held anywhere t
 
 *What he wants, whether anything of him remains, and why he attends the party at all are all unresolved and should stay that way. The identity is the answer; it is not the whole answer.*
 
-*(The Gluttony Abomination was previously listed here as a possible Pendragon thread. That is closed — it is a fallen priest of the Abyssal Ruins cathedral and nothing more, per `bestiary/gluttony-abomination.md`.)*
+*(The Gluttony Abomination was previously listed here as a possible Pendragon thread. That is closed — it is a fallen priest of the Abyssal Ruins cathedral and nothing more, per `bestiary/gluttony-abomination/README.md`.)*
 
 **What Oswald believes (GM Secret, his alone):** he did not kill his brother, and does not believe his brother is dead. Aurora bound, the extraction running, a century of consolidating the throne under his own name — to every other original member, this reads as ambition, the Lion doing what a Lion does. To Oswald it is the second half of one unfinished job. If Aurora can be removed or killed outright, not just suppressed, the Seat comes open, and he believes — has believed for a hundred years, has never once let himself stop believing — that his brother is still alive somehow, and will be there to take it. He does not know his brother is the Scar. He does not know what the Scar is. He has simply never accepted the alternative history everyone around him is quietly living inside.
 

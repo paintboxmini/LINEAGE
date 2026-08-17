@@ -77,7 +77,7 @@ Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
 - Street performers, bards, fortune tellers
 - A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `places/the-coil.md` (The Nagamani). A slim, dismissive volume shelved nearby describes a tribe of healers somewhere south who supposedly draw suffering out of the sick and keep it themselves — the author calls the whole practice unverified superstition and spends more words mocking the claim than describing it. Whoever wrote it never saw the gift worked, and says so almost proudly.
-- Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
+- Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick/README.md`.
 - **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `places/capital/underground-bazaar.md` and `places/capital/underground-tavern.md`.
 
 **Vendors that matter for gear:**
@@ -134,7 +134,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of Healing | The capital's hospital. See below. |
 | Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
 | Temple of Justice | A working courtroom. See below. |
-| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
+| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal/README.md`. |
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. Temple of the Rivers and Temple of Knowledge happen to echo a real Seat's domain; most of the rest don't echo anything at all. Neither case means a temple's theology is right or wrong about the world — it just means some guesses land closer than others. See `world/seats.md`.
 
@@ -142,7 +142,7 @@ None of these are built on real knowledge of the Seats — they're local religio
 
 **Osric**, head archivist, believes an unrecorded fact is a fact that didn't happen — every acquisition gets catalogued, dated, cross-indexed, regardless of what it costs to hold or how dangerous it would be loose in the wrong hands. Years ago, something came through uncatalogued because he judged it too minor to bother with. It mattered later, to someone who needed the record and couldn't find it, and by then it was gone for good. He has never once made that call again. He'd say the discipline is diligence. It might be that he can no longer tell the difference between preserving knowledge and simply refusing to lose anything a second time.
 
-**Temple of Dreams** — the single most popular temple in the district, and the only one that doesn't sort by who's paying. A dreamer pays for a session, describes what they remember — or doesn't, the reading works either way, differently — and a Temple reader offers an interpretation: what it means, what it's warning against, sometimes a flat fortune with no dream attached if that's what was paid for. Dream divination is one of the few folk beliefs the whole city actually shares — dockhands and council staff describe the same reading the same way, use the same handful of omens, trust the same reader if they can get an appointment. Wealth buys a better appointment time here. It doesn't buy a different truth. This is not Lily's trade (`characters/lily.md`, Underground Bazaar). Lily buys a night of someone's sleep outright and reports back only a fragment of what's coming; the Temple never takes the dream at all, only interprets what the dreamer already has. Two different economies built on the same raw material, sitting in the same city without ever quite noticing each other.
+**Temple of Dreams** — the single most popular temple in the district, and the only one that doesn't sort by who's paying. A dreamer pays for a session, describes what they remember — or doesn't, the reading works either way, differently — and a Temple reader offers an interpretation: what it means, what it's warning against, sometimes a flat fortune with no dream attached if that's what was paid for. Dream divination is one of the few folk beliefs the whole city actually shares — dockhands and council staff describe the same reading the same way, use the same handful of omens, trust the same reader if they can get an appointment. Wealth buys a better appointment time here. It doesn't buy a different truth. This is not Lily's trade (`characters/lily/README.md`, Underground Bazaar). Lily buys a night of someone's sleep outright and reports back only a fragment of what's coming; the Temple never takes the dream at all, only interprets what the dreamer already has. Two different economies built on the same raw material, sitting in the same city without ever quite noticing each other.
 
 **Faye**, senior reader, believes dreams are the one honest thing anyone ever tells her — people lie to a stranger's face without effort, never to their own sleep. Years into the work, she read a dream that told her something devastating about someone close to her, unasked, undeniable, and has never found a way to un-know it. She still reads for anyone who pays, precisely, without flinching. She has never once let anyone read one of hers, and doesn't explain why, and nobody who knows what she does for a living has ever thought to ask.
 
@@ -209,5 +209,5 @@ Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The
 - `factions/the-weavers.md` — The secret guild sharing those tunnels
 - `places/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
 - `places/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
-- `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
+- `bestiary/duskwick/README.md` — small stray predators worked into the Marketplace's off-hours
 - `places/the-coil.md` — the Nagamani legend, as it's known this far from the source

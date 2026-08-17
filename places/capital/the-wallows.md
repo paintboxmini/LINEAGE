@@ -35,7 +35,7 @@ The Demon Court does not discuss what lies below the labor tunnels. Initiates le
 
 **Entry from the bazaar:** through the tavern floor, down a guarded shaft. The Initiates run this checkpoint. First thing anyone coming up sees is yellow.
 
-**The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended.md`.
+**The Diamond Shelf** — accessed through a branch at the far end of the main corridor. Hundreds of square feet, two-foot ceiling throughout. Belly crawl only. A nearly-exhausted diamond vein — the high value is why it's almost gone. The remaining ore is at the back, past a four-foot fissure. Prisoners cross it to work. Initiates guard from the entrance side and mostly don't cross. The Descended drift up from the deep into the back section. This is the worst assignment in the Wallows. See `bestiary/the-descended/README.md`.
 
 **The collection detail** — a side gallery off the main corridor, unrelated to the Shelf. A rotating handful of prisoners tend a cluster of black-crystal fixtures bolted to the wall, coiling something that catches the light strangely and handing full spools up to a maintenance crew that collects on a set rotation. Filed and guarded like any other work assignment. Nobody working it, or watching it, knows what the spools actually are. See `factions/the-weavers.md`.
 
@@ -86,7 +86,7 @@ Players who reach her will not find a fight. They will find the love of the infi
 - `places/capital/underground-bazaar.md` — hidden within the Waterworks
 - `places/capital/underground-tavern.md` — hidden within the Waterworks; transitional layer
 - `factions/the-weavers.md` — the collection detail on the labor level
-- `characters/kess.md` — the rescue attempt whose echo lives here
+- `characters/kess/README.md` — the rescue attempt whose echo lives here
 - `world/seats.md` — Aurora, the Seat of Love/Binding
-- `bestiary/the-descended.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
+- `bestiary/the-descended/README.md` — The Descended (range through cave system, upper limit is the Diamond Shelf)
 - `quests/the-wallows-descent.md` — full adventure structure

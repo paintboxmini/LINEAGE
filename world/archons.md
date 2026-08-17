@@ -75,4 +75,4 @@ The Seat itself never fades. Seats are permanent structural features of existenc
 - `world/resonant-items.md` — the object-equivalent of a Resonant Person, its own separate path to Archon, and what an Archon's will does to its Price
 - `world/resonant-places.md` — the place-equivalent of a Resonant Person, and its own separate path to Archon
 - `rules/equipment.md` — Artifacts, how Price is actually paid
-- `characters/black-maggie.md` — the one thing anchoring MoroM to held reality
+- `characters/black-maggie/README.md` — the one thing anchoring MoroM to held reality

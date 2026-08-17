@@ -28,7 +28,7 @@ This is the whole point of the room, and it is a real rule, not just a descripti
 
 ## Fermata
 
-Full profile: `bestiary/fermata.md`. The guardian, the reason the silence holds, and what happens if it stops holding.
+Full profile: `bestiary/fermata/README.md`. The guardian, the reason the silence holds, and what happens if it stops holding.
 
 ---
 
@@ -50,7 +50,7 @@ Let the players actually sit in the quiet before anything happens. The silence i
 
 ## Related Documents
 
-- `bestiary/fermata.md` — the guardian
+- `bestiary/fermata/README.md` — the guardian
 - `cards/fermata.md` — its signature cards
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
 - `world/the-in-between.md` — Havens, the principle Fermata's note runs on

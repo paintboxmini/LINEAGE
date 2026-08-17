@@ -36,12 +36,12 @@ Mutated plants, luminescent mosses, and predators adapted to near-total darkness
 Notable species:
 - **Echothorn Vine** — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken, but the vine repeating itself, over and over, the same growth doubling back on its own pattern until it became something else entirely. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
 - **Luminova Leaves** — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
-- **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `bestiary/rootstalker.md` for the full stat block.
-- **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing.md`.
+- **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `bestiary/rootstalker/README.md` for the full stat block.
+- **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing/README.md`.
 
 ## Geography
 
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural — made into one, long ago, when the civilization at Abyssal Ruins answered Ashfall's machine-deforestation of these same woods by pushing the forest's own Resonance with the Seat of Change (`world/seats.md`, Change) to Alignment. Sentience is what that Alignment looked like. See `places/abyssal-ruins.md`, "Where the war actually started"; `bestiary/root-heart.md`, Origin; `world/resonant-places.md`, Turnroot Weald.
+The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural — made into one, long ago, when the civilization at Abyssal Ruins answered Ashfall's machine-deforestation of these same woods by pushing the forest's own Resonance with the Seat of Change (`world/seats.md`, Change) to Alignment. Sentience is what that Alignment looked like. See `places/abyssal-ruins.md`, "Where the war actually started"; `bestiary/root-heart/README.md`, Origin; `world/resonant-places.md`, Turnroot Weald.
 
 ---
 
@@ -54,7 +54,7 @@ Part of "more deliberate than natural": the Masons hold a line against the Weald
 ## Related Documents
 
 - `quests/turnroot-weald-adventure.md` — Full adventure system: Pressure Track, Forest Customs, navigation rules, NPC escalation, Mark system, Points of Interest, and encounter framework
-- `bestiary/rootstalker.md` — Rootstalker stat block, abilities, and loot
-- `bestiary/root-heart.md` — Root Heart boss encounter
-- `bestiary/bone-collector.md` — The Bone Collector starter encounter
+- `bestiary/rootstalker/README.md` — Rootstalker stat block, abilities, and loot
+- `bestiary/root-heart/README.md` — Root Heart boss encounter
+- `bestiary/bone-collector/README.md` — The Bone Collector starter encounter
 - `items/turnroot-weald-items.md` — All forest items and harvestable materials

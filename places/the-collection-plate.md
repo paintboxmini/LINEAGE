@@ -58,6 +58,6 @@ A collection plate passes through a crowd and gathers what people can spare. Thi
 ## Related Documents
 
 - `places/fog-basin.md` — basin rules, Misdirection, Pell
-- `bestiary/fogcaller.md` — hunt in the fog, not the Plate interior
-- `bestiary/echo.md` — paths into the ring
+- `bestiary/fogcaller/README.md` — hunt in the fog, not the Plate interior
+- `bestiary/echo/README.md` — paths into the ring
 - `items/fog-basin-items.md` — Pell's prices and gear

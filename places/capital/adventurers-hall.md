@@ -43,7 +43,7 @@ Clayhollow communicates the way Clayhollow communicates (`places/clayhollow.md`,
 
 > *"Vessel held at Vulture's Nest pending Compact review — unregistered communicable material, origin unconfirmed. Owner in custody, uncooperative. Compact wants the origin traced before the vessel's released or destroyed."*
 
-Already fully official — the barge is real, the quarantine is real, Corvel is really being held (`places/vultures-nest.md`, `characters/corvel.md`). Following the origin leads to Pneum and the People of Promise (`places/pneum.md`). The posting undersells what's actually out there on purpose; the Compact doesn't know yet either.
+Already fully official — the barge is real, the quarantine is real, Corvel is really being held (`places/vultures-nest.md`, `characters/corvel/README.md`). Following the origin leads to Pneum and the People of Promise (`places/pneum.md`). The posting undersells what's actually out there on purpose; the Compact doesn't know yet either.
 
 ---
 

@@ -32,7 +32,7 @@ One handles the register and the door. Checks it when the party arrives, checks 
 
 They won't start trouble. They will finish it. If the party is cooperative and unremarkable, the guards are furniture.
 
-Their duty runs past the inn's front door — thick-soled boots and waterproofed gear that see real use, not just standard issue. They cover what falls between towns on the Briarwatch side: disappeared Fenwool (`bestiary/fenwool.md`), strangers on the road, anything that comes up out of the ground. A guard, a rotation or two back, stopped returning from a patrol toward the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody went looking.
+Their duty runs past the inn's front door — thick-soled boots and waterproofed gear that see real use, not just standard issue. They cover what falls between towns on the Briarwatch side: disappeared Fenwool (`bestiary/fenwool/README.md`), strangers on the road, anything that comes up out of the ground. A guard, a rotation or two back, stopped returning from a patrol toward the Weald. Their boots ended up at Harwick Sundries in Vulture's Nest. Nobody went looking.
 
 Guard culture out here is practical and quiet. They don't talk much about what's under the ground. They know it's there.
 
@@ -64,7 +64,7 @@ If the party talks with him: he wants to know where they're coming from. What's 
 
 Dark hair. Silver-blue eyes. He doesn't ask where the party is going. Plans are not something he finds interesting.
 
-Small things are slightly off while he's around. The party compares notes later and the details don't quite match. See `characters/elias.md`.
+Small things are slightly off while he's around. The party compares notes later and the details don't quite match. See `characters/elias/README.md`.
 
 ---
 
@@ -95,5 +95,5 @@ Unheld Ocean shoreline (`quests/washed-ashore.md`) → **Roadhouse** (day 1) →
 - `quests/washed-ashore.md` — the campaign's opening; the party reaches the Roadhouse from here
 - `places/vultures-nest.md` — the former opening's starting point, still a live location
 - `places/briarwatch.md` — next stop
-- `bestiary/briar-scratcher.md` — encountered on the road, in either opening
+- `bestiary/briar-scratcher/README.md` — encountered on the road, in either opening
 - `quests/the-man-who-buys-wounds.md` — Weck, working this same road

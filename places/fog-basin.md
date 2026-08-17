@@ -16,20 +16,20 @@ It was here before the city. The city was built on the premise that maps are tru
 - DC 16 Reason — the vegetation along the new path is crushed from one direction only. Things were led *out* of somewhere along this path. Not into it.
 - Fail both — they follow it. Where it leads is the GM's call.
 
-**Echoes.** Shapes in the fog that mimic travelers who passed before. See `bestiary/echo.md`. Their presence signals Fogcallers nearby.
+**Echoes.** Shapes in the fog that mimic travelers who passed before. See `bestiary/echo/README.md`. Their presence signals Fogcallers nearby.
 
 ---
 
 ## Encounters
 
-- `bestiary/fogcaller.md` — primary predator
-- `bestiary/echo.md` — ambient, no combat
+- `bestiary/fogcaller/README.md` — primary predator
+- `bestiary/echo/README.md` — ambient, no combat
 
 ---
 
 ## The Orphanage
 
-Rebuilt on the site of one that burned — real, operating, takes children with nowhere else to go (`quests/sour-tomatoes.md`, Where the Kids Go). Steele grew up in the original, was inside when it burned, and rebuilt it himself later on the same ground (`characters/steele.md`). A longer trip for anyone bringing children here from elsewhere in the basin, but a standing answer, not an open question.
+Rebuilt on the site of one that burned — real, operating, takes children with nowhere else to go (`quests/sour-tomatoes.md`, Where the Kids Go). Steele grew up in the original, was inside when it burned, and rebuilt it himself later on the same ground (`characters/steele/README.md`). A longer trip for anyone bringing children here from elsewhere in the basin, but a standing answer, not an open question.
 
 ---
 
@@ -72,5 +72,5 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 - `places/capital/capital.md` — the city at the basin's center
 - `items/fog-basin-items.md`
 - `quests/sour-tomatoes.md` — the Odom place; a family with no fix, and children who need somewhere to go
-- `characters/steele.md` — rebuilt the orphanage on the ground where he grew up
+- `characters/steele/README.md` — rebuilt the orphanage on the ground where he grew up
 - `places/the-collection-plate.md` — hollow settlement in the basin; hanging sheets, inward shacks, hard to leave by fear not by lock

@@ -106,7 +106,7 @@ def check_card_format(canon):
 
 def parse_decks():
     """Yield (label, path, declared_total, {color: [names]}) for every deck line."""
-    for path in sorted(glob.glob('bestiary/*.md')):
+    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(r'\*\*Deck \((\d+) — (\d+) Blue / (\d+) Red / (\d+) Green\):\*\*(.+)',
                              text):
@@ -141,7 +141,7 @@ def check_decks(canon):
 def check_stat_blocks():
     bad = []
     n = 0
-    for path in sorted(glob.glob('bestiary/*.md')):
+    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(
                 r'\*\*Mind (\d+) / Body (\d+) / Soul (\d+) — HP (\d+)\*\*(.*)', text):
@@ -318,9 +318,9 @@ DISTANCE_RE = re.compile(
 
 
 def _bestiary_blocks():
-    """{'bestiary/x.md': [(mind, body, soul, hp), ...]} for every stat block."""
+    """{'bestiary/x/mechanics.md': [(mind, body, soul, hp), ...]} for every stat block."""
     blocks = {}
-    for path in sorted(glob.glob('bestiary/*.md')):
+    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
         text = open(path, encoding='utf-8').read()
         blocks[path] = [tuple(int(x) for x in m.groups()) for m in re.finditer(
             r'Mind (\d+) ?/ ?Body (\d+) ?/ ?Soul (\d+)[ ,—-]+HP (\d+)', text)]

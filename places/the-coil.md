@@ -18,7 +18,7 @@ The walls inside are taller than the coil looks from the water. Stone in places,
 
 *GM background — the deep history. Not player-facing unless the story earns it.*
 
-It wasn't always this far from anywhere, and it wasn't always this large, either. What it was, once: a Coralcoil — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil.md`), native to the coral-banked reaches where a river runs close to the coast (`world/geography-overview.md`, Rivers and Lakes). Ordinary size under ordinary conditions, same as any Stonecoil — and the same capacity to grow far past that, given enough reason to.
+It wasn't always this far from anywhere, and it wasn't always this large, either. What it was, once: a Coralcoil — a river-dwelling relative of the Stonecoil (`bestiary/stonecoil/README.md`), native to the coral-banked reaches where a river runs close to the coast (`world/geography-overview.md`, Rivers and Lakes). Ordinary size under ordinary conditions, same as any Stonecoil — and the same capacity to grow far past that, given enough reason to.
 
 It was given a reason. The civilization that once held the ground the Abyssal Ruins now sit on kept this one in containment, and fed it — deliberately, over what must have been a very long time, toward a very specific purpose: a living weapon, grown rather than built, meant for the war they were already losing against Ashfall. Ashfall built the War Engine. The Ruins built this instead — or were still building it, the slow way, when the question got settled by other means. See `quests/war-engine.md`, `places/ashfall-wastes.md`.
 
@@ -168,7 +168,7 @@ They do not guard the entrance. They are already inside.
 
 **At track 7+:** Encounter. They fight in tight corridors. They do not enter the center.
 
-**Stat block:** `bestiary/minotaur.md` *(pending)*
+**Stat block:** `bestiary/minotaur/README.md` *(pending)*
 
 ---
 
@@ -182,7 +182,7 @@ They carry crystal knives and arrowheads — small, sharp, clearly worked. The c
 
 If the party lingers near their territory or handles things they shouldn't: the Chitterers chitter furiously. Like a squirrel that has decided to make its feelings known. They do not attack. They do not stop chittering until the party moves on.
 
-**Stat block:** `bestiary/chitterer.md` *(pending)*
+**Stat block:** `bestiary/chitterer/README.md` *(pending)*
 
 ---
 
@@ -276,7 +276,7 @@ It is following the same rule the party should be following.
 
 It is not a minotaur. It does not trigger the pressure track. If the party fights it, it fights back. It does not roar.
 
-**Stat block:** `bestiary/wall-reader.md`
+**Stat block:** `bestiary/wall-reader/README.md`
 
 ---
 
@@ -382,7 +382,7 @@ The legend travels at two different distances. In Vulture's Nest, it's tangled u
 
 The ones who came before were Masons — the same secret order that maintains the boundary at Briarwatch, doing the work they always do: find a seam where held reality presses against something it shouldn't touch, then stabilize it before it does to them what it does to everyone else. This one was never a seam, though it read like one from a distance — it was a carrier. The Unheld doesn't cross the coastline in water or cargo, but it travels fine in something that was actually there and came back changed, and once it's inland, riding in a living thing instead of grey water, there's no telling whether it can spread from there. That's not a risk the order tolerates on principle, whatever the actual odds are — see "What Happened To It," above, for the full history. Nothing about their usual methods worked here anyway. Stabilization glyphs, wards built to let a Mason walk in, do the work, and walk back out — all of it assumes a threshold, something that holds still to be measured and repaired. The Coil isn't a threshold. It's alive, and it answered them instead. The order's own record marks it closed — officially, nobody's sent back. Unofficially, at least one still comes. Not obsession, necessarily — "contained" was never the same as "understood," and that gap is the one part of their own discipline they were never able to close. Whether the party could ever cross paths with them, mid-attempt, is not decided. See `factions/the-masons.md` (Known Works).
 
-The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader.md`.
+The Wall-Reader was one of them. Not symbolically — literally one of the Masons who came here, misunderstood what they'd found, and never left. Whatever the coil's answering looked like for the others, for this one it meant staying, and staying long enough that the discipline meant to get them back out consumed the person underneath it instead. See `bestiary/wall-reader/README.md`.
 
 The Night Ferryman is also more than he lets on — an Archon of Navigation (`world/seats.md`). Whether he knows it himself isn't established. Everything he already says and refuses to say reads exactly the same either way.
 
@@ -425,5 +425,5 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`wo
 - `world/seats.md` — Navigation, the Night Ferryman's Seat (GM-only)
 - `world/the-unheld.md` — what living exposure actually does, and why it isn't the same as carried water (GM-only)
 - `places/abyssal-ruins.md`, `places/ashfall-wastes.md`, `quests/war-engine.md` — where it was hurt, and the war that's still not finished happening (GM-only)
-- `bestiary/stonecoil.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat
+- `bestiary/stonecoil/README.md` — what it was before: a Coralcoil, the same species logic as a Stonecoil, native to a different habitat
 - `world/geography-overview.md` — Rivers and Lakes, the coral-banked reaches a Coralcoil actually comes from

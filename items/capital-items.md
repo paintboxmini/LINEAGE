@@ -180,7 +180,7 @@ Writing, city maps, messages.
 | Message Running (in-city) | Same-day delivery inside the walls | 5 silver |
 | Sealed Letter Service | Courier to another major hub, 1–2 weeks | 3 gold |
 
-Not the Cartographer's kind of map (`characters/kess.md`) — an ordinary printed street plan of topside, bought for coin, telling you nothing she couldn't be paid to leave out.
+Not the Cartographer's kind of map (`characters/kess/README.md`) — an ordinary printed street plan of topside, bought for coin, telling you nothing she couldn't be paid to leave out.
 
 ---
 
