@@ -104,7 +104,7 @@ Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still
 
 **Use:** Once per combat, when you attack and the reveal happens: the defender's just-revealed card is discarded, and they immediately choose a replacement from their remaining hand, face-up — no blind pick, since your card is already public. RPS re-resolves against the new card.
 
-*Attacker-on-defender only. The wielder cannot use this on their own reveal, as attacker or as defender — it denies an opponent their first answer, it never fixes the wielder's own blind guess. That restriction is load-bearing, not flavor: letting either side redo their own already-revealed card would break the simultaneous-blind-reveal principle the whole resolution system runs on (`rules/combat.md`; `combatsimulations/README.md`). Same override family as Axiom/Paradox (`rules/invariants.md`, Mechanic-override reference) — one reveal, one direction, then it's spent for the combat.*
+*Attacker-on-defender only. The wielder cannot use this on their own reveal, as attacker or as defender — it denies an opponent their first answer, it never fixes the wielder's own blind guess. That restriction is load-bearing, not flavor: letting either side redo their own already-revealed card would break the simultaneous-blind-reveal principle the whole resolution system runs on (`rules/combat.md`; `combatsimulations/README.md`). Same override family as Axiom/Paradox (`agent-tools/invariants.md`, Mechanic-override reference) — one reveal, one direction, then it's spent for the combat.*
 
 ---
 

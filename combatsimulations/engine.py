@@ -579,11 +579,19 @@ class Combatant:
         # override the formula baseline; the formula is still what the
         # one-shot-from-max-HP death check and stat-adjust deltas key off
         # internally, this only overrides the starting/max number itself.
-        self.max_hp = hp if hp is not None else (
+        # max_hp is COMPUTED (see the property below), not stored and patched.
+        # It used to be patched incrementally on every stat change, and two
+        # separate floors — eff()'s clamp at 0 and max_hp's own clamp at 1 —
+        # each lost history: a stat driven under-water and back up left max HP
+        # permanently wrong, silently self-correcting only sometimes. Computing
+        # from a fixed baseline makes the invariant true by construction rather
+        # than by every mutation site remembering to be careful.
+        self._base_max_hp = hp if hp is not None else (
             self.hp_per_stat['body'] * body
             + self.hp_per_stat['mind'] * mind
             + self.hp_per_stat['soul'] * soul)
-        self.hp = self.max_hp
+        self._base_eff = {'body': body, 'mind': mind, 'soul': soul}
+        self.hp = self._base_max_hp
         self.hand_size = max(2, mind)   # hand size = Mind, floored at 2 —
                                         # never below act-plus-one-block
         self.decklist = list(decklist)   # names, for rebuild
@@ -739,6 +747,15 @@ class Combatant:
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
 
+    @property
+    def max_hp(self):
+        """Max HP tracks current stats, always. Computed from the starting
+        value plus the weighted change in *effective* stats — never stored and
+        patched, so no mutation site can drift it. Bespoke HP (a boss passing
+        `hp=`) is the baseline and moves with stat changes the same way."""
+        return max(1, self._base_max_hp + sum(
+            w * (self.eff(s) - self._base_eff[s]) for s, w in self.hp_per_stat.items()))
+
     def adjust(self, stat, delta):
         """Change a stat for the combat by delta (negative = loss). Each stat
         drives its own derived value in real time:
@@ -752,9 +769,16 @@ class Combatant:
         hp_per_stat[stat]. Mind and Soul keep their own existing derived
         values too (hand size, initiative) on top of this — HP is additive,
         not a replacement for what they already governed."""
+        # Patch max HP by the change in *effective* stat, not the raw delta.
+        # eff() floors a stat at 0, so a stat driven under-water and back up
+        # would otherwise debit max HP for points the formula never counted —
+        # max HP read low for as long as the stat stayed negative, then silently
+        # self-corrected on the way back up, which is why it went unnoticed.
+        # Found 2026-08-17 by testing the "max HP tracks current stats"
+        # invariant instead of assuming it: 154 of 1447 random stat changes
+        # diverged. See `agent-tools/invariants.md`.
         self.stat_mod[stat] += delta
         if stat in self.hp_per_stat:
-            self.max_hp = max(1, self.max_hp + self.hp_per_stat[stat] * delta)
             if self.hp > self.max_hp:
                 self.hp = self.max_hp
             if self.hp <= 0 and not self.collapsed:

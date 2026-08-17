@@ -20,7 +20,7 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    - Does it force the engine to special-case resolution?
    - Does it imply a new POLICY (card selection / reveal / initiative / RPS
      resolution), not merely a new card effect?
-   If so, name the mechanic it overrides (`rules/invariants.md`, Mechanic-override
+   If so, name the mechanic it overrides (`agent-tools/invariants.md`, Mechanic-override
    reference) and say whether it should be expressed as a scoped modifier rather
    than a one-off exception. This pass is narrow — it's about the simulator's
    computational correctness, not whether the content is well-designed. That's
@@ -162,7 +162,7 @@ If removing flagged text breaks the content, the content isn't finished. Send it
 
 - Keyword list: `experimental/README.md`
 - Keyword definitions: `rules/card-glossary.md`
-- Engine invariants (for the Engine-Invariant Violations pass): `rules/invariants.md`
+- Engine invariants (for the Engine-Invariant Violations pass): `agent-tools/invariants.md`
 - Design standards (for the Design Principles pass): `agent-tools/design-principles.md` — living doctrine, restored 2026-07-23
 - Core resolution + timing: `rules/combat.md`, `rules/core-rules.md`
 - Simulator (for Simulation Abuse): `combatsimulations/`

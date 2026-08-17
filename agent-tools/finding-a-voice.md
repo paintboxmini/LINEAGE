@@ -20,7 +20,7 @@ Voice isn't vocabulary — an accent, a catchphrase, a verbal tic. Voice is what
 
 **1. Give them something they're wrong about — not factually, personally.**
 
-A voice needs an interpretation of reality they've committed themselves to. Think of it as a private invariant, the same shape as an engine invariant (`rules/invariants.md`) but held by a person instead of the simulator:
+A voice needs an interpretation of reality they've committed themselves to. Think of it as a private invariant, the same shape as an engine invariant (`agent-tools/invariants.md`) but held by a person instead of the simulator:
 
 - *"Nobody helps you for free."* — so when someone genuinely helps them, they don't feel gratitude. They feel an undisclosed debt.
 - *"People only turn cruel when they're afraid."* — so they keep trying to make monsters feel safe.
@@ -77,4 +77,4 @@ The question before applying this is the same redefinition-test instinct as ever
 - `agent-tools/design-principles.md` — the equivalent doctrine for mechanics and creatures, not people
 - `world/tonal-bible.md` — "the world is not organized around the protagonist's journey," the principle this whole method is in service of
 - `world/seats.md` — the domains four voices can disagree about
-- `rules/invariants.md` — the engine-facing version of "a fixed thing everything else has to hold true against"
+- `agent-tools/invariants.md` — the engine-facing version of "a fixed thing everything else has to hold true against"
