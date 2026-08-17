@@ -8,9 +8,9 @@ Scoped 2026-08-17 at Drew's request, as the first stage of a possible batch pipe
 
 ## What It Is
 
-A read-only analysis pass over `cards/`. It produces a **design brief**, not cards: where the set is dense, where it is empty, which mechanics it keeps restating, and which cards sit outside their own color's power curve.
+A read-only analysis pass over `cards/`. **Its primary job is identifying unused design space** — the combinations the set doesn't have yet. Drew (2026-08-17): *"like — there's no green melee initiative shift card. a tool that surfaces those would be useful."* Everything else it does is secondary to that.
 
-Output is input to `agent-tools/card-creation.md`, which stays the authorship and reasoning layer. This tool never writes a card, never edits `cards/`, and never decides anything.
+Output is a **design brief**, never cards. It is input to `agent-tools/card-creation.md`, which stays the authorship and reasoning layer. This tool never writes a card, never edits `cards/`, and never decides anything.
 
 ## Why Analysis Before Generation
 
@@ -28,13 +28,19 @@ Three reasons, in order of weight:
 
 ## The Analyses
 
-### 1. Coverage Grid
+### 1. Design Space Grid — the primary analysis
 
-Cross-tabulate the corpus on its own structural axes: color × range, color × die, color × tag, range × die.
+Cross-tabulate **color × range × mechanical function**. The first two axes are structural and come free from the parser. The third has to be derived: classify each card by what its Effect and Defensive Bonus actually *do* — initiative, position, draw/filter, damage modification, defense, control, healing, hand information, and so on.
 
-**Output:** the filled and empty cells. An empty or near-empty cell is a design prompt — *"no Green/Melee card touches initiative"* — not a defect and not an instruction to fill it.
+**Output:** the empty and near-empty cells, stated as prompts. *"Nothing in the set is a Green/Melee card that touches initiative."* Near-empty (one or two cards) is often as interesting as empty — a cell with a single occupant may be an accident rather than a design.
 
-**What it can't decide:** whether a hole should be filled. Some cells are empty because the design says so. Blue holding almost no d8 is Mind's identity as the utility stat, not a gap.
+**The function taxonomy is the whole tool, and it is a design artifact — not something to derive automatically.** Different categories produce different holes. A taxonomy that splits "control" into root/blind/stagger finds gaps a coarser one hides; one that merges draw and scry hides gaps a finer one finds. Whatever list gets used should be Drew's call and should be written down here once settled, because changing it silently changes every result the tool has ever produced.
+
+**What it can't decide:** whether a hole should be filled. Some cells are empty because the design says so — Blue holding almost no d8 is Mind's identity as the utility stat, not a gap. An empty cell is a question about why, and *"because it shouldn't exist"* is a complete and common answer.
+
+### 1b. Structural Grids
+
+The cheap version of the above, on parser-native axes only: color × range, color × die, color × tag, range × die. No taxonomy required, so no judgment baked in. Useful as a sanity check on the set's stated identities, and it runs even if the function taxonomy is still unsettled.
 
 ### 2. Recurrence Clustering
 
@@ -56,7 +62,29 @@ Normalize each card's Effect and Defensive Bonus text (lowercase, numbers to `N`
 
 **What it can't decide:** whether an outlier is wrong. Bosses are bespoke by design, and `bestiary/root-heart.md` carries an explicit HP exception for exactly this reason.
 
-### 4. Oracle Eligibility — moved out
+### 4. Keyword Trimming (Decompression)
+
+The reverse of compression, and the answer to a problem that was open until 2026-08-17: nothing retired a keyword that stopped earning its place, so the glossary only ever grew. Drew: *"for keyword trimming we could use a cut off of some kind ~4 or less cards with the keyword and we decompress the text back onto the cards that use the keyword."*
+
+**Count triggers the review. It does not make the decision.** The criterion is the same one that governs compression, run backwards: *is the keyword cheaper at the table than its longhand?* A rarely-used keyword whose definition is one short clause should be inlined — the lookup costs the table more than the words would. A rarely-used keyword whose rule carries real subtlety should stay compressed even at one card, because restating it on every card invites the restatements to drift apart. That is already why `rules/card-glossary.md` carries Obscure and Critical at a single use each.
+
+**The process, in order:**
+
+1. **Filter by category first.** A raw count targets the wrong entries. The glossary holds at least four kinds of thing, and only one is a decompression candidate:
+   - **Card-printed status keywords** (Evade, Rooted, Sealed) — the real targets.
+   - **Umbrella terms** (Debuff, Positive Status Effects) — defined so *other rules* can name a set. They aren't printed as effects, so a card count is meaningless for them. Never candidates.
+   - **Damage and rule properties** (Unpreventable, Critical) — describe how something behaves; referenced by other glossary entries.
+   - **Actions** (Exile) — referenced by rules and status cards, not only by cards.
+2. **Count live usage**, not the glossary's stated number. Those counts are a dated snapshot and the file says so.
+3. **Flag everything at or below the threshold** for review.
+4. **Apply the table-cost test** per flagged keyword. Decompress only where longhand is genuinely cheaper for a player.
+5. **If decompressing:** rewrite every card that uses it with the longhand, remove the glossary entry, and log it. Partial decompression is the failure mode to avoid — see Expose, below.
+
+**Threshold: not set. Needs Drew's call.** At ≤4 the review list is roughly a dozen of 31 glossary entries, and several of those are category errors that step 1 removes. There's no natural cliff in the distribution to snap to — usage tails off smoothly from the high fifties down to one — so the number is a judgment about how much review work is wanted at once, not something the data settles. Recommend running step 1's category filter and a live recount first, then picking the threshold against the list that actually results.
+
+**Expose is the live case, and it is mid-decompression right now.** `Expose [Color]` is defined in the glossary and used by four cards. Three use the compressed form (*"Expose Red — inflict Staggered"*). The fourth, in `cards/tithe-engine-ashfall.md`, restates the keyword's whole definition inline: *"Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it."* That is the keyword and its longhand definition on the same card, which `agent-tools/card-creation.md` explicitly says not to do. It should be resolved deliberately in one direction — not left as one card explaining itself while three don't.
+
+### 5. Oracle Eligibility — moved out
 
 Its own tool (2026-08-17, Drew). See `agent-tools/oracle-eligibility.md`. It measures the corpus against a stated target rather than describing a distribution, which makes it a different kind of pass from the three above.
 
@@ -66,14 +94,15 @@ Its own tool (2026-08-17, Drew). See `agent-tools/oracle-eligibility.md`. It mea
 
 Run once against the live corpus, 2026-08-17, to confirm the analyses find real things. **A one-time check, not a maintained table — recount rather than trust these.**
 
-- **Coverage grid works and matches stated design.** Red skews Melee, Blue skews Ranged, Green skews Both — the same identity `Oracle/baseoracledeck.md`'s 12/6/3 split encodes. Die spread confirms Body/d8 as the power stat, with Blue holding a single d8 in the entire set.
+- **Structural grids match the set's stated design.** Red skews Melee, Blue skews Ranged, Green skews Both — the same identity `Oracle/baseoracledeck.md`'s 12/6/3 split encodes. Die spread confirms Body/d8 as the power stat, with Blue holding a single d8 in the entire set.
+- **The design space grid works, and independently confirmed the hole Drew named.** A trial taxonomy of eight functions over color × range produced 72 cells, of which 5 were empty: `R/Both/initiative`, `B/Melee/position`, `B/Melee/heal`, **`G/Melee/initiative`** — the exact cell Drew identified from memory — and `G/Melee/hand-info`. Five prompts out of 72 cells is the right order of magnitude to act on. Note the taxonomy used was ad hoc and unratified; a different one yields a different five.
 - **Recurrence clustering needs filtering to be worth anything.** Naive clustering flagged ~105 cards; nearly all were healthy keyword reuse. Filtered to longhand only, the signal narrowed to ~16 recurring expressions across ~40 cards.
 - **The run's headline finding was rejected on review, which is the useful part.** The largest cluster was a family of conditional damage riders — at least seven cards across three conditions. It read as an obvious compression candidate and it isn't one; Drew cut the whole category (see the exclusion under Recurrence Clustering). Worth recording rather than quietly deleting: the analysis correctly found the biggest repetition in the set, and the biggest repetition in the set is one that should stay as it is. Frequency ranking will keep surfacing things that shouldn't be compressed. Treat every cluster as a question, never a recommendation.
 
 ## Parsing Hazards Found During Validation
 
-- **Parameterized keywords.** The glossary defines `Thorns X`, `Armour X`, `Future-Lock X`. A naive keyword match on the bare name misses these and reports false compression candidates. Match the stem, not the full entry.
-- **Conditional and negated references.** `rules/card-glossary.md`'s own counting note already excludes *"if the defender is Rooted"* and *"ignores Evade"* from keyword counts. Clustering has to make the same exclusion or it will read a condition as a grant.
+- **Parameterized keywords, two different shapes.** The glossary defines both `Thorns X` / `Armour X` / `Future-Lock X` and `Expose [Color]`. A bare-name match misses the first kind; matching the literal entry misses the second, since cards print *"Expose Blue,"* never *"Expose [Color]."* Both forms produced false findings on the validation run — Thorns reported as undefined, Expose reported as unused at 4 live cards.
+- **Conditional and negated references, excluded carefully.** `rules/card-glossary.md`'s own counting note excludes *"if the defender is Rooted"* and *"ignores Evade"*. A naive "any `if` near the keyword" filter over-excludes and will drop real usage: *"If your HP is 6 or less, gain Immunity"* is a genuine grant behind a condition, and a crude filter reported Immunity as unused. Exclude the keyword appearing **as the condition's subject**, not every keyword sharing a line with an `if`.
 - **Colorless cards.** Three of 340 have no color/stat. They break any grid keyed on color; handle explicitly rather than dropping them silently.
 
 ---
@@ -97,6 +126,8 @@ The word *interesting* does not appear as a filter anywhere in this scope, on pu
 
 ## Open Questions Before Building
 
-1. Where does output go — a generated report file, or straight to the session?
-2. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
-3. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
+1. **What is the function taxonomy?** The design space grid is only as good as this list, and it is Drew's call, not a derivation. The validation run used an unratified eight-category guess.
+2. **What is the decompression threshold?** See Keyword Trimming — recommend deciding it against a category-filtered live recount rather than in the abstract.
+3. Where does output go — a generated report file, or straight to the session?
+4. Is this run on demand, or folded into the roughly-every-5-changes staleness sweep (`CLAUDE.md`, Agent Workflow)?
+5. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
