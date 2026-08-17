@@ -105,8 +105,14 @@ def check_card_format(canon):
 
 
 def parse_decks():
-    """Yield (label, path, declared_total, {color: [names]}) for every deck line."""
-    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
+    """Yield (label, path, declared_total, {color: [names]}) for every deck line.
+
+    Globs every file in each entry folder, not just mechanics.md: multi-variant
+    entries (Ashgrazer, Briarbundles, the Tithe Engine) keep each variant's stat
+    block and deck in that variant's own section file. Narrowing this to
+    mechanics.md on 2026-08-17 silently dropped 6 of 37 decks from validation
+    while still reporting PASS."""
+    for path in sorted(glob.glob('bestiary/*/*.md')):
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(r'\*\*Deck \((\d+) — (\d+) Blue / (\d+) Red / (\d+) Green\):\*\*(.+)',
                              text):
@@ -141,7 +147,7 @@ def check_decks(canon):
 def check_stat_blocks():
     bad = []
     n = 0
-    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
+    for path in sorted(glob.glob('bestiary/*/*.md')):
         text = open(path, encoding='utf-8').read()
         for m in re.finditer(
                 r'\*\*Mind (\d+) / Body (\d+) / Soul (\d+) — HP (\d+)\*\*(.*)', text):
@@ -320,7 +326,7 @@ DISTANCE_RE = re.compile(
 def _bestiary_blocks():
     """{'bestiary/x/mechanics.md': [(mind, body, soul, hp), ...]} for every stat block."""
     blocks = {}
-    for path in sorted(glob.glob('bestiary/*/mechanics.md')):
+    for path in sorted(glob.glob('bestiary/*/*.md')):
         text = open(path, encoding='utf-8').read()
         blocks[path] = [tuple(int(x) for x in m.groups()) for m in re.finditer(
             r'Mind (\d+) ?/ ?Body (\d+) ?/ ?Soul (\d+)[ ,—-]+HP (\d+)', text)]

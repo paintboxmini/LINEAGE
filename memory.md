@@ -38,6 +38,22 @@ Working consequence for the Degrees of Alignment framework (`world/resonant-peop
 
 ---
 
+## One File Per Thing, Membership Recorded Separately
+
+2026-08-17. `cards/` went from ~50 grouped set-files to **341 flat files, one per card**; `bestiary/` and `characters/` went from one file per entry to **one folder per entry, one file per section** (with `mechanics.md` grouped and `profile.md` merging appearance/behaviour). The reasoning is worth keeping because it will govern the next restructure too.
+
+**What drove each split was different, and neither was tidiness.** Cards split because **art needs somewhere to live** — a card's image belongs in the card's own file. Entries split because a query for one thing (a deck) forced reading everything (lore, GM secrets, harvesting).
+
+**The rule that came out of it:** content lives in exactly one file; *membership* is recorded separately and may be recorded many times. `cards/buckets/` and `cards/archetypes/` hold lists, never card text. A card has one home bucket but can be indexed in several — *defense* homes 41 cards and indexes 110, so filing by home alone would hide two-thirds of the defensive coverage in the game.
+
+**The counterweight, learned the same day:** Drew — *"the parts of a character/creature that are repeatedly needed together for reasoning should live in the same file."* Section-per-file was too fine for appearance and behaviour, which co-occurred in 17 entries at ~400 characters each; they merged into `profile.md`. And `mechanics.md` stays grouped because deck size equals total stats and per-colour counts equal the individual stats — splitting the stat block from the deck would put two halves of one invariant in two files.
+
+**Set membership was the hidden cost nobody predicted.** It had been carried implicitly by file grouping — `red-body.md` *was* the red core set — and had nowhere to go once the grouping went. It moved to `cards/buckets/red|blue|green|colorless.md`, which turned buckets from annotation into infrastructure: `printing/generate-cards.py` now reads the core set's membership straight out of them.
+
+**What restructuring is actually good for.** Every pass surfaced content drift nothing else had caught: a card file containing no cards, Rasp's prose describing two cards retired hours earlier, 3,700 characters of duplicated card text in seven character files, Delve Roller's mangled card line, and a verify glob that silently stopped validating 6 of 37 decks while still reporting PASS. **Moving things forces you to look at them.** Expect a restructure to find bugs unrelated to the restructure, and budget for fixing them.
+
+---
+
 ## Card Creation Is Reasoning, Not a Pipeline
 
 Drew (2026-08-17): *"card creation is design and reasoning. An established workflow helps but can easily become too restrictive if it gets over defined."* This came out of a live case where the tool got over-defined in a single session and had to be walked back.

@@ -20,12 +20,12 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 
 | Directory | Contents |
 |-----------|----------|
-| `cards/` | Card set files — core (blue-mind, red-body, green-soul) and creature/location signature sets |
+| `cards/` | **One file per card**, flat — the filename is the card's slug, and card art lives in the card's own file. Membership lives in `cards/buckets/` (behaviour buckets plus the `red`/`blue`/`green`/`colorless` colour sets) and `cards/archetypes/`; neither holds card text |
 | `rules/` | Core rules, mechanics, and the keyword glossary |
 | `places/` | Place overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
-| `bestiary/` | Creature stat blocks, abilities, loot, card references |
-| `characters/` | Named NPC profiles, and player character decks (by character name) |
+| `bestiary/` | **One folder per creature.** `mechanics.md` holds the stat block, deck, passives, abilities and loot together; `profile.md` holds appearance and behaviour; other sections get their own file; `README.md` is the front door |
+| `characters/` | **One folder per character**, same shape as `bestiary/` — `mechanics.md`, `profile.md`, `README.md`, plus any other sections |
 | `items/` | Consumables and equipment |
 | `world/` | Geography, factions, organizations, lore and creation myths, cosmology (Seats, Archons, Resonance) |
 | `factions/` | Faction documents |
@@ -60,11 +60,13 @@ Use `agent-tools/card-creation.md` when creating or editing cards.
 Canonical card rules remain in `rules/cards.md` and `rules/card-glossary.md`; lineage/tag meaning remains in `world/lineage.md`.
 
 
-### Bestiary Files
+### Bestiary and Character Entries
 
-Open with a `Cards:` reference line if signature cards exist:
+One folder per entry. `README.md` carries the title, subtitle, a Contents list and Related Documents. `mechanics.md` carries the stat block, Creature Threat Rating, Deck line, passives, abilities, loot and combat identity — the stat block and deck stay in the same file because deck size equals total stats and per-colour counts equal the individual stats, so they are one invariant. `profile.md` carries appearance and behaviour. Anything else gets its own file.
+
+`mechanics.md` opens with a `Cards:` line naming the specific card files, if signature cards exist:
 ```
-**Cards:** `cards/filename.md`
+**Cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`
 ```
 
 ### Cross-References

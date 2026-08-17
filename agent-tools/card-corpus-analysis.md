@@ -22,7 +22,7 @@ Three reasons, in order of weight:
 
 ## What It Reuses
 
-`agent-tools/verify.py`'s `load_canon()` already parses every card block into `{name, color, stat, tag, range, die, file, block}`. That is the parser. Do not write a second one — a divergent parser would drift from what `verify.py` enforces, and the two disagreeing is worse than not having the tool.
+`agent-tools/verify.py`'s `load_canon()` already parses every card into `{name, color, stat, tag, range, die, set, file, block}` — one card per file since the 2026-08-17 split. That is the parser. Do not write a second one — a divergent parser would drift from what `verify.py` enforces, and the two disagreeing is worse than not having the tool.
 
 ---
 
@@ -111,7 +111,7 @@ The reverse of compression, and the answer to a problem that was open until 2026
 
 There is no natural cliff in the distribution to justify a different number — usage tails smoothly from the high fifties down to one — so 4 is a judgment about review volume, which is exactly what it should be.
 
-**Expose is the live case, and it is mid-decompression right now.** `Expose [Color]` is defined in the glossary and used by four cards. Three use the compressed form (*"Expose Red — inflict Staggered"*). The fourth, in `cards/cinder-spiral.md`, restates the keyword's whole definition inline: *"Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it."* That is the keyword and its longhand definition on the same card, which `agent-tools/card-creation.md` explicitly says not to do. It should be resolved deliberately in one direction — not left as one card explaining itself while three don't.
+**Expose was the first case, and it is closed.** `Expose [Color]` had been defined in the glossary and used by four cards — three in the compressed form (*"Expose Red — inflict Staggered"*), while the fourth restated the keyword's whole definition inline alongside the keyword, which `agent-tools/card-creation.md` says not to do. That split is what surfaced it. It was decompressed on 2026-08-17: all four cards now print the rule longhand and the glossary entry is gone. **The pattern to watch for is that split** — a keyword used compressed on some cards and self-explained on others is a decompression candidate announcing itself.
 
 ### 5. Oracle Eligibility — moved out
 
