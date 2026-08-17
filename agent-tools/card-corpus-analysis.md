@@ -101,7 +101,7 @@ The reverse of compression, and the answer to a problem that was open until 2026
    - **Umbrella terms** (Debuff, Positive Status Effects) — defined so *other rules* can name a set. They aren't printed as effects, so a card count is meaningless for them. Never candidates.
    - **Damage and rule properties** (Unpreventable, Critical) — describe how something behaves; referenced by other glossary entries.
    - **Actions** (Exile) — referenced by rules and status cards, not only by cards.
-   - **Item and status mechanics** (Future-Lock X) — defined in the card glossary but never printed on a card, because they arrive from items or status cards instead. These sit at zero card usage permanently and will flag on every run forever if not filtered. Zero usage here means "wrong category," not "dead keyword." Found the hard way on the 2026-08-17 run.
+   - **Non-card mechanics** — anything defined in the card glossary that no card prints, because it arrives from a creature, item, or status card instead. These sit at zero card usage permanently and would flag on every run forever. Zero usage here means "wrong category," not "dead keyword." Found on the 2026-08-17 run via Future-Lock X, which turned out to have a better answer than filtering: its rule was moved to `bestiary/future-lock-wasp.md`, the only thing in the game that applies it. **Prefer relocating over filtering** — a rule with exactly one source belongs with that source, and the glossary is meant to be printed and handed to players. Keep the filter for cases where relocation isn't right.
 2. **Count live usage**, not the glossary's stated number. Those counts are a dated snapshot and the file says so.
 3. **Flag everything at or below the threshold** for review, **sorted by definition length, shortest first.** Length is a secondary sort, never a second threshold — it just puts the obvious candidates on top. A 68-character rule on three cards inlines without argument; a 281-character one with ordering subtleties does not.
 4. **Apply the table-cost test** per flagged keyword. Decompress only where longhand is genuinely cheaper for a player.
@@ -165,4 +165,4 @@ The word *interesting* does not appear as a filter anywhere in this scope, on pu
 
 ## Open Questions Before Building
 
-1. Does `Oracle/baseoracledeck.md`'s eligibility pass share this tool's parser and report format, now that it's split out, or stand fully alone?
+*None. All settled as of 2026-08-17.* Separate tool, shared plumbing: `agent-tools/oracle-eligibility.md` uses the same parser and the same report format as this one, and only its criteria differ.

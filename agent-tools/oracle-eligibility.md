@@ -45,7 +45,10 @@ Two judgment calls it can surface but not settle:
 - **"Starter tier" and "simplest, lowest power/impact"** are not mechanically defined. A power proxy is available — `combatsimulations/` has a working engine — but a proxy ranking is evidence for the call, not the call.
 - **"Presupposes a system the pool doesn't otherwise introduce"** is circular by construction: what the pool introduces depends on what's in the pool. Evaluate against the eligible set and report the cards whose status flips depending on that reading, rather than picking one silently.
 
+## Shared Plumbing
+
+**Same parser, same report format as `agent-tools/card-corpus-analysis.md`** (2026-08-17, Drew). Separate tool, separate criteria, identical machinery — both read the corpus through `verify.py`'s `load_canon()` and emit the same shape of report. One parser, not three; a reader who has seen one tool's output can read the other's without relearning it.
+
 ## Open Questions Before Building
 
-1. Does it share `card-corpus-analysis.md`'s parser and report format, or stand fully alone? (Both should reuse `verify.py`'s `load_canon()` either way — one parser, not three.)
-2. Should the sync check against `content.py` / `generate-cards.py` live here, or become a real `verify.py` check? It's a pass/fail correctness condition, which is verify's job rather than this tool's.
+1. Should the sync check against `content.py` / `generate-cards.py` live here, or become a real `verify.py` check? It's a pass/fail correctness condition, which is verify's job rather than this tool's.

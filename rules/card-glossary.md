@@ -129,9 +129,6 @@ Prevent the next Debuff (above) applied to you. Triggers automatically the insta
 **(3) Immunity**
 The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.
 
-**(0) Future-Lock X**
-Reduces your effective hand size by X. Stacks additively into a single running total — the same shape as Armour and Thorns, never queued. **No floor at 2.** This is not a Mind loss (see Stat Change, below, which never drops hand size under 2) — Future-Lock is a direct hand-size reduction, the same mechanism CLIMB's own bonus uses, just negative, and it can take you to 0. At 0, you draw no cards and cannot act. Another combatant can clear it: spending their action removes 1 stack of Future-Lock from you. Not a Debuff — Ward and Deflect do not prevent it. Clears at the end of the combat it was active in; stacks earned outside combat carry into the next fight, or clear on a long rest if no fight comes first.
-
 ---
 
 ## Stat Change
