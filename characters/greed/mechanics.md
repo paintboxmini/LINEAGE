@@ -1,7 +1,7 @@
 # Greed — Mechanics
 
 **Cards:** `cards/lightning-dash.md`, `cards/thunderbolt-strike.md`, `cards/thunderclap.md`, `cards/volt.md`
-**Mind 4 / Body 5 / Soul 3 — HP 21**
+**Mind 4 / Body 5 / Soul 3 — HP 22**
 **Creature Threat Rating:** 12
 
 ## Combat Identity

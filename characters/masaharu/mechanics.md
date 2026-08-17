@@ -1,7 +1,7 @@
 # Masaharu — Mechanics
 
 **Cards:** `cards/case-file.md`, `cards/cold-read.md`, `cards/open-fire.md`, `cards/steady-hand.md`
-**Mind 5 / Body 3 / Soul 4 — HP 15**
+**Mind 5 / Body 3 / Soul 4 — HP 18**
 **Creature Threat Rating:** 12
 **Position:** Backline. He does not come to Frontline.
 

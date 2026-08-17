@@ -1,7 +1,7 @@
 # Ryder — Mechanics
 
 **Cards:** `cards/ashborn-flare.md`, `cards/ember-ward.md`, `cards/phoenixs-last-breath.md`
-**Mind 3 / Body 4 / Soul 5 — HP 18**
+**Mind 3 / Body 4 / Soul 5 — HP 20**
 **Creature Threat Rating:** 12
 
 ## Combat Identity

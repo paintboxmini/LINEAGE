@@ -1,7 +1,7 @@
 # Rasp — Mechanics
 
 **Cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`, `cards/small-doses.md`, `cards/thin-skin.md`, `cards/two-cuts.md`
-**Mind 4 / Body 3 / Soul 5 — HP 15**
+**Mind 4 / Body 3 / Soul 5 — HP 18**
 **Creature Threat Rating:** 12
 
 ## Combat Identity

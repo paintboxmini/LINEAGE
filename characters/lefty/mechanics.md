@@ -1,7 +1,7 @@
 # Lefty — Mechanics
 
 **Cards:** `cards/haul.md`, `cards/heave.md`, `cards/hold-fast.md`, `cards/iron-anchor.md`
-**Mind 3 / Body 5 / Soul 4 — HP 21**
+**Mind 3 / Body 5 / Soul 4 — HP 22**
 **Creature Threat Rating:** 12
 
 ## Combat Identity

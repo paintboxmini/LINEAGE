@@ -1,7 +1,7 @@
 # Kino — Mechanics
 
 **Cards:** `cards/ember-circle.md`, `cards/mirror-circle.md`, `cards/thorn-circle.md`
-**Mind 5 / Body 3 / Soul 4 — HP 15**
+**Mind 5 / Body 3 / Soul 4 — HP 18**
 **Creature Threat Rating:** 12
 
 ## Combat Identity

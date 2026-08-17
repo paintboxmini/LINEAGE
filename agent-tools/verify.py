@@ -453,14 +453,14 @@ def check_hp_formula():
 
 ENTRY_GLOBS = ('bestiary/*/*.md', 'characters/*/*.md')
 
-# Deck and stat-block validation covers bestiary/ only. characters/ is a
-# DECLARED exclusion, not an accidental one — widening the checks to it on
-# 2026-08-17 surfaced 11 real pre-existing discrepancies (9 character HP values
-# that predate the 2026-08-06 three-stat HP formula, and Orin Vane's prose-style
-# deck line the parser cannot read). Those are canon decisions for Drew, not
-# something a checker should silently rewrite. Logged in
-# `unresolved-concerns.md`; widen this the moment they're resolved.
-STAT_SCOPE = ('bestiary/*/*.md',)
+# Deck and stat-block validation covers bestiary/ AND characters/. It globbed
+# bestiary only from the day it was written until 2026-08-17, so 12 character
+# stat blocks and 2 character decks had never been validated at all — a gap the
+# coverage assertion below found, not a person. Widening it surfaced 11 real
+# errors (nine character HP values predating the 2026-08-06 three-stat HP
+# formula, and Orin Vane's prose deck line); all were fixed, and the scope has
+# stayed wide since.
+STAT_SCOPE = ENTRY_GLOBS
 
 
 def _entry_files():

@@ -1,7 +1,7 @@
 # Aege — Mechanics
 
 **Cards:** `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md`
-**Mind 5 / Body 3 / Soul 7 — HP 15**
+**Mind 5 / Body 3 / Soul 7 — HP 21**
 **Creature Threat Rating:** 15
 
 ## Combat Identity
