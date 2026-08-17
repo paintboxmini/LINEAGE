@@ -2,6 +2,8 @@
 
 *One of the last of a dying race. Servant of a forgotten Archon. The only practitioner left of a gift she has entirely inverted.*
 
+**Cards:** `cards/black-maggie.md`
+
 ---
 
 ## Appearance
