@@ -38,6 +38,23 @@ Working consequence for the Degrees of Alignment framework (`world/resonant-peop
 
 ---
 
+## Card Creation Is Reasoning, Not a Pipeline
+
+Drew (2026-08-17): *"card creation is design and reasoning. An established workflow helps but can easily become too restrictive if it gets over defined."* This came out of a live case where the tool got over-defined in a single session and had to be walked back.
+
+**What happened.** `agent-tools/card-creation.md` was read as forcing every effect into an existing keyword. It wasn't — the corpus already uses plain longhand freely (CALCULATE, STUDY, FOREST MEMORY) and `verify.py` only enforces keyword canonicity on `items/`, never `cards/`. But the tool had a prohibition with no matching permission: it said don't mint keywords for convenience, and never said plain text was legitimate or what to do when a card needs genuinely new mechanical space. Fixed by stating both, plus a **compression rule** — a keyword is earned when the set has already written the same mechanic longhand enough times that it has become vocabulary. Flag the candidate; don't mint it mid-card. No repeat threshold was set on purpose; Drew said "repeated" and "eventually" without a number.
+
+**Then it overcorrected.** A convergence check was added on top — align a new card to how the set already expresses a similar move unless the difference is load-bearing — and Drew cut it: *"Convergence step is premature. It causes card individuality to collapse early."* Two separate defects, worth keeping distinct:
+
+- **The altitude was wrong.** Convergence is a judgment about the corpus, made across many cards at once. Applied to one card mid-authoring, it sands off individuality before the card has established what it is. It isn't a bad question; it's a question for a different layer.
+- **It authorized silent rewrites.** Compression escalates ("flag, don't mint"); convergence just said "align it." An agent would have quietly restated a card's mechanic and the fork would never have reached Drew — a direct violation of the Canon Gate. Caught on self-review, fixed, then removed with the rest.
+
+**The standing rule:** where guidance in `card-creation.md` would flatten what makes a specific card worth having, the card wins and the guidance yields. Compression stayed because it only ever flags. Anything that would resolve a design question inside a rewrite doesn't belong in an authoring tool.
+
+**Live thread, undecided.** Compression and convergence together form a ratchet toward keyword coverage with no counter-pressure and no path for retiring a keyword that stopped earning its place. Needs a decision about what deliberately stays uncompressed. Related and also open: a proposed batch-generation tool (high-volume candidates → mechanical filtering → survivors into normal authoring and red-team) that would give corpus-level work like convergence somewhere real to live.
+
+---
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

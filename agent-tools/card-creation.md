@@ -4,6 +4,8 @@ Operational tool for creating or editing cards in `cards/`.
 
 Use this tool for **authoring a card**. It does not replace canon. Check the canonical files named below whenever a rule, keyword, lineage question, or existing card creates uncertainty.
 
+**This is a way of thinking about cards, not a pipeline to run in order.** The sections below are what a finished card has to satisfy — work them in any order, revisit them, hold several at once. Card creation is design and reasoning. An over-defined sequence produces cards that satisfy the process and nothing else. Where guidance here would flatten what makes a specific card worth having, the card wins and the guidance yields.
+
 ## 1. Start With the Decision
 
 Before writing the card, identify the decision or behavior the card is meant to create.
@@ -105,26 +107,7 @@ Before finalizing a card:
 
 If current canon and the requested card conflict, do not silently redefine canon. Surface the conflict.
 
-### Convergence Check
-
-Find the cards already doing something mechanically similar — not the same card, the same *move* — and compare how they say it. Then run the test:
-
-**Would rewriting this card to follow the established convention change what it does, or how its behavior reads at the table?**
-
-"Fundamentally" can't carry that question by itself, so check it against something concrete. A difference is load-bearing if aligning would change:
-
-- the decision the card exists to create (Step 1)
-- when, or whether, the effect triggers
-- what it interacts with — keywords, positions, other cards in the same deck
-- whether the four strands still agree (Step 6)
-
-If none of those move, the difference is wording, not design.
-
-- **Clearly nothing moves** — align it. Match the established expression. A near-variant that behaves identically but phrases itself differently is drift: the rule gets harder to learn, and every extra wording of one mechanic raises the cost of ever compressing it into a keyword later (see Mechanic, above).
-- **Clearly something moves** — keep the divergence, and say plainly what it buys. That difference *is* the card's design, and it should survive review on those terms.
-- **Close call** — **flag it; do not resolve it inside a rewrite.** Present both versions and what each costs, and let Drew choose. If you find yourself assembling an argument for why the two are "basically the same," that effort is the signal: this is a design decision, not a formatting one. Same escalation as compression, for the same reason (`CLAUDE.md`, Canon Gate — surface genuine design forks rather than choosing invisibly).
-
-The default is convergence. Divergence has to earn itself — but it earns it in the open, not quietly inside an agent's rewrite.
+**Convergence is not an authoring-time question.** Whether a card should be reworded to match how the set already expresses a similar move is a judgment about the corpus, made across many cards at once — not pressure applied to a single card while it's still being designed. Applied here, it sands off individuality before the card has established what it is. Note the resemblance if you see one; do not resolve it during authoring. (2026-08-17, Drew.)
 
 ## 6. Creation Test
 
@@ -153,6 +136,5 @@ Before presenting the card as finished, ask:
 9. Is the source tag real and appropriately specific?
 10. Does the card belong in the existing set, rather than merely resembling something already there?
 11. If it states a mechanic in longhand, has the set now written that same mechanic out often enough to flag for compression into a keyword?
-12. Is it a near-variant of how an existing card already expresses the same move — and has that been aligned, justified, or flagged for Drew, rather than settled quietly?
 
 For adversarial review, run `agent-tools/red-team.md` after creation.

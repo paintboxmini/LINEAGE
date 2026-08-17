@@ -65,12 +65,6 @@ minimal — do not add complexity unless it solves a demonstrated problem.
    - What genuinely new design space does it open?
    - Is it a mutation or merely a duplicate?
    - Could the mutation be expressed more cleanly?
-   - Convergence: would rewriting it to match that closest existing mechanic's
-     established expression change the decision it creates, when it triggers,
-     what it interacts with, or whether its four strands still agree? If none
-     of those move, it should be aligned rather than shipped as a near-variant.
-     If the answer is genuinely close, that is a finding to raise, not a call to
-     make (`agent-tools/card-creation.md`, Convergence Check).
 
 7. Tone & keyword compliance — fits the terse, mechanical voice; any keyword it
    uses is an approved one. Plain longhand text is legitimate where no keyword
