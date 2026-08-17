@@ -54,9 +54,6 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 
 **A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
 
-**(4) Expose [Color]**
-Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
-
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.
 

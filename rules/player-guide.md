@@ -192,7 +192,6 @@ You don't have to explain the metaphysics. Neither does your character.
 | Critical | This attack's base damage (stat + die, Deadly/Weak included) is doubled. Each card that grants it states its own trigger. |
 | Scry X | Look at the top X cards of a deck (yours, unless stated otherwise). Sort each to top, bottom, or discard, in any order. |
 | Exile | Removed from play for the rest of combat — doesn't go to discard, can't be retrieved. Returns to discard when combat ends. |
-| Expose [Color] | Blindly pick a card from the target's hand; if it's the named color, the stated effect applies. |
 | Locked | That card can't be played, until end of combat unless stated otherwise. |
 | Sealed | Can't Use an Item — Action, Item Action, or passive — until end of your next turn unless stated otherwise. |
 | Obscure | Enemies can't look at or manipulate your hand or deck (doesn't stop status cards being added). |

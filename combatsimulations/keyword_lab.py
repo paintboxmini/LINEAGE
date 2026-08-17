@@ -14,7 +14,7 @@ deckbuilding noise.
 Only supports keywords that are a single stackable counter or a single
 boolean flag on Combatant (deadly, weak, resist, vulnerable, evade, thorns,
 blind, ward, immune, rooted, staggered, quick) — see KEYWORD_GRANTS below.
-Anchored, Expose[Color], Initiative Shift X, Locked, and Sealed aren't single
+Anchored, Initiative Shift X, Locked, and Sealed aren't single
 flags and need a bespoke grant function if they're ever worth testing this
 way; add one next to KEYWORD_GRANTS rather than forcing them into this shape.
 
