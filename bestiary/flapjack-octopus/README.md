@@ -9,9 +9,6 @@ When it moves, it moves fast. When it stops, it disappears.
 Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the safe paths through the sponge colonies.
 
 ---
-
----
-
 ## Contents
 
 - [mechanics](mechanics.md)

@@ -13,3 +13,5 @@ Maggie is the seven hundredth sacrifice. She has always known this. When the sev
 **The party's complication:** killing Maggie may complete the ritual rather than stop it. She dies either way. The question is whether her death is the seven hundredth or simply a death. And the Archon — neutral, once-benevolent, fading — means stopping her is not a clean heroic act. It is stopping the last tether of something that used to be beautiful.
 
 ---
+
+---

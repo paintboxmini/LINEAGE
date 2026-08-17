@@ -12,10 +12,8 @@ He works out of a lodge at the Soft Edge (`places/glasslight-reach.md`) — one 
 
 ## Contents
 
-- [mirel](mirel.md)
 - [open](open.md)
 - [the chisels](the-chisels.md)
-- [the coil](the-coil.md)
 
 ## Related Documents
 
@@ -23,3 +21,22 @@ He works out of a lodge at the Soft Edge (`places/glasslight-reach.md`) — one 
 - `characters/mirel/README.md` — the chisel she carries, and how she came to
 - `places/the-coil.md` — the failure he still visits
 - `places/glasslight-reach.md` — the Soft Edge, where his lodge stands
+
+---
+
+## Mirel
+
+Found her scratching a stabilization glyph from memory into the rock near the seams at the Lodge — real seams, the kind that take training to even notice. Asked how she'd found them. She said she'd just followed some marks — no sense she'd done anything unusual. That plainness is what actually settled it for him; someone chasing significance would have made more of the moment than she did.
+
+He opened up more than he meant to — talked about the work, maybe even let her inside the Lodge itself. Without thinking about it, he handed her a chisel: one of his own six, Time-aligned. Told her she'd have to find her own hammer if she wanted to put it to practice. No glyph lessons. Nothing else to go on.
+
+See `characters/mirel/README.md`.
+
+---
+## The Coil
+
+Officially closed — the order's own record files it as a failure not worth the cost of trying again, no more sanctioned maintenance visits. Unofficially, Sebastian still goes back. Not sanctioned by anyone left to sanction it, not stopped either — an old obligation inherited from a line that's had nobody else to check it against for longer than anyone currently walking can say.
+
+See `factions/the-masons.md` (Known Works, The Coil), `places/the-coil.md` (GM Secret).
+
+---

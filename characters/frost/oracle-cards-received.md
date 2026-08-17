@@ -1,3 +1,0 @@
-# Frost — Oracle Cards Received
-
-- Session 1: SPARK OF VIOLENCE

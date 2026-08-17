@@ -10,10 +10,8 @@
 
 - [mechanics](mechanics.md)
 - [backstory](backstory.md)
-- [gm secret](gm-secret.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [voice](voice.md)
-- [what she does](what-she-does.md)
 - [where she appears](where-she-appears.md)
 
 ## Related Documents
@@ -30,3 +28,6 @@
 - `world/resonant-people.md` — Resonant People, the Degrees of Alignment, and her own entry under Known Resonant People
 - `items/briarwatch-items.md` — the Carrion Feather
 - `cards/known-ground.md`, `cards/watches-feet.md`, `cards/where-its-gathering.md` — signature cards
+
+---
+

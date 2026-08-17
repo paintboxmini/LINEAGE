@@ -7,3 +7,5 @@ If the party has already passed the abandoned homestead (`places/briarwatch.md`,
 **The bundles are an answer, not a scene.** If someone works out that the fresh cuttings at an empty house and the farmer down the road are the same fact, let them ask and let him say yes. Flat, one sentence, no weight put on it. It is the smallest possible version of what he is, and building a moment around it makes him perform something he would never perform.
 
 ---
+
+---

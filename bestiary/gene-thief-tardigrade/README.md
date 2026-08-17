@@ -5,9 +5,6 @@ Translucent body, eight stubby legs, size of a large dog. The Adaptation Core is
 More structure than a slime. Aware in the way that makes it dangerous — it responds to what the party does. It learns mid-fight.
 
 ---
-
----
-
 ## Contents
 
 - [mechanics](mechanics.md)

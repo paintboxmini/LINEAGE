@@ -6,3 +6,20 @@
 **Passive — Dual Strike:** Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire. Hand size is Mind (5).
 **Deck (11 — 5 Blue / 4 Red / 2 Green):** 1× each Ward Glyph, 1× each Mirror Glyph, LUNGE, SIGNATURE THRUST, FEINT, INK THE AIR, SURVEY. *(Trimmed from an earlier 2×-each-glyph build that ran 18 cards against CTR 11 — kept exactly one of each Ward/Mirror pair per color, since that pairing is the character's whole structural identity, and cut STEP ASIDE, the one non-Glyph card, to land the split precisely on Mind 5/Body 4/Soul 2.)*
 
+---
+
+## Items
+
+**INSCRIPTION VIAL**
+*Consumable — Mineral compound, Mason-derived*
+Use (1): Search your deck or discard pile for any Ward or Mirror Glyph card and add it to your hand.
+
+**MANCER'S FOIL**
+*Weapon — Narrow fencing blade, mineral-stained*
+Equipped: Attacks made with Blue cards deal +1 damage.
+
+**FADED SURVEY**
+*Artifact — Annotated Mason cartography, partially redacted*
+Equipped: At the start of combat, Scry 1 of your own deck.
+
+---

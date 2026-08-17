@@ -9,7 +9,8 @@
 - [mechanics](mechanics.md)
 - [backstory](backstory.md)
 - [gm notes](gm-notes.md)
-- [items](items.md)
-- [personality](personality.md)
 - [profile](profile.md)
 - [the glyph system](the-glyph-system.md)
+
+---
+

@@ -23,3 +23,9 @@
 All core cards — `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`.
 
 ---
+
+---
+
+## Oracle Cards Received
+
+- Session 1: SPARK OF VIOLENCE

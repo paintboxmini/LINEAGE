@@ -1,4 +1,8 @@
-# Corren — Death (GM Secret — the founding moment of the Final Current, known to no one but Kaine, told by him to no one)
+# Corren — Gm-Notes
+
+---
+
+## Death (GM Secret — the founding moment of the Final Current, known to no one but Kaine, told by him to no one)
 
 Low tide. Corren went down alone, onto rock the water only leaves bare a few hours at a stretch, standing where his first bath had never required him to stand. Kaine was already up in the cliffs, hidden, for reasons that had nothing to do with Corren at first.
 

@@ -1,4 +1,8 @@
-# Aege — GM Secret — Not Player-Facing
+# Aege — Gm-Notes
+
+---
+
+## GM Secret — Not Player-Facing
 
 Aege is a Resonant Person of the Seat of Death (`world/seats.md`, `world/resonant-people.md`) — **Stage II, Alignment**. She is not the Archon and the Seat is not filled. Right now she is a reflection of the domain, not its seat.
 

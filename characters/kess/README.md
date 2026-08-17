@@ -9,7 +9,6 @@
 - [backstory](backstory.md)
 - [connections](connections.md)
 - [profile](profile.md)
-- [what she does](what-she-does.md)
 
 ## Related Documents
 

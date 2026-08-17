@@ -15,7 +15,10 @@ He is not a monster in his own mind. He is the only one willing to say what ever
 ## Contents
 
 - [mechanics](mechanics.md)
-- [character notes](character-notes.md)
 - [open](open.md)
+- [profile](profile.md)
 - [the final current](the-final-current.md)
 - [the goal](the-goal.md)
+
+---
+

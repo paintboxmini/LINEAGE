@@ -13,9 +13,6 @@ Found primarily on the Diamond Shelf in the lower Demon Court levels — the bac
 Nobody knows what they are. Guards and prisoners alike know what happens to someone who gets lost in the Wallows — they don't come back, and something does. That knowledge is enough. It circulates as whisper and warning, fear that the Demon Court cultivates without having to explain. The Descended themselves are never described accurately because nobody who has seen them up close has chosen to go back for another look.
 
 ---
-
----
-
 ## Contents
 
 - [mechanics](mechanics.md)

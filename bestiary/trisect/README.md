@@ -7,9 +7,6 @@ The central chassis houses three combustion engines — exposed, unshielded, pis
 It idles before it engages. The three engines find a rhythm together — a low, even churn. When it moves, all three limbs work in sequence. Nothing about it is off-balance.
 
 ---
-
----
-
 ## Contents
 
 - [mechanics](mechanics.md)

@@ -1,4 +1,8 @@
-# Iron — Appearance & Manner
+# Iron — Profile
+
+---
+
+## Appearance & Manner
 
 Hat in hand when he talks to strangers, and he keeps it there longer than the conversation needs. More tired than frightened, and has been for a season.
 

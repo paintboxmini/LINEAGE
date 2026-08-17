@@ -1,4 +1,8 @@
-# Elias — What He Does
+# Elias — Profile
+
+---
+
+## What He Does
 
 Wanders. Finds the rowdiest bar in whatever settlement he's passing through. Becomes a small legend in it. Moves on.
 

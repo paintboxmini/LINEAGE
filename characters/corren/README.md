@@ -18,7 +18,7 @@ People found him warm, at first. Being seen that generously is rare. It curdled 
 
 ## Contents
 
-- [death gm secret](death-gm-secret.md)
+- [gm notes](gm-notes.md)
 
 ## Related Documents
 

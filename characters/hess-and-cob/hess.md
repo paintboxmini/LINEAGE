@@ -13,3 +13,5 @@ She avoids Cob. If asked why, she'd say she finds the young ones tiring. This is
 **If the party speaks with her:** warm, interested, asks good questions about where they've been. She will not bring up the cubs first. If the party does, she listens carefully and says very little. She does not lie. She also does not say the thing.
 
 ---
+
+---

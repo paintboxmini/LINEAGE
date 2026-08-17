@@ -1,4 +1,8 @@
-# Kaine — Character Notes
+# Kaine — Profile
+
+---
+
+## Character Notes
 
 He's convincing — the Promise philosophy genuinely supports his reading of it, which is why moderates struggle to argue with him: he's using their own language.
 
