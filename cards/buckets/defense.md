@@ -1,41 +1,121 @@
 # Defense
 
-*Refusing or reducing incoming damage — Evade, Resist, Ward, Armour, Protect, Immunity, Deflect.*
+*Refusing or reducing incoming damage — Evade, Resist, Ward, Armour, Protect, Immunity, Deflect, untargetability.*
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (16)
+## Homed here (41)
 
-- BRACE
-- DEFLECT  *(also: damage amp)*
-- ENDURE  *(also: sustain)*
-- FORESEEN
-- GIVE WAY
-- INSTINCT
-- INTERCEPT
-- LAST RESORT
-- PAIN IS FUEL  *(also: damage amp)*
-- SETTLE
-- SHADE AWAY
-- SIDESTEP  *(also: position)*
-- SLIP THE BLADE  *(also: position)*
-- STEADFAST
-- UNBROKEN
-- UNTOUCHED
+- [ASH REDIRECT](../ash-redirect.md)
+- [BLOOM STILLNESS](../bloom-stillness.md)
+- [BRACE](../brace.md)
+- [CAMOUFLAGE STRIKE](../camouflage-strike.md)  *(also: position)*
+- [CINDER SPIRAL](../cinder-spiral.md)
+- [CRIMSON MIRROR](../crimson-mirror.md)
+- [CURRENT SENSE](../current-sense.md)
+- [DEFLECT](../deflect.md)  *(also: damage amp)*
+- [DISSOLVE CONTACT](../dissolve-contact.md)
+- [EMBER CIRCLE](../ember-circle.md)
+- [ENDURE](../endure.md)  *(also: sustain)*
+- [FEEDING FRENZY](../feeding-frenzy.md)
+- [FELT YOU COMING](../felt-you-coming.md)
+- [FLATTEN](../flatten.md)
+- [FORESEEN](../foreseen.md)
+- [GIVE WAY](../give-way.md)
+- [GUTTERING](../guttering.md)
+- [HULLGUARD](../hullguard.md)
+- [INSTINCT](../instinct.md)
+- [INTERCEPT](../intercept.md)
+- [LAST RESORT](../last-resort.md)
+- [MIMICRY PULSE](../mimicry-pulse.md)
+- [MIRROR CIRCLE](../mirror-circle.md)
+- [OUT OF REACH](../out-of-reach.md)
+- [PAIN IS FUEL](../pain-is-fuel.md)  *(also: damage amp)*
+- [PECK](../peck.md)
+- [SETTLE](../settle.md)
+- [SHADE AWAY](../shade-away.md)
+- [SHED SKIN](../shed-skin.md)  *(also: card flow)*
+- [SHROUD](../shroud.md)
+- [SIDESTEP](../sidestep.md)  *(also: position)*
+- [SKITTER AWAY](../skitter-away.md)
+- [SLIP THE BLADE](../slip-the-blade.md)  *(also: position)*
+- [STEADFAST](../steadfast.md)
+- [STILL AS LITTER](../still-as-litter.md)
+- [STILL COUNTING](../still-counting.md)
+- [STITCHED CASE](../stitched-case.md)  *(also: damage amp)*
+- [THORN CIRCLE](../thorn-circle.md)
+- [UNBROKEN](../unbroken.md)
+- [UNTOUCHED](../untouched.md)
+- [VERDANT WARD](../verdant-ward.md)
 
-## Also indexed here (14)
+## Also indexed here (69)
 
-- CALLED SHOT  *(home: control)*
-- CERTAIN STRIKE  *(home: control)*
-- EXPOSED  *(home: damage amp)*
-- GROUNDING STANCE  *(home: position)*
-- PARADOX  *(home: rps manipulation)*
-- ROLLOUT  *(home: payoff)*
-- SEED  *(home: position)*
-- SHARED BURDEN  *(home: self-inflicted cost)*
-- SHIELD BASH  *(home: control)*
-- SLIPSTREAM  *(home: position)*
-- STILL POINT  *(home: position)*
-- SYNCHRONY  *(home: team support)*
-- TABLE STAKES  *(home: self-inflicted cost)*
-- WEATHERED  *(home: sustain)*
+- [AFTERIMAGE](../afterimage.md)  *(home: control)*
+- [ALWAYS ONE MORE](../always-one-more.md)  *(home: sustain)*
+- [ANOTHER JOINT](../another-joint.md)  *(home: control)*
+- [ASH EXHAUST](../ash-exhaust.md)  *(home: hand denial)*
+- [BORROWED POWER](../borrowed-power.md)  *(home: damage amp)*
+- [BOUND TO THE STONE](../bound-to-the-stone.md)  *(home: position)*
+- [CALLED SHOT](../called-shot.md)  *(home: control)*
+- [CAMOUFLAGE SHIFT](../camouflage-shift.md)  *(home: control)*
+- [CARRION PULL](../carrion-pull.md)  *(home: position)*
+- [CERTAIN STRIKE](../certain-strike.md)  *(home: control)*
+- [COIL DROP](../coil-drop.md)  *(home: position)*
+- [COLD READ](../cold-read.md)  *(home: card flow)*
+- [CORRECTION LOAD](../correction-load.md)  *(home: status inserters)*
+- [CUT OFF](../cut-off.md)  *(home: control)*
+- [DARK CORRIDOR](../dark-corridor.md)  *(home: control)*
+- [DIRGE](../dirge.md)  *(home: control)*
+- [DUSK COUNT](../dusk-count.md)  *(home: initiative)*
+- [EMBER WARD](../ember-ward.md)  *(home: team support)*
+- [ENVELOPING PRESS](../enveloping-press.md)  *(home: position)*
+- [EXPOSED](../exposed.md)  *(home: damage amp)*
+- [FAULT EXPLOIT](../fault-exploit.md)  *(home: damage amp)*
+- [FREEZE](../freeze.md)  *(home: card flow)*
+- [GENETIC SAMPLE](../genetic-sample.md)  *(home: card flow)*
+- [GROUNDING STANCE](../grounding-stance.md)  *(home: position)*
+- [HALF-SEEN](../half-seen.md)  *(home: hand denial)*
+- [HARVEST CHAIN](../harvest-chain.md)  *(home: position)*
+- [HEADLONG](../headlong.md)  *(home: damage amp)*
+- [HEAT TRACE](../heat-trace.md)  *(home: damage amp)*
+- [HOLD FAST](../hold-fast.md)  *(home: sustain)*
+- [INCENSE WARD](../incense-ward.md)  *(home: team support)*
+- [INK BURST](../ink-burst.md)  *(home: control)*
+- [IRON ANCHOR](../iron-anchor.md)  *(home: control)*
+- [LOW GREY HAZE](../low-grey-haze.md)  *(home: position)*
+- [NEEDLE BITE](../needle-bite.md)  *(home: damage amp)*
+- [NO VACANCY](../no-vacancy.md)  *(home: position)*
+- [OFF THE EDGE](../off-the-edge.md)  *(home: position)*
+- [PARADOX](../paradox.md)  *(home: rps manipulation)*
+- [PATIENT WAIT](../patient-wait.md)  *(home: damage amp)*
+- [PETAL FEINT](../petal-feint.md)  *(home: control)*
+- [PINCH](../pinch.md)  *(home: position)*
+- [REGISTERED](../registered.md)  *(home: card flow)*
+- [RESIST BLESSING](../resist-blessing.md)  *(home: team support)*
+- [ROLLOUT](../rollout.md)  *(home: payoff)*
+- [RUSTLE AND GONE](../rustle-and-gone.md)  *(home: position)*
+- [SEED](../seed.md)  *(home: position)*
+- [SENSE THE SPENT](../sense-the-spent.md)  *(home: status inserters)*
+- [SHARED BURDEN](../shared-burden.md)  *(home: self-inflicted cost)*
+- [SHED](../shed.md)  *(home: position)*
+- [SHIELD BASH](../shield-bash.md)  *(home: control)*
+- [SIDELONG SCUTTLE](../sidelong-scuttle.md)  *(home: initiative)*
+- [SIPHON](../siphon.md)  *(home: buff removal)*
+- [SLIPSTREAM](../slipstream.md)  *(home: position)*
+- [SNUFF](../snuff.md)  *(home: control)*
+- [STEP ASIDE](../step-aside.md)  *(home: position)*
+- [STILL POINT](../still-point.md)  *(home: position)*
+- [SYNCHRONY](../synchrony.md)  *(home: team support)*
+- [SYSTEM PURGE](../system-purge.md)  *(home: position)*
+- [TABLE STAKES](../table-stakes.md)  *(home: self-inflicted cost)*
+- [THE FIELD IS THE LINE](../the-field-is-the-line.md)  *(home: damage amp)*
+- [THE PACK REMEMBERS](../the-pack-remembers.md)  *(home: damage amp)*
+- [THE WOOL IS MUSCLE](../the-wool-is-muscle.md)  *(home: sustain)*
+- [THERMAL VECTOR](../thermal-vector.md)  *(home: damage amp)*
+- [THORN LARDER](../thorn-larder.md)  *(home: card flow)*
+- [TOO HIGH TO HEAR](../too-high-to-hear.md)  *(home: card flow)*
+- [UNDERTOW](../undertow.md)  *(home: control)*
+- [VENOM MIND](../venom-mind.md)  *(home: control)*
+- [VENT CYCLE](../vent-cycle.md)  *(home: damage amp)*
+- [WARNING SHOT](../warning-shot.md)  *(home: control)*
+- [WEATHERED](../weathered.md)  *(home: sustain)*

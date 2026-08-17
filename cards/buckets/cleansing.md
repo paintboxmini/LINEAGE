@@ -6,4 +6,4 @@
 
 ## Homed here (1)
 
-- FIELD MEDICINE  *(also: hand denial)*
+- [FIELD MEDICINE](../field-medicine.md)  *(also: hand denial)*

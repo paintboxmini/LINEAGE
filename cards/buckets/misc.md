@@ -1,6 +1,6 @@
 # Misc
 
-*Behaviours with exactly one card in the whole corpus. Not a dumping ground — a holding pen for things too rare to justify a bucket, revisited if a second card ever joins one.*
+*Behaviours with exactly one card in the corpus. A holding pen, revisited if a second card joins.*
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
@@ -10,4 +10,4 @@
 
 ## Also indexed here (1)
 
-- STEAL  *(home: self-inflicted cost)*
+- [STEAL](../steal.md)  *(home: self-inflicted cost)*

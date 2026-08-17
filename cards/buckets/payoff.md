@@ -6,11 +6,11 @@
 
 ## Homed here (4)
 
-- BURN BRIGHT  *(also: card flow)*
-- PRESS THE WOUND  *(also: hand denial, sustain)*
-- ROLLOUT  *(also: damage amp, defense)*
-- TRACE  *(also: buff removal)*
+- [BURN BRIGHT](../burn-bright.md)  *(also: card flow)*
+- [PRESS THE WOUND](../press-the-wound.md)  *(also: hand denial, sustain)*
+- [ROLLOUT](../rollout.md)  *(also: damage amp, defense)*
+- [TRACE](../trace.md)  *(also: buff removal)*
 
 ## Also indexed here (1)
 
-- FRAME-TRAP  *(home: rps manipulation)*
+- [FRAME-TRAP](../frame-trap.md)  *(home: rps manipulation)*

@@ -6,8 +6,8 @@
 
 ## Homed here (5)
 
-- ADAPT
-- CERTAINTY
-- EQUAL FOOTING
-- FRAME-TRAP  *(also: payoff, team support)*
-- PARADOX  *(also: defense, sustain)*
+- [ADAPT](../adapt.md)
+- [CERTAINTY](../certainty.md)
+- [EQUAL FOOTING](../equal-footing.md)
+- [FRAME-TRAP](../frame-trap.md)  *(also: payoff, team support)*
+- [PARADOX](../paradox.md)  *(also: defense, sustain)*

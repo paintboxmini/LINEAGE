@@ -4,13 +4,15 @@
 
 **Card list only — the full cards live in `cards/`.** Assignment and reasoning: `agent-tools/core-bucket-assignment.md`.
 
-## Homed here (3)
+## Homed here (5)
 
-- DRAIN
-- LEVEL THE FIELD
-- WAITING GAME
+- [DRAIN](../drain.md)
+- [FOLLOW-UP](../follow-up.md)
+- [LEVEL THE FIELD](../level-the-field.md)
+- [SIPHON](../siphon.md)  *(also: defense)*
+- [WAITING GAME](../waiting-game.md)
 
 ## Also indexed here (2)
 
-- TRACE  *(home: payoff)*
-- UNMAKE  *(home: self-inflicted cost)*
+- [TRACE](../trace.md)  *(home: payoff)*
+- [UNMAKE](../unmake.md)  *(home: self-inflicted cost)*

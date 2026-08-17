@@ -6,14 +6,14 @@
 
 ## Homed here (11)
 
-- BALANCE
-- BERSERKER'S PRICE  *(also: control)*
-- BLOOD TITHE  *(also: team support)*
-- EMERGENCY REPAIRS  *(also: sustain)*
-- OVERDRIVE  *(also: position)*
-- RALLY  *(also: position)*
-- SACRIFICE STRIKE  *(also: damage amp)*
-- SHARED BURDEN  *(also: defense, team support)*
-- STEAL  *(also: initiative, misc)*
-- TABLE STAKES  *(also: defense, team support)*
-- UNMAKE  *(also: buff removal)*
+- [BALANCE](../balance.md)
+- [BERSERKER'S PRICE](../berserkers-price.md)  *(also: control)*
+- [BLOOD TITHE](../blood-tithe.md)  *(also: team support)*
+- [EMERGENCY REPAIRS](../emergency-repairs.md)  *(also: sustain)*
+- [OVERDRIVE](../overdrive.md)  *(also: position)*
+- [RALLY](../rally.md)  *(also: position)*
+- [SACRIFICE STRIKE](../sacrifice-strike.md)  *(also: damage amp)*
+- [SHARED BURDEN](../shared-burden.md)  *(also: defense, team support)*
+- [STEAL](../steal.md)  *(also: initiative, misc)*
+- [TABLE STAKES](../table-stakes.md)  *(also: defense, team support)*
+- [UNMAKE](../unmake.md)  *(also: buff removal)*

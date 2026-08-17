@@ -145,6 +145,17 @@ An Effect that only *adds to or amplifies this attack's damage* has nothing to a
 
 A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land, that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
 
+### Colorless cards
+
+*Moved here 2026-08-17 from `cards/buckets/colorless.md`'s header — a resolution rule that was living in a card file.*
+
+This file holds cards that don't carry a fixed color or stat on their face — currently cards that resolve to one only at the reveal step, per their own text (the point of them, not an exception to the rule; because RPS and stat totals aren't known until reveal, they deliberately fall outside color-locked bans like Axiom that check at commitment time), and reserved for any future status-effect-only card built without a color or stat of its own.
+
+**How colorless resolves against a defense:** a colorless card auto-loses to any card with a real color — it never wins or ties against one. It only auto-loses when actually challenged that way, though: against no defense at all, or a defender who can't defend (Collapsed, Staggered), a colorless card still wins fully, same as anything else would in that situation. Two colorless cards facing each other tie.
+
+Membership: `cards/buckets/colorless.md`.
+
+
 ---
 
 ## Damage Pipeline
@@ -219,6 +230,22 @@ In tight environments (narrow tunnels, low passages, cramped rooms), the GM may 
 Some cards produce **Ongoing Effects.** These cards remain face up in front of the player after use. The effect persists until its stated condition is met, at which point the card is discarded.
 
 Multiple ongoing effects can be active simultaneously unless a card specifies otherwise.
+
+---
+
+## Objects
+
+*Moved here 2026-08-17 from `cards/mason-glyphs.md`'s header, which stated outright that this rule "doesn't belong to Masons specifically." It was a general mechanic living inside one card set's file.*
+
+Mason cards are one specific flavor of a more general mechanic: the **Object** — a persistent, position-anchored battlefield entity, distinct from a summoned creature or a status effect. A Mason's Object happens to be a glyph (the fiction is marking what's already in the environment — a wall, the ground, a statue, anything that will hold the mark — not conjuring something new into the world), but the underlying rule doesn't belong to Masons specifically: a future Construct-themed or Cultivator-themed card could create its own kind of Object (a totem, a ward-stone, whatever fits its own fiction) and reuse the exact same rules below, without inheriting "glyph" as the name for what it made. An Object is created at whatever position (Frontline/Backline) its creator occupied at the moment of creation, and stays there — it outlasts the character who made it, and doesn't move if they do.
+
+Every Object shares the same rules:
+- **Any attack can target an Object instead of a combatant.** It never rolls for damage and never triggers the attacking card's Effect — it just destroys the Object outright. The attacking card is discarded as normal.
+- **Protect protects an Object the same way it protects an ally.** If anyone on the Object's side currently holds Protect, an attack that would destroy it is redirected to them instead (Protect's own text: "the next time an ally would take attack damage, you take it instead" — an Object counts as an ally for this purpose).
+- **Otherwise, an Object's own effect triggers for free** — no roll, no contest — for whoever occupies its position on their turn. It isn't a combat action; it's an ongoing rule of the battlefield until someone bothers to destroy it.
+- **An ally-facing Object benefits its creator too, same as anyone else on their side.** Once it exists, an Object isn't "cast" by anyone anymore — there's no caster's turn left to exclude the way a per-turn ally buff excludes itself. If you built it, standing on it pays out for you exactly like it would for anyone else who shares your side.
+
+Mason glyphs are the only Objects currently built (`cards/buckets/position.md`; the MASON tag). A future Construct- or Cultivator-themed card can create its own kind of Object under these same rules without inheriting "glyph" as the name for what it made.
 
 ---
 

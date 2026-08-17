@@ -1,6 +1,6 @@
-# Core Set Bucket Assignment
+# Card Bucket Assignment
 
-**Recorded, not executed.** All 143 core-set cards have a bucket assigned. **No cards have been moved** (2026-08-17, Drew: *"record the assignment, don't move the cards yet"*).
+**All 341 cards are bucketed** as of 2026-08-17 — the core sets first, then the remaining 198 across signature sets, location pools and stat adjusters. Cards are one-per-file in `cards/`, so nothing moves: a bucket is membership, not a destination (2026-08-17, Drew: *"record the assignment, don't move the cards yet"*).
 
 Card lists live in `cards/buckets/`; archetype lists in `cards/archetypes/`. Neither holds card text — `cards/` remains the only source of that. This file holds the assignment and the reasoning behind it.
 
@@ -33,152 +33,171 @@ A bucket names **what a card is for**, never the keyword it uses. Drew: *"discar
 
 
 
+
+## The second pass — the other 198
+
+The first pass covered only the three core sets (143 of 341). The remaining 198 — every signature set, location pool and the stat adjusters — were classified on 2026-08-17 using the same Special Rule → Effect → Defensive Bonus ordering.
+
+**One new bucket fell out: `stat adjustment`.** SUNDER, ERODE and WITHER changed a stat and matched nothing, because the core pass never had to classify them — they had already left the core sets into `cards/stat-adjusters.md` before bucketing started.
+
+**A precision fix worth keeping.** Position words appear as *conditions* as often as effects, and the first run misread them: CAMOUFLAGE STRIKE (*"If you are in the Backline, gain Evade"*) filed as position rather than defense, CENSER SWING (*"If target is Frontline, deal +2 damage"*) as position rather than damage amp. Stripping `if …,` clauses before classifying — the condition is context, the remainder is what the card *does* — moved position from 69 homes down to 43 and corrected roughly twenty cards. The same fix over-tightened once and lost THE ROOM LEANS IN (*"Pull all enemies to the Frontline"*), hand-restored.
+
+**Hand-assigned in this pass:** SIGNATURE THRUST → position (it manipulates glyphs, which are Objects and position-anchored), BECOMING → card flow (permanent hand replacement), FOLLOW-UP → buff removal (it copies another card wholesale), ANOTHER JOINT → control (Staggered is its unconditional effect; the Rooted is conditional escalation), THE ROOM LEANS IN → position.
+
+
 ## Counts
 
 | Bucket | Homes | Indexed |
 |---|--:|--:|
+| **position** | 73 | 91 |
+| **control** | 49 | 55 |
+| **damage amp** | 46 | 62 |
+| **defense** | 41 | 110 |
+| **card flow** | 27 | 41 |
+| **team support** | 25 | 32 |
+| **initiative** | 16 | 25 |
+| **sustain** | 14 | 22 |
 | **self-inflicted cost** | 11 | 11 |
-| **position** | 30 | 35 |
-| **control** | 19 | 23 |
-| **damage amp** | 12 | 22 |
-| **defense** | 16 | 30 |
-| **initiative** | 10 | 16 |
-| **team support** | 10 | 16 |
-| **sustain** | 5 | 9 |
-| **card flow** | 9 | 12 |
-| **hand denial** | 5 | 7 |
+| **hand denial** | 11 | 13 |
+| **status inserters** | 9 | 9 |
+| **buff removal** | 5 | 7 |
 | **payoff** | 4 | 5 |
-| **buff removal** | 3 | 5 |
 | **rps manipulation** | 5 | 5 |
-| **status inserters** | 2 | 2 |
+| **stat adjustment** | 3 | 3 |
 | **cleansing** | 1 | 1 |
 | **plain attack** | 1 | 1 |
 | **misc** | 0 | 1 |
-| | **143** | |
+| | **341** | |
 
-### self-inflicted cost — 11 homed, 11 indexed
+### position — 73 homed, 91 indexed
 
-A benefit bought with a real price paid by the user, including a card that exiles itself. The cost is the card's identity, not a drawback bolted on.
+Moving yourself or someone else, or gaining something for holding still. Anchored, Rooted, Rushdown, Quick, Objects and glyphs, Position-gated payoffs.
 
-BALANCE *(G)*, BERSERKER'S PRICE *(R)* → control, BLOOD TITHE *(R)* → team support, EMERGENCY REPAIRS *(R)* → sustain, OVERDRIVE *(R)* → position, RALLY *(R)* → position, SACRIFICE STRIKE *(R)* → damage amp, SHARED BURDEN *(G)* → defense/team support, STEAL *(G)* → initiative/misc, TABLE STAKES *(R)* → defense/team support, UNMAKE *(B)* → buff removal
+BIND, BOLT, BORROWED SCREAM → control, BOUND TO THE STONE → defense, CALCULATE, CARRION PULL → defense, CENSURE, CHARGE, CLOSE THE TANGLE → damage amp, COIL DROP → defense, CRAWL LANE, DART, DEAD END, DIG IN, DRAG UNDER → sustain, DUST → control, ENVELOP, ENVELOPING PRESS → defense, FLOW, FOLLOWS WARMTH, FOOTWORK, FRACTURE → card flow, GORE, GRAFT, GRAPPLE, GROUNDING STANCE → defense, HARVEST CHAIN → defense, HAUL, HEAVE, HEAVE AND HAUL, IMPALING DIVE, INK THE AIR → card flow, IRON GRIP, KEEPING PEOPLE OUT, LIGHTNING DASH, LOW GREY HAZE → defense, LUNGE, MIRROR STEP, NO VACANCY → defense, NOT WHERE YOU LEFT IT, OFF THE EDGE → defense, PARTITION → team support, PATIENCE OF STONE → damage amp, PATTERN READ → card flow, PINCH → defense, PULL, PUSH, QUICKSTEP, REALIGNMENT, REPEL, ROLLING THUNDER, ROOT LASH, ROOTED OATH, RUSTLE AND GONE → defense, SEED → damage amp/defense, SEISMIC REDIRECT → damage amp, SHED → defense, SIGNATURE THRUST, SLIPSTREAM → defense, STARING CONTEST, STEP ASIDE → defense, STILL POINT → defense, SWAY, SYSTEM PURGE → defense, TALON RUSH, THE LEDGER NEVER CLOSES → card flow, THE ROOM LEANS IN, TRAMPLE, UNDERBRUSH DASH, VOLT → damage amp, WATCHFUL PERCH → initiative, WITHERING GLYPH, YOUR OWN HEARTBEAT
 
-### position — 30 homed, 35 indexed
+*Also indexed here:* ANOTHER JOINT, ASHBURY, BINDING RITE, CAMOUFLAGE STRIKE, COIL LATCH, DRAG, FOGBURST, FROM ABOVE, KNOWN GROUND, OVERDRIVE, PATIENCE, RALLY, SIDESTEP, SLIP THE BLADE, SLITHER LUNGE, THORN-BIND, THORNFAST, TITHE COLLECTION
 
-Moving yourself or someone else, or gaining something for holding still.
+### control — 49 homed, 55 indexed
 
-BIND *(G)*, CALCULATE *(B)*, CHARGE *(R)*, DART *(R)*, DEAD END *(B)*, DIG IN *(R)*, DUST *(G)* → control, FLOW *(G)*, FOOTWORK *(R)*, FRACTURE *(B)* → card flow, GORE *(R)*, GRAPPLE *(R)*, GROUNDING STANCE *(R)* → defense, HEAVE AND HAUL *(G)*, IRON GRIP *(R)*, MIRROR STEP *(G)*, PARTITION *(B)* → team support, PATIENCE OF STONE *(G)* → damage amp, PULL *(R)*, PUSH *(R)*, REALIGNMENT *(B)*, REPEL *(R)*, ROOTED OATH *(G)*, SEED *(G)* → damage amp/defense, SEISMIC REDIRECT *(R)* → damage amp, SLIPSTREAM *(B)* → defense, STARING CONTEST *(R)*, STILL POINT *(B)* → defense, SWAY *(G)*, TRAMPLE *(R)*
+Taking away what a target can do or how well they do it.
 
-*Also indexed here:* OVERDRIVE, PATIENCE, RALLY, SIDESTEP, SLIP THE BLADE
+AFTERIMAGE → defense, ANOTHER JOINT → damage amp/defense/position, ATTRITION, AXIOM, BLINDSIDE, CALIBRATION PULSE → card flow, CALLED SHOT → defense, CAMOUFLAGE SHIFT → defense, CERTAIN STRIKE → defense, CUT OFF → defense, DARK CORRIDOR → defense, DEAD RECKONING, DEPTH SLAM, DIRGE → defense, DOWNWARD, FOGBURST → position, INEVITABILITY, INK BURST → defense, INTIMIDATE, IRON ANCHOR → defense, LABYRINTH ECHO, MARKED, NO FACE, NOTHING TO READ, OPEN GUARD, OPENING, PETAL FEINT → defense, PREDICT, REBUTTAL → initiative, REELING, REFRACT, SEALED CHORD, SECOND GUESS, SHIELD BASH → defense, SLOW HANDS, SNUFF → defense, SURGE, TARGETING LOCK → card flow, TELL, THE EASIEST SHAPE → card flow, THE HELD NOTE, THIN SKIN, THORN-BIND → position, TWIN STRIKE, UNDERTOW → defense, VEIL, VENOM MIND → defense, WARNING SHOT → defense, WATCHES FEET → card flow
 
-### control — 19 homed, 23 indexed
+*Also indexed here:* ANTICIPATE, BERSERKER'S PRICE, BORROWED SCREAM, DUST, FEINT, VOID
 
-Taking away what a target can do or how well.
-
-ATTRITION *(R)*, AXIOM *(B)*, BLINDSIDE *(R)*, CALLED SHOT *(B)* → defense, CERTAIN STRIKE *(R)* → defense, DEAD RECKONING *(G)*, INTIMIDATE *(G)*, MARKED *(B)*, OPEN GUARD *(R)*, OPENING *(G)*, PREDICT *(B)*, REBUTTAL *(B)* → initiative, REELING *(R)*, REFRACT *(B)*, SECOND GUESS *(B)*, SHIELD BASH *(R)* → defense, TELL *(B)*, TWIN STRIKE *(G)*, VEIL *(B)*
-
-*Also indexed here:* ANTICIPATE, BERSERKER'S PRICE, DUST, VOID
-
-### damage amp — 12 homed, 22 indexed
+### damage amp — 46 homed, 62 indexed
 
 Making damage bigger or landing it where it otherwise would not.
 
-BRAMBLE *(G)*, BREAK *(R)*, BRISTLE *(G)*, CHAIN *(B)*, DEAD HEAT *(R)*, EXPOSED *(B)* → defense, GAMBLER'S RUIN *(R)*, PATIENCE *(G)* → position, RETALIATE *(R)* → initiative, RETORT *(B)*, SPARK OF VIOLENCE *(R)*, STRIKE *(R)*
+ADAPTIVE BITE, ASHBORN FLARE → sustain, BORROWED POWER → defense, BRAMBLE, BREAK, BRISTLE, CENSER SWING, CHAIN, CHAIN REACH, COIL LATCH → position, CRYSTAL EDGE, DEAD HEAT, DRAG → position, EXPOSED → defense, FAULT EXPLOIT → defense, FENCE-POST REACH, FROM ABOVE → position, GAMBLER'S RUIN, HEADLONG → defense, HEAT TRACE → defense, IDLE TO ENGAGE, LIMB-SNAPPER, NEEDLE BITE → defense, NIP, NIP AND TEAR → sustain, NOTHING PERSONAL → initiative, OBSIDIAN SIX, OPEN FIRE, PATIENCE → position, PATIENT WAIT → defense, RETALIATE → initiative, RETORT, SLITHER LUNGE → position, SPARK OF VIOLENCE, SPLINTER-BURST, STRIKE, THE FIELD IS THE LINE → defense, THE PACK REMEMBERS → defense, THERMAL VECTOR → defense, THRESHOLD → initiative, THUNDERBOLT STRIKE, THUNDERCLAP, TWINE AND WEIGHT, TWO POLES, VENT CYCLE → defense, WIDE SWING
 
-*Also indexed here:* BLOOD IN THE GAP, DEFLECT, PAIN IS FUEL, PATIENCE OF STONE, ROLLOUT, SACRIFICE STRIKE, SEED, SEISMIC REDIRECT, SHARPEN, YOU'RE NEXT
+*Also indexed here:* ANOTHER JOINT, BLOOD IN THE GAP, CLOSE THE TANGLE, CUTS BOTH WAYS, DEFLECT, MAWS, PAIN IS FUEL, PATIENCE OF STONE, ROLLOUT, SACRIFICE STRIKE, SEED, SEISMIC REDIRECT, SHARPEN, STITCHED CASE, VOLT, YOU'RE NEXT
 
-### defense — 16 homed, 30 indexed
+### defense — 41 homed, 110 indexed
 
-Refusing or reducing incoming damage.
+Refusing or reducing incoming damage, including untargetability.
 
-BRACE *(R)*, DEFLECT *(B)* → damage amp, ENDURE *(R)* → sustain, FORESEEN *(B)*, GIVE WAY *(G)*, INSTINCT *(G)*, INTERCEPT *(R)*, LAST RESORT *(B)*, PAIN IS FUEL *(R)* → damage amp, SETTLE *(G)*, SHADE AWAY *(G)*, SIDESTEP *(B)* → position, SLIP THE BLADE *(R)* → position, STEADFAST *(G)*, UNBROKEN *(R)*, UNTOUCHED *(G)*
+ASH REDIRECT, BLOOM STILLNESS, BRACE, CAMOUFLAGE STRIKE → position, CINDER SPIRAL, CRIMSON MIRROR, CURRENT SENSE, DEFLECT → damage amp, DISSOLVE CONTACT, EMBER CIRCLE, ENDURE → sustain, FEEDING FRENZY, FELT YOU COMING, FLATTEN, FORESEEN, GIVE WAY, GUTTERING, HULLGUARD, INSTINCT, INTERCEPT, LAST RESORT, MIMICRY PULSE, MIRROR CIRCLE, OUT OF REACH, PAIN IS FUEL → damage amp, PECK, SETTLE, SHADE AWAY, SHED SKIN → card flow, SHROUD, SIDESTEP → position, SKITTER AWAY, SLIP THE BLADE → position, STEADFAST, STILL AS LITTER, STILL COUNTING, STITCHED CASE → damage amp, THORN CIRCLE, UNBROKEN, UNTOUCHED, VERDANT WARD
 
-*Also indexed here:* CALLED SHOT, CERTAIN STRIKE, EXPOSED, GROUNDING STANCE, PARADOX, ROLLOUT, SEED, SHARED BURDEN, SHIELD BASH, SLIPSTREAM, STILL POINT, SYNCHRONY, TABLE STAKES, WEATHERED
+*Also indexed here:* AFTERIMAGE, ALWAYS ONE MORE, ANOTHER JOINT, ASH EXHAUST, BORROWED POWER, BOUND TO THE STONE, CALLED SHOT, CAMOUFLAGE SHIFT, CARRION PULL, CERTAIN STRIKE, COIL DROP, COLD READ, CORRECTION LOAD, CUT OFF, DARK CORRIDOR, DIRGE, DUSK COUNT, EMBER WARD, ENVELOPING PRESS, EXPOSED, FAULT EXPLOIT, FREEZE, GENETIC SAMPLE, GROUNDING STANCE, HALF-SEEN, HARVEST CHAIN, HEADLONG, HEAT TRACE, HOLD FAST, INCENSE WARD, INK BURST, IRON ANCHOR, LOW GREY HAZE, NEEDLE BITE, NO VACANCY, OFF THE EDGE, PARADOX, PATIENT WAIT, PETAL FEINT, PINCH, REGISTERED, RESIST BLESSING, ROLLOUT, RUSTLE AND GONE, SEED, SENSE THE SPENT, SHARED BURDEN, SHED, SHIELD BASH, SIDELONG SCUTTLE, SIPHON, SLIPSTREAM, SNUFF, STEP ASIDE, STILL POINT, SYNCHRONY, SYSTEM PURGE, TABLE STAKES, THE FIELD IS THE LINE, THE PACK REMEMBERS, THE WOOL IS MUSCLE, THERMAL VECTOR, THORN LARDER, TOO HIGH TO HEAR, UNDERTOW, VENOM MIND, VENT CYCLE, WARNING SHOT, WEATHERED
 
-### initiative — 10 homed, 16 indexed
-
-Turn order: Initiative Shift, acting first, extra or skipped turns.
-
-DELAY *(G)*, DISTRACT *(B)*, DOUBLE DOWN *(R)*, HESITATE *(B)*, INTERRUPT *(B)*, MOCKERY *(G)*, QUICKEN *(G)*, RHYTHM BREAK *(R)*, URGENCY *(G)*, YOU'RE NEXT *(G)* → damage amp
-
-*Also indexed here:* ACCEPTANCE, FOCUS, REBUTTAL, RETALIATE, STEAL, WARSONG
-
-### team support — 10 homed, 16 indexed
-
-Aimed at an ally.
-
-AID *(G)*, CLIFF SONG *(R)*, GUARD *(R)*, RENEWAL *(G)*, RESONATE *(G)*, SHARPEN *(B)* → damage amp, SUPPORT *(G)*, SYNCHRONY *(G)* → defense, WARSONG *(G)* → initiative, WITNESS *(G)*
-
-*Also indexed here:* BLOOD TITHE, COMMUNION, FRAME-TRAP, PARTITION, SHARED BURDEN, TABLE STAKES
-
-### sustain — 5 homed, 9 indexed
-
-Getting HP back.
-
-BLOOD IN THE GAP *(R)* → damage amp, CONSUME *(G)*, RECOVER *(R)*, UNDERSTANDING *(B)*, WEATHERED *(R)* → defense
-
-*Also indexed here:* EMERGENCY REPAIRS, ENDURE, PARADOX, PRESS THE WOUND
-
-### card flow — 9 homed, 12 indexed
+### card flow — 27 homed, 41 indexed
 
 Moving your own cards around.
 
-ACCEPTANCE *(G)* → initiative, ALIGN *(B)*, ANTICIPATE *(B)* → control, ATTUNE *(G)*, CLIMB *(B)*, COMMUNION *(G)* → team support, FOCUS *(B)* → initiative, PROFILE *(B)*, STUDY *(B)*
+ACCEPTANCE → initiative, ALIGN, ANTICIPATE → control, ATTUNE, AZURE MIRROR, AZURE WARD, BECOMING, CASE FILE, CLAY BOWL, CLIMB, COLD READ → defense, COMMUNION → team support, FOCUS → initiative, FREEZE → defense, GENETIC SAMPLE → defense, MAZE SENSE, PROFILE, REGISTERED → defense, STEADY HAND, STILL GROUND, STUDY, SURVEY, THORN LARDER → defense, TOO HIGH TO HEAR → defense, TRUTINATE SIGNAL, VIBRATION LOCK, WHERE IT'S GATHERING
 
-*Also indexed here:* BURN BRIGHT, FORGET, FRACTURE
+*Also indexed here:* BURN BRIGHT, CALIBRATION PULSE, FOREST MEMORY, FORGET, FRACTURE, INK THE AIR, PATTERN READ, PRECISE REMOVAL, SHED SKIN, SILK THREAD MEASURE, TARGETING LOCK, THE EASIEST SHAPE, THE LEDGER NEVER CLOSES, WATCHES FEET
 
-### hand denial — 5 homed, 7 indexed
+### team support — 25 homed, 32 indexed
+
+Aimed at an ally.
+
+AID, BARBED GLYPH, CARRIED WOUND, CIPHER GLYPH, CLIFF SONG, CUTS BOTH WAYS → damage amp, EMBER WARD → defense, ENTWINED, GUARD, HONING GLYPH, INCENSE WARD → defense, KNOWN GROUND → position, MENDING GLYPH, PACK LOGIC → sustain, RENEWAL, RESIST BLESSING → defense, RESONATE, SANCTUARY, SHARPEN → damage amp, SUPPORT, SYNCHRONY → defense, THORNFAST → position, VERDANT MIRROR, WARSONG → initiative, WITNESS
+
+*Also indexed here:* BLOOD TITHE, COMMUNION, FRAME-TRAP, GENERATIONS OF HANDS, PARTITION, SHARED BURDEN, TABLE STAKES
+
+### initiative — 16 homed, 25 indexed
+
+Turn order: Initiative Shift, acting first, extra or skipped turns.
+
+DELAY, DISTRACT, DOUBLE DOWN, DUSK COUNT → defense, EVEN CHURN, FACING YOU NOW, HESITATE, INTERRUPT, MIRING GLYPH, MOCKERY, QUICKEN, RHYTHM BREAK, SIDELONG SCUTTLE → defense, URGENCY, YOU'RE NEXT → damage amp, YOUR TURN WILL COME
+
+*Also indexed here:* ACCEPTANCE, FOCUS, NOTHING PERSONAL, REBUTTAL, RETALIATE, STEAL, THRESHOLD, WARSONG, WATCHFUL PERCH
+
+### sustain — 14 homed, 22 indexed
+
+Getting HP back.
+
+ALWAYS ONE MORE → defense, BLOOD IN THE GAP → damage amp, CONSUME, DISSOLVE AND KEEP, FOREST MEMORY → card flow, GENERATIONS OF HANDS → team support, HOLD FAST → defense, MAWS → damage amp, PHOENIX'S LAST BREATH, RECOVER, THE WOOL IS MUSCLE → defense, TITHE COLLECTION → position, UNDERSTANDING, WEATHERED → defense
+
+*Also indexed here:* ASHBORN FLARE, DRAG UNDER, EMERGENCY REPAIRS, ENDURE, NIP AND TEAR, PACK LOGIC, PARADOX, PRESS THE WOUND
+
+### self-inflicted cost — 11 homed, 11 indexed
+
+A benefit bought with a real price paid by the user.
+
+BALANCE, BERSERKER'S PRICE → control, BLOOD TITHE → team support, EMERGENCY REPAIRS → sustain, OVERDRIVE → position, RALLY → position, SACRIFICE STRIKE → damage amp, SHARED BURDEN → defense/team support, STEAL → initiative/misc, TABLE STAKES → defense/team support, UNMAKE → buff removal
+
+### hand denial — 11 homed, 13 indexed
 
 Reaching into a hand you cannot see.
 
-FORGET *(B)* → card flow, READ *(G)*, STILLNESS *(B)*, UNNAME *(B)*, VOID *(G)* → control
+ASH EXHAUST → defense, CRIMSON WARD, FEINT → control, FORGET → card flow, HALF-SEEN → defense, PRECISE REMOVAL → card flow, READ, SILK THREAD MEASURE → card flow, STILLNESS, UNNAME, VOID → control
 
 *Also indexed here:* FIELD MEDICINE, PRESS THE WOUND
+
+### status inserters — 9 homed, 9 indexed
+
+Putting status cards into someone else's deck or hand.
+
+ASHBURY → position, BINDING RITE → position, CORRECTION LOAD → defense, RAKING CUT, REND, SENSE THE SPENT → defense, SMALL DOSES, TAINT, TWO CUTS
+
+### buff removal — 5 homed, 7 indexed
+
+Taking from the opponent — stripping, stealing, or copying what they already have.
+
+DRAIN, FOLLOW-UP, LEVEL THE FIELD, SIPHON → defense, WAITING GAME
+
+*Also indexed here:* TRACE, UNMAKE
 
 ### payoff — 4 homed, 5 indexed
 
 Cashes in a condition that already exists.
 
-BURN BRIGHT *(R)* → card flow, PRESS THE WOUND *(R)* → hand denial/sustain, ROLLOUT *(R)* → damage amp/defense, TRACE *(B)* → buff removal
+BURN BRIGHT → card flow, PRESS THE WOUND → hand denial/sustain, ROLLOUT → damage amp/defense, TRACE → buff removal
 
 *Also indexed here:* FRAME-TRAP
-
-### buff removal — 3 homed, 5 indexed
-
-Taking from the opponent — stripping, stealing, or copying what they already have.
-
-DRAIN *(R)*, LEVEL THE FIELD *(G)*, WAITING GAME *(R)*
-
-*Also indexed here:* TRACE, UNMAKE
 
 ### rps manipulation — 5 homed, 5 indexed
 
 Changing how the reveal itself resolves.
 
-ADAPT *(G)*, CERTAINTY *(B)*, EQUAL FOOTING *(R)*, FRAME-TRAP *(B)* → payoff/team support, PARADOX *(B)* → defense/sustain
+ADAPT, CERTAINTY, EQUAL FOOTING, FRAME-TRAP → payoff/team support, PARADOX → defense/sustain
 
-### status inserters — 2 homed, 2 indexed
+### stat adjustment — 3 homed, 3 indexed
 
-Putting status cards into someone else's deck or hand.
+Changing one of the three stats for a combat.
 
-REND *(R)*, TAINT *(B)*
+ERODE, SUNDER, WITHER
 
 ### cleansing — 1 homed, 1 indexed
 
 Removing status cards that are already there.
 
-FIELD MEDICINE *(G)* → hand denial
+FIELD MEDICINE → hand denial
 
 ### plain attack — 1 homed, 1 indexed
 
 No effect on any line.
 
-OVERCOMMIT *(R)*
+OVERCOMMIT
 
 ### misc — 0 homed, 1 indexed
 
-Behaviours with exactly one card in the corpus. A holding pen, revisited if a second card joins.
+Behaviours with exactly one card in the corpus.
 
-*(none homed here yet)*
+*(none homed here)*
 
 *Also indexed here:* STEAL
 
@@ -199,5 +218,5 @@ Set by hand; do not recompute away.
 
 - **Which cards leave the core sets.** The pool-slimming pass has not happened. Every card here is still in `cards/buckets/red.md`, `cards/buckets/blue.md`, or `cards/buckets/green.md`.
 - **Whether a bucket earns its own card file.** Cleansing and plain attack hold one card each — an argument for merging later, not for forcing members in now.
-- **Non-core cards.** Signature sets, location pools, and `cards/stat-adjusters.md` are unbucketed.
+- **Bucket file names.** `cards/buckets/` holds one list per bucket; nothing in `cards/` moves, since each card already has its own file.
 
