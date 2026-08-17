@@ -8,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** rootstalker-weald
+**Set:** rootstalker
 **Art:** *(none yet)*

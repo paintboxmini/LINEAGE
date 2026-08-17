@@ -8,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** ashgrazer-ashfall
+**Set:** ashgrazer
 **Art:** *(none yet)*

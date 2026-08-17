@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** trisect-ashfall
+**Set:** trisect
 **Art:** *(none yet)*

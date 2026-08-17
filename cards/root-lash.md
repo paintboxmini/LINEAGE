@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** root-heart-weald
+**Set:** root-heart
 **Art:** *(none yet)*

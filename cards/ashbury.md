@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** ashgrazer-ashfall
+**Set:** ashgrazer
 **Art:** *(none yet)*

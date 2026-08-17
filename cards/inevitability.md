@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** minotaur-coil
+**Set:** minotaur
 **Art:** *(none yet)*

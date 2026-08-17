@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** borrower-hollow
+**Set:** borrower
 **Art:** *(none yet)*

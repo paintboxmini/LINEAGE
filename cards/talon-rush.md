@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** fogcaller-basin
+**Set:** fogcaller
 **Art:** *(none yet)*

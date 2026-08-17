@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** alignment-marshal-engine
+**Set:** alignment-marshal
 **Art:** *(none yet)*

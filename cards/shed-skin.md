@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** stonecoil-hollow
+**Set:** stonecoil
 **Art:** *(none yet)*

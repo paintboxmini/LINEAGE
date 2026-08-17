@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** stonecoil-hollow
+**Set:** stonecoil
 **Art:** *(none yet)*

@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** rootstalker-weald
+**Set:** rootstalker
 **Art:** *(none yet)*

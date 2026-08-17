@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** minotaur-coil
+**Set:** minotaur
 **Art:** *(none yet)*

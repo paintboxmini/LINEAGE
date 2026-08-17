@@ -9,8 +9,7 @@
 ## Cards
 
 - GAMBLER'S RUIN
-- WILD CARD
 - TABLE STAKES
 - DOUBLE DOWN
 
-*Named in `agent-tools/archetypes.md` but not found in `cards/`: WILD CARD*
+*WILD CARD is named in `agent-tools/archetypes.md` as an unbuilt card for this archetype — no file, by design until someone builds it.*

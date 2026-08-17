@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** fogcaller-basin
+**Set:** fogcaller
 **Art:** *(none yet)*

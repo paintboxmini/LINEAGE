@@ -158,7 +158,7 @@ When you play a card, **you choose what it looks like.**
 
 The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
 
-A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+A Body card might be a punch, a shove, the ground shifting underfoot; a Mind card a feint or a command that lands exactly right; a Soul card a ward or a held breath. See `rules/character-creation.md`, Magic Expression, for the full statement of this.
 
 None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
 

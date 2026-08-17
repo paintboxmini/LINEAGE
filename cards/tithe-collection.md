@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** tithe-engine-ashfall
+**Set:** tithe-engine
 **Art:** *(none yet)*
