@@ -7,8 +7,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [the folklore](the-folklore.md)
-- [what they are](what-they-are.md)
+- [profile](profile.md)
 
 ## Related Documents
 

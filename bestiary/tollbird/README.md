@@ -8,7 +8,6 @@
 
 - [mechanics](mechanics.md)
 - [profile](profile.md)
-- [territory](territory.md)
 
 ## Related Documents
 

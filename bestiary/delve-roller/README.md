@@ -9,7 +9,7 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [encounter notes](encounter-notes.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
 
 ## Related Documents

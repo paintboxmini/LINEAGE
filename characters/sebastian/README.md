@@ -14,7 +14,7 @@ He works out of a lodge at the Soft Edge (`places/glasslight-reach.md`) — one 
 
 - [connections](connections.md)
 - [open](open.md)
-- [the chisels](the-chisels.md)
+- [profile](profile.md)
 
 ## Related Documents
 

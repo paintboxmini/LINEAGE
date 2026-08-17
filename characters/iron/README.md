@@ -9,8 +9,8 @@
 ## Contents
 
 - [connections](connections.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [running him](running-him.md)
 
 ## Related Documents
 

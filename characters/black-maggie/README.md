@@ -6,10 +6,10 @@
 ## Contents
 
 - [mechanics](mechanics.md)
+- [backstory](backstory.md)
 - [lore fragments](lore-fragments.md)
 - [morom](morom.md)
 - [open](open.md)
-- [origin](origin.md)
 - [profile](profile.md)
 - [the ritual sites](the-ritual-sites.md)
 - [the thessians](the-thessians.md)

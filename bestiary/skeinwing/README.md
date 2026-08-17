@@ -9,8 +9,6 @@
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [the larder once](the-larder-once.md)
-- [why it dies when it dies](why-it-dies-when-it-dies.md)
 
 ## Related Documents
 

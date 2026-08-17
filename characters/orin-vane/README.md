@@ -10,5 +10,4 @@
 - [backstory](backstory.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [the glyph system](the-glyph-system.md)
 

@@ -10,4 +10,3 @@ The size is a function of habitat, not deficiency. Emerald Frogs from wetter, ri
 
 - [harvest](harvest.md)
 - [profile](profile.md)
-- [the burrow population](the-burrow-population.md)

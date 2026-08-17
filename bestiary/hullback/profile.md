@@ -6,3 +6,8 @@ A hermit-crab shape wearing a fragment of an actual hull as its shell — planki
 
 It doesn't hunt. It doesn't need to — prey this far out is rare enough that waiting costs it nothing, and its own shell already does most of the work a chase would. When something finally gets close enough, it moves fast for something its size, drags what it catches back toward its den among the rocks, and goes back to waiting.
 
+---
+
+## The Den
+
+Killed, driven off, or simply abandoned mid-fight (Hullback disengages once it drops below a third of its max HP — patience runs out eventually, even for something this old), what's left behind is years of accumulated salvage packed into the rocks it's called home. See `quests/washed-ashore.md`, Discoverables, for what's actually in it.

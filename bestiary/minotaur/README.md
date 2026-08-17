@@ -9,5 +9,5 @@ The pressure track exists because of how the minotaurs navigate — not by walls
 ## Contents
 
 - [mechanics](mechanics.md)
-- [notes](notes.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)

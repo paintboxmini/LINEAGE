@@ -25,3 +25,10 @@ It doesn't attack immediately. It fogs first. Watches the party react. Learns wh
 It's reading them.
 
 Then it picks the most isolated target and moves.
+
+---
+
+## The Tell
+
+- DC 13 Senses — you hear the wings fold a half second before the fog hits.
+- DC 16 Read — you realize it's not hunting randomly. It targeted the Backline first. It understands positioning.

@@ -8,7 +8,4 @@
 
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
-- [noncombat paths](noncombat-paths.md)
-- [oracle seed](oracle-seed.md)
-- [trigger](trigger.md)
 

@@ -14,8 +14,7 @@ He pushes away anything that might remind him of what he is. Not defensively —
 
 ## Contents
 
+- [backstory](backstory.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [the roadhouse encounter](the-roadhouse-encounter.md)
-- [what he left behind](what-he-left-behind.md)
 

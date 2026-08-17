@@ -7,5 +7,4 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [noncombat paths](noncombat-paths.md)
-- [oracle seed](oracle-seed.md)
+- [gm notes](gm-notes.md)

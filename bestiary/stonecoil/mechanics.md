@@ -37,3 +37,23 @@ If the party moves — uses a positional card, changes Frontline/Backline — th
 
 **Do not run.** The Borrowers know this. Players will learn it.
 
+---
+
+## The Greater Stonecoil
+
+A separate encounter. See `quests/hollow-below-briarwatch.md` — Old Flow Channel section.
+
+Scaled mass thick as a cart axle. Slow pulse breathing. Scarred hide. Long dormancy cycles. Not a combat encounter — a relocation event. It does not stalk. It moves.
+
+---
+
+## The Tell
+
+Players can avoid lethal engagement by noticing:
+- Scratch marks at knee height
+- Shed skin fragments
+- Rhythmic scraping in stone
+- Gnawed cave rodent carcasses near choke points
+- Airflow shift in certain cracks
+
+Mind checks reveal: it prefers ambush over open fight; it won't cross heavy water flow; it avoids bright open chambers; it uses the same choke point repeatedly.

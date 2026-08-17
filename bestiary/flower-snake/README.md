@@ -8,7 +8,6 @@
 
 - [mechanics](mechanics.md)
 - [profile](profile.md)
-- [the ambush](the-ambush.md)
 
 ## Related Documents
 

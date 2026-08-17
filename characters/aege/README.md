@@ -12,7 +12,6 @@
 - [backstory](backstory.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [where she appears](where-she-appears.md)
 
 ## Related Documents
 

@@ -7,7 +7,6 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [combat notes](combat-notes.md)
 - [profile](profile.md)
 
 ## Related Documents

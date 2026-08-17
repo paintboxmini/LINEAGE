@@ -6,8 +6,8 @@
 
 ## Contents
 
+- [gm notes](gm-notes.md)
 - [open](open.md)
 - [pip](pip.md)
 - [steve](steve.md)
-- [the arc shape](the-arc-shape.md)
 

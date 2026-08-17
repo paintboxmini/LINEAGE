@@ -10,9 +10,7 @@ Individually: harmless. As a swarm: a paralysis event.
 
 ## Contents
 
-- [dispersal](dispersal.md)
-- [future lock venom](future-lock-venom.md)
+- [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [harvest](harvest.md)
-- [named nest site](named-nest-site.md)
-- [swarm trigger](swarm-trigger.md)
+- [profile](profile.md)

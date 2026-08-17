@@ -9,7 +9,6 @@ For encounter structure and reveal phases, see `quests/war-engine.md`.
 ## Contents
 
 - [mechanics](mechanics.md)
-- [player agency options](player-agency-options.md)
-- [post firing](post-firing.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
 

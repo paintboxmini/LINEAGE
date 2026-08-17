@@ -9,10 +9,8 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [gm secret](gm-secret.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [talking to the host](talking-to-the-host.md)
-- [when it fights](when-it-fights.md)
 
 ## Related Documents
 

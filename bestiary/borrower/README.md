@@ -7,7 +7,6 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [culture](culture.md)
-- [notes](notes.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
 

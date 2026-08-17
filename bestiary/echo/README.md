@@ -8,6 +8,5 @@ Not a threat. Not quite.
 
 ## Contents
 
-- [notes](notes.md)
+- [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [what they are](what-they-are.md)

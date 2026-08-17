@@ -12,5 +12,3 @@
 
 - [mechanics](mechanics.md)
 - [profile](profile.md)
-- [the greater stonecoil](the-greater-stonecoil.md)
-- [the tell](the-tell.md)

@@ -10,4 +10,3 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [harvest](harvest.md)
-- [variants](variants.md)

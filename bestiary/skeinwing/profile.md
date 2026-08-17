@@ -15,3 +15,16 @@ Its metabolism runs slow almost all the time — not asleep, not quite, but clos
 
 It almost never descends below the treeline. Not caution — arithmetic. Every adaptation it has is spent on staying up, staying slow, staying safe, and every one of those adaptations becomes a liability the instant it's low enough for something with teeth to reach it. It doesn't come down to hunt, doesn't come down to breed, doesn't come down for much of anything. When one does come down, it's because something went wrong — a fog bank at the wrong altitude, a storm it couldn't out-climb, an old injury, a swarm chased a little too far, a little too low.
 
+---
+
+## The Larder, Once
+
+Most days it's what it always is: something small and rust-furred, a young jackalope, something with a collar. Then, once — hanging where nothing should hang — a wingspan too wide for the wire, a membrane too blue to be anything born on the ground, a tail wound once around a barb like it tried to hold on to something and there was nothing there to hold. Nobody at that fence has ever seen one alive. Whatever the party makes of finding one dead is the whole point.
+
+---
+
+## Why It Dies, When It Dies
+
+It does not die because it is weak. Up where it lives, nothing touches it — nothing else is built to be there, and it is built for nothing else. It dies because everything that makes it extraordinary at altitude means nothing on the ground. Blind, it never needed sight. Fragile, it never needed to survive a hit. Slow to react to a lunge, it never needed to — nothing lunges up where it flies. A creature this specialized doesn't have a weak point down here. It doesn't have a here at all. That's the whole tragedy in one sentence: it isn't out of its depth. It's out of its entire premise.
+
+The Tollbird (`bestiary/tollbird/README.md`) doesn't hunt these. It hunts the fence line, the road, the low and the slow and the small. A Skeinwing in the larder isn't a kill. It's a mistake that happened to end near a fence.

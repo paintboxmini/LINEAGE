@@ -12,7 +12,6 @@
 
 - [mechanics](mechanics.md)
 - [profile](profile.md)
-- [the den](the-den.md)
 
 ## Related Documents
 

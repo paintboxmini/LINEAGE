@@ -11,7 +11,6 @@
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
-- [what its guarding](what-its-guarding.md)
 
 ## Related Documents
 

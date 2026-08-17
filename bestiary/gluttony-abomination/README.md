@@ -7,9 +7,8 @@
 ## Contents
 
 - [mechanics](mechanics.md)
+- [backstory](backstory.md)
 - [gm notes](gm-notes.md)
-- [origin](origin.md)
 - [profile](profile.md)
-- [tremors](tremors.md)
 
 ---
