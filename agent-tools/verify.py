@@ -526,6 +526,43 @@ def check_entry_structure():
                   f'{len(glob.glob("bestiary/*/") + glob.glob("characters/*/"))} entries')
 
 
+def check_bucket_lists(canon):
+    """`cards/buckets/` and `cards/archetypes/` are hand-written lists, not
+    generated views, so they can drift in both directions: a card added with no
+    bucket, or a bucket naming a card that does not exist.
+
+    Both had already happened. `the-gambler.md` listed WILD CARD, which has
+    never existed in `cards/`, the simulator, or a print sheet — found by a
+    one-off sweep on 2026-08-17, not by anything standing. These are the two
+    assertions that close it.
+    """
+    bad = []
+    listed = set()
+    for path in sorted(glob.glob('cards/buckets/*.md') + glob.glob('cards/archetypes/*.md')):
+        if path.endswith('README.md'):
+            continue
+        for m in re.finditer(r'^- \[?([A-Z][A-Z0-9\'’ \-]+?)\]?(?:\(|  |$)', 
+                             open(path, encoding='utf-8').read(), re.M):
+            name = m.group(1).strip()
+            if name not in canon:
+                bad.append(f'{path}: lists {name!r}, which is not a card in cards/')
+            else:
+                listed.add(name)
+    # every card must appear in at least one bucket (archetypes are optional —
+    # they are an index of design lineage, not a partition of the set)
+    bucketed = set()
+    for path in sorted(glob.glob('cards/buckets/*.md')):
+        if path.endswith('README.md'):
+            continue
+        for m in re.finditer(r'^- \[?([A-Z][A-Z0-9\'’ \-]+?)\]?(?:\(|  |$)',
+                             open(path, encoding='utf-8').read(), re.M):
+            bucketed.add(m.group(1).strip())
+    for name in sorted(set(canon) - bucketed):
+        bad.append(f'{name} is in cards/ but appears in no bucket')
+    return report('bucket and archetype lists resolve', bad,
+                  f'{len(bucketed)} cards bucketed')
+
+
 def check_oracle_sync():
     """The Oracle pool is mirrored in two places that were never derived from it
     — `combatsimulations/content.py`'s ORACLE_DECK and `printing/generate-cards.py`'s
@@ -615,6 +652,7 @@ def main():
     check_distances()
     check_hp_formula()
     check_entry_structure()
+    check_bucket_lists(canon)
     check_oracle_sync()
     if quick:
         print('SKIP  print artifacts current (--quick)')
