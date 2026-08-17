@@ -15,4 +15,11 @@
 - [read aloud description](read-aloud-description.md)
 - [retaliation phase](retaliation-phase.md)
 - [what it is](what-it-is.md)
-- [win condition](win-condition.md)
+
+---
+
+## Win Condition
+
+When HP reaches 0, the cavity pulses open. All players may make a **free final action** before the encounter ends.
+
+---

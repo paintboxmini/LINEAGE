@@ -64,6 +64,10 @@ Canonical card rules remain in `rules/cards.md` and `rules/card-glossary.md`; li
 
 One folder per entry. `README.md` carries the title, subtitle, a Contents list and Related Documents. `mechanics.md` carries the stat block, Creature Threat Rating, Deck line, passives, abilities, loot and combat identity — the stat block and deck stay in the same file because deck size equals total stats and per-colour counts equal the individual stats, so they are one invariant. `profile.md` carries appearance and behaviour. Anything else gets its own file.
 
+**A section earns its own file when it is substantial enough to read alone, or common enough across entries that the filename is predictable.** One-off *and* small fails both — that is a heading, not a file. Corrected 2026-08-17 after the first split produced 19 one-off sections under 300 characters, including a 143-character one.
+
+**All mechanical content goes in `mechanics.md`, including per-variant stat blocks.** A multi-variant creature (Ashgrazer's Alpha and Pack, Briarbundles' four) keeps every variant's block there rather than in per-variant section files. Splitting them out once left three `mechanics.md` files holding no mechanics at all, and silently dropped 6 of 37 decks from `verify.py`'s validation while every check still reported PASS.
+
 `mechanics.md` opens with a `Cards:` line naming the specific card files, if signature cards exist:
 ```
 **Cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`

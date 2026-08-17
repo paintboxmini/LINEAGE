@@ -13,7 +13,6 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 ## Contents
 
 - [mechanics](mechanics.md)
-- [backfire](backfire.md)
 - [gm notes](gm-notes.md)
 
 ## Related Documents
@@ -22,3 +21,13 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 - `quests/ashfall-one-shot.md`
 - `bestiary/tithe-engine/README.md`
 - `bestiary/ashgrazer/README.md`
+
+---
+
+## Backfire
+
+The first time each color successfully hits an engine, the impact triggers a pressure release. The attacker takes 2 damage from the blowback.
+
+Progress costs something. Ashfall doesn't offer clean options.
+
+---

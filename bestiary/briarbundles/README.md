@@ -7,10 +7,6 @@
 ## Contents
 
 - [mechanics](mechanics.md)
-- [briarbound](briarbound.md)
-- [haywight](haywight.md)
-- [mossking](mossking.md)
-- [tatterman](tatterman.md)
 - [the folklore](the-folklore.md)
 - [what they are](what-they-are.md)
 

@@ -6,7 +6,6 @@ Domesticated grazer, kept across Briarwatch's fields. Not a reptile, not a preda
 
 ## Contents
 
-- [livestock loss](livestock-loss.md)
 - [profile](profile.md)
 
 ## Related Documents
@@ -16,3 +15,11 @@ Domesticated grazer, kept across Briarwatch's fields. Not a reptile, not a preda
 - `bestiary/briar-scratcher/README.md`, `bestiary/briarwatch-jackalope/README.md` — share the same hedgerow forage
 - `places/vultures-nest.md` — Bartho's ledger
 - `quests/the-man-who-buys-wounds.md` — Weck buys the culls
+
+---
+
+## Livestock Loss
+
+Stonecoils take them when hunting range expands upward (`bestiary/stonecoil/README.md`) — no drama, no trace, which is exactly why the pattern is so hard to prove from a ledger entry alone.
+
+---

@@ -12,7 +12,6 @@ A cave system is the same kind of edge it already prefers — total dark is just
 
 - [mechanics](mechanics.md)
 - [profile](profile.md)
-- [the large one](the-large-one.md)
 
 ## Related Documents
 

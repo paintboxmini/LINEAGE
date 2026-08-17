@@ -9,5 +9,3 @@
 - [mechanics](mechanics.md)
 - [noncombat paths](noncombat-paths.md)
 - [oracle seed](oracle-seed.md)
-- [scorch drones 2](scorch-drones-2.md)
-- [the tithe engine](the-tithe-engine.md)

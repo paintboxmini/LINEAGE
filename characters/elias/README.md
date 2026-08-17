@@ -18,5 +18,12 @@ He pushes away anything that might remind him of what he is. Not defensively —
 - [the roadhouse encounter](the-roadhouse-encounter.md)
 - [what happens near him](what-happens-near-him.md)
 - [what he does](what-he-does.md)
-- [what he doesnt know](what-he-doesnt-know.md)
 - [what he left behind](what-he-left-behind.md)
+
+---
+
+## What He Doesn't Know
+
+That the Regency's containment of Aurora is exactly the kind of imposed stillness that should be anathema to him.
+
+He hasn't thought about it. He avoided the capital. That was enough.

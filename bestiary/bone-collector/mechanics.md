@@ -1,4 +1,8 @@
-# Bone Collector — The Bone Collector
+# Bone Collector — Mechanics
+
+---
+
+## The Bone Collector
 
 **Cards:** `cards/precise-removal.md`, `cards/silk-thread-measure.md`, `cards/stitched-case.md`
 

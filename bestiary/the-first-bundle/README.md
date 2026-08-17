@@ -8,7 +8,6 @@
 
 - [mechanics](mechanics.md)
 - [gm notes](gm-notes.md)
-- [gm secret](gm-secret.md)
 - [profile](profile.md)
 - [unfolding](unfolding.md)
 
