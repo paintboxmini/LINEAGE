@@ -52,7 +52,7 @@ Evade stacks. Each stack protects against one attack. Only one Evade triggers pe
 **(8) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
-**A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
+**A status card that is exiled is destroyed instead** — it never comes back.
 
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.

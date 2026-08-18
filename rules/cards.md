@@ -37,6 +37,8 @@ Two different words in card text, two different mechanics — not interchangeabl
 
 **Target** means you genuinely choose who receives the effect — an ally among several ("Target ally gains Deadly"), or a specific enemy when more than one is present ("Target enemy can only attack frontline targets"). If a card doesn't actually let the player choose, it isn't a Target effect, even if the caster and recipient could theoretically differ — write it as Attacker/Defender instead.
 
+**Choice is the default.** When a card names a pile or a group without naming which member of it — *"Exile 1 card from your discard pile," "Destroy 1 Wound in your hand or discard pile"* — the player resolving the card picks. *"Of your choice"* is written out on some cards for emphasis; its absence never means random, forced, or top-of-pile. A card that means to remove the choice has to say so.
+
 ---
 
 ## Card Example

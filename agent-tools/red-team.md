@@ -53,6 +53,14 @@ minimal — do not add complexity unless it solves a demonstrated problem.
     of a session before anyone checked whether venom was implemented anywhere.
     It wasn't.)
 
+3c. The inverse — does a card fail to restate something the rules already grant?
+    Absence in card text is only evidence once you know the text's defaults.
+    Before reporting that content *cannot* do a thing, check whether the missing
+    words were ever required. ("Of your choice" is implied wherever a card names
+    a pile without naming which member — `rules/cards.md`, Choice is the default.
+    Three exile cards were reported as unable to remove a held status card
+    purely because they didn't say it, and they always could.)
+
 4. Mechanical identity — does it create a decision NO other card creates, or is it
    a stat-swap of something that already exists?
 
