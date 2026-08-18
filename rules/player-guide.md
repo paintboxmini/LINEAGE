@@ -166,42 +166,11 @@ You don't have to explain the metaphysics. Neither does your character.
 
 ---
 
-## Keywords Quick Reference
+## Keywords
 
-*Initiative Shift X is covered above, under Initiative & The Wheel — not repeated here.*
+Every keyword is defined once, in `rules/card-glossary.md`. Print it and keep it on the table beside this guide — it is meant to be handed to players, and it is the ruling wherever anything disagrees with it.
 
-| Keyword | What it does |
-|---------|---------------|
-| Deadly | Next damage roll, add a d6. Stacks; cancels 1-for-1 with Weak. |
-| Weak | Next damage roll, subtract a d6. Stacks; cancels 1-for-1 with Deadly. |
-| Armour X | Reduce all incoming attack damage by X, every attack, all fight. Applies before Resist/Vulnerable. Never expires. |
-| Resist | Next successful attack against you, take half damage. Cancels 1-for-1 with Vulnerable. |
-| Vulnerable | Next successful attack against you, take 50% more damage. Cancels 1-for-1 with Resist. |
-| Evade | 50% chance the next attack against you misses outright, checked before you choose a defense. |
-| Blind | Attacker's own 50% miss chance, checked before the defender even picks a card. |
-| Staggered | Your next attack or defend — whichever comes first — is skipped instead. |
-| Rooted | Can't voluntarily change position until your next turn. Forced movement (Rushdown, Pull) still works on you. |
-| Anchored | A stated benefit that keeps triggering each of your turns as long as you don't move. Ends immediately on moving or Collapsing. |
-| Quick | Change position for free — doesn't cost your action. |
-| Ward | Blocks the next Debuff (Weak, Blind, Vulnerable, Staggered, Rooted, or a stat reduction) applied to you. One use. |
-| Immunity | The next attack against you fails completely, before any card is even revealed. One use. |
-| Protect | The next time an ally would take attack damage, you take it instead. |
-| Thorns X | Deal X damage back to any enemy that lands a melee hit on you. |
-| Counter Attack | Deal this card's Attack damage back to the attacker. |
-| Lifesteal | Heal half the damage this attack actually landed, rounded down. |
-| Critical | This attack's base damage (stat + die, Deadly/Weak included) is doubled. Each card that grants it states its own trigger. |
-| Scry X | Look at the top X cards of a deck (yours, unless stated otherwise). Sort each to top, bottom, or discard, in any order. |
-| Exile | Removed from play for the rest of combat — doesn't go to discard, can't be retrieved. Returns to discard when combat ends. |
-| Locked | That card can't be played, until end of combat unless stated otherwise. |
-| Sealed | Can't Use an Item — Action, Item Action, or passive — until end of your next turn unless stated otherwise. |
-| Obscure | Enemies can't look at or manipulate your hand or deck (doesn't stop status cards being added). |
-| Reveal Hand | At the table: state your color counts in hand ("2 Red, 1 Blue"). |
-| Rushdown | Move a target enemy from Backline to Frontline. You must be Frontline; can't target allies. |
-| Unpreventable | Ignores every defense that applies to attacks — lands in full. |
-| Positive Status Effects | Shorthand for Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity all at once. |
-| Debuff | Shorthand for Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six things Ward and Deflect can prevent. |
-
-Full canonical wording for all of these: `rules/card-glossary.md`.
+*Initiative Shift X is the exception, covered above under Initiative & The Wheel — it needs the Wheel to make sense and doesn't read alone.*
 
 ---
 

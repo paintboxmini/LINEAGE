@@ -41,10 +41,12 @@ glossary reported 30 lost and 29 added: the 29 renamed headers plus the one
 deleted paragraph, and no definition body line among them. That is the check
 earning its keep on an edit, not just on a move.
 
-Headings are exempt from DUPLICATED on purpose. Splitting one file into four
-legitimately repeats `## Contents` four times, and duplicate headings *within* a
-file are already `verify.py`'s `check_entry_structure`. Cross-file repetition is
-the expected shape, not a defect.
+Headings and navigation lines are exempt from DUPLICATED on purpose. Splitting
+one file into four legitimately repeats `## Contents` and its bullets four times,
+and both the within-file versions of that — a duplicated heading, a reference
+listed twice in one file — are already `verify.py`'s `check_entry_structure` and
+`check_duplicate_refs`. Cross-file repetition is the expected shape, not a defect,
+and flagging it would train you to skim the one list that must be read.
 
     python3 agent-tools/conserve.py --selftest
 
@@ -59,6 +61,7 @@ import collections
 import glob
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -87,8 +90,29 @@ def normalize(line):
     return s
 
 
+# Navigation repeats across files by design, the same way headings do. A
+# restructure that creates four entry folders writes "- [mechanics](mechanics.md)"
+# four more times and cites the same place file from each new README — that is
+# the expected shape, not duplicated content. Flagging it trains you to skim past
+# the DUPLICATED list, which is the one thing this tool cannot afford.
+#
+# This costs no coverage. The bug it might look like hiding — the same reference
+# landing twice inside one file, which a repoint creates easily — is already
+# verify.py's check_duplicate_refs, and Contents lists are check_entry_structure.
+# Cross-file repetition is what neither of those looks at, and it is exactly the
+# case that is legitimate.
+NAV = (
+    re.compile(r'^- \[[^\]]+\]\([^)]+\)$'),        # - [mechanics](mechanics.md)
+    re.compile(r'^- `[^`]+/[^`]+` — '),              # - `places/x.md` — description
+)
+
+
 def is_heading(s):
     return s.startswith('#')
+
+
+def is_nav(s):
+    return any(p.match(s) for p in NAV)
 
 
 def collect(patterns):
@@ -139,7 +163,7 @@ def compare(before_lines, before_origins, after_counts):
             where = ', '.join(before_origins.get(s, [])) or 'unknown'
             gone = 'gone' if m == 0 else f'{n} -> {m}'
             lost.append((s, f'{gone}   was in: {where}'))
-        elif m > n and not is_heading(s):
+        elif m > n and not is_heading(s) and not is_nav(s):
             duplicated.append((s, f'{n} -> {m}'))
     for s, m in after_counts.items():
         if s not in before_lines:
@@ -231,6 +255,15 @@ def cmd_selftest(args):
               f'{len(clean_dup)} duplicated')
         ok = False
 
+    # A duplicated navigation line is deliberately not a failure either.
+    nav_after = collections.Counter(before)
+    nav_line = '- [mechanics](mechanics.md)'
+    nav_after[nav_line] = nav_after.get(nav_line, 0) + 1
+    _, nav_dup, _ = compare(before, origins, nav_after)
+    if any(s == nav_line for s, _ in nav_dup):
+        print('selftest FAIL: navigation line was flagged as DUPLICATED')
+        ok = False
+
     # A heading duplicated is deliberately not a failure. Assert that too, so
     # the exemption is tested rather than merely written down.
     headings = [s for s in sorted(before) if is_heading(s)]
@@ -244,7 +277,7 @@ def cmd_selftest(args):
 
     if ok:
         print(f'selftest PASS  ({len(files)} files, {sum(before.values())} lines) — '
-              f'deletion caught, duplication caught, heading exemption honored, '
+              f'deletion caught, duplication caught, heading and nav exemptions honored, '
               f'unchanged corpus clean')
     return 0 if ok else 1
 

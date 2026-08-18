@@ -65,7 +65,7 @@ One folder per entry. `README.md` carries the title, subtitle, a Contents list a
 
 **A section earns its own file when it is substantial enough to read alone, or common enough across entries that the filename is predictable.** One-off *and* small fails both — that is a heading, not a file. Corrected 2026-08-17 after the first split produced 19 one-off sections under 300 characters, including a 143-character one.
 
-**All mechanical content goes in `mechanics.md`, including per-variant stat blocks.** A multi-variant creature (Ashgrazer's Alpha and Pack, Briarbundles' four) keeps every variant's block there rather than in per-variant section files. Splitting them out once left three `mechanics.md` files holding no mechanics at all, and silently dropped 6 of 37 decks from `verify.py`'s validation while every check still reported PASS.
+**All mechanical content goes in `mechanics.md`, including per-variant stat blocks.** A multi-variant creature (Ashgrazer's Alpha and Pack) keeps every variant's block there rather than in per-variant section files. Where variants each carry a full stat block, deck and passives of their own, they are separate creatures and earn separate entries instead — Briarwatch's four Briarbundles were promoted that way on 2026-08-18, leaving `bestiary/briarbundles/` holding the folklore they share. Splitting them out once left three `mechanics.md` files holding no mechanics at all, and silently dropped 6 of 37 decks from `verify.py`'s validation while every check still reported PASS.
 
 `mechanics.md` opens with a `Cards:` line naming the specific card files, if signature cards exist:
 ```

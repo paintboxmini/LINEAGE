@@ -8,5 +8,5 @@ Range: Both
 
 ---
 
-**Set:** briarbundles
+**Set:** tatterman
 **Art:** *(none yet)*

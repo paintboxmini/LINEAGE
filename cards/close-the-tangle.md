@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** briarbundles
+**Set:** briarbound
 **Art:** *(none yet)*

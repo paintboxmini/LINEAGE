@@ -8,5 +8,5 @@ Range: Melee
 
 ---
 
-**Set:** briarbundles
+**Set:** haywight
 **Art:** *(none yet)*

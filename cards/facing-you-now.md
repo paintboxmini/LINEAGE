@@ -1,5 +1,3 @@
-## Tatterman
-
 **FACING YOU NOW**
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
@@ -10,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** briarbundles
+**Set:** tatterman
 **Art:** *(none yet)*

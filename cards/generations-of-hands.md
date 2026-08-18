@@ -1,5 +1,3 @@
-## Mossking
-
 **GENERATIONS OF HANDS**
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
@@ -10,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** briarbundles
+**Set:** mossking
 **Art:** *(none yet)*

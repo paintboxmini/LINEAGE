@@ -1,5 +1,3 @@
-## Briarbound
-
 **THE EASIEST SHAPE**
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
@@ -10,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** briarbundles
+**Set:** briarbound
 **Art:** *(none yet)*

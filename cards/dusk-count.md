@@ -1,5 +1,3 @@
-## Haywight
-
 **DUSK COUNT**
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
@@ -10,5 +8,5 @@ Range: Ranged
 
 ---
 
-**Set:** briarbundles
+**Set:** haywight
 **Art:** *(none yet)*
