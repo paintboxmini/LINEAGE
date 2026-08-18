@@ -34,12 +34,14 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Simulator card definitions reconcile against canon | `check_sim` |
 | The Oracle's two code mirrors agree with each other and with the pool | `check_oracle_sync` |
 | Print artifacts match their sources | `check_print` |
+| Non-status cards are conserved across deck/hand/discard/exile | `check_card_conservation` |
 | No measured distances in `quests/` or `bestiary/` | `check_distances` |
 | Items use only glossary keywords, never longhand | `check_item_keywords` |
 
 ## Not enforced — stated, and known to be unchecked
 
-- **Card count is conserved per combatant across deck, hand, discard, and exile.** Nothing is created or destroyed by ordinary play; the total changes only at two nameable events — a Wound/Exhaust insertion, or a permanent removal (short rest, or Exile returning to deck at combat's end). Any other change is a bug. *Checkable against `combatsimulations/` and worth building; nothing asserts it today.*
+- **Exile's two combat-end rules are unimplemented in the simulator.** `rules/card-glossary.md` says exiled cards return to their owner's discard when combat ends, and that a status card exiled is *destroyed* instead. `combatsimulations/` models neither — `.exile` is a plain list with no combat-end handling and no status distinction. Harmless today, because within a single combat both readings are identical (out of play either way) and the sim only ever simulates one combat. It would matter the moment anything models a multi-fight sequence.
+
 - **Content is conserved across a restructure.** A pure move loses no content line and duplicates none. Verified by hand on 2026-08-17's entry-sorting pass (1,591 lines before, 1,591 after) and it should be a standing tool, not a one-off script — every restructure this session that reported "clean" without proving conservation had only proven that nothing it thought to look for went wrong.
 
 ---
@@ -51,6 +53,10 @@ The empty Confirmed section was the evidence. Prose invariants sat here catching
 **The one that proves the point:** the first candidate here read *"derived stats are computed live, never cached."* Stated as an implementation, it was simply **false** — `max_hp` was stored and patched on every stat change. Restated as the property that actually matters — *max HP tracks current stats* — and then tested rather than assumed, it failed **154 of 1,447 random stat changes**: `eff()` floors a stat at 0 and `adjust()` was debiting max HP for points the formula never counted, so a stat driven under-water and back up left max HP wrong, silently self-correcting often enough to never get noticed. Fixed by computing `max_hp` from a fixed baseline instead of patching it, which makes the invariant true by construction rather than by every future mutation site remembering to be careful.
 
 A vague invariant that nobody tests is worth less than no invariant at all, because it reads like coverage.
+
+**The second candidate — card conservation — held, and testing it still found something.** Non-status cards proved exactly conserved across 180 duels, so it graduated to `check_card_conservation`. But the run also showed **zero status cards ever reaching exile**, which turned out to be structural rather than luck: the glossary calls Exile *"the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight"*, and **no card actually supports that.** BURN BRIGHT, SHED SKIN and SILENCE THE THREAD exile from your own hand or discard but none say *"of your choice"*; PRECISE REMOVAL is the only directed exile in the set and it targets the **defender's** discard. So the glossary describes a use case the card set cannot perform — a mechanical-grounding gap of exactly the kind `agent-tools/red-team.md` step 3b exists to catch. Not fixed here: adding "of your choice" to three cards is a design change, not a correction.
+
+**And the negative test for this check passed on its first run, wrongly.** The injected fault was gated on `len(self.discard) > 6`, a condition the duels never reached, so nothing was ever leaked and the check reported clean. Tightening the injection to fire unconditionally made it fail correctly, naming three combatants and their exact card counts. **A negative test must confirm it actually triggered the fault, not merely that a fault was written.** That is the fourth instance in one session of a check reading identical whether or not it exercised anything.
 
 ---
 

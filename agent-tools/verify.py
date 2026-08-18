@@ -563,6 +563,52 @@ def check_bucket_lists(canon):
                   f'{len(bucketed)} cards bucketed')
 
 
+def check_card_conservation():
+    """Non-status cards are conserved: ordinary play moves a card between deck,
+    hand, discard and exile, and never creates or destroys one. Status cards
+    (Wound/Exhaust) are the only things the engine adds or removes, so holding
+    the *real* cards fixed is the sharp form of the invariant.
+
+    Confirmed 2026-08-17 across 180 duels before being wired in here. Runs a
+    small deterministic set — fixed seeds, fixed pairings — so it costs little
+    and cannot flake.
+    """
+    try:
+        import itertools
+        import engine
+        import content
+        import policies
+    except Exception as e:                       # sim not importable — say so
+        return report('card conservation in the simulator', [f'could not import: {e}'])
+    cards = content.build_cards()
+    roster = content.ROSTER
+    names = sorted(roster)[:8]
+    bad = []
+    duels = 0
+    for a, b in itertools.combinations(names, 2):
+        for seed in (0, 1):
+            made = []
+            for n in (a, b):
+                st, deck = roster[n]
+                made.append(engine.Combatant(n, st['body'], st['mind'], st['soul'],
+                                             deck, policies.make_policy('tactician')))
+            try:
+                engine.Duel(made[0], made[1], cards, seed=seed).run()
+            except Exception as e:
+                bad.append(f'{a} vs {b} seed {seed}: duel raised {type(e).__name__}: {e}')
+                continue
+            duels += 1
+            for c, key in zip(made, (a, b)):
+                want = sum(1 for n in roster[key][1] if not cards[n].is_status)
+                got = sum(1 for pile in (c.deck, c.hand, c.discard, c.exile)
+                          for x in pile if not x.is_status)
+                if got != want:
+                    bad.append(f'{key} vs {b if key == a else a} seed {seed}: '
+                               f'{got} real cards across deck/hand/discard/exile, '
+                               f'decklist had {want}')
+    return report('card conservation in the simulator', bad, f'{duels} duels')
+
+
 def check_oracle_sync():
     """The Oracle pool is mirrored in two places that were never derived from it
     — `combatsimulations/content.py`'s ORACLE_DECK and `printing/generate-cards.py`'s
@@ -653,6 +699,7 @@ def main():
     check_hp_formula()
     check_entry_structure()
     check_bucket_lists(canon)
+    check_card_conservation()
     check_oracle_sync()
     if quick:
         print('SKIP  print artifacts current (--quick)')
