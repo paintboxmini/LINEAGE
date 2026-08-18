@@ -1,0 +1,28 @@
+# Steele — Mechanics
+
+**Mind 3 / Body 4 / Soul 2 — HP 17**
+
+## Deck — 10 cards (4R / 4B / 2G)
+
+**Red**
+- BLOOD TITHE
+- GAMBLER'S RUIN
+- PAIN IS FUEL
+- REPEL
+
+**Blue**
+- FORGET
+- PARADOX
+- ALIGN
+- ANTICIPATE
+
+**Green**
+- MIRROR STEP
+- RENEWAL
+
+All core cards — `cards/buckets/red.md`, `cards/buckets/blue.md`, `cards/buckets/green.md`.
+
+---
+## Oracle Cards Received
+
+- Session 1: PARADOX
