@@ -1,10 +1,13 @@
 # Steve And Pip — Steve
 
-Was being courted into Kaine's radical Promise sect — got the pitch, the grin, the "look at the unlocked," and backed out on the spot (`characters/kaine/README.md`, The Pitch). Never bathed under Kaine. Never will. Hasn't done the ordinary rite of passage yet either when the party encounters him in Mirel's arc — just a man hanging around a group he no longer belongs to, having not found anywhere better to stand. Vanilla. Agreeable. The kind of person whose name you forget while they're still talking.
+Wren's son. A young adult who is easy to underestimate, partly because his attention and memory do not always hold onto the same thread twice in a row.
 
-He does something notably foolish during the Mirel arc. The party will remember him for it — not fondly, but clearly.
+Steve is forgetful. He can lose the reason he is standing somewhere, forget what he was about to agree to, or let a conversation slide past the point where he meant to answer. It is not a performance and not a synonym for being unremarkable. He is capable of curiosity, attachment, and conviction; he simply does not always carry the thread cleanly enough for other people to see it.
 
-His name is Steve. In a world of Mortises, Pazuzus, and Cartographers-with-no-name, his name is Steve.
+He has been curious about the Final Current and has spent time around its edges. He has not yet refused Kaine when the Tide Pulls Back sequence begins. That refusal belongs later, on the group platform night, and is tied to what the players do in that moment.
 
-Something real grew between him and Mirel (`characters/mirel/README.md`) in the space between Kaine's arc ending and his own bathing — nobody arranged it, nobody in the Promise noticed, and it never got the chance to become anything either of them would have had time to name properly. Everyone else who'd met him already had him filed as forgettable. She was the one person who didn't.
+Early in the Mirel arc, during the Tide Market stretch, the party sees Steve make a clumsy attempt to ask Mirel out. The words do not land cleanly. He loses the thread of the attempt, realizes it, and pivots into self-deprecating humor. Mirel laughs for real. There is something developing between them. Neither has named it.
 
+Later, Steve tells Wren in front of part of the congregation, with the party present, that he intends to join a Final Current descent. The declaration is his own. It is also the moment the long delay around his ordinary bath is finally named in public.
+
+His ordinary bath remains downstream of this sequence, as does the Pip arc. The two should not be collapsed into the Kaine sequence.
