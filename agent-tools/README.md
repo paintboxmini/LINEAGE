@@ -18,6 +18,19 @@
 
 ---
 
+## Executable checks
+
+Not prompts — programs. These fail loudly, which is the point: a prose invariant
+nobody runs reads exactly like coverage.
+
+| Tool | Use When |
+|------|----------|
+| `verify.py` | Before every commit — the full acceptance pass, all repo-wide invariants |
+| `conserve.py` | Either side of a restructure — snapshot before the move, check after; catches content lost or duplicated in transit |
+| `invariants.md` | Index of what is enforced, by which check, and what is stated but unchecked |
+
+---
+
 ## Automatic Triggers
 
 | Trigger | Prompt |

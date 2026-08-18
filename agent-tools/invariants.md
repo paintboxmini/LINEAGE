@@ -38,11 +38,19 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | No measured distances in `quests/` or `bestiary/` | `check_distances` |
 | Items use only glossary keywords, never longhand | `check_item_keywords` |
 
+## Enforced on demand
+
+Conservation is a property of a *transition*, not of a state, so it cannot live in `verify.py` — it needs a before as well as an after. It is a two-command tool run either side of the move instead.
+
+| Invariant | Enforced by |
+|---|---|
+| Content is conserved across a restructure — a pure move loses no content line and duplicates none | `agent-tools/conserve.py snapshot` / `check` |
+
+Run `snapshot` over the scope about to change, do the move, run `check`. Lost lines and duplicated lines both fail; newly written navigation is reported but never fails, because a restructure legitimately adds it.
+
 ## Not enforced — stated, and known to be unchecked
 
 - **Exile's two combat-end rules are unimplemented in the simulator.** `rules/card-glossary.md` says exiled cards return to their owner's discard when combat ends, and that a status card exiled is *destroyed* instead. `combatsimulations/` models neither — `.exile` is a plain list with no combat-end handling and no status distinction. Harmless today, because within a single combat both readings are identical (out of play either way) and the sim only ever simulates one combat. It would matter the moment anything models a multi-fight sequence.
-
-- **Content is conserved across a restructure.** A pure move loses no content line and duplicates none. Verified by hand on 2026-08-17's entry-sorting pass (1,591 lines before, 1,591 after) and it should be a standing tool, not a one-off script — every restructure this session that reported "clean" without proving conservation had only proven that nothing it thought to look for went wrong.
 
 ---
 
@@ -57,6 +65,10 @@ A vague invariant that nobody tests is worth less than no invariant at all, beca
 **The second candidate — card conservation — held, and testing it still found something.** Non-status cards proved exactly conserved across 180 duels, so it graduated to `check_card_conservation`. But the run also showed **zero status cards ever reaching exile**, which turned out to be structural rather than luck: the glossary calls Exile *"the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight"*, and **no card actually supports that.** BURN BRIGHT, SHED SKIN and SILENCE THE THREAD exile from your own hand or discard but none say *"of your choice"*; PRECISE REMOVAL is the only directed exile in the set and it targets the **defender's** discard. So the glossary describes a use case the card set cannot perform — a mechanical-grounding gap of exactly the kind `agent-tools/red-team.md` step 3b exists to catch. Not fixed here: adding "of your choice" to three cards is a design change, not a correction.
 
 **And the negative test for this check passed on its first run, wrongly.** The injected fault was gated on `len(self.discard) > 6`, a condition the duels never reached, so nothing was ever leaked and the check reported clean. Tightening the injection to fire unconditionally made it fail correctly, naming three combatants and their exact card counts. **A negative test must confirm it actually triggered the fault, not merely that a fault was written.** That is the fourth instance in one session of a check reading identical whether or not it exercised anything.
+
+**The third candidate — content conservation — is the one the old method could not have caught.** It was verified on 2026-08-17 by counting lines either side of the entry-sorting pass: 1,591 before, 1,591 after. That proves the totals matched. It does not prove the same lines came out the other side, and the difference is not academic. Injecting a deliberately botched move into `bestiary/skeinwing/` — two lines dropped, one block copied, exactly the shape of the reference-rewrite bug that hit three times in one session — produced a corpus with **2,433 content lines before and 2,433 after**, identical, while one line had been lost outright and another silently duplicated. Two faults in opposite directions cancel perfectly in a total. `conserve.py` compares the multiset instead, and named both.
+
+The first injection attempt failed to fire at all: the file chosen was too small, the script raised `IndexError` before writing anything, and the check that followed reported a clean PASS — accurately, because nothing had changed. Retrying against a large enough file, with an assertion that the injection actually landed, is the only reason the finding above exists. **Fifth instance.**
 
 ---
 
