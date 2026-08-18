@@ -35,6 +35,12 @@ Three outcomes, and only two of them fail:
   ADDED       a line that did not exist before. Never a failure — a restructure
               legitimately writes new navigation. Reported so it can be read.
 
+On a deliberate edit rather than a pure move, LOST is expected — read the list and
+confirm every entry was meant to go. Stripping the hand-typed counts out of the
+glossary reported 30 lost and 29 added: the 29 renamed headers plus the one
+deleted paragraph, and no definition body line among them. That is the check
+earning its keep on an edit, not just on a move.
+
 Headings are exempt from DUPLICATED on purpose. Splitting one file into four
 legitimately repeats `## Contents` four times, and duplicate headings *within* a
 file are already `verify.py`'s `check_entry_structure`. Cross-file repetition is

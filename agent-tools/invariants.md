@@ -33,6 +33,7 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | A restated stat block matches its bestiary source | `check_restated_stat_blocks` |
 | Simulator card definitions reconcile against canon | `check_sim` |
 | The Oracle's two code mirrors agree with each other and with the pool | `check_oracle_sync` |
+| Keyword usage counts are generated from `cards/`, never hand-typed | `check_keyword_usage` |
 | Print artifacts match their sources | `check_print` |
 | Non-status cards are conserved across deck/hand/discard/exile | `check_card_conservation` |
 | No measured distances in `quests/` or `bestiary/` | `check_distances` |

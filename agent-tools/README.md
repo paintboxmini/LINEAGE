@@ -27,6 +27,7 @@ nobody runs reads exactly like coverage.
 |------|----------|
 | `verify.py` | Before every commit — the full acceptance pass, all repo-wide invariants |
 | `conserve.py` | Either side of a restructure — snapshot before the move, check after; catches content lost or duplicated in transit |
+| `keyword-usage.py` | Recount how many cards use each keyword; regenerates `keyword-usage.md` |
 | `invariants.md` | Index of what is enforced, by which check, and what is stated but unchecked |
 
 ---

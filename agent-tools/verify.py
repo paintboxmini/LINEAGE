@@ -276,8 +276,11 @@ def check_item_keywords():
     explicitly persistent and re-triggering), and BARBED WRAP wrote out Thorns by
     hand in a strictly wider form. Neither is visible to any other check."""
     gl = open('rules/card-glossary.md', encoding='utf-8').read()
-    known = {m.group(2).replace(' X', '').replace(' [Color]', '').strip()
-             for m in re.finditer(r'^\*\*\((\d+)\) ([A-Za-z \[\]X]+)\*\*', gl, re.M)}
+    # Entry headers lost their hand-maintained "(55)" prefix on 2026-08-18 when
+    # the counts moved to agent-tools/keyword-usage.md. Anchored at both ends so
+    # ordinary bolded prose in the glossary cannot be read as a keyword.
+    known = {m.group(1).replace(' X', '').replace(' [Color]', '').strip()
+             for m in re.finditer(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M)}
     longhand = [
         (r'reduce (?:all )?(?:incoming )?damage by \d', 'Armour X'),
         (r'deal \d+ damage to (?:the )?attacker', 'Thorns X'),
@@ -301,20 +304,31 @@ def check_item_keywords():
                   f'{len(known)} glossary keywords')
 
 
-def check_glossary_count(canon):
-    """The glossary header states how many card blocks its keyword counts were
-    taken over. That number drifted twice in one day — once because cards were
-    added after the count, once because my own recount matched on a colored
-    header line and silently dropped cards/colorless.md. A stated number nothing
-    verifies is a number that will be wrong."""
-    text = open('rules/card-glossary.md', encoding='utf-8').read()
-    m = re.search(r'Recounted across all (\d+) card blocks', text)
-    if not m:
-        return report('glossary block count', ['header no longer states a block count'])
-    stated, actual = int(m.group(1)), len(canon)
-    bad = ([] if stated == actual else
-           [f'header says {stated} card blocks, cards/ has {actual} — recount the keyword numbers'])
-    return report('glossary block count matches cards/', bad, f'{actual} blocks')
+def check_keyword_usage():
+    """agent-tools/keyword-usage.md is generated from cards/ and the glossary.
+    Committed rather than produced on demand so the numbers are readable and
+    diffable, which means they can go stale — this fails when they have.
+
+    Replaces check_glossary_count, which verified a single hand-typed block
+    total in the glossary header. That number is gone: the per-keyword counts it
+    caveated moved out of the player-facing file entirely on 2026-08-18, after
+    sitting wrong on 21 of 29 keywords. A generated table cannot drift, and this
+    check is what makes that true rather than merely intended."""
+    r = subprocess.run([sys.executable, 'agent-tools/keyword-usage.py', '--check'],
+                       capture_output=True, text=True)
+    bad = [] if r.returncode == 0 else [(r.stdout + r.stderr).strip()]
+    n = len(re.findall(r'^\| .+ \| \d+ \| \d+% \|$',
+                       open('agent-tools/keyword-usage.md', encoding='utf-8').read(), re.M))
+    gl = open('rules/card-glossary.md', encoding='utf-8').read()
+    defined = len(re.findall(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M))
+    # Coverage: the table must hold a row for every keyword the glossary defines.
+    if n != defined:
+        bad.append(f'COVERAGE: glossary defines {defined} keywords, the table has {n} rows')
+    # And the counts must not creep back into the printed file.
+    stale = re.findall(r'^\*\*\(\d+\) ', gl, re.M)
+    if stale:
+        bad.append(f'{len(stale)} glossary entries have regained a hand-typed count prefix')
+    return report('keyword usage table current', bad, f'{defined} keywords')
 
 
 def check_duplicate_refs():
@@ -692,7 +706,7 @@ def main():
     check_refs()
     check_sim(canon)
     check_item_keywords()
-    check_glossary_count(canon)
+    check_keyword_usage()
     check_duplicate_refs()
     check_restated_stat_blocks()
     check_distances()
