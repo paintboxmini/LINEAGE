@@ -4,14 +4,13 @@
 
 ---
 
-A ghoul. Has been brought back from death more times than is good for anyone — every one of them on purpose, throwing himself into whatever was about to kill Mortis instead. Each resurrection lost something — fragments of personality, gaps in emotional register, memories that didn't reassemble correctly. He is not tragic about this. He is unhinged about it, which is different. He'd do it again tomorrow and has said so.
+A ghoul who has been brought back from death more times than is good for anyone — every resurrection on purpose, throwing himself into whatever was about to kill Mortis instead.
 
-He and Mortis were partners for years, back when the work was adventuring instead of a stall and a bar three streets apart. Mortis never once left him dead when he could help it, and never once made him ask twice. They retired together and never really stopped being partners — just changed what they're partners in.
-
----
+He and Mortis were partners for years, back when the work was adventuring instead of a stall and a bar three streets apart. They retired together and never really stopped being partners — just changed what they're partners in.
 
 ## Contents
 
+- [profile](profile.md)
+- [backstory](backstory.md)
 - [connections](connections.md)
 - [gm notes](gm-notes.md)
-
