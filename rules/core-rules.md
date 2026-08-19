@@ -40,7 +40,7 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Interact | Any noncombat action |
 | Wait | Take no action; reinsert yourself anywhere later in the order. Can't be used two turns in a row. See `rules/combat.md` |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
-| Grapple | Contested check to grab, tackle or pin rather than harm |
+| Grapple | Contested check to grab and hold an enemy. Both are Rooted and neither may act except to break out |
 | Stand Up | Get off the ground while Down (needs HP above 0) |
 | Destroy a Wound | Destroy 1 Wound from your hand |
 | Rest in Place | Destroy every Exhaust in your hand at once |

@@ -37,6 +37,8 @@ Melee requires both of you in the Frontline. Everything else is Ranged range.
 
 **Rushdown** — an action that drags a Backline *enemy* into the Frontline. Can't target allies. You must be in the Frontline yourself to use it.
 
+**Grapple** — a contested check to grab an enemy you can reach. Success holds you *both*: you're each Rooted, and neither of you may take an Action or Item Action except to attempt a break (another contested check on your turn). You can still defend normally. It costs the grabber exactly what it costs the target — that's the trade.
+
 **Cover** — an action, Backline only, and the fiction has to justify it (something to actually hide behind). It's **Anchored — Evade**: one the moment you take cover, one more at the start of each of your turns. It ends the instant you attack — meaning a card *you* play as the attacker; a Counter Attack or Thorns doesn't break it, since both happen while you're defending. It also ends if you Collapse, or if anything moves you out of the Backline — Rushdown included, since cover needs the Backline even though Rushdown doesn't break other Anchored effects.
 
 **Confined spaces** — in tight terrain the GM may cap how many fit in a position, or block targeting entirely if something physically blocks the way.
@@ -59,7 +61,7 @@ Each turn: **one Action, plus one Item Action.**
 | Interact | Anything noncombat the fiction allows |
 | Wait | See below |
 | Flee | Attempt to leave the fight — see Fleeing Combat |
-| Grapple | Grab, tackle or pin instead of hurting — a contested check |
+| Grapple | Grab and hold an enemy — a contested check. It holds you both |
 | Stand Up | Get up off the ground once you're above 0 HP |
 | Destroy a Wound | Get rid of 1 Wound from your hand |
 | Rest in Place | Get rid of every Exhaust in your hand at once |

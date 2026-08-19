@@ -129,7 +129,7 @@ On your turn, you may take **one Action**, plus **one Item Action:**
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
-| Grapple | Grab, tackle or pin rather than harm — a contested check. `cards/subdue.md` is the card that does it deliberately. |
+| Grapple | Grab and hold an adjacent enemy — a contested check. Holds you both. See Grappling below. `cards/subdue.md` is the card that does it deliberately. |
 | Stand Up | Get off the ground while Down. Only available once you are above 0 HP. See Collapse & Death below. |
 | Destroy a Wound | Destroy 1 Wound from your hand (`rules/status-cards/wound.md`). |
 | Rest in Place | Destroy every Exhaust in your hand, all at once (`rules/status-cards/exhaust.md`). |
@@ -240,6 +240,19 @@ The one action that moves someone else between positions. Defined in `rules/keyw
 ### Interact & Position
 
 Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
+
+### Grappling
+
+**Grapple** is an action: a contested check against an enemy you can reach. On a success you are **both grappled**, and it holds until someone breaks it.
+
+While grappled, both combatants:
+
+- gain **Rooted** — which is what stops a grappled combatant repositioning at all, Quick included, since Quick is still a voluntary change of position
+- may take **no Action and no Item Action** except one: attempt a break, a contested check on your own turn. A success ends the grapple for both.
+
+**Defending is unaffected.** Being held does not stop you answering an attack — you keep your Defensive Bonus and every reaction you had.
+
+The hold costs the grappler exactly what it costs the target. That is the point of it: one combatant spends themselves to take another out of the fight, rather than getting a disable and an attack for the same action.
 
 ### Cover
 
