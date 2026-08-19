@@ -565,6 +565,13 @@ CLAIMS = {
         {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
          'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
     ),
+    'ambush — the defenses it beats': (
+        # Reactions need awareness; properties do not. Every file that states
+        # the ambush terms must name the same two reactions, so one voice being
+        # updated and another missed fails as COVERAGE rather than passing.
+        [r'no defense,? (?:and )?no (Evade or Protect)'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
     'chase — escape distance': (
         [r'distance reaches (\d)\.\*\* They are out of sight',
          r'\*\*Distance (\d) = escaped\*\*',

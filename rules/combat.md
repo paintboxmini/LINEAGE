@@ -24,7 +24,9 @@ Three things decide a fight, and a build's stance toward all three, together, is
 
 To approach unseen before combat, make a check against **DC = 10 + the highest Soul on the side being approached**. Players attempting an ambush roll for themselves; the GM rolls for an ambushing creature or NPC. Soul is the obvious stat and not the required one — any stat someone can argue for and the table agrees to works, same as every check (`rules/out-of-combat.md`).
 
-**On success:** the ambusher's first attack **auto-hits — no RPS, no defense, and neither Evade nor Immunity applies**. Then roll initiative for everyone including the ambusher, who takes their place in order normally.
+**On success:** the ambusher's first attack **auto-hits — no RPS, no defense, and no Evade or Protect.** Then roll initiative for everyone including the ambusher, who takes their place in order normally.
+
+**Reactions need awareness; properties do not.** That is the whole line, and it settles every case. Evade is a dodge and Protect is throwing yourself in front of someone — neither can happen against a blow nobody saw. Armour, Resist, Thorns and Immunity are what you are made of, and they apply to anything. An ambush makes you easier to **hit**, never easier to **survive**. The attacker's own Blind still rolls: it is their failing, not your reaction.
 
 **One attack, not one each.** A side that ambushes together still gets a single auto-hit; there is no window for a second before initiative is rolled. If more than one of them could take it, that side picks who.
 
@@ -40,12 +42,12 @@ This is not willingness to be hit. It is a lack of aggression, and it leaves an 
 
 While it lasts, a side in sight of an Unguarded target chooses one of two things. **Both end the state, and it cannot be had twice.**
 
-- **Strike.** One attack lands **unblocked** — no defense is played and no reveal is resolved. **Evade and Immunity still apply**; being unaggressive is not being helpless. Then roll initiative and fight.
+- **Strike.** One attack lands **unblocked** — no defense is played and no reveal is resolved. **Every reaction and property still applies**, Evade and Protect included; they can see you coming and simply are not swinging back. Then roll initiative and fight.
 - **Ready.** Visibly prepare for a fight — weapons drawn, aim taken, ground closed with obvious intent. Unguarded drops with no attack made, and initiative is rolled.
 
 You cannot do both. Readying is visible, and visibility is exactly what closes the opening.
 
-**Unguarded is not an ambush and does not stack with one.** An ambush pays for arriving unseen and its auto-hit beats Evade and Immunity; this pays for the target not fighting yet, and it does not.
+**Unguarded is not an ambush and does not stack with one.** An ambush pays for arriving unseen, so it beats the reactions — Evade and Protect. This pays only for the target not fighting yet, so it beats nothing but the defense card and the reveal.
 
 A creature's own entry says whether it is Unguarded and what else ends it.
 

@@ -58,7 +58,7 @@ If a player asks what happened here, the honest GM answer is that nothing in the
 
 **Something is living in the doorway** — the large Duskwick (`bestiary/duskwick/README.md`, The Large One: Mind 4 / Body 4 / Soul 6, HP 22, Creature Threat Rating 14). It's in the band where the light stops, which is where a Duskwick is always going to be if a building offers it one — it's been eating well and hasn't had to work for it. It doesn't ambush the yard; it ambushes the *doorway*, the first character who crosses the threshold from either direction. A party that searches the yard, reads every detail, and leaves has a completely uneventful visit and never knows.
 
-A party that hasn't spotted it gives the Duskwick the first attack of the encounter as an ambush — auto-hits, no RPS, no defense, neither Evade nor Immunity applies (same terms as the Briarbound's Learned the Shape; `rules/combat.md`, Stealth & Ambush).
+A party that hasn't spotted it gives the Duskwick the first attack of the encounter as an ambush — auto-hits, no RPS, no defense, no Evade or Protect (same terms as the Briarbound's Learned the Shape; `rules/combat.md`, Stealth & Ambush).
 
 **Three endings, all complete:** never stop (the party passes it on the road, foreshadowing still works); stop, read the yard, leave (the best version, no fight); or cross the threshold, fight, and end it when the Duskwick drops or the party stops standing in the doorway. Killing it isn't a reward — there's no loot, and the house is still empty.
 

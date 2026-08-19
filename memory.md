@@ -125,6 +125,21 @@ Tracking only the gap fixes both and makes the odds legible: with absorbing ends
 
 **Contact grants the initiative, not a free attack.** Drew, 2026-08-18, on the alternative offered: *"giving the pursuer the first turn makes sense."* The reasoning behind refusing the free attack still stands and is why the lighter lever was the right one: Drew asked whether the chaser should get an ambush-style attack before initiative. No: Ambush and Unguarded both pay out for *arriving unseen*, and a fleeing character knows exactly who is behind them — granting the ambush package here would make the word cover two different mechanics, in the same session that split Unguarded off so it wouldn't. It would also collapse the choice the rule exists to create: if the free hit is automatic, *fight or subdue* stops being a decision. The lighter lever, if contact ever needs to feel more decisive, is giving the pursuer the first turn rather than a free hit.
 
+## Reactions Need Awareness; Properties Do Not
+
+The line that settles how an opening interacts with every defensive keyword, and the reason the earlier attempts felt wrong. Drew, 2026-08-18: *"ambush and unguarded still don't interact right with evade or immunity. I'm not sure what solution best matches the intended play experience."*
+
+- **Reactions** — Evade is a dodge, Protect is throwing yourself in front of an ally. Neither can happen against a blow nobody saw. An **ambush** beats both.
+- **Properties** — Armour, Resist, Thorns and Immunity are what you are made of. They apply to anything, always.
+
+So an ambush makes you easier to **hit**, never easier to **survive**. **Unguarded** beats neither category — the target can see you fine and simply is not swinging back, so all it takes is the defense card and the reveal. The attacker's own Blind still rolls either way: it is their failing, not the defender's reaction.
+
+**Immunity's fiction is what makes this obvious.** It comes only from LAST RESORT, UNBROKEN and UNTOUCHED, all gated on *"if your HP is 6 or less"* — it is not a dodge or a block, it is a refusal to fall. Deleting it for an ambush removed it in precisely the situation it exists for.
+
+**Removing the carve-out cost nothing, which was checked rather than assumed.** Those three cards are Immunity's only sources — no item grants it — and all three are played *during* combat. A target being ambushed pre-combat is at full HP with no cards played, so **they can never hold Immunity when the auto-hit lands.** The exception had never been able to fire; it existed only to make Immunity's own text false.
+
+If an ambush should ever feel more lethal, the lever is damage or a Deadly stack on the auto-hit — not stripping defenses, which is what tangled it in the first place.
+
 ## Unguarded Is an Opening, Not Helplessness
 
 Drew, 2026-08-18: *"the fantasy isn't a creature or character who is willing to be hit. they are non aggressive, allowing an opening for the first strike. but they will defend if shown a threat."*
