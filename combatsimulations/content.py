@@ -2834,9 +2834,14 @@ ROSTER = {
 #   cost:hp / cost:exhaust / cost:discard
 #                          — self-cost mechanism paid to cast. (Wound-as-
 #                            cost checked directly, 2026-07-29 — no
-#                            registered card implements it; a generic
-#                            apply_wound() helper exists but nothing calls
-#                            it. cost:discard corrected down hard from an
+#                            registered card implements it. The generic
+#                            apply_wound() helper is called three times but
+#                            always at `foe`, never as a self-cost, so the
+#                            claim holds in this narrow sense only — it read
+#                            as "nothing calls it" until 2026-08-18, which
+#                            was false in plain reading. Its twin
+#                            apply_exhaust() genuinely has no callers.
+#                            cost:discard corrected down hard from an
 #                            initial rough-sweep guess of ~24 to a verified
 #                            7 — that sweep was matching "discard" anywhere,
 #                            including foe-forced-discard and Scry's own
