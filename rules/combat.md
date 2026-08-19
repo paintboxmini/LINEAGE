@@ -24,13 +24,25 @@ Three things decide a fight, and a build's stance toward all three, together, is
 
 To approach unseen before combat, make a check against **DC = 10 + the highest Soul on the side being approached**. Players attempting an ambush roll for themselves; the GM rolls for an ambushing creature or NPC. Soul is the obvious stat and not the required one — any stat someone can argue for and the table agrees to works, same as every check (`rules/out-of-combat.md`).
 
-**On success:** the ambusher's first attack **auto-hits — no RPS, no defense, and Evade does not apply**. Then roll initiative for everyone including the ambusher, who takes their place in order normally.
+**On success:** the ambusher's first attack **auto-hits — no RPS, no defense, and neither Evade nor Immunity applies**. Then roll initiative for everyone including the ambusher, who takes their place in order normally.
 
 **One attack, not one each.** A side that ambushes together still gets a single auto-hit; there is no window for a second before initiative is rolled. If more than one of them could take it, that side picks who.
 
 **On failure:** roll initiative. No advantage.
 
 A creature whose own entry defines an ambush uses that instead — several do, with their own trigger, stat and DC.
+
+### Unguarded
+
+Some creatures do not fight until they are fought. A creature that is **Unguarded** is not in combat: it takes no turns, defends nothing, and does not act against the party at all. It is open to attack, and that is the cost of it.
+
+The first attack against an Unguarded creature **auto-hits — no RPS, no defense, and neither Evade nor Immunity applies.** After it lands, roll initiative for everyone and the fight proceeds normally.
+
+**One auto-hit, the same limit an ambush has, and the two do not stack.** Ambushing a creature that was already Unguarded gains nothing.
+
+**Overt aggression ends the state before any attack lands.** Drawing weapons openly, taking aim, closing with obvious intent — the GM calls it, and initiative is rolled instead with no free hit.
+
+A creature's own entry says whether it is Unguarded and what ends it.
 
 ---
 

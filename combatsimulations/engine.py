@@ -1098,18 +1098,6 @@ class Duel:
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
 
-        # Immunity (card-glossary.md, LAST RESORT): the attack fails
-        # completely before anything else — no FOLLOW-UP resolution, no color
-        # read, no reveal bookkeeping. Stronger than Blind/Evade, both of
-        # which still reveal the attacker's card and log it to attack_history
-        # even on a miss; Immunity means none of that ever happened at all,
-        # so it's checked first, ahead of everything below.
-        if defender.immune:
-            defender.immune = False
-            self._say(f"{defender.name}'s Immunity stops the attack cold")
-            _discard_or_return(attacker, card)
-            return
-
         # FOLLOW-UP: fully BECOMES a copy of whichever ally most recently
         # revealed a card (before RPS resolution, per Drew's spec) — a
         # stronger transformation than AFTERIMAGE's color-only mirroring, so
@@ -1349,6 +1337,23 @@ class Duel:
         return 'defender'
 
     def _resolve_attacker_win(self, attacker, defender, card, contested):
+        # Immunity resolves HERE, not before the reveal. Drew, 2026-08-18:
+        # "immunity shouldn't trigger until the attack is successful" — so an
+        # attack that loses the reveal no longer burns it, which makes Immunity
+        # strictly stronger than the old timing did. It used to be checked at
+        # the top of attack(), consuming itself against any attack merely
+        # declared, including ones that would have failed on their own.
+        #
+        # The ambush auto-hit bypasses Immunity entirely (rules/combat.md,
+        # Stealth & Ambush). There is no code for that here because the
+        # simulator models no ambush at all — gating on `contested` would be
+        # wrong, since that flag means "the defender played no card", which
+        # also covers an empty hand or a cannot-defend, neither of which is an
+        # ambush and both of which Immunity should still answer.
+        if defender.immune:
+            defender.immune = False
+            self._say(f"{defender.name}'s Immunity stops the attack cold")
+            return
         # Preserve 'color', set earlier in attack() at the reveal point —
         # replacing the whole dict here would silently drop it on every
         # clean win, a real bug caught building AFTERIMAGE.
