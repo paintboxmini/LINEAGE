@@ -154,6 +154,7 @@ Advancement is the Oracle ritual, run by each player at every session's end (`pl
    The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
    The Oracle is permitted to remember what it has already shown.
 3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+   The other two are the GM's call. A card the table still wants goes back into the pool. A card that was passed over and will keep being passed over leaves it.
 
 This is the default rhythm of growth.
 
