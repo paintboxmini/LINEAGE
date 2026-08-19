@@ -230,6 +230,22 @@ Some cards produce **Ongoing Effects.** These cards remain face up in front of t
 
 Multiple ongoing effects can be active simultaneously unless a card specifies otherwise.
 
+### Tracking a Status at the Table
+
+**The card is the tracker.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — needs no separate marker. The card *is* the marker: set it face-up in front of whoever it is affecting instead of sending it to the discard pile, and discard it for real once the effect resolves, triggers, or expires.
+
+That is not only convenience. The card is out of its owner's rotation the whole time it serves as a marker — it is not in their discard pile, so it is not coming back on a reshuffle either. That is a real cost on whoever played it, whether the card debuffed a foe or buffed an ally.
+
+**Status tokens supplement the card. They never replace it.** Use one only where the card cannot show the whole state, which is three cases:
+
+- **One card, several combatants.** The card stays in front of the player who played it; **every** affected combatant takes a status token — including that player, if the card caught them too, because the card has stopped marking a recipient and is now only marking the effect. The card says the effect is live and who is paying for it, the tokens say who is under it. A single card cannot sit in front of four people, and passing it to one of them makes that combatant look different from the others for no reason.
+- **A count that changes.** A card granting a numbered status keeps showing its printed number no matter what happens to it. Take that many tokens when it lands and remove one each time the number goes down — whether the status is spent a use at a time or counts down a turn at a time. The card stays put; the tokens carry the remainder.
+- **No card behind it at all.** A creature passive, an item, or the terrain can grant a status with nothing to set down. Here the status exists as tokens alone — the one case where it does, because there was never a card to leave anyone's rotation.
+
+**The card and the effect end together**, and the tokens go with them. A status that came from a card never outlives that card, and never ends before it — nobody may pick a card back up to cancel an effect early. Tokens record state; they never hold it. Any status can be tracked this way — there is no list of which ones qualify.
+
+*Not to be confused with the turn markers on the initiative wheel (Initiative, above), which are also called tokens. Status tokens are a different object and never move around the wheel.*
+
 ---
 
 ## Objects

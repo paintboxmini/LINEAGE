@@ -208,6 +208,10 @@ In any of these, discarding a card whose name meaningfully fits the action grant
 
 **Ongoing Effects** stay face-up in front of you after use until their stated condition is met, then discard. Multiple can be active at once unless a card says otherwise.
 
+**Tracking a status — the card is the marker.** When a card gives someone a temporary status, don't discard it. Set it face-up in front of whoever it's affecting, and discard it for real when the effect ends. That card is out of your rotation the whole time, so it isn't coming back on a reshuffle — the status costs you the card, not just the turn.
+
+**Status tokens fill the gaps the card can't.** Take tokens when the card alone can't show the state: when one card hits several combatants (the card stays in front of you, each of them takes a token), when a numbered status is being spent down (the card keeps showing its printed number, the tokens carry what's left), or when nothing was played at all — a creature's passive, an item, the terrain. Tokens never replace the card. Take the card back and the status ends, tokens with it. Full rule: `rules/combat.md`, Ongoing Effects.
+
 **Simultaneous Effects** — when two or more things would resolve at the same instant, the controller of those effects chooses the order (the acting player decides if the controllers differ). This does *not* apply to Attack Resolution — Effect always resolves before Defensive Bonus on a tie, no one chooses that order.
 
 ---
