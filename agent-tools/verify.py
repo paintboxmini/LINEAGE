@@ -572,6 +572,15 @@ CLAIMS = {
         [r'no defense,? (?:and )?no (Evade or Protect)'],
         {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
     ),
+    'Oracle ritual — cards revealed and taken': (
+        # The Distance step, stated numerically in two rules files and echoed in
+        # Oracle/baseoracledeck.md and places/island-in-a-ship.md. gm-guide.md
+        # says "a pick from three" in words and is not matched on purpose —
+        # a claim should compare values, not prose.
+        [r'reveals \*\*(\d) cards\*\*; the player chooses \*\*(\d)\*\*',
+         r'GM reveals (\d) → player takes (\d)'],
+        {'rules/character-creation.md', 'rules/core-rules.md'},
+    ),
     'chase — escape distance': (
         [r'distance reaches (\d)\.\*\* They are out of sight',
          r'\*\*Distance (\d) = escaped\*\*',
