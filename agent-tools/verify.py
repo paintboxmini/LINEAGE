@@ -641,6 +641,171 @@ CLAIMS = {
 }
 
 
+# --- Section inventory -------------------------------------------------------
+#
+# What every rules file is expected to contain, section by section. Added
+# 2026-08-18 after an edit of mine computed its end boundary with a forward
+# index search, matched a heading far below, and silently deleted `## Chase`,
+# `## Fleeing Combat` and `## Initiative` from combat.md — 40 content lines —
+# while this suite still reported 17 of 18 passing. Nothing here asserted that a
+# rules file still contained the sections it had yesterday, so nothing could.
+#
+# Drew, on that: "we should have been double checking our work as we went."
+#
+# Updating this list is meant to be a deliberate act. A section that legitimately
+# moves or is renamed gets edited here in the same commit; one that vanishes by
+# accident fails the build and names itself. Same discipline as CLAIMS' expected
+# file sets, which have already caught two silent blind spots today.
+#
+# Excluded: README.md (the map), card-glossary.md (generated, and already checked
+# against its sources by check_glossary_generated), glossary-frame.md (its input).
+SECTION_INVENTORY = {'cards.md': ['Card Anatomy',
+              '"Attacker" / "Defender" vs. "Target"',
+              'Card Example',
+              "The Die Is the Card's Personality",
+              'Card Glossary',
+              'Deck Building',
+              'Important: You Are Not Your Own Ally'],
+ 'character-creation.md': ['Stats',
+                           'What Stats Do',
+                           'Equipment',
+                           'Starting Deck',
+                           'Hand Size',
+                           'The Oracle Deck',
+                           'Advancement',
+                           'Magic Expression'],
+ 'combat.md': ['Core Combat Philosophy',
+               'Stealth & Ambush',
+               'Chase',
+               'Fleeing Combat',
+               'Initiative',
+               'Turn Structure',
+               'Attack Resolution',
+               'Damage Pipeline',
+               'Range',
+               'Positioning',
+               'Ongoing Effects',
+               'Objects',
+               'Simultaneous Effects',
+               'Collapse & Death'],
+ 'core-rules.md': ['Stats',
+                   'Difficulty Classes',
+                   'Combat — 1 Action + 1 Item Action Per Turn',
+                   'Attack Resolution',
+                   'Card Anatomy',
+                   'Perception Modes',
+                   'Collapse & Death',
+                   'Resting',
+                   'Positioning',
+                   'Stealth & Ambush',
+                   'Chase',
+                   'Cover',
+                   'Equipment Slots',
+                   'Advancement',
+                   'Important Rule'],
+ 'equipment.md': ['The Default: Dress However You Want',
+                  'What Equipment Does',
+                  'Weapon and Armor Tiers',
+                  'Currency',
+                  'Pacing — How Fast Gear Should Arrive',
+                  'Pricing Consumables',
+                  'More Fastball Ideas (Unnamed on Purpose)',
+                  'Artifacts',
+                  'Building Items As Standard Practice'],
+ 'gm-guide.md': ['The Basic Job',
+                 'Running Locations',
+                 'Building Enemies',
+                 'Using the Oracle',
+                 'Pacing Sessions',
+                 'When to Call for Rolls',
+                 'Death & Consequences',
+                 'A Note on the Unheld'],
+ 'initiative-shift-examples.md': ['Example 1 — An ordinary shift',
+                                  'Example 2 — A negative shift that overshoots',
+                                  'Example 3 — A positive shift landing exactly on the '
+                                  "marker's slot",
+                                  'Example 4 — A negative shift landing exactly on the '
+                                  "marker's slot",
+                                  'Example 5 — Reshifting a token that already has a pending '
+                                  'chip',
+                                  'What These Examples Demonstrate',
+                                  'Related Documents'],
+ 'items.md': ['Briarwatch',
+              'The Hollow Below Briarwatch & Turnroot Weald (shared)',
+              'Turnroot Weald',
+              "Vulture's Nest",
+              'Fog Basin',
+              'Capital of Eclipseria',
+              'Kaine (Storm Seat Artifact)',
+              'No Fixed Source',
+              'The Silent Choir',
+              'Underground Bazaar — no items, by design',
+              'Who Trades With Whom'],
+ 'out-of-combat.md': ['Core Resolution',
+                      'Advantage & Disadvantage',
+                      'Checks',
+                      'Saves',
+                      'Resting',
+                      'Perception'],
+ 'people.md': ["Name — What They Are, and What They're Called",
+               'Price — Declaring a Price',
+               'Distance — What a Person Can Never Have',
+               'Related Documents'],
+ 'places.md': ["Name — What It Is, and What It's Called",
+               'Price — The Pressure Track',
+               'Distance — What a Place Can Never Be',
+               'Related Documents'],
+ 'player-guide.md': ['The Stats',
+                     'Positions',
+                     'Turn Structure',
+                     'Initiative & The Wheel',
+                     'Attack Resolution',
+                     'Damage Pipeline',
+                     'Reading Your Cards',
+                     'What It Looks Like',
+                     'Keywords',
+                     'Status Cards',
+                     'Collapse & Death',
+                     'Fleeing, Chasing, and Stealth',
+                     'Ongoing & Simultaneous Effects',
+                     'You Are Not Your Own Ally',
+                     'Core Resolution',
+                     'Advantage & Disadvantage',
+                     'Checks vs. Saves',
+                     'Perception',
+                     'Resting',
+                     'Equipment',
+                     'What You Showed Up With',
+                     'The Oracle (End of Session)'],
+ 'river-fishing.md': ['Running It', 'Why It Works', 'Related Documents'],
+ 'the-summons.md': ['What Was Done to Make Anything',
+                    'Where You Will Arrive',
+                    'The First Cut in You — Name',
+                    'The Second Cut in You — Price',
+                    'The Third Cut in You — Distance',
+                    'How to Look at Anything',
+                    'What This Costs Me',
+                    'Come Anyway']}
+
+
+def check_rules_sections():
+    """Every rules file still holds the sections it is supposed to hold."""
+    bad = []
+    for name, expected in sorted(SECTION_INVENTORY.items()):
+        path = f'rules/{name}'
+        if not os.path.exists(path):
+            bad.append(f'{path} is gone; it held {len(expected)} sections')
+            continue
+        actual = re.findall(r'^## (.+)$', open(path, encoding='utf-8').read(), re.M)
+        for missing in [s for s in expected if s not in actual]:
+            bad.append(f'{path}: section "{missing}" is gone — deleted, renamed or moved?')
+        for added in [s for s in actual if s not in expected]:
+            bad.append(f'{path}: section "{added}" is new — add it to SECTION_INVENTORY')
+    total = sum(len(v) for v in SECTION_INVENTORY.values())
+    return report('rules sections intact', bad,
+                  f'{total} sections across {len(SECTION_INVENTORY)} files')
+
+
 def check_rules_jurisdiction():
     """rules/README.md records which file owns which topic (Drew, 2026-08-18,
     Phase 1 of splitting rules/). A map is only worth having while it is
@@ -940,6 +1105,7 @@ def main():
     check_hp_formula()
     check_restatements()
     check_rules_jurisdiction()
+    check_rules_sections()
     check_entry_structure()
     check_bucket_lists(canon)
     check_card_conservation()

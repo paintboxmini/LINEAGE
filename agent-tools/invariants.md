@@ -25,6 +25,7 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Max HP equals `(3 × Body) + Soul + Mind` unless explicitly bespoke | `check_stat_blocks` |
 | Every file restating a mechanical fact states the same value | `check_restatements` |
 | Every file in `rules/` has a declared owner, and the map names no file that is gone | `check_rules_jurisdiction` |
+| Every rules file still holds the sections it held | `check_rules_sections` |
 | Every card named in a deck resolves to a real card, in the right colour | `check_decks` |
 | **A check reads everything it claims to read** | coverage assertions in `check_decks`, `check_stat_blocks` |
 | Every card appears in at least one bucket | `check_bucket_lists` |
