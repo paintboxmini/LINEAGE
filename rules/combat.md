@@ -48,17 +48,19 @@ A creature's own entry says whether it is Unguarded and what ends it.
 
 ## Chase
 
-When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.
+When someone flees and someone else gives chase, track one thing: **the distance between them.** The fiction sets where it starts — right on their heels, a corridor away, a roof apart. There is no board and no fixed length; only the gap matters.
 
-**Set up:** Estimate how many exchanges of movement currently separate them — that's the fleeing party's starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party's start; extend it if the head start is larger.
+**Each exchange:** a contested roll. Soul is the obvious stat and any arguable one works (`rules/out-of-combat.md`). The winner moves the distance one step their way. Discard a card whose name fits the action → Advantage.
 
-*Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.*
+**Escaped — the distance reaches 4.** They are out of sight. The pursuer may try to follow the trail afterward: a check, DC set by the GM for terrain and time elapsed.
 
-**Each exchange (6 seconds):** Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.
+**Contact — the distance reaches 0.** The chase ends, and nothing else is decided by it. Contact grants no free attack. The pursuer chooses what they were chasing for:
 
-**Caught** — The pursuer's marker reaches the fleeing party's marker.
+- **Fight.** Roll initiative and resolve normally.
+- **Subdue.** A contested check to grab, tackle or pin rather than harm.
+- **Anything else.** An item, a skill, a word — whatever they actually wanted.
 
-**Escaped** — The fleeing party's marker reaches the end of the track. They've maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Reason check, DC set by GM based on terrain and time elapsed).
+**The starting distance is the whole difficulty dial.** A chase run at even odds escapes about as often as the starting gap is large: one step apart and the pursuer wins three times in four, two steps is even, three steps and the runner gets away three times in four.
 
 ---
 

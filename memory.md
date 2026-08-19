@@ -115,6 +115,16 @@ Inside one fight the two are identical, so nothing rebalances. What changes is t
 
 It also separates the two kinds cleanly, which the old phrasing did not: **Armour X and Thorns are persistent** and never expire, so refresh never applies to them; Evade, Resist, Protect, Ward and Deadly are consumable and do.
 
+## A Chase Tracks the Gap, and Contact Decides Nothing
+
+Drew, 2026-08-18: *"no explicit track length needed. all that needs tracked is relative distance. the fiction determines the starting distance apart... a chase where they have no space between them is 'captured'. but captured isn't automatic."*
+
+The old two-marker track was broken in a way its own example demonstrated: *"right on your heels = both at 0"* satisfied the catch condition (*"the pursuer's marker reaches the fleeing party's marker"*) before a single roll, and a pursuer winning from a gap of zero moved *past* the fleeing marker into a state the rule gave no meaning to. Simulated at even odds it also ran 86% / 75% / 39% in the pursuer's favour at the three documented starting gaps — a chase was mostly a formality.
+
+Tracking only the gap fixes both and makes the odds legible: with absorbing ends at 0 and 4, **escape probability is simply the starting gap over 4.** One step apart is 25%, two is even, three is 75%. The GM sets difficulty by setting distance, and can read the number off without a table.
+
+**Contact grants no free attack, and that was a decision rather than an omission.** Drew asked whether the chaser should get an ambush-style attack before initiative. No: Ambush and Unguarded both pay out for *arriving unseen*, and a fleeing character knows exactly who is behind them — granting the ambush package here would make the word cover two different mechanics, in the same session that split Unguarded off so it wouldn't. It would also collapse the choice the rule exists to create: if the free hit is automatic, *fight or subdue* stops being a decision. The lighter lever, if contact ever needs to feel more decisive, is giving the pursuer the first turn rather than a free hit.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

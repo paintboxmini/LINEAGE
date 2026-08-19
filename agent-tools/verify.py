@@ -565,6 +565,12 @@ CLAIMS = {
         {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
          'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
     ),
+    'chase — escape distance': (
+        [r'distance reaches (\d)\.\*\* They are out of sight',
+         r'\*\*Distance (\d) = escaped\*\*',
+         r'\*\*Reach (\d) and you\'re gone\*\*'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
     'Take Cover — the keyword it grants': (
         # Cover has no number to compare, so the checkable fact is which keyword
         # it grants. Every file with a Take Cover action row must name the same
