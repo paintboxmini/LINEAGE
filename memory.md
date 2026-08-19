@@ -153,6 +153,28 @@ The other half is a real choice rather than a free lunch: a side facing an Ungua
 
 **GRAPPLE and SUBDUE were named backwards** (Drew, same day): grapple is the general action — a contested check to grab, tackle or pin — and `cards/subdue.md` is its specialised card embodiment. The card was renamed; the action now carries the plain word.
 
+## Maxing a Stat Is Priced, Except Mind
+
+Drew, 2026-08-18, on whether Advancement needs a numeric stat cap: *"I still think that maxing a single stat already has a built in flaw in rps."* Measured rather than argued, with `combatsimulations/stat_spread_lab.py`. **The intuition holds for two stats out of three, and the exception is the useful part.**
+
+Piling three advancement points into one stat (total 12) against a spread 4/4/4, both sides on balanced decks and both orderings run:
+
+| Piled | HP | tactician | punisher |
+|---|---|---|---|
+| Body 8/2/2 | 28 | 41.2% | 44.6% |
+| **Mind 2/8/2** | 16 | **60.8%** | **60.8%** |
+| Soul 2/2/8 | 16 | 31.7% | 27.9% |
+
+**Body loses while holding 28 HP against 24, which is the clearest evidence the pricing is real.** Soul loses hardest. **Mind wins, and wins more as it grows** — 55–60% at the starting total of 9, 60.8% at 12.
+
+**The mechanism is hand size, and it is the one thing the RPS pillar cannot read.** A defender chooses blind from revealed-colour history, so every other advantage a specialist buys is a colour, and a colour is legible. Mind buys *options*: at Mind 8 you hold eight cards to your opponent's four, so you almost always have the counter colour available. Prediction cannot punish a player who holds every answer.
+
+So the built-in flaw Drew described is real, and it is specifically a flaw in **damage** specialisation. Mind is not a damage stat in the same way — it is an information stat wearing a damage stat's clothes.
+
+**The separate finding, from the same lab:** leaning your *deck* into your maxed colour is punished far harder than the stat itself. Body/Red mono runs 37.9–41.7% against 45.4–48.8% for the same stats on a balanced deck. The trap is the deck the max tempts you to build, not the max.
+
+**Caveats, because the numbers are only as good as the model.** The simulator has no equipment or items, decks here are constructed rather than Oracle-grown, and the policies are heuristics — a bot holding eight cards may exploit them harder than a person would, which would inflate the Mind result specifically. An earlier run of this same question reported a cleaner "no specialist ever wins" result; it was wrong because it ran only one ordering for the balanced condition. Both orderings are summed now.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.
