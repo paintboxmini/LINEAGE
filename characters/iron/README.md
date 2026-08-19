@@ -2,12 +2,13 @@
 
 *Farmer. Owns the Western Property at Briarwatch — the one with the sinkhole in it. See `quests/hollow-below-briarwatch.md`.*
 
-*No stat block. Iron does not fight, and nothing in the encounter asks him to.*
+*No stat block. Iron does not fight, and nothing in the encounter asks him to — but he carries a deck; see `characters/iron/mechanics.md`.*
 
 ---
 
 ## Contents
 
+- [mechanics](mechanics.md)
 - [connections](connections.md)
 - [gm notes](gm-notes.md)
 - [profile](profile.md)
