@@ -943,7 +943,11 @@ def check_restatements():
                   f'{len(CLAIMS)} facts across {max(counts)} files')
 
 
-ENTRY_GLOBS = ('bestiary/*/*.md', 'characters/*/*.md')
+# playtesting/*/ added 2026-08-18 on merging character-design-inspection, which
+# moved characters/frost and characters/steele there. They are still entries with
+# stat blocks; check_stat_block_scope failed until this widened, which is exactly
+# the deliberate act it exists to force.
+ENTRY_GLOBS = ('bestiary/*/*.md', 'characters/*/*.md', 'playtesting/*/*.md')
 
 # Deck and stat-block validation covers bestiary/ AND characters/. It globbed
 # bestiary only from the day it was written until 2026-08-17, so 12 character

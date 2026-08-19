@@ -1,25 +1,30 @@
 # Wren
 
-*Promise community, Glasslight Reach. Parent — and partner, to whoever's household needs the description this session.*
+*Promise community, Glasslight Reach. Long-standing congregation member. Parent of Steve.*
 
 ---
 
-Believes, completely and without any sense of contradiction, that love means keeping the people you love safe from the one practice this whole community is built around. The Promise says the water shows you a truth. Wren has decided the people closest to them don't need that particular truth — not yet, not this year, maybe not ever — and has spent a long time making sure the question of bathing simply never quite comes up.
+Wren is not the leader of the congregation and has no place in the Final Current. They are simply one of the people who have lived the Promise long enough to know what the water asks of a person, and long enough to be afraid of what it might ask of their child.
 
-It doesn't look like control from the inside, or even from most angles outside. Wren speaks fluently in the language of care: *not tonight, you're tired* / *let's wait until you're steadier* / *I just don't think you're ready, and I'd rather be wrong about that than wrong the other way.* Every individual sentence is reasonable. The pattern, over years, is a slow closing of a door that was never announced as closing.
+For years Wren has delayed Steve's first ordinary bath. The language is always care and readiness: *not tonight, you're tired* / *let's wait until you're steadier* / *I just don't think you're ready, and I'd rather be wrong about that than wrong the other way.* The protection is specifically against the change the Unheld brings. Wren believes completely that love means keeping Steve safe from that change until Wren believes he can bear it.
 
-The people inside that household are, by most visible measures, well cared for. They are also never quite the ones who decide when they're ready for something that everyone else in the congregation gets to decide for themselves. Wren has never once framed this as control, and would be genuinely wounded — not performing the wound, actually wounded — by anyone who named it that plainly.
+It doesn't look like control from the inside, or even from most angles outside. Every individual sentence is reasonable. The pattern, over years, is a slow closing of a door that was never announced as closing. The household itself remains intact. Wren's fear is protective, not a rejection of Steve or a wish to break the family apart.
 
-**What Wren has decided to stop thinking about:** whether the fear underneath all of it is really about the water, or about what happens to a household once everyone in it is allowed to come back changed on their own schedule instead of Wren's.
+Wren has never framed this as control, and would be genuinely wounded — not performing the wound, actually wounded — by anyone who named it that plainly. Their refusal is quiet, careful, and fluent in the language of care.
 
-**The declaration made on someone else's behalf.** Wren said something, once, that functioned like a binding statement but wasn't Wren's to make — a promise about someone else's future, spoken as if consent were a formality rather than the entire question. If the world extracts a cost for a declaration like that the way it does for an honest one, nobody has worked out yet who's actually meant to pay it — the one who spoke it, or the one it was spoken about, on their behalf, without asking.
+Wren also once made a binding-style declaration about Steve's future without Steve's consent. The exact words are no longer important to Wren's memory; what matters is that Wren spoke as though Steve's future were theirs to hold shut. The declaration remains unpaid. Wren does not know whether its eventual cost will fall on them or on Steve.
+
+That old declaration becomes immediate when Steve says publicly that he intends to join a Final Current descent. Wren is present for that moment, and present again on the night Kaine runs the group platform. Wren does not become Final Current and does not stop being Steve's parent. The pressure is whether Wren can remain beside Steve when the future they once tried to protect him from becomes his choice to make.
 
 ---
 
 ## Contents
 
+- [GM Notes](gm-notes.md)
+- [Open](open.md)
+
 ## Related Documents
 
-- `factions/people-of-promise.md` — the ritual bathing this is all built around not having
-- `places/glasslight-reach.md` — the household, the congregation, the town's own careful volume
-- `characters/kaine/README.md` — a much louder, much more public version of deciding what's true on someone else's behalf
+- `factions/people-of-promise.md` — the ordinary ritual bathing Wren has delayed
+- `places/glasslight-reach.md` — Glasslight Reach and its careful volume
+- `characters/kaine/README.md` — the Final Current leader conducting the descent

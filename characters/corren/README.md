@@ -19,6 +19,7 @@ People found him warm, at first. Being seen that generously is rare. It curdled 
 ## Contents
 
 - [gm notes](gm-notes.md)
+- [open](open.md)
 
 ## Related Documents
 

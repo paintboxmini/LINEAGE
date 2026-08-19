@@ -24,7 +24,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `rules/` | Core rules and mechanics; `rules/README.md` records **which file owns which topic**. **One file per keyword** in `rules/keywords/`, one per status card in `rules/status-cards/`; `rules/card-glossary.md` is **generated** from those plus `rules/glossary-frame.md` — edit the sources, never the built file |
 | `places/` | Place overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
-| `scenes/` | Single prepared moments. One situation, the pressure it applies, and the decision it hands the table — smaller than a quest, and not a place. Each one states what stays open to play and deliberately refuses to resolve it |
+| `scenes/` | Single prepared moments — encounter beats, dialogue, staging. One situation, the pressure it applies, and the decision it hands the table; smaller than a quest, and not a place. Each one states what stays open to play and deliberately refuses to resolve it |
 | `bestiary/` | **One folder per creature.** `mechanics.md` holds the stat block, deck, passives, abilities and loot together; `profile.md` holds appearance and behaviour; other sections get their own file; `README.md` is the front door |
 | `characters/` | **One folder per character**, same shape as `bestiary/` — `mechanics.md`, `profile.md`, `README.md`, plus any other sections |
 | `items/` | Consumables and equipment |
@@ -47,7 +47,6 @@ Drew, 2026-08-12, the target shape for how the repository holds information — 
 - **Memory** (`memory.md`) — compact durable reasoning that still matters.
 - **Archives / design trails** (`archives/`) — what was discovered, considered, rejected, or consolidated, or moved.
 - **Changelog** (`changelog.md`) — the navigable record of what changed in the repository and why.
-- **Git history** — the ultimate byte-level rollback/reference layer.
 - **Backlog** (`unresolved-concerns.md`) — a debt index across Live Canon, Memory, and Agent tools, not its own source of truth.
 
 ## File Format Conventions
@@ -122,7 +121,7 @@ Log every ship in changelog.md — one entry, at the top, the moment it lands.
 1. **Orient** — Read `memory.md` and `unresolved-concerns.md` (the scannable index of open debt — flagged issues and deferred decisions; add a line when flagging one, delete it when resolved), then run `agent-tools/repo-orientation.md`. Understand structure before writing. Do not skip this even in a returning session.
 2. **Do the work** — read the relevant canon, think it through, write it. Review tools: `red-team.md` (mandatory before canon), `alignment-checker.md` (fit and tone), with the Design Principles in `agent-tools/design-principles.md` and relevant archive exemplars as the standards both measure against. The old generator layer stays archived in `archives/`.
    - **Building a new bestiary entry's deck:** before drafting cards, scan `bestiary/` for creatures whose cards already portray the same behavior (freeze-and-flee, reposition-and-flee, a particular debuff, etc.). Not a ban on reuse — a behavior can legitimately belong to more than one creature — but check first so a repeat is a deliberate choice, not an accident caught later by `red-team.md`'s Evolution check (mutation vs. duplicate) or missed entirely.
-   - **Staleness check, roughly every 5 substantial canon changes:** a session doing rapid iterative worldbuilding — retcons, portfolio splits, renames — accumulates stale cross-references and leftover facts fast, cheaper to catch in batches than to let it compound. Run a consistency sweep (a background `Explore`-type Agent works well for this) checking recent changes against the rest of the repo. Track the count across the session; don't wait for it to be requested. (2026-08-15, Drew.)
+   - **Staleness check, roughly every 5 substantial canon changes:** a session doing rapid iterative worldbuilding — retcons, portfolio splits, renames — accumulates stale cross-references and leftover facts fast, cheaper to catch in batches than to let it compound. Run a consistency sweep (a background `Explore`-type Agent works well) checking recent changes against the rest of the repo. Track the count across the session; don't wait for it to be requested. (2026-08-15, Drew.)
 3. **Clarify before executing** — only when something is genuinely ambiguous, not by default. Cover:
    - **Clarifications** — anything ambiguous in the brief that would change the output (session timing, party size, NPC relationship to party, encounter pressure level)
    - **Suggestions** — related content worth connecting, mechanical options Drew may not have considered
@@ -148,7 +147,7 @@ World
 
 What is true about Eclipsera.
 
-Setting facts, mythology, cosmology, history, locations, factions, Seats, Archons, and other truths about the world.
+Setting facts, mythology, cosmology, history, locations, factions, Seats, Archons, Resonance, and other truths about the world.
 
 Content
 
@@ -160,7 +159,7 @@ People, creatures, places, items, cards, encounters, and other instantiated game
 This section is an **agent working-memory preload**, not a second source of truth. The detailed rule files remain authoritative when precision or conflict requires checking. Keep the frequently needed baseline here so an agent does not have to re-read basic rules for every task.
 
 | Stat | Color | Perception Mode | Damage Die |
-|------|-------|-----------------|------------|
+|------|-------|------------------|------------|
 | Mind | Blue | Reason | d6 (utility) |
 | Body | Red | Senses | d8 (power) |
 | Soul | Green | Read | d4 (precision) |

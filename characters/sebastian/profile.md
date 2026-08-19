@@ -2,6 +2,8 @@
 
 ---
 
+Sebastian is human, cautious, and measured. Years away from Glasslight did not make the Mason work less solitary. He keeps his explanations narrow and his attention on the thing in front of him.
+
 ## The Chisels
 
 Sebastian's own working set carries six chisels, each individually Resonant, each aligned to a different Seat — not a blanket assignment, six separate resonances earned one at a time over however long he's carried them. The width/depth spectrum a chisel cuts on maps directly onto the character of the domain each one draws from:

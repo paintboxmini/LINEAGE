@@ -2,19 +2,20 @@
 
 *A sect within the People of Promise (`factions/people-of-promise.md`). Founded and led by Elder Kaine (`characters/kaine/README.md`), based in Glasslight Reach.*
 
-Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same platforms, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's two claims layered together. First: that *Return* — coming back alive from what doctrine only ever describes as final — is proof, not drift, and that the Last Bath's completion can be unlocked before death by anyone willing to go far enough. Second, and this one is a real change to the practice itself, not just a story told about it: **he doesn't stop at once.** Normal custom is a single bath, a rite of passage, lived with afterward (`factions/people-of-promise.md`, Ritual Bathing). One time isn't enough for Kaine — if it didn't take, or didn't take enough, the answer is always another bath.
+Kaine's sect. Operates within the Promise community — not visibly separate from it at first glance. Uses the same ritual bathing the wider congregation already practices, the same language. **His actual crime isn't the bathing — the congregation was already doing that before he made it his platform** (`factions/people-of-promise.md`, The Last Bath). It's two claims layered together. First: that *Return* — coming back alive from what doctrine only ever describes as final — is proof, not drift, and that the Last Bath's completion can be unlocked before death by anyone willing to go far enough. Second, and this one is a real change to the practice itself, not just a story told about it: **he doesn't stop at once.** Normal custom is a single bath, a rite of passage, lived with afterward (`factions/people-of-promise.md`, Ritual Bathing). One time isn't enough for Kaine — if it didn't take, or didn't take enough, the answer is always another bath.
 
 People who come back fluid go back in. Again, and again, if it still hasn't "taken." More baths, in his theology, means more unlocking — never a reason to stop, only a reason to keep going until he likes what climbs out. The visible marks on his longest-devoted followers — the ones who've been under more times than anyone can casually count — read, to Kaine and to them, as proof rather than damage: animal eyes, patches of stone-like skin, moss where hair should grow, ears gone long and furred, a nose flattened dark like something that hunts by scent, claws, a tail on more than one of them. **Unlocked**, in his theology. Not wrong. Ahead.
 
-**The pitch.** Kaine doesn't argue doctrine with a new initiate. He shows them a body. Standing among his followers at a gathering, he gestures at whoever's changed the most visibly and says it plainly:
+## The Final Current Descent
 
-> *"Look around you, at the other members here today. If you want to unlock your true potential like these devouts, then it's time to take your bath."*
+The Final Current deliberately inverts the Orthodox Last Bath. Where the Orthodox form is **one body, one-way, and final**, Kaine lowers **several living people together on a shared platform** and brings them back. If the descent has not "taken" enough, they can be lowered again. Repetition is part of the practice, not an accident of circumstance.
 
-The grin that goes with it is too large for the sentence.
+The shared descent is intentional theology. Kaine teaches that unlocking is stronger when people undergo it together — a shared movement toward what the Promise has always promised, accelerated by the Current rather than awaited individually. The platform is therefore a ritual form in its own right, not merely a convenient way to handle several bathers.
 
-**Steve** is a new initiate who hasn't bathed yet when the party encounters him — he gets exactly this pitch, unsettled by the grin, and backs out. No Current bath under Kaine. Steve is never his success story — his later, separate decision to take the ordinary first bath has nothing to do with Kaine at all (`characters/steve-and-pip/README.md`).
+On the key platform descent in the Tide Pulls Back sequence, Kaine himself leads the ceremony and handles the ropes. Vesper Thorn, Rook, Lirren, and other devoted members are present. The gathering is large enough that open combat is an expensive choice rather than a clean solution.
 
----
+The Final Current still carries its earlier repeated-bath doctrine and its visible unlock marks. The change is not presented as a rejection of the Promise's ritual. It is presented by Kaine as the Promise finally being practiced honestly.
+
 ---
 
 ## Related Documents

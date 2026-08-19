@@ -46,14 +46,14 @@ She describes The Final Current's practices: Kaine's claim that coming back from
 **What Mirel knows:**
 - Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
-- Steve — a new initiate, hasn't bathed, harmless-seeming — still hangs around Kaine's people without being one of them anymore. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine/README.md`, The Pitch) — and watched Steve go pale and back out of it on the spot. No Current bath under Kaine. He just hasn't found anywhere else to be yet.
+- Steve — a young man she knows from around the congregation — is curious about the Final Current and has been hanging around its edges. She finds him difficult to take seriously, though her interest in him is more personal than the description quite admits. He has not yet refused Kaine's ceremonial invitation, and the party has not seen that moment yet.
 
 **What Mirel doesn't know:**
 - The Lightning Loop is a Storm Seat resonant item
 - Kaine's mid-term goal is the entire Promise community
 
-**GM — Steve's foolish act:**
-At some point during this scene or shortly after, Steve does something notably foolish in the party's presence. The specifics are table-dependent — it should be the kind of thing that makes him memorable for entirely the wrong reasons. The party will underestimate him for the rest of this adventure. That's the point.
+**GM — Steve and Mirel:**
+Early in the Tide Market stretch, Steve makes a clumsy attempt to ask Mirel out. He loses the thread of the attempt and pivots into self-deprecating humor. Mirel laughs for real. Neither has named the attraction developing between them. See `scenes/tide-market-steve-mirel.md`.
 
 ---
 
@@ -81,7 +81,7 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 
 **What they find:** a carved-out space in the cliff, Promise iconography mixed with something that reads as older and less gentle. A gathering space. Kaine's followers here are true believers — people who have come back from hard bathings and emerged certain. They are not villains. They are people who found the accelerated dissolution and decided it was what they'd been looking for.
 
-**Steve is here.** Not being prepared for anything — just present, the way he's present wherever Kaine's people gather, since he backed out of the bathing and never found anywhere better to stand. He is not asking any of the right questions about why he's still around. The party may try to get him to leave. He will thank them and not actually leave. He is Steve.
+**Steve is here.** He has been curious about the Final Current and keeps turning up around its edges. He has not yet refused Kaine. He may be present when the party reaches the gathering, but the earlier pitch-and-back-out sequence no longer occurs before the party arrives.
 
 **The Water Trick:**
 If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
@@ -108,15 +108,25 @@ Stealth or direct: getting into Kaine's inner space to find what he's actually p
 
 ---
 
+## Platform Night — The Group Descent
+
+The Final Current conducts its deliberate inversion of the Orthodox Last Bath: several living people descend together on a shared platform and are brought back, with repetition available if Kaine decides the unlocking has not taken enough. See `factions/the-final-current.md` and `scenes/platform-night.md`.
+
+Kaine leads the ceremony himself and handles the ropes. Vesper Thorn, Rook, Lirren, and other devoted members are present. Sael is with the ordinary congregation and is not on this platform. Open combat is an expensive choice rather than a clean solution.
+
+**Steve is on the platform. Wren and Mirel are present.** The ropes begin to lower.
+
+Kaine's ceremonial language is the pitch. There is no earlier private pitch-and-refusal that has already happened. Steve's refusal, if it occurs, belongs to this moment and is tied to player action.
+
+Wren's presence carries the other pressure in the scene. Wren once made a binding-style declaration about Steve's future without Steve's consent. Its cost remains unpaid and its eventual bearer is unknown. It may press here, but do not resolve it automatically.
+
+**Player decision point:** The party can speak, intervene, watch, or take a side. Leave the descent and its consequences open.
+
+---
+
 ## Climax — The Full Tide Ceremony
 
-The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below, the ritual bathing platform being lowered. Kaine's followers are positioned throughout the crowd.
-
-**Steve is here.** In the crowd, near Kaine's followers without being one of them, watching the ceremony with the focused attention of someone trying to look like he still belongs there. He has not bathed. He isn't waiting for his turn — there isn't one coming. He's just watching, the way he watches everything.
-
-The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
-
-Then Kaine raises his finger.
+The later Full Tide ceremony remains the arc's larger public confrontation. Promise faithful gather at the cliff edge, Kaine's followers are positioned throughout the crowd, and the Lightning Loop's true power becomes the immediate threat.
 
 **Encounter 4 — Kaine**
 
@@ -141,7 +151,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **The Promise community:** shaken. Kaine's followers have to reckon with what the miracle was. The moderates have to reckon with how far it got before anyone noticed. The Masons — quietly — have to assess the glyph situation.
 
-**Steve:** still in the crowd somewhere. Still Steve. He never bathed under Kaine and never will. His own, ordinary bathing — normal custom, nothing to do with any of this — is a different story entirely.
+**Steve:** his Final Current choice now belongs to the platform night rather than an earlier private pitch. His ordinary bath remains downstream and separate from Kaine's sequence.
 
 *His arc continues later — see `characters/steve-and-pip/README.md`.*
 
@@ -155,7 +165,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **The water trick:** let the party drink it if they want. The 1 HP heal landing on a party member who was skeptical is worth more than any explanation.
 
-**Steve:** do not make him competent. Do not make him interesting. The joke only works if he is genuinely Steve until he suddenly isn't.
+**Steve:** do not pre-resolve his refusal. He can be easy to underestimate, and his forgetfulness is the character trait that should remain visible, but the platform decision belongs to the players and the moment.
 
 ---
 
