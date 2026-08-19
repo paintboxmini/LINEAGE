@@ -192,6 +192,8 @@ Reduced to 0 HP → **Collapse.** You go to the ground, and you are **Down** unt
 
 While Down you cannot attack, cannot change position, and cannot defend — so attacks against you land automatically. You can still be healed back into the fight, and recover 1d4 HP every 3 in-game hours if left alone.
 
+**Prone** — you're on the ground. You can't change position, and standing up costs your Action. Nothing else changes: you attack and defend normally. Collapse is the only thing that puts you there right now.
+
 **Healing does not stand you up.** It ends the Collapse; getting off the ground costs your action on your turn, and you act normally from the turn after that. A revived ally is alive and still a turn away from being useful — which is why catching someone *before* they go down is worth more than picking them up after.
 
 If the whole party goes down, the GM decides the outcome from the enemy's own nature and intent — death is possible, not automatic. Captivity, humiliation, forced retreat, and stranger fates are all real options. The GM can also declare instant death outright when the fiction genuinely demands it (a beheading, a fall into the void) — a rare override, not a default.

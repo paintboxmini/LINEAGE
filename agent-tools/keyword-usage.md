@@ -22,6 +22,7 @@ How many of the 347 cards in `cards/` apply each keyword defined in `rules/keywo
 | Anchored | 13 | 4% |
 | Vulnerable | 10 | 3% |
 | Exile | 7 | 2% |
+| Flatten | 7 | 2% |
 | Counter Attack | 6 | 2% |
 | Armour X | 5 | 1% |
 | Quick | 5 | 1% |
@@ -57,3 +58,4 @@ Eight cards or fewer — the thin parts of the design space, listed by name beca
 - **Sealed** (5) — BORROWED POWER, PREDICT, SEALED CHORD, SIPHON, VOID
 - **Counter Attack** (6) — BREAK, CHAIN REACH, DEFLECT, SACRIFICE STRIKE, SEISMIC REDIRECT, SHIELD BASH
 - **Exile** (7) — BURN BRIGHT, FORGET, FRACTURE, PRECISE REMOVAL, SHED SKIN, SILENCE THE THREAD, THORN LARDER
+- **Flatten** (7) — CAMOUFLAGE SHIFT, DEPTH SLAM, DISSOLVE CONTACT, ENVELOPING PRESS, FLATTEN, INK BURST, SURGE

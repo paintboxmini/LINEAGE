@@ -51,6 +51,13 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 
 **A status card that is exiled is destroyed instead** — it never comes back.
 
+**Flatten**
+A posture, not an effect. A Flattened creature is pressed flat to the ground or the riverbed, and Flatten by itself confers nothing — every card that grants it states what it gives, and every card that ends it is the creature rising to strike.
+
+Cards may grant Flatten, end it, or check for it. It persists until something ends it or combat does.
+
+*Currently the Flapjack Octopus's kit alone (`bestiary/flapjack-octopus/README.md`), across eight cards: FLATTEN, CAMOUFLAGE SHIFT and DISSOLVE CONTACT grant it, DEPTH SLAM, ENVELOPING PRESS, INK BURST and SURGE end it, MIMICRY PULSE reads it. Not the same state as Prone (`rules/combat.md`), which is being knocked down rather than choosing to press flat.*
+
 **Immunity**
 The next attack that would successfully hit you fails completely instead — no damage is dealt, no Effect resolves. It is checked once the attack has succeeded, so an attack that fails on its own does not consume it. The attacker's card is discarded as normal. One use; expires the instant it triggers.
 

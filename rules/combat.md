@@ -332,13 +332,24 @@ If an attack reduces you to **0 HP**, you Collapse.
 
 You are on the ground. That is literal, and it stays true until you spend an action getting up.
 
+### Prone
+
+You are on the ground.
+
+- You cannot change position.
+- Standing up costs your Action (see the action table above).
+- Nothing else changes. You attack and defend normally.
+
+Collapse is the only thing that knocks a combatant Prone today; the state is written down so that anything which does it later has one place to point at. Prone is not Flatten (`rules/keywords/flatten.md`) — that is a creature choosing to press flat, and it restricts nothing.
+
 ### While Down
 
 You are Down from the moment you Collapse until you stand. Healing above 0 HP ends the Collapse — it does not stand you up.
 
+**Down is Prone, and more:**
+
 - You cannot attack.
 - You cannot defend, so any attack targeting you lands automatically.
-- You cannot change position.
 - You may be healed back into combat.
 - Every **3 in-game hours** spent Collapsed, recover **1d4 HP**.
 
