@@ -37,7 +37,7 @@ Melee requires both of you in the Frontline. Everything else is Ranged range.
 
 **Rushdown** — an action that drags a Backline *enemy* into the Frontline. Can't target allies. You must be in the Frontline yourself to use it.
 
-**Cover** — an action, Backline only, and the fiction has to justify it (something to actually hide behind). It's **Anchored — Evade**: one the moment you take cover, one more at the start of each of your turns. It ends the instant you attack, and it ends if anything moves you out of the Backline or you Collapse.
+**Cover** — an action, Backline only, and the fiction has to justify it (something to actually hide behind). It's **Anchored — Evade**: one the moment you take cover, one more at the start of each of your turns. It ends the instant you attack — meaning a card *you* play as the attacker; a Counter Attack or Thorns doesn't break it, since both happen while you're defending. It also ends if anything moves you out of the Backline, or if you Collapse.
 
 **Confined spaces** — in tight terrain the GM may cap how many fit in a position, or block targeting entirely if something physically blocks the way.
 
