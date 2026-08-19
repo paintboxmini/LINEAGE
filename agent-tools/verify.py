@@ -969,6 +969,53 @@ def _stat_files():
     return out
 
 
+def check_stat_block_scope():
+    """Every stat block in the repo is inside the scope that validates them.
+
+    The coverage assertions in check_decks and check_stat_blocks compare what
+    they parsed against what exists *within their own glob* — so if an entry
+    moves out of that glob entirely, both numbers fall together and the check
+    stays green while validating less. That is precisely how narrowing a glob
+    silently dropped 6 of 37 decks on 2026-08-17, and it is about to happen
+    again: the character-design-inspection branch moves characters/frost and
+    characters/steele to playtesting/, taking two stat blocks with them.
+
+    So this one counts from outside. It looks for stat blocks anywhere in the
+    repo and fails on any that ENTRY_GLOBS does not cover, naming the file.
+    Widening ENTRY_GLOBS is then a deliberate act rather than a silent loss."""
+    scoped = set(_stat_files())
+    bad = []
+    for path in sorted(glob.glob('**/*.md', recursive=True)):
+        # Record layers are exempt, canon layers are not, and the line between
+        # them is structural rather than a list of filenames. archives/ is a
+        # record wholesale. Under playtesting/, a *flat* file is a session log —
+        # live-test-2v2.md carries four stat blocks with "currently 10" beside
+        # them, which are snapshots of play and not canon to validate. A
+        # *subfolder* there is an entry, and entries stay in scope wherever they
+        # live: the character-design-inspection branch is about to move
+        # characters/frost and characters/steele into playtesting/, and blanket-
+        # exempting the directory would hide exactly what this check is for.
+        if path.startswith('archives/'):
+            continue
+        if path.startswith('playtesting/') and path.count('/') == 1:
+            continue
+        # "In scope" means covered by *some* check, not by one particular glob.
+        # check_restated_stat_blocks validates the top-level files in
+        # RESTATED_DIRS against their bestiary source, so a restated block there
+        # is already checked and is not a hole.
+        if path.count('/') == 1 and path.split('/')[0] in RESTATED_DIRS:
+            continue
+        text = open(path, encoding='utf-8').read()
+        n = len(re.findall(r'^\*\*Mind \d+ / Body \d+ / Soul \d+', text, re.M))
+        if n and path not in scoped:
+            bad.append(f'{path}: {n} stat block(s) outside ENTRY_GLOBS — nothing validates them')
+    total = sum(len(re.findall(r'^\*\*Mind \d+ / Body \d+ / Soul \d+',
+                               open(p, encoding='utf-8').read(), re.M))
+                for p in scoped)
+    return report('every stat block is inside the validated scope', bad,
+                  f'{total} blocks in scope')
+
+
 def check_entry_structure():
     """Structural invariants for bestiary/ and characters/ entry folders.
 
@@ -1185,6 +1232,7 @@ def main():
     check_rules_jurisdiction()
     check_rules_sections()
     check_action_tables()
+    check_stat_block_scope()
     check_entry_structure()
     check_bucket_lists(canon)
     check_card_conservation()
