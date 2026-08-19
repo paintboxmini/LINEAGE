@@ -75,6 +75,16 @@ That gives the compression rule its missing counter-pressure, and it generalizes
 
 ---
 
+## A Status Belongs to Its Target, Not Its Source
+
+Drew, 2026-08-18: *"once a status is applied, it leaves the caster and becomes attached to the target. so removing the caster doesn't remove a resolved status. I think that's how it should stay too."*
+
+The reason is snowballing. If dropping a combatant also stripped every status they had applied, the first collapse in a fight would pay out twice — once by removing an actor, again by refunding all their pressure. The team already winning would win harder for the same action, and fights would decide themselves earlier than the cards did.
+
+Worth keeping because it is the kind of rule that gets reintroduced by accident rather than on purpose. It was: the first draft of the status-tracking rule said *"the card and the effect end together"* while also placing the card in front of the caster, which reads as caster removal ending their effects. Nobody designed that; it fell out of describing the physical tracker as though its location meant ownership.
+
+**The engine was already right.** Statuses are plain counters on the combatant holding them, with no reference to who applied them, so caster removal cannot reach them — confirmed empirically, not just read. The only collapse-time cleanup is `_clear_ongoing_on_collapse`, and it clears Anchored-type effects on the collapsing combatant's *own* list, which is Anchored's own rule about its holder rather than anything about casters.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

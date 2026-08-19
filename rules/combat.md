@@ -242,7 +242,11 @@ That is not only convenience. The card is out of its owner's rotation the whole 
 - **A count that changes.** A card granting a numbered status keeps showing its printed number no matter what happens to it. Take that many tokens when it lands and remove one each time the number goes down — whether the status is spent a use at a time or counts down a turn at a time. The card stays put; the tokens carry the remainder.
 - **No card behind it at all.** A creature passive, an item, or the terrain can grant a status with nothing to set down. Here the status exists as tokens alone — the one case where it does, because there was never a card to leave anyone's rotation.
 
-**The card and the effect end together**, and the tokens go with them. A status that came from a card never outlives that card, and never ends before it — nobody may pick a card back up to cancel an effect early. Tokens record state; they never hold it. Any status can be tracked this way — there is no list of which ones qualify.
+**A status belongs to whoever it landed on.** Once it resolves it stops being the caster's and becomes the target's. If the player who played the card Collapses, flees, or leaves the fight, every status they applied stays exactly as it is — the card stays out of rotation, the tokens stay on their targets. **A status is not maintained by its source.**
+
+**The effect ends on its own stated condition, and only then does the card go to the discard.** That direction is one-way: an effect ending sends the card away, but moving the card never ends an effect. Nobody may pick a card back up to cancel one early. Tokens record state; they never hold it. Any status can be tracked this way — there is no list of which ones qualify.
+
+*Anchored looks like an exception and is not. It ends when the combatant sustaining it moves or Collapses (`rules/keywords/anchored.md`) — that is the holder's own condition, written into the keyword, not the caster being removed.*
 
 *Not to be confused with the turn markers on the initiative wheel (Initiative, above), which are also called tokens. Status tokens are a different object and never move around the wheel.*
 
