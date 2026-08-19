@@ -494,12 +494,20 @@ def check_hp_formula():
         if len(matches) > 1:
             bad.append(f'{path}: states multiple different HP formulas: {sorted(matches)}')
         seen[path] = matches
-    canonical = seen.get('rules/core-rules.md')
-    if canonical:
+    # Canonical moved from rules/core-rules.md to rules/character-creation.md on
+    # 2026-08-18, when core-rules was reclassified as a voice rather than an
+    # owner (rules/README.md). A voice cannot be the source of a fact — and
+    # character-creation.md already stated the formula in fuller form, with the
+    # 3x Body weighting explained, while core-rules carried it as a table cell.
+    CANON = 'rules/character-creation.md'
+    canonical = seen.get(CANON)
+    if not canonical:
+        bad.append(f'{CANON} is the canonical source and states no HP formula')
+    else:
         for path, matches in seen.items():
-            if path != 'rules/core-rules.md' and matches != canonical:
+            if path != CANON and matches != canonical:
                 bad.append(f'{path}: HP formula {sorted(matches)} != '
-                           f'canonical {sorted(canonical)} (rules/core-rules.md)')
+                           f'canonical {sorted(canonical)} ({CANON})')
     return report('HP formula consistent across canonical files', bad,
                   f'{len(seen)} files checked')
 
@@ -556,6 +564,18 @@ CLAIMS = {
          r'hand size is \*\*Mind\*\*, with a minimum of (\d+)'],
         {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
          'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
+    ),
+    'Range Matrix — the four legality rows': (
+        # Captured as one tuple, so any single cell flipping anywhere fails.
+        # The three copies were byte-identical in combat.md and core-rules.md
+        # but player-guide.md headed its column "You" instead of "Attacker" —
+        # one table, two vocabularies, in the thing whose whole job is being
+        # read the same way by everyone at the table. Unified 2026-08-18.
+        [r'\| Frontline \| Frontline \| (.) \| (.) \| (.) \|\n'
+         r'\| Frontline \| Backline \| (.) \| (.) \| (.) \|\n'
+         r'\| Backline \| Frontline \| (.) \| (.) \| (.) \|\n'
+         r'\| Backline \| Backline \| (.) \| (.) \| (.) \|'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
     ),
     'DC table — Easy/Normal/Hard/Extreme': (
         [r'\| Easy \| (\d+) \|\n\| Normal \| (\d+) \|\n\| Hard \| (\d+) \|\n\| Extreme \| (\d+) \|'],

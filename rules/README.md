@@ -12,11 +12,10 @@ So the rule is not "no duplication." It is: **duplication is allowed as a second
 
 | File | Owns |
 |------|------|
-| `combat.md` | Everything that happens in a fight — attack resolution, turn structure, initiative, positioning, ongoing effects, Collapse |
-| `core-rules.md` | Formulas and tables — the HP formula, the stat table, Difficulty Classes, the Range Matrix |
+| `combat.md` | Everything that happens in a fight — attack resolution, turn structure, initiative, positioning and the Range Matrix, ongoing effects, Collapse |
 | `cards.md` | What a card is and how to read it — anatomy, Attacker/Defender vs. Target, deck building |
-| `out-of-combat.md` | Checks, saves, Advantage, Perception, and resting — everything resolved outside a fight |
-| `character-creation.md` | Making a character and advancing one — stats, starting deck, hand size, the Oracle |
+| `out-of-combat.md` | Checks, saves, Advantage, Perception, resting, and the Difficulty Class table — everything resolved outside a fight |
+| `character-creation.md` | Making a character and advancing one — the stat table, the HP formula, starting deck, hand size, the Oracle |
 | `equipment.md` | Gear and the gear economy — tiers, currency, pricing, pacing |
 | `card-glossary.md` | Keyword and status-card definitions. **Generated** from `keywords/`, `status-cards/` and `glossary-frame.md` — edit those |
 | `items.md` | The item catalog, indexed by source |
@@ -28,9 +27,12 @@ So the rule is not "no duplication." It is: **duplication is allowed as a second
 
 | File | Restates |
 |------|----------|
+| `core-rules.md` | Everything, compressed — the table-side quick reference. Owns nothing |
 | `player-guide.md` | Everything a player needs, in player prose. The printed artifact, with `the-summons.md` |
 | `gm-guide.md` | Everything a GM needs, in GM prose |
 | `the-summons.md` | The Oracle's summons — fiction, not rules. Printed |
+
+`core-rules.md` was an owner until 2026-08-18 and is a voice now (Drew's call). It has 15 sections and only three were ever formulas or tables; the other twelve are compressed restatements. Classifying it as an owner made those twelve jurisdiction violations, and the fix could not be pointers — a quick reference that only points is the same broken thing as a player guide that only points. Compression *is* its job. Nothing had to move: every table it nominally owned already lived on a topic owner in fuller form, `character-creation.md` stating the HP formula better than core-rules' table cell did. `check_hp_formula`'s canonical source moved with it.
 
 A voice may restate any owner's rule. It may not introduce one. If a voice says something no owner does, that is the defect — either the owner is missing it, or the voice invented it.
 

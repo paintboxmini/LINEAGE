@@ -206,7 +206,7 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 ### Rushdown
 
-Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
+The one action that moves someone else between positions. Defined in `rules/keywords/rushdown.md`; it appears in the action table above.
 
 ### Interact & Position
 

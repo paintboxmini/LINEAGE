@@ -24,10 +24,10 @@ A card's color determines which stat powers its damage, no matter which stat is 
 
 Every combatant is in the **Frontline** or the **Backline**. Each side of the fight has its own Frontline and Backline — the two Frontlines face off at the center; each side's Backline is its own rear position. Both are abstract zones; any number of characters can share one. Moving costs your action. Neither position gives automatic protection — the Frontline does not shield the Backline from being targeted.
 
-**Range Matrix** — which cards you can legally play, based on where you and your target stand:
+**Range Matrix** — which cards you can legally play, based on where you and your target stand. You are the Attacker row:
 
-| You | Target | Melee | Ranged | Both |
-|-----|--------|-------|--------|------|
+| Attacker | Target | Melee | Ranged | Both |
+|----------|--------|-------|--------|------|
 | Frontline | Frontline | ✓ | ✗ | ✓ |
 | Frontline | Backline | ✗ | ✓ | ✓ |
 | Backline | Frontline | ✗ | ✓ | ✓ |
