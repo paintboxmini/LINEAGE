@@ -24,6 +24,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | `rules/` | Core rules and mechanics; `rules/README.md` records **which file owns which topic**. **One file per keyword** in `rules/keywords/`, one per status card in `rules/status-cards/`; `rules/card-glossary.md` is **generated** from those plus `rules/glossary-frame.md` — edit the sources, never the built file |
 | `places/` | Place overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
+| `scenes/` | Single prepared moments. One situation, the pressure it applies, and the decision it hands the table — smaller than a quest, and not a place. Each one states what stays open to play and deliberately refuses to resolve it |
 | `bestiary/` | **One folder per creature.** `mechanics.md` holds the stat block, deck, passives, abilities and loot together; `profile.md` holds appearance and behaviour; other sections get their own file; `README.md` is the front door |
 | `characters/` | **One folder per character**, same shape as `bestiary/` — `mechanics.md`, `profile.md`, `README.md`, plus any other sections |
 | `items/` | Consumables and equipment |
@@ -71,6 +72,18 @@ One folder per entry. `README.md` carries the title, subtitle, a Contents list a
 ```
 **Cards:** `cards/out-of-reach.md`, `cards/slow-hands.md`
 ```
+
+### Scenes
+
+A scene is a prepared moment, not a plot. In this order:
+
+1. `# Title`
+2. **Pressure:** one line — what this moment forces, and on whom.
+3. The setup. Who is present, what is already true, what each person is holding. Written so a GM can run it cold.
+4. **Player decision point:** what the table decides, stated explicitly.
+5. **Refs:** the character and place entries it draws on.
+
+**A scene never resolves itself.** The decision point exists to be left open — *"do not pre-resolve it in the scene file"*, *"the choice remains Steve's"*, *"do not force the relationship forward"*. A scene that contains its own outcome has become a quest beat and belongs in `quests/` instead.
 
 ### Cross-References
 
