@@ -100,7 +100,7 @@ On your turn, you may take **one Action**, plus **one Item Action:**
 | Move Position | Shift between Frontline and Backline |
 | Use an Item | Activate an equipped or held item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
-| Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
+| Take Cover | Backline only; the fiction must justify it. Anchored — Evade. Ends when you attack or leave the Backline. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
@@ -216,7 +216,9 @@ Position determines what's within reach. A character can only interact with obje
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
-While in cover, you gain **Evade** (`rules/card-glossary.md`). Making an attack drops cover immediately.
+**Anchored — Evade.** You gain one Evade the moment you take cover, and another at the start of each of your turns while you hold it.
+
+Cover ends the instant you attack. It also ends on Anchored's own terms (`rules/keywords/anchored.md`): if you leave the Backline, whether you moved yourself or an enemy moved you, and if you Collapse.
 
 ### Confined Spaces
 

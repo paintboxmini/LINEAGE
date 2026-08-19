@@ -37,7 +37,7 @@ Melee requires both of you in the Frontline. Everything else is Ranged range.
 
 **Rushdown** — an action that drags a Backline *enemy* into the Frontline. Can't target allies. You must be in the Frontline yourself to use it.
 
-**Cover** — an action, Backline only, and the fiction has to justify it (something to actually hide behind). While in cover you gain Evade; attacking drops it immediately.
+**Cover** — an action, Backline only, and the fiction has to justify it (something to actually hide behind). It's **Anchored — Evade**: one the moment you take cover, one more at the start of each of your turns. It ends the instant you attack, and it ends if anything moves you out of the Backline or you Collapse.
 
 **Confined spaces** — in tight terrain the GM may cap how many fit in a position, or block targeting entirely if something physically blocks the way.
 
@@ -55,7 +55,7 @@ Each turn: **one Action, plus one Item Action.**
 | Move Position | Frontline ↔ Backline |
 | Use an Item | Activate something equipped or carried |
 | Rushdown | Pull a Backline enemy to the Frontline (must be Frontline yourself) |
-| Take Cover | Backline only, fiction-justified — gain Evade until you attack |
+| Take Cover | Backline only, fiction-justified — Anchored, Evade. Ends when you attack or leave the Backline |
 | Interact | Anything noncombat the fiction allows |
 | Wait | See below |
 | Flee | Attempt to leave the fight — see Fleeing Combat |

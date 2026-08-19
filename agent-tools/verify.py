@@ -565,6 +565,16 @@ CLAIMS = {
         {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
          'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
     ),
+    'Take Cover — the keyword it grants': (
+        # Cover has no number to compare, so the checkable fact is which keyword
+        # it grants. Every file with a Take Cover action row must name the same
+        # one. This is the shape to reuse for any rule expressed through a
+        # keyword rather than a value: if one voice is updated and another is
+        # missed, the stale file stops matching and fails as a COVERAGE error
+        # naming itself.
+        [r'\| Take Cover \|[^|]*?\b(Anchored)\b[^|]*\|'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
     'Range Matrix — the four legality rows': (
         # Captured as one tuple, so any single cell flipping anywhere fails.
         # The three copies were byte-identical in combat.md and core-rules.md

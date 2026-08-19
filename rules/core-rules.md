@@ -36,7 +36,7 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Move Position | Frontline ↔ Backline |
 | Use an Item | Activate a carried item |
 | Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
-| Take Cover | Backline only; fiction must justify it. Gain Evade until you attack. |
+| Take Cover | Backline only; fiction must justify it. Anchored — Evade. Ends when you attack or leave the Backline. |
 | Interact | Any noncombat action |
 | Wait | Take no action; reinsert yourself anywhere later in the order. Can't be used two turns in a row. See `rules/combat.md` |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
@@ -160,7 +160,7 @@ Discard a card whose name fits → Advantage.
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
-While in cover, you gain **Evade** (see `rules/card-glossary.md`). Making an attack drops cover immediately.
+**Anchored — Evade.** One when you take cover, one at the start of each of your turns after. Ends the instant you attack, if you leave the Backline by any means, or if you Collapse.
 
 ---
 
