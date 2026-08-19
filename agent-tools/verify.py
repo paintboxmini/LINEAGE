@@ -504,6 +504,110 @@ def check_hp_formula():
                   f'{len(seen)} files checked')
 
 
+# --- Restated mechanical facts -----------------------------------------------
+#
+# Phase 0 of splitting rules/ better (Drew, 2026-08-18). The survey that
+# prompted it found 20 headings appearing in two or more rules files and five in
+# three: rules/ carries three parallel restatements of the ruleset — the detailed
+# canon, core-rules.md's quick reference, and player-guide.md's printed player
+# voice — with nothing recording which one owns a given fact.
+#
+# This check does NOT decide ownership. That is Phase 1, and it is Drew's call.
+# It asserts only that every file stating a fact states the SAME fact, which is
+# true today and is what silently stops being true. When the jurisdiction map
+# lands, each claim gains a canonical file and the check also reports deviation
+# from it, the way check_hp_formula already does for the one fact that has one.
+#
+# Each pattern captures the part that can drift — a rounding direction, a die
+# size, a minimum — so a changed value fails as a DISAGREEMENT naming both files,
+# rather than failing to match and disappearing. And the file set each claim was
+# measured over is recorded below, so a reworded sentence fails as a COVERAGE
+# error instead of quietly leaving the check with less to check. That failure
+# mode has cost this repo more than the drift it guards against.
+
+RESTATED_SCOPE = [p for p in sorted(glob.glob('rules/*.md'))
+                  # glossary-frame.md is spliced verbatim into card-glossary.md;
+                  # counting both would be one source agreeing with itself.
+                  if not p.endswith('glossary-frame.md')] + ['CLAUDE.md']
+
+CLAIMS = {
+    'death threshold — rounding direction': (
+        [r'negative half your Max HP \(rounded (up|down)\)',
+         r'Max HP ÷ 2, rounded (up|down)'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
+    'Collapse threshold — HP': (
+        [r'reduces you to \*\*(\d+) HP\*\*',
+         r'Reach \*\*(\d+) HP\*\*',
+         r'Reduced to (\d+) HP'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
+    'Collapsed recovery — interval in hours': (
+        [r'(?:Every )?\*?\*?(\d+) in-game hours'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
+    'Collapsed recovery — die': (
+        [r'recover \*?\*?1d(\d+) HP'],
+        {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
+    'hand size — minimum': (
+        [r'[Hh]and size[^.|]{0,40}?[Mm]ind[^.|]{0,30}?minimum (\d+)',
+         r'[Mm]ind[^.|]{0,20}?\(minimum (\d+)\)[^.|]{0,30}?hand size',
+         r'hand size is \*\*Mind\*\*, with a minimum of (\d+)'],
+        {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
+         'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
+    ),
+    'flee check — dice': (
+        [r'(\d+d\d+) \+ Soul vs DC'],
+        {'rules/combat.md', 'rules/core-rules.md'},
+    ),
+    'flee check — DC': (
+        [r'\d+d\d+ \+ Soul vs DC (\d+)'],
+        {'rules/combat.md', 'rules/core-rules.md'},
+    ),
+    'initiative — die': (
+        [r'1d(\d+) \+ \*?\*?Soul'],
+        {'rules/card-glossary.md', 'rules/character-creation.md', 'rules/combat.md',
+         'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
+}
+
+
+def check_restatements():
+    """Every file that states a restated mechanical fact must state the same
+    value. Six facts, each measured across the files that carried it on
+    2026-08-18 — hand size alone is restated in six files."""
+    bad = []
+    counts = []
+    for claim, (patterns, expected_files) in CLAIMS.items():
+        found = {}
+        for path in RESTATED_SCOPE:
+            if not os.path.exists(path):
+                continue
+            text = open(path, encoding='utf-8').read()
+            values = set()
+            for pat in patterns:
+                values |= set(re.findall(pat, text))
+            if values:
+                found[path] = values
+        # COVERAGE: a fact that stopped matching where it used to match is a
+        # reworded sentence, not an absence — and the check just went blind to it.
+        missing = expected_files - set(found)
+        if missing:
+            bad.append(f'{claim}: no longer found in {sorted(missing)} '
+                       f'(moved or reworded? the check is now blind there)')
+        for path, values in sorted(found.items()):
+            if len(values) > 1:
+                bad.append(f'{claim}: {path} states {sorted(values)} — two values in one file')
+        allv = set().union(*found.values()) if found else set()
+        if len(allv) > 1:
+            detail = '; '.join(f'{p}={sorted(v)}' for p, v in sorted(found.items()))
+            bad.append(f'{claim}: files disagree — {detail}')
+        counts.append(len(found))
+    return report('restated mechanical facts agree', bad,
+                  f'{len(CLAIMS)} facts across {max(counts)} files')
+
+
 ENTRY_GLOBS = ('bestiary/*/*.md', 'characters/*/*.md')
 
 # Deck and stat-block validation covers bestiary/ AND characters/. It globbed
@@ -742,6 +846,7 @@ def main():
     check_restated_stat_blocks()
     check_distances()
     check_hp_formula()
+    check_restatements()
     check_entry_structure()
     check_bucket_lists(canon)
     check_card_conservation()
