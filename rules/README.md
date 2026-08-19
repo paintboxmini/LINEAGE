@@ -15,8 +15,8 @@ So the rule is not "no duplication." It is: **duplication is allowed as a second
 | `combat.md` | Everything that happens in a fight — attack resolution, turn structure, initiative, positioning, ongoing effects, Collapse |
 | `core-rules.md` | Formulas and tables — the HP formula, the stat table, Difficulty Classes, the Range Matrix |
 | `cards.md` | What a card is and how to read it — anatomy, Attacker/Defender vs. Target, deck building |
-| `out-of-combat.md` | Checks, saves, Advantage, and Perception outside a fight |
-| `character-creation.md` | Making a character and advancing one — stats, starting deck, hand size, resting, the Oracle |
+| `out-of-combat.md` | Checks, saves, Advantage, Perception, and resting — everything resolved outside a fight |
+| `character-creation.md` | Making a character and advancing one — stats, starting deck, hand size, the Oracle |
 | `equipment.md` | Gear and the gear economy — tiers, currency, pricing, pacing |
 | `card-glossary.md` | Keyword and status-card definitions. **Generated** from `keywords/`, `status-cards/` and `glossary-frame.md` — edit those |
 | `items.md` | The item catalog, indexed by source |
@@ -38,7 +38,7 @@ A voice may restate any owner's rule. It may not introduce one. If a voice says 
 
 ## What this does not yet cover
 
-`check_restatements` compares facts with an extractable value. The **prose** overlaps are unguarded: Stealth & Ambush, Chase, Cover, Positioning, Turn Structure, Ongoing Effects, Advancement, Resting and Equipment are each stated two or three times in different words, and nothing compares them. Short-rest chaining is the clearest gap — `character-creation.md` says three back-to-back, `core-rules.md` says only that they chain. Neither is wrong; that is exactly where a contradiction would hide.
+`check_restatements` compares facts with an extractable value. The **prose** overlaps are unguarded: Stealth & Ambush, Chase, Cover, Positioning, Turn Structure, Ongoing Effects, Advancement, Resting and Equipment are each stated two or three times in different words, and nothing compares them. Resting was the first case found and is now fixed: it sat in `character-creation.md`, which is not where resting belongs, and the owner stated *less* of the rule than `core-rules.md`'s quick reference did — a reader following the map would never have learned that a long rest clears Wounds. Moved to `out-of-combat.md` and completed, 2026-08-18. **The failure mode it demonstrates is the one to watch: not a contradiction, an owner thinner than its own summary.**
 
 ## Related Documents
 

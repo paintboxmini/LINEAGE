@@ -58,6 +58,32 @@ The difference matters: a character who fails a **check** didn't accomplish what
 
 ---
 
+## Resting
+
+### Short Rest
+
+**Duration:** 20 minutes
+**Limit:** 3 per day, reset by a long rest
+**Effect:** Recover **2d6 + Body** HP, and every copy of Exhaust is removed from your hand, deck, and discard pile.
+
+Short rests can be chained — three back-to-back is an hour of recovery.
+
+### Long Rest
+
+**Duration:** 7½ hours
+**Limit:** Once per day
+**Effect:** Full heal. Every Wound and every copy of Exhaust is destroyed, wherever it sits.
+
+A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don't.
+
+### Either Length
+
+A rest reshuffles your discard pile into your deck and refreshes your hand to full.
+
+Wounds also come off one at a time outside a full rest — see `rules/status-cards/wound.md` for that, and `rules/status-cards/exhaust.md` for how Exhaust differs.
+
+---
+
 ## Perception
 
 Perception is not a single roll. When a character tries to notice something, the GM determines what kind of signal is present and assigns the appropriate mode. The player may propose a different mode if the fiction supports it.

@@ -572,6 +572,23 @@ CLAIMS = {
         [r'[Rr]oll \*?\*?(\d+d\d+)\*?\*?, (?:drop|discard) (?:the )?(?:lowest|highest)'],
         {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
     ),
+    'short rest — duration in minutes': (
+        [r'\*\*Duration:\*\* (\d+) minutes', r'\| Short \| (\d+) min'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
+    'short rest — heal': (
+        [r'Recover \*\*(\d+d\d+ \+ Body)\*\* HP', r'\| Short \| [^|]*\| (\d+d\d+ \+ Body) HP',
+         r'heal \*\*(\d+d\d+ \+ Body)\*\*'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
+    'short rest — daily limit': (
+        [r'\*\*Limit:\*\* (\d+) per day', r'\| (\d+)/day \|'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md'},
+    ),
+    'long rest — duration': (
+        [r'\*\*Duration:\*\* (7½) hours', r'\| Long \| (7½) hours'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
     'flee check — dice': (
         [r'(\d+d\d+) \+ Soul vs DC'],
         {'rules/combat.md', 'rules/core-rules.md'},
