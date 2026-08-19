@@ -17,4 +17,4 @@
 - `world/geography-overview.md` — the Milestone, on the Turnroot–Eclipseria spoke of the Kings Road
 - `cards/no-vacancy.md`, `cards/registered.md`, `cards/the-ledger-never-closes.md`, `cards/your-turn-will-come.md` — signature cards
 - `rules/card-glossary.md` — Initiative Shift X and Locked, the two mechanics this kit and its dialogue run on
-- `rules/resolution.md` — Read (Soul), the check behind the ledger's one real transgression
+- `rules/out-of-combat.md` — Read (Soul), the check behind the ledger's one real transgression

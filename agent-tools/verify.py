@@ -557,6 +557,21 @@ CLAIMS = {
         {'rules/card-glossary.md', 'rules/cards.md', 'rules/character-creation.md',
          'rules/core-rules.md', 'rules/gm-guide.md', 'rules/player-guide.md'},
     ),
+    'DC table — Easy/Normal/Hard/Extreme': (
+        [r'\| Easy \| (\d+) \|\n\| Normal \| (\d+) \|\n\| Hard \| (\d+) \|\n\| Extreme \| (\d+) \|'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
+    'core resolution — dice': (
+        [r'\*\*(\d+d\d+) \+ (?:the )?relevant stat'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
+    'Advantage/Disadvantage — dice': (
+        # Three files, three wordings — "drop lowest", "discard the lowest",
+        # "drop the highest". One pattern covering all of them, because a
+        # pattern that matches only one file is a check that only checks one.
+        [r'[Rr]oll \*?\*?(\d+d\d+)\*?\*?, (?:drop|discard) (?:the )?(?:lowest|highest)'],
+        {'rules/core-rules.md', 'rules/out-of-combat.md', 'rules/player-guide.md'},
+    ),
     'flee check — dice': (
         [r'(\d+d\d+) \+ Soul vs DC'],
         {'rules/combat.md', 'rules/core-rules.md'},
@@ -571,6 +586,30 @@ CLAIMS = {
          'rules/core-rules.md', 'rules/player-guide.md'},
     ),
 }
+
+
+def check_rules_jurisdiction():
+    """rules/README.md records which file owns which topic (Drew, 2026-08-18,
+    Phase 1 of splitting rules/). A map is only worth having while it is
+    complete, and the way a map like this dies is quietly: someone adds a rules
+    file, nobody adds the row, and the map still reads authoritative.
+
+    So both directions. Every file in rules/ must be named in the map, and every
+    file the map names must exist. No exemptions — glossary-frame.md is listed
+    with the glossary it feeds, rather than carved out here, because an
+    exemption list is the same hole one level up."""
+    listed = open('rules/README.md', encoding='utf-8').read()
+    bad = []
+    on_disk = [os.path.basename(p) for p in sorted(glob.glob('rules/*.md'))
+               if os.path.basename(p) != 'README.md']
+    for name in on_disk:
+        if f'`{name}`' not in listed:
+            bad.append(f'rules/{name} exists but is not in rules/README.md — who owns it?')
+    for m in re.finditer(r'^\| `([a-z0-9-]+\.md)`', listed, re.M):
+        for name in re.findall(r'[a-z0-9-]+\.md', m.group(0)):
+            if not os.path.exists(f'rules/{name}'):
+                bad.append(f'rules/README.md names rules/{name}, which does not exist')
+    return report('rules/ jurisdiction map complete', bad, f'{len(on_disk)} files mapped')
 
 
 def check_restatements():
@@ -847,6 +886,7 @@ def main():
     check_distances()
     check_hp_formula()
     check_restatements()
+    check_rules_jurisdiction()
     check_entry_structure()
     check_bucket_lists(canon)
     check_card_conservation()

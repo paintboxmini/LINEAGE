@@ -21,7 +21,7 @@ This is a tabletop RPG design repository for **Tales Untold**, a card-based TTRP
 | Directory | Contents |
 |-----------|----------|
 | `cards/` | **One file per card**, flat — the filename is the card's slug, and card art lives in the card's own file. Membership lives in `cards/buckets/` (behaviour buckets plus the `red`/`blue`/`green`/`colorless` colour sets) and `cards/archetypes/`; neither holds card text |
-| `rules/` | Core rules and mechanics. **One file per keyword** in `rules/keywords/`, one per status card in `rules/status-cards/`; `rules/card-glossary.md` is **generated** from those plus `rules/glossary-frame.md` — edit the sources, never the built file |
+| `rules/` | Core rules and mechanics; `rules/README.md` records **which file owns which topic**. **One file per keyword** in `rules/keywords/`, one per status card in `rules/status-cards/`; `rules/card-glossary.md` is **generated** from those plus `rules/glossary-frame.md` — edit the sources, never the built file |
 | `places/` | Place overviews (world-level descriptions) |
 | `quests/` | Full adventure systems — pressure tracks, NPCs, encounter frameworks |
 | `bestiary/` | **One folder per creature.** `mechanics.md` holds the stat block, deck, passives, abilities and loot together; `profile.md` holds appearance and behaviour; other sections get their own file; `README.md` is the front door |

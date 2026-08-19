@@ -1,4 +1,4 @@
-# Resolution
+# Out of Combat
 
 ---
 

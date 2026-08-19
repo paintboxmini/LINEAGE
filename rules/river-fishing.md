@@ -25,5 +25,5 @@ The randomness of *when* is what makes it land — nobody can prep for a check t
 ## Related Documents
 
 - `world/geography-overview.md` — Rivers and Lakes, where this can happen
-- `rules/resolution.md` — the underlying check math this borrows
+- `rules/out-of-combat.md` — the underlying check math this borrows
 - `places/vultures-nest.md` — the heart of the river web, the easiest place to use this
