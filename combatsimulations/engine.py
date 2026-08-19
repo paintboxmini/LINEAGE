@@ -923,9 +923,17 @@ class Duel:
         self._say(f"{attacker.name} destroys {obj['kind']} at {obj['position']}")
 
     def insert_wound(self, target):
+        """SHUFFLED into the deck, not buried at the bottom. Changed 2026-08-18
+        (Drew: "let's have wounds shuffle instead of going to the bottom"), which
+        also ends an inconsistency the sim had been carrying: Exhaust already
+        shuffled and Wound did not, for two status cards inserted the same way.
+
+        The difference is real, and it is the whole point of the change — a
+        bottom-inserted Wound arrives at a time you can count, a shuffled one
+        arrives when it arrives."""
         if self.wound_card is None:
             return
-        target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
+        target.deck.insert(self.rng.randrange(len(target.deck) + 1), self.wound_card)
 
     def insert_exhaust(self, target, n=1, to_deck=False):
         """Exhaust (card-glossary.md). WHERE it lands is the source card's choice,
@@ -938,10 +946,10 @@ class Duel:
         legitimately push hand size above the normal draw cap for a turn or more;
         nothing truncates it back down on its own (Mind-loss forcing a discard is
         the only thing that ever rebalances hand size — see Combatant.adjust).
-        to_deck=True — SHUFFLED to a random position, not buried at the bottom the
-        way insert_wound does it. The canon wording is "shuffle 1 Exhaust into
-        their deck," and the difference is real: a bottom-inserted card is a known
-        quantity you can play around, a shuffled one is not.
+        to_deck=True — SHUFFLED to a random position. The canon wording is
+        "shuffle 1 Exhaust into their deck." insert_wound buried at the bottom
+        until 2026-08-18 and now shuffles too, so the two status cards finally
+        enter a deck the same way.
 
         Either way, only a rest clears it — destroy_exhaust for the hand, and the
         full hand/deck/discard sweep on a short or long rest (not modelled here,
