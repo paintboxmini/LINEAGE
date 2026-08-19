@@ -150,7 +150,7 @@ Check vs DC = 10 + highest Soul on the side being approached — Soul is the obv
 
 ## Chase
 
-Track only the distance between them; the fiction sets where it starts. Each exchange, a contested roll (Soul obvious, any arguable stat) — winner moves the distance one step their way. Discard a card whose name fits → Advantage. **Distance 4 = escaped** (pursuer may try the trail after, GM-set DC). **Distance 0 = contact:** the chase ends, no free attack, and the pursuer picks — roll initiative, attempt a contested check to subdue, or use whatever they were chasing with. Starting distance is the difficulty dial: 1 catches three times in four, 2 is even, 3 escapes three times in four.
+Track only the distance between them; the fiction sets where it starts. Each exchange, a contested roll (Soul obvious, any arguable stat) — winner moves the distance one step their way. Discard a card whose name fits → Advantage. **Distance 4 = escaped** (pursuer may try the trail after, GM-set DC). **Distance 0 = contact:** the chase ends, no free attack, but the pursuer takes the first turn — then picks: fight, grapple (contested check to grab or pin; `cards/subdue.md` is its card), or use whatever they were chasing with. Starting distance is the difficulty dial: 1 catches three times in four, 2 is even, 3 escapes three times in four.
 
 ---
 

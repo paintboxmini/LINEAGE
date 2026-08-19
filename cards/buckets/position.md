@@ -31,12 +31,11 @@
 - [FRACTURE](../fracture.md)  *(also: card flow)*
 - [GORE](../gore.md)
 - [GRAFT](../graft.md)
-- [GRAPPLE](../grapple.md)
 - [GROUNDING STANCE](../grounding-stance.md)  *(also: defense)*
 - [HARVEST CHAIN](../harvest-chain.md)  *(also: defense)*
 - [HAUL](../haul.md)
-- [HEAVE](../heave.md)
 - [HEAVE AND HAUL](../heave-and-haul.md)
+- [HEAVE](../heave.md)
 - [IMPALING DIVE](../impaling-dive.md)
 - [INK THE AIR](../ink-the-air.md)  *(also: card flow)*
 - [IRON GRIP](../iron-grip.md)
@@ -69,6 +68,7 @@
 - [STARING CONTEST](../staring-contest.md)
 - [STEP ASIDE](../step-aside.md)  *(also: defense)*
 - [STILL POINT](../still-point.md)  *(also: defense)*
+- [SUBDUE](../subdue.md)
 - [SWAY](../sway.md)
 - [SYSTEM PURGE](../system-purge.md)  *(also: defense)*
 - [TALON RUSH](../talon-rush.md)

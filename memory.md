@@ -123,7 +123,20 @@ The old two-marker track was broken in a way its own example demonstrated: *"rig
 
 Tracking only the gap fixes both and makes the odds legible: with absorbing ends at 0 and 4, **escape probability is simply the starting gap over 4.** One step apart is 25%, two is even, three is 75%. The GM sets difficulty by setting distance, and can read the number off without a table.
 
-**Contact grants no free attack, and that was a decision rather than an omission.** Drew asked whether the chaser should get an ambush-style attack before initiative. No: Ambush and Unguarded both pay out for *arriving unseen*, and a fleeing character knows exactly who is behind them — granting the ambush package here would make the word cover two different mechanics, in the same session that split Unguarded off so it wouldn't. It would also collapse the choice the rule exists to create: if the free hit is automatic, *fight or subdue* stops being a decision. The lighter lever, if contact ever needs to feel more decisive, is giving the pursuer the first turn rather than a free hit.
+**Contact grants the initiative, not a free attack.** Drew, 2026-08-18, on the alternative offered: *"giving the pursuer the first turn makes sense."* The reasoning behind refusing the free attack still stands and is why the lighter lever was the right one: Drew asked whether the chaser should get an ambush-style attack before initiative. No: Ambush and Unguarded both pay out for *arriving unseen*, and a fleeing character knows exactly who is behind them — granting the ambush package here would make the word cover two different mechanics, in the same session that split Unguarded off so it wouldn't. It would also collapse the choice the rule exists to create: if the free hit is automatic, *fight or subdue* stops being a decision. The lighter lever, if contact ever needs to feel more decisive, is giving the pursuer the first turn rather than a free hit.
+
+## Unguarded Is an Opening, Not Helplessness
+
+Drew, 2026-08-18: *"the fantasy isn't a creature or character who is willing to be hit. they are non aggressive, allowing an opening for the first strike. but they will defend if shown a threat."*
+
+The first draft gave Unguarded an ambush's auto-hit, which said the wrong thing: it made the target unable to protect itself at all. Corrected, the two states pay for different things and therefore buy different things.
+
+- **Ambush** pays for arriving unseen. Its auto-hit beats Evade and Immunity, because the target never knew.
+- **Unguarded** pays for the target not fighting yet. The attack is **unblocked** — no defense played, no reveal resolved — but **Evade and Immunity still apply**, because they can see you coming and are simply not swinging back.
+
+The other half is a real choice rather than a free lunch: a side facing an Unguarded target may **strike** and take the unblocked attack, or **ready** visibly and drop the state with no attack at all. Both end it, and you cannot do both — readying is visible, and visibility is exactly what closes the opening.
+
+**GRAPPLE and SUBDUE were named backwards** (Drew, same day): grapple is the general action — a contested check to grab, tackle or pin — and `cards/subdue.md` is its specialised card embodiment. The card was renamed; the action now carries the plain word.
 
 ## Hold Off on Unheld Lore During Story-Crafting
 

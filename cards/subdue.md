@@ -1,4 +1,4 @@
-**GRAPPLE**
+**SUBDUE**
 RED — BODY
 Attack: Body + d6
 Effect: Anchored — Defender gains Rooted.

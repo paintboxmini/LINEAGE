@@ -34,15 +34,20 @@ A creature whose own entry defines an ambush uses that instead — several do, w
 
 ### Unguarded
 
-Some creatures do not fight until they are fought. A creature that is **Unguarded** is not in combat: it takes no turns, defends nothing, and does not act against the party at all. It is open to attack, and that is the cost of it.
+Some creatures and people do not fight until they are fought. One who is **Unguarded** is not in combat: it takes no turns, plays no cards, and does nothing against the other side.
 
-The first attack against an Unguarded creature **auto-hits — no RPS, no defense, and neither Evade nor Immunity applies.** After it lands, roll initiative for everyone and the fight proceeds normally.
+This is not willingness to be hit. It is a lack of aggression, and it leaves an opening for a first strike — but they will defend themselves the moment they are shown a threat.
 
-**One auto-hit, the same limit an ambush has, and the two do not stack.** Ambushing a creature that was already Unguarded gains nothing.
+While it lasts, a side in sight of an Unguarded target chooses one of two things. **Both end the state, and it cannot be had twice.**
 
-**Overt aggression ends the state before any attack lands.** Drawing weapons openly, taking aim, closing with obvious intent — the GM calls it, and initiative is rolled instead with no free hit.
+- **Strike.** One attack lands **unblocked** — no defense is played and no reveal is resolved. **Evade and Immunity still apply**; being unaggressive is not being helpless. Then roll initiative and fight.
+- **Ready.** Visibly prepare for a fight — weapons drawn, aim taken, ground closed with obvious intent. Unguarded drops with no attack made, and initiative is rolled.
 
-A creature's own entry says whether it is Unguarded and what ends it.
+You cannot do both. Readying is visible, and visibility is exactly what closes the opening.
+
+**Unguarded is not an ambush and does not stack with one.** An ambush pays for arriving unseen and its auto-hit beats Evade and Immunity; this pays for the target not fighting yet, and it does not.
+
+A creature's own entry says whether it is Unguarded and what else ends it.
 
 ---
 
@@ -54,10 +59,10 @@ When someone flees and someone else gives chase, track one thing: **the distance
 
 **Escaped — the distance reaches 4.** They are out of sight. The pursuer may try to follow the trail afterward: a check, DC set by the GM for terrain and time elapsed.
 
-**Contact — the distance reaches 0.** The chase ends, and nothing else is decided by it. Contact grants no free attack. The pursuer chooses what they were chasing for:
+**Contact — the distance reaches 0.** The chase ends, and nothing else is decided by it. Contact grants no free attack; what it grants is the initiative. **The pursuer takes the first turn**, and chooses what they were chasing for:
 
-- **Fight.** Roll initiative and resolve normally.
-- **Subdue.** A contested check to grab, tackle or pin rather than harm.
+- **Fight.** Roll initiative and resolve normally, pursuer first.
+- **Grapple.** A contested check to grab, tackle or pin rather than harm. Available to anyone; `cards/subdue.md` is the card that does it deliberately.
 - **Anything else.** An item, a skill, a word — whatever they actually wanted.
 
 **The starting distance is the whole difficulty dial.** A chase run at even odds escapes about as often as the starting gap is large: one step apart and the pursuer wins three times in four, two steps is even, three steps and the runner gets away three times in four.
