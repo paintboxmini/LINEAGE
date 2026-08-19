@@ -171,7 +171,7 @@ Taking cover is an action. You must be in the Backline, and the fiction must jus
 **Weapon / Armor / Artifact**  
 Only equipped items have permanent passive effects — everything else about how a character dresses or arms themselves is free, unrestricted fiction.  
 Carried items are used via the Use an Item action, or your Item Action.  
-Artifacts are resonant jewelry aligned with a Seat's domain.
+Artifacts are resonant objects aligned with a Seat's domain (`world/resonant-items.md`).
 
 See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, and `rules/items.md` for the full catalog of items already in the world.
 

@@ -572,6 +572,13 @@ CLAIMS = {
         [r'no defense,? (?:and )?no (Evade or Protect)'],
         {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
     ),
+    'artifacts — what they are': (
+        # core-rules.md said "resonant jewelry" until 2026-08-18 while every
+        # other file said objects — one voice quietly narrowing its owner, and
+        # the word appeared exactly once in the whole repo.
+        [r'Artifacts are (resonant objects)', r'\*\*Artifacts\*\* are (resonant objects)'],
+        {'rules/character-creation.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
     'stat spread cap': (
         [r'[Nn]o stat may exceed another by more than (\d)'],
         {'rules/character-creation.md', 'rules/core-rules.md', 'rules/player-guide.md'},

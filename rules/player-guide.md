@@ -298,7 +298,7 @@ Either length reshuffles your discard into your deck and refreshes your hand to 
 
 ## Equipment
 
-Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. Carried items (equipped or not) are used via the Interact action, or the Use an Item Action / Item Action in combat. Artifacts are resonant items aligned with a Seat's domain.
+Three slots: **Weapon, Armor, Artifact.** Only what's actually equipped carries a permanent passive effect — everything else about how you look or what you're carrying is free, unrestricted fiction. In combat, carried items are used with the **Use an Item** action or your **Item Action** — they occupy no slot. Outside combat there are no turns to spend, so you simply use them. Artifacts are resonant objects aligned with a Seat's domain (`world/resonant-items.md`).
 
 Full tier system and the world's item catalog: `rules/equipment.md` and `rules/items.md`.
 
