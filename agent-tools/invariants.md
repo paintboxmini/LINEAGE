@@ -34,6 +34,8 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Simulator card definitions reconcile against canon | `check_sim` |
 | The Oracle's two code mirrors agree with each other and with the pool | `check_oracle_sync` |
 | Keyword usage counts are generated from `cards/`, never hand-typed | `check_keyword_usage` |
+| The printed glossary matches the per-keyword files it is built from | `check_glossary_generated` |
+| Every keyword and status card with a source file appears in the built glossary exactly once | `check_glossary_generated` |
 | Print artifacts match their sources | `check_print` |
 | Non-status cards are conserved across deck/hand/discard/exile | `check_card_conservation` |
 | No measured distances in `quests/` or `bestiary/` | `check_distances` |

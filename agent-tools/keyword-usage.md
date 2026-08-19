@@ -2,7 +2,7 @@
 
 **Generated — do not edit by hand.** `python3 agent-tools/keyword-usage.py` rewrites this file; `verify.py` fails if it is stale.
 
-How many of the 347 cards in `cards/` apply each keyword defined in `rules/card-glossary.md`. Counting rule, settled by Drew 2026-08-18: **a conditional grant counts, a presence test or negation does not; an umbrella counts its members; once per card.** Full reasoning in the script.
+How many of the 347 cards in `cards/` apply each keyword defined in `rules/keywords/`. Counting rule, settled by Drew 2026-08-18: **a conditional grant counts, a presence test or negation does not; an umbrella counts its members; once per card.** Full reasoning in the script.
 
 | Keyword | Cards | Share |
 |---|---:|---:|
@@ -36,8 +36,8 @@ How many of the 347 cards in `cards/` apply each keyword defined in `rules/card-
 | Obscure | 1 | 0% |
 | Reveal Hand | 1 | 0% |
 
-**Debuff** covers Weak, Blind, Vulnerable, Rooted, Staggered + stat reduction — membership parsed from its own glossary definition, so the count moves when the definition does.
-**Positive Status Effects** covers Deadly, Anchored, Evade, Protect, Resist, Quick, Immunity — membership parsed from its own glossary definition, so the count moves when the definition does.
+**Debuff** covers Blind, Rooted, Staggered, Vulnerable, Weak + stat reduction — membership parsed from its own glossary definition, so the count moves when the definition does.
+**Positive Status Effects** covers Anchored, Deadly, Evade, Immunity, Protect, Quick, Resist — membership parsed from its own glossary definition, so the count moves when the definition does.
 
 ## Rare keywords
 

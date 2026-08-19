@@ -35,6 +35,16 @@ Three outcomes, and only two of them fail:
   ADDED       a line that did not exist before. Never a failure — a restructure
               legitimately writes new navigation. Reported so it can be read.
 
+A restructure that introduces a *generated view* duplicates by construction: the
+content exists once in its source file and again in the built artifact, so every
+moved line reports 1 -> 2. That is not a defect and not a reason to dismiss the
+list. The check that actually holds is tighter than "no duplicates" — for a line
+appearing k times before, it must appear exactly 2k times after, once per source
+and once per generated copy, and its origins must be the generated file plus
+source files only. Splitting the glossary into 29 keyword files and rebuilding it
+reported 0 lost and 74 duplicated, and all 74 satisfied that. Anything that does
+not is a genuine copy that escaped into a third file.
+
 On a deliberate edit rather than a pure move, LOST is expected — read the list and
 confirm every entry was meant to go. Stripping the hand-typed counts out of the
 glossary reported 30 lost and 29 added: the 29 renamed headers plus the one

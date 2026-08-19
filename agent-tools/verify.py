@@ -275,12 +275,12 @@ def check_item_keywords():
     2026-08-02: SPLIT WEDGE claimed Anchored for a one-turn effect (Anchored is
     explicitly persistent and re-triggering), and BARBED WRAP wrote out Thorns by
     hand in a strictly wider form. Neither is visible to any other check."""
-    gl = open('rules/card-glossary.md', encoding='utf-8').read()
-    # Entry headers lost their hand-maintained "(55)" prefix on 2026-08-18 when
-    # the counts moved to agent-tools/keyword-usage.md. Anchored at both ends so
-    # ordinary bolded prose in the glossary cannot be read as a keyword.
-    known = {m.group(1).replace(' X', '').replace(' [Color]', '').strip()
-             for m in re.finditer(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M)}
+    # Read from rules/keywords/ rather than the glossary those files are built
+    # into. Parsing the generated artifact would have worked identically right up
+    # until a rebuild changed its shape.
+    known = {re.match(r'^# (.+)\n', open(p, encoding='utf-8').read()).group(1)
+               .replace(' X', '').replace(' [Color]', '').strip()
+             for p in sorted(glob.glob('rules/keywords/*.md'))}
     longhand = [
         (r'reduce (?:all )?(?:incoming )?damage by \d', 'Armour X'),
         (r'deal \d+ damage to (?:the )?attacker', 'Thorns X'),
@@ -319,16 +319,46 @@ def check_keyword_usage():
     bad = [] if r.returncode == 0 else [(r.stdout + r.stderr).strip()]
     n = len(re.findall(r'^\| .+ \| \d+ \| \d+% \|$',
                        open('agent-tools/keyword-usage.md', encoding='utf-8').read(), re.M))
-    gl = open('rules/card-glossary.md', encoding='utf-8').read()
-    defined = len(re.findall(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M))
-    # Coverage: the table must hold a row for every keyword the glossary defines.
+    defined = len(glob.glob('rules/keywords/*.md'))
+    # Coverage: the table must hold a row for every keyword that has a file.
     if n != defined:
-        bad.append(f'COVERAGE: glossary defines {defined} keywords, the table has {n} rows')
-    # And the counts must not creep back into the printed file.
+        bad.append(f'COVERAGE: rules/keywords/ holds {defined} keywords, the table has {n} rows')
+    # And the counts must not creep back into the player-facing file.
+    gl = open('rules/card-glossary.md', encoding='utf-8').read()
     stale = re.findall(r'^\*\*\(\d+\) ', gl, re.M)
     if stale:
         bad.append(f'{len(stale)} glossary entries have regained a hand-typed count prefix')
     return report('keyword usage table current', bad, f'{defined} keywords')
+
+
+def check_glossary_generated():
+    """rules/card-glossary.md is built from rules/keywords/ and
+    rules/status-cards/. Without this, "generated" is a claim in a docstring: a
+    hand edit to the output would work fine until the next rebuild silently threw
+    it away. This makes the edit fail loudly instead, at the moment it is made.
+
+    Also asserts the split is total. Every keyword and status card must have a
+    source file, and the built file must contain each one exactly once — a
+    definition that exists only in the output is a definition the next rebuild
+    deletes."""
+    r = subprocess.run([sys.executable, 'agent-tools/generate-glossary.py', '--check'],
+                       capture_output=True, text=True)
+    bad = [] if r.returncode == 0 else [(r.stdout + r.stderr).strip()]
+    gl = open('rules/card-glossary.md', encoding='utf-8').read()
+    kw = sorted(glob.glob('rules/keywords/*.md'))
+    sc = sorted(glob.glob('rules/status-cards/*.md'))
+    for path, fmt in [(p, '**{}**') for p in kw] + [(p, '### {}') for p in sc]:
+        name = re.match(r'^# (.+)\n', open(path, encoding='utf-8').read()).group(1).strip()
+        hits = gl.count(fmt.format(name))
+        if hits != 1:
+            bad.append(f'{path}: "{name}" appears {hits} times in the built glossary, expected 1')
+    # COVERAGE: nothing defined in the output that has no source behind it.
+    built = len(re.findall(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M))
+    if built != len(kw):
+        bad.append(f'COVERAGE: built glossary has {built} keyword entries, '
+                   f'rules/keywords/ has {len(kw)} files')
+    return report('glossary generated from its source files', bad,
+                  f'{len(kw)} keywords + {len(sc)} status cards')
 
 
 def check_duplicate_refs():
@@ -707,6 +737,7 @@ def main():
     check_sim(canon)
     check_item_keywords()
     check_keyword_usage()
+    check_glossary_generated()
     check_duplicate_refs()
     check_restated_stat_blocks()
     check_distances()

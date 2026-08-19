@@ -43,7 +43,7 @@ import glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-GLOSSARY = 'rules/card-glossary.md'
+KEYWORD_DIR = 'rules/keywords'
 OUTPUT = 'agent-tools/keyword-usage.md'
 
 # The lines on a card that can actually do something. Flavor text and the Range
@@ -85,19 +85,27 @@ STAT_REDUCTION = re.compile(r'\bloses?\s+\d+\s+(Mind|Body|Soul)\b', re.I)
 
 
 def keywords():
-    """Every keyword the glossary defines, in file order."""
-    gl = open(GLOSSARY, encoding='utf-8').read()
-    return [m.group(1).strip() for m in
-            re.finditer(r'^\*\*([A-Za-z][A-Za-z \[\]X]*)\*\*$', gl, re.M)]
+    """Every keyword, read from the per-keyword source files rather than the
+    glossary they are built into — a tool that parses a generated artifact is one
+    rebuild away from disagreeing with the thing that defines it."""
+    out = []
+    for path in sorted(glob.glob('rules/keywords/*.md')):
+        m = re.match(r'^# (.+)\n', open(path, encoding='utf-8').read())
+        if not m:
+            raise SystemExit(f'{path}: no "# NAME" heading on the first line')
+        out.append(m.group(1).strip())
+    return out
 
 
 def umbrellas(known):
     """Parse Debuff and Positive Status Effects membership from their own text,
     so a change to either definition moves the counts with it."""
-    gl = open(GLOSSARY, encoding='utf-8').read()
     out = {}
     for name in ('Debuff', 'Positive Status Effects'):
-        m = re.search(rf'^\*\*{re.escape(name)}\*\*\n(.+)$', gl, re.M)
+        path = f"rules/keywords/{re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')}.md"
+        if not os.path.exists(path):
+            continue
+        m = re.match(r'^# .+\n\n(.+)$', open(path, encoding='utf-8').read(), re.M)
         if not m:
             continue
         head = re.split(r'[—.]', m.group(1))[0]
@@ -168,7 +176,7 @@ def render():
              f'rewrites this file; `verify.py` fails if it is stale.')
     L.append('')
     L.append(f'How many of the {total} cards in `cards/` apply each keyword defined in '
-             f'`{GLOSSARY}`. Counting rule, settled by Drew 2026-08-18: **a conditional grant '
+             f'`{KEYWORD_DIR}/`. Counting rule, settled by Drew 2026-08-18: **a conditional grant '
              f'counts, a presence test or negation does not; an umbrella counts its members; '
              f'once per card.** Full reasoning in the script.')
     L.append('')
