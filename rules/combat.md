@@ -22,11 +22,15 @@ Three things decide a fight, and a build's stance toward all three, together, is
 
 ## Stealth & Ambush
 
-To approach unseen before combat, make a Soul check: DC = 10 + the highest Soul stat on the side being approached. Creatures ambush the same way — when the ambusher is an NPC or creature, the GM makes its Soul check.
+To approach unseen before combat, make a check against **DC = 10 + the highest Soul on the side being approached**. Players attempting an ambush roll for themselves; the GM rolls for an ambushing creature or NPC. Soul is the obvious stat and not the required one — any stat someone can argue for and the table agrees to works, same as every check (`rules/out-of-combat.md`).
 
-**On success:** The ambusher's first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone including the ambusher. They take their place in order normally. Combat continues.
+**On success:** the ambusher's first attack **auto-hits — no RPS, no defense, and Evade does not apply**. Then roll initiative for everyone including the ambusher, who takes their place in order normally.
 
-**On failure:** Roll initiative. No advantage.
+**One attack, not one each.** A side that ambushes together still gets a single auto-hit; there is no window for a second before initiative is rolled. If more than one of them could take it, that side picks who.
+
+**On failure:** roll initiative. No advantage.
+
+A creature whose own entry defines an ambush uses that instead — several do, with their own trigger, stat and DC.
 
 ---
 

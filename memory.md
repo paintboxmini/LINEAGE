@@ -97,6 +97,24 @@ Worth keeping because the exception is not derivable from the mechanic. Mechanic
 
 **The related engine bug, fixed the same day.** The tick gated every Anchored payout on `who.position == o['anchor']`, which *suspended* a stance while its holder was displaced and silently resumed it if they came back. The written rule had always said "ends immediately." Drew: *"suspending anchored is a bug."* Fixed by making `Combatant.position` a property whose setter ends anchored effects on a real change — one place instead of the thirty-odd call sites that move people, the same reasoning that made `max_hp` computed rather than patched.
 
+## Any Stat, If the Table Agrees
+
+Drew, 2026-08-18: *"the roll can be made using any stat that the player or GM can argue for that makes sense in the narrative, the table must agree. this is a blanket rule that applies to any check or save."*
+
+It supersedes `rules/out-of-combat.md`'s previous closing line, *"When multiple stats could apply, the player may make their case. The GM decides."* — the adjudicator moved from the GM to the table.
+
+The consequence worth remembering: **every stat named in a rule is now the obvious choice, not the only one.** Stealth says Soul, the flee check says Soul, the chase says Soul; each still names its stat, and each is now an example rather than a constraint. It also retroactively legitimises creature entries that already deviated — the Briarbound's ambush asks the party for Senses or Reason where the general rule says Soul, which was a conflict before this ruling and is an ordinary application of it after.
+
+## Equipment Provides, It Does Not Grant at a Moment
+
+Drew, 2026-08-18: *"equipment provide effects while worn not only granted at combat start. statuses still work normally (evade leaves after it triggers). at the end of combat equipment effects that expired, get reapplied."*
+
+Fourteen items and pricing examples had said *"start combat with X."* Drew's note that this *"was a simplifier for the repo I used that was never the real way it worked at the table"* is the useful part: the written rule had been a convenience, and the table had been playing the fuller version all along.
+
+Inside one fight the two are identical, so nothing rebalances. What changes is that the effect is true out of combat as well, and the rule now says *why* you have it rather than *when* you got it. The wording needs both halves — provision plus an end-of-combat refresh — because "while worn" alone would imply Evade regenerating the instant it triggers, which is not the intent.
+
+It also separates the two kinds cleanly, which the old phrasing did not: **Armour X and Thorns are persistent** and never expire, so refresh never applies to them; Evade, Resist, Protect, Ward and Deadly are consumable and do.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

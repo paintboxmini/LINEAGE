@@ -14,6 +14,14 @@ Carried items (potions, tools, one-use consumables) don't compete for these slot
 
 ---
 
+## What Equipment Does
+
+**Equipment provides its effects while it is worn or carried, not at a moment.** A status it provides behaves like any other once you have it — Evade goes when it triggers, Resist when it is spent — and the provision **refreshes when combat ends**, so you carry it into the next fight. Persistent effects never expire and never need refreshing: Armour X reduces every attack all fight, Thorns persists to the end of combat.
+
+Inside a single fight this is exactly what *"start combat with X"* used to mean. It differs in being true outside combat as well, and in saying why you have the effect rather than when.
+
+Take the gear off and what it provided goes with it.
+
 ## Weapon and Armor Tiers
 
 Weapons and Armor both scale on the same three-tier system. Each tier is a **power budget** — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer's discretion.
@@ -30,14 +38,14 @@ The gold values are a reference point for pricing at market or as loot, not a ha
 
 **The budget doesn't have to go entirely into the flat number.** A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:
 
-- **1 point ≈** +1 flat damage or reduction, **or** granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
+- **1 point ≈** +1 flat damage or reduction, **or** providing one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.), **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
 - Larger, spikier effects (Critical, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
 - **Not every keyword is worth the same point regardless of context — check actual value, don't just price by name.** Protect reads like a strong defensive keyword but is genuinely one of the weakest through an action-economy lens: the party still eats the same total damage, just redirected onto whoever volunteered — no damage is actually prevented unless it's paired with something that mitigates the hit once it lands (Resist, Evade, and similar). Priced alone, it's worth well under 1 point — cheap enough to bundle in at Tier 1 alongside a real effect (e.g., start combat with Evade 1 and Protect 1) rather than ever anchoring a tier by itself. The general lesson: price a keyword by what it actually does for the action economy, not by how strong it sounds.
 
 **Worked examples, exactly as specified:**
 - *Tier 1 weapon:* inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)
-- *Tier 2 weapon:* +1 attack damage, and gain Deadly at the start of combat. (1 point flat, 1 point self-buff.)
-- *Tier 2 armor:* Armour 1, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)
+- *Tier 2 weapon:* +1 attack damage, and provides Deadly. (1 point flat, 1 point self-buff.)
+- *Tier 2 armor:* Armour 1, and provides 1 Resist. (1 point flat, 1 point self-buff.)
 
 This is a budget to design against, not a formula to solve — two tier-2 items should feel different from each other even though they cost the same.
 
@@ -105,18 +113,18 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 1:* Scry 1 the first time you attack each combat.
 - *Tier 2:* +1 damage; inflict Blind on a clean win, once per combat.
 - *Tier 2:* Gain Rushdown for free the first time your turn would otherwise need it.
-- *Tier 3:* +2 damage; gain Deadly at the start of combat.
-- *Tier 3:* +1 damage; gain Deadly at the start of combat; inflict Weak on the first successful attack against you. (Three-way split of the same budget.)
+- *Tier 3:* +2 damage; provides Deadly.
+- *Tier 3:* +1 damage; provides Deadly; inflicts Weak on the first successful attack against you. (Three-way split of the same budget.)
 - *Tier 3:* Gain Critical the first time you attack each combat. (Whole budget on one spike.)
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 **Armor**
-- *Tier 1:* Start combat with 1 Resist.
+- *Tier 1:* Provides 1 Resist.
 - *Tier 1:* Inflict Staggered on the first enemy who successfully hits you each combat.
-- *Tier 1:* Start combat with Evade 1 and Protect 1. (Protect alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
-- *Tier 2:* Armour 1; start combat with 1 stack of Thorns.
-- *Tier 2:* Start combat with Ward. (Whole budget on one full debuff-block.)
-- *Tier 3:* Armour 1; start combat with Resist; start combat with Evade. (Three-way split.)
+- *Tier 1:* Provides Evade 1 and Protect 1. (Protect alone is cheap enough to ride along with a real effect at the lowest tier — see the pricing note above.)
+- *Tier 2:* Armour 1; provides 1 stack of Thorns.
+- *Tier 2:* Provides Ward. (Whole budget on one full debuff-block.)
+- *Tier 3:* Armour 1; provides Resist; provides Evade. (Three-way split.)
 - *Tier 3:* Gain Immunity the first time you would Collapse each combat. (Whole budget on one clutch save.)
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 

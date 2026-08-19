@@ -46,7 +46,7 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ### First Blood
 *Price: ~200 gold (Tier 1 armor)*
 
-**Equipment — Armor (Tier 1). Effect:** Start combat with Resist 1.
+**Equipment — Armor (Tier 1). Effect:** Provides Resist 1.
 
 ---
 
@@ -60,7 +60,7 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ### Warding Harness
 *Price: ~200 gold (Tier 1 armor)*
 
-**Equipment — Armor (Tier 1). Effect:** Start combat with Evade and Protect 1.
+**Equipment — Armor (Tier 1). Effect:** Provides Evade and Protect 1.
 
 ---
 
@@ -74,7 +74,7 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ### Thorned Cuirass
 *Price: ~800 gold (Tier 2 armor) — display piece*
 
-**Equipment — Armor (Tier 2). Effect:** Armour 1. Start combat with Thorns 1.
+**Equipment — Armor (Tier 2). Effect:** Armour 1. Provides Thorns 1.
 
 ---
 

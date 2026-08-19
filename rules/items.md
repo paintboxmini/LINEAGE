@@ -91,11 +91,11 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 - **Opening Mark** — Weapon, Scry 1 on your first attack each combat. ~200 gold.
 - **Holdfast Head** — Weapon, every successful melee attack: defender gains Rooted until end of their next turn. ~250 gold.
 - **Temple Plate** — Armor, Armour 1. ~200 gold.
-- **First Blood** — Armor, start combat with Resist 1. ~200 gold.
+- **First Blood** — Armor, provides Resist 1. ~200 gold.
 - **Rebuke Mail** — Armor, first successful hit against you each combat: attacker Staggered. ~200 gold.
-- **Warding Harness** — Armor, start combat with Evade and Protect 1. ~200 gold.
+- **Warding Harness** — Armor, provides Evade and Protect 1. ~200 gold.
 - **Blind Edge** *(display, Tier 2)* — +1 damage; once/combat on clean win, Blind. ~800 gold.
-- **Thorned Cuirass** *(display, Tier 2)* — Armour 1; start combat with Thorns 1. ~800 gold.
+- **Thorned Cuirass** *(display, Tier 2)* — Armour 1; provides Thorns 1. ~800 gold.
 
 **Marketplace — Nessa Coil (Crossroads Sundries)**
 - Regional resale at markup: Luminova Leaves/Powder, Echothorn Seed, Sap Vial, Nest dock goods, Barbed Wrap. Source files keep the lower price; she charges the capital column in `items/capital-items.md`.

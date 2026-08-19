@@ -19,7 +19,9 @@ Compare the result to a Difficulty Class set by the GM.
 
 Meet or beat the DC to succeed.
 
-The fiction determines which stat applies — Body for physical exertion, Mind for reasoning and interpretation, Soul for bonds, will, and spiritual pressure. When multiple stats could apply, the player may make their case. The GM decides.
+The fiction determines which stat applies — Body for physical exertion, Mind for reasoning and interpretation, Soul for bonds, will, and spiritual pressure.
+
+**Any stat may be used for any check or save if someone can argue for it and the table agrees.** That is the whole rule. The player argues for their own rolls, the GM argues for a creature's, and the table settles it. It applies everywhere a check or save is called for, including the ones elsewhere in these rules that name a specific stat — those name the obvious one, not the only one.
 
 ---
 

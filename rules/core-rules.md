@@ -144,7 +144,7 @@ Melee requires both characters in the Frontline. The Frontline does not protect 
 
 ## Stealth & Ambush
 
-Soul check vs DC = 10 + highest Soul on the side being approached. Creatures ambush the same way — the GM rolls their Soul check. On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+Check vs DC = 10 + highest Soul on the side being approached — Soul is the obvious stat, any arguable one works. Players roll their own; the GM rolls for creatures. On success the first attack auto-hits: no RPS, no defense, Evade does not apply. **One auto-hit for the side, not one each.** Then roll initiative for everyone, ambusher included. A creature whose entry defines its own ambush uses that instead.
 
 ---
 

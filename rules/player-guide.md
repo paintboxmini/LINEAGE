@@ -198,7 +198,7 @@ If the whole party goes down, the GM decides the outcome from the enemy's own na
 
 **Chase** — a two-marker track instead of repeated rolls. The fleeing side starts however many exchanges ahead they already are; the pursuer starts at 0. Standard track is 5 steps past the fleeing side's start. Each exchange, contested Soul (2d10 + Soul) — winner advances one step. Caught = pursuer's marker reaches the fleeing side's. Escaped = the fleeing side reaches the end of the track.
 
-**Stealth & Ambush** — a Soul check, DC = 10 + the highest Soul on the side being approached (creatures ambush the same way, GM rolling for them). Success: the ambusher's first attack auto-hits, no RPS, no defense — then everyone rolls initiative as normal, ambusher included, and the fight proceeds.
+**Stealth & Ambush** — a check against DC = 10 + the highest Soul on the side you're approaching. You roll your own; the GM rolls for creatures. Soul is the obvious stat, but any stat you can argue for and the table agrees to works. Success: the ambusher's first attack auto-hits — no RPS, no defense, and Evade doesn't save you. **Your side gets one auto-hit, not one each**, and there's no window for a second before initiative. Then everyone rolls initiative as normal, ambusher included.
 
 In any of these, discarding a card whose name meaningfully fits the action grants **Advantage** (roll 3d10, drop the lowest).
 
