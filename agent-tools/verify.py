@@ -165,6 +165,70 @@ def check_decks(canon):
                   f'{n} decks')
 
 
+def check_character_decks(canon):
+    """The other deck format — the one player characters use.
+
+    Creatures write a deck on one line; player characters write a heading and
+    per-colour bullet lists. check_decks reads the first shape only, so a deck
+    written the second way slid past unread while the suite reported PASS —
+    demonstrated 2026-08-18 by putting a card named SWORD OF NONSENSE in Iron's
+    deck and watching 21/21 pass. The coverage assertion could not see it
+    either, because it counts using the pattern it already matches: it found no
+    one-line decks in the file, checked none, and confirmed 0 = 0.
+
+    Deliberately does NOT check deck size against total stats. That invariant is
+    real for creatures — a creature's deck IS its stat line — and false for
+    players, whose deck starts at 9 and gains a card every session while stats
+    move rarely. The two coincide exactly once, at character creation, where 2/2/2
+    plus three points is 9 and the starting deck is 9. Reading that coincidence as
+    a shared rule would make the Oracle ritual illegal from session two onward.
+    """
+    colors = {'Red': 'R', 'Blue': 'B', 'Green': 'G'}
+    bad = []
+    files = 0
+    for path in sorted(glob.glob('characters/*/mechanics.md')):
+        text = open(path, encoding='utf-8').read()
+        head = re.search(r'^## Deck — (\d+) cards \((\d+)R / (\d+)B / (\d+)G\)\s*$', text, re.M)
+        # A "## Deck" heading alone means nothing — six character files use it for
+        # signature-card pointers, which check_refs already validates. What marks
+        # a card *list* is the per-colour sub-blocks, so trigger on those rather
+        # than on the heading, and avoid an exemption list naming the six.
+        if not head and re.search(r'^\*\*(Red|Blue|Green)\*\*\s*$', text, re.M):
+            bad.append(f'{path}: has a per-colour card list this check cannot parse — '
+                       f'expected a "## Deck — N cards (XR / YB / ZG)" header above it')
+            continue
+        if not head:
+            continue
+        files += 1
+        f = '/'.join(path.split('/')[-2:])
+        total, declared = int(head.group(1)), {'Red': int(head.group(2)),
+                                               'Blue': int(head.group(3)),
+                                               'Green': int(head.group(4))}
+        block = text[head.end():]
+        block = block[:block.index('\n---')] if '\n---' in block else block
+        listed = {c: [] for c in colors}
+        current = None
+        for line in block.split('\n'):
+            m = re.match(r'^\*\*(Red|Blue|Green)\*\*\s*$', line)
+            if m:
+                current = m.group(1)
+            elif line.startswith('- ') and current:
+                listed[current].append(line[2:].strip())
+        if sum(declared.values()) != total:
+            bad.append(f'{f}: header says {total} cards but the colour counts sum to '
+                       f'{sum(declared.values())}')
+        for col in colors:
+            if len(listed[col]) != declared[col]:
+                bad.append(f'{f}: declares {declared[col]} {col}, lists {len(listed[col])}')
+            for name in listed[col]:
+                if name not in canon:
+                    bad.append(f'{f}: {name!r} is not a card in cards/')
+                elif canon[name]['color'] and canon[name]['color'] != colors[col]:
+                    bad.append(f"{f}: {name} is {canon[name]['color']}, listed under {col}")
+    return report('character decks (card resolution, colour counts)', bad,
+                  f'{files} deck' + ('' if files == 1 else 's'))
+
+
 def check_stat_blocks():
     bad = []
     n = 0
@@ -1222,6 +1286,7 @@ def main():
     canon = load_canon()
     check_card_format(canon)
     check_decks(canon)
+    check_character_decks(canon)
     check_stat_blocks()
     check_refs()
     check_sim(canon)
