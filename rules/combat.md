@@ -218,7 +218,7 @@ Taking cover is an action. You must be in the Backline, and the fiction must jus
 
 **Anchored — Evade.** You gain one Evade the moment you take cover, and another at the start of each of your turns while you hold it.
 
-Cover ends the instant you attack. **Attacking means playing a card as the attacker** — a Counter Attack does not end cover, and neither does Thorns. Both happen while you are defending. It also ends on Anchored's own terms (`rules/keywords/anchored.md`): if you leave the Backline, whether you moved yourself or an enemy moved you, and if you Collapse.
+Cover ends the instant you attack. **Attacking means playing a card as the attacker** — a Counter Attack does not end cover, and neither does Thorns. Both happen while you are defending. It also ends on Anchored's own terms (`rules/keywords/anchored.md`): if you move, or if you Collapse. **Cover requires the Backline.** Leave it by any means and cover ends — Rushdown included, which does not end Anchored generally but does end this.
 
 ### Confined Spaces
 

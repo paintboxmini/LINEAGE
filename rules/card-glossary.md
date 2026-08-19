@@ -15,7 +15,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 **At the table.** How a status is physically tracked — the card itself as the marker, and the three cases where status tokens supplement it — is in `rules/combat.md`, Ongoing Effects.
 
 **Anchored**
-A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
+A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately, and does not resume if you return to the position you held. It also ends immediately if you Collapse. **Rushdown is the one movement that does not end it** (`rules/keywords/rushdown.md`).
 
 **Armour X**
 Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.
@@ -103,7 +103,7 @@ Cannot voluntarily change position until the end of your next turn. Applied imme
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
 **Rushdown**
-Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. Costs an action. For what the two positions are and how they gate targeting, see `rules/combat.md`, Positioning.
+Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. Costs an action. **Rushdown does not end the target's Anchored effects**, unlike every other movement. For what the two positions are and how they gate targeting, see `rules/combat.md`, Positioning.
 
 **Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.

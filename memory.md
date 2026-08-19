@@ -85,6 +85,18 @@ Worth keeping because it is the kind of rule that gets reintroduced by accident 
 
 **The engine was already right.** Statuses are plain counters on the combatant holding them, with no reference to who applied them, so caster removal cannot reach them — confirmed empirically, not just read. The only collapse-time cleanup is `_clear_ongoing_on_collapse`, and it clears Anchored-type effects on the collapsing combatant's *own* list, which is Anchored's own rule about its holder rather than anything about casters.
 
+## Rushdown Is Closing Distance, Not a Shove
+
+Drew, 2026-08-18: *"forced movement breaks a stance in the player fantasy correctly. but in the player fantasy rushdown is not a forced movement option. it's in the name rushdown. that's a combatant moving in quickly towards another combatant... a combatant moving towards an anchored combatant doesn't break the stance."*
+
+So Rushdown is the one movement that does not end Anchored. Every other forced reposition — HAUL, HEAVE, REPEL, SYSTEM PURGE, THE ROOM LEANS IN, CENSURE's and ROLLING THUNDER's pushes — still does, and correctly.
+
+Worth keeping because the exception is not derivable from the mechanic. Mechanically Rushdown relocates the *target* from Backline to Frontline, which reads as forced movement and is why the rule needed stating explicitly rather than following from anything. The justification lives in what the name depicts, not in what the card does to the board.
+
+**Cover is the sub-case that goes the other way.** Cover is an Anchored effect, so the Rushdown exception would carry — except cover states the Backline as a requirement of its own, so being pulled out of it ends cover regardless. Drew ruled the Rushdown/Anchored interaction; the Cover consequence is an inference from cover's own stated requirement, flagged as such when written.
+
+**The related engine bug, fixed the same day.** The tick gated every Anchored payout on `who.position == o['anchor']`, which *suspended* a stance while its holder was displaced and silently resumed it if they came back. The written rule had always said "ends immediately." Drew: *"suspending anchored is a bug."* Fixed by making `Combatant.position` a property whose setter ends anchored effects on a real change — one place instead of the thirty-odd call sites that move people, the same reasoning that made `max_hp` computed rather than patched.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

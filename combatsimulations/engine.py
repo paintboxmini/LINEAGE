@@ -193,29 +193,29 @@ def _ongoing_support_tick(engine, who):
         if o['kind'] == 'synchrony':
             for a in [who] + engine.allies(who):
                 engine.heal(a, 2, source=who)   # bumped 1 -> 2, 2026-07-24
-        elif o['kind'] == 'ledger' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'ledger':
             engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
-        elif o['kind'] == 'dig_in' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'dig_in':
             who.resist += 1
-        elif o['kind'] == 'rooted_oath' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'rooted_oath':
             a = o.get('target')
             if a is not None and not a.collapsed:
                 a.deadly += 1
-        elif o['kind'] == 'rooted_oath_def' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'rooted_oath_def':
             a = o.get('target')
             if a is not None and not a.collapsed:
                 a.resist += 1
-        elif o['kind'] == 'patience_def' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'patience_def':
             a = o.get('target')
             if a is not None and not a.collapsed:
                 engine.heal(a, 3, source=who)
-        elif o['kind'] == 'seed_deadly' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'seed_deadly':
             who.deadly += 2
             spent.append(o)
-        elif o['kind'] == 'seed_resist' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'seed_resist':
             who.resist += 2
             spent.append(o)
-        elif o['kind'] == 'anchor_heal' and who.position == o.get('anchor', who.position):
+        elif o['kind'] == 'anchor_heal':
             # IRON GRIP (2) / PATIENCE OF STONE (5, bumped 2026-07-24) — used
             # to share a single hardcoded 'anchor_heal2' kind, which meant
             # bumping one card's heal silently bumped the other's too. Now
@@ -417,7 +417,16 @@ def _rushdown(actor, target):
     content.py — the card's own Effect just does nothing that turn rather
     than being illegal to play."""
     if actor.position == 'frontline' and target.position == 'backline':
-        target.position = 'frontline'
+        # Rushdown does not break the target's stance — Drew, 2026-08-18: in the
+        # player fantasy Rushdown is a combatant closing on another, not a shove,
+        # and someone moving toward an anchored combatant does not break it.
+        # Every other forced reposition still ends Anchored; see the position
+        # setter on Combatant.
+        target._rushdown_move = True
+        try:
+            target.position = 'frontline'
+        finally:
+            target._rushdown_move = False
 
 
 def _discard_or_return(who, card):
@@ -602,7 +611,7 @@ class Combatant:
         self.discard = []
         self.exile = []
 
-        self.position = 'frontline'
+        self._position = 'frontline'
         self._position_at_last_turn_start = self.position  # ROLLOUT/RHYTHM BREAK
         self._repositioned_since_last_turn = False          # tracking
         self._ever_repositioned = False  # STILL COUNTING: cumulative across
@@ -746,6 +755,33 @@ class Combatant:
 
     def eff(self, stat):
         return max(0, getattr(self, stat) + self.stat_mod[stat])
+
+    @property
+    def position(self):
+        return self._position
+
+    @position.setter
+    def position(self, value):
+        """Anchored ends the moment position changes, and does not resume.
+
+        The tick used to gate every Anchored payout on
+        `who.position == o['anchor']`, which *suspended* the benefit while the
+        holder was displaced and silently switched it back on if they returned.
+        The written rule had always said "ends immediately"; Drew called the
+        suspend-and-resume behaviour a bug on 2026-08-18. Ending it here, at the
+        one place position can change, rather than at each of the 30-odd call
+        sites that change it — same reason `max_hp` became computed rather than
+        patched.
+
+        Rushdown is the single exception, by Drew's ruling the same day.
+        """
+        old = getattr(self, '_position', None)
+        self._position = value
+        if old is None or old == value:
+            return
+        if getattr(self, '_rushdown_move', False):
+            return
+        self.ongoing = [o for o in getattr(self, 'ongoing', []) if 'anchor' not in o]
 
     @property
     def max_hp(self):
