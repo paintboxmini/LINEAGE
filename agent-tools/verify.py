@@ -813,6 +813,57 @@ def check_rules_sections():
                   f'{total} sections across {len(SECTION_INVENTORY)} files')
 
 
+# The three files that carry the turn's action table. combat.md owns it; the
+# other two are voices restating it (rules/README.md).
+ACTION_TABLE_FILES = ('rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md')
+
+# Every action, in the order combat.md lists them. Four of these were missing
+# from all three tables on 2026-08-18 while being defined elsewhere as costing
+# your action: Stand Up (Collapse & Death), Destroy a Wound and Rest in Place
+# (the two status cards), and Grapple, which had just been made a general action
+# at chase contact and never added. A player reading the table — the one place
+# they look for what a turn can do — could not learn that spending an action is
+# the only way to clear a Wound mid-fight.
+ACTIONS = ('Play a Card', 'Move Position', 'Use an Item', 'Rushdown', 'Take Cover',
+           'Interact', 'Wait', 'Flee', 'Grapple', 'Stand Up', 'Destroy a Wound',
+           'Rest in Place')
+
+
+def check_action_tables():
+    """All three action tables list the same actions, and that list is ACTIONS.
+
+    Both directions again: a table missing an action fails, and a table carrying
+    one this list does not know about fails too, so adding an action is a
+    deliberate act rather than something that drifts into one file.
+
+    The rows are read from the action table specifically — located by its
+    `| Action |` header and stopped at the first non-row line — rather than by
+    matching table rows anywhere in the file. The first version did the latter
+    and swept in the Range Matrix and the glossary tables, which would have
+    needed an exclusion list to suppress. An exclusion list is the same hole one
+    level up: it silences whatever it happens to name and hides whatever it does
+    not."""
+    bad = []
+    for path in ACTION_TABLE_FILES:
+        lines = open(path, encoding='utf-8').read().split('\n')
+        head = next((i for i, l in enumerate(lines)
+                     if re.match(r'^\| Action \|', l)), None)
+        if head is None:
+            bad.append(f'{path}: no action table found (its `| Action |` header is gone)')
+            continue
+        listed = set()
+        for line in lines[head + 2:]:          # +2 skips the header separator
+            if not line.startswith('| '):
+                break
+            listed.add(line.split('|')[1].strip())
+        for missing in [a for a in ACTIONS if a not in listed]:
+            bad.append(f'{path}: action "{missing}" is not in its action table')
+        for extra in sorted(listed - set(ACTIONS)):
+            bad.append(f'{path}: "{extra}" is in the action table but not in ACTIONS')
+    return report('action tables agree', bad,
+                  f'{len(ACTIONS)} actions across {len(ACTION_TABLE_FILES)} files')
+
+
 def check_rules_jurisdiction():
     """rules/README.md records which file owns which topic (Drew, 2026-08-18,
     Phase 1 of splitting rules/). A map is only worth having while it is
@@ -1113,6 +1164,7 @@ def main():
     check_restatements()
     check_rules_jurisdiction()
     check_rules_sections()
+    check_action_tables()
     check_entry_structure()
     check_bucket_lists(canon)
     check_card_conservation()

@@ -59,6 +59,10 @@ Each turn: **one Action, plus one Item Action.**
 | Interact | Anything noncombat the fiction allows |
 | Wait | See below |
 | Flee | Attempt to leave the fight — see Fleeing Combat |
+| Grapple | Grab, tackle or pin instead of hurting — a contested check |
+| Stand Up | Get up off the ground once you're above 0 HP |
+| Destroy a Wound | Get rid of 1 Wound from your hand |
+| Rest in Place | Get rid of every Exhaust in your hand at once |
 
 Your **Item Action** does exactly what its name says and nothing else. Using an Item is also legal as your regular Action — spend both that way and you use two items in one turn, at the cost of not attacking.
 

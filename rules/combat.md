@@ -129,6 +129,10 @@ On your turn, you may take **one Action**, plus **one Item Action:**
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. See below. Counts as "waiting." |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+| Grapple | Grab, tackle or pin rather than harm — a contested check. `cards/subdue.md` is the card that does it deliberately. |
+| Stand Up | Get off the ground while Down. Only available once you are above 0 HP. See Collapse & Death below. |
+| Destroy a Wound | Destroy 1 Wound from your hand (`rules/status-cards/wound.md`). |
+| Rest in Place | Destroy every Exhaust in your hand, all at once (`rules/status-cards/exhaust.md`). |
 
 **Item Action.** It does exactly what its name says and nothing else — it cannot be spent on any other option in the table above. Using an Item is also still legal as your regular Action, so a combatant who spends both this way uses 2 items in a single turn, at the cost of not attacking (or taking any other action) that turn.
 

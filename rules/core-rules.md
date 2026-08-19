@@ -40,6 +40,10 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 | Interact | Any noncombat action |
 | Wait | Take no action; reinsert yourself anywhere later in the order. Can't be used two turns in a row. See `rules/combat.md` |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
+| Grapple | Contested check to grab, tackle or pin rather than harm |
+| Stand Up | Get off the ground while Down (needs HP above 0) |
+| Destroy a Wound | Destroy 1 Wound from your hand |
+| Rest in Place | Destroy every Exhaust in your hand at once |
 
 Your Item Action does exactly what its name says and nothing else. Your Action may also be spent to Use an Item instead of one of the options above — a combatant who spends both this way uses 2 items in one turn, at the cost of not attacking (or otherwise acting) that turn.
 
