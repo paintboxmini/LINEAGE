@@ -2,7 +2,7 @@
 
 *Status — Colorless*
 Cannot be played. It occupies a card slot while in your hand, and an Exhaust does not leave on its own.
-Where it enters is whatever the source card says — hand or deck. A card that adds Exhaust to your hand costs you the slot immediately; a card that shuffles Exhaust into your deck costs you nothing until you draw it.
+Where it enters is whatever the source card says — hand or deck. **If the source does not say, it is shuffled into your deck**, the same default a Wound uses. A card that adds Exhaust to your hand costs you the slot immediately; a card that shuffles Exhaust into your deck costs you nothing until you draw it.
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 

@@ -178,7 +178,7 @@ class Battle:
             return
         target.deck.insert(0, self.wound_card)   # bottom of deck — deck.pop() draws from the end
 
-    def insert_exhaust(self, target, n=1, to_deck=False):
+    def insert_exhaust(self, target, n=1, to_deck=True):
         """See engine.py's Duel.insert_exhaust for the full reasoning. Kept
         signature-identical on purpose — content.py calls this through whichever
         engine is running, so a divergence here is a silent behaviour split."""

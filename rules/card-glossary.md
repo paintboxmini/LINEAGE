@@ -174,7 +174,7 @@ Removal: story dependent. Exiling it destroys it (see Exile).
 ### EXHAUST
 *Status — Colorless*
 Cannot be played. It occupies a card slot while in your hand, and an Exhaust does not leave on its own.
-Where it enters is whatever the source card says — hand or deck. A card that adds Exhaust to your hand costs you the slot immediately; a card that shuffles Exhaust into your deck costs you nothing until you draw it.
+Where it enters is whatever the source card says — hand or deck. **If the source does not say, it is shuffled into your deck**, the same default a Wound uses. A card that adds Exhaust to your hand costs you the slot immediately; a card that shuffles Exhaust into your deck costs you nothing until you draw it.
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 
@@ -195,7 +195,7 @@ Removal: Story dependent.
 ### WOUND
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
-Where it enters is whatever the source card says; a card that only says you gain a Wound puts it in your hand. A card that puts one in a deck **shuffles** it in, so it arrives when it arrives.
+Where it enters is whatever the source card says. **If the source does not say, it is shuffled into your deck** — as is any Wound a card puts in a deck, so it arrives when it arrives.
 In combat, use your action to destroy 1 Wound from your hand.
 Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/out-of-combat.md`), so clearing several Wounds in one sitting costs time, not repetition.
 On a long rest, all Wounds are destroyed.

@@ -1263,10 +1263,10 @@ def _strip_one_status(target, count=1):
 # split).
 def _unmake_effect(engine, me, foe):
     remove_positive_status(foe)
-    engine.insert_exhaust(me, 2)
+    engine.insert_exhaust(me, 2, to_deck=False)   # card says "to your hand"
 def _unmake_defense(engine, me, foe):
     remove_positive_status(foe)
-    engine.insert_exhaust(me, 2)
+    engine.insert_exhaust(me, 2, to_deck=False)   # card says "to your hand"
 
 # LAST RESORT — Immunity (card-glossary.md): the actual negation logic
 # lives once in both engines' attack(), checked before anything else is even
@@ -1743,7 +1743,7 @@ def _overdrive_payout(engine, me, foe):
     me.resist += 1
     me._quick = True
     me.evade += 1
-    engine.insert_exhaust(me, 2)
+    engine.insert_exhaust(me, 2, to_deck=False)   # card says "to your hand"
 
 def _overdrive_effect(engine, me, foe):
     _overdrive_payout(engine, me, foe)

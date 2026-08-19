@@ -935,7 +935,7 @@ class Duel:
             return
         target.deck.insert(self.rng.randrange(len(target.deck) + 1), self.wound_card)
 
-    def insert_exhaust(self, target, n=1, to_deck=False):
+    def insert_exhaust(self, target, n=1, to_deck=True):
         """Exhaust (card-glossary.md). WHERE it lands is the source card's choice,
         not a property of the keyword — widened 2026-08-02 (Drew) after the Ashfall
         arc turned out to be built entirely on deck-insertion while the glossary
