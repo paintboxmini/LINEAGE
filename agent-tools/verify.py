@@ -572,6 +572,10 @@ CLAIMS = {
         [r'no defense,? (?:and )?no (Evade or Protect)'],
         {'rules/combat.md', 'rules/core-rules.md', 'rules/player-guide.md'},
     ),
+    'stat spread cap': (
+        [r'[Nn]o stat may exceed another by more than (\d)'],
+        {'rules/character-creation.md', 'rules/core-rules.md', 'rules/player-guide.md'},
+    ),
     'Oracle ritual — cards revealed and taken': (
         # The Distance step, stated numerically in two rules files and echoed in
         # Oracle/baseoracledeck.md and places/island-in-a-ship.md. gm-guide.md
