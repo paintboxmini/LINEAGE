@@ -1,3 +1,5 @@
 # Anchored
 
-A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately, and does not resume if you return to the position you held. It also ends immediately if you Collapse. **Rushdown is the one movement that does not end it** (`rules/keywords/rushdown.md`).
+A benefit that persists as long as you hold your position, triggering at the start of each of your turns. The card names its target, which is not always you — PATIENCE OF STONE heals its caster, ROOTED OATH buffs an ally, SUBDUE holds the defender Rooted.
+
+Moving ends it immediately, whether you moved yourself or an enemy moved you, and it does not resume if you return. Collapsing ends it too. **Rushdown is the one movement that does not** (`rules/keywords/rushdown.md`).

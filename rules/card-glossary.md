@@ -15,16 +15,18 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 **At the table.** How a status is physically tracked — the card itself as the marker, and the three cases where status tokens supplement it — is in `rules/combat.md`, Ongoing Effects.
 
 **Anchored**
-A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately, and does not resume if you return to the position you held. It also ends immediately if you Collapse. **Rushdown is the one movement that does not end it** (`rules/keywords/rushdown.md`).
+A benefit that persists as long as you hold your position, triggering at the start of each of your turns. The card names its target, which is not always you — PATIENCE OF STONE heals its caster, ROOTED OATH buffs an ally, SUBDUE holds the defender Rooted.
+
+Moving ends it immediately, whether you moved yourself or an enemy moved you, and it does not resume if you return. Collapsing ends it too. **Rushdown is the one movement that does not** (`rules/keywords/rushdown.md`).
 
 **Armour X**
 Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.
 
 Armour applies **before** Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker's Effect resolves normally, it simply has no damage to work with.
 
-**Armour stacks additively into a single value.** Armour 2 and Armour 1 held at once are Armour 3, reducing every attack by 3 for the rest of the fight. This is a different shape of stacking from Resist and Vulnerable: those stack as charges, each spent on one attack. Armour is never spent, so its stacks add up instead of queuing up.
+**Armour stacks additively into a single value.** Armour 2 and Armour 1 held at once are Armour 3. Resist and Vulnerable stack as charges, each spent on one attack; Armour is never spent, so it adds instead of queuing.
 
-Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
+Anything that says "reduce damage by X" is Armour X.
 
 **Blind**
 50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
@@ -70,9 +72,20 @@ Initiative Shift always moves the token the full requested distance. If that mov
 
 **Tracking skips and bonus turns.** Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that's earned an immediate extra turn instead; take that turn, then remove the chip.
 
-**With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.
+**With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies at exactly 3 and nowhere else.
 
-Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. A shift applies normally even to a token that already repositioned itself with Wait this combat. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.
+**Several shifts at once** sum into one net shift before anything moves.
+
+**A positive shift that overshoots** — carrying its target past the point where it must act now, including a full lap back to the marker's own slot — gives that target an immediate extra turn instead, taken as soon as the current turn finishes.
+
+- The combatant acting when this happens is not shorted a turn and does not get a second one. The slide moves them to a new slot, and the marker skips that slot when it reaches it.
+- That skip pays for the bonus turn. **A bystander displaced by the slide, with no bonus turn behind it, acts normally** wherever they landed.
+
+**A negative shift that overshoots** is the mirror. The token still moves and the wheel still slides in full, but the target's turn is skipped the first time the marker reaches its new slot; it acts normally from the next lap.
+
+**Wait does not protect a token.** A shift applies normally to one that already repositioned itself.
+
+**Reshifting a token that holds a pending chip removes that chip.** It then resolves under the new shift, wherever it lands.
 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
@@ -103,11 +116,9 @@ Resist stacks. Each stack halves one successful attack; only one stack applies t
 At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue").
 
 **Rooted**
-Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
+Cannot voluntarily change position until the end of your next turn. It applies the moment it resolves and fades at the **end** of that turn, not the start. Forced repositioning — Rushdown, Pull and the like — still works; Rooted blocks only your own Move Position action.
 
 **Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (SUBDUE — see Anchored, above), that target gains a fresh Rooted at the start of each of your turns for as long as you remain Anchored, full duration each time. Moving ends your own Anchored and stops further re-application; it does not strip a Rooted already in effect.
-
-**Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
 **Rushdown**
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. Costs an action. **Rushdown does not end the target's Anchored effects**, unlike every other movement. For what the two positions are and how they gate targeting, see `rules/combat.md`, Positioning.
@@ -178,7 +189,7 @@ Where it enters is whatever the source card says — hand or deck. **If the sour
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 
-**Exhaust always clears in bulk; a Wound comes off one at a time.** That is the difference between them. Rest once and every Exhaust you are carrying is gone at once, wherever it sits. Wounds have to be answered individually — one per action, one per short rest.
+**Exhaust clears in bulk; a Wound comes off one at a time.** That is the difference between them.
 
 ---
 
@@ -200,4 +211,4 @@ In combat, use your action to destroy 1 Wound from your hand.
 Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/out-of-combat.md`), so clearing several Wounds in one sitting costs time, not repetition.
 On a long rest, all Wounds are destroyed.
 
-**Cards and actions reach your hand and discard pile. Only a rest reaches your deck.** That gap is deliberate (Drew, 2026-08-18): a Wound shuffled into your deck is a cost you carry out of the fight, and nothing in combat can reach in and take it back.
+**Cards and actions reach your hand and discard pile. Only a rest reaches your deck.**

@@ -7,4 +7,4 @@ In combat, use your action to destroy 1 Wound from your hand.
 Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/out-of-combat.md`), so clearing several Wounds in one sitting costs time, not repetition.
 On a long rest, all Wounds are destroyed.
 
-**Cards and actions reach your hand and discard pile. Only a rest reaches your deck.** That gap is deliberate (Drew, 2026-08-18): a Wound shuffled into your deck is a cost you carry out of the fight, and nothing in combat can reach in and take it back.
+**Cards and actions reach your hand and discard pile. Only a rest reaches your deck.**

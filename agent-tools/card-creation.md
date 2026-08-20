@@ -103,6 +103,7 @@ Before assigning or changing a tag, check `world/lineage.md`.
 Before finalizing a card:
 
 - Check `rules/card-glossary.md` for every keyword used.
+- **Never restate a keyword's duration or scope on the card.** Write "gains Rooted", not "gains Rooted until the end of their next turn" — the glossary owns that, and a card repeating it is a second copy that can drift. Moved here from `rules/keywords/rooted.md` on 2026-08-18: it is an instruction to whoever writes cards, and the glossary is printed for players.
 - Check relevant rules files for mechanics the card touches.
 - Check `world/lineage.md` for source/tag questions.
 - Inspect nearby cards in `cards/` for established wording and formatting.

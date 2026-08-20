@@ -6,4 +6,4 @@ Where it enters is whatever the source card says — hand or deck. **If the sour
 Use your action to rest in place: every Exhaust card in your hand is destroyed.
 A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.
 
-**Exhaust always clears in bulk; a Wound comes off one at a time.** That is the difference between them. Rest once and every Exhaust you are carrying is gone at once, wherever it sits. Wounds have to be answered individually — one per action, one per short rest.
+**Exhaust clears in bulk; a Wound comes off one at a time.** That is the difference between them.

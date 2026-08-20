@@ -177,6 +177,12 @@ So the built-in flaw Drew described is real, and it is specifically a flaw in **
 
 **Caveats, because the numbers are only as good as the model.** The simulator has no equipment or items, decks here are constructed rather than Oracle-grown, and the policies are heuristics — a bot holding eight cards may exploit them harder than a person would, which would inflate the Mind result specifically. An earlier run of this same question reported a cleaner "no specialist ever wins" result; it was wrong because it ran only one ordering for the balanced condition. Both orderings are summed now.
 
+## Wounds Are Reachable in Hand and Discard, Never in Deck
+
+Drew, 2026-08-18: the gap between what clears a Wound and where Wounds live is deliberate. Cards and actions reach your hand and discard pile; only a rest reaches your deck. A Wound shuffled into your deck is a cost you carry out of the fight, and nothing in combat can reach in and take it back.
+
+Recorded here rather than in `rules/status-cards/wound.md`, where I originally put it. That file is printed and handed to players, and its own preamble says to state the rule and stop — *"no why it's shaped that way... if it's a live design question worth remembering, it goes in `memory.md`, not here."* I wrote the reasoning into the handout specifically so a later pass would not "fix" the gap, which was the right worry and the wrong location.
+
 ## A Deck Is As Big As You Are
 
 Drew, 2026-08-18: *"decks don't grow forever, instead a new card from the oracle replaces an old card the player chooses. the maximum is equal to total stats."*
