@@ -149,7 +149,7 @@ def _resolve_follow_up(engine, actor):
 # Drew's direct call 2026-07-24 made it universal (rules/card-glossary.md,
 # Anchored) — every position-anchored ongoing effect ends on Collapse, not
 # just the ones whose own card text happened to say so.
-_ENDS_ON_COLLAPSE = {'synchrony', 'slipstream', 'dig_in', 'rooted_oath', 'rooted_oath_def',
+_ENDS_ON_COLLAPSE = {'cover', 'synchrony', 'slipstream', 'dig_in', 'rooted_oath', 'rooted_oath_def',
                      'patience_def', 'seed_deadly', 'seed_resist', 'anchor_heal', 'ledger'}
 
 
@@ -195,6 +195,11 @@ def _ongoing_support_tick(engine, who):
                 engine.heal(a, 2, source=who)   # bumped 1 -> 2, 2026-07-24
         elif o['kind'] == 'ledger':
             engine.heal(who, 3, source=who)   # THE LEDGER NEVER CLOSES — self-only, Anchored
+        elif o['kind'] == 'cover':
+            # Take Cover (rules/combat.md, Positioning -> Cover): "Anchored —
+            # Evade. One when you take cover, and another at the start of each
+            # of your turns while you hold it."
+            who.evade += 1
         elif o['kind'] == 'dig_in':
             who.resist += 1
         elif o['kind'] == 'rooted_oath':
@@ -780,6 +785,11 @@ class Combatant:
         if old is None or old == value:
             return
         if getattr(self, '_rushdown_move', False):
+            # Cover is the exception to the exception: it states the Backline as
+            # a requirement of its own, so leaving by any means ends it
+            # (rules/combat.md, Cover), even a Rushdown that spares every other
+            # Anchored effect.
+            self.ongoing = [o for o in getattr(self, 'ongoing', []) if o.get('kind') != 'cover']
             return
         self.ongoing = [o for o in getattr(self, 'ongoing', []) if 'anchor' not in o]
 
@@ -1102,6 +1112,9 @@ class Duel:
 
     # --- one attack action ---
     def attack(self, attacker, defender, card):
+        # "Cover ends the instant you attack" — attacking means playing a card
+        # as the attacker, which is exactly here.
+        attacker.ongoing = [o for o in attacker.ongoing if o.get('kind') != 'cover']
         attacker.hand.remove(card)
         attacker._attacked_this = True             # for PATIENCE
         attacker._last_hit = 0  # reset; set when a hit lands (Rend reads this)
@@ -1538,6 +1551,15 @@ class Duel:
                 elif kind == 'move':
                     who.position = 'backline' if who.position == 'frontline' else 'frontline'
                     self._say(f"{who.name} moves to {who.position}")
+                elif kind == 'cover':
+                    # Backline only, and the fiction must justify it — the sim
+                    # has no fiction, so position is the whole gate here.
+                    if who.position == 'backline' and not any(
+                            o.get('kind') == 'cover' for o in who.ongoing):
+                        who.ongoing.append({'kind': 'cover', 'owner': who,
+                                            'anchor': 'backline'})
+                        who.evade += 1        # the first one lands immediately
+                        self._say(f"{who.name} takes cover")
                 elif kind == 'destroy_exhaust':
                     removed = sum(1 for c in who.hand if c.is_status and c.name == 'EXHAUST')
                     who.hand = [c for c in who.hand if not (c.is_status and c.name == 'EXHAUST')]
