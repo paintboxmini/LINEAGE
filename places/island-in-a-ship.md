@@ -80,7 +80,7 @@ Questions she asks:
 The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
 The Oracle is permitted to remember what it has already shown.
 
-**Distance** — Three cards revealed. Player chooses one. That card enters their deck.
+**Distance** — Three cards revealed. Player chooses one. That card enters their deck; if the deck is full, it replaces one the player chooses, and the replaced card goes to their bank (`rules/character-creation.md`, The Bank).
 The other two are the GM's call, and it is a read on the table rather than a rule: a card someone still wants goes back into the deck; a card that was passed over and will keep being passed over leaves it.
 
 ### The Oracle Deck

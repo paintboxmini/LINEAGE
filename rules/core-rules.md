@@ -179,8 +179,9 @@ See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, a
 
 ## Advancement
 
-**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1; the other 2 go back or leave the pool, GM's call). See `places/island-in-a-ship.md`.  
+**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1; at max deck size it replaces a card of the player's choice, which goes to their bank; the other 2 go back or leave the pool, GM's call). See `places/island-in-a-ship.md`.  
 **Stat increases:** Rare. After pivotal character development. GM's call. No stat may exceed another by more than 3 — player characters only; creatures and NPCs are built differently.  
+**Deck size:** cards equal to total stats, never more. A deck grows only when a stat does; otherwise an Oracle card replaces one, and the replaced card goes to the player's **bank** — unlimited, swapped only during the ritual, and no status cards.  
 **Deck changes:** Cards can be added, removed, or forced in as curses/status.
 
 ---

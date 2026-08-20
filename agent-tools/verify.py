@@ -176,12 +176,17 @@ def check_character_decks(canon):
     either, because it counts using the pattern it already matches: it found no
     one-line decks in the file, checked none, and confirmed 0 = 0.
 
-    Deliberately does NOT check deck size against total stats. That invariant is
-    real for creatures — a creature's deck IS its stat line — and false for
-    players, whose deck starts at 9 and gains a card every session while stats
-    move rarely. The two coincide exactly once, at character creation, where 2/2/2
-    plus three points is 9 and the starting deck is 9. Reading that coincidence as
-    a shared rule would make the Oracle ritual illegal from session two onward.
+    Deck size is checked against total stats where a stat block exists. That
+    reverses what this docstring said for a few hours on 2026-08-18, and the
+    reversal is Drew's: "decks don't grow forever, instead a new card from the
+    oracle replaces an old card the player chooses. the maximum is equal to total
+    stats." I had argued the opposite from the fact that 2/2/2 plus three points
+    is 9 and the starting deck is 9 — reading the match as a coincidence when it
+    is the rule. Both archived playtest decks are one card over (9 stats, 10
+    cards), which is the old grow-forever behaviour visible in the record.
+
+    A character with a deck and no stat block is unconstrained rather than
+    illegal — Iron is an NPC who fights nothing and has no stats to cap against.
     """
     colors = {'Red': 'R', 'Blue': 'B', 'Green': 'G'}
     bad = []
@@ -204,8 +209,13 @@ def check_character_decks(canon):
         total, declared = int(head.group(1)), {'Red': int(head.group(2)),
                                                'Blue': int(head.group(3)),
                                                'Green': int(head.group(4))}
+        # Stop at the next section, not just at a rule. Missing the `## ` case
+        # let the deck list swallow a following `## Bank`'s bullets and count
+        # them as Green cards — found 2026-08-18 while negative-testing the bank.
         block = text[head.end():]
-        block = block[:block.index('\n---')] if '\n---' in block else block
+        for stop in ('\n---', '\n## '):
+            if stop in block:
+                block = block[:block.index(stop)]
         listed = {c: [] for c in colors}
         current = None
         for line in block.split('\n'):
@@ -217,6 +227,27 @@ def check_character_decks(canon):
         if sum(declared.values()) != total:
             bad.append(f'{f}: header says {total} cards but the colour counts sum to '
                        f'{sum(declared.values())}')
+        stats = re.search(r'^\*\*Mind (\d+) / Body (\d+) / Soul (\d+)', text, re.M)
+        if stats:
+            cap = sum(int(x) for x in stats.groups())
+            if total > cap:
+                bad.append(f'{f}: {total} cards against total stats {cap} — a deck holds '
+                           f'cards equal to total stats and never more')
+        # A bank is optional, unlimited, and may hold no status cards.
+        bank = re.search(r'^## Bank\s*$', text, re.M)
+        if bank:
+            block = text[bank.end():]
+            block = block[:block.index('\n## ')] if '\n## ' in block else block
+            # Status cards live in rules/status-cards/, never in cards/, so a
+            # banked one would otherwise fail as "not a card" — true, but the
+            # wrong reason, and the wrong thing to tell whoever wrote it.
+            statuses = {os.path.basename(s)[:-3].replace('-', ' ').upper()
+                        for s in glob.glob('rules/status-cards/*.md')}
+            for name in re.findall(r'^- (.+)$', block, re.M):
+                if name.upper() in statuses:
+                    bad.append(f'{f}: {name} is a status card and cannot be banked')
+                elif name not in canon:
+                    bad.append(f'{f}: banked {name!r} is not a card in cards/')
         for col in colors:
             if len(listed[col]) != declared[col]:
                 bad.append(f'{f}: declares {declared[col]} {col}, lists {len(listed[col])}')

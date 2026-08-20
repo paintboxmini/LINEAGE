@@ -28,7 +28,7 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Every rules file still holds the sections it held | `check_rules_sections` |
 | All three action tables list the same actions | `check_action_tables` |
 | Every stat block in the repo sits inside a scope that validates it | `check_stat_block_scope` |
-| Every card in a character's deck list resolves, in the right colour, in the declared count | `check_character_decks` |
+| Every card in a character's deck or bank resolves; the deck holds no more cards than total stats; no status card is banked | `check_character_decks` |
 | Every card named in a deck resolves to a real card, in the right colour | `check_decks` |
 | **A check reads everything it claims to read** | coverage assertions in `check_decks`, `check_stat_blocks` |
 | Every card appears in at least one bucket | `check_bucket_lists` |

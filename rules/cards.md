@@ -4,6 +4,10 @@ Cards are the primary language of Tales Untold.
 
 In combat, you don't declare an action and roll — you play a card. The card tells you what you're attempting, how hard it hits, and what happens when it lands or fails. Your hand is your tactical options. Your deck is your character in motion.
 
+**Cards are not objects in Eclipseria.** Nobody in the world holds one, drops one, or finds one in a drawer. A card is a way of acting that somebody learned — *"every technique, every card, every way of surviving a fight was learned from something"* (`world/lineage.md`) — and the deck is how that is handled at the table, not a thing the character is carrying. The bank is the same: real, yours, and nowhere.
+
+This is why a card can be traded for a memory or a secret at the Underground Bazaar and why nothing is ever bought with coin there. What changes hands is the experience, not a piece of card.
+
 ---
 
 ## Card Anatomy

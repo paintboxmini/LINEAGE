@@ -177,6 +177,32 @@ So the built-in flaw Drew described is real, and it is specifically a flaw in **
 
 **Caveats, because the numbers are only as good as the model.** The simulator has no equipment or items, decks here are constructed rather than Oracle-grown, and the policies are heuristics — a bot holding eight cards may exploit them harder than a person would, which would inflate the Mind result specifically. An earlier run of this same question reported a cleaner "no specialist ever wins" result; it was wrong because it ran only one ordering for the balanced condition. Both orderings are summed now.
 
+## A Deck Is As Big As You Are
+
+Drew, 2026-08-18: *"decks don't grow forever, instead a new card from the oracle replaces an old card the player chooses. the maximum is equal to total stats."*
+
+**I had argued the opposite and been wrong about the evidence.** A character starts with 2/2/2 plus three points — nine total stats — and a nine-card deck. I read that match as a coincidence and used it to argue *against* a cap, on the grounds that capping would make the Oracle ritual illegal from session two. It does not: it makes the ritual a **replacement** rather than an addition, which is a better ritual. The match was the rule, not a coincidence, and it also unifies players with creatures, whose decks have always equalled their stat lines.
+
+The consequence is that a deck stops being an accumulation and becomes a **shape**. Growth still happens — a stat increase widens the deck by one — but the ordinary session asks what you are willing to put down, not what you would like to add. **This is what makes the bank necessary rather than optional:** something has to hold what comes out, or every Oracle card is also a small funeral.
+
+**Evidence the old behaviour was real:** both archived playtest decks are exactly one card over — nine total stats, ten cards, one Oracle pick each from Session 1. Left as they are; archives record what happened.
+
+## Cards Are Not Objects in Eclipseria
+
+Drew, 2026-08-18: *"cards and the bank exist outside of the world. they aren't physically present in the world."*
+
+Nobody in the world holds a card, drops one, or finds one in a drawer. A card is a way of acting that somebody learned (`world/lineage.md`: *"every technique, every card, every way of surviving a fight was learned from something"*), and the deck is how that is handled at the table. The bank is the same — real, yours, and nowhere.
+
+It explains two things that were already true and previously unexplained: why the Underground Bazaar trades a card for a memory or a secret, and why nothing there is ever bought with coin. What changes hands is the experience. There was never a piece of card to hand over.
+
+## Value Is Demand for a Lineage, Not Rarity
+
+Drew, 2026-08-18: *"we have no rarity tiers, which I don't think we should... a card trader evaluates the value of the card, but they may also have a desire for cards with specific tags that they are willing to trade more for."*
+
+Cards sit at roughly one power level, so price cannot come from power. It comes from **tags** — a tag names the tradition a card still comes from, and a trader assembling MASON work has no use for a WEALD card at any price and every use for a common MASON one.
+
+That gives the soul economy a denomination it lacked: untagged commons are small change, a wanted tag settles a trade on its own. It also keeps the bazaar's existing character intact — *"a party with money and no leverage will find nothing worth having"* was already describing exactly this, without a mechanism behind it.
+
 ## Hold Off on Unheld Lore During Story-Crafting
 
 Drew (2026-08-15): "I want to make an explicit design note to not touch unheld lore when story crafting." The People of Promise's larger arc (their "final current," and Kaine's own thread) is genuinely a ways out — not near-term work. Past that, Unheld-focused story content generally, and *especially* `world/creation-myth-the-three-cuts.md`, are the campaign's endgame material, tied to the council/Pendragon Attempt payoff (`world/the-regency.md`). Don't reach for either early just because a scene brushes up against the coastline or a funeral.

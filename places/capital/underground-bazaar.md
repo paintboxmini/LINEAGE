@@ -59,6 +59,10 @@ The soul economy crystallizes experience into tradeable form, and a card *is* cr
 
 **Nothing here is bought with coin.** A card is experience, so it costs experience: another card, a real memory, or a secret with weight to it. A party that offers gold for a card is not haggling badly — they have misunderstood the shop, and the vendor will say so once and then stop talking.
 
+**There are no rare cards. There are wanted ones.** Cards sit at roughly one power level and the bazaar has no tiers — what moves a price is **tags** (`world/lineage.md`). A tag names the tradition a card still comes from, and a trader who wants a particular lineage will pay past reason for it while ignoring something objectively better. A vendor assembling MASON work has no use for your WEALD card at any price, and every use for a common MASON one.
+
+**So a price is several cards, or one that is wanted.** Untagged commons are the small change of the soul economy — the bazaar takes them from anyone and they add up. A tagged card the vendor actually wants can settle the whole trade on its own. Which of the two a party is holding decides whether they walk in as customers or as somebody worth talking to.
+
 **The Pig's debt is unaffected either way** (below). He is not interested in pieces of people; he has a whole bazaar for that. What the party owes him accrues because they were here, not because of what they traded.
 
 **A bought card is a lineage you cannot personally back.** Its tag does not change hands — the tag records the tradition, not the transaction (`world/lineage.md`). Somebody walks out of here holding a WEALD card having never stood in the Weald. That is not a loophole; it is exactly what this market is, and the tag is what makes it legible.

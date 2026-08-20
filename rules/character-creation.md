@@ -157,12 +157,22 @@ Advancement is the Oracle ritual, run by each player at every session's end (`pl
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
    The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
    The Oracle is permitted to remember what it has already shown.
-3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+3. **Distance** — the GM reveals **3 cards**; the player chooses **1**. If the deck is at its maximum — cards equal to total stats — the new card **replaces** one already in it, the player's choice, and the replaced card goes to their bank (see The Bank, above). A deck below maximum simply gains it.
    The other two are the GM's call. A card the table still wants goes back into the pool. A card that was passed over and will keep being passed over leaves it.
 
 This is the default rhythm of growth.
 
-The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
+The deck begins at 9 cards, which is also your starting total stats (2/2/2 plus three points). That is not a coincidence: **your deck holds as many cards as your stats total, and never more.**
+
+A deck grows only when you do. Since stat increases are rare and the Oracle comes every session, the ordinary case is **replacement** — the card you take replaces one already in the deck, chosen by you. What comes out is not destroyed; it goes to your bank.
+
+### The Bank
+
+Cards you own but are not currently carrying. There is no limit on it.
+
+- **Only during the Oracle ritual.** Cards move between deck and bank at end of session and at no other time. You cannot retune mid-adventure.
+- **Status cards cannot be banked.** A Wound or an Exhaust is in your deck because something put it there; banking one would be free removal and would empty the word "consequence" of meaning.
+- **A banked card is still yours.** It can come back on a later swap, or be spent — the Underground Bazaar is the one place a card changes hands (`places/capital/underground-bazaar.md`), and a bank is what makes paying several cards for one survivable rather than self-mutilating.
 
 ### Stat Increases
 Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
