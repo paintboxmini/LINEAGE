@@ -30,7 +30,7 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Every stat block in the repo sits inside a scope that validates it | `check_stat_block_scope` |
 | Every card in a character's deck or bank resolves; the deck holds no more cards than total stats; no status card is banked | `check_character_decks` |
 | Every card named in a deck resolves to a real card, in the right colour | `check_decks` |
-| **A check reads everything it claims to read** | coverage assertions in `check_decks`, `check_stat_blocks` |
+| **A check reads everything it claims to read** | coverage assertions in `check_decks`, `check_stat_blocks`; `check_decks` also detects decks written in a form it cannot parse |
 | Every card appears in at least one bucket | `check_bucket_lists` |
 | Every name listed in a bucket or archetype resolves to a real card | `check_bucket_lists` |
 | Every entry folder has one README, one Contents block, and a Contents list matching its files | `check_entry_structure` |

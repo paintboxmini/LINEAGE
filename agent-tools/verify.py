@@ -161,8 +161,49 @@ def check_decks(canon):
         bad.append(f'COVERAGE: {on_disk} deck lines exist across entry files, this check read {n}. '
                    'A deck line the check never parsed reports identical to a clean one — '
                    'that is how 6 of 37 went silently unvalidated on 2026-08-17.')
-    return report('bestiary decks (size, per-color counts, card resolution)', bad,
-                  f'{n} decks')
+
+    # The assertion above compares the strict pattern against itself, so it can
+    # only see a deck line it already matched. A deck written some *other* way is
+    # invisible to both halves — 0 found, 0 expected, green. That is the gap Drew
+    # asked about on 2026-08-18: "can we update check_decks to tell the
+    # difference?" between a file that is clean and one that was never read.
+    #
+    # So look for deck-shaped things the parser did not consume. Three forms,
+    # each one a real bug that has happened or nearly happened:
+    #   - a "**Deck" line that is not in the strict form (the prose deck line
+    #     that hid Briar Scratcher's deck for a night)
+    #   - the player format, "## Deck — N cards (XR / YB / ZG)", in a creature
+    #     entry, where deck size must equal total stats and the player rules
+    #     do not apply
+    #   - per-colour bullet blocks under a Deck heading, same reason
+    #
+    # A "## Deck" section holding signature-card *pointers* is not a deck and is
+    # not flagged; seven character entries use it that way and check_refs already
+    # validates the paths.
+    statted_no_deck = []
+    for path in _stat_files():
+        text = open(path, encoding='utf-8').read()
+        has_stats = re.search(r'^\*\*Mind \d+ / Body \d+ / Soul \d+', text, re.M)
+        parsed_here = re.findall(r'\*\*Deck \(\d+ — ', text)
+        for line in text.split('\n'):
+            if line.startswith('**Deck') and not re.match(r'\*\*Deck \(\d+ — \d+ Blue / \d+ Red / \d+ Green\):\*\*', line):
+                bad.append(f'{path}: deck line not in the readable form -> {line[:70]}')
+        # The player format is correct in characters/ — check_character_decks
+        # owns it there. In bestiary/ it is wrong, because a creature's deck is
+        # its stat line and the player rules do not apply.
+        if path.startswith('bestiary/'):
+            if re.search(r'^## Deck — \d+ cards', text, re.M):
+                bad.append(f'{path}: uses the player deck format, but a creature deck must '
+                           f'equal its total stats')
+            elif not parsed_here and re.search(r'^\*\*(Red|Blue|Green)\*\*\s*$', text, re.M):
+                bad.append(f'{path}: has a per-colour card list the deck parser did not read')
+        if has_stats and not parsed_here:
+            statted_no_deck.append(path)
+
+    detail = f'{n} decks'
+    if statted_no_deck:
+        detail += f'; {len(statted_no_deck)} statted entries have no deck yet'
+    return report('bestiary decks (size, per-color counts, card resolution)', bad, detail)
 
 
 def check_character_decks(canon):
