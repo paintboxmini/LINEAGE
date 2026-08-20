@@ -3,6 +3,8 @@
 **Cards:** `cards/drag-under.md`, `cards/hullguard.md`, `cards/patient-wait.md`
 **Mind 3 / Body 7 / Soul 3 — HP 27**
 **Creature Threat Rating:** 13
+*Deck size marked **bespoke** provisionally, 2026-08-18, and it is not settled. A 13-stat creature would carry a 13-card deck; this one carries 6. That may be deliberate — a small deck cycles fast, which suits something that "wins by patience, not pursuit" — or it may predate the rule. Fermata is bespoke because it is a boss; Hullback is a field encounter and has no such licence. Needs a decision.*
+
 **Deck (6 — 1 Blue / 4 Red / 1 Green):** PATIENT WAIT *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE *(red)* · DRAG UNDER *(green)*
 
 ## Encounter Setup

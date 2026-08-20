@@ -135,18 +135,41 @@ def parse_decks():
             got = {'blue': [], 'red': [], 'green': []}
             for grp, col in re.findall(r'([^·]+?)\*\((blue|red|green)\)\*', m.group(5)):
                 got[col] += [x.strip() for x in grp.split(',') if x.strip()]
-            yield path, total, {'blue': b, 'red': r, 'green': g}, got
+            # The stat line this deck is built from: the nearest one above it, so
+            # multi-variant entries pair each deck with its own variant's block.
+            pre = text[:m.start()]
+            sm = list(re.finditer(r'\*\*Mind (\d+) / Body (\d+) / Soul (\d+)', pre))
+            stats = tuple(int(x) for x in sm[-1].groups()) if sm else None
+            bespoke = 'bespoke' in text[max(0, m.start() - 400):m.end() + 200].lower()
+            yield path, total, {'blue': b, 'red': r, 'green': g}, got, stats, bespoke
 
 
 def check_decks(canon):
     colors = {'blue': 'B', 'red': 'R', 'green': 'G'}
     bad = []
     n = 0
-    for path, total, want, got in parse_decks():
+    for path, total, want, got, stats, bespoke in parse_decks():
         n += 1
         f = '/'.join(path.split('/')[-2:])
         if sum(want.values()) != total:
             bad.append(f'{f}: declared total {total} != {want}')
+        # THE invariant of the whole deck system, and it was never enforced:
+        # invariants.md listed "deck size equals total stats; per-colour counts
+        # equal the individual stats" against check_decks, and check_decks only
+        # compared the declared total to its own colour sums. Proven 2026-08-18
+        # by moving Briarbound to Body 5 — a 9-stat creature with a 7-card deck
+        # passed. 37 of 39 decks already conform, so the invariant was real and
+        # observed; only the check was missing.
+        if stats and not bespoke:
+            M, B, S = stats
+            if total != M + B + S:
+                bad.append(f'{f}: deck of {total} against total stats {M + B + S} — '
+                           f'a deck equals its stat line, or is marked bespoke')
+            for col, k, stat, sn in (('blue', want['blue'], M, 'Mind'),
+                                     ('red', want['red'], B, 'Body'),
+                                     ('green', want['green'], S, 'Soul')):
+                if k != stat:
+                    bad.append(f'{f}: {k} {col} against {sn} {stat}')
         for col, k in want.items():
             if len(got[col]) != k:
                 bad.append(f'{f}: {col} lists {len(got[col])}, declares {k}')
@@ -191,12 +214,15 @@ def check_decks(canon):
         # The player format is correct in characters/ — check_character_decks
         # owns it there. In bestiary/ it is wrong, because a creature's deck is
         # its stat line and the player rules do not apply.
-        if path.startswith('bestiary/'):
-            if re.search(r'^## Deck — \d+ cards', text, re.M):
-                bad.append(f'{path}: uses the player deck format, but a creature deck must '
-                           f'equal its total stats')
-            elif not parsed_here and re.search(r'^\*\*(Red|Blue|Green)\*\*\s*$', text, re.M):
-                bad.append(f'{path}: has a per-colour card list the deck parser did not read')
+        # One deck format, everywhere, since 2026-08-18 (Drew: "let's format to
+        # match"). The per-colour bullet form players used is retired — it said
+        # the same thing in different notation, and the two cases share an
+        # invariant now that player decks also equal their stat line.
+        if re.search(r'^## Deck — \d+ cards', text, re.M):
+            bad.append(f'{path}: uses the retired player deck format — write it as '
+                       f'**Deck (N — B Blue / R Red / G Green):**')
+        elif not parsed_here and re.search(r'^\*\*(Red|Blue|Green)\*\*\s*$', text, re.M):
+            bad.append(f'{path}: has a per-colour card list the deck parser did not read')
         if has_stats and not parsed_here:
             statted_no_deck.append(path)
 
@@ -206,99 +232,33 @@ def check_decks(canon):
     return report('bestiary decks (size, per-color counts, card resolution)', bad, detail)
 
 
-def check_character_decks(canon):
-    """The other deck format — the one player characters use.
+def check_character_banks(canon):
+    """Banked cards resolve, and no status card is banked.
 
-    Creatures write a deck on one line; player characters write a heading and
-    per-colour bullet lists. check_decks reads the first shape only, so a deck
-    written the second way slid past unread while the suite reported PASS —
-    demonstrated 2026-08-18 by putting a card named SWORD OF NONSENSE in Iron's
-    deck and watching 21/21 pass. The coverage assertion could not see it
-    either, because it counts using the pattern it already matches: it found no
-    one-line decks in the file, checked none, and confirmed 0 = 0.
-
-    Deck size is checked against total stats where a stat block exists. That
-    reverses what this docstring said for a few hours on 2026-08-18, and the
-    reversal is Drew's: "decks don't grow forever, instead a new card from the
-    oracle replaces an old card the player chooses. the maximum is equal to total
-    stats." I had argued the opposite from the fact that 2/2/2 plus three points
-    is 9 and the starting deck is 9 — reading the match as a coincidence when it
-    is the rule. Both archived playtest decks are one card over (9 stats, 10
-    cards), which is the old grow-forever behaviour visible in the record.
-
-    A character with a deck and no stat block is unconstrained rather than
-    illegal — Iron is an NPC who fights nothing and has no stats to cap against.
-    """
-    colors = {'Red': 'R', 'Blue': 'B', 'Green': 'G'}
+    Was check_character_decks until 2026-08-18, when the player deck format was
+    retired in favour of the one creatures use — its deck half became dead code
+    the moment there was only one format, and a checker reporting "0 decks" is
+    worse than no checker, because it reads like coverage."""
+    statuses = {os.path.basename(s)[:-3].replace('-', ' ').upper()
+                for s in glob.glob('rules/status-cards/*.md')}
     bad = []
-    files = 0
+    banks = 0
     for path in sorted(glob.glob('characters/*/mechanics.md')):
         text = open(path, encoding='utf-8').read()
-        head = re.search(r'^## Deck — (\d+) cards \((\d+)R / (\d+)B / (\d+)G\)\s*$', text, re.M)
-        # A "## Deck" heading alone means nothing — six character files use it for
-        # signature-card pointers, which check_refs already validates. What marks
-        # a card *list* is the per-colour sub-blocks, so trigger on those rather
-        # than on the heading, and avoid an exemption list naming the six.
-        if not head and re.search(r'^\*\*(Red|Blue|Green)\*\*\s*$', text, re.M):
-            bad.append(f'{path}: has a per-colour card list this check cannot parse — '
-                       f'expected a "## Deck — N cards (XR / YB / ZG)" header above it')
+        m = re.search(r'^## Bank\s*$', text, re.M)
+        if not m:
             continue
-        if not head:
-            continue
-        files += 1
+        banks += 1
         f = '/'.join(path.split('/')[-2:])
-        total, declared = int(head.group(1)), {'Red': int(head.group(2)),
-                                               'Blue': int(head.group(3)),
-                                               'Green': int(head.group(4))}
-        # Stop at the next section, not just at a rule. Missing the `## ` case
-        # let the deck list swallow a following `## Bank`'s bullets and count
-        # them as Green cards — found 2026-08-18 while negative-testing the bank.
-        block = text[head.end():]
-        for stop in ('\n---', '\n## '):
-            if stop in block:
-                block = block[:block.index(stop)]
-        listed = {c: [] for c in colors}
-        current = None
-        for line in block.split('\n'):
-            m = re.match(r'^\*\*(Red|Blue|Green)\*\*\s*$', line)
-            if m:
-                current = m.group(1)
-            elif line.startswith('- ') and current:
-                listed[current].append(line[2:].strip())
-        if sum(declared.values()) != total:
-            bad.append(f'{f}: header says {total} cards but the colour counts sum to '
-                       f'{sum(declared.values())}')
-        stats = re.search(r'^\*\*Mind (\d+) / Body (\d+) / Soul (\d+)', text, re.M)
-        if stats:
-            cap = sum(int(x) for x in stats.groups())
-            if total > cap:
-                bad.append(f'{f}: {total} cards against total stats {cap} — a deck holds '
-                           f'cards equal to total stats and never more')
-        # A bank is optional, unlimited, and may hold no status cards.
-        bank = re.search(r'^## Bank\s*$', text, re.M)
-        if bank:
-            block = text[bank.end():]
-            block = block[:block.index('\n## ')] if '\n## ' in block else block
-            # Status cards live in rules/status-cards/, never in cards/, so a
-            # banked one would otherwise fail as "not a card" — true, but the
-            # wrong reason, and the wrong thing to tell whoever wrote it.
-            statuses = {os.path.basename(s)[:-3].replace('-', ' ').upper()
-                        for s in glob.glob('rules/status-cards/*.md')}
-            for name in re.findall(r'^- (.+)$', block, re.M):
-                if name.upper() in statuses:
-                    bad.append(f'{f}: {name} is a status card and cannot be banked')
-                elif name not in canon:
-                    bad.append(f'{f}: banked {name!r} is not a card in cards/')
-        for col in colors:
-            if len(listed[col]) != declared[col]:
-                bad.append(f'{f}: declares {declared[col]} {col}, lists {len(listed[col])}')
-            for name in listed[col]:
-                if name not in canon:
-                    bad.append(f'{f}: {name!r} is not a card in cards/')
-                elif canon[name]['color'] and canon[name]['color'] != colors[col]:
-                    bad.append(f"{f}: {name} is {canon[name]['color']}, listed under {col}")
-    return report('character decks (card resolution, colour counts)', bad,
-                  f'{files} deck' + ('' if files == 1 else 's'))
+        block = text[m.end():]
+        block = block[:block.index('\n## ')] if '\n## ' in block else block
+        for name in re.findall(r'^- (.+)$', block, re.M):
+            if name.upper() in statuses:
+                bad.append(f'{f}: {name} is a status card and cannot be banked')
+            elif name not in canon:
+                bad.append(f'{f}: banked {name!r} is not a card in cards/')
+    return report('character banks (cards resolve, no statuses)', bad,
+                  f'{banks} bank' + ('' if banks == 1 else 's'))
 
 
 def check_stat_blocks():
@@ -1358,7 +1318,7 @@ def main():
     canon = load_canon()
     check_card_format(canon)
     check_decks(canon)
-    check_character_decks(canon)
+    check_character_banks(canon)
     check_stat_blocks()
     check_refs()
     check_sim(canon)

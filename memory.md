@@ -191,6 +191,16 @@ Drew, 2026-08-18: the gap between what clears a Wound and where Wounds live is d
 
 Recorded here rather than in `rules/status-cards/wound.md`, where I originally put it. That file is printed and handed to players, and its own preamble says to state the rule and stop — *"no why it's shaped that way... if it's a live design question worth remembering, it goes in `memory.md`, not here."* I wrote the reasoning into the handout specifically so a later pass would not "fix" the gap, which was the right worry and the wrong location.
 
+## The Deck Cap Is What Keeps Status Cards Heavy
+
+Drew, 2026-08-18, on why the cap beats the plan it replaced: *"my previous plan was more convoluted — managing player decks by forcing periodic removals, bazaar trading to reduce deck size, and status cards to dilute larger decks. the bank and max deck size handles it better, without losing any of the interesting mechanics. plus it keeps status card impact more meaningful. larger decks care less about status cards."*
+
+That last line is the part worth keeping. **A Wound in a 9-card deck is one draw in nine; the same Wound in a 20-card deck is one in twenty.** An uncapped deck quietly defuses every consequence the game can hand out, so the longer a campaign ran the less anything stuck. Capping the deck holds the denominator still and keeps a Wound costing what it cost on day one.
+
+It also retires three mechanisms that existed to fight the same problem from different directions — forced periodic removal, bazaar trading as deck-shrinking, and status cards as deliberate dilution. None of them are lost: trading is still trading, removal is still available, and status cards still do what they do. They simply stopped having to also serve as deck-size management.
+
+**The 10-card playtest decks are not evidence against the cap.** Kevin's and Drew's daughter's session ran before either the bank or the cap existed, which is exactly why both decks sit one card over.
+
 ## A Deck Is As Big As You Are
 
 Drew, 2026-08-18: *"decks don't grow forever, instead a new card from the oracle replaces an old card the player chooses. the maximum is equal to total stats."*
