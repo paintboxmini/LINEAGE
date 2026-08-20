@@ -115,6 +115,7 @@ Talk it through first (Agent Workflow, step 3) — once we're both on the same p
 Check it against current canon before writing.
 Escalate genuine conflicts, ambiguity, or propagation failures rather than resolving them silently.
 Log every ship in changelog.md — one entry, at the top, the moment it lands.
+**Check your work before you claim it.** `python3 agent-tools/verify.py` green before every commit, `agent-tools/conserve.py` either side of any move or restructure, and `agent-tools/checking-your-work.md` for why a passing check is not the same as a checked thing.
 
 ## Agent Workflow
 

@@ -7,6 +7,7 @@
 | `repo-orientation` | read when working on canon |
 | `compiled-crib.md` | Practical efficiency tool — read INSTEAD of full canon for routine generation; refresh when canon shifts |
 | `red-team.md` | Reviewing any content for issues before it goes to canon |
+| `checking-your-work.md` | **Read before verifying anything.** The eight ways a check passes without checking, each with the instance that taught it |
 | `archetypes.md` | Building a new card — a design compass, not canon; never surfaces at the table |
 | `design-principles.md` | What makes content well-made — the standard red-team and alignment checks measure against |
 | `alignment-checker.md` | Verifying new content fits its intended context, plus the Soul Pass and Finding the Angle for when it reads flat |
