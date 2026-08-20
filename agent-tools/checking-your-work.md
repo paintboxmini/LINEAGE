@@ -66,6 +66,25 @@ Three cards were reported as unable to remove a held status because none of them
 
 ---
 
+## What is actually enforced, and what is only written here
+
+Drew, 2026-08-18: *"on those 8 lessons, did we actually implement any changes based off of them? or only partially?"* Audited rather than assumed. **One is enforced, four are partly enforced, three are practice only** — and saying so is the point, because a doctrine that reads as eight solved problems is the same failure it describes.
+
+| # | Lesson | Status |
+|---|---|---|
+| 1 | A check that does not exercise anything | **Practice only.** Nothing makes a new check prove it can fail. The habit is real and unenforced |
+| 2 | Coverage that counts itself | **Partial.** `check_stat_block_scope` counts from outside; `check_decks` looks for deck-shaped things it did not read. No general mechanism |
+| 3 | A stated invariant nothing enforces | **Partial.** `check_invariants_index` holds the mapping in both directions. It cannot prove a check tests what its row claims — the exact failure that killed the deck-size invariant |
+| 4 | Clean results are the dangerous ones | **Partial.** `stat_spread_lab.py` samples many deck draws by default. Nothing enforces it for the next measurement |
+| 5 | A sweep that reports its own tally | **Practice only.** `conserve.py` covers structural sweeps; a find-and-replace across prose is still eyes and `grep` |
+| 6 | Edits that delete more than they aim at | **Partial.** `check_rules_sections` inventories `rules/` and `conserve.py` covers any move. `bestiary/` and `characters/` have no section inventory |
+| 7 | Exemption lists | **Practice only.** Two instances fixed; nothing detects the next one |
+| 8 | Absence read as evidence | **Enforced as process** — `agent-tools/red-team.md` step 3c |
+
+**Lesson 3 recurred while this file was being written.** `check_character_decks` was renamed to `check_character_banks` that same afternoon, `invariants.md` kept citing the old name, and the index pointed at a function that no longer existed. Found by auditing, not by any check — which is why `check_invariants_index` now exists.
+
+**The pattern in the gaps is worth reading.** Everything automatable here is *structural*: does a name resolve, does a count match, did a section survive. Everything left as practice is *judgment*: is this test meaningful, is this exemption honest, is this number a fluke. The tooling does not shrink over time toward covering the second column, and expecting it to is how a suite ends up green and wrong.
+
 ## What to actually run
 
 | When | Run |

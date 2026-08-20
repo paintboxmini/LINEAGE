@@ -973,6 +973,39 @@ def check_action_tables():
                   f'{len(ACTIONS)} actions across {len(ACTION_TABLE_FILES)} files')
 
 
+def check_invariants_index():
+    """agent-tools/invariants.md names a check against every invariant. This
+    holds that mapping intact in both directions: a check it names must exist,
+    and a check that runs must be named.
+
+    Written 2026-08-18 after auditing the eight lessons in
+    `agent-tools/checking-your-work.md` and finding lesson 3 — a stated invariant
+    nothing enforces — had recurred within hours of being written down.
+    check_character_decks was renamed to check_character_banks that afternoon and
+    invariants.md still cited the old name, so the index pointed at a function
+    that no longer existed and nothing noticed.
+
+    Be honest about its reach: this proves the *mapping* is intact, not that a
+    check tests what its row claims. Nothing can prove that automatically — it is
+    what killed the deck-size invariant, which named a real, running check that
+    simply did not check the thing. That one stays a human job."""
+    src = open('agent-tools/verify.py', encoding='utf-8').read()
+    inv = set(re.findall(r'`(check_[a-z_]+)`',
+                         open('agent-tools/invariants.md', encoding='utf-8').read()))
+    defined = set(re.findall(r'^def (check_[a-z_]+)', src, re.M))
+    # main() calls most checks at one indent; check_print sits behind --quick.
+    called = set(re.findall(r'^\s+(check_[a-z_]+)\(', src, re.M))
+    bad = []
+    for name in sorted(inv - defined):
+        bad.append(f'invariants.md names {name}(), which does not exist in verify.py')
+    for name in sorted(defined - called):
+        bad.append(f'{name}() is defined but never called')
+    for name in sorted(called - inv):
+        bad.append(f'{name}() runs but no invariant in invariants.md names it')
+    return report('invariants index matches the checks', bad,
+                  f'{len(defined)} checks indexed')
+
+
 def check_rules_jurisdiction():
     """rules/README.md records which file owns which topic (Drew, 2026-08-18,
     Phase 1 of splitting rules/). A map is only worth having while it is
@@ -1324,6 +1357,7 @@ def main():
     check_hp_formula()
     check_restatements()
     check_rules_jurisdiction()
+    check_invariants_index()
     check_rules_sections()
     check_action_tables()
     check_stat_block_scope()

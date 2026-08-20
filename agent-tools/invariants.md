@@ -26,9 +26,12 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 | Every file restating a mechanical fact states the same value | `check_restatements` |
 | Every file in `rules/` has a declared owner, and the map names no file that is gone | `check_rules_jurisdiction` |
 | Every rules file still holds the sections it held | `check_rules_sections` |
+| The HP formula agrees everywhere it is restated | `check_hp_formula` |
+| No file lists the same cross-reference twice | `check_duplicate_refs` |
+| Every invariant here names a check that exists, and every check that runs is named here | `check_invariants_index` |
 | All three action tables list the same actions | `check_action_tables` |
 | Every stat block in the repo sits inside a scope that validates it | `check_stat_block_scope` |
-| Every card in a character's deck or bank resolves; the deck holds no more cards than total stats; no status card is banked | `check_character_decks` |
+| Every banked card resolves, and no status card is banked | `check_character_banks` |
 | Every card named in a deck resolves to a real card, in the right colour | `check_decks` |
 | **A check reads everything it claims to read** | coverage assertions in `check_decks`, `check_stat_blocks`; `check_decks` also detects decks written in a form it cannot parse |
 | Every card appears in at least one bucket | `check_bucket_lists` |
