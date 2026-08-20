@@ -1,8 +1,14 @@
 # Checking Your Work
 
-**The tedium of hand-reading every change is the problem this file exists to replace.** Drew, 2026-08-18: *"before I tried to double check my work by always going in and hand reading every change, but my god, it's tedious... I'm taking that lesson now and trying to formalize it into agent tooling, comprehensive checks whenever we make changes."*
+**Hand-checking does not go away. Tooling makes it cheap enough to actually do.** Drew, 2026-08-18: *"the lesson is to keep hand checking myself but to improve the tooling so that those hand checks get faster and easier. splitting the files and optimizing repo structure helps to navigate to the changes quickly."*
 
-Hand-reading does not scale and does not repeat. A check does both. But a check is only worth having if it can fail, and most of the failures below are checks that could not.
+That is the correct shape, and it is worth being precise about, because the tempting version — *"automate the checking so nobody has to read it"* — is wrong and produces exactly the failures listed below. **A check does not decide whether something is right. It finds the thing you need to look at and puts your eyes on it.**
+
+`conserve.py` never reported that archiving Steele was safe. It reported that 31 of 35 vanished lines were present verbatim elsewhere, so only four needed reading. `verify.py` never says "something is wrong" — it names the file and the offending item. Every check that fired during the day it was written ended with a person reading the actual thing; what changed is that they started at the right line instead of the first one.
+
+**Repo structure is the other half of the same lever.** One file per card means a card change is a self-contained diff instead of a hunk inside a fifty-card file. One file per keyword means a wording pass produces six readable diffs rather than one long one. The 2026-08-17/18 splits were not tidiness — they were an investment in every future review being small enough to actually perform.
+
+A check is only worth having if it can fail, and most of the failures below are checks that could not.
 
 Everything here is a mistake actually made, with the instance attached. None of it is hypothetical, and the instances are the point — a rule with no scar behind it gets rationalised away at 2am.
 
@@ -74,6 +80,8 @@ Three cards were reported as unable to remove a held status because none of them
 ## The one-line version
 
 **Every claim you make about the repository is a hypothesis until something fails when it is false.** Not "did I check?" but **"what would have failed if I were wrong?"** If the answer is nothing, you have not checked.
+
+And the companion, because the first line invites the wrong conclusion: **the tools exist to make looking cheap, not to make looking unnecessary.** When a check passes, you have learned that one specific thing did not go wrong. When one fails, it has handed you a line number. Both still end with you reading it.
 
 ## Related
 

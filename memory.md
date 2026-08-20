@@ -203,6 +203,16 @@ It also retires three mechanisms that existed to fight the same problem from dif
 
 **The 10-card playtest decks are not evidence against the cap.** Kevin's and Drew's daughter's session ran before either the bank or the cap existed, which is exactly why both decks sit one card over.
 
+## Structure Is a Verification Tool
+
+Drew, 2026-08-18: *"the lesson is to keep hand checking myself but to improve the tooling so that those hand checks get faster and easier. splitting the files and optimizing repo structure helps to navigate to the changes quickly."*
+
+This retroactively explains the whole 2026-08-17/18 restructure, which was framed at the time as organisation. It was not. **One file per card, one per keyword, one folder per entry — each of those makes a future diff self-contained**, and a self-contained diff is one a person will actually read. The five Wound cards that changed to shuffle-into-deck produced five one-line diffs; the same edit before the card split would have been one hunk inside a fifty-card file, shown without the context needed to judge it.
+
+The same logic runs through the checks. `conserve.py` does not certify a move as safe — it narrows 35 changed lines to the 4 worth reading. `verify.py` does not say something is wrong — it names the file and the item. **Neither replaces judgment; both aim it.**
+
+The error to avoid is the appealing one: automating the checking so nobody has to read anything. That is how a check ends up passing without exercising what it claims — the failure mode that appeared five times in a single session and is now catalogued in `agent-tools/checking-your-work.md`.
+
 ## A Deck Is As Big As You Are
 
 Drew, 2026-08-18: *"decks don't grow forever, instead a new card from the oracle replaces an old card the player chooses. the maximum is equal to total stats."*
