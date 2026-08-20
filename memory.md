@@ -171,6 +171,14 @@ Piling three advancement points into one stat (total 12) against a spread 4/4/4,
 
 So the built-in flaw Drew described is real, and it is specifically a flaw in **damage** specialisation. Mind is not a damage stat in the same way — it is an information stat wearing a damage stat's clothes.
 
+**The numbers above are wrong, and the correction matters.** Re-run on 2026-08-18 across ten deck-sampling seeds at 600 duels each, the mirror baseline (4/4/4 against itself) is **49.2% ± 1.7**, a legal Mind 3/6/3 is **52.9%** with a range of 46.8–62.3, and an illegal Mind 2/8/2 is **54.6%** with a range of 47.7–59.8. The 60.8% reported earlier was a single deck draw sitting near the top of that range, not a representative figure.
+
+Two things follow. **Mind is advantaged, but by roughly four points rather than ten** — real, much smaller than claimed. And **the spread cap does not fix it**: 3/6/3 and 2/8/2 differ by 1.7 points, inside one standard deviation. Mind at 6 is very nearly Mind at 8.
+
+**The largest single factor is which cards you drew.** Deck-draw variance (sd 3.4–3.8) is comparable to the entire stat effect. A conclusion from one deck sample is a conclusion about that sample.
+
+The cap still stands on its own terms — it is character creation's own limit, it is one rule instead of two, and it stops builds nobody intended. It just is not the answer to Mind, and it was partly recommended as one.
+
 **Resolved by capping the spread, 2026-08-18** (Drew: *"lets cap the stat spread"*). The lab picked the number: Mind-heavy builds at total 12 against a spread 4/4/4 run 50.9% at gap 2, ~54% at gaps 3–4, 56% at gap 5 and **60.8% at gap 6**, against a mirror baseline of 50.8–52.5% that sets the noise floor. **No stat may exceed another by more than 3** — which is not a new number: base 2 plus three points to spend already makes 5/2/2 the widest legal build at creation, so the cap is creation's own limit extended past creation, and it *replaces* the old "no single stat may exceed 5" rather than joining it. It cuts the 60.8% outlier to roughly 54%, inside the range the other stats already occupy. **Scoped to player characters only** — five existing stat blocks exceed a spread of 3 (Aege, Fermata, the Gluttony Abomination, Hullback, the Patient Host) and none of them are wrong: creatures and named NPCs are designed rather than budgeted. Temporary combat drains (Sunder, Wither, Erode) are also unbound.
 
 **The separate finding, from the same lab:** leaning your *deck* into your maxed colour is punished far harder than the stat itself. Body/Red mono runs 37.9–41.7% against 45.4–48.8% for the same stats on a balanced deck. The trap is the deck the max tempts you to build, not the max.
