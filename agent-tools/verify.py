@@ -153,23 +153,20 @@ def check_decks(canon):
         f = '/'.join(path.split('/')[-2:])
         if sum(want.values()) != total:
             bad.append(f'{f}: declared total {total} != {want}')
-        # THE invariant of the whole deck system, and it was never enforced:
-        # invariants.md listed "deck size equals total stats; per-colour counts
-        # equal the individual stats" against check_decks, and check_decks only
-        # compared the declared total to its own colour sums. Proven 2026-08-18
-        # by moving Briarbound to Body 5 — a 9-stat creature with a 7-card deck
-        # passed. 37 of 39 decks already conform, so the invariant was real and
-        # observed; only the check was missing.
+        # Deck size equals total stats. invariants.md claimed check_decks
+        # enforced this and it did not — proven 2026-08-18 by moving Briarbound
+        # to Body 5, where a 9-stat creature with a 7-card deck passed clean.
         if stats and not bespoke:
             M, B, S = stats
             if total != M + B + S:
                 bad.append(f'{f}: deck of {total} against total stats {M + B + S} — '
                            f'a deck equals its stat line, or is marked bespoke')
-            for col, k, stat, sn in (('blue', want['blue'], M, 'Mind'),
-                                     ('red', want['red'], B, 'Body'),
-                                     ('green', want['green'], S, 'Soul')):
-                if k != stat:
-                    bad.append(f'{f}: {k} {col} against {sn} {stat}')
+            # Per-colour counts are NOT checked against individual stats. Drew,
+            # 2026-08-18: "that's a design heuristic for optimizing. there should
+            # be some flex there. stats 4/3/2 can absolutely work with a card
+            # spread 3/3/3." Total still holds; the split is a starting point a
+            # designer may deviate from on purpose, and a check cannot tell a
+            # deliberate spread from a careless one.
         for col, k in want.items():
             if len(got[col]) != k:
                 bad.append(f'{f}: {col} lists {len(got[col])}, declares {k}')
@@ -229,7 +226,7 @@ def check_decks(canon):
     detail = f'{n} decks'
     if statted_no_deck:
         detail += f'; {len(statted_no_deck)} statted entries have no deck yet'
-    return report('bestiary decks (size, per-color counts, card resolution)', bad, detail)
+    return report('decks (size vs stats, declared counts, card resolution)', bad, detail)
 
 
 def check_character_banks(canon):
@@ -673,10 +670,6 @@ CLAIMS = {
         # other file said objects — one voice quietly narrowing its owner, and
         # the word appeared exactly once in the whole repo.
         [r'Artifacts are (resonant objects)', r'\*\*Artifacts\*\* are (resonant objects)'],
-        {'rules/character-creation.md', 'rules/core-rules.md', 'rules/player-guide.md'},
-    ),
-    'stat spread cap': (
-        [r'[Nn]o stat may exceed another by more than (\d)'],
         {'rules/character-creation.md', 'rules/core-rules.md', 'rules/player-guide.md'},
     ),
     'Oracle ritual — cards revealed and taken': (

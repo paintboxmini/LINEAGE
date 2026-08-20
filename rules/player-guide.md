@@ -16,8 +16,6 @@ All characters begin with Body 2 / Mind 2 / Soul 2, then distribute 3 more point
 | Mind | Blue cards | Hand size = Mind (minimum 2); also feeds Max HP |
 | Soul | Green cards | Initiative = 1d6 + Soul; also feeds Max HP |
 
-**No stat may exceed another by more than 3** — at creation that's automatic, and it keeps holding as you advance. You can't pour every point into one stat.
-
 **Your deck holds as many cards as your stats total, and never more.** You start at 9 of each, which is why. A deck only grows when you do — so most sessions the Oracle's card *replaces* one you already have, your choice which. What comes out isn't gone: it goes to your **bank**, which has no limit. You can swap between deck and bank during the Oracle ritual and at no other time, and status cards can never be banked.
 
 A card's color determines which stat powers its damage, no matter which stat is highest on your sheet. Stats also decide which mode you use for checks, saves, and perception (Part Two) — a spread built around Soul reads rooms and holds oaths, around Mind anticipates and controls, around Body endures, positions, and breaks things. Your stat spread is a statement about how your character solves problems.

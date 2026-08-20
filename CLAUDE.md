@@ -61,7 +61,7 @@ Canonical card rules remain in `rules/cards.md` and `rules/card-glossary.md`; li
 
 ### Bestiary and Character Entries
 
-One folder per entry. `README.md` carries the title, subtitle, a Contents list and Related Documents. `mechanics.md` carries the stat block, Creature Threat Rating, Deck line, passives, abilities, loot and combat identity — the stat block and deck stay in the same file because deck size equals total stats and per-colour counts equal the individual stats, so they are one invariant. `profile.md` carries appearance and behaviour. Anything else gets its own file.
+One folder per entry. `README.md` carries the title, subtitle, a Contents list and Related Documents. `mechanics.md` carries the stat block, Creature Threat Rating, Deck line, passives, abilities, loot and combat identity — the stat block and deck stay in the same file because deck size equals total stats, so they are one invariant (the per-colour split is a starting heuristic, not a rule — `agent-tools/npc-and-creature-creation.md`). `profile.md` carries appearance and behaviour. Anything else gets its own file.
 
 **A section earns its own file when it is substantial enough to read alone, or common enough across entries that the filename is predictable.** One-off *and* small fails both — that is a heading, not a file. Corrected 2026-08-17 after the first split produced 19 one-off sections under 300 characters, including a 143-character one.
 

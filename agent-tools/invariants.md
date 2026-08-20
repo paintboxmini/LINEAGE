@@ -21,7 +21,7 @@ Each of these is asserted by `agent-tools/verify.py` and fails the build when vi
 |---|---|
 | Max HP tracks current stats — always, including bespoke boss HP | `combatsimulations/engine.py`, `Combatant.max_hp` (computed, not stored) |
 | Every card has a legal Range, a known tag, and an Attack line | `check_card_format` |
-| Deck size equals total stats; per-colour counts equal the individual stats, unless marked bespoke | `check_decks` — **enforced from 2026-08-18; this row was false before that** |
+| Deck size equals total stats, unless marked bespoke | `check_decks` — **enforced from 2026-08-18; this row was false before that.** The per-colour half was dropped the same day: it is a design heuristic, not an invariant |
 | Max HP equals `(3 × Body) + Soul + Mind` unless explicitly bespoke | `check_stat_blocks` |
 | Every file restating a mechanical fact states the same value | `check_restatements` |
 | Every file in `rules/` has a declared owner, and the map names no file that is gone | `check_rules_jurisdiction` |

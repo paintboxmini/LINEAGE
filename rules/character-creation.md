@@ -16,11 +16,7 @@ All characters begin with:
 | Mind | 2 |
 | Soul | 2 |
 
-Distribute **3 additional points** among these stats.
-
-**No stat may exceed another by more than 3.** That is the whole limit, and it holds for the life of the character — at creation it is automatic (base 2, three points to spend, so the widest build is 5/2/2), and it is what stops advancement piling every point into one stat later.
-
-Two things it does not govern. **Temporary changes in combat ignore it** — Sunder, Wither and Erode drain a stat for the fight and are not bound by the spread. And **it applies to player characters only.** Creatures and named NPCs are built by a different process (`agent-tools/npc-and-creature-creation.md`), where the stat line is the creature's design rather than a budget spent — Fermata sits at Mind 10 / Body 12 / Soul 20 on purpose.
+Distribute **3 additional points** among these stats. No single stat may exceed 5 at character creation.
 
 ---
 
@@ -178,8 +174,6 @@ Cards you own but are not currently carrying. There is no limit on it.
 Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
 
 These moments should feel earned, not scheduled.
-
-A point cannot be added where it would put a stat more than 3 above another (see Stats, above). Spend it elsewhere, or bank it until the spread allows.
 
 ### Other Ways the Deck Changes
 

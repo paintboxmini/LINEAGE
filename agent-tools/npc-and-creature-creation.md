@@ -1,5 +1,9 @@
 # NPC and Creature Creation
 
+**Deck size equals total stats. The colour split does not have to.** The stat line is where a deck's colour spread *starts* — Mind cards blue, Body red, Soul green — and matching it exactly is a good default, not a rule. Drew, 2026-08-18: *"that's a design heuristic for optimizing. there should be some flex there. stats 4/3/2 can absolutely work with a card spread 3/3/3."* Deviate when the creature's behaviour asks for it; `verify.py` enforces the total and leaves the split alone, because a check cannot tell a deliberate spread from a careless one.
+
+A deck that should not equal total stats at all — a boss, or an optional mini-boss like the Hullback — says **bespoke** beside the deck line and why.
+
 Operational tool for creating **NPCs and creatures** in the LINEAGE setting.
 
 > **This tool is for non-player entities. It is not a player-character creation guide.**
