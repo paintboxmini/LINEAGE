@@ -18,8 +18,8 @@ Everyone can see exactly which colors are covered. That's the point — he's not
 
 **Core cards (4 Blue / 2 Red / 3 Green):**
 
-*Blue — Mind* — [DEFLECT](../cards/deflect.md), [PARADOX](../cards/paradox.md), [FOCUS](../cards/focus.md), [AXIOM](../cards/axiom.md)
+*Blue — Mind* — [DEFLECT](../../cards/deflect.md), [PARADOX](../../cards/paradox.md), [FOCUS](../../cards/focus.md), [AXIOM](../../cards/axiom.md)
 
-*Red — Body* — [STRIKE](../cards/strike.md), [BREAK](../cards/break.md)
+*Red — Body* — [STRIKE](../../cards/strike.md), [BREAK](../../cards/break.md)
 
-*Green — Soul* — [DEAD RECKONING](../cards/dead-reckoning.md), [PATIENCE](../cards/patience.md), [SHADE AWAY](../cards/shade-away.md)
+*Green — Soul* — [DEAD RECKONING](../../cards/dead-reckoning.md), [PATIENCE](../../cards/patience.md), [SHADE AWAY](../../cards/shade-away.md)

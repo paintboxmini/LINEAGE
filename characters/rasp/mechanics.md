@@ -24,10 +24,10 @@ None of it is a bespoke mechanic — each poison lands as an ordinary keyword, a
 
 **Non-signature (3 Blue / 2 Red / 2 Green):**
 
-*Blue — Mind* — [TRACE](../cards/trace.md), [SIDESTEP](../cards/sidestep.md), [FORGET](../cards/forget.md)
+*Blue — Mind* — [TRACE](../../cards/trace.md), [SIDESTEP](../../cards/sidestep.md), [FORGET](../../cards/forget.md)
 
-*Red — Body* — [STRIKE](../cards/strike.md), [DART](../cards/dart.md)
+*Red — Body* — [STRIKE](../../cards/strike.md), [DART](../../cards/dart.md)
 
-*Green — Soul* — [SEED](../cards/seed.md), [PATIENCE](../cards/patience.md)
+*Green — Soul* — [SEED](../../cards/seed.md), [PATIENCE](../../cards/patience.md)
 
 *Cut 2026-08-17 in the poison rework: STILLNESS (redundant with FORGET — both forced discard) and WITHER (no longer a core-set card; see `cards/wither.md`).*

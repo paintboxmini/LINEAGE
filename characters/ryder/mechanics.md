@@ -21,8 +21,8 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 
 **Core cards (3 Blue / 3 Red / 3 Green):**
 
-*Blue — Mind* — [PROFILE](../cards/profile.md), [FOCUS](../cards/focus.md), [CLIMB](../cards/climb.md)
+*Blue — Mind* — [PROFILE](../../cards/profile.md), [FOCUS](../../cards/focus.md), [CLIMB](../../cards/climb.md)
 
-*Red — Body* — [STRIKE](../cards/strike.md), [ENDURE](../cards/endure.md), [BRACE](../cards/brace.md)
+*Red — Body* — [STRIKE](../../cards/strike.md), [ENDURE](../../cards/endure.md), [BRACE](../../cards/brace.md)
 
-*Green — Soul* — [RENEWAL](../cards/renewal.md), [ADAPT](../cards/adapt.md), [FLOW](../cards/flow.md)
+*Green — Soul* — [RENEWAL](../../cards/renewal.md), [ADAPT](../../cards/adapt.md), [FLOW](../../cards/flow.md)

@@ -20,9 +20,9 @@ Doesn't stay in one position long enough to be predictable. Reads a repeated col
 
 **Core cards (4 Blue / 1 Red / 3 Green):**
 
-*Blue — Mind* — [CHAIN](../cards/chain.md), [TRACE](../cards/trace.md), [SHARPEN](../cards/sharpen.md), [SIDESTEP](../cards/sidestep.md)
+*Blue — Mind* — [CHAIN](../../cards/chain.md), [TRACE](../../cards/trace.md), [SHARPEN](../../cards/sharpen.md), [SIDESTEP](../../cards/sidestep.md)
 
-*Red — Body* — [CHARGE](../cards/charge.md)
+*Red — Body* — [CHARGE](../../cards/charge.md)
 
-*Green — Soul* — [PATIENCE](../cards/patience.md), [WITNESS](../cards/witness.md), [FLOW](../cards/flow.md)
+*Green — Soul* — [PATIENCE](../../cards/patience.md), [WITNESS](../../cards/witness.md), [FLOW](../../cards/flow.md)
 

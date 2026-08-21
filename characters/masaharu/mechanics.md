@@ -35,8 +35,8 @@ He is most dangerous when he has had one full cycle to read the party.
 
 **Core cards (2 Blue / 2 Red / 4 Green):** *(fixed 2026-07-23 — this deck ran a 1-card Red overcount since before this session, 4 total against Body 3; cut ENDURE as the least identity-specific of the three Red core picks. GROUNDING STANCE and BURN BRIGHT both reinforce the immovable-Backline-sniper identity directly; ENDURE was generic Resist/heal filler that any deck could run.)*
 
-*Blue — Mind* — [PROFILE](../cards/profile.md), [AXIOM](../cards/axiom.md)
+*Blue — Mind* — [PROFILE](../../cards/profile.md), [AXIOM](../../cards/axiom.md)
 
-*Red — Body* — [GROUNDING STANCE](../cards/grounding-stance.md), [BURN BRIGHT](../cards/burn-bright.md)
+*Red — Body* — [GROUNDING STANCE](../../cards/grounding-stance.md), [BURN BRIGHT](../../cards/burn-bright.md)
 
-*Green — Soul* — [DEAD RECKONING](../cards/dead-reckoning.md), [DELAY](../cards/delay.md), [PATIENCE](../cards/patience.md), [READ](../cards/read.md)
+*Green — Soul* — [DEAD RECKONING](../../cards/dead-reckoning.md), [DELAY](../../cards/delay.md), [PATIENCE](../../cards/patience.md), [READ](../../cards/read.md)

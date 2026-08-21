@@ -318,6 +318,22 @@ def check_refs():
                          r"would|should|future|planned)\b", ctx, re.I):
                 continue
             bad.append(f'{path} -> {target} (missing)')
+        # Markdown links, which this check could not see until 2026-08-21 — and
+        # 62 broken ones were sitting under characters/ the whole time. Every
+        # entry with a prose deck section links its core cards as
+        # `[PROFILE](../cards/profile.md)`; from characters/aege/ that resolves
+        # to characters/cards/profile.md and needs ../../cards/. Backtick paths
+        # are repo-relative, markdown links are relative to the file's own
+        # directory, which is why the same target is right in one form and
+        # wrong in the other, and why looking only for the form already checked
+        # found nothing wrong.
+        for m in re.finditer(r'\]\(([^)]+\.md)\)', text):
+            target = m.group(1)
+            if target.startswith(('http://', 'https://', '#')):
+                continue
+            resolved = os.path.normpath(os.path.join(os.path.dirname(path), target))
+            if not os.path.exists(resolved) and 'filename' not in target:
+                bad.append(f'{path} -> {target} (link resolves to {resolved}, missing)')
     return report('cross-references resolve', bad)
 
 

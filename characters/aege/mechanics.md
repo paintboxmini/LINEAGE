@@ -18,9 +18,9 @@ Her core picks lean the same direction — control and information over damage (
 
 **Core cards (5 Blue / 3 Red / 7 Green):**
 
-*Blue — Mind* — [PROFILE](../cards/profile.md), [FOCUS](../cards/focus.md), [ANTICIPATE](../cards/anticipate.md), [CERTAINTY](../cards/certainty.md)
+*Blue — Mind* — [PROFILE](../../cards/profile.md), [FOCUS](../../cards/focus.md), [ANTICIPATE](../../cards/anticipate.md), [CERTAINTY](../../cards/certainty.md)
 
-*Red — Body* — [GROUNDING STANCE](../cards/grounding-stance.md), [DART](../cards/dart.md), [WEATHERED](../cards/weathered.md)
+*Red — Body* — [GROUNDING STANCE](../../cards/grounding-stance.md), [DART](../../cards/dart.md), [WEATHERED](../../cards/weathered.md)
 
-*Green — Soul* — [READ](../cards/read.md), [FLOW](../cards/flow.md), [INSTINCT](../cards/instinct.md), [DELAY](../cards/delay.md), [SHADE AWAY](../cards/shade-away.md)
+*Green — Soul* — [READ](../../cards/read.md), [FLOW](../../cards/flow.md), [INSTINCT](../../cards/instinct.md), [DELAY](../../cards/delay.md), [SHADE AWAY](../../cards/shade-away.md)
 

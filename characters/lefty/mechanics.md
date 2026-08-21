@@ -16,8 +16,8 @@ Built to make a fight happen where he wants it, not where it started. HEAVE thro
 
 **Core cards (2 Blue / 3 Red / 4 Green):**
 
-*Blue — Mind* — [INTERRUPT](../cards/interrupt.md), [PARTITION](../cards/partition.md)
+*Blue — Mind* — [INTERRUPT](../../cards/interrupt.md), [PARTITION](../../cards/partition.md)
 
-*Red — Body* — [GUARD](../cards/guard.md), [PUSH](../cards/push.md), [PULL](../cards/pull.md)
+*Red — Body* — [GUARD](../../cards/guard.md), [PUSH](../../cards/push.md), [PULL](../../cards/pull.md)
 
-*Green — Soul* — [BIND](../cards/bind.md), [ROOTED OATH](../cards/rooted-oath.md), [SYNCHRONY](../cards/synchrony.md), [SHARED BURDEN](../cards/shared-burden.md)
+*Green — Soul* — [BIND](../../cards/bind.md), [ROOTED OATH](../../cards/rooted-oath.md), [SYNCHRONY](../../cards/synchrony.md), [SHARED BURDEN](../../cards/shared-burden.md)
