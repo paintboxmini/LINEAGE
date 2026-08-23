@@ -1,10 +1,5 @@
 # Aege
 
-**Mind 5 / Body 3 / Soul 7 — HP 15**
-**Creature Threat Rating:** 15
-
----
-
 ## Appearance
 
 Lean, weathered face.
