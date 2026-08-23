@@ -57,21 +57,21 @@ Reads the field before she commits to anything, same as she reads a traveler's f
 
 (5 Blue / 3 Red / 7 Green):
 
-*Blue — Mind
-- PROFILE
-- FOCUS
-- ANTICIPATE
-- CERTAINTY
+Blue
+PROFILE
+FOCUS
+ANTICIPATE
+CERTAINTY
 
-*Red — Body*
-- GROUNDING STANCE
-- DART
-- WEATHERED
+Red
+GROUNDING STANCE
+DART
+WEATHERED
 
-*Green — Soul*
-- READ
-- FLOW
-- INSTINCT
-- DELAY
-- SHADE AWAY
-- WATCHES FEET
+Green
+READ
+FLOW
+INSTINCT
+DELAY
+SHADE AWAY
+WATCHES FEET
