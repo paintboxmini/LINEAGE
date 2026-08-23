@@ -1,12 +1,12 @@
 # Elias
 
-*Archon of Change. Does not know this. See `world/seats.md` (Change) and `world/archons.md`.*
+Archon of Change. Does not know this.
 
 ---
 
 Human form, by habit not by trap. Dark hair. Silver-blue eyes. Handsome in the way that makes people want to tell him things. Charismatic without trying — or rather, trying so naturally it reads as effortless.
 
-He never uses the same name twice. The players meet him as Saile.
+He never uses the same name twice.
 
 He pushes away anything that might remind him of what he is. Not defensively — he just doesn't find it interesting. He wants to be free. Being Change incarnate is, apparently, not the same as being free.
 
@@ -18,18 +18,6 @@ Wanders. Finds the rowdiest bar in whatever settlement he's passing through. Bec
 
 When he gets drunk, his abilities leak without intention. He needs another drink — bartender's occupied — so the glass just fills. Someone notices. He does it for them too. Word spreads: strange traveler, silver eyes, makes things happen.
 
-He has transformed into a chicken to escape a husband's bedroom. This is not the only time something like this has happened.
-
----
-
-## What Happens Near Him
-
-Small things change without announcement. The party's boots are less muddy than they should be. A flower on the roadside is the wrong color. Nothing dramatic — just a slight wrongness around the edges of things.
-
-Memories of encounters with him don't match up. The party compares notes later: one remembers his coat as brown, another as green. One remembers him as taller. Nobody is lying. The details just don't hold.
-
-He trails off when asked exactly where he's from. Not evasively — he genuinely doesn't track it. *"Glasslight Reach... before that, somewhere."* He has changed so much the past doesn't stick cleanly.
-
 ---
 
 ## The Roadhouse Encounter
@@ -38,7 +26,7 @@ The party arrives at the Roadhouse to find him hanging out of an upstairs window
 
 He wants to know where they're coming from. What's it like there. He leans in when they describe it. *"Sounds like my kind of place. Gotta be better than here — Regency keeps everything on a tight leash. No fun."* Said without bitterness. He's already somewhere else in his head by the time he finishes the sentence.
 
-Came from Glasslight Reach. Avoided the capital on the way down. Doesn't like those walls. The council only cares about controlling everyone. Hard to enjoy life with them breathing down your neck.
+He's coming from Glasslight Reach. Avoided the capital on the way down. Doesn't like those walls. The council only cares about controlling everyone. Hard to enjoy life with them breathing down your neck.
 
 He doesn't ask where the party is going. Plans are not something he finds interesting. He leaves toward Vulture's Nest in the morning.
 
@@ -54,11 +42,9 @@ Nobody connects these stories to the same person. That's partly the memory fuzz,
 
 ## What He Left Behind
 
-He carried a whip once — thorn-vine, wound tight, more weapon than any blade he ever bothered learning properly. He had it a long time, the way he has anything a long time: without noticing the time passing. It changed under his hands, slowly, the way everything near him does. One day it wasn't a whip anymore. It was something rooted, something that didn't fit in a hand or a pack, something that looked, unmistakably, like it was built to be sat in.
+He carried a whip once — thorn-vine, wound tight, more weapon than any blade he ever bothered learning properly. He had it a long time, the way he has anything a long time: without noticing the time passing. It changed under his hands, slowly, the way everything near him does. One day it wasn't a whip anymore.
 
 He left it in Turnroot Weald and never went back for it.
-
-He'd say, if asked, that it stopped being useful. That's true, and it isn't the reason. Something in him recognized the shape before his mind caught up to it — a thing built to hold still, offered to the one part of him that isn't supposed to. He didn't stay to find out what sitting in it would mean. He never does. See `world/seats.md`, Change.
 
 ## What He Doesn't Know
 
