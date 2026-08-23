@@ -1,9 +1,5 @@
 # Iron
 
-*Farmer. Owns the Western Property at Briarwatch — the one with the sinkhole in it. See `quests/hollow-below-briarwatch.md`.*
-
-*No stat block. Iron does not fight, and nothing in the encounter asks him to.*
-
 ---
 
 ## Appearance & Manner
