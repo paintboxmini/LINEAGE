@@ -52,18 +52,18 @@ Reads the field before she commits to anything, same as she reads a traveler's f
 
 (5 Blue / 3 Red / 7 Green):
 
-Blue
+Blue -
 PROFILE
 FOCUS
 ANTICIPATE
 CERTAINTY
 
-Red
+Red -
 GROUNDING STANCE
 DART
 WEATHERED
 
-Green
+Green -
 READ
 FLOW
 INSTINCT
