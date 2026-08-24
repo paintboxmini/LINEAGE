@@ -50,7 +50,7 @@ Reads the field before she commits to anything, same as she reads a traveler's f
 
 ## Stats and Deck
 
-(5 Blue / 3 Red / 7 Green):
+5 Blue / 3 Red / 7 Green:
 
 Blue -
 PROFILE
