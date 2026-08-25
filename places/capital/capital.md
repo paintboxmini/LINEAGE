@@ -1,24 +1,20 @@
 # The Capital of Eclipseria
 
-The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting light. Its architecture is ancient — Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs. It is a symbol of power that has outlasted several explanations for what that power is.
+The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting light. Its architecture is ancient — Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs.
 
-After dark, the streets don't dim the way an ordinary city's would. Gilded lampposts line every major thoroughfare — crowned finials, glass domes on filigreed brass pedestals, each one holding a rose worked entirely in glass: layered petals, a stem, leaves with their veins still cut into the surface. Only the bloom actually glows, the same purple-edged shimmer the Weavers carry through the Grid, stepped down gentle enough to look grown rather than wired. The leaves aren't lit themselves; they just catch enough of that light to fluoresce green.
+After dark, the streets don't dim the way an ordinary city's would. Gilded lampposts line every major thoroughfare. Glass domes on filigreed brass pedestals, each one holding a flower worked entirely in glass: layered petals, a stem, leaves with their veins still cut into the surface. Only the bloom actually emits light, the same purple-edged shimmer the Weavers carry through the Grid, stepped down gentle enough to look grown rather than wired. The leaves aren't lit themselves; they catch enough of that light to fluoresce green.
 
-Casually, people just call it Eclipseria — same as the world it shares a name with. The distinction matters for precision, not for anyone who actually lives here.
-
-The city contains an ancient library where scholars search through forgotten texts, chasing whichever explanation for the Citadel's power hasn't been discarded yet. The marketplace draws traders from every region, including some who will not say where they came from.
-
-Eclipseria is not safe. It is merely the most legible place left.
+The city contains an ancient library where scholars search through forgotten texts. The marketplace draws traders from every region.
 
 ---
 
-## Arrival — The Southwest Gate
+## Arrival — The Gate
 
-The road drops out of the Fog Basin and the wall rises ahead like a cliff.
+The road out of the Fog Basin climbs and the city wall rises ahead.
 
-The gate itself is enormous — wrought iron, black and cold, wide enough for three wagons abreast but tall enough that the top is lost in the permanent yellow-grey haze. Gargoyles line the arch and the flanking towers: stone creatures in every stage of mid-snarl, mid-crouch, mid-leap. Some look purely ornamental. Others look like they might decide otherwise if the wrong person walks under them.
+The gate itself is enormous — wrought iron, black and cold, wide enough for three wagons abreast. Gargoyles line the arch and the flanking towers: stone creatures mid-snarl, mid-crouch, mid-leap. Some look purely ornamental. Others look like they might decide otherwise if the wrong person walks under them.
 
-Two heavy portcullises, one behind the other. The space between them is a kill box, arrow slits on both sides and murder holes overhead.
+Two heavy portcullises, one on either side. The space between them is a kill box, arrow slits on both sides and openings overhead with stone chutes, presumably to dump all manner of unpleasant liquids on unprepared foes.
 
 The guards are unfriendly by policy, not by mood. They wear the Bear's colours — dark leather over mail, the stylised bear-head badge on the left shoulder (Lord Cedric, `world/the-regency.md` — city walls and military security is his sphere). They do not banter. They do not smile for newcomers. They have seen too many people try to walk interesting things into the capital.
 
@@ -190,24 +186,8 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 
 Full stock and priced effects for Harlan and Sera: `items/capital-items.md`. The three artisans' stock is typical, not catalogued — price and build it to the same Tier 1 budget (`rules/equipment.md`) case by case.
 
-**Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle, not just habit** — see `world/the-regency.md`, Elara's entry, for the standing friction this creates.
+Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle.
 
 ---
 
-## Related Documents
-
-- `world/the-regency.md` — The governing council and its members
-- `places/capital/adventurers-hall.md` — The full contract board
-- `items/capital-items.md` — Temple of the Forge and Marketplace mechanical stock
-- `places/capital/gilded-tusk.md` — The Gilded Tusk tavern; Marcus, Sitrump, notice board, Table #9
-- `places/capital/the-waterworks.md` — The citywide utility layer beneath the capital; the Bazaar and Tavern's hidden pocket, the Cellar Custodians
-- `places/capital/underground-bazaar.md` — The Underground Bazaar; vendors, soul economy, Pig debt
-- `places/capital/underground-tavern.md` — The tavern, same level as the bazaar; Mortis, gambling, baseline drinks
-- `places/capital/the-wallows.md` — The full layer structure beneath the city; the Demon Court's domain, and the Deep
-- `factions/demon-court.md` — Warden Pazuzu's hierarchy, the capital's prison in practice
-- `factions/the-cellar-custodians.md` — Who runs the Waterworks
-- `factions/the-weavers.md` — The secret guild sharing those tunnels
-- `places/abyssal-ruins.md` — Ruins outside the city walls; active quest seeds
-- `places/fog-basin.md` — The basin surrounding the city; Fogcallers, Echoes, Pell
-- `bestiary/duskwick.md` — small stray predators worked into the Marketplace's off-hours
-- `places/the-coil.md` — the Nagamani legend, as it's known this far from the source
+ 
