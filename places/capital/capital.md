@@ -1,35 +1,41 @@
 # The Capital of Eclipseria
 
-The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting light. Its architecture is ancient — Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs.
+The city that gives the world its name sits at the heart of the known map, surrounded by dim and shifting lights of the fog basin. Its architecture is 2 parts. Ancient Roman grandeur, English stonework, centuries of addition and repair that somehow held. The Citadel rises at its center, where the Regency Council governs.
 
-After dark, the streets don't dim the way an ordinary city's would. Gilded lampposts line every major thoroughfare. Glass domes on filigreed brass pedestals, each one holding a flower worked entirely in glass: layered petals, a stem, leaves with their veins still cut into the surface. Only the bloom actually emits light, the same purple-edged shimmer the Weavers carry through the Grid, stepped down gentle enough to look grown rather than wired. The leaves aren't lit themselves; they catch enough of that light to fluoresce green.
+The city contains an ancient library where scholars search through forgotten texts. - A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake. A slim, dismissive volume shelved nearby describes an ancient tribe of healers somewhere from the south who supposedly drew suffering out of the sick and keep it themselves.
 
-The city contains an ancient library where scholars search through forgotten texts. The marketplace draws traders from every region.
+After dark, the streets are enveloped in a soft purple glow. Gilded lampposts line every major thoroughfare. Glass domes on filigreed brass pedestals, each one holding a flower worked entirely in glass. Layered petals, a stem, leaves with their veins still cut into the surface. Only the bloom actually emits light, the same purple-edged shimmer the Weavers carry through the Grid, stepped down gentle enough to look grown rather than wired. The leaves aren't lit themselves, they catch enough of that light to fluoresce green.
 
----
+Once the lamps are lit, the whole character of the place changes. The crowd thins, the smoke settles, and the lamps take over. one at nearly every stall corner and post, their purple light catching in glassware, on dew-damp canvas, in the eyes of whatever's still awake in a cage somewhere nearby. Duskwicks will start appearing. Small, quiet, working the edge between light and shadow. For a while, before the sun rises again, it is eerily beautiful.
+
+## Vertical layout
+
+topside
+the Temples, the Marketplace, the Gilded Tusk, and the Citadel that stands at the center of it all.
+
+the Waterworks
+a citywide utility layer running under the entire capital, the bazaar and tavern are a small, hidden pocket inside it, and the Demon Court that branches off into the deeper cave system that runs underneath the capital.
 
 ## Arrival — The Gate
 
 The road out of the Fog Basin climbs and the city wall rises ahead.
 
-The gate itself is enormous — wrought iron, black and cold, wide enough for three wagons abreast. Gargoyles line the arch and the flanking towers: stone creatures mid-snarl, mid-crouch, mid-leap. Some look purely ornamental. Others look like they might decide otherwise if the wrong person walks under them.
+The gate itself is enormous. Wrought iron, black and cold, wide enough for three wagons abreast. Gargoyles line the arch and the flanking towers: stone creatures mid-snarl, mid-crouch, mid-leap. Some look purely ornamental. Others look like they might decide otherwise if the wrong person walks under them.
 
 Two heavy portcullises, one on either side. The space between them is a kill box, arrow slits on both sides and openings overhead with stone chutes, presumably to dump all manner of unpleasant liquids on unprepared foes.
 
-The guards are unfriendly by policy, not by mood. They wear the Bear's colours — dark leather over mail, the stylised bear-head badge on the left shoulder (Lord Cedric, `world/the-regency.md` — city walls and military security is his sphere). They do not banter. They do not smile for newcomers. They have seen too many people try to walk interesting things into the capital.
+The guards are typically unfriendly by policy. They wear the Bear's colours — dark leather over mail, the stylised bear-head badge on the left shoulder. They do not banter. They do not smile for newcomers. They have seen too many people try to walk things into the capital unannounced.
 
-**Procedure at the gate:**
+Procedure at the gate:
 1. Halt. Weapons stay sheathed and visible.
 2. One guard steps forward with a slate — name, origin, stated business. They write slowly and deliberately.
-3. Thorough search. Bags opened on the stone. Cloaks patted. Obvious magical items get a longer look and a quiet note on the slate. They aren't looking for excuses to refuse entry — they're looking for anything that should be taxed, registered, or quietly reported upward.
+3. Thorough search. Bags opened on the stone. Cloaks patted. Obvious magical items get a longer look and a quiet note on the slate. They aren't looking for excuses to refuse entry, they're looking for anything that should be taxed, registered, and quietly reported upward.
 4. Entry fee, per the table below.
-5. A stamped clay token or paper pass is issued. *"Keep it on you. Lose it and you're a problem."*
+5. A stamped clay token or paper pass is issued. "Keep it on you. Lose it and you're a problem."
 
-They do not explain the rules of the city. They do not offer directions beyond *"Marketplace is central. Don't make us come looking."*
+They do not explain the rules of the city. They do not offer directions beyond "Marketplace is central. Don't make us come looking."
 
-If the party is carrying anything that smells of the Weald or the Wallows, the search gets colder and longer. Nothing is confiscated on a first visit unless it's actively dangerous or forbidden by a standing order.
-
-**Gate fees, per person:**
+Gate fees, per person:
 
 | Declared stay | Fee | Notes |
 |---|---|---|
@@ -39,49 +45,43 @@ If the party is carrying anything that smells of the Weald or the Wallows, the s
 | 1 month | 10 gold | Serious time in the city |
 | Indefinite / open | 25 gold | Or "register as resident" — higher friction |
 
-A day pass is trivial, a week is comfortable for a party a couple of sessions into their pacing, and a month still sits well below the cost of actual gear (`rules/equipment.md`). Overstaying or losing the pass makes you "a problem" — left to the table, not a stated mechanical penalty.
-
----
-
-## What Lies Beneath
-
-Three layers belong to the capital, stacked directly under it: **topside** — the temples, the Marketplace, the Gilded Tusk; **the Waterworks**, a citywide utility layer running under the entire capital, not just the mine shaft — the bazaar and tavern are a small, hidden pocket inside it, not a level of their own; and the Demon Court's domain below that, the capital's actual prison, run like a court in miniature and never once called a prison out loud. Below the Demon Court's tunnels, the mine stops behaving like a mine and the capital's jurisdiction stops meaning anything — that isn't the city anymore, whatever's administering it isn't the Regency. Full structure at `places/capital/the-waterworks.md`, `places/capital/the-wallows.md`.
-
----
+A day pass is trivial, a week is comfortable for a party a couple of sessions into their pacing, and a month still sits well below the cost of actual gear.
 
 ## The Marketplace
 
 The gate spits you out into noise.
 
-The road widens into a broad plaza of cracked flagstones, and the Marketplace unfolds from there in every direction at once — a living labyrinth of canvas, timber, and old stone. Stalls lean against one another like drunks. Awnings overlap. Alleys appear and disappear depending on which way the crowd is moving. Somewhere a bell is ringing that no one seems to answer.
+The road widens into a broad plaza of cracked flagstones, and the Marketplace unfolds from there. A living labyrinth of canvas, timber, and old stone. Stalls lean against one another like drunks. Awnings overlap. Shops of every kind fill the streets.
 
-The light is the same flat yellow-grey as the rest of the world, but down here it is thick with motion. Dust, spice, lamp-smoke, and the particular smell of too many people in one place for too long. Frankincense drifts from the Temple District. Something fried and unfamiliar cuts through it.
+The light is the same flat yellow-grey as the rest of the world, but here it is thick with motion. Dust, spice, lamp-smoke, and the particular smell of too many people in one place for too long. Frankincense drifts from the Temple District. Something fried and unfamiliar cuts through it.
 
-Vendors call without urgency. They have seen every kind of traveler and have already decided what you are worth. A woman in layered scarves sells vials of something that changes colour when you look away. A man with paint-stained fingers works on a portrait that shows no face at all — only shifting symbols. Children weave between legs, some of them selling nothing, some of them selling information, some of them just watching.
+The marketplace draws traders from every region.
 
-High above the stalls, the Citadel's towers are visible between the hanging lanterns. Closer, the white marble of older buildings shows through the market's temporary skin.
+Vendors call without urgency. They have seen every kind of traveler and have already decided what you are worth. A woman in layered scarves sells vials of something that changes colour when you look away. Children weave between legs, some of them selling food, some of them selling information, some of them just watching.
 
-Duskwicks will start appearing once the lamps are lit — small, quiet, working the gaps. For now it is still full day, or what passes for it.
+High above the stalls, the Citadel's towers are visible between the hanging lanterns. 
 
-Once the lamps *are* lit, the whole character of the place changes. The crowd thins, the smoke settles, and the rose-lamps take over — one at nearly every stall corner and post, their purple light catching in glassware, on dew-damp canvas, in the eyes of whatever's still awake in a cage somewhere nearby. It's the one hour the Marketplace looks like it was designed rather than accumulated. Nobody built it to be beautiful. For a while, before the gate opens again, it just is.
+The white marble of older buildings shows through the market's newer buildings.
 
-The crowd does not part for you. It simply continues, and you are already inside it.
-
-A sprawling labyrinth of stalls and shops at the city's center. Goods from every region and a few places that aren't named. Merchants from distant cultures trade alongside each other with the practiced indifference of people who have seen too much to be surprised.
+Goods from every region and a few places that aren't named. Merchants from distant cultures trade alongside each other with the practiced indifference of people who have seen too much to be surprised.
 
 Key features:
 - Exotic ingredients, enchanted equipment, rare scrolls, artifacts of uncertain origin
-- Street performers, bards, fortune tellers
-- A grand library tucked in a quieter corner — scholars and mages, ancient texts. Fragments here reference a serpent-jewel out east, a fortune waiting in a lake — nothing in the fragments about the Ferryman, the bodies, or what it actually costs to reach. See `places/the-coil.md` (The Nagamani). A slim, dismissive volume shelved nearby describes a tribe of healers somewhere south who supposedly draw suffering out of the sick and keep it themselves — the author calls the whole practice unverified superstition and spends more words mocking the claim than describing it. Whoever wrote it never saw the gift worked, and says so almost proudly.
-- Duskwicks work the stall-gaps once the lamps start dimming — nobody feeds them, nobody minds them. See `bestiary/duskwick.md`.
-- **The Underground Bazaar** — accessible by passphrase. Semi-official. Forbidden goods, soul economy, magic oversaturation. See `places/capital/underground-bazaar.md` and `places/capital/underground-tavern.md`.
+- Street performers
+- The Underground Bazaar, accessible by passphrase.
 
-**Vendors that matter for gear:**
-- **Nessa Coil — Crossroads Sundries.** Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Full stock: `items/capital-items.md`. Believes the markup is honesty, not greed — everyone pays for convenience one way or another, she just says the number out loud instead of hiding it in a smile. She carried goods herself once, out of a region that isn't the capital, and got paid what someone decided a fair price looked like for someone in her position. She has never once let a customer decide that for her since, and doesn't think of the two facts as connected.
-- **Brother Alden — Resonant Goods.** Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still keeps their archive for secrets paid in kind. Full stock: `items/capital-items.md`. Believes a secret handed over free is a secret nobody was ever going to protect — so he doesn't take coin for the real stock, only something the buyer would rather not have said aloud. He gave a piece of knowledge away once, back at the Temple, no cost attached, certain it was harmless. It wasn't harmless. He left, and rebuilt the whole shape of what he does around never making that particular mistake on anyone else's behalf again — which he calls rigor, not penance, though it functions as both.
-- **The woman in layered scarves** — the vial-seller glimpsed above has a name for her stall, not herself: **Layered Scarves**, ordinary healing draughts with one unexplained quirk (the liquid shifts colour whenever nobody's looking at it). Four more locked general stalls beyond her — **Iron & Twine** (tools, rope, travel gear), **The Salt Pot** (hot food, rations), **Quill & Measure** (writing, maps, courier service), **Odds & Ends** (second-hand curios). Full stock: `items/capital-items.md`.
+Vendors that matter:
 
-Ordinary stall food, cloth, and tools beyond these five stay GM-improv. The named counters are the mechanical shelves.
+- Nessa Coil
+Crossroads Sundries. Regional consumables at capital markup, plus general-use capsules and draughts when the river brings them. Believes the markup is honesty, not greed. Everyone pays for convenience one way or another, she just says the number out loud instead of hiding it in a smile. She carried goods herself once, and got paid what someone decided a fair price looked like for someone in her position. She has never once let a customer decide that for her since.
+
+- Brother Alden
+Glorious Goods. Rare Artifacts. He doesn't take coin for the real stock, only something the buyer would rather not have parted with. He gave a piece of knowledge away once, back at the Temple of Knowledge once. No cost attached, certain it was harmless. It wasn't harmless. He left, and rebuilt the whole shape of what he does around never making that particular mistake again. Which he calls rigor, not penance, though it functions as both.
+
+- The woman in layered scarves
+Healing draughts with one unexplained quirk, the liquid shifts colour whenever somebody is looking at it. 
+
+Iron & Twine (tools, rope, travel gear), The Salt Pot (hot food, rations), Quill & Measure (writing, maps, courier service), Odds & Ends (second-hand curios).
 
 **Marketplace Regulation.** Every stall — permanent or a single day's pitch — operates under standing rules enforced by the **Marketplace Wardens**, Lady Elara's own staff, not any single craft guild. A stall needs a **Marketplace License**: a stamped paper plus a small brass token hung visibly; day-pitch sellers (blanket traders, food carts) pay a daily fee instead and get a chalk mark on the nearest pillar. Scales and measures are checked against the Citadel standard twice a year. Goods have to be what the sign claims — a healing draught that does nothing is a fine, one that actively harms is expulsion and possible criminal charge. Open soul-economy trades (memories, experiences, crystallized cards) are illegal topside; that traffic belongs in the Underground Bazaar. Enforcement is a three-strike ladder — warning, fine, stall closed or license revoked — and the Wardens care more about public order and Elara's revenue than moral purity: quiet, commercial magic is tolerated, flashy or dangerous working gets shut down fast.
 
