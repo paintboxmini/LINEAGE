@@ -4,12 +4,12 @@
 
 Mapping the In-Between.
 
-The fact that four to five days travel time between major locations is even possible, is the Guild's work. They stabilize the landscape through mapping.
+The fact that four to five days travel time between major locations is even possible, is the Guild's work. Their maps show people what paths are the most reliable.
 
 ## Methods
 
-- **Route Walks** — the core labor. A surveyor walks an assigned stretch of road on a fixed rotation, checking it against the last survey, correcting what's drifted, reporting what's gone.
-- **Survey ledgers** — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted.
+- Route Walks — the core labor. A surveyor walks an assigned stretch of road on a fixed rotation, checking it against the last survey, correcting what's drifted, reporting what's gone.
+- Survey ledgers — every route walk's results get logged, dated, compared against the last entry. A ledger that shows no change for a long stretch is trusted.
 
 ## Tools
 
