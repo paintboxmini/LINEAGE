@@ -364,7 +364,7 @@ Range: Both
 
 ---
 
-**DUST**
+**SMOKESCREEN**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
@@ -424,13 +424,13 @@ Range: Both
 
 ---
 
-**SETTLE**
+**BRACE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Resist.
 Defensive Bonus: Gain Resist.
 Range: Both
-*"Nothing to brace against. Just lower."*
+*"Hold."*
 
 ---
 
