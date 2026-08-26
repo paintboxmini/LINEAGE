@@ -1,7 +1,5 @@
 # Steve (and Pip)
 
-He does something notably foolish during the Mirel arc. The party will remember him for it — not fondly, but clearly.
-
 Something real grew between him and Mirel. Nobody arranged it, nobody in the Promise noticed, and it never got the chance to become anything either of them would have had time to name properly. Everyone else who'd met him already had him filed as forgettable. She was the one person who didn't.
 
 ## Pip
