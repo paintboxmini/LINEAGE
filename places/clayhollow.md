@@ -100,6 +100,4 @@ Most people feel a gentle pride in how well the system works, and a nagging sens
 
 **The oldest letters.** Too faded to read, kept anyway. Someone has been trying to restore them with careful chemicals and lamplight. What they find changes what the Before Time means.
 
-**The golem that came back wrong.** Returned from the Mending Hollow repaired, but carrying someone else's token inside it — a token that matches no family in the village.
-
 **What exile actually looks like.** Someone was exiled within living memory. Their golem still stands at the edge of the cemetery — never weathered into a marker, still upright, still waiting. Their door is sealed. No one writes their name.
