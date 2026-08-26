@@ -55,8 +55,8 @@ Range: Melee
 **BRACE**
 RED — BODY
 Attack: Body + d4
-Effect: Gain Resist 2
-Defensive Bonus: Gain Resist 2
+Effect: Gain Resist 1
+Defensive Bonus: Gain Resist 1
 Range: Both
 *"Stand firm and let them come to you."*
 
