@@ -6,9 +6,7 @@ The guild that runs the Waterworks, and the first line the city has against what
 
 Everyone who's ever filled a bucket at a public cistern in Eclipseria owes it to the Custodians, and almost nobody thinks about them for longer than it takes to notice the well's run dry. The Custodians catch the inland pulse at exactly the right moment, gate it through channels cut into the bedrock, and seal it into elevated holding cisterns before the outflow can pull it back out. Gravity does the rest, feeding wells, public fountains, and bathhouses across every district on a schedule the tide sets, not the guild. It's real, unglamorous, essential work, and they take open pride in it.
 
-What actually sets them apart from an ordinary utility guild is the reason the job exists at all. The Waterworks is the one layer of the capital genuinely open on two sides — the river channels feeding it from outside the walls, and whatever the deep tunnels let up from below. Reading the tide and holding the gates is half the job. The other half is standing at the one door the capital never got around to building, because until the Custodians, the water did that work by itself. A Line Hand can die defending a gate the same as a soldier can die on patrol. The Custodians organize around that fact rather than around it, and the discipline shows: drilled response procedures, standing patrols, weapons issued alongside gate hooks. Heavy boots, stained canvas, tool belts, oiled gloves.
-
-Thread carries the Grid's current to lights and machines.
+What actually sets them apart from an ordinary utility guild is the reason the job exists at all. The Waterworks is the one layer of the capital open to threats from two sides — the river channels feeding it from outside the walls, and whatever the deep tunnels let up from below. A Line Hand can die defending a gate the same as a soldier can die on patrol. The Custodians organize around that fact, and the discipline shows. Drilled response procedures, standing patrols, weapons issued alongside gate hooks. Heavy boots, stained canvas, tool belts, oiled gloves.
 
 ## Structure
 
@@ -18,7 +16,7 @@ Thread carries the Grid's current to lights and machines.
 
 **The Sluicewrights.** The guild's technical core — the people who read the tide precisely enough to know exactly when a gate opens and when it seals, to the minute, every cycle, without fail. Few in number, disproportionately respected.
 
-**The Head Custodian.** Public-facing, publicly accountable, in charge of the ordinary water supply. Cedric the Bear.
+**The Head Custodian.** Public-facing, publicly accountable, in charge of the ordinary water supply. Cedric, the Bear.
 
 ## Culture
 
@@ -40,7 +38,7 @@ Industrial, not ceremonial — everything doubles as a weapon or looks like it c
 
 ## Relationship to Other Factions
 
-**The Weavers.** Neighbors, not partners. Weaver threads run inside and alongside the same tunnels the Custodians patrol, and both guilds know it — a shared stretch of corridor gets a nod of acknowledgment, not a conversation. Neither guild reports to the other, and neither has ever needed to; the arrangement holds because both sides have more urgent things to worry about than each other. See `factions/the-weavers.md`.
+**The Weavers.** Neighbors, not partners. Weaver threads run inside and alongside the same tunnels the Custodians patrol, and both guilds know it — a shared stretch of corridor gets a nod of acknowledgment or a brief a conversation. Neither guild answers to the other. Weavers tell the Custodians where monsters are. Custodians tell Weavers where the Grid needs repairs.
 
 **The Boar / Demon Court.** Distant. The Custodians' territory runs alongside the Wallows without overlapping it directly — Archibald's mine is his own jurisdiction, and the Custodians have no reason to want it. Any contact is logistical: shared drainage, the occasional flooded tunnel that's technically someone else's problem.
 
