@@ -1,6 +1,6 @@
 # Sebastian
 
-*A Head Mason. Last of his line, the first of a new one. Keeper of the Lodge at the Soft Edge.*
+A Head Mason. Last of his line, the first of a new one. Keeper of the Lodge at the Soft Edge.
 
 ## The Chisels
 
