@@ -12,7 +12,7 @@ No faces. No handshakes. Just ink and clay, and the faint sound of distant doors
 
 Roughly person-sized. Featureless faces with hollow eye sockets that seem to watch without seeing. Arms long enough to carry baskets or sacks without strain. Each household has one or two, named with short practical tags — Red-7, Moss-Hand, Pale-Thumb.
 
-They don't speak. They deliver, stand guard at night, and return home at dusk like obedient dogs. The villagers shape new ones every few years when the old crack beyond repair.
+They don't speak. They deliver, stand guard at night, and return home at dusk. The villagers shape new ones every few years when the old crack beyond repair.
 
 Repaired golems are considered more trustworthy. The faint color variations in the clay — new red pressed into old — are read like handwriting: *"That one's been mended three times — steady as stone."*
 
@@ -68,8 +68,6 @@ When a golem's wear becomes undeniable, the owner writes a single unsigned note 
 
 By first light the bundle is gone and the golem returned — cracks filled, smoothed, refired in the mender's hidden kiln. The mender works alone in darkness, wearing linen gloves so no fingerprint is left. The personal token is buried inside the new clay. No credit claimed. No thank-you letters sent.
 
-The ritual is never spoken of aloud. Some believe saying *"I mended yours"* would cause the clay to crack again.
-
 Children are taught to pack the bundle themselves by age eight or nine. They press a tiny fingerprint into the clay lump before sealing it — their first anonymous contribution to the village's life. The print disappears under the mender's smoothing. The child knows it was there.
 
 Families pass down specific smoothing stones or paddles wrapped in cloth. The stone may have a tiny notch from generations of use. Holding it feels like touching the hands that came before, even if those hands were never seen.
@@ -80,7 +78,7 @@ After a repair, people often leave extra kindling or a jar of honey on their doo
 
 ## The Before Time
 
-Stories passed down in letters say there was a time when people spoke face-to-face and the valley rang with voices. Some say the custom began as protection after a plague. Others say a feud that turned bloody. Others whisper it was a pact with the clay itself — let the earth carry our burdens so humans could rest.
+Stories passed down in letters say there was a time when people spoke face-to-face and the valley rang with voices. Now they whisper it was a pact with the clay itself — let the earth carry our burdens so humans could rest.
 
 No one knows. The oldest letters are too faded to read.
 
