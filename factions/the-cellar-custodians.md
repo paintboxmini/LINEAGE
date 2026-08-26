@@ -42,21 +42,6 @@ Industrial, not ceremonial — everything doubles as a weapon or looks like it c
 
 **The Boar / Demon Court.** Distant. The Custodians' territory runs alongside the Wallows without overlapping it directly — Archibald's mine is his own jurisdiction, and the Custodians have no reason to want it. Any contact is logistical: shared drainage, the occasional flooded tunnel that's technically someone else's problem.
 
-**People of Promise.** No meaningful relationship, and the guild would like to keep it that way. A cooled, diluted current is a smaller theological problem than the Weavers' concentrated thread, but it's still a piece of a held-open Seat moving through the city's water. If the connection were ever traced, the outrage wouldn't care that the dose was small.
-
----
-
 ## GM Secret — Not Player-Facing
 
-The Custodians are the last link in the FourthEye supply chain before it reaches the Underground Bazaar. The drug moves through the deep tunnels the same way everything else does — somewhere between a Station Chief's territory and the Bazaar's hidden pocket, it stops being cargo nobody asked about and starts being cargo somebody's paid to not ask about. "Trained, not screened" is exactly the gap this exploits: the guild's loyalty model watches what a Line Hand does with a wrench, not what they're carrying through a tunnel off the books. Who's actually dirty, and how far up it goes, is unestablished on purpose — same open question as the rest of the pipeline. See `memory.md` (FourthEye pipeline), `places/capital/underground-bazaar.md` (Giblets), `places/vultures-nest.md` (Masaharu).
-
----
-
-## Related Documents
-
-- `places/capital/the-waterworks.md` — the layer the guild runs
-- `factions/the-weavers.md` — the guild sharing their tunnels
-- `world/the-regency.md` — Lord Cedric, the council-level overseer never seen exercised
-- `places/capital/the-wallows.md` — adjacent, not shared, territory
-- `world/geography-overview.md` — the rivers feeding the capital's intake
-- `world/seats.md` — Aurora, the Seat of Love/Binding
+The Custodians are the last link in the FourthEye supply chain before it reaches the Underground Bazaar. The drug moves through the tunnels somewhere between a Station Chief's territory and the Bazaar's hidden pocket. It's cargo somebody's paid to not ask about.
