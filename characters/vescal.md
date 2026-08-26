@@ -1,15 +1,14 @@
 # Vescal
 
-*Censer-bearer. Temple of Unity, capital city. One half of Trutinate.*
+Censer-bearer. Temple of Unity, capital city. One half of Trutinate.
 
-**Cards:** `cards/vescal.md`
+Mind 3 / Body 4 / Soul 3 — HP 18
+Creature Threat Rating: 10
 
-**Mind 3 / Body 4 / Soul 3 — HP 18**  
-**Creature Threat Rating:** 10
+Deck
+ TRUTINATE SIGNAL, CENSER SWING, CHAIN REACH, CENSURE, SANCTUARY, RESIST BLESSING.
 
-**Deck (10 — 3 Blue / 4 Red / 3 Green):** BINDING RITE, TRUTINATE SIGNAL (signature) · DEFLECT (core) (blue) · CENSER SWING, CHAIN REACH (signature) · STRIKE, GUARD (core) (red) · CENSURE, SANCTUARY, RESIST BLESSING (signature) (green). *Rebalanced from an earlier 11-card build that ran Green 7/Blue 2/Red 2 against this stat block — Drew cut INCENSE WARD, BALANCE RESTORED, OPEN DOOR, and SMOKE SCREEN (the last reworked and promoted to core rather than archived, and since renamed DUST — see `cards/green-soul.md`); DEFLECT/STRIKE/GUARD added from the shared core pool to fill Blue and Red back out.*
-
-**Artifact — Scales of Unity:** At the start of combat, gain 1 Ward.
+Artifact — Scales of Unity: At the start of combat, gain 1 Ward.
 
 ---
 
@@ -23,7 +22,7 @@ Speaks in the measured cadence of someone who spent years conducting ritual. In 
 
 ## Backstory
 
-Vescal trained at the Temple of Unity in the capital — the central temple, the one people go to when they cannot resolve things themselves. His role was custodial and ceremonial: threshold purification, presence at conflict hearings, maintaining the ritual conditions under which the scales could function. The censer was never a weapon. It was an atmosphere.
+Vescal trained at the Temple of Unity in the capital — the central temple, the one people go to when they cannot resolve things themselves. His role was custodial and ceremonial: threshold purification, presence at conflict hearings, maintaining the ritual conditions under which the scales could function.
 
 What changed wasn't dramatic. He kept seeing the same people return. Disputes the temple resolved, same imbalance back six months later because the underlying cause hadn't shifted. The door was open. People kept choosing to close it. The temple's answer was patience. Keep the door open. Keep the scales level. Trust the process.
 
@@ -39,18 +38,10 @@ Vescal and Orin operate as freelance peacekeepers under the name **Trutinate**. 
 
 Someone hired them for whatever situation the party finds them in. That someone's interests may or may not align with the party's.
 
-See also: `characters/orin-vane.md`
-
----
-
 ## GM Notes
 
-**Positioning:** Vescal anchors Frontline. SANCTUARY is his priority — once Anchored and healing 3 HP per turn to all allies, the encounter clock reverses. The party's first goal should be breaking the Anchor (force Vescal to move).
+SANCTUARY: anchors Frontline. Once Anchored and healing 3 HP per turn to all allies, the encounter clock reverses. The party's first goal should be breaking the Anchor (force Vescal to move).
 
-**Rooted 2:** CENSURE on the whole Frontline is the opener when the party commits. Two turns of no repositioning while Orin builds glyphs from Backline is extremely punishing. Use it early.
+CENSURE: rooted 2 on the whole Frontline is the opener when the party commits. Two turns of no repositioning while Orin builds glyphs from Backline is extremely punishing. Use it early.
 
-**Ward protection:** Scales of Unity means Vescal absorbs the first debuff for free. Don't waste status effects on him turn 1.
-
-**TRUTINATE SIGNAL:** Gives Orin a free card play. If Vescal uses this on a turn where Orin has already played twice via Dual Strike, Orin plays a third card that turn. Use sparingly — it's a resource spike, not a rhythm card.
-
-**Vescal does not know what Aurora's situation actually is.** The Temple of Unity runs on a Seat that is bound and being extracted without its bearer's freedom. If the party knows this and Vescal doesn't, that dynamic is live.
+TRUTINATE SIGNAL: Gives Orin a free card play. If Vescal uses this on a turn where Orin has already played twice via Dual Strike, Orin plays a third card that turn. Use sparingly — it's a resource spike, not a rhythm card.
