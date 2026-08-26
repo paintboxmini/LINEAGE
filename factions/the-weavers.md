@@ -1,28 +1,29 @@
 # The Weavers
 
-*Secret faction. This is not where Aurora is held. That's already established — `places/capital/the-wallows.md`, the Deep, guarded by the Demon Court. The Weavers are the half of the extraction nobody wrote down: what happens to what's drawn out of her once it leaves the Deep.*
-
 ## What They Are
 
-To almost everyone in Eclipseria, the Weavers keep the lights on. They wear practical gear, carry the right tools, and have standing access to the tunnels and conduits nobody else bothers with. Their work is filed as municipal maintenance because that's what it looks like from the outside.
+To almost everyone in Eclipseria, the Weavers keep the lights on. They wear practical gear, carry the right tools, and have standing access to the tunnels and conduits. Their work is filed as municipal maintenance because that's what it looks like from the outside.
 
-What they actually maintain is a second Grid, laid alongside and inside the first — most people never learn there are two. Thin as air-ripples, carried in and beside the ordinary conductive lines, is a current far deeper than electricity — Aurora's binding, drawn thread by thread out of the Deep and spun into something that can be distributed. The Weavers don't go anywhere near where she is. They never have to. By the time a thread reaches a Weaver's hands, it has already traveled a long way from its source, through channels that were never built for it and now can't be separated from it.
+What they actually maintain is the Grid. Threads thin as air-ripples and constantly vibrating, drawn thread by thread out of the Deep and spun into wires that can distribute energy.
 
-They keep the city bound the same way they keep it lit: as background infrastructure, running so long it stopped looking like a choice anyone made. A century of quiet development is what the Grid, the nodes, and every item built to draw on it actually needed to reach this scale (`world/the-regency.md`, What Happened to the Throne) — nothing here was built fast.
-
----
+They keep the city lit. A century of quiet development is what the Grid, the nodes, and every item built to draw on it actually needed to reach this scale.
 
 ## How the Grid Works
 
-**The nodes.** Jagged black crystals with a soft inner purple glow, seated at collection points throughout the deep utility levels — transformers, in the electrical sense, except what they step down isn't current.
+The nodes.
+Jagged black crystals with a soft inner purple glow, seated at collection points throughout the deep utility levels — transformers, in the electrical sense.
 
-**The threads.** Near-invisible, thin as air-ripples, visible only as a faint distortion or a purple-edged shimmer. They travel inside or alongside the ordinary power lines.
+The threads.
+Near-invisible, thin as air-ripples, visible only as a faint distortion or a purple-edged shimmer. They travel inside the power lines.
 
-**The cords.** At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and taking up thread the way they'd draw, tension, and take up cable, because that is exactly what they were built to do.
+The cords.
+At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and weaving into the Grid.
 
-**The Grid.** In long chambers beneath the civic districts, finished cords are woven directly into the city's foundation and utility lines — load-bearing, not decorative, run parallel to power lines and water mains so the two systems are physically interleaved. "Tapestry" leans decorative; the Grid is closer to the truth — this is infrastructure, maintained as civic duty, catastrophic if it fails. Rank-and-file language stays this plain: "the Grid," "section four," "re-weave the north belt," "grid tension." A failing section is a "grid break," never "a tear." The craft verbs underneath don't change — spin, twist, cord, weave, unweave, tension, splice. This is what actually holds the binding stable at civic scale. It cannot be switched off. It has to be unwoven, one row at a time, and nobody currently alive knows how to do that safely.
+The Grid.
+In long chambers beneath the civic districts, finished cords are woven directly into the city's  power lines. This is infrastructure, maintained as civic duty, catastrophic if it fails. Rank-and-file language stays plain: the Grid, section four, re-weave the north belt, grid tension, weave in a splice.
 
-**What it powers.** Not just lights — though the lights are the one piece everyone's actually seen: the gilded lampposts lining every major surface thoroughfare, glass domes holding a rose worked entirely in glass, only the bloom itself lit — the same purple-edged shimmer the thread carries underground (`places/capital/capital.md`). Past that, mostly out of sight: lifts running between the capital's vertical layers — surface to Waterworks to the Wallows and back. Industrial machinery across every district. The gates and locks that hold the tide where the Custodians need it held (`factions/the-cellar-custodians.md`) — water gates included, the Grid doing the lifting a crew of hands alone couldn't manage fast enough when a full pulse needs sealing off in time. Looms and manufacturing floors that actually make things. Trolleys running fixed routes through the Inner Precinct and beyond. Anything in the capital that moves, or glows, without a hand or a horse or a flame behind it is very likely doing it because of this.
+What it powers.
+the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. The gates and locks that hold the tide where the Custodians need it held. Trolleys running fixed routes through the Inner Precinct and beyond.
 
 **What it costs to notice.** Certain plazas stay oddly calm through arguments that should have gone worse. Banners in the central districts barely move, as if the air is thicker there. Reflections lag half a beat behind the person walking past. Animals avoid certain intersections without crossing them. None of it reads as wrong. It reads as *how the capital has always felt.* That normalcy is the product. The horror is that it's been delivered on time, every day, for longer than anyone currently drawing a wage from the city can account for.
 
