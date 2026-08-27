@@ -4,7 +4,7 @@
 
 To almost everyone in Eclipseria, the Weavers keep the lights on. They wear practical gear, carry the right tools, and have standing access to the tunnels and conduits. Their work is filed as municipal maintenance because that's what it looks like from the outside.
 
-What they actually maintain is the Grid. Threads thin as air-ripples and constantly vibrating, drawn thread by thread out of the Deep and spun into wires that can distribute energy.
+What they maintain is the Grid. Threads thin as air-ripples and constantly vibrating, drawn thread by thread out of the Deep and spun into wires that can distribute energy.
 
 They keep the city lit. A century of quiet development is what the Grid, the nodes, and every item built to draw on it actually needed to reach this scale.
 
@@ -23,7 +23,7 @@ The Grid.
 In long chambers beneath the civic districts, finished cords are woven into the city's  power lines. 
 
 What it powers.
-the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond.
+the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond. The Waterworks gates.
 
 ## Ranks
 
@@ -31,11 +31,7 @@ the gilded lampposts lining every major city thoroughfare. lifts running between
 
 **Line Keepers.** Senior technicians. They decide when a district needs throttling. Experts in their field, They guide the line hands every step of the way. A minority carry a low-grade unease they've learned to keep to themselves.
 
-**Threadwrights.** Few in number. The actual weavers — pattern density, repairs, First real exposure layer. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
-
-**The Quiet Chair.** Not always the guild's public head. The only one who routinely walks the whole Grid, crystal to finished lattice, and understands what the work is doing to Aurora and to the city. Receives sealed instructions when the extraction needs to be deepened, redirected, or prepared for a larger change.
-
-**Where those instructions come from is the load-bearing secret, not the crystals.** The Chair answers to Oswald's circle — not the Boar, not the Regency as a body. This is not the same apparatus that guards the Deep: Archibald built the Wallows and the Demon Court, and neither he nor Pazuzu knows the Weavers exist as anything but a utility guild running a routine maintenance detail on their labor level. Oswald's long game (`world/the-regency.md`, The Pendragon Attempt) needs the binding *usable*, not just contained — a grid he can eventually redirect toward his own claim, when it's ready, without the rest of the council watching him build it. Two structures now touch Aurora's extraction, unstaffed by each other, unknown to each other's leadership. The secret was never that the collection detail is invisible — Pazuzu has walked past it. It's that nobody who can see it has any reason to look past the cover story.
+**Threadwrights.** Few in number. The actual weavers. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
 
 Rank-and-file language: the Grid, section four, re-weave the north belt, grid tension, weave in a splice.
 
@@ -43,19 +39,13 @@ Rank-and-file language: the Grid, section four, re-weave the north belt, grid te
 
 ## Culture
 
-**Promotion tests more than skill.** Each rank upward also tests whether a candidate will stop asking certain questions. Those who can't make that adjustment stay where they are, one way or another.
+Promotion tests more than skill. Each rank upward also tests whether a candidate will stop asking certain questions. Those who can't make that adjustment stay where they are.
 
-**Knowledge policing is social, not violent.** Curiosity gets redirected — heavier ordinary workloads, quiet passing-over. Actual disappearances are rare, reserved for repeated, specific threats to the system.
-
-**Internal language stratifies by rank.** Line Hands say "heavy air" and "sensitive runs." Line Keepers say "load" and "balance." Threadwrights say "the weave," and in private, "the cost."
-
-**The deepest loyalty is to continuity, not to the cause.** Even Threadwrights who hate the extraction keep repairing it, because the alternative is immediate harm to people who never agreed to any of this either.
+The deepest loyalty is to the people, not to the Regency. Even Threadwrights who hate the extraction keep repairing it, because the alternative is immediate harm to people who never agreed to any of this either.
 
 ---
 
 ## Tools
-
-A hybrid kit — textile implements scaled up, electrical gear pressed into service as loom components. Nothing looks ceremonial; everything looks maintained.
 
 - **Ripple Hooks** — slender rods with a soft, non-reflective tip, used to lift a single thread without breaking it.
 - **Sorting Combs** — irregular-toothed combs that separate live thread from spent or tangled thread by feel as much as sight.
