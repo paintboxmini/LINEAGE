@@ -14,56 +14,30 @@ The nodes.
 Jagged black crystals with a soft inner purple glow, seated at collection points throughout the deep utility levels — transformers, in the electrical sense.
 
 The threads.
-Near-invisible, thin as air-ripples, visible only as a faint distortion or a purple-edged shimmer. They travel inside the power lines.
+Near-invisible, thin as air-ripples, visible only as a faint distortion or a purple-edged shimmer. Strands of pure movement, vibrating and alive. They travel inside the power lines.
 
 The cords.
 At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and weaving into the Grid.
 
 The Grid.
-In long chambers beneath the civic districts, finished cords are woven directly into the city's  power lines. This is infrastructure, maintained as civic duty, catastrophic if it fails. Rank-and-file language stays plain: the Grid, section four, re-weave the north belt, grid tension, weave in a splice.
+In long chambers beneath the civic districts, finished cords are woven into the city's  power lines. 
 
 What it powers.
-the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. The gates and locks that hold the tide where the Custodians need it held. Trolleys running fixed routes through the Inner Precinct and beyond.
+the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond.
 
-**What it costs to notice.** Certain plazas stay oddly calm through arguments that should have gone worse. Banners in the central districts barely move, as if the air is thicker there. Reflections lag half a beat behind the person walking past. Animals avoid certain intersections without crossing them. None of it reads as wrong. It reads as *how the capital has always felt.* That normalcy is the product. The horror is that it's been delivered on time, every day, for longer than anyone currently drawing a wage from the city can account for.
+## Ranks
 
----
+**Line Hands.** The largest rank by far — street-level and waterworks electrical maintenance. Most accept it.
 
-## The Collection Point
+**Line Keepers.** Senior technicians. They decide when a district needs throttling. Experts in their field, They guide the line hands every step of the way. A minority carry a low-grade unease they've learned to keep to themselves.
 
-The threads originate at the labor level of the Wallows, not at the Deep itself. A cluster of collection frames — squat, black-crystal fixtures bolted into the tunnel wall — sits in a side gallery off the main labor corridor, close enough to Aurora's influence for the threads to gather there on their own, far enough that the assigned workers never see anything resembling her.
-
-The Demon Court files it as a maintenance detail like any other: a rotating handful of prisoners, overseen the same as every other work assignment, running lines and clearing frames on a schedule nobody questions. The work reads as tedious and mechanical, because that's genuinely all it looks like from inside the labor level — tending fixtures, coiling something that catches the light strangely, handing full spools up to a Weaver crew that collects on a set rotation and never lingers.
-
-Neither the prisoners assigned to it nor the guards overseeing them know what the spools become once they leave the mine. See `factions/demon-court.md`.
-
----
-
-## The Source Chamber
-
-The Collection Point is not the only place thread comes from. It's the only place *the guild* comes from — the passive, ambient supply that keeps the ordinary Grid fed, gathered by people who never see anything resembling Aurora. One person goes closer than that.
-
-**Eveline** works the source directly — skill, not title. Where the labor-level frames catch what drifts off Aurora on its own, Eveline's own chamber sits close enough that nothing drifts; she draws it. No ordinary Weaver has been inside, and the guild's official language never calls it a room at all. What comes out of it doesn't go through the same twist frames as everything else — richer, denser, closer to source than anything the collection halls ever see. It's the difference between what keeps the lights ambient-warm and what would actually make the binding *usable*, on purpose, by someone who knew how to ask for it.
-
-The rank-and-file believe they're maintaining a necessary civic mystery: the walls produce, their craft makes it load-bearing, the city holds. Eveline is not a mystery to them so much as a fact they've stopped examining — an authority who appears rarely, corrects things precisely, and is answered without question because the work she hands down always holds. Whether "Eveline" the guild answers to and Lady Eveline of the Regency council are known to be the same person, by anyone below the Quiet Chair, is not established. Likely not.
-
-**This runs alongside the Quiet Chair's own channel, not through it.** The Quiet Chair still receives Oswald's sealed instructions and still answers for the Grid's political direction — that's a separate question from who can actually work the source. Whether Eveline knows what her craft is ultimately being turned toward, and what she thinks of it if she does, is exactly the kind of thing she'd never say. She never speaks. Not mute — chooses silence (`world/the-regency.md`, Behavioral Contract). This is one more thing it might be covering.
-
----
-
-## Hierarchy
-
-**Line Hands.** The largest rank by far — street-level and shallow-tunnel electrical maintenance, pole work, fault response, night call-outs. They've all seen an air-ripple thread at some point and been given the standard explanation (residual charge, old city load). Most accept it. A minority carry a low-grade unease they've learned to keep to themselves.
-
-**Junction / Tunnel Crews.** First real exposure layer. They work the collection frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health. Official language calls it "civic resonance." Asking what it really is ends a career.
-
-**Line Keepers.** Senior technicians. They decide when a cord is ready to go deeper and when the upper grid needs throttling. Most believe they're maintaining an old founding mechanism that still serves the city. Very few have any idea what it's actually drawn from. Moral weight starts here — enough of the picture to feel responsible, not enough power to change what they're responsible for.
-
-**Threadwrights.** Few in number. The actual weavers — pattern density, repairs, the long balance of which districts get more or less binding force. They know the source is a living Seat-bearer. They know the work is extractive. They keep the Grid intact anyway, because sudden failure would be catastrophic for people who had no say in any of it, and that math doesn't change no matter how they feel about the answer.
+**Threadwrights.** Few in number. The actual weavers — pattern density, repairs, First real exposure layer. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
 
 **The Quiet Chair.** Not always the guild's public head. The only one who routinely walks the whole Grid, crystal to finished lattice, and understands what the work is doing to Aurora and to the city. Receives sealed instructions when the extraction needs to be deepened, redirected, or prepared for a larger change.
 
 **Where those instructions come from is the load-bearing secret, not the crystals.** The Chair answers to Oswald's circle — not the Boar, not the Regency as a body. This is not the same apparatus that guards the Deep: Archibald built the Wallows and the Demon Court, and neither he nor Pazuzu knows the Weavers exist as anything but a utility guild running a routine maintenance detail on their labor level. Oswald's long game (`world/the-regency.md`, The Pendragon Attempt) needs the binding *usable*, not just contained — a grid he can eventually redirect toward his own claim, when it's ready, without the rest of the council watching him build it. Two structures now touch Aurora's extraction, unstaffed by each other, unknown to each other's leadership. The secret was never that the collection detail is invisible — Pazuzu has walked past it. It's that nobody who can see it has any reason to look past the cover story.
+
+Rank-and-file language: the Grid, section four, re-weave the north belt, grid tension, weave in a splice.
 
 ---
 
