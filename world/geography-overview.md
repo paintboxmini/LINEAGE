@@ -4,17 +4,15 @@
 
 Major hubs are roughly four to five days of travel apart. The Regency maintains the roads and halfway-inns between them.
 
-Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — unmapped, unowned, and thin. The maintained roads are the reason a multi-day crossing is routine rather than an expedition.
+Everything that isn't a named place is the In-Between.
 
 The continent is rich with rivers and lakes. Where the roads are the Regency's arteries, the rivers are everyone else's — cargo, passengers, and anything that prefers not to pass a Regency checkpoint moves by water. River sailors are common, skilled, and proud of it.
 
----
-
 ## Overall Shape
 
-Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle. Ashfall Wastes sits below (south of) Turnroot Weald; the Abyssal Ruins sit below (south of) Vulture's Nest.
+Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle. Ashfall Wastes sits below Turnroot Weald; the Abyssal Ruins sit below Vulture's Nest.
 
-**Coordinates** (relative grid, not to scale):
+Coordinates relative grid, not to scale:
 
 | Location | (x, y) |
 |----------|--------|
@@ -32,7 +30,7 @@ Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — G
 | Pneum | (11, −4) |
 | Apnea | (4, −10) |
 
-Rough estimates, not confirmed the way the triangle and its edges are — placed from what each location's own file already says (Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"; Apnea "south-southwest of Vulture's Nest," its own lake, deliberately apart from the Canille/Pneum/Coil cluster), not from anything more precise. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the old open question — whether they share one lake or sit in separate ones — exactly as open as it was. Clayhollow, Veldmire, and Weatherheart Vale have no stated position anywhere in the repo and aren't placed here; inventing coordinates for them would be inventing geography, not recording it. Island in a Ship and the Silent Choir (`places/the-silent-choir.md`) are deliberately unmappable by design and are excluded on purpose, not by oversight. (RavenHold was also excluded here for the same reason before it was archived, 2026-08-09 — see `archives/ravenhold.md`.)
+Rough estimates, placed from what each location's own file already says Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"; Apnea "south-southwest of Vulture's Nest," its own lake, deliberately apart from the Canille/Pneum. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the open question whether they share one lake or sit in separate ones.
 
 ## The Kings Road
 
