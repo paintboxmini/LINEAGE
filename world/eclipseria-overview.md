@@ -1,47 +1,24 @@
 # Eclipseria — World Overview
 
-Eclipseria is a twilight world in flux. A sickly yellow haze sits permanently over the continent — the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight: dim enough to feel wrong, bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
+Eclipseria is a twilight world in flux. A yellow haze sits over the continent, the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight, dim enough to feel wrong but bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
 
 And it rains. A slow drizzle, most days, most hours. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
-**The world was born dying.** This is not decline and not a curse — it is the founding condition. Reality here was wounded into holding (`world/creation-myth-the-three-cuts.md`), and those wounds have never closed, because a closed wound holds nothing open. Eclipseria is working exactly as it was made to, at exactly the cost it was made to demand. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
+The world was born dying. This is not decline and not a curse, it is the founding condition. Reality here was wounded into holding, and those wounds have never closed, because a closed wound holds nothing open. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
 
-The eldritch forces that reshaped this world did not destroy it. They changed what it means to persist here.
+The forces that shaped this world did not destroy it. They changed what it means to persist here.
 
 Danger comes from monsters, yes. But also from the environment, from other people whose motives are opaque and unstable, and from the quieter pressure of places that seem to want something from you.
 
-The world responds to those who pay attention. Every region has its own logic, its own customs, its own cost. Learning how a place works is not flavor — it is survival.
-
----
+The world responds to those who pay attention. Every region has its own logic, its own customs, its own cost. Learning how a place works is not flavor, it is survival.
 
 ## The Shape of the World
 
-The known world is a continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. Nothing sails it. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
+The known world is a continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
-Major hubs are roughly four to five days of travel apart. The Regency maintains the roads and the halfway-inns between them.
+The Regency maintains the roads and the halfway-inns between the major locations.
 
-Everything that isn't a hub is **the In-Between** (`world/the-in-between.md`) — partially mapped, with just enough glyph posts to slow the instability. Where the lines between far off locations blend together. It is most of the world by area and nobody is from it. The maintained roads are the reason travel between the 4 major havens for people is routine instead of an expedition, and they are maintained.
-
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes.
-
-For deeper geography, see `world/geography-overview.md`.
-
----
-
-## What Holds the World Together
-
-Reality in Eclipseria is not self-sustaining. It is maintained by:
-
-- **The Seats** — universal laws that govern fundamental principles (Time, Memory, War, etc.). They exist on a higher plane and affect the entire continent.
-- **The Archons** — beings who have become the fullest expression of a Seat. They control the distribution of their domain.
-- **The Regency** — a human bureaucratic council that rules the Capital and has heavy influence in the surrounding regions. 
-
-The Unheld presses against all of this constantly. Where the Seats weaken, the Unheld presses in — and the Seats weaken wherever a Cut does, because Seats are positions inside the structure the Cuts made (`world/seats.md`, Seats and the Cuts).
-
-For the full cosmological system, see `world/seats.md`, `world/archons.md`, `world/resonant-people.md`, `world/resonant-items.md`, and `world/resonant-places.md` — or `world/seats-archons-echoes.md` for an index of all five.
-For the Unheld in depth, see `world/the-unheld.md`.
-
----
+Everything that isn't a named place is the In-Between — partially mapped, with just enough glyph posts to slow the instability. Where the lines between far off locations blend together. It is most of the world by area and nobody is from it.
 
 ## Survival Tone
 
