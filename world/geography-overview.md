@@ -23,14 +23,13 @@ Coordinates relative grid, not to scale:
 | Briarwatch | (−5, −7) |
 | Ashfall Wastes | (−7, −12) |
 | Abyssal Ruins | (7, −12) |
-| Havenrise | (10, 6) |
 | Roaat | (9, −8) |
 | The Coil | (12, −7) |
 | Canille | (10, −3) |
 | Pneum | (11, −4) |
 | Apnea | (4, −10) |
 
-Rough estimates, placed from what each location's own file already says Havenrise "eastern edge"; Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"; Apnea "south-southwest of Vulture's Nest," its own lake, deliberately apart from the Canille/Pneum. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the open question whether they share one lake or sit in separate ones.
+Rough estimates, placed from what each location's own file says. Roaat "near Vulture's Nest"; Canille and Pneum both "northeast of Vulture's Nest"; the Coil "east of Vulture's Nest"; Apnea "south-southwest of Vulture's Nest," its own lake, deliberately apart from Canille/Pneum. Canille and Pneum sitting close together, and the Coil sitting close to both, leaves the open question whether they share one lake or sit in separate ones.
 
 ## The Kings Road
 
@@ -42,29 +41,23 @@ Six segments: the three edges of the triangle above, plus a spoke from each corn
 - Turnroot Weald ↔ Eclipseria — the Milestone (−3.5,−3.5) sits on this one, roughly at the midpoint
 - Vulture's Nest ↔ Eclipseria — the Kings Road Inn (3,−3) sits on this one, roughly at the midpoint
 
-**Inns confirmed and built out:** the Roadhouse (`places/roadhouse.md`) on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipseria–Vulture's Nest spoke; the Milestone (`bestiary/the-patient-host.md`) on the Turnroot–Eclipseria spoke.
+Inns confirmed and built out: the Roadhouse on the Turnroot–Vulture's Nest edge; the Kings Road Inn on the Eclipseria–Vulture's Nest spoke; the Milestone on the Turnroot–Eclipseria spoke.
 
-**Inns confirmed, not yet built:** the remaining three segments (Glasslight–Turnroot, Glasslight–Vulture's Nest, Glasslight–Eclipseria) each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
+Inns confirmed, not yet built:** the remaining three segments. Each have an inn, evenly spread, same as the three above. Positions and names not yet assigned.
 
-**Travel:**
-- Vulture's Nest → Eclipseria: 5 days
-- The Kings Road Inn sits roughly at the midpoint of that spoke — about 2 days from each
+Travel:
+- Vulture's Nest to Eclipseria: 3 days
+- The Kings Road Inn sits roughly at the midpoint of that spoke.
 
----
-
-The known world is surrounded on every side by **the Unheld Ocean** — grey static water. It is the edge of the world. Nothing sails it. Nothing fishes it. The only people who go near it are the Glasslight cartographers who map its edge, and the People of Promise, who lower themselves into it on ropes and call that faith.
-
-**the Turnroot Weald**, wrapping the eastern edge of the Ashfall Wastes, a sentient forest that insulates the rest of the continent from the War Engine beyond.
-
-There is nothing beyond the coast. Or nothing anyone has come back to describe. The ghost stories say otherwise — ships that slipped past the shore generations ago, crews that came home wrong or didn't come home at all. The stories are told in river taverns, quietly, and nobody checks them against the water.
-
-One campaign opening starts exactly there: a party washed ashore at (−1, −11), on foot, with no memory of the crossing and — unlike every other account — nothing visibly wrong with them. See `quests/washed-ashore.md`.
+Turnroot Weald
+wrapping the northeastern edge of the Ashfall Wastes, a sentient forest that insulates the rest of the continent from the barren lands beyond.
 
 ## Rivers and Lakes
 
-A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again on the way to the grey coast. This web is the continent's second road system — and its first, if you ask a sailor.
+A web of interconnected rivers laces the whole continent, pooling into lakes and joining and splitting again. This web is the continent's second road system — and its first, if you ask a sailor.
 
-**Vulture's Nest isn't the web's actual center — that's the capital, sitting dead at the loop's shortest, fastest point (above) — but it sits at a major intersection all its own,** ringed by local islands in the surrounding rivers and lakes, and it's where all of them actually trade, with each other and with the rest of the continent. More river tonnage passes its docks than anywhere else. If it moves by water between the islands, it moves through the Nest.
+Vulture's
+ringed by many islands in the surrounding rivers and lakes, where the river web is densest, and it's a hub for trade.
 
 Anywhere on this whole network, a line can go in the water. See `rules/river-fishing.md` for The Pull — a real-time table minigame, not a combat mechanic.
 
