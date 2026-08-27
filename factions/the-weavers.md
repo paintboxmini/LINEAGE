@@ -56,4 +56,4 @@ Rank-and-file language: the Grid, section four, re-weave the north belt, grid te
 ## Relationship to Other Factions
 
 The Cellar Custodians.
-The Waterworks' own guild, and the Weavers' physical neighbor — wites run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. 
+The Waterworks' own guild, and the Weavers' physical neighbor — wires run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. 
