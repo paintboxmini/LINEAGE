@@ -20,10 +20,10 @@ The cords.
 At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and weaving into the Grid.
 
 The Grid.
-In long chambers beneath the civic districts, finished cords are woven into the city's  power lines. 
+In long chambers beneath the civic districts, finished cords are woven into the city's  power infrastructure. 
 
 What it powers.
-the gilded lampposts lining every major city thoroughfare. lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond. The Waterworks gates.
+The gilded lampposts lining every major city thoroughfare. Lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond. The Waterworks gates.
 
 ## Ranks
 
@@ -33,8 +33,6 @@ the gilded lampposts lining every major city thoroughfare. lifts running between
 
 **Threadwrights.** Few in number. The actual weavers. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
 
-Rank-and-file language: the Grid, section four, re-weave the north belt, grid tension, weave in a splice.
-
 ---
 
 ## Culture
@@ -43,38 +41,19 @@ Promotion tests more than skill. Each rank upward also tests whether a candidate
 
 The deepest loyalty is to the people, not to the Regency. Even Threadwrights who hate the extraction keep repairing it, because the alternative is immediate harm to people who never agreed to any of this either.
 
+Rank-and-file language: the Grid, section four, re-weave the north belt, grid tension, twist in a splice. comb and shear protocol.
+
 ---
 
 ## Tools
 
-- **Ripple Hooks** — slender rods with a soft, non-reflective tip, used to lift a single thread without breaking it.
-- **Sorting Combs** — irregular-toothed combs that separate live thread from spent or tangled thread by feel as much as sight.
-- **Twist Frames** — rotating collars that spin dozens of threads into one stable cord; a cord that loses its pulse during spinning is discarded, not salvaged.
-- **Ground Shuttles** — forearm-length shuttles that carry finished cord through the Grid's warp, run through channels cut directly into stone.
-- **Resonance Forks** — struck near a cord or a section of the Grid; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual.
-- **Cold Shears** — kept in locked cabinets, used only when a cord must be deliberately cut. The decision is never casual.
-
----
+- Ripple Hooks — slender rods with a soft, non-reflective tip, used to lift a single thread without breaking it.
+- Sorting Combs — long handled toothed combs that separate thread from a tangled mass by feel as much as sight.
+- Twist Frames — rotating collars that spin dozens of threads into one stable cord.
+- Resonance Forks — struck near a cord or a section of the Grid; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual.
+- Cold Shears — kept in locked cabinets, used only when a cord must be deliberately cut. The decision is never casual.
 
 ## Relationship to Other Factions
 
-**People of Promise.** The clearest ideological opposition in the city, and it isn't close. Their whole doctrine is that everything eventually returns to the Unheld — *"this is not loss, it is completion"* (`factions/people-of-promise.md`). A Seat-bearer held open indefinitely, never allowed to complete anything, is close to a direct theological insult. If they ever learned what the Weavers actually distribute, it would be the single fastest way to turn a subculture into a threat.
-
-**The Masons.** Deliberately not connected, and that's worth stating outright rather than leaving it to be reinvented later. The Masons' jurisdiction is the Unheld specifically — thresholds where held reality meets what shouldn't touch it (`factions/the-masons.md`). Aurora's binding is a Seat matter, not an Unheld one; the two cosmological systems were kept explicitly distinct in the 2026-08-02 audit. Any overlap between the Weavers and the Masons is physical at most — two crews with adjacent tunnel territory — never a shared subject of expertise. A Mason has no more reason to recognize a Weaver's crystal for what it is than a Weaver has to recognize a stabilization glyph.
-
-**The Boar / Demon Court.** Physically overlapping, not coordinated. The collection frames sit inside the Boar's own mine, worked by the Boar's own prisoners, under the Demon Court's own supervision — Archibald and Pazuzu have both, at one point or another, walked past the detail without a second look. What neither of them has is the rest of the picture: that the spools leaving that gallery aren't going to a scrap yard or a smelter, that a second apparatus exists to receive them, or that it answers to a member of their own council. If this ever surfaces at the table, that gap is the reveal — not that the Weavers were hidden, but that the thing hiding them was how unremarkable they looked.
-
-**The Cellar Custodians.** The Waterworks' own guild, and the Weavers' closest physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. See `factions/the-cellar-custodians.md`, `places/capital/the-waterworks.md`.
-
----
-
-## Related Documents
-
-- `places/capital/the-wallows.md` — the Deep, where the thread actually originates; the Weavers never go there
-- `factions/demon-court.md` — Pazuzu's apparatus, host to the collection detail without knowing what it collects
-- `places/capital/the-waterworks.md` — the citywide layer the Weavers' grid runs through
-- `factions/the-cellar-custodians.md` — the guild that shares those tunnels
-- `world/the-regency.md` — Oswald, the Pendragon Attempt, the ongoing claim this grid is being kept ready for; Eveline, the guild's actual craft-master
-- `factions/people-of-promise.md` — the faction most likely to recognize what this is, and least likely to forgive it
-- `factions/the-masons.md` — deliberately not related; see above
-- `world/seats.md` — Aurora, the Seat of Love/Binding
+The Cellar Custodians.
+The Waterworks' own guild, and the Weavers' physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. 
