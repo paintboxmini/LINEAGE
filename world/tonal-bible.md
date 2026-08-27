@@ -14,6 +14,8 @@ Pan's Labyrinth — The mythic breaking through into the brutal. Sacrifice with 
 
 The Dark Crystal — Ancient civilizations with their own complete logic. The world feels like it was there before you arrived. Alien beauty. Dignity in strangeness. Things that aren't human and don't need to be.
 
+Made in Abyss, Fullmetal Alchemist, Howl's Moving Castle 
+
 ## What This World Reaches For
 
 Locations, creatures, and factions exist on their own terms. They were here before the party. They will continue after. The party's presence is one event among many.
