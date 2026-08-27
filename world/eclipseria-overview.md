@@ -1,6 +1,6 @@
-# Eclipseria — World Overview
+# World Overview
 
-Eclipseria is a twilight world in flux. A yellow haze sits over the continent, the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight, dim enough to feel wrong but bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
+A twilight world in flux. A yellow haze sits over the continent, the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight, dim enough to feel wrong but bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
 
 And it rains. A slow drizzle, most days, most hours. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
@@ -16,9 +16,7 @@ The world responds to those who pay attention. Every region has its own logic, i
 
 The known world is a continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
-The Regency maintains the roads and the halfway-inns between the major locations.
-
-Everything that isn't a named place is the In-Between — partially mapped, with just enough glyph posts to slow the instability. Where the lines between far off locations blend together. It is most of the world by area and nobody is from it.
+Everything that isn't a named place is the In-Between — partially mapped, with just enough glyph posts to slow the instability. Where terrain features of far off locations blend together. It is most of the world by area.
 
 ## Survival Tone
 
