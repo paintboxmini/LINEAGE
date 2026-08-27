@@ -16,22 +16,22 @@ Jagged black crystals with a soft inner purple glow, seated at collection points
 The threads.
 Near-invisible, thin as air-ripples, visible only as a faint distortion or a purple-edged shimmer. Strands of pure movement, vibrating and alive. They travel inside the power lines.
 
-The cords.
-At twist frames, dozens of threads are spun together into stable, thicker cords — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and weaving into the Grid.
+The wires.
+At twist frames, dozens of threads are spun together into stable wires — this is where the equipment stops looking like textile work and starts looking like a substation: tension frames, ceramic bushings, heavy motorized reels, all drawing, tensioning, and weaving into the Grid.
 
 The Grid.
-In long chambers beneath the civic districts, finished cords are woven into the city's  power infrastructure. 
+In long chambers beneath the civic districts, finished wires are woven into the city's  power infrastructure. 
 
 What it powers.
 The gilded lampposts lining every major city thoroughfare. Lifts running between the capital's vertical layers — surface to waterworks to the wallows and back. Trolleys running fixed routes through the Inner Precinct and beyond. The Waterworks gates.
 
 ## Ranks
 
-**Line Hands.** The largest rank by far — street-level and waterworks electrical maintenance. Most accept it.
+Line Hands. The largest rank by far — street-level and waterworks electrical maintenance. Most accept it.
 
-**Line Keepers.** Senior technicians. They decide when a district needs throttling. Experts in their field, They guide the line hands every step of the way. A minority carry a low-grade unease they've learned to keep to themselves.
+Line Keepers. Senior technicians. They decide when a district needs throttling. Experts in their field, They guide the line hands every step of the way. A minority carry a low-grade unease they've learned to keep to themselves.
 
-**Threadwrights.** Few in number. The actual weavers. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
+Threadwrights. Few in number. The actual weavers. They work the weaving frames and the first twist into cord, see the crystals and the glow every shift, and develop a craftsman's read on thread density and cord health.
 
 ---
 
@@ -39,7 +39,7 @@ The gilded lampposts lining every major city thoroughfare. Lifts running between
 
 Promotion tests more than skill. Each rank upward also tests whether a candidate will stop asking certain questions. Those who can't make that adjustment stay where they are.
 
-The deepest loyalty is to the people, not to the Regency. Even Threadwrights who hate the extraction keep repairing it, because the alternative is immediate harm to people who never agreed to any of this either.
+The deepest loyalty is to the people, not to the Regency. Even Threadwrights who knows the truth keep repairing it, because the alternative is harm to the people.
 
 Rank-and-file language: the Grid, section four, re-weave the north belt, grid tension, twist in a splice. comb and shear protocol.
 
@@ -50,10 +50,10 @@ Rank-and-file language: the Grid, section four, re-weave the north belt, grid te
 - Ripple Hooks — slender rods with a soft, non-reflective tip, used to lift a single thread without breaking it.
 - Sorting Combs — long handled toothed combs that separate thread from a tangled mass by feel as much as sight.
 - Twist Frames — rotating collars that spin dozens of threads into one stable cord.
-- Resonance Forks — struck near a cord or a section of the Grid; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual.
-- Cold Shears — kept in locked cabinets, used only when a cord must be deliberately cut. The decision is never casual.
+- Resonance Forks — struck near a cord or a section of the Grid; the tone read tells a Line Keeper whether that section is healthy, over-drawn, or fraying. Apprenticeship teaches the ear, not the manual. Also used to hold and maneuver wires.
+- Cold Shears — kept in locked cabinets, used only when a wire must be deliberately cut. The decision is never casual.
 
 ## Relationship to Other Factions
 
 The Cellar Custodians.
-The Waterworks' own guild, and the Weavers' physical neighbor — threads run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. 
+The Waterworks' own guild, and the Weavers' physical neighbor — wites run inside and alongside the same tunnels the Custodians maintain, sharing pathways without sharing a chain of command. 
