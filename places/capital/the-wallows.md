@@ -13,6 +13,10 @@ Everything in the Wallows holds on longer than it should. Sound doesn't dissipat
 
 Aurora is bound at the bottom of this mine. The Boar built his labor operation directly above her. Whether the workers know what they're digging toward is not a question the Demon Court entertains.
 
+## The Collection Point
+
+The threads originate at the labor level of the Wallows. A large cavern full of these strange iridescent minerals. A cluster of collection frames — squat, black-crystal fixtures bolted into the floor. Here only the most skilled weavers are allowed to do the most dangerous work. Connecting any loose threads into the grid while the machinations run continuously.
+
 ---
 
 ## Layer Structure
