@@ -1,9 +1,5 @@
 # The Turnroot Weald — Adventure System
 
-A full campaign framework for running the Turnroot Weald. For location overview and world context, see `places/turnroot-weald.md`.
-
----
-
 ## Pressure Track
 
 Pressure only increases on failed navigation or customs violations. The DM may hold at the current level for strong RP or compliance (e.g., following moss signs perfectly).
@@ -17,31 +13,6 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 | 4 | Root Heart | Boss encounter. Beating the Root Heart opens escape. |
 
 **Pressure 4 is not the only road to the Root Heart.** A gold piece paid into Seeker's Price opens the way there directly, at whatever Pressure the party is currently carrying — voluntarily, and much earlier than the track would have taken them.
-
-**Overgrowth Floor.** The Root Heart is currently in its Overgrowth phase (`bestiary/root-heart.md`, What It Is / GM Notes) — this holds for the entirety of this campaign. While it's active, Pressure cannot rest below **1 (Watched)**: the hostile-plants-emerging baseline is simply present, independent of how well the party is keeping customs. Escalation past that floor still requires a failed check or a Custom violation exactly as stated above, and the DM may still hold at the current level for strong RP or compliance.
-
-### Rootstalker Trail Quality (Overgrowth)
-
-Under the old, pre-Overgrowth ruleset, Rootstalkers only entered play on failed navigation at Pressure 2+ (`bestiary/rootstalker.md`, still the correct behavior once Overgrowth ends — see Post-Defeat). **Overgrowth changes when they start, not what they are:** the mobile pruning tools have turned on the people they used to pass, and that hunger is present in the woods from the moment the party steps under canopy — not gated behind a Pressure threshold or a failed check. What Pressure controls instead is how well they hold the party's trail once they're already looking.
-
-| Pressure | Trail quality | What it looks like at the table |
-|----------|---------------|----------------------------------|
-| 0 | Thin | Glimpses, wrong turns, a Rootstalker that loses the scent. Ambush is possible but unreliable — the forest is hunting, not yet locked on. |
-| 1 | Firming | They find the trail more often. A failed navigation or a loud custom violation is enough for contact. |
-| 2 | Reliable | Failed navigation triggers ambush as the original table states. Even successful travel may draw a stalker if the party is noisy or marked. |
-| 3 | Locked | The trail is held. Moving between scenes risks contact whether navigation succeeds or not. Stalker Nest becomes a live threat, not a POI the party can stumble past safely. |
-| 4 | Centre | Forced Root Heart. Stalkers may still be present as the forest's outer edge of the same hunger. |
-
-Pressure still only rises on failed navigation or customs violations (DM may hold for strong compliance, same as always). Overgrowth doesn't make Pressure climb on its own — it only means the hunters were already in the woods when the party arrived.
-
-**After the cut,** the Weald returns to the ruleset this file already describes everywhere else — that's the normal state, not a new one:
-
-| State | What runs |
-|-------|-----------|
-| **Overgrowth** (this campaign, until Root Heart falls) | Rootstalkers hunt from entry; trail quality scales with Pressure (above); Forest Customs enforced hard; the Holdfast under pressure |
-| **Normal** (after a successful cut, or any future visit past this one) | Rootstalkers gate at Pressure 2+ on failed navigation only (`bestiary/rootstalker.md`); no baseline hunting from step-in; forest-people range recovers over time |
-
-The party's own cut, if they make it, is one more ring (`bestiary/root-heart.md`, What It Is).
 
 ---
 
