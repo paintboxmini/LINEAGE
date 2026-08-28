@@ -1,8 +1,8 @@
 # Seats
 
-Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire continent. They are structural features of existence, as permanent as the Three Cuts.
+Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire world. They are structural features of existence, as permanent as the Three Cuts.
 
-Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
+Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
 
 A Seat may be vacant or occupied. It cannot be destroyed.
 
@@ -23,23 +23,17 @@ Seats themselves never fade. A Seat is a permanent structural feature of existen
 
 Filled doesn't mean one bearer. A living being, a Resonant Item, and a Resonant Place can each independently reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the same ladder for the one bearer-slot that ladder allows.
 
-A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all. Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole The current is unmediated, not severed.
-
-**Binding and Holding are not the same thing.** A Seat powerful enough for it can bind its domain completely — perfectly, at scale, in a way that looks indistinguishable from permanence. That is not the same as being exempt from Price (`world/creation-myth-the-three-cuts.md`, the Second Cut — nothing is exempt from Price, ever, no matter how it's attempted). A domain held the ordinary way pays piecemeal, continuously, the way every Haven does (`world/the-in-between.md`); let the payment lapse and it goes back gradually, sometimes over years. A domain bound instead of held doesn't pay as it goes — the debt still accrues, just uncollected, until it's called in whole. When it is, nothing fades. It's unmade entirely, in a single stroke, all at once. A working this way isn't a shortcut around Price. It's a loan against a future that eventually, always, comes to collect it in full. (First recorded case: the Pendragon Attempt, `world/the-regency.md`, GM Secret.)
-
----
+A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all. Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole.
 
 ## The Seats
 
 ### Memory
-**Bearer:** Silas *(Archon)*
-Because Silas filters Memory, all memory in Eclipseria carries a tint of *longing*. That is not his choice; it is what he is. Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating connections.
+Bearer: Silas *(Archon)*
+Wherever Silas goes, the world is filled with a sense of longing for something forgotten. That is not his choice; it is what he is. Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating connections.
 
 ### Change
 **Bearer:** Elias *(Archon)*
-Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is. See `characters/elias.md`.
-
-**Turnroot Weald carries this Seat's one Embodied item — the Thorne Throne** (`quests/turnroot-weald-adventure.md`, The Thorne Throne), grown from a thorn whip Elias carried and used without ever noticing how long. Accumulated Resonance, not intentional ritual — the same slow mechanism as any object that reaches Embodiment through nothing but proximity and use. The moment it finished becoming what it is, he left it and never went back. Full convergence never completed: the place itself sits at Stage II, Aligned, and stays there — Hallowing needs a Change Archon holding still long enough for a place to catch up, and that's the one thing his own nature won't let him do. See `world/resonant-places.md`, Turnroot Weald.
+Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is.
 
 ### Time
 **Bearer:** Lysander *(fading)*
