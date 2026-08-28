@@ -13,42 +13,22 @@ Paths exist — but they never lead to the same place twice.
 - Walk north long enough and you'll arrive somewhere that needed you — not somewhere you intended.
 - Naming a destination aloud alters the routing.
 
-The Weald does not trap people. It redirects them. Whether that distinction matters depends on where you end up.
-
 Predators execute the forest's will.
 
-## The People
+## The Forest People
 
-Those who stay long-term develop habits instead of maps. They tie cords to their wrists, hum route-songs, or simply let the wood guide them completely. NPCs here freely offer directions to locations — the forest makes them generous about this. It costs them nothing.
-
-Forest families still live under canopy year-round. Their safe range has collapsed toward the deep — see The Holdfast (`quests/turnroot-weald-adventure.md`).
+Those who stay long-term develop habits instead of maps. They tie cords to their wrists, hum route-songs, or simply let the wood guide them completely. Forest families live under canopy year-round.
 
 ## Flora & Fauna
 
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.
 
 Notable species:
-- **Echothorn Vine** — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken, but the vine repeating itself, over and over, the same growth doubling back on its own pattern until it became something else entirely. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
-- **Luminova Leaves** — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
-- **Rootstalker** — signature predator. Appears at Pressure 2+ when navigation fails. See `bestiary/rootstalker.md` for the full stat block.
-- **Skeinwing** — high-altitude glider, native to the sky above the canopy, not the canopy itself. Almost never seen; almost never seen alive twice. See `bestiary/skeinwing.md`.
+- Black thorn vines — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
+- Luminova Leaves — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
+- Rootstalker — signature predator. Appears at Pressure 2+ when navigation fails.
+- Skeinwing — high-altitude glider, native to the sky above the canopy.
 
 ## Geography
 
-The Turnroot Weald wraps the eastern edge of the Ashfall Wastes, insulating the basin from the War Engine beyond. It is both a natural boundary and something more deliberate than natural.
-
----
-
-## GM Secret — Not Player-Facing
-
-Part of "more deliberate than natural": the Masons hold a line against the Weald at Briarwatch specifically — the watchtower ruins and larder fence there are their work, maintained on periodic visits. See `factions/the-masons.md`, Known Works. Whether the Masons contest the Weald anywhere else is not established.
-
----
-
-## Related Documents
-
-- `quests/turnroot-weald-adventure.md` — Full adventure system: Pressure Track, Forest Customs, navigation rules, NPC escalation, Mark system, Points of Interest, and encounter framework
-- `bestiary/rootstalker.md` — Rootstalker stat block, abilities, and loot
-- `bestiary/root-heart.md` — Root Heart boss encounter
-- `bestiary/bone-collector.md` — The Bone Collector starter encounter
-- `items/turnroot-weald-items.md` — All forest items and harvestable materials
+The Turnroot Weald wraps the northeastern edge of the Ashfall Wastes acting as a natural boundary.
