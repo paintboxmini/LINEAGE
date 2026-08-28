@@ -4,8 +4,6 @@ Seats are fixed metaphysical positions within reality's structure. Each governs 
 
 Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
 
-A Seat may be vacant or occupied. It cannot be destroyed.
-
 ## Seats and the Cuts
 
 Seats exist because the Cuts do. The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position within that structure. No Cuts, no structure; no structure, nothing to sit in.
@@ -18,6 +16,8 @@ Seats exist because the Cuts do. The Three Cuts made a reality that holds — Na
 | **Fading** | The bearers are thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
 | **Empty** | The domain's distribution loses its organizing bearers and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places or absent in others. |
 | **Contested** | Two beings fighting for a Seat warp reality until one wins. |
+
+A Seat may be vacant or occupied. It cannot be destroyed.
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
 
@@ -37,17 +37,15 @@ Changes so much he has forgotten what he is. He believes he is simply a shapeshi
 
 ### Time
 **Bearer:** Lysander *(fading)*
-References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name — this record remembers what Eclipseria no longer does. *(Players may recognize this deity from a prior campaign.)*
+References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name.
 
 ### Love / Binding
 **Bearer:** Aurora
-Speaks of connections and what holds things together. Aurora is the destruction of the old world made incarnate — bound and chained underground, fueling Eclipseria's continued existence.
+Speaks of connections and what holds things together. Aurora is bound and chained underground, fueling Eclipseria's continued existence.
 
 **Current state: Contested.**
 
-Aurora holds the Seat but is bound and suppressed beneath Eclipseria. The Regency extracts the Seat's function — unity, binding, continuity — without its bearer having freedom to express it. The chains are not just containment. They are ongoing pressure on the Seat itself.
-
-The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully. See `world/the-regency.md`.
+The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully.
 
 **Aurora is fused to a physical Loom, and it makes this Seat the first real case of full convergence** (`world/archons.md`, Multiple Bearers, One Seat). The Loom is the literal machinery she is chained to, deep beneath the city — her hair splayed out in every direction, feeding directly into it as the thread the Weavers' wider Grid eventually draws from (`factions/the-weavers.md`). The eight who built it raised it as a practical ritual apparatus — a throne meant to carry a binding they didn't finish performing that day (`world/the-regency.md`, The Pendragon Attempt) — with no understanding, at the time, of what fusing it to a living Archon for a century would actually do to the thing itself. What it became, it became by proximity and use, the same slow mechanism as any other Accumulated Resonance (`world/resonant-items.md`, How an Object Becomes Resonant), not by the original day's design. Permanently fused to Aurora, run without pause for a century: the Loom reached its own Embodiment. The capital itself — that same binding load-bearing through every district, foundation, and utility line the city has, for just as long — reached its own Hallowing alongside it. Aurora, the Loom, and Eclipseria are Incarnate, Embodied, and Hallowed on the same Seat, at the same time: the first Seat in the setting to actually complete the convergence its own name always implied. Nobody set out to cause it. But long before now, the survivors of that first fight understood exactly what a century of unbroken contact with a living Archon had built around her — and kept working with it deliberately, not by accident, ever since (`world/the-regency.md`, The Pendragon Attempt).
 
@@ -123,9 +121,3 @@ Four resonances noticed so far, neither confirmed as more than resonance — sam
 - **Glasslight Reach's singing streets** (`places/glasslight-reach.md` — "the cliff sings when wind passes through them") — nobody in Glasslight knows why the fractures sing. The town doesn't know Seats exist, the same as every other local religion in Eclipseria (`world/the-regency.md`; the Temple District's own coincidental echoes, `places/capital/capital.md`). The resonance is real. The knowledge of it isn't, for anyone standing in the street. A candidate Resonant Place on the strength of that resonance alone (`world/resonant-places.md`) — the Seat it belongs to is not yet confirmed the way Fermata's was.
 - **The Temple of the Rivers, Eclipseria** (`places/capital/capital.md`, The Temple District) — a river-god cult built around a reflective pool, worshipping a rhythm nobody there has ever explained. The capital's rivers genuinely do breathe on a tidal cycle, in a documented, entirely mundane way (`world/geography-overview.md`) — nothing supernatural is required to explain what the temple is looking at. Whether that rhythm is also, underneath, this Seat wearing water instead of sound is unconfirmed, same as Glasslight's streets. A third guess landing near the same edge, not proof of anything.
 - **The wind, generally** (`world/geography-overview.md`) — faster than the river's tide, each gust or breeze its own full breath in, a pause, then out again. Sometimes a quick, close cycle; sometimes long stretches of near-stillness between breaths. No loop to it the way the rivers have one — wind doesn't run with a grain, it just pulses in and out. Nobody worships this one. It's just weather, felt everywhere, explained by no one — maybe the purest version of a resonance nobody's actually noticed yet.
-
----
-
-*This list is incomplete. Not all Seats have known bearers. Not all bearers are known.*
-
-*Bearers marked* **(Archon)** *have reached Incarnation — see `world/archons.md`. A Seat with a bearer who is not an Archon, or with no bearer at all, is still a Seat; the position does not depend on anyone sitting in it.*
