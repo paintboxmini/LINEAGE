@@ -2,28 +2,25 @@
 
 Formally, the **Crown Regency** — a council of mixed races.
 
-Their jurisdiction is practical: managing citizens, maintaining roads, and operating the halfway-inns between major hubs. They are the reason travel in the triangle is possible at a predictable pace.
+Their jurisdiction is practical: managing citizens, maintaining roads and critical infrastructure, and operating the halfway-inns.
 
-The Regency governs from the Citadel at the center of Eclipseria (the city).
-
----
+The Regency governs from the Citadel at the center of Eclipseria.
 
 ## Council Members
 
 Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the five who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
 
-**The original party was seven companions and Pendragon — eight in the room.** Two of the seven died in the fight: the first to hold the Owl, the first to hold the Elephant.
-**Five members of the council survived:** Oswald, Cedric, Elara, Archibald, Isabella.
-**Percival holds the Owl now — but he isn't the first to have replaced the dead.** The position turned over at least once before landing on him. Who held it in between, and what happened to that person, is design debt.
-**Eveline holds the Elephant now, and hers is a different case.** Not unrecorded churn — a single, deliberate succession. See Lady Eveline — Behavioral Contract, below, for what that actually means.
+The original party was seven companions and Pendragon — eight in the room.Two of the seven died in the fight: the first to hold the Owl, the first to hold the Elephant.
+Five members of the council survived: Oswald, Cedric, Elara, Archibald, Isabella.
+Percival holds the Owl now — but he isn't the first replacement. The position turned over at least once before landing on him. Who held it in between, and what happened to that person is unknown.
 
 | Member | Title | Sphere |
 |--------|-------|--------|
 | Lord Oswald | The Lion | Regent — in title only. He's ruled outright since the throne's line ended. |
-| Lady Isabella | The Panther | **Supreme Magistrate.** Presides over the Temple of Justice (`places/capital/capital.md`) — the court for businesses and citizens. Contracts and legal maneuvering are her tools inside that court, and so is the highest bidder: the law serves whoever's paying, not whoever's right. |
-| Lord Cedric | The Bear | **Military commander.** External defense and force of last resort — walls, gates, martial law on the street if it ever truly comes to that, never routine policing. Commands the Cellar Custodians against what comes up from below, and the Adventurers' Hall's irregulars, extending Regency order into the surrounding territory. |
-| Lady Elara | The Fox | Trade and the marketplace. Every coin in the capital. |
-| Lord Percival | The Owl | **Cartographer.** Surveys, way-marks, and holds the engineering plans for the kingdom's infrastructure — silent, observant, keeps records. Glasskin (`places/glasslight-reach.md`) — the only one of his kind at the table. |
+| Lady Isabella | The Panther | Supreme Magistrate. Presides over the Temple of Justice — the court system. Contracts and legal maneuvering are her tools inside that court, and so is the highest bidder: the law serves whoever's paying, not whoever's right. |
+| Lord Cedric | The Bear | Military commander. External defense and force of last resort — walls, gates, martial law on the street if it ever truly comes to that, never routine policing. Commands the Cellar Custodians, and directs the Adventurer Hall's members, extending Regency order into the surrounding territory. |
+| Lady Elara | The Fox | Trade and business. Every coin in the capital. |
+| Lord Percival | The Owl | silent, observant, keeps records. |
 | Lord Archibald | The Boar | **City Guard.** Security, pointed inward at the citizens — town watch, the Demon Court, the Wallows. The official duty is keeping the capital safe; what it's become is profiting from what he's supposed to remove. The underground economy answers to him because he controls what gets seen, not because it was ever officially his to run. Debt paid in favors or parts of yourself you can't stand to lose. Informally: the Pig — never to his face. See `places/capital/underground-bazaar.md`, `places/capital/the-wallows.md`. |
 | Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid, the extraction, the one piece of the city that actually needs a trusted, silent overseer. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
 
