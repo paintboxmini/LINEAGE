@@ -91,6 +91,19 @@ These are often the most powerful and the least stable — living in permanent p
 **Fermata** *(Song and Silence, stage unresolved)* — a being whose entire nature is one sustained note holding an entire boundary of silence, guarding the site the Silent Blade was cut from. Confirmed as a Resonant Person of this Seat rather than merely resembling one; which stage of Alignment it's reached is left open on purpose, same shape as Aege's own unresolved stage. See `bestiary/fermata.md`, `places/the-silent-choir.md`.
 
 ---
+## To Take a Seat
+
+- Alignment becomes total.
+- Free will remains, but aligned so completely it never points anywhere else. To act against the Seat would mean acting against their own nature — not impossible, just unthinkable in the way betraying yourself is unthinkable.
+
+The Seat-Bearer does not command the principle. They become its inevitable expression.
+
+The bearer's will directs the distribution of the principle through the world. The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. They determine where and how fully its expression reaches the world.
+
+To become an Archon is not godhood. It is not dominion. It is necessity.
+
+Most bearers never release their Seat. Relinquishing it feels like annihilation.
+
 
 ## Related Documents
 
