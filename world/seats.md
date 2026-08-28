@@ -2,33 +2,28 @@
 
 Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire continent. They are structural features of existence, as permanent as the Three Cuts.
 
+Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
+
 A Seat may be vacant or occupied. It cannot be destroyed.
 
 ## Seats and the Cuts
 
 Seats exist because the Cuts do. The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position within that structure. No Cuts, no structure; no structure, nothing to sit in.
 
-This settles two statements that have both been written down and read like rivals. `world/creation-myth-the-three-cuts.md` says *"Where any Cut weakened, the Unheld pressed close."* `world/eclipseria-overview.md` says *"Where the Seats weaken, the Unheld presses in."* Both are true. **Where a Cut thins, every Seat thins with it** — the second statement is the first, one step downstream.
-
-Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes, unknowingly, rhyme with one.
-
-
----
-
 ## Seat States
 
 | State | Effect |
 |-------|--------|
 | **Filled** | Domain is correctly distributed and functions normally. |
-| **Fading** | The bearer is thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
-| **Empty** | The domain's distribution loses its organizing bearer and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places, absent in others, or otherwise wrong. |
+| **Fading** | The bearers are thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
+| **Empty** | The domain's distribution loses its organizing bearers and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places or absent in others. |
 | **Contested** | Two beings fighting for a Seat warp reality until one wins. |
 
 Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
 
-**Filled doesn't mean one bearer.** A living being, a Resonant Item, and a Resonant Place can each independently reach Archon on the same Seat — three separate ladders, each ending at the same summit (`world/archons.md`, Multiple Bearers, One Seat). None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the *same* ladder for the one bearer-slot that ladder allows. Crossing ladders isn't a contest, because nothing is being taken from anyone.
+Filled doesn't mean one bearer. A living being, a Resonant Item, and a Resonant Place can each independently reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the same ladder for the one bearer-slot that ladder allows.
 
-**A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all.** Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole (`world/resonant-people.md`, `world/resonant-items.md`, `world/resonant-places.md`). The current is unmediated, not severed.
+A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all. Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole The current is unmediated, not severed.
 
 **Binding and Holding are not the same thing.** A Seat powerful enough for it can bind its domain completely — perfectly, at scale, in a way that looks indistinguishable from permanence. That is not the same as being exempt from Price (`world/creation-myth-the-three-cuts.md`, the Second Cut — nothing is exempt from Price, ever, no matter how it's attempted). A domain held the ordinary way pays piecemeal, continuously, the way every Haven does (`world/the-in-between.md`); let the payment lapse and it goes back gradually, sometimes over years. A domain bound instead of held doesn't pay as it goes — the debt still accrues, just uncollected, until it's called in whole. When it is, nothing fades. It's unmade entirely, in a single stroke, all at once. A working this way isn't a shortcut around Price. It's a loan against a future that eventually, always, comes to collect it in full. (First recorded case: the Pendragon Attempt, `world/the-regency.md`, GM Secret.)
 
