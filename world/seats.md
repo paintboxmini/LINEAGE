@@ -1,45 +1,17 @@
 # Seats
 
-Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire continent — not local zones. They are not powers granted by gods or cultures — they are structural features of existence, as permanent as the Three Cuts.
+Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire continent. They are structural features of existence, as permanent as the Three Cuts.
 
 A Seat may be vacant or occupied. It cannot be destroyed.
 
----
-
 ## Seats and the Cuts
 
-**Seats exist because the Cuts do.** The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position *within that structure*. No Cuts, no structure; no structure, nothing to sit in.
+Seats exist because the Cuts do. The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position within that structure. No Cuts, no structure; no structure, nothing to sit in.
 
 This settles two statements that have both been written down and read like rivals. `world/creation-myth-the-three-cuts.md` says *"Where any Cut weakened, the Unheld pressed close."* `world/eclipseria-overview.md` says *"Where the Seats weaken, the Unheld presses in."* Both are true. **Where a Cut thins, every Seat thins with it** — the second statement is the first, one step downstream.
 
-It does not run the other way. A Seat standing Empty breaks its own domain (see Seat States) without thinning a Cut. The Cuts are the deeper of the two, and damage travels down from them, not up.
+Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes, unknowingly, rhyme with one.
 
----
-
-## What a Seat Is
-
-To sit in a Seat is not to gain power over a domain. It is to become aligned with a principle reality already recognizes.
-
-The Seat of Harvest doesn't decide whether crops grow. It *is* the pattern that makes growing possible. When the Seat is filled, harvests happen. When it's empty, fields rot or grow wild.
-
-Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, memory, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Most don't resemble anything. Either way, the Seat remains the same. Cultures do not create Seats — they create religions that sometimes, unknowingly, rhyme with one.
-
----
-
-## To Take a Seat
-
-- Alignment becomes total.
-- Internal contradiction ends.
-- Free will remains, but aligned so completely it never points anywhere else. To act against the Seat would mean acting against their own nature — not impossible, just unthinkable in the way betraying yourself is unthinkable.
-- The individual becomes function.
-
-The Seat-Bearer does not command the principle. They become its inevitable expression.
-
-**The bearer controls the distribution of the domain through the world.** The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. The bearer does not invent or own the domain. They determine where and how fully its expression reaches the world.
-
-To become an Archon is not godhood. It is not dominion. It is necessity.
-
-Most bearers never release their Seat. Relinquishing it feels like annihilation.
 
 ---
 
