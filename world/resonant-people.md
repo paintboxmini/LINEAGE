@@ -70,45 +70,12 @@ This is the highest stable form a Resonant Person can reach.
 - A bear consumed by violence becomes a Resonant Person of Blood.
 - A vengeful forest spirit becomes a Resonant Person of Wild Change.
 
----
-
-## Failed Seat-Takers
-
-Some Resonant People are created when a being attempts to claim a Seat and fails.
-
-They survive the contact. But the Seat leaves its mark permanently.
-
-These are often the most powerful and the least stable — living in permanent proximity to an authority they cannot fully hold.
-
----
-
 ## Known Resonant People
 
-**Aege, the Carrion Guide** *(Death, Stage II — Alignment; **fated to the Seat**)* — Not the Archon yet, and the Seat is not filled. She is one stage from Incarnation, and Incarnation is Archonhood (`world/archons.md`). When that happens, or whether anyone survives being guided by her afterward, is unestablished. Reads where her domain is concentrating — real deaths, real risk of more — rather than investigating it, which is the real reason she routes travellers toward wherever that concentration currently sits, and the real reason she seems to know more about a party than she has been told. See `characters/aege.md`, `places/vultures-nest.md` (GM Secret).
+**Aege, the Carrion Guide** *(Life and Death)*.
 
-**King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved; see `world/the-scar.md`.
+**King Pendragon, the Scar** *(Love / Binding — failed Seat-taker)* — GM-facing only. His stage is genuinely unclear and deliberately unresolved.
 
-**Fermata** *(Song and Silence, stage unresolved)* — a being whose entire nature is one sustained note holding an entire boundary of silence, guarding the site the Silent Blade was cut from. Confirmed as a Resonant Person of this Seat rather than merely resembling one; which stage of Alignment it's reached is left open on purpose, same shape as Aege's own unresolved stage. See `bestiary/fermata.md`, `places/the-silent-choir.md`.
+**Fermata** *(Song and Silence)* — a being whose entire nature is one sustained note holding an entire boundary of silence, guarding the site the Silent Blade was cut from.
 
----
-## To Take a Seat
-
-- Alignment becomes total.
-- Free will remains, but aligned so completely it never points anywhere else. To act against the Seat would mean acting against their own nature — not impossible, just unthinkable in the way betraying yourself is unthinkable.
-
-The Seat-Bearer does not command the principle. They become its inevitable expression.
-
-The bearer's will directs the distribution of the principle through the world. The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. They determine where and how fully its expression reaches the world.
-
-To become an Archon is not godhood. It is not dominion. It is necessity.
-
-Most bearers never release their Seat. Relinquishing it feels like annihilation.
-
-
-## Related Documents
-
-- `world/seats.md` — the Seats these align to, and their bearers
-- `world/archons.md` — Stage III, from the other side
-- `world/resonant-items.md` — the same alignment, in an object instead of a person
-- `world/resonant-places.md` — the same alignment, in a place instead of a person
-- `world/the-scar.md` — a failed Seat-taker the stages may not reach
+The Resonant's will directs the distribution of the principle through the world. The Seat is the underlying principle; its bearer is the mechanism through which that principle is correctly expressed and distributed across reality. They determine where and how fully its expression reaches the world.
