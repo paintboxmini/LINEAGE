@@ -23,75 +23,45 @@ Seats themselves never fade. A Seat is a permanent structural feature of existen
 
 Filled doesn't mean one bearer. A living being, a Resonant Item, and a Resonant Place can each independently reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the same ladder for the one bearer-slot that ladder allows.
 
-A Seat's state governs how reliably its domain reaches the world — not whether the domain can still touch it at all. Even a Seat standing Empty can leave behind a Resonant Person, a Resonant Item, or a Resonant Place, still faithfully aligned to what it once distributed whole.
-
 ## The Seats
 
-### Memory
-Bearer: Silas *(Archon)*
-Wherever Silas goes, the world is filled with a sense of longing for something forgotten. That is not his choice; it is what he is. Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating connections.
+### Memory and Thresholds
+**Bearer:** Silas
 
-### Change
-**Bearer:** Elias *(Archon)*
-Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is.
+Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating patterns.
 
-### Time
-**Bearer:** Lysander *(fading)*
-References continuity and persistence. Identity across moments. Lysander has faded far enough that the world has forgotten his name.
+Wherever Silas goes, the world is filled with a sense of longing for something forgotten. Anyone he touches is filled with memories they had thought were lost forever. That is not his choice; it is what he is. 
 
-### Love / Binding
-**Bearer:** Aurora
+### Time and Growth
+**Bearer:** Elias is fated to it, The Throne Throne.
+
+References continuity and persistence. Identity across moments. Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is.
+
+### Love and Binding
+**Bearer:** Aurora, The Loom, Eclipseria
+
 Speaks of connections and what holds things together. Aurora is bound and chained underground, fueling Eclipseria's continued existence.
 
-**Current state: Contested.**
-
-The original claimants failed. The council has not abandoned the attempt. Lord Oswald is positioning to claim it fully.
-
-**Aurora is fused to a physical Loom, and it makes this Seat the first real case of full convergence**. The Loom is the literal machinery she is chained to, deep beneath the city — her hair splayed out in every direction, feeding directly into it as the thread the Weavers' wider Grid eventually draws from (`factions/the-weavers.md`). The eight who built it raised it as a practical ritual apparatus — a throne meant to carry a binding they didn't finish performing that day (`world/the-regency.md`, The Pendragon Attempt) — with no understanding, at the time, of what fusing it to a living Archon for a century would actually do to the thing itself. What it became, it became by proximity and use, the same slow mechanism as any other Accumulated Resonance (`world/resonant-items.md`, How an Object Becomes Resonant), not by the original day's design. Permanently fused to Aurora, run without pause for a century: the Loom reached its own Embodiment. The capital itself — that same binding load-bearing through every district, foundation, and utility line the city has, for just as long — reached its own Hallowing alongside it. Aurora, the Loom, and Eclipseria are Incarnate, Embodied, and Hallowed on the same Seat, at the same time: the first Seat in the setting to actually complete the convergence its own name always implied. Nobody set out to cause it. But long before now, the survivors of that first fight understood exactly what a century of unbroken contact with a living Archon had built around her — and kept working with it deliberately, not by accident, ever since (`world/the-regency.md`, The Pendragon Attempt).
-
-**Contested doesn't mean the domain isn't reaching anyone. It means it's reaching everyone unevenly.** The Regency's extraction only ever touches the Binding half of the domain — connection, continuity, things held together and kept from falling apart — never the Love half, the warm and intimate one. That's why the capital feels calm rather than loved: plazas that stay quiet through arguments that should have gone worse, banners that barely move, a normalcy nobody built on purpose (`factions/the-weavers.md`). Genuine love — family, real friendship — survives the way it always has, in small pockets the Grid never touches and was never built to reach. The Temple of Unity runs on exactly the half that does reach the city (`characters/vescal.md`) — not love, binding: a central temple people go to specifically to resolve what they can't resolve themselves, which is connection and continuity given a ritual shape, not warmth. Nobody there knows why that's the temple's real character. It's the same accident every local religion in Eclipseria makes when it rhymes with a Seat nobody knows exists.
+The Loom is the literal machinery she is chained to, deep beneath the city — her hair splayed out feeding into the Weaver's Grid.
 
 ### The Hunt
 **Bearer:** The Heron
 
-Speaks of fishing. Always fishing — where you stand, what you're after, how long you're willing to wait. The bait you're willing to lose.
+Speaks of fishing. Always fishing — where you stand, what you're after, how long you're willing to wait.
 
 The Heron is never impatient. It does not pursue. It holds very still and pays attention until the moment arrives, and then it acts without hesitation. The Hunt isn't violence — it's attention sustained long enough to become inevitable.
 
-*The one that got away* is a phrase the Heron uses for something that isn't a fish.
+### War and Death
+**Bearer:** Lysander
 
-### War
-**Bearer:** Unnamed
-Obsessed with conflict, breaking points, and necessary endings. Does not appear to have a stable form.
+The god of conflict, breaking points, and necessary endings. Does not appear to have a stable form.
+
+Recurring character who appears to players in the form of a traveling bard. He is always interested in their adventure stories.
 
 ### Harvest / Fertility
-**Bearer:** Mira *(Archon)*
-Discusses gathering, abundance, and what's worth preserving. Attentive to what gets lost in the keeping.
+**Bearer:** Mira
 
-### Death
-Domain: Endings, Finality, Release
-
-Death is not evil. Death is conclusion. It governs termination, closure, rest, and the irreversible. Nothing escapes this Seat. **Bearer:** None seated. **Aege, the Carrion Guide, is fated to it** (`characters/aege.md`) — how and when is deliberately unestablished, the same shape as Greed and the Storm Seat. She is currently a Stage II Resonant Person of the domain, which is not the same as filling it. See `world/resonant-people.md`, Known Resonant People.
-
-### Knowledge
-Domain: Knowing, Revelation, Pattern
-
-Knowledge is not wisdom. It is awareness. It governs truth uncovered, memory preserved, secrets revealed, and pattern recognition. Nothing hidden escapes it forever.
-
-### Blood
-Domain: Vitality, Sacrifice, Lineage
-
-Blood governs life-force, inheritance, oath, and cost. It is the price of continuation.
-
-### Storm
-**Bearer:** None seated. **Greed is fated to it** (`characters/greed.md`) — how and when is deliberately unestablished, so the Seat reads as unheld in the present tense and every other file that says so is correct.
-Domain: Storms, Turbulence, the Uncontrolled
-
-Storms behaving violently or unpredictably are not signs of an Empty Seat. That is Storm functioning normally: the domain itself is turbulence and the uncontrolled.
-
-When the Storm Seat is Empty, the problem is distribution. Storm no longer has a bearer controlling where and how fully the domain expresses. One region may experience superstorms while another experiences an unnatural absence of storms. The domain has not simply vanished; its expression has become uneven and wrong.
-
-At least one Storm-aligned Artifact exists in the world — the Lightning Loop (`items/lightning-loop.md`), currently worn by Kaine — and carries only a narrow slice of the full domain (lightning specifically), in the hands of someone the Seat may not have chosen at all; whether Kaine's claim on it has any relationship to Greed's own is unestablished.
+Discusses gathering, abundance, and what's worth preserving.
 
 ### Navigation / Pathfinding
 **Bearer:** The Night Ferryman
@@ -102,10 +72,8 @@ Doesn't offer the destination. Doesn't promise the destination is good. Only tha
 
 *"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
 
-Rows after curfew at Vulture's Nest, and further out when trust is earned. Whether he knows what he is himself is not established. See `places/vultures-nest.md`, `places/the-coil.md`.
-
 ### Song and Silence
-**Bearer:** None seated.
+**Bearer:** Undecided
 
 Domain: the space between an utterance and its absence — what a sound makes possible by existing, and what a silence makes possible by holding. Not two opposed things. The same edge, read from either side, the way a held note and the quiet after it are made of the same breath.
 
