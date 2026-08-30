@@ -10,7 +10,7 @@ The Regency governs from the Citadel at the center of Eclipseria.
 
 Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the five who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
 
-The original party was seven companions and Pendragon — eight in the room.Two of the seven died in the fight: the first to hold the Owl, the first to hold the Elephant.
+The original party was six companions and Pendragon — seven in the room. Three died in the fight: the first to hold the Owl, the first to hold the Elephant, and Pendragon himself.
 Five members of the council survived: Oswald, Cedric, Elara, Archibald, Isabella.
 Percival holds the Owl now — but he isn't the first replacement. The position turned over at least once before landing on him. Who held it in between, and what happened to that person is unknown.
 
@@ -21,7 +21,6 @@ Percival holds the Owl now — but he isn't the first replacement. The position 
 | Lord Cedric | The Bear | Military commander. External defense and force of last resort — walls, gates, martial law on the street if it ever truly comes to that, never routine policing. Commands the Cellar Custodians, and directs the Adventurer Hall's members, extending Regency order into the surrounding territory. |
 | Lady Elara | The Fox | Trade and business. Every coin in the capital. |
 | Lord Percival | The Owl | silent, observant, keeps records. |
-| Lord Archibald | The Boar | **City Guard.** Security, pointed inward at the citizens. The official duty is keeping the capital safe; what it's become is profiting off of the oppressed. The underground economy answers to him. Debt paid in favors or parts of yourself you can't stand to lose. Informally: the Pig — never to his face. |
 | Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid. |
 
 ---
@@ -36,8 +35,7 @@ What different city factions say about the council. Collected from marketplace m
 | Lady Isabella | "Don't sign a contract with her unless you have two lawyers and a priest present." | "She sits the Temple of Justice bench herself, often... though some say the Supreme Magistrate knows the court's every gap because she wrote half of them." |
 | Lord Cedric | "A man's man. Keeps the walls high and the bandits at bay. Drinks like a fish, though." | "He honors the Forge. He knows that peace is only maintained through the strength of steel." |
 | Lady Elara | "The Queen of the Market. If a coin jingles in Eclipseria, she knows the weight and the mint." | "She values gold over gods. Her shrewdness borders on greed, if you ask the Temple of Knowledge." |
-| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. The roads stay as short as they can be because someone like him never stopped checking." |
-| Lord Archibald | "I saw him near the Underground Market entrance once. He didn't look like he was there for groceries." | "A ghost in a mask. He never comes to the Temple of Unity. It's unsettling." |
+| Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. Always watching." |
 | Lady Eveline | "She never speaks, but she hears everything. |
 
 **What the city wonders, and never quite asks out loud.** Five of the seven masks have been on the same five faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The five under the masks today aren't the same five who started. They're undead, their ancient, it's unatural, ect.— the Regency simply never announces the swap. None of it is confirmed. None of it is denied, either, because nobody with an answer has ever been asked directly, and the masks make it very hard to be sure who you'd even be asking.
