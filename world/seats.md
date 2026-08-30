@@ -2,7 +2,7 @@
 
 Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire world. They are structural features of existence, as permanent as the Three Cuts.
 
-Most cultures don't know Seats exist as such. A religion isn't interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
+Most cultures don't know Seats exist as such. A religion is an interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
 
 ## Seats and the Cuts
 
@@ -14,35 +14,26 @@ Seats exist because the Cuts do. The Three Cuts made a reality that holds — Na
 |-------|--------|
 | **Filled** | Domain is correctly distributed and functions normally. |
 | **Fading** | The bearers are thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
-| **Empty** | The domain's distribution loses its organizing bearers and begins breaking down. The domain does not simply disappear; its expression can become uneven, excessive in some places or absent in others. |
-| **Contested** | Two beings fighting for a Seat warp reality until one wins. |
+| **Empty** | The domain's distribution loses its organizing bearers and begins breaking down. The domain does not simply disappear; its expression can become uneven or warped. |
 
-A Seat may be vacant or occupied. It cannot be destroyed.
-
-Seats themselves never fade. A Seat is a permanent structural feature of existence; what fades is its bearer.
-
-Filled doesn't mean one bearer. A living being, a Resonant Item, and a Resonant Place can each independently reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all three at once. **Contested** is a different thing: two claimants fighting on the same ladder for the one bearer-slot that ladder allows.
+Filled doesn't mean one bearer. Living beings, Resonant Items, and Resonant Places can each reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all at once.
 
 ## The Seats
 
 ### Memory and Thresholds
-**Bearer:** Silas
-
-Only speaks of what was. The god of thresholds and transitions. Remembers the previous reality, the old ways, repeating patterns.
-
-Wherever Silas goes, the world is filled with a sense of longing for something forgotten. Anyone he touches is filled with memories they had thought were lost forever. That is not his choice; it is what he is. 
+**Named Archons:** Silas
+Only speaks of what was. The Seat of thresholds and transitions. Remembering the previous the old ways, repeating patterns.
 
 ### Time and Growth
-**Bearer:** Elias is fated to it, The Throne Throne.
-
-References continuity and persistence. Identity across moments. Changes so much he has forgotten what he is. He believes he is simply a shapeshifter. He is not wrong about what he does. He is wrong about what he is.
+**Named Archons:** Elias, Lysander, the Thorne Whip, Turnroot Weald.
+References continuity and persistence. Identity across moments.
 
 ### Love and Binding
-**Bearer:** Aurora, The Loom, Eclipseria
+**Named Archons:** Aurora, The Loom, Eclipseria
 
-Speaks of connections and what holds things together. Aurora is bound and chained underground, fueling Eclipseria's continued existence.
+Speaks of connections and togetherness
 
-The Loom is the literal machinery she is chained to, deep beneath the city — her hair splayed out feeding into the Weaver's Grid.
+The Loom is the literal machinery Aurora is chained to, deep beneath the city — her hair splayed out feeding into the Weaver's Grid.
 
 ### The Hunt
 **Bearer:** The Heron
