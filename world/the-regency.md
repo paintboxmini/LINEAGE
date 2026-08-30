@@ -21,8 +21,8 @@ Percival holds the Owl now — but he isn't the first replacement. The position 
 | Lord Cedric | The Bear | Military commander. External defense and force of last resort — walls, gates, martial law on the street if it ever truly comes to that, never routine policing. Commands the Cellar Custodians, and directs the Adventurer Hall's members, extending Regency order into the surrounding territory. |
 | Lady Elara | The Fox | Trade and business. Every coin in the capital. |
 | Lord Percival | The Owl | silent, observant, keeps records. |
-| Lord Archibald | The Boar | **City Guard.** Security, pointed inward at the citizens — town watch, the Demon Court, the Wallows. The official duty is keeping the capital safe; what it's become is profiting from what he's supposed to remove. The underground economy answers to him because he controls what gets seen, not because it was ever officially his to run. Debt paid in favors or parts of yourself you can't stand to lose. Informally: the Pig — never to his face. See `places/capital/underground-bazaar.md`, `places/capital/the-wallows.md`. |
-| Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid, the extraction, the one piece of the city that actually needs a trusted, silent overseer. See behavioral note below, and `factions/the-weavers.md` for what that oversight actually is underneath. |
+| Lord Archibald | The Boar | **City Guard.** Security, pointed inward at the citizens. The official duty is keeping the capital safe; what it's become is profiting off of the oppressed. The underground economy answers to him. Debt paid in favors or parts of yourself you can't stand to lose. Informally: the Pig — never to his face. |
+| Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid. |
 
 ---
 
