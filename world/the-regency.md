@@ -8,10 +8,10 @@ The Regency governs from the Citadel at the center of Eclipseria.
 
 ## Council Members
 
-Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the five who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
+Each member wears an animal mask — officially regalia, earned or assigned by reputation same as the titles they're named for. For the four who survived the attempted Seat taking, the mask is as much to cover their unnatural age as it is a symbol of power.
 
 The original party was six companions and Pendragon — seven in the room. Three died in the fight: the first to hold the Owl, the first to hold the Elephant, and Pendragon himself.
-Five members of the council survived: Oswald, Cedric, Elara, Archibald, Isabella.
+Five members of the council survived: Oswald, Cedric, Elara, Isabella.
 Percival holds the Owl now — but he isn't the first replacement. The position turned over at least once before landing on him. Who held it in between, and what happened to that person is unknown.
 
 | Member | Title | Sphere |
@@ -38,13 +38,13 @@ What different city factions say about the council. Collected from marketplace m
 | Lord Percival | "Half-mad, if you ask me. Spends more time with dusty scrolls than with living people." | "A saint of patience. Always watching." |
 | Lady Eveline | "She never speaks, but she hears everything. |
 
-**What the city wonders, and never quite asks out loud.** Five of the seven masks have been on the same five faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The five under the masks today aren't the same five who started. They're undead, their ancient, it's unatural, ect.— the Regency simply never announces the swap. None of it is confirmed. None of it is denied, either, because nobody with an answer has ever been asked directly, and the masks make it very hard to be sure who you'd even be asking.
+**What the city wonders, and never quite asks out loud.** four of the seven masks have been on the same four faces for longer than anyone alive can personally account for — grandparents' stories match grandchildren's. Nobody has a clean explanation, so the city keeps a few dirty ones in circulation instead: they don't age because whatever they are isn't quite human anymore. The masks aren't regalia, they're the only thing holding the faces underneath together. The four under the masks today aren't the same four who started. They're undead, their ancient, it's unatural, ect.
 
 ---
 
 ## Elara vs. the Forge
 
-A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch (`places/capital/capital.md`, Temple of the Forge) refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is a category error he treats as a quiet blasphemy. Forge-made mechanical gear is sold at the temple itself or through its resident artisans — never on the open Marketplace boards, never under a Traders' license.
+A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is a category error he treats as a quiet blasphemy. Forge-made mechanical gear is sold at the temple itself or through its resident artisans — never on the open Marketplace boards, never under a Traders' license.
 
 Elara's Wardens occasionally "inspect" the temple precinct and are received with cold courtesy and minimal cooperation. Neither side has forced a confrontation: she can slow certain metal shipments and fuel allotments; he can make certain commissions simply unavailable to anyone known to be close to the Fox. Both believe they're defending the proper order of the city — hers administrative, his religious.
 
