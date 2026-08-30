@@ -1,59 +1,30 @@
 # The Underground Bazaar
 
-*Semi-official. Everyone knows it exists. The authorities profit from it. No official acknowledgment it exists.*
+Semi-official. Everyone knows it exists. The authorities profit from it. No official acknowledgment it exists.
 
-A small, hidden pocket inside the Waterworks — not a level of its own. See `places/capital/the-waterworks.md`.
-For the tavern, same level, see `places/capital/underground-tavern.md`.
-For the mine below the tavern, see `places/capital/the-wallows.md`.
-The Pig's role in this location: see `world/the-regency.md` (Lord Archibald, the Boar).
-
----
+A small, hidden pocket inside the Waterworks.
 
 ## Entry
 
-The heavy door groans open against its own weight, releasing warm herb-scented air cut with something sharper — ozone, or metal heated too long. Lantern light flickers off uneven stone walls carved with symbols that seem to shift when you're not looking directly at them.
+The bazaar sprawls before you — not the desperate predatory maze you expected from the stories, but something more like a neighborhood where the neighbors happen to trade in impossibilities. Clotheslines stretch between carved pillars hung with garments that shift color in the lamplight. A grandmother mends what looks like a net made of starlight while children play at her feet with wooden toys that move on their own. 
 
-The bazaar sprawls before you — not the desperate predatory maze you expected from the stories, but something more like a neighborhood where the neighbors happen to trade in impossibilities. Clotheslines stretch between carved pillars hung with garments that shift color in the lamplight. A grandmother mends what looks like a net made of starlight while children play at her feet with wooden toys that move on their own.
+**The Tattooist** hand-poke tattoos that preserve an echo of a memory. Enough to remember what jasmine smelled like. The tap-tap-tap of his needle is the sound of people preserving what they can.
 
 This is a settled transience. Everything looks temporary. Most of it has been here for years.
 
----
-
 ## Atmosphere — Everyday Misbehavior
 
-The magic oversaturation down here is thick. Not chaotic — just wrong in small, consistent ways. Familiar structures that don't quite behave.
-
 - Coins occasionally roll uphill when dropped
-- Doors open to different shops depending on who opens them
-- Stalls are bigger inside than their exterior footprint
+- Stalls are bigger inside than their exteriors
 - Shadows don't quite match their objects
-- Stairs occasionally invert — step down, arrive higher
 - Vendor calls echo off surfaces that aren't where you'd expect them
 - The smell of something almost-but-not-quite cinnamon drifts through the air
 
-The wrongness is never dangerous. It's just constant. After an hour, normal physics starts to feel like the aberration.
+### The Card Economy
 
----
+Refugees trade their skills and abilities to survive. Crystallized into tradeable form.
 
-## The Two Economies
-
-### The Soul Economy
-
-Refugees and desperate people sell memories, sensations, and experiences to survive. Crystallized into tradeable form — embedded in artifacts, absorbed into luxury goods, bought by collectors. Once sold, gone.
-
-**The Tattooist** (see Vendors) offers a service before the sale: tebori hand-poke tattoos that preserve an echo of the experience. Not the full thing — just a shadow. Enough to remember what jasmine smelled like. The tap-tap-tap of his needle is the sound of people saving what they can before selling the rest.
-
-Players who spend time in the bazaar may begin acquiring experiences worth crystallizing. Cards in this system represent those experiences — named, concrete, discardable as power words when it matters.
-
-### Card Trading
-
-**This is where cards change hands. It effectively does not happen anywhere else.**
-
-The soul economy crystallizes experience into tradeable form, and a card *is* crystallized experience — a named, concrete way of acting that somebody learned somewhere. Elsewhere in the world a card is earned: from the Oracle, or from the place that taught it. Here it can simply be bought, from someone who needed to sell it more than they needed to keep it.
-
-**Selling is always open.** The bazaar will take any card off anyone — common ones included. It is not discerning, because the sellers are not in a position to negotiate. This is the refugee end of the soul economy and it is the same transaction the tattooist's needle is queued for: people getting what they can before they let go of the rest.
-
-**Once sold, it is gone.** The card leaves the deck permanently. No buy-back, no regret clause, and the vendor will not remember the seller.
+The soul economy crystallizes experience into tradeable form, and a card *is* crystallized experience — a named, concrete way of acting that somebody learned somewhere. Elsewhere in the world a card is earned: from the Oracle, or from the place that taught it. Here it can be traded
 
 **Buying is rare, and the stock is not.** What sits on a table here is almost always **tagged** — a technique from somewhere specific, a way of doing things that some place or person still teaches. Nobody stocks the common stuff, because everyone already knows it. A party with money and no leverage will find nothing worth having; a party with something genuinely uncommon to trade will find they are suddenly very interesting.
 
