@@ -24,8 +24,11 @@ Filled doesn't mean one bearer. Living beings, Resonant Items, and Resonant Plac
 **Named Archons:** Silas, only speaks of what was. The Seat of thresholds and transitions. Remembering the previous the old ways, repeating patterns.
 
 ### Fear and Time
-**Named Archons:** Elias, the Thorne Whip, Turnroot Weald.
+**Named Archons:** Lysander
 References continuity and persistence. Identity across moments.
+
+### Uncertainty and Change
+**Named Archons:** Elias, the Thorne Whip, Turnroot Weald.
 
 ### Love and Connection
 **Named Archons:** Aurora, The Loom, Eclipseria
@@ -34,17 +37,15 @@ Speaks care, togetherness, and what holds.
 
 The Loom is the literal machinery Aurora is bound to, deep beneath Eclipseria — her hair splayed out feeding into the Weaver's Grid.
 
-### The Hunt
-**Named Archons:** The Heron
-
-Speaks of fishing. Always fishing — where you stand, what you're after, how long you're willing to wait.
-
-The Heron is never impatient. It does not pursue. It holds very still and pays attention until the moment arrives, and then it acts without hesitation. The Hunt isn't violence — it's attention sustained long enough to become inevitable.
-
 ### Rage and War
 **Named Archons:**
 
 The Seat of conflict, breaking points, and necessary endings.
+
+### Song and Silence
+**Named Archons:** Fermata
+
+Domain: the space between an utterance and its absence — what a sound makes possible by existing, and what a silence makes possible by holding. Not two opposed things. The same edge, read from either side, the way a held note and the quiet after it are made of the same breath.
 
 ### Harvest / Fertility
 **Bearer:** Mira
@@ -60,8 +61,7 @@ Doesn't offer the destination. Doesn't promise the destination is good. Only tha
 
 *"That's all I know"* is not modesty. It's the entire domain, spoken honestly.
 
-### Song and Silence
-**Named Archons:** Fermata
+### Hope and Possibilities 
 
-Domain: the space between an utterance and its absence — what a sound makes possible by existing, and what a silence makes possible by holding. Not two opposed things. The same edge, read from either side, the way a held note and the quiet after it are made of the same breath.
+
 
