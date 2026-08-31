@@ -45,7 +45,7 @@ At the center: a massive platter holding a grotesque amalgamation — fragments 
 
 A floating crystal, suspended in mid-air. Soft, ethereal glow. Intricate patterns and symbols etched into its surface — shifting, never static.
 
-The crystal is not an artifact to be taken. It is a stabilizing force. It maintains the integrity of the rift between worlds. Removing or breaking it would cause catastrophic collapse of the passage the party crossed to reach this place.
+The crystal is not an artifact to be taken. It is a stabilizing force. Removing or breaking it would cause catastrophic collapse of the passage the party crossed to reach this place.
 
 This information is available through investigation. The crystal pulses in apparent awareness of the party's presence. What they do with that knowledge is their choice.
 
@@ -53,20 +53,8 @@ This information is available through investigation. The crystal pulses in appar
 
 ## The Gluttony Abomination
 
-See `bestiary/gluttony-abomination.md`.
-
----
-
-## Notes
-
-*Adapted to Tales Untold 2026-08-02. The Abomination's stat block, passives, and the tremor-door DCs live in `bestiary/gluttony-abomination.md`; its cards are in `cards/gluttony-abomination.md`. The crystal-as-stabilizer remains open by design.*
-
----
-
 ## What It Pays
 
-**No commission — nobody sent them.** This is a delve, and the ruins pay in what the ruins contain.
+This is a delve, and the ruins pay in what the ruins contain.
 
-The Gluttony Abomination's cathedral is a lair with centuries of offerings in it; treat what is recoverable as **~160 gold per character** (a session at Tier 2, `rules/equipment.md`; multiply by party size), weighted toward things that are awkward to carry and awkward to sell.
-
-**The crystal in the chamber beyond is not loot and must not be priced.** It is a stabilising force; removing it collapses the passage the party crossed to get here. Any GM tempted to let them sell it should read that section again.
+The Gluttony Abomination's cathedral is a lair with centuries of offerings in it.
