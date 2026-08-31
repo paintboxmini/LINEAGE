@@ -102,12 +102,7 @@ On your turn, you may take one Action
 | Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
-| Wait | Take no action; instead reinsert yourself anywhere later in the order. Trades this turn for exact positioning. Can't be used two turns in a row. Doesn't trigger start of turn or end of turn effects  |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
-
-**Can't Wait twice in a row.** Waiting marks your token; the turn immediately after, you must take a real action — Wait is off the table until that turn resolves, then the mark clears. This is a distinct marker from Staggered's skip, with one job: closing the one real degenerate line in the system, where two combatants trade Waits back and forth forever and neither ever actually acts. Now the worst case is one mutual dodge before someone has to move.
-
----
 
 ## Attack Resolution
 
