@@ -1,6 +1,6 @@
 # World Overview
 
-A twilight world in flux. A yellow haze sits over the continent, the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight, dim enough to feel wrong but bright enough to see. By nightfall it is pitch black. You can read the time of day by how dark it gets, but the quality of light never changes. Always that flat, yellowish grey.
+A twilight world in flux. A yellow haze sits over the continent, the overcast ceiling holds back whatever light the sun might offer, and what gets through is tinted wrong. At midday it is full twilight, dim enough to feel wrong but bright enough to see. By nightfall it is pitch black.
 
 And it rains. A slow drizzle, most days, most hours. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
