@@ -1,16 +1,12 @@
 # The Tide Pulls Back
 
-*A Tales Untold adventure. Set in Glasslight Reach and its cliffs. For faction context: `factions/people-of-promise.md`, `factions/the-masons.md`. For characters: `characters/mirel.md`, `characters/kaine.md`, `characters/steve-and-pip.md`, `items/lightning-loop.md`.*
-
----
+*A Tales Untold adventure. Set in Glasslight Reach and its cliffs.*
 
 ## Tone
 
-Social before it's violent. The danger here is a man with a convincing argument and something dangerous he doesn't fully control. The cliffs are beautiful. The community is genuine. The rot inside it is careful and patient.
+Social before it's violent. The danger here is a man with a convincing argument and something dangerous he doesn't fully control.
 
 Violence arrives in the second half and arrives wrong — lightning in a confined space, allies in the crossfire, the party holding something unstable at the end of it.
-
----
 
 ## Opening Conditions
 
@@ -18,13 +14,11 @@ The party is in Glasslight Reach — or passes through it. The Tide Market is ru
 
 The party notices the community before it notices them. Something about the way the Promise faithful move — unhurried, genuinely open. It reads as either beautiful or naive depending on the party.
 
----
-
 ## Opening Scene — The Tide Market
 
 **Read-Aloud:**
 > *The stalls here are not like other markets. The vendors touch their goods with something that looks like reverence. An old man holds a piece of driftwood up to the light and calls it perfect. A woman is telling someone else's fortune using the tide schedule.*
->
+
 > *A young woman in ocean-blue robes — faded at the edges — is standing near the edge of the crowd. She is watching the party with the expression of someone who has been working up to something.*
 
 **Mirel approaches.** She is not smooth about it. She says she needs to speak with someone outside the community. That she has been having doubts. That she doesn't know if that's blasphemy.
@@ -35,18 +29,16 @@ She also mentions, sideways and only if the party seems safe: she's heard of a g
 
 *The party's choice here sets the register for everything that follows. Mirel is not asking to be saved. She is asking to be heard.*
 
----
-
 ## Encounter 1 — The Subtle Divide
 
-Mirel takes the party somewhere quieter. She shows them the Mason's chisel under her cloak. Explains she's been learning constraint magic in secret — she found the Mason lodge in the cliffs by following a glyph she'd been dreaming about.
+Mirel takes the party somewhere quieter. She shows them the Mason's chisel under her cloak. Explains she's been learning glyph magic in secret — she found the Mason lodge in the cliffs by following a glyph she'd been dreaming about.
 
-She describes The Final Current's practices: Kaine's claim that coming back from the water proves the Promise's true completion — the Last Bath's, the one doctrine says is final (`factions/people-of-promise.md`) — can be unlocked before death. Not just the drift the whole congregation already quietly lives with; a specific, public claim nobody else in the community makes out loud. Followers who come back fluid get pushed back in, repeatedly, chasing more of it. She's seen it happen. That claim isn't Promise doctrine. That's something else.
+She describes The Final Current's practices: Kaine's claim that coming back from the water proves the Promise's true completion — the Last Bath's, the one doctrine says is final — can be unlocked before death. A specific, public claim nobody else in the community makes out loud. Followers who come back fluid get pushed back in, repeatedly, chasing more of it. She's seen it happen. That claim isn't Promise doctrine. That's something else.
 
 **What Mirel knows:**
 - Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
-- Steve — a new initiate, hasn't bathed, harmless-seeming — still hangs around Kaine's people without being one of them anymore. She finds him difficult to take seriously. *This is the correct reaction to Steve.* She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe (`characters/kaine.md`, The Pitch) — and watched Steve go pale and back out of it on the spot. No Current bath under Kaine. He just hasn't found anywhere else to be yet.
+- Steve — a new initiate, hasn't bathed, harmless-seeming — hangs around Kaine's people without being one of them. She finds him difficult to take seriously. She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe — and watched Steve go pale and back out of it on the spot.
 
 **What Mirel doesn't know:**
 - The Lightning Loop is a Storm Seat resonant item
@@ -55,25 +47,17 @@ She describes The Final Current's practices: Kaine's claim that coming back from
 **GM — Steve's foolish act:**
 At some point during this scene or shortly after, Steve does something notably foolish in the party's presence. The specifics are table-dependent — it should be the kind of thing that makes him memorable for entirely the wrong reasons. The party will underestimate him for the rest of this adventure. That's the point.
 
----
+## Escalation — The Hideout
 
-## Escalation — The Dock
-
-That night or the following morning: unusual activity at the river docks — Glasslight's small quay on the river that runs down through the cliffs to meet the grey water. Nothing sails past that meeting point; the quay is the end of the line, which is exactly why cargo nobody wants inspected ends its journey here. **The Void Runners** — a smuggling crew — are moving cargo under cover. Investigation reveals resonant items in the shipment, including pieces of documentation pointing to The Final Current as the destination.
-
-**The Void Runners** use stolen resonant items as weapons. Some of their crew are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read.
-
-Stat blocks: `bestiary/void-runner.md` and `bestiary/corrupted-bather.md`.
+**The Void Runners** are **corrupted bathers** — people who went into the Unheld Ocean and came back wrong. Not evil. Unpredictable. Their abilities are inconsistent in ways that make them dangerous to fight and impossible to fully read. They have been smuggling stolen resonant items for Kaine.
 
 **What the cargo reveals:**
 Kaine has been building a supply of resonant material. The Lightning Loop is the centerpiece but not the only item. He has been preparing for something larger than miracle performances.
 
-**Encounter 2 — Dock Fight**
-Combat on the pier. Environmental: Unheld mist rolling in from the ocean, reducing visibility in one direction. Corrupted bathers as mid-tier threats — their abilities should surprise the party once each.
+**Encounter 2 — Fight**
+Combat on the lowering platform. Environmental: Unheld mist rolling in from the ocean, reducing visibility in one direction. Corrupted bathers as mid-tier threats — their abilities should surprise the party once each.
 
 *Victory condition: recover the documentation, scatter or capture the Void Runners. The cargo itself is a secondary objective — some of it may go into the water.*
-
----
 
 ## The Final Current — Investigation
 
@@ -86,13 +70,11 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 **The Water Trick:**
 If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
 
-A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing (`characters/kaine.md`, The Goal).
+A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing.
 
-A Mind check (DC 13) while watching: the ring. It doesn't fit him. That detail exists before the party knows why it matters.
+A Mind check (DC 13) while watching the ring. It doesn't fit him. That detail exists before the party knows why it matters.
 
-A second look, same DC (or harder, if the GM wants it rarer): he doesn't look unlocked enough for his own story. Long-devotees carry visible marks. Kaine carries one — small, ordinary, the kind a single bath leaves, not a hundred (`characters/kaine.md`, Character Notes). Certainty in the voice. Almost nothing on the face.
-
----
+A second look, same DC (or harder, if the GM wants it rarer): he doesn't look unlocked enough for his own story. Long-devotees carry visible marks. Kaine carries one — small, the kind a single bath leaves, not a hundred. Certainty in the voice. Almost nothing on the body.
 
 ## Encounter 3 — The Lodge
 
@@ -157,24 +139,4 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **Steve:** do not make him competent. Do not make him interesting. The joke only works if he is genuinely Steve until he suddenly isn't.
 
----
-
-## What It Pays
-
-**~160 gold per character** across the arc — roughly a session at Tier 2 (`rules/equipment.md`, Pacing; multiply by party size).
-
-Mirel is not a patron. She is a person who needed to talk to someone outside her community, and she has nothing to give. The money comes from whichever faction ends up owing the party — the People of Promise if the community is protected, the Masons if the Reach is, the Tideward Compact if the smuggling line is broken in a way that suits them. Only one of them pays, and which one is the party's own doing.
-
 If the party has managed to make all three owe them something, that is worth more than gold and should be handled as standing, not coin.
-
----
-
-## Related Documents
-
-- `factions/people-of-promise.md`
-- `factions/the-masons.md`
-- `characters/mirel.md`
-- `characters/kaine.md`
-- `characters/steve-and-pip.md`
-- `items/lightning-loop.md`
-- `places/glasslight-reach.md`
