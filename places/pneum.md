@@ -26,14 +26,6 @@ The diseases must be visible. This is not negotiable in their theology.
 
 ---
 
-## Wild Growth — A Reflection, Not a Seat
-
-Wild Growth was never its own Seat. Calling it one was bad design; corrected here. What the People of Promise's theology actually rhymes with, the same accidental way every local religion in Eclipseria rhymes with a Seat nobody knows exists (`world/seats.md`, Love/Binding — the Temple of Unity's own version of this), is **Change** — Elias's Seat (`world/seats.md`, `characters/elias.md`). They don't know that. They've built an entire theology around disease and proliferation as "the Unheld asserting itself in held reality," and what they're actually circling, however imperfectly, is a domain that reshapes what a thing is without asking its permission first. Elias's own entry says it plainly about himself: "he is not wrong about what he does. He is wrong about what he is." The People of Promise are wrong about what they're worshipping in exactly the same shape.
-
-Disease read as sacred proliferation, "too much life, something about to burst" — that's their metaphor, not a mechanic. No separate Archon. No Unheld literally taking root in a living host. Whatever inspired that image is theirs to have imagined, not a GM-facing truth about how any of this actually works.
-
----
-
 ## Corvel — The Vulture's Nest Thread
 
 Full profile — his own crossing, what the vials really are — now lives in `characters/corvel.md`. What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
