@@ -1,6 +1,6 @@
 # The Wallows — Descent
 
-A Tales Untold adventure structure. For location context, see `places/capital/the-wallows.md`. For the Demon Court, see `factions/demon-court.md`.
+A Tales Untold adventure structure. Experimental content. For location context, see `places/capital/the-wallows.md`. For the Demon Court, see `factions/demon-court.md`.
 
 ---
 
