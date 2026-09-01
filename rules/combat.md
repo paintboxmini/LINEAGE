@@ -97,8 +97,8 @@ On your turn, you may take one Action
 | Action | Description |
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
-| Move Position | Shift between Frontline and Backline, or Rushdown. |
-| Use an Item | Activate an equipped or held item |
+| Move Position | Shift between Frontline and Backline. |
+| Use an Item | Activate an equipped or held item 
 | Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
@@ -106,11 +106,9 @@ On your turn, you may take one Action
 
 ## Attack Resolution
 
-**Table rule:** when declaring a target, announce the range you're attacking from too — a quick checkpoint that keeps position and legality fresh in everyone's mind before any card gets committed, not after.
-
 1. Attacker plays 1 card, face down — committed, not yet public.
-2. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Evade checks the defender's. See `rules/card-glossary.md` (Blind, Evade) for each's exact trigger and odds. Both resolve here, before the defender ever picks a card.
-3. Defender may choose 1 card to defend with, face down — **blind.** The defender chooses without seeing the attacker's card, deciding from public information only (revealed-color history, position). This is a prediction, not a reaction. **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected. A defender with no card in hand that meets the requirement has no legal defense against this attack.
+2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
+3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
 
 **A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
 4. If the defender cannot or chooses not to defend, the attacker wins automatically.
@@ -126,19 +124,17 @@ Green (Soul)  beats  Blue  (Mind)
 **Defender wins** → no damage + defender triggers Defensive Bonus  
 **Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
 
-An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of damage — apply a status, shift a stat, move a card — still trigger normally.
+An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 
-A standing bonus or penalty like "your next attack deals +X" is not consumed by a miss. If a Defensive Bonus needs to know what an attack would have dealt even though it didn't land, that number is computed for the defender's card, not the attacker's — the attacker's own next-attack bonus or penalty stays untouched, waiting for an attack that actually lands.
-
----
+A standing bonus or penalty like "your next attack deals +X" is consumed by a miss.
 
 ## Damage Pipeline
 
-The base roll is **Stat + die, with Deadly/Weak folded in** (`rules/card-glossary.md`) — a Deadly stack adds a d6, a Weak stack subtracts one, and one of each cancels before either applies. That total is what enters the pipeline below.
+The base roll is **Stat + die, with Deadly/Weak folded in** — a Deadly stack adds a d6, a Weak stack subtracts one, and one of each cancels before either applies. That total is what enters the pipeline below.
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Armour** (flat reduction, creature passive) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
@@ -181,7 +177,7 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 ### Rushdown
 
-Moves a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
+Repositions a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
 
 ### Interact & Position
 
@@ -191,7 +187,7 @@ Position determines what's within reach. A character can only interact with obje
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
-While in cover, you gain **Evade** (`rules/card-glossary.md`). Making an attack drops cover immediately.
+While in cover, you gain **Evade**. Making an attack drops cover immediately.
 
 ### Confined Spaces
 
