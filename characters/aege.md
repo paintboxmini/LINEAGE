@@ -38,15 +38,13 @@ She is going herself. No one sent her. No one had to.
 
 ## Where She Appears
 
-**Vulture's Nest** (`places/vultures-nest.md`, Notable Roles) — Found near the east gate, the party's actual guide for the leg from Vulture's Nest to Briarwatch. Tells them about her family at the Roadhouse, the first night out. Delivers them to Briarwatch, hands over a Carrion Feather (`items/briarwatch-items.md`), continues on to the Turnroot Weald alone.
+**Vulture's Nest** — Found near the east gate, the party's actual guide for the leg from Vulture's Nest to Briarwatch. Tells them about her family at the Roadhouse, the first night out. Delivers them to Briarwatch, hands over a Carrion Feather, continues on to the Turnroot Weald alone.
 
 ---
 
 ## Combat Identity
 
 Reads the field before she commits to anything, same as she reads a traveler's feet before she agrees to guide them.
-
----
 
 ## Stats and Deck
 
