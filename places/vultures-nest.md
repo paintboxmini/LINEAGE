@@ -257,14 +257,3 @@ Bartho is already watching you.
 The market begins where the docks end and doesn't announce itself. Unpaved road split into a dozen directions between canvas strung between poles and buildings with real foundations. Half the faces are hooded. Not dramatically. Practically.
 
 The Red Scarves are already in your peripheral vision.
-
-*No longer paired with a riverboat arrival or the sailor's story — that scene is archived (`archives/sailors-story-2026-08-06.md`), tied to an opening the campaign no longer uses. This boxed text still works as-is for a party that reaches Vulture's Nest by any other route, at any point in the campaign.*
-
----
-
-## Related Documents
-
-- `quests/washed-ashore.md` — the campaign's current opening, which this location no longer takes part in
-- `characters/aege.md`, `characters/corvel.md`, `characters/masaharu.md` — full profiles for NPCs found here
-- `world/the-regency.md` — Bartho's debt routes players toward Eclipseria
-- `bestiary/duskwick.md` — small stray predators worked into the Market's off-hours
