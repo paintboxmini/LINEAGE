@@ -1,12 +1,8 @@
 # Vulture's Nest
 
-A river port rebuilt so many times on top of itself that no one remembers the original shoreline. Not the web's actual center — the capital holds that (`world/geography-overview.md`) — but the town sits at a major intersection all its own, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more tonnage crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
+A river port rebuilt so many times on top of itself that no one remembers the original shoreline.The town sits at a major intersection, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more cargo crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
 The smell: pitch, citrus peel, river silt, wet wood.
-
-No longer the campaign's default opening (`quests/washed-ashore.md`, 2026-08-06) — still a fully live location a party can reach on its own, by the same routes anyone else in Eclipseria would take.
-
----
 
 ## The People
 
@@ -14,31 +10,15 @@ No longer the campaign's default opening (`quests/washed-ashore.md`, 2026-08-06)
 - Children learn knots before letters. Lies before prayers.
 - Outsiders are welcomed loudly and watched quietly.
 
----
-
 ## The Tideward Compact
 
 The docks are governed by the Tideward Compact — a council of three: Bartho (dockmaster), Jonas (ledger-keeper and Regency informant), and Harlow (pirate faction). Official authority exists, for a price.
 
 The Compact manages what moves through the Nest. This includes a significant volume of goods that would be illegal almost anywhere else: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance. The Regency knows. The Regency condones it. The arrangement is simple — anything goes, as long as it moves through the right channels and the council gets its cut.
 
-The hard lines are predictable: nothing so destructive it destabilizes the region, nothing so visible it forces the Regency to acknowledge it publicly, and nothing moves without the council's percentage. Cross any of those and the Regency's response is quiet, professional, and final.
+The hard lines: nothing so destructive it destabilizes the region, nothing so visible it forces the Regency to acknowledge it publicly, and nothing moves without the council's percentage. Cross any of those and the Regency's response is quiet, professional, and final.
 
-*Nothing illegal passes through. Only unrecorded things.*
-
----
-
-## Economy
-
-**Exports:** Passage without questions. Whatever pays the most.
-
-**Imports:** Trouble. Runaways.
-
-**Cultural rule:** Never ask where something came from.
-
----
-
-## The Tide Pull
+## The Tide
 
 The rivers breathe with the Unheld — when the grey water pulls back at the coast, the rivers drop in answer, all the way inland. When the pull is unusually deep:
 
@@ -46,63 +26,20 @@ The rivers breathe with the Unheld — when the grey water pulls back at the coa
 - Old foundations surface
 - Glyphs carved into stone reappear
 
-Some people plan jobs around this tide. Nobody explains which jobs.
-
----
-
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing. See `places/the-coil.md`.
-
----
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
 
 ## Key NPCs
 
 **Bartho Underfist — The Quiet Dockmaster**
 Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
 
-Players arrive already in debt to him — the passage downriver requires something coin can't settle. He doesn't explain the full terms. He directs them to Briarwatch. Jonas writes it down.
-
-*"Just so we all start off on the right foot."*
-
-**If the party refuses:** Bartho doesn't argue. He says nothing else. Within the hour, two dockhands with Compact badges find the party and escort them to the Nest's holding cell — a converted cargo hold under the west dock. Bartho visits once. Still quiet. Still polite. The offer stands. So does the cell.
-
-He has a ledger. Not the port records — a second one, kept on his person. Loss tallies from northeast farms over the last season. "No tracks leaving." "Sound before movement." "Third herd gone, nothing in the mud." He routes the party toward Briarwatch because of what's in that ledger, not what he'll say out loud.
-
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically records every order Bartho gives. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
+**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically double checks and records cargo. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
 
 He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
 
-Which means the only way anything truly unrecorded moves through the Nest is if Jonas chooses not to write it down. He is the keyhole. His motivation for what currently isn't in the ledger: unknown.
-
-Jonas believes a complete record is the one thing nobody can ever blame you for — a doctrine he brought with him from Glasslight, a town where being loud or being wrong were close to the same offense. He has never once, in his whole career, left something out of a ledger on purpose. Whatever isn't currently in this one is the first time that's stopped being true, and he still doesn't have a name for what changed.
-
-**Aege — The Carrion Guide** — Stands near the east gate. Full profile, voice, backstory, and GM Secret now live in `characters/aege.md` — this entry covers only what's specific to finding and using her here. *Also appears as first contact in the alternate "washed ashore" campaign opening (`quests/washed-ashore.md`) — same person, same voice, met somewhere else entirely; not a second character.*
-
-Routes travelers west toward Briarwatch. Bartho points the party to her before they leave.
-
-**GM — Finding Aege**
-Bartho points the party toward her but doesn't walk them over. They have to find her themselves. Make the search matter.
-
-- *Rumors:* Dockers and market traders know there's a guide near the east gate who watches how you walk before she talks to you. Nobody knows her name.
-- *Tracking behavior:* The party may notice someone near the gate watching feet, not faces. She won't approach first.
-- *Noticing patterns:* She's there every morning. She leaves mid-afternoon. She's always alone.
-
-If the party rushes to find her without looking: she finds them. But the route she gives them will suit their pace.
-
-**Soft Gate — GM Facing**
-
-The Guide is watching how the party moves before agreeing to guide them. Trigger conditions: rushing, repositioning without purpose, visible anxiety about formation. If triggered, the Guide selects the longer route. Doesn't say why. Calls it "appropriate for your pace."
-
-Longer route: one additional encounter (Briar Scratchers, see `bestiary/briar-scratcher.md`), tighter terrain, reduced recovery opportunity. Not framed as punishment — framed as fit.
-
-If the party passes through the Scratcher encounter: *"You've been marked. The world will notice."*
-
-**Telling the Party**
-
-At the Roadhouse, the first night out from Vulture's Nest, Aege tells the party plainly what she's already told nobody else: her family, the forest, the roots gone restless deep inside it — not at the edges. She's not asking them for anything. She's just going, and Briarwatch happens to be on the way.
-
-Carrion Feather (see `items/briarwatch-items.md`) still passes to the party once she delivers them to Briarwatch — she continues on to Turnroot Weald from there, alone, whether or not the party follows.
+- *Rumors:* Dockers and market traders know there's a guide near the east gate who watches how you walk before she talks to you.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
