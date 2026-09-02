@@ -1,26 +1,22 @@
 # Weatherheart Vale
 
-*The weather is always a few days behind. Whatever you feel now, the sky felt it first — last week, when someone else felt it harder.*
-
----
+*The weather is always a few days behind. Whatever you feel now, the sky felt it first.*
 
 ## Core Principle
 
 The village does not control its emotions. Its emotions control the village.
 
-Not instantly. The effect is slow, accumulated, undeniable. Collective emotional momentum shapes the world around Weatherheart Vale like water shaping stone — gradually, then all at once.
-
----
+Not instantly. The effect is slow, accumulated, undeniable. Collective emotional momentum shapes the world around Weatherheart Vale like water shaping stone.
 
 ## How It Manifests
 
 **Weather is mood memory.**
-Lingering grief pulls mist down from the hills and keeps it there. Sustained tension dries the air until the grass cracks underfoot. Fear — real fear, the kind that spreads through a household — brings sudden storms. Hope, when it comes, arrives as rare clear sunlight that people stop to stand in without knowing why.
+Lingering grief pulls mist down from the hills and keeps it there. Sustained tension dries the air until the grass cracks underfoot. Fear brings sudden storms. Hope, when it comes, arrives as rare clear sunlight that people stop to stand in.
 
 The weather always lags. Something happened days ago, but the sky is still processing it. A visitor might arrive in three days of cold rain and learn, eventually, that someone's child died last week.
 
 **Wildlife mirrors the mood.**
-An anxious village makes animals skittish, then aggressive. A calm one draws deer to the edge of the treeline. Sustained anger brings predators closer than they should come — not attacking, just present, watching. The livestock always knows first.
+An anxious village makes animals skittish, then aggressive. A calm one draws deer to the edge of the treeline. Sustained anger brings predators closer. The livestock always knows first.
 
 **People regulate each other.**
 This is the real mechanism. Emotion in Weatherheart Vale is a shared responsibility. What you feel affects what everyone lives in. The village understood this long ago, and built its entire social structure around the conclusion.
@@ -43,19 +39,13 @@ The system is not cruel. It is, from inside the village, obviously necessary. Th
 
 The question is what it costs the people who feel too much.
 
----
-
 ## System Effects
 
 These apply to players spending time in the vale.
 
 **Lingering Fear in the village** — players add 1 Exhaust to their deck at the start of each encounter while fear-weather holds.
 
-**Tension in the air** — movement between positions costs an additional action. The terrain isn't unstable; the air is.
-
-**Calm moment** — if the party meaningfully resolves or settles something, all players gain Resist until the end of the next encounter. The valley exhales.
-
----
+**Calm moment** — if the party meaningfully resolves or settles something, all players gain Resist at the start of the next encounter. The valley exhales.
 
 ## Encounter Hook — The Boy Who Won't Calm
 
@@ -74,8 +64,6 @@ Take him out of the vale entirely, far enough that his fear stops affecting the 
 
 *Clean tradeoff: emotional truth vs. collective safety. There is no option that costs nothing.*
 
----
-
 ## Open Hooks
 
 **What the boy is afraid of.** He's not wrong. Something is at the treeline. The predators didn't come because of his fear — his fear came because of them.
@@ -85,5 +73,3 @@ Take him out of the vale entirely, far enough that his fear stops affecting the 
 **Prolonged calm.** If the party somehow brings the valley extended peace, the mist clears and the valley floor is visible for the first time in years. There is something in it that the mist was hiding.
 
 **The ones who were removed.** People asked to leave "until they settled." Most came back. A few didn't. They're somewhere. They still feel things.
-
-**Collective joy — the other edge.** Sustained forced joy pressed too hard eventually becomes something else. The village has learned not to push too far in that direction either. They tried, once.
