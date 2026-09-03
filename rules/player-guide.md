@@ -68,7 +68,7 @@ Growth is never handed over whole. Where this actually happens, and what it's li
 
 A card played enough, meaningfully, can become a Passive beyond your starting two — the Oracle's own way of recognizing what a character has already shown itself to be.
 
-**Nothing converts.** A promoted Passive is authored fresh, in the fixed Passive shape (`rules/character-creation.md`, Passives) — not a stat translation of the card that earned it. The old card's specific die, Effect, and Defensive Bonus don't survive; what survives is what the card meant. STRIKE promoted isn't a d4 version of STRIKE — it's a new Passive built around whatever STRIKE revealed about the character who kept playing it.
+**Nothing converts.** A promoted Passive is authored fresh, in the fixed Passive shape (`rules/character-creation.md`, Passives) — not a stat translation of the card that earned it. The old card's specific die, Effect, and Defense Effect don't survive; what survives is what the card meant. STRIKE promoted isn't a d4 version of STRIKE — it's a new Passive built around whatever STRIKE revealed about the character who kept playing it.
 
 **Not every card clears that bar.** A card with a real fictional throughline about identity — not just a good trick — is what Promotion is for. A card that's purely a mechanical maneuver, with nothing to say about who the character *is*, doesn't become a Passive just because it got played a lot; that kind of heavy use is better rewarded another way — a Bonus Card, a Distance pick that leans into it.
 
