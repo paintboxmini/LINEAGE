@@ -8,6 +8,8 @@ The Shunka were, at some point in their past, at war with another people. That e
 
 The royal bloodline has carried that curse ever since.
 
+Pat is Shunka, but not of that royal line — the curse isn't personally his.
+
 ## What's Open
 
 **Who invaded.** Deliberately unnamed — a hook to tie the Shunka into the rest of the world later, once there's a reason to pick someone, rather than locked in now.
@@ -19,8 +21,6 @@ The royal bloodline has carried that curse ever since.
 - **A pack** — the cursed royal line is still alive, still in dog form, and travels with Pat as real companions on the road.
 
 Not a spectrum — picking one retires the other. Worth settling before it shows up in a card or a future passive that assumes one over the other.
-
-**Pat's own relationship to the curse.** Not yet stated whether Pat descends from the cursed royal line himself (and is somehow an exception, still kinfolk-shaped) or is Shunka but outside that specific bloodline. STRONGJAW doesn't need an answer either way — a spirit-summoning or pack-companion mechanic eventually will.
 
 ## Geography
 
