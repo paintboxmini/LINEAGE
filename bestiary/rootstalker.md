@@ -35,7 +35,7 @@ Older stories, and anyone who left the Weald years ago, won't know this. Anyone 
 - Attack: Body + d8
 - Range: Melee
 - Effect: Pull target to the Frontline.
-- Defensive Bonus: Gain Rooted.
+- Defense Effect: Gain Rooted.
 
 **Passive — Predator Focus**
 Each consecutive attack on the same target deals +1 damage (stacks up to +3). Resets if target changes or dies.

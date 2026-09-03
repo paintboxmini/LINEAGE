@@ -8,7 +8,7 @@
 BLUE — MIND
 Attack: Mind + d6
 Effect: Gain Evade
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Both
 *"When still, it is a flower cluster."*
 
@@ -18,7 +18,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Melee
 *"The strike is a straight line, not a wide flare."*
 
@@ -28,7 +28,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Vulnerable
-Defensive Bonus: Gain Resist
+Defense Effect: Gain Resist
 Range: Melee
 *"It doesn't need much. Just enough to make the next hit count."*
 
@@ -38,7 +38,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: Gain Deadly
-Defensive Bonus: Gain Resist
+Defense Effect: Gain Resist
 Range: Melee
 *"Already too close by the time you saw it move."*
 
@@ -48,7 +48,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Rooted
-Defensive Bonus: Gain Ward
+Defense Effect: Gain Ward
 Range: Melee
 *"High, narrow footing. One target at a time."*
 
@@ -58,6 +58,6 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Gain Evade; you may change position
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Both
 *"Not defending anything. Just not staying to find out."*

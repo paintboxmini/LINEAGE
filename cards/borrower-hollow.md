@@ -8,7 +8,7 @@ Signature cards for the Borrowers. Tagged as HOLLOW — obtainable via the Oracl
 RED — BODY — HOLLOW
 Attack: Body + d6
 Effect: Move to any position. If you move to Backline, gain Evade.
-Defensive Bonus: Move to any position.
+Defense Effect: Move to any position.
 Range: Both
 *"The tunnels they carved are too small for what hunts them. That's not an accident."*
 
@@ -18,7 +18,7 @@ Range: Both
 BLUE — MIND — HOLLOW
 Attack: Mind + d4
 Effect: Scry 2 of Defender's deck.
-Defensive Bonus: Scry 2 of your own deck.
+Defense Effect: Scry 2 of your own deck.
 Range: Both
 *"Press it to the stone. Listen. The stone always tells you first."*
 

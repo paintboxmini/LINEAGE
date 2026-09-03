@@ -356,11 +356,11 @@ em {
 <p><strong>Initiative Shift X</strong> (a card effect) moves a token X slots around the wheel — positive shifts it sooner, negative shifts it later. Full mechanics: <code>rules/card-glossary.md</code> (Initiative Shift X) and <code>rules/initiative-shift-examples.md</code>.</p>
 <hr>
 <h2>Attack Resolution</h2>
-<ol><li><strong>Attacker plays a card, face down.</strong> Committed, not yet public.</li><li><strong>Blind, then Evade check.</strong> Blind checks the attacker&#x27;s own stack; Evade checks the defender&#x27;s. Both resolve here, before the defender picks anything.</li><li><strong>Defender chooses a card to defend with, face down — blind.</strong> No peeking at the attacker&#x27;s card. The chosen card must satisfy its own Range for the current positions, same as if the defender were attacking. No legal card in hand means no legal defense.</li><li><strong>No defense → attacker wins automatically.</strong></li><li><strong>Both reveal simultaneously.</strong> Only now do the cards become public and move to discard. Resolve Rock-Paper-Scissors:</li></ol>
+<ol><li><strong>Attacker plays a card, face down.</strong> Committed, not yet public.</li><li>Defender may choose 1 card to defend with, face down — <strong>The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker</strong> — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.</li><li><strong>Blind, then Evade, resolve next</strong> — Blind checks the attacker&#x27;s own stack; Blind and Evade checks the defender&#x27;s.</li><li><strong>No defense → attacker wins automatically.</strong></li><li><strong>Both reveal simultaneously.</strong> Only now do the cards become public and move to discard. Resolve Rock-Paper-Scissors:</li></ol>
 <pre>Blue (Mind)   beats  Red   (Body)
 Red  (Body)   beats  Green (Soul)
 Green (Soul)  beats  Blue  (Mind)</pre>
-<ul><li><strong>Attacker wins</strong> → deals damage, then the card&#x27;s Effect triggers.</li><li><strong>Defender wins</strong> → no damage; the defender&#x27;s Defensive Bonus triggers.</li><li><strong>Tie</strong> → no damage. The attacker&#x27;s Effect still triggers first, then the Defensive Bonus — unless the Effect cancels it.</li></ul>
+<ul><li><strong>Attacker wins</strong> → deals damage, then the card&#x27;s Effect triggers.</li><li><strong>Defender wins</strong> → no damage; the defender&#x27;s Defense Effect triggers.</li><li><strong>Tie</strong> → no damage. The attacker&#x27;s Effect still triggers first, then the Defense Effect — unless the Effect cancels it.</li></ul>
 <p>An Effect that only adds to <em>this attack&#x27;s</em> damage does nothing on a miss or a tie — there&#x27;s no hit to add to. Effects that do something else (apply a status, reposition, shift a stat) trigger normally regardless.</p>
 <hr>
 <h2>Damage Pipeline</h2>
@@ -369,7 +369,7 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 <p><strong>Unpreventable</strong> damage skips this pipeline entirely — Thorns, status damage, and HP costs aren&#x27;t attacks, so nothing above applies to them. They land in full.</p>
 <hr>
 <h2>Reading Your Cards</h2>
-<p>Every card has: <strong>Name / Color + Stat / Attack (Stat + die) / Effect / Defensive Bonus / Range / Flavor text.</strong></p>
+<p>Every card has: <strong>Name / Color + Stat / Attack (Stat + die) / Effect / Defense Effect / Range / Flavor text.</strong></p>
 <p>The die tells you the card&#x27;s philosophy:</p>
 <table class="doc-table">
 <thead><tr>
@@ -390,7 +390,7 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 </tr>
 </tbody></table>
 <p>(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)</p>
-<p>Some cards carry a <strong>Special Rule</strong> line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.</p>
+<p>Some cards carry a <strong>Special Rule</strong> line instead of — or alongside — an Effect and a Defense Effect. It overrides normal resolution exactly as printed.</p>
 <p><strong>&quot;Attacker&quot;/&quot;Defender&quot; vs. &quot;Target&quot;</strong> — two different things on card text:</p>
 <ul><li><strong>Attacker/Defender</strong> means whoever you&#x27;re resolving <em>this specific exchange</em> against. No choice involved.</li><li><strong>Target</strong> means you genuinely choose — an ally among several, or a specific enemy when more than one is present.</li></ul>
 <p>### An Example — STRIKE</p>
@@ -398,10 +398,10 @@ Green (Soul)  beats  Blue  (Mind)</pre>
 RED — BODY
 Attack: Body + d10
 Effect: None
-Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Defense Effect: Deal 3 damage to attacker, unpreventable.
 Range: Melee
 &quot;Sometimes the direct path is the wisest path.&quot;</pre>
-<ul><li><strong>Name</strong> — STRIKE.</li><li><strong>Color + Stat</strong> — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.</li><li><strong>Attack: Body + d10</strong> — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.</li><li><strong>Effect: None</strong> — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE&#x27;s whole design is spent on the number alone.</li><li><strong>Defensive Bonus: Deal 3 damage to attacker, unpreventable</strong> — win <em>or tie</em> as the defender and you deal a flat 3 back (STRIKE&#x27;s own Effect is None, so it never cancels the Defensive Bonus on a tie). &quot;Unpreventable&quot; means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.</li><li><strong>Range: Melee</strong> — you and your target must both be in the Frontline to play this card.</li><li><strong>Flavor text</strong> — <em>&quot;Sometimes the direct path is the wisest path.&quot;</em> Not a rule. Just the world&#x27;s own read on a card built with nothing to hide.</li></ul>
+<ul><li><strong>Name</strong> — STRIKE.</li><li><strong>Color + Stat</strong> — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.</li><li><strong>Attack: Body + d10</strong> — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.</li><li><strong>Effect: None</strong> — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE&#x27;s whole design is spent on the number alone.</li><li><strong>Defense Effect: Deal 3 damage to attacker, unpreventable</strong> — win <em>or tie</em> as the defender and you deal a flat 3 back (STRIKE&#x27;s own Effect is None, so it never cancels the Defense Effect on a tie). &quot;Unpreventable&quot; means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.</li><li><strong>Range: Melee</strong> — you and your target must both be in the Frontline to play this card.</li><li><strong>Flavor text</strong> — <em>&quot;Sometimes the direct path is the wisest path.&quot;</em> Not a rule. Just the world&#x27;s own read on a card built with nothing to hide.</li></ul>
 <hr>
 <h2>What It Looks Like</h2>
 <p>When you play a card, <strong>you choose what it looks like.</strong></p>
@@ -553,7 +553,7 @@ Range: Melee
 <hr>
 <h2>Ongoing &amp; Simultaneous Effects</h2>
 <p><strong>Ongoing Effects</strong> stay face-up in front of you after use until their stated condition is met, then discard. Multiple can be active at once unless a card says otherwise.</p>
-<p><strong>Simultaneous Effects</strong> — when two or more things would resolve at the same instant, the controller of those effects chooses the order (the acting player decides if the controllers differ). This does <em>not</em> apply to Attack Resolution — Effect always resolves before Defensive Bonus on a tie, no one chooses that order.</p>
+<p><strong>Simultaneous Effects</strong> — when two or more things would resolve at the same instant, the controller of those effects chooses the order (the acting player decides if the controllers differ). This does <em>not</em> apply to Attack Resolution — Effect always resolves before Defense Effect on a tie, no one chooses that order.</p>
 <hr>
 <h2>You Are Not Your Own Ally</h2>
 <p>Card effects that say &quot;allies&quot; or &quot;enemies&quot; never include yourself. You can&#x27;t target yourself with an ally effect, and you can&#x27;t accidentally trigger an enemy effect on yourself. &quot;All allies in your position&quot; means everyone else sharing it — not you. The only exception is a card that explicitly names <em>yourself</em> as the target.</p>
@@ -659,7 +659,6 @@ Range: Melee
 <p>So choose it as fiction, then use it as leverage. The character who thought about what they brought will find more doors open than the one who wrote &quot;sword&quot; and stopped thinking about it. That is the whole design: no numbers on it, real consequences from it.</p>
 <hr>
 <h2>The Oracle (End of Session)</h2>
-<p>At the close of every session, each player meets the Oracle alone. She speaks in three frames — <strong>Name, Price, Distance</strong> — and you&#x27;ll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don&#x27;t get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.</p>
-<p>Growth is never handed over whole. Where this actually happens, and what it&#x27;s like to sit across from her, is worth meeting for yourself rather than reading about in advance.</p>
+<p>Players receive a new card from the Oracle deck.</p>
 </body>
 </html>

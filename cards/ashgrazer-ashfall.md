@@ -12,7 +12,7 @@ Signature cards for the Ashgrazer Alpha and Packgrazer. Tagged as ASHFALL — ob
 GREEN — SOUL — ASHFALL
 Attack: Soul + d4
 Effect: If the target has an Exhaust card in their deck, this attack deals +2 damage. If this attack wins the reveal, shuffle 1 Exhaust into the target's deck.
-Defensive Bonus: Burrow — if this card loses the reveal, remove the Alpha from play until the start of its next turn. It cannot be targeted while Burrowed.
+Defense Effect: Burrow — if this card loses the reveal, remove the Alpha from play until the start of its next turn. It cannot be targeted while Burrowed.
 Range: Ranged
 *"It finds the ones already burning."*
 
@@ -22,7 +22,7 @@ Range: Ranged
 RED — BODY — ASHFALL
 Attack: Body + d6
 Effect: For each Packgrazer currently in play, deal +1 damage.
-Defensive Bonus: Flanked — if the Alpha is Frontline and a Packgrazer is also in play, gain Armour 2.
+Defense Effect: Flanked — if the Alpha is Frontline and a Packgrazer is also in play, gain Armour 2.
 Range: Melee
 *"Alone it is nothing. Alone it is never."*
 
@@ -32,7 +32,7 @@ Range: Melee
 BLUE — MIND — ASHFALL
 Attack: Mind + d4
 Effect: Choose a player. Reveal the top 2 cards of their deck. If either is Exhaust, discard both and deal 3 damage.
-Defensive Bonus: Coordinate — if a Packgrazer wins its reveal before the Alpha's next turn, the Alpha gains Ward.
+Defense Effect: Coordinate — if a Packgrazer wins its reveal before the Alpha's next turn, the Alpha gains Ward.
 Range: Ranged
 *"It knows where you're going before you do."*
 
@@ -46,7 +46,7 @@ Range: Ranged
 RED — BODY — ASHFALL
 Attack: Body + d4
 Effect: If the target has 2 or fewer cards in hand, Rushdown them. If they cannot move, deal +2 damage and shuffle 1 Exhaust into their deck.
-Defensive Bonus: Scatter — when this card loses the reveal, move this Packgrazer to Backline.
+Defense Effect: Scatter — when this card loses the reveal, move this Packgrazer to Backline.
 Range: Melee
 *"It waits for the stumble."*
 
@@ -56,6 +56,6 @@ Range: Melee
 GREEN — SOUL — ASHFALL
 Attack: Soul + d4
 Effect: If any opponent discarded a card since your last turn, this attack deals +3 damage until your next turn.
-Defensive Bonus: Swarm — cannot be targeted if another Packgrazer is in Frontline.
+Defense Effect: Swarm — cannot be targeted if another Packgrazer is in Frontline.
 Range: Melee
 *"The discard is the wound. The Pack finds wounds."*

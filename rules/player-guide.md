@@ -93,8 +93,8 @@ Green (Soul)  beats  Blue  (Mind)
 ```
 
 - **Attacker wins** → deals damage, then the card's Effect triggers.
-- **Defender wins** → no damage; the defender's Defensive Bonus triggers.
-- **Tie** → no damage. The attacker's Effect still triggers first, then the Defensive Bonus — unless the Effect cancels it.
+- **Defender wins** → no damage; the defender's Defense Effect triggers.
+- **Tie** → no damage. The attacker's Effect still triggers first, then the Defense Effect — unless the Effect cancels it.
 
 An Effect that only adds to *this attack's* damage does nothing on a miss or a tie — there's no hit to add to. Effects that do something else (apply a status, reposition, shift a stat) trigger normally regardless.
 
@@ -112,7 +112,7 @@ A single attack can never push a standing combatant below 0 HP — that's a Coll
 
 ## Reading Your Cards
 
-Every card has: **Name / Color + Stat / Attack (Stat + die) / Effect / Defensive Bonus / Range / Flavor text.**
+Every card has: **Name / Color + Stat / Attack (Stat + die) / Effect / Defense Effect / Range / Flavor text.**
 
 The die tells you the card's philosophy:
 
@@ -124,7 +124,7 @@ The die tells you the card's philosophy:
 
 (d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)
 
-Some cards carry a **Special Rule** line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.
+Some cards carry a **Special Rule** line instead of — or alongside — an Effect and a Defense Effect. It overrides normal resolution exactly as printed.
 
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
@@ -137,7 +137,7 @@ STRIKE
 RED — BODY
 Attack: Body + d10
 Effect: None
-Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Defense Effect: Deal 3 damage to attacker, unpreventable.
 Range: Melee
 "Sometimes the direct path is the wisest path."
 ```
@@ -146,7 +146,7 @@ Range: Melee
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
 - **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
-- **Defensive Bonus: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defensive Bonus on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
 - **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
 
@@ -240,7 +240,7 @@ In any of these, discarding a card whose name meaningfully fits the action grant
 
 **Ongoing Effects** stay face-up in front of you after use until their stated condition is met, then discard. Multiple can be active at once unless a card says otherwise.
 
-**Simultaneous Effects** — when two or more things would resolve at the same instant, the controller of those effects chooses the order (the acting player decides if the controllers differ). This does *not* apply to Attack Resolution — Effect always resolves before Defensive Bonus on a tie, no one chooses that order.
+**Simultaneous Effects** — when two or more things would resolve at the same instant, the controller of those effects chooses the order (the acting player decides if the controllers differ). This does *not* apply to Attack Resolution — Effect always resolves before Defense Effect on a tie, no one chooses that order.
 
 ---
 

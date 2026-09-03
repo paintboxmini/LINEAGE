@@ -116,8 +116,8 @@ Green (Soul)  beats  Blue  (Mind)
 ```
 
 **Attacker wins** → deal damage, then apply the card's Effect  
-**Defender wins** → no damage + defender triggers Defensive Bonus  
-**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
+**Defender wins** → no damage + defender triggers Defense Effect  
+**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 
@@ -200,7 +200,7 @@ When two or more effects would resolve at the same moment — several "start of 
 
 Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie.
 
-**This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defensive Bonus are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defensive Bonus, always, on every tie. Nobody, including the attacker, chooses that order.
+**This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defense Effect are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defense Effect, always, on every tie. Nobody, including the attacker, chooses that order.
 
 ---
 

@@ -64,7 +64,7 @@ Passive — Volatile: When Kaine drops below half HP, The Loop loses its targeti
 GREEN — SOUL — PROMISE
 Attack: Soul + d6
 Effect: Target ally gains Deadly.
-Defensive Bonus: Your most wounded ally draws 1 card and gains quick.
+Defense Effect: Your most wounded ally draws 1 card and gains quick.
 Range: Both
 *"Belief moves like current — find the one who'll carry it best."*
 

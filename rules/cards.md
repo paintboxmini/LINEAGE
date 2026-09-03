@@ -19,9 +19,9 @@ In combat, you don't declare an action and roll — you play a card. The card te
 
 *(d10 exists on a small number of cards as a genuine outlier above this scale — rare and deliberately unlabeled, same as before the 2026-07-22 dice step-up; it was never a fourth named tier.)*
 
-**Effect** — Triggers when you play this card as an attack and win the resolution — or tie it. On a tie the Effect still triggers, before the Defensive Bonus (see the tie rule in `rules/combat.md`).
+**Effect** — Triggers when you play this card as an attack and win the resolution — or tie it. On a tie the Effect still triggers, before the Defense Effect (see the tie rule in `rules/combat.md`).
 
-**Defensive Bonus** — Triggers when you win the RPS resolution as the defender — and on ties, unless the attacker's Effect cancels it.
+**Defense Effect** — Triggers when you win the RPS resolution as the defender — and on ties, unless the attacker's Effect cancels it.
 
 **Range** — Describes the positional relationship required to play this card. See the Range table in `rules/combat.md`.
 
@@ -48,7 +48,7 @@ Two different words in card text, two different mechanics — not interchangeabl
 ╠══════════════════════════════════╣
 ║  Attack:           Soul + d6     ║
 ║  Effect:           Change position
-║  Defensive Bonus:  Change position
+║  Defense Effect:   Change position
 ║  Range:            Melee         ║
 ╠══════════════════════════════════╣
 ║  "Water finds its way            ║

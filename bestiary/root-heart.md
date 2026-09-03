@@ -35,7 +35,7 @@ ROOTHEARTS PULL
 **Forest Memory**
 - Attack: Mind + d6
 - Effect: Name a card color. If the target plays that color on their next turn, heal 4 HP.
-- Defensive Bonus: Return 1 card from discard pile to hand.
+- Defense Effect: Return 1 card from discard pile to hand.
 - Range: Both
 - *"The Weald remembers every knot ever tied, every path ever walked."*
 

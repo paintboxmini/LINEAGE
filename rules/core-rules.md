@@ -56,14 +56,14 @@ Green (Soul) beats  Blue  (Mind)
 ```
 
 **Attacker wins** → damage + Effect  
-**Defender wins** → no damage + Defensive Bonus  
-**Tie** → no damage. Attacker's Effect still triggers, then Defensive Bonus triggers. If the Effect cancels the Defensive Bonus, Defensive Bonus does not trigger. (An Effect that only adds to *this attack's damage* — exploding dice, "+X damage" — does nothing on a tie; there's no damage to add to.)
+**Defender wins** → no damage + Defense Effect  
+**Tie** → no damage. Attacker's Effect still triggers, then Defense Effect triggers. If the Effect cancels the Defense Effect, Defense Effect does not trigger. (An Effect that only adds to *this attack's damage* — exploding dice, "+X damage" — does nothing on a tie; there's no damage to add to.)
 
 ---
 
 ## Card Anatomy
 
-**Name / Color — Stat / Attack: Stat + die / Effect / Defensive Bonus / Range: (ranged/melee/both) / Flavor**
+**Name / Color — Stat / Attack: Stat + die / Effect / Defense Effect / Range: (ranged/melee/both) / Flavor**
 
 | Die | Philosophy |
 |-----|------------|

@@ -8,7 +8,7 @@
 BLUE — MIND
 Attack: Mind + d6
 Effect: Gain Evade; you may change position
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Both
 *"One sound and it's already three feet from where it was."*
 
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: None beyond damage
-Defensive Bonus: Gain Resist
+Defense Effect: Gain Resist
 Range: Melee
 *"Only when there's nowhere left to run."*
 
@@ -28,7 +28,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d4
 Effect: You may change position
-Defensive Bonus: You may change position
+Defense Effect: You may change position
 Range: Both
 *"The tangle isn't an obstacle to it. It's home."*
 
@@ -38,6 +38,6 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Gain Evade
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Both
 *"Ground litter doesn't hold still this well by accident."*

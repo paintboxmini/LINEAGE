@@ -39,13 +39,13 @@ You don't need a backstory. You need an intent.
 
 **Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
-**Old card printings are a free source of enemy variance.** Cards get revised — a die size changes, an Effect gets rewritten, a Defensive Bonus starts doing something else entirely. Don't treat your old printouts as obsolete once the canon text moves on. Deploy them, unchanged, in enemy decks.
+**Old card printings are a free source of enemy variance.** Cards get revised — a die size changes, an Effect gets rewritten, a Defense Effect starts doing something else entirely. Don't treat your old printouts as obsolete once the canon text moves on. Deploy them, unchanged, in enemy decks.
 
 The same logic that says two members of the same species shouldn't share identical HP applies to their cards: a player who's fought MOCKERY before and thinks they know what it does is a different tactical situation than a player seeing it fresh, and an old printing that reads differently from the current one recreates that uncertainty honestly — no homebrew mechanic required, just an actual older piece of paper with actual different text on it.
 
 Reserve this for **enemy decks only, never player decks.** A player's own cards have to mean what they say, every time — that's a fairness floor. An enemy's deck is already the GM's secret information, same territory as anything else the party doesn't get to see coming.
 
-Not every old printing is worth the bother. A card that only changed by a die size won't register as a surprise. Look for printings where the Effect or Defensive Bonus itself changed — those are the ones a player's memory will actively mislead them on, which is the whole point.
+Not every old printing is worth the bother. A card that only changed by a die size won't register as a surprise. Look for printings where the Effect or Defense Effect itself changed — those are the ones a player's memory will actively mislead them on, which is the whole point.
 
 ---
 

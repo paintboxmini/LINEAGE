@@ -14,7 +14,7 @@ Every Object shares the same rules:
 GREEN — SOUL — MASON
 Attack: Soul + d6
 Effect: Create a Mending Glyph at your current position. Until destroyed, any ally who takes their turn there heals 1 HP.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"Stone remembers what flesh forgets to do for itself."*
 
@@ -24,7 +24,7 @@ Range: Both
 RED — BODY — MASON
 Attack: Body + d6
 Effect: Create a Honing Glyph at your current position. Until destroyed, any ally who takes their turn there deals 1 additional damage this turn.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"An edge doesn't need to be told twice."*
 
@@ -34,7 +34,7 @@ Range: Both
 RED — BODY — MASON
 Attack: Body + d6
 Effect: Create a Barbed Glyph at your current position. Until destroyed, any ally who takes their turn there gains Thorns.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"The wall doesn't forgive the hand that struck it."*
 
@@ -44,7 +44,7 @@ Range: Both
 BLUE — MIND — MASON
 Attack: Mind + d6
 Effect: Create a Cipher Glyph at your current position. Until destroyed, any ally who takes their turn there gains Ward.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"What the eye can't parse, the hand can't take."*
 
@@ -54,7 +54,7 @@ Range: Both
 GREEN — SOUL — MASON
 Attack: Soul + d6
 Effect: Create a Withering Glyph at your current position. Until destroyed, any enemy who takes their turn there gains Weak.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"Nothing that lingers here leaves at full strength."*
 
@@ -64,6 +64,6 @@ Range: Both
 BLUE — MIND — MASON
 Attack: Mind + d6
 Effect: Create a Miring Glyph at your current position. Until destroyed, any enemy who takes their turn there suffers Initiative Shift -1.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"The ground doesn't care how fast you meant to be."*
