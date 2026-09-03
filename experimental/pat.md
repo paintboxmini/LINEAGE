@@ -16,21 +16,21 @@ Mind 2 / Body 3 / Soul 4 — HP 15
 
 Shunka — dogkin. Working lore, still in flux: `experimental/the-shunka.md`.
 
-## Passive
+## Passives
 
-**STRONGJAW** — `experimental/passives.md`. A Shunka's bite; Red, Melee only, d6.
+- **STRONGJAW** — `experimental/passives.md`. A Shunka's bite; Red, Melee only, d6.
+- **HACKLES RISE** — `experimental/passives.md`. Instinct for hostile intent; Green, Both, d4.
 
 ## Not Yet Set
 
 - Character name
 - Appearance, voice, backstory
-- Second Passive (two at creation — one so far)
 - Skills (two, at creation)
 - Price
 - Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
 
 ## Related Documents
 
-- `experimental/passives.md` — STRONGJAW
+- `experimental/passives.md` — STRONGJAW, HACKLES RISE
 - `experimental/the-shunka.md` — the Shunka people
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

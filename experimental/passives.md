@@ -1,6 +1,6 @@
 # Passives — First Examples
 
-The first two Passives built under the new rule (`rules/character-creation.md`, Passives). Draft — neither Chris nor Pat has a character file in the repo yet, so these live here until that exists.
+The first Passives built under the new rule (`rules/character-creation.md`, Passives). Draft, alongside `experimental/chris.md` and `experimental/pat.md`.
 
 ---
 
@@ -29,6 +29,20 @@ Range: Melee
 *"Shunka don't let go because Shunka don't decide to."*
 
 A dogkin's bite, and a bite doesn't work at range. Melee-only is a real cost — the trade for it is the bigger die, d6 instead of the d4 default, same logic the rest of the corpus already prices restrictions at.
+
+---
+
+## HACKLES RISE — Pat
+
+**HACKLES RISE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: None
+Defensive Bonus: None
+Range: Both
+*"The fur knows before the mind does."*
+
+Instinct for hostile intent specifically, not a general sense that something's "off." Reads danger, not anomaly — the table should hold that line when judging whether it supports a check, or it quietly becomes a pass for anything.
 
 ---
 
