@@ -95,9 +95,8 @@ On your turn, you may take one Action
 | Action | Description |
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
-| Move Position | Shift between Frontline and Backline. |
+| Move Position | Shift between Frontline and Backline or Rushdown. |
 | Use an Item | Activate an equipped or held item 
-| Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
@@ -107,8 +106,6 @@ On your turn, you may take one Action
 1. Attacker plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
 3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
-
-**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
 4. If the defender cannot or chooses not to defend, the attacker wins automatically.
 5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
@@ -172,10 +169,6 @@ Position determines which cards can be played. Use this table to resolve any tar
 | Backline | Backline | ✗ | ✓ | ✓ |
 
 Melee requires both characters to be in the Frontline. Any other combination is not Melee range.
-
-### Rushdown
-
-Repositions a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
 
 ### Interact & Position
 
