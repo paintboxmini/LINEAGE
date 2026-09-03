@@ -45,7 +45,7 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
 
-**Masaharu** — *(name is a deliberate tonal outlier — old player character)* — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
+**Erubeth** — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
@@ -53,16 +53,14 @@ He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Unde
 
 FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
-What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Masaharu is here to find out.
+What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Erubeth is here to find out.
 
 *Methodical, quiet, reads people fast. Won't approach the party first — he'll clock them and wait to see what they do. If they're worth talking to, he'll make contact on his own timeline.*
 
-*In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He does not come to Frontline.*
+*In a fight: precise and controlled. Blue-mind oriented — he gathers information before he commits, scries, reads the room, acts late and accurately. The boomstick is ranged. He rarely comes to Frontline.*
 
-**GM — Using Masaharu**
+**GM — Using Erubeth**
 He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the FourthEye thread without knowing what it is, he'll find a way to make that known without blowing his position.
-
----
 
 ## Rumors
 
@@ -78,9 +76,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"The man with the boomstick has been asking about the Moving Crate."*
 
-**Stat block and cards:** `characters/masaharu.md`, `cards/masaharu.md`
-
-**Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs the kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
+**Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs a kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
 
 He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
 
@@ -88,17 +84,15 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
-Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now, not the eyes ever were. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it.
-
----
+Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
 
 ## The Red Scarves
 
-The kid gang operating on the docks. Named by the scarves, not a gang name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
+The kid gang operating on the docks. Named by the scarves, not an official name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
 
 **The operation:** They don't run. They offer to carry bags and show the market. The information is genuine — they know every stall worth visiting. They're also skimming the entire time. Nobody ever has anything on them. It's already three kids ahead in the chain.
 
-If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain has moved it.
+If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain of kids has moved it. (give players a window of discovery)
 
 *If something pilfered shows up later (a personal item in a market stall two sessions later) — play it for texture, not punishment.*
 
@@ -108,41 +102,25 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
 
----
-
 ## The Market
 
-The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin. See `bestiary/duskwick.md`.
+The market doesn't fully close, and neither do the things that work its edges after the stalls shutter — Duskwicks among them, same as anywhere else the light gets thin.
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* Briar Scratchers inside. They scatter. Anyone within melee range may gain a Wound. See `bestiary/briar-scratcher.md`.
-- *Ignore it:* It opens on its own later. DM chooses when.
-- *Carry it:* Bad idea. The party will figure out why.
-
-Someone brought it in from the Briarwatch road. Nobody claimed it.
-
----
+- *Open it:* undecided contents.
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
 She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
 
-**Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked.
+**Buttons and Such** — unmanned. A box, a price on a slate, people leave coin and take buttons. Nobody knows whose stall it is. It's always stocked. XD
 
-**Corvel's stall** — no name, no pitch. Necklaces strung with small vials of grey water. Full profile — his own crossing, what the vials actually are, his connection to the People of Promise — now lives in `characters/corvel.md`. The party won't know any of that yet; here he's just a quiet man selling something strange.
-
-**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. A man in a black suit and top hat occasionally waits quietly until the party leaves. *If the party returns later, build this out.*
-
-Her mother ran the counter the same way — take what's offered, don't ask, the Nest's own rule made personal — and Dess has never once broken it, not even for the back room, not even for the man in the top hat. She tells herself the not-asking is professionalism, same as it's always been. It doesn't feel like professionalism anymore. She hasn't found the sentence that would let her admit that, so she keeps not asking, same as always, and hopes the difference doesn't show.
-
-Ask her why, and the answer gets further from the truth the more casually it's asked. First: *"It wasn't my place."* Pressed harder: *"Because that's how my mother taught me to do the job."* Pressed harder than that, past the point where most people stop: *"Because I was paid to do what I was told."* All three are true. Only the last one is the actual reason, and she only gives it to someone who's earned hearing that the first two were cover.
-
----
+**Harwick Sundries** — real foundation, real roof, real lock. Run by Dess Harwick, second generation. Sells everything practical. Dockhook Lines and Low Lanterns on the counter — dockside standard. Has a back room she doesn't mention. (open thread)
 
 ## Harwick Sundries — Counter Items
 
-**The Tuning Fork Sword** — a longsword with a hollowed center. Grooves run the length of the blade. Adjustable brackets turn both edges into tines. Pick it up and the first thing you do is flick it. It hums. The whole blade vibrates. What it tunes to: unknown. Dess doesn't know either. Someone traded it for supplies six months ago and she hasn't moved it since.
+**The Tuning Fork Sword** — two long, single-edged blades with a substantial gap. Grooves run the length of the blade. Adjustable brackets turn both edges into tines. Pick it up and the first thing you do is flick it. It hums. The whole blade vibrates. What it tunes to: unknown. Dess doesn't know either. Someone traded it for supplies six months ago and she hasn't moved it since.
 
 **The Desire Compass** — points where you want to go. Not where you're trying to go. Where you *want* to go. Meaningful distinction in a world where naming a destination changes routing.
 
