@@ -2,6 +2,8 @@
 
 Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
+*(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — `experimental/the-summons.md`.)*
+
 ---
 
 ## Core Combat Philosophy
@@ -95,17 +97,66 @@ On your turn, you may take one Action
 | Action | Description |
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
-| Move Position | Shift between Frontline and Backline or Rushdown. |
+| Move Position | Shift between Frontline and Backline. |
 | Use an Item | Activate an equipped or held item 
+| Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+## Reading a Card
+
+Every card carries: **Name / Color + Stat / Attack (Stat + die) / Effect / Defensive Bonus / Range / Flavor text.**
+
+The die tells you the card's philosophy:
+
+| Die | Personality |
+|-----|-------------|
+| d8 | Raw power — high ceiling, less control |
+| d6 | Utility — moderate damage, strong effects |
+| d4 | Precision — low damage, high control and information |
+
+(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)
+
+Some cards carry a **Special Rule** line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.
+
+**"Attacker"/"Defender" vs. "Target"** — two different things on card text:
+- **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
+- **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
+
+### An Example — STRIKE
+
+```
+STRIKE
+RED — BODY
+Attack: Body + d10
+Effect: None
+Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Range: Melee
+"Sometimes the direct path is the wisest path."
+```
+
+- **Name** — STRIKE.
+- **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
+- **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
+- **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
+- **Defensive Bonus: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defensive Bonus on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Range: Melee** — you and your target must both be in the Frontline to play this card.
+- **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
+
+Full canonical wording for every keyword and status card: `rules/card-glossary.md`.
+
+A Passive resolves exactly like a card from hand once concealment is settled — what it is, its fixed shape, and how it's concealed beforehand: `rules/character-creation.md`, Passives.
+
+---
 
 ## Attack Resolution
 
 1. Attacker plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
 3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
+
+**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
 4. If the defender cannot or chooses not to defend, the attacker wins automatically.
 5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
@@ -170,6 +221,10 @@ Position determines which cards can be played. Use this table to resolve any tar
 
 Melee requires both characters to be in the Frontline. Any other combination is not Melee range.
 
+### Rushdown
+
+Repositions a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
+
 ### Interact & Position
 
 Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.
@@ -201,6 +256,12 @@ When two or more effects would resolve at the same moment — several "start of 
 Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie.
 
 **This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defensive Bonus are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defensive Bonus, always, on every tie. Nobody, including the attacker, chooses that order.
+
+---
+
+## You Are Not Your Own Ally
+
+Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exception is a card that explicitly names *yourself* as the target.
 
 ---
 

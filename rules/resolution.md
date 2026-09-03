@@ -34,6 +34,10 @@ If a card in your hand has a name that meaningfully supports what you're attempt
 
 The table must agree the card meaningfully supports the action. When in doubt, ask: *would a reasonable person look at this card name and understand the connection?*
 
+**A Passive grants Advantage the same way** — the table judges whether its printed name plausibly supports the attempt, exactly as it would a discarded card's name. Unlike a discarded card, a Passive is never spent; it can support the same kind of attempt again next time.
+
+**Advantage does not stack.** However many sources apply to one roll — a Passive, a discarded card, both at once — the result is still just Advantage: roll 3d10, drop the lowest. It never compounds into anything bigger.
+
 ---
 
 ## Checks
@@ -43,6 +47,14 @@ Checks are active attempts — you're trying to do something.
 - **Body Check** — Overcome a physical obstacle or impose physical control.
 - **Mind Check** — Obtain or interpret information, solve, predict, or argue.
 - **Soul Check** — Create or maintain bonds, resist spiritual pressure, enforce oaths.
+
+### Skills
+
+A check a Skill plainly covers gets **+2**, flat, added to the 2d10 + stat roll. The table judges "plainly covers" the same way it judges whether a discarded card's name supports Advantage, above — except a Skill is an exact tag, not a name, so there's usually nothing to argue about.
+
+**Stacks with Advantage.** A Skill's +2 and an Advantage swap (from a Passive or a discarded card) are different currencies — nothing stops both applying to the same roll.
+
+What a Skill actually is, and how many you have: `rules/character-creation.md`, Skills.
 
 ---
 
