@@ -6,7 +6,7 @@
 
 The Shunka are a warrior people, directly inspired by Spartan culture — strength of body, discipline, and honor won openly on the field are the whole measure of a person.
 
-**Appearance.** Cane Corso — a mastiff breed, broad-headed and heavily built, bred for war and guarding. Pat's own inspiration image is a Cane Corso in spiked gladiator armor, standing in a colosseum arena — the physical anchor for the kinfolk form, and consistent with everything above about how the Shunka hold strength and honor.
+**Appearance.** Cane Corso — a mastiff breed, broad-headed and heavily built, bred for war and guarding. Pat's own inspiration image (`experimental/images/shunka-reference-cane-corso.jpg`) is a Cane Corso in spiked gladiator armor, standing in a colosseum arena — the physical anchor for the kinfolk form, and consistent with everything above about how the Shunka hold strength and honor.
 
 They were, at some point in their past, at war with another people: **the Tithebound.** The Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
 
