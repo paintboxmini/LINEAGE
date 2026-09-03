@@ -14,6 +14,10 @@ They were, at some point in their past, at war with another people: **the Titheb
 
 When the invasion failed and there was no army left to press it, their curse-worker — a hag, a witch, a shaman, the word was never fixed and doesn't need to be — turned to the one weapon defeat hadn't touched. She laid an unspoken Price on the Shunka queen directly: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.
 
+**Nothing in this cosmology is free, and forcing a Price onto someone else is not an exception.** She didn't conjure the cost from nowhere — she paid it herself, all of it, at once: the Price that had been anchoring her own existence, the ordinary cost every Named thing keeps paying just to keep being (`world/creation-myth-the-three-cuts.md`), came off her and landed on the queen's line instead. The instant the curse took, she stopped being real. Not killed — unmade. The Unheld didn't press close. It was simply, immediately, as if she had never been Cut at all.
+
+Whoever was left of the invasion didn't find a body. There wasn't one to find.
+
 **Why this is the wound it is, to a Spartan-coded people:** losing a battle is a cost the Shunka understand and can live inside — that's just the field. Having something taken from you that you never agreed to pay, that no strength of arms could have stopped, is a different order of violation entirely — the one kind of loss their whole culture has no framework for absorbing. That's why the wound still defines the royal line, whether it happened a hundred years ago or a thousand.
 
 The royal bloodline has carried the curse ever since.
