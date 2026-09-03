@@ -81,8 +81,8 @@ Tokens sit clockwise around a wheel in initiative order, whoever went first at 1
 ## Attack Resolution
 
 1. **Attacker plays a card, face down.** Committed, not yet public.
-2. **Blind, then Evade check.** Blind checks the attacker's own stack; Evade checks the defender's. Both resolve here, before the defender picks anything.
-3. **Defender chooses a card to defend with, face down — blind.** No peeking at the attacker's card. The chosen card must satisfy its own Range for the current positions, same as if the defender were attacking. No legal card in hand means no legal defense.
+2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
+3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
 4. **No defense → attacker wins automatically.**
 5. **Both reveal simultaneously.** Only now do the cards become public and move to discard. Resolve Rock-Paper-Scissors:
 
@@ -338,6 +338,4 @@ So choose it as fiction, then use it as leverage. The character who thought abou
 
 ## The Oracle (End of Session)
 
-At the close of every session, each player meets the Oracle alone. She speaks in three frames — **Name, Price, Distance** — and you'll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don't get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.
-
-Growth is never handed over whole. Where this actually happens, and what it's like to sit across from her, is worth meeting for yourself rather than reading about in advance.
+Players receive a new card from the Oracle deck.
