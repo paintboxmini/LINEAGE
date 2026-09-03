@@ -123,9 +123,39 @@ I must settle every debt I carry, whether owed by me or to me.
 
 ## Hand Size
 
-Your maximum hand size is **Mind**, with a minimum of 2 — no one's hand is ever smaller than 2.
+Your maximum hand size is **Mind**.
 
 At the start of your turn, draw until you reach your hand size. If your deck is empty when you would draw, shuffle your discard pile into a new deck first, then draw.
+
+---
+
+## Skills
+
+Pick **two** at creation — either a specific trained action (Lockpicking, Negotiation, Animal Handling, and the like) or a whole Perception mode (`rules/resolution.md`, Perception).
+
+A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Checks.
+
+---
+
+## Passives
+
+Pick **two** at creation. Where a Skill is learned, a Passive is innate — something about what the character *is*, not something they were taught: liquid metal that reshapes into a weapon, a jaw built for a dogkin's bite. Not every character needs an exotic nature to have one, but the fiction has to actually support it — check it the same way a signature card gets checked, not granted by default.
+
+Each Passive:
+
+- Lives in its own zone, face up, separate from deck, hand, and discard — visible to the whole table at all times.
+- Can be played as either an attack or a block. Playing one still spends your Action for the turn, the same as playing a card from hand — what's free is the resource, not the turn: no card is spent, and a Passive is never gone once used.
+- Has a fixed shape, forever, chosen once at creation (or at Promotion) and never re-chosen after: one printed colour (locks the stat, same as any card — Red–Body, Green–Soul, Blue–Mind), a Range (Melee, Ranged, or Both — the fiction decides, same as any card), and a die. **d4 is the default.** A Passive that commits to Melee or Ranged only, instead of Both, can carry **d6** instead — the same trade the rest of the corpus already makes between a restriction and a bigger die.
+- Carries no Effect and no Defensive Bonus. In their place: **Applies When**, the specific circumstance the fiction has to genuinely support for the Passive to be a legal play, this turn. A real gate, not a judgment call the way Advantage's name-check is — the same weight Range already carries. If the moment doesn't fit, the Passive isn't a worse option than a card in hand, it isn't an option at all. This is what keeps a card in hand the better choice whenever one actually fits, and keeps a card's own name a real design constraint rather than something a free fallback can always route around.
+- No degradation, no growth on any of it — whatever shape it locks at creation is what it stays. A character's Stat Increases are the only thing that ever changes what it does.
+- Grants Advantage on a check its printed name plausibly supports (`rules/resolution.md`, Advantage & Disadvantage) — the same judgment call a discarded card gets, except a Passive is never spent.
+- Removes the effective floor a thin hand used to have. Hand and deck can both hit zero mid-fight; a Passive is always still there.
+
+**Concealment.** Because a Passive's colour is fixed and printed, and the passives zone is visible to the whole table, whichever side is about to use one keeps that specific choice — which Passive, played as attack or block — concealed until simultaneous reveal, exactly like a hand card. A GM already running a screen for other reasons extends it to cover this; a table with no GM on one side (PvP) needs an equivalent for both.
+
+Once concealment is resolved, a Passive plays exactly like any other card: `rules/combat.md`, Attack Resolution.
+
+Gaining a Passive beyond your starting two: `rules/player-guide.md`, Promotion.
 
 ---
 

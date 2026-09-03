@@ -2,17 +2,19 @@
 
 The aesthetic and emotional registers this world reaches for. Read this before building anything that needs to feel right.
 
-Things that operate by their own consistent internal logic, indifferent to human frameworks. The horror isn't randomness — it's comprehension. The moment you start to understand is the dangerous moment. Cosmic scale doesn't mean cosmic despair. It means the world was never organized around you.
+Eldritch horror - Things that operate by their own consistent internal logic, indifferent to human frameworks. The horror isn't randomness — it's comprehension. The moment you start to understand is the dangerous moment. Cosmic scale doesn't mean cosmic despair. It means the world was never organized around you.
 
-Every place has its own philosophy, its own rules, its own cost. The traveler observes without always intervening. Horror here is often quiet: a town that functions perfectly and is still wrong. Distance is not coldness — it's respect for the world's right to be strange.
+Kino's Journey — Every place has its own philosophy, its own rules, its own cost. The traveler observes without always intervening. Horror here is often quiet: a town that functions perfectly and is still wrong. Distance is not coldness — it's respect for the world's right to be strange.
 
-The mundane and the mythic exist in the same register. Monsters are ecology. Death is real and so is dinner.
+Delicious in Dungeon — The mundane and the mythic exist in the same register. Monsters are ecology. Death is real and so is dinner.
 
-Summonable systems with their own aesthetics, codes, and philosophy. Rules that predate human presence. Things that can be learned but maybe shouldn't be.
+Hellraiser — Summonable systems with their own aesthetics, codes, and philosophy. The Cenobites are horrifying because they make sense. Rules that predate human presence. Things that can be learned but maybe shouldn't be.
 
-The mythic breaking through into the brutal. Sacrifice with real weight. A child's logic accessing what adult rationalism walls off.
+Pan's Labyrinth — The mythic breaking through into the brutal. Sacrifice with real weight. A child's logic accessing what adult rationalism walls off.
 
-Ancient civilizations with their own complete logic. The world feels like it was there before you arrived. Alien beauty. Dignity in strangeness. Things that aren't human and don't need to be.
+The Dark Crystal — Ancient civilizations with their own complete logic. The world feels like it was there before you arrived. Alien beauty. Dignity in strangeness. Things that aren't human and don't need to be.
+
+Made in Abyss, Fullmetal Alchemist, Howl's Moving Castle, Spirited Away, Princess Mononoke, Grimgar of Fantasy and Ash, Re:Zero.
 
 ## What This World Reaches For
 
