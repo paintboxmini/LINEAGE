@@ -2,7 +2,7 @@
 
 Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
-*(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — `rules/the-summons.md`.)*
+*(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — `experimental/the-summons.md`.)*
 
 ---
 
@@ -103,6 +103,50 @@ On your turn, you may take one Action
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+## Reading a Card
+
+Every card carries: **Name / Color + Stat / Attack (Stat + die) / Effect / Defensive Bonus / Range / Flavor text.**
+
+The die tells you the card's philosophy:
+
+| Die | Personality |
+|-----|-------------|
+| d8 | Raw power — high ceiling, less control |
+| d6 | Utility — moderate damage, strong effects |
+| d4 | Precision — low damage, high control and information |
+
+(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)
+
+Some cards carry a **Special Rule** line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.
+
+**"Attacker"/"Defender" vs. "Target"** — two different things on card text:
+- **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
+- **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
+
+### An Example — STRIKE
+
+```
+STRIKE
+RED — BODY
+Attack: Body + d10
+Effect: None
+Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Range: Melee
+"Sometimes the direct path is the wisest path."
+```
+
+- **Name** — STRIKE.
+- **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
+- **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
+- **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
+- **Defensive Bonus: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defensive Bonus on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Range: Melee** — you and your target must both be in the Frontline to play this card.
+- **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
+
+Full canonical wording for every keyword and status card: `rules/card-glossary.md`.
+
+---
 
 ## Attack Resolution
 
@@ -210,6 +254,12 @@ When two or more effects would resolve at the same moment — several "start of 
 Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie.
 
 **This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defensive Bonus are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defensive Bonus, always, on every tie. Nobody, including the attacker, chooses that order.
+
+---
+
+## You Are Not Your Own Ally
+
+Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exception is a card that explicitly names *yourself* as the target.
 
 ---
 

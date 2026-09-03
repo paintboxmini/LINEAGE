@@ -329,6 +329,16 @@ PACKETS = {
 }
 
 
+def resolve_src(fname):
+    """A named file may live in rules/ or, for non-rules content pulled
+    into a packet (e.g. the-summons.md), in experimental/."""
+    for base in ('../rules', '../experimental'):
+        candidate = f'{base}/{fname}'
+        if os.path.exists(candidate):
+            return candidate
+    return f'../rules/{fname}'
+
+
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -338,7 +348,7 @@ if __name__ == '__main__':
         cfg = PACKETS[arg]
         parts = []
         for fname in cfg['files']:
-            src = f'../rules/{fname}'
+            src = resolve_src(fname)
             if not os.path.exists(src):
                 print(f'Not found: {src}')
                 sys.exit(1)
@@ -351,7 +361,7 @@ if __name__ == '__main__':
     else:
         # tolerate a bare stem ('player-guide') as well as 'player-guide.md'
         fname = arg if arg.endswith('.md') else f'{arg}.md'
-        src = f'../rules/{fname}'
+        src = resolve_src(fname)
         if not os.path.exists(src):
             print(f'Not found: {src}')
             sys.exit(1)
