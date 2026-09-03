@@ -1,7 +1,5 @@
 # Tales Untold — Quick Reference
 
-*Internal reference — GM and design use. **Not** the player-facing document; players receive `rules/player-guide.md` only. Keep this accurate anyway: it feeds new content, so an error here propagates.*
-
 ---
 
 ## Stats
@@ -28,20 +26,16 @@ Discard a card whose name supports the action → Advantage (roll 3d10, drop low
 
 ---
 
-## Combat — 1 Action + 1 Item Action Per Turn
+## Combat — 1 Action per turn
 
 | Action | Notes |
 |--------|-------|
 | Play a Card | Attack using a card from hand |
-| Move Position | Frontline ↔ Backline |
+| Move Position | Frontline ↔ Backline, or Rushdown - reposition a Backline enemy to Frontline (this counts as you moving, not the enemy) |
 | Use an Item | Activate a carried item |
-| Rushdown | Move a Backline enemy to the Frontline. You must be in the Frontline to use this action. |
 | Take Cover | Backline only; fiction must justify it. Gain Evade until you attack. |
 | Interact | Any noncombat action |
-| Wait | Take no action; reinsert yourself anywhere later in the order. Can't be used two turns in a row. See `rules/combat.md` |
 | Flee | 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted for fiction |
-
-Your Item Action does exactly what its name says and nothing else. Your Action may also be spent to Use an Item instead of one of the options above — a combatant who spends both this way uses 2 items in one turn, at the cost of not attacking (or otherwise acting) that turn.
 
 Draw to hand size when **initiative is rolled**, then at the **start** of each of your turns.
 
@@ -104,8 +98,7 @@ Green (Soul) beats  Blue  (Mind)
 - Reach **0 HP** → Collapse. You are on the ground — **Down**
 - While Down: cannot attack, cannot defend (attacks auto-hit), cannot change position
 - Healing above 0 ends the Collapse but does not stand you up — **standing costs your action**
-- Reach **−(Max HP ÷ 2, rounded up)** → Death
-- Every **3 in-game hours** Collapsed → recover **1d4 HP**
+-  2 follow up hits after Collapse → Death
 - GM may declare instant death if the fiction demands it
 
 ---
@@ -138,13 +131,11 @@ Every combatant occupies **Frontline** or **Backline**. Each side has its own Fr
 
 Melee requires both characters in the Frontline. The Frontline does not protect the Backline from being targeted.
 
-**Rushdown** — Move a Backline *enemy* to the Frontline. Cannot target allies. You must be in the Frontline.
-
 ---
 
 ## Stealth & Ambush
 
-Soul check vs DC = 10 + highest Soul on the side being approached. Creatures ambush the same way — the GM rolls their Soul check. On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
+Soul check vs DC = 10 + highest Soul on the side being approached. On success, first attack auto-hits (no RPS). Then roll initiative for everyone — ambusher included — and play normal combat.
 
 ---
 
@@ -177,9 +168,8 @@ See `rules/equipment.md` for the Weapon/Armor tier system and design guidance, a
 
 ## Advancement
 
-**End of session:** each player runs the Oracle ritual — **Name** (answer her question), **Price** (1 card revealed, then buried back into the pool — seen, not taken), **Distance** (GM reveals 3 → player takes 1). See `places/island-in-a-ship.md`.  
+**End of session:** each player gains a new card from the Oracle deck.  
 **Stat increases:** Rare. After pivotal character development. GM's call.  
-**Deck changes:** Cards can be added, removed, or forced in as curses/status.
 
 ---
 
