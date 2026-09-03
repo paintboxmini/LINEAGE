@@ -120,15 +120,13 @@ She believes the docks look after their own quietly, or nobody looks after them 
 
 ## Harwick Sundries — Counter Items
 
-**The Tuning Fork Sword** — two long, single-edged blades with a substantial gap. Grooves run the length of the blade. Adjustable brackets turn both edges into tines. Pick it up and the first thing you do is flick it. It hums. The whole blade vibrates. What it tunes to: unknown. Dess doesn't know either. Someone traded it for supplies six months ago and she hasn't moved it since.
+**The Tuning Fork Sword** — two long, single-edged blades with a substantial gap. Horizontal grooves run the length of the blade. Adjustable brackets that adjust frequency depending on which groove they are locked into. They can be placed on different grooves for harmonies and discords, or locked in between grooves for microtonals. Pick it up and the first thing you do is flick it. It hums. The whole blade vibrates. Dess doesn't know either. Someone traded it for supplies six months ago and she hasn't moved it since.
 
 **The Desire Compass** — points where you want to go. Not where you're trying to go. Where you *want* to go. Meaningful distinction in a world where naming a destination changes routing.
 
-**The Guard's Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Belonged to a Roadhouse guard who stopped coming back from the Weald. Dess took them in trade. They're the right size for whoever needs them to be.
+**Guard Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
-
----
 
 ## The Listing Keel — Tavern
 
@@ -142,7 +140,7 @@ Doesn't offer recommendations. Doesn't ask questions. Pours heavy.
 
 She believes the bar is the one place in the Nest where nothing that followed you in gets to finish what it started — pour, listen, don't ask, and whatever's chasing someone loses the scent at the door. Mostly true, which is the problem: the one time it wasn't, the boat hook is the reason there's still a Listing Keel to run. She doesn't tell that story. She keeps the hook within reach and calls it habit.
 
-*"Ale or the brown stuff?"*
+*Ale or the brown stuff?*
 
 **The Back Corner** — round table, low ceiling, one candle. A good place to overhear things. A good place to not be overheard.
 
@@ -151,21 +149,15 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 - Dock Broth — Salla makes it from whatever was left on the docks that day. She charges less for it than it's worth and recommends it sincerely.
 - A single room upstairs — one bed, a hammock nailed to the wall, no lock. First come.
 
----
-
 ## Plot Hooks
 
 - A Glasslight lens shows a color that only appears here at low tide.
 - A People of Promise ritual barge docks and nobody lets it leave.
-- An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water (`world/the-unheld.md`). That precision is why anyone who looks at it dreams of the door.
-
----
+- An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water. That precision is why anyone who looks at it dreams of the door.
 
 ## Entry — If the Party Arrives Here
 
-*The static reaches you before the docks do. A low continuous hiss beneath gulls and rigging, riding the water upstream — like the Unheld talking to itself at the far end of the river, and the river repeating it.*
-
-The docks smell like silt, fish, wet rope, and something burning somewhere that nobody is moving toward. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
+The docks smell like silt, fish, wet rope, and burning pitch. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
 
 Bartho is already watching you.
 
