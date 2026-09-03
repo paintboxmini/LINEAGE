@@ -123,9 +123,40 @@ I must settle every debt I carry, whether owed by me or to me.
 
 ## Hand Size
 
-Your maximum hand size is **Mind**, with a minimum of 2 — no one's hand is ever smaller than 2.
+Your maximum hand size is **Mind**, with a minimum of 2 — no one draws to fewer than 2 cards at the start of a turn.
+
+That's a floor on the draw target, not a guarantee mid-fight. Playing cards can still take a hand to zero, same as it always could. What actually keeps a character functional there is Passives, below — not hand size.
 
 At the start of your turn, draw until you reach your hand size. If your deck is empty when you would draw, shuffle your discard pile into a new deck first, then draw.
+
+---
+
+## Skills
+
+Pick **two** at creation — either a specific trained action (Lockpicking, Negotiation, Animal Handling, and the like) or a whole Perception mode (`rules/resolution.md`, Perception).
+
+A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Checks.
+
+---
+
+## Passives
+
+Pick **two** at creation. Where a Skill is learned, a Passive is innate — something about what the character *is*, not something they were taught: liquid metal that reshapes into a weapon, a jaw built for a dogkin's bite. Not every character needs an exotic nature to have one, but the fiction has to actually support it — check it the same way a signature card gets checked, not granted by default.
+
+Each Passive:
+
+- Lives in its own zone, face up, separate from deck, hand, and discard — visible to the whole table at all times.
+- Can be played as either an attack or a block, **Range: Both** always. Playing one still spends your Action for the turn, the same as playing a card from hand — what's free is the resource, not the turn: no card is spent, and a Passive is never gone once used.
+- Has a fixed shape, forever: **[matching Stat] + d4**, and one printed colour, chosen once at creation (or at Promotion) and never re-chosen after. Colour locks the stat the same way it does on every card (Red–Body, Green–Soul, Blue–Mind).
+- Carries no Effect and no Defensive Bonus. No degradation, no growth on either half — the die stays d4 forever, and a Passive never gets its own leveling track. A character's Stat Increases are the only thing that ever changes what it does.
+- Grants Advantage on a check its printed name plausibly supports (`rules/resolution.md`, Advantage & Disadvantage) — the same judgment call a discarded card gets, except a Passive is never spent.
+- Removes the effective floor a thin hand used to have. Hand and deck can both hit zero mid-fight; a Passive is always still there.
+
+**Concealment.** Because a Passive's colour is fixed and printed, and the passives zone is visible to the whole table, whichever side is about to use one keeps that specific choice — which Passive, played as attack or block — concealed until simultaneous reveal, exactly like a hand card. A GM already running a screen for other reasons extends it to cover this; a table with no GM on one side (PvP) needs an equivalent for both.
+
+Once concealment is resolved, a Passive plays exactly like any other card: `rules/combat.md`, Attack Resolution.
+
+Gaining a Passive beyond your starting two: `rules/player-guide.md`, Promotion.
 
 ---
 

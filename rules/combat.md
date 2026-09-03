@@ -146,6 +146,8 @@ Range: Melee
 
 Full canonical wording for every keyword and status card: `rules/card-glossary.md`.
 
+A Passive resolves exactly like a card from hand once concealment is settled — what it is, its fixed shape, and how it's concealed beforehand: `rules/character-creation.md`, Passives.
+
 ---
 
 ## Attack Resolution

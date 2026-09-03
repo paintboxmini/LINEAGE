@@ -63,3 +63,15 @@ So choose it as fiction, then use it as leverage. The character who thought abou
 At the close of every session, each player meets the Oracle alone. She speaks in three frames — **Name, Price, Distance** — and you'll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don't get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.
 
 Growth is never handed over whole. Where this actually happens, and what it's like to sit across from her, is worth meeting for yourself rather than reading about in advance.
+
+### Promotion
+
+A card played enough, meaningfully, can become a Passive beyond your starting two — the Oracle's own way of recognizing what a character has already shown itself to be.
+
+**Nothing converts.** A promoted Passive is authored fresh, in the fixed Passive shape (`rules/character-creation.md`, Passives) — not a stat translation of the card that earned it. The old card's specific die, Effect, and Defensive Bonus don't survive; what survives is what the card meant. STRIKE promoted isn't a d4 version of STRIKE — it's a new Passive built around whatever STRIKE revealed about the character who kept playing it.
+
+**Not every card clears that bar.** A card with a real fictional throughline about identity — not just a good trick — is what Promotion is for. A card that's purely a mechanical maneuver, with nothing to say about who the character *is*, doesn't become a Passive just because it got played a lot; that kind of heavy use is better rewarded another way — a Bonus Card, a Distance pick that leans into it.
+
+The retiring card returns to the GM/Oracle pool, same as any card leaving a deck permanently.
+
+**Promotion isn't the only door.** A Passive can also be granted directly, GM's call, when the fiction earns it outright — a fusion, an awakening, a bond taking hold — with no card involved at all. That's the same authority that lets a character start with a Passive at creation with no play history behind it yet; Promotion is just the version of that authority that runs through a card already in play.
