@@ -4,17 +4,27 @@
 
 ## What's Settled
 
-The Shunka were, at some point in their past, at war with another people. That enemy invaded Shunka land and was repelled — but not cleanly. Among the invaders was a hag, witch, or shaman (which, exactly, isn't fixed yet), who targeted the Shunka queen directly and laid a curse on her: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.
+The Shunka are a warrior people, directly inspired by Spartan culture — strength of body, discipline, and honor won openly on the field are the whole measure of a person.
 
-The royal bloodline has carried that curse ever since.
+They were, at some point in their past, at war with another people: **the Tithebound.** The Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
+
+**Who the Tithebound were, and why they came.** Their own ground was failing them — worn thin, unable to hold them, for reasons the Shunka never fully understood and the Tithebound never explained. They didn't invade for glory or tribute. They came because they needed somewhere else to stand, and the Shunka had ground worth taking. That's not an excuse the Shunka ever accepted, and it isn't offered as one — just the actual shape of a war that looks, from outside, like an act of pure aggression and was, from inside, something closer to drowning.
+
+**What made them dangerous wasn't the field.** Where the Shunka's whole culture runs on the body — earned strength, honest contest — the Tithebound's ran on the Second Cut itself: Price. Every person who speaks a Price speaks it for themselves (`rules/character-creation.md`, Declaring a Price) — that's the whole shape of the thing, a cost a person takes on knowingly, in their own voice. The Tithebound learned to lay a Price on someone who never spoke it. Not a spell in the ordinary sense — a violation of how the Second Cut is supposed to work at all.
+
+When the invasion failed and there was no army left to press it, their curse-worker — a hag, a witch, a shaman, the word was never fixed and doesn't need to be — turned to the one weapon defeat hadn't touched. She laid an unspoken Price on the Shunka queen directly: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.
+
+**Why this is the wound it is, to a Spartan-coded people:** losing a battle is a cost the Shunka understand and can live inside — that's just the field. Having something taken from you that you never agreed to pay, that no strength of arms could have stopped, is a different order of violation entirely — the one kind of loss their whole culture has no framework for absorbing. That's why the wound still defines the royal line, whether it happened a hundred years ago or a thousand.
+
+The royal bloodline has carried the curse ever since.
 
 Pat is Shunka, but not of that royal line — the curse isn't personally his.
 
 ## What's Open
 
-**Who invaded.** Deliberately unnamed — a hook to tie the Shunka into the rest of the world later, once there's a reason to pick someone, rather than locked in now.
+**When it happened.** Pat is torn between the curse being ancient — deep mythic past, generations removed from anyone living — or something much closer to living memory. Genuinely undecided, not defaulted to one. Nothing above depends on picking a side.
 
-**When it happened.** Pat is torn between the curse being ancient — deep mythic past, generations removed from anyone living — or something much closer to living memory. Genuinely undecided, not defaulted to one.
+**Whether the Tithebound still exist.** Left open — a scattered, dying people who never found new ground is one honest continuation of their own origin, but not committed to.
 
 **What the cursed line actually is, now.** Two different directions on the table, and they're not the same fiction:
 - **Spirits** — the royal lineage is gone, and Pat's magical expression calls on their spirits directly.
@@ -31,3 +41,5 @@ Pat is considering a landmass to the north-northwest of the mapped continent as 
 - `experimental/pat.md` — the character this belongs to
 - `experimental/passives.md` — STRONGJAW
 - `world/geography-overview.md` — the mapped continent, for where this would sit
+- `world/creation-myth-the-three-cuts.md` — the Second Cut, Price, what the Tithebound inverted
+- `rules/character-creation.md` — Declaring a Price, the ordinary (consensual) version
