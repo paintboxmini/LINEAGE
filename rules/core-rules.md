@@ -44,8 +44,8 @@ Draw to hand size when **initiative is rolled**, then at the **start** of each o
 ## Attack Resolution
 
 1. Attacker plays 1 card, face down.
-2. Blind (attacker's stack), then Evade (defender's stack) resolve — both before the defender picks a card.
-3. Defender may choose 1 card to defend with, face down — blind, without seeing the attacker's card. The card must meet its own Range requirement for the current positions, same as if the defender were attacking (see Range Matrix below) — no legal card in hand means no legal defense.
+2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged cards can't be used to block a Melee attack while on the Frontline.
+3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
 4. No defense → attacker wins automatically.
 5. Both reveal simultaneously — only now do they become public and move to discard — and resolve RPS:
 
