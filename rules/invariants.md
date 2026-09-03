@@ -8,12 +8,6 @@ This file is scoped to the simulator only. It is not a design standard for what 
 
 ## Confirmed
 
-*Empty — the previous entry here (turn-count vs. wheel visualization) was Initiative Shift's own invariant, cleared along with the rest of that mechanic's definitions for a fresh rebuild. Nothing else has been confirmed against this file's definition yet.*
-
-## Candidates — proposed, not yet confirmed
-
-Only the entry above has actually been confirmed against this definition. These two are offered in the same style, not asserted as settled:
-
 - **Derived stats are computed live, never cached.** Max HP, hand size, and initiative bonus are functions of current Body/Mind/Soul, evaluated fresh whenever needed — not stored values patched on a stat change. An implementation that caches one of these and forgets to invalidate it on a stat change has this bug specifically.
 - **Card count is conserved per combatant across deck, hand, discard, and exile.** Nothing is created or destroyed by ordinary play — a card moves between piles, and the total across all of them changes only at two nameable events: a Wound/Exhaust insertion, or a permanent removal (short rest, or Exile returning to deck at combat's end). Any other change in the total is a bug.
 
@@ -35,8 +29,6 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Protect / Shared Burden | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 | Ledger Weight | card selection (post-reveal redo, attacker-on-defender only) | one reveal |
-
-Adding a new override: name the mechanic it changes, set a flag with a clear expiry, read that flag at exactly one point in the relevant procedure, revert on expiry. Escalating the override system itself beyond flags (to typed modifiers, to a policy stack) is engineering judgment, not an invariant — see `memory.md`'s architecture north star for that path.
 
 ---
 
