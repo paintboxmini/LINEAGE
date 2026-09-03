@@ -56,8 +56,6 @@ Giblets is a ghoul — unhinged in a way that is not the same as tragic. The sta
 
 The line in front of the stall is one of the bazaar's most famous features. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
 
-See `characters/giblets.md`.
-
 **The Tattooist — Keeper of Echoes**
 
 An old man. His hands are entirely covered in his own memorial tattoos — every sensation, memory, and experience he's preserved for others over decades of transactions. He can smell colors that don't exist, feel textures that were never real, remember songs that were never written.
@@ -70,6 +68,27 @@ Process: hand-poke method. Tap-tap-tap. Each strike embeds the echo in skin.
 
 **Lily — The Dream-Hunter**
 
+The Dream-Hunter. Underground Bazaar. Mirel's grandmother.
+
+## Appearance & Presence
+
+She does not advertise. You find out about Lily the way you find out about anything true in the bazaar, someone mentions her services in a whisper.
+
+She sits in the same corner every time, in the bazaar or the tavern below it.
+
+## What She Does
+
+She charges in dreams. One night of yours, paid in advance. You wake rested but the night is simply gone.
+
+She will not tell you what she found exactly. She will tell you if something is hunting you. Just the shape of it.
+
+## At the Tavern
+
+She comes down sometimes. Always the same corner table if one is free. Mortis pours without being asked.
+
+She and Mortis don't talk much. They don't need to. Two people who know exactly who they are and have made their peace with eachother.
+
+If players have already met her in the bazaar, she may be here between hunts.
 Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
 
 **The Cartographer — Personal Geography**
@@ -82,15 +101,15 @@ Her maps occasionally show locations that haven't been built yet. Routes through
 
 She never charges coin. She charges secrets — specifically, secrets about places you've been. The more interesting the secret, the more accurate the map. She has been building an intelligence network through cartographic transactions for a very long time.
 
-She is Kess's grandmother. Her daughter — Kess's mother — died in the mine below the bazaar. The Warden had held her illegally, leverage to keep the Cartographer's network cooperative. When Kess went in to fix it, the Cartographer made a map: routes through the deep mine, exits that surface outside the city entirely. She charged nothing for that one. She has not made another like it since.
+She is Kess's grandmother. Her daughter — Kess's mother — works in the mine below the bazaar. The Warden has her held illegally, leverage to keep the Cartographer's network cooperative. Before Kess went in to fix it, the Cartographer made a map with the help of Lily: routes through the deep mine, exits that surface outside the city entirely. She charged nothing for that one. She has not made another like it since.
 
 The map still exists. What Kess has done with it is her own business.
 
 **Willem — Portraitist**
 
-Paint-stained fingers. Does portraits, landscapes, and the occasional "please remove my ex-lover's face from this family painting" commission. The latter comes up more than you'd expect, especially when one party was a reality sculptor.
+Paint-stained fingers. Does portraits, landscapes, and the occasional "please remove my ex-lover's face from this family painting" commission.
 
-He also paints objects before they're sold into the soul economy — a last record of what something looked like before it's gone. People bring him the item, he paints it, they leave with the painting and sell the thing. He keeps a small copy of everything he's ever painted this way. The collection is enormous. He has never shown it to anyone.
+He also paints objects before they're sold. — a last record of what something looked like before it's gone. People bring him the item, he paints it, they leave with the painting and sell the thing. He keeps a small copy of everything he's ever painted this way. The collection is enormous. He has never shown it to anyone.
 
 Friendly. Chatty. Knows everyone who's ever tried to hold onto something.
 
@@ -112,47 +131,25 @@ The symbiotic variant bonds to whoever tends it and begins to resemble them. The
 
 **Oversized variant encounter:** Combat. The Mother is the primary target. Offspring scatter throughout the fight as a secondary clock — uncontrolled offspring mature into adolescence (briefly dangerous, attack on instinct) and eventually full maturity (spawn a new Mother). Prioritizing the Mother leaves the offspring problem. Prioritizing offspring leaves the Mother free. Neither is obviously correct.
 
-*Full culinary notes pending — Delicious in Dungeon cross-reference.*
-
----
-
 ## Exotic Animals
 
-**Fairy Dragons** — A stall near the east pillar cluster. Iridescent wings, small enough to perch on a shoulder. They help scribes write faster, occasionally breathing small puffs of glittery smoke that makes ink dry perfectly. They chitter in tiny voices, frequently disagreeing with each other about whose calligraphy is better. Expensive. Accumulates Pig debt just by looking at them too long.
+**Fairy Dragons** — A stall near the east pillar cluster. Iridescent wings, small enough to perch on a shoulder. They help scribes write faster, occasionally breathing small puffs of glittery smoke that makes ink dry perfectly. They chitter in tiny voices, frequently disagreeing with each other about whose calligraphy is better. Expensive.
 
 **Shardjaw Pitbulls** — Illegal, technically. Stocky bodies covered in fish scales, color gradient from dark purple at the head fading to near-white at the tail. Black glass teeth that break off in wounds and regrow. Someone in the bazaar always has a litter. The vendor is never the same person twice. Gremlins track every sale but nobody asks why the record always shows a different seller.
-
----
 
 ## The Tents
 
 The bazaar has permanent stalls and temporary tents. The tents move. Not dramatically — just enough that they aren't in the same configuration two visits in a row.
 
-**Privacy tents** — Quieter inside than they should be, larger than their exterior. Where negotiations happen that can't happen at a stall. No gremlin has ever successfully tracked what changes hands inside one. The Pig is aware of this and has not resolved it.
-
-**Overflow tents** — Appear when a stall gets too crowded, adjacent to the original. Vendors gesture vaguely behind them: *"the good stuff's in the tent."* The tent may not be where it was yesterday. That's part of the service.
-
-**Sampling tents** — Test dangerous or unstable goods before committing. The magical equivalent of a proof-of-concept. Some items can only be evaluated here because the tent's walls absorb the consequences. The walls have seen things. They do not share.
-
----
-
-## Recurring Visitors — Moth & Kess
-
-Not confined to the bazaar. First encountered here.
-
----
+## Moth & Kess
 
 **Kess**
 
 Granddaughter of the Cartographer. Full profile — backstory, the mine, her connections — now lives in `characters/kess.md`. Found here moving through the bazaar with a legitimate-seeming reason to be anywhere; her grandmother's intelligence network runs partly through her, and she doesn't advertise it.
 
----
-
 **Moth**
 
-Full profile now lives in `characters/moth.md`. Found here spending freely from a coin purse that never gets lighter, playing Liar's Dice at the tavern table most nights, watched with professional wariness by the house gremlin, who has flagged him as a person of interest and cannot find a rule he's breaking.
-
----
+Found here spending freely from a coin purse that never gets lighter, playing Liar's Dice at the tavern table most nights, watched with professional wariness by the house gremlin, who has flagged him as a person of interest and cannot find a rule he's breaking.
 
 ## Atmosphere Details
 
