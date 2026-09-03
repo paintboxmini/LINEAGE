@@ -22,44 +22,21 @@ This is a settled transience. Everything looks temporary. Most of it has been he
 
 ### The Card Economy
 
-Refugees trade their skills and abilities to survive. Crystallized into tradeable form.
-
-The soul economy crystallizes experience into tradeable form, and a card *is* crystallized experience — a named, concrete way of acting that somebody learned somewhere. Elsewhere in the world a card is earned: from the Oracle, or from the place that taught it. Here it can be traded
+Refugees trade their abilities to survive. In Tales Untold that takes the form of cards.
 
 **Buying is rare, and the stock is not.** What sits on a table here is almost always **tagged** — a technique from somewhere specific, a way of doing things that some place or person still teaches. Nobody stocks the common stuff, because everyone already knows it. A party with money and no leverage will find nothing worth having; a party with something genuinely uncommon to trade will find they are suddenly very interesting.
 
 **Nothing here is bought with coin.** A card is experience, so it costs experience: another card, a real memory, or a secret with weight to it. A party that offers gold for a card is not haggling badly — they have misunderstood the shop, and the vendor will say so once and then stop talking.
 
-**The Pig's debt is unaffected either way** (below). He is not interested in pieces of people; he has a whole bazaar for that. What the party owes him accrues because they were here, not because of what they traded.
-
-**A bought card is a lineage you cannot personally back.** Its tag does not change hands — the tag records the tradition, not the transaction (`world/lineage.md`). Somebody walks out of here holding a WEALD card having never stood in the Weald. That is not a loophole; it is exactly what this market is, and the tag is what makes it legible.
-
----
-
 ### The Pig's Debt
 
-Separate from the soul economy entirely. The Pig (Lord Archibald) provides the infrastructure that makes the bazaar possible. Everyone who spends time here accumulates debt — tracked by the gremlins.
+The Pig provides the infrastructure that makes the bazaar possible. Everyone who spends time here accumulates debt — tracked by the gremlins.
 
-The Pig isn't interested in pieces of people. He has a whole bazaar for that. He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
+He wants favors. Information. Political services. Muscle. The gremlins track what's owed; the Pig calls it in at his discretion.
 
-**Swines** — the Pig's own currency, required for all transactions in the bazaar.
+Don't have 50 gold? A gremlin will advance you the minimum and mark it down. Everyone gets in.
 
-Entry requires a minimum conversion: 50 gold for 50 swines. The rate looks fair because it is — on the way in. The entrance gremlin runs this like a carnival ticket booth: enthusiastic, welcoming, a little theatrical. *"First time? Oh, you're going to love it. Fifty gold gets you fifty swines, that's everything you need to get started, right through the door, enjoy the show!"* It feels like the start of something fun. That's the design.
-
-Don't have 50 gold? The gremlin will advance you the minimum and mark it down. Everyone gets in.
-
-Everything in the bazaar is priced in swines. Real money is no good here. *"That'll be eight swines." "You ain't got the swine for that."*
-
-Getting out is the problem. Converting swines back to real currency requires settling the full balance — the entrance conversion, any advances taken inside, plus the Pig's exit fee. The exit fee is set at the door and is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. The privacy tents do steady business with people trying to negotiate alternate settlements.
-
-The currency sounds undignified because it is. That's intentional — it's hard to feel like you're in financial trouble when the unit of account is called a swine.
-
-**The addiction cycle:**
-Work in bazaar → magical oversaturation → need baseline drinks to function → can't afford them → deeper Pig debt → more dangerous work → repeat.
-
-The gambling tables in the underground tavern are full of people trying to climb out of this loop. Most of them are losing ground.
-
----
+Getting out is the problem. It requires settling the full balance — the entrance conversion, any advances taken inside, plus the Pig's exit fee. The exit fee is set at the door and is never what you expected. People who arrived planning to spend a little and leave find that the math doesn't work the way it did on the way in. There's steady business with people trying to negotiate alternate settlements.
 
 ## The Debt-Tracker Gremlins
 
@@ -77,7 +54,7 @@ Purple canopy. Symbols on the fabric that rearrange when no one's looking. The s
 
 Giblets is a ghoul — unhinged in a way that is not the same as tragic. The stall sells food: whatever eldritch thing is currently on the grill, served with memory seasoning and mood marinades. Digestive divination is free with every meal.
 
-The line in front of the stall is the bazaar's most famous feature. It grows. It does not shrink. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
+The line in front of the stall is one of the bazaar's most famous features. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
 
 See `characters/giblets.md`.
 
@@ -85,17 +62,15 @@ See `characters/giblets.md`.
 
 An old man. His hands are entirely covered in his own memorial tattoos — every sensation, memory, and experience he's preserved for others over decades of transactions. He can smell colors that don't exist, feel textures that were never real, remember songs that were never written.
 
-Process: tebori hand-poke method. Tap-tap-tap. Each strike embeds the echo in skin. The full experience is then extracted and crystallized for sale separately.
+Process: hand-poke method. Tap-tap-tap. Each strike embeds the echo in skin.
 
 - Dotwork for lost sensations
 - Linework for lost memories
 - Bold traditional pieces for lost emotions or personality traits
 
-Clients can theoretically reclaim what they've sold — but only by returning the crystallized experience and having the tattoo removed. The removal comes with its own price. He does not explain what it is until you've decided.
-
 **Lily — The Dream-Hunter**
 
-Full profile now lives in `characters/lily.md`. Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
+Found here in the same corner every time, reading what's coming for a night of your sleep, paid in advance.
 
 **The Cartographer — Personal Geography**
 
@@ -126,8 +101,6 @@ He believes nothing is really gone as long as somebody remembers exactly what it
 Evening performance, every night, same time. She juggles bites of actual food — a roasted leg, a wedge of pie, a steaming fish — and eats each one at precise intervals while keeping the rest airborne. Never drops a crumb. Adds courses throughout. Crowd contributes unusual currencies to a hat: coins, pressed flowers, small keys that chime.
 
 Believes that if you make something impossibly hard look effortless often enough, people will trust you with the things that actually matter — an old conviction from before the Bazaar, back when trust was the one thing she dropped and couldn't catch again in time. She has not dropped a single bite since. Ask her and she'll call it showmanship. It reads more like proof, performed nightly, to an audience that was never actually the point.
-
----
 
 ## The Mother of Many
 
