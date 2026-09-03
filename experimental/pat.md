@@ -14,7 +14,7 @@ Mind 2 / Body 3 / Soul 4 — HP 15
 
 ## People
 
-Shunka — dogkin. Not yet documented anywhere in `world/races/`; what exists so far is only what's here and in STRONGJAW's own fiction. Worth a real entry once there's more than one data point.
+Shunka — dogkin. Working lore, still in flux: `experimental/the-shunka.md`.
 
 ## Passive
 
@@ -32,4 +32,5 @@ Shunka — dogkin. Not yet documented anywhere in `world/races/`; what exists so
 ## Related Documents
 
 - `experimental/passives.md` — STRONGJAW
+- `experimental/the-shunka.md` — the Shunka people
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck
