@@ -146,9 +146,9 @@ Pick **two** at creation. Where a Skill is learned, a Passive is innate — some
 Each Passive:
 
 - Lives in its own zone, face up, separate from deck, hand, and discard — visible to the whole table at all times.
-- Can be played as either an attack or a block, **Range: Both** always. Playing one still spends your Action for the turn, the same as playing a card from hand — what's free is the resource, not the turn: no card is spent, and a Passive is never gone once used.
-- Has a fixed shape, forever: **[matching Stat] + d4**, and one printed colour, chosen once at creation (or at Promotion) and never re-chosen after. Colour locks the stat the same way it does on every card (Red–Body, Green–Soul, Blue–Mind).
-- Carries no Effect and no Defensive Bonus. No degradation, no growth on either half — the die stays d4 forever, and a Passive never gets its own leveling track. A character's Stat Increases are the only thing that ever changes what it does.
+- Can be played as either an attack or a block. Playing one still spends your Action for the turn, the same as playing a card from hand — what's free is the resource, not the turn: no card is spent, and a Passive is never gone once used.
+- Has a fixed shape, forever, chosen once at creation (or at Promotion) and never re-chosen after: one printed colour (locks the stat, same as any card — Red–Body, Green–Soul, Blue–Mind), a Range (Melee, Ranged, or Both — the fiction decides, same as any card), and a die. **d4 is the default.** A Passive that commits to Melee or Ranged only, instead of Both, can carry **d6** instead — the same trade the rest of the corpus already makes between a restriction and a bigger die.
+- Carries no Effect and no Defensive Bonus. No degradation, no growth on any of it — whatever shape it locks at creation is what it stays. A character's Stat Increases are the only thing that ever changes what it does.
 - Grants Advantage on a check its printed name plausibly supports (`rules/resolution.md`, Advantage & Disadvantage) — the same judgment call a discarded card gets, except a Passive is never spent.
 - Removes the effective floor a thin hand used to have. Hand and deck can both hit zero mid-fight; a Passive is always still there.
 
