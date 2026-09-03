@@ -1,12 +1,12 @@
 # The Underground Tavern
 
-Same level as the bazaar, tucked away from the main thoroughfare. Where the bazaar's worst customers go when the oversaturation gets heavy.
+Same level as the bazaar, tucked away from the main thoroughfare.
 
 ## Atmosphere
 
 If the bazaar is where everyday magic misbehaves, the tavern is where that misbehavior concentrates into something genuinely unpleasant.
 
-The air has weight. Magical oversaturation is thick enough here to be felt in the chest — a pressure behind the eyes, a slight wrongness in peripheral vision that doesn't resolve. People come here because they need relief, not because it's pleasant.
+The air has weight, thick enough here to be felt in the chest — a pressure behind the eyes, a slight wrongness in peripheral vision that doesn't resolve. People come here because they need relief, not because it's pleasant.
 
 No music. Anyone singing down here wouldn't last long. The sound is low conversation, ceramic on stone, and the occasional sharp yell from the gambling tables.
 
