@@ -123,9 +123,7 @@ I must settle every debt I carry, whether owed by me or to me.
 
 ## Hand Size
 
-Your maximum hand size is **Mind**, with a minimum of 2 — no one draws to fewer than 2 cards at the start of a turn.
-
-That's a floor on the draw target, not a guarantee mid-fight. Playing cards can still take a hand to zero, same as it always could. What actually keeps a character functional there is Passives, below — not hand size.
+Your maximum hand size is **Mind**.
 
 At the start of your turn, draw until you reach your hand size. If your deck is empty when you would draw, shuffle your discard pile into a new deck first, then draw.
 
