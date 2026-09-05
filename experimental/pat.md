@@ -28,7 +28,7 @@ Confirmed mechanic, a line on the character sheet rather than a Skill or Passive
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). One real trigger is confirmed — HERE BOY (`experimental/pat-cards.md`).
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). Two triggers confirmed — HERE BOY and LET'S GO (`experimental/pat-cards.md`).
 
 **Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
 
@@ -36,9 +36,10 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 Still open:
 
-- Whether HERE BOY is the *only* trigger or one of several.
+- Whether HERE BOY and LET'S GO are the *only* two triggers.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
 - Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
+- Whether LET'S GO's team damage buff survives if the spirit carrying it is killed (`experimental/pat-cards.md`, Card 3).
 
 ## Passives
 
@@ -52,15 +53,15 @@ Still open:
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards**, drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table. Custom cards in progress: `experimental/pat-cards.md`.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `experimental/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen at the table.
 
 ## Not Yet Set
 
 - Character name
 - Appearance beyond the Cane Corso reference, voice
 - Price
-- The 1 remaining custom card (2 of 3 written so far — `experimental/pat-cards.md`)
-- The open questions under Wild Magic Summoning, above
+- The 6-card Oracle draft (table activity, not something to pre-decide)
+- The open questions under Wild Magic Summoning, above, and the 3 flagged under Card 3 specifically
 
 ## Related Documents
 
