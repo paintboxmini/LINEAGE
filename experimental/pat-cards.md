@@ -43,7 +43,7 @@ Range: Both
 
 Win or tie, attacking or defending, this triggers the same — a normal Green card in every other way, no gimmick like Card 1's. The HP roll isn't restated here since Wild Magic Summoning already covers it for every summon regardless of trigger.
 
-**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. Still open — whether it's the *only* trigger, what a summoned spirit actually does on its own turn once it's on the wheel (`rules/combat.md`, Initiative — a summoned combatant does get its own token and turn, that part's already covered), and whether more than one spirit can be out at once given there are only three to draw from.
+**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`experimental/pat.md`, Wild Magic Summoning). Still open: whether HERE BOY is the *only* trigger, and whether more than one spirit can be out at once given there are only three to draw from.
 
 ---
 

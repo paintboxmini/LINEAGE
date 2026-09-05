@@ -28,10 +28,15 @@ Confirmed mechanic, a line on the character sheet rather than a Skill or Passive
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). One real trigger is confirmed — HERE BOY (`experimental/pat-cards.md`). Still not yet specified, and flagged rather than invented:
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). One real trigger is confirmed — HERE BOY (`experimental/pat-cards.md`).
+
+**Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
+
+**A real gap worth flagging:** "Object" as a formal game category doesn't currently exist anywhere in `rules/combat.md`. It's clearly something that existed before this repo's rebuild — an old internal note once referenced "the only Objects currently built" as an established category — but it didn't survive. Worth a real decision at some point: define "Object" narrowly, just for these spirits, or bring it back as a general category other future content (constructs, totems, wards) could also use. Not blocking anything about Pat specifically.
+
+Still open:
 
 - Whether HERE BOY is the *only* trigger or one of several.
-- What a summoned spirit does once it's out on its own turn — it does get a token on the initiative wheel (`rules/combat.md`, Initiative), but its actual attacks/stats aren't defined.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
 - Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
 
