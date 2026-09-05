@@ -8,13 +8,9 @@ The Shunka are a warrior people, directly inspired by Spartan culture — streng
 
 **Appearance.** Cane Corso — a mastiff breed, broad-headed and heavily built, bred for war and guarding. Pat's own inspiration image (`experimental/images/shunka-reference-cane-corso.jpg`) is a Cane Corso in spiked gladiator armor, standing in a colosseum arena — the physical anchor for the kinfolk form, and consistent with everything above about how the Shunka hold strength and honor.
 
-They were, at some point in their past, at war with another people: **the Tithebound.** The Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
+They were, at some point in their past, at war with another people: **the Tithebound** — who they are, why they invaded, their appearance, ecosystem, and belief system all now live in `experimental/the-tithebound.md`. The short version: the Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
 
-**Appearance.** Animalistic, tribal — lizard-folk, reptilian, primitive in structure rather than in danger. Pat's call, kept as-is. Fits the shape of the whole history without needing adjustment: the Shunka run on discipline, hierarchy, a military structure Pat's own backstory lives inside. The Tithebound never had any of that, and their actual threat came from somewhere none of it could reach anyway.
-
-**Who the Tithebound were, and why they came.** Their own ground was failing them — worn thin, unable to hold them, for reasons the Shunka never fully understood and the Tithebound never explained. They didn't invade for glory or tribute. They came because they needed somewhere else to stand, and the Shunka had ground worth taking. That's not an excuse the Shunka ever accepted, and it isn't offered as one — just the actual shape of a war that looks, from outside, like an act of pure aggression and was, from inside, something closer to drowning.
-
-**What made them dangerous wasn't the field.** Where the Shunka's whole culture runs on the body — earned strength, honest contest — the Tithebound's ran on the Second Cut itself: Price. Every person who speaks a Price speaks it for themselves (`rules/character-creation.md`, Declaring a Price) — that's the whole shape of the thing, a cost a person takes on knowingly, in their own voice. The Tithebound learned to lay a Price on someone who never spoke it. Not a spell in the ordinary sense — a violation of how the Second Cut is supposed to work at all.
+**What made them dangerous wasn't the field.** Where the Shunka's whole culture runs on the body — earned strength, honest contest — the Tithebound's ran on the Second Cut itself: Price, forced onto someone who never spoke it, not the ordinary voluntary kind (`rules/character-creation.md`, Declaring a Price). Where that came from, culturally: `experimental/the-tithebound.md`, Belief system.
 
 When the invasion failed and there was no army left to press it, their curse-worker — a hag, a witch, a shaman, the word was never fixed and doesn't need to be — turned to the one weapon defeat hadn't touched. She laid an unspoken Price on the Shunka queen directly: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.
 
@@ -36,8 +32,6 @@ Whoever was left of the invasion didn't find a body. There wasn't one to find.
 
 **When it happened.** Still not pinned to a number, but no longer wide open either: enough generations separate the original wild-magic attempts from Pat's mother that "recent, living memory" is getting harder to square with the rest of the timeline — his mother is descended from people who were *already* trying and failing to break the curse. Worth flagging one wrinkle before this settles all the way toward "ancient, mythic": if the cursed line ages the way an actual dog does, several generations of descent could still fit inside a shorter absolute span than the same count would take for the kinfolk-shaped Shunka. Doesn't decide it. Just means "several generations" and "a long time ago" aren't automatically the same claim here.
 
-**Whether the Tithebound still exist.** Left open — a scattered, dying people who never found new ground is one honest continuation of their own origin, but not committed to.
-
 ## Geography
 
 Pat is considering a landmass to the north-northwest of the mapped continent as Shunka homeland. Currently open space — `world/geography-overview.md` names Glasslight Reach as the northernmost landmark on record, nothing further northwest is claimed yet. Tentative, not committed.
@@ -46,6 +40,7 @@ Pat is considering a landmass to the north-northwest of the mapped continent as 
 
 - `experimental/pat.md` — the character this belongs to, including Wild Magic Summoning and his backstory
 - `experimental/passives.md` — STRONGJAW
+- `experimental/the-tithebound.md` — who they are as a people: appearance, ecosystem, belief, survivors
 - `world/geography-overview.md` — the mapped continent, for where this would sit
 - `world/creation-myth-the-three-cuts.md` — the Second Cut, Price, what the Tithebound inverted
 - `rules/character-creation.md` — Declaring a Price, the ordinary (consensual) version
