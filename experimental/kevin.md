@@ -18,7 +18,7 @@ A combat chef — and combat bartender, really. Raised in a temple — which one
 
 Chronically shirked his actual studies and rituals to cook instead — and to experiment with gunpowder specifically, which is where his signature tool comes from.
 
-**Crafting is a real part of his identity, not just flavor — he's partially an artificer, just working through food.** Two lines of it so far: the incendiary oranges (probably made, not just carried — a downtime activity), and energy-drink-inspired beverages for the whole party. Concrete example given for the beverages: the easy/basic ones grant **Quick** or a small **Initiative Shift** (`rules/card-glossary.md`) — real, already-established keywords, not new ones invented for this. Stronger recipes presumably exist above that tier, not specified yet. This points toward wanting some kind of crafting/downtime system that doesn't fully exist in the rules yet (nothing in `rules/character-creation.md` or `rules/resolution.md` currently covers making consumables) — flagged, not built, since that's a real rules gap bigger than just Kevin.
+**Crafting is a real part of his identity, not just flavor — he's partially an artificer, just working through food.** Two lines of it so far: the incendiary oranges (probably made, not just carried — a downtime activity), and energy-drink-inspired beverages for the whole party. Concrete example given for the beverages: the easy/basic ones grant **Quick** or a small **Initiative Shift** (`rules/card-glossary.md`) — real, already-established keywords, not new ones invented for this. Stronger recipes presumably exist above that tier, not specified yet. The general rules gap this was flagging is closed — `rules/items.md`, Crafting — table talk decides feasibility and result, checked against the consumable pricing scale if a number's wanted; what's still open is just Kevin's own specifics (below).
 
 **What he can make is gated by what he's actually got — ingredients, not a free list.** This is why `places/capital/gilded-tusk.md`'s Senshi and his whole Naturalist Collection menu exist: Drew built that connection in ahead of Kevin's concept existing, specifically for this. Full ingredient list, including Sapphire Ant Seasoning Crystals (already real, already Blue-shimmer-coded, sold at Senshi's counter) and a proposed new static-charge hedgehog for an electric seasoning: `experimental/kevin-ingredients.md`.
 
@@ -37,7 +37,7 @@ Chronically shirked his actual studies and rituals to cook instead — and to ex
 - Skills, Passives — a Cooking or Brewing-type Skill would fit the crafting angle naturally, but that's a guess, not something either Drew or Kevin has said
 - Price
 - Starting deck (`rules/character-creation.md`, Starting Deck)
-- What a crafting/downtime system for the beverages and oranges actually looks like mechanically
+- The specific beverage and orange recipes above the basic tier, worked out at the table as he actually makes them (`rules/items.md`, Crafting)
 - Everything about who he is outside "shirked his studies to cook"
 
 ## Related Documents

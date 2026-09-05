@@ -15,11 +15,13 @@ What actually loads into the pepper grinder, and what goes into the beverages. T
 ## Open questions
 
 - Does firing a seasoning work like choosing a card's color at the point of loading, the way the color-mirror mechanics elsewhere already require a locked choice before resolution? Or is it looser than that?
-- How does he actually acquire rarer ingredients — bought (like the Sapphire Ant Crystals), hunted himself, commissioned the way Senshi commissions the party for specimens?
-- Whether "what he can make" should be tracked as a real inventory (specific ingredients in hand) or more abstractly (recipes known, ingredients assumed available if plausible).
+- How does he actually acquire rarer ingredients — bought (like the Sapphire Ant Crystals), hunted himself, commissioned the way Senshi commissions the party for specimens? (All three are legal under the general rule now — `rules/items.md`, Crafting — this is just which ones Kevin actually uses.)
+
+Resolved, generally: `rules/items.md`'s Crafting rule settles "real inventory, not abstract recipes" for everyone, Kevin included — what he can make is gated by what he's actually got, same as any other crafter.
 
 ## Related Documents
 
 - `experimental/kevin.md` — the character this belongs to
+- `rules/items.md` — Crafting, the general rule this all runs on
 - `places/capital/gilded-tusk.md` — Senshi, the Naturalist Collection, Sapphire Ant Seasoning Crystals
 - `bestiary/sapphire-ant.md`, `bestiary/gene-thief-tardigrade.md` — existing ingredient-creatures with real mechanical precedent
