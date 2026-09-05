@@ -2,7 +2,7 @@
 
 A character in Tales Untold is defined by three stats, a deck of nine cards, and what they carry. Everything else is fiction built on top of those foundations.
 
-Once your character exists, `rules/player-guide.md` covers how combat and exploration actually work at the table.
+Once your character exists, `rules/combat.md` covers how a fight actually works, and `rules/resolution.md` covers checks, saves, and perception outside of one.
 
 ---
 
@@ -56,7 +56,15 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Carried items** (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.
 
-**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a coat, a set of tools. None of it has stats and none of it has a gold value; it grants no bonus, fills no slot, and can't be sold. It is fiction, and it is also genuinely useful: what a character happens to be carrying is a standing answer to noncombat problems (a sword digs; a bow puts out a light across a room). See `rules/player-guide.md`, *What You Showed Up With*.
+**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
+
+**It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
+
+- A sword can dig. It can pry, wedge a door, cut a rope at arm's length, and reach something you'd rather not reach with your hand.
+- A bow can shoot out a light across a room you don't want to cross.
+- A heavy coat is a rope, a sack, a way to carry something too hot to hold, or the reason the cold doesn't get a check out of you.
+
+So choose it as fiction, then use it as leverage. The character who thought about what they brought will find more doors open than the one who wrote "sword" and stopped thinking about it. That is the whole design: no numbers on it, real consequences from it.
 
 See `rules/equipment.md` for the Weapon/Armor tier system and how to design new equipment, and `rules/items.md` for the full catalog of items already in the world.
 
@@ -155,7 +163,7 @@ Each Passive:
 
 Once concealment is resolved, a Passive plays exactly like any other card: `rules/combat.md`, Attack Resolution.
 
-Gaining a Passive beyond your starting two: `rules/player-guide.md`, Promotion.
+Gaining a Passive beyond your starting two: see Promotion, under Advancement, below.
 
 ---
 
@@ -177,7 +185,7 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-Advancement is the Oracle ritual, run by each player at every session's end (`places/island-in-a-ship.md`):
+At the close of every session, each player meets the Oracle alone — the ritual run per player at the table (`places/island-in-a-ship.md`), in three frames:
 
 1. **Name** — the Oracle asks one question. The player answers.
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
@@ -185,7 +193,7 @@ Advancement is the Oracle ritual, run by each player at every session's end (`pl
    The Oracle is permitted to remember what it has already shown.
 3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
-This is the default rhythm of growth.
+Growth is never handed over whole. This is the default rhythm of it.
 
 The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
 
@@ -193,6 +201,18 @@ The deck begins at 9 cards. There is no maximum — a deck that has survived lon
 Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
 
 These moments should feel earned, not scheduled.
+
+### Promotion
+
+A card played enough, meaningfully, can become a Passive beyond your starting two — the Oracle's own way of recognizing what a character has already shown itself to be.
+
+**Nothing converts.** A promoted Passive is authored fresh, in the fixed Passive shape (see Passives, above) — not a stat translation of the card that earned it. The old card's specific die, Effect, and Defense Effect don't survive; what survives is what the card meant. STRIKE promoted isn't a d4 version of STRIKE — it's a new Passive built around whatever STRIKE revealed about the character who kept playing it.
+
+**Not every card clears that bar.** A card with a real fictional throughline about identity — not just a good trick — is what Promotion is for. A card that's purely a mechanical maneuver, with nothing to say about who the character *is*, doesn't become a Passive just because it got played a lot; that kind of heavy use is better rewarded another way — a Bonus Card, a Distance pick that leans into it.
+
+The retiring card returns to the GM/Oracle pool, same as any card leaving a deck permanently.
+
+**Promotion isn't the only door.** A Passive can also be granted directly, GM's call, when the fiction earns it outright — a fusion, an awakening, a bond taking hold — with no card involved at all. That's the same authority that lets a character start with a Passive at creation with no play history behind it yet; Promotion is just the version of that authority that runs through a card already in play.
 
 ### Other Ways the Deck Changes
 

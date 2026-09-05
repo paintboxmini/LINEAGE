@@ -12,7 +12,7 @@ No nesting, no images, no real hyperlinks (backtick file paths render
 as inline code, not anchors).
 
 Usage:
-  python3 generate-rules-pdf.py                    → rules/player-guide.md
+  python3 generate-rules-pdf.py                    → packet (the-summons.md + character-creation.md)
   python3 generate-rules-pdf.py gm-guide.md         → any rules/*.md file
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
@@ -324,7 +324,7 @@ em {{
 PACKETS = {
     'packet': {
         'title': 'A Summons to Eclipseria',
-        'files': ['the-summons.md', 'player-guide.md'],
+        'files': ['the-summons.md', 'character-creation.md'],
     },
 }
 
@@ -342,7 +342,7 @@ def resolve_src(fname):
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    arg = sys.argv[1] if len(sys.argv) > 1 else 'player-guide.md'
+    arg = sys.argv[1] if len(sys.argv) > 1 else 'packet'
 
     if arg in PACKETS:
         cfg = PACKETS[arg]
@@ -359,7 +359,7 @@ if __name__ == '__main__':
         output = f'{arg}.html'
         srclabel = ' + '.join(cfg['files'])
     else:
-        # tolerate a bare stem ('player-guide') as well as 'player-guide.md'
+        # tolerate a bare stem ('gm-guide') as well as 'gm-guide.md'
         fname = arg if arg.endswith('.md') else f'{arg}.md'
         src = resolve_src(fname)
         if not os.path.exists(src):

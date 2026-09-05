@@ -230,62 +230,128 @@ em {
 <p>Say something back.</p>
 <hr>
 <p><em>What follows is the plain shape of all of this — the same rules, stated flatly, without me. Read it after. Keep it beside you. You will want the exact numbers eventually, and I have never been very good at those.</em></p>
-<h1 class="section-break">Player Guide — Combat &amp; Exploration</h1>
-<p>Your stats, then how combat and exploration actually work at the table. The rest of character creation — background, and how the starting deck gets drafted — lives in <code>rules/character-creation.md</code>.</p>
+<h1 class="section-break">Character Creation</h1>
+<p>A character in Tales Untold is defined by three stats, a deck of nine cards, and what they carry. Everything else is fiction built on top of those foundations.</p>
+<p>Once your character exists, <code>rules/combat.md</code> covers how a fight actually works, and <code>rules/resolution.md</code> covers checks, saves, and perception outside of one.</p>
 <hr>
-<h2>The Stats</h2>
-<p>All characters begin with Body 2 / Mind 2 / Soul 2, then distribute 3 more points among the three — no stat above 5 at character creation.</p>
+<h2>Stats</h2>
+<p>All characters begin with:</p>
 <table class="doc-table">
 <thead><tr>
 <th>Stat</th>
-<th>Colors your damage</th>
-<th>Also drives</th>
+<th>Starting Value</th>
 </tr></thead><tbody>
 <tr>
 <td>Body</td>
-<td>Red cards</td>
-<td>Max HP = (3 × Body) + Soul + Mind</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Mind</td>
-<td>Blue cards</td>
-<td>Hand size = Mind (minimum 2); also feeds Max HP</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Soul</td>
-<td>Green cards</td>
-<td>Initiative = 1d6 + Soul; also feeds Max HP</td>
+<td>2</td>
 </tr>
 </tbody></table>
-<p>A card&#x27;s color determines which stat powers its damage, no matter which stat is highest on your sheet. Stats also decide which mode you use for checks, saves, and perception (Part Two) — a spread built around Soul reads rooms and holds oaths, around Mind anticipates and controls, around Body endures, positions, and breaks things. Your stat spread is a statement about how your character solves problems.</p>
+<p>Distribute <strong>3 additional points</strong> among these stats. No single stat may exceed 5 at character creation.</p>
 <hr>
-<h1 class="section-break">Part One: Combat</h1>
-<p>Full mechanics — positioning, turn structure, attack resolution, damage, reading a card, status effects, collapse and death — live in <code>rules/combat.md</code>. Read that for how a fight actually works.</p>
-<p>How much you get to decide about what a card looks like when you play it: <code>rules/character-creation.md</code>, Magic Expression.</p>
+<h2>What Stats Do</h2>
+<p><strong>Body</strong></p>
+<ul><li>Determines damage for Red cards (Attack: Body + die)</li><li>Sets your maximum HP: <strong>(3 × Body) + Soul + Mind</strong> — Body&#x27;s own share is weighted 3× the other two</li></ul>
+<p><strong>Mind</strong></p>
+<ul><li>Determines damage for Blue cards (Attack: Mind + die)</li><li>Sets your hand size: <strong>Mind</strong> (minimum 2)</li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
+<p><strong>Soul</strong></p>
+<ul><li>Determines damage for Green cards (Attack: Soul + die)</li><li>Sets your initiative modifier: <strong>1d6 + Soul</strong></li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
+<p>Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.</p>
+<p>Your stat spread is a statement about how your character solves problems.</p>
 <hr>
-<h1 class="section-break">Part Two: Exploration</h1>
-<p>Checks, saves, perception, and Advantage/Disadvantage outside of combat: <code>rules/resolution.md</code>.</p>
-<hr>
-<h1 class="section-break">Between Fights</h1>
-<h2>Resting</h2>
-<p>Short and long rest durations, limits, and what they clear: <code>rules/character-creation.md</code>, Resting.</p>
 <h2>Equipment</h2>
-<p>Slots, what carries a permanent effect, and the full item catalog: <code>rules/character-creation.md</code> (Equipment), <code>rules/equipment.md</code>, and <code>rules/items.md</code>.</p>
-<h2>What You Showed Up With</h2>
-<p>You choose what your character wears and what they carry. A sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made.</p>
-<p><strong>None of it has stats. None of it has a gold value.</strong> Your starting garb and weapon are not equipment in the mechanical sense — they grant no bonus, occupy no slot, and cannot be sold. Nobody is going to ask you what your sword&#x27;s damage is. The cards are your damage. The gear is who you are.</p>
+<p>Every character has <strong>3 equipment slots:</strong></p>
+<ul><li>1 Weapon</li><li>1 Armor</li><li>1 Artifact</li></ul>
+<p>Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.</p>
+<p><strong>Artifacts</strong> are resonant objects closely aligned with a Seat&#x27;s domain (<code>world/resonant-items.md</code>). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you&#x27;re willing to be near.</p>
+<p><strong>Carried items</strong> (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.</p>
+<p><strong>Starting garb and weapon.</strong> Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can&#x27;t be sold. Nobody is going to ask you what your sword&#x27;s damage is — the cards are your damage, the gear is who you are.</p>
 <p><strong>It still matters, constantly.</strong> Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:</p>
 <ul><li>A sword can dig. It can pry, wedge a door, cut a rope at arm&#x27;s length, and reach something you&#x27;d rather not reach with your hand.</li><li>A bow can shoot out a light across a room you don&#x27;t want to cross.</li><li>A heavy coat is a rope, a sack, a way to carry something too hot to hold, or the reason the cold doesn&#x27;t get a check out of you.</li></ul>
 <p>So choose it as fiction, then use it as leverage. The character who thought about what they brought will find more doors open than the one who wrote &quot;sword&quot; and stopped thinking about it. That is the whole design: no numbers on it, real consequences from it.</p>
+<p>See <code>rules/equipment.md</code> for the Weapon/Armor tier system and how to design new equipment, and <code>rules/items.md</code> for the full catalog of items already in the world.</p>
 <hr>
-<h2>The Oracle (End of Session)</h2>
-<p>At the close of every session, each player meets the Oracle alone. She speaks in three frames — <strong>Name, Price, Distance</strong> — and you&#x27;ll hear the GM use those words at the table. She asks you something real and you answer it. She shows you a piece of what growth could look like, and you don&#x27;t get to keep it — not yet. Then she offers you a genuine choice among a few real options, and whatever you choose becomes a permanent part of your deck.</p>
-<p>Growth is never handed over whole. Where this actually happens, and what it&#x27;s like to sit across from her, is worth meeting for yourself rather than reading about in advance.</p>
+<h2>Starting Deck</h2>
+<p>Every character starts with <strong>9 cards</strong> drafted from the Oracle deck. <em>How</em> they get drafted is up to the table — what follows are two methods that work, not a required procedure. Any process that ends with nine cards chosen under real constraint is doing the job.</p>
+<p>### Method One — The Shared Offer</p>
+<ol><li>The GM presents <strong>3 random cards</strong> from the available pool.</li><li>Each player takes turns choosing <strong>1</strong> card.</li><li>Unchosen cards return to the pool.</li><li>Repeat, rotating pick order, until every player has <strong>9 cards</strong>.</li></ol>
+<p>Pick order alternates each round — if Player A picks first in round one, Player B picks first in round two. The pool is shared. Early picks shape what remains. A deck built alongside others is never identical to one built alone.</p>
+<p>### Method Two — The Passing Piles</p>
+<ol><li>Split the Oracle deck into <strong>piles as equal as they&#x27;ll divide</strong>, one per player.</li><li>Everyone looks at their own pile and takes <strong>1 card</strong> from it.</li><li>Pass the remaining pile <strong>to the left</strong>.</li><li>Repeat until every player has <strong>9 cards</strong>. Whatever is left in the piles returns to the Oracle.</li></ol>
+<p>This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.</p>
+<p><em>Each pile has to survive nine passes, so this needs an Oracle of at least <strong>9 cards per player</strong> — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.</em></p>
+<hr>
+<p>### Declaring a Price</p>
+<p><em>(Price, the Second Cut — <code>rules/people.md</code> for how Name, Price, and Distance apply to people generally.)</em></p>
+<p>At the close of character creation the player speaks one binding statement beginning with <em>I never</em>, <em>I must</em>, <em>I always</em>, <em>I cannot</em>, <em>Once I…</em>, or <em>Whenever…</em>.</p>
+<p><strong>The adherence is the Price — not the statement.</strong> Speaking the words costs nothing by itself; anyone can say a sentence. What&#x27;s actually paid is everything that follows: every choice the pledge constrains, every situation where keeping it costs something real. No card is revealed at this step — there&#x27;s nothing to reveal yet. The cost hasn&#x27;t started accruing; it hasn&#x27;t happened.</p>
+<p>From that moment the statement is true at the table. When it is tested, the fiction treats it as binding. The player is expected to lean into it; the GM is expected to present situations that test it — the Price is being paid in exactly those moments, not at the moment of speaking.</p>
+<p>Breaking the pledge incurs a higher cost — a curse, a forced card, a permanent mark, or another consequence the world exacts for the failure to keep what was named.</p>
+<hr>
+<p>Examples</p>
+<p>Once I have given my word before witnesses, I treat it as part of the structure of the world. Whenever I am offered a safer path that requires me to look away, I refuse it. I never abandon someone who has trusted me. I cannot refuse a direct plea made in true need. I must keep every promise I have spoken, no matter the cost. I always finish what I start, even after its purpose has eroded. I never leave a wound I have noticed unaddressed. I cannot accept help that would place me in debt. I must name what others refuse to name. I always press against any constraint or oath until I know whether it holds. I never look away from a reflection of my own past failure. Once I have claimed someone as mine, I cannot leave them behind. Whenever the edge of the Unheld is near, I move toward it. I must settle every debt I carry, whether owed by me or to me.</p>
+<hr>
+<h2>Hand Size</h2>
+<p>Your maximum hand size is <strong>Mind</strong>.</p>
+<p>At the start of your turn, draw until you reach your hand size. If your deck is empty when you would draw, shuffle your discard pile into a new deck first, then draw.</p>
+<hr>
+<h2>Skills</h2>
+<p>Pick <strong>two</strong> at creation — either a specific trained action (Lockpicking, Negotiation, Animal Handling, and the like) or a whole Perception mode (<code>rules/resolution.md</code>, Perception).</p>
+<p>A Skill is a literal tag on the sheet, not a card. It either plainly covers what you&#x27;re attempting or it doesn&#x27;t — no table judgment call the way a card&#x27;s name needs one. Mechanical effect: <code>rules/resolution.md</code>, Checks.</p>
+<hr>
+<h2>Passives</h2>
+<p>Pick <strong>two</strong> at creation. Where a Skill is learned, a Passive is innate — something about what the character <em>is</em>, not something they were taught: liquid metal that reshapes into a weapon, a jaw built for a dogkin&#x27;s bite. Not every character needs an exotic nature to have one, but the fiction has to actually support it — check it the same way a signature card gets checked, not granted by default.</p>
+<p>Each Passive:</p>
+<ul><li>Lives in its own zone, face up, separate from deck, hand, and discard — visible to the whole table at all times.</li><li>Can be played as either an attack or a block. Playing one still spends your Action for the turn, the same as playing a card from hand — what&#x27;s free is the resource, not the turn: no card is spent, and a Passive is never gone once used.</li><li>Has a fixed shape, forever, chosen once at creation (or at Promotion) and never re-chosen after: one printed colour (locks the stat, same as any card — Red–Body, Green–Soul, Blue–Mind), a Range (Melee, Ranged, or Both — the fiction decides, same as any card), and a die. <strong>d4 is the default.</strong> A Passive that commits to Melee or Ranged only, instead of Both, can carry <strong>d6</strong> instead — the same trade the rest of the corpus already makes between a restriction and a bigger die.</li><li>Carries no Effect and no Defense Effect. In their place: <strong>Applies When</strong>, the specific circumstance the fiction has to genuinely support for the Passive to be a legal play, this turn. A real gate, not a judgment call the way Advantage&#x27;s name-check is — the same weight Range already carries. If the moment doesn&#x27;t fit, the Passive isn&#x27;t a worse option than a card in hand, it isn&#x27;t an option at all. This is what keeps a card in hand the better choice whenever one actually fits, and keeps a card&#x27;s own name a real design constraint rather than something a free fallback can always route around.</li><li>No degradation, no growth on any of it — whatever shape it locks at creation is what it stays. A character&#x27;s Stat Increases are the only thing that ever changes what it does.</li><li>Grants Advantage on a check its printed name plausibly supports (<code>rules/resolution.md</code>, Advantage &amp; Disadvantage) — the same judgment call a discarded card gets, except a Passive is never spent.</li><li>Removes the effective floor a thin hand used to have. Hand and deck can both hit zero mid-fight; a Passive is always still there.</li></ul>
+<p><strong>Concealment.</strong> Because a Passive&#x27;s colour is fixed and printed, and the passives zone is visible to the whole table, whichever side is about to use one keeps that specific choice — which Passive, played as attack or block — concealed until simultaneous reveal, exactly like a hand card. A GM already running a screen for other reasons extends it to cover this; a table with no GM on one side (PvP) needs an equivalent for both.</p>
+<p>Once concealment is resolved, a Passive plays exactly like any other card: <code>rules/combat.md</code>, Attack Resolution.</p>
+<p>Gaining a Passive beyond your starting two: see Promotion, under Advancement, below.</p>
+<hr>
+<h2>The Oracle Deck</h2>
+<p>The Oracle is the living reward pool — the mechanism by which the world responds to what the party survives.</p>
+<p>The Oracle Deck contains:</p>
+<ul><li>All cards currently available as player rewards</li><li>Unchosen cards from character creation</li><li>Enemy signature cards recovered as loot</li></ul>
+<p>After each encounter, the GM may add new cards to the Oracle — ones fictionally relevant to what just happened, where the party is, or what they&#x27;re becoming.</p>
+<p>Players may also propose custom cards as the campaign develops. These enter the Oracle at GM discretion.</p>
+<hr>
+<h2>Advancement</h2>
+<p>### End of Session At the close of every session, each player meets the Oracle alone — the ritual run per player at the table (<code>places/island-in-a-ship.md</code>), in three frames:</p>
+<ol><li><strong>Name</strong> — the Oracle asks one question. The player answers.</li><li><strong>Price</strong> — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  </li></ol>
+<p>   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.      The Oracle is permitted to remember what it has already shown.</p>
+<ol><li><strong>Distance</strong> — the GM reveals <strong>3 cards</strong>; the player chooses <strong>1</strong> to add to their deck permanently.</li></ol>
+<p>Growth is never handed over whole. This is the default rhythm of it.</p>
+<p>The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.</p>
+<p>### Stat Increases Stat increases are rare and are not tied to sessions or card count. They happen after <strong>pivotal character development</strong> — a moment where something in the character genuinely and permanently changes. What qualifies is the GM&#x27;s call. When it happens, the player adds 1 point to a stat of their choice.</p>
+<p>These moments should feel earned, not scheduled.</p>
 <p>### Promotion</p>
 <p>A card played enough, meaningfully, can become a Passive beyond your starting two — the Oracle&#x27;s own way of recognizing what a character has already shown itself to be.</p>
-<p><strong>Nothing converts.</strong> A promoted Passive is authored fresh, in the fixed Passive shape (<code>rules/character-creation.md</code>, Passives) — not a stat translation of the card that earned it. The old card&#x27;s specific die, Effect, and Defense Effect don&#x27;t survive; what survives is what the card meant. STRIKE promoted isn&#x27;t a d4 version of STRIKE — it&#x27;s a new Passive built around whatever STRIKE revealed about the character who kept playing it.</p>
+<p><strong>Nothing converts.</strong> A promoted Passive is authored fresh, in the fixed Passive shape (see Passives, above) — not a stat translation of the card that earned it. The old card&#x27;s specific die, Effect, and Defense Effect don&#x27;t survive; what survives is what the card meant. STRIKE promoted isn&#x27;t a d4 version of STRIKE — it&#x27;s a new Passive built around whatever STRIKE revealed about the character who kept playing it.</p>
 <p><strong>Not every card clears that bar.</strong> A card with a real fictional throughline about identity — not just a good trick — is what Promotion is for. A card that&#x27;s purely a mechanical maneuver, with nothing to say about who the character <em>is</em>, doesn&#x27;t become a Passive just because it got played a lot; that kind of heavy use is better rewarded another way — a Bonus Card, a Distance pick that leans into it.</p>
 <p>The retiring card returns to the GM/Oracle pool, same as any card leaving a deck permanently.</p>
 <p><strong>Promotion isn&#x27;t the only door.</strong> A Passive can also be granted directly, GM&#x27;s call, when the fiction earns it outright — a fusion, an awakening, a bond taking hold — with no card involved at all. That&#x27;s the same authority that lets a character start with a Passive at creation with no play history behind it yet; Promotion is just the version of that authority that runs through a card already in play.</p>
+<p>### Other Ways the Deck Changes</p>
+<p><strong>Bonus Cards</strong> — Exceptional fiction, clever play, or the right action at the right moment may occasionally earn an extra card outside the normal end-of-session reward. Rare. Entirely at GM discretion.</p>
+<p><strong>Permanent Removal</strong> — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.</p>
+<p><strong>Curse &amp; Status Cards</strong> — Certain encounters, locations, or narrative consequences can force cards into a player&#x27;s deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.</p>
+<hr>
+<h2>Resting</h2>
+<p>### Short Rest <strong>Duration:</strong> 20 minutes   <strong>Limit:</strong> 3 per day   <strong>Effect:</strong> Recover <strong>2d6 + Body</strong> HP</p>
+<p>Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.</p>
+<p>### Long Rest <strong>Duration:</strong> 7½ hours   <strong>Effect:</strong> Full heal</p>
+<p>A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don&#x27;t.</p>
+<hr>
+<h2>Magic Expression</h2>
+<p>When you play a card, you choose what it looks like.</p>
+<p>The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn&#x27;t tell you is how your character gets there. That part is yours.</p>
+<p>A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.</p>
+<p>None of it is wrong as long as it fits your character. The cards are a frame. You&#x27;re the one making it mean something.</p>
+<p>You don&#x27;t have to explain the metaphysics. Neither does your character.</p>
 </body>
 </html>
