@@ -204,7 +204,7 @@ Every card lists a range requirement. If you don't meet it, you cannot play that
 
 Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
-Each side has its own Frontline and Backline. The two Frontlines face each other at the center of combat — that contact point is where Melee range exists. Each side's Backline is their own rear position, on the opposite end of the field from the enemy's Backline.
+Frontline isn't a fixed place on the field — it's wherever two sides have actually closed the distance and are fighting face to face. Whoever's caught up in that is Frontline, on both sides of it, for as long as it's happening there; that contact point is where Melee range exists. Backline is everyone else: still in the fight, just not closed with anyone yet. Nothing pins the Frontline to one spot — it's wherever the fighting actually is, and it moves when the fighting does.
 
 Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
 
@@ -223,7 +223,7 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 ### Rushdown
 
-Repositions a Backline **enemy** to the Frontline. Cannot target allies. The user must be in the Frontline. See the action table above.
+Closing the distance on a Backline **enemy** yourself — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See the action table above.
 
 ### Interact & Position
 
