@@ -8,7 +8,7 @@ Signature cards for the Void Runner. See `bestiary/void-runner.md`. Tagged as GL
 BLUE — MIND — GLASSLIGHT
 Attack: Mind + d6
 Effect: Push the defender to the Backline. They gain Rooted.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"The water is right there. It is always right there."*
 
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY — GLASSLIGHT
 Attack: Body + d8
 Effect: Gain Deadly. You gain Sealed.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Melee
 *"It was not built for them. It works anyway, mostly."*
 
@@ -28,6 +28,6 @@ Range: Melee
 GREEN — SOUL — GLASSLIGHT
 Attack: Soul + d4
 Effect: If the defender is Rooted, deal +3 damage.
-Defensive Bonus: Apply Initiative Shift -1 to the attacker.
+Defense Effect: Apply Initiative Shift -1 to the attacker.
 Range: Both
 *"They would take the crate off your body. They would rather not have to."*

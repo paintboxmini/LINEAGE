@@ -12,7 +12,7 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 RED — BODY — COIL
 Attack: Body + d8
 Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Both
 *"The corridor is not a disadvantage. The corridor is the weapon."*
 
@@ -22,7 +22,7 @@ Range: Both
 RED — BODY — COIL
 Attack: Body + d6
 Effect: Deal 2 damage to one other Frontline enemy of your choice.
-Defensive Bonus: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
 Range: Melee
 *"There is no careful swing from something this size."*
 
@@ -32,7 +32,7 @@ Range: Melee
 BLUE — MIND — COIL
 Attack: Mind + d4
 Effect: Scry 3 of Defender's deck.
-Defensive Bonus: Scry 2 of your own deck.
+Defense Effect: Scry 2 of your own deck.
 Range: Both
 *"You are moving through its memory."*
 
@@ -42,7 +42,7 @@ Range: Both
 BLUE — MIND — COIL
 Attack: Mind + d4
 Effect: If target is in Backline, apply Staggered and pull them to Frontline.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"Every exit it already knows."*
 
@@ -52,7 +52,7 @@ Range: Both
 BLUE — MIND — COIL
 Attack: Mind + d6
 Effect: Expose Green — if the selected card is Green, apply Rooted.
-Defensive Bonus: Scry 1.
+Defense Effect: Scry 1.
 Range: Both
 *"It has watched enough of them run to know the shape of it."*
 
@@ -62,7 +62,7 @@ Range: Both
 GREEN — SOUL — COIL
 Attack: Soul + d4
 Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Wound.
-Defensive Bonus: Gain Resist 1.
+Defense Effect: Gain Resist 1.
 Range: Melee
 *"The labyrinth does not end. Neither does it."*
 
@@ -72,7 +72,7 @@ Range: Melee
 GREEN — SOUL — COIL
 Attack: Soul + d4
 Effect: Apply Blind to target.
-Defensive Bonus: Attacker gains Blind.
+Defense Effect: Attacker gains Blind.
 Range: Both
 *"You cannot find the way out if you cannot see the walls."*
 
@@ -82,6 +82,6 @@ Range: Both
 GREEN — SOUL — COIL
 Attack: Soul + d6
 Effect: Defender gains Weak. If Defender is Rooted, also apply Staggered.
-Defensive Bonus: Attacker gains Staggered.
+Defense Effect: Attacker gains Staggered.
 Range: Melee
 *"The bodies at the junctions were not surprises. Not to it."*

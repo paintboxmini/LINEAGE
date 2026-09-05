@@ -8,7 +8,7 @@ Signature cards for the Stonecoil. Tagged as HOLLOW — obtainable via the Oracl
 RED — BODY — HOLLOW
 Attack: Body + d6
 Effect: Pull defender to Frontline. If defender is already in Frontline, deal +2 damage instead.
-Defensive Bonus: Attacker gains Rooted.
+Defense Effect: Attacker gains Rooted.
 Range: Both
 *"The grip comes before the bite."*
 
@@ -18,7 +18,7 @@ Range: Both
 BLUE — MIND — HOLLOW
 Attack: Mind + d4
 Effect: Scry 1 of Defender's deck. If that card matches the color they just played, apply Blind.
-Defensive Bonus: Scry 1 of your own deck.
+Defense Effect: Scry 1 of your own deck.
 Range: Both
 *"It has never seen anything. It doesn't need to."*
 
@@ -28,7 +28,7 @@ Range: Both
 GREEN — SOUL — HOLLOW
 Attack: Soul + d4
 Effect: Destroy 1 Wound in your hand or discard pile. Gain Evade.
-Defensive Bonus: Exile 1 card from your discard pile.
+Defense Effect: Exile 1 card from your discard pile.
 Range: Both
 *"What the stone leaves behind, the coil does not miss."*
 
@@ -38,7 +38,7 @@ Range: Both
 GREEN — SOUL — HOLLOW
 Attack: Soul + d6
 Effect: Apply Blind to defender.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Melee
 *"There is no light here. That is not an accident."*
 
@@ -48,7 +48,7 @@ Range: Melee
 RED — BODY — HOLLOW
 Attack: Body + d6
 Effect: If the target moved this turn, deal +2 damage.
-Defensive Bonus: Attacker gains Rooted.
+Defense Effect: Attacker gains Rooted.
 Range: Melee
 *"The unyielding clasp of stone restraint."*
 
@@ -58,7 +58,7 @@ Range: Melee
 BLUE — MIND — HOLLOW
 Attack: Mind + d4
 Effect: If the target changed positions since their last turn, deal +1 damage and Scry 1.
-Defensive Bonus: Scry 1 of your own deck.
+Defense Effect: Scry 1 of your own deck.
 Range: Both
 *"Tethered thoughts in a shifting world."*
 
@@ -77,6 +77,6 @@ RED — BODY — HOLLOW
 Attack: Body + d8
 Special Rule: Alpha only. 1 copy. Resolve RPS separately against each Frontline target.
 Effect: Attack all Frontline targets simultaneously. Targets hit are pushed to Backline.
-Defensive Bonus: All Frontline targets gain Rooted.
+Defense Effect: All Frontline targets gain Rooted.
 Range: Melee
 *"One motion. The floor decides the rest."*

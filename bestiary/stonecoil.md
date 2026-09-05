@@ -30,19 +30,19 @@ Full kit: `cards/stonecoil-hollow.md` (DRAG, VIBRATION LOCK, SHED SKIN, DARK COR
 **COIL LATCH** — RED — BODY
 - Attack: Body + d6
 - Effect: If the target moved this turn, deal +2 damage.
-- Defensive Bonus: Attacker gains Rooted.
+- Defense Effect: Attacker gains Rooted.
 - Range: Melee
 
 **VIBRATION LOCK** — BLUE — MIND
 - Attack: Mind + d4
 - Effect: Scry 1 of target's deck. If that card matches the color they just played, apply Blind.
-- Defensive Bonus: Scry 1 of your own deck.
+- Defense Effect: Scry 1 of your own deck.
 - Range: Both
 
 **PATIENCE OF STONE** — GREEN — SOUL *(core)*
 - Attack: Soul + d6
 - Effect: Anchored — at the start of each of your turns, heal 2 HP.
-- Defensive Bonus: Gain Deadly.
+- Defense Effect: Gain Deadly.
 - Range: Melee
 
 ---

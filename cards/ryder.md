@@ -10,7 +10,7 @@ Signature cards for Ryder. See `characters/ryder.md`.
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Heal 2 HP
-Defensive Bonus: Heal 2 HP
+Defense Effect: Heal 2 HP
 Range: Both
 **Passive** — While this card sits unplayed in your hand, the first time you would Collapse this combat, heal to full HP instead. Then Exile this card.
 *"The fire remembers how to begin again."*
@@ -21,7 +21,7 @@ Range: Both
 RED — BODY
 Attack: Body + d8
 Effect: If you are below half HP, deal +3 damage.
-Defensive Bonus: Heal 2 HP.
+Defense Effect: Heal 2 HP.
 Range: Ranged
 *"Pain feeds the fire. The fire feeds him back."*
 
@@ -31,6 +31,6 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Target ally gains Resist 1.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"Even embers remember how to shield what they love."*
