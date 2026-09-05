@@ -106,7 +106,7 @@ On your turn, you may take one Action
 
 ## Reading a Card
 
-Every card carries: **Name / Color + Stat / Attack (Stat + die) / Effect / Defensive Bonus / Range / Flavor text.**
+Every card carries: **Name / Color + Stat / Attack (Stat + die) / Effect / Defense Effect / Range / Flavor text.**
 
 The die tells you the card's philosophy:
 
@@ -118,7 +118,7 @@ The die tells you the card's philosophy:
 
 (d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)
 
-Some cards carry a **Special Rule** line instead of — or alongside — an Effect and Defensive Bonus. It overrides normal resolution exactly as printed.
+Some cards carry a **Special Rule** line instead of — or alongside — an Effect and a Defense Effect. It overrides normal resolution exactly as printed.
 
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
@@ -131,7 +131,7 @@ STRIKE
 RED — BODY
 Attack: Body + d10
 Effect: None
-Defensive Bonus: Deal 3 damage to attacker, unpreventable.
+Defense Effect: Deal 3 damage to attacker, unpreventable.
 Range: Melee
 "Sometimes the direct path is the wisest path."
 ```
@@ -140,7 +140,7 @@ Range: Melee
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
 - **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
-- **Defensive Bonus: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defensive Bonus on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
 - **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
 
@@ -167,8 +167,8 @@ Green (Soul)  beats  Blue  (Mind)
 ```
 
 **Attacker wins** → deal damage, then apply the card's Effect  
-**Defender wins** → no damage + defender triggers Defensive Bonus  
-**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defensive Bonus triggers. If the attacker's Effect cancels the Defensive Bonus, the Defensive Bonus does not trigger.
+**Defender wins** → no damage + defender triggers Defense Effect  
+**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 
@@ -255,7 +255,7 @@ When two or more effects would resolve at the same moment — several "start of 
 
 Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a **mutual result** — resolve it as a tie.
 
-**This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defensive Bonus are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defensive Bonus, always, on every tie. Nobody, including the attacker, chooses that order.
+**This does not apply to Attack Resolution.** An attacker's Effect and a defender's Defense Effect are not a controller's choice to order — Attack Resolution (above) already fixes it: Effect before Defense Effect, always, on every tie. Nobody, including the attacker, chooses that order.
 
 ---
 

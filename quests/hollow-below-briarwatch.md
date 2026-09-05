@@ -114,7 +114,7 @@ Run 2–3 Borrower Sentries — same creature, same cards, as the Western Proper
 BLUE — MIND — HOLLOW
 Attack: Mind + d6
 Effect: Move to Backline.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Melee
 *"The hole was always there. They just made it obvious."*
 
@@ -122,7 +122,7 @@ Range: Melee
 GREEN — SOUL — HOLLOW
 Attack: Soul + d6
 Effect: Scry 1. Another Borrower gains Evade until their next turn.
-Defensive Bonus: Attacker gains Staggered.
+Defense Effect: Attacker gains Staggered.
 Range: Both
 *"One signal. Everyone adjusts."*
 
@@ -130,7 +130,7 @@ Range: Both
 RED — BODY — HOLLOW
 Attack: Body + d6
 Effect: Target gains Blind.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Ranged
 *"Loose soil. Bad timing."*
 

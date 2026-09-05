@@ -8,7 +8,7 @@ Signature cards for the First Bundle. See `bestiary/the-first-bundle.md`. Tagged
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
 Effect: Apply Staggered. If the defender is already Staggered, apply Rooted and deal +3 damage.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"There is always one more."*
 
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY — BRIARWATCH
 Attack: Body + d8
 Effect: If the defender is in the Backline, deal +4 damage.
-Defensive Bonus: Pull the attacker to your position.
+Defense Effect: Pull the attacker to your position.
 Range: Both
 *"The posts were the arms. They were always the arms."*
 
@@ -28,6 +28,6 @@ Range: Both
 GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
 Effect: Heal 4 HP and gain Thorns 2.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Both
 *"You assumed it was padding."*

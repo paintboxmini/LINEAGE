@@ -6,7 +6,7 @@
 RED — BODY
 Attack: Body + d8
 Effect: Target makes DC 12 Body/Senses save or gains Staggered. Ends Flatten.
-Defensive Bonus: Gain Flatten.
+Defense Effect: Gain Flatten.
 Range: Melee
 *"It comes from below."*
 
@@ -16,7 +16,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d6
 Effect: Defender gains Rooted. Ends Flatten.
-Defensive Bonus: Gain Resist 1.
+Defense Effect: Gain Resist 1.
 Range: Melee
 *"Eight arms find purchase before the mind registers the hit."*
 
@@ -26,7 +26,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: If target is already Staggered, deal +d6 bonus damage. Ends Flatten.
-Defensive Bonus: Gain Flatten.
+Defense Effect: Gain Flatten.
 Range: Melee
 *"It does not relent."*
 
@@ -36,7 +36,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Weak on their next attack. Ends Flatten.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Melee
 *"The cloud is the point."*
 
@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: —
 Effect: Flatten immediately. Attacks against the Octopus have Weak until it uses Surge.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"It was never where you were looking."*
 
@@ -56,7 +56,7 @@ Range: Both
 BLUE — MIND
 Attack: Mind + d6
 Effect: After this card resolves, reposition freely to any position.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"It reads the water before it moves."*
 
@@ -66,7 +66,7 @@ Range: Both
 GREEN — SOUL
 Attack: —
 Effect: Gain Flatten. Gain Resist 1.
-Defensive Bonus: Gain Flatten.
+Defense Effect: Gain Flatten.
 Range: Both
 *"Pressure becomes protection."*
 
@@ -76,7 +76,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Evade. If the Octopus is Flattened, also gain Resist 1.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Melee
 *"The floor fights back."*
 
@@ -86,7 +86,7 @@ Range: Melee
 GREEN — SOUL
 Attack: —
 Effect: Reposition freely to any position. Immediately Flatten. Gain Evade.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"Gone before the ink clears."*
 

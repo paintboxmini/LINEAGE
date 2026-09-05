@@ -10,7 +10,7 @@ This file holds cards that don't carry a fixed color or stat on their face — c
 COLORLESS
 Attack: Mirrors the color and stat of whoever acted immediately before you + d6. If no one has acted yet, this stays genuinely colorless (no default) — just the flat d6, no stat bonus.
 Effect: Defender gains Blind.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"Whatever they were becomes what I am."*
 
@@ -18,9 +18,9 @@ Range: Both
 
 **FOLLOW-UP**
 COLORLESS
-Attack: Before RPS resolution, becomes a full copy of the card on top of the most recently discarded ally's discard pile — this card's own Attack/Effect/Defensive Bonus are entirely replaced by the copy. If no ally has discarded yet, this stays genuinely colorless (no default) and deals no damage of its own.
+Attack: Before RPS resolution, becomes a full copy of the card on top of the most recently discarded ally's discard pile — this card's own Attack/Effect/Defense Effect are entirely replaced by the copy. If no ally has discarded yet, this stays genuinely colorless (no default) and deals no damage of its own.
 Effect: Replaced by the copied card's Effect.
-Defensive Bonus: Replaced by the copied card's Defensive Bonus.
+Defense Effect: Replaced by the copied card's Defense Effect.
 Range: Both
 *"I only know how to follow."*
 
@@ -30,6 +30,6 @@ Range: Both
 COLORLESS
 Attack: Deals no damage on its own.
 Effect: Choose a card in your hand. Permanently replace it with a card drawn from the Oracle pool. This card is exiled until the end of combat. After its 3rd use, permanently destroy it instead.
-Defensive Bonus: Same as Effect.
+Defense Effect: Same as Effect.
 Range: Both
 *"Every shape I've worn, I've worn on purpose."*

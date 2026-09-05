@@ -37,7 +37,7 @@ The Tollbird fights from range when it can. Perched at Backline, it's hard to re
 
 When it does commit, IMPALING DIVE is the whole statement: full-force strike into the Frontline, bonus damage if it flew in from Backline, and — by the card's own text — **it cannot defend until its next turn.** That's not a script, that's the card. A Tollbird that just dove is genuinely open, whatever it does next.
 
-Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defensive bonus all get it out of the open. But it isn't required to, and a Tollbird that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
+Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defense effect all get it out of the open. But it isn't required to, and a Tollbird that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
 
 The lesson is the window. Players who swing at a perched Tollbird hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat right after a dive — take it apart. The Tollbird teaches the party to fight the *order*, not the target.
 

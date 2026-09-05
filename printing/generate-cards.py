@@ -201,8 +201,8 @@ def parse_cards(filepath):
                 card['special_rule'] = line[13:].strip()
             elif line.startswith('Effect:'):
                 card['effect'] = line[7:].strip()
-            elif line.startswith('Defensive Bonus:'):
-                card['defensive_bonus'] = line[16:].strip()
+            elif line.startswith('Defense Effect:'):
+                card['defense_effect'] = line[15:].strip()
             elif line.startswith('Range:'):
                 card['range'] = line[6:].strip()
             else:
@@ -313,8 +313,8 @@ def card_to_html(card):
     effect = card.get('effect', 'None')
     rows += f'<tr><td class="lbl">Effect</td><td>{h(effect)}</td></tr>'
 
-    db = card.get('defensive_bonus', 'None')
-    rows += f'<tr><td class="lbl">Defense</td><td>{h(db)}</td></tr>'
+    de = card.get('defense_effect', 'None')
+    rows += f'<tr><td class="lbl">Defense</td><td>{h(de)}</td></tr>'
 
     if card.get('range'):
         rows += f'<tr><td class="lbl">Range</td><td>{h(card["range"])}</td></tr>'
@@ -328,7 +328,7 @@ def card_to_html(card):
     # card at that size, so those step down instead of clipping. Better a
     # slightly smaller wordy card than a truncated one.
     weight = sum(len(str(card.get(k, ''))) for k in
-                 ('attack', 'special_rule', 'effect', 'defensive_bonus', 'range', 'flavor'))
+                 ('attack', 'special_rule', 'effect', 'defense_effect', 'range', 'flavor'))
     density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
 
     return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
