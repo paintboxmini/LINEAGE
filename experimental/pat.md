@@ -1,6 +1,6 @@
 # Pat
 
-*Player character — no character name chosen yet; filed under the player's name until there is one. Backstory and mechanics below came out of a long session between Drew and Pat and are considered settled, ready for Session 1 — the remaining gaps are genuinely just not decided yet, not oversights.*
+*Player character — no character name chosen yet; filed under the player's name until there is one. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
 
 ## Stats
 
@@ -58,6 +58,8 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 - Character name
 - Appearance beyond the Cane Corso reference, voice
+- Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
+- **Gear** — hasn't come up at all yet: starting garb/weapon (`rules/character-creation.md`, Equipment) and the 3 equipment slots (Weapon, Armor, Artifact)
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 - The open questions under Wild Magic Summoning, above
