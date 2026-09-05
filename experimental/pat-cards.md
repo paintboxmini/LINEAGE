@@ -55,17 +55,15 @@ Red — Body, d4, Both range. Second trigger for Wild Magic Summoning, and the a
 LET'S GO
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat.
+Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat. **This buff is tied to the spirit's survival — kill the totem, lose the buff.** A real reason for an enemy to target the spirit instead of Pat or an ally.
 Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 "Come get me. Every one of you."
 ```
 
-Three things worth flagging rather than deciding on my own:
+Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save.
 
-- **Whether the +2 damage buff survives the spirit dying.** The Ongoing Effect is written as something the spirit "carries," same phrasing as HERE BOY's — but Ongoing Effects normally sit in front of a *player* (`rules/combat.md`, Ongoing Effects), and an Object doesn't have a play area of its own. Two honest readings: the buff is tied to the spirit's survival (kill the totem, lose the buff — gives enemies a real reason to target it, which fits nicely with spirits being attackable at all), or the spirit is just the fictional trigger and the buff sits with Pat regardless once it's summoned. Real mechanical difference, not just flavor.
-- **Save type.** Written as a save against a DC of Soul + 10, but didn't specify which of the three Saves (`rules/resolution.md`) it actually is. Soul Save (fear, corruption, possession) is the closest existing category and ties in with this being ancestral-spirit magic — that's my inference, not stated outright.
-- **"Move toward you or Rushdown."** Rushdown, as written (`rules/combat.md`), repositions a Backline *enemy* to the Frontline — something *you* do *to* someone else, not an action a compelled creature takes on itself to close distance. Worth confirming whether this just means "close the distance by whatever means its position allows" in plain terms, or something more specific.
+**"Move toward you or Rushdown" turned out not to be a self-targeting question at all** — Rushdown was never "you do something to an enemy" in the first place. Its actual fiction: the Frontline isn't a fixed zone, it's wherever opposing sides are actually face to face — Rushdown is just closing that distance yourself, and the enemy you close it against becomes Frontline because that's now where the fight is happening. So a compelled creature that's Frontline and needs to reach a Backline Pat can Rushdown him directly, completely within the existing rule — Pat is a valid Backline enemy target from their side of the field. No carve-out needed. (Worth knowing: `rules/combat.md`'s own Positioning section still reads more like fixed opposing zones than this — not something to fix off one card, just flagging that the fiction described here is looser and more accurate than the current wording.)
 
 ---
 

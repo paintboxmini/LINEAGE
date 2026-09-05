@@ -39,7 +39,6 @@ Still open:
 - Whether HERE BOY and LET'S GO are the *only* two triggers.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
 - Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
-- Whether LET'S GO's team damage buff survives if the spirit carrying it is killed (`experimental/pat-cards.md`, Card 3).
 
 ## Passives
 
@@ -61,7 +60,7 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 - Appearance beyond the Cane Corso reference, voice
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide)
-- The open questions under Wild Magic Summoning, above, and the 3 flagged under Card 3 specifically
+- The open questions under Wild Magic Summoning, above
 
 ## Related Documents
 
