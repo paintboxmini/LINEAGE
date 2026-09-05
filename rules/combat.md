@@ -99,10 +99,12 @@ On your turn, you may take one Action
 | Play a Card | Make an attack using a card from your hand |
 | Move Position | Shift between Frontline and Backline. |
 | Use an Item | Activate an equipped or held item 
-| Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
+| Rushdown | Close the distance on a Backline enemy yourself — you move to them, not the reverse. You must already be in the Frontline. See Positioning → Rushdown. |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+---
 
 ## Reading a Card
 
@@ -173,6 +175,8 @@ Green (Soul)  beats  Blue  (Mind)
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 
 A standing bonus or penalty like "your next attack deals +X" is consumed by a miss.
+
+---
 
 ## Damage Pipeline
 
