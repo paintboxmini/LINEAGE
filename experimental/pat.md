@@ -40,17 +40,26 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 - **STRONGJAW** — `experimental/passives.md`. A Shunka's bite; Red, Melee only, d6.
 - **HACKLES RISE** — `experimental/passives.md`. Instinct for hostile intent; Green, Both, d4.
 
+## Skills
+
+- **Survival +2**
+- **Animal Handling +2**
+
+## Deck
+
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards**, drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table. Custom cards in progress: `experimental/pat-cards.md`.
+
 ## Not Yet Set
 
 - Character name
 - Appearance beyond the Cane Corso reference, voice
-- Skills (two, at creation)
 - Price
-- Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
+- The 2 remaining custom cards (1 of 3 written so far — `experimental/pat-cards.md`)
 - The open questions under Wild Magic Summoning, above
 
 ## Related Documents
 
 - `experimental/passives.md` — STRONGJAW, HACKLES RISE
+- `experimental/pat-cards.md` — his 3 custom deck cards
 - `experimental/the-shunka.md` — the Shunka people, the curse, the wild-magic line
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck
