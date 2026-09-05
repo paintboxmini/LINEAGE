@@ -28,10 +28,10 @@ Confirmed mechanic, a line on the character sheet rather than a Skill or Passive
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). Not yet specified, and flagged rather than invented:
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`experimental/the-shunka.md`). One real trigger is confirmed — HERE BOY (`experimental/pat-cards.md`). Still not yet specified, and flagged rather than invented:
 
-- What actually triggers a summon (an action, a card, a cost, how often).
-- What a summoned spirit does once it's out — attacks, stats, whether it acts on its own turn.
+- Whether HERE BOY is the *only* trigger or one of several.
+- What a summoned spirit does once it's out on its own turn — it does get a token on the initiative wheel (`rules/combat.md`, Initiative), but its actual attacks/stats aren't defined.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
 - Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
 
@@ -54,7 +54,7 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 - Character name
 - Appearance beyond the Cane Corso reference, voice
 - Price
-- The 2 remaining custom cards (1 of 3 written so far — `experimental/pat-cards.md`)
+- The 1 remaining custom card (2 of 3 written so far — `experimental/pat-cards.md`)
 - The open questions under Wild Magic Summoning, above
 
 ## Related Documents
