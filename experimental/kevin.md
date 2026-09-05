@@ -20,7 +20,7 @@ Chronically shirked his actual studies and rituals to cook instead — and to ex
 
 ## Gear
 
-- **The pepper grinder** — functions like a shotgun, and runs on real gunpowder, not anything mystical. Built, not manifested.
+- **The pepper grinder** — functions like a shotgun, but the propulsion is mechanical, not gunpowder: cranking the grinder's own handle is what builds the force, wound up like a spring or a flywheel rather than fired by combustion. Reads as "crank it, store the energy, let it go" — a real kitchen tool re-engineered by someone who was supposed to be studying instead. Whether cranking longer means a bigger shot, and what that costs in the moment, isn't worked out yet.
 - **A hot knife.**
 
 ## Not Yet Set
