@@ -32,7 +32,7 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
 
-**A real gap worth flagging:** "Object" as a formal game category doesn't currently exist anywhere in `rules/combat.md`. It's clearly something that existed before this repo's rebuild — an old internal note once referenced "the only Objects currently built" as an established category — but it didn't survive. Worth a real decision at some point: define "Object" narrowly, just for these spirits, or bring it back as a general category other future content (constructs, totems, wards) could also use. Not blocking anything about Pat specifically.
+**"Object" as a formal category doesn't exist in `rules/combat.md` yet** — it did before this repo's rebuild, but didn't survive. Deliberately not formalizing it off one example: Pat's spirits work fine defined narrowly as they are above. Worth writing as a real general rule once there are more Objects to generalize from, not before.
 
 Still open:
 
