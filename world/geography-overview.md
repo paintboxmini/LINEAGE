@@ -2,7 +2,7 @@
 
 Glasslight Reach, Turnroot Weald, and Vulture's Nest form a rough triangle — Glasslight Reach to the north, Turnroot Weald to the southwest, Vulture's Nest to the southeast. Eclipseria sits at the center of that triangle. Ashfall Wastes sits below Turnroot Weald; the Abyssal Ruins sit below Vulture's Nest.
 
-Major hubs are roughly five days of travel apart. The Capital is about 3 days from each. The Regency maintains the roads and halfway-inns between them.
+Major hubs are roughly eight days of travel apart. The Capital is about 5 days from each. The Regency maintains the roads and halfway-inns between them.
 
 ## The Kings Road
 
