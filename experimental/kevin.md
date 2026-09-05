@@ -20,13 +20,16 @@ Chronically shirked his actual studies and rituals to cook instead — and to ex
 
 ## Gear
 
-- **The pepper grinder** — functions like a shotgun, but the propulsion is mechanical, not gunpowder: cranking the grinder's own handle is what builds the force, wound up like a spring or a flywheel rather than fired by combustion. Reads as "crank it, store the energy, let it go" — a real kitchen tool re-engineered by someone who was supposed to be studying instead. Whether cranking longer means a bigger shot, and what that costs in the moment, isn't worked out yet.
+- **The pepper grinder** — functions like a shotgun. **Propulsion mechanism is unresolved, not settled toward either answer:** gunpowder is Kevin's own idea; the hand-cranked, stored-energy alternative (crank the handle, wind up a spring or flywheel, release it) is Drew's counter-pitch, still pending whether Kevin's convinced. Drew's actual reasoning, worth keeping attached to the question rather than losing it: handing a starting player open-ended gunpowder is easy to end up either restricting awkwardly (tracking a limited supply of a real-world commodity, which he finds less fun) or not restricting at all (too versatile, hard to balance) — a custom weapon with a built-in mechanical limitation sidesteps both. He's still fully open to Kevin having real explosives regardless of how this lands, provided they're explicitly labeled and properly restricted rather than an open-ended resource.
 - **A hot knife.**
+- **A bandolier of incendiary oranges** — a third piece of starting gear Kevin's asking for. Real mechanical item, not flavor-only like the other two probably are — Drew's flagged this as something that'll take actual design work and isn't ready yet.
 
 ## Not Yet Set
 
 - Character name
 - Which temple, or whether an isolated one gets invented fresh
+- The pepper grinder's actual propulsion (gunpowder vs. hand-cranked)
+- The bandolier of incendiary oranges — deferred, not just undecided
 - Skills, Passives
 - Price
 - Starting deck (`rules/character-creation.md`, Starting Deck)
