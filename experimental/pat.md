@@ -18,7 +18,7 @@ Shunka — dogkin. Working lore, still in flux: `experimental/the-shunka.md`. Pa
 
 ## Backstory
 
-Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school — what that actually looks like in Shunka society isn't worked out yet, flagged rather than guessed at. At 27, he manifested the summoning magic below and set out into the world — presumably close to where Session 1 picks him up, though that's an inference, not stated outright.
+Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school — what that actually looks like in Shunka society isn't worked out yet, flagged rather than guessed at. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened. He set out into the world from there, presumably close to where Session 1 picks him up, though that's an inference, not stated outright.
 
 **His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`experimental/the-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
@@ -56,12 +56,17 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 ## Not Yet Set
 
+Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now. Genuinely still needed before Session 1:
+
 - Character name
 - Appearance beyond the Cane Corso reference, voice
 - Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
 - **Gear** — hasn't come up at all yet: starting garb/weapon (`rules/character-creation.md`, Equipment) and the 3 equipment slots (Weapon, Armor, Artifact)
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide)
+
+Open, but possibly progression rather than a creation-time gap — not yet sorted which:
+
 - The open questions under Wild Magic Summoning, above
 
 ## Related Documents
