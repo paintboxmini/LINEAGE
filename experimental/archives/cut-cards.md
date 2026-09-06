@@ -30,6 +30,17 @@ Range: Ranged
 
 ---
 
+**READ**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: The defender must reveal their hand.
+Defense Effect: Name a color then choose a card in the attacker's hand. If colors match, discard it.
+Range: Ranged
+*"You tell the truth with your eyes."*
+*Cut: Removed from `cards/green-soul.md` — its Effect is Reveal Hand in plain English rather than the keyword's own name, which is why the original glossary-trim sweep missed it. Reveal Hand itself is retired outright, not relocated like Locked or Obscure, so this one has no replacement pending — unlike PREDICT and VOID above, which were only cut because Sealed no longer has a core-pool home. `places/the-silent-choir.md`'s "Ringing Silence" section named this card specifically as the reason its silent-hand-reveal house rule exists; that section still needs a look now that the card it was written around is gone.*
+
+---
+
 ## Core set — cut during Drew's full card review pass
 
 **SEED**
