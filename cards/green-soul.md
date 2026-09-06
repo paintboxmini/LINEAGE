@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain 1 Quick (their next Move Position or Rushdown doesn't spend their action)
+Defense Effect: Allies gain 1 Quick (their next Move Position, Rushdown included, doesn't spend their action)
 Range: Both
 *"Change the field, change the fight."*
 

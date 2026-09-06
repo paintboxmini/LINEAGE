@@ -92,17 +92,20 @@ When initiative is rolled, every combatant draws to their maximum hand size — 
 
 At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.
 
-On your turn, you may take one Action
+On your turn, you may take one Action, plus one free action if you have one available (see below).
 
 | Action | Description |
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
-| Move Position | Shift between Frontline and Backline. |
-| Use an Item | Activate an equipped or held item 
-| Rushdown | Close the distance on a Backline enemy yourself — you move to them, not the reverse. You must already be in the Frontline. See Positioning → Rushdown. |
+| Move Position | Shift between Frontline and Backline — or, if you're already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown. |
+| Use an Item | Activate an equipped or held item, or use a consumable |
 | Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+**Free Actions.** Once per turn, on top of your Action above, you get one free action — it costs nothing from your turn, so you still take your normal Action as well. Spending a banked Quick to Move Position (Rushdown included), activating a piece of your own gear (turning something on, and similar minor personal gestures — not the world around you; that's still Interact), and eating or drinking all count. Capped at one per turn regardless of how many you'd otherwise have available — a second banked Quick just waits for next turn.
+
+**Actually using a consumable or piece of gear for its mechanical effect is never free — that's Use an Item, above, and costs your Action.** Kevin throwing an incendiary orange is Use an Item: the throw's whole point is the effect it produces, not a minor gesture.
 
 ---
 
@@ -238,7 +241,7 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 ### Rushdown
 
-Closing the distance on a Backline **enemy** yourself — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See the action table above.
+The Move Position action's other shape, not a separate action of its own: closing the distance on a Backline **enemy** yourself, instead of shifting between Frontline and Backline — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See Move Position in the action table, above.
 
 ### Interact & Position
 

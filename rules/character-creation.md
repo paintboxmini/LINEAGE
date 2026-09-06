@@ -54,7 +54,7 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain (`world/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-**Carried items** (potions, tools, objects picked up in the field) are used on your turn via the Use an Item action, or your Item Action, without occupying an equipment slot.
+**Carried items** (potions, tools, objects picked up in the field) don't occupy an equipment slot — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
 

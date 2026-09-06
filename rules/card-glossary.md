@@ -89,17 +89,17 @@ Armour is the system's general-purpose flat damage reduction: it shows up as a c
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(24) Rooted**
-Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
+Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Pull, a compelled Rushdown ("Rushdown them," below — the target closing distance because a card made them, not because they chose to), and similar effects that move you without your own choice — is unaffected. A voluntary Rushdown isn't: it's still your own Move Position action, same as any other, and Rooted blocks that.
 
 **Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted at the start of each of your turns for as long as you remain Anchored, full duration each time. Moving ends your own Anchored and stops further re-application; it does not strip a Rooted already in effect.
 
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
 **(4) Rushdown**
-Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
+Close the distance on an enemy — the same maneuver as the Move Position action's Rushdown (`rules/combat.md`, Turn Structure): whoever moves, moves themselves, nothing is teleported. Plain "Rushdown" on a card grants the user their own, for free, same requirement as the action (already Frontline). "Rushdown them"/"the target" compels an enemy to close the distance on you or a named ally instead. Cannot target allies.
 
 **(5) Quick**
-The next time you use the Move Position or Rushdown action, it doesn't spend your action for the turn — you still get to act normally that same turn. Holds until you actually use it on one of those two actions; gaining it doesn't start a clock, and it doesn't fade at the end of a turn the way most statuses do. Doesn't stack — already holding it, or gaining it again before spending it, doesn't do anything extra.
+A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
 **(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
