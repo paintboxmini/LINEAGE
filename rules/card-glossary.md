@@ -15,19 +15,13 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
 **(6) Counter Attack**
-Deal this card's Attack damage back to the attacker.
+Deal this card's Attack damage back to the attacker, works with effects like deadly.
 
 **(1) Debuff**
 Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward and Deflect can prevent.
 
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
-
-**(1) Obscure**
-Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
-
-**(4) Reveal Hand**
-At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue").
 
 **(1) Critical**
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
@@ -54,17 +48,8 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 
 **A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
 
-**(4) Expose [Color]**
-Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
-
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.
-
-**(2) Locked**
-A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
-
-**(7) Sealed**
-You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
 
 **(22) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
@@ -131,9 +116,6 @@ Prevent the next Debuff (above) applied to you. Triggers automatically the insta
 
 **(3) Immunity**
 The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.
-
-**(0) Future-Lock X**
-Reduces your effective hand size by X. Stacks additively into a single running total — the same shape as Armour and Thorns, never queued. **No floor at 2.** This is not a Mind loss (see Stat Change, below, which never drops hand size under 2) — Future-Lock is a direct hand-size reduction, the same mechanism CLIMB's own bonus uses, just negative, and it can take you to 0. At 0, you draw no cards and cannot act. Another combatant can clear it: spending their action removes 1 stack of Future-Lock from you. Not a Debuff — Ward and Deflect do not prevent it. Clears at the end of the combat it was active in; stacks earned outside combat carry into the next fight, or clear on a long rest if no fight comes first.
 
 ---
 
