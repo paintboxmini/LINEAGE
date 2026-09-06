@@ -4,6 +4,32 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut following the keyword-glossary trim
+
+Drew cut Obscure, Reveal Hand, Expose [Color], Locked, Sealed, and Future-Lock X from `rules/card-glossary.md` (2026-09-06). Every core-pool card built on one of those keywords moves here; creature and character decks keep theirs as printed — the cut is a glossary trim, not a retroactive rewrite of everything that ever used the term.
+
+**PREDICT**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Sealed
+Defense Effect: Attacker gains Sealed
+Range: Melee
+*"Tomorrow's victory begins with today's preparation."*
+*Cut: Removed from `cards/blue-mind.md` — built entirely on Sealed, cut from the glossary.*
+
+---
+
+**VOID**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Defender gains Sealed
+Defense Effect: Attacker discards 1 card at random
+Range: Ranged
+*"Even emptiness has its own terrible weight."*
+*Cut: Removed from `cards/green-soul.md` — same reason as PREDICT, above.*
+
+---
+
 ## Core set — cut during Drew's full card review pass
 
 **SEED**

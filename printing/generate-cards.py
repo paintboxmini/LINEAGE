@@ -119,10 +119,13 @@ SETS = {
             'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
             'EMERGENCY REPAIRS', 'STARING CONTEST',
-            # Blue (21) — ranged 12 / melee 6 / both 3
+            # Blue (20 of 21) — ranged 12 / melee 5 / both 3. PREDICT (melee)
+            # cut with the glossary's Sealed keyword, 2026-09-06 — see
+            # experimental/archives/cut-cards.md. No replacement chosen yet;
+            # Blue is a card short of the fixed 21 until one is.
             'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
             'LAST RESORT', 'MARKED', 'PROFILE', 'REFRACT', 'RETORT', 'STUDY',
-            'VEIL', 'ANTICIPATE', 'DEFLECT', 'PREDICT', 'HESITATE', 'TELL',
+            'VEIL', 'ANTICIPATE', 'DEFLECT', 'HESITATE', 'TELL',
             'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
             # Green (21) — both 12 / ranged 6 / melee 3
             # SETTLE renamed BRACE, DUST renamed SMOKESCREEN, 2026-08-26 —

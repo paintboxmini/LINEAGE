@@ -144,16 +144,6 @@ Range: Ranged
 
 ---
 
-**VOID**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Defender gains Sealed
-Defense Effect: Attacker discards 1 card at random
-Range: Ranged
-*"Even emptiness has its own terrible weight."*
-
----
-
 **TWIN STRIKE**
 GREEN — SOUL
 Attack: (Soul + d4) x 2
