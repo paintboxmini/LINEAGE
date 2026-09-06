@@ -125,11 +125,13 @@ SETS = {
             'VEIL', 'ANTICIPATE', 'DEFLECT', 'PREDICT', 'HESITATE', 'TELL',
             'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
             # Green (21) — both 12 / ranged 6 / melee 3
+            # SETTLE renamed BRACE, DUST renamed SMOKESCREEN, 2026-08-26 —
+            # see cards/green-soul.md.
             'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
-            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SETTLE',
+            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'BRACE',
             'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
             'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
-            'DUST', 'OPENING',
+            'SMOKESCREEN', 'OPENING',
         ],
     },
 }
