@@ -18,7 +18,7 @@ This file is meant to be printed and handed to players. State the rule, plainly,
 Deal this card's Attack damage back to the attacker, works with effects like deadly.
 
 **(1) Debuff**
-Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward and Deflect can prevent.
+Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward can prevent.
 
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
@@ -110,7 +110,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **Thorns stacks additively into a single value**, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.
 
 **(4) Unpreventable**
-Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, and reassignment (Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **(15) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.

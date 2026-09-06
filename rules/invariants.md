@@ -26,7 +26,7 @@ Not itself a list of invariants — a practical index for `combatsimulations/`: 
 | Intercept | who defends (ally substitutes) | next attack (team) |
 | Initiative Shift | turn order | immediate |
 | Resist | damage pipeline (reduction) | next hit |
-| Protect / Shared Burden | damage pipeline (reassignment) | next hit (team) |
+| Protect | damage pipeline (reassignment) | next hit (team) |
 | Evade | whether an attack connects | next attack (chance) |
 | Ledger Weight | card selection (post-reveal redo, attacker-on-defender only) | one reveal |
 
