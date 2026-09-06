@@ -127,19 +127,34 @@ class Wheel:
         return None
 
     def advance(self, actor):
-        """Move the marker past `actor` and re-anchor so the marker's slot is
-        index 0 again. Returns the token whose turn it now is, or None if it
-        holds a skip chip (the chip is spent either way).
+        """End `actor`'s turn and return whose turn it is now, or None if
+        that token held a skip chip — the chip is spent either way, and the
+        caller advances again passing the skipped token as `actor`.
 
-        The marker advances to the slot after wherever the acting token
-        ended up — a token that slid can carry the marker with it. See the
-        note in README.md on Example 3, the one worked case this does not
-        reproduce turn-for-turn.
+        The marker belongs to a *slot*, not to a combatant. So there are two
+        cases, and the difference between them is the whole rule:
+
+        - The acting token is still on the marker's slot, so that slot is
+          spent. The marker moves on one slot.
+        - Something else is on the marker's slot — the acting token was slid
+          away by a shift and another token slid in behind it. The marker has
+          not finished with its own slot, so the new occupant acts, and the
+          marker does not move.
+
+        `actor` is whoever last took a turn, including a token that took an
+        immediate extra turn off a bonus chip; that turn spends the slot the
+        same way an ordinary one does.
+
+        Reproduces the turn sequence of every worked case in
+        `rules/initiative-shift-examples.md`. The slots are kept rotated so
+        the marker is always index 0.
         """
-        n = len(self.slots)
-        nxt = (self.index(actor) + 1) % n
-        self.slots = self.slots[nxt:] + self.slots[:nxt]
-        up = self.slots[0]
+        if self.slots[0] != actor:
+            up = self.slots[0]
+        else:
+            self.slots = self.slots[1:] + self.slots[:1]
+            up = self.slots[0]
+
         if self.chips.get(up) == SKIP:
             del self.chips[up]
             return None

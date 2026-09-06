@@ -59,30 +59,27 @@ Not yet implemented: free actions (the engine gives one Action per turn),
 Anchored's start-of-turn triggers, Ongoing Effects, summoning mid-fight
 (`wheel.add_after` exists but nothing calls it), and multi-target Effects.
 
-## Known discrepancies
+## The marker rule
 
-Two places where `rules/initiative-shift-examples.md` cannot be satisfied in
-full. Both are flagged rather than papered over, because the examples file
-is the spec and a silent choice would hide a real question.
+Every worked case in `rules/initiative-shift-examples.md` passes, layout and
+turn sequence both. Getting there took one non-obvious rule, worth stating
+because it is easy to implement wrongly and the wrong version passes three
+of the five cases:
 
-**Example 5 contradicts Example 3.** Example 5 continues from Example 2's
-`b, d, c, a` with d holding a skip chip, and has b play Initiative Shift +1
-on d. It narrates the outcome as "no bonus, no skip." But d sits one slot
-off the marker, so +1 lands it exactly on the marker's own slot — which
-Example 3 defines as precisely the bonus-turn case. Both cannot be true.
-The engine follows Example 3, since that example states the rule and
-Example 5's stated purpose is the chip-clearing behaviour rather than the
-boundary. `test_wheel.py` asserts the chip clearing, which is what Example 5
-is actually demonstrating, and does not assert the "no bonus" narration.
+**The marker belongs to a slot, not to a combatant.** When a turn ends,
+if the acting token is still on the marker's slot then that slot is spent
+and the marker moves on. But if a shift slid the acting token away and
+another token slid in behind it, the marker has not finished with its own
+slot — the new occupant acts, and the marker does not move.
 
-**Example 3's turn sequence.** All four worked cases' resulting wheel
-layouts are reproduced exactly, and Examples 1, 2 and 4 reproduce their turn
-sequences exactly too. Example 3's does not: after d's bonus turn the
-example has a skipped immediately, then b, then c, whereas the engine
-advances the marker past the acting token's new slot and so reaches a's skip
-chip on the following lap. The three unambiguous cases pin the marker rule
-down; Example 3 needs a marker rule the other three contradict. Worth a
-ruling.
+That is the difference between Example 1 (a stays put, so the marker moves
+on to c) and Example 2 (a is slid to the far slot, b slides in underneath,
+and b acts). A bonus turn spends the marker's slot exactly as an ordinary
+turn does, which is what makes Example 3 come out right.
+
+Example 5 was corrected in the source file on 2026-09-06 as part of this
+rebuild: it previously read "no bonus, no skip" on geometry identical to
+Example 3's bonus case. Example 3 governs, per Drew.
 
 ## Extending it
 

@@ -101,19 +101,28 @@ def run(party, foes, wheel, log, rng, max_rounds=40):
             log(f'\n--- {current.name}\'s turn ---')
             take_turn(current, current._agent, enemies, allies, wheel, log, rng)
 
-        actor = current if current is not None else wheel.order()[0]
-
+        # A bonus turn is taken immediately, and spends the marker's slot
+        # the same way an ordinary turn does — so the taker becomes the
+        # actor the next advance is measured from.
         bonus = wheel.take_bonus()
         if bonus is not None:
             log(f'{bonus.name} takes an immediate extra turn.')
             current = bonus
             continue
 
-        current = wheel.advance(actor)
-        if current is None:
-            log('(a turn is skipped)')
-            current = wheel.order()[0]
-            current = wheel.advance(current) or current
+        nxt = wheel.advance(current)
+        while nxt is None:
+            skipped = wheel.order()[0]
+            log(f"{skipped.name}'s turn is skipped.")
+            nxt = wheel.advance(skipped)
+        current = nxt
+
+        # "A combatant who leaves the fight entirely removes their slot, and
+        # the wheel closes around it." The marker sits on `current`, so
+        # pruning anyone else never moves it.
+        for c in wheel.order():
+            if c.dead and c is not current:
+                wheel.remove(c)
 
     log('\nRound cap reached — calling it a draw.')
     return 'draw'

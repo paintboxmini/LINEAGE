@@ -54,6 +54,12 @@ def ex3():
     assert w.chips == {'d': BONUS, 'a': SKIP}, w.chips
     assert w.take_bonus() == 'd'           # immediate extra turn
     assert w.take_bonus() is None
+    # a's turn ends -> d goes next (bonus) -> a is skipped -> b -> c.
+    # d's bonus turn spends the marker's slot, so d is the actor here.
+    assert w.advance('d') is None          # a, skipped in compensation
+    assert w.chips == {}
+    assert w.advance('a') == 'b'
+    assert w.advance('b') == 'c'
 
 
 def ex4():
@@ -74,24 +80,22 @@ def ex5():
     """Continuing from Example 2 (b, d, c, a; d holds a skip chip): during
     b's turn, b plays Initiative Shift +1 on d.
 
-    What this example is demonstrating is the chip rule — "a fresh shift on
-    a chip-holding token cancels whatever was pending, rather than stacking
-    or compounding it" — so that is what is asserted here: d's pending SKIP
-    does not survive, and does not carry its unresolved math forward.
-
-    The example also narrates the outcome as "no bonus, no skip." That part
-    is NOT asserted, because it conflicts with Example 3: d sits one slot
-    off the marker, so a +1 lands it exactly on the marker's own slot, which
-    Example 3 defines as the bonus-turn case. Both cannot hold. See
-    README.md, Known discrepancies.
+    The pending chip is cancelled, and the fresh shift then resolves under
+    whatever case it actually lands in — which here is Example 3's, since d
+    sits one slot off the marker. Result: d, b, c, a, bonus on d, skip on b.
     """
     w = Wheel(['a', 'b', 'c', 'd'])
     w.shift('d', -2)
     assert w.chips == {'d': SKIP}
     assert w.advance('a') == 'b'           # b is acting now
     w.shift('d', +1)
-    assert w.chips.get('d') != SKIP, w.chips
-    assert 'd' in w.order()
+    assert w.order() == ['d', 'b', 'c', 'a'], w.order()
+    assert w.chips == {'d': BONUS, 'b': SKIP}, w.chips
+    # b's turn ends -> d (bonus) -> b skipped -> c -> a.
+    assert w.take_bonus() == 'd'
+    assert w.advance('d') is None          # b, skipped in compensation
+    assert w.advance('b') == 'c'
+    assert w.advance('c') == 'a'
 
 
 def three_on_the_wheel():
