@@ -39,6 +39,5 @@ Resonant Places pass through the same three-stage structure a Resonant Person or
 - `world/resonant-people.md` — the living version of the same alignment
 - `world/resonant-items.md` — the object version of the same alignment
 - `world/seats.md` — the domains these might align to, and their bearers
-- `rules/places.md` — Name, Price, and Distance applied to places, mechanically
 - `places/glasslight-reach.md`
 - `places/turnroot-weald.md`

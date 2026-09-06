@@ -136,7 +136,7 @@ Artifacts don't run on the tier budget above — they're a different kind of obj
 
 That's a formula's absence, not a sale's — Brother Alden does put a number on the two he carries (`items/capital-items.md`: the Quiet Index, 400 gold + a true secret archived; Cord of the Held, 250 gold + a real vow), and the shape of those two prices is the tell that nothing's actually broken: gold alone never closes the sale, there's always a second, non-gold cost standing in for what the item really is. What Alden charges to hand one over and what the Artifact costs to actually invoke (the Price, below) are two separate accountings — the second one still isn't predefined, and still emerges at the table the same as ever.
 
-**Name comes first**, the same four parts as a person or a place (`rules/people.md`, `rules/places.md`) — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
+**Name comes first**, the same four parts as a person or a place — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
 
 - **What it is.** The essential nature or function underneath the specifics — "a sword" isn't Named yet at this stage, just categorized.
 - **An actual name.** The Lightning Loop, not "a ring." An Artifact earns its Name the way anything does: specificity, not a formula.
