@@ -321,10 +321,17 @@ em {{
 
 # Named multi-document builds. `packet` is the thing that actually goes out
 # to players: the Oracle's summons, then the plain mechanical guide behind it.
+# `play-reference` is the other half — what stays on the table during a
+# session rather than being read once at the start. Each file's own `# ` header
+# starts a fresh page, so the three sections stay physically separable.
 PACKETS = {
     'packet': {
         'title': 'A Summons to Eclipseria',
         'files': ['the-summons.md', 'character-creation.md'],
+    },
+    'play-reference': {
+        'title': 'Play Reference',
+        'files': ['combat.md', 'resolution.md', 'card-glossary.md'],
     },
 }
 
