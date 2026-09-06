@@ -124,6 +124,16 @@ Range: Ranged
 
 ---
 
+**WAIT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Defense Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Range: Both
+*"The beat after theirs is the one that lands."*
+
+---
+
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4

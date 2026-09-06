@@ -99,7 +99,7 @@ On your turn, you may take one Action, plus one free action if you have one avai
 | Play a Card | Make an attack using a card from your hand |
 | Move Position | Shift between Frontline and Backline — or, if you're already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown. |
 | Use an Item | Activate an equipped or held item, or use a consumable |
-| Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
+| Take Cover | Backline only; the fiction must justify it. Gain Cover Evade — a dodge roll that persists instead of being spent. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
@@ -198,7 +198,7 @@ The base roll is **Stat + die, with Deadly/Weak folded in** — a Deadly stack a
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; REFRACT sends an attack you're defending against at a target of your choice) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; REFRACT sends an attack you're defending against at a target of your choice) → **Immunity** (held by whoever is actually receiving the damage — reduces it to 0, leaving the rest of the pipeline nothing to act on) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
@@ -251,7 +251,11 @@ Position determines what's within reach. A character can only interact with obje
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
-While in cover, you gain **Evade**. Making an attack drops cover immediately.
+While in cover you have **Cover Evade** — its own thing, not the Evade keyword, though it rolls identically. The same 1d2 dodge at the same point in Attack Resolution (step 3), succeeding the same way, with the one difference that matters: **it is not a stack and is never spent.** Every attack against you rolls it, however many come, for as long as you hold cover.
+
+Cover ends the instant you attack. It also ends if you leave the Backline, or if the fiction takes the cover away — a wall comes down, the thing you were behind moves. Cover Evade goes with it.
+
+**Cover Evade and held Evade stacks are separate.** Only one dodge roll happens per attack, so if you have both, the cover roll is the one that happens and your stacks stay banked for after cover breaks. That is the point of paying an Action for cover rather than a card: the stacks you were holding survive it.
 
 ### Confined Spaces
 
