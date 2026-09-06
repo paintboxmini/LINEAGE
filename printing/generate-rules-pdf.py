@@ -68,6 +68,27 @@ def convert(md_text, title):
     while i < n:
         line = lines[i]
 
+        # Print-only exclusion. Content between these markers stays in the
+        # source file — where authoring reminders and count-drift notes earn
+        # their keep — but never reaches a printed packet. HTML comments, so
+        # they're invisible to every other Markdown renderer too.
+        if line.strip() == '<!-- print:skip-start -->':
+            i += 1
+            while i < n and lines[i].strip() != '<!-- print:skip-end -->':
+                i += 1
+            i += 1  # consume the end marker
+            continue
+        if line.strip() == '<!-- print:skip-end -->':  # stray end, ignore
+            i += 1
+            continue
+
+        # A glossary keyword header carries its card count — "**(6) Counter
+        # Attack**". That's maintenance data for whoever maintains the file,
+        # not a rule anyone plays with, so drop the count and keep the
+        # keyword. Anchored to the line start and to the bold run, which is
+        # the only place this form appears.
+        line = re.sub(r'^\*\*\(\d+\)\s+', '**', line)
+
         if line.strip() == '':
             i += 1
             continue
