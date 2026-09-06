@@ -198,7 +198,7 @@ The base roll is **Stat + die, with Deadly/Weak folded in** — a Deadly stack a
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**reassignment** (Protect — an ally takes the hit in your place, team play) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; REFRACT sends an attack you're defending against at a target of your choice) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
