@@ -17,8 +17,8 @@ Range: Both
 **THE HELD NOTE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose a card at random from the defender's hand. It becomes Locked.
-Defense Effect: Choose a card at random from the attacker's hand. It becomes Locked.
+Effect: Choose a card at random from the defender's hand. It becomes Locked — permanently, not just until combat ends; only something that explicitly removes it does.
+Defense Effect: Choose a card at random from the attacker's hand. Same Locked, same permanence.
 Range: Both
 *"Some notes are not played. They are withheld, on purpose, forever."*
 
