@@ -93,14 +93,14 @@ Regional consumables at capital markup, plus general-use capsules and draughts w
 Seat-adjacent objects and the rare Artifact. Formerly Temple of Knowledge; still keeps their archive for secrets paid in kind.
 
 ### Mile-Marker Ring
-*Price: ~60 gold — carried*
+*Price: ~60 gold — carried (`rules/equipment.md`, Pricing Reusable, Non-Slotted Items)*
 
 **Use:** Once per combat, your Move Position action may include a Rushdown.
 
 ---
 
 ### Ledger Weight
-*Price: ~45 gold — carried*
+*Price: ~45 gold — carried (`rules/equipment.md`, Pricing Reusable, Non-Slotted Items)*
 
 **Use:** Once per combat, when you attack and the reveal happens: the defender's just-revealed card is discarded, and they immediately choose a replacement from their remaining hand, face-up — no blind pick, since your card is already public. RPS re-resolves against the new card.
 

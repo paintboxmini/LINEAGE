@@ -17,9 +17,11 @@ Can be dried and ground into **Luminova Powder** (`items/turnroot-weald-items.md
 **CLAY BOWL TREMOR DETECTOR**
 *Consumable — Hollow clay bowl, Borrower-made*
 *Price: ~15 gold*
+Use: Set it down before an encounter begins. The party cannot be surprised (no ambush) for that encounter. Spent whether or not anything was actually lurking.
 
 ---
 
 **MOVING-STONE MAP**
 *Consumable — Clay-marked leather, Borrower cartography*
 *Price: ~30 gold*
+Use: Consult it before rolling initiative. For the next combat only, the party acts before all Stonecoils present, regardless of the initiative roll. Spent after that one combat.

@@ -94,6 +94,14 @@ Adjust from there for what actually happens at the table:
 
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
+## Pricing Reusable, Non-Slotted Items
+
+Some carried items are neither single-use nor a permanent equipment slot — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
+
+That's a third bucket, priced between the other two. Worth more than a consumable, since it's never used up. Worth far less than a Tier 1 permanent, since it isn't passive and isn't unlimited — once per combat is the ceiling, and only on a turn you're already spending the relevant action. **Price it at roughly 50 gold per point**, the same 1-point scale as the other two categories, just at its own rate. Mile-Marker Ring (60g) and Ledger Weight (45g) are the anchors here, the same role Luminova Leaves plays for consumables.
+
+Adjust the same way a consumable does: a real restriction beyond the baseline (attacker-only, once per combat, only on an action already being spent) is already priced into the base rate above — stack on more than that and the price should drop further, same as a consumable's drawback discount.
+
 ---
 
 ## More Fastball Ideas (Unnamed on Purpose)
