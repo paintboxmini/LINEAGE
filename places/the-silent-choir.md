@@ -56,4 +56,4 @@ Let the players actually sit in the quiet before anything happens. The silence i
 - `world/the-in-between.md` — Havens, the principle Fermata's note runs on
 - `places/island-in-a-ship.md` — the other deliberately unmappable place
 - `places/capital/underground-bazaar.md` — the Cartographer, one plausible way in
-- Locked and Sealed (Fermata's THE HELD NOTE and SEALED CHORD, `cards/fermata.md`) are no longer defined in `rules/card-glossary.md` — Locked has a place-specific redefinition at `places/the-coil.md` (a different location, same base idea); Sealed's disposition is still open. Reveal Hand, cited above, is retired outright.
+- Locked and Sealed (Fermata's THE HELD NOTE and SEALED CHORD, `cards/fermata.md`) are no longer `rules/card-glossary.md` keywords. Both are now defined in full on the cards themselves: Locked means that card cannot be played, and here it holds until the party clears the Silent Choir rather than clearing at the end of combat — the same shape `places/the-coil.md` uses for its own delve, scoped to this place instead. Sealed shuts off the target's equipped item passives until combat ends. Reveal Hand, cited above, is retired outright.

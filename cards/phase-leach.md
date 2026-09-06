@@ -27,7 +27,7 @@ Range: Melee
 **SIPHON**
 GREEN — SOUL — ABYSS
 Attack: Soul + d4
-Effect: Defender gains Sealed. Remove one Positive Status Effect from them and heal 2 HP.
+Effect: Defender gains Sealed — their equipped items' passives stop working until the end of combat. Remove one Positive Status Effect from them and heal 2 HP.
 Defense Effect: Gain Evade.
 Range: Both
 *"It has never once been interested in your body."*

@@ -75,4 +75,4 @@ See `places/the-silent-choir.md` for the full table-level rule (players communic
 - `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause
 - `world/seats.md`, `world/resonant-people.md` — Song and Silence, confirmed as this creature's Seat; which stage of Alignment is deliberately left open
-- `rules/card-glossary.md` — Locked, Sealed, Staggered, Vulnerable, Evade
+- `rules/card-glossary.md` — Staggered, Vulnerable, Evade. Locked and Sealed are not glossary keywords; both are defined in full on the cards that grant them (`cards/fermata.md`).
