@@ -297,9 +297,13 @@ You are on the ground. That is literal, and it stays true until you spend an act
 
 You are Down from the moment you Collapse until you stand. Healing above 0 HP ends the Collapse — it does not stand you up.
 
+**Down is not unconscious.** You are on the ground and finished as an attacker, but you are awake, aware, and still covering yourself.
+
 - You cannot attack.
-- You cannot defend, so any attack targeting you lands automatically.
 - You cannot change position.
+- **You defend normally.** Choose a card face down and resolve the exchange exactly as a standing combatant would, Defense Effect and all. Attack Resolution runs against you in full — including the attacker's Blind check — so an attack on a Down character can still miss.
+- **You keep your one free action each turn** (Free Actions, above). Eating, drinking, and activating your own gear all work from the ground. Moving does not: a banked Quick has no Move Position to spend itself on while you're Down, so it simply holds.
+- Your Action is unavailable while you're Down, with one exception — standing up, once you have the HP for it (Standing Up, below).
 - You may be healed back into combat.
 - Every **3 in-game hours** spent Collapsed, recover **1d4 HP**.
 
@@ -307,7 +311,7 @@ You are Down from the moment you Collapse until you stand. Healing above 0 HP en
 
 Once you are above 0 HP, **standing costs your action** on your turn. You are Down until you spend it, and you act normally from your next turn onward.
 
-A revived ally is not immediately back in the fight. They are alive, on the ground, and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.
+A revived ally is not immediately back on offense. They were covering themselves the whole time they were down, but they are still on the ground and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.
 
 ### If the Entire Party Collapses
 

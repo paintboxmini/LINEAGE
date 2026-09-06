@@ -141,7 +141,7 @@ At the start of your turn, draw until you reach your hand size. If your deck is 
 
 Pick **two** at creation — either a specific trained action (Lockpicking, Negotiation, Animal Handling, and the like) or a whole Perception mode (`rules/resolution.md`, Perception).
 
-A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Checks.
+A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Skills.
 
 ---
 
