@@ -99,7 +99,7 @@ Cannot voluntarily change position until the end of your next turn. Applied imme
 Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
 
 **(5) Quick**
-You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it. Gained on your own turn, it's usable that same turn and fades when the turn ends. Gained off-turn (a Defense Effect, typically), it's held until the end of your next turn. Fades either way whether spent or not — it never carries indefinitely.
+The next time you use the Move Position or Rushdown action, it doesn't spend your action for the turn — you still get to act normally that same turn. Holds until you actually use it on one of those two actions; gaining it doesn't start a clock, and it doesn't fade at the end of a turn the way most statuses do. Doesn't stack — already holding it, or gaining it again before spending it, doesn't do anything extra.
 
 **(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
