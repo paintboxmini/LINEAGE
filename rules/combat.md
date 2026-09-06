@@ -156,10 +156,13 @@ A Passive resolves exactly like a card from hand once concealment is settled —
 
 1. Attacker plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
-3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
+3. **Blind and Evade resolve now, before either card is revealed.** Both cards are already committed at this point — check in this order, and stop at the first one that fires:
+   - **Attacker's Blind:** roll 1d2 if the attacker holds it. On a 1, the attack misses outright — the defender auto-wins the resolution (step 5's Defender wins outcome, no reveal needed to know it). The attacker's card is discarded.
+   - **Defender's Evade:** roll 1d2 if the defender holds it. On a 1, the attack is dodged entirely — no damage, no Effect, no Defense Effect. The attacker's card is discarded.
+   - **Defender's Blind:** roll 1d2 if the defender holds it and is actually defending. On a 1, the block misses — this resolves exactly like no legal defense, below: the attacker wins automatically.
 
 **A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
-4. If the defender cannot or chooses not to defend, the attacker wins automatically.
+4. If the defender cannot or chooses not to defend — or their chosen defense missed to Blind, above — the attacker wins automatically.
 5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
 ```

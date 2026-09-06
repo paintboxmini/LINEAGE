@@ -36,10 +36,14 @@ The next time you roll attack damage, subtract an additional d6 from the result.
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
 **(19) Blind**
-50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
+50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses.
+
+**An attacker's miss** ends the exchange immediately — the defender auto-wins the resolution, exactly as if the RPS reveal had gone their way, and the attacker's card is discarded. **A defender's miss** (only relevant if they're actually defending) resolves exactly like having no legal defense: the attacker wins automatically.
+
+Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange can involve both.
 
 **(55) Evade**
-50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded, and its Effect does not trigger.
+50% chance to dodge an attack declared against you — checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution). Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded, and its Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
