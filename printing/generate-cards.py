@@ -177,11 +177,18 @@ def parse_cards(filepath):
 
     for block in blocks:
         block = block.strip()
-        if not block or block.startswith('#'):
+        if not block:
             continue
 
+        # Header LINES are skipped below, but the block is not: a card that
+        # follows a "## Creature" heading with no --- between them shares the
+        # heading's block, and skipping the whole block silently dropped it
+        # from the sheet. That is how four briarbundles cards went unprinted.
+        # A block with no name-and-colour is rejected at the end anyway, so
+        # the file's own title block still costs nothing.
         card = {}
-        lines = [l.strip() for l in block.split('\n') if l.strip()]
+        lines = [l.strip() for l in block.split('\n')
+                 if l.strip() and not l.strip().startswith('#')]
 
         for line in lines:
             m = re.match(r'^\*\*(.+?)\*\*$', line)

@@ -11,7 +11,9 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 <!-- print:skip-start -->
 *The number before each keyword is how many cards in `cards/` use it. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
-*Fully recounted 2026-09-06 across all 334 card blocks in `cards/*.md` — 331 colored plus the 3 colorless. This replaces the 2026-08-05 snapshot outright, along with the per-keyword drift it had accumulated and the running block-total corrections stacked on top of it; the old figure of 337 was over by 3 before that day's changes. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one — a block carrying both a name and a color.*
+*Fully recounted 2026-09-06 across all 338 card blocks in `cards/*.md` — 335 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
+
+*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT is 338. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("ignores Evade") don't count toward the keyword being referenced — those cards are counted under whatever they actually grant instead. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at. Recount rather than trust these once cards have been added or reworked.*
 <!-- print:skip-end -->
@@ -46,7 +48,7 @@ A specific benefit persists as long as you do not change positions, triggering a
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
-**(55) Evade**
+**(56) Evade**
 50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -61,7 +63,7 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(24) Initiative Shift X**
+**(26) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
@@ -77,7 +79,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(51) Resist**
+**(52) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -91,7 +93,7 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(8) Vulnerable**
+**(9) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(25) Rooted**
@@ -104,7 +106,7 @@ Cannot voluntarily change position until the end of your next turn. Applied imme
 **(5) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
-**(29) Scry X**
+**(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **(16) Staggered**

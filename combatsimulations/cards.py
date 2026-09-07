@@ -86,11 +86,15 @@ def parse_file(path):
     out = []
     for block in re.split(r'\n---\n', content):
         block = block.strip()
-        if not block or block.startswith('#'):
+        if not block:
             continue
 
+        # Header lines are skipped, the block is not — a card following a
+        # "## Creature" heading shares that heading's block. See the same
+        # note in printing/generate-cards.py.
         kw = {'source': os.path.basename(path)}
-        for line in (l.strip() for l in block.split('\n') if l.strip()):
+        for line in (l.strip() for l in block.split('\n')
+                     if l.strip() and not l.strip().startswith('#')):
             m = re.match(r'^\*\*(.+?)\*\*$', line)
             if m and 'name' not in kw:
                 kw['name'] = m.group(1)

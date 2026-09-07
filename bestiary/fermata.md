@@ -7,7 +7,7 @@
 **Mind 10 / Body 12 / Soul 20 — HP 78**
 **Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27, `CLAUDE.md`, Stat Blocks. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*
 
-**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, READ, DELAY, INSTINCT, BRISTLE *(green)*
+**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, PATIENCE, DELAY, INSTINCT, BRISTLE *(green)*
 
 **Bespoke — deck size does not equal total stats.** The formula baseline for Mind 10/Body 12/Soul 20 would be a 42-card deck; this one is fixed at 12, the same exception `bestiary/hullback.md` set the precedent for. Big numbers, small toolkit — Fermata has held the same handful of moves for longer than it has a name for how long that's been.
 
