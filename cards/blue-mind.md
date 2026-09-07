@@ -32,16 +32,6 @@ Range: Ranged
 
 ---
 
-**PREDICT**
-BLUE — MIND
-Attack: Mind + d6
-Effect: Defender gains Sealed
-Defense Effect: Attacker gains Sealed
-Range: Melee
-*"Tomorrow's victory begins with today's preparation."*
-
----
-
 **STUDY**
 BLUE — MIND
 Attack: Mind + d4

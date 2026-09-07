@@ -2,7 +2,7 @@
 
 This file holds cards that don't carry a fixed color or stat on their face — currently cards that resolve to one only at the reveal step, per their own text (the point of them, not an exception to the rule; because RPS and stat totals aren't known until reveal, they deliberately fall outside color-locked bans like Axiom that check at commitment time), and reserved as the future home for any status-effect-only card built without a color or stat of its own.
 
-**How colorless resolves against a defense:** a colorless card auto-loses to any card with a real color — it never wins or ties against one. It only auto-loses when actually challenged that way, though: against no defense at all, or a defender who can't defend (Collapsed, Staggered), a colorless card still wins fully, same as anything else would in that situation. Two colorless cards facing each other tie.
+**How colorless resolves against a defense:** a colorless card auto-loses to any card with a real color — it never wins or ties against one. It only auto-loses when actually challenged that way, though: against no defense at all, or a defender who can't defend (Staggered), a colorless card still wins fully, same as anything else would in that situation. Two colorless cards facing each other tie.
 
 ---
 

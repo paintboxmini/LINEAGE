@@ -119,17 +119,22 @@ SETS = {
             'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
             'EMERGENCY REPAIRS', 'STARING CONTEST',
-            # Blue (21) — ranged 12 / melee 6 / both 3
+            # Blue (20 of 21) — ranged 12 / melee 5 / both 3. PREDICT (melee)
+            # cut with the glossary's Sealed keyword, 2026-09-06 — see
+            # experimental/archives/cut-cards.md. No replacement chosen yet;
+            # Blue is a card short of the fixed 21 until one is.
             'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
             'LAST RESORT', 'MARKED', 'PROFILE', 'REFRACT', 'RETORT', 'STUDY',
-            'VEIL', 'ANTICIPATE', 'DEFLECT', 'PREDICT', 'HESITATE', 'TELL',
+            'VEIL', 'ANTICIPATE', 'DEFLECT', 'HESITATE', 'TELL',
             'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
             # Green (21) — both 12 / ranged 6 / melee 3
+            # SETTLE renamed BRACE, DUST renamed SMOKESCREEN, 2026-08-26 —
+            # see cards/green-soul.md.
             'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
-            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SETTLE',
+            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'BRACE',
             'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
             'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
-            'DUST', 'OPENING',
+            'SMOKESCREEN', 'OPENING',
         ],
     },
 }
@@ -172,11 +177,18 @@ def parse_cards(filepath):
 
     for block in blocks:
         block = block.strip()
-        if not block or block.startswith('#'):
+        if not block:
             continue
 
+        # Header LINES are skipped below, but the block is not: a card that
+        # follows a "## Creature" heading with no --- between them shares the
+        # heading's block, and skipping the whole block silently dropped it
+        # from the sheet. That is how four briarbundles cards went unprinted.
+        # A block with no name-and-colour is rejected at the end anyway, so
+        # the file's own title block still costs nothing.
         card = {}
-        lines = [l.strip() for l in block.split('\n') if l.strip()]
+        lines = [l.strip() for l in block.split('\n')
+                 if l.strip() and not l.strip().startswith('#')]
 
         for line in lines:
             m = re.match(r'^\*\*(.+?)\*\*$', line)

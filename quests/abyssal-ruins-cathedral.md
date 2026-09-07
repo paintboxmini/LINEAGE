@@ -55,6 +55,10 @@ This information is available through investigation. The crystal pulses in appar
 
 ## What It Pays
 
-This is a delve, and the ruins pay in what the ruins contain.
+This is a delve, and the ruins pay in what the ruins contain — a hoard, not a wage (`rules/equipment.md`, Pacing).
 
 The Gluttony Abomination's cathedral is a lair with centuries of offerings in it.
+
+**Treasure: 5d6 × 40 gold** (~700 gold average, range 200–1,200) — the accumulated offerings, split however the party agrees. For a four-person party that's roughly 175 gold each on average, in line with what the rest of this arc pays (`quests/war-engine.md`, ~160g/character at Tier 2) — a hair above, since nobody commissioned this one and the party has to dig it out of a Threat 17 boss's lair themselves rather than collect a fee.
+
+Beyond the coin: centuries of devotional objects, most too degraded or too specific to a dead faith to carry real value at market. A GM looking for a place to drop a piece of found gear (`rules/equipment.md`, Pricing Consumables — "Found gear is off this curve entirely") has an obvious, thematically loaded spot to put one.

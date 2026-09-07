@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain 1 Quick (move position without spending your action on your next turn)
+Defense Effect: Allies gain 1 Quick (their next Move Position, Rushdown included, doesn't spend their action)
 Range: Both
 *"Change the field, change the fight."*
 
@@ -124,6 +124,16 @@ Range: Ranged
 
 ---
 
+**WAIT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Defense Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Range: Both
+*"The beat after theirs is the one that lands."*
+
+---
+
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
@@ -141,16 +151,6 @@ Effect: Discard 1 to Stagger the defender
 Defense Effect: Discard 1 to Stagger the attacker
 Range: Ranged
 *"Balance does not divide — it multiplies."*
-
----
-
-**VOID**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Defender gains Sealed
-Defense Effect: Attacker discards 1 card at random
-Range: Ranged
-*"Even emptiness has its own terrible weight."*
 
 ---
 
@@ -221,16 +221,6 @@ Effect: Anchored — Target ally gains Deadly.
 Defense Effect: Anchored — Target ally gains Resist.
 Range: Both
 *"What I refuse to abandon, strengthens us all."*
-
----
-
-**READ**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: The defender must reveal their hand.
-Defense Effect: Name a color then choose a card in the attacker's hand. If colors match, discard it.
-Range: Ranged
-*"You tell the truth with your eyes."*
 
 ---
 

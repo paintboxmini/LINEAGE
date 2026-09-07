@@ -407,7 +407,7 @@ Range: Ranged
 RED — BODY
 Attack: Body + d8. If the defender moved since their last turn, +1d6.
 Effect: None.
-Defense Effect: If the attacker received a positive Initiative Shift or used Wait since their last turn, gain Resist.
+Defense Effect: If the attacker's initiative shifted at all since their last turn, either direction, gain Resist.
 Range: Ranged
 *"Moving is a decision. So is being wrong about it."*
 

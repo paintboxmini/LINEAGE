@@ -4,10 +4,10 @@
 
 **Cards:** `cards/fermata.md`
 
-**Mind 10 / Body 12 / Soul 20 — HP 66**
+**Mind 10 / Body 12 / Soul 20 — HP 78**
 **Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27, `CLAUDE.md`, Stat Blocks. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*
 
-**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, READ, DELAY, INSTINCT, BRISTLE *(green)*
+**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, PATIENCE, DELAY, INSTINCT, BRISTLE *(green)*
 
 **Bespoke — deck size does not equal total stats.** The formula baseline for Mind 10/Body 12/Soul 20 would be a 42-card deck; this one is fixed at 12, the same exception `bestiary/hullback.md` set the precedent for. Big numbers, small toolkit — Fermata has held the same handful of moves for longer than it has a name for how long that's been.
 
@@ -75,4 +75,4 @@ See `places/the-silent-choir.md` for the full table-level rule (players communic
 - `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause
 - `world/seats.md`, `world/resonant-people.md` — Song and Silence, confirmed as this creature's Seat; which stage of Alignment is deliberately left open
-- `rules/card-glossary.md` — Locked, Sealed, Staggered, Vulnerable, Evade
+- `rules/card-glossary.md` — Staggered, Vulnerable, Evade. Locked and Sealed are not glossary keywords; both are defined in full on the cards that grant them (`cards/fermata.md`).

@@ -18,11 +18,11 @@ This is the whole point of the room, and it is a real rule, not just a descripti
 
 **While inside the Choir, players may not speak aloud to communicate — in character or out of it.** Plans, warnings, "watch out," a joke to break the tension — none of it. Communication happens by gesture, by pointing, by a note passed hand to hand. This runs for the whole scene, not just combat, and it is the GM's job to actually hold the table to it — the rule works by being real, the same way the Session 0 ceremony works by actually slowing down (`places/island-in-a-ship.md`, Setting the Tone). A table that quietly ignores it has not run the room.
 
-**What this replaces mechanically:** any card that would require Reveal Hand (`rules/card-glossary.md` — "stating the color counts in hand aloud") instead means silently showing the hand, briefly, to whoever needs to see it. Same information, same cost, no exception carved into the keyword itself — just how it's performed here. Nothing about the card's actual text changes.
+**What this replaces mechanically:** Reveal Hand — stating the color counts in hand aloud — is retired; no current card uses it. This section is kept for whatever still might: a card that forces a hand reveal, wherever it comes from, means silently showing the hand here instead, briefly, to whoever needs to see it. Same information, same cost — just how it's performed in a room built around not speaking. Nothing about the card's actual text changes.
 
 **What it doesn't do:** stop players from thinking, planning silently, or acting on unspoken agreement. It only removes the sentence that would have made the plan easy. A party that has played together long enough to read each other without words will find this room asks less of them than a party that hasn't.
 
-**The real stakes:** READ (`cards/green-soul.md`) forces a hand reveal the normal way when played *by* someone in the room against Fermata — the irony is not an accident. Speaking here, or playing a card built to force someone else to, is the loudest thing a person can do in a place built entirely around not doing it.
+**The real stakes:** a card that forces someone else's hand into the open, played inside this room, is the loudest thing a person can do in a place built entirely around not doing it — the irony is the point, whatever card ends up doing the forcing.
 
 ---
 
@@ -56,4 +56,4 @@ Let the players actually sit in the quiet before anything happens. The silence i
 - `world/the-in-between.md` — Havens, the principle Fermata's note runs on
 - `places/island-in-a-ship.md` — the other deliberately unmappable place
 - `places/capital/underground-bazaar.md` — the Cartographer, one plausible way in
-- `rules/card-glossary.md` — Locked, Sealed, Reveal Hand
+- Locked and Sealed (Fermata's THE HELD NOTE and SEALED CHORD, `cards/fermata.md`) are no longer `rules/card-glossary.md` keywords. Both are now defined in full on the cards themselves: Locked means that card cannot be played, and here it holds until the party clears the Silent Choir rather than clearing at the end of combat — the same shape `places/the-coil.md` uses for its own delve, scoped to this place instead. Sealed shuts off the target's equipped item passives until combat ends. Reveal Hand, cited above, is retired outright.

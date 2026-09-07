@@ -118,10 +118,11 @@ Range: Both
 **FEINT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender must reveal their hand.
+Effect: Look at the defender's hand.
 Defense Effect: Attacker gains Blind.
 Range: Melee
 *"The sword goes where the eyes don't."*
+*Reworked 2026-09-06: was built on Reveal Hand, since retired. Fits the card better anyway — a feint reads the opponent's guard, it doesn't announce it to the room.*
 
 ---
 

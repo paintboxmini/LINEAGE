@@ -2,32 +2,32 @@
 
 Canonical definitions for all keywords and status cards used in Tales Untold. When a card uses a keyword, this is the ruling. Card text that contradicts this file should be treated as an error.
 
-This file is meant to be printed and handed to players. State the rule, plainly, and stop — no *why* it's shaped that way, no *how* the simulator happens to implement it. Most of the time that reasoning doesn't need a home at all; if it's a live design question worth remembering, it goes in `memory.md`, not here.
-
 **Special Rule** — some cards carry a Special Rule line instead of, or alongside, an Effect and a Defense Effect. It overrides normal resolution exactly as printed on that card.
 
 ---
 
 ## Keywords
 
-*The number before each keyword is how many cards in `cards/` use it — a snapshot as of 2026-08-05, not a live count. It'll drift as cards are added or reworked; recount rather than trust it once it's been a while. Recounted across all 340 card blocks in `cards/*.md` — 337 colored plus the 3 colorless (up from 240 at the 2026-07-28 snapshot, which predates the bestiary signature-card work; block total bumped 2026-08-06 for Wrackclaw and Hullback's six new cards, 2026-08-07 for Fermata's three, 2026-08-08 for the Flower Snake's six, the same day for the Kiwi Bird's four, and 2026-08-10 for STILL POINT). Counted mechanically: a keyword named in an Effect, Defense Effect, Special Rule, or Attack line, excluding conditional references ("if the defender is Rooted") and negations ("ignores Evade"). Per-keyword numbers still carry the 2026-08-05 snapshot's drift (see `unresolved-concerns.md`) — this update only kept the block total accurate, same discipline as the last time it drifted, plus the keywords each new batch of cards demonstrably touches (Fermata: Locked, Sealed, Vulnerable, Resist; Flower Snake: Evade, Weak, Vulnerable, Resist, Deadly, Rooted, Ward; Kiwi Bird: Evade, Resist; STILL POINT: Anchored, Scry, Ward).*
+<!-- print:skip-start -->
+*The number before each keyword is how many cards in `cards/` use it. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
+
+*Fully recounted 2026-09-06 across all 338 card blocks in `cards/*.md` — 335 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
+
+*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT is 338. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
+
+*A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("ignores Evade") don't count toward the keyword being referenced — those cards are counted under whatever they actually grant instead. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at. Recount rather than trust these once cards have been added or reworked.*
+<!-- print:skip-end -->
 
 **At the table — status-effect tokens.** A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn't need a separate physical token. The card *is* the token: set it face-up in front of whoever it's affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (`rules/combat.md`). Not just a bookkeeping convenience: the card is out of its owner's rotation the whole time it's serving as a token — it isn't in their discard pile, so it isn't coming back on a reshuffle either. That's a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.
 
 **(6) Counter Attack**
-Deal this card's Attack damage back to the attacker.
+Deal this card's Attack damage back to the attacker, works with effects like deadly.
 
-**(1) Debuff**
-Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward and Deflect can prevent.
+**(0) Debuff**
+Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward can prevent.
 
-**(5) Positive Status Effects**
+**(6) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
-
-**(1) Obscure**
-Enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
-
-**(4) Reveal Hand**
-At the table, this means stating the color counts in hand (e.g. "2 Red, 1 Blue").
 
 **(1) Critical**
 This attack's base damage (stat + die, including any Deadly/Weak already rolled into it) is doubled, calculated before any other bonus is added. Not a status anyone holds or carries between turns — each card that grants Critical states its own triggering condition in its own text.
@@ -41,32 +41,29 @@ The next time you roll attack damage, subtract an additional d6 from the result.
 **(13) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
-**(19) Blind**
-50% chance to miss. When an attacker with Blind attacks, roll 1d2 before any Evade check on the defender — after the attacker's card is played and committed, immediately before the defender selects a card to defend with. On a 1, the attack fails entirely; the attacker's card is discarded. Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks that can both apply to the same attack.
+**(20) Blind**
+50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
 
-**(55) Evade**
-50% chance to dodge the next attack declared against you, resolved before you select a card to defend with. Roll 1d2 — on a 1, the attack misses entirely; the attacker's card is discarded, and its Effect does not trigger.
+**An attacker's miss alone** ends the exchange in the defender's favor — the defender auto-wins the resolution, exactly as if the RPS reveal had gone their way, and the attacker's card is discarded. **A defender's miss alone** on their own block resolves exactly like having no legal defense: the attacker wins automatically. **Both missing in the same exchange** is neither of those — it's a Mutual Miss (`rules/combat.md`, Attack Resolution): the attack failed and the attempted block against it also failed, so nobody wins and no Effect or Defense Effect triggers. A defender's Evade succeeding overrides all of this — a clean dodge wins the exchange outright regardless of what either Blind roll says.
+
+Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
+
+**(56) Evade**
+50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
-**(8) Exile**
+**Cover Evade is not this keyword.** Taking cover grants a dodge that rolls the same way but persists instead of being spent, and it takes the place of your stacks while it lasts rather than adding to them (`rules/combat.md`, Positioning → Cover).
+
+**(7) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
 **A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
 
-**(4) Expose [Color]**
-Choose 1 card in the target's hand without looking. If the chosen card matches the exposed color, apply the effect printed after the Expose instruction. The target does not reveal their hand — selection is blind.
-
 **(3) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(2) Locked**
-A card afflicted with Locked cannot be played. Lasts until the end of combat unless the card states otherwise.
-
-**(7) Sealed**
-You cannot Use an Item, whether by Action or Item Action, and any passive effect from an item you have equipped or are holding stops working for the duration. Lasts until the end of your next turn unless the card states otherwise.
-
-**(22) Initiative Shift X**
+**(26) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
@@ -75,19 +72,19 @@ Initiative Shift always moves the token the full requested distance. If that mov
 
 **With exactly 3 combatants on the wheel, reduce X's magnitude by 1 (toward zero) before applying the shift.** A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.
 
-Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. A shift applies normally even to a token that already repositioned itself with Wait this combat. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.
+Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift's distance would carry the target past the point where it must act now — including a full lap back around to the marker's own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn't get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker's normal progression allows, the shift still moves the target's token and slides the wheel in full, but the target's turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.
 
 For worked cases covering all of the above, see `rules/initiative-shift-examples.md`.
 
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(51) Resist**
+**(52) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
 
-**(3) Armour X**
+**(4) Armour X**
 Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.
 
 Armour applies **before** Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker's Effect resolves normally, it simply has no damage to work with.
@@ -99,23 +96,20 @@ Armour is the system's general-purpose flat damage reduction: it shows up as a c
 **(9) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
-**(24) Rooted**
-Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Rushdown, Pull, and similar effects — is unaffected; Rooted only blocks your own Move Position action.
+**(25) Rooted**
+Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Pull, a compelled Rushdown ("Rushdown them" — the target closing distance because a card made them, not because they chose to), and similar effects that move you without your own choice — is unaffected. A voluntary Rushdown isn't: it's still your own Move Position action (`rules/combat.md`, Turn Structure), same as any other, and Rooted blocks that.
 
 **Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted at the start of each of your turns for as long as you remain Anchored, full duration each time. Moving ends your own Anchored and stops further re-application; it does not strip a Rooted already in effect.
 
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
-**(4) Rushdown**
-Move a target enemy from Backline to Frontline. Cannot target allies. The user must be in the Frontline. See `rules/combat.md`.
-
 **(5) Quick**
-You may change positions without spending your action — a free move in addition to your normal action, not a replacement for it. Gained on your own turn, it's usable that same turn and fades when the turn ends. Gained off-turn (a Defense Effect, typically), it's held until the end of your next turn. Fades either way whether spent or not — it never carries indefinitely.
+A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
 **(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
-**(17) Staggered**
+**(16) Staggered**
 The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
 **(21) Thorns X**
@@ -124,16 +118,17 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **Thorns stacks additively into a single value**, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.
 
 **(4) Unpreventable**
-Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, damage floors (Equal Footing), and redirects (Shared Burden, Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
+Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, and reassignment (Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
 **(15) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
 **(3) Immunity**
-The next attack against you fails completely, before any cards are revealed — no defense is chosen, no damage is dealt, no Effect resolves. The attacker's card is discarded as normal. One use; expires the instant it triggers.
+The next attack damage you would take is reduced to 0. Nothing else about the exchange changes: cards are chosen and revealed as normal, the RPS outcome stands, and the attacker's Effect and any Defense Effect trigger exactly as they otherwise would. Only the damage is negated.
 
-**(0) Future-Lock X**
-Reduces your effective hand size by X. Stacks additively into a single running total — the same shape as Armour and Thorns, never queued. **No floor at 2.** This is not a Mind loss (see Stat Change, below, which never drops hand size under 2) — Future-Lock is a direct hand-size reduction, the same mechanism CLIMB's own bonus uses, just negative, and it can take you to 0. At 0, you draw no cards and cannot act. Another combatant can clear it: spending their action removes 1 stack of Future-Lock from you. Not a Debuff — Ward and Deflect do not prevent it. Clears at the end of the combat it was active in; stacks earned outside combat carry into the next fight, or clear on a long rest if no fight comes first.
+It applies inside the Damage Pipeline (`rules/combat.md`), which has two consequences worth knowing. It protects whoever actually receives the damage, so an attack reassigned onto someone else meets *their* Immunity, not yours. And it does nothing against unpreventable damage — Thorns, status damage, and HP costs were never attack damage to begin with.
+
+One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won, or it was a tie — leaves it untouched for the next one.
 
 ---
 
@@ -141,11 +136,11 @@ Reduces your effective hand size by X. Stacks additively into a single running t
 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Body** — Red-card damage, and max HP at **3 points per point of Body** (down when lost, up when gained) — the heaviest of the three shares, matching the HP formula's own weighting: (3 × Body) + Soul + Mind.
+- **Body** — Red-card damage, and max HP at **4 points per point of Body** (down when lost, up when gained) — the heaviest of the three shares by a wide margin, matching the HP formula's own weighting: (4 × Body) + Soul + Mind.
 - **Mind** — Blue-card damage; hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls; changes the moment the stat does, and a hand already above the new, lower size is not discarded down, it simply can't draw back up until it naturally falls below the cap); and max HP at **1 point per point of Mind**.
 - **Soul** — Green-card damage; initiative (1d6 + Soul, applied to rolls made after the change); and max HP at **1 point per point of Soul**.
 
-**All three stats touch max HP** *(changed 2026-08-06 to match the HP formula's own three-stat shape — Body at 3×, Mind and Soul at 1× each; previously Body was the only stat that did)*. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.
+**All three stats touch max HP** *(changed 2026-08-06 to match the HP formula's own three-stat shape — Body at 4×, Mind and Soul at 1× each; previously Body was the only stat that did. Body's multiplier went from 3× to 4× on 2026-09-06, widening the HP spread so Body carries more of it.)*. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
 

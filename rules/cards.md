@@ -4,57 +4,7 @@ Cards are the primary language of Tales Untold.
 
 In combat, you don't declare an action and roll — you play a card. The card tells you what you're attempting, how hard it hits, and what happens when it lands or fails. Your hand is your tactical options. Your deck is your character in motion.
 
----
-
-## Card Anatomy
-
-**Name** — What the action is called. Names matter: the Advantage rule lets you discard a card whose name meaningfully supports a noncombat action.
-
-**Color + Stat** — The card's alignment. Red (Body), Blue (Mind), or Green (Soul). Determines which stat is used to calculate damage and how the card interacts with Rock-Paper-Scissors resolution.
-
-**Attack** — Damage dealt when your attack wins: *Stat + die*. The die signals the card's philosophy:
-- **d8** — Raw power. High ceiling, less control.
-- **d6** — Utility. Moderate damage, strong effects.
-- **d4** — Precision. Low damage, high control and information.
-
-*(d10 exists on a small number of cards as a genuine outlier above this scale — rare and deliberately unlabeled, same as before the 2026-07-22 dice step-up; it was never a fourth named tier.)*
-
-**Effect** — Triggers when you play this card as an attack and win the resolution — or tie it. On a tie the Effect still triggers, before the Defense Effect (see the tie rule in `rules/combat.md`).
-
-**Defense Effect** — Triggers when you win the RPS resolution as the defender — and on ties, unless the attacker's Effect cancels it.
-
-**Range** — Describes the positional relationship required to play this card. See the Range table in `rules/combat.md`.
-
-**Flavor Text** — *Italicized.* Not a rule. The world speaking.
-
----
-
-## "Attacker" / "Defender" vs. "Target"
-
-Two different words in card text, two different mechanics — not interchangeable:
-
-**Attacker** / **Defender** means whoever you're resolving *this specific RPS exchange* against. No choice is ever involved — it's fixed by who attacked and who defended this reveal (e.g. "Defender gains Rooted," "Attacker gains Weak").
-
-**Target** means you genuinely choose who receives the effect — an ally among several ("Target ally gains Deadly"), or a specific enemy when more than one is present ("Target enemy can only attack frontline targets"). If a card doesn't actually let the player choose, it isn't a Target effect, even if the caster and recipient could theoretically differ — write it as Attacker/Defender instead.
-
----
-
-## Card Example
-
-```
-╔══════════════════════════════════╗
-║  FLOW                            ║
-║  GREEN — SOUL                    ║
-╠══════════════════════════════════╣
-║  Attack:           Soul + d6     ║
-║  Effect:           Change position
-║  Defense Effect:   Change position
-║  Range:            Melee         ║
-╠══════════════════════════════════╣
-║  "Water finds its way            ║
-║   without forcing."              ║
-╚══════════════════════════════════╝
-```
+What each field on a card means, "Attacker"/"Defender" vs. "Target," and a full worked example: `rules/combat.md`, Reading a Card.
 
 ---
 
@@ -72,17 +22,9 @@ Your deck is not just mechanics. It's how your character thinks.
 
 ## Card Glossary
 
-Short versions for reading cards. `rules/card-glossary.md` is canonical — if these ever disagree, the glossary wins.
+Short versions for reading cards. `rules/card-glossary.md` is canonical for keywords like the one below; `rules/combat.md` is canonical for Range and Ongoing Effects.
 
 **Scry X** — Look at the top X cards of a deck (your own unless the card targets another). Place each on top, on the bottom, or into the discard pile, in any order.
-
-**Ongoing Effect** — The card remains face up after use until its stated condition is met, then discards.
-
-**Both (Range)** — Either position is valid. You may play this card from Frontline or Backline.
-
-**Melee (Range)** — You and the target must be in the Frontline.
-
-**Ranged (Range)** — Works only while not in Melee range with the target.
 
 ---
 
@@ -96,11 +38,5 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical — if t
 
 ---
 
-## Important: You Are Not Your Own Ally
-
-Card effects that reference "allies" or "enemies" never apply to the card's user. You cannot target yourself with ally effects or accidentally trigger enemy effects on yourself. This applies to area effects, healing bonuses, and damage reduction.
-
-If a card says *"all allies in your position,"* that means every other character sharing your position — not you.
-
-The exception: cards that explicitly name *yourself* as the target (e.g., a self-damage card) apply as written.
+"Allies"/"enemies" in card text never include yourself: `rules/combat.md`, You Are Not Your Own Ally.
 

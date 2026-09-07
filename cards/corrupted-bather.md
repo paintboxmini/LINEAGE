@@ -2,6 +2,8 @@
 
 Signature cards for the Corrupted Bather. See `bestiary/corrupted-bather.md`. Tagged as UNHELD — obtainable via the Oracle deck after encounters with what the Unheld Ocean returns.
 
+**Obscure** (NOTHING TO READ, below) is no longer a `rules/card-glossary.md` keyword — defined here since this card is the one still using it: enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
+
 ---
 
 **NOTHING TO READ**

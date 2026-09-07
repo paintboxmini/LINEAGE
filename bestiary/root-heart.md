@@ -2,7 +2,7 @@
 
 *Boss encounter. Triggers at Pressure 4, or whenever a party pays gold into Seeker's Price and is routed here directly. Defeating it opens escape from the Turnroot Weald.*
 
-**Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 21 — unchanged by the 2026-08-06 HP formula update, coincidentally: 3×5+4+2 lands on the same 21 that 3×5+6 did)*
+**Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 26 under the 2026-09-06 formula, (4 × Body) + Soul + Mind. It was 21 under both prior versions, coincidentally: 3×5+4+2 landed on the same 21 that 3×5+6 did)*
 **Creature Threat Rating:** 11
 
 Deck (11 — 2 Blue / 5 Red / 4 Green): FOREST MEMORY · ROOT LASH, IRON GRIP, REND, PRESS THE WOUND · BIND, BRISTLE, PATIENCE OF STONE, GRAFT

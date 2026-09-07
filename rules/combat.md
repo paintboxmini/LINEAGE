@@ -92,17 +92,22 @@ When initiative is rolled, every combatant draws to their maximum hand size — 
 
 At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.
 
-On your turn, you may take one Action
+On your turn, you may take one Action, plus one free action if you have one available (see below).
 
 | Action | Description |
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
-| Move Position | Shift between Frontline and Backline. |
-| Use an Item | Activate an equipped or held item 
-| Rushdown | A Backline enemy is repositioned to the Frontline. You must be in the Frontline to use this action. This doesn't count as the enemy moving, it counts as you moving toward it; shifting the line of engagement. |
-| Take Cover | Backline only; the fiction must justify it. Gain Evade until you attack. See Positioning → Cover. |
+| Move Position | Shift between Frontline and Backline — or, if you're already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown. |
+| Use an Item | Activate an equipped or held item, or use a consumable |
+| Take Cover | Backline only; the fiction must justify it. Gain Cover Evade — a dodge roll that persists instead of being spent. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
+
+**Free Actions.** Once per turn, on top of your Action above, you get one free action — it costs nothing from your turn, so you still take your normal Action as well. Spending a banked Quick to Move Position (Rushdown included), activating a piece of your own gear (turning something on, and similar minor personal gestures — not the world around you; that's still Interact), and eating or drinking all count. Capped at one per turn regardless of how many you'd otherwise have available — a second banked Quick just waits for next turn.
+
+**Actually using a consumable or piece of gear for its mechanical effect is never free — that's Use an Item, above, and costs your Action.** Kevin throwing an incendiary orange is Use an Item: the throw's whole point is the effect it produces, not a minor gesture.
+
+---
 
 ## Reading a Card
 
@@ -154,10 +159,20 @@ A Passive resolves exactly like a card from hand once concealment is settled —
 
 1. Attacker plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
-3. **Blind, then Evade, resolve next** — Blind checks the attacker's own stack; Blind and Evade checks the defender's.
+3. **Blind and Evade resolve now, before either card is revealed.** Both cards are already committed at this point. Every check that applies actually rolls — being attacked is what triggers a defender's Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender's own block-miss gets rolled, even when it turns out not to have mattered:
+   - **Attacker's Blind:** roll 1d2 if the attacker holds it.
+   - **Defender's Evade:** roll 1d2 if the defender holds it.
+   - **Defender's Blind:** roll 1d2 if the defender holds it and is actually defending.
+
+   **Resolving the rolls, in this order:**
+   1. **Defender's Evade succeeds** → the defender auto-wins the resolution (step 5's Defender wins outcome). A clean dodge — nothing else in this step changes that.
+   2. **Otherwise, attacker's Blind misses *and* defender's Blind misses** → **Mutual Miss** (see step 5): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn't.
+   3. **Otherwise, attacker's Blind misses alone** (the defender's own block, if any, didn't also miss) → the defender auto-wins the resolution.
+   4. **Otherwise, defender's Blind misses alone** (the attacker's own attack, above, didn't also miss) → the attacker wins automatically, exactly like no legal defense, below.
+   5. **Otherwise** (none of the above fired) → proceed to the reveal.
 
 **A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
-4. If the defender cannot or chooses not to defend, the attacker wins automatically.
+4. If the defender cannot or chooses not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.
 5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
 
 ```
@@ -168,11 +183,14 @@ Green (Soul)  beats  Blue  (Mind)
 
 **Attacker wins** → deal damage, then apply the card's Effect  
 **Defender wins** → no damage + defender triggers Defense Effect  
-**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.
+**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
+**Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 3, above); it never comes up during a normal reveal.
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 
 A standing bonus or penalty like "your next attack deals +X" is consumed by a miss.
+
+---
 
 ## Damage Pipeline
 
@@ -180,11 +198,11 @@ The base roll is **Stat + die, with Deadly/Weak folded in** — a Deadly stack a
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**redirect** (Shared Burden) → **volunteer shield** (Protect, team play) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; REFRACT sends an attack you're defending against at a target of your choice) → **Immunity** (held by whoever is actually receiving the damage — reduces it to 0, leaving the rest of the pipeline nothing to act on) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
-**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist) or reassigned (Shared Burden/Protect). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
+**Unpreventable damage bypasses this pipeline entirely** — not as an exception carved out of it, but because the pipeline only ever governed *attack* damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist) or reassigned (Protect). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.
 
 ---
 
@@ -223,7 +241,7 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 ### Rushdown
 
-Closing the distance on a Backline **enemy** yourself — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See the action table above.
+The Move Position action's other shape, not a separate action of its own: closing the distance on a Backline **enemy** yourself, instead of shifting between Frontline and Backline — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See Move Position in the action table, above.
 
 ### Interact & Position
 
@@ -233,7 +251,11 @@ Position determines what's within reach. A character can only interact with obje
 
 Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.
 
-While in cover, you gain **Evade**. Making an attack drops cover immediately.
+While in cover you have **Cover Evade** — its own thing, not the Evade keyword, though it rolls identically. The same 1d2 dodge at the same point in Attack Resolution (step 3), succeeding the same way, with the one difference that matters: **it is not a stack and is never spent.** Every attack against you rolls it, however many come, for as long as you hold cover.
+
+Cover ends the instant you attack. It also ends if you leave the Backline, or if the fiction takes the cover away — a wall comes down, the thing you were behind moves. Cover Evade goes with it.
+
+**Cover Evade and held Evade stacks are separate.** Only one dodge roll happens per attack, so if you have both, the cover roll is the one that happens and your stacks stay banked for after cover breaks. That is the point of paying an Action for cover rather than a card: the stacks you were holding survive it.
 
 ### Confined Spaces
 
@@ -279,9 +301,13 @@ You are on the ground. That is literal, and it stays true until you spend an act
 
 You are Down from the moment you Collapse until you stand. Healing above 0 HP ends the Collapse — it does not stand you up.
 
+**Down is not unconscious.** You are on the ground and finished as an attacker, but you are awake, aware, and still covering yourself.
+
 - You cannot attack.
-- You cannot defend, so any attack targeting you lands automatically.
 - You cannot change position.
+- **You defend normally.** Choose a card face down and resolve the exchange exactly as a standing combatant would, Defense Effect and all. Attack Resolution runs against you in full — including the attacker's Blind check — so an attack on a Down character can still miss.
+- **You keep your one free action each turn** (Free Actions, above). Eating, drinking, and activating your own gear all work from the ground. Moving does not: a banked Quick has no Move Position to spend itself on while you're Down, so it simply holds.
+- Your Action is unavailable while you're Down, with one exception — standing up, once you have the HP for it (Standing Up, below).
 - You may be healed back into combat.
 - Every **3 in-game hours** spent Collapsed, recover **1d4 HP**.
 
@@ -289,7 +315,7 @@ You are Down from the moment you Collapse until you stand. Healing above 0 HP en
 
 Once you are above 0 HP, **standing costs your action** on your turn. You are Down until you spend it, and you act normally from your next turn onward.
 
-A revived ally is not immediately back in the fight. They are alive, on the ground, and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.
+A revived ally is not immediately back on offense. They were covering themselves the whole time they were down, but they are still on the ground and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.
 
 ### If the Entire Party Collapses
 
