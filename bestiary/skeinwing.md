@@ -4,7 +4,7 @@
 
 **Cards:** `cards/skeinwing.md`
 
-**Mind 2 / Body 1 / Soul 4 — HP 9**
+**Mind 2 / Body 1 / Soul 4 — HP 10**
 **Creature Threat Rating:** 7
 
 

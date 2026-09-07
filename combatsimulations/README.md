@@ -92,7 +92,7 @@ import cards, engine
 sig = cards.load('fermata')
 fermata = engine.Combatant('Fermata', body=12, mind=10, soul=20,
                            deck=sig, team='foes')
-fermata.max_hp        # 66, matching bestiary/fermata.md
+fermata.max_hp        # 78, matching bestiary/fermata.md
 ```
 
 The HP formula is derived from the stat block rather than copied from it,

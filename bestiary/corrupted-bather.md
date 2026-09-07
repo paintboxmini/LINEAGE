@@ -6,7 +6,7 @@ People who went into the Unheld Ocean and came back wrong. Not evil. Unpredictab
 
 **Cards:** `cards/corrupted-bather.md`
 
-**Mind 2 / Body 3 / Soul 3 — HP 14**
+**Mind 2 / Body 3 / Soul 3 — HP 17**
 **Creature Threat Rating:** 8
 
 **Deck (8 — 2 Blue / 3 Red / 3 Green):** PARADOX, NOTHING TO READ *(blue)* · OVERCOMMIT, BERSERKER'S PRICE, CUTS BOTH WAYS *(red)* · ADAPT, MOCKERY, UNDERTOW *(green)*

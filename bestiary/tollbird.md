@@ -4,7 +4,7 @@
 
 **Cards:** `cards/tollbird.md`
 
-**Mind 2 / Body 3 / Soul 4 — HP 15**
+**Mind 2 / Body 3 / Soul 4 — HP 18**
 **Creature Threat Rating:** 9
 
 **Deck (9 — 2 Blue / 3 Red / 4 Green):** IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*

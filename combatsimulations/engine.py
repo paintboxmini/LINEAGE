@@ -26,8 +26,8 @@ class Combatant:
         self.team = team
         self.position = position
 
-        # rules/character-creation.md: max HP = (3 x Body) + Soul + Mind
-        self.max_hp = 3 * body + soul + mind
+        # rules/character-creation.md: max HP = (4 x Body) + Soul + Mind
+        self.max_hp = 4 * body + soul + mind
         self.hp = self.max_hp
 
         self.deck = list(deck)

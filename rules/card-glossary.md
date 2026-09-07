@@ -134,11 +134,11 @@ One use, spent the moment it actually negates something. An exchange that deals 
 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
-- **Body** — Red-card damage, and max HP at **3 points per point of Body** (down when lost, up when gained) — the heaviest of the three shares, matching the HP formula's own weighting: (3 × Body) + Soul + Mind.
+- **Body** — Red-card damage, and max HP at **4 points per point of Body** (down when lost, up when gained) — the heaviest of the three shares by a wide margin, matching the HP formula's own weighting: (4 × Body) + Soul + Mind.
 - **Mind** — Blue-card damage; hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls; changes the moment the stat does, and a hand already above the new, lower size is not discarded down, it simply can't draw back up until it naturally falls below the cap); and max HP at **1 point per point of Mind**.
 - **Soul** — Green-card damage; initiative (1d6 + Soul, applied to rolls made after the change); and max HP at **1 point per point of Soul**.
 
-**All three stats touch max HP** *(changed 2026-08-06 to match the HP formula's own three-stat shape — Body at 3×, Mind and Soul at 1× each; previously Body was the only stat that did)*. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.
+**All three stats touch max HP** *(changed 2026-08-06 to match the HP formula's own three-stat shape — Body at 4×, Mind and Soul at 1× each; previously Body was the only stat that did. Body's multiplier went from 3× to 4× on 2026-09-06, widening the HP spread so Body carries more of it.)*. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.
 
 A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.
 

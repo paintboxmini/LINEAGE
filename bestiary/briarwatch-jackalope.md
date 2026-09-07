@@ -4,7 +4,7 @@
 
 **Cards:** `cards/briarwatch-jackalope.md`
 
-**Mind 1 / Body 1 / Soul 3 — HP 7**
+**Mind 1 / Body 1 / Soul 3 — HP 8**
 **Creature Threat Rating:** 5
 
 

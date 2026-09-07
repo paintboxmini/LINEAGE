@@ -4,7 +4,7 @@
 
 **Cards:** `cards/fermata.md`
 
-**Mind 10 / Body 12 / Soul 20 — HP 66**
+**Mind 10 / Body 12 / Soul 20 — HP 78**
 **Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27, `CLAUDE.md`, Stat Blocks. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*
 
 **Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, READ, DELAY, INSTINCT, BRISTLE *(green)*
