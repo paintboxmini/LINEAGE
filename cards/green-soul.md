@@ -206,7 +206,7 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Defender gains Rooted.
 Defense Effect: Attacker gains Rooted.
 Range: Melee

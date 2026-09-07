@@ -395,16 +395,6 @@ Range: Ranged
 
 ---
 
-**FALTER**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Defender gains Staggered.
-Defense Effect: Attacker gains Staggered.
-Range: Melee
-*"The step that does not land where it meant to."*
-
----
-
 **CALLED SHOT**
 BLUE — MIND
 Attack: Mind + d4

@@ -4,6 +4,18 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut with Staggered's removal from the Oracle
+
+**FALTER** *(was SECOND GUESS)*
+BLUE — MIND
+Attack: Mind + d4
+Effect: Defender gains Staggered.
+Defense Effect: Attacker gains Staggered.
+Range: Melee
+*"The step that does not land where it meant to."*
+
+*Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
+
 ## Core set — cut as strictly dominated
 
 **HESITATE**

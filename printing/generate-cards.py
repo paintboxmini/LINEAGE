@@ -25,9 +25,12 @@ import sys
 # nothing that reaches into an enemy's hand, deck, or stats directly. No hand
 # reveal, no forcing an enemy to discard, no inserting status cards into their
 # deck or hand, no manipulating their deck, no stat reduction, and nothing
-# Sealed. Acting on your own hand or deck is fine, and so is control that
-# operates on the board — statuses, positioning, initiative, targeting
-# restrictions. Check a candidate against that list before adding it here; the
+# Sealed. Staggered is out too: it eats a whole attack or a whole defence,
+# which is too large a swing to hand a starting deck freely. Red keeps one
+# card that inflicts it, OFF BALANCE, and only on a clean win.
+#
+# Acting on your own hand or deck is fine, and so is control that operates
+# on the board — statuses, positioning, initiative, targeting restrictions. Check a candidate against that list before adding it here; the
 # starting deck is where a new player learns what the game is, and reaching
 # into someone else's resources is not it.
 
@@ -133,11 +136,14 @@ SETS = {
             #   out:     INTERCEPT (cut), BLOOD IN THE GAP, EMERGENCY REPAIRS
             #   in:      OFF BALANCE + CLOSE IN (melee),
             #            CERTAIN STRIKE (ranged)
+            #   REELING out with the Staggered ban, TRAMPLE in (both melee).
+            #   OFF BALANCE keeps Staggered, gated to a clean win — the one
+            #   card in the deck allowed to inflict it.
             # Three in for three out: INTERCEPT's cut left the colour at 20,
             # so the two named replacements needed a third. CLOSE IN is it,
             # and it is the only Oracle card that teaches Rushdown.
             'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'OFF BALANCE',
-            'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
+            'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN',
             'WEATHERED', 'HEALING SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'SECOND WIND', 'SLIP THE BLADE', 'CLOSE IN',
             'CERTAIN STRIKE', 'STARING CONTEST',
@@ -148,16 +154,16 @@ SETS = {
             #   renamed: TELL -> UNDERMINE -> DOUBT (also Melee -> Ranged),
             #            DEAD END -> PINNED, FORESEEN -> FORESEE,
             #            SECOND GUESS -> FALTER
-            #   out:     HESITATE (cut, dominated by DISTRACT),
-            #            REFRACT, EXPOSED, RETORT,
+            #   out:     HESITATE and FALTER (both cut — FALTER with the
+            #            Staggered ban), REFRACT, EXPOSED, RETORT,
             #            SHARPEN (moved to Red, where the card always belonged)
-            #   in:      INTERRUPT + REBUTTAL (melee), CALLED SHOT (ranged),
-            #            STILL POINT (both)
+            #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
+            #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
             'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
             'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'DOUBT',
-            'FALTER', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
+            'CLIMB', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
             # off it; the green pass put it back by swapping GIVE WAY (both)
@@ -168,13 +174,14 @@ SETS = {
             #            its defence half
             #   in:      TWIN STRIKE — the only damage-focused card in
             #            Green's 21, and the crossover the colour rules bless
+            #   BALANCE out with the Staggered ban, AID in (both ranged).
             # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
             # the same day, onto a name Red already used; that duplicate was
             # cut 2026-09-06 as a twin of STEADFAST, which takes its slot
             # here — see experimental/archives/cut-cards.md.
             'ACCEPTANCE', 'BRAMBLE', 'TWIN STRIKE', 'INSTINCT',
             'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'STEADFAST',
-            'SWAY', 'UNTOUCHED', 'PRIORITY', 'BALANCE', 'COMMUNION',
+            'SWAY', 'UNTOUCHED', 'PRIORITY', 'AID', 'COMMUNION',
             'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
             'SMOKESCREEN', 'OPENING',
         ],

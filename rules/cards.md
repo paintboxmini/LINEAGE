@@ -44,6 +44,9 @@ The starting Oracle deck is where a player learns what the game is, so it is del
 - manipulate an enemy's deck
 - reduce an enemy's stats
 - apply Sealed
+- apply Staggered, with one exception (below)
+
+**Staggered is the one near-total ban.** It costs its target a whole attack or a whole defence, which is a bigger swing than anything else on this list and not something a starting deck should hand out four times over. Red keeps exactly one card that inflicts it — OFF BALANCE — and only on a clean win, so it has to be earned rather than traded for.
 
 Acting on **your own** hand and deck is fine — drawing, discarding to pay a cost, Scry on your own deck. So is control that operates on the board rather than on someone's resources: statuses, positioning, initiative, targeting restrictions, removing buffs an enemy already has. The line is between changing the situation and going through their possessions.
 

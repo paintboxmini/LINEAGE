@@ -536,7 +536,7 @@ Range: Melee
 **OFF BALANCE**
 RED — BODY
 Attack: Body + d4
-Effect: Defender gains Staggered.
+Effect: Only on a clean win — not a tie. Defender gains Staggered.
 Defense Effect: Counter Attack. Gain Resist. On a clean win only.
 Range: Melee
 *"The shield is also a weapon."*
