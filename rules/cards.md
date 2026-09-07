@@ -40,7 +40,7 @@ A card's name carries as much weight as its Effect line, because the name is wha
 
 Two consequences when writing or reworking a card:
 
-- **A vague name is a weaker card**, whatever its Effect line says. "Focus" opens more doors than "Card Trick."
+- **A broad name is a stronger card**, whatever its Effect line says, because it applies to more attempts. FOCUS supports nearly anything requiring concentration; CARD TRICK supports card tricks. Breadth is real power, so weigh it the way you weigh a die size — a wide name on top of a strong Effect is a card that does two jobs. That cuts the other way too: a deliberately narrow name is a fair place to pay for an unusually good Effect.
 - **Renaming a card changes what it can do out of combat**, not just how it reads. Check that the new name still covers the same ground, and that nothing else already holds it — duplicate names break the print pipeline's by-name lookups, which is exactly how the Red and Green BRACE collided (`experimental/archives/cut-cards.md`).
 
 ---
