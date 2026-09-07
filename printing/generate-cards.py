@@ -158,16 +158,23 @@ SETS = {
             'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'DOUBT',
             'FALTER', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
-            # Green (21) — both 13 / ranged 6 / melee 2. OPENING moved from
-            # Melee to Both on 2026-09-06 (it was the only Green paying a
-            # Melee restriction at d4), which is what took Green off 12/6/3.
+            # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
+            # split. OPENING moved Melee to Both on 2026-09-06, taking Green
+            # off it; the green pass put it back by swapping GIVE WAY (both)
+            # for TWIN STRIKE (melee).
+            #   renamed: YOU'RE NEXT -> PRIORITY
+            #   out:     GIVE WAY — Evade at d4 Both, the same die and range
+            #            as Blue's SIDESTEP, which at least differentiates
+            #            its defence half
+            #   in:      TWIN STRIKE — the only damage-focused card in
+            #            Green's 21, and the crossover the colour rules bless
             # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
             # the same day, onto a name Red already used; that duplicate was
             # cut 2026-09-06 as a twin of STEADFAST, which takes its slot
             # here — see experimental/archives/cut-cards.md.
-            'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
+            'ACCEPTANCE', 'BRAMBLE', 'TWIN STRIKE', 'INSTINCT',
             'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'STEADFAST',
-            'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
+            'SWAY', 'UNTOUCHED', 'PRIORITY', 'BALANCE', 'COMMUNION',
             'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
             'SMOKESCREEN', 'OPENING',
         ],

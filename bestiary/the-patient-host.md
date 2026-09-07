@@ -7,9 +7,9 @@
 **Mind 8 / Body 6 / Soul 10 — HP 66** *(bespoke — boss exception; formula baseline is 42)*
 **Creature Threat Rating:** 24
 
-**Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, TAINT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, SECOND WIND *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, YOU'RE NEXT *(green)*
+**Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, TAINT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, SECOND WIND *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, PRIORITY *(green)*
 
-*YOU'RE NEXT was promoted to core (`cards/green-soul.md`) — no longer a Patient Host signature, moved from the signature list above to the core green count it already occupied.*
+*YOU'RE NEXT was promoted to core (`cards/green-soul.md`) and renamed PRIORITY there on 2026-09-06 — no longer a Patient Host signature, moved from the signature list above to the core green count it already occupied. The rename was for the Oracle: "You're next" is a taunt, not a phrase a player can spend on a noncombat Advantage discard.*
 
 ---
 
@@ -37,7 +37,7 @@ Nothing above has it starting one. Guests who wait their turn get a clean room a
 
 ## Combat Behavior
 
-Everything in its kit is about who gets to move and when, not raw damage — this is a controller, not a brute, and it wins fights by making sure they take a very long time to start feeling like fights at all. **YOUR TURN WILL COME** delays whoever's pushing hardest, twice over if they keep pushing (attack and defense both apply the same Shift). **REGISTERED** looks at what's coming in a target's deck before it arrives — the ledger already knew — and doesn't just misfile whatever it doesn't like. It strikes it from the book entirely, gone for the rest of the fight. **NO VACANCY** physically ejects anyone in its Frontline back to the Backline, the one card in its kit that reads as a shove rather than a delay. **THE LEDGER NEVER CLOSES** keeps it in the fight far longer than its stat line alone would suggest, healing every turn it stands still — which, given nothing else in its kit asks it to move, is most of them. **YOU'RE NEXT** is the capstone: it decides, personally, that this is finally your turn, jumps itself ahead on the wheel to make sure of it, and makes anyone who tried to interrupt regret cutting the line.
+Everything in its kit is about who gets to move and when, not raw damage — this is a controller, not a brute, and it wins fights by making sure they take a very long time to start feeling like fights at all. **YOUR TURN WILL COME** delays whoever's pushing hardest, twice over if they keep pushing (attack and defense both apply the same Shift). **REGISTERED** looks at what's coming in a target's deck before it arrives — the ledger already knew — and doesn't just misfile whatever it doesn't like. It strikes it from the book entirely, gone for the rest of the fight. **NO VACANCY** physically ejects anyone in its Frontline back to the Backline, the one card in its kit that reads as a shove rather than a delay. **THE LEDGER NEVER CLOSES** keeps it in the fight far longer than its stat line alone would suggest, healing every turn it stands still — which, given nothing else in its kit asks it to move, is most of them. **PRIORITY** is the capstone: it decides, personally, that this is finally your turn, jumps itself ahead on the wheel to make sure of it, and makes anyone who tried to interrupt regret cutting the line.
 
 The Host never panics, never escalates out of anger — it has none. It reads as exactly as patient losing as it does winning, which is worse.
 

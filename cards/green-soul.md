@@ -147,8 +147,8 @@ Range: Ranged
 **BALANCE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Discard 1 to Stagger the defender
-Defense Effect: Discard 1 to Stagger the attacker
+Effect: Defender gains Staggered.
+Defense Effect: Attacker gains Staggered.
 Range: Ranged
 *"Balance does not divide — it multiplies."*
 
@@ -334,13 +334,13 @@ Range: Both
 
 ---
 
-**YOU'RE NEXT**
+**PRIORITY**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: On a clean win only, apply Initiative Shift +2 to self.
 Defense Effect: Deal 3 damage to the attacker.
 Range: Both
-*"It's finally your turn."*
+*"Everything else can wait. This cannot."*
 
 ---
 
@@ -406,7 +406,7 @@ Range: Melee
 
 **INSTINCT**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Gain Ward.
 Defense Effect: Gain Ward.
 Range: Both
