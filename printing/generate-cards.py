@@ -20,6 +20,16 @@ import sys
 # ---------------------------------------------------------------------------
 # Card sets — add new encounter sets here
 # ---------------------------------------------------------------------------
+#
+# What the Oracle deck may not contain (`rules/cards.md`, The Oracle Deck):
+# nothing that reaches into an enemy's hand, deck, or stats directly. No hand
+# reveal, no forcing an enemy to discard, no inserting status cards into their
+# deck or hand, no manipulating their deck, no stat reduction, and nothing
+# Sealed. Acting on your own hand or deck is fine, and so is control that
+# operates on the board — statuses, positioning, initiative, targeting
+# restrictions. Check a candidate against that list before adding it here; the
+# starting deck is where a new player learns what the game is, and reaching
+# into someone else's resources is not it.
 
 SETS = {
     'core': {
@@ -109,25 +119,31 @@ SETS = {
             '../cards/green-soul.md',
         ],
         # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim. Fixed composition since 2026-08-03: 21 per colour, split
-        # 12/6/3 along each colour's range identity.
+        # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
+        # led by that colour's own range identity. The ideal split is 12/6/3;
+        # actual counts are noted per colour below, and Red and Green have
+        # each drifted one off it.
         'cards': [
-            # Red (21) — melee 12 / both 6 / ranged 3
+            # Red (21) — melee 11 / both 7 / ranged 3. Off the 12/6/3 ideal
+            # by one; predates 2026-09-06 and is unexamined.
             # GORE swapped for INTERCEPT 2026-08-03 — see content.py.
             'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'INTERCEPT',
             'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
             'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
             'EMERGENCY REPAIRS', 'STARING CONTEST',
-            # Blue (20 of 21) — ranged 12 / melee 5 / both 3. PREDICT (melee)
-            # cut with the glossary's Sealed keyword, 2026-09-06 — see
-            # experimental/archives/cut-cards.md. No replacement chosen yet;
-            # Blue is a card short of the fixed 21 until one is.
+            # Blue (21) — ranged 12 / melee 6 / both 3. Two swaps 2026-09-06:
+            # PREDICT (melee) was cut with the Sealed keyword and DISTRACT
+            # (melee) takes its slot; PROFILE (ranged) is out for reading the
+            # attacker's hand, replaced by PARTITION (ranged). See the Oracle
+            # content rule above the SETS table.
             'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
-            'LAST RESORT', 'MARKED', 'PROFILE', 'REFRACT', 'RETORT', 'STUDY',
+            'LAST RESORT', 'MARKED', 'PARTITION', 'REFRACT', 'RETORT', 'STUDY',
             'VEIL', 'ANTICIPATE', 'DEFLECT', 'HESITATE', 'TELL',
-            'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
-            # Green (21) — both 12 / ranged 6 / melee 3
+            'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP', 'DISTRACT',
+            # Green (21) — both 13 / ranged 6 / melee 2. OPENING moved from
+            # Melee to Both on 2026-09-06 (it was the only Green paying a
+            # Melee restriction at d4), which is what took Green off 12/6/3.
             # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
             # the same day, onto a name Red already used; that duplicate was
             # cut 2026-09-06 as a twin of STEADFAST, which takes its slot

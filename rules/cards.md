@@ -34,6 +34,23 @@ The crossovers are deliberate and worth keeping: Red still body-blocks for the p
 
 ---
 
+## The Oracle Deck
+
+The starting Oracle deck is where a player learns what the game is, so it is deliberately narrower than the card pool it draws from. **Nothing in it reaches into an enemy's hand, deck, or stats directly.** Specifically, no Oracle card may:
+
+- reveal or look at an enemy's hand
+- force an enemy to discard
+- insert status cards into an enemy's hand, deck, or discard
+- manipulate an enemy's deck
+- reduce an enemy's stats
+- apply Sealed
+
+Acting on **your own** hand and deck is fine — drawing, discarding to pay a cost, Scry on your own deck. So is control that operates on the board rather than on someone's resources: statuses, positioning, initiative, targeting restrictions, removing buffs an enemy already has. The line is between changing the situation and going through their possessions.
+
+Cards excluded by this rule are still perfectly good cards; they belong in creature decks, character decks, and later Oracle additions. The list lives in `printing/generate-cards.py`'s `SETS`, with the same rule restated above it.
+
+---
+
 ## The Name Is Half the Card
 
 A card's name carries as much weight as its Effect line, because the name is what a player spends outside combat. Discarding a card for Advantage asks the table whether its *name* plausibly supports what you're attempting (`rules/resolution.md`, Advantage & Disadvantage) — so a name is a promise about the kinds of noncombat problems that card can help solve.
