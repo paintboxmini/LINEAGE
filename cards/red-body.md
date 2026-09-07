@@ -423,13 +423,13 @@ Range: Both
 
 ---
 
-**SEISMIC REDIRECT**
+**CLOSE IN**
 RED — BODY
 Attack: Body + d6
 Effect: Rushdown.
 Defense Effect: Counter Attack.
 Range: Melee
-*"The correction comes to you."*
+*"Distance was the only thing protecting them."*
 
 ---
 

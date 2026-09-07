@@ -131,15 +131,15 @@ SETS = {
             #   renamed: CLIFF SONG -> HEALING SONG (also Both -> Ranged),
             #            RECOVER -> SECOND WIND
             #   out:     INTERCEPT (cut), BLOOD IN THE GAP, EMERGENCY REPAIRS
-            #   in:      SHIELD BASH + SEISMIC REDIRECT (melee),
+            #   in:      SHIELD BASH + CLOSE IN (melee),
             #            CERTAIN STRIKE (ranged)
             # Three in for three out: INTERCEPT's cut left the colour at 20,
-            # so the two named replacements needed a third. SEISMIC REDIRECT
-            # is it, and it is the only Oracle card that teaches Rushdown.
+            # so the two named replacements needed a third. CLOSE IN is it,
+            # and it is the only Oracle card that teaches Rushdown.
             'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'SHIELD BASH',
             'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
             'WEATHERED', 'HEALING SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
-            'SECOND WIND', 'SLIP THE BLADE', 'SEISMIC REDIRECT',
+            'SECOND WIND', 'SLIP THE BLADE', 'CLOSE IN',
             'CERTAIN STRIKE', 'STARING CONTEST',
             # Blue (21) — ranged 12 / melee 6 / both 3. Two swaps 2026-09-06:
             # PREDICT (melee) was cut with the Sealed keyword and DISTRACT
