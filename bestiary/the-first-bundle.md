@@ -28,9 +28,11 @@ It unfolds one stage each time its HP crosses a quarter of its maximum. Each sta
 | Stage | At | It gains |
 |---|---|---|
 | **Folded** | start | Takes no action on the first cycle. Any attack against it that cycle deals double damage. |
-| **First joint** | below 18 HP | Its attacks gain Range Both. |
-| **Second joint** | below 12 HP | Its attacks apply Rooted. Armour 2. |
-| **Open** | below 6 HP | Gains Deadly at the start of each of its turns. |
+| **First joint** | below 26 HP (¾) | Its attacks gain Range Both. |
+| **Second joint** | below 18 HP (½) | Its attacks apply Rooted. Armour 2. |
+| **Open** | below 9 HP (¼) | Gains Deadly at the start of each of its turns. |
+
+*The fractions are the rule; the numbers are just those fractions of its 35 HP, and are what to recompute if that ever moves. Rescaled 2026-09-06 with the HP formula change (Body 3× to 4×). The previous 18/12/6 were exact quarters of 24 — an HP total this creature had not carried for some time — so they had already drifted before that change made it worse.*
 
 The first row is the whole encounter compressed. A party that recognizes what the heap is and commits everything before it moves can end this in a cycle. A party that waits to be sure is fighting something else by then.
 
