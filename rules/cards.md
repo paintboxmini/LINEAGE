@@ -20,6 +20,31 @@ Your deck is not just mechanics. It's how your character thinks.
 
 ---
 
+## What Each Colour Tends Toward
+
+General conventions, not laws. A card that breaks one for a good reason is fine; a colour that breaks its own convention constantly has stopped meaning anything.
+
+- **Red — self-buffs and raw damage.** The biggest dice live here.
+- **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
+- **Green — flexibility and support.** Healing, allies, movement, adaptability.
+
+The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
+
+**Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
+
+---
+
+## The Name Is Half the Card
+
+A card's name carries as much weight as its Effect line, because the name is what a player spends outside combat. Discarding a card for Advantage asks the table whether its *name* plausibly supports what you're attempting (`rules/resolution.md`, Advantage & Disadvantage) — so a name is a promise about the kinds of noncombat problems that card can help solve.
+
+Two consequences when writing or reworking a card:
+
+- **A vague name is a weaker card**, whatever its Effect line says. "Focus" opens more doors than "Card Trick."
+- **Renaming a card changes what it can do out of combat**, not just how it reads. Check that the new name still covers the same ground, and that nothing else already holds it — duplicate names break the print pipeline's by-name lookups, which is exactly how the Red and Green BRACE collided (`experimental/archives/cut-cards.md`).
+
+---
+
 ## Card Glossary
 
 Short versions for reading cards. `rules/card-glossary.md` is canonical for keywords like the one below; `rules/combat.md` is canonical for Range and Ongoing Effects.

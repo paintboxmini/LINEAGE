@@ -379,7 +379,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Vulnerable.
-Range: Melee
+Range: Both
 *"There is always a moment. This is it."*
 
 ---
@@ -411,16 +411,6 @@ Effect: Gain Ward.
 Defense Effect: Gain Ward.
 Range: Both
 *"The body knows before the mind agrees."*
-
----
-
-**BRACE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Resist.
-Defense Effect: Gain Resist.
-Range: Both
-*"Hold."*
 
 ---
 

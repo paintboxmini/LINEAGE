@@ -475,7 +475,7 @@ Range: Melee
 
 **OPEN GUARD**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Vulnerable.
 Range: Melee

@@ -128,10 +128,12 @@ SETS = {
             'VEIL', 'ANTICIPATE', 'DEFLECT', 'HESITATE', 'TELL',
             'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
             # Green (21) — both 12 / ranged 6 / melee 3
-            # SETTLE renamed BRACE, DUST renamed SMOKESCREEN, 2026-08-26 —
-            # see cards/green-soul.md.
+            # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
+            # the same day, onto a name Red already used; that duplicate was
+            # cut 2026-09-06 as a twin of STEADFAST, which takes its slot
+            # here — see experimental/archives/cut-cards.md.
             'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
-            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'BRACE',
+            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'STEADFAST',
             'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
             'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
             'SMOKESCREEN', 'OPENING',

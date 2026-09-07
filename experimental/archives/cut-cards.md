@@ -4,6 +4,20 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut as a duplicate
+
+**BRACE** *(green)*
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defense Effect: Gain Resist.
+Range: Both
+*"Hold."*
+
+*Cut 2026-09-06: two problems, one card. It was mechanically identical to STEADFAST (`cards/green-soul.md`) — same colour, stat, die, range, and both effects — and its name collided with the Red BRACE in `cards/red-body.md`, the only duplicate name in the whole card corpus. The collision was created by the SETTLE → BRACE rename on 2026-08-26, which renamed this card onto a name that was already taken. It mattered because `printing/generate-cards.py` resolves a set's fixed card list by name into a dict, so whichever file parses last silently wins; five bestiary decks cite BRACE in their red sections and the Oracle cited it in its green one. The Oracle's green slot now holds STEADFAST, which does the same thing under a name that carries the same weight for a noncombat Advantage discard.*
+
+---
+
 ## Core set — cut following the keyword-glossary trim
 
 Drew cut Obscure, Reveal Hand, Expose [Color], Locked, Sealed, and Future-Lock X from `rules/card-glossary.md` (2026-09-06). Every core-pool card built on one of those keywords moves here; creature and character decks keep theirs as printed — the cut is a glossary trim, not a retroactive rewrite of everything that ever used the term.
