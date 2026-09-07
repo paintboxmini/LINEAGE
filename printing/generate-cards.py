@@ -145,16 +145,19 @@ SETS = {
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
             # attacker's hand) -> PARTITION. Then the blue balance pass:
-            #   renamed: TELL -> UNDERMINE (also Melee -> Ranged)
+            #   renamed: TELL -> UNDERMINE -> DOUBT (also Melee -> Ranged),
+            #            DEAD END -> PINNED, FORESEEN -> FORESEE,
+            #            SECOND GUESS -> FALTER
             #   out:     HESITATE (cut, dominated by DISTRACT),
-            #            REFRACT (name too narrow for a starter),
+            #            REFRACT, EXPOSED, RETORT,
             #            SHARPEN (moved to Red, where the card always belonged)
-            #   in:      INTERRUPT + REBUTTAL (melee), EXPOSED (both)
+            #   in:      INTERRUPT + REBUTTAL (melee), CALLED SHOT (ranged),
+            #            STILL POINT (both)
             # See the Oracle content rule above the SETS table.
-            'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
-            'LAST RESORT', 'MARKED', 'PARTITION', 'EXPOSED', 'RETORT', 'STUDY',
-            'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'UNDERMINE',
-            'SECOND GUESS', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
+            'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
+            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'DOUBT',
+            'FALTER', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 13 / ranged 6 / melee 2. OPENING moved from
             # Melee to Both on 2026-09-06 (it was the only Green paying a
             # Melee restriction at d4), which is what took Green off 12/6/3.

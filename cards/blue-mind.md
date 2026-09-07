@@ -15,8 +15,8 @@ Range: Melee
 **CALCULATE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Move target enemy to backline
-Defense Effect: Move target to frontline
+Effect: Move any target to the position of your choice.
+Defense Effect: Move any target to the position of your choice.
 Range: Ranged
 *"The battlefield bends to those who see its patterns."*
 
@@ -96,7 +96,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: When you are attacked before your next turn, draw 1 card before defending. Activates multiple times.
-Defense Effect: Attacker gains Weak
+Defense Effect: You win on a tie.
 Range: Melee
 *"The prepared mind turns surprise into advantage."*
 
@@ -145,8 +145,8 @@ Range: Ranged
 **PARTITION**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target enemy can only attack frontline targets next turn
-Defense Effect: Target ally cannot be targeted by an attack until your next turn
+Effect: Target cannot attack or be attacked until your next turn.
+Defense Effect: Target cannot attack or be attacked until your next turn.
 Range: Ranged
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
@@ -165,7 +165,7 @@ Range: Melee
 **REALIGNMENT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Move to frontline or backline (your choice)
+Effect: You may change positions.
 Defense Effect: All allies gain Quick
 Range: Both
 *"Reality rearranges for those who see its hidden geometry."*
@@ -276,8 +276,8 @@ Range: Both
 **REBUTTAL**
 BLUE — MIND
 Attack: Mind + d6
-Effect: If an enemy attacked successfully on the turn immediately before yours, that enemy gains Staggered.
-Defense Effect: Apply Initiative Shift -1 to the attacker.
+Effect: Defender gains Weak and Vulnerable.
+Defense Effect: Attacker gains Weak and Vulnerable.
 Range: Melee
 *"Every argument has an opening. You just have to still be standing when it appears."*
 
@@ -335,11 +335,11 @@ Range: Ranged
 
 ---
 
-**FORESEEN**
+**FORESEE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Gain Resist.
-Defense Effect: Gain Resist.
+Effect: Give any target Resist.
+Defense Effect: Give any target Resist.
 Range: Ranged
 *"You already knew where the blow would land."*
 
@@ -375,33 +375,33 @@ Range: Ranged
 
 ---
 
-**DEAD END**
+**PINNED**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Rooted.
 Defense Effect: Attacker gains Rooted.
 Range: Ranged
-*"Some paths were never actually open."*
+*"Whatever you were about to do, do it from there."*
 
 ---
 
-**UNDERMINE**
+**DOUBT**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Weak.
 Defense Effect: Attacker gains Weak.
 Range: Ranged
-*"Everyone has one. Most people never learn theirs."*
+*"You gave them one question they could not answer, and they are still holding it."*
 
 ---
 
-**SECOND GUESS**
+**FALTER**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Staggered.
 Defense Effect: Attacker gains Staggered.
 Range: Melee
-*"Close enough to ask them the question they can't answer."*
+*"The step that does not land where it meant to."*
 
 ---
 

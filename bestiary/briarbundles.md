@@ -91,7 +91,7 @@ Old field guardians, built up over generations by every farmer who worked a give
 **Mind 2 / Body 5 / Soul 3 — HP 25**
 **Creature Threat Rating:** 10
 
-**Deck (10 — 2 Blue / 5 Red / 3 Green):** GENERATIONS OF HANDS, FORESEEN *(blue)* · THE FIELD IS THE LINE, ENDURE, BRACE, GORE, DIG IN *(red)* · KEEPING PEOPLE OUT, SHARED BURDEN, PATIENCE OF STONE *(green)*
+**Deck (10 — 2 Blue / 5 Red / 3 Green):** GENERATIONS OF HANDS, FORESEE *(blue)* · THE FIELD IS THE LINE, ENDURE, BRACE, GORE, DIG IN *(red)* · KEEPING PEOPLE OUT, SHARED BURDEN, PATIENCE OF STONE *(green)*
 
 **Passive — Armour 2**
 Layered by hand, one season at a time, for longer than anyone alive.

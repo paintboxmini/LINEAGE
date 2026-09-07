@@ -93,15 +93,19 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(9) Vulnerable**
+**(10) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(25) Rooted**
-Cannot voluntarily change position until the end of your next turn. Applied immediately on resolution — lasts through the rest of the current round and the afflicted character's entire next turn, fading at the end of that next turn, not the start. Forced repositioning — Pull, a compelled Rushdown ("Rushdown them" — the target closing distance because a card made them, not because they chose to), and similar effects that move you without your own choice — is unaffected. A voluntary Rushdown isn't: it's still your own Move Position action (`rules/combat.md`, Turn Structure), same as any other, and Rooted blocks that.
+The next time you would change position, that movement is cancelled and the Rooted is spent. It is a charge, not a timer — it waits as long as it has to, and it is used up by the first movement it stops, whenever that comes.
 
-**Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted at the start of each of your turns for as long as you remain Anchored, full duration each time. Moving ends your own Anchored and stops further re-application; it does not strip a Rooted already in effect.
+**It stops forced movement too, and is spent doing it.** A Pull, a compelled Rushdown, a card that shoves you to the other position — Rooted cancels that just as it cancels your own Move Position, and then it is gone. This is the trade: Rooted is harder to wait out than a timer, and an enemy can strip it by making you move.
 
-**Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
+Rooted stacks. Each stack cancels one movement.
+
+**Anchored + Rooted.** When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted charge at the start of each of your turns for as long as you remain Anchored. Moving ends your own Anchored and stops further re-application; it does not spend a Rooted charge the target is already holding.
+
+**Card text.** A card that grants Rooted should say only "gains Rooted" — the rule lives here, not restated on the card.
 
 **(6) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
@@ -109,7 +113,7 @@ A banked free Move Position, Rushdown included — spending it is your one free 
 **(30) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
-**(16) Staggered**
+**(15) Staggered**
 The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
 **(21) Thorns X**

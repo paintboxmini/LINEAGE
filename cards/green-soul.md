@@ -207,8 +207,8 @@ Range: Both
 **BIND**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: The Defender gains 1 Rooted (cannot change position until the start of your next turn.)
-Defense Effect: The attacker gains 1 Rooted (can't change position next turn.)
+Effect: Defender gains Rooted.
+Defense Effect: Attacker gains Rooted.
 Range: Melee
 *"Not all chains are visible."*
 
