@@ -5,7 +5,9 @@
 **Mind 2 / Body 5 / Soul 4 — HP 30** *(bespoke — boss exception; formula baseline is 26 under the 2026-09-06 formula, (4 × Body) + Soul + Mind. It was 21 under both prior versions, coincidentally: 3×5+4+2 landed on the same 21 that 3×5+6 did)*
 **Creature Threat Rating:** 11
 
-Deck (11 — 2 Blue / 5 Red / 4 Green): FOREST MEMORY · ROOT LASH, IRON GRIP, REND, PRESS THE WOUND · BIND, BRISTLE, PATIENCE OF STONE, GRAFT
+Deck (11 — 2 Blue / 5 Red / 4 Green): FOREST MEMORY, TRACE · ROOT LASH, IRON GRIP, REND, PRESS THE WOUND, DIG IN · BIND, BRISTLE, PATIENCE OF STONE, GRAFT
+
+*Core fill completed 2026-09-06; the list had declared 11 and named 9 since it was written. **TRACE** is FOREST MEMORY's mechanic in another key — both read the party's colour habits and charge them for repeating themselves, which is what a forest that "remembers every path ever walked" should feel like from the inside. **DIG IN** is Anchored, and the Root Heart is Immobile: Anchored ends when its holder moves, so on the one creature that can never move, it never ends. Its immobility stops reading as a limitation and starts paying.*
 **Position:** Immobile. Always counts as being in both Frontline and Backline (gigantic).
 
 ## Read-Aloud Description
