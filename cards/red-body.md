@@ -533,10 +533,20 @@ Range: Melee
 
 ---
 
-**SHIELD BASH**
+**OFF BALANCE**
 RED — BODY
 Attack: Body + d4
 Effect: Defender gains Staggered.
 Defense Effect: Counter Attack. Gain Resist. On a clean win only.
 Range: Melee
 *"The shield is also a weapon."*
+
+---
+
+**SHARPEN**
+RED — BODY
+Attack: Body + d4
+Effect: Target ally gains Deadly
+Defense Effect: You gain Deadly
+Range: Both
+*"Precision compounds."*

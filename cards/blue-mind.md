@@ -12,16 +12,6 @@ Range: Melee
 
 ---
 
-**SHARPEN**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Target ally gains Deadly
-Defense Effect: You gain Deadly
-Range: Both
-*"Precision compounds."*
-
----
-
 **CALCULATE**
 BLUE — MIND
 Attack: Mind + d6
@@ -45,8 +35,8 @@ Range: Ranged
 **DISTRACT**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Apply Initiative Shift -2 to the defender.
-Defense Effect: Apply Initiative Shift -2 to the attacker.
+Effect: Apply Initiative Shift -2 to any target.
+Defense Effect: Apply Initiative Shift -2 to any target.
 Range: Melee
 *"Attention divided is power diminished."*
 
@@ -377,7 +367,7 @@ Range: Ranged
 
 **VEIL**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Defender gains Blind.
 Defense Effect: Attacker gains Blind.
 Range: Ranged
@@ -395,22 +385,12 @@ Range: Ranged
 
 ---
 
-**HESITATE**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Apply Initiative Shift -1 to the defender.
-Defense Effect: Apply Initiative Shift -1 to the attacker.
-Range: Melee
-*"You watched them decide. That took a moment they needed."*
-
----
-
-**TELL**
+**UNDERMINE**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Weak.
 Defense Effect: Attacker gains Weak.
-Range: Melee
+Range: Ranged
 *"Everyone has one. Most people never learn theirs."*
 
 ---

@@ -131,25 +131,30 @@ SETS = {
             #   renamed: CLIFF SONG -> HEALING SONG (also Both -> Ranged),
             #            RECOVER -> SECOND WIND
             #   out:     INTERCEPT (cut), BLOOD IN THE GAP, EMERGENCY REPAIRS
-            #   in:      SHIELD BASH + CLOSE IN (melee),
+            #   in:      OFF BALANCE + CLOSE IN (melee),
             #            CERTAIN STRIKE (ranged)
             # Three in for three out: INTERCEPT's cut left the colour at 20,
             # so the two named replacements needed a third. CLOSE IN is it,
             # and it is the only Oracle card that teaches Rushdown.
-            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'SHIELD BASH',
+            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'OFF BALANCE',
             'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
             'WEATHERED', 'HEALING SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
             'SECOND WIND', 'SLIP THE BLADE', 'CLOSE IN',
             'CERTAIN STRIKE', 'STARING CONTEST',
-            # Blue (21) — ranged 12 / melee 6 / both 3. Two swaps 2026-09-06:
-            # PREDICT (melee) was cut with the Sealed keyword and DISTRACT
-            # (melee) takes its slot; PROFILE (ranged) is out for reading the
-            # attacker's hand, replaced by PARTITION (ranged). See the Oracle
-            # content rule above the SETS table.
+            # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
+            # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
+            # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
+            # attacker's hand) -> PARTITION. Then the blue balance pass:
+            #   renamed: TELL -> UNDERMINE (also Melee -> Ranged)
+            #   out:     HESITATE (cut, dominated by DISTRACT),
+            #            REFRACT (name too narrow for a starter),
+            #            SHARPEN (moved to Red, where the card always belonged)
+            #   in:      INTERRUPT + REBUTTAL (melee), EXPOSED (both)
+            # See the Oracle content rule above the SETS table.
             'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
-            'LAST RESORT', 'MARKED', 'PARTITION', 'REFRACT', 'RETORT', 'STUDY',
-            'VEIL', 'ANTICIPATE', 'DEFLECT', 'HESITATE', 'TELL',
-            'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP', 'DISTRACT',
+            'LAST RESORT', 'MARKED', 'PARTITION', 'EXPOSED', 'RETORT', 'STUDY',
+            'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'UNDERMINE',
+            'SECOND GUESS', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 13 / ranged 6 / melee 2. OPENING moved from
             # Melee to Both on 2026-09-06 (it was the only Green paying a
             # Melee restriction at d4), which is what took Green off 12/6/3.

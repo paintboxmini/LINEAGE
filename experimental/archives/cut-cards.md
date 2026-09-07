@@ -4,6 +4,20 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut as strictly dominated
+
+**HESITATE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Apply Initiative Shift -1 to the defender.
+Defense Effect: Apply Initiative Shift -1 to the attacker.
+Range: Melee
+*"You watched them decide. That took a moment they needed."*
+
+*Cut 2026-09-06: DISTRACT is the same card, better. Same colour, same Melee range, same symmetric Initiative Shift on both halves — but a d6 against HESITATE's d4, and -2 against its -1. Bigger die and bigger effect at once leaves no board state where you would rather hold this one. The pair only collided when DISTRACT was added to the Oracle earlier the same day to fill PREDICT's melee slot; nobody checked it against the melee Initiative Shift card already sitting there.*
+
+---
+
 ## Core set — folded into another card
 
 **INTERCEPT**
