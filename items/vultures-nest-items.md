@@ -18,7 +18,7 @@ Use (1): Pull yourself or a target enemy to Frontline.
 *Consumable — Squat iron lantern, smoked glass*
 *Source: Vulture's Nest market*
 *Price: ~15 gold*
-Use (1): Gain Obscure for 1 combat.
+Use (1): Gain Obscure for 1 combat — enemies cannot look at or manipulate your hand or deck (does not prevent status cards being added to it). No longer a `rules/card-glossary.md` keyword; defined here since this is where it's used.
 
 ---
 

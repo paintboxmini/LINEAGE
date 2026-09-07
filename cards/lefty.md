@@ -10,7 +10,7 @@ Signature cards for Lefty. See `characters/lefty.md`.
 RED — BODY
 Attack: Body + d8
 Effect: All enemies in the Frontline move to the Backline.
-Defensive Bonus: All enemies in the Frontline move to the Backline.
+Defense Effect: All enemies in the Frontline move to the Backline.
 Range: Melee
 *"One swing clears more room than a retreat ever could."*
 
@@ -20,7 +20,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: All enemies in the Backline move to the Frontline.
-Defensive Bonus: All enemies in the Backline move to the Frontline.
+Defense Effect: All enemies in the Backline move to the Frontline.
 Range: Melee
 *"The chain doesn't ask who it catches."*
 
@@ -30,7 +30,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d6
 Effect: Lifesteal.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Melee
 *"He's been the last thing standing before. He remembers how."*
 
@@ -40,6 +40,6 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Staggered.
-Defensive Bonus: Gain Protect.
+Defense Effect: Gain Protect.
 Range: Both
 *"One good throw is all the cross has ever needed."*

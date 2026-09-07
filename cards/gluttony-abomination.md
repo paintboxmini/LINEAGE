@@ -8,7 +8,7 @@ Signature cards for the Gluttony Abomination. See `bestiary/gluttony-abomination
 BLUE — MIND — ABYSS
 Attack: Mind + d6
 Effect: Pull all enemies to the Frontline.
-Defensive Bonus: Pull the attacker to the Frontline.
+Defense Effect: Pull the attacker to the Frontline.
 Range: Both
 *"Distance was always a courtesy. It stopped extending it."*
 
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY — ABYSS
 Attack: Body + d8
 Effect: If this attack deals damage, heal 3 HP and gain Deadly.
-Defensive Bonus: Gain Resist.
+Defense Effect: Gain Resist.
 Range: Melee
 *"He used to preach on this. He was very good at it."*
 
@@ -28,6 +28,6 @@ Range: Melee
 GREEN — SOUL — ABYSS
 Attack: Soul + d4
 Effect: Deal 2 damage to each other enemy in your position. Heal 1 HP for each enemy damaged this way.
-Defensive Bonus: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
 Range: Melee
 *"Not one mouth arguing with the others. All of them agreeing."*

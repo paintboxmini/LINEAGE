@@ -24,6 +24,6 @@ When she approaches the party she's looking for someone outside the community. N
 BLUE — MIND — PROMISE
 Attack: Mind + d6
 Effect: On a win, target has Weak on their next card play.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 "It is not calm. It is waiting."

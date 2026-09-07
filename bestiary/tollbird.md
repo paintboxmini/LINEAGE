@@ -1,10 +1,10 @@
 # Tollbird
 
-*A Tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and the Wait action.*
+*A Tollbird built for margins — hedgerows, fence lines, anything narrow and linear it can watch from. Teaches turn-order reading: strike windows, sequencing, and Initiative Shift.*
 
 **Cards:** `cards/tollbird.md`
 
-**Mind 2 / Body 3 / Soul 4 — HP 15**
+**Mind 2 / Body 3 / Soul 4 — HP 18**
 **Creature Threat Rating:** 9
 
 **Deck (9 — 2 Blue / 3 Red / 4 Green):** IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*
@@ -37,9 +37,9 @@ The Tollbird fights from range when it can. Perched at Backline, it's hard to re
 
 When it does commit, IMPALING DIVE is the whole statement: full-force strike into the Frontline, bonus damage if it flew in from Backline, and — by the card's own text — **it cannot defend until its next turn.** That's not a script, that's the card. A Tollbird that just dove is genuinely open, whatever it does next.
 
-Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defensive bonus all get it out of the open. But it isn't required to, and a Tollbird that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
+Most of the time it retreats straight back to the post — WATCHFUL PERCH, FLOW, DART, and PATIENCE's own defense effect all get it out of the open. But it isn't required to, and a Tollbird that's already Grounded, facing a party that hasn't made it pay yet, may stay one extra beat to land THORN LARDER first — exiling a card is worth the added exposure if nobody's punished the opening. TRACE rewards a party leaning on one color; STRIKE is just there to hurt when nothing cleverer is on offer.
 
-The lesson is the window. Players who swing at a perched Tollbird hit Evade and waste turns. Players who read the wheel — and use **Wait** to slot their heavy hitters into the beat right after a dive — take it apart. The Tollbird teaches the party to fight the *order*, not the target.
+The lesson is the window. Players who swing at a perched Tollbird hit Evade and waste turns. Players who read the wheel — and use **Initiative Shift** to slot their heavy hitters into the beat right after a dive — take it apart. The Tollbird teaches the party to fight the *order*, not the target.
 
 **At 4 HP or less** it abandons the fight and its larder both, and does not return this season.
 
@@ -63,5 +63,4 @@ At Creature Threat Rating 9 — even with the party, not below it — a Tollbird
 
 - `places/briarwatch.md` — The Larder Fence, a worked encounter using this creature, terrain and all
 - `bestiary/skeinwing.md` — not prey, never hunted; the rare, impossible thing a larder can hold by accident
-- `rules/combat.md` — the Wait action this creature teaches
-- `rules/card-glossary.md` — Exile (Thorn Larder)
+- `rules/card-glossary.md` — Initiative Shift, the turn-order mechanic this creature teaches; Exile (Thorn Larder)

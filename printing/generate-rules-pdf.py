@@ -12,7 +12,7 @@ No nesting, no images, no real hyperlinks (backtick file paths render
 as inline code, not anchors).
 
 Usage:
-  python3 generate-rules-pdf.py                    → rules/player-guide.md
+  python3 generate-rules-pdf.py                    → packet (the-summons.md + character-creation.md)
   python3 generate-rules-pdf.py gm-guide.md         → any rules/*.md file
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
@@ -67,6 +67,27 @@ def convert(md_text, title):
 
     while i < n:
         line = lines[i]
+
+        # Print-only exclusion. Content between these markers stays in the
+        # source file — where authoring reminders and count-drift notes earn
+        # their keep — but never reaches a printed packet. HTML comments, so
+        # they're invisible to every other Markdown renderer too.
+        if line.strip() == '<!-- print:skip-start -->':
+            i += 1
+            while i < n and lines[i].strip() != '<!-- print:skip-end -->':
+                i += 1
+            i += 1  # consume the end marker
+            continue
+        if line.strip() == '<!-- print:skip-end -->':  # stray end, ignore
+            i += 1
+            continue
+
+        # A glossary keyword header carries its card count — "**(6) Counter
+        # Attack**". That's maintenance data for whoever maintains the file,
+        # not a rule anyone plays with, so drop the count and keep the
+        # keyword. Anchored to the line start and to the bold run, which is
+        # the only place this form appears.
+        line = re.sub(r'^\*\*\(\d+\)\s+', '**', line)
 
         if line.strip() == '':
             i += 1
@@ -321,10 +342,17 @@ em {{
 
 # Named multi-document builds. `packet` is the thing that actually goes out
 # to players: the Oracle's summons, then the plain mechanical guide behind it.
+# `play-reference` is the other half — what stays on the table during a
+# session rather than being read once at the start. Each file's own `# ` header
+# starts a fresh page, so the three sections stay physically separable.
 PACKETS = {
     'packet': {
         'title': 'A Summons to Eclipseria',
-        'files': ['the-summons.md', 'player-guide.md'],
+        'files': ['the-summons.md', 'character-creation.md'],
+    },
+    'play-reference': {
+        'title': 'Play Reference',
+        'files': ['combat.md', 'resolution.md', 'card-glossary.md'],
     },
 }
 
@@ -342,7 +370,7 @@ def resolve_src(fname):
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    arg = sys.argv[1] if len(sys.argv) > 1 else 'player-guide.md'
+    arg = sys.argv[1] if len(sys.argv) > 1 else 'packet'
 
     if arg in PACKETS:
         cfg = PACKETS[arg]
@@ -359,7 +387,7 @@ if __name__ == '__main__':
         output = f'{arg}.html'
         srclabel = ' + '.join(cfg['files'])
     else:
-        # tolerate a bare stem ('player-guide') as well as 'player-guide.md'
+        # tolerate a bare stem ('gm-guide') as well as 'gm-guide.md'
         fname = arg if arg.endswith('.md') else f'{arg}.md'
         src = resolve_src(fname)
         if not os.path.exists(src):

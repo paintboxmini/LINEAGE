@@ -4,7 +4,7 @@
 
 **Cards:** `cards/flower-snake.md`
 
-**Mind 3 / Body 1 / Soul 2 — HP 8**
+**Mind 3 / Body 1 / Soul 2 — HP 9**
 **Creature Threat Rating:** 6
 
 **Deck (6 — 3 Blue / 1 Red / 2 Green):** BLOOM STILLNESS, PETAL FEINT, VENOM MIND *(blue)* · NEEDLE BITE *(red)* · COIL DROP, SHED *(green)*

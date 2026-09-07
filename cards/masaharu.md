@@ -10,7 +10,7 @@ Signature cards for Masaharu. See `characters/masaharu.md`.
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 3. Reload.
-Defensive Bonus: Scry 1.
+Defense Effect: Scry 1.
 Range: Both
 *"Every shot is preceded by the same question."*
 
@@ -19,8 +19,8 @@ Range: Both
 **COLD READ**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2. Expose Blue — target gains Staggered.
-Defensive Bonus: Gain Evade.
+Effect: Scry 2. Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they gain Staggered.
+Defense Effect: Gain Evade.
 Range: Both
 *"The tell was always there."*
 
@@ -30,7 +30,7 @@ Range: Both
 RED — BODY
 Attack: Body + d8
 Effect: If target has Blind or Staggered, deal +2 damage.
-Defensive Bonus: Reload.
+Defense Effect: Reload.
 Range: Ranged
 *"One chance. He already knew when to take it."*
 
@@ -40,6 +40,6 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 1.
-Defensive Bonus: Scry 1, then draw 1 card. Reload.
+Defense Effect: Scry 1, then draw 1 card. Reload.
 Range: Both
 *"Even on the back foot, he's still counting."*

@@ -8,6 +8,22 @@ For how to *build* a new Weapon, Armor, or Artifact — the tier system, pricing
 
 ---
 
+## Crafting
+
+There's no recipe list, and there isn't going to be one. **The GM makes ingredients available — harvested, hunted, bought, earned — and the player decides what they want to try making from what they've actually got.** What's feasible, and what it actually does, is a table conversation, the same kind of judgment call as Magic Expression or a Passive's Applies When (`rules/character-creation.md`) — not a formula to solve.
+
+**Gated by what's in hand, not a free list.** A craft has to start from an ingredient the character actually has — found, bought, harvested, or earned. "I want to make X" with nothing behind it is a request for a quest to go get the thing, not a craft.
+
+Three questions the table actually needs to answer, in this order:
+
+1. **Does the fiction support it?** A Rootstalker Core plausibly becomes a thrown charm or a barrier — its own catalog entry already says so, below. Ground Sapphire Ant crystals plausibly season a dish (`bestiary/sapphire-ant.md`). A material with no relevant property doesn't get to produce an effect it never demonstrated.
+2. **What does it cost to make?** Real time, same as any other process — Luminova Powder, ground from a Leaf plus an hour of processing (below), is the existing worked example. The ingredient is spent whether the result is worth it or not.
+3. **How strong is the result, if it does something mechanical?** No roll decides this — it's still table talk — but if the table wants a number to check a result against rather than eyeballing it, the consumable pricing scale (`rules/equipment.md`, Pricing Consumables) applies the same way to a crafted item as a bought one. It isn't for sale, but it's still worth what it's worth.
+
+**This is already how Senshi works.** The Naturalist Collection (`places/capital/gilded-tusk.md`) isn't a menu he wrote in advance — it's built dish by dish from whatever creature the party actually brought him, worked out at the counter each time. Any other crafter in the world runs on the same principle: react to what's in hand, don't roll a formula.
+
+---
+
 ## Briarwatch
 
 *Full entries: `items/briarwatch-items.md`*

@@ -4,10 +4,10 @@
 
 **Cards:** `cards/fogcaller-basin.md`
 
-**Mind 2 / Body 4 / Soul 3 — HP 17**
+**Mind 2 / Body 4 / Soul 3 — HP 21**
 **Creature Threat Rating:** 9
 
-**Deck (9 — 2 Blue / 4 Red / 3 Green):** VEIL, AXIOM *(blue)* · TALON RUSH, BLINDSIDE, STARING CONTEST, DART *(red)* · SHROUD, FOGBURST, DUST *(green)*
+**Deck (9 — 2 Blue / 4 Red / 3 Green):** VEIL, AXIOM *(blue)* · TALON RUSH, BLINDSIDE, STARING CONTEST, DART *(red)* · SHROUD, FOGBURST, SMOKESCREEN *(green)*
 Initiative: 1d6 + 3
 
 ---
@@ -38,7 +38,7 @@ If Fogcaller drops below half HP, a second Fogcaller enters from the opposite tr
 **Shroud** — GREEN — SOUL
 Attack: Soul + d6
 Effect: Target enemy gains Evade and Blind until start of your next turn.
-Defensive Bonus: You gain Evade until start of your next turn.
+Defense Effect: You gain Evade until start of your next turn.
 Range: Both
 *"The fog doesn't hide you. It hides what's coming."*
 
@@ -47,7 +47,7 @@ Range: Both
 **Fogburst** — GREEN — SOUL
 Attack: Soul + d6
 Effect: All enemies in Frontline gain Blind until start of your next turn.
-Defensive Bonus: You may move positions.
+Defense Effect: You may move positions.
 Range: Both
 *"The world narrows to the sound of wings."*
 
@@ -56,7 +56,7 @@ Range: Both
 **Talon Rush** — RED — BODY
 Attack: Body + d8
 Effect: Move self and target to Frontline.
-Defensive Bonus: Move to any position.
+Defense Effect: Move to any position.
 Range: Melee
 *"It closes distance before you realize it moved."*
 

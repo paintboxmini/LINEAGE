@@ -94,6 +94,14 @@ Adjust from there for what actually happens at the table:
 
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
+## Pricing Reusable, Non-Slotted Items
+
+Some carried items are neither single-use nor a permanent equipment slot — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
+
+That's a third bucket, priced between the other two. Worth more than a consumable, since it's never used up. Worth far less than a Tier 1 permanent, since it isn't passive and isn't unlimited — once per combat is the ceiling, and only on a turn you're already spending the relevant action. **Price it at roughly 50 gold per point**, the same 1-point scale as the other two categories, just at its own rate. Mile-Marker Ring (60g) and Ledger Weight (45g) are the anchors here, the same role Luminova Leaves plays for consumables.
+
+Adjust the same way a consumable does: a real restriction beyond the baseline (attacker-only, once per combat, only on an action already being spent) is already priced into the base rate above — stack on more than that and the price should drop further, same as a consumable's drawback discount.
+
 ---
 
 ## More Fastball Ideas (Unnamed on Purpose)
@@ -126,7 +134,9 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 
 Artifacts don't run on the tier budget above — they're a different kind of object entirely. Per `rules/character-creation.md`: "resonant objects closely aligned with a Seat's domain... not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near." An Artifact's mechanics should read as an extension of a specific Seat's actual domain (`world/seats.md`), not a generic stat stick reskinned — design these bespoke, one at a time, the way a signature card set gets built for a specific creature rather than pulled from a shared budget table. No standard gold value for the same reason — an Artifact's worth is cosmological before it's economic, and pricing one at market undersells what it actually is.
 
-**Name comes first**, the same four parts as a person or a place (`rules/people.md`, `rules/places.md`) — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
+That's a formula's absence, not a sale's — Brother Alden does put a number on the two he carries (`items/capital-items.md`: the Quiet Index, 400 gold + a true secret archived; Cord of the Held, 250 gold + a real vow), and the shape of those two prices is the tell that nothing's actually broken: gold alone never closes the sale, there's always a second, non-gold cost standing in for what the item really is. What Alden charges to hand one over and what the Artifact costs to actually invoke (the Price, below) are two separate accountings — the second one still isn't predefined, and still emerges at the table the same as ever.
+
+**Name comes first**, the same four parts as a person or a place — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
 
 - **What it is.** The essential nature or function underneath the specifics — "a sword" isn't Named yet at this stage, just categorized.
 - **An actual name.** The Lightning Loop, not "a ring." An Artifact earns its Name the way anything does: specificity, not a formula.

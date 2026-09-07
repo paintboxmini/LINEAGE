@@ -8,7 +8,7 @@ The first three are carried by any Duskwick. THRESHOLD is specific to the large 
 RED — BODY
 Attack: Body + d6
 Effect: Defender gains Blind until the end of their next turn.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Melee
 *"The wick knows the difference between seeing and looking."*
 
@@ -18,7 +18,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d4
 Effect: Look at the Defenders hand and discard 1 of them.
-Defensive Bonus: Gain Evade
+Defense Effect: Gain Evade
 Range: Both
 *"You're not sure you saw it at all."*
 
@@ -28,7 +28,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d8. If you are below half HP, +1d6.
 Effect: None.
-Defensive Bonus: If you are below half HP, gain Resist and Evade.
+Defense Effect: If you are below half HP, gain Resist and Evade.
 Range: Both
 *"Brightest, right before the dark."*
 
@@ -38,6 +38,6 @@ Range: Both
 GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
 Effect: If you have not been attacked since your last turn, deal +4 damage and the defender gains Blind.
-Defensive Bonus: Apply Initiative Shift -2 to the attacker.
+Defense Effect: Apply Initiative Shift -2 to the attacker.
 Range: Both
 *"It is not in the room. It is not out of it either."*

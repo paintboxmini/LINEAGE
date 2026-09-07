@@ -8,7 +8,7 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 
 ---
 
-**Mind 3 / Body 3 / Soul 3 — HP 15**
+**Mind 3 / Body 3 / Soul 3 — HP 18**
 **Creature Threat Rating:** 9
 
 **Deck (9 — 3 Blue / 3 Red / 3 Green):** GENETIC SAMPLE, FOCUS, SIDESTEP *(blue)* · ADAPTIVE BITE, STRIKE, BRACE *(red)* · DISSOLVE AND KEEP, PATIENCE, FLOW *(green)*

@@ -8,7 +8,7 @@ Baseline signature set — see `bestiary/gene-thief-tardigrade.md` for the Genet
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 1 of the defender's deck.
-Defensive Bonus: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"It doesn't need to see you to know what you are."*
 
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY
 Attack: Body + d8
 Effect: Gain Deadly.
-Defensive Bonus: Gain Thorns.
+Defense Effect: Gain Thorns.
 Range: Melee
 *"Every meal teaches the next bite something."*
 
@@ -28,6 +28,6 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Heal 2 HP.
-Defensive Bonus: Heal 2 HP.
+Defense Effect: Heal 2 HP.
 Range: Both
 *"Nothing it eats is ever really gone."*

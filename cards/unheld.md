@@ -8,6 +8,6 @@ Cards sourced from the Unheld — obtained at the grey edge, where the water tea
 GREEN — SOUL — UNHELD
 Attack: Soul + d6
 Effect: Initiative Shift +2
-Defensive Bonus: Ignore the next negative Initiative Shift used against you
+Defense Effect: Ignore the next negative Initiative Shift used against you
 Range: Both
 *"The wheel turns for those who stop fighting it."*

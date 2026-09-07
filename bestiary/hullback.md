@@ -4,7 +4,7 @@
 
 *Solitary field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`). One per stretch of coast; a GM running a second one anywhere nearby should have a reason.*
 
-**Mind 3 / Body 7 / Soul 3 — HP 27**
+**Mind 3 / Body 7 / Soul 3 — HP 34**
 **Creature Threat Rating:** 13
 
 *CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9 (`CLAUDE.md`, Stat Blocks), and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Now roughly level with this repo's actual dungeon bosses (Root Heart 11 bespoke, Minotaur 14) rather than sitting below them — deliberately, per the deck-size note below, since the bigger numbers are paired with a smaller toolkit rather than a bigger one.*

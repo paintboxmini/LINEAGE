@@ -58,9 +58,15 @@ c's clockwise math also lands it exactly on the marker's own slot — but becaus
 
 Continuing from Example 2 (`b, d, c, a`, d holding a skip chip): during b's turn, b plays a card with Initiative Shift +1 on d.
 
-d's pending skip chip is removed — a fresh shift on a chip-holding token cancels whatever was pending, rather than stacking or compounding it. d then resolves under the new shift on its own terms: **d goes normally when the marker reaches it**, no bonus, no skip.
+d's pending skip chip is removed — a fresh shift on a chip-holding token cancels whatever was pending, rather than stacking or compounding it. d then resolves under the new shift on its own terms, and nothing about the cancelled chip carries into that.
 
-*Demonstrates that reshifting a chip-holding token doesn't carry over the old shift's unresolved math — it clears the slate and resolves fresh.*
+Resolving it fresh means resolving it by Example 3, because that is the case it is: d sits one slot off the marker, so +1 lands it exactly on the marker's own slot. `b, d, c, a` becomes **`d, b, c, a`**, with a **bonus chip** on d and a **skip chip** on b — the combatant displaced off the marker's slot, exactly as a was in Example 3.
+
+**Turn sequence:** b's turn ends → **d goes next** (bonus turn) → **b is skipped** (chip removed) → c goes → a goes.
+
+*Demonstrates that reshifting a chip-holding token doesn't carry over the old shift's unresolved math — it clears the slate and resolves fresh, under whatever case the new shift actually lands in.*
+
+*(Corrected 2026-09-06. This example previously read "d goes normally when the marker reaches it, no bonus, no skip," which contradicted Example 3 on identical geometry — landing on the marker's slot is the bonus case whether or not the token was carrying a chip a moment earlier. Example 3 governs.)*
 
 ---
 
