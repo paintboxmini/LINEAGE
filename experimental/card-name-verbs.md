@@ -96,17 +96,17 @@ Where a card offsets strength with a cost, the name should imply sacrifice or st
 
 ## Already in use
 
-These 19 are live card names as of 2026-09-06 and cannot be reused as-is. Recheck rather than trust this list once cards have been added or renamed — `python3 combatsimulations/cards.py` loads every card, and `printing/generate-cards.py` is what actually breaks on a collision.
+These 22 are live card names as of 2026-09-07 and cannot be reused as-is. Recheck rather than trust this list once cards have been added or renamed — `python3 combatsimulations/cards.py` loads every card, and `printing/generate-cards.py` is what actually breaks on a collision.
 
-Align · Bind · Brace · Break · Charge · Climb · Delay · Drag · Feint · Grapple · Guard · Interrupt · Lunge · Rally · Resonate · Shed · Sidestep · Surge · Witness
+Align · Awaken · Bind · Bolster · Brace · Break · Charge · Climb · Delay · Drag · Feint · Grapple · Guard · Interrupt · Lunge · Mend · Rally · Resonate · Shed · Sidestep · Surge · Witness
 
 ---
 
 ## Where the gaps are
 
-As of the 2026-09-06 balance pass, the pool is thin in exactly two places, and new cards land most usefully there:
+The 2026-09-06 balance pass left the pool thin in exactly two places. One is now filled; new cards land most usefully in the other.
 
-- **Green melee.** The only untaken Green melee cards are BRISTLE, a mechanical duplicate of BRAMBLE, and CONSUME. Green cannot absorb another melee loss from the Oracle.
+- **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, drawn from the Green list above. Before that the only untaken Green melee cards were BRISTLE, a mechanical duplicate of BRAMBLE, and CONSUME, and Green could not absorb another melee loss from the Oracle. It now has three benched melee cards to lose.
 - **Blue melee.** Six of ten are in the Oracle; of the rest, UNNAME and TAINT are barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for.
 
 Red has bench depth at every range.

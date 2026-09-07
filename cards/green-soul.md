@@ -461,3 +461,33 @@ Effect: Target ally heals 4 and draws 1.
 Defense Effect: Target ally gains Resist and draws 1.
 Range: Ranged
 *"I make the opening. You take it."*
+
+---
+
+**MEND**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Pay 2 HP, target ally heals 8 HP
+Defense Effect: Pay 2 HP, target ally heals 8 HP
+Range: Melee
+*"Close enough to see the wound is close enough to close it."*
+
+---
+
+**BOLSTER**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally gains Resist and Ward.
+Defense Effect: Gain Resist and Ward.
+Range: Melee
+*"Stand where I stand. Nothing gets through here."*
+
+---
+
+**AWAKEN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally gains Quick and may change position.
+Defense Effect: All allies in your position gain Quick.
+Range: Melee
+*"You were already moving. You just hadn't noticed."*

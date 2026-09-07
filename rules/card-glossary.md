@@ -11,9 +11,9 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 <!-- print:skip-start -->
 *The number before each keyword is how many cards in `cards/` use it. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
-*Fully recounted 2026-09-06 across all 334 card blocks in `cards/*.md` — 331 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
+*Fully recounted 2026-09-06, and kept current since; the pool now stands at 337 card blocks in `cards/*.md` — 334 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
 
-*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT was 338 — back to 337 once the duplicate BRACE was cut the same day, and 336 after INTERCEPT was folded into GUARD, 335 after HESITATE was cut as dominated, 334 after FALTER went with Staggered's removal from the Oracle. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
+*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT was 338 — back to 337 once the duplicate BRACE was cut the same day, and 336 after INTERCEPT was folded into GUARD, 335 after HESITATE was cut as dominated, 334 after FALTER went with Staggered's removal from the Oracle, and 337 once MEND, BOLSTER, and AWAKEN were added to fill the Green melee gap. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("ignores Evade") don't count toward the keyword being referenced — those cards are counted under whatever they actually grant instead. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at. Recount rather than trust these once cards have been added or reworked.*
 <!-- print:skip-end -->
@@ -79,7 +79,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(49) Resist**
+**(50) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -107,7 +107,7 @@ Rooted stacks. Each stack cancels one movement.
 
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the rule lives here, not restated on the card.
 
-**(6) Quick**
+**(7) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
 **(30) Scry X**
@@ -124,7 +124,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **(4) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, and reassignment (Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
-**(15) Ward**
+**(16) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
 **(3) Immunity**
