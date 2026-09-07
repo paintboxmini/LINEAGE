@@ -11,9 +11,9 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 <!-- print:skip-start -->
 *The number before each keyword is how many cards in `cards/` use it. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
-*Fully recounted 2026-09-06 across all 337 card blocks in `cards/*.md` — 334 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
+*Fully recounted 2026-09-06 across all 336 card blocks in `cards/*.md` — 333 colored plus the 3 colorless. Counted with `printing/generate-cards.py`'s own parser, so a card here is exactly what the print sheets treat as one: a block carrying both a name and a color.*
 
-*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT was 338 — back to 337 once the duplicate BRACE was cut the same day. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
+*That recount first reported 334, and was wrong. `generate-cards.py` was skipping any block that began with a `#` heading, which silently swallowed the four briarbundles cards that follow a `## Creature` heading with no `---` between — they were absent from the count and from the printed sheet both. With the parser fixed, 338. Which vindicates the block total this note carried before the recount: 337 was right, and 337 plus WAIT was 338 — back to 337 once the duplicate BRACE was cut the same day, and 336 after INTERCEPT was folded into GUARD. The per-keyword numbers below are still the recount's, since those were counted by a stated rule rather than inherited.*
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("ignores Evade") don't count toward the keyword being referenced — those cards are counted under whatever they actually grant instead. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at. Recount rather than trust these once cards have been added or reworked.*
 <!-- print:skip-end -->
@@ -38,7 +38,7 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 **(19) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(13) Anchored**
+**(14) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
 **(20) Blind**
@@ -79,7 +79,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(51) Resist**
+**(49) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -103,7 +103,7 @@ Cannot voluntarily change position until the end of your next turn. Applied imme
 
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the duration lives here, not restated on the card.
 
-**(5) Quick**
+**(6) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
 **(30) Scry X**

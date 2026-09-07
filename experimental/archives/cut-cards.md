@@ -4,6 +4,20 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — folded into another card
+
+**INTERCEPT**
+RED — BODY
+Attack: Body + d4
+Effect: Gain Protect and Resist 2
+Defense Effect: Gain Protect and Resist 2
+Range: Melee
+*"Stand between the storm and what you protect."*
+
+*Cut 2026-09-06: GUARD absorbed it. GUARD had been "All allies gain Resist" on both halves; it now reads "Gain Protect and Resist" — INTERCEPT's shape at INTERCEPT's die and range — and carries INTERCEPT's flavor text, which was always the better line for the body-blocking card. Two Red d4 Melee cards were doing one job; now one does it.*
+
+---
+
 ## Core set — cut as a duplicate
 
 **BRACE** *(green)*

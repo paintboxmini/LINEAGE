@@ -7,7 +7,7 @@
 **Mind 8 / Body 6 / Soul 10 — HP 66** *(bespoke — boss exception; formula baseline is 42)*
 **Creature Threat Rating:** 24
 
-**Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, TAINT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, RECOVER *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, YOU'RE NEXT *(green)*
+**Deck (24 — 8 Blue / 6 Red / 10 Green):** REGISTERED, STILLNESS, TAINT, ANTICIPATE, CALCULATE, FOCUS, PARTITION, UNDERSTANDING *(blue)* · NO VACANCY, GUARD, ENDURE, WEATHERED, STARING CONTEST, SECOND WIND *(red)* · YOUR TURN WILL COME, THE LEDGER NEVER CLOSES, PATIENCE, FLOW, WITNESS, SHADE AWAY, URGENCY, DELAY, MOCKERY, YOU'RE NEXT *(green)*
 
 *YOU'RE NEXT was promoted to core (`cards/green-soul.md`) — no longer a Patient Host signature, moved from the signature list above to the core green count it already occupied.*
 

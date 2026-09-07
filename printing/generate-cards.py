@@ -124,14 +124,23 @@ SETS = {
         # actual counts are noted per colour below, and Red and Green have
         # each drifted one off it.
         'cards': [
-            # Red (21) — melee 11 / both 7 / ranged 3. Off the 12/6/3 ideal
-            # by one; predates 2026-09-06 and is unexamined.
-            # GORE swapped for INTERCEPT 2026-08-03 — see content.py.
-            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'INTERCEPT',
+            # Red (21) — melee 12 / both 6 / ranged 3, back on the ideal
+            # split after the 2026-09-06 pass. GORE swapped for INTERCEPT
+            # 2026-08-03 — see content.py — and INTERCEPT has since been
+            # folded into GUARD and cut.
+            #   renamed: CLIFF SONG -> HEALING SONG (also Both -> Ranged),
+            #            RECOVER -> SECOND WIND
+            #   out:     INTERCEPT (cut), BLOOD IN THE GAP, EMERGENCY REPAIRS
+            #   in:      SHIELD BASH + SEISMIC REDIRECT (melee),
+            #            CERTAIN STRIKE (ranged)
+            # Three in for three out: INTERCEPT's cut left the colour at 20,
+            # so the two named replacements needed a third. SEISMIC REDIRECT
+            # is it, and it is the only Oracle card that teaches Rushdown.
+            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'SHIELD BASH',
             'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
-            'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
-            'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
-            'EMERGENCY REPAIRS', 'STARING CONTEST',
+            'WEATHERED', 'HEALING SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
+            'SECOND WIND', 'SLIP THE BLADE', 'SEISMIC REDIRECT',
+            'CERTAIN STRIKE', 'STARING CONTEST',
             # Blue (21) — ranged 12 / melee 6 / both 3. Two swaps 2026-09-06:
             # PREDICT (melee) was cut with the Sealed keyword and DISTRACT
             # (melee) takes its slot; PROFILE (ranged) is out for reading the
