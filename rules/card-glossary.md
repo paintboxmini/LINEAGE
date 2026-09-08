@@ -11,7 +11,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 <!-- print:skip-start -->
 *The number before each keyword is how many **core** cards use it — the four lists a deck actually builds from (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`, `cards/colorless.md`), 147 cards as of 2026-09-07. Creature signature cards are deliberately excluded: they are one-offs written for a single stat block, so counting them tells you nothing about how common a keyword is in play. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
-*A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Staggered" — EXPOSED) and negations ("cannot be affected by Blind" — CERTAIN STRIKE) don't count toward the keyword being referenced; those cards are counted under whatever they actually grant instead. Case doesn't matter — several cards write "unpreventable" in lower case mid-sentence. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at.*
+*A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Staggered" — EXPOSED) and negations ("cannot be affected by Blind" — CERTAIN STRIKE) don't count toward the keyword being referenced; those cards are counted under whatever they actually grant instead. Case and inflection don't matter — several cards write "unpreventable" in lower case mid-sentence, STEAL says "Exiled" rather than "Exile", and three cards write "Positive Status Effect" singular. Match the word stem, not the glossary header. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at.*
 
 *To recount: `python3 combatsimulations/cards.py` loads every card, `core_pool()` in that module is exactly the four lists above, and a word-boundary case-insensitive search of the four text lines reproduces these numbers once the two exclusions above are taken out by hand.*
 
@@ -25,7 +25,7 @@ Deal this card's Attack damage back to the attacker, works with effects like dea
 **(0) Debuff**
 Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward can prevent.
 
-**(2) Positive Status Effects**
+**(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
 **(1) Critical**
@@ -54,7 +54,7 @@ Evade stacks. Each stack protects against one attack. Only one Evade triggers pe
 
 **Cover Evade is not this keyword.** Taking cover grants a dodge that rolls the same way but persists instead of being spent, and it takes the place of your stacks while it lasts rather than adding to them (`rules/combat.md`, Positioning → Cover).
 
-**(3) Exile**
+**(5) Exile**
 Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner's discard.
 
 **A status card that is exiled is destroyed instead** — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.
