@@ -56,6 +56,8 @@ Cards excluded by this rule are still perfectly good cards; they belong in creat
 
 **The expansion was drawn from the core lists, not written fresh.** Anything the deck is short of should be answered from the bench first — the pool holds well over a hundred cards nobody has seated, and a card that already exists has already been priced against its neighbours. Where a bench card was barred by the content rule but was otherwise the right answer, the fix was to rebalance that card rather than invent around it: four were reworked to qualify, which is recorded above the set in `printing/generate-cards.py`. Writing new cards is the last resort, for a gap the pool genuinely cannot fill.
 
+Twenty-one cards written on 2026-09-08 sit in the core lists as bench rather than in either Oracle set — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND, ANCHOR and HAMMER in Red; DECODE, REDIRECT, UNRAVEL, CORNER, PROBE, DISSECT and INVERT in Blue; HARMONIZE, CHANNEL, PROVOKE, STIR, SHELTER, ENTREAT and CONFRONT in Green. They were drafted as an expansion before the bench-first rule above existed, and they are kept because they are good cards, not because the deck needed them. Three carry shapes the pool had never held: INVERT cancels the other side's Effect for an exchange, CORNER locks both combatants in place rather than charging one with Rooted, and CHANNEL is the only modal card — pick one of three on either half. CONFRONT is the pool's only Green Counter Attack. They are available for creature decks, character decks, and any later Oracle seat.
+
 ---
 
 ## The Name Is Half the Card
