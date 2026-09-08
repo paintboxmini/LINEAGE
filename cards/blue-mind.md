@@ -305,16 +305,6 @@ Range: Ranged
 
 ---
 
-**EXPOSED**
-BLUE — MIND
-Attack: Mind + d4
-Effect: If the defender is Staggered, this attack has Critical.
-Defense Effect: Gain Evade.
-Range: Both
-*"You don't need strength. You need them to already be falling."*
-
----
-
 **UNMAKE**
 BLUE — MIND
 Attack: Mind + d4

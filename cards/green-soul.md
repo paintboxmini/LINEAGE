@@ -491,3 +491,13 @@ Effect: Target ally gains Quick and may change position.
 Defense Effect: All allies in your position gain Quick.
 Range: Melee
 *"You were already moving. You just hadn't noticed."*
+
+---
+
+**HEALING SONG**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: You and all allies heal 4 HP
+Defense Effect: You and all allies heal 4 HP
+Range: Ranged
+*"Wind through the fractures. The cliff remembers."*

@@ -4,6 +4,22 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut with the Critical keyword
+
+**EXPOSED**
+BLUE — MIND
+Attack: Mind + d4
+Effect: If the defender is Staggered, this attack has Critical.
+Defense Effect: Gain Evade.
+Range: Both
+*"You don't need strength. You need them to already be falling."*
+
+*Cut 2026-09-07, and the Critical keyword went with it. EXPOSED was the only card in the entire core pool that used Critical, and it had already been removed from the Oracle in the blue pass — so the glossary was carrying a full definition for something no player would ever meet. A keyword with one user is not a keyword, it is that card's text.*
+
+*The card was also doubly dead in a deck that no longer inflicts Staggered: with the Oracle down to a single gated Staggered card (OFF BALANCE), its attack half almost never fired, leaving a d4 that reads "Gain Evade" on defence and nothing on offence.*
+
+*Critical had three live references outside this card, all in equipment, and all were kept by writing the effect out longhand — "double this attack's base damage" — rather than by keeping the keyword: `rules/equipment.md`'s spiky-effects pricing note and its Tier 3 weapon example, and the design note on THE SILENT BLADE (`items/the-silent-choir-items.md`) that cites that example as precedent. The Trisect's decklist cited EXPOSED and now runs MARKED in the slot (`bestiary/trisect.md`).*
+
 ## Core set — cut with Staggered's removal from the Oracle
 
 **FALTER** *(was SECOND GUESS)*

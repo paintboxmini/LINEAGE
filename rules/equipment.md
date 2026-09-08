@@ -31,7 +31,7 @@ The gold values are a reference point for pricing at market or as loot, not a ha
 **The budget doesn't have to go entirely into the flat number.** A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:
 
 - **1 point ≈** +1 flat damage or reduction, **or** granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, **or** inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind "the first time you land a successful attack" or "the first time you're hit" so it triggers once per combat, not indefinitely.
-- Larger, spikier effects (Critical, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
+- Larger, spikier effects (doubled attack damage, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.
 - **Not every keyword is worth the same point regardless of context — check actual value, don't just price by name.** Protect reads like a strong defensive keyword but is genuinely one of the weakest through an action-economy lens: the party still eats the same total damage, just redirected onto whoever volunteered — no damage is actually prevented unless it's paired with something that mitigates the hit once it lands (Resist, Evade, and similar). Priced alone, it's worth well under 1 point — cheap enough to bundle in at Tier 1 alongside a real effect (e.g., start combat with Evade 1 and Protect 1) rather than ever anchoring a tier by itself. The general lesson: price a keyword by what it actually does for the action economy, not by how strong it sounds.
 
 **Worked examples, exactly as specified:**
@@ -115,7 +115,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 2:* Gain Rushdown for free the first time your turn would otherwise need it.
 - *Tier 3:* +2 damage; gain Deadly at the start of combat.
 - *Tier 3:* +1 damage; gain Deadly at the start of combat; inflict Weak on the first successful attack against you. (Three-way split of the same budget.)
-- *Tier 3:* Gain Critical the first time you attack each combat. (Whole budget on one spike.)
+- *Tier 3:* Double this attack's base damage the first time you attack each combat. (Whole budget on one spike.)
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 **Armor**

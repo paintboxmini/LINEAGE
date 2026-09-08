@@ -82,16 +82,6 @@ Range: Both
 
 ---
 
-**HEALING SONG**
-RED — BODY
-Attack: Body + d4
-Effect: You and all allies heal 4 HP
-Defense Effect: You and all allies heal 4 HP
-Range: Ranged
-*"Wind through the fractures. The cliff remembers."*
-
----
-
 **RALLY**
 RED — BODY
 Attack: Body + d4
@@ -548,5 +538,5 @@ RED — BODY
 Attack: Body + d4
 Effect: Target ally gains Deadly
 Defense Effect: You gain Deadly
-Range: Both
+Range: Ranged
 *"Precision compounds."*

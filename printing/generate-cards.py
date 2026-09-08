@@ -123,9 +123,9 @@ SETS = {
         ],
         # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
         # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
-        # led by that colour's own range identity. The ideal split is 12/6/3;
-        # actual counts are noted per colour below, and Red and Green have
-        # each drifted one off it.
+        # led by that colour's own range identity. The ideal split is 12/6/3
+        # and all three colours are on it; the per-colour notes below say
+        # which slots each change spent.
         'cards': [
             # Red (21) — melee 12 / both 6 / ranged 3, back on the ideal
             # split after the 2026-09-06 pass. GORE swapped for INTERCEPT
@@ -142,11 +142,23 @@ SETS = {
             # Three in for three out: INTERCEPT's cut left the colour at 20,
             # so the two named replacements needed a third. CLOSE IN is it,
             # and it is the only Oracle card that teaches Rushdown.
-            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'OFF BALANCE',
-            'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN',
-            'WEATHERED', 'HEALING SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
-            'SECOND WIND', 'SLIP THE BLADE', 'CLOSE IN',
-            'CERTAIN STRIKE', 'STARING CONTEST',
+            # 2026-09-07, the Deadly pass: Red had no way to raise its own
+            # damage anywhere in the deck — every effect was a status, a heal,
+            # a move, or a defensive gain, so the colour of raw damage
+            # expressed that only through die size.
+            #   out: HEALING SONG (reworked Green — see Green below),
+            #        ENDURE (flat 'Gain Resist' at d8 Melee; Red still holds
+            #        five Resist cards without it)
+            #   in:  RETALIATE (melee, d8 — same die and range as ENDURE, so
+            #        the swap is neutral on the die spread),
+            #        SHARPEN (ranged — reworked Both -> Ranged to keep the
+            #        3 ranged slots HEALING SONG's departure would have cost)
+            'ATTRITION', 'BLINDSIDE', 'GUARD', 'OFF BALANCE', 'OPEN GUARD',
+            'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            'CLOSE IN', 'RETALIATE',
+            'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
+            'SLIP THE BLADE',
+            'CERTAIN STRIKE', 'STARING CONTEST', 'SHARPEN',
             # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
@@ -179,11 +191,28 @@ SETS = {
             # the same day, onto a name Red already used; that duplicate was
             # cut 2026-09-06 as a twin of STEADFAST, which takes its slot
             # here — see experimental/archives/cut-cards.md.
-            'ACCEPTANCE', 'BRAMBLE', 'TWIN STRIKE', 'INSTINCT',
-            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'STEADFAST',
-            'SWAY', 'UNTOUCHED', 'PRIORITY', 'AID', 'COMMUNION',
-            'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
-            'SMOKESCREEN', 'OPENING',
+            # 2026-09-07, the Deadly pass: all three of Green's Deadly cards
+            # handed it to someone else, two of them on the defense half, so
+            # Deadly read as a Green support buff rather than a damage tool.
+            # Two go, and Red picks the keyword up.
+            #   out: RESONATE + SUPPORT (Deadly; COMMUNION stays because it is
+            #        the deck's only Green Scry, and its Deadly is defensive),
+            #        TWIN STRIKE (melee), STEADFAST (flat 'Gain Resist' at
+            #        d4 Both — Resist was the deck's most-represented keyword)
+            #   in:  PATIENCE (Anchored — the deck had two Anchored cards and
+            #        both were 'passive at start of your turn'; its attack half
+            #        also backfills the damage option TWIN STRIKE took away),
+            #        FLOW (Evade — Green had none, and this is Green's only d8
+            #        anywhere in the 21), MEND (melee support, which Green's
+            #        three melee slots had none of), HEALING SONG (reworked
+            #        from Red, where the damage colour was out-healing the
+            #        support colour in its own starting deck)
+            'ACCEPTANCE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SWAY', 'UNTOUCHED',
+            'PRIORITY', 'OPENING', 'PATIENCE',
+            'AID', 'COMMUNION', 'DEAD RECKONING', 'MOCKERY', 'HEALING SONG',
+            'FLOW',
+            'BIND', 'SMOKESCREEN', 'MEND',
         ],
     },
 }
