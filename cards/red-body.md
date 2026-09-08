@@ -14,7 +14,7 @@ Range: Melee
 
 **CHARGE**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d4
 Effect: You and the defender move into frontline
 Defense Effect: You and the attacker move into frontline
 Range: Both
@@ -24,9 +24,9 @@ Range: Both
 
 **ENDURE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d8
 Effect: Gain Resist.
-Defense Effect: Heal 3 HP
+Defense Effect: Gain Resist.
 Range: Melee
 *"What doesn't kill you has to try harder next time."*
 
@@ -35,16 +35,16 @@ Range: Melee
 **GUARD**
 RED — BODY
 Attack: Body + d4
-Effect: All allies gain Resist
-Defense Effect: All allies gain Resist
+Effect: Gain Protect and Resist.
+Defense Effect: Gain Protect and Resist.
 Range: Melee
-*"Protection shared is protection doubled."*
+*"Stand between the storm and what you protect."*
 
 ---
 
 **PUSH**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Move target to backline
 Defense Effect: Move target to backline
 Range: Melee
@@ -62,13 +62,13 @@ Range: Both
 
 ---
 
-**RECOVER**
+**SECOND WIND**
 RED — BODY
 Attack: Body + d4
-Effect: Draw 1 and heal 3 HP
-Defense Effect: Draw 1 and heal 3 HP
+Effect: Draw 1 and heal 5 HP
+Defense Effect: Draw 1 and heal 5 HP
 Range: Both
-*"Rest between battles wins the war."*
+*"You were done a moment ago. Your body disagrees."*
 
 ---
 
@@ -79,16 +79,6 @@ Effect: Pull defender to frontline
 Defense Effect: Pull attacker to frontline
 Range: Both
 *"The cliff always pulls things closer."*
-
----
-
-**CLIFF SONG**
-RED — BODY
-Attack: Body + d4
-Effect: You and all allies heal 2 HP
-Defense Effect: You and all allies heal 2 HP
-Range: Both
-*"Wind through the fractures. The cliff remembers."*
 
 ---
 
@@ -105,20 +95,10 @@ Range: Both
 **WEATHERED**
 RED — BODY
 Attack: Body + d6
-Effect: Each time you are attacked before your next turn, heal 2 HP
-Defense Effect: Gain Ward
+Effect: This combat, when you are damaged, gain Ward and heal 3 HP.
+Defense Effect: This combat, when you are damaged, gain Ward and heal 3 HP.
 Range: Melee
 *"What doesn't break you, builds you."*
-
----
-
-**INTERCEPT**
-RED — BODY
-Attack: Body + d4
-Effect: Gain Protect and Resist 2
-Defense Effect: Gain Protect and Resist 2
-Range: Melee
-*"Stand between the storm and what you protect."*
 
 ---
 
@@ -227,7 +207,7 @@ Range: Ranged
 RED — BODY
 Attack: Body + d6
 Effect: Gain Evade.
-Defense Effect: Move to the frontline.
+Defense Effect: Gain Quick.
 Range: Both
 *"If I live through it, I'm closer."*
 
@@ -256,8 +236,8 @@ Range: Melee
 **PAIN IS FUEL**
 RED — BODY
 Attack: Body + d6
-Effect: Gain Resist.
-Defense Effect: Gain Thorns.
+Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
+Defense Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
 Range: Melee
 *"Hit me. I dare you."*
 
@@ -276,8 +256,8 @@ Range: Both
 **GROUNDING STANCE**
 RED — BODY
 Attack: Body + d6
-Effect: You may ignore any ability that forces you to move positions until your next turn.
-Defense Effect: Gain Resist.
+Effect: You may ignore the next ability that forces you to move positions.
+Defense Effect: You may ignore the next ability that forces you to move positions.
 Range: Both
 *"Stand where you choose. Let the world move instead."*
 
@@ -316,7 +296,7 @@ Range: Melee
 **STARING CONTEST**
 RED — BODY
 Attack: Body + d4
-Effect: Change your place in the initiative order to immediately follow after any target. The new order takes effect this cycle.
+Effect: Change your place in the initiative order to immediately follow after the defender. The new order takes effect this cycle.
 Defense Effect: Move yourself to immediately follow the attacker in the initiative order.
 Range: Ranged
 *"Move first and you've already lost."*
@@ -433,13 +413,13 @@ Range: Both
 
 ---
 
-**SEISMIC REDIRECT**
+**CLOSE IN**
 RED — BODY
 Attack: Body + d6
 Effect: Rushdown.
 Defense Effect: Counter Attack.
 Range: Melee
-*"The correction comes to you."*
+*"Distance was the only thing protecting them."*
 
 ---
 
@@ -475,7 +455,7 @@ Range: Melee
 
 **OPEN GUARD**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Vulnerable.
 Range: Melee
@@ -495,7 +475,7 @@ Range: Melee
 
 **ATTRITION**
 RED — BODY
-Attack: Body + d6
+Attack: Body + d8
 Effect: Defender gains Weak.
 Defense Effect: Attacker gains Weak.
 Range: Melee
@@ -525,7 +505,7 @@ Range: Both
 
 **BLINDSIDE**
 RED — BODY
-Attack: Body + d8
+Attack: Body + d6
 Effect: Defender gains Blind.
 Defense Effect: Attacker gains Blind.
 Range: Melee
@@ -543,10 +523,90 @@ Range: Melee
 
 ---
 
-**SHIELD BASH**
+**OFF BALANCE**
 RED — BODY
 Attack: Body + d4
-Effect: Defender gains Staggered.
+Effect: Only on a clean win — not a tie. Defender gains Staggered.
 Defense Effect: Counter Attack. Gain Resist. On a clean win only.
 Range: Melee
 *"The shield is also a weapon."*
+
+---
+
+**SHARPEN**
+RED — BODY
+Attack: Body + d4
+Effect: Target ally gains Deadly
+Defense Effect: You gain Deadly
+Range: Ranged
+*"Precision compounds."*
+
+---
+
+**CLEAVE**
+RED — BODY
+Attack: Body + d8
+Effect: This attack also deals half its damage, rounded down, to every other enemy in the defender's position.
+Defense Effect: Deal 3 damage to the attacker.
+Range: Melee
+*"One swing. It was never aimed at one of you."*
+
+---
+
+**MAUL**
+RED — BODY
+Attack: Body + d8
+Effect: Gain Deadly. Deal +2 damage this attack.
+Defense Effect: Gain Deadly.
+Range: Melee
+*"Harder than last time. Harder again after."*
+
+---
+
+**SKEWER**
+RED — BODY
+Attack: Body + d6
+Effect: Lifesteal — heal yourself for the full damage dealt.
+Defense Effect: Gain Thorns 2.
+Range: Melee
+*"What comes out of you goes into me. That is the arrangement."*
+
+---
+
+**SHOULDER**
+RED — BODY
+Attack: Body + d6
+Effect: Move the defender to the other position, and move with them.
+Defense Effect: Gain Protect.
+Range: Melee
+*"You are going somewhere. I am coming too."*
+
+---
+
+**EXPEND**
+RED — BODY
+Attack: Body + d6
+Effect: Exile 1 card from your hand. Gain Deadly twice.
+Defense Effect: Exile 1 card from your discard pile. Gain Resist.
+Range: Both
+*"Spend it. There is no later worth saving for."*
+
+---
+
+**ANCHOR**
+RED — BODY
+Attack: Body + d4
+Effect: Anchored — gain Ward.
+Defense Effect: Anchored — gain Ward.
+Range: Both
+*"Set your weight. Let it break on you."*
+
+---
+
+**HAMMER**
+RED — BODY
+Attack: Body + d4
+Effect: Deal 4 unpreventable damage to any enemy.
+Defense Effect: Gain Resist and Thorns 1.
+Range: Ranged
+*"Thrown, it is still a hammer."*

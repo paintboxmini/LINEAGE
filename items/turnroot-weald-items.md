@@ -8,7 +8,7 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
-*Price: ~40 gold*
+*Price: ~45 gold (two points of effect at the flat 15/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 

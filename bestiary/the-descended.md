@@ -20,7 +20,7 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 **Creature Threat Rating:** 6
 
 
-**Deck (6 — 2 Blue / 3 Red / 1 Green):** STILLNESS, FELT YOU COMING *(blue)* · SEISMIC REDIRECT, IRON GRIP, SLITHER LUNGE *(red)* · DOWNWARD *(green)*
+**Deck (6 — 2 Blue / 3 Red / 1 Green):** STILLNESS, FELT YOU COMING *(blue)* · CLOSE IN, IRON GRIP, SLITHER LUNGE *(red)* · DOWNWARD *(green)*
 ---
 
 ## Passives

@@ -20,6 +20,59 @@ Your deck is not just mechanics. It's how your character thinks.
 
 ---
 
+## What Each Colour Tends Toward
+
+General conventions, not laws. A card that breaks one for a good reason is fine; a colour that breaks its own convention constantly has stopped meaning anything.
+
+- **Red — self-buffs and raw damage.** The biggest dice live here.
+- **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
+- **Green — flexibility and support.** Healing, allies, movement, adaptability.
+
+The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
+
+**Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
+
+---
+
+## The Oracle Deck
+
+The starting Oracle deck is where a player learns what the game is, so it is deliberately narrower than the card pool it draws from. **Nothing in it reaches into an enemy's hand, deck, or stats directly.** Specifically, no Oracle card may:
+
+- reveal or look at an enemy's hand
+- force an enemy to discard
+- insert status cards into an enemy's hand, deck, or discard
+- manipulate an enemy's deck
+- reduce an enemy's stats
+- apply Sealed
+- apply Staggered, with one exception (below)
+
+**Staggered is the one near-total ban.** It costs its target a whole attack or a whole defence, which is a bigger swing than anything else on this list and not something a starting deck should hand out four times over. Red keeps exactly one card that inflicts it — OFF BALANCE — and only on a clean win, so it has to be earned rather than traded for.
+
+Acting on **your own** hand and deck is fine — drawing, discarding to pay a cost, Scry on your own deck. So is control that operates on the board rather than on someone's resources: statuses, positioning, initiative, targeting restrictions, removing buffs an enemy already has. The line is between changing the situation and going through their possessions.
+
+Cards excluded by this rule are still perfectly good cards; they belong in creature decks, character decks, and later Oracle additions. The list lives in `printing/generate-cards.py`'s `SETS`, with the same rule restated above it.
+
+**The deck comes in two sets, 63 cards then 21.** The original prints as `oracle`; the expansion prints separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
+
+**The expansion was drawn from the core lists, not written fresh.** Anything the deck is short of should be answered from the bench first — the pool holds well over a hundred cards nobody has seated, and a card that already exists has already been priced against its neighbours. Where a bench card was barred by the content rule but was otherwise the right answer, the fix was to rebalance that card rather than invent around it: four were reworked to qualify, which is recorded above the set in `printing/generate-cards.py`. Writing new cards is the last resort, for a gap the pool genuinely cannot fill.
+
+Twenty-one cards written on 2026-09-08 sit in the core lists as bench rather than in either Oracle set — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND, ANCHOR and HAMMER in Red; DECODE, REDIRECT, UNRAVEL, CORNER, PROBE, DISSECT and INVERT in Blue; HARMONIZE, CHANNEL, PROVOKE, STIR, SHELTER, ENTREAT and CONFRONT in Green. They were drafted as an expansion before the bench-first rule above existed, and they are kept because they are good cards, not because the deck needed them. Three carry shapes the pool had never held: INVERT cancels the other side's Effect for an exchange, CORNER locks both combatants in place rather than charging one with Rooted, and CHANNEL is the only modal card — pick one of three on either half. CONFRONT is the pool's only Green Counter Attack. They are available for creature decks, character decks, and any later Oracle seat.
+
+---
+
+## The Name Is Half the Card
+
+A card's name carries as much weight as its Effect line, because the name is what a player spends outside combat. Discarding a card for Advantage asks the table whether its *name* plausibly supports what you're attempting (`rules/resolution.md`, Advantage & Disadvantage) — so a name is a promise about the kinds of noncombat problems that card can help solve.
+
+Two consequences when writing or reworking a card:
+
+- **A broad name is a stronger card**, whatever its Effect line says, because it applies to more attempts. FOCUS supports nearly anything requiring concentration; CARD TRICK supports card tricks. Breadth is real power, so weigh it the way you weigh a die size — a wide name on top of a strong Effect is a card that does two jobs. That cuts the other way too: a deliberately narrow name is a fair place to pay for an unusually good Effect.
+- **Renaming a card changes what it can do out of combat**, not just how it reads. Check that the new name still covers the same ground, and that nothing else already holds it — duplicate names break the print pipeline's by-name lookups, which is exactly how the Red and Green BRACE collided (`experimental/archives/cut-cards.md`).
+
+A working vocabulary to name from, sorted by colour and by mechanic, with names already used by a card struck out of it: `experimental/card-name-verbs.md`.
+
+---
+
 ## Card Glossary
 
 Short versions for reading cards. `rules/card-glossary.md` is canonical for keywords like the one below; `rules/combat.md` is canonical for Range and Ongoing Effects.
