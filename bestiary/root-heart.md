@@ -10,7 +10,7 @@ Deck (11 — 2 Blue / 5 Red / 4 Green): FOREST MEMORY, TRACE · ROOT LASH, IRON 
 *Core fill completed 2026-09-06; the list had declared 11 and named 9 since it was written. **TRACE** is FOREST MEMORY's mechanic in another key — both read the party's colour habits and charge them for repeating themselves, which is what a forest that "remembers every path ever walked" should feel like from the inside. **DIG IN** is Anchored, and the Root Heart is Immobile: Anchored ends when its holder moves, so on the one creature that can never move, it never ends. Its immobility stops reading as a limitation and starts paying.*
 **Position:** Immobile. Always counts as being in both Frontline and Backline (gigantic).
 
-**Immobile means immobile.** No card moves it — not SWAY, not HEAVE AND HAUL, not a pull, not a Rushdown, nothing that would reposition an ordinary combatant. It is a tree the size of a building growing out of a crater. Moving it takes genuine table invention: a plan, the fiction to support it, and the GM agreeing the plan earns it. That is a story the party tells, not a card they play. This is also why DIG IN never stops paying for it — Anchored ends when its holder moves, and this one doesn't.
+**Immobile means immobile.** No card moves it — not CALCULATE, not HEAVE AND HAUL, not a pull, not a Rushdown, nothing that would reposition an ordinary combatant. It is a tree the size of a building growing out of a crater. Moving it takes genuine table invention: a plan, the fiction to support it, and the GM agreeing the plan earns it. That is a story the party tells, not a card they play. This is also why DIG IN never stops paying for it — Anchored ends when its holder moves, and this one doesn't.
 
 ## Read-Aloud Description
 

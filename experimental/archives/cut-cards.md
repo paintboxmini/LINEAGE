@@ -4,6 +4,30 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut as a three-way duplicate
+
+**GIVE WAY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Evade.
+Defense Effect: Gain Evade.
+Range: Both
+*"Meet it and you break. Move and it passes."*
+
+**SWAY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Evade.
+Defense Effect: Gain Evade.
+Range: Both
+*"The current doesn't ask permission."*
+
+*Both cut 2026-09-08. GIVE WAY and SHADE AWAY had been identical for as long as both existed — same colour, same die, same range, same text on both halves — and GIVE WAY had already lost its Oracle seat to TWIN STRIKE in the green pass for exactly that reason. SWAY joined them the same day: its rewrite to "Gain Evade" on both lines turned a positioning card into the third copy of the same card. Three collapse to one, and SHADE AWAY takes the Oracle slot.*
+
+*SWAY's loss is not free — it was Green's only card that moved a single enemy on its own, leaving MIRROR STEP (which moves you too) and HEAVE AND HAUL (which moves a whole position) to cover that ground, with Blue's CALCULATE as the clean version. Its decklist seats went to SHADE AWAY (Haywight, whose passive already grants Evade) and MIRROR STEP (the Gluttony Abomination, which wants to close). The Root Heart's "no card moves it" ruling now names CALCULATE as its example (`bestiary/root-heart.md`).*
+
+*Replacing them: GUIDE, the first card in the pool that grants Evade to somebody else. Nine Evade cards existed before it and every one of them pointed at its own caster.*
+
 ## Core set — cut with the Critical keyword
 
 **EXPOSED**

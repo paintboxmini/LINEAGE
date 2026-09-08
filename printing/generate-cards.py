@@ -209,7 +209,12 @@ SETS = {
             #        support colour in its own starting deck)
             # 2026-09-08, Drew's hand pass over the printed Green sheet.
             #   renamed: ACCEPTANCE -> RELEASE (it read as a state of mind
-            #            rather than an action a card can take)
+            #            rather than an action a card can take),
+            #            DEAD RECKONING -> DISORIENT (the old name described
+            #            what the caster does, not what the target suffers)
+            #   swapped: SWAY -> SHADE AWAY. SWAY's rewrite made it the third
+            #            identical 'Gain Evade' card at d4 Both; the three
+            #            collapsed to one and SHADE AWAY took the slot.
             #   out:     UNTOUCHED — this is the one place the pass leaves a
             #            hole: it was Green's rung on the Immunity ladder
             #            (UNBROKEN / LAST RESORT / UNTOUCHED, `rules/cards.md`),
@@ -219,9 +224,9 @@ SETS = {
             #            which would have left Green with two melee cards and
             #            both of them control. Not Drew's pick; swap freely.
             'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SWAY', 'PRIORITY',
+            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
             'OPENING', 'PATIENCE', 'MEND',
-            'AID', 'COMMUNION', 'DEAD RECKONING', 'MOCKERY', 'HEALING SONG',
+            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BOLSTER',
         ],

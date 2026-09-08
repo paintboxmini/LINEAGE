@@ -43,16 +43,6 @@ Range: Ranged
 
 ---
 
-**SWAY**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-Range: Both
-*"The current doesn't ask permission."*
-
----
-
 **STEAL**
 GREEN — SOUL
 Attack: Soul + d4
@@ -87,7 +77,7 @@ Range: Both
 **PATIENCE**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Anchored — your attacks deal +4 damage.
+Effect: Anchored — Target ally heals 3 HP
 Defense Effect: Anchored — Target ally heals 3 HP
 Range: Both
 *"The Edge reveals itself to those who wait."*
@@ -264,7 +254,7 @@ Range: Ranged
 
 ---
 
-**DEAD RECKONING**
+**DISORIENT**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Blind.
@@ -414,16 +404,6 @@ Range: Both
 
 ---
 
-**GIVE WAY**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-Range: Both
-*"Meet it and you break. Move and it passes."*
-
----
-
 **BRAMBLE**
 GREEN — SOUL
 Attack: Soul + d4
@@ -501,3 +481,13 @@ Effect: You and all allies heal 5 HP
 Defense Effect: You and all allies heal 5 HP
 Range: Ranged
 *"Wind through the fractures. The cliff remembers."*
+
+---
+
+**GUIDE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally gains Evade.
+Defense Effect: Target ally gains Evade.
+Range: Ranged
+*"Left. Now. Don't ask."*
