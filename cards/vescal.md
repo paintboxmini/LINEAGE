@@ -11,7 +11,7 @@ Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and sup
 **CENSURE**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2 — they cannot change position for 2 turns.
+Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2.
 Defense Effect: Attacker gains Rooted 2.
 Range: Melee
 *"Be still. This has already been decided."*

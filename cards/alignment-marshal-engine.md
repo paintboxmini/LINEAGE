@@ -4,7 +4,7 @@
 
 ---
 
-*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md` (Seismic Redirect keeps its name; Correction Grip is de-flavored as IRON GRIP) — Alignment Marshal's deck uses those core cards in their place.*
+*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md`, renamed CLOSE IN and IRON GRIP — Alignment Marshal's deck uses those core cards in their place. (Seismic Redirect kept its name on promotion and lost it on 2026-09-06, when it entered the Oracle: the starting deck wants names broad enough to spend outside combat, and "seismic" only ever described one thing.)*
 
 ---
 

@@ -4,6 +4,94 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut as a three-way duplicate
+
+**GIVE WAY**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Evade.
+Defense Effect: Gain Evade.
+Range: Both
+*"Meet it and you break. Move and it passes."*
+
+*Cut 2026-09-08. GIVE WAY and SHADE AWAY had been identical for as long as both existed — same colour, same die, same range, same text on both halves — and GIVE WAY had already lost its Oracle seat to TWIN STRIKE in the green pass for exactly that reason.*
+
+*SWAY was cut alongside it the same day and for the same reason: its rewrite to "Gain Evade" on both lines made it the third copy. It did not stay cut. Its original text — move the defender to the other position, gain Quick on defence — went to the Root Heart as a signature card (`cards/root-heart-weald.md`), where an Immobile boss that repositions everyone but itself is the better home for it than the core list ever was. It took BRISTLE's slot in that deck.*
+
+*So the core list is down one Evade card, not two, and its Green decklist seats moved: the Haywight took SHADE AWAY, whose Evade its passive already leans on, and the Gluttony Abomination took MIRROR STEP, which closes the distance the way SWAY used to. The Root Heart's "no card moves it" ruling cited SWAY as its example and now cites CALCULATE — the creature holds the card and still cannot be moved by it.*
+
+*Replacing GIVE WAY: GUIDE, the first card in the pool that grants Evade to somebody else. Nine Evade cards existed before it and every one of them pointed at its own caster.*
+
+## Core set — cut with the Critical keyword
+
+**EXPOSED**
+BLUE — MIND
+Attack: Mind + d4
+Effect: If the defender is Staggered, this attack has Critical.
+Defense Effect: Gain Evade.
+Range: Both
+*"You don't need strength. You need them to already be falling."*
+
+*Cut 2026-09-07, and the Critical keyword went with it. EXPOSED was the only card in the entire core pool that used Critical, and it had already been removed from the Oracle in the blue pass — so the glossary was carrying a full definition for something no player would ever meet. A keyword with one user is not a keyword, it is that card's text.*
+
+*The card was also doubly dead in a deck that no longer inflicts Staggered: with the Oracle down to a single gated Staggered card (OFF BALANCE), its attack half almost never fired, leaving a d4 that reads "Gain Evade" on defence and nothing on offence.*
+
+*Critical had three live references outside this card, all in equipment, and all were kept by writing the effect out longhand — "double this attack's base damage" — rather than by keeping the keyword: `rules/equipment.md`'s spiky-effects pricing note and its Tier 3 weapon example, and the design note on THE SILENT BLADE (`items/the-silent-choir-items.md`) that cites that example as precedent. The Trisect's decklist cited EXPOSED and now runs MARKED in the slot (`bestiary/trisect.md`).*
+
+## Core set — cut with Staggered's removal from the Oracle
+
+**FALTER** *(was SECOND GUESS)*
+BLUE — MIND
+Attack: Mind + d4
+Effect: Defender gains Staggered.
+Defense Effect: Attacker gains Staggered.
+Range: Melee
+*"The step that does not land where it meant to."*
+
+*Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
+
+## Core set — cut as strictly dominated
+
+**HESITATE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Apply Initiative Shift -1 to the defender.
+Defense Effect: Apply Initiative Shift -1 to the attacker.
+Range: Melee
+*"You watched them decide. That took a moment they needed."*
+
+*Cut 2026-09-06: DISTRACT is the same card, better. Same colour, same Melee range, same symmetric Initiative Shift on both halves — but a d6 against HESITATE's d4, and -2 against its -1. Bigger die and bigger effect at once leaves no board state where you would rather hold this one. The pair only collided when DISTRACT was added to the Oracle earlier the same day to fill PREDICT's melee slot; nobody checked it against the melee Initiative Shift card already sitting there.*
+
+---
+
+## Core set — folded into another card
+
+**INTERCEPT**
+RED — BODY
+Attack: Body + d4
+Effect: Gain Protect and Resist 2
+Defense Effect: Gain Protect and Resist 2
+Range: Melee
+*"Stand between the storm and what you protect."*
+
+*Cut 2026-09-06: GUARD absorbed it. GUARD had been "All allies gain Resist" on both halves; it now reads "Gain Protect and Resist" — INTERCEPT's shape at INTERCEPT's die and range — and carries INTERCEPT's flavor text, which was always the better line for the body-blocking card. Two Red d4 Melee cards were doing one job; now one does it.*
+
+---
+
+## Core set — cut as a duplicate
+
+**BRACE** *(green)*
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Resist.
+Defense Effect: Gain Resist.
+Range: Both
+*"Hold."*
+
+*Cut 2026-09-06: two problems, one card. It was mechanically identical to STEADFAST (`cards/green-soul.md`) — same colour, stat, die, range, and both effects — and its name collided with the Red BRACE in `cards/red-body.md`, the only duplicate name in the whole card corpus. The collision was created by the SETTLE → BRACE rename on 2026-08-26, which renamed this card onto a name that was already taken. It mattered because `printing/generate-cards.py` resolves a set's fixed card list by name into a dict, so whichever file parses last silently wins; five bestiary decks cite BRACE in their red sections and the Oracle cited it in its green one. The Oracle's green slot now holds STEADFAST, which does the same thing under a name that carries the same weight for a noncombat Advantage discard.*
+
+---
+
 ## Core set — cut following the keyword-glossary trim
 
 Drew cut Obscure, Reveal Hand, Expose [Color], Locked, Sealed, and Future-Lock X from `rules/card-glossary.md` (2026-09-06). Every core-pool card built on one of those keywords moves here; creature and character decks keep theirs as printed — the cut is a glossary trim, not a retroactive rewrite of everything that ever used the term.
