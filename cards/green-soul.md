@@ -70,7 +70,7 @@ Attack: Soul + d6
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defense Effect: Lose 2 HP. Draw 2 cards, then discard 1.
 Range: Both
-*"The wise listen to what wants to be heard."*
+*"Give up the card. Keep what it taught you."*
 
 ---
 
@@ -94,13 +94,13 @@ Range: Ranged
 
 ---
 
-**URGENCY**
+**HASTEN**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift +1 to all allies
 Defense Effect: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Both
-*"The tide waits for those who know when to flow."*
+*"Sooner. All of you. Now."*
 
 ---
 
@@ -134,13 +134,13 @@ Range: Ranged
 
 ---
 
-**BALANCE**
+**TOPPLE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Staggered.
 Defense Effect: Attacker gains Staggered.
 Range: Ranged
-*"Balance does not divide — it multiplies."*
+*"Nothing about them was wrong except the ground."*
 
 ---
 
@@ -214,7 +214,7 @@ Range: Both
 
 ---
 
-**CARRIED WOUND**
+**UNBURDEN**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Transfer 1 status card from any ally's hand or discard to the defender
@@ -264,7 +264,7 @@ Range: Ranged
 
 ---
 
-**SYNCHRONY**
+**UNIFY**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Until the end of combat, allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
@@ -320,7 +320,7 @@ Attack: Soul + d6
 Effect: Anchored — at the start of each of your turns, heal 5 HP.
 Defense Effect: Gain Deadly.
 Range: Both
-*"The unshaken abide, while chaos churns."*
+*"It is not waiting for anything. Waiting is only what it looks like."*
 
 ---
 
@@ -354,7 +354,7 @@ Range: Melee
 
 ---
 
-**STEADFAST**
+**ABIDE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Resist.

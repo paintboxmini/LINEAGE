@@ -88,7 +88,7 @@ Defense Effect: Gain Resist.
 Range: Both
 *"Hold."*
 
-*Cut 2026-09-06: two problems, one card. It was mechanically identical to STEADFAST (`cards/green-soul.md`) — same colour, stat, die, range, and both effects — and its name collided with the Red BRACE in `cards/red-body.md`, the only duplicate name in the whole card corpus. The collision was created by the SETTLE → BRACE rename on 2026-08-26, which renamed this card onto a name that was already taken. It mattered because `printing/generate-cards.py` resolves a set's fixed card list by name into a dict, so whichever file parses last silently wins; five bestiary decks cite BRACE in their red sections and the Oracle cited it in its green one. The Oracle's green slot now holds STEADFAST, which does the same thing under a name that carries the same weight for a noncombat Advantage discard.*
+*Cut 2026-09-06: two problems, one card. It was mechanically identical to ABIDE (`cards/green-soul.md`) — same colour, stat, die, range, and both effects — and its name collided with the Red BRACE in `cards/red-body.md`, the only duplicate name in the whole card corpus. The collision was created by the SETTLE → BRACE rename on 2026-08-26, which renamed this card onto a name that was already taken. It mattered because `printing/generate-cards.py` resolves a set's fixed card list by name into a dict, so whichever file parses last silently wins; five bestiary decks cite BRACE in their red sections and the Oracle cited it in its green one. The Oracle's green slot now holds ABIDE, which does the same thing under a name that carries the same weight for a noncombat Advantage discard.*
 
 ---
 
@@ -155,7 +155,7 @@ Range: Both
 
 ---
 
-**BALANCE RESTORED**
+**TOPPLE RESTORED**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Heal target ally 4 HP. Move them to any position.
@@ -364,7 +364,7 @@ Attack: Mind + d4
 Effect: Target discards 1 card at random.
 Defense Effect: Gain Ward.
 Range: Ranged
-*Cut: Duplicates STILLNESS (blue-mind.md).*
+*Cut: Duplicates BLANK (blue-mind.md).*
 
 ---
 

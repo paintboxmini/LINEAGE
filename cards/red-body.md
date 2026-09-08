@@ -8,7 +8,7 @@ Attack: Body + d10
 Effect: None
 Defense Effect: Deal 3 damage to attacker, unpreventable.
 Range: Melee
-*"Sometimes the direct path is the wisest path."*
+*"No trick. No angle. The shortest line between you and them."*
 
 ---
 
@@ -108,17 +108,17 @@ Attack: Body + d6
 Effect: Move self to any position
 Defense Effect: Move self to any position
 Range: Both
-*"The gap between moments is where you learn to move."*
+*"Be elsewhere. Be elsewhere before they finish the sentence."*
 
 ---
 
-**BLOOD IN THE GAP**
+**BLEED**
 RED — BODY
 Attack: Body + d4
 Effect: Lifesteal
 Defense Effect: Gain Thorns 1
 Range: Ranged
-*"Where pressure gathers, strength follows."*
+*"Open it. Stand close. Let it come back to you."*
 
 ---
 
@@ -142,13 +142,13 @@ Range: Melee
 
 ---
 
-**SACRIFICE STRIKE**
+**REPAY**
 RED — BODY
 Attack: Body + d10. Pay 3 HP.
 Effect: None.
 Defense Effect: Pay 5 HP, Counter Attack
 Range: Melee
-*"Pain shared is power doubled."*
+*"You will get all of it. I am only choosing when."*
 
 ---
 
@@ -172,24 +172,24 @@ Range: Both
 
 ---
 
-**BERSERKER'S PRICE**
+**ABANDON**
 RED — BODY
 Attack: Body + 2d8
 Effect: Cannot defend until your next turn
 Defense Effect: The attacker cannot defend next time you attack them
 Range: Melee
-*"Fury demands its payment in restraint surrendered."*
+*"Guard is a thing you can put down. So put it down."*
 
 ---
 
-**EQUAL FOOTING**
+**STAND**
 RED — BODY
 Attack: Body + d8
 Special Rule: Wins ties. If the attacker's and defender's cards both carry this Special Rule, they cancel — it stays a tie.
 Effect: None.
 Defense Effect: None.
 Range: Melee
-*"Balance does not favor the loud."*
+*"Whoever moves first was never actually even with you."*
 
 ---
 
@@ -279,7 +279,7 @@ Attack: Body + d6
 Effect: The defender announces how many status cards they have in hand and discard pile. Deal +2 damage for each.
 Defense Effect: Heal 2 HP for each status card in your hand and discard pile. Then destroy them.
 Range: Both
-*"It was always going to end here."*
+*"They have been carrying it this whole time. Ask them to carry it faster."*
 
 ---
 
@@ -343,7 +343,7 @@ Range: Ranged
 
 ---
 
-**EMERGENCY REPAIRS**
+**STAUNCH**
 RED — BODY
 Attack: Body + d6
 Effect: Heal 2 × your Soul. Skip your draw step next turn.
@@ -403,13 +403,13 @@ Range: Melee
 
 ---
 
-**ROLLOUT**
+**PLANT**
 RED — BODY
 Attack: Body + d4
 Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use.
 Defense Effect: Gain Resist. This card returns to your hand instead of your discard pile after use.
 Range: Both
-*"It was slow once."*
+*"Feet first. Everything else follows from feet."*
 
 ---
 
@@ -483,7 +483,7 @@ Range: Melee
 
 ---
 
-**REELING**
+**RATTLE**
 RED — BODY
 Attack: Body + d4
 Effect: Defender gains Staggered.

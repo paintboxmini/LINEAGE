@@ -52,23 +52,23 @@ Range: Ranged
 
 ---
 
-**REFRACT**
+**TURN**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak
 Defense Effect: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
-*"Light bends when you know where to place the glass."*
+*"It has to land somewhere. Somewhere is negotiable."*
 
 ---
 
-**STILLNESS**
+**BLANK**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender discards 1 card at random
 Defense Effect: Attacker discards 1 card at random
 Range: Ranged
-*"Certainty is loud. Silence holds its shape."*
+*"Mid-thought, the thought is not there."*
 
 ---
 
@@ -78,7 +78,7 @@ Attack: Mind + d6. If the defender plays the same color as either of the top two
 Effect: None.
 Defense Effect: If the attacker plays the same color as either of the top two cards of their discard pile, remove their Positive Status Effects
 Range: Ranged
-*"Cartographers see the second time before it happens."*
+*"People repeat themselves. Someone should be writing it down."*
 
 ---
 
@@ -108,7 +108,7 @@ Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
 Defense Effect: Enemy must target you again on their next turn if possible
 Range: Ranged
-*"Every echo remembers what the first sound forgot."*
+*"It does not stop at the first one. That is the whole idea."*
 
 ---
 
@@ -229,7 +229,7 @@ Attack: Mind + d6
 Effect: Defender loses 1 Soul this combat.
 Defense Effect: Attacker loses 1 Soul this combat.
 Range: Ranged
-*"Understanding something completely is the first step to unmaking it."*
+*"Not a blow. A season."*
 
 ---
 
@@ -284,7 +284,7 @@ Range: Melee
 
 ---
 
-**FRAME-TRAP**
+**PUNISH**
 BLUE — MIND
 Attack: Mind + d4
 Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
@@ -295,7 +295,7 @@ Range: Both
 
 ---
 
-**CERTAINTY**
+**CALL**
 BLUE — MIND
 Attack: Mind + d6
 Special Rule: Wins ties. If the attacker's and defender's cards both carry this Special Rule, they cancel — it stays a tie.
