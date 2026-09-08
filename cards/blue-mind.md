@@ -26,7 +26,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Discard 2, draw 2
-Defense Effect: Scry 1
+Defense Effect: Give any target Deadly.
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -84,8 +84,8 @@ Range: Ranged
 
 **DEFLECT**
 BLUE — MIND
-Attack: Mind + d6
-Effect: Gain Ward
+Attack: Mind + d4
+Effect: Gain Resist.
 Defense Effect: Counter Attack. Only on a clean win — not a tie.
 Range: Melee
 *"Turn the blow aside and see what follows."*
@@ -266,8 +266,8 @@ Range: Both
 **STILL POINT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Anchored — at the start of each of your turns, Scry 1.
-Defense Effect: Gain Ward.
+Effect: Anchored — Scry 1, gain Ward, or apply Weak to any target.
+Defense Effect: Anchored — Scry 1, gain Ward, or apply Weak to any target.
 Range: Both
 *"Stillness isn't surrender. It's how you see the whole board."*
 
@@ -276,8 +276,9 @@ Range: Both
 **REBUTTAL**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender gains Weak and Vulnerable.
-Defense Effect: Attacker gains Weak and Vulnerable.
+Special Rule: If you would lose this exchange, it is a tie instead.
+Effect: None.
+Defense Effect: None.
 Range: Melee
 *"Every argument has an opening. You just have to still be standing when it appears."*
 
@@ -388,7 +389,7 @@ Range: Ranged
 **CALLED SHOT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: If this attack deals damage, defender gains Blind and Vulnerable.
+Effect: The next time you attack the defender, deal double damage.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"Not the body. The eye. The hand. The joint."*

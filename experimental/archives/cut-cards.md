@@ -14,19 +14,13 @@ Defense Effect: Gain Evade.
 Range: Both
 *"Meet it and you break. Move and it passes."*
 
-**SWAY**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-Range: Both
-*"The current doesn't ask permission."*
+*Cut 2026-09-08. GIVE WAY and SHADE AWAY had been identical for as long as both existed — same colour, same die, same range, same text on both halves — and GIVE WAY had already lost its Oracle seat to TWIN STRIKE in the green pass for exactly that reason.*
 
-*Both cut 2026-09-08. GIVE WAY and SHADE AWAY had been identical for as long as both existed — same colour, same die, same range, same text on both halves — and GIVE WAY had already lost its Oracle seat to TWIN STRIKE in the green pass for exactly that reason. SWAY joined them the same day: its rewrite to "Gain Evade" on both lines turned a positioning card into the third copy of the same card. Three collapse to one, and SHADE AWAY takes the Oracle slot.*
+*SWAY was cut alongside it the same day and for the same reason: its rewrite to "Gain Evade" on both lines made it the third copy. It did not stay cut. Its original text — move the defender to the other position, gain Quick on defence — went to the Root Heart as a signature card (`cards/root-heart-weald.md`), where an Immobile boss that repositions everyone but itself is the better home for it than the core list ever was. It took BRISTLE's slot in that deck.*
 
-*SWAY's loss is not free — it was Green's only card that moved a single enemy on its own, leaving MIRROR STEP (which moves you too) and HEAVE AND HAUL (which moves a whole position) to cover that ground, with Blue's CALCULATE as the clean version. Its decklist seats went to SHADE AWAY (Haywight, whose passive already grants Evade) and MIRROR STEP (the Gluttony Abomination, which wants to close). The Root Heart's "no card moves it" ruling now names CALCULATE as its example (`bestiary/root-heart.md`).*
+*So the core list is down one Evade card, not two, and its Green decklist seats moved: the Haywight took SHADE AWAY, whose Evade its passive already leans on, and the Gluttony Abomination took MIRROR STEP, which closes the distance the way SWAY used to. The Root Heart's "no card moves it" ruling cited SWAY as its example and now cites CALCULATE — the creature holds the card and still cannot be moved by it.*
 
-*Replacing them: GUIDE, the first card in the pool that grants Evade to somebody else. Nine Evade cards existed before it and every one of them pointed at its own caster.*
+*Replacing GIVE WAY: GUIDE, the first card in the pool that grants Evade to somebody else. Nine Evade cards existed before it and every one of them pointed at its own caster.*
 
 ## Core set — cut with the Critical keyword
 
