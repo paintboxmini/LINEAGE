@@ -31,7 +31,7 @@ Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that refer
 **(14) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
-**(8) Weak**
+**(7) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(9) Anchored**
@@ -44,7 +44,7 @@ A specific benefit persists as long as you do not change positions, triggering a
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
-**(10) Evade**
+**(11) Evade**
 50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -59,7 +59,7 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **(2) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(14) Initiative Shift X**
+**(13) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.
 
 Initiative Shift always moves the token the full requested distance. If that movement would violate "positive never later" or "negative never sooner," place a chip to preserve the invariant instead of changing the movement.
@@ -103,7 +103,7 @@ Rooted stacks. Each stack cancels one movement.
 
 **Card text.** A card that grants Rooted should say only "gains Rooted" — the rule lives here, not restated on the card.
 
-**(7) Quick**
+**(6) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
 **(7) Scry X**

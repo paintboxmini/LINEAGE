@@ -207,12 +207,23 @@ SETS = {
             #        three melee slots had none of), HEALING SONG (reworked
             #        from Red, where the damage colour was out-healing the
             #        support colour in its own starting deck)
-            'ACCEPTANCE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SWAY', 'UNTOUCHED',
-            'PRIORITY', 'OPENING', 'PATIENCE',
+            # 2026-09-08, Drew's hand pass over the printed Green sheet.
+            #   renamed: ACCEPTANCE -> RELEASE (it read as a state of mind
+            #            rather than an action a card can take)
+            #   out:     UNTOUCHED — this is the one place the pass leaves a
+            #            hole: it was Green's rung on the Immunity ladder
+            #            (UNBROKEN / LAST RESORT / UNTOUCHED, `rules/cards.md`),
+            #            so the Oracle now teaches Immunity in Red and Blue
+            #            only. The card is untouched in the pool.
+            #   in:      BOLSTER — MEND moved Melee -> Both in the same pass,
+            #            which would have left Green with two melee cards and
+            #            both of them control. Not Drew's pick; swap freely.
+            'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SWAY', 'PRIORITY',
+            'OPENING', 'PATIENCE', 'MEND',
             'AID', 'COMMUNION', 'DEAD RECKONING', 'MOCKERY', 'HEALING SONG',
             'FLOW',
-            'BIND', 'SMOKESCREEN', 'MEND',
+            'BIND', 'SMOKESCREEN', 'BOLSTER',
         ],
     },
 }

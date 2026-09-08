@@ -35,7 +35,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d6
 Effect: You may change position. Gain Evade.
 Defense Effect: You may change position. Gain Evade.
 Range: Ranged
@@ -46,8 +46,8 @@ Range: Ranged
 **SWAY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Move the defender to the other position.
-Defense Effect: Gain Quick.
+Effect: Gain Evade.
+Defense Effect: Gain Evade.
 Range: Both
 *"The current doesn't ask permission."*
 
@@ -87,7 +87,7 @@ Range: Both
 **PATIENCE**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: If you did not attack last turn, deal +4 damage
+Effect: Anchored — your attacks deal +4 damage.
 Defense Effect: Anchored — Target ally heals 3 HP
 Range: Both
 *"The Edge reveals itself to those who wait."*
@@ -137,7 +137,7 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: If you are attacked before your next turn, your party may scry 1
+Effect: If you are attacked before your next turn, your party may scry 1 and heal 2 HP
 Defense Effect: You and your allies gain Deadly
 Range: Ranged
 *"Shared vision illuminates the path forward."*
@@ -167,20 +167,20 @@ Range: Melee
 **RENEWAL**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: All allies may discard 1 card then draw 1, or heal 4
+Effect: All allies may discard 1 card then draw 2, or heal 4
 Defense Effect: Target Collapsed ally heals 8 HP
 Range: Both
 *"At the edge of becoming, all possibilities whisper their names."*
 
 ---
 
-**ACCEPTANCE**
+**RELEASE**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You may discard your hand, then draw that many cards
 Defense Effect: All allies may move position or gain Initiative Shift +1
 Range: Both
-*"Those who surrender their plans find paths they never imagined."*
+*"Open your hand. Everything you were holding was holding you."*
 
 ---
 
@@ -206,7 +206,7 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d8
 Effect: Defender gains Rooted.
 Defense Effect: Attacker gains Rooted.
 Range: Melee
@@ -267,7 +267,7 @@ Range: Ranged
 **DEAD RECKONING**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Defender gains Weak.
+Effect: Defender gains Blind.
 Defense Effect: Attacker gains Blind.
 Range: Ranged
 *"You came in loud. You'll leave in the dark."*
@@ -336,9 +336,9 @@ Range: Both
 
 **PRIORITY**
 GREEN — SOUL
-Attack: Soul + d6
-Effect: On a clean win only, apply Initiative Shift +2 to self.
-Defense Effect: Deal 3 damage to the attacker.
+Attack: Soul + d4
+Effect: Swap places with the defender in the initiative order.
+Defense Effect: Swap places with the attacker in the initiative order.
 Range: Both
 *"Everything else can wait. This cannot."*
 
@@ -346,7 +346,7 @@ Range: Both
 
 **LEVEL THE FIELD**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Remove one Positive Status Effect of your choice from each enemy.
 Defense Effect: Remove one Positive Status Effect of your choice from each enemy.
 Range: Both
@@ -357,8 +357,8 @@ Range: Both
 **SMOKESCREEN**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
-Defense Effect: Attacker gains Blind.
+Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
+Defense Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
 Range: Melee
 *"Visibility is a luxury."*
 
@@ -406,7 +406,7 @@ Range: Melee
 
 **INSTINCT**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Gain Ward.
 Defense Effect: Gain Ward.
 Range: Both
@@ -427,8 +427,8 @@ Range: Both
 **BRAMBLE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
+Effect: Gain Thorns 3.
+Defense Effect: Gain Thorns 3.
 Range: Both
 *"Everything that reaches through leaves some of itself."*
 
@@ -437,8 +437,8 @@ Range: Both
 **QUICKEN**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Apply Initiative Shift +1 to yourself.
-Defense Effect: Apply Initiative Shift +1 to an ally.
+Effect: Apply Initiative Shift +2 to yourself.
+Defense Effect: Apply Initiative Shift +2 to an ally.
 Range: Both
 *"Sooner is its own kind of strength."*
 
@@ -466,10 +466,10 @@ Range: Ranged
 
 **MEND**
 GREEN — SOUL
-Attack: Soul + d6
-Effect: Pay 2 HP, target ally heals 8 HP
-Defense Effect: Pay 2 HP, target ally heals 8 HP
-Range: Melee
+Attack: Soul + d4
+Effect: Target ally in your position heals 8 HP
+Defense Effect: Target ally in your position heals 8 HP
+Range: Both
 *"Close enough to see the wound is close enough to close it."*
 
 ---
@@ -496,8 +496,8 @@ Range: Melee
 
 **HEALING SONG**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: You and all allies heal 4 HP
-Defense Effect: You and all allies heal 4 HP
+Attack: Soul + d6
+Effect: You and all allies heal 5 HP
+Defense Effect: You and all allies heal 5 HP
 Range: Ranged
 *"Wind through the fractures. The cliff remembers."*
