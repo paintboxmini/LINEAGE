@@ -376,13 +376,13 @@ Range: Ranged
 
 ---
 
-**DOUBT**
+**ENFEEBLE**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Weak.
 Defense Effect: Attacker gains Weak.
 Range: Ranged
-*"You gave them one question they could not answer, and they are still holding it."*
+*"Nothing is taken. Something is simply less than it was."*
 
 ---
 
@@ -393,3 +393,73 @@ Effect: The next time you attack the defender, deal double damage.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"Not the body. The eye. The hand. The joint."*
+
+---
+
+**DECODE**
+BLUE — MIND
+Attack: Mind + d8
+Effect: Scry 3, then draw 1.
+Defense Effect: Scry 3, then draw 1.
+Range: Ranged
+*"Every system tells you its next move. Most people are not systems. You are."*
+
+---
+
+**REDIRECT**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Target ally gains Protect.
+Defense Effect: Gain Protect and Evade.
+Range: Ranged
+*"It was always going to land. The only open question was where."*
+
+---
+
+**UNRAVEL**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Vulnerable and Blind.
+Defense Effect: Attacker gains Vulnerable.
+Range: Melee
+*"Pull the one thread that was holding the rest."*
+
+---
+
+**CORNER**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Neither you nor the defender may change position until your next turn.
+Defense Effect: Neither you nor the attacker may change position until your next turn.
+Range: Melee
+*"Now it is only the two of us, and only this much room."*
+
+---
+
+**PROBE**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Scry 1, then draw 1.
+Defense Effect: Scry 1, then draw 1.
+Range: Ranged
+*"A small question, asked early."*
+
+---
+
+**DISSECT**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Exile 1 card from your discard pile, then draw 1.
+Defense Effect: Exile 1 card from your discard pile, then draw 1.
+Range: Ranged
+*"Take it apart to learn it. Do not put it back."*
+
+---
+
+**INVERT**
+BLUE — MIND
+Attack: Mind + d4
+Effect: The defender's Defense Effect does not trigger this exchange.
+Defense Effect: The attacker's Effect does not trigger this exchange.
+Range: Both
+*"They had a plan for this. They no longer have a plan for this."*

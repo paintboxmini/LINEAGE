@@ -163,7 +163,8 @@ SETS = {
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
             # attacker's hand) -> PARTITION. Then the blue balance pass:
-            #   renamed: TELL -> UNDERMINE -> DOUBT (also Melee -> Ranged),
+            #   renamed: TELL -> UNDERMINE -> DOUBT -> ENFEEBLE (also
+            #            Melee -> Ranged),
             #            DEAD END -> PINNED, FORESEEN -> FORESEE,
             #            SECOND GUESS -> FALTER
             #   out:     HESITATE and FALTER (both cut — FALTER with the
@@ -174,7 +175,7 @@ SETS = {
             # See the Oracle content rule above the SETS table.
             'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
             'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
-            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'DOUBT',
+            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
             'CLIMB', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
@@ -229,6 +230,52 @@ SETS = {
             'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BOLSTER',
+        ],
+    },
+    'oracle-expansion': {
+        'title': 'Oracle Deck — Expansion',
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # The second 21, written 2026-09-08. Printed on its own so the
+        # existing 63 don't have to be re-read to review it; together the
+        # two sets are the Oracle's 84.
+        #
+        # Same shape as the first 21, one third the size: 7 per colour at
+        # 4/2/1 in that colour's range identity, which keeps each colour on
+        # the 12/6/3 ratio across all 28. Same content rule as above — no
+        # card here reaches an enemy's hand, deck, or stats, and none
+        # applies Sealed or Staggered.
+        #
+        # What it was written to fill, measured against the first 21:
+        #   Exile, Lifesteal and Unpreventable were at 0 in the Oracle
+        #     despite living in the core pool — EXPEND, SKEWER, HAMMER and
+        #     DISSECT teach all three.
+        #   Scry was at 3 and Drew asked for 3 more: DECODE (Scry 3, the
+        #     deepest in the pool), PROBE, and STIR. Two Blue, one Green.
+        #   Blue had no d8 anywhere: DECODE is it.
+        #   Protect was at 1 (GUARD alone) for a mechanic that sits in the
+        #     Damage Pipeline: SHOULDER and REDIRECT.
+        #   Immunity lost its Green rung when UNTOUCHED left: SHELTER is
+        #     the first card in the pool that grants Immunity to an ally
+        #     rather than its own caster.
+        #   Green had no Counter Attack and no Weak: CONFRONT and PROVOKE.
+        #   Green had one d8: HARMONIZE is the second.
+        'cards': [
+            # Red (7) — melee 4 / both 2 / ranged 1
+            'CLEAVE', 'MAUL', 'SKEWER', 'SHOULDER',
+            'EXPEND', 'ANCHOR',
+            'HAMMER',
+            # Blue (7) — ranged 4 / melee 2 / both 1
+            'DECODE', 'REDIRECT', 'PROBE', 'DISSECT',
+            'UNRAVEL', 'CORNER',
+            'INVERT',
+            # Green (7) — both 4 / ranged 2 / melee 1
+            'HARMONIZE', 'CHANNEL', 'PROVOKE', 'STIR',
+            'SHELTER', 'ENTREAT',
+            'CONFRONT',
         ],
     },
 }
