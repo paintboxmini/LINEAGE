@@ -239,43 +239,64 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # The second 21, written 2026-09-08. Printed on its own so the
-        # existing 63 don't have to be re-read to review it; together the
-        # two sets are the Oracle's 84.
+        # The second 21, chosen 2026-09-08. Printed on its own so the first
+        # 63 don't have to be re-read to review it; together the two sets
+        # are the Oracle's 84, and the content rule above covers both.
         #
-        # Same shape as the first 21, one third the size: 7 per colour at
-        # 4/2/1 in that colour's range identity, which keeps each colour on
-        # the 12/6/3 ratio across all 28. Same content rule as above — no
-        # card here reaches an enemy's hand, deck, or stats, and none
-        # applies Sealed or Staggered.
+        # Drawn from the core lists rather than written fresh — every card
+        # here already existed on the bench. Same shape as the first 21 at
+        # one third the size: 7 per colour at 4/2/1 in that colour's range
+        # identity, holding each colour on the 12/6/3 ratio across all 28.
         #
-        # What it was written to fill, measured against the first 21:
-        #   Exile, Lifesteal and Unpreventable were at 0 in the Oracle
-        #     despite living in the core pool — EXPEND, SKEWER, HAMMER and
-        #     DISSECT teach all three.
-        #   Scry was at 3 and Drew asked for 3 more: DECODE (Scry 3, the
-        #     deepest in the pool), PROBE, and STIR. Two Blue, one Green.
-        #   Blue had no d8 anywhere: DECODE is it.
-        #   Protect was at 1 (GUARD alone) for a mechanic that sits in the
-        #     Damage Pipeline: SHOULDER and REDIRECT.
-        #   Immunity lost its Green rung when UNTOUCHED left: SHELTER is
-        #     the first card in the pool that grants Immunity to an ally
-        #     rather than its own caster.
-        #   Green had no Counter Attack and no Weak: CONFRONT and PROVOKE.
-        #   Green had one d8: HARMONIZE is the second.
+        # Four cards needed rebalancing to qualify, all in `cards/`:
+        #   UNNAME  — its defence half forced a random discard. Now mirrors
+        #             the attack half: the attacker's Effect does not fire.
+        #   FORGET  — its attack half forced a discard. Now mirrors its own
+        #             legal defence half, exiling the played card on a clean
+        #             win, which is what the card was always about.
+        #   PROFILE — its defence half read the attacker's hand. Now a
+        #             smaller version of its own attack half.
+        #   CONSUME — destroying a card out of your own hand was mandatory,
+        #             which is a trap in a starting deck. Now "you may".
+        # The first three were barred by the content rule, and they were
+        # Blue's ONLY three melee bench cards — without the rewrites Blue
+        # could not have filled its two melee slots from the pool at all.
+        #
+        # What the 21 were chosen to fill, measured against the first set:
+        #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
+        #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
+        #     CONSUME, SPARK OF VIOLENCE.
+        #   Scry was at 3 and three more were asked for: UNDERSTANDING,
+        #     PROFILE, ALIGN. All Blue, because no Green or Red bench card
+        #     has ever carried Scry.
+        #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
+        #     bench and it is a Scry card, so it answers both at once.
+        #   Protect sat at 1 card for a mechanic with its own Damage
+        #     Pipeline step: SHARED BURDEN.
+        #   Immunity lost its Green rung when UNTOUCHED left the first 21.
+        #     UNTOUCHED comes back here, which restores the ladder without
+        #     spending a slot in the deck Drew is happy with.
+        #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
+        #     HEAVE AND HAUL make three.
+        #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
+        #   Red had no Rooted: GRAPPLE, which is also the card the glossary
+        #     cites to explain Anchored holding Rooted open.
+        #
+        # Not fillable from the bench: Green has no Counter Attack card
+        # anywhere in the core pool, so that gap survives this expansion.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
-            'CLEAVE', 'MAUL', 'SKEWER', 'SHOULDER',
-            'EXPEND', 'ANCHOR',
-            'HAMMER',
+            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
+            'BLOOD TITHE', 'WAITING GAME',
+            'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
-            'DECODE', 'REDIRECT', 'PROBE', 'DISSECT',
-            'UNRAVEL', 'CORNER',
-            'INVERT',
+            'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
+            'UNNAME', 'FORGET',
+            'SLIPSTREAM',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'HARMONIZE', 'CHANNEL', 'PROVOKE', 'STIR',
-            'SHELTER', 'ENTREAT',
-            'CONFRONT',
+            'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
+            'GUIDE', 'FIELD MEDICINE',
+            'CONSUME',
         ],
     },
 }

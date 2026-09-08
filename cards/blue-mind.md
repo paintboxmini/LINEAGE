@@ -156,7 +156,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender cannot trigger defense effects until their next turn
-Defense Effect: Attacker discards 1 card at random
+Defense Effect: The attacker's Effect does not trigger this exchange
 Range: Melee
 *"What cannot be spoken cannot hold its shape."*
 
@@ -185,7 +185,7 @@ Range: Ranged
 **FORGET**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Defender discards 1 card
+Effect: Exile the defender's card until end of combat. Only on a clean win — not a tie.
 Defense Effect: Exile the attacker's card until end of combat. Only on a clean win — not a tie.
 Range: Melee
 *"Some knowledge is too dangerous to remember."*
@@ -247,7 +247,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, then draw 1 card
-Defense Effect: Look at the top card of the attacker's hand.
+Defense Effect: Scry 1, then draw 1 card
 Range: Ranged
 *"He already knew what you'd reach for."*
 
@@ -393,73 +393,3 @@ Effect: The next time you attack the defender, deal double damage.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"Not the body. The eye. The hand. The joint."*
-
----
-
-**DECODE**
-BLUE — MIND
-Attack: Mind + d8
-Effect: Scry 3, then draw 1.
-Defense Effect: Scry 3, then draw 1.
-Range: Ranged
-*"Every system tells you its next move. Most people are not systems. You are."*
-
----
-
-**REDIRECT**
-BLUE — MIND
-Attack: Mind + d6
-Effect: Target ally gains Protect.
-Defense Effect: Gain Protect and Evade.
-Range: Ranged
-*"It was always going to land. The only open question was where."*
-
----
-
-**UNRAVEL**
-BLUE — MIND
-Attack: Mind + d6
-Effect: Defender gains Vulnerable and Blind.
-Defense Effect: Attacker gains Vulnerable.
-Range: Melee
-*"Pull the one thread that was holding the rest."*
-
----
-
-**CORNER**
-BLUE — MIND
-Attack: Mind + d6
-Effect: Neither you nor the defender may change position until your next turn.
-Defense Effect: Neither you nor the attacker may change position until your next turn.
-Range: Melee
-*"Now it is only the two of us, and only this much room."*
-
----
-
-**PROBE**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Scry 1, then draw 1.
-Defense Effect: Scry 1, then draw 1.
-Range: Ranged
-*"A small question, asked early."*
-
----
-
-**DISSECT**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Exile 1 card from your discard pile, then draw 1.
-Defense Effect: Exile 1 card from your discard pile, then draw 1.
-Range: Ranged
-*"Take it apart to learn it. Do not put it back."*
-
----
-
-**INVERT**
-BLUE — MIND
-Attack: Mind + d4
-Effect: The defender's Defense Effect does not trigger this exchange.
-Defense Effect: The attacker's Effect does not trigger this exchange.
-Range: Both
-*"They had a plan for this. They no longer have a plan for this."*

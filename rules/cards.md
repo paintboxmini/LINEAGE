@@ -52,7 +52,9 @@ Acting on **your own** hand and deck is fine — drawing, discarding to pay a co
 
 Cards excluded by this rule are still perfectly good cards; they belong in creature decks, character decks, and later Oracle additions. The list lives in `printing/generate-cards.py`'s `SETS`, with the same rule restated above it.
 
-**The deck comes in two sets of 21 per colour.** The original 63 print as `oracle`; the second 21 print separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
+**The deck comes in two sets, 63 cards then 21.** The original prints as `oracle`; the expansion prints separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
+
+**The expansion was drawn from the core lists, not written fresh.** Anything the deck is short of should be answered from the bench first — the pool holds well over a hundred cards nobody has seated, and a card that already exists has already been priced against its neighbours. Where a bench card was barred by the content rule but was otherwise the right answer, the fix was to rebalance that card rather than invent around it: four were reworked to qualify, which is recorded above the set in `printing/generate-cards.py`. Writing new cards is the last resort, for a gap the pool genuinely cannot fill.
 
 ---
 

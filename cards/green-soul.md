@@ -287,8 +287,8 @@ Range: Both
 **CONSUME**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
-Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Effect: Lifesteal — heal yourself for the full damage dealt. You may permanently destroy one card from your own hand to give the defender Weak and Blind.
+Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may permanently destroy one card from your own hand to give the attacker Weak and Blind.
 Range: Melee
 *"Nothing is wasted. Not even you."*
 
@@ -491,73 +491,3 @@ Effect: Target ally gains Evade.
 Defense Effect: Target ally gains Evade.
 Range: Ranged
 *"Left. Now. Don't ask."*
-
----
-
-**HARMONIZE**
-GREEN — SOUL
-Attack: Soul + d8
-Effect: All allies may change position. Each ally who does gains Evade.
-Defense Effect: All allies may change position. Each ally who does gains Evade.
-Range: Both
-*"Nobody called it. Everyone moved."*
-
----
-
-**CHANNEL**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Range: Both
-*"It runs through you. What it becomes is your decision."*
-
----
-
-**PROVOKE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Defender gains Weak. Target ally gains Deadly.
-Defense Effect: Attacker gains Weak.
-Range: Both
-*"Say the thing. Watch what it costs them."*
-
----
-
-**STIR**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: You and target ally each Scry 1, then each draw 1.
-Defense Effect: You and target ally each Scry 1.
-Range: Both
-*"Wake up. It has already started."*
-
----
-
-**SHELTER**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Target ally gains Immunity.
-Defense Effect: Target ally gains Immunity.
-Range: Ranged
-*"Stand behind the word. It will hold."*
-
----
-
-**ENTREAT**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Target ally may discard any number of cards, then draw that many.
-Defense Effect: Draw 2.
-Range: Ranged
-*"Ask. It costs you the asking and nothing else."*
-
----
-
-**CONFRONT**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Gain Thorns 2.
-Defense Effect: Counter Attack.
-Range: Melee
-*"You wanted this closer. It is closer."*
