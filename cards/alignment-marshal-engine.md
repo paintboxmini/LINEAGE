@@ -4,16 +4,16 @@
 
 ---
 
-*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md` (Seismic Redirect keeps its name; Correction Grip is de-flavored as IRON GRIP) — Alignment Marshal's deck uses those core cards in their place.*
+*SEISMIC REDIRECT and CORRECTION GRIP were promoted to core and now live in `cards/red-body.md`, renamed CLOSE IN and IRON GRIP — Alignment Marshal's deck uses those core cards in their place. (Seismic Redirect kept its name on promotion and lost it on 2026-09-06, when it entered the Oracle: the starting deck wants names broad enough to spend outside combat, and "seismic" only ever described one thing.)*
 
 ---
 
 **TARGETING LOCK**
 BLUE — MIND — ENGINE
 Attack: Mind + d6
-Effect: Expose Red — inflict Staggered.
+Effect: Expose Red — choose 1 card in the target's hand without looking. If it is Red, inflict Staggered.
 Defense Effect: Scry 2.
-Range: Both
+Range: Ranged
 *"The prism rotates. The pattern identified."*
 
 ---
@@ -23,7 +23,7 @@ BLUE — MIND — ENGINE
 Attack: Mind + d6
 Effect: Defender gains Blind.
 Defense Effect: Scry 1.
-Range: Both
+Range: Ranged
 *"Geometric lines sketch across nearby surfaces."*
 
 ---
@@ -43,7 +43,7 @@ RED — BODY — ENGINE
 Attack: Body + d6
 Effect: Shuffle 1 Exhaust into target's deck.
 Defense Effect: Gain Resist.
-Range: Both
+Range: Ranged
 *"The engine does not tire."*
 
 ---

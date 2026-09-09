@@ -9,7 +9,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Vulnerable
 Defense Effect: Gain Resist
-Range: Both
+Range: Ranged
 *"You will hear this again on your way out. That is not a promise. That is a warning."*
 
 ---
@@ -17,9 +17,9 @@ Range: Both
 **THE HELD NOTE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose a card at random from the defender's hand. It becomes Locked.
-Defense Effect: Choose a card at random from the attacker's hand. It becomes Locked.
-Range: Both
+Effect: Choose a card at random from the defender's hand. It becomes Locked — that card cannot be played. It does not clear when combat ends; it holds until the party clears the Silent Choir.
+Defense Effect: Choose a card at random from the attacker's hand. Same Locked, same duration.
+Range: Ranged
 *"Some notes are not played. They are withheld, on purpose, forever."*
 
 ---
@@ -27,7 +27,7 @@ Range: Both
 **SEALED CHORD**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Defender gains Sealed
-Defense Effect: Gain Sealed
+Effect: Defender gains Sealed — their equipped items' passives stop working until the end of combat.
+Defense Effect: Gain Sealed — your equipped items' passives stop working until the end of combat.
 Range: Melee
 *"Whatever you carried in to help you, it isn't answering right now."*

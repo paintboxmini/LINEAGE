@@ -9,7 +9,7 @@ BLUE — MIND — GLASSLIGHT
 Attack: Mind + d6
 Effect: Push the defender to the Backline. They gain Rooted.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Melee
 *"The water is right there. It is always right there."*
 
 ---
@@ -17,7 +17,7 @@ Range: Both
 **BORROWED POWER**
 RED — BODY — GLASSLIGHT
 Attack: Body + d8
-Effect: Gain Deadly. You gain Sealed.
+Effect: Gain Deadly. You gain Sealed — your own equipped items' passives stop working until the end of combat.
 Defense Effect: Gain Resist.
 Range: Melee
 *"It was not built for them. It works anyway, mostly."*

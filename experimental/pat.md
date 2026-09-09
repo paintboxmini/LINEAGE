@@ -4,12 +4,12 @@
 
 ## Stats
 
-Mind 2 / Body 3 / Soul 4 — HP 15
+Mind 2 / Body 3 / Soul 4 — HP 18 *(updated: HP formula is now 4× Body, was 3×)*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 2 | Blue card damage; hand size 2 |
-| Body | 3 | Red card damage; HP weighted 3× |
+| Body | 3 | Red card damage; HP weighted 4× |
 | Soul | 4 | Green card damage; Initiative 1d6 + 4 |
 
 ## People

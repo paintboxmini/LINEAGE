@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tales Untold — Play Reference</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: letter;
+  margin: 20mm 18mm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1a1a1a;
+  line-height: 1.5;
+  font-size: 10.5pt;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 0 0 8mm 0;
+  color: #1a1a1a;
+  border-bottom: 2px solid #333;
+  padding-bottom: 3mm;
+}
+
+h1.section-break {
+  break-before: page;
+  page-break-before: always;
+  padding-top: 2mm;
+}
+
+h1.doc-title {
+  break-before: auto;
+  page-break-before: avoid;
+}
+
+h2 {
+  font-size: 13pt;
+  margin: 7mm 0 3mm 0;
+  color: #2C5F9E;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5mm;
+}
+
+p {
+  margin: 0 0 3mm 0;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 4mm 0;
+}
+
+ul, ol {
+  margin: 0 0 3mm 6mm;
+}
+
+li {
+  margin-bottom: 1mm;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  font-size: 9.5pt;
+  background: #f2f2f2;
+  padding: 0.5px 3px;
+  border-radius: 2px;
+}
+
+pre {
+  font-family: "Courier New", monospace;
+  font-size: 9.5pt;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3mm 4mm;
+  margin: 0 0 3mm 0;
+  white-space: pre;
+}
+
+table.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 4mm 0;
+  font-size: 9.5pt;
+}
+
+table.doc-table th {
+  background: #2C5F9E;
+  color: white;
+  text-align: left;
+  padding: 1.5mm 3mm;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+table.doc-table td {
+  padding: 1.5mm 3mm;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+table.doc-table tr:nth-child(even) td {
+  background: #f7f9fc;
+}
+
+blockquote {
+  margin: 0 0 4mm 0;
+  padding: 2mm 0 2mm 5mm;
+  border-left: 2px solid #9a7b2f;
+  color: #3a3226;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0 0 2mm 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+@media screen {
+  body {
+    max-width: 210mm;
+    margin: 12mm auto;
+    padding: 15mm;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+}
+</style>
+</head>
+<body>
+<h1 class="doc-title">Combat</h1>
+<p>Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it&#x27;s to outread.</p>
+<p><em>(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — <code>experimental/the-summons.md</code>.)</em></p>
+<hr>
+<h2>Core Combat Philosophy</h2>
+<p>Three things decide a fight, and a build&#x27;s stance toward all three, together, is what actually gets read:</p>
+<ul><li><strong>Balance between the three stats</strong> — Mind, Body, and Soul (<code>rules/character-creation.md</code>). Every color answers another: red overwhelms green, green outlasts blue, blue unmakes red. No stat is strongest on its own; a deck built around one alone is legible, countered risk, not a winning strategy. Mechanically, this is what <strong>RPS</strong> means throughout this document — the color triangle, resolved through stat balance.</li><li><strong>Control distance.</strong> Frontline and Backline. Some things only work up close; some only work at range. Moving between them costs the action you&#x27;d have spent doing something else. Shorthand: <strong>Position.</strong></li><li><strong>Act before your opponent does.</strong> The initiative wheel, not a fixed turn order — shifting where you sit in it is one of the few ways to act again before the table would otherwise expect you to. Shorthand: <strong>Initiative.</strong></li></ul>
+<p><strong>RPS / Initiative / Position</strong> is the shorthand used throughout this ruleset for the three above. <strong>A build that ignores one entirely takes on real, legible risk — fine, as long as it&#x27;s intentional, not accidental.</strong> Most real builds carry at least one tool against at least one of the three; a card or engine that looks unanswerable in a given test needs to be checked against whether that specific build had a tool for the pillar it&#x27;s actually being asked to answer, before it&#x27;s read as overtuned rather than matchup-specific.</p>
+<p><strong>Default to telegraphed effects over hidden ones.</strong> A hidden delayed payoff is just a surprise; a visible one is a real bet the opponent gets a turn to answer it. When a new mechanic could go either way on visibility, give the other side a chance to react — don&#x27;t default to concealment for its own sake.</p>
+<hr>
+<h2>Stealth &amp; Ambush</h2>
+<p>To approach unseen before combat, make a check: DC = 10 + the highest Soul stat on the enemy side. Players perceive an ambush the same way — DC = 10 + the highest Soul stat on the enemy side.</p>
+<p><strong>On success:</strong> The ambusher&#x27;s first attack auto-hits — no RPS, no defense. After it resolves, roll initiative for everyone involved, including the ambusher. They take their place in order normally. Combat begins.</p>
+<p><strong>On failure:</strong> Roll initiative. No advantage.</p>
+<hr>
+<h2>Chase</h2>
+<p>When a character flees and the pursuer gives chase, set up a two-marker track instead of repeating checks.</p>
+<p><strong>Set up:</strong> Estimate how many exchanges of movement currently separate them — that&#x27;s the fleeing party&#x27;s starting position. The pursuer starts at 0. Standard track is 5 steps past the fleeing party&#x27;s start; extend it if the head start is larger.</p>
+<p><em>Example: right on your heels = both at 0, track runs to 5. A full corridor away = fleeing party at 3, pursuer at 0, track runs to 8.</em></p>
+<p><strong>Each exchange (6 seconds):</strong> Contested Soul roll (2d10 + Soul). The winner advances their marker 1 step. Discard a card whose name fits the action → Advantage.</p>
+<p><strong>Caught</strong> — The pursuer&#x27;s marker reaches the fleeing party&#x27;s marker.</p>
+<p><strong>Escaped</strong> — The fleeing party&#x27;s marker reaches the end of the track. They&#x27;ve maintained enough distance to lose sight. The pursuer may attempt to follow the trail afterward (Reason check, DC set by GM based on terrain and time elapsed).</p>
+<hr>
+<h2>Fleeing Combat</h2>
+<p>Exiting combat mid-fight is an action: <strong>2d10 + Soul vs DC = 10 + the highest Soul stat among enemy combatants</strong> — the ambush formula, run from the other side. Soul gets you into fights unseen and gets you out of them alive.</p>
+<p>The formula is the baseline, not the answer. The GM adjusts it for the factors it can&#x27;t see:</p>
+<ul><li><strong>Terrain</strong> — open road vs briar walls vs a corridor with one door</li><li><strong>What stands between you and out</strong> — an enemy in your path is not an abstraction</li><li><strong>Position</strong> — Backline is closer to gone than Frontline</li><li><strong>Whether the enemy cares</strong> — a territorial creature that just wants you off its ground may make the check trivial, or unnecessary; a hunter in its own territory pushes it up</li></ul>
+<p><strong>Success:</strong> you leave the combat area and your participation ends. If the enemy gives chase, that&#x27;s the Chase system above.</p>
+<p><strong>Failure:</strong> the action is spent and you&#x27;re still in the fight, exactly where everyone can see you.</p>
+<p>Enemies don&#x27;t roll to flee — enemy disengagement is a GM call made from behavior, not a check.</p>
+<hr>
+<h2>Initiative</h2>
+<p>At the start of combat, each participant rolls:</p>
+<p><strong>1d6 + Soul</strong></p>
+<p>Turn order resolves highest to lowest.</p>
+<p><strong>Ties:</strong></p>
+<ul><li>Higher Soul goes first.</li><li>If still tied between players, they choose order among themselves.</li><li>If still tied between a player and an enemy, the player goes first.</li></ul>
+<p><strong>The Wheel.</strong> Tokens are placed clockwise around the wheel in initiative order — whoever goes first sits at 12 o&#x27;clock. A turn marker starts at 12 o&#x27;clock. Each turn, the marker moves to the next token in line.</p>
+<p>The wheel always has exactly as many slots as there are combatants — no empty slots. When a token shifts, each token it passes through slides over one slot toward the gap the moving token leaves behind.</p>
+<p><strong>Joining and leaving.</strong> A summoned combatant&#x27;s token enters the wheel directly after the token of whoever summoned it. A GM-introduced combatant enters when the fiction calls for it — usually at the end of a full lap. Either way, the wheel gains a slot. A combatant who leaves the fight entirely removes their slot, and the wheel closes around it.</p>
+<hr>
+<h2>Turn Structure</h2>
+<p>When initiative is rolled, every combatant draws to their maximum hand size — nobody enters the wheel empty-handed.</p>
+<p>At the start of your turn, draw until you reach your maximum hand size. If your deck is empty, shuffle your discard pile into a new deck before drawing.</p>
+<p>On your turn, you may take one Action, plus one free action if you have one available (see below).</p>
+<table class="doc-table">
+<thead><tr>
+<th>Action</th>
+<th>Description</th>
+</tr></thead><tbody>
+<tr>
+<td>Play a Card</td>
+<td>Make an attack using a card from your hand</td>
+</tr>
+<tr>
+<td>Move Position</td>
+<td>Shift between Frontline and Backline — or, if you&#x27;re already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown.</td>
+</tr>
+<tr>
+<td>Use an Item</td>
+<td>Activate an equipped or held item, or use a consumable</td>
+</tr>
+<tr>
+<td>Take Cover</td>
+<td>Backline only; the fiction must justify it. Gain Cover Evade — a dodge roll that persists instead of being spent. See Positioning → Cover.</td>
+</tr>
+<tr>
+<td>Interact</td>
+<td>Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows</td>
+</tr>
+<tr>
+<td>Flee</td>
+<td>Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above.</td>
+</tr>
+</tbody></table>
+<p><strong>Free Actions.</strong> Once per turn, on top of your Action above, you get one free action — it costs nothing from your turn, so you still take your normal Action as well. Spending a banked Quick to Move Position (Rushdown included), activating a piece of your own gear (turning something on, and similar minor personal gestures — not the world around you; that&#x27;s still Interact), and eating or drinking all count. Capped at one per turn regardless of how many you&#x27;d otherwise have available — a second banked Quick just waits for next turn.</p>
+<p><strong>Actually using a consumable or piece of gear for its mechanical effect is never free — that&#x27;s Use an Item, above, and costs your Action.</strong> Kevin throwing an incendiary orange is Use an Item: the throw&#x27;s whole point is the effect it produces, not a minor gesture.</p>
+<hr>
+<h2>Reading a Card</h2>
+<p>Every card carries: <strong>Name / Color + Stat / Attack (Stat + die) / Effect / Defense Effect / Range / Flavor text.</strong></p>
+<p>The die tells you the card&#x27;s philosophy:</p>
+<table class="doc-table">
+<thead><tr>
+<th>Die</th>
+<th>Personality</th>
+</tr></thead><tbody>
+<tr>
+<td>d8</td>
+<td>Raw power — high ceiling, less control</td>
+</tr>
+<tr>
+<td>d6</td>
+<td>Utility — moderate damage, strong effects</td>
+</tr>
+<tr>
+<td>d4</td>
+<td>Precision — low damage, high control and information</td>
+</tr>
+</tbody></table>
+<p>(d10 shows up on a handful of cards as a genuine outlier above this scale — rare, and usually paired with an extra cost or condition.)</p>
+<p>Some cards carry a <strong>Special Rule</strong> line instead of — or alongside — an Effect and a Defense Effect. It overrides normal resolution exactly as printed.</p>
+<p><strong>&quot;Attacker&quot;/&quot;Defender&quot; vs. &quot;Target&quot;</strong> — two different things on card text:</p>
+<ul><li><strong>Attacker/Defender</strong> means whoever you&#x27;re resolving <em>this specific exchange</em> against. No choice involved.</li><li><strong>Target</strong> means you genuinely choose — an ally among several, or a specific enemy when more than one is present.</li></ul>
+<p>### An Example — STRIKE</p>
+<pre>STRIKE
+RED — BODY
+Attack: Body + d10
+Effect: None
+Defense Effect: Deal 3 damage to attacker, unpreventable.
+Range: Melee
+&quot;Sometimes the direct path is the wisest path.&quot;</pre>
+<ul><li><strong>Name</strong> — STRIKE.</li><li><strong>Color + Stat</strong> — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.</li><li><strong>Attack: Body + d10</strong> — your Body stat plus a d10 roll. The fourth tier, and the rarest: Red alone holds it, on cards that pay for it somewhere else on the card (STRIKE has no Effect at all, REPAY costs 3 HP up front, OVERCOMMIT hands you Vulnerable for the privilege).</li><li><strong>Effect: None</strong> — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE&#x27;s whole design is spent on the number alone.</li><li><strong>Defense Effect: Deal 3 damage to attacker, unpreventable</strong> — win <em>or tie</em> as the defender and you deal a flat 3 back (STRIKE&#x27;s own Effect is None, so it never cancels the Defense Effect on a tie). &quot;Unpreventable&quot; means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.</li><li><strong>Range: Melee</strong> — you and your target must both be in the Frontline to play this card.</li><li><strong>Flavor text</strong> — <em>&quot;Sometimes the direct path is the wisest path.&quot;</em> Not a rule. Just the world&#x27;s own read on a card built with nothing to hide.</li></ul>
+<p>Full canonical wording for every keyword and status card: <code>rules/card-glossary.md</code>.</p>
+<p>A Passive resolves exactly like a card from hand once concealment is settled — what it is, its fixed shape, and how it&#x27;s concealed beforehand: <code>rules/character-creation.md</code>, Passives.</p>
+<hr>
+<h2>Attack Resolution</h2>
+<ol><li>Attacker plays 1 card, face down — committed, not yet public.</li><li>Defender may choose 1 card to defend with, face down — <strong>The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker</strong> — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.</li><li><strong>Blind and Evade resolve now, before either card is revealed.</strong> Both cards are already committed at this point. Every check that applies actually rolls — being attacked is what triggers a defender&#x27;s Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender&#x27;s own block-miss gets rolled, even when it turns out not to have mattered:</li></ol>
+<p>   - <strong>Attacker&#x27;s Blind:</strong> roll 1d2 if the attacker holds it.    - <strong>Defender&#x27;s Evade:</strong> roll 1d2 if the defender holds it.    - <strong>Defender&#x27;s Blind:</strong> roll 1d2 if the defender holds it and is actually defending.</p>
+<p>   <strong>Resolving the rolls, in this order:</strong>    1. <strong>Defender&#x27;s Evade succeeds</strong> → the defender auto-wins the resolution (step 5&#x27;s Defender wins outcome). A clean dodge — nothing else in this step changes that.    2. <strong>Otherwise, attacker&#x27;s Blind misses <em>and</em> defender&#x27;s Blind misses</strong> → <strong>Mutual Miss</strong> (see step 5): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn&#x27;t.    3. <strong>Otherwise, attacker&#x27;s Blind misses alone</strong> (the defender&#x27;s own block, if any, didn&#x27;t also miss) → the defender auto-wins the resolution.    4. <strong>Otherwise, defender&#x27;s Blind misses alone</strong> (the attacker&#x27;s own attack, above, didn&#x27;t also miss) → the attacker wins automatically, exactly like no legal defense, below.    5. <strong>Otherwise</strong> (none of the above fired) → proceed to the reveal.</p>
+<p><strong>A mistaken illegal pick</strong> (wrong Range for the current positions) is fixed differently depending on when it&#x27;s caught. Caught before the attacker&#x27;s card is known: swap freely, no penalty — nothing about the attacker&#x27;s choice has leaked, so the pick is still genuinely blind. Caught only after the attacker&#x27;s card is already revealed: too late for a free redo, since that knowledge can&#x27;t be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn&#x27;t also cost a card on top of the auto-loss.</p>
+<ol><li>If the defender cannot or chooses not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.</li><li>Both cards reveal simultaneously — only now do they become public and move to their owners&#x27; discard piles — and resolve using Rock-Paper-Scissors:</li></ol>
+<pre>Blue (Mind)   beats  Red   (Body)
+Red  (Body)   beats  Green (Soul)
+Green (Soul)  beats  Blue  (Mind)</pre>
+<p><strong>Attacker wins</strong> → deal damage, then apply the card&#x27;s Effect   <strong>Defender wins</strong> → no damage + defender triggers Defense Effect   <strong>Tie</strong> → no damage. Attacker&#x27;s Effect still triggers, then Defender&#x27;s Defense Effect triggers. If the attacker&#x27;s Effect cancels the Defense Effect, the Defense Effect does not trigger.   <strong>Mutual Miss</strong> → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker&#x27;s Blind and the defender&#x27;s Blind both missing in the same exchange (step 3, above); it never comes up during a normal reveal.</p>
+<p>An Effect that only <em>adds to or amplifies this attack&#x27;s damage</em> has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, &quot;+2 damage this attack,&quot; &quot;deal +2 for each Wound,&quot; and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.</p>
+<p>A standing bonus or penalty like &quot;your next attack deals +X&quot; is consumed by a miss.</p>
+<hr>
+<h2>Damage Pipeline</h2>
+<p>The base roll is <strong>Stat + die, with Deadly/Weak folded in</strong> — a Deadly stack adds a d6, a Weak stack subtracts one, and one of each cancels before either applies. That total is what enters the pipeline below.</p>
+<p>When <em>attack</em> damage is dealt, it passes through this pipeline in fixed order:</p>
+<p><strong>reassignment</strong> (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally&#x27;s hit; TURN sends an attack you&#x27;re defending against at a target of your choice) → <strong>Immunity</strong> (held by whoever is actually receiving the damage — reduces it to 0, leaving the rest of the pipeline nothing to act on) → <strong>Armour</strong> (flat reduction) → <strong>Resist / Vulnerable</strong> (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.</p>
+<p>A single attack cannot push a <em>standing</em> combatant below 0 HP (clamped to 0 = Collapse; see Collapse &amp; Death below).</p>
+<p><strong>Unpreventable damage bypasses this pipeline entirely</strong> — not as an exception carved out of it, but because the pipeline only ever governed <em>attack</em> damage in the first place. Thorns, status damage, and HP costs are not attacks, so none of the steps above apply: they cannot be reduced (Resist) or reassigned (Protect). They land on the original target, in full. Thorns specifically retaliates against a melee attacker after the hit lands, and is itself unpreventable.</p>
+<hr>
+<h2>Range</h2>
+<p>Every card lists a range requirement. If you don&#x27;t meet it, you cannot play that card as an attack this turn.</p>
+<table class="doc-table">
+<thead><tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr></thead><tbody>
+<tr>
+<td>Melee</td>
+<td>You and the target must be in the Frontline</td>
+</tr>
+<tr>
+<td>Ranged</td>
+<td>Works only while not in Melee range with the target</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>Either position is valid</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Positioning</h2>
+<p>Every combatant occupies one of two positions: <strong>Frontline</strong> or <strong>Backline</strong>.</p>
+<p>Frontline isn&#x27;t a fixed place on the field — it&#x27;s wherever two sides have actually closed the distance and are fighting face to face. Whoever&#x27;s caught up in that is Frontline, on both sides of it, for as long as it&#x27;s happening there; that contact point is where Melee range exists. Backline is everyone else: still in the fight, just not closed with anyone yet. Nothing pins the Frontline to one spot — it&#x27;s wherever the fighting actually is, and it moves when the fighting does.</p>
+<p>Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.</p>
+<p>### Range Matrix</p>
+<p>Position determines which cards can be played. Use this table to resolve any targeting question:</p>
+<table class="doc-table">
+<thead><tr>
+<th>Attacker</th>
+<th>Target</th>
+<th>Melee</th>
+<th>Ranged</th>
+<th>Both</th>
+</tr></thead><tbody>
+<tr>
+<td>Frontline</td>
+<td>Frontline</td>
+<td>✓</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Frontline</td>
+<td>Backline</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Backline</td>
+<td>Frontline</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Backline</td>
+<td>Backline</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+</tbody></table>
+<p>Melee requires both characters to be in the Frontline. Any other combination is not Melee range.</p>
+<p>### Rushdown</p>
+<p>The Move Position action&#x27;s other shape, not a separate action of its own: closing the distance on a Backline <strong>enemy</strong> yourself, instead of shifting between Frontline and Backline — not moving them, moving toward them. Wherever you land, that&#x27;s Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you&#x27;re already inside, not a first step into one from nothing. See Move Position in the action table, above.</p>
+<p>### Interact &amp; Position</p>
+<p>Position determines what&#x27;s within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.</p>
+<p>### Cover</p>
+<p>Taking cover is an action. You must be in the Backline, and the fiction must justify it — there must be something to take cover behind.</p>
+<p>While in cover you have <strong>Cover Evade</strong> — its own thing, not the Evade keyword, though it rolls identically. The same 1d2 dodge at the same point in Attack Resolution (step 3), succeeding the same way, with the one difference that matters: <strong>it is not a stack and is never spent.</strong> Every attack against you rolls it, however many come, for as long as you hold cover.</p>
+<p>Cover ends the instant you attack. It also ends if you leave the Backline, or if the fiction takes the cover away — a wall comes down, the thing you were behind moves. Cover Evade goes with it.</p>
+<p><strong>Cover Evade and held Evade stacks are separate.</strong> Only one dodge roll happens per attack, so if you have both, the cover roll is the one that happens and your stacks stay banked for after cover breaks. That is the point of paying an Action for cover rather than a card: the stacks you were holding survive it.</p>
+<p>### Confined Spaces</p>
+<p>In tight environments (narrow tunnels, low passages, cramped rooms), the GM may limit how many characters fit in either position. If a creature physically blocks a passage, characters behind them cannot be targeted unless the fiction clearly allows it (e.g., ranged attack with line of sight). Rushdown in confined spaces may represent forcing an enemy into unstable terrain rather than a clean positional shift.</p>
+<hr>
+<h2>Ongoing Effects</h2>
+<p>Some cards produce <strong>Ongoing Effects.</strong> These cards remain face up in front of the player after use. The effect persists until its stated condition is met, at which point the card is discarded.</p>
+<p>Multiple ongoing effects can be active simultaneously unless a card specifies otherwise.</p>
+<hr>
+<h2>Simultaneous Effects</h2>
+<p>When two or more effects would resolve at the same moment — several &quot;start of your turn&quot; triggers, two tokens landing at once — the <strong>controller of those effects chooses the order</strong> they resolve in. If the simultaneous effects have different controllers, the player whose turn it is decides the order.</p>
+<p>Order can matter: two ticks that commute end at the same number, but a heal that arrives after a lethal tick arrives too late. If two effects would each reduce a combatant to death at the same instant and neither is clearly first, the exchange is a <strong>mutual result</strong> — resolve it as a tie.</p>
+<p><strong>This does not apply to Attack Resolution.</strong> An attacker&#x27;s Effect and a defender&#x27;s Defense Effect are not a controller&#x27;s choice to order — Attack Resolution (above) already fixes it: Effect before Defense Effect, always, on every tie. Nobody, including the attacker, chooses that order.</p>
+<hr>
+<h2>You Are Not Your Own Ally</h2>
+<p>Card effects that say &quot;allies&quot; or &quot;enemies&quot; never include yourself. You can&#x27;t target yourself with an ally effect, and you can&#x27;t accidentally trigger an enemy effect on yourself. &quot;All allies in your position&quot; means everyone else sharing it — not you. The only exception is a card that explicitly names <em>yourself</em> as the target.</p>
+<hr>
+<h2>Collapse &amp; Death</h2>
+<p>If an attack reduces you to <strong>0 HP</strong>, you Collapse.</p>
+<ul><li>A single attack cannot push you below 0.</li><li>Additional damage taken while Collapsed <em>can</em> reduce you below 0.</li><li>If you reach <strong>negative half your Max HP (rounded up)</strong>, you die.</li></ul>
+<p>You are on the ground. That is literal, and it stays true until you spend an action getting up.</p>
+<p>### While Down</p>
+<p>You are Down from the moment you Collapse until you stand. Healing above 0 HP ends the Collapse — it does not stand you up.</p>
+<p><strong>Down is not unconscious.</strong> You are on the ground and finished as an attacker, but you are awake, aware, and still covering yourself.</p>
+<ul><li>You cannot attack.</li><li>You cannot change position.</li><li><strong>You defend normally.</strong> Choose a card face down and resolve the exchange exactly as a standing combatant would, Defense Effect and all. Attack Resolution runs against you in full — including the attacker&#x27;s Blind check — so an attack on a Down character can still miss.</li><li><strong>You keep your one free action each turn</strong> (Free Actions, above). Eating, drinking, and activating your own gear all work from the ground. Moving does not: a banked Quick has no Move Position to spend itself on while you&#x27;re Down, so it simply holds.</li><li>Your Action is unavailable while you&#x27;re Down, with one exception — standing up, once you have the HP for it (Standing Up, below).</li><li>You may be healed back into combat.</li><li>Every <strong>3 in-game hours</strong> spent Collapsed, recover <strong>1d4 HP</strong>.</li></ul>
+<p>### Standing Up</p>
+<p>Once you are above 0 HP, <strong>standing costs your action</strong> on your turn. You are Down until you spend it, and you act normally from your next turn onward.</p>
+<p>A revived ally is not immediately back on offense. They were covering themselves the whole time they were down, but they are still on the ground and one turn away from being useful — which is the real cost of going down, and the reason healing someone before they Collapse is worth more than healing them after.</p>
+<p>### If the Entire Party Collapses</p>
+<p>The enemy determines the outcome based on their intent, nature, and what the fiction demands. Death is possible — but it is not automatic. Captivity, humiliation, forced retreat, and stranger fates are all on the table.</p>
+<p>The world does not guarantee fairness. It only guarantees consequence.</p>
+<p>### GM Override</p>
+<p>The GM may declare instant death at any point if the fiction demands it — a beheading, a fall into the void, a creature that does not leave survivors. The collapse rules exist to create dramatic space, not to protect players from a world that can genuinely kill them. Use this power with intention, not frequency.</p>
+<h1 class="section-break">Resolution</h1>
+<hr>
+<h2>Core Resolution</h2>
+<p>When a character attempts something risky outside of combat, roll:</p>
+<p><strong>2d10 + relevant stat</strong></p>
+<p>Compare the result to a Difficulty Class set by the GM.</p>
+<table class="doc-table">
+<thead><tr>
+<th>Difficulty</th>
+<th>DC</th>
+</tr></thead><tbody>
+<tr>
+<td>Easy</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Hard</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Extreme</td>
+<td>19</td>
+</tr>
+</tbody></table>
+<p>Meet or beat the DC to succeed.</p>
+<p>The fiction determines which stat applies — Body for physical exertion, Mind for reasoning and interpretation, Soul for bonds, will, and spiritual pressure. When multiple stats could apply, the player may make their case. The GM decides.</p>
+<hr>
+<h2>Advantage &amp; Disadvantage</h2>
+<p>If a card in your hand has a name that meaningfully supports what you&#x27;re attempting, you may discard it to gain <strong>Advantage</strong>.</p>
+<ul><li><strong>Advantage</strong> — Roll 3d10, discard the lowest.</li><li><strong>Disadvantage</strong> — Roll 3d10, discard the highest.</li></ul>
+<p><em>Note: Advantage and Disadvantage on skill checks and saves use the 3d10 system above — a separate mechanic from combat. The combat-damage versions are named <strong>Deadly</strong> and <strong>Weak</strong> specifically so neither collides with the skill-check terms here — but they don&#x27;t work the same way as the roll above. Deadly adds a d6 to the next damage roll; Weak subtracts one; a held stack of each cancels 1-for-1 on consumption. See <code>rules/card-glossary.md</code> for the actual rule.</em></p>
+<p>The table must agree the card meaningfully supports the action. When in doubt, ask: <em>would a reasonable person look at this card name and understand the connection?</em></p>
+<p><strong>A Passive grants Advantage the same way</strong> — the table judges whether its printed name plausibly supports the attempt, exactly as it would a discarded card&#x27;s name. Unlike a discarded card, a Passive is never spent; it can support the same kind of attempt again next time.</p>
+<p><strong>Neither one stacks.</strong> However many sources apply to one roll — a Passive, a discarded card, both at once — the result is still just Advantage: roll 3d10, drop the lowest. It never compounds into anything bigger. Disadvantage works the same way in the other direction.</p>
+<p><strong>Advantage and Disadvantage cancel.</strong> If both apply to the same roll, they cancel and you roll a flat 2d10 + stat. Because neither side stacks, this is all-or-nothing rather than one-for-one: any amount of Advantage against any amount of Disadvantage leaves a plain roll.</p>
+<hr>
+<h2>Checks</h2>
+<p>Checks are active attempts — you&#x27;re trying to do something.</p>
+<ul><li><strong>Body Check</strong> — Overcome a physical obstacle or impose physical control.</li><li><strong>Mind Check</strong> — Obtain or interpret information, solve, predict, or argue.</li><li><strong>Soul Check</strong> — Create or maintain bonds, resist spiritual pressure, enforce oaths.</li></ul>
+<hr>
+<h2>Saves</h2>
+<p>Saves are reactive — something is happening to you.</p>
+<ul><li><strong>Body Save</strong> — Fatigue, falls, cold, pain, forced movement.</li><li><strong>Mind Save</strong> — Illusions, manipulation, memory interference.</li><li><strong>Soul Save</strong> — Fear, corruption, possession, despair, spiritual confusion.</li></ul>
+<p>The difference matters: a character who fails a <strong>check</strong> didn&#x27;t accomplish what they set out to do. A character who fails a <strong>save</strong> suffers a consequence they couldn&#x27;t fully prevent.</p>
+<hr>
+<h2>Skills</h2>
+<p>A roll a Skill plainly covers gets <strong>+2</strong>, flat, added to the 2d10 + stat. <strong>This applies to Checks and Saves alike</strong> — what you&#x27;re trained in helps you whether you went looking for the situation or it came looking for you. The table judges &quot;plainly covers&quot; the same way it judges whether a discarded card&#x27;s name supports Advantage, above — except a Skill is an exact tag, not a name, so there&#x27;s usually nothing to argue about.</p>
+<p><strong>Stacks with Advantage.</strong> A Skill&#x27;s +2 and an Advantage swap (from a Passive or a discarded card) are different currencies — nothing stops both applying to the same roll.</p>
+<p>What a Skill actually is, and how many you have: <code>rules/character-creation.md</code>, Skills.</p>
+<hr>
+<h2>Perception</h2>
+<p>Perception is not a single roll. When a character tries to notice something, the GM determines what kind of signal is present and assigns the appropriate mode. The player may propose a different mode if the fiction supports it.</p>
+<hr>
+<p>### Reason (Mind) — Pattern &amp; Detail</p>
+<p>You notice information that must be interpreted.</p>
+<p><strong>Use for:</strong> Hidden mechanisms, symbols, inconsistencies, tracking, investigation, puzzle clues, reading tactics or routines, environmental details that &quot;don&#x27;t add up.&quot;</p>
+<p><strong>Failure usually means:</strong> You miss the meaning, not the presence. You may draw false conclusions.</p>
+<hr>
+<p>### Senses (Body) — Timing &amp; Physical Signal</p>
+<p>You notice signals the body reacts to faster than thought.</p>
+<p><strong>Use for:</strong> Hearing movement, feeling vibrations, reacting to sudden danger, navigating unstable ground or darkness, detecting ambushes, shifts in balance, pressure, or temperature.</p>
+<p><strong>Failure usually means:</strong> You react too late. You&#x27;re off-balance or out of position.</p>
+<hr>
+<p>### Read (Soul) — Intent &amp; Weight</p>
+<p>You notice what is emotionally, socially, or spiritually present.</p>
+<p><strong>Use for:</strong> Reading lies, fear, or confidence; sensing curses, blessings, corruption; judging whether a promise or threat is real; detecting hostile tension; places or people that &quot;feel wrong.&quot;</p>
+<p><strong>Failure usually means:</strong> You misjudge sincerity. You&#x27;re emotionally or spiritually misled.</p>
+<hr>
+<p>### The One Table Rule</p>
+<p>When a player says <em>&quot;I look around&quot;</em> or <em>&quot;I try to get a read on this,&quot;</em> ask one question: <strong>What are you trying to notice?</strong></p>
+<ul><li><em>What it is</em> → <strong>Reason (Mind)</strong></li><li><em>When or where it happens</em> → <strong>Senses (Body)</strong></li><li><em>What it intends or signifies</em> → <strong>Read (Soul)</strong></li></ul>
+<p>This keeps perception active and specific. Vague sensing gets vague results. A player who names what they&#x27;re looking for — and is right about which mode applies — gets a sharper answer on success.</p>
+<h1 class="section-break">Card Keyword Glossary</h1>
+<p>Canonical definitions for all keywords and status cards used in Tales Untold. When a card uses a keyword, this is the ruling. Card text that contradicts this file should be treated as an error.</p>
+<p><strong>Special Rule</strong> — some cards carry a Special Rule line instead of, or alongside, an Effect and a Defense Effect. It overrides normal resolution exactly as printed on that card.</p>
+<hr>
+<h2>Keywords</h2>
+<p><strong>At the table — status-effect tokens.</strong> A card that grants a temporary status — a Debuff or a Positive Status Effect, landing on you, an ally, or a foe — doesn&#x27;t need a separate physical token. The card <em>is</em> the token: set it face-up in front of whoever it&#x27;s affecting instead of sending it straight to the discard pile, and discard it for real once the effect resolves, triggers, or expires. Same physical technique Ongoing Effects already use (<code>rules/combat.md</code>). Not just a bookkeeping convenience: the card is out of its owner&#x27;s rotation the whole time it&#x27;s serving as a token — it isn&#x27;t in their discard pile, so it isn&#x27;t coming back on a reshuffle either. That&#x27;s a real cost on whoever cast it, whether the card debuffed a foe or buffed an ally.</p>
+<p><strong>Counter Attack</strong> Deal this card&#x27;s Attack damage back to the attacker, works with effects like deadly.</p>
+<p><strong>Debuff</strong> Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward can prevent.</p>
+<p><strong>Positive Status Effects</strong> Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.</p>
+<p><strong>Deadly</strong> The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.</p>
+<p><strong>Weak</strong> The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).</p>
+<p><strong>Anchored</strong> A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it&#x27;s aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.</p>
+<p><strong>Blind</strong> 50% chance to miss whatever you&#x27;re doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (<code>rules/combat.md</code>, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in <code>rules/combat.md</code>.</p>
+<p><strong>An attacker&#x27;s miss alone</strong> ends the exchange in the defender&#x27;s favor — the defender auto-wins the resolution, exactly as if the RPS reveal had gone their way, and the attacker&#x27;s card is discarded. <strong>A defender&#x27;s miss alone</strong> on their own block resolves exactly like having no legal defense: the attacker wins automatically. <strong>Both missing in the same exchange</strong> is neither of those — it&#x27;s a Mutual Miss (<code>rules/combat.md</code>, Attack Resolution): the attack failed and the attempted block against it also failed, so nobody wins and no Effect or Defense Effect triggers. A defender&#x27;s Evade succeeding overrides all of this — a clean dodge wins the exchange outright regardless of what either Blind roll says.</p>
+<p>Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.</p>
+<p><strong>Evade</strong> 50% chance to dodge an attack declared against you. Checked after you&#x27;ve chosen your defense (or declined to defend), before either card is revealed (<code>rules/combat.md</code>, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker&#x27;s card is discarded and its own Effect does not trigger.</p>
+<p>Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.</p>
+<p><strong>Cover Evade is not this keyword.</strong> Taking cover grants a dodge that rolls the same way but persists instead of being spent, and it takes the place of your stacks while it lasts rather than adding to them (<code>rules/combat.md</code>, Positioning → Cover).</p>
+<p><strong>Exile</strong> Remove a card from play for the rest of combat. It does not go to the discard pile and cannot be retrieved. When combat ends, exiled cards return to their owner&#x27;s discard.</p>
+<p><strong>A status card that is exiled is destroyed instead</strong> — it never comes back. Exile is the one way to answer a Wound, an Exhaust, or a curse permanently in the middle of a fight.</p>
+<p><strong>Protect</strong> The next time an ally would take attack damage, you take it instead.</p>
+<p><strong>Initiative Shift X</strong> A positive shift moves the target&#x27;s token X positions counterclockwise around the wheel (see <code>rules/combat.md</code>); a negative shift moves it X positions clockwise. A positive shift can never cause its target to act later. A negative shift can never cause its target to act sooner.</p>
+<p>Initiative Shift always moves the token the full requested distance. If that movement would violate &quot;positive never later&quot; or &quot;negative never sooner,&quot; place a chip to preserve the invariant instead of changing the movement.</p>
+<p><strong>Tracking skips and bonus turns.</strong> Place a skip chip on a token that needs to be skipped; when the marker reaches it, skip its turn and remove the chip. Place a bonus chip on a token that&#x27;s earned an immediate extra turn instead; take that turn, then remove the chip.</p>
+<p><strong>With exactly 3 combatants on the wheel, reduce X&#x27;s magnitude by 1 (toward zero) before applying the shift.</strong> A shift of ±1 becomes no shift at all. This applies only at exactly 3 — the wheel is at its most sensitive there, and this is the one correction for it.</p>
+<p>Multiple shifts applied to the same token at once sum into one net shift before it applies. If a positive shift&#x27;s distance would carry the target past the point where it must act now — including a full lap back around to the marker&#x27;s own slot — the target instead receives an immediate extra turn, taken as soon as the currently-resolving turn finishes. The combatant already acting when this happens is not shorted a turn, but doesn&#x27;t get a second one either: the slide moves them to a new slot, and the marker skips that slot when it reaches it, since they already acted this lap. That skip is specifically compensation for the bonus turn just granted — an ordinary bystander displaced by sliding, with no bonus turn triggering it, simply acts normally when the marker reaches wherever it landed. A negative shift is the mirror case: if its math would let the target act sooner than the marker&#x27;s normal progression allows, the shift still moves the target&#x27;s token and slides the wheel in full, but the target&#x27;s turn is skipped the first time the marker reaches its new slot — it acts normally starting the next lap. Reshifting a token that already carries a pending skip or bonus chip removes the pending chip — the token then resolves normally under the new shift, whatever slot it lands on.</p>
+<p>For worked cases covering all of the above, see <code>rules/initiative-shift-examples.md</code>.</p>
+<p><strong>Lifesteal</strong> Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that&#x27;s the amount that landed.</p>
+<p><strong>Resist</strong> The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.</p>
+<p>Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. &quot;Resist X&quot; grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.</p>
+<p><strong>Armour X</strong> Reduce all incoming attack damage by X. It applies to every attack, for the whole fight — it is not consumed and does not expire.</p>
+<p>Armour applies <strong>before</strong> Resist and Vulnerable, so a creature with both takes the flat reduction first and the halving second. Unpreventable damage ignores Armour entirely, the same way it ignores every other attack-damage defense. An attack reduced to 0 still landed: the attacker&#x27;s Effect resolves normally, it simply has no damage to work with.</p>
+<p><strong>Armour stacks additively into a single value.</strong> Armour 2 and Armour 1 held at once are Armour 3, reducing every attack by 3 for the rest of the fight. This is a different shape of stacking from Resist and Vulnerable: those stack as charges, each spent on one attack. Armour is never spent, so its stacks add up instead of queuing up.</p>
+<p>Armour is the system&#x27;s general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier&#x27;s own effect, and on consumables. Anything that says &quot;reduce damage by X&quot; is Armour X.</p>
+<p><strong>Vulnerable</strong> The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.</p>
+<p><strong>Rooted</strong> The next time you would change position, that movement is cancelled and the Rooted is spent. It is a charge, not a timer — it waits as long as it has to, and it is used up by the first movement it stops, whenever that comes.</p>
+<p><strong>It stops forced movement too, and is spent doing it.</strong> A Pull, a compelled Rushdown, a card that shoves you to the other position — Rooted cancels that just as it cancels your own Move Position, and then it is gone. This is the trade: Rooted is harder to wait out than a timer, and an enemy can strip it by making you move.</p>
+<p>Rooted stacks. Each stack cancels one movement.</p>
+<p><strong>Anchored + Rooted.</strong> When an Anchored effect re-applies Rooted to a fixed original target (GRAPPLE — see Anchored, above), that target gains a fresh Rooted charge at the start of each of your turns for as long as you remain Anchored. Moving ends your own Anchored and stops further re-application; it does not spend a Rooted charge the target is already holding.</p>
+<p><strong>Card text.</strong> A card that grants Rooted should say only &quot;gains Rooted&quot; — the rule lives here, not restated on the card.</p>
+<p><strong>Quick</strong> A banked free Move Position, Rushdown included — spending it is your one free action for the turn (<code>rules/combat.md</code>, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you&#x27;ve been granted, spend one per turn.</p>
+<p><strong>Scry X</strong> Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.</p>
+<p><strong>Staggered</strong> The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.</p>
+<p><strong>Thorns X</strong> Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.</p>
+<p><strong>Thorns stacks additively into a single value</strong>, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.</p>
+<p><strong>Unpreventable</strong> Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, and reassignment (Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.</p>
+<p><strong>Ward</strong> Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.</p>
+<p><strong>Immunity</strong> The next attack damage you would take is reduced to 0. Nothing else about the exchange changes: cards are chosen and revealed as normal, the RPS outcome stands, and the attacker&#x27;s Effect and any Defense Effect trigger exactly as they otherwise would. Only the damage is negated.</p>
+<p>It applies inside the Damage Pipeline (<code>rules/combat.md</code>), which has two consequences worth knowing. It protects whoever actually receives the damage, so an attack reassigned onto someone else meets <em>their</em> Immunity, not yours. And it does nothing against unpreventable damage — Thorns, status damage, and HP costs were never attack damage to begin with.</p>
+<p>One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won, or it was a tie — leaves it untouched for the next one.</p>
+<hr>
+<h2>Stat Change</h2>
+<p>Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:</p>
+<ul><li><strong>Body</strong> — Red-card damage, and max HP at <strong>4 points per point of Body</strong> (down when lost, up when gained) — the heaviest of the three shares by a wide margin, matching the HP formula&#x27;s own weighting: (4 × Body) + Soul + Mind.</li><li><strong>Mind</strong> — Blue-card damage; hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls; changes the moment the stat does, and a hand already above the new, lower size is not discarded down, it simply can&#x27;t draw back up until it naturally falls below the cap); and max HP at <strong>1 point per point of Mind</strong>.</li><li><strong>Soul</strong> — Green-card damage; initiative (1d6 + Soul, applied to rolls made after the change); and max HP at <strong>1 point per point of Soul</strong>.</li></ul>
+<p><strong>All three stats touch max HP</strong> <em>(changed 2026-08-06 to match the HP formula&#x27;s own three-stat shape — Body at 4×, Mind and Soul at 1× each; previously Body was the only stat that did. Body&#x27;s multiplier went from 3× to 4× on 2026-09-06, widening the HP spread so Body carries more of it.)</em>. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.</p>
+<p>A stat change lasts for the combat unless a card says otherwise, then the stat — and any max HP, hand size, or initiative it moved — returns to normal. This applies to every current and future stat-changing card; the card only states the stat and amount.</p>
+<hr>
+<h2>Status Cards</h2>
+<p>Status cards are placed into decks as consequences. They cannot be played. They must be managed.</p>
+<hr>
+<p>### WOUND <em>Status — Colorless</em> Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own. In combat, use your action to destroy 1 Wound from your hand. Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (<code>rules/character-creation.md</code>, Resting), so clearing several Wounds in one sitting costs time, not repetition. On a long rest, all Wounds are destroyed.</p>
+<hr>
+<p>### EXHAUST <em>Status — Colorless</em> Cannot be played. It occupies a card slot while in your hand, and an Exhaust does not leave on its own. Where it enters is whatever the source card says — hand or deck. A card that adds Exhaust to your hand costs you the slot immediately; a card that shuffles Exhaust into your deck costs you nothing until you draw it. Use your action to rest in place: every Exhaust card in your hand is destroyed. A short or long rest removes every copy of Exhaust from your hand, deck, and discard pile.</p>
+<p><strong>Exhaust always clears in bulk; a Wound comes off one at a time.</strong> That is the difference between them. Rest once and every Exhaust you are carrying is gone at once, wherever it sits. Wounds have to be answered individually — one per action, one per short rest.</p>
+<hr>
+<p>### A ROOTED HEART <em>Status — Curse</em> Cannot be played. At the end of your turn, discard it if it is in your hand. It costs you the draw and the hand slot for one turn, then cycles back through your deck on the next reshuffle — it does not clog your hand the way a Wound does, it simply keeps coming back. Removal: story dependent. Exiling it destroys it (see Exile). <em>&quot;Something of the Weald is in you now. It is patient about it.&quot;</em></p>
+<p><em>Source: the Root Heart&#x27;s GRAFT. See <code>cards/root-heart-weald.md</code>.</em></p>
+<hr>
+<p>### FOGLUST <em>Status — Curse</em> When drawn: Gain Blind until end of your turn. Removal: Story dependent. <em>&quot;The fog remembered somewhere beautiful. You went with it.&quot;</em></p>
+<p><em>Source: Fog Goggles. See <code>items/fog-basin-items.md</code>.</em></p>
+</body>
+</html>

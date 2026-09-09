@@ -22,12 +22,12 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 ## Stats
 
-Mind 5 / Body 2 / Soul 2 — HP 13
+Mind 5 / Body 2 / Soul 2 — HP 15 *(updated: HP formula is now 4× Body, was 3×)*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 5 | Blue card damage; hand size 5 |
-| Body | 2 | Red card damage; HP weighted 3× |
+| Body | 2 | Red card damage; HP weighted 4× |
 | Soul | 2 | Green card damage; Initiative 1d6 + 2 |
 
 Mind 5 at creation's own cap isn't incidental here — raw cognitive reach is what a telepathic hive-mind extension would carry even with the link itself cut.

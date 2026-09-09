@@ -7,10 +7,11 @@ Signature cards for the Bone Collector. See `bestiary/bone-collector.md`. Tagged
 **SILK THREAD MEASURE**
 BLUE — MIND — WEALD
 Attack: Mind + d6
-Effect: Reveal Hand. Choose 1 revealed card; the defender discards it.
+Effect: Choose 1 card at random from the defender's hand; they discard it.
 Defense Effect: Scry 2.
 Range: Ranged
 *"It measured the merchant twice. Once before, once after."*
+*Reworked 2026-09-06: was built on Reveal Hand, since retired — no longer reveals anything, just a blind random discard (same technique as Fermata's THE HELD NOTE, `cards/fermata.md`).*
 
 ---
 
@@ -28,6 +29,6 @@ Range: Melee
 GREEN — SOUL — WEALD
 Attack: Soul + d4
 Effect: Gain Armour 1.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 2.
 Range: Both
 *"Everything on it belonged to someone who also thought they were leaving."*

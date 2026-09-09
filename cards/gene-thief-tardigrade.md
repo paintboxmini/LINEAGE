@@ -9,7 +9,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 1 of the defender's deck.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Melee
 *"It doesn't need to see you to know what you are."*
 
 ---
@@ -18,7 +18,7 @@ Range: Both
 RED — BODY
 Attack: Body + d8
 Effect: Gain Deadly.
-Defense Effect: Gain Thorns.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"Every meal teaches the next bite something."*
 

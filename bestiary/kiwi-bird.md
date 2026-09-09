@@ -4,7 +4,7 @@
 
 **Cards:** `cards/kiwi-bird.md`
 
-**Mind 1 / Body 1 / Soul 2 — HP 6**
+**Mind 1 / Body 1 / Soul 2 — HP 7**
 **Creature Threat Rating:** 4
 
 **Deck (4 — 1 Blue / 1 Red / 2 Green):** RUSTLE AND GONE *(blue)* · PECK *(red)* · UNDERBRUSH DASH, STILL AS LITTER *(green)*

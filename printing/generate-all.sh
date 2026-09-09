@@ -20,8 +20,8 @@ cd "$(dirname "$0")"
 CHECK=0
 [ "${1:-}" = "--check" ] && CHECK=1
 
-CARD_SETS=(core briarwatch mason frost steele oracle items items-field washed-ashore)
-RULES_DOCS=(packet player-guide)
+CARD_SETS=(core briarwatch mason frost steele oracle oracle-expansion items items-field washed-ashore)
+RULES_DOCS=(packet play-reference)
 CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
 
 echo "Regenerating card sheets..."

@@ -6,11 +6,11 @@ It knows every passage. It has been here longer than anyone the party has met, l
 
 The pressure track exists because of how the minotaurs navigate — not by walls, but by disturbance. Noise, rule-breaks, running, fear. They read disruption the way the Wall-Reader reads stone. The higher the pressure, the more precisely they know where the party is.
 
-**Mind 3 / Body 6 / Soul 5 — HP 26**
+**Mind 3 / Body 6 / Soul 5 — HP 32**
 **Creature Threat Rating:** 14
 
 
-**Deck (14 — 3 Blue / 6 Red / 5 Green):** MAZE SENSE, CUT OFF, PATTERN READ *(blue)* · HEADLONG, WIDE SWING, GORE, IRON GRIP, SEISMIC REDIRECT, CERTAIN STRIKE *(red)* · BOUND TO THE STONE, LABYRINTH ECHO, INEVITABILITY, BIND, PATIENCE *(green)*
+**Deck (14 — 3 Blue / 6 Red / 5 Green):** MAZE SENSE, CUT OFF, PATTERN READ *(blue)* · HEADLONG, WIDE SWING, GORE, IRON GRIP, CLOSE IN, CERTAIN STRIKE *(red)* · BOUND TO THE STONE, LABYRINTH ECHO, INEVITABILITY, BIND, PATIENCE *(green)*
 **Passive — Labyrinth Bond:** The Minotaur is aware of the current pressure track value at all times. While the track is 5 or higher, all Minotaur attacks deal +d6 damage.
 
 **Passive — Corridor Fighter:** The Minotaur does not suffer movement penalties in narrow corridors. Creatures in Frontline with a Minotaur inside a corridor cannot move to Backline without first disengaging — this requires an action and a successful Body check (DC 13).

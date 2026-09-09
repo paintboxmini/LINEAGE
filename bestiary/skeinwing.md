@@ -4,11 +4,11 @@
 
 **Cards:** `cards/skeinwing.md`
 
-**Mind 2 / Body 1 / Soul 4 — HP 9**
+**Mind 2 / Body 1 / Soul 4 — HP 10**
 **Creature Threat Rating:** 7
 
 
-**Deck (7 — 2 Blue / 1 Red / 4 Green):** DEFLECT, TOO HIGH TO HEAR *(blue)* · FROM ABOVE *(red)* · SYNCHRONY, UNTOUCHED, COMMUNION, ENTWINED *(green)*
+**Deck (7 — 2 Blue / 1 Red / 4 Green):** DEFLECT, TOO HIGH TO HEAR *(blue)* · FROM ABOVE *(red)* · UNIFY, UNTOUCHED, COMMUNION, ENTWINED *(green)*
 
 ---
 

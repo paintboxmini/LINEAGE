@@ -29,5 +29,15 @@ GREEN — SOUL — WEALD
 Attack: Soul + d4
 Effect: Add 1 A ROOTED HEART to the bottom of the defender's deck.
 Defense Effect: Attacker gains Rooted.
-Range: Both
+Range: Melee
 *"It does not kill the tree it takes. It only makes the tree partly itself."*
+
+---
+
+**SWAY**
+GREEN — SOUL — WEALD
+Attack: Soul + d4
+Effect: Move the defender to the other position.
+Defense Effect: Gain Quick.
+Range: Both
+*"It cannot come to you. It does not have to."*

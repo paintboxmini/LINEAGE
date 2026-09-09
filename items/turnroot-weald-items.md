@@ -8,7 +8,7 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
-*Price: ~40 gold*
+*Price: ~45 gold (two points of effect at the flat 15/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
@@ -22,7 +22,7 @@ Small, crystalline seeds that resonate with a faint, haunting echo when shaken. 
 
 Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of processing — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
 
-**Use:** Single-use. Heal 8 HP to self or one ally (Item Action).
+**Use:** Single-use. Heal 8 HP to self or one ally (Use an Item — costs your Action).
 
 ---
 

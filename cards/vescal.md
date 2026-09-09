@@ -11,7 +11,7 @@ Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and sup
 **CENSURE**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2 — they cannot change position for 2 turns.
+Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2.
 Defense Effect: Attacker gains Rooted 2.
 Range: Melee
 *"Be still. This has already been decided."*
@@ -81,7 +81,7 @@ RED — BODY
 Attack: Body + d6
 Effect: If target is Backline, deal +3 damage.
 Defense Effect: Counter Attack.
-Range: Both
+Range: Ranged
 *"Distance is a preference, not a fact."*
 
 ---
@@ -95,9 +95,9 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Orin may immediately play 1 card from their hand as a free action this turn.
 Defense Effect: Scry 1 of Orin's deck.
-Range: Both
+Range: Ranged
 *"No signal needed. They already know."*
 
 ---
 
-*INCENSE WARD, OPEN DOOR, and BALANCE RESTORED were cut from Vescal's deck during a rebalance to match his stat total (`characters/vescal.md`) — preserved at `experimental/archives/cut-cards.md`. SMOKE SCREEN was cut from here too, but reworked and promoted to core instead of archived rather than deleted; it lives in `cards/green-soul.md` and was renamed **DUST** on 2026-08-03.*
+*INCENSE WARD, OPEN DOOR, and BALANCE RESTORED were cut from Vescal's deck during a rebalance to match his stat total (`characters/vescal.md`) — preserved at `experimental/archives/cut-cards.md`. SMOKE SCREEN was cut from here too, but reworked and promoted to core instead of archived rather than deleted; it lives in `cards/green-soul.md`, renamed **DUST** on 2026-08-03 and then **SMOKESCREEN** (one word — back near where it started) on 2026-08-26.*

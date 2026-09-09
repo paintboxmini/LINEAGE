@@ -244,7 +244,7 @@ Moving during the contraction: the walls brush shoulders, slow progress, create 
 
 The party has to decide: move now, move carefully, or wait.
 
-**Passing through, once, no check:** Each player who passes through gains 1 Locked — their own choice which card. Not a trap to avoid, not a consequence of moving wrong; contact is the whole cost. It only happens once per player here, regardless of how many times they pass back through. Only the Nagamani unlocks it. See the Nagamani, below.
+**Passing through, once, no check:** Each player who passes through gains 1 Locked — their own choice which card. **Locked** is place-specific here, not a keyword from `rules/card-glossary.md`: the chosen card cannot be played, and unlike a normal Locked status it does not clear at the end of combat — it holds for the rest of the delve. Not a trap to avoid, not a consequence of moving wrong; contact is the whole cost. It only happens once per player here, regardless of how many times they pass back through. Only the Nagamani unlocks it. See the Nagamani, below.
 
 ---
 

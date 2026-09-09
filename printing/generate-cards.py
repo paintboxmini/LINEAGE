@@ -20,6 +20,19 @@ import sys
 # ---------------------------------------------------------------------------
 # Card sets — add new encounter sets here
 # ---------------------------------------------------------------------------
+#
+# What the Oracle deck may not contain (`rules/cards.md`, The Oracle Deck):
+# nothing that reaches into an enemy's hand, deck, or stats directly. No hand
+# reveal, no forcing an enemy to discard, no inserting status cards into their
+# deck or hand, no manipulating their deck, no stat reduction, and nothing
+# Sealed. Staggered is out too: it eats a whole attack or a whole defence,
+# which is too large a swing to hand a starting deck freely. Red keeps one
+# card that inflicts it, OFF BALANCE, and only on a clean win.
+#
+# Acting on your own hand or deck is fine, and so is control that operates
+# on the board — statuses, positioning, initiative, targeting restrictions. Check a candidate against that list before adding it here; the
+# starting deck is where a new player learns what the game is, and reaching
+# into someone else's resources is not it.
 
 SETS = {
     'core': {
@@ -82,7 +95,7 @@ SETS = {
         # `../characters/frost.md` — order matches that file's own
         # Red/Blue/Green grouping, not registration order in the core files.
         'cards': [
-            'SACRIFICE STRIKE', 'BLOOD IN THE GAP', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
+            'REPAY', 'BLEED', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
             'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
             'TWIN STRIKE',
         ],
@@ -109,27 +122,192 @@ SETS = {
             '../cards/green-soul.md',
         ],
         # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim. Fixed composition since 2026-08-03: 21 per colour, split
-        # 12/6/3 along each colour's range identity.
+        # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
+        # led by that colour's own range identity. The ideal split is 12/6/3
+        # and all three colours are on it; the per-colour notes below say
+        # which slots each change spent.
         'cards': [
-            # Red (21) — melee 12 / both 6 / ranged 3
-            # GORE swapped for INTERCEPT 2026-08-03 — see content.py.
-            'ATTRITION', 'BLINDSIDE', 'CHARGE', 'ENDURE', 'GUARD', 'INTERCEPT',
-            'OPEN GUARD', 'PAIN IS FUEL', 'PUSH', 'REELING', 'UNBROKEN',
-            'WEATHERED', 'CLIFF SONG', 'FOOTWORK', 'GROUNDING STANCE', 'PULL',
-            'RECOVER', 'SLIP THE BLADE', 'BLOOD IN THE GAP',
-            'EMERGENCY REPAIRS', 'STARING CONTEST',
-            # Blue (21) — ranged 12 / melee 6 / both 3
-            'AXIOM', 'CALCULATE', 'DEAD END', 'FOCUS', 'FORESEEN',
-            'LAST RESORT', 'MARKED', 'PROFILE', 'REFRACT', 'RETORT', 'STUDY',
-            'VEIL', 'ANTICIPATE', 'DEFLECT', 'PREDICT', 'HESITATE', 'TELL',
-            'SECOND GUESS', 'REALIGNMENT', 'SHARPEN', 'SIDESTEP',
-            # Green (21) — both 12 / ranged 6 / melee 3
-            'ACCEPTANCE', 'BRAMBLE', 'GIVE WAY', 'INSTINCT',
-            'LEVEL THE FIELD', 'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SETTLE',
-            'SWAY', 'UNTOUCHED', "YOU'RE NEXT", 'BALANCE', 'COMMUNION',
-            'DEAD RECKONING', 'MOCKERY', 'RESONATE', 'SUPPORT', 'BIND',
-            'DUST', 'OPENING',
+            # Red (21) — melee 12 / both 6 / ranged 3, back on the ideal
+            # split after the 2026-09-06 pass. GORE swapped for INTERCEPT
+            # 2026-08-03 — see content.py — and INTERCEPT has since been
+            # folded into GUARD and cut.
+            #   renamed: CLIFF SONG -> HEALING SONG (also Both -> Ranged),
+            #            RECOVER -> SECOND WIND
+            #   out:     INTERCEPT (cut), BLEED, STAUNCH
+            #   in:      OFF BALANCE + CLOSE IN (melee),
+            #            CERTAIN STRIKE (ranged)
+            #   RATTLE out with the Staggered ban, TRAMPLE in (both melee).
+            #   OFF BALANCE keeps Staggered, gated to a clean win — the one
+            #   card in the deck allowed to inflict it.
+            # Three in for three out: INTERCEPT's cut left the colour at 20,
+            # so the two named replacements needed a third. CLOSE IN is it,
+            # and it is the only Oracle card that teaches Rushdown.
+            # 2026-09-07, the Deadly pass: Red had no way to raise its own
+            # damage anywhere in the deck — every effect was a status, a heal,
+            # a move, or a defensive gain, so the colour of raw damage
+            # expressed that only through die size.
+            #   out: HEALING SONG (reworked Green — see Green below),
+            #        ENDURE (flat 'Gain Resist' at d8 Melee; Red still holds
+            #        five Resist cards without it)
+            #   in:  RETALIATE (melee, d8 — same die and range as ENDURE, so
+            #        the swap is neutral on the die spread),
+            #        SHARPEN (ranged — reworked Both -> Ranged to keep the
+            #        3 ranged slots HEALING SONG's departure would have cost)
+            'ATTRITION', 'BLINDSIDE', 'GUARD', 'OFF BALANCE', 'OPEN GUARD',
+            'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            'CLOSE IN', 'RETALIATE',
+            'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
+            'SLIP THE BLADE',
+            'CERTAIN STRIKE', 'STARING CONTEST', 'SHARPEN',
+            # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
+            # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
+            # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
+            # attacker's hand) -> PARTITION. Then the blue balance pass:
+            #   renamed: TELL -> UNDERMINE -> DOUBT -> ENFEEBLE (also
+            #            Melee -> Ranged),
+            #            DEAD END -> PINNED, FORESEEN -> FORESEE,
+            #            SECOND GUESS -> FALTER
+            #   out:     HESITATE and FALTER (both cut — FALTER with the
+            #            Staggered ban), TURN, EXPOSED, RETORT,
+            #            SHARPEN (moved to Red, where the card always belonged)
+            #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
+            #            CALLED SHOT (ranged), STILL POINT (both)
+            # See the Oracle content rule above the SETS table.
+            'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
+            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
+            'CLIMB', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
+            # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
+            # split. OPENING moved Melee to Both on 2026-09-06, taking Green
+            # off it; the green pass put it back by swapping GIVE WAY (both)
+            # for TWIN STRIKE (melee).
+            #   renamed: YOU'RE NEXT -> PRIORITY
+            #   out:     GIVE WAY — Evade at d4 Both, the same die and range
+            #            as Blue's SIDESTEP, which at least differentiates
+            #            its defence half
+            #   in:      TWIN STRIKE — the only damage-focused card in
+            #            Green's 21, and the crossover the colour rules bless
+            #   TOPPLE out with the Staggered ban, AID in (both ranged).
+            # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
+            # the same day, onto a name Red already used; that duplicate was
+            # cut 2026-09-06 as a twin of ABIDE, which takes its slot
+            # here — see experimental/archives/cut-cards.md.
+            # 2026-09-07, the Deadly pass: all three of Green's Deadly cards
+            # handed it to someone else, two of them on the defense half, so
+            # Deadly read as a Green support buff rather than a damage tool.
+            # Two go, and Red picks the keyword up.
+            #   out: RESONATE + SUPPORT (Deadly; COMMUNION stays because it is
+            #        the deck's only Green Scry, and its Deadly is defensive),
+            #        TWIN STRIKE (melee), ABIDE (flat 'Gain Resist' at
+            #        d4 Both — Resist was the deck's most-represented keyword)
+            #   in:  PATIENCE (Anchored — the deck had two Anchored cards and
+            #        both were 'passive at start of your turn'; its attack half
+            #        also backfills the damage option TWIN STRIKE took away),
+            #        FLOW (Evade — Green had none, and this is Green's only d8
+            #        anywhere in the 21), MEND (melee support, which Green's
+            #        three melee slots had none of), HEALING SONG (reworked
+            #        from Red, where the damage colour was out-healing the
+            #        support colour in its own starting deck)
+            # 2026-09-08, Drew's hand pass over the printed Green sheet.
+            #   renamed: ACCEPTANCE -> RELEASE (it read as a state of mind
+            #            rather than an action a card can take),
+            #            DEAD RECKONING -> DISORIENT (the old name described
+            #            what the caster does, not what the target suffers)
+            #   swapped: SWAY -> SHADE AWAY. SWAY's rewrite made it the third
+            #            identical 'Gain Evade' card at d4 Both; the three
+            #            collapsed to one and SHADE AWAY took the slot.
+            #   out:     UNTOUCHED — this is the one place the pass leaves a
+            #            hole: it was Green's rung on the Immunity ladder
+            #            (UNBROKEN / LAST RESORT / UNTOUCHED, `rules/cards.md`),
+            #            so the Oracle now teaches Immunity in Red and Blue
+            #            only. The card is untouched in the pool.
+            #   in:      BRISTLE — MEND moved Melee -> Both in the same pass,
+            #            which would have left Green with two melee cards and
+            #            both of them control. BOLSTER held this slot from
+            #            2026-09-08 until 2026-09-09, when BRISTLE took it:
+            #            hackles going up fits Pat's Shunka where a thorn
+            #            bush does not, and BRAMBLE covers Green's Thorns at
+            #            Both range anyway.
+            'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
+            'OPENING', 'PATIENCE', 'MEND',
+            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
+            'FLOW',
+            'BIND', 'SMOKESCREEN', 'BRISTLE',
+        ],
+    },
+    'oracle-expansion': {
+        'title': 'Oracle Deck — Expansion',
+        'files': [
+            '../cards/red-body.md',
+            '../cards/blue-mind.md',
+            '../cards/green-soul.md',
+        ],
+        # The second 21, chosen 2026-09-08. Printed on its own so the first
+        # 63 don't have to be re-read to review it; together the two sets
+        # are the Oracle's 84, and the content rule above covers both.
+        #
+        # Drawn from the core lists rather than written fresh — every card
+        # here already existed on the bench. Same shape as the first 21 at
+        # one third the size: 7 per colour at 4/2/1 in that colour's range
+        # identity, holding each colour on the 12/6/3 ratio across all 28.
+        #
+        # Four cards needed rebalancing to qualify, all in `cards/`:
+        #   UNNAME  — its defence half forced a random discard. Now mirrors
+        #             the attack half: the attacker's Effect does not fire.
+        #   FORGET  — its attack half forced a discard. Now mirrors its own
+        #             legal defence half, exiling the played card on a clean
+        #             win, which is what the card was always about.
+        #   PROFILE — its defence half read the attacker's hand. Now a
+        #             smaller version of its own attack half.
+        #   CONSUME — destroying a card out of your own hand was mandatory,
+        #             which is a trap in a starting deck. Now "you may".
+        # The first three were barred by the content rule, and they were
+        # Blue's ONLY three melee bench cards — without the rewrites Blue
+        # could not have filled its two melee slots from the pool at all.
+        #
+        # What the 21 were chosen to fill, measured against the first set:
+        #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
+        #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
+        #     CONSUME, SPARK OF VIOLENCE.
+        #   Scry was at 3 and three more were asked for: UNDERSTANDING,
+        #     PROFILE, ALIGN. All Blue, because no Green or Red bench card
+        #     has ever carried Scry.
+        #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
+        #     bench and it is a Scry card, so it answers both at once.
+        #   Protect sat at 1 card for a mechanic with its own Damage
+        #     Pipeline step: SHARED BURDEN.
+        #   Immunity lost its Green rung when UNTOUCHED left the first 21.
+        #     UNTOUCHED comes back here, which restores the ladder without
+        #     spending a slot in the deck Drew is happy with.
+        #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
+        #     HEAVE AND HAUL make three.
+        #
+        # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
+        # Blue (stealing and copying enemy buffs is enemy control), so it
+        # moved from the Red block to the Blue one and took SLIPSTREAM's
+        # Both slot — the expansion keeps its Positive Status Effects
+        # teacher either way. PROVOKE, which moved Green -> Red the same
+        # day, fills the Red Both slot it vacated.
+        #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
+        #   Red had no Rooted: GRAPPLE, which is also the card the glossary
+        #     cites to explain Anchored holding Rooted open.
+        #
+        # Not fillable from the bench: Green has no Counter Attack card
+        # anywhere in the core pool, so that gap survives this expansion.
+        'cards': [
+            # Red (7) — melee 4 / both 2 / ranged 1
+            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
+            'BLOOD TITHE', 'PROVOKE',
+            'BURN BRIGHT',
+            # Blue (7) — ranged 4 / melee 2 / both 1
+            'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
+            'UNNAME', 'FORGET',
+            'WAITING GAME',
+            # Green (7) — both 4 / ranged 2 / melee 1
+            'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
+            'GUIDE', 'FIELD MEDICINE',
+            'CONSUME',
         ],
     },
 }
@@ -172,11 +350,18 @@ def parse_cards(filepath):
 
     for block in blocks:
         block = block.strip()
-        if not block or block.startswith('#'):
+        if not block:
             continue
 
+        # Header LINES are skipped below, but the block is not: a card that
+        # follows a "## Creature" heading with no --- between them shares the
+        # heading's block, and skipping the whole block silently dropped it
+        # from the sheet. That is how four briarbundles cards went unprinted.
+        # A block with no name-and-colour is rejected at the end anyway, so
+        # the file's own title block still costs nothing.
         card = {}
-        lines = [l.strip() for l in block.split('\n') if l.strip()]
+        lines = [l.strip() for l in block.split('\n')
+                 if l.strip() and not l.strip().startswith('#')]
 
         for line in lines:
             m = re.match(r'^\*\*(.+?)\*\*$', line)

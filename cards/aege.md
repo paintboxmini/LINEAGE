@@ -11,7 +11,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: If Defender is in Backline, apply Weak.
 Defense Effect: Scry 1.
-Range: Both
+Range: Ranged
 *"She already knew which way you'd break."*
 
 ---
@@ -31,5 +31,5 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2 of Defender's deck.
 Defense Effect: Scry 1. If your HP is 6 or less, also gain Ward.
-Range: Both
+Range: Ranged
 *"She already knows which way this goes. She never says so."*

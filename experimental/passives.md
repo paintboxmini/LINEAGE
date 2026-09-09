@@ -45,5 +45,4 @@ Instinct for hostile intent specifically, not a general sense that something's "
 
 ## Related Documents
 
-- `rules/character-creation.md` — Passives, the shape both of these follow
-- `rules/player-guide.md` — Promotion, how a character gains one beyond their starting two
+- `rules/character-creation.md` — Passives, the shape both of these follow, and Promotion (under Advancement), how a character gains one beyond their starting two

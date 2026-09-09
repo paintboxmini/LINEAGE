@@ -17,7 +17,7 @@ BLUE — MIND — MILESTONE
 Attack: Mind + d6
 Effect: Scry 2 on the target's deck. The most dangerous card seen is struck from the book instead of merely re-filed — Exile it rather than sending it to the discard pile.
 Defense Effect: Gain Ward.
-Range: Both
+Range: Ranged
 *"Your name was already in the book."*
 
 ---
@@ -42,4 +42,4 @@ Range: Both
 
 ---
 
-*YOU'RE NEXT was promoted to core (same name, `cards/green-soul.md`) — the Patient Host's deck uses that core card in its place. Gained a real mechanical tweak on promotion: the Initiative Shift now only applies on a clean win, not a tie.*
+*YOU'RE NEXT was promoted to core (`cards/green-soul.md`), where it was renamed PRIORITY on 2026-09-06 — the Patient Host's deck uses that core card in its place. Gained a real mechanical tweak on promotion: the Initiative Shift now only applies on a clean win, not a tie.*

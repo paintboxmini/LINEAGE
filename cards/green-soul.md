@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain 1 Quick (move position without spending your action on your next turn)
+Defense Effect: Allies gain 1 Quick (their next Move Position, Rushdown included, doesn't spend their action)
 Range: Both
 *"Change the field, change the fight."*
 
@@ -35,21 +35,11 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d6
 Effect: You may change position. Gain Evade.
 Defense Effect: You may change position. Gain Evade.
 Range: Ranged
 *"Water finds its way without forcing."*
-
----
-
-**SWAY**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Move the defender to the other position.
-Defense Effect: Gain Quick.
-Range: Both
-*"The current doesn't ask permission."*
 
 ---
 
@@ -80,14 +70,14 @@ Attack: Soul + d6
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defense Effect: Lose 2 HP. Draw 2 cards, then discard 1.
 Range: Both
-*"The wise listen to what wants to be heard."*
+*"Give up the card. Keep what it taught you."*
 
 ---
 
 **PATIENCE**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: If you did not attack last turn, deal +4 damage
+Effect: Anchored — Target ally heals 3 HP
 Defense Effect: Anchored — Target ally heals 3 HP
 Range: Both
 *"The Edge reveals itself to those who wait."*
@@ -104,53 +94,53 @@ Range: Ranged
 
 ---
 
-**URGENCY**
+**HASTEN**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift +1 to all allies
 Defense Effect: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Both
-*"The tide waits for those who know when to flow."*
+*"Sooner. All of you. Now."*
 
 ---
 
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Apply Initiative Shift -1 to defender
-Defense Effect: Apply Initiative Shift -1 to attacker
+Effect: Apply Initiative Shift -2 to defender
+Defense Effect: Apply Initiative Shift -2 to attacker
 Range: Ranged
 *"Patience places the final stone."*
+
+---
+
+**WAIT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Defense Effect: Apply Initiative Shift -1, -2, or -3 to yourself (choose). Gain Deadly.
+Range: Both
+*"The beat after theirs is the one that lands."*
 
 ---
 
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: If you are attacked before your next turn, your party may scry 1
+Effect: If you are attacked before your next turn, your party may scry 1 and heal 2 HP
 Defense Effect: You and your allies gain Deadly
 Range: Ranged
 *"Shared vision illuminates the path forward."*
 
 ---
 
-**BALANCE**
+**TOPPLE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Discard 1 to Stagger the defender
-Defense Effect: Discard 1 to Stagger the attacker
-Range: Ranged
-*"Balance does not divide — it multiplies."*
-
----
-
-**VOID**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Defender gains Sealed
-Defense Effect: Attacker discards 1 card at random
-Range: Ranged
-*"Even emptiness has its own terrible weight."*
+Effect: Defender gains Staggered.
+Defense Effect: Attacker gains Staggered.
+Range: Both
+*"Nothing about them was wrong except the ground."*
 
 ---
 
@@ -167,20 +157,20 @@ Range: Melee
 **RENEWAL**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: All allies may discard 1 card then draw 1, or heal 4
+Effect: All allies may discard 1 card then draw 2, or heal 4
 Defense Effect: Target Collapsed ally heals 8 HP
 Range: Both
 *"At the edge of becoming, all possibilities whisper their names."*
 
 ---
 
-**ACCEPTANCE**
+**RELEASE**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You may discard your hand, then draw that many cards
 Defense Effect: All allies may move position or gain Initiative Shift +1
 Range: Both
-*"Those who surrender their plans find paths they never imagined."*
+*"Open your hand. Everything you were holding was holding you."*
 
 ---
 
@@ -206,9 +196,9 @@ Range: Both
 
 **BIND**
 GREEN — SOUL
-Attack: Soul + d4
-Effect: The Defender gains 1 Rooted (cannot change position until the start of your next turn.)
-Defense Effect: The attacker gains 1 Rooted (can't change position next turn.)
+Attack: Soul + d8
+Effect: Defender gains Rooted.
+Defense Effect: Attacker gains Rooted.
 Range: Melee
 *"Not all chains are visible."*
 
@@ -224,17 +214,7 @@ Range: Both
 
 ---
 
-**READ**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: The defender must reveal their hand.
-Defense Effect: Name a color then choose a card in the attacker's hand. If colors match, discard it.
-Range: Ranged
-*"You tell the truth with your eyes."*
-
----
-
-**CARRIED WOUND**
+**UNBURDEN**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Transfer 1 status card from any ally's hand or discard to the defender
@@ -274,17 +254,17 @@ Range: Ranged
 
 ---
 
-**DEAD RECKONING**
+**DISORIENT**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Defender gains Weak.
+Effect: Defender gains Blind.
 Defense Effect: Attacker gains Blind.
 Range: Ranged
 *"You came in loud. You'll leave in the dark."*
 
 ---
 
-**SYNCHRONY**
+**UNIFY**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Until the end of combat, allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
@@ -294,21 +274,11 @@ Range: Both
 
 ---
 
-**WARSONG**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: All allies gain Deadly.
-Defense Effect: Apply Initiative Shift +2 to an ally.
-Range: Both
-*"One voice finds its mark. The rest answer in kind."*
-
----
-
 **CONSUME**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Lifesteal — heal yourself for the full damage dealt. Permanently destroy one card from your own hand to give the defender Weak and Blind.
-Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. Permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Effect: Lifesteal — heal yourself for the full damage dealt. You may permanently destroy one card from your own hand to give the defender Weak and Blind.
+Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may permanently destroy one card from your own hand to give the attacker Weak and Blind.
 Range: Melee
 *"Nothing is wasted. Not even you."*
 
@@ -340,23 +310,23 @@ Attack: Soul + d6
 Effect: Anchored — at the start of each of your turns, heal 5 HP.
 Defense Effect: Gain Deadly.
 Range: Both
-*"The unshaken abide, while chaos churns."*
+*"It is not waiting for anything. Waiting is only what it looks like."*
 
 ---
 
-**YOU'RE NEXT**
+**PRIORITY**
 GREEN — SOUL
-Attack: Soul + d6
-Effect: On a clean win only, apply Initiative Shift +2 to self.
-Defense Effect: Deal 3 damage to the attacker.
+Attack: Soul + d4
+Effect: Swap places with the defender in the initiative order.
+Defense Effect: Swap places with the attacker in the initiative order.
 Range: Both
-*"It's finally your turn."*
+*"Everything else can wait. This cannot."*
 
 ---
 
 **LEVEL THE FIELD**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Remove one Positive Status Effect of your choice from each enemy.
 Defense Effect: Remove one Positive Status Effect of your choice from each enemy.
 Range: Both
@@ -367,14 +337,14 @@ Range: Both
 **SMOKESCREEN**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Only on a clean win — not a tie. Apply Blind to all Frontline enemies, and to yourself.
-Defense Effect: Attacker gains Blind.
+Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
+Defense Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
 Range: Melee
 *"Visibility is a luxury."*
 
 ---
 
-**STEADFAST**
+**ABIDE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Resist.
@@ -389,7 +359,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Vulnerable.
-Range: Melee
+Range: Both
 *"There is always a moment. This is it."*
 
 ---
@@ -404,16 +374,6 @@ Range: Both
 
 ---
 
-**BRISTLE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
-Range: Melee
-*"Touch carefully. It touches back."*
-
----
-
 **INSTINCT**
 GREEN — SOUL
 Attack: Soul + d6
@@ -424,41 +384,31 @@ Range: Both
 
 ---
 
-**BRACE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Resist.
-Defense Effect: Gain Resist.
-Range: Both
-*"Hold."*
-
----
-
-**GIVE WAY**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-Range: Both
-*"Meet it and you break. Move and it passes."*
-
----
-
 **BRAMBLE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
+Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
 Range: Both
 *"Everything that reaches through leaves some of itself."*
+
+---
+
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Thorns 3.
+Defense Effect: Gain Thorns 3.
+Range: Melee
+*"Touch carefully. It touches back."*
 
 ---
 
 **QUICKEN**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Apply Initiative Shift +1 to yourself.
-Defense Effect: Apply Initiative Shift +1 to an ally.
+Effect: Apply Initiative Shift +2 to yourself.
+Defense Effect: Apply Initiative Shift +2 to an ally.
 Range: Both
 *"Sooner is its own kind of strength."*
 
@@ -481,3 +431,113 @@ Effect: Target ally heals 4 and draws 1.
 Defense Effect: Target ally gains Resist and draws 1.
 Range: Ranged
 *"I make the opening. You take it."*
+
+---
+
+**MEND**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally in your position heals 8 HP
+Defense Effect: Target ally in your position heals 8 HP
+Range: Both
+*"Close enough to see the wound is close enough to close it."*
+
+---
+
+**BOLSTER**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally gains Resist and Ward.
+Defense Effect: Gain Resist and Ward.
+Range: Melee
+*"Stand where I stand. Nothing gets through here."*
+
+---
+
+**AWAKEN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally gains Quick and may change position.
+Defense Effect: All allies in your position gain Quick.
+Range: Melee
+*"You were already moving. You just hadn't noticed."*
+
+---
+
+**HEALING SONG**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: You and all allies heal 5 HP
+Defense Effect: You and all allies heal 5 HP
+Range: Ranged
+*"Wind through the fractures. The cliff remembers."*
+
+---
+
+**GUIDE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally gains Evade.
+Defense Effect: Target ally gains Evade.
+Range: Ranged
+*"Left. Now. Don't ask."*
+
+---
+
+**HARMONIZE**
+GREEN — SOUL
+Attack: Soul + d8
+Effect: All allies may change position. Each ally who does gains Evade.
+Defense Effect: All allies may change position.
+Range: Both
+*"Nobody called it. Everyone moved."*
+
+---
+
+**CHANNEL**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
+Defense Effect: All allies gain Resist.
+Range: Both
+*"It runs through you. What it becomes is your decision."*
+
+---
+
+**STIR**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: You and target ally each Scry 1, then each draw 1.
+Defense Effect: You and target ally each Scry 1.
+Range: Both
+*"Wake up. It has already started."*
+
+---
+
+**SHELTER**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: If target ally's HP is 6 or less, they gain Immunity.
+Defense Effect: If target ally's HP is 6 or less, they gain Immunity.
+Range: Ranged
+*"Stand behind the word. It will hold."*
+
+---
+
+**ENTREAT**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally may discard any number of cards, then draw that many.
+Defense Effect: Draw 2.
+Range: Ranged
+*"Ask. It costs you the asking and nothing else."*
+
+---
+
+**CONFRONT**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Thorns 2.
+Defense Effect: Counter Attack.
+Range: Melee
+*"You wanted this closer. It is closer."*
