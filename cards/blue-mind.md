@@ -287,9 +287,8 @@ Range: Melee
 **PUNISH**
 BLUE — MIND
 Attack: Mind + d4
-Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
-Effect: None.
-Defense Effect: Wins ties. On a tie, the attacker's Effect does not trigger.
+Effect: If the defender was damaged on the turn immediately before yours, this attack deals double damage.
+Defense Effect: You win on a tie.
 Range: Both
 *"You never see the second hit coming. You're still reacting to the first."*
 
@@ -349,8 +348,8 @@ Range: Ranged
 **RETORT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
+Effect: Gain Thorns 4.
+Defense Effect: Gain Thorns 4.
 Range: Ranged
 *"Every insult carries its own answer."*
 
@@ -400,7 +399,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d8
 Effect: Scry 3, then draw 1.
-Defense Effect: Scry 3, then draw 1.
+Defense Effect: Scry 1, then draw 1.
 Range: Ranged
 *"Every system tells you its next move. Most people are not systems. You are."*
 

@@ -366,8 +366,8 @@ Range: Melee
 **OVERDRIVE**
 RED — BODY
 Attack: Body + d6
-Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
-Defense Effect: Gain Deadly, Resist, Quick, and Evade. Add 2 Exhaust cards to your hand.
+Effect: Gain Deadly, Resist, and Quick. Add 2 Exhaust cards to your hand.
+Defense Effect: Gain Deadly, Resist, and Quick. Add 2 Exhaust cards to your hand.
 Range: Melee
 *"Everything, all at once, and the bill comes due."*
 
@@ -406,8 +406,9 @@ Range: Melee
 **PLANT**
 RED — BODY
 Attack: Body + d4
-Effect: If you did not reposition last turn, deal +4 damage. This card returns to your hand instead of your discard pile after use.
-Defense Effect: Gain Resist. This card returns to your hand instead of your discard pile after use.
+Special Rule: Returns to your hand instead of your discard pile after use — unless this reveal loses.
+Effect: If you did not reposition last turn, deal +4 damage.
+Defense Effect: Gain Resist.
 Range: Both
 *"Feet first. Everything else follows from feet."*
 

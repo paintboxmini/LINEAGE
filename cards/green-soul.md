@@ -107,8 +107,8 @@ Range: Both
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Apply Initiative Shift -1 to defender
-Defense Effect: Apply Initiative Shift -1 to attacker
+Effect: Apply Initiative Shift -2 to defender
+Defense Effect: Apply Initiative Shift -2 to attacker
 Range: Ranged
 *"Patience places the final stone."*
 
@@ -387,8 +387,8 @@ Range: Both
 **BRISTLE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
+Effect: Gain Thorns 5.
+Defense Effect: Gain Thorns 5.
 Range: Melee
 *"Touch carefully. It touches back."*
 
@@ -498,7 +498,7 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d8
 Effect: All allies may change position. Each ally who does gains Evade.
-Defense Effect: All allies may change position. Each ally who does gains Evade.
+Defense Effect: All allies may change position.
 Range: Both
 *"Nobody called it. Everyone moved."*
 
@@ -508,7 +508,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
+Defense Effect: All allies gain Resist.
 Range: Both
 *"It runs through you. What it becomes is your decision."*
 
@@ -537,8 +537,8 @@ Range: Both
 **SHELTER**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Target ally gains Immunity.
-Defense Effect: Target ally gains Immunity.
+Effect: If target ally's HP is 6 or less, they gain Immunity.
+Defense Effect: If target ally's HP is 6 or less, they gain Immunity.
 Range: Ranged
 *"Stand behind the word. It will hold."*
 

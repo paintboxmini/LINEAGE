@@ -32,6 +32,10 @@ The crossovers are deliberate and worth keeping: Red still body-blocks for the p
 
 **Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
 
+**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, UNDERSTANDING's discard-for-`+1d6`), a doubled die (ABANDON's `2d8`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
+
+This matters when reviewing: a card's power is not readable from its Effect lines alone, and a summary that lists only die, range and effects will show ABANDON as a plain d8 and RHYTHM BREAK as a d8 with nothing on offence. Both readings are wrong. Read the Attack line.
+
 ---
 
 ## The Oracle Deck
