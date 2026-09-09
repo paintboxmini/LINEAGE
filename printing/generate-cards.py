@@ -221,15 +221,19 @@ SETS = {
             #            (UNBROKEN / LAST RESORT / UNTOUCHED, `rules/cards.md`),
             #            so the Oracle now teaches Immunity in Red and Blue
             #            only. The card is untouched in the pool.
-            #   in:      BOLSTER — MEND moved Melee -> Both in the same pass,
+            #   in:      BRISTLE — MEND moved Melee -> Both in the same pass,
             #            which would have left Green with two melee cards and
-            #            both of them control. Not Drew's pick; swap freely.
+            #            both of them control. BOLSTER held this slot from
+            #            2026-09-08 until 2026-09-09, when BRISTLE took it:
+            #            hackles going up fits Pat's Shunka where a thorn
+            #            bush does not, and BRAMBLE covers Green's Thorns at
+            #            Both range anyway.
             'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
             'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
             'OPENING', 'PATIENCE', 'MEND',
             'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
             'FLOW',
-            'BIND', 'SMOKESCREEN', 'BOLSTER',
+            'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
     },
     'oracle-expansion': {

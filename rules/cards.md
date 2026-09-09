@@ -29,7 +29,11 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
 - **Green — flexibility and support.** Healing, allies, movement, adaptability.
 
-**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. A card that re-grants Thorns every turn is the exception, because it stacks additively into a total no one-shot grant reaches: PAIN IS FUEL stays at 2 for that reason.
+**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range.
+
+Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
+
+BRISTLE at 3 lands on Blue's base, which is why it is a d6 and RETORT is a d4: two cards with the same text and the same number have to be separated by die and range or one of them is simply worse. BRISTLE takes the bigger die and the tighter range; RETORT takes the smaller die and the freer one.
 
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 

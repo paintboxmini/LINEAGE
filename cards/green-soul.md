@@ -394,6 +394,16 @@ Range: Both
 
 ---
 
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Thorns 3.
+Defense Effect: Gain Thorns 3.
+Range: Melee
+*"Touch carefully. It touches back."*
+
+---
+
 **QUICKEN**
 GREEN — SOUL
 Attack: Soul + d6
