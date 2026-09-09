@@ -21,7 +21,7 @@ BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2. Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they gain Staggered.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Ranged
 *"The tell was always there."*
 
 ---

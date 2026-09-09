@@ -18,7 +18,7 @@ Range: Ranged
 RED — BODY — ABYSS
 Attack: Body + d8
 Effect: If you have Evade, deal +3 damage.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"Six legs, and not one of them where it was."*
 
@@ -29,5 +29,5 @@ GREEN — SOUL — ABYSS
 Attack: Soul + d4
 Effect: Defender gains Sealed — their equipped items' passives stop working until the end of combat. Remove one Positive Status Effect from them and heal 2 HP.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Melee
 *"It has never once been interested in your body."*

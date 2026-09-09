@@ -9,7 +9,7 @@ GREEN — SOUL — BASIN
 Attack: Soul + d6
 Effect: Target enemy gains Evade and Blind until start of your next turn.
 Defense Effect: You gain Evade until start of your next turn.
-Range: Both
+Range: Ranged
 *"The fog doesn't hide you. It hides what's coming."*
 
 ---
@@ -19,7 +19,7 @@ GREEN — SOUL — BASIN
 Attack: Soul + d6
 Effect: All enemies in Frontline gain Blind until start of your next turn.
 Defense Effect: You may move positions.
-Range: Both
+Range: Ranged
 *"The world narrows to the sound of wings."*
 
 ---

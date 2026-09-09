@@ -19,7 +19,7 @@ BLUE — MIND — HOLLOW
 Attack: Mind + d4
 Effect: Scry 2 of Defender's deck.
 Defense Effect: Scry 2 of your own deck.
-Range: Both
+Range: Ranged
 *"Press it to the stone. Listen. The stone always tells you first."*
 
 ---

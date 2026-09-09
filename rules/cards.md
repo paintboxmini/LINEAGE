@@ -29,7 +29,7 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
 - **Green — flexibility and support.** Healing, allies, movement, adaptability.
 
-**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range.
+**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
 
@@ -97,6 +97,8 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical for keyw
 **Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `places/island-in-a-ship.md`) can and should bend it.
 
 **Trading cards.** Cards change hands at the Underground Bazaar and effectively nowhere else (`places/capital/underground-bazaar.md`, Card Trading). Selling is always possible and permanent; buying is rare, is paid for in cards, memories, or secrets rather than coin, and adds to a deck rather than swapping into it. Everywhere else in the world a card is earned — from the Oracle, or from whatever taught it.
+
+**Signature cards follow the core set's conventions.** They are written for one stat block, but they are the same object as a core card and are read by the same players: same fields, same keyword vocabulary (numbered where the glossary numbers it), same Thorns ladder, and the same treatment of Range as a real cost. Range especially — a creature whose cards are all Both is a creature that never has to think about position, in a game that spends a third of the Oracle's design space teaching it. Signature cards ran 51% Both until 2026-09-09; they now sit at roughly a third each, leaning Melee because most things that attack you have to reach you first.
 
 **Enemy decks.** Deck size equals the creature's **total stats**, with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
 

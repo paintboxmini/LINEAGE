@@ -19,7 +19,7 @@ RED — BODY — WALLOWS
 Attack: Body + d8
 Effect: If you changed position since your last turn, deal +2 damage.
 Defense Effect: Move to any position.
-Range: Both
+Range: Melee
 *"The gait does not change when the ceiling does."*
 
 ---

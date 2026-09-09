@@ -29,6 +29,6 @@ Range: Melee
 GREEN — SOUL — WEALD
 Attack: Soul + d4
 Effect: Gain Armour 1.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 2.
 Range: Both
 *"Everything on it belonged to someone who also thought they were leaving."*

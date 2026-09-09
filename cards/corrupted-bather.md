@@ -11,7 +11,7 @@ BLUE — MIND — UNHELD
 Attack: Mind + d6
 Effect: Gain Obscure.
 Defense Effect: Attacker gains Weak.
-Range: Both
+Range: Ranged
 *"There is no tell. There is no longer anyone in there to have one."*
 
 ---
@@ -20,7 +20,7 @@ Range: Both
 RED — BODY — UNHELD
 Attack: Body + d8
 Effect: Deal 2 damage to one ally in your position. If you do, deal +4 damage.
-Defense Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"The Runners keep them at the back of the boat. It does not always help."*
 
@@ -31,5 +31,5 @@ GREEN — SOUL — UNHELD
 Attack: Soul + d4
 Effect: Apply Vulnerable to the defender.
 Defense Effect: Gain Resist.
-Range: Both
+Range: Melee
 *"Something in there still remembers the pull."*
