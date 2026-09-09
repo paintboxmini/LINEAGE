@@ -8,7 +8,7 @@ Signature cards for the Chitterer. See `bestiary/chitterer.md`. Tagged as COIL �
 RED — BODY — COIL
 Attack: Body + d4
 Effect: If you have taken damage since your last turn, deal +2 damage.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"You started this. They are only being thorough."*
 
@@ -19,7 +19,7 @@ BLUE — MIND — COIL
 Attack: Mind + d4
 Effect: Defender gains Weak.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Ranged
 *"The first one is never aimed at you."*
 
 ---

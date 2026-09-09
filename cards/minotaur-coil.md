@@ -13,7 +13,7 @@ RED — BODY — COIL
 Attack: Body + d8
 Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
 Defense Effect: Gain Resist.
-Range: Both
+Range: Ranged
 *"The corridor is not a disadvantage. The corridor is the weapon."*
 
 ---
@@ -22,7 +22,7 @@ Range: Both
 RED — BODY — COIL
 Attack: Body + d6
 Effect: Deal 2 damage to one other Frontline enemy of your choice.
-Defense Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"There is no careful swing from something this size."*
 
@@ -33,7 +33,7 @@ BLUE — MIND — COIL
 Attack: Mind + d4
 Effect: Scry 3 of Defender's deck.
 Defense Effect: Scry 2 of your own deck.
-Range: Both
+Range: Ranged
 *"You are moving through its memory."*
 
 ---
@@ -43,7 +43,7 @@ BLUE — MIND — COIL
 Attack: Mind + d4
 Effect: If target is in Backline, apply Staggered and pull them to Frontline.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Ranged
 *"Every exit it already knows."*
 
 ---
@@ -53,7 +53,7 @@ BLUE — MIND — COIL
 Attack: Mind + d6
 Effect: Expose Green — choose 1 card in the target's hand without looking. If it is Green, apply Rooted.
 Defense Effect: Scry 1.
-Range: Both
+Range: Ranged
 *"It has watched enough of them run to know the shape of it."*
 
 ---
@@ -73,7 +73,7 @@ GREEN — SOUL — COIL
 Attack: Soul + d4
 Effect: Apply Blind to target.
 Defense Effect: Attacker gains Blind.
-Range: Both
+Range: Ranged
 *"You cannot find the way out if you cannot see the walls."*
 
 ---

@@ -9,7 +9,7 @@ BLUE — MIND — ABYSS
 Attack: Mind + d6
 Effect: Pull all enemies to the Frontline.
 Defense Effect: Pull the attacker to the Frontline.
-Range: Both
+Range: Ranged
 *"Distance was always a courtesy. It stopped extending it."*
 
 ---

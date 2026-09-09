@@ -22,7 +22,7 @@ Range: Ranged
 RED — BODY — BRIARWATCH
 Attack: Body + d8
 Effect: If you changed position since your last turn, deal +3 damage.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"It is only wool. It is a great deal of wool."*
 
@@ -54,7 +54,7 @@ Range: Ranged
 RED — BODY — BRIARWATCH
 Attack: Body + d8
 Effect: If the defender is Rooted or Staggered, deal +3 damage.
-Defense Effect: Gain Thorns 1.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"A cross of wood in a dead man's coat. That is the entire inventory."*
 
@@ -65,7 +65,7 @@ GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
 Effect: The defender gains Blind.
 Defense Effect: The attacker gains Weak.
-Range: Both
+Range: Ranged
 *"You keep looking for the eyes. There is nowhere for them to be."*
 
 ---
@@ -86,7 +86,7 @@ Range: Ranged
 RED — BODY — BRIARWATCH
 Attack: Body + d8
 Effect: The defender gains Rooted. If they were already Rooted, deal +4 damage.
-Defense Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"It learned the shape from the things that walked into it."*
 
@@ -129,5 +129,5 @@ GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
 Effect: Push the defender to the other position. They gain Rooted.
 Defense Effect: The attacker gains Rooted.
-Range: Both
+Range: Melee
 *"It does not distinguish. It was never built to."*

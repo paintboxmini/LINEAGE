@@ -17,7 +17,7 @@ BLUE — MIND — MILESTONE
 Attack: Mind + d6
 Effect: Scry 2 on the target's deck. The most dangerous card seen is struck from the book instead of merely re-filed — Exile it rather than sending it to the discard pile.
 Defense Effect: Gain Ward.
-Range: Both
+Range: Ranged
 *"Your name was already in the book."*
 
 ---

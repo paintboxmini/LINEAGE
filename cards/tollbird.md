@@ -7,7 +7,7 @@ RED — BODY — BRIARWATCH
 Attack: Body + d6
 Effect: Move to the Frontline. If you began this turn in the Backline, this attack deals +2 damage. You cannot defend until your next turn.
 Defense Effect: Move to the Backline.
-Range: Both
+Range: Ranged
 *"Not cruelty. Storage."*
 
 ---

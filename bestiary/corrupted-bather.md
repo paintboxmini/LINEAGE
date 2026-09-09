@@ -9,7 +9,7 @@ People who went into the Unheld Ocean and came back wrong. Not evil. Unpredictab
 **Mind 2 / Body 3 / Soul 3 — HP 17**
 **Creature Threat Rating:** 8
 
-**Deck (8 — 2 Blue / 3 Red / 3 Green):** PARADOX, NOTHING TO READ *(blue)* · OVERCOMMIT, BERSERKER'S PRICE, CUTS BOTH WAYS *(red)* · ADAPT, MOCKERY, UNDERTOW *(green)*
+**Deck (8 — 2 Blue / 3 Red / 3 Green):** PARADOX, NOTHING TO READ *(blue)* · OVERCOMMIT, ABANDON, CUTS BOTH WAYS *(red)* · ADAPT, MOCKERY, UNDERTOW *(green)*
 
 **Passive — Unraveling State:** At the start of each Corrupted Bather's turn, the DM selects one state (don't randomize — choose for dramatic effect):
 - *Fluid:* gains Evade, may reposition freely this turn

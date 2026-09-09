@@ -98,7 +98,7 @@ Where a card offsets strength with a cost, the name should imply sacrifice or st
 
 The 2026-09-06 balance pass left the pool thin in exactly two places. One is now filled; new cards land most usefully in the other.
 
-- **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE, a mechanical duplicate of BRAMBLE, and CONSUME, and Green could not absorb another melee loss from the Oracle. It now has three benched melee cards to lose.
+- **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE and CONSUME. Green now has bench depth at melee; the Oracle's three melee seats are BIND, SMOKESCREEN and BRISTLE, with BOLSTER, AWAKEN and CONSUME behind them.
 - **Blue melee.** Six of ten are in the Oracle; of the rest, UNNAME and TAINT are barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for.
 
 Red has bench depth at every range.

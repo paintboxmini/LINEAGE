@@ -9,7 +9,7 @@ RED — BODY — HOLLOW
 Attack: Body + d6
 Effect: Pull defender to Frontline. If defender is already in Frontline, deal +2 damage instead.
 Defense Effect: Attacker gains Rooted.
-Range: Both
+Range: Ranged
 *"The grip comes before the bite."*
 
 ---
