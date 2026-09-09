@@ -114,7 +114,7 @@ Range: Ranged
 
 **FRACTURE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: If the top 3 cards of your discard are 1 of each color, deal 5 damage to either the enemy Frontline or the enemy Backline (your choice)
 Defense Effect: If the top 3 cards of your discard are 1 of each color, the attacker must exile the card they played this turn
 Range: Ranged
@@ -205,7 +205,7 @@ Range: Ranged
 
 **CLIMB**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
 Defense Effect: Your maximum hand size increases by 1 until the end of this combat
 Range: Melee
@@ -348,8 +348,8 @@ Range: Ranged
 **RETORT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Gain Thorns 4.
-Defense Effect: Gain Thorns 4.
+Effect: Gain Thorns 3.
+Defense Effect: Gain Thorns 3.
 Range: Ranged
 *"Every insult carries its own answer."*
 
@@ -407,7 +407,7 @@ Range: Ranged
 
 **REDIRECT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Target ally gains Protect.
 Defense Effect: Gain Protect and Evade.
 Range: Ranged
@@ -427,7 +427,7 @@ Range: Melee
 
 **CORNER**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Neither you nor the defender may change position until your next turn.
 Defense Effect: Neither you nor the attacker may change position until your next turn.
 Range: Melee
@@ -462,3 +462,23 @@ Effect: The defender's Defense Effect does not trigger this exchange.
 Defense Effect: The attacker's Effect does not trigger this exchange.
 Range: Both
 *"They had a plan for this. They no longer have a plan for this."*
+
+---
+
+**DRAIN**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
+Defense Effect: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
+Range: Ranged
+*"What's yours was never really yours."*
+
+---
+
+**WAITING GAME**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*

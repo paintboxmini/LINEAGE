@@ -278,6 +278,13 @@ SETS = {
         #     spending a slot in the deck Drew is happy with.
         #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
         #     HEAVE AND HAUL make three.
+        #
+        # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
+        # Blue (stealing and copying enemy buffs is enemy control), so it
+        # moved from the Red block to the Blue one and took SLIPSTREAM's
+        # Both slot — the expansion keeps its Positive Status Effects
+        # teacher either way. PROVOKE, which moved Green -> Red the same
+        # day, fills the Red Both slot it vacated.
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
         #   Red had no Rooted: GRAPPLE, which is also the card the glossary
         #     cites to explain Anchored holding Rooted open.
@@ -287,12 +294,12 @@ SETS = {
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
-            'BLOOD TITHE', 'WAITING GAME',
+            'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
             'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
             'UNNAME', 'FORGET',
-            'SLIPSTREAM',
+            'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
             'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',

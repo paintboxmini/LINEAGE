@@ -13,6 +13,7 @@ What each field on a card means, "Attacker"/"Defender" vs. "Target," and a full 
 When you look at a hand of cards, the dice tell you who you are right now.
 
 A hand full of d8s is a brawler who hits hard and moves with purpose.
+A d10 is a fourth tier and a Red one — three cards in the game carry it, and each pays for it somewhere else on its own text.
 A hand full of d4s is a strategist watching for the moment everything opens up.
 A hand full of d6s is someone threading the gap between the two.
 
@@ -27,6 +28,8 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Red — self-buffs and raw damage.** The biggest dice live here.
 - **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
 - **Green — flexibility and support.** Healing, allies, movement, adaptability.
+
+**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. A card that re-grants Thorns every turn is the exception, because it stacks additively into a total no one-shot grant reaches: PAIN IS FUEL stays at 2 for that reason.
 
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 

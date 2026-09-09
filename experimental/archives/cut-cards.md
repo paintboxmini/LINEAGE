@@ -4,6 +4,30 @@ Cards that didn't make it to canon. Kept for reference. Some may find solutions 
 
 ---
 
+## Core set — cut in the colour-identity pass
+
+**RALLY**
+RED — BODY
+Attack: Body + d4
+Effect: Pay 5 HP, all allies in Frontline gain Deadly
+Defense Effect: Pay 5 HP, all allies in the Backline gain Deadly
+Range: Both
+*"Blood shared is strength doubled."*
+
+*Cut 2026-09-09, dominated by a card in another colour. WARSONG did everything RALLY did and more — bigger die, no HP cost, every ally rather than one position, and a defence half that wasn't a repeat of its attack half. Rather than nerf WARSONG, WARSONG moved to Red (its name was always martial, and "all allies gain Deadly" is a damage buff) and took RALLY's place. PROVOKE moved with it. Green was handing out Deadly on ten cards to Red's seven, in the colour whose identity is support rather than damage; it now holds eight to Red's nine.*
+
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns 5.
+Defense Effect: Gain Thorns 5.
+Range: Melee
+*"Touch carefully. It touches back."*
+
+*Cut 2026-09-09 with the Thorns rescale. Thorns is now set by colour — Green 2, Blue 3, Red 4 — because it is retaliation damage and belongs to Body. That flattened BRISTLE and BRAMBLE onto the same number, and BRISTLE is Melee where BRAMBLE is Both, so BRISTLE became strictly worse than a card it had always been a near-twin of. It had been flagged as a BRAMBLE duplicate repeatedly; the rescale removed its last differentiator. Its three decklist seats — Rootstalker, Fermata, Briar-Scratcher — took BRAMBLE.*
+
+*The rescale has one deliberate exception. PAIN IS FUEL stays at Thorns 2 despite being Red: it is Anchored and re-grants every turn you hold position, so it stacks additively into a number no one-shot grant reaches. A flat 4 there would be a different card.*
+
 ## Core set — cut as a three-way duplicate
 
 **GIVE WAY**

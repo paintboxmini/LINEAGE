@@ -9,7 +9,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 ## Keywords
 
 <!-- print:skip-start -->
-*The number before each keyword is how many **core** cards use it — the four lists a deck actually builds from (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`, `cards/colorless.md`), 166 cards as of 2026-09-08. Creature signature cards are deliberately excluded: they are one-offs written for a single stat block, so counting them tells you nothing about how common a keyword is in play. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
+*The number before each keyword is how many **core** cards use it — the four lists a deck actually builds from (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`, `cards/colorless.md`), 164 cards as of 2026-09-09. Creature signature cards are deliberately excluded: they are one-offs written for a single stat block, so counting them tells you nothing about how common a keyword is in play. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("cannot be affected by Blind" — CERTAIN STRIKE, the only live example) don't count toward the keyword being referenced; those cards are counted under whatever they actually grant instead. Case and inflection don't matter — several cards write "unpreventable" in lower case mid-sentence, STEAL says "Exiled" rather than "Exile", and three cards write "Positive Status Effect" singular. Match the word stem, not the glossary header. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at.*
 
@@ -28,7 +28,7 @@ Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effe
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
-**(19) Deadly**
+**(18) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
 **(8) Weak**
@@ -112,7 +112,7 @@ Look at the top X cards of a deck. If no target is specified, this applies to yo
 **(5) Staggered**
 The next time you would attack or defend, that one instance is skipped instead — either you skip attacking on your turn, or an incoming attack goes undefended — whichever comes first. Staggered ends the instant that happens.
 
-**(8) Thorns X**
+**(7) Thorns X**
 Deal X damage to any enemy that successfully hits you with a melee attack. Applies after the attack resolves. Persists until end of combat unless the card states otherwise.
 
 **Thorns stacks additively into a single value**, the same way Armour does — Thorns 2 and Thorns 1 held at once are Thorns 3, dealt to every melee attacker for the rest of the fight. Not consumed, so stacks add rather than queue.

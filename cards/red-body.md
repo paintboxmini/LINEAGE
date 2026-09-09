@@ -82,16 +82,6 @@ Range: Both
 
 ---
 
-**RALLY**
-RED — BODY
-Attack: Body + d4
-Effect: Pay 5 HP, all allies in Frontline gain Deadly
-Defense Effect: Pay 5 HP, all allies in the Backline gain Deadly
-Range: Both
-*"Blood shared is strength doubled."*
-
----
-
 **WEATHERED**
 RED — BODY
 Attack: Body + d6
@@ -116,7 +106,7 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: Lifesteal
-Defense Effect: Gain Thorns 1
+Defense Effect: Gain Thorns 4
 Range: Ranged
 *"Open it. Stand close. Let it come back to you."*
 
@@ -323,26 +313,6 @@ Range: Melee
 
 ---
 
-**WAITING GAME**
-RED — BODY
-Attack: Body + d4
-Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
-Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
-Range: Both
-*"Why build what's already standing right there?"*
-
----
-
-**DRAIN**
-RED — BODY
-Attack: Body + d4
-Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
-Defense Effect: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
-Range: Ranged
-*"What's yours was never really yours."*
-
----
-
 **STAUNCH**
 RED — BODY
 Attack: Body + d6
@@ -486,7 +456,7 @@ Range: Melee
 
 **RATTLE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d8
 Effect: Defender gains Staggered.
 Defense Effect: Attacker gains Staggered.
 Range: Melee
@@ -568,7 +538,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d6
 Effect: Lifesteal — heal yourself for the full damage dealt.
-Defense Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 4.
 Range: Melee
 *"What comes out of you goes into me. That is the arrangement."*
 
@@ -608,6 +578,26 @@ Range: Both
 RED — BODY
 Attack: Body + d4
 Effect: Deal 4 unpreventable damage to any enemy.
-Defense Effect: Gain Resist and Thorns 1.
+Defense Effect: Gain Resist and Thorns 4.
 Range: Ranged
 *"Thrown, it is still a hammer."*
+
+---
+
+**WARSONG**
+RED — BODY
+Attack: Body + d6
+Effect: All allies gain Deadly.
+Defense Effect: Apply Initiative Shift +2 to an ally.
+Range: Both
+*"One voice finds its mark. The rest answer in kind."*
+
+---
+
+**PROVOKE**
+RED — BODY
+Attack: Body + d4
+Effect: Defender gains Weak. Target ally gains Deadly.
+Defense Effect: Attacker gains Weak.
+Range: Both
+*"Say the thing. Watch what it costs them."*

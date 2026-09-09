@@ -6,7 +6,7 @@
 **Creature Threat Rating:** 4
 
 
-**Deck (4 — 1 Blue / 1 Red / 2 Green):** SKITTER AWAY *(blue)* · RAKING CUT *(red)* · NIP AND TEAR, BRISTLE *(green)*
+**Deck (4 — 1 Blue / 1 Red / 2 Green):** SKITTER AWAY *(blue)* · RAKING CUT *(red)* · NIP AND TEAR, BRAMBLE *(green)*
 **Cards:** `cards/briar-scratcher.md`
 
 ---

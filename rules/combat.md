@@ -143,7 +143,7 @@ Range: Melee
 
 - **Name** — STRIKE.
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
-- **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
+- **Attack: Body + d10** — your Body stat plus a d10 roll. The fourth tier, and the rarest: Red alone holds it, on cards that pay for it somewhere else on the card (STRIKE has no Effect at all, REPAY costs 3 HP up front, OVERCOMMIT hands you Vulnerable for the privilege).
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
 - **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
