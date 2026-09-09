@@ -14,7 +14,7 @@ Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21 *(up
 
 ## Concept
 
-**Kevin Herb.** A combat chef — and combat bartender, really. Son of the current head priest of the **Temple of Unity**, a real existing temple in the Capital (`places/capital/capital.md`, Temple District — already noted there as "rarely full"). Full detail on the temple, his family, and the city structure around it: `experimental/temple-of-unity.md`.
+**Kevin Herb.** A combat chef — and combat bartender, really. Son of the current head priest of the **Temple of Unity**, a real existing temple in the Capital, now canonized: `places/capital/capital.md`, Temple District — the temple's outreach practice, the wine-as-communion, and its placement in the new outer ring are all real canon now, not draft. What's still genuinely open: `experimental/temple-of-unity.md`.
 
 His family is mostly clergy — priests scattered across other temples around the city, only his father a head priest specifically. Chronically shirked his own studies and rituals to cook instead, which is a sharper act than plain laziness: the temple's whole practice is priests going *out* into the city rather than waiting for people to come to them, and Kevin does the opposite on purpose — stays back, skips the rounds, works the kitchen.
 
@@ -30,25 +30,25 @@ His family is mostly clergy — priests scattered across other temples around th
 
 ## Gluttonous
 
-New line for the character sheet: **lets him hold 2 potion/food effects active at once, where the normal limit is 1.** One real gap this surfaces — I checked, and that baseline "only 1 consumable effect active at a time" limit doesn't actually exist anywhere in the current written rules (`rules/items.md`, `rules/equipment.md`, `rules/card-glossary.md`). Gluttonous being an *exception* needs that baseline stated somewhere as the rule it's an exception to — right now it'd be the only place that limit is even implied.
+New line for the character sheet: **lets him hold 2 potion/food effects active at once, where the normal limit is 1.** Now a real, formalized rule, not just implied for Kevin's sake: `rules/items.md`, Consumable Effects — 1 active at a time, an hour each, a new one replaces the old rather than stacking. Gluttonous is the first named exception to it.
 
 ## Not Yet Set
 
 - Character name (surname is Herb, given name not yet chosen)
-- His father's name and how present he actually is in Kevin's life
+- **His father's actual identity.** Floated as an existing character (Lefty, `characters/lefty.md`) — flagged, not assigned. Lefty's established profile (one-armed anchor-and-chain fighter, "doesn't talk about the cave," reads as an adventuring companion) doesn't obviously fit a temple head priest, and nothing in either file suggests a bridge between the two. Real fork, not something to paper over.
 - Skills, Passives — a Cooking or Brewing-type Skill would fit the crafting angle naturally, but that's a guess, not something either Drew or Kevin has said
 - Price
 - Starting deck (`rules/character-creation.md`, Starting Deck)
 - The specific beverage and orange recipes above the basic tier, worked out at the table as he actually makes them (`rules/items.md`, Crafting)
-- The baseline "1 consumable effect at a time" rule Gluttonous needs to exist as an exception to
-- The three-ring city structure and the middle ring specifically — `experimental/temple-of-unity.md`
+- The middle ring's specifics beyond "Marketplace, Commons, most people live there" — `places/capital/capital.md`, Horizontal Layout
 - Everything about who he is outside "shirked his studies to cook"
 
 ## Related Documents
 
 - `experimental/kevin-ingredients.md` — what the grinder and the drinks actually run on
-- `experimental/temple-of-unity.md` — the Temple of Unity, his family, the three-ring city
+- `experimental/temple-of-unity.md` — what's still open about the temple and his father
 - `experimental/chris.md`, `experimental/pat.md` — the other two player concepts from this session
-- `places/capital/capital.md`, `places/capital/gilded-tusk.md` — the Capital's temples, and Senshi
-- `characters/vescal.md` — trained at the same temple, an existing account worth reconciling
+- `places/capital/capital.md` — the Temple District, the Three Rings, the Temple of Unity's real canon entry
+- `places/capital/gilded-tusk.md` — Senshi
+- `characters/vescal.md`, `characters/lefty.md` — trained at the same temple; floated (unconfirmed) as the father
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

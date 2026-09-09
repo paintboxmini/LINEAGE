@@ -16,6 +16,16 @@ the Temples, the Marketplace, the Gilded Tusk, and the Citadel that stands at th
 the Waterworks
 a citywide utility layer running under the entire capital, the bazaar and tavern are a small, hidden pocket inside it, and the Demon Court that branches off into the deeper cave system that runs underneath the capital.
 
+## Horizontal Layout — The Three Rings
+
+Three concentric rings, walled off from each other, rather than one undifferentiated sprawl.
+
+**The Inner Precinct** — innermost ring, the Citadel at its center, where the Regency Council governs. Already the city's administrative core (`The Inner Precinct`, below) — four Halls, each standing under the political shadow of the council member who runs it.
+
+**The middle ring** — the Marketplace, the Commons, and most of the Temple District. Where most of the capital's population actually lives — the city's real center of gravity, even though it's neither the geographic nor the political center.
+
+**The outer ring** — farmland and rural communities, the city gates, and most of the Waterworks' surface entrances into the tunnel system beneath the capital. The quietest of the three, and the one people living in the middle ring rarely have reason to visit. The Temple of Unity sits out here specifically, apart from the rest of the Temple District (below) — deliberately, given what the temple's actual practice is.
+
 ## Arrival — The Gate
 
 The road out of the Fog Basin climbs and the city wall rises ahead.
@@ -124,7 +134,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of Healing | The capital's hospital. See below. |
 | Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
 | Temple of Justice | A working courtroom. See below. |
-| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
+| Temple of Unity | Interfaith cathedral, but not in the district itself — sits apart, in the outer ring. Rarely full. See below, and `characters/vescal.md`. |
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. This doesn't mean a temple's theology is right or wrong about the world — it just means some guesses land closer than others.
 
@@ -147,6 +157,12 @@ None of these are built on real knowledge of the Seats — they're local religio
 **Sanctuary of Nature** — herbalists, not mystics. The ground this far from anywhere green doesn't give plants up easily, and cultivation here is a hard-fought craft, not a communion — sweat, blood, and years of understanding exactly which patch of barren dirt will hold a root if it's forced to. What the Sanctuary grows becomes potions, salves, and reagents, sold through its own grove-counter — a different economy from Nessa Coil's regional resale (Marketplace, above): this is grown in the capital's own dirt, at the actual cost of making it grow.
 
 **Bram** runs the grove and believes nothing worth growing comes easy — ease is how you know it's fake, a cutting that roots on the first try in this dirt is a cutting he doesn't trust. Lost a bed he'd kept alive for six years to a single careless apprentice who watered it wrong during a week he was away, and has never fully forgiven the loss or the apprentice, who still works the grove because Bram also believes people, like plants, are worth the years it takes to be sure about them. Both beliefs are load-bearing. He has never resolved the tension between them, and doesn't seem to think he's supposed to.
+
+**Temple of Unity** — sits apart from the rest of this district entirely, out in the outer ring, isolated farmland close to the water rather than shoulder to shoulder with the other nine. Makes sense once the temple's actual practice is on the table: its priests don't wait for people to come to them — they go out into the city and hold their services there, which is the real reason the cathedral itself is so often empty. Communion, here, means something specific: the priests share the temple's own wine with the people they visit, out on the road, and the current head priest has made that wine something worth the temple being known for.
+
+*Worth naming rather than smoothing over: Vescal (`characters/vescal.md`), who trained here, describes a different version of this same temple — "the door was open, people kept choosing to close it. The temple's answer was patience." That's the opposite instinct from active outreach. Read as two different eras rather than a contradiction: whatever Unity was under whoever ran it in Vescal's time, it's become something more outward-facing under its current head priest.*
+
+The current head priest's son is a combat chef training as an adventurer (`experimental/kevin.md`) — chronically skips the temple's actual work to cook instead, which lands as a sharper rebellion once the temple's real practice (going out) is on the table: the one member of a mostly-clergy family who stays in. **The head priest's own name and identity aren't settled yet** — floated as an existing character, not yet confirmed, since that character's own established profile doesn't obviously fit a temple leader and shouldn't be assigned without checking that first.
 
 **Temple of Justice** — Here the Law is religious doctrine. A working courtroom, not a shrine with a metaphor attached to it, and not really a court of law either, whatever the sign says. Disputes that outgrow a handshake get adjudicated here: contracts, debts, claims against another citizen, occasionally a criminal matter the Regency's own apparatus would rather not be seen touching directly. The Law that binds the *government* — what the Regency may or may not do — is a separate, higher authority entirely: Lord Oswald's. The Temple's jurisdiction stops exactly where his begins.
 

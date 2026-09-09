@@ -24,6 +24,14 @@ Three questions the table actually needs to answer, in this order:
 
 ---
 
+## Consumable Effects
+
+**One food or potion effect active at a time, lasting up to an hour.** Eating or drinking a second one while the first is still active doesn't stack it — the new one **replaces** the old outright, whatever the old one was doing.
+
+Exceptions get written as their own line on a character sheet, same as any other named exception to a general rule (a Skill, a Passive) — **Gluttonous** (`experimental/kevin.md`) is the first: holds 2 at once instead of the normal 1, still subject to the same replace-not-stack rule once that second slot is also full.
+
+---
+
 ## Briarwatch
 
 *Full entries: `items/briarwatch-items.md`*
