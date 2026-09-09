@@ -35,7 +35,7 @@ New line for the character sheet: **lets him hold 2 potion/food effects active a
 ## Not Yet Set
 
 - Character name (surname is Herb, given name not yet chosen)
-- **His father's actual identity.** Floated as an existing character (Lefty, `characters/lefty.md`) — flagged, not assigned. Lefty's established profile (one-armed anchor-and-chain fighter, "doesn't talk about the cave," reads as an adventuring companion) doesn't obviously fit a temple head priest, and nothing in either file suggests a bridge between the two. Real fork, not something to paper over.
+- **His father.** Not Lefty after all — would have forced the previous campaign's whole cast years older just to fit the timeline. Draft name **Cassian Herb**, a new character: former soldier turned head priest, the war behind both the outreach reform and the wine. Full draft: `experimental/temple-of-unity.md`. Still needs promoting to a real `characters/` file once the name and backstory are confirmed.
 - Skills, Passives — a Cooking or Brewing-type Skill would fit the crafting angle naturally, but that's a guess, not something either Drew or Kevin has said
 - Price
 - Starting deck (`rules/character-creation.md`, Starting Deck)
@@ -50,5 +50,6 @@ New line for the character sheet: **lets him hold 2 potion/food effects active a
 - `experimental/chris.md`, `experimental/pat.md` — the other two player concepts from this session
 - `places/capital/capital.md` — the Temple District, the Three Rings, the Temple of Unity's real canon entry
 - `places/capital/gilded-tusk.md` — Senshi
-- `characters/vescal.md`, `characters/lefty.md` — trained at the same temple; floated (unconfirmed) as the father
+- `characters/vescal.md` — trained at the same temple, the older era
+- `characters/lefty.md` — ruled out as the father; kept only for the light "war veteran" echo
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck
