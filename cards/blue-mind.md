@@ -349,7 +349,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Gain Thorns 3.
-Defense Effect: Gain Thorns 3.
+Defense Effect: Attacker gains Weak.
 Range: Ranged
 *"Every insult carries its own answer."*
 

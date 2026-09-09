@@ -33,7 +33,7 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
 
-BRISTLE at 3 lands on Blue's base, which is why it is a d6 and RETORT is a d4: two cards with the same text and the same number have to be separated by die and range or one of them is simply worse. BRISTLE takes the bigger die and the tighter range; RETORT takes the smaller die and the freer one.
+BRISTLE at 3 lands on Blue's base, which RETORT also sits at. That was a strict dominance while both cards read "Gain Thorns 3" on both halves — same die, and RETORT's Ranged is freer than BRISTLE's Melee. RETORT's defence half now applies Weak instead, which is what a Blue Thorns card should have been doing anyway: Blue's business is taking an enemy's options away, not mirroring a Green card in a different colour. Two cards can share a keyword and a number as long as they aren't the same card.
 
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 
