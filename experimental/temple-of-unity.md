@@ -12,7 +12,7 @@ The wine has the same root. Not a hobby he picked up in peacetime — something 
 
 Deliberately not mirroring Lefty's specific details (the missing arm, the unspoken trauma) — same category of backstory, distinct person, so the two don't read as accidentally the same character wearing different jobs.
 
-Not yet decided: which war, how long ago, whether it connects to any war already in canon or needs its own.
+**The war is resolved: the Ashfall War, roughly thirty years ago** (`places/ashfall-wastes.md`) — a real, newly-canonized conflict, not the ancient mythic Engine-strike that made the Wastes what they are (that stays untouched, deep past, a separate thing entirely). Fought over one of the lesser relics buried in the ash, not the Engine itself. This is also where Turnroot Weald's people actually came from (`places/turnroot-weald.md`) — the same war that gave Cassian his service is the one that sent refugees fleeing into the Weald, which puts him on the same timeline as that displacement rather than a coincidentally-similar-sounding separate conflict. Whether he fought defending the border, helping the evacuation, or both isn't decided — but seeing that displacement firsthand is a clean, earned reason a soldier would come out the other side believing you don't wait for people to come to you.
 
 **The middle ring's specifics beyond "Marketplace, Commons, most people live there."** Nothing named yet beyond what's already in the Temple District and Marketplace sections.
 

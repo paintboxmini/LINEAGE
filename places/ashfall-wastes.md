@@ -6,6 +6,8 @@ Ancient engines, war relics, and half-functioning constructs lie scattered benea
 
 This was never someone else's ruin. The War Engine was Ashfall's own, aimed outward at an enemy it did in fact defeat — see `quests/war-engine.md`. Whether burying your own home under the ash of winning still counts as victory isn't a question anyone was left alive here to answer.
 
+**Not to be confused with the Engine's own history.** The Engine has fired exactly once, far enough in the past that nothing currently alive remembers it directly (`places/the-coil.md`) — that's the ruin described above. What locals call **the Ashfall War** is a different, much more recent thing: a conflict fought roughly thirty years ago over one of the lesser relics scattered beneath the ash, not the Engine itself, which has stayed silent since. Whoever held the Wastes' edge lost enough ground that staying stopped being survivable, and fled into Turnroot Weald instead (`places/turnroot-weald.md`). Some who fought in it are still alive to tell it.
+
 Prolonged exposure is draining. The landscape seems to press unresolved things upward — memories, decisions, old arguments. Travelers report this consistently enough that it is no longer reported at all.
 
 ---

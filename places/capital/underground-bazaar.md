@@ -24,6 +24,8 @@ This is a settled transience. Everything looks temporary. Most of it has been he
 
 Refugees trade their abilities to survive. In Tales Untold that takes the form of cards.
 
+A common thread among them: displaced by **the Ashfall War** roughly thirty years ago, or born to parents who were (`places/ashfall-wastes.md`, `places/turnroot-weald.md`). Turnroot Weald absorbed most of that displacement, but not everyone who fled the Wastes' edge stayed in the forest — some kept moving, all the way to the capital, and this is usually where that kind of specific, hard-earned technique surfaces first.
+
 **Buying is rare, and the stock is not.** What sits on a table here is almost always **tagged** — a technique from somewhere specific, a way of doing things that some place or person still teaches. Nobody stocks the common stuff, because everyone already knows it. A party with money and no leverage will find nothing worth having; a party with something genuinely uncommon to trade will find they are suddenly very interesting.
 
 **Nothing here is bought with coin.** A card is experience, so it costs experience: another card, a real memory, or a secret with weight to it. A party that offers gold for a card is not haggling badly — they have misunderstood the shop, and the vendor will say so once and then stop talking.
