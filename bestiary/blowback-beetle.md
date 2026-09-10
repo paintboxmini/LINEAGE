@@ -2,7 +2,7 @@
 
 **Cards:** `cards/blowback-beetle.md`
 
-The Scorchback's larger cousin, and the reason anyone in the Ashfall Wastes knows the word "cousin" for a beetle at all (`bestiary/scorchback-beetle.md`, `places/ashfall-wastes.md`). Dog-sized, plated, and slow, with a head that is mostly hinge.
+The Scorchback's larger cousin, and the one that didn't stay in the Wastes (`bestiary/scorchback-beetle.md`). Dog-sized, plated, and slow, with a head that is mostly hinge. It lives in the Turnroot Weald (`places/turnroot-weald.md`), working the resinous understory where the canopy thins — mostly the Weald's southern reach, where the forest runs down against the Ashfall scrub its cousin never left.
 
 Same family, opposite end of the same trick. Where a Scorchback stores volatile oil in an abdominal gland and vents it backward as a burn, a Blowback swallows the vapour instead, holds it in a bellows organ behind the jaw, and expels it forward through the mouth. It does not burn you. It hits you, the way standing too close to a slammed door hits you, and then you are somewhere else.
 
@@ -21,7 +21,9 @@ You hear one before you see it. The intake is a long wet drag of air, and then n
 
 ## Behavior
 
-Not hunters. Blowbacks eat the resinous scrub, same as their cousins, and the vent is for clearing space rather than killing anything. A Blowback that has pushed everything away from itself will go back to eating, in front of you, while you are still getting up.
+Not hunters. Blowbacks eat resinous understory, same chemistry as their cousins, and the vent is for clearing space rather than killing anything. A Blowback that has pushed everything away from itself will go back to eating, in front of you, while you are still getting up.
+
+**In the Weald this makes it an anomaly.** Turnroot decides where things go. A Blowback doesn't argue with the routing so much as fail to notice it, and blasts itself a clearing wherever it happens to be standing. Those clearings persist — genuinely open, genuinely stable ground in a forest that has none, and the forest-people know every one of them. See `quests/turnroot-weald-adventure.md`, Points of Interest, The Blown Clearing.
 
 **It is a positioning fight, not a damage race.** Concussive Vent means every landed hit relocates somebody, so a party trying to keep a line in the Frontline is fighting the beetle and the floor at once. Melee characters spend the whole encounter walking back in. Anyone who was happy in the Backline is having a much better time and should be feeling smug about it.
 
@@ -49,6 +51,7 @@ Dried and ground, the organ yields **bellows dust**.
 ## Related Documents
 
 - `bestiary/scorchback-beetle.md` — the smaller cousin, and the same chemistry pointed the other way
-- `places/ashfall-wastes.md` — the warm ground both of them need
+- `places/turnroot-weald.md` — the resinous understory it works, and the forest it refuses to be routed by
+- `places/ashfall-wastes.md` — the scrub its cousin stayed in
 - `bestiary/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/sapphire-ant.md` — the other seasonings, and the other kinds of gate
 - `experimental/kevin.md` — the character, and what this does once it is loaded

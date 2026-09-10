@@ -2,11 +2,13 @@
 
 **Cards:** `cards/shockquills.md`
 
-A stout, low-slung quilled animal about the size of a loaf, found in loose groups of three or four around Briarwatch (`places/briarwatch.md`) — the red dirt roads, the dry margins between worked fields, and the scree of the watchtower ruins.
+A stout, low-slung quilled animal about the size of a loaf, found in loose groups of three or four. Two known populations: around Briarwatch (`places/briarwatch.md`) — the red dirt roads, the dry margins between worked fields, the scree of the watchtower ruins — and on the quartz cliffs at Glasslight Reach (`places/glasslight-reach.md`), working the scree below the town.
 
 **The charge is not friction.** A Shockquill carries an internal organ, the **spinstone gland**, packed with dozens of tiny magnetic stones. The animal rotates them around one another — constantly, without thinking about it, the way anything else breathes — and that turning is what generates the charge. The quills only deliver it. Everything alive builds a little static walking around; a Shockquill is the only thing that runs a generator.
 
-**The stones are swallowed, not grown.** Briarwatch's dirt is red because it is full of iron, and a Shockquill spends most of its waking life sorting grit for the few pieces worth keeping. A young one has almost nothing in the gland and cannot hold a charge at all. An old one rattles.
+**The stones are swallowed, not grown.** A Shockquill spends most of its waking life sorting grit for the few pieces worth keeping. A young one has almost nothing in the gland and cannot hold a charge at all. An old one rattles.
+
+That is what decides where they live, and it's the only thing that does. Briarwatch's dirt is red because it's full of iron. The Glasslight cliffs are not pure quartz either — the mineral veins running through them are the whole reason the town has colors to look at — and the scree below has been shedding those veins as gravel for as long as the cliffs have been failing. Two habitats with nothing else in common, both of them a sorting floor.
 
 You can tell how charged one is from a distance. The quills stand further out, they hum faintly against each other, and the air near it tastes like a struck match. Up close there's a second tell nobody expects: a dry, uneven ticking from somewhere inside the animal, faster the further along it is.
 
@@ -27,11 +29,15 @@ Not predators and not brave. A Shockquill's first answer to anything is to put i
 
 They do not coordinate. They also do not need to — a group of them all charging quietly on separate sides of a fight is a worse problem than one that has been paying attention.
 
+**The cliff animals also do it the hard way.** A Glasslight Shockquill has learned to work the dry quartz scree deliberately — rolling itself along a face, thousands of quills dragging against stone that never gets wet, building ordinary static on top of what the gland is already making. It is a small addition and the animal clearly thinks it is worth the trouble. Briarwatch Shockquills don't bother; their ground is damp most of the year and the trick doesn't pay there. Same animal, one population with a habit the other never needed.
+
 **The fight is a clock, and both hands are bad.** Closing to melee bleeds the Charge off before it becomes dangerous, but Grounding means every hit costs you 2 you cannot prevent, and a group of four returns that four times over. Staying at range keeps you safe from the quills and lets the Charge climb toward a discharge that does not care where you are standing.
 
 ---
 
 ## In Briarwatch
+
+*(The behaviour below is the farmland population. The Glasslight animals live on bare failing rock with no channels, no tools and no Tollbirds — the water rule is the only part that carries over, and up there it means they keep off the wet lower pitches and the quay.)*
 
 **They will not cross water.** Wet ground earths a charged Shockquill and the animal knows it, so the irrigation channels between fields are walls as far as it's concerned. Briarwatch has never needed to fence them out; the farm layout does it for free, and everyone knows which side of a channel to expect one on.
 
@@ -62,6 +68,7 @@ So the ingredient has a price and the price is paid in the fight. A party that p
 ## Related Documents
 
 - `places/briarwatch.md` — the red dirt, the irrigation channels, and the larder fence they mostly avoid
+- `places/glasslight-reach.md` — the mineral-veined cliffs, and the dry scree that pays for the friction habit
 - `bestiary/tollbird.md` — the only predator here that has to check first
 - `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
 - `experimental/kevin.md` — the character, and what this does once it is loaded

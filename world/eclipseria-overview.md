@@ -20,7 +20,7 @@ Between the named places is ordinary ground — road, river, field, and unremark
 
 A pocket is small. A stretch of road, a bend of river, a few hours of bad country — bounded enough that the far side is usually visible from the near one. It doesn't travel, but it drifts at the edges, which is why the known ones are surveyed on a rotation rather than mapped once. Inside, terrain features of far-off places blend together and the distance walked isn't always the distance covered. The worst of the charted ones carry glyph posts to slow the instability — Mason work, cut and recut on the order's own rotation, which almost nobody who travels past one knows (`factions/the-masons.md`, Known Works).
 
-Most journeys never touch one. Knowing which pockets are where, and which routes thread between them, is the Cartographers Guild's entire trade (`factions/the-cartographers-guild.md`) — and the reason a four-to-five day crossing between major locations is possible at all.
+Most journeys never touch one. Knowing which pockets are where, and which routes thread between them, is the Cartographers Guild's entire trade (`factions/the-cartographers-guild.md`) — and the reason a four-to-five day crossing between major locations is possible at all. A pocket can't be line-drawn, so it isn't: it's recorded into an atlas, with the surveyor's argument written in the margins around the image, and the personal journals of the people who actually walked one are traded alongside those (`factions/the-cartographers-guild.md`, The Atlas).
 
 ## Survival Tone
 

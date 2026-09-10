@@ -28,6 +28,7 @@ Notable species:
 - Luminova Leaves — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
 - Rootstalker — signature predator. Appears at Pressure 2+ when navigation fails.
 - Skeinwing — high-altitude glider, native to the sky above the canopy.
+- Blowback Beetle — dog-sized, plated, eats resinous understory, and blasts itself an open clearing wherever it stops. The only thing under this canopy that makes ground instead of being routed across it.
 
 ## Geography
 

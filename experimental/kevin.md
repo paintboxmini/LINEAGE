@@ -64,7 +64,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Cinder flake** | Deal +3 damage | `bestiary/scorchback-beetle.md` — the Cindersink |
 | **Hush petal** | Defender gains Rooted | `bestiary/hush-bloom.md` — the Turnroot Weald |
 | **Spinstone grind** | Apply Initiative Shift -2 to the defender | `bestiary/shockquills.md` — the Briarwatch red dirt |
-| **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Ashfall scrub |
+| **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 
 One bonus each and all small — GRIND SHOT is already a d8 on his best stat, so a load is a rider on a good card rather than the reason it's good.
 

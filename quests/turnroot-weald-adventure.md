@@ -379,6 +379,26 @@ If the party cannot agree, the plate stays in the wall. The forest is content to
 
 ---
 
+### The Blown Clearing
+
+**The Sight:** Open ground. Actually open — a rough circle thirty feet across where the understory has been flattened outward from a single point, branches snapped away from the center, leaf litter driven to the rim in a ring. Sunlight, or as much of it as this world offers, reaching the floor.
+
+**The Sound:** Ordinary forest, and then, from somewhere in it, a long wet drag of air. Then nothing for a beat.
+
+**What made it:** a **Blowback Beetle** (`bestiary/blowback-beetle.md`, CTR 7), still here, still eating. It cleared this space because it wanted somewhere to eat without anything touching it, and it will clear it again the moment anything does.
+
+**Why this matters in the Weald.** Turnroot routes everything. The Blowback is the one thing under this canopy that makes ground rather than being moved across it, and the clearings persist afterward. Forest-people know where every one of them is, and use them the way anyone else uses a landmark — which is worth something in a forest where no landmark holds.
+
+**Navigation.** A blown clearing counts as an earned sign (Navigation, above) for a party that reaches one and correctly reads what made it. Standing in a stable open circle and working out *why* it is stable is the check; the beetle does not have to be fought for the sign to count.
+
+**The fight, if they take it.** A positioning fight and not a damage race — Concussive Vent pushes the defender to the Backline on every landed hit, so a melee line spends the encounter walking back in. GULP is the public wind-up. Full behaviour and the harvest are in the bestiary file.
+
+**Customs still apply.** The clearing is the beetle's work, not the forest's, which does not exempt anyone standing in it. Naming a destination aloud here routes exactly as it would anywhere else under canopy.
+
+**Loot:** the bellows organ (`experimental/kevin.md`), and plate nobody has made armour from yet.
+
+---
+
 ### The Holdfast *(Aege's people)*
 
 A small region of the Weald that still behaves. Moss signs stay true. Roots do not surface underfoot mid-stride. Rootstalkers have been seen at the edge and turned away — or have not, and the holdfast is smaller this week than last.
