@@ -13,7 +13,7 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("cannot be affected by Blind" — CERTAIN STRIKE, the only live example) don't count toward the keyword being referenced; those cards are counted under whatever they actually grant instead. Case and inflection don't matter — several cards write "unpreventable" in lower case mid-sentence, STEAL says "Exiled" rather than "Exile", and three cards write "Positive Status Effect" singular. Match the word stem, not the glossary header. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at.*
 
-*To recount: `python3 combatsimulations/cards.py` loads every card, `core_pool()` in that module is exactly the four lists above, and a word-boundary case-insensitive search of the four text lines reproduces these numbers once the two exclusions above are taken out by hand.*
+*To recount: `python3 combat-simulations/cards.py` loads every card, `core_pool()` in that module is exactly the four lists above, and a word-boundary case-insensitive search of the four text lines reproduces these numbers once the two exclusions above are taken out by hand.*
 
 <!-- print:skip-end -->
 

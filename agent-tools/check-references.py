@@ -29,8 +29,8 @@ thing. All four have actually happened here.
      Oracle deck.
 
 Usage:
-    python3 agent_tools/check-references.py            # report, exit 1 on problems
-    python3 agent_tools/check-references.py --quiet    # only print problems
+    python3 agent-tools/check-references.py            # report, exit 1 on problems
+    python3 agent-tools/check-references.py --quiet    # only print problems
 
 A line carrying `<!-- link-check: ignore -->` is skipped by checks 1 and 3, for
 the rare case where a path is the subject of a sentence rather than a citation.
@@ -41,10 +41,10 @@ import re
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(REPO, 'combatsimulations'))
+sys.path.insert(0, os.path.join(REPO, 'combat-simulations'))
 import cards as C  # noqa: E402
 
-SKIP_DIRS = ('printing', 'agent_tools', '.git')
+SKIP_DIRS = ('printing', 'agent-tools', '.git')
 DOC_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`')
 # `path/to/file.md`, Some Section Name — stop at sentence punctuation.
 SECTION_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`,\s+([A-Z][A-Za-z0-9 &\'’\-]{2,44}?)(?=[.,;:—\n)]|$)')

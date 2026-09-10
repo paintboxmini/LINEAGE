@@ -17,7 +17,7 @@ This file is scoped to the simulator only. It is not a design standard for what 
 
 ## Mechanic-override reference
 
-Not itself a list of invariants — a practical index for `combatsimulations/`: every card that overrides a specific mechanic, which one, and for how long. Useful for keeping the simulator's flag-based override system correct; check new content against it when a new card looks like it needs the same kind of override.
+Not itself a list of invariants — a practical index for `combat-simulations/`: every card that overrides a specific mechanic, which one, and for how long. Useful for keeping the simulator's flag-based override system correct; check new content against it when a new card looks like it needs the same kind of override.
 
 | Card/Effect | Mechanic overridden | Lifetime |
 |---|---|---|

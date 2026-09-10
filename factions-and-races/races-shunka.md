@@ -8,4 +8,8 @@
 
 **Why it's the wound it is:** losing a battle is a cost this culture understands and can live inside. Having something taken that you never agreed to pay, that no strength of arms could have stopped, is the one kind of loss it has no framework for absorbing. That's why it still defines the royal line however long ago it happened.
 
+## Passives — STRONGJAW and HACKLES RISE
+
+Both written and both ancestry-tied: a jaw built for a dogkin's bite (RED — BODY, Melee, d6, taking the bigger die for the Melee-only restriction) and fur that reads hostile intent before the mind does (GREEN — SOUL, Both, d4). Full text at `experimental/passives.md`.
+
 See `experimental/the-shunka.md` for the full account, `experimental/the-tithebound.md` for who did it, and `rules/character-creation.md`, Declaring a Price, for the mechanic being violated.

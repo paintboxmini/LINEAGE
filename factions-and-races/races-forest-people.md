@@ -6,7 +6,7 @@
 
 **They navigate by habit instead of maps.** Cords tied to the wrist, hummed route-songs, or simply letting the wood take them — the Weald always routed them where they needed to be, so nobody needed a chart. That arrangement is what Overgrowth has broken (`bestiary/root-heart.md`, The Overgrowth Cycle): the ground they can safely walk has shrunk to a fraction of what it was, and Rootstalkers that used to pass a family without interest have started hunting them.
 
-**They are the population the Masons' line spends.** The Briarwatch fence holds the Weald's expansion back on purpose and redirects that growth inward, which is what makes the aggressive phase land on the people already under canopy (`factions and races/the-masons.md`, Known Works). Nobody told them. Nobody is going to.
+**They are the population the Masons' line spends.** The Briarwatch fence holds the Weald's expansion back on purpose and redirects that growth inward, which is what makes the aggressive phase land on the people already under canopy (`factions-and-races/the-masons.md`, Known Works). Nobody told them. Nobody is going to.
 
 **Where to find them:** the Holdfast (`quests/turnroot-weald-adventure.md`, Points of Interest) — a family that still has good ground, and is counting how much of it is left.
 
