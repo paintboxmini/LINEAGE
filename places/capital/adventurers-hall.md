@@ -63,6 +63,18 @@ The Regency doesn't know the weather is the village, but the posting's own cauti
 
 ---
 
+### Turnroot Weald — Standing Order, Renewed Indefinitely
+
+> *"The growth at the center of Turnroot Weald is to be cut down. Standing order of the Council, renewed each season without review. Proof of the kill or a credible first-hand account accepted; full fee on either. Parties are advised the Weald does not hold a route. Previously filled. Expected to require filling again."*
+
+The oldest posting on the board, and the strangest thing about it is the last line — a bounty that expects to be re-earned, worded by somebody who knew that and didn't explain it. The clerk can't explain it either; the posting predates every clerk who's ever pinned it.
+
+What it actually is: barrier maintenance, contracted out (`bestiary/root-heart.md`, The Overgrowth Cycle). The Council knows the boundary at the Weald's western edge is degrading, knows the Root Heart's aggressive phase is what degrades it, and can't maintain the boundary — so it shortens the phase instead. Killing the Heart forces the forest into decay early, before the phase spends its full weight against the line. The Heart re-forms; that's why the order stands. Nobody at the counter knows any of this, and a party that takes the job and simply fights a boss has fulfilled the contract exactly as written.
+
+A party that reached the Weald on their own business and killed the Heart to get out (`quests/turnroot-weald-adventure.md`, Escape Conditions) can walk into the Hall afterward and collect on a contract they never signed for. The clerk will take the account, check it against the standing order, and pay.
+
+---
+
 ### The Abyssal Trench — Naturalist Collection, Standing Order
 
 > *"Standing purchase order, Gilded Tusk kitchens: Death-Ball Sponge (intact), Flapjack Octopus (whole), Elder Tower Creature tissue (harvested live, non-lethal only). Payment per specimen on delivery to the Tusk, not the Hall."*

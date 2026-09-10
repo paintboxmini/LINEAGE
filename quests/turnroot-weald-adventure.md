@@ -245,6 +245,8 @@ Three ways out, and the forest treats them as equally valid:
 
 **On the third.** The transaction completed. They asked to be taken to the heart of it, they were taken, and they saw. Nothing further is owed in either direction, and the Root Heart is still alive behind them — the only exit that ends with that being true.
 
+**The second exit is also a job somebody is already paying for.** There is a standing Regency bounty on the Root Heart (`places/capital/adventurers-hall.md`, The Board) — a party that fought its way out can collect on it afterward whether or not they knew it existed, and a party that took the contract in the capital can use the kill to leave. The Weald doesn't care which order those happened in. What the bounty is actually for is in `bestiary/root-heart.md`, The Overgrowth Cycle, and the Council isn't telling.
+
 It is not a shortcut past the others so much as a different bargain. Marks cost three separate acts of alignment with a forest that is hard to align with — including sacrificing a trait to the Knot-Keeper. The boss fight costs a boss fight.
 
 **Paid Passage costs almost nothing and returns almost nothing.** No Marks. No kill. No loot off the Heart. The party leaves with exactly what they walked in holding, minus a coin, having looked at the thing everyone else in the Weald is trying to survive. It is cheap because it is empty, and that is the correct trade rather than a hole in it — a table that takes this exit will feel the difference without anyone at the table saying so.

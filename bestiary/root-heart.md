@@ -31,6 +31,14 @@ Either branch ends in dormancy, and the cycle starts again from there. The fores
 
 **GM Secret — Not Player-Facing.** The branch is not a coin flip, and hasn't been for a long time. The Masons' Briarwatch line holds the Weald's entire outward expansion back on purpose (`factions/the-masons.md`, Known Works), which means the expansion branch has been closed off for every cycle since the line went up — the push has nowhere to land, so it fails, so the cycle resolves to decay, every time. That is exactly what the line was built to do: a release valve that lets the forest exhaust itself inward on a schedule rather than spread. The cost is that the aggressive phase peaks harder each time, because all of that intent gets turned back on the ground already under canopy. The forest-people dying and the Rootstalkers hunting are not the fence failing. They are the fence working. See `characters/aege.md`, Story Hook.
 
+**But the fence is wearing out.** Each aggressive phase spends itself against the line, and each one takes fractionally more out of the stone than the following recut puts back. The damage is cumulative and one-directional. Left long enough without re-establishment, the line fails — and the next aggressive phase resolves to expansion instead of decay, for the first time since the line went up.
+
+**The Regency knows the boundary is degrading, and has an answer for it: kill the Heart early.** There is a standing Council bounty on the Root Heart, posted at the Adventurers' Hall and renewed indefinitely (`places/capital/adventurers-hall.md`, The Board). It is not a monster-clearing job, whatever the posting says. Cutting the Heart down forces the decay branch ahead of schedule, which ends the aggressive phase before it has spent its full weight against the fence. Every party that takes that contract is doing barrier maintenance for the Regency, and none of them are told so.
+
+**A killed Root Heart is not a dead forest.** The Heart is the cycle's engine, not a single organism whose death settles anything. Cut it down and the Weald drops straight into decay — the outer growth rots, the edge pulls back, the Rootstalkers go quiet — and the cycle restarts from dormancy with the Heart re-forming in the crater on its own schedule. This is why the bounty is standing rather than one-time, why it has been paid out before, and why a party that clears it has bought the line time rather than a victory.
+
+**Escaping the Weald and serving the bounty are the same act by accident.** A party that kills the Heart to get out (`quests/turnroot-weald-adventure.md`, Escape Conditions) has done the Regency's work without being hired for it, and a party that took the contract has bought its own way out without being told that was on offer. Neither the forest nor the Hall distinguishes between them.
+
 ## Read-Aloud Description
 
 At first, it looks like a tree that grew in the wrong direction.

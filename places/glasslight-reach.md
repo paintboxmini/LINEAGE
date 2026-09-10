@@ -12,7 +12,7 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
 
-**Hidden somewhere in the cliffs, not public knowledge and not meant to be, is a Mason lodge** — the order's whole discipline is walking in, doing the work, and leaving before anyone notices they were there. See `factions/the-masons.md`, `characters/mirel.md`.
+**Hidden somewhere in the cliffs is a Mason lodge.** The order itself is no secret — everyone here has heard of the Masons, and has an opinion about what their marks mean. The lodges are the secret, and this one has never been found by anyone in Glasslight Reach who wasn't already looking for it on purpose. The discipline is walking in, doing the work, and leaving before anyone asks what it was for. See `factions/the-masons.md`, `characters/mirel.md`.
 
 ## What It Looks Like
 

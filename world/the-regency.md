@@ -23,6 +23,14 @@ Percival holds the Owl now — but he isn't the first replacement. The position 
 | Lord Percival | The Owl | silent, observant, keeps records. |
 | Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid. |
 
+## The Turnroot Standing Order
+
+The Council keeps one bounty that predates every sitting member: the growth at the center of Turnroot Weald is to be cut down. Standing, renewed each season, no review. It runs through Cedric's sphere and gets posted at the Adventurers' Hall alongside census work and caravan disputes (`places/capital/adventurers-hall.md`, The Board).
+
+It is not a monster problem. The Council knows the boundary at the Weald's western edge is degrading, and knows the forest's aggressive phase is what degrades it (`bestiary/root-heart.md`, The Overgrowth Cycle). It cannot maintain that boundary — the Regency didn't raise it and doesn't tend it — so it buys time instead, hiring whoever will go end the phase early. The Heart re-forms afterward. That is why the order stands rather than closing.
+
+**Deliberately unsettled:** whether the Council knows the boundary is Mason work (`factions/the-masons.md`, Known Works) and stays quiet about it, or never connected the fence to the order at all. The policy is identical either way, which is what makes it worth leaving open — a party can discover that the Regency has been quietly subcontracting a secret order's maintenance for a century, or that it has no idea who built the thing it is protecting and has been guessing correctly by accident.
+
 ## Rumors
 
 What different city factions say about the council. Collected from marketplace merchants and temple district regulars.
