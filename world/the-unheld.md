@@ -3,7 +3,7 @@ The ghost stories remember ships — generations back, crews that slipped past t
 
 The Unheld does not behave randomly. The changes it imparts follow patterns that can sometimes be traced, never fully predicted. Whether it has intent is a question people have stopped asking aloud.
 
-Whatever the Unheld really is, it does not travel upstream, and it cannot be carried. Grey water scooped at the coast and walked inland arrives as ordinary water.
+Whatever the Unheld really is, it does not travel upstream, and it cannot be carried. Grey water scooped at the coast and walked inland arrives as ordinary water. Everyone knows this — it is the single most widely held piece of common knowledge about the Unheld, which is precisely what makes it useful to a man with a resonant ring and a congregation (`characters/kaine.md`, The Communion).
 
 ## How People Understand It
 

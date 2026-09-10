@@ -36,7 +36,8 @@ Mirel takes the party somewhere quieter. She shows them the Mason's chisel under
 She describes The Final Current's practices: Kaine's claim that coming back from the water proves the Promise's true completion — the Last Bath's, the one doctrine says is final — can be unlocked before death. A specific, public claim nobody else in the community makes out loud. Followers who come back fluid get pushed back in, repeatedly, chasing more of it. She's seen it happen. That claim isn't Promise doctrine. That's something else.
 
 **What Mirel knows:**
-- Kaine performs a ritual — dips his finger in water, the water fizzes, he distributes it as Unheld-blessed. People who drink it feel something. She doesn't know what.
+- The sect has a rite they call the Communion. Members walk down to the tideline and fill a vessel from the Unheld themselves; it goes flat on the climb back up, the way everyone knows it will; at the gathering they pour it all into one vessel and Kaine returns it to its Unheld state in front of them. The water fizzes. They drink it. People who drink it feel something. She doesn't know what.
+- What bothers her about it, and she can't say why: the current only runs one way. Everything returns to the Unheld. Nothing has ever been described as coming back out of it — and if Kaine can hand the Unheld back to itself in a cup, she doesn't know what that makes him in their theology, and she suspects they haven't asked.
 - He wears a ring on his first finger that clearly doesn't fit him. She's noticed because she notices things.
 - Steve — a new initiate, hasn't bathed, harmless-seeming — hangs around Kaine's people without being one of them. She finds him difficult to take seriously. She's seen Kaine give him the pitch already — gesture at the most visibly changed devouts in the room, promise the same is waiting for anyone willing to bathe — and watched Steve go pale and back out of it on the spot.
 
@@ -67,10 +68,18 @@ The documentation from the docks points to a location in the cliffs. Mirel knows
 
 **Steve is here.** Not being prepared for anything — just present, the way he's present wherever Kaine's people gather, since he backed out of the bathing and never found anywhere better to stand. He is not asking any of the right questions about why he's still around. The party may try to get him to leave. He will thank them and not actually leave. He is Steve.
 
-**The Water Trick:**
-If the party observes Kaine performing for his followers, they see: the ring goes into a vessel of water, the water fizzes and pops, Kaine speaks with complete certainty that this is what repeated bathing in the Unheld unlocked in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. The people who drink it feel something. They look moved.
+**The Communion:**
+If the party observes Kaine performing for his followers, what they see is not a blessing over a bucket. It's a collection.
+
+One at a time, the gathered come forward and empty a small stoppered vessel into a single basin. Each of them filled it at the tideline themselves, days or weeks ago, and each of them carried it up the cliffs and felt it go ordinary in their hands on the way — which everybody in the room, and everybody in the world, knows is what happens (`world/the-unheld.md`). Then Kaine puts his hand in the basin. The water fizzes and pops. He says, with complete certainty, that this is the Unheld returned to itself, and that repeated bathing is what unlocked the doing of it in him — the same claim he sells new initiates, now aimed at himself. He distributes small amounts. It must be drunk at once; the restoration doesn't keep.
+
+The people who drink it feel something. They look moved. They should — it's their water, they went and got it, they felt it die, and they are watching it come back.
+
+**If the party is offered a vessel**, they're being invited to the entry rite, not the deep one. Nobody is asking them to bathe. It's a walk down to the water at low tide with a stopper, and it is meant to feel like nothing, and that is exactly how the Final Current grows.
 
 A party member who drinks it heals 1 HP. The effect is real. The source is not what Kaine says it is — it's the ring, not the bathing.
+
+**The hole in it is doctrinal, not physical, and Mirel already put her finger on it** (Encounter 1): the Promise says everything returns to the Unheld. Nothing in that theology runs the other direction. A party that presses a true believer on *what that makes Kaine* will not get a fight — they'll get a person who has genuinely never thought about it, and who will go quiet.
 
 A Mind check (DC 13) while watching the ring. It doesn't fit him. That detail exists before the party knows why it matters.
 
@@ -135,7 +144,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **Corrupted bathers:** don't define their abilities in advance. Decide one surprising thing about each one when they act. Inconsistency is the mechanical expression of what they are.
 
-**The water trick:** let the party drink it if they want. The 1 HP heal landing on a party member who was skeptical is worth more than any explanation.
+**The Communion:** let the party drink it if they want. The 1 HP heal landing on a party member who was skeptical is worth more than any explanation. Better still if one of them went down and filled a vessel first — the trick is built to be convincing to the person who supplied the water, and a player who supplied some is inside the con rather than watching it.
 
 **Steve:** do not make him competent. Do not make him interesting. The joke only works if he is genuinely Steve until he suddenly isn't.
 
