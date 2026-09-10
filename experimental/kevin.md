@@ -32,6 +32,27 @@ The mechanism carries its own limitation without anyone having to invent one, wh
 
 **The oranges.** In the kit, no longer deferred. Throwable incendiary grenades — he found a way to enhance the oils in the skin until they're properly combustible. Same craft as the peppers, different delivery: the pepper is a bullet, the orange is a bomb.
 
+### The process — three stages, and the third one is the gate
+
+Everything he fires or throws goes through the same preparation. It is cooking, done wrong on purpose.
+
+1. **Reduce.** Draw the water out — low heat, hours, watched. What is left is flesh that burns instead of steaming. This is the cheap stage: it costs time and a fire he controls, and nothing else.
+2. **Charge.** Work a rare ingredient into the reduced flesh so its property survives the burn and comes out the other side. **This is where the money goes.** The charge is the seasoning, and the seasoning is the thing that has to be hunted, bought, or bargained for (`experimental/kevin-ingredients.md`).
+3. **Seal.** Set the skin or husk so it holds pressure until the grinder breaks it — or until the orange lands. This is the stage that takes an actual cook. Sealed badly, a round is a dud; sealed worse, it goes off in the bandolier.
+
+**Why this is the right gate.** Finding food that will take an enhancement is easy — peppers and oranges are peppers and oranges. What is scarce is the rare ingredient for stage 2 and the skill for stage 3, which means Kevin is never short of *ammunition*, only ever short of *good* ammunition. A plain reduced pepper still fires. It simply does nothing except be fired.
+
+That distinction is what keeps the character playable without bookkeeping. He does not track bullets. He tracks charges.
+
+### Supply and restocking
+
+- **Preparation is a downtime activity**, not something done between fights. The Reduce stage alone is hours.
+- **A session of work turns one measure of a rare seasoning into three prepared rounds**, or **two oranges** — oranges are larger and more volatile, so they cost more of the charge and yield fewer.
+- **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden. They fire; they carry no bonus.
+- **Restocking is therefore an ingredient problem, and ingredient problems are quests.** Cinder flake means the Cindersink (`bestiary/scorchback-beetle.md`). Hush Bloom means sitting still in the Turnroot Weald long enough for a flower to forget about you (`bestiary/hush-bloom.md`). Sapphire Ant crystals mean two copper at Senshi's counter, because one of the three is genuinely easy and that contrast is the point.
+
+None of this needs a new subsystem — it is `rules/items.md`'s Crafting rule applied to one character who does it constantly.
+
 ## Gear
 
 - **The pepper grinder** — hand-cranked, functions like a shotgun. Loaded with a pepper; the crank ignites the flesh and throws the seeds. Fires different seasonings for different effects, not just plain black pepper, and what's actually loaded gates what it can do. Full ingredient list: `experimental/kevin-ingredients.md`.
@@ -53,7 +74,8 @@ The mechanism carries its own limitation without anyone having to invent one, wh
 ## Related Documents
 
 - `experimental/kevin-cards.md` — GRIND, KINDLE and SERVE, one card per piece of the kit
-- `experimental/kevin-ingredients.md` — what the grinder and the drinks actually run on
+- `experimental/kevin-ingredients.md` — what the grinder and the drinks actually run on, and what each load does
+- `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md` — the two seasonings that had to be built
 - `experimental/chris.md`, `experimental/pat.md` — the other two player concepts from this session
 - `places/capital/capital.md`, `places/capital/gilded-tusk.md` — the Capital's temples, and Senshi
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck
