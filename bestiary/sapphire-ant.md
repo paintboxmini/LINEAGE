@@ -22,4 +22,4 @@ Foragers collected individually with small glass tubes — a slow process requir
 
 ## Culinary Note
 
-See `places/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. It is also the Blue-coded charge in Kevin's grinder, alongside `bestiary/scorchback-beetle.md` and `bestiary/hush-bloom.md` (`experimental/kevin-ingredients.md`). Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.
+See `places/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. It is also one of the charges in Kevin's grinder, alongside `bestiary/scorchback-beetle.md` and `bestiary/hush-bloom.md` (`experimental/kevin-ingredients.md`). Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.

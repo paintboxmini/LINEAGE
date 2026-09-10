@@ -28,7 +28,7 @@ Dried and ground, the gland yields **cinder flake**.
 
 Cinder flake is a real seasoning before it is anything else — heat with an oily depth behind it, closer to a toasted chili than a raw one. Senshi would take it (`places/capital/gilded-tusk.md`), and there is no reason he does not already know what it is.
 
-It is also the Red-coded charge in Kevin's grinder: `experimental/kevin-ingredients.md`.
+It is also one of the charges in Kevin's grinder: `experimental/kevin-ingredients.md`.
 
 ---
 
@@ -36,5 +36,5 @@ It is also the Red-coded charge in Kevin's grinder: `experimental/kevin-ingredie
 
 - `places/ashfall-wastes.md` — the Cindersink and the warm ground it needs
 - `bestiary/sapphire-ant.md` — the Blue-coded counterpart, same role
-- `bestiary/hush-bloom.md` — the Green-coded counterpart
+- `bestiary/hush-bloom.md`, `bestiary/shockquills.md` — the other two seasonings, gated by patience and by risk
 - `experimental/kevin-ingredients.md` — what cinder flake does once it is loaded

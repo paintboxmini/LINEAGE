@@ -72,21 +72,25 @@ Range: Ranged
 
 ## Card 3 — SERVE (the beverages)
 
-Green, d6, **Both**. The party card.
+Green, d6, **Both**. The party card, and deliberately not a card that does anything by itself.
 
-`experimental/kevin.md` already names what the basic drinks do — **Quick** or a small **Initiative Shift** — so this card is those two and nothing invented on top. Modal, like CHANNEL, which is the only other card in the game that lets you pick one of several on either half.
+**The effect lives on the drink, not on the card.** SERVE hands somebody a prepared beverage and they drink it on the spot. What that does depends entirely on which drink it was, exactly the way GRIND SHOT depends on which load is in the grinder — same system, different delivery. That keeps the card from ever needing a rewrite when a new recipe exists, and it means Kevin's drinks are real inventory rather than a menu of card text.
 
-Its two modes are each roughly a whole existing d6 Green card — HASTEN hands the party Initiative Shift +1, MIRROR STEP's defence half hands allies Quick — so getting to choose between them is the premium a signature card is allowed. Kevin's Soul is 2, which means this is the card he plays for the effect and not the number, and that reads correctly for handing out drinks mid-fight.
+It also puts a real restriction on him: **the ally has to be in his position.** He can't hand a drink across the field. Passing someone a cup is a thing you do at arm's length, and it means SERVE competes with GRIND SHOT and KINDLE for where he's standing rather than being the safe card he plays from anywhere.
+
+On defence he's the one being attacked, so there's nobody to pass it to — he drinks it himself.
 
 ```
 SERVE
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Choose one — all allies gain Quick, or apply Initiative Shift +1 to all allies.
-Defense Effect: Target ally gains Quick.
+Effect: Give a prepared drink to an ally in your position. They consume it immediately.
+Defense Effect: Consume a prepared drink yourself.
 Range: Both
 "Drink it. Don't ask what's in it. Drink it."
 ```
+
+**The drinks themselves are consumables** and live with the rest of the kit rather than on this card: `experimental/kevin-ingredients.md`, The beverages. The two basic ones grant Quick or a small Initiative Shift, which is what `experimental/kevin.md` already specified before any of this had a card attached.
 
 ---
 

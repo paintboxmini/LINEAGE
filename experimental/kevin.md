@@ -47,7 +47,7 @@ That distinction is what keeps the character playable without bookkeeping. He do
 ### Supply and restocking
 
 - **Preparation is a downtime activity**, not something done between fights. The Reduce stage alone is hours.
-- **A session of work turns one measure of a rare seasoning into three prepared rounds**, or **two oranges** — oranges are larger and more volatile, so they cost more of the charge and yield fewer.
+- **A session of work turns one measure of a rare seasoning into three prepared rounds**, **two oranges**, or **two servings of a drink** — oranges are larger and more volatile, and a mouthful goes further than a shell and less far than a seed.
 - **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden. They fire; they carry no bonus.
 - **Restocking is therefore an ingredient problem, and ingredient problems are quests.** Cinder flake means the Cindersink (`bestiary/scorchback-beetle.md`). Hush Bloom means sitting still in the Turnroot Weald long enough for a flower to forget about you (`bestiary/hush-bloom.md`). Sapphire Ant crystals mean two copper at Senshi's counter, because one of the three is genuinely easy and that contrast is the point.
 
@@ -75,7 +75,7 @@ None of this needs a new subsystem — it is `rules/items.md`'s Crafting rule ap
 
 - `experimental/kevin-cards.md` — GRIND, KINDLE and SERVE, one card per piece of the kit
 - `experimental/kevin-ingredients.md` — what the grinder and the drinks actually run on, and what each load does
-- `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md` — the two seasonings that had to be built
+- `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/shockquills.md` — the three seasonings that had to be built
 - `experimental/chris.md`, `experimental/pat.md` — the other two player concepts from this session
 - `places/capital/capital.md`, `places/capital/gilded-tusk.md` — the Capital's temples, and Senshi
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck
