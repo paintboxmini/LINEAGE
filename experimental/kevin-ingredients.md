@@ -20,7 +20,7 @@ Between the three: Blue's covered (Sapphire Ant, already real), Red and Green no
 
 ## Open questions
 
-- Does firing a seasoning work like choosing a card's color at the point of loading, the way the color-mirror mechanics elsewhere already require a locked choice before resolution? Or is it looser than that?
+- ~~Does firing a seasoning work like choosing a card's color at the point of loading?~~ **Locked**, as of GRIND's draft (`experimental/kevin-cards.md`): the load is named when the card is committed face down, before the reveal, so guessing wrong costs you the shot.
 - How does he actually acquire rarer ingredients — bought (like the Sapphire Ant Crystals), hunted himself, commissioned the way Senshi commissions the party for specimens? (All three are legal under the general rule now — `rules/items.md`, Crafting — this is just which ones Kevin actually uses.)
 
 Resolved, generally: `rules/items.md`'s Crafting rule settles "real inventory, not abstract recipes" for everyone, Kevin included — what he can make is gated by what he's actually got, same as any other crafter.
@@ -28,6 +28,7 @@ Resolved, generally: `rules/items.md`'s Crafting rule settles "real inventory, n
 ## Related Documents
 
 - `experimental/kevin.md` — the character this belongs to
+- `experimental/kevin-cards.md` — GRIND names three of these seasonings as its loads
 - `rules/items.md` — Crafting, the general rule this all runs on
 - `places/capital/gilded-tusk.md` — Senshi, the Naturalist Collection, Sapphire Ant Seasoning Crystals
 - `bestiary/sapphire-ant.md`, `bestiary/gene-thief-tardigrade.md` — existing ingredient-creatures with real mechanical precedent
