@@ -19,6 +19,8 @@ Steve is who this is about, and has been his whole life. The household is, by mo
 
 **Which is why the platform is where it comes due.** Steve steps onto it and Wren is not going down with him. Either the pledge breaks, or the world does something about the fact that it can't be kept — and the person the pledge was actually about is the one standing on the platform. See `quests/tide-pulls-back.md`, The Platform — Steve's Beat.
 
-**Who pays is answered, and the answer is the cruel one.** A broken pledge normally costs the one who spoke it: a curse, a forced card, a permanent mark. This one wasn't spoken about the one who spoke it, and the cost followed the subject rather than the speaker. Wren declared. Steve paid. The payment is small and iridescent and follows him everywhere (`characters/steve-and-pip.md`).
+**Only if he goes down.** If the party gets him off the platform, the pledge isn't broken and nothing is charged. This whole thread stays theoretical, and Wren goes on being right about him for another year.
 
-Wren is not marked, not cursed, and not visibly charged anything at all. That is the punishment. The world took it out of him, in front of Wren, and left Wren perfectly intact to watch — and Pip is affectionate, and Steve is happy about Pip, and Wren is the only person alive who can see the invoice inside the wonder and can never say so to anyone.
+**If he does go down:** a broken pledge normally costs the one who spoke it — a curse, a forced card, a permanent mark. This one wasn't spoken about the one who spoke it, and the cost follows the subject. Wren declared, Steve paid, and Wren is not visibly charged anything at all (`characters/steve-and-pip.md`).
+
+What Wren does with that is played at the table, not decided here.

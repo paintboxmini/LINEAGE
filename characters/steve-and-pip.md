@@ -10,22 +10,22 @@ Something real grew between him and Mirel. Nobody arranged it, nobody in the Pro
 
 ## Pip
 
-Pip formed from fragments of Steve's consciousness during the Final Current bathing ritual. The pulleys seized. He was down there much longer than anyone intended, longer than anyone should be. When he came back up, Pip came with him.
+**Pip only exists if Steve gets lowered in.**
 
-**This is the default outcome of a specific moment at the table, not a fixed event.** Steve steps onto the lowering platform at the Full Tide ceremony, Wren tries to call him back, and the party gets a window to do something about it — see `quests/tide-pulls-back.md`, The Platform — Steve's Beat. If they spend it, none of the above happens and there is no Pip. If they don't, the lightning starts while he's still down there and the winch goes unattended, and everything below follows.
+Steve steps onto the lowering platform at the Full Tide ceremony, Wren tries to call him back, and the party gets a window to do something about it (`quests/tide-pulls-back.md`, The Platform — Steve's Beat). Spend it and he doesn't go down, the pledge Wren made about him isn't broken, nothing is charged, and there is no Pip. Nothing below this line happens. Everything below assumes he went down.
+
+---
+
+Pip formed from fragments of Steve's consciousness during the Final Current bathing ritual. The pulleys seized. He was down there much longer than anyone intended, longer than anyone should be. When he came back up, Pip came with him.
 
 A bubble dragon. Small, iridescent, made of something that's already halfway gone. Big rainbow eyes. Wings like soap film. Orbits Steve constantly.
 
-**Pip is both things at once, and that is the whole point.**
+**Pip is an invoice.** Wren spoke a binding statement about Steve's future that wasn't Wren's to speak (`characters/wren.md`, The declaration made on Steve's behalf). He went to the water without Wren, the pledge couldn't be kept, and the world charged the Price to the person it had been spoken *about* rather than the one who spoke it. Something is gone out of Steve. Whatever went into Pip is not in him anymore.
 
-Wren once spoke a binding statement about Steve's future that wasn't Wren's to speak (`characters/wren.md`, The declaration made on Steve's behalf). He stepped onto a platform Wren was not coming down with him on, and the pledge could not be kept. The world charged the Price to the person it had been spoken *about* rather than the one who spoke it, and this is what the charge looked like: a piece of Steve, taken, and handed back with its own eyes.
+**Pip is also a wonder.** Delighted by things, bad at hiding, gets bored, gets underfoot. None of that is a costume over the debt; it is simply also true.
 
-**So Pip is an invoice.** Something is gone out of Steve and is not coming back. Whatever went into Pip is not in him anymore — the world does not balance that scale, and no amount of affection between them settles the account (`world/tonal-bible.md`).
+**Neither reading sits underneath the other.** The mundane and the mythic share a register here and don't resolve into each other (`world/tonal-bible.md`). A bill issued in the shape of a friend, and a friend who happens to be a bill, with no angle from which one turns out to be the real one.
 
-**And Pip is a wonder.** Small, iridescent, delighted by things, bad at hiding, fond of Steve past all reason. Gets bored. Gets underfoot. Has preferences about where to sleep and opinions about strangers. None of that is a costume over the debt; it is simply also true.
+**Nobody explains it.** No NPC pronounces the theology, no book has the entry. The party is told what Pip does, not what Pip is.
 
-**Neither reading sits underneath the other.** This world puts the mundane and the mythic in the same register and does not resolve them (`world/tonal-bible.md`) — Pip is a bill that got issued in the shape of a friend, and a friend who happens to be a bill, and there is no angle from which one of those turns out to be the real one.
-
-**How this plays at the table.** Nobody explains it. No NPC pronounces the theology, no book has the entry, and the party is never told what Pip is — they are told what Pip does, which is orbit Steve and be charming. Let the table arrive at the other half on their own, late, and preferably in the middle of something else.
-
-**Steve doesn't experience Pip as a cost.** He experiences Pip as his, and he is not wrong or in denial — that is the mundane half being sincere rather than a mask he's wearing over grief. **Wren is the only person who reads it both ways at once**, looks at Pip and sees the bill, and cannot say so to anybody, least of all to him.
+**What Steve makes of it, what Wren makes of it, and what Pip turns out to be like are all played, not written.** They depend on how the party spent the window, what they told him, and who was standing where when he came up.
