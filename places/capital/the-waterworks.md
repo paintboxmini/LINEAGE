@@ -4,7 +4,7 @@
 
 For the Bazaar and Tavern hidden within, see `places/capital/underground-bazaar.md`, `places/capital/underground-tavern.md`.
 For the mine shaft that descends through it, see `places/capital/the-wallows.md`.
-For the guild that runs it, see `factions/the-cellar-custodians.md`.
+For the guild that runs it, see `factions and races/the-cellar-custodians.md`.
 
 ---
 
@@ -14,7 +14,7 @@ Where the Wallows is a mine — a shaft, a single vertical throat down to Aurora
 
 Officially, it's water infrastructure. No indoor plumbing runs to any building in the capital — water comes from public wells, fountains, and bathhouses, fed by gravity from cisterns the Custodians fill on the tide's own schedule, not the city's. The tide pushes inland; the Custodians catch that pulse, gate it into the cisterns, and seal the gates before the outflow can take it back. That much is true, and it's most of what's actually down there. The rest is quieter: a handful of deep cisterns that condition and distribute a second set of ingredients through the same channels — a cooled, diluted form of the same binding force the Weavers carry in thread form, moved through open water instead of wire.
 
-The two systems share tunnels because they were laid the same way, for the same reason, by people who never had cause to compare notes. See `factions/the-weavers.md`.
+The two systems share tunnels because they were laid the same way, for the same reason, by people who never had cause to compare notes. See `factions and races/the-weavers.md`.
 
 ---
 
@@ -54,6 +54,6 @@ The Bazaar predates most of the current Waterworks infrastructure and was simply
 - `places/capital/underground-tavern.md` — the hidden pocket's other half, and the mine's upper mouth
 - `places/capital/the-wallows.md` — the mine shaft descending through this layer
 - `places/capital/capital.md` — the city above
-- `factions/the-cellar-custodians.md` — who runs this level
-- `factions/the-weavers.md` — the guild sharing these tunnels
+- `factions and races/the-cellar-custodians.md` — who runs this level
+- `factions and races/the-weavers.md` — the guild sharing these tunnels
 - `world/geography-overview.md` — the continent-wide river network this feeds from

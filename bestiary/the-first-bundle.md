@@ -73,4 +73,4 @@ Armour 2 does not arrive until the third stage on purpose. Early damage matters 
 
 - `bestiary/briarbundles.md` — the four field forms, and the folklore this is the end of
 - `places/briarwatch.md` — the fields it stands in
-- `factions/the-masons.md` — the built things along this border that were made on purpose
+- `factions and races/the-masons.md` — the built things along this border that were made on purpose

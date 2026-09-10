@@ -12,7 +12,7 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
 
-**Hidden somewhere in the cliffs is a Mason lodge.** The order itself is no secret — everyone here has heard of the Masons, and has an opinion about what their marks mean. The lodges are the secret, and this one has never been found by anyone in Glasslight Reach who wasn't already looking for it on purpose. The discipline is walking in, doing the work, and leaving before anyone asks what it was for. See `factions/the-masons.md`, `characters/mirel.md`.
+**Hidden somewhere in the cliffs is a Mason lodge.** The order itself is no secret — everyone here has heard of the Masons, and has an opinion about what their marks mean. The lodges are the secret, and this one has never been found by anyone in Glasslight Reach who wasn't already looking for it on purpose. The discipline is walking in, doing the work, and leaving before anyone asks what it was for. See `factions and races/the-masons.md`, `characters/mirel.md`.
 
 ## What It Looks Like
 
@@ -28,7 +28,7 @@ Outsiders call them Glasskin, or cruder, "glass-skins" — never what they call 
 
 They speak the common tongue like anyone else, day to day. But the cliffs sing — long fractures that hum when wind passes through them — and this people's own true name for themselves is made of that same sound. Not a word. A chord. No single voice can produce it alone; it takes a group actually singing together to pronounce it correctly, which means the truest thing they call themselves is something none of them can say by themselves, ever, only with each other. When the cliff is singing, they hum along, trying to match its tones. When it goes quiet too long, they hum anyway — filling the silence rather than leaving it sit empty. Wind runs its own rhythm underneath all of it, faster than the cliff's own voice and not always in step with it — tight and quick some days, long still gaps between breaths on others. It's on the slow days, when the gaps stretch out, that the Glasskin do the most filling in. The cliff has less to say. They say it instead.
 
-Some go further than matching tone for tone — reading the cliffsong for meaning, the way any people reads weather or stars, finding pattern and message in what the stone is doing. Not the same current as the People of Promise's own theology (`factions/people-of-promise.md`) — a separate, older relationship to a separate phenomenon, nature listened to rather than a thing to be saved from.
+Some go further than matching tone for tone — reading the cliffsong for meaning, the way any people reads weather or stars, finding pattern and message in what the stone is doing. Not the same current as the People of Promise's own theology (`factions and races/people-of-promise.md`) — a separate, older relationship to a separate phenomenon, nature listened to rather than a thing to be saved from.
 
 They speak gently and rarely interrupt, as if loud certainty could crack something — and once you know their true name requires more than one voice in harmony, that's not just a manner, it's the logic of what they actually are. The gentleness is a register, not an absence — rage, cruelty, grief, and control all live here too, they just have to fit through a town that flinches at volume. See `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
 
@@ -46,9 +46,9 @@ Ink, paper, sweet breads, minerals, roasted bird and other flying things — the
 
 ## The Gallery
 
-Half the wall is light maps — the Glasslight chapter's own specialty (`factions/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, same underlying limit as the silvered paper the rest of the economy runs on (see Economy, above) — light doesn't hold a hue forever no matter how carefully it's set. A light map is worked harder and holds longer than a plain export sheet, about a week before the color gives out, but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
+Half the wall is light maps — the Glasslight chapter's own specialty (`factions and races/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, same underlying limit as the silvered paper the rest of the economy runs on (see Economy, above) — light doesn't hold a hue forever no matter how carefully it's set. A light map is worked harder and holds longer than a plain export sheet, about a week before the color gives out, but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
 
-One piece is the exception, and it isn't for sale: a Tomás Kettlewright recording of the light-dance itself, Guild chapter window bait, and the finest piece of light cartography anyone in the Reach has seen. Not a survey of the cliff face — a recording of the thing out past it, taken with the same instruments and the same discipline, which is exactly why it's the showpiece. The Guild records the dancing lights; that is a stated part of the work (`factions/the-cartographers-guild.md`, Methods). Almost nobody records them *well*.
+One piece is the exception, and it isn't for sale: a Tomás Kettlewright recording of the light-dance itself, Guild chapter window bait, and the finest piece of light cartography anyone in the Reach has seen. Not a survey of the cliff face — a recording of the thing out past it, taken with the same instruments and the same discipline, which is exactly why it's the showpiece. The Guild records the dancing lights; that is a stated part of the work (`factions and races/the-cartographers-guild.md`, Methods). Almost nobody records them *well*.
 
 It fades the way everything here fades, and it doesn't, because Kettlewright won't let it — he comes back to retake it before the color gives out, the same discipline as a Mason recutting a post, which is as much why it hangs there as the skill is. Each retake is a fresh recording of a thing that was never the same twice, so the piece on the wall is subtly not the piece that was on the wall last season, and the apprentice will tell you that if you ask.
 
@@ -64,17 +64,17 @@ Hana is usually at that window, and nowhere else in the gallery. Doesn't browse,
 
 What lies beyond the northernmost waters. The name describes how it looks — sky and water dissolving into each other, no line where one ends — not what it is. What it is, is absolute. Nothing sails past it. Nothing fishes it. The ghost stories about the ships that once tried are older here than anywhere, and told less often.
 
-Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it. The People of Promise have their own reading of it, unconnected to what any cartographer thinks — see `factions/people-of-promise.md`, Philosophy.
+Cartographers describe a light-dance along that line — banded color that drifts and folds into itself, gone before anyone can sketch it accurately. Present often enough to expect, never predictable enough to time. Some call it something trying to form, out past where anything ever finishes forming. Nobody agrees, and nobody who'd actually know is inclined to argue about it. The People of Promise have their own reading of it, unconnected to what any cartographer thinks — see `factions and races/people-of-promise.md`, Philosophy.
 
 **The cliffs hold the light.** Quartz keeps the color of the last light that reached it — whatever spectrum the dance last threw at a face, that face becomes, and stays, until the dance throws something else. The cliffs are not pure quartz, and the mineral veins running through them have their own colors that don't change at all, so what anyone actually sees is the two blended: fixed mineral under shifting light, the same vein reading one color at the start of a season and another by the end of it. This is where the town's palette comes from. It is also the reason a survey here is a color record and not a line drawing, and the reason the instrument for making one is light.
 
 **And the stone keeps breaking.** Quartz is fragile — that is the same fragility the climb into town is built around (see Getting There, above). Sections shear off the Soft Edge on no schedule anyone has established, and a fresh break exposes stone that has never been lit: raw mineral, no retained color, sitting in the middle of a face that has been holding a hue for a season. Nothing announces it. A break is simply there on the next survey and wasn't on the last one, and everything the atlas said about that stretch is now describing rock at the bottom of the water.
 
-So the edge gets remapped, continually, and the map is a color map because color is the readable part. The light-cartographers record the edge and they record the dance that lights it. Nothing else in the kingdom changes this fast or this illegibly; training on it is training on the hardest version of a skill that gets used everywhere else at a gentler pace (`factions/the-cartographers-guild.md`, Structure).
+So the edge gets remapped, continually, and the map is a color map because color is the readable part. The light-cartographers record the edge and they record the dance that lights it. Nothing else in the kingdom changes this fast or this illegibly; training on it is training on the hardest version of a skill that gets used everywhere else at a gentler pace (`factions and races/the-cartographers-guild.md`, Structure).
 
 ---
 
-*Glasslight Reach is home to the People of Promise — mostly human pilgrims settled in a town that isn't theirs by blood, with a few Glasskin among them. See `factions/people-of-promise.md`.*
+*Glasslight Reach is home to the People of Promise — mostly human pilgrims settled in a town that isn't theirs by blood, with a few Glasskin among them. See `factions and races/people-of-promise.md`.*
 
 ---
 
@@ -82,12 +82,12 @@ So the edge gets remapped, continually, and the map is a color map because color
 
 - `quests/tide-pulls-back.md` — the adventure set here and on the cliffs
 - `bestiary/shockquills.md` — the quilled animals of the scree below the town, sorting the cliffs' own mineral veins out of the gravel
-- `factions/people-of-promise.md` — who lives here
+- `factions and races/people-of-promise.md` — who lives here
 - `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
 - `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
 - `characters/wren.md` — the Promise congregation
 - `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)
-- `factions/the-cartographers-guild.md` — headquartered here; related to the light-cartographers but a distinct institution
+- `factions and races/the-cartographers-guild.md` — headquartered here; related to the light-cartographers but a distinct institution
 - `characters/kess.md` — Tomás Kettlewright, who made the Gallery showpiece, already owes her a standing favor
 - `world/the-unheld.md` — the coastline threshold the Gallery's showpiece is checked against
 - `items/lightning-loop.md` — what the cliffs are holding

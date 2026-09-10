@@ -1,6 +1,6 @@
 # The Wallows — Descent
 
-A Tales Untold adventure structure. Experimental content. For location context, see `places/capital/the-wallows.md`. For the Demon Court, see `factions/demon-court.md`.
+A Tales Untold adventure structure. Experimental content. For location context, see `places/capital/the-wallows.md`. For the Demon Court, see `factions and races/demon-court.md`.
 
 ---
 
@@ -265,7 +265,7 @@ Salvage is a different question and is fair game. The labour level has debt-slav
 ## Related Documents
 
 - `places/capital/the-wallows.md` — location overview
-- `factions/demon-court.md` — Pazuzu, guard hierarchy
+- `factions and races/demon-court.md` — Pazuzu, guard hierarchy
 - `places/capital/underground-bazaar.md` — above
 - `characters/kess.md`, `characters/giblets.md` — whose rescue attempt this is
 - `world/seats.md` — Aurora, Seat of Love/Binding

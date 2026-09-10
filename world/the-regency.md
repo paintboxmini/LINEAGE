@@ -29,7 +29,7 @@ The Council keeps one bounty that predates every sitting member: the growth at t
 
 It is not a monster problem. The Council knows the boundary at the Weald's western edge is degrading, and knows the forest's aggressive phase is what degrades it (`bestiary/root-heart.md`, The Overgrowth Cycle). It cannot maintain that boundary — the Regency didn't raise it and doesn't tend it — so it buys time instead, hiring whoever will go end the phase early. The Heart re-forms afterward. That is why the order stands rather than closing.
 
-The Council knows perfectly well that the boundary is Mason work (`factions/the-masons.md`, Known Works). It is not coordinating with them, and the bounty is not a subcontract — the Masons take no commissions and would not take this one. The Regency is doing the only thing available to a body that understands the problem, can't perform the work, and can't direct the people who can: reduce the load on a line somebody else is maintaining, and say nothing to anyone about why.
+The Council knows perfectly well that the boundary is Mason work (`factions and races/the-masons.md`, Known Works). It is not coordinating with them, and the bounty is not a subcontract — the Masons take no commissions and would not take this one. The Regency is doing the only thing available to a body that understands the problem, can't perform the work, and can't direct the people who can: reduce the load on a line somebody else is maintaining, and say nothing to anyone about why.
 
 ## The Masons
 

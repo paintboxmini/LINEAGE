@@ -111,4 +111,4 @@ A GM should make the fence line visible early. The lesson lands when the party w
 - `bestiary/the-first-bundle.md` — the oldest one, and what the winters have been going to
 - `places/briarwatch.md` — the fields, the fences, and the Masons' line
 - `bestiary/fenwool.md` — the animal a Haywight's wool was sheared from
-- `factions/the-masons.md` — the other things built along this border to hold it
+- `factions and races/the-masons.md` — the other things built along this border to hold it
