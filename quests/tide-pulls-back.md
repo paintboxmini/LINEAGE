@@ -103,9 +103,31 @@ Stealth or direct: getting into Kaine's inner space to find what he's actually p
 
 The ceremony proceeds. Promise faithful gathering at the cliff edge, ocean below, the ritual bathing platform being lowered. Kaine's followers are positioned throughout the crowd.
 
-**Steve is here.** In the crowd, near Kaine's followers without being one of them, watching the ceremony with the focused attention of someone trying to look like he still belongs there. He has not bathed. He isn't waiting for his turn — there isn't one coming. He's just watching, the way he watches everything.
+**Steve is here.** In the crowd, near Kaine's followers without being one of them, watching the ceremony with the focused attention of someone trying to look like he still belongs there. He has not bathed. The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
 
-The party has seen him do the foolish thing. He looks exactly as unremarkable as he did then.
+Then he gets in the line for the platform.
+
+---
+
+### The Platform — Steve's Beat
+
+**This happens before Kaine raises his finger, and it is a real decision point, not a cutscene.**
+
+Steve steps onto the lowering platform. He backed out once already, in front of everyone, and he has spent every day since standing near people he isn't one of. This is him trying to fix that. Nobody recruited him for this; he queued up on his own.
+
+**Wren calls him back** (`characters/wren.md`). Not a scene, not a scream — Wren's usual register, the reasonable sentence that is also a door: *not tonight. You're not steady. Come down and we'll talk about when.* Every word of it is care, every word of it is true, and Wren has been saying versions of it to him for years, which is exactly why it does not land. Wren is right this time. Wren has spent too long being the person who decides for him to be able to reach him now.
+
+**Then the party has a window.** However long the table wants it to be. They can back Wren, argue the opposite, physically stop the platform, tell him what they know about the ring, tell him nothing and just talk to him, or let it happen. Anything is legitimate here, including doing nothing — this is not a check they can fail, it's a moment they can spend or not spend.
+
+**If nothing happens, Steve takes the bath under Kaine.** The platform goes down. That is the intended default, not a punishment for inaction — the world does not require the party's participation to keep moving, and Steve was always going to reach for this eventually.
+
+**What that costs is on the far side of the fight, not here.** The lightning starts while he is still down there and the pulleys seize; nobody is at the winch because everybody is being struck at. He is down much longer than anyone intended. What comes back up with him is `characters/steve-and-pip.md`.
+
+**So the encounter below has a second clock hanging off the cliff**, and the party may not know it's there. A party that spent the window and got him off the platform fights Kaine with one fewer thing going wrong. A party that didn't can still get him up mid-combat — the winch is reachable — but it competes directly with protecting the crowd, and that tension is the point rather than a design flaw.
+
+**Wren, either way.** If Steve comes down, Wren is relieved and instantly, visibly, begins deciding what he does next. If he doesn't, Wren watches the platform go and says nothing, which is the first time in this adventure Wren has been out of sentences.
+
+---
 
 Then Kaine raises his finger.
 
@@ -132,7 +154,7 @@ His followers are in this space. The ceremony crowd is in this space. The cliff-
 
 **The Promise community:** shaken. Kaine's followers have to reckon with what the miracle was. The moderates have to reckon with how far it got before anyone noticed. The Masons — quietly — have to assess the glyph situation.
 
-**Steve:** still in the crowd somewhere. Still Steve. He never bathed under Kaine and never will. His own, ordinary bathing — normal custom, nothing to do with any of this — is a different story entirely.
+**Steve:** whatever the party decided at the platform, and whatever they managed during the fight. If they got him off it, he is still Steve, standing somewhere unremarkable, and the thing he reached for is still out there waiting to be reached for again. If they didn't, he came back up changed and did not come back up alone.
 
 *His arc continues later — see `characters/steve-and-pip.md`.*
 

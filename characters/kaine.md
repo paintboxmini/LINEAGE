@@ -91,5 +91,5 @@ Range: Both
 ## Open
 
 - Where did Kaine get the Lightning Loop?
-- Whether Steve ever took the Communion. He backed out of bathing, but the Communion asks far less, and it's the exact rite designed to catch someone standing where he stands (`characters/steve-and-pip.md`, `quests/tide-pulls-back.md`).
+- Whether Steve ever took the Communion. He backed out of bathing once and then queued for the platform anyway at the Full Tide ceremony (`quests/tide-pulls-back.md`, The Platform — Steve's Beat) — the Communion asks far less than a bath and is the exact rite built to catch someone standing where he was standing in between, so it may be what kept him near Kaine's people at all.
 - Does the Storm Seat have a bearer? Greed could play a role in future development. Perhaps if Dakota plays he can receive the lightning loop.

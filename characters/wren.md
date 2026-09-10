@@ -11,4 +11,6 @@ The people inside that household are, by most visible measures, well cared for. 
 
 **What Wren has decided to stop thinking about:** whether the fear underneath all of it is really about the water, or about what happens to a household once everyone in it is allowed to come back changed on their own schedule instead of Wren's.
 
+**Where this lands at the table.** Steve steps onto the lowering platform at the Full Tide ceremony and Wren calls him back, in the usual register, and it does not work (`quests/tide-pulls-back.md`, The Platform — Steve's Beat). Wren is right this time. Years of being the person who decides is exactly why being right isn't enough, and if he goes down anyway Wren watches the platform drop and has nothing left to say — the first silence in the whole arc.
+
 **The declaration made on someone else's behalf.** Wren said something, once, that functioned like a binding statement but wasn't Wren's to make — a promise about someone else's future, spoken as if consent were a formality rather than the entire question. If the world extracts a cost for a declaration like that the way it does for an honest one, nobody has worked out yet who's actually meant to pay it — the one who spoke it, or the one it was spoken about, on their behalf, without asking.
