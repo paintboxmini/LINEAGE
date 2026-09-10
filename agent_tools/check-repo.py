@@ -19,8 +19,8 @@ Three kinds of rot this catches, all of which have actually happened:
      Green BRACE did exactly that to the Oracle deck.
 
 Usage:
-    python3 printing/check-repo.py            # report, exit 1 if anything is wrong
-    python3 printing/check-repo.py --quiet    # only print problems
+    python3 agent_tools/check-repo.py            # report, exit 1 if anything is wrong
+    python3 agent_tools/check-repo.py --quiet    # only print problems
 
 A line carrying `<!-- link-check: ignore -->` is skipped by check 1, for the
 rare case where a path is the subject of a sentence rather than a citation.
@@ -34,7 +34,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO, 'combatsimulations'))
 import cards as C  # noqa: E402
 
-SKIP_DIRS = ('printing', '.git')
+SKIP_DIRS = ('printing', 'agent_tools', '.git')
 DOC_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`')
 DECK = re.compile(r'Deck\s*\(([^)]*)\)', re.S)
 
