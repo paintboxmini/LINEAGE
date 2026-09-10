@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Mapping the In-Between.
+Finding the pockets of In-Between and charting the ground around them.
 
-The fact that four to five days travel time between major locations is even possible, is the Guild's work. Their maps show people what paths are the most reliable.
+The fact that four to five days travel time between major locations is even possible, is the Guild's work. A pocket is small and it drifts at its edges, so knowing where one sat last season is not the same as knowing where it sits now — which is why the labor is a rotation and not a finished map. Their maps show people what paths are the most reliable.
 
 ## Methods
 

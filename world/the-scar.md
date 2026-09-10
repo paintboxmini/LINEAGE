@@ -43,7 +43,7 @@ Between rungs, months of nothing. The rungs are not a countdown and should never
 ## Running It
 
 - **One observer at a time.** Tell that player privately, or say it out loud and let the others decide whether they believe it. Both work. Never confirm it to the group in the GM's own voice.
-- **In the In-Between**, primarily. Whether it can attend somewhere held is not established — if a GM wants one instance inside a settlement, that is a deliberate escalation and should cost the table something to have witnessed.
+- **Inside a pocket of In-Between**, primarily — which makes it rare by construction, since most travel never enters one. Whether it can attend somewhere held is not established — if a GM wants one instance inside a settlement, that is a deliberate escalation and should cost the table something to have witnessed.
 - **Never explain it.** No NPC knows what it is. No book has an entry. A party that asks the right question of the right person gets a real answer to a different question.
 - **It is not a threat clock.** Nothing is being counted. Nothing is arriving. If the table starts treating it as a timer, slow down rather than pay it off.
 - **The name is the party's problem.** "The Scar" is what this file calls it. Whether anyone in Eclipseria uses that word, or any word, is not established.

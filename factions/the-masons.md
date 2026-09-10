@@ -1,11 +1,47 @@
 # The Masons
 
+A secret order of wardwrights. Their work is holding a line against magical incursion — finding the seams where held reality presses on something it shouldn't touch, cutting glyphs that stabilize them, and leaving before anyone notices they were there. The places they protect are not told they're being protected. Most of them have never heard of the order at all.
+
+They are also masons in the ordinary sense, and among the finest alive at it. The glyphwork is what the order is *for*; the stonework is what makes the glyphwork possible. A ward cut into a badly set post fails with the post. Nothing they raise is temporary by intent — the fence posts at Briarwatch, the pillars under it, the lodges — and a Mason who can't cut a true joint isn't trusted with a glyph.
+
 ## Methods
 
 - Glyphs — carved into stone. To ward, stabilize, and protect. Cut with chisels, not drawn — chisel width and depth aren't a style choice, they're the whole tradeoff. A large chisel cuts shallow but wide, and the glyph it leaves hits hard and fades fast. A thin, sharp chisel cuts deep and narrow, and what it leaves lasts far longer at a fraction of the strength. Chalk and string mark the cut before the chisel ever touches stone.
 
 - Constrained magic — Mason practice is disciplined, systematic, and deliberately limited in scope.
 
+- Maintenance, not installation. A glyph fades. The work is a rotation kept without interruption for as long as the order has existed — walk the line, recut what's thinned, walk back out. Closer to a rite kept on schedule than a chore fit in when there's time.
+
+- The whole method assumes a threshold: something that holds still long enough to be measured, cut against, and checked on later. Everything the order knows how to do rests on that assumption. Where it doesn't hold, they have nothing (see The Coil, below).
+
+## Known Works
+
+- **The Briarwatch line** — one threshold among the many they tend, held to with the same unbroken regularity as all the others. The watchtower ruins and the giant fence at Briarwatch's western edge are one project, not two: a boundary raised against Turnroot Weald's encroachment, carving out the ground Briarwatch now farms. The larder fence is one stretch of that giant fence, not a separate structure. The Masons still visit periodically for maintenance and repair. What they didn't plan for: a section of their plain stone perimeter has been slowly overgrown with thorn-brush the local tollbirds dragged in from the Weald itself, generation over generation, until it became a fence within their fence. Briarwatch has tended the outer larder-fence stretch for generations too, believing it's simply old, without knowing why any of it started. See `places/briarwatch.md`, The Larder Fence, and `places/turnroot-weald.md`. **The same line extends below ground** — the Western Property sits directly against this same threshold, and the Masons' work there was never limited to the surface: a reinforced chamber and at least one support pillar underground, holding back the same pressure the watchtower line holds back above. One pillar has since failed — the actual cause behind the Western Property sinkhole, not just water and limestone alone. The Masons don't know yet. **The physical encroachment was never the whole reason the line went up.** The Masons understood, when they raised it, that a sentient forest's growth left fully unchecked behaves the way any unchecked growth does: parasitically, consuming balance rather than existing inside it. The watchtower line doesn't just hold the Weald's edge back — it holds the forest's entire natural expansion back **on purpose**, and blocked growth has to go somewhere. Redirecting it inward, toward the Root Heart, was the design: a slow, cyclical release valve the order judged a containable cost against letting the whole forest spread unchecked. The Root Heart's dormant-to-Overgrowth cycle, currently peaking aggressive because outward was never an option while the line held, is not a side effect they stumbled into. It's the fence working as intended — Rootstalkers hunting, forest-people dying, and all. See `bestiary/root-heart.md` and `characters/aege.md`, Story Hook, for what the release valve costs on the ground.
+
+  **The failed pillar and the sinkhole above it are the one consequence in this whole picture the Masons genuinely didn't plan for and still don't know about** — everything else here (the redirected growth, the Root Heart's cycle) was the design working as intended; that failure wasn't. **The stone for both projects — the underground pillar and the giant fence posts topside — came from the same source**: a small quarry off the Living Chamber itself, cut once and never revisited (`quests/hollow-below-briarwatch.md`, Transition Zone, the Quarry Offshoot). See `quests/hollow-below-briarwatch.md`, Transition Zone, and Surface Layer — Western Property Sinkhole.
+
+- **The Soft Edge glyphs** — cut into the quartz cliffs at Glasslight Reach, where the northernmost water stops behaving and the light-dance runs along the line (`places/glasslight-reach.md`, The Soft Edge). This one is the order's only purely preventative work. Nothing has come across there. Nothing is pressing on it. But the light-dance reads, to anyone trained to read a seam, like something trying to form — and the order does not wait to find out what finishes forming out past where nothing ever finishes. The glyphs go in against a threshold that hasn't opened, and get recut on the same rotation as every line that has. Cover for this work is the Lodge in the cliffs, and cover is the reason nobody in Glasslight Reach knows the cliffs are warded. The stabilization glyphs are close enough to the surface that a determined person can find them by following the marks — Mirel did exactly that (`characters/mirel.md`). A hostile storm on those cliffs would find them too (`quests/tide-pulls-back.md`).
+
+- **The lodges** — the order's own houses, and the best stonework they do, because a lodge is the one building they raise for themselves and the only one with nobody to hide it from. Hidden by placement rather than by disguise: set into seams and cliff faces, reached by ground that takes training to even read as a way in. The Lodge at the Soft Edge is the one currently kept (`characters/sebastian.md`). How many others there are, and how many still have anyone in them, is not established.
+
+- **The Coil** — not one of the ones they tend; a failure, not a success. Early enough in the order's history that it survives only in the record, not in anyone's memory: they found something ancient in the deep lake east of Vulture's Nest and read it as a geological threshold like any other seam. It wasn't. It was a carrier — a living thing marked by direct exposure out in the Unheld itself, the same way the old ghost-story sailors came home wrong, except it never stopped being what it came home as. Full history at `places/the-coil.md`, What Happened To It. They tried to stabilize it with their usual methods anyway — the entrance arch survives; whatever else they attempted mostly didn't. It wasn't a boundary that would hold still to be measured. It was alive, restless, and it answered them instead. The order's own record calls it closed — not worth the cost of trying again, filed the way a failure gets filed. Officially, there are no more maintenance visits. Unofficially: Sebastian still goes back. Not sanctioned by anyone left to sanction it, not stopped either — inherited as an old obligation from a line that's had nobody else to check it against for longer than anyone currently walking can say. At least one of the original attempt never left at all. See `places/the-coil.md`, GM Secret, and `bestiary/wall-reader.md`.
+
+## The Order Now
+
+Small enough that the word *order* flatters it. The rotation is still walked, the lines are still recut, and there are not many hands left doing it.
+
+**Sebastian is the only one written.** A Head Mason, last of his line, keeper of the Lodge at the Soft Edge (`characters/sebastian.md`). He tends the Soft Edge, the Briarwatch line, and — off the books — the Coil.
+
+**Mirel is the first new one in a long time**, and she wasn't recruited so much as found already doing it: dreaming a glyph, following the marks to the seams, scratching the shape into rock from memory. Sebastian gave her a chisel and no lessons (`characters/mirel.md`).
+
+A handful of others exist. None of them are written yet, and nothing outside this file depends on who they are.
+
 ## Relationship to Other Factions
 
 The Masons and the Final Current represent opposing orientations toward the same phenomenon. The Masons see the Unheld as a threat to be fought off. The Final Current see it as potential to be embraced. They are not openly at war. They are not allies.
+
+## Open
+
+- The handful of living Masons beyond Sebastian and Mirel — names, whereabouts, whether any of them still answers to the others
+- Whether the order has any structure left above Sebastian, or whether *Head Mason* is now a title with nothing under it
+- Which glyph posts out in the world are theirs, and which were cut by somebody else

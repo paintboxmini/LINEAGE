@@ -53,6 +53,6 @@ Let the players actually sit in the quiet before anything happens. The silence i
 - `bestiary/fermata.md` — the guardian
 - `cards/fermata.md` — its signature cards
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
-- `world/eclipseria-overview.md` — the In-Between, and how little of the world is actually named
+- `world/eclipseria-overview.md` — the In-Between, and the pockets of it a route has to avoid
 - `places/capital/underground-bazaar.md` — the Cartographer, one plausible way in
 - Locked and Sealed (Fermata's THE HELD NOTE and SEALED CHORD, `cards/fermata.md`) are no longer `rules/card-glossary.md` keywords. Both are now defined in full on the cards themselves: Locked means that card cannot be played, and here it holds until the party clears the Silent Choir rather than clearing at the end of combat — the same shape `places/the-coil.md` uses for its own delve, scoped to this place instead. Sealed shuts off the target's equipped item passives until combat ends. Reveal Hand, cited above, is retired outright.

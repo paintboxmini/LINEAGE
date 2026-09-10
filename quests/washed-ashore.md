@@ -37,7 +37,7 @@ Sections of the river turn to coral — Muted colors here, not tropical: dusty p
 
 ## The Walk — Crossing the In-Between
 
-Everything past the river crossing is the In-Between (`world/eclipseria-overview.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road.
+The shoreline to the Roadhouse is a day of unnamed but unremarkable country. What makes it the Walk is one pocket of In-Between sitting across it (`world/eclipseria-overview.md`) — a stretch the party has no way to know is coming and no route around, because nobody has surveyed a road out here to route them. It is bounded: they enter it, they cross it, and the far side is ordinary ground again. The Roadhouse is the first real haven past it.
  
 ---
 
@@ -87,7 +87,7 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
 - `bestiary/flapjack-octopus.md` — the river crossing's creature
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
-- `world/eclipseria-overview.md` — the In-Between, the ground the whole Walk section crosses
+- `world/eclipseria-overview.md` — the In-Between, and the pocket of it the Walk crosses
 - `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid

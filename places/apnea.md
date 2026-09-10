@@ -35,7 +35,7 @@ The people are not confused. This is normal to them. The party is the strange th
 
 The village stays warm and lit. The outer landscape does not.
 
-Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's what's left of the same thinness the In-Between wears everywhere on the waking continent (`world/eclipseria-overview.md`) — Name, Price, and Distance going unheld — except most of the In-Between doesn't sit twenty feet from where people sleep. Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
+Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's the same thinness the In-Between carries inside its own pockets (`world/eclipseria-overview.md`) — Name, Price, and Distance going unheld — except a pocket is normally something you route around, and this one starts twenty feet from where people sleep. Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
 
 Villagers don't go out after dark — not because they were told not to, but because everyone learned not to a long time ago.
 
@@ -84,7 +84,7 @@ Resolving the boundary for a session buys the village one calm stretch, nothing 
 ## Related Documents
 
 - `places/capital/underground-bazaar.md` — where Lily is found
-- `world/eclipseria-overview.md` — the In-Between, the unmapped ground Apnea's boundary is made of
+- `world/eclipseria-overview.md` — the In-Between, and what its pockets are made of
 - `world/creation-myth-the-three-cuts.md` — Name, Price, Distance
 - `world/geography-overview.md` — Apnea's position, its own lake south-southwest of Vulture's Nest
 - `world/tonal-bible.md`

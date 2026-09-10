@@ -16,7 +16,11 @@ The world responds to those who pay attention. Every region has its own logic, i
 
 The known world is a continent surrounded by the Unheld Ocean — a vast, lightless expanse that does not obey the rules of held reality. It is the hard edge of the world. Inside that edge, a web of rivers and lakes laces the continent, and a strong sailing culture lives on those rivers, connecting places the roads cannot easily reach.
 
-Everything that isn't a named place is the In-Between — partially mapped, with just enough glyph posts to slow the instability. Where terrain features of far off locations blend together. It is most of the world by area.
+Between the named places is ordinary ground — road, river, field, and unremarkable wilderness, walked by ordinary people who get where they were going. Scattered through it, in pockets, is the **In-Between**: ground where the founding wounds sit closest to the surface and Name, Price, and Distance stop being reliably held.
+
+A pocket is small. A stretch of road, a bend of river, a few hours of bad country — bounded enough that the far side is usually visible from the near one. It doesn't travel, but it drifts at the edges, which is why the known ones are surveyed on a rotation rather than mapped once. Inside, terrain features of far-off places blend together and the distance walked isn't always the distance covered. The worst of the charted ones carry glyph posts to slow the instability.
+
+Most journeys never touch one. Knowing which pockets are where, and which routes thread between them, is the Cartographers Guild's entire trade (`factions/the-cartographers-guild.md`) — and the reason a four-to-five day crossing between major locations is possible at all.
 
 ## Survival Tone
 
