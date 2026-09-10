@@ -17,9 +17,9 @@ You can tell how charged one is from a distance. The quills stand further out, t
 
 **Deck (6 — 1 Blue / 2 Red / 3 Green):** RAISED QUILLS *(blue)* · FULL DISCHARGE, SPARK OF VIOLENCE *(red)* · TUMBLE, SHADE AWAY, DISORIENT *(green)*
 
-**Passive — Static Build:** At the start of each of its turns, a Shockquill gains 1 Charge, to a maximum of 5. Charge is public information — everyone at the table can see how far the quills are standing.
+**Trait — Static Build:** At the start of each of its turns, a Shockquill gains 1 Charge, to a maximum of 5. Charge is public information — everyone at the table can see how far the quills are standing.
 
-**Passive — Grounding:** When a Shockquill is hit by a melee attack, it loses 1 Charge and the attacker takes 2 unpreventable damage. A Shockquill at 0 Charge is briefly harmless and knows it.
+**Trait — Grounding:** When a Shockquill is hit by a melee attack, it loses 1 Charge and the attacker takes 2 unpreventable damage. A Shockquill at 0 Charge is briefly harmless and knows it.
 
 ---
 

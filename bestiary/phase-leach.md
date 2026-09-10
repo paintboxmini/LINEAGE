@@ -25,7 +25,7 @@ Near the Echoing Plaza, it may absorb the ambient screams from the air and proje
 
 ---
 
-## Passives
+## Traits
 
 **Blink**
 At the start of each of its turns, the Phase-Leach gains Evade.

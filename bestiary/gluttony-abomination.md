@@ -29,7 +29,7 @@ Its presence seems to warp space slightly. Reality bends around its appetite.
 
 ---
 
-## Passives
+## Traits
 
 **Layered Flesh**
 Armour 2. There is too much of it between the outside and anything that matters.

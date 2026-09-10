@@ -24,7 +24,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 ## Wild Magic Summoning
 
-Confirmed mechanic, a line on the character sheet rather than a Skill or Passive:
+**This is a Trait**, not a Skill and not a Passive (`rules/character-creation.md`, Passives and Traits) — a line on the sheet that is simply true, costing no Action and taking no slot. It doesn't compete with STRONGJAW or HACKLES RISE for either of his two Passives.
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
@@ -38,7 +38,6 @@ Still open:
 
 - Whether HERE BOY and LET'S GO are the *only* two triggers.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
-- Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
 
 ## Passives
 

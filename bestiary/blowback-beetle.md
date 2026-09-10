@@ -13,9 +13,9 @@ You hear one before you see it. The intake is a long wet drag of air, and then n
 
 **Deck (7 — 1 Blue / 4 Red / 2 Green):** BRACE THE LEGS *(blue)* · BLOWBACK, TRAMPLE, PUSH, ATTRITION *(red)* · GULP, ABIDE *(green)*
 
-**Passive — Armour 2:** Plated, and the plates overlap. Chip damage does very little.
+**Trait — Armour 2:** Plated, and the plates overlap. Chip damage does very little.
 
-**Passive — Concussive Vent:** Whenever a Blowback Beetle successfully attacks, the defender is pushed to the Backline. It does not choose this and cannot decline it — the blast goes where the mouth is pointed.
+**Trait — Concussive Vent:** Whenever a Blowback Beetle successfully attacks, the defender is pushed to the Backline. It does not choose this and cannot decline it — the blast goes where the mouth is pointed.
 
 ---
 

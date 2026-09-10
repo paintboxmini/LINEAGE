@@ -23,7 +23,7 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 **Deck (6 — 2 Blue / 3 Red / 1 Green):** BLANK, FELT YOU COMING *(blue)* · CLOSE IN, IRON GRIP, SLITHER LUNGE *(red)* · DOWNWARD *(green)*
 ---
 
-## Passives
+## Traits
 
 **Dark-Adapted**
 The Descended see perfectly in total darkness. Players without a light source have Weak on attacks against them.
@@ -47,7 +47,7 @@ The Descended seizes a Staggered character and pulls them toward the far section
 **Primary Drive — Pull to Depth**
 The Descended are not hunters in the conventional sense. Their drive is to bring things deeper. A Collapsed character is immediately prioritized — the Descended will move toward them and drag them toward the fissure without contest. A Collapsed character can still defend themselves against attacks (`rules/combat.md`, While Down), but cannot change position under their own power — so the drag itself is uncontested no matter how well they're covering. How quickly they reach the fissure is DM judgment. Past it, they are in the back section. Further than that, they are in the deep system. The GM determines what that means.
 
-**Pack Surge** *(passive — 3+ Descended present)*
+**Pack Surge** *(Trait — 3+ Descended present)*
 When three or more Descended are active in the encounter, each gains +1 to attack rolls. They coordinate without speaking.
 
 ---

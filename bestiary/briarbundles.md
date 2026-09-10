@@ -39,7 +39,7 @@ Bundles of sheared fenwool tied upright with twine. At dusk they are simply not 
 
 **Deck (5 — 1 Blue / 1 Red / 3 Green):** DUSK COUNT *(blue)* · TWINE AND WEIGHT *(red)* · NOT WHERE YOU LEFT IT, SHADE AWAY, MIRROR STEP *(green)*
 
-**Passive — Never While Watched**
+**Trait — Never While Watched**
 A Haywight does not move while anyone is looking at it. Out of combat this is absolute: it is always exactly where it was, and it is never where it was. In combat, at the start of each cycle, if the Haywight was not attacked during the previous cycle it changes position and gains Evade.
 
 **Tactical Purpose**
@@ -56,7 +56,7 @@ Two poles tied into a cross, wrapped in old work clothes. No face. When one turn
 
 **Deck (6 — 2 Blue / 1 Red / 3 Green):** FACING YOU NOW, UNNAME *(blue)* · TWO POLES *(red)* · NO FACE, ADAPT, INSTINCT *(green)*
 
-**Passive — No Turning**
+**Trait — No Turning**
 A Tatterman changes position freely between turns, at no action cost, as often as it likes. Never mid-turn — nothing it does interrupts an attack already in flight. It simply was facing the other way, and now it is facing you, and there was no point at which it turned.
 
 **Tactical Purpose**
@@ -73,10 +73,10 @@ Dense tangles of thorn vine that have learned a human silhouette, because a huma
 
 **Deck (7 — 1 Blue / 3 Red / 3 Green):** THE EASIEST SHAPE *(blue)* · CLOSE THE TANGLE, IRON GRIP, GROUNDING STANCE *(red)* · THORNFAST, BIND, ROOTED OATH *(green)*
 
-**Passive — Thorns 2**
+**Trait — Thorns 2**
 Permanent, from the first moment of combat. Everything that touches it keeps some of it.
 
-**Passive — Learned the Shape**
+**Trait — Learned the Shape**
 At distance and in poor light a Briarbound reads as a person standing in a field. A party that has not identified it — Senses or Reason, DC 13 — grants it the first attack of the encounter uncontested.
 
 **Tactical Purpose**
@@ -93,10 +93,10 @@ Old field guardians, built up over generations by every farmer who worked a give
 
 **Deck (10 — 2 Blue / 5 Red / 3 Green):** GENERATIONS OF HANDS, FORESEE *(blue)* · THE FIELD IS THE LINE, ENDURE, BRACE, GORE, DIG IN *(red)* · KEEPING PEOPLE OUT, SHARED BURDEN, PATIENCE OF STONE *(green)*
 
-**Passive — Armour 2**
+**Trait — Armour 2**
 Layered by hand, one season at a time, for longer than anyone alive.
 
-**Passive — Does Not Pursue**
+**Trait — Does Not Pursue**
 A Mossking never leaves the field it was built for. Cross the fence and it stops at the fence. It will stand there as long as you care to look at it.
 
 **Tactical Purpose**

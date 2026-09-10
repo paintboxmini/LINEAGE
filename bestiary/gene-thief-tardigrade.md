@@ -15,7 +15,7 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 
 ---
 
-## Passives
+## Traits
 
 **Genetic Absorption**
 Track each card color separately throughout the combat.

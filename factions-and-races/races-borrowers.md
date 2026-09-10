@@ -12,11 +12,13 @@
 
 **They are already trading with Briarwatch and neither side knows it.** Roots and tubers work down through cracks from the fields above and get harvested where they hang — one-directional, unnoticed, and running for generations (`places/briarwatch.md`).
 
-## Passive
+## Trait and Passive
 
-Not written. **Burrow** exists as a creature ability on the stat block, which is a different thing from a player-facing Passive and shouldn't be copied across without being repriced — it grants untargetability for a round plus a damage rider, and no Passive in the corpus does anything close to that.
+**Listening Post** is their Trait — at the start of its turn a Borrower may Scry 1 of any one combatant's deck, no Action spent (`bestiary/borrower.md`). The clay bowls pressed to the walls aren't decoration.
 
-Reading stone by feel is the likelier candidate: it's innate, it's specific, and it has a natural Applies When that fails the moment there's no stone.
+**BURROW is a card**, not a Trait — it spends an Action, so it was never anything else (`cards/borrower-hollow.md`).
+
+**No player-facing Passive is written yet.** Reading stone by feel is the likeliest candidate: innate, specific, and with a natural Applies When that fails the moment there's no stone to read.
 
 ## Open
 

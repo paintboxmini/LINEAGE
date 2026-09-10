@@ -9,9 +9,9 @@ Small and quick. Found in packs. Crystal knives and arrowheads worked from harve
 
 
 **Deck (4 — 1 Blue / 1 Red / 2 Green):** WARNING SHOT *(blue)* · CRYSTAL EDGE *(red)* · PACK LOGIC, DELAY *(green)*
-**Passive — Scatter:** When a Chitterer takes damage, it and all Chitterers in the same passage gain Evade until the start of their next turn.
+**Trait — Scatter:** When a Chitterer takes damage, it and all Chitterers in the same passage gain Evade until the start of their next turn.
 
-**Passive — Noise:** If a Chitterer is attacked and survives, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per cycle regardless of how many Chitterers are attacked.
+**Trait — Noise:** If a Chitterer is attacked and survives, its distress chittering counts as combat noise for The Coil's pressure track (+1). Applies once per cycle regardless of how many Chitterers are attacked.
 
 ---
 

@@ -27,5 +27,9 @@ Range: Ranged
 
 Blue and Mind because it's a read of the environment rather than a change of the body — the skin does the easy half, and the work is knowing what to stand against and when to stop moving. Ranged because it's already failed if anything is close enough to touch.
 
-**On the die.** `rules/character-creation.md`, Passives, says a Passive that gives up Both for one Range *can* take d6 instead of the d4 default. This one takes the restriction and stays at d4 — a deliberate step below what the rule allows, on the grounds that its Applies When is far looser than STRONGJAW's *something a jaw can close on* and should be priced for it. That pricing lever isn't written into the rule yet; right now the corpus offers no other reason to take Ranged d4 over Ranged d6.
+**On the die.** The rule allows d6 for giving up Both, and this takes d4 anyway, for two reasons that both point the same way.
+
+**The name is doing most of the work.** A Passive is never spent, so its name grants Advantage forever on every check it plausibly supports (`rules/resolution.md`, Advantage & Disadvantage) — and *adaptive camouflage* plausibly supports an enormous amount: hiding, tailing, holding still, going unremarked in a room, setting an ambush. STRONGJAW's name buys grip and biting. That gap is worth more than two pips.
+
+**And Ranged is the cheaper restriction.** Giving up Both to be Melee-only costs real access — Melee needs the Frontline on both sides. Ranged-only gives up much less (`rules/combat.md`, Range). A d6 is priced for a restriction that bites; this one barely does. Between a name that broad and a restriction that soft, d4 is the easy call rather than a concession.
 

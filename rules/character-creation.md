@@ -163,13 +163,27 @@ Each Passive:
 
 Once concealment is resolved, a Passive plays exactly like any other card: `rules/combat.md`, Attack Resolution.
 
+### Passives and Traits
+
+**A Passive is a card. A Trait is a rule.**
+
+A **Passive** is the card-shaped thing described above: printed colour, Range, die, an Applies When, sitting face up in its own zone. Playing one spends your Action exactly like playing a card from hand. What it saves you is the card, never the turn.
+
+A **Trait** is rules text that is simply true. It costs no Action, is never played, has no colour or die, and is never a choice — Armour 2, a bite that re-grants Rooted, a nose that can't be Blinded, a spirit's rolled HP. If a thing spends an Action, it is not a Trait; it is a card, and it should be written as one.
+
+**Creatures have Traits, not Passives** (`bestiary/`). Every creature stat block uses that word now. The distinction matters because a creature's innate rules and a player's Passive were never the same object and shared a name for no reason: a Minotaur's Relentless has no die, no colour, and nothing to play it on.
+
+**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`experimental/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
+
+---
+
 ### Passives, Skills, and Ancestry
 
 **Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`experimental/passives.md`, AMALGAMOUS FORM).
 
 **A Passive you can't justify becomes a Skill instead.** A human with a real natural ability takes the corresponding Passive like anybody else. A human without one isn't short a resource — they take an extra Skill in its place, and a character who can justify neither Passive takes four Skills. Trained breadth is what a body that doesn't do anything unusual has instead.
 
-*(The exchange is one Skill per unjustified Passive. That rate is an inference from the two-and-two default rather than something playtested — if a Passive should be worth more than one Skill, this is the line to change.)*
+The exchange is **one Skill per unjustified Passive**, so every character leaves creation holding four of something.
 
 **Nothing about this is a hard restriction list.** No file says which Passives a race may take, and none should. The check is the same one every signature card gets: does the fiction actually support this, for this character, from this people. A Glasskin taking something other than ADAPTIVE CAMOUFLAGE is fine if they can support it. A human taking a Passive is fine if they can support it.
 

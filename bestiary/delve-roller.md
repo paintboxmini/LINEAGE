@@ -21,7 +21,7 @@ Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vib
 
 ---
 
-## Passive — Rolled Shell
+## Trait — Rolled Shell
 
 **Armour 1** (`rules/card-glossary.md`). Reduce all incoming attack damage by 1, every attack, all fight.
 

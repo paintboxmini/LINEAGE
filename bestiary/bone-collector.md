@@ -35,7 +35,7 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, BLANK, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*
 
-**Passive — Stitched Armor:** Armour 2.
+**Trait — Stitched Armor:** Armour 2.
 
 **Appearance:** A massive caterpillar wearing a patchwork case of large insect husks, leather bracers, bone fragments, weapon hilts, and jewelry — all precisely woven together.
 

@@ -74,7 +74,7 @@ ROOTHEARTS PULL
 
 ---
 
-Passive — Pulse
+Trait — Pulse
 At the start of each of the Root Heart's turns, all Frontline enemies take Pulse damage — 1, escalating per Retaliation Phase below.
 
 *The fibrous mass contracts. Sap seeps thick and dark. The forest tightens.*

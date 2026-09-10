@@ -68,11 +68,11 @@ Inspiration for his beliefs: One afternoon, low tide, Kaine hidden up in the cli
 Mind 5 / Body 3 / Soul 6  — HP 20
 Creature Threat Rating: 14
 
-Passive — The Loop (3/combat):** On a successful attack lightning arcs to another creature in the same position for d6 damage. Kaine chooses which creature the arc hits.
+Trait — The Loop (3/combat):** On a successful attack lightning arcs to another creature in the same position for d6 damage. Kaine chooses which creature the arc hits.
 
-Passive — Feverous Rally: Final Current believers in the encounter gain Deadly on their first attack.
+Trait — Feverous Rally: Final Current believers in the encounter gain Deadly on their first attack.
 
-Passive — Volatile: When Kaine drops below half HP, The Loop loses its targeting — lightning targets are chosen randomly for the remainder of the combat.
+Trait — Volatile: When Kaine drops below half HP, The Loop loses its targeting — lightning targets are chosen randomly for the remainder of the combat.
 
 ---
 
