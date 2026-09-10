@@ -115,7 +115,11 @@ Then he gets in the line for the platform.
 
 Steve steps onto the lowering platform. He backed out once already, in front of everyone, and he has spent every day since standing near people he isn't one of. This is him trying to fix that. Nobody recruited him for this; he queued up on his own.
 
-**Wren calls him back** (`characters/wren.md`). Not a scene, not a scream — Wren's usual register, the reasonable sentence that is also a door: *not tonight. You're not steady. Come down and we'll talk about when.* Every word of it is care, every word of it is true, and Wren has been saying versions of it to him for years, which is exactly why it does not land. Wren is right this time. Wren has spent too long being the person who decides for him to be able to reach him now.
+**Wren calls him back** (`characters/wren.md`). Steve's parent, and the reason he has never bathed — not forbidden, never quite permitted, one reasonable sentence at a time, for as long as he has been old enough to ask. Not a scene, not a scream, just the usual register: *not tonight. You're not steady. Come down and we'll talk about when.* Every word of it is care, every word of it is true, and he has heard versions of it his entire life, which is exactly why it does not land. Wren is right this time. Wren has spent too long being the person who decides for him to be able to reach him now.
+
+**What the crowd sees is a devoted parent.** What Steve is doing is the only argument he has ever been in.
+
+**And there is a pledge underneath it.** Wren once declared, in front of the congregation, something in the shape of *whenever he goes to the water, I go with him* — a binding statement about someone else's future, spoken as though his consent were a formality (`characters/wren.md`). He is on the platform. Wren is not going down. The GM does not need to explain any of that here, and probably shouldn't; it pays off on the far side, in what comes back up.
 
 **Then the party has a window.** However long the table wants it to be. They can back Wren, argue the opposite, physically stop the platform, tell him what they know about the ring, tell him nothing and just talk to him, or let it happen. Anything is legitimate here, including doing nothing — this is not a check they can fail, it's a moment they can spend or not spend.
 
@@ -125,7 +129,7 @@ Steve steps onto the lowering platform. He backed out once already, in front of 
 
 **So the encounter below has a second clock hanging off the cliff**, and the party may not know it's there. A party that spent the window and got him off the platform fights Kaine with one fewer thing going wrong. A party that didn't can still get him up mid-combat — the winch is reachable — but it competes directly with protecting the crowd, and that tension is the point rather than a design flaw.
 
-**Wren, either way.** If Steve comes down, Wren is relieved and instantly, visibly, begins deciding what he does next. If he doesn't, Wren watches the platform go and says nothing, which is the first time in this adventure Wren has been out of sentences.
+**Wren, either way.** If Steve comes down, Wren is relieved and instantly, visibly, begins deciding what he does next — the pattern reasserting itself inside a single sentence of having been right. If he doesn't, Wren watches the platform go and says nothing, which is the first time in this adventure Wren has been out of sentences, and the first time in Steve's life that a decision about him has been made without Wren in it.
 
 ---
 
