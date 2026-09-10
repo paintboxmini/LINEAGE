@@ -13,6 +13,10 @@
 # Usage:
 #   ./generate-all.sh          → rebuild everything, report changes
 #   ./generate-all.sh --check  → same, but exit 1 if anything was stale (CI-ish)
+#
+# Runs check-repo.py first: broken document references, decklists naming cards
+# that don't exist, and duplicate card names. All three are silent failures
+# that only a scan finds, and all three have bitten this repo before.
 
 set -uo pipefail
 cd "$(dirname "$0")"
@@ -23,6 +27,9 @@ CHECK=0
 CARD_SETS=(core briarwatch mason frost steele oracle oracle-expansion items items-field washed-ashore)
 RULES_DOCS=(packet play-reference)
 CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
+
+echo "Checking cross-references..."
+python3 check-repo.py --quiet || { echo "  FAILED: check-repo.py found problems (above)"; exit 1; }
 
 echo "Regenerating card sheets..."
 for s in "${CARD_SETS[@]}"; do

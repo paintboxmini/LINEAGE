@@ -13,10 +13,13 @@ Each seasoning carries one bonus, and that bonus is added to GRIND SHOT's Effect
 | **Cinder flake** | Deal +3 damage | `bestiary/scorchback-beetle.md` — the Cindersink |
 | **Hush petal** | Defender gains Rooted | `bestiary/hush-bloom.md` — the Turnroot Weald |
 | **Quill grind** | Apply Initiative Shift -2 to the defender | `bestiary/shockquills.md` — the Glasslight scree |
+| **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Ashfall scrub |
 
 **Ingredients don't have a colour.** An early draft coded them Red/Blue/Green to match the stat colours, and that was a mistake — it implied a seasoning could only go on a card of its own colour, which is not how any of this works. A seasoning is a seasoning. What it does is what it does, and it does that regardless of what card it rides on.
 
 Deliberately one bonus each, and deliberately small. GRIND SHOT is already a d8 on Kevin's best stat; the load is a rider on a good card, not the reason the card is good. The spread across Vulnerable / damage / Rooted / initiative means the choice of load is a read on the fight rather than a strict upgrade path — cinder flake is not simply the best one.
+
+**Bellows dust does not separate you from the target — it relocates the fight.** GRIND SHOT already moves Kevin to the Backline, so a bellows round sends both of you there together. That reads like a bug and isn't one: it is how he peels a single enemy off the party. He walks into the Frontline, shoots one thing, and the two of them arrive in the Backline while everyone else keeps fighting where they were. The load is for extraction, not for making space.
 
 **Plain rounds are the floor and they matter.** He is never out of ammunition, only out of *charged* ammunition, which is what makes restocking a story rather than a bookkeeping problem (`experimental/kevin.md`, Supply and restocking).
 
@@ -58,7 +61,11 @@ Its gate is the sharpest of the four: the charge sets in the quills at the momen
 
 **Hush Bloom.** **Built** — `bestiary/hush-bloom.md`. A pale flower of the Turnroot Weald's deep shade that only opens in genuine stillness and closes at the first vibration. Dried petals keep indefinitely and impart a calm, numbing-sweet flavor with a soft green luminescence in liquid — the base of Kevin's better drinks as much as a grinder load. Its gate is patience rather than danger, which is the exact inverse of the Scorchback's, and a cook who reliably produces both is proving something.
 
-All four are real now, and each is gated a different way: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, and the Shockquill is **dangerous to harvest correctly**. Four ingredients, four different reasons a party might not have one.
+**Blowback Beetle.** **Built** — `bestiary/blowback-beetle.md`. The Scorchback's dog-sized cousin: same volatile oils, swallowed instead of vented, held in a bellows organ behind the jaw and expelled forward through the mouth. It does not burn you, it hits you and you are somewhere else. Ground, the organ yields **bellows dust**.
+
+Its gate is the bluntest of the five and the only one that is simply a fight: nineteen HP behind Armour 2 that shoves your front rank into the back rank every time it connects. No dawn timing, no sitting still, no charge threshold to judge — you just have to beat it.
+
+All five are real now, and each is gated a different way: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, and the Blowback simply has to be **beaten in a fight**. Five ingredients, five different reasons a party might not have one — and between them the loads now cover damage, Vulnerable, Rooted, initiative, and forced movement, which is the whole vocabulary a shot can speak in.
 
 ## Open questions
 
