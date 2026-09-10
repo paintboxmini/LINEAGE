@@ -114,6 +114,8 @@ The danger in Briarwatch isn't strange. It's wet soil and old limestone and thin
 
 The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. The same line extends below ground: a reinforced chamber and support pillar under the Western Property, holding back the same pressure the watchtower line holds back above. That pillar has since failed — the actual cause of the sinkhole, not just water and limestone alone. The Masons don't know yet either (`quests/hollow-below-briarwatch.md`, Surface Layer — Western Property Sinkhole, GM Secret). See `factions/the-masons.md`, Known Works.
 
+**What Briarwatch becomes.** The line does eventually break, and Briarwatch's stretch is the part that holds — a Mason reaches it in time to reinforce it and has no time for the rest of the fence. The village comes out the far side of that as a held span with forest past both ends of it: same fields, same watchtower ruins, same larder fence, now bordered by Weald on ground that was open a season before. Briarwatch never learns why it was spared, because it never knew the fence was anything but old. See `quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks.
+
 ---
 
 ## Session 1 Routing

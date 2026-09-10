@@ -491,6 +491,27 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 
 ---
 
+## The Return — After the Line Breaks
+
+*The next state of this region, for a party that leaves and comes back. Everything above describes the Weald under Overgrowth with the containment intact. This describes the Weald with the containment gone, and it is not a variant of the adventure above — it is the adventure above having ended a particular way.*
+
+**The containment breaks.** The Masons' line was always running a deficit against the Root Heart's aggressive phases (`factions/the-masons.md`, Known Works, and `bestiary/root-heart.md`, The Overgrowth Cycle), and one cycle finally arrives with the recut incomplete. The push lands. For the first time in the line's history the Weald takes the expansion branch instead of decaying, and the forest **advances north** — up the ground between it and the Kings Road, along the spoke that runs from Turnroot Weald to Eclipseria. Everything the road promised about that stretch is now provisional, the Milestone included (`bestiary/the-patient-host.md`).
+
+**The Briarwatch stretch holds.** A Mason reached it in time and reinforced it — fresh glyphs, deeper cuts, the work done properly on that section. There was not time to do it to the whole fence. What Briarwatch is now is a held span in a line that failed on either side of it: the fields still farmed, the watchtower ruins still standing, the larder fence still holding its stretch, with forest past both ends of the reinforced run and nothing between the two but the reason it stopped there. Briarwatch does not know why it was spared. It has never known the fence was anything but old (`places/briarwatch.md`, GM Secret).
+
+**Why this is the right shape for a return.** The party knew this place. The specific ground they walked, the trail they navigated, the customs they learned, the Weald's own routing — all of it is now somewhere else or under canopy that wasn't there. A return adventure that only made the fight harder would waste the first visit. This makes the first visit the reason the second one lands: they are the only people at the table who know what this used to be.
+
+**What carries over.** Forest customs still apply and are still absolute; the Weald did not become a different forest, it became a larger one. Pressure, Marks, and the Escape Conditions above are all still the region's machinery. What changes is what's inside the boundary — new ground under canopy that was fields, road, or nothing a season ago, with whatever was standing on it still standing, inside now.
+
+### To Decide
+
+- **Which Mason made it to Briarwatch.** Sebastian is the obvious answer and the least interesting one — he already tends that line, and him arriving in time is the system working. Mirel arriving instead is the payoff for everything in `characters/mirel.md`: one chisel, no lessons, and a stretch of fence that holds because of her. One of the unwritten handful arriving is the third option and the coldest — the order is bigger than the party knows, and nobody thanked anybody.
+- **Where the line actually broke**, and whether the party can find the failed section. A recut that didn't happen leaves a specific, findable stretch of unmarked post.
+- **Whether the party caused this.** They may have been the ones who didn't come back for the second Overgrowth, or who killed the Heart on a schedule that made this cycle worse, or who were simply elsewhere. All three are playable. Only one of them is a story about guilt.
+- **How far north.** The road, the Milestone, and the halfway inn are all on the table. Nothing above commits to a distance.
+
+---
+
 ## What It Pays
 
 This is a framework rather than a single session, so it pays by the session rather than in a lump: **~40 gold per character per session at Tier 1**, rising with the party (`rules/equipment.md`, Pacing; multiply by party size).

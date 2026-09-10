@@ -37,6 +37,8 @@ Either branch ends in dormancy, and the cycle starts again from there. The fores
 
 **A killed Root Heart is not a dead forest.** The Heart is the cycle's engine, not a single organism whose death settles anything. Cut it down and the Weald drops straight into decay — the outer growth rots, the edge pulls back, the Rootstalkers go quiet — and the cycle restarts from dormancy with the Heart re-forming in the crater on its own schedule. This is why the bounty is standing rather than one-time, why it has been paid out before, and why a party that clears it has bought the line time rather than a victory.
 
+**Eventually the line loses.** One cycle arrives with the recut incomplete, the push lands, and the Weald takes the expansion branch for the first time since the line went up — advancing north, toward the Kings Road. The Briarwatch stretch holds; a Mason reinforced that section in time and had no time for the rest. That is the next state of this region, not a hypothetical: `quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks.
+
 **Escaping the Weald and serving the bounty are the same act by accident.** A party that kills the Heart to get out (`quests/turnroot-weald-adventure.md`, Escape Conditions) has done the Regency's work without being hired for it, and a party that took the contract has bought its own way out without being told that was on offer. Neither the forest nor the Hall distinguishes between them.
 
 ## Read-Aloud Description

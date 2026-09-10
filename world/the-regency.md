@@ -29,7 +29,15 @@ The Council keeps one bounty that predates every sitting member: the growth at t
 
 It is not a monster problem. The Council knows the boundary at the Weald's western edge is degrading, and knows the forest's aggressive phase is what degrades it (`bestiary/root-heart.md`, The Overgrowth Cycle). It cannot maintain that boundary — the Regency didn't raise it and doesn't tend it — so it buys time instead, hiring whoever will go end the phase early. The Heart re-forms afterward. That is why the order stands rather than closing.
 
-**Deliberately unsettled:** whether the Council knows the boundary is Mason work (`factions/the-masons.md`, Known Works) and stays quiet about it, or never connected the fence to the order at all. The policy is identical either way, which is what makes it worth leaving open — a party can discover that the Regency has been quietly subcontracting a secret order's maintenance for a century, or that it has no idea who built the thing it is protecting and has been guessing correctly by accident.
+The Council knows perfectly well that the boundary is Mason work (`factions/the-masons.md`, Known Works). It is not coordinating with them, and the bounty is not a subcontract — the Masons take no commissions and would not take this one. The Regency is doing the only thing available to a body that understands the problem, can't perform the work, and can't direct the people who can: reduce the load on a line somebody else is maintaining, and say nothing to anyone about why.
+
+## The Masons
+
+**What the Council Knows.** More than anyone outside the order, and far more than it says. The Regency understands roughly what the glyphs are for, that the order goes where catastrophe is imminent rather than where it's invited, and that a Mason at work is not to be interfered with. Standing instruction to Cedric's people, unwritten and never explained down the chain: a Mason is left alone. Guards who've passed that order along assume it's about the superstitions. It isn't.
+
+This is characteristic rather than exceptional. The Council knows more than it says about most things; the Masons are one more file it keeps and doesn't open in public.
+
+**What it does not have is any authority over them.** The order is independent, holds no charter, and accepts no commissions — there is nothing to revoke and nothing to buy. The Regency has never formalized the relationship, and whether it has ever tried is not established. What exists instead is a working accommodation neither side has ever put in writing: the Masons work where they judge they need to, the Regency doesn't obstruct them and doesn't advertise them, and where the two interests happen to align — as at the Weald — the Regency acts on its own side of the line without telling the order it's doing so. See The Turnroot Standing Order, below.
 
 ## Rumors
 
