@@ -41,7 +41,7 @@ Dried and ground, the organ yields **bellows dust**.
 
 ## Loot
 
-- **Bellows dust** — ground bellows organ. In a grinder round it does to a person what the beetle does: `experimental/kevin-ingredients.md`.
+- **Bellows dust** — ground bellows organ. In a grinder round it does to a person what the beetle does: `experimental/kevin.md`.
 - **Plate** — overlapping shell sections. Nobody has made armour from it yet. Somebody will.
 
 ---
@@ -51,4 +51,4 @@ Dried and ground, the organ yields **bellows dust**.
 - `bestiary/scorchback-beetle.md` — the smaller cousin, and the same chemistry pointed the other way
 - `places/ashfall-wastes.md` — the warm ground both of them need
 - `bestiary/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/sapphire-ant.md` — the other seasonings, and the other kinds of gate
-- `experimental/kevin-ingredients.md` — what bellows dust does once it is loaded
+- `experimental/kevin.md` — the character, and what this does once it is loaded

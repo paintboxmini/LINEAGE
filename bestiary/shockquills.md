@@ -31,9 +31,9 @@ They do not coordinate. They also do not need to — a group of them all chargin
 
 Quills, which is what the whole animal is for. Taking them is easy — the quills release from a dead Shockquill with almost no work.
 
-**Whether they are worth anything is decided during the fight, not after it.** The charge lives in the quill's structure and sets there when the animal dies. Quills taken from a Shockquill killed at **3 or more Charge** grind down into **quill grind** (`experimental/kevin-ingredients.md`). Quills from one killed at 0 to 2 are quills: fine for fletching, worth nothing to a cook.
+**Whether they are worth anything is decided during the fight, not after it.** The charge lives in the quill's structure and sets there when the animal dies. Quills taken from a Shockquill killed at **3 or more Charge** grind down into **quill grind** (`experimental/kevin.md`). Quills from one killed at 0 to 2 are quills: fine for fletching, worth nothing to a cook.
 
-So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — gets nothing but fletching. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and it is the inverse of both other seasonings: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, and the Shockquill is dangerous to harvest *correctly*.
+So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — gets nothing but fletching. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and none of the others work like it: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, the Blowback simply has to be beaten, and the Shockquill is dangerous to harvest *correctly*.
 
 ---
 
@@ -47,5 +47,5 @@ So the ingredient has a price and the price is paid in the fight. A party that p
 ## Related Documents
 
 - `places/glasslight-reach.md` — the dry quartz scree they live on
-- `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other three seasonings, and three other kinds of gate
-- `experimental/kevin-ingredients.md` — what quill grind does once it is loaded
+- `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
+- `experimental/kevin.md` — the character, and what this does once it is loaded
