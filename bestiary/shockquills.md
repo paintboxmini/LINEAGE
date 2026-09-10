@@ -2,14 +2,18 @@
 
 **Cards:** `cards/shockquills.md`
 
-A stout, low-slung quilled animal about the size of a loaf, found in loose groups of three or four on the dry quartz scree below Glasslight Reach (`places/glasslight-reach.md`). Nothing biological-lightning about it: the quills are keratin, the scree is dry, and a Shockquill that has been moving has been rubbing thousands of quills against each other and against the ground. The charge is friction and nothing else. It simply has more surface area for it than anything else alive.
+A stout, low-slung quilled animal about the size of a loaf, found in loose groups of three or four around Briarwatch (`places/briarwatch.md`) — the red dirt roads, the dry margins between worked fields, and the scree of the watchtower ruins.
 
-You can tell how charged one is from a distance. The quills stand further out, they hum faintly against each other, and the air near it tastes like a struck match.
+**The charge is not friction.** A Shockquill carries an internal organ, the **spinstone gland**, packed with dozens of tiny magnetic stones. The animal rotates them around one another — constantly, without thinking about it, the way anything else breathes — and that turning is what generates the charge. The quills only deliver it. Everything alive builds a little static walking around; a Shockquill is the only thing that runs a generator.
+
+**The stones are swallowed, not grown.** Briarwatch's dirt is red because it is full of iron, and a Shockquill spends most of its waking life sorting grit for the few pieces worth keeping. A young one has almost nothing in the gland and cannot hold a charge at all. An old one rattles.
+
+You can tell how charged one is from a distance. The quills stand further out, they hum faintly against each other, and the air near it tastes like a struck match. Up close there's a second tell nobody expects: a dry, uneven ticking from somewhere inside the animal, faster the further along it is.
 
 **Mind 1 / Body 2 / Soul 3 — HP 12**
 **Creature Threat Rating:** 6
 
-**Deck (6 — 1 Blue / 2 Red / 3 Green):** RAISED QUILLS *(blue)* · FULL DISCHARGE, SPARK OF VIOLENCE *(red)* · FRICTION, SHADE AWAY, DISORIENT *(green)*
+**Deck (6 — 1 Blue / 2 Red / 3 Green):** RAISED QUILLS *(blue)* · FULL DISCHARGE, SPARK OF VIOLENCE *(red)* · TUMBLE, SHADE AWAY, DISORIENT *(green)*
 
 **Passive — Static Build:** At the start of each of its turns, a Shockquill gains 1 Charge, to a maximum of 5. Charge is public information — everyone at the table can see how far the quills are standing.
 
@@ -19,7 +23,7 @@ You can tell how charged one is from a distance. The quills stand further out, t
 
 ## Behavior
 
-Not predators and not brave. A Shockquill's first answer to anything is to put its quills between itself and the problem and keep rolling away, which is also the thing that charges it. Left alone in an open fight it will spend three or four turns doing nothing threatening and then take someone's leg off with FULL DISCHARGE.
+Not predators and not brave. A Shockquill's first answer to anything is to put its quills between itself and the problem and keep rolling away — which also tumbles the gland and charges it. The escape and the weapon are the same motion, which is why the animal has never needed to be brave.
 
 They do not coordinate. They also do not need to — a group of them all charging quietly on separate sides of a fight is a worse problem than one that has been paying attention.
 
@@ -27,25 +31,37 @@ They do not coordinate. They also do not need to — a group of them all chargin
 
 ---
 
+## In Briarwatch
+
+**They will not cross water.** Wet ground earths a charged Shockquill and the animal knows it, so the irrigation channels between fields are walls as far as it's concerned. Briarwatch has never needed to fence them out; the farm layout does it for free, and everyone knows which side of a channel to expect one on.
+
+**They are found by their effect on tools, not by sight.** A dropped nail that won't sit still, a plough blade that has picked up a pull it didn't have last week, a compass needle that goes stupid in one specific stretch of road. Farmers read all of this as ordinary and none of it as remarkable.
+
+**A Tollbird cannot take a charged one** (`bestiary/tollbird.md`). There are Shockquills on the larder fence — always the flat ones, killed young or caught on wet ground. The heavy old rattling ones walk past underneath it unbothered, which is the only creature in Briarwatch that can say so.
+
+---
+
 ## Harvesting
 
-Quills, which is what the whole animal is for. Taking them is easy — the quills release from a dead Shockquill with almost no work.
+**The gland is the prize. The quills are a byproduct.** Cutting the spinstone gland out is straightforward butchery once you know it's there, and knowing it's there is the whole difficulty — the animal advertises the quills and hides the reason they work.
 
-**Whether they are worth anything is decided during the fight, not after it.** The charge lives in the quill's structure and sets there when the animal dies. Quills taken from a Shockquill killed at **3 or more Charge** grind down into **quill grind** (`experimental/kevin.md`). Quills from one killed at 0 to 2 are quills: fine for fletching, worth nothing to a cook.
+**Whether the stones are worth anything is decided during the fight, not after it.** They hold whatever alignment they were in when the animal died. A Shockquill killed at **3 or more Charge** dies with the gland at speed, and the stones lock in alignment and keep turning against each other for months afterward — that's **spinstone grind** (`experimental/kevin.md`). Killed at 0 to 2, they settle, cancel one another out, and go dead in the hand: ordinary iron grit, worth nothing to a cook.
 
-So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — gets nothing but fletching. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and none of the others work like it: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, the Blowback simply has to be beaten, and the Shockquill is dangerous to harvest *correctly*.
+So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — walks away with fletching and gravel. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and none of the others work like it: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, the Blowback simply has to be beaten, and the Shockquill is dangerous to harvest *correctly*.
 
 ---
 
 ## Loot
 
 - **Quills** — always. Fletching, needles, a passable stylus.
-- **Quill grind** — only from a kill at 3+ Charge. Ground quill, faintly metallic, and it makes a drink or a grinder round arrive before it should.
+- **Spinstone grind** — only from a kill at 3+ Charge. Ground stone and gland together, faintly warm, still turning against itself in the jar, and it makes a drink or a grinder round arrive before it should.
+- **Dead grit** — from a kill at 0 to 2 Charge. Iron sand. A smith will take it off your hands for close to nothing.
 
 ---
 
 ## Related Documents
 
-- `places/glasslight-reach.md` — the dry quartz scree they live on
+- `places/briarwatch.md` — the red dirt, the irrigation channels, and the larder fence they mostly avoid
+- `bestiary/tollbird.md` — the only predator here that has to check first
 - `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
 - `experimental/kevin.md` — the character, and what this does once it is loaded

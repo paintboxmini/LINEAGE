@@ -72,7 +72,6 @@ The light-cartographers map the edge. Only the edge. Their atlases record where 
 
 ## Related Documents
 
-- `bestiary/shockquills.md` — the quilled animals of the dry scree below the town, and the only source of quill grind
 - `quests/tide-pulls-back.md` — the adventure set here and on the cliffs
 - `factions/people-of-promise.md` — who lives here
 - `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach

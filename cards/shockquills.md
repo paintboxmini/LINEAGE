@@ -6,13 +6,13 @@ Signature cards for the Shockquill. See `bestiary/shockquills.md`.
 
 ---
 
-**FRICTION**
+**TUMBLE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain 1 Charge. Move to any position.
 Defense Effect: Gain 1 Charge.
 Range: Both
-*"It is not doing anything to you. It is just moving, and moving is the point."*
+*"It is not doing anything to you. It is just moving, and moving is what winds it."*
 
 ---
 

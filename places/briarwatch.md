@@ -14,6 +14,8 @@ The farmland doesn't stop at a tidy line — it was cut a little way into the We
 
 Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer used to build them.
 
+Shockquills work the dry margins — the road shoulders, the field edges, the loose scree around the watchtower ruins (`bestiary/shockquills.md`). Loaf-sized, quilled, and full of iron they sorted out of the dirt themselves. Nobody fences them out; they won't cross an irrigation channel, so the field layout already does it. Farmers know them mostly as a thing that happens to tools.
+
 Valhug Lake sits in the center of Briarwatch — deep and cold.
 
 A sinkhole opened last season. The first one in living memory. It won't be the last.
@@ -86,7 +88,7 @@ Impaled along it: small things that wander this far without anyone missing them,
 
 **Win condition:** kill the Tollbirds, wound both to 4 HP or less (they abandon the fight and don't return this season), or simply leave — Tollbirds don't pursue past their hunting ground, so walking away is a complete, legitimate end.
 
-**The larder itself:** the everyday catch, the stray Fenwool, coins and a buckle and a hand mirror worked in among the drying bodies — and, hanging further along, a Skeinwing (`bestiary/skeinwing.md`), wingspan too wide for the cable, membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive.
+**The larder itself:** the everyday catch — Shockquills among it, always the flat young ones, never a heavy old rattling one (`bestiary/shockquills.md`) — the stray Fenwool, coins and a buckle and a hand mirror worked in among the drying bodies — and, hanging further along, a Skeinwing (`bestiary/skeinwing.md`), wingspan too wide for the cable, membrane too blue to be anything born on the ground. Nobody at this fence has ever seen one alive.
 
 **What it pays:** ~20 gold per character, half a session at Tier 1 (`rules/equipment.md`, Pacing). Briarwatch pays it in livestock terms — a Fenwool, or the price of one, or a standing account at whichever farm lost the fewest this season. Nobody hired the party; they fixed something the farmers had stopped expecting help with, and the farmers aren't going to let that pass unmarked.
 
