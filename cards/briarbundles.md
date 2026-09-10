@@ -117,7 +117,7 @@ Range: Ranged
 **THE FIELD IS THE LINE**
 RED — BODY — BRIARWATCH
 Attack: Body + d8
-Effect: If the defender is in your position, deal +4 damage. If they are not, this attack deals no damage.
+Effect: If you and the defender are both in the Frontline, deal +4 damage. If not, this attack deals no damage.
 Defense Effect: Gain Resist.
 Range: Both
 *"You are not being hunted. You are on the wrong side of something."*

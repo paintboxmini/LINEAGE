@@ -224,7 +224,13 @@ Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
 Frontline isn't a fixed place on the field — it's wherever two sides have actually closed the distance and are fighting face to face. Whoever's caught up in that is Frontline, on both sides of it, for as long as it's happening there; that contact point is where Melee range exists. Backline is everyone else: still in the fight, just not closed with anyone yet. Nothing pins the Frontline to one spot — it's wherever the fighting actually is, and it moves when the fighting does.
 
-Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
+Both positions are abstract zones, and any number of characters may occupy either one. What occupying the same position *means* depends on whose side they're on.
+
+**Allies in the same position are together** — close enough to hand something over, step in front of each other, pass a drink. **Opponents in the same position are only together in the Frontline.** Two enemies both in the Backline are on opposite sides of the field, each simply not closed with anyone; the Frontline is the one position where opposing sides are actually in contact, which is why it is the one position Melee works from. "Both in the Backline" is not proximity — it is two people who have each disengaged.
+
+This is why a card can hand a drink to an ally in your position and a Melee card cannot reach an enemy in yours: the ally is beside you, the enemy is across the field.
+
+Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
 
 ### Range Matrix
 
