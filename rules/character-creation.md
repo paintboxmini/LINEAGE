@@ -185,7 +185,7 @@ Players may also propose custom cards as the campaign develops. These enter the 
 ## Advancement
 
 ### End of Session
-At the close of every session, each player meets the Oracle alone — the ritual run per player at the table (`places/island-in-a-ship.md`), in three frames:
+At the close of every session, each player meets the Oracle alone — the ritual run per player at the table, in three frames:
 
 1. **Name** — the Oracle asks one question. The player answers.
 2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  

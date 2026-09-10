@@ -436,7 +436,7 @@ Roughly a session's work at Tier 1 — about **40 gold per character** (`rules/e
 
 What he has is a farm that is still standing because of them. Any of these, or a mix, and the GM should pick the one the table has earned:
 
-- **Fenwool.** Two head, worth roughly the sum, and a real problem to move — Weck buys culls on that road (`characters/weck.md`), which turns the payment into a second scene rather than a line on a sheet.
+- **Fenwool.** Two head, worth roughly the sum, and a real problem to move — Weck buys culls on that road, which turns the payment into a second scene rather than a line on a sheet.
 - **The neighbours pool it.** Briarwatch farmers are tired, not poor, and a fixed sinkhole is worth a collection. This is the version where the party gets thanked by people they never met.
 - **He owes them, and says so plainly.** No goods change hands. The party leaves with a farmer's standing debt in a region they will pass through again, which is worth more than forty gold and costs Iron nothing he has.
 

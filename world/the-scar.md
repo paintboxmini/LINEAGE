@@ -1,6 +1,6 @@
 # The Scar
 
-*A persistent presence in the In-Between (`world/the-in-between.md`). Encountered early. Unresolved to every player and every NPC in the world; the GM Secret below says who it is.*
+*A persistent presence in the In-Between (`world/eclipseria-overview.md`). Encountered early. Unresolved to every player and every NPC in the world; the GM Secret below says who it is.*
 
 *No stat block. The Scar has never been fought, does not approach, and does not respond to being attacked. If that changes, it is a campaign event and not a stat line.*
 
@@ -76,7 +76,8 @@ One resonance: he failed at the Seat of Love and Binding, and what he does now i
 
 ## Related Documents
 
-- `world/the-in-between.md` — where it is, and why the Cuts are thin there
+- `world/eclipseria-overview.md` — the In-Between, where it is
+- `world/creation-myth-the-three-cuts.md` — the Cuts, and why they are thin out there
 - `world/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is

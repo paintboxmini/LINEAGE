@@ -94,7 +94,7 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical for keyw
 
 ## Deck Building
 
-**Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `places/island-in-a-ship.md`) can and should bend it.
+**Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `rules/character-creation.md`, Advancement) can and should bend it.
 
 **Trading cards.** Cards change hands at the Underground Bazaar and effectively nowhere else (`places/capital/underground-bazaar.md`, Card Trading). Selling is always possible and permanent; buying is rare, is paid for in cards, memories, or secrets rather than coin, and adds to a deck rather than swapping into it. Everywhere else in the world a card is earned — from the Oracle, or from whatever taught it.
 

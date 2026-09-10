@@ -2,7 +2,7 @@
 
 ## Session 0 — The First Night
 
-This is also the party's actual Session 0. Before the trail, before the Roadhouse, during the first night on this beach is when the Oracle finds them (source `places/island-in-a-ship.md`, Session 0 — First Visit), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
+This is also the party's actual Session 0. Before the trail, before the Roadhouse, during the first night on this beach is when the Oracle finds them (`rules/character-creation.md`, Advancement), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
 
 ---
 ## The Hook
@@ -37,7 +37,7 @@ Sections of the river turn to coral — Muted colors here, not tropical: dusty p
 
 ## The Walk — Crossing the In-Between
 
-Everything past the river crossing is the In-Between (`world/the-in-between.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road.
+Everything past the river crossing is the In-Between (`world/eclipseria-overview.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road.
  
 ---
 
@@ -82,12 +82,12 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret
 - `places/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
-- `places/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
+- `rules/character-creation.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
 - `places/roadhouse.md` — where the trail leads
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
 - `bestiary/flapjack-octopus.md` — the river crossing's creature
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
-- `world/the-in-between.md` — the rules the whole Walk section runs on
+- `world/eclipseria-overview.md` — the In-Between, the ground the whole Walk section crosses
 - `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid

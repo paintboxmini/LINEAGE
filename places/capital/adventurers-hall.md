@@ -43,7 +43,7 @@ Clayhollow communicates the way Clayhollow communicates (`places/clayhollow.md`,
 
 > *"Vessel held at Vulture's Nest pending Compact review — unregistered communicable material, origin unconfirmed. Owner in custody, uncooperative. Compact wants the origin traced before the vessel's released or destroyed."*
 
-Already fully official — the barge is real, the quarantine is real, Corvel is really being held (`places/vultures-nest.md`, `characters/corvel.md`). Following the origin leads to Pneum and the People of Promise (`places/pneum.md`). The posting undersells what's actually out there on purpose; the Compact doesn't know yet either.
+Already fully official — the barge is real, the quarantine is real, Corvel is really being held (`places/vultures-nest.md`). Following the origin leads to Pneum and the People of Promise (`places/pneum.md`). The posting undersells what's actually out there on purpose; the Compact doesn't know yet either.
 
 ---
 
@@ -75,9 +75,9 @@ Lower stakes than the ruins proper, and genuinely recurring — this one's less 
 
 Some jobs never make it to a posting, because there's nothing an official notice could actually say. These circulate at the Gilded Tusk, in the Marketplace, at the Roadhouse — never signed for, never dated, no clerk's record. A party hears about them, or doesn't.
 
-**Havenrise.** *"Trader's second son went east past the cliffs eight months back, hasn't sent word since. Family's asking around, not paying much, just wants to know."* `places/havenrise.md` is genuinely blank past this — the posting can exist; the destination, for now, can't be developed further than "he went that way."
+**Havenrise.** *"Trader's second son went east past the cliffs eight months back, hasn't sent word since. Family's asking around, not paying much, just wants to know."* Havenrise is genuinely blank past this — the posting can exist; the destination, for now, can't be developed further than "he went that way."
 
-**Roaat.** *"Anyone still doing runs out to Roaat? Nobody's confirmed a delivery in a season. Just want to know if the road's still good."* Same shape as Havenrise — a real gap in trade contact, not yet a real place (`places/roaat.md`).
+**Roaat.** *"Anyone still doing runs out to Roaat? Nobody's confirmed a delivery in a season. Just want to know if the road's still good."* Same shape as Havenrise — a real gap in trade contact, not yet a real place.
 
 **The Mother of Many — Underground Bazaar.** *"Oversized specimen, vendor stall, east row. Management would very much like it handled before the offspring mature. Ask for the gremlin with the ledger."* Already written as a real, playable fight with its own clock (`places/capital/underground-bazaar.md`, The Mother of Many) — just Bazaar business, not Regency business, so it stays off the official board even though it's as concrete a job as anything on it.
 

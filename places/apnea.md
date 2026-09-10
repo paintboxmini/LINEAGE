@@ -35,11 +35,11 @@ The people are not confused. This is normal to them. The party is the strange th
 
 The village stays warm and lit. The outer landscape does not.
 
-Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's what's left of the same thinness the In-Between wears everywhere on the waking continent (`world/the-in-between.md`) — Name, Price, and Distance going unheld — except most of the In-Between doesn't sit twenty feet from where people sleep. Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
+Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's what's left of the same thinness the In-Between wears everywhere on the waking continent (`world/eclipseria-overview.md`) — Name, Price, and Distance going unheld — except most of the In-Between doesn't sit twenty feet from where people sleep. Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
 
 Villagers don't go out after dark — not because they were told not to, but because everyone learned not to a long time ago.
 
-It may not have always been this way. Once, the village's boundary was walked, not just left standing: dream-born wardens, on a rotation, witnessed doing it — the same principle that keeps a Roadhouse safe or a glyph line fresh (`world/the-in-between.md`, Havens: *"a safe place is a place someone is paying to hold"*; here, the payment was being seen to do it). The rotation thinned and stopped. Nobody living in the village now remembers exactly when the last warden wasn't replaced. What's left is one man tending drips on the waking side, which keeps bodies fed and does nothing for the edge itself.
+It may not have always been this way. Once, the village's boundary was walked, not just left standing: dream-born wardens, on a rotation, witnessed doing it — the same principle that keeps a Roadhouse safe or a glyph line fresh (the Havens principle — *"a safe place is a place someone is paying to hold"*; here, the payment was being seen to do it). The rotation thinned and stopped. Nobody living in the village now remembers exactly when the last warden wasn't replaced. What's left is one man tending drips on the waking side, which keeps bodies fed and does nothing for the edge itself.
 
 That's why the party is here, one way or another — Out There has been getting closer for longer than anyone in the village will admit to noticing.
 
@@ -59,7 +59,7 @@ He'll send the party under without ceremony. He'll tell them one thing before th
 
 ## Connections
 
-**Lily, the Dream-Hunter** (`characters/lily.md`, `places/capital/underground-bazaar.md`) — takes payment in a night of someone's sleep and reports back only the shape of what's coming, never the substance. She has never been to Apnea and knows nothing about it firsthand — what she knows, she knows the way she knows anything: secondhand, through what she's bought. Apnea sits differently with her than her other clients' nights do, in a way she's never explained even to herself.
+**Lily, the Dream-Hunter** (`places/capital/underground-bazaar.md`) — takes payment in a night of someone's sleep and reports back only the shape of what's coming, never the substance. She has never been to Apnea and knows nothing about it firsthand — what she knows, she knows the way she knows anything: secondhand, through what she's bought. Apnea sits differently with her than her other clients' nights do, in a way she's never explained even to herself.
 
 **The hook.** A family in the capital paid to learn whether a relative sent to Apnea years ago is even still alive — dream-years don't track waking-years, and it's entirely possible to have lived out a full life and died, dream-side, while the body back on the ward is still just another bed. They went to Lily. She took the night, and told them only this: it isn't the one they're asking about. Something at that island is close to slipping, and has been close for a long time.
 
@@ -83,9 +83,8 @@ Resolving the boundary for a session buys the village one calm stretch, nothing 
 
 ## Related Documents
 
-- `characters/lily.md` — the Dream-Hunter, the hook that brings a party here
 - `places/capital/underground-bazaar.md` — where Lily is found
-- `world/the-in-between.md` — the Three Cuts, Havens, the mechanism Apnea's boundary shares
+- `world/eclipseria-overview.md` — the In-Between, the unmapped ground Apnea's boundary is made of
 - `world/creation-myth-the-three-cuts.md` — Name, Price, Distance
 - `world/geography-overview.md` — Apnea's position, its own lake south-southwest of Vulture's Nest
 - `world/tonal-bible.md`
