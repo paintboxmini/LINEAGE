@@ -1,6 +1,6 @@
 # Rootstalker
 
-*Signature predator of the Turnroot Weald. During Overgrowth (this campaign, `bestiary/root-heart.md`) — hunting from the moment the party steps under canopy; Pressure controls trail quality, not whether they're looking at all (`quests/turnroot-weald-adventure.md`, Pressure Track). Once Overgrowth ends, reverts to the original gate: appears at Pressure 2+ when navigation fails.*
+*Signature predator of the Turnroot Weald. During Overgrowth (this campaign, `bestiary/root-heart.md`, The Overgrowth Cycle) — hunting from the moment the party steps under canopy; Pressure controls trail quality, not whether they're looking at all (`quests/turnroot-weald-adventure.md`, Pressure Track). Once Overgrowth ends, reverts to the original gate: appears at Pressure 2+ when navigation fails.*
 
 **Cards:** `cards/rootstalker-weald.md`
 

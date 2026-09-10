@@ -12,6 +12,25 @@ Deck (11 — 2 Blue / 5 Red / 4 Green): FOREST MEMORY, TRACE · ROOT LASH, IRON 
 
 **Immobile means immobile.** No card moves it — not CALCULATE, not HEAVE AND HAUL, not a pull, not a Rushdown, nothing that would reposition an ordinary combatant. It is a tree the size of a building growing out of a crater. Moving it takes genuine table invention: a plan, the fiction to support it, and the GM agreeing the plan earns it. That is a story the party tells, not a card they play. This is also why DIG IN never stops paying for it — Anchored ends when its holder moves, and this one doesn't.
 
+## The Overgrowth Cycle
+
+The Root Heart is never in one state for long. It runs a cycle, and the Weald's behaviour at any moment is a readout of which phase is currently running — how the paths route, whether the Rootstalkers hunt, what a broken custom costs. Nothing else in the Turnroot Weald reads correctly without knowing which phase the table is in.
+
+**Dormant.** The Heart is asleep and the forest is only a forest. Paths hold. Rootstalkers keep to themselves and pass a forest family without interest. Forest customs still apply — they are always the law under canopy — but the Weald enforces them the way an old habit gets enforced, not the way a threat does. Whole generations of forest-people have lived their entire lives inside a single dormant stretch and never seen anything else.
+
+**Passive growth.** The Heart wakes and the forest begins putting on ground. Slow, undirected, unhurried — the Weald's edge creeps, roots surface where they didn't, a trail that held last season doesn't. Nobody living under canopy calls this an emergency. They call it the forest being awake, and adjust.
+
+**Aggressive growth.** The growth acquires intent. The forest stops expanding and starts *pushing*, and it puts everything it has into the push — this is the phase where the Weald routes travellers instead of merely misleading them, where Rootstalkers hunt from the moment anyone steps under canopy, and where the ground a forest family can safely walk shrinks to a fraction of what it was. **This is Overgrowth**, and it is the phase the Weald is in for this campaign. Every sharpened rule in `quests/turnroot-weald-adventure.md` is describing this phase and no other.
+
+**Then the cycle branches, and it only branches here.** Aggressive growth resolves one of two ways:
+
+- **Rapid expansion.** The push succeeds. The forest takes real ground in a short span and holds it, and the Weald that comes out the other side is meaningfully larger than the one that went in.
+- **Decay.** The push fails. Everything the forest spent on the attempt is spent for nothing, and the Heart draws down — rot in the outer growth, the edge pulling back, the Weald contracting to less than it held before it woke.
+
+Either branch ends in dormancy, and the cycle starts again from there. The forest does not remember which branch it took last time. The Masons do.
+
+**GM Secret — Not Player-Facing.** The branch is not a coin flip, and hasn't been for a long time. The Masons' Briarwatch line holds the Weald's entire outward expansion back on purpose (`factions/the-masons.md`, Known Works), which means the expansion branch has been closed off for every cycle since the line went up — the push has nowhere to land, so it fails, so the cycle resolves to decay, every time. That is exactly what the line was built to do: a release valve that lets the forest exhaust itself inward on a schedule rather than spread. The cost is that the aggressive phase peaks harder each time, because all of that intent gets turned back on the ground already under canopy. The forest-people dying and the Rootstalkers hunting are not the fence failing. They are the fence working. See `characters/aege.md`, Story Hook.
+
 ## Read-Aloud Description
 
 At first, it looks like a tree that grew in the wrong direction.

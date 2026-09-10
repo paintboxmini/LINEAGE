@@ -18,7 +18,7 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 
 ## Forest Customs — Sharpened (Overgrowth)
 
-Meta rules for the table. Under canopy, the Weald treats them as law. **Overgrowth doesn't add new laws — it enforces the existing ones with less patience,** which is why three customs (the ones the Moss-Warden asks about) have widened into six, and the consequences now scale with current Pressure instead of landing flat.
+Meta rules for the table. Under canopy, the Weald treats them as law. Overgrowth is the Root Heart's aggressive-growth phase, and the phase this campaign runs in (`bestiary/root-heart.md`, The Overgrowth Cycle). **It doesn't add new laws — it enforces the existing ones with less patience,** which is why three customs (the ones the Moss-Warden asks about) have widened into six, and the consequences now scale with current Pressure instead of landing flat.
 
 Violations are judged by what was *done and said*, not by intent. A player who means well and breaks a custom still broke it.
 
