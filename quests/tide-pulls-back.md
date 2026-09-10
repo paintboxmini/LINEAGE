@@ -119,7 +119,7 @@ Steve steps onto the lowering platform. He backed out once already, in front of 
 
 **What the crowd sees is a devoted parent.** What Steve is doing is the only argument he has ever been in.
 
-**And there is a pledge underneath it.** Wren once declared, in front of the congregation, something in the shape of *whenever he goes to the water, I go with him* — a binding statement about someone else's future, spoken as though his consent were a formality (`characters/wren.md`). He is on the platform. Wren is not going down. The GM does not need to explain any of that here, and probably shouldn't; it pays off on the far side, in what comes back up.
+**And there is a pledge underneath it.** Wren once declared, in front of the congregation, something in the shape of *whenever he goes to the water, I go with him* — a binding statement about someone else's future, spoken as though his consent were a formality (`characters/wren.md`). He is on the platform. Wren is not going down. The GM does not need to explain any of that here, and shouldn't; it pays off on the far side, in what comes back up — and it never gets explained there either (`characters/steve-and-pip.md`).
 
 **Then the party has a window.** However long the table wants it to be. They can back Wren, argue the opposite, physically stop the platform, tell him what they know about the ring, tell him nothing and just talk to him, or let it happen. Anything is legitimate here, including doing nothing — this is not a check they can fail, it's a moment they can spend or not spend.
 

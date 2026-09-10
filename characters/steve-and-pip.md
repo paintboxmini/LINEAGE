@@ -16,4 +16,16 @@ Pip formed from fragments of Steve's consciousness during the Final Current bath
 
 A bubble dragon. Small, iridescent, made of something that's already halfway gone. Big rainbow eyes. Wings like soap film. Orbits Steve constantly.
 
-**What Pip might be, and it is not settled.** Wren once spoke a binding statement about Steve's future that wasn't Wren's to speak (`characters/wren.md`, The declaration made on Steve's behalf). Steps onto a platform Wren is not coming down with him on, and the pledge cannot be kept. If the world charges a Price like that to the person it was spoken *about* rather than the one who spoke it, this is what the charge looked like: a piece of Steve, taken and handed back as something separate that follows him and cannot be put down. Nobody at the table needs to say this out loud. Pip works fine as a wonder. It works better as an invoice.
+**Pip is both things at once, and that is the whole point.**
+
+Wren once spoke a binding statement about Steve's future that wasn't Wren's to speak (`characters/wren.md`, The declaration made on Steve's behalf). He stepped onto a platform Wren was not coming down with him on, and the pledge could not be kept. The world charged the Price to the person it had been spoken *about* rather than the one who spoke it, and this is what the charge looked like: a piece of Steve, taken, and handed back with its own eyes.
+
+**So Pip is an invoice.** Something is gone out of Steve and is not coming back. Whatever went into Pip is not in him anymore — the world does not balance that scale, and no amount of affection between them settles the account (`world/tonal-bible.md`).
+
+**And Pip is a wonder.** Small, iridescent, delighted by things, bad at hiding, fond of Steve past all reason. Gets bored. Gets underfoot. Has preferences about where to sleep and opinions about strangers. None of that is a costume over the debt; it is simply also true.
+
+**Neither reading sits underneath the other.** This world puts the mundane and the mythic in the same register and does not resolve them (`world/tonal-bible.md`) — Pip is a bill that got issued in the shape of a friend, and a friend who happens to be a bill, and there is no angle from which one of those turns out to be the real one.
+
+**How this plays at the table.** Nobody explains it. No NPC pronounces the theology, no book has the entry, and the party is never told what Pip is — they are told what Pip does, which is orbit Steve and be charming. Let the table arrive at the other half on their own, late, and preferably in the middle of something else.
+
+**Steve doesn't experience Pip as a cost.** He experiences Pip as his, and he is not wrong or in denial — that is the mundane half being sincere rather than a mask he's wearing over grief. **Wren is the only person who reads it both ways at once**, looks at Pip and sees the bill, and cannot say so to anybody, least of all to him.
