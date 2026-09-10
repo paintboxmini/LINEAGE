@@ -25,7 +25,7 @@ It doesn't hunt. It doesn't need to — prey this far out is rare enough that wa
 
 ## Encounter Setup
 
-One Hullback, Frontline, usually found holding ground near the rock outcroppings inland of the tideline (`quests/washed-ashore.md`, The Terrain) rather than on the open sand — high ground and cover suit something that wins by patience, not pursuit. A real, optional risk on the walk to the Roadhouse: avoidable if the party gives the rocks a wide berth, genuinely dangerous if they don't, and worth the risk on purpose if they know what's in its den.
+One Hullback, Frontline, usually found holding ground near the rock outcroppings inland of the tideline (`quests/washed-ashore.md`, The Hook) rather than on the open sand — high ground and cover suit something that wins by patience, not pursuit. A real, optional risk on the walk to the Roadhouse: avoidable if the party gives the rocks a wide berth, genuinely dangerous if they don't, and worth the risk on purpose if they know what's in its den.
 
 ---
 
@@ -42,7 +42,7 @@ One Hullback, Frontline, usually found holding ground near the rock outcroppings
 
 ## The Den
 
-Killed, driven off, or simply abandoned mid-fight (Hullback disengages once it drops below a third of its max HP — patience runs out eventually, even for something this old), what's left behind is years of accumulated salvage packed into the rocks it's called home. See `quests/washed-ashore.md`, Discoverables, for what's actually in it.
+Killed, driven off, or simply abandoned mid-fight (Hullback disengages once it drops below a third of its max HP — patience runs out eventually, even for something this old), what's left behind is years of accumulated salvage packed into the rocks it's called home. See `items/washed-ashore-items.md` for what's actually in it.
 
 ---
 

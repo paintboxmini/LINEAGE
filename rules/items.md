@@ -161,7 +161,7 @@ Three questions the table actually needs to answer, in this order:
 
 ## Underground Bazaar — no items, by design
 
-The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`places/capital/underground-bazaar.md`, Card Trading) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
+The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`places/capital/underground-bazaar.md`, The Card Economy) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
 
 Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
 

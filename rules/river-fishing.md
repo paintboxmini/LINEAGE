@@ -1,6 +1,6 @@
 # River Fishing — The Pull
 
-A table minigame, not a combat mechanic. Anywhere there's a real river (`world/geography-overview.md`, Rivers and Lakes — which is most of the continent), a character can cast a line. What happens next runs partly on dice and partly on how fast the table actually reacts, on purpose.
+A table minigame, not a combat mechanic. Anywhere there's a real river (`world/geography-overview.md`, River system — which is most of the continent), a character can cast a line. What happens next runs partly on dice and partly on how fast the table actually reacts, on purpose.
 
 ---
 

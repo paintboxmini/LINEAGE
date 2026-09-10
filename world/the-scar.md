@@ -52,7 +52,7 @@ Between rungs, months of nothing. The rungs are not a countdown and should never
 
 ## GM Secret — Not Player-Facing
 
-**The Scar is King Pendragon.** See `world/the-regency.md`, The Pendragon Attempt.
+**The Scar is King Pendragon.** See `world/the-regency.md`, Council Members.
 
 He and five companions tried to claim the Seat of Love/Binding. They failed. The five survivors lost their internal contradiction and became archetypes — the file describes their animal titles as *"scar tissue, not heraldry,"* and says the attempt *"left marks on everyone in the room."* Pendragon went the whole distance. Nuance did not burn away from him; **he** burned away, and what stayed was the marks.
 

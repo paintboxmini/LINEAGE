@@ -112,13 +112,13 @@ The danger in Briarwatch isn't strange. It's wet soil and old limestone and thin
 
 ## GM Secret — Not Player-Facing
 
-The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. The same line extends below ground: a reinforced chamber and support pillar under the Western Property, holding back the same pressure the watchtower line holds back above. That pillar has since failed — the actual cause of the sinkhole, not just water and limestone alone. The Masons don't know yet either (`quests/hollow-below-briarwatch.md`, Surface Layer — Western Property Sinkhole, GM Secret). See `factions/the-masons.md`, Known Works.
+The watchtower ruins are not unexplained to everyone — the Masons built them, along with the giant fence at the western edge, to hold a line against Turnroot Weald and carve out the ground Briarwatch farms. The larder fence — where the Tollbirds have made their larder — is one specific stretch of that same giant fence, not a separate structure. They still visit periodically to maintain the fence by carving fresh glyphs into the stone posts. Nobody in Briarwatch knows this. The same line extends below ground: a reinforced chamber and support pillar under the Western Property, holding back the same pressure the watchtower line holds back above. That pillar has since failed — the actual cause of the sinkhole, not just water and limestone alone. The Masons don't know yet either (`quests/hollow-below-briarwatch.md`, Surface Layer — Western Property Sinkhole, GM Secret). See `factions/the-masons.md`.
 
 ---
 
 ## Session 1 Routing
 
-Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of the route — see `places/roadhouse.md`, Session 1 Routing, for the retired riverboat opening.
+Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of the route — see `places/vultures-nest.md`, Entry — If the Party Arrives Here, for the retired riverboat opening.
 
 ---
 
