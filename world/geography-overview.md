@@ -41,6 +41,52 @@ Where a river runs close to the coastline itself, its banks turn to coral — re
 The system breathes, on top of the loop.
 Wind doesn't share the loop. It breathes the same in-and-out the tide does, only faster — each gust or breeze its own full inhale, a pause, an exhale, sometimes tight and quick, sometimes drawn into long still gaps between breaths — but there's no clockwise grain to it, nothing it runs with or against. It just pulses. Eclipseria with no prevailing direction to inherit, sits in crosswinds because of it — arriving from every side at once, never settling into one dependable quarter the way a coastal city's would.
 
+## Bearing Table
+
+**This file owns direction, distance and adjacency.** Anything anywhere in the repo that says where a place is relative to another place is making a claim about this table, and `agent-tools/check-geography.py` reads the rows below to check those claims. A bearing that isn't here isn't established — it's either unwritten or somebody guessed.
+
+Bearings are rough compass sense, not survey lines. "Northeast" means *that general way*, not 45.0°.
+
+| Place | Bearing | From | Established by |
+|---|---|---|---|
+| Glasslight Reach | north | Eclipseria | The Shape of the World, above |
+| Turnroot Weald | southwest | Eclipseria | The Shape of the World, above |
+| Vulture's Nest | southeast | Eclipseria | The Shape of the World, above |
+| Ashfall Wastes | south | Turnroot Weald | The Shape of the World, above |
+| Abyssal Ruins | south | Vulture's Nest | The Shape of the World, above |
+| Canille | northeast | Vulture's Nest | `places/canille.md` |
+| Pneum | northeast | Vulture's Nest | `places/pneum.md` |
+| Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
+| The Coil | east | Vulture's Nest | `places/the-coil.md` |
+| Briarwatch | west | Vulture's Nest | `places/briarwatch.md` — **see the conflict note below** |
+
+**Adjacency, where it's stated rather than a bearing:**
+
+- Turnroot Weald wraps the **northeastern edge** of the Ashfall Wastes, acting as a natural boundary.
+- Glasslight Reach sits at the **northernmost edge of the known world**; the Soft Edge is the northernmost water.
+- Briarwatch is cut into **Turnroot Weald's own eastern edge**, and its western fence is the boundary against the Weald.
+
+**Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
+
+**Coordinates** exist only on the Session 1 stretch, on a relative grid: the Unheld shoreline at roughly (0, −11), the Roadhouse at (0, −7) (`quests/washed-ashore.md`, `places/roadhouse.md`). Nothing else in the world is gridded and nothing needs to be.
+
+### Deliberately unplaced
+
+Not an oversight — these have no established position and a file that gives them one is inventing it.
+
+- **North of Turnroot Weald** — blank country. The Weald's expansion runs into it (`quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks), which is the reason to develop it.
+- **The Silent Choir** — deliberately unmappable, not on any grid (`places/the-silent-choir.md`).
+- **Clayhollow, Veldmire, Fog Basin, Weatherheart Vale, the Collection Plate** — written places with no stated position.
+- **Havenrise, Roaat** — named in rumour only (`places/capital/adventurers-hall.md`, Word of Mouth).
+
+### Known conflict — Briarwatch
+
+`places/briarwatch.md` places Briarwatch **a day's travel west of Vulture's Nest** *and* cut into Turnroot Weald's edge. Those two can't both hold as written: the Nest is southeast of the Capital, the Weald southwest, and the hubs are ~13 days apart, so one day west of the Nest is nowhere near the Weald's edge.
+
+The Session 1 route (shoreline → Roadhouse day 1 → Briarwatch day 2) depends on Briarwatch being close to the coast-side approach, and every other thing about Briarwatch — the Masons' fence, the Weald's encroachment, the Root Heart's redirected growth — depends on it touching the Weald. The Weald adjacency is doing far more work than the one-day-west line.
+
+**Unresolved on purpose.** Fixing it means either moving Briarwatch, stretching the day count, or changing where the Weald reaches, and that's a call about the map rather than a typo to patch. The checker reports the Briarwatch bearing as CONFLICTED rather than pretending either half is settled.
+
 ## Key Landmarks (Summary)
 
 | Location | Notes |
