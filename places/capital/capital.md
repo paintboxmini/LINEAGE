@@ -124,7 +124,7 @@ The Regency knows exactly where they went. The Regency profits from what they do
 ### Not yet written
 
 - **What happens when a supply line actually fails.** No grain reserve is described anywhere, no price mechanism, no account of what the Marketplace does when a line thins. A bad season has consequences nobody has mapped.
-- **Whether any village has refused the levy**, and what the response was. This is the most obvious point of open conflict in the setting and it is entirely unwritten.
+- **Whether more than one village has refused the levy.** One has — Quillet, eleven years ago, and the Regency's answer was to strike it from the register rather than send anyone (`places/quillet.md`). Whether Quillet is the only one, and whether the silence about it is confidence or embarrassment, isn't established.
 - **Whether anyone has noticed the fish.** Somebody must have. Who, and whether they were listened to, isn't established.
 - **One live consequence already exists whether or not the city knows it:** the Turnroot line is degrading, and if it fails, Briarwatch is a held span with forest on either side of it (`quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks). Whatever that does to the capital's table has not been thought about by anyone, in the fiction or out of it.
 

@@ -69,6 +69,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
 | Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
+| Quillet | southeast | Eclipseria | `places/quillet.md` — on the Vulture's Nest spoke, a day inside the Kings Road Inn |
 | Shunka island | north | Eclipseria | `experimental/the-shunka.md` — a river-web island in the web's northernmost reaches, slightly west of true north |
 | Shunka island | south | Glasslight Reach | `experimental/the-shunka.md` |
 | Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
@@ -115,6 +116,7 @@ Briarwatch is now described by what it touches: the Weald's eastern edge, two da
 | Vulture's Nest | Southeast | Heart of the river web; trade centre |
 | Abyssal Ruins | South of the Nest | Vast warped ancient site |
 | Briarwatch | The Weald's eastern edge | Farmland claim; two days inland from the shoreline |
+| Quillet | Kings Road, Nest spoke, capital side | Farm village struck from the register eleven years ago |
 | The Roadhouse | (0, −7) on the Session 1 grid | Regency waypoint between shoreline and Briarwatch |
 | Canille | Lake northeast of the Nest | Island village; still water |
 | Pneum | Lake northeast of the Nest | Sleeping village |
