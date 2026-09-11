@@ -22,6 +22,14 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`experimental/the-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
+## The Call
+
+**The curse was never dormant.** It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
+
+**Not to the Tithebound.** They hired the curse; they never made it. It came from a contracted order that raises orphans into cursegivers and spends one life per curse (`factions-and-races/the-spoken-for.md`). They are what he is looking for, and what he can plausibly get from them is an explanation rather than a cure — a Price paid in full doesn't undo on request, and that's stated cosmology rather than a wall the GM put up.
+
+Where that points him, and why it's Vulture's Nest: `experimental/session-1-convergence.md`.
+
 ## Wild Magic Summoning
 
 **This is a Trait**, not a Skill and not a Passive (`rules/character-creation.md`, Passives and Traits) — a line on the sheet that is simply true, costing no Action and taking no slot. It doesn't compete with STRONGJAW or HACKLES RISE for either of his two Passives.

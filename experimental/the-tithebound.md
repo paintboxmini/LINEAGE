@@ -1,6 +1,10 @@
 # The Tithebound
 
-*The Shunka's ancient enemy, and the people responsible for the royal curse — kept in `experimental/` alongside `experimental/the-shunka.md` until ready for `world/races/`.*
+*The Shunka's ancient enemy, and the people who **commissioned** the royal curse — kept in `experimental/` alongside `experimental/the-shunka.md` until it settles.*
+
+**They are the Lizardkin** (`factions-and-races/races-lizardkin.md`). *Tithebound* is what Shunka history calls them; *Lizardkin* is what the continent calls them; neither is established as their own word for themselves.
+
+**They did not lay the curse.** They hired it. The cursegiver came from a contracted order that raises orphans for exactly this and spends one per curse (`factions-and-races/the-spoken-for.md`) — so generations of Shunka grief point at the people who paid, and the people who built the weapon have never been in the story at all.
 
 ## What's Settled
 
@@ -8,7 +12,7 @@
 
 **Appearance.** Animalistic, lizard-folk — a heavier build than a snake, closer to a Komodo dragon but with sharper, more angular features than the real animal's blunt lines. Bipedal on land, walking hunched rather than upright — a posture that reads as awkward, almost labored, right up until they're in water. **Far more dangerous submerged than on land** — whatever makes the land gait look uncertain disappears entirely once they're swimming. The hunch is a body built for something else, not a body being bad at walking.
 
-**Ecosystem.** A river people, not a coastal one — their stretch of the continent's river web (`world/geography-overview.md`), not open sea. Almost entirely aquatic diet, built around what the river actually provides. Their island being small was survivable for a people this at home in water; the same island with the river's own catch running thin was the actual crisis, not the ground itself failing.
+**Ecosystem.** A river people, not a coastal one. They hold an island off the **lower east coast of the Shunka island** (`world/geography-overview.md`, Bearing Table), which is what put the two peoples in each other's way to begin with. Almost entirely aquatic diet, built around what the river actually provides. Their island being small was survivable for a people this at home in water; the same island with the river's own catch running thin was the actual crisis, not the ground itself failing.
 
 **Belief system — the Tithe.** A river people's religion, and a fairly grounded one once it's put plainly: you take from the river, so you give back to the river, or eventually there's nothing left to take. Regular ritual payment — catch, or something dearer when the catch wasn't enough — kept that reciprocity honest. It resonates with the cosmology's own Price (`world/creation-myth-the-three-cuts.md`, the Second Cut) — worth keeping as a nice bit of thematic trivia, a culture that happened to build an explicit practice around something everyone else pays without noticing — but it isn't the load-bearing reason the curse-worker could do what she did. That was one person, once, in extremity. The Tithe is what an entire people do every season, and it's closer to real-world river stewardship than to cosmological theology.
 
@@ -18,7 +22,7 @@
 
 ## What's Open
 
-**Whether the curse-technique survived her.** The original curse-worker paid her own existence to force the Price onto the Shunka queen's line (`experimental/the-shunka.md`) — she's gone, not just dead, unmade entirely. Given they're rebuilding an *army* this time rather than being described as rebuilding their magic, one live possibility: they learned from losing to the Shunka's own strength and are coming back to win that way instead, not repeat a one-time horror they may not even be able to repeat. Not decided — just as easily could be both.
+**Whether the curse-technique survived her.** It did — she was never its only practitioner, she was one of an order's spent children (`factions-and-races/the-spoken-for.md`). The original cursegiver paid her own existence to force the Price onto the Shunka queen's line (`experimental/the-shunka.md`) — she's gone, not just dead, unmade entirely. Given they're rebuilding an *army* this time rather than being described as rebuilding their magic, one live possibility: they learned from losing to the Shunka's own strength and are coming back to win that way instead, not repeat a one-time horror they may not even be able to repeat. Not decided — just as easily could be both.
 
 ## Related Documents
 

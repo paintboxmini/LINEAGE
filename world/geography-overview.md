@@ -59,6 +59,8 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
 | Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
+| Shunka island | north | Eclipseria | `experimental/the-shunka.md` — the continent's northern extent, slightly west of true north |
+| Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
 
 **Adjacency, where it's stated rather than a bearing:**
 
@@ -67,6 +69,10 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 - Briarwatch is cut into **Turnroot Weald's own eastern edge**, and its western fence is the boundary against the Weald.
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
+
+**The two northern islands sit outside the triangle**, and outside what Eclipseria counts as known. The Shunka hold an island at the continent's northern extent, slightly west of true north; the Lizardkin hold a smaller one off its lower east coast, which is why those two peoples were ever in each other's way.
+
+*This wants confirming rather than assuming:* `places/glasslight-reach.md` calls the Reach the northernmost edge of **the known world**, and the Soft Edge the northernmost water. The reading that makes both true is that the Shunka island is north of what Eclipseria knows about rather than north of everything — a place Pat is from and nobody at Vulture's Nest has heard of. If that's wrong, one of the two claims has to move.
 
 **Coordinates** exist only on the Session 1 stretch, on a relative grid: the Unheld shoreline at roughly (0, −11), the Roadhouse at (0, −7) (`quests/washed-ashore.md`, `places/roadhouse.md`). Nothing else in the world is gridded and nothing needs to be.
 
@@ -102,6 +108,8 @@ Briarwatch is now described by what it touches: the Weald's eastern edge, two da
 | Canille | Lake northeast of the Nest | Island village; still water |
 | Pneum | Lake northeast of the Nest | Sleeping village |
 | Apnea | Own lake southwest of the Nest | Hospice island; the dreaming layer |
+| Shunka island | North, outside the triangle | Homeland of the Shunka; slightly west of true north |
+| Lizardkin island | Off the Shunka island's lower east coast | Homeland of the Lizardkin, called the Tithebound |
 | The Coil | Deep lake east of the Nest | Doesn't appear on charts; the Ferryman knows where to look |
 
 *Unplaced on purpose, and not listed above: the Silent Choir, Clayhollow, Veldmire, Fog Basin, Weatherheart Vale, the Collection Plate, and everything north of the Weald. See Deliberately unplaced, above.*

@@ -30,21 +30,21 @@ This does a lot of quiet work:
 
 ---
 
-## Pat — the spirits point at a river
+## Pat — looking for the people who make the weapon
 
-**The catalyst, as Drew has it:** the curse was never dormant. It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — a thing laid on one royal line generations ago, arriving late and wide. The three cursed royals wake, and they send him out to find the answer.
+**The catalyst, as Drew has it:** the curse was never dormant. It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — a thing aimed at one royal line generations ago, arriving late and arriving wide. The three cursed royals wake, and they send him out.
 
-**What draws him to the Nest, and it's already in the files:** the Tithebound are a river people (`experimental/the-tithebound.md`). Not coastal — the continent's own river web, aquatic diet, islands they don't open to outsiders, contact treated as threat first. Their curse-worker is the one who laid this, and she unmade herself doing it.
+**What he's sent to find is not the Tithebound.** They commissioned the curse; they didn't make it and they can't unmake it. The cursegiver came from a contracted order that raises orphans into cursegivers and spends one per curse (`factions-and-races/the-spoken-for.md`). If anything alive understands what this curse is doing now — why it took generations to arrive, why it's widening, whether it stops — it's them. Pat is chasing a diagnosis, and probably doesn't know that's what it is yet.
 
-So the spirits don't need to name a destination. The curse names it for them. **If you are hunting a river people, you go to the water, and every river on this continent joins the same web.** Vulture's Nest is the densest point of it and the one port where anything that moves on water eventually passes and nobody asks what it is. A Shunka looking for a people who don't trade goes to the place that trades in everything.
+**Which makes Vulture's Nest the right destination on a different logic than hunting a homeland.** The order has no hall and doesn't advertise. There is nowhere to go and knock. But **an order that takes contracts has to be reachable by whoever places one** — somewhere there is a way to make an offer, and somewhere there is a person who carries it. Pat isn't looking for where they live. He's looking for the point of contact, and points of contact live in ports.
 
-**Proposal, and the strongest reading of what you've already written:** the reason the curse is spreading *now* is that the distance closed — and something closed it. The Tithebound have spent generations rebuilding a real army and waiting for the moment to strike. Movement on the river web would show at the Nest before it showed anywhere else: hulls nobody recognises, a stretch of water that's gone quiet, cargo with no provenance moving the wrong direction. Pat doesn't arrive knowing that. He arrives asking about the river, which is the only question he has, and the Nest is the only place where asking it gets an answer.
+The Nest is the obvious one. The Tideward Compact tolerates anything that moves through the right channels and stays quiet enough not to force the Regency's hand — unsafe magical items, forged papers, cargo without provenance (`places/vultures-nest.md`, The Tideward Compact). An order that needs both deniable commissions and a steady supply of children nobody misses is describing that town's blind spots precisely.
 
-*Flagged as a proposal because it commits the Tithebound to being in motion, which is a real decision about the campaign's back half. The Nest still works as his destination without it — "go to the river" is enough on its own.*
+**He arrives with a question nobody in the Nest wants asked out loud**, which is a better opening posture than arriving with a map.
 
-**Worth noticing:** the Tithebound are described as lizard-folk, and **Lizardkin** is on the race roster with nothing written (`factions-and-races/races-lizardkin.md`). Those are very probably the same people, and if they are, Pat's hunt and that empty file are the same piece of work.
+*Written as a proposal. The catalyst is Drew's; the Nest as the place you go to reach a contractable secret is mine, and it rests on the Compact's own stated hard lines rather than on anything invented.*
 
----
+**On the Shunka island:** it sits at the continent's northern extent, slightly west of true north, with the Lizardkin island off its lower east coast (`world/geography-overview.md`, Bearing Table). Pat has come a long way, from somewhere nobody at this dock has heard of, which is worth playing.
 
 ## Chris — no reason, which is the reason
 
@@ -105,7 +105,8 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 - **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`).
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
-- **The Nest as Session 1's opening** conflicts with `quests/washed-ashore.md`, which is currently the written Session 1 and starts on the Unheld shoreline. Vulture's Nest already carries a retired opening (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Whether the shoreline opening retires, becomes a flashback, or belongs to different characters is a call nobody has made.
+- **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
+- **The cursegiver order is new** and currently lives at `factions-and-races/the-spoken-for.md` under a working name. Where they are, how a contract reaches them, and whether they can undo anything are all deliberately open.
 
 ---
 
@@ -114,5 +115,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - `places/vultures-nest.md` — the town, the Compact, the Entry text
 - `places/pneum.md`, `places/canille.md`, `places/apnea.md`, `places/the-coil.md` — the four strange places one dock reaches
 - `experimental/kevin.md`, `experimental/pat.md`, `experimental/chris.md` — the three characters
-- `experimental/the-tithebound.md`, `experimental/the-shunka.md` — the curse, and the river people who laid it
-- `quests/washed-ashore.md` — the opening this would replace or displace
+- `experimental/the-tithebound.md`, `experimental/the-shunka.md` — the curse, and the river people who paid for it
+- `factions-and-races/the-spoken-for.md` — the cursegivers Pat is actually hunting
+- `factions-and-races/races-lizardkin.md` — the Tithebound, who paid for the curse rather than casting it
+- `quests/washed-ashore.md` — the other opening, still live

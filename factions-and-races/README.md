@@ -21,7 +21,7 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/races-forest-people.md` | Turnroot Weald. Live under canopy year-round and navigate by habit, not maps |
 | `factions-and-races/races-borrowers.md` | Subterranean. Read stone by feel, dig everything, fight only because the Stonecoils won't stop |
 | `factions-and-races/races-riverdogs.md` | **Not written.** Named and nothing else yet |
-| `factions-and-races/races-lizardkin.md` | **Not written.** Named and nothing else yet |
+| `factions-and-races/races-lizardkin.md` | Lizard-folk river people, deadly in water. Shunka history calls them the Tithebound |
 | `factions-and-races/races-sirens.md` | **Reserved.** Drew's daughter's, and hers to write. Not to be drafted by anyone else |
 
 ## Factions
@@ -34,3 +34,4 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/the-weavers.md` | Keep the Grid running, and keep repairing an extraction they know is wrong |
 | `factions-and-races/the-cellar-custodians.md` | The Waterworks guild. The city's first line against what comes up the channels |
 | `factions-and-races/demon-court.md` | Oni masks as rank and as fear instrument |
+| `factions-and-races/the-spoken-for.md` | Contracted cursegivers. Raises orphans, spends one per curse |
