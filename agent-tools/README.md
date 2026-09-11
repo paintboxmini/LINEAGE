@@ -21,6 +21,8 @@ Both exit 1 on a finding.
 
 `check-references.py` proves a name points at something. It cannot prove the thing it points at says what the citing line claims. `check-geography.py` closes one slice of that — direction — because direction is the one class of claim with a single owning file to check against.
 
+Worth knowing: building the bearing table caught more than running it did. Briarwatch was described as a day west of Vulture's Nest *and* on Turnroot Weald's edge, ~13 days apart, and nothing flagged it until somebody had to write both facts into the same table.
+
 Everything else is still hand-checked, and the standing example of why is the Steve bug: `characters/steve-and-pip.md` had Pip forming during the Final Current bathing ritual while `quests/tide-pulls-back.md` said he never bathed and never would. Two files asserting incompatible events. No reference was broken, no compass word appeared, and nothing mechanical could ever have seen it. That class needs a person reading both files with the question in mind.
 
 The cheap discipline that helps most isn't either script: **a claim derived from another file carries a citation to it.** The value isn't for the reader — it's that writing the citation means opening the file, which is where the contradiction gets noticed.

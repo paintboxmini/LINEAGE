@@ -15,7 +15,9 @@ Two severities, because they are worth very different amounts:
 
   CONFLICT   — the claim names a subject, a bearing and a reference, and the
                table says a different bearing. This is a real error and the
-               only thing that fails the run.
+               only thing that fails the run. A table row marked "conflict"
+               is never adjudicated against — claims about a place the map
+               itself hasn't settled drop to UNVERIFIED instead.
   UNVERIFIED — a directional claim the table can't adjudicate, because the
                subject isn't in it, or the sentence doesn't name one. Mostly
                fine, occasionally a place quietly acquiring a position nobody
@@ -42,8 +44,10 @@ compass word isn't a claim ("the northernmost water", a card's flavour text).
 
 What this does NOT do, stated plainly because the limits matter more than the
 coverage: distances, travel times, and whether a route is walkable in the days
-a file gives it — the Briarwatch conflict in the table is the standing example
-of why those stay hand-checked. And it only sees claims written as
+a file gives it. Building the table is what exposed the Briarwatch conflict —
+a day west of Vulture's Nest and also on the Weald's edge, ~13 days apart —
+but a person had to read the two claims together to see it; no bearing row
+contradicted another. And it only sees claims written as
 `<bearing> of|from <Place>`. The sentence that prompted this tool —
 "advances north ... along the spoke that runs from Turnroot Weald to
 Eclipseria" — has no such phrase in it, so this would not have caught it. What

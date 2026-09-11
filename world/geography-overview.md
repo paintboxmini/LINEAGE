@@ -58,7 +58,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Pneum | northeast | Vulture's Nest | `places/pneum.md` |
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
-| Briarwatch | west | Vulture's Nest | `places/briarwatch.md` — **see the conflict note below** |
+| Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
 
 **Adjacency, where it's stated rather than a bearing:**
 
@@ -79,24 +79,29 @@ Not an oversight — these have no established position and a file that gives th
 - **Clayhollow, Veldmire, Fog Basin, Weatherheart Vale, the Collection Plate** — written places with no stated position.
 - **Havenrise, Roaat** — named in rumour only (`places/capital/adventurers-hall.md`, Word of Mouth).
 
-### Known conflict — Briarwatch
+### Resolved — Briarwatch
 
-`places/briarwatch.md` places Briarwatch **a day's travel west of Vulture's Nest** *and* cut into Turnroot Weald's edge. Those two can't both hold as written: the Nest is southeast of the Capital, the Weald southwest, and the hubs are ~13 days apart, so one day west of the Nest is nowhere near the Weald's edge.
+`places/briarwatch.md` used to open with Briarwatch **a day's travel west of Vulture's Nest** *and* cut into Turnroot Weald's edge. Those couldn't both hold: the hubs are ~13 days apart, so one day west of the Nest is nowhere near the Weald.
 
-The Session 1 route (shoreline → Roadhouse day 1 → Briarwatch day 2) depends on Briarwatch being close to the coast-side approach, and every other thing about Briarwatch — the Masons' fence, the Weald's encroachment, the Root Heart's redirected growth — depends on it touching the Weald. The Weald adjacency is doing far more work than the one-day-west line.
+**The Weald adjacency won**, because everything load-bearing about Briarwatch hangs off it — the Masons' fence, the Weald's encroachment, the Root Heart's redirected growth, and Aege's own "a forest that presses right up against Briarwatch's own western edge." The Vulture's Nest day count was doing nothing but placing it, and placing it wrong.
 
-**Unresolved on purpose.** Fixing it means either moving Briarwatch, stretching the day count, or changing where the Weald reaches, and that's a call about the map rather than a typo to patch. The checker reports the Briarwatch bearing as CONFLICTED rather than pretending either half is settled.
+Briarwatch is now described by what it touches: the Weald's eastern edge, two days inland from the Unheld shoreline by way of the Roadhouse. No distance to Vulture's Nest is asserted anywhere, and none needs to be.
 
 ## Key Landmarks (Summary)
 
-| Location | Notes |
-|----------|-------|
-| Eclipseria (city) | Capital; seat of the Regency |
-| Glasslight Reach | Cliff town; faces the Soft Edge |
-| Turnroot Weald | Sentient forest; wraps Ashfall Wastes |
-| Ashfall Wastes | Ash-buried ruins; strange heat |
-| Vulture's Nest | Heart of the river web; Trade center |
-| Abyssal Ruins | Vast warped ancient site |
-| The Coil | Doesn't appear on charts; the Ferryman knows where to look |
-| Pneum | Sleeping village |
-| Apnea | Hospice island; the dreaming layer |
+| Location | Where | Notes |
+|----------|-------|-------|
+| Eclipseria (city) | Centre of the triangle | Capital; seat of the Regency |
+| Glasslight Reach | North | Cliff town; faces the Soft Edge |
+| Turnroot Weald | Southwest | Sentient forest; wraps Ashfall's northeastern edge |
+| Ashfall Wastes | South of the Weald | Ash-buried ruins; strange heat |
+| Vulture's Nest | Southeast | Heart of the river web; trade centre |
+| Abyssal Ruins | South of the Nest | Vast warped ancient site |
+| Briarwatch | The Weald's eastern edge | Farmland claim; two days inland from the shoreline |
+| The Roadhouse | (0, −7) on the Session 1 grid | Regency waypoint between shoreline and Briarwatch |
+| Canille | Lake northeast of the Nest | Island village; still water |
+| Pneum | Lake northeast of the Nest | Sleeping village |
+| Apnea | Own lake southwest of the Nest | Hospice island; the dreaming layer |
+| The Coil | Deep lake east of the Nest | Doesn't appear on charts; the Ferryman knows where to look |
+
+*Unplaced on purpose, and not listed above: the Silent Choir, Clayhollow, Veldmire, Fog Basin, Weatherheart Vale, the Collection Plate, and everything north of the Weald. See Deliberately unplaced, above.*
