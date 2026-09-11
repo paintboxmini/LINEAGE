@@ -27,9 +27,19 @@ A web of interconnected rivers laces the whole continent, pooling into lakes and
 
 The water itself stays ordinary. The coastline is a hard threshold — unheldness does not cross it, not by flowing and not by being carried.
 
-Waterfalls drive the circuit itself — climbing and falling, the push that keeps the whole web moving. The coast's own tide sets the in-and-out layered over that: water pushes inland as the tide comes in, holds, then pulls back out as it goes. That rhythm propagates through the web with a lag — when the outermost rivers, closest to the coast, are on their inward pulse, the innermost reaches are on their outward one, and vice versa. Two stretches of the same network can be running opposite directions at the same hour. The innermost reaches sit on the loop's own shortest circuit — bank width varies same as anywhere else in the system, that's not what does it. The loop itself simply has less distance to cover at the center than at the outer rings, and forcing a full inland pulse through that short a loop is what makes it dangerous: the same surge that spreads out and slows going out, has nowhere to go but through, all at once, near the center. High tide at the innermost web is the part sailors plan the most around. Eclipseria sits dead center of the river web, exactly where the loop is shortest and the tide runs fastest. This is exactly why river sailors are skilled at two different things, not one — reading which pulse a stretch is on and when it's about to turn is its own discipline, and actually handling a vessel through a current that can reverse under it is another. Knowing the water and working it are both real skill, not the same skill twice.
+Waterfalls drive the circuit itself — climbing and falling, the push that keeps the whole web moving.
 
-The loop runs clockwise — south along the eastern reach from Glasslight down toward Vulture's Nest, west across the southern stretch to Turnroot Weald, north back up to Glasslight. Traveling with that grain is the easy way: the current is doing half the work. Traveling against it — Vulture's Nest to Turnroot the short way, or any long haul upstream of the loop's natural pull — means giving up on fighting the current head-on and using the tide instead: ride an inland pulse as far as it goes, hold through the pause, catch the next outflow, repeat. Slower, and it only works because the tide's rhythm doesn't care which way the loop turns. A sailor who's only ever traveled with the loop has never actually needed both skills at once. A sailor who's fought it has.
+**Fast tide and slow tide.** The river tide is not a rise and fall. The water level barely moves; what changes is **how fast the water is going**. A stretch on **fast tide** runs hard and quick, and a stretch on **slow tide** goes sluggish and heavy. Every sailor on the continent talks in those two words and nobody talks about depth.
+
+**The two ends of the web are always on opposite tides.** When it is slow tide near the coast, it is fast tide near the capital. When the coast runs fast, the capital goes slow. The same network is doing two different things at the same hour, and which one a given stretch is doing depends entirely on where it sits between those ends.
+
+**The Unheld sets the clock.** Fast tide at the capital matches the timing of the Unheld's own high tide at the coast — the grey water is what the whole web is keeping time with, whatever the local stretch happens to be doing about it. That is the one fixed correspondence, and it is why a Vulture's Nest sailor can tell you what the capital's water is doing without having been there.
+
+**Eclipseria sits dead centre**, where the loop is shortest and the water has the least distance to cover, so fast tide runs hardest there. Fast tide at the innermost web is the thing sailors plan around most.
+
+Which is why river sailors are skilled at two different things rather than one: reading which tide a stretch is on and when it is about to turn is its own discipline, and handling a vessel through water that can change speed underneath it is another. Knowing the water and working it are both real skill, not the same skill twice.
+
+The loop runs clockwise — south along the eastern reach from Glasslight down toward Vulture's Nest, west across the southern stretch to Turnroot Weald, north back up to Glasslight. Traveling with that grain is the easy way: the current is doing half the work. Traveling against it — Vulture's Nest to Turnroot the short way, or any long haul upstream of the loop's natural pull — means giving up on fighting the current head-on and using the tide instead: run the stretches that are on slow tide, wait out the ones that aren't, and move again when the fast tide has passed you by. Slower, and it only works because the tide's rhythm doesn't care which way the loop turns. A sailor who's only ever traveled with the loop has never actually needed both skills at once. A sailor who's fought it has.
 
 Islands stand in the larger lakes and wider rivers. They are often inhabited, trade-connected, and reachable by boat. Whatever strangeness they hold is their own.
 
@@ -59,7 +69,8 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
 | Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
-| Shunka island | north | Eclipseria | `experimental/the-shunka.md` — the continent's northern extent, slightly west of true north |
+| Shunka island | north | Eclipseria | `experimental/the-shunka.md` — slightly west of true north |
+| Shunka island | south | Glasslight Reach | `experimental/the-shunka.md` |
 | Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
 
 **Adjacency, where it's stated rather than a bearing:**
@@ -70,9 +81,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
 
-**The two northern islands sit outside the triangle**, and outside what Eclipseria counts as known. The Shunka hold an island at the continent's northern extent, slightly west of true north; the Lizardkin hold a smaller one off its lower east coast, which is why those two peoples were ever in each other's way.
-
-*This wants confirming rather than assuming:* `places/glasslight-reach.md` calls the Reach the northernmost edge of **the known world**, and the Soft Edge the northernmost water. The reading that makes both true is that the Shunka island is north of what Eclipseria knows about rather than north of everything — a place Pat is from and nobody at Vulture's Nest has heard of. If that's wrong, one of the two claims has to move.
+**The two northern islands sit outside the triangle.** The Shunka hold an island toward the continent's northern extent, slightly west of true north and **south of Glasslight Reach** — so the Reach keeps its claim to the northernmost edge of the known world and the Soft Edge stays the northernmost water. The Lizardkin hold a smaller island off the Shunka island's lower east coast, which is why those two peoples were ever in each other's way.
 
 **Coordinates** exist only on the Session 1 stretch, on a relative grid: the Unheld shoreline at roughly (0, −11), the Roadhouse at (0, −7) (`quests/washed-ashore.md`, `places/roadhouse.md`). Nothing else in the world is gridded and nothing needs to be.
 
@@ -108,7 +117,7 @@ Briarwatch is now described by what it touches: the Weald's eastern edge, two da
 | Canille | Lake northeast of the Nest | Island village; still water |
 | Pneum | Lake northeast of the Nest | Sleeping village |
 | Apnea | Own lake southwest of the Nest | Hospice island; the dreaming layer |
-| Shunka island | North, outside the triangle | Homeland of the Shunka; slightly west of true north |
+| Shunka island | North, south of Glasslight | Homeland of the Shunka; slightly west of true north |
 | Lizardkin island | Off the Shunka island's lower east coast | Homeland of the Lizardkin, called the Tithebound |
 | The Coil | Deep lake east of the Nest | Doesn't appear on charts; the Ferryman knows where to look |
 

@@ -30,21 +30,23 @@ This does a lot of quiet work:
 
 ---
 
-## Pat — looking for the people who make the weapon
+## Pat — chasing one living person
 
-**The catalyst, as Drew has it:** the curse was never dormant. It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — a thing aimed at one royal line generations ago, arriving late and arriving wide. The three cursed royals wake, and they send him out.
+**The catalyst, as Drew has it:** the curse was never dormant. It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — a thing aimed at one royal line generations ago, arriving late and arriving wide. The three cursed royals wake at the royal cemetery and show him something.
 
-**What he's sent to find is not the Tithebound.** They commissioned the curse; they didn't make it and they can't unmake it. The cursegiver came from a contracted order that raises orphans into cursegivers and spends one per curse (`factions-and-races/the-spoken-for.md`). If anything alive understands what this curse is doing now — why it took generations to arrive, why it's widening, whether it stops — it's them. Pat is chasing a diagnosis, and probably doesn't know that's what it is yet.
+**What the vision gives him is a person, not a people.** Cursegiving is one Lizardkin family's technique, held inside a bloodline and taught to nobody else, and the woman who used it on his queen left descendants (`factions-and-races/races-lizardkin.md`, The Cursegivers). One of them is alive, off the island, **somewhere near Vulture's Nest.** That's the whole brief. It is a direction and a person and nothing else, which is the right amount for a man to leave home on.
 
-**Which makes Vulture's Nest the right destination on a different logic than hunting a homeland.** The order has no hall and doesn't advertise. There is nowhere to go and knock. But **an order that takes contracts has to be reachable by whoever places one** — somewhere there is a way to make an offer, and somewhere there is a person who carries it. Pat isn't looking for where they live. He's looking for the point of contact, and points of contact live in ports.
+**So the Nest isn't a lead — it's the destination he was given**, and he arrives to find that "somewhere near Vulture's Nest" describes about four hundred islands. The port is where the search starts failing productively.
 
-The Nest is the obvious one. The Tideward Compact tolerates anything that moves through the right channels and stays quiet enough not to force the Regency's hand — unsafe magical items, forged papers, cargo without provenance (`places/vultures-nest.md`, The Tideward Compact). An order that needs both deniable commissions and a steady supply of children nobody misses is describing that town's blind spots precisely.
+**Which is also why the island-hopping campaign is his campaign and not a detour from it.** Every strange small village on the water is somewhere a Lizardkin cursegiver could be hiding, and every one of them produces rumours instead of the person. The party goes to Canille and Pneum and Apnea because the table wants to; Pat goes because the answer might be there. Those are the same trip.
 
-**He arrives with a question nobody in the Nest wants asked out loud**, which is a better opening posture than arriving with a map.
+**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself (`world/geography-overview.md`, Bearing Table — off the Shunka island's lower east coast, most of a world away). To find someone near Vulture's Nest, the party has to sail to the far end of everything and ask.
 
-*Written as a proposal. The catalyst is Drew's; the Nest as the place you go to reach a contractable secret is mine, and it rests on the Compact's own stated hard lines rather than on anything invented.*
+**What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that, thwart it before it launches, and come away with the one detail that puts them back on the cursegiver's trail — which means the campaign's largest external threat and Pat's personal question resolve in the same room.
 
-**On the Shunka island:** it sits at the continent's northern extent, slightly west of true north, with the Lizardkin island off its lower east coast (`world/geography-overview.md`, Bearing Table). Pat has come a long way, from somewhere nobody at this dock has heard of, which is worth playing.
+*That shape is Drew's. It's recorded here because it changes what Session 1 is for: the Nest isn't the start of a wander, it's the start of a search that happens to run through every village the table wanted to visit anyway.*
+
+**On the Shunka island:** toward the continent's northern extent, slightly west of true north and south of Glasslight Reach (`world/geography-overview.md`, Bearing Table). Pat has come a long way, from somewhere most people at this dock have never had reason to think about.
 
 ## Chris — no reason, which is the reason
 
@@ -106,7 +108,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`).
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
-- **The cursegiver order is new** and currently lives at `factions-and-races/the-spoken-for.md` under a working name. Where they are, how a contract reaches them, and whether they can undo anything are all deliberately open.
+- **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. Who the living descendant is, what they're doing among continentals, and whether the technique can explain the spread are all open.
 
 ---
 
@@ -116,6 +118,5 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - `places/pneum.md`, `places/canille.md`, `places/apnea.md`, `places/the-coil.md` — the four strange places one dock reaches
 - `experimental/kevin.md`, `experimental/pat.md`, `experimental/chris.md` — the three characters
 - `experimental/the-tithebound.md`, `experimental/the-shunka.md` — the curse, and the river people who paid for it
-- `factions-and-races/the-spoken-for.md` — the cursegivers Pat is actually hunting
-- `factions-and-races/races-lizardkin.md` — the Tithebound, who paid for the curse rather than casting it
+- `factions-and-races/races-lizardkin.md` — the Tithebound, the cursegiver bloodline, and the army being rebuilt
 - `quests/washed-ashore.md` — the other opening, still live

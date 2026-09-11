@@ -24,14 +24,28 @@ It rhymes with the cosmology's own Price (`world/creation-myth-the-three-cuts.md
 
 **Closed and hostile.** They don't trade, don't open their islands to outsiders, and treat contact as threat first — consistent with a people preparing for a second war.
 
-## What They Did Not Do
+## The Cursegivers
 
-**They did not lay the royal curse.** The Shunka queen's line was cursed by a contracted outsider, not by a Tithebound hand — an order that raises and spends cursegivers, hired for the job when the field had already been lost (`factions-and-races/the-spoken-for.md`). The Tithebound bought the outcome. Somebody else paid for it and somebody else's child did the paying.
+**One family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving is a learned skill that a single Lizardkin family has passed down for as long as anyone has been counting, taught to their own and to nobody else.
 
-This matters for how a Shunka reads them, and for how wrong that reading is: generations of Shunka grief point at a people who commissioned the thing rather than performed it, and the ones who actually raise the weapon have never been in the story at all.
+**The cost is what keeps it rare.** A curse laid this way takes the caster's existence, not their life in the ordinary sense — the Price anchoring them comes off and lands on the target instead (`world/creation-myth-the-three-cuts.md`, The Second Cut). One curse, one person, gone. Not killed. Unmade, as though never Cut at all.
+
+So a family that holds this holds a weapon they can fire exactly as many times as they are willing to lose someone. **That is not a thing a people spends lightly, and it is the reason the Shunka curse is the only one anyone can name.**
+
+**The one who cursed the Shunka queen was one of theirs.** When the invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. She walked into it. She would have believed the queen deserved it — not because anyone tricked her, but because a family that has held this for generations has generations of reasons ready for why it is justified this time.
+
+**There is a descendant of hers alive now, somewhere near Vulture's Nest** (`experimental/session-1-convergence.md`). What a Lizardkin cursegiver is doing off the island and among continentals is the question, and it isn't answered.
+
+### The gap in the line
+
+**Proposal, not settled, and it's the best thing available here:** the unmaking took *her*, not the people already born from her. The line continued. But it continued around a hole — the family knows the technique came from someone, knows there was a woman, and cannot produce her name or her face. The First Cut is Naming (`world/creation-myth-the-three-cuts.md`), and something that was never Named cannot be remembered properly.
+
+So her descendants inherited a skill from a person their own family cannot describe. If you want a reason a descendant might leave the island and go looking, that is it, and it doesn't need Pat's story to justify it.
 
 ## Open
 
 - What they call themselves. *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them; neither is necessarily theirs.
-- Whether any Lizardkin live off that island — in the continental river web, at Vulture's Nest, anywhere a closed people's exiles would end up.
+- Whether any Lizardkin live off that island beyond the cursegiver descendant — in the continental river web, at Vulture's Nest, anywhere a closed people's exiles would end up.
+- Whether the cursegiver family is honoured, feared, or quietly avoided at home. A people who don't trade and treat contact as threat still have to live next door to the ones who can erase somebody.
+- Whether anyone in that family has ever refused at the end.
 - Whether the Tithe survived the war intact, or whether a people preparing for a second one still believes in giving back.

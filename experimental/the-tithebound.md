@@ -1,10 +1,10 @@
 # The Tithebound
 
-*The Shunka's ancient enemy, and the people who **commissioned** the royal curse — kept in `experimental/` alongside `experimental/the-shunka.md` until it settles.*
+*The Shunka's ancient enemy, and the people responsible for the royal curse — kept in `experimental/` alongside `experimental/the-shunka.md` until it settles.*
 
 **They are the Lizardkin** (`factions-and-races/races-lizardkin.md`). *Tithebound* is what Shunka history calls them; *Lizardkin* is what the continent calls them; neither is established as their own word for themselves.
 
-**They did not lay the curse.** They hired it. The cursegiver came from a contracted order that raises orphans for exactly this and spends one per curse (`factions-and-races/the-spoken-for.md`) — so generations of Shunka grief point at the people who paid, and the people who built the weapon have never been in the story at all.
+**The curse is theirs, and it belongs to one family inside them** — a technique held in a single bloodline, costing the caster their existence each time it's used (`factions-and-races/races-lizardkin.md`, The Cursegivers). A descendant of the woman who cursed the Shunka queen is alive now, off the island, somewhere near Vulture's Nest.
 
 ## What's Settled
 
@@ -22,7 +22,7 @@
 
 ## What's Open
 
-**Whether the curse-technique survived her.** It did — she was never its only practitioner, she was one of an order's spent children (`factions-and-races/the-spoken-for.md`). The original cursegiver paid her own existence to force the Price onto the Shunka queen's line (`experimental/the-shunka.md`) — she's gone, not just dead, unmade entirely. Given they're rebuilding an *army* this time rather than being described as rebuilding their magic, one live possibility: they learned from losing to the Shunka's own strength and are coming back to win that way instead, not repeat a one-time horror they may not even be able to repeat. Not decided — just as easily could be both.
+**Whether the curse-technique survived her.** It did — it was never hers alone, it is her family's, taught inside the bloodline and to nobody else (`factions-and-races/races-lizardkin.md`, The Cursegivers). The original cursegiver paid her own existence to force the Price onto the Shunka queen's line (`experimental/the-shunka.md`) — she's gone, not just dead, unmade entirely. Given they're rebuilding an *army* this time rather than being described as rebuilding their magic, one live possibility: they learned from losing to the Shunka's own strength and are coming back to win that way instead, not repeat a one-time horror they may not even be able to repeat. Not decided — just as easily could be both.
 
 ## Related Documents
 

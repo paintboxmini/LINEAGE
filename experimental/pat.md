@@ -26,9 +26,11 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **The curse was never dormant.** It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
 
-**Not to the Tithebound.** They hired the curse; they never made it. It came from a contracted order that raises orphans into cursegivers and spends one life per curse (`factions-and-races/the-spoken-for.md`). They are what he is looking for, and what he can plausibly get from them is an explanation rather than a cure — a Price paid in full doesn't undo on request, and that's stated cosmology rather than a wall the GM put up.
+**The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-Where that points him, and why it's Vulture's Nest: `experimental/session-1-convergence.md`.
+**What he can plausibly get out of it is an explanation rather than a cure.** A Price paid in full doesn't undo on request — stated cosmology, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+
+Where that points him, and how the search runs: `experimental/session-1-convergence.md`.
 
 ## Wild Magic Summoning
 
