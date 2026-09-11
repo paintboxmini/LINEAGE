@@ -40,7 +40,23 @@ This does a lot of quiet work:
 
 **Which is also why the island-hopping campaign is his campaign and not a detour from it.** Every strange small village on the water is somewhere a Lizardkin cursegiver could be hiding, and every one of them produces rumours instead of the person. The party goes to Canille and Pneum and Apnea because the table wants to; Pat goes because the answer might be there. Those are the same trip.
 
-**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself (`world/geography-overview.md`, Bearing Table — off the Shunka island's lower east coast, most of a world away). To find someone near Vulture's Nest, the party has to sail to the far end of everything and ask.
+### Pneum first, and the barge is why
+
+The opening job and Pat's opening lead are the same object. Corvel's held vessel is a barge full of visibly, floridly diseased people, and **everyone on that dock is calling them cursed** — which is the only word a port has for a body that's gone wrong for no reason anyone can name.
+
+Pat hears that word in the first hour, in the first place he looks, and it is exactly the word he crossed the world for. He follows it. Anyone would.
+
+**What he finds at Pneum is that they chose it.** Deliberate infection is communion there; disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count — the body is the trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
+
+**Three things that does, all of them worth more than a real lead would have been:**
+
+- **It teaches the search's actual difficulty.** Pat is hunting a curse in a world where *cursed* is what people say about anything they can't explain. The problem was never finding a curse. It's filtering out everything that isn't one, and he learns that in session two rather than session twenty.
+- **It lands on him personally.** The Shunka royal children were born marked — visibly, involuntarily, and nobody asked them. The Pneum faithful mark themselves on purpose and display it proudly. Same marked bodies, opposite consent, and he is the only person in the room for whom that comparison is not academic.
+- **It still moves the search forward, from the least likely direction.** Promise ritual barges run the rivers all the way down to the grey water and back (`places/pneum.md`) — this congregation covers more of the web than any trader does, and because they don't trade, nobody at the Nest has ever thought to ask them what they've seen. They are the best-travelled people nobody questions. The first real rumour about a Lizardkin living out on the water comes from them, offered freely, by people the party arrived prepared to be appalled by.
+
+*The shape is Drew's. What's written here follows from `places/pneum.md` as it already stands — none of the theology is invented for this.*
+
+**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself — off the Shunka island's lower east coast, in the northernmost reaches of the river web (`world/geography-overview.md`, Bearing Table). **That's a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the whole campaign is one network travelled end to end, and the party never leaves the water. To find someone near Vulture's Nest, they sail to the top of the world and ask.
 
 **What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that, thwart it before it launches, and come away with the one detail that puts them back on the cursegiver's trail — which means the campaign's largest external threat and Pat's personal question resolve in the same room.
 

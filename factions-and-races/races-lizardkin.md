@@ -8,7 +8,7 @@
 
 ## Where They Are
 
-An island off the **lower east coast of the Shunka island**, which itself sits at the continent's northern extent, slightly west of true north (`world/geography-overview.md`, Bearing Table).
+An island off the **lower east coast of the Shunka island**, both of them in the **northernmost reaches of the river web** rather than out at sea (`world/geography-overview.md`, Bearing Table). A river people on a river island, at the far end of the same network Vulture's Nest sits at the middle of.
 
 That proximity is the whole history. The Lizardkin island was small, the river's catch ran thin, and a people this at home in water needed ground that wasn't theirs — so they invaded the nearest ground there was. The Shunka repelled them cleanly in the field and the land problem was never solved, which is why it isn't over.
 

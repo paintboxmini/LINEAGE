@@ -41,7 +41,7 @@ Which is why river sailors are skilled at two different things rather than one: 
 
 The loop runs clockwise — south along the eastern reach from Glasslight down toward Vulture's Nest, west across the southern stretch to Turnroot Weald, north back up to Glasslight. Traveling with that grain is the easy way: the current is doing half the work. Traveling against it — Vulture's Nest to Turnroot the short way, or any long haul upstream of the loop's natural pull — means giving up on fighting the current head-on and using the tide instead: run the stretches that are on slow tide, wait out the ones that aren't, and move again when the fast tide has passed you by. Slower, and it only works because the tide's rhythm doesn't care which way the loop turns. A sailor who's only ever traveled with the loop has never actually needed both skills at once. A sailor who's fought it has.
 
-Islands stand in the larger lakes and wider rivers. They are often inhabited, trade-connected, and reachable by boat. Whatever strangeness they hold is their own.
+Islands stand in the larger lakes and wider rivers. They are often inhabited, trade-connected, and reachable by boat. Whatever strangeness they hold is their own. **The web's northern reaches hold the two that aren't trade-connected at all** — the Shunka island and, off its lower east coast, the Lizardkin's.
 
 Where a river runs close to the coastline itself, its banks turn to coral — reef growth thick enough to shape the channel, not just line it.
 
@@ -69,7 +69,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
 | Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
-| Shunka island | north | Eclipseria | `experimental/the-shunka.md` — slightly west of true north |
+| Shunka island | north | Eclipseria | `experimental/the-shunka.md` — a river-web island in the web's northernmost reaches, slightly west of true north |
 | Shunka island | south | Glasslight Reach | `experimental/the-shunka.md` |
 | Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
 
@@ -81,7 +81,9 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
 
-**The two northern islands sit outside the triangle.** The Shunka hold an island toward the continent's northern extent, slightly west of true north and **south of Glasslight Reach** — so the Reach keeps its claim to the northernmost edge of the known world and the Soft Edge stays the northernmost water. The Lizardkin hold a smaller island off the Shunka island's lower east coast, which is why those two peoples were ever in each other's way.
+**Both northern islands are river-web islands, not sea islands.** The Shunka hold one in the **northernmost reaches of the river web** — slightly west of true north, and south of Glasslight Reach, which keeps the Reach's claim to the northernmost edge of the known world and the Soft Edge's claim to the northernmost water. The Lizardkin hold a smaller island off the Shunka island's lower east coast.
+
+That they are both on the web matters more than where they sit. It is why the Lizardkin are a **river** people rather than a coastal one, why two peoples on separate islands were ever in each other's way, and why reaching either of them from Vulture's Nest is a long haul up the web rather than a sea crossing — the Nest being the densest point of the same network they live at the far end of.
 
 **Coordinates** exist only on the Session 1 stretch, on a relative grid: the Unheld shoreline at roughly (0, −11), the Roadhouse at (0, −7) (`quests/washed-ashore.md`, `places/roadhouse.md`). Nothing else in the world is gridded and nothing needs to be.
 
@@ -117,8 +119,8 @@ Briarwatch is now described by what it touches: the Weald's eastern edge, two da
 | Canille | Lake northeast of the Nest | Island village; still water |
 | Pneum | Lake northeast of the Nest | Sleeping village |
 | Apnea | Own lake southwest of the Nest | Hospice island; the dreaming layer |
-| Shunka island | North, south of Glasslight | Homeland of the Shunka; slightly west of true north |
-| Lizardkin island | Off the Shunka island's lower east coast | Homeland of the Lizardkin, called the Tithebound |
+| Shunka island | Northernmost reaches of the river web, south of Glasslight | Homeland of the Shunka; slightly west of true north |
+| Lizardkin island | River web, off the Shunka island's lower east coast | Homeland of the Lizardkin, called the Tithebound |
 | The Coil | Deep lake east of the Nest | Doesn't appear on charts; the Ferryman knows where to look |
 
 *Unplaced on purpose, and not listed above: the Silent Choir, Clayhollow, Veldmire, Fog Basin, Weatherheart Vale, the Collection Plate, and everything north of the Weald. See Deliberately unplaced, above.*

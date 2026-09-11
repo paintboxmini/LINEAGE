@@ -34,6 +34,10 @@ The Compact's position: unknown diseases, possible outbreak, crosses hard lines 
 
 The barge is the thread that leads the party to Pneum.
 
+**And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`experimental/session-1-convergence.md`, Pneum first, and the barge is why).
+
+**Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation better travelled than most traders. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of the river and are never questioned about it.
+
 ---
 
 ## Tone
