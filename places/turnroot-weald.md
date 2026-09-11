@@ -26,6 +26,7 @@ Mutated plants, luminescent mosses, and predators adapted to near-total darkness
 Notable species:
 - Black thorn vines — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
 - Luminova Leaves — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
+- Kelbi — small deer with living, flowering branches instead of antlers. The canopy's ordinary meat animal, and the only thing in the Weald that accepts the routing without complaint. They never leave the canopy.
 - Rootstalker — signature predator. Appears at Pressure 2+ when navigation fails.
 - Skeinwing — high-altitude glider, native to the sky above the canopy.
 - Blowback Beetle — dog-sized, plated, eats resinous understory, and blasts itself an open clearing wherever it stops. The only thing under this canopy that makes ground instead of being routed across it.

@@ -90,6 +90,8 @@ A navigation check is required when attempting to change location — even when 
 - The slope of terrain
 - Birds and other wildlife
 
+**Signs can also be followed on four legs.** A Kelbi under canopy goes where the Weald sends it and never gets lost, so trailing one in good faith counts as earned signs for one navigation, no check (`bestiary/kelbi.md`). The catch is the same catch as everything else here: it arrives where the forest wanted, not where the party did.
+
 **Signs can also be bought.** Seeker's Price takes coin pressed into the wood and gives signs back — see that entry for what each denomination buys.
 
 **Standard check:** DC 13 using one of three modes. DM can adjust ±2 based on fiction (e.g., +2 in dense roots, −2 when following earned moss signs).

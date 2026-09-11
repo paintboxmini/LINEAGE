@@ -103,6 +103,17 @@ Thin, flexible, incredibly strong. Still faintly warm when fresh; pulse slowly w
 
 ---
 
+### Flowering Branch
+*Source: Kelbi (`bestiary/kelbi.md`) — shed and found, or taken from a kill*
+
+A forked length of living wood with cream-and-rust blooms still on it. Cut from a kill it stays in flower about a day; found already shed, it is usually most of the way through its bloom already. Either way it is a material with a clock on it, and outside the canopy the clock runs faster.
+
+Forest families use them for cord-wrist work, for marking a gift, and for the gesture itself — a branch left where the forest can see it is a reciprocal offering that costs the giver something real, which is the only kind that counts (`quests/turnroot-weald-adventure.md`, Violation Consequence Matrix).
+
+**Use:** Not a combat item. A branch offered as a deliberate reciprocal offering clears the thieves-of-the-body standing a second Taking Without Gesture violation applies. Dried and pressed, it keeps its shape and loses its colour, and is worth about what any handsome dried flower is worth to somebody who wasn't there.
+
+---
+
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
 *Price: ~60 gold*
