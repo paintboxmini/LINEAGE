@@ -12,6 +12,10 @@ The bazaar sprawls before you — not the desperate predatory maze you expected 
 
 This is a settled transience. Everything looks temporary. Most of it has been here for years.
 
+**Who lives here.** People who could not pay the capital's taxes and stopped being registered because of it (`places/capital/capital.md`, Where the Food Comes From). They weren't exiled and nobody arrested them — the city simply requires you to be on a list to do business in it, and they came off the list. Most of them didn't leave. They went down.
+
+**The Wardens call them unregistered**, which is an administrative status, reversible in principle, and nobody's fault. **Down here the word is *priced out*,** which is a thing that was done to you. Which word someone uses tells you where they stand before they've said anything else.
+
 ## Atmosphere — Everyday Misbehavior
 
 - Coins occasionally roll uphill when dropped
@@ -22,7 +26,7 @@ This is a settled transience. Everything looks temporary. Most of it has been he
 
 ### The Card Economy
 
-Refugees trade their abilities to survive. In Tales Untold that takes the form of cards.
+The priced out trade their abilities to survive. In Tales Untold that takes the form of cards.
 
 **Buying is rare, and the stock is not.** What sits on a table here is almost always **tagged** — a technique from somewhere specific, a way of doing things that some place or person still teaches. Nobody stocks the common stuff, because everyone already knows it. A party with money and no leverage will find nothing worth having; a party with something genuinely uncommon to trade will find they are suddenly very interesting.
 

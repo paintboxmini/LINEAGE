@@ -56,7 +56,7 @@ What different city factions say about the council. Collected from marketplace m
 
 ## Elara vs. the Forge
 
-A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is something he treats as a quiet blasphemy. Forge-made gear is sold at the temple itself or through its resident artisans.
+A standing friction, not a war. The same instinct that made an entire underclass out of people who fell off the register (`places/capital/capital.md`, Where the Food Comes From) points at the Forge next. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is something he treats as a quiet blasphemy. Forge-made gear is sold at the temple itself or through its resident artisans.
 
 Guards occasionally "inspect" the temple precinct and are received with cold courtesy and minimal cooperation. Neither side has forced a confrontation: she can slow certain metal shipments and fuel allotments; he can make certain commissions simply unavailable to anyone known to be close to the Fox.
 
