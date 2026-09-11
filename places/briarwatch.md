@@ -12,6 +12,10 @@ Low hills. Overcast most of the year. Fields that produce reliably but require a
 
 The farmland doesn't stop at a tidy line — it was cut a little way into the Weald itself, and the watchtower ruins and the giant fence at the western edge are the only reason it stays cut. What used to live in that stretch of forest didn't relocate far: Briarwatch Jackalopes nest in the ruins now, and Briar Scratchers work the hedgerows and fencelines between fields.
 
+**It is farmed harder than it should be, and it has been for a long time.** Briarwatch feeds the capital, and the capital does not grow anything (`places/capital/capital.md`, Where the Food Comes From). That pressure runs one direction and never lets up: the claim exists at all because the Masons' line carved farmable ground out of the Weald's edge, and it has been worked past what that ground comfortably gives because there is always another season's demand behind it. Soil that needs attention gets attention; soil that needs rest doesn't get it.
+
+Nobody here frames it as a grievance. It's just the arrangement, and the farmers are tired rather than angry.
+
 Briarbundles stand in most of the fields — thorn cuttings and spare posts and sheared fenwool lashed upright, one per farm at least, more on the older claims. Every farmer used to build them.
 
 Shockquills work the dry margins — the road shoulders, the field edges, the loose scree around the watchtower ruins (`bestiary/shockquills.md`). Loaf-sized, quilled, and full of iron they sorted out of the dirt themselves. Nobody fences them out; they won't cross an irrigation channel, so the field layout already does it. Farmers know them mostly as a thing that happens to tools.

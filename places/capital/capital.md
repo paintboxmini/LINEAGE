@@ -95,6 +95,24 @@ Iron & Twine (tools, rope, travel gear), The Salt Pot (hot food, rations), Quill
 | Large / corner stall | 30 gold | Extra space, high-traffic location |
 | Multi-stall operation | 50 gold | Two or more adjacent pitches under one license |
 
+## Where the Food Comes From
+
+**The capital grows nothing.** Every loaf, every sack of grain, every root in the Salt Pot's stew arrived from somewhere with dirt — and the somewheres are farm claims like Briarwatch, a long road out, working ground harder than it wants to be worked because the demand behind them never eases (`places/briarwatch.md`).
+
+**The pressure runs one direction and the city doesn't feel it.** Nobody in Eclipseria thinks about where dinner came from, which is the ordinary condition of anywhere that has never gone without. The claims that feed it are tired; the city is fed.
+
+**Whose sphere it is:** Lady Elara's. Trade and business, every coin in the capital (`world/the-regency.md`) — which makes the food supply a commercial arrangement rather than a policy, priced and contracted like anything else passing through the Marketplace Wardens.
+
+### Not yet written
+
+**What this tension actually looks like inside the city.** A capital that depends entirely on outlying claims has failure modes — a bad season, a road closed, a claim that stops producing — and none of them are written down anywhere. There is no grain reserve described, no price mechanism, no account of what the Marketplace does when a supply line thins, and no faction whose interest is the food itself.
+
+This is a real gap rather than a deliberate silence. It's flagged here so that whoever fills it starts from the dependency above rather than inventing a parallel one.
+
+**One live consequence already exists whether or not the city knows it:** the Turnroot line is degrading, and if it fails, Briarwatch is a held span with forest on either side of it (`quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks). Whatever that does to the capital's table has not been thought about by anyone, in the fiction or out of it.
+
+---
+
 ## The Inner Precinct
 
 Past the Marketplace's noise, closer to the Citadel, the chaos gives way to something more deliberate. The Inner Precinct is the true administrative ring around the seat of power — four Halls, each standing under the physical and political shadow of the council member who runs it. There are no intermediary guildmasters here; the council members are the operational heads of their own branches, and the Halls are simply where that work happens.

@@ -56,7 +56,13 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 *The shape is Drew's. What's written here follows from `places/pneum.md` as it already stands — none of the theology is invented for this.*
 
-**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself — off the Shunka island's lower east coast, in the northernmost reaches of the river web (`world/geography-overview.md`, Bearing Table). **That's a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the whole campaign is one network travelled end to end, and the party never leaves the water. To find someone near Vulture's Nest, they sail to the top of the world and ask.
+**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself — off the Shunka island's lower east coast, in the northernmost reaches of the river web (`world/geography-overview.md`, Bearing Table). **That's a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the search has a spine and the spine is the water. To find someone near Vulture's Nest, they sail to the top of the world and ask.
+
+**The spine is not a corridor.** The table has already seen the map and already been handed one-line teasers about half the continent — the singing cliffs, the Weald's customs, the ash desert, the crystal abyss, the Nest as the trade hub, Briarwatch farmed out to feed the capital. Players go where the teasers are. They will find a reason to go inland, and the reason does not have to be good.
+
+**It doesn't need to be, because the search is a rumour search.** Pat is not following a river, he is following what people say about a family that erases itself. That travels with trade, and trade goes overland as readily as it goes by water — the Kings Road exists, the Nest is the hub that feeds it, and a name heard in Briarwatch counts exactly as much as a name heard on a barge. An inland leg is never off-thread; it is the same thread on a different road.
+
+So: **the water is where the campaign returns, not where it is confined.** A GM should expect the party to leave it early and often, and should not need to invent a river-shaped excuse to let them.
 
 **What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that, thwart it before it launches, and come away with the one detail that puts them back on the cursegiver's trail — which means the campaign's largest external threat and Pat's personal question resolve in the same room.
 
@@ -102,6 +108,8 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 They are four people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
 
 **Why this is the right opening and not just a convenient one:** following the barge leads to Pneum, an island village of Promise-adjacent people with their own practice and their own rules. The first job the party takes *is* the campaign they said they wanted, and nobody has to announce that.
+
+**And the opening doesn't lock the map.** Starting at the Nest means starting at the hub — every road and every river leaves from there, and the inland places the table has already been teased about are open from day one.
 
 ### 2. Bartho's offer
 
