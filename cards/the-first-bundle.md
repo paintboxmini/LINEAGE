@@ -9,7 +9,7 @@ BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
 Effect: Apply Staggered. If the defender is already Staggered, apply Rooted and deal +3 damage.
 Defense Effect: Gain Evade.
-Range: Both
+Range: Melee
 *"There is always one more."*
 
 ---
@@ -19,7 +19,7 @@ RED — BODY — BRIARWATCH
 Attack: Body + d8
 Effect: If the defender is in the Backline, deal +4 damage.
 Defense Effect: Pull the attacker to your position.
-Range: Both
+Range: Ranged
 *"The posts were the arms. They were always the arms."*
 
 ---

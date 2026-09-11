@@ -1,6 +1,6 @@
 # River Fishing — The Pull
 
-A table minigame, not a combat mechanic. Anywhere there's a real river (`world/geography-overview.md`, Rivers and Lakes — which is most of the continent), a character can cast a line. What happens next runs partly on dice and partly on how fast the table actually reacts, on purpose.
+A table minigame, not a combat mechanic. Anywhere there's a real river (`world/geography-overview.md`, River system — which is most of the continent), a character can cast a line. What happens next runs partly on dice and partly on how fast the table actually reacts, on purpose.
 
 ---
 
@@ -11,6 +11,8 @@ A table minigame, not a combat mechanic. Anywhere there's a real river (`world/g
 **The player has to answer fast.** Roll the named stat plus a d6, and say the total out loud as quickly as they actually can. This is a genuine real-world speed test, not a fictional one — the table's actual reaction time is the mechanic.
 
 **The DC climbs the longer it takes to answer.** Baseline DC 10. Every few seconds of real hesitation — squinting at a character sheet, asking "wait, which stat" — pushes it up a point or two. This isn't meant to run on a stopwatch; the GM feels it out. A fast, confident answer is fighting a much easier fish than a slow one.
+
+**The water near the capital is fished out, and the table should feel it.** The inner reaches have been supplying Eclipseria's shortfall for a long time (`places/capital/capital.md`, Where the Food Comes From) — so close to the city, run the bite slower and the catch smaller, and let a success be a modest fish rather than a good one. Out at the edges of the web, where nobody is feeding a capital, it plays the way it's written. Nobody in Eclipseria has connected the two.
 
 **Success:** the fish is landed — a real, tangible catch, food or a small sale to whoever's cooking that night (Senshi, a Nest stall, whoever's around). **Failure:** the line snaps, or the fish just gets away. Nothing worse. This is meant to be fun, not cutthroat — a bad roll costs a fish, never more than a fish.
 

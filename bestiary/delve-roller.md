@@ -6,7 +6,7 @@
 **Creature Threat Rating:** 4
 
 
-**Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · ROLLOUT, GORE *(red)* · PATIENCE OF STONE *(green)*
+**Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · PLANT, GORE *(red)* · PATIENCE OF STONE *(green)*
 **Cards:** `cards/delve-roller-hollow.md`
 
 ---
@@ -21,7 +21,7 @@ Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vib
 
 ---
 
-## Passive — Rolled Shell
+## Trait — Rolled Shell
 
 **Armour 1** (`rules/card-glossary.md`). Reduce all incoming attack damage by 1, every attack, all fight.
 

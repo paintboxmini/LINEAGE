@@ -9,11 +9,11 @@ Canonical definitions for all keywords and status cards used in Tales Untold. Wh
 ## Keywords
 
 <!-- print:skip-start -->
-*The number before each keyword is how many **core** cards use it — the four lists a deck actually builds from (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`, `cards/colorless.md`), 166 cards as of 2026-09-08. Creature signature cards are deliberately excluded: they are one-offs written for a single stat block, so counting them tells you nothing about how common a keyword is in play. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
+*The number before each keyword is how many **core** cards use it — the four lists a deck actually builds from (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`, `cards/colorless.md`), 165 cards as of 2026-09-09. Creature signature cards are deliberately excluded: they are one-offs written for a single stat block, so counting them tells you nothing about how common a keyword is in play. These counts are stripped from the printed packet (`printing/generate-rules-pdf.py`), so they exist for maintenance here and nowhere else.*
 
 *A keyword counts when a card names it in an Attack, Effect, Defense Effect, or Special Rule line, once per card however many times it appears. Conditional references ("if the defender is Rooted") and negations ("cannot be affected by Blind" — CERTAIN STRIKE, the only live example) don't count toward the keyword being referenced; those cards are counted under whatever they actually grant instead. Case and inflection don't matter — several cards write "unpreventable" in lower case mid-sentence, STEAL says "Exiled" rather than "Exile", and three cards write "Positive Status Effect" singular. Match the word stem, not the glossary header. Debuff sits at 0 on purpose: no card names it, and it exists for Ward's definition to point at.*
 
-*To recount: `python3 combatsimulations/cards.py` loads every card, `core_pool()` in that module is exactly the four lists above, and a word-boundary case-insensitive search of the four text lines reproduces these numbers once the two exclusions above are taken out by hand.*
+*To recount: `python3 combat-simulations/cards.py` loads every card, `core_pool()` in that module is exactly the four lists above, and a word-boundary case-insensitive search of the four text lines reproduces these numbers once the two exclusions above are taken out by hand.*
 
 <!-- print:skip-end -->
 
@@ -28,10 +28,10 @@ Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effe
 **(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
-**(19) Deadly**
+**(18) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
-**(8) Weak**
+**(9) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(10) Anchored**
@@ -44,7 +44,7 @@ A specific benefit persists as long as you do not change positions, triggering a
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
-**(12) Evade**
+**(11) Evade**
 50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.

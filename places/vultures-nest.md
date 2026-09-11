@@ -20,7 +20,7 @@ The hard lines: nothing so destructive it destabilizes the region, nothing so vi
 
 ## The Tide
 
-The rivers breathe with the Unheld — when the grey water pulls back at the coast, the rivers drop in answer, all the way inland. When the pull is unusually deep:
+The rivers keep time with the Unheld, but the Nest sits near the coastal end of the web, so it runs **slow tide when the capital runs fast** and the other way round (`world/geography-overview.md`, River system). Level barely changes; speed does. A slow-tide stretch here goes sluggish and heavy, and a slow tide that runs deeper and longer than it should is the one everybody watches for. When it does:
 
 - Wrecks appear along the banks, many showing signs of apparent violence
 - Old foundations surface

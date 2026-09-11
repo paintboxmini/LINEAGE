@@ -9,7 +9,7 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Vulnerable
 Defense Effect: Gain Resist
-Range: Both
+Range: Ranged
 *"You will hear this again on your way out. That is not a promise. That is a warning."*
 
 ---
@@ -19,7 +19,7 @@ GREEN — SOUL
 Attack: Soul + d4
 Effect: Choose a card at random from the defender's hand. It becomes Locked — that card cannot be played. It does not clear when combat ends; it holds until the party clears the Silent Choir.
 Defense Effect: Choose a card at random from the attacker's hand. Same Locked, same duration.
-Range: Both
+Range: Ranged
 *"Some notes are not played. They are withheld, on purpose, forever."*
 
 ---

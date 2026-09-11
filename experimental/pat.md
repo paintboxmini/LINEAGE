@@ -22,9 +22,19 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`experimental/the-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
+## The Call
+
+**The curse was never dormant.** It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
+
+**The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
+
+**What he can plausibly get out of it is an explanation rather than a cure.** A Price paid in full doesn't undo on request — stated cosmology, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+
+Where that points him, and how the search runs: `experimental/session-1-convergence.md`.
+
 ## Wild Magic Summoning
 
-Confirmed mechanic, a line on the character sheet rather than a Skill or Passive:
+**This is a Trait**, not a Skill and not a Passive (`rules/character-creation.md`, Passives and Traits) — a line on the sheet that is simply true, costing no Action and taking no slot. It doesn't compete with STRONGJAW or HACKLES RISE for either of his two Passives.
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
@@ -38,7 +48,6 @@ Still open:
 
 - Whether HERE BOY and LET'S GO are the *only* two triggers.
 - Whether more than one spirit can be out at a time (there are only three to draw on).
-- Whether this sits outside the normal Skill/Passive framework as a one-off heritage trait, or is meant to work through it somehow.
 
 ## Passives
 

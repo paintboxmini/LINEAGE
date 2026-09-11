@@ -8,8 +8,8 @@ Signature cards for the Trisect. See `bestiary/trisect.md`. Tagged as ASHFALL �
 RED — BODY — ASHFALL
 Attack: Body + d8
 Effect: If you shifted your own initiative later on your last turn, deal +4 damage and apply Staggered.
-Defense Effect: Gain Thorns 2.
-Range: Both
+Defense Effect: Gain Thorns 4.
+Range: Melee
 *"It was never resting. It was deciding."*
 
 ---

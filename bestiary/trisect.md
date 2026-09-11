@@ -17,7 +17,7 @@ It idles before it engages. The three engines find a rhythm together — a low, 
 **Deck (15 — 5 Blue / 5 Red / 5 Green):** ERODE, AXIOM, UNMAKE, MARKED, EVEN CHURN *(blue)* · SUNDER, CERTAIN STRIKE, REND, RHYTHM BREAK, IDLE TO ENGAGE *(red)* · WITHER, LEVEL THE FIELD, DISORIENT, BIND, LOW GREY HAZE *(green)*
 ---
 
-## Passives
+## Traits
 
 **Triple Engine Hearts**
 Three combustion engines sit exposed in the central chassis. The Trisect cannot be reduced below 1 HP until Red, Blue, and Green have each landed at least one successful hit.

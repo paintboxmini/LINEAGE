@@ -23,6 +23,22 @@ Percival holds the Owl now — but he isn't the first replacement. The position 
 | Lord Percival | The Owl | silent, observant, keeps records. |
 | Lady Eveline | The Elephant | **The Weavers.** Critical infrastructure's political half — the Grid. |
 
+## The Turnroot Standing Order
+
+The Council keeps one bounty that predates every sitting member: the growth at the center of Turnroot Weald is to be cut down. Standing, renewed each season, no review. It runs through Cedric's sphere and gets posted at the Adventurers' Hall alongside census work and caravan disputes (`places/capital/adventurers-hall.md`, The Board).
+
+It is not a monster problem. The Council knows the boundary at the Weald's western edge is degrading, and knows the forest's aggressive phase is what degrades it (`bestiary/root-heart.md`, The Overgrowth Cycle). It cannot maintain that boundary — the Regency didn't raise it and doesn't tend it — so it buys time instead, hiring whoever will go end the phase early. The Heart re-forms afterward. That is why the order stands rather than closing.
+
+The Council knows perfectly well that the boundary is Mason work (`factions-and-races/the-masons.md`, Known Works). It is not coordinating with them, and the bounty is not a subcontract — the Masons take no commissions and would not take this one. The Regency is doing the only thing available to a body that understands the problem, can't perform the work, and can't direct the people who can: reduce the load on a line somebody else is maintaining, and say nothing to anyone about why.
+
+## The Masons
+
+**What the Council Knows.** More than anyone outside the order, and far more than it says. The Regency understands roughly what the glyphs are for, that the order goes where catastrophe is imminent rather than where it's invited, and that a Mason at work is not to be interfered with. Standing instruction to Cedric's people, unwritten and never explained down the chain: a Mason is left alone. Guards who've passed that order along assume it's about the superstitions. It isn't.
+
+This is characteristic rather than exceptional. The Council knows more than it says about most things; the Masons are one more file it keeps and doesn't open in public.
+
+**What it does not have is any authority over them.** The order is independent, holds no charter, and accepts no commissions — there is nothing to revoke and nothing to buy. The Regency has never formalized the relationship, and whether it has ever tried is not established. What exists instead is a working accommodation neither side has ever put in writing: the Masons work where they judge they need to, the Regency doesn't obstruct them and doesn't advertise them, and where the two interests happen to align — as at the Weald — the Regency acts on its own side of the line without telling the order it's doing so. See The Turnroot Standing Order, below.
+
 ## Rumors
 
 What different city factions say about the council. Collected from marketplace merchants and temple district regulars.
@@ -40,7 +56,7 @@ What different city factions say about the council. Collected from marketplace m
 
 ## Elara vs. the Forge
 
-A standing friction, not a war. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is something he treats as a quiet blasphemy. Forge-made gear is sold at the temple itself or through its resident artisans.
+A standing friction, not a war. The same instinct that made an entire underclass out of people who fell off the register (`places/capital/capital.md`, Where the Food Comes From) points at the Forge next. Lady Elara wants every high-value good moving through the city registered, taxed, and brought under the same commercial rules that govern every Marketplace stall — to her, the Temple of the Forge's output is simply incomplete regulation. Harlan Vetch refuses on principle: shaping metal into weapons and armor is an offering, not a commercial act, and licensing it through Elara's apparatus is something he treats as a quiet blasphemy. Forge-made gear is sold at the temple itself or through its resident artisans.
 
 Guards occasionally "inspect" the temple precinct and are received with cold courtesy and minimal cooperation. Neither side has forced a confrontation: she can slow certain metal shipments and fuel allotments; he can make certain commissions simply unavailable to anyone known to be close to the Fox.
 

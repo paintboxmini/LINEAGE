@@ -17,6 +17,8 @@ Prolonged exposure is draining. The landscape seems to press unresolved things u
 - `bestiary/alignment-marshal.md` — Alignment Marshal (War Engine chase boss)
 - `bestiary/tithe-engine.md` — The Tithe Engine and Scorch Drones (Calcine Flats)
 - `bestiary/ashgrazer.md` — Ashgrazer Alpha and Packgrazer (Cindersink)
+- `bestiary/scorchback-beetle.md` — grazes the warm ground at the Cindersink margins; the source of cinder flake
+- `bestiary/blowback-beetle.md` — its dog-sized cousin, which works the Turnroot understory instead of this scrub; the source of bellows dust
 - `cards/tithe-engine-ashfall.md` — Tithe Engine, Scorch Drone, and Exhaust status cards
 - `cards/ashgrazer-ashfall.md` — Ashgrazer Alpha and Packgrazer cards
 - `places/abyssal-ruins.md` — what the Engine was aimed at, and was aimed at again

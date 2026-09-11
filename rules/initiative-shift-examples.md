@@ -2,7 +2,7 @@
 
 Compact worked cases for the Wheel and Initiative Shift, in the notation Drew and Claude settled on while building the mechanic: four combatants, `a` through `d`, listed clockwise starting from whoever's currently acting. Read `rules/combat.md` (The Wheel) and `rules/card-glossary.md` (Initiative Shift X) first — this file exists to make those rules concrete, not to restate them.
 
-Every case below was worked through and confirmed directly; none of it is invented to fill a gap. See `memory.md`'s threshold log for the sessions these came from if the reasoning behind a specific ruling matters.
+Every case below was worked through and confirmed directly; none of it is invented to fill a gap.
 
 ---
 

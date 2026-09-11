@@ -13,7 +13,7 @@ BLUE — MIND — ENGINE
 Attack: Mind + d6
 Effect: Expose Red — choose 1 card in the target's hand without looking. If it is Red, inflict Staggered.
 Defense Effect: Scry 2.
-Range: Both
+Range: Ranged
 *"The prism rotates. The pattern identified."*
 
 ---
@@ -23,7 +23,7 @@ BLUE — MIND — ENGINE
 Attack: Mind + d6
 Effect: Defender gains Blind.
 Defense Effect: Scry 1.
-Range: Both
+Range: Ranged
 *"Geometric lines sketch across nearby surfaces."*
 
 ---
@@ -43,7 +43,7 @@ RED — BODY — ENGINE
 Attack: Body + d6
 Effect: Shuffle 1 Exhaust into target's deck.
 Defense Effect: Gain Resist.
-Range: Both
+Range: Ranged
 *"The engine does not tire."*
 
 ---

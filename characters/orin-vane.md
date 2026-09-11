@@ -33,7 +33,7 @@ Mage-sword fencer. Available for hire, particular about clients.
 Mind 6 / Body 5 / Soul 4 — HP 25
 Creature Threat Rating: 15
 
-Passive — Dual Strike: Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire.
+Trait — Dual Strike: Orin plays 2 cards per turn, each resolving as a separate attack. Both Effects may fire.
 
 Deck 
 

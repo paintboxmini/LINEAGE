@@ -7,7 +7,7 @@
 **Mind 5 / Body 6 / Soul 6 — HP 35**
 **Creature Threat Rating:** 17
 
-**Deck (17 — 5 Blue / 6 Red / 6 Green):** ANOTHER JOINT, UNNAME, AXIOM, ERODE, UNMAKE *(blue)* · FENCE-POST REACH, GORE, REND, IRON GRIP, BRACE, RETALIATE *(red)* · THE WOOL IS MUSCLE, BIND, SYNCHRONY, FIELD MEDICINE, SHARED BURDEN, ROOTED OATH *(green)*
+**Deck (17 — 5 Blue / 6 Red / 6 Green):** ANOTHER JOINT, UNNAME, AXIOM, ERODE, UNMAKE *(blue)* · FENCE-POST REACH, GORE, REND, IRON GRIP, BRACE, RETALIATE *(red)* · THE WOOL IS MUSCLE, BIND, UNIFY, FIELD MEDICINE, SHARED BURDEN, ROOTED OATH *(green)*
 
 ---
 
@@ -73,4 +73,4 @@ Armour 2 does not arrive until the third stage on purpose. Early damage matters 
 
 - `bestiary/briarbundles.md` — the four field forms, and the folklore this is the end of
 - `places/briarwatch.md` — the fields it stands in
-- `factions/the-masons.md` — the built things along this border that were made on purpose
+- `factions-and-races/the-masons.md` — the built things along this border that were made on purpose

@@ -2,7 +2,7 @@
 
 A working vocabulary for naming new cards, from Drew. Kept as a source to pull from when a gap needs filling — not a design spec, and nothing here is committed to becoming a card.
 
-**Names already used by a card have been struck from these lists**, so anything still written here was free as of 2026-09-07. Re-check anyway before committing to one — this file goes stale the moment a card is added or renamed, and duplicate names are not merely untidy: `printing/generate-cards.py` resolves a set's fixed card list by name into a first-wins dict, so a collision silently prints the wrong card. That is exactly what the Red/Green BRACE duplicate did to the Oracle deck (`experimental/archives/cut-cards.md`). To re-check: `python3 combatsimulations/cards.py` loads every card, and `by_name()` in that module is the same lookup the printer builds.
+**Names already used by a card have been struck from these lists**, so anything still written here was free as of 2026-09-07. Re-check anyway before committing to one — this file goes stale the moment a card is added or renamed, and duplicate names are not merely untidy: `printing/generate-cards.py` resolves a set's fixed card list by name into a first-wins dict, so a collision silently prints the wrong card. That is exactly what the Red/Green BRACE duplicate did to the Oracle deck (`experimental/archives/cut-cards.md`). To re-check: `python3 combat-simulations/cards.py` loads every card, and `by_name()` in that module is the same lookup the printer builds.
 
 **Breadth is the thing to weigh.** A card's name is what a player spends outside combat on an Advantage discard, so a broad verb applies to more attempts and is worth more than a narrow one — see `rules/cards.md`, The Name Is Half the Card. Most of the words below are broad by construction, which is what makes them useful; the parser-style multi-word entries are narrower and correspondingly cheaper.
 
@@ -98,7 +98,7 @@ Where a card offsets strength with a cost, the name should imply sacrifice or st
 
 The 2026-09-06 balance pass left the pool thin in exactly two places. One is now filled; new cards land most usefully in the other.
 
-- **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE, a mechanical duplicate of BRAMBLE, and CONSUME, and Green could not absorb another melee loss from the Oracle. It now has three benched melee cards to lose.
+- **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE and CONSUME. Green now has bench depth at melee; the Oracle's three melee seats are BIND, SMOKESCREEN and BRISTLE, with BOLSTER, AWAKEN and CONSUME behind them.
 - **Blue melee.** Six of ten are in the Oracle; of the rest, UNNAME and TAINT are barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for.
 
 Red has bench depth at every range.

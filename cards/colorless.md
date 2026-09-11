@@ -12,7 +12,7 @@ Attack: Mirrors the color and stat of whoever acted immediately before you + d6.
 Effect: Defender gains Blind.
 Defense Effect: Gain Evade.
 Range: Both
-*"Whatever they were becomes what I am."*
+*"You swung at where I was. I was never only there."*
 
 ---
 

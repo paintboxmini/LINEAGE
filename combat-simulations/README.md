@@ -87,7 +87,7 @@ To play a real creature, build a `Combatant` with its stat block from
 `bestiary/` and a deck from its signature cards plus core fill:
 
 ```python
-# from inside combatsimulations/
+# from inside combat-simulations/
 import cards, engine
 sig = cards.load('fermata')
 fermata = engine.Combatant('Fermata', body=12, mind=10, soul=20,

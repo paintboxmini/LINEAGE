@@ -95,7 +95,7 @@ SETS = {
         # `../characters/frost.md` — order matches that file's own
         # Red/Blue/Green grouping, not registration order in the core files.
         'cards': [
-            'SACRIFICE STRIKE', 'BLOOD IN THE GAP', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
+            'REPAY', 'BLEED', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
             'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
             'TWIN STRIKE',
         ],
@@ -133,10 +133,10 @@ SETS = {
             # folded into GUARD and cut.
             #   renamed: CLIFF SONG -> HEALING SONG (also Both -> Ranged),
             #            RECOVER -> SECOND WIND
-            #   out:     INTERCEPT (cut), BLOOD IN THE GAP, EMERGENCY REPAIRS
+            #   out:     INTERCEPT (cut), BLEED, STAUNCH
             #   in:      OFF BALANCE + CLOSE IN (melee),
             #            CERTAIN STRIKE (ranged)
-            #   REELING out with the Staggered ban, TRAMPLE in (both melee).
+            #   RATTLE out with the Staggered ban, TRAMPLE in (both melee).
             #   OFF BALANCE keeps Staggered, gated to a clean win — the one
             #   card in the deck allowed to inflict it.
             # Three in for three out: INTERCEPT's cut left the colour at 20,
@@ -168,7 +168,7 @@ SETS = {
             #            DEAD END -> PINNED, FORESEEN -> FORESEE,
             #            SECOND GUESS -> FALTER
             #   out:     HESITATE and FALTER (both cut — FALTER with the
-            #            Staggered ban), REFRACT, EXPOSED, RETORT,
+            #            Staggered ban), TURN, EXPOSED, RETORT,
             #            SHARPEN (moved to Red, where the card always belonged)
             #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
             #            CALLED SHOT (ranged), STILL POINT (both)
@@ -187,10 +187,10 @@ SETS = {
             #            its defence half
             #   in:      TWIN STRIKE — the only damage-focused card in
             #            Green's 21, and the crossover the colour rules bless
-            #   BALANCE out with the Staggered ban, AID in (both ranged).
+            #   TOPPLE out with the Staggered ban, AID in (both ranged).
             # DUST renamed SMOKESCREEN 2026-08-26. SETTLE was renamed BRACE
             # the same day, onto a name Red already used; that duplicate was
-            # cut 2026-09-06 as a twin of STEADFAST, which takes its slot
+            # cut 2026-09-06 as a twin of ABIDE, which takes its slot
             # here — see experimental/archives/cut-cards.md.
             # 2026-09-07, the Deadly pass: all three of Green's Deadly cards
             # handed it to someone else, two of them on the defense half, so
@@ -198,7 +198,7 @@ SETS = {
             # Two go, and Red picks the keyword up.
             #   out: RESONATE + SUPPORT (Deadly; COMMUNION stays because it is
             #        the deck's only Green Scry, and its Deadly is defensive),
-            #        TWIN STRIKE (melee), STEADFAST (flat 'Gain Resist' at
+            #        TWIN STRIKE (melee), ABIDE (flat 'Gain Resist' at
             #        d4 Both — Resist was the deck's most-represented keyword)
             #   in:  PATIENCE (Anchored — the deck had two Anchored cards and
             #        both were 'passive at start of your turn'; its attack half
@@ -221,15 +221,19 @@ SETS = {
             #            (UNBROKEN / LAST RESORT / UNTOUCHED, `rules/cards.md`),
             #            so the Oracle now teaches Immunity in Red and Blue
             #            only. The card is untouched in the pool.
-            #   in:      BOLSTER — MEND moved Melee -> Both in the same pass,
+            #   in:      BRISTLE — MEND moved Melee -> Both in the same pass,
             #            which would have left Green with two melee cards and
-            #            both of them control. Not Drew's pick; swap freely.
+            #            both of them control. BOLSTER held this slot from
+            #            2026-09-08 until 2026-09-09, when BRISTLE took it:
+            #            hackles going up fits Pat's Shunka where a thorn
+            #            bush does not, and BRAMBLE covers Green's Thorns at
+            #            Both range anyway.
             'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
             'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
             'OPENING', 'PATIENCE', 'MEND',
             'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
             'FLOW',
-            'BIND', 'SMOKESCREEN', 'BOLSTER',
+            'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
     },
     'oracle-expansion': {
@@ -278,6 +282,13 @@ SETS = {
         #     spending a slot in the deck Drew is happy with.
         #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
         #     HEAVE AND HAUL make three.
+        #
+        # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
+        # Blue (stealing and copying enemy buffs is enemy control), so it
+        # moved from the Red block to the Blue one and took SLIPSTREAM's
+        # Both slot — the expansion keeps its Positive Status Effects
+        # teacher either way. PROVOKE, which moved Green -> Red the same
+        # day, fills the Red Both slot it vacated.
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
         #   Red had no Rooted: GRAPPLE, which is also the card the glossary
         #     cites to explain Anchored holding Rooted open.
@@ -287,12 +298,12 @@ SETS = {
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
-            'BLOOD TITHE', 'WAITING GAME',
+            'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
             'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
             'UNNAME', 'FORGET',
-            'SLIPSTREAM',
+            'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
             'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',

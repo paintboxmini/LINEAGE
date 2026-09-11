@@ -41,5 +41,5 @@ BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Staggered.
 Defense Effect: Gain Protect.
-Range: Both
+Range: Melee
 *"One good throw is all the cross has ever needed."*

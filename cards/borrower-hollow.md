@@ -19,8 +19,18 @@ BLUE — MIND — HOLLOW
 Attack: Mind + d4
 Effect: Scry 2 of Defender's deck.
 Defense Effect: Scry 2 of your own deck.
-Range: Both
+Range: Ranged
 *"Press it to the stone. Listen. The stone always tells you first."*
+
+---
+
+**BURROW**
+RED — BODY — HOLLOW
+Attack: Body + d6
+Effect: Gain Evade 2. Your next attack deals +3 damage.
+Defense Effect: Gain Evade 2.
+Range: Both
+*"They don't hide. They go through the one space that isn't a tunnel yet."*
 
 ---
 

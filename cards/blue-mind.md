@@ -52,23 +52,23 @@ Range: Ranged
 
 ---
 
-**REFRACT**
+**TURN**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak
 Defense Effect: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
 Range: Ranged
-*"Light bends when you know where to place the glass."*
+*"It has to land somewhere. Somewhere is negotiable."*
 
 ---
 
-**STILLNESS**
+**BLANK**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender discards 1 card at random
 Defense Effect: Attacker discards 1 card at random
 Range: Ranged
-*"Certainty is loud. Silence holds its shape."*
+*"Mid-thought, the thought is not there."*
 
 ---
 
@@ -78,7 +78,7 @@ Attack: Mind + d6. If the defender plays the same color as either of the top two
 Effect: None.
 Defense Effect: If the attacker plays the same color as either of the top two cards of their discard pile, remove their Positive Status Effects
 Range: Ranged
-*"Cartographers see the second time before it happens."*
+*"People repeat themselves. Someone should be writing it down."*
 
 ---
 
@@ -108,13 +108,13 @@ Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
 Defense Effect: Enemy must target you again on their next turn if possible
 Range: Ranged
-*"Every echo remembers what the first sound forgot."*
+*"It does not stop at the first one. That is the whole idea."*
 
 ---
 
 **FRACTURE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: If the top 3 cards of your discard are 1 of each color, deal 5 damage to either the enemy Frontline or the enemy Backline (your choice)
 Defense Effect: If the top 3 cards of your discard are 1 of each color, the attacker must exile the card they played this turn
 Range: Ranged
@@ -205,7 +205,7 @@ Range: Ranged
 
 **CLIMB**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
 Defense Effect: Your maximum hand size increases by 1 until the end of this combat
 Range: Melee
@@ -229,7 +229,7 @@ Attack: Mind + d6
 Effect: Defender loses 1 Soul this combat.
 Defense Effect: Attacker loses 1 Soul this combat.
 Range: Ranged
-*"Understanding something completely is the first step to unmaking it."*
+*"Not a blow. A season."*
 
 ---
 
@@ -284,18 +284,17 @@ Range: Melee
 
 ---
 
-**FRAME-TRAP**
+**PUNISH**
 BLUE — MIND
 Attack: Mind + d4
-Special Rule: On reveal, if the defender was hit by an attack on the turn immediately before yours, this attack auto-wins outright — no reveal contest at all. The defender's card is discarded without resolving.
-Effect: None.
-Defense Effect: Wins ties. On a tie, the attacker's Effect does not trigger.
+Effect: If the defender was damaged on the turn immediately before yours, this attack deals double damage.
+Defense Effect: You win on a tie.
 Range: Both
 *"You never see the second hit coming. You're still reacting to the first."*
 
 ---
 
-**CERTAINTY**
+**CALL**
 BLUE — MIND
 Attack: Mind + d6
 Special Rule: Wins ties. If the attacker's and defender's cards both carry this Special Rule, they cancel — it stays a tie.
@@ -349,8 +348,8 @@ Range: Ranged
 **RETORT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
+Effect: Gain Thorns 3.
+Defense Effect: Attacker gains Weak.
 Range: Ranged
 *"Every insult carries its own answer."*
 
@@ -400,7 +399,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d8
 Effect: Scry 3, then draw 1.
-Defense Effect: Scry 3, then draw 1.
+Defense Effect: Scry 1, then draw 1.
 Range: Ranged
 *"Every system tells you its next move. Most people are not systems. You are."*
 
@@ -408,7 +407,7 @@ Range: Ranged
 
 **REDIRECT**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Target ally gains Protect.
 Defense Effect: Gain Protect and Evade.
 Range: Ranged
@@ -428,7 +427,7 @@ Range: Melee
 
 **CORNER**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d8
 Effect: Neither you nor the defender may change position until your next turn.
 Defense Effect: Neither you nor the attacker may change position until your next turn.
 Range: Melee
@@ -463,3 +462,23 @@ Effect: The defender's Defense Effect does not trigger this exchange.
 Defense Effect: The attacker's Effect does not trigger this exchange.
 Range: Both
 *"They had a plan for this. They no longer have a plan for this."*
+
+---
+
+**DRAIN**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Steal one Positive Status Effect of your choice that the defender currently has — it's removed from them, not just copied.
+Defense Effect: Steal one Positive Status Effect of your choice that the attacker currently has — it's removed from them, not just copied.
+Range: Ranged
+*"What's yours was never really yours."*
+
+---
+
+**WAITING GAME**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*

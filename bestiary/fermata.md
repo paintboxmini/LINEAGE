@@ -5,9 +5,9 @@
 **Cards:** `cards/fermata.md`
 
 **Mind 10 / Body 12 / Soul 20 — HP 78**
-**Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27, `CLAUDE.md`, Stat Blocks. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*
+**Creature Threat Rating:** 42 *(above-curve legendary — deliberately well past the standard 3-player baseline of CTR 27. This is not calibrated to be a fair fight. It is calibrated to be survivable.)*
 
-**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, STILLNESS, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, PATIENCE, DELAY, INSTINCT, BRISTLE *(green)*
+**Deck (12 — 3 Blue / 3 Red / 6 Green):** DIRGE, BLANK, FOCUS *(blue)* · STRIKE, ENDURE, BRACE *(red)* · THE HELD NOTE, SEALED CHORD, PATIENCE, DELAY, INSTINCT, BRISTLE *(green)*
 
 **Bespoke — deck size does not equal total stats.** The formula baseline for Mind 10/Body 12/Soul 20 would be a 42-card deck; this one is fixed at 12, the same exception `bestiary/hullback.md` set the precedent for. Big numbers, small toolkit — Fermata has held the same handful of moves for longer than it has a name for how long that's been.
 
@@ -17,7 +17,7 @@
 
 Not quite a person. Not quite a statue. Whatever it was before, it has been standing in the same posture long enough that its shape has settled into the room the way water settles into a bowl — worn smooth in one specific configuration, unable to remember being anything else.
 
-It sings. It has always been singing, in the sense that a held note doesn't have a beginning anymore once it's been held long enough. Low. Wordless. Not loud — the opposite of loud, somehow, though the volume is real and audible the moment anyone stands close enough. The song is the only sound the Choir permits, and it permits it because Fermata is the one paying to hold it there (`world/the-in-between.md`, Havens: "a safe place is a place someone is paying to hold" — the same law, running in reverse. Here, what's being held safe is everyone *outside* the room).
+It sings. It has always been singing, in the sense that a held note doesn't have a beginning anymore once it's been held long enough. Low. Wordless. Not loud — the opposite of loud, somehow, though the volume is real and audible the moment anyone stands close enough. The song is the only sound the Choir permits, and it permits it because Fermata is the one paying to hold it there (the Havens principle — "a safe place is a place someone is paying to hold" — the same law, running in reverse. Here, what's being held safe is everyone *outside* the room).
 
 ---
 
@@ -43,9 +43,9 @@ One Fermata, Frontline, always. It does not pursue outside the Choir's own bound
 
 See `places/the-silent-choir.md` for the full table-level rule (players communicate only by gesture or written note while inside). The combat consequence of that rule lives here:
 
-**Passive — The Held Note.** While this passive is active, no sound exists in the Choir except Fermata's own. If Fermata is ever afflicted with Staggered, or otherwise forced to lose a turn, the note breaks for one full round: ambient sound floods back in all at once, and Fermata gains Vulnerable until the start of its next turn. This is the fight's real opening — not a damage race, a chance to land one clean hit while the boundary is down.
+**Trait — The Held Note.** While this Trait is active, no sound exists in the Choir except Fermata's own. If Fermata is ever afflicted with Staggered, or otherwise forced to lose a turn, the note breaks for one full round: ambient sound floods back in all at once, and Fermata gains Vulnerable until the start of its next turn. This is the fight's real opening — not a damage race, a chance to land one clean hit while the boundary is down.
 
-**Passive — Undivided Attention.** The first Red card played against Fermata each combat resolves normally, but Fermata gains Evade in response, active until its own next turn. Loud, direct force gets noticed and answered. It does not get punished twice — this triggers once per combat, not on every Red card after the first.
+**Trait — Undivided Attention.** The first Red card played against Fermata each combat resolves normally, but Fermata gains Evade in response, active until its own next turn. Loud, direct force gets noticed and answered. It does not get punished twice — this triggers once per combat, not on every Red card after the first.
 
 ---
 
@@ -72,7 +72,6 @@ See `places/the-silent-choir.md` for the full table-level rule (players communic
 
 - `places/the-silent-choir.md` — where this fight happens, and the table rule it runs on
 - `items/the-silent-choir-items.md` — the Silent Blade and the Silent Ring
-- `world/the-in-between.md` — Havens, the "someone is paying to hold it" principle this fight runs on in reverse
 - `characters/aege.md`, `bestiary/root-heart.md` — the same register of deliberately-unresolved cause
 - `world/seats.md`, `world/resonant-people.md` — Song and Silence, confirmed as this creature's Seat; which stage of Alignment is deliberately left open
 - `rules/card-glossary.md` — Staggered, Vulnerable, Evade. Locked and Sealed are not glossary keywords; both are defined in full on the cards that grant them (`cards/fermata.md`).

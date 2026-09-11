@@ -28,11 +28,15 @@ The diseases must be visible. This is not negotiable in their theology.
 
 ## Corvel — The Vulture's Nest Thread
 
-Full profile — his own crossing, what the vials really are — now lives in `characters/corvel.md`. What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
+What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
 
 The Compact's position: unknown diseases, possible outbreak, crosses hard lines (too destructive, too visible). Corvel's position: he has nothing to recant.
 
 The barge is the thread that leads the party to Pneum.
+
+**And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`experimental/session-1-convergence.md`, Pneum first, and the barge is why).
+
+**Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation better travelled than most traders. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of the river and are never questioned about it.
 
 ---
 
@@ -45,6 +49,5 @@ These people are warm, communal, and completely sincere. The wrongness isn't cru
 ## Related Documents
 
 - `places/vultures-nest.md` — Corvel's stall, the quarantined barge, People of Promise plot hook
-- `characters/corvel.md` — his full profile
 - `world/tonal-bible.md`
 - `world/geography-overview.md`

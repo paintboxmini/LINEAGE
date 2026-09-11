@@ -20,7 +20,7 @@ Resonant Items pass through the same three-stage structure a Resonant Person doe
 
 **Stage II — Alignment.** The domain begins expressing itself through the object. This is the stage where sentience - in a more human sense - arrives.
 
-**Stage III — Embodiment (Archon).** The item's own path to Archonhood (`world/archons.md`, Multiple Bearers, One Seat) — the object-flavored version of what Incarnation is for a Resonant Person: domain and object become inseparable. The highest stable form a Resonant Item can reach.
+**Stage III — Embodiment (Archon).** The item's own path to Archonhood (`world/seats.md`) — the object-flavored version of what Incarnation is for a Resonant Person: domain and object become inseparable. The highest stable form a Resonant Item can reach.
 
 ## Sentience
 

@@ -143,7 +143,7 @@ Range: Melee
 
 - **Name** — STRIKE.
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
-- **Attack: Body + d10** — your Body stat plus a d10 roll. The rare outlier die, not a fourth named tier.
+- **Attack: Body + d10** — your Body stat plus a d10 roll. The fourth tier, and the rarest: Red alone holds it, on cards that pay for it somewhere else on the card (STRIKE has no Effect at all, REPAY costs 3 HP up front, OVERCOMMIT hands you Vulnerable for the privilege).
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
 - **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
@@ -198,7 +198,7 @@ The base roll is **Stat + die, with Deadly/Weak folded in** — a Deadly stack a
 
 When *attack* damage is dealt, it passes through this pipeline in fixed order:
 
-**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; REFRACT sends an attack you're defending against at a target of your choice) → **Immunity** (held by whoever is actually receiving the damage — reduces it to 0, leaving the rest of the pipeline nothing to act on) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
+**reassignment** (the damage lands on someone else instead, in full, before anything reduces it — Protect volunteers you for an ally's hit; TURN sends an attack you're defending against at a target of your choice) → **Immunity** (held by whoever is actually receiving the damage — reduces it to 0, leaving the rest of the pipeline nothing to act on) → **Armour** (flat reduction) → **Resist / Vulnerable** (one stack of each cancels the other first; otherwise Resist halves or Vulnerable multiplies by 1.5, rounded down) → apply to HP.
 
 A single attack cannot push a *standing* combatant below 0 HP (clamped to 0 = Collapse; see Collapse & Death below).
 
@@ -224,7 +224,17 @@ Every combatant occupies one of two positions: **Frontline** or **Backline**.
 
 Frontline isn't a fixed place on the field — it's wherever two sides have actually closed the distance and are fighting face to face. Whoever's caught up in that is Frontline, on both sides of it, for as long as it's happening there; that contact point is where Melee range exists. Backline is everyone else: still in the fight, just not closed with anyone yet. Nothing pins the Frontline to one spot — it's wherever the fighting actually is, and it moves when the fighting does.
 
-Both positions are abstract zones — any number of characters may share either position. Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
+Both positions are abstract zones, and any number of characters may occupy either one. What occupying the same position *means* depends on which side of the fight you're on.
+
+**Same position, same side — together.** Everyone sharing a position with their own side is beside each other: close enough to hand something over, step in front of each other, pass a drink. This is equally true of a group of enemies. Opponents sharing a position are bunched together on their own side of the field, which is what lets an effect that hits *every enemy in a position* land on all of them at once.
+
+**Same position, opposite sides — only the Frontline puts you in reach.** The Frontline is the contact point, so everyone there is closed with everyone there, on both sides of it. The Backline is not a place; it's the state of not being closed with the enemy, and each side has its own. Two opponents who are both in the Backline are across the field from each other, which is why Backline-to-Backline is not Melee range.
+
+So a card can pass a drink to an ally in your position while a Melee card cannot reach an enemy in yours — and an orange thrown into the enemy Backline still catches everyone standing in it.
+
+**A position is a designation, not a patch of ground.** Anything placed at a position — a glyph, a seed, a lingering hazard — catches whoever occupies that position, not whoever steps on one particular spot.
+
+Moving costs your action for the turn. Position provides no automatic protection. The Frontline does not shield the Backline from being targeted.
 
 ### Range Matrix
 

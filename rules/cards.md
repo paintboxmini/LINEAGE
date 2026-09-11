@@ -13,6 +13,7 @@ What each field on a card means, "Attacker"/"Defender" vs. "Target," and a full 
 When you look at a hand of cards, the dice tell you who you are right now.
 
 A hand full of d8s is a brawler who hits hard and moves with purpose.
+A d10 is a fourth tier and a Red one — three cards in the game carry it, and each pays for it somewhere else on its own text.
 A hand full of d4s is a strategist watching for the moment everything opens up.
 A hand full of d6s is someone threading the gap between the two.
 
@@ -28,9 +29,19 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
 - **Green — flexibility and support.** Healing, allies, movement, adaptability.
 
+**Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
+
+Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
+
+BRISTLE at 3 lands on Blue's base, which RETORT also sits at. That was a strict dominance while both cards read "Gain Thorns 3" on both halves — same die, and RETORT's Ranged is freer than BRISTLE's Melee. RETORT's defence half now applies Weak instead, which is what a Blue Thorns card should have been doing anyway: Blue's business is taking an enemy's options away, not mirroring a Green card in a different colour. Two cards can share a keyword and a number as long as they aren't the same card.
+
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 
 **Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
+
+**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, UNDERSTANDING's discard-for-`+1d6`), a doubled die (ABANDON's `2d8`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
+
+This matters when reviewing: a card's power is not readable from its Effect lines alone, and a summary that lists only die, range and effects will show ABANDON as a plain d8 and RHYTHM BREAK as a d8 with nothing on offence. Both readings are wrong. Read the Attack line.
 
 ---
 
@@ -83,9 +94,11 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical for keyw
 
 ## Deck Building
 
-**Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `places/island-in-a-ship.md`) can and should bend it.
+**Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `rules/character-creation.md`, Advancement) can and should bend it.
 
-**Trading cards.** Cards change hands at the Underground Bazaar and effectively nowhere else (`places/capital/underground-bazaar.md`, Card Trading). Selling is always possible and permanent; buying is rare, is paid for in cards, memories, or secrets rather than coin, and adds to a deck rather than swapping into it. Everywhere else in the world a card is earned — from the Oracle, or from whatever taught it.
+**Trading cards.** Cards change hands at the Underground Bazaar and effectively nowhere else (`places/capital/underground-bazaar.md`, The Card Economy). Selling is always possible and permanent; buying is rare, is paid for in cards, memories, or secrets rather than coin, and adds to a deck rather than swapping into it. Everywhere else in the world a card is earned — from the Oracle, or from whatever taught it.
+
+**Signature cards follow the core set's conventions.** They are written for one stat block, but they are the same object as a core card and are read by the same players: same fields, same keyword vocabulary (numbered where the glossary numbers it), same Thorns ladder, and the same treatment of Range as a real cost. Range especially — a creature whose cards are all Both is a creature that never has to think about position, in a game that spends a third of the Oracle's design space teaching it. Signature cards ran 51% Both until 2026-09-09; they now sit at roughly a third each, leaning Melee because most things that attack you have to reach you first.
 
 **Enemy decks.** Deck size equals the creature's **total stats**, with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
 

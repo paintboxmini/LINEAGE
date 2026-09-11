@@ -95,6 +95,41 @@ Iron & Twine (tools, rope, travel gear), The Salt Pot (hot food, rations), Quill
 | Large / corner stall | 30 gold | Extra space, high-traffic location |
 | Multi-stall operation | 50 gold | Two or more adjacent pitches under one license |
 
+## Where the Food Comes From
+
+**The capital grows nothing.** Every loaf, every sack of grain, every root in the Salt Pot's stew arrived from somewhere with dirt, and there is not enough of it. Four sources make up the difference and none of them are keeping pace.
+
+**The farm claims.** Briarwatch and places like it, a long road out, working ground harder than it wants to be worked because the demand behind them never eases (`places/briarwatch.md`). This is the biggest share and the most tired.
+
+**The rivers.** The web laces the whole continent and the city sits at the middle of it, so the obvious answer to a shortfall was always to take more fish. They have been taking more fish for a long time. **The inner reaches are visibly thinner than the outer ones** — smaller catches, longer waits, fewer of the species anyone used to bother naming (`rules/river-fishing.md`). Nobody in the capital has drawn the line between that and the size of the city.
+
+**The surrounding regions**, and this is the ugly one. The Regency levies food from the villages inside its practical reach — assessed, recorded, collected by Cedric's people, entirely lawful and entirely non-negotiable. **The Regency calls it a levy. The villages call it a raid**, and the distinction only matters to whoever is writing it down. A village that had a hard season is still assessed on the season before it.
+
+**Trade**, which covers the rest and covers it expensively. Vulture's Nest moves more food toward the capital than anyone there thinks of as food trade, because at the Nest it is simply cargo (`places/vultures-nest.md`).
+
+### Why the taxes are what they are
+
+**The shortfall is paid for in coin, and the coin comes from the city.** Rates in Eclipseria are high, and high in a way people notice and complain about without being able to name a cause, because the cause is eight days away in every direction and nobody in the capital connects a tax bill to a tired field.
+
+It is Lady Elara's sphere throughout — trade and business, every coin in the capital (`world/the-regency.md`) — which makes the food supply a commercial arrangement rather than a policy. Priced, contracted, and enforced by the Marketplace Wardens like anything else.
+
+### And what the taxes made
+
+**People who could not pay stopped being registered.** Not exiled, not arrested — simply priced out of a city that requires you to be on a list to do business in it, and then gone from the list. Most of them did not leave. They went *down*, into the Waterworks, and the Underground Bazaar is what they built there (`places/capital/underground-bazaar.md`).
+
+**Two names, and which one a person uses tells you where they stand.** The Wardens' word is **unregistered** — an administrative status, reversible in principle, and nobody's fault. The bazaar's own word is **priced out**, which is a thing that was done to you.
+
+The Regency knows exactly where they went. The Regency profits from what they do down there. Neither fact ever appears in writing.
+
+### Not yet written
+
+- **What happens when a supply line actually fails.** No grain reserve is described anywhere, no price mechanism, no account of what the Marketplace does when a line thins. A bad season has consequences nobody has mapped.
+- **Whether more than one village has refused the levy.** One has — Quillet, eleven years ago, and the Regency's answer was to strike it from the register rather than send anyone (`places/quillet.md`). Whether Quillet is the only one, and whether the silence about it is confidence or embarrassment, isn't established.
+- **Whether anyone has noticed the fish.** Somebody must have. Who, and whether they were listened to, isn't established.
+- **One live consequence already exists whether or not the city knows it:** the Turnroot line is degrading, and if it fails, Briarwatch is a held span with forest on either side of it (`quests/turnroot-weald-adventure.md`, The Return — After the Line Breaks). Whatever that does to the capital's table has not been thought about by anyone, in the fiction or out of it.
+
+---
+
 ## The Inner Precinct
 
 Past the Marketplace's noise, closer to the Citadel, the chaos gives way to something more deliberate. The Inner Precinct is the true administrative ring around the seat of power — four Halls, each standing under the physical and political shadow of the council member who runs it. There are no intermediary guildmasters here; the council members are the operational heads of their own branches, and the Halls are simply where that work happens.

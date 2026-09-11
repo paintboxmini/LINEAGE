@@ -67,7 +67,7 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
 
-**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria (`memory.md`, Campaign Status). Gear arrives when the party first stands somewhere that sells it.
+**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria. Gear arrives when the party first stands somewhere that sells it.
 
 **Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
 
@@ -143,11 +143,11 @@ That's a formula's absence, not a sale's — Brother Alden does put a number on 
 - **Traits.** What makes it recognizably itself and not another Artifact of the same rough shape — what it's exactly capable of, and what it costs to use.
 - **History.** Where it came from, who made it or found it, and what it was used for before the party ever touched it.
 
-**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`world/seats.md`, Binding and Holding) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
+**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`world/creation-myth-the-three-cuts.md`, The Second Cut) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
 
 **Price scales with magnitude.** A minor working costs less than a major one — heal a scrape versus heal a mortal wound, spark a candle versus level a wall. The relationship isn't a lookup table, but the direction always holds: the more reality an effect bends, the more it costs to bend it.
 
-**An Archon's will can lighten or deepen that cost** (`world/archons.md`, An Archon's Will Shapes Price) — acting in the grain of a seated Archon's nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.
+**An Archon's will can lighten or deepen that cost** (`world/seats.md`) — acting in the grain of a seated Archon's nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.
 
 **The Price doesn't have to land entirely on whoever triggered it.** An effect can cost an ally something too, without that lessening what the actor themselves still pays — the consequence propagates through whoever the working actually touched, it doesn't get divided up and handed off.
 
@@ -155,7 +155,7 @@ That's a formula's absence, not a sale's — Brother Alden does put a number on 
 
 **Don't predefine every Artifact's Price up front.** Establish what the item does and what domain it draws on; let the actual cost emerge the first time a GM needs one, in a form that answers that specific use — then treat that as the pattern going forward, rather than inventing a generic tax nobody asked for. The Lightning Loop's Price (`items/lightning-loop.md`) is deliberately still open for exactly this reason.
 
-**Distance** applies too, though it isn't a system this section prices — see `agent-tools/design-principles.md`, Distance — What Can Never Be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
+**Distance** applies too, though it isn't a system this section prices. Distance is what can never be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
 
 See `world/resonant-items.md` for what makes an object Resonant in the first place — Intentional or Accumulated — and why a Resonant Item doesn't need its Seat Filled to work at all.
 

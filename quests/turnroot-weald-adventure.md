@@ -18,7 +18,7 @@ Pressure only increases on failed navigation or customs violations. The DM may h
 
 ## Forest Customs — Sharpened (Overgrowth)
 
-Meta rules for the table. Under canopy, the Weald treats them as law. **Overgrowth doesn't add new laws — it enforces the existing ones with less patience,** which is why three customs (the ones the Moss-Warden asks about) have widened into six, and the consequences now scale with current Pressure instead of landing flat.
+Meta rules for the table. Under canopy, the Weald treats them as law. Overgrowth is the Root Heart's aggressive-growth phase, and the phase this campaign runs in (`bestiary/root-heart.md`, The Overgrowth Cycle). **It doesn't add new laws — it enforces the existing ones with less patience,** which is why three customs (the ones the Moss-Warden asks about) have widened into six, and the consequences now scale with current Pressure instead of landing flat.
 
 Violations are judged by what was *done and said*, not by intent. A player who means well and breaks a custom still broke it.
 
@@ -89,6 +89,8 @@ A navigation check is required when attempting to change location — even when 
 - The direction the moss grows
 - The slope of terrain
 - Birds and other wildlife
+
+**Signs can also be followed on four legs.** A Kelbi under canopy goes where the Weald sends it and never gets lost, so trailing one in good faith counts as earned signs for one navigation, no check (`bestiary/kelbi.md`). The catch is the same catch as everything else here: it arrives where the forest wanted, not where the party did.
 
 **Signs can also be bought.** Seeker's Price takes coin pressed into the wood and gives signs back — see that entry for what each denomination buys.
 
@@ -245,6 +247,8 @@ Three ways out, and the forest treats them as equally valid:
 
 **On the third.** The transaction completed. They asked to be taken to the heart of it, they were taken, and they saw. Nothing further is owed in either direction, and the Root Heart is still alive behind them — the only exit that ends with that being true.
 
+**The second exit is also a job somebody is already paying for.** There is a standing Regency bounty on the Root Heart (`places/capital/adventurers-hall.md`, The Board) — a party that fought its way out can collect on it afterward whether or not they knew it existed, and a party that took the contract in the capital can use the kill to leave. The Weald doesn't care which order those happened in. What the bounty is actually for is in `bestiary/root-heart.md`, The Overgrowth Cycle, and the Council isn't telling.
+
 It is not a shortcut past the others so much as a different bargain. Marks cost three separate acts of alignment with a forest that is hard to align with — including sacrificing a trait to the Knot-Keeper. The boss fight costs a boss fight.
 
 **Paid Passage costs almost nothing and returns almost nothing.** No Marks. No kill. No loot off the Heart. The party leaves with exactly what they walked in holding, minus a coin, having looked at the thing everyone else in the Weald is trying to survive. It is cheap because it is empty, and that is the correct trade rather than a hole in it — a table that takes this exit will feel the difference without anyone at the table saying so.
@@ -377,6 +381,26 @@ If the party cannot agree, the plate stays in the wall. The forest is content to
 
 ---
 
+### The Blown Clearing
+
+**The Sight:** Open ground. Actually open — a rough circle thirty feet across where the understory has been flattened outward from a single point, branches snapped away from the center, leaf litter driven to the rim in a ring. Sunlight, or as much of it as this world offers, reaching the floor.
+
+**The Sound:** Ordinary forest, and then, from somewhere in it, a long wet drag of air. Then nothing for a beat.
+
+**What made it:** a **Blowback Beetle** (`bestiary/blowback-beetle.md`, CTR 7), still here, still eating. It cleared this space because it wanted somewhere to eat without anything touching it, and it will clear it again the moment anything does.
+
+**Why this matters in the Weald.** Turnroot routes everything. The Blowback is the one thing under this canopy that makes ground rather than being moved across it, and the clearings persist afterward. Forest-people know where every one of them is, and use them the way anyone else uses a landmark — which is worth something in a forest where no landmark holds.
+
+**Navigation.** A blown clearing counts as an earned sign (Navigation, above) for a party that reaches one and correctly reads what made it. Standing in a stable open circle and working out *why* it is stable is the check; the beetle does not have to be fought for the sign to count.
+
+**The fight, if they take it.** A positioning fight and not a damage race — Concussive Vent pushes the defender to the Backline on every landed hit, so a melee line spends the encounter walking back in. GULP is the public wind-up. Full behaviour and the harvest are in the bestiary file.
+
+**Customs still apply.** The clearing is the beetle's work, not the forest's, which does not exempt anyone standing in it. Naming a destination aloud here routes exactly as it would anywhere else under canopy.
+
+**Loot:** the bellows organ (`experimental/kevin.md`), and plate nobody has made armour from yet.
+
+---
+
 ### The Holdfast *(Aege's people)*
 
 A small region of the Weald that still behaves. Moss signs stay true. Roots do not surface underfoot mid-stride. Rootstalkers have been seen at the edge and turned away — or have not, and the holdfast is smaller this week than last.
@@ -486,6 +510,30 @@ False navigation cues the forest uses to mislead. DM rolls or chooses based on P
 | Future-Lock Wasp Larvae | The Hanging Gallery | See `items/turnroot-weald-items.md` |
 | Rootstalker Core | Rootstalker (very rare) | See `items/turnroot-weald-items.md` |
 | Kiwi Bird | Weald undergrowth | Not a fight — a tracking/stealth problem. Senshi's Second Commission, `places/capital/gilded-tusk.md`. See `bestiary/kiwi-bird.md`. |
+
+---
+
+## The Return — After the Line Breaks
+
+*The next state of this region, for a party that leaves and comes back. Everything above describes the Weald under Overgrowth with the containment intact. This describes the Weald with the containment gone, and it is not a variant of the adventure above — it is the adventure above having ended a particular way.*
+
+**The containment breaks.** The Masons' line was always running a deficit against the Root Heart's aggressive phases (`factions-and-races/the-masons.md`, Known Works, and `bestiary/root-heart.md`, The Overgrowth Cycle), and one cycle finally arrives with the recut incomplete. The push lands. For the first time in the line's history the Weald takes the expansion branch instead of decaying, and the forest **advances north** — into ground nobody has mapped, named, or built anything on. Not toward the Kings Road, which runs northeast from the Weald toward Eclipseria (`world/geography-overview.md`, The Kings Road), and not toward Briarwatch, which is the one stretch that holds. Due north, into blank country.
+
+**The Briarwatch stretch holds.** A Mason reached it in time and reinforced it — fresh glyphs, deeper cuts, the work done properly on that section. There was not time to do it to the whole fence. What Briarwatch is now is a held span in a line that failed on either side of it: the fields still farmed, the watchtower ruins still standing, the larder fence still holding its stretch, with forest past both ends of the reinforced run and nothing between the two but the reason it stopped there. Briarwatch does not know why it was spared. It has never known the fence was anything but old (`places/briarwatch.md`, GM Secret).
+
+**Why this is the right shape for a return.** The party knew this place. The specific ground they walked, the trail they navigated, the customs they learned, the Weald's own routing — all of it is now somewhere else or under canopy that wasn't there. A return adventure that only made the fight harder would waste the first visit. This makes the first visit the reason the second one lands: they are the only people at the table who know what this used to be.
+
+**What carries over.** Forest customs still apply and are still absolute; the Weald did not become a different forest, it became a larger one. Pressure, Marks, and the Escape Conditions above are all still the region's machinery. What changes is what's inside the boundary — ground that was open a season ago and is under canopy now, with whatever was standing on it still standing, inside.
+
+**What the direction is for.** North is undeveloped on purpose, and the expansion is the reason to develop it. Whatever is up there was never described, so the first description of it is a description of it *already under canopy* — the party are the first people to see that country and they see it wrong, and there is nobody to tell them what it looked like before. A forest that ate a known place is a loss the table can measure. A forest that ate an unknown one is a question nobody can answer, which is the harder and better version.
+
+### To Decide
+
+- **Which Mason made it to Briarwatch.** Sebastian is the obvious answer and the least interesting one — he already tends that line, and him arriving in time is the system working. Mirel arriving instead is the payoff for everything in `characters/mirel.md`: one chisel, no lessons, and a stretch of fence that holds because of her. One of the unwritten handful arriving is the third option and the coldest — the order is bigger than the party knows, and nobody thanked anybody.
+- **Where the line actually broke**, and whether the party can find the failed section. A recut that didn't happen leaves a specific, findable stretch of unmarked post.
+- **Whether the party caused this.** They may have been the ones who didn't come back for the second Overgrowth, or who killed the Heart on a schedule that made this cycle worse, or who were simply elsewhere. All three are playable. Only one of them is a story about guilt.
+- **How far north**, and what was up there. Nothing above commits to either, because nothing north of the Weald has been written yet — this is a blank stretch of map and the expansion is a reason to fill it. Whatever gets decided, it should be decided as *what the forest took*, not as a region that happens to now have trees.
+- **Whether anything was living up there.** A forest expanding into genuinely empty country is a geography event. A forest expanding into somebody's ground is an atrocity nobody witnessed. Both are available and they are very different returns.
 
 ---
 

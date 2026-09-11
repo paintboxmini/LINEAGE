@@ -22,10 +22,10 @@ It never calls. It doesn't need to.
 
 ## Abilities
 
-**Fog Vision** — Passive
+**Fog Vision** — Trait
 Can't be blinded. Hunts perfectly in its own weapon.
 
-**Grip Walk** — Passive
+**Grip Walk** — Trait
 Cannot be pushed or pulled from its position while in Frontline. PUSH, PULL, and REPEL have no effect.
 
 **Pack Signal** — Triggered

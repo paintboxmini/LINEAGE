@@ -1,6 +1,6 @@
 # The Scar
 
-*A persistent presence in the In-Between (`world/the-in-between.md`). Encountered early. Unresolved to every player and every NPC in the world; the GM Secret below says who it is.*
+*A persistent presence in the In-Between (`world/eclipseria-overview.md`). Encountered early. Unresolved to every player and every NPC in the world; the GM Secret below says who it is.*
 
 *No stat block. The Scar has never been fought, does not approach, and does not respond to being attacked. If that changes, it is a campaign event and not a stat line.*
 
@@ -43,7 +43,7 @@ Between rungs, months of nothing. The rungs are not a countdown and should never
 ## Running It
 
 - **One observer at a time.** Tell that player privately, or say it out loud and let the others decide whether they believe it. Both work. Never confirm it to the group in the GM's own voice.
-- **In the In-Between**, primarily. Whether it can attend somewhere held is not established — if a GM wants one instance inside a settlement, that is a deliberate escalation and should cost the table something to have witnessed.
+- **Inside a pocket of In-Between**, primarily — which makes it rare by construction, since most travel never enters one. Whether it can attend somewhere held is not established — if a GM wants one instance inside a settlement, that is a deliberate escalation and should cost the table something to have witnessed.
 - **Never explain it.** No NPC knows what it is. No book has an entry. A party that asks the right question of the right person gets a real answer to a different question.
 - **It is not a threat clock.** Nothing is being counted. Nothing is arriving. If the table starts treating it as a timer, slow down rather than pay it off.
 - **The name is the party's problem.** "The Scar" is what this file calls it. Whether anyone in Eclipseria uses that word, or any word, is not established.
@@ -52,7 +52,7 @@ Between rungs, months of nothing. The rungs are not a countdown and should never
 
 ## GM Secret — Not Player-Facing
 
-**The Scar is King Pendragon.** See `world/the-regency.md`, The Pendragon Attempt.
+**The Scar is King Pendragon.** See `world/the-regency.md`, Council Members.
 
 He and five companions tried to claim the Seat of Love/Binding. They failed. The five survivors lost their internal contradiction and became archetypes — the file describes their animal titles as *"scar tissue, not heraldry,"* and says the attempt *"left marks on everyone in the room."* Pendragon went the whole distance. Nuance did not burn away from him; **he** burned away, and what stayed was the marks.
 
@@ -76,7 +76,8 @@ One resonance: he failed at the Seat of Love and Binding, and what he does now i
 
 ## Related Documents
 
-- `world/the-in-between.md` — where it is, and why the Cuts are thin there
+- `world/eclipseria-overview.md` — the In-Between, where it is
+- `world/creation-myth-the-three-cuts.md` — the Cuts, and why they are thin out there
 - `world/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is

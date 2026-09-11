@@ -70,7 +70,7 @@ Attack: Soul + d6
 Effect: Discard a card, gain +2 damage with that color the rest of combat
 Defense Effect: Lose 2 HP. Draw 2 cards, then discard 1.
 Range: Both
-*"The wise listen to what wants to be heard."*
+*"Give up the card. Keep what it taught you."*
 
 ---
 
@@ -94,21 +94,21 @@ Range: Ranged
 
 ---
 
-**URGENCY**
+**HASTEN**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift +1 to all allies
 Defense Effect: Apply Initiative Shift +1 to yourself, or -1 to the attacker (choose)
 Range: Both
-*"The tide waits for those who know when to flow."*
+*"Sooner. All of you. Now."*
 
 ---
 
 **DELAY**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Apply Initiative Shift -1 to defender
-Defense Effect: Apply Initiative Shift -1 to attacker
+Effect: Apply Initiative Shift -2 to defender
+Defense Effect: Apply Initiative Shift -2 to attacker
 Range: Ranged
 *"Patience places the final stone."*
 
@@ -134,13 +134,13 @@ Range: Ranged
 
 ---
 
-**BALANCE**
+**TOPPLE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Defender gains Staggered.
 Defense Effect: Attacker gains Staggered.
-Range: Ranged
-*"Balance does not divide — it multiplies."*
+Range: Both
+*"Nothing about them was wrong except the ground."*
 
 ---
 
@@ -214,7 +214,7 @@ Range: Both
 
 ---
 
-**CARRIED WOUND**
+**UNBURDEN**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Transfer 1 status card from any ally's hand or discard to the defender
@@ -264,23 +264,13 @@ Range: Ranged
 
 ---
 
-**SYNCHRONY**
+**UNIFY**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Until the end of combat, allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
 Defense Effect: Gain Resist.
 Range: Both
 *"Stand where they stand. What heals them, heals you."*
-
----
-
-**WARSONG**
-GREEN — SOUL
-Attack: Soul + d6
-Effect: All allies gain Deadly.
-Defense Effect: Apply Initiative Shift +2 to an ally.
-Range: Both
-*"One voice finds its mark. The rest answer in kind."*
 
 ---
 
@@ -320,7 +310,7 @@ Attack: Soul + d6
 Effect: Anchored — at the start of each of your turns, heal 5 HP.
 Defense Effect: Gain Deadly.
 Range: Both
-*"The unshaken abide, while chaos churns."*
+*"It is not waiting for anything. Waiting is only what it looks like."*
 
 ---
 
@@ -354,7 +344,7 @@ Range: Melee
 
 ---
 
-**STEADFAST**
+**ABIDE**
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Resist.
@@ -384,16 +374,6 @@ Range: Both
 
 ---
 
-**BRISTLE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Thorns.
-Defense Effect: Gain Thorns.
-Range: Melee
-*"Touch carefully. It touches back."*
-
----
-
 **INSTINCT**
 GREEN — SOUL
 Attack: Soul + d6
@@ -407,10 +387,20 @@ Range: Both
 **BRAMBLE**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Thorns 3.
-Defense Effect: Gain Thorns 3.
+Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
 Range: Both
 *"Everything that reaches through leaves some of itself."*
+
+---
+
+**BRISTLE**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Gain Thorns 3.
+Defense Effect: Gain Thorns 3.
+Range: Melee
+*"Touch carefully. It touches back."*
 
 ---
 
@@ -498,7 +488,7 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d8
 Effect: All allies may change position. Each ally who does gains Evade.
-Defense Effect: All allies may change position. Each ally who does gains Evade.
+Defense Effect: All allies may change position.
 Range: Both
 *"Nobody called it. Everyone moved."*
 
@@ -508,19 +498,9 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
+Defense Effect: All allies gain Resist.
 Range: Both
 *"It runs through you. What it becomes is your decision."*
-
----
-
-**PROVOKE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Defender gains Weak. Target ally gains Deadly.
-Defense Effect: Attacker gains Weak.
-Range: Both
-*"Say the thing. Watch what it costs them."*
 
 ---
 
@@ -537,8 +517,8 @@ Range: Both
 **SHELTER**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Target ally gains Immunity.
-Defense Effect: Target ally gains Immunity.
+Effect: If target ally's HP is 6 or less, they gain Immunity.
+Defense Effect: If target ally's HP is 6 or less, they gain Immunity.
 Range: Ranged
 *"Stand behind the word. It will hold."*
 

@@ -27,7 +27,7 @@ Being enveloped is warm and still. The person inside can hear their own heartbea
 
 ---
 
-## Passives
+## Traits
 
 **Does Not Attack**
 The slime's attacks deal no damage. Ever, to anyone, under any circumstance. Effects still apply in full.

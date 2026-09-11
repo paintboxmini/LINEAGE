@@ -7,7 +7,7 @@
 **Mind 3 / Body 7 / Soul 3 — HP 34**
 **Creature Threat Rating:** 13
 
-*CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9 (`CLAUDE.md`, Stat Blocks), and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Now roughly level with this repo's actual dungeon bosses (Root Heart 11 bespoke, Minotaur 14) rather than sitting below them — deliberately, per the deck-size note below, since the bigger numbers are paired with a smaller toolkit rather than a bigger one.*
+*CTR calibrated against a full party, not one attacker — Creature Threat Rating is a 1v1 measure against the player baseline of 9, and a solitary creature fought by three-plus people needs real headroom above that baseline or the fight is only real for whoever gets there first. Now roughly level with this repo's actual dungeon bosses (Root Heart 11 bespoke, Minotaur 14) rather than sitting below them — deliberately, per the deck-size note below, since the bigger numbers are paired with a smaller toolkit rather than a bigger one.*
 
 **Deck (6 — 1 Blue / 4 Red / 1 Green):** PATIENT WAIT *(blue)* · HULLGUARD, STRIKE, ENDURE, BRACE *(red)* · DRAG UNDER *(green)*
 
@@ -25,7 +25,7 @@ It doesn't hunt. It doesn't need to — prey this far out is rare enough that wa
 
 ## Encounter Setup
 
-One Hullback, Frontline, usually found holding ground near the rock outcroppings inland of the tideline (`quests/washed-ashore.md`, The Terrain) rather than on the open sand — high ground and cover suit something that wins by patience, not pursuit. A real, optional risk on the walk to the Roadhouse: avoidable if the party gives the rocks a wide berth, genuinely dangerous if they don't, and worth the risk on purpose if they know what's in its den.
+One Hullback, Frontline, usually found holding ground near the rock outcroppings inland of the tideline (`quests/washed-ashore.md`, The Hook) rather than on the open sand — high ground and cover suit something that wins by patience, not pursuit. A real, optional risk on the walk to the Roadhouse: avoidable if the party gives the rocks a wide berth, genuinely dangerous if they don't, and worth the risk on purpose if they know what's in its den.
 
 ---
 
@@ -42,7 +42,7 @@ One Hullback, Frontline, usually found holding ground near the rock outcroppings
 
 ## The Den
 
-Killed, driven off, or simply abandoned mid-fight (Hullback disengages once it drops below a third of its max HP — patience runs out eventually, even for something this old), what's left behind is years of accumulated salvage packed into the rocks it's called home. See `quests/washed-ashore.md`, Discoverables, for what's actually in it.
+Killed, driven off, or simply abandoned mid-fight (Hullback disengages once it drops below a third of its max HP — patience runs out eventually, even for something this old), what's left behind is years of accumulated salvage packed into the rocks it's called home. See `items/washed-ashore-items.md` for what's actually in it.
 
 ---
 
