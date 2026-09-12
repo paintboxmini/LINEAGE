@@ -92,32 +92,35 @@ Range: Melee
 FOLLOW THROUGH
 BLUE — MIND
 Attack: Mind + d4
-Effect: Initiative Shift +2 to yourself. Exile this card.
-Defense Effect: Initiative Shift +2 to yourself. Exile this card.
+Effect: Initiative Shift +3 to yourself. Exile this card.
+Defense Effect: Initiative Shift +3 to yourself. Exile this card.
+Special Rule: On a tie, neither half triggers. This works on a win only.
 Range: Melee
 "The strike was never the end of the motion. It was the middle."
 ```
 
-**Three prices, and it needs all three.**
+**Four prices, and it needs all four.**
 
 - **Melee only**, so it can't be thrown from safety, and he has to be in the scrum to earn tempo.
 - **d4 rather than the d6 a Range restriction normally earns** (`rules/character-creation.md`). Paying the restriction and declining the compensation is the second price, and it means he plays this for the Effect and never for the damage.
-- **Exile on a win, which is the one that actually holds it.** Effects only fire on a win or a tie, so a loss discards it normally and it can come back around — the card recycles until it lands, and then it is gone for the fight. **One perfect opening per combat**, which is both the balance answer and the right fiction.
+- **Wins only, and the Special Rule is there because otherwise it wouldn't be.** A tie normally triggers the attacker's Effect *and* the defender's Defense Effect (`rules/combat.md`, Attack Resolution), so without that line a tie would hand him the shift on either half of the card. It has to be taken, not stumbled into.
+- **Exile when it lands, which is the price that actually holds it.** A loss or a tie discards it normally and it can come back around — the card recycles until it wins, and then it is gone for the fight. **One perfect opening per combat**, which is both the balance answer and the right fiction.
 
 **On the shift value.** *Recomputed 2026-09-12 against the corrected wheel rules (`rules/card-glossary.md`, Initiative Shift X) — onto the marker's slot is not across it, and the old three-combatant dampener is gone.*
 
 The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel.py`), and a positive shift now resolves three ways: land short and you move up the order; land **exactly** on the marker's slot and you take the very next turn; travel **further than the distance to the marker** and you cross it, taking an immediate extra turn while the displaced actor is skipped.
 
-| Slots from acting | +1 | +2 |
-|---|---|---|
-| 1 (about to act) | nothing — you were already next | **extra turn** |
-| 2 | takes the next turn | **extra turn** |
-| 3 | up one slot | takes the next turn |
-| 4+ | up one slot | up two slots |
+| Slots from acting | +1 | +2 | +3 |
+|---|---|---|---|
+| 1 (about to act) | nothing — already next | **extra turn** | **extra turn** |
+| 2 | takes the next turn | **extra turn** | **extra turn** |
+| 3 | up one slot | takes the next turn | **extra turn** |
+| 4 | up one slot | up two slots | takes the next turn |
+| 5+ | up one slot | up two slots | up three slots |
 
-**+2 because +1 is a dead card exactly when he most wants it.** A blade singer buying tempo on the turn before he acts should get something, and under +1 he gets nothing at all — he was already next and there is nothing above next. +2 converts that same position into the extra turn, which is the whole point of the card, and everywhere further back it is simply a good shift rather than an explosive one.
+**+1 is a dead card exactly when he most wants it** — a token already next has nothing above next — which is why this was never going to be a +1. **+3 widens the window to three slots out**, so a player can plan toward it rather than waiting for the wheel to hand him the one position that pays.
 
-**And the extra turn is properly rare now.** It fires only when he is one or two slots from acting, it costs the displaced actor their turn, and the card exiles itself when it lands. Once per fight, from a position he has to actually be in.
+**And it stays rare, because the gate moved rather than loosened.** It has to *win* — not tie, not merely resolve — from Melee, on a d4 he isn't playing for damage, and the card leaves the fight the moment it works. One extra turn per combat, taken deliberately, from a position he had to get himself into.
 
 **What I'd still avoid:** a *repeatable* extra action. The objection was never that tempo is too strong to sell — it's that a card which sells it every turn compounds. FOLLOW THROUGH sells it once and then leaves, which is why it works.
 
@@ -159,7 +162,7 @@ If a hard limit is wanted anyway, the version that costs something real rather t
 KILLSWITCH
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose one — your attacks deal +1 damage, or gain Armour 1.
+Effect: Choose one — your attacks deal +2 damage, or gain Armour 2.
         Lasts until the end of combat. Playing KILLSWITCH again replaces
         your current choice rather than adding to it.
 Defense Effect: Same choice.
@@ -171,7 +174,7 @@ Range: Both
 
 **The replacement clause is the name.** A killswitch flips; it doesn't accumulate. Without that line the card is a stacking buff and the fantasy is gone — with it, he is visibly choosing a mode and visibly giving one up, every time, in front of everyone.
 
-**On the numbers:** +1 damage and Armour 1 are both deliberately small for something that lasts a whole fight. HONING GLYPH already prices persistent +1 damage, and it pays for it by being an Object anyone can destroy; KILLSWITCH can't be destroyed, so it gets the smaller version. If it plays weak, the lever is d4 → d6 before it is +1 → +2.
+**On the numbers:** +2 and Armour 2, raised from 1 and 1. The lever I'd flagged got pulled — the die stays at d4, so he is still playing this for the mode rather than the damage, and the mode is now worth switching to. Armour 2 matches what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`), which is the right ceiling for a whole-combat stance that costs a card and an action to set.
 
 ## Not Yet Set
 
