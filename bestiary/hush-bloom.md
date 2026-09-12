@@ -30,7 +30,7 @@ Dried, the petals keep indefinitely.
 
 Calm, faintly numbing-sweet, and it throws a soft green luminescence in liquid — which is why it belongs in a drink more naturally than on a plate. The numbing is mild in food and considerably less mild concentrated.
 
-It is one of the charges in Kevin's grinder, and the base of his better beverages: `experimental/kevin.md`.
+It is one of the charges in Kevin's grinder, and the base of his better beverages: `campaign/kevin.md`.
 
 ---
 
@@ -39,4 +39,4 @@ It is one of the charges in Kevin's grinder, and the base of his better beverage
 - `places/turnroot-weald.md`, `quests/turnroot-weald-adventure.md` — where it grows
 - `bestiary/flower-snake.md` — shares the territory, and is a reason to be careful in it
 - `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/sapphire-ant.md`, `bestiary/shockquills.md` — the other four seasonings
-- `experimental/kevin.md` — the character, and what this does once it is loaded
+- `campaign/kevin.md` — the character, and what this does once it is loaded

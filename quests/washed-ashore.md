@@ -78,7 +78,7 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 ## Related Documents
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret
-- `places/vultures-nest.md` — the alternate opening, and where a Vulture's Nest start would begin instead (`experimental/session-1-convergence.md`)
+- `places/vultures-nest.md` — the alternate opening, and where a Vulture's Nest start would begin instead (`campaign/session-1-convergence.md`)
 - `rules/character-creation.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
 - `places/unheld-shoreline.md` — the beach itself: terrain, the river cave, what lives there, the walk inland
 - `places/roadhouse.md` — where the trail leads

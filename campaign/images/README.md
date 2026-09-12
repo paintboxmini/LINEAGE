@@ -4,4 +4,4 @@ Reference art for the player characters and their peoples. Nothing here is offic
 
 ## Contents
 
-- `shunka-reference-cane-corso.jpg` — Pat's inspiration image for Shunka appearance (`campaign/the-shunka.md`)
+- `shunka-reference-cane-corso.jpg` — Pat's inspiration image for Shunka appearance (`factions-and-races/races-shunka.md`)

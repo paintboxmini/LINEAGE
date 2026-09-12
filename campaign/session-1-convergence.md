@@ -22,11 +22,11 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 
 This does a lot of quiet work:
 
-- **It explains the kit without explaining it.** A temple kid who shirked his studies to cook (`experimental/kevin.md`) being trusted with the cellar's freight is exactly the job a family gives someone whose actual talent is embarrassing to them. He is good at this and it is not what he wants.
+- **It explains the kit without explaining it.** A temple kid who shirked his studies to cook (`campaign/kevin.md`) being trusted with the cellar's freight is exactly the job a family gives someone whose actual talent is embarrassing to them. He is good at this and it is not what he wants.
 - **It puts him on the water with cargo**, which is the most ordinary reason anyone is at that dock, and the fastest thing to lose.
 - **It gives him somewhere to not go back to.** Nothing dramatic has to happen to the shipment for Kevin to end up on a boat going the wrong way.
 
-*This supersedes the "isolated temple" lean in his own file, which was written as genuinely open. `experimental/kevin.md` updated to match.*
+*This supersedes the "isolated temple" lean in his own file, which was written as genuinely open. `campaign/kevin.md` updated to match.*
 
 ---
 
@@ -140,7 +140,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 - `places/vultures-nest.md` — the town, the Compact, the Entry text
 - `places/pneum.md`, `places/canille.md`, `places/apnea.md`, `places/the-coil.md` — the four strange places one dock reaches
-- `experimental/kevin.md`, `campaign/pat.md`, `campaign/chris.md` — the three characters
-- `campaign/the-tithebound.md`, `campaign/the-shunka.md` — the curse, and the river people who paid for it
+- `campaign/kevin.md`, `campaign/pat.md`, `campaign/chris.md` — the three characters
+- `factions-and-races/races-lizardkin.md`, `factions-and-races/races-shunka.md` — the curse, and the river people who paid for it
 - `factions-and-races/races-lizardkin.md` — the Tithebound, the cursegiver bloodline, and the army being rebuilt
 - `quests/washed-ashore.md` — the other opening, still live

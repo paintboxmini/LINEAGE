@@ -16,7 +16,7 @@ One of those worlds belongs almost entirely to a single continuous mind: **the A
 
 Chris's didn't go right.
 
-He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `campaign/the-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
+He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `factions-and-races/races-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
 
 He doesn't age. Whatever that costs, it isn't paid the way a person's years usually are.
 
@@ -52,4 +52,4 @@ He came down at the Abyssal Ruins — almost certainly through the Central Gatew
 - `places/briarwatch.md` — where he ended up
 - `characters/iron.md` — the farmer, tentatively
 - `world/creation-myth-the-three-cuts.md` — the Unheld, what a crossing actually costs
-- `campaign/the-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction
+- `factions-and-races/races-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction

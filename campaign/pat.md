@@ -14,13 +14,13 @@ Mind 2 / Body 3 / Soul 4 — HP 15
 
 ## People
 
-Shunka — dogkin. Working lore, still in flux: `campaign/the-shunka.md`. Pat is Shunka but not of the cursed royal line — his connection to the curse runs through his mother's side instead (below).
+Shunka — dogkin. His people, the war, the curse and the wild-magic line all live at `factions-and-races/races-shunka.md`; the Lizardkin who did it are at `factions-and-races/races-lizardkin.md`. Pat is Shunka but not of the cursed royal line — his connection to the curse runs through his mother's side instead (below).
 
 ## Backstory
 
 Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school — what that actually looks like in Shunka society isn't worked out yet, flagged rather than guessed at. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened. He set out into the world from there, presumably close to where Session 1 picks him up, though that's an inference, not stated outright.
 
-**His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`campaign/the-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
+**His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`factions-and-races/races-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
 ## The Call
 
@@ -30,7 +30,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **What he can plausibly get out of it is an explanation rather than a cure.** A Price paid in full doesn't undo on request — stated cosmology, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
 
-Where that points him, and how the search runs: `experimental/session-1-convergence.md`.
+Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
 
 ## Wild Magic Summoning
 
@@ -38,7 +38,7 @@ Where that points him, and how the search runs: `experimental/session-1-converge
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`campaign/the-shunka.md`). Two triggers confirmed — HERE BOY and LET'S GO (`campaign/pat-cards.md`).
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Two triggers confirmed — HERE BOY and LET'S GO (`campaign/pat-cards.md`).
 
 **Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
 
@@ -82,5 +82,5 @@ Open, but possibly progression rather than a creation-time gap — not yet sorte
 
 - `campaign/passives.md` — STRONGJAW, HACKLES RISE
 - `campaign/pat-cards.md` — his 3 custom deck cards
-- `campaign/the-shunka.md` — the Shunka people, the curse, the wild-magic line
+- `factions-and-races/races-shunka.md` — the Shunka people, the curse, the wild-magic line
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

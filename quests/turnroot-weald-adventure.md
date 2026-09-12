@@ -397,7 +397,7 @@ If the party cannot agree, the plate stays in the wall. The forest is content to
 
 **Customs still apply.** The clearing is the beetle's work, not the forest's, which does not exempt anyone standing in it. Naming a destination aloud here routes exactly as it would anywhere else under canopy.
 
-**Loot:** the bellows organ (`experimental/kevin.md`), and plate nobody has made armour from yet.
+**Loot:** the bellows organ (`campaign/kevin.md`), and plate nobody has made armour from yet.
 
 ---
 

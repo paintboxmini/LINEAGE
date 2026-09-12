@@ -14,7 +14,7 @@ Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 17, han
 
 ## Concept
 
-A combat chef — and combat bartender, really. **Raised in the Temple of Unity** in the capital (`places/capital/capital.md`), the interfaith cathedral at the Temple District's heart — his father is its head. The temple is known for its wines, and Kevin is overseeing a shipment of them when Session 1 opens (`experimental/session-1-convergence.md`).
+A combat chef — and combat bartender, really. **Raised in the Temple of Unity** in the capital (`places/capital/capital.md`), the interfaith cathedral at the Temple District's heart — his father is its head. The temple is known for its wines, and Kevin is overseeing a shipment of them when Session 1 opens (`campaign/session-1-convergence.md`).
 
 Chronically shirked his actual studies and rituals to cook instead — and the cooking is where his signature tool comes from. **No gunpowder, and no explosives of any kind.** Everything that goes bang in Kevin's kit is food he prepared until it would.
 
