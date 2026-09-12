@@ -56,9 +56,15 @@ What that actually means, in order of how long it took to hurt:
 
 - **The road stops.** Regency road crews maintain to the boundary stone and no further. The excellent road into Quillet was the last thing they finished before the striking took effect, and they finished it, because it was already assessed.
 - **The Kings Road Inn is not an option.** A waypoint is Regency infrastructure and Quillet's people are not registered travellers. They sleep outside like anyone else.
-- **The Cartographers Guild stopped surveying the spur.** Route walks cover registered routes (`factions-and-races/the-cartographers-guild.md`), so the road to Quillet ages out of every atlas printed after that year. On paper the village is drifting toward not being anywhere.
+- **The Cartographers Guild stopped surveying the spur.** Route walks cover registered routes (`factions-and-races/the-cartographers-guild.md`), so the road to Quillet ages out of every atlas printed after that year. A traveller with a recent atlas has no route in; a traveller who knows the way has no trouble at all.
 - **Nobody may lawfully buy from them.** An unregistered seller cannot be entered in a Marketplace Warden's book, so a capital merchant who trades with Quillet has broken a commercial rule rather than a criminal one — which is worse for him and no help at all to them.
 - **The Adventurers' Hall cannot post a job there.** Whatever Quillet needs, the Hall has no mechanism to hear about it (`places/capital/adventurers-hall.md`).
+
+**What the striking did not do is touch whether Quillet holds.** No list decides that and no map does either. **A place holds because somebody pays to hold it** — the Havens principle, the same thing that keeps a Roadhouse safe and a Mason's glyph line fresh (`places/apnea.md`). The Regency can stop administering a village. It cannot stop a village from being held, because that was never the Regency's to give.
+
+**And Even Weight is the paying.** It was always the paying, which is the part Quillet understood and the capital never had to. Nothing leaves without something coming back, entered in ink, settled or carried — a village keeping its own account of what it owes the ground it stands on, every season, without interruption, for longer than the council has existed. That is a rotation walked. The Ledger is not a record of the holding; it *is* the holding, and the reason the long house has the windows.
+
+Quillet's people know this and do not make a thing of it. Ask directly and you'll get the plainest possible answer: *we kept the books.*
 
 **And the debt closed itself.** A body that is not registered cannot be owed by the Regency, so the balance that was the entire point of the refusal was not settled, not disputed, and not denied. It simply stopped existing everywhere except in nine volumes in a long house.
 
@@ -76,6 +82,8 @@ What that actually means, in order of how long it took to hurt:
 
 - **The ones who think they won.** They are trading freely, keeping their whole yield, and paying a percentage instead of a levy. By the numbers this is correct.
 - **The ones counting the hundred who left.** Mostly the young, mostly to the capital, mostly having discovered that being from an unregistered village makes work hard to get and registration hard to obtain. Several of them are in the Underground Bazaar now, and that is not a coincidence (`places/capital/underground-bazaar.md`).
+
+  **This is the only real danger and almost nobody has named it.** The register can't unmake a place. People leaving can. Every departure is one fewer pair of hands keeping the account, and a village holds exactly as long as somebody is paying to hold it. Quillet is not in danger of being struck — it already was, and nothing happened. It is in danger of one day having too few people left to keep the books, at which point the ground stops being tended and the holding stops, and no soldier ever came. *The keeper, who has done the arithmetic, does not discuss it.*
 - **The ones who want to reopen the account.** A minority, growing slowly, who have worked out that the discipline cuts both ways: the Regency cannot settle a debt to a party it does not recognise, so the price of ever being paid is asking to be assessed again. The keeper considers this sound bookkeeping and unforgivable.
 
 ---
@@ -97,6 +105,8 @@ What that actually means, in order of how long it took to hurt:
 
 **Do not have soldiers arrive.** The Regency has already won and knows it. Any GM who reaches for a raid has swapped a hard problem for an easy one.
 
+**And do not let the atlas be the threat either.** Falling off a map is an inconvenience, not an erasure — this world does not decide what exists by what gets recorded, and the Guild surveys what holds rather than deciding it. The clock on Quillet is the emigration, and it runs slowly enough that the table should have to notice it rather than be told.
+
 ---
 
 ## Open
@@ -115,4 +125,5 @@ What that actually means, in order of how long it took to hurt:
 - `places/capital/underground-bazaar.md` — where some of the hundred went
 - `factions-and-races/the-cartographers-guild.md` — why the road is falling out of the atlases
 - `world/the-regency.md` — Elara's sphere, Isabella's court, Cedric's soldiers who did not come
+- `places/apnea.md` — the Havens principle, and a boundary that stopped being walked
 - `world/tonal-bible.md` — everything correct, nothing kind
