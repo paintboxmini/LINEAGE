@@ -208,18 +208,24 @@ Players may also propose custom cards as the campaign develops. These enter the 
 
 ---
 
+## Magic Expression
+
+When you play a card, you choose what it looks like.
+
+The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
+
+A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+
+None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
+
+You don't have to explain the metaphysics. Neither does your character.
+
+---
+
 ## Advancement
 
 ### End of Session
-At the close of every session, each player meets the Oracle alone — the ritual run per player at the table, in three frames:
-
-1. **Name** — the Oracle asks one question. The player answers.
-2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
-   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
-   The Oracle is permitted to remember what it has already shown.
-3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
-
-Growth is never handed over whole. This is the default rhythm of it.
+The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
 The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
 
@@ -247,34 +253,3 @@ The retiring card returns to the GM/Oracle pool, same as any card leaving a deck
 **Permanent Removal** — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.
 
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
-
----
-
-## Resting
-
-### Short Rest
-**Duration:** 20 minutes  
-**Limit:** 3 per day  
-**Effect:** Recover **2d6 + Body** HP
-
-Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.
-
-### Long Rest
-**Duration:** 7½ hours  
-**Effect:** Full heal
-
-A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don't.
-
----
-
-## Magic Expression
-
-When you play a card, you choose what it looks like.
-
-The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
-
-A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
-
-None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
-
-You don't have to explain the metaphysics. Neither does your character.

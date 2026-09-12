@@ -342,22 +342,27 @@ em {{
 
 
 # Named multi-document builds. `packet` is the thing that actually goes out
-# to players: the plain mechanical guide, read once before the first session.
-# It used to open with the Oracle's summons; that was retired to
-# experimental/archives/ on 2026-09-12 and dropped from the packet, so the
-# packet is a single document now and stays a PACKETS entry only because
-# generate-all.sh builds it by name. `play-reference` is the other half —
-# what stays on the table during a session. Each file's own `# ` header
-# starts a fresh page, so multi-file sections stay physically separable.
+# to players: what you settle before play — how a character is made, and the
+# gear rules the slot system points at. It used to open with the Oracle's
+# summons; that was retired to experimental/archives/ on 2026-09-12 and
+# dropped. `play-reference` is the other half — what stays on the table
+# during a session, which is why Resting sits there and not in creation.
+# Each file's own `# ` header starts a fresh page, so the sections stay
+# physically separable.
+#
+# Both draw on files that are also working documents, so several sections
+# are wrapped in print:skip — the designer's pricing and pacing guidance in
+# equipment.md, the two encounter curses in the glossary. Skipped, not
+# deleted: they are still canon, just not a player's business.
 PACKETS = {
     'packet': {
-        'title': 'Character Creation',
-        'files': ['character-creation.md'],
+        'title': 'Character Creation & Equipment',
+        'files': ['character-creation.md', 'equipment.md'],
     },
     'play-reference': {
         'title': 'Play Reference',
-        'files': ['combat.md', 'resolution.md', 'card-glossary.md',
-                  'initiative-shift-examples.md'],
+        'files': ['combat.md', 'resolution.md', 'resting.md',
+                  'card-glossary.md', 'initiative-shift-examples.md'],
         # The worked shift cases go in the players' hands rather than staying
         # a maintenance file. Initiative Shift is tied for the most common
         # keyword in the Oracle deck — seven of the 63 carry it, across all

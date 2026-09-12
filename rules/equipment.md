@@ -53,6 +53,7 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 ---
 
+<!-- print:skip-start -->
 ## Pacing — How Fast Gear Should Arrive
 
 **A session's work is worth about one fifth of the tier being shopped for — per character, not per party.**
@@ -129,6 +130,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 ---
+<!-- print:skip-end -->
 
 ## Artifacts
 
@@ -136,7 +138,7 @@ Artifacts don't run on the tier budget above — they're a different kind of obj
 
 That's a formula's absence, not a sale's — Brother Alden does put a number on the two he carries (`items/capital-items.md`: the Quiet Index, 400 gold + a true secret archived; Cord of the Held, 250 gold + a real vow), and the shape of those two prices is the tell that nothing's actually broken: gold alone never closes the sale, there's always a second, non-gold cost standing in for what the item really is. What Alden charges to hand one over and what the Artifact costs to actually invoke (the Price, below) are two separate accountings — the second one still isn't predefined, and still emerges at the table the same as ever.
 
-**Name comes first**, the same four parts as a person or a place — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
+**Name comes first**, the same four parts as a person or a place — probably incomplete rather than closed: what something is, an actual name, traits, and history.
 
 - **What it is.** The essential nature or function underneath the specifics — "a sword" isn't Named yet at this stage, just categorized.
 - **An actual name.** The Lightning Loop, not "a ring." An Artifact earns its Name the way anything does: specificity, not a formula.
@@ -153,14 +155,18 @@ That's a formula's absence, not a sale's — Brother Alden does put a number on 
 
 **Nobody chooses their own Price, and Resonance doesn't come with an instruction manual.** A wielder might know an item is dangerous from experience, tradition, or a scar that's still healing, without knowing the actual law behind it — two people can hold the same item with two different, incomplete understandings of what it costs. Skill and familiarity can shift *where or how* a Price lands, not whether it's paid or how much — that's the difference between understanding a law well enough to act inside it and having any authority over it at all.
 
+<!-- print:skip-start -->
 **Don't predefine every Artifact's Price up front.** Establish what the item does and what domain it draws on; let the actual cost emerge the first time a GM needs one, in a form that answers that specific use — then treat that as the pattern going forward, rather than inventing a generic tax nobody asked for. The Lightning Loop's Price (`items/lightning-loop.md`) is deliberately still open for exactly this reason.
+<!-- print:skip-end -->
 
 **Distance** applies too, though it isn't a system this section prices. Distance is what can never be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
 
 See `world/resonant-items.md` for what makes an object Resonant in the first place — Intentional or Accumulated — and why a Resonant Item doesn't need its Seat Filled to work at all.
 
+<!-- print:skip-start -->
 ---
 
 ## Building Items As Standard Practice
 
 When building out a location, NPC, or bestiary entry, treat at least one real item as part of the standard deliverable set, the same as its cards: does this place, this creature, this person leave something behind worth carrying? Not every entry needs one — but the question should get asked every time, not just when it happens to come up. New items go in `rules/items.md`'s catalog once built, sorted by where they actually come from.
+<!-- print:skip-end -->

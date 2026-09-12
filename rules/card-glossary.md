@@ -158,7 +158,7 @@ Status cards are placed into decks as consequences. They cannot be played. They 
 *Status — Colorless*
 Cannot be played. It stays in your hand and occupies a card slot — a Wound does not leave on its own.
 In combat, use your action to destroy 1 Wound from your hand.
-Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/character-creation.md`, Resting), so clearing several Wounds in one sitting costs time, not repetition.
+Once per short rest, destroy 1 Wound from your hand, discard pile, or deck. Short rests chain (`rules/resting.md`), so clearing several Wounds in one sitting costs time, not repetition.
 On a long rest, all Wounds are destroyed.
 
 ---
@@ -172,6 +172,7 @@ A short or long rest removes every copy of Exhaust from your hand, deck, and dis
 
 **Exhaust always clears in bulk; a Wound comes off one at a time.** That is the difference between them. Rest once and every Exhaust you are carrying is gone at once, wherever it sits. Wounds have to be answered individually — one per action, one per short rest.
 
+<!-- print:skip-start -->
 ---
 
 ### A ROOTED HEART
@@ -192,3 +193,4 @@ Removal: Story dependent.
 *"The fog remembered somewhere beautiful. You went with it."*
 
 *Source: Fog Goggles. See `items/fog-basin-items.md`.*
+<!-- print:skip-end -->

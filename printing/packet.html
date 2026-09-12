@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tales Untold — Character Creation</title>
+<title>Tales Untold — Character Creation &amp; Equipment</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -250,12 +250,15 @@ em {
 <p>After each encounter, the GM may add new cards to the Oracle — ones fictionally relevant to what just happened, where the party is, or what they&#x27;re becoming.</p>
 <p>Players may also propose custom cards as the campaign develops. These enter the Oracle at GM discretion.</p>
 <hr>
+<h2>Magic Expression</h2>
+<p>When you play a card, you choose what it looks like.</p>
+<p>The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn&#x27;t tell you is how your character gets there. That part is yours.</p>
+<p>A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.</p>
+<p>None of it is wrong as long as it fits your character. The cards are a frame. You&#x27;re the one making it mean something.</p>
+<p>You don&#x27;t have to explain the metaphysics. Neither does your character.</p>
+<hr>
 <h2>Advancement</h2>
-<p>### End of Session At the close of every session, each player meets the Oracle alone — the ritual run per player at the table, in three frames:</p>
-<ol><li><strong>Name</strong> — the Oracle asks one question. The player answers.</li><li><strong>Price</strong> — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  </li></ol>
-<p>   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.      The Oracle is permitted to remember what it has already shown.</p>
-<ol><li><strong>Distance</strong> — the GM reveals <strong>3 cards</strong>; the player chooses <strong>1</strong> to add to their deck permanently.</li></ol>
-<p>Growth is never handed over whole. This is the default rhythm of it.</p>
+<p>### End of Session The GM reveals <strong>3 cards</strong>; the player chooses <strong>1</strong> to add to their deck permanently.</p>
 <p>The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.</p>
 <p>### Stat Increases Stat increases are rare and are not tied to sessions or card count. They happen after <strong>pivotal character development</strong> — a moment where something in the character genuinely and permanently changes. What qualifies is the GM&#x27;s call. When it happens, the player adds 1 point to a stat of their choice.</p>
 <p>These moments should feel earned, not scheduled.</p>
@@ -269,18 +272,66 @@ em {
 <p><strong>Bonus Cards</strong> — Exceptional fiction, clever play, or the right action at the right moment may occasionally earn an extra card outside the normal end-of-session reward. Rare. Entirely at GM discretion.</p>
 <p><strong>Permanent Removal</strong> — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.</p>
 <p><strong>Curse &amp; Status Cards</strong> — Certain encounters, locations, or narrative consequences can force cards into a player&#x27;s deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.</p>
+<h1 class="section-break">Equipment</h1>
+<p>Weapons, Armor, and Artifacts — the three Equipment Slots (<code>rules/character-creation.md</code>). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see <code>rules/items.md</code>.</p>
 <hr>
-<h2>Resting</h2>
-<p>### Short Rest <strong>Duration:</strong> 20 minutes   <strong>Limit:</strong> 3 per day   <strong>Effect:</strong> Recover <strong>2d6 + Body</strong> HP</p>
-<p>Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.</p>
-<p>### Long Rest <strong>Duration:</strong> 7½ hours   <strong>Effect:</strong> Full heal</p>
-<p>A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don&#x27;t.</p>
+<h2>The Default: Dress However You Want</h2>
+<p>Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.</p>
+<p><strong>Only equipment that grants an actual mechanical effect is restricted to the three Equipment Slots</strong>: Weapon, Armor, Artifact. The slot system isn&#x27;t a limit on what a character can <em>carry</em> — it&#x27;s a limit on how much raw mechanical power a character can have <em>active</em> at once. Everything else — how it looks, what it&#x27;s called, how many of them you own — is free.</p>
+<p>Carried items (potions, tools, one-use consumables) don&#x27;t compete for these slots at all. They&#x27;re used via the Interact action and are a separate category entirely — see <code>rules/items.md</code> for where those actually live.</p>
 <hr>
-<h2>Magic Expression</h2>
-<p>When you play a card, you choose what it looks like.</p>
-<p>The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn&#x27;t tell you is how your character gets there. That part is yours.</p>
-<p>A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.</p>
-<p>None of it is wrong as long as it fits your character. The cards are a frame. You&#x27;re the one making it mean something.</p>
-<p>You don&#x27;t have to explain the metaphysics. Neither does your character.</p>
+<h2>Weapon and Armor Tiers</h2>
+<p>Weapons and Armor both scale on the same three-tier system. Each tier is a <strong>power budget</strong> — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer&#x27;s discretion.</p>
+<table class="doc-table">
+<thead><tr>
+<th>Tier</th>
+<th>Weapon (default spend)</th>
+<th>Armor (default spend)</th>
+<th>Approximate Value</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>+1 attack damage</td>
+<td>Armour 1</td>
+<td>~200 gold</td>
+</tr>
+<tr>
+<td>2</td>
+<td>+2 attack damage</td>
+<td>Armour 2</td>
+<td>~800 gold</td>
+</tr>
+<tr>
+<td>3</td>
+<td>+3 attack damage</td>
+<td>Armour 3</td>
+<td>~2,000 gold</td>
+</tr>
+</tbody></table>
+<p>The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.</p>
+<p><strong>A Tier 3 item (Weapon or Armor) may instead grant +1 to a single stat — Mind, Body, or Soul — with no other bonuses attached.</strong> The entire tier&#x27;s budget goes into the stat point alone; nothing gets stacked on top of it. Priced at the top tier on purpose: a stat point isn&#x27;t just a bigger number, it moves other things too (Mind sets hand size 1:1, Body sets max HP, Soul sets the initiative roll), so it&#x27;s worth more than any single flat bonus or keyword stack at the same tier.</p>
+<p><strong>The budget doesn&#x27;t have to go entirely into the flat number.</strong> A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:</p>
+<ul><li><strong>1 point ≈</strong> +1 flat damage or reduction, <strong>or</strong> granting yourself one stack of a Positive Status Effect (Deadly, Resist, Evade, etc.) at the start of combat, <strong>or</strong> inflicting one stack of a debuff (Weak, Blind, Staggered, etc.) on an enemy, usually gated behind &quot;the first time you land a successful attack&quot; or &quot;the first time you&#x27;re hit&quot; so it triggers once per combat, not indefinitely.</li><li>Larger, spikier effects (doubled attack damage, Immunity, a full Ward) run stronger than a single point and should either consume a whole tier on their own or come with a real restriction (once per combat, only below half HP, only on a clean win) to stay in budget.</li><li><strong>Not every keyword is worth the same point regardless of context — check actual value, don&#x27;t just price by name.</strong> Protect reads like a strong defensive keyword but is genuinely one of the weakest through an action-economy lens: the party still eats the same total damage, just redirected onto whoever volunteered — no damage is actually prevented unless it&#x27;s paired with something that mitigates the hit once it lands (Resist, Evade, and similar). Priced alone, it&#x27;s worth well under 1 point — cheap enough to bundle in at Tier 1 alongside a real effect (e.g., start combat with Evade 1 and Protect 1) rather than ever anchoring a tier by itself. The general lesson: price a keyword by what it actually does for the action economy, not by how strong it sounds.</li></ul>
+<p><strong>Worked examples, exactly as specified:</strong></p>
+<ul><li><em>Tier 1 weapon:</em> inflicts Weak on the first successful attack against an enemy. (Whole budget spent on the debuff — no flat bonus.)</li><li><em>Tier 2 weapon:</em> +1 attack damage, and gain Deadly at the start of combat. (1 point flat, 1 point self-buff.)</li><li><em>Tier 2 armor:</em> Armour 1, and start combat with 1 Resist. (1 point flat, 1 point self-buff.)</li></ul>
+<p>This is a budget to design against, not a formula to solve — two tier-2 items should feel different from each other even though they cost the same.</p>
+<hr>
+<h2>Currency</h2>
+<p><strong>10 copper = 1 silver. 10 silver = 1 gold.</strong></p>
+<p>All three are in use. Gold prices equipment, artifacts, and anything a party saves toward. Silver prices a meal, a night&#x27;s lodging, pocket change in a chest. Copper prices the smallest thing anyone would still charge for.</p>
+<p>The Gilded Tusk&#x27;s menu (<code>places/capital/gilded-tusk.md</code>) shows the whole range in one place: a seasoning you add to a dish is 2 copper, ordinary mains run 6–9 silver, and the one made from something dangerous is 8 gold.</p>
+<hr>
+<h2>Artifacts</h2>
+<p>Artifacts don&#x27;t run on the tier budget above — they&#x27;re a different kind of object entirely. Per <code>rules/character-creation.md</code>: &quot;resonant objects closely aligned with a Seat&#x27;s domain... not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you&#x27;re willing to be near.&quot; An Artifact&#x27;s mechanics should read as an extension of a specific Seat&#x27;s actual domain (<code>world/seats.md</code>), not a generic stat stick reskinned — design these bespoke, one at a time, the way a signature card set gets built for a specific creature rather than pulled from a shared budget table. No standard gold value for the same reason — an Artifact&#x27;s worth is cosmological before it&#x27;s economic, and pricing one at market undersells what it actually is.</p>
+<p>That&#x27;s a formula&#x27;s absence, not a sale&#x27;s — Brother Alden does put a number on the two he carries (<code>items/capital-items.md</code>: the Quiet Index, 400 gold + a true secret archived; Cord of the Held, 250 gold + a real vow), and the shape of those two prices is the tell that nothing&#x27;s actually broken: gold alone never closes the sale, there&#x27;s always a second, non-gold cost standing in for what the item really is. What Alden charges to hand one over and what the Artifact costs to actually invoke (the Price, below) are two separate accountings — the second one still isn&#x27;t predefined, and still emerges at the table the same as ever.</p>
+<p><strong>Name comes first</strong>, the same four parts as a person or a place — probably incomplete rather than closed: what something is, an actual name, traits, and history.</p>
+<ul><li><strong>What it is.</strong> The essential nature or function underneath the specifics — &quot;a sword&quot; isn&#x27;t Named yet at this stage, just categorized.</li><li><strong>An actual name.</strong> The Lightning Loop, not &quot;a ring.&quot; An Artifact earns its Name the way anything does: specificity, not a formula.</li><li><strong>Traits.</strong> What makes it recognizably itself and not another Artifact of the same rough shape — what it&#x27;s exactly capable of, and what it costs to use.</li><li><strong>History.</strong> Where it came from, who made it or found it, and what it was used for before the party ever touched it.</li></ul>
+<p><strong>The Price isn&#x27;t a flat cost — it&#x27;s an expression of what&#x27;s being forced through the item.</strong> Not <em>&quot;use artifact, lose 3 HP&quot;</em> as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn&#x27;t a new mechanic bolted onto Artifacts; it&#x27;s the Second Cut (<code>world/creation-myth-the-three-cuts.md</code>, The Second Cut) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.</p>
+<p><strong>Price scales with magnitude.</strong> A minor working costs less than a major one — heal a scrape versus heal a mortal wound, spark a candle versus level a wall. The relationship isn&#x27;t a lookup table, but the direction always holds: the more reality an effect bends, the more it costs to bend it.</p>
+<p><strong>An Archon&#x27;s will can lighten or deepen that cost</strong> (<code>world/seats.md</code>) — acting in the grain of a seated Archon&#x27;s nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.</p>
+<p><strong>The Price doesn&#x27;t have to land entirely on whoever triggered it.</strong> An effect can cost an ally something too, without that lessening what the actor themselves still pays — the consequence propagates through whoever the working actually touched, it doesn&#x27;t get divided up and handed off.</p>
+<p><strong>Nobody chooses their own Price, and Resonance doesn&#x27;t come with an instruction manual.</strong> A wielder might know an item is dangerous from experience, tradition, or a scar that&#x27;s still healing, without knowing the actual law behind it — two people can hold the same item with two different, incomplete understandings of what it costs. Skill and familiarity can shift <em>where or how</em> a Price lands, not whether it&#x27;s paid or how much — that&#x27;s the difference between understanding a law well enough to act inside it and having any authority over it at all.</p>
+<p><strong>Distance</strong> applies too, though it isn&#x27;t a system this section prices. Distance is what can never be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.</p>
+<p>See <code>world/resonant-items.md</code> for what makes an object Resonant in the first place — Intentional or Accumulated — and why a Resonant Item doesn&#x27;t need its Seat Filled to work at all.</p>
 </body>
 </html>
