@@ -48,10 +48,10 @@ What the kit delivers so far:
 
 ### The flow card — three candidates
 
-**1. No repeated note.** Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**1. MEASURE — no repeated note.** *Kept as his second flow card.* Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
 
 ```
-(untitled — the colour rotation)
+MEASURE
 BLUE — MIND
 Attack: Mind + d6
 Effect: If the card you played last turn was a different colour than this one,
@@ -59,9 +59,12 @@ Effect: If the card you played last turn was a different colour than this one,
 Defense Effect: If the card you played last turn was a different colour than
         this one, draw 1.
 Range: Both
+"A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**Still live as a second card, and it wants a name** — FOLLOW THROUGH went to the tempo card, where it fits better. This one is about *not repeating*, so the name should be too.
+**MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
+
+**With FOLLOW THROUGH this makes a pair rather than two cards.** FOLLOW THROUGH buys a turn once and leaves; MEASURE pays a little every turn he keeps the pattern moving. One is the flourish, the other is the discipline underneath it, and a blade singer needs both to read as a blade singer rather than a man with a trick.
 
 **2. Parry-riposte, and it grants Deadly.** Flow as defence feeding offence, which is what sword fighting actually looks like. **Deadly rather than a flat number**, and the difference matters:
 
@@ -174,7 +177,7 @@ Range: Both
 - Price
 - Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
 - **FOLLOW THROUGH** — chosen, shape and price set, wants a table test
-- **The colour-rotation card** — still live as a second flow card, and it needs a name
+- **MEASURE** — his second flow card, named; numbers want a table test
 - **The riposte sketch** — Deadly on both halves; numbers and name both unwritten
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 
