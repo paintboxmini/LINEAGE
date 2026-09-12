@@ -46,20 +46,38 @@ def ex2():
 
 
 def ex3():
-    """`a, b, c, d.` a plays Initiative Shift +3 on d.
-    Result: d, a, b, c — bonus chip on d, skip chip on a."""
+    """`a, b, c, d.` a plays Initiative Shift +3 on d. d sits 3 from the
+    marker and the shift is 3, so it lands exactly on the marker's slot —
+    onto is not across. Result: d, a, b, c, no chips on anyone."""
     w = Wheel(['a', 'b', 'c', 'd'])
     w.shift('d', +3)
     assert w.order() == ['d', 'a', 'b', 'c'], w.order()
-    assert w.chips == {'d': BONUS, 'a': SKIP}, w.chips
-    assert w.take_bonus() == 'd'           # immediate extra turn
+    assert w.chips == {}, w.chips
     assert w.take_bonus() is None
-    # a's turn ends -> d goes next (bonus) -> a is skipped -> b -> c.
-    # d's bonus turn spends the marker's slot, so d is the actor here.
-    assert w.advance('d') is None          # a, skipped in compensation
-    assert w.chips == {}
+    # The marker belongs to a slot and hasn't finished with its own, so the
+    # token that slid into it takes the next turn. Nobody is skipped.
+    # a's turn ends -> d -> a -> b -> c.
+    assert w.advance('a') == 'd'
+    assert w.advance('d') == 'a'
     assert w.advance('a') == 'b'
     assert w.advance('b') == 'c'
+
+
+def ex3b():
+    """`a, b, c, d.` a plays Initiative Shift +2 on b. b sits 1 from the
+    marker and the shift is 2 — further to travel than the distance, so it
+    crosses. Result: b, a, c, d — bonus on b, skip on a."""
+    w = Wheel(['a', 'b', 'c', 'd'])
+    w.shift('b', +2)
+    assert w.order() == ['b', 'a', 'c', 'd'], w.order()
+    assert w.chips == {'b': BONUS, 'a': SKIP}, w.chips
+    assert w.take_bonus() == 'b'           # immediate extra turn
+    assert w.take_bonus() is None
+    # a's turn ends -> b goes next (bonus) -> a skipped -> c -> d.
+    assert w.advance('b') is None          # a, skipped in compensation
+    assert w.chips == {}
+    assert w.advance('a') == 'c'
+    assert w.advance('c') == 'd'
 
 
 def ex4():
@@ -80,9 +98,10 @@ def ex5():
     """Continuing from Example 2 (b, d, c, a; d holds a skip chip): during
     b's turn, b plays Initiative Shift +1 on d.
 
-    The pending chip is cancelled, and the fresh shift then resolves under
+    The pending chip is cancelled, and the fresh shift resolves under
     whatever case it actually lands in — which here is Example 3's, since d
-    sits one slot off the marker. Result: d, b, c, a, bonus on d, skip on b.
+    sits one slot off the marker and the shift is 1. Onto is not across:
+    result d, b, c, a with no chips.
     """
     w = Wheel(['a', 'b', 'c', 'd'])
     w.shift('d', -2)
@@ -90,26 +109,30 @@ def ex5():
     assert w.advance('a') == 'b'           # b is acting now
     w.shift('d', +1)
     assert w.order() == ['d', 'b', 'c', 'a'], w.order()
-    assert w.chips == {'d': BONUS, 'b': SKIP}, w.chips
-    # b's turn ends -> d (bonus) -> b skipped -> c -> a.
-    assert w.take_bonus() == 'd'
-    assert w.advance('d') is None          # b, skipped in compensation
+    assert w.chips == {}, w.chips
+    # b's turn ends -> d (slid into the marker's slot) -> b -> c -> a.
+    assert w.advance('b') == 'd'
+    assert w.advance('d') == 'b'
     assert w.advance('b') == 'c'
     assert w.advance('c') == 'a'
 
 
-def three_on_the_wheel():
-    """"With exactly 3 combatants, reduce X's magnitude by 1 (toward zero)
-    before applying. A shift of +/-1 becomes no shift at all.\""""
+def no_table_size_correction():
+    """The old "with exactly 3 combatants, reduce X by 1" rule is retired.
+    Three on the wheel behaves exactly like four, scaled down."""
     w = Wheel(['a', 'b', 'c'])
-    w.shift('c', +1)
-    assert w.order() == ['a', 'b', 'c'], w.order()
+    w.shift('c', +1)                       # slot 2 -> slot 1, an ordinary move
+    assert w.order() == ['a', 'c', 'b'], w.order()
+    assert w.chips == {}, w.chips
+
     w2 = Wheel(['a', 'b', 'c'])
-    w2.shift('c', -1)
-    assert w2.order() == ['a', 'b', 'c'], w2.order()
+    w2.shift('c', +2)                      # lands exactly on the marker: onto
+    assert w2.order() == ['c', 'a', 'b'], w2.order()
+    assert w2.chips == {}, w2.chips
+
     w3 = Wheel(['a', 'b', 'c'])
-    w3.shift('c', +2)          # becomes +1
-    assert w3.order() == ['a', 'c', 'b'], w3.order()
+    w3.shift('b', +2)                      # 1 from the marker, shift 2: across
+    assert w3.chips == {'b': BONUS, 'a': SKIP}, w3.chips
 
 
 def join_and_leave():
@@ -127,9 +150,10 @@ if __name__ == '__main__':
         case('Example 1 — an ordinary shift', ex1),
         case('Example 2 — a negative shift that overshoots', ex2),
         case('Example 3 — positive shift onto the marker\'s slot', ex3),
+        case('Example 3b — positive shift across the marker', ex3b),
         case('Example 4 — negative shift onto the marker\'s slot', ex4),
         case('Example 5 — reshifting a chip-holding token', ex5),
-        case('3 on the wheel — magnitude reduced by 1', three_on_the_wheel),
+        case('no table-size correction', no_table_size_correction),
         case('joining and leaving', join_and_leave),
     ]
     print(f'\n{sum(results)}/{len(results)} passed')

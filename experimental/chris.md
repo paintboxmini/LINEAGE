@@ -104,17 +104,20 @@ Range: Melee
 - **d4 rather than the d6 a Range restriction normally earns** (`rules/character-creation.md`). Paying the restriction and declining the compensation is the second price, and it means he plays this for the Effect and never for the damage.
 - **Exile on a win, which is the one that actually holds it.** Effects only fire on a win or a tie, so a loss discards it normally and it can come back around — the card recycles until it lands, and then it is gone for the fight. **One perfect opening per combat**, which is both the balance answer and the right fiction.
 
-**On the shift value, and this is the part worth knowing.** The wheel is *a fixed ring of slots, one per combatant* (`combat-simulations/wheel.py`). So in a 1v1 there are two slots, and **any** positive shift carries the token to the marker's own slot and grants an immediate extra turn. +1, +2, +3 — identical in a duel. Magnitude is not the 1v1 lever and never was; **exile is**, which is why it's doing the real work here.
+**On the shift value.** *Recomputed 2026-09-12 against the corrected wheel rules (`rules/card-glossary.md`, Initiative Shift X) — onto the marker's slot is not across it, and the old three-combatant dampener is gone.*
 
-Where magnitude does matter is everywhere else:
+The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel.py`), and a positive shift now resolves three ways: land short and you move up the order; land **exactly** on the marker's slot and you take the very next turn; travel **further than the distance to the marker** and you cross it, taking an immediate extra turn while the displaced actor is skipped.
 
-| Combatants | +1 | +2 |
+| Slots from acting | +1 | +2 |
 |---|---|---|
-| 2 | extra turn | extra turn |
-| 3 | **nothing** — the dampener zeroes it | one slot |
-| 4+ | one slot | two slots |
+| 1 (about to act) | nothing — you were already next | **extra turn** |
+| 2 | takes the next turn | **extra turn** |
+| 3 | up one slot | takes the next turn |
+| 4+ | up one slot | up two slots |
 
-**+2 because +1 is dead at exactly three**, where the glossary's "reduce magnitude by 1" correction wipes it out entirely. A card that does nothing in one specific party size is a bad card and a bad memory at the table.
+**+2 because +1 is a dead card exactly when he most wants it.** A blade singer buying tempo on the turn before he acts should get something, and under +1 he gets nothing at all — he was already next and there is nothing above next. +2 converts that same position into the extra turn, which is the whole point of the card, and everywhere further back it is simply a good shift rather than an explosive one.
+
+**And the extra turn is properly rare now.** It fires only when he is one or two slots from acting, it costs the displaced actor their turn, and the card exiles itself when it lands. Once per fight, from a position he has to actually be in.
 
 **What I'd still avoid:** a *repeatable* extra action. The objection was never that tempo is too strong to sell — it's that a card which sells it every turn compounds. FOLLOW THROUGH sells it once and then leaves, which is why it works.
 

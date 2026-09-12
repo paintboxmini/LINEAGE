@@ -32,13 +32,27 @@ d's clockwise math wraps past a full lap and would land it *sooner* than its own
 
 ## Example 3 — A positive shift landing exactly on the marker's slot
 
-`a, b, c, d.` a plays Initiative Shift +3 on d.
+`a, b, c, d.` a is acting. a plays Initiative Shift +3 on d.
 
-d's counterclockwise math lands it exactly on the marker's own slot — the point where "act sooner" runs out of room, since there's no slot before "now." The shift and slide happen in full: `a, b, c, d` becomes `d, a, b, c`, with a **bonus chip** placed on d. a — the combatant just displaced off the marker's own slot to make room — gets a **skip chip**.
+d sits 3 slots from the marker and the shift is 3, so it lands **exactly** on the marker's own slot. **Onto is not across.** The shift and slide happen in full: `a, b, c, d` becomes **`d, a, b, c`**, and **no chip is placed on anyone.**
 
-**Turn sequence this lap:** a's turn ends → **d goes next** (bonus turn) → **a is skipped** (chip removed) → b goes → c goes. Next lap, the new order (`d, a, b, c`) runs normally.
+**Turn sequence this lap:** a's turn ends → **d goes next** → a goes → b goes → c goes. Then the new order (`d, a, b, c`) runs normally.
 
-*Demonstrates the positive-shift wraparound case, and confirms the skip on the displaced combatant (a) is specifically compensation for the bonus turn just granted to the arriving token (d) — not a blanket rule about landing on the marker's slot. Compare Example 4, where the same displacement happens but nothing gets skipped.*
+**Why d goes next rather than last:** the marker belongs to a *slot*, not to a combatant, and it has not finished with its own slot — d slid into it. So d takes the very next turn. **Nobody is skipped and nobody gets an extra turn**; d simply cut to the front of the line, which is what a positive shift is supposed to do.
+
+*Demonstrates the boundary that isn't one. Landing on the marker's slot is a landing, not a crossing — d moved as far toward acting sooner as the wheel can express, and it cost nobody a turn. Compare Example 3b, where the shift has further to travel than the distance to the marker, genuinely crosses it, and does cost somebody a turn.*
+
+---
+
+## Example 3b — A positive shift that actually crosses the marker
+
+`a, b, c, d.` a is acting. a plays Initiative Shift +2 on b.
+
+b sits **1** slot from the marker and the shift is **2** — further to travel than the distance to the marker, so b crosses it. There is no slot past "now": b takes an **immediate extra turn** instead. `a, b, c, d` becomes **`b, a, c, d`**, with a **bonus chip** on b and a **skip chip** on a — the combatant displaced off the marker's own slot, in compensation for the extra turn just granted.
+
+**Turn sequence this lap:** a's turn ends → **b goes next** (bonus turn) → **a is skipped** (chip removed) → c goes → d goes.
+
+*Demonstrates the real positive-shift boundary. **Onto the marker's slot buys the next turn; across it buys an extra one, and somebody pays for it.** The displaced-actor skip is compensation for that extra turn — not a rule about landing on the marker's slot. Compare Example 4, where the same displacement happens and nothing is skipped.*
 
 ---
 
@@ -50,7 +64,7 @@ c's clockwise math also lands it exactly on the marker's own slot — but becaus
 
 **Turn sequence this lap:** a's turn ends → **c is skipped** (chip removed) → **b goes next** → d goes → **a goes normally** when the marker reaches it.
 
-*Demonstrates the negative-shift wraparound case, and the payoff of comparing it to Example 3: since c was skipped rather than bonus'd, there was no extra turn to compensate for — so a, despite being displaced exactly the same way, is never skipped. The displaced-actor skip only ever pairs with a bonus turn actually being granted.*
+*Demonstrates the negative-shift wraparound case, and the payoff of comparing it to Example 3b: since c was skipped rather than bonus'd, there was no extra turn to compensate for — so a, despite being displaced exactly the same way, is never skipped. The displaced-actor skip only ever pairs with a bonus turn actually being granted.*
 
 ---
 
@@ -60,23 +74,27 @@ Continuing from Example 2 (`b, d, c, a`, d holding a skip chip): during b's turn
 
 d's pending skip chip is removed — a fresh shift on a chip-holding token cancels whatever was pending, rather than stacking or compounding it. d then resolves under the new shift on its own terms, and nothing about the cancelled chip carries into that.
 
-Resolving it fresh means resolving it by Example 3, because that is the case it is: d sits one slot off the marker, so +1 lands it exactly on the marker's own slot. `b, d, c, a` becomes **`d, b, c, a`**, with a **bonus chip** on d and a **skip chip** on b — the combatant displaced off the marker's slot, exactly as a was in Example 3.
+Resolving it fresh means resolving it by Example 3, because that is the case it is: d sits one slot off the marker and the shift is 1, so it lands exactly on the marker's own slot and **onto is not across**. `b, d, c, a` becomes **`d, b, c, a`**, with **no chips on anyone**.
 
-**Turn sequence:** b's turn ends → **d goes next** (bonus turn) → **b is skipped** (chip removed) → c goes → a goes.
+**Turn sequence:** b's turn ends → **d goes next** → b goes → c goes → a goes.
 
 *Demonstrates that reshifting a chip-holding token doesn't carry over the old shift's unresolved math — it clears the slate and resolves fresh, under whatever case the new shift actually lands in.*
 
-*(Corrected 2026-09-06. This example previously read "d goes normally when the marker reaches it, no bonus, no skip," which contradicted Example 3 on identical geometry — landing on the marker's slot is the bonus case whether or not the token was carrying a chip a moment earlier. Example 3 governs.)*
+*(History: this example originally read "d goes normally, no bonus, no skip." It was changed on 2026-09-06 to grant a bonus, on the reasoning that landing on the marker's slot was the bonus case. That reasoning is retired as of 2026-09-12 — landing on the marker's slot is a landing, and sooner/later is measured against when a token's own turn would have arrived rather than by ring position. The original reading was right.)*
 
 ---
 
 ## What These Examples Demonstrate
 
 - Sliding happens on every shift, boundary case or not — see Example 1.
-- **Skip chip:** placed when a shift's math would let its target act sooner than allowed (either a negative-shift overshoot, or either direction landing exactly on the marker's slot when the target isn't the one earning a bonus). Removed the first time the marker reaches that token; the turn is skipped.
-- **Bonus chip:** placed only when a *positive* shift's math would require its target to act at a point already past — practically, landing exactly on the marker's own slot. Removed once the immediate extra turn is taken.
-- The displaced-actor skip (Examples 3 vs. 4) is compensation for a bonus turn actually granted — not a rule about displacement or about landing on the marker's slot on its own.
+- **Onto the marker's slot is not across it.** A positive shift that lands exactly on slot 0 just lands there, with no chip for anyone — and the token takes the next turn, because the marker belongs to a slot and hasn't finished with its own (Examples 3 and 5). Only a shift with further to travel than the distance to the marker has crossed (Example 3b).
+- **Onto buys the next turn. Across buys an extra one, and the displaced actor pays for it.** That is the entire difference between the two cases.
+- **Sooner and later are measured against when a token's own next turn would have arrived**, not by where it sits in the ring. Going last is not acting later.
+- **Skip chip:** placed when a negative shift's math would let its target act sooner than allowed (Examples 2 and 4), and on the combatant displaced off the marker's slot when a bonus turn is granted (Example 3b).
+- **Bonus chip:** placed only when a positive shift genuinely crosses the marker — its distance greater than the distance to the marker's slot. Removed once the immediate extra turn is taken.
+- The displaced-actor skip (3b vs. 4) is compensation for a bonus turn actually granted — not a rule about displacement or about landing on the marker's slot.
 - A chip-holding token that gets reshifted loses the old chip and resolves fresh under the new shift (Example 5).
+- **There is no table-size correction.** The old "with exactly 3 combatants, reduce X's magnitude by 1" rule is retired as of 2026-09-12. It existed because shifts near the marker were explosive, and the real cause was proximity to the marker rather than slot count — which onto-is-not-across fixes at every size. Three on the wheel now behaves exactly like four, scaled down, and no shift is ever silently reduced to nothing.
 
 ---
 
