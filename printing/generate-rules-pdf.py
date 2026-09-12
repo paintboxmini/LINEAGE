@@ -359,8 +359,11 @@ PACKETS = {
 
 def resolve_src(fname):
     """A named file may live in rules/ or, for non-rules content pulled
-    into a packet (e.g. the-summons.md), in experimental/."""
-    for base in ('../rules', '../experimental'):
+    into a packet (e.g. the-summons.md), in experimental/ — or in
+    experimental/archives/ once it has been retired. The archive is still
+    searched so a packet that cites a retired file keeps building rather
+    than silently losing half its pages."""
+    for base in ('../rules', '../experimental', '../experimental/archives'):
         candidate = f'{base}/{fname}'
         if os.path.exists(candidate):
             return candidate
