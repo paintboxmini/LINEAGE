@@ -17,6 +17,23 @@ Liquid metal, reshaped on demand — a blade up close, a longer reach at range, 
 
 ---
 
+## MIMETIC BLADE — Chris
+
+**MIMETIC BLADE**
+RED — BODY
+Attack: Body + d6
+Applies When: Someone in this combat has already shown you how they fight — a weapon swung, a technique used, a way of moving you got a clear look at. The blade takes that shape. Not against something whose method you haven't seen yet, and not on the first exchange with a stranger.
+Range: Melee
+*"He doesn't invent the answer. He waits to be handed it."*
+
+The copying half of him, where AMALGAMOUS FORM is the improvising half — and keeping those separate is what makes two Passives worth having. AMALGAMOUS FORM asks *what shape solves this*; MIMETIC BLADE asks *what shape did you just show me*. One is invention, one is imitation, and only the second has to wait.
+
+Melee-only, so it takes the d6 over the d4 default — the same trade the corpus prices everywhere. Body rather than Mind because this is the hand doing it, not the mind: the reading happened already, and what's left is the swing.
+
+**The Applies When is a real gate and should bite.** Opening a fight with it is illegal. Using it on something that fights in a way he genuinely cannot imitate — a thing with no technique, a hazard, an Object — is illegal. It comes online in the second exchange, every time, which makes his first exchange a question rather than an answer.
+
+---
+
 ## STRONGJAW — Pat
 
 **STRONGJAW**
