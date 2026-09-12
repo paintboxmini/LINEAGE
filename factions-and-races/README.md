@@ -22,7 +22,7 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/races-borrowers.md` | Subterranean. Read stone by feel, dig everything, fight only because the Stonecoils won't stop |
 | `factions-and-races/races-riverdogs.md` | **Not written.** Named and nothing else yet |
 | `factions-and-races/races-lizardkin.md` | Lizard-folk river people, deadly in water. Shunka history calls them the Tithebound |
-| `factions-and-races/races-sirens.md` | **Reserved.** Drew's daughter's, and hers to write. Not to be drafted by anyone else |
+| `factions-and-races/races-sirens.md` | **Reserved — Ollie's.** Same race as her mermaids; `experimental/ollies-island.md` is the source. Not to be drafted by anyone else |
 
 ## Factions
 
