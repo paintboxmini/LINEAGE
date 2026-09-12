@@ -7,12 +7,14 @@ Usage:
   python3 generate-cards.py              → core cards  (card-print-core.html)
   python3 generate-cards.py briarwatch  → Briarwatch encounter set
   python3 generate-cards.py items       → player item cards
+  python3 generate-cards.py oracle-1     → one even third of the Oracle
   python3 generate-cards.py <set-name>  → any named set below
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
 
 import re
+import collections
 import html as html_mod
 import os
 import sys
@@ -236,6 +238,31 @@ SETS = {
             'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
     },
+    # The Oracle's 63 dealt into three 21-card sheets, each an even share of
+    # both colour and range. Derived from 'oracle' rather than listed by hand:
+    # the composition above is edited often, and a hand-copied third would go
+    # stale the first time a card was swapped without anyone noticing which
+    # sheet it had been sitting on.
+    #
+    # Each third comes out 7 Red / 7 Blue / 7 Green AND 7 Melee / 7 Ranged /
+    # 7 Both, both at once. That is not a coincidence to be proud of — it
+    # falls out of the deck's own shape. Every colour is 21 at 12/6/3, so
+    # every (colour, range) bucket in the deck is 12, 6 or 3, and all three
+    # divide by three. Deal each bucket round-robin and both axes land even
+    # together. Break the 12/6/3 ratio and the thirds stop being exact; the
+    # build says so rather than printing a lopsided sheet quietly.
+    'oracle-1': {
+        'title': 'Oracle Deck — 1 of 3',
+        'split': ('oracle', 3, 0),
+    },
+    'oracle-2': {
+        'title': 'Oracle Deck — 2 of 3',
+        'split': ('oracle', 3, 1),
+    },
+    'oracle-3': {
+        'title': 'Oracle Deck — 3 of 3',
+        'split': ('oracle', 3, 2),
+    },
     'oracle-expansion': {
         'title': 'Oracle Deck — Expansion',
         'files': [
@@ -450,8 +477,53 @@ def parse_items(filepath):
     return items
 
 
+def split_evenly(cards, parts, index):
+    """Deal `cards` into `parts` shares even on colour and range at once,
+    and return share number `index`.
+
+    Dealing bucket by bucket is what makes both axes come out even together.
+    Balancing colour and then balancing range inside it is the obvious
+    approach and it fights itself; bucketing on the pair and dealing each
+    bucket round-robin means every share takes a proportional slice of each
+    (colour, range) combination, and the colour totals and range totals fall
+    out of that rather than being negotiated against each other.
+
+    A bucket that does not divide by `parts` splits as evenly as it can —
+    the remainder lands in the low-numbered shares. Callers report the
+    residue rather than hiding it: an uneven sheet is a fine thing to print
+    and a bad thing to be surprised by.
+
+    Original order is preserved within each share, so a part keeps the
+    parent's colour grouping and reads the same way down the page.
+    """
+    buckets = {}
+    for i, card in enumerate(cards):
+        buckets.setdefault((card['color'], card['range']), []).append(i)
+    keep = set()
+    for idxs in buckets.values():
+        keep.update(idxs[index::parts])
+    return [c for i, c in enumerate(cards) if i in keep]
+
+
+def split_residue(cards, parts):
+    """(colour, range) buckets of `cards` that don't divide by `parts`, as
+    a list of 'RED Melee 13' strings. Empty means every share is exact."""
+    buckets = {}
+    for card in cards:
+        key = (card['color'], card['range'])
+        buckets[key] = buckets.get(key, 0) + 1
+    return [f'{col} {rng} {n}' for (col, rng), n in sorted(buckets.items())
+            if n % parts]
+
+
 def load_set(set_name):
     cfg = SETS[set_name]
+
+    # A split set has no files of its own — it is a share of another set.
+    if 'split' in cfg:
+        parent, parts, index = cfg['split']
+        return split_evenly(load_set(parent), parts, index)
+
     is_items = cfg.get('type') == 'items'
     parser = parse_items if is_items else parse_cards
 
@@ -739,4 +811,20 @@ if __name__ == '__main__':
     last = len(all_cards) % CARDS_PER_PAGE or CARDS_PER_PAGE
     if last < CARDS_PER_PAGE:
         print(f'  (last page has {last})')
+
+    # For a share of another set, say what the share actually came out as.
+    # The whole point of a split is the balance, so print it every time
+    # rather than trusting the comment in the SETS table to stay true.
+    if 'split' in cfg:
+        parent, parts, _ = cfg['split']
+        by_color = collections.Counter(c['color'] for c in all_cards)
+        by_range = collections.Counter(c['range'] for c in all_cards)
+        fmt = lambda t: '  '.join(f'{k} {v}' for k, v in sorted(t.items()))
+        print(f'  colour: {fmt(by_color)}')
+        print(f'  range:  {fmt(by_range)}')
+        residue = split_residue(load_set(parent), parts)
+        if residue:
+            print(f'  ! uneven — {parts} does not divide: {", ".join(residue)}')
+            print(f'    the shares differ by one card in each; '
+                  f'see the SETS note on the 12/6/3 ratio')
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')

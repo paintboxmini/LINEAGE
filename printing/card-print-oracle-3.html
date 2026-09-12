@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tales Untold — Oracle Deck — 3 of 3 (21 cards, 3 pages)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: letter;
+  margin: 10mm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #bbb;
+}
+
+.page {
+  width: 196mm;
+  height: 259mm;
+  display: grid;
+  grid-template-columns: repeat(3, 60mm);
+  grid-template-rows: repeat(3, 84mm);
+  column-gap: calc((196mm - 3 * 60mm) / 2);
+  row-gap: calc((259mm - 3 * 84mm) / 2);
+  break-after: page;
+  page-break-after: always;
+  background: white;
+}
+
+.page:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+@media screen {
+  body { padding: 12mm; }
+  .page {
+    margin-bottom: 12mm;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+
+.card {
+  width: 60mm;
+  height: 84mm;
+  border: 1.5px solid;
+  border-radius: 7px;
+  padding: 2.5mm 3mm 2mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5px;
+}
+
+.card-name {
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 1.12;
+  flex: 1;
+  letter-spacing: 0.01em;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.card-sub {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 3px;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.tbl td {
+  font-size: 9.5pt;
+  line-height: 1.28;
+  vertical-align: top;
+  padding: 1.5px 0;
+}
+
+.tbl .lbl {
+  font-size: 7pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  white-space: nowrap;
+  padding-right: 4px;
+  width: 1px;
+  padding-top: 2px;
+}
+
+.card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
+.card.dense .flavor { font-size: 8pt; }
+.card.dense .card-name { font-size: 11pt; }
+
+.card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
+.card.denser .flavor { font-size: 7pt; }
+.card.denser .card-name { font-size: 10pt; }
+.card.denser .tbl .lbl { font-size: 6pt; }
+
+.flavor {
+  font-style: italic;
+  font-size: 9pt;
+  color: #555;
+  line-height: 1.3;
+  margin-top: auto;
+  padding-top: 3px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.item-effect {
+  font-size: 9.5pt;
+  line-height: 1.35;
+  flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">GUARD</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>Gain Protect and Resist.</td></tr><tr><td class="lbl">Defense</td><td>Gain Protect and Resist.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Stand between the storm and what you protect.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">PAIN IS FUEL</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Anchored — when you are damaged, gain Resist and Thorns 2.</td></tr><tr><td class="lbl">Defense</td><td>Anchored — when you are damaged, gain Resist and Thorns 2.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Hit me. I dare you.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">UNBROKEN</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>If your HP is 6 or less, gain Immunity.</td></tr><tr><td class="lbl">Defense</td><td>If your HP is 6 or less, gain Immunity.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Still standing counts for everything.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">RETALIATE</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -1 to the attacker.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Pain is just momentum, redirected.&#8221;</div>
+</div>
+<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">GROUNDING STANCE</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>You may ignore the next ability that forces you to move positions.</td></tr><tr><td class="lbl">Defense</td><td>You may ignore the next ability that forces you to move positions.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Stand where you choose. Let the world move instead.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">SLIP THE BLADE</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>Gain Quick.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;If I live through it, I&#x27;m closer.&#8221;</div>
+</div>
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="card-top">
+    <div class="card-name">SHARPEN</div>
+    <div class="dot" style="background:#9E2C2C"></div>
+  </div>
+  <div class="card-sub" style="color:#9E2C2C">Body</div>
+  <div class="divider" style="background:#9E2C2C44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>Target ally gains Deadly</td></tr><tr><td class="lbl">Defense</td><td>You gain Deadly</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;Precision compounds.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">PINNED</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Rooted.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Rooted.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;Whatever you were about to do, do it from there.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">LAST RESORT</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>If your HP is 6 or less, gain Immunity.</td></tr><tr><td class="lbl">Defense</td><td>If your HP is 6 or less, gain Immunity.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;When there&#x27;s nothing left to protect, nothing gets through.&#8221;</div>
+</div>
+</div>
+<div class="page">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">CALLED SHOT</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>The next time you attack the defender, deal double damage.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;Not the body. The eye. The hand. The joint.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">INTERRUPT</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Apply Initiative Shift +2 to yourself.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -2 to the attacker</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;The best move happens before theirs.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">ENFEEBLE</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Weak.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Weak.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;Nothing is taken. Something is simply less than it was.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">SIDESTEP</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>You may change position</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;You struck the possibility, not the outcome.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="card-top">
+    <div class="card-name">DISTRACT</div>
+    <div class="dot" style="background:#2C5F9E"></div>
+  </div>
+  <div class="card-sub" style="color:#2C5F9E">Mind</div>
+  <div class="divider" style="background:#2C5F9E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Apply Initiative Shift -2 to any target.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -2 to any target.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Attention divided is power diminished.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">INSTINCT</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Gain Ward.</td></tr><tr><td class="lbl">Defense</td><td>Gain Ward.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;The body knows before the mind agrees.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">QUICKEN</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Apply Initiative Shift +2 to yourself.</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift +2 to an ally.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Sooner is its own kind of strength.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">PRIORITY</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Swap places with the defender in the initiative order.</td></tr><tr><td class="lbl">Defense</td><td>Swap places with the attacker in the initiative order.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Everything else can wait. This cannot.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">MEND</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Target ally in your position heals 8 HP</td></tr><tr><td class="lbl">Defense</td><td>Target ally in your position heals 8 HP</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
+  <div class="flavor">&#8220;Close enough to see the wound is close enough to close it.&#8221;</div>
+</div>
+</div>
+<div class="page">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">DISORIENT</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Blind.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Blind.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;You came in loud. You&#x27;ll leave in the dark.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">FLOW</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>You may change position. Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>You may change position. Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
+  <div class="flavor">&#8220;Water finds its way without forcing.&#8221;</div>
+</div>
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="card-top">
+    <div class="card-name">BRISTLE</div>
+    <div class="dot" style="background:#2A7A3E"></div>
+  </div>
+  <div class="card-sub" style="color:#2A7A3E">Soul</div>
+  <div class="divider" style="background:#2A7A3E44"></div>
+  <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Gain Thorns 3.</td></tr><tr><td class="lbl">Defense</td><td>Gain Thorns 3.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
+  <div class="flavor">&#8220;Touch carefully. It touches back.&#8221;</div>
+</div>
+</div>
+</body>
+</html>
