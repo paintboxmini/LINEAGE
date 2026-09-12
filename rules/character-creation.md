@@ -234,11 +234,11 @@ The GM reveals **3 cards**; the player chooses **1** to add to their deck perman
 **Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
 
 ### Stat Increases
-Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
+Stat increases are rare and are not tied to card count. They are earned by **pivotal character development** — a moment where something in the character genuinely and permanently changes — and what qualifies is the GM's call. **They are taken at advancement**, like everything else that changes a sheet permanently: the moment earns the increase, advancement is where it lands.
 
 These moments should feel earned, not scheduled.
 
-A stat increase raises maximum deck size by 1, since the maximum is the stat total. The new slot is filled from the bank at the next advancement like any other swap.
+A stat increase raises maximum deck size by 1, since the maximum is the stat total. Because it happens at advancement, the new slot can be filled from the bank in the same sitting.
 
 ### Promotion
 
@@ -261,3 +261,5 @@ The retiring card returns to the GM/Oracle pool, same as any card leaving a deck
 This is a different thing from banking a card, and the difference is whether you still own it. A banked card is out of the deck and still yours; a removed card is gone, and a card removed as a consequence does not land safely in the bank on the way out.
 
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
+
+**They sit outside the cap.** A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.

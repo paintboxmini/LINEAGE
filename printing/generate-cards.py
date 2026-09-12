@@ -87,35 +87,6 @@ SETS = {
             '../cards/trisect-ashfall.md',
         ],
     },
-    'frost': {
-        'title': "Frost's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/frost.md` — order matches that file's own
-        # Red/Blue/Green grouping, not registration order in the core files.
-        'cards': [
-            'REPAY', 'BLEED', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
-            'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
-            'TWIN STRIKE',
-        ],
-    },
-    'steele': {
-        'title': "Steele's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/steele.md`
-        'cards': [
-            'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
-            'FORGET', 'PARADOX', 'ALIGN', 'ANTICIPATE',
-            'MIRROR STEP', 'RENEWAL',
-        ],
-    },
     'oracle': {
         'title': 'Oracle Deck',
         'files': [
