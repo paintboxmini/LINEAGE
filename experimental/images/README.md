@@ -5,3 +5,4 @@ Reference art and maps that aren't ready for canon yet — early character conce
 ## Contents
 
 - `shunka-reference-cane-corso.jpg` — Pat's inspiration image for Shunka appearance (`experimental/the-shunka.md`)
+- `ollies-mermaids-approved-01.png` — first Ollie-approved art for her mermaids (`experimental/ollies-island.md`)
