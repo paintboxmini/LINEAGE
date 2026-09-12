@@ -3,7 +3,7 @@
 Two ten-card decks that were built as print sheets and never had characters
 behind them. Archived 2026-09-12.
 
-**Why they went.** Both were maintained print artifacts — `generate-all.sh`
+**Why they went.** Both were maintained print artifacts — `printing/generate-all.sh`
 rebuilt them on every run — while the sheets they cited did not hold up.
 `characters/frost.md` has never existed, and Frost appears nowhere else in <!-- link-check: ignore -->
 the repo; the deck is the only trace of him. `characters/steele.md` exists

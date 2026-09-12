@@ -94,8 +94,11 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
+        # This list is the Oracle deck's definition. It used to be a copy of
+        # one, kept in step with an Oracle/ directory and a content.py that no
+        # longer exist — both were cited here until 2026-09-12, long after they
+        # were gone. Nothing else defines the 63 now; edit them here.
+        # Fixed composition since 2026-08-03: 21 per colour, each
         # led by that colour's own range identity. The ideal split is 12/6/3
         # and all three colours are on it; the per-colour notes below say
         # which slots each change spent.

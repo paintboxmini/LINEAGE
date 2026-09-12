@@ -24,7 +24,7 @@ Two severities, because they are worth very different amounts:
                wrote down. Shown with --unverified; never fails the run.
 
 A claim is read as `<bearing> of|from <Place>`. The subject is the nearest
-known place named earlier in the same line; failing that, in a `places/X.md`
+known place named earlier in the same line; failing that, in a `places/X.md`  # link-check: ignore
 file, the place that file is about — which is what makes opening lines like
 "Farmland a day's travel west of Vulture's Nest" checkable.
 

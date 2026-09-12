@@ -5,8 +5,8 @@ One job, four checks. All four catch silent failures — nothing errors, nothing
 looks wrong, the reference just quietly points at nothing or at the wrong
 thing. All four have actually happened here.
 
-  1. Broken document references. A `path/to/file.md` in backticks pointing at
-     a file that isn't there. Usually the target was deliberately deleted and
+  1. Broken document references. A backticked path pointing at a file that
+     isn't there. Usually the target was deliberately deleted and
      the citations were left behind — 43 of these had accumulated by
      2026-09-10, across 17 targets, invisible until something looked.
 
@@ -32,7 +32,8 @@ Usage:
     python3 agent-tools/check-references.py            # report, exit 1 on problems
     python3 agent-tools/check-references.py --quiet    # only print problems
 
-A line carrying `<!-- link-check: ignore -->` is skipped by checks 1 and 3, for
+A line carrying `link-check: ignore` (in an HTML comment in Markdown, a `#`
+comment in a script) is skipped by checks 1 and 3, for
 the rare case where a path is the subject of a sentence rather than a citation.
 """
 
@@ -44,33 +45,63 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO, 'combat-simulations'))
 import cards as C  # noqa: E402
 
-SKIP_DIRS = ('printing', 'agent-tools', '.git')
-DOC_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`')
-# `path/to/file.md`, Some Section Name — stop at sentence punctuation.
+# Nothing is skipped but .git. printing/ and agent-tools/ used to be, and that
+# was the hole: `../characters/frost.md` sat in a generate-cards.py comment  # link-check: ignore  # link-check: ignore
+# citing a file that had never existed, and a comment is exactly where a dead
+# citation survives longest, because nothing executes it.
+SKIP_DIRS = ('.git',)
+SOURCE_EXT = ('.md', '.py', '.sh')
+DOC_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.(?:md|py|sh))`')
+# A citation is sometimes written as the command that runs the file.
+CMD_PREFIX = re.compile(r'^(?:python3?|bash|sh|\./)\s+')
+# A backticked path, then a section name — stop at sentence punctuation.
 SECTION_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`,\s+([A-Z][A-Za-z0-9 &\'’\-]{2,44}?)(?=[.,;:—\n)]|$)')
 # A heading, or the bold lead-in the repo uses for named sub-rules.
 HEADING = re.compile(r'^#+\s*(.+?)\s*$|^\*\*(.+?)\*\*', re.M)
 DECK = re.compile(r'Deck\s*\(([^)]*)\)', re.S)
 
 
-def markdown_files():
+def repo_files(exts=SOURCE_EXT):
     for root, dirs, files in os.walk(REPO):
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
         for name in sorted(files):
-            if name.endswith('.md'):
+            if name.endswith(exts):
                 yield os.path.relpath(os.path.join(root, name), REPO)
+
+
+def markdown_files():
+    return repo_files(('.md',))
+
+
+def resolve_ref(citing, target):
+    """Where a cited path actually lives, or None.
+
+    Two conventions are in use and both are correct. Prose cites from the repo
+    root (`rules/combat.md` reads the same wherever it is quoted); the build
+    scripts cite from their own directory (`../cards/red-body.md`, because
+    that is the string they pass to open()). Try root first, then relative —
+    root first so a repo-root path is never shadowed by a same-named file
+    sitting beside the citation."""
+    target = CMD_PREFIX.sub('', target).strip()
+    if not target:
+        return None
+    here = os.path.dirname(citing)
+    for cand in (target, os.path.normpath(os.path.join(here, target))):
+        if os.path.exists(os.path.join(REPO, cand)):
+            return cand
+    return None
 
 
 def check_links():
     out = []
-    for f in markdown_files():
+    for f in repo_files():
         with open(os.path.join(REPO, f), encoding='utf-8', errors='ignore') as fh:
             for i, line in enumerate(fh, 1):
                 if 'link-check: ignore' in line:
                     continue
                 for m in DOC_REF.finditer(line):
                     target = m.group(1).strip()
-                    if not os.path.exists(os.path.join(REPO, target)):
+                    if resolve_ref(f, target) is None:
                         out.append((f, i, target))
     return out
 
@@ -97,7 +128,7 @@ def check_sections():
     a prefix."""
     cache = {}
     out = []
-    for f in markdown_files():
+    for f in repo_files():
         with open(os.path.join(REPO, f), encoding='utf-8', errors='ignore') as fh:
             for i, line in enumerate(fh, 1):
                 if 'link-check: ignore' in line:
@@ -106,11 +137,12 @@ def check_sections():
                     target, sec = m.group(1).strip(), m.group(2).strip()
                     if STAT_SHAPED.match(sec):
                         continue
-                    full = os.path.join(REPO, target)
-                    if not os.path.exists(full):
+                    resolved = resolve_ref(f, target)
+                    if resolved is None:
                         continue          # check 1 already owns this one
-                    if target not in cache:
-                        cache[target] = sections_of(full)
+                    if resolved not in cache:
+                        cache[resolved] = sections_of(os.path.join(REPO, resolved))
+                    cache[target] = cache[resolved]
                     low = sec.lower()
                     if not any(low in h for h in cache[target]):
                         out.append((f, i, target, sec))
@@ -169,8 +201,10 @@ def main():
             print(f"  {n} -> {', '.join(srcs)}")
 
     if problems == 0 and not quiet:
-        print(f"Clean — {len(all_cards)} cards, "
-              f"{sum(1 for _ in markdown_files())} documents, no broken references.")
+        docs = sum(1 for _ in markdown_files())
+        scripts = sum(1 for _ in repo_files(('.py', '.sh')))
+        print(f"Clean — {len(all_cards)} cards, {docs} documents, "
+              f"{scripts} scripts, no broken references.")
     return 1 if problems else 0
 
 
