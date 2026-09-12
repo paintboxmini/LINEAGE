@@ -6,13 +6,14 @@ as generate-cards.py and the combat simulator itself) — a small, targeted
 converter for exactly the Markdown constructs these docs actually use:
 # / ## headers, tables, fenced code blocks, horizontal rules,
 bold/italic/inline-code, plain bullet/numbered lists, and blockquotes
-(used for the Oracle's voice in the summons packet — styled with an
-amber left border to read as a distinct register from the rules text).
+(written for the Oracle's voice in the retired summons — styled with an
+amber left border to read as a distinct register from the rules text, and
+kept for any doc that wants that register again).
 No nesting, no images, no real hyperlinks (backtick file paths render
 as inline code, not anchors).
 
 Usage:
-  python3 generate-rules-pdf.py                    → packet (the-summons.md + character-creation.md)
+  python3 generate-rules-pdf.py                    → packet (character-creation.md)
   python3 generate-rules-pdf.py gm-guide.md         → any rules/*.md file
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
@@ -133,7 +134,7 @@ def convert(md_text, title):
             out.append(parse_table(block))
             continue
 
-        # Blockquote — the Oracle's own voice in the summons packet. Blank
+        # Blockquote — a register distinct from the rules text. Blank
         # lines inside a quote start a new paragraph within the same block.
         if line.startswith('>'):
             paras = [[]]
@@ -341,14 +342,17 @@ em {{
 
 
 # Named multi-document builds. `packet` is the thing that actually goes out
-# to players: the Oracle's summons, then the plain mechanical guide behind it.
-# `play-reference` is the other half — what stays on the table during a
-# session rather than being read once at the start. Each file's own `# ` header
-# starts a fresh page, so the three sections stay physically separable.
+# to players: the plain mechanical guide, read once before the first session.
+# It used to open with the Oracle's summons; that was retired to
+# experimental/archives/ on 2026-09-12 and dropped from the packet, so the
+# packet is a single document now and stays a PACKETS entry only because
+# generate-all.sh builds it by name. `play-reference` is the other half —
+# what stays on the table during a session. Each file's own `# ` header
+# starts a fresh page, so multi-file sections stay physically separable.
 PACKETS = {
     'packet': {
-        'title': 'A Summons to Eclipseria',
-        'files': ['the-summons.md', 'character-creation.md'],
+        'title': 'Character Creation',
+        'files': ['character-creation.md'],
     },
     'play-reference': {
         'title': 'Play Reference',
@@ -359,11 +363,10 @@ PACKETS = {
 
 def resolve_src(fname):
     """A named file may live in rules/ or, for non-rules content pulled
-    into a packet (e.g. the-summons.md), in experimental/ — or in
-    experimental/archives/ once it has been retired. The archive is still
-    searched so a packet that cites a retired file keeps building rather
-    than silently losing half its pages."""
-    for base in ('../rules', '../experimental', '../experimental/archives'):
+    into a packet, in experimental/. Note that a missing file is a hard
+    exit below rather than a skipped section — a packet that quietly builds
+    short is worse than one that refuses to build."""
+    for base in ('../rules', '../experimental'):
         candidate = f'{base}/{fname}'
         if os.path.exists(candidate):
             return candidate
