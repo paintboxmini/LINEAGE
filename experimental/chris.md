@@ -41,10 +41,34 @@ Nine total, which is exactly the starting deck size, so his draft comes out **4 
 What the kit delivers so far:
 
 - **AMALGAMOUS FORM** is the sword and the arm being the same object. No drawing, no sheathing, nothing to disarm.
-- **MIMETIC BLADE** is the *singer* half — he watches a form, learns it, and performs it back, which is closer to a musician taking up a phrase than to a fighter countering one.
+- **MIMETIC BLADE** is the one form he has actually perfected — no draw, no sheath, just whether the arm is a sword yet. A singer with one song they can do perfectly, which is more than most singers have.
 - **KILLSWITCH** is the stance, and stance-changing is what makes a fight look choreographed rather than transactional.
 
-**What the kit does not deliver yet, flagged rather than solved:** *flow.* A blade singer chains — one motion feeding the next, a fight that reads as a single continuous phrase instead of a series of exchanges. Nothing in his current three does that, and it's the obvious next card to design rather than something to bolt onto an existing one.
+**What the kit does not deliver yet:** *flow.* A blade singer chains — one motion feeding the next, a fight that reads as a single continuous phrase instead of a series of exchanges. Nothing in his current three does that. Candidates below; none chosen.
+
+### The flow card — three candidates
+
+**1. No repeated note *(recommended)*.** Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+
+```
+FOLLOW THROUGH
+BLUE — MIND
+Attack: Mind + d6
+Effect: If the card you played last turn was a different colour than this one,
+        deal +2 damage and draw 1.
+Defense Effect: If the card you played last turn was a different colour than
+        this one, draw 1.
+Range: Both
+"One motion is not a style. Two that fit together might be."
+```
+
+The name is deliberately broad — a Passive-grade name on a card, good for Advantage on anything he's already started (`rules/cards.md`, the name is half the card).
+
+**2. Parry-riposte.** Flow as defence feeding offence, which is what sword fighting actually looks like. A card whose Defense Effect arms the next attack: *block with this and your next attack this combat deals +3.* Reads beautifully and is the most literal blade-singer answer. The risk is that it only fires when someone attacks him, so a passive turn does nothing, and a party that protects him turns the card off.
+
+**3. Tempo.** Flow as never losing the initiative. *On a win, Initiative Shift +1 to yourself*, so a chain of wins walks him up the wheel and he keeps arriving first. Uses the initiative wheel, which almost no card touches, and "he's already moving again" is exactly the feel. The risk is a win-only trigger snowballing in a long fight, and it needs a cap.
+
+**What I'd avoid:** a free extra card play on a win. Action economy is the most valuable thing in this system and a repeatable second action is not a flow card, it's a different power level.
 
 ## Skills
 
@@ -76,7 +100,7 @@ If a hard limit is wanted anyway, the version that costs something real rather t
 ## Passives
 
 - **AMALGAMOUS FORM** — `experimental/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
-- **MIMETIC BLADE** — `experimental/passives.md`. The blade takes the shape of a technique already used against him; Red, Melee, d6. The imitating half, and it cannot open a fight.
+- **MIMETIC BLADE** — `experimental/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
 
 ## Cards
 
@@ -104,7 +128,7 @@ Range: Both
 - Appearance, voice, backstory detail beyond the above
 - Price
 - Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
-- **The flow card.** The one thing the blade-singer fantasy is still missing; see The Fantasy, above
+- **The flow card.** Three candidates drafted under The Fantasy, above — none chosen
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 
 ## Related Documents

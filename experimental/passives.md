@@ -22,15 +22,17 @@ Liquid metal, reshaped on demand — a blade up close, a longer reach at range, 
 **MIMETIC BLADE**
 RED — BODY
 Attack: Body + d6
-Applies When: Someone in this combat has already shown you how they fight — a weapon swung, a technique used, a way of moving you got a clear look at. The blade takes that shape. Not against something whose method you haven't seen yet, and not on the first exchange with a stranger.
+Applies When: A cutting edge is the answer — something in reach with a body to open. Not against what a blade does nothing to: stone, an Object, a swarm, anything with no shape a cut would matter to.
 Range: Melee
-*"He doesn't invent the answer. He waits to be handed it."*
+*"There is no draw and no sheath. There is only whether the arm is a sword yet."*
 
-The copying half of him, where AMALGAMOUS FORM is the improvising half — and keeping those separate is what makes two Passives worth having. AMALGAMOUS FORM asks *what shape solves this*; MIMETIC BLADE asks *what shape did you just show me*. One is invention, one is imitation, and only the second has to wait.
+**His arm, as a sword.** Not a copy of anyone's weapon — the metal taking the one form he has actually perfected. *Mimetic* is the material imitating a blade, not him imitating a swordsman.
 
-Melee-only, so it takes the d6 over the d4 default — the same trade the corpus prices everywhere. Body rather than Mind because this is the hand doing it, not the mind: the reading happened already, and what's left is the swing.
+**Which is the whole distinction from AMALGAMOUS FORM**, and it's improvisation against mastery. AMALGAMOUS FORM is everything the metal can do: any shape, either range, a thrown piece, a wall that costs him HP. Broad, Blue, Mind, d4 — a clever answer to an unusual problem. MIMETIC BLADE is the one thing he is *good* at. Narrow, Red, Body, Melee, d6 — no thinking involved, because the thinking finished years ago.
 
-**The Applies When is a real gate and should bite.** Opening a fight with it is illegal. Using it on something that fights in a way he genuinely cannot imitate — a thing with no technique, a hazard, an Object — is illegal. It comes online in the second exchange, every time, which makes his first exchange a question rather than an answer.
+He has a Passive for solving things and a Passive for cutting things, and the second one hits harder precisely because it does less.
+
+**The Applies When is a real gate even though it fires often**, the same way STRONGJAW's does. A blade needs something to cut. Against an Object it is illegal, against stone it is illegal, and against anything with no body to open it is illegal — which is exactly when a player reaches for the other Passive instead, and that reach is the point.
 
 ---
 
