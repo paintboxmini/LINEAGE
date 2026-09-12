@@ -1,8 +1,10 @@
 # The Wheel & Initiative Shift — Worked Examples
 
-Compact worked cases for the Wheel and Initiative Shift, in the notation Drew and Claude settled on while building the mechanic: four combatants, `a` through `d`, listed clockwise starting from whoever's currently acting. Read `rules/combat.md` (The Wheel) and `rules/card-glossary.md` (Initiative Shift X) first — this file exists to make those rules concrete, not to restate them.
+Compact worked cases for the Wheel and Initiative Shift, in a short notation: four combatants, `a` through `d`, listed clockwise starting from whoever's currently acting. Read the Wheel (`rules/combat.md`) and Initiative Shift X (`rules/card-glossary.md`) first — this file exists to make those rules concrete, not to restate them.
 
+<!-- print:skip-start -->
 Every case below was worked through and confirmed directly; none of it is invented to fill a gap.
+<!-- print:skip-end -->
 
 ---
 

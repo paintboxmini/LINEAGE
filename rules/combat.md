@@ -2,7 +2,9 @@
 
 Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
+<!-- print:skip-start -->
 *(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — `experimental/archives/the-summons.md`.)*
+<!-- print:skip-end -->
 
 ---
 

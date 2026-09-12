@@ -356,7 +356,16 @@ PACKETS = {
     },
     'play-reference': {
         'title': 'Play Reference',
-        'files': ['combat.md', 'resolution.md', 'card-glossary.md'],
+        'files': ['combat.md', 'resolution.md', 'card-glossary.md',
+                  'initiative-shift-examples.md'],
+        # The worked shift cases go in the players' hands rather than staying
+        # a maintenance file. Initiative Shift is tied for the most common
+        # keyword in the Oracle deck — seven of the 63 carry it, across all
+        # three colours, so every drafted deck meets it — and it is the
+        # subtlest rule in the game: onto the marker's slot is not across it.
+        # The glossary's own Initiative Shift entry ends by telling the
+        # reader to go see the worked cases, which was a dead end for anyone
+        # holding only the printed reference.
     },
 }
 

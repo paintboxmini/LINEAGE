@@ -92,7 +92,7 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 
 This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
 
-*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.*
+*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 63-card Oracle seats seven exactly, and the full 84 with the expansion seats nine. Past that the piles run dry before anyone finishes and the shared offer is the better method.*
 
 ---
 
