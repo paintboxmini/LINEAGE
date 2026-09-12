@@ -1,6 +1,6 @@
 # Lizardkin
 
-*The people Shunka history calls **the Tithebound**. Working lore lives at `experimental/the-tithebound.md` and stays there until it settles — this is the roster entry, and the experimental file is the source of truth wherever the two disagree.*
+*The people Shunka history calls **the Tithebound**. Working lore lives at `campaign/the-tithebound.md` and stays there until it settles — this is the roster entry, and the experimental file is the source of truth wherever the two disagree.*
 
 **Animalistic lizard-folk.** Heavier than a snake, closer to a Komodo dragon but with sharper, more angular features than the real animal's blunt lines. Bipedal on land, walking hunched rather than upright — a gait that reads as awkward, almost laboured, right up until they reach water. **Far more dangerous submerged than on land.** Whatever makes the walk look uncertain disappears entirely once they're swimming; the hunch is a body built for something else, doing its best on stone.
 

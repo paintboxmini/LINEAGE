@@ -4,7 +4,7 @@
 
 ## What He Is
 
-A Seed of the Amalgam (`experimental/the-amalgam.md`) — a liquid-metal, shapeshifting extension of an alien hive mind, sent out to scout Eclipseria ahead of a conquest that hasn't come yet. The crossing between his world and this one went wrong: he arrived with his telepathic link to the Amalgam severed and most of his memory gone with it. Whatever he is now, he's had to build back up from almost nothing since. He doesn't age.
+A Seed of the Amalgam (`campaign/the-amalgam.md`) — a liquid-metal, shapeshifting extension of an alien hive mind, sent out to scout Eclipseria ahead of a conquest that hasn't come yet. The crossing between his world and this one went wrong: he arrived with his telepathic link to the Amalgam severed and most of his memory gone with it. Whatever he is now, he's had to build back up from almost nothing since. He doesn't age.
 
 Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devourer), symbiotes (alien biology that bonds and reshapes), Mind Flayers (a hive intelligence, patient and expansionist). Not imported wholesale — the register, not the names.
 
@@ -153,8 +153,8 @@ If a hard limit is wanted anyway, the version that costs something real rather t
 
 ## Passives
 
-- **AMALGAMOUS FORM** — `experimental/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
-- **MIMETIC BLADE** — `experimental/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
+- **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
+- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
 
 ## Cards
 
@@ -189,8 +189,8 @@ Range: Both
 
 ## Related Documents
 
-- `experimental/the-amalgam.md` — the hive mind, the crossing, what's still open
-- `experimental/passives.md` — AMALGAMOUS FORM and MIMETIC BLADE
+- `campaign/the-amalgam.md` — the hive mind, the crossing, what's still open
+- `campaign/passives.md` — AMALGAMOUS FORM and MIMETIC BLADE
 - `characters/iron.md` — the farmer, tentatively
 - `places/abyssal-ruins.md`, `places/briarwatch.md` — where this starts
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

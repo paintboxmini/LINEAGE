@@ -173,13 +173,13 @@ A **Trait** is rules text that is simply true. It costs no Action, is never play
 
 **Creatures have Traits, not Passives** (`bestiary/`). Every creature stat block uses that word now. The distinction matters because a creature's innate rules and a player's Passive were never the same object and shared a name for no reason: a Minotaur's Relentless has no die, no colour, and nothing to play it on.
 
-**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`experimental/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
+**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`campaign/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
 
 ---
 
 ### Passives, Skills, and Ancestry
 
-**Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`experimental/passives.md`, AMALGAMOUS FORM).
+**Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`campaign/passives.md`, AMALGAMOUS FORM).
 
 **A Passive you can't justify becomes a Skill instead.** A human with a real natural ability takes the corresponding Passive like anybody else. A human without one isn't short a resource — they take an extra Skill in its place, and a character who can justify neither Passive takes four Skills. Trained breadth is what a body that doesn't do anything unusual has instead.
 

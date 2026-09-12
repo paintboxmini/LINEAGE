@@ -106,7 +106,7 @@ spent when GRIND SHOT resolves, win or lose.
 
 ## Cards
 
-Three customs, one per piece of the kit and one per colour. Draft, staged here before landing in `cards/` — same as `experimental/pat-cards.md`.
+Three customs, one per piece of the kit and one per colour. Draft, staged here before landing in `cards/` — same as `campaign/pat-cards.md`.
 
 His stats want roughly 4 Red / 3 Blue / 2 Green, so one signature in each colour fits without crowding any of them, and it puts his weakest stat on the card he plays for its effect rather than its damage.
 
@@ -164,6 +164,6 @@ Range: Both
 
 - `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/blowback-beetle.md` — the four seasonings that had to be built
 - `bestiary/sapphire-ant.md`, `places/capital/gilded-tusk.md` — the fifth, and Senshi
-- `experimental/chris.md`, `experimental/pat.md` — the other two player concepts from this session
+- `campaign/chris.md`, `campaign/pat.md` — the other two player concepts from this session
 - `rules/items.md` — Crafting, the general rule this all runs on
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

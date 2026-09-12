@@ -16,7 +16,7 @@ One of those worlds belongs almost entirely to a single continuous mind: **the A
 
 Chris's didn't go right.
 
-He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `experimental/the-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
+He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `campaign/the-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
 
 He doesn't age. Whatever that costs, it isn't paid the way a person's years usually are.
 
@@ -28,7 +28,7 @@ He came down at the Abyssal Ruins — almost certainly through the Central Gatew
 
 ## What He Learned
 
-**Farming** — probable first Skill (`experimental/chris.md`). Not glamorous, not chosen, just what was in front of him at Briarwatch: irrigation, drainage, reading soil by feel, the same vocabulary every farmer there already speaks (`places/briarwatch.md`). Worth sitting with the irony on purpose rather than smoothing it over: a Seed sent to learn a world well enough to help consume it, learning instead how to grow something and let it be what it is.
+**Farming** — probable first Skill (`campaign/chris.md`). Not glamorous, not chosen, just what was in front of him at Briarwatch: irrigation, drainage, reading soil by feel, the same vocabulary every farmer there already speaks (`places/briarwatch.md`). Worth sitting with the irony on purpose rather than smoothing it over: a Seed sent to learn a world well enough to help consume it, learning instead how to grow something and let it be what it is.
 
 ## The Live Thread
 
@@ -46,10 +46,10 @@ He came down at the Abyssal Ruins — almost certainly through the Central Gatew
 
 ## Related Documents
 
-- `experimental/chris.md` — the character this belongs to
-- `experimental/passives.md` — AMALGAMOUS FORM
+- `campaign/chris.md` — the character this belongs to
+- `campaign/passives.md` — AMALGAMOUS FORM
 - `places/abyssal-ruins.md` — the Central Gateway, the likely crossing point
 - `places/briarwatch.md` — where he ended up
 - `characters/iron.md` — the farmer, tentatively
 - `world/creation-myth-the-three-cuts.md` — the Unheld, what a crossing actually costs
-- `experimental/the-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction
+- `campaign/the-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction

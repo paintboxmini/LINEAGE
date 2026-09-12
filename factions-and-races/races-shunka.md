@@ -1,6 +1,6 @@
 # The Shunka
 
-*Dogkin. Working lore lives at `experimental/the-shunka.md` and stays there until it settles — this is the roster entry, and the experimental file is the source of truth for anything the two disagree on. Pat's character is Shunka.*
+*Dogkin. Working lore lives at `campaign/the-shunka.md` and stays there until it settles — this is the roster entry, and the experimental file is the source of truth for anything the two disagree on. Pat's character is Shunka.*
 
 **A warrior people.** Strength of body, discipline, and honour won openly on the field are the whole measure of a person. Cane Corso build — broad-headed, heavily made.
 
@@ -10,6 +10,6 @@
 
 ## Passives — STRONGJAW and HACKLES RISE
 
-Both written and both ancestry-tied: a jaw built for a dogkin's bite (RED — BODY, Melee, d6, taking the bigger die for the Melee-only restriction) and fur that reads hostile intent before the mind does (GREEN — SOUL, Both, d4). Full text at `experimental/passives.md`.
+Both written and both ancestry-tied: a jaw built for a dogkin's bite (RED — BODY, Melee, d6, taking the bigger die for the Melee-only restriction) and fur that reads hostile intent before the mind does (GREEN — SOUL, Both, d4). Full text at `campaign/passives.md`.
 
-See `experimental/the-shunka.md` for the full account, `experimental/the-tithebound.md` for who did it, and `rules/character-creation.md`, Declaring a Price, for the mechanic being violated.
+See `campaign/the-shunka.md` for the full account, `campaign/the-tithebound.md` for who did it, and `rules/character-creation.md`, Declaring a Price, for the mechanic being violated.

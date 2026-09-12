@@ -1,6 +1,6 @@
 # Pat's Custom Cards
 
-Three custom cards, drawn from a list of ideas Pat gave Drew — the rest of his 9-card starting deck comes from the normal Oracle draft (`experimental/pat.md`, Deck). Draft, staged here before landing in `cards/`.
+Three custom cards, drawn from a list of ideas Pat gave Drew — the rest of his 9-card starting deck comes from the normal Oracle draft (`campaign/pat.md`, Deck). Draft, staged here before landing in `cards/`.
 
 ---
 
@@ -29,7 +29,7 @@ Special Rule: Upon simultaneous reveal, this card's color becomes identical to w
 
 ## Card 2 — HERE BOY
 
-Green — Soul, d4, Both range. First concrete trigger for Wild Magic Summoning (`experimental/pat.md`).
+Green — Soul, d4, Both range. First concrete trigger for Wild Magic Summoning (`campaign/pat.md`).
 
 ```
 HERE BOY
@@ -43,7 +43,7 @@ Range: Both
 
 Win or tie, attacking or defending, this triggers the same — a normal Green card in every other way, no gimmick like Card 1's. The HP roll isn't restated here since Wild Magic Summoning already covers it for every summon regardless of trigger.
 
-**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`experimental/pat.md`, Wild Magic Summoning). Still open: whether HERE BOY is the *only* trigger, and whether more than one spirit can be out at once given there are only three to draw from.
+**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`campaign/pat.md`, Wild Magic Summoning). Still open: whether HERE BOY is the *only* trigger, and whether more than one spirit can be out at once given there are only three to draw from.
 
 ---
 
@@ -69,6 +69,6 @@ Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save.
 
 ## Related Documents
 
-- `experimental/pat.md` — the character this deck belongs to, Wild Magic Summoning
+- `campaign/pat.md` — the character this deck belongs to, Wild Magic Summoning
 - `cards/colorless.md` — the three existing colorless cards Card 1 will sit alongside
 - `rules/combat.md` — Reading a Card, Attack Resolution, Initiative (summoned combatants)

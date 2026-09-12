@@ -1,6 +1,6 @@
 # Passives — First Examples
 
-The first Passives built under the new rule (`rules/character-creation.md`, Passives). Draft, alongside `experimental/chris.md` and `experimental/pat.md`.
+The first Passives built under the new rule (`rules/character-creation.md`, Passives). Draft, alongside `campaign/chris.md` and `campaign/pat.md`.
 
 ---
 
@@ -13,7 +13,7 @@ Applies When: Raw force or reach solves it — a blade, a bludgeon, closing dist
 Range: Both
 *"It was never really a body. Just the shape memory kept insisting on."*
 
-Liquid metal, reshaped on demand — a blade up close, a longer reach at range, whatever the moment actually calls for. Both range is the honest shape of that: nothing about the fiction commits it to one distance, so it doesn't take the d6 that a real restriction would earn. The limit isn't distance, it's precision — an inch is as fine as reshaped metal gets, and a real mechanism (a lock's tumblers, anything that needs moving parts) is past what a shape alone can do. Splitting off a piece is fine — throwing it, shaping it into something — but it can't act or decide anything once it's separate; the only kind of "acting on its own" this rules out is agency, not distance. A wall or similar built this way costs him real HP to make, since it's literally his own body doing the paying. A second concrete case for the Object category still sitting unformalized (`experimental/pat.md`, Wild Magic Summoning) — one more data point before that's worth writing as a real rule.
+Liquid metal, reshaped on demand — a blade up close, a longer reach at range, whatever the moment actually calls for. Both range is the honest shape of that: nothing about the fiction commits it to one distance, so it doesn't take the d6 that a real restriction would earn. The limit isn't distance, it's precision — an inch is as fine as reshaped metal gets, and a real mechanism (a lock's tumblers, anything that needs moving parts) is past what a shape alone can do. Splitting off a piece is fine — throwing it, shaping it into something — but it can't act or decide anything once it's separate; the only kind of "acting on its own" this rules out is agency, not distance. A wall or similar built this way costs him real HP to make, since it's literally his own body doing the paying. A second concrete case for the Object category still sitting unformalized (`campaign/pat.md`, Wild Magic Summoning) — one more data point before that's worth writing as a real rule.
 
 ---
 

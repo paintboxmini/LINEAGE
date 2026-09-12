@@ -6,11 +6,11 @@
 
 The Shunka are a warrior people, directly inspired by Spartan culture — strength of body, discipline, and honor won openly on the field are the whole measure of a person.
 
-**Appearance.** Cane Corso — a mastiff breed, broad-headed and heavily built, bred for war and guarding. Pat's own inspiration image (`experimental/images/shunka-reference-cane-corso.jpg`) is a Cane Corso in spiked gladiator armor, standing in a colosseum arena — the physical anchor for the kinfolk form, and consistent with everything above about how the Shunka hold strength and honor.
+**Appearance.** Cane Corso — a mastiff breed, broad-headed and heavily built, bred for war and guarding. Pat's own inspiration image (`campaign/images/shunka-reference-cane-corso.jpg`) is a Cane Corso in spiked gladiator armor, standing in a colosseum arena — the physical anchor for the kinfolk form, and consistent with everything above about how the Shunka hold strength and honor.
 
-They were, at some point in their past, at war with another people: **the Tithebound** — who they are, why they invaded, their appearance, ecosystem, and belief system all now live in `experimental/the-tithebound.md`. The short version: the Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
+They were, at some point in their past, at war with another people: **the Tithebound** — who they are, why they invaded, their appearance, ecosystem, and belief system all now live in `campaign/the-tithebound.md`. The short version: the Tithebound invaded Shunka land and were repelled — routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade. So the Tithebound didn't try to win that way twice.
 
-**What made them dangerous wasn't the field.** Where the Shunka's whole culture runs on the body — earned strength, honest contest — the Tithebound's ran on the Second Cut itself: Price, forced onto someone who never spoke it, not the ordinary voluntary kind (`rules/character-creation.md`, Declaring a Price). Where that came from, culturally: `experimental/the-tithebound.md`, Belief system.
+**What made them dangerous wasn't the field.** Where the Shunka's whole culture runs on the body — earned strength, honest contest — the Tithebound's ran on the Second Cut itself: Price, forced onto someone who never spoke it, not the ordinary voluntary kind (`rules/character-creation.md`, Declaring a Price). Where that came from, culturally: `campaign/the-tithebound.md`, Belief system.
 
 When the invasion failed and there was no army left to press it, their curse-worker turned to the one weapon defeat hadn't touched — a woman of the one Lizardkin family that has held the technique inside its own bloodline for generations (`factions-and-races/races-lizardkin.md`, The Cursegivers). She would have believed the queen deserved it, and her family would have had generations of reasons ready for why. She laid an unspoken Price on the Shunka queen directly: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.
 
@@ -38,9 +38,9 @@ Pat is considering a landmass to the north-northwest of the mapped continent as 
 
 ## Related Documents
 
-- `experimental/pat.md` — the character this belongs to, including Wild Magic Summoning and his backstory
-- `experimental/passives.md` — STRONGJAW
-- `experimental/the-tithebound.md` — who they are as a people: appearance, ecosystem, belief, survivors
+- `campaign/pat.md` — the character this belongs to, including Wild Magic Summoning and his backstory
+- `campaign/passives.md` — STRONGJAW
+- `campaign/the-tithebound.md` — who they are as a people: appearance, ecosystem, belief, survivors
 - `world/geography-overview.md` — the mapped continent, for where this would sit
 - `world/creation-myth-the-three-cuts.md` — the Second Cut, Price, what the Tithebound inverted
 - `rules/character-creation.md` — Declaring a Price, the ordinary (consensual) version

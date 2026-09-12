@@ -72,7 +72,7 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 ## Chris — no reason, which is the reason
 
-He wants to see the world. That's it, and it shouldn't be dressed up — a thing that arrived here severed, memory gone, and got taught how a farm works by a quiet man who never asked for an origin story (`experimental/chris.md`, `characters/iron.md`) does not need a summons. He needs a road.
+He wants to see the world. That's it, and it shouldn't be dressed up — a thing that arrived here severed, memory gone, and got taught how a farm works by a quiet man who never asked for an origin story (`campaign/chris.md`, `characters/iron.md`) does not need a summons. He needs a road.
 
 Two grounded ways to put him on it, both already supported:
 
@@ -140,7 +140,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 - `places/vultures-nest.md` — the town, the Compact, the Entry text
 - `places/pneum.md`, `places/canille.md`, `places/apnea.md`, `places/the-coil.md` — the four strange places one dock reaches
-- `experimental/kevin.md`, `experimental/pat.md`, `experimental/chris.md` — the three characters
-- `experimental/the-tithebound.md`, `experimental/the-shunka.md` — the curse, and the river people who paid for it
+- `experimental/kevin.md`, `campaign/pat.md`, `campaign/chris.md` — the three characters
+- `campaign/the-tithebound.md`, `campaign/the-shunka.md` — the curse, and the river people who paid for it
 - `factions-and-races/races-lizardkin.md` — the Tithebound, the cursegiver bloodline, and the army being rebuilt
 - `quests/washed-ashore.md` — the other opening, still live
