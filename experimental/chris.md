@@ -64,11 +64,31 @@ Range: Both
 
 The name is deliberately broad — a Passive-grade name on a card, good for Advantage on anything he's already started (`rules/cards.md`, the name is half the card).
 
-**2. Parry-riposte.** Flow as defence feeding offence, which is what sword fighting actually looks like. A card whose Defense Effect arms the next attack: *block with this and your next attack this combat deals +3.* Reads beautifully and is the most literal blade-singer answer. The risk is that it only fires when someone attacks him, so a passive turn does nothing, and a party that protects him turns the card off.
+**2. Parry-riposte, and it grants Deadly.** Flow as defence feeding offence, which is what sword fighting actually looks like. **Deadly rather than a flat number**, and the difference matters:
 
-**3. Tempo.** Flow as never losing the initiative. *On a win, Initiative Shift +1 to yourself*, so a chain of wins walks him up the wheel and he keeps arriving first. Uses the initiative wheel, which almost no card touches, and "he's already moving again" is exactly the feel. The risk is a win-only trigger snowballing in a long fight, and it needs a cap.
+- Deadly is a status he *holds* (`rules/card-glossary.md`), so the block genuinely arms the next motion instead of being a same-turn rider that evaporates if the opening doesn't come immediately.
+- **It stacks.** Two blocks give two Deadly give two armed attacks — which is a chain, which is the entire thing this card is supposed to produce. A flat +3 twice is just +6 once.
+- It's a variable +d6 rather than a guaranteed amount, which reads like an opening rather than a payment.
+- It's existing vocabulary that the rest of the corpus already talks to, including Weak cancelling it 1-for-1. Being counterable is a feature: enemies get an answer.
 
-**What I'd avoid:** a free extra card play on a win. Action economy is the most valuable thing in this system and a repeatable second action is not a flow card, it's a different power level.
+**And the dead-turn problem is fixable, because a card has two halves and the first draft only used one.** Put the riposte on the Defense half and give the Attack half something that works when he's the aggressor. Then it is never a blank turn and the two halves teach the same idea from both directions.
+
+```
+(untitled — the riposte)
+RED — BODY
+Attack: Body + d6
+Effect: Gain Deadly.
+Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
+Range: Melee
+```
+
+*Sketch, not a proposal. The numbers want a pass and the name isn't written.*
+
+**3. Tempo — withdrawn, and I was wrong to offer it.** *On a win, Initiative Shift +1* is not a smaller version of the free-extra-action idea I rejected in the same breath; it is the same idea with a variable exchange rate. `rules/card-glossary.md` is explicit: a positive shift that carries a token past the point where it must act — **including a full lap back to the marker's own slot** — grants an immediate extra turn instead. The fewer combatants on the wheel, the shorter the lap, so a repeatable shift converts to extra turns *fastest in the smallest fights*, which is exactly backwards.
+
+The rules already say the wheel is hypersensitive at low counts — that's what the "at exactly 3, reduce magnitude by 1" correction exists for. A card that hands out repeatable shifts is aimed straight at the part of the system that needed a dampener written for it.
+
+**What I'd avoid:** anything that hands out extra actions, *including the ones that don't look like extra actions.* Action economy is the most valuable thing in this system, and both a free second card play and a repeatable initiative shift buy the same thing at different exchange rates. A flow card should change what his one action is worth, not how many he gets.
 
 ## Skills
 
