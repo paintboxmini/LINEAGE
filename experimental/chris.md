@@ -48,10 +48,10 @@ What the kit delivers so far:
 
 ### The flow card — three candidates
 
-**1. No repeated note *(recommended)*.** Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**1. No repeated note.** Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
 
 ```
-FOLLOW THROUGH
+(untitled — the colour rotation)
 BLUE — MIND
 Attack: Mind + d6
 Effect: If the card you played last turn was a different colour than this one,
@@ -59,10 +59,9 @@ Effect: If the card you played last turn was a different colour than this one,
 Defense Effect: If the card you played last turn was a different colour than
         this one, draw 1.
 Range: Both
-"One motion is not a style. Two that fit together might be."
 ```
 
-The name is deliberately broad — a Passive-grade name on a card, good for Advantage on anything he's already started (`rules/cards.md`, the name is half the card).
+**Still live as a second card, and it wants a name** — FOLLOW THROUGH went to the tempo card, where it fits better. This one is about *not repeating*, so the name should be too.
 
 **2. Parry-riposte, and it grants Deadly.** Flow as defence feeding offence, which is what sword fighting actually looks like. **Deadly rather than a flat number**, and the difference matters:
 
@@ -84,11 +83,37 @@ Range: Melee
 
 *Sketch, not a proposal. The numbers want a pass and the name isn't written.*
 
-**3. Tempo — withdrawn, and I was wrong to offer it.** *On a win, Initiative Shift +1* is not a smaller version of the free-extra-action idea I rejected in the same breath; it is the same idea with a variable exchange rate. `rules/card-glossary.md` is explicit: a positive shift that carries a token past the point where it must act — **including a full lap back to the marker's own slot** — grants an immediate extra turn instead. The fewer combatants on the wheel, the shorter the lap, so a repeatable shift converts to extra turns *fastest in the smallest fights*, which is exactly backwards.
+**3. Tempo — the chosen one.** *Overruling my withdrawal: initiative shifting is a fair way to buy extra turns in this system, and Drew's call. Shape and price below are his.* Named **FOLLOW THROUGH**, because a follow-through is the motion continuing past the strike, which is precisely what this buys.
 
-The rules already say the wheel is hypersensitive at low counts — that's what the "at exactly 3, reduce magnitude by 1" correction exists for. A card that hands out repeatable shifts is aimed straight at the part of the system that needed a dampener written for it.
+```
+FOLLOW THROUGH
+BLUE — MIND
+Attack: Mind + d4
+Effect: Initiative Shift +2 to yourself. Exile this card.
+Defense Effect: Initiative Shift +2 to yourself. Exile this card.
+Range: Melee
+"The strike was never the end of the motion. It was the middle."
+```
 
-**What I'd avoid:** anything that hands out extra actions, *including the ones that don't look like extra actions.* Action economy is the most valuable thing in this system, and both a free second card play and a repeatable initiative shift buy the same thing at different exchange rates. A flow card should change what his one action is worth, not how many he gets.
+**Three prices, and it needs all three.**
+
+- **Melee only**, so it can't be thrown from safety, and he has to be in the scrum to earn tempo.
+- **d4 rather than the d6 a Range restriction normally earns** (`rules/character-creation.md`). Paying the restriction and declining the compensation is the second price, and it means he plays this for the Effect and never for the damage.
+- **Exile on a win, which is the one that actually holds it.** Effects only fire on a win or a tie, so a loss discards it normally and it can come back around — the card recycles until it lands, and then it is gone for the fight. **One perfect opening per combat**, which is both the balance answer and the right fiction.
+
+**On the shift value, and this is the part worth knowing.** The wheel is *a fixed ring of slots, one per combatant* (`combat-simulations/wheel.py`). So in a 1v1 there are two slots, and **any** positive shift carries the token to the marker's own slot and grants an immediate extra turn. +1, +2, +3 — identical in a duel. Magnitude is not the 1v1 lever and never was; **exile is**, which is why it's doing the real work here.
+
+Where magnitude does matter is everywhere else:
+
+| Combatants | +1 | +2 |
+|---|---|---|
+| 2 | extra turn | extra turn |
+| 3 | **nothing** — the dampener zeroes it | one slot |
+| 4+ | one slot | two slots |
+
+**+2 because +1 is dead at exactly three**, where the glossary's "reduce magnitude by 1" correction wipes it out entirely. A card that does nothing in one specific party size is a bad card and a bad memory at the table.
+
+**What I'd still avoid:** a *repeatable* extra action. The objection was never that tempo is too strong to sell — it's that a card which sells it every turn compounds. FOLLOW THROUGH sells it once and then leaves, which is why it works.
 
 ## Skills
 
@@ -148,7 +173,9 @@ Range: Both
 - Appearance, voice, backstory detail beyond the above
 - Price
 - Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
-- **The flow card.** Three candidates drafted under The Fantasy, above — none chosen
+- **FOLLOW THROUGH** — chosen, shape and price set, wants a table test
+- **The colour-rotation card** — still live as a second flow card, and it needs a name
+- **The riposte sketch** — Deadly on both halves; numbers and name both unwritten
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 
 ## Related Documents
