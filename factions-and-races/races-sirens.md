@@ -15,3 +15,4 @@ She likes to take her time. The file will be here when she wants it.
 ## Related Documents
 
 - `experimental/ollies-island.md` — Ollie's own file: her island, her mermaids, her approved art
+- `factions-and-races/races-fairies.md` — Sophie's slot, held the same way
