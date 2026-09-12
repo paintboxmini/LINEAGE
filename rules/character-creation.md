@@ -74,6 +74,8 @@ See `rules/equipment.md` for the Weapon/Armor tier system and how to design new 
 
 Every character starts with **9 cards** drafted from the Oracle deck. *How* they get drafted is up to the table — what follows are two methods that work, not a required procedure. Any process that ends with nine cards chosen under real constraint is doing the job.
 
+**Nine is not a constant — it is your total stats.** Maximum deck size equals Body + Mind + Soul, which is 9 for everyone at creation (2/2/2 plus the 3 you distributed) and moves only when a stat does. It is the same rule every creature in the world is built on (`rules/cards.md`, Deck Building), so a character's deck is the same size as a creature of the same weight.
+
 ### Method One — The Shared Offer
 
 1. The GM presents **3 random cards** from the available pool.
@@ -227,12 +229,16 @@ You don't have to explain the metaphysics. Neither does your character.
 ### End of Session
 The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
-The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
+**Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
+
+**Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
 
 ### Stat Increases
 Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
 
 These moments should feel earned, not scheduled.
+
+A stat increase raises maximum deck size by 1, since the maximum is the stat total. The new slot is filled from the bank at the next advancement like any other swap.
 
 ### Promotion
 
@@ -251,5 +257,7 @@ The retiring card returns to the GM/Oracle pool, same as any card leaving a deck
 **Bonus Cards** — Exceptional fiction, clever play, or the right action at the right moment may occasionally earn an extra card outside the normal end-of-session reward. Rare. Entirely at GM discretion.
 
 **Permanent Removal** — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.
+
+This is a different thing from banking a card, and the difference is whether you still own it. A banked card is out of the deck and still yours; a removed card is gone, and a card removed as a consequence does not land safely in the bank on the way out.
 
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.

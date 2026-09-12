@@ -4,11 +4,11 @@
 
 ## Stats — Unconfirmed
 
-Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 17, hand size 3, Initiative 1d6 + 2.
+Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21, hand size 3, Initiative 1d6 + 2.
 
 | Stat | Value | Drives |
 |------|-------|--------|
-| Body | 4 | Red card damage; HP weighted 3× |
+| Body | 4 | Red card damage; HP weighted 4× |
 | Mind | 3 | Blue card damage; hand size 3 |
 | Soul | 2 | Green card damage; Initiative 1d6 + 2 |
 
