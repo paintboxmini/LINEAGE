@@ -170,13 +170,8 @@ def sheet_html(c):
   {slot('1', skills[0][0])}
   {slot('2', skills[1][0])}
 
-  <div class="sec">Equipment</div>
-  {slot('Weapon', '')}
-  {slot('Armor', '')}
-  {slot('Artifact', '')}
-
   <div class="sec">Price <span class="hint">I never / I must / I always / I cannot / Once I / Whenever</span></div>
-  {rule(4)}
+  {rule(6)}
 </div>"""
 
 
