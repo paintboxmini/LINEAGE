@@ -48,6 +48,6 @@ These people are warm, communal, and completely sincere. The wrongness isn't cru
 
 ## Related Documents
 
-- `places/vultures-nest.md` — Corvel's stall, the quarantined barge, People of Promise plot hook
+- `places/vultures-nest.md` — The Quarantined Barge: Corvel in custody, the Compact's position, and the berth sweep the opening runs on
 - `world/tonal-bible.md`
 - `world/geography-overview.md`

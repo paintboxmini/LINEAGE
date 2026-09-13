@@ -18,6 +18,24 @@ The Compact manages what moves through the Nest. This includes a significant vol
 
 The hard lines: nothing so destructive it destabilizes the region, nothing so visible it forces the Regency to acknowledge it publicly, and nothing moves without the council's percentage. Cross any of those and the Regency's response is quiet, professional, and final.
 
+## The Quarantined Barge
+
+**This is the situation on the dock when the party arrives.** A People of Promise ritual barge is held at the Nest and the Compact will not release it.
+
+**What is on it.** People, visibly and floridly diseased. To the Promise those diseases are the point and must be visible — it is not negotiable in their theology (`places/pneum.md`). To everyone on this dock they are **cursed**, because that is the only word a port has for a body gone wrong for no reason anyone can name. The word is wrong and nobody here knows it is wrong.
+
+**Who is being held.** **Corvel**, the barge's owner, in custody and uncooperative. He has nothing to recant and says so. He is not being mistreated; he is simply not being let go.
+
+**The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlow thinks the whole thing is other people's problem until it costs him a berth.
+
+**The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth. Everything on that stretch of dock is impounded into a Compact warehouse behind a question nobody can answer yet — other people's cargo, sealed and legitimate, sitting indefinitely because of a boat it was moored near. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
+
+**Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
+
+*The Adventurers' Hall in the capital already posts this as real and current (`places/capital/adventurers-hall.md`).*
+
+---
+
 ## The Tide
 
 The rivers keep time with the Unheld, but the Nest sits near the coastal end of the web, so it runs **slow tide when the capital runs fast** and the other way round (`world/geography-overview.md`, River system). Level barely changes; speed does. A slow-tide stretch here goes sluggish and heavy, and a slow tide that runs deeper and longer than it should is the one everybody watches for. When it does:
@@ -39,7 +57,9 @@ Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone lis
 
 He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
 
-- *Rumors:* Dockers and market traders know there's a guide near the east gate who watches how you walk before she talks to you.
+**Aege** — near the east gate, and the guide the party actually travels with if they go inland. Lean, weathered face. She watches how you walk before she talks to you, which is the whole hiring interview. On the road she speaks in paths rather than places and does not explain her decisions; at a table with a meal on it she is the same person with a much wider register. Full profile and combat identity at `characters/aege.md`.
+
+She takes the party the whole leg to Briarwatch, tells them about her family at the Roadhouse on the first night out, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
@@ -152,7 +172,7 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 ## Plot Hooks
 
 - A Glasslight lens shows a color that only appears here at low tide.
-- A People of Promise ritual barge docks and nobody lets it leave.
+- The held Promise barge — written up in full above, The Quarantined Barge.
 - An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water. That precision is why anyone who looks at it dreams of the door.
 
 ## Entry — If the Party Arrives Here
@@ -160,6 +180,8 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 The docks smell like silt, fish, wet rope, and burning pitch. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
 
 Bartho is already watching you.
+
+One stretch of dock is roped off and idle in a port where nothing is idle. There are dockhands standing around being paid to not unload something. Whatever is moored behind them, nobody is looking directly at it.
 
 The market begins where the docks end and doesn't announce itself. Unpaved road split into a dozen directions between canvas strung between poles and buildings with real foundations. Half the faces are hooded. Not dramatically. Practically.
 
