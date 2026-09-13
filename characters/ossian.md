@@ -14,9 +14,11 @@ He does not tell war stories. Asked about it directly he will answer the questio
 
 ## What He Changed
 
-The Temple of Unity is the interfaith cathedral at the heart of the Temple District — the building people come to when they cannot resolve something themselves. Under Ossian it is **mostly empty**, and that is not neglect. It is the reform.
+The Temple of Unity is the interfaith cathedral at the heart of the Temple District — the building people come to when they cannot resolve something themselves. Under Ossian it is **empty most of the time**, and that is not neglect.
 
-He sends the priests out. Communion is held in the street: on the Marketplace edge, at the gate, on doorsteps, wherever there are people who were never going to walk into a cathedral. Preaching happens where the congregation already is, and the congregation is not in the pews.
+Two things empty it. The reform is one: he sends the priests out, so the people who would be in the building are in the street instead. The other is older than him and he did not cause it — **the scales are not a common path to justice.** Most of the city never uses them. A grievance gets sat with privately, and anyone who wants a ruling with force behind it goes to the courtroom, so the middle rung stays quiet whether or not anyone is standing at it.
+
+Communion is held in the street: on the Marketplace edge, at the gate, on doorsteps, wherever there are people who were never going to walk into a cathedral. Preaching happens where the congregation already is, and the congregation is not in the pews.
 
 **What did not move.** The scales — the ritual conditions under which two people can actually settle something — still sit in the building and still wait for people to come to them. Ossian sends out communion and preaching, not the scales. A quarrel has to be carried through the door under its own power, which is exactly the part Vescal eventually stopped being able to stomach (`characters/vescal.md`).
 
