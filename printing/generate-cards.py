@@ -560,7 +560,12 @@ def card_to_html(card):
     # slightly smaller wordy card than a truncated one.
     weight = sum(len(str(card.get(k, ''))) for k in
                  ('attack', 'special_rule', 'effect', 'defense_effect', 'range', 'flavor'))
-    density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
+    # Thresholds measured, not guessed. Every card in the pool was rendered at
+    # full size and asked for its own scrollHeight against the 84mm card: 199
+    # of 200 fit, and the only one that did not was FOLLOW-UP at 412
+    # characters, over by 16px. CONSUME fits at 359. The old 195/285 pair was
+    # inherited from Georgia at 9.5pt and was shrinking 32 cards to solve one.
+    density = ' denser' if weight > 460 else (' dense' if weight > 360 else '')
 
     stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',
              'COLORLESS': 'colorless'}[color]
