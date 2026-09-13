@@ -190,7 +190,8 @@ def page_html(sheets):
 
 
 def document(sheets, title):
-    return f'''<title>Tales Untold — {h(title)}</title>
+    return f'''<meta charset="utf-8">
+<title>Tales Untold — {h(title)}</title>
 <style>
 @page {{ size: Letter; margin: 0; }}
 body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}

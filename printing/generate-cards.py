@@ -562,7 +562,11 @@ def card_to_html(card):
                  ('attack', 'special_rule', 'effect', 'defense_effect', 'range', 'flavor'))
     density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
 
+    stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',
+             'COLORLESS': 'colorless'}[color]
     return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
+  <div class="stock" style="background-image:url('assets/grain-{stock}.png')"></div>
+  <div class="inset" style="border-color:{hex_color}55"></div>
   <div class="card-top">
     <div class="card-name">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
@@ -625,9 +629,29 @@ def generate_html(all_cards, title):
   margin: 10mm;
 }}
 
+@font-face {{ font-family: 'CardName';  src: url('assets/fonts/cormorant-garamond-italic.ttf') format('truetype'); font-style: italic; }}
+@font-face {{ font-family: 'CardCaps';  src: url('assets/fonts/cormorant-sc.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardBody';  src: url('assets/fonts/eb-garamond.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardQuote'; src: url('assets/fonts/im-fell-english-italic.ttf') format('truetype'); font-style: italic; }}
+
 body {{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'CardBody', Georgia, "Times New Roman", serif;
   background: #bbb;
+}}
+
+/* Card stock: paper grain and colour wash in one image, drawn once per
+   card, never repeated. A CSS gradient or a repeating background becomes a
+   PDF tiling pattern, and viewers draw a hairline at every pattern cell —
+   the faint grid that appeared across the first styled sheet. See
+   make-grain.py. */
+.stock {{
+  position: absolute; inset: 0; pointer-events: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}}
+.inset {{
+  position: absolute; inset: 1.6mm; pointer-events: none;
+  border: .5px solid;
 }}
 
 .page {{
@@ -657,9 +681,10 @@ body {{
 }}
 
 .card {{
+  position: relative;
   width: 60mm;
   height: 84mm;
-  border: 1.5px solid;
+  border: 1.2px solid;
   border-radius: 7px;
   padding: 2.5mm 3mm 2mm;
   display: flex;
@@ -668,6 +693,7 @@ body {{
 }}
 
 .card-top {{
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -675,11 +701,11 @@ body {{
 }}
 
 .card-name {{
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 1.12;
+  font-family: 'CardName', Georgia, serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.02;
   flex: 1;
-  letter-spacing: 0.01em;
 }}
 
 .dot {{
@@ -692,19 +718,21 @@ body {{
 }}
 
 .card-sub {{
+  position: relative;
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7.5pt;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 3px;
-  font-style: italic;
 }}
 
 .divider {{
+  position: relative;
   height: 1px;
   margin-bottom: 3px;
 }}
 
 .tbl {{
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
@@ -718,10 +746,9 @@ body {{
 }}
 
 .tbl .lbl {{
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #555;
   white-space: nowrap;
   padding-right: 4px;
@@ -739,8 +766,10 @@ body {{
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
 
 .flavor {{
+  position: relative;
+  font-family: 'CardQuote', Georgia, serif;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 8.8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;

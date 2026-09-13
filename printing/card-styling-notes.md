@@ -85,10 +85,48 @@ does.
 
 ---
 
-## What this would change in the pipeline
+## The gradient trap — and the faint grid it draws
 
-Nothing structural. `generate-cards.py` already emits HTML that Chrome prints;
-this is all CSS and one embedded tile. The 3×3 grid, the card data, the set
-definitions and `generate-all.sh` stay exactly as they are.
+The first styled sheet came back with very faint vertical and horizontal
+lines across it, almost imperceptible, on a regular grid. The cause was not
+the texture, which was the obvious suspect and was innocent. It was the
+**`radial-gradient` colour wash.**
 
-Not yet done — this file records the investigation, not a decision.
+Chrome cannot emit a CSS gradient as a plain fill. It builds a **PDF tiling
+pattern**, and most viewers draw a hairline at every pattern cell boundary.
+Isolated by elimination on one 9-card page:
+
+| Page contains | Tiling patterns | Shadings |
+|---|---|---|
+| grain and wash | 9 | 18 |
+| grain only, wash removed | **0** | **0** |
+| wash only, grain removed | 9 | 18 |
+
+`background-repeat` does the same thing for the same reason, and so does
+`mix-blend-mode`. Any of the three puts a pattern in the PDF.
+
+**The fix is to bake the wash into the texture image.** One RGBA PNG per
+colour carries the paper grain in its alpha and the colour falloff in its
+RGB, drawn once per card at `background-size: 100% 100%` with
+`background-repeat: no-repeat`. No gradient, no repeat, no blend mode
+anywhere in the card CSS. Verified on a real 21-card build: **0 tiling
+patterns, 0 shadings**, all four typefaces embedded and subset.
+
+So the rule for this pipeline is narrower than "avoid feTurbulence":
+
+> Anything that makes Chrome emit a pattern will draw a grid on the page.
+> Gradients, repeats and blend modes all do. Bake them into an image
+> instead, and draw that image exactly once per element.
+
+---
+
+## What this changed in the pipeline
+
+Nothing structural. `generate-cards.py` still emits HTML that Chrome prints,
+and the 3×3 grid, the card data, the set definitions and `generate-all.sh`
+are untouched. What was added: four vendored typefaces under
+`printing/assets/fonts/`, and `printing/make-grain.py`, which writes one
+stock texture per card colour into `printing/assets/`.
+
+Fonts are vendored rather than fetched, because a build that needs the
+network is a build that breaks. All four are SIL Open Font License.
