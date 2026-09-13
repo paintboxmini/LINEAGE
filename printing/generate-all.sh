@@ -34,6 +34,11 @@ for d in "${RULES_DOCS[@]}"; do
   python3 generate-rules-pdf.py "$d" >/dev/null 2>&1 || { echo "  FAILED: $d"; exit 1; }
 done
 
+# Character sheets recompute HP, hand size, initiative and deck maximum from
+# each character's stat table, so a stat change has to come back through here.
+echo "Regenerating character sheets..."
+python3 generate-sheets.py >/dev/null 2>&1 || { echo "  FAILED: character sheets"; exit 1; }
+
 # Which HTML actually moved? Only rebuild PDFs for those — a Chrome launch each
 # is the slow part, and an unchanged sheet doesn't need one.
 mapfile -t CHANGED < <(git status --porcelain -- '*.html' | awk '{print $2}')
