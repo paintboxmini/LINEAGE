@@ -1,19 +1,32 @@
 # Card — Art Prompts
 
-A blank card plate in the same hand as the character sheet, and a text pass
-to go over it. Same two-step method: the first prompt makes a face with no
-lettering on it at all, the second lays the card's fields over the finished
-face.
+Blank card plates in the same hand as the character sheet, and a text pass
+to go over them. Same two-step method: the face prompts make a card with no
+lettering on it at all, the fields prompt lays the card's labels over a
+finished face.
 
-Both are written to be pasted whole into an image model that knows nothing
-about this world.
+**Five prompts.** One face per colour — Red, Blue, Green and Neutral for the
+colourless cards — then the fields pass, run once on each of the four
+finished faces. Every prompt is complete on its own, including its
+negatives, so any one of them can be pasted whole into an image model that
+knows nothing about this world without reading anything else here.
+
+**The four faces are word-for-word identical apart from three lines**, and
+that is deliberate rather than lazy: the pigment disc, the mineral veining,
+and the tint in the chiselled groove. Those three carry the colour; nothing
+else changes, so the four print as one set rather than four designs that
+happen to share a size. If you edit one face, make the same edit to the
+other three.
+
+| | Disc | Carries |
+|---|---|---|
+| Red | `#9E2C2C` deep oxblood | self-buffs and raw damage, the biggest dice |
+| Blue | `#2C5F9E` deep ink | enemy control — debuffs, repositioning, taking options away |
+| Green | `#2A7A3E` deep forest | flexibility and support — healing, allies, movement |
+| Neutral | `#5A5A5A` slate grey | the colourless cards |
 
 **Canvas:** 5:7 portrait, which is the printed card exactly (60 × 84 mm).
 Render at least 1000 × 1400.
-
-**Run it four times, once per colour.** Everything else in the prompt is
-identical; only the pigment changes. Red `#9E2C2C`, blue `#2C5F9E`, green
-`#2A7A3E`, and a neutral grey `#5A5A5A` for the colourless cards.
 
 **Generate one card, then tile it.** Nine cards asked for as a single image
 come back nine slightly different sizes, slightly rotated, with drifting
@@ -46,7 +59,7 @@ on a cut grid.
 
 ---
 
-## Prompt 1 — The Card Face (art only, no text)
+## 1. Red Card Face — art only, no text
 
 > A blank playing-card face, portrait 5:7, in the style of an antique
 > survey-atlas plate. **Clean rectangular edges, perfectly square corners,
@@ -61,19 +74,23 @@ on a cut grid.
 >
 > **A single circular disc of solid matte pigment sits in the upper right
 > corner**, inset into the stone like a cake of dry pigment set into a slab.
-> Colour: `#9E2C2C`. Strong, full, unmistakable colour — not pale, not
-> pastel, not washed out, not translucent. Dead flat and chalk-matte: no
-> gloss, no glass, no enamel, no varnish, no specular highlight, no
-> reflection, no gemstone. A clean pale rim of bare stone runs around it. It
-> is the only saturated thing on the card and it is **empty — no symbol, no
-> numeral, no mark inside it**.
+> Colour: **deep oxblood red, `#9E2C2C`**. Strong, full, unmistakable colour —
+> not pale, not pastel, not washed out, not translucent. Dead flat and
+> chalk-matte: no gloss, no glass, no enamel, no varnish, no specular
+> highlight, no reflection, no gemstone. A clean pale rim of bare stone runs
+> around it. It is the only saturated thing on the card and it is **empty —
+> no symbol, no numeral, no mark inside it**.
+>
+> **The mineral veins running through the quartz carry the faintest trace of
+> that same red** — a whisper of it in the stone, at perhaps 10%
+> strength, nothing like the disc. The rest of the slab stays grey-white.
 >
 > **A single fine chiselled groove runs horizontally across the card below
 > the top zone**, a divider rule cut into the stone rather than drawn on it —
 > V-grooved, catching light along one edge, with faint chalk setting-out
 > marks still visible under the cut and slightly out of true with it. One
-> line only. Tinted very faintly with the card's colour where the pigment has
-> worked into the cut.
+> line only, tinted very faintly red where pigment has worked into
+> the cut.
 >
 > **A narrow chiselled border line** runs just inside the card edge on all
 > four sides, the same cut character, thin and even, framing the face without
@@ -104,9 +121,195 @@ on a cut grid.
 
 ---
 
-## Prompt 2 — The Card Fields (text pass over the finished face)
+## 2. Blue Card Face — art only, no text
 
-Run this on the output of Prompt 1. Nothing here is a real card — this pass
+> A blank playing-card face, portrait 5:7, in the style of an antique
+> survey-atlas plate. **Clean rectangular edges, perfectly square corners,
+> full bleed to the edge** — no torn paper, no deckle, no burn marks, no
+> pins, no tape, no lifted corners, no drop shadow, no frame around a frame.
+>
+> **The surface is pale grey-white quartz stone**, finely worked flat: a
+> smooth slab with faint mineral veining, a hairline crack or two, and the
+> soft tonal unevenness of real stone. Weathered and matte, like something
+> handled for years. Bone, chalk and weathered parchment throughout. Flat
+> overcast light, no sun anywhere, no shadow direction, no gloss.
+>
+> **A single circular disc of solid matte pigment sits in the upper right
+> corner**, inset into the stone like a cake of dry pigment set into a slab.
+> Colour: **deep ink blue, `#2C5F9E`**. Strong, full, unmistakable colour —
+> not pale, not pastel, not washed out, not translucent. Dead flat and
+> chalk-matte: no gloss, no glass, no enamel, no varnish, no specular
+> highlight, no reflection, no gemstone. A clean pale rim of bare stone runs
+> around it. It is the only saturated thing on the card and it is **empty —
+> no symbol, no numeral, no mark inside it**.
+>
+> **The mineral veins running through the quartz carry the faintest trace of
+> that same blue** — a whisper of it in the stone, at perhaps 10%
+> strength, nothing like the disc. The rest of the slab stays grey-white.
+>
+> **A single fine chiselled groove runs horizontally across the card below
+> the top zone**, a divider rule cut into the stone rather than drawn on it —
+> V-grooved, catching light along one edge, with faint chalk setting-out
+> marks still visible under the cut and slightly out of true with it. One
+> line only, tinted very faintly blue where pigment has worked into
+> the cut.
+>
+> **A narrow chiselled border line** runs just inside the card edge on all
+> four sides, the same cut character, thin and even, framing the face without
+> decorating it.
+>
+> **The centre and lower two-thirds of the card are open, flat, undecorated
+> stone** — clean enough to print twelve lines of small text on. Keep this
+> area almost entirely empty. Permitted here, and only whisper-faint at
+> 8–12% contrast: a ghost of survey linework, a fragment of a bearing arc, a
+> trace of contour hatching, a pale water-stain. Nothing with an edge hard
+> enough to be mistaken for a letter.
+>
+> Style: hand-drafted antique cartography crossed with architectural stone
+> rubbing. Restrained, precise, austere, and mostly empty by design. Matte,
+> printable, high detail, flat lighting.
+
+**Negative / must not appear:**
+
+> no text, no letters, no numerals, no words, no runes, no readable script,
+> no calligraphy, no labels, no signature, no watermark, no gibberish
+> lettering anywhere; nothing inside the coloured disc; no second disc; no
+> people, no faces, no creatures, no weapons, no armour; no landscape, no
+> scenery, no sky, no water, no trees, no buildings; no torn or deckled
+> edge, no pins, no tape; no ornate border, no scrollwork, no filigree, no
+> corner flourishes, no card frame, no banner or ribbon shapes; no
+> illustration window or art box; no glow, no sparkle, no gradient wash; no
+> clutter anywhere in the lower two-thirds.
+
+---
+
+## 3. Green Card Face — art only, no text
+
+> A blank playing-card face, portrait 5:7, in the style of an antique
+> survey-atlas plate. **Clean rectangular edges, perfectly square corners,
+> full bleed to the edge** — no torn paper, no deckle, no burn marks, no
+> pins, no tape, no lifted corners, no drop shadow, no frame around a frame.
+>
+> **The surface is pale grey-white quartz stone**, finely worked flat: a
+> smooth slab with faint mineral veining, a hairline crack or two, and the
+> soft tonal unevenness of real stone. Weathered and matte, like something
+> handled for years. Bone, chalk and weathered parchment throughout. Flat
+> overcast light, no sun anywhere, no shadow direction, no gloss.
+>
+> **A single circular disc of solid matte pigment sits in the upper right
+> corner**, inset into the stone like a cake of dry pigment set into a slab.
+> Colour: **deep forest green, `#2A7A3E`**. Strong, full, unmistakable colour —
+> not pale, not pastel, not washed out, not translucent. Dead flat and
+> chalk-matte: no gloss, no glass, no enamel, no varnish, no specular
+> highlight, no reflection, no gemstone. A clean pale rim of bare stone runs
+> around it. It is the only saturated thing on the card and it is **empty —
+> no symbol, no numeral, no mark inside it**.
+>
+> **The mineral veins running through the quartz carry the faintest trace of
+> that same green** — a whisper of it in the stone, at perhaps 10%
+> strength, nothing like the disc. The rest of the slab stays grey-white.
+>
+> **A single fine chiselled groove runs horizontally across the card below
+> the top zone**, a divider rule cut into the stone rather than drawn on it —
+> V-grooved, catching light along one edge, with faint chalk setting-out
+> marks still visible under the cut and slightly out of true with it. One
+> line only, tinted very faintly green where pigment has worked into
+> the cut.
+>
+> **A narrow chiselled border line** runs just inside the card edge on all
+> four sides, the same cut character, thin and even, framing the face without
+> decorating it.
+>
+> **The centre and lower two-thirds of the card are open, flat, undecorated
+> stone** — clean enough to print twelve lines of small text on. Keep this
+> area almost entirely empty. Permitted here, and only whisper-faint at
+> 8–12% contrast: a ghost of survey linework, a fragment of a bearing arc, a
+> trace of contour hatching, a pale water-stain. Nothing with an edge hard
+> enough to be mistaken for a letter.
+>
+> Style: hand-drafted antique cartography crossed with architectural stone
+> rubbing. Restrained, precise, austere, and mostly empty by design. Matte,
+> printable, high detail, flat lighting.
+
+**Negative / must not appear:**
+
+> no text, no letters, no numerals, no words, no runes, no readable script,
+> no calligraphy, no labels, no signature, no watermark, no gibberish
+> lettering anywhere; nothing inside the coloured disc; no second disc; no
+> people, no faces, no creatures, no weapons, no armour; no landscape, no
+> scenery, no sky, no water, no trees, no buildings; no torn or deckled
+> edge, no pins, no tape; no ornate border, no scrollwork, no filigree, no
+> corner flourishes, no card frame, no banner or ribbon shapes; no
+> illustration window or art box; no glow, no sparkle, no gradient wash; no
+> clutter anywhere in the lower two-thirds.
+
+---
+
+## 4. Neutral Card Face — art only, no text
+
+> A blank playing-card face, portrait 5:7, in the style of an antique
+> survey-atlas plate. **Clean rectangular edges, perfectly square corners,
+> full bleed to the edge** — no torn paper, no deckle, no burn marks, no
+> pins, no tape, no lifted corners, no drop shadow, no frame around a frame.
+>
+> **The surface is pale grey-white quartz stone**, finely worked flat: a
+> smooth slab with faint mineral veining, a hairline crack or two, and the
+> soft tonal unevenness of real stone. Weathered and matte, like something
+> handled for years. Bone, chalk and weathered parchment throughout. Flat
+> overcast light, no sun anywhere, no shadow direction, no gloss.
+>
+> **A single circular disc of solid matte pigment sits in the upper right
+> corner**, inset into the stone like a cake of dry pigment set into a slab.
+> Colour: **neutral slate grey, `#5A5A5A`**. Strong, full, unmistakable colour —
+> not pale, not pastel, not washed out, not translucent. Dead flat and
+> chalk-matte: no gloss, no glass, no enamel, no varnish, no specular
+> highlight, no reflection, no gemstone. A clean pale rim of bare stone runs
+> around it. It is the only saturated thing on the card and it is **empty —
+> no symbol, no numeral, no mark inside it**.
+>
+> **The mineral veins running through the quartz carry the faintest trace of
+> that same grey** — a whisper of it in the stone, at perhaps 10%
+> strength, nothing like the disc. The rest of the slab stays grey-white.
+>
+> **A single fine chiselled groove runs horizontally across the card below
+> the top zone**, a divider rule cut into the stone rather than drawn on it —
+> V-grooved, catching light along one edge, with faint chalk setting-out
+> marks still visible under the cut and slightly out of true with it. One
+> line only, tinted very faintly grey where pigment has worked into
+> the cut.
+>
+> **A narrow chiselled border line** runs just inside the card edge on all
+> four sides, the same cut character, thin and even, framing the face without
+> decorating it.
+>
+> **The centre and lower two-thirds of the card are open, flat, undecorated
+> stone** — clean enough to print twelve lines of small text on. Keep this
+> area almost entirely empty. Permitted here, and only whisper-faint at
+> 8–12% contrast: a ghost of survey linework, a fragment of a bearing arc, a
+> trace of contour hatching, a pale water-stain. Nothing with an edge hard
+> enough to be mistaken for a letter.
+>
+> Style: hand-drafted antique cartography crossed with architectural stone
+> rubbing. Restrained, precise, austere, and mostly empty by design. Matte,
+> printable, high detail, flat lighting.
+
+**Negative / must not appear:**
+
+> no text, no letters, no numerals, no words, no runes, no readable script,
+> no calligraphy, no labels, no signature, no watermark, no gibberish
+> lettering anywhere; nothing inside the coloured disc; no second disc; no
+> people, no faces, no creatures, no weapons, no armour; no landscape, no
+> scenery, no sky, no water, no trees, no buildings; no torn or deckled
+> edge, no pins, no tape; no ornate border, no scrollwork, no filigree, no
+> corner flourishes, no card frame, no banner or ribbon shapes; no
+> illustration window or art box; no glow, no sparkle, no gradient wash; no
+> clutter anywhere in the lower two-thirds.
+
+---
+
+## 5. The Card Fields (text pass over the finished face)
+
+Run this on the output of any of the four face prompts, once each. Nothing here is a real card — this pass
 produces an **empty template**, with the field labels printed and the value
 beside each one left blank for typesetting later.
 
