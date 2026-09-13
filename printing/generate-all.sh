@@ -43,6 +43,17 @@ python3 generate-sheets.py >/dev/null 2>&1 || { echo "  FAILED: character sheets
 # is the slow part, and an unchanged sheet doesn't need one.
 mapfile -t CHANGED < <(git status --porcelain -- '*.html' | awk '{print $2}')
 
+# The HTML is no longer the whole input. Cards reference fonts and stock
+# textures out of assets/, so an asset can change while every .html stays
+# byte-identical and the PDFs are quietly stale — which is exactly what
+# happened the first time the colour wash was restrengthened. If any asset
+# moved, every PDF is suspect.
+if [ -n "$(git status --porcelain -- assets)" ]; then
+  echo
+  echo "Assets changed — rebuilding every PDF, not just changed HTML."
+  mapfile -t CHANGED < <(ls *.html)
+fi
+
 if [ ${#CHANGED[@]} -eq 0 ]; then
   echo
   echo "Everything already current — nothing was stale."

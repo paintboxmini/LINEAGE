@@ -27,6 +27,8 @@ import struct
 import zlib
 
 W, H = 360, 504          # 5:7, the card's own ratio
+WASH = 0.42              # colour strength at the top of the card
+REACH = 0.72             # how far down the card the colour carries
 COLOURS = {
     'red':       ((158, 44, 44), 5),
     'blue':      ((44, 95, 158), 6),
@@ -50,15 +52,21 @@ def stock(rgb, seed):
         for x in range(W):
             # a 3-tap blur so it reads as paper fibre rather than static
             v = (noise[y][x] + noise[y][(x + 1) % W] + noise[(y + 1) % H][x]) // 3
-            # colour falloff from the top centre, strongest at the title
-            dx = (x - W / 2) / (W * 0.62)
-            dy = y / (H * 0.80)
+            # Colour falloff from the top centre, strongest at the title.
+            # WASH and REACH were picked by rendering .17/.62, .30/.62,
+            # .42/.72 and .55/.80 side by side across all three hues: .17 was
+            # too faint to read as tinted stock, and at .55 the small-caps
+            # stat label starts losing contrast against its own ground on
+            # blue and green. .42 is as strong as this can go while the body
+            # text still sits on light paper.
+            dx = (x - W / 2) / (W * REACH)
+            dy = y / (H * REACH * 1.29)
             wash = max(0.0, 1.0 - math.sqrt(dx * dx + dy * dy)) ** 1.5
             grain = (v / 255) * 0.10
-            alpha = int(255 * min(0.95, wash * 0.17 + grain))
+            alpha = int(255 * min(0.95, wash * WASH + grain))
             # where the wash dominates use the card hue; where the grain
             # dominates use a neutral warm grey, so texture never tints
-            m = wash * 0.17 / (wash * 0.17 + grain + 1e-6)
+            m = wash * WASH / (wash * WASH + grain + 1e-6)
             rows += bytes((int(r * m + 90 * (1 - m)),
                            int(g * m + 80 * (1 - m)),
                            int(b * m + 70 * (1 - m)),
