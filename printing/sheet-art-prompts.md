@@ -138,17 +138,38 @@ Run this on the output of Prompt 1. Every value is written in by hand later,
 so this pass places **labels and empty ruled lines only** — never sample
 values. The one exception is the small hint text under Price.
 
-> Take the supplied plate and add **hand-lettered calligraphy** in fine
-> sepia-black ink — a flowing pointed-pen hand with strong thick-to-thin
-> stroke contrast, generous curves, and long **spiralling flourishes**
-> curling off the capitals and the tails of letters. Every label word opens
-> with an ornate spiralled capital. The flourishes coil outward into the
-> empty stone around each label and taper away to a hairline; they never
-> cross a write-in line or run into another label. Slightly irregular
-> baselines, as if written by a practised hand rather than set in type.
+> Take the supplied plate and add **ornate hand-lettered calligraphy** in
+> fine sepia-black ink — an accomplished copperplate or Spencerian hand with
+> **extreme thick-to-thin stroke contrast**: hairline upstrokes, heavy
+> shaded downstrokes, and long sweeping curves. This should look like
+> showpiece penmanship by someone with decades in the hand, not plain
+> handwriting.
 >
-> **The label words stay plainly readable** — ornate, not illegible. Flourish
-> the entrances and exits of a word, never the middle of it.
+> Every label opens with a **large, elaborate swash capital** — oversized
+> against the lowercase, with a looping hairline entry stroke leading into
+> it and long **spiralling flourishes** unwinding off it into the empty
+> stone. Flourishes are doubled or tripled where there is room: a main sweep
+> with finer hairline curls nested inside it, each tapering away to nothing.
+> Descenders and final letters throw their own trailing spirals. Slightly
+> irregular baselines, as a practised hand gives rather than type.
+>
+> **Scrollwork.** Add engraved scrollwork ornament in the same ink: a small
+> symmetrical scrolled flourish flanking each section heading, filling the
+> stone between the heading word and the right edge with an unfurling
+> acanthus-and-spiral motif that thins as it travels. Small paired scroll
+> ornaments sit in the upper corners of the page. Scrollwork is fine,
+> engraved and open — visible negative space inside every curl, never a
+> solid mass.
+>
+> **Readability governs everything above.** Ornate, never illegible: the
+> elaboration lives in the swash capitals, the entry and exit strokes, and
+> the surrounding scrollwork — **the letterforms in the body of a word stay
+> clean and conventional**, correctly spelled and easy to read at a glance.
+> If a flourish would obscure a letter, drop the flourish.
+>
+> Two specific traps. Keep the capital **I** an unmistakable I and never
+> curl it into something that reads as a J. And letterspace `DECK MAX` so
+> the two words stay clearly separate rather than closing into one.
 >
 > Every **write-in line ends in a small inked spiral curl** at its right-hand
 > end, like a pen lifting off the page, and the rest of the line stays
@@ -177,16 +198,19 @@ values. The one exception is the small hint text under Price.
 > no outline change.
 >
 > **In the lower field, below the triangle, top to bottom:**
-> a section heading `TRAIT` in the calligraphic hand with a thin rule under
-> the heading,
-> then one long empty write-in line beneath it;
-> a section heading `SKILLS`, then two long empty write-in lines beneath it,
-> each with a small numeral `1` and `2` at its left end;
+> a section heading `TRAIT`, then one long empty write-in line beneath it,
+> the heading itself carrying no write-in line of its own;
+> a section heading `SKILLS`, then **two** long empty write-in lines beneath
+> it — two separate lines, unnumbered, the heading itself carrying no
+> write-in line of its own;
 > a section heading `PRICE`, followed immediately on the same line by small
-> italic hint text reading exactly
-> `I never / I must / I always / I cannot / Once I / Whenever`,
-> then six long empty ruled lines filling the remaining space to the bottom
-> margin.
+> hint text reading exactly
+> `I never / I must / I always / I cannot / Once I / Whenever`.
+> **This hint line is set in a plain, unflourished italic** — no swash
+> capitals, no scrollwork, no spirals. It is the only line on the page meant
+> to be read as a sentence, and each `I` must read as an I.
+> Beneath the hint line, six long empty ruled lines fill the remaining space
+> to the bottom margin.
 >
 > Keep generous even spacing and a clear margin all around. The written lines
 > must be long, unbroken and genuinely empty — this is a form to be filled in
@@ -194,10 +218,12 @@ values. The one exception is the small hint text under Price.
 
 **Must not appear in the text pass:**
 
-> no flourish crossing or overlapping a write-in line; no spirals filling the
-> blank writing space; no illegible or over-ornamented words; no blackletter,
-> no gothic script; no decorative border or frame of scrollwork around the
-> page; no equipment, weapon, armour or artifact section; no inventory; no
+> **no numerals, digits or numbers anywhere in the image** — every write-in
+> line and every slot is completely empty, with nothing written on or beside
+> it; no flourish crossing or overlapping a write-in line; no spirals or
+> scrollwork filling the blank writing space; no illegible, misspelled or
+> over-ornamented words; no blackletter, no gothic script; no continuous
+> decorative border framing the whole page; no equipment, weapon, armour or artifact section; no inventory; no
 > stat names anywhere — never write Body, Mind or Soul, and never label the
 > circles; no sample or placeholder values in any field; no numbers except
 > the small `1` and `2` beside the two skill lines; no extra sections, no
