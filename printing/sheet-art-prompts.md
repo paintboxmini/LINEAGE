@@ -59,7 +59,8 @@ references, no assumed context.
 >
 > All three plates are **noticeably desaturated but not greyscale** — about
 > half the colour of an ordinary photograph, like a print left too long in a
-> window. Amber still reads as amber and moss still reads as green; both are
+> window. The quartz plate keeps its pastel hues through this; faded is not
+> the same as grey. Amber still reads as amber and moss still reads as green; both are
 > dusty and low-contrast rather than vivid. No bright glare, no glowing
 > highlights, no vivid teal or cyan, no strong warm punch. They are
 > background, and they must sit far quieter than the three colour discs,
@@ -79,14 +80,25 @@ references, no assumed context.
 >   Wet wood, pitch, river silt. Warm lantern amber against grey water and
 >   grey sky.
 >
-> - **Across the top band, above and behind the triangle's apex, a town built
->   inside a pale quartz cliff.** Stairs cut and re-cut into the rock,
->   ladders spiked straight into the quartz, ropes and pulley rigs, galleries
->   that dead-end where a face failed and got bridged over instead of
->   rebuilt — a patchwork of clamps and sistered beams. The cliff glows
->   faintly from within, with dim silhouettes moving in the deeper layers of
->   stone. White foaming water far below. Cold, bone-pale, and the one plate
->   with any luminosity to it.
+> - **Across the top band, above and behind the triangle's apex, a range of
+>   pale quartz sea cliffs — landscape only, completely uninhabited.** No
+>   buildings, no stairs, no ladders, no ropes, no scaffolding, no bridges,
+>   no structures of any kind, and nobody in it. Just the rock: huge
+>   translucent quartz faces, sheared planes where slabs have broken away and
+>   fallen, fracture lines, scree at the base, white foaming water far below.
+>
+>   The quartz is **not one colour**. Different faces and strata hold
+>   different soft pastel hues — pale rose, mint, powder blue, lilac, faint
+>   apricot, the palest green — blending into one another and into thin
+>   mineral veins running through the stone, so the cliff reads as a
+>   weathered spectrum rather than white rock. The colour glows gently from
+>   inside the crystal rather than sitting on its surface. Freshly sheared
+>   faces are colder and paler than the weathered ones around them.
+>
+>   Keep every one of these hues genuinely pastel — soft, chalky and low in
+>   intensity. This plate carries the widest *range* of colour on the page
+>   while the three pigment discs keep the strongest, and it must never
+>   compete with them.
 >
 > **The lower third of the plate is a broad open field of the same pale stone
 > for writing on** — a worked flat surface, lightly toned, with subtle
