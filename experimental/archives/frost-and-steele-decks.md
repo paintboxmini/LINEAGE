@@ -6,12 +6,13 @@ behind them. Archived 2026-09-12.
 **Why they went.** Both were maintained print artifacts — `printing/generate-all.sh`
 rebuilt them on every run — while the sheets they cited did not hold up.
 `characters/frost.md` has never existed, and Frost appears nowhere else in <!-- link-check: ignore -->
-the repo; the deck is the only trace of him. `characters/steele.md` exists
-but is empty, which is a different problem: Steele is real, cited twice in
-`places/fog-basin.md` as the man who rebuilt the Fog Basin orphanage on the
-ground he grew up on. **His file stays.** It is his deck that retires, not
-him; he was written up on 2026-09-13 (`characters/steele.md`), and the deck
-below is available again if he ever needs a stat line.
+the repo; the deck is the only trace of him. `characters/steele.md` existed
+but was empty, which was a different problem: Steele is real, and the place
+files cited him as the man who rebuilt the orphanage on the ground he grew
+up on. **His file stayed**, and he was written up properly on 2026-09-13 —
+Kevin's previous character, returning as an NPC, running that orphanage in
+the capital's outer ring. It was only ever his deck that retired, and the
+deck below is available again if he ever needs a stat line.
 
 The reference checker never caught either, because it skips `printing/` —
 the citations lived in a Python comment, which is not a place it looks.

@@ -47,6 +47,14 @@ Gate fees, per person:
 
 A day pass is trivial, a week is comfortable for a party a couple of sessions into their pacing, and a month still sits well below the cost of actual gear.
 
+## The Outer Ring
+
+The band just inside the wall, before the Marketplace crowd starts. Cheap ground and the cheapest rooms in the city, which is where the people the taxes pushed out of everywhere else ended up (Why the taxes are what they are, below). Nothing here is an attraction. It is where the city keeps the people it has not got a plan for.
+
+**The orphanage** stands in it, on the ground where an earlier one burned, rebuilt by the man who was inside that fire and now cooks for everyone under its roof (`characters/steele.md`). No conditions on entry. He built it out here rather than somewhere respectable because the children with nowhere else to go were already out here.
+
+---
+
 ## The Marketplace
 
 The gate spits you out into noise.
@@ -159,7 +167,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of Healing | The capital's hospital. See below. |
 | Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
 | Temple of Justice | A working courtroom. See below. |
-| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
+| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full, on purpose — see below. Head priest at `characters/ossian.md`. |
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. This doesn't mean a temple's theology is right or wrong about the world — it just means some guesses land closer than others.
 
@@ -204,6 +212,8 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 
 **Fenn**, the pool-keeper, believes the water tells the truth to anyone patient enough to actually watch it — not fortune-telling, just attention, the same discipline any sailor already needs to read a current. She lost her brother to the fastest water in the whole system, the reach nearest the capital's own heart, and has never once told a grieving family the pool showed her something it didn't. She's also never once told them it showed nothing. What she actually sees, sitting at that pool at dawn, she keeps for herself — the one silence in a temple built entirely on the idea that everything worth knowing moves.
 
+**Temple of Unity** — the interfaith cathedral at the district's heart, and usually close to empty. That is deliberate. Its head priest, Ossian (`characters/ossian.md`), came out of a war certain that nothing worth doing gets done from indoors, and he sends the priests out: communion held in the street, preaching where the congregation already is rather than where the building is. Hearings and the scales still happen inside and still wait for people to walk in — he reformed the half that could go out and left the half that cannot. The temple is also renowned for its wines, and sells them outside Lady Elara's tax entirely: no license, no token, no cut to the Traders' Hall, done in daylight and never yet formally tested.
+
 **Temple of the Forge** — the working counter, not the shrine. You hear it before you see it: hammers, the low roar of the main hearth, the sharp hiss of quenching metal. Dark, soot-stained stone, iron-bound shutters for the night. No grand idol in the courtyard — a single massive anvil stands under open sky instead, scarred by generations of ceremonial and working strikes. Offerings left on it are small tools, broken blades, a pinch of good ore. Coin left there is politely returned; the Forge does not take money as worship.
 
 **Harlan Vetch**, master smith — older, heavy-shouldered, decides whether a commission is accepted, and speaks for the temple when something more than a simple purchase is required. Runs the weapons and the high rack (Tier 2 on display). To him the work itself is the offering: a blade forged for profit alone is a lesser blade, and a piece rushed or dishonestly made will fail exactly when it's needed most — not metaphor to Harlan, observed fact. **Sera Vetch** fits armor, and holds a piece until the party agrees who wears it. Tier 1 arms and plate, priced to the Session 5 curve. Where Harlan's sacred act is the forging, Sera's is the fitting — she'll say, if pushed, that a perfect blade offered with the wrong care is still just a blade, but armor that doesn't sit right on the actual body wearing it gets someone killed slower than no armor at all, and slower is worse, not better. She has never said this to Harlan directly. She's fairly sure he'd agree with her, which is its own reason not to test it. A rotating **Duty Smith** tends the public counter for everything smaller — sharpening, mending, re-hafting, priced in silver, same day if the queue allows.
@@ -213,6 +223,6 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 - **Sister Calda** — armor built for what actually fails in a fight, not for looking good failing. Once worked the city walls under Cedric's people; left the formal ranks, never stopped building gear that keeps people standing. Curt, slow, will not be rushed. Typical stock: Tier 1 armor, occasionally both a flat bonus and a start-of-combat stack if the buyer pays up front and waits. She left because she watched someone die of a strap that failed, not a moment of courage that did, and the report filed it under the second thing anyway. She doesn't argue about it anymore. She just builds the strap right and lets the record be wrong about people she can't help now.
 - **Vesper** — light, precise work: rapiers, balanced sidearms, finesse components. Soft-spoken, treats metal like it has opinions. Keeps a locked cabinet, opened only for people who ask the right questions. Typical stock: Tier 1 finesse weapons, often with a conditional effect. Believes a blade should cost the buyer something to be trusted with, beyond the price — sold one once to someone who asked none of the right questions, and it went exactly as badly as a blade in the wrong hand always does. The locked cabinet isn't caution now. It's an apology that never got to be spoken to the person it was actually owed to.
 
-Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle.
+Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle — a different refusal from the Temple of Unity's, and worth not confusing. The Forge declines coin *as worship* and pays what it owes on what it sells. Unity takes the money and declines the tax.
 
  
