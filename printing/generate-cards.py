@@ -564,11 +564,15 @@ def card_to_html(card):
 
     stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',
              'COLORLESS': 'colorless'}[color]
+    # 15pt italic fits about 14 characters on one line at 60mm; past that the
+    # title steps down rather than wrapping into the rules block.
+    chars = len(card['name'])
+    name_fit = ' longer' if chars > 18 else (' long' if chars > 14 else '')
     return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
   <div class="stock" style="background-image:url('assets/grain-{stock}.png')"></div>
   <div class="inset" style="border-color:{hex_color}55"></div>
   <div class="card-top">
-    <div class="card-name">{h(card["name"])}</div>
+    <div class="card-name{name_fit}">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
   </div>
   <div class="card-sub" style="color:{hex_color}">{h(stat_label)}</div>
@@ -761,12 +765,18 @@ body {{
 
 .card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
 .card.dense .flavor {{ font-size: 8pt; }}
-.card.dense .card-name {{ font-size: 11pt; }}
 
 .card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
 .card.denser .flavor {{ font-size: 7pt; }}
-.card.denser .card-name {{ font-size: 10pt; }}
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
+
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long {{ font-size: 12.5pt; }}
+.card-name.longer {{ font-size: 10.5pt; }}
 
 .flavor {{
   position: relative;

@@ -143,12 +143,18 @@ body {
 
 .card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
 .card.dense .flavor { font-size: 8pt; }
-.card.dense .card-name { font-size: 11pt; }
 
 .card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
 .card.denser .flavor { font-size: 7pt; }
-.card.denser .card-name { font-size: 10pt; }
 .card.denser .tbl .lbl { font-size: 6pt; }
+
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long { font-size: 12.5pt; }
+.card-name.longer { font-size: 10.5pt; }
 
 .flavor {
   position: relative;
@@ -345,7 +351,7 @@ body {
   <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
   <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">GROUNDING STANCE</div>
+    <div class="card-name long">GROUNDING STANCE</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -407,7 +413,7 @@ body {
   <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
   <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">STARING CONTEST</div>
+    <div class="card-name long">STARING CONTEST</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -725,7 +731,7 @@ body {
   <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
   <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
-    <div class="card-name">LEVEL THE FIELD</div>
+    <div class="card-name long">LEVEL THE FIELD</div>
     <div class="dot" style="background:#2A7A3E"></div>
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
