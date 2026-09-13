@@ -12,6 +12,8 @@ A thumbnail of grey-iridescent grit, taken under the tongue. It is the film an O
 
 **You do not pick the place, and you never get the moment.** This is the part everyone tries to argue with and nobody has beaten. **The vision lands on a hinge** — a place at the edge of being attended to. The minutes before people arrive in a room, or the minutes after the last of them walked out. Never during.
 
+*That is true as the world understands it, and the world is very nearly right. There is an exception, it is rare, and it is GM-only — bottom of this file.*
+
 So you get the table laid for six and no six. The cups still warm and the chairs pushed back. The lamps already lit in a room where nothing has happened yet and, in a little while, will.
 
 **It shows you traffic, not geography.** A place nobody ever goes to has no hinge and never appears: a sealed vault, a dead cellar, a cabin nobody has opened in years is invisible to FourthEye permanently. What it can show you is anywhere people actually *use* — the counting-room between clerks, the corridor between rounds, the hold in the hour before the crew comes down, the four seconds in a packed street where every head happened to be turned the other way.
@@ -52,7 +54,7 @@ Erubeth is at the far end of this thread, working backward from the bazaar (`cha
 
 ## Using It At The Table
 
-**Out of combat — the vision.** The taker names nothing and steers nothing. The GM picks one place, real and current, sitting on a hinge — about to be occupied, or just vacated — and picks it from somewhere the party's situation makes it matter: the room they are about to walk into, the room they just walked out of, the cabin above them, the cellar under the floor they are standing on.
+**Out of combat — the vision.** The taker names nothing and steers nothing — ask them for a Soul Save first and see the GM Secret below before you run this the first time. The GM picks one place, real and current, sitting on a hinge — about to be occupied, or just vacated — and picks it from somewhere the party's situation makes it matter: the room they are about to walk into, the room they just walked out of, the cabin above them, the cellar under the floor they are standing on.
 
 Describe it empty. Then describe the traffic: what is still warm, what has been laid out, what has been moved since yesterday, what has been moved in the last five minutes. The room is the sentence and the evidence of people is the verb.
 
@@ -68,6 +70,28 @@ Be generous with the detail and stingy with the frame. It always tells the truth
 
 ---
 
+## GM Secret — Aiming It
+
+**There is a save, and it has always been there.** Every dose taken outside combat calls for a **Soul Save, DC 19** (`rules/resolution.md`, Core Resolution — the Extreme rung) — from the very first one a character ever takes. Ask for it the way you would ask for any save against a drug: flat, unexplained, straight after they swallow it, with nothing said about what is at stake.
+
+A dose spent mid-fight is the Scry and nothing else. There is no vision to aim, so there is no save — and a party that never takes one outside a fight never finds out there was one.
+
+**On a failure — which is most of the time — say nothing about the save at all.** Describe the hinge vision exactly as normal. Do not tell them what they missed. Do not tell them there was anything to miss. A player who fails should walk away assuming they either shrugged something off or didn't, and that the drug then did what drugs do.
+
+**The silence on a failure is the entire mechanic.** If it ever leaks, every dose after it becomes a player asking to aim, and that is a completely different and much worse item.
+
+**On a success, ask the question:** *"Where are you trying to look?"*
+
+Then give them that place — **at its hinge.** Passing the save aims the place. It does not touch the moment. They still arrive four minutes early or four minutes late, they still do not see the thing happen. A success is not a scrying spell. It is a near miss they chose the address of.
+
+**Why Soul, and not Mind.** Mind would be trying to out-think it, which is the wrong axis — there is nothing in a vision to solve. Soul is bonds, will, and holding your own intent under pressure (`rules/resolution.md`, Saves), and that is the actual contest: four or five minutes of somebody else's attention running through you, going where it has always gone, and you insisting otherwise.
+
+**Yes, it is a check wearing a save's clothes.** A failed save is meant to be a consequence you couldn't prevent, and this one mostly leaves the drug doing its ordinary job. Two things make it honest anyway. The first is that the players cannot tell — from where they sit, an unexplained roll right after swallowing something is a save every time. The second is the real consequence, and it lands on the ones who *succeed*: **they now know it can be done.** A person who has aimed it once will spend the rest of their life paying to aim it twice. That is a heavier thing to carry out of a scene than any damage would have been.
+
+**The odds are the reputation.** 2d10 + Soul against 19 comes in around one time in seven at Soul 3, one in five at Soul 4, a little better than one in four at Soul 5 — before a relevant Skill's +2 or an Advantage swap (`rules/resolution.md`). That rate is why the street is so sure the drug cannot be steered. For four users out of five it never has been, and the fifth has no way to prove it and every reason not to try.
+
+---
+
 ## Price
 
 **~40 gold a dose** in the Underground Bazaar, which buys one Scry 3 and a permanent curse — a bad trade at consumable rates (`rules/equipment.md`, Pricing Consumables) and priced by scarcity rather than utility. The people paying it are not paying for the combat use.
@@ -78,7 +102,7 @@ Outside the bazaar there is no price, because there is no supply. Everything tha
 
 ## Not Yet Set
 
-- **Whether anyone can ever aim it at the moment instead of the hinge.** Currently: no, and everyone who has tried has failed. Whether a long enough user, or the right ritual, or proximity to a live Ocellus changes that is open, and it is the single biggest escalation available here — a drug that could show the meeting instead of the empty room is a different object in the world entirely.
+- **Whether the moment can be reached the way the place can.** The place has a rule (GM Secret, above). The moment has nothing, and should keep having nothing for a while — a drug that could show the meeting instead of the empty room is a different object in the world entirely, and it is the single biggest escalation available here. If it ever gets a rule, it should cost something other than a die roll.
 - **What it means when a person appears in a vision.** It is not supposed to happen. Nobody has written what it is when it does, which makes it a good thing to spend once and never explain.
 - **Whether the dulling is permanent.** Same open question as the animal's Dulling trait (`bestiary/ocellus.md`), and it should have the same answer.
 - **What the Regency does when someone points out how useful it is.** A drug that reads the room ten minutes before the meeting is exactly what a council of spymasters would want, and the official position is that it is banned three times over. Nobody in the repo has put that to the council yet.
