@@ -10,7 +10,8 @@ the repo; the deck is the only trace of him. `characters/steele.md` exists
 but is empty, which is a different problem: Steele is real, cited twice in
 `places/fog-basin.md` as the man who rebuilt the Fog Basin orphanage on the
 ground he grew up on. **His file stays.** It is his deck that retires, not
-him, and writing him properly is still open.
+him; he was written up on 2026-09-13 (`characters/steele.md`), and the deck
+below is available again if he ever needs a stat line.
 
 The reference checker never caught either, because it skips `printing/` —
 the citations lived in a Python comment, which is not a place it looks.
