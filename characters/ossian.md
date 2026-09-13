@@ -18,9 +18,11 @@ The Temple of Unity is the interfaith cathedral at the heart of the Temple Distr
 
 He sends the priests out. Communion is held in the street: on the Marketplace edge, at the gate, on doorsteps, wherever there are people who were never going to walk into a cathedral. Preaching happens where the congregation already is, and the congregation is not in the pews.
 
-**What did not move.** The temple's other function — hearings, the scales, the ritual conditions under which a dispute can actually be settled — still happens in the building, and still waits for people to come to it. Ossian sends out communion and preaching, not arbitration. A quarrel has to be carried through the door under its own power, which is exactly the part Vescal eventually stopped being able to stomach (`characters/vescal.md`).
+**What did not move.** The scales — the ritual conditions under which two people can actually settle something — still sit in the building and still wait for people to come to them. Ossian sends out communion and preaching, not the scales. A quarrel has to be carried through the door under its own power, which is exactly the part Vescal eventually stopped being able to stomach (`characters/vescal.md`).
 
-So the reform is partial, and he knows it is. He will say the two halves are different work. He has never claimed to have fixed the second one.
+**And the scales are not a court.** Unity has no jurisdiction and hands down nothing. The Temple of Justice is the courtroom, it is where a binding ruling comes from, and it sorts by class before it sorts by merit (`places/capital/capital.md`, Temple of Justice). Unity is the rung below that: both parties attend voluntarily, either can leave at any moment, and what they get is a settlement they made rather than one imposed on them. Most people never use it — a grievance gets sat with privately, Sun or Moon, and only comes here when sitting with it has failed and neither side wants a verdict.
+
+So the reform is partial, and he knows it is. He will say the two halves are different work. He has never claimed to have fixed the second one — and the reason it cannot go out into the street is the same reason Vescal left: the scales only work on people who chose to stand at them, and you cannot carry that to someone's doorstep.
 
 ---
 
