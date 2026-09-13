@@ -126,8 +126,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## Skills
 
-- **Nature** — and it earns its place twice. It's how he knows what a creature *does* rather than only what it looks like, which is the difference between wearing a shape and using one.
-- **Performance** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
+- **Nature +2** — and it earns its place twice. It's how he knows what a creature *does* rather than only what it looks like, which is the difference between wearing a shape and using one.
+- **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
 
 ## Trait — Mimicry
 

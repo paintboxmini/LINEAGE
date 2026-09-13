@@ -2,19 +2,22 @@
 """Generate print-ready character sheets at index-card size (3" x 5"),
 4 to a Letter page.
 
-Everything on a sheet is read out of the character's own file in campaign/ —
-nothing is transcribed here. HP, hand size, initiative and maximum deck size
-are recomputed from the stat table every build rather than copied from the
-prose beside it, because that is exactly the pair that drifts: campaign/pat.md
-and campaign/kevin.md both carried an HP figure from the old 3x Body formula
-for six days after the formula changed.
+The default build is the handout: a page of blank sheets to fill in at the
+table. That is the artifact players actually get.
+
+Named characters build filled sheets instead, to a separate file. Nothing on
+a filled sheet is transcribed — HP, hand size, initiative and maximum deck
+size are recomputed from the stat table every build rather than copied from
+the prose beside it, because that is exactly the pair that drifts:
+campaign/pat.md and campaign/kevin.md both carried an HP figure from the old
+3x Body formula for six days after the formula changed.
 
 Single-sided on purpose. A two-sided sheet prints wrong as often as it prints
 right, and everything a player touches mid-fight fits on one face.
 
 Usage:
-  python3 generate-sheets.py            -> every character + a blank
-  python3 generate-sheets.py pat chris  -> just those
+  python3 generate-sheets.py            -> the blank handout
+  python3 generate-sheets.py pat chris  -> filled sheets for those two
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
@@ -30,32 +33,6 @@ CARDS_PER_PAGE = 4
 
 STAT_ROW = re.compile(r'^\|\s*(Mind|Body|Soul)\s*\|\s*(\d+)\s*\|', re.M)
 BULLET = re.compile(r'^-\s+\*\*(.+?)\*\*\s*(?:—\s*(.*))?$', re.M)
-# A Passive's printed shape, out of campaign/passives.md's own card blocks.
-PASSIVE_BLOCK = re.compile(
-    r'^\*\*(?P<name>[A-Z0-9\' \-]+)\*\*\s*\n'
-    r'(?P<color>RED|BLUE|GREEN)\s*—\s*(?P<stat>MIND|BODY|SOUL)\s*\n'
-    r'Attack:\s*(?P<attack>[^\n]+)\n'
-    r'(?:(?!^\*\*)[^\n]*\n)*?'
-    r'Range:\s*(?P<range>Melee|Ranged|Both)\s*$', re.M)
-
-
-def passive_shapes():
-    """name -> "Red · Melee · d6", read from the Passive's own card block.
-
-    The character files also state each Passive's colour and die in prose, but
-    that is a copy; this is the definition. Reading the definition means a
-    sheet cannot quietly disagree with the card it is describing."""
-    path = os.path.join(SRC_DIR, 'passives.md')
-    out = {}
-    for m in PASSIVE_BLOCK.finditer(open(path, encoding='utf-8').read()):
-        die = re.search(r'(d\d+)', m.group('attack'))
-        parts = [m.group('color').title(), m.group('range')]
-        if die:
-            parts.append(die.group(1))
-        out[m.group('name').strip()] = ' · '.join(parts)
-    return out
-
-
 def h(t):
     return html_mod.escape(str(t))
 
@@ -106,7 +83,7 @@ def bullets(body, limit=2):
     return out
 
 
-def load(name, shapes):
+def load(name):
     path = os.path.join(SRC_DIR, f'{name}.md')
     text = open(path, encoding='utf-8').read()
 
@@ -127,9 +104,10 @@ def load(name, shapes):
         'init': stats['Soul'],
         'deck': sum(stats.values()),
         'provisional': 'unconfirmed' in (stat_head.group(1).lower() if stat_head else ''),
-        'passives': [(n, shapes.get(n, '(not in passives.md)'))
-                     for n, _ in bullets(section(text, 'Passives'))],
         'skills': bullets(section(text, 'Skills')),
+        # Written in by hand. Chris is a Seed of the Amalgam and Kevin's is
+        # unstated, so there is nothing here worth guessing at from prose.
+        'race': '',
         'trait': find_trait(text),
     }
 
@@ -137,7 +115,7 @@ def load(name, shapes):
 BLANK = {
     'name': '', 'stats': {'Body': '', 'Mind': '', 'Soul': ''},
     'hp': '', 'hand': '', 'init': '', 'deck': '', 'provisional': False,
-    'passives': [], 'skills': [], 'trait': '',
+    'skills': [], 'trait': '', 'race': '',
 }
 
 
@@ -159,12 +137,10 @@ def sheet_html(c):
     s = c['stats']
     init = f"1d6 + {c['init']}" if c['init'] != '' else ''
 
-    passives = c['passives'] or [('', ''), ('', '')]
-    passives = (passives + [('', ''), ('', '')])[:2]
-    skills = c['skills'] or [('', ''), ('', '')]
-    skills = (skills + [('', ''), ('', '')])[:2]
+    skills = (c['skills'] or []) + [('', ''), ('', '')]
+    skills = skills[:2]
 
-    name = h(c['name']) if c['name'] else '<span class="blank wide"></span>'
+    name = h(c['name']) if c['name'] else '<span class="blank"></span>'
     flag = '<span class="prov">provisional</span>' if c['provisional'] else ''
 
     stat_cells = ''.join(
@@ -178,17 +154,15 @@ def sheet_html(c):
         for lbl, val in (('Max HP', c['hp']), ('Hand', c['hand']),
                          ('Init', init), ('Deck Max', c['deck'])))
 
-    return f'''<div class="sheet">
-  <div class="head"><span class="nm">{name}</span>{flag}</div>
+    return f"""<div class="sheet">
+  <div class="head"><span class="lbl">Name</span><span class="nm">{name}</span>{flag}</div>
+  {slot('Race', c['race'])}
+
   <div class="stats">{stat_cells}</div>
   <div class="derived">{derived}</div>
 
-  <div class="hp"><span class="lbl">Current HP</span><span class="hpbox"></span>
+  <div class="hp"><span class="lbl">HP</span><span class="hpbox"></span>
     <span class="lbl">Position</span><span class="pos">Front &nbsp;/&nbsp; Back</span></div>
-
-  <div class="sec">Passives</div>
-  {slot('1', passives[0][0], passives[0][1])}
-  {slot('2', passives[1][0], passives[1][1])}
 
   <div class="sec">Trait</div>
   {slot('', c['trait'])}
@@ -203,11 +177,8 @@ def sheet_html(c):
   {slot('Artifact', '')}
 
   <div class="sec">Price <span class="hint">I never / I must / I always / I cannot / Once I / Whenever</span></div>
-  {rule(2)}
-
-  <div class="sec">Statuses &amp; Bank</div>
-  {rule(2)}
-</div>'''
+  {rule(4)}
+</div>"""
 
 
 def chunk(lst, n):
@@ -257,9 +228,10 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 }}
 .sheet.empty {{ border: 1px dashed #CCC; background: transparent; }}
 
-.head {{ display: flex; align-items: baseline; justify-content: space-between;
+.head {{ display: flex; align-items: baseline; gap: 1.4mm;
          border-bottom: 1.5px solid #333; padding-bottom: 1.2mm; margin-bottom: 1.6mm; }}
-.nm {{ font-size: 13pt; font-weight: bold; letter-spacing: .01em; }}
+.nm {{ font-size: 13pt; font-weight: bold; letter-spacing: .01em; flex: 1;
+       border-bottom: .7px solid #AAA; min-height: 5mm; }}
 .prov {{ font-size: 6pt; text-transform: uppercase; letter-spacing: .09em;
          color: #8A6A20; border: .8px solid #C7A65A; border-radius: 2px; padding: .3mm 1mm; }}
 
@@ -270,28 +242,30 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 
 .derived {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 1mm; margin-bottom: 1.8mm; }}
 .d {{ text-align: center; }}
-.dl {{ display: block; font-size: 5.6pt; text-transform: uppercase; letter-spacing: .07em; color: #666; }}
-.dv {{ display: block; font-size: 8.5pt; font-weight: bold; }}
+.dl {{ display: block; font-size: 5.6pt; text-transform: uppercase;
+       letter-spacing: .07em; color: #666; margin-bottom: .3mm; }}
+.dv {{ display: block; font-size: 8.5pt; font-weight: bold;
+       border-bottom: .7px solid #AAA; min-height: 4.2mm; }}
 
-.hp {{ display: flex; align-items: center; gap: 1.4mm; margin-bottom: 1.8mm; }}
-.hpbox {{ flex: 1; border: 1px solid #666; border-radius: 2px; height: 5.2mm; background: #fff; }}
+.hp {{ display: flex; align-items: center; gap: 1.4mm; margin-bottom: 1mm; }}
+.hpbox {{ flex: 1; border: 1px solid #666; border-radius: 2px; height: 6.4mm; background: #fff; }}
 .pos {{ font-size: 7pt; white-space: nowrap; }}
 
 .sec {{ font-size: 6.2pt; font-weight: bold; text-transform: uppercase;
         letter-spacing: .1em; color: #444;
-        border-bottom: .7px solid #BBB; margin: 1.2mm 0 .9mm; padding-bottom: .4mm; }}
+        border-bottom: .7px solid #BBB; margin: 2.4mm 0 1.5mm; padding-bottom: .4mm; }}
 .hint {{ font-weight: normal; text-transform: none; letter-spacing: 0;
          color: #888; font-size: 5.6pt; font-style: italic; }}
 
-.row {{ display: flex; align-items: baseline; gap: 1.2mm; margin-bottom: .9mm; min-height: 3.6mm; }}
+.row {{ display: flex; align-items: baseline; gap: 1.4mm; margin-bottom: 1.7mm; min-height: 4.8mm; }}
 .lbl {{ font-size: 6pt; text-transform: uppercase; letter-spacing: .06em;
         color: #777; min-width: 8mm; }}
 .fill {{ font-size: 8.5pt; font-weight: bold; }}
 .note {{ font-size: 6.4pt; color: #666; font-style: italic; }}
-.blank {{ flex: 1; border-bottom: .7px solid #AAA; height: 3.2mm; }}
+.blank {{ flex: 1; border-bottom: .7px solid #AAA; height: 4.6mm; }}
 .blank.wide {{ min-width: 34mm; display: inline-block; }}
 
-.rule {{ border-bottom: .7px solid #AAA; height: 4mm; margin-bottom: .6mm; }}
+.rule {{ border-bottom: .7px solid #AAA; height: 5.6mm; margin-bottom: .8mm; }}
 </style>
 {page_html(sheets)}'''
 
@@ -299,32 +273,32 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    wanted = sys.argv[1:] or CHARACTERS
+    wanted = sys.argv[1:]
     unknown = [w for w in wanted if w not in CHARACTERS]
     if unknown:
         raise SystemExit(f'Unknown character(s): {", ".join(unknown)}. '
                          f'Known: {", ".join(CHARACTERS)}')
 
-    shapes = passive_shapes()
-    sheets, loaded = [], []
-    for n in wanted:
-        c = load(n, shapes)
-        loaded.append(c)
-        sheets.append(sheet_html(c))
-    sheets.append(sheet_html(BLANK))
+    if wanted:
+        # Filled sheets, on request. Still derived, still never transcribed.
+        loaded = [load(n) for n in wanted]
+        sheets = [sheet_html(c) for c in loaded]
+        out, title = 'character-sheets-filled.html', 'Character Sheets'
+    else:
+        loaded = []
+        sheets = [sheet_html(BLANK)] * CARDS_PER_PAGE
+        out, title = 'character-sheets.html', 'Character Sheet'
 
-    out = 'character-sheets.html'
     with open(out, 'w', encoding='utf-8') as f:
-        f.write(document(sheets, 'Character Sheets'))
+        f.write(document(sheets, title))
 
     pages = -(-len(sheets) // CARDS_PER_PAGE)
-    print(f'Generating: Character Sheets')
-    print(f'  {len(sheets)} sheets ({len(loaded)} characters + 1 blank) '
-          f'across {pages} pages -> {out}')
+    print(f'Generating: {title}')
+    print(f'  {len(sheets)} sheets across {pages} page(s) -> {out}')
     for c in loaded:
-        s = c['stats']
+        st = c['stats']
         flag = '  [provisional]' if c['provisional'] else ''
-        print(f"    {c['name']:<8} B{s['Body']} M{s['Mind']} S{s['Soul']}  "
+        print(f"    {c['name']:<8} B{st['Body']} M{st['Mind']} S{st['Soul']}  "
               f"HP {c['hp']}  hand {c['hand']}  init 1d6+{c['init']}  "
               f"deck {c['deck']}{flag}")
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')
