@@ -22,9 +22,13 @@ The hard lines: nothing so destructive it destabilizes the region, nothing so vi
 
 **This is the situation on the dock when the party arrives.** A People of Promise ritual barge is held at the Nest and the Compact will not release it.
 
-**What is on it.** People, visibly and floridly diseased. To the Promise those diseases are the point and must be visible — it is not negotiable in their theology (`places/pneum.md`). To everyone on this dock they are **cursed**, because that is the only word a port has for a body gone wrong for no reason anyone can name. The word is wrong and nobody here knows it is wrong.
+**What is on it.** People, visibly and floridly diseased — and **they did it to themselves on purpose.**
 
-**Who is being held.** **Corvel**, the barge's owner, in custody and uncooperative. He has nothing to recant and says so. He is not being mistreated; he is simply not being let go.
+They are People of Promise (`places/pneum.md`). The Promise holds that everything returns to the Unheld and that held reality is temporary; this subgroup reads disease as the Unheld asserting itself through a living body, so **deliberate infection is communion.** Rarer disease, deeper contact. And it only counts if it is witnessed, which is why the symptoms are displayed rather than hidden. They are not sick people who need rescuing. They are devout people showing you their devotion, and they are pleased with it.
+
+**Why the dock reads it wrong.** Nobody here knows any of that. What they see is a boatload of bodies gone wrong for no reason anyone can name, and the only word a port has for that is **cursed**. The word is wrong. It is also the word that will send anyone hunting an actual curse straight up the river to Pneum, where they will meet people who chose this, are proud of it, and will warmly explain that he has it backwards.
+
+**Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 
 **The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlow thinks the whole thing is other people's problem until it costs him a berth.
 
@@ -128,7 +132,10 @@ The market doesn't fully close, and neither do the things that work its edges af
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* undecided contents.
+- *Open it:* an **Ocellus** (`bestiary/ocellus.md`). A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug.
+- **The crate is in the market because the market is the crop.** It is not stored here, it is working here, and somewhere discreet would starve it. That is why the most conspicuous smuggling problem in the Nest is parked in the busiest spot in town and nobody has an opinion about it.
+- **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
+- **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
