@@ -10,6 +10,8 @@ Regency-backed detective. Loner. Traveling. Always in the middle of something.
 
 *What he is chasing is at `items/fourtheye.md`, and what makes it is at `bestiary/ocellus.md`. Worth reading both before running him. The drug eats the exact faculty he has built a career on, which is why he is the right man for the case and the last man who should be anywhere near the crate — and it only ever shows its users the minutes on either side of the thing that mattered, which is how his case has gone from the beginning.*
 
+*It also cannot shortcut the case, and a GM should know why before a player thinks of it. The thing FourthEye can be turned on is a specific person you already know by face or name (`items/fourtheye.md`, GM Secret). Erubeth does not have a face or a name — he has a role, "whoever is running the crates," and a role is a question, not a person. The drug has never answered a question. It only ever tells you where somebody you already knew has just been.*
+
 Mind 5 / Body 3 / Soul 4 — HP 21
 Creature Threat Rating: 12
 

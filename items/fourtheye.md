@@ -62,7 +62,7 @@ Describe it empty. Then describe the traffic: what is still warm, what has been 
 
 Be generous with the detail and stingy with the frame. It always tells the truth, it never answers the question, and it always starts a timer.
 
-**No people in it.** One dose, one vision, no reroll, and nobody in frame. The rule exists so that breaking it means something.
+**No people in it.** One dose, one vision, no reroll, and nobody in frame. That holds even when the vision was aimed at somebody — *especially* then (GM Secret, below). The rule exists so that breaking it means something.
 
 **In combat — the flash.** Using a dose is an action: **Scry 3** on any one deck in the fight, including an enemy's (`rules/card-glossary.md`). The keyword is the right one on purpose — Scry looks at what is *coming*, never at what is happening. Then take a **FOURTHEYE** curse card into your deck.
 
@@ -80,11 +80,17 @@ A dose spent mid-fight is the Scry and nothing else. There is no vision to aim, 
 
 **The silence on a failure is the entire mechanic.** If it ever leaks, every dose after it becomes a player asking to aim, and that is a completely different and much worse item.
 
-**On a success, ask the question:** *"Where are you trying to look?"*
+**On a success, ask the question:** *"Who are you trying to see?"*
 
-Then give them that place — **at its hinge.** Passing the save aims the place. It does not touch the moment. They still arrive four minutes early or four minutes late, they still do not see the thing happen. A success is not a scrying spell. It is a near miss they chose the address of.
+Not *where*. **You aim it at a person, and it gives you their wake** — a room the target is about to walk into, or a room they walked out of a few minutes ago. Never the target. You asked to see the man and you got the chair he was sitting in, still warm, and the door he went out by.
 
-**Why Soul, and not Mind.** Mind would be trying to out-think it, which is the wrong axis — there is nothing in a vision to solve. Soul is bonds, will, and holding your own intent under pressure (`rules/resolution.md`, Saves), and that is the actual contest: four or five minutes of somebody else's attention running through you, going where it has always gone, and you insisting otherwise.
+**That is why you aim at a person at all.** A hinge is the edge of someone's attention arriving or leaving, and a person is a walking hinge — they generate one wherever they go. Reaching for a place is reaching for a room and hoping it has a hinge in it. Reaching for a person is reaching for the thing that makes hinges. The drug can find that. It has never been able to find a room.
+
+**Whichever hinge is nearer in time is the one you get.** If they left somewhere two minutes ago and arrive somewhere in twenty, you get the departure. The player does not choose which, and should not be offered the choice — even a clean success hands them one more thing they did not pick.
+
+**You have to actually know them.** A face you have seen, a name you can put to a person, a voice you would recognise. **Reaching for a role fails** — *whoever runs the crates*, *the man who sold this*, *my brother's killer* — because those are not people yet, they are questions, and the drug has never answered a question in its life. This is the limit that keeps FourthEye from solving a mystery outright: the moment the party can name the person, they no longer need the drug to find them, and until then it has nothing to grab. What it is genuinely good for is the person you already know and cannot currently reach.
+
+**Why Soul, and not Mind.** Mind would be trying to out-think it, which is the wrong axis — there is nothing in a vision to solve. Soul is bonds, will, and holding your own intent under pressure (`rules/resolution.md`, Saves). All three of those are the actual contest: four or five minutes of somebody else's attention running through you, going where it has always gone, and you holding one particular person in mind hard enough that it goes to them instead. It is a bond check in the most literal sense the rules have. **Which means the people easiest to aim at are the ones you cannot stop thinking about** — and that is not the same list as the ones it would be useful to find.
 
 **Yes, it is a check wearing a save's clothes.** A failed save is meant to be a consequence you couldn't prevent, and this one mostly leaves the drug doing its ordinary job. Two things make it honest anyway. The first is that the players cannot tell — from where they sit, an unexplained roll right after swallowing something is a save every time. The second is the real consequence, and it lands on the ones who *succeed*: **they now know it can be done.** A person who has aimed it once will spend the rest of their life paying to aim it twice. That is a heavier thing to carry out of a scene than any damage would have been.
 
@@ -103,7 +109,7 @@ Outside the bazaar there is no price, because there is no supply. Everything tha
 ## Not Yet Set
 
 - **Whether the moment can be reached the way the place can.** The place has a rule (GM Secret, above). The moment has nothing, and should keep having nothing for a while — a drug that could show the meeting instead of the empty room is a different object in the world entirely, and it is the single biggest escalation available here. If it ever gets a rule, it should cost something other than a die roll.
-- **What it means when a person appears in a vision.** It is not supposed to happen. Nobody has written what it is when it does, which makes it a good thing to spend once and never explain.
+- **What it means when a person appears in a vision.** It is not supposed to happen, and it is least supposed to happen when the vision was aimed at that person. Nobody has written what it is when it does, which makes it a good thing to spend once and never explain.
 - **Whether the dulling is permanent.** Same open question as the animal's Dulling trait (`bestiary/ocellus.md`), and it should have the same answer.
 - **What the Regency does when someone points out how useful it is.** A drug that reads the room ten minutes before the meeting is exactly what a council of spymasters would want, and the official position is that it is banned three times over. Nobody in the repo has put that to the council yet.
 - **Who at the Nest is running the animals.** Erubeth's whole reason for being there (`places/vultures-nest.md`).
