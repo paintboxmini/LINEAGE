@@ -45,11 +45,11 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
 
-**Erubeth** — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
+**Erubeth** (stat block, Loaded trait and Reload at `characters/erubeth.md`) — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
 Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
 
-He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Masaharu drew the Nest. The Compact knows he's here. They are being very careful.
+He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Erubeth drew the Nest. The Compact knows he's here. They are being very careful.
 
 FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 

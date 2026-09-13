@@ -1,8 +1,8 @@
-# Kino — Cards
+# Sixte — Cards
 
-Signature cards for Kino. See `characters/kino.md`.
+Signature cards for Sixte. See `characters/sixte.md`.
 
-**These cards are unique to Kino. They cannot be awarded to players or transferred to other fencers.**
+**These cards are unique to Sixte. They cannot be awarded to players or transferred to other fencers.**
 
 ---
 

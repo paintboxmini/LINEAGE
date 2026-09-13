@@ -72,7 +72,10 @@ He accepts help with the work immediately and without ceremony. He is much harde
 - **What it cost him physically.** He was inside. Whether that marked him, and how visibly, is unwritten.
 - **The fairy dragon.** Name, temperament, how they met, and whether it talks. None of it set.
 - **Everything before the original orphanage.**
-- **His stat line.** A deck of his was drafted and retired to `experimental/archives/frost-and-steele-decks.md` — ten cards at 4 Red / 4 Blue / 2 Green, implying Body 4, Mind 4, Soul 2 under the current deck-size rule. It is available if he needs one. Worth a look either way: its red half is BLOOD TITHE, PAIN IS FUEL and GAMBLER'S RUIN, which is a colour of cards about paying with yourself to keep something standing.
+- **His stat line is recorded, and it is not what his deck implies.** The archived sheet gives **Mind 3 / Body 4 / Soul 2**, which is HP 21 under the current formula — the sheet said 17, from the retired `(3 × Body) + 6`. His deck ran ten cards at 4 Red / 4 Blue / 2 Green, so it neither matches his stats by colour (4 Blue on Mind 3) nor fits the current cap, which would be 9. Left as found rather than tidied: it is what was actually played, and the cap is newer than he is.
+- **One card was printed under a different name.** REPEL appears on Kevin's physical card as EARTHQUAKE — same effect, renamed after the card was made. Worth knowing before somebody rules it a second card.
+- **He received PARADOX from the Oracle in his first session**, which is the only advancement on record.
+- **The deck itself** is preserved at `experimental/archives/frost-and-steele-decks.md`. Its red half is BLOOD TITHE, PAIN IS FUEL and GAMBLER'S RUIN — a colour of cards about paying with yourself to keep something standing.
 - **Any tie to an order or faction.** Deliberately unanswered.
 
 ---

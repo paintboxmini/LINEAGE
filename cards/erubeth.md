@@ -1,8 +1,10 @@
-# Masaharu — Cards
+# Erubeth — Cards
 
-Signature cards for Masaharu. See `characters/masaharu.md`.
+Signature cards for Erubeth. See `characters/erubeth.md`.
 
-**These cards are unique to Masaharu. They cannot be awarded to players or transferred to other gunners.**
+**These cards are unique to Erubeth. They cannot be awarded to players or transferred to other gunners.**
+
+**Reload** — Erubeth becomes Loaded again. He starts every combat Loaded, all his attacks deal **+d6** while he is, and he becomes Unloaded after any attack whether the reveal went his way or not. Reloading normally costs his **full Action**; a card below that says "Reload" does it for free, which is the whole reason those cards are worth playing. Full trait at `characters/erubeth.md`.
 
 ---
 

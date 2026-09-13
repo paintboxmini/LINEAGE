@@ -1,0 +1,56 @@
+# Erubeth
+
+Regency-backed detective. Loner. Traveling. Always in the middle of something.
+
+**Cards:** `cards/erubeth.md`
+
+*Filed under Masaharu in the archives, which is the older name. `places/vultures-nest.md` is where he is actually written into the world and it calls him Erubeth, so Erubeth is the name. Nothing else changed.*
+
+**His situation, his history and how to use him are at `places/vultures-nest.md`** — the murdered family, the Regency backing he does not advertise, the FourthEye thread, and what he will and will not trade. This file is the mechanical half: the stat block, the trait, and how he behaves in a fight.
+
+Mind 5 / Body 3 / Soul 4 — HP 21
+Creature Threat Rating: 12
+
+---
+
+## Appearance
+
+Long coat, wide-brimmed hat. Moves like someone who has already decided where the exits are.
+
+The boomstick is custom — longer barrel than it needs to be, adjustment rings along the stock, a small carved sigil near the grip that he never explains. He makes his own ammunition. Different loads for different jobs. He counts his shots.
+
+**It is the same kind of weapon as Kevin's pepper grinder** (`campaign/kevin.md`, How It Works): hand-worked, one shot per working, and loaded with something its owner made rather than bought. That is why Reload costs a whole Action — the gun is not a thing you thumb a fresh round into, it is a thing you have to set up again. Whether his propellant is the same food-craft Kevin uses or something else entirely is not set.
+
+---
+
+## Behavior
+
+Patient. Reads before he acts. Will let a cycle go by gathering information rather than waste a shot. He knows when you've telegraphed a move and he files it.
+
+Not cruel. Not interested in pain. Interested in resolution.
+
+---
+
+## Trait — Loaded
+
+**This is a Trait, not a Passive** (`rules/character-creation.md`, Passives and Traits) —
+it costs no Action, is never played, and has no die. Creatures do not have Passives.
+
+Erubeth begins each combat Loaded.
+
+While Loaded, all his attacks deal +d6 damage.
+
+After any attack — win or lose the reveal — he becomes Unloaded and loses the +d6 bonus until he Reloads.
+
+**Reload** — costs his full Action. A card effect that says "Reload" does it for free.
+
+---
+
+## Combat Identity
+
+High Mind. Low Body. Fragile, precise, dangerous at range.
+
+- Stays Backline. Creates Blind and Staggered to set up the shot.
+- Does not rush. Does not overcommit.
+
+---
