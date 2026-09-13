@@ -20,6 +20,8 @@ So you get the table laid for six and no six. The cups still warm and the chairs
 
 **It cannot find you a hiding place. It can only find you a place somebody is about to use.**
 
+**And it never tells you where.** You get the room, never the address. No street, no district, no name over the door, no sense of how far away it is or which direction — just the place, in perfect detail, unlabelled. Everything a vision is worth depends on somebody recognising what they were shown, which means FourthEye is not a way of finding places. It is a way of being handed a place and then having to go and earn the rest of it.
+
 **Which follows from what it's made of.** The film is unspent *noticing*, taken in traces off a crowd that is *moving* — the animal sits where the foot traffic is thickest and eats attention in transit (`bestiary/ocellus.md`). What comes out of it is attention in transit, and that is all it knows how to do once it is in you. It goes to the hinges. It has never once sat still in a room and watched a thing happen, because it was never made out of anybody doing that.
 
 Two eyes for what's in front of you and a third one for whatever the mystics are selling. The fourth is the one that looks where no one is, a moment too early or a moment too late. That is street etymology, not doctrine, and the people selling it did not name it.
@@ -88,11 +90,19 @@ Not *where*. **You aim it at a person, and it gives you their wake** — a room 
 
 **Whichever hinge is nearer in time is the one you get.** If they left somewhere two minutes ago and arrive somewhere in twenty, you get the departure. The player does not choose which, and should not be offered the choice — even a clean success hands them one more thing they did not pick.
 
+**The save aims at who they are holding, not who they named.** Almost always the same person, and you run it without comment. But a character carrying a bond heavier than the one they just spoke aloud — a grief, an obsession, a debt that has not closed — may find the drug goes there instead, and **this is not a failed roll.** It is a success. The drug did precisely what it was asked to do. What it was asked was not what was said.
+
+Use this only where the bond is already written down and the player knows it is there. Never invent one on the spot to spring on somebody. It is a payoff for an established weight, not a trap.
+
+**Aimed at the dead, it shows you the room they left.** A living person makes hinges wherever they go; a dead one has exactly one left, and it does not move — the last place they departed from, forever, the same address every time. **The room is still current, which is worse.** It goes on without them. It gets swept, relet, repainted, filled with somebody else's furniture, and the drug shows it faithfully, each time a little further from the night it mattered. Nobody has ever gotten anything out of one of these twice. They go back anyway.
+
 **You have to actually know them.** A face you have seen, a name you can put to a person, a voice you would recognise. **Reaching for a role fails** — *whoever runs the crates*, *the man who sold this*, *my brother's killer* — because those are not people yet, they are questions, and the drug has never answered a question in its life. This is the limit that keeps FourthEye from solving a mystery outright: the moment the party can name the person, they no longer need the drug to find them, and until then it has nothing to grab. What it is genuinely good for is the person you already know and cannot currently reach.
 
 **Why Soul, and not Mind.** Mind would be trying to out-think it, which is the wrong axis — there is nothing in a vision to solve. Soul is bonds, will, and holding your own intent under pressure (`rules/resolution.md`, Saves). All three of those are the actual contest: four or five minutes of somebody else's attention running through you, going where it has always gone, and you holding one particular person in mind hard enough that it goes to them instead. It is a bond check in the most literal sense the rules have. **Which means the people easiest to aim at are the ones you cannot stop thinking about** — and that is not the same list as the ones it would be useful to find.
 
 **Yes, it is a check wearing a save's clothes.** A failed save is meant to be a consequence you couldn't prevent, and this one mostly leaves the drug doing its ordinary job. Two things make it honest anyway. The first is that the players cannot tell — from where they sit, an unexplained roll right after swallowing something is a save every time. The second is the real consequence, and it lands on the ones who *succeed*: **they now know it can be done.** A person who has aimed it once will spend the rest of their life paying to aim it twice. That is a heavier thing to carry out of a scene than any damage would have been.
+
+**The worked example is Erubeth** (`characters/erubeth.md`). He has a face to aim at, he knows the save exists, and every success lands him in the room where his wife and child were killed. Read him before you run any of this — he is what all three of the rules above look like when they land on one person at once.
 
 **The odds are the reputation.** 2d10 + Soul against 19 comes in around one time in seven at Soul 3, one in five at Soul 4, a little better than one in four at Soul 5 — before a relevant Skill's +2 or an Advantage swap (`rules/resolution.md`). That rate is why the street is so sure the drug cannot be steered. For four users out of five it never has been, and the fifth has no way to prove it and every reason not to try.
 

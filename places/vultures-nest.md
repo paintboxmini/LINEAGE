@@ -71,7 +71,9 @@ He'll tell you loyalty is a transaction and nothing more, and say it like he's s
 
 **Erubeth** (stat block, Loaded trait and Reload at `characters/erubeth.md`) — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
-Old detective. His family was killed by a criminal organization he was dismantling. He finished the job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
+Old detective. His wife and child were kidnapped and killed by the organization he was dismantling — **the same one that moves FourthEye**, which is why this case is the only one left. He finished that job anyway and kept going. Has been going ever since. Fully backed by the Regency — papers in order, authority to act. He does not advertise this.
+
+**He is also an addict.** He takes the drug he is here to eradicate, he has for years, and he is one of a handful of people alive who can steer it — and every time he does, it puts him in the room where they died. The full weight of that, and the thing a party can give him that nobody else can, is `characters/erubeth.md`, The Room. Read it before you play him.
 
 He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Erubeth drew the Nest. The Compact knows he's here. They are being very careful.
 
@@ -85,6 +87,10 @@ What's being moved from the Nest, who is moving it, and who at the Nest is runni
 
 **GM — Using Erubeth**
 He's an information node and a slow-burn complication. He knows the shape of the supply chain but not the names yet. He won't share freely — he trades, and only with people who've demonstrated they can be useful. If the party stumbles into the FourthEye thread without knowing what it is, he'll find a way to make that known without blowing his position.
+
+**He is the one person in the world who can tell them how the drug really works** — that there is a save in every dose, that it can be aimed at a person, and what it gives you when you land it (`items/fourtheye.md`, GM Secret). He will not volunteer any of it. It is the most expensive thing he owns and the only thing he has left to trade with, and handing it over means admitting how he knows.
+
+**What he actually wants is a room identified**, and he cannot ask for that without explaining why. So he does the next thing: he describes rooms. Details, in passing, as a test, folded into an unrelated conversation — a loose board, the way the light comes in at one corner. A party that has been listening will eventually walk into one.
 
 ## Rumors
 
