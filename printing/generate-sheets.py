@@ -151,7 +151,7 @@ def sheet_html(c):
     derived = ''.join(
         f'<div class="d"><span class="dl">{lbl}</span>'
         f'<span class="dv">{h(val) if val != "" else "&nbsp;"}</span></div>'
-        for lbl, val in (('Max HP', c['hp']), ('Hand', c['hand']),
+        for lbl, val in (('HP', c['hp']), ('Hand', c['hand']),
                          ('Init', init), ('Deck Max', c['deck'])))
 
     return f"""<div class="sheet">

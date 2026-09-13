@@ -27,15 +27,23 @@ references, no assumed context.
 > triangle is cut into reads as a single slab laid over the collage beneath
 > it.
 >
-> **The three wells.** At each corner of the triangle sits a filled circular
-> well, like a shallow bowl ground into the stone and flooded with pigment.
-> Three colours, one per corner, unlabelled: deep blood red `#9E2C2C` at the
-> top corner, deep ink blue `#2C5F9E` at the bottom-left corner, deep forest
-> green `#2A7A3E` at the bottom-right corner. Each has a clean pale rim of
-> bare stone around it, sits flat and even with a soft inner shadow, and is
-> **empty — no symbol, no numeral, no mark of any kind inside it**. These are
-> the most saturated things in the picture by a wide margin; everything else
-> is muted.
+> **The three wells.** At each corner of the triangle sits a circular disc of
+> **pale tinted stone** — a thin translucent wash of pigment soaked into the
+> rock, the way a dye stains plaster. Three colours, one per corner,
+> unlabelled: red at the top corner, blue at the bottom-left corner, green at
+> the bottom-right corner, each a soft chalky tint of `#9E2C2C`, `#2C5F9E`
+> and `#2A7A3E` respectively — the same hues, heavily lightened.
+>
+> Each disc is **flat, matte and light** — pale enough that dark ink written
+> on top of it stays completely readable, like a colour wash on paper.
+> **No gloss, no glass, no enamel, no lacquer, no specular highlight, no
+> reflection, no glassy depth, no liquid surface, no gemstone.** A clean pale
+> rim of bare stone runs around each, with only the faintest contact shadow.
+> Each is **empty — no symbol, no numeral, no mark of any kind inside it**.
+>
+> These three are the only pure colour on the page. Everything else is dusty
+> and faded, so the discs read as the clearest hue present even though they
+> are the palest — clarity, not intensity.
 >
 > **The triangle's interior** is open, flat, undecorated stone — clean enough
 > to write four short lines on. Only the faintest surface texture: a hairline
@@ -46,6 +54,13 @@ references, no assumed context.
 > from different books and assembled by hand — torn and deckled edges, slight
 > tonal mismatch between them, corners lifting, small pins and a thread or
 > two holding them down. All three are desaturated and slightly faded.
+>
+> All three plates are **noticeably desaturated but not greyscale** — about
+> half the colour of an ordinary photograph, like a print left too long in a
+> window. Amber still reads as amber and moss still reads as green; both are
+> dusty and low-contrast rather than vivid. No bright glare, no glowing
+> highlights, no vivid teal or cyan, no strong warm punch. They are
+> background, and they must sit quieter than the three colour discs.
 >
 > - **Down the left flank, a lightless forest interior.** Near-total darkness
 >   under an unbroken canopy. Huge old trees leaning inward as though
@@ -86,8 +101,8 @@ references, no assumed context.
 >
 > Style: hand-drafted antique cartography crossed with architectural stone
 > rubbing, with pasted photographic plates. Fine ink linework, restrained,
-> precise, a little austere. Muted and weathered except for the three colour
-> wells. Matte, printable, high detail, flat lighting, no gloss, no glow, no
+> precise, a little austere. Muted and weathered throughout; the three colour discs are the
+> only clean hue. Matte, printable, high detail, flat lighting, no gloss, no glow, no
 > sparkle, no fantasy kitsch.
 
 **Negative / must not appear:**
@@ -123,8 +138,8 @@ values. The one exception is the small hint text under Price.
 >
 > **Inside the triangle, centred in its open interior:** four short labelled
 > slots stacked as two rows of two, small and evenly spaced, each a tiny
-> label in small caps above a short blank rule. They read `MAX HP`, `HAND`,
-> `INIT`, `DECK MAX`. Render HP with both letters capitalised. Keep them well
+> label in small caps above a short blank rule. They read `HP`, `HAND`,
+> `INIT`, `DECK MAX`, with both letters of HP capitalised. Keep them well
 > clear of the three corner circles and well inside the cut edges. These are
 > the only marks allowed inside the triangle.
 >
