@@ -28,22 +28,24 @@ references, no assumed context.
 > it.
 >
 > **The three wells.** At each corner of the triangle sits a circular disc of
-> **pale tinted stone** — a thin translucent wash of pigment soaked into the
-> rock, the way a dye stains plaster. Three colours, one per corner,
-> unlabelled: red at the top corner, blue at the bottom-left corner, green at
-> the bottom-right corner, each a soft chalky tint of `#9E2C2C`, `#2C5F9E`
-> and `#2A7A3E` respectively — the same hues, heavily lightened.
+> **solid matte pigment set into the stone** — think fresco, painted plaster,
+> or a cake of dry pigment in a paintbox: opaque, richly coloured, and
+> completely without shine. Three colours, one per corner, unlabelled: deep
+> red `#9E2C2C` at the top corner, deep blue `#2C5F9E` at the bottom-left
+> corner, deep green `#2A7A3E` at the bottom-right corner. **Strong, full,
+> unmistakable colour — not pale, not pastel, not washed out, not faded, not
+> translucent, not a thin tint.** These are the richest, most vivid colour
+> anywhere on the page and should be visible across a room.
 >
-> Each disc is **flat, matte and light** — pale enough that dark ink written
-> on top of it stays completely readable, like a colour wash on paper.
-> **No gloss, no glass, no enamel, no lacquer, no specular highlight, no
-> reflection, no glassy depth, no liquid surface, no gemstone.** A clean pale
-> rim of bare stone runs around each, with only the faintest contact shadow.
-> Each is **empty — no symbol, no numeral, no mark of any kind inside it**.
->
-> These three are the only pure colour on the page. Everything else is dusty
-> and faded, so the discs read as the clearest hue present even though they
-> are the palest — clarity, not intensity.
+> The surface is **dead flat and chalk-matte — no gloss, no glass, no enamel,
+> no lacquer, no varnish, no specular highlight, no reflection, no glassy
+> depth, no liquid surface, no gemstone, no polish.** It looks like something
+> you could write on with a pen, because that is what it is for: hold the
+> pigment a shade or two lighter in brightness than it would naturally sit,
+> so dark ink laid on top of it still reads — saturated, but not dark. A
+> clean pale rim of bare stone runs around each, with only the faintest
+> contact shadow. Each is **empty — no symbol, no numeral, no mark of any
+> kind inside it**.
 >
 > **The triangle's interior** is open, flat, undecorated stone — clean enough
 > to write four short lines on. Only the faintest surface texture: a hairline
@@ -60,7 +62,8 @@ references, no assumed context.
 > window. Amber still reads as amber and moss still reads as green; both are
 > dusty and low-contrast rather than vivid. No bright glare, no glowing
 > highlights, no vivid teal or cyan, no strong warm punch. They are
-> background, and they must sit quieter than the three colour discs.
+> background, and they must sit far quieter than the three colour discs,
+> which stay the loudest colour in the picture.
 >
 > - **Down the left flank, a lightless forest interior.** Near-total darkness
 >   under an unbroken canopy. Huge old trees leaning inward as though
@@ -101,8 +104,8 @@ references, no assumed context.
 >
 > Style: hand-drafted antique cartography crossed with architectural stone
 > rubbing, with pasted photographic plates. Fine ink linework, restrained,
-> precise, a little austere. Muted and weathered throughout; the three colour discs are the
-> only clean hue. Matte, printable, high detail, flat lighting, no gloss, no glow, no
+> precise, a little austere. Muted and weathered throughout except the three colour
+> discs, which are vivid. Matte, printable, high detail, flat lighting, no gloss, no glow, no
 > sparkle, no fantasy kitsch.
 
 **Negative / must not appear:**
