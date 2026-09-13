@@ -44,4 +44,6 @@ Industrial, not ceremonial — everything doubles as a weapon or looks like it c
 
 ## GM Secret — Not Player-Facing
 
-The Custodians are the last link in the FourthEye supply chain before it reaches the Underground Bazaar. The drug moves through the tunnels somewhere between a Station Chief's territory and the Bazaar's hidden pocket. It's cargo somebody's paid to not ask about.
+The Custodians are the last link in the FourthEye supply chain before it reaches the Underground Bazaar. The drug moves through the tunnels somewhere between a Station Chief's territory and the Bazaar's hidden pocket. It's cargo somebody's paid to not ask about (`items/fourtheye.md`).
+
+The joke nobody down there has made yet is that the tunnels are the ideal route for it precisely because they are the part of the city no one is looking at — which is also, exactly, what the cargo shows you.

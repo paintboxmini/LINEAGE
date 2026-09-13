@@ -75,7 +75,7 @@ Old detective. His family was killed by a criminal organization he was dismantli
 
 He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Erubeth drew the Nest. The Compact knows he's here. They are being very careful.
 
-FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
+FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. It shows the taker a place nobody is watching, truthfully, and spends their own capacity to notice anything in doing it — a district of habitual users is a district that stops witnessing (`items/fourtheye.md`). The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
 What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Erubeth is here to find out.
 
@@ -132,7 +132,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* an **Ocellus** (`bestiary/ocellus.md`). A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug.
+- *Open it:* an **Ocellus** (`bestiary/ocellus.md`). A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug (`items/fourtheye.md`).
 - **The crate is in the market because the market is the crop.** It is not stored here, it is working here, and somewhere discreet would starve it. That is why the most conspicuous smuggling problem in the Nest is parked in the busiest spot in town and nobody has an opinion about it.
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.

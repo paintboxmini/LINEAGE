@@ -8,6 +8,8 @@ Regency-backed detective. Loner. Traveling. Always in the middle of something.
 
 **His situation, his history and how to use him are at `places/vultures-nest.md`** — the murdered family, the Regency backing he does not advertise, the FourthEye thread, and what he will and will not trade. This file is the mechanical half: the stat block, the trait, and how he behaves in a fight.
 
+*What he is chasing is at `items/fourtheye.md`, and what makes it is at `bestiary/ocellus.md`. Worth reading both before running him: the drug eats the exact faculty he has built an entire career on, which is why he is the right man for the case and why he is the last man who should be anywhere near the crate.*
+
 Mind 5 / Body 3 / Soul 4 — HP 21
 Creature Threat Rating: 12
 

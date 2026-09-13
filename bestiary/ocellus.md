@@ -16,6 +16,8 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 
 **The yield is a film.** Over days the ocelli weep a thin, faintly iridescent secretion that dries on its skin and is scraped off. That scraping is the **FourthEye precursor** — the raw material, several refinements away from the drug that reaches the Underground Bazaar (`places/capital/underground-bazaar.md`). A single animal in a busy place yields a usable amount in about a week. A single animal in an empty room yields nothing at all, forever.
 
+**What the film becomes is unspent noticing, and it behaves like it.** Refined and swallowed, FourthEye shows the taker a place where nobody is currently looking — true, current, and never the place they wanted (`items/fourtheye.md`). The animal takes attention from a crowd; the drug hands it back pointed somewhere nobody is aiming it. That is the whole product.
+
 **Which is why the crate sits in the middle of the market and not in a warehouse.** It is not being stored. It is working, and the crowd is the crop. Moving it somewhere discreet would starve it, so the smuggling problem is inverted: the cargo has to be left in the busiest place in town, in plain sight, for as long as possible.
 
 ---
@@ -50,15 +52,15 @@ All core cards. It has no signature cards, because it has no technique — every
 
 ## Not Yet Set
 
-- **What FourthEye actually does to a person.** The drug is named and its supply chain is written — the Custodians move it, Giblets sells it, the Regency caught the pandemic at the bazaar end (`factions-and-races/the-cellar-custodians.md`, `characters/erubeth.md`) — but nothing anywhere says what taking it is like. That is the load-bearing blank, not this animal.
 - **Where they come from.** Whether Ocelli are wild somewhere, bred somewhere, or made is open.
 - **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`).
-- **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic.
+- **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic. Whatever the answer is, it should be the same answer as the drug's (`items/fourtheye.md`).
 
 ---
 
 ## Related Documents
 
 - `places/vultures-nest.md` — The Moving Crate, and the detective asking about it
+- `items/fourtheye.md` — what the refined film does to the person who takes it
 - `places/capital/underground-bazaar.md` — where the refined drug ends up
 - `factions-and-races/the-cellar-custodians.md` — the last link before the bazaar
