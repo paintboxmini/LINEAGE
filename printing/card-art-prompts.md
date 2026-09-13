@@ -15,6 +15,20 @@ Render at least 1000 × 1400.
 identical; only the pigment changes. Red `#9E2C2C`, blue `#2C5F9E`, green
 `#2A7A3E`, and a neutral grey `#5A5A5A` for the colourless cards.
 
+**Generate one card, then tile it.** Nine cards asked for as a single image
+come back nine slightly different sizes, slightly rotated, with drifting
+colour and edges that line up with no cut grid. Make one face at high
+resolution per colour and lay it out with `generate-blanks.py`, which tiles
+3x3 on Letter using the exact grid real cards print on: 60 x 84 mm cells,
+8 mm between columns, 3.5 mm between rows, inside a 10 mm page margin. A
+blank sheet and a printed sheet then cut identically.
+
+```
+python3 generate-blanks.py art/card-red.png              # 9 of one
+python3 generate-blanks.py art/red.png art/blue.png      # cycles them
+python3 generate-blanks.py --pages 4 art/card-red.png    # four pages
+```
+
 ---
 
 ## Two things that make this different from the sheet
@@ -137,5 +151,5 @@ beside each one left blank for typesetting later.
 ---
 
 <!-- Maintenance only — not part of either prompt, do not paste. -->
-<!-- 5:7 is the printed card at 60 x 84mm, and the field order, labels and -->
-<!-- the four colour hexes all come from printing/generate-cards.py. -->
+<!-- 5:7 is the printed card at 60 x 84mm; the 3x3 page grid, field order, -->
+<!-- labels and the four colour hexes all come from generate-cards.py. -->
