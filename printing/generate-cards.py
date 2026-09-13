@@ -709,12 +709,15 @@ body {{
 }}
 
 .dot {{
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 5px;
-  margin-top: 2px;
+  margin-left: 6px;
+  margin-top: 1px;
+  /* a pale rim so it reads as pigment set into the stock rather than a
+     sticker on top of it, the way the sheet's corner discs do */
+  box-shadow: 0 0 0 1.2px #F3EEDF;
 }}
 
 .card-sub {{
