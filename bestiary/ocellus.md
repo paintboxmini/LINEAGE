@@ -16,9 +16,11 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 
 **The yield is a film.** Over days the ocelli weep a thin, faintly iridescent secretion that dries on its skin and is scraped off. That scraping is the **FourthEye precursor** — the raw material, several refinements away from the drug that reaches the Underground Bazaar (`places/capital/underground-bazaar.md`). A single animal in a busy place yields a usable amount in about a week. A single animal in an empty room yields nothing at all, forever.
 
-**What the film becomes is unspent noticing, and it behaves like it.** Refined and swallowed, FourthEye shows the taker a place where nobody is currently looking — true, current, and never the place they wanted (`items/fourtheye.md`). The animal takes attention from a crowd; the drug hands it back pointed somewhere nobody is aiming it. That is the whole product.
+**What the film becomes is unspent noticing, and it behaves like it.** Refined and swallowed, FourthEye shows the taker a real place a few minutes before people arrive in it or a few minutes after they left — never while anything is happening (`items/fourtheye.md`). That follows from the harvest. **The animal eats attention in transit** — it sits where the crowd is *moving*, and what it takes is the noticing people spend on their way past something rather than the noticing they spend on the thing they came for. Attention in transit is what goes in and it is what comes out. The drug goes to hinges because it was never made out of anybody standing still.
 
 **Which is why the crate sits in the middle of the market and not in a warehouse.** It is not being stored. It is working, and the crowd is the crop. Moving it somewhere discreet would starve it, so the smuggling problem is inverted: the cargo has to be left in the busiest place in town, in plain sight, for as long as possible.
+
+**And it has to be a crowd that is going somewhere.** A market works because a market is people on their way past things. A congregation, an audience, a courtroom gallery — a crowd that is standing still and attending to one thing — is nearly useless to it, however many people are in the room. Busy is not the requirement. *Passing through* is.
 
 ---
 

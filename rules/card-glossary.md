@@ -202,7 +202,7 @@ Cannot be played.
 When drawn: Scry 1 on any one deck in the combat, including an enemy's — you are looking somewhere nobody is guarding. Then discard one other card from your hand, if you have one, having lost the thread of whatever you were about to do here.
 Discard this card at the end of your turn if it is in your hand.
 Removal: story dependent. Resting does not clear it. Exiling it destroys it (see Exile).
-*"You were about to say something. It was not as interesting as the room."*
+*"Somebody had just walked out of it. You are almost certain of that."*
 
 *Source: a dose of FourthEye. See `items/fourtheye.md`.*
 <!-- print:skip-end -->

@@ -60,7 +60,7 @@ Giblets is a ghoul — unhinged in a way that is not the same as tragic. The sta
 
 The line in front of the stall is one of the bazaar's most famous features. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
 
-**The stall is named for what it sells under the counter.** A **FourthEye** is a dose, not a meal — a thumbnail of grey grit that shows the taker a place nobody is currently watching, truthfully, for about four minutes, and spends their own capacity to notice anything in the process (`items/fourtheye.md`). The free digestive divination that comes with every meal is the sober, harmless, showman's version of the same trick, which is exactly why nobody official has ever thought twice about the name.
+**The stall is named for what it sells under the counter.** A **FourthEye** is a dose, not a meal — a thumbnail of grey grit that shows the taker a real place, truthfully, for about four minutes, always a little before people arrive in it or a little after they left, and spends their own capacity to notice anything in the process (`items/fourtheye.md`). The free digestive divination that comes with every meal is the sober, harmless, showman's version of the same trick, which is exactly why nobody official has ever thought twice about the name.
 
 **This is the end of the chain the Regency is working backward along.** The drug comes up through the tunnels (`factions-and-races/the-cellar-custodians.md`) from somewhere out on the river, and the pandemic the council caught, it caught here. Giblets does not know where it starts and has never asked. A detective is currently at the other end of it (`places/vultures-nest.md`).
 

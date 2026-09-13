@@ -75,7 +75,7 @@ Old detective. His family was killed by a criminal organization he was dismantli
 
 He is in Vulture's Nest because FourthEye is spreading through Eclipseria's Underground Bazaar and someone has to trace it back to the source. The Regency sent agents to several likely points of origin. Erubeth drew the Nest. The Compact knows he's here. They are being very careful.
 
-FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. It shows the taker a place nobody is watching, truthfully, and spends their own capacity to notice anything in doing it — a district of habitual users is a district that stops witnessing (`items/fourtheye.md`). The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
+FourthEye crosses all three of the Regency's hard lines: too addictive, too destructive, and the council isn't getting a cut. It shows the taker a real place a few minutes either side of anyone being in it — never the moment itself — and spends their own capacity to notice anything in doing it. Users chase the one vision that lands on the thing instead of just beside it, and a district of them is a district that stops witnessing (`items/fourtheye.md`). The supply chain bypasses Jonas's ledger entirely — it never appears in Voss's intake either. The Regency caught the pandemic at the bazaar end and has been working backward ever since.
 
 What's being moved from the Nest, who is moving it, and who at the Nest is running it: all unknown. That is what Erubeth is here to find out.
 

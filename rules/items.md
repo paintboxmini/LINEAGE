@@ -165,7 +165,7 @@ The Bazaar has one entry here and is not missing any others. **It does not trade
 
 Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
 
-**FourthEye** — *Full entry: `items/fourtheye.md`.* A dose costs ~40 gold under Giblets's counter. One true vision of a place nobody is watching; in combat, Scry 3 on any deck and a permanent FOURTHEYE curse card (`rules/card-glossary.md`).
+**FourthEye** — *Full entry: `items/fourtheye.md`.* A dose costs ~40 gold under Giblets's counter. One true vision of a real place minutes before it is occupied or minutes after it is vacated, never during; in combat, Scry 3 on any deck and a permanent FOURTHEYE curse card (`rules/card-glossary.md`).
 
 **The exception is deliberate and it is the only one.** Every other Bazaar transaction refuses coin as a matter of principle — a card is experience, so it costs experience. FourthEye is sold for money, by the gram, to anyone. That is not an inconsistency in the Bazaar's economy; it is the sign that the thing does not belong to the Bazaar's economy at all. It comes up the tunnels from outside (`factions-and-races/the-cellar-custodians.md`, `bestiary/ocellus.md`) and it is priced the way an outside operation prices things. If a party notices that one stall takes gold when nothing else here will, they have found the thread.
 
