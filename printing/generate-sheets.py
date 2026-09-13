@@ -161,8 +161,7 @@ def sheet_html(c):
   <div class="stats">{stat_cells}</div>
   <div class="derived">{derived}</div>
 
-  <div class="hp"><span class="lbl">HP</span><span class="hpbox"></span>
-    <span class="lbl">Position</span><span class="pos">Front &nbsp;/&nbsp; Back</span></div>
+  <div class="hp"><span class="lbl">HP</span><span class="hpbox"></span></div>
 
   <div class="sec">Trait</div>
   {slot('', c['trait'])}
@@ -203,12 +202,12 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 
 .page {{
   width: 216mm; height: 279mm;
-  padding: 12.5mm 25.4mm;
+  padding: 10.2mm 25.4mm;
   display: grid;
   grid-template-columns: repeat(2, 76.2mm);
   grid-template-rows: repeat(2, 127mm);
   column-gap: 12.4mm;
-  row-gap: 0;
+  row-gap: 5mm;
   break-after: page; page-break-after: always;
   background: white;
 }}
@@ -249,7 +248,6 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 
 .hp {{ display: flex; align-items: center; gap: 1.4mm; margin-bottom: 1mm; }}
 .hpbox {{ flex: 1; border: 1px solid #666; border-radius: 2px; height: 6.4mm; background: #fff; }}
-.pos {{ font-size: 7pt; white-space: nowrap; }}
 
 .sec {{ font-size: 6.2pt; font-weight: bold; text-transform: uppercase;
         letter-spacing: .1em; color: #444;
