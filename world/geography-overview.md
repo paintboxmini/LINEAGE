@@ -39,7 +39,27 @@ Waterfalls drive the circuit itself — climbing and falling, the push that keep
 
 Which is why river sailors are skilled at two different things rather than one: reading which tide a stretch is on and when it is about to turn is its own discipline, and handling a vessel through water that can change speed underneath it is another. Knowing the water and working it are both real skill, not the same skill twice.
 
+---
+
+### How a boat actually moves
+
+**Sail is the exception on the web, not the rule.** Most river craft spend most of their working lives under one of three methods, and a crew chooses between them the way a carter chooses a gear.
+
+**Oars, and mostly oars.** The common working boat is rowed. Downstream it is steered more than driven — the current does the work and the oars keep the bow honest. Upstream it is muscle, hour after hour, which is why a river boat's worth gets counted in benches as often as in tons.
+
+**Pullways.** Many rivers and most canals have a **pullway**: a cleared path along the bank where teams of men or draught animals haul a boat upstream on ropes. This is how anything heavy goes against the water. A laden barge that could never be rowed up a fast-tide stretch goes up it at a walking pace behind eight animals and one person who knows the rhythm, while the crew aboard does nothing but keep her off the bank.
+
+A pullway is infrastructure. Somebody cleared it, somebody keeps it clear, and on most stretches somebody is paid at one end or the other. **Who holds a given pullway is deliberately not set continent-wide** — a Regency toll on the arterial stretches, a village where the teams are the whole local living, a Compact arrangement at the Nest, or nobody at all on a reach gone back to brush. Decide it per stretch, because who controls the only way to move weight upriver is a better local question than a global answer.
+
+**Sail, upriver, in small craft.** You can sail up a river. It takes fancy sheet work — beating up a winding channel, taking the wind where the banks funnel it and losing it where they don't, reading shifts a sea sailor would never trouble with because at sea there is room to be lazy about it. Small craft only. Nobody tacks a barge up a narrow reach.
+
+**And the crews are extraordinarily good at it**, because it is not a trick, it is their living. A river hand who spots a gap in the treeline and sets up for the wind coming through it three bends early is doing the ordinary competent version of the job, and thinks nothing of it. That, more than anything else on the water, is what separates a real river sailor from a passenger who owns a boat.
+
+---
+
 The loop runs clockwise — south along the eastern reach from Glasslight down toward Vulture's Nest, west across the southern stretch to Turnroot Weald, north back up to Glasslight. Traveling with that grain is the easy way: the current is doing half the work. Traveling against it — Vulture's Nest to Turnroot the short way, or any long haul upstream of the loop's natural pull — means giving up on fighting the current head-on and using the tide instead: run the stretches that are on slow tide, wait out the ones that aren't, and move again when the fast tide has passed you by. Slower, and it only works because the tide's rhythm doesn't care which way the loop turns. A sailor who's only ever traveled with the loop has never actually needed both skills at once. A sailor who's fought it has.
+
+**That is the long-haul answer, not the local one.** Over a bend or into a berth you row, hire the pullway, or beat up under sail — but nobody rows for three days, no pullway runs the length of the web, and the wind does not hold across a continent. Tide strategy is what a crew falls back on when the distance is longer than muscle, rope and canvas can carry it.
 
 Islands stand in the larger lakes and wider rivers. They are often inhabited, trade-connected, and reachable by boat. Whatever strangeness they hold is their own. **The web's northern reaches hold the two that aren't trade-connected at all** — the Shunka island and, off its lower east coast, the Lizardkin's.
 

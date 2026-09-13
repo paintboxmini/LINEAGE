@@ -38,6 +38,8 @@ The barge is the thread that leads the party to Pneum.
 
 **Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation better travelled than most traders. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of the river and are never questioned about it.
 
+**The return leg is the interesting half.** A barge cannot be sailed upriver — it is oars or a pullway, and nothing else (`world/geography-overview.md`, How a boat actually moves). So the whole run back from the coast is either the congregation rowing themselves home or the congregation hiring hauling teams the length of the web, and either way these are the people on the river that bank crews and pullway villages see most often and think about least. *Which of the two they do is not set, and it says something different about them each way — a faith that rows itself home is not the same faith as one that pays.*
+
 ---
 
 ## Tone

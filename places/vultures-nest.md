@@ -2,6 +2,8 @@
 
 A river port rebuilt so many times on top of itself that no one remembers the original shoreline.The town sits at a major intersection, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more cargo crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
+**Most of what arrives here was rowed or hauled, not sailed** (`world/geography-overview.md`, How a boat actually moves). The Nest is the densest knot on the web, so every pullway team, oar crew and small-craft sailor working the southeast passes through it sooner or later — which is also why a party asking about a boat that went upriver is asking a question dozens of people can answer, and why the Compact can find out who moved what simply by asking the teams on the bank.
+
 The smell: pitch, citrus peel, river silt, wet wood.
 
 ## The People
