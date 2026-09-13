@@ -138,22 +138,37 @@ Run this on the output of Prompt 1. Every value is written in by hand later,
 so this pass places **labels and empty ruled lines only** — never sample
 values. The one exception is the small hint text under Price.
 
-> Take the supplied plate and add hand-lettered annotation in the style of a
-> surveyor's field atlas: fine sepia-black ink, an antique engraved serif for
-> labels, small caps for the label words, slightly irregular baselines as if
-> written by hand with a steel nib. Type sits *on* the stone, following its
-> surface, with the faint background art showing through unchanged beneath.
-> Nothing is boxed or panelled. No new artwork, no new symbols, no change to
-> the triangle or the three coloured circles.
+> Take the supplied plate and add **hand-lettered calligraphy** in fine
+> sepia-black ink — a flowing pointed-pen hand with strong thick-to-thin
+> stroke contrast, generous curves, and long **spiralling flourishes**
+> curling off the capitals and the tails of letters. Every label word opens
+> with an ornate spiralled capital. The flourishes coil outward into the
+> empty stone around each label and taper away to a hairline; they never
+> cross a write-in line or run into another label. Slightly irregular
+> baselines, as if written by a practised hand rather than set in type.
+>
+> **The label words stay plainly readable** — ornate, not illegible. Flourish
+> the entrances and exits of a word, never the middle of it.
+>
+> Every **write-in line ends in a small inked spiral curl** at its right-hand
+> end, like a pen lifting off the page, and the rest of the line stays
+> perfectly straight, thin and clear — these are lines a player writes on, so
+> the flourish lives at the terminal only and never along the writing run.
+>
+> Type sits *on* the stone, following its surface, with the faint background
+> art showing through unchanged beneath. Nothing is boxed or panelled. No new
+> artwork, no new symbols, no change to the triangle or the three coloured
+> circles.
 >
 > **Across the very top, above the triangle:** two ruled write-in lines, one
-> under the other, full width. The first is labelled `NAME` in small caps at
-> its left end; the second is labelled `RACE`. Labels small and grey; the
-> ruled lines thin, long and empty.
+> under the other, full width. The first is labelled `NAME` at its left end;
+> the second is labelled `RACE`. Labels in the calligraphic hand, small and
+> muted; the ruled lines thin, long and empty.
 >
 > **Inside the triangle, centred in its open interior:** four short labelled
 > slots stacked as two rows of two, small and evenly spaced, each a tiny
-> label in small caps above a short blank rule. They read `HP`, `HAND`,
+> calligraphic label above a short blank rule. Keep the flourishes here
+> restrained — there is very little room and the labels must not touch. They read `HP`, `HAND`,
 > `INIT`, `DECK MAX`, with both letters of HP capitalised. Keep them well
 > clear of the three corner circles and well inside the cut edges. These are
 > the only marks allowed inside the triangle.
@@ -162,7 +177,8 @@ values. The one exception is the small hint text under Price.
 > no outline change.
 >
 > **In the lower field, below the triangle, top to bottom:**
-> a section heading `TRAIT` in small caps with a thin rule under the heading,
+> a section heading `TRAIT` in the calligraphic hand with a thin rule under
+> the heading,
 > then one long empty write-in line beneath it;
 > a section heading `SKILLS`, then two long empty write-in lines beneath it,
 > each with a small numeral `1` and `2` at its left end;
@@ -178,8 +194,11 @@ values. The one exception is the small hint text under Price.
 
 **Must not appear in the text pass:**
 
-> no equipment, weapon, armour or artifact section; no inventory; no stat
-> names anywhere — never write Body, Mind or Soul, and never label the
+> no flourish crossing or overlapping a write-in line; no spirals filling the
+> blank writing space; no illegible or over-ornamented words; no blackletter,
+> no gothic script; no decorative border or frame of scrollwork around the
+> page; no equipment, weapon, armour or artifact section; no inventory; no
+> stat names anywhere — never write Body, Mind or Soul, and never label the
 > circles; no sample or placeholder values in any field; no numbers except
 > the small `1` and `2` beside the two skill lines; no extra sections, no
 > flavour text, no page number, no title, no signature, no logo.
