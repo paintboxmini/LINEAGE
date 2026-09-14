@@ -37,6 +37,26 @@ Intent is the part most GMs skip and most regret skipping. An enemy that wants t
 
 You don't need a backstory. You need an intent.
 
+### How many of them
+
+**Count is the balance lever, not the creature.** A weak creature is only weak alone, and the honest way to make a fight harder is to add another one rather than to inflate the one you have.
+
+**The number that makes a fight genuinely uncertain is:**
+
+> **N ≈ (the party's combined total stats) ÷ (the creature's CTR)**
+
+Three starting characters at nine stats each is 27. Against a CTR 9 creature that is three of them; against CTR 4 it is six or seven; against a CTR 13 or 14 it is two. **Take one off for a fight the party should win and still remember. Add one for a fight they will probably lose.**
+
+Measured against the simulator at a thousand fights per row (`combat-simulations/encounter_budget.py`), and accurate to about ±1 across party sizes from two to five. It drifts at both extremes and in opposite directions: it **over-counts swarms** of very weak creatures, because a lot of small things get a lot of actions, and **under-counts heavies**, because a big party can focus one down before it spends its turns. Trust it in the middle; sanity-check the edges.
+
+**The lever has good resolution at the weak end and almost none at the strong end.** Against CTR 4 creatures a GM can dial four, five, six or seven and get four different fights. Against a CTR 13 creature there are three settings and only one of them is a fight: one is a formality, two is real, three is a wipe. **If you want a boss encounter that is hard but survivable, count will not give you that** — you need terrain, an objective, a clock, a bad starting position or a couple of weak adds instead.
+
+**There is no soft-loss band.** One creature past even, the party's win rate falls to single digits and the losses are not near-misses: a wiped three-person party averages two dead and one down, not three bloodied survivors. The step from "in doubt" to "obituary" is one creature wide the whole way up the scale. Decide before the session which side of that you meant to be on.
+
+**Party size moves the line harder than anything else.** A fourth character shifts every threshold by a full creature and sometimes two — two Harlocks against three starting characters is a 43% win; against four it is 88%. Recompute the number when a seat fills or empties, and **never carry an encounter built for four into a session where one player didn't show up.**
+
+*The simulator does not execute card Effects, so all of this is a structural floor — dice, HP, range, the reveal, positioning and the wheel. Effects raise both sides. Read the 50% line as "a real fight," not as a measured coin flip.*
+
 **Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
 **Old card printings are a free source of enemy variance.** Cards get revised — a die size changes, an Effect gets rewritten, a Defense Effect starts doing something else entirely. Don't treat your old printouts as obsolete once the canon text moves on. Deploy them, unchanged, in enemy decks.
