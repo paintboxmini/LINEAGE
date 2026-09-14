@@ -65,6 +65,8 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 **Aege** — near the east gate, and the guide the party actually travels with if they go inland. Lean, weathered face. She watches how you walk before she talks to you, which is the whole hiring interview. On the road she speaks in paths rather than places and does not explain her decisions; at a table with a meal on it she is the same person with a much wider register. Full profile and combat identity at `characters/aege.md`.
 
+*The party should have already seen her once by then, collecting a letter at the Listing Keel without looking at them, and probably eaten a meal across from her (The Listing Keel, The Letter). The gate is the hire, not the introduction.*
+
 She takes the party the whole leg to Briarwatch, tells them about her family at the Roadhouse on the first night out, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
 
 **Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
@@ -183,6 +185,34 @@ She believes the bar is the one place in the Nest where nothing that followed yo
 - Salted Strip — on the bar, free with a drink
 - Dock Broth — Salla makes it from whatever was left on the docks that day. She charges less for it than it's worth and recommends it sincerely.
 - A single room upstairs — one bed, a hammock nailed to the wall, no lock. First come.
+
+**Salla holds letters.** Not a service, not advertised, not charged for. The Keel is where a good half of the people who work this river actually sleep, so anything sent to somebody with no address ends up behind this bar and waits there until they walk in. She does not read them, does not mention them to anyone else, and does not hand one over to anybody but the name on the front.
+
+---
+
+### The Letter — first time the party takes the room
+
+While their coin is still on the bar, Salla looks straight past them and raises her voice across the room:
+
+> *"Aege. Got a letter here for you."*
+
+A lean woman with a weathered face comes over, takes it, thanks her, and walks off with it. **That is the whole beat.** She does not look the party over, does not size them up, does not say anything to them. She has no idea who they are and none of this is about them.
+
+It is doing three things at once and none of them announce themselves: it puts Aege in the room before she matters, it shows the party — without a word of exposition — that this bar is where people without addresses receive things, and it plants a letter that gets answered hours later, after everyone has stopped thinking about it.
+
+**Dinner, later the same day.** Aege eats at the Keel. She'll take a table with the party if they've given her any reason to think they're worth the chair; she watched them come in and she has been watching how they walk ever since (`characters/aege.md`).
+
+**If the Red Scarves got their gold earlier that day** (The Red Scarves, above), she buys. She doesn't make anything of it and she doesn't ask what happened, because she can see what happened. Getting skimmed on your first day at the Nest isn't a story, it's a toll.
+
+> *"Eat. Road's longer on an empty stomach. You can owe the world something useful later."*
+
+**If they ask about the letter**, she answers straight, in the wider register she only has at a table (`characters/aege.md`, Voice):
+
+> *"It was a letter from my family, in the Weald. They spoke of my younger brother — how fast he's becoming a man. They said they miss me more every day, and wish for my safety."*
+>
+> *"Then they spoke of something that has me worried. They said they'd seen forest signs that the overgrowth season this year would be a particularly bad one. So they're making early preparations, to get the village ready."*
+
+**And she leaves it there.** She does not announce that she is going. **She has not decided to go.** The beat is a woman telling near-strangers, out loud, that something at home is off — and then finishing her dinner. Having her stand up and declare a departure spends the entire thread in one scene and buys nothing for it.
 
 ## Plot Hooks
 
