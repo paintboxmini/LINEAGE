@@ -264,9 +264,11 @@ The Red Scarves are already in your peripheral vision.
 
 ### Why they are standing together
 
-**The sweep did it.** The Compact impounded a whole stretch of berth over the quarantined barge (The Quarantined Barge, above), and everything moored near it went into a warehouse behind a question nobody can answer — other people's cargo, sealed and legitimate, sitting indefinitely. Each of the party is there about their own freight. **Bartho does not hold a queue of petitioners; he deals with a party.** So he is dealing with them, together, as one problem, and none of them chose that.
+**The sweep did it.** The Compact impounded a whole stretch of berth over the quarantined barge (The Quarantined Barge, above), and everything moored near it went into a warehouse behind a question nobody can answer — other people's cargo, sealed and legitimate, sitting indefinitely. **Bartho does not hold a queue of petitioners; he deals with a party.** So he is dealing with them together, as one problem, and none of them chose that.
 
-Kevin's wine shipment is in that warehouse (`campaign/session-1-convergence.md`). Whatever the other two are there about, the shape is the same: your thing is inside, and the man who can release it is explaining why he won't.
+**Only one of them is actually there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). Kevin's temple wine is in the warehouse. Pat is at the docks asking river questions, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. Chris is standing there with nothing to do and no reason to leave, which makes him the only one present whose reasons anybody believes.
+
+**Bartho sorts them into one conversation because it is easier than three**, not because they belong together. A dockmaster mid-lockdown has a freight claim, a stranger asking about the water, and an idler, and handling them as one group takes a quarter of the time. That is the whole of why the party exists. Nobody announces it.
 
 ### Beat one — Bartho, the barge, the lockdown
 
