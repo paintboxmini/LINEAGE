@@ -55,14 +55,15 @@ All core cards. It has no signature cards, because it has no technique — every
 ## Not Yet Set
 
 - **Where they come from.** Whether Ocelli are wild somewhere, bred somewhere, or made is open.
-- **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`).
+- **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`). **The route is now written and the source still is not**: Harlock's *Arcadia* carries them in and the scraped film out, and he has been paid well to not ask what for (`characters/harlock.md`; `places/vultures-nest.md`, The Arcadia's hold). Cracking the ship gets a party the carrier. It deliberately does not get them whoever hired him.
 - **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic. Whatever the answer is, it should be the same answer as the drug's (`items/fourtheye.md`).
 
 ---
 
 ## Related Documents
 
-- `places/vultures-nest.md` — The Moving Crate, and the detective asking about it
+- `places/vultures-nest.md` — The Moving Crate, the ship that landed it, and the detective asking about it
+- `characters/harlock.md` — the captain who moves them and does not know what they are
 - `items/fourtheye.md` — what the refined film does to the person who takes it
 - `places/capital/underground-bazaar.md` — where the refined drug ends up
 - `factions-and-races/the-cellar-custodians.md` — the last link before the bazaar

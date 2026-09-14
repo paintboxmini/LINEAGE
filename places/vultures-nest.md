@@ -69,9 +69,11 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 She takes the party the whole leg to Briarwatch, tells them about her family at the Roadhouse on the first night out, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
 
-**Harlock** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
+**Harlock** — captain of the **Arcadia**, leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him. Stat block, traits and deck at `characters/harlock.md`.
 
 He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
+
+*He does not fight to the death and cannot be beaten in a straight fight — only trapped (`characters/harlock.md`, Cuts Losses). Read that before you put him in one.*
 
 **Erubeth** (stat block, Loaded trait and Reload at `characters/erubeth.md`) — Sits alone. Long coat, wide-brimmed hat pulled low. A boomstick rests across his knees or leans against the wall within reach — custom-built, not off a rack. He makes his own ammunition. Different loads for different jobs.
 
@@ -170,6 +172,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **The crate is in the market because the market is the crop.** It is not stored here, it is working here, and somewhere discreet would starve it. That is why the most conspicuous smuggling problem in the Nest is parked in the busiest spot in town and nobody has an opinion about it.
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
+- **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
@@ -284,7 +287,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 ### Beat three — Harlock comes in hard
 
-**A ship hits the dock.** Harlock's, coming into a berth on a fast tide with too little water to work in, because the impound has half the frontage roped off. Timber goes. A crane arm swings loose. Nobody dies, and somebody could have.
+**A ship hits the dock.** The **Arcadia**, Harlock's, coming into a berth on a fast tide with too little water to work in, because the impound has half the frontage roped off. Timber goes. A crane arm swings loose. Nobody dies, and somebody could have.
 
 **The crash is the lockdown's fault, and Harlock's.** Both are true and both men know which half they are each responsible for. The tide was running hard (The Tide, above; `world/geography-overview.md`, River system), the berth was short because of the barge, and he came in anyway rather than stand off and wait like a man with nothing to hide.
 
@@ -312,7 +315,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 ### What it leaves running
 
-- **A clock.** Jonas counts slowly and carefully. Harlock needs something off that ship before the count reaches it. Somewhere between those two facts is a job, and it is available from either direction — which makes it the party's first real choice rather than their first errand.
+- **A clock.** Jonas counts slowly and carefully. Harlock needs something off that ship before the count reaches it. Somewhere between those two facts is a job, and it is available from either direction — which makes it the party's first real choice rather than their first errand. **What is in the hold is below.**
 - **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
 - **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
 - **They have been marked.** The kids have them.
@@ -322,3 +325,24 @@ Jonas keeps the official port record, and the official port record is cross-refe
 **The market, the tavern, or both**, in whichever order the party picks — the Scarves take their gold in the market (The Red Scarves), and the Keel is where Salla calls a letter across the room and Aege collects it (The Listing Keel, The Letter). If the Scarves got them in the afternoon, Aege buys dinner that evening, and the day closes on somebody being decent to them for no stated reason.
 
 *That is the intended shape of session one: told no by authority, robbed by children, fed by a stranger.*
+
+---
+
+### The Arcadia's hold — GM only
+
+**Harlock carries the Ocelli.** The Arcadia is how the animals that make FourthEye move on and off the river web (`bestiary/ocellus.md`, `items/fourtheye.md`). The crate sitting in the market right now came off her on an earlier run and has been working ever since (The Market, The Moving Crate). What is in her hold today is the trade in both directions: **the next animal coming in, and a season of scraped film going out.**
+
+**He does not know what it is for.** He knows the crate is alive, he knows it has to be landed somewhere crowded and left there, and he knows the fee is very good for a box that walks off his ship and sits in a market. He decided a while ago that the rest was not his business. That is the same posture the Custodians take at the far end of the same chain (`factions-and-races/the-cellar-custodians.md`) — cargo somebody's paid to not ask about, and everyone in the middle has agreed to be incurious for money.
+
+**So Harlock is a link, not the answer.** Who pays him, and who at the Nest is actually running the animals, is still unwritten and should stay that way — it is the thing Erubeth is here to find out (`characters/erubeth.md`, `bestiary/ocellus.md`, Not Yet Set). A party that cracks the Arcadia gets the route. They do not get the source.
+
+**Why he cannot simply hide it.** An Ocellus in a warehouse starves (`bestiary/ocellus.md`). The one thing Harlock cannot do with this cargo is put it somewhere discreet, which is why the previous one is standing in the middle of the busiest market on the continent in a plain wooden box. His only move is to land it in public, in daylight, in front of everyone, before Jonas reaches that part of the manifest.
+
+**That is the clock, and it is a good one**, because every option is bad for him:
+- **Land it now** and it goes across a dock that is currently crawling with Compact attention.
+- **Leave it aboard** and Jonas writes down a living crate in a Regency-cross-referenced ledger.
+- **Dump it** and he answers to whoever paid him, who has so far been worth not annoying.
+
+**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **Both jobs are the same afternoon and they are incompatible**, and neither one tells the party what is in the box.
+
+*A party that takes Harlock's job and only finds out later what they carried is the best version of this. Nobody lied to them. They just didn't ask, same as everybody else in the chain.*

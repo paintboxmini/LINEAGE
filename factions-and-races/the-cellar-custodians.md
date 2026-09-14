@@ -47,3 +47,5 @@ Industrial, not ceremonial — everything doubles as a weapon or looks like it c
 The Custodians are the last link in the FourthEye supply chain before it reaches the Underground Bazaar. The drug moves through the tunnels somewhere between a Station Chief's territory and the Bazaar's hidden pocket. It's cargo somebody's paid to not ask about (`items/fourtheye.md`).
 
 The joke nobody down there has made yet is that the tunnels are the ideal route for it precisely because they are the part of the city no one is looking at — which is also, exactly, what the cargo shows you.
+
+**The posture is identical at the other end of the chain.** Harlock's *Arcadia* carries the animals themselves on and off the river web for a fee, and has decided the rest is not his business (`characters/harlock.md`; `places/vultures-nest.md`, The Arcadia's hold). Nobody in the middle of this trade is lying to anybody. Everybody in the middle of it has agreed to be incurious for money, which is how a supply chain survives a continent full of people who would stop it.
