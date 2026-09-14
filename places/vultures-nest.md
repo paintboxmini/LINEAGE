@@ -38,6 +38,8 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
+**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel won't name where the barge came from, the clock nobody on the dock knows about, and five ways it ends.
+
 *The Adventurers' Hall in the capital already posts this as real and current (`places/capital/adventurers-hall.md`).*
 
 ---

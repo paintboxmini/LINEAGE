@@ -32,7 +32,7 @@ What's specific to this thread: he was discovered. The guards are holding him. H
 
 The Compact's position: unknown diseases, possible outbreak, crosses hard lines (too destructive, too visible). Corvel's position: he has nothing to recant.
 
-The barge is the thread that leads the party to Pneum.
+The barge is the thread that leads the party to Pneum. **The adventure at the far end of that thread is `quests/the-quarantined-barge.md`** — including why Corvel will not give the Nest this island's name, which is the one thing he holds back and the one thing worth earning from him.
 
 **And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`campaign/session-1-convergence.md`, Pneum first, and the barge is why).
 
