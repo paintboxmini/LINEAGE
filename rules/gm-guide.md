@@ -49,7 +49,17 @@ Three starting characters at nine stats each is 27. Against a CTR 9 creature tha
 
 Measured against the simulator at a thousand fights per row (`combat-simulations/encounter_budget.py`), and accurate to about ±1 across party sizes from two to five. It drifts at both extremes and in opposite directions: it **over-counts swarms** of very weak creatures, because a lot of small things get a lot of actions, and **under-counts heavies**, because a big party can focus one down before it spends its turns. Trust it in the middle; sanity-check the edges.
 
-**The lever has good resolution at the weak end and almost none at the strong end.** Against CTR 4 creatures a GM can dial four, five, six or seven and get four different fights. Against a CTR 13 creature there are three settings and only one of them is a fight: one is a formality, two is real, three is a wipe. **If you want a boss encounter that is hard but survivable, count will not give you that** — you need terrain, an objective, a clock, a bad starting position or a couple of weak adds instead.
+**There is a headcount cap, and below CTR 5 it binds before the formula does.** Bodies are worth more than the stats on them, because every body is another turn on the wheel. **Somewhere around twice the party's number, a fight tips regardless of how weak the individuals are** — measured at 2.0x, 2.0x and 1.8x against parties of two, three and five, and at that point the swarm is carrying only about two-thirds of the party's total stats and winning half the time anyway.
+
+So: nine creatures at one-in-every-stat sounds like an even match against three starting characters, because nine times CTR 3 is exactly the party's 27. It is not. **Six is the even fight and eight is a guaranteed wipe.** Take the formula's answer and the headcount cap, and use whichever is smaller.
+
+**Count alone has good resolution at the weak end and almost none at the strong end.** Against CTR 4 creatures a GM can dial four, five, six or seven and get four different fights. Against a CTR 13 creature there are three settings and only one of them is a fight: one is a formality, two is real, three is a wipe.
+
+**Mix CTRs to get the settings back.** This is the fine-tuning lever, and it is the answer to a boss encounter that needs to be hard but survivable. One minotaur against three starting characters is a formality at 100%; two is 70%. But one minotaur plus one, two, three or four CTR-3 creatures reads 98%, 95%, 84%, 48% — four usable settings inside a gap that count alone could not divide at all.
+
+**And note which way that cuts.** One minotaur and four small things is 26 total stats and a 48% fight. Two minotaurs is 28 total stats and a 70% fight. *Fewer stats, harder fight* — because five bodies act more often than two do. When you want pressure rather than a bigger number, add bodies.
+
+**The real limiter on mixed encounters is fiction, not math.** What makes sense hunting together, or hired by the same person, or living in the same ruin. A GM who needs a specific difficulty and cannot justify the adds should change the terrain instead.
 
 **There is no soft-loss band.** One creature past even, the party's win rate falls to single digits and the losses are not near-misses: a wiped three-person party averages two dead and one down, not three bloodied survivors. The step from "in doubt" to "obituary" is one creature wide the whole way up the scale. Decide before the session which side of that you meant to be on.
 
