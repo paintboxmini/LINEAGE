@@ -1,6 +1,6 @@
 # The Fog Basin
 
-The low ground ringing Eclipseria. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. The basin remembers too many paths at once and offers whichever one fits the moment.
+The low ground ringing Eclipseria. The city sits elevated at the center; the basin surrounds it like a moat that never drains. Fog pools here permanently — not weather, not season. Nothing here moves. The ground is exactly where it was; what the fog takes is your ability to tell.
 
 It was here before the city. The city was built on the premise that maps are truth. The basin disagrees.
 
@@ -10,7 +10,9 @@ It was here before the city. The city was built on the premise that maps are tru
 
 **Blind terrain.** Standard visibility reduced. Blind status applies freely at GM discretion for ranged targeting into dense fog zones.
 
-**The Misdirection Trap.** The fog shifts. The path the party was following is gone. A new one appears — worn, obvious, inviting. It leads somewhere that isn't where they intended.
+**The Misdirection Trap.** The path the party was following is still there. They have lost it in the fog and found another one — worn, obvious, inviting — and taken it for the same path. It leads somewhere that isn't where they intended.
+
+*The basin never rearranges itself.* Every path in it stays where it was put. Turnroot routes travellers; the Fog Basin only hides what it already has, and lets them do the rest.
 
 - DC 13 Senses — something about the new path feels wrong. Too worn for how rarely this basin gets traveled.
 - DC 16 Reason — the vegetation along the new path is crushed from one direction only. Things were led *out* of somewhere along this path. Not into it.
@@ -25,11 +27,6 @@ It was here before the city. The city was built on the premise that maps are tru
 - `bestiary/fogcaller.md` — primary predator
 - `bestiary/echo.md` — ambient, no combat
 
----
-
-## The Orphanage
-
-Rebuilt on the site of one that burned — real, operating, takes children with nowhere else to go. Steele grew up in the original, was inside when it burned, and rebuilt it himself later on the same ground (`characters/steele.md`). A longer trip for anyone bringing children here from elsewhere in the basin, but a standing answer, not an open question.
 
 ---
 
@@ -60,7 +57,7 @@ Then he adjusts the lantern and keeps walking.
 The basin operates on folk logic. Everything physical corresponds to something invisible. The fog has direction, density, memory — it can be read.
 
 - **Smoke reading** — the fog has direction and density. Someone trained in this reads it like text. DC 15 Mind to extract useful information from fog movement.
-- **Crossroads workings** — the misdirection trap is the oldest trick in this tradition. The basin offers the wrong path. It doesn't lie. It just remembers too many routes.
+- **Crossroads workings** — the misdirection trap is the oldest trick in this tradition. The basin shows you the wrong path. It doesn't lie and it doesn't move anything; it just holds more routes than one traveller can keep straight, and the fog decides which one you can see.
 - **Threshold space** — the basin is a threshold that never closes. Echoes persist here because the boundary between passage and arrival never fully resolves.
 
 The Fogcallers understand this instinctively. Pell understands it practically. Most travelers don't understand it until after.
@@ -71,5 +68,4 @@ The Fogcallers understand this instinctively. Pell understands it practically. M
 
 - `places/capital/capital.md` — the city at the basin's center
 - `items/fog-basin-items.md`
-- `characters/steele.md` — rebuilt the orphanage on the ground where he grew up
 - `places/the-collection-plate.md` — hollow settlement in the basin; hanging sheets, inward shacks, hard to leave by fear not by lock

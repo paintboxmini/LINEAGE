@@ -7,9 +7,10 @@ treats it. No dependencies, matching the rest of the repo's tooling.
 A card's Effect and Defense Effect are prose written for a human, and the
 engine does not attempt to parse them. What it parses is the part that is
 structured: name, color, stat, attack die, and range. Effects are carried
-as text and surfaced to whoever is playing, who applies them. Where the
-engine can recognise a common effect mechanically it does so through
-`effects.py`; everything else is announced and left to the table.
+as text and surfaced to whoever is playing, who applies them. Every one of
+them, without exception — engine.py logs an Effect and a Defense Effect and
+resolves neither. Mechanical recognition was once meant to live in an
+effects.py; there has never been one.
 """
 
 import os

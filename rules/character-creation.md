@@ -74,6 +74,8 @@ See `rules/equipment.md` for the Weapon/Armor tier system and how to design new 
 
 Every character starts with **9 cards** drafted from the Oracle deck. *How* they get drafted is up to the table — what follows are two methods that work, not a required procedure. Any process that ends with nine cards chosen under real constraint is doing the job.
 
+**Nine is not a constant — it is your total stats.** Maximum deck size equals Body + Mind + Soul, which is 9 for everyone at creation (2/2/2 plus the 3 you distributed) and moves only when a stat does. It is the same rule every creature in the world is built on (`rules/cards.md`, Deck Building), so a character's deck is the same size as a creature of the same weight.
+
 ### Method One — The Shared Offer
 
 1. The GM presents **3 random cards** from the available pool.
@@ -92,7 +94,7 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 
 This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
 
-*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.*
+*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 63-card Oracle seats seven exactly, and the full 84 with the expansion seats nine. Past that the piles run dry before anyone finishes and the shared offer is the better method.*
 
 ---
 
@@ -173,13 +175,13 @@ A **Trait** is rules text that is simply true. It costs no Action, is never play
 
 **Creatures have Traits, not Passives** (`bestiary/`). Every creature stat block uses that word now. The distinction matters because a creature's innate rules and a player's Passive were never the same object and shared a name for no reason: a Minotaur's Relentless has no die, no colour, and nothing to play it on.
 
-**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`experimental/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
+**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`campaign/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
 
 ---
 
 ### Passives, Skills, and Ancestry
 
-**Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`experimental/passives.md`, AMALGAMOUS FORM).
+**Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`campaign/passives.md`, AMALGAMOUS FORM).
 
 **A Passive you can't justify becomes a Skill instead.** A human with a real natural ability takes the corresponding Passive like anybody else. A human without one isn't short a resource — they take an extra Skill in its place, and a character who can justify neither Passive takes four Skills. Trained breadth is what a body that doesn't do anything unusual has instead.
 
@@ -208,25 +210,35 @@ Players may also propose custom cards as the campaign develops. These enter the 
 
 ---
 
+## Magic Expression
+
+When you play a card, you choose what it looks like.
+
+The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
+
+A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+
+None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
+
+You don't have to explain the metaphysics. Neither does your character.
+
+---
+
 ## Advancement
 
 ### End of Session
-At the close of every session, each player meets the Oracle alone — the ritual run per player at the table, in three frames:
+The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
-1. **Name** — the Oracle asks one question. The player answers.
-2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
-   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
-   The Oracle is permitted to remember what it has already shown.
-3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+**Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
 
-Growth is never handed over whole. This is the default rhythm of it.
-
-The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
+**Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
 
 ### Stat Increases
-Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
+Stat increases are rare and are not tied to card count. They are earned by **pivotal character development** — a moment where something in the character genuinely and permanently changes — and what qualifies is the GM's call. **They are taken at advancement**, like everything else that changes a sheet permanently: the moment earns the increase, advancement is where it lands.
 
 These moments should feel earned, not scheduled.
+
+A stat increase raises maximum deck size by 1, since the maximum is the stat total. Because it happens at advancement, the new slot can be filled from the bank in the same sitting.
 
 ### Promotion
 
@@ -246,35 +258,8 @@ The retiring card returns to the GM/Oracle pool, same as any card leaving a deck
 
 **Permanent Removal** — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.
 
+This is a different thing from banking a card, and the difference is whether you still own it. A banked card is out of the deck and still yours; a removed card is gone, and a card removed as a consequence does not land safely in the bank on the way out.
+
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
 
----
-
-## Resting
-
-### Short Rest
-**Duration:** 20 minutes  
-**Limit:** 3 per day  
-**Effect:** Recover **2d6 + Body** HP
-
-Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.
-
-### Long Rest
-**Duration:** 7½ hours  
-**Effect:** Full heal
-
-A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don't.
-
----
-
-## Magic Expression
-
-When you play a card, you choose what it looks like.
-
-The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
-
-A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
-
-None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
-
-You don't have to explain the metaphysics. Neither does your character.
+**They sit outside the cap.** A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.

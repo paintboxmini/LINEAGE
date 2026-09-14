@@ -51,7 +51,7 @@ They do not coordinate. They also do not need to — a group of them all chargin
 
 **The gland is the prize. The quills are a byproduct.** Cutting the spinstone gland out is straightforward butchery once you know it's there, and knowing it's there is the whole difficulty — the animal advertises the quills and hides the reason they work.
 
-**Whether the stones are worth anything is decided during the fight, not after it.** They hold whatever alignment they were in when the animal died. A Shockquill killed at **3 or more Charge** dies with the gland at speed, and the stones lock in alignment and keep turning against each other for months afterward — that's **spinstone grind** (`experimental/kevin.md`). Killed at 0 to 2, they settle, cancel one another out, and go dead in the hand: ordinary iron grit, worth nothing to a cook.
+**Whether the stones are worth anything is decided during the fight, not after it.** They hold whatever alignment they were in when the animal died. A Shockquill killed at **3 or more Charge** dies with the gland at speed, and the stones lock in alignment and keep turning against each other for months afterward — that's **spinstone grind** (`campaign/kevin.md`). Killed at 0 to 2, they settle, cancel one another out, and go dead in the hand: ordinary iron grit, worth nothing to a cook.
 
 So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — walks away with fletching and gravel. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and none of the others work like it: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, the Blowback simply has to be beaten, and the Shockquill is dangerous to harvest *correctly*.
 
@@ -71,4 +71,4 @@ So the ingredient has a price and the price is paid in the fight. A party that p
 - `places/glasslight-reach.md` — the mineral-veined cliffs, and the dry scree that pays for the friction habit
 - `bestiary/tollbird.md` — the only predator here that has to check first
 - `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
-- `experimental/kevin.md` — the character, and what this does once it is loaded
+- `campaign/kevin.md` — the character, and what this does once it is loaded

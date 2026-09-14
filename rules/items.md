@@ -159,11 +159,15 @@ Three questions the table actually needs to answer, in this order:
 
 ---
 
-## Underground Bazaar — no items, by design
+## Underground Bazaar — one item, and that's the point
 
-The Bazaar has no entries here and is not missing any. **It does not trade in items. It trades in cards** (`places/capital/underground-bazaar.md`, The Card Economy) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
+The Bazaar has one entry here and is not missing any others. **It does not trade in items. It trades in cards** (`places/capital/underground-bazaar.md`, The Card Economy) — the one place in the world where a card changes hands, bought with another card, a memory, or a secret, never with coin.
 
 Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades are narrative on purpose; the mechanical goods here are the cards.
+
+**FourthEye** — *Full entry: `items/fourtheye.md`.* A dose costs ~40 gold under Giblets's counter. One true vision of a real place minutes before it is occupied or minutes after it is vacated, never during; in combat, Scry 3 on any deck and a permanent FOURTHEYE curse card (`rules/card-glossary.md`).
+
+**The exception is deliberate and it is the only one.** Every other Bazaar transaction refuses coin as a matter of principle — a card is experience, so it costs experience. FourthEye is sold for money, by the gram, to anyone. That is not an inconsistency in the Bazaar's economy; it is the sign that the thing does not belong to the Bazaar's economy at all. It comes up the tunnels from outside (`factions-and-races/the-cellar-custodians.md`, `bestiary/ocellus.md`) and it is priced the way an outside operation prices things. If a party notices that one stall takes gold when nothing else here will, they have found the thread.
 
 ---
 
@@ -176,7 +180,7 @@ A quick reference for where it makes sense for a new item to surface:
 - **Pell (Fog Basin)** is the one dealer whose price is never coin — memories, secrets, names. Anything sold through him should keep that convention rather than getting a flat gold price.
 - **Borrowers (the Hollow)** trade in goodwill, not currency — their two items are both earned, not bought.
 - **Aege / the Briarwatch farmer** hand over items as direct narrative rewards tied to a specific job finished, not shop stock.
-- **The Underground Bazaar** trades in cards, bought with cards, memories, or secrets — never coin. See above; it has no item stock and is not supposed to.
+- **The Underground Bazaar** trades in cards, bought with cards, memories, or secrets — never coin. See above; its only priced item is FourthEye, and that one takes gold precisely because it isn't really the Bazaar's.
 - **Harlan & Sera Vetch (Temple of the Forge)** — capital-made weapons and armor. The honest first Tier 1 counter the gold pacing was built against.
 - **Nessa Coil (Marketplace)** — regional consumables at markup. Does not buy quest-reward or goodwill items.
 - **Brother Alden (Marketplace)** — resonant objects and Artifacts. Secrets and vows are part of the price when the object is Seat-true.

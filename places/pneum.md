@@ -34,9 +34,11 @@ The Compact's position: unknown diseases, possible outbreak, crosses hard lines 
 
 The barge is the thread that leads the party to Pneum.
 
-**And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`experimental/session-1-convergence.md`, Pneum first, and the barge is why).
+**And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`campaign/session-1-convergence.md`, Pneum first, and the barge is why).
 
 **Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation better travelled than most traders. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of the river and are never questioned about it.
+
+**The return leg is the interesting half.** A barge cannot be sailed upriver — it is oars or a pullway, and nothing else (`world/geography-overview.md`, How a boat actually moves). So the whole run back from the coast is either the congregation rowing themselves home or the congregation hiring hauling teams the length of the web, and either way these are the people on the river that bank crews and pullway villages see most often and think about least. *Which of the two they do is not set, and it says something different about them each way — a faith that rows itself home is not the same faith as one that pays.*
 
 ---
 
@@ -48,6 +50,6 @@ These people are warm, communal, and completely sincere. The wrongness isn't cru
 
 ## Related Documents
 
-- `places/vultures-nest.md` — Corvel's stall, the quarantined barge, People of Promise plot hook
+- `places/vultures-nest.md` — The Quarantined Barge: Corvel in custody, the Compact's position, and the berth sweep the opening runs on
 - `world/tonal-bible.md`
 - `world/geography-overview.md`

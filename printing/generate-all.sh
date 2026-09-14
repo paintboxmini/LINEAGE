@@ -20,7 +20,7 @@ cd "$(dirname "$0")"
 CHECK=0
 [ "${1:-}" = "--check" ] && CHECK=1
 
-CARD_SETS=(core briarwatch mason frost steele oracle oracle-expansion items items-field washed-ashore)
+CARD_SETS=(core briarwatch mason oracle oracle-1 oracle-2 oracle-3 oracle-expansion items items-field washed-ashore)
 RULES_DOCS=(packet play-reference)
 CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
 
@@ -34,9 +34,25 @@ for d in "${RULES_DOCS[@]}"; do
   python3 generate-rules-pdf.py "$d" >/dev/null 2>&1 || { echo "  FAILED: $d"; exit 1; }
 done
 
+# Character sheets recompute HP, hand size, initiative and deck maximum from
+# each character's stat table, so a stat change has to come back through here.
+echo "Regenerating character sheets..."
+python3 generate-sheets.py >/dev/null 2>&1 || { echo "  FAILED: character sheets"; exit 1; }
+
 # Which HTML actually moved? Only rebuild PDFs for those — a Chrome launch each
 # is the slow part, and an unchanged sheet doesn't need one.
 mapfile -t CHANGED < <(git status --porcelain -- '*.html' | awk '{print $2}')
+
+# The HTML is no longer the whole input. Cards reference fonts and stock
+# textures out of assets/, so an asset can change while every .html stays
+# byte-identical and the PDFs are quietly stale — which is exactly what
+# happened the first time the colour wash was restrengthened. If any asset
+# moved, every PDF is suspect.
+if [ -n "$(git status --porcelain -- assets)" ]; then
+  echo
+  echo "Assets changed — rebuilding every PDF, not just changed HTML."
+  mapfile -t CHANGED < <(ls *.html)
+fi
 
 if [ ${#CHANGED[@]} -eq 0 ]; then
   echo

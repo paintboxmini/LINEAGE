@@ -6,13 +6,14 @@ as generate-cards.py and the combat simulator itself) — a small, targeted
 converter for exactly the Markdown constructs these docs actually use:
 # / ## headers, tables, fenced code blocks, horizontal rules,
 bold/italic/inline-code, plain bullet/numbered lists, and blockquotes
-(used for the Oracle's voice in the summons packet — styled with an
-amber left border to read as a distinct register from the rules text).
+(written for the Oracle's voice in the retired summons — styled with an
+amber left border to read as a distinct register from the rules text, and
+kept for any doc that wants that register again).
 No nesting, no images, no real hyperlinks (backtick file paths render
 as inline code, not anchors).
 
 Usage:
-  python3 generate-rules-pdf.py                    → packet (the-summons.md + character-creation.md)
+  python3 generate-rules-pdf.py                    → packet (character-creation.md)
   python3 generate-rules-pdf.py gm-guide.md         → any rules/*.md file
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
@@ -133,7 +134,7 @@ def convert(md_text, title):
             out.append(parse_table(block))
             continue
 
-        # Blockquote — the Oracle's own voice in the summons packet. Blank
+        # Blockquote — a register distinct from the rules text. Blank
         # lines inside a quote start a new paragraph within the same block.
         if line.startswith('>'):
             paras = [[]]
@@ -341,25 +342,44 @@ em {{
 
 
 # Named multi-document builds. `packet` is the thing that actually goes out
-# to players: the Oracle's summons, then the plain mechanical guide behind it.
-# `play-reference` is the other half — what stays on the table during a
-# session rather than being read once at the start. Each file's own `# ` header
-# starts a fresh page, so the three sections stay physically separable.
+# to players: what you settle before play — how a character is made, and the
+# gear rules the slot system points at. It used to open with the Oracle's
+# summons; that was retired to experimental/archives/ on 2026-09-12 and
+# dropped. `play-reference` is the other half — what stays on the table
+# during a session, which is why Resting sits there and not in creation.
+# Each file's own `# ` header starts a fresh page, so the sections stay
+# physically separable.
+#
+# Both draw on files that are also working documents, so several sections
+# are wrapped in print:skip — the designer's pricing and pacing guidance in
+# equipment.md, the two encounter curses in the glossary. Skipped, not
+# deleted: they are still canon, just not a player's business.
 PACKETS = {
     'packet': {
-        'title': 'A Summons to Eclipseria',
-        'files': ['the-summons.md', 'character-creation.md'],
+        'title': 'Character Creation & Equipment',
+        'files': ['character-creation.md', 'equipment.md'],
     },
     'play-reference': {
         'title': 'Play Reference',
-        'files': ['combat.md', 'resolution.md', 'card-glossary.md'],
+        'files': ['combat.md', 'resolution.md', 'resting.md',
+                  'card-glossary.md', 'initiative-shift-examples.md'],
+        # The worked shift cases go in the players' hands rather than staying
+        # a maintenance file. Initiative Shift is tied for the most common
+        # keyword in the Oracle deck — seven of the 63 carry it, across all
+        # three colours, so every drafted deck meets it — and it is the
+        # subtlest rule in the game: onto the marker's slot is not across it.
+        # The glossary's own Initiative Shift entry ends by telling the
+        # reader to go see the worked cases, which was a dead end for anyone
+        # holding only the printed reference.
     },
 }
 
 
 def resolve_src(fname):
     """A named file may live in rules/ or, for non-rules content pulled
-    into a packet (e.g. the-summons.md), in experimental/."""
+    into a packet, in experimental/. Note that a missing file is a hard
+    exit below rather than a skipped section — a packet that quietly builds
+    short is worse than one that refuses to build."""
     for base in ('../rules', '../experimental'):
         candidate = f'{base}/{fname}'
         if os.path.exists(candidate):

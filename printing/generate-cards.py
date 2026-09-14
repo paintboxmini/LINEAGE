@@ -7,12 +7,14 @@ Usage:
   python3 generate-cards.py              → core cards  (card-print-core.html)
   python3 generate-cards.py briarwatch  → Briarwatch encounter set
   python3 generate-cards.py items       → player item cards
+  python3 generate-cards.py oracle-1     → one even third of the Oracle
   python3 generate-cards.py <set-name>  → any named set below
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
 
 import re
+import collections
 import html as html_mod
 import os
 import sys
@@ -85,35 +87,6 @@ SETS = {
             '../cards/trisect-ashfall.md',
         ],
     },
-    'frost': {
-        'title': "Frost's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/frost.md` — order matches that file's own
-        # Red/Blue/Green grouping, not registration order in the core files.
-        'cards': [
-            'REPAY', 'BLEED', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
-            'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
-            'TWIN STRIKE',
-        ],
-    },
-    'steele': {
-        'title': "Steele's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/steele.md`
-        'cards': [
-            'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
-            'FORGET', 'PARADOX', 'ALIGN', 'ANTICIPATE',
-            'MIRROR STEP', 'RENEWAL',
-        ],
-    },
     'oracle': {
         'title': 'Oracle Deck',
         'files': [
@@ -121,8 +94,11 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
+        # This list is the Oracle deck's definition. It used to be a copy of
+        # one, kept in step with an Oracle/ directory and a content.py that no
+        # longer exist — both were cited here until 2026-09-12, long after they
+        # were gone. Nothing else defines the 63 now; edit them here.
+        # Fixed composition since 2026-08-03: 21 per colour, each
         # led by that colour's own range identity. The ideal split is 12/6/3
         # and all three colours are on it; the per-colour notes below say
         # which slots each change spent.
@@ -235,6 +211,31 @@ SETS = {
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
+    },
+    # The Oracle's 63 dealt into three 21-card sheets, each an even share of
+    # both colour and range. Derived from 'oracle' rather than listed by hand:
+    # the composition above is edited often, and a hand-copied third would go
+    # stale the first time a card was swapped without anyone noticing which
+    # sheet it had been sitting on.
+    #
+    # Each third comes out 7 Red / 7 Blue / 7 Green AND 7 Melee / 7 Ranged /
+    # 7 Both, both at once. That is not a coincidence to be proud of — it
+    # falls out of the deck's own shape. Every colour is 21 at 12/6/3, so
+    # every (colour, range) bucket in the deck is 12, 6 or 3, and all three
+    # divide by three. Deal each bucket round-robin and both axes land even
+    # together. Break the 12/6/3 ratio and the thirds stop being exact; the
+    # build says so rather than printing a lopsided sheet quietly.
+    'oracle-1': {
+        'title': 'Oracle Deck — 1 of 3',
+        'split': ('oracle', 3, 0),
+    },
+    'oracle-2': {
+        'title': 'Oracle Deck — 2 of 3',
+        'split': ('oracle', 3, 1),
+    },
+    'oracle-3': {
+        'title': 'Oracle Deck — 3 of 3',
+        'split': ('oracle', 3, 2),
     },
     'oracle-expansion': {
         'title': 'Oracle Deck — Expansion',
@@ -450,8 +451,53 @@ def parse_items(filepath):
     return items
 
 
+def split_evenly(cards, parts, index):
+    """Deal `cards` into `parts` shares even on colour and range at once,
+    and return share number `index`.
+
+    Dealing bucket by bucket is what makes both axes come out even together.
+    Balancing colour and then balancing range inside it is the obvious
+    approach and it fights itself; bucketing on the pair and dealing each
+    bucket round-robin means every share takes a proportional slice of each
+    (colour, range) combination, and the colour totals and range totals fall
+    out of that rather than being negotiated against each other.
+
+    A bucket that does not divide by `parts` splits as evenly as it can —
+    the remainder lands in the low-numbered shares. Callers report the
+    residue rather than hiding it: an uneven sheet is a fine thing to print
+    and a bad thing to be surprised by.
+
+    Original order is preserved within each share, so a part keeps the
+    parent's colour grouping and reads the same way down the page.
+    """
+    buckets = {}
+    for i, card in enumerate(cards):
+        buckets.setdefault((card['color'], card['range']), []).append(i)
+    keep = set()
+    for idxs in buckets.values():
+        keep.update(idxs[index::parts])
+    return [c for i, c in enumerate(cards) if i in keep]
+
+
+def split_residue(cards, parts):
+    """(colour, range) buckets of `cards` that don't divide by `parts`, as
+    a list of 'RED Melee 13' strings. Empty means every share is exact."""
+    buckets = {}
+    for card in cards:
+        key = (card['color'], card['range'])
+        buckets[key] = buckets.get(key, 0) + 1
+    return [f'{col} {rng} {n}' for (col, rng), n in sorted(buckets.items())
+            if n % parts]
+
+
 def load_set(set_name):
     cfg = SETS[set_name]
+
+    # A split set has no files of its own — it is a share of another set.
+    if 'split' in cfg:
+        parent, parts, index = cfg['split']
+        return split_evenly(load_set(parent), parts, index)
+
     is_items = cfg.get('type') == 'items'
     parser = parse_items if is_items else parse_cards
 
@@ -514,11 +560,24 @@ def card_to_html(card):
     # slightly smaller wordy card than a truncated one.
     weight = sum(len(str(card.get(k, ''))) for k in
                  ('attack', 'special_rule', 'effect', 'defense_effect', 'range', 'flavor'))
-    density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
+    # Thresholds measured, not guessed. Every card in the pool was rendered at
+    # full size and asked for its own scrollHeight against the 84mm card: 199
+    # of 200 fit, and the only one that did not was FOLLOW-UP at 412
+    # characters, over by 16px. CONSUME fits at 359. The old 195/285 pair was
+    # inherited from Georgia at 9.5pt and was shrinking 32 cards to solve one.
+    density = ' denser' if weight > 460 else (' dense' if weight > 360 else '')
 
+    stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',
+             'COLORLESS': 'colorless'}[color]
+    # 15pt italic fits about 14 characters on one line at 60mm; past that the
+    # title steps down rather than wrapping into the rules block.
+    chars = len(card['name'])
+    name_fit = ' longer' if chars > 18 else (' long' if chars > 14 else '')
     return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
+  <div class="stock" style="background-image:url('assets/grain-{stock}.png')"></div>
+  <div class="inset" style="border-color:{hex_color}55"></div>
   <div class="card-top">
-    <div class="card-name">{h(card["name"])}</div>
+    <div class="card-name{name_fit}">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
   </div>
   <div class="card-sub" style="color:{hex_color}">{h(stat_label)}</div>
@@ -579,9 +638,29 @@ def generate_html(all_cards, title):
   margin: 10mm;
 }}
 
+@font-face {{ font-family: 'CardName';  src: url('assets/fonts/cormorant-garamond-italic.ttf') format('truetype'); font-style: italic; }}
+@font-face {{ font-family: 'CardCaps';  src: url('assets/fonts/cormorant-sc.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardBody';  src: url('assets/fonts/eb-garamond.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardQuote'; src: url('assets/fonts/im-fell-english-italic.ttf') format('truetype'); font-style: italic; }}
+
 body {{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'CardBody', Georgia, "Times New Roman", serif;
   background: #bbb;
+}}
+
+/* Card stock: paper grain and colour wash in one image, drawn once per
+   card, never repeated. A CSS gradient or a repeating background becomes a
+   PDF tiling pattern, and viewers draw a hairline at every pattern cell —
+   the faint grid that appeared across the first styled sheet. See
+   make-grain.py. */
+.stock {{
+  position: absolute; inset: 0; pointer-events: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}}
+.inset {{
+  position: absolute; inset: 1.6mm; pointer-events: none;
+  border: .5px solid;
 }}
 
 .page {{
@@ -611,9 +690,10 @@ body {{
 }}
 
 .card {{
+  position: relative;
   width: 60mm;
   height: 84mm;
-  border: 1.5px solid;
+  border: 1.2px solid;
   border-radius: 7px;
   padding: 2.5mm 3mm 2mm;
   display: flex;
@@ -622,6 +702,7 @@ body {{
 }}
 
 .card-top {{
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -629,36 +710,41 @@ body {{
 }}
 
 .card-name {{
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 1.12;
+  font-family: 'CardName', Georgia, serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.02;
   flex: 1;
-  letter-spacing: 0.01em;
 }}
 
 .dot {{
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 5px;
-  margin-top: 2px;
+  margin-left: 6px;
+  margin-top: 1px;
+  /* a pale rim so it reads as pigment set into the stock rather than a
+     sticker on top of it, the way the sheet's corner discs do */
+  box-shadow: 0 0 0 1.2px #F3EEDF;
 }}
 
 .card-sub {{
+  position: relative;
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7.5pt;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 3px;
-  font-style: italic;
 }}
 
 .divider {{
+  position: relative;
   height: 1px;
   margin-bottom: 3px;
 }}
 
 .tbl {{
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
@@ -672,10 +758,9 @@ body {{
 }}
 
 .tbl .lbl {{
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #555;
   white-space: nowrap;
   padding-right: 4px;
@@ -685,16 +770,24 @@ body {{
 
 .card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
 .card.dense .flavor {{ font-size: 8pt; }}
-.card.dense .card-name {{ font-size: 11pt; }}
 
 .card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
 .card.denser .flavor {{ font-size: 7pt; }}
-.card.denser .card-name {{ font-size: 10pt; }}
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
 
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long {{ font-size: 12.5pt; }}
+.card-name.longer {{ font-size: 10.5pt; }}
+
 .flavor {{
+  position: relative;
+  font-family: 'CardQuote', Georgia, serif;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 8.8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -739,4 +832,20 @@ if __name__ == '__main__':
     last = len(all_cards) % CARDS_PER_PAGE or CARDS_PER_PAGE
     if last < CARDS_PER_PAGE:
         print(f'  (last page has {last})')
+
+    # For a share of another set, say what the share actually came out as.
+    # The whole point of a split is the balance, so print it every time
+    # rather than trusting the comment in the SETS table to stay true.
+    if 'split' in cfg:
+        parent, parts, _ = cfg['split']
+        by_color = collections.Counter(c['color'] for c in all_cards)
+        by_range = collections.Counter(c['range'] for c in all_cards)
+        fmt = lambda t: '  '.join(f'{k} {v}' for k, v in sorted(t.items()))
+        print(f'  colour: {fmt(by_color)}')
+        print(f'  range:  {fmt(by_range)}')
+        residue = split_residue(load_set(parent), parts)
+        if residue:
+            print(f'  ! uneven — {parts} does not divide: {", ".join(residue)}')
+            print(f'    the shares differ by one card in each; '
+                  f'see the SETS note on the 12/6/3 ratio')
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')

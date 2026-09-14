@@ -11,9 +11,29 @@
   margin: 10mm;
 }
 
+@font-face { font-family: 'CardName';  src: url('assets/fonts/cormorant-garamond-italic.ttf') format('truetype'); font-style: italic; }
+@font-face { font-family: 'CardCaps';  src: url('assets/fonts/cormorant-sc.ttf') format('truetype'); }
+@font-face { font-family: 'CardBody';  src: url('assets/fonts/eb-garamond.ttf') format('truetype'); }
+@font-face { font-family: 'CardQuote'; src: url('assets/fonts/im-fell-english-italic.ttf') format('truetype'); font-style: italic; }
+
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'CardBody', Georgia, "Times New Roman", serif;
   background: #bbb;
+}
+
+/* Card stock: paper grain and colour wash in one image, drawn once per
+   card, never repeated. A CSS gradient or a repeating background becomes a
+   PDF tiling pattern, and viewers draw a hairline at every pattern cell —
+   the faint grid that appeared across the first styled sheet. See
+   make-grain.py. */
+.stock {
+  position: absolute; inset: 0; pointer-events: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inset {
+  position: absolute; inset: 1.6mm; pointer-events: none;
+  border: .5px solid;
 }
 
 .page {
@@ -43,9 +63,10 @@ body {
 }
 
 .card {
+  position: relative;
   width: 60mm;
   height: 84mm;
-  border: 1.5px solid;
+  border: 1.2px solid;
   border-radius: 7px;
   padding: 2.5mm 3mm 2mm;
   display: flex;
@@ -54,6 +75,7 @@ body {
 }
 
 .card-top {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -61,36 +83,41 @@ body {
 }
 
 .card-name {
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 1.12;
+  font-family: 'CardName', Georgia, serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.02;
   flex: 1;
-  letter-spacing: 0.01em;
 }
 
 .dot {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 5px;
-  margin-top: 2px;
+  margin-left: 6px;
+  margin-top: 1px;
+  /* a pale rim so it reads as pigment set into the stock rather than a
+     sticker on top of it, the way the sheet's corner discs do */
+  box-shadow: 0 0 0 1.2px #F3EEDF;
 }
 
 .card-sub {
+  position: relative;
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7.5pt;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 3px;
-  font-style: italic;
 }
 
 .divider {
+  position: relative;
   height: 1px;
   margin-bottom: 3px;
 }
 
 .tbl {
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
@@ -104,10 +131,9 @@ body {
 }
 
 .tbl .lbl {
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #555;
   white-space: nowrap;
   padding-right: 4px;
@@ -117,16 +143,24 @@ body {
 
 .card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
 .card.dense .flavor { font-size: 8pt; }
-.card.dense .card-name { font-size: 11pt; }
 
 .card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
 .card.denser .flavor { font-size: 7pt; }
-.card.denser .card-name { font-size: 10pt; }
 .card.denser .tbl .lbl { font-size: 6pt; }
 
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long { font-size: 12.5pt; }
+.card-name.longer { font-size: 10.5pt; }
+
 .flavor {
+  position: relative;
+  font-family: 'CardQuote', Georgia, serif;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 8.8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -144,6 +178,8 @@ body {
 <body>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PINCH</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -154,8 +190,10 @@ body {
   <div class="flavor">&#8220;It doesn&#x27;t need to be fast. You&#x27;re not going anywhere it can&#x27;t follow.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
-    <div class="card-name">SIDELONG SCUTTLE</div>
+    <div class="card-name long">SIDELONG SCUTTLE</div>
     <div class="dot" style="background:#2C5F9E"></div>
   </div>
   <div class="card-sub" style="color:#2C5F9E">Mind</div>
@@ -164,6 +202,8 @@ body {
   <div class="flavor">&#8220;It feels you coming through the sand before it sees you.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">CARRION PULL</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -174,6 +214,8 @@ body {
   <div class="flavor">&#8220;Everything on this beach gets dragged back to the water eventually.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">HULLGUARD</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -184,6 +226,8 @@ body {
   <div class="flavor">&#8220;What you&#x27;re hitting isn&#x27;t the shell. It&#x27;s the ship.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PATIENT WAIT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -194,6 +238,8 @@ body {
   <div class="flavor">&#8220;It has been on this beach longer than anything else still breathing. It can wait for one more turn.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">DRAG UNDER</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -204,6 +250,8 @@ body {
   <div class="flavor">&#8220;Everything it&#x27;s ever kept came from something that stopped struggling too soon.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">IDLE TO ENGAGE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -213,7 +261,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>If you shifted your own initiative later on your last turn, deal +4 damage and apply Staggered.</td></tr><tr><td class="lbl">Defense</td><td>Gain Thorns 4.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;It was never resting. It was deciding.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">EVEN CHURN</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -224,6 +274,8 @@ body {
   <div class="flavor">&#8220;Three engines, one tempo. Nothing else out here keeps time.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">LOW GREY HAZE</div>
     <div class="dot" style="background:#2A7A3E"></div>

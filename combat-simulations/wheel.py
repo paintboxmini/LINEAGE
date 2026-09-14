@@ -13,6 +13,11 @@ see test_wheel.py, which runs them as assertions.
 Sign convention (`rules/card-glossary.md`, Initiative Shift X): a positive
 shift moves counterclockwise, toward the marker, and makes its target act
 sooner. A negative shift moves clockwise and makes it act later.
+
+Onto the marker's slot is not across it. A positive shift that lands exactly
+on slot 0 simply lands there — no chip, no bonus turn. Only a shift with
+further to travel than the distance to the marker has actually crossed, and
+that is the one that earns an immediate extra turn.
 """
 
 SKIP = 'skip'
@@ -64,13 +69,6 @@ class Wheel:
         """
         n = len(self.slots)
 
-        # "With exactly 3 combatants on the wheel, reduce X's magnitude by 1
-        # (toward zero) before applying the shift."
-        if n == 3 and amount:
-            amount = amount - 1 if amount > 0 else amount + 1
-            if amount == 0:
-                return f'{token} — shift reduced to 0 (3 on the wheel)'
-
         if amount == 0:
             return f'{token} — no shift'
 
@@ -85,11 +83,11 @@ class Wheel:
 
         if amount > 0:
             raw = s - amount
-            if raw <= 0:
-                # Lands on the marker's own slot, or past it: there is no
-                # slot before "now", so the target takes an immediate extra
-                # turn instead, and whoever it displaced off the marker's
-                # slot is skipped in compensation.
+            if raw < 0:
+                # Further to travel than the distance to the marker, so the
+                # token has actually crossed it. There is no slot past "now",
+                # so it takes an immediate extra turn instead, and whoever it
+                # displaced off the marker's slot is skipped in compensation.
                 displaced = self.slots[0]
                 self._move(s, 0, clockwise=False)
                 self.chips[token] = BONUS
@@ -98,6 +96,10 @@ class Wheel:
                     self.chips[displaced] = SKIP
                     note = f'; {displaced} skipped in compensation'
                 return f'{token} +{amount} → bonus turn{note}'
+            # raw == 0 lands exactly on the marker's slot. Onto is not across:
+            # it just lands, no chip. Sooner and later are measured against
+            # when the token's own turn would have arrived, and a token that
+            # already acted this lap is where a token that already acted sits.
             self._move(s, raw, clockwise=False)
             return f'{token} +{amount} → slot {raw}'
 

@@ -11,9 +11,29 @@
   margin: 10mm;
 }
 
+@font-face { font-family: 'CardName';  src: url('assets/fonts/cormorant-garamond-italic.ttf') format('truetype'); font-style: italic; }
+@font-face { font-family: 'CardCaps';  src: url('assets/fonts/cormorant-sc.ttf') format('truetype'); }
+@font-face { font-family: 'CardBody';  src: url('assets/fonts/eb-garamond.ttf') format('truetype'); }
+@font-face { font-family: 'CardQuote'; src: url('assets/fonts/im-fell-english-italic.ttf') format('truetype'); font-style: italic; }
+
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'CardBody', Georgia, "Times New Roman", serif;
   background: #bbb;
+}
+
+/* Card stock: paper grain and colour wash in one image, drawn once per
+   card, never repeated. A CSS gradient or a repeating background becomes a
+   PDF tiling pattern, and viewers draw a hairline at every pattern cell —
+   the faint grid that appeared across the first styled sheet. See
+   make-grain.py. */
+.stock {
+  position: absolute; inset: 0; pointer-events: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inset {
+  position: absolute; inset: 1.6mm; pointer-events: none;
+  border: .5px solid;
 }
 
 .page {
@@ -43,9 +63,10 @@ body {
 }
 
 .card {
+  position: relative;
   width: 60mm;
   height: 84mm;
-  border: 1.5px solid;
+  border: 1.2px solid;
   border-radius: 7px;
   padding: 2.5mm 3mm 2mm;
   display: flex;
@@ -54,6 +75,7 @@ body {
 }
 
 .card-top {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -61,36 +83,41 @@ body {
 }
 
 .card-name {
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 1.12;
+  font-family: 'CardName', Georgia, serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.02;
   flex: 1;
-  letter-spacing: 0.01em;
 }
 
 .dot {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 5px;
-  margin-top: 2px;
+  margin-left: 6px;
+  margin-top: 1px;
+  /* a pale rim so it reads as pigment set into the stock rather than a
+     sticker on top of it, the way the sheet's corner discs do */
+  box-shadow: 0 0 0 1.2px #F3EEDF;
 }
 
 .card-sub {
+  position: relative;
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7.5pt;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 3px;
-  font-style: italic;
 }
 
 .divider {
+  position: relative;
   height: 1px;
   margin-bottom: 3px;
 }
 
 .tbl {
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
@@ -104,10 +131,9 @@ body {
 }
 
 .tbl .lbl {
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #555;
   white-space: nowrap;
   padding-right: 4px;
@@ -117,16 +143,24 @@ body {
 
 .card.dense .tbl td { font-size: 8.2pt; line-height: 1.22; }
 .card.dense .flavor { font-size: 8pt; }
-.card.dense .card-name { font-size: 11pt; }
 
 .card.denser .tbl td { font-size: 7pt; line-height: 1.18; }
 .card.denser .flavor { font-size: 7pt; }
-.card.denser .card-name { font-size: 10pt; }
 .card.denser .tbl .lbl { font-size: 6pt; }
 
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long { font-size: 12.5pt; }
+.card-name.longer { font-size: 10.5pt; }
+
 .flavor {
+  position: relative;
+  font-family: 'CardQuote', Georgia, serif;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 8.8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -144,6 +178,8 @@ body {
 <body>
 <div class="page">
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">INTERRUPT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -154,6 +190,8 @@ body {
   <div class="flavor">&#8220;The best move happens before theirs.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CALCULATE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -164,6 +202,8 @@ body {
   <div class="flavor">&#8220;The battlefield bends to those who see its patterns.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">STUDY</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -174,6 +214,8 @@ body {
   <div class="flavor">&#8220;Small observations build great understanding.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">DISTRACT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -184,6 +226,8 @@ body {
   <div class="flavor">&#8220;Attention divided is power diminished.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">FOCUS</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -194,6 +238,8 @@ body {
   <div class="flavor">&#8220;Clarity rewards the prepared mind.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">TURN</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -204,6 +250,8 @@ body {
   <div class="flavor">&#8220;It has to land somewhere. Somewhere is negotiable.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">BLANK</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -213,7 +261,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Defender discards 1 card at random</td></tr><tr><td class="lbl">Defense</td><td>Attacker discards 1 card at random</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Mid-thought, the thought is not there.&#8221;</div>
 </div>
-<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">TRACE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -224,6 +274,8 @@ body {
   <div class="flavor">&#8220;People repeat themselves. Someone should be writing it down.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">DEFLECT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -236,6 +288,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">ANTICIPATE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -246,6 +300,8 @@ body {
   <div class="flavor">&#8220;The prepared mind turns surprise into advantage.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CHAIN</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -255,7 +311,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Attack deals half damage (rounded up) to an additional enemy</td></tr><tr><td class="lbl">Defense</td><td>Enemy must target you again on their next turn if possible</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;It does not stop at the first one. That is the whole idea.&#8221;</div>
 </div>
-<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">FRACTURE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -266,6 +324,8 @@ body {
   <div class="flavor">&#8220;Cracks reveal hidden structure.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">ALIGN</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -276,6 +336,8 @@ body {
   <div class="flavor">&#8220;Clarity sharpens in alignment.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">UNDERSTANDING</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -285,7 +347,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d8. Discard a card; if you do, +1d6.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>Scry 2. If you bottom both, heal 4 HP</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Clarity is not given, it is reconstructed.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PARTITION</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -296,6 +360,8 @@ body {
   <div class="flavor">&#8220;True boundaries are drawn in thought before they&#x27;re drawn in blood.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">UNNAME</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -306,6 +372,8 @@ body {
   <div class="flavor">&#8220;What cannot be spoken cannot hold its shape.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">REALIGNMENT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -315,7 +383,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>You may change positions.</td></tr><tr><td class="lbl">Defense</td><td>All allies gain Quick</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Reality rearranges for those who see its hidden geometry.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">AXIOM</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -327,7 +397,9 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">FORGET</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -338,6 +410,8 @@ body {
   <div class="flavor">&#8220;Some knowledge is too dangerous to remember.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PARADOX</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -347,7 +421,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Special</td><td>On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.</td></tr><tr><td class="lbl">Effect</td><td>Lifesteal</td></tr><tr><td class="lbl">Defense</td><td>Gain Ward</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Reality hesitates.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CLIMB</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -358,6 +434,8 @@ body {
   <div class="flavor">&#8220;The higher you rise, the farther you see.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">SIDESTEP</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -368,6 +446,8 @@ body {
   <div class="flavor">&#8220;You struck the possibility, not the outcome.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">ERODE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -378,6 +458,8 @@ body {
   <div class="flavor">&#8220;Not a blow. A season.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">TAINT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -388,6 +470,8 @@ body {
   <div class="flavor">&#8220;Some damage is architecture.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PROFILE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -398,6 +482,8 @@ body {
   <div class="flavor">&#8220;He already knew what you&#x27;d reach for.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">SLIPSTREAM</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -408,6 +494,8 @@ body {
   <div class="flavor">&#8220;Stay close. The gap they leave behind is yours to fill.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">STILL POINT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -420,6 +508,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">REBUTTAL</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -429,7 +519,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Special</td><td>If you would lose this exchange, it is a tie instead.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>None.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Every argument has an opening. You just have to still be standing when it appears.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PUNISH</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -440,6 +532,8 @@ body {
   <div class="flavor">&#8220;You never see the second hit coming. You&#x27;re still reacting to the first.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CALL</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -449,7 +543,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Special</td><td>Wins ties. If the attacker&#x27;s and defender&#x27;s cards both carry this Special Rule, they cancel — it stays a tie.</td></tr><tr><td class="lbl">Effect</td><td>None.</td></tr><tr><td class="lbl">Defense</td><td>None.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Where others hesitate, the answer was already written.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">UNMAKE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -460,6 +556,8 @@ body {
   <div class="flavor">&#8220;Everything they built stops mattering at once.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">LAST RESORT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -470,6 +568,8 @@ body {
   <div class="flavor">&#8220;When there&#x27;s nothing left to protect, nothing gets through.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">FORESEE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -480,6 +580,8 @@ body {
   <div class="flavor">&#8220;You already knew where the blow would land.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">MARKED</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -490,6 +592,8 @@ body {
   <div class="flavor">&#8220;Once you&#x27;ve seen the pattern, you can&#x27;t unsee it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">RETORT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -500,6 +604,8 @@ body {
   <div class="flavor">&#8220;Every insult carries its own answer.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">VEIL</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -512,6 +618,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PINNED</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -522,6 +630,8 @@ body {
   <div class="flavor">&#8220;Whatever you were about to do, do it from there.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">ENFEEBLE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -532,6 +642,8 @@ body {
   <div class="flavor">&#8220;Nothing is taken. Something is simply less than it was.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CALLED SHOT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -542,6 +654,8 @@ body {
   <div class="flavor">&#8220;Not the body. The eye. The hand. The joint.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">DECODE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -552,6 +666,8 @@ body {
   <div class="flavor">&#8220;Every system tells you its next move. Most people are not systems. You are.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">REDIRECT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -562,6 +678,8 @@ body {
   <div class="flavor">&#8220;It was always going to land. The only open question was where.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">UNRAVEL</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -571,7 +689,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d6</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Vulnerable and Blind.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Vulnerable.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Pull the one thread that was holding the rest.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">CORNER</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -582,6 +702,8 @@ body {
   <div class="flavor">&#8220;Now it is only the two of us, and only this much room.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">PROBE</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -592,6 +714,8 @@ body {
   <div class="flavor">&#8220;A small question, asked early.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">DISSECT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -604,6 +728,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">INVERT</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -613,7 +739,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>The defender&#x27;s Defense Effect does not trigger this exchange.</td></tr><tr><td class="lbl">Defense</td><td>The attacker&#x27;s Effect does not trigger this exchange.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;They had a plan for this. They no longer have a plan for this.&#8221;</div>
 </div>
-<div class="card denser" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">DRAIN</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -623,7 +751,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mind + d4</td></tr><tr><td class="lbl">Effect</td><td>Steal one Positive Status Effect of your choice that the defender currently has — it&#x27;s removed from them, not just copied.</td></tr><tr><td class="lbl">Defense</td><td>Steal one Positive Status Effect of your choice that the attacker currently has — it&#x27;s removed from them, not just copied.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;What&#x27;s yours was never really yours.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F4FA;border-color:#2C5F9E99">
+<div class="card" style="background:#F0F4FA;border-color:#2C5F9E99">
+  <div class="stock" style="background-image:url('assets/grain-blue.png')"></div>
+  <div class="inset" style="border-color:#2C5F9E55"></div>
   <div class="card-top">
     <div class="card-name">WAITING GAME</div>
     <div class="dot" style="background:#2C5F9E"></div>
@@ -634,6 +764,8 @@ body {
   <div class="flavor">&#8220;Why build what&#x27;s already standing right there?&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">STRIKE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -644,6 +776,8 @@ body {
   <div class="flavor">&#8220;No trick. No angle. The shortest line between you and them.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">CHARGE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -654,6 +788,8 @@ body {
   <div class="flavor">&#8220;Momentum carries those brave enough to commit.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">ENDURE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -664,6 +800,8 @@ body {
   <div class="flavor">&#8220;What doesn&#x27;t kill you has to try harder next time.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">GUARD</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -674,6 +812,8 @@ body {
   <div class="flavor">&#8220;Stand between the storm and what you protect.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PUSH</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -684,6 +824,8 @@ body {
   <div class="flavor">&#8220;Sometimes the best strike creates space.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BRACE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -696,6 +838,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SECOND WIND</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -706,6 +850,8 @@ body {
   <div class="flavor">&#8220;You were done a moment ago. Your body disagrees.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PULL</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -716,6 +862,8 @@ body {
   <div class="flavor">&#8220;The cliff always pulls things closer.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">WEATHERED</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -726,6 +874,8 @@ body {
   <div class="flavor">&#8220;What doesn&#x27;t break you, builds you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">DART</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -736,6 +886,8 @@ body {
   <div class="flavor">&#8220;Be elsewhere. Be elsewhere before they finish the sentence.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BLEED</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -746,6 +898,8 @@ body {
   <div class="flavor">&#8220;Open it. Stand close. Let it come back to you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">GAMBLER&#x27;S RUIN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -756,8 +910,10 @@ body {
   <div class="flavor">&#8220;Chaos does not promise victory. Only spectacle.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">SPARK OF VIOLENCE</div>
+    <div class="card-name long">SPARK OF VIOLENCE</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -766,6 +922,8 @@ body {
   <div class="flavor">&#8220;Every blaze begins with a decision.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">REPAY</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -776,6 +934,8 @@ body {
   <div class="flavor">&#8220;You will get all of it. I am only choosing when.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">REPEL</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -788,6 +948,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BLOOD TITHE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -798,6 +960,8 @@ body {
   <div class="flavor">&#8220;Life flows from vessel to vessel, obeying ancient laws.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">ABANDON</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -808,6 +972,8 @@ body {
   <div class="flavor">&#8220;Guard is a thing you can put down. So put it down.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">STAND</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -818,6 +984,8 @@ body {
   <div class="flavor">&#8220;Whoever moves first was never actually even with you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BURN BRIGHT</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -828,6 +996,8 @@ body {
   <div class="flavor">&#8220;Some flames consume themselves to burn hotter.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SLIP THE BLADE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -838,6 +1008,8 @@ body {
   <div class="flavor">&#8220;If I live through it, I&#x27;m closer.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BREAK</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -848,6 +1020,8 @@ body {
   <div class="flavor">&#8220;Every defense has a seam.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">TRAMPLE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -858,6 +1032,8 @@ body {
   <div class="flavor">&#8220;Force does not stop where it lands.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PAIN IS FUEL</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -868,6 +1044,8 @@ body {
   <div class="flavor">&#8220;Hit me. I dare you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">DIG IN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -879,9 +1057,11 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">GROUNDING STANCE</div>
+    <div class="card-name long">GROUNDING STANCE</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -890,6 +1070,8 @@ body {
   <div class="flavor">&#8220;Stand where you choose. Let the world move instead.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SUNDER</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -899,9 +1081,11 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Target loses 1 Mind this combat.</td></tr><tr><td class="lbl">Defense</td><td>Target loses 1 Mind this combat.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Thought breaks under enough weight.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">PRESS THE WOUND</div>
+    <div class="card-name long">PRESS THE WOUND</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -909,7 +1093,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>The defender announces how many status cards they have in hand and discard pile. Deal +2 damage for each.</td></tr><tr><td class="lbl">Defense</td><td>Heal 2 HP for each status card in your hand and discard pile. Then destroy them.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;They have been carrying it this whole time. Ask them to carry it faster.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">REND</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -919,9 +1105,11 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>If this attack deals damage, add 1 Wound to the bottom of defender&#x27;s deck.</td></tr><tr><td class="lbl">Defense</td><td>Next attack against you adds 1 Wound to the bottom of your deck instead of dealing damage.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;The cut that keeps opening.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
-    <div class="card-name">STARING CONTEST</div>
+    <div class="card-name long">STARING CONTEST</div>
     <div class="dot" style="background:#9E2C2C"></div>
   </div>
   <div class="card-sub" style="color:#9E2C2C">Body</div>
@@ -930,6 +1118,8 @@ body {
   <div class="flavor">&#8220;Move first and you&#x27;ve already lost.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">DEAD HEAT</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -940,6 +1130,8 @@ body {
   <div class="flavor">&#8220;A tie should feel safe. It never is.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">RETALIATE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -950,6 +1142,8 @@ body {
   <div class="flavor">&#8220;Pain is just momentum, redirected.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">STAUNCH</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -960,6 +1154,8 @@ body {
   <div class="flavor">&#8220;Not now. Later, we&#x27;ll deal with later.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">OVERCOMMIT</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -972,6 +1168,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">OVERDRIVE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -982,6 +1180,8 @@ body {
   <div class="flavor">&#8220;Everything, all at once, and the bill comes due.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">CERTAIN STRIKE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -991,7 +1191,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>This attack cannot be Evaded, Resisted, or affected by Blind.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Some things you don&#x27;t have to aim.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">RHYTHM BREAK</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1002,6 +1204,8 @@ body {
   <div class="flavor">&#8220;Moving is a decision. So is being wrong about it.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">IRON GRIP</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1011,7 +1215,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d8</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Rooted.</td></tr><tr><td class="lbl">Defense</td><td>Anchored — heal 2 at the start of each of your turns.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Stillness, enforced.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PLANT</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1022,6 +1228,8 @@ body {
   <div class="flavor">&#8220;Feet first. Everything else follows from feet.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">CLOSE IN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1032,6 +1240,8 @@ body {
   <div class="flavor">&#8220;Distance was the only thing protecting them.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">GORE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1041,7 +1251,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d4</td></tr><tr><td class="lbl">Effect</td><td>If target is Frontline, deal +d6 additional damage.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Rooted.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;It does not aim. It arrives.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">TABLE STAKES</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1051,7 +1263,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Body + d6</td></tr><tr><td class="lbl">Effect</td><td>Discard 1 random card from your hand. If it was Red, deal 4 unpreventable damage. If it was Blue, target gains Staggered. If it was Green, heal yourself and all allies 3 HP.</td></tr><tr><td class="lbl">Defense</td><td>Gain Resist.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;Everyone puts something in before they see the cards.&#8221;</div>
 </div>
-<div class="card dense" style="background:#FAF0F0;border-color:#9E2C2C99">
+<div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">DOUBLE DOWN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1064,6 +1278,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">OPEN GUARD</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1074,6 +1290,8 @@ body {
   <div class="flavor">&#8220;Every stance has a seam.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">UNBROKEN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1084,6 +1302,8 @@ body {
   <div class="flavor">&#8220;Still standing counts for everything.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">ATTRITION</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1094,6 +1314,8 @@ body {
   <div class="flavor">&#8220;Wear them down. That&#x27;s the whole plan.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">RATTLE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1104,6 +1326,8 @@ body {
   <div class="flavor">&#8220;The second hit is always harder to see coming.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">FOOTWORK</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1114,6 +1338,8 @@ body {
   <div class="flavor">&#8220;Move first. Think later.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">BLINDSIDE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1124,6 +1350,8 @@ body {
   <div class="flavor">&#8220;They never see the one that matters.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">GRAPPLE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1134,6 +1362,8 @@ body {
   <div class="flavor">&#8220;Once you have them, you both stay.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">OFF BALANCE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1144,6 +1374,8 @@ body {
   <div class="flavor">&#8220;The shield is also a weapon.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SHARPEN</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1156,6 +1388,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">CLEAVE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1166,6 +1400,8 @@ body {
   <div class="flavor">&#8220;One swing. It was never aimed at one of you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">MAUL</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1176,6 +1412,8 @@ body {
   <div class="flavor">&#8220;Harder than last time. Harder again after.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SKEWER</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1186,6 +1424,8 @@ body {
   <div class="flavor">&#8220;What comes out of you goes into me. That is the arrangement.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">SHOULDER</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1196,6 +1436,8 @@ body {
   <div class="flavor">&#8220;You are going somewhere. I am coming too.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">EXPEND</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1206,6 +1448,8 @@ body {
   <div class="flavor">&#8220;Spend it. There is no later worth saving for.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">ANCHOR</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1216,6 +1460,8 @@ body {
   <div class="flavor">&#8220;Set your weight. Let it break on you.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">HAMMER</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1226,6 +1472,8 @@ body {
   <div class="flavor">&#8220;Thrown, it is still a hammer.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">WARSONG</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1236,6 +1484,8 @@ body {
   <div class="flavor">&#8220;One voice finds its mark. The rest answer in kind.&#8221;</div>
 </div>
 <div class="card" style="background:#FAF0F0;border-color:#9E2C2C99">
+  <div class="stock" style="background-image:url('assets/grain-red.png')"></div>
+  <div class="inset" style="border-color:#9E2C2C55"></div>
   <div class="card-top">
     <div class="card-name">PROVOKE</div>
     <div class="dot" style="background:#9E2C2C"></div>
@@ -1248,6 +1498,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">MIRROR STEP</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1258,6 +1510,8 @@ body {
   <div class="flavor">&#8220;Change the field, change the fight.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SUPPORT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1268,6 +1522,8 @@ body {
   <div class="flavor">&#8220;Strength flows to those who share it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">ADAPT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1278,6 +1534,8 @@ body {
   <div class="flavor">&#8220;Wise water takes the shape of its container.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">FLOW</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1287,7 +1545,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>You may change position. Gain Evade.</td></tr><tr><td class="lbl">Defense</td><td>You may change position. Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Water finds its way without forcing.&#8221;</div>
 </div>
-<div class="card denser" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">STEAL</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1298,6 +1558,8 @@ body {
   <div class="flavor">&#8220;You won&#x27;t miss it. That&#x27;s the point.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">RESONATE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1308,6 +1570,8 @@ body {
   <div class="flavor">&#8220;Harmony multiplies strength.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">ATTUNE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1318,6 +1582,8 @@ body {
   <div class="flavor">&#8220;Give up the card. Keep what it taught you.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">PATIENCE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1328,6 +1594,8 @@ body {
   <div class="flavor">&#8220;The Edge reveals itself to those who wait.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">WITNESS</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1340,6 +1608,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">HASTEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1350,6 +1620,8 @@ body {
   <div class="flavor">&#8220;Sooner. All of you. Now.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">DELAY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1359,7 +1631,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d8</td></tr><tr><td class="lbl">Effect</td><td>Apply Initiative Shift -2 to defender</td></tr><tr><td class="lbl">Defense</td><td>Apply Initiative Shift -2 to attacker</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;Patience places the final stone.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">WAIT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1370,6 +1644,8 @@ body {
   <div class="flavor">&#8220;The beat after theirs is the one that lands.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">COMMUNION</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1380,6 +1656,8 @@ body {
   <div class="flavor">&#8220;Shared vision illuminates the path forward.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">TOPPLE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1390,6 +1668,8 @@ body {
   <div class="flavor">&#8220;Nothing about them was wrong except the ground.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">TWIN STRIKE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1400,6 +1680,8 @@ body {
   <div class="flavor">&#8220;The river splits but remembers it is one water.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">RENEWAL</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1410,6 +1692,8 @@ body {
   <div class="flavor">&#8220;At the edge of becoming, all possibilities whisper their names.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">RELEASE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1420,6 +1704,8 @@ body {
   <div class="flavor">&#8220;Open your hand. Everything you were holding was holding you.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SHADE AWAY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1432,6 +1718,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SHARED BURDEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1442,6 +1730,8 @@ body {
   <div class="flavor">&#8220;What I cannot bear alone, we endure together.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">BIND</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1452,6 +1742,8 @@ body {
   <div class="flavor">&#8220;Not all chains are visible.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">ROOTED OATH</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1461,7 +1753,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Anchored — Target ally gains Deadly.</td></tr><tr><td class="lbl">Defense</td><td>Anchored — Target ally gains Resist.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;What I refuse to abandon, strengthens us all.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">UNBURDEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1472,6 +1766,8 @@ body {
   <div class="flavor">&#8220;I&#x27;ll carry what you can&#x27;t. They&#x27;ll carry what I give them.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">MOCKERY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1482,6 +1778,8 @@ body {
   <div class="flavor">&#8220;You say the one thing they cannot ignore.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">WITHER</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1492,6 +1790,8 @@ body {
   <div class="flavor">&#8220;The river doesn&#x27;t fight the stone. It just outlasts it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">FIELD MEDICINE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1502,6 +1802,8 @@ body {
   <div class="flavor">&#8220;Not healed. Held together.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">DISORIENT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1511,7 +1813,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d4</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Blind.</td></tr><tr><td class="lbl">Defense</td><td>Attacker gains Blind.</td></tr><tr><td class="lbl">Range</td><td>Ranged</td></tr></table>
   <div class="flavor">&#8220;You came in loud. You&#x27;ll leave in the dark.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">UNIFY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1523,7 +1827,9 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card denser" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">CONSUME</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1533,7 +1839,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Soul + d6</td></tr><tr><td class="lbl">Effect</td><td>Lifesteal — heal yourself for the full damage dealt. You may permanently destroy one card from your own hand to give the defender Weak and Blind.</td></tr><tr><td class="lbl">Defense</td><td>Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may permanently destroy one card from your own hand to give the attacker Weak and Blind.</td></tr><tr><td class="lbl">Range</td><td>Melee</td></tr></table>
   <div class="flavor">&#8220;Nothing is wasted. Not even you.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F0F7F2;border-color:#2A7A3E99">
+<div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SEED</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1544,6 +1852,8 @@ body {
   <div class="flavor">&#8220;Given time, and nowhere else to be.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">HEAVE AND HAUL</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1554,8 +1864,10 @@ body {
   <div class="flavor">&#8220;They don&#x27;t dominate the space. They know it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
-    <div class="card-name">PATIENCE OF STONE</div>
+    <div class="card-name long">PATIENCE OF STONE</div>
     <div class="dot" style="background:#2A7A3E"></div>
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
@@ -1564,6 +1876,8 @@ body {
   <div class="flavor">&#8220;It is not waiting for anything. Waiting is only what it looks like.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">PRIORITY</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1574,8 +1888,10 @@ body {
   <div class="flavor">&#8220;Everything else can wait. This cannot.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
-    <div class="card-name">LEVEL THE FIELD</div>
+    <div class="card-name long">LEVEL THE FIELD</div>
     <div class="dot" style="background:#2A7A3E"></div>
   </div>
   <div class="card-sub" style="color:#2A7A3E">Soul</div>
@@ -1584,6 +1900,8 @@ body {
   <div class="flavor">&#8220;Nobody gets to keep their edge.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SMOKESCREEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1594,6 +1912,8 @@ body {
   <div class="flavor">&#8220;Visibility is a luxury.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">ABIDE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1604,6 +1924,8 @@ body {
   <div class="flavor">&#8220;The current breaks around what does not move.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">OPENING</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1616,6 +1938,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">UNTOUCHED</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1626,6 +1950,8 @@ body {
   <div class="flavor">&#8220;You cannot strike what was never fully here.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">INSTINCT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1636,6 +1962,8 @@ body {
   <div class="flavor">&#8220;The body knows before the mind agrees.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">BRAMBLE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1646,6 +1974,8 @@ body {
   <div class="flavor">&#8220;Everything that reaches through leaves some of itself.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">BRISTLE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1656,6 +1986,8 @@ body {
   <div class="flavor">&#8220;Touch carefully. It touches back.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">QUICKEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1666,6 +1998,8 @@ body {
   <div class="flavor">&#8220;Sooner is its own kind of strength.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">INTIMIDATE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1676,6 +2010,8 @@ body {
   <div class="flavor">&#8220;They already believe they have lost.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">AID</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1686,6 +2022,8 @@ body {
   <div class="flavor">&#8220;I make the opening. You take it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">MEND</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1696,6 +2034,8 @@ body {
   <div class="flavor">&#8220;Close enough to see the wound is close enough to close it.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">BOLSTER</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1708,6 +2048,8 @@ body {
 </div>
 <div class="page">
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">AWAKEN</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1718,6 +2060,8 @@ body {
   <div class="flavor">&#8220;You were already moving. You just hadn&#x27;t noticed.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">HEALING SONG</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1728,6 +2072,8 @@ body {
   <div class="flavor">&#8220;Wind through the fractures. The cliff remembers.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">GUIDE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1738,6 +2084,8 @@ body {
   <div class="flavor">&#8220;Left. Now. Don&#x27;t ask.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">HARMONIZE</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1748,6 +2096,8 @@ body {
   <div class="flavor">&#8220;Nobody called it. Everyone moved.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">CHANNEL</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1758,6 +2108,8 @@ body {
   <div class="flavor">&#8220;It runs through you. What it becomes is your decision.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">STIR</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1768,6 +2120,8 @@ body {
   <div class="flavor">&#8220;Wake up. It has already started.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">SHELTER</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1778,6 +2132,8 @@ body {
   <div class="flavor">&#8220;Stand behind the word. It will hold.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">ENTREAT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1788,6 +2144,8 @@ body {
   <div class="flavor">&#8220;Ask. It costs you the asking and nothing else.&#8221;</div>
 </div>
 <div class="card" style="background:#F0F7F2;border-color:#2A7A3E99">
+  <div class="stock" style="background-image:url('assets/grain-green.png')"></div>
+  <div class="inset" style="border-color:#2A7A3E55"></div>
   <div class="card-top">
     <div class="card-name">CONFRONT</div>
     <div class="dot" style="background:#2A7A3E"></div>
@@ -1799,7 +2157,9 @@ body {
 </div>
 </div>
 <div class="page">
-<div class="card dense" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card" style="background:#F2F2F2;border-color:#5A5A5A99">
+  <div class="stock" style="background-image:url('assets/grain-colorless.png')"></div>
+  <div class="inset" style="border-color:#5A5A5A55"></div>
   <div class="card-top">
     <div class="card-name">AFTERIMAGE</div>
     <div class="dot" style="background:#5A5A5A"></div>
@@ -1809,7 +2169,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Mirrors the color and stat of whoever acted immediately before you + d6. If no one has acted yet, this stays genuinely colorless (no default) — just the flat d6, no stat bonus.</td></tr><tr><td class="lbl">Effect</td><td>Defender gains Blind.</td></tr><tr><td class="lbl">Defense</td><td>Gain Evade.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;You swung at where I was. I was never only there.&#8221;</div>
 </div>
-<div class="card denser" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card dense" style="background:#F2F2F2;border-color:#5A5A5A99">
+  <div class="stock" style="background-image:url('assets/grain-colorless.png')"></div>
+  <div class="inset" style="border-color:#5A5A5A55"></div>
   <div class="card-top">
     <div class="card-name">FOLLOW-UP</div>
     <div class="dot" style="background:#5A5A5A"></div>
@@ -1819,7 +2181,9 @@ body {
   <table class="tbl"><tr><td class="lbl">Attack</td><td>Before RPS resolution, becomes a full copy of the card on top of the most recently discarded ally&#x27;s discard pile — this card&#x27;s own Attack/Effect/Defense Effect are entirely replaced by the copy. If no ally has discarded yet, this stays genuinely colorless (no default) and deals no damage of its own.</td></tr><tr><td class="lbl">Effect</td><td>Replaced by the copied card&#x27;s Effect.</td></tr><tr><td class="lbl">Defense</td><td>Replaced by the copied card&#x27;s Defense Effect.</td></tr><tr><td class="lbl">Range</td><td>Both</td></tr></table>
   <div class="flavor">&#8220;I only know how to follow.&#8221;</div>
 </div>
-<div class="card dense" style="background:#F2F2F2;border-color:#5A5A5A99">
+<div class="card" style="background:#F2F2F2;border-color:#5A5A5A99">
+  <div class="stock" style="background-image:url('assets/grain-colorless.png')"></div>
+  <div class="inset" style="border-color:#5A5A5A55"></div>
   <div class="card-top">
     <div class="card-name">BECOMING</div>
     <div class="dot" style="background:#5A5A5A"></div>

@@ -47,6 +47,14 @@ Gate fees, per person:
 
 A day pass is trivial, a week is comfortable for a party a couple of sessions into their pacing, and a month still sits well below the cost of actual gear.
 
+## The Outer Ring
+
+The band just inside the wall, before the Marketplace crowd starts. Cheap ground and the cheapest rooms in the city, which is where the people the taxes pushed out of everywhere else ended up (Why the taxes are what they are, below). Nothing here is an attraction. It is where the city keeps the people it has not got a plan for.
+
+**The orphanage** stands in it, on the ground where an earlier one burned, rebuilt by the man who was inside that fire and now cooks for everyone under its roof (`characters/steele.md`). No conditions on entry. He built it out here rather than somewhere respectable because the children with nowhere else to go were already out here.
+
+---
+
 ## The Marketplace
 
 The gate spits you out into noise.
@@ -159,7 +167,7 @@ Multiple temples and shrines stand side by side. Different faiths, no enforced h
 | Temple of Healing | The capital's hospital. See below. |
 | Temple of Dreams | Dream readings, sold as a service. See below — not Lily's trade. |
 | Temple of Justice | A working courtroom. See below. |
-| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full — full role at `characters/vescal.md`. |
+| Temple of Unity | Interfaith cathedral at the district's heart. Rarely full, on purpose — see below. Head priest at `characters/ossian.md`. |
 
 None of these are built on real knowledge of the Seats — they're local religion, human interpretation of whatever's actually true underneath. This doesn't mean a temple's theology is right or wrong about the world — it just means some guesses land closer than others.
 
@@ -194,7 +202,7 @@ None of these are built on real knowledge of the Seats — they're local religio
 
 None of these are secrets, exactly. They're just never explained to anyone who hasn't already paid to learn them.
 
-**Which is why the court sorts by class before it ever sorts by merit.** Commerce still has to pass through it — contracts, debts, the disputes nobody can avoid — but for the kind of grievance that isn't strictly business, common folk mostly don't bother. They already know how it goes, so they sit with it instead: Sun or Moon, meditation over litigation, a conflict worked through internally because working it through the Temple of Justice means losing to whoever can afford to make sure they lose. The privileged and wealthy have no such hesitation. For them the court isn't a last resort, it's a first-choice weapon — the four gaps above aren't loopholes to them, they're tools, and the only real skill required is affording someone who already knows where they are.
+**Which is why the court sorts by class before it ever sorts by merit.** Commerce still has to pass through it — contracts, debts, the disputes nobody can avoid — but for the kind of grievance that isn't strictly business, common folk mostly don't bother. They already know how it goes, so they sit with it instead: Sun or Moon, meditation over litigation, a conflict worked through internally because working it through the Temple of Justice means losing to whoever can afford to make sure they lose. When sitting with it fails and neither side wants a verdict, Unity's scales are the one venue left that costs nothing and decides nothing — voluntary, non-binding, and useless against anybody who simply declines to attend. The privileged and wealthy have no such hesitation. For them the court isn't a last resort, it's a first-choice weapon — the four gaps above aren't loopholes to them, they're tools, and the only real skill required is affording someone who already knows where they are.
 
 **Lady Isabella** is the **Supreme Magistrate** She sits the bench herself, often, and the rumor that she wrote or approved most of the gaps above is heard in the halls often. The Temple isn't corrupt around the edges. It's corrupt at the load-bearing wall, and she is the wall.
 
@@ -203,6 +211,10 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 **Temple of the Rivers** — a low stone hall built around a wide reflective pool, fed by a narrow channel bled off the city's own intake, the water rising and falling on a rhythm. Sailors and fishermen come here before a long haul, not after — the pool doesn't promise safe return, only shows anyone patient enough to sit with it what kind of crossing they're actually in for. The core teaching, repeated at every gathering: the rivers are the blood of Eclipseria, and the city lives because they move. It's the wrong word for what they're actually circling — but the shape lands close enough that the pool still works, the same way every other guess in this district lands somewhere without landing right. What the temple is actually echoing, is Song and Silence — the pulse and the pause, read as sound in Glasslight's cliffs, as one sustained note in Fermata, and here, in the capital, as water going in and going still and going out again. Made of the same breath, whichever shape it's wearing.
 
 **Fenn**, the pool-keeper, believes the water tells the truth to anyone patient enough to actually watch it — not fortune-telling, just attention, the same discipline any sailor already needs to read a current. She lost her brother to the fastest water in the whole system, the reach nearest the capital's own heart, and has never once told a grieving family the pool showed her something it didn't. She's also never once told them it showed nothing. What she actually sees, sitting at that pool at dawn, she keeps for herself — the one silence in a temple built entirely on the idea that everything worth knowing moves.
+
+**Temple of Unity** — the interfaith cathedral at the district's heart, and usually close to empty. That is deliberate. Its head priest, Ossian (`characters/ossian.md`), came out of a war certain that nothing worth doing gets done from indoors, and he sends the priests out: communion held in the street, preaching where the congregation already is rather than where the building is. The scales still sit inside and still wait — he reformed the half that could go out and left the half that cannot, and they are not a busy rung either way. Common folk sit a grievance with privately rather than escalate it, and anyone with money goes straight to the courtroom where a ruling has force. So the building stands quiet from both directions at once: its priests are outdoors, and the one thing that happens indoors is a route most of the city never takes.
+
+**What the scales are not is a court.** Unity holds no jurisdiction, issues no judgment, and enforces nothing. Both parties come voluntarily or nothing happens at all, and either can walk out at any point with no consequence. It is the middle rung of three, and the city uses all of them: a grievance is sat with privately first (Sun or Moon, above), brought to Unity's scales when the parties want it settled but cannot settle it themselves, and taken to the Temple of Justice only when somebody wants a ruling with force behind it. Which is the shape of the problem — the venue that can compel you sorts by class before merit, and the venue that is honest cannot compel anybody. Vescal spent years maintaining the ritual conditions on that middle rung before he stopped believing patience alone was enough (`characters/vescal.md`). The temple is also renowned for its wines, and sells them outside Lady Elara's tax entirely: no license, no token, no cut to the Traders' Hall, done in daylight and never yet formally tested.
 
 **Temple of the Forge** — the working counter, not the shrine. You hear it before you see it: hammers, the low roar of the main hearth, the sharp hiss of quenching metal. Dark, soot-stained stone, iron-bound shutters for the night. No grand idol in the courtyard — a single massive anvil stands under open sky instead, scarred by generations of ceremonial and working strikes. Offerings left on it are small tools, broken blades, a pinch of good ore. Coin left there is politely returned; the Forge does not take money as worship.
 
@@ -213,6 +225,6 @@ None of these are secrets, exactly. They're just never explained to anyone who h
 - **Sister Calda** — armor built for what actually fails in a fight, not for looking good failing. Once worked the city walls under Cedric's people; left the formal ranks, never stopped building gear that keeps people standing. Curt, slow, will not be rushed. Typical stock: Tier 1 armor, occasionally both a flat bonus and a start-of-combat stack if the buyer pays up front and waits. She left because she watched someone die of a strap that failed, not a moment of courage that did, and the report filed it under the second thing anyway. She doesn't argue about it anymore. She just builds the strap right and lets the record be wrong about people she can't help now.
 - **Vesper** — light, precise work: rapiers, balanced sidearms, finesse components. Soft-spoken, treats metal like it has opinions. Keeps a locked cabinet, opened only for people who ask the right questions. Typical stock: Tier 1 finesse weapons, often with a conditional effect. Believes a blade should cost the buyer something to be trusted with, beyond the price — sold one once to someone who asked none of the right questions, and it went exactly as badly as a blade in the wrong hand always does. The locked cabinet isn't caution now. It's an apology that never got to be spoken to the person it was actually owed to.
 
-Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle.
+Harlan holds the temple apart from Lady Elara's commercial apparatus, on principle — a different refusal from the Temple of Unity's, and worth not confusing. The Forge declines coin *as worship* and pays what it owes on what it sells. Unity takes the money and declines the tax.
 
  
