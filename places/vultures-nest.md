@@ -14,7 +14,7 @@ The smell: pitch, citrus peel, river silt, wet wood.
 
 ## The Tideward Compact
 
-The docks are governed by the Tideward Compact — a council of three: Bartho (dockmaster), Jonas (ledger-keeper and Regency informant), and Harlow (pirate faction). Official authority exists, for a price.
+The docks are governed by the Tideward Compact — a council of three: Bartho (dockmaster), Jonas (ledger-keeper and Regency informant), and Harlock (pirate faction). Official authority exists, for a price.
 
 The Compact manages what moves through the Nest. This includes a significant volume of goods that would be illegal almost anywhere else: unsafe magical items, addictive substances, forged papers, stolen cargo, weapons without provenance. The Regency knows. The Regency condones it. The arrangement is simple — anything goes, as long as it moves through the right channels and the council gets its cut.
 
@@ -32,7 +32,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 
-**The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlow thinks the whole thing is other people's problem until it costs him a berth.
+**The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlock thinks the whole thing is other people's problem until it costs him a berth.
 
 **The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth. Everything on that stretch of dock is impounded into a Compact warehouse behind a question nobody can answer yet — other people's cargo, sealed and legitimate, sitting indefinitely because of a boat it was moored near. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
 
@@ -69,7 +69,7 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 She takes the party the whole leg to Briarwatch, tells them about her family at the Roadhouse on the first night out, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
 
-**Harlow** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
+**Harlock** — leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him.
 
 He'll tell you loyalty is a transaction and nothing more, and say it like he's saving you the trouble of finding out the hard way yourself. He was loyal to someone once, for free, before the Nest — the story ends there whenever he tells it, which isn't often. He calls the doctrine clarity. Nobody who's heard where the story actually ends calls it that.
 
@@ -106,7 +106,7 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"Three sailors came back from Eclipseria different. Not sick. Just... different. They don't talk about it."*
 
-*"Harlow's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
+*"Harlock's crew moved something last month that didn't go in the crate register. Nobody asked about it."*
 
 *"The man with the boomstick has been asking about the Moving Crate."*
 
@@ -135,6 +135,30 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 **If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
+
+---
+
+### The Ribs — where the Scarves live
+
+**The town is built on top of itself** (see the opening line of this file), which means there is an older Nest down under the current one: a dock level from two or three rebuilds ago, boxed in when they laid the new deck over it and never filled. Dockhands call the layered structure *the ribs*. The kids took the word and made it an address.
+
+**It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: the ways in are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
+
+**Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
+
+**What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. Nobody takes those down.
+
+**And the unsellable haul**, which is the part that matters for play. Everything pilfered that can't be moved for coin ends up in a crate down there and stays: letters, a child's carving, a locket with somebody's name inside it, a key to a door in another town. **This is where a party's stolen personal effect actually went**, and it is still there weeks later — which is the honest version of the note above about playing a recovered item for texture rather than punishment.
+
+**It is warm and it is dry.** In a river port that is not a small thing; it is most of what the scarf is worth. A kid earning one is being given a floor out of the wet, and a GM who plays the Ribs as squalid has missed what these children built.
+
+**The tide decides the water doors.** On a deep slow tide — the long, low one the whole town watches the banks for (The Tide, above) — the water drops far enough to put the underside of the docks in plain sight, and the Scarves' water-side ways in are briefly *visible to anybody looking*. On a fast tide they are invisible and the water outside them runs hard enough to be a genuine risk to a small body. **Their door is either hidden or safe, never both**, and every kid in the operation can tell you which it is today without looking.
+
+**Who knows.** Bartho knows, and has never done anything about it, which is the most Bartho fact in this file. Marta knows (she does not mention it and there is always more bread than she sold). Salla probably knows and has never had cause to care. Jonas does not know, and would have to write it down if he did, which is exactly why nobody has told him.
+
+**Kino does not sleep there.** He is the only one. He runs it, he feeds it, and at the end of the night he goes somewhere else — which is where the name Kino lives, and Sawyer is the one who comes back in the morning (Key NPCs, Kino / "Sawyer"). *Where he actually goes is not set.*
+
+**How a party gets in.** Bean. He is already written as the one who will say everything he knows immediately, and this is the thing he knows. After that the problem is not finding it, it is fitting — so the ways in are: send someone small, get invited, or negotiate at a gap with a kid on the other side who has no reason to hurry.
 
 ## The Market
 
@@ -231,3 +255,68 @@ One stretch of dock is roped off and idle in a port where nothing is idle. There
 The market begins where the docks end and doesn't announce itself. Unpaved road split into a dozen directions between canvas strung between poles and buildings with real foundations. Half the faces are hooded. Not dramatically. Practically.
 
 The Red Scarves are already in your peripheral vision.
+
+---
+
+## The Opening Scene — the dock, the crash, the count
+
+*Session one. This is the scene that puts the party in the same conversation without anyone deciding to form a party.*
+
+### Why they are standing together
+
+**The sweep did it.** The Compact impounded a whole stretch of berth over the quarantined barge (The Quarantined Barge, above), and everything moored near it went into a warehouse behind a question nobody can answer — other people's cargo, sealed and legitimate, sitting indefinitely. Each of the party is there about their own freight. **Bartho does not hold a queue of petitioners; he deals with a party.** So he is dealing with them, together, as one problem, and none of them chose that.
+
+Kevin's wine shipment is in that warehouse (`campaign/session-1-convergence.md`). Whatever the other two are there about, the shape is the same: your thing is inside, and the man who can release it is explaining why he won't.
+
+### Beat one — Bartho, the barge, the lockdown
+
+Grey beard, hawk's eyes, **never raises his voice.** He explains the hold without apologising for it and without pretending it is fair. The port is shut on that stretch. He will not say the word *cursed*; the dockhands behind him will.
+
+This is the scene's exposition and it should be delivered as a man managing a problem, not briefing adventurers. Everything the party needs to know about the Nest's posture is in how he says no: official authority exists, for a price, and the price is not currently coin.
+
+### Beat two — the Scarves, in the open
+
+**Three kids are working the edge of this conversation while it happens.** They are not hiding. They are offering to carry bags and show the market, the information is genuine, and they are choosing marks in front of the party while the party is busy being told no (The Red Scarves, above).
+
+**Let the table see it and not act on it.** A player who clocks the kids and says something has earned that. A player who doesn't has been robbed fair and square, later, in the market — and the crash in beat three is exactly the four seconds it takes.
+
+### Beat three — Harlock comes in hard
+
+**A ship hits the dock.** Harlock's, coming into a berth on a fast tide with too little water to work in, because the impound has half the frontage roped off. Timber goes. A crane arm swings loose. Nobody dies, and somebody could have.
+
+**The crash is the lockdown's fault, and Harlock's.** Both are true and both men know which half they are each responsible for. The tide was running hard (The Tide, above; `world/geography-overview.md`, River system), the berth was short because of the barge, and he came in anyway rather than stand off and wait like a man with nothing to hide.
+
+*The Scarves did not arrange this. They moved on it inside four seconds, which is a better thing to know about them than a conspiracy would be. A GM who wants the conspiracy version can have it, but it costs the party a truer first impression: these kids are not plotters, they are fast.*
+
+### Beat four — Bartho raises his voice
+
+**And this is the only time the party will ever hear it.**
+
+He is written as a man who never shouts and is listened to anyway, so when he shouts, play the room instead of the volume: every dockhand in earshot stops moving. People who have worked this port for ten years look up because they have not heard that sound before. The party has known Bartho for four minutes and has no idea they are watching something rare — *the dock's reaction is the only thing that tells them.*
+
+Then he stops, and is quiet again, and does the actual damage.
+
+### Beat five — the count
+
+> **"Jonas. Go aboard. Inventory the cargo."**
+
+**This is the worst thing on the dock Bartho could have said,** and everyone except the party understands why instantly.
+
+Jonas keeps the official port record, and the official port record is cross-referenced against Quartermaster Voss's intake at Eclipseria South Gate (Key NPCs). A full count of a pirate's hold, written down by the Regency's own man, is not a fine. It is a permanent fact about Harlock's ship in a ledger he cannot reach.
+
+**Harlock's face is the whole beat.** He has a famous temper and he does not use it — because using it here confirms there is something to find. He agrees. That is the most frightening thing he does in session one.
+
+**And Jonas goes.** Young, nervous, frantically thorough, alone, onto a pirate's ship, because Bartho told him to and Bartho is why the arrangement works.
+
+### What it leaves running
+
+- **A clock.** Jonas counts slowly and carefully. Harlock needs something off that ship before the count reaches it. Somewhere between those two facts is a job, and it is available from either direction — which makes it the party's first real choice rather than their first errand.
+- **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
+- **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
+- **They have been marked.** The kids have them.
+
+### Where it goes next
+
+**The market, the tavern, or both**, in whichever order the party picks — the Scarves take their gold in the market (The Red Scarves), and the Keel is where Salla calls a letter across the room and Aege collects it (The Listing Keel, The Letter). If the Scarves got them in the afternoon, Aege buys dinner that evening, and the day closes on somebody being decent to them for no stated reason.
+
+*That is the intended shape of session one: told no by authority, robbed by children, fed by a stranger.*

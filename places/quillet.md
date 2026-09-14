@@ -114,7 +114,7 @@ Quillet's people know this and do not make a thing of it. Ask directly and you'l
 - The keeper. Unwritten — name, age, temperament, and whether they were the one who ran out of page or inherited the consequence.
 - The collecting officer who signed the last entry. He is named in the Ledger. He may still be alive and he may not know what his signature is doing in a book in a long house.
 - Whether any other village has done this, or whether Quillet is the only one — and whether the Regency's silence is confidence or embarrassment.
-- What the Compact thinks it has. A village entirely dependent on one market is leverage, and Harlow at minimum will have noticed.
+- What the Compact thinks it has. A village entirely dependent on one market is leverage, and Harlock at minimum will have noticed.
 
 ---
 

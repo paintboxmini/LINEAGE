@@ -132,6 +132,8 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`).
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
+
+**The Nest opening now has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
 - **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. Who the living descendant is, what they're doing among continentals, and whether the technique can explain the spread are all open.
 
 ---
