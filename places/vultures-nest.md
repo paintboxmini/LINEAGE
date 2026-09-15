@@ -56,9 +56,13 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 - Old foundations surface
 - Glyphs carved into stone reappear
 
+**The lights get there first.** Spooklights sit on those sites before the water drops far enough to show anybody what they are sitting on (`bestiary/spooklight.md`), which is why salvagers watch the banks on a deepening slow tide and why the Nest loses a couple of people a year to it. Every bargeman knows the rule — *runs, and it's nothing; waits, and it's money; comes, and it's your own fault* — and the rule is accurate and has never once been the thing that killed anybody.
+
+**What kills them is on the same bank.** A light marks ground the river has been depositing things on for years. So does a **Foulhaul** family (`bestiary/foulhaul.md`). The town's explanation is that the lights take people. The town is wrong in the ordinary way towns are wrong.
+
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. He also never once mistakes a false lantern for a signal lantern, on water where that mistake sinks boats (`bestiary/spooklight.md`), and has never been asked how. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
 
 ## Key NPCs
 
