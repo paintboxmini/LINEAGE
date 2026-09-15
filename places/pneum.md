@@ -26,6 +26,34 @@ The diseases must be visible. This is not negotiable in their theology.
 
 ---
 
+## What Is Actually Happening — GM, Not Player-Facing
+
+**They are ordinary diseases. All of them. Every time.**
+
+Nothing on Pneum has ever been touched by the Unheld. These are communicable illnesses, collected and passed hand to hand on purpose by people who believe they are performing a sacrament, and they work exactly the way illnesses work: they spread, they worsen, they scar, and they kill. **The congregation is not wrong that something real is happening to their bodies. They are wrong about one mechanism, and it is the only mechanism their entire practice rests on.**
+
+**The Unheld changes what a thing is; it does not damage what a thing is** (`world/the-unheld.md`). A body that has been in the grey water comes back different — reversed handedness, wrong scars, memories belonging to nobody, and further in, animal eyes and claws and stone-like skin (`characters/kaine.md`, The Final Current). None of that is illness. Disease is damage, and damage is not the register the Unheld works in. It has never made anyone sick, anywhere.
+
+### Why they can be wrong, and stay wrong
+
+**First: they left.** Most of the Promise never leaves Glasslight Reach — the faith is built around one cliff and one rite performed at it (`factions-and-races/people-of-promise.md`). Pneum is the congregation that went inland, and it is the only one. They moved away from the single place their doctrine could be checked against the thing it describes, and across generations it drifted.
+
+**Second, and this is the load-bearing one: they visit the Unheld constantly and have never once been in it.** Their ritual barges run the rivers all the way down to the grey water and back — but the rite performed there is the Promise's own, the releasing of the dead into the water (`factions-and-races/people-of-promise.md`, Practice). Nobody goes under. Nobody is meant to. **They have stood beside the answer their whole lives and their own liturgy is what keeps them out of it.**
+
+**Third: the Unheld cannot be carried and does not travel upstream.** This is the single most widely known fact in Eclipseria (`world/the-unheld.md`), and it means every outsider who hears Pneum's doctrine knows immediately that it cannot be true where they live. Nobody tells them, because nobody visits, and the few who do are there to be shown a trophy case and are busy leaving.
+
+### Tone — how to play this without making them fools
+
+**They are not stupid. They are unfalsifiable by distance**, which is a different and much more human failure, and one that every person at the table has committed about something.
+
+**They are also right about nearly everything else.** Everything does return to the Unheld. Held reality is temporary. The Promise itself is sound doctrine, shared with a large and respectable faith on the cliff. Pneum went wrong on exactly one inference, generations back, and built a beautiful communal life on top of it.
+
+**Play the warmth straight.** The GM knows they are killing each other. They do not. A congregation proudly displaying a dying child as their most blessed member should be played as proud and loving, because that is what they are, and the horror is entirely the player's to feel.
+
+**Never have an NPC explain the error inside the village.** They cannot hear it and the scene it produces is a lecture. The party works it out, or they don't.
+
+---
+
 ## Corvel — The Vulture's Nest Thread
 
 What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
@@ -36,7 +64,9 @@ The barge is the thread that leads the party to Pneum. **The adventure at the fa
 
 **And it leads them there under a misunderstanding, on purpose.** The Nest calls the people on that barge *cursed*, because that is the only word a port has for a body gone wrong for no reason anyone can name. Anyone hunting an actual curse will follow that word straight here and find people who chose it, are proud of it, and will explain warmly why he has it backwards (`campaign/session-1-convergence.md`, Pneum first, and the barge is why).
 
-**Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation better travelled than most traders. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of the river and are never questioned about it.
+**Worth remembering when they arrive:** these barges run the rivers all the way to the grey water and back, which makes this congregation unusually familiar with *one corridor* of the web — not well-travelled the way a trader is, who sees many places, but deeply and repeatedly acquainted with the same long stretch of river and everyone working it. Nobody at the Nest asks them anything, because they don't trade. They see a great deal of that water and are never questioned about it.
+
+*The rest of the Promise does not travel at all (`factions-and-races/people-of-promise.md`, Where They Actually Are). Pneum is the only congregation on a boat, and the Cartographers' Guild are the ones who actually go places — the two get conflated constantly because their people overlap at Glasslight, and they are not the same.*
 
 **The return leg is the interesting half.** A barge cannot be sailed upriver — it is oars or a pullway, and nothing else (`world/geography-overview.md`, How a boat actually moves). So the whole run back from the coast is either the congregation rowing themselves home or the congregation hiring hauling teams the length of the web, and either way these are the people on the river that bank crews and pullway villages see most often and think about least. *Which of the two they do is not set, and it says something different about them each way — a faith that rows itself home is not the same faith as one that pays.*
 

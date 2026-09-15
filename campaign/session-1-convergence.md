@@ -46,7 +46,9 @@ The opening job and Pat's opening lead are the same object. Corvel's held vessel
 
 Pat hears that word in the first hour, in the first place he looks, and it is exactly the word he crossed the world for. He follows it. Anyone would.
 
-**What he finds at Pneum is that they chose it.** Deliberate infection is communion there; disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count — the body is the trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
+**What he finds at Pneum is that they chose it.** Deliberate infection is communion there — *they* say disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count, the body as trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
+
+**They are also wrong, and this matters for Pat specifically.** The Unheld has never made anyone ill — it changes what a body is, it does not damage one (`world/the-unheld.md`). Every disease on that island is an ordinary disease. So the lesson Pat takes from Pneum is not only *cursed is what people say about anything they can't explain* — it is the harder version: **a community can be completely sincere, internally consistent, and simply mistaken about the cause of the thing happening to their own bodies.** He is hunting the cause of something that happened to *his* people generations ago, on the strength of a vision. Pneum is what that looks like from the outside.
 
 **Three things that does, all of them worth more than a real lead would have been:**
 

@@ -8,7 +8,7 @@
 
 Nobody is lying. Nobody is a villain. Every person in this adventure is doing the reasonable thing from where they are standing, and the sum of all that reasonableness is a boat full of people nobody will feed.
 
-The horror, so far as there is any, is administrative.
+**And the quarantine is right**, which the party will not work out for a while and the Compact never will. The horror is not that a port is frightened of the unfamiliar. It is that the frightened port is correct, the loving congregation is lethal, and the only way to get the party's own property back is to end the containment.
 
 ---
 
@@ -56,24 +56,17 @@ Held, not mistreated. He will talk to anyone who comes, at length, warmly, and h
 
 ## What Nobody Knows
 
-*This is the spine I would run, and it is a proposal rather than canon — the adventure works without it as a pure negotiation, just smaller. Everything below is severable.*
+**Every disease on that barge is an ordinary disease, and the Unheld has never had anything to do with any of it** (`places/pneum.md`, What Is Actually Happening; `world/the-unheld.md`). They are communicable illnesses, collected and passed hand to hand on purpose, by people performing what they sincerely believe is a sacrament. They spread, they worsen, and they kill, exactly the way illnesses do.
 
-**One of the people on that barge is genuinely sick.**
+**So the quarantine is correct.** Bartho is not being superstitious and the dock is not merely frightened of what it doesn't understand. There is a real outbreak on that boat and the Compact has it contained, for reasons it has entirely wrong. **The party is being asked to help free a vessel that genuinely should not be freed** — and that is the adventure, rather than a prejudice for them to see through.
 
-Not collected. Not chosen. Something they picked up on the river like anyone else picks something up, and it is killing them, and **nobody aboard can tell the difference** — because the congregation's entire diagnostic framework is *rarity is prestige and symptoms are witness*. A body producing new and dramatic signs is a body doing well. The sicker this person gets, the more admired they are.
+**Nobody aboard can tell that anyone is dying.** Not through stupidity — through a framework. The doctrine is *rarity is prestige and symptoms are witness*, so a body producing new and dramatic signs is a body doing well. **The sicker a person gets, the more admired they are.** There is no word in their practice for *this one is different*, because under the theology none of them are.
 
-**Name:** **Sabel**, the youngest aboard. *Rename freely.*
+**The one who is furthest along** — the youngest aboard, the one the others will proudly introduce as the most blessed person on the barge — is the one who is frightened, in a community where being frightened of it is the single thing that cannot be admitted out loud. **Name: Sabel.** *Rename freely; a GM can also let the party pick whichever of the crew the table talked to most.*
 
-**What this does to the adventure:**
+**How the party notices.** Nothing arcane and no roll required. The congregation will do it for them: they will point Sabel out. Everything after that comes from a party willing to talk to a person alone and treat them as a patient rather than as a category.
 
-- **It gives the Compact a real reason to be right for the wrong reasons.** They were wrong about why the barge is dangerous. They were not wrong that something aboard it is.
-- **It makes the clock real and invisible.** Nothing on the dock is getting worse. One person on the boat is, and only a party that actually goes aboard and looks at people as patients rather than as a category will notice.
-- **It refuses to let anyone be right.** The port's fear is bigoted and correct. The faith is sincere and is killing a child by mistaking a fever for a blessing. The party is the only group present with no theory to protect.
-- **It is the honest cost of the theology** rather than a punishment of it. These people are warm, communal and completely sincere (`places/pneum.md`, Tone). The flaw is not cruelty. It is that a framework which reads all illness as communion has no word for *this one is different*, and so cannot see it.
-
-**How the party can notice.** Nothing arcane. Sabel is the one whose symptoms the others are proud of and who is not proud of them. The congregation will happily point them out as the most blessed person aboard. A party that talks to Sabel alone gets somebody frightened who has not got the vocabulary to say so, in a community where being frightened of it is the one thing that cannot be admitted.
-
----
+**Which cuts the party's dilemma open.** Freeing the barge is what gets their freight back. Freeing the barge sends a working outbreak upriver to an island of people who will receive it as good news.
 
 ## Pressure — The Dock Decides To Help
 
@@ -95,7 +88,7 @@ A quarantine that goes on long enough stops being a Compact matter and becomes a
 
 Each of these closes the job. They are not equally good and the party should not be told which is which.
 
-**The clean one — give Jonas a category.** Learn what it actually is, name Pneum, and let it into a ledger the Regency reads. The berth opens the same afternoon and the party's freight comes out. **Cost:** the Regency now has the address of an island of people who display disease on purpose, and the party handed it over. Nothing bad happens immediately. That is the point.
+**The clean one — give Jonas a category.** Learn what it actually is, name Pneum, and let it into a ledger the Regency reads. The berth opens the same afternoon and the party's freight comes out. **Cost:** the Regency now has the address of an island with a real and deliberate outbreak on it, and the party handed it over. It is also, plainly, the correct public-health answer, and the party will not be able to tell those two things apart. Nothing bad happens immediately. That is the point.
 
 **The quiet one — Bartho's answer.** The barge leaves under escort, at night, upriver, with somebody credible vouching that it is going home and not stopping. **Cost:** nothing is recorded, so nothing is learned, and if Sabel is aboard and untreated the party will not find out how that ended for a long time — or ever.
 
@@ -103,7 +96,9 @@ Each of these closes the job. They are not equally good and the party should not
 
 **Someone burns it.** Either the mob succeeds or a party member decides they are right. This resolves the Compact's problem completely and permanently and is the only ending nobody in the town objects to, which is the most damning thing about it.
 
-**The one that costs them.** Get Sabel off the barge and to actual care, which means admitting to the congregation that one of their number is not in communion but simply ill — a thing they have no framework to hear and will resist warmly, at length, without ever raising their voices. **This is the hardest ending and the only one where somebody lives who otherwise does not.** It also delays everything else, and the party's freight stays in a warehouse the whole time.
+**The one that costs them.** Get Sabel off the barge and to actual care, which means telling a congregation that one of their number is not in communion but simply ill — a thing they have no framework to hear and will resist warmly, at length, without ever raising their voices. **This is the hardest ending and the only one where somebody lives who otherwise does not.** It also delays everything else, and the party's freight stays in a warehouse the whole time.
+
+*Note what it does not do. It saves one person and changes nothing about the practice, the barge, or the island. A party that expects gratitude, or a conversion, or any acknowledgement at all, will not get one.*
 
 ---
 
@@ -119,7 +114,8 @@ Each of these closes the job. They are not equally good and the party should not
 ## Not Yet Set
 
 - **Whether Sabel lives**, and what the congregation does with the fact afterwards — whether it cracks anything in the theology or gets absorbed into it. The second is more likely and more interesting.
-- **What Sabel actually has.** Deliberately unnamed: it should be ordinary, curable, and unremarkable, which is the whole joke.
+- **What Sabel actually has.** Deliberately unnamed, and it should be ordinary, curable and unremarkable — a thing a competent physician in the capital would treat without looking up. That is the whole joke and the whole tragedy.
+- **Whether anything ever corrects Pneum.** Not in this adventure. Nobody in the village can hear it and nobody outside the village visits (`places/pneum.md`, Tone). Whether the campaign ever changes that is a much later question.
 - **Who escorts the barge upriver** in the quiet ending, and whether the Night Ferryman would do it (`places/vultures-nest.md`, Notable Roles).
 - **Whether the dock mob has a face.** A named dockhand the party met earlier makes the fight much worse and much better. Left open so a GM can pick whoever the table actually liked.
 
