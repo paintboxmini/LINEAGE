@@ -27,7 +27,9 @@ A web of interconnected rivers laces the whole continent, pooling into lakes and
 
 The water itself stays ordinary. The coastline is a hard threshold — unheldness does not cross it, not by flowing and not by being carried.
 
-Waterfalls drive the circuit itself — climbing and falling, the push that keeps the whole web moving.
+Waterfalls drive the circuit itself — climbing and falling, the push that keeps the whole web moving. **It is a circuit and not a drainage.** The web does not run downhill to a sea; it goes round, forever, and every drop in it has been past every place on it.
+
+**It touches the Unheld in exactly one place.** A narrow river runs down through the Glasslight cliffs to a quay at the bottom, and there the water turns to threshold. Nothing sails past that point (`places/glasslight-reach.md`). That single meeting is why the Masons, the Cartographers' Guild and the People of Promise are all stacked on the same cliff, and it is the only way anything has ever come the other way (`places/the-coil.md`).
 
 **Fast tide and slow tide.** The river tide is not a rise and fall. The water level barely moves; what changes is **how fast the water is going**. A stretch on **fast tide** runs hard and quick, and a stretch on **slow tide** goes sluggish and heavy. Every sailor on the continent talks in those two words and nobody talks about depth.
 
