@@ -2,7 +2,9 @@
 
 *Pronounced: new'm*
 
-**They are glasskin** (`factions-and-races/races-glasskin.md`), and they have been away from the Reach for centuries. Glasskin speech is chord-built — their own name for themselves cannot be produced by one voice — and Pneum's harmonics have drifted the entire time they have been gone. **What they speak now exists nowhere else and nobody outside the congregation understands a word of it.** It is not a dialect to be worked around. It is a different instrument, and it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).
+**They are glasskin** (`factions-and-races/races-glasskin.md`), and they have been away from the Reach for centuries. **Their harmonics have drifted the entire time**, and what they speak now exists nowhere else and nobody outside the congregation understands a word of it. It is not a dialect to be worked around. It is a different instrument, and it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).
+
+*They speak perfectly well, at length, and constantly. The barrier is that nobody is equipped to hear them — not that they are short of voices.*
 
 A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 

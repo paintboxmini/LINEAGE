@@ -8,6 +8,10 @@
 
 **Their own name is a chord, not a word.** Made of the sound the cliff fractures make when wind passes through them. No single voice can produce it. The truest thing they call themselves is something none of them can say alone, ever — only with each other, which is also the logic of how they speak: gently, rarely interrupting, as though loud certainty could crack something.
 
+**That is one word, not the language.** A glasskin talks the way anybody talks — alone, at length, in whatever tongue they grew up in, and in the common speech if they learned it. **The chord applies to the people-name and to nothing else.** A glasskin alone in a room is not impaired, not half-mute, and not waiting for a second voice to finish their sentences; they simply cannot say that one thing, and will use an outsider's word for themselves instead, usually with visible distaste.
+
+*Worth stating plainly because it is an easy line to over-read: a glasskin player character has no speech restriction of any kind. The chord is a piece of poignancy about identity, not a disability, and running it as one would take a race off the table for no good reason.*
+
 **Where they are.** Concentrated at Glasslight Reach and thin everywhere else. Most of the Cartographers Guild's surveyors are Glasskin, trained first on the Soft Edge (`factions-and-races/the-cartographers-guild.md`, Structure). Most who leave don't stop wanting to come back — losing the town means losing the only other voices that can complete your own name with you, and that pull doesn't fade the way ordinary homesickness does.
 
 **Named:** `characters/mirel.md`, `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.

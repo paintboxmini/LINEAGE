@@ -59,21 +59,23 @@ Their vessel is inside the cordon, with everything aboard it. So are the goods t
 
 **Second, and this is the wall: the party could not talk to them anyway.**
 
-The people of Pneum are **glasskin** (`factions-and-races/races-glasskin.md`), and glasskin speech is not built the way other speech is — their own name for themselves *is a chord, not a word, and no single voice can produce it.* Their language assumes other voices.
+The people of Pneum are **glasskin** (`factions-and-races/races-glasskin.md`) who have been away from the Reach for centuries, in isolation, and **their harmonics have drifted the entire way.** What they speak now is a complete, living, self-sufficient language that exists nowhere else and that nobody outside the congregation has ever heard. Not a dialect anyone can work around. A different instrument.
 
-**Pneum has been away from the Reach for centuries, in isolation, and their harmonics have drifted the entire way.** What they speak now is a complete, living, self-sufficient language that exists nowhere else and that nobody outside the congregation has heard. Not a dialect anyone can work around. A different instrument.
+**They talk constantly.** That is worth playing. They are not sullen, not silent, not refusing — they are a boatload of people having ordinary conversations, asking questions, making jokes, getting exasperated, and none of it lands. **The wall is not their unwillingness. It is that the Nest is deaf to them**, which is a much worse thing to watch and gives the party somebody to fail at rather than somebody to crack.
 
-**And here is the part that should land like a slap when the party works it out:**
+**Third: the one question that cannot be answered by anybody, at all.**
 
-> **Bartho has been holding them separately, to question them one at a time.**
->
-> **A glasskin cannot speak their own language alone.**
+Bartho has been asking each of them the same thing for a week: *what are you, and where did you come from.*
 
-He has, without any idea he was doing it, arranged the exact conditions under which no answer is possible. Every hour he has spent trying to get one has made one less likely. **Put them in a room together and they can talk. Nobody in the Nest has ever had a reason to know that.**
+**The honest answer to the first half is their people's name, and their people's name is a chord that no single voice can produce** — one word, the only one, made of the sound cliff fractures make in wind (`factions-and-races/races-glasskin.md`). A glasskin alone can say almost anything. Not that.
 
-*That is a real solution and the party can find it. It does not end the adventure — it gets the barge crew talking to each other, in a language still nobody present understands — but it is the first thing anyone has done that made the situation better, and Bartho will notice who did it.*
+So the barge crew have been answering him, every day, and the answer has been arriving as one voice attempting a chord: **strange, incomplete, and unmistakably an attempt at something.** Bartho has been writing it down as *won't say.*
 
-**Third: even together, they are not understood.** Glasskin surveyors are common in the Cartographers' Guild (`factions-and-races/the-cartographers-guild.md`) and a Guild ear is the obvious lead — but a Reach-trained glasskin meeting Pneum's harmonics is hearing two hundred years of drift. They will catch the shape of it and not the content. **Partial translation is available. Full translation is not, and should not be.**
+**Putting them in a room together is a real solution and the party can find it.** What they get is not a translation — nobody present will understand a syllable more than they did before. What they get is **a dozen voices producing one word that is obviously, structurally, a name**, and the knowledge that these people have been trying to answer the whole time.
+
+*That does not open the port. It changes who Bartho thinks he is holding, and he will remember who showed him.*
+
+**Fourth: even then, they are not understood.** Glasskin surveyors are common in the Cartographers' Guild (`factions-and-races/the-cartographers-guild.md`) and a Guild ear is the obvious lead — but a Reach-trained glasskin meeting Pneum's drift is hearing two centuries of it. They will catch the shape and not the content. **Partial translation is available. Full translation is not, and should not be.**
 
 ---
 
@@ -168,6 +170,6 @@ These are people who have not been allowed to leave, work or sell for days, over
 
 - `places/vultures-nest.md` — the town, the Compact, the Opening Scene, the barge on the dock
 - `places/pneum.md` — where it came from, what they actually believe, and the Receiver
-- `factions-and-races/races-glasskin.md` — why no single voice can answer a question
+- `factions-and-races/races-glasskin.md` — the drift, and the one word a single voice cannot say
 - `campaign/session-1-convergence.md` — why these people are standing together at all
 - `rules/gm-guide.md` — How many of them, for scaling the mob
