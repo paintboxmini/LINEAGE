@@ -20,6 +20,10 @@ So: nothing is hunted. Nothing is fished. Nothing is farmed for slaughter. And t
 
 **A found meal is sacred**, because it is rare and because nobody was harmed to make it. A deer discovered dead at the treeline is an event. Nobody is casual about it. There is a way it is carried in, and a way it is divided, and everybody knows both.
 
+**And they are extremely good at finding things.** This is the island's real expertise and it should not be underestimated: generations of people whose entire food supply depends on noticing what has fallen, washed up, or stopped. They know which trees drop and when. They know the tidelines and which one takes the morning's wrack. They know where a sick animal goes to lie down, which scavengers get there first and how long they take, and what the wind means for tomorrow's beach.
+
+**A Windfaller walking through a wood is reading it constantly**, and will stop mid-sentence to pick something up that nobody else in the party saw. **They are not helpless foragers scraping by.** They are specialists, working a poor supply expertly, and the difference matters enormously for how they come across.
+
 **And there is one source of already-dead meat on that island that never runs out.**
 
 **They eat their own dead.** All of them, as a matter of course, without exception and without ceremony beyond the ordinary care taken with any found meal. A body that goes into the ground is food that was wasted, and waste is its own kind of harm.
@@ -66,6 +70,36 @@ Not starving. Not sick, not hollow-eyed, not dying — **thin**, uniformly, ever
 
 Said warmly, and meant as nothing at all.
 
+---
+
+## The Keeping
+
+**Every day, for several hours, the entire village sits still.**
+
+They call it **the Keeping**, and the pun is theirs and only lightly intended: a village with no larder does its keeping in the body.
+
+**It is a practice for spending less.** Sitting, breathing slow, heart slow, out of the sun, not talking. It is not prayer — there is nothing being addressed and nothing being asked for. It is not a trance and nobody goes anywhere. **It is simply the most efficient thing a person can do with the middle of a day**, and they have been refining it for as long as they have been eating this way.
+
+**The length is the village's barometer.** In a good stretch it is two hours or so. In a lean one it runs to five, six, most of the daylight. **A visitor who knows how to read it can tell what kind of year Windfall is having without asking a single question**, and nobody on the island thinks of this as information they are giving away.
+
+**A party arriving in the early afternoon lands at an apparently empty village.** Boats on the beach, fires banked, doors open, nobody coming down to meet them — because it is not time yet. They will be greeted warmly the moment it ends, and nobody will think an apology is necessary, because obviously it was the Keeping.
+
+### It has to read as difficult and sustainable at the same time
+
+**This is the whole tonal job of the practice and it is easy to get wrong in both directions.**
+
+**It is hard.** Genuinely, physically hard. Adolescents are bad at it and complain about it, exactly the way adolescents complain about anything they have to do daily. It is worse on a bad day. Sitting still and quiet for five hours is not restful and nobody pretends otherwise.
+
+**And they are good at it, and it works, and it is not killing them.** This is not endurance and it is not martyrdom. It is a **skill** — learned badly in childhood, competent by adulthood, and genuinely extraordinary in the very old, who are the best at it in the village and are respected for that in a completely ordinary way, the way anyone is respected for being good at their work.
+
+**Do not play it as suffering.** No grim faces, no trembling, nobody white-knuckling through it. They are not enduring a hardship — they are doing the hard thing they are best at, every day, and they have been fine for generations.
+
+**The children are allowed to move**, and get a little more than their share besides. Nobody had to decide that. It answers, on its own, the question a party is about to ask about how this place treats its weakest.
+
+**And they will invite the party to join.** Warmly, without expectation, as the ordinary courtesy of including a guest in what everyone is doing. *A party that accepts is agreeing to sit silently for several hours, which is a genuinely difficult ask and a very good scene. They will be bad at it. Nobody will mind or comment.*
+
+---
+
 **If they ask, they are answered.** Immediately, fully, without evasion, and probably while the conversation is still going on around them. There is no reveal to stage and no lie to catch. **Anyone who asks a direct question gets a direct answer**, and the discomfort is entirely on the asking side of the table.
 
 ---
@@ -88,7 +122,11 @@ Said warmly, and meant as nothing at all.
 
 It works. The village eats. Nobody gets ill, nobody is punished, nothing supernatural occurs, and the party has made a room full of people break the only rule they have without ever being asked. **Do not have consequences arrive.** The weight is the party's to carry and arrives entirely on its own.
 
-**But it is much harder to pull off than they think.** The single skill this culture has refined over generations is *telling how a thing died* — every meal for their whole history has depended on that judgement. A wound, a blood pattern, a carcass too fresh and too intact, an animal in condition no scavenged animal is ever in. **They are experts at precisely the thing being hidden from them**, and that is not a gotcha, it is just what these people are good at.
+**But it is much harder to pull off than they think**, for two reasons that compound.
+
+**They can tell how a thing died.** Every meal in their history has depended on that judgement. A wound, a blood pattern, a carcass too fresh and too intact, an animal in condition no scavenged animal is ever in.
+
+**And they know their own island's yield.** They have worked this ground for generations and they know what it gives and roughly when. Meat arriving in a week that should not have produced any is a fact before anyone has looked at the carcass. **The party is trying to fool the two things these people are best at**, and that is not a gotcha, it is just what specialists are.
 
 **If they work it out, they do not shout.** They stop eating, quietly. Someone explains, kindly, what the party has done, and is careful to say that they know it was meant well. Then everybody is very polite for the rest of the evening, and the party is not asked to stay another night.
 
@@ -127,7 +165,8 @@ The instinct — mine included — is to put something under it. A coercion, a f
 - **What race they are.** Deliberately open. Nothing above depends on it.
 - **The island's own name for itself**, and whether *Windfall* is what they call it or what the Nest calls it.
 - **What happens if a guest dies there.** The logic is not ambiguous — a body is a found meal and wasting it would be harm — and a party that works this out before anyone gets hurt is having a much better evening than a party that works it out afterwards. **Telegraph it; never spring it.**
-- **Whether anyone has ever left.** A person raised on this principle, living in a port that kills things for a living, is a character and nobody has written them. *If the party's way in is escorting a Windfaller home, that person has been quietly hungry the entire time they were at the Nest — there is almost nothing in a river port they can eat — and that may be the whole reason they are going back.*
+- **Whether the Keeping can be taught to an outsider**, and what it would be worth — a Skill, a Passive, or nothing but a habit. Deliberately unbuilt. If a player wants it, that is a conversation worth having rather than a rule worth pre-writing.
+- **Whether anyone has ever left.** A person raised on this principle, living in a port that kills things for a living, is a character and nobody has written them. *If the party's way in is escorting a Windfaller home, that person has been quietly hungry the entire time they were at the Nest. Not helpless — they will have been finding things, because that is what they are good at, and a port has fallen fruit and spoiled stock and things the river leaves like anywhere else. Just never enough, and they will have been sitting the Keeping alone somewhere out of the way, for longer than they would at home, every single day. That may be the whole reason they are going back.*
 - **Where exactly the island sits.** Within a day of the Nest; no bearing fixed yet (`world/geography-overview.md`).
 
 ---
