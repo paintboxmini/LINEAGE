@@ -34,11 +34,11 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **And Bartho is still right to have closed the dock**, which is the hard part. He has an unregistered vessel, people visibly wrong in ways no physician here has seen, an owner who will not say where it came from, and **no way on earth to find out.** Containment is what a competent dockmaster does with an unanswerable question, and he is a competent dockmaster who knows exactly what it is costing.
 
-**The lockdown is the whole crisis, and it is on the shore.** Not the berth — the whole stretch of dock. Every crate into a Compact warehouse, and **nobody permitted to leave**: not the crews, not the traders, not the dockhands. Days of it now. The barge is fine. The port is not.
+**The lockdown is the whole crisis, and it is on the shore.** Not the berth — the whole stretch of dock. Every crate into a Compact warehouse, and **nobody permitted to leave**: not the crews, not the traders, not the dockhands. Days of it now. The barge is fine. The port is not, and **it has only been two days** — which is why nothing has broken yet and why everyone can feel that it is about to.
 
 **And it cannot resolve itself, for a reason nobody here could guess.** The barge crew are glasskin from a congregation that has been isolated for centuries, and their harmonics have drifted into a language that exists nowhere else (`quests/the-quarantined-barge.md`). They talk constantly. Nobody in the Nest understands one syllable of it, and the deafness is entirely on this side of the rope.
 
-**Bartho has been asking each of them the same question for a week** — *what are you, where did you come from* — and the true answer to the first half is their people's name, which is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). They have been answering him every day. He has been writing it down as *won't say*.
+**Bartho has been asking each of them the same question since the boat came in** — *what are you, where did you come from* — and the true answer to the first half is their people's name, which is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). They have been answering him every day. He has been writing it down as *won't say*.
 
 **Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 

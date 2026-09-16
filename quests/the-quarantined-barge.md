@@ -29,7 +29,7 @@ The horror is administrative, and the thing that makes it unsolvable is not mali
 **Bartho has shut the whole dock, not the berth.**
 
 - **Every crate on that stretch is in a Compact warehouse.** Other people's cargo, sealed and legitimate, held indefinitely behind a question nobody can answer.
-- **Nobody is permitted to leave.** Not the crews, not the traders, not the dockhands. If you were on that stretch when it closed, you are still on it, and you have been for days.
+- **Nobody is permitted to leave.** Not the crews, not the traders, not the dockhands. If you were on that stretch when it closed, you are still on it — since the morning before last.
 - **The barge crew are in the hold, isolated from each other and from everyone else.**
 
 **He is not wrong to have done it.** An unregistered vessel arrives carrying people visibly wrong in ways nobody in the port has ever seen, and the owner cannot or will not explain where it came from. There is no physician in the Nest who can say what it is. **With no way to find out, containment is what a competent dockmaster does**, and Bartho is a competent dockmaster.
@@ -65,7 +65,7 @@ The people of Pneum are **glasskin** (`factions-and-races/races-glasskin.md`) wh
 
 **Third: the one question that cannot be answered by anybody, at all.**
 
-Bartho has been asking each of them the same thing for a week: *what are you, and where did you come from.*
+Bartho has been asking each of them the same thing since the boat came in: *what are you, and where did you come from.*
 
 **The honest answer to the first half is their people's name, and their people's name is a chord that no single voice can produce** — one word, the only one, made of the sound cliff fractures make in wind (`factions-and-races/races-glasskin.md`). A glasskin alone can say almost anything. Not that.
 
@@ -122,7 +122,7 @@ Either way it is marked, and the island is a morning's crossing northeast (`plac
 
 **A quarantine that goes on long enough stops being a Compact matter and becomes a neighbourhood one.**
 
-These are people who have not been allowed to leave, work or sell for days, over a boat nobody will explain to them, and every one of them can see the cargo they are not permitted to touch. Somebody's cousin coughed. Somebody heard the word *cursed* enough times that it turned into a plan.
+These are people who have not been allowed to leave, work or sell for two days, over a boat nobody will explain to them, and every one of them can see the cargo they are not permitted to touch. Somebody's cousin coughed. Somebody heard the word *cursed* enough times that it turned into a plan.
 
 **They come for the barge with pitch and a lit torch, at night, in a group.**
 
@@ -140,7 +140,7 @@ These are people who have not been allowed to leave, work or sell for days, over
 
 **They bring the answer back from Pneum.** The intended arc. The village is alive, the illnesses are chosen, it did not happen in transit, and none of it travels by anything but blood. Bartho opens the port. **Cost:** he now knows where Pneum is, and so does Jonas's ledger if anyone writes it down.
 
-**They get the crew talking.** Put the glasskin back together and a room that has been silent for a week is suddenly full of a language nobody present understands — and the barge crew, for the first time, can coordinate. What they do with that is up to them and is not necessarily what the party wanted.
+**They get the crew talking.** Put the glasskin back together and a room that has been answering the wrong question for two days is suddenly full of a language nobody present understands — and the barge crew, for the first time, can coordinate. What they do with that is up to them and is not necessarily what the party wanted.
 
 **They make the medical case.** Corvel's answer, carried to Bartho, believed. Hardest to sell and cheapest if it works — and it hinges on a party willing to stake their credibility on a prisoner's word about his own cargo.
 
