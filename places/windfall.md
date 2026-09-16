@@ -54,7 +54,57 @@ This is a decision about *timing*, not about whether — everyone on Windfall is
 
 Not the meal — the village. Everyone here is eating meat. Constantly, at every meal, in a quantity that makes no sense for a small island where nobody hunts and nobody keeps animals, and there is very little of anything else on any plate. A party paying attention will notice that the arithmetic is wrong before anybody says a word to them.
 
+**And they are all thin.**
+
+Not starving. Not sick, not hollow-eyed, not dying — **thin**, uniformly, every one of them, in a way that reads immediately as wrong to anybody from a place with farms. Sharp shoulders, visible ribs on the children, wrists like kindling. They work, they laugh, they carry things, they live a normal span.
+
+**The arithmetic is simply tight.** A village whose meat supply is roughly proportional to its own death rate sits at an equilibrium, and the equilibrium is *enough* and never more than enough. They have been at it for generations. **They have no idea they look strange**, because everybody they have ever seen looks like this.
+
+**It runs the other way, too.** Somebody will notice how well-fed the party is and say so — not as an accusation, just an observation, the way you would remark on someone's height.
+
+> *"You're all so heavy."*
+
+Said warmly, and meant as nothing at all.
+
 **If they ask, they are answered.** Immediately, fully, without evasion, and probably while the conversation is still going on around them. There is no reveal to stage and no lie to catch. **Anyone who asks a direct question gets a direct answer**, and the discomfort is entirely on the asking side of the table.
+
+---
+
+## What the Party Will Want To Do About It
+
+**The thinness is the hook and it is not a problem.** It is the thing that makes a party want to act in a village where nothing is wrong, and every instinct they have runs into the same wall. **None of these is punished. The village never retaliates. The cost is always carried by the party.**
+
+### They offer their own food
+
+**Almost nothing the party is carrying can be accepted.** Salt pork, jerky, dried fish, anything from an animal — those are the products of deaths somebody caused. Bread and meal are milled from grain that was cut. A Nest ration pack is, to Windfall's eyes, a bag of evidence.
+
+**They will refuse it gently and they will not be offended.** They will be *concerned* — for the party. These are guests who are carrying the remains of a great many killings and do not appear to know it, and that is a sad thing to see in someone.
+
+*Fallen fruit the party gathered on the way in is fine, and will be received with real delight. It is worth letting a party find that out, because it is the one gift that lands.*
+
+### They hunt, and don't say where it came from
+
+**The likeliest thing a party actually does**, and the sharpest.
+
+It works. The village eats. Nobody gets ill, nobody is punished, nothing supernatural occurs, and the party has made a room full of people break the only rule they have without ever being asked. **Do not have consequences arrive.** The weight is the party's to carry and arrives entirely on its own.
+
+**But it is much harder to pull off than they think.** The single skill this culture has refined over generations is *telling how a thing died* — every meal for their whole history has depended on that judgement. A wound, a blood pattern, a carcass too fresh and too intact, an animal in condition no scavenged animal is ever in. **They are experts at precisely the thing being hidden from them**, and that is not a gotcha, it is just what these people are good at.
+
+**If they work it out, they do not shout.** They stop eating, quietly. Someone explains, kindly, what the party has done, and is careful to say that they know it was meant well. Then everybody is very polite for the rest of the evening, and the party is not asked to stay another night.
+
+### They argue for change
+
+**This can work, and a few can be persuaded** — the young, the curious, anybody already turning something over privately. Windfall has no orthodoxy police and no scripture to quote at a doubter. Somebody willing to hear an argument will hear it.
+
+**And winning costs the person who was convinced.** The village will not punish them, shun them, or stop loving them. They will simply be **sad** about it, openly and without any edge, forever. A convert now lives in the only place they know among people who quietly grieve the change in them, and eats things nobody else at the table will touch.
+
+*The prize for winning this argument is a person who no longer belongs anywhere. A party that stays long enough to see that is getting the real version.*
+
+### They leave
+
+**In the morning, politely — or that night, without much of an explanation.**
+
+Both are completely available and neither is cowardice. Leaving at night is the honest reaction of people who have been fed kindly by hosts they cannot stop thinking about, and the village will find it confusing and a little hurtful. They offered a bed. Somebody will mention it for years.
 
 ---
 
@@ -77,7 +127,7 @@ The instinct — mine included — is to put something under it. A coercion, a f
 - **What race they are.** Deliberately open. Nothing above depends on it.
 - **The island's own name for itself**, and whether *Windfall* is what they call it or what the Nest calls it.
 - **What happens if a guest dies there.** The logic is not ambiguous — a body is a found meal and wasting it would be harm — and a party that works this out before anyone gets hurt is having a much better evening than a party that works it out afterwards. **Telegraph it; never spring it.**
-- **Whether anyone has ever left.** A person raised on this principle, living in a port that kills things for a living, is a character and nobody has written them.
+- **Whether anyone has ever left.** A person raised on this principle, living in a port that kills things for a living, is a character and nobody has written them. *If the party's way in is escorting a Windfaller home, that person has been quietly hungry the entire time they were at the Nest — there is almost nothing in a river port they can eat — and that may be the whole reason they are going back.*
 - **Where exactly the island sits.** Within a day of the Nest; no bearing fixed yet (`world/geography-overview.md`).
 
 ---
