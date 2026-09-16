@@ -16,6 +16,26 @@ So: nothing is hunted. Nothing is fished. Nothing is farmed for slaughter. And t
 
 ---
 
+## Who They Are
+
+**They are not a race.** Windfall has glasskin in it, and humans, and forest people, and whatever else came ashore over the centuries — **and every single person there is descended from somebody who chose this.** That is the load-bearing fact and it should never be quietly traded away for a tidier answer.
+
+*A people who did this because of their bodies would not be interesting. The party could file them under "that is how those creatures are" and leave untroubled, which is the one reaction this island must not permit. It would also make the whole idea of persuading anyone incoherent — you cannot argue somebody out of a metabolism.*
+
+**The founding is legend, not memory.** It was a long time ago. There are several versions and nobody on the island is invested in which is right, because nobody there thinks of themselves as a convert or the descendant of converts. **They are just from Windfall.** Whoever arrived first and what they were fleeing or looking for is a story told badly at a good meal, and no two tellings agree.
+
+### And they look like each other anyway
+
+**Centuries of the same diet, the same thinness, and thousands of hours each of the Keeping have given them a look that crosses their heritages.**
+
+A Windfall glasskin and a Windfall human resemble one another more than either resembles their own cousins on the mainland. The same spare frame, the same economy in how they move, the same unhurried way of standing. **This is not biology.** It is the visible residue of a shared life, and it is strong enough that **the party can pick a Windfaller out of a crowd at Vulture's Nest on sight, whatever species they happen to be.**
+
+**The part that unsettles people is the stillness.** They do not fidget. At all. A lifetime of sitting shows in every minute they are not sitting, and in a river port — where everybody is always doing three things — a person who is simply, completely still is disconcerting in a way nobody can articulate. It gets read as watchful, or rude, or eerie. It is none of those. It is just what several hours a day for forty years does to somebody.
+
+**And they have no kin who claim them.** A Windfaller's cousins on the mainland are strangers with a familiar face and no idea who they are. There is no homeland to be exiled from and no people elsewhere to fall back on. **Leaving is very hard and coming home is very easy**, which is most of why almost nobody leaves and why the ones who do tend to come back.
+
+---
+
 ## What That Produces
 
 **A found meal is sacred**, because it is rare and because nobody was harmed to make it. A deer discovered dead at the treeline is an event. Nobody is casual about it. There is a way it is carried in, and a way it is divided, and everybody knows both.
@@ -60,7 +80,7 @@ Not the meal — the village. Everyone here is eating meat. Constantly, at every
 
 **And they are all thin.**
 
-Not starving. Not sick, not hollow-eyed, not dying — **thin**, uniformly, every one of them, in a way that reads immediately as wrong to anybody from a place with farms. Sharp shoulders, visible ribs on the children, wrists like kindling. They work, they laugh, they carry things, they live a normal span.
+Not starving. Not sick, not hollow-eyed, not dying — **thin**, uniformly, every one of them, across four or five different heritages, in a way that reads immediately as wrong to anybody from a place with farms. Sharp shoulders, visible ribs on the children, wrists like kindling. They work, they laugh, they carry things, they live a normal span.
 
 **The arithmetic is simply tight.** A village whose meat supply is roughly proportional to its own death rate sits at an equilibrium, and the equilibrium is *enough* and never more than enough. They have been at it for generations. **They have no idea they look strange**, because everybody they have ever seen looks like this.
 
@@ -162,8 +182,9 @@ The instinct — mine included — is to put something under it. A coercion, a f
 
 ## Not Yet Set
 
-- **What race they are.** Deliberately open. Nothing above depends on it.
 - **The island's own name for itself**, and whether *Windfall* is what they call it or what the Nest calls it.
+- **Which heritages are actually represented**, and in what proportion. Mixed is settled; the specific roster is not, and a GM can put whoever the campaign needs on that beach.
+- **The founding story, in any of its versions.** Deliberately unwritten. It should stay a thing people disagree about pleasantly over dinner.
 - **What happens if a guest dies there.** The logic is not ambiguous — a body is a found meal and wasting it would be harm — and a party that works this out before anyone gets hurt is having a much better evening than a party that works it out afterwards. **Telegraph it; never spring it.**
 - **Whether the Keeping can be taught to an outsider**, and what it would be worth — a Skill, a Passive, or nothing but a habit. Deliberately unbuilt. If a player wants it, that is a conversation worth having rather than a rule worth pre-writing.
 - **Whether anyone has ever left.** A person raised on this principle, living in a port that kills things for a living, is a character and nobody has written them. *If the party's way in is escorting a Windfaller home, that person has been quietly hungry the entire time they were at the Nest. Not helpless — they will have been finding things, because that is what they are good at, and a port has fallen fruit and spoiled stock and things the river leaves like anywhere else. Just never enough, and they will have been sitting the Keeping alone somewhere out of the way, for longer than they would at home, every single day. That may be the whole reason they are going back.*
