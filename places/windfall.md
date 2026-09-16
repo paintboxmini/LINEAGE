@@ -195,5 +195,6 @@ The instinct — mine included — is to put something under it. A coercion, a f
 ## Related Documents
 
 - `places/vultures-nest.md` — where the job comes from
-- `places/pneum.md` — the other strange island, and the deliberate contrast
+- `places/pneum.md` — a strange island that is sincere and factually wrong
+- `places/gambol.md` — a strange island whose reasoning is unsound, where Windfall's is not; the three are deliberately different kinds of wrong
 - `world/geography-overview.md` — the river web and the islands on it
