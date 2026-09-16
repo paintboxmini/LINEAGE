@@ -2,6 +2,8 @@
 
 *Pronounced: new'm*
 
+**They are glasskin** (`factions-and-races/races-glasskin.md`), and they have been away from the Reach for centuries. Glasskin speech is chord-built — their own name for themselves cannot be produced by one voice — and Pneum's harmonics have drifted the entire time they have been gone. **What they speak now exists nowhere else and nobody outside the congregation understands a word of it.** It is not a dialect to be worked around. It is a different instrument, and it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).
+
 A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 
 ---
@@ -23,6 +25,16 @@ Diseases are collected. Rarity determines prestige — and prestige is sacred, b
 Symptoms display publicly. The body is the trophy case.
 
 The diseases must be visible. This is not negotiable in their theology.
+
+**And they are cultivated, which is the part outsiders never guess.** This is not a congregation catching whatever the river hands them. It is centuries of patient selective work, and the lineages they keep have been bred hard for three things:
+
+- **Exotic** — a common illness is worthless, because anyone could have got it by accident.
+- **Highly visible** — an invisible communion is not witnessed, and an unwitnessed communion did not happen.
+- **Low mortality** — a disease that kills its host stops being displayed, and a lineage that kills its hosts dies out with them. **The work has been selecting against lethality for two hundred years and it has been extremely effective.**
+
+**They are very good at this.** The result is a body of illnesses that are spectacular to look at and will mostly not kill you, held by people who regard the achievement the way a vintner regards a cellar.
+
+**All of it moves by blood, and only by blood.** Communion is deliberate and it is administered — a cut, a shared instrument, a rite with a specific moment in it. Nobody catches anything here by standing near somebody. The congregation knows this perfectly well. It has never once occurred to them that anyone would assume otherwise.
 
 ---
 
@@ -49,6 +61,8 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 ### Tone — how to play this without making them fools
 
 **They are not stupid. They are unfalsifiable by distance**, which is a different and much more human failure, and one that every person at the table has committed about something.
+
+**And they are competent.** Whatever the theology is wrong about, the practice is real skill — centuries of controlled, deliberate, successful selective breeding, carried out well enough that a congregation covered in horrifying symptoms has a normal life expectancy. Play them as artisans who are proud of their craft, because that is exactly what they are.
 
 **They are also right about nearly everything else.** Everything does return to the Unheld. Held reality is temporary. The Promise itself is sound doctrine, shared with a large and respectable faith on the cliff. Pneum went wrong on exactly one inference, generations back, and built a beautiful communal life on top of it.
 
