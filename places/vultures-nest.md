@@ -56,9 +56,9 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 - Old foundations surface
 - Glyphs carved into stone reappear
 
-**The lights get there first.** Spooklights sit on those sites before the water drops far enough to show anybody what they are sitting on (`bestiary/spooklight.md`), which is why salvagers watch the banks on a deepening slow tide and why the Nest loses a couple of people a year to it. Every bargeman knows the rule — *runs, and it's nothing; waits, and it's money; comes, and it's your own fault* — and the rule is accurate and has never once been the thing that killed anybody.
+**And there are more lights on the water those nights**, which everybody in the Nest has noticed and nobody has ever connected to the rest of this list (`bestiary/spooklight.md`). The town's position on spooklights is a prohibition rather than a theory: **they are trying to lead you off, so you do not answer a light.** That is the whole of the local knowledge. It is wrong about the mechanism, roughly right about the outcome, and consequently impossible to argue anyone out of.
 
-**What kills them is on the same bank.** A light marks ground the river has been depositing things on for years. So does a **Foulhaul** family (`bestiary/foulhaul.md`). The town's explanation is that the lights take people. The town is wrong in the ordinary way towns are wrong.
+**The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
 
 ## Notable Roles
 

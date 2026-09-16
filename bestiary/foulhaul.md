@@ -96,7 +96,7 @@ Rivermen call him **the Grandfather**, which is not affection. It is the ordinar
 ## Where They Are
 
 - **The Pneum funeral corridor** — the long stretch between the lake and the Glasslight quay (`places/glasslight-reach.md`), which is the only water the congregation's barges run. The Grandfather's range.
-- **Around Vulture's Nest**, on the layered banks either side of the port, sharing that ground with the spooklights (`bestiary/spooklight.md`). Neither arranged it: a light marks where the river has been leaving things for years, and that is the same reason a family lives there. **The light draws people onto the bank and nothing set it as bait.** The Nest believes the lights take people, which is wrong, and has not made the belief any less useful as a warning.
+- **Around Vulture's Nest**, on the layered banks either side of the port, sharing that ground with the spooklights (`bestiary/spooklight.md`). Neither arranged it: a light marks where the river has been leaving things for years, and that is the same reason a family lives there. **The light brings people onto the bank and nothing set it as bait** — a low steady light on dark mud reads as somebody in trouble, so the people who die out there went to help. The Nest blames the lights, which is wrong about the mechanism and has kept roughly the right number of people at home anyway.
 - **Anywhere a fast tide puts bodies on a bank on a schedule.** That is most of the web at one time or another, which makes them the default bank creature for travel that stops for the night.
 - **Not on the water.** They do not swim well and have no reason to. A boat that stays off the bank does not meet one.
 

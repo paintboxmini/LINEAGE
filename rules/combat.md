@@ -281,6 +281,16 @@ Some cards produce **Ongoing Effects.** These cards remain face up in front of t
 
 Multiple ongoing effects can be active simultaneously unless a card specifies otherwise.
 
+### Setting one up before the fight
+
+**A character who has time and a reason may set up one Ongoing Effect before initiative is rolled. One, not two.** They play the card, it goes face up in front of them, and the fight starts with it already running.
+
+**What "time and a reason" means** is the ordinary table judgement: they knew something was coming, they were not surprised, and they said so before the GM called for initiative. A party that has smelled a Foulhaul on the wind (`bestiary/foulhaul.md`), watched a light refuse to move, or spent the evening deciding to kick a door has all three. A party walking round a corner into something has none of them.
+
+**The cap is the whole rule.** Preparation should be worth doing and should never turn into a stacking exercise where the fight is decided before anyone rolls. One card, set before initiative, and everything after that is paid for in Actions like normal.
+
+*This also rewards the exploration layer directly: warnings are worth having because a warning is worth exactly one Ongoing Effect.*
+
 ---
 
 ## Simultaneous Effects

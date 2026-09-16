@@ -18,33 +18,45 @@ River crews call them **false lanterns** when they are being practical and spook
 
 ---
 
-## The Folk Rule
+## What the Nest Believes
 
-Every bargeman on the web knows this and will recite it without being asked:
+**The lights are trying to lead you off.** That is the whole of it, that is what everyone will tell you, and there is no second part.
 
-> **"Runs, and it's nothing. Waits, and it's money. Comes, and it's your own fault."**
+They come low over the mud on the wrong side of the channel and they wait to be followed, and people who follow them do not come back, and so **you do not answer a light.** It is a prohibition, not a theory. Nobody has a classification. Nobody has a procedure. Ask three bargemen what a spooklight actually *is* and you get a shrug, a story about somebody's uncle, and an argument.
 
-That is also the encounter table, and it is worth running it exactly as the rule states, because the rule is *correct*.
+**It is also good advice arrived at for entirely the wrong reason**, which is why it has survived.
 
-### Runs — almost always
+**The specific cruelty of them** is that a low steady light on a dark bank does not read as *strange*. It reads as **somebody is down there and something has gone wrong.** A lantern set on mud at two in the morning means a person, and people go. The Nest does not lose salvagers to the lights. It loses decent neighbours who thought they heard somebody working in the dark.
 
-**You approach and it goes out, or slides away, or was never quite where you thought.** This is the overwhelming majority and it should be the overwhelming majority at the table too. No roll, no reveal, no creature. Something about wet air and old glass and the angle of the water, and no one has ever got a straight answer.
+**And at Vulture's Nest the confusion is doubled**, because the port's entire night navigation is reading signal lanterns strung through a maze of rope bridges and crane arms (`places/vultures-nest.md`). A pilot reads the lights to know where the channel is. Some of the lights are not lanterns. Boats have been lost to this and there is no fix, because there is no way to tell from a wheelhouse.
 
-**Run it as weather.** Describe it, let the party decide whether to go and look, and when they look, it is gone. Do that four or five times across a campaign before it ever does anything else, and the sixth one will land like a hammer.
+---
 
-### Waits — the interesting one
+## Rumors
 
-**You approach, and it stays exactly where it was.**
+*Rare, contested, mostly told by people other people do not entirely believe. None of these are common knowledge and none of them should be handed over in one conversation.*
 
-**A light that does not retreat is sitting on something.** It is not wandering, it is *attached* — and what it is attached to is nearly always a piece of quartz that came up the trade web from Glasslight Reach, where the stone keeps the colour of the last light that reached it (`places/glasslight-reach.md`, The Soft Edge). A chip of it in a riverbank is still, quietly, showing you an evening that happened somewhere else years ago.
+- *"My grandfather's brother dug where one of them had been sitting and came up with a box of something. Wouldn't say what. Bought a boat."*
+- *"They don't all run. There's ones that just stay put and let you come, and those are the bad ones."*
+- *"One came at a man. Walked at him, out of the shallows. He's still at the Keel if you want to hear it, and he'll tell it different every time."*
+- *"You see more of them the year the tide runs long and low. Everybody knows that."* — said dismissively, by someone who has not thought about why.
+- *"There's blue ones."* — this is as far as the rumour ever gets.
 
-**So a waiting light marks a place where old things have come to rest**, and the Nest already has a mechanism for putting those on display: on a deep slow tide the water drops and wrecks appear along the banks, old foundations surface, and carved glyphs reappear (`places/vultures-nest.md`, The Tide). **The lights are on those sites before the tide uncovers them.**
+**The last two are the thread**, and nobody at the Nest has put them next to each other in two hundred years.
 
-Which makes a waiting spooklight the closest thing the river has to a treasure map, and river people treat it exactly that way. *Waits, and it's money.*
+---
 
-### Comes — rare, and the file does not fully answer it
+## GM — What Is Actually Going On
 
-**You approach and it approaches back.** Below.
+*None of this is known to anybody in the world. It is here so the GM can run it consistently while the table works it out — and the table working it out is the entire point.*
+
+**Most are nothing.** Wet air, old glass, the angle of the water. No creature, no reveal, no roll. **This should be four or five encounters out of every six.** Describe it, let the party decide whether to go and look, and when they look it is gone. Do that repeatedly across a campaign before it ever does anything else.
+
+**Some are sitting on something, and those are the ones that do not retreat.** The light is attached rather than wandering — nearly always a chip of quartz that came up the trade web from Glasslight Reach, where the stone keeps the colour of the last light that reached it (`places/glasslight-reach.md`, The Soft Edge). A fragment of it in a riverbank is quietly showing an evening that happened somewhere else, years ago.
+
+**Which means waiting lights mark ground the river has been depositing things on for a long time** — and the Nest already has the mechanism that proves it, if anyone ever bothers to look. On a deep slow tide the water drops and wrecks appear along the banks, old foundations surface, and carved glyphs reappear (`places/vultures-nest.md`, The Tide). **The lights are on those sites before the tide uncovers them.**
+
+**Nobody has noticed the correlation.** It is sitting in plain sight in two pieces of common knowledge that nobody has ever set side by side. A party that works it out has found something real, first, and should be allowed to feel that — do not have an NPC get there ahead of them.
 
 ---
 
@@ -52,11 +64,9 @@ Which makes a waiting spooklight the closest thing the river has to a treasure m
 
 **Waiting lights and Foulhauls share ground, and neither of them arranged it** (`bestiary/foulhaul.md`).
 
-A light marks a bank where the river has been putting things for a long time. A Foulhaul family lives on a bank where the river has been putting things for a long time. **They are the same bank, for the same reason, and one of them draws people to it.**
+A light marks a bank where the river has been putting things for a long time. A Foulhaul family lives on a bank where the river has been putting things for a long time. **They are the same bank, for the same reason, and one of them brings people to it.**
 
-So: the light is bait, and nothing set it. A salvager who has followed the folk rule correctly, done nothing wrong, and found real money is standing in the dark on the exact stretch of mud a family of scavengers works — which is why the Nest has a steady supply of people who went out after a waiting light and did not come back, and why the town's explanation for that is *the lights take them.*
-
-**The lights do not take anybody.** The town is wrong in the ordinary way towns are wrong, and being wrong about the mechanism has not made the advice any less deadly.
+So the light is bait and nothing set it — and because the light reads as *somebody needs help*, the people who die on that mud are the ones who went to help. **The town's belief that the lights lead people away is wrong about the mechanism and correct about the outcome**, which is the most dangerous kind of wrong there is: it cannot be disproved by experience and it stops anyone asking a better question.
 
 ---
 
@@ -87,9 +97,10 @@ All core cards. It has no technique — it is a heavy animal that pushes.
 
 ## Running Them
 
-- **Never roll to see what a light is.** Decide, in advance, what tonight's light is, and let the party's own behaviour be the only thing that resolves it.
+- **Never roll to see what a light is.** Decide in advance what tonight's light is, and let the party's own behaviour be the only thing that resolves it.
 - **Keep the ratio brutal.** Four or five nothings for every waiting one. One Glassgut in a campaign, maybe.
-- **Do not let anybody be right too early.** The folk rule is accurate, and a party that learns it and trusts it is behaving correctly and will still walk onto a bank with a Foulhaul family on it. That is not a punishment for trusting the rule. The rule was never about what kills people.
+- **Never let an NPC explain them.** There is no expert, no old salt with the answer, no wise woman who knows. The Nest has a prohibition and a handful of stories that contradict each other, and that is all it has ever had. Anyone who offers a clean explanation is guessing.
+- **The players are the first people to ever look properly.** That is not flattery, it is the situation: the locals have a rule that works well enough to keep most of them alive and no reason to examine it. Let the party be the ones who notice that the lights come out when the tide runs long, and that something is always underneath.
 
 ---
 
