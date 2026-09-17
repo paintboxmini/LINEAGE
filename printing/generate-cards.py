@@ -388,13 +388,22 @@ SETS = {
         #     PARADOX — reverses the RPS outcome, the core resolution.
         # All three are untouched in the pool.
         #
-        # *** THE BLUE BLOCK IS STILL SHORT. *** Ranged is full; two melee
-        # seats are open. When the three came out, Blue's entire melee bench
-        # was TAINT, UNNAME, UNRAVEL and CORNER — three of them gone on this
-        # screen or the content rule, leaving one card for two seats. Four
-        # Blue melee cards were written on 2026-09-17 to fix that (PRESSURE,
-        # FOCUSED STANCE, PARRY, INTERCEPT); which two sit here is open.
-        # Left visibly short rather than filled quietly.
+        # Blue is whole again, 7 of 7, and the 84 is back. When the three
+        # came out, Blue's entire melee bench was TAINT, UNNAME, UNRAVEL and
+        # CORNER — three of them gone on this screen or the content rule,
+        # leaving one card for two seats. Four Blue melee cards were written
+        # on 2026-09-17 to fix that: PRESSURE, FOCUSED STANCE, PARRY and
+        # INTERCEPT. PARRY and FOCUSED STANCE took the seats, because
+        # between them they put Blind and Ward back — both went to zero when
+        # UNRAVEL and PARADOX left. PRESSURE is the better card and stays on
+        # the bench: it fills no gap and its d8 would have pushed Blue level
+        # with Red, which is the exact shape this pass spent a round fixing
+        # in Green. Blue lands at 3.071 instead, under Red's 3.357 and over
+        # Green's 2.929.
+        #   Still at zero across the 21: Lifesteal, Vulnerable, Quick. No
+        #     Blue bench card carries any of the three, so they would need
+        #     another colour or a new card, and none is obviously owed a
+        #     seat.
         #
         # The ranged seat went to RETORT on 2026-09-17, on two counts.
         # Thorns scales by colour rather than by die and range — Green 2,
@@ -428,8 +437,9 @@ SETS = {
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
-            # Blue (5 of 7 — SHORT: ranged is full, still needs 2 melee)
+            # Blue (7) — ranged 4 / melee 2 / both 1
             'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR', 'RETORT',
+            'PARRY', 'FOCUSED STANCE',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
             'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',

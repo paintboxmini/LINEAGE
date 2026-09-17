@@ -24,7 +24,7 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 
 ---
 
-## The roster (82)
+## The roster (84)
 
 `*` marks a card from the expansion; the rest are the Oracle 63.
 
@@ -37,9 +37,9 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 **Both (8).** BLOOD TITHE* · CHARGE · FOOTWORK · GROUNDING STANCE · PROVOKE* · PULL · SECOND WIND · SLIP THE BLADE
 
 
-### Blue — Mind (26)
+### Blue — Mind (28)
 
-**Melee (6).** ANTICIPATE · CLIMB · DEFLECT · DISTRACT · INTERRUPT · REBUTTAL
+**Melee (8).** ANTICIPATE · CLIMB · DEFLECT · DISTRACT · FOCUSED STANCE* · INTERRUPT · PARRY* · REBUTTAL
 
 **Ranged (16).** AXIOM · CALCULATE · CALLED SHOT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PARTITION · PINNED · PROFILE* · RETORT* · STUDY · UNDERSTANDING* · VEIL
 
@@ -83,8 +83,7 @@ Every one of these is a perfectly good card. They belong in creature decks, char
 
 ## Open
 
-- **Blue's expansion block is at 5 of 7 — two melee seats open.** RETORT took the ranged seat on 2026-09-17. The melee pair is the last open question. PARRY and FOCUSED STANCE are the recommendation: between them they refill **Blind** and **Ward**, the two keywords that went to zero when UNRAVEL and PARADOX came out, and two d6s after RETORT's d4 put Blue back on a mean die of exactly 3.214, where it sat before. PRESSURE is the better card by name and the better card in the abstract, but it is a d8 that fills no gap, and seating it puts Blue at 3.36 — level with Red, which is the shape this screen spent a pass correcting in Green.
-- **Three keywords are at zero in the expansion and cannot be filled from Blue.** Lifesteal and Ward left with PARADOX; Vulnerable and Blind left with UNRAVEL. No Blue ranged bench card carries Lifesteal, Vulnerable or Quick at all, so if those matter they have to come from another colour or a new card. FOCUSED STANCE and PARRY recover two of the four.
+- **Lifesteal, Vulnerable and Quick are all at zero in the expansion.** Lifesteal and Ward left with PARADOX, Vulnerable and Blind with UNRAVEL; PARRY and FOCUSED STANCE recovered Blind and Ward, but no Blue bench card carries the other three at all. Filling them means another colour or a new card, and it is not obvious any of the three is owed a seat.
 - **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use.
 
 ---
@@ -94,7 +93,15 @@ Every one of these is a perfectly good card. They belong in creature decks, char
 Neither is a verdict on early play — both are pool problems worth fixing whoever ends up holding the card.
 
 - **PROBE is strictly dominated by PROFILE.** Same colour, same Ranged, identical defence halves. PROFILE has the bigger die (d6 against d4) and the better attack half (Scry 2 against Scry 1). There is no state of the game in which you would rather hold PROBE. This is the shape of the Red/Green BRACE collision (`experimental/archives/cut-cards.md`) without the shared name: two cards, one job, one of them strictly worse.
-- **TURN's defence half may not be resolvable.** It reads `Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.` A defender who wins cleanly takes no damage at all — Attack Resolution is explicit that a defender win means no damage (`rules/combat.md`). So on the only outcome the card allows, there is no damage to redirect. Either the card means to override that and should say so, or it needs rewriting.
+- **TURN's defence half was unresolvable, and is fixed.** It read `Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.` — but a defender who wins cleanly takes no damage at all, so on the only outcome the card allowed there was nothing to redirect. The history: the card was always meant to send the attack somewhere else, and an earlier pass sanded that off because the card sat in the Oracle pool and the effect was too strong for a starting deck. Its own flavour line kept the original intent on the card the whole time — *"It has to land somewhere. Somewhere is negotiable."* The redirect is restored and now says outright that the attack is not stopped, along with the detail that makes it bite: the attacker's statuses are spent on the redirected attack, so their Deadly lands on someone else and their Blind can make it miss entirely. It also applies Initiative Shift -1 to the attacker, which the card should have carried all along for something named TURN. **It is not an early-campaign card** — see below.
+
+---
+
+## The middle tier
+
+Not a thing yet — Drew's idea, recorded here so the first candidate doesn't get lost. Some cards are clean under the content rule and simply too strong for a first campaign, which is a different verdict from "cut it." They want a pool of their own between the Oracle and the deep bench, to draw from once the table is past learning the reveal.
+
+- **TURN** *(Blue, Ranged, d4)* — redirects an incoming attack onto a target of your choice, spending the attacker's statuses on it. The first entry, and the reason the tier came up.
 
 ---
 

@@ -34,8 +34,14 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 **(9) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(10) Anchored**
+**(11) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
+
+**Anchored is worth less than it looks, and it should be priced as a discount on an effect rather than a tax on one.** It does not pay on the turn you play it — the first trigger is the start of your *next* turn. Two triggers is roughly what one plain grant of the same effect is worth; three is where it starts being a good deal, and three triggers means the fight has already run four turns or more.
+
+**The cost that gets missed is your own movement, not the enemy's.** Forced movement breaking Anchored is obvious. The quieter one: sit in the Backline playing Ranged and Both cards for a couple of turns and the Melee cards pile up in hand as dead weight — a Melee card can't even be played as a defence unless both combatants are Frontline. Getting any value out of them means moving, which ends the Anchored. Holding position instead means playing around a shrinking set of live options, and if you're leaning on passive cards to stay put, you aren't gaining an extra effect during the turns you're holding either.
+
+*Written down because Anchored reads stronger than it plays, and reviewers keep arriving at "this needs a restriction." It already has three: the delay, the movement, and the hand it strands.*
 
 **(8) Blind**
 50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
@@ -59,7 +65,7 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **(5) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(13) Initiative Shift X**
+**(14) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise.
 
 **Sooner and later are measured against when that token's own next turn would have arrived** — not by where it ends up sitting in the ring. Going last is not the same as acting later: a token that has already acted this lap sits exactly where a token that has already acted sits, and waiting a full lap from there is the ordinary cost of having gone.
@@ -122,7 +128,7 @@ Deal X damage to any enemy that successfully hits you with a melee attack. Appli
 **(5) Unpreventable**
 Damage that cannot be defended against. It ignores every defense that applies to attack damage — Armour, Resist, and reassignment (Protect) — because those defend only against attacks. Thorns, status damage, and HP costs are unpreventable: they land on their target in full and cannot be reduced, reassigned, or capped.
 
-**(7) Ward**
+**(8) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
 **(4) Immunity**

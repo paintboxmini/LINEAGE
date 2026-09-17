@@ -56,7 +56,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak
-Defense Effect: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
+Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against a target of your choice instead of you, at full damage, spending the attacker's statuses on it as it goes. Apply Initiative Shift -1 to the attacker.
 Range: Ranged
 *"It has to land somewhere. Somewhere is negotiable."*
 
@@ -497,9 +497,9 @@ Range: Melee
 
 **FOCUSED STANCE**
 BLUE — MIND
-Attack: Mind + d6
-Effect: Scry 2. Gain Ward.
-Defense Effect: Scry 2. Gain Ward.
+Attack: Mind + d4
+Effect: Anchored — Scry 2. Gain Ward.
+Defense Effect: Anchored — Scry 2. Gain Ward.
 Range: Melee
 *"Still here, still reading. That is the whole technique."*
 
@@ -519,7 +519,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d8
 Effect: The defender must target you on their next turn if possible.
-Defense Effect: Gain Protect.
+Defense Effect: Gain Protect and Ward.
 Range: Melee
 *"They were going somewhere else. Not anymore."*
 
