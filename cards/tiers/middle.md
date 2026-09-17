@@ -4,7 +4,7 @@ Cards that are good and are not beginner cards. Most are legal under every rule 
 
 Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened once from this screen.
 
-**Status: the whole core pool has been read.** 166 cards across the three colour lists — 84 seated, 53 cleared and on the bench, 29 here. Complete as of 2026-09-17, not finished forever.
+**Status: the whole core pool has been read.** 166 cards across the three colour lists — 84 seated, 47 cleared and on the bench, 35 here, and one cut. Complete as of 2026-09-17, not finished forever.
 
 ---
 
@@ -16,6 +16,9 @@ Clean under every rule. They belong to a table that already knows what it is doi
 |------|---|---|---|
 | **TURN** | Blue | Ranged d4 | Redirects an incoming attack onto a target of your choice at full damage, spending the attacker's statuses on it as it goes — their Deadly lands on someone else, their Blind can make it miss entirely. Weak and Initiative Shift -2 on the attack half. The card the tier was invented for. |
 | **HEAVE AND HAUL** | Green | Both d8 | Moves every enemy in a chosen position to the other one, and lets all allies reposition freely on defence. Cut from the expansion on 2026-09-17 as too strong for that set. |
+| **TRAMPLE** | Red | Melee d6 | `If this attack drops (Collapses) the defender, gain another action this turn.` An extra action is the largest single thing a card can hand out. |
+| **RENEWAL** | Green | Both d4 | Every ally discards 1 and draws 2, or heals 4; on defence a Collapsed ally heals 8. Party-wide, on both halves, at a d4. |
+| **HEALING SONG** | Green | Ranged d6 | You and all allies heal 5, on both halves, unconditionally. |
 
 ---
 
@@ -42,6 +45,19 @@ The reveal is the game. A beginner card does not reach into it at all.
 | **UNNAME** | Blue | Melee d4 | The other side's Defense Effect never fires. |
 | **DEAD HEAT** | Red | Ranged d8 | On a tie, the defender's Defense Effect does not trigger. |
 | **INVERT** | Blue | Both d4 | Cancels the other side's Effect, either half. |
+
+**Rewriting the turn order outright.** Initiative Shift moves a combatant by a bounded number of steps and is a keyword with rules around it. These two put you wherever you want to be, which is a different kind of thing.
+
+| Card | | | |
+|------|---|---|---|
+| **STARING CONTEST** | Red | Ranged d4 | Change your place in the order to immediately follow the defender, effective this cycle. |
+| **PRIORITY** | Green | Both d4 | Swap places with the defender in the initiative order. |
+
+**Naming the colour.**
+
+| Card | | | |
+|------|---|---|---|
+| **AXIOM** | Blue | Ranged d4 | Name a colour; they cannot play it on their next reveal. Choosing the colour is the whole difference from PRESSURE, which takes the one they just showed and is a beginner card. |
 
 ---
 
@@ -82,7 +98,7 @@ The rule is in `rules/cards.md`, The Oracle Deck. It governs starting decks only
 
 **The tie-winning family decided bar 1.** The bar started as "one step against an inversion" — ANTICIPATE turning a tie into a win was a nudge and cleared; PARADOX flipping the outcome did not. That line held for exactly as long as the family looked like two cards. Reading the rest of the pool found four more, and the argument that kept the first two — a tie advances nobody on its own — is about one card at a time, not about a deck that stacks six. All six moved on 2026-09-17, which cost the Oracle 63 two Blue melee seats. **The bar is simpler now, and better: a beginner card does not touch resolution.**
 
-**ABANDON was cut rather than moved here.** Its defence half stopped the attacker defending at all the next time you attacked them — Staggered's whole effect with the keyword left off, so the near-ban never caught it. A card whose design is a loophole in a rule is not a card the rule should have to keep answering. It is in `experimental/archives/cut-cards.md` with the two references it left behind.
+**ABANDON was cut rather than moved here, and the rule it exploited is rewritten.** Its defence half stopped the attacker defending at all the next time you attacked them — Staggered's whole effect with the keyword left off, so the near-ban never caught it. The ban in `rules/cards.md` now bars the effect rather than the word: costing an enemy a whole attack or a whole defence is out however it is phrased, and "cannot attack" counts the same as "cannot defend". ABANDON is in `experimental/archives/cut-cards.md` with the two references it left behind.
 
 **STEAL came back out.** It used to take a consumable off the defender, which is going through their possessions. It takes one stack of a Positive Status Effect now, which is the thing the content rule expressly permits — removing buffs an enemy already has. DRAIN takes the whole effect; STEAL takes a single charge, and exiles itself doing it.
 

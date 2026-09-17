@@ -130,11 +130,11 @@ SETS = {
             #        SHARPEN (ranged — reworked Both -> Ranged to keep the
             #        3 ranged slots HEALING SONG's departure would have cost)
             'ATTRITION', 'BLINDSIDE', 'GUARD', 'OFF BALANCE', 'OPEN GUARD',
-            'PAIN IS FUEL', 'STRIKE', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            'PAIN IS FUEL', 'STRIKE', 'PUSH', 'UNBROKEN', 'WEATHERED',
             'CLOSE IN', 'RETALIATE',
             'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
             'SLIP THE BLADE',
-            'CERTAIN STRIKE', 'STARING CONTEST', 'SHARPEN',
+            'CERTAIN STRIKE', 'HAMMER', 'SHARPEN',
             # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
@@ -149,10 +149,10 @@ SETS = {
             #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
             #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
-            'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
             'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
-            'CLIMB', 'REALIGNMENT', 'CORNER', 'SIDESTEP', 'DISTRACT',
+            'INTERCEPT', 'REALIGNMENT', 'CORNER', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
             # off it; the green pass put it back by swapping GIVE WAY (both)
@@ -205,9 +205,9 @@ SETS = {
             #            bush does not, and BRAMBLE covers Green's Thorns at
             #            Both range anyway.
             'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
+            'MIRROR STEP', 'QUICKEN', 'HARMONIZE', 'SHADE AWAY', 'STIR',
             'OPENING', 'PATIENCE', 'MEND',
-            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
+            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'SHELTER',
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],

@@ -2,7 +2,7 @@
 
 The Oracle content rule in `rules/cards.md` says what a starting deck **may not do**. This is the other half: the specific cards that have been looked at and cleared for a first campaign. A card being legal under the content rule is not the same as a card being right for players who are still learning what the reveal is.
 
-Started 2026-09-17 from the cards already seated, and finished the same day: **all 166 cards in the three core colour lists have been screened** — 137 cleared, 29 sent to the middle tier, and one cut. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
+Started 2026-09-17 from the cards already seated, and finished the same day: **all 166 cards in the three core colour lists have been screened** — 131 cleared, 35 sent to the middle tier, and one cut. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
 
 ---
 
@@ -18,7 +18,7 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 
 *Tested:* with UNRAVEL out, no seated card grants two debuffs in a single half. It really was the only one, so this bar costs nothing to hold.
 
-**3. The Oracle content rule, in full.** Nothing reaching into an enemy's hand, deck or stats; no Sealed; Staggered near-banned with OFF BALANCE the one exception; exiling an enemy's played card counts as deck manipulation. See `rules/cards.md`, The Oracle Deck.
+**3. The Oracle content rule, in full.** Nothing reaching into an enemy's hand, deck or stats; no Sealed; exiling an enemy's played card counts as deck manipulation; and nothing that costs an enemy a whole attack or a whole defence, with OFF BALANCE the one exception. That last one was written against the Staggered keyword until 2026-09-17, when ABANDON turned out to be doing the same thing in plain words. It bars the effect now, so "cannot attack" and "cannot defend" are caught alongside the keyword. See `rules/cards.md`, The Oracle Deck.
 
 **4. Name breadth is part of the card, but it is not a bar by itself.** A name is spent out of combat on an Advantage discard, so a wide name is real power (`rules/cards.md`, The Name Is Half the Card). It is a reason to read a card harder, not a reason to rename it. Renaming five seated cards for breadth was tried on 2026-09-17 and reverted the same day: **when a card does not belong in the early set, take the card out — do not rename it into disguise.** CHANNEL keeps a broad name and a seat, because the card underneath it is fine.
 
@@ -44,7 +44,7 @@ Every one of them is a good card. Failing this screen is a statement about when 
 
 ## Open
 
-- **The Staggered near-ban is written against the keyword, not the effect.** ABANDON stopped the attacker defending at all the next time you attacked them — Staggered's whole swing with the word left off, and nothing caught it for eleven days. ABANDON is cut (`experimental/archives/cut-cards.md`), but the loophole is still in the rule. Rewriting it to bar the effect is the outstanding fix.
+- **Lifesteal is at zero in the Oracle 63 and at zero in the expansion.** It lives in the pool on SKEWER, BLEED and CONSUME, all of them cleared and all of them unseated. A keyword with a full glossary entry that no player will meet is the shape that got Critical deleted (`experimental/archives/cut-cards.md`); this one is worth deciding on rather than leaving.
 - **Lifesteal and Quick are at zero in the expansion.** Lifesteal left with PARADOX and Quick was never there. Blind, Ward and Vulnerable came back — PARRY, FOCUSED STANCE and PROFILE's rewrite covered them. No Blue bench card carries Lifesteal or Quick, so filling them means another colour or a new card, and it is not obvious either is owed a seat.
 - **Seat pressure is real now.** STRIKE took a Red melee seat in the Oracle 63 on 2026-09-17 and PUSH came out for it; PRESSURE and CORNER took the two Blue melee seats the tie-winners vacated. The 12/6/3 ratio means every addition is a swap, so a card cannot simply be added — something has to have a reason to leave.
 

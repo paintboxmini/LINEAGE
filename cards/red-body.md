@@ -296,7 +296,7 @@ Range: Ranged
 **RETALIATE**
 RED — BODY
 Attack: Body + d8
-Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
+Effect: Gain Thorns 4.
 Defense Effect: Apply Initiative Shift -1 to the attacker.
 Range: Melee
 *"Pain is just momentum, redirected."*
@@ -337,7 +337,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
-Defense Effect: Gain Resist.
+Defense Effect: Gain Ward.
 Range: Ranged
 *"Some things you don't have to aim."*
 
@@ -591,3 +591,14 @@ Effect: Defender gains Weak. Target ally gains Deadly.
 Defense Effect: Attacker gains Weak.
 Range: Both
 *"Say the thing. Watch what it costs them."*
+
+---
+
+**CLIMB**
+RED — BODY
+Attack: Body + d6
+Effect: Move to the Backline. Anchored — your attacks deal +2 damage.
+Defense Effect: Move to the Backline. Gain Resist.
+Range: Ranged
+*"The higher you rise, the farther you see."*
+
