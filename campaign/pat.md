@@ -70,7 +70,7 @@ Not everything below is a Session 1 gap — some of what Drew and Pat talked abo
 - Character name
 - Appearance beyond the Cane Corso reference, voice
 - Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
-- **Gear** — hasn't come up at all yet: starting garb/weapon (`rules/character-creation.md`, Equipment) and the 3 equipment slots (Weapon, Armor, Artifact)
+- **Gear** — hasn't come up at all yet: starting garb/weapon, and whatever he ends up actually using (`rules/character-creation.md`, Equipment — there is no slot limit, only what one person can use in concert)
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 

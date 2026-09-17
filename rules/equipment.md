@@ -1,6 +1,6 @@
 # Equipment
 
-Weapons, Armor, and Artifacts — the three Equipment Slots (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
+Weapons, Armor, and Artifacts — the three kinds of equipment (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
 
 ---
 
@@ -8,9 +8,11 @@ Weapons, Armor, and Artifacts — the three Equipment Slots (`rules/character-cr
 
 Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.
 
-**Only equipment that grants an actual mechanical effect is restricted to the three Equipment Slots**: Weapon, Armor, Artifact. The slot system isn't a limit on what a character can *carry* — it's a limit on how much raw mechanical power a character can have *active* at once. Everything else — how it looks, what it's called, how many of them you own — is free.
+**And there is no slot limit.** Weapon, Armor and Artifact are categories for designing and pricing an item, not a ration of three. **The only restriction is what one person can plausibly use in concert** — two hands, one body, and only so much attention in a fight (`rules/character-creation.md`, Equipment). That question gets asked at the table when it matters, not counted at creation.
 
-Carried items (potions, tools, one-use consumables) don't compete for these slots at all. They're used via the Interact action and are a separate category entirely — see `rules/items.md` for where those actually live.
+**Which moves the real limiter onto the economy, deliberately.** A Tier 1 permanent is ~200 gold and a Tier 3 is ~2,000, against a world with exactly two ways to make money and a deliberately slow curve (Pacing, below). A party is not going to be wearing four Tier 3 items because nothing has paid them four Tier 3 items. **If a GM finds a character stacked with more permanents than the fight can survive, the question to ask is where the gold came from**, not which slot to take away.
+
+Carried items (potions, tools, one-use consumables) are a separate category entirely — used via the Interact action, see `rules/items.md` for where those live.
 
 ---
 
@@ -95,9 +97,9 @@ Adjust from there for what actually happens at the table:
 
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
-## Pricing Reusable, Non-Slotted Items
+## Pricing Reusable, Non-Permanent Items
 
-Some carried items are neither single-use nor a permanent equipment slot — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
+Some carried items are neither single-use nor a permanent piece of equipment — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
 
 That's a third bucket, priced between the other two. Worth more than a consumable, since it's never used up. Worth far less than a Tier 1 permanent, since it isn't passive and isn't unlimited — once per combat is the ceiling, and only on a turn you're already spending the relevant action. **Price it at roughly 50 gold per point**, the same 1-point scale as the other two categories, just at its own rate. Mile-Marker Ring (60g) and Ledger Weight (45g) are the anchors here, the same role Luminova Leaves plays for consumables.
 

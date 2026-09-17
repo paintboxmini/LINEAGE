@@ -80,17 +80,24 @@ Your stat spread is a statement about how your character solves problems.
 
 ## Equipment
 
-Every character has **3 equipment slots:**
+**There is no limit on how much equipment a character can have.** No slots, no count, no encumbrance table. Equipment comes in three kinds — **Weapon, Armor, Artifact** — and those are design and pricing categories (`rules/equipment.md`), not a ration.
 
-- 1 Weapon
-- 1 Armor
-- 1 Artifact
+**The only restriction is what one person can plausibly use in concert.**
 
-Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.
+That is a fiction question, asked at the table, at the moment it matters — not a number checked at creation. The useful version of it is: *could this person actually be getting the benefit of all of these, at the same time, right now?*
+
+- **You have two hands.** A two-handed weapon is using both of them. A sword and a shield is fine; a sword, a shield and a bow is a decision about which one is in your hands when the fighting starts.
+- **Armour goes on a body, and there is one of those.** You cannot wear two breastplates. A mail shirt under a coat is a conversation; a second suit over the first is not.
+- **Some things need managing.** An item whose effect requires attention during a fight is competing with every other item that does.
+- **Everything else is free.** Own six swords. Carry all of them. Nobody is counting.
+
+**Only what you are actually using grants its effect.** A weapon on your back is on your back. Switching to it is something you do, in the fiction, and it takes whatever it would reasonably take.
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain (`world/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-**Carried items** (potions, tools, objects picked up in the field) don't occupy an equipment slot — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
+*Artifacts are the place where "use in concert" stops doing the work, because a person can wear a great deal of jewellery. The limit on them was never slots and is not supposed to be: **they are rare, they are dangerous, and they are noticed.** A character hung with three resonant items has not broken a rule. They have made themselves the most interesting thing in any room they walk into, and the world will respond accordingly.*
+
+**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
 
