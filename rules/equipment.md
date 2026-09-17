@@ -20,11 +20,13 @@ Carried items (potions, tools, one-use consumables) are a separate category enti
 
 Weapons and Armor both scale on the same three-tier system. Each tier is a **power budget** — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer's discretion.
 
-| Tier | Weapon (default spend) | Armor (default spend) | Approximate Value |
-|------|------------------------|------------------------|--------------------|
-| 1 | +1 attack damage | Armour 1 | ~200 gold |
-| 2 | +2 attack damage | Armour 2 | ~800 gold |
-| 3 | +3 attack damage | Armour 3 | ~2,000 gold |
+| Tier | Weapon (default spend) | Armor (default spend) | Accessory (default spend) | Approximate Value |
+|------|------------------------|------------------------|---------------------------|--------------------|
+| 1 | +1 attack damage | Armour 1 | +1 to one Skill tag | ~200 gold |
+| 2 | +2 attack damage | Armour 2 | +2 to one Skill tag | ~800 gold |
+| 3 | +3 attack damage | Armour 3 | +3 to one Skill tag | ~2,000 gold |
+
+**One ladder, three slots' worth of ways to spend it.** Weapons, Armor and Accessories all sit on the same three tiers at the same three prices. What changes is which slot the tier is bought in and therefore what the budget can be spent on — damage, reduction, or a number outside a fight.
 
 The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.
 
@@ -58,23 +60,42 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 <!-- print:skip-start -->
 ## Pacing — How Fast Gear Should Arrive
 
-**A session's work is worth about one fifth of the tier being shopped for — per character, not per party.**
+**Income doubles every six sessions. That is the whole rule.**
 
-| Shopping at | A session pays each character | Sessions to afford it |
+| Sessions | A session pays each character |
+|---|---|
+| 1–6 | ~40 gold |
+| 7–12 | ~80 gold |
+| 13–18 | ~160 gold |
+| 19–24 | ~320 gold |
+| 25+ | ~640 gold |
+
+**Multiply by party size for what a job actually pays.** A four-person party finishing a session in the first band has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+
+**It depends on nothing but the session count**, which is the point. The GM does not have to know what anyone is saving for, or agree with the party about what they are saving for, or recalculate when somebody changes their mind. **Look up the band, pay the band.**
+
+### What the curve produces
+
+*Cumulative earnings per character, so what somebody actually owns depends on what they bought along the way.*
+
+| Earned | By session | Buys |
 |---|---|---|
-| Tier 1 (~200 gold) | ~40 gold | ~5 |
-| Tier 2 (~800 gold) | ~160 gold | ~5 |
-| Tier 3 (~2,000 gold) | ~400 gold | ~5 |
+| 200 g | 5 | a first Tier 1 item |
+| 800 g | 13 | a full Tier 1 kit — weapon, armor, two accessories — **or** one Tier 2 item |
+| 1,600 g | 18 | two Tier 2 items |
+| 2,000 g | 19 | a first Tier 3 item |
+| 3,200 g | 23 | a full Tier 2 kit |
+| 6,400 g | 29 | most of a Tier 3 kit |
 
-**Multiply by party size for what a job actually pays.** A four-person party finishing a Tier 1 session has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+**Roughly five or six sessions per meaningful step, forever**, without anybody tracking a target. The first Tier 1 item lands about when the campaign first reaches Eclipseria — gear arrives when the party first stands somewhere that sells it.
 
-The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
-
-**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria. Gear arrives when the party first stands somewhere that sells it.
+**A character who skips a tier gets there faster**, which is correct and should not be corrected. Saving thirteen sessions for one Tier 2 weapon instead of buying four Tier 1 pieces is a real strategy with a real cost: twelve sessions of going without.
 
 **Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
 
 **The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
+
+**Sessions, not time.** A band advances when the table plays, not when the calendar does. A campaign that skips two months is still on whatever session it left off at.
 
 ## Pricing Consumables
 
@@ -103,29 +124,25 @@ Adjust from there for what actually happens at the table:
 
 ## Pricing Accessories
 
-Accessories are permanent and always-on like a Tier 1 item, but they are barred from combat entirely — they modify checks, saves and perception and nothing else (`rules/character-creation.md`, Equipment). That restriction is what they pay for, and it is not negotiable: the moment an accessory touches damage, Armour, a keyword or the wheel, it is a Weapon, Armor or Artifact and it is priced as one.
+**Accessories are on the same tier ladder as everything else** — Tier 1 at ~200 gold, Tier 2 at ~800, Tier 3 at ~2,000 (Weapon and Armor Tiers, above). A Tier 1 accessory costs exactly what a Tier 1 sword costs.
 
-**Three classes, and the step between them is ×4:**
+**That is a premium and it is meant to be one.** An accessory only works outside a fight, so on raw mechanical throughput it is the weaker buy at every tier — and it is priced level anyway, because what it buys is the thing a sword never touches. A character who can reliably do one difficult thing in the world is worth as much as one who hits harder, and charging less for it would say otherwise.
 
-| Class | Grant | Price |
-|---|---|---|
-| **Minor** | +1 to a named narrow band | ~50 gold |
-| **Standard** | +2 to a named narrow band | ~200 gold |
-| **Major** | +3 to a named narrow band | ~800 gold |
+### What a tier buys: +1, +2, or +3 to one Skill tag
 
-**The band is the thing being priced, not the number.** *+2 to moving unseen. +1 to reading a document. +3 to keeping your feet on bad ground.* Name the ground it covers before you pick the bonus, and make it narrow enough to say in five words — a ring that helps with "social situations" is not an accessory, it is a mistake.
+**An accessory names a Skill tag, not a description.** Same vocabulary as a character's own Skills (`rules/character-creation.md`, Skills): a specific trained action — Lockpicking, Negotiation, Animal Handling, Climbing, Forgery, Tracking — **or** one whole Perception mode (Reason, Senses, Read).
 
-**+2 is the default and should be most of the list.** It matches a Skill's grant exactly (`rules/resolution.md`), which is the number every player already has a feel for.
+**That is the whole fix for the hardest question in this category.** A Skill is a literal tag that either plainly covers what you are attempting or does not, with no table judgement call, and an accessory inherits that exactly. *Boots of +2 Climbing* is an accessory. *A ring that helps in social situations* is not — it is three tags in a trench coat, and it should be priced as whichever one it actually is.
 
-**The curve is steep on purpose, the same as the weapon and armor tiers.** A Major costs sixteen times a Minor for three times the number, because breadth is supposed to be the cheap way to buy competence and depth is supposed to hurt. Two Minors in different bands cost 100 gold; one Major costs 800.
+**Stacking falls out of it and needs no separate ruling:**
 
-**A Major costs exactly what a Tier 2 weapon costs**, and that equivalence is the one to keep in mind when pricing anything new here: *being reliably excellent at one thing outside a fight is worth about as much as being meaningfully better inside every fight.* If that trade ever stops feeling right, this table is the thing to move.
+- **A Skill and an accessory stack.** Different sources — training and equipment. A character with Lockpicking and a Tier 2 lockpick charm is at +4.
+- **Two accessories on the same tag do not.** Take the larger. A Tier 1 and a Tier 3 stealth item is +3, not +4.
+- **Two accessories on different tags never interact**, which is the normal case and why two slots is genuinely a choice.
 
-**One number per class, no budget maths, because this list is supposed to get enormous.** A category meant to hold hundreds of small objects cannot also carry a calculation — the design cost per item has to be near zero or nobody will ever write the hundredth one. If an accessory feels like it is worth more than its class, widen the band rather than inventing a price.
+**A Perception-mode accessory is broader and should cost a tier more than it looks like it should.** Reason, Senses and Read each cover a whole category of rolls (`rules/resolution.md`, Perception). Price a +1 to a Perception mode at Tier 2, not Tier 1, and a +2 at Tier 3. There is no +3 to a Perception mode.
 
-**Stacking.** They stack with a Skill and not with each other (`rules/character-creation.md`, Equipment). Two accessories covering the same ground is still whichever grant is larger — a Minor and a Major for stealth is +3, not +4.
-
-**Pacing.** At Tier 1 pacing a character earns about 40 gold a session, so a Minor is one session, a Standard is five, and a Major is the same twenty-session reach as a Tier 2 weapon. **The Minor class is the point**: it is the first thing in the game a party can actually afford, and it is how a character starts being specifically themselves before they own anything that matters in a fight.
+**One number per tier, no budget maths.** This list is supposed to get enormous, and a category meant to hold hundreds of objects cannot carry a calculation per item — the design cost has to be near zero or nobody writes the hundredth one. If an accessory feels worth more than its tier, it is naming too broad a tag.
 
 ---
 

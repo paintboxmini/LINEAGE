@@ -65,16 +65,56 @@ The working counter, not the shrine. Harlan Vetch is the master smith — weapon
 ---
 
 ### Blind Edge
-*Price: ~800 gold (Tier 2 weapon) — display piece*
+*Price: ~800 gold (Tier 2 weapon)*
 
 **Equipment — Weapon (Tier 2). Effect:** +1 attack damage. Once per combat, on a clean win, inflict Blind.
 
 ---
 
 ### Thorned Cuirass
-*Price: ~800 gold (Tier 2 armor) — display piece*
+*Price: ~800 gold (Tier 2 armor)*
 
 **Equipment — Armor (Tier 2). Effect:** Armour 1. Start combat with Thorns 1.
+
+---
+
+### Counterweight Maul
+*Price: ~800 gold (Tier 2 weapon)*
+
+**Equipment — Weapon (Tier 2). Effect:** +2 attack damage. The whole budget on the flat number — the plain version of the tier, and the one to price anything else against.
+
+Head of cast iron, haft of banded ash, and a second smaller weight at the butt so the thing comes back to you instead of taking you with it. Heavy, honest, and the Vetches sell more of these than everything else on this counter combined.
+
+---
+
+### Second Skin
+*Price: ~800 gold (Tier 2 armor)*
+
+**Equipment — Armor (Tier 2). Effect:** Armour 2.
+
+Scale small enough to read as cloth at four paces, laid over a quilted underlayer. Takes two hours to get into properly and Sera will tell you so before she takes your money.
+
+---
+
+### The Long Argument
+*Price: ~2,000 gold (Tier 3 weapon)*
+
+**Equipment — Weapon (Tier 3). Effect:** +1 to Mind, and nothing else.
+
+A duellist's blade with a cage hilt and a notch filed into the forte that the Vetches have never been willing to grind out, because the man who brought it in asked them not to. Whoever carries it finds themselves thinking a half-step further ahead than they are used to.
+
+*The whole Tier 3 budget spent on one stat point (`rules/equipment.md`) — Mind sets hand size, so this is a card in hand for the rest of the campaign. **Priced at the top tier because a stat point moves other things too.** Harlan keeps it in the back and does not bring it out for browsers.*
+
+---
+
+### Anvil Coat
+*Price: ~2,000 gold (Tier 3 armor)*
+
+**Equipment — Armor (Tier 3). Effect:** Armour 3.
+
+Forge leather, plated at the shoulders and forearms, still soft enough to sleep in badly. The heaviest thing on the wall and the only piece here the Vetches made entirely themselves.
+
+*The plain Tier 3, and the number the rest of the tier should be checked against.*
 
 ---
 
