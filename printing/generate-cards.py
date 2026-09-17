@@ -261,8 +261,10 @@ SETS = {
         #             card on a clean win. That rewrite did not qualify it:
         #             the defence half it copied was never legal either, and
         #             the card left the set on 2026-09-17. See that pass.
-        #   PROFILE — its defence half read the attacker's hand. Now a
-        #             smaller version of its own attack half.
+        #   PROFILE — its defence half read the attacker's hand. That was
+        #             the 2026-09-08 fix; on 2026-09-17 the card was rebuilt
+        #             again, around opponent interaction rather than
+        #             self-Scry — see the fourth round below.
         #   CONSUME — destroying a card out of your own hand was mandatory,
         #             which is a trap in a starting deck. Now "you may", and
         #             since 2026-09-17 it Exiles rather than destroys. The
@@ -400,10 +402,31 @@ SETS = {
         # with Red, which is the exact shape this pass spent a round fixing
         # in Green. Blue lands at 3.071 instead, under Red's 3.357 and over
         # Green's 2.929.
-        #   Still at zero across the 21: Lifesteal, Vulnerable, Quick. No
-        #     Blue bench card carries any of the three, so they would need
-        #     another colour or a new card, and none is obviously owed a
-        #     seat.
+        #   Still at zero across the 21: Lifesteal and Quick. No Blue bench
+        #     card carries either, so they would need another colour or a
+        #     new card, and neither is obviously owed a seat. Vulnerable
+        #     was on this list until PROFILE's rewrite, below.
+        #
+        # Fourth round, same day. PROBE and PROFILE were a dominance bug:
+        # same colour, same Ranged, identical defence halves, and PROFILE
+        # held both the bigger die and the better attack half, so PROBE was
+        # strictly worse in every state of the game. Both were rebuilt
+        # around opponent interaction instead of self-Scry, which separates
+        # them and lands them in different tiers (`cards/tiers/`).
+        #   PROBE   — attack half looks at the defender's hand; defence half
+        #             Scry 2, then draw 1. Reading an enemy hand is barred by
+        #             the content rule, so PROBE is middle tier now. It has
+        #             taken over the job PROFILE's defence half was rewritten
+        #             out of on 2026-09-08.
+        #   PROFILE — Scry 1, then you may reveal your own top card; if it
+        #             matches the colour the other side played, they gain
+        #             Vulnerable on the attack half, Weak on the defence.
+        #             The Scry is what makes it a decision instead of a coin
+        #             flip — you set up the card you are about to reveal.
+        #             It keeps its seat and brings Vulnerable back to the
+        #             expansion, which had sat at zero since UNRAVEL left.
+        #   TURN    — the Initiative Shift added earlier the same day is off
+        #             again. The redirect stands, and TURN is middle tier.
         #
         # The ranged seat went to RETORT on 2026-09-17, on two counts.
         # Thorns scales by colour rather than by die and range — Green 2,

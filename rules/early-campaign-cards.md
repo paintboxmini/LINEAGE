@@ -24,84 +24,37 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 
 ---
 
-## The roster (84)
+## The lists
 
-`*` marks a card from the expansion; the rest are the Oracle 63.
+The lists this screen produces live in `cards/tiers/`, next to the cards themselves:
 
-### Red — Body (28)
-
-**Melee (16).** ATTRITION · BLINDSIDE · CLOSE IN · DOUBLE DOWN* · GAMBLER'S RUIN* · GRAPPLE* · GUARD · OFF BALANCE · OPEN GUARD · PAIN IS FUEL · PUSH · RETALIATE · SPARK OF VIOLENCE* · TRAMPLE · UNBROKEN · WEATHERED
-
-**Ranged (4).** BURN BRIGHT* · CERTAIN STRIKE · SHARPEN · STARING CONTEST
-
-**Both (8).** BLOOD TITHE* · CHARGE · FOOTWORK · GROUNDING STANCE · PROVOKE* · PULL · SECOND WIND · SLIP THE BLADE
-
-
-### Blue — Mind (28)
-
-**Melee (8).** ANTICIPATE · CLIMB · DEFLECT · DISTRACT · FOCUSED STANCE* · INTERRUPT · PARRY* · REBUTTAL
-
-**Ranged (16).** AXIOM · CALCULATE · CALLED SHOT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PARTITION · PINNED · PROFILE* · RETORT* · STUDY · UNDERSTANDING* · VEIL
-
-**Both (4).** REALIGNMENT · SIDESTEP · STILL POINT · WAITING GAME*
-
-
-### Green — Soul (28)
-
-**Melee (4).** BIND · BRISTLE · CONFRONT* · SMOKESCREEN
-
-**Ranged (8).** AID · COMMUNION · DISORIENT · FIELD MEDICINE* · FLOW · GUIDE* · HEALING SONG · MOCKERY
-
-**Both (16).** BRAMBLE · CHANNEL* · INSTINCT · LEVEL THE FIELD · MEND · MIRROR STEP · OPENING · PATIENCE · PRIORITY · QUICKEN · RELEASE · RENEWAL · ROOTED OATH* · SHADE AWAY · SHARED BURDEN* · UNTOUCHED*
-
----
-
-## Cleared, but worth watching
-
-- **ANTICIPATE** *(Blue, Melee)* — `Defense Effect: You win on a tie.`
-- **REBUTTAL** *(Blue, Melee)* — `Special Rule: If you would lose this exchange, it is a tie instead.`
-
-These are the only two seated cards that reach into resolution. They are one step, not a reversal, which is why they survive bar 1 where PARADOX did not. If that distinction turns out to be too fine at the table, these are the two to pull — and note that both are Blue melee, the range Blue can least afford to lose right now.
+- **`cards/tiers/beginner.md`** — the 84 that cleared, by colour and range, plus the two watched cards and the two that are eligible but unseated.
+- **`cards/tiers/middle.md`** — everything that failed, sorted by which bar it failed. Nothing is cut; a card that fails a bar moves.
+- **`cards/tiers/README.md`** — what the tiers are, and what to check when a card moves between them.
 
 ---
 
 ## Not cleared
 
-| Card | Why |
-|------|-----|
-| UNNAME | Defense Effects never fire — bar 1 |
-| PARADOX | Reverses the RPS outcome — bar 1 |
-| UNRAVEL | Vulnerable and Blind on one half — bar 2 |
-| FORGET | Exiles the enemy's played card — bar 3 |
-| TAINT | Adds a Wound to the enemy's deck — bar 3 |
-| CONSUME | Cleared on the rules, cut for composition on 2026-09-17 |
-| HEAVE AND HAUL | Cleared on the rules, cut as too strong for the set |
+The full list, sorted by which bar each card failed, is in `cards/tiers/middle.md`. Twelve cards as of 2026-09-17, eleven of them Blue — not because Blue is the problem colour, but because Blue is the only one read end to end.
 
-Every one of these is a perfectly good card. They belong in creature decks, character decks, and later Oracle seats — the same place the content rule has always sent its exclusions.
+Every one of them is a good card. Failing this screen is a statement about when a table should meet it, not about whether the card is worth having.
 
 ---
 
 ## Open
 
-- **Lifesteal, Vulnerable and Quick are all at zero in the expansion.** Lifesteal and Ward left with PARADOX, Vulnerable and Blind with UNRAVEL; PARRY and FOCUSED STANCE recovered Blind and Ward, but no Blue bench card carries the other three at all. Filling them means another colour or a new card, and it is not obvious any of the three is owed a seat.
-- **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use.
+- **Lifesteal and Quick are at zero in the expansion.** Lifesteal left with PARADOX and Quick was never there. Blind, Ward and Vulnerable came back — PARRY, FOCUSED STANCE and PROFILE's rewrite covered them. No Blue bench card carries Lifesteal or Quick at all, so filling them means another colour or a new card, and it is not obvious either is owed a seat.
+- **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use. Both tier lists stay unfinished until that happens.
 
 ---
 
 ## Bugs the screen turned up
 
-Neither is a verdict on early play — both are pool problems worth fixing whoever ends up holding the card.
+Both are fixed. Recorded because the shapes are worth recognising again.
 
-- **PROBE is strictly dominated by PROFILE.** Same colour, same Ranged, identical defence halves. PROFILE has the bigger die (d6 against d4) and the better attack half (Scry 2 against Scry 1). There is no state of the game in which you would rather hold PROBE. This is the shape of the Red/Green BRACE collision (`experimental/archives/cut-cards.md`) without the shared name: two cards, one job, one of them strictly worse.
-- **TURN's defence half was unresolvable, and is fixed.** It read `Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.` — but a defender who wins cleanly takes no damage at all, so on the only outcome the card allowed there was nothing to redirect. The history: the card was always meant to send the attack somewhere else, and an earlier pass sanded that off because the card sat in the Oracle pool and the effect was too strong for a starting deck. Its own flavour line kept the original intent on the card the whole time — *"It has to land somewhere. Somewhere is negotiable."* The redirect is restored and now says outright that the attack is not stopped, along with the detail that makes it bite: the attacker's statuses are spent on the redirected attack, so their Deadly lands on someone else and their Blind can make it miss entirely. It also applies Initiative Shift -1 to the attacker, which the card should have carried all along for something named TURN. **It is not an early-campaign card** — see below.
-
----
-
-## The middle tier
-
-Not a thing yet — Drew's idea, recorded here so the first candidate doesn't get lost. Some cards are clean under the content rule and simply too strong for a first campaign, which is a different verdict from "cut it." They want a pool of their own between the Oracle and the deep bench, to draw from once the table is past learning the reveal.
-
-- **TURN** *(Blue, Ranged, d4)* — redirects an incoming attack onto a target of your choice, spending the attacker's statuses on it. The first entry, and the reason the tier came up.
+- **PROBE was strictly dominated by PROFILE.** Same colour, same Ranged, identical defence halves, and PROFILE had both the bigger die and the better attack half — there was no state of the game in which you would rather hold PROBE. The shape of the Red/Green BRACE collision (`experimental/archives/cut-cards.md`) without the shared name to make it obvious. Both cards were rebuilt around opponent interaction instead of self-Scry on 2026-09-17: PROBE reads the defender's hand, which moves it to the middle tier, and PROFILE checks its own top card against the colour the other side played. They are not comparable any more.
+- **TURN's defence half was unresolvable.** It read `Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.` — but a defender who wins cleanly takes no damage at all, so on the only outcome the card allowed there was nothing to redirect. An earlier pass had sanded the redirect off because the card sat in the Oracle pool and the effect was too strong for a starting deck, and what it left behind did not work. The redirect is restored, and the card is middle tier now rather than weakened to fit. **That is the argument for having a middle tier at all:** without somewhere else to put a card, "too strong to start" gets answered by rewriting it until it isn't, and the rewrite is where the bug came from.
 
 ---
 

@@ -31,7 +31,7 @@ Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that refer
 **(19) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
-**(9) Weak**
+**(10) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
 **(11) Anchored**
@@ -65,7 +65,7 @@ Remove a card from play for the rest of combat. It does not go to the discard pi
 **(5) Protect**
 The next time an ally would take attack damage, you take it instead.
 
-**(14) Initiative Shift X**
+**(13) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise.
 
 **Sooner and later are measured against when that token's own next turn would have arrived** — not by where it ends up sitting in the ring. Going last is not the same as acting later: a token that has already acted this lap sits exactly where a token that has already acted sits, and waiting a full lap from there is the ordinary cost of having gone.
@@ -97,7 +97,7 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(5) Vulnerable**
+**(6) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(5) Rooted**

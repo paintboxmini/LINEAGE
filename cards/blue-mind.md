@@ -56,7 +56,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak
-Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against a target of your choice instead of you, at full damage, spending the attacker's statuses on it as it goes. Apply Initiative Shift -1 to the attacker.
+Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against a target of your choice instead of you, at full damage, spending the attacker's statuses on it as it goes.
 Range: Ranged
 *"It has to land somewhere. Somewhere is negotiable."*
 
@@ -246,8 +246,8 @@ Range: Melee
 **PROFILE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Scry 2, then draw 1 card
-Defense Effect: Scry 1, then draw 1 card
+Effect: Scry 1, then you may reveal the top card of your deck. If it matches the defender's card color, they gain Vulnerable.
+Defense Effect: Scry 1, then you may reveal the top card of your deck. If it matches the attacker's card color, they gain Weak.
 Range: Ranged
 *"He already knew what you'd reach for."*
 
@@ -438,8 +438,8 @@ Range: Melee
 **PROBE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 1, then draw 1.
-Defense Effect: Scry 1, then draw 1.
+Effect: Look at the defender's hand.
+Defense Effect: Scry 2, then draw 1.
 Range: Ranged
 *"A small question, asked early."*
 
