@@ -8,7 +8,7 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
-*Price: ~45 gold (two points of effect at the flat 15/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
+*Price: ~30 gold (two points of effect at the flat 10/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
@@ -18,7 +18,7 @@ Small, crystalline seeds that resonate with a faint, haunting echo when shaken. 
 
 ### Luminova Powder
 *Source: Luminova Clearing*
-*Price: ~30 gold*
+*Price: ~20 gold*
 
 Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of processing — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
 
@@ -28,7 +28,7 @@ Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of pr
 
 ### Sap Vial
 *Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
-*Price: ~25 gold*
+*Price: ~17 gold*
 
 Thick, dark-green sap that smells metallic and green.
 
@@ -42,7 +42,7 @@ Thick, dark-green sap that smells metallic and green.
 
 ### Vision Shard
 *Source: The Mirror-Slick Pond*
-*Price: ~45 gold*
+*Price: ~30 gold*
 
 A fragment of something pulled from the surface of the black water — or perhaps left there. It reflects things that haven't happened yet, or things that almost happened.
 
@@ -54,7 +54,7 @@ A fragment of something pulled from the surface of the black water — or perhap
 
 ### Rusted Armor
 *Source: The Floating Gallery*
-*Price: ~20 gold*
+*Price: ~13 gold*
 
 A piece of armor recovered from the forest's repulsion field. Clean of rust only where the hovering leaves once brushed past it. Still functional, if battered.
 
@@ -116,7 +116,7 @@ Forest families use them for cord-wrist work, for marking a gift, and for the ge
 
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
-*Price: ~60 gold*
+*Price: ~40 gold*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 

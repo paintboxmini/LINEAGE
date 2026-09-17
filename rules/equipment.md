@@ -1,6 +1,6 @@
 # Equipment
 
-Weapons, Armor, and Artifacts — the three kinds of equipment (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
+Weapons, Armor, Artifacts and Accessories — the five Equipment Slots (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
 
 ---
 
@@ -8,9 +8,9 @@ Weapons, Armor, and Artifacts — the three kinds of equipment (`rules/character
 
 Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.
 
-**And there is no slot limit.** Weapon, Armor and Artifact are categories for designing and pricing an item, not a ration of three. **The only restriction is what one person can plausibly use in concert** — two hands, one body, and only so much attention in a fight (`rules/character-creation.md`, Equipment). That question gets asked at the table when it matters, not counted at creation.
+**Only equipment that grants an actual mechanical effect is restricted to the five Equipment Slots**: Weapon, Armor, Artifact, and two Accessories. The slot system isn't a limit on what a character can *carry* — it's a limit on how much is switched on at once. Everything else — how it looks, what it's called, how many of them you own — is free.
 
-**Which moves the real limiter onto the economy, deliberately.** A Tier 1 permanent is ~200 gold and a Tier 3 is ~2,000, against a world with exactly two ways to make money and a deliberately slow curve (Pacing, below). A party is not going to be wearing four Tier 3 items because nothing has paid them four Tier 3 items. **If a GM finds a character stacked with more permanents than the fight can survive, the question to ask is where the gold came from**, not which slot to take away.
+**The slots exist because the tier curve is superlinear on purpose.** A point of power costs 200 gold at Tier 1, 400 at Tier 2 and 667 at Tier 3 (below), which prices concentration at a premium — and that premium only means anything if breadth is capped. Without the slots, two Tier 1 armors would out-perform a Tier 2 at half the price, and the whole ladder would invert.
 
 Carried items (potions, tools, one-use consumables) are a separate category entirely — used via the Interact action, see `rules/items.md` for where those live.
 
@@ -80,9 +80,11 @@ The ratio is the rule; the numbers are what it produces. A GM needs to know exac
 
 Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
 
-A consumable spends the same point once. **Price single-use items at roughly 15 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
+A consumable spends the same point once. **Price single-use items at roughly 10 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
 
-The anchor is already in the world: Luminova Leaves heal 4 HP for ~15 gold, and Luminova Powder heals 8 for ~30 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+The anchor is already in the world: Luminova Leaves heal 4 HP for ~10 gold, and Luminova Powder heals 8 for ~20 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+
+**Why ten and not fifteen.** Consumables are meant to be a restock, not a rival to saving. At Tier 1 pacing a character earns about 40 gold a session (Pacing, above) — at fifteen a point, that bought two or three simple items, and a single good two-point item cost most of a session's income, which quietly made the correct play *never buy anything*. At ten, a session's earnings cover a handful of small items and a good one, and gear money is still gear money.
 
 Adjust from there for what actually happens at the table:
 
@@ -90,12 +92,28 @@ Adjust from there for what actually happens at the table:
 - **Free-action use raises it.** Not spending your action is worth about a point on its own.
 - **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
 - **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
+- **Ingredients and crafting materials are not on this scale at all.** A Rootstalker Core is priced by what a crafter will pay for it, not by what the thing you make does (`items/turnroot-weald-items.md`); Senshi's going rates for Weald harvest are the same (`items/turnroot-weald-items.md`, Future-Lock Wasp Larvae). **If somebody buys it to make something else out of it, the market sets the number** — and those prices move with demand and scarcity in a way an effect-priced consumable never does.
+- **Reusable non-permanent items have their own rate**, below, and are not consumables either — the Mile-Marker Ring and Ledger Weight are its anchors and should not be dragged onto this one.
 
 **Not everything is priced in gold, and that is deliberate.** Pell sells fog goggles for a memory, a secret, or a name (`items/fog-basin-items.md`), and the Underground Bazaar is built on the same premise. An item with no gold price is not an oversight when its seller doesn't take gold — say what they take instead.
 
 **Found gear is off this curve entirely, and the campaign deliberately front-runs it once.** The Tollworn Plate at Seeker's Price (`quests/turnroot-weald-adventure.md`) is Tier 1 armor placed in session 4 — one session ahead of when anyone could afford it, before the Root Heart, for one character the party picks. That is not the curve breaking; it is the curve being one channel of two.
 
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
+
+## Pricing Accessories
+
+**A flat ~100 gold. There is no ladder.**
+
+Accessories are permanent and always-on like a Tier 1 item, but they are barred from combat entirely — they modify checks, saves and perception and nothing else (`rules/character-creation.md`, Equipment). That restriction is what they are paying half a Tier 1 for, and it is not negotiable: the moment an accessory touches damage, Armour, a keyword or the wheel, it is a Weapon, Armor or Artifact and it is priced as one.
+
+**The standard grant is +2 to a named narrow band**, the same shape as a Skill (`rules/resolution.md`). A cloak for going unseen. A ring for being believed. Boots for holding your feet on bad ground.
+
+**One flat price, on purpose, because this list is supposed to get enormous.** A category meant to hold hundreds of small objects cannot also carry a budget calculation — the design cost per item has to be near zero or nobody will ever write the hundredth one. If an accessory feels worth more than 100 gold, widen the band rather than raising the price; if that makes it worth more than a Tier 1 weapon, it was never an accessory.
+
+**Two accessories cost what one Tier 1 costs**, which is the intended equivalence: a fully accessorised character has spent the same as one real piece of gear and got breadth instead of a fight-winning number. At Tier 1 pacing that is about two and a half sessions for the first one, so **accessories are what a party can afford before their first weapon** — small character-defining things first, the big stuff after.
+
+---
 
 ## Pricing Reusable, Non-Permanent Items
 

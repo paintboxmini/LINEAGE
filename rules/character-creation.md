@@ -80,22 +80,24 @@ Your stat spread is a statement about how your character solves problems.
 
 ## Equipment
 
-**There is no limit on how much equipment a character can have.** No slots, no count, no encumbrance table. Equipment comes in three kinds — **Weapon, Armor, Artifact** — and those are design and pricing categories (`rules/equipment.md`), not a ration.
+Every character has **5 equipment slots:**
 
-**The only restriction is what one person can plausibly use in concert.**
+- 1 **Weapon**
+- 1 **Armor**
+- 1 **Artifact**
+- 2 **Accessories**
 
-That is a fiction question, asked at the table, at the moment it matters — not a number checked at creation. The useful version of it is: *could this person actually be getting the benefit of all of these, at the same time, right now?*
+Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more. **The slots are not a limit on what you own or carry**, only on how much is switched on at once; own six swords if you like, nobody is counting.
 
-- **You have two hands.** A two-handed weapon is using both of them. A sword and a shield is fine; a sword, a shield and a bow is a decision about which one is in your hands when the fighting starts.
-- **Armour goes on a body, and there is one of those.** You cannot wear two breastplates. A mail shirt under a coat is a conversation; a second suit over the first is not.
-- **Some things need managing.** An item whose effect requires attention during a fight is competing with every other item that does.
-- **Everything else is free.** Own six swords. Carry all of them. Nobody is counting.
-
-**Only what you are actually using grants its effect.** A weapon on your back is on your back. Switching to it is something you do, in the fiction, and it takes whatever it would reasonably take.
+**Armor does not layer.** One body, one piece of armor doing the work. A mail shirt under a coat is a description of one armor, not two.
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain (`world/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-*Artifacts are the place where "use in concert" stops doing the work, because a person can wear a great deal of jewellery. The limit on them was never slots and is not supposed to be: **they are rare, they are dangerous, and they are noticed.** A character hung with three resonant items has not broken a rule. They have made themselves the most interesting thing in any room they walk into, and the world will respond accordingly.*
+**Accessories are the small stuff**, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.
+
+- **An accessory modifies checks, saves and perception. Never combat.** No damage, no Armour, no keywords, no card effects, no initiative. That line is the whole reason they are cheap and the whole reason there can be hundreds of them.
+- **The standard grant is +2 to a named, narrow band** — the same size and shape as a Skill's bonus (`rules/resolution.md`, Skills), so it plugs into a number every player already knows. *+2 to moving unseen. +2 to persuading a stranger. +2 to keeping your feet on bad ground.*
+- **They stack with a Skill and not with each other.** Training and equipment are different sources, so a Skill's +2 and an accessory's +2 both apply. **Two accessories covering the same ground do not** — the second one is redundant, and wearing three stealth cloaks is still +2.
 
 **Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
 

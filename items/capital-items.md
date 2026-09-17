@@ -130,9 +130,9 @@ Five locked, stocked stalls beyond Nessa Coil and Brother Alden — ordinary Mar
 
 The woman glimpsed selling vials that "change colour when you look away" — ordinary healing draughts with one persistent, unexplained quirk. She's never offered a reason and doesn't find the question interesting.
 
-**Minor Draught** — Heal 4 HP. ~15 gold. Clear red when watched; drifts through green, violet, and amber the moment attention leaves it.
-**Standard Draught** — Heal 8 HP. ~30 gold. Deep crimson under observation; shifts through bruised purple to flat grey unobserved.
-**Strong Draught** — Heal 12 HP. ~45 gold. Almost black-red in sight; turns a pale, untrustworthy blue the instant no one's watching.
+**Minor Draught** — Heal 4 HP. ~10 gold. Clear red when watched; drifts through green, violet, and amber the moment attention leaves it.
+**Standard Draught** — Heal 8 HP. ~20 gold. Deep crimson under observation; shifts through bruised purple to flat grey unobserved.
+**Strong Draught** — Heal 12 HP. ~30 gold. Almost black-red in sight; turns a pale, untrustworthy blue the instant no one's watching.
 
 She keeps them in a shallow tray lined with dark cloth, takes the coin, and offers nothing further.
 
