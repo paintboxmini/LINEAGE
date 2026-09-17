@@ -75,6 +75,8 @@ At the start of combat, each participant rolls:
 
 Turn order resolves highest to lowest.
 
+**Soul and not Body, on purpose.** Body is physical speed — ground covered and force delivered. **Soul is reflex**, and reflex here means the read rather than the twitch: who was already moving before the thing happened (`rules/character-creation.md`, What Stats Do). A high-Body character gets there first. A high-Soul character was already going.
+
 **Ties:**
 - Higher Soul goes first.
 - If still tied between players, they choose order among themselves.

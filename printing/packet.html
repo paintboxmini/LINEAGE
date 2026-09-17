@@ -173,13 +173,76 @@ em {
 <p>Distribute <strong>3 additional points</strong> among these stats. No single stat may exceed 5 at character creation.</p>
 <hr>
 <h2>What Stats Do</h2>
-<p><strong>Body</strong></p>
-<ul><li>Determines damage for Red cards (Attack: Body + die)</li><li>Sets your maximum HP: <strong>(4 × Body) + Soul + Mind</strong> — Body&#x27;s own share is weighted 4× the other two</li></ul>
-<p><strong>Mind</strong></p>
-<ul><li>Determines damage for Blue cards (Attack: Mind + die)</li><li>Sets your hand size: <strong>Mind</strong> (minimum 2)</li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
-<p><strong>Soul</strong></p>
-<ul><li>Determines damage for Green cards (Attack: Soul + die)</li><li>Sets your initiative modifier: <strong>1d6 + Soul</strong></li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
-<p>Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.</p>
+<p><strong>Each stat owns three things: one card colour, one derived resource, and one way of solving problems.</strong></p>
+<table class="doc-table">
+<thead><tr>
+<th></th>
+<th><strong>Body</strong></th>
+<th><strong>Mind</strong></th>
+<th><strong>Soul</strong></th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Colour</strong></td>
+<td>Red</td>
+<td>Blue</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><strong>Damage</strong></td>
+<td>Body + die on Red</td>
+<td>Mind + die on Blue</td>
+<td>Soul + die on Green</td>
+</tr>
+<tr>
+<td><strong>Derived</strong></td>
+<td><strong>HP</strong>, weighted 4×</td>
+<td><strong>Hand size</strong> (minimum 2)</td>
+<td><strong>Initiative</strong>, 1d6 + Soul</td>
+</tr>
+<tr>
+<td><strong>Also governs</strong></td>
+<td>Physical speed and force</td>
+<td>Reasoning and control</td>
+<td>Reflexes</td>
+</tr>
+<tr>
+<td><strong>Check</strong></td>
+<td>Overcome a physical obstacle, impose physical control</td>
+<td>Obtain or interpret information, solve, predict, argue</td>
+<td>Create and hold bonds, resist spiritual pressure, enforce oaths</td>
+</tr>
+<tr>
+<td><strong>Save</strong></td>
+<td>Fatigue, falls, cold, pain, forced movement</td>
+<td>Illusions, manipulation, memory interference</td>
+<td>Fear, corruption, possession, despair</td>
+</tr>
+<tr>
+<td><strong>Perception</strong></td>
+<td><strong>Senses</strong> — timing and physical signal</td>
+<td><strong>Reason</strong> — pattern and detail</td>
+<td><strong>Read</strong> — intent and weight</td>
+</tr>
+</tbody></table>
+<p><strong>Maximum HP = (4 × Body) + Mind + Soul.</strong> Body&#x27;s share is weighted four times the other two.</p>
+<p><strong>Deck size = Body + Mind + Soul</strong>, and each colour&#x27;s card count equals its matching stat (<code>rules/cards.md</code>, Deck Building). The same rule builds every creature in the world, so a character&#x27;s deck is the same size as a creature of the same weight.</p>
+<hr>
+<p>### The three resources are three different currencies</p>
+<p>That is the actual design, and it is worth understanding before you spend your three points.</p>
+<ul><li><strong>Body buys durability.</strong> How much you can absorb before it matters.</li><li><strong>Mind buys options.</strong> How many cards you are choosing between in each exchange.</li><li><strong>Soul buys tempo.</strong> Whether you are acting into their decision or they are acting into yours.</li></ul>
+<p><strong>Body is the only stat with no cleverness in it</strong> — more damage and more HP, nothing else — which is exactly right for the colour whose whole identity is raw damage and the biggest dice.</p>
+<p><strong>Mind is the only one that increases the number of decisions you make.</strong> Cards are committed face down and revealed together (<code>rules/combat.md</code>, Attack Resolution), so hand size is the number of answers you get to compare before guessing. Mind 5 is not a bit better than Mind 4 at that. It is a different experience of the same fight.</p>
+<hr>
+<p>### Speed is Body. Reflexes are Soul.</p>
+<p><strong>This is the least intuitive part of the split and it is deliberate, so it is worth stating plainly.</strong></p>
+<p><strong>Body is how fast you move.</strong> Ground covered, force delivered, a door taken off its hinges. When the fiction asks how quickly somebody crossed a room, that is Body.</p>
+<p><strong>Soul is how fast you <em>know</em>.</strong> Initiative is not a footrace — it is who was already moving before the thing happened. <strong>Reflex, here, is closer to a sixth sense than to a twitch</strong>: the read, the prickle, the fact that you had turned around before you could have said why.</p>
+<p><strong>Yes, real reflexes are physical, and Green therefore carries the tiniest crossover into Body&#x27;s territory.</strong> That is acknowledged rather than argued away. The game equates reflexes to intuition on purpose, for balance: <strong>it keeps Body from owning both the damage ceiling and the turn order</strong>, and it gives Soul — the stat of bonds, oaths and reading a room — something that matters in every single fight rather than only in the fights about people.</p>
+<p><em>A high-Body character gets there first. A high-Soul character was already going.</em></p>
+<hr>
+<p>### The consequence that drives deckbuilding</p>
+<p><strong>A card&#x27;s damage runs off its own colour&#x27;s stat, not your best one.</strong> A Mind 5 / Body 2 character playing a Red card deals Body damage — 2 and a die. That is why colour counts match stats: it keeps every card in your deck firing at full strength.</p>
+<p>So <strong>one point in a stat does three things at once</strong>: bigger damage on that colour, one more card of that colour in your deck, and HP (four of it, if it is Body). A stat is a commitment, not a slider.</p>
 <p>Your stat spread is a statement about how your character solves problems.</p>
 <hr>
 <h2>Equipment</h2>
