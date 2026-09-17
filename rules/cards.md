@@ -33,17 +33,17 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
 
-**This ladder is provisional, and by the end of 2026-09-17 it was mostly gone.** Drew called it early that morning: a rule described as game-wide, already carrying two named exceptions out of the handful of cards using it, is on its way to not being a rule. Here is where it stands.
+**The ladder is retired as of 2026-09-17.** Drew called it that morning: a rule described as game-wide, already carrying two named exceptions out of the handful of cards using it, is on its way to not being a rule. By the end of the day it had failed in both directions.
 
-| Colour | Ladder says | Cards |
-|--------|-------------|-------|
+| Colour | Ladder said | What the cards actually do |
+|--------|-------------|----------------------------|
 | Green | 2 | BRAMBLE 2, CONFRONT 2 — and BRISTLE at 3 |
-| Blue | 3 | RETORT 3 |
-| Red | 4 | RETALIATE 4 — and SHATTER at 3, PAIN IS FUEL at 2 |
+| Blue | 3 | **nothing.** RETORT was Blue's only Thorns card, and it dropped Thorns entirely |
+| Red | 4 | RETALIATE 4, SHATTER 3, PAIN IS FUEL 2 |
 
-Red is the colour the ladder was supposed to anchor and it now holds three different values across three cards. BLEED and SKEWER, the other two Red 4s, left the beginner pool with Lifesteal the same day. **Don't rest a decision on this.** RETORT's seat in the Oracle expansion was argued partly from it and is the first thing to revisit; the honest reading is that Thorns is priced per card, like everything else, and the colour was never doing the work the ladder claimed.
+Red was the colour the ladder anchored and it holds three different values across three cards. Blue has none at all — which is the outcome the colour conventions above should have predicted from the start: **Thorns is retaliation damage, so it belongs to Body, and Blue was only ever holding it because a ladder said every colour needed a rung.** Price Thorns per card, on the die and the range, the way everything else is priced.
 
-BRISTLE at 3 lands on Blue's base, which RETORT also sits at. That was a strict dominance while both cards read "Gain Thorns 3" on both halves — same die, and RETORT's Ranged is freer than BRISTLE's Melee. RETORT's defence half now applies Weak instead, which is what a Blue Thorns card should have been doing anyway: Blue's business is taking an enemy's options away, not mirroring a Green card in a different colour. Two cards can share a keyword and a number as long as they aren't the same card.
+BRISTLE at 3 was once a strict dominance against RETORT, which read "Gain Thorns 3" at a smaller die and a freer range. RETORT's defence half became Weak on 2026-09-08, and on 2026-09-17 its attack half dropped Thorns for Vulnerable — the card does what Blue does now, taking an enemy's options away rather than mirroring a Green card in another colour. That is the lesson worth keeping: two cards can share a keyword and a number as long as they aren't the same card, and a card that has to be argued into its colour probably belongs in a different one.
 
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 

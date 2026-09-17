@@ -127,7 +127,7 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: If you are attacked before your next turn, your party heals 4 HP.
+Effect: Your party heals 4 HP.
 Defense Effect: If you are attacked again before your next turn, you and your allies gain Deadly.
 Range: Ranged
 *"Shared vision illuminates the path forward."*

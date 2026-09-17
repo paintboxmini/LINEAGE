@@ -338,7 +338,7 @@ Range: Ranged
 **RETORT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Gain Thorns 3.
+Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Weak.
 Range: Ranged
 *"Every insult carries its own answer."*
