@@ -162,16 +162,6 @@ Range: Both
 
 ---
 
-**ABANDON**
-RED — BODY
-Attack: Body + 2d8
-Effect: Cannot defend until your next turn
-Defense Effect: The attacker cannot defend next time you attack them
-Range: Melee
-*"Guard is a thing you can put down. So put it down."*
-
----
-
 **STAND**
 RED — BODY
 Attack: Body + d8

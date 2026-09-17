@@ -2,9 +2,9 @@
 
 Cards that are good and are not beginner cards. Most are legal under every rule in the game and simply hit too hard, or ask too much of a table still learning the reveal. A few break the Oracle content rule specifically, which is a rule about starting decks — past that point it has nothing to say about them.
 
-Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here.
+Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened once from this screen.
 
-**Status: the whole core pool has now been read.** 163 cards across the three colour lists — 84 seated, 79 on the bench, every one of them given a verdict on 2026-09-17. The lists are complete as of that date, not finished forever.
+**Status: the whole core pool has been read.** 166 cards across the three colour lists — 84 seated, 53 cleared and on the bench, 29 here. Complete as of 2026-09-17, not finished forever.
 
 ---
 
@@ -19,16 +19,29 @@ Clean under every rule. They belong to a table that already knows what it is doi
 
 ---
 
-## Fails bar 1 — cancels or reverses, rather than nudging
+## Fails bar 1 — touches resolution
 
-The line is one step against an inversion. ANTICIPATE turning a tie into a win is a nudge and stays in the beginner pool; a card that cancels an Effect or flips the outcome does not.
+The reveal is the game. A beginner card does not reach into it at all.
 
-| Card | | | What it switches off |
+**The tie-winning family — all six.** These came out of the beginner pool together on 2026-09-17, ANTICIPATE and REBUTTAL out of the seated Oracle 63 to do it.
+
+| Card | | | |
 |------|---|---|---|
-| **DEAD HEAT** | Red | Ranged d8 | On a tie, the defender's Defense Effect does not trigger. |
-| **INVERT** | Blue | Both d4 | Cancels the other side's Effect outright, either half. |
-| **PARADOX** | Blue | Ranged d6 | Reverses the RPS outcome outright. Not a nudge — an inversion. |
+| **ANTICIPATE** | Blue | Melee d6 | `Defense Effect: You win on a tie.` |
+| **REBUTTAL** | Blue | Melee d6 | `Special Rule: If you would lose this exchange, it is a tie instead.` |
+| **STAND** | Red | Melee d8 | `Wins ties`, cancelling against another copy. |
+| **ADAPT** | Green | Both d4 | `Wins ties`, same clause. |
+| **CALL** | Blue | Ranged d6 | `Wins ties`, same clause. |
+| **PUNISH** | Blue | Both d4 | `Defense Effect: You win on a tie.` |
+
+**Cancelling or reversing an outcome.**
+
+| Card | | | |
+|------|---|---|---|
+| **PARADOX** | Blue | Ranged d6 | Reverses the RPS outcome outright. |
 | **UNNAME** | Blue | Melee d4 | The other side's Defense Effect never fires. |
+| **DEAD HEAT** | Red | Ranged d8 | On a tie, the defender's Defense Effect does not trigger. |
+| **INVERT** | Blue | Both d4 | Cancels the other side's Effect, either half. |
 
 ---
 
@@ -47,42 +60,33 @@ The rule is in `rules/cards.md`, The Oracle Deck. It governs starting decks only
 
 | Card | | | Which line |
 |------|---|---|---|
-| **BLANK** | Blue | Ranged d6 | Forces a discard at random. |
 | **BREAK** | Red | Melee d6 | Defender reveals their hand. |
-| **ERODE** | Blue | Ranged d6 | Reduces an enemy's Soul for the combat. |
-| **FORGET** | Blue | Melee d4 | Exiles the enemy's played card, which takes it out of their discard-and-reshuffle cycle for the fight. |
-| **FRACTURE** | Blue | Ranged d8 | Same, conditionally. |
 | **PRESS THE WOUND** | Red | Both d6 | Defender announces their status cards, and the damage scales off the count. |
 | **PROBE** | Blue | Ranged d4 | Looks at the defender's hand. |
-| **RATTLE** | Red | Melee d8 | Staggered on both halves. The near-ban keeps exactly one Red card, and it is OFF BALANCE. |
-| **REND** | Red | Melee d6 | Adds a Wound to the bottom of the defender's deck. |
 | **SUNDER** | Red | Melee d6 | Target loses 1 Mind for the combat. |
-| **TABLE STAKES** | Red | Both d6 | Staggered on the Blue branch of its gamble. |
-| **TAINT** | Blue | Melee d4 | Adds a Wound to the bottom of the enemy's deck. |
-| **TOPPLE** | Green | Both d4 | Staggered on both halves. |
-| **UNBURDEN** | Green | Both d4 | Transfers status cards out of an ally's hand into the defender's. |
 | **WITHER** | Green | Ranged d6 | Target loses 1 Body for the combat. |
-
----
-
-## Judgement calls, not bar failures
-
-Neither is caught by the letter of a bar. Both are here on the spirit of one, and both are cheap to move back.
-
-| Card | | | The argument |
-|------|---|---|---|
-| **ABANDON** | Red | Melee 2d8 | The defence half stops the attacker defending at all the next time you attack them. That is Staggered without the keyword, so the near-ban does not catch it — but it is the same swing, and it is the reason the ban exists. |
-| **STEAL** | Green | Both d4 | Takes a consumable off the defender. It touches no card and no stat, so the content rule's list does not name it, but the sentence that list ends on does: the line is between changing the situation and going through their possessions. |
+| **ERODE** | Blue | Ranged d6 | Target loses 1 Soul for the combat. |
+| **REND** | Red | Melee d6 | Adds a Wound to the bottom of the defender's deck. |
+| **TAINT** | Blue | Melee d4 | Adds a Wound to the bottom of the enemy's deck. |
+| **UNBURDEN** | Green | Both d4 | Transfers status cards out of an ally's hand into the defender's. |
+| **BLANK** | Blue | Ranged d6 | Forces a discard at random. |
+| **FORGET** | Blue | Melee d4 | Exiles the enemy's played card, taking it out of their discard-and-reshuffle cycle for the fight. |
+| **FRACTURE** | Blue | Ranged d8 | Same, conditionally. |
+| **RATTLE** | Red | Melee d8 | Staggered on both halves. The near-ban keeps exactly one Red card, and it is OFF BALANCE. |
+| **TOPPLE** | Green | Both d4 | Staggered on both halves. |
+| **TABLE STAKES** | Red | Both d6 | Staggered on the Blue branch of its gamble. |
 
 ---
 
 ## Notes
 
-**The tie-winning family is six cards, not two.** ANTICIPATE and REBUTTAL are seated and knowingly kept — winning a tie advances nobody on its own, and Pat is going to chase it anyway. Reading the rest of the pool turned up four more that do the same thing: STAND (Red), ADAPT (Green), CALL (Blue) and PUNISH (Blue). All four are cleared for the beginner pool, because filing them anywhere else would contradict the call already made on the first two. **CALL sat in this file for one day before that was caught.** The exposure is three times what it looked like — worth knowing before a deck gets built out of the bench.
+**The tie-winning family decided bar 1.** The bar started as "one step against an inversion" — ANTICIPATE turning a tie into a win was a nudge and cleared; PARADOX flipping the outcome did not. That line held for exactly as long as the family looked like two cards. Reading the rest of the pool found four more, and the argument that kept the first two — a tie advances nobody on its own — is about one card at a time, not about a deck that stacks six. All six moved on 2026-09-17, which cost the Oracle 63 two Blue melee seats. **The bar is simpler now, and better: a beginner card does not touch resolution.**
 
-**ABANDON inflicts Staggered without the word.** The near-ban is written against the keyword, and ABANDON's defence half stops the attacker defending at all next time you attack them, which is the same swing by another name. It is here on judgement rather than on the letter of the bar, and the loophole is worth closing in the rule itself.
+**ABANDON was cut rather than moved here.** Its defence half stopped the attacker defending at all the next time you attacked them — Staggered's whole effect with the keyword left off, so the near-ban never caught it. A card whose design is a loophole in a rule is not a card the rule should have to keep answering. It is in `experimental/archives/cut-cards.md` with the two references it left behind.
 
-**PROBE and PROFILE traded jobs on 2026-09-17.** PROFILE's defence half used to read the attacker's hand, and was rewritten on 2026-09-08 to qualify for the expansion. PROBE has taken that job over — looking at the defender's hand is now its whole attack half — which moves PROBE here and leaves PROFILE a beginner card. It also settles a dominance bug: the two were separated by a die and one point of Scry, with PROFILE strictly better in every game state. They are different cards now, in different tiers.
+**STEAL came back out.** It used to take a consumable off the defender, which is going through their possessions. It takes one stack of a Positive Status Effect now, which is the thing the content rule expressly permits — removing buffs an enemy already has. DRAIN takes the whole effect; STEAL takes a single charge, and exiles itself doing it.
+
+**PROBE and PROFILE traded jobs.** PROFILE's defence half used to read the attacker's hand and was rewritten on 2026-09-08 to qualify for the expansion. PROBE has taken that job over, which moves PROBE here and leaves PROFILE a beginner card. It also settles a dominance bug: the two were separated by a die and one point of Scry, with PROFILE strictly better in every game state.
 
 **TURN and the older fix.** TURN's redirect was sanded off by an earlier pass because the card sat in the Oracle pool and the effect was too strong for a starting deck. What was left could not resolve — it redirected "this attack's damage" on a clean defender win, and a defender who wins cleanly takes no damage in the first place. Its own flavour line kept the original intent the whole time: *"It has to land somewhere. Somewhere is negotiable."* **This tier exists so that the answer to "too strong to start" stops being "weaken it until it is not."**
 
@@ -93,3 +97,4 @@ Neither is caught by the letter of a bar. Both are here on the spirit of one, an
 - `cards/tiers/README.md` — what the tiers are and how a card moves between them
 - `cards/tiers/beginner.md` — the cards that cleared
 - `rules/early-campaign-cards.md` — the screen and its four bars
+- `experimental/archives/cut-cards.md` — cards cut outright, with reasons

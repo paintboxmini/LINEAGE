@@ -62,6 +62,20 @@ Range: Melee
 
 *Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
 
+## Core set — cut for inflicting Staggered without the keyword
+
+**ABANDON**
+RED — BODY
+Attack: Body + 2d8
+Effect: Cannot defend until your next turn
+Defense Effect: The attacker cannot defend next time you attack them
+Range: Melee
+*"Guard is a thing you can put down. So put it down."*
+
+*Cut 2026-09-17, during the early-campaign screen (`rules/early-campaign-cards.md`). Staggered has been near-banned since 2026-09-06 because it eats a whole attack or a whole defence, and the ban is written against the keyword. ABANDON's defence half stops the attacker defending at all the next time you attack them, which is the same swing with the word left off, so nothing caught it for eleven days. The doubled die was the other half of the problem: `2d8` gave it the highest damage ceiling of any Red melee card, paid for with a drawback that only hurts you on a turn you were attacking anyway. It goes rather than moving to the middle tier — a card whose whole design is a loophole in a rule is not a card the rule should have to keep answering.*
+
+*Two consequences. `rules/cards.md` cited ABANDON's `2d8` twice as the example of a doubled die on the Attack line, and it was the only card in the pool with that shape; both citations now point at TWIN STRIKE's `(Soul + d4) x 2` instead, which doubles the whole attack rather than the die. And the Corrupted Bather ran it (`bestiary/corrupted-bather.md`), where MAUL takes the slot — d8 with Deadly and +2 damage, the nearest Red melee card by output without reaching for a d10.*
+
 ## Core set — cut as strictly dominated
 
 **HESITATE**
