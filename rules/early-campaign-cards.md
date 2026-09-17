@@ -24,7 +24,7 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 
 ---
 
-## The roster (81)
+## The roster (82)
 
 `*` marks a card from the expansion; the rest are the Oracle 63.
 
@@ -37,11 +37,11 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 **Both (8).** BLOOD TITHE* · CHARGE · FOOTWORK · GROUNDING STANCE · PROVOKE* · PULL · SECOND WIND · SLIP THE BLADE
 
 
-### Blue — Mind (25)
+### Blue — Mind (26)
 
 **Melee (6).** ANTICIPATE · CLIMB · DEFLECT · DISTRACT · INTERRUPT · REBUTTAL
 
-**Ranged (15).** AXIOM · CALCULATE · CALLED SHOT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PARTITION · PINNED · PROFILE* · STUDY · UNDERSTANDING* · VEIL
+**Ranged (16).** AXIOM · CALCULATE · CALLED SHOT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PARTITION · PINNED · PROFILE* · RETORT* · STUDY · UNDERSTANDING* · VEIL
 
 **Both (4).** REALIGNMENT · SIDESTEP · STILL POINT · WAITING GAME*
 
@@ -83,9 +83,18 @@ Every one of these is a perfectly good card. They belong in creature decks, char
 
 ## Open
 
-- **Blue's expansion block is at 4 of 7.** It needs one ranged and two melee. The melee shortage is solved: PRESSURE, FOCUSED STANCE, PARRY and INTERCEPT were written on 2026-09-17 to sit beside CORNER, so Blue melee has five candidates where it had one. Which two get seated is open, and it interacts with the die means — PRESSURE is a d8, and any melee pair including it puts Blue at 3.36 or above, level with Red. Holding Blue's old 3.21 needs the three open seats to come to 9.5 in mean die, which is one d8 and two d4s.
-- **The ranged seat has not been shortlisted.** Blue's ranged bench is deep but much of it fails the screen — BLANK forces a discard, FRACTURE exiles the enemy's played card, ERODE reduces a stat. DECODE, PROBE, DISSECT, RETORT, CHAIN and DRAIN are the likely candidates and have not been read properly yet.
+- **Blue's expansion block is at 5 of 7 — two melee seats open.** RETORT took the ranged seat on 2026-09-17. The melee pair is the last open question. PARRY and FOCUSED STANCE are the recommendation: between them they refill **Blind** and **Ward**, the two keywords that went to zero when UNRAVEL and PARADOX came out, and two d6s after RETORT's d4 put Blue back on a mean die of exactly 3.214, where it sat before. PRESSURE is the better card by name and the better card in the abstract, but it is a d8 that fills no gap, and seating it puts Blue at 3.36 — level with Red, which is the shape this screen spent a pass correcting in Green.
+- **Three keywords are at zero in the expansion and cannot be filled from Blue.** Lifesteal and Ward left with PARADOX; Vulnerable and Blind left with UNRAVEL. No Blue ranged bench card carries Lifesteal, Vulnerable or Quick at all, so if those matter they have to come from another colour or a new card. FOCUSED STANCE and PARRY recover two of the four.
 - **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use.
+
+---
+
+## Bugs the screen turned up
+
+Neither is a verdict on early play — both are pool problems worth fixing whoever ends up holding the card.
+
+- **PROBE is strictly dominated by PROFILE.** Same colour, same Ranged, identical defence halves. PROFILE has the bigger die (d6 against d4) and the better attack half (Scry 2 against Scry 1). There is no state of the game in which you would rather hold PROBE. This is the shape of the Red/Green BRACE collision (`experimental/archives/cut-cards.md`) without the shared name: two cards, one job, one of them strictly worse.
+- **TURN's defence half may not be resolvable.** It reads `Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.` A defender who wins cleanly takes no damage at all — Attack Resolution is explicit that a defender win means no damage (`rules/combat.md`). So on the only outcome the card allows, there is no damage to redirect. Either the card means to override that and should say so, or it needs rewriting.
 
 ---
 

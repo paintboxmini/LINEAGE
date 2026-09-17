@@ -388,14 +388,32 @@ SETS = {
         #     PARADOX — reverses the RPS outcome, the core resolution.
         # All three are untouched in the pool.
         #
-        # *** THE BLUE BLOCK IS SHORT AND THE SPLIT IS BROKEN. *** Blue is
-        # at 4 of 7 and needs 1 ranged and 2 melee. The melee pair is the
-        # hard one: Blue's entire melee bench is TAINT, UNNAME, UNRAVEL and
-        # CORNER, and with UNNAME and UNRAVEL out on this screen and TAINT
-        # barred by the content rule, CORNER is the only legal Blue melee
-        # card left in the pool. One seat can be filled; the second cannot,
-        # from the bench, without writing a new card. Left visibly short
-        # rather than filled quietly — this is a decision, not an oversight.
+        # *** THE BLUE BLOCK IS STILL SHORT. *** Ranged is full; two melee
+        # seats are open. When the three came out, Blue's entire melee bench
+        # was TAINT, UNNAME, UNRAVEL and CORNER — three of them gone on this
+        # screen or the content rule, leaving one card for two seats. Four
+        # Blue melee cards were written on 2026-09-17 to fix that (PRESSURE,
+        # FOCUSED STANCE, PARRY, INTERCEPT); which two sit here is open.
+        # Left visibly short rather than filled quietly.
+        #
+        # The ranged seat went to RETORT on 2026-09-17, on two counts.
+        # Thorns scales by colour rather than by die and range — Green 2,
+        # Blue 3, Red 4, a game-wide rule (`rules/cards.md`) — and across
+        # all 81 seated cards Thorns appears three times in Green and once
+        # in Red, at the documented exception value of 2. Blue's rung was
+        # never taught anywhere in the deck, and RETORT is the card the
+        # rules doc cites to explain it. It also takes Weak from 1 to 2,
+        # and at d4 it is exactly the die the colour mean has room for:
+        # two melee d6s after it put Blue back on 3.214, where it sat
+        # before the three cards came out.
+        #   Passed over: DISSECT (Exile 1 -> 2, but self-facing upkeep),
+        #     CHAIN (the only splash damage in either set — a real gap, but
+        #     splash is not a promised ladder the way Thorns is), DRAIN
+        #     (a third buff-manipulation card behind WAITING GAME and LEVEL
+        #     THE FIELD, and dead against anything with no buffs), UNMAKE
+        #     (two Exhaust into a new player's hand), DECODE and REDIRECT
+        #     (both d8, no room in the budget), PROBE and TURN (both have
+        #     problems of their own — see `rules/early-campaign-cards.md`).
         #
         # Also this round: ALIGN -> MATCHED PAIR, which is what the card
         # always was (Scry 2, check whether the two match — nothing about
@@ -410,8 +428,8 @@ SETS = {
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
-            # Blue (4 of 7 — SHORT: needs 1 ranged and 2 melee, see above)
-            'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR',
+            # Blue (5 of 7 — SHORT: ranged is full, still needs 2 melee)
+            'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR', 'RETORT',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
             'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
