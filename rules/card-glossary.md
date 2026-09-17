@@ -28,7 +28,7 @@ Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effe
 **(6) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
-**(18) Deadly**
+**(17) Deadly**
 The next time you roll attack damage, add an additional d6 to the result. Stacks: each stack applies to one future damage roll, not extra dice on the same roll. 1 stack of Deadly and 1 stack of Weak held at the same time cancel each other out.
 
 **(10) Weak**

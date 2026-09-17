@@ -14,7 +14,7 @@ Range: Melee
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Move any target to the position of your choice.
 Defense Effect: Move any target to the position of your choice.
 Range: Ranged
@@ -26,7 +26,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Discard 2, draw 2
-Defense Effect: Give any target Deadly.
+Defense Effect: Make a DC 13 Mind/Reason check. On a success, the attacker reveals their stats.
 Range: Ranged
 *"Small observations build great understanding."*
 

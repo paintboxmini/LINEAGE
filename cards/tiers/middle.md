@@ -76,6 +76,16 @@ Ruled on 2026-09-17 as a keyword, not card by card. Healing off the damage you d
 
 ---
 
+## Fails bar 3 — costs a whole attack or a whole defence
+
+The ban was rewritten on 2026-09-17 to bar the effect rather than the Staggered keyword. It caught a seated card within the hour.
+
+| Card | | | |
+|------|---|---|---|
+| **PARTITION** | Blue | Ranged d4 | `Target cannot attack or be attacked until your next turn.` Both halves. It was in the Oracle 63 from the beginning, and the keyword-shaped version of the ban never saw it. |
+
+---
+
 ## Fails bar 2 — more than one status on a single half
 
 | Card | | | |
@@ -112,6 +122,8 @@ The rule is in `rules/cards.md`, The Oracle Deck. It governs starting decks only
 ## Notes
 
 **The tie-winning family decided bar 1.** The bar started as "one step against an inversion" — ANTICIPATE turning a tie into a win was a nudge and cleared; PARADOX flipping the outcome did not. That line held for exactly as long as the family looked like two cards. Reading the rest of the pool found four more, and the argument that kept the first two — a tie advances nobody on its own — is about one card at a time, not about a deck that stacks six. All six moved on 2026-09-17, which cost the Oracle 63 two Blue melee seats. **The bar is simpler now, and better: a beginner card does not touch resolution.**
+
+**PARTITION is what the rewritten ban was for.** ABANDON was cut for standing in the Staggered loophole and the rule was rewritten to bar the effect instead of the word. The first thing the new rule caught was a card that had been seated in the Oracle 63 since the beginning, phrased so plainly that nobody reading for "Staggered" ever saw it. The rule earned its rewrite inside an hour.
 
 **ABANDON was cut rather than moved here, and the rule it exploited is rewritten.** Its defence half stopped the attacker defending at all the next time you attacked them — Staggered's whole effect with the keyword left off, so the near-ban never caught it. The ban in `rules/cards.md` now bars the effect rather than the word: costing an enemy a whole attack or a whole defence is out however it is phrased, and "cannot attack" counts the same as "cannot defend". ABANDON is in `experimental/archives/cut-cards.md` with the two references it left behind.
 

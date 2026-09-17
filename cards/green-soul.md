@@ -180,7 +180,7 @@ Attack: Soul + d4
 Effect: Gain Evade.
 Defense Effect: Gain Evade.
 Range: Both
-*"You become the mark that shouldn't be there, wearing darkness as perfect armor."*
+*"Be where the swing already went."*
 
 ---
 

@@ -150,7 +150,7 @@ SETS = {
             #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
             'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
-            'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
+            'LAST RESORT', 'MARKED', 'CHAIN', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
             'INTERCEPT', 'REALIGNMENT', 'CORNER', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
