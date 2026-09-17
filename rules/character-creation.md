@@ -96,8 +96,9 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 **Accessories are the small stuff**, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.
 
 - **An accessory modifies checks, saves and perception. Never combat.** No damage, no Armour, no keywords, no card effects, no initiative. That line is the whole reason they are cheap and the whole reason there can be hundreds of them.
-- **The standard grant is +2 to a named, narrow band** — the same size and shape as a Skill's bonus (`rules/resolution.md`, Skills), so it plugs into a number every player already knows. *+2 to moving unseen. +2 to persuading a stranger. +2 to keeping your feet on bad ground.*
-- **They stack with a Skill and not with each other.** Training and equipment are different sources, so a Skill's +2 and an accessory's +2 both apply. **Two accessories covering the same ground do not** — the second one is redundant, and wearing three stealth cloaks is still +2.
+- **They come in three classes — +1, +2 and +3 to a named, narrow band** (`rules/equipment.md`, Pricing Accessories). **+2 is the default**, matching a Skill's bonus exactly (`rules/resolution.md`, Skills), so it plugs into a number every player already knows. *+1 to reading a document. +2 to moving unseen. +3 to keeping your feet on bad ground.*
+- **Name the band before you pick the number**, and keep it narrow enough to say in five words. A ring that helps with "social situations" is not an accessory.
+- **They stack with a Skill and not with each other.** Training and equipment are different sources, so a Skill's +2 and an accessory's +2 both apply. **Two accessories covering the same ground do not** — you get the larger of the two, so a +1 cloak and a +3 cloak is +3, not +4.
 
 **Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
 

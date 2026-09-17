@@ -103,15 +103,29 @@ Adjust from there for what actually happens at the table:
 
 ## Pricing Accessories
 
-**A flat ~100 gold. There is no ladder.**
+Accessories are permanent and always-on like a Tier 1 item, but they are barred from combat entirely — they modify checks, saves and perception and nothing else (`rules/character-creation.md`, Equipment). That restriction is what they pay for, and it is not negotiable: the moment an accessory touches damage, Armour, a keyword or the wheel, it is a Weapon, Armor or Artifact and it is priced as one.
 
-Accessories are permanent and always-on like a Tier 1 item, but they are barred from combat entirely — they modify checks, saves and perception and nothing else (`rules/character-creation.md`, Equipment). That restriction is what they are paying half a Tier 1 for, and it is not negotiable: the moment an accessory touches damage, Armour, a keyword or the wheel, it is a Weapon, Armor or Artifact and it is priced as one.
+**Three classes, and the step between them is ×4:**
 
-**The standard grant is +2 to a named narrow band**, the same shape as a Skill (`rules/resolution.md`). A cloak for going unseen. A ring for being believed. Boots for holding your feet on bad ground.
+| Class | Grant | Price |
+|---|---|---|
+| **Minor** | +1 to a named narrow band | ~50 gold |
+| **Standard** | +2 to a named narrow band | ~200 gold |
+| **Major** | +3 to a named narrow band | ~800 gold |
 
-**One flat price, on purpose, because this list is supposed to get enormous.** A category meant to hold hundreds of small objects cannot also carry a budget calculation — the design cost per item has to be near zero or nobody will ever write the hundredth one. If an accessory feels worth more than 100 gold, widen the band rather than raising the price; if that makes it worth more than a Tier 1 weapon, it was never an accessory.
+**The band is the thing being priced, not the number.** *+2 to moving unseen. +1 to reading a document. +3 to keeping your feet on bad ground.* Name the ground it covers before you pick the bonus, and make it narrow enough to say in five words — a ring that helps with "social situations" is not an accessory, it is a mistake.
 
-**Two accessories cost what one Tier 1 costs**, which is the intended equivalence: a fully accessorised character has spent the same as one real piece of gear and got breadth instead of a fight-winning number. At Tier 1 pacing that is about two and a half sessions for the first one, so **accessories are what a party can afford before their first weapon** — small character-defining things first, the big stuff after.
+**+2 is the default and should be most of the list.** It matches a Skill's grant exactly (`rules/resolution.md`), which is the number every player already has a feel for.
+
+**The curve is steep on purpose, the same as the weapon and armor tiers.** A Major costs sixteen times a Minor for three times the number, because breadth is supposed to be the cheap way to buy competence and depth is supposed to hurt. Two Minors in different bands cost 100 gold; one Major costs 800.
+
+**A Major costs exactly what a Tier 2 weapon costs**, and that equivalence is the one to keep in mind when pricing anything new here: *being reliably excellent at one thing outside a fight is worth about as much as being meaningfully better inside every fight.* If that trade ever stops feeling right, this table is the thing to move.
+
+**One number per class, no budget maths, because this list is supposed to get enormous.** A category meant to hold hundreds of small objects cannot also carry a calculation — the design cost per item has to be near zero or nobody will ever write the hundredth one. If an accessory feels like it is worth more than its class, widen the band rather than inventing a price.
+
+**Stacking.** They stack with a Skill and not with each other (`rules/character-creation.md`, Equipment). Two accessories covering the same ground is still whichever grant is larger — a Minor and a Major for stealth is +3, not +4.
+
+**Pacing.** At Tier 1 pacing a character earns about 40 gold a session, so a Minor is one session, a Standard is five, and a Major is the same twenty-session reach as a Tier 2 weapon. **The Minor class is the point**: it is the first thing in the game a party can actually afford, and it is how a character starts being specifically themselves before they own anything that matters in a fight.
 
 ---
 
