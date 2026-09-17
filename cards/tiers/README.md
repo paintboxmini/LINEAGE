@@ -14,7 +14,9 @@ Three pools, in order of when a table meets them. A card sits in exactly one.
 
 **Moving a card between tiers.** Change it here, and check three things: whether it is seated in a set (`printing/generate-cards.py`), whether any creature or character deck runs it (`bestiary/`, `characters/`), and whether the keyword counts in `rules/card-glossary.md` still hold. A tier move on its own changes none of those — tiers are about eligibility, not about where a card is printed — but a card usually moves tiers because its text changed, and text changes do move all three.
 
-**What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card — PRESSURE and INTERCEPT are both eligible and both unseated. And 82 cards in the core lists have never been screened at all, so neither list is finished. Blue dominates `middle.md` for exactly that reason: it is the only colour that has been read end to end.
+**What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card — 55 of them sit on the bench, including STRIKE. Being unseated is not a verdict.
+
+**Coverage.** All 163 cards in the three core colour lists were screened on 2026-09-17: 139 cleared, 24 in the middle tier. That is the core pool only — creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since they are not drawn from by players.
 
 ---
 

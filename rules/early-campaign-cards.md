@@ -2,7 +2,7 @@
 
 The Oracle content rule in `rules/cards.md` says what a starting deck **may not do**. This is the other half: the specific cards that have been looked at and cleared for a first campaign. A card being legal under the content rule is not the same as a card being right for players who are still learning what the reveal is.
 
-Started 2026-09-17 from the cards already seated — the Oracle 63 and the expansion. **82 more cards sit in the core lists unscreened**, so this roster is a floor, not a ceiling. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
+Started 2026-09-17 from the cards already seated, and finished the same day: **all 163 cards in the three core colour lists have been screened** — 139 cleared, 24 sent to the middle tier. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
 
 ---
 
@@ -12,7 +12,7 @@ Four bars. The first two were derived from three cards Drew pulled on 2026-09-17
 
 **1. It does not switch off a rule the players are still learning.** The reveal, the Effect, the Defense Effect — a first deck should have players using those, not turning them off. UNNAME stopped a Defense Effect from ever firing; PARADOX reversed the RPS outcome outright.
 
-*Tested:* exactly two seated cards touch resolution at all, and both only improve a bad outcome by one step rather than inverting it — ANTICIPATE wins a tie, REBUTTAL turns a loss into a tie. Nudging the result one step is a different thing from reversing it. Both are flagged below rather than cut, because that line is a judgement call and the cards are already in players' hands.
+*Tested:* the line that came out of it is **one step against an inversion**. ANTICIPATE turns a tie into a win, REBUTTAL turns a loss into a tie — one step, and they clear. PARADOX flips the outcome, DEAD HEAT and INVERT cancel an Effect outright — those fail. Reading the whole pool turned up four more one-step cards (STAND, ADAPT, CALL, PUNISH); all four clear, and the family is six, which is worth knowing before somebody drafts toward it.
 
 **2. One status per half.** UNRAVEL granted Vulnerable *and* Blind on the same Effect.
 
@@ -44,8 +44,9 @@ Every one of them is a good card. Failing this screen is a statement about when 
 
 ## Open
 
-- **Lifesteal and Quick are at zero in the expansion.** Lifesteal left with PARADOX and Quick was never there. Blind, Ward and Vulnerable came back — PARRY, FOCUSED STANCE and PROFILE's rewrite covered them. No Blue bench card carries Lifesteal or Quick at all, so filling them means another colour or a new card, and it is not obvious either is owed a seat.
-- **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use. Both tier lists stay unfinished until that happens.
+- **The Staggered near-ban has a loophole, and ABANDON is standing in it.** The ban is written against the keyword. ABANDON's defence half stops the attacker defending at all the next time you attack them, which is Staggered's whole effect without the word, so nothing catches it. ABANDON is in the middle tier on judgement; the rule itself should probably be rewritten to bar the effect rather than the keyword.
+- **Lifesteal and Quick are at zero in the expansion.** Lifesteal left with PARADOX and Quick was never there. Blind, Ward and Vulnerable came back — PARRY, FOCUSED STANCE and PROFILE's rewrite covered them. No Blue bench card carries Lifesteal or Quick, so filling them means another colour or a new card, and it is not obvious either is owed a seat.
+- **STRIKE has never been seated.** The plainest card in the game, and the one `rules/combat.md` cites to explain the d10 tier, is on the bench in both sets.
 
 ---
 

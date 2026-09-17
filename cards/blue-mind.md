@@ -55,7 +55,7 @@ Range: Ranged
 **TURN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Defender gains Weak
+Effect: Defender gains Weak. Apply Initiative Shift -2 to them.
 Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against a target of your choice instead of you, at full damage, spending the attacker's statuses on it as it goes.
 Range: Ranged
 *"It has to land somewhere. Somewhere is negotiable."*

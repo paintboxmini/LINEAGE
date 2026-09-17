@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The 84 cards cleared for a first campaign: the Oracle 63 and the expansion 21. `*` marks a card from the expansion.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 55 more are cleared and on the bench, 139 in all. `*` marks a card from the expansion.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
@@ -38,19 +38,39 @@ Each colour is 28, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/16 in Green — the 
 
 ## Cleared, but worth watching
 
-- **ANTICIPATE** *(Blue, Melee)* — `Defense Effect: You win on a tie.`
-- **REBUTTAL** *(Blue, Melee)* — `Special Rule: If you would lose this exchange, it is a tie instead.`
+Six cards in the pool win or salvage a tie. All six clear bar 1, because improving a bad outcome by one step is a different thing from reversing it — PARADOX flips the outcome and is middle tier; these nudge it.
 
-The only two seated cards that reach into resolution. Both improve a bad outcome by one step rather than reversing it, which is why they survive bar 1 where PARADOX did not. Kept knowingly: winning ties is an exploit players will find — Pat is already looking for it — and the balance is that a tie advances nobody on its own.
+| Card | | | |
+|------|---|---|---|
+| **ANTICIPATE** | Blue | Melee d6 | `Defense Effect: You win on a tie.` — seated |
+| **REBUTTAL** | Blue | Melee d6 | `Special Rule: If you would lose this exchange, it is a tie instead.` — seated |
+| **STAND** | Red | Melee d8 | `Wins ties`, cancelling against another copy — bench |
+| **ADAPT** | Green | Both d4 | `Wins ties`, same clause — bench |
+| **CALL** | Blue | Ranged d6 | `Wins ties`, same clause — bench |
+| **PUNISH** | Blue | Both d4 | `Defense Effect: You win on a tie.` — bench |
+
+Kept knowingly: winning a tie advances nobody on its own, and Pat is going to chase it whatever the pool looks like. **The thing to know is that the family is six cards, not two.** A deck built out of the bench could stack four more of these on top of the two already seated, and the balancing argument — that a tie is worth little by itself — is about one card at a time, not about a deck built around them. Worth a look the first time somebody drafts toward it.
 
 ---
 
-## Eligible but unseated
+## Eligible but unseated (55)
 
-Beginner-legal, written, and not in a printed set. Available for any later seat.
+Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
-- **PRESSURE** *(Blue, Melee, d8)* — the defender cannot play the color they just played on their next reveal. The best of the four Blue melee cards written on 2026-09-17, benched because it fills no keyword gap and its d8 would have put Blue level with Red.
+**Red (24).** ANCHOR · BLEED · BRACE · CLEAVE · DART · DIG IN · ENDURE · EXPEND · GORE · HAMMER · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · SKEWER · STAND · STAUNCH · STRIKE · WARSONG
+
+**Blue (11).** CALL · CHAIN · CORNER · DECODE · DISSECT · DRAIN · PUNISH · REDIRECT · SLIPSTREAM · TRACE · UNMAKE
+
+**Green (20).** ABIDE · ADAPT · ALIGN · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HARMONIZE · HASTEN · PATIENCE OF STONE · RESONATE · SEED · SHELTER · STIR · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
+
+Two of these were written on 2026-09-17 for the Blue melee shortage and are worth naming:
+
+- **PRESSURE** *(Blue, Melee, d8)* — the defender cannot play the color they just played on their next reveal. The best of the four, benched because it fills no keyword gap and its d8 would have put Blue level with Red.
 - **INTERCEPT** *(Blue, Melee, d8)* — the defender must target you next turn; Protect and Ward on defence.
+
+And one is a surprise: **STRIKE is on this list.** The plainest card in the game, the one `rules/combat.md` uses to explain the d10 tier, has never been seated in an Oracle set.
+
+---
 
 ---
 
