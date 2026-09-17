@@ -325,8 +325,8 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
-Attack: Body + d10 + 1d6. Gain Vulnerable.
-Effect: Deal +1 damage.
+Attack: Body + d10 + 1d8. Gain Vulnerable.
+Effect: None.
 Defense Effect: Gain Resist.
 Range: Melee
 *"You don't swing like that unless you mean it."*

@@ -256,9 +256,11 @@ SETS = {
         # Four cards needed rebalancing to qualify, all in `cards/`:
         #   UNNAME  — its defence half forced a random discard. Now mirrors
         #             the attack half: the attacker's Effect does not fire.
-        #   FORGET  — its attack half forced a discard. Now mirrors its own
-        #             legal defence half, exiling the played card on a clean
-        #             win, which is what the card was always about.
+        #   FORGET  — its attack half forced a discard, so it was made to
+        #             mirror its defence half instead, exiling the played
+        #             card on a clean win. That rewrite did not qualify it:
+        #             the defence half it copied was never legal either, and
+        #             the card left the set on 2026-09-17. See that pass.
         #   PROFILE — its defence half read the attacker's hand. Now a
         #             smaller version of its own attack half.
         #   CONSUME — destroying a card out of your own hand was mandatory,
@@ -266,15 +268,19 @@ SETS = {
         #             since 2026-09-17 it Exiles rather than destroys. The
         #             card itself left the set in that same pass; both
         #             rewrites stand in the pool.
-        # The first three were barred by the content rule, and they were
-        # Blue's ONLY three melee bench cards — without the rewrites Blue
-        # could not have filled its two melee slots from the pool at all.
+        # The first three were barred by the content rule. UNNAME and
+        # PROFILE are the two that the rewrites actually cleared; FORGET is
+        # out. (An older version of this note called those three Blue's only
+        # melee bench cards. They were not — PROFILE is Ranged, and Blue's
+        # real melee bench is TAINT, UNRAVEL and CORNER. UNRAVEL took
+        # FORGET's seat on 2026-09-17.)
         #
         # What the 21 were chosen to fill, measured against the first set:
         #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
         #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
-        #     CONSUME, SPARK OF VIOLENCE. CONSUME left on 2026-09-17, so
-        #     Lifesteal is down to PARADOX alone.
+        #     CONSUME, SPARK OF VIOLENCE. CONSUME and FORGET both left on
+        #     2026-09-17, so Lifesteal is down to PARADOX alone and Exile to
+        #     BURN BRIGHT alone. One card each, but not zero.
         #   Scry was at 3 and three more were asked for: UNDERSTANDING,
         #     PROFILE, ALIGN. All Blue, which is where the bench keeps Scry
         #     — not the only place it could come from, though: STIR is a
@@ -306,9 +312,9 @@ SETS = {
         # 2026-09-17, Drew's balance pass over the printed expansion sheet.
         # The measured complaint was Green: its mean die was 3.357 and Red's
         # was 3.357, exactly level, which inverts the one thing Red is
-        # supposed to own. Five of the changes below are Green's and take it
-        # to 2.93; OVERCOMMIT raises the Red ceiling Green was being measured
-        # against; BLOOD TITHE is an unrelated fix caught in the same pass.
+        # supposed to own. It lands at 2.93 by the end, with Red unmoved
+        # and Blue between them. A second round the same day follows the
+        # first list.
         #   out:     HEAVE AND HAUL — too strong for this set. Untouched in
         #            the pool.
         #   out:     CONSUME — and it took the set's only Blind with it.
@@ -329,16 +335,43 @@ SETS = {
         #            defence half heals more than its attack half (4 and 8),
         #            and there the 8 is gated to a Collapsed ally. BLOOD
         #            TITHE's was not gated to anything.
-        #   changed: OVERCOMMIT, which is in neither set — +1 damage, and a
-        #            Resist on the defence half that had been empty. It is
-        #            the pool's damage ceiling and UNDERSTANDING had climbed
-        #            to within a point of it: 8.0 mean on the dice against
-        #            9.0. The gap is 2.0 now, and the ceiling moved rather
-        #            than the Blue card getting cut down.
-        # Mean die across the 21 lands Red 3.36 / Blue 3.07 / Green 2.93 —
+        #   changed: OVERCOMMIT, which is in neither set — its +1d6 rider
+        #            is +1d8 now, and the defence half that had been empty
+        #            gains Resist. It is the pool's damage ceiling and
+        #            UNDERSTANDING had climbed to within a point of it: 8.0
+        #            mean on the dice against 9.0. The ceiling is 10.0, and
+        #            it moved rather than the Blue card getting cut down.
+        #            The first version of this change put a flat +1 on the
+        #            Effect line; Drew pointed out that a die step does the
+        #            same arithmetic and keeps Effect: None, which is the
+        #            whole point of the card. No card in the pool carries a
+        #            flat integer on an Attack line either.
+        #
+        # Second round, same day:
+        #   out:     FORGET — it exiles the enemy's played card, which is
+        #            the content rule's "manipulate an enemy's deck" wearing
+        #            a costume: the card leaves their discard-and-reshuffle
+        #            cycle for the rest of the fight. Every other card in
+        #            both sets touches only its own side's cards or the
+        #            board; FORGET was the single exception, and the
+        #            2026-09-08 rewrite recorded above made it worse rather
+        #            than legal. FRACTURE does the same thing and is bench,
+        #            where the rule is already doing its job.
+        #   in:      UNRAVEL, Melee, d6 — pure status application, so it is
+        #            legal, and it fills Blind and Vulnerable, both of which
+        #            were at 0 across these 21 once CONSUME left.
+        #   changed: CHANNEL's halves are gated to "Only on a tie." A
+        #            three-way choice and a party-wide buff were too much to
+        #            hand out on an ordinary win. A tie is the outcome
+        #            nobody chose, which is when a card like this should pay.
+        #   changed: ROOTED OATH d6 -> d4 and FIELD MEDICINE d4 -> d6. The
+        #            pair leaves Green's mean exactly where it was — the die
+        #            moved off the Anchored per-turn engine, which did not
+        #            need it, onto the Wound-clearing card, which did.
+        # Mean die across the 21 lands Red 3.36 / Blue 3.21 / Green 2.93 —
         # the order the colours are supposed to sit in. Range splits are
-        # unchanged; both replacements match the range of the card they
-        # came in for.
+        # unchanged throughout; every replacement matched the range of the
+        # card it came in for.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
@@ -346,7 +379,7 @@ SETS = {
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
             'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
-            'UNNAME', 'FORGET',
+            'UNNAME', 'UNRAVEL',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
             'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',

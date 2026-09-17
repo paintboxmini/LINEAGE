@@ -206,7 +206,7 @@ Range: Melee
 
 **ROOTED OATH**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Anchored — Target ally gains Deadly.
 Defense Effect: Anchored — Target ally gains Resist.
 Range: Both
@@ -246,7 +246,7 @@ Range: Ranged
 
 **FIELD MEDICINE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Remove all Wounds from target ally's hand and discard pile. They heal 3 HP.
 Defense Effect: Remove all Wounds in your hand and discard pile. Heal 3 HP.
 Range: Ranged
@@ -497,8 +497,8 @@ Range: Both
 **CHANNEL**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: All allies gain Resist.
+Effect: Only on a tie. Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
+Defense Effect: Only on a tie. All allies gain Resist.
 Range: Both
 *"It runs through you. What it becomes is your decision."*
 
