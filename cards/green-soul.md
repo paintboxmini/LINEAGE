@@ -494,13 +494,13 @@ Range: Both
 
 ---
 
-**WHAT DO YOU NEED**
+**CHANNEL**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Choose one for target ally — heal 4, gain Resist, or gain Deadly.
 Defense Effect: Target ally gains Resist.
 Range: Both
-*"Say it fast. I have one of three."*
+*"It runs through you. What it becomes is your decision."*
 
 ---
 

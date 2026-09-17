@@ -74,7 +74,7 @@ He accepts help with the work immediately and without ceremony. He is much harde
 - **Everything before the original orphanage.**
 - **His stat line is recorded, and it is not what his deck implies.** The archived sheet gives **Mind 3 / Body 4 / Soul 2**, which is HP 21 under the current formula — the sheet said 17, from the retired `(3 × Body) + 6`. His deck ran ten cards at 4 Red / 4 Blue / 2 Green, so it neither matches his stats by colour (4 Blue on Mind 3) nor fits the current cap, which would be 9. Left as found rather than tidied: it is what was actually played, and the cap is newer than he is.
 - **One card was printed under a different name.** REPEL appears on Kevin's physical card as EARTHQUAKE — same effect, renamed after the card was made. Worth knowing before somebody rules it a second card.
-- **He received BAD BEAT from the Oracle in his first session**, which is the only advancement on record. It was printed as PARADOX; the card was renamed on 2026-09-17, same as REPEL above.
+- **He received PARADOX from the Oracle in his first session**, which is the only advancement on record.
 - **The deck itself** is preserved at `experimental/archives/frost-and-steele-decks.md`. Its red half is BLOOD TITHE, PAIN IS FUEL and GAMBLER'S RUIN — a colour of cards about paying with yourself to keep something standing.
 - **Any tie to an order or faction.** Deliberately unanswered.
 

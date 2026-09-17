@@ -58,7 +58,7 @@ cut; only these two groupings of it were.
 | PAIN IS FUEL | Red | Melee | Body + d6 |
 | REPEL | Red | Melee | Body + d4 |
 | FORGET | Blue | Melee | Mind + d4 |
-| BAD BEAT *(played as PARADOX)* | Blue | Ranged | Mind + d6 |
+| PARADOX | Blue | Ranged | Mind + d6 |
 | MATCHED PAIR *(played as ALIGN)* | Blue | Ranged | Mind + d4 |
 | ANTICIPATE | Blue | Melee | Mind + d6 |
 | MIRROR STEP | Green | Both | Soul + d6 |

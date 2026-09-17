@@ -152,13 +152,13 @@ Range: Ranged
 
 ---
 
-**NO REPLY**
+**UNNAME**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender cannot trigger defense effects until their next turn
 Defense Effect: Attacker cannot trigger defense effects until their next turn
 Range: Melee
-*"You had something ready. It is still ready."*
+*"What cannot be spoken cannot hold its shape."*
 
 ---
 
@@ -192,14 +192,14 @@ Range: Melee
 
 ---
 
-**BAD BEAT**
+**PARADOX**
 BLUE — MIND
 Attack: Mind + d6
 Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal
 Defense Effect: Gain Ward
 Range: Ranged
-*"You had it. Right up until you didn't."*
+*"Reality hesitates."*
 
 ---
 
@@ -415,13 +415,13 @@ Range: Ranged
 
 ---
 
-**SOLD THE FEINT**
+**UNRAVEL**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Vulnerable and Blind.
 Defense Effect: Attacker gains Vulnerable.
 Range: Melee
-*"They bought the high one. Everything after was free."*
+*"Pull the one thread that was holding the rest."*
 
 ---
 

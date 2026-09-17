@@ -254,9 +254,8 @@ SETS = {
         # identity, holding each colour on the 12/6/3 ratio across all 28.
         #
         # Four cards needed rebalancing to qualify, all in `cards/`:
-        #   NO REPLY (written as UNNAME) — its defence half forced a random
-        #             discard. Now mirrors the attack half: the attacker's
-        #             Effect does not fire.
+        #   UNNAME  — its defence half forced a random discard. Now mirrors
+        #             the attack half: the attacker's Effect does not fire.
         #   FORGET  — its attack half forced a discard, so it was made to
         #             mirror its defence half instead, exiling the played
         #             card on a clean win. That rewrite did not qualify it:
@@ -269,18 +268,17 @@ SETS = {
         #             since 2026-09-17 it Exiles rather than destroys. The
         #             card itself left the set in that same pass; both
         #             rewrites stand in the pool.
-        # The first three were barred by the content rule. NO REPLY and
-        # PROFILE are the two that the rewrites actually cleared; FORGET is
-        # out. (An older version of this note called those three Blue's only
-        # melee bench cards. They were not — PROFILE is Ranged, and Blue's
-        # real melee bench is TAINT, SOLD THE FEINT and CORNER. SOLD THE
-        # FEINT took FORGET's seat on 2026-09-17.)
+        # The first three were barred by the content rule, and the rewrites
+        # cleared UNNAME and PROFILE; FORGET stayed illegal. (An older note
+        # called those three Blue's only melee bench cards. They were not —
+        # PROFILE is Ranged, and Blue's whole melee bench is TAINT, UNNAME,
+        # UNRAVEL and CORNER, of which only UNRAVEL and CORNER are legal.)
         #
         # What the 21 were chosen to fill, measured against the first set:
         #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
-        #     while living in the pool — BURN BRIGHT and FORGET, BAD BEAT and
+        #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
         #     CONSUME, SPARK OF VIOLENCE. CONSUME and FORGET both left on
-        #     2026-09-17, so Lifesteal is down to BAD BEAT alone and Exile to
+        #     2026-09-17, so Lifesteal is down to PARADOX alone and Exile to
         #     BURN BRIGHT alone. One card each, but not zero.
         #   Scry was at 3 and three more were asked for: UNDERSTANDING,
         #     PROFILE, MATCHED PAIR. All Blue, which is where the bench
@@ -321,10 +319,9 @@ SETS = {
         #   out:     CONSUME — and it took the set's only Blind with it.
         #            Blind sits at 0 across these 21 now, which is
         #            survivable: the first 21 teach it five times over.
-        #   in:      WHAT DO YOU NEED, Both, d6 — the pool's only modal card,
-        #            "choose one of three" on its attack half
-        #            (`rules/cards.md`). Neither Oracle set has taught that
-        #            decision shape.
+        #   in:      CHANNEL, Both, d6 — the pool's only modal card, "choose
+        #            one of three" on its attack half (`rules/cards.md`).
+        #            Neither Oracle set has taught that decision shape.
         #   in:      CONFRONT, Melee, d6 — which closes the gap the old
         #            version of this note called unfillable, and brings
         #            Thorns with it. Both were at 0 across these 21.
@@ -359,10 +356,10 @@ SETS = {
         #            2026-09-08 rewrite recorded above made it worse rather
         #            than legal. FRACTURE does the same thing and is bench,
         #            where the rule is already doing its job.
-        #   in:      SOLD THE FEINT, Melee, d6 — pure statuses, so it is
+        #   in:      UNRAVEL, Melee, d6 — pure status application, so it is
         #            legal, and it fills Blind and Vulnerable, both of which
         #            were at 0 across these 21 once CONSUME left.
-        #   changed: WHAT DO YOU NEED narrows from all allies to one. It was
+        #   changed: CHANNEL narrows from all allies to one. It was the
         #            three-way choice AND a party-wide payout; the choice is
         #            the card, so the scale is what gives. A tie gate was
         #            tried first and dropped — it would have nerfed the
@@ -382,37 +379,42 @@ SETS = {
         #            have, and the ceiling is your own HP. Do not "fix" it
         #            in a later pass without asking.
         #
-        # Third round, same day — names, not mechanics. A name is spent out
-        # of combat on an Advantage discard, so breadth is power
-        # (`rules/cards.md`, The Name Is Half the Card). Five seated cards
-        # were carrying names broad enough to cover almost any noncombat
-        # attempt, which is not what a first deck should hand out. All five
-        # keep their Effect lines exactly; only the name and flavour move:
-        #     UNRAVEL  -> SOLD THE FEINT
-        #     UNNAME   -> NO REPLY
-        #     CHANNEL  -> WHAT DO YOU NEED
-        #     PARADOX  -> BAD BEAT
-        #     ALIGN    -> MATCHED PAIR
-        # ALIGN was freed on purpose: its Scry-and-match effect never had
-        # anything to do with alignment, and the word is now on a new Green
-        # bench card that earns it — allies lined up by position and by the
-        # initiative order. That one is bench, not seated, because a broad
-        # name belongs on a later card rather than a starting one.
-        # Mean die across the 21 lands Red 3.36 / Blue 3.21 / Green 2.93 —
-        # the order the colours are supposed to sit in. Range splits are
-        # unchanged throughout; every replacement matched the range of the
-        # card it came in for.
+        # Third round, same day. Three Blue cards come out as too advanced
+        # for a first campaign, not for anything wrong with them — each one
+        # switches off or reverses a rule the players are still learning
+        # (`rules/early-campaign-cards.md` for the screen and the reasons):
+        #     UNNAME  — the defender's Defense Effect never fires.
+        #     UNRAVEL — Vulnerable and Blind stacked on one half.
+        #     PARADOX — reverses the RPS outcome, the core resolution.
+        # All three are untouched in the pool.
+        #
+        # *** THE BLUE BLOCK IS SHORT AND THE SPLIT IS BROKEN. *** Blue is
+        # at 4 of 7 and needs 1 ranged and 2 melee. The melee pair is the
+        # hard one: Blue's entire melee bench is TAINT, UNNAME, UNRAVEL and
+        # CORNER, and with UNNAME and UNRAVEL out on this screen and TAINT
+        # barred by the content rule, CORNER is the only legal Blue melee
+        # card left in the pool. One seat can be filled; the second cannot,
+        # from the bench, without writing a new card. Left visibly short
+        # rather than filled quietly — this is a decision, not an oversight.
+        #
+        # Also this round: ALIGN -> MATCHED PAIR, which is what the card
+        # always was (Scry 2, check whether the two match — nothing about
+        # that is alignment). The freed word now names a new Green bench
+        # card that earns it, allies lined up by position and by the
+        # initiative order. An earlier version of this round renamed four
+        # more seated cards for name breadth; Drew reverted all four. The
+        # breadth rule is real, but removing a card from the early set is
+        # the answer to a card that does not belong in it, not renaming.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
-            # Blue (7) — ranged 4 / melee 2 / both 1
-            'UNDERSTANDING', 'BAD BEAT', 'PROFILE', 'MATCHED PAIR',
-            'NO REPLY', 'SOLD THE FEINT',
+            # Blue (4 of 7 — SHORT: needs 1 ranged and 2 melee, see above)
+            'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'SHARED BURDEN', 'WHAT DO YOU NEED', 'ROOTED OATH', 'UNTOUCHED',
+            'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',
             'CONFRONT',
         ],

@@ -99,7 +99,7 @@ Where a card offsets strength with a cost, the name should imply sacrifice or st
 The 2026-09-06 balance pass left the pool thin in exactly two places. One is now filled; new cards land most usefully in the other.
 
 - **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE and CONSUME. Green now has bench depth at melee; the Oracle's three melee seats are BIND, SMOKESCREEN and BRISTLE, with BOLSTER, AWAKEN and CONSUME behind them.
-- **Blue melee.** Six of ten are in the Oracle; of the rest, TAINT is barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for. NO REPLY (written as UNNAME) was barred too until its 2026-09-08 rewrite cleared it; it took a melee seat in the expansion.
+- **Blue melee — still the thinnest place in the pool, and it got thinner.** Six of ten are in the Oracle; of the rest, TAINT is barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for. UNNAME was barred by that rule too until its 2026-09-08 rewrite cleared it, but on 2026-09-17 both UNNAME and UNRAVEL failed the early-campaign screen (`rules/early-campaign-cards.md`). That leaves CORNER as the only Blue melee card in the pool that is both legal and early-appropriate, against two melee seats the expansion needs filled. **This is where a new card is most worth writing.**
 
 Red has bench depth at every range.
 
