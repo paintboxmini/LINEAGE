@@ -20,13 +20,15 @@ Carried items (potions, tools, one-use consumables) are a separate category enti
 
 Weapons and Armor both scale on the same three-tier system. Each tier is a **power budget** — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer's discretion.
 
-| Tier | Weapon (default spend) | Armor (default spend) | Accessory (default spend) | Approximate Value |
-|------|------------------------|------------------------|---------------------------|--------------------|
-| 1 | +1 attack damage | Armour 1 | +1 to one Skill tag | ~200 gold |
-| 2 | +2 attack damage | Armour 2 | +2 to one Skill tag | ~800 gold |
-| 3 | +3 attack damage | Armour 3 | +3 to one Skill tag | ~2,000 gold |
+| Tier | Weapon (default spend) | Armor (default spend) | Accessory (default spend) | Weapon / Armor | Accessory |
+|------|------------------------|------------------------|---------------------------|----------------|-----------|
+| 1 | +1 attack damage | Armour 1 | +1 to one Skill tag | ~200 gold | ~100 gold |
+| 2 | +2 attack damage | Armour 2 | +2 to one Skill tag | ~800 gold | ~400 gold |
+| 3 | +3 attack damage | Armour 3 | +3 to one Skill tag | ~2,000 gold | ~1,000 gold |
 
-**One ladder, three slots' worth of ways to spend it.** Weapons, Armor and Accessories all sit on the same three tiers at the same three prices. What changes is which slot the tier is bought in and therefore what the budget can be spent on — damage, reduction, or a number outside a fight.
+**One ladder, three slots' worth of ways to spend it.** Weapons, Armor and Accessories sit on the same three tiers. What changes is which slot the tier is bought in, and therefore what the budget buys — damage, reduction, or a number outside a fight.
+
+**Accessories cost half, and the half is the combat fraction.** Roughly half this table's time is spent in fights (`rules/gm-guide.md`, Pacing Sessions), and an accessory does nothing in one. A Tier 1 weapon is +1 damage on every attack in every fight forever — fifteen or twenty rolls a session. A Tier 1 accessory is +1 on a tag that might come up once. **Charged the same, the accessory is a trap option nobody buys twice**, and the bottom of its ladder would be decorative. Half is a principle rather than a fudge: if the table's combat share ever moves, so does this number.
 
 The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.
 
@@ -80,12 +82,13 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 | Earned | By session | Buys |
 |---|---|---|
-| 200 g | 5 | a first Tier 1 item |
-| 800 g | 13 | a full Tier 1 kit — weapon, armor, two accessories — **or** one Tier 2 item |
-| 1,600 g | 18 | two Tier 2 items |
+| 100 g | 3 | a first Tier 1 accessory — **the cheapest real purchase in the game** |
+| 200 g | 5 | a first Tier 1 weapon or armor |
+| 600 g | 11 | a full Tier 1 kit — weapon, armor, two accessories |
+| 800 g | 13 | a first Tier 2 weapon or armor |
 | 2,000 g | 19 | a first Tier 3 item |
-| 3,200 g | 23 | a full Tier 2 kit |
-| 6,400 g | 29 | most of a Tier 3 kit |
+| 2,400 g | 21 | a full Tier 2 kit |
+| 6,000 g | 28 | a full Tier 3 kit |
 
 **Roughly five or six sessions per meaningful step, forever**, without anybody tracking a target. The first Tier 1 item lands about when the campaign first reaches Eclipseria — gear arrives when the party first stands somewhere that sells it.
 
@@ -124,9 +127,11 @@ Adjust from there for what actually happens at the table:
 
 ## Pricing Accessories
 
-**Accessories are on the same tier ladder as everything else** — Tier 1 at ~200 gold, Tier 2 at ~800, Tier 3 at ~2,000 (Weapon and Armor Tiers, above). A Tier 1 accessory costs exactly what a Tier 1 sword costs.
+**Accessories use the same three tiers at half the price** — Tier 1 ~100 gold, Tier 2 ~400, Tier 3 ~1,000 (Weapon and Armor Tiers, above).
 
-**That is a premium and it is meant to be one.** An accessory only works outside a fight, so on raw mechanical throughput it is the weaker buy at every tier — and it is priced level anyway, because what it buys is the thing a sword never touches. A character who can reliably do one difficult thing in the world is worth as much as one who hits harder, and charging less for it would say otherwise.
+**Half, because half the table's time is a fight and an accessory is not in it.** That is the entire reasoning and it is worth keeping legible: an accessory is not a worse item, it is an item that is switched off for half the session. Priced level with a weapon it is a trap option — nobody spends five sessions' savings on +1 Climbing when the same money is +1 damage on every attack they will ever make.
+
+**Which makes the Tier 1 accessory the first real purchase in the game.** At 100 gold it lands around session 3 (Pacing, above), before anybody owns a weapon — so a character starts being specifically themselves early, cheaply, and in a way that shows up outside combat rather than in it.
 
 ### What a tier buys: +1, +2, or +3 to one Skill tag
 
@@ -140,7 +145,7 @@ Adjust from there for what actually happens at the table:
 - **Two accessories on the same tag do not.** Take the larger. A Tier 1 and a Tier 3 stealth item is +3, not +4.
 - **Two accessories on different tags never interact**, which is the normal case and why two slots is genuinely a choice.
 
-**A Perception-mode accessory is broader and should cost a tier more than it looks like it should.** Reason, Senses and Read each cover a whole category of rolls (`rules/resolution.md`, Perception). Price a +1 to a Perception mode at Tier 2, not Tier 1, and a +2 at Tier 3. There is no +3 to a Perception mode.
+**A Perception-mode accessory is broader and should cost a tier more than it looks like it should.** Reason, Senses and Read each cover a whole category of rolls (`rules/resolution.md`, Perception). Price a +1 to a Perception mode at Tier 2 (~400 gold), not Tier 1, and a +2 at Tier 3 (~1,000). **There is no +3 to a Perception mode.**
 
 **One number per tier, no budget maths.** This list is supposed to get enormous, and a category meant to hold hundreds of objects cannot carry a calculation per item — the design cost has to be near zero or nobody writes the hundredth one. If an accessory feels worth more than its tier, it is naming too broad a tag.
 

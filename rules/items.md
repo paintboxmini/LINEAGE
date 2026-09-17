@@ -175,7 +175,7 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 
 *Full entries: `items/accessories.md`*
 
-Every accessory names a **Skill tag** and grants +1, +2 or +3 to it, and none of them do anything in a fight. They sit on the ordinary equipment ladder — Tier 1 ~200 gold, Tier 2 ~800, Tier 3 ~2,000 — with a one-tier surcharge for anything that buffs a whole Perception mode rather than a trained action (`rules/equipment.md`, Pricing Accessories).
+Every accessory names a **Skill tag** and grants +1, +2 or +3 to it, and none of them do anything in a fight. They sit on the equipment ladder at half rate — Tier 1 ~100 gold, Tier 2 ~400, Tier 3 ~1,000 — with a one-tier surcharge for anything that buffs a whole Perception mode rather than a trained action (`rules/equipment.md`, Pricing Accessories).
 
 **Tier 1** — Gripwax Block (Climbing), The Honest Coat (Negotiation), Tallow-Line Spool (Lockpicking), Drover's Whistle (Animal Handling), Riverman's Knotbook (Sailing), Smoked Lens (Forgery), Weighted Hem (Stealth), Salt-Cured Gloves (Fishing).
 

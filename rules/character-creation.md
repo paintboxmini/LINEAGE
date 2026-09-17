@@ -97,7 +97,7 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 - **An accessory modifies checks, saves and perception. Never combat.** No damage, no Armour, no keywords, no card effects, no initiative. The moment one touches a fight it is a Weapon, Armor or Artifact instead.
 - **Every accessory names a Skill tag and grants +1, +2 or +3 to it** — the same vocabulary as your own Skills (Skills, below): a specific trained action like Lockpicking or Negotiation, or one whole Perception mode. *Boots of +2 Climbing.* *A +1 Forgery lens.* Not "a ring that helps socially" — that is three tags in a coat.
-- **They sit on the same tier ladder as weapons and armor**, at the same prices (`rules/equipment.md`). An accessory costs what a sword costs, which is deliberate: doing one difficult thing reliably out in the world is worth as much as hitting harder.
+- **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
 - **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.
 
 **Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).

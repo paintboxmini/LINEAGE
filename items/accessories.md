@@ -2,13 +2,13 @@
 
 *The Accessory slot — two per character (`rules/character-creation.md`, Equipment). Every one names a **Skill tag** and grants +1, +2 or +3 to it, and nothing here does anything in a fight.*
 
-**Pricing is the ordinary equipment ladder** (`rules/equipment.md`, Weapon and Armor Tiers): **Tier 1 ~200 gold, Tier 2 ~800, Tier 3 ~2,000.** A Perception-mode accessory costs one tier above its number, because a mode is broader than a trained action.
+**Pricing is the equipment ladder at half rate** (`rules/equipment.md`, Weapon and Armor Tiers): **Tier 1 ~100 gold, Tier 2 ~400, Tier 3 ~1,000** — half, because half the table's time is a fight and an accessory is not in it. A Perception-mode accessory costs one tier above its number, because a mode is broader than a trained action.
 
 **This list is not meant to be complete and never will be.** It is a starting shelf and a set of worked examples. Anything on it can be reskinned to a different tag in ten seconds — that is the point of the category.
 
 ---
 
-## Tier 1 — ~200 gold
+## Tier 1 — ~100 gold
 
 **GRIPWAX BLOCK** — *Climbing +1*
 A knob of amber-coloured wax in a tin, worked into the palms. Smells strongly of pine and faintly of something that was in the pine.
@@ -44,7 +44,7 @@ Stiff, unpleasant, and the last pair of gloves you will ever need on a line.
 
 ---
 
-## Tier 2 — ~800 gold
+## Tier 2 — ~400 gold
 
 **THE LISTENING RING** — *Negotiation +2*
 A plain band that is very slightly too warm. The wearer finds themselves waiting half a beat longer before answering, and half a beat is most of it.
@@ -72,7 +72,7 @@ Braided from something that is not quite rope. An animal on the end of it does n
 
 ---
 
-## Tier 3 — ~2,000 gold
+## Tier 3 — ~1,000 gold
 
 **SENSE OF THE ROOM** — *Read +2 (Perception mode)*
 A thin chain worn under the collar, warm against the throat. It does not tell the wearer anything. It simply makes it very hard to stop noticing.
