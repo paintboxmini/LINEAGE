@@ -497,8 +497,8 @@ Range: Both
 **CHANNEL**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Only on a tie. Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: Only on a tie. All allies gain Resist.
+Effect: Choose one for target ally — heal 4, gain Resist, or gain Deadly.
+Defense Effect: Target ally gains Resist.
 Range: Both
 *"It runs through you. What it becomes is your decision."*
 

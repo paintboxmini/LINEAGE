@@ -187,7 +187,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: Exile 1 card from your hand. Deal +2 damage this attack.
-Defense Effect: Exile 1 card from your discard pile.
+Defense Effect: Exile 1 card from your discard pile. Heal 2 HP.
 Range: Ranged
 *"Some flames consume themselves to burn hotter."*
 

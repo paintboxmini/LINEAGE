@@ -360,14 +360,25 @@ SETS = {
         #   in:      UNRAVEL, Melee, d6 — pure status application, so it is
         #            legal, and it fills Blind and Vulnerable, both of which
         #            were at 0 across these 21 once CONSUME left.
-        #   changed: CHANNEL's halves are gated to "Only on a tie." A
-        #            three-way choice and a party-wide buff were too much to
-        #            hand out on an ordinary win. A tie is the outcome
-        #            nobody chose, which is when a card like this should pay.
+        #   changed: CHANNEL narrows from all allies to one. It was the
+        #            three-way choice AND a party-wide payout; the choice is
+        #            the card, so the scale is what gives. A tie gate was
+        #            tried first and dropped — it would have nerfed the
+        #            card by making it fire rarely, which costs the set the
+        #            decision shape it was seated to teach.
         #   changed: ROOTED OATH d6 -> d4 and FIELD MEDICINE d4 -> d6. The
         #            pair leaves Green's mean exactly where it was — the die
         #            moved off the Anchored per-turn engine, which did not
         #            need it, onto the Wound-clearing card, which did.
+        #   changed: BURN BRIGHT's defence half heals 2 on top of the
+        #            discard-pile Exile it already had. Exiling out of your
+        #            own discard is upkeep, not a play; it needed something
+        #            in the exchange itself.
+        #   kept:    SHARED BURDEN's defence half transfers an uncapped
+        #            amount of HP from you to an ally. Raised as a possible
+        #            hole and kept on purpose — you can only spend what you
+        #            have, and the ceiling is your own HP. Do not "fix" it
+        #            in a later pass without asking.
         # Mean die across the 21 lands Red 3.36 / Blue 3.21 / Green 2.93 —
         # the order the colours are supposed to sit in. Range splits are
         # unchanged throughout; every replacement matched the range of the
