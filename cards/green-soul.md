@@ -186,7 +186,7 @@ Range: Both
 
 **SHARED BURDEN**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d4
 Effect: Gain Protect and Evade
 Defense Effect: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
@@ -277,8 +277,8 @@ Range: Both
 **CONSUME**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Lifesteal — heal yourself for the full damage dealt. You may permanently destroy one card from your own hand to give the defender Weak and Blind.
-Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Effect: Lifesteal — heal yourself for the full damage dealt. You may Exile one card from your own hand to give the defender Weak and Blind.
+Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may Exile one card from your own hand to give the attacker Weak and Blind.
 Range: Melee
 *"Nothing is wasted. Not even you."*
 

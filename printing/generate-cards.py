@@ -262,7 +262,10 @@ SETS = {
         #   PROFILE — its defence half read the attacker's hand. Now a
         #             smaller version of its own attack half.
         #   CONSUME — destroying a card out of your own hand was mandatory,
-        #             which is a trap in a starting deck. Now "you may".
+        #             which is a trap in a starting deck. Now "you may", and
+        #             since 2026-09-17 it Exiles rather than destroys. The
+        #             card itself left the set in that same pass; both
+        #             rewrites stand in the pool.
         # The first three were barred by the content rule, and they were
         # Blue's ONLY three melee bench cards — without the rewrites Blue
         # could not have filled its two melee slots from the pool at all.
@@ -270,10 +273,12 @@ SETS = {
         # What the 21 were chosen to fill, measured against the first set:
         #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
         #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
-        #     CONSUME, SPARK OF VIOLENCE.
+        #     CONSUME, SPARK OF VIOLENCE. CONSUME left on 2026-09-17, so
+        #     Lifesteal is down to PARADOX alone.
         #   Scry was at 3 and three more were asked for: UNDERSTANDING,
-        #     PROFILE, ALIGN. All Blue, because no Green or Red bench card
-        #     has ever carried Scry.
+        #     PROFILE, ALIGN. All Blue, which is where the bench keeps Scry
+        #     — not the only place it could come from, though: STIR is a
+        #     Green bench card that carries it.
         #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
         #     bench and it is a Scry card, so it answers both at once.
         #   Protect sat at 1 card for a mechanic with its own Damage
@@ -282,7 +287,9 @@ SETS = {
         #     UNTOUCHED comes back here, which restores the ladder without
         #     spending a slot in the deck Drew is happy with.
         #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
-        #     HEAVE AND HAUL make three.
+        #     HEAVE AND HAUL make three. Both of those cards left on
+        #     2026-09-17 and SHARED BURDEN dropped to d4, so neither gap is
+        #     filled any more — see that pass for why the trade was worth it.
         #
         # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
         # Blue (stealing and copying enemy buffs is enemy control), so it
@@ -291,11 +298,47 @@ SETS = {
         # teacher either way. PROVOKE, which moved Green -> Red the same
         # day, fills the Red Both slot it vacated.
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
+        #     (Reversed on 2026-09-17 — the card was too strong for the set
+        #     and the gap is open again.)
         #   Red had no Rooted: GRAPPLE, which is also the card the glossary
         #     cites to explain Anchored holding Rooted open.
         #
-        # Not fillable from the bench: Green has no Counter Attack card
-        # anywhere in the core pool, so that gap survives this expansion.
+        # 2026-09-17, Drew's balance pass over the printed expansion sheet.
+        # The measured complaint was Green: its mean die was 3.357 and Red's
+        # was 3.357, exactly level, which inverts the one thing Red is
+        # supposed to own. Five of the changes below are Green's and take it
+        # to 2.93; OVERCOMMIT raises the Red ceiling Green was being measured
+        # against; BLOOD TITHE is an unrelated fix caught in the same pass.
+        #   out:     HEAVE AND HAUL — too strong for this set. Untouched in
+        #            the pool.
+        #   out:     CONSUME — and it took the set's only Blind with it.
+        #            Blind sits at 0 across these 21 now, which is
+        #            survivable: the first 21 teach it five times over.
+        #   in:      CHANNEL, Both, d6 — the pool's only modal card, "choose
+        #            one of three" on its attack half (`rules/cards.md`).
+        #            Neither Oracle set has taught that decision shape.
+        #   in:      CONFRONT, Melee, d6 — which closes the gap the old
+        #            version of this note called unfillable, and brings
+        #            Thorns with it. Both were at 0 across these 21.
+        #   changed: SHARED BURDEN d8 -> d4, which leaves the expansion with
+        #            no Green d8 at all and FLOW still the only one in the
+        #            first 21.
+        #   changed: BLOOD TITHE healed 6 on its attack half and 8 on its
+        #            defence half for the same 2 HP paid; both are 5 now.
+        #            RENEWAL is the only other card across the 84 whose
+        #            defence half heals more than its attack half (4 and 8),
+        #            and there the 8 is gated to a Collapsed ally. BLOOD
+        #            TITHE's was not gated to anything.
+        #   changed: OVERCOMMIT, which is in neither set — +1 damage, and a
+        #            Resist on the defence half that had been empty. It is
+        #            the pool's damage ceiling and UNDERSTANDING had climbed
+        #            to within a point of it: 8.0 mean on the dice against
+        #            9.0. The gap is 2.0 now, and the ceiling moved rather
+        #            than the Blue card getting cut down.
+        # Mean die across the 21 lands Red 3.36 / Blue 3.07 / Green 2.93 —
+        # the order the colours are supposed to sit in. Range splits are
+        # unchanged; both replacements match the range of the card they
+        # came in for.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
@@ -306,9 +349,9 @@ SETS = {
             'UNNAME', 'FORGET',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
+            'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',
-            'CONSUME',
+            'CONFRONT',
         ],
     },
 }
@@ -563,8 +606,9 @@ def card_to_html(card):
     # Thresholds measured, not guessed. Every card in the pool was rendered at
     # full size and asked for its own scrollHeight against the 84mm card: 199
     # of 200 fit, and the only one that did not was FOLLOW-UP at 412
-    # characters, over by 16px. CONSUME fits at 359. The old 195/285 pair was
-    # inherited from Georgia at 9.5pt and was shrinking 32 cards to solve one.
+    # characters, over by 16px. CONSUME, the next heaviest, fits at 331. The
+    # old 195/285 pair was inherited from Georgia at 9.5pt and was
+    # shrinking 32 cards to solve one.
     density = ' denser' if weight > 460 else (' dense' if weight > 360 else '')
 
     stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',

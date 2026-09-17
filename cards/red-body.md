@@ -155,8 +155,8 @@ Range: Melee
 **BLOOD TITHE**
 RED — BODY
 Attack: Body + d6
-Effect: Pay 2 HP, target ally heals 6 HP
-Defense Effect: Pay 2 HP, target ally heals 8 HP
+Effect: Pay 2 HP, target ally heals 5 HP
+Defense Effect: Pay 2 HP, target ally heals 5 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
 
@@ -326,8 +326,8 @@ Range: Ranged
 **OVERCOMMIT**
 RED — BODY
 Attack: Body + d10 + 1d6. Gain Vulnerable.
-Effect: None.
-Defense Effect: None.
+Effect: Deal +1 damage.
+Defense Effect: Gain Resist.
 Range: Melee
 *"You don't swing like that unless you mean it."*
 
