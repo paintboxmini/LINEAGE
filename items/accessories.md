@@ -88,6 +88,22 @@ A brass straightedge with no markings on it at all. Laid against a document, the
 
 ---
 
+## Initiative — full price, and only two rungs
+
+*The one combat number an accessory may touch, and the one that does not get the half-price discount (`rules/equipment.md`, Initiative accessories pay full price). **Tier 1 +1 at ~200 gold. Tier 2 +2 at ~800. There is no Tier 3** — above +2 the money buys a Tier 3 weapon or armor granting +1 Soul, which does this and more.*
+
+**Initiative is Soul, and Soul is reflex in the sense of a read rather than a twitch** (`rules/character-creation.md`, What Stats Do). These should feel like premonition, not speed. Nothing here makes anybody faster.
+
+**HACKLE CHARM** — *+1 initiative* — ~200 gold
+A twist of dark wire and one grey feather, worn under the collar. The hair on the wearer's forearms goes up a half-second before anything happens, every time, including the times nothing does.
+*Where: Weald families; Briarwatch; occasionally on Dess Harwick's counter without explanation.*
+
+**THE HALF-STEP** — *+2 initiative* — ~800 gold
+A flat river stone, drilled and strung, worn against the breastbone where it is always slightly colder than the skin around it. Wearers describe having already turned, and only afterwards working out why.
+*Where: Brother Alden, capital. He has one and does not expect to get another.*
+
+---
+
 ## Building More
 
 **Pick a tag first, then a number, then a thing.** In that order. The tag is the whole design; the object is decoration and should take thirty seconds.

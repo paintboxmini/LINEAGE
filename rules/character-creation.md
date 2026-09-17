@@ -95,7 +95,8 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Accessories are the small stuff**, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.
 
-- **An accessory modifies checks, saves and perception. Never combat.** No damage, no Armour, no keywords, no card effects, no initiative. The moment one touches a fight it is a Weapon, Armor or Artifact instead.
+- **An accessory modifies checks, saves and perception.** No damage, no Armour, no keywords, no card effects. The moment one of those touches a fight it is a Weapon, Armor or Artifact instead.
+- **Initiative is the one exception, and it costs full price.** An accessory may add to your initiative roll — but initiative happens inside a fight, so it does not get the half-price discount, which was only ever the combat fraction (`rules/equipment.md`, Pricing Accessories). +1 at ~200 gold, +2 at ~800, and there is no +3.
 - **Every accessory names a Skill tag and grants +1, +2 or +3 to it** — the same vocabulary as your own Skills (Skills, below): a specific trained action like Lockpicking or Negotiation, or one whole Perception mode. *Boots of +2 Climbing.* *A +1 Forgery lens.* Not "a ring that helps socially" — that is three tags in a coat.
 - **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
 - **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.

@@ -145,6 +145,22 @@ Adjust from there for what actually happens at the table:
 - **Two accessories on the same tag do not.** Take the larger. A Tier 1 and a Tier 3 stealth item is +3, not +4.
 - **Two accessories on different tags never interact**, which is the normal case and why two slots is genuinely a choice.
 
+### Initiative accessories pay full price
+
+**An accessory may add to the initiative roll, and it is the only combat number one is allowed to touch.** It also does not get the discount.
+
+| | Grant | Price |
+|---|---|---|
+| Tier 1 | +1 initiative | ~200 gold |
+| Tier 2 | +2 initiative | ~800 gold |
+| Tier 3 | — | — |
+
+**Full price because the discount was the combat fraction and this is in the fight.** Half was never a statement that accessories are worth less; it was a statement that they are switched off for half the session. An initiative accessory is not switched off, so it pays what a weapon pays.
+
+**There is no Tier 3 rung, and the reason is that the slot is already taken.** A Tier 3 Weapon or Armor can grant **+1 Soul** for the same ~2,000 gold (Weapon and Armor Tiers, above) — which is +1 initiative *and* Green card damage *and* HP. A +3 initiative accessory at that price would be strictly worse than an item already on the shelf, so it should not exist. **Above +2, buy the stat.**
+
+**Initiative is worth more than it looks on a 1d6 + Soul roll.** The die is small and the spread is narrow, so +2 is close to a guarantee against most of a table — treat it as the ceiling it is rather than the middle of a longer ladder.
+
 **A Perception-mode accessory is broader and should cost a tier more than it looks like it should.** Reason, Senses and Read each cover a whole category of rolls (`rules/resolution.md`, Perception). Price a +1 to a Perception mode at Tier 2 (~400 gold), not Tier 1, and a +2 at Tier 3 (~1,000). **There is no +3 to a Perception mode.**
 
 **One number per tier, no budget maths.** This list is supposed to get enormous, and a category meant to hold hundreds of objects cannot carry a calculation per item — the design cost has to be near zero or nobody writes the hundredth one. If an accessory feels worth more than its tier, it is naming too broad a tag.

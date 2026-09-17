@@ -183,6 +183,8 @@ Every accessory names a **Skill tag** and grants +1, +2 or +3 to it, and none of
 
 **Tier 3** — Sense of the Room (Read +2), The Patient Step (Stealth +3), True-Edge Rule (Forgery +3).
 
+**Initiative — full price, two rungs only** — Hackle Charm (+1, ~200 gold), The Half-Step (+2, ~800). The one combat number an accessory may touch, so the one that does not get the discount. No Tier 3: above +2 the money buys a Tier 3 weapon or armor granting +1 Soul, which does the same job and more (`rules/equipment.md`).
+
 **This list is a shelf, not an inventory.** Accessories are meant to be invented at need: pick a tag, pick a tier, spend thirty seconds on the object. `items/accessories.md`, Building More.
 
 ---
