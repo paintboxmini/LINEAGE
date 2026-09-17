@@ -6,14 +6,13 @@ Signature cards for Rasp. See `characters/rasp.md`.
 
 ---
 
-**OUT OF REACH**
+**STEP BACK**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Move to the Backline. Anchored — while the Passive is active, draw 1 at the start of each of your turns.
+Effect: Move to the Backline. Anchored — draw 1 at the start of each of your turns.
 Defense Effect: Move to the Backline. Gain Evade.
-Special Rule: Passive — while you are in the Backline, enemies cannot target you with attacks. Moving there with this card does not break it. Attacking, or moving again, does.
 Range: Both
-*"You were never actually aiming at her."*
+*"Don't thank her. She isn't there."*
 
 ---
 
