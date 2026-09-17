@@ -494,13 +494,13 @@ Range: Both
 
 ---
 
-**CHANNEL**
+**WHAT DO YOU NEED**
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Choose one for target ally — heal 4, gain Resist, or gain Deadly.
 Defense Effect: Target ally gains Resist.
 Range: Both
-*"It runs through you. What it becomes is your decision."*
+*"Say it fast. I have one of three."*
 
 ---
 
@@ -541,3 +541,13 @@ Effect: Gain Thorns 2.
 Defense Effect: Counter Attack.
 Range: Melee
 *"You wanted this closer. It is closer."*
+
+---
+
+**ALIGN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally in your position gains Deadly. If they also act next to you in the initiative order, you gain Deadly too.
+Defense Effect: Target ally in your position gains Resist. If they also act next to you in the initiative order, you gain Resist too.
+Range: Both
+*"Same ground, same beat."*

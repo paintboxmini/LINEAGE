@@ -122,13 +122,13 @@ Range: Ranged
 
 ---
 
-**ALIGN**
+**MATCHED PAIR**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2. If they share a color, draw 1 and gain Resist
 Defense Effect: Scry 2. If they share a color, draw 1 and gain Deadly
 Range: Ranged
-*"Clarity sharpens in alignment."*
+*"Two of a kind, face down, exactly where you left them."*
 
 ---
 
@@ -152,13 +152,13 @@ Range: Ranged
 
 ---
 
-**UNNAME**
+**NO REPLY**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender cannot trigger defense effects until their next turn
 Defense Effect: Attacker cannot trigger defense effects until their next turn
 Range: Melee
-*"What cannot be spoken cannot hold its shape."*
+*"You had something ready. It is still ready."*
 
 ---
 
@@ -192,14 +192,14 @@ Range: Melee
 
 ---
 
-**PARADOX**
+**BAD BEAT**
 BLUE — MIND
 Attack: Mind + d6
 Special Rule: On reveal, reverse the RPS outcome this turn. A tie is unchanged — there is no outcome to reverse.
 Effect: Lifesteal
 Defense Effect: Gain Ward
 Range: Ranged
-*"Reality hesitates."*
+*"You had it. Right up until you didn't."*
 
 ---
 
@@ -415,13 +415,13 @@ Range: Ranged
 
 ---
 
-**UNRAVEL**
+**SOLD THE FEINT**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Vulnerable and Blind.
 Defense Effect: Attacker gains Vulnerable.
 Range: Melee
-*"Pull the one thread that was holding the rest."*
+*"They bought the high one. Everything after was free."*
 
 ---
 

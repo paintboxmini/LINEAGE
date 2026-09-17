@@ -54,7 +54,7 @@ Two poles tied into a cross, wrapped in old work clothes. No face. When one turn
 **Mind 2 / Body 1 / Soul 3 — HP 9**
 **Creature Threat Rating:** 6
 
-**Deck (6 — 2 Blue / 1 Red / 3 Green):** FACING YOU NOW, UNNAME *(blue)* · TWO POLES *(red)* · NO FACE, ADAPT, INSTINCT *(green)*
+**Deck (6 — 2 Blue / 1 Red / 3 Green):** FACING YOU NOW, NO REPLY *(blue)* · TWO POLES *(red)* · NO FACE, ADAPT, INSTINCT *(green)*
 
 **Trait — No Turning**
 A Tatterman changes position freely between turns, at no action cost, as often as it likes. Never mid-turn — nothing it does interrupts an attack already in flight. It simply was facing the other way, and now it is facing you, and there was no point at which it turned.
