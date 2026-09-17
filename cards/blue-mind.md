@@ -482,3 +482,44 @@ Effect: Copy up to two different Positive Status Effects of your choice that the
 Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
 Range: Both
 *"Why build what's already standing right there?"*
+
+---
+
+**PRESSURE**
+BLUE — MIND
+Attack: Mind + d8
+Effect: The defender cannot play the color they just played on their next reveal.
+Defense Effect: The attacker cannot play the color they just played on their next reveal.
+Range: Melee
+*"You showed me that one already."*
+
+---
+
+**FOCUSED STANCE**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Scry 2. Gain Ward.
+Defense Effect: Scry 2. Gain Ward.
+Range: Melee
+*"Still here, still reading. That is the whole technique."*
+
+---
+
+**PARRY**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Blind.
+Defense Effect: Gain Evade.
+Range: Melee
+*"Meet it early enough and it stops being a problem."*
+
+---
+
+**INTERCEPT**
+BLUE — MIND
+Attack: Mind + d8
+Effect: The defender must target you on their next turn if possible.
+Defense Effect: Gain Protect.
+Range: Melee
+*"They were going somewhere else. Not anymore."*
+

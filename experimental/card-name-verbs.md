@@ -10,7 +10,7 @@ A working vocabulary for naming new cards, from Drew. Kept as a source to pull f
 
 ## Combat Maneuvers — martial, Body-leaning
 
-Disarm · Shove · Bash · Parry · Riposte · Tackle · Hamstring · Stagger · Overrun · Trip · Pin · Vault · Clinch · Slam · Drive · Press · Smash · Hook · Headbutt · Backstep · Sweep · Rush · Crush
+Disarm · Shove · Bash · Riposte · Tackle · Hamstring · Stagger · Overrun · Trip · Pin · Vault · Clinch · Slam · Drive · Press · Smash · Hook · Headbutt · Backstep · Sweep · Rush · Crush
 
 ## Mobility & Positioning
 
@@ -18,7 +18,7 @@ Leap · Somersault · Roll · Slide · Vault · Drop · Dive · Duck · Weave ·
 
 ## Tactical — Mind-leaning
 
-Assess · Track · Pressure
+Assess · Track
 
 ## Soul — emotional, intent-leaning
 
@@ -46,7 +46,7 @@ Imply movement, HP swing, forced interaction, frontline density.
 
 **Mobility:** Vault · Somersault · Leap · Dive · Roll · Slide · Advance · Withdraw · Drop
 
-**Control:** Intercept · Press · Throw
+**Control:** Press · Throw
 
 ## Blue — Mind: prediction, denial, manipulation
 
@@ -54,7 +54,7 @@ Imply information, restriction, redirection, colour pressure, conditional advant
 
 Expose · Evaluate · Inspect · Deconstruct
 
-Anchor card name: **Focused Stance**
+Anchor card name: **Focused Stance** — written as a card on 2026-09-17, so the name is spent.
 
 ## Green — Soul: initiative, bonds, flow, shared power
 
@@ -101,25 +101,15 @@ The 2026-09-06 balance pass left the pool thin in exactly two places. One is now
 - **Green melee.** Filled on 2026-09-07 with MEND, BOLSTER, and AWAKEN, all three taken from the Green list above and struck from it. Before that the only untaken Green melee cards were BRISTLE and CONSUME. Green now has bench depth at melee; the Oracle's three melee seats are BIND, SMOKESCREEN and BRISTLE, with BOLSTER, AWAKEN and CONSUME behind them.
 - **Blue melee — still the thinnest place in the pool, and it got thinner.** Six of ten are in the Oracle; of the rest, TAINT is barred by the Oracle content rule (`rules/cards.md`, The Oracle Deck) and CLIMB is now spoken for. UNNAME was barred by that rule too until its 2026-09-08 rewrite cleared it, but on 2026-09-17 both UNNAME and UNRAVEL failed the early-campaign screen (`rules/early-campaign-cards.md`). That leaves CORNER as the only Blue melee card in the pool that is both legal and early-appropriate, against two melee seats the expansion needs filled. **This is where a new card is most worth writing.**
 
-### Blue melee names still free
+### Blue melee — the 2026-09-17 shortlist, now spent
 
-Checked against all 377 cards on 2026-09-17. The hard part is that Blue's own vocabulary leans observational, and watching reads as Ranged — a Blue melee name has to be a *mind at contact range*, which is a narrower thing than the Blue list was built for.
+The gap above was real: with UNNAME, UNRAVEL, TAINT and FORGET all out, CORNER was the only Blue melee card in the pool that was both legal and early-appropriate, against two seats the expansion needed. Four names came off this file to fix it — **PRESSURE**, **FOCUSED STANCE**, **PARRY** and **INTERCEPT** — and all four are written. Blue melee now has five options instead of one.
 
-**Best fits.**
+The reason the pool ran dry is worth keeping: **Blue's vocabulary leans observational, and watching reads as Ranged.** Decode, Dissect, Probe, Evaluate, Inspect, Assess, Track — all of them are things you do at a distance. A Blue melee name has to be a mind at contact range, which is a narrower thing than the Blue list was built for. That is why the list looked deep and wasn't.
 
-- **PRESSURE** — crowding somebody so their options close. Contact-range by nature, and restriction is squarely Blue's brief. Nothing anywhere near it in the pool.
-- **CLINCH** — the file files it under martial, but holding someone where they cannot work is denial, not force. Clean, narrow, no collisions.
-- **EXPOSE** — from Blue's own list. Caveat: EXPOSED was cut on 2026-09-07 along with the Critical keyword, and MARKED took over its slot in the Trisect decklist. The concepts overlap and MARKED is seated in the Oracle.
-- **PARRY** / **RIPOSTE** — prediction at contact, which is Blue however the martial list files them. Caveat: DEFLECT and RETALIATE already hold the Counter Attack shapes, so these would need to be something else.
-- **INTERCEPT** — reading where it is going and arriving first. Caveat: this was a Red d4 Melee card until 2026-09-06, when GUARD absorbed it (`experimental/archives/cut-cards.md`). The name is free; a reader who knows the archive may expect the old card.
+**Still free, and still reading Ranged:** ASSESS · TRACK · INSPECT · EVALUATE · DECONSTRUCT. Two carry history — EXPOSED was cut on 2026-09-07 with the Critical keyword and MARKED took its slot; TRACK SIGN was a cut Briarwatch card.
 
-**Free, but they read Ranged.** ASSESS · TRACK · INSPECT · EVALUATE · DECONSTRUCT — all observation verbs. TRACK also sits beside the cut TRACK SIGN.
-
-**Traps.** STAGGER collides with the near-banned Staggered keyword. MARK, PIN, PRESS and DELAY STEP are one letter or one word from MARKED, PINNED, PRESS THE WOUND and DELAY. PREEMPT, SEIZE, CUT IN and HOLD PRIORITY are strong words, but ANTICIPATE already holds "read it coming" in Blue melee.
-
-**Still unclaimed:** the anchor name this file gives Blue, **Focused Stance**.
-
-Red has bench depth at every range.
+**Traps.** STAGGER collides with the near-banned Staggered keyword. MARK, PIN, PRESS and DELAY STEP sit one word from MARKED, PINNED, PRESS THE WOUND and DELAY, and a duplicate silently prints the wrong card. PREEMPT, SEIZE, CUT IN and HOLD PRIORITY are strong words, but ANTICIPATE already holds "read it coming" in Blue melee.
 
 ---
 

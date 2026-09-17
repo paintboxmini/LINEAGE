@@ -83,7 +83,8 @@ Every one of these is a perfectly good card. They belong in creature decks, char
 
 ## Open
 
-- **Blue's expansion block is at 4 of 7** and cannot be finished from the bench. It needs one ranged and two melee. Blue's entire melee bench is TAINT, UNNAME, UNRAVEL and CORNER; three of those are now out, which leaves CORNER as the only legal Blue melee card in the pool. One seat is fillable, the second needs a new card written.
+- **Blue's expansion block is at 4 of 7.** It needs one ranged and two melee. The melee shortage is solved: PRESSURE, FOCUSED STANCE, PARRY and INTERCEPT were written on 2026-09-17 to sit beside CORNER, so Blue melee has five candidates where it had one. Which two get seated is open, and it interacts with the die means — PRESSURE is a d8, and any melee pair including it puts Blue at 3.36 or above, level with Red. Holding Blue's old 3.21 needs the three open seats to come to 9.5 in mean die, which is one d8 and two d4s.
+- **The ranged seat has not been shortlisted.** Blue's ranged bench is deep but much of it fails the screen — BLANK forces a discard, FRACTURE exiles the enemy's played card, ERODE reduces a stat. DECODE, PROBE, DISSECT, RETORT, CHAIN and DRAIN are the likely candidates and have not been read properly yet.
 - **82 core-list cards have never been screened.** Red has the most depth and is the likeliest place to find early-campaign cards the deck could still use.
 
 ---
