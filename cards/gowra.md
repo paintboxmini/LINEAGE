@@ -17,6 +17,17 @@ Range: Both
 
 ---
 
+**UNDER THE BANK**
+RED — BODY
+*The opening move, and it only ever happens once per fight.*
+Attack: Body + d6
+Effect: The defender is taken. They and the Gowra both leave the current position and arrive together in its den — a dry chamber under the bank, a few seconds away, reachable on foot by anyone willing to go in after them. The defender keeps everything they are carrying and acts normally from there.
+Defense Effect: The attacker is pulled halfway in with you and moves to Frontline.
+Range: Melee
+*"It did not bite him. It took hold and it went home, and the water closed, and that was the entire event."*
+
+---
+
 **TAIL BLADE**
 RED — BODY
 Attack: Body + d8

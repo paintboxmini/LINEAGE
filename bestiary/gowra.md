@@ -32,6 +32,8 @@ Long — four times the length of a man and most of that tail — low to the gro
 
 **It is an ambush animal and a patient one.** It does not chase, it does not range, and it will not follow a party more than a few hundred yards from its own ground. Outrun it or get onto open ground and it simply stops and watches you go.
 
+**And it takes exactly one thing and leaves.** A gowra is not trying to kill a party. It comes out of the water, takes whoever is closest to the edge, and goes back under the bank with them — and if the rest of them have any sense they will get on their boat and let it. **They will not, which is the encounter** (Takes One Under, below).
+
 ---
 
 ## The Roar
@@ -55,6 +57,20 @@ Under a bank, in its own dug chamber, in a collapsed hollow — the sound has no
 
 **Trait — Undermines:** Any bank a gowra has worked is hollow and will give way under weight — a boat winched up, a party making camp, four people standing in one place. **This is the encounter generator, not an attack.** The collapse is usually how a fight starts, and it starts with the party at the bottom of a hole, in an enclosed space, with it.
 
+**Trait — Takes One Under:** **The first thing a gowra does is take somebody.** It comes out of the water without warning, closes on whoever is nearest the edge, and is gone with them before the rest of the party has finished turning around. A few seconds under, and then the den.
+
+**Three rules that keep this from being the miserable version:**
+
+**It is a short trip and everybody knows where they went.** The den is *right there* — back under the bank they are standing on, reached from the water, eight or ten feet of it. Nobody is swept downstream. Nobody is lost. **The party does not go back for them; the party goes in after them**, which is a completely different scene and a much better one.
+
+**The den is dry and full of air.** It is above the waterline — that is the whole point of the way this animal digs. The underwater part lasts a few seconds and is narrated, not played. **No breath tracking, no drowning clock, no soaked and useless kit.** The dragged character comes up coughing on solid ground with everything they were carrying, in the dark, alone, with it.
+
+**They are the most interesting person at the table, not the sidelined one.** One character is in the boss room a round or two before anybody else can reach them, and everything they do in that time matters enormously. **Never make that player sit and wait** — they should be acting every single round.
+
+**It does this once.** It has what it came for and it will not go back for a second. The drag is how the encounter opens, not a thing that keeps happening to people in turn.
+
+*Choose the target by position, not by dice. Whoever was nearest the water is a consequence of something a player decided, which lands far better than a roll.*
+
 **Trait — Knows Where It Is:** THE ROAR can only be played in an enclosed position — a chamber, a collapsed bank, under a deck, a cave. **On open ground it is not in the deck at all.** Terrain is this creature's entire difficulty dial.
 
 ---
@@ -70,7 +86,7 @@ Under a bank, in its own dug chamber, in a collapsed hollow — the sound has no
 
 **Take that 99% with a large caveat.** The simulator does not execute card Effects, so it is running a lone heavy animal with no roar, no collapse, and no terrain — which is precisely the version of this creature that is supposed to be survivable. **The floor says one gowra on open dry ground is a bad afternoon and not a disaster, and that is correct.**
 
-**What makes it a fight is the hole it drops you into.** A party Staggered on the first exchange, at the bottom of a bank, with the light behind the thing, is having a very different encounter from the one the table above measures.
+**What makes it a fight is the hole it drops you into**, and the fact that it starts with one of the party already in there. A group Staggered on the first exchange, coming into a dug chamber one at a time, with a friend somewhere ahead of them in the dark, is having a very different encounter from the one the table above measures — and the sim cannot model any of it.
 
 **So: one, always.** They are solitary and territorial and two is a wipe at 23%. If a GM has stripped the terrain and wants it to still be dangerous, add a second — but the better answer is to put the terrain back.
 
