@@ -115,5 +115,6 @@ All core cards. It has no technique — it is a heavy animal that pushes.
 ## Related Documents
 
 - `bestiary/foulhaul.md` — the other thing on that bank, and why a waiting light is dangerous
+- `bestiary/gowra.md` — the fast-tide half of the same shore, and the word the Nest uses for a lie
 - `places/vultures-nest.md` — the signal-lantern maze, and the slow tide that uncovers what the lights are sitting on
 - `places/glasslight-reach.md` — where the stone comes from and why it holds light at all

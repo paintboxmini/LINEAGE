@@ -100,6 +100,8 @@ Rivermen call him **the Grandfather**, which is not affection. It is the ordinar
 - **Anywhere a fast tide puts bodies on a bank on a schedule.** That is most of the web at one time or another, which makes them the default bank creature for travel that stops for the night.
 - **Not on the water.** They do not swim well and have no reason to. A boat that stays off the bank does not meet one.
 
+*Which is the trap the region sets, taken as a whole: the bank is dangerous on a slow tide and the water is dangerous on a fast one (`bestiary/gowra.md`). A crew fighting its way upriver has to be on one or the other.*
+
 ---
 
 ## Not Yet Set
