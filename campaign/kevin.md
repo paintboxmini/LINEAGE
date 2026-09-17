@@ -128,7 +128,7 @@ Range: Melee
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**KINDLE** is Blue rather than Red. Fire says Red, but the orange's job is making a position unusable rather than hurting one person, and that's control. It also puts the artificer's cleverness in the Mind colour, where the crafting lives. The damage is unpreventable because it's fire rather than an attack landing, matching SPARK OF VIOLENCE and HAMMER.
+**KINDLE** is Blue rather than Red. Fire says Red, but the orange's job is making a position unusable rather than hurting one person, and that's control. It also puts the artificer's cleverness in the Mind colour, where the crafting lives. The damage is unpreventable because it's fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER (which was HAMMER until 2026-09-17).
 
 ```
 KINDLE

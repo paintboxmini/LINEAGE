@@ -564,13 +564,13 @@ Range: Both
 
 ---
 
-**HAMMER**
+**SHATTER**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 4 unpreventable damage to any enemy.
-Defense Effect: Gain Resist and Thorns 4.
+Effect: Deal 4 unpreventable damage to a random enemy other than the defender.
+Defense Effect: Gain Thorns 3.
 Range: Ranged
-*"Thrown, it is still a hammer."*
+*"It comes apart on impact. That is the point."*
 
 ---
 

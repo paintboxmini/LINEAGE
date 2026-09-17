@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 47 more are cleared and on the bench, 131 in all.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 44 more are cleared and on the bench, 128 in all.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
@@ -16,7 +16,7 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 **Melee (16).** ATTRITION · BLINDSIDE · CLOSE IN · DOUBLE DOWN* · GAMBLER'S RUIN* · GRAPPLE* · GUARD · OFF BALANCE · OPEN GUARD · PAIN IS FUEL · PUSH · RETALIATE · SPARK OF VIOLENCE* · STRIKE · UNBROKEN · WEATHERED
 
-**Ranged (4).** BURN BRIGHT* · CERTAIN STRIKE · HAMMER · SHARPEN
+**Ranged (4).** BURN BRIGHT* · CERTAIN STRIKE · SHARPEN · SHATTER
 
 **Both (8).** BLOOD TITHE* · CHARGE · FOOTWORK · GROUNDING STANCE · PROVOKE* · PULL · SECOND WIND · SLIP THE BLADE
 
@@ -40,17 +40,17 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ---
 
-## Eligible but unseated (47)
+## Eligible but unseated (44)
 
 Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
-**Red (22).** ANCHOR · BLEED · BRACE · CLEAVE · CLIMB · DART · DIG IN · ENDURE · EXPEND · GORE · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · SKEWER · STAUNCH · WARSONG
+**Red (20).** ANCHOR · BRACE · CLEAVE · CLIMB · DART · DIG IN · ENDURE · EXPEND · GORE · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · STAUNCH · WARSONG
 
 **Blue (7).** CHAIN · DECODE · DRAIN · REDIRECT · SLIPSTREAM · TRACE · UNMAKE
 
-**Green (18).** ABIDE · ALIGN · ATTUNE · AWAKEN · BOLSTER · CONSUME · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
+**Green (17).** ABIDE · ALIGN · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
 
-Two are worth naming. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17; it is a Red card now, about taking the high ground and holding it — move to the Backline, and Anchored, your attacks deal +2 while you stay there. **CONSUME** *(Green, Melee, d6)* is clean on every bar and left the expansion for composition, not for anything wrong with it.
+**CLIMB** *(Red, Ranged, d6)* is the one to know: it was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it — move to the Backline, and Anchored, your attacks deal +2 while you stay there.
 
 ---
 

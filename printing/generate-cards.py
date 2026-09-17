@@ -134,7 +134,7 @@ SETS = {
             'CLOSE IN', 'RETALIATE',
             'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
             'SLIP THE BLADE',
-            'CERTAIN STRIKE', 'HAMMER', 'SHARPEN',
+            'CERTAIN STRIKE', 'SHATTER', 'SHARPEN',
             # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the

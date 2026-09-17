@@ -83,7 +83,7 @@ For worked cases covering all of the above, see `rules/initiative-shift-examples
 **(4) Lifesteal**
 Heal for half the damage this attack actually dealt to HP, rounded down — after Resist and any other reduction, since that's the amount that landed.
 
-**(26) Resist**
+**(25) Resist**
 The next time an enemy successfully attacks you, take half damage rounded down. Expires after the next successful attack against you.
 
 Resist stacks. Each stack halves one successful attack; only one stack applies to a given attack. "Resist X" grants X stacks. 1 stack of Resist and 1 stack of Vulnerable (below) held at the same time cancel each other out, checked before either applies.
@@ -114,7 +114,7 @@ Rooted stacks. Each stack cancels one movement.
 **(6) Quick**
 A banked free Move Position, Rushdown included — spending it is your one free action for the turn (`rules/combat.md`, Turn Structure) and costs nothing from your Action. Holds until spent, however many turns that takes. Stacks: hold as many as you've been granted, spend one per turn.
 
-**(10) Scry X**
+**(9) Scry X**
 Look at the top X cards of a deck. If no target is specified, this applies to your own deck. For each card, choose to place it on top, on the bottom, or into the discard pile — in any order.
 
 **(5) Staggered**

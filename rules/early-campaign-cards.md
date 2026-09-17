@@ -2,7 +2,7 @@
 
 The Oracle content rule in `rules/cards.md` says what a starting deck **may not do**. This is the other half: the specific cards that have been looked at and cleared for a first campaign. A card being legal under the content rule is not the same as a card being right for players who are still learning what the reveal is.
 
-Started 2026-09-17 from the cards already seated, and finished the same day: **all 166 cards in the three core colour lists have been screened** — 131 cleared, 35 sent to the middle tier, and one cut. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
+Started 2026-09-17 from the cards already seated, and finished the same day: **all 166 cards in the three core colour lists have been screened** — 128 cleared, 38 sent to the middle tier, and one cut. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
 
 ---
 
@@ -44,7 +44,7 @@ Every one of them is a good card. Failing this screen is a statement about when 
 
 ## Open
 
-- **Lifesteal is at zero in the Oracle 63 and at zero in the expansion.** It lives in the pool on SKEWER, BLEED and CONSUME, all of them cleared and all of them unseated. A keyword with a full glossary entry that no player will meet is the shape that got Critical deleted (`experimental/archives/cut-cards.md`); this one is worth deciding on rather than leaving.
+- **Lifesteal was decided as a keyword, not card by card.** It was at zero in both sets and living on three unseated cards; rather than seat one, the whole mechanic went to the middle tier on 2026-09-17. Healing off the damage you deal turns a winning exchange into two and pays the player who is already ahead. A first campaign does not need it on tap. SKEWER, BLEED and CONSUME moved with it, and nothing had to be unseated.
 - **Lifesteal and Quick are at zero in the expansion.** Lifesteal left with PARADOX and Quick was never there. Blind, Ward and Vulnerable came back — PARRY, FOCUSED STANCE and PROFILE's rewrite covered them. No Blue bench card carries Lifesteal or Quick, so filling them means another colour or a new card, and it is not obvious either is owed a seat.
 - **Seat pressure is real now.** STRIKE took a Red melee seat in the Oracle 63 on 2026-09-17 and PUSH came out for it; PRESSURE and CORNER took the two Blue melee seats the tie-winners vacated. The 12/6/3 ratio means every addition is a swap, so a card cannot simply be added — something has to have a reason to leave.
 

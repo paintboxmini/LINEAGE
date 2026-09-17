@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain 1 Quick (their next Move Position, Rushdown included, doesn't spend their action)
+Defense Effect: Allies gain Quick.
 Range: Both
 *"Change the field, change the fight."*
 
@@ -127,8 +127,8 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: If you are attacked before your next turn, your party may scry 1 and heal 2 HP
-Defense Effect: You and your allies gain Deadly
+Effect: If you are attacked before your next turn, your party heals 4 HP.
+Defense Effect: If you are attacked again before your next turn, you and your allies gain Deadly.
 Range: Ranged
 *"Shared vision illuminates the path forward."*
 

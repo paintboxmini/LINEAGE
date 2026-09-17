@@ -61,6 +61,21 @@ The reveal is the game. A beginner card does not reach into it at all.
 
 ---
 
+## Lifesteal is a middle-tier mechanic
+
+Ruled on 2026-09-17 as a keyword, not card by card. Healing off the damage you deal is a swing a first campaign should not have on tap: it turns every winning exchange into two, and it rewards the player who is already ahead. Neither Oracle set had a Lifesteal card at the time of the ruling, so nothing had to be unseated for it.
+
+| Card | | | |
+|------|---|---|---|
+| **BLEED** | Red | Ranged d4 | `Effect: Lifesteal` — and Thorns 4 on defence. |
+| **SKEWER** | Red | Melee d6 | Lifesteal for the full damage dealt. |
+| **CONSUME** | Green | Melee d6 | Lifesteal on the attack half and again off its own unpreventable damage on defence, with an Exile cost for Weak and Blind. |
+| **PARADOX** | Blue | Ranged d6 | Also fails bar 1. Listed above. |
+
+*PARADOX aside, none of these was here for anything it did wrong. They are here because of what the keyword does.*
+
+---
+
 ## Fails bar 2 — more than one status on a single half
 
 | Card | | | |
@@ -99,6 +114,8 @@ The rule is in `rules/cards.md`, The Oracle Deck. It governs starting decks only
 **The tie-winning family decided bar 1.** The bar started as "one step against an inversion" — ANTICIPATE turning a tie into a win was a nudge and cleared; PARADOX flipping the outcome did not. That line held for exactly as long as the family looked like two cards. Reading the rest of the pool found four more, and the argument that kept the first two — a tie advances nobody on its own — is about one card at a time, not about a deck that stacks six. All six moved on 2026-09-17, which cost the Oracle 63 two Blue melee seats. **The bar is simpler now, and better: a beginner card does not touch resolution.**
 
 **ABANDON was cut rather than moved here, and the rule it exploited is rewritten.** Its defence half stopped the attacker defending at all the next time you attacked them — Staggered's whole effect with the keyword left off, so the near-ban never caught it. The ban in `rules/cards.md` now bars the effect rather than the word: costing an enemy a whole attack or a whole defence is out however it is phrased, and "cannot attack" counts the same as "cannot defend". ABANDON is in `experimental/archives/cut-cards.md` with the two references it left behind.
+
+**HAMMER is SHATTER, and its Thorns dropped to 3.** The name was the problem first — a card that only works if your character owns a hammer is a card most players cannot use, and the name is what gets spent out of combat. SHATTER covers the same action without the equipment: throw something, it breaks on impact, a fragment finds another enemy. The effect follows the name now, hitting a random enemy *other* than the defender rather than any enemy you like. Its defence half was Resist and Thorns 4 together, which was two buffs where one would do; it is Thorns 3. That makes Red's third Thorns value across three cards, and `rules/cards.md` now says the colour ladder is mostly gone.
 
 **STEAL came back out.** It used to take a consumable off the defender, which is going through their possessions. It takes one stack of a Positive Status Effect now, which is the thing the content rule expressly permits — removing buffs an enemy already has. DRAIN takes the whole effect; STEAL takes a single charge, and exiles itself doing it.
 

@@ -2,7 +2,7 @@
 
 A working vocabulary for naming new cards, from Drew. Kept as a source to pull from when a gap needs filling — not a design spec, and nothing here is committed to becoming a card.
 
-**Names already used by a card have been struck from these lists**, so anything still written here was free as of the last strike — 2026-09-17, when 27 names the file was still offering turned out to be held by cards. Re-check anyway before committing to one — this file goes stale the moment a card is added or renamed, and duplicate names are not merely untidy: `printing/generate-cards.py` resolves a set's fixed card list by name into a first-wins dict, so a collision silently prints the wrong card. That is exactly what the Red/Green BRACE duplicate did to the Oracle deck (`experimental/archives/cut-cards.md`). To re-check: `python3 combat-simulations/cards.py` loads every card, and `by_name()` in that module is the same lookup the printer builds.
+**Names already used by a card have been struck from these lists**, so anything still written here was free as of the last strike — 2026-09-17, when 27 names the file was still offering turned out to be held by cards. Names can come back: HAMMER returned to the Red combat list later that day when the card took the name SHATTER instead, because a card whose name requires owning a hammer is a card most players cannot spend. Re-check anyway before committing to one — this file goes stale the moment a card is added or renamed, and duplicate names are not merely untidy: `printing/generate-cards.py` resolves a set's fixed card list by name into a first-wins dict, so a collision silently prints the wrong card. That is exactly what the Red/Green BRACE duplicate did to the Oracle deck (`experimental/archives/cut-cards.md`). To re-check: `python3 combat-simulations/cards.py` loads every card, and `by_name()` in that module is the same lookup the printer builds.
 
 **Breadth is the thing to weigh.** A card's name is what a player spends outside combat on an Advantage discard, so a broad verb applies to more attempts and is worth more than a narrow one — see `rules/cards.md`, The Name Is Half the Card. Most of the words below are broad by construction, which is what makes them useful; the parser-style multi-word entries are narrower and correspondingly cheaper.
 
@@ -42,7 +42,7 @@ Leap · Shove · Clash · Roll · Pin · Dash · Lure · Shift · Mark · Cut ·
 
 Imply movement, HP swing, forced interaction, frontline density.
 
-**Combat:** Disarm · Trip · Shove · Pin · Slam · Overrun · Bash · Sweep · Tackle · Drive · Crush · Rush · Ram
+**Combat:** Disarm · Trip · Shove · Pin · Slam · Overrun · Bash · Sweep · Tackle · Drive · Crush · Rush · Ram · Hammer
 
 **Mobility:** Vault · Somersault · Leap · Dive · Roll · Slide · Advance · Withdraw · Drop
 
