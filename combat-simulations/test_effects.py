@@ -197,6 +197,244 @@ def test_status_cards():
     check('and it is not playable', b.playable(a) == [], b.playable(a))
 
 
+# ---- the three shapes Chris's kit needed --------------------------------
+#
+# MEASURE, RIPOSTE and KILLSWITCH live in `campaign/chris.md` rather than in
+# `cards/`, so nothing here reads them off disk — the prose is repeated
+# below on purpose. A player owns that file and may rename or retune a card
+# at the table; a test that broke when they did would be a test punishing
+# the thing it exists to serve.
+
+MEASURE_E = ('If the card you played last turn was a different colour than '
+             'this one, deal +2 damage and the defender reveals their stats.')
+MEASURE_D = ('If the card you played last turn was a different colour than '
+             'this one, the attacker reveals their stats.')
+RIPOSTE_D = 'Gain Deadly. If you won this exchange, gain Deadly again.'
+KILLSWITCH = ('Choose one — your attacks deal +2 damage, or gain Armour 2. '
+              'Lasts until the end of combat. Playing KILLSWITCH again '
+              'replaces your current choice rather than adding to it.')
+
+
+def blue():
+    return cardlib.Card(name='MEASURE', color='BLUE', stat='MIND', die='d6',
+                        effect=MEASURE_E, defense_effect=MEASURE_D,
+                        range='Both')
+
+
+def test_measure_reads_the_last_colour():
+    print('\nMEASURE pays for a colour change and nothing else')
+    card = blue()
+
+    a, b = duo()
+    a.last_color = 'RED'
+    check('a different colour last turn arms the bonus',
+          _bonus(MEASURE_E, a, b, card) == 2)
+
+    a.last_color = 'BLUE'
+    check('the same colour pays nothing',
+          _bonus(MEASURE_E, a, b, card) == 0)
+
+    a.last_color = None
+    check('and a turn that played no card pays nothing',
+          _bonus(MEASURE_E, a, b, card) == 0)
+
+    # The defence half asks the same question of the same person: the
+    # defender's own last turn, not the attacker's.
+    a.last_color = 'GREEN'
+    b.last_color = 'BLUE'
+    ops = fx.compile_half(MEASURE_D)
+    assert ops is not None
+    seen = []
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=card,
+                     outcome='defender wins', rng=random.Random(0),
+                     log=lambda line: seen.append(line))
+    ctx.wheel = None
+    for op in ops:
+        op.apply(ctx)
+    check('the defence half reads the defender\'s own last colour',
+          any('Body' in line for line in seen), seen)
+
+
+def _bonus(text, actor, opponent, card):
+    """What this half writes into the damage bonus before the roll."""
+    ops = fx.compile_half(text)
+    assert ops is not None, text
+    ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent], card=card,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.phase = 'pre'
+    for op in ops:
+        op.run_phase(ctx, 'pre')
+    return ctx.dmg_bonus
+
+
+def test_last_colour_rolls_forward_on_your_own_turn():
+    print('\nThe colour you played last turn is your own turn\'s')
+    import engine
+    import play
+    pool = cardlib.by_name(cardlib.core_pool())
+    red = pool['STRIKE']
+    a, b = duo()
+    a.hp = b.hp = 400
+    passer = _Passer()
+
+    engine.resolve_attack(a, b, red, None, rng=random.Random(0), log=QUIET)
+    check('attacking records the colour, but not as last turn yet',
+          a.color_this_turn == 'RED' and a.last_color is None)
+
+    play.take_turn(a, passer, [b], [], None, QUIET, random.Random(0))
+    check('the top of the next turn rolls it forward',
+          a.last_color == 'RED' and a.color_this_turn is None,
+          (a.last_color, a.color_this_turn))
+
+    # A defence is played on someone else's turn, so it is not "the card you
+    # played last turn". Only the attacker's card is recorded.
+    engine.resolve_attack(b, a, red, red, rng=random.Random(0), log=QUIET)
+    check('defending does not overwrite it',
+          a.color_this_turn is None and a.last_color == 'RED',
+          (a.color_this_turn, a.last_color))
+
+    play.take_turn(a, passer, [b], [], None, QUIET, random.Random(0))
+    check('and a turn that plays nothing clears it', a.last_color is None,
+          a.last_color)
+
+
+class _Passer:
+    """An agent that does nothing with its turn, so a turn's bookkeeping can
+    be checked without an exchange in the way."""
+
+    def choose_action(self, who, foes, allies):
+        return ('pass',)
+
+    def choose_target(self, who, pool, prompt):
+        return pool[0]
+
+
+def test_riposte_arms_twice_only_on_a_win():
+    print('\nRIPOSTE banks one Deadly on a tie and two on a block')
+    a, b = duo()
+
+    a.deadly = 0
+    ops = fx.compile_half(RIPOSTE_D)
+    assert ops is not None
+    _defend(ops, a, b, 'defender wins')
+    check('winning the exchange arms it twice', a.deadly == 2, a.deadly)
+
+    a.deadly = 0
+    _defend(ops, a, b, 'tie')
+    check('a tie still arms it once', a.deadly == 1, a.deadly)
+
+    # The same words on an attack half ask about the attacker instead —
+    # the gate is relative to whoever is speaking, which is what separates
+    # it from "on a clean win".
+    a.deadly = 0
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.acting = a
+    for op in ops:
+        op.apply(ctx)
+    check('and on an attack half it reads the attacker\'s result',
+          a.deadly == 2, a.deadly)
+
+    a.deadly = 0
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=None,
+                     outcome='defender wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.acting = a
+    for op in ops:
+        op.apply(ctx)
+    check('and is false for an attacker who did not win',
+          a.deadly == 1, a.deadly)
+
+
+def _defend(ops, defender, attacker, outcome):
+    ctx = fx.Context(defender, attacker, allies=[], enemies=[attacker],
+                     card=None, outcome=outcome, rng=random.Random(0),
+                     log=QUIET)
+    ctx.wheel = None
+    ctx.acting = attacker          # a Defense Effect fires on their turn
+    for op in ops:
+        op.apply(ctx)
+    return ctx
+
+
+def test_killswitch_flips_rather_than_stacking():
+    print('\nKILLSWITCH replaces its own choice and only its own')
+    a, b = duo()
+
+    _stance(a, b, 'gain Armour 2')
+    check('the stance grants what was chosen', a.armour == 2, a.armour)
+
+    _stance(a, b, 'gain Armour 2')
+    check('playing it again does not stack', a.armour == 2, a.armour)
+
+    _stance(a, b, 'your attacks deal +2 damage')
+    check('switching modes takes the old one back',
+          a.armour == 0 and len(a.standing_mods) == 1,
+          (a.armour, a.standing_mods))
+
+    _stance(a, b, 'gain Armour 2')
+    check('and switching back takes the bonus down',
+          a.armour == 2 and not a.standing_mods,
+          (a.armour, a.standing_mods))
+
+    # Armour from somewhere else is not KILLSWITCH's to remove.
+    a.armour += 3
+    _stance(a, b, 'your attacks deal +2 damage')
+    check('armour from elsewhere survives the flip', a.armour == 3, a.armour)
+
+    check('the damage mode lasts the fight rather than a turn',
+          a.standing_mods and a.standing_mods[0]['uses'] is None,
+          a.standing_mods)
+
+    check('"Same choice." on the defence half is the same stance',
+          [type(o).__name__ for o in fx.compile_half('Same choice.',
+                                                     other=KILLSWITCH)]
+          == ['Stance'])
+    check('and a half pointing at nothing narrates',
+          fx.compile_half('Same choice.') is None)
+
+
+def _stance(actor, opponent, pick):
+    ops = fx.compile_half(KILLSWITCH)
+    assert ops is not None
+    ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET,
+                     agent=_Picks(pick))
+    ctx.wheel = None
+    for op in ops:
+        op.apply(ctx)
+    return ctx
+
+
+class _Picks:
+    def __init__(self, label):
+        self.label = label
+
+    def choose_option(self, who, options, prompt):
+        return self.label
+
+    def choose_target(self, who, pool, prompt):
+        return pool[0]
+
+
+def test_a_duration_with_nothing_to_hold_narrates():
+    print('\nA sentence that reaches back and finds nothing narrates')
+    check('"Lasts until the end of combat." alone does not compile',
+          fx.compile_half('Lasts until the end of combat.') is None)
+    check('nor does the replacement clause alone',
+          fx.compile_half('Playing THIS again replaces your current choice '
+                          'rather than adding to it.') is None)
+    # Evade is a charge that gets spent, so "until the end of combat" would
+    # be changing the status rather than describing it. Armour is not.
+    check('a duration on a status that is spent refuses',
+          fx.compile_half('Gain Evade. Lasts until the end of combat.') is None)
+    check('and on Armour, which already lasts the fight, it reads',
+          fx.compile_half('Gain Armour 2. Lasts until the end of combat.')
+          is not None)
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -965,6 +1203,11 @@ if __name__ == '__main__':
     test_study_is_a_check()
     test_shared_burden_is_uncapped_but_survivable()
     test_slipstream_is_the_ring_motion()
+    test_measure_reads_the_last_colour()
+    test_last_colour_rolls_forward_on_your_own_turn()
+    test_riposte_arms_twice_only_on_a_win()
+    test_killswitch_flips_rather_than_stacking()
+    test_a_duration_with_nothing_to_hold_narrates()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

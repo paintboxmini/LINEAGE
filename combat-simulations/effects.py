@@ -41,6 +41,13 @@ DEBUFFS = {'weak', 'blind', 'vulnerable', 'staggered', 'rooted'}
 # `rules/card-glossary.md`: what "Positive Status Effects" names.
 POSITIVE = ('evade', 'resist', 'deadly', 'protect', 'anchored', 'quick', 'immunity')
 
+# `rules/card-glossary.md`, (0) Armour and (7) Thorns: the two statuses that
+# are "not consumed", stack additively into one value, and already run to
+# the end of the fight. Everything else is a charge that gets spent, so
+# "lasts until the end of combat" would be changing it rather than
+# describing it — which is why only these two can carry that sentence.
+PERMANENT_STATUSES = {'armour', 'thorns'}
+
 STATUS_WORDS = sorted(set(list(STATUS_ATTR) + ['protect']), key=len, reverse=True)
 STATUS_RE = '|'.join(STATUS_WORDS)
 
@@ -1110,18 +1117,43 @@ GATES = [
                   else ctx.damage_dealt > 0), 'damage dealt'),
     (re.compile(r'^if target ally\'s HP is (\d+) or less,\s*', re.I),
      None, 'ally HP threshold'),
+    # MEASURE (`campaign/chris.md`). Three things have to be true and the
+    # third is the one that bites: there must *be* a card you played last
+    # turn. A turn spent moving, Staggered, or in cover played none, and a
+    # card played to defend was played on someone else's turn — see
+    # `engine.Combatant.last_color`. So the rotation has to be kept up
+    # rather than merely started.
+    (re.compile(r'^if the card you played last turn was a different '
+                r'colou?r than this one,\s*', re.I),
+     lambda ctx: (getattr(ctx.actor, 'last_color', None) is not None
+                  and ctx.card is not None
+                  and ctx.actor.last_color != ctx.card.color),
+     'the colour changed'),
 ]
 
 SEP = re.compile(r'^\s*(?:[.,;]|\s+and\b|\s+then\b)+\s*', re.I)
 
 
-def compile_half(text):
-    """Prose to ops, or None when any part of it is not understood."""
+def compile_half(text, other=None):
+    """Prose to ops, or None when any part of it is not understood.
+
+    `other` is the card's *other* half, needed only by a half that points at
+    it — KILLSWITCH's defence half is the words "Same choice." and nothing
+    else. Callers that have the card pass it (`engine.compiled`); callers
+    compiling a fragment do not, and a back-reference with nothing to point
+    at narrates, which is the right answer.
+    """
     if not text:
         return None
     s = ' '.join(text.split()).strip()
     if s.lower() in ('none.', 'none', ''):
         return None
+
+    # "Same choice." — the half is the other half. Compiled without an
+    # `other` of its own so a pair of halves that each point at the other
+    # cannot loop.
+    if re.fullmatch(r'same choice\.?|as (?:the )?(?:attack )?effect\.?', s, re.I):
+        return compile_half(other) if other else None
 
     # A trailing gate reads the same as a leading one (FORGET puts it last).
     trailing = re.search(
@@ -1196,6 +1228,12 @@ def compile_half(text):
             op.target = subject
         elif target in (SELF, OPPONENT, ALLY, ALL_ALLIES, ALL_ENEMIES, PARTY, ANY):
             subject = target
+
+    # Last, so the sentences that reach backwards see the ops in the shape
+    # the rest of this function left them in.
+    ops = _resolve_durations(ops)
+    if not ops:
+        return None
 
     if gate:
         return [Gated(gate[0], ops, gate[1])]
@@ -1910,6 +1948,224 @@ class AttuneMod(Op):
             'text': f'+{self.amount} damage with {card.color}'})
         ctx.log(f'  {ctx.actor.name} discards {card.name} — '
                 f'+{self.amount} damage with {card.color} for the fight.')
+
+
+# ---- stances, durations, and the two sentences that reach backwards ----
+#
+# Most card prose is things that happen. Three shapes are not: a sentence
+# that sets how long the clause before it lasts, a sentence that says
+# replaying the card replaces rather than stacks, and a half that is just a
+# pointer at the other half. All three are resolved at compile time and
+# none of them survives into the ops the engine runs.
+
+
+class UntilEndOfCombat(Op):
+    """Compile-time marker for "Lasts until the end of combat."
+
+    Never runs. `_resolve_durations` consumes it and sets the duration on
+    whatever preceded it — CLIMB and KILLSWITCH both say "your attacks deal
+    +2 damage" and differ only in this sentence, so it has to be able to
+    reach back and change what it follows.
+    """
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('a duration marker reached the engine')
+
+
+class Replaces(Op):
+    """Compile-time marker for "Playing X again replaces your current choice
+    rather than adding to it." Consumed by `_resolve_durations`, which wraps
+    everything before it in a Stance."""
+
+    def __init__(self, key):
+        self.key = key
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('a replacement marker reached the engine')
+
+
+class Stance(Op):
+    """A choice that stays up for the fight and replaces itself.
+
+    KILLSWITCH (`campaign/chris.md`): "Lasts until the end of combat.
+    Playing KILLSWITCH again replaces your current choice rather than adding
+    to it." A killswitch flips; it does not accumulate. Without the second
+    sentence the card is a stacking buff, so the engine has to be able to
+    take back what the card granted last time — and only that much. Armour
+    that arrived from somewhere else is not KILLSWITCH's to remove.
+
+    So rather than assuming what the branches do, this watches: it records
+    what changed while the chosen branch ran, and undoes exactly that the
+    next time the same card is played. A branch that granted nothing takes
+    nothing back.
+    """
+
+    def __init__(self, key, ops):
+        self.key, self.ops = key, ops
+
+    @property
+    def phase(self):
+        return 'pre' if any(o.phase == 'pre' for o in self.ops) else 'post'
+
+    def run_phase(self, ctx, phase):
+        mine = [o for o in self.ops if o.phase == phase]
+        if not mine:
+            return
+        who = ctx.actor
+        # A half whose ops straddle both phases would otherwise revoke twice
+        # and record the second half of itself as a fresh stance.
+        seen = getattr(ctx, 'stances_revoked', None)
+        if seen is None:
+            seen = ctx.stances_revoked = set()
+        if self.key not in seen:
+            seen.add(self.key)
+            self._revoke(who, who.stances.pop(self.key, None), ctx.log)
+
+        attrs = sorted(set(STATUS_ATTR.values()))
+        before_status = {a: getattr(who, a, 0) for a in attrs}
+        before_mods = list(who.standing_mods)
+
+        for op in mine:
+            op.run_phase(ctx, phase)
+
+        held = who.stances.setdefault(self.key, {'status': {}, 'mods': []})
+        for a in attrs:
+            gained = getattr(who, a, 0) - before_status[a]
+            if gained > 0:
+                held['status'][a] = held['status'].get(a, 0) + gained
+        for mod in who.standing_mods:
+            if not any(mod is seen_mod for seen_mod in before_mods):
+                held['mods'].append(mod)
+
+    def apply(self, ctx):
+        self.run_phase(ctx, 'post')
+
+    def _revoke(self, who, held, log):
+        if not held:
+            return
+        gone = []
+        for attr, n in held.get('status', {}).items():
+            current = getattr(who, attr, 0)
+            if current > 0:
+                setattr(who, attr, max(0, current - n))
+                gone.append(f'{attr.title()} {min(n, current)}')
+        for mod in held.get('mods', []):
+            for live in list(who.standing_mods):
+                if live is mod:
+                    who.standing_mods.remove(live)
+                    gone.append(mod.get('text', 'a standing bonus'))
+        if gone:
+            log(f'  {self.key} replaces what it set before — '
+                f'{", ".join(gone)} ends.')
+
+
+def _extend_to_combat(op):
+    """Set this op's duration to the end of the fight, or refuse.
+
+    Refusing is the point. An op whose duration this does not know how to
+    set makes the whole half narrate, which is the rule everywhere else in
+    this module — a stance that silently lasts one turn is a wrong fight
+    reported as a right one.
+    """
+    if isinstance(op, StandingMod):
+        op.uses = None
+        op.text = re.sub(r" on this turn's attack$", ' for the fight', op.text)
+        return True
+    if isinstance(op, Grant):
+        # Armour and Thorns already run to the end of the fight, so the
+        # sentence restates the status rather than changing it.
+        return op.status in PERMANENT_STATUSES
+    if isinstance(op, Choose):
+        return all(all(_extend_to_combat(o) for o in b) for b in op.branches)
+    if isinstance(op, Gated):
+        return all(_extend_to_combat(o) for o in op.ops)
+    return False
+
+
+def _resolve_durations(ops):
+    """Fold the two backward-reaching sentences into what they modify.
+
+    Returns None — narrate the whole half — when either sentence has
+    nothing it can apply to, rather than dropping it and running the rest.
+    """
+    out = []
+    for op in ops:
+        if isinstance(op, UntilEndOfCombat):
+            if not out or not all(_extend_to_combat(o) for o in out):
+                return None
+            continue
+        if isinstance(op, Replaces):
+            if not out:
+                return None
+            out = [Stance(op.key, out)]
+            continue
+        out.append(op)
+    return out
+
+
+@rule(r'^lasts until the end of combat')
+def _r_until_end_of_combat(m):
+    return [UntilEndOfCombat()]
+
+
+@rule(r'^playing (.+?) again replaces your current choice '
+      r'rather than adding to it')
+def _r_replaces(m):
+    return [Replaces(m.group(1).strip())]
+
+
+@menu(r'^choose one\s*[\u2014-]+\s*([^.]+?)\s*(?=\.|$)')
+def _r_choose_one(m):
+    """The general modal shape — a menu followed by more sentences, rather
+    than a menu that is the whole half. KILLSWITCH is the first of these."""
+    branches, labels = _branches(m.group(1))
+    return [Choose(branches, labels)] if branches else None
+
+
+# ---- clauses these three cards needed ---------------------------------
+
+
+@rule(r'^(?:the\s+)?(?:defender|attacker|target)\s+reveals their stats')
+def _r_reveals_stats(m):
+    """MEASURE. "The defender" on an attack half and "the attacker" on a
+    defence half are the same person — the other side of the exchange — so
+    both read as OPPONENT, which is this module's convention throughout
+    (see `Context`)."""
+    return [RevealStats(OPPONENT)]
+
+
+@rule(r'^deal \+(\d+) damage(?!\s+this attack)')
+def _r_flat_bonus_bare(m):
+    """"Deal +2 damage" with no rider, which is how most of the corpus
+    writes it. The longer "deal +N damage this attack" is registered above
+    and is tried first; the lookahead here says so out loud."""
+    return [DamageBonus(int(m.group(1)))]
+
+
+@rule(r'^if you won this exchange,\s*(.+?)\.?$')
+def _r_won_exchange(m):
+    """RIPOSTE. Not the same question as "on a clean win" — that gate is
+    written from the attacker's side and reads the outcome literally. This
+    one is asked by whichever half is speaking, and the defence half of a
+    riposte wins the exchange by *not* being hit.
+
+    "again" in "gain Deadly again" says this is a second application of the
+    status, which is what running the op a second time already is.
+    """
+    body = re.sub(r'\s+again$', '', m.group(1).strip().rstrip('.'))
+    inner = compile_half(body)
+    if inner is None:
+        return None
+    return [Gated(_won_the_exchange, inner, 'won the exchange')]
+
+
+def _won_the_exchange(ctx):
+    """Did the half's own side win? `ctx.acting` is whose turn it is, which
+    is the attacker — so the actor is the attacker exactly when those two
+    are the same combatant (`engine._begin`)."""
+    acting = getattr(ctx, 'acting', None)
+    attacking = acting is None or ctx.actor is acting
+    return ctx.outcome == ('attacker wins' if attacking else 'defender wins')
 
 
 # ---- card traits -------------------------------------------------------

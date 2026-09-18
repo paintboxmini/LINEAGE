@@ -136,6 +136,23 @@ class Combatant:
         # Anchored. Each is {bonus, mult, color, target, uses, text}.
         self.standing_mods = []
 
+        # The colour of the card you played on your own last turn, which is
+        # what MEASURE asks about (`campaign/chris.md`). Rolled forward once
+        # at the top of each of your turns by `play.take_turn`, so a half
+        # resolving mid-turn still sees the previous turn's colour and not
+        # the card doing the asking.
+        #
+        # A card played to *defend* is not "a card you played last turn" —
+        # it was played on someone else's. Only attacks are recorded.
+        self.last_color = None
+        self.color_this_turn = None
+
+        # Stances: a choice that stays up for the fight and replaces itself
+        # rather than stacking (KILLSWITCH). Keyed by card name, holding
+        # exactly what that card granted so it can take back that much and
+        # no more. See `effects.Stance`.
+        self.stances = {}
+
     # ---- derived --------------------------------------------------------
 
     # ---- position ------------------------------------------------------
@@ -458,6 +475,13 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     """
     log(f'{attacker.name} attacks {defender.name}.')
 
+    # What this combatant played on their own turn, read next turn by
+    # anything asking about a colour change. Recorded here rather than in
+    # play.py so an extra attack handed back mid-turn also counts, and only
+    # for the attacker — a defence is played on someone else's turn.
+    if atk_card is not None:
+        attacker.color_this_turn = atk_card.color
+
     # PARTITION: the target is out of the exchange entirely, either side.
     # The cards were already committed, so they still go to the discard —
     # an exchange that does not happen must not eat them.
@@ -718,9 +742,14 @@ def compiled(card, half):
     text = getattr(card, half, None)
     if not text or text.strip().lower() in ('none.', 'none'):
         return None
-    if text not in _COMPILED:
-        _COMPILED[text] = fx.compile_half(text)
-    return _COMPILED[text]
+    # A half can point at the other one ("Same choice."), so the key has to
+    # be both texts — the same words mean different things on a card whose
+    # other half differs.
+    other = getattr(card, 'defense_effect' if half == 'effect' else 'effect', None)
+    key = (text, other)
+    if key not in _COMPILED:
+        _COMPILED[key] = fx.compile_half(text, other=other)
+    return _COMPILED[key]
 
 
 def header(card, half):
