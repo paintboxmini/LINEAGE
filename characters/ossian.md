@@ -1,6 +1,12 @@
-# Ossian
+# Ossian Herb
 
 Head priest, Temple of Unity, capital. Kevin's father (`campaign/kevin.md`).
+
+**The Herbs are a priestly family and there are a great many of them.** Cousins, aunts, siblings, in-laws — scattered through temples across Eclipseria and beyond it, in nearly every faith the Temple District keeps a door for. It is what a Herb does. Nobody in the family had to be told.
+
+**Ossian is the only one who runs a temple.** Every other Herb in orders is a serving priest under somebody else's roof, and most of them are content with that. He is the exception, at the biggest building in the district, and the family's feelings about that are complicated in the ordinary way families are — pride, and a certain amount of being tired of hearing about it.
+
+*Which is the pressure on Kevin (`campaign/kevin.md`) without anyone in the family ever having applied it. A boy in a house of priests who wanted to cook was not rebelling against a rule. He was declining the only thing anybody had ever modelled.*
 
 ---
 

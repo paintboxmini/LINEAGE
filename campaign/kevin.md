@@ -1,4 +1,10 @@
-# Kevin
+# Kevin Herb
+
+**The Herbs are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
+
+**His father Ossian is the only Herb who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
+
+*So the thing Kevin declined was not a rule. Nobody forbade him anything and nobody had to. He grew up in a house where every single adult had chosen the same life, and he wanted to cook — which is not rebellion, it is just the first person in living memory to want something else. The shipment he is escorting is the job a family gives someone whose actual talent embarrasses them slightly, and it is being handled kindly.*
 
 *Player character — still a light draft, more filled in than before but nothing here is locked. Everything about him lives in this one file: stats, concept, the craft, the ingredients, the drinks, and the card drafts.*
 
@@ -122,7 +128,7 @@ Range: Melee
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**KINDLE** is Blue rather than Red. Fire says Red, but the orange's job is making a position unusable rather than hurting one person, and that's control. It also puts the artificer's cleverness in the Mind colour, where the crafting lives. The damage is unpreventable because it's fire rather than an attack landing, matching SPARK OF VIOLENCE and HAMMER.
+**KINDLE** is Blue rather than Red. Fire says Red, but the orange's job is making a position unusable rather than hurting one person, and that's control. It also puts the artificer's cleverness in the Mind colour, where the crafting lives. The damage is unpreventable because it's fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER (which was HAMMER until 2026-09-17).
 
 ```
 KINDLE

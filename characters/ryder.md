@@ -42,19 +42,22 @@ High Soul, real Body behind it. Not fragile the way a pure caster is fragile —
 
 **Signature cards:** `cards/ryder.md` — unique to Ryder, not transferable.
 
-**Core cards (3 Blue / 3 Red / 3 Green):**
+**Core cards (3 Blue / 3 Red / 3 Green):** PROFILE, FOCUS, DECODE *(blue)* · STRIKE, ENDURE, BRACE *(red)* · RENEWAL, ADAPT, FLOW *(green)*
 
-*Blue — Mind*
-- PROFILE — Scry 2, then draw 1; Defensive: Look at the top card of the attacker's hand
-- FOCUS — Scry 2, return this card to your hand; Defensive: Apply Initiative Shift +2 to yourself
-- CLIMB — Look at bottom 2 of your deck, discard any of them or place any of them on top; Defensive: Max hand size +1 until end of combat
+Card text lives in `cards/` and is not copied here — this list went stale twice by being transcribed, and the summaries were wrong about RENEWAL and ADAPT even before the cards moved under them.
 
-*Red — Body*
-- STRIKE — Body + d8, no effect; Defensive: Deal 3 damage to attacker, unpreventable
-- ENDURE — Gain Resist; Defensive: Heal 3 HP
-- BRACE — Gain Resist 2; Defensive: Gain Resist 2
+DECODE replaced CLIMB on 2026-09-17, when CLIMB was reworked as a Red card about holding high ground. DECODE does the job CLIMB was here for — Scry 3 and a draw, information and options rather than a combo to commit to — and keeps the colour split at 3/3/3.
 
-*Green — Soul*
-- RENEWAL — All allies may discard 1 then draw 1, or heal 2; Defensive: Target Collapsed ally heals 6 HP
-- ADAPT — Instead of a tie, you win; Defensive: Gain Evade
-- FLOW — You may change position, gain Evade; Defensive: You may change position, gain Evade
+RENEWAL and ADAPT are middle-tier cards (`cards/tiers/middle.md`). That is not a problem: the tiers govern what a starting player's deck may hold, and Ryder is not a starting player.
+
+---
+
+## Trait — Phoenix's Last Breath
+
+**This is a Trait, not a Passive** (`rules/character-creation.md`, Passives and Traits) — it costs no Action, is never played, and has no die.
+
+**While PHOENIX'S LAST BREATH sits unplayed in his hand, the first time Ryder would Collapse this combat he heals to full HP instead, and that card is Exiled.**
+
+It was written on the card itself until 2026-09-17, as a bold "Passive" line the card parser could not read and the rules do not define. The rule is the same; it lives where always-true rules live now, and the card is a plain Soul + d6 heal on both halves.
+
+**This is the tension the Combat Identity section above describes**, and moving the rule does not soften it: the card is worth nothing the instant he plays it and worth everything the instant he doesn't.

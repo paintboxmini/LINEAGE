@@ -37,6 +37,36 @@ Intent is the part most GMs skip and most regret skipping. An enemy that wants t
 
 You don't need a backstory. You need an intent.
 
+### How many of them
+
+**Count is the balance lever, not the creature.** A weak creature is only weak alone, and the honest way to make a fight harder is to add another one rather than to inflate the one you have.
+
+**The number that makes a fight genuinely uncertain is:**
+
+> **N ≈ (the party's combined total stats) ÷ (the creature's CTR)**
+
+Three starting characters at nine stats each is 27. Against a CTR 9 creature that is three of them; against CTR 4 it is six or seven; against a CTR 13 or 14 it is two. **Take one off for a fight the party should win and still remember. Add one for a fight they will probably lose.**
+
+Measured against the simulator at a thousand fights per row (`combat-simulations/encounter_budget.py`), and accurate to about ±1 across party sizes from two to five. It drifts at both extremes and in opposite directions: it **over-counts swarms** of very weak creatures, because a lot of small things get a lot of actions, and **under-counts heavies**, because a big party can focus one down before it spends its turns. Trust it in the middle; sanity-check the edges.
+
+**There is a headcount cap, and below CTR 5 it binds before the formula does.** Bodies are worth more than the stats on them, because every body is another turn on the wheel. **Somewhere around twice the party's number, a fight tips regardless of how weak the individuals are** — measured at 2.0x, 2.0x and 1.8x against parties of two, three and five, and at that point the swarm is carrying only about two-thirds of the party's total stats and winning half the time anyway.
+
+So: nine creatures at one-in-every-stat sounds like an even match against three starting characters, because nine times CTR 3 is exactly the party's 27. It is not. **Six is the even fight and eight is a guaranteed wipe.** Take the formula's answer and the headcount cap, and use whichever is smaller.
+
+**Count alone has good resolution at the weak end and almost none at the strong end.** Against CTR 4 creatures a GM can dial four, five, six or seven and get four different fights. Against a CTR 13 creature there are three settings and only one of them is a fight: one is a formality, two is real, three is a wipe.
+
+**Mix CTRs to get the settings back.** This is the fine-tuning lever, and it is the answer to a boss encounter that needs to be hard but survivable. One minotaur against three starting characters is a formality at 100%; two is 70%. But one minotaur plus one, two, three or four CTR-3 creatures reads 98%, 95%, 84%, 48% — four usable settings inside a gap that count alone could not divide at all.
+
+**And note which way that cuts.** One minotaur and four small things is 26 total stats and a 48% fight. Two minotaurs is 28 total stats and a 70% fight. *Fewer stats, harder fight* — because five bodies act more often than two do. When you want pressure rather than a bigger number, add bodies.
+
+**The real limiter on mixed encounters is fiction, not math.** What makes sense hunting together, or hired by the same person, or living in the same ruin. A GM who needs a specific difficulty and cannot justify the adds should change the terrain instead.
+
+**There is no soft-loss band.** One creature past even, the party's win rate falls to single digits and the losses are not near-misses: a wiped three-person party averages two dead and one down, not three bloodied survivors. The step from "in doubt" to "obituary" is one creature wide the whole way up the scale. Decide before the session which side of that you meant to be on.
+
+**Party size moves the line harder than anything else.** A fourth character shifts every threshold by a full creature and sometimes two — two Harlocks against three starting characters is a 43% win; against four it is 88%. Recompute the number when a seat fills or empties, and **never carry an encounter built for four into a session where one player didn't show up.**
+
+*The simulator does not execute card Effects, so all of this is a structural floor — dice, HP, range, the reveal, positioning and the wheel. Effects raise both sides. Read the 50% line as "a real fight," not as a measured coin flip.*
+
 **Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
 **Old card printings are a free source of enemy variance.** Cards get revised — a die size changes, an Effect gets rewritten, a Defense Effect starts doing something else entirely. Don't treat your old printouts as obsolete once the canon text moves on. Deploy them, unchanged, in enemy decks.

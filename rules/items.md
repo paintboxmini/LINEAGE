@@ -171,6 +171,24 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 
 ---
 
+## Accessories — the fifth slot
+
+*Full entries: `items/accessories.md`*
+
+Every accessory names a **Skill tag** and grants +1, +2 or +3 to it, and none of them do anything in a fight. They sit on the equipment ladder at half rate — Tier 1 ~100 gold, Tier 2 ~400, Tier 3 ~1,000 — with a one-tier surcharge for anything that buffs a whole Perception mode rather than a trained action (`rules/equipment.md`, Pricing Accessories).
+
+**Tier 1** — Gripwax Block (Climbing), The Honest Coat (Negotiation), Tallow-Line Spool (Lockpicking), Drover's Whistle (Animal Handling), Riverman's Knotbook (Sailing), Smoked Lens (Forgery), Weighted Hem (Stealth), Salt-Cured Gloves (Fishing).
+
+**Tier 2** — The Listening Ring (Negotiation +2), Quartz Eye (Reason +1), Pitchdark Cloak (Stealth +2), False-Bottom Case (Forgery +2), Coldhand Picks (Lockpicking +2), The Long Tether (Animal Handling +2).
+
+**Tier 3** — Sense of the Room (Read +2), The Patient Step (Stealth +3), True-Edge Rule (Forgery +3).
+
+**Initiative — full price, two rungs only** — Hackle Charm (+1, ~200 gold), The Half-Step (+2, ~800). The one combat number an accessory may touch, so the one that does not get the discount. No Tier 3: above +2 the money buys a Tier 3 weapon or armor granting +1 Soul, which does the same job and more (`rules/equipment.md`).
+
+**This list is a shelf, not an inventory.** Accessories are meant to be invented at need: pick a tag, pick a tier, spend thirty seconds on the object. `items/accessories.md`, Building More.
+
+---
+
 ## Who Trades With Whom
 
 A quick reference for where it makes sense for a new item to surface:
@@ -181,6 +199,6 @@ A quick reference for where it makes sense for a new item to surface:
 - **Borrowers (the Hollow)** trade in goodwill, not currency — their two items are both earned, not bought.
 - **Aege / the Briarwatch farmer** hand over items as direct narrative rewards tied to a specific job finished, not shop stock.
 - **The Underground Bazaar** trades in cards, bought with cards, memories, or secrets — never coin. See above; its only priced item is FourthEye, and that one takes gold precisely because it isn't really the Bazaar's.
-- **Harlan & Sera Vetch (Temple of the Forge)** — capital-made weapons and armor. The honest first Tier 1 counter the gold pacing was built against.
+- **Harlan & Sera Vetch (Temple of the Forge)** — capital-made weapons and armor, and **the only counter in the world that stocks the whole ladder**: Tier 1 on the wall, Tier 2 on the wall, and two Tier 3 pieces in the back that do not come out for browsers (`items/capital-items.md`). The honest first Tier 1 counter the gold pacing was built against, and now the place a party comes back to at session 14 and session 26.
 - **Nessa Coil (Marketplace)** — regional consumables at markup. Does not buy quest-reward or goodwill items.
 - **Brother Alden (Marketplace)** — resonant objects and Artifacts. Secrets and vows are part of the price when the object is Seat-true.

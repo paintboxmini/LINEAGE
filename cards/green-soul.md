@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain 1 Quick (their next Move Position, Rushdown included, doesn't spend their action)
+Defense Effect: You and the attacker both move positions
 Range: Both
 *"Change the field, change the fight."*
 
@@ -35,7 +35,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: You may change position. Gain Evade.
 Defense Effect: You may change position. Gain Evade.
 Range: Ranged
@@ -47,7 +47,7 @@ Range: Ranged
 GREEN — SOUL
 Attack: Soul + d4
 Special Rule: Exiled after use instead of sent to discard — regardless of outcome.
-Effect: On a clean win, take the lowest-value consumable the defender is currently carrying, if they have one.
+Effect: On a clean win, take 1 stack of a Positive Status Effect the defender has. It moves to you.
 Defense Effect: Apply Initiative Shift +1 to yourself, then Initiative Shift -1 to the attacker.
 Range: Both
 *"You won't miss it. That's the point."*
@@ -127,8 +127,8 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: If you are attacked before your next turn, your party may scry 1 and heal 2 HP
-Defense Effect: You and your allies gain Deadly
+Effect: Your party heals 4 HP.
+Defense Effect: If you are attacked again before your next turn, you and your allies gain Deadly.
 Range: Ranged
 *"Shared vision illuminates the path forward."*
 
@@ -166,7 +166,7 @@ Range: Both
 
 **RELEASE**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: You may discard your hand, then draw that many cards
 Defense Effect: All allies may move position or gain Initiative Shift +1
 Range: Both
@@ -180,13 +180,13 @@ Attack: Soul + d4
 Effect: Gain Evade.
 Defense Effect: Gain Evade.
 Range: Both
-*"You become the mark that shouldn't be there, wearing darkness as perfect armor."*
+*"Be where the swing already went."*
 
 ---
 
 **SHARED BURDEN**
 GREEN — SOUL
-Attack: Soul + d8
+Attack: Soul + d4
 Effect: Gain Protect and Evade
 Defense Effect: Choose an amount. Target ally gains that much HP and you lose that much HP.
 Range: Both
@@ -206,7 +206,7 @@ Range: Melee
 
 **ROOTED OATH**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Anchored — Target ally gains Deadly.
 Defense Effect: Anchored — Target ally gains Resist.
 Range: Both
@@ -246,7 +246,7 @@ Range: Ranged
 
 **FIELD MEDICINE**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Remove all Wounds from target ally's hand and discard pile. They heal 3 HP.
 Defense Effect: Remove all Wounds in your hand and discard pile. Heal 3 HP.
 Range: Ranged
@@ -277,8 +277,8 @@ Range: Both
 **CONSUME**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Lifesteal — heal yourself for the full damage dealt. You may permanently destroy one card from your own hand to give the defender Weak and Blind.
-Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may permanently destroy one card from your own hand to give the attacker Weak and Blind.
+Effect: Lifesteal — heal yourself for the full damage dealt. You may Exile one card from your own hand to give the defender Weak and Blind.
+Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may Exile one card from your own hand to give the attacker Weak and Blind.
 Range: Melee
 *"Nothing is wasted. Not even you."*
 
@@ -381,16 +381,6 @@ Effect: Gain Ward.
 Defense Effect: Gain Ward.
 Range: Both
 *"The body knows before the mind agrees."*
-
----
-
-**BRAMBLE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Thorns 2.
-Defense Effect: Gain Thorns 2.
-Range: Both
-*"Everything that reaches through leaves some of itself."*
 
 ---
 
@@ -497,8 +487,8 @@ Range: Both
 **CHANNEL**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Choose one — all allies heal 4, all allies gain Resist, or all allies gain Deadly.
-Defense Effect: All allies gain Resist.
+Effect: Choose one for target ally — heal 4, gain Resist, or gain Deadly.
+Defense Effect: Target ally gains Resist.
 Range: Both
 *"It runs through you. What it becomes is your decision."*
 
@@ -541,3 +531,13 @@ Effect: Gain Thorns 2.
 Defense Effect: Counter Attack.
 Range: Melee
 *"You wanted this closer. It is closer."*
+
+---
+
+**ALIGN**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Target ally in your position gains Deadly. If they also act next to you in the initiative order, you gain Deadly too.
+Defense Effect: Target ally in your position gains Resist. If they also act next to you in the initiative order, you gain Resist too.
+Range: Both
+*"Same ground, same beat."*

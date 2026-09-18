@@ -130,11 +130,11 @@ SETS = {
             #        SHARPEN (ranged — reworked Both -> Ranged to keep the
             #        3 ranged slots HEALING SONG's departure would have cost)
             'ATTRITION', 'BLINDSIDE', 'GUARD', 'OFF BALANCE', 'OPEN GUARD',
-            'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            'PAIN IS FUEL', 'STRIKE', 'PUSH', 'UNBROKEN', 'WEATHERED',
             'CLOSE IN', 'RETALIATE',
             'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
             'SLIP THE BLADE',
-            'CERTAIN STRIKE', 'STARING CONTEST', 'SHARPEN',
+            'CERTAIN STRIKE', 'SHATTER', 'SHARPEN',
             # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
@@ -149,10 +149,10 @@ SETS = {
             #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
             #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
-            'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
-            'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
-            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
-            'CLIMB', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
+            'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'LAST RESORT', 'MARKED', 'CHAIN', 'CALLED SHOT', 'STILL POINT',
+            'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
+            'INTERCEPT', 'REALIGNMENT', 'CORNER', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
             # off it; the green pass put it back by swapping GIVE WAY (both)
@@ -204,10 +204,10 @@ SETS = {
             #            hackles going up fits Pat's Shunka where a thorn
             #            bush does not, and BRAMBLE covers Green's Thorns at
             #            Both range anyway.
-            'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
+            'RELEASE', 'SHARED BURDEN', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'ALIGN', 'SHADE AWAY', 'STIR',
             'OPENING', 'PATIENCE', 'MEND',
-            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
+            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'SHELTER',
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
@@ -256,33 +256,49 @@ SETS = {
         # Four cards needed rebalancing to qualify, all in `cards/`:
         #   UNNAME  — its defence half forced a random discard. Now mirrors
         #             the attack half: the attacker's Effect does not fire.
-        #   FORGET  — its attack half forced a discard. Now mirrors its own
-        #             legal defence half, exiling the played card on a clean
-        #             win, which is what the card was always about.
-        #   PROFILE — its defence half read the attacker's hand. Now a
-        #             smaller version of its own attack half.
+        #   FORGET  — its attack half forced a discard, so it was made to
+        #             mirror its defence half instead, exiling the played
+        #             card on a clean win. That rewrite did not qualify it:
+        #             the defence half it copied was never legal either, and
+        #             the card left the set on 2026-09-17. See that pass.
+        #   PROFILE — its defence half read the attacker's hand. That was
+        #             the 2026-09-08 fix; on 2026-09-17 the card was rebuilt
+        #             again, around opponent interaction rather than
+        #             self-Scry — see the fourth round below.
         #   CONSUME — destroying a card out of your own hand was mandatory,
-        #             which is a trap in a starting deck. Now "you may".
-        # The first three were barred by the content rule, and they were
-        # Blue's ONLY three melee bench cards — without the rewrites Blue
-        # could not have filled its two melee slots from the pool at all.
+        #             which is a trap in a starting deck. Now "you may", and
+        #             since 2026-09-17 it Exiles rather than destroys. The
+        #             card itself left the set in that same pass; both
+        #             rewrites stand in the pool.
+        # The first three were barred by the content rule, and the rewrites
+        # cleared UNNAME and PROFILE; FORGET stayed illegal. (An older note
+        # called those three Blue's only melee bench cards. They were not —
+        # PROFILE is Ranged, and Blue's whole melee bench is TAINT, UNNAME,
+        # UNRAVEL and CORNER, of which only UNRAVEL and CORNER are legal.)
         #
         # What the 21 were chosen to fill, measured against the first set:
         #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
         #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
-        #     CONSUME, SPARK OF VIOLENCE.
+        #     CONSUME, SPARK OF VIOLENCE. CONSUME and FORGET both left on
+        #     2026-09-17, so Lifesteal is down to PARADOX alone and Exile to
+        #     BURN BRIGHT alone. One card each, but not zero.
         #   Scry was at 3 and three more were asked for: UNDERSTANDING,
-        #     PROFILE, ALIGN. All Blue, because no Green or Red bench card
-        #     has ever carried Scry.
+        #     PROFILE, MATCHED PAIR. All Blue, which is where the bench
+        #     keeps Scry — not the only place it could come from, though:
+        #     STIR is a Green bench card that carries it.
         #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
         #     bench and it is a Scry card, so it answers both at once.
         #   Protect sat at 1 card for a mechanic with its own Damage
-        #     Pipeline step: SHARED BURDEN.
+        #     Pipeline step: SHARED BURDEN. (It moved to the Oracle 63 on
+        #     2026-09-18; SHARED BURDEN's Protect is still in the beginner
+        #     pool, just in the other set.)
         #   Immunity lost its Green rung when UNTOUCHED left the first 21.
         #     UNTOUCHED comes back here, which restores the ladder without
         #     spending a slot in the deck Drew is happy with.
         #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
-        #     HEAVE AND HAUL make three.
+        #     HEAVE AND HAUL make three. Both of those cards left on
+        #     2026-09-17 and SHARED BURDEN dropped to d4, so neither gap is
+        #     filled any more — see that pass for why the trade was worth it.
         #
         # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
         # Blue (stealing and copying enemy buffs is enemy control), so it
@@ -291,24 +307,178 @@ SETS = {
         # teacher either way. PROVOKE, which moved Green -> Red the same
         # day, fills the Red Both slot it vacated.
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
+        #     (Reversed on 2026-09-17 — the card was too strong for the set
+        #     and the gap is open again.)
         #   Red had no Rooted: GRAPPLE, which is also the card the glossary
         #     cites to explain Anchored holding Rooted open.
         #
-        # Not fillable from the bench: Green has no Counter Attack card
-        # anywhere in the core pool, so that gap survives this expansion.
+        # 2026-09-17, Drew's balance pass over the printed expansion sheet.
+        # The measured complaint was Green: its mean die was 3.357 and Red's
+        # was 3.357, exactly level, which inverts the one thing Red is
+        # supposed to own. It lands at 2.93 by the end, with Red unmoved
+        # and Blue between them. A second round the same day follows the
+        # first list.
+        #   out:     HEAVE AND HAUL — too strong for this set. Untouched in
+        #            the pool.
+        #   out:     CONSUME — and it took the set's only Blind with it.
+        #            Blind sits at 0 across these 21 now, which is
+        #            survivable: the first 21 teach it five times over.
+        #   in:      CHANNEL, Both, d6 — the pool's only modal card, "choose
+        #            one of three" on its attack half (`rules/cards.md`).
+        #            Neither Oracle set has taught that decision shape.
+        #   in:      CONFRONT, Melee, d6 — which closes the gap the old
+        #            version of this note called unfillable, and brings
+        #            Thorns with it. Both were at 0 across these 21.
+        #   changed: SHARED BURDEN d8 -> d4, which leaves the expansion with
+        #            no Green d8 at all and FLOW still the only one in the
+        #            first 21.
+        #   changed: BLOOD TITHE healed 6 on its attack half and 8 on its
+        #            defence half for the same 2 HP paid; both are 5 now.
+        #            RENEWAL is the only other card across the 84 whose
+        #            defence half heals more than its attack half (4 and 8),
+        #            and there the 8 is gated to a Collapsed ally. BLOOD
+        #            TITHE's was not gated to anything.
+        #   changed: OVERCOMMIT, which is in neither set — its +1d6 rider
+        #            is +1d8 now, and the defence half that had been empty
+        #            gains Resist. It is the pool's damage ceiling and
+        #            UNDERSTANDING had climbed to within a point of it: 8.0
+        #            mean on the dice against 9.0. The ceiling is 10.0, and
+        #            it moved rather than the Blue card getting cut down.
+        #            The first version of this change put a flat +1 on the
+        #            Effect line; Drew pointed out that a die step does the
+        #            same arithmetic and keeps Effect: None, which is the
+        #            whole point of the card. No card in the pool carries a
+        #            flat integer on an Attack line either.
+        #
+        # Second round, same day:
+        #   out:     FORGET — it exiles the enemy's played card, which is
+        #            the content rule's "manipulate an enemy's deck" wearing
+        #            a costume: the card leaves their discard-and-reshuffle
+        #            cycle for the rest of the fight. Every other card in
+        #            both sets touches only its own side's cards or the
+        #            board; FORGET was the single exception, and the
+        #            2026-09-08 rewrite recorded above made it worse rather
+        #            than legal. FRACTURE does the same thing and is bench,
+        #            where the rule is already doing its job.
+        #   in:      UNRAVEL, Melee, d6 — pure status application, so it is
+        #            legal, and it fills Blind and Vulnerable, both of which
+        #            were at 0 across these 21 once CONSUME left.
+        #   changed: CHANNEL narrows from all allies to one. It was the
+        #            three-way choice AND a party-wide payout; the choice is
+        #            the card, so the scale is what gives. A tie gate was
+        #            tried first and dropped — it would have nerfed the
+        #            card by making it fire rarely, which costs the set the
+        #            decision shape it was seated to teach.
+        #   changed: ROOTED OATH d6 -> d4 and FIELD MEDICINE d4 -> d6. The
+        #            pair leaves Green's mean exactly where it was — the die
+        #            moved off the Anchored per-turn engine, which did not
+        #            need it, onto the Wound-clearing card, which did.
+        #   changed: BURN BRIGHT's defence half heals 2 on top of the
+        #            discard-pile Exile it already had. Exiling out of your
+        #            own discard is upkeep, not a play; it needed something
+        #            in the exchange itself.
+        #   kept:    SHARED BURDEN's defence half transfers an uncapped
+        #            amount of HP from you to an ally. Raised as a possible
+        #            hole and kept on purpose — you can only spend what you
+        #            have, and the ceiling is your own HP. Do not "fix" it
+        #            in a later pass without asking.
+        #
+        # Third round, same day. Three Blue cards come out as too advanced
+        # for a first campaign, not for anything wrong with them — each one
+        # switches off or reverses a rule the players are still learning
+        # (`rules/early-campaign-cards.md` for the screen and the reasons):
+        #     UNNAME  — the defender's Defense Effect never fires.
+        #     UNRAVEL — Vulnerable and Blind stacked on one half.
+        #     PARADOX — reverses the RPS outcome, the core resolution.
+        # All three are untouched in the pool.
+        #
+        # Blue is whole again, 7 of 7, and the 84 is back. When the three
+        # came out, Blue's entire melee bench was TAINT, UNNAME, UNRAVEL and
+        # CORNER — three of them gone on this screen or the content rule,
+        # leaving one card for two seats. Four Blue melee cards were written
+        # on 2026-09-17 to fix that: PRESSURE, FOCUSED STANCE, PARRY and
+        # INTERCEPT. PARRY and FOCUSED STANCE took the seats, because
+        # between them they put Blind and Ward back — both went to zero when
+        # UNRAVEL and PARADOX left. PRESSURE is the better card and stays on
+        # the bench: it fills no gap and its d8 would have pushed Blue level
+        # with Red, which is the exact shape this pass spent a round fixing
+        # in Green. Blue lands at 3.071 instead, under Red's 3.357 and over
+        # Green's 2.929.
+        #   Still at zero across the 21: Lifesteal and Quick. No Blue bench
+        #     card carries either, so they would need another colour or a
+        #     new card, and neither is obviously owed a seat. Vulnerable
+        #     was on this list until PROFILE's rewrite, below.
+        #
+        # Fourth round, same day. PROBE and PROFILE were a dominance bug:
+        # same colour, same Ranged, identical defence halves, and PROFILE
+        # held both the bigger die and the better attack half, so PROBE was
+        # strictly worse in every state of the game. Both were rebuilt
+        # around opponent interaction instead of self-Scry, which separates
+        # them and lands them in different tiers (`cards/tiers/`).
+        #   PROBE   — attack half looks at the defender's hand; defence half
+        #             Scry 2, then draw 1. Reading an enemy hand is barred by
+        #             the content rule, so PROBE is middle tier now. It has
+        #             taken over the job PROFILE's defence half was rewritten
+        #             out of on 2026-09-08.
+        #   PROFILE — Scry 1, then you may reveal your own top card; if it
+        #             matches the colour the other side played, they gain
+        #             Vulnerable on the attack half, Weak on the defence.
+        #             The Scry is what makes it a decision instead of a coin
+        #             flip — you set up the card you are about to reveal.
+        #             It keeps its seat and brings Vulnerable back to the
+        #             expansion, which had sat at zero since UNRAVEL left.
+        #   TURN    — the Initiative Shift added earlier the same day is off
+        #             again. The redirect stands, and TURN is middle tier.
+        #
+        # The ranged seat went to RETORT on 2026-09-17, on two counts.
+        # Thorns scales by colour rather than by die and range — Green 2,
+        # Blue 3, Red 4, a game-wide rule (`rules/cards.md`) — and across
+        # all 81 seated cards Thorns appears three times in Green and once
+        # in Red, at the documented exception value of 2. Blue's rung was
+        # never taught anywhere in the deck, and RETORT is the card the
+        # rules doc cites to explain it. It also takes Weak from 1 to 2,
+        # and at d4 it is exactly the die the colour mean has room for:
+        # two melee d6s after it put Blue back on 3.214, where it sat
+        # before the three cards came out.
+        #   Passed over: DISSECT (Exile 1 -> 2, but self-facing upkeep),
+        #     CHAIN (the only splash damage in either set — a real gap, but
+        #     splash is not a promised ladder the way Thorns is), DRAIN
+        #     (a third buff-manipulation card behind WAITING GAME and LEVEL
+        #     THE FIELD, and dead against anything with no buffs), UNMAKE
+        #     (two Exhaust into a new player's hand), DECODE and REDIRECT
+        #     (both d8, no room in the budget), PROBE and TURN (both have
+        #     problems of their own — see `rules/early-campaign-cards.md`).
+        #
+        # Also this round: ALIGN -> MATCHED PAIR, which is what the card
+        # always was (Scry 2, check whether the two match — nothing about
+        # that is alignment). The freed word now names a new Green bench
+        # card that earns it, allies lined up by position and by the
+        # initiative order. An earlier version of this round renamed four
+        # more seated cards for name breadth; Drew reverted all four. The
+        # breadth rule is real, but removing a card from the early set is
+        # the answer to a card that does not belong in it, not renaming.
+        #
+        # 2026-09-18. SHARED BURDEN left for the Oracle 63, where SEED had
+        # been sitting for a day and did not belong — SEED plants a payoff
+        # at a position and collects it a turn later if you are still
+        # standing there, which is a specialist's card, not something a
+        # first deck should be teaching. WAIT takes the expansion seat:
+        # same d4, so Green holds at 2.929, and it brings Initiative Shift
+        # to a set that had one card carrying it. The uncapped transfer
+        # note below travels with SHARED BURDEN and still stands.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
-            'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
-            'UNNAME', 'FORGET',
+            'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR', 'RETORT',
+            'PARRY', 'FOCUSED STANCE',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
+            'WAIT', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',
-            'CONSUME',
+            'CONFRONT',
         ],
     },
 }
@@ -563,8 +733,9 @@ def card_to_html(card):
     # Thresholds measured, not guessed. Every card in the pool was rendered at
     # full size and asked for its own scrollHeight against the 84mm card: 199
     # of 200 fit, and the only one that did not was FOLLOW-UP at 412
-    # characters, over by 16px. CONSUME fits at 359. The old 195/285 pair was
-    # inherited from Georgia at 9.5pt and was shrinking 32 cards to solve one.
+    # characters, over by 16px. CONSUME, the next heaviest, fits at 331. The
+    # old 195/285 pair was inherited from Georgia at 9.5pt and was
+    # shrinking 32 cards to solve one.
     density = ' denser' if weight > 460 else (' dense' if weight > 360 else '')
 
     stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',

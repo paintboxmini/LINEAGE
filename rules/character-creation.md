@@ -22,21 +22,57 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 ## What Stats Do
 
-**Body**
-- Determines damage for Red cards (Attack: Body + die)
-- Sets your maximum HP: **(4 × Body) + Soul + Mind** — Body's own share is weighted 4× the other two
+**Each stat owns three things: one card colour, one derived resource, and one way of solving problems.**
 
-**Mind**
-- Determines damage for Blue cards (Attack: Mind + die)
-- Sets your hand size: **Mind** (minimum 2)
-- Also feeds your maximum HP, at 1× weight (see Body, above)
+| | **Body** | **Mind** | **Soul** |
+|---|---|---|---|
+| **Colour** | Red | Blue | Green |
+| **Damage** | Body + die on Red | Mind + die on Blue | Soul + die on Green |
+| **Derived** | **HP**, weighted 4× | **Hand size** (minimum 2) | **Initiative**, 1d6 + Soul |
+| **Also governs** | Physical speed and force | Reasoning and control | Reflexes |
+| **Check** | Overcome a physical obstacle, impose physical control | Obtain or interpret information, solve, predict, argue | Create and hold bonds, resist spiritual pressure, enforce oaths |
+| **Save** | Fatigue, falls, cold, pain, forced movement | Illusions, manipulation, memory interference | Fear, corruption, possession, despair |
+| **Perception** | **Senses** — timing and physical signal | **Reason** — pattern and detail | **Read** — intent and weight |
 
-**Soul**
-- Determines damage for Green cards (Attack: Soul + die)
-- Sets your initiative modifier: **1d6 + Soul**
-- Also feeds your maximum HP, at 1× weight (see Body, above)
+**Maximum HP = (4 × Body) + Mind + Soul.** Body's share is weighted four times the other two.
 
-Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.
+**Deck size = Body + Mind + Soul**, and each colour's card count equals its matching stat (`rules/cards.md`, Deck Building). The same rule builds every creature in the world, so a character's deck is the same size as a creature of the same weight.
+
+---
+
+### The three resources are three different currencies
+
+That is the actual design, and it is worth understanding before you spend your three points.
+
+- **Body buys durability.** How much you can absorb before it matters.
+- **Mind buys options.** How many cards you are choosing between in each exchange.
+- **Soul buys tempo.** Whether you are acting into their decision or they are acting into yours.
+
+**Body is the only stat with no cleverness in it** — more damage and more HP, nothing else — which is exactly right for the colour whose whole identity is raw damage and the biggest dice.
+
+**Mind is the only one that increases the number of decisions you make.** Cards are committed face down and revealed together (`rules/combat.md`, Attack Resolution), so hand size is the number of answers you get to compare before guessing. Mind 5 is not a bit better than Mind 4 at that. It is a different experience of the same fight.
+
+---
+
+### Speed is Body. Reflexes are Soul.
+
+**This is the least intuitive part of the split and it is deliberate, so it is worth stating plainly.**
+
+**Body is how fast you move.** Ground covered, force delivered, a door taken off its hinges. When the fiction asks how quickly somebody crossed a room, that is Body.
+
+**Soul is how fast you *know*.** Initiative is not a footrace — it is who was already moving before the thing happened. **Reflex, here, is closer to a sixth sense than to a twitch**: the read, the prickle, the fact that you had turned around before you could have said why.
+
+**Yes, real reflexes are physical, and Green therefore carries the tiniest crossover into Body's territory.** That is acknowledged rather than argued away. The game equates reflexes to intuition on purpose, for balance: **it keeps Body from owning both the damage ceiling and the turn order**, and it gives Soul — the stat of bonds, oaths and reading a room — something that matters in every single fight rather than only in the fights about people.
+
+*A high-Body character gets there first. A high-Soul character was already going.*
+
+---
+
+### The consequence that drives deckbuilding
+
+**A card's damage runs off its own colour's stat, not your best one.** A Mind 5 / Body 2 character playing a Red card deals Body damage — 2 and a die. That is why colour counts match stats: it keeps every card in your deck firing at full strength.
+
+So **one point in a stat does three things at once**: bigger damage on that colour, one more card of that colour in your deck, and HP (four of it, if it is Body). A stat is a commitment, not a slider.
 
 Your stat spread is a statement about how your character solves problems.
 
@@ -44,17 +80,28 @@ Your stat spread is a statement about how your character solves problems.
 
 ## Equipment
 
-Every character has **3 equipment slots:**
+Every character has **5 equipment slots:**
 
-- 1 Weapon
-- 1 Armor
-- 1 Artifact
+- 1 **Weapon**
+- 1 **Armor**
+- 1 **Artifact**
+- 2 **Accessories**
 
-Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.
+Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more. **The slots are not a limit on what you own or carry**, only on how much is switched on at once; own six swords if you like, nobody is counting.
+
+**Armor does not layer.** One body, one piece of armor doing the work. A mail shirt under a coat is a description of one armor, not two.
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain (`world/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-**Carried items** (potions, tools, objects picked up in the field) don't occupy an equipment slot — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
+**Accessories are the small stuff**, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.
+
+- **An accessory modifies checks, saves and perception.** No damage, no Armour, no keywords, no card effects. The moment one of those touches a fight it is a Weapon, Armor or Artifact instead.
+- **Initiative is the one exception, and it costs full price.** An accessory may add to your initiative roll — but initiative happens inside a fight, so it does not get the half-price discount, which was only ever the combat fraction (`rules/equipment.md`, Pricing Accessories). +1 at ~200 gold, +2 at ~800, and there is no +3.
+- **Every accessory names a Skill tag and grants +1, +2 or +3 to it** — the same vocabulary as your own Skills (Skills, below): a specific trained action like Lockpicking or Negotiation, or one whole Perception mode. *Boots of +2 Climbing.* *A +1 Forgery lens.* Not "a ring that helps socially" — that is three tags in a coat.
+- **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
+- **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.
+
+**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
 

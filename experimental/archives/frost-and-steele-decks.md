@@ -59,7 +59,7 @@ cut; only these two groupings of it were.
 | REPEL | Red | Melee | Body + d4 |
 | FORGET | Blue | Melee | Mind + d4 |
 | PARADOX | Blue | Ranged | Mind + d6 |
-| ALIGN | Blue | Ranged | Mind + d4 |
+| MATCHED PAIR *(played as ALIGN)* | Blue | Ranged | Mind + d4 |
 | ANTICIPATE | Blue | Melee | Mind + d6 |
 | MIRROR STEP | Green | Both | Soul + d6 |
 | RENEWAL | Green | Both | Soul + d4 |

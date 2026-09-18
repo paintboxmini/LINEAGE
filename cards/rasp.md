@@ -6,14 +6,13 @@ Signature cards for Rasp. See `characters/rasp.md`.
 
 ---
 
-**OUT OF REACH**
+**STEP BACK**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-**Passive** — While you are in the Backline, enemies cannot target you with attacks. Ends immediately the moment you attack or change position.
+Effect: Move to the Backline. Anchored — draw 1 at the start of each of your turns.
+Defense Effect: Move to the Backline. Gain Evade.
 Range: Both
-*"You were never actually aiming at her."*
+*"Don't thank her. She isn't there."*
 
 ---
 

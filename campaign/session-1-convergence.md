@@ -8,7 +8,7 @@
 
 The table has said what it wants: **small villages with their own strange customs.** That isn't a genre note, it's a routing requirement, and it picks the starting town on its own.
 
-Vulture's Nest sits where the river web is densest (`world/geography-overview.md`, River system). The villages the party is describing are already written and they are all within reach of that one port: **Canille**, an island village in a lake northeast with masks and a Founding Hall; **Pneum**, a sleeping village on another lake island; **Apnea**, a hospice island southwest with its own Out There; **the Coil**, east, which doesn't appear on charts at all. Four strange small places, four different logics, one dock to leave from.
+Vulture's Nest sits where the river web is densest (`world/geography-overview.md`, River system). The villages the party is describing are already written and they are all within reach of that one port: **Canille**, an island village in a lake northeast with masks and a Founding Hall; **Pneum**, a sleeping village on another lake island; **Apnea**, a hospice island southwest with its own Out There; **Windfall**, which causes no death and eats its own dead, and is the one place on this list with nothing wrong with it; **Gambol**, where a life ends on the day the others decide you have become afraid; **the Coil**, east, which doesn't appear on charts at all. Six strange small places, six different logics, one dock to leave from.
 
 Nowhere else does that. From the Capital you're eight days from anything. From Glasslight you're on a cliff. The Nest is the only starting point where "let's go see what that village does" is a morning decision rather than a fortnight.
 
@@ -46,7 +46,9 @@ The opening job and Pat's opening lead are the same object. Corvel's held vessel
 
 Pat hears that word in the first hour, in the first place he looks, and it is exactly the word he crossed the world for. He follows it. Anyone would.
 
-**What he finds at Pneum is that they chose it.** Deliberate infection is communion there; disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count — the body is the trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
+**What he finds at Pneum is that they chose it.** Deliberate infection is communion there — *they* say disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count, the body as trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
+
+**They are also wrong, and this matters for Pat specifically.** The Unheld has never made anyone ill — it changes what a body is, it does not damage one (`world/the-unheld.md`). Every disease on that island is an ordinary disease. So the lesson Pat takes from Pneum is not only *cursed is what people say about anything they can't explain* — it is the harder version: **a community can be completely sincere, internally consistent, and simply mistaken about the cause of the thing happening to their own bodies.** He is hunting the cause of something that happened to *his* people generations ago, on the strength of a vision. Pneum is what that looks like from the outside.
 
 **Three things that does, all of them worth more than a real lead would have been:**
 
@@ -133,7 +135,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
 
-**The Nest opening now has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
+**The first job is written** at `quests/the-quarantined-barge.md`, and **the Nest opening has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
 - **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. Who the living descendant is, what they're doing among continentals, and whether the technique can explain the spread are all open.
 
 ---

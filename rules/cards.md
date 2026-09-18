@@ -33,15 +33,25 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
 
-BRISTLE at 3 lands on Blue's base, which RETORT also sits at. That was a strict dominance while both cards read "Gain Thorns 3" on both halves — same die, and RETORT's Ranged is freer than BRISTLE's Melee. RETORT's defence half now applies Weak instead, which is what a Blue Thorns card should have been doing anyway: Blue's business is taking an enemy's options away, not mirroring a Green card in a different colour. Two cards can share a keyword and a number as long as they aren't the same card.
+**The ladder is retired as of 2026-09-17.** Drew called it that morning: a rule described as game-wide, already carrying two named exceptions out of the handful of cards using it, is on its way to not being a rule. By the end of the day it had failed in both directions.
+
+| Colour | Ladder said | What the cards actually do |
+|--------|-------------|----------------------------|
+| Green | 2 | CONFRONT 2 — and BRISTLE at 3 |
+| Blue | 3 | **nothing.** RETORT was Blue's only Thorns card, and it dropped Thorns entirely |
+| Red | 4 | RETALIATE 4, SHATTER 3, PAIN IS FUEL 2 |
+
+Red was the colour the ladder anchored and it holds three different values across three cards. Blue has none at all, and BRAMBLE — the card that existed to be Green's rung and did nothing else — was cut on 2026-09-18 once the ladder stopped justifying it — which is the outcome the colour conventions above should have predicted from the start: **Thorns is retaliation damage, so it belongs to Body, and Blue was only ever holding it because a ladder said every colour needed a rung.** Price Thorns per card, on the die and the range, the way everything else is priced.
+
+BRISTLE at 3 was once a strict dominance against RETORT, which read "Gain Thorns 3" at a smaller die and a freer range. RETORT's defence half became Weak on 2026-09-08, and on 2026-09-17 its attack half dropped Thorns for Vulnerable — the card does what Blue does now, taking an enemy's options away rather than mirroring a Green card in another colour. That is the lesson worth keeping: two cards can share a keyword and a number as long as they aren't the same card, and a card that has to be argued into its colour probably belongs in a different one.
 
 The crossovers are deliberate and worth keeping: Red still body-blocks for the party, Blue still helps allies, Green can still focus damage down. A colour with no exceptions is a colour nobody has to think about.
 
 **Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
 
-**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, UNDERSTANDING's discard-for-`+1d6`), a doubled die (ABANDON's `2d8`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
+**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, UNDERSTANDING's discard-for-`+1d6`), a doubled attack (TWIN STRIKE's `(Soul + d4) x 2`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
 
-This matters when reviewing: a card's power is not readable from its Effect lines alone, and a summary that lists only die, range and effects will show ABANDON as a plain d8 and RHYTHM BREAK as a d8 with nothing on offence. Both readings are wrong. Read the Attack line.
+This matters when reviewing: a card's power is not readable from its Effect lines alone, and a summary that lists only die, range and effects will show TWIN STRIKE as a plain d4 and RHYTHM BREAK as a d8 with nothing on offence. Both readings are wrong. Read the Attack line.
 
 ---
 
@@ -55,19 +65,27 @@ The starting Oracle deck is where a player learns what the game is, so it is del
 - manipulate an enemy's deck
 - reduce an enemy's stats
 - apply Sealed
-- apply Staggered, with one exception (below)
+- cost an enemy a whole attack or a whole defence, however it is worded, with one exception (below)
 
-**Staggered is the one near-total ban.** It costs its target a whole attack or a whole defence, which is a bigger swing than anything else on this list and not something a starting deck should hand out four times over. Red keeps exactly one card that inflicts it — OFF BALANCE — and only on a clean win, so it has to be earned rather than traded for.
+**Losing a whole attack or a whole defence is the one near-total ban, and it is written against the effect, not the keyword.** That swing is bigger than anything else on this list and not something a starting deck should hand out four times over. Red keeps exactly one card that reaches it — OFF BALANCE, which applies Staggered on a clean win only, so it has to be earned rather than traded for.
+
+**Staggered is the usual wording, and it is not the only one.** "Cannot defend until your next turn," "the attacker cannot defend next time you attack them," "skip your next attack" — all of it lands in the same place and all of it is barred. This was written against the keyword until 2026-09-17, and ABANDON sat in the gap for eleven days doing exactly what Staggered does with the word left off (`experimental/archives/cut-cards.md`). When you are checking a card against this rule, ask what the target loses, not which word the card used.
 
 Acting on **your own** hand and deck is fine — drawing, discarding to pay a cost, Scry on your own deck. So is control that operates on the board rather than on someone's resources: statuses, positioning, initiative, targeting restrictions, removing buffs an enemy already has. The line is between changing the situation and going through their possessions.
 
+**Exiling an enemy's card is deck manipulation, not board control.** This one is easy to seat by mistake, and was: a card they have played looks like it is already spent, but it is on its way to their discard, and their discard reshuffles into their deck. Exiling it shrinks what they draw from for the rest of the fight. FORGET and FRACTURE both do this and both are barred — FORGET was seated in the expansion for nine days before anyone caught it, and the rewrite that was supposed to make it legal only copied the illegal half onto the other side.
+
 Cards excluded by this rule are still perfectly good cards; they belong in creature decks, character decks, and later Oracle additions. The list lives in `printing/generate-cards.py`'s `SETS`, with the same rule restated above it.
+
+**Legal is not the same as early.** This rule bars what a starting deck may never do; it does not settle whether a legal card is right for players still learning the reveal. The cards cleared for a first campaign, the screen they were cleared against, and the ones that failed it are in `rules/early-campaign-cards.md`.
 
 **The deck comes in two sets, 63 cards then 21.** The original prints as `oracle`; the expansion prints separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
 
-**The expansion was drawn from the core lists, not written fresh.** Anything the deck is short of should be answered from the bench first — the pool holds well over a hundred cards nobody has seated, and a card that already exists has already been priced against its neighbours. Where a bench card was barred by the content rule but was otherwise the right answer, the fix was to rebalance that card rather than invent around it: four were reworked to qualify, which is recorded above the set in `printing/generate-cards.py`. Writing new cards is the last resort, for a gap the pool genuinely cannot fill.
+**The expansion was drawn from the core lists, not written fresh.** Anything the deck is short of should be answered from the bench first — the pool holds well over a hundred cards nobody has seated, and a card that already exists has already been priced against its neighbours. Where a bench card was barred by the content rule but was otherwise the right answer, the fix was to rebalance that card rather than invent around it: four were reworked for it, which is recorded above the set in `printing/generate-cards.py` — and one of the four, FORGET, turned out not to be qualifiable, because the half it was rewritten to copy broke the rule too. Writing new cards is the last resort, for a gap the pool genuinely cannot fill.
 
-Twenty-one cards written on 2026-09-08 sit in the core lists as bench rather than in either Oracle set — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND, ANCHOR and HAMMER in Red; DECODE, REDIRECT, UNRAVEL, CORNER, PROBE, DISSECT and INVERT in Blue; HARMONIZE, CHANNEL, PROVOKE, STIR, SHELTER, ENTREAT and CONFRONT in Green. They were drafted as an expansion before the bench-first rule above existed, and they are kept because they are good cards, not because the deck needed them. Three carry shapes the pool had never held: INVERT cancels the other side's Effect for an exchange, CORNER locks both combatants in place rather than charging one with Rooted, and CHANNEL is the only modal card — pick one of three on either half. CONFRONT is the pool's only Green Counter Attack. They are available for creature decks, character decks, and any later Oracle seat.
+Twenty-one cards were written on 2026-09-08 as an expansion, before the bench-first rule above existed, and they were kept because they are good cards, not because the deck needed them. **Nine of the twenty-one are now seated** — PROVOKE moved Green → Red on 2026-09-09 and took a Red slot in the expansion; CHANNEL, CONFRONT and CORNER followed on 2026-09-17; and when seven cards left the Oracle 63 later that same day the replacements came out of this batch too, HAMMER into Red ranged (renamed SHATTER the same day), DISSECT into Blue ranged, and HARMONIZE, STIR and SHELTER into Green. HARMONIZE lasted a day; ALIGN and SEED hold those Green seats now. That is the bench-first rule doing its job: the pool had already priced these against their neighbours, so filling seven seats took no new cards at all.
+
+Nine more still sit as bench — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND and ANCHOR in Red; DECODE and REDIRECT in Blue; ENTREAT in Green — and three failed the early-campaign screen (UNRAVEL, PROBE and INVERT, in `cards/tiers/middle.md`). Of the shapes the batch carried that the pool had never held, INVERT's Effect-cancelling is the one now barred from a starting deck; CORNER's mutual position lock, CHANNEL's three-way choice and CONFRONT's Green Counter Attack are all seated.
 
 ---
 
@@ -79,6 +97,8 @@ Two consequences when writing or reworking a card:
 
 - **A broad name is a stronger card**, whatever its Effect line says, because it applies to more attempts. FOCUS supports nearly anything requiring concentration; CARD TRICK supports card tricks. Breadth is real power, so weigh it the way you weigh a die size — a wide name on top of a strong Effect is a card that does two jobs. That cuts the other way too: a deliberately narrow name is a fair place to pay for an unusually good Effect.
 - **Renaming a card changes what it can do out of combat**, not just how it reads. Check that the new name still covers the same ground, and that nothing else already holds it — duplicate names break the print pipeline's by-name lookups, which is exactly how the Red and Green BRACE collided (`experimental/archives/cut-cards.md`).
+
+**Worked example, 2026-09-17.** A card named ALIGN did Scry 2 and checked whether the two matched — nothing about that is alignment, so the word was doing no work where it sat. That card is MATCHED PAIR now, which is what it always was, and ALIGN names a new Green bench card about allies lined up two ways at once, by position and by the initiative order. Freeing a name is worth doing when the name is better than the card wearing it.
 
 A working vocabulary to name from, sorted by colour and by mechanic, with names already used by a card struck out of it: `experimental/card-name-verbs.md`.
 

@@ -126,4 +126,6 @@ The watchtower ruins are not unexplained to everyone — the Masons built them, 
 
 ## Session 1 Routing
 
-Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of the route — see `places/vultures-nest.md`, Entry — If the Party Arrives Here, for the retired riverboat opening.
+Unheld Ocean shoreline (`quests/washed-ashore.md`) → Roadhouse (day 1) → Briarwatch (day 2). Vulture's Nest is no longer part of *this* route — the Nest has its own opening now (`places/vultures-nest.md`, Entry — If the Party Arrives Here, and The Opening Scene), and it is the live one (`campaign/session-1-convergence.md`).
+
+*The "retired riverboat opening" this line used to point at no longer exists under that name; the pointer was stale.*

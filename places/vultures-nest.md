@@ -28,15 +28,29 @@ The hard lines: nothing so destructive it destabilizes the region, nothing so vi
 
 They are People of Promise (`places/pneum.md`). The Promise holds that everything returns to the Unheld and that held reality is temporary; this subgroup reads disease as the Unheld asserting itself through a living body, so **deliberate infection is communion.** Rarer disease, deeper contact. And it only counts if it is witnessed, which is why the symptoms are displayed rather than hidden. They are not sick people who need rescuing. They are devout people showing you their devotion, and they are pleased with it.
 
-**Why the dock reads it wrong.** Nobody here knows any of that. What they see is a boatload of bodies gone wrong for no reason anyone can name, and the only word a port has for that is **cursed**. The word is wrong. It is also the word that will send anyone hunting an actual curse straight up the river to Pneum, where they will meet people who chose this, are proud of it, and will warmly explain that he has it backwards.
+**Why the dock reads it wrong.** Nobody here knows any of that. What they see is a boatload of bodies gone wrong for no reason anyone can name, and the only word a port has for that is **cursed**. The word is wrong, and it is the word that will send anyone hunting an actual curse straight up the river to Pneum, where they will meet people who chose this, are proud of it, and will warmly explain that he has it backwards.
+
+**Nobody on this dock is in any danger.** The illnesses move by blood and only by blood, and they have been bred for two centuries to be spectacular and survivable (`places/pneum.md`, The Practice). Nothing aboard was ever touched by the Unheld either; the Unheld changes what a body is and has never once made anyone ill (`world/the-unheld.md`). **The people in the hold are the healthiest group in this situation.**
+
+**And Bartho is still right to have closed the dock**, which is the hard part. He has an unregistered vessel, people visibly wrong in ways no physician here has seen, an owner who will not say where it came from, and **no way on earth to find out.** Containment is what a competent dockmaster does with an unanswerable question, and he is a competent dockmaster who knows exactly what it is costing.
+
+**The lockdown is the whole crisis, and it is on the shore.** Not the berth — the whole stretch of dock. Every crate into a Compact warehouse, and **nobody permitted to leave**: not the crews, not the traders, not the dockhands. Days of it now. The barge is fine. The port is not, and **it has only been two days** — which is why nothing has broken yet and why everyone can feel that it is about to.
+
+**And it cannot resolve itself, for a reason nobody here could guess.** The barge crew are glasskin from a congregation that has been isolated for centuries, and their harmonics have drifted into a language that exists nowhere else (`quests/the-quarantined-barge.md`). They talk constantly. Nobody in the Nest understands one syllable of it, and the deafness is entirely on this side of the rope.
+
+**Bartho has been asking each of them the same question since the boat came in** — *what are you, where did you come from* — and the true answer to the first half is their people's name, which is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). They have been answering him every day. He has been writing it down as *won't say*.
 
 **Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 
 **The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlock thinks the whole thing is other people's problem until it costs him a berth.
 
-**The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth. Everything on that stretch of dock is impounded into a Compact warehouse behind a question nobody can answer yet — other people's cargo, sealed and legitimate, sitting indefinitely because of a boat it was moored near. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
+**The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
+
+**The party's boat is inside the cordon and the party is not** — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
+
+**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel won't name where the barge came from, the clock nobody on the dock knows about, and five ways it ends.
 
 *The Adventurers' Hall in the capital already posts this as real and current (`places/capital/adventurers-hall.md`).*
 
@@ -50,9 +64,13 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 - Old foundations surface
 - Glyphs carved into stone reappear
 
+**And there are more lights on the water those nights**, which everybody in the Nest has noticed and nobody has ever connected to the rest of this list (`bestiary/spooklight.md`). The town's position on spooklights is a prohibition rather than a theory: **they are trying to lead you off, so you do not answer a light.** That is the whole of the local knowledge. It is wrong about the mechanism, roughly right about the outcome, and consequently impossible to argue anyone out of.
+
+**The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
+
 ## Notable Roles
 
-**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
+**The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. He also never once mistakes a false lantern for a signal lantern, on water where that mistake sinks boats (`bestiary/spooklight.md`), and has never been asked how. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
 
 ## Key NPCs
 

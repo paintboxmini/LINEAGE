@@ -173,21 +173,87 @@ em {
 <p>Distribute <strong>3 additional points</strong> among these stats. No single stat may exceed 5 at character creation.</p>
 <hr>
 <h2>What Stats Do</h2>
-<p><strong>Body</strong></p>
-<ul><li>Determines damage for Red cards (Attack: Body + die)</li><li>Sets your maximum HP: <strong>(4 × Body) + Soul + Mind</strong> — Body&#x27;s own share is weighted 4× the other two</li></ul>
-<p><strong>Mind</strong></p>
-<ul><li>Determines damage for Blue cards (Attack: Mind + die)</li><li>Sets your hand size: <strong>Mind</strong> (minimum 2)</li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
-<p><strong>Soul</strong></p>
-<ul><li>Determines damage for Green cards (Attack: Soul + die)</li><li>Sets your initiative modifier: <strong>1d6 + Soul</strong></li><li>Also feeds your maximum HP, at 1× weight (see Body, above)</li></ul>
-<p>Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.</p>
+<p><strong>Each stat owns three things: one card colour, one derived resource, and one way of solving problems.</strong></p>
+<table class="doc-table">
+<thead><tr>
+<th></th>
+<th><strong>Body</strong></th>
+<th><strong>Mind</strong></th>
+<th><strong>Soul</strong></th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Colour</strong></td>
+<td>Red</td>
+<td>Blue</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><strong>Damage</strong></td>
+<td>Body + die on Red</td>
+<td>Mind + die on Blue</td>
+<td>Soul + die on Green</td>
+</tr>
+<tr>
+<td><strong>Derived</strong></td>
+<td><strong>HP</strong>, weighted 4×</td>
+<td><strong>Hand size</strong> (minimum 2)</td>
+<td><strong>Initiative</strong>, 1d6 + Soul</td>
+</tr>
+<tr>
+<td><strong>Also governs</strong></td>
+<td>Physical speed and force</td>
+<td>Reasoning and control</td>
+<td>Reflexes</td>
+</tr>
+<tr>
+<td><strong>Check</strong></td>
+<td>Overcome a physical obstacle, impose physical control</td>
+<td>Obtain or interpret information, solve, predict, argue</td>
+<td>Create and hold bonds, resist spiritual pressure, enforce oaths</td>
+</tr>
+<tr>
+<td><strong>Save</strong></td>
+<td>Fatigue, falls, cold, pain, forced movement</td>
+<td>Illusions, manipulation, memory interference</td>
+<td>Fear, corruption, possession, despair</td>
+</tr>
+<tr>
+<td><strong>Perception</strong></td>
+<td><strong>Senses</strong> — timing and physical signal</td>
+<td><strong>Reason</strong> — pattern and detail</td>
+<td><strong>Read</strong> — intent and weight</td>
+</tr>
+</tbody></table>
+<p><strong>Maximum HP = (4 × Body) + Mind + Soul.</strong> Body&#x27;s share is weighted four times the other two.</p>
+<p><strong>Deck size = Body + Mind + Soul</strong>, and each colour&#x27;s card count equals its matching stat (<code>rules/cards.md</code>, Deck Building). The same rule builds every creature in the world, so a character&#x27;s deck is the same size as a creature of the same weight.</p>
+<hr>
+<p>### The three resources are three different currencies</p>
+<p>That is the actual design, and it is worth understanding before you spend your three points.</p>
+<ul><li><strong>Body buys durability.</strong> How much you can absorb before it matters.</li><li><strong>Mind buys options.</strong> How many cards you are choosing between in each exchange.</li><li><strong>Soul buys tempo.</strong> Whether you are acting into their decision or they are acting into yours.</li></ul>
+<p><strong>Body is the only stat with no cleverness in it</strong> — more damage and more HP, nothing else — which is exactly right for the colour whose whole identity is raw damage and the biggest dice.</p>
+<p><strong>Mind is the only one that increases the number of decisions you make.</strong> Cards are committed face down and revealed together (<code>rules/combat.md</code>, Attack Resolution), so hand size is the number of answers you get to compare before guessing. Mind 5 is not a bit better than Mind 4 at that. It is a different experience of the same fight.</p>
+<hr>
+<p>### Speed is Body. Reflexes are Soul.</p>
+<p><strong>This is the least intuitive part of the split and it is deliberate, so it is worth stating plainly.</strong></p>
+<p><strong>Body is how fast you move.</strong> Ground covered, force delivered, a door taken off its hinges. When the fiction asks how quickly somebody crossed a room, that is Body.</p>
+<p><strong>Soul is how fast you <em>know</em>.</strong> Initiative is not a footrace — it is who was already moving before the thing happened. <strong>Reflex, here, is closer to a sixth sense than to a twitch</strong>: the read, the prickle, the fact that you had turned around before you could have said why.</p>
+<p><strong>Yes, real reflexes are physical, and Green therefore carries the tiniest crossover into Body&#x27;s territory.</strong> That is acknowledged rather than argued away. The game equates reflexes to intuition on purpose, for balance: <strong>it keeps Body from owning both the damage ceiling and the turn order</strong>, and it gives Soul — the stat of bonds, oaths and reading a room — something that matters in every single fight rather than only in the fights about people.</p>
+<p><em>A high-Body character gets there first. A high-Soul character was already going.</em></p>
+<hr>
+<p>### The consequence that drives deckbuilding</p>
+<p><strong>A card&#x27;s damage runs off its own colour&#x27;s stat, not your best one.</strong> A Mind 5 / Body 2 character playing a Red card deals Body damage — 2 and a die. That is why colour counts match stats: it keeps every card in your deck firing at full strength.</p>
+<p>So <strong>one point in a stat does three things at once</strong>: bigger damage on that colour, one more card of that colour in your deck, and HP (four of it, if it is Body). A stat is a commitment, not a slider.</p>
 <p>Your stat spread is a statement about how your character solves problems.</p>
 <hr>
 <h2>Equipment</h2>
-<p>Every character has <strong>3 equipment slots:</strong></p>
-<ul><li>1 Weapon</li><li>1 Armor</li><li>1 Artifact</li></ul>
-<p>Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.</p>
+<p>Every character has <strong>5 equipment slots:</strong></p>
+<ul><li>1 <strong>Weapon</strong></li><li>1 <strong>Armor</strong></li><li>1 <strong>Artifact</strong></li><li>2 <strong>Accessories</strong></li></ul>
+<p>Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more. <strong>The slots are not a limit on what you own or carry</strong>, only on how much is switched on at once; own six swords if you like, nobody is counting.</p>
+<p><strong>Armor does not layer.</strong> One body, one piece of armor doing the work. A mail shirt under a coat is a description of one armor, not two.</p>
 <p><strong>Artifacts</strong> are resonant objects closely aligned with a Seat&#x27;s domain (<code>world/resonant-items.md</code>). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you&#x27;re willing to be near.</p>
-<p><strong>Carried items</strong> (potions, tools, objects picked up in the field) don&#x27;t occupy an equipment slot — you use them on your turn via the Use an Item action, same as any other action choice (<code>rules/combat.md</code>, Turn Structure).</p>
+<p><strong>Accessories are the small stuff</strong>, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.</p>
+<ul><li><strong>An accessory modifies checks, saves and perception.</strong> No damage, no Armour, no keywords, no card effects. The moment one of those touches a fight it is a Weapon, Armor or Artifact instead.</li><li><strong>Initiative is the one exception, and it costs full price.</strong> An accessory may add to your initiative roll — but initiative happens inside a fight, so it does not get the half-price discount, which was only ever the combat fraction (<code>rules/equipment.md</code>, Pricing Accessories). +1 at ~200 gold, +2 at ~800, and there is no +3.</li><li><strong>Every accessory names a Skill tag and grants +1, +2 or +3 to it</strong> — the same vocabulary as your own Skills (Skills, below): a specific trained action like Lockpicking or Negotiation, or one whole Perception mode. <em>Boots of +2 Climbing.</em> <em>A +1 Forgery lens.</em> Not &quot;a ring that helps socially&quot; — that is three tags in a coat.</li><li><strong>They sit on the same tier ladder as weapons and armor, at half the price</strong> — ~100, ~400, ~1,000 gold (<code>rules/equipment.md</code>). Half because half the table&#x27;s time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.</li><li><strong>A Skill and an accessory stack. Two accessories on the same tag do not.</strong> Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.</li></ul>
+<p><strong>Carried items</strong> (potions, tools, objects picked up in the field) never needed a slot and still don&#x27;t — you use them on your turn via the Use an Item action, same as any other action choice (<code>rules/combat.md</code>, Turn Structure).</p>
 <p><strong>Starting garb and weapon.</strong> Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can&#x27;t be sold. Nobody is going to ask you what your sword&#x27;s damage is — the cards are your damage, the gear is who you are.</p>
 <p><strong>It still matters, constantly.</strong> Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:</p>
 <ul><li>A sword can dig. It can pry, wedge a door, cut a rope at arm&#x27;s length, and reach something you&#x27;d rather not reach with your hand.</li><li>A bow can shoot out a light across a room you don&#x27;t want to cross.</li><li>A heavy coat is a rope, a sack, a way to carry something too hot to hold, or the reason the cold doesn&#x27;t get a check out of you.</li></ul>
@@ -278,12 +344,13 @@ em {
 <p><strong>Curse &amp; Status Cards</strong> — Certain encounters, locations, or narrative consequences can force cards into a player&#x27;s deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.</p>
 <p><strong>They sit outside the cap.</strong> A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.</p>
 <h1 class="section-break">Equipment</h1>
-<p>Weapons, Armor, and Artifacts — the three Equipment Slots (<code>rules/character-creation.md</code>). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see <code>rules/items.md</code>.</p>
+<p>Weapons, Armor, Artifacts and Accessories — the five Equipment Slots (<code>rules/character-creation.md</code>). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see <code>rules/items.md</code>.</p>
 <hr>
 <h2>The Default: Dress However You Want</h2>
 <p>Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.</p>
-<p><strong>Only equipment that grants an actual mechanical effect is restricted to the three Equipment Slots</strong>: Weapon, Armor, Artifact. The slot system isn&#x27;t a limit on what a character can <em>carry</em> — it&#x27;s a limit on how much raw mechanical power a character can have <em>active</em> at once. Everything else — how it looks, what it&#x27;s called, how many of them you own — is free.</p>
-<p>Carried items (potions, tools, one-use consumables) don&#x27;t compete for these slots at all. They&#x27;re used via the Interact action and are a separate category entirely — see <code>rules/items.md</code> for where those actually live.</p>
+<p><strong>Only equipment that grants an actual mechanical effect is restricted to the five Equipment Slots</strong>: Weapon, Armor, Artifact, and two Accessories. The slot system isn&#x27;t a limit on what a character can <em>carry</em> — it&#x27;s a limit on how much is switched on at once. Everything else — how it looks, what it&#x27;s called, how many of them you own — is free.</p>
+<p><strong>The slots exist because the tier curve is superlinear on purpose.</strong> A point of power costs 200 gold at Tier 1, 400 at Tier 2 and 667 at Tier 3 (below), which prices concentration at a premium — and that premium only means anything if breadth is capped. Without the slots, two Tier 1 armors would out-perform a Tier 2 at half the price, and the whole ladder would invert.</p>
+<p>Carried items (potions, tools, one-use consumables) are a separate category entirely — used via the Interact action, see <code>rules/items.md</code> for where those live.</p>
 <hr>
 <h2>Weapon and Armor Tiers</h2>
 <p>Weapons and Armor both scale on the same three-tier system. Each tier is a <strong>power budget</strong> — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer&#x27;s discretion.</p>
@@ -292,27 +359,37 @@ em {
 <th>Tier</th>
 <th>Weapon (default spend)</th>
 <th>Armor (default spend)</th>
-<th>Approximate Value</th>
+<th>Accessory (default spend)</th>
+<th>Weapon / Armor</th>
+<th>Accessory</th>
 </tr></thead><tbody>
 <tr>
 <td>1</td>
 <td>+1 attack damage</td>
 <td>Armour 1</td>
+<td>+1 to one Skill tag</td>
 <td>~200 gold</td>
+<td>~100 gold</td>
 </tr>
 <tr>
 <td>2</td>
 <td>+2 attack damage</td>
 <td>Armour 2</td>
+<td>+2 to one Skill tag</td>
 <td>~800 gold</td>
+<td>~400 gold</td>
 </tr>
 <tr>
 <td>3</td>
 <td>+3 attack damage</td>
 <td>Armour 3</td>
+<td>+3 to one Skill tag</td>
 <td>~2,000 gold</td>
+<td>~1,000 gold</td>
 </tr>
 </tbody></table>
+<p><strong>One ladder, three slots&#x27; worth of ways to spend it.</strong> Weapons, Armor and Accessories sit on the same three tiers. What changes is which slot the tier is bought in, and therefore what the budget buys — damage, reduction, or a number outside a fight.</p>
+<p><strong>Accessories cost half, and the half is the combat fraction.</strong> Roughly half this table&#x27;s time is spent in fights (<code>rules/gm-guide.md</code>, Pacing Sessions), and an accessory does nothing in one. A Tier 1 weapon is +1 damage on every attack in every fight forever — fifteen or twenty rolls a session. A Tier 1 accessory is +1 on a tag that might come up once. <strong>Charged the same, the accessory is a trap option nobody buys twice</strong>, and the bottom of its ladder would be decorative. Half is a principle rather than a fudge: if the table&#x27;s combat share ever moves, so does this number.</p>
 <p>The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.</p>
 <p><strong>A Tier 3 item (Weapon or Armor) may instead grant +1 to a single stat — Mind, Body, or Soul — with no other bonuses attached.</strong> The entire tier&#x27;s budget goes into the stat point alone; nothing gets stacked on top of it. Priced at the top tier on purpose: a stat point isn&#x27;t just a bigger number, it moves other things too (Mind sets hand size 1:1, Body sets max HP, Soul sets the initiative roll), so it&#x27;s worth more than any single flat bonus or keyword stack at the same tier.</p>
 <p><strong>The budget doesn&#x27;t have to go entirely into the flat number.</strong> A tier is a total, not a minimum floor on the stat bonus — spend it instead, in whole or in part, on other effects, calibrated against the same 1-point-per-tier-level scale:</p>

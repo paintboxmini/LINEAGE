@@ -12,6 +12,12 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **Not everyone climbs.** A narrow river runs down through the cliffs to meet the grey water below, and Glasslight keeps a small quay where it ends — the last stop before the water turns to threshold. Nothing sails past that meeting point, which is exactly why cargo nobody wants inspected tends to end its journey right there (`quests/tide-pulls-back.md`, Escalation — The Dock).
 
+**This is the only place the river web touches the Unheld.** The web is a closed circuit driven by its own waterfalls (`world/geography-overview.md`, River system) — it does not drain to a coast and it has no other mouth. One narrow river, one quay, one meeting point on the whole continent.
+
+**Which is most of why three institutions are stacked on one cliff.** The Masons keep glyphs here, the Cartographers' Guild maps the edge from here, and the People of Promise return their dead here (`factions-and-races/the-masons.md`, `factions-and-races/the-cartographers-guild.md`, `factions-and-races/people-of-promise.md`). None of them chose this cliff for the view. It is the door, and everyone whose work is about the Unheld ends up standing at it.
+
+*It is also the one place a thing could come the other way, and once did (`places/the-coil.md`).*
+
 **Hidden somewhere in the cliffs is a Mason lodge.** The order itself is no secret — everyone here has heard of the Masons, and has an opinion about what their marks mean. The lodges are the secret, and this one has never been found by anyone in Glasslight Reach who wasn't already looking for it on purpose. The discipline is walking in, doing the work, and leaving before anyone asks what it was for. See `factions-and-races/the-masons.md`, `characters/mirel.md`.
 
 ## What It Looks Like

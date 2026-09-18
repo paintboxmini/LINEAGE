@@ -34,7 +34,7 @@ Range: Melee
 
 **GUARD**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Protect and Resist.
 Defense Effect: Gain Protect and Resist.
 Range: Melee
@@ -155,20 +155,10 @@ Range: Melee
 **BLOOD TITHE**
 RED — BODY
 Attack: Body + d6
-Effect: Pay 2 HP, target ally heals 6 HP
-Defense Effect: Pay 2 HP, target ally heals 8 HP
+Effect: Pay 2 HP, target ally heals 5 HP
+Defense Effect: Pay 2 HP, target ally heals 5 HP
 Range: Both
 *"Life flows from vessel to vessel, obeying ancient laws."*
-
----
-
-**ABANDON**
-RED — BODY
-Attack: Body + 2d8
-Effect: Cannot defend until your next turn
-Defense Effect: The attacker cannot defend next time you attack them
-Range: Melee
-*"Guard is a thing you can put down. So put it down."*
 
 ---
 
@@ -187,7 +177,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: Exile 1 card from your hand. Deal +2 damage this attack.
-Defense Effect: Exile 1 card from your discard pile.
+Defense Effect: Exile 1 card from your discard pile. Heal 2 HP.
 Range: Ranged
 *"Some flames consume themselves to burn hotter."*
 
@@ -306,7 +296,7 @@ Range: Ranged
 **RETALIATE**
 RED — BODY
 Attack: Body + d8
-Effect: If an enemy attacked you successfully on the turn immediately before yours, gain Deadly twice.
+Effect: Gain Thorns 4.
 Defense Effect: Apply Initiative Shift -1 to the attacker.
 Range: Melee
 *"Pain is just momentum, redirected."*
@@ -325,9 +315,9 @@ Range: Ranged
 
 **OVERCOMMIT**
 RED — BODY
-Attack: Body + d10 + 1d6. Gain Vulnerable.
+Attack: Body + d10 + 1d8. Gain Vulnerable.
 Effect: None.
-Defense Effect: None.
+Defense Effect: Gain Resist.
 Range: Melee
 *"You don't swing like that unless you mean it."*
 
@@ -347,7 +337,7 @@ Range: Melee
 RED — BODY
 Attack: Body + d8
 Effect: This attack cannot be Evaded, Resisted, or affected by Blind.
-Defense Effect: Gain Resist.
+Defense Effect: Gain Ward.
 Range: Ranged
 *"Some things you don't have to aim."*
 
@@ -496,11 +486,11 @@ Range: Melee
 
 **OFF BALANCE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d8
 Effect: Only on a clean win — not a tie. Defender gains Staggered.
-Defense Effect: Counter Attack. Gain Resist. On a clean win only.
+Defense Effect: Counter Attack. On a clean win only.
 Range: Melee
-*"The shield is also a weapon."*
+*"Their weight was already going the wrong way."*
 
 ---
 
@@ -574,13 +564,13 @@ Range: Both
 
 ---
 
-**HAMMER**
+**SHATTER**
 RED — BODY
 Attack: Body + d4
-Effect: Deal 4 unpreventable damage to any enemy.
-Defense Effect: Gain Resist and Thorns 4.
+Effect: Deal 4 unpreventable damage to a random enemy other than the defender.
+Defense Effect: Gain Thorns 3.
 Range: Ranged
-*"Thrown, it is still a hammer."*
+*"It comes apart on impact. That is the point."*
 
 ---
 
@@ -601,3 +591,14 @@ Effect: Defender gains Weak. Target ally gains Deadly.
 Defense Effect: Attacker gains Weak.
 Range: Both
 *"Say the thing. Watch what it costs them."*
+
+---
+
+**CLIMB**
+RED — BODY
+Attack: Body + d6
+Effect: Move to the Backline. Anchored — your attacks deal +2 damage.
+Defense Effect: Move to the Backline. Gain Resist.
+Range: Ranged
+*"The higher you rise, the farther you see."*
+
