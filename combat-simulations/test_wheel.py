@@ -144,6 +144,100 @@ def join_and_leave():
     assert w.order() == ['a', 's', 'c'], w.order()
 
 
+# ---- reordering that is not a shift -------------------------------------
+#
+# PRIORITY and STARING CONTEST move a token without sliding the ring the way
+# Initiative Shift does. No worked cases exist for these — they are checked
+# against the general principles the glossary states rather than against a
+# written example, and that difference is worth knowing when reading a
+# failure here.
+
+def swap_moves_only_two():
+    """PRIORITY: two tokens exchange slots and nobody else is touched.
+    A shift of the same distance would drag everyone between them along."""
+    w = Wheel(list('ABCDE'))
+    w.swap('A', 'D')
+    assert w.order() == list('DBCAE'), w.order()
+    w2 = Wheel(list('ABCDE'))
+    w2.shift('D', 3)
+    assert w2.order() != list('DBCAE'), 'a shift should slide, not swap'
+    w3 = Wheel(list('ABCDE'))
+    w3.swap('B', 'C')
+    assert w3.order() == list('ACBDE'), w3.order()
+
+
+def swap_gives_no_second_turn():
+    """"The combatant already acting when this happens is not shorted a
+    turn, but doesn't get a second one either." A swap off the marker's slot
+    by whoever is acting leaves them a skip at their new slot."""
+    w = Wheel(list('ABCD'))
+    w.swap('A', 'C', acting='A')
+    assert w.order() == list('CBAD'), w.order()
+    assert w.chips == {'A': SKIP}, w.chips
+
+    seen, cur = [], 'A'
+    for _ in range(6):
+        nxt = w.advance(cur)
+        while nxt is None:
+            nxt = w.advance(w.order()[0])
+        seen.append(nxt)
+        cur = nxt
+    assert seen.count('A') <= 1, seen
+
+
+def move_after_closes_the_gap():
+    """STARING CONTEST: a move rather than an exchange. The token comes out,
+    goes back in behind the target, and everyone between closes up."""
+    w = Wheel(list('ABCD'))
+    w.move_after('A', 'C')
+    assert w.order() == list('BCAD'), w.order()
+    w2 = Wheel(list('ABCD'))
+    w2.move_after('D', 'A')
+    assert w2.order() == list('ADBC'), w2.order()
+    w3 = Wheel(list('ABCD'))
+    w3.move_after('B', 'C')
+    assert w3.order() == list('ACBD'), w3.order()
+    w4 = Wheel(list('ABCD'))
+    w4.move_after('B', 'B')
+    assert w4.order() == list('ABCD'), w4.order()
+
+
+def reorders_place_no_chips():
+    """Neither card is an Initiative Shift, and the bonus-turn rule is
+    written about shifts. Crossing the marker by swapping earns nothing."""
+    w = Wheel(list('ABCDE'))
+    w.swap('E', 'B')
+    assert not w.chips and not w.pending_bonus, (w.chips, w.pending_bonus)
+    w2 = Wheel(list('ABCDE'))
+    w2.move_after('E', 'A')
+    assert not w2.chips and not w2.pending_bonus, (w2.chips, w2.pending_bonus)
+    # +4 from slot 4 lands *onto* the marker's slot, which Example 3 says is
+    # not across it. +5 is the crossing that earns the bonus turn.
+    w3 = Wheel(list('ABCDE'))
+    w3.shift('E', 4)
+    assert not w3.pending_bonus, 'onto the marker is not across it'
+    w4 = Wheel(list('ABCDE'))
+    w4.shift('E', 5)
+    assert w4.pending_bonus == ['E'], w4.pending_bonus
+
+
+def ring_stays_intact():
+    """Three hundred random reorders; the ring keeps everyone, once each."""
+    import random as _r
+    rng = _r.Random(0)
+    for _ in range(300):
+        n = rng.randint(2, 6)
+        toks = list('ABCDEF')[:n]
+        w = Wheel(list(toks))
+        for _ in range(rng.randint(1, 6)):
+            x, y = rng.sample(toks, 2)
+            if rng.random() < 0.5:
+                w.swap(x, y, acting=rng.choice([None, x]))
+            else:
+                w.move_after(x, y, acting=rng.choice([None, x]))
+            assert sorted(w.order()) == sorted(toks), (toks, w.order())
+
+
 if __name__ == '__main__':
     print('rules/initiative-shift-examples.md:')
     results = [
@@ -155,6 +249,16 @@ if __name__ == '__main__':
         case('Example 5 — reshifting a chip-holding token', ex5),
         case('no table-size correction', no_table_size_correction),
         case('joining and leaving', join_and_leave),
+    ]
+    print('\nreordering that is not a shift (no written oracle):')
+    results += [
+        case('PRIORITY moves only two tokens', swap_moves_only_two),
+        case('a swap off the marker grants no second turn',
+             swap_gives_no_second_turn),
+        case('STARING CONTEST closes the gap behind it',
+             move_after_closes_the_gap),
+        case('neither reorder places a chip', reorders_place_no_chips),
+        case('the ring keeps everyone, once each', ring_stays_intact),
     ]
     print(f'\n{sum(results)}/{len(results)} passed')
     raise SystemExit(0 if all(results) else 1)

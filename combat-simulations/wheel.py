@@ -162,6 +162,64 @@ class Wheel:
             return None
         return up
 
+    # ---- reordering that is not a shift --------------------------------
+    #
+    # Initiative Shift slides: the token travels and everything it passes
+    # slides back into the gap. Two cards do something else, and the
+    # difference is the reason they need their own operations rather than
+    # being expressed as a shift.
+    #
+    # Neither places a chip for crossing the marker. That rule belongs to
+    # Initiative Shift — `rules/card-glossary.md` writes it as "if a
+    # positive *shift's* distance is greater than the distance to the
+    # marker's own slot" — and these are not shifts. They do honour the
+    # general principle the same section states: a combatant who has already
+    # acted this lap and ends up somewhere the marker has not reached yet is
+    # skipped there, so that one lap is still one turn each.
+
+    def _already_acted(self, token, acting):
+        """A skip for the acting token when a reorder carries it off the
+        marker's slot. It has had its turn; the slot it lands in has not
+        been reached yet, and without this it would act twice in one lap."""
+        if acting is not None and token is acting and self.index(token) != 0:
+            self.chips[token] = SKIP
+
+    def swap(self, a, b, acting=None):
+        """PRIORITY: "Swap places with the defender in the initiative order."
+
+        A straight exchange of two slots. Nobody else moves, which is what
+        makes it different from a shift — a shift of the same distance would
+        drag everyone in between along with it.
+        """
+        if a is b:
+            return f'{a} — no swap'
+        i, j = self.index(a), self.index(b)
+        self.slots[i], self.slots[j] = self.slots[j], self.slots[i]
+        self._already_acted(a, acting)
+        self._already_acted(b, acting)
+        return f'{a} and {b} swap places'
+
+    def move_after(self, token, after, acting=None):
+        """STARING CONTEST: "Change your place in the initiative order to
+        immediately follow after the defender."
+
+        A move rather than an exchange: the token comes out and goes back in
+        behind `after`, and everyone between them closes up. `after` keeps
+        its own place relative to everyone else, which a swap would not
+        preserve.
+        """
+        if token is after:
+            return f'{token} — already there'
+        s, a = self.index(token), self.index(after)
+        n = len(self.slots)
+        # Where the slot immediately behind `after` ends up once `token` has
+        # been taken out of the ring.
+        to = a if s < a else (a + 1) % n
+        if to != s:
+            self._move(s, to, clockwise=to > s)
+        self._already_acted(token, acting)
+        return f'{token} moves in behind {after}'
+
     # ---- joining and leaving -------------------------------------------
 
     def add_after(self, token, after):

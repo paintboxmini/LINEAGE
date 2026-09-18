@@ -1537,6 +1537,49 @@ def _r_chain(m):
     return [Splash(OTHER_ENEMY, 0.5, 'up')]
 
 
+class WheelSwap(Op):
+    """PRIORITY: exchange slots in the initiative order."""
+
+    def __init__(self, target):
+        self.target = target
+
+    def apply(self, ctx):
+        if ctx.wheel is None:
+            ctx.log('  (no wheel in this context — the swap is not applied.)')
+            return
+        for who in ctx.resolve(self.target, 'Swap with'):
+            ctx.log('  ' + ctx.wheel.swap(ctx.actor, who,
+                                          acting=getattr(ctx, 'acting', None)))
+
+
+class WheelMoveAfter(Op):
+    """STARING CONTEST: take your place immediately behind someone."""
+
+    def __init__(self, target):
+        self.target = target
+
+    def apply(self, ctx):
+        if ctx.wheel is None:
+            ctx.log('  (no wheel in this context — the move is not applied.)')
+            return
+        for who in ctx.resolve(self.target, 'Follow'):
+            ctx.log('  ' + ctx.wheel.move_after(
+                ctx.actor, who, acting=getattr(ctx, 'acting', None)))
+
+
+@menu(r'^swap places with the (?:defender|attacker) in the initiative order')
+def _r_priority(m):
+    return [WheelSwap(OPPONENT)]
+
+
+@menu(r'^(?:change your place in the initiative order to immediately follow '
+      r'after the (?:defender|attacker)|move yourself to immediately follow '
+      r'the (?:defender|attacker) in the initiative order)'
+      r'(?:\.? the new order takes effect this cycle)?')
+def _r_staring_contest(m):
+    return [WheelMoveAfter(OPPONENT)]
+
+
 # ---- card traits -------------------------------------------------------
 #
 # Some text is not an effect that happens — it is a property of the card

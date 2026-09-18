@@ -740,6 +740,10 @@ def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
                      rng=rng, log=log)
     ctx.wheel = wheel
     ctx.opponent_card = opponent_card
+    # Whose turn this exchange is happening on. Not the same as the actor:
+    # a Defense Effect's actor is the defender, and it is still the
+    # attacker's turn.
+    ctx.acting = actor if half == 'effect' else opponent
     ctx.return_card = False
     ctx.exiled_opponent_card = False
     return ctx, ops

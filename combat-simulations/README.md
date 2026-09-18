@@ -32,7 +32,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 |---|---|
 | `cards.py` | Loads `cards/*.md` directly — the markdown is the source of truth, same as `printing/` treats it. Parses name, colour, stat, die and range; carries Effect text verbatim. |
 | `effects.py` | Reads Effect and Defense Effect prose and compiles the regular part of it into operations. A half either compiles whole or narrates; nothing half-applies. `python3 effects.py -v` lists what still narrates. |
-| `wheel.py` | The initiative wheel and Initiative Shift, including the chip rules. |
+| `wheel.py` | The initiative wheel and Initiative Shift, including the chip rules. Also the two reorders that are not shifts — PRIORITY's swap and STARING CONTEST's move — which slide nothing and place no chips. |
 | `engine.py` | Combatants, statuses, the damage pipeline, and Attack Resolution. |
 | `agents.py` | Who decides: `HumanAgent` prompts at the terminal, `SimpleAI` plays to type, `RandomAgent` plays legally at random. Any mix can share a table. |
 | `play.py` | Turn loop and CLI. |
@@ -84,8 +84,8 @@ moving, attacking, or triggering a Defense Effect. Expiry is measured
 against the turn of whoever played the card, not whoever is holding it,
 because that is what "until your next turn" says on the card.
 
-Run `python3 effects.py` for the live figure; it was 278/319 (87%) when this
-paragraph was written — 270 compiling and 8 read as traits.
+Run `python3 effects.py` for the live figure; it was 282/319 (88%) when this
+paragraph was written — 274 compiling and 8 read as traits.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly
