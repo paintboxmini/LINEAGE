@@ -30,6 +30,7 @@ class Wheel:
         starts on the marker's slot."""
         self.slots = list(tokens)
         self.chips = {}          # token -> SKIP | BONUS
+        self.skips = {}          # token -> how many laps still owed
         self.pending_bonus = []  # tokens owed an immediate extra turn
         self.passed = []         # tokens slid over by the last movement
 
@@ -88,22 +89,12 @@ class Wheel:
         if token is acting and self.index(token) == 0:
             if amount > 0:
                 return self._shift_self_while_acting(token, amount)
-            # Negative is later, and a combatant who has just acted is
-            # already last. Moving them clockwise off the marker's slot
-            # would hand them an *earlier* next turn, which is the opposite
-            # of what a negative shift buys. Nothing happens instead.
-            #
-            # That leaves WAIT's "-1, -2, or -3 to yourself (choose)" with
-            # no difference between its options when played on the attack
-            # half. Flagged rather than invented: going later than last
-            # means skipping a lap, and how many laps a -3 is worth is a
-            # design call, not an implementation detail.
-            return (f'{token} {amount} → already last; the wheel has no '
-                    f'later slot to give')
+            return self._delay_past_the_end(token, -amount)
 
         # "Reshifting a token that already carries a pending skip or bonus
         # chip removes the pending chip."
         had = self.chips.pop(token, None)
+        self.skips.pop(token, None)
         if had == BONUS and token in self.pending_bonus:
             self.pending_bonus.remove(token)
 
@@ -172,6 +163,25 @@ class Wheel:
                 f'{"" if to == 1 else "s"} instead of {n - 1}'
                 + ('' if gap >= amount else ' (as soon as the wheel allows)'))
 
+    def _delay_past_the_end(self, token, laps):
+        """A negative shift on whoever is acting — WAIT on yourself,
+        RETALIATE or INTERRUPT on the attacker.
+
+        They have just acted, so they are already last and the ring has no
+        later slot to move them to. The delay is spent as skipped laps
+        instead: the token stays where it is and misses that many of its own
+        turns. One lap is one turn in the order, so -2 means the next two
+        times the marker reaches them, it passes them by.
+
+        `rules/card-glossary.md`: "Where a shift would run past the end of
+        what the wheel can express, place a chip instead of changing the
+        movement." This is that chip, counted.
+        """
+        self.chips[token] = SKIP
+        self.skips[token] = laps
+        return (f'{token} -{laps} → already last; skips their next '
+                f'{laps} turn{"" if laps == 1 else "s"}')
+
     # ---- turn order -----------------------------------------------------
 
     def take_bonus(self):
@@ -213,7 +223,12 @@ class Wheel:
             up = self.slots[0]
 
         if self.chips.get(up) == SKIP:
-            del self.chips[up]
+            left = self.skips.get(up, 1) - 1
+            if left > 0:
+                self.skips[up] = left      # more laps still owed
+            else:
+                del self.chips[up]
+                self.skips.pop(up, None)
             return None
         return up
 
@@ -294,6 +309,7 @@ class Wheel:
         """A combatant leaving the fight; the wheel closes around the slot."""
         self.slots.remove(token)
         self.chips.pop(token, None)
+        self.skips.pop(token, None)
         if token in self.pending_bonus:
             self.pending_bonus.remove(token)
 

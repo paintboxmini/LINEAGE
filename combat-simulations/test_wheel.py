@@ -266,30 +266,40 @@ def self_shift_while_acting_is_not_a_bonus_turn():
     assert when_next(9) == 1, when_next(9)
 
 
-def negative_self_shift_never_arrives_sooner():
-    """The mirror case. A negative shift is later, and a combatant who has
-    just acted is already last, so it must not hand them an earlier turn."""
-    base = Wheel(['a', 'b', 'c', 'd'])
-    cur, seq = 'a', []
-    for _ in range(4):
-        nxt = base.advance(cur)
+def when_next(w, token, depth=24):
+    """How many other turns pass before `token` acts again."""
+    cur, seq = token, []
+    for _ in range(depth):
+        nxt = w.advance(cur)
         while nxt is None:
-            nxt = base.advance(base.order()[0])
+            nxt = w.advance(w.order()[0])
         seq.append(nxt)
         cur = nxt
-    normal = seq.index('a')
+    return seq.index(token) if token in seq else None
 
+
+def negative_self_shift_spends_the_delay_as_skipped_laps():
+    """A negative shift is later, and a combatant who has just acted is
+    already last — the ring has no later slot. The delay is spent as
+    skipped laps instead: -X means the next X times the marker reaches
+    them, it passes them by.
+
+    WAIT's "-1, -2, or -3 to yourself (choose)" is what this is for, and
+    the three options have to be three different things."""
+    normal = when_next(Wheel(['a', 'b', 'c', 'd']), 'a')
+    assert normal == 3, normal
+
+    seen = []
     for amount in (-1, -2, -3):
         w = Wheel(['a', 'b', 'c', 'd'])
         w.shift('a', amount, acting='a')
-        cur, got = 'a', []
-        for _ in range(4):
-            nxt = w.advance(cur)
-            while nxt is None:
-                nxt = w.advance(w.order()[0])
-            got.append(nxt)
-            cur = nxt
-        assert got.index('a') >= normal, (amount, got)
+        assert w.skips['a'] == -amount, (amount, w.skips)
+        assert not w.pending_bonus, w.pending_bonus
+        assert list(w.chips) == ['a'], w.chips      # nobody else is touched
+        got = when_next(w, 'a')
+        assert got > normal, (amount, got, normal)
+        seen.append(got)
+    assert seen == sorted(seen) and len(set(seen)) == 3, seen
 
 
 def a_bystander_still_earns_the_bonus():
@@ -299,32 +309,40 @@ def a_bystander_still_earns_the_bonus():
     assert w.pending_bonus == ['d'], w.pending_bonus
 
 
-def a_defender_shifting_the_attacker_places_no_chip():
+def a_defender_shifting_the_attacker_costs_only_the_attacker():
     """RETALIATE, INTERRUPT, DELAY, DOUBLE DOWN, HASTEN and STEAL all shift
-    the attacker from a defence half — and the attacker is the one acting,
-    standing on the marker's slot. Moving them off it must not place a
-    bonus or a skip chip on anyone.
+    the attacker from a defence half, and the attacker is the one acting.
 
-    The wheel is told who is acting, not who cast the shift, so this is the
-    same guard as a self-shift. What it does *not* do is make the attacker
-    later: they have just acted and are already last. See the note on
-    _shift_self_while_acting.
+    Two different things are both true here and it is worth keeping them
+    apart. Nobody earns a bonus turn and no *third party* is skipped in
+    compensation — that machinery belongs to a shift crossing the marker,
+    and standing on it is not crossing it. But the attacker's own delay is
+    spent as skipped laps, which is the whole point of a defensive shift.
     """
     for amount in (-1, -2, -3):
         w = Wheel(['att', 'def', 'c', 'd'])
         w.shift('att', amount, acting='att')
-        assert not w.chips, (amount, w.chips)
         assert not w.pending_bonus, (amount, w.pending_bonus)
+        assert list(w.chips) == ['att'], (amount, w.chips)
+        assert w.skips['att'] == -amount, (amount, w.skips)
+        # Everyone else keeps their place and their turn.
+        assert w.order() == ['att', 'def', 'c', 'd'], w.order()
+        assert when_next(w, 'def') == 0, 'the defender should act next'
 
-        cur, seq = 'att', []
-        for _ in range(4):
-            nxt = w.advance(cur)
-            while nxt is None:
-                nxt = w.advance(w.order()[0])
-            seq.append(nxt)
-            cur = nxt
-        assert sorted(seq) == ['att', 'c', 'd', 'def'], ('a turn was lost', seq)
-        assert seq.index('att') == 3, ('the attacker came sooner', amount, seq)
+
+def a_skipped_lap_is_spent_one_at_a_time():
+    """Three skips is three misses, not one chip that never clears."""
+    w = Wheel(['a', 'b', 'c'])
+    w.shift('a', -3, acting='a')
+    cur, seq = 'a', []
+    for _ in range(14):
+        nxt = w.advance(cur)
+        while nxt is None:
+            nxt = w.advance(w.order()[0])
+        seq.append(nxt)
+        cur = nxt
+    assert seq.count('a') >= 1, seq
+    assert 'a' not in w.chips, ('the chip outlived its laps', w.chips)
 
 
 def shifting_someone_who_is_not_acting_still_works():
@@ -358,12 +376,14 @@ if __name__ == '__main__':
         case('the ring keeps everyone, once each', ring_stays_intact),
         case('shifting yourself on your own turn is not a bonus turn',
              self_shift_while_acting_is_not_a_bonus_turn),
-        case('a negative shift on yourself never arrives sooner',
-             negative_self_shift_never_arrives_sooner),
+        case('a negative shift on yourself is spent as skipped laps',
+             negative_self_shift_spends_the_delay_as_skipped_laps),
         case('a bystander crossing the marker still earns one',
              a_bystander_still_earns_the_bonus),
-        case('a defender shifting the attacker places no chip',
-             a_defender_shifting_the_attacker_places_no_chip),
+        case('a defender shifting the attacker costs only the attacker',
+             a_defender_shifting_the_attacker_costs_only_the_attacker),
+        case('a skipped lap is spent one at a time',
+             a_skipped_lap_is_spent_one_at_a_time),
         case('shifting someone who is not acting still works',
              shifting_someone_who_is_not_acting_still_works),
     ]
