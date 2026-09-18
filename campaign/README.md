@@ -8,7 +8,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 | | |
 |---|---|
-| `campaign/chris.md` | The Seed of the Amalgam. Blade singer; stats, Passives, Skills, Mimicry, KILLSWITCH, the flow cards |
+| `campaign/chris.md` | The Seed of the Amalgam. Blade singer; stats, Passives, Skills, Mimicry, and his three starters — MEASURE, RIPOSTE, KILLSWITCH |
 | `campaign/the-amalgam.md` | The hive mind he was sent ahead of, and the crossing that went wrong |
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |

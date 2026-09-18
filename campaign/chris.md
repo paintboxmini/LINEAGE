@@ -46,11 +46,68 @@ What the kit delivers so far:
 - **MIMETIC BLADE** is the one form he has actually perfected — no draw, no sheath, just whether the arm is a sword yet. A singer with one song they can do perfectly, which is more than most singers have.
 - **KILLSWITCH** is the stance, and stance-changing is what makes a fight look choreographed rather than transactional.
 
-**What the kit does not deliver yet:** *flow.* A blade singer chains — one motion feeding the next, a fight that reads as a single continuous phrase instead of a series of exchanges. Nothing in his current three does that. Candidates below; none chosen.
+**And the kit now delivers flow**, which was the hole in it. Two cards do it from opposite directions — **MEASURE** pays him a little every turn he keeps the pattern moving, **RIPOSTE** turns a block into the next strike. Both are written below under Cards. A third candidate, **FOLLOW THROUGH**, is written and held back as a later reward rather than a starter.
 
-### The flow card — three candidates
+### Why these two, out of three candidates
 
-**1. MEASURE — no repeated note.** *Kept as his second flow card.* Reward him for not playing the same colour twice in a row. This is the one I'd build, because it runs on the RPS triangle — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+
+**MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
+
+**RIPOSTE is flow as defence feeding offence**, which is what sword fighting actually looks like. It grants **Deadly rather than a flat number**, and the difference matters:
+
+- Deadly is a status he *holds* (`rules/card-glossary.md`, 17), so the block genuinely arms the next motion instead of being a same-turn rider that evaporates if the opening doesn't come immediately.
+- **It stacks.** Two blocks give two Deadly give two armed attacks — which is a chain, which is the entire thing this card is supposed to produce. A flat +3 twice is just +6 once.
+- It's a variable +d6 rather than a guaranteed amount, which reads like an opening rather than a payment.
+- It's existing vocabulary that the rest of the corpus already talks to, including Weak cancelling it 1-for-1 (`rules/card-glossary.md`, 18). Being counterable is a feature: enemies get an answer.
+
+**And the dead-turn problem was fixable, because a card has two halves and the first draft only used one.** The riposte sits on the Defense half; the Attack half arms him when he is the aggressor. It is never a blank turn, and the two halves teach the same idea from both directions.
+
+**The three together.** MEASURE is the discipline, RIPOSTE is the reflex, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
+
+## Skills
+
+- **Nature +2** — and it earns its place twice. It's how he knows what a creature *does* rather than only what it looks like, which is the difference between wearing a shape and using one.
+- **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
+
+## Trait — Mimicry
+
+**A Trait, not a Passive** (`rules/character-creation.md`, Passives and Traits) — always true, costs no Action, takes no slot.
+
+He can take the appearance of a person he has looked at. **And of a creature**, on the same terms — a thing made of liquid metal has no particular reason to find a deer harder than a man, and Nature is on his sheet for exactly this.
+
+### What it can't do
+
+**It copies surface, and nothing else.** Face, build, posture, the hang of a limb. Not what someone knows, not how they behave, not the thousand small habits that make a person legible to people who know them. **The Trait gets him through a door. Performance is what keeps him in the room**, and when that fails it fails in conversation rather than in the mirror.
+
+**He remembers surfaces, not people.** Not a time limit and not perfect recall — what he keeps is exactly what he actually looked at. Someone he studied gives him a copy that holds up under attention. Someone he glanced at across a market gives him one that is wrong in ways he cannot identify and cannot fix, because he doesn't have the missing information to know it's missing. *This is the good version of the restriction: it rewards going and looking properly, and its failures are interesting rather than arbitrary.*
+
+**He is a fixed quantity of metal.** He can be roughly his own mass. A child is hollow, something huge is too small, and neither works. Same constraint AMALGAMOUS FORM already runs on, where a standing structure costs his own HP to build.
+
+**It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
+
+### On a time limit
+
+*Proposal — and my recommendation is against it.* A duration clock turns every infiltration into the table watching a timer, and the interesting failures stop being about him and start being about arithmetic. The restrictions above do the same job better: he can't hold a shape he didn't look at properly, can't be a size he isn't, can't act like someone he only saw, and can't do it while swinging.
+
+If a hard limit is wanted anyway, the version that costs something real rather than counting minutes: **holding a shape that isn't his own is the only thing that tires him**, and what it takes is the sharpness of his own. Come back from a long wear and his own face is approximate for a while. That's a Price rather than a timer, which is what this world charges.
+
+## Passives
+
+- **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
+- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
+
+## Deck
+
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, RIPOSTE, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
+
+His stats want **4 Blue / 3 Red / 2 Green**, so one signature in each colour fits without crowding any of them — the same shape Kevin's three customs take (`campaign/kevin.md`, Cards). That leaves **3 Blue, 2 Red, 1 Green** to draft.
+
+## Cards
+
+Three customs, one per colour. Draft, staged here before landing in `cards/` — same as `campaign/pat-cards.md`.
+
+**MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often.
 
 ```
 MEASURE
@@ -64,31 +121,49 @@ Range: Both
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
-
-**With FOLLOW THROUGH this makes a pair rather than two cards.** FOLLOW THROUGH buys a turn once and leaves; MEASURE pays a little every turn he keeps the pattern moving. One is the flourish, the other is the discipline underneath it, and a blade singer needs both to read as a blade singer rather than a man with a trick.
-
-**2. Parry-riposte, and it grants Deadly.** Flow as defence feeding offence, which is what sword fighting actually looks like. **Deadly rather than a flat number**, and the difference matters:
-
-- Deadly is a status he *holds* (`rules/card-glossary.md`), so the block genuinely arms the next motion instead of being a same-turn rider that evaporates if the opening doesn't come immediately.
-- **It stacks.** Two blocks give two Deadly give two armed attacks — which is a chain, which is the entire thing this card is supposed to produce. A flat +3 twice is just +6 once.
-- It's a variable +d6 rather than a guaranteed amount, which reads like an opening rather than a payment.
-- It's existing vocabulary that the rest of the corpus already talks to, including Weak cancelling it 1-for-1. Being counterable is a feature: enemies get an answer.
-
-**And the dead-turn problem is fixable, because a card has two halves and the first draft only used one.** Put the riposte on the Defense half and give the Attack half something that works when he's the aggressor. Then it is never a blank turn and the two halves teach the same idea from both directions.
+**RIPOSTE.** The block that becomes the strike. Red because it is a body doing a thing it has done ten thousand times, not a plan.
 
 ```
-(untitled — the riposte)
+RIPOSTE
 RED — BODY
 Attack: Body + d6
 Effect: Gain Deadly.
 Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
 Range: Melee
+"He doesn't answer the strike. He finishes it."
 ```
 
-*Sketch, not a proposal. The numbers want a pass and the name isn't written.*
+**Melee is the price, and it is a real one on this card specifically**, because a defender's card has to satisfy its own Range as if they were attacking (`rules/combat.md`, Attack Resolution, step 2). A Melee card cannot block at all unless both combatants are Frontline. So the half he most wants — the one that pays double — only exists when he is already in the scrum, which is where a blade singer should have to stand.
 
-**3. Tempo — the chosen one.** *Overruling my withdrawal: initiative shifting is a fair way to buy extra turns in this system, and Drew's call. Shape and price below are his.* Named **FOLLOW THROUGH**, because a follow-through is the motion continuing past the strike, which is precisely what this buys.
+**No Special Rule is needed for ties, unlike FOLLOW THROUGH.** A tie triggers the attacker's Effect *and* the defender's Defense Effect (`rules/combat.md`, Attack Resolution), so a tied block still arms him once — and the second Deadly is fenced off behind *won this exchange* in the card text itself. The card says what it means without a rider.
+
+**KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning GRIND SHOT runs on. His draft has only two green slots, so a signature there is well placed.
+
+```
+KILLSWITCH
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Choose one — your attacks deal +2 damage, or gain Armour 2.
+        Lasts until the end of combat. Playing KILLSWITCH again replaces
+        your current choice rather than adding to it.
+Defense Effect: Same choice.
+Range: Both
+"A note changes and so does he. Nobody has worked out which comes first."
+```
+
+**The replacement clause is the name.** A killswitch flips; it doesn't accumulate. Without that line the card is a stacking buff and the fantasy is gone — with it, he is visibly choosing a mode and visibly giving one up, every time, in front of everyone.
+
+**On the numbers:** +2 and Armour 2, raised from 1 and 1. The lever I'd flagged got pulled — the die stays at d4, so he is still playing this for the mode rather than the damage, and the mode is now worth switching to. Armour 2 matches what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`), which is the right ceiling for a whole-combat stance that costs a card and an action to set.
+
+**The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
+
+---
+
+## Held Back — FOLLOW THROUGH
+
+**Written, priced, and not a starter.** This is the fourth card, kept as a later reward rather than one of the three he begins with. The reason is the one the design already argued: it buys a turn. That is the strongest thing a card in this system can do, and it should arrive as something earned at the table rather than something he opens the campaign holding.
+
+*Overruling my earlier withdrawal: initiative shifting is a fair way to buy extra turns in this system, and Drew's call. Shape and price below are his.* Named **FOLLOW THROUGH**, because a follow-through is the motion continuing past the strike, which is precisely what this buys.
 
 ```
 FOLLOW THROUGH
@@ -126,67 +201,16 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 **What I'd still avoid:** a *repeatable* extra action. The objection was never that tempo is too strong to sell — it's that a card which sells it every turn compounds. FOLLOW THROUGH sells it once and then leaves, which is why it works.
 
-## Skills
-
-- **Nature +2** — and it earns its place twice. It's how he knows what a creature *does* rather than only what it looks like, which is the difference between wearing a shape and using one.
-- **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
-
-## Trait — Mimicry
-
-**A Trait, not a Passive** (`rules/character-creation.md`, Passives and Traits) — always true, costs no Action, takes no slot.
-
-He can take the appearance of a person he has looked at. **And of a creature**, on the same terms — a thing made of liquid metal has no particular reason to find a deer harder than a man, and Nature is on his sheet for exactly this.
-
-### What it can't do
-
-**It copies surface, and nothing else.** Face, build, posture, the hang of a limb. Not what someone knows, not how they behave, not the thousand small habits that make a person legible to people who know them. **The Trait gets him through a door. Performance is what keeps him in the room**, and when that fails it fails in conversation rather than in the mirror.
-
-**He remembers surfaces, not people.** Not a time limit and not perfect recall — what he keeps is exactly what he actually looked at. Someone he studied gives him a copy that holds up under attention. Someone he glanced at across a market gives him one that is wrong in ways he cannot identify and cannot fix, because he doesn't have the missing information to know it's missing. *This is the good version of the restriction: it rewards going and looking properly, and its failures are interesting rather than arbitrary.*
-
-**He is a fixed quantity of metal.** He can be roughly his own mass. A child is hollow, something huge is too small, and neither works. Same constraint AMALGAMOUS FORM already runs on, where a standing structure costs his own HP to build.
-
-**It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
-
-### On a time limit
-
-*Proposal — and my recommendation is against it.* A duration clock turns every infiltration into the table watching a timer, and the interesting failures stop being about him and start being about arithmetic. The restrictions above do the same job better: he can't hold a shape he didn't look at properly, can't be a size he isn't, can't act like someone he only saw, and can't do it while swinging.
-
-If a hard limit is wanted anyway, the version that costs something real rather than counting minutes: **holding a shape that isn't his own is the only thing that tires him**, and what it takes is the sharpness of his own. Come back from a long wear and his own face is approximate for a while. That's a Price rather than a timer, which is what this world charges.
-
-## Passives
-
-- **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
-- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
-
-## Cards
-
-```
-KILLSWITCH
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Choose one — your attacks deal +2 damage, or gain Armour 2.
-        Lasts until the end of combat. Playing KILLSWITCH again replaces
-        your current choice rather than adding to it.
-Defense Effect: Same choice.
-Range: Both
-"A note changes and so does he. Nobody has worked out which comes first."
-```
-
-**Green because modal is flexibility**, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning GRIND SHOT runs on. His draft has only two green slots, so a signature there is well placed.
-
-**The replacement clause is the name.** A killswitch flips; it doesn't accumulate. Without that line the card is a stacking buff and the fantasy is gone — with it, he is visibly choosing a mode and visibly giving one up, every time, in front of everyone.
-
-**On the numbers:** +2 and Armour 2, raised from 1 and 1. The lever I'd flagged got pulled — the die stays at d4, so he is still playing this for the mode rather than the damage, and the mode is now worth switching to. Armour 2 matches what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`), which is the right ceiling for a whole-combat stance that costs a card and an action to set.
+**If it lands, it does not displace anything.** A tenth card is a tenth card — deck size is Body + Mind + Soul (`rules/character-creation.md`), so it arrives either alongside a stat bump or as a swap for something drafted. Which of those is a table question, not a sheet question.
 
 ## Not Yet Set
 
 - Character name
 - Appearance, voice, backstory detail beyond the above
 - Price
-- Starting deck (drafted at the table — `rules/character-creation.md`, Starting Deck)
-- **FOLLOW THROUGH** — chosen, shape and price set, wants a table test
-- **MEASURE** — his second flow card, named; numbers want a table test
-- **The riposte sketch** — Deadly on both halves; numbers and name both unwritten
+- The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
+- **MEASURE, RIPOSTE, KILLSWITCH** — all three settled as his starters; the numbers on MEASURE and RIPOSTE want a table test
+- **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 
 ## Related Documents
