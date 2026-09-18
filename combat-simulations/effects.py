@@ -425,8 +425,10 @@ class Shift(Op):
                 ctx.log(f'  Initiative Shift {self.amount:+} on {who.name} '
                         f'(no wheel in this context).')
                 continue
-            wheel.shift(who, self.amount)
-            ctx.log(f'  {who.name} takes Initiative Shift {self.amount:+}.')
+            note = wheel.shift(who, self.amount,
+                               acting=getattr(ctx, 'acting', None))
+            ctx.log(f'  {who.name} takes Initiative Shift {self.amount:+} '
+                    f'— {note.split("→", 1)[-1].strip()}')
             _fire_passed(ctx, who, wheel)
 
 

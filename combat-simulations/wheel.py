@@ -67,19 +67,39 @@ class Wheel:
 
     # ---- Initiative Shift ----------------------------------------------
 
-    def shift(self, token, amount):
+    def shift(self, token, amount, acting=None):
         """Apply Initiative Shift `amount` to `token`. Returns a short
         description of what happened, for the log.
 
         Callers should sum simultaneous shifts on the same token first —
         "multiple shifts applied to the same token at once sum into one net
         shift before it applies."
+
+        `acting` is whoever is taking their turn right now. It matters for
+        one case: a combatant shifting *itself* while acting. See
+        `_shift_self_while_acting`.
         """
         n = len(self.slots)
         self.passed = []
 
         if amount == 0:
             return f'{token} — no shift'
+
+        if token is acting and self.index(token) == 0:
+            if amount > 0:
+                return self._shift_self_while_acting(token, amount)
+            # Negative is later, and a combatant who has just acted is
+            # already last. Moving them clockwise off the marker's slot
+            # would hand them an *earlier* next turn, which is the opposite
+            # of what a negative shift buys. Nothing happens instead.
+            #
+            # That leaves WAIT's "-1, -2, or -3 to yourself (choose)" with
+            # no difference between its options when played on the attack
+            # half. Flagged rather than invented: going later than last
+            # means skipping a lap, and how many laps a -3 is worth is a
+            # design call, not an implementation detail.
+            return (f'{token} {amount} → already last; the wheel has no '
+                    f'later slot to give')
 
         # "Reshifting a token that already carries a pending skip or bonus
         # chip removes the pending chip."
@@ -125,6 +145,32 @@ class Wheel:
             return f'{token} {amount} → slot {to}, skipped'
         self._move(s, raw, clockwise=True)
         return f'{token} {amount} → slot {raw}'
+
+    def _shift_self_while_acting(self, token, amount):
+        """A positive shift a combatant applies to itself on its own turn —
+        QUICKEN, FOCUS, INTERRUPT, STEAL.
+
+        The general rule earns a bonus turn when a shift has "further to
+        travel than the distance to the marker". A combatant standing on the
+        marker's slot has a distance of zero, so by the letter every such
+        shift crosses and every one of them is a free extra turn. That is not
+        what the card means and not what the table plays: you have just
+        acted. Nothing carries you past a point you are standing on.
+
+        So the distance is measured where the glossary says to measure it —
+        "against when that token's own next turn would have arrived". Having
+        acted, that is after everyone else: `n - 1` turns away. A shift of X
+        makes it `n - 1 - X` turns away, and the token takes the slot that
+        produces that, floored at acting next. No chip either way; nobody is
+        skipped and nobody acts twice.
+        """
+        n = len(self.slots)
+        to = max(1, (n - 1) - amount)
+        self._move(0, to, clockwise=True)
+        gap = n - 1 - to
+        return (f'{token} +{amount} → acts after {to} other'
+                f'{"" if to == 1 else "s"} instead of {n - 1}'
+                + ('' if gap >= amount else ' (as soon as the wheel allows)'))
 
     # ---- turn order -----------------------------------------------------
 

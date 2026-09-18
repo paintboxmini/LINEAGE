@@ -238,6 +238,67 @@ def ring_stays_intact():
             assert sorted(w.order()) == sorted(toks), (toks, w.order())
 
 
+def self_shift_while_acting_is_not_a_bonus_turn():
+    """A combatant shifting itself on its own turn stands on the marker's
+    slot, so the distance to the marker is zero and the general rule would
+    make every such shift a crossing — a free extra turn off QUICKEN, every
+    time. Measured where the glossary says to measure it instead: against
+    when the token's own next turn would have arrived, which having acted
+    is after everyone else."""
+    def when_next(amount):
+        w = Wheel(['a', 'b', 'c', 'd'])
+        w.shift('a', amount, acting='a')
+        assert not w.chips and not w.pending_bonus, (w.chips, w.pending_bonus)
+        cur, seq = 'a', []
+        for _ in range(4):
+            nxt = w.advance(cur)
+            while nxt is None:
+                nxt = w.advance(w.order()[0])
+            seq.append(nxt)
+            cur = nxt
+        assert seq.count('a') == 1, ('acted twice', seq)
+        assert sorted(seq) == ['a', 'b', 'c', 'd'], ('someone lost a turn', seq)
+        return seq.index('a')
+
+    assert when_next(1) == 2, when_next(1)     # after 3 others normally
+    assert when_next(2) == 1, when_next(2)
+    assert when_next(3) == 1, when_next(3)     # floored at acting next
+    assert when_next(9) == 1, when_next(9)
+
+
+def negative_self_shift_never_arrives_sooner():
+    """The mirror case. A negative shift is later, and a combatant who has
+    just acted is already last, so it must not hand them an earlier turn."""
+    base = Wheel(['a', 'b', 'c', 'd'])
+    cur, seq = 'a', []
+    for _ in range(4):
+        nxt = base.advance(cur)
+        while nxt is None:
+            nxt = base.advance(base.order()[0])
+        seq.append(nxt)
+        cur = nxt
+    normal = seq.index('a')
+
+    for amount in (-1, -2, -3):
+        w = Wheel(['a', 'b', 'c', 'd'])
+        w.shift('a', amount, acting='a')
+        cur, got = 'a', []
+        for _ in range(4):
+            nxt = w.advance(cur)
+            while nxt is None:
+                nxt = w.advance(w.order()[0])
+            got.append(nxt)
+            cur = nxt
+        assert got.index('a') >= normal, (amount, got)
+
+
+def a_bystander_still_earns_the_bonus():
+    """Only the acting token's own shift changes. Example 3b stands."""
+    w = Wheel(['a', 'b', 'c', 'd'])
+    w.shift('d', +4, acting='a')
+    assert w.pending_bonus == ['d'], w.pending_bonus
+
+
 if __name__ == '__main__':
     print('rules/initiative-shift-examples.md:')
     results = [
@@ -259,6 +320,12 @@ if __name__ == '__main__':
              move_after_closes_the_gap),
         case('neither reorder places a chip', reorders_place_no_chips),
         case('the ring keeps everyone, once each', ring_stays_intact),
+        case('shifting yourself on your own turn is not a bonus turn',
+             self_shift_while_acting_is_not_a_bonus_turn),
+        case('a negative shift on yourself never arrives sooner',
+             negative_self_shift_never_arrives_sooner),
+        case('a bystander crossing the marker still earns one',
+             a_bystander_still_earns_the_bonus),
     ]
     print(f'\n{sum(results)}/{len(results)} passed')
     raise SystemExit(0 if all(results) else 1)
