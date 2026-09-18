@@ -23,6 +23,24 @@ class Agent:
         """Return a range-legal Card from me.hand, or None to take the hit."""
         raise NotImplementedError
 
+    # ---- choices a card Effect asks for (effects.py) --------------------
+    #
+    # Defaults that are legal and not stupid, so a new agent only overrides
+    # what it wants an opinion about.
+
+    def choose_target(self, me, options, prompt='Target'):
+        return options[0]
+
+    def choose_option(self, me, options, prompt='Choose'):
+        return options[0]
+
+    def choose_yes_no(self, me, prompt):
+        return True
+
+    def scry(self, who, look, opponent=None):
+        """Return (keep_on_top, send_to_bottom). Top of deck is last."""
+        return look, []
+
 
 class RandomAgent(Agent):
     """Plays legally and at random. Useful as a baseline opponent and for
@@ -88,6 +106,31 @@ class SimpleAI(Agent):
             return None
         return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
 
+    def choose_target(self, me, options, prompt='Target'):
+        """Help the ally who needs it most; hurt the enemy closest to
+        falling. Which way round is decided by whose side they are on."""
+        friends = [o for o in options if o.team == me.team]
+        if friends and any(w in prompt.lower() for w in
+                           ('heal', 'give', 'protect', 'draw', 'ally')):
+            return min(friends, key=lambda c: c.hp / max(1, c.max_hp))
+        foes = [o for o in options if o.team != me.team]
+        return min(foes or options, key=lambda c: c.hp)
+
+    def choose_option(self, me, options, prompt='Choose'):
+        return options[0]
+
+    def choose_yes_no(self, me, prompt):
+        return True
+
+    def scry(self, who, look, opponent=None):
+        """Bottom the cards that cannot be played from here, keep the rest.
+        A Wound or an Exhaust is always worth bottoming."""
+        keep, bottom = [], []
+        for c in look:
+            playable = opponent is None or c.range_ok(who.position, opponent.position)
+            (keep if playable and c.color != 'COLORLESS' else bottom).append(c)
+        return keep, bottom
+
 
 class HumanAgent(Agent):
     """Prompts at the terminal. Always shows the legal options and nothing
@@ -147,3 +190,32 @@ class HumanAgent(Agent):
         self.show(f'\n {attacker.name} attacks {me.name} '
                   f'({me.hp}/{me.max_hp} HP). Defend with:')
         return self._pick('Defense', opts, allow_none=True)
+
+    # ---- Effect choices -------------------------------------------------
+
+    def choose_target(self, me, options, prompt='Target'):
+        opts = [(f'{c.name} ({c.hp}/{c.max_hp} HP, {c.position})', c)
+                for c in options]
+        self.show(f'\n {prompt}:')
+        return self._pick('Target', opts)
+
+    def choose_option(self, me, options, prompt='Choose'):
+        self.show(f'\n {prompt}:')
+        return self._pick('Option', [(str(o).title(), o) for o in options])
+
+    def choose_yes_no(self, me, prompt):
+        while True:
+            raw = self.ask(f' {prompt}? [y/n] > ').strip().lower()
+            if raw in ('y', 'yes'):
+                return True
+            if raw in ('n', 'no'):
+                return False
+
+    def scry(self, who, look, opponent=None):
+        keep, bottom = [], []
+        self.show(f'\n Scrying {len(look)}:')
+        for c in look:
+            where = self._pick(f'{c.name} ({c.color})',
+                               [('Top', 'top'), ('Bottom', 'bottom')])
+            (keep if where == 'top' else bottom).append(c)
+        return keep, bottom

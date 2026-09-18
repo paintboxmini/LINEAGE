@@ -6,14 +6,16 @@ Miss, Immunity scoped to damage inside the pipeline, Cover Evade as a
 persistent dodge distinct from the Evade keyword, and Down defending
 normally.
 
-Card Effects are prose and are not executed here — see cards.py. The engine
-resolves the structured parts (who wins, how much damage lands, what the
-pipeline does to it) and hands the Effect text to whoever is playing.
+The engine resolves the structured parts — who wins, how much damage lands,
+what the pipeline does to it. Card Effects are read by `effects.py` and run
+from `_finish` below; a half that module cannot read is printed for whoever
+is playing, which is what every card did before it existed.
 """
 
 import math
 import random
 
+import effects as fx
 from cards import Card
 
 FRONT, BACK = 'Frontline', 'Backline'
@@ -24,7 +26,10 @@ class Combatant:
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
         self.team = team
-        self.position = position
+        self._position = position
+
+        # Anchored effects being sustained: (ops, text, opponent).
+        self.anchored = []
 
         self.hp = self.max_hp
 
@@ -57,6 +62,50 @@ class Combatant:
         self.acted_last_turn = False
 
     # ---- derived --------------------------------------------------------
+
+    # ---- position ------------------------------------------------------
+
+    @property
+    def position(self):
+        return self._position
+
+    def set_position(self, dest, log=None, forced=False):
+        """The one way position changes, so Rooted and Anchored are paid
+        wherever the movement came from.
+
+        `rules/card-glossary.md`, Rooted: the next movement is cancelled and
+        the charge is spent, forced movement included. Anchored: if you move,
+        voluntarily or by an enemy effect, it ends immediately.
+        """
+        if dest == self._position:
+            return False
+        if self.rooted > 0:
+            self.rooted -= 1
+            if log:
+                log(f'  {self.name} is Rooted — the move is cancelled.')
+            return False
+        self._position = dest
+        if log:
+            log(f'  {self.name} moves to the {dest}.')
+        self.break_anchors(log=log, reason='moved')
+        return True
+
+    def break_anchors(self, log=None, reason='moved'):
+        if self.anchored:
+            if log:
+                log(f'  {self.name} {reason} — Anchored ends.')
+            self.anchored.clear()
+
+    def tick_anchors(self, opponent_default, allies, enemies, rng, log):
+        """Start-of-turn triggers. `rules/card-glossary.md`: the benefit
+        triggers at the start of each of your turns for as long as you hold
+        position — never on the turn it was played."""
+        for ops, text, opponent in list(self.anchored):
+            log(f'  Anchored ({text})')
+            ctx = fx.Context(self, opponent or opponent_default, allies, enemies,
+                             None, 'anchored', rng=rng, log=log)
+            for op in ops:
+                op.apply(ctx)
 
     @property
     def max_hp(self):
@@ -106,7 +155,8 @@ class Combatant:
 
     def playable(self, opponent):
         """Cards in hand whose Range is legal for the current positions."""
-        return [c for c in self.hand if c.range_ok(self.position, opponent.position)]
+        return [c for c in self.hand
+                if c.is_playable() and c.range_ok(self.position, opponent.position)]
 
     # ---- damage --------------------------------------------------------
 
@@ -167,6 +217,7 @@ class Combatant:
             target.down = True
             if log:
                 log(f'{target.name} Collapses.')
+            target.break_anchors(log=log, reason='Collapsed')
         if target.hp <= target.death_threshold:
             target.dead = True
             if log:
@@ -202,7 +253,10 @@ def d(sides, rng=random):
 def roll_damage(attacker, card, rng=random):
     """Stat + die, with Deadly/Weak folded in. One stack of each cancels
     before either applies."""
-    total = attacker.stat(card.stat) + (d(card.die, rng) if card.die else 0)
+    # A Colorless card has no stat to add — it is the flat die and nothing
+    # else (`cards/colorless.md`).
+    base = attacker.stat(card.stat) if card.stat else 0
+    total = base + (d(card.die, rng) if card.die else 0)
 
     deadly, weak = attacker.deadly, attacker.weak
     cancel = min(deadly, weak)
@@ -216,7 +270,8 @@ def roll_damage(attacker, card, rng=random):
     return max(0, total)
 
 
-def resolve_attack(attacker, defender, atk_card, def_card, rng=random, log=print):
+def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
+                   log=print, wheel=None):
     """One exchange, following `rules/combat.md` Attack Resolution.
 
     `def_card` may be None — the defender cannot or chooses not to defend.
@@ -250,19 +305,19 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random, log=print
 
     # Resolution priority.
     if evaded:
-        return _finish(Outcome.DEFENDER, attacker, defender, atk_card, def_card, log)
+        return _finish(Outcome.DEFENDER, attacker, defender, atk_card, def_card, log, rng, wheel)
     if atk_blind_miss and def_blind_miss:
         log('Both miss — Mutual Miss. No damage, no Effect, no Defense Effect.')
-        return _finish(Outcome.MUTUAL_MISS, attacker, defender, atk_card, def_card, log)
+        return _finish(Outcome.MUTUAL_MISS, attacker, defender, atk_card, def_card, log, rng, wheel)
     if atk_blind_miss:
         log(f'{attacker.name} misses (Blind).')
-        return _finish(Outcome.DEFENDER, attacker, defender, atk_card, def_card, log)
+        return _finish(Outcome.DEFENDER, attacker, defender, atk_card, def_card, log, rng, wheel)
     if def_blind_miss:
         log(f'{defender.name} misses their block (Blind).')
-        return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log)
+        return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
     if def_card is None:
         log(f'{defender.name} has no legal defense.')
-        return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log)
+        return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
 
     # Step 5. Reveal.
     log(f'  {atk_card.name} ({atk_card.color}) vs {def_card.name} ({def_card.color})')
@@ -274,31 +329,87 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random, log=print
         outcome = Outcome.DEFENDER
     else:
         outcome = Outcome.TIE
-    return _finish(outcome, attacker, defender, atk_card, def_card, log)
+    return _finish(outcome, attacker, defender, atk_card, def_card, log,
+                   rng, wheel)
 
 
-def _finish(outcome, attacker, defender, atk_card, def_card, log):
-    """Apply the outcome, then discard both cards."""
+def _finish(outcome, attacker, defender, atk_card, def_card, log,
+            rng=random, wheel=None):
+    """Apply the outcome, run whatever of each half is executable, then
+    discard both cards."""
+    dealt = 0
     if outcome == Outcome.ATTACKER:
-        dmg = roll_damage(attacker, atk_card)
-        defender.take(dmg, source=attacker, log=log)
+        dmg = roll_damage(attacker, atk_card, rng)
+        dealt = defender.take(dmg, source=attacker, log=log)
         if defender.thorns and (atk_card.range or '').strip().lower().startswith('melee'):
             log(f'{defender.name}\'s Thorns bites back.')
             attacker.take(defender.thorns, unpreventable=True, log=log)
-        if atk_card.effect and atk_card.effect.lower() != 'none.':
-            log(f'  Effect: {atk_card.effect}')
+        _run(atk_card, 'effect', attacker, defender, outcome, dealt, log, rng,
+             wheel, def_card)
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
-        if def_card and def_card.defense_effect and def_card.defense_effect.lower() != 'none.':
-            log(f'  Defense Effect: {def_card.defense_effect}')
+        _run(def_card, 'defense_effect', defender, attacker, outcome, 0, log,
+             rng, wheel, atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
-        if atk_card.effect and atk_card.effect.lower() != 'none.':
-            log(f'  Effect: {atk_card.effect}')
-        if def_card and def_card.defense_effect and def_card.defense_effect.lower() != 'none.':
-            log(f'  Defense Effect: {def_card.defense_effect}')
+        _run(atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
+             wheel, def_card)
+        _run(def_card, 'defense_effect', defender, attacker, outcome, 0, log,
+             rng, wheel, atk_card)
 
     attacker.discard.append(atk_card)
     if def_card is not None:
         defender.discard.append(def_card)
     return outcome
+
+
+# Compiled halves, keyed by the text itself — the same wording on two cards
+# compiles once, and a card file edited between runs is re-read by cards.py
+# and lands here as new text.
+_COMPILED = {}
+
+
+def compiled(card, half):
+    text = getattr(card, half, None)
+    if not text or text.strip().lower() in ('none.', 'none'):
+        return None
+    if text not in _COMPILED:
+        _COMPILED[text] = fx.compile_half(text)
+    return _COMPILED[text]
+
+
+def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
+         opponent_card=None):
+    """Run one half. Anything that did not compile is read out instead,
+    which is what every card did before effects.py existed."""
+    if card is None:
+        return
+    text = getattr(card, half, None)
+    if not text or text.strip().lower() in ('none.', 'none'):
+        return
+    label = 'Effect' if half == 'effect' else 'Defense Effect'
+    ops = compiled(card, half)
+    if ops is None:
+        log(f'  {label}: {text}')
+        return
+    log(f'  {label}: {text}')
+    ctx = fx.Context(actor, opponent,
+                     allies=[c for c in _TABLE if c.team == actor.team and c is not actor],
+                     enemies=[c for c in _TABLE if c.team != actor.team],
+                     card=card, outcome=outcome, damage_dealt=dealt,
+                     rng=rng, log=log)
+    ctx.wheel = wheel
+    ctx.opponent_card = opponent_card
+    for op in ops:
+        op.apply(ctx)
+
+
+# Everyone in the current fight. Set by play.py before the first exchange so
+# that "all allies" and "any enemy" have something to resolve against; an
+# exchange run outside a fight simply sees the two combatants in it.
+_TABLE = []
+
+
+def set_table(combatants):
+    global _TABLE
+    _TABLE = list(combatants)

@@ -17,7 +17,8 @@ import sys
 
 import cards as cardlib
 from agents import HumanAgent, RandomAgent, SimpleAI
-from engine import BACK, FRONT, Combatant, Outcome, d, resolve_attack
+from engine import (BACK, FRONT, Combatant, Outcome, d, resolve_attack,
+                    set_table)
 from wheel import Wheel
 
 
@@ -39,6 +40,11 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
         return
 
     who.draw_up(log=log)
+
+    # `rules/card-glossary.md`, Anchored: triggers at the start of each of
+    # your turns, for as long as you have held position.
+    if who.anchored:
+        who.tick_anchors(foes[0] if foes else None, allies, foes, rng, log)
 
     if who.staggered:
         who.staggered -= 1
@@ -65,11 +71,10 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
             who.in_cover = False
             log(f'{who.name} leaves cover to attack.')
 
-        resolve_attack(who, target, card, dcard, rng=rng, log=log)
+        resolve_attack(who, target, card, dcard, rng=rng, log=log, wheel=wheel)
 
     elif kind == 'move':
-        who.position = BACK if who.position == FRONT else FRONT
-        log(f'{who.name} moves to the {who.position}.')
+        who.set_position(BACK if who.position == FRONT else FRONT, log=log)
 
     elif kind == 'cover':
         who.in_cover = True
@@ -170,6 +175,7 @@ def main(argv=None):
         log(f'  {total:>3}  {c.name}')
 
     wheel = Wheel([c for *_, c in rolled])
+    set_table(everyone)
     for c in everyone:
         c.draw_up()
 

@@ -67,6 +67,9 @@ python3 agent-tools/check-references.py          # names resolve; no duplicate c
 python3 agent-tools/check-geography.py           # directions agree with the Bearing Table
 python3 combat-simulations/cards.py              # card counts, as a load check
 python3 combat-simulations/test_wheel.py         # initiative-shift worked cases
+python3 combat-simulations/test_invariants.py   # rules/invariants.md, Confirmed
+python3 combat-simulations/test_effects.py      # keyword rulings, through the cards
+python3 combat-simulations/effects.py           # how much card text the engine runs
 python3 combat-simulations/encounter_budget.py   # how many of a creature is a fight
 ```
 

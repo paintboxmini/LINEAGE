@@ -18,6 +18,8 @@ python3 play.py --quiet         # result only
 
 python3 test_wheel.py           # the initiative-shift worked cases
 python3 test_invariants.py      # rules/invariants.md, Confirmed
+python3 test_effects.py         # the keyword rulings, through the cards
+python3 effects.py              # how much of the pool compiles
 python3 cards.py                # card counts, as a load check
 
 python3 encounter_budget.py     # how many of each creature is a fight
@@ -29,13 +31,15 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | File | |
 |---|---|
 | `cards.py` | Loads `cards/*.md` directly — the markdown is the source of truth, same as `printing/` treats it. Parses name, colour, stat, die and range; carries Effect text verbatim. |
+| `effects.py` | Reads Effect and Defense Effect prose and compiles the regular part of it into operations. A half either compiles whole or narrates; nothing half-applies. `python3 effects.py -v` lists what still narrates. |
 | `wheel.py` | The initiative wheel and Initiative Shift, including the chip rules. |
 | `engine.py` | Combatants, statuses, the damage pipeline, and Attack Resolution. |
 | `agents.py` | Who decides: `HumanAgent` prompts at the terminal, `SimpleAI` plays to type, `RandomAgent` plays legally at random. Any mix can share a table. |
 | `play.py` | Turn loop and CLI. |
 | `encounter_budget.py` | Sweeps opponent *count* against the written party and reports where a fight stops being free and starts being lethal. Count is the balance lever, so this varies count rather than stats. Reads stat blocks straight out of `bestiary/` and `characters/`, and checks the engine's derived HP against the published one on the way past. Conclusions live in `rules/gm-guide.md`, How many of them. |
 | `test_wheel.py` | `rules/initiative-shift-examples.md` as assertions. |
-| `test_invariants.py` | `rules/invariants.md`, Confirmed section, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across randomised fights. |
+| `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across randomised fights. |
+| `test_effects.py` | `rules/card-glossary.md` as assertions, through the cards that use each keyword. |
 
 `rules/invariants.md` is the specification this is checked against.
 
@@ -46,15 +50,30 @@ wheel, drawing to hand size, range legality, the Blind/Evade checks and
 their resolution order, the RPS reveal, the damage pipeline, Collapse and
 death, and positioning.
 
-It does **not** execute card Effects. Effect and Defense Effect text is
-prose written for a person — "discard a card, gain +2 damage with that
-colour the rest of combat" — and parsing that reliably is a different
-project from running a fight. The engine prints the text at the moment it
-triggers and leaves it to whoever is playing. Statuses the engine tracks
-(Deadly, Weak, Resist, Vulnerable, Evade, Blind, Rooted, Staggered, Thorns,
-Armour, Ward, Quick, Immunity, Protect) can be set on a `Combatant`
-directly, so a Effect that grants one can be applied by hand and the engine
-will honour it from then on.
+Card Effects are read by `effects.py`. Roughly two thirds of the core
+pool's Effect and Defense Effect halves compile into operations the engine
+runs — grants and their stacking, healing and HP costs, damage, draw,
+discard, Exile, Scry, movement, Initiative Shift, stat drain, Counter
+Attack, Lifesteal, buff stripping and stealing, Wound and Exhaust
+insertion, and the gates around them (Anchored, clean-win-only, HP
+thresholds).
+
+**A half either compiles completely or narrates.** Partial execution is the
+one outcome worth avoiding: an effect that grants the buff and quietly
+drops the "and draw 1" produces a wrong fight that reports as a right one.
+When any clause fails to read, the whole half is printed for whoever is
+playing — the behaviour every card had before `effects.py` existed.
+
+The remaining third is narrated on purpose. Most of it needs a judgement a
+person makes at the table (BECOMING rewriting a deck permanently, FOLLOW-UP
+copying another card, PRESS THE WOUND counting status cards), or a hook the
+engine does not have yet (ANTICIPATE and PUNISH winning ties, AXIOM banning
+a colour on the next reveal). `python3 effects.py -v` lists them.
+
+Statuses the engine tracks (Deadly, Weak, Resist, Vulnerable, Evade, Blind,
+Rooted, Staggered, Thorns, Armour, Ward, Quick, Immunity, Protect) can also
+be set on a `Combatant` directly, so a narrated Effect that grants one can
+be applied by hand and the engine honours it from then on.
 
 Current as of the 2026-09-06 rules, including that day's changes: the
 always-roll Blind/Evade order and the Mutual Miss outcome, Immunity scoped

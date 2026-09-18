@@ -1,4 +1,4 @@
-"""`rules/invariants.md`, Confirmed section, as assertions.
+"""`rules/invariants.md`, Confirmed, as assertions.
 
 Two invariants are listed there. Both are properties of the engine that no
 single fight demonstrates on its own, so each is checked directly and then
@@ -26,8 +26,23 @@ def check(label, condition, detail=''):
         FAILURES.append(label)
 
 
-def piles(c):
-    return len(c.deck) + len(c.hand) + len(c.discard) + len(c.exiled)
+def piles(c, written_only=True):
+    """Cards held across every pile.
+
+    `rules/invariants.md` allows the total to change at two nameable
+    events, one of which is a Wound/Exhaust insertion — so the conserved
+    quantity is the *written* cards. Status cards are counted separately
+    and are expected to appear and vanish.
+    """
+    everything = c.deck + c.hand + c.discard + c.exiled
+    if written_only:
+        everything = [x for x in everything if x.source != 'status']
+    return len(everything)
+
+
+def status_held(c):
+    return len([x for x in c.deck + c.hand + c.discard + c.exiled
+                if x.source == 'status'])
 
 
 # ---- 1. Derived stats are computed live, never cached -------------------
@@ -94,8 +109,12 @@ def test_conservation():
 
         bad = [(c.name, start[c.name], piles(c)) for c in everyone
                if piles(c) != start[c.name]]
-        check(f'seed {seed}: every combatant ends with the cards they started',
-              not bad, bad)
+        check(f'seed {seed}: every combatant ends with the written cards '
+              f'they started', not bad, bad)
+        inserted = sum(status_held(c) for c in everyone)
+        if inserted:
+            print(f'        ({inserted} status card(s) inserted this fight — '
+                  f'a named exception, not a leak)')
 
 
 if __name__ == '__main__':
