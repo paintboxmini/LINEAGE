@@ -26,8 +26,6 @@ class Combatant:
         self.team = team
         self.position = position
 
-        # rules/character-creation.md: max HP = (4 x Body) + Soul + Mind
-        self.max_hp = 4 * body + soul + mind
         self.hp = self.max_hp
 
         self.deck = list(deck)
@@ -59,6 +57,16 @@ class Combatant:
         self.acted_last_turn = False
 
     # ---- derived --------------------------------------------------------
+
+    @property
+    def max_hp(self):
+        """rules/character-creation.md: max HP = (4 x Body) + Mind + Soul.
+
+        Derived on read, never stored. rules/invariants.md, Confirmed:
+        caching this and failing to invalidate it on a stat change is the
+        named bug, so there is nothing here to invalidate.
+        """
+        return 4 * self.body + self.mind + self.soul
 
     @property
     def hand_size(self):

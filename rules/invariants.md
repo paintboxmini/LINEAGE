@@ -38,7 +38,7 @@ Not itself a list of invariants — a practical index for `combat-simulations/`:
 
 Where `combat-simulations/` and the Confirmed section above do not currently agree.
 
-- **Max HP is cached, not computed live.** `combat-simulations/engine.py` assigns `self.max_hp` once in `Combatant.__init__` rather than deriving it on read, which is the exact shape the first Confirmed invariant warns about. It is harmless today only because nothing in the engine ever reassigns `body`, `mind` or `soul` after construction — so there is no stat change for it to miss. The first effect that moves a stat mid-fight makes it a live bug, and `death_threshold` reads from it too. `hand_size` is a property and does this correctly.
+**None.** Both Confirmed invariants are asserted by `combat-simulations/test_invariants.py`, which is the executable form of this section — a gap recorded here should get a failing check there before it gets a fix.
 
 ---
 

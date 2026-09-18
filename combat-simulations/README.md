@@ -17,6 +17,7 @@ python3 play.py --rounds 40     # lap cap before it calls a draw
 python3 play.py --quiet         # result only
 
 python3 test_wheel.py           # the initiative-shift worked cases
+python3 test_invariants.py      # rules/invariants.md, Confirmed
 python3 cards.py                # card counts, as a load check
 
 python3 encounter_budget.py     # how many of each creature is a fight
@@ -34,6 +35,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | `play.py` | Turn loop and CLI. |
 | `encounter_budget.py` | Sweeps opponent *count* against the written party and reports where a fight stops being free and starts being lethal. Count is the balance lever, so this varies count rather than stats. Reads stat blocks straight out of `bestiary/` and `characters/`, and checks the engine's derived HP against the published one on the way past. Conclusions live in `rules/gm-guide.md`, How many of them. |
 | `test_wheel.py` | `rules/initiative-shift-examples.md` as assertions. |
+| `test_invariants.py` | `rules/invariants.md`, Confirmed section, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across randomised fights. |
 
 `rules/invariants.md` is the specification this is checked against.
 
