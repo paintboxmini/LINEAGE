@@ -12,11 +12,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). **Found by a man working at the Academy** — the institution cut into the rim, which is there to study what is in the abyss (`places/abyssal-ruins.md`, The Academy). Who he was, and what he did about it, is Chris's to write; the Academy's own details are reserved for the same reason.
 
-*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open, and the farming below still reads as written either way.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
-
-## What He Learned
-
-**Farming** — not one of his two Skills in the end (Nature and Performance are), but it is what he actually knows how to do. Irrigation, drainage, reading soil by feel, the vocabulary Briarwatch already speaks (`places/briarwatch.md`). The irony is on purpose: something sent to learn a world well enough to help consume it, learning instead how to grow something and let it be what it is.
+*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
 
 ## The Live Thread
 
@@ -50,9 +46,17 @@ What the kit delivers so far:
 
 ### Why these two, out of three candidates
 
-**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating — and now that the payout is information rather than a card, it cannot build card advantage either. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
 
 **MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
+
+**The payout is a stat reveal rather than a card**, changed 2026-09-18, and the change is an upgrade to the fiction and a downgrade to the power, which is the right direction on both. *Taking someone's measure* is now literally what the card does.
+
+**And it is worth more than it looks, because stats are not just stats here.** Deck size is Body + Mind + Soul, and for a creature each colour's count *equals* its matching stat — that one is a build rule, not a guideline (`rules/cards.md`, Deck Building, Enemy decks). So against a creature the reveal is also **the exact colour composition of its deck**: how much Red is still to come, and therefore what his own next colour should be. On a game whose core mechanic is a colour triangle, that is close to the most useful single thing he could learn, and he gets it by playing the rotation the card already wanted him to play.
+
+*Against another player it's a strong read rather than a certainty — colour-matching is explicitly a heuristic for player decks and drafting bends it (`rules/cards.md`, Deck Building, Player decks). Worth knowing before anyone claims the card reads any deck exactly.*
+
+**Compare STUDY** (`cards/blue-mind.md`), the Oracle card that does this: Ranged, d4, defence half only, gated behind a DC 13 Mind/Reason check. MEASURE gets the same reveal on **both** halves with no check, and pays for it with a condition STUDY doesn't have — he must have rotated colour since last turn, which is a cost he pays in deckbuilding and in every turn's decision rather than in a die roll.
 
 **RIPOSTE is flow as defence feeding offence**, which is what sword fighting actually looks like. It grants **Deadly rather than a flat number**, and the difference matters:
 
@@ -86,12 +90,6 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 **It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
 
-### On a time limit
-
-*Proposal — and my recommendation is against it.* A duration clock turns every infiltration into the table watching a timer, and the interesting failures stop being about him and start being about arithmetic. The restrictions above do the same job better: he can't hold a shape he didn't look at properly, can't be a size he isn't, can't act like someone he only saw, and can't do it while swinging.
-
-If a hard limit is wanted anyway, the version that costs something real rather than counting minutes: **holding a shape that isn't his own is the only thing that tires him**, and what it takes is the sharpness of his own. Come back from a long wear and his own face is approximate for a while. That's a Price rather than a timer, which is what this world charges.
-
 ## Passives
 
 - **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
@@ -107,16 +105,16 @@ His stats want **4 Blue / 3 Red / 2 Green**, so one signature in each colour fit
 
 Three customs, one per colour. Draft, staged here before landing in `cards/` — same as `campaign/pat-cards.md`.
 
-**MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often.
+**MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often. The reveal is written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
 ```
 MEASURE
 BLUE — MIND
 Attack: Mind + d6
 Effect: If the card you played last turn was a different colour than this one,
-        deal +2 damage and draw 1.
+        deal +2 damage and the defender reveals their stats.
 Defense Effect: If the card you played last turn was a different colour than
-        this one, draw 1.
+        this one, the attacker reveals their stats.
 Range: Both
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
@@ -163,7 +161,7 @@ Range: Both
 
 **Written, priced, and not a starter.** This is the fourth card, kept as a later reward rather than one of the three he begins with. The reason is the one the design already argued: it buys a turn. That is the strongest thing a card in this system can do, and it should arrive as something earned at the table rather than something he opens the campaign holding.
 
-*Overruling my earlier withdrawal: initiative shifting is a fair way to buy extra turns in this system, and Drew's call. Shape and price below are his.* Named **FOLLOW THROUGH**, because a follow-through is the motion continuing past the strike, which is precisely what this buys.
+**The name is the card.** A follow-through is the motion continuing past the strike, which is precisely what this buys.
 
 ```
 FOLLOW THROUGH
