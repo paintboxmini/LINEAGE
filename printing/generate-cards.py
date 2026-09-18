@@ -204,8 +204,8 @@ SETS = {
             #            hackles going up fits Pat's Shunka where a thorn
             #            bush does not, and BRAMBLE covers Green's Thorns at
             #            Both range anyway.
-            'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'HARMONIZE', 'SHADE AWAY', 'STIR',
+            'RELEASE', 'SEED', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'ALIGN', 'SHADE AWAY', 'STIR',
             'OPENING', 'PATIENCE', 'MEND',
             'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'SHELTER',
             'FLOW',

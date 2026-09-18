@@ -6,7 +6,7 @@
 GREEN — SOUL
 Attack: Soul + d6
 Effect: You and defender both move positions
-Defense Effect: Allies gain Quick.
+Defense Effect: You and the attacker both move positions
 Range: Both
 *"Change the field, change the fight."*
 
@@ -35,7 +35,7 @@ Range: Both
 
 **FLOW**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: You may change position. Gain Evade.
 Defense Effect: You may change position. Gain Evade.
 Range: Ranged
@@ -166,7 +166,7 @@ Range: Both
 
 **RELEASE**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: You may discard your hand, then draw that many cards
 Defense Effect: All allies may move position or gain Initiative Shift +1
 Range: Both
@@ -381,16 +381,6 @@ Effect: Gain Ward.
 Defense Effect: Gain Ward.
 Range: Both
 *"The body knows before the mind agrees."*
-
----
-
-**BRAMBLE**
-GREEN — SOUL
-Attack: Soul + d4
-Effect: Gain Thorns 2.
-Defense Effect: Gain Thorns 2.
-Range: Both
-*"Everything that reaches through leaves some of itself."*
 
 ---
 

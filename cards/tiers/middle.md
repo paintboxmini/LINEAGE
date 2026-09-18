@@ -16,6 +16,7 @@ Clean under every rule. They belong to a table that already knows what it is doi
 |------|---|---|---|
 | **TURN** | Blue | Ranged d4 | Redirects an incoming attack onto a target of your choice at full damage, spending the attacker's statuses on it as it goes — their Deadly lands on someone else, their Blind can make it miss entirely. Weak and Initiative Shift -2 on the attack half. The card the tier was invented for. |
 | **HEAVE AND HAUL** | Green | Both d8 | Moves every enemy in a chosen position to the other one, and lets all allies reposition freely on defence. Cut from the expansion on 2026-09-17 as too strong for that set. |
+| **HARMONIZE** | Green | Both d8 | Every ally may reposition, and each one who does gains Evade. Seated in the Oracle 63 for one day. Free party-wide movement plus a dodge for taking it is two payouts on one half, at the biggest die Green has. |
 | **TRAMPLE** | Red | Melee d6 | `If this attack drops (Collapses) the defender, gain another action this turn.` An extra action is the largest single thing a card can hand out. |
 | **RENEWAL** | Green | Both d4 | Every ally discards 1 and draws 2, or heals 4; on defence a Collapsed ally heals 8. Party-wide, on both halves, at a d4. |
 | **HEALING SONG** | Green | Ranged d6 | You and all allies heal 5, on both halves, unconditionally. |

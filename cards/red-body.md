@@ -34,7 +34,7 @@ Range: Melee
 
 **GUARD**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d6
 Effect: Gain Protect and Resist.
 Defense Effect: Gain Protect and Resist.
 Range: Melee
@@ -486,11 +486,11 @@ Range: Melee
 
 **OFF BALANCE**
 RED — BODY
-Attack: Body + d4
+Attack: Body + d8
 Effect: Only on a clean win — not a tie. Defender gains Staggered.
-Defense Effect: Counter Attack. Gain Resist. On a clean win only.
+Defense Effect: Counter Attack. On a clean win only.
 Range: Melee
-*"The shield is also a weapon."*
+*"Their weight was already going the wrong way."*
 
 ---
 

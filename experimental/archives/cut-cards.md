@@ -62,6 +62,18 @@ Range: Melee
 
 *Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
 
+## Core set — cut as the last vanilla Thorns card
+
+**BRAMBLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
+Range: Both
+*"Everything that reaches through leaves some of itself."*
+
+*Cut 2026-09-18. It granted Thorns 2 on both halves and did nothing else, which was its entire design — it existed to be the Green rung of the colour-scaled Thorns ladder, and that ladder was retired the day before (`rules/cards.md`). Without the ladder there is no argument for a card whose whole content is the cheapest amount of one keyword twice, especially with BRISTLE and CONFRONT both carrying Green Thorns at melee already. Nothing referenced it outside the Oracle list and the ladder table it was an example in.*
+
 ## Core set — cut for inflicting Staggered without the keyword
 
 **ABANDON**

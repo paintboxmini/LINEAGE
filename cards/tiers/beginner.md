@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 43 more are cleared and on the bench, 127 in all.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 41 more are cleared and on the bench, 125 in all.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
@@ -36,11 +36,11 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 **Ranged (8).** AID · COMMUNION · DISORIENT · FIELD MEDICINE* · FLOW · GUIDE* · MOCKERY · SHELTER
 
-**Both (16).** BRAMBLE · CHANNEL* · HARMONIZE · INSTINCT · LEVEL THE FIELD · MEND · MIRROR STEP · OPENING · PATIENCE · QUICKEN · RELEASE · ROOTED OATH* · SHADE AWAY · SHARED BURDEN* · STIR · UNTOUCHED*
+**Both (16).** ALIGN · CHANNEL* · INSTINCT · LEVEL THE FIELD · MEND · MIRROR STEP · OPENING · PATIENCE · QUICKEN · RELEASE · ROOTED OATH* · SEED · SHADE AWAY · SHARED BURDEN* · STIR · UNTOUCHED*
 
 ---
 
-## Eligible but unseated (43)
+## Eligible but unseated (41)
 
 Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
@@ -48,7 +48,7 @@ Beginner-legal, on the bench, no seat in a printed set. This is where a later se
 
 **Blue (6).** DECODE · DRAIN · REDIRECT · SLIPSTREAM · TRACE · UNMAKE
 
-**Green (17).** ABIDE · ALIGN · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
+**Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
 
 **CLIMB** *(Red, Ranged, d6)* is the one to know: a Blue melee deck-digger until 2026-09-17, it is a Red card now about taking the high ground and holding it — move to the Backline, and Anchored, your attacks deal +2 while you stay there.
 

@@ -16,7 +16,7 @@ Three pools, in order of when a table meets them. A card sits in exactly one.
 
 **What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card — 55 of them sit on the bench, including STRIKE. Being unseated is not a verdict.
 
-**Coverage.** All 166 cards in the three core colour lists were screened on 2026-09-17: 127 cleared, 39 in the middle tier, and one — ABANDON — cut outright. That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
+**Coverage.** All 165 cards in the three core colour lists have been screened: 125 cleared, 40 in the middle tier, and two — ABANDON and BRAMBLE — cut outright. That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
 
 ---
 
