@@ -427,6 +427,21 @@ class Shift(Op):
                 continue
             wheel.shift(who, self.amount)
             ctx.log(f'  {who.name} takes Initiative Shift {self.amount:+}.')
+            _fire_passed(ctx, who, wheel)
+
+
+def _fire_passed(ctx, mover, wheel):
+    """SLIPSTREAM: an ally the shifted token was slid over. Only allies of
+    the mover, and only the ones actually travelled across."""
+    for token in getattr(wheel, 'passed', ()):
+        if token is mover or getattr(token, 'team', None) != mover.team:
+            continue
+        if not any(p.kind is None and p.event == 'passed'
+                   for p in getattr(token, 'pending', ())):
+            continue
+        allies = [c for c in ctx.allies + [ctx.actor] if c.team == token.team]
+        enemies = [c for c in ctx.enemies if c.team != token.team]
+        token.fire('passed', mover, allies, enemies, ctx.rng, ctx.log)
 
 
 class StatLoss(Op):
@@ -487,10 +502,11 @@ class Reaction(Op):
     on being damaged, SEED on beginning a turn where it was planted."""
 
     def __init__(self, event, ops, text, target=SELF, expires='combat',
-                 uses=None, here=False):
+                 uses=None, here=False, breaks_on_move=False):
         self.event, self.ops, self.text = event, ops, text
         self.target, self.expires, self.uses, self.here = (
             target, expires, uses, here)
+        self.breaks_on_move = breaks_on_move
 
     def apply(self, ctx):
         from engine import Pending
@@ -498,7 +514,8 @@ class Reaction(Op):
             data = {'position': who.position} if self.here else {}
             who.add_pending(Pending(
                 self.event, owner=ctx.actor, expires=self.expires,
-                ops=self.ops, uses=self.uses, data=data, text=self.text),
+                ops=self.ops, uses=self.uses, data=data, text=self.text,
+                breaks_on_move=self.breaks_on_move),
                 log=ctx.log)
 
 
@@ -967,9 +984,10 @@ def _r_draw_ally(m):
     return [Draw(ALLY, int(m.group(1)))]
 
 
-@rule(r'^(?:and\s+)?draws?\s+(\d+)(?:\s+cards?)?')
+@rule(r'^(?:and\s+)?draws?\s+(\d+|a|an)(?:\s+cards?)?')
 def _r_draw(m):
-    return [Draw(INHERIT, int(m.group(1)))]
+    n = m.group(1)
+    return [Draw(INHERIT, 1 if n.lower() in ('a', 'an') else int(n))]
 
 
 @rule(r'^(defender|attacker) discards?\s+(\d+) card at random')
@@ -1119,6 +1137,14 @@ def compile_half(text):
         body = re.sub(r'(?:,\s*)?at the start of each of your turns[,]?\s*',
                       '', m.group(1), flags=re.I).strip()
         inner = compile_half(body)
+        if inner and len(inner) == 1 and isinstance(inner[0], Reaction):
+            # "Anchored — the next time X happens, ..." is not something
+            # that fires at the start of each turn. It is a reaction that
+            # Anchored keeps alive while you hold position, so it is
+            # installed once and dies on movement like any other Anchored.
+            inner[0].breaks_on_move = True
+            inner[0].text = f'Anchored — {inner[0].text}'
+            return inner
         return [Anchored(inner, body)] if inner else None
 
     gate = None
@@ -1750,7 +1776,25 @@ def _r_anchored_midway(m):
     body = re.sub(r'(?:,\s*)?at the start of each of your turns[,]?\s*', '',
                   m.group(1), flags=re.I).strip()
     inner = compile_half(body)
+    if inner and len(inner) == 1 and isinstance(inner[0], Reaction):
+        inner[0].breaks_on_move = True
+        inner[0].text = f'Anchored — {inner[0].text}'
+        return inner
     return [Anchored(inner, body)] if inner else None
+
+
+@menu(r'^the next time an ally passes through your position in the initiative '
+      r'order, (.+?)\.?$')
+def _r_slipstream(m):
+    """SLIPSTREAM. "Passes through your position" is the ring motion — an
+    ally slid over your slot by an Initiative Shift — not the marker
+    arriving at you. Drew's reading, 2026-09-18."""
+    inner = compile_half(m.group(1))
+    if inner is None:
+        return None
+    return [Reaction('passed', inner,
+                     f'when an ally is shifted through your slot — {m.group(1)}',
+                     uses=1)]
 
 
 # -- the seated singles --------------------------------------------------

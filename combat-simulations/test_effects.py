@@ -848,6 +848,68 @@ def test_shared_burden_is_uncapped_but_survivable():
     check('the caster is still standing', a.hp >= 1, a.hp)
 
 
+def test_slipstream_is_the_ring_motion():
+    print('\nSLIPSTREAM fires on being slid over, not on the marker arriving')
+    from wheel import Wheel
+    import cards as cl
+    a, b = duo()
+    mate = Combatant('M', 3, 3, 3, deck=list(cl.core_pool())[:6],
+                     position=FRONT, team='party')
+    other = Combatant('O', 3, 3, 3, deck=[], position=BACK, team='party')
+    set_table([a, mate, other, b])
+
+    def armed():
+        holder = Combatant('H', 3, 3, 3, deck=list(cl.core_pool())[:6],
+                           position=FRONT, team='party')
+        ctx = fx.Context(holder, b, [], [b], None, 'attacker wins',
+                         rng=random.Random(0), log=QUIET)
+        for op in fx.compile_half('Anchored — the next time an ally passes '
+                                  'through your position in the initiative '
+                                  'order, draw a card.'):
+            op.apply(ctx)
+        return holder
+
+    # An ally shifted across the holder's slot.
+    h = armed()
+    friend = Combatant('F', 3, 3, 3, deck=[], position=FRONT, team='party')
+    wheel = Wheel([a, h, friend, b])
+    hand = len(h.hand)
+    ctx = fx.Context(a, b, [h, friend], [b], None, 'attacker wins',
+                     rng=random.Random(0), log=QUIET)
+    ctx.wheel = wheel
+    wheel.shift(friend, 1)
+    fx._fire_passed(ctx, friend, wheel)
+    check('an ally slid across the slot pays', len(h.hand) == hand + 1,
+          (hand, len(h.hand)))
+
+    # An enemy doing the same does not.
+    h2 = armed()
+    foe = Combatant('E', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    wheel2 = Wheel([a, h2, foe, b])
+    hand2 = len(h2.hand)
+    ctx2 = fx.Context(a, b, [h2], [foe, b], None, 'attacker wins',
+                      rng=random.Random(0), log=QUIET)
+    ctx2.wheel = wheel2
+    wheel2.shift(foe, 1)
+    fx._fire_passed(ctx2, foe, wheel2)
+    check('an enemy doing the same does not', len(h2.hand) == hand2,
+          (hand2, len(h2.hand)))
+
+    # The marker simply arriving is not a pass.
+    h3 = armed()
+    wheel3 = Wheel([a, h3, b])
+    hand3 = len(h3.hand)
+    wheel3.advance(a)
+    check('the marker reaching them is not a pass',
+          len(h3.hand) == hand3 and len(h3.pending) == 1,
+          (hand3, len(h3.hand)))
+
+    # And it is Anchored, so moving ends it.
+    h4 = armed()
+    h4.set_position(BACK)
+    check('moving ends it, like any Anchored', h4.pending == [], h4.pending)
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -887,6 +949,7 @@ if __name__ == '__main__':
     test_standing_mod_outlives_the_exchange()
     test_study_is_a_check()
     test_shared_burden_is_uncapped_but_survivable()
+    test_slipstream_is_the_ring_motion()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

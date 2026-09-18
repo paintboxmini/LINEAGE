@@ -31,6 +31,7 @@ class Wheel:
         self.slots = list(tokens)
         self.chips = {}          # token -> SKIP | BONUS
         self.pending_bonus = []  # tokens owed an immediate extra turn
+        self.passed = []         # tokens slid over by the last movement
 
     # ---- geometry -------------------------------------------------------
 
@@ -46,13 +47,20 @@ class Wheel:
 
     def _move(self, frm, to, clockwise):
         """Move the token at slot `frm` to slot `to`, sliding everything it
-        travels through one slot back toward the gap."""
+        travels through one slot back toward the gap.
+
+        Records the tokens travelled over in `self.passed`. SLIPSTREAM asks
+        about exactly this — an ally *passing through your position* is the
+        ring motion, not the marker arriving at you.
+        """
         n = len(self.slots)
         token = self.slots[frm]
         step = 1 if clockwise else -1
+        self.passed = []
         i = frm
         while i != to:
             nxt = (i + step) % n
+            self.passed.append(self.slots[nxt])
             self.slots[i] = self.slots[nxt]   # passed token slides back
             i = nxt
         self.slots[to] = token
@@ -68,6 +76,7 @@ class Wheel:
         shift before it applies."
         """
         n = len(self.slots)
+        self.passed = []
 
         if amount == 0:
             return f'{token} — no shift'
