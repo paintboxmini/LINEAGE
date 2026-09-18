@@ -29,10 +29,30 @@ A wide open area where the sound of past events surfaces on the wind. The scream
 **The Obsidian Observatory**
 A partially intact dome overlooking the central rift. The best vantage point in the ruins. Almost certainly guarded.
 
+**The Academy**
+Cut into the inside face of the rim, looking in. Not a camp and not an expedition — a permanent building in the rock, put there by people who decided the way to study what is in the abyss was to live at the edge of it and keep looking. It is the nearest standing structure to the Central Gateway, which is either the whole point or the whole problem depending on who is asked.
+
+Everything else about it is open on purpose. **See The Academy — Reserved, below.**
+
 **The Abyssal Trench** *(also called The Trench)*
 A depression twenty feet below the ruins floor. The violet haze pools here over bioluminescent growth. The floor is colonized by hazardous sponge organisms. Ambush predators hunt between them. At the deepest point, ancient tower-like organisms grow from the stone — older than the ruins themselves, unclassified. See `places/abyssal-trench.md`.
 
 ---
+
+---
+
+## The Academy — Reserved
+
+**The details of this place belong to Chris's player**, who found it by writing toward it. What is written above is only the shape needed for it to exist in the world: it is an academy, it is built into the rim, it studies the abyss, and a man who worked there found something that came down through the Gateway (`campaign/chris.md`).
+
+**Not written, and not to be written by anyone else:** its name, who runs it, how many people are in it, how it is funded, how long it has been there, what it has actually learned, what it does about the fact that exposure here carries a risk nobody can characterise, and who the man was.
+
+**Two things that are already true and are worth knowing before anyone writes into them**, because they are the world's rather than the Academy's:
+
+- **The risk is real and it is not consistent** (above). An institution that has chosen to be permanent next to that has made a decision about it — one it presumably has a position on, and possibly a wrong one.
+- **The ground is aimed at.** Something in Ashfall has the ruins targeted again (`quests/war-engine.md`). Whether the Academy knows that, and what a body of scholars at the rim would be to either side of that, is a live question and not a settled one.
+
+*Filed here rather than in `campaign/` because the Academy is a place in the world and will outlast any one character's use of it. The person who gets to say what it is, is still Chris.*
 
 ## Hazards
 

@@ -10,7 +10,9 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ## Where He Landed
 
-Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). Found and taken in at Briarwatch — tentatively by **Iron** (`characters/iron.md`), Drew's own suggestion and not yet locked. "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
+Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). **Found by a man working at the Academy** — the institution cut into the rim, which is there to study what is in the abyss (`places/abyssal-ruins.md`, The Academy). Who he was, and what he did about it, is Chris's to write; the Academy's own details are reserved for the same reason.
+
+*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open, and the farming below still reads as written either way.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
 
 ## What He Learned
 
