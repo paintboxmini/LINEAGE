@@ -361,8 +361,16 @@ PACKETS = {
     },
     'play-reference': {
         'title': 'Play Reference',
-        'files': ['combat.md', 'resolution.md', 'resting.md',
+        'files': ['combat.md', 'resolution.md', 'resting.md', 'cards.md',
                   'card-glossary.md', 'initiative-shift-examples.md'],
+        # cards.md sits between the turn loop and the keyword rulings: it is
+        # what a card *is* — the die, the colour, the name, deck size — and
+        # the glossary is what its keywords mean. It carries the Oracle
+        # content rule too, which had been designer-facing until initiative
+        # was carved out of the whole-turn ban on 2026-09-18. That carve-out
+        # is a ruling a table makes, so the table needs the page it is on.
+        # Its dated provenance paragraphs are print:skip'd; the rules are not.
+        #
         # The worked shift cases go in the players' hands rather than staying
         # a maintenance file. Initiative Shift is tied for the most common
         # keyword in the Oracle deck — seven of the 63 carry it, across all

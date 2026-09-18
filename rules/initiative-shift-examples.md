@@ -86,6 +86,36 @@ Resolving it fresh means resolving it by Example 3, because that is the case it 
 
 ---
 
+## Example 6 — Shifting yourself on your own turn
+
+`a, b, c, d.` a is acting. a plays **QUICKEN**, Initiative Shift +2 on itself.
+
+a is standing on the marker's slot, so the distance to the marker is **zero** — and by the letter of the crossing rule, every positive shift a makes would cross it and buy an extra turn. **It does not.** Nothing carries you past a point you are standing on, and a has just acted.
+
+Measure it where the rule says to: against when a's own next turn would have arrived. Having acted, that is after all three others. A shift of +2 makes it **two sooner** — after one other instead of three. `a, b, c, d` becomes **`b, a, c, d`**. No chip for anyone.
+
+**Turn sequence:** a's turn ends → b goes next → **a goes again** → c → d.
+
+*Demonstrates the case the crossing rule reads backwards on. A combatant on the marker's slot is at position zero but their next turn is a full table away — read the slot as their place in the queue and every shift on them comes out inverted. The floor is acting next: a +9 here is the same as a +2, because acting after nobody at all is a bonus turn under another name.*
+
+---
+
+## Example 7 — Pushing back whoever is acting
+
+`a, b, c, d.` a is acting and attacks b. b defends with **RETALIATE**, Initiative Shift **-1** on the attacker.
+
+Same trap, mirrored. a has just acted, so a is already last — reading a's slot as its place in the queue says a is first, and moving a "later" would hand a an *earlier* turn.
+
+Measured properly: a's next turn was after three others, and **-1 puts one more turn in front of it**. After four. The ring says it in two motions — a's token slides one slot along, and it is **passed over** the first time the marker reaches it.
+
+**Turn sequence:** a's turn ends → b goes → **a is passed over** → c → d → b → **a goes**. Four others, where three would have gone.
+
+**-2 is after five, -3 is after six.** One more person in front per point, at any table size. A large delay at a small table means being passed over more than once: at a table of three, a -3 is passed over twice and acts again after five others.
+
+*Demonstrates that a negative shift on the current actor is a later turn, not a lost one — which is why `rules/cards.md` carves initiative out of its ban on costing an enemy a whole attack. The turn arrives, and the wheel shows exactly when it will. Nobody earns a bonus turn here and no third party is skipped: that machinery belongs to a shift that crosses the marker, and standing on it is not crossing it.*
+
+---
+
 ## What These Examples Demonstrate
 
 - Sliding happens on every shift, boundary case or not — see Example 1.
@@ -96,6 +126,7 @@ Resolving it fresh means resolving it by Example 3, because that is the case it 
 - **Bonus chip:** placed only when a positive shift genuinely crosses the marker — its distance greater than the distance to the marker's slot. Removed once the immediate extra turn is taken.
 - The displaced-actor skip (3b vs. 4) is compensation for a bonus turn actually granted — not a rule about displacement or about landing on the marker's slot.
 - A chip-holding token that gets reshifted loses the old chip and resolves fresh under the new shift (Example 5).
+- **A combatant shifting on their own turn is the exception, and it is not a small one** (Examples 6 and 7). They stand on the marker's slot, so its distance is zero and the crossing rule would fire on every shift they touch. Measure against when their own next turn would have arrived — after everyone else — and both directions come out right: +X is X sooner, floored at acting next; -X puts X more turns in front of theirs. No chips either way.
 - **There is no table-size correction.** The old "with exactly 3 combatants, reduce X's magnitude by 1" rule is retired as of 2026-09-12. It existed because shifts near the marker were explosive, and the real cause was proximity to the marker rather than slot count — which onto-is-not-across fixes at every size. Three on the wheel now behaves exactly like four, scaled down, and no shift is ever silently reduced to nothing.
 
 ---

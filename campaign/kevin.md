@@ -68,7 +68,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Plain** | None. It fires; that's all it does. | Anywhere |
 | **Sapphire crystal** | Defender gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
 | **Cinder flake** | Deal +3 damage | `bestiary/scorchback-beetle.md` — the Cindersink |
-| **Hush petal** | Defender gains Rooted | `bestiary/hush-bloom.md` — the Turnroot Weald |
+| **Hush petal** | Defender gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
 | **Spinstone grind** | Apply Initiative Shift -2 to the defender | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 
@@ -168,7 +168,7 @@ Range: Both
 
 ## Related Documents
 
-- `bestiary/scorchback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/blowback-beetle.md` — the four seasonings that had to be built
+- `bestiary/scorchback-beetle.md`, `flora/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/blowback-beetle.md` — the four seasonings that had to be built
 - `bestiary/sapphire-ant.md`, `places/capital/gilded-tusk.md` — the fifth, and Senshi
 - `campaign/chris.md`, `campaign/pat.md` — the other two player concepts from this session
 - `rules/items.md` — Crafting, the general rule this all runs on

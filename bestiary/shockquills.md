@@ -70,5 +70,5 @@ So the ingredient has a price and the price is paid in the fight. A party that p
 - `places/briarwatch.md` — the red dirt, the irrigation channels, and the larder fence they mostly avoid
 - `places/glasslight-reach.md` — the mineral-veined cliffs, and the dry scree that pays for the friction habit
 - `bestiary/tollbird.md` — the only predator here that has to check first
-- `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `bestiary/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
+- `bestiary/scorchback-beetle.md`, `bestiary/blowback-beetle.md`, `flora/hush-bloom.md`, `bestiary/sapphire-ant.md` — the other four seasonings, and four other kinds of gate
 - `campaign/kevin.md` — the character, and what this does once it is loaded

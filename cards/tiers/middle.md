@@ -4,7 +4,9 @@ Cards that are good and are not beginner cards. Most are legal under every rule 
 
 Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened three times from this screen — ABANDON, BRAMBLE and WAITING GAME.
 
-**Status: the whole core pool has been read.** 164 cards across the three colour lists — 84 seated, 40 cleared and on the bench, 40 here, and three cut. Screened in full on 2026-09-17 and edited daily since.
+**Status: the whole core pool has been read.** 164 cards across the three colour lists — 84 seated, 43 cleared and on the bench, 37 here, and three cut. Screened in full on 2026-09-17 and edited daily since.
+
+**Lifesteal is no longer here.** It was ruled a middle-tier keyword on 2026-09-17 on the reading that it heals for the full damage dealt. It does not — `rules/card-glossary.md` has always said half, rounded down, and two cards were restating it wrongly. BLEED, SKEWER and CONSUME went back to the beginner bench on 2026-09-18. PARADOX stayed, because it never belonged here for the keyword.
 
 ---
 
@@ -59,21 +61,6 @@ The reveal is the game. A beginner card does not reach into it at all.
 | Card | | | |
 |------|---|---|---|
 | **AXIOM** | Blue | Ranged d4 | Name a colour; they cannot play it on their next reveal. Choosing the colour is the whole difference from PRESSURE, which takes the one they just showed and is a beginner card. |
-
----
-
-## Lifesteal is a middle-tier mechanic
-
-Ruled on 2026-09-17 as a keyword, not card by card. Healing off the damage you deal is a swing a first campaign should not have on tap: it turns every winning exchange into two, and it rewards the player who is already ahead. Neither Oracle set had a Lifesteal card at the time of the ruling, so nothing had to be unseated for it.
-
-| Card | | | |
-|------|---|---|---|
-| **BLEED** | Red | Ranged d4 | `Effect: Lifesteal` — and Thorns 4 on defence. |
-| **SKEWER** | Red | Melee d6 | Lifesteal for the full damage dealt. |
-| **CONSUME** | Green | Melee d6 | Lifesteal on the attack half and again off its own unpreventable damage on defence, with an Exile cost for Weak and Blind. |
-| **PARADOX** | Blue | Ranged d6 | Also fails bar 1. Listed above. |
-
-*PARADOX aside, none of these was here for anything it did wrong. They are here because of what the keyword does.*
 
 ---
 

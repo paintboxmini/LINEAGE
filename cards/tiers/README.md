@@ -14,9 +14,9 @@ Three pools, in order of when a table meets them. A card sits in exactly one.
 
 **Moving a card between tiers.** Change it here, and check three things: whether it is seated in a set (`printing/generate-cards.py`), whether any creature or character deck runs it (`bestiary/`, `characters/`), and whether the keyword counts in `rules/card-glossary.md` still hold. A tier move on its own changes none of those — tiers are about eligibility, not about where a card is printed — but a card usually moves tiers because its text changed, and text changes do move all three.
 
-**What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card — 55 of them sit on the bench, including STRIKE. Being unseated is not a verdict.
+**What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card — 43 of them sit on the bench. Being unseated is not a verdict.
 
-**Coverage.** All 164 cards in the three core colour lists have been screened: 124 cleared, 40 in the middle tier, and three — ABANDON, BRAMBLE and WAITING GAME — cut outright. That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
+**Coverage.** All 164 cards in the three core colour lists have been screened: 127 cleared, 37 in the middle tier, and three — ABANDON, BRAMBLE and WAITING GAME — cut outright, which are no longer among the 164. That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
 
 ---
 

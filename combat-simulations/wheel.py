@@ -30,7 +30,9 @@ class Wheel:
         starts on the marker's slot."""
         self.slots = list(tokens)
         self.chips = {}          # token -> SKIP | BONUS
+        self.skips = {}          # token -> how many laps still owed
         self.pending_bonus = []  # tokens owed an immediate extra turn
+        self.passed = []         # tokens slid over by the last movement
 
     # ---- geometry -------------------------------------------------------
 
@@ -46,35 +48,53 @@ class Wheel:
 
     def _move(self, frm, to, clockwise):
         """Move the token at slot `frm` to slot `to`, sliding everything it
-        travels through one slot back toward the gap."""
+        travels through one slot back toward the gap.
+
+        Records the tokens travelled over in `self.passed`. SLIPSTREAM asks
+        about exactly this — an ally *passing through your position* is the
+        ring motion, not the marker arriving at you.
+        """
         n = len(self.slots)
         token = self.slots[frm]
         step = 1 if clockwise else -1
+        self.passed = []
         i = frm
         while i != to:
             nxt = (i + step) % n
+            self.passed.append(self.slots[nxt])
             self.slots[i] = self.slots[nxt]   # passed token slides back
             i = nxt
         self.slots[to] = token
 
     # ---- Initiative Shift ----------------------------------------------
 
-    def shift(self, token, amount):
+    def shift(self, token, amount, acting=None):
         """Apply Initiative Shift `amount` to `token`. Returns a short
         description of what happened, for the log.
 
         Callers should sum simultaneous shifts on the same token first —
         "multiple shifts applied to the same token at once sum into one net
         shift before it applies."
+
+        `acting` is whoever is taking their turn right now. It matters for
+        one case: a combatant shifting *itself* while acting. See
+        `_shift_self_while_acting`.
         """
         n = len(self.slots)
+        self.passed = []
 
         if amount == 0:
             return f'{token} — no shift'
 
+        if token is acting and self.index(token) == 0:
+            if amount > 0:
+                return self._shift_self_while_acting(token, amount)
+            return self._delay_acting_token(token, -amount)
+
         # "Reshifting a token that already carries a pending skip or bonus
         # chip removes the pending chip."
         had = self.chips.pop(token, None)
+        self.skips.pop(token, None)
         if had == BONUS and token in self.pending_bonus:
             self.pending_bonus.remove(token)
 
@@ -117,6 +137,72 @@ class Wheel:
         self._move(s, raw, clockwise=True)
         return f'{token} {amount} → slot {raw}'
 
+    def _shift_self_while_acting(self, token, amount):
+        """A positive shift a combatant applies to itself on its own turn —
+        QUICKEN, FOCUS, INTERRUPT, STEAL.
+
+        The general rule earns a bonus turn when a shift has "further to
+        travel than the distance to the marker". A combatant standing on the
+        marker's slot has a distance of zero, so by the letter every such
+        shift crosses and every one of them is a free extra turn. That is not
+        what the card means and not what the table plays: you have just
+        acted. Nothing carries you past a point you are standing on.
+
+        So the distance is measured where the glossary says to measure it —
+        "against when that token's own next turn would have arrived". Having
+        acted, that is after everyone else: `n - 1` turns away. A shift of X
+        makes it `n - 1 - X` turns away, and the token takes the slot that
+        produces that, floored at acting next. No chip either way; nobody is
+        skipped and nobody acts twice.
+        """
+        n = len(self.slots)
+        to = max(1, (n - 1) - amount)
+        self._move(0, to, clockwise=True)
+        gap = n - 1 - to
+        return (f'{token} +{amount} → acts after {to} other'
+                f'{"" if to == 1 else "s"} instead of {n - 1}'
+                + ('' if gap >= amount else ' (as soon as the wheel allows)'))
+
+    def _delay_acting_token(self, token, delay):
+        """A negative shift on whoever is acting — WAIT on yourself,
+        RETALIATE or INTERRUPT on the attacker.
+
+        The trap is that a combatant on the marker's slot is at position 0
+        while their *next* turn is a full table away: they have just acted,
+        so everyone else goes before they come round again. Read the slot as
+        their place in the queue and every shift on them comes out inverted.
+
+        Measured from where the next turn actually was, the rule is one
+        line: **-X puts X more turns in front of yours.** At a table of
+        four, where a turn normally returns after three others, -1 is after
+        four and -3 is after six.
+
+        The ring needs two parts to say it. The token slides along, and it
+        is passed over when the marker first reaches it — the skip Drew
+        describes. A lap here is `n - 1` rather than `n`, because while the
+        token is being passed over its own slot does not spend a turn.
+
+            slot = X mod (n - 1)
+            laps = 1 + (X - 1) // (n - 1)
+
+        Verified against the wheel itself for every table from three to
+        seven and every delay from one to seven. There is no delay the ring
+        cannot express; an earlier version of this claimed otherwise and was
+        simply not looking hard enough.
+        """
+        n = len(self.slots)
+        if n < 2:
+            return f'{token} -{delay} → nobody else to go first'
+        span = n - 1
+        slot = delay % span
+        laps = 1 + (delay - 1) // span
+        if slot:
+            self._move(0, slot, clockwise=True)
+        self.chips[token] = SKIP
+        self.skips[token] = laps
+        return (f'{token} -{delay} → acts after {n - 1 + delay} others '
+                f'instead of {n - 1}')
+
     # ---- turn order -----------------------------------------------------
 
     def take_bonus(self):
@@ -158,9 +244,81 @@ class Wheel:
             up = self.slots[0]
 
         if self.chips.get(up) == SKIP:
-            del self.chips[up]
+            left = self.skips.get(up, 1) - 1
+            if left > 0:
+                self.skips[up] = left      # more laps still owed
+            else:
+                del self.chips[up]
+                self.skips.pop(up, None)
             return None
         return up
+
+    # ---- reordering that is not a shift --------------------------------
+    #
+    # Initiative Shift slides: the token travels and everything it passes
+    # slides back into the gap. Two cards do something else, and the
+    # difference is the reason they need their own operations rather than
+    # being expressed as a shift.
+    #
+    # Neither places a chip for crossing the marker. That rule belongs to
+    # Initiative Shift — `rules/card-glossary.md` writes it as "if a
+    # positive *shift's* distance is greater than the distance to the
+    # marker's own slot" — and these are not shifts. They do honour the
+    # general principle the same section states: a combatant who has already
+    # acted this lap and ends up somewhere the marker has not reached yet is
+    # skipped there, so that one lap is still one turn each.
+
+    def _already_acted(self, token, acting):
+        """A skip for the acting token when a reorder carries it off the
+        marker's slot. It has had its turn; the slot it lands in has not
+        been reached yet, and without this it would act twice in one lap."""
+        if acting is not None and token is acting and self.index(token) != 0:
+            self.chips[token] = SKIP
+
+    def adjacent(self, a, b):
+        """Do these two act next to each other? Either direction — ALIGN
+        says "act next to you", not "act after you"."""
+        n = len(self.slots)
+        if n < 2 or a is b:
+            return False
+        i, j = self.index(a), self.index(b)
+        return (i - j) % n == 1 or (j - i) % n == 1
+
+    def swap(self, a, b, acting=None):
+        """PRIORITY: "Swap places with the defender in the initiative order."
+
+        A straight exchange of two slots. Nobody else moves, which is what
+        makes it different from a shift — a shift of the same distance would
+        drag everyone in between along with it.
+        """
+        if a is b:
+            return f'{a} — no swap'
+        i, j = self.index(a), self.index(b)
+        self.slots[i], self.slots[j] = self.slots[j], self.slots[i]
+        self._already_acted(a, acting)
+        self._already_acted(b, acting)
+        return f'{a} and {b} swap places'
+
+    def move_after(self, token, after, acting=None):
+        """STARING CONTEST: "Change your place in the initiative order to
+        immediately follow after the defender."
+
+        A move rather than an exchange: the token comes out and goes back in
+        behind `after`, and everyone between them closes up. `after` keeps
+        its own place relative to everyone else, which a swap would not
+        preserve.
+        """
+        if token is after:
+            return f'{token} — already there'
+        s, a = self.index(token), self.index(after)
+        n = len(self.slots)
+        # Where the slot immediately behind `after` ends up once `token` has
+        # been taken out of the ring.
+        to = a if s < a else (a + 1) % n
+        if to != s:
+            self._move(s, to, clockwise=to > s)
+        self._already_acted(token, acting)
+        return f'{token} moves in behind {after}'
 
     # ---- joining and leaving -------------------------------------------
 
@@ -172,6 +330,7 @@ class Wheel:
         """A combatant leaving the fight; the wheel closes around the slot."""
         self.slots.remove(token)
         self.chips.pop(token, None)
+        self.skips.pop(token, None)
         if token in self.pending_bonus:
             self.pending_bonus.remove(token)
 

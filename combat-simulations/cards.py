@@ -4,13 +4,11 @@ Reads `cards/*.md` directly rather than keeping a second copy of the card
 list — the markdown is the source of truth, the same way `printing/`
 treats it. No dependencies, matching the rest of the repo's tooling.
 
-A card's Effect and Defense Effect are prose written for a human, and the
-engine does not attempt to parse them. What it parses is the part that is
-structured: name, color, stat, attack die, and range. Effects are carried
-as text and surfaced to whoever is playing, who applies them. Every one of
-them, without exception — engine.py logs an Effect and a Defense Effect and
-resolves neither. Mechanical recognition was once meant to live in an
-effects.py; there has never been one.
+What this module parses is the structured part of a card: name, color,
+stat, attack die, and range. Effect and Defense Effect are carried as text.
+Reading that text is `effects.py`, which compiles the regular part of it
+into operations the engine runs and leaves the rest to be read out at the
+table.
 """
 
 import os
@@ -47,6 +45,12 @@ class Card:
 
     def ties(self, other):
         return self.color == other.color
+
+    def is_playable(self):
+        """Status cards (Wound, Exhaust) have no Attack line and can never
+        be played — taking up a slot is the whole mechanic. Every written
+        card has one, so the absence is what marks a status card."""
+        return self.attack is not None
 
     def range_ok(self, mine, theirs):
         """Range legality for the two positions (rules/combat.md, Range).
@@ -151,6 +155,22 @@ def core_pool():
     """The four core lists — what a creature deck fills from
     (`rules/cards.md`, Deck Building)."""
     return load('red-body', 'blue-mind', 'green-soul', 'colorless')
+
+
+_STATUS_TEXT = {
+    'Wound': 'Unplayable. Clogs the hand until it is removed.',
+    'Exhaust': 'Unplayable. Clogs the hand until it is removed.',
+}
+
+
+def status_card(kind):
+    """A Wound or an Exhaust as a real card (`rules/card-glossary.md`,
+    Status Cards). It is Colorless with no attack, so it can never be
+    played — it takes up a slot, which is the whole mechanic."""
+    return Card(name=kind.upper(), color='COLORLESS', stat=None, attack=None,
+                die=0, effect=None, defense_effect=None,
+                special_rule=_STATUS_TEXT.get(kind), range='Both',
+                flavor=None, source='status')
 
 
 def by_name(cards):

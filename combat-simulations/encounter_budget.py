@@ -11,11 +11,16 @@ lethal.
     python3 encounter_budget.py rootstalker ocellus
     python3 encounter_budget.py --max-count 8
 
-Caveat that governs every number below: the engine does not execute card
-Effects (see README). These results are the structural floor of a fight —
-dice, HP, range, the RPS reveal, positioning and the wheel. Effects push
-both sides up, so treat a 50% line as "a real fight" rather than as a
-precise coin flip.
+Caveat that governs every number below: roughly seven in eight Effect
+halves are modelled (see `effects.py`); the rest are narrated and therefore
+absent from these runs. The tables were originally measured with none of
+them running, on the argument that Effects push both sides up. Re-measured
+2026-09-18 at three thousand fights a row: the heavy end did not move —
+one and two minotaurs at 94.5% and 65.0% against 94.5% and 64.6% before —
+but the swarm end did, six wrackclaws going from a 48% fight to a 54-56%
+one. Effects widen the over-count at the weak end rather than closing it.
+Treat a 50% line as "a real fight" rather than a precise coin flip, and
+expect drift from a party built around the cards still narrated.
 """
 
 import argparse

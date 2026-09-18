@@ -1,7 +1,5 @@
 # Hush Bloom
 
-*Flora rather than fauna, filed here with the other ingredient organisms.*
-
 A pale flower of the deep canopy shade in the Turnroot Weald (`places/turnroot-weald.md`), the same general territory the Flower Snake works. Five petals, no scent worth naming, and a habit that makes it far harder to gather than it looks: **it only opens in genuine stillness, and closes at the first vibration.**
 
 Not a defense mechanism against anything in particular. The Weald is loud and busy and the Hush Bloom has simply declined to participate.
