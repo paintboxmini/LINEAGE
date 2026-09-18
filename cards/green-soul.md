@@ -277,7 +277,7 @@ Range: Both
 **CONSUME**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Lifesteal — heal yourself for the full damage dealt. You may Exile one card from your own hand to give the defender Weak and Blind.
+Effect: Lifesteal. You may Exile one card from your own hand to give the defender Weak and Blind.
 Defense Effect: Deal Soul + d6 unpreventable damage to the attacker, then Lifesteal off it. You may Exile one card from your own hand to give the attacker Weak and Blind.
 Range: Melee
 *"Nothing is wasted. Not even you."*

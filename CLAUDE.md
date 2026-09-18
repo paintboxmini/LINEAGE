@@ -44,7 +44,7 @@ These are consequences, not settings. Change a stat and all of them move with it
 - **Max HP = (4 × Body) + Mind + Soul** (`rules/character-creation.md`)
 - **Deck size = Body + Mind + Soul, and each colour's count equals its matching stat.** The same rule builds every creature in the world. A side effect worth knowing: revealing a creature's stats reveals its deck's exact colour composition
 - **Hand size = Mind** (minimum 2)
-- **The Oracle sets are 12/6/3 per colour** in that colour's range identity, and the expansion is 4/2/1. `oracle-1/2/3` are derived thirds, so changing the ratio breaks the even deal. New cards get written whenever they are wanted — what is fixed is the number of **seats**. Taking a seat in a printed set is a swap; writing a card is not. Forty cleared cards currently sit on the bench with no seat, and being unseated is not a verdict (`cards/tiers/beginner.md`)
+- **The Oracle sets are 12/6/3 per colour** in that colour's range identity, and the expansion is 4/2/1. `oracle-1/2/3` are derived thirds, so changing the ratio breaks the even deal. New cards get written whenever they are wanted — what is fixed is the number of **seats**. Taking a seat in a printed set is a swap; writing a card is not. Forty-three cleared cards currently sit on the bench with no seat, and being unseated is not a verdict (`cards/tiers/beginner.md`)
 
 When you change a card or a stat block, check what else consumes it: the seated sets in `printing/generate-cards.py`, any creature or character deck running that card, and the keyword counts in `rules/card-glossary.md`.
 

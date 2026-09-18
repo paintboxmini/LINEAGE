@@ -232,11 +232,11 @@ class Lifesteal(Op):
     """Heal for half the damage this attack actually dealt to HP, rounded
     down — after every reduction, since that is what landed.
 
-    SKEWER and CONSUME both write "heal yourself for the full damage dealt",
-    which contradicts the glossary. `rules/card-glossary.md` opens by saying
-    card text that contradicts it is an error, so the half is what runs here.
-    Flagged rather than silently reconciled: if full is the intent, the
-    glossary is what should move.
+    SKEWER and CONSUME used to write "heal yourself for the full damage
+    dealt", which contradicted the glossary and was the number the
+    middle-tier ruling on this keyword was made against. Settled on
+    2026-09-18 in the glossary's favour: both cards now say only
+    *Lifesteal*, and the keyword is beginner-legal again.
     """
 
     def apply(self, ctx):
@@ -611,7 +611,7 @@ def _r_lose(m):
     return [PayHP(int(m.group(1)))]
 
 
-@rule(r'^lifesteal(?:\s*[—-]+\s*heal yourself for the full damage dealt)?')
+@rule(r'^lifesteal')
 def _r_lifesteal(m):
     return [Lifesteal()]
 

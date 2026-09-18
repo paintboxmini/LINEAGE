@@ -40,17 +40,17 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ---
 
-## Eligible but unseated (40)
+## Eligible but unseated (43)
 
 Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
-**Red (20).** ANCHOR · BRACE · CLEAVE · CLIMB · DART · DIG IN · ENDURE · EXPEND · GORE · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · STAUNCH · WARSONG
+**Red (22).** ANCHOR · BLEED · BRACE · CLEAVE · CLIMB · DART · DIG IN · ENDURE · EXPEND · GORE · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · SKEWER · STAUNCH · WARSONG
 
 **Blue (5).** DECODE · DRAIN · REDIRECT · TRACE · UNMAKE
 
-**Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
+**Green (16).** ABIDE · ATTUNE · AWAKEN · BOLSTER · CONSUME · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
 
-Two worth knowing. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day and came back out — legal on every bar, but it plants a payoff at a position and collects a turn later if you are still standing there, which is a specialist's card rather than something a first deck should teach.
+Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-09-18 from the middle tier, when Lifesteal stopped being a middle-tier keyword — it heals for half the damage dealt, not all of it, and the ruling had been made on the wrong number. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day and came back out — legal on every bar, but it plants a payoff at a position and collects a turn later if you are still standing there, which is a specialist's card rather than something a first deck should teach.
 
 ---
 

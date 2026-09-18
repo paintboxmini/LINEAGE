@@ -527,7 +527,7 @@ Range: Melee
 **SKEWER**
 RED — BODY
 Attack: Body + d6
-Effect: Lifesteal — heal yourself for the full damage dealt.
+Effect: Lifesteal
 Defense Effect: Gain Thorns 4.
 Range: Melee
 *"What comes out of you goes into me. That is the arrangement."*
