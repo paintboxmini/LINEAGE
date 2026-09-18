@@ -14,10 +14,6 @@ Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`p
 
 *This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open, and the farming below still reads as written either way.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
 
-## What He Learned
-
-**Farming** — not one of his two Skills in the end (Nature and Performance are), but it is what he actually knows how to do. Irrigation, drainage, reading soil by feel, the vocabulary Briarwatch already speaks (`places/briarwatch.md`). The irony is on purpose: something sent to learn a world well enough to help consume it, learning instead how to grow something and let it be what it is.
-
 ## The Live Thread
 
 Story beats center on keeping the mind link off. It's not a switch he holds down — it's a door that could come open on its own, get forced from the other side, or slip without him meaning it to. What happens if it does isn't decided, and shouldn't be yet.
@@ -56,10 +52,9 @@ What the kit delivers so far:
 MEASURE
 BLUE — MIND
 Attack: Mind + d6
-Effect: If the card you played last turn was a different colour than this one,
-        deal +2 damage and draw 1.
+Effect: If the card you played last turn was a different colour than this one,deal +2 damage and reveal the defenders stats.
 Defense Effect: If the card you played last turn was a different colour than
-        this one, draw 1.
+        this one, reveal the attackers stats.
 Range: Both
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
@@ -78,17 +73,13 @@ Range: Both
 **And the dead-turn problem is fixable, because a card has two halves and the first draft only used one.** Put the riposte on the Defense half and give the Attack half something that works when he's the aggressor. Then it is never a blank turn and the two halves teach the same idea from both directions.
 
 ```
-(untitled — the riposte)
+RIPOSTE
 RED — BODY
 Attack: Body + d6
 Effect: Gain Deadly.
 Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
 Range: Melee
 ```
-
-*Sketch, not a proposal. The numbers want a pass and the name isn't written.*
-
-**3. Tempo — the chosen one.** *Overruling my withdrawal: initiative shifting is a fair way to buy extra turns in this system, and Drew's call. Shape and price below are his.* Named **FOLLOW THROUGH**, because a follow-through is the motion continuing past the strike, which is precisely what this buys.
 
 ```
 FOLLOW THROUGH
@@ -146,12 +137,6 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 **He is a fixed quantity of metal.** He can be roughly his own mass. A child is hollow, something huge is too small, and neither works. Same constraint AMALGAMOUS FORM already runs on, where a standing structure costs his own HP to build.
 
 **It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
-
-### On a time limit
-
-*Proposal — and my recommendation is against it.* A duration clock turns every infiltration into the table watching a timer, and the interesting failures stop being about him and start being about arithmetic. The restrictions above do the same job better: he can't hold a shape he didn't look at properly, can't be a size he isn't, can't act like someone he only saw, and can't do it while swinging.
-
-If a hard limit is wanted anyway, the version that costs something real rather than counting minutes: **holding a shape that isn't his own is the only thing that tires him**, and what it takes is the sharpness of his own. Come back from a long wear and his own face is approximate for a while. That's a Price rather than a timer, which is what this world charges.
 
 ## Passives
 
