@@ -167,46 +167,41 @@ class Wheel:
         """A negative shift on whoever is acting — WAIT on yourself,
         RETALIATE or INTERRUPT on the attacker.
 
-        The trap here is that a combatant on the marker's slot is at
-        position 0 and their *next* turn is at position n: they have just
-        acted, so everyone else goes before they come round again. Reading
-        their slot as their place in the queue says they are first when they
-        are last, and every shift then comes out backwards.
+        The trap is that a combatant on the marker's slot is at position 0
+        while their *next* turn is a full table away: they have just acted,
+        so everyone else goes before they come round again. Read the slot as
+        their place in the queue and every shift on them comes out inverted.
 
-        So the target is position `n + delay`, and the ring says it in two
-        parts: the token sits `delay` slots along, and is passed over once
-        when the marker first reaches it. At a table of four, where a turn
-        normally comes round after three others:
+        Measured from where the next turn actually was, the rule is one
+        line: **-X puts X more turns in front of yours.** At a table of
+        four, where a turn normally returns after three others, -1 is after
+        four and -3 is after six.
 
-            -1   the marker passes them, then B C D B — after 4
-            -2   after 5
-            -3   after 6
+        The ring needs two parts to say it. The token slides along, and it
+        is passed over when the marker first reaches it — the skip Drew
+        describes. A lap here is `n - 1` rather than `n`, because while the
+        token is being passed over its own slot does not spend a turn.
 
-        One more person goes before you for each point of delay, which is
-        what the card says and what the table expects to see. It is not a
-        lost turn: the turn arrives, later.
+            slot = X mod (n - 1)
+            laps = 1 + (X - 1) // (n - 1)
+
+        Verified against the wheel itself for every table from three to
+        seven and every delay from one to seven. There is no delay the ring
+        cannot express; an earlier version of this claimed otherwise and was
+        simply not looking hard enough.
         """
         n = len(self.slots)
-        # position = slot + laps * n, with the slot somewhere in the ring.
-        laps, slot = 1, delay
-        while slot > n - 1:
-            laps += 1
-            slot = delay - (laps - 1) * n
-        note = ''
-        if slot < 1:
-            # delay is an exact multiple of the table size, which the ring
-            # cannot say — the slot it needs is the marker's own. Land one
-            # short rather than one long.
-            laps -= 1
-            slot = n - 1
-            note = ' (one short — the ring cannot express that exact delay)'
-
+        if n < 2:
+            return f'{token} -{delay} → nobody else to go first'
+        span = n - 1
+        slot = delay % span
+        laps = 1 + (delay - 1) // span
         if slot:
             self._move(0, slot, clockwise=True)
         self.chips[token] = SKIP
         self.skips[token] = laps
         return (f'{token} -{delay} → acts after {n - 1 + delay} others '
-                f'instead of {n - 1}{note}')
+                f'instead of {n - 1}')
 
     # ---- turn order -----------------------------------------------------
 

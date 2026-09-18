@@ -300,7 +300,7 @@ def a_negative_shift_puts_one_more_person_in_front_per_point():
 
 def the_delay_scales_with_the_table():
     """Not tuned to four. One more person per point, whatever the table."""
-    for n in (4, 5, 6):
+    for n in (3, 4, 5, 6):
         toks = list('abcdef')[:n]
         base = when_next(Wheel(list(toks)), 'a', depth=60)
         assert base == n - 1, (n, base)
@@ -311,14 +311,25 @@ def the_delay_scales_with_the_table():
             assert got == n - 1 - amount, (n, amount, got)
 
 
-def a_delay_the_ring_cannot_say_lands_short():
-    """A delay equal to the table size needs the marker's own slot, which
-    is the one slot the ring cannot give. It lands one short and the
-    caller is told so, rather than silently landing one long."""
+def every_delay_is_reachable_at_every_table():
+    """There is no delay the ring cannot express. A -3 at a table of three
+    is the awkward one — Drew's case — and it works: skipped the first time
+    the marker reaches them, acting again after five others.
+
+    An earlier version of this file asserted that case was unreachable and
+    landed one short. It was not unreachable; it needed two laps and a slot
+    rather than one lap, and nobody had looked."""
     w = Wheel(['a', 'b', 'c'])
-    note = w.shift('a', -3, acting='a')
-    assert 'one short' in note, note
-    assert when_next(w, 'a', depth=40) == 4, when_next(w, 'a', depth=40)
+    w.shift('a', -3, acting='a')
+    assert when_next(w, 'a', depth=60) == 5, when_next(w, 'a', depth=60)
+
+    for n in range(3, 8):
+        toks = list('abcdefg')[:n]
+        for amount in range(-1, -8, -1):
+            w = Wheel(list(toks))
+            w.shift('a', amount, acting='a')
+            got = when_next(w, 'a', depth=120)
+            assert got == (n - 1) - amount, (n, amount, got)
 
 
 def a_bystander_still_earns_the_bonus():
@@ -399,8 +410,8 @@ if __name__ == '__main__':
         case('a negative shift puts one more person in front per point',
              a_negative_shift_puts_one_more_person_in_front_per_point),
         case('the delay scales with the table', the_delay_scales_with_the_table),
-        case('a delay the ring cannot say lands short',
-             a_delay_the_ring_cannot_say_lands_short),
+        case('every delay is reachable at every table',
+             every_delay_is_reachable_at_every_table),
         case('a bystander crossing the marker still earns one',
              a_bystander_still_earns_the_bonus),
         case('a defender shifting the attacker costs only the attacker',
