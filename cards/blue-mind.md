@@ -437,7 +437,7 @@ Range: Ranged
 
 **DISSECT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d8
 Effect: Exile 1 card from your discard pile, then draw 1.
 Defense Effect: Exile 1 card from your discard pile, then draw 1.
 Range: Ranged

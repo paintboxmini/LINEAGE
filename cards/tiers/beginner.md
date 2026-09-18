@@ -36,7 +36,7 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 **Ranged (8).** AID · COMMUNION · DISORIENT · FIELD MEDICINE* · FLOW · GUIDE* · MOCKERY · SHELTER
 
-**Both (16).** ALIGN · CHANNEL* · INSTINCT · LEVEL THE FIELD · MEND · MIRROR STEP · OPENING · PATIENCE · QUICKEN · RELEASE · ROOTED OATH* · SEED · SHADE AWAY · SHARED BURDEN* · STIR · UNTOUCHED*
+**Both (16).** ALIGN · CHANNEL* · INSTINCT · LEVEL THE FIELD · MEND · MIRROR STEP · OPENING · PATIENCE · QUICKEN · RELEASE · ROOTED OATH* · SHADE AWAY · SHARED BURDEN · STIR · UNTOUCHED* · WAIT*
 
 ---
 
@@ -48,9 +48,9 @@ Beginner-legal, on the bench, no seat in a printed set. This is where a later se
 
 **Blue (6).** DECODE · DRAIN · REDIRECT · SLIPSTREAM · TRACE · UNMAKE
 
-**Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WAIT · WITNESS
+**Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
 
-**CLIMB** *(Red, Ranged, d6)* is the one to know: a Blue melee deck-digger until 2026-09-17, it is a Red card now about taking the high ground and holding it — move to the Backline, and Anchored, your attacks deal +2 while you stay there.
+Two worth knowing. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day and came back out — legal on every bar, but it plants a payoff at a position and collects a turn later if you are still standing there, which is a specialist's card rather than something a first deck should teach.
 
 ---
 

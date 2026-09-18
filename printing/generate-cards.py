@@ -204,7 +204,7 @@ SETS = {
             #            hackles going up fits Pat's Shunka where a thorn
             #            bush does not, and BRAMBLE covers Green's Thorns at
             #            Both range anyway.
-            'RELEASE', 'SEED', 'INSTINCT', 'LEVEL THE FIELD',
+            'RELEASE', 'SHARED BURDEN', 'INSTINCT', 'LEVEL THE FIELD',
             'MIRROR STEP', 'QUICKEN', 'ALIGN', 'SHADE AWAY', 'STIR',
             'OPENING', 'PATIENCE', 'MEND',
             'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'SHELTER',
@@ -289,7 +289,9 @@ SETS = {
         #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
         #     bench and it is a Scry card, so it answers both at once.
         #   Protect sat at 1 card for a mechanic with its own Damage
-        #     Pipeline step: SHARED BURDEN.
+        #     Pipeline step: SHARED BURDEN. (It moved to the Oracle 63 on
+        #     2026-09-18; SHARED BURDEN's Protect is still in the beginner
+        #     pool, just in the other set.)
         #   Immunity lost its Green rung when UNTOUCHED left the first 21.
         #     UNTOUCHED comes back here, which restores the ladder without
         #     spending a slot in the deck Drew is happy with.
@@ -455,6 +457,15 @@ SETS = {
         # more seated cards for name breadth; Drew reverted all four. The
         # breadth rule is real, but removing a card from the early set is
         # the answer to a card that does not belong in it, not renaming.
+        #
+        # 2026-09-18. SHARED BURDEN left for the Oracle 63, where SEED had
+        # been sitting for a day and did not belong — SEED plants a payoff
+        # at a position and collects it a turn later if you are still
+        # standing there, which is a specialist's card, not something a
+        # first deck should be teaching. WAIT takes the expansion seat:
+        # same d4, so Green holds at 2.929, and it brings Initiative Shift
+        # to a set that had one card carrying it. The uncapped transfer
+        # note below travels with SHARED BURDEN and still stands.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
             'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
@@ -465,7 +476,7 @@ SETS = {
             'PARRY', 'FOCUSED STANCE',
             'WAITING GAME',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'SHARED BURDEN', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
+            'WAIT', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',
             'CONFRONT',
         ],
