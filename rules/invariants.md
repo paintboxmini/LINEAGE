@@ -4,7 +4,7 @@ An invariant is a mathematical or computational truth inside the combat simulato
 
 This file is scoped to the simulator only. It is not a design standard for what makes a mechanic feel right, and not a keyword's rules text (that's `rules/card-glossary.md`).
 
-**There is no simulator in this repo right now.** It is to be rebuilt from the ground up, and until it exists this document is a specification rather than a description — the behavior the rebuild has to satisfy, written down while the reasoning behind each line was still fresh. Nothing below has running code backing it, so treat it as intent to implement, not as verified behavior.
+**The simulator exists.** `combat-simulations/` was rebuilt from the ground up on 2026-09-06; this file was written as its specification beforehand and is now a description of what that code is checked against. Where the two disagree, one of them is a bug — see Standing gaps below for the one currently known.
 
 ---
 
@@ -34,4 +34,12 @@ Not itself a list of invariants — a practical index for `combat-simulations/`:
 
 ---
 
-The simulator is meant to be the executable model of the Confirmed section above. Once one exists, if its code and this document disagree on those, one of them is a bug. Until then the Confirmed section is what the rebuild is checked against.
+## Standing gaps
+
+Where `combat-simulations/` and the Confirmed section above do not currently agree.
+
+- **Max HP is cached, not computed live.** `combat-simulations/engine.py` assigns `self.max_hp` once in `Combatant.__init__` rather than deriving it on read, which is the exact shape the first Confirmed invariant warns about. It is harmless today only because nothing in the engine ever reassigns `body`, `mind` or `soul` after construction — so there is no stat change for it to miss. The first effect that moves a stat mid-fight makes it a live bug, and `death_threshold` reads from it too. `hand_size` is a property and does this correctly.
+
+---
+
+The simulator is the executable model of the Confirmed section above. If its code and this document disagree, one of them is a bug: fix the one that is wrong rather than editing this file to match the code.
