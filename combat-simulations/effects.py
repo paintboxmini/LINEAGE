@@ -1984,6 +1984,15 @@ class Replaces(Op):
         raise AssertionError('a replacement marker reached the engine')
 
 
+class EndsOnColourRepeat(Op):
+    """Compile-time marker for "Playing the same colour in two consecutive
+    reveals ends it." Consumed by `_resolve_durations`, which sets the flag
+    on the Stance it follows."""
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('a stance-ending marker reached the engine')
+
+
 class Stance(Op):
     """A choice that stays up for the fight and replaces itself.
 
@@ -2000,8 +2009,9 @@ class Stance(Op):
     nothing back.
     """
 
-    def __init__(self, key, ops):
+    def __init__(self, key, ops, ends_on_repeat=False):
         self.key, self.ops = key, ops
+        self.ends_on_repeat = ends_on_repeat
 
     @property
     def phase(self):
@@ -2028,7 +2038,9 @@ class Stance(Op):
         for op in mine:
             op.run_phase(ctx, phase)
 
-        held = who.stances.setdefault(self.key, {'status': {}, 'mods': []})
+        held = who.stances.setdefault(
+            self.key, {'status': {}, 'mods': [],
+                       'ends_on_repeat': self.ends_on_repeat})
         for a in attrs:
             gained = getattr(who, a, 0) - before_status[a]
             if gained > 0:
@@ -2041,22 +2053,43 @@ class Stance(Op):
         self.run_phase(ctx, 'post')
 
     def _revoke(self, who, held, log):
-        if not held:
-            return
-        gone = []
-        for attr, n in held.get('status', {}).items():
-            current = getattr(who, attr, 0)
-            if current > 0:
-                setattr(who, attr, max(0, current - n))
-                gone.append(f'{attr.title()} {min(n, current)}')
-        for mod in held.get('mods', []):
-            for live in list(who.standing_mods):
-                if live is mod:
-                    who.standing_mods.remove(live)
-                    gone.append(mod.get('text', 'a standing bonus'))
-        if gone:
-            log(f'  {self.key} replaces what it set before — '
-                f'{", ".join(gone)} ends.')
+        _take_back(who, self.key, held, log, 'replaces what it set before')
+
+
+def _take_back(who, key, held, log, why):
+    """Undo exactly what a stance granted, and nothing else.
+
+    Armour that arrived from another card is not this one's to remove, so
+    what comes off is the recorded amount rather than the current total.
+    """
+    if not held:
+        return
+    gone = []
+    for attr, n in held.get('status', {}).items():
+        current = getattr(who, attr, 0)
+        if current > 0:
+            setattr(who, attr, max(0, current - n))
+            gone.append(f'{attr.title()} {min(n, current)}')
+    for mod in held.get('mods', []):
+        for live in list(who.standing_mods):
+            if live is mod:
+                who.standing_mods.remove(live)
+                gone.append(mod.get('text', 'a standing bonus'))
+    if gone:
+        log(f'  {key} {why} — {", ".join(gone)} ends.')
+
+
+def end_stances_on_repeat(who, color, log):
+    """KILLSWITCH: "Playing the same colour in two consecutive reveals ends
+    it." Called by `engine` at the reveal, for the stances that carry the
+    clause — a stance without it is untouched.
+    """
+    for key, held in list(who.stances.items()):
+        if not held.get('ends_on_repeat'):
+            continue
+        who.stances.pop(key, None)
+        _take_back(who, key, held, log,
+                   f'ends on two {color} reveals running')
 
 
 def _extend_to_combat(op):
@@ -2099,6 +2132,12 @@ def _resolve_durations(ops):
                 return None
             out = [Stance(op.key, out)]
             continue
+        if isinstance(op, EndsOnColourRepeat):
+            # It ends "it" — the stance — so there has to be one to end.
+            if len(out) != 1 or not isinstance(out[0], Stance):
+                return None
+            out[0].ends_on_repeat = True
+            continue
         out.append(op)
     return out
 
@@ -2112,6 +2151,11 @@ def _r_until_end_of_combat(m):
       r'rather than adding to it')
 def _r_replaces(m):
     return [Replaces(m.group(1).strip())]
+
+
+@rule(r'^playing the same colou?r in two consecutive reveals ends it')
+def _r_ends_on_repeat(m):
+    return [EndsOnColourRepeat()]
 
 
 @menu(r'^choose one\s*[\u2014-]+\s*([^.]+?)\s*(?=\.|$)')
@@ -2186,7 +2230,7 @@ class Traits:
                  'mutes_opponent_effect', 'mutes_opponent_defense_effect',
                  'mutes_defense_effect_on_tie', 'extra_attack_on_clean_win',
                  'extra_action_on_collapse', 'returns_unless_loss',
-                 'always_exiled')
+                 'always_exiled', 'mirrors_color')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -2219,6 +2263,14 @@ _TRAIT_PATTERNS = (
     ('returns_unless_loss',
      r'returns to your hand instead of your discard pile after use'),
     ('always_exiled', r'exiled after use instead of sent to discard'),
+    # HOLD THE LINE (`cards/pat.md`). The card takes the colour it is
+    # resolving against, so the reveal can only be a tie — it never wins or
+    # loses on colour. Without this it reads as plain COLORLESS, which
+    # auto-loses to any real colour (`cards/colorless.md`), and the card
+    # comes out doing the exact opposite of what it says.
+    ('mirrors_color',
+     r"this card'?s colou?r becomes identical to whatever it'?s resolving "
+     r'against'),
 )
 
 # Traits read off the attack half, the defence half, and the Special Rule.

@@ -147,6 +147,13 @@ class Combatant:
         self.last_color = None
         self.color_this_turn = None
 
+        # The colour of the last card you *revealed*, attacking or
+        # defending. A different question from last_color above, and
+        # deliberately so: KILLSWITCH ends on "the same colour in two
+        # consecutive reveals", which a block counts toward, while MEASURE
+        # asks about your own last turn, which a block is not part of.
+        self.last_reveal_color = None
+
         # Stances: a choice that stays up for the fight and replaces itself
         # rather than stacking (KILLSWITCH). Keyed by card name, holding
         # exactly what that card granted so it can take back that much and
@@ -543,11 +550,22 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
         return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
     if def_card is None:
         log(f'{defender.name} has no legal defense.')
+        # Turned face up against nothing, which is still a reveal.
+        _revealed([(attacker, atk_card)], log)
         return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
 
     # Step 5. Reveal.
     log(f'  {atk_card.name} ({atk_card.color}) vs {def_card.name} ({def_card.color})')
-    if atk_card.ties(def_card):
+    _revealed([(attacker, atk_card), (defender, def_card)], log)
+    if atk_traits.mirrors_color or def_traits.mirrors_color:
+        # HOLD THE LINE takes the colour it is resolving against, so there
+        # is nothing for RPS to decide. A guaranteed tie, which its own
+        # "you win on a tie" then converts on defence and cannot convert on
+        # offence — that asymmetry is the card.
+        mirror = atk_card if atk_traits.mirrors_color else def_card
+        log(f'  {mirror.name} takes the colour it is facing — a tie.')
+        outcome = Outcome.TIE
+    elif atk_card.ties(def_card):
         outcome = Outcome.TIE
     elif atk_card.beats(def_card):
         outcome = Outcome.ATTACKER
@@ -560,6 +578,28 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
                             def_card, log)
     return _finish(outcome, attacker, defender, atk_card, def_card, log,
                    rng, wheel)
+
+
+def _revealed(pairs, log):
+    """Record what each side turned face up, and end anything that watches
+    for a repeat.
+
+    A reveal is not a turn. A card played to defend is revealed, so it
+    counts here — which is exactly what separates KILLSWITCH's "two
+    consecutive reveals" from MEASURE's "the card you played last turn"
+    (`engine.Combatant.last_color`).
+
+    An exchange that ends before Step 5 — a clean Evade, a Blind miss —
+    revealed nothing, so it neither continues a streak nor breaks one. A
+    reveal where you played no card is likewise not a reveal of yours.
+    """
+    for who, card in pairs:
+        if card is None or not card.color:
+            continue
+        repeated = who.last_reveal_color == card.color
+        who.last_reveal_color = card.color
+        if repeated:
+            fx.end_stances_on_repeat(who, card.color, log)
 
 
 def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):

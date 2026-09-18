@@ -210,9 +210,10 @@ MEASURE_E = ('If the card you played last turn was a different colour than '
 MEASURE_D = ('If the card you played last turn was a different colour than '
              'this one, the attacker reveals their stats.')
 RIPOSTE_D = 'Gain Deadly. If you won this exchange, gain Deadly again.'
-KILLSWITCH = ('Choose one — your attacks deal +2 damage, or gain Armour 2. '
+KILLSWITCH = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
               'Lasts until the end of combat. Playing KILLSWITCH again '
-              'replaces your current choice rather than adding to it.')
+              'replaces your current choice rather than adding to it. '
+              'Playing the same colour in two consecutive reveals ends it.')
 
 
 def blue():
@@ -363,26 +364,26 @@ def test_killswitch_flips_rather_than_stacking():
     print('\nKILLSWITCH replaces its own choice and only its own')
     a, b = duo()
 
-    _stance(a, b, 'gain Armour 2')
-    check('the stance grants what was chosen', a.armour == 2, a.armour)
+    _stance(a, b, 'gain Armour 3')
+    check('the stance grants what was chosen', a.armour == 3, a.armour)
 
-    _stance(a, b, 'gain Armour 2')
-    check('playing it again does not stack', a.armour == 2, a.armour)
+    _stance(a, b, 'gain Armour 3')
+    check('playing it again does not stack', a.armour == 3, a.armour)
 
-    _stance(a, b, 'your attacks deal +2 damage')
+    _stance(a, b, 'your attacks deal +3 damage')
     check('switching modes takes the old one back',
           a.armour == 0 and len(a.standing_mods) == 1,
           (a.armour, a.standing_mods))
 
-    _stance(a, b, 'gain Armour 2')
+    _stance(a, b, 'gain Armour 3')
     check('and switching back takes the bonus down',
-          a.armour == 2 and not a.standing_mods,
+          a.armour == 3 and not a.standing_mods,
           (a.armour, a.standing_mods))
 
     # Armour from somewhere else is not KILLSWITCH's to remove.
-    a.armour += 3
-    _stance(a, b, 'your attacks deal +2 damage')
-    check('armour from elsewhere survives the flip', a.armour == 3, a.armour)
+    a.armour += 2
+    _stance(a, b, 'your attacks deal +3 damage')
+    check('armour from elsewhere survives the flip', a.armour == 2, a.armour)
 
     check('the damage mode lasts the fight rather than a turn',
           a.standing_mods and a.standing_mods[0]['uses'] is None,
@@ -417,6 +418,88 @@ class _Picks:
 
     def choose_target(self, who, pool, prompt):
         return pool[0]
+
+
+
+def test_killswitch_ends_on_a_repeated_colour():
+    print('\nKILLSWITCH ends on the same colour twice running')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    green, blue = pool['SUPPORT'], pool['CALCULATE']
+    check('the fixture colours are what this test thinks they are',
+          green.color == 'GREEN' and blue.color == 'BLUE')
+
+    a, b = duo()
+    _stance(a, b, 'gain Armour 3')
+    engine._revealed([(a, green)], QUIET)
+    check('one green does not end it', a.armour == 3, a.armour)
+
+    engine._revealed([(a, blue)], QUIET)
+    check('nor does a different colour after it', a.armour == 3, a.armour)
+
+    engine._revealed([(a, blue)], QUIET)
+    check('a second blue running ends it', a.armour == 0, a.armour)
+
+    # A block is a reveal, which is what separates this from MEASURE.
+    a2, b2 = duo()
+    _stance(a2, b2, 'gain Armour 3')
+    engine._revealed([(b2, blue), (a2, blue)], QUIET)
+    engine._revealed([(b2, green), (a2, blue)], QUIET)
+    check('defending with the same colour counts as a reveal',
+          a2.armour == 0, a2.armour)
+
+    # And a stance without the clause is not touched by the same repeat.
+    a3, b3 = duo()
+    plain = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
+             'Lasts until the end of combat. Playing PLAIN again replaces '
+             'your current choice rather than adding to it.')
+    ops = fx.compile_half(plain)
+    assert ops is not None and not ops[0].ends_on_repeat
+    ctx = fx.Context(a3, b3, allies=[], enemies=[b3], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET,
+                     agent=_Picks('gain Armour 3'))
+    ctx.wheel = None
+    ops[0].apply(ctx)
+    engine._revealed([(a3, blue)], QUIET)
+    engine._revealed([(a3, blue)], QUIET)
+    check('a stance without the clause survives a repeat',
+          a3.armour == 3, a3.armour)
+
+    check('and the clause with no stance to end narrates',
+          fx.compile_half('Gain Armour 3. Playing the same colour in two '
+                          'consecutive reveals ends it.') is None)
+
+
+
+def test_hold_the_line_mirrors_the_colour_it_faces():
+    print('\nHOLD THE LINE ties everything, and only converts on defence')
+    import engine
+    every = cardlib.by_name(cardlib.load())
+    core = cardlib.by_name(cardlib.core_pool())
+    htl = every['HOLD THE LINE']
+
+    blocked = []
+    for name in ('STRIKE', 'CALCULATE', 'SUPPORT'):
+        a, b = duo()
+        a.hp = b.hp = 400
+        blocked.append(engine.resolve_attack(a, b, core[name], htl,
+                                             rng=random.Random(0), log=QUIET))
+    check('it blocks a real colour of any kind',
+          all(o == engine.Outcome.DEFENDER for o in blocked), blocked)
+
+    a, b = duo()
+    a.hp = b.hp = 400
+    out = engine.resolve_attack(a, b, htl, core['STRIKE'],
+                                rng=random.Random(0), log=QUIET)
+    check('and deals nothing as an attack',
+          out == engine.Outcome.TIE and b.hp == 400, (out, b.hp))
+
+    # Without the Special Rule being read it would resolve as plain
+    # COLORLESS, which auto-loses to any real colour — the opposite of the
+    # card. This is the assertion that catches that regression.
+    check('the mirroring Special Rule is actually read',
+          fx.traits(htl, 'defense').mirrors_color
+          and fx.traits(htl, 'attack').mirrors_color)
 
 
 def test_a_duration_with_nothing_to_hold_narrates():
@@ -1207,6 +1290,8 @@ if __name__ == '__main__':
     test_last_colour_rolls_forward_on_your_own_turn()
     test_riposte_arms_twice_only_on_a_win()
     test_killswitch_flips_rather_than_stacking()
+    test_killswitch_ends_on_a_repeated_colour()
+    test_hold_the_line_mirrors_the_colour_it_faces()
     test_a_duration_with_nothing_to_hold_narrates()
     test_pool_compiles_or_narrates()
     print()

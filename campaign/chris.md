@@ -103,7 +103,7 @@ His stats want **4 Blue / 3 Red / 2 Green**, so one signature in each colour fit
 
 ## Cards
 
-Three customs, one per colour. Draft, staged here before landing in `cards/` — same as `campaign/pat-cards.md`.
+Three customs, one per colour. **They have landed: `cards/chris.md` is the card, this section is the argument for it.** Both copies are worth keeping and they must not drift — `python3 agent-tools/check-card-drift.py` is what notices when they do.
 
 **MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often. The reveal is written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
@@ -141,9 +141,10 @@ Range: Melee
 KILLSWITCH
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose one — your attacks deal +2 damage, or gain Armour 2.
+Effect: Choose one — your attacks deal +3 damage, or gain Armour 3.
         Lasts until the end of combat. Playing KILLSWITCH again replaces
-        your current choice rather than adding to it.
+        your current choice rather than adding to it. Playing the same
+        colour in two consecutive reveals ends it.
 Defense Effect: Same choice.
 Range: Both
 "A note changes and so does he. Nobody has worked out which comes first."
@@ -151,7 +152,15 @@ Range: Both
 
 **The replacement clause is the name.** A killswitch flips; it doesn't accumulate. Without that line the card is a stacking buff and the fantasy is gone — with it, he is visibly choosing a mode and visibly giving one up, every time, in front of everyone.
 
-**On the numbers:** +2 and Armour 2, raised from 1 and 1. The lever I'd flagged got pulled — the die stays at d4, so he is still playing this for the mode rather than the damage, and the mode is now worth switching to. Armour 2 matches what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`), which is the right ceiling for a whole-combat stance that costs a card and an action to set.
+**On the numbers:** +3 and Armour 3, raised from 2 and 2 on 2026-09-18, the die still d4 so he is playing this for the mode and never for the damage.
+
+**Armour 3 is deliberately past the ceiling the old note cited**, and the reason the ceiling moved is the clause below it. Armour 2 is what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`) — permanently, unconditionally, for nothing. A stance that can be switched off by the holder's own next card is not that thing, and shouldn't be priced as if it were.
+
+**Playing the same colour twice running ends it**, and this is the line that makes the card his rather than anyone's. It puts KILLSWITCH on the same discipline MEASURE runs on — *no repeated note* — so the stance is not something he sets and forgets, it is something he has to keep earning by rotating. Two reveals of one colour and the mode drops.
+
+**A reveal is not a turn, and the difference is load-bearing.** MEASURE asks about *the card you played last turn*, so a block does not count. KILLSWITCH asks about *reveals*, so a block does. He can lose the stance while defending, on someone else's turn, holding a card he was glad to have. That is the price of a number this size, and it is a price he pays with attention rather than with HP.
+
+**Replaying KILLSWITCH is not a repeat that hurts him.** Green into green ends the old stance, and the same card immediately sets a new one — which the replacement clause was already doing. The clause bites on the *other* greens in his deck, which is why he only has two green slots and one of them is this.
 
 **The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
 

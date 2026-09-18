@@ -1,6 +1,8 @@
 # Pat's Custom Cards
 
-Three custom cards, drawn from a list of ideas Pat gave Drew — the rest of his 9-card starting deck comes from the normal Oracle draft (`campaign/pat.md`, Deck). Draft, staged here before landing in `cards/`.
+Three custom cards, drawn from a list of ideas Pat gave Drew — the rest of his 9-card starting deck comes from the normal Oracle draft (`campaign/pat.md`, Deck).
+
+**They have landed: `cards/pat.md` is the card, this file is the argument for it.** Both copies are worth keeping — the reasoning here is not something a printed card can carry — and they must not drift. `python3 agent-tools/check-card-drift.py` is what notices when they do.
 
 ---
 
@@ -55,13 +57,13 @@ Red — Body, d4, Both range. Second trigger for Wild Magic Summoning, and the a
 LET'S GO
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat. **This buff is tied to the spirit's survival — kill the totem, lose the buff.** A real reason for an enemy to target the spirit instead of Pat or an ally.
+Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat. This buff is tied to the spirit's survival — kill the totem, lose the buff.
 Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 "Come get me. Every one of you."
 ```
 
-Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save.
+Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save. **Tying the buff to the totem is the whole point of it** — it gives an enemy a real reason to spend a turn on the spirit instead of on Pat or an ally, which is what makes the summon a piece of the battlefield rather than a stat line. *(That sentence used to sit inside the card block; it is a designer's note rather than rules text, so it reads here and the printed card carries only what a player needs at the table.)*
 
 **"Move toward you or Rushdown" turned out not to be a self-targeting question at all** — Rushdown was never "you do something to an enemy" in the first place. Its actual fiction: the Frontline isn't a fixed zone, it's wherever opposing sides are actually face to face — Rushdown is just closing that distance yourself, and the enemy you close it against becomes Frontline because that's now where the fight is happening. So a compelled creature that's Frontline and needs to reach a Backline Pat can Rushdown him directly, completely within the existing rule — Pat is a valid Backline enemy target from their side of the field. No carve-out needed. (Worth knowing: `rules/combat.md`'s own Positioning section still reads more like fixed opposing zones than this — not something to fix off one card, just flagging that the fiction described here is looser and more accurate than the current wording.)
 
