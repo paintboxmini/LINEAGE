@@ -2,9 +2,9 @@
 
 Cards that are good and are not beginner cards. Most are legal under every rule in the game and simply hit too hard, or ask too much of a table still learning the reveal. A few break the Oracle content rule specifically, which is a rule about starting decks — past that point it has nothing to say about them.
 
-Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened once from this screen.
+Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened three times from this screen — ABANDON, BRAMBLE and WAITING GAME.
 
-**Status: the whole core pool has been read.** 166 cards across the three colour lists — 84 seated, 47 cleared and on the bench, 35 here, and one cut. Complete as of 2026-09-17, not finished forever.
+**Status: the whole core pool has been read.** 164 cards across the three colour lists — 84 seated, 40 cleared and on the bench, 40 here, and three cut. Screened in full on 2026-09-17 and edited daily since.
 
 ---
 

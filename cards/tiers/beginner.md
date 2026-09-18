@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 41 more are cleared and on the bench, 125 in all.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 40 more are cleared and on the bench, 124 in all.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
@@ -27,7 +27,7 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 **Ranged (16).** CALCULATE · CALLED SHOT · CHAIN · DISSECT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PINNED · PROFILE* · RETORT* · STUDY · UNDERSTANDING* · VEIL
 
-**Both (4).** REALIGNMENT · SIDESTEP · STILL POINT · WAITING GAME*
+**Both (4).** REALIGNMENT · SIDESTEP · SLIPSTREAM* · STILL POINT
 
 
 ### Green — Soul (28)
@@ -40,13 +40,13 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ---
 
-## Eligible but unseated (41)
+## Eligible but unseated (40)
 
 Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
 **Red (20).** ANCHOR · BRACE · CLEAVE · CLIMB · DART · DIG IN · ENDURE · EXPEND · GORE · IRON GRIP · MAUL · OVERCOMMIT · OVERDRIVE · PLANT · REPAY · REPEL · RHYTHM BREAK · SHOULDER · STAUNCH · WARSONG
 
-**Blue (6).** DECODE · DRAIN · REDIRECT · SLIPSTREAM · TRACE · UNMAKE
+**Blue (5).** DECODE · DRAIN · REDIRECT · TRACE · UNMAKE
 
 **Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
 

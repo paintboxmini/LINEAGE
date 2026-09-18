@@ -25,7 +25,7 @@ Deal this card's Attack damage back to the attacker, works with effects like dea
 **(0) Debuff**
 Weak, Blind, Vulnerable, Staggered, Rooted, and stat reductions — the six effects Ward can prevent.
 
-**(6) Positive Status Effects**
+**(5) Positive Status Effects**
 Evade, Resist, Deadly, Protect, Anchored, Quick, and Immunity. A card that references this term by name (rather than listing them out) means all of these at once.
 
 **(17) Deadly**
