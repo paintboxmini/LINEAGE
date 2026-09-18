@@ -89,7 +89,7 @@ class Wheel:
         if token is acting and self.index(token) == 0:
             if amount > 0:
                 return self._shift_self_while_acting(token, amount)
-            return self._delay_past_the_end(token, -amount)
+            return self._delay_acting_token(token, -amount)
 
         # "Reshifting a token that already carries a pending skip or bonus
         # chip removes the pending chip."
@@ -163,24 +163,50 @@ class Wheel:
                 f'{"" if to == 1 else "s"} instead of {n - 1}'
                 + ('' if gap >= amount else ' (as soon as the wheel allows)'))
 
-    def _delay_past_the_end(self, token, laps):
+    def _delay_acting_token(self, token, delay):
         """A negative shift on whoever is acting — WAIT on yourself,
         RETALIATE or INTERRUPT on the attacker.
 
-        They have just acted, so they are already last and the ring has no
-        later slot to move them to. The delay is spent as skipped laps
-        instead: the token stays where it is and misses that many of its own
-        turns. One lap is one turn in the order, so -2 means the next two
-        times the marker reaches them, it passes them by.
+        The trap here is that a combatant on the marker's slot is at
+        position 0 and their *next* turn is at position n: they have just
+        acted, so everyone else goes before they come round again. Reading
+        their slot as their place in the queue says they are first when they
+        are last, and every shift then comes out backwards.
 
-        `rules/card-glossary.md`: "Where a shift would run past the end of
-        what the wheel can express, place a chip instead of changing the
-        movement." This is that chip, counted.
+        So the target is position `n + delay`, and the ring says it in two
+        parts: the token sits `delay` slots along, and is passed over once
+        when the marker first reaches it. At a table of four, where a turn
+        normally comes round after three others:
+
+            -1   the marker passes them, then B C D B — after 4
+            -2   after 5
+            -3   after 6
+
+        One more person goes before you for each point of delay, which is
+        what the card says and what the table expects to see. It is not a
+        lost turn: the turn arrives, later.
         """
+        n = len(self.slots)
+        # position = slot + laps * n, with the slot somewhere in the ring.
+        laps, slot = 1, delay
+        while slot > n - 1:
+            laps += 1
+            slot = delay - (laps - 1) * n
+        note = ''
+        if slot < 1:
+            # delay is an exact multiple of the table size, which the ring
+            # cannot say — the slot it needs is the marker's own. Land one
+            # short rather than one long.
+            laps -= 1
+            slot = n - 1
+            note = ' (one short — the ring cannot express that exact delay)'
+
+        if slot:
+            self._move(0, slot, clockwise=True)
         self.chips[token] = SKIP
         self.skips[token] = laps
-        return (f'{token} -{laps} → already last; skips their next '
-                f'{laps} turn{"" if laps == 1 else "s"}')
+        return (f'{token} -{delay} → acts after {n - 1 + delay} others '
+                f'instead of {n - 1}{note}')
 
     # ---- turn order -----------------------------------------------------
 

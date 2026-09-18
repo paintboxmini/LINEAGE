@@ -266,7 +266,7 @@ def self_shift_while_acting_is_not_a_bonus_turn():
     assert when_next(9) == 1, when_next(9)
 
 
-def when_next(w, token, depth=24):
+def when_next(w, token, depth=40):
     """How many other turns pass before `token` acts again."""
     cur, seq = token, []
     for _ in range(depth):
@@ -278,28 +278,47 @@ def when_next(w, token, depth=24):
     return seq.index(token) if token in seq else None
 
 
-def negative_self_shift_spends_the_delay_as_skipped_laps():
-    """A negative shift is later, and a combatant who has just acted is
-    already last — the ring has no later slot. The delay is spent as
-    skipped laps instead: -X means the next X times the marker reaches
-    them, it passes them by.
+def a_negative_shift_puts_one_more_person_in_front_per_point():
+    """The whole rule in one line: -X means X more turns happen before
+    yours. A combatant on the marker's slot has just acted, so their next
+    turn is n away, not 0 — read the slot as their place in the queue and
+    every shift comes out backwards.
 
-    WAIT's "-1, -2, or -3 to yourself (choose)" is what this is for, and
-    the three options have to be three different things."""
-    normal = when_next(Wheel(['a', 'b', 'c', 'd']), 'a')
-    assert normal == 3, normal
+    Drew's numbers, table of four, baseline after three others:
+        -1 after 4, -2 after 5, -3 after 6.
+    """
+    assert when_next(Wheel(['a', 'b', 'c', 'd']), 'a') == 3
 
-    seen = []
-    for amount in (-1, -2, -3):
+    for amount, expect in ((-1, 4), (-2, 5), (-3, 6)):
         w = Wheel(['a', 'b', 'c', 'd'])
         w.shift('a', amount, acting='a')
-        assert w.skips['a'] == -amount, (amount, w.skips)
-        assert not w.pending_bonus, w.pending_bonus
-        assert list(w.chips) == ['a'], w.chips      # nobody else is touched
-        got = when_next(w, 'a')
-        assert got > normal, (amount, got, normal)
-        seen.append(got)
-    assert seen == sorted(seen) and len(set(seen)) == 3, seen
+        assert not w.pending_bonus, (amount, w.pending_bonus)
+        assert list(w.chips) == ['a'], (amount, w.chips)
+        got = when_next(w, 'a', depth=40)
+        assert got == expect, (amount, got, expect)
+
+
+def the_delay_scales_with_the_table():
+    """Not tuned to four. One more person per point, whatever the table."""
+    for n in (4, 5, 6):
+        toks = list('abcdef')[:n]
+        base = when_next(Wheel(list(toks)), 'a', depth=60)
+        assert base == n - 1, (n, base)
+        for amount in (-1, -2, -3):
+            w = Wheel(list(toks))
+            w.shift('a', amount, acting='a')
+            got = when_next(w, 'a', depth=60)
+            assert got == n - 1 - amount, (n, amount, got)
+
+
+def a_delay_the_ring_cannot_say_lands_short():
+    """A delay equal to the table size needs the marker's own slot, which
+    is the one slot the ring cannot give. It lands one short and the
+    caller is told so, rather than silently landing one long."""
+    w = Wheel(['a', 'b', 'c'])
+    note = w.shift('a', -3, acting='a')
+    assert 'one short' in note, note
+    assert when_next(w, 'a', depth=40) == 4, when_next(w, 'a', depth=40)
 
 
 def a_bystander_still_earns_the_bonus():
@@ -324,25 +343,26 @@ def a_defender_shifting_the_attacker_costs_only_the_attacker():
         w.shift('att', amount, acting='att')
         assert not w.pending_bonus, (amount, w.pending_bonus)
         assert list(w.chips) == ['att'], (amount, w.chips)
-        assert w.skips['att'] == -amount, (amount, w.skips)
-        # Everyone else keeps their place and their turn.
-        assert w.order() == ['att', 'def', 'c', 'd'], w.order()
-        assert when_next(w, 'def') == 0, 'the defender should act next'
+        # Everyone else keeps their turn; only the attacker is delayed.
+        assert when_next(w, 'att', depth=40) == 3 - amount, (amount,)
+        for other in ('def', 'c', 'd'):
+            assert when_next(w, other, depth=40) is not None, other
 
 
-def a_skipped_lap_is_spent_one_at_a_time():
-    """Three skips is three misses, not one chip that never clears."""
-    w = Wheel(['a', 'b', 'c'])
-    w.shift('a', -3, acting='a')
+def the_chip_clears_and_the_turn_arrives():
+    """A delayed turn is late, not lost. The chip is spent when the marker
+    first reaches them and the combatant acts normally from then on."""
+    w = Wheel(['a', 'b', 'c', 'd'])
+    w.shift('a', -2, acting='a')
     cur, seq = 'a', []
-    for _ in range(14):
+    for _ in range(20):
         nxt = w.advance(cur)
         while nxt is None:
             nxt = w.advance(w.order()[0])
         seq.append(nxt)
         cur = nxt
-    assert seq.count('a') >= 1, seq
-    assert 'a' not in w.chips, ('the chip outlived its laps', w.chips)
+    assert seq.count('a') >= 2, ('the turn never came back', seq)
+    assert 'a' not in w.chips, ('the chip outlived its delay', w.chips)
 
 
 def shifting_someone_who_is_not_acting_still_works():
@@ -376,14 +396,17 @@ if __name__ == '__main__':
         case('the ring keeps everyone, once each', ring_stays_intact),
         case('shifting yourself on your own turn is not a bonus turn',
              self_shift_while_acting_is_not_a_bonus_turn),
-        case('a negative shift on yourself is spent as skipped laps',
-             negative_self_shift_spends_the_delay_as_skipped_laps),
+        case('a negative shift puts one more person in front per point',
+             a_negative_shift_puts_one_more_person_in_front_per_point),
+        case('the delay scales with the table', the_delay_scales_with_the_table),
+        case('a delay the ring cannot say lands short',
+             a_delay_the_ring_cannot_say_lands_short),
         case('a bystander crossing the marker still earns one',
              a_bystander_still_earns_the_bonus),
         case('a defender shifting the attacker costs only the attacker',
              a_defender_shifting_the_attacker_costs_only_the_attacker),
-        case('a skipped lap is spent one at a time',
-             a_skipped_lap_is_spent_one_at_a_time),
+        case('the chip clears and the turn arrives',
+             the_chip_clears_and_the_turn_arrives),
         case('shifting someone who is not acting still works',
              shifting_someone_who_is_not_acting_still_works),
     ]
