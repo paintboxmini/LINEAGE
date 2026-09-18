@@ -140,6 +140,18 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 ---
 
+## Still open, as of 2026-09-18
+
+**How the three of them are introduced and grouped is not settled**, and the convergence device above is a device rather than a decision. It works if the players want to be assembled; it is not the only thing that can. Drew is asking them tonight what their characters want, which is the right order to do it in — this file should follow that conversation rather than lead it.
+
+**Chris's route to the Nest is open, and his origin has moved.** What is written in `campaign/chris.md` says he was found and taken in at Briarwatch, tentatively by Iron. Drew's account now has him found by **a man working at an academy built into the side of the Abyssal Ruins** — an institution studying what is in the crater, which does not exist anywhere in this repo yet. Those are two different beginnings and only one of them can be the one that happened.
+
+*Not resolved here on purpose.* `campaign/` belongs to the player it is about, the Briarwatch version was explicitly tentative, and the academy is Drew's to write or not. What is worth flagging is only that **the academy is load-bearing if it is real**: it puts a body of scholars permanently at the site of the Central Gateway, which is the ground the campaign's largest external threat is aimed at (`places/abyssal-ruins.md`, `quests/war-engine.md`). A person who works there is a very different finder than a farmer at Briarwatch, and it changes what Chris knows before session one starts.
+
+**The option to tie Chris's backstory to Kevin's is understood to be closed** unless the table reopens it.
+
+---
+
 ## Related Documents
 
 - `places/vultures-nest.md` — the town, the Compact, the Entry text
