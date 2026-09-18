@@ -50,13 +50,16 @@ wheel, drawing to hand size, range legality, the Blind/Evade checks and
 their resolution order, the RPS reveal, the damage pipeline, Collapse and
 death, and positioning.
 
-Card Effects are read by `effects.py`. Roughly two thirds of the core
+Card Effects are read by `effects.py`. Roughly three quarters of the core
 pool's Effect and Defense Effect halves compile into operations the engine
 runs — grants and their stacking, healing and HP costs, damage, draw,
 discard, Exile, Scry, movement, Initiative Shift, stat drain, Counter
-Attack, Lifesteal, buff stripping and stealing, Wound and Exhaust
-insertion, and the gates around them (Anchored, clean-win-only, HP
-thresholds).
+Attack, Lifesteal, Rushdown, buff stripping and stealing, Wound and
+Exhaust insertion, modal cards where only the chosen branch runs, optional
+costs, and the gates around them (Anchored, clean-win-only, HP thresholds).
+
+Run `python3 effects.py` for the live figure; it was 237/319 (74%) when this
+paragraph was written, and 200/247 (81%) across the beginner tier alone.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly

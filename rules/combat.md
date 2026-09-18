@@ -257,6 +257,8 @@ Melee requires both characters to be in the Frontline. Any other combination is 
 
 The Move Position action's other shape, not a separate action of its own: closing the distance on a Backline **enemy** yourself, instead of shifting between Frontline and Backline — not moving them, moving toward them. Wherever you land, that's Frontline now, for both of you: the fighting bent to include them, not a teleport. Cannot target allies. You must already be in the Frontline yourself — Rushdown extends a fight you're already inside, not a first step into one from nothing. See Move Position in the action table, above.
 
+**Rooted and Rushdown.** Rooted cancels a Rushdown you make, the same as any other movement of your own, and is spent doing it (`rules/card-glossary.md`, Rooted). It does **not** save the target from being caught up in one: they did not change position, the line did. Their Rooted is still there and still unspent afterward. Being reached is not the same as being moved.
+
 ### Interact & Position
 
 Position determines what's within reach. A character can only interact with objects that the fiction places near them. The GM calls it based on where things are — a lever at the center of the room favors Frontline characters, a mechanism on the back wall favors Backline. Neither position has a blanket advantage; the environment decides.

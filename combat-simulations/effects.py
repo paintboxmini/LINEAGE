@@ -50,6 +50,13 @@ STATUS_RE = '|'.join(STATUS_WORDS)
 SELF, OPPONENT, ALLY, ALL_ALLIES, ALL_ENEMIES, PARTY, ANY = (
     'self', 'opponent', 'ally', 'all_allies', 'all_enemies', 'party', 'any')
 
+# Narrower shapes a card can name.
+ALLIES_HERE = 'allies_here'          # allies sharing your position
+FRONT_ENEMIES = 'front_enemies'      # every enemy in the Frontline
+OTHER_ENEMY = 'other_enemy'          # a random enemy that is not the defender
+SELF_AND_ALLY = 'self_and_ally'      # "you and target ally each ..."
+
+
 # A clause with no subject of its own inherits the last one named in the
 # same half. "Target ally heals 4 and draws 1" draws for the ally, not for
 # the caster; "Scry 2, then draw 1" is both the caster, because the caster
@@ -78,6 +85,11 @@ class Context:
         self.rng = rng
         self.log = log
         self.agent = agent or getattr(actor, '_agent', None)
+        # One half names its target once. "Target ally heals 4 and draws 1"
+        # is one ally doing both, so the choice is made on the first clause
+        # and reused by the rest — otherwise a human is asked twice and can
+        # answer differently, which the card does not allow.
+        self._picked = {}
 
     def resolve(self, spec, prompt='Target'):
         """A target spec to a list of combatants."""
@@ -91,18 +103,36 @@ class Context:
             return [self.actor] + list(self.allies)
         if spec == ALL_ENEMIES:
             return list(self.enemies)
+        if spec == ALLIES_HERE:
+            return [a for a in self.allies if a.position == self.actor.position]
+        if spec == FRONT_ENEMIES:
+            from engine import FRONT
+            return [e for e in self.enemies if e.position == FRONT]
+        if spec == OTHER_ENEMY:
+            rest = [e for e in self.enemies if e is not self.opponent]
+            if not rest:
+                return []
+            rng = self.rng or __import__('random')
+            return [rng.choice(rest)]
+        if spec == SELF_AND_ALLY:
+            return [self.actor] + self.resolve(ALLY, prompt)
         if spec == ALLY:
             pool = self.allies or [self.actor]
-            return [self._ask(pool, prompt)]
+            return [self._ask(spec, pool, prompt)]
         if spec == ANY:
             pool = [self.actor] + self.allies + self.enemies
-            return [self._ask(pool, prompt)]
+            return [self._ask(spec, pool, prompt)]
         return []
 
-    def _ask(self, pool, prompt):
+    def _ask(self, spec, pool, prompt):
+        if spec in self._picked:
+            return self._picked[spec]
         if len(pool) == 1 or self.agent is None:
-            return pool[0]
-        return self.agent.choose_target(self.actor, pool, prompt)
+            choice = pool[0]
+        else:
+            choice = self.agent.choose_target(self.actor, pool, prompt)
+        self._picked[spec] = choice
+        return choice
 
 
 # ---- ops ---------------------------------------------------------------
@@ -506,6 +536,84 @@ class HealByStat(Op):
             ctx.log(f'  {who.name} heals {amount} ({who.hp}/{who.max_hp} HP).')
 
 
+class Choose(Op):
+    """A card that offers a menu. The holder picks one branch and only that
+    branch runs — CHANNEL, STILL POINT, HASTEN, WAIT."""
+
+    def __init__(self, branches, labels):
+        self.branches, self.labels = branches, labels
+
+    def apply(self, ctx):
+        i = 0
+        if ctx.agent is not None and len(self.branches) > 1:
+            pick = ctx.agent.choose_option(ctx.actor, list(self.labels), 'Choose one')
+            i = self.labels.index(pick) if pick in self.labels else 0
+        ctx.log(f'  chooses: {self.labels[i]}')
+        for op in self.branches[i]:
+            op.apply(ctx)
+
+
+class MayPay(Op):
+    """An optional cost with an attached rider — CONSUME's Exile. Declined
+    costs nothing and grants nothing."""
+
+    def __init__(self, cost, gain, label):
+        self.cost, self.gain, self.label = cost, gain, label
+
+    def apply(self, ctx):
+        if ctx.agent is not None and not ctx.agent.choose_yes_no(ctx.actor, self.label):
+            return
+        if not ctx.actor.hand:
+            ctx.log('  nothing in hand to pay with.')
+            return
+        for op in self.cost + self.gain:
+            op.apply(ctx)
+
+
+class Rushdown(Op):
+    """`rules/combat.md`, Positioning -> Rushdown.
+
+    Not a move behind their line and not a shove of theirs. The line of
+    conflict is a relative thing — where each combatant stands in relation
+    to it, not a fixed place on a map — so closing on a Backline enemy
+    redraws the line to sit between the two of you. Both of you are
+    Frontline afterwards because that is what the line now means.
+
+    Which is why the target's own Rooted does not stop it: they never
+    changed position. The line came to them. The mover's Rooted does stop
+    it, the same as any other movement of their own.
+    """
+
+    def apply(self, ctx):
+        from engine import FRONT
+        target = ctx.opponent
+        if target is None:
+            return
+        if ctx.actor.position != FRONT:
+            ctx.log(f'  {ctx.actor.name} must be Frontline to Rushdown.')
+            return
+        if ctx.actor.rooted > 0:
+            ctx.actor.rooted -= 1
+            ctx.log(f'  {ctx.actor.name} is Rooted — the Rushdown is cancelled.')
+            return
+        if target.position == FRONT:
+            return
+        target._position = FRONT          # the line moved, they did not
+        target.break_anchors(ctx.log, reason='the line closed on them')
+        ctx.log(f'  {ctx.actor.name} closes — the Frontline is between them '
+                f'and {target.name} now.')
+
+
+class ReturnToHand(Op):
+    """FOCUS: the card comes back instead of going to the discard. _finish
+    discards it after the Effect runs, so it is marked and skipped there."""
+
+    def apply(self, ctx):
+        if ctx.card is not None:
+            ctx.return_card = True
+            ctx.log(f'  {ctx.card.name} returns to hand.')
+
+
 # ---- the reader --------------------------------------------------------
 #
 # A half is read left to right. Each rule below consumes a prefix of the
@@ -547,6 +655,10 @@ WHO = {
     'target': OPPONENT,
     'each enemy': ALL_ENEMIES, 'every enemy': ALL_ENEMIES,
     'all enemies': ALL_ENEMIES, 'target enemy': OPPONENT,
+    'they': INHERIT, 'all allies in your position': ALLIES_HERE,
+    'all frontline enemies': FRONT_ENEMIES,
+    'a random enemy other than the defender': OTHER_ENEMY,
+    'you and target ally': SELF_AND_ALLY,
     'target ally in your position': ALLY, 'an enemy': OPPONENT,
 }
 
@@ -556,11 +668,22 @@ def _who(word):
 
 
 RULES = []
+MENU_RULES = []
 
 
 def rule(pattern):
     def wrap(fn):
         RULES.append((re.compile(pattern, re.I), fn))
+        return fn
+    return wrap
+
+
+def menu(pattern):
+    """Checked before RULES. A menu must be read whole — otherwise an
+    ordinary rule consumes its first branch and the rest fails to parse,
+    which is how STILL POINT and HASTEN were being lost."""
+    def wrap(fn):
+        MENU_RULES.append((re.compile(pattern, re.I), fn))
         return fn
     return wrap
 
@@ -793,6 +916,7 @@ def compile_half(text):
         return [Anchored(inner, body)] if inner else None
 
     gate = None
+    gate_subject = None
     for pattern, test, label in GATES:
         g = pattern.match(s)
         if g:
@@ -804,6 +928,8 @@ def compile_half(text):
                     (ctx.resolve(ALLY)[0] if who == 'ally' else ctx.actor).hp <= n
                 )))(n, who)
             gate = (test, label)
+            if 'ally' in label:
+                gate_subject = ALLY
             break
 
     ops = []
@@ -813,7 +939,7 @@ def compile_half(text):
             s = s[sep.end():]
             if not s:
                 break
-        for pattern, fn in RULES:
+        for pattern, fn in MENU_RULES + RULES:
             m = pattern.match(s)
             if not m:
                 continue
@@ -829,7 +955,7 @@ def compile_half(text):
     if not ops:
         return None
 
-    subject = SELF
+    subject = gate_subject or SELF
     for op in ops:
         target = getattr(op, 'target', None)
         if target == INHERIT:
@@ -852,11 +978,16 @@ def _r_shift2(m):
 
 
 @rule(r'^(?:move|push) (?:the\s+)?(target|defender|attacker|any target) to '
-      r'(?:the\s+)?(?:backline|other position|position of your choice)')
+      r'(?:the\s+)?(backline|other position|position of your choice)')
 def _r_push(m):
+    """"To the backline" is a destination. "The other position" is a flip,
+    which is not the same thing when they are already in the Backline."""
     from engine import BACK
     who = _who(m.group(1))
-    return [Move(who, BACK)] if who else None
+    if not who:
+        return None
+    dest = BACK if m.group(2).lower() == 'backline' else None
+    return [Move(who, dest)]
 
 
 @rule(r'^move self to any position')
@@ -911,7 +1042,145 @@ def _r_forget(m):
     return [ExileCardInPlay()]
 
 
-# ---- coverage ----------------------------------------------------------
+# -- third pass: the cheap tail ------------------------------------------
+
+@rule(rf'^(?:and\s+)?(?:they\s+)?gains?\s+((?:{STATUS_RE})(?:[\s,]+(?:and\s+)?(?:{STATUS_RE})(?:\s+\d+|\s+twice)?)*(?:\s+\d+|\s+twice)?)')
+def _r_gain_inherit(m):
+    return [Grant(INHERIT, s_, n) for s_, n in (_statuses(m.group(1)) or [])] or None
+
+
+@rule(rf'^all allies in your position gains?\s+({STATUS_RE})')
+def _r_gain_here(m):
+    return [Grant(ALLIES_HERE, m.group(1).lower())]
+
+
+@rule(rf'^apply ({STATUS_RE}) to all frontline enemies, and to yourself')
+def _r_smokescreen(m):
+    return [Grant(FRONT_ENEMIES, m.group(1).lower()), Grant(SELF, m.group(1).lower())]
+
+
+@rule(rf'^apply ({STATUS_RE}) to (any target|target ally|all allies)')
+def _r_apply_to(m):
+    who = _who(m.group(2))
+    return [Grant(who, m.group(1).lower())] if who else None
+
+
+@rule(r'^deal\s+(\d+)\s+unpreventable damage to a random enemy other than the defender')
+def _r_splash(m):
+    return [Damage(OTHER_ENEMY, int(m.group(1)), unpreventable=True)]
+
+
+@rule(r'^(?:and\s+)?may change positions?')
+def _r_may_move_inherit(m):
+    return [Move(INHERIT, optional=True)]
+
+
+@rule(r'^all allies may change positions?')
+def _r_allies_may_move(m):
+    return [Move(ALL_ALLIES, optional=True)]
+
+
+@rule(r'^you and target ally each scry\s+(\d+)')
+def _r_pair_scry(m):
+    return [Scry(SELF_AND_ALLY, int(m.group(1)))]
+
+
+@rule(r'^(?:each\s+)?draws?\s+(\d+)')
+def _r_pair_draw(m):
+    return [Draw(INHERIT, int(m.group(1)))]
+
+
+@rule(r'^rushdown')
+def _r_rushdown(m):
+    return [Rushdown()]
+
+
+@rule(r'^return this card to your hand')
+def _r_return(m):
+    return [ReturnToHand()]
+
+
+@rule(r'^move with them')
+def _r_move_along(m):
+    return [Move(SELF)]
+
+
+@rule(r'^if this is a tie, deal\s+(\d+) instead')
+def _r_tie_instead(m):
+    """DEAD HEAT: the tie branch replaces the flat damage above it rather
+    than adding to it, so it undoes the difference."""
+    return [Gated(lambda ctx: ctx.outcome == 'tie',
+                  [Damage(OPPONENT, int(m.group(1)) - 2, unpreventable=False)],
+                  'tie tops it up')]
+
+
+# -- modal cards: a menu where only the chosen branch runs ---------------
+
+def _branches(text, sep=r',\s*or\s+|\s+or\s+|,\s*'):
+    """Split a menu into branches, compiling each. All or nothing: a menu
+    with one unreadable option is not a menu this can offer."""
+    parts = [p.strip().rstrip('.') for p in re.split(sep, text) if p.strip()]
+    out, labels = [], []
+    for part in parts:
+        ops = compile_half(part)
+        if ops is None:
+            return None, None
+        out.append(ops)
+        labels.append(part)
+    return (out, labels) if len(out) > 1 else (None, None)
+
+
+@menu(r'^choose one for target ally\s*[—-]+\s*(.+?)\.?$')
+def _r_channel(m):
+    """CHANNEL — the menu is for the ally, so each branch is read as theirs."""
+    body = m.group(1)
+    parts = [p.strip() for p in re.split(r',\s*or\s+|,\s*', body) if p.strip()]
+    branches, labels = [], []
+    for part in parts:
+        ops = compile_half(part)
+        if ops is None:
+            return None
+        for op in ops:
+            if getattr(op, 'target', None) in (SELF, INHERIT):
+                op.target = ALLY
+        branches.append(ops)
+        labels.append(part)
+    return [Choose(branches, labels)] if len(branches) > 1 else None
+
+
+@menu(r'^scry 1, gain ward, or apply weak to any target')
+def _r_still_point(m):
+    return [Choose([[Scry(SELF, 1)], [Grant(SELF, 'ward')], [Grant(ANY, 'weak')]],
+                   ['Scry 1', 'gain Ward', 'apply Weak to any target'])]
+
+
+@menu(r'^apply initiative shift \+1 to yourself, or -1 to the attacker \(choose\)')
+def _r_hasten(m):
+    return [Choose([[Shift(SELF, 1)], [Shift(OPPONENT, -1)]],
+                   ['Initiative Shift +1 to yourself',
+                    'Initiative Shift -1 to the attacker'])]
+
+
+@menu(r'^apply initiative shift -1, -2, or -3 to yourself \(choose\)')
+def _r_wait(m):
+    return [Choose([[Shift(SELF, -1)], [Shift(SELF, -2)], [Shift(SELF, -3)]],
+                   ['-1', '-2', '-3'])]
+
+
+@menu(r'^you may exile one card from your own hand to give the (?:defender|attacker) '
+      r'weak and blind')
+def _r_consume_cost(m):
+    return [MayPay([Exile(SELF, 1, 'hand')],
+                   [Grant(OPPONENT, 'weak'), Grant(OPPONENT, 'blind')],
+                   'Exile a card to apply Weak and Blind')]
+
+
+# ---- coverage ------------------------------------------------------
+#
+# Keep this block last. @rule registers at import time, so a rule
+# defined below the __main__ guard is not registered when this file is
+# run as a script — it silently does not count.
+# ---- ----------------------------------------------------------
 
 def coverage(pool):
     """(compiled, narrated) halves, for `python3 effects.py`."""

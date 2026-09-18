@@ -212,6 +212,119 @@ def test_pool_compiles_or_narrates():
     check('no half raises while being read', not broken, broken[:3])
 
 
+# ---- the cheap tail -----------------------------------------------------
+
+def test_one_target_per_half():
+    print('\nA half names its target once')
+    a, b = duo()
+    m1 = Combatant('M1', 3, 3, 3, deck=[], position=FRONT, team='party')
+    m2 = Combatant('M2', 3, 3, 3, deck=[], position=FRONT, team='party')
+    m1.hp, m2.hp = 5, 20
+    set_table([a, m1, m2, b])
+
+    class Fickle:
+        n = 0
+        def choose_target(self, me, opts, prompt):
+            Fickle.n += 1
+            return opts[Fickle.n - 1]     # answers differently every time
+
+    ops = fx.compile_half('Target ally heals 4 and draws 1.')
+    ctx = fx.Context(a, b, [m1, m2], [b], None, 'attacker wins',
+                     rng=random.Random(0), log=QUIET, agent=Fickle())
+    for op in ops:
+        op.apply(ctx)
+    check('the agent is asked once, not once per clause', Fickle.n == 1, Fickle.n)
+    check('the heal and the draw land on the same ally',
+          m1.hp == 9 and m2.hp == 20, (m1.hp, m2.hp))
+
+
+def test_rushdown():
+    print('\nRushdown — the line of conflict moves, the target does not')
+    a, b = duo()
+    b.set_position(BACK)
+    run('Rushdown.', a, b)
+    check('the line redraws to include them', b.position == FRONT, b.position)
+    check('the mover stays where they are', a.position == FRONT, a.position)
+
+    c, e = duo()
+    e.set_position(BACK)
+    e.rooted = 1
+    run('Rushdown.', c, e)
+    check("the target's own Rooted does not stop it — they never moved",
+          e.position == FRONT and e.rooted == 1, (e.position, e.rooted))
+
+    f, g = duo()
+    g.set_position(BACK)
+    f.rooted = 1
+    run('Rushdown.', f, g)
+    check("the mover's Rooted does stop it, and is spent",
+          g.position == BACK and f.rooted == 0, (g.position, f.rooted))
+
+    h, i = duo()
+    h.set_position(BACK)
+    i.set_position(BACK)
+    run('Rushdown.', h, i)
+    check('you must already be Frontline to close', i.position == BACK, i.position)
+
+
+def test_modal():
+    print('\nModal cards run one branch, not all of them')
+    a, b = duo()
+    mate = Combatant('M', 3, 3, 3, deck=[], position=FRONT, team='party')
+    mate.hp = 10
+    set_table([a, mate, b])
+
+    class PickSecond:
+        def choose_target(self, me, opts, prompt): return opts[0]
+        def choose_option(self, me, opts, prompt): return opts[1]
+        def choose_yes_no(self, me, prompt): return True
+
+    ops = fx.compile_half('Choose one for target ally — heal 4, gain Resist, '
+                          'or gain Deadly.')
+    ctx = fx.Context(a, b, [mate], [b], None, 'attacker wins',
+                     rng=random.Random(0), log=QUIET, agent=PickSecond())
+    for op in ops:
+        op.apply(ctx)
+    check('the chosen branch runs', mate.resist == 1, mate.resist)
+    check('the branches not chosen do not',
+          mate.hp == 10 and mate.deadly == 0, (mate.hp, mate.deadly))
+
+
+def test_optional_cost():
+    print('\nAn optional cost is declinable, and pays nothing when declined')
+    pool = cardlib.core_pool()
+    a, b = duo()
+    a.hand = list(pool[:2])
+
+    class No:
+        def choose_target(self, me, opts, prompt): return opts[0]
+        def choose_yes_no(self, me, prompt): return False
+
+    ops = fx.compile_half('Lifesteal. You may Exile one card from your own hand '
+                          'to give the defender Weak and Blind.')
+    ctx = fx.Context(a, b, [], [b], None, 'attacker wins', damage_dealt=4,
+                     rng=random.Random(0), log=QUIET, agent=No())
+    for op in ops:
+        op.apply(ctx)
+    check('declining costs no card', len(a.hand) == 2, len(a.hand))
+    check('and grants nothing', b.weak == 0 and b.blind == 0, (b.weak, b.blind))
+    check('the rest of the half still ran (Lifesteal)', a.hp > 0)
+
+
+def test_position_scoped():
+    print('\nPosition-scoped targets')
+    a, b = duo()
+    here = Combatant('Here', 3, 3, 3, deck=[], position=FRONT, team='party')
+    there = Combatant('There', 3, 3, 3, deck=[], position=BACK, team='party')
+    set_table([a, here, there, b])
+    ctx = fx.Context(a, b, [here, there], [b], None, 'attacker wins',
+                     rng=random.Random(0), log=QUIET)
+    for op in fx.compile_half('All allies in your position gain Quick.'):
+        op.apply(ctx)
+    check('an ally sharing your position is included', here.quick == 1, here.quick)
+    check('an ally in the other position is not', there.quick == 0, there.quick)
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -222,6 +335,11 @@ if __name__ == '__main__':
     test_costs_are_unpreventable()
     test_statloss()
     test_status_cards()
+    test_one_target_per_half()
+    test_rushdown()
+    test_modal()
+    test_optional_cost()
+    test_position_scoped()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

@@ -338,27 +338,32 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     """Apply the outcome, run whatever of each half is executable, then
     discard both cards."""
     dealt = 0
+    returned_atk = returned_def = False
     if outcome == Outcome.ATTACKER:
         dmg = roll_damage(attacker, atk_card, rng)
         dealt = defender.take(dmg, source=attacker, log=log)
         if defender.thorns and (atk_card.range or '').strip().lower().startswith('melee'):
             log(f'{defender.name}\'s Thorns bites back.')
             attacker.take(defender.thorns, unpreventable=True, log=log)
-        _run(atk_card, 'effect', attacker, defender, outcome, dealt, log, rng,
-             wheel, def_card)
+        returned_atk = _run(atk_card, 'effect', attacker, defender, outcome,
+                            dealt, log, rng, wheel, def_card)
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
-        _run(def_card, 'defense_effect', defender, attacker, outcome, 0, log,
-             rng, wheel, atk_card)
+        returned_def = _run(def_card, 'defense_effect', defender, attacker,
+                            outcome, 0, log, rng, wheel, atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
-        _run(atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
-             wheel, def_card)
-        _run(def_card, 'defense_effect', defender, attacker, outcome, 0, log,
-             rng, wheel, atk_card)
+        returned_atk = _run(atk_card, 'effect', attacker, defender, outcome,
+                            0, log, rng, wheel, def_card)
+        returned_def = _run(def_card, 'defense_effect', defender, attacker,
+                            outcome, 0, log, rng, wheel, atk_card)
 
-    attacker.discard.append(atk_card)
-    if def_card is not None:
+    # FOCUS returns itself to hand instead of discarding. Tracked here, not
+    # on the Card: build_deck draws from a shared pool, so one Card object is
+    # in several decks at once and must never carry per-fight state.
+    if not returned_atk:
+        attacker.discard.append(atk_card)
+    if def_card is not None and not returned_def:
         defender.discard.append(def_card)
     return outcome
 
@@ -381,17 +386,21 @@ def compiled(card, half):
 def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
          opponent_card=None):
     """Run one half. Anything that did not compile is read out instead,
-    which is what every card did before effects.py existed."""
+    which is what every card did before effects.py existed.
+
+    Returns True when the card returned itself to hand instead of being
+    discarded.
+    """
     if card is None:
-        return
+        return False
     text = getattr(card, half, None)
     if not text or text.strip().lower() in ('none.', 'none'):
-        return
+        return False
     label = 'Effect' if half == 'effect' else 'Defense Effect'
     ops = compiled(card, half)
     if ops is None:
         log(f'  {label}: {text}')
-        return
+        return False
     log(f'  {label}: {text}')
     ctx = fx.Context(actor, opponent,
                      allies=[c for c in _TABLE if c.team == actor.team and c is not actor],
@@ -400,8 +409,13 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
                      rng=rng, log=log)
     ctx.wheel = wheel
     ctx.opponent_card = opponent_card
+    ctx.return_card = False
     for op in ops:
         op.apply(ctx)
+    if ctx.return_card:
+        actor.hand.append(card)
+        return True
+    return False
 
 
 # Everyone in the current fight. Set by play.py before the first exchange so
