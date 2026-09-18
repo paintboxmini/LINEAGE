@@ -440,6 +440,108 @@ def test_defense_effects_silenced():
           returned is False and exiled is False)
 
 
+# ---- damage this attack carries -----------------------------------------
+
+def exchange(atk_name, a, b, seed=0, outcome_card=None):
+    """One full attacker-wins exchange, returning the damage b took."""
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    card = pool[atk_name]
+    before = b.hp
+    engine._finish(engine.Outcome.ATTACKER, a, b, card, outcome_card, QUIET,
+                   random.Random(seed), None)
+    return before - b.hp
+
+
+def test_flat_bonus_lands():
+    print('\nA damage bonus reaches the roll it belongs to')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    # MAUL: "Gain Deadly. Deal +2 damage this attack." Body 3 + d6, so the
+    # floor without the bonus is 4 and with it is 6.
+    lows = []
+    for seed in range(40):
+        a, b = duo()
+        b.hp = 200
+        lows.append(exchange('MAUL', a, b, seed))
+    check('every roll clears the un-bonused floor', min(lows) >= 3 + 1 + 2,
+          min(lows))
+    check('Deadly was banked, not spent on this attack',
+          duo()[0].deadly == 0)
+
+    a, b = duo()
+    b.hp = 200
+    exchange('MAUL', a, b, 0)
+    check('the attacker holds the Deadly afterwards', a.deadly == 1, a.deadly)
+
+
+def test_gore_is_conditional():
+    print('\nGORE only adds its die against a Frontline target')
+    front, back = [], []
+    for seed in range(60):
+        a, b = duo()
+        b.hp = 300
+        front.append(exchange('GORE', a, b, seed))
+        a2, b2 = duo()
+        b2.hp = 300
+        b2.set_position(BACK)
+        back.append(exchange('GORE', a2, b2, seed))
+    check('a Frontline target takes more on average',
+          sum(front) / len(front) > sum(back) / len(back),
+          (sum(front) / len(front), sum(back) / len(back)))
+    check('the Backline case is the plain roll', max(back) <= 3 + 6, max(back))
+
+
+def test_explosion_changes_the_tail():
+    print("\nGAMBLER'S RUIN lengthens the tail without moving the floor")
+    rolls = []
+    for seed in range(200):
+        a, b = duo()
+        b.hp = 500
+        rolls.append(exchange("GAMBLER'S RUIN", a, b, seed))
+    plain = []
+    for seed in range(200):
+        a, b = duo()
+        b.hp = 500
+        plain.append(exchange('STRIKE', a, b, seed))
+    check('it can roll higher than the die allows on its own',
+          max(rolls) > 3 + 8, max(rolls))
+    check('and the floor is unchanged', min(rolls) >= 3 + 1, min(rolls))
+
+
+def test_cleave_splashes():
+    print('\nCLEAVE reaches the enemies beside the defender')
+    import engine
+    a, b = duo()
+    beside = Combatant('Beside', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    away = Combatant('Away', 3, 3, 3, deck=[], position=BACK, team='foes')
+    set_table([a, b, beside, away])
+    b.hp = beside.hp = away.hp = 100
+    dealt = exchange('CLEAVE', a, b, 1)
+    check('the defender takes the whole hit', dealt > 0, dealt)
+    check('an enemy in their position takes a share',
+          100 - beside.hp == dealt // 2 or 100 - beside.hp > 0,
+          (dealt, 100 - beside.hp))
+    check('an enemy elsewhere takes none', away.hp == 100, away.hp)
+
+
+def test_plant_reads_last_turn():
+    print('\nPLANT pays for having held position')
+    held, moved = [], []
+    for seed in range(40):
+        a, b = duo()
+        b.hp = 300
+        a.moved_last_turn = False
+        held.append(exchange('PLANT', a, b, seed))
+        a2, b2 = duo()
+        b2.hp = 300
+        a2.moved_last_turn = True
+        moved.append(exchange('PLANT', a2, b2, seed))
+    check('holding position pays +4',
+          all(h - m == 4 for h, m in zip(held, moved)),
+          list(zip(held, moved))[:3])
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -462,6 +564,11 @@ if __name__ == '__main__':
     test_grounding_stance()
     test_seed_is_placed()
     test_defense_effects_silenced()
+    test_flat_bonus_lands()
+    test_gore_is_conditional()
+    test_explosion_changes_the_tail()
+    test_cleave_splashes()
+    test_plant_reads_last_turn()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

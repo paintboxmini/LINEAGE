@@ -55,6 +55,7 @@ ALLIES_HERE = 'allies_here'          # allies sharing your position
 FRONT_ENEMIES = 'front_enemies'      # every enemy in the Frontline
 OTHER_ENEMY = 'other_enemy'          # a random enemy that is not the defender
 SELF_AND_ALLY = 'self_and_ally'      # "you and target ally each ..."
+SAME_POSITION_ENEMIES = 'enemies_here'   # enemies beside the defender
 
 
 # A clause with no subject of its own inherits the last one named in the
@@ -91,6 +92,15 @@ class Context:
         # answer differently, which the card does not allow.
         self._picked = {}
 
+        # Damage modifiers for the attack this half is attached to, written
+        # by the 'pre' ops and read by the roll.
+        self.dmg_bonus = 0
+        self.dmg_dice = []
+        self.dmg_mult = 1
+        self.explode = 0
+        self.damage_rolled = 0
+        self.phase = 'post'
+
     def resolve(self, spec, prompt='Target'):
         """A target spec to a list of combatants."""
         if spec == SELF:
@@ -108,6 +118,12 @@ class Context:
         if spec == FRONT_ENEMIES:
             from engine import FRONT
             return [e for e in self.enemies if e.position == FRONT]
+        if spec == SAME_POSITION_ENEMIES:
+            if self.opponent is None:
+                return []
+            return [e for e in self.enemies
+                    if e is not self.opponent
+                    and e.position == self.opponent.position]
         if spec == OTHER_ENEMY:
             rest = [e for e in self.enemies if e is not self.opponent]
             if not rest:
@@ -138,6 +154,21 @@ class Context:
 # ---- ops ---------------------------------------------------------------
 
 class Op:
+    #: 'pre' runs before this attack's damage is rolled, 'post' after it has
+    #: landed. Only ops that change the damage of the attack they are
+    #: attached to are 'pre' — MAUL grants Deadly *and* adds +2 to this
+    #: attack, and Deadly must stay 'post' or it would be spent on the very
+    #: roll it is meant to improve next time.
+    phase = 'post'
+
+    def run_phase(self, ctx, phase):
+        """Run this op if it belongs to `phase`. Containers override to pass
+        the question down — a Gated holding a damage modifier has to reach
+        the pre phase, or the modifier is written after the roll it was
+        meant to change."""
+        if self.phase == phase:
+            self.apply(ctx)
+
     def apply(self, ctx):
         raise NotImplementedError
 
@@ -502,12 +533,21 @@ class Gated(Op):
     def __init__(self, test, ops, label):
         self.test, self.ops, self.label = test, ops, label
 
-    def apply(self, ctx):
+    @property
+    def phase(self):
+        return 'pre' if any(op.phase == 'pre' for op in self.ops) else 'post'
+
+    def run_phase(self, ctx, phase):
+        if not any(op.phase == phase for op in self.ops):
+            return
         if self.test(ctx):
             for op in self.ops:
-                op.apply(ctx)
-        else:
+                op.run_phase(ctx, phase)
+        elif phase == 'post' or all(op.phase == 'pre' for op in self.ops):
             ctx.log(f'  ({self.label} — no effect.)')
+
+    def apply(self, ctx):
+        self.run_phase(ctx, 'post')
 
 
 class Narrate(Op):
@@ -612,6 +652,11 @@ class Choose(Op):
     def __init__(self, branches, labels):
         self.branches, self.labels = branches, labels
 
+    @property
+    def phase(self):
+        return 'pre' if any(o.phase == 'pre' for b in self.branches for o in b) \
+            else 'post'
+
     def apply(self, ctx):
         i = 0
         if ctx.agent is not None and len(self.branches) > 1:
@@ -628,6 +673,11 @@ class MayPay(Op):
 
     def __init__(self, cost, gain, label):
         self.cost, self.gain, self.label = cost, gain, label
+
+    @property
+    def phase(self):
+        return 'pre' if any(o.phase == 'pre' for o in self.cost + self.gain) \
+            else 'post'
 
     def apply(self, ctx):
         if ctx.agent is not None and not ctx.agent.choose_yes_no(ctx.actor, self.label):
@@ -681,6 +731,81 @@ class ReturnToHand(Op):
         if ctx.card is not None:
             ctx.return_card = True
             ctx.log(f'  {ctx.card.name} returns to hand.')
+
+
+class DamageBonus(Op):
+    """A flat change to this attack's damage — BURN BRIGHT, MAUL, PLANT."""
+    phase = 'pre'
+
+    def __init__(self, amount):
+        self.amount = amount
+
+    def apply(self, ctx):
+        ctx.dmg_bonus += self.amount
+        ctx.log(f'  {self.amount:+} damage on this attack.')
+
+
+class DamageDie(Op):
+    """An extra die on this attack rather than a flat number — GORE."""
+    phase = 'pre'
+
+    def __init__(self, sides):
+        self.sides = sides
+
+    def apply(self, ctx):
+        ctx.dmg_dice.append(self.sides)
+        ctx.log(f'  +d{self.sides} on this attack.')
+
+
+class DamageMultiplier(Op):
+    phase = 'pre'
+
+    def __init__(self, factor):
+        self.factor = factor
+
+    def apply(self, ctx):
+        ctx.dmg_mult *= self.factor
+        ctx.log(f'  this attack deals {self.factor}x damage.')
+
+
+class Explode(Op):
+    """GAMBLER'S RUIN: every odd die result is rolled again and added, up to
+    a cap. Changes the shape of the distribution rather than its centre, so
+    it is a flag on the roll rather than a number added to it."""
+    phase = 'pre'
+
+    def __init__(self, max_rolls=3):
+        self.max_rolls = max_rolls
+
+    def apply(self, ctx):
+        ctx.explode = self.max_rolls
+        ctx.log(f'  odd dice explode (up to {self.max_rolls} extra rolls).')
+
+
+class Splash(Op):
+    """CLEAVE and CHAIN: a share of this attack's damage to someone else.
+
+    Measured off the damage this attack rolled, not off what survived the
+    defender's Resist — "its damage" is a property of the attack, and a
+    tough defender should not shrink what spills onto the person beside
+    them.
+    """
+
+    def __init__(self, target, fraction, rounding='down'):
+        self.target, self.fraction, self.rounding = target, fraction, rounding
+
+    def apply(self, ctx):
+        base = ctx.damage_rolled
+        if base <= 0:
+            return
+        share = base * self.fraction
+        amount = int(share + 0.999) if self.rounding == 'up' else int(share)
+        if amount <= 0:
+            return
+        for who in ctx.resolve(self.target, 'Splash onto'):
+            if who is ctx.opponent:
+                continue
+            who.take(amount, source=ctx.actor, log=ctx.log)
 
 
 # ---- the reader --------------------------------------------------------
@@ -949,8 +1074,12 @@ GATES = [
      lambda ctx: ctx.outcome == 'tie', 'tie only'),
     (re.compile(r'^if your HP is (\d+) or less,\s*', re.I),
      None, 'HP threshold'),
+    # Before the roll there is no damage to look at, so in the pre phase
+    # this reads as "this attack is landing" — which on the attacker-wins
+    # path it is. After the roll it reads literally.
     (re.compile(r'^if this attack deals damage,\s*', re.I),
-     lambda ctx: ctx.damage_dealt > 0, 'damage dealt'),
+     lambda ctx: (ctx.outcome == 'attacker wins' if getattr(ctx, 'phase', 'post') == 'pre'
+                  else ctx.damage_dealt > 0), 'damage dealt'),
     (re.compile(r'^if target ally\'s HP is (\d+) or less,\s*', re.I),
      None, 'ally HP threshold'),
 ]
@@ -1366,6 +1495,46 @@ def _r_rend(m):
     from engine import WOUND_INSTEAD
     return [Restrict(WOUND_INSTEAD, SELF, 'the next hit becomes a Wound',
                      expires='combat', uses=1)]
+
+
+# -- damage this attack carries -----------------------------------------
+
+@rule(r'^deal \+(\d+) damage this attack')
+def _r_flat_bonus(m):
+    return [DamageBonus(int(m.group(1)))]
+
+
+@menu(r'^if target is frontline, deal \+d(\d+) additional damage')
+def _r_gore(m):
+    from engine import FRONT
+    return [Gated(lambda ctx: ctx.opponent is not None
+                  and ctx.opponent.position == FRONT,
+                  [DamageDie(int(m.group(1)))], 'target is Frontline')]
+
+
+@menu(r'^if you did not reposition last turn, deal \+(\d+) damage')
+def _r_plant(m):
+    return [Gated(lambda ctx: not getattr(ctx.actor, 'moved_last_turn', False),
+                  [DamageBonus(int(m.group(1)))], 'held position last turn')]
+
+
+@menu(r'^every odd die result explodes.*?\(max (\d+) extra rolls\.?\)')
+def _r_gamblers_ruin(m):
+    """GAMBLER'S RUIN. The card's "if this attack deals damage" is stripped
+    as a gate before this runs, and in the pre phase that gate reads as
+    "this attack is landing"."""
+    return [Explode(int(m.group(1)))]
+
+
+@menu(r'^this attack also deals half its damage, rounded down, to every other '
+      r'enemy in the defender\'s position')
+def _r_cleave(m):
+    return [Splash(SAME_POSITION_ENEMIES, 0.5, 'down')]
+
+
+@menu(r'^attack deals half damage \(rounded up\) to an additional enemy')
+def _r_chain(m):
+    return [Splash(OTHER_ENEMY, 0.5, 'up')]
 
 
 # ---- coverage ------------------------------------------------------

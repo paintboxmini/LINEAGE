@@ -65,7 +65,7 @@ So: nine creatures at one-in-every-stat sounds like an even match against three 
 
 **Party size moves the line harder than anything else.** A fourth character shifts every threshold by a full creature and sometimes two — two Harlocks against three starting characters is a 43% win; against four it is 88%. Recompute the number when a seat fills or empties, and **never carry an encounter built for four into a session where one player didn't show up.**
 
-*The simulator does not execute card Effects, so all of this is a structural floor — dice, HP, range, the reveal, positioning and the wheel. Effects raise both sides. Read the 50% line as "a real fight," not as a measured coin flip.*
+*These numbers were first measured as a structural floor — dice, HP, range, the reveal, positioning and the wheel — back when the simulator did not execute card Effects, with the reasoning that Effects raise both sides. **The simulator runs most of them now, and the thresholds did not move.** Re-measured on 2026-09-18 at three thousand fights a row with roughly five in six Effect halves executing: every row landed within about a point of the old figure. That is the both-sides argument confirmed rather than assumed, and it is the reason to keep trusting the formula. Still read the 50% line as "a real fight" rather than a precise coin flip — a sixth of the pool is still narrated, and a party built around the cards that are not yet modelled will drift from this.*
 
 **Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 

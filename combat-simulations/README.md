@@ -50,13 +50,20 @@ wheel, drawing to hand size, range legality, the Blind/Evade checks and
 their resolution order, the RPS reveal, the damage pipeline, Collapse and
 death, and positioning.
 
-Card Effects are read by `effects.py`. Roughly three quarters of the core
+Card Effects are read by `effects.py`. Roughly five in six of the core
 pool's Effect and Defense Effect halves compile into operations the engine
 runs — grants and their stacking, healing and HP costs, damage, draw,
 discard, Exile, Scry, movement, Initiative Shift, stat drain, Counter
 Attack, Lifesteal, Rushdown, buff stripping and stealing, Wound and
 Exhaust insertion, modal cards where only the chosen branch runs, optional
 costs, and the gates around them (clean-win-only, HP thresholds).
+
+**An Effect gets a look in before the damage it modifies.** A half resolves
+in two phases: the ops that change this attack's damage run before the
+roll, and everything else after it has landed. The split matters on a card
+that does both — MAUL grants Deadly *and* adds +2 to this attack, and
+Deadly has to stay in the second phase or it would be spent on the very
+roll it is meant to improve next time.
 
 Effects that wait are held as **pending** state on the combatant, in two
 shapes that share one lifetime. A *reaction* carries ops and runs them when
@@ -67,8 +74,8 @@ moving, attacking, or triggering a Defense Effect. Expiry is measured
 against the turn of whoever played the card, not whoever is holding it,
 because that is what "until your next turn" says on the card.
 
-Run `python3 effects.py` for the live figure; it was 263/319 (82%) when this
-paragraph was written, and 218/247 (88%) across the beginner tier alone.
+Run `python3 effects.py` for the live figure; it was 270/319 (85%) when this
+paragraph was written, and 225/247 (91%) across the beginner tier alone.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly

@@ -44,6 +44,9 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     # anything else this turn reads it.
     who.expire_pending(log=log)
 
+    who.moved_last_turn = who.moved_this_turn
+    who.moved_this_turn = False
+
     skip = who.restriction(SKIP_DRAW)
     if skip is not None:
         who.spend_restriction(skip, log=log)

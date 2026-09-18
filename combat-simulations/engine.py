@@ -123,6 +123,10 @@ class Combatant:
         self.dead = False
         self.acted_last_turn = False
 
+        # PLANT asks whether you held position through your last turn.
+        self.moved_this_turn = False
+        self.moved_last_turn = False
+
     # ---- derived --------------------------------------------------------
 
     # ---- position ------------------------------------------------------
@@ -164,6 +168,7 @@ class Combatant:
                 log(f'  {self.name} is Rooted — the move is cancelled.')
             return False
         self._position = dest
+        self.moved_this_turn = True
         if log:
             log(f'  {self.name} moves to the {dest}.')
         self.break_anchors(log=log, reason='moved')
@@ -391,13 +396,36 @@ def d(sides, rng=random):
     return rng.randint(1, sides)
 
 
-def roll_damage(attacker, card, rng=random):
+def _roll_die(sides, rng, explode=0):
+    """One die, exploding on odd results while rolls remain.
+
+    GAMBLER'S RUIN: "every odd die result explodes — roll it again and add
+    to the damage. (Max 3 extra rolls.)"
+    """
+    total = d(sides, rng)
+    last = total
+    while explode > 0 and last % 2 == 1:
+        last = d(sides, rng)
+        total += last
+        explode -= 1
+    return total
+
+
+def roll_damage(attacker, card, rng=random, bonus=0, extra_dice=(), mult=1,
+                explode=0):
     """Stat + die, with Deadly/Weak folded in. One stack of each cancels
-    before either applies."""
+    before either applies.
+
+    `bonus`, `extra_dice`, `mult` and `explode` are this attack's own
+    modifiers, written by the Effect before the roll (see `_finish`).
+    """
     # A Colorless card has no stat to add — it is the flat die and nothing
     # else (`cards/colorless.md`).
     base = attacker.stat(card.stat) if card.stat else 0
-    total = base + (d(card.die, rng) if card.die else 0)
+    total = base + (_roll_die(card.die, rng, explode) if card.die else 0)
+    total += bonus
+    for sides in extra_dice:
+        total += _roll_die(sides, rng, explode)
 
     deadly, weak = attacker.deadly, attacker.weak
     cancel = min(deadly, weak)
@@ -408,7 +436,7 @@ def roll_damage(attacker, card, rng=random):
         total += d(6, rng)
     elif weak:
         total -= d(6, rng)
-    return max(0, total)
+    return max(0, int(total * mult))
 
 
 def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
@@ -492,7 +520,17 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     dealt = 0
     returned_atk = returned_def = False
     gone_atk = gone_def = False   # a card exiled out of the exchange itself
+
     if outcome == Outcome.ATTACKER:
+        # The Effect gets a look in before the roll, because some of it is
+        # about the roll. Only the 'pre' ops run here — everything else
+        # waits until the damage has landed, so Deadly is banked for the
+        # next attack rather than spent on this one.
+        ctx, ops = _begin(atk_card, 'effect', attacker, defender, outcome,
+                          log, rng, wheel, def_card)
+        if ops:
+            _phase(ops, ctx, 'pre')
+
         swap = defender.restriction(WOUND_INSTEAD)
         if swap is not None:
             from cards import status_card
@@ -500,15 +538,27 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             defender.spend_restriction(swap, log=log)
             log(f'  The hit lands as a Wound in {defender.name}\'s deck '
                 f'instead of damage.')
-            dmg = dealt = 0
+            rolled = dealt = 0
         else:
-            dmg = roll_damage(attacker, atk_card, rng)
-            dealt = defender.take(dmg, source=attacker, log=log)
-        if dealt and defender.thorns and (atk_card.range or '').strip().lower().startswith('melee'):
+            rolled = roll_damage(
+                attacker, atk_card, rng,
+                bonus=ctx.dmg_bonus if ctx else 0,
+                extra_dice=ctx.dmg_dice if ctx else (),
+                mult=ctx.dmg_mult if ctx else 1,
+                explode=ctx.explode if ctx else 0)
+            dealt = defender.take(rolled, source=attacker, log=log)
+
+        if dealt and defender.thorns and \
+                (atk_card.range or '').strip().lower().startswith('melee'):
             log(f'{defender.name}\'s Thorns bites back.')
             attacker.take(defender.thorns, unpreventable=True, log=log)
-        returned_atk, gone_def = _run(atk_card, 'effect', attacker, defender,
-                                      outcome, dealt, log, rng, wheel, def_card)
+
+        if ops:
+            ctx.damage_dealt = dealt
+            ctx.damage_rolled = rolled
+            _phase(ops, ctx, 'post')
+            returned_atk, gone_def = _settle(ctx, atk_card, attacker)
+
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
         returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
@@ -547,45 +597,74 @@ def compiled(card, half):
     return _COMPILED[text]
 
 
-def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
-         opponent_card=None):
-    """Run one half. Anything that did not compile is read out instead,
-    which is what every card did before effects.py existed.
+def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
+           opponent_card=None):
+    """Compile a half and build its context, without running anything.
 
-    Returns True when the card returned itself to hand instead of being
-    discarded.
+    Returns (ctx, ops). `ops` is None when the half narrates or is silenced,
+    in which case the caller has nothing to run.
     """
     if card is None:
-        return False, False
+        return None, None
     text = getattr(card, half, None)
     if not text or text.strip().lower() in ('none.', 'none'):
-        return False, False
+        return None, None
     label = 'Effect' if half == 'effect' else 'Defense Effect'
     if half == 'defense_effect':
-        gagged = actor.restriction(NO_DEFENSE_EFFECT)
-        if gagged is not None:
+        if actor.restriction(NO_DEFENSE_EFFECT) is not None:
             log(f'  {actor.name} cannot trigger Defense Effects — {label} '
                 f'does not fire.')
-            return False, False
+            return None, None
+    log(f'  {label}: {text}')
     ops = compiled(card, half)
     if ops is None:
-        log(f'  {label}: {text}')
-        return False, False
-    log(f'  {label}: {text}')
+        return None, None
     ctx = fx.Context(actor, opponent,
                      allies=[c for c in _TABLE if c.team == actor.team and c is not actor],
                      enemies=[c for c in _TABLE if c.team != actor.team],
-                     card=card, outcome=outcome, damage_dealt=dealt,
+                     card=card, outcome=outcome, damage_dealt=0,
                      rng=rng, log=log)
     ctx.wheel = wheel
     ctx.opponent_card = opponent_card
     ctx.return_card = False
     ctx.exiled_opponent_card = False
+    return ctx, ops
+
+
+def _phase(ops, ctx, phase):
+    ctx.phase = phase
     for op in ops:
-        op.apply(ctx)
+        op.run_phase(ctx, phase)
+
+
+def _settle(ctx, card, actor):
+    """What the half did to the cards in play."""
+    if ctx is None:
+        return False, False
     if ctx.return_card:
         actor.hand.append(card)
     return ctx.return_card, ctx.exiled_opponent_card
+
+
+def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
+         opponent_card=None):
+    """Run one half whole, for the outcomes that roll no damage.
+
+    Returns (returned_to_hand, exiled_the_other_card).
+    """
+    ctx, ops = _begin(card, half, actor, opponent, outcome, log, rng, wheel,
+                      opponent_card)
+    if ctx is None:
+        if card is not None:
+            text = getattr(card, half, None)
+            if text and text.strip().lower() not in ('none.', 'none') \
+                    and compiled(card, half) is None:
+                pass    # already read out by _begin
+        return False, False
+    ctx.damage_dealt = dealt
+    _phase(ops, ctx, 'pre')
+    _phase(ops, ctx, 'post')
+    return _settle(ctx, card, actor)
 
 
 # Everyone in the current fight. Set by play.py before the first exchange so
