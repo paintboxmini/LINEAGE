@@ -68,6 +68,18 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 
 **The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
 
+## What Grows Here
+
+**Almost nothing native, and that is the interesting part.** The Nest has been rebuilt on top of itself so many times that the ground under the town is not ground — it is silt, ballast, pitch, ash and two centuries of other people's rubbish, and nothing that belongs to this river ever got a chance at it.
+
+**What grows on it came off a boat.** Ballast goes into an empty hold and comes out again when the cargo goes in, carrying the soil and seed of wherever it was shovelled up. The spoil banks around the islands are layers of somewhere else, and the scrub on them is descended from ports most people here could not name. **Nobody's Pepper** (`bestiary/nobodys-pepper.md`) is the stowaway that took to it best, and it grows a different pepper on every bank because every bank came off a different ship.
+
+**Which is why the town eats the way it eats.** Salted strip, dock broth, chewfat — meat, fish and fat, and very little green on any plate (`items/vultures-nest-items.md`). It is not a preference and nobody thinks of it as a hardship. There is simply nothing growing within a day of here that a person would choose to make a meal out of, and there never has been. A party that arrives expecting a market stall of vegetables is going to be the first people in the room to find that strange.
+
+**Two plants matter to the working town.** **Stiltwood** (`bestiary/stiltwood.md`) is the tree the boats are made of, and only the third of the trunk that stands below the waterline is any good, which ties the whole cutting trade to the deep slow tide above. **Dock beard** (`bestiary/dock-beard.md`) is the rot in the pilings, and boiled with pitch it is the seal that keeps the hulls dry — the town's decay problem and the town's waterproofing are the same organism, and the only thing anybody finds worth remarking on is the price.
+
+*The beard has two names, the nuisance one and the trade one, which in this town is what happens to anything worth knowing.*
+
 ## Notable Roles
 
 **The Night Ferryman** — rows after curfew. Claims the Unheld whispers less at night — the rivers carry the whispers up from the coast, he says, and nobody argues with him. He also never once mistakes a false lantern for a signal lantern, on water where that mistake sinks boats (`bestiary/spooklight.md`), and has never been asked how. Knows when The Coil surfaces out on the deep lake east of the Nest and will take the party there if they earn his trust. Does not explain how he knows. Charges nothing for that crossing.
