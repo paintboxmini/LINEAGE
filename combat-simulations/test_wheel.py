@@ -299,6 +299,42 @@ def a_bystander_still_earns_the_bonus():
     assert w.pending_bonus == ['d'], w.pending_bonus
 
 
+def a_defender_shifting_the_attacker_places_no_chip():
+    """RETALIATE, INTERRUPT, DELAY, DOUBLE DOWN, HASTEN and STEAL all shift
+    the attacker from a defence half — and the attacker is the one acting,
+    standing on the marker's slot. Moving them off it must not place a
+    bonus or a skip chip on anyone.
+
+    The wheel is told who is acting, not who cast the shift, so this is the
+    same guard as a self-shift. What it does *not* do is make the attacker
+    later: they have just acted and are already last. See the note on
+    _shift_self_while_acting.
+    """
+    for amount in (-1, -2, -3):
+        w = Wheel(['att', 'def', 'c', 'd'])
+        w.shift('att', amount, acting='att')
+        assert not w.chips, (amount, w.chips)
+        assert not w.pending_bonus, (amount, w.pending_bonus)
+
+        cur, seq = 'att', []
+        for _ in range(4):
+            nxt = w.advance(cur)
+            while nxt is None:
+                nxt = w.advance(w.order()[0])
+            seq.append(nxt)
+            cur = nxt
+        assert sorted(seq) == ['att', 'c', 'd', 'def'], ('a turn was lost', seq)
+        assert seq.index('att') == 3, ('the attacker came sooner', amount, seq)
+
+
+def shifting_someone_who_is_not_acting_still_works():
+    """The attack-half versions — DELAY, DISTRACT, MOCKERY, TURN — aim at
+    someone who is not on the marker, and are untouched by any of this."""
+    w = Wheel(['att', 'def', 'c', 'd'])
+    w.shift('def', -2, acting='att')
+    assert w.order() != ['att', 'def', 'c', 'd'], w.order()
+
+
 if __name__ == '__main__':
     print('rules/initiative-shift-examples.md:')
     results = [
@@ -326,6 +362,10 @@ if __name__ == '__main__':
              negative_self_shift_never_arrives_sooner),
         case('a bystander crossing the marker still earns one',
              a_bystander_still_earns_the_bonus),
+        case('a defender shifting the attacker places no chip',
+             a_defender_shifting_the_attacker_places_no_chip),
+        case('shifting someone who is not acting still works',
+             shifting_someone_who_is_not_acting_still_works),
     ]
     print(f'\n{sum(results)}/{len(results)} passed')
     raise SystemExit(0 if all(results) else 1)
