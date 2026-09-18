@@ -603,9 +603,13 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         # next attack rather than spent on this one.
         ctx, ops = (None, None) if mute_atk else _begin(
             atk_card, 'effect', attacker, defender, outcome, log, rng, wheel,
-            def_card)
+            def_card, announce=False)
         if mute_atk:
             log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
+        line = None if mute_atk else header(atk_card, 'effect')
+        pre_first = bool(ops) and any(op.phase == 'pre' for op in ops)
+        if line and pre_first:
+            log(line)
         if ops:
             _phase(ops, ctx, 'pre')
 
@@ -633,6 +637,8 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             log(f'{defender.name}\'s Thorns bites back.')
             attacker.take(defender.thorns, unpreventable=True, log=log)
 
+        if line and not pre_first:
+            log(line)
         if ops:
             ctx.damage_dealt = dealt
             ctx.damage_rolled = rolled
@@ -717,8 +723,24 @@ def compiled(card, half):
     return _COMPILED[text]
 
 
+def header(card, half):
+    """The "Effect: ..." line, or None when there is nothing to read out.
+
+    Separated from `_begin` so the caller can decide *when* to print it. A
+    half that changes this attack's damage has to be announced before the
+    damage line; everything else reads better after it.
+    """
+    if card is None:
+        return None
+    text = getattr(card, half, None)
+    if not text or text.strip().lower() in ('none.', 'none'):
+        return None
+    label = 'Effect' if half == 'effect' else 'Defense Effect'
+    return f'  {label}: {text}'
+
+
 def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
-           opponent_card=None):
+           opponent_card=None, announce=True):
     """Compile a half and build its context, without running anything.
 
     Returns (ctx, ops). `ops` is None when the half narrates or is silenced,
@@ -735,7 +757,8 @@ def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
             log(f'  {actor.name} cannot trigger Defense Effects — {label} '
                 f'does not fire.')
             return None, None
-    log(f'  {label}: {text}')
+    if announce:
+        log(f'  {label}: {text}')
     ops = compiled(card, half)
     if ops is None:
         return None, None

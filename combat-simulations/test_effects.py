@@ -863,9 +863,9 @@ def test_slipstream_is_the_ring_motion():
                            position=FRONT, team='party')
         ctx = fx.Context(holder, b, [], [b], None, 'attacker wins',
                          rng=random.Random(0), log=QUIET)
-        for op in fx.compile_half('Anchored — the next time an ally passes '
-                                  'through your position in the initiative '
-                                  'order, draw a card.'):
+        for op in fx.compile_half('Anchored — when an ally passes through '
+                                  'your position in the initiative order, '
+                                  'draw a card.'):
             op.apply(ctx)
         return holder
 
@@ -903,6 +903,21 @@ def test_slipstream_is_the_ring_motion():
     check('the marker reaching them is not a pass',
           len(h3.hand) == hand3 and len(h3.pending) == 1,
           (hand3, len(h3.hand)))
+
+    # "When", not "the next time": it keeps paying while the Anchored holds.
+    h5 = armed()
+    friend2 = Combatant('F2', 3, 3, 3, deck=[], position=FRONT, team='party')
+    wheel5 = Wheel([a, h5, friend2, b])
+    hand5 = len(h5.hand)
+    ctx5 = fx.Context(a, b, [h5, friend2], [b], None, 'attacker wins',
+                      rng=random.Random(0), log=QUIET)
+    ctx5.wheel = wheel5
+    for _ in range(3):
+        wheel5.shift(friend2, 1)
+        fx._fire_passed(ctx5, friend2, wheel5)
+        wheel5.shift(friend2, -1)
+    check('it pays every time, not once', len(h5.hand) > hand5 + 1,
+          (hand5, len(h5.hand)))
 
     # And it is Anchored, so moving ends it.
     h4 = armed()

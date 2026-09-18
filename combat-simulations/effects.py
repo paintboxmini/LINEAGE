@@ -1783,18 +1783,22 @@ def _r_anchored_midway(m):
     return [Anchored(inner, body)] if inner else None
 
 
-@menu(r'^the next time an ally passes through your position in the initiative '
-      r'order, (.+?)\.?$')
+@menu(r'^(?:when|the next time) an ally passes through your position in the '
+      r'initiative order, (.+?)\.?$')
 def _r_slipstream(m):
     """SLIPSTREAM. "Passes through your position" is the ring motion — an
     ally slid over your slot by an Initiative Shift — not the marker
-    arriving at you. Drew's reading, 2026-09-18."""
+    arriving at you. Drew's reading, 2026-09-18.
+
+    "When", not "the next time", so it pays every time it happens for as
+    long as the Anchored holds. The wrapper supplies the limit: hold
+    position and keep collecting, move and it is over.
+    """
     inner = compile_half(m.group(1))
     if inner is None:
         return None
     return [Reaction('passed', inner,
-                     f'when an ally is shifted through your slot — {m.group(1)}',
-                     uses=1)]
+                     f'when an ally is shifted through your slot — {m.group(1)}')]
 
 
 # -- the seated singles --------------------------------------------------
