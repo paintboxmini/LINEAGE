@@ -465,16 +465,6 @@ Range: Ranged
 
 ---
 
-**WAITING GAME**
-BLUE — MIND
-Attack: Mind + d4
-Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
-Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
-Range: Both
-*"Why build what's already standing right there?"*
-
----
-
 **PRESSURE**
 BLUE — MIND
 Attack: Mind + d8

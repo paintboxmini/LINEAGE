@@ -303,9 +303,11 @@ SETS = {
         # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
         # Blue (stealing and copying enemy buffs is enemy control), so it
         # moved from the Red block to the Blue one and took SLIPSTREAM's
-        # Both slot — the expansion keeps its Positive Status Effects
-        # teacher either way. PROVOKE, which moved Green -> Red the same
-        # day, fills the Red Both slot it vacated.
+        # Both slot. PROVOKE, which moved Green -> Red the same day, fills
+        # the Red Both slot it vacated. (WAITING GAME was cut on
+        # 2026-09-18 and SLIPSTREAM has its slot back. The expansion no
+        # longer has a Positive Status Effects card; LEVEL THE FIELD
+        # carries the term in the Oracle 63.)
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
         #     (Reversed on 2026-09-17 — the card was too strong for the set
         #     and the gap is open again.)
@@ -444,7 +446,8 @@ SETS = {
         #     CHAIN (the only splash damage in either set — a real gap, but
         #     splash is not a promised ladder the way Thorns is), DRAIN
         #     (a third buff-manipulation card behind WAITING GAME and LEVEL
-        #     THE FIELD, and dead against anything with no buffs), UNMAKE
+        #     THE FIELD — WAITING GAME has since been cut for the second of
+        #     those reasons — and dead against anything with no buffs), UNMAKE
         #     (two Exhaust into a new player's hand), DECODE and REDIRECT
         #     (both d8, no room in the budget), PROBE and TURN (both have
         #     problems of their own — see `rules/early-campaign-cards.md`).
@@ -474,7 +477,7 @@ SETS = {
             # Blue (7) — ranged 4 / melee 2 / both 1
             'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR', 'RETORT',
             'PARRY', 'FOCUSED STANCE',
-            'WAITING GAME',
+            'SLIPSTREAM',
             # Green (7) — both 4 / ranged 2 / melee 1
             'WAIT', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',

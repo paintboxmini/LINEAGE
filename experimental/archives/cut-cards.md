@@ -62,6 +62,20 @@ Range: Melee
 
 *Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
 
+## Core set — cut on 2026-09-18
+
+**WAITING GAME**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*
+
+*Cut 2026-09-18, out of the Oracle expansion's Blue Both seat. It moved Red → Blue in the colour-identity pass on 2026-09-09 on the argument that stealing and copying enemy buffs is enemy control; the card that survived that move copies up to two buffs at once off whoever it is facing, and does nothing at all against anything that has none. SLIPSTREAM takes the seat at the same d4.*
+
+*It was the only card in either set that referenced Positive Status Effects by the collective term, so the expansion is at zero on it now. The 84 still teaches the term — LEVEL THE FIELD carries it in the Oracle 63.*
+
 ## Core set — cut as the last vanilla Thorns card
 
 **BRAMBLE**
