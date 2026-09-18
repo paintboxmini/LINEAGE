@@ -127,6 +127,10 @@ class Combatant:
         self.moved_this_turn = False
         self.moved_last_turn = False
 
+        # Turns handed back mid-turn: DOUBLE DOWN and TRAMPLE.
+        self.extra_attacks = 0
+        self.extra_actions = 0
+
     # ---- derived --------------------------------------------------------
 
     # ---- position ------------------------------------------------------
@@ -299,7 +303,8 @@ class Combatant:
 
     # ---- damage --------------------------------------------------------
 
-    def take(self, amount, unpreventable=False, source=None, log=None):
+    def take(self, amount, unpreventable=False, source=None, log=None,
+             ignore_resist=False):
         """Apply damage through the pipeline (`rules/combat.md`).
 
         reassignment -> Immunity -> Armour -> Resist/Vulnerable -> HP.
@@ -331,7 +336,7 @@ class Combatant:
                 amount = max(0, amount - target.armour)
 
             # One stack of each cancels the other first.
-            r, v = target.resist, target.vulnerable
+            r, v = (0 if ignore_resist else target.resist), target.vulnerable
             cancel = min(r, v)
             r, v = r - cancel, v - cancel
             if r > 0:
@@ -459,14 +464,26 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
                 defender.discard.append(def_card)
             return Outcome.MUTUAL_MISS
 
+    atk_traits = fx.traits(atk_card, 'attack')
+    def_traits = fx.traits(def_card, 'defense')
+
     # Step 3. Every check that applies actually rolls, whether or not it
     # ends up mattering: being attacked is what triggers them.
     atk_blind_miss = attacker.blind > 0 and d(2, rng) == 1
     if attacker.blind:
         attacker.blind -= 1
+    if atk_traits.ignores_attacker_blind and atk_blind_miss:
+        # CERTAIN STRIKE: the stack is still spent — being attacked is what
+        # triggers a check — but the miss does not land.
+        log(f'  {atk_card.name} cannot be affected by Blind.')
+        atk_blind_miss = False
 
     evaded = False
-    if defender.in_cover:
+    if atk_traits.ignores_evade:
+        if defender.evade > 0:
+            defender.evade -= 1
+        log(f'  {atk_card.name} cannot be Evaded.')
+    elif defender.in_cover:
         # Cover Evade — rolls the same, but is never spent, and stands in
         # for held stacks while it lasts.
         evaded = d(2, rng) == 1
@@ -509,8 +526,53 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
         outcome = Outcome.DEFENDER
     else:
         outcome = Outcome.TIE
+
+    outcome = _apply_traits(outcome, atk_traits, def_traits, atk_card,
+                            def_card, log)
     return _finish(outcome, attacker, defender, atk_card, def_card, log,
                    rng, wheel)
+
+
+def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):
+    """Cards that change what the reveal means, in a fixed order.
+
+    1. **Reversal** (PARADOX, "on reveal") acts on the raw result, and a tie
+       has nothing to reverse. Two reversals cancel.
+    2. **A floor on losing** (REBUTTAL, "if you would lose ... it is a tie
+       instead") turns a loss into a tie.
+    3. **Winning ties** (STAND, CALL, ADAPT, ANTICIPATE, PUNISH) resolves
+       what is by then a tie. Both sides holding it cancels, as those cards
+       say: "it stays a tie".
+
+    The order has a consequence worth knowing rather than hiding: REBUTTAL
+    converting a loss into a tie hands the exchange to an opponent who wins
+    ties. The floor stops you losing the reveal; it does not stop them
+    winning it.
+    """
+    if atk_traits.reverse_outcome != def_traits.reverse_outcome \
+            and outcome != Outcome.TIE:
+        outcome = (Outcome.DEFENDER if outcome == Outcome.ATTACKER
+                   else Outcome.ATTACKER)
+        log('  The outcome is reversed.')
+
+    if outcome == Outcome.DEFENDER and atk_traits.tie_instead_of_loss:
+        outcome = Outcome.TIE
+        log(f'  {atk_card.name} cannot lose — it is a tie instead.')
+    elif outcome == Outcome.ATTACKER and def_traits.tie_instead_of_loss:
+        outcome = Outcome.TIE
+        log(f'  {def_card.name} cannot lose — it is a tie instead.')
+
+    if outcome == Outcome.TIE:
+        a, dfn = atk_traits.wins_ties, def_traits.wins_ties
+        if a and dfn:
+            log('  Both cards win ties — they cancel, and it stays a tie.')
+        elif a:
+            outcome = Outcome.ATTACKER
+            log(f'  {atk_card.name} wins ties.')
+        elif dfn:
+            outcome = Outcome.DEFENDER
+            log(f'  {def_card.name} wins ties.')
+    return outcome
 
 
 def _finish(outcome, attacker, defender, atk_card, def_card, log,
@@ -520,14 +582,25 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     dealt = 0
     returned_atk = returned_def = False
     gone_atk = gone_def = False   # a card exiled out of the exchange itself
+    atk_traits = fx.traits(atk_card, 'attack')
+    def_traits = fx.traits(def_card, 'defense')
+
+    # INVERT and DEAD HEAT: one card silences the other's half.
+    mute_atk = def_traits.mutes_opponent_effect
+    mute_def = def_card is not None and (
+        atk_traits.mutes_opponent_defense_effect
+        or (outcome == Outcome.TIE and atk_traits.mutes_defense_effect_on_tie))
 
     if outcome == Outcome.ATTACKER:
         # The Effect gets a look in before the roll, because some of it is
         # about the roll. Only the 'pre' ops run here — everything else
         # waits until the damage has landed, so Deadly is banked for the
         # next attack rather than spent on this one.
-        ctx, ops = _begin(atk_card, 'effect', attacker, defender, outcome,
-                          log, rng, wheel, def_card)
+        ctx, ops = (None, None) if mute_atk else _begin(
+            atk_card, 'effect', attacker, defender, outcome, log, rng, wheel,
+            def_card)
+        if mute_atk:
+            log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
         if ops:
             _phase(ops, ctx, 'pre')
 
@@ -546,7 +619,8 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
                 extra_dice=ctx.dmg_dice if ctx else (),
                 mult=ctx.dmg_mult if ctx else 1,
                 explode=ctx.explode if ctx else 0)
-            dealt = defender.take(rolled, source=attacker, log=log)
+            dealt = defender.take(rolled, source=attacker, log=log,
+                                  ignore_resist=atk_traits.ignores_resist)
 
         if dealt and defender.thorns and \
                 (atk_card.range or '').strip().lower().startswith('melee'):
@@ -561,20 +635,60 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
 
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
-        returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                      attacker, outcome, 0, log, rng, wheel,
-                                      atk_card)
+        if mute_def:
+            log(f'  {def_card.name}\'s Defense Effect does not trigger '
+                f'this exchange.')
+        else:
+            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
+                                          attacker, outcome, 0, log, rng,
+                                          wheel, atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
-        returned_atk, gone_def = _run(atk_card, 'effect', attacker, defender,
-                                      outcome, 0, log, rng, wheel, def_card)
-        returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                      attacker, outcome, 0, log, rng, wheel,
-                                      atk_card)
+        if mute_atk:
+            log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
+        else:
+            returned_atk, gone_def = _run(atk_card, 'effect', attacker,
+                                          defender, outcome, 0, log, rng,
+                                          wheel, def_card)
+        if mute_def:
+            log(f'  {def_card.name}\'s Defense Effect does not trigger '
+                f'this exchange.')
+        else:
+            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
+                                          attacker, outcome, 0, log, rng,
+                                          wheel, atk_card)
 
     # FOCUS returns itself to hand instead of discarding. Tracked here, not
     # on the Card: build_deck draws from a shared pool, so one Card object is
     # in several decks at once and must never carry per-fight state.
+    # Special Rules about where the card goes afterwards.
+    if atk_traits.returns_unless_loss and outcome != Outcome.DEFENDER:
+        returned_atk = True
+        attacker.hand.append(atk_card)
+        log(f'  {atk_card.name} returns to hand.')
+    if def_traits.returns_unless_loss and outcome != Outcome.ATTACKER:
+        returned_def = True
+        defender.hand.append(def_card)
+        log(f'  {def_card.name} returns to hand.')
+    if atk_traits.always_exiled and not returned_atk:
+        gone_atk = True
+        attacker.exiled.append(atk_card)
+        log(f'  {atk_card.name} is Exiled after use.')
+    if def_traits.always_exiled and not returned_def:
+        gone_def = True
+        defender.exiled.append(def_card)
+        log(f'  {def_card.name} is Exiled after use.')
+
+    # TRAMPLE and DOUBLE DOWN hand the attacker something back; the turn
+    # loop in play.py is what can actually spend it.
+    if outcome == Outcome.ATTACKER:
+        if atk_traits.extra_attack_on_clean_win:
+            attacker.extra_attacks += 1
+            log(f'  {attacker.name} attacks again immediately.')
+        if atk_traits.extra_action_on_collapse and defender.down:
+            attacker.extra_actions += 1
+            log(f'  {attacker.name} gains another action.')
+
     if not returned_atk and not gone_atk:
         attacker.discard.append(atk_card)
     if def_card is not None and not returned_def and not gone_def:

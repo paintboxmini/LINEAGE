@@ -1537,6 +1537,97 @@ def _r_chain(m):
     return [Splash(OTHER_ENEMY, 0.5, 'up')]
 
 
+# ---- card traits -------------------------------------------------------
+#
+# Some text is not an effect that happens — it is a property of the card
+# while the exchange resolves. "Wins ties" is not something you do; it is
+# something the reveal has to ask about. These are read off a card once and
+# consulted by engine.resolve_attack rather than run as ops.
+#
+# Special Rule lines live here and nowhere else. Until now nothing read
+# them at all: seven core cards carry one, and every one of them is about
+# resolution.
+
+
+class Traits:
+    __slots__ = ('wins_ties', 'tie_instead_of_loss', 'reverse_outcome',
+                 'ignores_evade', 'ignores_resist', 'ignores_attacker_blind',
+                 'mutes_opponent_effect', 'mutes_opponent_defense_effect',
+                 'mutes_defense_effect_on_tie', 'extra_attack_on_clean_win',
+                 'extra_action_on_collapse', 'returns_unless_loss',
+                 'always_exiled')
+
+    def __init__(self, **kw):
+        for k in self.__slots__:
+            setattr(self, k, kw.get(k, False))
+
+    def any(self):
+        return any(getattr(self, k) for k in self.__slots__)
+
+    def __repr__(self):
+        on = [k for k in self.__slots__ if getattr(self, k)]
+        return f'<Traits {" ".join(on) or "none"}>'
+
+
+_TRAIT_PATTERNS = (
+    ('wins_ties', r'\bwins ties\b|\byou win on a tie\b'),
+    ('tie_instead_of_loss', r'if you would lose this exchange, it is a tie instead'),
+    ('reverse_outcome', r'on reveal, reverse the RPS outcome'),
+    ('ignores_evade', r'cannot be evaded'),
+    ('ignores_resist', r'cannot be .*?resisted|cannot be evaded, resisted'),
+    ('ignores_attacker_blind', r'or affected by blind'),
+    ('mutes_opponent_effect', r"the attacker's effect does not trigger this exchange"),
+    ('mutes_opponent_defense_effect',
+     r"the defender's defense effect does not trigger this exchange"),
+    ('mutes_defense_effect_on_tie',
+     r"if this attack ties, the defender's defense effect does not trigger"),
+    ('extra_attack_on_clean_win',
+     r'on a clean win, immediately make another attack against the same defender'),
+    ('extra_action_on_collapse',
+     r'if this attack drops \(collapses\) the defender, gain another action'),
+    ('returns_unless_loss',
+     r'returns to your hand instead of your discard pile after use'),
+    ('always_exiled', r'exiled after use instead of sent to discard'),
+)
+
+# Traits read off the attack half, the defence half, and the Special Rule.
+# A Special Rule applies whichever side of the exchange the card is on.
+_ATTACK_SIDE = ('effect', 'special_rule')
+_DEFENSE_SIDE = ('defense_effect', 'special_rule')
+
+_TRAIT_CACHE = {}
+
+
+def _read_traits(texts):
+    joined = ' '.join(t for t in texts if t)
+    found = {}
+    for name, pattern in _TRAIT_PATTERNS:
+        if re.search(pattern, joined, re.I):
+            found[name] = True
+    return Traits(**found)
+
+
+def traits(card, side):
+    """`side` is 'attack' or 'defense' — which half of the exchange this
+    card is being played on. The Special Rule counts on both.
+
+    Keyed on the text rather than on the card object. id() is not a safe
+    cache key here: a pool that goes out of scope is collected and the next
+    pool's cards can land on the same ids, which hands back another card's
+    traits. Text is also what actually determines the answer, so a card
+    file edited between runs re-reads correctly.
+    """
+    if card is None:
+        return Traits()
+    fields = _ATTACK_SIDE if side == 'attack' else _DEFENSE_SIDE
+    key = tuple(getattr(card, f, None) for f in fields)
+    hit = _TRAIT_CACHE.get(key)
+    if hit is None:
+        hit = _read_traits(key)
+        _TRAIT_CACHE[key] = hit
+    return hit
+
+
 # ---- coverage ------------------------------------------------------
 #
 # Keep this block last. @rule registers at import time, so a rule
@@ -1545,14 +1636,26 @@ def _r_chain(m):
 # ---- ----------------------------------------------------------
 
 def coverage(pool):
-    """(compiled, narrated) halves, for `python3 effects.py`."""
-    done, left = [], []
+    """(compiled, trait, narrated) halves, for `python3 effects.py`.
+
+    A half is handled either by compiling to ops or by being read as a
+    trait the reveal consults. Counting only the first would under-report:
+    "You win on a tie" is not an op and never will be, and it is fully
+    modelled.
+    """
+    done, trait, left = [], [], []
     for c in pool:
         for half, text in (('E', c.effect), ('D', c.defense_effect)):
             if not text or text.strip().lower() in ('none.', 'none'):
                 continue
-            (done if compile_half(text) else left).append((c.name, half, text.strip()))
-    return done, left
+            row = (c.name, half, text.strip())
+            if compile_half(text):
+                done.append(row)
+            elif _read_traits([text]).any():
+                trait.append(row)
+            else:
+                left.append(row)
+    return done, trait, left
 
 
 if __name__ == '__main__':
@@ -1560,12 +1663,19 @@ if __name__ == '__main__':
     import cards as cardlib
 
     pool = cardlib.core_pool()
-    done, left = coverage(pool)
-    total = len(done) + len(left)
-    print(f'{len(done)}/{total} effect halves compile '
-          f'({100 * len(done) / total:.0f}%), {len(left)} narrate.\n')
+    done, trait, left = coverage(pool)
+    total = len(done) + len(trait) + len(left)
+    handled = len(done) + len(trait)
+    print(f'{handled}/{total} effect halves are modelled '
+          f'({100 * handled / total:.0f}%)')
+    print(f'  {len(done):>3} compile to operations')
+    print(f'  {len(trait):>3} are traits the reveal consults')
+    print(f'  {len(left):>3} narrate\n')
 
     if '-v' in sys.argv:
-        print('Narrated:')
+        print('Traits:')
+        for name, half, text in sorted(trait):
+            print(f'  {name:<18} {half}  {text[:96]}')
+        print('\nNarrated:')
         for name, half, text in sorted(left):
             print(f'  {name:<18} {half}  {text[:96]}')

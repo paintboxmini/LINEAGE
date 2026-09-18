@@ -50,13 +50,23 @@ wheel, drawing to hand size, range legality, the Blind/Evade checks and
 their resolution order, the RPS reveal, the damage pipeline, Collapse and
 death, and positioning.
 
-Card Effects are read by `effects.py`. Roughly five in six of the core
-pool's Effect and Defense Effect halves compile into operations the engine
-runs — grants and their stacking, healing and HP costs, damage, draw,
+Card Effects are read by `effects.py` in two ways. Most halves compile into
+**operations** the engine runs — grants and their stacking, healing and HP costs, damage, draw,
 discard, Exile, Scry, movement, Initiative Shift, stat drain, Counter
 Attack, Lifesteal, Rushdown, buff stripping and stealing, Wound and
 Exhaust insertion, modal cards where only the chosen branch runs, optional
 costs, and the gates around them (clean-win-only, HP thresholds).
+
+A few are not operations at all but **traits** of the card while the
+exchange resolves — "Wins ties" is not something you do, it is something
+the reveal has to ask about. Those are read off the card once and consulted
+by `resolve_attack`: winning ties and the mutual cancel, REBUTTAL's floor
+on losing, PARADOX reversing the outcome, CERTAIN STRIKE ignoring Evade and
+Resist, INVERT and DEAD HEAT silencing the other half, DOUBLE DOWN and
+TRAMPLE handing back a turn, and PLANT and STEAL changing where the card
+goes afterwards. **Special Rule lines live here and nowhere else**: seven
+core cards carry one, every one of them is about resolution, and until this
+existed nothing read them at all.
 
 **An Effect gets a look in before the damage it modifies.** A half resolves
 in two phases: the ops that change this attack's damage run before the
@@ -74,8 +84,8 @@ moving, attacking, or triggering a Defense Effect. Expiry is measured
 against the turn of whoever played the card, not whoever is holding it,
 because that is what "until your next turn" says on the card.
 
-Run `python3 effects.py` for the live figure; it was 270/319 (85%) when this
-paragraph was written, and 225/247 (91%) across the beginner tier alone.
+Run `python3 effects.py` for the live figure; it was 278/319 (87%) when this
+paragraph was written — 270 compiling and 8 read as traits.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly

@@ -198,10 +198,11 @@ def test_status_cards():
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
-    done, left = fx.coverage(pool)
-    total = len(done) + len(left)
-    check(f'{len(done)}/{total} halves compile; the rest narrate rather '
-          f'than half-apply', len(done) > 0 and len(done) + len(left) == total)
+    done, trait, left = fx.coverage(pool)
+    total = len(done) + len(trait) + len(left)
+    check(f'{len(done) + len(trait)}/{total} halves are modelled; the rest '
+          f'narrate rather than half-apply',
+          len(done) > 0 and len(done) + len(trait) + len(left) == total)
     broken = []
     for c in pool:
         for half in ('effect', 'defense_effect'):
@@ -542,6 +543,165 @@ def test_plant_reads_last_turn():
           list(zip(held, moved))[:3])
 
 
+# ---- cards that change what the reveal means ----------------------------
+
+def reveal(atk_name, def_name, seed=0):
+    """One exchange between two named cards, returning the Outcome."""
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    a.hp = b.hp = 400
+    a.set_position(FRONT)
+    b.set_position(FRONT)
+    return engine.resolve_attack(a, b, pool[atk_name], pool[def_name],
+                                 rng=random.Random(seed), log=QUIET)
+
+
+def test_special_rules_are_read():
+    print('\nSpecial Rules reach the reveal')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    # STAND is Red and wins ties; a Red attacker against it is a colour tie.
+    red_attacker = next(c for c in cardlib.core_pool()
+                        if c.color == 'RED' and c.name not in
+                        ('STAND', 'CALL', 'ADAPT', 'REBUTTAL', 'PARADOX')
+                        and c.range_ok(FRONT, FRONT))
+    a, b = duo()
+    a.hp = b.hp = 400
+    out = engine.resolve_attack(a, b, red_attacker, pool['STAND'],
+                                rng=random.Random(0), log=QUIET)
+    check('a defender holding "Wins ties" takes the tie',
+          out == engine.Outcome.DEFENDER, out)
+
+    # Two tie-winners cancel. No two of STAND, CALL and ADAPT share a
+    # colour, so a natural reveal between them is never a tie in the first
+    # place — the rule is checked where it lives instead.
+    out2 = engine._apply_traits(
+        engine.Outcome.TIE,
+        fx.traits(pool['STAND'], 'attack'), fx.traits(pool['CALL'], 'defense'),
+        pool['STAND'], pool['CALL'], QUIET)
+    check('two tie-winners cancel and it stays a tie',
+          out2 == engine.Outcome.TIE, out2)
+    out3 = engine._apply_traits(
+        engine.Outcome.TIE,
+        fx.traits(pool['STAND'], 'attack'), fx.traits(pool['INSTINCT'], 'defense'),
+        pool['STAND'], pool['INSTINCT'], QUIET)
+    check('one tie-winner alone takes it',
+          out3 == engine.Outcome.ATTACKER, out3)
+
+
+def test_rebuttal_floor():
+    print('\nREBUTTAL is a floor on losing, not a win')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    # REBUTTAL is Blue. A Green attacker beats Blue, so this is a loss it
+    # converts to a tie.
+    green = next(c for c in cardlib.core_pool()
+                 if c.color == 'GREEN' and c.range_ok(FRONT, FRONT)
+                 and c.name not in ('STAND', 'CALL', 'ADAPT'))
+    a, b = duo()
+    a.hp = b.hp = 400
+    out = engine.resolve_attack(a, b, green, pool['REBUTTAL'],
+                                rng=random.Random(0), log=QUIET)
+    check('a loss becomes a tie', out == engine.Outcome.TIE, out)
+
+    # And the documented consequence: the floor does not stop an opponent
+    # who wins ties from taking the exchange.
+    a2, b2 = duo()
+    a2.hp = b2.hp = 400
+    out2 = engine.resolve_attack(a2, b2, pool['ADAPT'], pool['REBUTTAL'],
+                                 rng=random.Random(0), log=QUIET)
+    check('but a tie-winner still takes it from there',
+          out2 in (engine.Outcome.ATTACKER, engine.Outcome.TIE), out2)
+
+
+def test_certain_strike():
+    print('\nCERTAIN STRIKE cannot be Evaded or Resisted')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    hits = 0
+    for seed in range(40):
+        a, b = duo()
+        b.hp = 400
+        b.evade = 5
+        engine.resolve_attack(a, b, pool['CERTAIN STRIKE'], None,
+                              rng=random.Random(seed), log=QUIET)
+        if b.hp < 400:
+            hits += 1
+    check('forty attacks into a wall of Evade, none dodged',
+          hits == 40, hits)
+
+    a, b = duo()
+    b.hp = 400
+    b.resist = 1
+    engine.resolve_attack(a, b, pool['CERTAIN STRIKE'], None,
+                          rng=random.Random(3), log=QUIET)
+    with_resist = 400 - b.hp
+    a2, b2 = duo()
+    b2.hp = 400
+    engine.resolve_attack(a2, b2, pool['CERTAIN STRIKE'], None,
+                          rng=random.Random(3), log=QUIET)
+    check('Resist does not halve it', with_resist == 400 - b2.hp,
+          (with_resist, 400 - b2.hp))
+    check('and the Resist stack is not spent on it', b.resist == 1, b.resist)
+
+
+def test_invert_mutes():
+    print('\nINVERT silences the other half without stopping the exchange')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    # INVERT is Blue and beats Red. BRISTLE (Green) grants Thorns on defence.
+    a, b = duo()
+    a.hp = b.hp = 400
+    engine.resolve_attack(a, b, pool['INVERT'], pool['BRISTLE'],
+                          rng=random.Random(0), log=QUIET)
+    check("the defender's Defense Effect did not fire", b.thorns == 0, b.thorns)
+
+
+def test_trample_hands_back_an_action():
+    print('\nTRAMPLE pays only when the defender actually Collapses')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    b.hp = 1
+    engine._finish(engine.Outcome.ATTACKER, a, b, pool['TRAMPLE'], None,
+                   QUIET, random.Random(0), None)
+    check('a Collapse hands back an action',
+          b.down and a.extra_actions == 1, (b.down, a.extra_actions))
+
+    a2, b2 = duo()
+    b2.hp = 400
+    engine._finish(engine.Outcome.ATTACKER, a2, b2, pool['TRAMPLE'], None,
+                   QUIET, random.Random(0), None)
+    check('a hit that does not drop them pays nothing',
+          a2.extra_actions == 0, a2.extra_actions)
+
+
+def test_plant_and_steal_disposal():
+    print('\nSpecial Rules about where the card goes afterwards')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    b.hp = 400
+    engine._finish(engine.Outcome.ATTACKER, a, b, pool['PLANT'], None,
+                   QUIET, random.Random(0), None)
+    check('PLANT comes back to hand on a win',
+          any(c.name == 'PLANT' for c in a.hand) and not a.discard)
+
+    a2, b2 = duo()
+    engine._finish(engine.Outcome.DEFENDER, a2, b2, pool['PLANT'], None,
+                   QUIET, random.Random(0), None)
+    check('and goes to the discard when the reveal loses',
+          any(c.name == 'PLANT' for c in a2.discard) and not a2.hand)
+
+    a3, b3 = duo()
+    b3.hp = 400
+    engine._finish(engine.Outcome.ATTACKER, a3, b3, pool['STEAL'], None,
+                   QUIET, random.Random(0), None)
+    check('STEAL exiles itself regardless',
+          any(c.name == 'STEAL' for c in a3.exiled) and not a3.discard)
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -569,6 +729,12 @@ if __name__ == '__main__':
     test_explosion_changes_the_tail()
     test_cleave_splashes()
     test_plant_reads_last_turn()
+    test_special_rules_are_read()
+    test_rebuttal_floor()
+    test_certain_strike()
+    test_invert_mutes()
+    test_trample_hands_back_an_action()
+    test_plant_and_steal_disposal()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

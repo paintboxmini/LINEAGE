@@ -73,6 +73,29 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
         log(f'{who.name} is Staggered — their attack is skipped.')
         return
 
+    who.extra_attacks = who.extra_actions = 0
+
+    # One Action, plus anything a card hands back mid-turn. The cap is a
+    # safety rail rather than a rule: DOUBLE DOWN can draw into a second
+    # DOUBLE DOWN, and a turn that never ends is worse than one that stops.
+    for _ in range(8):
+        acted = _one_action(who, agent, foes, allies, wheel, log, rng)
+        if who.extra_attacks > 0 and acted is not None and acted[0] == 'attack':
+            who.extra_attacks -= 1
+            log(f'{who.name} presses the attack.')
+            continue
+        if who.extra_actions > 0:
+            who.extra_actions -= 1
+            log(f'{who.name} takes another action.')
+            continue
+        break
+
+
+def _one_action(who, agent, foes, allies, wheel, log, rng):
+    """One Action from the turn structure. Returns the action taken."""
+    if not who.alive():
+        return None
+
     action = agent.choose_action(who, foes, allies)
     kind = action[0]
 
@@ -87,10 +110,11 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
                     log(f'{who.name} is compelled to answer {pull.name}.')
                 target = pull
             who.spend_restriction(forced, log=log)
+
         card = agent.choose_attack(who, target)
         if card is None:
             log(f'{who.name} has nothing legal to play.')
-            return
+            return None
         who.hand.remove(card)
 
         # ANTICIPATE: "draw 1 card before defending" — the reaction has to
@@ -110,16 +134,16 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
             log(f'{who.name} leaves cover to attack.')
 
         resolve_attack(who, target, card, dcard, rng=rng, log=log, wheel=wheel)
+        return action
 
-    elif kind == 'move':
+    if kind == 'move':
         who.set_position(BACK if who.position == FRONT else FRONT, log=log)
-
     elif kind == 'cover':
         who.in_cover = True
         log(f'{who.name} takes cover.')
-
     else:
         log(f'{who.name} passes.')
+    return action
 
 
 def run(party, foes, wheel, log, rng, max_rounds=40):
