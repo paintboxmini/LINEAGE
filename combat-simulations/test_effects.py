@@ -213,7 +213,7 @@ RIPOSTE_D = 'Gain Deadly. If you won this exchange, gain Deadly again.'
 KILLSWITCH = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
               'Lasts until the end of combat. Playing KILLSWITCH again '
               'replaces your current choice rather than adding to it. '
-              'Playing the same colour in two consecutive reveals ends it.')
+              'Playing the same colour on two consecutive turns ends it.')
 
 
 def blue():
@@ -422,8 +422,9 @@ class _Picks:
 
 
 def test_killswitch_ends_on_a_repeated_colour():
-    print('\nKILLSWITCH ends on the same colour twice running')
+    print('\nKILLSWITCH ends on the same colour two turns running')
     import engine
+    import play
     pool = cardlib.by_name(cardlib.core_pool())
     green, blue = pool['SUPPORT'], pool['CALCULATE']
     check('the fixture colours are what this test thinks they are',
@@ -431,44 +432,67 @@ def test_killswitch_ends_on_a_repeated_colour():
 
     a, b = duo()
     _stance(a, b, 'gain Armour 3')
-    engine._revealed([(a, green)], QUIET)
-    check('one green does not end it', a.armour == 3, a.armour)
 
-    engine._revealed([(a, blue)], QUIET)
-    check('nor does a different colour after it', a.armour == 3, a.armour)
+    a.last_color = 'GREEN'
+    engine._revealed_on_own_turn(a, blue, QUIET)
+    check('a different colour from last turn does not end it',
+          a.armour == 3, a.armour)
 
-    engine._revealed([(a, blue)], QUIET)
-    check('a second blue running ends it', a.armour == 0, a.armour)
+    a.last_color = 'BLUE'
+    engine._revealed_on_own_turn(a, blue, QUIET)
+    check('the same colour as last turn does', a.armour == 0, a.armour)
 
-    # A block is a reveal, which is what separates this from MEASURE.
+    # The whole point of the 2026-09-18 change: a block is played on
+    # someone else's turn and cannot cost him the stance.
     a2, b2 = duo()
+    a2.hp = b2.hp = 400
     _stance(a2, b2, 'gain Armour 3')
-    engine._revealed([(b2, blue), (a2, blue)], QUIET)
-    engine._revealed([(b2, green), (a2, blue)], QUIET)
-    check('defending with the same colour counts as a reveal',
-          a2.armour == 0, a2.armour)
+    a2.last_color = 'BLUE'
+    engine.resolve_attack(b2, a2, blue, blue, rng=random.Random(0), log=QUIET)
+    check('defending with last turn\'s colour does not end it',
+          a2.armour == 3, a2.armour)
 
-    # And a stance without the clause is not touched by the same repeat.
+    # And the state it reads is the one take_turn rolls forward, so a real
+    # turn of the game reaches the same answer as the unit above.
     a3, b3 = duo()
+    a3.hp = b3.hp = 400
+    _stance(a3, b3, 'gain Armour 3')
+    engine.resolve_attack(a3, b3, blue, None, rng=random.Random(0), log=QUIET)
+    check('one attack does not end it', a3.armour == 3, a3.armour)
+    play.take_turn(a3, _Passer(), [b3], [], None, QUIET, random.Random(0))
+    engine.resolve_attack(a3, b3, blue, None, rng=random.Random(0), log=QUIET)
+    check('the same colour on the next turn does', a3.armour == 0, a3.armour)
+
+    # Several attacks in one turn are still one turn.
+    a4, b4 = duo()
+    a4.hp = b4.hp = 400
+    _stance(a4, b4, 'gain Armour 3')
+    a4.last_color = 'GREEN'
+    engine.resolve_attack(a4, b4, blue, None, rng=random.Random(0), log=QUIET)
+    engine.resolve_attack(a4, b4, blue, None, rng=random.Random(0), log=QUIET)
+    check('two attacks in the same turn are not two turns',
+          a4.armour == 3, a4.armour)
+
+    # A stance without the clause is untouched by the same repeat.
+    a5, b5 = duo()
     plain = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
              'Lasts until the end of combat. Playing PLAIN again replaces '
              'your current choice rather than adding to it.')
     ops = fx.compile_half(plain)
     assert ops is not None and not ops[0].ends_on_repeat
-    ctx = fx.Context(a3, b3, allies=[], enemies=[b3], card=None,
+    ctx = fx.Context(a5, b5, allies=[], enemies=[b5], card=None,
                      outcome='attacker wins', rng=random.Random(0), log=QUIET,
                      agent=_Picks('gain Armour 3'))
     ctx.wheel = None
     ops[0].apply(ctx)
-    engine._revealed([(a3, blue)], QUIET)
-    engine._revealed([(a3, blue)], QUIET)
+    a5.last_color = 'BLUE'
+    engine._revealed_on_own_turn(a5, blue, QUIET)
     check('a stance without the clause survives a repeat',
-          a3.armour == 3, a3.armour)
+          a5.armour == 3, a5.armour)
 
     check('and the clause with no stance to end narrates',
-          fx.compile_half('Gain Armour 3. Playing the same colour in two '
-                          'consecutive reveals ends it.') is None)
-
+          fx.compile_half('Gain Armour 3. Playing the same colour on two '
+                          'consecutive turns ends it.') is None)
 
 
 def test_hold_the_line_mirrors_the_colour_it_faces():

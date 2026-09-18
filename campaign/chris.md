@@ -144,7 +144,7 @@ Attack: Soul + d4
 Effect: Choose one — your attacks deal +3 damage, or gain Armour 3.
         Lasts until the end of combat. Playing KILLSWITCH again replaces
         your current choice rather than adding to it. Playing the same
-        colour in two consecutive reveals ends it.
+        colour on two consecutive turns ends it.
 Defense Effect: Same choice.
 Range: Both
 "A note changes and so does he. Nobody has worked out which comes first."
@@ -156,11 +156,15 @@ Range: Both
 
 **Armour 3 is deliberately past the ceiling the old note cited**, and the reason the ceiling moved is the clause below it. Armour 2 is what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`) — permanently, unconditionally, for nothing. A stance that can be switched off by the holder's own next card is not that thing, and shouldn't be priced as if it were.
 
-**Playing the same colour twice running ends it**, and this is the line that makes the card his rather than anyone's. It puts KILLSWITCH on the same discipline MEASURE runs on — *no repeated note* — so the stance is not something he sets and forgets, it is something he has to keep earning by rotating. Two reveals of one colour and the mode drops.
+**Playing the same colour twice running ends it**, and this is the line that makes the card his rather than anyone's. It puts KILLSWITCH on the same discipline MEASURE runs on — *no repeated note* — so the stance is not something he sets and forgets, it is something he has to keep earning by rotating. Two turns of one colour and the mode drops.
 
-**A reveal is not a turn, and the difference is load-bearing.** MEASURE asks about *the card you played last turn*, so a block does not count. KILLSWITCH asks about *reveals*, so a block does. He can lose the stance while defending, on someone else's turn, holding a card he was glad to have. That is the price of a number this size, and it is a price he pays with attention rather than with HP.
+**It asks the same question MEASURE asks, and that is the point.** *The card you played last turn*, compared against this one — one rotation discipline, two cards reading it, and one thing for a player to track instead of two. The whole kit ends up being about the same sentence: don't repeat the note. MEASURE pays him for keeping that true; KILLSWITCH charges him when it stops being true.
+
+*Changed 2026-09-18 from "two consecutive reveals" to two consecutive turns.* The earlier version counted blocks, which meant he could lose the stance on someone else's turn, defending with whatever was legal in his hand. That is a cost he cannot steer, and a card this expensive should charge for decisions rather than for what the wheel happened to hand him. **Turns are his to choose. Blocks often are not.**
 
 **Replaying KILLSWITCH is not a repeat that hurts him.** Green into green ends the old stance, and the same card immediately sets a new one — which the replacement clause was already doing. The clause bites on the *other* greens in his deck, which is why he only has two green slots and one of them is this.
+
+**And several attacks in one turn are still one turn.** If something hands him an extra attack, the colours he plays inside that turn are not compared against each other — only against the turn before. A card that buys him a second swing does not also charge him for taking it.
 
 **The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
 

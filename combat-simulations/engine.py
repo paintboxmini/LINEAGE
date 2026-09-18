@@ -147,13 +147,6 @@ class Combatant:
         self.last_color = None
         self.color_this_turn = None
 
-        # The colour of the last card you *revealed*, attacking or
-        # defending. A different question from last_color above, and
-        # deliberately so: KILLSWITCH ends on "the same colour in two
-        # consecutive reveals", which a block counts toward, while MEASURE
-        # asks about your own last turn, which a block is not part of.
-        self.last_reveal_color = None
-
         # Stances: a choice that stays up for the fight and replaces itself
         # rather than stacking (KILLSWITCH). Keyed by card name, holding
         # exactly what that card granted so it can take back that much and
@@ -551,12 +544,12 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     if def_card is None:
         log(f'{defender.name} has no legal defense.')
         # Turned face up against nothing, which is still a reveal.
-        _revealed([(attacker, atk_card)], log)
+        _revealed_on_own_turn(attacker, atk_card, log)
         return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
 
     # Step 5. Reveal.
     log(f'  {atk_card.name} ({atk_card.color}) vs {def_card.name} ({def_card.color})')
-    _revealed([(attacker, atk_card), (defender, def_card)], log)
+    _revealed_on_own_turn(attacker, atk_card, log)
     if atk_traits.mirrors_color or def_traits.mirrors_color:
         # HOLD THE LINE takes the colour it is resolving against, so there
         # is nothing for RPS to decide. A guaranteed tie, which its own
@@ -580,26 +573,29 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
                    rng, wheel)
 
 
-def _revealed(pairs, log):
-    """Record what each side turned face up, and end anything that watches
-    for a repeat.
+def _revealed_on_own_turn(who, card, log):
+    """KILLSWITCH: "Playing the same colour on two consecutive turns ends
+    it."
 
-    A reveal is not a turn. A card played to defend is revealed, so it
-    counts here — which is exactly what separates KILLSWITCH's "two
-    consecutive reveals" from MEASURE's "the card you played last turn"
-    (`engine.Combatant.last_color`).
+    The same question MEASURE asks, read off the same state —
+    `Combatant.last_color`, which `play.take_turn` rolls forward at the top
+    of each turn, so during this turn it still holds last turn's colour. One
+    rotation discipline, two cards consulting it.
 
-    An exchange that ends before Step 5 — a clean Evade, a Blind miss —
-    revealed nothing, so it neither continues a streak nor breaks one. A
-    reveal where you played no card is likewise not a reveal of yours.
+    Only the attacker's card reaches this. A block is played on someone
+    else's turn, so it is neither a turn of yours nor a card that can cost
+    you the stance. An exchange that ends before Step 5 — a clean Evade, a
+    Blind miss — reveals nothing at all.
+
+    Several attacks in one turn are still one turn: last_color is not
+    touched until the next turn begins, so a turn that opens Red and
+    follows with Blue has played both colours this turn, and either one
+    matching last turn's ends it.
     """
-    for who, card in pairs:
-        if card is None or not card.color:
-            continue
-        repeated = who.last_reveal_color == card.color
-        who.last_reveal_color = card.color
-        if repeated:
-            fx.end_stances_on_repeat(who, card.color, log)
+    if card is None or not card.color:
+        return
+    if who.last_color == card.color:
+        fx.end_stances_on_repeat(who, card.color, log)
 
 
 def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):

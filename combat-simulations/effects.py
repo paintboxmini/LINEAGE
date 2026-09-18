@@ -1985,8 +1985,8 @@ class Replaces(Op):
 
 
 class EndsOnColourRepeat(Op):
-    """Compile-time marker for "Playing the same colour in two consecutive
-    reveals ends it." Consumed by `_resolve_durations`, which sets the flag
+    """Compile-time marker for "Playing the same colour on two consecutive
+    turns ends it." Consumed by `_resolve_durations`, which sets the flag
     on the Stance it follows."""
 
     def apply(self, ctx):          # pragma: no cover - unreachable
@@ -1998,7 +1998,8 @@ class Stance(Op):
 
     KILLSWITCH (`campaign/chris.md`): "Lasts until the end of combat.
     Playing KILLSWITCH again replaces your current choice rather than adding
-    to it." A killswitch flips; it does not accumulate. Without the second
+    to it. Playing the same colour on two consecutive turns ends it."
+    A killswitch flips; it does not accumulate. Without the second
     sentence the card is a stacking buff, so the engine has to be able to
     take back what the card granted last time — and only that much. Armour
     that arrived from somewhere else is not KILLSWITCH's to remove.
@@ -2080,16 +2081,16 @@ def _take_back(who, key, held, log, why):
 
 
 def end_stances_on_repeat(who, color, log):
-    """KILLSWITCH: "Playing the same colour in two consecutive reveals ends
-    it." Called by `engine` at the reveal, for the stances that carry the
-    clause — a stance without it is untouched.
+    """KILLSWITCH: "Playing the same colour on two consecutive turns ends
+    it." Called by `engine` when a card is revealed on its owner's turn, for
+    the stances that carry the clause — a stance without it is untouched.
     """
     for key, held in list(who.stances.items()):
         if not held.get('ends_on_repeat'):
             continue
         who.stances.pop(key, None)
         _take_back(who, key, held, log,
-                   f'ends on two {color} reveals running')
+                   f'ends on two {color} turns running')
 
 
 def _extend_to_combat(op):
@@ -2153,7 +2154,7 @@ def _r_replaces(m):
     return [Replaces(m.group(1).strip())]
 
 
-@rule(r'^playing the same colou?r in two consecutive reveals ends it')
+@rule(r'^playing the same colou?r on two consecutive turns ends it')
 def _r_ends_on_repeat(m):
     return [EndsOnColourRepeat()]
 
