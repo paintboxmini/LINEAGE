@@ -131,6 +131,11 @@ class Combatant:
         self.extra_attacks = 0
         self.extra_actions = 0
 
+        # Damage modifiers that outlive the exchange that granted them —
+        # CALLED SHOT against one target, ATTUNE on one colour, CLIMB while
+        # Anchored. Each is {bonus, mult, color, target, uses, text}.
+        self.standing_mods = []
+
     # ---- derived --------------------------------------------------------
 
     # ---- position ------------------------------------------------------
@@ -604,6 +609,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         if ops:
             _phase(ops, ctx, 'pre')
 
+        bonus, mult = _standing(attacker, atk_card, defender, log)
         swap = defender.restriction(WOUND_INSTEAD)
         if swap is not None:
             from cards import status_card
@@ -615,9 +621,9 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         else:
             rolled = roll_damage(
                 attacker, atk_card, rng,
-                bonus=ctx.dmg_bonus if ctx else 0,
+                bonus=(ctx.dmg_bonus if ctx else 0) + bonus,
                 extra_dice=ctx.dmg_dice if ctx else (),
-                mult=ctx.dmg_mult if ctx else 1,
+                mult=(ctx.dmg_mult if ctx else 1) * mult,
                 explode=ctx.explode if ctx else 0)
             dealt = defender.take(rolled, source=attacker, log=log,
                                   ignore_resist=atk_traits.ignores_resist)
@@ -783,6 +789,26 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
     _phase(ops, ctx, 'pre')
     _phase(ops, ctx, 'post')
     return _settle(ctx, card, actor)
+
+
+def _standing(attacker, card, defender, log):
+    """Standing damage modifiers that match this attack, spent as they
+    apply. A modifier can be keyed to a colour, to a target, or to
+    neither."""
+    bonus, mult = 0, 1
+    for mod in list(attacker.standing_mods):
+        if mod.get('color') and mod['color'] != card.color:
+            continue
+        if mod.get('target') is not None and mod['target'] is not defender:
+            continue
+        bonus += mod.get('bonus', 0)
+        mult *= mod.get('mult', 1)
+        log(f'  {mod.get("text", "a standing bonus")} applies.')
+        if mod.get('uses') is not None:
+            mod['uses'] -= 1
+            if mod['uses'] <= 0:
+                attacker.standing_mods.remove(mod)
+    return bonus, mult
 
 
 # Everyone in the current fight. Set by play.py before the first exchange so

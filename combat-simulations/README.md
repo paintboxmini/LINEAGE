@@ -84,8 +84,8 @@ moving, attacking, or triggering a Defense Effect. Expiry is measured
 against the turn of whoever played the card, not whoever is holding it,
 because that is what "until your next turn" says on the card.
 
-Run `python3 effects.py` for the live figure; it was 282/319 (88%) when this
-paragraph was written — 274 compiling and 8 read as traits.
+Run `python3 effects.py` for the live figure; it was 296/319 (93%) when this
+paragraph was written — 288 compiling and 8 read as traits.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly

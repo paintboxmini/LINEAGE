@@ -100,6 +100,8 @@ class Context:
         self.explode = 0
         self.damage_rolled = 0
         self.phase = 'post'
+        self.scried = []
+        self.scry_bottomed = []
 
     def resolve(self, spec, prompt='Target'):
         """A target spec to a list of combatants."""
@@ -377,6 +379,12 @@ class Scry(Op):
                 who.deck.insert(0, c)
             for c in keep:
                 who.deck.append(c)
+            if who is ctx.actor:
+                # MATCHED PAIR and UNDERSTANDING ask about the cards, not
+                # about the act — so what was seen and where it went is
+                # recorded for the clauses that follow.
+                ctx.scried = list(look)
+                ctx.scry_bottomed = list(bottom)
             ctx.log(f'  {who.name} Scrys {len(look)}'
                     + (f', bottoming {len(bottom)}.' if bottom else '.'))
 
@@ -1578,6 +1586,280 @@ def _r_priority(m):
       r'(?:\.? the new order takes effect this cycle)?')
 def _r_staring_contest(m):
     return [WheelMoveAfter(OPPONENT)]
+
+
+class RevealTop(Op):
+    """PROFILE: look at the top of your own deck and compare its colour to
+    the card the other side just played."""
+
+    def __init__(self, status):
+        self.status = status
+
+    def apply(self, ctx):
+        if not ctx.actor.deck or ctx.opponent is None:
+            return
+        top = ctx.actor.deck[-1]
+        other = getattr(ctx, 'opponent_card', None)
+        if other is None:
+            return
+        ctx.log(f'  {ctx.actor.name} reveals {top.name} ({top.color}).')
+        if top.color == other.color:
+            grant(ctx.opponent, self.status, log=ctx.log)
+        else:
+            ctx.log(f'  no match against {other.color}.')
+
+
+class TransferHP(Op):
+    """SHARED BURDEN: "Choose an amount. Target ally gains that much HP and
+    you lose that much HP." Uncapped by design — see rules/cards.md."""
+
+    def apply(self, ctx):
+        allies = ctx.resolve(ALLY, 'Give HP to')
+        if not allies:
+            return
+        who = allies[0]
+        room = max(0, who.max_hp - who.hp)
+        most = max(0, min(room, ctx.actor.hp - 1))
+        if most <= 0:
+            ctx.log('  nothing to transfer.')
+            return
+        amount = most
+        if ctx.agent is not None and hasattr(ctx.agent, 'choose_amount'):
+            amount = ctx.agent.choose_amount(ctx.actor, 0, most,
+                                             f'HP to give {who.name}')
+        if amount <= 0:
+            return
+        ctx.actor.take(amount, unpreventable=True, log=ctx.log)
+        who.heal(amount, log=ctx.log)
+        ctx.log(f'  {ctx.actor.name} gives {who.name} {amount} HP.')
+
+
+class DiscardHandDraw(Op):
+    """RELEASE: "You may discard your hand, then draw that many cards." """
+
+    def apply(self, ctx):
+        if not ctx.actor.hand:
+            return
+        if ctx.agent is not None and not ctx.agent.choose_yes_no(
+                ctx.actor, f'Discard your hand of {len(ctx.actor.hand)} and redraw'):
+            return
+        n = len(ctx.actor.hand)
+        ctx.actor.discard.extend(ctx.actor.hand)
+        ctx.actor.hand.clear()
+        ctx.log(f'  {ctx.actor.name} discards {n} and draws again.')
+        Draw(SELF, n).apply(ctx)
+
+
+class EachAllyChooses(Op):
+    """RELEASE's defence half: every ally picks for themselves."""
+
+    def __init__(self, branches, labels):
+        self.branches, self.labels = branches, labels
+
+    def apply(self, ctx):
+        for mate in ctx.resolve(ALL_ALLIES, 'Each ally'):
+            i = 0
+            if ctx.agent is not None and len(self.branches) > 1:
+                pick = ctx.agent.choose_option(mate, list(self.labels),
+                                               f'{mate.name} chooses')
+                i = self.labels.index(pick) if pick in self.labels else 0
+            sub = Context(mate, ctx.opponent, [ctx.actor], ctx.enemies,
+                          ctx.card, ctx.outcome, rng=ctx.rng, log=ctx.log,
+                          agent=getattr(mate, '_agent', ctx.agent))
+            sub.wheel = ctx.wheel
+            ctx.log(f'  {mate.name}: {self.labels[i]}')
+            for op in self.branches[i]:
+                op.apply(sub)
+
+
+class Adjacent(Op):
+    """ALIGN: a rider that only pays when the two of you act next to each
+    other on the wheel."""
+
+    def __init__(self, ops, label):
+        self.ops, self.label = ops, label
+
+    def apply(self, ctx):
+        mate = (ctx.resolve(ALLY, 'Align with') or [None])[0]
+        if mate is None or ctx.wheel is None:
+            return
+        if ctx.wheel.adjacent(ctx.actor, mate):
+            ctx.log(f'  {ctx.actor.name} and {mate.name} act side by side.')
+            for op in self.ops:
+                op.apply(ctx)
+        else:
+            ctx.log(f'  ({self.label} — not adjacent.)')
+
+
+class Check(Op):
+    """`rules/resolution.md`: 2d10 + stat, meet or beat the DC."""
+
+    def __init__(self, dc, stat, ops, label):
+        self.dc, self.stat, self.ops, self.label = dc, stat, ops, label
+
+    def apply(self, ctx):
+        rng = ctx.rng or ctx.actor.rng
+        roll = rng.randint(1, 10) + rng.randint(1, 10) + ctx.actor.stat(self.stat)
+        ok = roll >= self.dc
+        ctx.log(f'  {ctx.actor.name} rolls {roll} against DC {self.dc} '
+                f'({self.stat.title()}) — {"success" if ok else "failure"}.')
+        if ok:
+            for op in self.ops:
+                op.apply(ctx)
+
+
+class RevealStats(Op):
+    """What a successful STUDY buys. Stats are the deck's colour split, so
+    this is more than trivia (`rules/cards.md`, Deck Building)."""
+
+    def __init__(self, target):
+        self.target = target
+
+    def apply(self, ctx):
+        for who in ctx.resolve(self.target, 'Read'):
+            ctx.log(f'  {who.name}: Body {who.body} / Mind {who.mind} / '
+                    f'Soul {who.soul} — so {who.body} Red, {who.mind} Blue, '
+                    f'{who.soul} Green.')
+
+
+@menu(r'^the next time you attack the (?:defender|attacker), deal double damage')
+def _r_called_shot(m):
+    return [StandingMod(mult=2, on_defender=True, uses=1,
+                        text='double damage against this target, once')]
+
+
+@menu(r'^discard a card, gain \+(\d+) damage with that color the rest of combat')
+def _r_attune(m):
+    return [AttuneMod(int(m.group(1)))]
+
+
+@menu(r'^your attacks deal \+(\d+) damage')
+def _r_climb_bonus(m):
+    """CLIMB's Anchored rider. `rules/card-glossary.md` says an Anchored
+    benefit triggers at the start of each of your turns, so this grants one
+    attack's worth of bonus per turn held rather than a permanent one."""
+    return [StandingMod(bonus=int(m.group(1)), uses=1,
+                        text=f'+{m.group(1)} damage on this turn\'s attack')]
+
+
+@menu(r'^anchored\s*[—-]+\s*(.+)$')
+def _r_anchored_midway(m):
+    """CLIMB reads "Move to the Backline. Anchored — ...", so Anchored is
+    not always the first word of a half. It still wraps everything after
+    it."""
+    body = re.sub(r'(?:,\s*)?at the start of each of your turns[,]?\s*', '',
+                  m.group(1), flags=re.I).strip()
+    inner = compile_half(body)
+    return [Anchored(inner, body)] if inner else None
+
+
+# -- the seated singles --------------------------------------------------
+
+@menu(r'^scry (\d+)\. if they share a color, (.+?)\.?$')
+def _r_matched_pair(m):
+    inner = compile_half(m.group(2))
+    if inner is None:
+        return None
+    n = int(m.group(1))
+    return [Scry(SELF, n),
+            Gated(lambda ctx: len(ctx.scried) == n
+                  and len({c.color for c in ctx.scried}) == 1,
+                  inner, 'the two shared a colour')]
+
+
+@menu(r'^scry (\d+)\. if you bottom both, (.+?)\.?$')
+def _r_understanding(m):
+    inner = compile_half(m.group(2))
+    if inner is None:
+        return None
+    return [Scry(SELF, int(m.group(1))),
+            Gated(lambda ctx: len(ctx.scry_bottomed) == 2,
+                  inner, 'both went to the bottom')]
+
+
+@menu(rf'^scry (\d+), then you may reveal the top card of your deck\. if it '
+      rf"matches the (?:defender|attacker)'s card color, they gain ({STATUS_RE})")
+def _r_profile(m):
+    return [Scry(SELF, int(m.group(1))), RevealTop(m.group(2).lower())]
+
+
+@menu(rf'^target ally in your position gains ({STATUS_RE})\. if they also act '
+      rf'next to you in the initiative order, you gain ({STATUS_RE}) too')
+def _r_align(m):
+    return [Grant(ALLY, m.group(1).lower()),
+            Adjacent([Grant(SELF, m.group(2).lower())], 'the rider')]
+
+
+@menu(r'^you may discard your hand, then draw that many cards')
+def _r_release(m):
+    return [DiscardHandDraw()]
+
+
+@menu(r'^all allies may move position or gain initiative shift \+(\d+)')
+def _r_release_def(m):
+    return [EachAllyChooses(
+        [[Move(SELF, optional=False)], [Shift(SELF, int(m.group(1)))]],
+        ['move position', f'Initiative Shift +{m.group(1)}'])]
+
+
+@menu(r'^choose an amount\. target ally gains that much HP and you lose that '
+      r'much HP')
+def _r_shared_burden(m):
+    return [TransferHP()]
+
+
+@menu(r'^make a DC (\d+) (mind|body|soul)/\w+ check\. on a success, '
+      r'the (?:attacker|defender) reveals their stats')
+def _r_study(m):
+    return [Check(int(m.group(1)), m.group(2).lower(),
+                  [RevealStats(OPPONENT)], 'the read')]
+
+
+class StandingMod(Op):
+    """A damage modifier that outlives this exchange.
+
+    CALLED SHOT keys on a target, ATTUNE on a colour, CLIMB on neither.
+    """
+
+    def __init__(self, bonus=0, mult=1, color=None, on_defender=False,
+                 uses=None, text='a standing bonus'):
+        self.bonus, self.mult, self.color = bonus, mult, color
+        self.on_defender, self.uses, self.text = on_defender, uses, text
+
+    def apply(self, ctx):
+        ctx.actor.standing_mods.append({
+            'bonus': self.bonus, 'mult': self.mult, 'color': self.color,
+            'target': ctx.opponent if self.on_defender else None,
+            'uses': self.uses, 'text': self.text})
+        ctx.log(f'  {ctx.actor.name}: {self.text}.')
+
+
+class AttuneMod(Op):
+    """ATTUNE: "Discard a card, gain +2 damage with that color the rest of
+    combat." The colour is whatever was discarded, so the discard has to
+    happen first and be looked at."""
+
+    def __init__(self, amount):
+        self.amount = amount
+
+    def apply(self, ctx):
+        if not ctx.actor.hand:
+            ctx.log('  nothing to discard.')
+            return
+        rng = ctx.rng or ctx.actor.rng
+        card = rng.choice(ctx.actor.hand)
+        if ctx.agent is not None and hasattr(ctx.agent, 'choose_option'):
+            names = [c.name for c in ctx.actor.hand]
+            pick = ctx.agent.choose_option(ctx.actor, names, 'Discard which')
+            card = next((c for c in ctx.actor.hand if c.name == pick), card)
+        ctx.actor.hand.remove(card)
+        ctx.actor.discard.append(card)
+        ctx.actor.standing_mods.append({
+            'bonus': self.amount, 'mult': 1, 'color': card.color,
+            'target': None, 'uses': None,
+            'text': f'+{self.amount} damage with {card.color}'})
+        ctx.log(f'  {ctx.actor.name} discards {card.name} — '
+                f'+{self.amount} damage with {card.color} for the fight.')
 
 
 # ---- card traits -------------------------------------------------------

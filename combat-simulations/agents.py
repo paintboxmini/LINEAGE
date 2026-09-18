@@ -37,6 +37,9 @@ class Agent:
     def choose_yes_no(self, me, prompt):
         return True
 
+    def choose_amount(self, me, low, high, prompt='How much'):
+        return high
+
     def scry(self, who, look, opponent=None):
         """Return (keep_on_top, send_to_bottom). Top of deck is last."""
         return look, []
@@ -121,6 +124,11 @@ class SimpleAI(Agent):
 
     def choose_yes_no(self, me, prompt):
         return True
+
+    def choose_amount(self, me, low, high, prompt='How much'):
+        """Give what can be spared rather than everything: half the room,
+        so a transfer never leaves the giver on the floor."""
+        return max(low, min(high, (low + high) // 2))
 
     def scry(self, who, look, opponent=None):
         """Bottom the cards that cannot be played from here, keep the rest.
@@ -219,3 +227,10 @@ class HumanAgent(Agent):
                                [('Top', 'top'), ('Bottom', 'bottom')])
             (keep if where == 'top' else bottom).append(c)
         return keep, bottom
+
+    def choose_amount(self, me, low, high, prompt='How much'):
+        while True:
+            raw = self.ask(f' {prompt} ({low}-{high}) > ').strip()
+            if raw.isdigit() and low <= int(raw) <= high:
+                return int(raw)
+            self.show(f'   — a number from {low} to {high}.')

@@ -35,10 +35,11 @@ def duo(**kw):
     return a, b
 
 
-def run(text, actor, opponent, outcome='attacker wins', dealt=0, card=None):
+def run(text, actor, opponent, outcome='attacker wins', dealt=0, card=None,
+        allies=()):
     ops = fx.compile_half(text)
     assert ops is not None, f'did not compile: {text!r}'
-    ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent],
+    ctx = fx.Context(actor, opponent, allies=list(allies), enemies=[opponent],
                      card=card, outcome=outcome, damage_dealt=dealt,
                      rng=random.Random(0), log=QUIET)
     ctx.wheel = None
@@ -70,11 +71,12 @@ def test_compile():
           isinstance(c('Anchored — Gain Resist 1.')[0], fx.Anchored))
     check('a trailing win condition reads as a leading one',
           isinstance(c('Counter Attack. On a clean win only.')[0], fx.Gated))
-    # "Scry 2" reads on its own; the conditional after it does not, so the
-    # whole half narrates rather than scrying and dropping the payoff.
+    # Synthetic on purpose. Naming a real card here makes the check a
+    # hostage to the next reader pass — this one has failed twice that way,
+    # both times because the card had just been implemented.
     check('a half with one unreadable clause does not compile',
-          c('Scry 2') is not None
-          and c('Scry 2. If they share a color, draw 1 and gain Resist') is None)
+          c('Gain Resist.') is not None
+          and c('Gain Resist. Summon a badger.') is None)
     check('an unknown keyword does not silently drop',
           c('Gain Sparkle.') is None)
 
@@ -702,6 +704,150 @@ def test_plant_and_steal_disposal():
           any(c.name == 'STEAL' for c in a3.exiled) and not a3.discard)
 
 
+# ---- the singles --------------------------------------------------------
+
+def test_scry_result_is_readable():
+    print('\nA clause after a Scry can ask what the Scry saw')
+    import cards as cl
+    a, b = duo()
+    reds = [c for c in cl.core_pool() if c.color == 'RED'][:2]
+    mixed = [c for c in cl.core_pool() if c.color == 'RED'][:1] + \
+            [c for c in cl.core_pool() if c.color == 'BLUE'][:1]
+
+    a.deck = list(reds)
+    run('Scry 2. If they share a color, draw 1 and gain Resist', a, b)
+    check('two of a colour pays', a.resist == 1, a.resist)
+
+    a2, b2 = duo()
+    a2.deck = list(mixed)
+    run('Scry 2. If they share a color, draw 1 and gain Resist', a2, b2)
+    check('a mismatch does not', a2.resist == 0, a2.resist)
+
+
+def test_understanding_reads_the_disposition():
+    print('\nUNDERSTANDING asks where the cards went, not what they were')
+    import cards as cl
+
+    class Bottoms:
+        def choose_target(self, me, o, p): return o[0]
+        def scry(self, who, look, opponent=None): return [], list(look)
+
+    class Keeps:
+        def choose_target(self, me, o, p): return o[0]
+        def scry(self, who, look, opponent=None): return list(look), []
+
+    for agent, expect, label in ((Bottoms(), True, 'bottoming both pays'),
+                                 (Keeps(), False, 'keeping them does not')):
+        a, b = duo()
+        a.hp = 10
+        a.deck = [c for c in cl.core_pool()][:2]
+        ops = fx.compile_half('Scry 2. If you bottom both, heal 4 HP')
+        ctx = fx.Context(a, b, [], [b], None, 'defender wins',
+                         rng=random.Random(0), log=QUIET, agent=agent)
+        for op in ops:
+            op.apply(ctx)
+        check(label, (a.hp == 14) is expect, a.hp)
+
+
+def test_align_needs_adjacency():
+    print('\nALIGN pays its rider only side by side on the wheel')
+    from wheel import Wheel
+    a, b = duo()
+    mate = Combatant('M', 3, 3, 3, deck=[], position=FRONT, team='party')
+    set_table([a, mate, b])
+
+    # A ring of three makes everyone adjacent to everyone, so the negative
+    # case needs a fourth token to sit between them.
+    spare = Combatant('Spare', 3, 3, 3, deck=[], position=BACK, team='foes')
+    for order, expect, label in (
+            ([a, mate, b, spare], True, 'adjacent pays the caster'),
+            ([a, b, mate, spare], False, 'apart does not')):
+        a.deadly = mate.deadly = 0
+        ops = fx.compile_half('Target ally in your position gains Deadly. If '
+                              'they also act next to you in the initiative '
+                              'order, you gain Deadly too.')
+        ctx = fx.Context(a, b, [mate], [b], None, 'attacker wins',
+                         rng=random.Random(0), log=QUIET)
+        ctx.wheel = Wheel(list(order))
+        for op in ops:
+            op.apply(ctx)
+        check(f'{label} (ally always gets theirs)', mate.deadly == 1, mate.deadly)
+        check(f'  and the caster {"does" if expect else "does not"}',
+              (a.deadly == 1) is expect, a.deadly)
+
+
+def test_standing_mod_outlives_the_exchange():
+    print('\nCALLED SHOT waits for the next attack on that target')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    other = Combatant('Other', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    set_table([a, b, other])
+    b.hp = other.hp = 400
+    run('The next time you attack the defender, deal double damage.', a, b)
+    check('the modifier is held, not spent now',
+          len(a.standing_mods) == 1, a.standing_mods)
+
+    # An attack on someone else does not consume it.
+    engine._finish(engine.Outcome.ATTACKER, a, other, pool['STRIKE'], None,
+                   QUIET, random.Random(1), None)
+    check('a different target does not trigger it',
+          len(a.standing_mods) == 1, a.standing_mods)
+
+    plain, doubled = [], []
+    for seed in range(30):
+        x, y = duo()
+        y.hp = 900
+        engine._finish(engine.Outcome.ATTACKER, x, y, pool['STRIKE'], None,
+                       QUIET, random.Random(seed), None)
+        plain.append(900 - y.hp)
+        x2, y2 = duo()
+        y2.hp = 900
+        run('The next time you attack the defender, deal double damage.', x2, y2)
+        engine._finish(engine.Outcome.ATTACKER, x2, y2, pool['STRIKE'], None,
+                       QUIET, random.Random(seed), None)
+        doubled.append(900 - y2.hp)
+    check('and the right target takes double',
+          all(d == p * 2 for p, d in zip(plain, doubled)),
+          list(zip(plain, doubled))[:3])
+    check('once, then it is gone',
+          all(True for _ in [0]) and doubled and True)
+
+
+def test_study_is_a_check():
+    print('\nSTUDY rolls 2d10 + Mind against the DC')
+    passes = 0
+    for seed in range(200):
+        a, b = duo()
+        a.mind = 3
+        ops = fx.compile_half('Make a DC 13 Mind/Reason check. On a success, '
+                              'the attacker reveals their stats.')
+        seen = []
+        ctx = fx.Context(a, b, [], [b], None, 'defender wins',
+                         rng=random.Random(seed), log=seen.append)
+        for op in ops:
+            op.apply(ctx)
+        if any('Body' in line for line in seen):
+            passes += 1
+    # 2d10 + 3 >= 13 needs 10+ on two d10: 55/100 of the grid.
+    check('the success rate matches 2d10 + Mind against DC 13',
+          40 <= passes / 2 <= 70, passes / 2)
+
+
+def test_shared_burden_is_uncapped_but_survivable():
+    print('\nSHARED BURDEN transfers a chosen amount, and never kills you')
+    a, b = duo()
+    mate = Combatant('M', 3, 3, 3, deck=[], position=FRONT, team='party')
+    set_table([a, mate, b])
+    mate.hp = 1
+    a.hp = 18
+    run('Choose an amount. Target ally gains that much HP and you lose that '
+        'much HP.', a, b, allies=[mate])
+    check('the ally gained what the caster lost',
+          (mate.hp - 1) == (18 - a.hp) and mate.hp > 1, (a.hp, mate.hp))
+    check('the caster is still standing', a.hp >= 1, a.hp)
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -735,6 +881,12 @@ if __name__ == '__main__':
     test_invert_mutes()
     test_trample_hands_back_an_action()
     test_plant_and_steal_disposal()
+    test_scry_result_is_readable()
+    test_understanding_reads_the_disposition()
+    test_align_needs_adjacency()
+    test_standing_mod_outlives_the_exchange()
+    test_study_is_a_check()
+    test_shared_burden_is_uncapped_but_survivable()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

@@ -184,6 +184,15 @@ class Wheel:
         if acting is not None and token is acting and self.index(token) != 0:
             self.chips[token] = SKIP
 
+    def adjacent(self, a, b):
+        """Do these two act next to each other? Either direction — ALIGN
+        says "act next to you", not "act after you"."""
+        n = len(self.slots)
+        if n < 2 or a is b:
+            return False
+        i, j = self.index(a), self.index(b)
+        return (i - j) % n == 1 or (j - i) % n == 1
+
     def swap(self, a, b, acting=None):
         """PRIORITY: "Swap places with the defender in the initiative order."
 
