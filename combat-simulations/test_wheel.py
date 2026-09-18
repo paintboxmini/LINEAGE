@@ -144,13 +144,15 @@ def join_and_leave():
     assert w.order() == ['a', 's', 'c'], w.order()
 
 
-# ---- reordering that is not a shift -------------------------------------
+# ---- cases beyond the numbered examples ---------------------------------
 #
-# PRIORITY and STARING CONTEST move a token without sliding the ring the way
-# Initiative Shift does. No worked cases exist for these — they are checked
-# against the general principles the glossary states rather than against a
-# written example, and that difference is worth knowing when reading a
-# failure here.
+# Two kinds live here. The shift cases — a combatant shifting on its own
+# turn, in either direction — are Examples 6 and 7 in
+# `rules/initiative-shift-examples.md` and have an oracle like everything
+# above. The reorder cases — PRIORITY's swap and STARING CONTEST's move —
+# do not: they are not shifts, no worked example covers them, and they are
+# checked against the general principles the glossary states instead. Worth
+# knowing which kind you are looking at when one of them fails.
 
 def swap_moves_only_two():
     """PRIORITY: two tokens exchange slots and nobody else is touched.
@@ -239,12 +241,12 @@ def ring_stays_intact():
 
 
 def self_shift_while_acting_is_not_a_bonus_turn():
-    """A combatant shifting itself on its own turn stands on the marker's
-    slot, so the distance to the marker is zero and the general rule would
-    make every such shift a crossing — a free extra turn off QUICKEN, every
-    time. Measured where the glossary says to measure it instead: against
-    when the token's own next turn would have arrived, which having acted
-    is after everyone else."""
+    """`rules/initiative-shift-examples.md`, Example 6. A combatant shifting
+    itself stands on the marker's slot, so the distance to the marker is
+    zero and the general rule would make every such shift a crossing — a
+    free extra turn off QUICKEN, every time. Measured instead against when
+    the token's own next turn would have arrived, which having acted is
+    after everyone else."""
     def when_next(amount):
         w = Wheel(['a', 'b', 'c', 'd'])
         w.shift('a', amount, acting='a')
@@ -279,13 +281,14 @@ def when_next(w, token, depth=40):
 
 
 def a_negative_shift_puts_one_more_person_in_front_per_point():
-    """The whole rule in one line: -X means X more turns happen before
-    yours. A combatant on the marker's slot has just acted, so their next
-    turn is n away, not 0 — read the slot as their place in the queue and
-    every shift comes out backwards.
+    """`rules/initiative-shift-examples.md`, Example 7. The whole rule in
+    one line: -X means X more turns happen before yours. A combatant on the
+    marker's slot has just acted, so their next turn is n away, not 0 —
+    read the slot as their place in the queue and every shift comes out
+    backwards.
 
-    Drew's numbers, table of four, baseline after three others:
-        -1 after 4, -2 after 5, -3 after 6.
+    Table of four, baseline after three others: -1 after 4, -2 after 5,
+    -3 after 6.
     """
     assert when_next(Wheel(['a', 'b', 'c', 'd']), 'a') == 3
 
@@ -396,7 +399,7 @@ if __name__ == '__main__':
         case('no table-size correction', no_table_size_correction),
         case('joining and leaving', join_and_leave),
     ]
-    print('\nreordering that is not a shift (no written oracle):')
+    print('\nExamples 6 and 7, and the reorders that are not shifts:')
     results += [
         case('PRIORITY moves only two tokens', swap_moves_only_two),
         case('a swap off the marker grants no second turn',
