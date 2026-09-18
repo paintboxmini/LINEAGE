@@ -112,7 +112,7 @@ class Context:
             rest = [e for e in self.enemies if e is not self.opponent]
             if not rest:
                 return []
-            rng = self.rng or __import__('random')
+            rng = self.rng or self.actor.rng
             return [rng.choice(rest)]
         if spec == SELF_AND_ALLY:
             return [self.actor] + self.resolve(ALLY, prompt)
@@ -288,7 +288,7 @@ class Draw(Op):
                     if not who.discard:
                         break
                     who.deck, who.discard = who.discard, []
-                    (ctx.rng or __import__('random')).shuffle(who.deck)
+                    (ctx.rng or who.rng).shuffle(who.deck)
                 who.hand.append(who.deck.pop())
                 got += 1
             if got:
@@ -300,7 +300,7 @@ class Discard(Op):
         self.target, self.n, self.at_random = target, n, at_random
 
     def apply(self, ctx):
-        rng = ctx.rng or __import__('random')
+        rng = ctx.rng or ctx.actor.rng
         for who in ctx.resolve(self.target, 'Discard'):
             for _ in range(min(self.n, len(who.hand))):
                 card = rng.choice(who.hand) if self.at_random else who.hand[-1]
@@ -417,7 +417,7 @@ class CounterAttack(Op):
         if ctx.opponent is None or ctx.card is None:
             return
         from engine import roll_damage
-        dmg = roll_damage(ctx.actor, ctx.card, ctx.rng or __import__('random'))
+        dmg = roll_damage(ctx.actor, ctx.card, ctx.rng or ctx.actor.rng)
         ctx.log(f'  {ctx.actor.name} Counter Attacks.')
         ctx.opponent.take(dmg, source=ctx.actor, log=ctx.log)
 
@@ -427,14 +427,73 @@ class Anchored(Op):
     your turns for as long as you hold position. It does not pay on the turn
     it is played — the first trigger is your next turn — and it ends the
     moment you move, voluntarily or not, or Collapse.
+
+    A start-of-turn reaction that breaks on movement; nothing more special
+    than that, now that reactions exist.
     """
 
     def __init__(self, ops, text):
         self.ops, self.text = ops, text
 
     def apply(self, ctx):
-        ctx.actor.anchored.append((self.ops, self.text, ctx.opponent))
-        ctx.log(f'  {ctx.actor.name} is Anchored: {self.text}')
+        from engine import Pending
+        ctx.actor.add_pending(Pending(
+            'turn_start', owner=ctx.actor, expires='combat', ops=self.ops,
+            text=f'Anchored — {self.text}', breaks_on_move=True),
+            log=ctx.log)
+
+
+class Reaction(Op):
+    """An effect that waits on an event rather than firing now — WEATHERED
+    on being damaged, SEED on beginning a turn where it was planted."""
+
+    def __init__(self, event, ops, text, target=SELF, expires='combat',
+                 uses=None, here=False):
+        self.event, self.ops, self.text = event, ops, text
+        self.target, self.expires, self.uses, self.here = (
+            target, expires, uses, here)
+
+    def apply(self, ctx):
+        from engine import Pending
+        for who in ctx.resolve(self.target, 'Attach to'):
+            data = {'position': who.position} if self.here else {}
+            who.add_pending(Pending(
+                self.event, owner=ctx.actor, expires=self.expires,
+                ops=self.ops, uses=self.uses, data=data, text=self.text),
+                log=ctx.log)
+
+
+class Restrict(Op):
+    """A rule the engine has to ask about before acting, rather than
+    something that happens to anyone: a banned colour, a locked position, a
+    forced target, a silenced Defense Effect."""
+
+    def __init__(self, kind, target, text, expires='owner_next_turn',
+                 uses=None, data=None):
+        self.kind, self.target, self.text = kind, target, text
+        self.expires, self.uses, self.data = expires, uses, data or {}
+
+    def apply(self, ctx):
+        from engine import Pending
+        for who in ctx.resolve(self.target, 'Restrict'):
+            data = dict(self.data)
+            if data.get('who') == 'actor':
+                data['who'] = ctx.actor
+            if data.get('color') == 'just_played':
+                card = getattr(ctx, 'opponent_card', None)
+                if card is None:
+                    continue
+                data['color'] = card.color
+            if data.get('color') == 'choose':
+                colors = ['RED', 'BLUE', 'GREEN']
+                data['color'] = (ctx.agent.choose_option(ctx.actor, colors,
+                                                         'Name a colour')
+                                 if ctx.agent else colors[0])
+            who.add_pending(Pending(
+                'restriction', owner=ctx.actor, expires=self.expires,
+                kind=self.kind, uses=self.uses, data=data,
+                text=self.text.replace('{color}', str(data.get('color', '')))),
+                log=ctx.log)
 
 
 class Gated(Op):
@@ -513,15 +572,25 @@ class Reveal(Op):
 
 
 class ExileCardInPlay(Op):
-    """FORGET: the card the other side just played leaves for the fight."""
+    """FORGET: the card the other side just played leaves for the fight.
+
+    It is always in flight when this runs — committed out of hand, not yet
+    discarded — so it is moved straight to the exile pile and the exchange
+    is told not to file it afterwards.
+
+    There is deliberately no "remove it from the discard first" guard. A
+    deck is built by drawing from a shared pool with replacement, so the
+    same Card object can sit in a pile more than once; `card in discard`
+    would then match a different copy and delete that one instead, losing a
+    card that was never involved.
+    """
 
     def apply(self, ctx):
         card = getattr(ctx, 'opponent_card', None)
         if ctx.opponent is None or card is None:
             return
-        if card in ctx.opponent.discard:
-            ctx.opponent.discard.remove(card)
         ctx.opponent.exiled.append(card)
+        ctx.exiled_opponent_card = True
         ctx.log(f'  {card.name} is Exiled for the rest of combat.')
 
 
@@ -1173,6 +1242,130 @@ def _r_consume_cost(m):
     return [MayPay([Exile(SELF, 1, 'hand')],
                    [Grant(OPPONENT, 'weak'), Grant(OPPONENT, 'blind')],
                    'Exile a card to apply Weak and Blind')]
+
+
+@menu(rf'^(?:you and (?:all|your) allies|your party) gains?\s+'
+      rf'((?:{STATUS_RE})(?:[\s,]+(?:and\s+)?(?:{STATUS_RE}))*)')
+def _r_gain_party(m):
+    return _grants(PARTY, m.group(1))
+
+
+@menu(r'^heal\s+(\d+)\s*[x×]\s*your (soul|body|mind)')
+def _r_heal_stat_first(m):
+    """Read before the plain heal rule, which would otherwise take the
+    number and leave the multiplier stranded."""
+    return [HealByStat(SELF, m.group(2).lower(), int(m.group(1)))]
+
+
+# -- deferred: effects that wait on an event ----------------------------
+
+@menu(r'^when you are damaged, (.+?)\.?$')
+def _r_on_damaged(m):
+    """PAIN IS FUEL, WEATHERED. Inside an Anchored the wrapper has already
+    been stripped, so this reads the same either way."""
+    inner = compile_half(m.group(1))
+    return [Reaction('damaged', inner, f'when damaged — {m.group(1)}')] if inner else None
+
+
+@menu(r'^this combat, when you are damaged, (.+?)\.?$')
+def _r_this_combat_damaged(m):
+    inner = compile_half(m.group(1))
+    return [Reaction('damaged', inner, f'when damaged — {m.group(1)}')] if inner else None
+
+
+@menu(r'^if you are attacked again before your next turn, (.+?)\.?$')
+def _r_on_attacked(m):
+    inner = compile_half(m.group(1))
+    if inner is None:
+        return None
+    return [Reaction('attacked', inner, f'if attacked again — {m.group(1)}',
+                     expires='owner_next_turn', uses=1)]
+
+
+@menu(r'^when you are attacked before your next turn, draw 1 card before '
+      r'defending\.? activates multiple times\.?$')
+def _r_anticipate(m):
+    return [Reaction('attacked', [Draw(SELF, 1)],
+                     'draws before defending', expires='owner_next_turn')]
+
+
+@menu(r'^plant a seed at your current position\.? the next time you begin your '
+      r'turn at this position, (.+?)\.?$')
+def _r_seed(m):
+    inner = compile_half(m.group(1))
+    if inner is None:
+        return None
+    return [Reaction('turn_start', inner, f'seeded here — {m.group(1)}',
+                     uses=1, here=True)]
+
+
+# -- deferred: restrictions the engine asks about ------------------------
+
+@menu(r'^name a color\.? the (?:defender|attacker) cannot play that color on '
+      r'their next reveal')
+def _r_axiom(m):
+    from engine import NO_COLOR
+    return [Restrict(NO_COLOR, OPPONENT, 'cannot play {color} on their next reveal',
+                     uses=1, data={'color': 'choose'})]
+
+
+@menu(r'^the (?:defender|attacker) cannot play the color they just played on '
+      r'their next reveal')
+def _r_pressure(m):
+    from engine import NO_COLOR
+    return [Restrict(NO_COLOR, OPPONENT, 'cannot play {color} on their next reveal',
+                     uses=1, data={'color': 'just_played'})]
+
+
+@menu(r'^neither you nor the (?:defender|attacker) may change position until '
+      r'your next turn')
+def _r_corner(m):
+    from engine import NO_MOVE
+    return [Restrict(NO_MOVE, SELF, 'pinned in place'),
+            Restrict(NO_MOVE, OPPONENT, 'pinned in place')]
+
+
+@menu(r'^target cannot attack or be attacked until your next turn')
+def _r_partition(m):
+    from engine import NO_ATTACK, NO_TARGET
+    return [Restrict(NO_ATTACK, OPPONENT, 'partitioned — cannot attack'),
+            Restrict(NO_TARGET, OPPONENT, 'partitioned — cannot be attacked')]
+
+
+@menu(r'^(?:defender|attacker) cannot trigger defense effects until their next turn')
+def _r_unname(m):
+    from engine import NO_DEFENSE_EFFECT
+    return [Restrict(NO_DEFENSE_EFFECT, OPPONENT, 'Defense Effects silenced')]
+
+
+@menu(r'^(?:the defender|enemy|target) must (?:target|attack) you (?:again )?'
+      r'(?:on their next turn|if able on their next turn)(?: if possible)?')
+def _r_must_target(m):
+    from engine import MUST_TARGET
+    return [Restrict(MUST_TARGET, OPPONENT, 'must answer you next turn',
+                     uses=1, data={'who': 'actor'})]
+
+
+@menu(r'^you may ignore the next ability that forces you to move positions')
+def _r_grounding(m):
+    from engine import IGNORE_FORCED_MOVE
+    return [Restrict(IGNORE_FORCED_MOVE, SELF, 'will ignore the next forced move',
+                     expires='combat', uses=1)]
+
+
+@menu(r'^skip your draw step next turn')
+def _r_skip_draw(m):
+    from engine import SKIP_DRAW
+    return [Restrict(SKIP_DRAW, SELF, 'skips their next draw step',
+                     expires='combat', uses=1)]
+
+
+@menu(r'^next attack against you adds 1 wound to the bottom of your deck '
+      r'instead of dealing damage')
+def _r_rend(m):
+    from engine import WOUND_INSTEAD
+    return [Restrict(WOUND_INSTEAD, SELF, 'the next hit becomes a Wound',
+                     expires='combat', uses=1)]
 
 
 # ---- coverage ------------------------------------------------------

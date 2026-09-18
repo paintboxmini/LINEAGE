@@ -12,7 +12,7 @@ import random
 import cards as cardlib
 from engine import Combatant, FRONT, BACK
 from play import build_deck, run
-from agents import RandomAgent
+from agents import RandomAgent, SimpleAI
 from wheel import Wheel
 
 FAILURES = []
@@ -88,33 +88,38 @@ def test_conservation():
     print('\nCard count is conserved per combatant across all piles')
     pool = cardlib.core_pool()
 
-    for seed in range(12):
-        rng = random.Random(seed)
-        party = [Combatant('A', 4, 3, 3, build_deck(pool, 10, 4, 3, 3, rng),
-                           position=FRONT, team='party'),
-                 Combatant('B', 3, 4, 3, build_deck(pool, 10, 3, 4, 3, rng),
-                           position=BACK, team='party')]
-        foes = [Combatant('X', 4, 2, 3, build_deck(pool, 9, 4, 2, 3, rng),
-                          position=FRONT, team='foes'),
-                Combatant('Y', 3, 3, 2, build_deck(pool, 8, 3, 3, 2, rng),
-                          position=BACK, team='foes')]
-        everyone = party + foes
-        for c in everyone:
-            c._agent = RandomAgent(rng)
-        start = {c.name: piles(c) for c in everyone}
-        for c in everyone:
-            c.draw_up()
-        wheel = Wheel(list(everyone))
-        run(party, foes, wheel, lambda *a: None, rng, max_rounds=25)
+    # Wide rather than deep, and both agents. Twelve seeds missed a card
+    # leak that showed up in roughly one fight in forty — the shapes that
+    # break conservation (a card exiled out of an exchange, an attack that
+    # does not happen after both cards are committed) need an unusual
+    # exchange to reach at all.
+    bad_seeds = []
+    for AgentCls in (RandomAgent, SimpleAI):
+        for seed in range(300):
+            rng = random.Random(seed)
+            party = [Combatant('A', 4, 3, 3, build_deck(pool, 10, 4, 3, 3, rng),
+                               position=FRONT, team='party', rng=rng),
+                     Combatant('B', 3, 4, 3, build_deck(pool, 10, 3, 4, 3, rng),
+                               position=BACK, team='party', rng=rng)]
+            foes = [Combatant('X', 4, 2, 3, build_deck(pool, 9, 4, 2, 3, rng),
+                              position=FRONT, team='foes', rng=rng),
+                    Combatant('Y', 3, 3, 2, build_deck(pool, 8, 3, 3, 2, rng),
+                              position=BACK, team='foes', rng=rng)]
+            everyone = party + foes
+            for c in everyone:
+                c._agent = AgentCls(rng)
+            start = {c.name: piles(c) for c in everyone}
+            for c in everyone:
+                c.draw_up()
+            run(party, foes, Wheel(list(everyone)), lambda *a: None, rng,
+                max_rounds=25)
+            bad = [(c.name, start[c.name], piles(c)) for c in everyone
+                   if piles(c) != start[c.name]]
+            if bad:
+                bad_seeds.append((AgentCls.__name__, seed, bad))
 
-        bad = [(c.name, start[c.name], piles(c)) for c in everyone
-               if piles(c) != start[c.name]]
-        check(f'seed {seed}: every combatant ends with the written cards '
-              f'they started', not bad, bad)
-        inserted = sum(status_held(c) for c in everyone)
-        if inserted:
-            print(f'        ({inserted} status card(s) inserted this fight — '
-                  f'a named exception, not a leak)')
+    check('600 fights end with the written cards they started',
+          not bad_seeds, bad_seeds[:3])
 
 
 if __name__ == '__main__':

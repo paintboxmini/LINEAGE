@@ -38,7 +38,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | `play.py` | Turn loop and CLI. |
 | `encounter_budget.py` | Sweeps opponent *count* against the written party and reports where a fight stops being free and starts being lethal. Count is the balance lever, so this varies count rather than stats. Reads stat blocks straight out of `bestiary/` and `characters/`, and checks the engine's derived HP against the published one on the way past. Conclusions live in `rules/gm-guide.md`, How many of them. |
 | `test_wheel.py` | `rules/initiative-shift-examples.md` as assertions. |
-| `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across randomised fights. |
+| `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across 600 randomised fights, both agents. |
 | `test_effects.py` | `rules/card-glossary.md` as assertions, through the cards that use each keyword. |
 
 `rules/invariants.md` is the specification this is checked against.
@@ -56,10 +56,19 @@ runs — grants and their stacking, healing and HP costs, damage, draw,
 discard, Exile, Scry, movement, Initiative Shift, stat drain, Counter
 Attack, Lifesteal, Rushdown, buff stripping and stealing, Wound and
 Exhaust insertion, modal cards where only the chosen branch runs, optional
-costs, and the gates around them (Anchored, clean-win-only, HP thresholds).
+costs, and the gates around them (clean-win-only, HP thresholds).
 
-Run `python3 effects.py` for the live figure; it was 237/319 (74%) when this
-paragraph was written, and 200/247 (81%) across the beginner tier alone.
+Effects that wait are held as **pending** state on the combatant, in two
+shapes that share one lifetime. A *reaction* carries ops and runs them when
+its event fires — WEATHERED on being damaged, SEED on beginning a turn where
+it was planted, Anchored at the start of every turn. A *restriction* carries
+none: the engine asks whether one is in force before playing a colour,
+moving, attacking, or triggering a Defense Effect. Expiry is measured
+against the turn of whoever played the card, not whoever is holding it,
+because that is what "until your next turn" says on the card.
+
+Run `python3 effects.py` for the live figure; it was 263/319 (82%) when this
+paragraph was written, and 218/247 (88%) across the beginner tier alone.
 
 **A half either compiles completely or narrates.** Partial execution is the
 one outcome worth avoiding: an effect that grants the buff and quietly

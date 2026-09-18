@@ -70,8 +70,11 @@ def test_compile():
           isinstance(c('Anchored — Gain Resist 1.')[0], fx.Anchored))
     check('a trailing win condition reads as a leading one',
           isinstance(c('Counter Attack. On a clean win only.')[0], fx.Gated))
+    # "Scry 2" reads on its own; the conditional after it does not, so the
+    # whole half narrates rather than scrying and dropping the payoff.
     check('a half with one unreadable clause does not compile',
-          c('Heal 2 × your Soul. Skip your draw step next turn.') is None)
+          c('Scry 2') is not None
+          and c('Scry 2. If they share a color, draw 1 and gain Resist') is None)
     check('an unknown keyword does not silently drop',
           c('Gain Sparkle.') is None)
 
@@ -116,20 +119,20 @@ def test_anchored():
     a, b = duo()
     run('Anchored — Gain Resist 1.', a, b)
     check('nothing happens on the turn it is played', a.resist == 0, a.resist)
-    check('it is being sustained', len(a.anchored) == 1)
+    check('it is being sustained', len(a.pending) == 1)
     a.tick_anchors(b, [], [b], random.Random(0), QUIET)
     check('it pays at the start of your next turn', a.resist == 1, a.resist)
     a.tick_anchors(b, [], [b], random.Random(0), QUIET)
     check('and again the turn after', a.resist == 2, a.resist)
     a.set_position(BACK)
-    check('moving ends it', a.anchored == [], a.anchored)
+    check('moving ends it', a.pending == [], a.pending)
     a.tick_anchors(b, [], [b], random.Random(0), QUIET)
     check('so it stops paying', a.resist == 2, a.resist)
 
     c, d = duo()
     run('Anchored — Gain Resist 1.', c, d)
     c.take(99, log=QUIET)
-    check('Collapsing ends it too', c.anchored == [], c.anchored)
+    check('Collapsing ends it too', c.pending == [], c.pending)
 
 
 def test_gates():
@@ -325,6 +328,118 @@ def test_position_scoped():
     check('an ally in the other position is not', there.quick == 0, there.quick)
 
 
+# ---- deferred triggers --------------------------------------------------
+
+def test_reaction_on_damage():
+    print('\nA reaction waits for its event')
+    a, b = duo()
+    run('This combat, when you are damaged, gain Ward and heal 3 HP.', a, b)
+    check('nothing fires on the turn it is played',
+          a.ward == 0 and len(a.pending) == 1, (a.ward, len(a.pending)))
+    a.hp = 20
+    a.take(6, log=QUIET)
+    check('it fires when damage lands', a.ward == 1, a.ward)
+    check('and the heal came with it', a.hp == 17, a.hp)
+    a.take(4, log=QUIET)
+    check('"this combat" means it keeps firing', a.ward == 2, a.ward)
+    a.hp = 20
+    a.take(0, log=QUIET)
+    check('zero damage is not being damaged', a.ward == 2, a.ward)
+
+
+def test_expiry_is_owner_keyed():
+    print('\nExpiry is measured against the turn of whoever played it')
+    a, b = duo()
+    run('Target cannot attack or be attacked until your next turn.', a, b)
+    check('the restriction sits on the target', len(b.pending) == 2, len(b.pending))
+    b.expire_pending()
+    check("the target's own turn does not clear it — it is not theirs",
+          len(b.pending) == 2, len(b.pending))
+    a.expire_pending()
+    check("the caster's next turn does", b.pending == [], b.pending)
+
+
+def test_colour_ban():
+    print('\nA banned colour leaves the hand unplayable, not gone')
+    pool = cardlib.core_pool()
+    a, b = duo()
+    b.hand = [c for c in pool if c.color == 'RED'][:2] + \
+             [c for c in pool if c.color == 'GREEN'][:1]
+    b.hand = [c for c in b.hand if c.range_ok(FRONT, FRONT)] or b.hand
+    before = len(b.hand)
+    ops = fx.compile_half('Name a color. The defender cannot play that color '
+                          'on their next reveal')
+
+    class Reds:
+        def choose_target(self, me, opts, prompt): return opts[0]
+        def choose_option(self, me, opts, prompt): return 'RED'
+
+    ctx = fx.Context(a, b, [], [b], None, 'attacker wins',
+                     rng=random.Random(0), log=QUIET, agent=Reds())
+    for op in ops:
+        op.apply(ctx)
+    check('the cards stay in hand', len(b.hand) == before, len(b.hand))
+    check('but none of the banned colour is playable',
+          not any(c.color == 'RED' for c in b.playable(a)))
+    check('other colours still are',
+          any(c.color != 'RED' for c in b.playable(a)) or before == 0)
+
+
+def test_position_lock():
+    print('\nCORNER locks both sides in place')
+    a, b = duo()
+    run('Neither you nor the defender may change position until your next turn.',
+        a, b)
+    check('the caster cannot move', a.set_position(BACK) is False)
+    check('nor the target', b.set_position(BACK) is False)
+    a.expire_pending()
+    check('and both are free once it expires', a.set_position(BACK) is True)
+
+
+def test_grounding_stance():
+    print('\nGROUNDING STANCE ignores a forced move, not a chosen one')
+    a, b = duo()
+    run('You may ignore the next ability that forces you to move positions.', a, b)
+    check('a move you choose still happens',
+          a.set_position(BACK) is True and a.position == BACK)
+    a.set_position(FRONT)
+    check('a forced move is ignored',
+          a.set_position(BACK, forced=True) is False and a.position == FRONT)
+    check('and the charge is spent',
+          a.set_position(BACK, forced=True) is True)
+
+
+def test_seed_is_placed():
+    print('\nSEED waits at the position it was planted')
+    a, b = duo()
+    run('Plant a seed at your current position. The next time you begin your '
+        'turn at this position, gain Deadly twice.', a, b)
+    a.set_position(BACK)
+    a.fire('turn_start', b, [], [b], random.Random(0), QUIET)
+    check('beginning a turn elsewhere does not collect it',
+          a.deadly == 0, a.deadly)
+    a.set_position(FRONT)
+    a.fire('turn_start', b, [], [b], random.Random(0), QUIET)
+    check('beginning a turn on it does', a.deadly == 2, a.deadly)
+    a.fire('turn_start', b, [], [b], random.Random(0), QUIET)
+    check('and it is spent — a seed grows once', a.deadly == 2, a.deadly)
+
+
+def test_defense_effects_silenced():
+    print('\nUNNAME silences Defense Effects without stopping the defence')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    run('Defender cannot trigger defense effects until their next turn', a, b)
+    card = pool['INSTINCT']          # Defense Effect: Gain Ward.
+    returned, exiled = engine._run(card, 'defense_effect', b, a,
+                                   'defender wins', 0, QUIET,
+                                   random.Random(0), None)
+    check('the Defense Effect does not fire', b.ward == 0, b.ward)
+    check('it is a silence — the card is neither kept nor exiled',
+          returned is False and exiled is False)
+
+
 if __name__ == '__main__':
     test_compile()
     test_ward()
@@ -340,6 +455,13 @@ if __name__ == '__main__':
     test_modal()
     test_optional_cost()
     test_position_scoped()
+    test_reaction_on_damage()
+    test_expiry_is_owner_keyed()
+    test_colour_ban()
+    test_position_lock()
+    test_grounding_stance()
+    test_seed_is_placed()
+    test_defense_effects_silenced()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

@@ -21,20 +21,82 @@ from cards import Card
 FRONT, BACK = 'Frontline', 'Backline'
 
 
+class Pending:
+    """Something a card left behind, waiting on an event.
+
+    Two shapes share one container because they share one lifetime.
+
+    A **reaction** carries ops and runs them when `event` fires on its
+    holder — WEATHERED on being damaged, SEED on beginning a turn in the
+    right place, Anchored at the start of every turn.
+
+    A **restriction** carries no ops. The engine asks whether one is in
+    force before doing something: playing a colour, moving, attacking,
+    triggering a Defense Effect. It is a question the engine asks, not a
+    thing that happens to a combatant.
+
+    `owner` is whose turn the expiry is measured against, which is not
+    always the holder. PARTITION reads "until *your* next turn" on the
+    card that played it, so the restriction sits on the target and expires
+    on the caster's turn.
+    """
+
+    __slots__ = ('event', 'ops', 'kind', 'owner', 'expires', 'uses', 'data',
+                 'text', 'breaks_on_move')
+
+    def __init__(self, event, owner, expires='combat', ops=(), kind=None,
+                 uses=None, data=None, text='', breaks_on_move=False):
+        self.event = event
+        self.owner = owner
+        self.expires = expires        # 'combat' | 'owner_next_turn' | 'once'
+        self.ops = list(ops)
+        self.kind = kind              # set on a restriction, None on a reaction
+        self.uses = uses              # None = unlimited while it lasts
+        self.data = data or {}
+        self.text = text
+        self.breaks_on_move = breaks_on_move
+
+    def spend(self):
+        if self.uses is not None:
+            self.uses -= 1
+        return self.uses is not None and self.uses <= 0
+
+    def __repr__(self):
+        return f'<Pending {self.kind or self.event}: {self.text}>'
+
+
+# Restriction kinds the engine knows how to ask about.
+NO_COLOR = 'no_color'            # cannot play this colour on the next reveal
+NO_MOVE = 'no_move'              # cannot change position
+NO_ATTACK = 'no_attack'          # cannot attack
+NO_TARGET = 'no_target'          # cannot be attacked
+NO_DEFENSE_EFFECT = 'no_defense_effect'
+MUST_TARGET = 'must_target'      # must attack a named combatant if able
+SKIP_DRAW = 'skip_draw'
+IGNORE_FORCED_MOVE = 'ignore_forced_move'
+WOUND_INSTEAD = 'wound_instead'  # next attack wounds rather than damages
+
+
 class Combatant:
-    def __init__(self, name, body, mind, soul, deck, position=FRONT, team='party'):
+    def __init__(self, name, body, mind, soul, deck, position=FRONT, team='party',
+                 rng=None):
         self.name = name
         self.body, self.mind, self.soul = body, mind, soul
         self.team = team
         self._position = position
 
-        # Anchored effects being sustained: (ops, text, opponent).
-        self.anchored = []
+        # Everything waiting on an event: Anchored, reactions, restrictions.
+        self.pending = []
 
         self.hp = self.max_hp
 
+        # Every shuffle this combatant ever makes comes from here. Using the
+        # module-level random instead made --seed a lie: the deck order and
+        # every reshuffle were outside the seeded stream, so the same seed
+        # gave a different fight.
+        self.rng = rng or random
         self.deck = list(deck)
-        random.shuffle(self.deck)
+        self.rng.shuffle(self.deck)
         self.hand = []
         self.discard = []
         self.exiled = []
@@ -79,6 +141,23 @@ class Combatant:
         """
         if dest == self._position:
             return False
+
+        # CORNER and friends: a restriction that simply forbids it.
+        locked = self.restriction(NO_MOVE)
+        if locked is not None:
+            if log:
+                log(f'  {self.name} cannot change position right now.')
+            return False
+
+        if forced:
+            # GROUNDING STANCE: ignore the next ability that forces a move.
+            ignore = self.restriction(IGNORE_FORCED_MOVE)
+            if ignore is not None:
+                self.spend_restriction(ignore, log=log)
+                if log:
+                    log(f'  {self.name} plants — the forced movement is ignored.')
+                return False
+
         if self.rooted > 0:
             self.rooted -= 1
             if log:
@@ -91,21 +170,73 @@ class Combatant:
         return True
 
     def break_anchors(self, log=None, reason='moved'):
-        if self.anchored:
+        """`rules/card-glossary.md`, Anchored: moving ends it immediately.
+        Only the Anchored reactions go — a restriction placed on you is not
+        something your own movement clears."""
+        gone = [p for p in self.pending if p.breaks_on_move]
+        if gone:
             if log:
                 log(f'  {self.name} {reason} — Anchored ends.')
-            self.anchored.clear()
+            self.pending = [p for p in self.pending if not p.breaks_on_move]
+
+    # ---- pending effects ------------------------------------------------
+
+    def add_pending(self, p, log=None):
+        self.pending.append(p)
+        if log and p.text:
+            log(f'  {self.name}: {p.text}')
+
+    def restriction(self, kind, **match):
+        """The first restriction of this kind in force, or None. `match`
+        narrows it — restriction(NO_COLOR, color='RED')."""
+        for p in self.pending:
+            if p.kind != kind:
+                continue
+            if all(p.data.get(k) == v for k, v in match.items()):
+                return p
+        return None
+
+    def spend_restriction(self, p, log=None):
+        if p.spend():
+            self.pending.remove(p)
+        if log and p.text:
+            log(f'  {self.name}: {p.text}')
+
+    def fire(self, event, opponent, allies, enemies, rng, log, **data):
+        """Run every reaction waiting on `event`."""
+        import effects as _fx
+        for p in list(self.pending):
+            if p.kind is not None or p.event != event or p not in self.pending:
+                continue
+            if p.data.get('position') and p.data['position'] != self.position:
+                continue
+            if p.text:
+                log(f'  {self.name}: {p.text}')
+            ctx = _fx.Context(self, opponent, allies, enemies, None, event,
+                              rng=rng, log=log)
+            ctx.wheel = data.get('wheel')
+            for op in p.ops:
+                op.apply(ctx)
+            if p.spend() and p in self.pending:
+                self.pending.remove(p)
+
+    def expire_pending(self, log=None):
+        """Called at the start of this combatant's turn. Anything measured
+        against *their* next turn ends here, whoever is holding it — which
+        is why this sweeps the whole table rather than just self."""
+        for c in _TABLE or [self]:
+            gone = [p for p in c.pending
+                    if p.expires == 'owner_next_turn' and p.owner is self]
+            for p in gone:
+                c.pending.remove(p)
+                if log and p.text:
+                    log(f'  {c.name}: {p.text} — ends.')
 
     def tick_anchors(self, opponent_default, allies, enemies, rng, log):
         """Start-of-turn triggers. `rules/card-glossary.md`: the benefit
         triggers at the start of each of your turns for as long as you hold
         position — never on the turn it was played."""
-        for ops, text, opponent in list(self.anchored):
-            log(f'  Anchored ({text})')
-            ctx = fx.Context(self, opponent or opponent_default, allies, enemies,
-                             None, 'anchored', rng=rng, log=log)
-            for op in ops:
-                op.apply(ctx)
+        self.fire('turn_start', opponent_default, allies, enemies, rng, log)
 
     @property
     def max_hp(self):
@@ -146,7 +277,7 @@ class Combatant:
                     break
                 self.deck = self.discard
                 self.discard = []
-                random.shuffle(self.deck)
+                self.rng.shuffle(self.deck)
                 if log:
                     log(f'{self.name} reshuffles their discard into a new deck.')
             self.hand.append(self.deck.pop())
@@ -155,8 +286,11 @@ class Combatant:
 
     def playable(self, opponent):
         """Cards in hand whose Range is legal for the current positions."""
+        banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
         return [c for c in self.hand
-                if c.is_playable() and c.range_ok(self.position, opponent.position)]
+                if c.is_playable()
+                and c.color not in banned
+                and c.range_ok(self.position, opponent.position)]
 
     # ---- damage --------------------------------------------------------
 
@@ -222,6 +356,13 @@ class Combatant:
             target.dead = True
             if log:
                 log(f'{target.name} dies.')
+
+        # WEATHERED, PAIN IS FUEL: "when you are damaged".
+        if dealt > 0 and target.alive() and any(
+                p.kind is None and p.event == 'damaged' for p in target.pending):
+            allies = [c for c in _TABLE if c.team == target.team and c is not target]
+            enemies = [c for c in _TABLE if c.team != target.team]
+            target.fire('damaged', source, allies, enemies, None, log or (lambda *a: None))
         return dealt
 
     def heal(self, amount, log=None):
@@ -278,6 +419,17 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     Returns an Outcome.
     """
     log(f'{attacker.name} attacks {defender.name}.')
+
+    # PARTITION: the target is out of the exchange entirely, either side.
+    # The cards were already committed, so they still go to the discard —
+    # an exchange that does not happen must not eat them.
+    for who, kind in ((attacker, NO_ATTACK), (defender, NO_TARGET)):
+        if who.restriction(kind) is not None:
+            log(f'  {who.name} is partitioned — the attack does not happen.')
+            attacker.discard.append(atk_card)
+            if def_card is not None:
+                defender.discard.append(def_card)
+            return Outcome.MUTUAL_MISS
 
     # Step 3. Every check that applies actually rolls, whether or not it
     # ends up mattering: being attacked is what triggers them.
@@ -339,31 +491,43 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     discard both cards."""
     dealt = 0
     returned_atk = returned_def = False
+    gone_atk = gone_def = False   # a card exiled out of the exchange itself
     if outcome == Outcome.ATTACKER:
-        dmg = roll_damage(attacker, atk_card, rng)
-        dealt = defender.take(dmg, source=attacker, log=log)
-        if defender.thorns and (atk_card.range or '').strip().lower().startswith('melee'):
+        swap = defender.restriction(WOUND_INSTEAD)
+        if swap is not None:
+            from cards import status_card
+            defender.deck.insert(0, status_card('Wound'))
+            defender.spend_restriction(swap, log=log)
+            log(f'  The hit lands as a Wound in {defender.name}\'s deck '
+                f'instead of damage.')
+            dmg = dealt = 0
+        else:
+            dmg = roll_damage(attacker, atk_card, rng)
+            dealt = defender.take(dmg, source=attacker, log=log)
+        if dealt and defender.thorns and (atk_card.range or '').strip().lower().startswith('melee'):
             log(f'{defender.name}\'s Thorns bites back.')
             attacker.take(defender.thorns, unpreventable=True, log=log)
-        returned_atk = _run(atk_card, 'effect', attacker, defender, outcome,
-                            dealt, log, rng, wheel, def_card)
+        returned_atk, gone_def = _run(atk_card, 'effect', attacker, defender,
+                                      outcome, dealt, log, rng, wheel, def_card)
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
-        returned_def = _run(def_card, 'defense_effect', defender, attacker,
-                            outcome, 0, log, rng, wheel, atk_card)
+        returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
+                                      attacker, outcome, 0, log, rng, wheel,
+                                      atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
-        returned_atk = _run(atk_card, 'effect', attacker, defender, outcome,
-                            0, log, rng, wheel, def_card)
-        returned_def = _run(def_card, 'defense_effect', defender, attacker,
-                            outcome, 0, log, rng, wheel, atk_card)
+        returned_atk, gone_def = _run(atk_card, 'effect', attacker, defender,
+                                      outcome, 0, log, rng, wheel, def_card)
+        returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
+                                      attacker, outcome, 0, log, rng, wheel,
+                                      atk_card)
 
     # FOCUS returns itself to hand instead of discarding. Tracked here, not
     # on the Card: build_deck draws from a shared pool, so one Card object is
     # in several decks at once and must never carry per-fight state.
-    if not returned_atk:
+    if not returned_atk and not gone_atk:
         attacker.discard.append(atk_card)
-    if def_card is not None and not returned_def:
+    if def_card is not None and not returned_def and not gone_def:
         defender.discard.append(def_card)
     return outcome
 
@@ -392,15 +556,21 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
     discarded.
     """
     if card is None:
-        return False
+        return False, False
     text = getattr(card, half, None)
     if not text or text.strip().lower() in ('none.', 'none'):
-        return False
+        return False, False
     label = 'Effect' if half == 'effect' else 'Defense Effect'
+    if half == 'defense_effect':
+        gagged = actor.restriction(NO_DEFENSE_EFFECT)
+        if gagged is not None:
+            log(f'  {actor.name} cannot trigger Defense Effects — {label} '
+                f'does not fire.')
+            return False, False
     ops = compiled(card, half)
     if ops is None:
         log(f'  {label}: {text}')
-        return False
+        return False, False
     log(f'  {label}: {text}')
     ctx = fx.Context(actor, opponent,
                      allies=[c for c in _TABLE if c.team == actor.team and c is not actor],
@@ -410,12 +580,12 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
     ctx.wheel = wheel
     ctx.opponent_card = opponent_card
     ctx.return_card = False
+    ctx.exiled_opponent_card = False
     for op in ops:
         op.apply(ctx)
     if ctx.return_card:
         actor.hand.append(card)
-        return True
-    return False
+    return ctx.return_card, ctx.exiled_opponent_card
 
 
 # Everyone in the current fight. Set by play.py before the first exchange so
@@ -425,5 +595,8 @@ _TABLE = []
 
 
 def set_table(combatants):
+    """Called by play.run at the start of every fight. Anything resolving
+    "all allies" or "any enemy" reads this, so it must describe the fight in
+    progress — see the note there."""
     global _TABLE
     _TABLE = list(combatants)
