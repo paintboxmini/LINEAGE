@@ -100,6 +100,14 @@ class Combatant:
         self.hand = []
         self.discard = []
         self.exiled = []
+        # `rules/combat.md`, Ongoing Effects: a card producing one "remains
+        # face up in front of the player after use", and is discarded only
+        # when its stated condition is met. That is a fifth pile, and it is
+        # the point — a card sitting here is not in the discard, so it is
+        # not in the next reshuffle either, which is the real cost of
+        # holding an Ongoing Effect (`rules/card-glossary.md`,
+        # status-effect tokens).
+        self.in_play = []
 
         # Stacking statuses, held as counts.
         self.deadly = 0
@@ -146,6 +154,15 @@ class Combatant:
         # it was played on someone else's. Only attacks are recorded.
         self.last_color = None
         self.color_this_turn = None
+
+        # The colour of the attack before this one. A different question
+        # from last_color above: that one is per *turn*, which is what
+        # MEASURE asks; this is per *attack*, which is what KILLSWITCH asks.
+        # They come apart in both directions — a turn that hands back a
+        # second attack has two attacks in a row inside one turn, and a turn
+        # spent moving is not an attack at all, so it breaks a turn streak
+        # without breaking an attack streak.
+        self.last_attack_color = None
 
         # Stances: a choice that stays up for the fight and replaces itself
         # rather than stacking (KILLSWITCH). Keyed by card name, holding
@@ -481,6 +498,15 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     # for the attacker — a defence is played on someone else's turn.
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
+        # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
+        # Asked and answered where the attack is made rather than at the
+        # reveal, because the card was played either way — an attack that
+        # gets dodged was still an attack, and still the last one you made.
+        # A block is not an attack and never reaches here.
+        if atk_card.color and attacker.last_attack_color == atk_card.color:
+            fx.end_stances_on_repeat(attacker, atk_card.color, log)
+        if atk_card.color:
+            attacker.last_attack_color = atk_card.color
 
     # PARTITION: the target is out of the exchange entirely, either side.
     # The cards were already committed, so they still go to the discard —
@@ -543,13 +569,10 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
         return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
     if def_card is None:
         log(f'{defender.name} has no legal defense.')
-        # Turned face up against nothing, which is still a reveal.
-        _revealed_on_own_turn(attacker, atk_card, log)
         return _finish(Outcome.ATTACKER, attacker, defender, atk_card, def_card, log, rng, wheel)
 
     # Step 5. Reveal.
     log(f'  {atk_card.name} ({atk_card.color}) vs {def_card.name} ({def_card.color})')
-    _revealed_on_own_turn(attacker, atk_card, log)
     if atk_traits.mirrors_color or def_traits.mirrors_color:
         # HOLD THE LINE takes the colour it is resolving against, so there
         # is nothing for RPS to decide. A guaranteed tie, which its own
@@ -571,31 +594,6 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
                             def_card, log)
     return _finish(outcome, attacker, defender, atk_card, def_card, log,
                    rng, wheel)
-
-
-def _revealed_on_own_turn(who, card, log):
-    """KILLSWITCH: "Playing the same colour on two consecutive turns ends
-    it."
-
-    The same question MEASURE asks, read off the same state —
-    `Combatant.last_color`, which `play.take_turn` rolls forward at the top
-    of each turn, so during this turn it still holds last turn's colour. One
-    rotation discipline, two cards consulting it.
-
-    Only the attacker's card reaches this. A block is played on someone
-    else's turn, so it is neither a turn of yours nor a card that can cost
-    you the stance. An exchange that ends before Step 5 — a clean Evade, a
-    Blind miss — reveals nothing at all.
-
-    Several attacks in one turn are still one turn: last_color is not
-    touched until the next turn begins, so a turn that opens Red and
-    follows with Blue has played both colours this turn, and either one
-    matching last turn's ends it.
-    """
-    if card is None or not card.color:
-        return
-    if who.last_color == card.color:
-        fx.end_stances_on_repeat(who, card.color, log)
 
 
 def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):
@@ -647,6 +645,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     dealt = 0
     returned_atk = returned_def = False
     gone_atk = gone_def = False   # a card exiled out of the exchange itself
+    held_atk = held_def = False   # a card that stays face up as an Ongoing
     atk_traits = fx.traits(atk_card, 'attack')
     def_traits = fx.traits(def_card, 'defense')
 
@@ -703,7 +702,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             ctx.damage_dealt = dealt
             ctx.damage_rolled = rolled
             _phase(ops, ctx, 'post')
-            returned_atk, gone_def = _settle(ctx, atk_card, attacker)
+            returned_atk, gone_def, held_atk = _settle(ctx, atk_card, attacker)
 
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
@@ -711,24 +710,24 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
         else:
-            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                          attacker, outcome, 0, log, rng,
-                                          wheel, atk_card)
+            returned_def, gone_atk, held_def = _run(
+                def_card, 'defense_effect', defender, attacker, outcome, 0,
+                log, rng, wheel, atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
         if mute_atk:
             log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
         else:
-            returned_atk, gone_def = _run(atk_card, 'effect', attacker,
-                                          defender, outcome, 0, log, rng,
-                                          wheel, def_card)
+            returned_atk, gone_def, held_atk = _run(
+                atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
+                wheel, def_card)
         if mute_def:
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
         else:
-            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                          attacker, outcome, 0, log, rng,
-                                          wheel, atk_card)
+            returned_def, gone_atk, held_def = _run(
+                def_card, 'defense_effect', defender, attacker, outcome, 0,
+                log, rng, wheel, atk_card)
 
     # FOCUS returns itself to hand instead of discarding. Tracked here, not
     # on the Card: build_deck draws from a shared pool, so one Card object is
@@ -761,10 +760,22 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             attacker.extra_actions += 1
             log(f'  {attacker.name} gains another action.')
 
-    if not returned_atk and not gone_atk:
+    # An Ongoing Effect stays face up in front of its player instead of
+    # going to the discard, and leaves for the discard when it ends
+    # (`rules/combat.md`, Ongoing Effects). That is also why it cannot be
+    # played twice over itself: while the effect is running the card is on
+    # the table, not in the deck and not in the pile a reshuffle draws from.
+    if held_atk and not returned_atk and not gone_atk:
+        attacker.in_play.append(atk_card)
+        log(f'  {atk_card.name} stays face up in front of {attacker.name}.')
+    elif not returned_atk and not gone_atk:
         attacker.discard.append(atk_card)
     if def_card is not None and not returned_def and not gone_def:
-        defender.discard.append(def_card)
+        if held_def:
+            defender.in_play.append(def_card)
+            log(f'  {def_card.name} stays face up in front of {defender.name}.')
+        else:
+            defender.discard.append(def_card)
     return outcome
 
 
@@ -782,9 +793,10 @@ def compiled(card, half):
     # be both texts — the same words mean different things on a card whose
     # other half differs.
     other = getattr(card, 'defense_effect' if half == 'effect' else 'effect', None)
-    key = (text, other)
+    name = getattr(card, 'name', None)
+    key = (text, other, name)
     if key not in _COMPILED:
-        _COMPILED[key] = fx.compile_half(text, other=other)
+        _COMPILED[key] = fx.compile_half(text, other=other, name=name)
     return _COMPILED[key]
 
 
@@ -840,6 +852,7 @@ def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
     ctx.acting = actor if half == 'effect' else opponent
     ctx.return_card = False
     ctx.exiled_opponent_card = False
+    ctx.stays_in_play = False
     return ctx, ops
 
 
@@ -852,10 +865,10 @@ def _phase(ops, ctx, phase):
 def _settle(ctx, card, actor):
     """What the half did to the cards in play."""
     if ctx is None:
-        return False, False
+        return False, False, False
     if ctx.return_card:
         actor.hand.append(card)
-    return ctx.return_card, ctx.exiled_opponent_card
+    return ctx.return_card, ctx.exiled_opponent_card, ctx.stays_in_play
 
 
 def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
@@ -872,7 +885,7 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
             if text and text.strip().lower() not in ('none.', 'none') \
                     and compiled(card, half) is None:
                 pass    # already read out by _begin
-        return False, False
+        return False, False, False
     ctx.damage_dealt = dealt
     _phase(ops, ctx, 'pre')
     _phase(ops, ctx, 'post')

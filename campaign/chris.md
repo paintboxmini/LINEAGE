@@ -141,30 +141,35 @@ Range: Melee
 KILLSWITCH
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose one — your attacks deal +3 damage, or gain Armour 3.
-        Lasts until the end of combat. Playing KILLSWITCH again replaces
-        your current choice rather than adding to it. Playing the same
-        colour on two consecutive turns ends it.
+Effect: Ongoing — choose one: your attacks deal +3 damage, or gain
+        Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
 Range: Both
 "A note changes and so does he. Nobody has worked out which comes first."
 ```
 
-**The replacement clause is the name.** A killswitch flips; it doesn't accumulate. Without that line the card is a stacking buff and the fantasy is gone — with it, he is visibly choosing a mode and visibly giving one up, every time, in front of everyone.
+**It is an Ongoing Effect, and that is doing more work than a keyword usually does.** The card "remains face up in front of the player after use" and is discarded only when its stated condition is met (`rules/combat.md`, Ongoing Effects). So the mode is not an abstraction the table has to remember — **the card on the table is the mode**, sitting there in front of him, with the choice he made visible to everyone including the GM.
 
-**On the numbers:** +3 and Armour 3, raised from 2 and 2 on 2026-09-18, the die still d4 so he is playing this for the mode and never for the damage.
+**That is also what makes it unstackable, without a line saying so.** *An earlier draft carried "Playing KILLSWITCH again replaces your current choice rather than adding to it"; it came out on 2026-09-18 because it can never fire.* While the effect is running the card is on the table — not in his deck, not in his discard, and therefore not in the next reshuffle either (`rules/card-glossary.md`, status-effect tokens). There is no second copy to draw: no written deck in the repo runs a card twice, measured across all 43 decklists. A killswitch flips rather than accumulating because there is only ever one of it and it is lying face up, not because a sentence said so.
+
+**And the card being out of rotation is a real cost.** Holding the stance costs him a ninth of his deck for as long as he holds it — not a tempo cost he pays once, a thinning he pays continuously. That is the other half of what buys Armour 3.
+
+**On the numbers:** +3 and Armour 3, raised from 2 and 2 on 2026-09-18, the die still d4 so he is playing this for the mode and never for the damage. *"Lasts until the end of combat" came out the same day* — an Ongoing Effect runs until its stated condition by rule, so the sentence was restating the keyword.
 
 **Armour 3 is deliberately past the ceiling the old note cited**, and the reason the ceiling moved is the clause below it. Armour 2 is what a plated creature carries as a Trait (`bestiary/blowback-beetle.md`) — permanently, unconditionally, for nothing. A stance that can be switched off by the holder's own next card is not that thing, and shouldn't be priced as if it were.
 
-**Playing the same colour twice running ends it**, and this is the line that makes the card his rather than anyone's. It puts KILLSWITCH on the same discipline MEASURE runs on — *no repeated note* — so the stance is not something he sets and forgets, it is something he has to keep earning by rotating. Two turns of one colour and the mode drops.
+**Playing the same colour twice running ends it**, and this is the line that makes the card his rather than anyone's. It puts KILLSWITCH on the same discipline MEASURE runs on — *no repeated note* — so the stance is not something he sets and forgets, it is something he has to keep earning by rotating. Two attacks of one colour and the mode drops.
 
-**It asks the same question MEASURE asks, and that is the point.** *The card you played last turn*, compared against this one — one rotation discipline, two cards reading it, and one thing for a player to track instead of two. The whole kit ends up being about the same sentence: don't repeat the note. MEASURE pays him for keeping that true; KILLSWITCH charges him when it stops being true.
+**It counts attacks, not turns, and that is the version to read out at the table.** The question is *what did I last swing with* — one thing, always true, no counting of rounds and no argument about whose turn a block happened on. Two consequences fall straight out of it:
 
-*Changed 2026-09-18 from "two consecutive reveals" to two consecutive turns.* The earlier version counted blocks, which meant he could lose the stance on someone else's turn, defending with whatever was legal in his hand. That is a cost he cannot steer, and a card this expensive should charge for decisions rather than for what the wheel happened to hand him. **Turns are his to choose. Blocks often are not.**
+- **A block is not an attack.** He never loses the stance while defending, on someone else's turn, holding whatever was legal in his hand. That cost was the one he could not steer, and it is gone.
+- **A turn spent not attacking cannot launder a repeat.** Move, take cover, get Staggered — his last attack is still his last attack, and the colour he swung with is still sitting there waiting to be matched. The stance is not a thing you can idle out of trouble.
 
-**Replaying KILLSWITCH is not a repeat that hurts him.** Green into green ends the old stance, and the same card immediately sets a new one — which the replacement clause was already doing. The clause bites on the *other* greens in his deck, which is why he only has two green slots and one of them is this.
+**And two swings in one turn are two attacks in a row.** If something hands him an extra attack, the second one is measured against the first. A card that buys him a second swing does not let him take it for free.
 
-**And several attacks in one turn are still one turn.** If something hands him an extra attack, the colours he plays inside that turn are not compared against each other — only against the turn before. A card that buys him a second swing does not also charge him for taking it.
+*Reworded twice on 2026-09-18 — "two consecutive reveals", then "two consecutive turns", now attacks.* The first counted blocks. The second fixed that but made a turn the unit, which meant an extra attack inside one turn was invisible to it and a wasted turn reset the clock. **Attacks is the unit that matches what the card is about** — the rhythm of his swings, not the shape of the round.
+
+**The clause bites on the other greens in his deck**, which is why it matters that he has only two green slots and one of them is this. While KILLSWITCH is on the table his remaining green is a single card — so the way he loses the stance is usually not green at all, it is swinging Blue twice running out of a four-Blue deck.
 
 **The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
 

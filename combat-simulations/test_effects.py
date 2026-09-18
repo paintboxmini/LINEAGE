@@ -210,10 +210,9 @@ MEASURE_E = ('If the card you played last turn was a different colour than '
 MEASURE_D = ('If the card you played last turn was a different colour than '
              'this one, the attacker reveals their stats.')
 RIPOSTE_D = 'Gain Deadly. If you won this exchange, gain Deadly again.'
-KILLSWITCH = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
-              'Lasts until the end of combat. Playing KILLSWITCH again '
-              'replaces your current choice rather than adding to it. '
-              'Playing the same colour on two consecutive turns ends it.')
+KILLSWITCH = ('Ongoing — choose one: your attacks deal +3 damage, or gain '
+              'Armour 3. Playing the same colour 2 attacks in a row '
+              'ends it.')
 
 
 def blue():
@@ -361,7 +360,8 @@ def _defend(ops, defender, attacker, outcome):
 
 
 def test_killswitch_flips_rather_than_stacking():
-    print('\nKILLSWITCH replaces its own choice and only its own')
+    print('\nKILLSWITCH holds one choice, and only takes back its own')
+    import engine
     a, b = duo()
 
     _stance(a, b, 'gain Armour 3')
@@ -390,15 +390,39 @@ def test_killswitch_flips_rather_than_stacking():
           a.standing_mods)
 
     check('"Same choice." on the defence half is the same stance',
-          [type(o).__name__ for o in fx.compile_half('Same choice.',
-                                                     other=KILLSWITCH)]
+          [type(o).__name__ for o in fx.compile_half(
+              'Same choice.', other=KILLSWITCH, name='KILLSWITCH')]
           == ['Stance'])
     check('and a half pointing at nothing narrates',
           fx.compile_half('Same choice.') is None)
 
+    # `rules/combat.md`, Ongoing Effects: the card stays face up until the
+    # effect ends, and only then is discarded. That is what makes replaying
+    # it over itself impossible — there is no copy to draw.
+    a6, b6 = duo()
+    a6.hp = b6.hp = 400
+    ks = cardlib.by_name(cardlib.load('chris'))['KILLSWITCH']
+    a6._agent = _Picks('gain Armour 3')
+    engine.resolve_attack(a6, b6, ks, None, rng=random.Random(0), log=QUIET)
+    check('the card stays on the table rather than in the discard',
+          [c.name for c in a6.in_play] == ['KILLSWITCH'] and not a6.discard,
+          (a6.in_play, a6.discard))
+
+    # Ended the way it actually ends in play — two attacks of one colour.
+    # Playing KILLSWITCH over itself is not a case the table can reach,
+    # because while the effect runs the card is on the table and there is
+    # no second copy in any deck to draw.
+    blue2 = cardlib.by_name(cardlib.core_pool())['CALCULATE']
+    engine.resolve_attack(a6, b6, blue2, None, rng=random.Random(0), log=QUIET)
+    engine.resolve_attack(a6, b6, blue2, None, rng=random.Random(0), log=QUIET)
+    check('and goes to the discard when the effect ends',
+          not a6.in_play and 'KILLSWITCH' in [c.name for c in a6.discard]
+          and a6.armour == 0,
+          (a6.in_play, a6.discard, a6.armour))
+
 
 def _stance(actor, opponent, pick):
-    ops = fx.compile_half(KILLSWITCH)
+    ops = fx.compile_half(KILLSWITCH, name='KILLSWITCH')
     assert ops is not None
     ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent], card=None,
                      outcome='attacker wins', rng=random.Random(0), log=QUIET,
@@ -422,7 +446,7 @@ class _Picks:
 
 
 def test_killswitch_ends_on_a_repeated_colour():
-    print('\nKILLSWITCH ends on the same colour two turns running')
+    print('\nKILLSWITCH ends on the same colour two attacks running')
     import engine
     import play
     pool = cardlib.by_name(cardlib.core_pool())
@@ -430,69 +454,68 @@ def test_killswitch_ends_on_a_repeated_colour():
     check('the fixture colours are what this test thinks they are',
           green.color == 'GREEN' and blue.color == 'BLUE')
 
+    def hit(a, b, card):
+        engine.resolve_attack(a, b, card, None, rng=random.Random(0), log=QUIET)
+
     a, b = duo()
+    a.hp = b.hp = 400
     _stance(a, b, 'gain Armour 3')
-
-    a.last_color = 'GREEN'
-    engine._revealed_on_own_turn(a, blue, QUIET)
-    check('a different colour from last turn does not end it',
+    hit(a, b, green)
+    hit(a, b, blue)
+    check('a different colour from the last attack does not end it',
           a.armour == 3, a.armour)
+    hit(a, b, blue)
+    check('the same colour as the last attack does', a.armour == 0, a.armour)
 
-    a.last_color = 'BLUE'
-    engine._revealed_on_own_turn(a, blue, QUIET)
-    check('the same colour as last turn does', a.armour == 0, a.armour)
-
-    # The whole point of the 2026-09-18 change: a block is played on
-    # someone else's turn and cannot cost him the stance.
+    # Two attacks inside one turn are two attacks in a row. This is the
+    # 2026-09-18 rewording: the earlier "two consecutive turns" deliberately
+    # did not count them, and this deliberately does.
     a2, b2 = duo()
     a2.hp = b2.hp = 400
     _stance(a2, b2, 'gain Armour 3')
-    a2.last_color = 'BLUE'
-    engine.resolve_attack(b2, a2, blue, blue, rng=random.Random(0), log=QUIET)
-    check('defending with last turn\'s colour does not end it',
-          a2.armour == 3, a2.armour)
+    hit(a2, b2, blue)
+    hit(a2, b2, blue)
+    check('two attacks in the same turn are two attacks in a row',
+          a2.armour == 0, a2.armour)
 
-    # And the state it reads is the one take_turn rolls forward, so a real
-    # turn of the game reaches the same answer as the unit above.
+    # A turn spent not attacking is not an attack, so it cannot launder a
+    # repeat — the last attack is still the last attack.
     a3, b3 = duo()
     a3.hp = b3.hp = 400
     _stance(a3, b3, 'gain Armour 3')
-    engine.resolve_attack(a3, b3, blue, None, rng=random.Random(0), log=QUIET)
-    check('one attack does not end it', a3.armour == 3, a3.armour)
+    hit(a3, b3, blue)
     play.take_turn(a3, _Passer(), [b3], [], None, QUIET, random.Random(0))
-    engine.resolve_attack(a3, b3, blue, None, rng=random.Random(0), log=QUIET)
-    check('the same colour on the next turn does', a3.armour == 0, a3.armour)
+    hit(a3, b3, blue)
+    check('a turn spent not attacking does not break the run',
+          a3.armour == 0, a3.armour)
 
-    # Several attacks in one turn are still one turn.
+    # A block is not an attack.
     a4, b4 = duo()
     a4.hp = b4.hp = 400
     _stance(a4, b4, 'gain Armour 3')
-    a4.last_color = 'GREEN'
-    engine.resolve_attack(a4, b4, blue, None, rng=random.Random(0), log=QUIET)
-    engine.resolve_attack(a4, b4, blue, None, rng=random.Random(0), log=QUIET)
-    check('two attacks in the same turn are not two turns',
+    hit(a4, b4, blue)
+    engine.resolve_attack(b4, a4, blue, blue, rng=random.Random(0), log=QUIET)
+    check('defending with the same colour does not end it',
           a4.armour == 3, a4.armour)
+    check('and the block did not become his last attack either',
+          a4.last_attack_color == 'BLUE', a4.last_attack_color)
 
     # A stance without the clause is untouched by the same repeat.
     a5, b5 = duo()
-    plain = ('Choose one — your attacks deal +3 damage, or gain Armour 3. '
-             'Lasts until the end of combat. Playing PLAIN again replaces '
-             'your current choice rather than adding to it.')
-    ops = fx.compile_half(plain)
+    a5.hp = b5.hp = 400
+    plain = ('Ongoing — choose one: your attacks deal +3 damage, or gain '
+             'Armour 3.')
+    ops = fx.compile_half(plain, name='PLAIN')
     assert ops is not None and not ops[0].ends_on_repeat
     ctx = fx.Context(a5, b5, allies=[], enemies=[b5], card=None,
                      outcome='attacker wins', rng=random.Random(0), log=QUIET,
                      agent=_Picks('gain Armour 3'))
     ctx.wheel = None
     ops[0].apply(ctx)
-    a5.last_color = 'BLUE'
-    engine._revealed_on_own_turn(a5, blue, QUIET)
+    hit(a5, b5, blue)
+    hit(a5, b5, blue)
     check('a stance without the clause survives a repeat',
           a5.armour == 3, a5.armour)
-
-    check('and the clause with no stance to end narrates',
-          fx.compile_half('Gain Armour 3. Playing the same colour on two '
-                          'consecutive turns ends it.') is None)
 
 
 def test_hold_the_line_mirrors_the_colour_it_faces():
@@ -530,9 +553,10 @@ def test_a_duration_with_nothing_to_hold_narrates():
     print('\nA sentence that reaches back and finds nothing narrates')
     check('"Lasts until the end of combat." alone does not compile',
           fx.compile_half('Lasts until the end of combat.') is None)
-    check('nor does the replacement clause alone',
-          fx.compile_half('Playing THIS again replaces your current choice '
-                          'rather than adding to it.') is None)
+    check('nor does "Ongoing —" with nothing after it',
+          fx.compile_half('Ongoing —', name='X') is None)
+    check('nor an Ongoing whose body it cannot set a duration on',
+          fx.compile_half('Ongoing — gain Evade.', name='X') is None)
     # Evade is a charge that gets spent, so "until the end of combat" would
     # be changing the status rather than describing it. Armour is not.
     check('a duration on a status that is spent refuses',
@@ -780,7 +804,7 @@ def test_defense_effects_silenced():
     a, b = duo()
     run('Defender cannot trigger defense effects until their next turn', a, b)
     card = pool['INSTINCT']          # Defense Effect: Gain Ward.
-    returned, exiled = engine._run(card, 'defense_effect', b, a,
+    returned, exiled, _held = engine._run(card, 'defense_effect', b, a,
                                    'defender wins', 0, QUIET,
                                    random.Random(0), None)
     check('the Defense Effect does not fire', b.ward == 0, b.ward)

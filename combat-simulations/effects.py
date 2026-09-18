@@ -1134,14 +1134,17 @@ GATES = [
 SEP = re.compile(r'^\s*(?:[.,;]|\s+and\b|\s+then\b)+\s*', re.I)
 
 
-def compile_half(text, other=None):
+def compile_half(text, other=None, name=None):
     """Prose to ops, or None when any part of it is not understood.
 
     `other` is the card's *other* half, needed only by a half that points at
     it — KILLSWITCH's defence half is the words "Same choice." and nothing
-    else. Callers that have the card pass it (`engine.compiled`); callers
-    compiling a fragment do not, and a back-reference with nothing to point
-    at narrates, which is the right answer.
+    else. `name` is the card's own name, which an Ongoing Effect needs
+    because the card on the table *is* the effect, so the thing has to be
+    called something. Callers that have the card pass both
+    (`engine.compiled`); callers compiling a fragment pass neither, and a
+    back-reference with nothing to point at narrates, which is the right
+    answer.
     """
     if not text:
         return None
@@ -1153,7 +1156,7 @@ def compile_half(text, other=None):
     # `other` of its own so a pair of halves that each point at the other
     # cannot loop.
     if re.fullmatch(r'same choice\.?|as (?:the )?(?:attack )?effect\.?', s, re.I):
-        return compile_half(other) if other else None
+        return compile_half(other, name=name) if other else None
 
     # A trailing gate reads the same as a leading one (FORGET puts it last).
     trailing = re.search(
@@ -1231,7 +1234,7 @@ def compile_half(text, other=None):
 
     # Last, so the sentences that reach backwards see the ops in the shape
     # the rest of this function left them in.
-    ops = _resolve_durations(ops)
+    ops = _resolve_durations(ops, name)
     if not ops:
         return None
 
@@ -1972,22 +1975,29 @@ class UntilEndOfCombat(Op):
         raise AssertionError('a duration marker reached the engine')
 
 
-class Replaces(Op):
-    """Compile-time marker for "Playing X again replaces your current choice
-    rather than adding to it." Consumed by `_resolve_durations`, which wraps
-    everything before it in a Stance."""
+class Ongoing(Op):
+    """Compile-time marker for a card that opens "Ongoing — ...".
 
-    def __init__(self, key):
-        self.key = key
+    `rules/combat.md`, Ongoing Effects: the card "remains face up in front
+    of the player after use. The effect persists until its stated condition
+    is met, at which point the card is discarded." So the word does two
+    jobs at once — it sets the duration (the fight, unless the card names an
+    earlier condition) and it says where the card physically is, which is
+    not the discard pile and therefore not the next reshuffle either
+    (`rules/card-glossary.md`, status-effect tokens).
+
+    Consumed by `_resolve_durations`, which wraps everything else in a
+    Stance.
+    """
 
     def apply(self, ctx):          # pragma: no cover - unreachable
-        raise AssertionError('a replacement marker reached the engine')
+        raise AssertionError('an ongoing marker reached the engine')
 
 
 class EndsOnColourRepeat(Op):
-    """Compile-time marker for "Playing the same colour on two consecutive
-    turns ends it." Consumed by `_resolve_durations`, which sets the flag
-    on the Stance it follows."""
+    """Compile-time marker for "Playing the same colour 2 attacks in a row
+    ends it." Consumed by `_resolve_durations`, which sets the flag on the
+    Stance in the same half."""
 
     def apply(self, ctx):          # pragma: no cover - unreachable
         raise AssertionError('a stance-ending marker reached the engine')
@@ -1998,7 +2008,7 @@ class Stance(Op):
 
     KILLSWITCH (`campaign/chris.md`): "Lasts until the end of combat.
     Playing KILLSWITCH again replaces your current choice rather than adding
-    to it. Playing the same colour on two consecutive turns ends it."
+    to it. Playing the same colour 2 attacks in a row ends it."
     A killswitch flips; it does not accumulate. Without the second
     sentence the card is a stacking buff, so the engine has to be able to
     take back what the card granted last time — and only that much. Armour
@@ -2040,8 +2050,12 @@ class Stance(Op):
             op.run_phase(ctx, phase)
 
         held = who.stances.setdefault(
-            self.key, {'status': {}, 'mods': [],
+            self.key, {'status': {}, 'mods': [], 'card': ctx.card,
                        'ends_on_repeat': self.ends_on_repeat})
+        # The card itself is the effect: it sits face up until this ends
+        # (`rules/combat.md`, Ongoing Effects), so it must not be discarded
+        # out of the exchange that played it.
+        ctx.stays_in_play = True
         for a in attrs:
             gained = getattr(who, a, 0) - before_status[a]
             if gained > 0:
@@ -2058,13 +2072,21 @@ class Stance(Op):
 
 
 def _take_back(who, key, held, log, why):
-    """Undo exactly what a stance granted, and nothing else.
+    """Undo exactly what a stance granted, and nothing else, and send the
+    card that was holding it to the discard.
 
     Armour that arrived from another card is not this one's to remove, so
     what comes off is the recorded amount rather than the current total.
     """
     if not held:
         return
+    card = held.get('card')
+    if card is not None:
+        for live in list(getattr(who, 'in_play', [])):
+            if live is card:
+                who.in_play.remove(live)
+                who.discard.append(live)
+                break
     gone = []
     for attr, n in held.get('status', {}).items():
         current = getattr(who, attr, 0)
@@ -2081,16 +2103,17 @@ def _take_back(who, key, held, log, why):
 
 
 def end_stances_on_repeat(who, color, log):
-    """KILLSWITCH: "Playing the same colour on two consecutive turns ends
-    it." Called by `engine` when a card is revealed on its owner's turn, for
-    the stances that carry the clause — a stance without it is untouched.
+    """KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
+    Called by `engine` when an attack repeats the colour of the one before
+    it, for the stances that carry the clause — a stance without it is
+    untouched.
     """
     for key, held in list(who.stances.items()):
         if not held.get('ends_on_repeat'):
             continue
         who.stances.pop(key, None)
         _take_back(who, key, held, log,
-                   f'ends on two {color} turns running')
+                   f'ends on two {color} attacks running')
 
 
 def _extend_to_combat(op):
@@ -2116,30 +2139,43 @@ def _extend_to_combat(op):
     return False
 
 
-def _resolve_durations(ops):
-    """Fold the two backward-reaching sentences into what they modify.
+def _resolve_durations(ops, name=None):
+    """Fold the sentences that are terms rather than events into the ops
+    they modify.
 
-    Returns None — narrate the whole half — when either sentence has
-    nothing it can apply to, rather than dropping it and running the rest.
+    "Ongoing —" says the card sits on the table and runs for the fight.
+    "Lasts until the end of combat." says the duration on its own.
+    "Playing the same colour 2 attacks in a row ends it." says when
+    the ongoing effect stops.
+
+    Returns None — narrate the whole half — when one of them has nothing it
+    can apply to, rather than dropping it and running the rest.
     """
     out = []
+    ongoing = False
+    ends_on_repeat = False
     for op in ops:
+        if isinstance(op, Ongoing):
+            ongoing = True
+            continue
+        if isinstance(op, EndsOnColourRepeat):
+            ends_on_repeat = True
+            continue
         if isinstance(op, UntilEndOfCombat):
             if not out or not all(_extend_to_combat(o) for o in out):
                 return None
             continue
-        if isinstance(op, Replaces):
-            if not out:
-                return None
-            out = [Stance(op.key, out)]
-            continue
-        if isinstance(op, EndsOnColourRepeat):
-            # It ends "it" — the stance — so there has to be one to end.
-            if len(out) != 1 or not isinstance(out[0], Stance):
-                return None
-            out[0].ends_on_repeat = True
-            continue
         out.append(op)
+
+    if ongoing:
+        # An Ongoing Effect runs to the end of the fight unless the card
+        # names an earlier condition, so the duration comes with the word.
+        if not out or not all(_extend_to_combat(o) for o in out):
+            return None
+        return [Stance(name or 'this card', out, ends_on_repeat)]
+    if ends_on_repeat:
+        # "ends it" — there has to be an "it".
+        return None
     return out
 
 
@@ -2148,18 +2184,17 @@ def _r_until_end_of_combat(m):
     return [UntilEndOfCombat()]
 
 
-@rule(r'^playing (.+?) again replaces your current choice '
-      r'rather than adding to it')
-def _r_replaces(m):
-    return [Replaces(m.group(1).strip())]
+@rule(r'^ongoing\s*[\u2014-]+\s*')
+def _r_ongoing(m):
+    return [Ongoing()]
 
 
-@rule(r'^playing the same colou?r on two consecutive turns ends it')
+@rule(r'^playing the same colou?r \d+ attacks in a row ends it')
 def _r_ends_on_repeat(m):
     return [EndsOnColourRepeat()]
 
 
-@menu(r'^choose one\s*[\u2014-]+\s*([^.]+?)\s*(?=\.|$)')
+@menu(r'^choose one\s*(?:[\u2014-]+|:)\s*([^.]+?)\s*(?=\.|$)')
 def _r_choose_one(m):
     """The general modal shape — a menu followed by more sentences, rather
     than a menu that is the whole half. KILLSWITCH is the first of these."""

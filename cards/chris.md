@@ -37,7 +37,7 @@ Range: Melee
 **KILLSWITCH**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose one — your attacks deal +3 damage, or gain Armour 3. Lasts until the end of combat. Playing KILLSWITCH again replaces your current choice rather than adding to it. Playing the same colour on two consecutive turns ends it.
+Effect: Ongoing — choose one: your attacks deal +3 damage, or gain Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
 Range: Both
 *"A note changes and so does he. Nobody has worked out which comes first."*

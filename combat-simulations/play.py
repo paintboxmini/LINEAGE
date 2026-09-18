@@ -25,14 +25,25 @@ from wheel import Wheel
 
 def build_deck(pool, size, body, mind, soul, rng):
     """`rules/cards.md`: deck size equals total stats, each colour's count
-    equal to the matching stat."""
+    equal to the matching stat.
+
+    Drawn **without** replacement. No written deck in the repo runs the same
+    card twice — 43 decklists, checked by `agent-tools/check-references.py` —
+    and this used to pick each slot independently, so it built creatures no
+    bestiary entry could describe. It also let one Card object sit in two
+    piles at once, which is the shape of bug that made FORGET file the same
+    card twice.
+
+    A colour with fewer distinct cards than the stat asks for takes what
+    there is rather than padding with repeats.
+    """
     want = {'RED': body, 'BLUE': mind, 'GREEN': soul}
     deck = []
     for color, n in want.items():
         avail = [c for c in pool if c.color == color]
         if not avail:
             continue
-        deck += [rng.choice(avail) for _ in range(n)]
+        deck += rng.sample(avail, min(n, len(avail)))
     return deck[:size] if size else deck
 
 
