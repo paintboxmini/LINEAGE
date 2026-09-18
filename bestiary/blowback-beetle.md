@@ -53,5 +53,5 @@ Dried and ground, the organ yields **bellows dust**.
 - `bestiary/scorchback-beetle.md` — the smaller cousin, and the same chemistry pointed the other way
 - `places/turnroot-weald.md` — the resinous understory it works, and the forest it refuses to be routed by
 - `places/ashfall-wastes.md` — the scrub its cousin stayed in
-- `bestiary/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/sapphire-ant.md` — the other seasonings, and the other kinds of gate
+- `flora/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/sapphire-ant.md` — the other seasonings, and the other kinds of gate
 - `campaign/kevin.md` — the character, and what this does once it is loaded

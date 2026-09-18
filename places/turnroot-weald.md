@@ -35,4 +35,4 @@ Notable species:
 
 The Turnroot Weald wraps the northeastern edge of the Ashfall Wastes acting as a natural boundary.
 
-- `bestiary/hush-bloom.md` — the pale flower of the deep shade, and why gathering it takes an hour of sitting still
+- `flora/hush-bloom.md` — the pale flower of the deep shade, and why gathering it takes an hour of sitting still

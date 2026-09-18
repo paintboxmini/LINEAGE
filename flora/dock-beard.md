@@ -1,6 +1,6 @@
 # Dock Beard
 
-*Flora rather than fauna, filed here with the other ingredient organisms. Boiled down it stops being a plant and becomes* greenpitch*, which is what it is called once anybody is paying for it.*
+*Boiled down it stops being a plant and becomes* greenpitch*, which is what it is called once anybody is paying for it.*
 
 A coarse dark green growth that takes hold in wet standing timber below the splash line — pilings, dock legs, the underside of a hull that has not been hauled out in too long. It looks like matted hair and comes off in sheets.
 
@@ -37,4 +37,4 @@ Raw beard is not food and does not become food. A stretch of it in a cook pot ru
 ## Related Documents
 
 - `places/vultures-nest.md` — the docks, the Compact, and what grows on made ground
-- `bestiary/stiltwood.md` — the timber it grows on and the hull it seals
+- `flora/stiltwood.md` — the timber it grows on and the hull it seals

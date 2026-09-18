@@ -1,7 +1,5 @@
 # Nobody's Pepper
 
-*Flora rather than fauna, filed here with the other ingredient organisms.*
-
 A low, scrubby bush that fruits in small hard pods, growing on the spoil banks around the Nest's islands — the heaps of gravel and foreign dirt that ships have been dumping out of their holds for two hundred years.
 
 **It is not from here.** Nothing on a spoil bank is. Ballast comes out of a ship as the cargo goes in, and it comes out carrying the soil and seed of wherever it was shovelled up. The banks around the Nest are two centuries of somewhere else, piled in layers, and Nobody's Pepper is the thing that took to it best.
@@ -37,4 +35,4 @@ For a cook working from a grinder rather than a pantry, the variability is the a
 ## Related Documents
 
 - `places/vultures-nest.md` — the islands, the spoil banks, and why the town eats what it eats
-- `bestiary/hush-bloom.md` — the other ingredient plant on record, and the opposite kind of gate
+- `flora/hush-bloom.md` — the other ingredient plant on record, and the opposite kind of gate

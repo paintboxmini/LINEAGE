@@ -37,5 +37,5 @@ It is also one of the charges in Kevin's grinder: `campaign/kevin.md`.
 - `places/ashfall-wastes.md` — the Cindersink and the warm ground it needs
 - `bestiary/sapphire-ant.md` — the Blue-coded counterpart, same role
 - `bestiary/blowback-beetle.md` — the larger cousin, same chemistry pointed forward instead of back
-- `bestiary/hush-bloom.md`, `bestiary/shockquills.md` — the other seasonings, gated by patience and by risk
+- `flora/hush-bloom.md`, `bestiary/shockquills.md` — the other seasonings, gated by patience and by risk
 - `campaign/kevin.md` — the character, and what this does once it is loaded

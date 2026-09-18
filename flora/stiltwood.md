@@ -1,7 +1,5 @@
 # Stiltwood
 
-*Flora rather than fauna, filed here with the other ingredient organisms.*
-
 The tree the region floats on. Stiltwood grows on island margins all through the Nest's web of rivers and lakes, standing on a cage of arched roots with its trunk held clear of the water — the same trick the town itself is doing, which is where the name comes from and probably where the idea came from too.
 
 **Only the lowest third of the trunk is worth anything.** The wood below the old waterline is dense, dark, and does not rot. Above it the same tree is pale, light, and unremarkable — fine for crates and lamp posts, useless for a hull. A grown stiltwood is mostly firewood with a boat hidden in the bottom of it.
@@ -38,4 +36,4 @@ It is not a trade good the Nest exports so much as the material the Nest is made
 
 - `places/vultures-nest.md` — the town, the tide, and what grows on made ground
 - `world/geography-overview.md` — fast tide and slow tide, and why boats here are rowed rather than sailed
-- `bestiary/dock-beard.md` — the other half of a watertight hull
+- `flora/dock-beard.md` — the other half of a watertight hull
