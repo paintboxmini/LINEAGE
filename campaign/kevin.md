@@ -306,12 +306,12 @@ Range: Melee
 
 ---
 
-**GRIND SHOT** is Blue now, and Ranged, and the change to its Effect is forced rather than chosen: *"Move to the Backline"* was written for a Melee weapon that threw him out of the scrum after firing. A Ranged card already requires he not be in the scrum, so the old Effect had nothing left to do.
+**GRIND SHOT** is Blue now, Ranged, and a d6, and the change to its Effect is forced rather than chosen: *"Move to the Backline"* was written for a Melee weapon that threw him out of the scrum after firing. A Ranged card already requires he not be in the scrum, so the old Effect had nothing left to do.
 
 ```
 GRIND SHOT
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d6
 Effect: As the loaded round.
 Defense Effect: As the loaded round.
 Range: Ranged
@@ -324,7 +324,9 @@ Range: Ranged
 
 **The one real cost: he cannot block with it in a scrum.** A defending card must satisfy its own Range as if the defender were attacking (`rules/combat.md`, Attack Resolution, step 2), and Ranged needs the two of them not both Frontline. **Anyone who closes on him locks the gun out of his defence entirely** — which is not a bug. It is why he has BREAK DOWN. *Knife in the scrum, gun at distance, and the rules enforce the split rather than the table agreeing to it.*
 
-*The card keeps its name, its quote, its die and its place in the load system. Colour, stat, Range and both effect lines changed.*
+*The card keeps its name, its quote and its place in the load system. Colour, stat, Range, die and both effect lines changed.*
+
+**d6, set 2026-09-19, and it is the norm rather than a nerf.** Blue Ranged cards in the core pool average **d5.47**, so a d6 signature sits just above the line where a signature should. The d8 it carried was a Red-Melee number on a Blue-Ranged card. *Measurement says this will not actually cost him anything — the same change tested at 400 fights moved his damage not at all, because the loads are where his output lives (What this build actually costs, above). It is a correctness fix, not a balance one.*
 
 **SERVE** is unchanged. It carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
 

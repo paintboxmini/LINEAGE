@@ -30,7 +30,7 @@ Range: Melee
 
 **GRIND SHOT**
 BLUE — MIND
-Attack: Mind + d8
+Attack: Mind + d6
 Effect: As the loaded round.
 Defense Effect: As the loaded round.
 Range: Ranged

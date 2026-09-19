@@ -168,12 +168,17 @@ character:**
   85% to 75%.** The proposed die lever was wrong; the lever is supply.
   That is `campaign/kevin.md`'s own design note, confirmed rather than
   assumed.
-- **The core pool's dice are colour-skewed.** Mean die by colour: **Red
-  6.27, Blue 5.36, Green 5.04**, and a d8-or-better is 32% of Red cards,
-  16% of Blue, 7% of Green. A Mind- or Soul-primary character drafts from a
-  smaller-dice pool than a Body-primary one — about 0.45 expected damage a
-  card at stat 4. Small, systematic, and worth knowing before reading
-  anything into one character's output.
+- **The core pool's dice are colour-skewed, and that is the design rather
+  than a finding.** Mean die by colour is Red 6.27, Blue 5.36, Green 5.04 —
+  which this file first recorded as a quirk worth watching. It is not. **The
+  die is bought with range, and each colour spends its range budget
+  differently**: Red is 53% Melee, Blue 60% Ranged, Green 56% Both. Sort the
+  same cards by range and ignore colour and the ordering is identical —
+  **Melee d6.44, Ranged d5.39, Both d4.93** — so restriction is the driver
+  and the colour spread falls out of it. Now written up properly at
+  `rules/cards.md`, Why Red has the biggest dice. *The lesson for anyone
+  measuring here: a number that looks like an imbalance may be a rule
+  nobody had written down yet, so ask before reporting.*
 - **A Both-range deck defends far more often.** The character who could
   not legally block only 33% of the time, against ~50% for the other two,
   was the one whose cards are mostly Both. Unglamorous and real.
