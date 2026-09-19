@@ -136,6 +136,53 @@ Example 5 was corrected in the source file on 2026-09-06 as part of this
 rebuild: it previously read "no bonus, no skip" on geometry identical to
 Example 3's bonus case. Example 3 governs, per Drew.
 
+## What measuring the party characters actually found
+
+*2026-09-19. Recorded because two of these were mistakes in how the
+question was asked, and the next person should not repeat them.*
+
+**Two artifacts, both mine, both of which read as findings about a
+character:**
+
+- **The enemy AI had a scapegoat.** `choose_action` picked its target with
+  `min(reachable, key=lambda f: f.hp)` — raw HP, and `min` breaks a tie by
+  list order. With two party members on equal HP, every creature in every
+  fight picked the same one, every turn. Measured over 250 fights: whoever
+  was listed first of two 18 HP characters took ~1600 attacks and went down
+  62–71% of the time, the other took ~700 and went down under 30%, **and
+  the two swapped when the list was reordered.** Fixed — it reads the HP
+  fraction now, the same definition `choose_target` in the same class was
+  already using, and ties break at random.
+- **The draft was doing the comparing.** A hand-built fill gave the
+  Blue-primary character utility cards and the Red-primary one STRIKE at
+  d10. Once the fill was a real random colour-matched draft, the gap
+  between those two characters mostly went away.
+
+**What survived, measured over 400 fights with a random draft:**
+
+- **Kevin's gear economy is the whole of his lead, and it is not his
+  dice.** He deals ~4.8 damage an attack against ~2.8 and ~3.1 for the
+  other two. Cutting GRIND SHOT from d8 to d6 changed nothing at all
+  (5.1). Taking away his loads, oranges and drinks dropped him to **3.3 —
+  level with everyone else — and cost the party ten points of win rate,
+  85% to 75%.** The proposed die lever was wrong; the lever is supply.
+  That is `campaign/kevin.md`'s own design note, confirmed rather than
+  assumed.
+- **The core pool's dice are colour-skewed.** Mean die by colour: **Red
+  6.27, Blue 5.36, Green 5.04**, and a d8-or-better is 32% of Red cards,
+  16% of Blue, 7% of Green. A Mind- or Soul-primary character drafts from a
+  smaller-dice pool than a Body-primary one — about 0.45 expected damage a
+  card at stat 4. Small, systematic, and worth knowing before reading
+  anything into one character's output.
+- **A Both-range deck defends far more often.** The character who could
+  not legally block only 33% of the time, against ~50% for the other two,
+  was the one whose cards are mostly Both. Unglamorous and real.
+
+**And judge an agent on the fight the character was built for.** `KitAI`
+is at parity with `SimpleAI` in a duel and worth ten to twenty points of
+party win rate in a group fight — see its class docstring. A duel has no
+allies and no time, so nothing a setup play buys can pay back in one.
+
 ## Extending it
 
 To play a real creature, build a `Combatant` with its stat block from

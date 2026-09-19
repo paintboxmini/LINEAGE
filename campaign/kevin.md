@@ -138,6 +138,8 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 **All three of them run on the same fuel, and none of it is free.** Gold, time, ingredients, and the difficulty of the prep itself are the balancing levers on this character — not the dice. *When the kit looks strong on paper, that is because it is being read with a full bandolier.*
 
+**Measured 2026-09-19, and the note above was right.** Over 400 simulated party fights with a random draft, Kevin deals about **4.8 damage an attack against 2.8 and 3.1** for the other two. Take away only his loads, oranges and drinks and he falls to **3.3 — level with everyone else — and the party's win rate drops from 85% to 75%.** *His cards are ordinary. The economy is the character.* And **cutting GRIND SHOT's die from d8 to d6 changed nothing at all** (5.1), so the die is not the lever anyone should reach for; supply is.
+
 **So downtime matters more for Kevin than for any character this player has run.** A session where the party pushes straight on is a session where he does not restock, and a Kevin who did not restock is a man with a plain round, an empty bandolier and a good knife. **That is not a punishment and it should not be softened** — it is the shape of the character, and it is what keeps a three-economy build honest next to a party that just picks up a card at the end of the session.
 
 **What that means at the table, concretely:**
@@ -344,7 +346,7 @@ Range: Both
 - **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
 - Which other fruits he's worked out, if any
 - **How many oranges a bandolier holds**, which is the one number the consumable does not answer
-- **Whether GRIND SHOT's d8 is too much on top of a load** (The Ingredients, above) — d6 is the lever
+- ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
 - Price

@@ -1771,6 +1771,12 @@ class Adjacent(Op):
         mate = (ctx.resolve(ALLY, 'Align with') or [None])[0]
         if mate is None or ctx.wheel is None:
             return
+        # An ally can be an Object — a summoned spirit is on the table and
+        # resolves as an ally, but never has a wheel token, so it cannot be
+        # adjacent to anything in the order.
+        if not _on_wheel(ctx, mate, self.label) \
+                or not _on_wheel(ctx, ctx.actor, self.label):
+            return
         if ctx.wheel.adjacent(ctx.actor, mate):
             ctx.log(f'  {ctx.actor.name} and {mate.name} act side by side.')
             for op in self.ops:
