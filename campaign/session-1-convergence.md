@@ -28,6 +28,16 @@ This does a lot of quiet work:
 
 *This supersedes the "isolated temple" lean in his own file, which was written as genuinely open. `campaign/kevin.md` updated to match.*
 
+**Amended 2026-09-19 — the trade history holds, the shipment is now a question.** What is confirmed is that Kevin has run temple wine to Vulture's Nest **many times** and knows the place well; that is why he chose it as somewhere to hide Chris. What no longer follows automatically is that he is *escorting a shipment when Session 1 opens*, because the trip he actually made was a flight out of the Abyssal Ruins with a friend the University wants.
+
+**Three ways it can go, and this is a table question rather than a file question:**
+
+- **The shipment is real and he is meeting it.** He runs for the Nest because it is where the boat was going to be anyway, which gives him cover, a berth and a reason to be on the manifest. Everything written above survives intact.
+- **The shipment is over.** He delivered it, was on his way back, and the University happened first. The freight is somebody else's problem now and the boat is just a boat.
+- **There is no shipment this trip.** He is a priest's son on the run with somebody else's alien, using a family name that still opens a berth. *The most exposed version, and the most interesting one — it makes the Herb name the only thing he is trading on.*
+
+**What does not change in any of them:** the lockdown catches him, he knows this port better than anyone else in the party, and his father's name is still worth something on that dock.
+
 ---
 
 ## Pat — chasing one living person
@@ -72,16 +82,38 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 **On the Shunka island:** toward the continent's northern extent, slightly west of true north and south of Glasslight Reach (`world/geography-overview.md`, Bearing Table). Pat has come a long way, from somewhere most people at this dock have never had reason to think about.
 
-## Chris — no reason, which is the reason
+## Chris and Kevin — they arrive together, running
 
-He wants to see the world. That's it, and it shouldn't be dressed up — a thing that arrived here severed, memory gone, and got taught how a farm works by a quiet man who never asked for an origin story (`campaign/chris.md`, `characters/iron.md`) does not need a summons. He needs a road.
+**Settled 2026-09-19, and it replaces everything this section used to say.** Chris was previously written as the one member of the party with no obligation pulling him — *"he wants to see the world, and that's it."* That is gone. He has the strongest reason of the three, and Kevin is inside it.
 
-Two grounded ways to put him on it, both already supported:
+**What happened.** Chris came through the rift at the bottom of the Abyssal Ruins as a small child and was raised in secret by the scholar who found him — a plant specialist at **Gemstone University**, studying what the rift does to what grows near it, who chose to be a father rather than a discoverer (`campaign/chris.md`, Where He Landed). Kevin was at the same University, reading culinary arts and barely attending, and the two of them were friends.
 
-- **He came with the Briarwatch trade.** Briarwatch goods already reach the Nest — there are Briarwatch-style guard boots in Dess's stock (`places/vultures-nest.md`). Riding along with a run and then not going back is the smallest possible departure, which suits him. Iron would not make a scene about it.
-- **The Ruins are right there.** The Abyssal Ruins sit south of Vulture's Nest (`world/geography-overview.md`, Bearing Table) — the nearest port to the ground he came down on. He does not have to be investigating that. It only has to be true, and available later, when he decides he wants it to matter.
+**The University found out, and sent men to take Chris by force** — to make a weapon of the thing that came through the largest rift in the world. There was a fight. **Kevin was in it.** Chris's father put himself between his son and the men and told him to run, and **Kevin is the one who physically tore Chris away from that moment** and got him out. What became of the father is unknown and stays unknown (`places/abyssal-ruins.md`, It is an antagonist now).
 
-**The tension worth protecting:** he is the one member of the party with no obligation pulling him. Everyone else is discharging something — a shipment, a summons, a debt. He's the only one who is simply *going*, and that is what makes him the one who says yes to the boat.
+**So they fled the Ruins together, and Kevin chose where to go.** He has been to **Vulture's Nest** many times on temple wine business, and he likes it — seedy, dark, and carrying an underbelly a person can disappear into. *That is not a tourist's opinion of the Nest; it is a smuggler's-son's opinion, and it is correct.* He took Chris there to hide.
+
+**Which means they are not at the dock to discharge anything. They are at the dock because it is the last place anyone would look, until it very suddenly is not.**
+
+### What this buys the opening
+
+- **No introduction is needed for two of the three.** They arrive knowing each other, owing each other, and with one unfinished thing between them that neither has said out loud.
+- **The Nest is chosen rather than arrived at.** Kevin picked it on purpose, for reasons he can articulate, which makes him the party's local before the party exists.
+- **There is a live pursuit from session one.** The University's men are still looking. Nothing has to happen with that in session one — it only has to be true.
+- **They were having a good time.** Low profile, but a good time: the point of hiding in a port like this one is that hiding here looks like enjoying yourself. That is the tone the table should open on, and it makes the lockdown land as an interruption rather than a premise.
+
+### And the lockdown is what traps them
+
+They had a boat. **The Promise barge comes in, the Compact shuts the berth, and their boat is locked down with everything else on that stretch of dock.** Two people hiding from an institution that hunts them are now on a manifest, in a port nobody is allowed to leave.
+
+*That is a much sharper version of the same device than "their freight is impounded." The stakes of the quarantine are not commercial for those two.*
+
+## Pat — the one who paid
+
+**He arrives by boat, and he bought the passage.** That is the small detail that makes the three of them rhyme: Chris and Kevin are running and Pat is searching, but all three came in over water and **all three are now stuck on the same dock, trying to leave and unable to.**
+
+*Kevin's boat is locked down, Chris cannot afford to be on a list, and Pat's search does not continue from a port he cannot depart.* Three different reasons, one wall.
+
+**That is the unifier, set 2026-09-19** — not a job offer, not a tavern, not a device. The lockdown is doing it, and it is doing it to all three at once. They meet because they are all standing at the same closed gate with the same problem, and a party is the shape that problem forces them into.
 
 ---
 
@@ -103,11 +135,13 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 
 **A spooked Compact does not inspect one hull.** It inspects the berth. So:
 
-- **Kevin's wine is impounded** with everything else on that stretch of dock. Temple freight, sealed, and now sitting in a Compact warehouse behind a question nobody can answer.
+- **Kevin and Chris's boat is locked down** with everything on that stretch of dock — and if Kevin is carrying freight, that too (Kevin — the wine shipment, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
 - **Pat is at the docks asking river questions** — which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud.
-- **Chris is standing there with nothing to do and no reason to leave**, which makes him the only one of the four whose presence is entirely innocent and the only one anybody believes.
+- **Chris cannot afford to be counted**, which is the opposite of what this section used to say about him. He was previously the innocent one everybody believes; he is now the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
 
-They are four people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
+They are three people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
+
+*Updated 2026-09-19. The device did not change — the sweep still takes the berth and Bartho still deals with a party — but what it costs each of them did.*
 
 **Why this is the right opening and not just a convenient one:** following the barge leads to Pneum, an island village of Promise-adjacent people with their own practice and their own rules. The first job the party takes *is* the campaign they said they wanted, and nobody has to announce that.
 
@@ -140,21 +174,23 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 ---
 
-## Still open, as of 2026-09-18
+## Still open, as of 2026-09-19
 
-**How the three of them are introduced and grouped is not settled**, and the convergence device above is a device rather than a decision. It works if the players want to be assembled; it is not the only thing that can. Drew is asking them tonight what their characters want, which is the right order to do it in — this file should follow that conversation rather than lead it.
+**The grouping is settled and the device is settled.** All three arrive by water, all three are stopped by the same lockdown, and two of them arrive together. *This replaces the note that previously stood here saying the introduction and grouping were not settled — that was true on the 18th and stopped being true on the 19th.*
 
-**Chris's origin is settled; his route to the Nest is not.** He was found by a man working at **Gemstone University**, the institution cut into the rim of the Abyssal Ruins to study what is in the abyss — now written as a landmark at `places/abyssal-ruins.md`, with everything about it beyond its existence reserved for Chris's player, who named it on 2026-09-19. That supersedes the earlier Briarwatch/Iron line in `campaign/chris.md`, which was always marked tentative.
+**What is genuinely still open:**
 
-**How he gets from there to Vulture's Nest is open**, and the two grounded routes above (riding in with a Briarwatch trade run, or the Ruins simply being the nearest thing south) both still work — the second one rather better now, since the Academy is at the Ruins and the Ruins are south of the Nest (`world/geography-overview.md`, Bearing Table).
+- **Whether Kevin is carrying a shipment this trip** (Kevin — the wine shipment, above). Three workable versions, all table questions.
+- **What happened to Chris's father** — deliberately unwritten, and a thread rather than a gap.
+- **His name**, and Chris's own character name.
+- **How far the University's hostility goes** — the whole institution, a faction, or one office (`places/abyssal-ruins.md`, It is an antagonist now). Reserved for Chris's player.
+- **When the pursuit shows up.** It only has to be true in session one, not present.
+- **The fourth seat**, unchanged.
 
-**Chris and Kevin already know each other, as of 2026-09-19.** The table reopened the tie and took it: Kevin reads culinary arts at **Gemstone University**, the same school, and that is where they met — Kevin hanging around and not really attending, Chris a student there since the man from the University found him. *This replaces the line that previously stood here saying the option was closed.*
+**Two older notes retired on 2026-09-19**, recorded so nobody reinstates them:
 
-**Two things that follow, and one that does not.**
-
-- **The party does not need a device to introduce those two.** Whatever assembles the group, Chris and Kevin arrive already knowing each other, with a shared place to talk about. That is one fewer stranger-meets-stranger beat to stage.
-- **Kevin has a reason to have been south.** The University is at the Abyssal Ruins, which is south of the Nest, and Kevin's family ships out of the Capital — so the trip is a thing he has done, not a thing he would need talking into.
-- **It does not settle Chris's route to the Nest.** Sharing a school with Kevin is not the same as travelling with him, and how Chris actually gets north is still his to say.
+- *"Chris's route to the Nest is open"* — it is not; Kevin brought him.
+- *"Chris has no obligation pulling him"* — he has the heaviest one at the table.
 
 ---
 

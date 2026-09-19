@@ -10,11 +10,44 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ## Where He Landed
 
-Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). **Found by a man working at Gemstone University** — the institution cut into the rim, which is there to study what is in the abyss (`places/abyssal-ruins.md`, Gemstone University). Who he was, and what he did about it, is Chris's to write; the University's own details are reserved for the same reason.
+**He came through the rift at the bottom of the Abyssal Ruins**, from another plane — another world, another dimension, the word for it is not settled and does not need to be. The rift is the **Central Gateway**, the massive violet portal at the heart of the crater and the largest known rift in Eclipseria (`places/abyssal-ruins.md`, The Central Gateway). *Set 2026-09-19. The Ruins also hold the Abyssal Trench, which is a different feature — if "the bottom" meant the Trench rather than the Gateway, that is a one-word change.*
 
-**He named it himself on 2026-09-19**, and the Ruins keep their own name — Gemstone University is the school in the rim, not a second name for the crater it looks into. He is a student there now, which is where Kevin met him (`campaign/kevin.md`).
+**And he came through as a small child.**
 
-*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
+### The man who found him
+
+**A scholar at Gemstone University, whose field is plant life.** He was at the Ruins doing exactly the work his field would put him there to do — studying what the rift does to the things that grow near it — and what he found instead was a child who had just come out of it.
+
+**He raised the boy as his own, and he did it in secret, away from the University.** He did not report the find. Everything that follows is downstream of that one decision: a scholar who studies what the rift changes, looking at the most extraordinary thing the rift ever produced, and choosing to be a father to it instead of a discoverer of it.
+
+**He is Chris's father in every sense the word is doing work in.** Not a guardian, not a keeper. The file does not name him yet — that is Chris's, like the rest of this.
+
+*This is what was reserved and is now written.* `places/abyssal-ruins.md` held "who the man was" on its not-to-be-written list specifically so its owner could answer it. He has.
+
+**He named the University himself on the same day**, and the Ruins keep their own name — Gemstone University is the school in the rim, not a second name for the crater it looks into. Chris grew up in its shadow without being of it, and is a student there now, which is where Kevin met him (`campaign/kevin.md`).
+
+### Two things this collides with, unresolved on purpose
+
+- **"He doesn't age"** (What He Is, above) sits badly against arriving as a small child and being raised to adulthood. Both cannot be simply true. The cheap fixes are obvious — he aged until he stopped, the ageing was mimicry rather than growth, the child-shape was never his real one — and all of them are Chris's to pick, or to reject in favour of dropping the line.
+- **The Amalgam** (`campaign/the-amalgam.md`) has him *sent* to scout Eclipseria ahead of a conquest, arriving severed and stripped of memory. A scout and a lost child are not the same arrival. They can be reconciled — a seed sent out arrives as what it can manage, memory gone means he would not know he was sent — but nobody has reconciled them yet, and the answer changes how sinister his own origin is to him.
+
+*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked, and now fully replaced: the man who raised him is his father, at the University, and it happened at the Ruins. Iron and Briarwatch are free for other uses.*
+
+## The Night They Ran
+
+**Set 2026-09-19. This is the most load-bearing thing in the file** — it is Chris's origin, Kevin's reason for being at Vulture's Nest, and the party's first shared history, all in one scene.
+
+**The University found out about him.** Not the father, not the secret — Chris himself. And its decision was not curiosity: **it decided to take him, by force, and make a weapon of him.** A thing that came through the largest rift in the world and can be anything is not a research subject to the people who run that building. It is an instrument.
+
+**They sent muscle.** Kevin was there — not a bystander, in it, fighting alongside them. Chris's father put himself between his son and the men who came for him and **told him to run**, and he was still holding them when the running started.
+
+**Kevin is the one who made Chris go.** He took hold of him and tore him out of the moment, physically, away from his father and out of the fight, because Chris was not leaving on his own. *That is the debt and the wound in the same action, and it belongs to both of those characters equally.*
+
+**What happened to his father is unknown, and stays unknown.** Dead or alive is deliberately unwritten — it is a thread to play with rather than a fact to record, and the not-knowing is the point. Chris did not see how it ended, because Kevin did not let him.
+
+**They got out of the Ruins together.** And the men are still looking.
+
+---
 
 ## The Live Thread
 
@@ -70,6 +103,24 @@ What the kit delivers so far:
 **And the dead-turn problem was fixable, because a card has two halves and the first draft only used one.** The riposte sits on the Defense half; the Attack half arms him when he is the aggressor. It is never a blank turn, and the two halves teach the same idea from both directions.
 
 **The three together.** MEASURE is the discipline, RIPOSTE is the reflex, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
+
+## Magic Expression — nature and transmogrifying
+
+**Set 2026-09-19, and it is flavour rather than a subsystem — which is the rule, not a shortcut.** *Magic Expression* is the whole of how magic works here: the card gives the mechanical outcome, and **what it looks like is yours** (`rules/character-creation.md`, Magic Expression). There is no spell list and nothing to prepare.
+
+**So every card he plays reads as one of two things.** **Nature** — growth, root, rot, the behaviour of living things, which is what Nature +2 on his sheet is already for. **Transmogrifying** — one thing becoming another, which is what he *is*. A Blue card is not "a Mind card"; it is him changing the shape of the problem or the shape of himself.
+
+**This lands with no strain at all**, which is the good sign: AMALGAMOUS FORM is transmogrification with a die on it, MIMETIC BLADE is one transmogrification perfected, Mimicry is the same act done slowly and socially, and the man who raised him studies plants.
+
+### The spell book
+
+**He wants one, and he should have one.** Mechanically it is **gear and flavour — no rules attached, and nothing it needs to do.** Magic Expression means a spell book cannot be a resource that gates his cards, because nothing gates his cards; what it can be is the object he learned out of.
+
+**The interesting version is whose it was.** A scholar of plant life, at a university, raising a child in secret, writing things down. A book that is half a botanist's field notes and half something else is a stronger object than a grimoire, and it is the one physical thing he would have carried out of the ambush.
+
+*That reading is a suggestion. The book is Chris's, including whether it is his father's at all.*
+
+---
 
 ## Skills
 
@@ -224,6 +275,11 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 ## Not Yet Set
 
 - Character name
+- **His father's name**, and what actually happened to him
+- **Whether "he doesn't age" survives** arriving as a small child (Where He Landed, above)
+- **How the scout and the child reconcile**, if they do (`campaign/the-amalgam.md`)
+- **What the spell book is** — whose, and what is in it
+- **What the University wanted to make him into**, in any detail beyond "a weapon"
 - Appearance, voice, backstory detail beyond the above
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)

@@ -67,15 +67,17 @@ Instinct for hostile intent specifically, not a general sense that something's "
 **MISE EN PLACE**
 RED — BODY
 Attack: Body + d6
-Applies When: The thing he needs is already within reach because he put it there — a blade, a pan, a hot surface, a crate, the edge of the counter he is standing at. It has to be a real object in the fiction, and it has to be one he was standing near before the exchange started. Not something fetched, not something improvised across the room, and not the grinder or a prepared load — those are a card and a piece of gear and they cost what they cost.
+Applies When: He set it up. A tool already in his hand, a pan already hot, ground he picked, an angle he took, a crate he shifted before any of this started. The arranging can have happened an hour ago or half a second ago, and it does not need a kitchen — he carries his kit and works out of a pack as readily as a galley. What it cannot be is luck: something he had no hand in putting there is not his mise en place.
 Range: Melee
 *"Set the station before service. Then service is just reaching."*
 
-**A kitchen discipline that happens to also be a fighting one.** *Mise en place* is everything laid out before the rush begins, in the order you will need it, so that when it starts you are not deciding — you are reaching. A cook who has done it well looks unnervingly calm at the worst moment of the night, and it is not calm, it is preparation that finished an hour ago.
+**Set up, not prep.** The phrase means *everything in its place*, and the useful reading is the loose one — it covers the stance as much as the station. A cook who has done it well looks unnervingly calm at the worst moment of the night, and it is not calm, it is arranging that finished before anyone was watching. Kevin does that to a room the same way he does it to a counter.
+
+**It is not gated on a kitchen, and that matters for the whole character.** He carries his supplies. He cooks on a dock, in a hold, at a roadside — *field prep is the default* (`campaign/kevin.md`, Supply and restocking), and only the high-end work wants a real kitchen. A Passive that went dead the moment he stepped outside would be a Passive he could not use in most of the campaign.
 
 **Melee and d6, priced the same as STRONGJAW and MIMETIC BLADE** — a real Range restriction taking the bigger die. He has to be standing at the thing.
 
-**The Applies When is the whole design, and it is a gate that rewards a habit.** What it asks is not *is there an object* but *did you put one there* — so it pays a player who describes their surroundings on the way in, and pays nothing to one who remembers the counter exists at the moment they want to hit somebody with it. **It should be illegal in an empty field and near-automatic in a kitchen**, and Kevin choosing where to stand is the interesting decision it creates. *Drafted 2026-09-19 from the name, colour, stat, die and Range Drew set; the Applies When is the part that was not specified and wants his sign-off.*
+**The gate is authorship, not scenery.** The question is never *is there an object* — it is *did you arrange this*. So it pays a player who says what they are doing before it matters and pays nothing to one who discovers a convenient rack of knives at the moment they want to hit somebody. It should be near-automatic for a man who thinks two steps ahead and simply unavailable in a situation he was dropped into cold. *Rewritten 2026-09-19: the first draft demanded a placed physical object and effectively demanded a kitchen, which was wrong on both counts.*
 
 ---
 
@@ -92,7 +94,7 @@ Range: Ranged
 
 **Ranged and Blue because it is the opposite of MISE EN PLACE in every axis.** That one is close, physical, and about something he prepared; this one is far, mental, and about something he is doing live. He has a Passive for the station being ready and a Passive for the station being on fire.
 
-**On the die.** Ranged is a real restriction and normally earns d6 (`rules/character-creation.md`); this is written at d4 as specified, which is a restriction paid for and a compensation declined — the same trade FOLLOW THROUGH makes (`campaign/chris.md`). Flagged rather than silently corrected, since it may well be deliberate: this is a Passive played for what it sees, not for what it hits. *Drafted 2026-09-19 alongside MISE EN PLACE; same caveat on the Applies When.*
+**On the die — left at d4 on purpose, for now.** Ranged is a real restriction and normally earns d6 (`rules/character-creation.md`); this pays the restriction and declines the compensation, the same trade FOLLOW THROUGH makes (`campaign/chris.md`). **Drew's call on 2026-09-19 was to hold it at d4 and adjust live if it feels bad at the table**, which is the right way round for a number nobody has rolled yet. d6 is close and is the obvious move if it wants one.
 
 ---
 

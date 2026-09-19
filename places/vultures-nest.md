@@ -301,9 +301,15 @@ The Red Scarves are already in your peripheral vision.
 
 **The sweep did it.** The Compact impounded a whole stretch of berth over the quarantined barge (The Quarantined Barge, above), and everything moored near it went into a warehouse behind a question nobody can answer — other people's cargo, sealed and legitimate, sitting indefinitely. **Bartho does not hold a queue of petitioners; he deals with a party.** So he is dealing with them together, as one problem, and none of them chose that.
 
-**Only one of them is actually there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). Kevin's temple wine is in the warehouse. Pat is at the docks asking river questions, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. Chris is standing there with nothing to do and no reason to leave, which makes him the only one present whose reasons anybody believes.
+**None of them is only there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). *Updated 2026-09-19 — this paragraph previously had Chris as the idler whose reasons everybody believes, which is now the opposite of true.*
 
-**Bartho sorts them into one conversation because it is easier than three**, not because they belong together. A dockmaster mid-lockdown has a freight claim, a stranger asking about the water, and an idler, and handling them as one group takes a quarter of the time. That is the whole of why the party exists. Nobody announces it.
+- **Kevin and Chris came in together, running**, out of the Abyssal Ruins and the institution that tried to take Chris by force (`campaign/chris.md`, The Night They Ran). Their boat is in the hold with everything else, and if Kevin is carrying temple freight this trip, so is that. Kevin chose this port precisely because a person can vanish in it, which was true right up until the Compact started writing names down.
+- **Pat is at the docks asking river questions**, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. He arrived by boat and paid for the passage.
+- **Chris is the one who can least afford to be counted.** He says nothing about why.
+
+**Bartho sorts them into one conversation because it is easier than three**, not because they belong together. A dockmaster mid-lockdown has a berth full of stopped people and no appetite for individual interviews, and handling them as one group takes a quarter of the time. That is the whole of why the party exists. Nobody announces it.
+
+*What Bartho does not know, and the GM should: two of the three have an excellent reason to want off this dock quietly, and one of them is the most interesting thing that has ever come through the Central Gateway.*
 
 ### Beat one — Bartho, the barge, the lockdown
 

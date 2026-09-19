@@ -65,6 +65,16 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 *Nothing here costs him his backstory.* He has been at the University a month, a year, whatever the table wants; the temple is still home, the family is still the family, and the boats still run. Sleep at the church, go back to school.
 
+### And then it ended badly
+
+**The University came for Chris.** It found out what he was, decided a thing that came through the largest rift in the world would make a better weapon than a subject, and sent men to take him (`campaign/chris.md`, The Night They Ran). Chris's father — a scholar at that same University, who had raised him in secret — put himself in the way and told his son to run.
+
+**Kevin was in that fight, and Kevin is the one who ended it for Chris.** He took hold of him and physically tore him out of the moment, away from his father, because Chris was not going to leave on his own. *That is the single most important thing on Kevin's sheet and it is not a stat.* He saved his friend's life and he took the choice away from him in the same motion, and nobody has said a word about it since.
+
+**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
+
+**What happened to Chris's father is unknown**, to Kevin as much as to anyone.
+
 ### His father, and the shape of leaving
 
 Ossian wants his son in the liturgy and has never once said so as an instruction (`characters/ossian.md`). **The pressure is worse for being affectionate.** He loves the boy, he assumes *he'll get it* eventually, he thinks he will find God in his own time — and he also thinks Kevin is not standing up to the responsibility, and does not hide it well.
@@ -103,6 +113,14 @@ Finding food that will take an enhancement is easy — peppers are peppers. What
 - **A session of work turns one measure of a rare seasoning into three prepared rounds, two oranges, or two servings of a drink** — oranges are larger and more volatile, and a mouthful goes further than a shell and less far than a seed.
 - **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden.
 - **Restocking is an ingredient problem, and ingredient problems are quests.**
+
+### Where he can work — field prep is the default
+
+**He carries his supplies and he can cook anywhere** (set 2026-09-19). A fire he controls, a flat surface and his kit is the whole requirement, and that is a roadside, a ship's galley, a warehouse corner or a camp. **Ammunition is field work.** Rounds, oranges and the ordinary drinks all get made wherever the party has stopped, and a session where they never see a building does not disarm him.
+
+**What wants a real kitchen is the high end.** The elaborate recipes — anything that needs held temperature, proper equipment, time measured in a day rather than an evening, or more hands than he has — is a kitchen job and should be one. *That is the line, and it is deliberately the useful way round: the thing he needs constantly is portable, and the thing that is an upgrade is what a town gets him.* Which recipes sit on which side is table talk under the general Crafting rule (`rules/items.md`, Crafting), decided as they come up.
+
+**It also keeps MISE EN PLACE alive** (`campaign/passives.md`). A Passive about having set up would be dead weight on a character who could only set up indoors.
 
 ---
 
@@ -153,8 +171,8 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 ## Gear
 
 - **The pepper grinder** — hand-cranked, functions like a shotgun. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
-- **The vibro knife** — Chris's, originally. Alien, and the only object on Kevin's sheet that did not come out of a kitchen or a hold. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now.
-- **A hot knife** — the kitchen one. Kept distinct from the vibro knife above; whether he still carries both, or the alien one quietly replaced it, is Kevin's to say.
+- **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now. *The "hot knife" this file used to list was removed on 2026-09-19; there was only ever one.*
+- **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Supply and restocking, below).
 - **A bandolier of incendiary oranges** — a real mechanical item rather than flavor, so it still needs its numbers written.
 
 ```
@@ -173,10 +191,10 @@ spent when GRIND SHOT resolves, win or lose.
 
 Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green entirely to SERVE and the drinks.
 
-- **MISE EN PLACE** — Red, Body, Melee, d6. The station is already set. *Everything in its place* is a kitchen discipline before it is anything else, and it is the one thing a chef does that a fighter also does.
+- **MISE EN PLACE** — Red, Body, Melee, d6. He set it up. Read *set up* loosely rather than as prep alone: the stance and the ground count the same as the station, and it needs no kitchen, because he carries his kit and works out of a pack.
 - **SPLIT ATTENTION** — Blue, Mind, Ranged, d4. Six orders up, none of them finished, all of them being tracked. Attention divided on purpose rather than lost.
 
-*Note on the die.* A Range restriction normally earns d6 in this corpus (`rules/character-creation.md`), which is what MIMETIC BLADE and STRONGJAW are both paid for Melee. **SPLIT ATTENTION is Ranged at d4** — paying the restriction and declining the compensation, the same trade FOLLOW THROUGH makes (`campaign/chris.md`). Written as given; worth a second look at the table in case it was meant to be d6.
+*On the die:* Ranged normally earns d6 here, and SPLIT ATTENTION is d4 — a restriction paid for with the compensation declined. **Held at d4 deliberately, to be adjusted live if it plays badly.**
 
 ---
 
@@ -231,15 +249,15 @@ Range: Both
 - The oranges' numbers as a piece of gear — the card covers throwing one, not carrying six
 - Which other fruits he's worked out, if any
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
-- **Whether SPLIT ATTENTION is d4 or d6** (Passives, above) — Ranged normally earns d6
-- **The Applies When on both Passives** — drafted 2026-09-19 from the names, not specified
+- **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
 - Price
+- **Whether he is carrying a shipment this trip** (`campaign/session-1-convergence.md`, Kevin — the wine shipment) — the trade history is settled, the current cargo is not
+- **What he thinks he did that night**, and whether he would do it again
 - The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
 - Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
-- Whether he still carries the hot knife alongside the vibro knife (Gear, above)
 - How long he has actually been at Gemstone University, and whether he is going back
 
-*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, and where the exploding produce comes from.*
+*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, where the exploding produce comes from, that he can cook anywhere, that he carries exactly one knife, and why he is at Vulture's Nest.*
 
 ## Related Documents
 
