@@ -25,6 +25,10 @@ Special Rule: Upon simultaneous reveal, this card's color becomes identical to w
 "Wherever you plant your feet, that's where I plant mine."
 ```
 
+**One thing it costs, found 2026-09-19 while building his deck for the simulator.** Deck size is total stats and **each colour's count equals the matching stat** (`rules/cards.md`, Deck Building). Pat is Mind 2 / Body 3 / Soul 4, so nine cards at 2 Blue / 3 Red / 4 Green — and **HOLD THE LINE is colorless, so it fills a slot without belonging to any of those counts.** The two cannot both hold: either he runs ten cards, or one colour comes up a card short.
+
+*Not a problem with the card — a consequence of it, and Pat's to spend.* Green is the obvious place to take it from at 4, but Blue at 2 is where a single card matters most. Worth deciding before the draft rather than at the table.
+
 **Where this lands in canon later:** `cards/colorless.md`, alongside AFTERIMAGE, FOLLOW-UP, and BECOMING — same shape (a colorless card that determines its actual color only at reveal, per its own text) and the same override of the generic colorless rule (`cards/colorless.md`'s own header: "a colorless card auto-loses to any card with a real color" — this one doesn't, by design, since by reveal it's no longer resolving as colorless at all).
 
 ---

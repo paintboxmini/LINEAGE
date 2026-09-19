@@ -130,6 +130,25 @@ Finding food that will take an enhancement is easy — peppers are peppers. What
 - **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden.
 - **Restocking is an ingredient problem, and ingredient problems are quests.**
 
+### What this build actually costs — read this before playing him
+
+**Drew's note, 2026-09-19, and it is the most important paragraph in this file for the person holding the sheet.**
+
+Look at what has accumulated: **a ranged d8**, carrying **the most powerful modality built for anyone so far** — six different cards out of one slot, switchable between turns. Plus **explosives**. Plus **drinks that hand out Quick, Ward, Resist, healing and initiative**. Nobody else at the table has three economies.
+
+**All three of them run on the same fuel, and none of it is free.** Gold, time, ingredients, and the difficulty of the prep itself are the balancing levers on this character — not the dice. *When the kit looks strong on paper, that is because it is being read with a full bandolier.*
+
+**So downtime matters more for Kevin than for any character this player has run.** A session where the party pushes straight on is a session where he does not restock, and a Kevin who did not restock is a man with a plain round, an empty bandolier and a good knife. **That is not a punishment and it should not be softened** — it is the shape of the character, and it is what keeps a three-economy build honest next to a party that just picks up a card at the end of the session.
+
+**What that means at the table, concretely:**
+
+- **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Four of the five loads have to be taken off something that did not want to give them up.
+- **The oranges and the drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, below). Two oranges *or* three rounds *or* two drinks per session of work — he cannot have all three.
+- **The free action caps how much of it he can spend per turn anyway** (One free action, three things that want it, above). Carrying more does not mean using more.
+- **And a plain round is now genuinely blank** (The Ingredients, above). The floor of this character is lower than it used to be, deliberately.
+
+---
+
 ### Where he can work — field prep is the default
 
 **He carries his supplies and he can cook anywhere** (set 2026-09-19). A fire he controls, a flat surface and his kit is the whole requirement, and that is a roadside, a ship's galley, a warehouse corner or a camp. **Ammunition is field work.** Rounds, oranges and the ordinary drinks all get made wherever the party has stopped, and a session where they never see a building does not disarm him.
@@ -146,18 +165,24 @@ Five seasonings, gated five different ways: Sapphire Ant is **bought**, the Scor
 
 Ingredients don't have a colour. A seasoning is a seasoning; what it does is what it does, whatever card it rides on.
 
-| Load | Bonus added to GRIND SHOT's Effect | Source |
-|------|------------------------------------|--------|
-| **Plain** | None. It fires; that's all it does. | Anywhere |
-| **Sapphire crystal** | Defender gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
-| **Cinder flake** | Deal +3 damage | `bestiary/scorchback-beetle.md` — the Cindersink |
-| **Hush petal** | Defender gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
-| **Spinstone grind** | Apply Initiative Shift -2 to the defender | `bestiary/shockquills.md` — the Briarwatch red dirt |
-| **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
+**The load is not a rider any more. The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, six times over.
 
-One bonus each and all small — a load is a rider on a good card rather than the reason it's good.
+| Load | Effect | Defense Effect | Source |
+|------|--------|----------------|--------|
+| **Plain** | — | — | Anywhere |
+| **Sapphire crystal** | Defender gains Vulnerable | Attacker gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
+| **Cinder flake** | Deal +3 damage | Deal 3 unpreventable damage to the attacker | `bestiary/scorchback-beetle.md` — the Cindersink |
+| **Hush petal** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
+| **Spinstone grind** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
+| **Bellows dust** | Push the defender to the Backline | Push the attacker to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 
-*Worth watching at the table:* GRIND SHOT is a d8 **and** carries a load, which makes it the most loaded single thing in his kit. If it plays hot, the lever is the die rather than the loads — d6 keeps the ingredient system intact and takes 1 off the top.
+**Four of the five flip straight across**, because "defender" and "attacker" name the same person from opposite sides of the exchange. **Cinder flake is the one that could not**, and it is worth knowing why rather than just reading the fix: *a Defense Effect never has an attack to modify.* Defender wins, no damage; tie, no damage; attacker wins and the Defense Effect does not fire at all. There is no outcome in Attack Resolution where "+3 damage" has anything to attach to (`rules/combat.md`). So it burns them instead — unpreventable, because it is fire rather than an attack landing, the same reasoning the orange runs on.
+
+**Three of them are better on defence than on offence.** Rooting, shoving down the initiative order, and blowing someone off you are all worth more against the person who just committed to attacking you than against someone you picked. *The defence half is not the afterthought here; some turns it is the reason to hold the card.*
+
+**And the price is already written: the load is spent win or lose** (THE PEPPER GRINDER, above). Blocking with a good round burns the round. **Defending well costs him the shot he was saving**, every time, and that is the whole balance of the thing.
+
+**Plain is genuinely blank now.** A plain round makes GRIND SHOT a vanilla attack with no text at all — which finally makes *"never short of ammunition, only ever short of good ammunition"* bite instead of just reading well. He can always fire. Firing is often not worth the turn.
 
 **Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. Not yet decided whether he's Kevin's supplier, teacher, rival, or something else, but he's the obvious connection point once Kevin reaches the Capital.
 
@@ -197,9 +222,10 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 THE PEPPER GRINDER
 Equipment — Weapon (Tier 2)
 Effect: You may hold one prepared load at a time. Loading takes a free action,
-and the grinder may be loaded outside combat and carried loaded. While loaded,
-GRIND SHOT gains that load's bonus in addition to its own Effect. The load is
-spent when GRIND SHOT resolves, win or lose.
+and the grinder may be loaded outside combat and carried loaded. GRIND SHOT's
+Effect and Defense Effect are whatever the loaded round says they are; loaded
+with a plain round it has none. The load is spent when GRIND SHOT resolves,
+win or lose — blocking with it burns the round the same as firing it.
 "It was a kitchen tool. It is still a kitchen tool."
 ```
 
@@ -284,15 +310,19 @@ Range: Melee
 GRIND SHOT
 BLUE — MIND
 Attack: Mind + d8
-Effect: Defender gains Blind.
-Defense Effect: Attacker gains Blind.
+Effect: As the loaded round.
+Defense Effect: As the loaded round.
 Range: Ranged
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**Both halves are the same keyword and that is the card.** A face full of ground pepper does the same thing whichever direction it is travelling, and a weapon whose whole personality is *what did you load it with* should be plain on its face. **The loads are the variety** (The Ingredients, above) — one card, six behaviours, and the choice happens before the turn rather than during it.
+**The card has no text of its own, and that is the card** *(2026-09-19)*. A weapon whose entire personality is *what did you load it with* should be honest about that on its face. Both lines are filled in at the moment it resolves, from the table in The Ingredients, above — **one card, six behaviours, and the choice was made before the turn started rather than during it.**
 
-*It keeps its name, its quote, its die and its place in the load system. What changed is the colour, the stat, the Range and the Effect.*
+**There is precedent for this shape and it is not a house exception.** FOLLOW-UP already prints *"Effect: Replaced by the copied card's Effect"* (`cards/colorless.md`); a card whose halves resolve out of something else is an existing thing in this corpus.
+
+**The one real cost: he cannot block with it in a scrum.** A defending card must satisfy its own Range as if the defender were attacking (`rules/combat.md`, Attack Resolution, step 2), and Ranged needs the two of them not both Frontline. **Anyone who closes on him locks the gun out of his defence entirely** — which is not a bug. It is why he has BREAK DOWN. *Knife in the scrum, gun at distance, and the rules enforce the split rather than the table agreeing to it.*
+
+*The card keeps its name, its quote, its die and its place in the load system. Colour, stat, Range and both effect lines changed.*
 
 **SERVE** is unchanged. It carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
 

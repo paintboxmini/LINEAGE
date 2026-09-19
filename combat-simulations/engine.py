@@ -307,6 +307,16 @@ class Combatant:
         return -math.ceil(self.max_hp / 2)
 
     def stat(self, name):
+        """A card's stat bonus, or 0 for a card that has no stat.
+
+        A colorless card carries "no stat bonus" on its face
+        (`cards/colorless.md`), so `Card.stat` is None for one and every
+        caller that scores or rolls a card has to survive that. `roll_damage`
+        already did; the agents' card-scoring did not, and a colorless card
+        in hand crashed the defence chooser outright.
+        """
+        if not name:
+            return 0
         return {'body': self.body, 'mind': self.mind, 'soul': self.soul}[name.lower()]
 
     def alive(self):
