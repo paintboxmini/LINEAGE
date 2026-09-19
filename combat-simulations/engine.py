@@ -109,6 +109,19 @@ class Combatant:
         # status-effect tokens).
         self.in_play = []
 
+        # `rules/character-creation.md`, Passives and Traits: a Passive is
+        # card-shaped and sits face up in its own zone. It is never drawn,
+        # never discarded, and is not part of any pile — playing one spends
+        # the Action exactly like a card from hand, and what it saves is the
+        # card, never the turn.
+        #
+        # **Attacks only, in this engine.** Defending costs no Action, so a
+        # Passive used to defend would save the card and cost nothing at
+        # all, which would make it strictly better than anything in hand on
+        # every single exchange. The conservative reading is taken here and
+        # is flagged in `campaign/passives.md` as a table question.
+        self.passives = []
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -342,13 +355,46 @@ class Combatant:
             drawn += 1
         return drawn
 
-    def playable(self, opponent):
-        """Cards in hand whose Range is legal for the current positions."""
+    def playable(self, opponent, passives=True):
+        """Cards whose Range is legal for the current positions.
+
+        Hand, plus the Passives in their own zone — a Passive is a legal
+        thing to attack with on any turn its Range and its Applies When
+        allow. Pass `passives=False` for the defending case, where a
+        Passive is not offered (see `Combatant.passives`).
+        """
         banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
-        return [c for c in self.hand
+        pool = list(self.hand)
+        if passives:
+            pool += [c for c in self.passives if self.passive_applies(c, opponent)]
+        return [c for c in pool
                 if c.is_playable()
                 and c.color not in banned
                 and c.range_ok(self.position, opponent.position)]
+
+    def is_passive(self, card):
+        return card is not None and any(card is p for p in self.passives)
+
+    def passive_applies(self, card, opponent):
+        """Whether this Passive's Applies When is satisfied right now.
+
+        **Mostly it cannot be known.** An Applies When is a fiction gate a
+        person rules on — *a cutting edge is the answer*, *he set it up*,
+        *genuine hostile intent is present*. The engine does not model the
+        fiction, so it answers yes by default, and the few gates that are
+        actually mechanical are checked below.
+
+        That makes Passive usage in this engine an **upper bound**: a table
+        says no sometimes and this never does.
+        """
+        text = (getattr(card, 'applies_when', '') or '').lower()
+        # SPLIT ATTENTION: "More than one thing is happening and he is
+        # tracking all of it ... Against a single opponent in an empty room
+        # there is nothing to divide."
+        if 'more than one thing is happening' in text:
+            return len([e for e in _TABLE
+                        if e.team != self.team and e.alive()]) > 1
+        return True
 
     # ---- damage --------------------------------------------------------
 
@@ -524,8 +570,9 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     for who, kind in ((attacker, NO_ATTACK), (defender, NO_TARGET)):
         if who.restriction(kind) is not None:
             log(f'  {who.name} is partitioned — the attack does not happen.')
-            attacker.discard.append(atk_card)
-            if def_card is not None:
+            if not attacker.is_passive(atk_card):
+                attacker.discard.append(atk_card)
+            if def_card is not None and not defender.is_passive(def_card):
                 defender.discard.append(def_card)
             return Outcome.MUTUAL_MISS
 
@@ -775,12 +822,17 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     # (`rules/combat.md`, Ongoing Effects). That is also why it cannot be
     # played twice over itself: while the effect is running the card is on
     # the table, not in the deck and not in the pile a reshuffle draws from.
-    if held_atk and not returned_atk and not gone_atk:
+    # A Passive was never in a pile and does not enter one — it goes back
+    # to being face up in its own zone, which is where it already was.
+    if attacker.is_passive(atk_card):
+        pass
+    elif held_atk and not returned_atk and not gone_atk:
         attacker.in_play.append(atk_card)
         log(f'  {atk_card.name} stays face up in front of {attacker.name}.')
     elif not returned_atk and not gone_atk:
         attacker.discard.append(atk_card)
-    if def_card is not None and not returned_def and not gone_def:
+    if def_card is not None and not returned_def and not gone_def \
+            and not defender.is_passive(def_card):
         if held_def:
             defender.in_play.append(def_card)
             log(f'  {def_card.name} stays face up in front of {defender.name}.')

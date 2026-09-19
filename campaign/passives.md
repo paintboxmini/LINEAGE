@@ -100,6 +100,17 @@ Range: Ranged
 
 ---
 
+## In the simulator
+
+**The engine reads this file directly** (`combat-simulations/cards.py`, `load_passives`) — by name, not by globbing, because `campaign/passives.md` is not a deck and the two parsers that glob `cards/` would read it as one (`CLAUDE.md`, Conventions). A Passive sits in its own zone on the Combatant, is never drawn, never discarded, and is not counted in the card-conservation invariant.
+
+**Two simplifications it makes, both worth knowing before trusting a number:**
+
+- **Attacks only.** A Passive is not offered as a defence. `rules/character-creation.md` says playing one spends your Action; defending spends no Action, so a Passive used to defend would save the card *and* cost nothing, making it strictly better than anything in hand on every exchange. The conservative reading is taken. **If the table means Passives to be legal defences, that is a real ruling and the engine should follow it.**
+- **Applies When is answered yes by default.** It is a fiction gate a person rules on — *a cutting edge is the answer*, *he set it up*, *genuine hostile intent is present* — and the engine does not model fiction. **So Passive usage in a simulated fight is an upper bound**: a table says no sometimes and the engine never does.
+
+**One gate is mechanical and is checked.** SPLIT ATTENTION's *"against a single opponent in an empty room there is nothing to divide"* is a headcount, so it is enforced: it is unavailable in a duel and available from two enemies up.
+
 ## Related Documents
 
 - `rules/character-creation.md` — Passives, the shape all six of these follow, and Promotion (under Advancement), how a character gains one beyond their starting two

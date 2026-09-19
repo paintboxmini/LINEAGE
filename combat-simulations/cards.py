@@ -25,7 +25,8 @@ BEATS = {'BLUE': 'RED', 'RED': 'GREEN', 'GREEN': 'BLUE'}
 
 class Card:
     __slots__ = ('name', 'color', 'stat', 'attack', 'die', 'effect',
-                 'defense_effect', 'special_rule', 'range', 'flavor', 'source')
+                 'defense_effect', 'special_rule', 'range', 'flavor', 'source',
+                 'applies_when')
 
     def __init__(self, **kw):
         for s in self.__slots__:
@@ -116,6 +117,7 @@ def parse_file(path):
                 continue
 
             for label, key in (('Attack:', 'attack'), ('Special Rule:', 'special_rule'),
+                               ('Applies When:', 'applies_when'),
                                ('Effect:', 'effect'), ('Defense Effect:', 'defense_effect'),
                                ('Range:', 'range')):
                 if line.startswith(label):
@@ -149,6 +151,25 @@ def load(*filenames):
             raise FileNotFoundError(p)
         cards.extend(parse_file(p))
     return cards
+
+
+PASSIVE_FILE = os.path.join(REPO, 'campaign', 'passives.md')
+
+
+def load_passives():
+    """The written Passives, keyed by name.
+
+    `campaign/passives.md` is not under `cards/` and must not be — it is
+    not a deck, and the two parsers that glob that directory would read it
+    as one (`CLAUDE.md`, Conventions). It is read here by name instead, the
+    same way `core_pool` names its four files.
+
+    A Passive is card-shaped but is not a card in a deck: printed colour,
+    Range, die, and an **Applies When** in place of the Effect
+    (`rules/character-creation.md`, Passives and Traits). It sits face up
+    in its own zone, is never drawn and never discarded.
+    """
+    return {c.name: c for c in parse_file(PASSIVE_FILE)}
 
 
 def core_pool():

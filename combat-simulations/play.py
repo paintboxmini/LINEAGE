@@ -134,7 +134,12 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
         if card is None:
             log(f'{who.name} has nothing legal to play.')
             return None
-        who.hand.remove(card)
+        # A Passive is played from its own zone, not from hand, so there is
+        # nothing to remove and nothing to put back afterwards.
+        if who.is_passive(card):
+            log(f'{who.name} uses {card.name}.')
+        else:
+            who.hand.remove(card)
 
         # ANTICIPATE: "draw 1 card before defending" — the reaction has to
         # land while there is still a defence to choose.

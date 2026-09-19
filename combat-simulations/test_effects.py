@@ -566,6 +566,68 @@ def test_a_duration_with_nothing_to_hold_narrates():
           is not None)
 
 
+
+def test_passives_are_a_zone_not_a_pile():
+    print('\nA Passive is played from its own zone and never joins a pile')
+    import engine
+    import play
+    passives = cardlib.load_passives()
+    pool = cardlib.by_name(cardlib.core_pool())
+
+    a, b = duo()
+    a.hp = b.hp = 400
+    a.hand = [pool['CALCULATE']]
+    a.passives = [passives['MIMETIC BLADE']]
+
+    offered = a.playable(b)
+    check('a Passive is offered alongside the hand',
+          'MIMETIC BLADE' in [c.name for c in offered], [c.name for c in offered])
+    check('and is not offered as a defence',
+          'MIMETIC BLADE' not in
+          [c.name for c in a.playable(b, passives=False)])
+
+    blade = passives['MIMETIC BLADE']
+    engine.resolve_attack(a, b, blade, None, rng=random.Random(0), log=QUIET)
+    check('playing it leaves the hand alone',
+          [c.name for c in a.hand] == ['CALCULATE'], a.hand)
+    check('and it does not go to the discard',
+          not a.discard and not a.in_play and not a.exiled,
+          (a.discard, a.in_play, a.exiled))
+    check('it is still available next turn',
+          'MIMETIC BLADE' in [c.name for c in a.playable(b)])
+
+    # `rules/invariants.md`: the written cards are conserved. A Passive is
+    # not one of them and must not start counting as one.
+    held = len(a.deck + a.hand + a.discard + a.exiled + a.in_play)
+    engine.resolve_attack(a, b, blade, None, rng=random.Random(1), log=QUIET)
+    check('and the card count does not move',
+          len(a.deck + a.hand + a.discard + a.exiled + a.in_play) == held)
+
+
+def test_split_attention_needs_more_than_one_thing():
+    print('\nThe one Applies When the engine can actually check')
+    import engine
+    passives = cardlib.load_passives()
+    split = passives['SPLIT ATTENTION']
+
+    a, b = duo()
+    a.set_position(BACK)
+    a.passives = [split]
+    check('against one enemy it does not apply',
+          not a.passive_applies(split, b))
+
+    other = Combatant('Other', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    set_table([a, b, other])
+    check('against two it does',
+          a.passive_applies(split, b))
+
+    # Everything else answers yes, because the fiction is not modelled —
+    # which makes Passive use here an upper bound rather than a reading.
+    check('a fiction gate defaults to available',
+          a.passive_applies(passives['MISE EN PLACE'], b)
+          and a.passive_applies(passives['HACKLES RISE'], b))
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -1341,6 +1403,8 @@ if __name__ == '__main__':
     test_killswitch_ends_on_a_repeated_colour()
     test_hold_the_line_mirrors_the_colour_it_faces()
     test_a_duration_with_nothing_to_hold_narrates()
+    test_passives_are_a_zone_not_a_pile()
+    test_split_attention_needs_more_than_one_thing()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:
