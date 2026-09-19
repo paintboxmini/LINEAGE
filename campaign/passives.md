@@ -94,6 +94,8 @@ Range: Ranged
 
 **Ranged and Blue because it is the opposite of MISE EN PLACE in every axis.** That one is close, physical, and about something he prepared; this one is far, mental, and about something he is doing live. He has a Passive for the station being ready and a Passive for the station being on fire.
 
+**And his cards were rebuilt on 2026-09-19 to line up with these two rather than the other way round.** BREAK DOWN is Red, Body, Melee; GRIND SHOT is Blue, Mind, Ranged (`campaign/kevin.md`, The 2026-09-19 rebuild). *These two Passives had already drawn the line — close is Red, far is Blue — before anything asked the cards to agree with it. The cards were the part out of step.*
+
 **On the die — left at d4 on purpose, for now.** Ranged is a real restriction and normally earns d6 (`rules/character-creation.md`); this pays the restriction and declines the compensation, the same trade FOLLOW THROUGH makes (`campaign/chris.md`). **Drew's call on 2026-09-19 was to hold it at d4 and adjust live if it feels bad at the table**, which is the right way round for a number nobody has rolled yet. d6 is close and is the obvious move if it wants one.
 
 ---

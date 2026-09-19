@@ -105,9 +105,13 @@ The wine and the pepper go to distant ports, and some of them are not respectabl
 
 **He makes produce explode**, by putting it through some kind of cooking process. The pepper is the family's and comes to him already wanting to do this; the orange is him proving the technique generalises. Other fruits are presumably possible and simply haven't come up yet.
 
-**The grinder.** Feed a pepper into it. Turning the handle grinds the pepper, and the grinding ignites the flesh — the flesh is the propellant, and the seeds are the projectiles. One crank, one shot. This is why the weapon reads as a shotgun: seeds, spread, short range. What's loaded determines what the shot does; a different pepper is a different round.
+**The grinder.** Feed a pepper into it. Turning the handle grinds the pepper, and the grinding ignites the flesh — the flesh is the propellant, and the seeds are the projectiles. One crank, one shot. What's loaded determines what the shot does; a different pepper is a different round.
+
+**It is a ranged weapon, and the shotgun reading is retired** *(2026-09-19)*. This section used to say "seeds, spread, short range — this is why the weapon reads as a shotgun." Kevin wants the knife up close and the grinder at distance, and a shotgun cannot be that. **So it throws a tight cone a long way rather than a wide one across a room**, and the thing that makes it frightening is what is in the shell rather than how much of the room it covers. *The seeds are still the projectiles; they simply go further and arrive together.*
 
 **The oranges.** Throwable incendiary grenades — the oils in the skin enhanced until they're properly combustible. Same craft as the peppers, different delivery: the pepper is a bullet, the orange is a bomb.
+
+**They are a consumable now, not a card** *(2026-09-19)*. KINDLE is gone and the orange is a thing he carries and throws for a **free action** (Gear, below). *That is a better fit than a card in both directions: it stops a grenade competing for a slot in a nine-card deck, and it makes the orange a supply the party can run out of — which is the whole point of the ingredient economy this character is built on.*
 
 ### The process
 
@@ -151,7 +155,9 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Spinstone grind** | Apply Initiative Shift -2 to the defender | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 
-One bonus each and all small — GRIND SHOT is already a d8 on his best stat, so a load is a rider on a good card rather than the reason it's good.
+One bonus each and all small — a load is a rider on a good card rather than the reason it's good.
+
+*Worth watching at the table:* GRIND SHOT is a d8 **and** carries a load, which makes it the most loaded single thing in his kit. If it plays hot, the lever is the die rather than the loads — d6 keeps the ingredient system intact and takes 1 off the top.
 
 **Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. Not yet decided whether he's Kevin's supplier, teacher, rival, or something else, but he's the obvious connection point once Kevin reaches the Capital.
 
@@ -182,10 +188,10 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 
 ## Gear
 
-- **The pepper grinder** — hand-cranked, functions like a shotgun. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
+- **The pepper grinder** — hand-cranked, and a **ranged** weapon. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
 - **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now. *The "hot knife" this file used to list was removed on 2026-09-19; there was only ever one.*
 - **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Supply and restocking, below).
-- **A bandolier of incendiary oranges** — a real mechanical item rather than flavor, so it still needs its numbers written.
+- **A bandolier of incendiary oranges** — written below as a consumable rather than a card.
 
 ```
 THE PEPPER GRINDER
@@ -196,6 +202,28 @@ GRIND SHOT gains that load's bonus in addition to its own Effect. The load is
 spent when GRIND SHOT resolves, win or lose.
 "It was a kitchen tool. It is still a kitchen tool."
 ```
+
+```
+INCENDIARY ORANGE
+Equipment — Consumable
+Effect: Throw as a free action at any position you can see. Deal 2
+unpreventable damage to every enemy in that position. Single-use.
+"The peel does the work. The fruit is just what carries it there."
+```
+
+**Priced at roughly 40 gold** if one is ever bought rather than made: two points of damage, applied to a position instead of a target, plus the premium a genuinely free-action item pays — the same premium the Echothorn Seed pays (`rules/equipment.md`, Pricing Consumables). **He makes them**, so the number is a scale reference rather than a shopping list.
+
+**The unpreventable damage is inherited from KINDLE and is inherited on purpose**: it is fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER.
+
+### One free action, three things that want it
+
+**This is the interesting cost and it is now sharper than it was.** A turn gives one free action and one only, capped regardless of how many you have banked (`rules/combat.md`, Free Actions). Kevin's competes three ways:
+
+- **Load the grinder** — or GRIND SHOT fires plain next turn.
+- **Eat or drink** — his own prepared drinks included.
+- **Throw an orange.**
+
+*He starts a fight loaded, so the first turn is free. After that every single turn is a real choice between the shot he wants, the thing he needs, and the grenade.* That tension was the point when the grinder's reload was set as a free action rather than an Action, and putting the oranges on the same budget is what stops them being strictly-better free damage.
 
 ---
 
@@ -216,31 +244,57 @@ Three customs, one per piece of the kit and one per colour. Draft, staged here b
 
 His stats want roughly 4 Red / 3 Blue / 2 Green, so one signature in each colour fits without crowding any of them, and it puts his weakest stat on the card he plays for its effect rather than its damage.
 
-**GRIND SHOT** is Melee, which means his best weapon only works in the scrum — and then its Effect throws him out of it. He walks in, fires once, and leaves. That lands him in the Backline, which is where KINDLE wants him, so the two chain.
+### The 2026-09-19 rebuild, and the one call made beyond the ask
+
+**Kevin wants the vibro blade up close and the grinder at range.** KINDLE is gone, replaced by a knife card, and the oranges are a consumable (Gear, above). **The call that was not asked for: the knife took Red and the grinder took Blue, rather than the knife simply inheriting KINDLE's Blue slot.**
+
+**Three reasons, and the third is the one that decided it.**
+
+1. **His stats.** Body 4, Mind 3. *Use the blade up close* wants his best stat on the close-range card, and leaving the knife in KINDLE's Blue slot would have given him a melee attack weaker than his gun — the opposite of what he asked for.
+2. **The grinder inherits KINDLE's own argument.** That card was Blue because it "puts the artificer's cleverness in the Mind colour, where the crafting lives." The grinder is the artifice. Nothing in that reasoning was ever about the orange specifically.
+3. **His Passives already drew this line.** **MISE EN PLACE is Red, Body, Melee. SPLIT ATTENTION is Blue, Mind, Ranged** (`campaign/passives.md`). His sheet already said close-quarters-is-Red and at-range-is-Blue before anyone touched the cards; the cards were the part out of step. *Red is now his whole close game and Blue his whole far one, and with 4 Red slots against 3 Blue his deck leans the way his hands do.*
+
+*If that is a step too far, the cheap reversal is to swap the two colour/stat lines back and leave everything else standing.*
+
+---
+
+**BREAK DOWN** is the vibro knife, and it is the only thing in his kit that is not food. Red, Body, Melee, d8 — his best stat, his best die, at the range he asked for. **It sits directly underneath MISE EN PLACE**, which is the Passive for having already set up: the card is what happens after the setup works.
+
+```
+BREAK DOWN
+RED — BODY
+Attack: Body + d8
+Effect: Defender gains Vulnerable.
+Defense Effect: Deal 3 damage to the attacker, unpreventable.
+Range: Melee
+"Every carcass has seams. You do not cut through a joint. You cut around it."
+```
+
+**The name is butchery and it is also what he is doing to them.** *Breaking down* is reducing a carcass to its parts — the least romantic and most skilled thing a cook does, and the one that transfers to a fight without any translation at all.
+
+**Vulnerable rather than damage, because that is what a butcher's cut is for.** He is not trying to kill it with the first pass; he is opening it up so the next thing that happens to it works better (`rules/card-glossary.md`, Vulnerable). It sets up his own next turn, the orange, or somebody else entirely — which is the right shape for a support-leaning character who happens to be the best melee attacker at the table.
+
+**And the defence half is the blade, not the man.** Three unpreventable to whoever swung at him: a vibro edge in the way of an incoming attack does not care what the attack was wearing. *Same shape as STRIKE's defence half and deliberately so — this is the ordinary, reliable answer, and the interesting half is the attack.*
+
+---
+
+**GRIND SHOT** is Blue now, and Ranged, and the change to its Effect is forced rather than chosen: *"Move to the Backline"* was written for a Melee weapon that threw him out of the scrum after firing. A Ranged card already requires he not be in the scrum, so the old Effect had nothing left to do.
 
 ```
 GRIND SHOT
-RED — BODY
-Attack: Body + d8
-Effect: Move to the Backline.
+BLUE — MIND
+Attack: Mind + d8
+Effect: Defender gains Blind.
 Defense Effect: Attacker gains Blind.
-Range: Melee
+Range: Ranged
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**KINDLE** is Blue rather than Red. Fire says Red, but the orange's job is making a position unusable rather than hurting one person, and that's control. It also puts the artificer's cleverness in the Mind colour, where the crafting lives. The damage is unpreventable because it's fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER (which was HAMMER until 2026-09-17).
+**Both halves are the same keyword and that is the card.** A face full of ground pepper does the same thing whichever direction it is travelling, and a weapon whose whole personality is *what did you load it with* should be plain on its face. **The loads are the variety** (The Ingredients, above) — one card, six behaviours, and the choice happens before the turn rather than during it.
 
-```
-KINDLE
-BLUE — MIND
-Attack: Mind + d6
-Effect: Deal 2 unpreventable damage to every enemy in a position of your choice.
-Defense Effect: Attacker gains Blind.
-Range: Ranged
-"The peel does the work. The fruit is just what carries it there."
-```
+*It keeps its name, its quote, its die and its place in the load system. What changed is the colour, the stat, the Range and the Effect.*
 
-**SERVE** carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
+**SERVE** is unchanged. It carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
 
 ```
 SERVE
@@ -258,8 +312,9 @@ Range: Both
 
 - Character name
 - **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
-- The oranges' numbers as a piece of gear — the card covers throwing one, not carrying six
 - Which other fruits he's worked out, if any
+- **How many oranges a bandolier holds**, which is the one number the consumable does not answer
+- **Whether GRIND SHOT's d8 is too much on top of a load** (The Ingredients, above) — d6 is the lever
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
 - Price

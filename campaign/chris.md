@@ -203,7 +203,7 @@ Range: Melee
 
 **No Special Rule is needed for ties, unlike FOLLOW THROUGH.** A tie triggers the attacker's Effect *and* the defender's Defense Effect (`rules/combat.md`, Attack Resolution), so a tied block still arms him once — and the second Deadly is fenced off behind *won this exchange* in the card text itself. The card says what it means without a rider.
 
-**KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning GRIND SHOT runs on. His draft has only two green slots, so a signature there is well placed.
+**KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning SERVE runs on (`campaign/kevin.md`). His draft has only two green slots, so a signature there is well placed.
 
 ```
 KILLSWITCH
