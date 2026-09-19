@@ -10,7 +10,9 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ## Where He Landed
 
-Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). **Found by a man working at the Academy** — the institution cut into the rim, which is there to study what is in the abyss (`places/abyssal-ruins.md`, The Academy). Who he was, and what he did about it, is Chris's to write; the Academy's own details are reserved for the same reason.
+Came down at the Abyssal Ruins, almost certainly through the Central Gateway (`places/abyssal-ruins.md`). **Found by a man working at Gemstone University** — the institution cut into the rim, which is there to study what is in the abyss (`places/abyssal-ruins.md`, Gemstone University). Who he was, and what he did about it, is Chris's to write; the University's own details are reserved for the same reason.
+
+**He named it himself on 2026-09-19**, and the Ruins keep their own name — Gemstone University is the school in the rim, not a second name for the crater it looks into. He is a student there now, which is where Kevin met him (`campaign/kevin.md`).
 
 *This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked. Whether Iron and Briarwatch stay in the story somewhere after the Academy is open.* "Raised" isn't quite the right word given he doesn't age, but Iron's own character — quiet, unclaimed decency, doesn't need the story to be about him — fits taking in something unexplainable and just teaching it how a farm works without demanding an origin story.
 

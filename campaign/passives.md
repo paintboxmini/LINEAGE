@@ -1,6 +1,6 @@
 # Passives — First Examples
 
-The first Passives built under the new rule (`rules/character-creation.md`, Passives). Draft, alongside `campaign/chris.md` and `campaign/pat.md`.
+The first Passives built under the new rule (`rules/character-creation.md`, Passives). Draft, alongside `campaign/chris.md`, `campaign/pat.md` and `campaign/kevin.md`.
 
 ---
 
@@ -62,6 +62,41 @@ Instinct for hostile intent specifically, not a general sense that something's "
 
 ---
 
+## MISE EN PLACE — Kevin
+
+**MISE EN PLACE**
+RED — BODY
+Attack: Body + d6
+Applies When: The thing he needs is already within reach because he put it there — a blade, a pan, a hot surface, a crate, the edge of the counter he is standing at. It has to be a real object in the fiction, and it has to be one he was standing near before the exchange started. Not something fetched, not something improvised across the room, and not the grinder or a prepared load — those are a card and a piece of gear and they cost what they cost.
+Range: Melee
+*"Set the station before service. Then service is just reaching."*
+
+**A kitchen discipline that happens to also be a fighting one.** *Mise en place* is everything laid out before the rush begins, in the order you will need it, so that when it starts you are not deciding — you are reaching. A cook who has done it well looks unnervingly calm at the worst moment of the night, and it is not calm, it is preparation that finished an hour ago.
+
+**Melee and d6, priced the same as STRONGJAW and MIMETIC BLADE** — a real Range restriction taking the bigger die. He has to be standing at the thing.
+
+**The Applies When is the whole design, and it is a gate that rewards a habit.** What it asks is not *is there an object* but *did you put one there* — so it pays a player who describes their surroundings on the way in, and pays nothing to one who remembers the counter exists at the moment they want to hit somebody with it. **It should be illegal in an empty field and near-automatic in a kitchen**, and Kevin choosing where to stand is the interesting decision it creates. *Drafted 2026-09-19 from the name, colour, stat, die and Range Drew set; the Applies When is the part that was not specified and wants his sign-off.*
+
+---
+
+## SPLIT ATTENTION — Kevin
+
+**SPLIT ATTENTION**
+BLUE — MIND
+Attack: Mind + d4
+Applies When: More than one thing is happening and he is tracking all of it — two enemies, an ally in trouble and a pot about to catch, a room with several moving pieces. It needs genuinely separate things to hold at once. Against a single opponent in an empty room there is nothing to divide.
+Range: Ranged
+*"Six orders up, four on the fire, and the one that matters is the one nobody has asked about yet."*
+
+**Not multitasking badly — multitasking as a trained skill.** A line cook does not finish one dish and start the next. They hold six at different stages, each with its own clock, and the thing they are actually good at is knowing which one needs a hand *now*. Kevin does that to a fight: he is not watching the person in front of him, he is watching the whole pass.
+
+**Ranged and Blue because it is the opposite of MISE EN PLACE in every axis.** That one is close, physical, and about something he prepared; this one is far, mental, and about something he is doing live. He has a Passive for the station being ready and a Passive for the station being on fire.
+
+**On the die.** Ranged is a real restriction and normally earns d6 (`rules/character-creation.md`); this is written at d4 as specified, which is a restriction paid for and a compensation declined — the same trade FOLLOW THROUGH makes (`campaign/chris.md`). Flagged rather than silently corrected, since it may well be deliberate: this is a Passive played for what it sees, not for what it hits. *Drafted 2026-09-19 alongside MISE EN PLACE; same caveat on the Applies When.*
+
+---
+
 ## Related Documents
 
-- `rules/character-creation.md` — Passives, the shape both of these follow, and Promotion (under Advancement), how a character gains one beyond their starting two
+- `rules/character-creation.md` — Passives, the shape all six of these follow, and Promotion (under Advancement), how a character gains one beyond their starting two
+- `campaign/kevin.md` — the character MISE EN PLACE and SPLIT ATTENTION belong to

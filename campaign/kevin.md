@@ -6,6 +6,29 @@
 
 *So the thing Kevin declined was not a rule. Nobody forbade him anything and nobody had to. He grew up in a house where every single adult had chosen the same life, and he wanted to cook — which is not rebellion, it is just the first person in living memory to want something else. The shipment he is escorting is the job a family gives someone whose actual talent embarrasses them slightly, and it is being handled kindly.*
 
+---
+
+## The Pepper Is The Family Business
+
+**Revised 2026-09-19, and it changes what the kit is.** The earlier version of this file had the cooking as the thing Kevin chose *instead of* the Herbs, with the exploding produce as his own strange invention. It is the other way round.
+
+**There is a pepper in the Herb bloodline.** It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
+
+**You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Herbs hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
+
+**And shipping it is what they do.** The wine leaves the Temple of Unity at volume and outside Lady Elara's tax (`characters/ossian.md`, The Wine); the pepper goes out on the same boats, under the licence rather than around it. *One cargo his father moves by refusing to file, one he moves by holding the paperwork nobody else can get. Ossian would tell you those are the same principle applied twice, and he would mean it.*
+
+**So Kevin had a crate of the stuff and a kitchen, and nobody watching closely.** That is where the grinder came from. He was not inventing the explosive; he was playing with the family's, in the only room he actually wanted to be in.
+
+### What this does and does not change
+
+- **He has gunpowder, and he can use it.** The line this file used to carry — *no gunpowder, no explosives of any kind* — is gone. It was never the interesting restriction.
+- **The restriction that replaced it is scarcity.** What is rare is the pepper, not the idea. **Scarcity and the exact mechanics are the balancing levers** — that is a deliberate choice about where to tune him, not an omission. The Ingredients section below already runs on exactly this: he is never short of ammunition, only ever short of good ammunition.
+- **The craft still stands as written.** Reduce, Charge, Seal; the oranges; the drinks. All of it is what you do to the pepper, and the oranges are the same technique aimed at a fruit that is not the family's.
+- **The grinder still stands as written.** When Kevin said *I make bullets now*, he meant he prepares the rounds — not that the weapon feeds a magazine. One crank, one shot, and the loading is a free action.
+
+---
+
 *Player character — still a light draft, more filled in than before but nothing here is locked. Everything about him lives in this one file: stats, concept, the craft, the ingredients, the drinks, and the card drafts.*
 
 ## Stats — Unconfirmed
@@ -22,7 +45,7 @@ Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21, han
 
 A combat chef — and combat bartender, really. **Raised in the Temple of Unity** in the capital (`places/capital/capital.md`), the interfaith cathedral at the Temple District's heart — his father is its head (`characters/ossian.md`). The temple is known for its wines, and Kevin is overseeing a shipment of them when Session 1 opens (`campaign/session-1-convergence.md`).
 
-Chronically shirked his actual studies and rituals to cook instead — and the cooking is where his signature tool comes from. **No gunpowder, and no explosives of any kind.** Everything that goes bang in Kevin's kit is food he prepared until it would.
+Chronically shirked his actual studies and rituals to cook instead — and the cooking is where his signature tool comes from. Everything that goes bang in Kevin's kit is **food he prepared until it would**, starting with his own family's pepper (The Pepper Is The Family Business, above).
 
 **Crafting is a real part of his identity, not just flavor — he's partially an artificer, just working through food.** Two lines of it: the incendiary oranges and the beverages, both made rather than bought, both downtime activities. `rules/items.md`'s Crafting rule covers the general case — table talk decides feasibility and result, checked against the consumable pricing scale if a number's wanted.
 
@@ -30,9 +53,35 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 ---
 
+## Gemstone University
+
+**He reads culinary arts at Gemstone University** — the institution cut into the rim of the Abyssal Ruins (`places/abyssal-ruins.md`, Gemstone University), named by Chris's player, who is a student there for entirely different reasons. **That is where Kevin met Chris** (`campaign/chris.md`).
+
+**He is not a good student and he is barely a student.** He attends. He does not really attend. Nobody is checking, the fees are his father's problem, and *right now they probably don't even know he is gone.* The reference the table reached for was Mugen and Jin — the two of them are not the same kind of person and were never going to be, and that is the fun of it.
+
+**Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Herb out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
+
+**He went, he got the knife, and he came back.** The vibro knife came from Chris — an alien with a piece of technology this world does not otherwise have, and a friend who did not need a reason to hand it over (Gear, below).
+
+*Nothing here costs him his backstory.* He has been at the University a month, a year, whatever the table wants; the temple is still home, the family is still the family, and the boats still run. Sleep at the church, go back to school.
+
+### His father, and the shape of leaving
+
+Ossian wants his son in the liturgy and has never once said so as an instruction (`characters/ossian.md`). **The pressure is worse for being affectionate.** He loves the boy, he assumes *he'll get it* eventually, he thinks he will find God in his own time — and he also thinks Kevin is not standing up to the responsibility, and does not hide it well.
+
+Kevin's own summary, and it is the most useful line anyone said about the two of them: ***"He treats me bad, but he treats me good."***
+
+### What he learned at the shady end of the route
+
+The wine and the pepper go to distant ports, and some of them are not respectable. **Kevin was taken along as a boy and repeatedly failed to stay on the boat.** He would slip off at the shipyard and be gone a day or two — the whorehouses, the back rooms, the parts of a port that a priest's son is specifically not supposed to see — and his father would have to come and collect him.
+
+**He was also, the entire time, learning the trade.** Wheeling and dealing, what a thing is worth here against what it is worth at home, how to talk a price down and how to know when you have been had. Everyone in those ports knew exactly whose son he was, which is half of why it worked. *That is where Persuasion +2 comes from, and it is not a nice skill — it was learned in rooms his father would rather he had never been in.*
+
+---
+
 ## How It Works
 
-**He doesn't use gunpowder or explosives.** He has learned to make *produce* explode, by putting it through some kind of cooking process. Peppers and oranges are the two worked out so far; other fruits are presumably possible and simply haven't come up yet.
+**He makes produce explode**, by putting it through some kind of cooking process. The pepper is the family's and comes to him already wanting to do this; the orange is him proving the technique generalises. Other fruits are presumably possible and simply haven't come up yet.
 
 **The grinder.** Feed a pepper into it. Turning the handle grinds the pepper, and the grinding ignites the flesh — the flesh is the propellant, and the seeds are the projectiles. One crank, one shot. This is why the weapon reads as a shotgun: seeds, spread, short range. What's loaded determines what the shot does; a different pepper is a different round.
 
@@ -92,10 +141,20 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 
 ---
 
+## Skills
+
+- **Cooking +2** — the actual talent, and the thing the whole kit is downstream of. It is not a flavour skill on this character: the weapon, the grenades and the drinks are all cooking done wrong on purpose, and the Crafting rule they run on is a table-talk rule that a Cooking check is the obvious way to settle (`rules/items.md`, Crafting).
+- **Persuasion +2** — learned in port, young, on the wrong side of the shipyard (What he learned at the shady end of the route, above). Bartering, reading what someone will actually take, being the son of the guy and knowing what that is worth in the room.
+
+*Between them they cover the two things he is: the person who makes the thing, and the person who sells it.*
+
+---
+
 ## Gear
 
 - **The pepper grinder** — hand-cranked, functions like a shotgun. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
-- **A hot knife.**
+- **The vibro knife** — Chris's, originally. Alien, and the only object on Kevin's sheet that did not come out of a kitchen or a hold. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now.
+- **A hot knife** — the kitchen one. Kept distinct from the vibro knife above; whether he still carries both, or the alien one quietly replaced it, is Kevin's to say.
 - **A bandolier of incendiary oranges** — a real mechanical item rather than flavor, so it still needs its numbers written.
 
 ```
@@ -107,6 +166,17 @@ GRIND SHOT gains that load's bonus in addition to its own Effect. The load is
 spent when GRIND SHOT resolves, win or lose.
 "It was a kitchen tool. It is still a kitchen tool."
 ```
+
+---
+
+## Passives
+
+Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green entirely to SERVE and the drinks.
+
+- **MISE EN PLACE** — Red, Body, Melee, d6. The station is already set. *Everything in its place* is a kitchen discipline before it is anything else, and it is the one thing a chef does that a fighter also does.
+- **SPLIT ATTENTION** — Blue, Mind, Ranged, d4. Six orders up, none of them finished, all of them being tracked. Attention divided on purpose rather than lost.
+
+*Note on the die.* A Range restriction normally earns d6 in this corpus (`rules/character-creation.md`), which is what MIMETIC BLADE and STRONGJAW are both paid for Melee. **SPLIT ATTENTION is Ranged at d4** — paying the restriction and declining the compensation, the same trade FOLLOW THROUGH makes (`campaign/chris.md`). Written as given; worth a second look at the table in case it was meant to be d6.
 
 ---
 
@@ -157,19 +227,27 @@ Range: Both
 ## Not Yet Set
 
 - Character name
-- Which temple, or whether an isolated one gets invented fresh
+- **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
 - The oranges' numbers as a piece of gear — the card covers throwing one, not carrying six
 - Which other fruits he's worked out, if any
-- Skills, Passives — a Cooking or Brewing-type Skill would fit naturally, but that's a guess
+- **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
+- **Whether SPLIT ATTENTION is d4 or d6** (Passives, above) — Ranged normally earns d6
+- **The Applies When on both Passives** — drafted 2026-09-19 from the names, not specified
 - Price
 - The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
 - Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
-- Everything about who he is outside "shirked his studies to cook"
+- Whether he still carries the hot knife alongside the vibro knife (Gear, above)
+- How long he has actually been at Gemstone University, and whether he is going back
+
+*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, and where the exploding produce comes from.*
 
 ## Related Documents
 
 - `bestiary/scorchback-beetle.md`, `flora/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/blowback-beetle.md` — the four seasonings that had to be built
 - `bestiary/sapphire-ant.md`, `places/capital/gilded-tusk.md` — the fifth, and Senshi
-- `campaign/chris.md`, `campaign/pat.md` — the other two player concepts from this session
+- `campaign/chris.md`, `campaign/pat.md` — the other two player concepts from this session; Chris is the one he knows already
+- `campaign/passives.md` — MISE EN PLACE and SPLIT ATTENTION
+- `places/abyssal-ruins.md` — Gemstone University, where he reads culinary arts
+- `characters/ossian.md` — his father, the wine, and the boats
 - `rules/items.md` — Crafting, the general rule this all runs on
 - `rules/character-creation.md` — Stats, Skills, Passives, Starting Deck

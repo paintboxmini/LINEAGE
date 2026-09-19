@@ -144,11 +144,17 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 **How the three of them are introduced and grouped is not settled**, and the convergence device above is a device rather than a decision. It works if the players want to be assembled; it is not the only thing that can. Drew is asking them tonight what their characters want, which is the right order to do it in — this file should follow that conversation rather than lead it.
 
-**Chris's origin is settled; his route to the Nest is not.** He was found by a man working at **the Academy**, the institution cut into the rim of the Abyssal Ruins to study what is in the abyss — now written as a landmark at `places/abyssal-ruins.md`, with everything about it beyond its existence reserved for Chris's player. That supersedes the earlier Briarwatch/Iron line in `campaign/chris.md`, which was always marked tentative.
+**Chris's origin is settled; his route to the Nest is not.** He was found by a man working at **Gemstone University**, the institution cut into the rim of the Abyssal Ruins to study what is in the abyss — now written as a landmark at `places/abyssal-ruins.md`, with everything about it beyond its existence reserved for Chris's player, who named it on 2026-09-19. That supersedes the earlier Briarwatch/Iron line in `campaign/chris.md`, which was always marked tentative.
 
 **How he gets from there to Vulture's Nest is open**, and the two grounded routes above (riding in with a Briarwatch trade run, or the Ruins simply being the nearest thing south) both still work — the second one rather better now, since the Academy is at the Ruins and the Ruins are south of the Nest (`world/geography-overview.md`, Bearing Table).
 
-**The option to tie Chris's backstory to Kevin's is understood to be closed** unless the table reopens it.
+**Chris and Kevin already know each other, as of 2026-09-19.** The table reopened the tie and took it: Kevin reads culinary arts at **Gemstone University**, the same school, and that is where they met — Kevin hanging around and not really attending, Chris a student there since the man from the University found him. *This replaces the line that previously stood here saying the option was closed.*
+
+**Two things that follow, and one that does not.**
+
+- **The party does not need a device to introduce those two.** Whatever assembles the group, Chris and Kevin arrive already knowing each other, with a shared place to talk about. That is one fewer stranger-meets-stranger beat to stage.
+- **Kevin has a reason to have been south.** The University is at the Abyssal Ruins, which is south of the Nest, and Kevin's family ships out of the Capital — so the trip is a thing he has done, not a thing he would need talking into.
+- **It does not settle Chris's route to the Nest.** Sharing a school with Kevin is not the same as travelling with him, and how Chris actually gets north is still his to say.
 
 ---
 
