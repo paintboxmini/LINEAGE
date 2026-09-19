@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 40 more are cleared and on the bench, 124 in all.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 43 more are cleared and on the bench, 127 in all.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
