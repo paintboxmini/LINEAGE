@@ -720,6 +720,112 @@ def test_serve_hands_over_a_real_drink():
     check('with no drink prepared it simply does not fire', k3.drinks == [])
 
 
+
+def test_summoned_spirits_are_objects():
+    print('\nA spirit holds HP, does not act, and takes the buff with it')
+    import engine
+    from engine import table
+    pool = cardlib.by_name(cardlib.load())
+
+    pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+    mate = Combatant('Mate', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    for c in (pat, mate, foe):
+        c.hp = 400
+    set_table([pat, mate, foe])
+
+    engine.resolve_attack(pat, foe, pool["LET'S GO"], None,
+                          rng=random.Random(4), log=QUIET)
+    spirits = [c for c in table() if c.is_object]
+    check('the summon puts one on the table', len(spirits) == 1, spirits)
+    sp = spirits[0]
+    check('its HP is a d10 and is its own maximum',
+          1 <= sp.hp <= 10 and sp.hp == sp.max_hp, (sp.hp, sp.max_hp))
+    check('the totem buffs the caster and the ally, not itself',
+          len(pat.standing_mods) == 1 and len(mate.standing_mods) == 1
+          and not sp.standing_mods)
+
+    sp.take(99, source=foe, log=QUIET)
+    check('killing the totem takes the buff with it',
+          not pat.standing_mods and not mate.standing_mods)
+    check('and the spirit leaves the table',
+          not [c for c in table() if c.is_object])
+
+    # It is an Object: no hand, so it can never choose a defence, which is
+    # the "auto-hits, no RPS" reading in campaign/pat.md.
+    set_table([pat, mate, foe])
+    engine.resolve_attack(pat, foe, pool['HERE BOY'], None,
+                          rng=random.Random(1), log=QUIET)
+    sp2 = [c for c in table() if c.is_object][0]
+    check('a spirit has nothing to defend with',
+          sp2.playable(foe, passives=False) == [])
+
+    # A party is not still standing because a totem is.
+    check('an Object does not keep a side in the fight',
+          sp2.is_object and not mate.is_object)
+
+    # An Object never gets a wheel token, so an order effect aimed at one
+    # has nothing to move. Before this was guarded it raised out of the
+    # wheel mid-fight — found by running the party with Pat summoning.
+    from wheel import Wheel
+    w = Wheel([pat, mate, foe])
+    for text in ('Apply Initiative Shift -2 to the defender',
+                 'Swap places with the defender in the initiative order'):
+        ops = fx.compile_half(text)
+        assert ops is not None, text
+        ctx = fx.Context(pat, sp2, allies=[mate], enemies=[sp2], card=None,
+                         outcome='attacker wins', rng=random.Random(0),
+                         log=QUIET)
+        ctx.wheel = w
+        ctx.acting = pat
+        for op in ops:
+            op.apply(ctx)
+    check('an order effect on an Object no-ops instead of raising',
+          len(w.slots) == 3, w.slots)
+
+
+def test_lets_go_compels_the_room():
+    print("\nLET'S GO on defence: a Soul Save, per enemy")
+    import engine
+    from engine import MUST_TARGET
+    pool = cardlib.by_name(cardlib.load())
+
+    made, compelled = 0, 0
+    for seed in range(60):
+        pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+        foes = [Combatant(f'F{i}', 3, 3, s, deck=[], position=FRONT,
+                          team='foes') for i, s in enumerate((1, 4, 7))]
+        for c in [pat] + foes:
+            c.hp = 400
+        set_table([pat] + foes)
+        engine._run(pool["LET'S GO"], 'defense_effect', pat, foes[0],
+                    engine.Outcome.DEFENDER, 0, QUIET, random.Random(seed), None)
+        for f in foes:
+            made += 1
+            if f.restriction(MUST_TARGET) is not None:
+                compelled += 1
+    check('every enemy rolls its own save, and some fail',
+          made == 180 and 0 < compelled < 180, (made, compelled))
+
+    # DC is the caster's Soul + 10, so a high-Soul enemy should resist more
+    # often than a low-Soul one. Checked rather than assumed.
+    per = {}
+    for soul in (1, 7):
+        hits = 0
+        for seed in range(200):
+            pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+            f = Combatant('F', 3, 3, soul, deck=[], position=FRONT, team='foes')
+            pat.hp = f.hp = 400
+            set_table([pat, f])
+            engine._run(pool["LET'S GO"], 'defense_effect', pat, f,
+                        engine.Outcome.DEFENDER, 0, QUIET,
+                        random.Random(seed), None)
+            if f.restriction(MUST_TARGET) is not None:
+                hits += 1
+        per[soul] = hits
+    check('and Soul is what resists it', per[1] > per[7], per)
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -1499,6 +1605,8 @@ if __name__ == '__main__':
     test_split_attention_needs_more_than_one_thing()
     test_the_load_is_the_card()
     test_serve_hands_over_a_real_drink()
+    test_summoned_spirits_are_objects()
+    test_lets_go_compels_the_room()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

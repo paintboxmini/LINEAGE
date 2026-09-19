@@ -17,6 +17,7 @@ import sys
 
 import cards as cardlib
 from agents import HumanAgent, RandomAgent, SimpleAI
+import engine
 from engine import (BACK, FRONT, MUST_TARGET, NO_ATTACK, NO_TARGET,
                     SKIP_DRAW, Combatant, Outcome, d, resolve_attack,
                     set_table)
@@ -180,14 +181,29 @@ def run(party, foes, wheel, log, rng, max_rounds=40):
     turns = 0
     cap = max_rounds * len(everyone)
 
+    def standing(side):
+        """Who is still in the fight on one side.
+
+        Objects do not count. A summoned spirit holds HP and can be
+        attacked, but it is not a combatant (`campaign/pat.md`, Wild Magic
+        Summoning) — a party whose last standing member is a totem has lost.
+        """
+        return [c for c in side if not c.is_object]
+
     current = wheel.order()[0]
     while turns < cap:
         turns += 1
 
-        if all(not c.alive() or c.down for c in party):
+        # Read the table rather than the opening line-up: something
+        # summoned mid-fight has to be visible to everyone afterwards.
+        everyone = list(engine.table())
+        party = [c for c in everyone if c.team == 'party']
+        foes = [c for c in everyone if c.team != 'party']
+
+        if all(not c.alive() or c.down for c in standing(party)):
             log('\nThe party is down.')
             return 'foes'
-        if all(not c.alive() or c.down for c in foes):
+        if all(not c.alive() or c.down for c in standing(foes)):
             log('\nThe party wins.')
             return 'party'
 

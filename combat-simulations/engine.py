@@ -129,6 +129,22 @@ class Combatant:
         self.load = None
         self.drinks = []
 
+        # `campaign/pat.md`, Wild Magic Summoning: a summoned spirit holds
+        # HP at its summoner's position and can be attacked, but it is not a
+        # combatant — it does not act, takes no turn, and never gets a token
+        # on the wheel. Modelled as a Combatant with this flag rather than
+        # as its own class, so the damage pipeline, targeting and positions
+        # all work on it unchanged. Having no hand, it can never choose a
+        # defence, which is exactly the "auto-hits, no RPS" that file calls
+        # the natural reading.
+        #
+        # "Object" is deliberately not a formal category in `rules/`
+        # (`campaign/pat.md`), so this is not one here either — it is a flag
+        # on the one thing that needs it.
+        self.is_object = False
+        self.summoner = None
+        self.totem_buff = []
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -379,6 +395,30 @@ class Combatant:
                 and c.color not in banned
                 and c.range_ok(self.position, opponent.position)]
 
+    def dissipate(self, log=None):
+        """`campaign/pat.md`: "If the spirit reaches 0 HP, it dissipates."
+
+        An Object does not Collapse and is not Down — it leaves. Anything
+        it was holding up leaves with it, which is what LET'S GO means by
+        *kill the totem, lose the buff*.
+        """
+        if self.dead:
+            return
+        self.dead = True
+        self.down = True
+        if log:
+            log(f'{self.name} dissipates.')
+        for who, mod in getattr(self, 'totem_buff', ()) or ():
+            for live in list(who.standing_mods):
+                if live is mod:
+                    who.standing_mods.remove(live)
+        if getattr(self, 'totem_buff', None):
+            if log:
+                log('  the totem is gone — the party loses its bonus.')
+            self.totem_buff = []
+        global _TABLE
+        _TABLE = [c for c in _TABLE if c is not self]
+
     def spend_load(self, log=None):
         """THE PEPPER GRINDER: the load is spent when GRIND SHOT resolves,
         win or lose — blocking with it burns the round the same as firing
@@ -469,7 +509,9 @@ class Combatant:
         if log and dealt:
             log(f'{target.name} takes {dealt} ({target.hp}/{target.max_hp} HP).')
 
-        if target.hp <= 0 and not target.down:
+        if target.hp <= 0 and target.is_object:
+            target.dissipate(log)
+        elif target.hp <= 0 and not target.down:
             target.down = True
             if log:
                 log(f'{target.name} Collapses.')
@@ -1005,6 +1047,12 @@ def _standing(attacker, card, defender, log):
 # that "all allies" and "any enemy" have something to resolve against; an
 # exchange run outside a fight simply sees the two combatants in it.
 _TABLE = []
+
+
+def table():
+    """Everyone in the current fight, including anything summoned into it.
+    `play.run` reads this each turn so a mid-fight arrival is visible."""
+    return list(_TABLE)
 
 
 def set_table(combatants):

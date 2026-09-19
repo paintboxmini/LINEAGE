@@ -428,9 +428,7 @@ class Shift(Op):
     def apply(self, ctx):
         wheel = getattr(ctx, 'wheel', None)
         for who in ctx.resolve(self.target, 'Initiative Shift'):
-            if wheel is None:
-                ctx.log(f'  Initiative Shift {self.amount:+} on {who.name} '
-                        f'(no wheel in this context).')
+            if not _on_wheel(ctx, who, f'Initiative Shift {self.amount:+}'):
                 continue
             note = wheel.shift(who, self.amount,
                                acting=getattr(ctx, 'acting', None))
@@ -1155,7 +1153,8 @@ def compile_half(text, other=None, name=None):
     # "Same choice." — the half is the other half. Compiled without an
     # `other` of its own so a pair of halves that each point at the other
     # cannot loop.
-    if re.fullmatch(r'same choice\.?|as (?:the )?(?:attack )?effect\.?', s, re.I):
+    if re.fullmatch(r'same(?: as)?(?: the)? (?:choice|effect)\.?'
+                    r'|as (?:the )?(?:attack )?effect\.?', s, re.I):
         return compile_half(other, name=name) if other else None
 
     # A trailing gate reads the same as a leading one (FORGET puts it last).
@@ -1614,6 +1613,26 @@ def _r_chain(m):
     return [Splash(OTHER_ENEMY, 0.5, 'up')]
 
 
+def _on_wheel(ctx, who, what):
+    """Whether this target has a token to move at all.
+
+    An Object never gets one (`campaign/pat.md`, Wild Magic Summoning:
+    spirits "never get a token on the initiative wheel"), and neither does
+    anything that has already left the fight. An order effect aimed at one
+    has nothing to act on, which is a real outcome rather than an error —
+    guarded here rather than in the wheel, which is right to treat a token
+    it does not hold as a caller mistake.
+    """
+    wheel = getattr(ctx, 'wheel', None)
+    if wheel is None:
+        ctx.log(f'  (no wheel in this context — {what} is not applied.)')
+        return False
+    if who not in wheel.slots:
+        ctx.log(f'  {who.name} is not on the wheel — {what} does nothing.')
+        return False
+    return True
+
+
 class WheelSwap(Op):
     """PRIORITY: exchange slots in the initiative order."""
 
@@ -1621,10 +1640,10 @@ class WheelSwap(Op):
         self.target = target
 
     def apply(self, ctx):
-        if ctx.wheel is None:
-            ctx.log('  (no wheel in this context — the swap is not applied.)')
-            return
         for who in ctx.resolve(self.target, 'Swap with'):
+            if not _on_wheel(ctx, who, 'the swap') \
+                    or not _on_wheel(ctx, ctx.actor, 'the swap'):
+                continue
             ctx.log('  ' + ctx.wheel.swap(ctx.actor, who,
                                           acting=getattr(ctx, 'acting', None)))
 
@@ -1636,10 +1655,10 @@ class WheelMoveAfter(Op):
         self.target = target
 
     def apply(self, ctx):
-        if ctx.wheel is None:
-            ctx.log('  (no wheel in this context — the move is not applied.)')
-            return
         for who in ctx.resolve(self.target, 'Follow'):
+            if not _on_wheel(ctx, who, 'the move') \
+                    or not _on_wheel(ctx, ctx.actor, 'the move'):
+                continue
             ctx.log('  ' + ctx.wheel.move_after(
                 ctx.actor, who, acting=getattr(ctx, 'acting', None)))
 
@@ -2380,6 +2399,151 @@ def _r_serve(m):
 @rule(r'^consume a prepared drink yourself')
 def _r_drink_self(m):
     return [ServeDrink(SELF)]
+
+
+# ---- summoned spirits --------------------------------------------------
+#
+# `campaign/pat.md`, Wild Magic Summoning: "Whenever you summon a spirit,
+# roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it
+# dissipates." Spirits are Objects, not combatants: they do not act, take no
+# turn, and never get a token on the wheel. They hold HP at the summoner's
+# position and can be attacked directly.
+
+
+class Summon(Op):
+    """Put a spirit on the field at the summoner's position.
+
+    The d10 comes from the Trait rather than from either card, so both
+    triggers roll the same way. `rider` is an Ongoing Effect the spirit
+    carries — installed when it arrives and taken back when it dies, which
+    is what "kill the totem, lose the buff" means.
+    """
+
+    def __init__(self, rider=None, label=''):
+        self.rider, self.label = rider, label
+
+    def apply(self, ctx):
+        from engine import Combatant, table, set_table, d
+        rng = ctx.rng or ctx.actor.rng
+        hp = d(10, rng)
+
+        n = 1 + sum(1 for c in table()
+                    if c.is_object and c.summoner is ctx.actor)
+        # Wild Magic Summoning sets the HP outright. max_hp is derived and
+        # must stay derived (`rules/invariants.md`, the named caching bug),
+        # so the roll goes into Soul — 4x0 + 0 + hp is exactly hp, and a
+        # spirit never rolls a stat for anything, having no cards and no
+        # turn.
+        spirit = Combatant(f"{ctx.actor.name}'s spirit {n}", 0, 0, hp,
+                           deck=[], position=ctx.actor.position,
+                           team=ctx.actor.team)
+        spirit.is_object = True
+        spirit.summoner = ctx.actor
+        spirit._agent = getattr(ctx.actor, '_agent', None)
+        set_table(table() + [spirit])
+        ctx.log(f'  {ctx.actor.name} summons a spirit — {hp} HP, '
+                f'{spirit.position}.')
+
+        if self.rider is not None:
+            self.rider(ctx, spirit)
+        elif self.label:
+            ctx.log(f'  it carries: {self.label}')
+
+
+def _totem_damage_buff(ctx, spirit):
+    """LET'S GO: "you and your allies deal +2 damage this combat. This buff
+    is tied to the spirit's survival — kill the totem, lose the buff."
+
+    A standing modifier on every living ally, recorded on the spirit so it
+    can be taken back the moment the spirit drops.
+    """
+    held = []
+    for who in [ctx.actor] + list(ctx.allies):
+        if who.is_object:
+            continue
+        mod = {'bonus': 2, 'mult': 1, 'color': None, 'target': None,
+               'uses': None, 'text': "+2 damage while the totem stands"}
+        who.standing_mods.append(mod)
+        held.append((who, mod))
+    spirit.totem_buff = held
+    ctx.log('  the totem stands: +2 damage to the party while it lives.')
+
+
+class SpiritWinsNextTie(Op):
+    """HERE BOY: "It gains the Ongoing Effect: the next time it ties in RPS,
+    it wins instead."
+
+    **Narrated rather than run, and deliberately.** A spirit is an Object
+    that does not act and cannot choose a defence, so it never reaches an
+    RPS reveal — there is no exchange for the rider to apply to. Reading
+    "it" as the summoner instead would be a rules decision, not a
+    translation, so the engine says what the card says and lets the table
+    rule on it (`campaign/pat.md`, Wild Magic Summoning).
+    """
+
+    def apply(self, ctx):
+        ctx.log('  the spirit wins its next tie — no exchange to apply it '
+                'to; table call.')
+
+
+@menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
+      r'it gains the ongoing effect: the next time it ties in rps, '
+      r'it wins instead')
+def _r_here_boy(m):
+    return [Summon(), SpiritWinsNextTie()]
+
+
+@menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'
+      r'it carries the ongoing effect: you and your allies deal \+(\d+) '
+      r'damage this combat\.?.*')
+def _r_lets_go(m):
+    return [Summon(rider=_totem_damage_buff)]
+
+
+
+class CompelAllEnemies(Op):
+    """LET'S GO's defence half: every enemy makes a Soul Save against the
+    caster's Soul + a margin, and whoever fails has to answer him next turn.
+
+    The Save is an ordinary check from the *enemy's* side
+    (`rules/resolution.md`: 2d10 + stat, meet or beat), so it rolls once per
+    enemy rather than once for the room. The compulsion reuses MUST_TARGET,
+    which MOCKERY and INTERCEPT already run on.
+
+    *The card's third sentence — what a failing enemy does when it cannot
+    reach him — is the Rushdown fallback, and the engine's forced-target
+    machinery already sends them at him by the shortest legal route, so
+    there is nothing separate to run.*
+    """
+
+    def __init__(self, margin):
+        self.margin = margin
+
+    def apply(self, ctx):
+        from engine import MUST_TARGET, Pending
+        rng = ctx.rng or ctx.actor.rng
+        dc = ctx.actor.soul + self.margin
+        for foe in list(ctx.enemies):
+            if foe.is_object or not foe.alive():
+                continue
+            roll = rng.randint(1, 10) + rng.randint(1, 10) + foe.soul
+            if roll >= dc:
+                ctx.log(f'  {foe.name} rolls {roll} against DC {dc} (Soul) '
+                        f'— holds.')
+                continue
+            ctx.log(f'  {foe.name} rolls {roll} against DC {dc} (Soul) '
+                    f'— must answer {ctx.actor.name}.')
+            foe.add_pending(Pending(
+                'restriction', owner=ctx.actor, expires='owner_next_turn',
+                kind=MUST_TARGET, uses=1, data={'who': ctx.actor},
+                text=f'must answer {ctx.actor.name} next turn'),
+                log=ctx.log)
+
+
+@menu(r'^every enemy makes a soul save, dc = your soul stat \+ (\d+)\.\s*'
+      r'anyone who fails must attack you on their next turn\.?.*')
+def _r_lets_go_defence(m):
+    return [CompelAllEnemies(int(m.group(1)))]
 
 
 # ---- card traits -------------------------------------------------------
