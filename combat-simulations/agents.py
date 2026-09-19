@@ -19,8 +19,8 @@ class Knowledge:
     them and may not decide anything on them.
 
     What is public is what happens in front of everyone: a card is revealed
-    to be played, and after the exchange it goes to the discard where it
-    stays face up. An Ongoing Effect sits on the table. A hit is announced
+    to be played, and after the exchange it goes to the discard pile where
+    it stays face up. An Ongoing Effect sits on the table. A hit is announced
     with its number. Position, Down and the status tokens are all on the
     table too.
 
@@ -604,7 +604,7 @@ class KitAI(SimpleAI):
         evidence about what colour is coming is the colours that have
         already come. Early in a fight the smoothing makes this very close
         to a shrug, and it should be: an agent that has seen two cards does
-        not know anything yet. It sharpens as the discard fills.
+        not know anything yet. It sharpens as the discard pile fills.
 
         **Two earlier versions of this were wrong, and the second was wrong
         in a way worth remembering.**

@@ -2,7 +2,8 @@
 
 Hands and decks are hidden. So are HP, max HP and the stat line. An agent
 may look at what happens in front of everyone — cards face up in the
-discard, Ongoing Effects on the table, position, Down, status tokens, and
+discard pile, Ongoing Effects on the table, position, Down, status tokens,
+and
 the damage called out as it lands (`engine.Combatant.seen_damage`) — and
 nothing else.
 

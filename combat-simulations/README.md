@@ -270,8 +270,8 @@ Three things about this are worth keeping:
   him exactly — 9% down against 9%, 4.8 damage taken against 4.8. Four
   other methods were ablated the same way and moved nothing.
 - **Summing the other zones does not fix it**, and measuring beats
-  reasoning about it. The obvious repair — count hand, deck, discard and
-  play, so the removal cannot skew the total — was *no better than the
+  reasoning about it. The obvious repair — count hand, deck, discard pile
+  and play, so the removal cannot skew the total — was *no better than the
   bug* (31% down against 28%). The card in flight sits in a local variable
   in `play.py` and is in no zone at all, so against a four-card creature
   three cards are visible and the missing quarter is exactly the one that
@@ -319,8 +319,8 @@ weight does not matter,** and in a sweep the two are indistinguishable.
 **Hands and decks are hidden. So are HP, max HP and the stat line.** An
 agent may not read them and may not decide anything on them. What it may
 have is what happens in front of everyone at the table: cards revealed to
-be played and then sitting face up in the discard, Ongoing Effects on the
-table, positions, Down, status tokens, and the number called out when a
+be played and then sitting face up in the discard pile, Ongoing Effects on
+the table, positions, Down, status tokens, and the number called out when a
 hit lands.
 
 `agents.Knowledge` is that, and nothing else. It folds each opponent's
