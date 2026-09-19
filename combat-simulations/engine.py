@@ -122,6 +122,13 @@ class Combatant:
         # is flagged in `campaign/passives.md` as a table question.
         self.passives = []
 
+        # Carried gear that fills in a card (`campaign/kevin.md`). `load` is
+        # the prepared round in the grinder, spent when GRIND SHOT resolves
+        # win or lose; `drinks` are prepared servings SERVE hands out. Both
+        # are names, looked up against the tables in that file.
+        self.load = None
+        self.drinks = []
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -371,6 +378,16 @@ class Combatant:
                 if c.is_playable()
                 and c.color not in banned
                 and c.range_ok(self.position, opponent.position)]
+
+    def spend_load(self, log=None):
+        """THE PEPPER GRINDER: the load is spent when GRIND SHOT resolves,
+        win or lose — blocking with it burns the round the same as firing
+        it. Called from `_finish`, so a loss still costs the round."""
+        if self.load is None:
+            return
+        if log:
+            log(f'  {self.name} spends the {self.load}.')
+        self.load = None
 
     def is_passive(self, card):
         return card is not None and any(card is p for p in self.passives)
@@ -822,6 +839,16 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     # (`rules/combat.md`, Ongoing Effects). That is also why it cannot be
     # played twice over itself: while the effect is running the card is on
     # the table, not in the deck and not in the pile a reshuffle draws from.
+    # A card whose text defers to carried gear spends that gear when it
+    # resolves, whatever the outcome was — see Combatant.spend_load.
+    for who, half, card in ((attacker, 'effect', atk_card),
+                            (defender, 'defense_effect', def_card)):
+        if card is None:
+            continue
+        ops = compiled(card, half)
+        if ops and any(isinstance(o, fx.AsLoadedRound) for o in ops):
+            who.spend_load(log)
+
     # A Passive was never in a pile and does not enter one — it goes back
     # to being face up in its own zone, which is where it already was.
     if attacker.is_passive(atk_card):

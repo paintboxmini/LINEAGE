@@ -172,6 +172,62 @@ def load_passives():
     return {c.name: c for c in parse_file(PASSIVE_FILE)}
 
 
+KEVIN_FILE = os.path.join(REPO, 'campaign', 'kevin.md')
+
+
+def _md_table(text, first_header):
+    """Rows of the first markdown table whose header starts with a column
+    named `first_header`, as lists of stripped cells."""
+    rows, inside = [], False
+    for line in text.split('\n'):
+        line = line.strip()
+        if not line.startswith('|'):
+            if inside:
+                break
+            continue
+        cells = [c.strip() for c in line.strip('|').split('|')]
+        first = re.sub(r'[*_`]', '', cells[0]).strip().lower()
+        if not inside:
+            if first == first_header.lower():
+                inside = True
+            continue
+        if set(''.join(cells)) <= set('-: '):
+            continue
+        rows.append([re.sub(r'\*\*', '', c).strip() for c in cells])
+    return rows
+
+
+def load_grinder_rounds():
+    """Kevin's prepared rounds, read out of his own file.
+
+    `campaign/kevin.md`, The Ingredients, is the source of truth for what a
+    load does — the markdown is the card (`CLAUDE.md`). Read rather than
+    copied so the two cannot drift: the cells are ordinary card prose and
+    go through the same reader every Effect line does.
+
+    Returns {name: (effect, defense_effect)}. A dash means no effect.
+    """
+    with open(KEVIN_FILE, encoding='utf-8') as f:
+        rows = _md_table(f.read(), 'Load')
+    out = {}
+    for r in rows:
+        if len(r) < 3:
+            continue
+        name = r[0]
+        eff = None if r[1] in ('', '—', '-') else r[1]
+        dfn = None if r[2] in ('', '—', '-') else r[2]
+        out[name.lower()] = (eff, dfn)
+    return out
+
+
+def load_drinks():
+    """Kevin's prepared drinks, same arrangement — `campaign/kevin.md`,
+    The beverages. Returns {name: effect on the drinker}."""
+    with open(KEVIN_FILE, encoding='utf-8') as f:
+        rows = _md_table(f.read(), 'Drink')
+    return {r[0].lower(): r[1] for r in rows if len(r) >= 2}
+
+
 def core_pool():
     """The four core lists — what a creature deck fills from
     (`rules/cards.md`, Deck Building)."""

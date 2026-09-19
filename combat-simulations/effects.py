@@ -2248,6 +2248,140 @@ def _won_the_exchange(ctx):
     return ctx.outcome == ('attacker wins' if attacking else 'defender wins')
 
 
+# ---- carried gear that fills in a card --------------------------------
+#
+# Two of Kevin's cards print no effect of their own: GRIND SHOT's lines are
+# whatever round is in the grinder, and SERVE hands over a prepared drink
+# and lets the drink do the work. Both read their tables out of
+# `campaign/kevin.md` rather than repeating them here, so the markdown
+# stays the source of truth and the cells go through this same reader.
+
+
+def _rounds():
+    import cards as cardlib
+    global _ROUNDS
+    if _ROUNDS is None:
+        _ROUNDS = cardlib.load_grinder_rounds()
+    return _ROUNDS
+
+
+def _drinks():
+    import cards as cardlib
+    global _DRINKS
+    if _DRINKS is None:
+        _DRINKS = cardlib.load_drinks()
+    return _DRINKS
+
+
+_ROUNDS = None
+_DRINKS = None
+
+
+class AsLoadedRound(Op):
+    """GRIND SHOT: "As the loaded round."
+
+    The card has no text of its own. Which half is speaking decides which
+    column of the load table is read — `ctx.acting` is whose turn it is, so
+    the actor is the attacker exactly when those two are the same
+    combatant, the same test the riposte gate uses.
+
+    Runs in whichever phase the load's own ops belong to, because a load
+    can be a damage modifier (cinder flake) or a status (everything else),
+    and a damage modifier has to reach the roll.
+    """
+
+    #: Declared 'pre' so the "Effect:" header prints before the damage line
+    #: when a damage-modifying round is in. run_phase does the real work.
+    phase = 'pre'
+
+    def _ops(self, ctx):
+        load = (getattr(ctx.actor, 'load', None) or '').lower()
+        if not load:
+            return None, 'nothing loaded'
+        row = _rounds().get(load)
+        if row is None:
+            return None, f'{load} is not a round this reader knows'
+        acting = getattr(ctx, 'acting', None)
+        attacking = acting is None or ctx.actor is acting
+        text = row[0] if attacking else row[1]
+        if not text:
+            return [], f'{load} — a plain round does nothing'
+        ops = compile_half(text)
+        if ops is None:
+            return None, f'{load}: {text}'
+        return ops, load
+
+    def run_phase(self, ctx, phase):
+        ops, why = self._ops(ctx)
+        if ops is None:
+            if phase == 'post':
+                ctx.log(f'  ({why}.)')
+            return
+        if not ops:
+            if phase == 'post':
+                ctx.log(f'  ({why}.)')
+            return
+        if phase == 'post':
+            ctx.log(f'  loaded: {why}.')
+        for op in ops:
+            op.run_phase(ctx, phase)
+
+    def apply(self, ctx):
+        self.run_phase(ctx, 'post')
+
+
+class ServeDrink(Op):
+    """SERVE. A prepared drink leaves Kevin's stock and the drinker gets
+    whatever it says, resolved as theirs rather than his — the drink text is
+    written from the drinker's side ("Gain Quick", "heal 3 HP")."""
+
+    def __init__(self, target):
+        self.target = target
+
+    def apply(self, ctx):
+        stock = getattr(ctx.actor, 'drinks', None)
+        if not stock:
+            ctx.log(f'  {ctx.actor.name} has no prepared drink.')
+            return
+        name = stock[0]
+        if ctx.agent is not None and hasattr(ctx.agent, 'choose_option') \
+                and len(stock) > 1:
+            pick = ctx.agent.choose_option(ctx.actor, list(stock), 'Which drink')
+            name = pick if pick in stock else stock[0]
+        text = _drinks().get(name.lower())
+        ops = compile_half(text) if text else None
+        for who in ctx.resolve(self.target, 'Hand the drink to'):
+            stock.remove(name)
+            if ops is None:
+                ctx.log(f'  {who.name} drinks {name}: {text or "?"}')
+                return
+            ctx.log(f'  {who.name} drinks {name}.')
+            sub = Context(who, ctx.opponent, [ctx.actor], ctx.enemies,
+                          ctx.card, ctx.outcome, rng=ctx.rng, log=ctx.log,
+                          agent=getattr(who, '_agent', None))
+            sub.wheel = getattr(ctx, 'wheel', None)
+            sub.acting = getattr(ctx, 'acting', None)
+            for op in ops:
+                op.apply(sub)
+            return
+
+
+@rule(r'^as the loaded round')
+def _r_as_loaded(m):
+    return [AsLoadedRound()]
+
+
+@rule(r'^give a prepared drink to an ally in your position\.?\s*'
+      r'they consume it immediately')
+def _r_serve(m):
+    return [ServeDrink(ALLY)]
+
+
+@rule(r'^consume a prepared drink yourself')
+def _r_drink_self(m):
+    return [ServeDrink(SELF)]
+
+
 # ---- card traits -------------------------------------------------------
 #
 # Some text is not an effect that happens — it is a property of the card

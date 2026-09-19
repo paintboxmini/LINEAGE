@@ -628,6 +628,98 @@ def test_split_attention_needs_more_than_one_thing():
           and a.passive_applies(passives['HACKLES RISE'], b))
 
 
+
+def test_the_load_is_the_card():
+    print('\nGRIND SHOT is whatever is in the grinder')
+    import engine
+    pool = cardlib.by_name(cardlib.load())
+    gs = pool['GRIND SHOT']
+
+    rounds = cardlib.load_grinder_rounds()
+    check('every written round is readable on both halves',
+          all(fx.compile_half(e) is not None for e, _ in rounds.values() if e)
+          and all(fx.compile_half(d) is not None for _, d in rounds.values() if d),
+          sorted(rounds))
+    check('and plain is blank on both', rounds['plain'] == (None, None),
+          rounds['plain'])
+
+    def shoot(load, seed=0, defending=False):
+        k = Combatant('Kevin', 4, 3, 2, deck=[], position=BACK, team='party')
+        f = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+        k.hp = f.hp = 400
+        set_table([k, f])
+        k.load = load
+        if defending:
+            engine.resolve_attack(f, k, pool['GRIND SHOT'], gs,
+                                  rng=random.Random(seed), log=QUIET)
+        else:
+            engine.resolve_attack(k, f, gs, None, rng=random.Random(seed), log=QUIET)
+        return k, f
+
+    k, f = shoot('hush petal')
+    check('a status round applies its status', f.rooted == 1, f.rooted)
+    check('and the round is gone afterwards', k.load is None, k.load)
+
+    plain = [shoot('plain', s)[1].hp for s in range(30)]
+    cinder = [shoot('cinder flake', s)[1].hp for s in range(30)]
+    check('cinder flake reaches the damage roll, not just the log',
+          all(400 - c == (400 - p) + 3 for p, c in zip(plain, cinder)),
+          list(zip(plain, cinder))[:3])
+
+    k, f = shoot('sapphire crystal', defending=True)
+    check('the defence half reads the other column',
+          f.vulnerable == 1, f.vulnerable)
+    check('and blocking burns the round too', k.load is None, k.load)
+
+    k, f = shoot('plain')
+    check('a plain round leaves nothing behind but damage',
+          not f.rooted and not f.vulnerable and k.load is None)
+
+
+def test_serve_hands_over_a_real_drink():
+    print('\nSERVE gives the drink and the drink does the work')
+    import engine
+    pool = cardlib.by_name(cardlib.load())
+    drinks = cardlib.load_drinks()
+    check('every written drink is readable',
+          all(fx.compile_half(t) is not None for t in drinks.values()),
+          sorted(drinks))
+
+    k = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    mate = Combatant('Mate', 3, 2, 4, deck=[], position=FRONT, team='party')
+    foe = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k.hp = foe.hp = 400
+    mate.hp = 5
+    k.drinks = ['Still Water']
+    set_table([k, mate, foe])
+    engine.resolve_attack(k, foe, pool['SERVE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('the ally drinks it, not the caster',
+          mate.ward == 1 and mate.hp == 8 and k.ward == 0,
+          (mate.ward, mate.hp, k.ward))
+    check('and the stock goes down', k.drinks == [], k.drinks)
+
+    # On defence there is nobody to pass it to, so he drinks it himself.
+    k2 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe2 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k2.hp = 5
+    foe2.hp = 400
+    k2.drinks = ['Still Water']
+    set_table([k2, foe2])
+    engine._run(pool['SERVE'], 'defense_effect', k2, foe2,
+                engine.Outcome.DEFENDER, 0, QUIET, random.Random(0), None)
+    check('the defence half is his own drink',
+          k2.ward == 1 and k2.hp == 8, (k2.ward, k2.hp))
+
+    k3 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe3 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k3.hp = foe3.hp = 400
+    set_table([k3, foe3])
+    engine.resolve_attack(k3, foe3, pool['SERVE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('with no drink prepared it simply does not fire', k3.drinks == [])
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -1405,6 +1497,8 @@ if __name__ == '__main__':
     test_a_duration_with_nothing_to_hold_narrates()
     test_passives_are_a_zone_not_a_pile()
     test_split_attention_needs_more_than_one_thing()
+    test_the_load_is_the_card()
+    test_serve_hands_over_a_real_drink()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:
