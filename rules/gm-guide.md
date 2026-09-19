@@ -57,6 +57,8 @@ So: nine creatures at one-in-every-stat sounds like an even match against three 
 
 **Mix CTRs to get the settings back.** This is the fine-tuning lever, and it is the answer to a boss encounter that needs to be hard but survivable. One minotaur against three starting characters is a formality at 100%; two is 70%. But one minotaur plus one, two, three or four CTR-3 creatures reads 98%, 95%, 84%, 48% — four usable settings inside a gap that count alone could not divide at all.
 
+*Those six percentages are rounded references taken off an earlier, incomplete engine, and they are illustrating the shape rather than reporting the current number — the point is that mixing divides a gap that count alone cannot, not that one minotaur is exactly 100%. Re-running `combat-simulations/encounter_budget.py` today gives 95% and 64% for the first two, and that is drift in the instrument, not an error in the guidance. **Don't treat them as a target to reproduce**, and don't update them one at a time; if they are ever refreshed, refresh the row together.*
+
 **And note which way that cuts.** One minotaur and four small things is 26 total stats and a 48% fight. Two minotaurs is 28 total stats and a 70% fight. *Fewer stats, harder fight* — because five bodies act more often than two do. When you want pressure rather than a bigger number, add bodies.
 
 **The real limiter on mixed encounters is fiction, not math.** What makes sense hunting together, or hired by the same person, or living in the same ruin. A GM who needs a specific difficulty and cannot justify the adds should change the terrain instead.

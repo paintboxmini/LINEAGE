@@ -301,9 +301,15 @@ The Red Scarves are already in your peripheral vision.
 
 **The sweep did it.** The Compact impounded a whole stretch of berth over the quarantined barge (The Quarantined Barge, above), and everything moored near it went into a warehouse behind a question nobody can answer — other people's cargo, sealed and legitimate, sitting indefinitely. **Bartho does not hold a queue of petitioners; he deals with a party.** So he is dealing with them together, as one problem, and none of them chose that.
 
-**Only one of them is actually there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). Kevin's temple wine is in the warehouse. Pat is at the docks asking river questions, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. Chris is standing there with nothing to do and no reason to leave, which makes him the only one present whose reasons anybody believes.
+**None of them is only there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). *Updated 2026-09-19 — this paragraph previously had Chris as the idler whose reasons everybody believes, which is now the opposite of true.*
 
-**Bartho sorts them into one conversation because it is easier than three**, not because they belong together. A dockmaster mid-lockdown has a freight claim, a stranger asking about the water, and an idler, and handling them as one group takes a quarter of the time. That is the whole of why the party exists. Nobody announces it.
+- **Kevin and Chris came in together, running**, out of the Abyssal Ruins and the institution that tried to take Chris by force (`campaign/chris.md`, The Night They Ran). **They are carrying nothing** — no freight, no errand; their boat is simply the way out, and it is in the hold with everything else. Kevin chose this port precisely because a person can vanish in it, which was true right up until the Compact started writing names down.
+- **Pat is at the docks asking river questions**, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. He arrived by boat and paid for the passage.
+- **Chris is the one who can least afford to be counted.** He says nothing about why.
+
+**Bartho sorts them into one conversation because it is easier than three**, not because they belong together. A dockmaster mid-lockdown has a berth full of stopped people and no appetite for individual interviews, and handling them as one group takes a quarter of the time. That is the whole of why the party exists. Nobody announces it.
+
+*What Bartho does not know, and the GM should: two of the three have an excellent reason to want off this dock quietly, and one of them is the most interesting thing that has ever come through the Central Gateway.*
 
 ### Beat one — Bartho, the barge, the lockdown
 
@@ -325,6 +331,28 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 *The Scarves did not arrange this. They moved on it inside four seconds, which is a better thing to know about them than a conspiracy would be. A GM who wants the conspiracy version can have it, but it costs the party a truer first impression: these kids are not plotters, they are fast.*
 
+### Beat three and a half — what the crash put in the water
+
+**The spill is the dinner bell.** Timber, crates and a season's worth of somebody's freight go over the edge on a slow tide — sluggish, heavy water that carries a smell a long way and does not carry it off (The Tide, above). **Wrackclaws come up the stones for it** (`bestiary/wrackclaw.md`). They are wreck-scavengers and this is the largest wreck on this coast today.
+
+**Nobody else on the dock will touch it, and that is the lockdown's doing.** Every hand on that frontage works for the Compact and is under an order not to go near loose cargo off an impounded berth — putting hands on it is the precise thing they have been forbidden. Bartho is occupied with Harlock. **The party are the only people standing there with no rule stopping them**, which is the same reason Bartho was talking to them in the first place.
+
+**The encounter.** **Three wrackclaws** against three starting characters: measured at a 99.6% win, somebody taking a knee about one fight in six, and a death about one in twenty (`combat-simulations/encounter_budget.py`). That is the shape a first fight wants — won, but not free. **Four if a fourth seat is filled**, which measures nearly identically for four characters; four against three is a 27% chance of burying somebody in session one and is not the same encounter.
+
+**It teaches Range with the floor.** The wet timber at the edge is Frontline and the dry stone behind it is Backline, and a Melee card needs both of you out on the timber (`rules/combat.md`, Range). A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
+
+**Three things it deliberately does not do:**
+
+- **Nobody drowns.** The tide is slow and the water over the spoil at the dock edge is waist-deep — going in is cold, filthy and undignified, and you can stand up. No rescue, no swim check, no party doubling back for somebody.
+- **Nothing disarms anyone.** Wrackclaws pull at what is already in the water. They do not take your cards, your kit or your turn.
+- **They die on the stones.** What they have dragged up stays where the party can reach it. A dead scavenger does not slide into the river with the loot still on it.
+
+**Losing is a loss, not a wound.** Break off and the wrackclaws take what they can drag and the tide takes the rest — including a portion of Kevin's temple wine, which is exactly the kind of thing his family will hear about and exactly the wrong kind of serious.
+
+**And it is an audition.** Harlock is on his own deck twenty feet away with nothing to do but watch. He does not hire strangers. He is about to hire these ones, and the reason is this.
+
+---
+
 ### Beat four — Bartho raises his voice
 
 **And this is the only time the party will ever hear it.**
@@ -343,11 +371,27 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **Harlock's face is the whole beat.** He has a famous temper and he does not use it — because using it here confirms there is something to find. He agrees. That is the most frightening thing he does in session one.
 
-**And Jonas goes.** Young, nervous, frantically thorough, alone, onto a pirate's ship, because Bartho told him to and Bartho is why the arrangement works.
+**And Jonas goes** — but not yet, and the gap is the whole of session one's second half. Young, nervous and frantically thorough, he is also a man who will not board a ship without the right ledger, and the right ledger is in the office at the other end of a dock that currently has a wrecked berth across the middle of it. **Call it ten minutes. Everyone watching can see him walk away and can see that he is coming back.**
+
+---
+
+### Beat six — Harlock asks, in that gap
+
+**He comes down off the Arcadia and makes the party an offer while Jonas is still walking.** Not later, not that evening, not through an intermediary — now, because now is the only time the answer is worth anything to him.
+
+**The job is small and he will not decorate it.** There is a crate on his deck. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
+
+**Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own freight, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
+
+**The clock is visible and it is short.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.*
+
+**And the other side of it is standing right there.** Jonas, on his way past, alone, about to board a pirate's ship because the dockmaster told him to — and visibly not wanting to. **He does not ask, because it would not occur to him that he is allowed to.** A party that offers to go with him is doing the kindest available thing and also taking the other job, and the two are incompatible inside the same ten minutes (The Arcadia's Hold, below).
+
+*Neither job comes with an explanation. A party that takes Harlock's money and only learns later what they carried through a crowded market is the best version of this — nobody lied to them, they simply did not ask, which is what everyone else in that chain decided too.*
 
 ### What it leaves running
 
-- **A clock.** Jonas counts slowly and carefully. Harlock needs something off that ship before the count reaches it. Somewhere between those two facts is a job, and it is available from either direction — which makes it the party's first real choice rather than their first errand. **What is in the hold is below.**
+- **A choice already made, or about to be.** Harlock's offer and Jonas's walk are the same ten minutes, and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
 - **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
 - **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
 - **They have been marked.** The kids have them.
@@ -375,6 +419,6 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - **Leave it aboard** and Jonas writes down a living crate in a Regency-cross-referenced ledger.
 - **Dump it** and he answers to whoever paid him, who has so far been worth not annoying.
 
-**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **Both jobs are the same afternoon and they are incompatible**, and neither one tells the party what is in the box.
+**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **Both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six), and neither one tells the party what is in the box.
 
 *A party that takes Harlock's job and only finds out later what they carried is the best version of this. Nobody lied to them. They just didn't ask, same as everybody else in the chain.*

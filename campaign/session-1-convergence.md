@@ -16,17 +16,24 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 
 ---
 
-## Kevin — the wine shipment
+## Kevin — the one nobody is making do this
 
-**Settled.** His father is head of the **Temple of Unity** in the capital (`places/capital/capital.md`, `characters/vescal.md`) — the interfaith cathedral at the Temple District's heart, the one people go to when they can't resolve things themselves. The temple is known for its wines, and Kevin is overseeing a shipment.
+**Settled 2026-09-19, and it is the opposite of what this section used to say.** It previously had him escorting a temple wine shipment when Session 1 opens, and called that settled. **He is not carrying anything.** He fled the Abyssal Ruins with Chris and is hiding him from Gemstone University (`campaign/kevin.md`, And then it ended badly).
 
-This does a lot of quiet work:
+**What survives from the old version, because it was never about the cargo:**
 
-- **It explains the kit without explaining it.** A temple kid who shirked his studies to cook (`campaign/kevin.md`) being trusted with the cellar's freight is exactly the job a family gives someone whose actual talent is embarrassing to them. He is good at this and it is not what he wants.
-- **It puts him on the water with cargo**, which is the most ordinary reason anyone is at that dock, and the fastest thing to lose.
-- **It gives him somewhere to not go back to.** Nothing dramatic has to happen to the shipment for Kevin to end up on a boat going the wrong way.
+- **His father is head of the Temple of Unity** in the capital (`characters/ossian.md`), the temple is known for its wines, and **running them is how Kevin knows Vulture's Nest** — many trips, over years, and he likes the place for a smuggler's-son's reasons: seedy, dark, and carrying an underbelly a person can vanish into. *That is why he picked it.*
+- **The Herb name still opens a berth.** He is trading on it rather than on freight, which is the more exposed version and the more interesting one.
 
-*This supersedes the "isolated temple" lean in his own file, which was written as genuinely open. `campaign/kevin.md` updated to match.*
+**What is new, and is the actual point of the character:**
+
+**Nothing is forcing him.** Chris is running because something is hunting him. Pat is hunting because his dead sent him. Kevin is helping **because he wants to** — no obligation, no summons, no debt, no shipment, and at any point he could have gone home to the Capital and been a priest's son with a strange story.
+
+*The old version of this file gave that role to Chris* — the one with nothing pulling him, "the only one who is simply going, and that is what makes him the one who says yes to the boat." **That role has moved to Kevin, and it is a better fit**, because Chris now has the heaviest obligation at the table and Kevin has none at all.
+
+**Three verbs, one dock: Chris is running, Pat is hunting, Kevin chose.**
+
+**Protect the absence.** A character pulled by an obligation can be released from it; Kevin cannot be, because there is nothing holding him but the decision. Do not give him a reason.
 
 ---
 
@@ -72,16 +79,38 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 **On the Shunka island:** toward the continent's northern extent, slightly west of true north and south of Glasslight Reach (`world/geography-overview.md`, Bearing Table). Pat has come a long way, from somewhere most people at this dock have never had reason to think about.
 
-## Chris — no reason, which is the reason
+## Chris and Kevin — they arrive together, running
 
-He wants to see the world. That's it, and it shouldn't be dressed up — a thing that arrived here severed, memory gone, and got taught how a farm works by a quiet man who never asked for an origin story (`campaign/chris.md`, `characters/iron.md`) does not need a summons. He needs a road.
+**Settled 2026-09-19, and it replaces everything this section used to say.** Chris was previously written as the one member of the party with no obligation pulling him — *"he wants to see the world, and that's it."* That is gone. He has the strongest reason of the three, and Kevin is inside it.
 
-Two grounded ways to put him on it, both already supported:
+**What happened.** Chris came through the rift at the bottom of the Abyssal Ruins as a small child and was raised in secret by the scholar who found him — a plant specialist at **Gemstone University**, studying what the rift does to what grows near it, who chose to be a father rather than a discoverer (`campaign/chris.md`, Where He Landed). Kevin was at the same University, reading culinary arts and barely attending, and the two of them were friends.
 
-- **He came with the Briarwatch trade.** Briarwatch goods already reach the Nest — there are Briarwatch-style guard boots in Dess's stock (`places/vultures-nest.md`). Riding along with a run and then not going back is the smallest possible departure, which suits him. Iron would not make a scene about it.
-- **The Ruins are right there.** The Abyssal Ruins sit south of Vulture's Nest (`world/geography-overview.md`, Bearing Table) — the nearest port to the ground he came down on. He does not have to be investigating that. It only has to be true, and available later, when he decides he wants it to matter.
+**The University found out, and sent men to take Chris by force** — to make a weapon of the thing that came through the largest rift in the world. There was a fight. **Kevin was in it.** Chris's father put himself between his son and the men and told him to run, and **Kevin is the one who physically tore Chris away from that moment** and got him out. What became of the father is unknown and stays unknown (`places/abyssal-ruins.md`, It is an antagonist now).
 
-**The tension worth protecting:** he is the one member of the party with no obligation pulling him. Everyone else is discharging something — a shipment, a summons, a debt. He's the only one who is simply *going*, and that is what makes him the one who says yes to the boat.
+**So they fled the Ruins together, and Kevin chose where to go.** He has been to **Vulture's Nest** many times on temple wine business, and he likes it — seedy, dark, and carrying an underbelly a person can disappear into. *That is not a tourist's opinion of the Nest; it is a smuggler's-son's opinion, and it is correct.* He took Chris there to hide.
+
+**Which means they are not at the dock to discharge anything. They are at the dock because it is the last place anyone would look, until it very suddenly is not.**
+
+### What this buys the opening
+
+- **No introduction is needed for two of the three.** They arrive knowing each other, owing each other, and with one unfinished thing between them that neither has said out loud.
+- **The Nest is chosen rather than arrived at.** Kevin picked it on purpose, for reasons he can articulate, which makes him the party's local before the party exists.
+- **There is a live pursuit from session one.** The University's men are still looking. Nothing has to happen with that in session one — it only has to be true.
+- **They were having a good time.** Low profile, but a good time: the point of hiding in a port like this one is that hiding here looks like enjoying yourself. That is the tone the table should open on, and it makes the lockdown land as an interruption rather than a premise.
+
+### And the lockdown is what traps them
+
+They had a boat. **The Promise barge comes in, the Compact shuts the berth, and their boat is locked down with everything else on that stretch of dock.** Two people hiding from an institution that hunts them are now on a manifest, in a port nobody is allowed to leave.
+
+*That is a much sharper version of the same device than "their freight is impounded." The stakes of the quarantine are not commercial for those two.*
+
+## Pat — the one who paid
+
+**He arrives by boat, and he bought the passage.** That is the small detail that makes the three of them rhyme: Chris and Kevin are running and Pat is searching, but all three came in over water and **all three are now stuck on the same dock, trying to leave and unable to.**
+
+*Kevin's boat is locked down, Chris cannot afford to be on a list, and Pat's search does not continue from a port he cannot depart.* Three different reasons, one wall.
+
+**That is the unifier, set 2026-09-19** — not a job offer, not a tavern, not a device. The lockdown is doing it, and it is doing it to all three at once. They meet because they are all standing at the same closed gate with the same problem, and a party is the shape that problem forces them into.
 
 ---
 
@@ -103,11 +132,13 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 
 **A spooked Compact does not inspect one hull.** It inspects the berth. So:
 
-- **Kevin's wine is impounded** with everything else on that stretch of dock. Temple freight, sealed, and now sitting in a Compact warehouse behind a question nobody can answer.
+- **Kevin and Chris's boat is locked down** with everything on that stretch of dock. No freight is involved — they are not shipping anything, they are leaving (Kevin — the one nobody is making do this, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
 - **Pat is at the docks asking river questions** — which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud.
-- **Chris is standing there with nothing to do and no reason to leave**, which makes him the only one of the four whose presence is entirely innocent and the only one anybody believes.
+- **Chris cannot afford to be counted**, which is the opposite of what this section used to say about him. He was previously the innocent one everybody believes; he is now the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
 
-They are four people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
+They are three people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
+
+*Updated 2026-09-19. The device did not change — the sweep still takes the berth and Bartho still deals with a party — but what it costs each of them did.*
 
 **Why this is the right opening and not just a convenient one:** following the barge leads to Pneum, an island village of Promise-adjacent people with their own practice and their own rules. The first job the party takes *is* the campaign they said they wanted, and nobody has to announce that.
 
@@ -131,12 +162,32 @@ Unfashionable, entirely legitimate, and worth keeping in the back pocket if the 
 
 Nothing yet — this file asserts nothing in canon on its own. If the opening holds, three things want writing properly:
 
-- **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`).
+- **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`). *Done — `characters/ossian.md`.*
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
 
 **The first job is written** at `quests/the-quarantined-barge.md`, and **the Nest opening has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
 - **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. Who the living descendant is, what they're doing among continentals, and whether the technique can explain the spread are all open.
+
+---
+
+## Still open, as of 2026-09-19
+
+**The grouping is settled and the device is settled.** All three arrive by water, all three are stopped by the same lockdown, and two of them arrive together. *This replaces the note that previously stood here saying the introduction and grouping were not settled — that was true on the 18th and stopped being true on the 19th.*
+
+**What is genuinely still open:**
+
+- **What happened to Chris's father** — deliberately unwritten, and a thread rather than a gap.
+- **His name**, and Chris's own character name.
+- **How far the University's hostility goes** — the whole institution, a faction, or one office (`places/abyssal-ruins.md`, It is an antagonist now). Reserved for Chris's player.
+- **When the pursuit shows up.** It only has to be true in session one, not present.
+- **The fourth seat**, unchanged.
+
+**Two older notes retired on 2026-09-19**, recorded so nobody reinstates them:
+
+- *"Chris's route to the Nest is open"* — it is not; Kevin brought him.
+- *"Chris has no obligation pulling him"* — he has the heaviest one at the table. **Kevin has that role now**, and has it more completely: Chris was merely unattached, and Kevin is actively choosing against his own interests.
+- *"Kevin is overseeing a wine shipment when Session 1 opens"* — he is carrying nothing. The wine trade is his history with the port, not his errand in it.
 
 ---
 

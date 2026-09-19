@@ -197,6 +197,740 @@ def test_status_cards():
     check('and it is not playable', b.playable(a) == [], b.playable(a))
 
 
+# ---- the three shapes Chris's kit needed --------------------------------
+#
+# MEASURE, RIPOSTE and KILLSWITCH live in `campaign/chris.md` rather than in
+# `cards/`, so nothing here reads them off disk — the prose is repeated
+# below on purpose. A player owns that file and may rename or retune a card
+# at the table; a test that broke when they did would be a test punishing
+# the thing it exists to serve.
+
+MEASURE_E = ('If the card you played last turn was a different colour than '
+             'this one, deal +2 damage and the defender reveals their stats.')
+MEASURE_D = ('If the card you played last turn was a different colour than '
+             'this one, the attacker reveals their stats.')
+RIPOSTE_D = 'Gain Deadly. If you won this exchange, gain Deadly again.'
+KILLSWITCH = ('Ongoing — choose one: your attacks deal +3 damage, or gain '
+              'Armour 3. Playing the same colour 2 attacks in a row '
+              'ends it.')
+
+
+def blue():
+    return cardlib.Card(name='MEASURE', color='BLUE', stat='MIND', die='d6',
+                        effect=MEASURE_E, defense_effect=MEASURE_D,
+                        range='Both')
+
+
+def test_measure_reads_the_last_colour():
+    print('\nMEASURE pays for a colour change and nothing else')
+    card = blue()
+
+    a, b = duo()
+    a.last_color = 'RED'
+    check('a different colour last turn arms the bonus',
+          _bonus(MEASURE_E, a, b, card) == 2)
+
+    a.last_color = 'BLUE'
+    check('the same colour pays nothing',
+          _bonus(MEASURE_E, a, b, card) == 0)
+
+    a.last_color = None
+    check('and a turn that played no card pays nothing',
+          _bonus(MEASURE_E, a, b, card) == 0)
+
+    # The defence half asks the same question of the same person: the
+    # defender's own last turn, not the attacker's.
+    a.last_color = 'GREEN'
+    b.last_color = 'BLUE'
+    ops = fx.compile_half(MEASURE_D)
+    assert ops is not None
+    seen = []
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=card,
+                     outcome='defender wins', rng=random.Random(0),
+                     log=lambda line: seen.append(line))
+    ctx.wheel = None
+    for op in ops:
+        op.apply(ctx)
+    check('the defence half reads the defender\'s own last colour',
+          any('Body' in line for line in seen), seen)
+
+
+def _bonus(text, actor, opponent, card):
+    """What this half writes into the damage bonus before the roll."""
+    ops = fx.compile_half(text)
+    assert ops is not None, text
+    ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent], card=card,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.phase = 'pre'
+    for op in ops:
+        op.run_phase(ctx, 'pre')
+    return ctx.dmg_bonus
+
+
+def test_last_colour_rolls_forward_on_your_own_turn():
+    print('\nThe colour you played last turn is your own turn\'s')
+    import engine
+    import play
+    pool = cardlib.by_name(cardlib.core_pool())
+    red = pool['STRIKE']
+    a, b = duo()
+    a.hp = b.hp = 400
+    passer = _Passer()
+
+    engine.resolve_attack(a, b, red, None, rng=random.Random(0), log=QUIET)
+    check('attacking records the colour, but not as last turn yet',
+          a.color_this_turn == 'RED' and a.last_color is None)
+
+    play.take_turn(a, passer, [b], [], None, QUIET, random.Random(0))
+    check('the top of the next turn rolls it forward',
+          a.last_color == 'RED' and a.color_this_turn is None,
+          (a.last_color, a.color_this_turn))
+
+    # A defence is played on someone else's turn, so it is not "the card you
+    # played last turn". Only the attacker's card is recorded.
+    engine.resolve_attack(b, a, red, red, rng=random.Random(0), log=QUIET)
+    check('defending does not overwrite it',
+          a.color_this_turn is None and a.last_color == 'RED',
+          (a.color_this_turn, a.last_color))
+
+    play.take_turn(a, passer, [b], [], None, QUIET, random.Random(0))
+    check('and a turn that plays nothing clears it', a.last_color is None,
+          a.last_color)
+
+
+class _Passer:
+    """An agent that does nothing with its turn, so a turn's bookkeeping can
+    be checked without an exchange in the way."""
+
+    def choose_action(self, who, foes, allies):
+        return ('pass',)
+
+    def choose_target(self, who, pool, prompt):
+        return pool[0]
+
+
+def test_riposte_arms_twice_only_on_a_win():
+    print('\nRIPOSTE banks one Deadly on a tie and two on a block')
+    a, b = duo()
+
+    a.deadly = 0
+    ops = fx.compile_half(RIPOSTE_D)
+    assert ops is not None
+    _defend(ops, a, b, 'defender wins')
+    check('winning the exchange arms it twice', a.deadly == 2, a.deadly)
+
+    a.deadly = 0
+    _defend(ops, a, b, 'tie')
+    check('a tie still arms it once', a.deadly == 1, a.deadly)
+
+    # The same words on an attack half ask about the attacker instead —
+    # the gate is relative to whoever is speaking, which is what separates
+    # it from "on a clean win".
+    a.deadly = 0
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.acting = a
+    for op in ops:
+        op.apply(ctx)
+    check('and on an attack half it reads the attacker\'s result',
+          a.deadly == 2, a.deadly)
+
+    a.deadly = 0
+    ctx = fx.Context(a, b, allies=[], enemies=[b], card=None,
+                     outcome='defender wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    ctx.acting = a
+    for op in ops:
+        op.apply(ctx)
+    check('and is false for an attacker who did not win',
+          a.deadly == 1, a.deadly)
+
+
+def _defend(ops, defender, attacker, outcome):
+    ctx = fx.Context(defender, attacker, allies=[], enemies=[attacker],
+                     card=None, outcome=outcome, rng=random.Random(0),
+                     log=QUIET)
+    ctx.wheel = None
+    ctx.acting = attacker          # a Defense Effect fires on their turn
+    for op in ops:
+        op.apply(ctx)
+    return ctx
+
+
+def test_killswitch_flips_rather_than_stacking():
+    print('\nKILLSWITCH holds one choice, and only takes back its own')
+    import engine
+    a, b = duo()
+
+    _stance(a, b, 'gain Armour 3')
+    check('the stance grants what was chosen', a.armour == 3, a.armour)
+
+    _stance(a, b, 'gain Armour 3')
+    check('playing it again does not stack', a.armour == 3, a.armour)
+
+    _stance(a, b, 'your attacks deal +3 damage')
+    check('switching modes takes the old one back',
+          a.armour == 0 and len(a.standing_mods) == 1,
+          (a.armour, a.standing_mods))
+
+    _stance(a, b, 'gain Armour 3')
+    check('and switching back takes the bonus down',
+          a.armour == 3 and not a.standing_mods,
+          (a.armour, a.standing_mods))
+
+    # Armour from somewhere else is not KILLSWITCH's to remove.
+    a.armour += 2
+    _stance(a, b, 'your attacks deal +3 damage')
+    check('armour from elsewhere survives the flip', a.armour == 2, a.armour)
+
+    check('the damage mode lasts the fight rather than a turn',
+          a.standing_mods and a.standing_mods[0]['uses'] is None,
+          a.standing_mods)
+
+    check('"Same choice." on the defence half is the same stance',
+          [type(o).__name__ for o in fx.compile_half(
+              'Same choice.', other=KILLSWITCH, name='KILLSWITCH')]
+          == ['Stance'])
+    check('and a half pointing at nothing narrates',
+          fx.compile_half('Same choice.') is None)
+
+    # `rules/combat.md`, Ongoing Effects: the card stays face up until the
+    # effect ends, and only then is discarded. That is what makes replaying
+    # it over itself impossible — there is no copy to draw.
+    a6, b6 = duo()
+    a6.hp = b6.hp = 400
+    ks = cardlib.by_name(cardlib.load('chris'))['KILLSWITCH']
+    a6._agent = _Picks('gain Armour 3')
+    engine.resolve_attack(a6, b6, ks, None, rng=random.Random(0), log=QUIET)
+    check('the card stays on the table rather than in the discard',
+          [c.name for c in a6.in_play] == ['KILLSWITCH'] and not a6.discard,
+          (a6.in_play, a6.discard))
+
+    # Ended the way it actually ends in play — two attacks of one colour.
+    # Playing KILLSWITCH over itself is not a case the table can reach,
+    # because while the effect runs the card is on the table and there is
+    # no second copy in any deck to draw.
+    blue2 = cardlib.by_name(cardlib.core_pool())['CALCULATE']
+    engine.resolve_attack(a6, b6, blue2, None, rng=random.Random(0), log=QUIET)
+    engine.resolve_attack(a6, b6, blue2, None, rng=random.Random(0), log=QUIET)
+    check('and goes to the discard when the effect ends',
+          not a6.in_play and 'KILLSWITCH' in [c.name for c in a6.discard]
+          and a6.armour == 0,
+          (a6.in_play, a6.discard, a6.armour))
+
+
+def _stance(actor, opponent, pick):
+    ops = fx.compile_half(KILLSWITCH, name='KILLSWITCH')
+    assert ops is not None
+    ctx = fx.Context(actor, opponent, allies=[], enemies=[opponent], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET,
+                     agent=_Picks(pick))
+    ctx.wheel = None
+    for op in ops:
+        op.apply(ctx)
+    return ctx
+
+
+class _Picks:
+    def __init__(self, label):
+        self.label = label
+
+    def choose_option(self, who, options, prompt):
+        return self.label
+
+    def choose_target(self, who, pool, prompt):
+        return pool[0]
+
+
+
+def test_killswitch_ends_on_a_repeated_colour():
+    print('\nKILLSWITCH ends on the same colour two attacks running')
+    import engine
+    import play
+    pool = cardlib.by_name(cardlib.core_pool())
+    green, blue = pool['SUPPORT'], pool['CALCULATE']
+    check('the fixture colours are what this test thinks they are',
+          green.color == 'GREEN' and blue.color == 'BLUE')
+
+    def hit(a, b, card):
+        engine.resolve_attack(a, b, card, None, rng=random.Random(0), log=QUIET)
+
+    a, b = duo()
+    a.hp = b.hp = 400
+    _stance(a, b, 'gain Armour 3')
+    hit(a, b, green)
+    hit(a, b, blue)
+    check('a different colour from the last attack does not end it',
+          a.armour == 3, a.armour)
+    hit(a, b, blue)
+    check('the same colour as the last attack does', a.armour == 0, a.armour)
+
+    # Two attacks inside one turn are two attacks in a row. This is the
+    # 2026-09-18 rewording: the earlier "two consecutive turns" deliberately
+    # did not count them, and this deliberately does.
+    a2, b2 = duo()
+    a2.hp = b2.hp = 400
+    _stance(a2, b2, 'gain Armour 3')
+    hit(a2, b2, blue)
+    hit(a2, b2, blue)
+    check('two attacks in the same turn are two attacks in a row',
+          a2.armour == 0, a2.armour)
+
+    # A turn spent not attacking is not an attack, so it cannot launder a
+    # repeat — the last attack is still the last attack.
+    a3, b3 = duo()
+    a3.hp = b3.hp = 400
+    _stance(a3, b3, 'gain Armour 3')
+    hit(a3, b3, blue)
+    play.take_turn(a3, _Passer(), [b3], [], None, QUIET, random.Random(0))
+    hit(a3, b3, blue)
+    check('a turn spent not attacking does not break the run',
+          a3.armour == 0, a3.armour)
+
+    # A block is not an attack.
+    a4, b4 = duo()
+    a4.hp = b4.hp = 400
+    _stance(a4, b4, 'gain Armour 3')
+    hit(a4, b4, blue)
+    engine.resolve_attack(b4, a4, blue, blue, rng=random.Random(0), log=QUIET)
+    check('defending with the same colour does not end it',
+          a4.armour == 3, a4.armour)
+    check('and the block did not become his last attack either',
+          a4.last_attack_color == 'BLUE', a4.last_attack_color)
+
+    # A stance without the clause is untouched by the same repeat.
+    a5, b5 = duo()
+    a5.hp = b5.hp = 400
+    plain = ('Ongoing — choose one: your attacks deal +3 damage, or gain '
+             'Armour 3.')
+    ops = fx.compile_half(plain, name='PLAIN')
+    assert ops is not None and not ops[0].ends_on_repeat
+    ctx = fx.Context(a5, b5, allies=[], enemies=[b5], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET,
+                     agent=_Picks('gain Armour 3'))
+    ctx.wheel = None
+    ops[0].apply(ctx)
+    hit(a5, b5, blue)
+    hit(a5, b5, blue)
+    check('a stance without the clause survives a repeat',
+          a5.armour == 3, a5.armour)
+
+
+def test_hold_the_line_mirrors_the_colour_it_faces():
+    print('\nHOLD THE LINE ties everything, and only converts on defence')
+    import engine
+    every = cardlib.by_name(cardlib.load())
+    core = cardlib.by_name(cardlib.core_pool())
+    htl = every['HOLD THE LINE']
+
+    blocked = []
+    for name in ('STRIKE', 'CALCULATE', 'SUPPORT'):
+        a, b = duo()
+        a.hp = b.hp = 400
+        blocked.append(engine.resolve_attack(a, b, core[name], htl,
+                                             rng=random.Random(0), log=QUIET))
+    check('it blocks a real colour of any kind',
+          all(o == engine.Outcome.DEFENDER for o in blocked), blocked)
+
+    a, b = duo()
+    a.hp = b.hp = 400
+    out = engine.resolve_attack(a, b, htl, core['STRIKE'],
+                                rng=random.Random(0), log=QUIET)
+    check('and deals nothing as an attack',
+          out == engine.Outcome.TIE and b.hp == 400, (out, b.hp))
+
+    # Without the Special Rule being read it would resolve as plain
+    # COLORLESS, which auto-loses to any real colour — the opposite of the
+    # card. This is the assertion that catches that regression.
+    check('the mirroring Special Rule is actually read',
+          fx.traits(htl, 'defense').mirrors_color
+          and fx.traits(htl, 'attack').mirrors_color)
+
+
+def test_a_duration_with_nothing_to_hold_narrates():
+    print('\nA sentence that reaches back and finds nothing narrates')
+    check('"Lasts until the end of combat." alone does not compile',
+          fx.compile_half('Lasts until the end of combat.') is None)
+    check('nor does "Ongoing —" with nothing after it',
+          fx.compile_half('Ongoing —', name='X') is None)
+    check('nor an Ongoing whose body it cannot set a duration on',
+          fx.compile_half('Ongoing — gain Evade.', name='X') is None)
+    # Evade is a charge that gets spent, so "until the end of combat" would
+    # be changing the status rather than describing it. Armour is not.
+    check('a duration on a status that is spent refuses',
+          fx.compile_half('Gain Evade. Lasts until the end of combat.') is None)
+    check('and on Armour, which already lasts the fight, it reads',
+          fx.compile_half('Gain Armour 2. Lasts until the end of combat.')
+          is not None)
+
+
+
+def test_passives_are_a_zone_not_a_pile():
+    print('\nA Passive is played from its own zone and never joins a pile')
+    import engine
+    import play
+    passives = cardlib.load_passives()
+    pool = cardlib.by_name(cardlib.core_pool())
+
+    a, b = duo()
+    a.hp = b.hp = 400
+    a.hand = [pool['CALCULATE']]
+    a.passives = [passives['MIMETIC BLADE']]
+
+    offered = a.playable(b)
+    check('a Passive is offered alongside the hand',
+          'MIMETIC BLADE' in [c.name for c in offered], [c.name for c in offered])
+    check('and is offered as a defence too, ruled 2026-09-19',
+          'MIMETIC BLADE' in [c.name for c in a.playable(b)])
+    check('the hand alone is still askable',
+          'MIMETIC BLADE' not in
+          [c.name for c in a.playable(b, passives=False)])
+
+    blade = passives['MIMETIC BLADE']
+    engine.resolve_attack(a, b, blade, None, rng=random.Random(0), log=QUIET)
+    check('playing it leaves the hand alone',
+          [c.name for c in a.hand] == ['CALCULATE'], a.hand)
+    check('and it does not go to the discard',
+          not a.discard and not a.in_play and not a.exiled,
+          (a.discard, a.in_play, a.exiled))
+    check('it is still available next turn',
+          'MIMETIC BLADE' in [c.name for c in a.playable(b)])
+
+    # `rules/invariants.md`: the written cards are conserved. A Passive is
+    # not one of them and must not start counting as one.
+    held = len(a.deck + a.hand + a.discard + a.exiled + a.in_play)
+    engine.resolve_attack(a, b, blade, None, rng=random.Random(1), log=QUIET)
+    check('and the card count does not move',
+          len(a.deck + a.hand + a.discard + a.exiled + a.in_play) == held)
+
+
+def test_split_attention_needs_more_than_one_thing():
+    print('\nThe one Applies When the engine can actually check')
+    import engine
+    passives = cardlib.load_passives()
+    split = passives['SPLIT ATTENTION']
+
+    a, b = duo()
+    a.set_position(BACK)
+    a.passives = [split]
+    check('against one enemy it does not apply',
+          not a.passive_applies(split, b))
+
+    other = Combatant('Other', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    set_table([a, b, other])
+    check('against two it does',
+          a.passive_applies(split, b))
+
+    # Everything else answers yes, because the fiction is not modelled —
+    # which makes Passive use here an upper bound rather than a reading.
+    check('a fiction gate defaults to available',
+          a.passive_applies(passives['MISE EN PLACE'], b)
+          and a.passive_applies(passives['HACKLES RISE'], b))
+
+
+
+def test_the_load_is_the_card():
+    print('\nGRIND SHOT is whatever is in the grinder')
+    import engine
+    pool = cardlib.by_name(cardlib.load())
+    gs = pool['GRIND SHOT']
+
+    rounds = cardlib.load_grinder_rounds()
+    check('every written round is readable on both halves',
+          all(fx.compile_half(e) is not None for e, _ in rounds.values() if e)
+          and all(fx.compile_half(d) is not None for _, d in rounds.values() if d),
+          sorted(rounds))
+    check('and plain is blank on both', rounds['plain'] == (None, None),
+          rounds['plain'])
+
+    def shoot(load, seed=0, defending=False):
+        k = Combatant('Kevin', 4, 3, 2, deck=[], position=BACK, team='party')
+        f = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+        k.hp = f.hp = 400
+        set_table([k, f])
+        k.load = load
+        if defending:
+            engine.resolve_attack(f, k, pool['GRIND SHOT'], gs,
+                                  rng=random.Random(seed), log=QUIET)
+        else:
+            engine.resolve_attack(k, f, gs, None, rng=random.Random(seed), log=QUIET)
+        return k, f
+
+    k, f = shoot('hush petal')
+    check('a status round applies its status', f.rooted == 1, f.rooted)
+    check('and the round is gone afterwards', k.load is None, k.load)
+
+    plain = [shoot('plain', s)[1].hp for s in range(30)]
+    cinder = [shoot('cinder flake', s)[1].hp for s in range(30)]
+    check('cinder flake reaches the damage roll, not just the log',
+          all(400 - c == (400 - p) + 3 for p, c in zip(plain, cinder)),
+          list(zip(plain, cinder))[:3])
+
+    k, f = shoot('sapphire crystal', defending=True)
+    check('the defence half reads the other column',
+          f.vulnerable == 1, f.vulnerable)
+    check('and blocking burns the round too', k.load is None, k.load)
+
+    k, f = shoot('plain')
+    check('a plain round leaves nothing behind but damage',
+          not f.rooted and not f.vulnerable and k.load is None)
+
+
+def test_serve_hands_over_a_real_drink():
+    print('\nSERVE gives the drink and the drink does the work')
+    import engine
+    pool = cardlib.by_name(cardlib.load())
+    drinks = cardlib.load_drinks()
+    check('every written drink is readable',
+          all(fx.compile_half(t) is not None for t in drinks.values()),
+          sorted(drinks))
+
+    k = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    mate = Combatant('Mate', 3, 2, 4, deck=[], position=FRONT, team='party')
+    foe = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k.hp = foe.hp = 400
+    mate.hp = 5
+    k.drinks = ['Still Water']
+    set_table([k, mate, foe])
+    engine.resolve_attack(k, foe, pool['SERVE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('the ally drinks it, not the caster',
+          mate.ward == 1 and mate.hp == 8 and k.ward == 0,
+          (mate.ward, mate.hp, k.ward))
+    check('and the stock goes down', k.drinks == [], k.drinks)
+
+    # On defence there is nobody to pass it to, so he drinks it himself.
+    k2 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe2 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k2.hp = 5
+    foe2.hp = 400
+    k2.drinks = ['Still Water']
+    set_table([k2, foe2])
+    engine._run(pool['SERVE'], 'defense_effect', k2, foe2,
+                engine.Outcome.DEFENDER, 0, QUIET, random.Random(0), None)
+    check('the defence half is his own drink',
+          k2.ward == 1 and k2.hp == 8, (k2.ward, k2.hp))
+
+    k3 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe3 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    k3.hp = foe3.hp = 400
+    set_table([k3, foe3])
+    engine.resolve_attack(k3, foe3, pool['SERVE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('with no drink prepared it simply does not fire', k3.drinks == [])
+
+
+
+def test_summoned_spirits_are_objects():
+    print('\nA spirit holds HP, does not act, and takes the buff with it')
+    import engine
+    from engine import table
+    pool = cardlib.by_name(cardlib.load())
+
+    pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+    mate = Combatant('Mate', 4, 3, 2, deck=[], position=FRONT, team='party')
+    foe = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    for c in (pat, mate, foe):
+        c.hp = 400
+    set_table([pat, mate, foe])
+
+    engine.resolve_attack(pat, foe, pool["LET'S GO"], None,
+                          rng=random.Random(4), log=QUIET)
+    spirits = [c for c in table() if c.is_object]
+    check('the summon puts one on the table', len(spirits) == 1, spirits)
+    sp = spirits[0]
+    check('its HP is a d10 and is its own maximum',
+          1 <= sp.hp <= 10 and sp.hp == sp.max_hp, (sp.hp, sp.max_hp))
+    check('the totem buffs the caster and the ally, not itself',
+          len(pat.standing_mods) == 1 and len(mate.standing_mods) == 1
+          and not sp.standing_mods)
+
+    sp.take(99, source=foe, log=QUIET)
+    check('killing the totem takes the buff with it',
+          not pat.standing_mods and not mate.standing_mods)
+    check('and the spirit leaves the table',
+          not [c for c in table() if c.is_object])
+
+    # It is an Object: no hand, so it can never choose a defence, which is
+    # the "auto-hits, no RPS" reading in campaign/pat.md.
+    set_table([pat, mate, foe])
+    engine.resolve_attack(pat, foe, pool['HERE BOY'], None,
+                          rng=random.Random(1), log=QUIET)
+    sp2 = [c for c in table() if c.is_object][0]
+    check('a spirit has nothing to defend with',
+          sp2.playable(foe, passives=False) == [])
+
+    # A party is not still standing because a totem is.
+    check('an Object does not keep a side in the fight',
+          sp2.is_object and not mate.is_object)
+
+    # An Object never gets a wheel token, so an order effect aimed at one
+    # has nothing to move. Before this was guarded it raised out of the
+    # wheel mid-fight — found by running the party with Pat summoning.
+    from wheel import Wheel
+    w = Wheel([pat, mate, foe])
+    for text in ('Apply Initiative Shift -2 to the defender',
+                 'Swap places with the defender in the initiative order'):
+        ops = fx.compile_half(text)
+        assert ops is not None, text
+        ctx = fx.Context(pat, sp2, allies=[mate], enemies=[sp2], card=None,
+                         outcome='attacker wins', rng=random.Random(0),
+                         log=QUIET)
+        ctx.wheel = w
+        ctx.acting = pat
+        for op in ops:
+            op.apply(ctx)
+    check('an order effect on an Object no-ops instead of raising',
+          len(w.slots) == 3, w.slots)
+
+
+def test_lets_go_compels_the_room():
+    print("\nLET'S GO on defence: a Soul Save, per enemy")
+    import engine
+    from engine import MUST_TARGET
+    pool = cardlib.by_name(cardlib.load())
+
+    made, compelled = 0, 0
+    for seed in range(60):
+        pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+        foes = [Combatant(f'F{i}', 3, 3, s, deck=[], position=FRONT,
+                          team='foes') for i, s in enumerate((1, 4, 7))]
+        for c in [pat] + foes:
+            c.hp = 400
+        set_table([pat] + foes)
+        engine._run(pool["LET'S GO"], 'defense_effect', pat, foes[0],
+                    engine.Outcome.DEFENDER, 0, QUIET, random.Random(seed), None)
+        for f in foes:
+            made += 1
+            if f.restriction(MUST_TARGET) is not None:
+                compelled += 1
+    check('every enemy rolls its own save, and some fail',
+          made == 180 and 0 < compelled < 180, (made, compelled))
+
+    # DC is the caster's Soul + 10, so a high-Soul enemy should resist more
+    # often than a low-Soul one. Checked rather than assumed.
+    per = {}
+    for soul in (1, 7):
+        hits = 0
+        for seed in range(200):
+            pat = Combatant('Pat', 3, 2, 4, deck=[], position=FRONT, team='party')
+            f = Combatant('F', 3, 3, soul, deck=[], position=FRONT, team='foes')
+            pat.hp = f.hp = 400
+            set_table([pat, f])
+            engine._run(pool["LET'S GO"], 'defense_effect', pat, f,
+                        engine.Outcome.DEFENDER, 0, QUIET,
+                        random.Random(seed), None)
+            if f.restriction(MUST_TARGET) is not None:
+                hits += 1
+        per[soul] = hits
+    check('and Soul is what resists it', per[1] > per[7], per)
+
+
+
+def test_kit_ai_knows_what_a_block_is_for():
+    print('\nKitAI: a defence is won on colour, not on damage')
+    from agents import KitAI, SimpleAI
+    pool = cardlib.by_name(cardlib.load())
+    core = cardlib.by_name(cardlib.core_pool())
+    ai = KitAI(random.Random(0))
+
+    pat, foe = duo()
+    htl, strike = pool['HOLD THE LINE'], core['STRIKE']
+    pat.hand = [htl, strike]
+    foe.deck = [core['STRIKE']] * 6
+
+    check('it blocks with the card that cannot lose',
+          ai.choose_defense(pat, foe) is htl, ai.choose_defense(pat, foe))
+    check('and does not attack with it, because it cannot win either',
+          ai.choose_attack(pat, foe) is strike, ai.choose_attack(pat, foe))
+    check('SimpleAI blocks with the big attack card instead',
+          SimpleAI(random.Random(0)).choose_defense(pat, foe) is strike)
+
+    # A Passive blocks without leaving its zone — no hand to remove it
+    # from, and nothing to discard afterwards.
+    import engine
+    passives = cardlib.load_passives()
+    guard, hitter = duo()
+    guard.hp = hitter.hp = 400
+    guard.hand = []
+    guard.passives = [passives['MIMETIC BLADE']]
+    blade = guard.passives[0]
+    engine.resolve_attack(hitter, guard, core['STRIKE'], blade,
+                          rng=random.Random(0), log=QUIET)
+    check('blocking with a Passive costs it nothing',
+          not guard.discard and not guard.hand
+          and guard.playable(hitter) == [blade],
+          (guard.discard, guard.hand))
+
+    # A stance it is already holding is worth less than one it is not.
+    # Compared directly rather than through a choice against an unrelated
+    # card — the weights are tuned so a d10 attack often *should* beat
+    # setting a stance, and this is about the difference, not the winner.
+    kev, enemy = duo()
+    ks = pool['KILLSWITCH']
+    kev.hand = [ks]
+    unset = ai._attack_value(kev, ks, enemy)
+    kev.stances['KILLSWITCH'] = {'status': {}, 'mods': [], 'card': ks,
+                                 'ends_on_repeat': True}
+    already = ai._attack_value(kev, ks, enemy)
+    check('a stance already up is worth less than one that is not',
+          already < unset, (unset, already))
+
+    # And while it is up, repeating its colour with some *other* card
+    # costs it. Not with KILLSWITCH itself — replaying that one replaces
+    # the stance rather than ending it, and the scorer is exempt there on
+    # purpose (`campaign/chris.md`).
+    green = core['SUPPORT']
+    assert green.color == 'GREEN'
+    kev.last_attack_color = 'GREEN'
+    repeat = ai._attack_value(kev, green, enemy)
+    kev.last_attack_color = 'RED'
+    fresh = ai._attack_value(kev, green, enemy)
+    check('and a repeat that would end it is penalised',
+          repeat < fresh, (repeat, fresh))
+    kev.last_attack_color = 'GREEN'
+    check('but the stance card itself is exempt from its own penalty',
+          ai._attack_value(kev, ks, enemy) == already)
+
+
+def test_kit_ai_spends_its_free_action():
+    print('\nKitAI: one free action, and it picks between three uses')
+    from agents import KitAI
+    import play
+    ai = KitAI(random.Random(0))
+    kev, foe = duo()
+
+    kev.rounds = ['cinder flake', 'plain']
+    check('an empty grinder gets reloaded with the better round',
+          ai.choose_free_action(kev, [foe], []) == ('reload', 'cinder flake'))
+
+    kev.load = 'plain'
+    kev.hp = 4
+    kev.drinks = ['Still Water']
+    check('but being hurt comes first',
+          ai.choose_free_action(kev, [foe], [])[0] == 'drink')
+
+    # And it actually resolves.
+    kev.hp = 4
+    play.spend_free_action(kev, ('drink', 'Still Water'), QUIET)
+    check('the drink is drunk and gone',
+          kev.hp == 7 and kev.ward == 1 and kev.drinks == [],
+          (kev.hp, kev.ward, kev.drinks))
+
+    kev2, foe2 = duo()
+    kev2.oranges = 1
+    other = Combatant('Other', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    set_table([kev2, foe2, other])
+    kev2.load = 'plain'
+    foe2.hp = other.hp = 20
+    play.spend_free_action(kev2, ('orange', FRONT), QUIET)
+    check('an orange hits everyone in the position, unpreventably',
+          foe2.hp == 18 and other.hp == 18 and kev2.oranges == 0,
+          (foe2.hp, other.hp, kev2.oranges))
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -435,7 +1169,7 @@ def test_defense_effects_silenced():
     a, b = duo()
     run('Defender cannot trigger defense effects until their next turn', a, b)
     card = pool['INSTINCT']          # Defense Effect: Gain Ward.
-    returned, exiled = engine._run(card, 'defense_effect', b, a,
+    returned, exiled, _held = engine._run(card, 'defense_effect', b, a,
                                    'defender wins', 0, QUIET,
                                    random.Random(0), None)
     check('the Defense Effect does not fire', b.ward == 0, b.ward)
@@ -965,6 +1699,21 @@ if __name__ == '__main__':
     test_study_is_a_check()
     test_shared_burden_is_uncapped_but_survivable()
     test_slipstream_is_the_ring_motion()
+    test_measure_reads_the_last_colour()
+    test_last_colour_rolls_forward_on_your_own_turn()
+    test_riposte_arms_twice_only_on_a_win()
+    test_killswitch_flips_rather_than_stacking()
+    test_killswitch_ends_on_a_repeated_colour()
+    test_hold_the_line_mirrors_the_colour_it_faces()
+    test_a_duration_with_nothing_to_hold_narrates()
+    test_passives_are_a_zone_not_a_pile()
+    test_split_attention_needs_more_than_one_thing()
+    test_the_load_is_the_card()
+    test_serve_hands_over_a_real_drink()
+    test_summoned_spirits_are_objects()
+    test_lets_go_compels_the_room()
+    test_kit_ai_knows_what_a_block_is_for()
+    test_kit_ai_spends_its_free_action()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

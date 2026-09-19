@@ -34,14 +34,14 @@ def piles(c, written_only=True):
     quantity is the *written* cards. Status cards are counted separately
     and are expected to appear and vanish.
     """
-    everything = c.deck + c.hand + c.discard + c.exiled
+    everything = c.deck + c.hand + c.discard + c.exiled + c.in_play
     if written_only:
         everything = [x for x in everything if x.source != 'status']
     return len(everything)
 
 
 def status_held(c):
-    return len([x for x in c.deck + c.hand + c.discard + c.exiled
+    return len([x for x in c.deck + c.hand + c.discard + c.exiled + c.in_play
                 if x.source == 'status'])
 
 

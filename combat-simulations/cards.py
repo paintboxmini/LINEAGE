@@ -25,7 +25,8 @@ BEATS = {'BLUE': 'RED', 'RED': 'GREEN', 'GREEN': 'BLUE'}
 
 class Card:
     __slots__ = ('name', 'color', 'stat', 'attack', 'die', 'effect',
-                 'defense_effect', 'special_rule', 'range', 'flavor', 'source')
+                 'defense_effect', 'special_rule', 'range', 'flavor', 'source',
+                 'applies_when')
 
     def __init__(self, **kw):
         for s in self.__slots__:
@@ -116,6 +117,7 @@ def parse_file(path):
                 continue
 
             for label, key in (('Attack:', 'attack'), ('Special Rule:', 'special_rule'),
+                               ('Applies When:', 'applies_when'),
                                ('Effect:', 'effect'), ('Defense Effect:', 'defense_effect'),
                                ('Range:', 'range')):
                 if line.startswith(label):
@@ -149,6 +151,81 @@ def load(*filenames):
             raise FileNotFoundError(p)
         cards.extend(parse_file(p))
     return cards
+
+
+PASSIVE_FILE = os.path.join(REPO, 'campaign', 'passives.md')
+
+
+def load_passives():
+    """The written Passives, keyed by name.
+
+    `campaign/passives.md` is not under `cards/` and must not be — it is
+    not a deck, and the two parsers that glob that directory would read it
+    as one (`CLAUDE.md`, Conventions). It is read here by name instead, the
+    same way `core_pool` names its four files.
+
+    A Passive is card-shaped but is not a card in a deck: printed colour,
+    Range, die, and an **Applies When** in place of the Effect
+    (`rules/character-creation.md`, Passives and Traits). It sits face up
+    in its own zone, is never drawn and never discarded.
+    """
+    return {c.name: c for c in parse_file(PASSIVE_FILE)}
+
+
+KEVIN_FILE = os.path.join(REPO, 'campaign', 'kevin.md')
+
+
+def _md_table(text, first_header):
+    """Rows of the first markdown table whose header starts with a column
+    named `first_header`, as lists of stripped cells."""
+    rows, inside = [], False
+    for line in text.split('\n'):
+        line = line.strip()
+        if not line.startswith('|'):
+            if inside:
+                break
+            continue
+        cells = [c.strip() for c in line.strip('|').split('|')]
+        first = re.sub(r'[*_`]', '', cells[0]).strip().lower()
+        if not inside:
+            if first == first_header.lower():
+                inside = True
+            continue
+        if set(''.join(cells)) <= set('-: '):
+            continue
+        rows.append([re.sub(r'\*\*', '', c).strip() for c in cells])
+    return rows
+
+
+def load_grinder_rounds():
+    """Kevin's prepared rounds, read out of his own file.
+
+    `campaign/kevin.md`, The Ingredients, is the source of truth for what a
+    load does — the markdown is the card (`CLAUDE.md`). Read rather than
+    copied so the two cannot drift: the cells are ordinary card prose and
+    go through the same reader every Effect line does.
+
+    Returns {name: (effect, defense_effect)}. A dash means no effect.
+    """
+    with open(KEVIN_FILE, encoding='utf-8') as f:
+        rows = _md_table(f.read(), 'Load')
+    out = {}
+    for r in rows:
+        if len(r) < 3:
+            continue
+        name = r[0]
+        eff = None if r[1] in ('', '—', '-') else r[1]
+        dfn = None if r[2] in ('', '—', '-') else r[2]
+        out[name.lower()] = (eff, dfn)
+    return out
+
+
+def load_drinks():
+    """Kevin's prepared drinks, same arrangement — `campaign/kevin.md`,
+    The beverages. Returns {name: effect on the drinker}."""
+    with open(KEVIN_FILE, encoding='utf-8') as f:
+        rows = _md_table(f.read(), 'Drink')
+    return {r[0].lower(): r[1] for r in rows if len(r) >= 2}
 
 
 def core_pool():

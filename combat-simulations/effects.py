@@ -41,6 +41,13 @@ DEBUFFS = {'weak', 'blind', 'vulnerable', 'staggered', 'rooted'}
 # `rules/card-glossary.md`: what "Positive Status Effects" names.
 POSITIVE = ('evade', 'resist', 'deadly', 'protect', 'anchored', 'quick', 'immunity')
 
+# `rules/card-glossary.md`, (0) Armour and (7) Thorns: the two statuses that
+# are "not consumed", stack additively into one value, and already run to
+# the end of the fight. Everything else is a charge that gets spent, so
+# "lasts until the end of combat" would be changing it rather than
+# describing it — which is why only these two can carry that sentence.
+PERMANENT_STATUSES = {'armour', 'thorns'}
+
 STATUS_WORDS = sorted(set(list(STATUS_ATTR) + ['protect']), key=len, reverse=True)
 STATUS_RE = '|'.join(STATUS_WORDS)
 
@@ -421,9 +428,7 @@ class Shift(Op):
     def apply(self, ctx):
         wheel = getattr(ctx, 'wheel', None)
         for who in ctx.resolve(self.target, 'Initiative Shift'):
-            if wheel is None:
-                ctx.log(f'  Initiative Shift {self.amount:+} on {who.name} '
-                        f'(no wheel in this context).')
+            if not _on_wheel(ctx, who, f'Initiative Shift {self.amount:+}'):
                 continue
             note = wheel.shift(who, self.amount,
                                acting=getattr(ctx, 'acting', None))
@@ -1110,18 +1115,47 @@ GATES = [
                   else ctx.damage_dealt > 0), 'damage dealt'),
     (re.compile(r'^if target ally\'s HP is (\d+) or less,\s*', re.I),
      None, 'ally HP threshold'),
+    # MEASURE (`campaign/chris.md`). Three things have to be true and the
+    # third is the one that bites: there must *be* a card you played last
+    # turn. A turn spent moving, Staggered, or in cover played none, and a
+    # card played to defend was played on someone else's turn — see
+    # `engine.Combatant.last_color`. So the rotation has to be kept up
+    # rather than merely started.
+    (re.compile(r'^if the card you played last turn was a different '
+                r'colou?r than this one,\s*', re.I),
+     lambda ctx: (getattr(ctx.actor, 'last_color', None) is not None
+                  and ctx.card is not None
+                  and ctx.actor.last_color != ctx.card.color),
+     'the colour changed'),
 ]
 
 SEP = re.compile(r'^\s*(?:[.,;]|\s+and\b|\s+then\b)+\s*', re.I)
 
 
-def compile_half(text):
-    """Prose to ops, or None when any part of it is not understood."""
+def compile_half(text, other=None, name=None):
+    """Prose to ops, or None when any part of it is not understood.
+
+    `other` is the card's *other* half, needed only by a half that points at
+    it — KILLSWITCH's defence half is the words "Same choice." and nothing
+    else. `name` is the card's own name, which an Ongoing Effect needs
+    because the card on the table *is* the effect, so the thing has to be
+    called something. Callers that have the card pass both
+    (`engine.compiled`); callers compiling a fragment pass neither, and a
+    back-reference with nothing to point at narrates, which is the right
+    answer.
+    """
     if not text:
         return None
     s = ' '.join(text.split()).strip()
     if s.lower() in ('none.', 'none', ''):
         return None
+
+    # "Same choice." — the half is the other half. Compiled without an
+    # `other` of its own so a pair of halves that each point at the other
+    # cannot loop.
+    if re.fullmatch(r'same(?: as)?(?: the)? (?:choice|effect)\.?'
+                    r'|as (?:the )?(?:attack )?effect\.?', s, re.I):
+        return compile_half(other, name=name) if other else None
 
     # A trailing gate reads the same as a leading one (FORGET puts it last).
     trailing = re.search(
@@ -1196,6 +1230,12 @@ def compile_half(text):
             op.target = subject
         elif target in (SELF, OPPONENT, ALLY, ALL_ALLIES, ALL_ENEMIES, PARTY, ANY):
             subject = target
+
+    # Last, so the sentences that reach backwards see the ops in the shape
+    # the rest of this function left them in.
+    ops = _resolve_durations(ops, name)
+    if not ops:
+        return None
 
     if gate:
         return [Gated(gate[0], ops, gate[1])]
@@ -1573,6 +1613,26 @@ def _r_chain(m):
     return [Splash(OTHER_ENEMY, 0.5, 'up')]
 
 
+def _on_wheel(ctx, who, what):
+    """Whether this target has a token to move at all.
+
+    An Object never gets one (`campaign/pat.md`, Wild Magic Summoning:
+    spirits "never get a token on the initiative wheel"), and neither does
+    anything that has already left the fight. An order effect aimed at one
+    has nothing to act on, which is a real outcome rather than an error —
+    guarded here rather than in the wheel, which is right to treat a token
+    it does not hold as a caller mistake.
+    """
+    wheel = getattr(ctx, 'wheel', None)
+    if wheel is None:
+        ctx.log(f'  (no wheel in this context — {what} is not applied.)')
+        return False
+    if who not in wheel.slots:
+        ctx.log(f'  {who.name} is not on the wheel — {what} does nothing.')
+        return False
+    return True
+
+
 class WheelSwap(Op):
     """PRIORITY: exchange slots in the initiative order."""
 
@@ -1580,10 +1640,10 @@ class WheelSwap(Op):
         self.target = target
 
     def apply(self, ctx):
-        if ctx.wheel is None:
-            ctx.log('  (no wheel in this context — the swap is not applied.)')
-            return
         for who in ctx.resolve(self.target, 'Swap with'):
+            if not _on_wheel(ctx, who, 'the swap') \
+                    or not _on_wheel(ctx, ctx.actor, 'the swap'):
+                continue
             ctx.log('  ' + ctx.wheel.swap(ctx.actor, who,
                                           acting=getattr(ctx, 'acting', None)))
 
@@ -1595,10 +1655,10 @@ class WheelMoveAfter(Op):
         self.target = target
 
     def apply(self, ctx):
-        if ctx.wheel is None:
-            ctx.log('  (no wheel in this context — the move is not applied.)')
-            return
         for who in ctx.resolve(self.target, 'Follow'):
+            if not _on_wheel(ctx, who, 'the move') \
+                    or not _on_wheel(ctx, ctx.actor, 'the move'):
+                continue
             ctx.log('  ' + ctx.wheel.move_after(
                 ctx.actor, who, acting=getattr(ctx, 'acting', None)))
 
@@ -1710,6 +1770,12 @@ class Adjacent(Op):
     def apply(self, ctx):
         mate = (ctx.resolve(ALLY, 'Align with') or [None])[0]
         if mate is None or ctx.wheel is None:
+            return
+        # An ally can be an Object — a summoned spirit is on the table and
+        # resolves as an ally, but never has a wheel token, so it cannot be
+        # adjacent to anything in the order.
+        if not _on_wheel(ctx, mate, self.label) \
+                or not _on_wheel(ctx, ctx.actor, self.label):
             return
         if ctx.wheel.adjacent(ctx.actor, mate):
             ctx.log(f'  {ctx.actor.name} and {mate.name} act side by side.')
@@ -1912,6 +1978,578 @@ class AttuneMod(Op):
                 f'+{self.amount} damage with {card.color} for the fight.')
 
 
+# ---- stances, durations, and the two sentences that reach backwards ----
+#
+# Most card prose is things that happen. Three shapes are not: a sentence
+# that sets how long the clause before it lasts, a sentence that says
+# replaying the card replaces rather than stacks, and a half that is just a
+# pointer at the other half. All three are resolved at compile time and
+# none of them survives into the ops the engine runs.
+
+
+class UntilEndOfCombat(Op):
+    """Compile-time marker for "Lasts until the end of combat."
+
+    Never runs. `_resolve_durations` consumes it and sets the duration on
+    whatever preceded it — CLIMB and KILLSWITCH both say "your attacks deal
+    +2 damage" and differ only in this sentence, so it has to be able to
+    reach back and change what it follows.
+    """
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('a duration marker reached the engine')
+
+
+class Ongoing(Op):
+    """Compile-time marker for a card that opens "Ongoing — ...".
+
+    `rules/combat.md`, Ongoing Effects: the card "remains face up in front
+    of the player after use. The effect persists until its stated condition
+    is met, at which point the card is discarded." So the word does two
+    jobs at once — it sets the duration (the fight, unless the card names an
+    earlier condition) and it says where the card physically is, which is
+    not the discard pile and therefore not the next reshuffle either
+    (`rules/card-glossary.md`, status-effect tokens).
+
+    Consumed by `_resolve_durations`, which wraps everything else in a
+    Stance.
+    """
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('an ongoing marker reached the engine')
+
+
+class EndsOnColourRepeat(Op):
+    """Compile-time marker for "Playing the same colour 2 attacks in a row
+    ends it." Consumed by `_resolve_durations`, which sets the flag on the
+    Stance in the same half."""
+
+    def apply(self, ctx):          # pragma: no cover - unreachable
+        raise AssertionError('a stance-ending marker reached the engine')
+
+
+class Stance(Op):
+    """A choice that stays up for the fight and replaces itself.
+
+    KILLSWITCH (`campaign/chris.md`): "Lasts until the end of combat.
+    Playing KILLSWITCH again replaces your current choice rather than adding
+    to it. Playing the same colour 2 attacks in a row ends it."
+    A killswitch flips; it does not accumulate. Without the second
+    sentence the card is a stacking buff, so the engine has to be able to
+    take back what the card granted last time — and only that much. Armour
+    that arrived from somewhere else is not KILLSWITCH's to remove.
+
+    So rather than assuming what the branches do, this watches: it records
+    what changed while the chosen branch ran, and undoes exactly that the
+    next time the same card is played. A branch that granted nothing takes
+    nothing back.
+    """
+
+    def __init__(self, key, ops, ends_on_repeat=False):
+        self.key, self.ops = key, ops
+        self.ends_on_repeat = ends_on_repeat
+
+    @property
+    def phase(self):
+        return 'pre' if any(o.phase == 'pre' for o in self.ops) else 'post'
+
+    def run_phase(self, ctx, phase):
+        mine = [o for o in self.ops if o.phase == phase]
+        if not mine:
+            return
+        who = ctx.actor
+        # A half whose ops straddle both phases would otherwise revoke twice
+        # and record the second half of itself as a fresh stance.
+        seen = getattr(ctx, 'stances_revoked', None)
+        if seen is None:
+            seen = ctx.stances_revoked = set()
+        if self.key not in seen:
+            seen.add(self.key)
+            self._revoke(who, who.stances.pop(self.key, None), ctx.log)
+
+        attrs = sorted(set(STATUS_ATTR.values()))
+        before_status = {a: getattr(who, a, 0) for a in attrs}
+        before_mods = list(who.standing_mods)
+
+        for op in mine:
+            op.run_phase(ctx, phase)
+
+        held = who.stances.setdefault(
+            self.key, {'status': {}, 'mods': [], 'card': ctx.card,
+                       'ends_on_repeat': self.ends_on_repeat})
+        # The card itself is the effect: it sits face up until this ends
+        # (`rules/combat.md`, Ongoing Effects), so it must not be discarded
+        # out of the exchange that played it.
+        ctx.stays_in_play = True
+        for a in attrs:
+            gained = getattr(who, a, 0) - before_status[a]
+            if gained > 0:
+                held['status'][a] = held['status'].get(a, 0) + gained
+        for mod in who.standing_mods:
+            if not any(mod is seen_mod for seen_mod in before_mods):
+                held['mods'].append(mod)
+
+    def apply(self, ctx):
+        self.run_phase(ctx, 'post')
+
+    def _revoke(self, who, held, log):
+        _take_back(who, self.key, held, log, 'replaces what it set before')
+
+
+def _take_back(who, key, held, log, why):
+    """Undo exactly what a stance granted, and nothing else, and send the
+    card that was holding it to the discard.
+
+    Armour that arrived from another card is not this one's to remove, so
+    what comes off is the recorded amount rather than the current total.
+    """
+    if not held:
+        return
+    card = held.get('card')
+    if card is not None:
+        for live in list(getattr(who, 'in_play', [])):
+            if live is card:
+                who.in_play.remove(live)
+                who.discard.append(live)
+                break
+    gone = []
+    for attr, n in held.get('status', {}).items():
+        current = getattr(who, attr, 0)
+        if current > 0:
+            setattr(who, attr, max(0, current - n))
+            gone.append(f'{attr.title()} {min(n, current)}')
+    for mod in held.get('mods', []):
+        for live in list(who.standing_mods):
+            if live is mod:
+                who.standing_mods.remove(live)
+                gone.append(mod.get('text', 'a standing bonus'))
+    if gone:
+        log(f'  {key} {why} — {", ".join(gone)} ends.')
+
+
+def end_stances_on_repeat(who, color, log):
+    """KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
+    Called by `engine` when an attack repeats the colour of the one before
+    it, for the stances that carry the clause — a stance without it is
+    untouched.
+    """
+    for key, held in list(who.stances.items()):
+        if not held.get('ends_on_repeat'):
+            continue
+        who.stances.pop(key, None)
+        _take_back(who, key, held, log,
+                   f'ends on two {color} attacks running')
+
+
+def _extend_to_combat(op):
+    """Set this op's duration to the end of the fight, or refuse.
+
+    Refusing is the point. An op whose duration this does not know how to
+    set makes the whole half narrate, which is the rule everywhere else in
+    this module — a stance that silently lasts one turn is a wrong fight
+    reported as a right one.
+    """
+    if isinstance(op, StandingMod):
+        op.uses = None
+        op.text = re.sub(r" on this turn's attack$", ' for the fight', op.text)
+        return True
+    if isinstance(op, Grant):
+        # Armour and Thorns already run to the end of the fight, so the
+        # sentence restates the status rather than changing it.
+        return op.status in PERMANENT_STATUSES
+    if isinstance(op, Choose):
+        return all(all(_extend_to_combat(o) for o in b) for b in op.branches)
+    if isinstance(op, Gated):
+        return all(_extend_to_combat(o) for o in op.ops)
+    return False
+
+
+def _resolve_durations(ops, name=None):
+    """Fold the sentences that are terms rather than events into the ops
+    they modify.
+
+    "Ongoing —" says the card sits on the table and runs for the fight.
+    "Lasts until the end of combat." says the duration on its own.
+    "Playing the same colour 2 attacks in a row ends it." says when
+    the ongoing effect stops.
+
+    Returns None — narrate the whole half — when one of them has nothing it
+    can apply to, rather than dropping it and running the rest.
+    """
+    out = []
+    ongoing = False
+    ends_on_repeat = False
+    for op in ops:
+        if isinstance(op, Ongoing):
+            ongoing = True
+            continue
+        if isinstance(op, EndsOnColourRepeat):
+            ends_on_repeat = True
+            continue
+        if isinstance(op, UntilEndOfCombat):
+            if not out or not all(_extend_to_combat(o) for o in out):
+                return None
+            continue
+        out.append(op)
+
+    if ongoing:
+        # An Ongoing Effect runs to the end of the fight unless the card
+        # names an earlier condition, so the duration comes with the word.
+        if not out or not all(_extend_to_combat(o) for o in out):
+            return None
+        return [Stance(name or 'this card', out, ends_on_repeat)]
+    if ends_on_repeat:
+        # "ends it" — there has to be an "it".
+        return None
+    return out
+
+
+@rule(r'^lasts until the end of combat')
+def _r_until_end_of_combat(m):
+    return [UntilEndOfCombat()]
+
+
+@rule(r'^ongoing\s*[\u2014-]+\s*')
+def _r_ongoing(m):
+    return [Ongoing()]
+
+
+@rule(r'^playing the same colou?r \d+ attacks in a row ends it')
+def _r_ends_on_repeat(m):
+    return [EndsOnColourRepeat()]
+
+
+@menu(r'^choose one\s*(?:[\u2014-]+|:)\s*([^.]+?)\s*(?=\.|$)')
+def _r_choose_one(m):
+    """The general modal shape — a menu followed by more sentences, rather
+    than a menu that is the whole half. KILLSWITCH is the first of these."""
+    branches, labels = _branches(m.group(1))
+    return [Choose(branches, labels)] if branches else None
+
+
+# ---- clauses these three cards needed ---------------------------------
+
+
+@rule(r'^(?:the\s+)?(?:defender|attacker|target)\s+reveals their stats')
+def _r_reveals_stats(m):
+    """MEASURE. "The defender" on an attack half and "the attacker" on a
+    defence half are the same person — the other side of the exchange — so
+    both read as OPPONENT, which is this module's convention throughout
+    (see `Context`)."""
+    return [RevealStats(OPPONENT)]
+
+
+@rule(r'^deal \+(\d+) damage(?!\s+this attack)')
+def _r_flat_bonus_bare(m):
+    """"Deal +2 damage" with no rider, which is how most of the corpus
+    writes it. The longer "deal +N damage this attack" is registered above
+    and is tried first; the lookahead here says so out loud."""
+    return [DamageBonus(int(m.group(1)))]
+
+
+@rule(r'^if you won this exchange,\s*(.+?)\.?$')
+def _r_won_exchange(m):
+    """RIPOSTE. Not the same question as "on a clean win" — that gate is
+    written from the attacker's side and reads the outcome literally. This
+    one is asked by whichever half is speaking, and the defence half of a
+    riposte wins the exchange by *not* being hit.
+
+    "again" in "gain Deadly again" says this is a second application of the
+    status, which is what running the op a second time already is.
+    """
+    body = re.sub(r'\s+again$', '', m.group(1).strip().rstrip('.'))
+    inner = compile_half(body)
+    if inner is None:
+        return None
+    return [Gated(_won_the_exchange, inner, 'won the exchange')]
+
+
+def _won_the_exchange(ctx):
+    """Did the half's own side win? `ctx.acting` is whose turn it is, which
+    is the attacker — so the actor is the attacker exactly when those two
+    are the same combatant (`engine._begin`)."""
+    acting = getattr(ctx, 'acting', None)
+    attacking = acting is None or ctx.actor is acting
+    return ctx.outcome == ('attacker wins' if attacking else 'defender wins')
+
+
+# ---- carried gear that fills in a card --------------------------------
+#
+# Two of Kevin's cards print no effect of their own: GRIND SHOT's lines are
+# whatever round is in the grinder, and SERVE hands over a prepared drink
+# and lets the drink do the work. Both read their tables out of
+# `campaign/kevin.md` rather than repeating them here, so the markdown
+# stays the source of truth and the cells go through this same reader.
+
+
+def _rounds():
+    import cards as cardlib
+    global _ROUNDS
+    if _ROUNDS is None:
+        _ROUNDS = cardlib.load_grinder_rounds()
+    return _ROUNDS
+
+
+def _drinks():
+    import cards as cardlib
+    global _DRINKS
+    if _DRINKS is None:
+        _DRINKS = cardlib.load_drinks()
+    return _DRINKS
+
+
+_ROUNDS = None
+_DRINKS = None
+
+
+class AsLoadedRound(Op):
+    """GRIND SHOT: "As the loaded round."
+
+    The card has no text of its own. Which half is speaking decides which
+    column of the load table is read — `ctx.acting` is whose turn it is, so
+    the actor is the attacker exactly when those two are the same
+    combatant, the same test the riposte gate uses.
+
+    Runs in whichever phase the load's own ops belong to, because a load
+    can be a damage modifier (cinder flake) or a status (everything else),
+    and a damage modifier has to reach the roll.
+    """
+
+    #: Declared 'pre' so the "Effect:" header prints before the damage line
+    #: when a damage-modifying round is in. run_phase does the real work.
+    phase = 'pre'
+
+    def _ops(self, ctx):
+        load = (getattr(ctx.actor, 'load', None) or '').lower()
+        if not load:
+            return None, 'nothing loaded'
+        row = _rounds().get(load)
+        if row is None:
+            return None, f'{load} is not a round this reader knows'
+        acting = getattr(ctx, 'acting', None)
+        attacking = acting is None or ctx.actor is acting
+        text = row[0] if attacking else row[1]
+        if not text:
+            return [], f'{load} — a plain round does nothing'
+        ops = compile_half(text)
+        if ops is None:
+            return None, f'{load}: {text}'
+        return ops, load
+
+    def run_phase(self, ctx, phase):
+        ops, why = self._ops(ctx)
+        if ops is None:
+            if phase == 'post':
+                ctx.log(f'  ({why}.)')
+            return
+        if not ops:
+            if phase == 'post':
+                ctx.log(f'  ({why}.)')
+            return
+        if phase == 'post':
+            ctx.log(f'  loaded: {why}.')
+        for op in ops:
+            op.run_phase(ctx, phase)
+
+    def apply(self, ctx):
+        self.run_phase(ctx, 'post')
+
+
+class ServeDrink(Op):
+    """SERVE. A prepared drink leaves Kevin's stock and the drinker gets
+    whatever it says, resolved as theirs rather than his — the drink text is
+    written from the drinker's side ("Gain Quick", "heal 3 HP")."""
+
+    def __init__(self, target):
+        self.target = target
+
+    def apply(self, ctx):
+        stock = getattr(ctx.actor, 'drinks', None)
+        if not stock:
+            ctx.log(f'  {ctx.actor.name} has no prepared drink.')
+            return
+        name = stock[0]
+        if ctx.agent is not None and hasattr(ctx.agent, 'choose_option') \
+                and len(stock) > 1:
+            pick = ctx.agent.choose_option(ctx.actor, list(stock), 'Which drink')
+            name = pick if pick in stock else stock[0]
+        text = _drinks().get(name.lower())
+        ops = compile_half(text) if text else None
+        for who in ctx.resolve(self.target, 'Hand the drink to'):
+            stock.remove(name)
+            if ops is None:
+                ctx.log(f'  {who.name} drinks {name}: {text or "?"}')
+                return
+            ctx.log(f'  {who.name} drinks {name}.')
+            sub = Context(who, ctx.opponent, [ctx.actor], ctx.enemies,
+                          ctx.card, ctx.outcome, rng=ctx.rng, log=ctx.log,
+                          agent=getattr(who, '_agent', None))
+            sub.wheel = getattr(ctx, 'wheel', None)
+            sub.acting = getattr(ctx, 'acting', None)
+            for op in ops:
+                op.apply(sub)
+            return
+
+
+@rule(r'^as the loaded round')
+def _r_as_loaded(m):
+    return [AsLoadedRound()]
+
+
+@rule(r'^give a prepared drink to an ally in your position\.?\s*'
+      r'they consume it immediately')
+def _r_serve(m):
+    return [ServeDrink(ALLY)]
+
+
+@rule(r'^consume a prepared drink yourself')
+def _r_drink_self(m):
+    return [ServeDrink(SELF)]
+
+
+# ---- summoned spirits --------------------------------------------------
+#
+# `campaign/pat.md`, Wild Magic Summoning: "Whenever you summon a spirit,
+# roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it
+# dissipates." Spirits are Objects, not combatants: they do not act, take no
+# turn, and never get a token on the wheel. They hold HP at the summoner's
+# position and can be attacked directly.
+
+
+class Summon(Op):
+    """Put a spirit on the field at the summoner's position.
+
+    The d10 comes from the Trait rather than from either card, so both
+    triggers roll the same way. `rider` is an Ongoing Effect the spirit
+    carries — installed when it arrives and taken back when it dies, which
+    is what "kill the totem, lose the buff" means.
+    """
+
+    def __init__(self, rider=None, label=''):
+        self.rider, self.label = rider, label
+
+    def apply(self, ctx):
+        from engine import Combatant, table, set_table, d
+        rng = ctx.rng or ctx.actor.rng
+        hp = d(10, rng)
+
+        n = 1 + sum(1 for c in table()
+                    if c.is_object and c.summoner is ctx.actor)
+        # Wild Magic Summoning sets the HP outright. max_hp is derived and
+        # must stay derived (`rules/invariants.md`, the named caching bug),
+        # so the roll goes into Soul — 4x0 + 0 + hp is exactly hp, and a
+        # spirit never rolls a stat for anything, having no cards and no
+        # turn.
+        spirit = Combatant(f"{ctx.actor.name}'s spirit {n}", 0, 0, hp,
+                           deck=[], position=ctx.actor.position,
+                           team=ctx.actor.team)
+        spirit.is_object = True
+        spirit.summoner = ctx.actor
+        spirit._agent = getattr(ctx.actor, '_agent', None)
+        set_table(table() + [spirit])
+        ctx.log(f'  {ctx.actor.name} summons a spirit — {hp} HP, '
+                f'{spirit.position}.')
+
+        if self.rider is not None:
+            self.rider(ctx, spirit)
+        elif self.label:
+            ctx.log(f'  it carries: {self.label}')
+
+
+def _totem_damage_buff(ctx, spirit):
+    """LET'S GO: "you and your allies deal +2 damage this combat. This buff
+    is tied to the spirit's survival — kill the totem, lose the buff."
+
+    A standing modifier on every living ally, recorded on the spirit so it
+    can be taken back the moment the spirit drops.
+    """
+    held = []
+    for who in [ctx.actor] + list(ctx.allies):
+        if who.is_object:
+            continue
+        mod = {'bonus': 2, 'mult': 1, 'color': None, 'target': None,
+               'uses': None, 'text': "+2 damage while the totem stands"}
+        who.standing_mods.append(mod)
+        held.append((who, mod))
+    spirit.totem_buff = held
+    ctx.log('  the totem stands: +2 damage to the party while it lives.')
+
+
+class WinsNextTie(Op):
+    """HERE BOY: "The summoning grants you the Ongoing Effect: the next time
+    you tie in RPS, you win instead."
+
+    Ruled 2026-09-19 to be the summoner rather than the spirit, which could
+    never have used it — an Object does not act and cannot defend, so it
+    never reaches a reveal. Held until spent, on either side of an exchange
+    (`campaign/pat-cards.md`).
+    """
+
+    def apply(self, ctx):
+        ctx.actor.wins_next_tie += 1
+        ctx.log(f'  {ctx.actor.name} will win their next tie.')
+
+
+@menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
+      r'the summoning grants you the ongoing effect: the next time you tie '
+      r'in rps, you win instead')
+def _r_here_boy(m):
+    return [Summon(), WinsNextTie()]
+
+
+@menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'
+      r'it carries the ongoing effect: you and your allies deal \+(\d+) '
+      r'damage this combat\.?.*')
+def _r_lets_go(m):
+    return [Summon(rider=_totem_damage_buff)]
+
+
+
+class CompelAllEnemies(Op):
+    """LET'S GO's defence half: every enemy makes a Soul Save against the
+    caster's Soul + a margin, and whoever fails has to answer him next turn.
+
+    The Save is an ordinary check from the *enemy's* side
+    (`rules/resolution.md`: 2d10 + stat, meet or beat), so it rolls once per
+    enemy rather than once for the room. The compulsion reuses MUST_TARGET,
+    which MOCKERY and INTERCEPT already run on.
+
+    *The card's third sentence — what a failing enemy does when it cannot
+    reach him — is the Rushdown fallback, and the engine's forced-target
+    machinery already sends them at him by the shortest legal route, so
+    there is nothing separate to run.*
+    """
+
+    def __init__(self, margin):
+        self.margin = margin
+
+    def apply(self, ctx):
+        from engine import MUST_TARGET, Pending
+        rng = ctx.rng or ctx.actor.rng
+        dc = ctx.actor.soul + self.margin
+        for foe in list(ctx.enemies):
+            if foe.is_object or not foe.alive():
+                continue
+            roll = rng.randint(1, 10) + rng.randint(1, 10) + foe.soul
+            if roll >= dc:
+                ctx.log(f'  {foe.name} rolls {roll} against DC {dc} (Soul) '
+                        f'— holds.')
+                continue
+            ctx.log(f'  {foe.name} rolls {roll} against DC {dc} (Soul) '
+                    f'— must answer {ctx.actor.name}.')
+            foe.add_pending(Pending(
+                'restriction', owner=ctx.actor, expires='owner_next_turn',
+                kind=MUST_TARGET, uses=1, data={'who': ctx.actor},
+                text=f'must answer {ctx.actor.name} next turn'),
+                log=ctx.log)
+
+
+@menu(r'^every enemy makes a soul save, dc = your soul stat \+ (\d+)\.\s*'
+      r'anyone who fails must attack you on their next turn\.?.*')
+def _r_lets_go_defence(m):
+    return [CompelAllEnemies(int(m.group(1)))]
+
+
 # ---- card traits -------------------------------------------------------
 #
 # Some text is not an effect that happens — it is a property of the card
@@ -1930,7 +2568,7 @@ class Traits:
                  'mutes_opponent_effect', 'mutes_opponent_defense_effect',
                  'mutes_defense_effect_on_tie', 'extra_attack_on_clean_win',
                  'extra_action_on_collapse', 'returns_unless_loss',
-                 'always_exiled')
+                 'always_exiled', 'mirrors_color')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -1963,6 +2601,14 @@ _TRAIT_PATTERNS = (
     ('returns_unless_loss',
      r'returns to your hand instead of your discard pile after use'),
     ('always_exiled', r'exiled after use instead of sent to discard'),
+    # HOLD THE LINE (`cards/pat.md`). The card takes the colour it is
+    # resolving against, so the reveal can only be a tie — it never wins or
+    # loses on colour. Without this it reads as plain COLORLESS, which
+    # auto-loses to any real colour (`cards/colorless.md`), and the card
+    # comes out doing the exact opposite of what it says.
+    ('mirrors_color',
+     r"this card'?s colou?r becomes identical to whatever it'?s resolving "
+     r'against'),
 )
 
 # Traits read off the attack half, the defence half, and the Special Rule.

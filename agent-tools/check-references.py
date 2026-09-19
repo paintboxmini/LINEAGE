@@ -58,7 +58,12 @@ CMD_PREFIX = re.compile(r'^(?:python3?|bash|sh|\./)\s+')
 SECTION_REF = re.compile(r'`([A-Za-z0-9_\-/. ]+\.md)`,\s+([A-Z][A-Za-z0-9 &\'’\-]{2,44}?)(?=[.,;:—\n)]|$)')
 # A heading, or the bold lead-in the repo uses for named sub-rules.
 HEADING = re.compile(r'^#+\s*(.+?)\s*$|^\*\*(.+?)\*\*', re.M)
-DECK = re.compile(r'Deck\s*\(([^)]*)\)', re.S)
+# A decklist line: "**Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, BLANK, …"
+# The names are after the closing paren, not inside it. The earlier version
+# captured the parenthetical instead — the count and the colour split — so
+# every "name" it tested started with a digit and was skipped, and this
+# check silently read nothing for as long as it existed.
+DECK = re.compile(r'\*\*Deck\s*\([^)]*\)\s*:?\*\*\s*:?(.*)')
 
 
 def repo_files(exts=SOURCE_EXT):
@@ -149,19 +154,55 @@ def check_sections():
     return out
 
 
-def check_decklists(names):
+def decklists():
+    """Every written decklist, as (file, line, [card names])."""
     out = []
     for f in markdown_files():
-        text = open(os.path.join(REPO, f), encoding='utf-8', errors='ignore').read()
-        for m in DECK.finditer(text):
-            body = re.sub(r'\*\(\s*\w+\s*\)\*', '', m.group(1))
-            for raw in re.split(r'[,·]', body):
-                n = re.sub(r'[*_`]', '', raw).strip()
-                n = re.sub(r'^\d+\s*[x×]\s*', '', n).strip()
-                if not n or n[0].isdigit():
+        path = os.path.join(REPO, f)
+        with open(path, encoding='utf-8', errors='ignore') as fh:
+            for i, line in enumerate(fh, 1):
+                m = DECK.search(line)
+                if not m or not m.group(1).strip():
                     continue
-                if n.upper() not in names:
-                    out.append((f, n))
+                body = re.sub(r'\*\(\s*\w+\s*\)\*', '', m.group(1))
+                got = []
+                for raw in re.split(r'[,·]', body):
+                    n = re.sub(r'[*_`]', '', raw).strip()
+                    n = re.sub(r'^\d+\s*[x×]\s*', '', n).strip()
+                    if not n or n[0].isdigit():
+                        continue
+                    got.append(n)
+                if got:
+                    out.append((f, i, got))
+    return out
+
+
+def check_decklists(names, lists):
+    out = []
+    for f, i, got in lists:
+        for n in got:
+            if n.upper() not in names:
+                out.append((f'{f}:{i}', n))
+    return out
+
+
+def check_deck_duplicates(lists):
+    """No written deck runs the same card twice.
+
+    Not a rule anyone wrote down — an invariant every one of the decklists
+    holds to, which is what lets an Ongoing Effect say nothing about being
+    replayed over itself (`campaign/chris.md`, KILLSWITCH). Worth a check
+    precisely because nothing states it: the day someone writes a deck with
+    two copies in it, that card's text needs rereading.
+    """
+    out = []
+    for f, i, got in lists:
+        seen = {}
+        for n in got:
+            seen[n.upper()] = seen.get(n.upper(), 0) + 1
+        for n, k in seen.items():
+            if k > 1:
+                out.append((f'{f}:{i}', n, k))
     return out
 
 
@@ -179,9 +220,12 @@ def main():
 
     links = check_links()
     secs = check_sections()
-    decks = check_decklists(names)
+    lists = decklists()
+    decks = check_decklists(names, lists)
+    repeats = check_deck_duplicates(lists)
     dupes = check_duplicate_names(all_cards)
-    problems = len(links) + len(secs) + len(decks) + len(dupes)
+    problems = (len(links) + len(secs) + len(decks) + len(repeats)
+                + len(dupes))
 
     if links:
         print(f"\nBROKEN DOCUMENT REFERENCES ({len(links)}):")
@@ -195,6 +239,10 @@ def main():
         print(f"\nDECKLISTS NAMING CARDS THAT DON'T EXIST ({len(decks)}):")
         for f, n in decks:
             print(f"  {f} -> {n}")
+    if repeats:
+        print(f"\nDECKS RUNNING THE SAME CARD TWICE ({len(repeats)}):")
+        for where, n, k in repeats:
+            print(f"  {where} -> {n} x{k}")
     if dupes:
         print(f"\nDUPLICATE CARD NAMES ({len(dupes)}):")
         for n, srcs in dupes.items():
@@ -204,7 +252,8 @@ def main():
         docs = sum(1 for _ in markdown_files())
         scripts = sum(1 for _ in repo_files(('.py', '.sh')))
         print(f"Clean — {len(all_cards)} cards, {docs} documents, "
-              f"{scripts} scripts, no broken references.")
+              f"{scripts} scripts, {len(lists)} decklists, "
+              f"no broken references.")
     return 1 if problems else 0
 
 

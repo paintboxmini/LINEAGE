@@ -44,10 +44,16 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **"Object" as a formal category doesn't exist in `rules/combat.md` yet** — it did before this repo's rebuild, but didn't survive. Deliberately not formalizing it off one example: Pat's spirits work fine defined narrowly as they are above. Worth writing as a real general rule once there are more Objects to generalize from, not before.
 
+**In the simulator, as of 2026-09-19.** Spirits are modelled as Combatants carrying an `is_object` flag rather than as their own class — the damage pipeline, targeting and positions then all work on them unchanged, and having no hand they can never choose a defence, which *is* the auto-hit reading above rather than a special case written to produce it. They take no turn because nothing puts them on the wheel, and a side is not still standing because a totem is. The d10 goes into Soul, because max HP is derived and must stay derived (`rules/invariants.md`), and 4×0 + 0 + HP is exactly the roll.
+
+**LET'S GO's totem buff is held on the spirit and taken back when it drops**, which is what *kill the totem, lose the buff* means mechanically. Its defence half rolls a real Soul Save per enemy against Pat's Soul + 10 and compels the failures through the same MUST_TARGET that MOCKERY runs on.
+
+**HERE BOY's rider goes to Pat, ruled 2026-09-19**, and the card was reworded to say so. The old text read as the spirit gaining it, which could never fire — a spirit does not act and cannot defend, so it never reaches a reveal. The summoning grants the tie-win to the summoner: he holds it and spends it on the next tie he is in, attacking or defending. The engine runs it.
+
 Still open:
 
 - Whether HERE BOY and LET'S GO are the *only* two triggers.
-- Whether more than one spirit can be out at a time (there are only three to draw on).
+- Whether more than one spirit can be out at a time (there are only three to draw on). *The engine permits it and numbers them; it is not enforcing a cap it was not given.*
 
 ## Passives
 

@@ -29,10 +29,46 @@ A wide open area where the sound of past events surfaces on the wind. The scream
 **The Obsidian Observatory**
 A partially intact dome overlooking the central rift. The best vantage point in the ruins. Almost certainly guarded.
 
+**Gemstone University** *(the Academy)*
+Cut into the inside face of the rim, looking in. Not a camp and not an expedition — a permanent building in the rock, put there by people who decided the way to study what is in the abyss was to live at the edge of it and keep looking. It is the nearest standing structure to the Central Gateway, which is either the whole point or the whole problem depending on who is asked.
+
+**Named by Chris's player on 2026-09-19**, which was his to name. It is a real university with real students: Kevin reads culinary arts there, which is where the two of them met (`campaign/kevin.md`). *The Abyssal Ruins keep their own name — the University is the institution in the rim, not a name for the place it stands in.*
+
+Everything else about it is open on purpose. **See Gemstone University — Reserved, below.**
+
 **The Abyssal Trench** *(also called The Trench)*
 A depression twenty feet below the ruins floor. The violet haze pools here over bioluminescent growth. The floor is colonized by hazardous sponge organisms. Ambush predators hunt between them. At the deepest point, ancient tower-like organisms grow from the stone — older than the ruins themselves, unclassified. See `places/abyssal-trench.md`.
 
 ---
+
+---
+
+## Gemstone University — Reserved
+
+**The details of this place belong to Chris's player**, who found it by writing toward it and named it on 2026-09-19. What is written above is only the shape needed for it to exist in the world: it is a university, it is built into the rim, it studies the abyss, it teaches — including subjects with nothing to do with the abyss — and a man who worked there found something that came down through the Gateway (`campaign/chris.md`).
+
+**Not written, and not to be written by anyone else:** who runs it, how many people are in it, how it is funded, how long it has been there, what it has actually learned, and what it does about the fact that exposure here carries a risk nobody can characterise.
+
+*The name and the man came off that list on 2026-09-19 because their owner supplied them. Everything else on it stays.*
+
+### It is an antagonist now
+
+**Also set 2026-09-19, and it changes how this place should be run.** The man who found the thing that came through the Gateway was **a scholar of plant life at the University**, and he did not report it — he raised the child as his own, in secret, away from the building (`campaign/chris.md`).
+
+**The University found out anyway, and sent men to take him by force**, having decided that something which came through the largest rift in the world and can be anything is not a subject to study but an instrument to own. The father held them off and told the boy to run. **What became of him is unwritten on purpose.**
+
+**So this is not a neutral institution and should not be played as one.** It is a body of scholars at the rim that reached, at least once, for a person. *How far that goes — whether it is the whole University, a faction inside it, or one office nobody else knows about — is still reserved, and is exactly the kind of thing worth leaving to the player whose father it took.*
+
+**Its men are still looking**, which puts a live pursuit into the campaign from session one.
+
+**Two things that are already true and are worth knowing before anyone writes into them**, because they are the world's rather than the Academy's:
+
+- **The risk is real and it is not consistent** (above). An institution that has chosen to be permanent next to that has made a decision about it — one it presumably has a position on, and possibly a wrong one.
+- **The ground is aimed at.** Something in Ashfall has the ruins targeted again (`quests/war-engine.md`). Whether the Academy knows that, and what a body of scholars at the rim would be to either side of that, is a live question and not a settled one.
+
+**A third thing: it is not only Chris's door in.** Kevin studied there, met him there, and was in the fight when the University came for him (`campaign/kevin.md`), so this is a place two player characters share a history with — and share having fled. That does not move who owns it; it does mean anyone writing into it is writing into two backstories at once.
+
+*Filed here rather than in `campaign/` because the University is a place in the world and will outlast any one character's use of it. The person who gets to say what it is, is still Chris.*
 
 ## Hazards
 

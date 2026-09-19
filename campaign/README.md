@@ -8,11 +8,11 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 | | |
 |---|---|
-| `campaign/chris.md` | The Seed of the Amalgam. Blade singer; stats, Passives, Skills, Mimicry, KILLSWITCH, the flow cards |
+| `campaign/chris.md` | The Seed of the Amalgam. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, RIPOSTE, KILLSWITCH |
 | `campaign/the-amalgam.md` | The hive mind he was sent ahead of, and the crossing that went wrong |
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |
-| `campaign/kevin.md` | Combat chef. Stats, the craft, the ingredients, the drinks, the card drafts |
+| `campaign/kevin.md` | Combat chef. The family pepper, Gemstone University, Skills, Passives, the craft, the ingredients, the drinks, the card drafts |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
 | `campaign/images/` | Player reference art |

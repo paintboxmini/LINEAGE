@@ -29,6 +29,30 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue — enemy control.** Debuffs, repositioning them, taking their options away.
 - **Green — flexibility and support.** Healing, allies, movement, adaptability.
 
+### Why Red has the biggest dice — range pays for them
+
+**The die is bought with range, and each colour spends its range budget differently.** That is the whole of it, and it means the damage spread between colours is a *consequence* of their range identity rather than a thumb on the scale for Red.
+
+- **Red is the most restricted**, so it is paid the most.
+- **Blue sits in the middle** — Ranged is a real restriction, but a softer one than Melee.
+- **Green is the most flexible**, so it is paid the least. Both-range is the default, and the default die is small.
+
+*Measured across the 164 core cards, 2026-09-19:*
+
+| Colour | Melee | Ranged | Both | mean die |
+|---|---|---|---|---|
+| **Red** | 53% | 17% | 30% | **6.27** |
+| **Blue** | 28% | 60% | 12% | **5.36** |
+| **Green** | 15% | 30% | 56% | **5.04** |
+
+**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.93.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.93.
+
+**What this is for.** It tells you what a new card should cost before you argue about it: a Both-range card wants a small die whatever colour it is, and a Melee card has already paid for a big one. It also tells a player something real at character creation — **a Mind- or Soul-primary character drafts from a smaller-dice pool than a Body-primary one**, by roughly half a point of expected damage per card, and is being paid for it in reach and flexibility rather than shortchanged.
+
+**Red Melee runs a full die step above Blue Melee and Green Melee** — 7.00 against 5.57 and 5.75 — and that part is deliberate rather than drift. **Each colour's stat is paid in a different currency**, and Red's is damage: Body buys the damage *and* the HP, Mind buys hand size, Soul buys initiative. Red buys a little more with range than the other two because damage is the thing Red is for.
+
+*That premium was set when Body was a ×3 multiplier on HP rather than ×4, so it is fair to ask whether the damage gap should have closed when the HP weight went up. **It was measured on 2026-09-19 and the answer is no.** With Passives in play the three colours finish within 1.4 points of each other over 750 duels — the economy is already balanced, the ×3 → ×4 change moved the colours under two points against each other, and softening Red's dice moves nothing at all. `combat-simulations/README.md`, What Passives are actually for.*
+
 **Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.

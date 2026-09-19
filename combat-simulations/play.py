@@ -17,6 +17,7 @@ import sys
 
 import cards as cardlib
 from agents import HumanAgent, RandomAgent, SimpleAI
+import engine
 from engine import (BACK, FRONT, MUST_TARGET, NO_ATTACK, NO_TARGET,
                     SKIP_DRAW, Combatant, Outcome, d, resolve_attack,
                     set_table)
@@ -25,14 +26,25 @@ from wheel import Wheel
 
 def build_deck(pool, size, body, mind, soul, rng):
     """`rules/cards.md`: deck size equals total stats, each colour's count
-    equal to the matching stat."""
+    equal to the matching stat.
+
+    Drawn **without** replacement. No written deck in the repo runs the same
+    card twice — 43 decklists, checked by `agent-tools/check-references.py` —
+    and this used to pick each slot independently, so it built creatures no
+    bestiary entry could describe. It also let one Card object sit in two
+    piles at once, which is the shape of bug that made FORGET file the same
+    card twice.
+
+    A colour with fewer distinct cards than the stat asks for takes what
+    there is rather than padding with repeats.
+    """
     want = {'RED': body, 'BLUE': mind, 'GREEN': soul}
     deck = []
     for color, n in want.items():
         avail = [c for c in pool if c.color == color]
         if not avail:
             continue
-        deck += [rng.choice(avail) for _ in range(n)]
+        deck += rng.sample(avail, min(n, len(avail)))
     return deck[:size] if size else deck
 
 
@@ -47,6 +59,14 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     who.moved_last_turn = who.moved_this_turn
     who.moved_this_turn = False
 
+    # Same shape, and for the same reason: rolled forward once at the top of
+    # the turn so every early return below still leaves it right. A turn
+    # spent moving, taking cover, Staggered, or barred from attacking plays
+    # no card at all, so there is no card you played last turn and MEASURE
+    # finds nothing to be a different colour from.
+    who.last_color = who.color_this_turn
+    who.color_this_turn = None
+
     skip = who.restriction(SKIP_DRAW)
     if skip is not None:
         who.spend_restriction(skip, log=log)
@@ -59,6 +79,14 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     # start-of-turn reactions ride the same event.
     if who.pending:
         who.tick_anchors(foes[0] if foes else None, allies, foes, rng, log)
+
+    # `rules/combat.md`, Free Actions: one per turn, on top of the Action,
+    # capped regardless of how many are available. Activating your own gear,
+    # eating and drinking all count — which is the whole of Kevin's tension
+    # between reloading, drinking and throwing an orange.
+    free = getattr(agent, 'choose_free_action', None)
+    if free is not None:
+        spend_free_action(who, free(who, foes, allies), log)
 
     if who.restriction(NO_ATTACK) is not None:
         log(f'{who.name} cannot attack this turn.')
@@ -91,6 +119,52 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
         break
 
 
+def spend_free_action(who, choice, log):
+    """One free action, resolved. `choice` is what the agent asked for:
+    ('reload', round) to put a prepared round in the grinder, ('drink',
+    name) to drink one of your own, ('orange', position) to throw one, or
+    None to keep it.
+
+    All three are things `rules/combat.md` already names as free — gear you
+    activate, and eating or drinking.
+    """
+    if not choice:
+        return
+    kind = choice[0]
+    if kind == 'reload' and who.rounds:
+        name = choice[1] if len(choice) > 1 else who.rounds[0]
+        if name not in who.rounds:
+            return
+        who.rounds.remove(name)
+        if who.load is not None:
+            who.rounds.append(who.load)
+        who.load = name
+        log(f'{who.name} loads the {name}.')
+    elif kind == 'drink' and who.drinks:
+        import effects as fx
+        name = choice[1] if len(choice) > 1 else who.drinks[0]
+        if name not in who.drinks:
+            return
+        log(f'{who.name} drinks {name}.')
+        text = fx._drinks().get(name.lower())
+        ops = fx.compile_half(text) if text else None
+        who.drinks.remove(name)
+        if ops:
+            ctx = fx.Context(who, None, allies=[], enemies=[], card=None,
+                             outcome='none', rng=who.rng, log=log,
+                             agent=getattr(who, '_agent', None))
+            ctx.wheel = None
+            for op in ops:
+                op.apply(ctx)
+    elif kind == 'orange' and who.oranges > 0:
+        where = choice[1] if len(choice) > 1 else FRONT
+        who.oranges -= 1
+        log(f'{who.name} throws an incendiary orange at the {where}.')
+        for foe in engine.table():
+            if foe.team != who.team and foe.alive() and foe.position == where:
+                foe.take(2, unpreventable=True, source=who, log=log)
+
+
 def _one_action(who, agent, foes, allies, wheel, log, rng):
     """One Action from the turn structure. Returns the action taken."""
     if not who.alive():
@@ -115,7 +189,12 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
         if card is None:
             log(f'{who.name} has nothing legal to play.')
             return None
-        who.hand.remove(card)
+        # A Passive is played from its own zone, not from hand, so there is
+        # nothing to remove and nothing to put back afterwards.
+        if who.is_passive(card):
+            log(f'{who.name} uses {card.name}.')
+        else:
+            who.hand.remove(card)
 
         # ANTICIPATE: "draw 1 card before defending" — the reaction has to
         # land while there is still a defence to choose.
@@ -126,7 +205,7 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
 
         dagent = target._agent
         dcard = dagent.choose_defense(target, who)
-        if dcard is not None:
+        if dcard is not None and not target.is_passive(dcard):
             target.hand.remove(dcard)
 
         if who.in_cover:
@@ -156,14 +235,29 @@ def run(party, foes, wheel, log, rng, max_rounds=40):
     turns = 0
     cap = max_rounds * len(everyone)
 
+    def standing(side):
+        """Who is still in the fight on one side.
+
+        Objects do not count. A summoned spirit holds HP and can be
+        attacked, but it is not a combatant (`campaign/pat.md`, Wild Magic
+        Summoning) — a party whose last standing member is a totem has lost.
+        """
+        return [c for c in side if not c.is_object]
+
     current = wheel.order()[0]
     while turns < cap:
         turns += 1
 
-        if all(not c.alive() or c.down for c in party):
+        # Read the table rather than the opening line-up: something
+        # summoned mid-fight has to be visible to everyone afterwards.
+        everyone = list(engine.table())
+        party = [c for c in everyone if c.team == 'party']
+        foes = [c for c in everyone if c.team != 'party']
+
+        if all(not c.alive() or c.down for c in standing(party)):
             log('\nThe party is down.')
             return 'foes'
-        if all(not c.alive() or c.down for c in foes):
+        if all(not c.alive() or c.down for c in standing(foes)):
             log('\nThe party wins.')
             return 'party'
 

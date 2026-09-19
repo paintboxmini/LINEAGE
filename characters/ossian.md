@@ -42,6 +42,10 @@ The temple is renowned for its wines, and it sells them.
 
 This is not smuggling and nobody is pretending otherwise — it is done in daylight, at volume, by an institution at the centre of the Temple District. It is a standing refusal that has never been formally tested, and the longer it goes untested the more expensive testing it becomes.
 
+**And the wine travels.** The temple ships at volume and to real distance — including ports that are not respectable, which is a thing his son saw a great deal of as a boy (`campaign/kevin.md`). **The boats are the family's**, and getting the use of them is most of why Kevin's leaving had to be framed as going to study.
+
+**The other cargo is licensed.** The Herb pepper — the one that detonates if you cook it wrong on purpose — cannot legally be made without the crown's leave, and the Herbs hold that leave because they are the church (`campaign/kevin.md`, The Pepper Is The Family Business). *So Ossian moves one good by refusing to file and another by holding paperwork nobody else can get, and he would tell you those are the same principle twice. He is not wrong, which is the annoying part.*
+
 There is precedent one street over: Harlan Vetch holds the Temple of the Forge apart from Elara's commercial apparatus on principle too (`places/capital/capital.md`, Temple of the Forge). The two are not the same refusal. Harlan's temple **declines coin as worship** — money left on the anvil is politely returned. Ossian's temple takes the money and declines the tax. Harlan abstains; Ossian does not comply. A GM can play that difference for real friction between two men who both think they are the principled one.
 
 ---
@@ -59,7 +63,9 @@ Warm, direct, unhurried, and physically present in a way retired soldiers often 
 ## Not Yet Set
 
 - **Which war.** Unwritten, along with what he did in it and what it cost him.
-- **Kevin.** Kevin shirked his studies and rituals to cook instead, and is overseeing a temple wine shipment when Session 1 opens (`campaign/kevin.md`). What his father makes of a son who left the liturgy for a kitchen — and whether the shipment is trust, a test, or a way of getting him out of the building — is open, and belongs at the table.
+- **Kevin.** Kevin shirked his studies and rituals to cook instead (`campaign/kevin.md`). *Much of this closed on 2026-09-19.* Ossian loves him, assumes he will come round, thinks he is not standing up to the responsibility, and does not hide the second part well; Kevin's own summary is **"he treats me bad, but he treats me good."** Running temple wine is how the boy came to know Vulture's Nest, but **he is not carrying a shipment when Session 1 opens** — he is at that port hiding a friend from an institution that tried to take him, having chosen to, with nothing asked of him. *The line that used to stand here, about the shipment being trust or a test or a way of getting him out of the building, is retired: there is no shipment.*
+
+  **What is open is much worse than it was.** Ossian does not know where his son is. He does not know the boy stopped attending his classes, that he was in a fight at the Abyssal Ruins, or that the family name is currently sitting on a berth in a quarantined port next to somebody the University wants. *A father who thinks his son is at school is a very good clock to leave running.*
 - **The name.** Placeholder. Rename freely; nothing depends on it.
 - **Whether he fights.** No stat line. He was a soldier once, and the file deliberately does not say whether any of that is still in his hands.
 
@@ -69,4 +75,4 @@ Warm, direct, unhurried, and physically present in a way retired soldiers often 
 
 - `places/capital/capital.md` — the Temple District, the Temple of Unity, Elara's Marketplace regulation
 - `characters/vescal.md` — trained at the same temple, left over the half Ossian did not reform
-- `campaign/kevin.md` — his son, and the wine shipment
+- `campaign/kevin.md` — his son, the wine trade, and where he actually is

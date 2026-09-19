@@ -104,6 +104,8 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
 
+**Past the hubs is further than the hubs.** The Abyssal Ruins are **roughly 15 days' walk from the Capital** (set 2026-09-19), and that number is the sum of two legs rather than a fact on its own: 8 days Capital to Vulture's Nest on the Nest spoke, then **roughly 7 days south from the Nest to the Ruins** off the road. *Worth seeing plainly, because it is the part that is easy to get wrong: the Ruins are not a hub, so the 13-day hub-to-hub figure does not apply to them. The leg past the Nest is very nearly a spoke's worth of walking in its own right, which is what makes the Ruins remote rather than merely southern — and it is walking, not road.* Ashfall sits the same way below Turnroot Weald and has no figure written; it should get one from the same arithmetic when somebody needs it.
+
 **Both northern islands are river-web islands, not sea islands.** The Shunka hold one in the **northernmost reaches of the river web** — slightly west of true north, and south of Glasslight Reach, which keeps the Reach's claim to the northernmost edge of the known world and the Soft Edge's claim to the northernmost water. The Lizardkin hold a smaller island off the Shunka island's lower east coast.
 
 That they are both on the web matters more than where they sit. It is why the Lizardkin are a **river** people rather than a coastal one, why two peoples on separate islands were ever in each other's way, and why reaching either of them from Vulture's Nest is a long haul up the web rather than a sea crossing — the Nest being the densest point of the same network they live at the far end of.
@@ -136,7 +138,7 @@ Briarwatch is now described by what it touches: the Weald's eastern edge, two da
 | Turnroot Weald | Southwest | Sentient forest; wraps Ashfall's northeastern edge |
 | Ashfall Wastes | South of the Weald | Ash-buried ruins; strange heat |
 | Vulture's Nest | Southeast | Heart of the river web; trade centre |
-| Abyssal Ruins | South of the Nest | Vast warped ancient site |
+| Abyssal Ruins | South of the Nest | Vast warped ancient site; ~7 days south of the Nest, ~15 from the Capital |
 | Briarwatch | The Weald's eastern edge | Farmland claim; two days inland from the shoreline |
 | Quillet | Kings Road, Nest spoke, capital side | Farm village struck from the register eleven years ago |
 | The Roadhouse | (0, −7) on the Session 1 grid | Regency waypoint between shoreline and Briarwatch |

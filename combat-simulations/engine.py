@@ -100,6 +100,73 @@ class Combatant:
         self.hand = []
         self.discard = []
         self.exiled = []
+        # `rules/combat.md`, Ongoing Effects: a card producing one "remains
+        # face up in front of the player after use", and is discarded only
+        # when its stated condition is met. That is a fifth pile, and it is
+        # the point — a card sitting here is not in the discard, so it is
+        # not in the next reshuffle either, which is the real cost of
+        # holding an Ongoing Effect (`rules/card-glossary.md`,
+        # status-effect tokens).
+        self.in_play = []
+
+        # `rules/character-creation.md`, Passives and Traits: a Passive is
+        # card-shaped and sits face up in its own zone. It is never drawn,
+        # never discarded, and is not part of any pile — playing one spends
+        # the Action exactly like a card from hand, and what it saves is the
+        # card, never the turn.
+        #
+        # **Attacks and blocks both**, ruled 2026-09-19. This engine first
+        # took the conservative reading — that "playing one spends your
+        # Action" made it an attack-only thing — and flagged it as a table
+        # question. The table answered: a Passive is a card, and a card
+        # defends.
+        #
+        # That is a bigger change than it sounds. A Both-range Passive is a
+        # legal block in every exchange, so nobody who holds one is ever
+        # without an answer, which is exactly the thing hand size was buying
+        # (`combat-simulations/README.md`).
+        self.passives = []
+
+        # Carried gear that fills in a card (`campaign/kevin.md`). `load` is
+        # the round currently in the grinder, spent when GRIND SHOT resolves
+        # win or lose; `rounds` is the rest of the bandolier; `drinks` are
+        # prepared servings SERVE hands out; `oranges` are thrown for a free
+        # action. Rounds and drinks are names, looked up against the tables
+        # in that file.
+        self.load = None
+        self.rounds = []
+        self.drinks = []
+        self.oranges = 0
+
+        # `campaign/pat.md`, Wild Magic Summoning: a summoned spirit holds
+        # HP at its summoner's position and can be attacked, but it is not a
+        # combatant — it does not act, takes no turn, and never gets a token
+        # on the wheel. Modelled as a Combatant with this flag rather than
+        # as its own class, so the damage pipeline, targeting and positions
+        # all work on it unchanged. Having no hand, it can never choose a
+        # defence, which is exactly the "auto-hits, no RPS" that file calls
+        # the natural reading.
+        #
+        # "Object" is deliberately not a formal category in `rules/`
+        # (`campaign/pat.md`), so this is not one here either — it is a flag
+        # on the one thing that needs it.
+        self.is_object = False
+        self.summoner = None
+        self.totem_buff = []
+
+        # HERE BOY: a held Ongoing Effect that turns your next tie into a
+        # win, on either side of the exchange (`campaign/pat-cards.md`).
+        # Stacks, and one is spent per tie it resolves.
+        self.wins_next_tie = 0
+
+        # Everything the table has watched land on this combatant, added up.
+        # **This is public and `hp` is not.** A hit is announced and its
+        # number is read out, so anyone playing can keep a running total of
+        # what a creature has absorbed — but not of what it has left, which
+        # would need `max_hp`. That asymmetry is the point: an agent using
+        # this is inferring toughness from play rather than reading a sheet
+        # it was never handed (`agents.Knowledge`).
+        self.seen_damage = 0
 
         # Stacking statuses, held as counts.
         self.deadly = 0
@@ -135,6 +202,32 @@ class Combatant:
         # CALLED SHOT against one target, ATTUNE on one colour, CLIMB while
         # Anchored. Each is {bonus, mult, color, target, uses, text}.
         self.standing_mods = []
+
+        # The colour of the card you played on your own last turn, which is
+        # what MEASURE asks about (`campaign/chris.md`). Rolled forward once
+        # at the top of each of your turns by `play.take_turn`, so a half
+        # resolving mid-turn still sees the previous turn's colour and not
+        # the card doing the asking.
+        #
+        # A card played to *defend* is not "a card you played last turn" —
+        # it was played on someone else's. Only attacks are recorded.
+        self.last_color = None
+        self.color_this_turn = None
+
+        # The colour of the attack before this one. A different question
+        # from last_color above: that one is per *turn*, which is what
+        # MEASURE asks; this is per *attack*, which is what KILLSWITCH asks.
+        # They come apart in both directions — a turn that hands back a
+        # second attack has two attacks in a row inside one turn, and a turn
+        # spent moving is not an attack at all, so it breaks a turn streak
+        # without breaking an attack streak.
+        self.last_attack_color = None
+
+        # Stances: a choice that stays up for the fight and replaces itself
+        # rather than stacking (KILLSWITCH). Keyed by card name, holding
+        # exactly what that card granted so it can take back that much and
+        # no more. See `effects.Stance`.
+        self.stances = {}
 
     # ---- derived --------------------------------------------------------
 
@@ -273,6 +366,16 @@ class Combatant:
         return -math.ceil(self.max_hp / 2)
 
     def stat(self, name):
+        """A card's stat bonus, or 0 for a card that has no stat.
+
+        A colorless card carries "no stat bonus" on its face
+        (`cards/colorless.md`), so `Card.stat` is None for one and every
+        caller that scores or rolls a card has to survive that. `roll_damage`
+        already did; the agents' card-scoring did not, and a colorless card
+        in hand crashed the defence chooser outright.
+        """
+        if not name:
+            return 0
         return {'body': self.body, 'mind': self.mind, 'soul': self.soul}[name.lower()]
 
     def alive(self):
@@ -298,13 +401,80 @@ class Combatant:
             drawn += 1
         return drawn
 
-    def playable(self, opponent):
-        """Cards in hand whose Range is legal for the current positions."""
+    def playable(self, opponent, passives=True):
+        """Cards whose Range is legal for the current positions.
+
+        Hand, plus the Passives in their own zone — a Passive is a legal
+        thing to attack *or* block with on any exchange its Range and its
+        Applies When allow (`Combatant.passives`). `passives=False` is kept
+        for callers that want the hand alone.
+        """
         banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
-        return [c for c in self.hand
+        pool = list(self.hand)
+        if passives:
+            pool += [c for c in self.passives if self.passive_applies(c, opponent)]
+        return [c for c in pool
                 if c.is_playable()
                 and c.color not in banned
                 and c.range_ok(self.position, opponent.position)]
+
+    def dissipate(self, log=None):
+        """`campaign/pat.md`: "If the spirit reaches 0 HP, it dissipates."
+
+        An Object does not Collapse and is not Down — it leaves. Anything
+        it was holding up leaves with it, which is what LET'S GO means by
+        *kill the totem, lose the buff*.
+        """
+        if self.dead:
+            return
+        self.dead = True
+        self.down = True
+        if log:
+            log(f'{self.name} dissipates.')
+        for who, mod in getattr(self, 'totem_buff', ()) or ():
+            for live in list(who.standing_mods):
+                if live is mod:
+                    who.standing_mods.remove(live)
+        if getattr(self, 'totem_buff', None):
+            if log:
+                log('  the totem is gone — the party loses its bonus.')
+            self.totem_buff = []
+        global _TABLE
+        _TABLE = [c for c in _TABLE if c is not self]
+
+    def spend_load(self, log=None):
+        """THE PEPPER GRINDER: the load is spent when GRIND SHOT resolves,
+        win or lose — blocking with it burns the round the same as firing
+        it. Called from `_finish`, so a loss still costs the round."""
+        if self.load is None:
+            return
+        if log:
+            log(f'  {self.name} spends the {self.load}.')
+        self.load = None
+
+    def is_passive(self, card):
+        return card is not None and any(card is p for p in self.passives)
+
+    def passive_applies(self, card, opponent):
+        """Whether this Passive's Applies When is satisfied right now.
+
+        **Mostly it cannot be known.** An Applies When is a fiction gate a
+        person rules on — *a cutting edge is the answer*, *he set it up*,
+        *genuine hostile intent is present*. The engine does not model the
+        fiction, so it answers yes by default, and the few gates that are
+        actually mechanical are checked below.
+
+        That makes Passive usage in this engine an **upper bound**: a table
+        says no sometimes and this never does.
+        """
+        text = (getattr(card, 'applies_when', '') or '').lower()
+        # SPLIT ATTENTION: "More than one thing is happening and he is
+        # tracking all of it ... Against a single opponent in an empty room
+        # there is nothing to divide."
+        if 'more than one thing is happening' in text:
+            return len([e for e in _TABLE
+                        if e.team != self.team and e.alive()]) > 1
+        return True
 
     # ---- damage --------------------------------------------------------
 
@@ -359,10 +529,13 @@ class Combatant:
             target.hp = 0
 
         dealt = before - target.hp
+        target.seen_damage += dealt
         if log and dealt:
             log(f'{target.name} takes {dealt} ({target.hp}/{target.max_hp} HP).')
 
-        if target.hp <= 0 and not target.down:
+        if target.hp <= 0 and target.is_object:
+            target.dissipate(log)
+        elif target.hp <= 0 and not target.down:
             target.down = True
             if log:
                 log(f'{target.name} Collapses.')
@@ -458,14 +631,31 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     """
     log(f'{attacker.name} attacks {defender.name}.')
 
+    # What this combatant played on their own turn, read next turn by
+    # anything asking about a colour change. Recorded here rather than in
+    # play.py so an extra attack handed back mid-turn also counts, and only
+    # for the attacker — a defence is played on someone else's turn.
+    if atk_card is not None:
+        attacker.color_this_turn = atk_card.color
+        # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
+        # Asked and answered where the attack is made rather than at the
+        # reveal, because the card was played either way — an attack that
+        # gets dodged was still an attack, and still the last one you made.
+        # A block is not an attack and never reaches here.
+        if atk_card.color and attacker.last_attack_color == atk_card.color:
+            fx.end_stances_on_repeat(attacker, atk_card.color, log)
+        if atk_card.color:
+            attacker.last_attack_color = atk_card.color
+
     # PARTITION: the target is out of the exchange entirely, either side.
     # The cards were already committed, so they still go to the discard —
     # an exchange that does not happen must not eat them.
     for who, kind in ((attacker, NO_ATTACK), (defender, NO_TARGET)):
         if who.restriction(kind) is not None:
             log(f'  {who.name} is partitioned — the attack does not happen.')
-            attacker.discard.append(atk_card)
-            if def_card is not None:
+            if not attacker.is_passive(atk_card):
+                attacker.discard.append(atk_card)
+            if def_card is not None and not defender.is_passive(def_card):
                 defender.discard.append(def_card)
             return Outcome.MUTUAL_MISS
 
@@ -523,7 +713,15 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
 
     # Step 5. Reveal.
     log(f'  {atk_card.name} ({atk_card.color}) vs {def_card.name} ({def_card.color})')
-    if atk_card.ties(def_card):
+    if atk_traits.mirrors_color or def_traits.mirrors_color:
+        # HOLD THE LINE takes the colour it is resolving against, so there
+        # is nothing for RPS to decide. A guaranteed tie, which its own
+        # "you win on a tie" then converts on defence and cannot convert on
+        # offence — that asymmetry is the card.
+        mirror = atk_card if atk_traits.mirrors_color else def_card
+        log(f'  {mirror.name} takes the colour it is facing — a tie.')
+        outcome = Outcome.TIE
+    elif atk_card.ties(def_card):
         outcome = Outcome.TIE
     elif atk_card.beats(def_card):
         outcome = Outcome.ATTACKER
@@ -534,6 +732,7 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
 
     outcome = _apply_traits(outcome, atk_traits, def_traits, atk_card,
                             def_card, log)
+    outcome = _held_tie_win(outcome, attacker, defender, log)
     return _finish(outcome, attacker, defender, atk_card, def_card, log,
                    rng, wheel)
 
@@ -580,6 +779,37 @@ def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):
     return outcome
 
 
+def _held_tie_win(outcome, attacker, defender, log):
+    """A tie-win somebody is *holding* rather than one a card carries.
+
+    HERE BOY grants it to the summoner (`campaign/pat-cards.md`). Checked
+    after the cards' own tie traits, so a card that wins ties resolves the
+    tie before a held charge has to be spent on it — no charge is wasted on
+    an exchange that was already going to be won.
+
+    Both sides holding one cancels, the same way two tie-winning cards do,
+    and both spend a charge doing it.
+    """
+    if outcome != Outcome.TIE:
+        return outcome
+    a = attacker.wins_next_tie > 0
+    d = defender.wins_next_tie > 0
+    if a and d:
+        attacker.wins_next_tie -= 1
+        defender.wins_next_tie -= 1
+        log('  Both are holding a tie-win — they cancel, and it stays a tie.')
+        return outcome
+    if a:
+        attacker.wins_next_tie -= 1
+        log(f'  {attacker.name} spends a held tie-win.')
+        return Outcome.ATTACKER
+    if d:
+        defender.wins_next_tie -= 1
+        log(f'  {defender.name} spends a held tie-win.')
+        return Outcome.DEFENDER
+    return outcome
+
+
 def _finish(outcome, attacker, defender, atk_card, def_card, log,
             rng=random, wheel=None):
     """Apply the outcome, run whatever of each half is executable, then
@@ -587,6 +817,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
     dealt = 0
     returned_atk = returned_def = False
     gone_atk = gone_def = False   # a card exiled out of the exchange itself
+    held_atk = held_def = False   # a card that stays face up as an Ongoing
     atk_traits = fx.traits(atk_card, 'attack')
     def_traits = fx.traits(def_card, 'defense')
 
@@ -643,7 +874,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             ctx.damage_dealt = dealt
             ctx.damage_rolled = rolled
             _phase(ops, ctx, 'post')
-            returned_atk, gone_def = _settle(ctx, atk_card, attacker)
+            returned_atk, gone_def, held_atk = _settle(ctx, atk_card, attacker)
 
     elif outcome == Outcome.DEFENDER:
         log('  No damage.')
@@ -651,24 +882,24 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
         else:
-            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                          attacker, outcome, 0, log, rng,
-                                          wheel, atk_card)
+            returned_def, gone_atk, held_def = _run(
+                def_card, 'defense_effect', defender, attacker, outcome, 0,
+                log, rng, wheel, atk_card)
     elif outcome == Outcome.TIE:
         log('  Tie — no damage.')
         if mute_atk:
             log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
         else:
-            returned_atk, gone_def = _run(atk_card, 'effect', attacker,
-                                          defender, outcome, 0, log, rng,
-                                          wheel, def_card)
+            returned_atk, gone_def, held_atk = _run(
+                atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
+                wheel, def_card)
         if mute_def:
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
         else:
-            returned_def, gone_atk = _run(def_card, 'defense_effect', defender,
-                                          attacker, outcome, 0, log, rng,
-                                          wheel, atk_card)
+            returned_def, gone_atk, held_def = _run(
+                def_card, 'defense_effect', defender, attacker, outcome, 0,
+                log, rng, wheel, atk_card)
 
     # FOCUS returns itself to hand instead of discarding. Tracked here, not
     # on the Card: build_deck draws from a shared pool, so one Card object is
@@ -701,10 +932,37 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             attacker.extra_actions += 1
             log(f'  {attacker.name} gains another action.')
 
-    if not returned_atk and not gone_atk:
+    # An Ongoing Effect stays face up in front of its player instead of
+    # going to the discard, and leaves for the discard when it ends
+    # (`rules/combat.md`, Ongoing Effects). That is also why it cannot be
+    # played twice over itself: while the effect is running the card is on
+    # the table, not in the deck and not in the pile a reshuffle draws from.
+    # A card whose text defers to carried gear spends that gear when it
+    # resolves, whatever the outcome was — see Combatant.spend_load.
+    for who, half, card in ((attacker, 'effect', atk_card),
+                            (defender, 'defense_effect', def_card)):
+        if card is None:
+            continue
+        ops = compiled(card, half)
+        if ops and any(isinstance(o, fx.AsLoadedRound) for o in ops):
+            who.spend_load(log)
+
+    # A Passive was never in a pile and does not enter one — it goes back
+    # to being face up in its own zone, which is where it already was.
+    if attacker.is_passive(atk_card):
+        pass
+    elif held_atk and not returned_atk and not gone_atk:
+        attacker.in_play.append(atk_card)
+        log(f'  {atk_card.name} stays face up in front of {attacker.name}.')
+    elif not returned_atk and not gone_atk:
         attacker.discard.append(atk_card)
-    if def_card is not None and not returned_def and not gone_def:
-        defender.discard.append(def_card)
+    if def_card is not None and not returned_def and not gone_def \
+            and not defender.is_passive(def_card):
+        if held_def:
+            defender.in_play.append(def_card)
+            log(f'  {def_card.name} stays face up in front of {defender.name}.')
+        else:
+            defender.discard.append(def_card)
     return outcome
 
 
@@ -718,9 +976,15 @@ def compiled(card, half):
     text = getattr(card, half, None)
     if not text or text.strip().lower() in ('none.', 'none'):
         return None
-    if text not in _COMPILED:
-        _COMPILED[text] = fx.compile_half(text)
-    return _COMPILED[text]
+    # A half can point at the other one ("Same choice."), so the key has to
+    # be both texts — the same words mean different things on a card whose
+    # other half differs.
+    other = getattr(card, 'defense_effect' if half == 'effect' else 'effect', None)
+    name = getattr(card, 'name', None)
+    key = (text, other, name)
+    if key not in _COMPILED:
+        _COMPILED[key] = fx.compile_half(text, other=other, name=name)
+    return _COMPILED[key]
 
 
 def header(card, half):
@@ -775,6 +1039,7 @@ def _begin(card, half, actor, opponent, outcome, log, rng, wheel,
     ctx.acting = actor if half == 'effect' else opponent
     ctx.return_card = False
     ctx.exiled_opponent_card = False
+    ctx.stays_in_play = False
     return ctx, ops
 
 
@@ -787,10 +1052,10 @@ def _phase(ops, ctx, phase):
 def _settle(ctx, card, actor):
     """What the half did to the cards in play."""
     if ctx is None:
-        return False, False
+        return False, False, False
     if ctx.return_card:
         actor.hand.append(card)
-    return ctx.return_card, ctx.exiled_opponent_card
+    return ctx.return_card, ctx.exiled_opponent_card, ctx.stays_in_play
 
 
 def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
@@ -807,7 +1072,7 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
             if text and text.strip().lower() not in ('none.', 'none') \
                     and compiled(card, half) is None:
                 pass    # already read out by _begin
-        return False, False
+        return False, False, False
     ctx.damage_dealt = dealt
     _phase(ops, ctx, 'pre')
     _phase(ops, ctx, 'post')
@@ -838,6 +1103,12 @@ def _standing(attacker, card, defender, log):
 # that "all allies" and "any enemy" have something to resolve against; an
 # exchange run outside a fight simply sees the two combatants in it.
 _TABLE = []
+
+
+def table():
+    """Everyone in the current fight, including anything summoned into it.
+    `play.run` reads this each turn so a mid-fight arrival is visible."""
+    return list(_TABLE)
 
 
 def set_table(combatants):
