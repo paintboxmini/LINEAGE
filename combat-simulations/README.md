@@ -235,14 +235,76 @@ points fall out:
 ### Where the agents landed after it
 
 `KitAI` beat `SimpleAI` by ten to twenty points of party win rate when
-Passives could not block. With them blocking it is **82.0% against 84.7%
-at four wrackclaws and 76.0% against 75.3% at five** — parity, inside the
-noise. Most of what it was compensating for was the missing floor.
+Passives could not block. With them blocking it fell to parity — 82.0%
+against 84.7% at four wrackclaws, 76.0% against 75.3% at five — and it was
+dropping the Blue-primary character twice as often as `SimpleAI` did, 28%
+against 14%. Both of those turned out to be **one bug in the agent**, and
+with it fixed the figures are 82.0% against **89.0%** and 76.0% against
+**86.7%**, with every character going down less often than under
+`SimpleAI`. Chasing the character was what found it; see below.
 
-*One thing it is doing worse and has not been chased: it drops the
-Blue-primary character about twice as often as `SimpleAI` does (28% against
-14%). An attempt to fix that by valuing a free Passive block made it worse
-and was reverted. Open.*
+### The prior that was worse than no prior
+
+`KitAI._defence_value` scores a block by the odds of winning the reveal,
+and read those odds off `attacker.hand + attacker.deck`. **That is the one
+set of cards guaranteed not to contain the attack being defended against.**
+`play.py` pulls the attack card out of hand before it asks the defender to
+block, so the pile the defender consults is, by construction, everything
+the attacker is *not* about to play.
+
+The instrument said so plainly once it was asked. Over 1950 defences, a
+colour holding **none** of the visible pool was the colour actually played
+**62%** of the time, and a colour holding 70% of it was played **0%** of
+the time — monotonically inverted across every bin. The model's confidence
+ran the same way: where it predicted no damage with certainty, damage got
+through 65% of the time.
+
+Three things about this are worth keeping:
+
+- **It was found by ablation, not by reading the code.** Handing Chris's
+  `choose_defense` back to `SimpleAI` and changing nothing else restored
+  him exactly — 9% down against 9%, 4.8 damage taken against 4.8. Four
+  other methods were ablated the same way and moved nothing.
+- **Summing the other zones does not fix it**, and measuring beats
+  reasoning about it. The obvious repair — count hand, deck, discard and
+  play, so the removal cannot skew the total — was *no better than the
+  bug* (31% down against 28%). The card in flight sits in a local variable
+  in `play.py` and is in no zone at all, so against a four-card creature
+  three cards are visible and the missing quarter is exactly the one that
+  decides the exchange. The most common thing the defender saw was a
+  perfectly flat 1/1/1 — because the second RED was the one coming.
+- **The fix was already written down in the rules.** Deck size is total
+  stats and each colour's count equals its matching stat, so a stat block
+  *is* a colour composition (`rules/cards.md`). That prior is not
+  conditioned on the choice the attacker has already made, which is the
+  whole of what was wrong. Weighting it further by each colour's mean die
+  — Red is played more because Red's dice are bigger — was a wash across
+  six different foe shapes, so it was not kept.
+
+The fixed prior wins against every foe shape tried, not just the red-heavy
+one that exposed it: 250 fights each at 1/2/1, 1/1/2, 2/2/2, 3/1/1 and
+1/3/1, it is ahead of both `SimpleAI` and the old `KitAI` on win rate and
+on down rate in every row.
+
+### A card note that fell out of the weight sweep
+
+Re-sweeping `KitAI`'s weights on the party fight — the duel having been
+measured to see none of them — showed that four of the five barely move
+the result, and turned up something about a card rather than about the
+agent. **Chris never sets his stance.** KILLSWITCH was a
+legal attack 2232 times in 300 fights and was chosen twice; a stance was
+up on 3 turns out of 2942. Soul 2 + d4 scores 4.0, and his MIMETIC BLADE
+Passive scores 6.0 and costs no card at all, so the stance is dominated by
+a card he never has to spend.
+
+Forcing him to set it changes nothing measurable: raise the setup weight
+until he plays it about once a fight and the party result moves under a
+point either way. So this is **not** a case of the agent misplaying a good
+card, and it is not an argument for changing KILLSWITCH — it is one
+measurement, on one fill deck, against one creature, and what it says is
+that a stance priced against a free Passive has a hard time getting played.
+Whether that matters is a question about the card, and the card is Chris's
+(`campaign/chris.md`).
 
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of

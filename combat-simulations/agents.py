@@ -294,13 +294,21 @@ class KitAI(SimpleAI):
     both sides, one agent each — put it at parity with SimpleAI at best,
     and an early version lost 60/40. A duel is a pure damage race with no
     allies and no time, and in one of those "play the biggest card" is very
-    nearly the correct strategy.
+    nearly the correct strategy. Ablated a method at a time, the duel gives
+    50.0% for every part of this class on every character — which is to say
+    the benchmark cannot see any of it, and a weight tuned against it is a
+    weight tuned against nothing.
 
     In a **party fight** it is worth a great deal:
 
         party of three, 300 fights each      SimpleAI    KitAI
-        vs 4 wrackclaws                        72.7%     82.3%
-        vs 5 wrackclaws                        36.3%     57.3%
+        vs 4 wrackclaws                        82.0%     89.0%
+        vs 5 wrackclaws                        76.0%     86.7%
+
+        who goes down, vs 5 wrackclaws       SimpleAI    KitAI
+        Chris                                    29%       19%
+        Kevin                                    21%       10%
+        Pat                                      30%       14%
 
     That gap is the whole point of the class. Setup plays — a totem that
     buffs everyone, a drink handed to somebody else, a stance held across a
@@ -308,14 +316,38 @@ class KitAI(SimpleAI):
     things exists in a duel. **So judge an agent on the fight the character
     was built for, not on the convenient benchmark.**
 
-    The weights were tuned by sweep rather than by eye, and one of them
-    mattered far more than the rest: valuing "this card has an effect" too
-    highly is actively harmful, because it promotes low-damage utility over
-    damage in exchanges where damage is what is needed. It sits at 0.5.
+    The weights were tuned by sweep. Swept again against the party fight
+    (600 fights a point) once `_odds` was fixed, and the honest reading is
+    that only one of the five is earning its keep:
+
+    - `_EFFECT_VALUE` is the one that matters, and only at the top of its
+      range. At 1.5 it costs about ten points, because it promotes
+      low-damage utility over damage in exchanges where damage is what is
+      needed. Between 0.0 and 0.5 the difference is under a point and
+      changes sign between the two encounter sizes, so it stays at 0.5
+      rather than chasing noise.
+    - `_SETUP_BONUS` moves almost nothing, for a reason worth knowing:
+      **Chris never sets his stance.** KILLSWITCH was a legal attack 2232
+      times in 300 fights and was chosen twice, because Soul 2 + d4 scores
+      4.0 and his MIMETIC BLADE Passive scores 6.0 and costs no card at
+      all. Raising the bonus until he does set it (2.5 and up, about one
+      stance a fight) moves the party result by less than a point either
+      way. The stance is priced out, and pricing it in is not worth
+      anything — which is a note about the card, not about the agent.
+    - `_STANCE_REPLAY` and `_REPEAT_PENALTY` are **inert on this
+      benchmark**: 0.0, -1.0, -2.0 and -4.0 give identical results to the
+      decimal. Both only fire once a stance is up, and a stance is up on 3
+      turns out of 2942, so neither has had the chance to be right or
+      wrong. They are kept because they are correct, not because they have
+      been shown to pay.
+    - `_BANK_TIE_WIN` is the one that does fire — HERE BOY is Pat's — but
+      only just: turning it off costs half a point at five foes and 1.0
+      against 2.0 is identical. Below the noise floor in either direction.
     """
 
-    # Weights, in damage-equivalents. Tuned against mirror matches rather
-    # than chosen by eye — see the note on tuning in the class docstring.
+    # Weights, in damage-equivalents. Swept against the party fight rather
+    # than chosen by eye — and mostly they do not matter. See the note on
+    # tuning in the class docstring for which of them has been shown to.
     _EFFECT_VALUE = 0.5
     _SETUP_BONUS = 1.0      # a stance not yet up, or a totem not yet out
     _STANCE_REPLAY = -2.0   # the same stance again
@@ -452,23 +484,48 @@ class KitAI(SimpleAI):
         return value
 
     def _odds(self, card, attacker):
-        """(P(this colour beats theirs), P(it ties)) against what the
-        attacker actually has left to play.
+        """(P(this colour beats theirs), P(it ties)), read off the
+        attacker's **stat line**.
 
         A mirroring card ties with certainty, and one that also wins ties on
         defence is therefore a guaranteed block.
+
+        The stat line is the prior because it is the only one available here
+        that is not conditioned on the choice already made. Deck size is
+        total stats and each colour's count equals its matching stat
+        (`rules/cards.md`, Enemy decks), so a stat block is a colour
+        composition — which is exactly why the rule has the side effect it
+        does: reveal a creature's stats and you have revealed its deck. It
+        is exact against a creature, which is what a player is defending
+        against; against another player it is an approximation, because a
+        card bank and a COLORLESS signature can bend the colour counts
+        without changing the stats.
+
+        **This used to count `attacker.hand + attacker.deck`, and that is
+        worse than no prior at all.** `play.py` pulls the attack card out of
+        hand before it asks the defender to block, so those two piles are,
+        by construction, every card the attacker is *not* about to play.
+        Measured over 1950 defences: a colour holding none of the visible
+        pool was the one played 62% of the time, and a colour holding 70% of
+        it was played 0% of the time. The prior was not noisy, it was
+        inverted, and the defender dutifully blocked the colour that was
+        about to beat it.
+
+        Summing the other zones does not rescue it. The card in flight is in
+        a local variable in `play.py` — not in hand, deck, discard or play —
+        so against a four-card creature three cards are visible and the
+        missing quarter is precisely the one that matters. Measured, that
+        version was no better than the broken one.
         """
         from cards import BEATS
         if self._mirrors(card):
             return (1.0, 0.0) if self._wins_ties_on_defence(card) else (0.0, 1.0)
-        pool = [c for c in list(attacker.hand) + list(attacker.deck)
-                if c.is_playable() and c.color]
-        if not pool:
+        split = {'RED': attacker.body, 'BLUE': attacker.mind,
+                 'GREEN': attacker.soul}
+        n = sum(split.values())
+        if not n:
             return 0.34, 0.33
-        beat = sum(1 for c in pool if BEATS.get(card.color) == c.color)
-        tie = sum(1 for c in pool if c.color == card.color)
-        n = len(pool)
-        return beat / n, tie / n
+        return split.get(BEATS.get(card.color), 0) / n, split.get(card.color, 0) / n
 
     # ---- the free action ------------------------------------------------
 
