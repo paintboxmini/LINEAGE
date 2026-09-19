@@ -826,6 +826,93 @@ def test_lets_go_compels_the_room():
     check('and Soul is what resists it', per[1] > per[7], per)
 
 
+
+def test_kit_ai_knows_what_a_block_is_for():
+    print('\nKitAI: a defence is won on colour, not on damage')
+    from agents import KitAI, SimpleAI
+    pool = cardlib.by_name(cardlib.load())
+    core = cardlib.by_name(cardlib.core_pool())
+    ai = KitAI(random.Random(0))
+
+    pat, foe = duo()
+    htl, strike = pool['HOLD THE LINE'], core['STRIKE']
+    pat.hand = [htl, strike]
+    foe.deck = [core['STRIKE']] * 6
+
+    check('it blocks with the card that cannot lose',
+          ai.choose_defense(pat, foe) is htl, ai.choose_defense(pat, foe))
+    check('and does not attack with it, because it cannot win either',
+          ai.choose_attack(pat, foe) is strike, ai.choose_attack(pat, foe))
+    check('SimpleAI blocks with the big attack card instead',
+          SimpleAI(random.Random(0)).choose_defense(pat, foe) is strike)
+
+    # A stance it is already holding is worth less than one it is not.
+    # Compared directly rather than through a choice against an unrelated
+    # card — the weights are tuned so a d10 attack often *should* beat
+    # setting a stance, and this is about the difference, not the winner.
+    kev, enemy = duo()
+    ks = pool['KILLSWITCH']
+    kev.hand = [ks]
+    unset = ai._attack_value(kev, ks, enemy)
+    kev.stances['KILLSWITCH'] = {'status': {}, 'mods': [], 'card': ks,
+                                 'ends_on_repeat': True}
+    already = ai._attack_value(kev, ks, enemy)
+    check('a stance already up is worth less than one that is not',
+          already < unset, (unset, already))
+
+    # And while it is up, repeating its colour with some *other* card
+    # costs it. Not with KILLSWITCH itself — replaying that one replaces
+    # the stance rather than ending it, and the scorer is exempt there on
+    # purpose (`campaign/chris.md`).
+    green = core['SUPPORT']
+    assert green.color == 'GREEN'
+    kev.last_attack_color = 'GREEN'
+    repeat = ai._attack_value(kev, green, enemy)
+    kev.last_attack_color = 'RED'
+    fresh = ai._attack_value(kev, green, enemy)
+    check('and a repeat that would end it is penalised',
+          repeat < fresh, (repeat, fresh))
+    kev.last_attack_color = 'GREEN'
+    check('but the stance card itself is exempt from its own penalty',
+          ai._attack_value(kev, ks, enemy) == already)
+
+
+def test_kit_ai_spends_its_free_action():
+    print('\nKitAI: one free action, and it picks between three uses')
+    from agents import KitAI
+    import play
+    ai = KitAI(random.Random(0))
+    kev, foe = duo()
+
+    kev.rounds = ['cinder flake', 'plain']
+    check('an empty grinder gets reloaded with the better round',
+          ai.choose_free_action(kev, [foe], []) == ('reload', 'cinder flake'))
+
+    kev.load = 'plain'
+    kev.hp = 4
+    kev.drinks = ['Still Water']
+    check('but being hurt comes first',
+          ai.choose_free_action(kev, [foe], [])[0] == 'drink')
+
+    # And it actually resolves.
+    kev.hp = 4
+    play.spend_free_action(kev, ('drink', 'Still Water'), QUIET)
+    check('the drink is drunk and gone',
+          kev.hp == 7 and kev.ward == 1 and kev.drinks == [],
+          (kev.hp, kev.ward, kev.drinks))
+
+    kev2, foe2 = duo()
+    kev2.oranges = 1
+    other = Combatant('Other', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    set_table([kev2, foe2, other])
+    kev2.load = 'plain'
+    foe2.hp = other.hp = 20
+    play.spend_free_action(kev2, ('orange', FRONT), QUIET)
+    check('an orange hits everyone in the position, unpreventably',
+          foe2.hp == 18 and other.hp == 18 and kev2.oranges == 0,
+          (foe2.hp, other.hp, kev2.oranges))
+
+
 def test_pool_compiles_or_narrates():
     print('\nThe pool')
     pool = cardlib.core_pool()
@@ -1607,6 +1694,8 @@ if __name__ == '__main__':
     test_serve_hands_over_a_real_drink()
     test_summoned_spirits_are_objects()
     test_lets_go_compels_the_room()
+    test_kit_ai_knows_what_a_block_is_for()
+    test_kit_ai_spends_its_free_action()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

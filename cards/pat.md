@@ -31,7 +31,7 @@ Special Rule: Upon simultaneous reveal, this card's color becomes identical to w
 **HERE BOY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It gains the Ongoing Effect: the next time it ties in RPS, it wins instead.
+Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). The summoning grants you the Ongoing Effect: the next time you tie in RPS, you win instead.
 Defense Effect: Same as Effect.
 Range: Both
 *"Here, boy. Come stand with me."*

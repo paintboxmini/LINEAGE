@@ -2469,28 +2469,26 @@ def _totem_damage_buff(ctx, spirit):
     ctx.log('  the totem stands: +2 damage to the party while it lives.')
 
 
-class SpiritWinsNextTie(Op):
-    """HERE BOY: "It gains the Ongoing Effect: the next time it ties in RPS,
-    it wins instead."
+class WinsNextTie(Op):
+    """HERE BOY: "The summoning grants you the Ongoing Effect: the next time
+    you tie in RPS, you win instead."
 
-    **Narrated rather than run, and deliberately.** A spirit is an Object
-    that does not act and cannot choose a defence, so it never reaches an
-    RPS reveal — there is no exchange for the rider to apply to. Reading
-    "it" as the summoner instead would be a rules decision, not a
-    translation, so the engine says what the card says and lets the table
-    rule on it (`campaign/pat.md`, Wild Magic Summoning).
+    Ruled 2026-09-19 to be the summoner rather than the spirit, which could
+    never have used it — an Object does not act and cannot defend, so it
+    never reaches a reveal. Held until spent, on either side of an exchange
+    (`campaign/pat-cards.md`).
     """
 
     def apply(self, ctx):
-        ctx.log('  the spirit wins its next tie — no exchange to apply it '
-                'to; table call.')
+        ctx.actor.wins_next_tie += 1
+        ctx.log(f'  {ctx.actor.name} will win their next tie.')
 
 
 @menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
-      r'it gains the ongoing effect: the next time it ties in rps, '
-      r'it wins instead')
+      r'the summoning grants you the ongoing effect: the next time you tie '
+      r'in rps, you win instead')
 def _r_here_boy(m):
-    return [Summon(), SpiritWinsNextTie()]
+    return [Summon(), WinsNextTie()]
 
 
 @menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'

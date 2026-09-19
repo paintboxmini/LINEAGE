@@ -123,11 +123,15 @@ class Combatant:
         self.passives = []
 
         # Carried gear that fills in a card (`campaign/kevin.md`). `load` is
-        # the prepared round in the grinder, spent when GRIND SHOT resolves
-        # win or lose; `drinks` are prepared servings SERVE hands out. Both
-        # are names, looked up against the tables in that file.
+        # the round currently in the grinder, spent when GRIND SHOT resolves
+        # win or lose; `rounds` is the rest of the bandolier; `drinks` are
+        # prepared servings SERVE hands out; `oranges` are thrown for a free
+        # action. Rounds and drinks are names, looked up against the tables
+        # in that file.
         self.load = None
+        self.rounds = []
         self.drinks = []
+        self.oranges = 0
 
         # `campaign/pat.md`, Wild Magic Summoning: a summoned spirit holds
         # HP at its summoner's position and can be attacked, but it is not a
@@ -144,6 +148,11 @@ class Combatant:
         self.is_object = False
         self.summoner = None
         self.totem_buff = []
+
+        # HERE BOY: a held Ongoing Effect that turns your next tie into a
+        # win, on either side of the exchange (`campaign/pat-cards.md`).
+        # Stacks, and one is spent per tie it resolves.
+        self.wins_next_tie = 0
 
         # Stacking statuses, held as counts.
         self.deadly = 0
@@ -708,6 +717,7 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
 
     outcome = _apply_traits(outcome, atk_traits, def_traits, atk_card,
                             def_card, log)
+    outcome = _held_tie_win(outcome, attacker, defender, log)
     return _finish(outcome, attacker, defender, atk_card, def_card, log,
                    rng, wheel)
 
@@ -751,6 +761,37 @@ def _apply_traits(outcome, atk_traits, def_traits, atk_card, def_card, log):
         elif dfn:
             outcome = Outcome.DEFENDER
             log(f'  {def_card.name} wins ties.')
+    return outcome
+
+
+def _held_tie_win(outcome, attacker, defender, log):
+    """A tie-win somebody is *holding* rather than one a card carries.
+
+    HERE BOY grants it to the summoner (`campaign/pat-cards.md`). Checked
+    after the cards' own tie traits, so a card that wins ties resolves the
+    tie before a held charge has to be spent on it — no charge is wasted on
+    an exchange that was already going to be won.
+
+    Both sides holding one cancels, the same way two tie-winning cards do,
+    and both spend a charge doing it.
+    """
+    if outcome != Outcome.TIE:
+        return outcome
+    a = attacker.wins_next_tie > 0
+    d = defender.wins_next_tie > 0
+    if a and d:
+        attacker.wins_next_tie -= 1
+        defender.wins_next_tie -= 1
+        log('  Both are holding a tie-win — they cancel, and it stays a tie.')
+        return outcome
+    if a:
+        attacker.wins_next_tie -= 1
+        log(f'  {attacker.name} spends a held tie-win.')
+        return Outcome.ATTACKER
+    if d:
+        defender.wins_next_tie -= 1
+        log(f'  {defender.name} spends a held tie-win.')
+        return Outcome.DEFENDER
     return outcome
 
 

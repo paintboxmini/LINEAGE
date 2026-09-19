@@ -80,6 +80,14 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     if who.pending:
         who.tick_anchors(foes[0] if foes else None, allies, foes, rng, log)
 
+    # `rules/combat.md`, Free Actions: one per turn, on top of the Action,
+    # capped regardless of how many are available. Activating your own gear,
+    # eating and drinking all count — which is the whole of Kevin's tension
+    # between reloading, drinking and throwing an orange.
+    free = getattr(agent, 'choose_free_action', None)
+    if free is not None:
+        spend_free_action(who, free(who, foes, allies), log)
+
     if who.restriction(NO_ATTACK) is not None:
         log(f'{who.name} cannot attack this turn.')
         return
@@ -109,6 +117,52 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
             log(f'{who.name} takes another action.')
             continue
         break
+
+
+def spend_free_action(who, choice, log):
+    """One free action, resolved. `choice` is what the agent asked for:
+    ('reload', round) to put a prepared round in the grinder, ('drink',
+    name) to drink one of your own, ('orange', position) to throw one, or
+    None to keep it.
+
+    All three are things `rules/combat.md` already names as free — gear you
+    activate, and eating or drinking.
+    """
+    if not choice:
+        return
+    kind = choice[0]
+    if kind == 'reload' and who.rounds:
+        name = choice[1] if len(choice) > 1 else who.rounds[0]
+        if name not in who.rounds:
+            return
+        who.rounds.remove(name)
+        if who.load is not None:
+            who.rounds.append(who.load)
+        who.load = name
+        log(f'{who.name} loads the {name}.')
+    elif kind == 'drink' and who.drinks:
+        import effects as fx
+        name = choice[1] if len(choice) > 1 else who.drinks[0]
+        if name not in who.drinks:
+            return
+        log(f'{who.name} drinks {name}.')
+        text = fx._drinks().get(name.lower())
+        ops = fx.compile_half(text) if text else None
+        who.drinks.remove(name)
+        if ops:
+            ctx = fx.Context(who, None, allies=[], enemies=[], card=None,
+                             outcome='none', rng=who.rng, log=log,
+                             agent=getattr(who, '_agent', None))
+            ctx.wheel = None
+            for op in ops:
+                op.apply(ctx)
+    elif kind == 'orange' and who.oranges > 0:
+        where = choice[1] if len(choice) > 1 else FRONT
+        who.oranges -= 1
+        log(f'{who.name} throws an incendiary orange at the {where}.')
+        for foe in engine.table():
+            if foe.team != who.team and foe.alive() and foe.position == where:
+                foe.take(2, unpreventable=True, source=who, log=log)
 
 
 def _one_action(who, agent, foes, allies, wheel, log, rng):

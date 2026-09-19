@@ -48,13 +48,12 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **LET'S GO's totem buff is held on the spirit and taken back when it drops**, which is what *kill the totem, lose the buff* means mechanically. Its defence half rolls a real Soul Save per enemy against Pat's Soul + 10 and compels the failures through the same MUST_TARGET that MOCKERY runs on.
 
-**One thing is narrated rather than run, deliberately.** HERE BOY's *"the next time it ties in RPS, it wins instead"* has no exchange to apply to: a spirit does not act and cannot defend, so it never reaches a reveal. Reading *it* as Pat rather than the spirit would be a ruling, not a translation — **so that is a live question for the table** rather than something the engine quietly decided.
+**HERE BOY's rider goes to Pat, ruled 2026-09-19**, and the card was reworded to say so. The old text read as the spirit gaining it, which could never fire — a spirit does not act and cannot defend, so it never reaches a reveal. The summoning grants the tie-win to the summoner: he holds it and spends it on the next tie he is in, attacking or defending. The engine runs it.
 
 Still open:
 
 - Whether HERE BOY and LET'S GO are the *only* two triggers.
 - Whether more than one spirit can be out at a time (there are only three to draw on). *The engine permits it and numbers them; it is not enforcing a cap it was not given.*
-- **What HERE BOY's rider means**, per the paragraph above.
 
 ## Passives
 
