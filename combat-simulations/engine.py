@@ -115,11 +115,16 @@ class Combatant:
         # the Action exactly like a card from hand, and what it saves is the
         # card, never the turn.
         #
-        # **Attacks only, in this engine.** Defending costs no Action, so a
-        # Passive used to defend would save the card and cost nothing at
-        # all, which would make it strictly better than anything in hand on
-        # every single exchange. The conservative reading is taken here and
-        # is flagged in `campaign/passives.md` as a table question.
+        # **Attacks and blocks both**, ruled 2026-09-19. This engine first
+        # took the conservative reading — that "playing one spends your
+        # Action" made it an attack-only thing — and flagged it as a table
+        # question. The table answered: a Passive is a card, and a card
+        # defends.
+        #
+        # That is a bigger change than it sounds. A Both-range Passive is a
+        # legal block in every exchange, so nobody who holds one is ever
+        # without an answer, which is exactly the thing hand size was buying
+        # (`combat-simulations/README.md`).
         self.passives = []
 
         # Carried gear that fills in a card (`campaign/kevin.md`). `load` is
@@ -391,9 +396,9 @@ class Combatant:
         """Cards whose Range is legal for the current positions.
 
         Hand, plus the Passives in their own zone — a Passive is a legal
-        thing to attack with on any turn its Range and its Applies When
-        allow. Pass `passives=False` for the defending case, where a
-        Passive is not offered (see `Combatant.passives`).
+        thing to attack *or* block with on any exchange its Range and its
+        Applies When allow (`Combatant.passives`). `passives=False` is kept
+        for callers that want the hand alone.
         """
         banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
         pool = list(self.hand)

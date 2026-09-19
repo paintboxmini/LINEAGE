@@ -183,55 +183,66 @@ character:**
   not legally block only 33% of the time, against ~50% for the other two,
   was the one whose cards are mostly Both. Unglamorous and real.
 
-## Is the damage gap between colours too wide? No — hand size is the dial
+## What Passives are actually for
 
-*2026-09-19. The question was whether Red's die premium should close now that
-Body weighs ×4 on HP instead of ×3. It was set when Body weighed ×3.*
+*2026-09-19. This section replaces one that said hand size was the dominant
+stat in the game. That was wrong, and it was wrong because the measurement
+left Passives out.*
 
-Three archetypes, stats rotated, **no signature cards and no Passives**, nine
-cards drafted at random from the core pool at each one's colour split, 500
-duels every pairing. So the only thing that differs is which stat is primary
-and what that buys.
+The question was whether Red's die premium should close now that Body
+weighs ×4 on HP instead of ×3. Three archetypes, stats rotated, nine cards
+drafted at random from the core pool at each one's colour split, 500 duels
+a pairing — so the only thing differing is which stat is primary. Each one
+carries **two generic Passives in its primary colour**, in the canonical
+shape `rules/character-creation.md` prices: one committed to Melee for the
+d6, one Both at the d4 default.
 
 | | Red B4 | Blue M4 | Green S4 | spread |
 |---|---|---|---|---|
-| **current rules** | 56.1% | **65.2%** | 28.7% | 36.5 |
-| as it was, Body ×3 | 54.3% | 65.8% | 29.9% | 35.9 |
-| Red Melee d10s → d8 | 54.7% | 66.7% | 28.6% | 38.1 |
-| hand floor raised 2 → 3 | 49.0% | 57.0% | 44.0% | 13.0 |
-| hand size forced equal | 55.0% | 46.0% | 49.0% | **9.0** |
+| **with Passives** | 50.5% | 50.4% | 49.1% | **1.4** |
+| with Passives, hand forced equal | 50.4% | 50.1% | 49.5% | 0.9 |
+| **without Passives** | 56.0% | 63.7% | 30.3% | 33.4 |
+| without, Body ×3 | 54.3% | 65.8% | 29.9% | 35.9 |
+| without, Red Melee d10s → d8 | 54.7% | 66.7% | 28.6% | 38.1 |
 
-**Four things fall out of that, and three of them are the opposite of what
-the question assumed.**
+**The stat economy is balanced, and Passives are what balance it.** Three
+points fall out:
 
-- **The ×3 → ×4 change did almost nothing.** Under two points between
-  colours. It is not why anything is where it is.
-- **Red is not the strongest. Blue is** — nine points clear of Red and
-  thirty-six clear of Green.
-- **Softening Red's dice does not help and makes it worse**, because it
-  widens Blue's lead over the colour that was never the problem.
-- **Hand size is about three quarters of the spread.** Force it equal and
-  36.5 points becomes 9, with Red a nose ahead — which is the shape the
-  design intends, Red paid in damage for being the most restricted.
+- **With Passives the three colours are within 1.4 points of each other.**
+  Nothing needs adjusting. The Red die premium is doing its job at about
+  the right size, and the ×3 → ×4 change created no debt for it to repay.
+- **Forcing hand size equal then changes almost nothing** (1.4 → 0.9). Hand
+  size is *not* a dominant dial. It looked like one only because the
+  earlier run measured a game in which nobody could use their Passives.
+- **The mechanism is a floor, not an edge.** How often an archetype had no
+  legal block at all: **38.8% / 19.4% / 41.7%** without Passives, and
+  **0.0% / 0.0% / 0.0%** with them. A Both-range Passive is a legal defence
+  in every exchange, so a Mind-2 character is never punished for a small
+  hand the way the earlier numbers suggested.
 
-**The mechanism is not "more options to choose from", it is "an answer at
-all".** How often each archetype had *no legal block* when attacked:
+**Two lessons about measuring, both learned the hard way here.**
 
-    hand 4 (Blue)   20.8%
-    hand 3 (Red)    37.1%
-    hand 2 (Green)  42.8%
+- **Leave nothing out of the model and then reason about the gap.** A
+  36-point spread between colours was entirely an artifact of an
+  unimplemented rule. The number was real; the game it described was not.
+- **Seed everything, including the combatants.** `Combatant.__init__` falls
+  back to the module-level `random` when no rng is passed, so a harness
+  that seeds only its own loop still shuffles differently every run. Two
+  identical runs of the party comparison differed by three to five points
+  before this was noticed, which is wider than several differences that had
+  been reported as findings. The harnesses pass `rng=` now.
 
-A Mind-4 character is half as likely to be defenceless as a Mind-2 one. And
-the whole effect **survives random play** almost unchanged — 55.5 / 64.8 /
-29.8 with `RandomAgent` — so it is structural rather than something a greedy
-agent is extracting.
+### Where the agents landed after it
 
-**Nothing here has been changed.** The decision is open, and the levers
-measured are: leave it, raise the hand floor from 2 to 3 (closes most of it,
-smallest possible change), or flatten hand size against Mind. *Read this as
-the stat package in isolation — generic decks, duels, no Passives and no
-party roles — which is exactly the right frame for "what is a point of Mind
-worth" and the wrong one for "how good is a character".*
+`KitAI` beat `SimpleAI` by ten to twenty points of party win rate when
+Passives could not block. With them blocking it is **82.0% against 84.7%
+at four wrackclaws and 76.0% against 75.3% at five** — parity, inside the
+noise. Most of what it was compensating for was the missing floor.
+
+*One thing it is doing worse and has not been chased: it drops the
+Blue-primary character about twice as often as `SimpleAI` does (28% against
+14%). An attempt to fix that by valuing a free Passive block made it worse
+and was reverted. Open.*
 
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of

@@ -582,7 +582,9 @@ def test_passives_are_a_zone_not_a_pile():
     offered = a.playable(b)
     check('a Passive is offered alongside the hand',
           'MIMETIC BLADE' in [c.name for c in offered], [c.name for c in offered])
-    check('and is not offered as a defence',
+    check('and is offered as a defence too, ruled 2026-09-19',
+          'MIMETIC BLADE' in [c.name for c in a.playable(b)])
+    check('the hand alone is still askable',
           'MIMETIC BLADE' not in
           [c.name for c in a.playable(b, passives=False)])
 
@@ -845,6 +847,22 @@ def test_kit_ai_knows_what_a_block_is_for():
           ai.choose_attack(pat, foe) is strike, ai.choose_attack(pat, foe))
     check('SimpleAI blocks with the big attack card instead',
           SimpleAI(random.Random(0)).choose_defense(pat, foe) is strike)
+
+    # A Passive blocks without leaving its zone — no hand to remove it
+    # from, and nothing to discard afterwards.
+    import engine
+    passives = cardlib.load_passives()
+    guard, hitter = duo()
+    guard.hp = hitter.hp = 400
+    guard.hand = []
+    guard.passives = [passives['MIMETIC BLADE']]
+    blade = guard.passives[0]
+    engine.resolve_attack(hitter, guard, core['STRIKE'], blade,
+                          rng=random.Random(0), log=QUIET)
+    check('blocking with a Passive costs it nothing',
+          not guard.discard and not guard.hand
+          and guard.playable(hitter) == [blade],
+          (guard.discard, guard.hand))
 
     # A stance it is already holding is worth less than one it is not.
     # Compared directly rather than through a choice against an unrelated

@@ -71,7 +71,7 @@ class RandomAgent(Agent):
         return self.rng.choice(opts) if opts else None
 
     def choose_defense(self, me, attacker):
-        opts = me.playable(attacker, passives=False)
+        opts = me.playable(attacker)
         return self.rng.choice(opts) if opts else None
 
 
@@ -125,7 +125,7 @@ class SimpleAI(Agent):
         return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
 
     def choose_defense(self, me, attacker):
-        opts = me.playable(attacker, passives=False)
+        opts = me.playable(attacker)
         if not opts:
             return None
         return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
@@ -209,7 +209,7 @@ class HumanAgent(Agent):
         return self._pick('Card', opts)
 
     def choose_defense(self, me, attacker):
-        legal = me.playable(attacker, passives=False)
+        legal = me.playable(attacker)
         if not legal:
             self.show(f'\n {me.name} has no legal defense against '
                       f'{attacker.name}.')
@@ -431,7 +431,7 @@ class KitAI(SimpleAI):
     # ---- defending ------------------------------------------------------
 
     def choose_defense(self, me, attacker):
-        opts = me.playable(attacker, passives=False)
+        opts = me.playable(attacker)
         if not opts:
             return None
         return max(opts, key=lambda c: (self._defence_value(me, c, attacker),

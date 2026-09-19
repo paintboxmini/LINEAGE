@@ -218,6 +218,10 @@ Once concealment is resolved, a Passive plays exactly like any other card: `rule
 
 A **Passive** is the card-shaped thing described above: printed colour, Range, die, an Applies When, sitting face up in its own zone. Playing one spends your Action exactly like playing a card from hand. What it saves you is the card, never the turn.
 
+**A Passive can attack or block**, ruled 2026-09-19. It is a card, and a card defends — so it is a legal defence on any exchange its Range and its Applies When allow, exactly as it is a legal attack. It never leaves its zone either way.
+
+*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand. Measured across 750 duels, that single fact is the difference between the three stat spreads being 33 points apart and being 1 point apart — see `combat-simulations/README.md`, What Passives are actually for. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+
 A **Trait** is rules text that is simply true. It costs no Action, is never played, has no colour or die, and is never a choice — Armour 2, a bite that re-grants Rooted, a nose that can't be Blinded, a spirit's rolled HP. If a thing spends an Action, it is not a Trait; it is a card, and it should be written as one.
 
 **Creatures have Traits, not Passives** (`bestiary/`). Every creature stat block uses that word now. The distinction matters because a creature's innate rules and a player's Passive were never the same object and shared a name for no reason: a Minotaur's Relentless has no die, no colour, and nothing to play it on.

@@ -205,7 +205,7 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
 
         dagent = target._agent
         dcard = dagent.choose_defense(target, who)
-        if dcard is not None:
+        if dcard is not None and not target.is_passive(dcard):
             target.hand.remove(dcard)
 
         if who.in_cover:
