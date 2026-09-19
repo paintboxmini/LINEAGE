@@ -4,7 +4,11 @@
 
 ## What He Is
 
-A Seed of the Amalgam (`campaign/the-amalgam.md`) — a liquid-metal, shapeshifting extension of an alien hive mind, sent out to scout Eclipseria ahead of a conquest that hasn't come yet. The crossing between his world and this one went wrong: he arrived with his telepathic link to the Amalgam severed and most of his memory gone with it. Whatever he is now, he's had to build back up from almost nothing since. He doesn't age.
+A Seed of the Amalgam (`campaign/the-amalgam.md`) — a liquid-metal, shapeshifting extension of an alien hive mind, **sent as a probe** ahead of a conquest that hasn't come yet. He arrived with his telepathic link to the Amalgam severed and most of his memory gone with it, and has had to build back up from almost nothing since.
+
+**The Abyssal Ruins are what cut him off.** *Set 2026-09-19, and it moves the cause.* The severing was not the crossing going wrong — it was where he landed. Whatever the rift does to what comes near it, it did to the link, and it did it to a probe whose entire function was to stay connected. *Being in another plane of existence makes the link hard on its own; the Ruins are what made it silent.*
+
+**Which puts the wound and the setting in the same object.** The place that severed him is the place that raised him, the place his father was studying for exactly this kind of effect, and the place whose University eventually came to take him. Nothing about Chris is elsewhere.
 
 Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devourer), symbiotes (alien biology that bonds and reshapes), Mind Flayers (a hive intelligence, patient and expansionist). Not imported wholesale — the register, not the names.
 
@@ -26,10 +30,17 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **He named the University himself on the same day**, and the Ruins keep their own name — Gemstone University is the school in the rim, not a second name for the crater it looks into. Chris grew up in its shadow without being of it, and is a student there now, which is where Kevin met him (`campaign/kevin.md`).
 
-### Two things this collides with, unresolved on purpose
+### The child shape, and the moults
 
-- **"He doesn't age"** (What He Is, above) sits badly against arriving as a small child and being raised to adulthood. Both cannot be simply true. The cheap fixes are obvious — he aged until he stopped, the ageing was mimicry rather than growth, the child-shape was never his real one — and all of them are Chris's to pick, or to reject in favour of dropping the line.
-- **The Amalgam** (`campaign/the-amalgam.md`) has him *sent* to scout Eclipseria ahead of a conquest, arriving severed and stripped of memory. A scout and a lost child are not the same arrival. They can be reconciled — a seed sent out arrives as what it can manage, memory gone means he would not know he was sent — but nobody has reconciled them yet, and the answer changes how sinister his own origin is to him.
+**He imprinted.** What came through the Gateway was not a child — it took that shape because of the man who picked it up. The first thing it looked at properly, it became the small version of, and then it kept being that. *Mimicry, running involuntarily, before he had any idea it was a thing he was doing* (Trait — Mimicry, below). His deepest and most permanent use of the Trait is the one he never chose.
+
+**He ages, but not the way a person does, and how long he has is unknown.** Growth did not happen continuously. **He moulted** — several times across the years, each one leaving a shed behind and a slightly larger boy standing in it, and then nothing for a long while. A childhood measured in a handful of discrete events instead of a smooth curve.
+
+*Two things that are worth sitting with rather than smoothing over.* A father watching his son grow in jumps, on no schedule, with a husk to dispose of afterwards, and having decided already that he was not going to report any of this. And a boy who knows perfectly well that the shape he wears is the shape he copied, and has worn it long enough that it is not clear even to him whether that still makes it a copy.
+
+**Lifespan is undetermined and should stay that way.** It is not "immortal" and it is not a number. Nobody knows, including him, and the man who might have had a theory about it is missing.
+
+*This supersedes "He doesn't age", which stood in this file and in `campaign/the-amalgam.md` before 2026-09-19.*
 
 *This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked, and now fully replaced: the man who raised him is his father, at the University, and it happened at the Ruins. Iron and Briarwatch are free for other uses.*
 
@@ -140,6 +151,10 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 **He remembers surfaces, not people.** Not a time limit and not perfect recall — what he keeps is exactly what he actually looked at. Someone he studied gives him a copy that holds up under attention. Someone he glanced at across a market gives him one that is wrong in ways he cannot identify and cannot fix, because he doesn't have the missing information to know it's missing. *This is the good version of the restriction: it rewards going and looking properly, and its failures are interesting rather than arbitrary.*
 
 **He is a fixed quantity of metal.** He can be roughly his own mass. A child is hollow, something huge is too small, and neither works. Same constraint AMALGAMOUS FORM already runs on, where a standing structure costs his own HP to build.
+
+*Fixed at any moment, not fixed across his life.* He grew — in moults, across years (Where He Landed, above) — so the mass he is limited to today is not the mass he was limited to as a boy. What the moults added, and where it came from, is not written.
+
+**And the imprint is this Trait's deepest use, made before he could have known he was using it.** The human shape he wears is a copy: taken from the man who picked him up, held so long that whether it still counts as a copy is a real question rather than a rhetorical one. *Everything below about surfaces and attention describes what he does deliberately. The one that mattered most was involuntary.*
 
 **It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
 
@@ -276,8 +291,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 - Character name
 - **His father's name**, and what actually happened to him
-- **Whether "he doesn't age" survives** arriving as a small child (Where He Landed, above)
-- **How the scout and the child reconcile**, if they do (`campaign/the-amalgam.md`)
+- **How long he lives** — undetermined on purpose, and better left that way
+- **Whether the moults are finished**, and what the sheds were made of
 - **What the spell book is** — whose, and what is in it
 - **What the University wanted to make him into**, in any detail beyond "a weapon"
 - Appearance, voice, backstory detail beyond the above

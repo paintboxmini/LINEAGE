@@ -43,7 +43,9 @@ Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21, han
 
 ## Concept
 
-A combat chef — and combat bartender, really. **Raised in the Temple of Unity** in the capital (`places/capital/capital.md`), the interfaith cathedral at the Temple District's heart — his father is its head (`characters/ossian.md`). The temple is known for its wines, and Kevin is overseeing a shipment of them when Session 1 opens (`campaign/session-1-convergence.md`).
+A combat chef — and combat bartender, really. **Raised in the Temple of Unity** in the capital (`places/capital/capital.md`), the interfaith cathedral at the Temple District's heart — his father is its head (`characters/ossian.md`). The temple is known for its wines, and running them is how Kevin came to know Vulture's Nest as well as he does.
+
+**He is not running wine when Session 1 opens.** *Settled 2026-09-19.* He is at the Nest because he fled the Abyssal Ruins with Chris and is hiding him from Gemstone University (And then it ended badly, below). No cargo, no errand, no job — just a priest's son on the run with somebody else's alien, using a family name that still opens a berth.
 
 Chronically shirked his actual studies and rituals to cook instead — and the cooking is where his signature tool comes from. Everything that goes bang in Kevin's kit is **food he prepared until it would**, starting with his own family's pepper (The Pepper Is The Family Business, above).
 
@@ -74,6 +76,16 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 **Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
 
 **What happened to Chris's father is unknown**, to Kevin as much as to anyone.
+
+### Nothing is making him do this
+
+**This is the most important thing about Kevin and it is easy to miss.** Chris is running because something is hunting him. Pat is hunting because his people are dying and the dead sent him. **Kevin is there because he wants to be.**
+
+No obligation, no summons, no debt, no shipment. He was not asked, he is not owed, and at any point between the Ruins and the Nest he could have gone back to the Capital and been a priest's son with a strange story. *He has instead attached himself to a fugitive, put the family name behind a berth in a port under lockdown, and made no particular thing of it.*
+
+**Which quietly makes him the party's centre rather than its cook.** The other two are being moved by forces; he is the one who chose, and the one who keeps choosing every morning he does not leave. **It also means nobody can take it away from him** — a character pulled by an obligation can be released from it, and Kevin cannot be, because there is nothing holding him but the decision.
+
+*Worth protecting at the table: do not give him a reason. The absence is the characterisation.*
 
 ### His father, and the shape of leaving
 
@@ -251,13 +263,12 @@ Range: Both
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
 - Price
-- **Whether he is carrying a shipment this trip** (`campaign/session-1-convergence.md`, Kevin — the wine shipment) — the trade history is settled, the current cargo is not
 - **What he thinks he did that night**, and whether he would do it again
 - The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
 - Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
 - How long he has actually been at Gemstone University, and whether he is going back
 
-*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, where the exploding produce comes from, that he can cook anywhere, that he carries exactly one knife, and why he is at Vulture's Nest.*
+*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, where the exploding produce comes from, that he can cook anywhere, that he carries exactly one knife, that he is carrying no shipment when Session 1 opens, and why he is at Vulture's Nest.*
 
 ## Related Documents
 

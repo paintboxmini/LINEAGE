@@ -16,27 +16,24 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 
 ---
 
-## Kevin — the wine shipment
+## Kevin — the one nobody is making do this
 
-**Settled.** His father is head of the **Temple of Unity** in the capital (`places/capital/capital.md`, `characters/vescal.md`) — the interfaith cathedral at the Temple District's heart, the one people go to when they can't resolve things themselves. The temple is known for its wines, and Kevin is overseeing a shipment.
+**Settled 2026-09-19, and it is the opposite of what this section used to say.** It previously had him escorting a temple wine shipment when Session 1 opens, and called that settled. **He is not carrying anything.** He fled the Abyssal Ruins with Chris and is hiding him from Gemstone University (`campaign/kevin.md`, And then it ended badly).
 
-This does a lot of quiet work:
+**What survives from the old version, because it was never about the cargo:**
 
-- **It explains the kit without explaining it.** A temple kid who shirked his studies to cook (`campaign/kevin.md`) being trusted with the cellar's freight is exactly the job a family gives someone whose actual talent is embarrassing to them. He is good at this and it is not what he wants.
-- **It puts him on the water with cargo**, which is the most ordinary reason anyone is at that dock, and the fastest thing to lose.
-- **It gives him somewhere to not go back to.** Nothing dramatic has to happen to the shipment for Kevin to end up on a boat going the wrong way.
+- **His father is head of the Temple of Unity** in the capital (`characters/ossian.md`), the temple is known for its wines, and **running them is how Kevin knows Vulture's Nest** — many trips, over years, and he likes the place for a smuggler's-son's reasons: seedy, dark, and carrying an underbelly a person can vanish into. *That is why he picked it.*
+- **The Herb name still opens a berth.** He is trading on it rather than on freight, which is the more exposed version and the more interesting one.
 
-*This supersedes the "isolated temple" lean in his own file, which was written as genuinely open. `campaign/kevin.md` updated to match.*
+**What is new, and is the actual point of the character:**
 
-**Amended 2026-09-19 — the trade history holds, the shipment is now a question.** What is confirmed is that Kevin has run temple wine to Vulture's Nest **many times** and knows the place well; that is why he chose it as somewhere to hide Chris. What no longer follows automatically is that he is *escorting a shipment when Session 1 opens*, because the trip he actually made was a flight out of the Abyssal Ruins with a friend the University wants.
+**Nothing is forcing him.** Chris is running because something is hunting him. Pat is hunting because his dead sent him. Kevin is helping **because he wants to** — no obligation, no summons, no debt, no shipment, and at any point he could have gone home to the Capital and been a priest's son with a strange story.
 
-**Three ways it can go, and this is a table question rather than a file question:**
+*The old version of this file gave that role to Chris* — the one with nothing pulling him, "the only one who is simply going, and that is what makes him the one who says yes to the boat." **That role has moved to Kevin, and it is a better fit**, because Chris now has the heaviest obligation at the table and Kevin has none at all.
 
-- **The shipment is real and he is meeting it.** He runs for the Nest because it is where the boat was going to be anyway, which gives him cover, a berth and a reason to be on the manifest. Everything written above survives intact.
-- **The shipment is over.** He delivered it, was on his way back, and the University happened first. The freight is somebody else's problem now and the boat is just a boat.
-- **There is no shipment this trip.** He is a priest's son on the run with somebody else's alien, using a family name that still opens a berth. *The most exposed version, and the most interesting one — it makes the Herb name the only thing he is trading on.*
+**Three verbs, one dock: Chris is running, Pat is hunting, Kevin chose.**
 
-**What does not change in any of them:** the lockdown catches him, he knows this port better than anyone else in the party, and his father's name is still worth something on that dock.
+**Protect the absence.** A character pulled by an obligation can be released from it; Kevin cannot be, because there is nothing holding him but the decision. Do not give him a reason.
 
 ---
 
@@ -135,7 +132,7 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 
 **A spooked Compact does not inspect one hull.** It inspects the berth. So:
 
-- **Kevin and Chris's boat is locked down** with everything on that stretch of dock — and if Kevin is carrying freight, that too (Kevin — the wine shipment, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
+- **Kevin and Chris's boat is locked down** with everything on that stretch of dock. No freight is involved — they are not shipping anything, they are leaving (Kevin — the one nobody is making do this, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
 - **Pat is at the docks asking river questions** — which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud.
 - **Chris cannot afford to be counted**, which is the opposite of what this section used to say about him. He was previously the innocent one everybody believes; he is now the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
 
@@ -165,7 +162,7 @@ Unfashionable, entirely legitimate, and worth keeping in the back pocket if the 
 
 Nothing yet — this file asserts nothing in canon on its own. If the opening holds, three things want writing properly:
 
-- **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`).
+- **Kevin's parentage** puts a named head at the Temple of Unity, which currently has Vescal's history attached to it and no leadership written (`characters/vescal.md`). *Done — `characters/ossian.md`.*
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
 
@@ -180,7 +177,6 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 **What is genuinely still open:**
 
-- **Whether Kevin is carrying a shipment this trip** (Kevin — the wine shipment, above). Three workable versions, all table questions.
 - **What happened to Chris's father** — deliberately unwritten, and a thread rather than a gap.
 - **His name**, and Chris's own character name.
 - **How far the University's hostility goes** — the whole institution, a faction, or one office (`places/abyssal-ruins.md`, It is an antagonist now). Reserved for Chris's player.
@@ -190,7 +186,8 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 **Two older notes retired on 2026-09-19**, recorded so nobody reinstates them:
 
 - *"Chris's route to the Nest is open"* — it is not; Kevin brought him.
-- *"Chris has no obligation pulling him"* — he has the heaviest one at the table.
+- *"Chris has no obligation pulling him"* — he has the heaviest one at the table. **Kevin has that role now**, and has it more completely: Chris was merely unattached, and Kevin is actively choosing against his own interests.
+- *"Kevin is overseeing a wine shipment when Session 1 opens"* — he is carrying nothing. The wine trade is his history with the port, not his errand in it.
 
 ---
 

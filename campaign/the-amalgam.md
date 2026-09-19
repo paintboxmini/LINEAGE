@@ -14,21 +14,29 @@ One of those worlds belongs almost entirely to a single continuous mind: **the A
 
 **Crossing between worlds isn't a flight, it's a wound.** Two Cut realities have nothing between them but the Unheld itself — no clean corridor from one Name to another, only the same unmeaning the Knife first cut this world out of. A Seed crosses it anyway, briefly un-Named to get from one side to the other, and re-coheres on arrival if the crossing goes right.
 
-Chris's didn't go right.
+Chris's didn't go right — or rather, *what went wrong was not the crossing.*
+
+**Revised 2026-09-19: the Abyssal Ruins severed the link, not the passage.** He came through and the place he came through into cut him off. Whatever the largest rift in Eclipseria does to what sits near it, it did to a telepathic connection spanning two planes — a connection that was already the hard part, since distance across realities is not a distance the Amalgam has solved either.
 
 He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `factions-and-races/races-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
 
-He doesn't age. Whatever that costs, it isn't paid the way a person's years usually are.
+**He ages, and not the way a person does.** He arrived as something that took the shape of a small child — imprinted off the man who found him — and grew in **moults** rather than in a curve: several of them across the years, each leaving a shed and a larger boy, and long flat stretches between. **How long he has is undetermined** and is better left so (`campaign/chris.md`, The child shape, and the moults). *This replaces "He doesn't age", which stood here until 2026-09-19.*
 
 ## Arrival
 
-He came down at the Abyssal Ruins — almost certainly through the Central Gateway (`places/abyssal-ruins.md`), the largest known rift in Eclipseria and the only crossing point in the region big enough to have let something like him through at all. Found, eventually, and brought to Briarwatch — a day's travel from Vulture's Nest, the nearest hub the Ruins actually route toward.
+He came down at the Abyssal Ruins, through the Central Gateway (`places/abyssal-ruins.md`) — the largest known rift in Eclipseria and the only crossing point in the region big enough to have let something like him through at all. **And he stayed there.**
 
-**Found and taken in by Iron** (`characters/iron.md`) — Drew's own suggestion, tentative, not committed. "Raised" is the wrong word by Chris's own account (he doesn't age, and wasn't a child in any sense Iron would recognize), but *taken in* fits everything already true about Iron: a man who ties fresh briarbundles at an empty house every autumn and never tells anyone, who's been waiting for real help longer than he admits to. Someone who does quiet, unclaimed decency without needing the story to be about him is exactly who could find a memoryless, ageless, unexplainable stranger and just start teaching him how a farm works, without ever needing an origin story he probably couldn't have gotten a straight answer to anyway.
+**Found and raised by a scholar of Gemstone University**, whose field is plant life and who was at the Ruins studying what the rift does to the things that grow near it. He did not report the find. He raised the child as his own, in secret, away from the building, and Chris grew up in the shadow of the institution that would eventually come to take him (`campaign/chris.md`, Where He Landed).
+
+*This replaces the Iron and Briarwatch arrival that stood here until 2026-09-19* — Drew's own suggestion, always marked tentative, and now fully superseded by its owner. Iron and Briarwatch are free for other uses, and everything this file used to argue from "he wasn't a child in any sense" is void: he was a child in most of the senses that matter, because he imprinted into one and was brought up as one.
 
 ## What He Learned
 
-**Farming** — probable first Skill (`campaign/chris.md`). Not glamorous, not chosen, just what was in front of him at Briarwatch: irrigation, drainage, reading soil by feel, the same vocabulary every farmer there already speaks (`places/briarwatch.md`). Worth sitting with the irony on purpose rather than smoothing it over: a Seed sent to learn a world well enough to help consume it, learning instead how to grow something and let it be what it is.
+**Plants**, from the man who raised him. *Rewritten 2026-09-19 — this section used to say farming, at Briarwatch, as a probable first Skill; the Briarwatch arrival is gone and his Skills are Nature and Performance (`campaign/chris.md`).*
+
+**The irony survives the change and gets sharper.** A probe sent to learn a world well enough to help consume it was brought up by a botanist — taught, patiently and across years, how living things work, what they need, and how to let a thing be what it is. His **Nature +2** is not a survival skill picked up on the road. It is his father's field, handed down the ordinary way, to something that was sent here to do the opposite with it.
+
+**And it is why his magic looks the way it does.** Nature and transmogrifying (`campaign/chris.md`, Magic Expression): half of what he expresses through a card is the discipline he was raised inside, and the other half is what he is.
 
 ## The Live Thread
 
@@ -49,7 +57,7 @@ He came down at the Abyssal Ruins — almost certainly through the Central Gatew
 - `campaign/chris.md` — the character this belongs to
 - `campaign/passives.md` — AMALGAMOUS FORM
 - `places/abyssal-ruins.md` — the Central Gateway, the likely crossing point
-- `places/briarwatch.md` — where he ended up
+- `places/abyssal-ruins.md` — where he came through, where he grew up, and the University that came for him
 - `characters/iron.md` — the farmer, tentatively
 - `world/creation-myth-the-three-cuts.md` — the Unheld, what a crossing actually costs
 - `factions-and-races/races-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction

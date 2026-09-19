@@ -303,7 +303,7 @@ The Red Scarves are already in your peripheral vision.
 
 **None of them is only there about cargo**, and that is the point rather than a flaw (`campaign/session-1-convergence.md`, Bringing them together). *Updated 2026-09-19 — this paragraph previously had Chris as the idler whose reasons everybody believes, which is now the opposite of true.*
 
-- **Kevin and Chris came in together, running**, out of the Abyssal Ruins and the institution that tried to take Chris by force (`campaign/chris.md`, The Night They Ran). Their boat is in the hold with everything else, and if Kevin is carrying temple freight this trip, so is that. Kevin chose this port precisely because a person can vanish in it, which was true right up until the Compact started writing names down.
+- **Kevin and Chris came in together, running**, out of the Abyssal Ruins and the institution that tried to take Chris by force (`campaign/chris.md`, The Night They Ran). **They are carrying nothing** — no freight, no errand; their boat is simply the way out, and it is in the hold with everything else. Kevin chose this port precisely because a person can vanish in it, which was true right up until the Compact started writing names down.
 - **Pat is at the docks asking river questions**, which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud. He arrived by boat and paid for the passage.
 - **Chris is the one who can least afford to be counted.** He says nothing about why.
 
