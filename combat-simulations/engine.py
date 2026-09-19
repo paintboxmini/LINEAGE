@@ -159,6 +159,15 @@ class Combatant:
         # Stacks, and one is spent per tie it resolves.
         self.wins_next_tie = 0
 
+        # Everything the table has watched land on this combatant, added up.
+        # **This is public and `hp` is not.** A hit is announced and its
+        # number is read out, so anyone playing can keep a running total of
+        # what a creature has absorbed — but not of what it has left, which
+        # would need `max_hp`. That asymmetry is the point: an agent using
+        # this is inferring toughness from play rather than reading a sheet
+        # it was never handed (`agents.Knowledge`).
+        self.seen_damage = 0
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -520,6 +529,7 @@ class Combatant:
             target.hp = 0
 
         dealt = before - target.hp
+        target.seen_damage += dealt
         if log and dealt:
             log(f'{target.name} takes {dealt} ({target.hp}/{target.max_hp} HP).')
 

@@ -19,6 +19,7 @@ python3 play.py --quiet         # result only
 python3 test_wheel.py           # the initiative-shift worked cases
 python3 test_invariants.py      # rules/invariants.md, Confirmed
 python3 test_effects.py         # the keyword rulings, through the cards
+python3 test_information.py     # no agent reads a hidden zone
 python3 effects.py              # how much of the pool compiles
 python3 cards.py                # card counts, as a load check
 
@@ -40,6 +41,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | `test_wheel.py` | `rules/initiative-shift-examples.md` as assertions. |
 | `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across 600 randomised fights, both agents. |
 | `test_effects.py` | `rules/card-glossary.md` as assertions, through the cards that use each keyword. |
+| `test_information.py` | Reads `agents.py` and fails if any agent touches a hidden zone — a hand, a deck, HP or a stat line. Static, so it catches a leak no fight in the suite happens to exercise. |
 
 `rules/invariants.md` is the specification this is checked against.
 
@@ -239,9 +241,11 @@ Passives could not block. With them blocking it fell to parity — 82.0%
 against 84.7% at four wrackclaws, 76.0% against 75.3% at five — and it was
 dropping the Blue-primary character twice as often as `SimpleAI` did, 28%
 against 14%. Both of those turned out to be **one bug in the agent**, and
-with it fixed the figures are 82.0% against **89.0%** and 76.0% against
-**86.7%**, with every character going down less often than under
-`SimpleAI`. Chasing the character was what found it; see below.
+with it fixed — and with the information rule and the Passive rule below
+applied to both agents — the figures are 86.3% against **88.3%** at four
+wrackclaws and 80.0% against **83.7%** at five, with every character going
+down less often than under `SimpleAI`. Chasing the character was what
+found it; see below.
 
 ### The prior that was worse than no prior
 
@@ -273,38 +277,116 @@ Three things about this are worth keeping:
   three cards are visible and the missing quarter is exactly the one that
   decides the exchange. The most common thing the defender saw was a
   perfectly flat 1/1/1 — because the second RED was the one coming.
-- **The fix was already written down in the rules.** Deck size is total
-  stats and each colour's count equals its matching stat, so a stat block
-  *is* a colour composition (`rules/cards.md`). That prior is not
-  conditioned on the choice the attacker has already made, which is the
-  whole of what was wrong. Weighting it further by each colour's mean die
-  — Red is played more because Red's dice are bigger — was a wash across
-  six different foe shapes, so it was not kept.
+- **The first fix was right about the bias and wrong about the source.**
+  Deck size is total stats and each colour's count equals its matching
+  stat, so a stat block *is* a colour composition (`rules/cards.md`), and
+  reading the prior off the attacker's stat line removed the inversion
+  completely. It was also a sheet the defender was never shown — the same
+  offence as reading the hand, just a tidier one — and it did not survive
+  the information rule below. The prior now comes from the cards the
+  attacker has been *watched* to play, which is that same inference run
+  the legal way round. Weighting it by each colour's mean die — Red is
+  played more because Red's dice are bigger — was a wash across six foe
+  shapes and was not kept.
 
 The fixed prior wins against every foe shape tried, not just the red-heavy
-one that exposed it: 250 fights each at 1/2/1, 1/1/2, 2/2/2, 3/1/1 and
-1/3/1, it is ahead of both `SimpleAI` and the old `KitAI` on win rate and
-on down rate in every row.
+one that exposed it: 250 fights each at 2/1/1, 1/2/1, 1/1/2, 2/2/2, 3/1/1
+and 1/3/1, it is ahead of `SimpleAI` on win rate and on down rate in every
+row, by as much as 9.6 points at 1/3/1.
 
-### A card note that fell out of the weight sweep
+### A card note that fell out of the weight sweep — and was wrong
 
-Re-sweeping `KitAI`'s weights on the party fight — the duel having been
-measured to see none of them — showed that four of the five barely move
-the result, and turned up something about a card rather than about the
-agent. **Chris never sets his stance.** KILLSWITCH was a
-legal attack 2232 times in 300 fights and was chosen twice; a stance was
-up on 3 turns out of 2942. Soul 2 + d4 scores 4.0, and his MIMETIC BLADE
-Passive scores 6.0 and costs no card at all, so the stance is dominated by
-a card he never has to spend.
+The sweep said `_SETUP_BONUS` was inert, and the reason looked like a fact
+about a card: **Chris never set his stance.** KILLSWITCH was a legal attack
+2232 times in 300 fights and was chosen twice; a stance was up on 3 turns
+out of 2942. Soul 2 + d4 scores 4.0 and his MIMETIC BLADE Passive scores
+6.0 and costs no card, so the stance looked priced out by something he
+never has to spend. That got written up here as a note about KILLSWITCH.
 
-Forcing him to set it changes nothing measurable: raise the setup weight
-until he plays it about once a fight and the party result moves under a
-point either way. So this is **not** a case of the agent misplaying a good
-card, and it is not an argument for changing KILLSWITCH — it is one
-measurement, on one fill deck, against one creature, and what it says is
-that a stance priced against a free Passive has a hard time getting played.
-Whether that matters is a question about the card, and the card is Chris's
-(`campaign/chris.md`).
+**It was a note about the agent.** A Passive should never have been
+competing on its number at all (see below). With `_prefer_hand` in place,
+KILLSWITCH is chosen 149 times of 698 legal and a stance is up on 597
+turns of 2676, and `_REPEAT_PENALTY` — which only fires while a stance is
+up, and had therefore never fired — turns out to be the one weight in the
+grid worth a point. Nothing about the card needed changing.
+
+Worth keeping as a method note: **a weight that reads as inert is as
+likely to mean the agent never reaches the situation as it is to mean the
+weight does not matter,** and in a sweep the two are indistinguishable.
+
+## What an agent is allowed to know
+
+**Hands and decks are hidden. So are HP, max HP and the stat line.** An
+agent may not read them and may not decide anything on them. What it may
+have is what happens in front of everyone at the table: cards revealed to
+be played and then sitting face up in the discard, Ongoing Effects on the
+table, positions, Down, status tokens, and the number called out when a
+hit lands.
+
+`agents.Knowledge` is that, and nothing else. It folds each opponent's
+face-up cards into a running colour count — memory rather than a live read
+of the discard pile, because a deck reshuffles when it runs out and nobody
+at the table forgets what they watched go in — and answers the defence
+prior from it, Laplace-smoothed so that an agent which has seen two cards
+is still nearly ignorant. `Combatant.seen_damage` is the other half: the
+running total the table has watched land on someone, which is public in a
+way `hp` is not. It says how much a creature has absorbed and never how
+much it has left, because that would take a `max_hp` nobody was shown.
+
+**This closed two leaks that had been sitting in the agents since they
+were written**, and the second had already survived one round of being
+fixed. `_odds` read `attacker.hand + attacker.deck`; replacing that with
+the attacker's stat line fixed the inversion it was suffering from but
+was still a sheet the defender was never handed. `_weakest` and
+`choose_target` read HP outright. All three now run on observation.
+
+**The inference works, given something to watch.** Against a 5/4/4
+creature over 400 fights, the distance between what the tracker believes
+about a deck's colours and the truth falls monotonically with exposure:
+
+| cards watched | error |
+|---|---|
+| 2 | 0.142 |
+| 6 | 0.104 |
+| 8 | 0.081 |
+| 10 | 0.068 |
+| 12 | 0.020 |
+
+That is the deck rule's side effect (`rules/cards.md`, Enemy decks) run
+the legal way round — reveal your stats and you have revealed your deck,
+so play your deck for long enough and you have revealed your stats.
+
+**And playing fair costs about four points.** Measured by re-running the
+shipped agent with each leak reopened, 400 fights a row against five
+wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
+86.5% peeking at both. Worth knowing in both directions — it is the size
+of the handicap, and it is also how much every earlier figure in this file
+was flattered by information the agent should not have had.
+
+## A Passive is the floor, not a pick
+
+**It is always the weakest thing a character has, and that is the point.**
+A Passive has a colour, a Range and a die and no Effect at all, where
+every card in a deck carries text. What it buys is never being stuck —
+never a turn with no legal attack, never an exchange with no legal block —
+and the price of always having it is that it loses to anything that could
+have been played instead. So: play the strong options, fall back on the
+weak one when it is needed.
+
+Scoring alone will not produce that, and did not. MIMETIC BLADE is Body 3
++ d6, which is 6.0 on expected damage and above most of what Chris holds,
+so the value function ranked it first and he opened with it in **57% of
+his attacks** — a Passive as a main line. `Agent._prefer_hand` makes the
+rule structural instead of a number to be tuned: a Passive is considered
+only when the hand has nothing legal. Passive use drops to 37% of Chris's
+attacks, which is what the fallback is actually for.
+
+It also plays better, which is not why it is there but is worth recording:
+89.0% and 82.8% against 87.0% and 81.0% with Passives competing freely, at
+four and five wrackclaws over 400 fights. A softer version — score them
+but dock 2.0 for carrying no text — measures a shade better still (90.0%,
+83.2%) and was not taken, because the strict rule is a statement about
+what a Passive *is* and the soft one is a parameter.
 
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of

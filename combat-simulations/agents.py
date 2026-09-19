@@ -10,7 +10,68 @@ import random
 from engine import FRONT, BACK
 
 
+class Knowledge:
+    """What one combatant has been allowed to notice about another.
+
+    **The hidden zones are hidden, and that is not negotiable by an agent
+    that would play better with a peek.** A hand is hidden. A deck is
+    hidden. So are HP, max HP and the stat line — an agent may not read
+    them and may not decide anything on them.
+
+    What is public is what happens in front of everyone: a card is revealed
+    to be played, and after the exchange it goes to the discard where it
+    stays face up. An Ongoing Effect sits on the table. A hit is announced
+    with its number. Position, Down and the status tokens are all on the
+    table too.
+
+    So knowing an opponent is not a lookup, it is a slow accumulation, and
+    an agent early in a fight is supposed to be ignorant. Every card they
+    reveal is one more sample of a deck whose colour counts follow their
+    stat line (`rules/cards.md`, Enemy decks) — which means **watching
+    someone play is how you learn their stats**, the same inference the
+    deck rule's side effect describes, run the legal way round.
+
+    Memory rather than a live read of the discard pile, deliberately: a
+    deck reshuffles when it runs out and the pile empties, and nobody at
+    the table forgets what they watched go into it.
+    """
+
+    def __init__(self):
+        self.colors = {}      # name -> Counter of colours revealed
+        self._seen = {}       # name -> ids already counted
+
+    def observe(self, other):
+        """Fold in whatever of theirs is currently face up."""
+        from collections import Counter
+        seen = self._seen.setdefault(other.name, set())
+        counts = self.colors.setdefault(other.name, Counter())
+        for card in list(other.discard) + list(other.in_play):
+            if id(card) in seen:
+                continue
+            seen.add(id(card))
+            if card.color:
+                counts[card.color] += 1
+        return counts
+
+    def color_odds(self, other, color):
+        """(P(they play a colour this one beats), P(they play this one)).
+
+        Laplace-smoothed toward "no idea", so the first exchange of a fight
+        is a shrug and the tenth is an opinion.
+        """
+        from cards import BEATS
+        counts = self.observe(other)
+        alpha = 1.0
+        n = sum(counts.values()) + 3 * alpha
+        return ((counts.get(BEATS.get(color), 0) + alpha) / n,
+                (counts.get(color, 0) + alpha) / n)
+
+
 class Agent:
+    def __init__(self, rng=None):
+        self.rng = rng or random
+        self.known = Knowledge()
+
     def choose_action(self, me, foes, allies):
         """Return ('attack', target) | ('move',) | ('cover',) | ('pass',)."""
         raise NotImplementedError
@@ -44,13 +105,37 @@ class Agent:
         """Return (keep_on_top, send_to_bottom). Top of deck is last."""
         return look, []
 
+    # ---- the shape of a kit --------------------------------------------
+
+    def _prefer_hand(self, me, opts):
+        """A Passive is the floor, not a pick.
+
+        **It is always the weakest thing you have**, and that is what it is
+        for: it has a colour, a Range and a die and no Effect at all, where
+        every card in a deck carries text. Having it means never being
+        unable to act — never a turn with no legal attack, never an
+        exchange with no legal block — and the price of always having it is
+        that it loses to anything you could have played instead.
+
+        So the order is: play your strong options, fall back on your weak
+        one when you need to. A Passive is reached for when the hand has
+        nothing legal, not when it happens to roll a bigger number.
+
+        Scoring alone will not produce that. Chris's MIMETIC BLADE is Body
+        3 + d6, which is 6.0 on expected damage and above most of what he
+        is holding, so a value function ranked it first and he opened with
+        it in 57% of his attacks — a Passive as a main line, which is
+        backwards. The rule belongs here rather than in the weights,
+        because it is a fact about what a Passive is and not a number to be
+        tuned.
+        """
+        hand = [c for c in opts if not me.is_passive(c)]
+        return hand or opts
+
 
 class RandomAgent(Agent):
     """Plays legally and at random. Useful as a baseline opponent and for
     shaking out illegal states."""
-
-    def __init__(self, rng=None):
-        self.rng = rng or random
 
     def choose_action(self, me, foes, allies):
         live = [f for f in foes if f.alive()]
@@ -80,9 +165,6 @@ class SimpleAI(Agent):
     can attack, hits the weakest reachable target, defends with the colour
     that beats what it has most often seen. Not clever — just not random."""
 
-    def __init__(self, rng=None):
-        self.rng = rng or random
-
     def choose_action(self, me, foes, allies):
         if me.down:
             return ('pass',)
@@ -97,48 +179,57 @@ class SimpleAI(Agent):
         return ('pass',)
 
     def _weakest(self, options):
-        """Closest to falling, with ties broken at random.
+        """Whoever the table has watched absorb the most, ties at random.
 
-        Two things were wrong here and both mattered. It used raw HP while
-        `choose_target` in this same class used the *fraction* — two
-        definitions of "weakest" one method apart. And `min` breaks a tie by
-        list order, which is deterministic: with two party members on equal
-        HP, every creature in every fight picked the same one, every turn,
-        for the whole campaign.
+        **Not HP, and not a fraction of it.** Neither is public
+        (`Knowledge`). What is public is the damage announced as it lands,
+        so the most anyone can honestly say is "I have put more into that
+        one than into this one" — never how much is left, which would need
+        a max HP nobody was shown. It is a cruder signal than HP on
+        purpose, and it costs the agent something: a big creature that has
+        soaked a lot still reads as the hurt one.
 
-        That produced a scapegoat out of nothing. Measured over 250 fights,
+        Ties break at random, which is not a detail. `min` breaks a tie by
+        list order, and list order is the same on every turn of every
+        fight: with two party members level, every creature in the
+        encounter picked the same one, forever. Measured over 250 fights,
         whoever was listed first of two 18 HP characters took ~1600 attacks
-        and went down 62-71% of the time, while the other took ~700 and went
-        down under 30% — and the two swapped places when the list was
-        reordered. It read as a finding about a character and was a finding
-        about a list.
+        and went down 62-71% of the time while the other took ~700 and went
+        down under 30% — and they swapped when the list was reordered. It
+        read as a finding about a character and was a finding about a list.
         """
-        hurt = min(f.hp / max(1, f.max_hp) for f in options)
-        tied = [f for f in options if f.hp / max(1, f.max_hp) <= hurt + 1e-9]
+        worst = max(f.seen_damage for f in options)
+        tied = [f for f in options if f.seen_damage >= worst]
         return self.rng.choice(tied) if len(tied) > 1 else tied[0]
 
     def choose_attack(self, me, target):
-        opts = me.playable(target)
+        opts = self._prefer_hand(me, me.playable(target))
         if not opts:
             return None
         # Biggest expected damage, ties broken by the bigger die.
         return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
 
     def choose_defense(self, me, attacker):
-        opts = me.playable(attacker)
+        opts = self._prefer_hand(me, me.playable(attacker))
         if not opts:
             return None
         return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
 
     def choose_target(self, me, options, prompt='Target'):
-        """Help the ally who needs it most; hurt the enemy closest to
-        falling. Which way round is decided by whose side they are on."""
+        """Help the ally who has taken the most; hurt the enemy who has.
+        Which way round is decided by whose side they are on.
+
+        Both read `seen_damage` rather than HP, for the reason in
+        `_weakest` — and note it is the same measure on both sides now,
+        where this class once used raw HP in one method and the fraction in
+        the other, one method apart.
+        """
         friends = [o for o in options if o.team == me.team]
         if friends and any(w in prompt.lower() for w in
                            ('heal', 'give', 'protect', 'draw', 'ally')):
-            return min(friends, key=lambda c: c.hp / max(1, c.max_hp))
+            return self._weakest(friends)
         foes = [o for o in options if o.team != me.team]
-        return min(foes or options, key=lambda c: c.hp)
+        return self._weakest(foes or options)
 
     def choose_option(self, me, options, prompt='Choose'):
         return options[0]
@@ -166,7 +257,22 @@ class HumanAgent(Agent):
     else, so an illegal choice is not reachable from the menu."""
 
     def __init__(self, ask=input, show=print):
+        super().__init__()
         self.ask, self.show = ask, show
+
+    def _health(self, me, other):
+        """What this player is entitled to see about someone's condition.
+
+        Their own sheet, or a teammate's, is theirs to read. An opponent's
+        is not: `Knowledge` makes HP and max HP hidden for agents, and a
+        human reading them off the prompt would be the same leak with a
+        person in the loop. What everyone can see is the damage that has
+        been announced as it landed, and whether they are still standing.
+        """
+        if other is me or other.team == me.team:
+            return f'{other.hp}/{other.max_hp} HP'
+        return (f'{other.seen_damage} damage taken'
+                + (', DOWN' if other.down else ''))
 
     def _pick(self, prompt, options, allow_none=False):
         if not options:
@@ -189,8 +295,8 @@ class HumanAgent(Agent):
         for f in live:
             legal = me.playable(f)
             if legal and not me.down:
-                opts.append((f'Attack {f.name} ({f.hp}/{f.max_hp} HP, {f.position})',
-                             ('attack', f)))
+                opts.append((f'Attack {f.name} ({self._health(me, f)}, '
+                             f'{f.position})', ('attack', f)))
         if not me.down and not me.rooted:
             other = BACK if me.position == FRONT else FRONT
             opts.append((f'Move Position → {other}', ('move',)))
@@ -223,7 +329,7 @@ class HumanAgent(Agent):
     # ---- Effect choices -------------------------------------------------
 
     def choose_target(self, me, options, prompt='Target'):
-        opts = [(f'{c.name} ({c.hp}/{c.max_hp} HP, {c.position})', c)
+        opts = [(f'{c.name} ({self._health(me, c)}, {c.position})', c)
                 for c in options]
         self.show(f'\n {prompt}:')
         return self._pick('Target', opts)
@@ -302,13 +408,18 @@ class KitAI(SimpleAI):
     In a **party fight** it is worth a great deal:
 
         party of three, 300 fights each      SimpleAI    KitAI
-        vs 4 wrackclaws                        82.0%     89.0%
-        vs 5 wrackclaws                        76.0%     86.7%
+        vs 4 wrackclaws                        86.3%     88.3%
+        vs 5 wrackclaws                        80.0%     83.7%
 
         who goes down, vs 5 wrackclaws       SimpleAI    KitAI
-        Chris                                    29%       19%
-        Kevin                                    21%       10%
-        Pat                                      30%       14%
+        Chris                                    31%       25%
+        Kevin                                    27%       20%
+        Pat                                      26%       21%
+
+    It is ahead of `SimpleAI` on win rate and on down rate against every
+    foe shape tried — 2/1/1, 1/2/1, 1/1/2, 2/2/2, 3/1/1, 1/3/1 — and the
+    margin is widest against the shape that punishes a bad read: 80.0%
+    against 89.6% at 1/3/1.
 
     That gap is the whole point of the class. Setup plays — a totem that
     buffs everyone, a drink handed to somebody else, a stance held across a
@@ -316,33 +427,31 @@ class KitAI(SimpleAI):
     things exists in a duel. **So judge an agent on the fight the character
     was built for, not on the convenient benchmark.**
 
-    The weights were tuned by sweep. Swept again against the party fight
-    (600 fights a point) once `_odds` was fixed, and the honest reading is
-    that only one of the five is earning its keep:
+    The weights are swept against the party fight rather than chosen by
+    eye, and the honest reading is that **most of them do not matter**:
 
-    - `_EFFECT_VALUE` is the one that matters, and only at the top of its
-      range. At 1.5 it costs about ten points, because it promotes
-      low-damage utility over damage in exchanges where damage is what is
-      needed. Between 0.0 and 0.5 the difference is under a point and
-      changes sign between the two encounter sizes, so it stays at 0.5
-      rather than chasing noise.
-    - `_SETUP_BONUS` moves almost nothing, for a reason worth knowing:
-      **Chris never sets his stance.** KILLSWITCH was a legal attack 2232
-      times in 300 fights and was chosen twice, because Soul 2 + d4 scores
-      4.0 and his MIMETIC BLADE Passive scores 6.0 and costs no card at
-      all. Raising the bonus until he does set it (2.5 and up, about one
-      stance a fight) moves the party result by less than a point either
-      way. The stance is priced out, and pricing it in is not worth
-      anything — which is a note about the card, not about the agent.
-    - `_STANCE_REPLAY` and `_REPEAT_PENALTY` are **inert on this
-      benchmark**: 0.0, -1.0, -2.0 and -4.0 give identical results to the
-      decimal. Both only fire once a stance is up, and a stance is up on 3
-      turns out of 2942, so neither has had the chance to be right or
-      wrong. They are kept because they are correct, not because they have
-      been shown to pay.
-    - `_BANK_TIE_WIN` is the one that does fire — HERE BOY is Pat's — but
-      only just: turning it off costs half a point at five foes and 1.0
-      against 2.0 is identical. Below the noise floor in either direction.
+    - `_REPEAT_PENALTY` earns its keep, by about a point of win rate at
+      both encounter sizes. Turning it off is the only single change in the
+      grid that costs anything. Anywhere from -1.0 down is the same.
+    - `_EFFECT_VALUE` is flat from 0.25 to 1.5 and costs about a point at
+      0.0. It stays at 0.5, which is the middle of the flat part.
+    - `_SETUP_BONUS`, `_STANCE_REPLAY` and `_BANK_TIE_WIN` move nothing
+      measurable across their whole range. `_STANCE_REPLAY` in particular
+      cannot fire at all: no deck runs a card twice, so once KILLSWITCH is
+      face up there is no second copy to replay over it. They are kept
+      because they are correct, not because they have been shown to pay.
+
+    **A caution, because this sweep has now been wrong once.** An earlier
+    reading of it concluded that `_SETUP_BONUS` was inert because "Chris
+    never sets his stance" — KILLSWITCH legal 2232 times and chosen twice
+    — and wrote that up as a finding about the card being priced out. It
+    was not about the card. It was `_prefer_hand` missing: his MIMETIC
+    BLADE Passive was competing on its number and crowding the stance out.
+    With a Passive back in its place as the fallback, KILLSWITCH is chosen
+    149 times of 698 and a stance is up on 597 turns of 2676. **A weight
+    that reads as inert is as likely to mean the agent never reaches the
+    situation as it is to mean the weight does not matter**, and the two
+    look identical in the sweep.
     """
 
     # Weights, in damage-equivalents. Swept against the party fight rather
@@ -380,7 +489,7 @@ class KitAI(SimpleAI):
     # ---- attacking ------------------------------------------------------
 
     def choose_attack(self, me, target):
-        opts = me.playable(target)
+        opts = self._prefer_hand(me, me.playable(target))
         if not opts:
             return None
         return max(opts, key=lambda c: (self._attack_value(me, c, target),
@@ -463,7 +572,7 @@ class KitAI(SimpleAI):
     # ---- defending ------------------------------------------------------
 
     def choose_defense(self, me, attacker):
-        opts = me.playable(attacker)
+        opts = self._prefer_hand(me, me.playable(attacker))
         if not opts:
             return None
         return max(opts, key=lambda c: (self._defence_value(me, c, attacker),
@@ -484,48 +593,42 @@ class KitAI(SimpleAI):
         return value
 
     def _odds(self, card, attacker):
-        """(P(this colour beats theirs), P(it ties)), read off the
-        attacker's **stat line**.
+        """(P(this colour beats theirs), P(it ties)), from what this
+        attacker has been *seen* to play.
 
         A mirroring card ties with certainty, and one that also wins ties on
         defence is therefore a guaranteed block.
 
-        The stat line is the prior because it is the only one available here
-        that is not conditioned on the choice already made. Deck size is
-        total stats and each colour's count equals its matching stat
-        (`rules/cards.md`, Enemy decks), so a stat block is a colour
-        composition — which is exactly why the rule has the side effect it
-        does: reveal a creature's stats and you have revealed its deck. It
-        is exact against a creature, which is what a player is defending
-        against; against another player it is an approximation, because a
-        card bank and a COLORLESS signature can bend the colour counts
-        without changing the stats.
+        Everything else is inference, because nothing else is available.
+        Hands, decks and stat lines are hidden (`Knowledge`), so the only
+        evidence about what colour is coming is the colours that have
+        already come. Early in a fight the smoothing makes this very close
+        to a shrug, and it should be: an agent that has seen two cards does
+        not know anything yet. It sharpens as the discard fills.
 
-        **This used to count `attacker.hand + attacker.deck`, and that is
-        worse than no prior at all.** `play.py` pulls the attack card out of
-        hand before it asks the defender to block, so those two piles are,
-        by construction, every card the attacker is *not* about to play.
-        Measured over 1950 defences: a colour holding none of the visible
-        pool was the one played 62% of the time, and a colour holding 70% of
-        it was played 0% of the time. The prior was not noisy, it was
-        inverted, and the defender dutifully blocked the colour that was
-        about to beat it.
+        **Two earlier versions of this were wrong, and the second was wrong
+        in a way worth remembering.**
 
-        Summing the other zones does not rescue it. The card in flight is in
-        a local variable in `play.py` — not in hand, deck, discard or play —
-        so against a four-card creature three cards are visible and the
-        missing quarter is precisely the one that matters. Measured, that
-        version was no better than the broken one.
+        It first counted `attacker.hand + attacker.deck` — hidden zones, and
+        on top of that the one set of cards guaranteed not to hold the
+        attack being answered, because `play.py` pulls the attack card out
+        of hand before it asks the defender to block. Measured over 1950
+        defences the prior was not noisy but inverted: a colour holding none
+        of that pool was the colour played 62% of the time, one holding 70%
+        of it was played 0% of the time, and where the model predicted no
+        damage with certainty, damage got through 65% of the time.
+
+        It was then replaced by the attacker's stat line, which is exact —
+        deck size is total stats and each colour's count equals its matching
+        stat (`rules/cards.md`, Enemy decks) — and still not allowed, for
+        the same reason the hand is not. A stat block is a sheet the
+        defender was never shown. The legitimate version of that same
+        inference is this one: watch the cards, and the stat line is what
+        you converge on.
         """
-        from cards import BEATS
         if self._mirrors(card):
             return (1.0, 0.0) if self._wins_ties_on_defence(card) else (0.0, 1.0)
-        split = {'RED': attacker.body, 'BLUE': attacker.mind,
-                 'GREEN': attacker.soul}
-        n = sum(split.values())
-        if not n:
-            return 0.34, 0.33
-        return split.get(BEATS.get(card.color), 0) / n, split.get(card.color, 0) / n
+        return self.known.color_odds(attacker, card.color)
 
     # ---- the free action ------------------------------------------------
 
