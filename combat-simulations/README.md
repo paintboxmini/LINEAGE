@@ -363,6 +363,52 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
+## The duel and the group fight disagree about Passives
+
+**And the disagreement is bigger than anything either of them measures.**
+This section's original finding — that Passives close the stat spread from
+33 points to 1.4 — came from duels, and the party fight says the opposite
+in both directions at once.
+
+The three archetypes, identical but for which stat is 4, two generic
+Passives each, run both ways:
+
+| | duel spread | party spread (5 foes) | party spread (6 foes) |
+|---|---|---|---|
+| Passive competes on its number | **1.4** | 73.7 | 86.7 |
+| Passive as fallback (shipped) | 24.9 | **42.7** | **60.7** |
+
+Read the columns, not the rows. In a duel, making the Passive a fallback
+costs 23 points of spread. In a party fight it *saves* 31 and 26. The
+Soul-primary archetype, which is the one that moves, goes 49.1% → 34.1% in
+the duel and 24.3% → 51.0% in the party fight, off the same change.
+
+**The mechanism is the same in both, and only the sign differs.** A
+Passive costs no card. A character with a two-card hand who blocks with a
+card has spent a quarter of their turn's resources; one who blocks with
+the Passive has spent nothing. In a duel — a pure damage race where the
+hand refills every turn and nobody else is drawing aggro — the free block
+is close to strictly better, so taking it away hurts the small hand most.
+In a group fight, where there are more attacks per round than any one hand
+can answer, blocking with the Passive every time means never spending a
+card on defence and never trading, and the character stalls.
+
+**So there is no settled figure for what a Passive is worth**, and the one
+in `rules/cards.md` that answered the ×3 → ×4 damage-gap question has been
+marked open rather than quietly corrected. Two honest things are left:
+
+- **The floor is real and is not in dispute.** No-legal-defence goes to
+  **0.0%** on all three spreads with a Both-range Passive and sits at
+  38.8%, 19.4% and 41.7% without one. That is the ruling's actual
+  guarantee, and it holds under either policy.
+- **A spread of 40 to 86 points between archetypes is the finding nobody
+  was looking for.** Every figure above is a Soul-primary problem in a
+  group fight, under both policies. The duel said 1.4 and it was the only
+  benchmark anyone ran.
+
+**Method note: one benchmark is not a measurement.** The duel figure was
+not wrong about duels. It was used to answer a question about the game.
+
 ## A Passive is the floor, not a pick
 
 **It is always the weakest thing a character has, and that is the point.**

@@ -220,7 +220,9 @@ A **Passive** is the card-shaped thing described above: printed colour, Range, d
 
 **A Passive can attack or block**, ruled 2026-09-19. It is a card, and a card defends — so it is a legal defence on any exchange its Range and its Applies When allow, exactly as it is a legal attack. It never leaves its zone either way.
 
-*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand. Measured across 750 duels, that single fact is the difference between the three stat spreads being 33 points apart and being 1 point apart — see `combat-simulations/README.md`, What Passives are actually for. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand — measured at **0.0% no-legal-defence across all three stat spreads**, against 38.8%, 19.4% and 41.7% without one. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+
+*How much that floor is worth in win rate is open, and depends on a question this file does not answer: how often a player actually reaches for the Passive. It is the weakest thing they hold, so it is a fallback rather than a first pick — but a character with a two-card hand who blocks with a card instead has spent a card, and a Passive costs nothing. Reaching for it only when nothing else is legal, and reaching for it whenever it blocks better, measure very differently and in opposite directions in a duel and in a group fight. See `combat-simulations/README.md`, What Passives are actually for.*
 
 A **Trait** is rules text that is simply true. It costs no Action, is never played, has no colour or die, and is never a choice — Armour 2, a bite that re-grants Rooted, a nose that can't be Blinded, a spirit's rolled HP. If a thing spends an Action, it is not a Trait; it is a card, and it should be written as one.
 
