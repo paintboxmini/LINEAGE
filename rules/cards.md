@@ -49,7 +49,9 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 **What this is for.** It tells you what a new card should cost before you argue about it: a Both-range card wants a small die whatever colour it is, and a Melee card has already paid for a big one. It also tells a player something real at character creation — **a Mind- or Soul-primary character drafts from a smaller-dice pool than a Body-primary one**, by roughly half a point of expected damage per card, and is being paid for it in reach and flexibility rather than shortchanged.
 
-*One thing the table above does not explain and is worth an eye: Red Melee runs a full die step above Blue Melee and Green Melee (7.00 against 5.57 and 5.75). Range buys the die everywhere, and Red seems to buy a little more with it. Deliberate or drift, it has not been decided.*
+**Red Melee runs a full die step above Blue Melee and Green Melee** — 7.00 against 5.57 and 5.75 — and that part is deliberate rather than drift. **Each colour's stat is paid in a different currency**, and Red's is damage: Body buys the damage *and* the HP, Mind buys hand size, Soul buys initiative. Red buys a little more with range than the other two because damage is the thing Red is for.
+
+*That premium was set when Body was a ×3 multiplier on HP rather than ×4, so it is fair to ask whether the damage gap should have closed when the HP weight went up. **It was measured on 2026-09-19 and the answer is no** — the ×3 → ×4 change moved the colours less than two points against each other, and softening Red's dice moves nothing. The dial that is actually doing the work is hand size, not damage. `combat-simulations/README.md`, What measuring the party characters actually found.*
 
 **Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
 

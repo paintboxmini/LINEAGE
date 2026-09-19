@@ -183,6 +183,56 @@ character:**
   not legally block only 33% of the time, against ~50% for the other two,
   was the one whose cards are mostly Both. Unglamorous and real.
 
+## Is the damage gap between colours too wide? No — hand size is the dial
+
+*2026-09-19. The question was whether Red's die premium should close now that
+Body weighs ×4 on HP instead of ×3. It was set when Body weighed ×3.*
+
+Three archetypes, stats rotated, **no signature cards and no Passives**, nine
+cards drafted at random from the core pool at each one's colour split, 500
+duels every pairing. So the only thing that differs is which stat is primary
+and what that buys.
+
+| | Red B4 | Blue M4 | Green S4 | spread |
+|---|---|---|---|---|
+| **current rules** | 56.1% | **65.2%** | 28.7% | 36.5 |
+| as it was, Body ×3 | 54.3% | 65.8% | 29.9% | 35.9 |
+| Red Melee d10s → d8 | 54.7% | 66.7% | 28.6% | 38.1 |
+| hand floor raised 2 → 3 | 49.0% | 57.0% | 44.0% | 13.0 |
+| hand size forced equal | 55.0% | 46.0% | 49.0% | **9.0** |
+
+**Four things fall out of that, and three of them are the opposite of what
+the question assumed.**
+
+- **The ×3 → ×4 change did almost nothing.** Under two points between
+  colours. It is not why anything is where it is.
+- **Red is not the strongest. Blue is** — nine points clear of Red and
+  thirty-six clear of Green.
+- **Softening Red's dice does not help and makes it worse**, because it
+  widens Blue's lead over the colour that was never the problem.
+- **Hand size is about three quarters of the spread.** Force it equal and
+  36.5 points becomes 9, with Red a nose ahead — which is the shape the
+  design intends, Red paid in damage for being the most restricted.
+
+**The mechanism is not "more options to choose from", it is "an answer at
+all".** How often each archetype had *no legal block* when attacked:
+
+    hand 4 (Blue)   20.8%
+    hand 3 (Red)    37.1%
+    hand 2 (Green)  42.8%
+
+A Mind-4 character is half as likely to be defenceless as a Mind-2 one. And
+the whole effect **survives random play** almost unchanged — 55.5 / 64.8 /
+29.8 with `RandomAgent` — so it is structural rather than something a greedy
+agent is extracting.
+
+**Nothing here has been changed.** The decision is open, and the levers
+measured are: leave it, raise the hand floor from 2 to 3 (closes most of it,
+smallest possible change), or flatten hand size against Mind. *Read this as
+the stat package in isolation — generic decks, duels, no Passives and no
+party roles — which is exactly the right frame for "what is a point of Mind
+worth" and the wrong one for "how good is a character".*
+
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of
 party win rate in a group fight — see its class docstring. A duel has no
