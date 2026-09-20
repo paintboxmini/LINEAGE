@@ -401,22 +401,29 @@ class Combatant:
             drawn += 1
         return drawn
 
-    def playable(self, opponent, passives=True):
+    def playable(self, opponent, passives=True, position=None):
         """Cards whose Range is legal for the current positions.
 
         Hand, plus the Passives in their own zone — a Passive is a legal
         thing to attack *or* block with on any exchange its Range and its
         Applies When allow (`Combatant.passives`). `passives=False` is kept
         for callers that want the hand alone.
+
+        `position` answers the same question from somewhere else without
+        going there: what would be legal if I stood in the Backline? That
+        is what an agent has to know to decide whether moving is worth a
+        turn, and asking it by shuffling the combatant back and forth would
+        leave the table wrong if anything raised in between.
         """
         banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
         pool = list(self.hand)
         if passives:
             pool += [c for c in self.passives if self.passive_applies(c, opponent)]
+        where = position or self.position
         return [c for c in pool
                 if c.is_playable()
                 and c.color not in banned
-                and c.range_ok(self.position, opponent.position)]
+                and c.range_ok(where, opponent.position)]
 
     def dissipate(self, log=None):
         """`campaign/pat.md`: "If the spirit reaches 0 HP, it dissipates."

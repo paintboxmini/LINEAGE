@@ -6,6 +6,7 @@ These are the ones whose failure would be silent.
 """
 
 import os
+import random
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -160,10 +161,82 @@ def knowledge_is_watched_not_known():
     check('and holds no cards of theirs', not leaked, str(leaked))
 
 
+def position_is_a_decision():
+    """Moving buys range legality and nothing else, so an agent holding
+    cards that cannot reach from where it stands should walk.
+
+    None of this shows up in the party benchmark — everyone starts at the
+    Frontline and stays there, so the sweep says movement never pays and
+    the agent almost never moves. These are the cases the benchmark cannot
+    produce, checked directly so that "it never moves" stays a decision
+    rather than quietly going back to being a limitation.
+    """
+    pool = cardlib.by_name(cardlib.core_pool())
+    ag = KitAI(random.Random(0))
+
+    # Frontline, holding only Ranged cards, against a Frontline enemy:
+    # nothing reaches, and the Backline makes all of it live.
+    me = engine.Combatant('me', 3, 4, 2, deck=[], position=engine.FRONT,
+                          team='party')
+    foe = engine.Combatant('foe', 3, 3, 3, deck=[], position=engine.FRONT,
+                           team='foes')
+    me._agent = ag
+    engine.set_table([me, foe])
+    me.hand = [pool['FOCUS'], pool['SUPPORT']]     # both Ranged
+    check('walks when nothing in hand reaches from here',
+          ag.choose_action(me, [foe], [])[0] == 'move',
+          f'holding {[c.name for c in me.hand]} at {me.position}')
+
+    # Same hand, now in the Backline: it reaches, so stay and use it.
+    me.set_position(engine.BACK)
+    act = ag.choose_action(me, [foe], [])
+    check('and stays once the cards reach', act[0] == 'attack',
+          f'chose {act[0]} at {me.position}')
+
+    # Melee-only hand at the Backline against a Frontline enemy: nothing
+    # reaches from here either, so close.
+    me.hand = [pool['STRIKE']]
+    check('closes when the hand is melee and the enemy is not',
+          ag.choose_action(me, [foe], [])[0] == 'move',
+          f'holding STRIKE at {me.position}')
+
+    # Rooted: the same character cannot move, and Backline with a
+    # melee-only hand has nothing to do but take cover.
+    me.rooted = True
+    act = ag.choose_action(me, [foe], [])
+    check('takes cover when rooted with nothing that reaches',
+          act[0] == 'cover', f'chose {act[0]}')
+    me.rooted = False
+
+
+def moving_does_not_cost_the_focus_fire():
+    """Position is one decision and target is another. An earlier cut
+    folded them together and quietly dropped `_weakest`, which cost six
+    points of party win rate and read as a finding about movement."""
+    ag = KitAI(random.Random(0))
+    pool = cardlib.by_name(cardlib.core_pool())
+    me = engine.Combatant('me', 3, 4, 2, deck=[], position=engine.FRONT,
+                          team='party')
+    hurt = engine.Combatant('hurt', 3, 3, 3, deck=[], position=engine.FRONT,
+                            team='foes')
+    fresh = engine.Combatant('fresh', 3, 3, 3, deck=[], position=engine.FRONT,
+                             team='foes')
+    me._agent = ag
+    engine.set_table([me, hurt, fresh])
+    me.hand = [pool['STRIKE']]
+    hurt.seen_damage = 9
+    act = ag.choose_action(me, [hurt, fresh], [])
+    check('still hits whoever has taken the most',
+          act[0] == 'attack' and act[1] is hurt,
+          f'{act[0]} {getattr(act[1], "name", "")}')
+
+
 print('Agent invariants:')
 colour_read_starts_neutral()
 colour_read_moves_with_evidence()
 knowledge_is_watched_not_known()
+position_is_a_decision()
+moving_does_not_cost_the_focus_fire()
 simple_ai_stays_colour_blind()
 a_passive_is_free_to_play()
 

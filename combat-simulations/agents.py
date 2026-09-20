@@ -548,6 +548,7 @@ class KitAI(SimpleAI):
     _REPEAT_PENALTY = -2.0  # a colour that would end a stance
     _BANK_TIE_WIN = 1.0
     _MATCHUP_TRUST = 0.5    # how far to trust the colour read on attack
+    _MOVE_GAIN = 2.0        # how much better the other position must be
 
     # ---- shared scoring -------------------------------------------------
 
@@ -571,6 +572,91 @@ class KitAI(SimpleAI):
     def _wins_ties_on_defence(self, card):
         import effects as fx
         return fx.traits(card, 'defense').wins_ties
+
+    # ---- where to stand -------------------------------------------------
+
+    def choose_action(self, me, foes, allies):
+        """Attack, move, or take cover — position is a real decision.
+
+        **Moving buys range legality and nothing else.** `rules/combat.md`,
+        Positioning: *"Position provides no automatic protection. The
+        Frontline does not shield the Backline from being targeted."* So
+        there is no hiding, and the only reason to spend a turn walking is
+        that the cards you are holding do not reach from where you stand.
+
+        Which makes the arithmetic about how much fight is left. Stay k
+        turns and you attack k times at what this position offers; move and
+        you attack k-1 times at what the other one offers. So it pays when
+
+            value there / value here  >  k / (k - 1)
+
+        and with four or five turns to go that is about a quarter better.
+        `_MOVE_GAIN` is that ratio, swept rather than reasoned into place.
+
+        `SimpleAI` keeps the old behaviour — it moves only when it has no
+        legal attack at all — because it plays creatures, and the encounter
+        figures in `rules/gm-guide.md` are built on it.
+        """
+        if me.down:
+            return ('pass',)
+        live = [f for f in foes if f.alive()]
+        if not live:
+            return ('pass',)
+
+        here = self._reach_value(me, live, me.position)
+        if not me.rooted:
+            other = BACK if me.position == FRONT else FRONT
+            there = self._reach_value(me, live, other)
+            # Nothing reaches from here: walking is free, since the
+            # alternative is passing.
+            if here is None and there is not None:
+                return ('move',)
+            if here is not None and there is not None \
+                    and there > here * self._MOVE_GAIN:
+                return ('move',)
+
+        if here is not None:
+            # Position is this method's decision; *who* to hit is not, and
+            # it stays what it was — the one the table has watched absorb
+            # the most, ties at random (`_weakest`). An earlier cut of this
+            # picked the target with the best attack value instead and
+            # quietly threw focus fire away, which cost six points of party
+            # win rate and looked like a finding about movement.
+            reachable = [f for f in live if me.playable(f)]
+            if reachable:
+                return ('attack', self._weakest(reachable))
+
+        # Nothing reaches from either position. Backline can at least take
+        # cover — a dodge that persists instead of being spent
+        # (`rules/combat.md`, Cover) — which beats passing for free.
+        if me.position == BACK and not me.in_cover:
+            return ('cover',)
+        return ('pass',)
+
+    def _reach_value(self, me, live, position):
+        """What standing at `position` is worth, or None if nothing reaches.
+
+        The mean of the best two options rather than the single best one.
+        A position is worth how much of your hand it keeps live, and one
+        card's score moves too much from turn to turn to stand on: scored
+        on the single best card, the character whose kit spans both ranges
+        paced back and forth all fight — 74 reversals inside two actions
+        across 200 fights — because whichever side he stood on, the other
+        looked about as good and noise decided it.
+        """
+        best = None
+        price = self._card_price(me)
+        for f in live:
+            opts = me.playable(f, position=position)
+            if not opts:
+                continue
+            vals = sorted((self._attack_value(me, c, f)
+                           - (0 if me.is_passive(c) else price)
+                           for c in opts), reverse=True)[:2]
+            score = sum(vals) / len(vals)
+            if best is None or score > best:
+                best = score
+        return best
 
     # ---- attacking ------------------------------------------------------
 

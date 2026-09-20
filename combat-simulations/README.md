@@ -365,6 +365,67 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
+## Where to stand is a decision now, and the answer is usually "here"
+
+The agent moved 0.0% of the time, because `choose_action` only ever moved
+when it had no legal attack at all. The whole positional layer was
+unmodelled, which made any card keyed to position — SEED, or a
+Ranged-only KILLSWITCH — impossible to evaluate.
+
+**Moving buys range legality and nothing else.** `rules/combat.md`:
+*"Position provides no automatic protection. The Frontline does not shield
+the Backline from being targeted."* There is no hiding, so the only reason
+to spend a turn walking is that the cards in hand do not reach from where
+you stand. That makes the arithmetic about how much fight is left — stay
+k turns and you attack k times at what this position offers, move and you
+attack k-1 times at what the other offers, so it pays when
+`value there / value here > k / (k-1)`.
+
+`KitAI` now asks that every turn (`_reach_value`, via a `position=`
+argument added to `Combatant.playable` so it can price the other side
+without going there). `SimpleAI` keeps the old behaviour, since it plays
+creatures and the encounter figures rest on it.
+
+**And the sweep says movement does not pay here, monotonically:**
+
+| `_MOVE_GAIN` | 4 foes | 5 foes | share of actions spent moving |
+|---|---|---|---|
+| 1.0 | 84.5% | 74.8% | 19–21% |
+| 1.25 | 88.8% | 83.0% | 6–7% |
+| 1.5 | 89.2% | 86.8% | 1–2% |
+| 2.0 | **90.0%** | **87.2%** | 0.1–0.4% |
+| never move | 90.0% | 87.5% | 0% |
+
+Every amount of walking costs win rate. That is not a bug in the agent —
+it is what this benchmark is: everyone starts at the Frontline, nothing
+makes anyone leave, and Melee carries the biggest dice in the game
+because range buys the die. Standing still is correct, and the difference
+that matters is that the agent now *decides* that instead of being unable
+to do otherwise. `_MOVE_GAIN` sits at 2.0, which keeps the capability at
+no measured cost and still walks when the gap is real.
+
+The cases this benchmark cannot produce are checked directly in
+`test_agents.py` instead: a Ranged hand at the Frontline walks, the same
+hand at the Backline stays, a Melee hand at the Backline closes, and a
+Rooted character with nothing that reaches takes cover rather than
+passing.
+
+**Two things found by breaking them.** The first cut folded "where to
+stand" and "who to hit" into one search and silently dropped `_weakest`,
+so the agent stopped focusing fire — six points of party win rate, and it
+read as a finding about movement until it was ablated. And scoring a
+position by its single best card made the character whose kit spans both
+ranges pace back and forth all fight: 74 reversals inside two actions
+across 200 fights, because whichever side he stood on the other looked
+about as good and noise decided it. A position is scored by the mean of
+its best two options now, which is steadier.
+
+**Still not implemented: Rushdown.** `rules/combat.md` gives Move Position
+a second shape — a Frontline character closing on a Backline enemy, which
+drags the Frontline to include them. `play.py` only has the Frontline /
+Backline toggle, so no agent can do it and no measurement here involves
+it.
+
 ## MEASURE was paying out into the void
 
 `RevealStats` — what MEASURE and STUDY buy — printed the numbers to the
