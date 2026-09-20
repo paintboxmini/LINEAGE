@@ -105,6 +105,15 @@ class Agent:
         """Return (keep_on_top, send_to_bottom). Top of deck is last."""
         return look, []
 
+    def choose_prepared(self, me, options):
+        """Which Ongoing Effect to set up before initiative, or None.
+
+        `rules/combat.md`, Setting one up before the fight — one card, and
+        only when the fiction gives the character time and a reason. The
+        caller decides whether the fight allows it at all; this only picks.
+        """
+        return options[0]
+
     # ---- the shape of a kit --------------------------------------------
 
     # What one card out of hand is worth when cards are tight, in the same
@@ -585,8 +594,9 @@ class KitAI(SimpleAI):
         everything the Effect is worth by the chance the Effect runs at all
         — which is a win *or* a tie, because `_finish` runs the attacker's
         half on both. The colour-repeat penalty is the one thing left
-        unweighted: a stance ends on a repeated colour when the card is
-        played, before anyone knows who won (`engine.resolve_attack`).
+        unweighted: a stance ends on a repeated colour **when the card is
+        revealed**, which is before anyone knows who won the exchange
+        (`rules/combat.md`, Attack Resolution).
 
         Both weights are normalised so that **an agent who has seen nothing
         scores exactly what the old one did.** With the smoothed prior at a
@@ -780,6 +790,15 @@ class KitAI(SimpleAI):
         return max(me.rounds, key=worth)
 
     # ---- choices a card Effect asks for ---------------------------------
+
+    def choose_prepared(self, me, options):
+        """A stance set before the fight costs no turn and no reveal, so
+        take the one whose Effect is worth most — scored as an attack
+        Effect would be, minus the card's own damage, which a prepared
+        card never rolls."""
+        def worth(card):
+            return self._attack_value(me, card, me) - self._expected(me, card)
+        return max(options, key=worth)
 
     def choose_option(self, me, options, prompt='Choose'):
         """Prefer a mode that is actually doing something. Armour is worth

@@ -225,7 +225,13 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
     return action
 
 
-def run(party, foes, wheel, log, rng, max_rounds=40):
+def run(party, foes, wheel, log, rng, max_rounds=40, prepared=()):
+    """`prepared` names the sides that had time and a reason to set up one
+    Ongoing Effect before initiative (`rules/combat.md`, Setting one up
+    before the fight) — ('party',), ('foes',), both, or nothing. Off by
+    default, because walking round a corner into something is the case
+    that needs no warning and the engine cannot judge which this was.
+    """
     everyone = party + foes
     # The engine resolves "all allies" and "any enemy" against this, so it
     # has to be the fight actually being run. Set here rather than left to
@@ -233,6 +239,10 @@ def run(party, foes, wheel, log, rng, max_rounds=40):
     # a previous fight, which is a wrong result rather than a crash.
     set_table(everyone)
     engine.set_wheel(wheel)
+    for who in everyone:
+        if who.team in prepared and not who.is_object:
+            other = next((c for c in everyone if c.team != who.team), None)
+            engine.set_up_before_the_fight(who, log=log, rng=rng, opponent=other)
     turns = 0
     cap = max_rounds * len(everyone)
 

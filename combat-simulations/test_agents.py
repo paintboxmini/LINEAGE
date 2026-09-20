@@ -123,9 +123,47 @@ def a_passive_is_free_to_play():
     check('a Passive is never priced', me.is_passive(blade))
 
 
+def knowledge_is_watched_not_known():
+    """**An opponent's kit has to be established before it can be used.**
+
+    Watching what someone plays is fair — that is the whole of
+    `Knowledge`. Knowing how their cards *work* before they have shown you
+    is not: an agent that reached into an opponent's stance list would know
+    KILLSWITCH ends on a repeated colour, and which of its two modes was
+    taken, having been shown neither.
+
+    So what the tracker retains about anyone is asserted to be colour
+    counts and nothing else. `test_information.py` holds the static half —
+    that no agent reads those attributes at all; this holds the stored
+    half, in case a future version keeps more than it reads out.
+    """
+    me, foe = _pc('party'), _pc('foes')
+    engine.set_table([me, foe])
+    ag = KitAI()
+
+    pool = cardlib.by_name(cardlib.load())
+    if 'KILLSWITCH' in pool:                       # a real Ongoing, face up
+        foe.in_play.append(pool['KILLSWITCH'])
+    foe.discard.extend([c for c in cardlib.core_pool() if c.color == 'RED'][:4])
+    ag.known.observe(foe)
+
+    stored = ag.known.colors.get(foe.name, {})
+    ok = stored and all(k in ('RED', 'BLUE', 'GREEN', 'COLORLESS')
+                        for k in stored)
+    check('the tracker keeps colours and nothing else', bool(ok),
+          f'{dict(stored)}')
+
+    # Nothing anywhere in the tracker should be holding a card or its text.
+    leaked = [k for k, v in vars(ag.known).items()
+              if any(isinstance(x, cardlib.Card)
+                     for x in (v.values() if isinstance(v, dict) else []))]
+    check('and holds no cards of theirs', not leaked, str(leaked))
+
+
 print('Agent invariants:')
 colour_read_starts_neutral()
 colour_read_moves_with_evidence()
+knowledge_is_watched_not_known()
 simple_ai_stays_colour_blind()
 a_passive_is_free_to_play()
 

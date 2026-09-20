@@ -365,6 +365,46 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
+## The rule that made KILLSWITCH look unplayable
+
+`rules/combat.md` has a section called **Setting one up before the
+fight**: *"A character who has time and a reason may set up one Ongoing
+Effect before initiative is rolled. One, not two."* The simulator did not
+implement it, at all, and that is most of what an Ongoing card is worth.
+
+Without it, KILLSWITCH has to be played mid-fight — which means winning a
+reveal with Soul 2 and a d4 before the stance ever goes up. So the
+simulator reported a card nobody would play, and every figure derived from
+that (its 4.0 attack score, the "Chris never sets his stance" note, the
+observation that `SimpleAI` never plays it) was measuring the absence of a
+rule rather than the card.
+
+`engine.set_up_before_the_fight` implements it, and `play.run` takes a
+`prepared=` argument naming the sides that had warning. **It is off by
+default and should stay off by default**: walking round a corner into
+something is the case that needs no warning, and whether this fight was
+that is a table judgement the engine has no business making.
+
+With the party forewarned, over 400 fights:
+
+| | ambushed | forewarned |
+|---|---|---|
+| Chris's turns with something Ongoing up | 21–22% | **35–38%** |
+| Chris goes down, 4 foes | 16% | 13% |
+| Chris goes down, 5 foes | 26% | 22% |
+
+The mechanics themselves were already right, which is worth recording
+because it is where the hunt started: the stance sets, +3 lands exactly
+(7 damage against 4 on the same seed), Armour 3 reduces, both survive an
+intervening colour, both are taken back when a repeated colour ends it,
+and the card goes to the discard at that point rather than vanishing.
+What was missing was never the card.
+
+**A stance ends on a repeated colour when the card is *revealed*** — not
+when it resolves and not when the outcome is known. A committed card
+becomes a played one at the reveal (`rules/combat.md`, Attack
+Resolution), so an attack that is then dodged still counted.
+
 ## The attacker was blind to the triangle
 
 `KitAI` scored defences on the colour matchup and attacks on the raw
@@ -379,7 +419,7 @@ nothing, so the damage is weighted by the chance of winning and everything
 the Effect is worth by the chance the Effect runs at all — a win *or* a
 tie, because `engine._finish` runs the attacker's half on both. The
 colour-repeat penalty stays unweighted: a stance ends on a repeated colour
-when the card is *played*, before anyone knows who won.
+**when the card is revealed**, which is before anyone knows who won it.
 
 Both weights are normalised so **an agent that has watched nothing scores
 exactly what the colour-blind one did**, and `test_agents.py` holds that
@@ -428,6 +468,10 @@ same-class or subclass comparison it ever produced was wrong. Tag the
 agents and it reads 50.0%.
 
 **`SimpleAI` is a creature baseline and is not safe on a player's kit.**
+*(The Chris half of this was measured before the pre-fight rule above
+existed, so the specific 3.4% is the old instrument. The shape of the
+finding — that a pure-damage heuristic misprices a card whose worth is not
+its damage — is not affected, but the number should be re-taken.)*
 Against a purely random opponent with the same cards, it is even on a
 generic 3/3/3 build with a core deck — 51.8%, which is the case
 `rules/gm-guide.md` rests on, so those figures are sound. On the written

@@ -638,10 +638,13 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
         # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
-        # Asked and answered where the attack is made rather than at the
-        # reveal, because the card was played either way — an attack that
-        # gets dodged was still an attack, and still the last one you made.
-        # A block is not an attack and never reaches here.
+        # **On the reveal**, which is when a committed card becomes a
+        # played one (`rules/combat.md`, Attack Resolution: the cards
+        # "reveal simultaneously — only now do they become public"). So it
+        # is asked here, at the top of the exchange, and an attack that is
+        # then dodged still counted: it was revealed, so it was an attack,
+        # and it is still the last colour you led with. A block is not an
+        # attack and never reaches here.
         if atk_card.color and attacker.last_attack_color == atk_card.color:
             fx.end_stances_on_repeat(attacker, atk_card.color, log)
         if atk_card.color:
@@ -1077,6 +1080,66 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
     _phase(ops, ctx, 'pre')
     _phase(ops, ctx, 'post')
     return _settle(ctx, card, actor)
+
+
+def ongoing_halves(card):
+    """The halves of a card that produce an Ongoing Effect.
+
+    Read off the prose rather than a list of names, the same way everything
+    else here is — `rules/combat.md`, Ongoing Effects.
+    """
+    out = []
+    for half in ('effect', 'defense_effect'):
+        text = (getattr(card, half, None) or '')
+        if 'ongoing' in text.lower():
+            out.append(half)
+    return out
+
+
+def set_up_before_the_fight(who, log=None, rng=random, opponent=None):
+    """`rules/combat.md`, Setting one up before the fight.
+
+    "A character who has time and a reason may set up one Ongoing Effect
+    before initiative is rolled. One, not two." The card goes face up and
+    the fight starts with it already running.
+
+    **This was missing entirely, and it is most of what an Ongoing card is
+    worth.** Without it, KILLSWITCH has to be played mid-fight, which means
+    winning a reveal with Soul 2 and a d4 before the stance ever goes up —
+    so the simulator was reporting a card that is fine at the table as one
+    nobody would play. Whether the party *has* time and a reason is a table
+    judgement and not the engine's to make, which is why this is asked for
+    by the caller rather than assumed.
+
+    Returns the card set up, or None.
+    """
+    log = log or (lambda *a: None)
+    options = [c for c in who.hand if ongoing_halves(c)]
+    if not options:
+        return None
+    card = who._agent.choose_prepared(who, options)
+    if card is None:
+        return None
+    half = ongoing_halves(card)[0]
+    if compiled(card, half) is None:
+        log(f'{who.name} would set up {card.name}, but its Effect has to be '
+            f'read at the table: {getattr(card, half)}')
+        return None
+    log(f'{who.name} sets up {card.name} before the fight.')
+    who.hand.remove(card)
+    returned, _gone, held = _run(card, half, who, opponent, Outcome.TIE, 0,
+                                 log, rng, None)
+    if returned:
+        pass                      # the half put it back in hand itself
+    elif held:
+        # "These cards remain face up in front of the player after use"
+        # (`rules/combat.md`). A stance that is up with its card already in
+        # the discard cannot be discarded again when it ends.
+        who.in_play.append(card)
+        log(f'  {card.name} stays face up in front of {who.name}.')
+    else:
+        who.discard.append(card)
+    return card
 
 
 def _standing(attacker, card, defender, log):
