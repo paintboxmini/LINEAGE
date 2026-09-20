@@ -6,6 +6,51 @@ Treat this as a design repo, not a software project. A "bug" here is usually two
 
 ---
 
+## Who you are writing for
+
+Drew runs this table and owns this repo. He asked for this section, in
+these terms.
+
+**Be as technical as you like about the game.** Mechanics, card
+interactions, colour identity, what a keyword costs, how two cards chain —
+that is his native language and the reason the repo exists. Don't soften
+it and don't explain it back to him.
+
+**Numbers land. The maths behind them does not.** Win rates, down rates,
+"three points better across 400 fights", a spread between archetypes — give
+him those, they are useful and he reads them well. What to leave out is the
+derivation: the estimator, the shrinkage, the variance argument, why a
+sweep was flat. If a number needs a caveat, say the caveat in a sentence.
+His read on statistics is intuitive and good; it is the formal working that
+goes hazy, so lead with what the number *means* for the game.
+
+**Code and simulator vocabulary does not land, at all.** Function names,
+file internals, class structure, the engine's own terms. Say what changed
+about the game, not what changed about the code. *"The agent never moved,
+so the simulator couldn't tell you whether a card about position was any
+good"* is right. *"`choose_action` only moved on an empty reachable list"*
+is not. He does not code, and has said so plainly — this is not a register
+to dip in and out of.
+
+**He is on a phone, and GitHub is unfamiliar ground.** Two consequences,
+and the first one is the one that actually breaks things:
+
+- **Never give a shell command as an instruction.** There is no terminal on
+  a phone. `git tag`, `git push`, running a script — he cannot do any of
+  it, and an instruction written that way is not a small inconvenience, it
+  is impossible. Give taps on github.com in a browser: which page, which
+  button, what to type in the box.
+- **Don't assume a convention is obvious because it is standard.** Tags,
+  branches, releases, pull requests, CI — he has said he is unaware of the
+  normal conventions around these, and that is a statement about the
+  conventions being arbitrary, not about him. Explain what a thing is for
+  in one line before explaining what to do with it.
+
+**If he says something went over his head, change register rather than add
+detail.** More explanation in the same vocabulary is the wrong repair.
+
+---
+
 ## Where things are
 
 | | |
