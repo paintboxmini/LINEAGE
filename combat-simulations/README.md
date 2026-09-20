@@ -20,6 +20,7 @@ python3 test_wheel.py           # the initiative-shift worked cases
 python3 test_invariants.py      # rules/invariants.md, Confirmed
 python3 test_effects.py         # the keyword rulings, through the cards
 python3 test_information.py     # no agent reads a hidden zone
+python3 test_agents.py          # invariants the agents have to keep
 python3 effects.py              # how much of the pool compiles
 python3 cards.py                # card counts, as a load check
 
@@ -42,6 +43,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across 600 randomised fights, both agents. |
 | `test_effects.py` | `rules/card-glossary.md` as assertions, through the cards that use each keyword. |
 | `test_information.py` | Reads `agents.py` and fails if any agent touches a hidden zone — a hand, a deck, HP or a stat line. Static, so it catches a leak no fight in the suite happens to exercise. |
+| `test_agents.py` | The agent properties whose failure would be silent: that an unwatched opponent scores colour-blind, that a watched one does not, that `SimpleAI` stays the plain creature baseline the encounter figures rest on, and that a Passive is never priced. |
 
 `rules/invariants.md` is the specification this is checked against.
 
@@ -362,6 +364,80 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 86.5% peeking at both. Worth knowing in both directions — it is the size
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
+
+## The attacker was blind to the triangle
+
+`KitAI` scored defences on the colour matchup and attacks on the raw
+number. The defender read the triangle; the attacker could not see it. So
+it would lead Red into a creature whose deck is half Red — a tie, a wasted
+turn — and score it identically to a clean hit.
+
+Two halves to the fix, and the smaller-looking one is worth more.
+
+**Damage now runs through the reveal.** An attack that loses deals
+nothing, so the damage is weighted by the chance of winning and everything
+the Effect is worth by the chance the Effect runs at all — a win *or* a
+tie, because `engine._finish` runs the attacker's half on both. The
+colour-repeat penalty stays unweighted: a stance ends on a repeated colour
+when the card is *played*, before anyone knows who won.
+
+Both weights are normalised so **an agent that has watched nothing scores
+exactly what the colour-blind one did**, and `test_agents.py` holds that
+to the arithmetic. It matters more than it sounds: every weight in the
+class was tuned against the unweighted scorer, so a normalisation that
+drifts silently changes what all of them mean.
+
+The raw odds are an estimate off a handful of cards, and multiplying
+damage by a noisy estimate is a noisy score. Trusting them in full won
+four points against a Red-heavy deck and lost one against Blue- and
+Green-heavy ones, because it would lead a small Green die into Blue rather
+than a big Red one. Shrunk halfway toward the flat prior
+(`_MATCHUP_TRUST`), the losses go and the gains mostly stay.
+
+**And the tiebreak was the other half of the blindness.** Two options at
+equal value were settled by the bigger die, which is a variance preference
+dressed up as a decision — the mean is already inside the value. Chris's
+two Passives score 6.0 and 6.0, so the die alone decided which colour he
+led with, forever, against anyone. Breaking that tie on *changing colour*
+instead is worth about a point of party win rate on average and three
+against a Red-heavy deck, which is more than the matchup weighting itself:
+
+| foe | die | colour-change |
+|---|---|---|
+| red 2/1/1 | 83.5% | **86.5%** |
+| blue 1/2/1 | 91.5% | 91.8% |
+| green 1/1/2 | 92.8% | 92.2% |
+| even 2/2/2 | 88.5% | 89.8% |
+| big blue 1/3/1 | 91.5% | 92.0% |
+
+The game says it three times over: MEASURE pays for a colour change,
+KILLSWITCH ends on a repeat, and an opponent tracking what you play —
+which is exactly what `Knowledge` does — is who a repeated colour is
+readable by.
+
+Together, against `SimpleAI`'s 82.7% and 78.3%: **88.3% at four
+wrackclaws and 88.0% at five.**
+
+### Two things this turned up that are not about the attack scorer
+
+**A duel counter that could not count.** The scratch harness decided who
+won with `isinstance(winner._agent, A)`, and every variant tested
+subclasses `KitAI`, which subclasses `SimpleAI`. Running `SimpleAI`
+against itself reported **100%** where it has to report 50. Any
+same-class or subclass comparison it ever produced was wrong. Tag the
+agents and it reads 50.0%.
+
+**`SimpleAI` is a creature baseline and is not safe on a player's kit.**
+Against a purely random opponent with the same cards, it is even on a
+generic 3/3/3 build with a core deck — 51.8%, which is the case
+`rules/gm-guide.md` rests on, so those figures are sound. On the written
+kits it is wild in both directions: **3.4% with Chris, 100% with Pat.**
+Both come from cards whose worth is not their damage number. It never
+plays KILLSWITCH, which scores 4.0 and is an Ongoing +3, so a random agent
+that does play it beats it; and it never wastes a turn attacking with
+HOLD THE LINE, which always ties, so it beats a random agent that does.
+That is the whole reason `KitAI` exists — and the reason the encounter
+figures should stay on `SimpleAI`, which plays creatures, not kits.
 
 ## When to reach for a Passive is a card question
 

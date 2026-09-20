@@ -488,6 +488,12 @@ class KitAI(SimpleAI):
     - `_CARD_VALUE`, on `Agent`, prices a card out of hand against the
       blocks still to come — see `_card_price`. Flat from 0.5 to 4.0 on the
       real kits and kept at 2.0 for the same reason.
+    - `_MATCHUP_TRUST` is how far to believe the colour read on attack, and
+      it is the one weight where both ends are measurably wrong. At 0.0 the
+      attacker is blind to the triangle and loses three points against a
+      Red-heavy deck; at 1.0 it over-reads a handful of cards and loses one
+      against Blue- and Green-heavy ones. 0.5 is the peak and the middle of
+      the flat part, at 88.6% mean across six foe shapes against 88.0% blind.
 
     **A caution, because this sweep has now been wrong once.** An earlier
     reading of it concluded that `_SETUP_BONUS` was inert because "Chris
@@ -510,6 +516,7 @@ class KitAI(SimpleAI):
     _STANCE_REPLAY = -2.0   # the same stance again
     _REPEAT_PENALTY = -2.0  # a colour that would end a stance
     _BANK_TIE_WIN = 1.0
+    _MATCHUP_TRUST = 0.5    # how far to trust the colour read on attack
 
     # ---- shared scoring -------------------------------------------------
 
@@ -537,17 +544,71 @@ class KitAI(SimpleAI):
     # ---- attacking ------------------------------------------------------
 
     def choose_attack(self, me, target):
+        """Best value, and on a tie the colour you did not just play.
+
+        **The tiebreak was the other half of the colour blindness.** Two
+        options at the same value used to be settled by the bigger die,
+        which is a variance preference dressed up as a decision — the mean
+        is already inside the value. Chris's two Passives score 6.0 and
+        6.0, so the die alone decided which colour he led with, forever,
+        whoever he was fighting.
+
+        Changing colour is the better default and this game says so three
+        times over: MEASURE pays for a colour change, KILLSWITCH ends on a
+        repeat, and an opponent who is tracking what you play — which is
+        what `Knowledge` does — is exactly who a repeated colour is
+        readable by. Measured over five foe shapes it is worth about a
+        point of party win rate on average and three against a Red-heavy
+        deck, which is more than the matchup weighting itself buys.
+        """
         opts = me.playable(target)
         if not opts:
             return None
         price = self._card_price(me)
         return max(opts, key=lambda c: (
             self._attack_value(me, c, target)
-            - (0 if me.is_passive(c) else price), c.die or 0))
+            - (0 if me.is_passive(c) else price),
+            c.color != me.last_attack_color,
+            c.die or 0))
 
     def _attack_value(self, me, card, target):
+        """What an attack is worth, through the reveal rather than before it.
+
+        **An attack that loses the reveal deals nothing**, and this class
+        scored defences on the colour matchup while scoring attacks on the
+        raw number — the defender read the triangle and the attacker was
+        blind to it. Leading Red into a creature whose deck is half Red is
+        a tie and a wasted turn, and the old scorer could not see the
+        difference between that and a clean hit.
+
+        So the damage is weighted by the chance of winning the reveal, and
+        everything the Effect is worth by the chance the Effect runs at all
+        — which is a win *or* a tie, because `_finish` runs the attacker's
+        half on both. The colour-repeat penalty is the one thing left
+        unweighted: a stance ends on a repeated colour when the card is
+        played, before anyone knows who won (`engine.resolve_attack`).
+
+        Both weights are normalised so that **an agent who has seen nothing
+        scores exactly what the old one did.** With the smoothed prior at a
+        flat third, `hits` and `runs` are both 1.0, and the tuned weights
+        below keep the meanings they were tuned with. The scorer only
+        starts to diverge as the discard pile fills, which is the point:
+        it plays the matchup once it has watched enough to have one.
+        """
         import effects as fx
-        value = self._expected(me, card)
+        beat, tie = self._odds(card, target)
+        # Shrink toward "no idea" before multiplying damage by it. The raw
+        # odds are an estimate off a handful of cards, and a noisy estimate
+        # multiplied into the damage is a noisy score — measured, trusting
+        # them in full won four points against a Red-heavy deck and lost
+        # one against Blue- and Green-heavy ones, because it would lead a
+        # small Green die into Blue rather than a big Red one.
+        t = self._MATCHUP_TRUST
+        beat = t * beat + (1 - t) / 3.0
+        tie = t * tie + (1 - t) / 3.0
+        hits = 3.0 * beat            # 1.0 against an unknown opponent
+        runs = 1.5 * (beat + tie)    # 1.0 against an unknown opponent
+        value = self._expected(me, card) * hits
 
         # A card that always ties and carries no Effect does nothing at all
         # as an attack. Hold it for the block it is actually good at.
@@ -566,8 +627,9 @@ class KitAI(SimpleAI):
         # green is not a repeat that costs him anything.
         for op in ops:
             if isinstance(op, fx.Stance):
-                return (value + self._SETUP_BONUS if op.key not in me.stances
-                        else value + self._STANCE_REPLAY)
+                return value + runs * (self._SETUP_BONUS
+                                       if op.key not in me.stances
+                                       else self._STANCE_REPLAY)
 
         # A totem that buffs the party is worth more than its own damage,
         # and worth nothing extra once one is standing.
@@ -575,30 +637,30 @@ class KitAI(SimpleAI):
             import engine
             already = any(c.is_object and c.summoner is me
                           for c in engine.table())
-            value += 0.0 if already else self._SETUP_BONUS
+            value += 0.0 if already else self._SETUP_BONUS * runs
 
         # A held tie-win is worth banking, once.
         if any(isinstance(op, fx.WinsNextTie) for op in ops) \
                 and not me.wins_next_tie:
-            value += self._BANK_TIE_WIN
+            value += self._BANK_TIE_WIN * runs
 
         # An Effect gated on "the card you played last turn was a different
         # colour" only pays when it is true, so only count it then.
         for op in ops:
             if isinstance(op, fx.Gated) and op.label == 'the colour changed':
                 if me.last_color and me.last_color != card.color:
-                    value += self._EFFECT_VALUE
+                    value += self._EFFECT_VALUE * runs
                     for inner in op.ops:
                         if isinstance(inner, fx.DamageBonus):
-                            value += inner.amount
+                            value += inner.amount * hits
                 break
         else:
             if ops:
-                value += self._EFFECT_VALUE
+                value += self._EFFECT_VALUE * runs
 
         # The load is the card, so score GRIND SHOT with what is in it.
         if any(isinstance(op, fx.AsLoadedRound) for op in ops):
-            value += self._load_value(me)
+            value += self._load_value(me) * hits
 
         # Repeating a colour ends a stance that says it does.
         if me.last_attack_color == card.color:
