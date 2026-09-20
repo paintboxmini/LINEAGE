@@ -40,7 +40,16 @@ HIDDEN = {'hp', 'max_hp', 'body', 'mind', 'soul', 'hand', 'deck',
 # are guarded by the team check in that method, which is the one place
 # allowed to decide what a player may be shown.
 OWN = {'me', 'who', 'self'}
-EXEMPT = {('HumanAgent', '_health')}
+EXEMPT = {
+    ('HumanAgent', '_health'),
+    # A character's own seed is a piece of them, paid for out of their own
+    # HP and grown at the start of each of their own turns
+    # (`campaign/chris.md`, Seeds). Knowing how big it is is knowing what
+    # they are carrying, not reading somebody else's sheet. Exempted by
+    # function rather than by the method that calls it, so it stays the
+    # size of its reason.
+    ('KitAI', '_my_seed'),
+}
 
 
 def offences(path=SOURCE):

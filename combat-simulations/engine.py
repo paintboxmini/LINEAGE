@@ -168,6 +168,13 @@ class Combatant:
         # it was never handed (`agents.Knowledge`).
         self.seen_damage = 0
 
+        # Objects (`rules/combat.md`, Objects). `is_seed` and `grows_by`
+        # belong to the one kind that gets bigger on its own
+        # (`campaign/chris.md`, Seeds); a spirit has neither.
+        self.is_seed = False
+        self.grows_by = 0
+        self.tracker = None       # the card sitting face up for this Object
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -446,6 +453,14 @@ class Combatant:
             if log:
                 log('  the totem is gone — the party loses its bonus.')
             self.totem_buff = []
+        # The card that was tracking it stops being face up and is discarded
+        # (`rules/combat.md`, Objects).
+        card, owner = self.tracker, self.summoner
+        if card is not None and owner is not None:
+            if card in owner.in_play:
+                owner.in_play.remove(card)
+                owner.discard.append(card)
+            self.tracker = None
         global _TABLE
         _TABLE = [c for c in _TABLE if c is not self]
 
@@ -1173,6 +1188,48 @@ def _standing(attacker, card, defender, log):
 # that "all allies" and "any enemy" have something to resolve against; an
 # exchange run outside a fight simply sees the two combatants in it.
 _TABLE = []
+
+
+def grow_objects(who, log=None):
+    """`campaign/chris.md`, Seeds: a seed gains HP at the start of each of
+    its owner's turns, up to that owner's own maximum.
+
+    Not while they are Collapsed — it is their body, and their body is
+    busy. The cap is the owner's max HP rather than the seed's, because a
+    seed has no stats of its own to derive one from.
+    """
+    log = log or (lambda *a: None)
+    if who.down:
+        return
+    for obj in _TABLE:
+        if not (obj.is_object and obj.grows_by and obj.summoner is who):
+            continue
+        room = who.max_hp - obj.hp
+        if room <= 0:
+            continue
+        gain = min(obj.grows_by, room)
+        obj.soul += gain          # max HP is derived; the HP lives in Soul
+        obj.hp += gain
+        log(f'  {obj.name} grows to {obj.hp} HP.')
+
+
+def harvest_seed(who, log=None):
+    """Consume a seed you are standing with, as a free action: heal its HP.
+
+    Returns the amount healed, or 0 if there was nothing to take.
+    """
+    log = log or (lambda *a: None)
+    seed = next((o for o in _TABLE if o.is_object and o.is_seed
+                 and o.summoner is who and o.position == who.position
+                 and o.alive()), None)
+    if seed is None:
+        return 0
+    amount = seed.hp
+    healed = who.heal(amount, log=log)
+    log(f'  {who.name} takes the seed back — {healed} HP.')
+    seed.hp = 0
+    seed.dissipate(log)
+    return healed
 
 
 def table():

@@ -297,6 +297,29 @@ Multiple ongoing effects can be active simultaneously unless a card specifies ot
 
 ---
 
+## Objects
+
+**Some things stand on the field without being combatants.** A summoned spirit, a totem, a wall somebody made out of themselves, a seed. They are on the table and they can be destroyed, but they are not people taking turns.
+
+**An Object:**
+
+- **Holds HP and nothing else.** No stats, no deck, no hand, no Passives.
+- **Takes no turn and gets no token on the initiative wheel.** The rule that puts a summoned combatant into the wheel (Initiative, above) does not apply, because an Object is not a combatant.
+- **Never acts or decides anything**, including on the turn it arrives.
+- **Occupies a position** and is caught by anything that catches a position.
+- **Can be attacked directly.** An enemy may target it instead of a person.
+- **Is auto-hit when attacked.** It holds no cards, so it cannot choose a defence, and an attack on a target that cannot or will not defend already resolves without an RPS reveal (Attack Resolution, above). This is that rule, not a new one.
+- **Does not Collapse and is never Down.** At 0 HP it is simply gone, and anything it was holding up goes with it.
+- **Does not count for whether a side is still standing.** A party is not still in the fight because its totem is.
+
+**Where an Object's HP comes from is the card's business.** A spirit rolls for it (`campaign/pat.md`, Wild Magic Summoning). A structure or a seed made out of a character is paid for out of that character's own HP pool and holds exactly what they paid (`campaign/passives.md`, AMALGAMOUS FORM; `campaign/chris.md`, Seeds) — which is what makes destroying one a real loss rather than a nuisance.
+
+**Track an Object with the card that made it**, face up in front of its owner, the same technique Ongoing Effects and status tokens already use. One card, one Object: the card is what says the thing is there, and it goes to the discard when the thing does.
+
+*Written 2026-09-20, off three examples rather than one — Pat's spirits, AMALGAMOUS FORM's walls, and Chris's seeds. Both of the first two sheets said in as many words that the category was worth generalising once there was more than a single case of it, and declined to do it early.*
+
+---
+
 ## Simultaneous Effects
 
 When two or more effects would resolve at the same moment — several "start of your turn" triggers, two tokens landing at once — the **controller of those effects chooses the order** they resolve in. If the simultaneous effects have different controllers, the player whose turn it is decides the order.

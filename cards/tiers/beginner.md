@@ -1,6 +1,6 @@
 # Beginner Tier
 
-The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 43 more are cleared and on the bench, 127 in all.
+The cards cleared for a first campaign. 84 are seated — the Oracle 63 and the expansion 21 — and 42 more are cleared and on the bench, 126 in all.
 
 Cleared means somebody read the card with new players in mind and nothing stopped it — it is not a promise that the card is balanced forever. The screen these were cleared against, and the four bars it applies, are in `rules/early-campaign-cards.md`. Cards that failed it are in `middle.md`, not deleted.
 
@@ -40,7 +40,7 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ---
 
-## Eligible but unseated (43)
+## Eligible but unseated (42)
 
 Beginner-legal, on the bench, no seat in a printed set. This is where a later set draws from first — the bench-first rule in `rules/cards.md` says a card that already exists has already been priced against its neighbours.
 
@@ -48,9 +48,9 @@ Beginner-legal, on the bench, no seat in a printed set. This is where a later se
 
 **Blue (5).** DECODE · DRAIN · REDIRECT · TRACE · UNMAKE
 
-**Green (16).** ABIDE · ATTUNE · AWAKEN · BOLSTER · CONSUME · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · SEED · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
+**Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · CONSUME · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
 
-Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-09-18 from the middle tier, when Lifesteal stopped being a middle-tier keyword — it heals for half the damage dealt, not all of it, and the ruling had been made on the wrong number. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day and came back out — legal on every bar, but it plants a payoff at a position and collects a turn later if you are still standing there, which is a specialist's card rather than something a first deck should teach.
+Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-09-18 from the middle tier, when Lifesteal stopped being a middle-tier keyword — it heals for half the damage dealt, not all of it, and the ruling had been made on the wrong number. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day, came back out, and on 2026-09-20 left the core pool entirely: the reason it was unseated — a payoff planted at a position and collected later, a specialist's card rather than something a first deck should teach — turned out to be the argument for making it somebody's signature. It is Chris's now (`cards/chris.md`), rebuilt around a seed that grows, and it is no longer draftable.
 
 ---
 

@@ -67,6 +67,11 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     who.last_color = who.color_this_turn
     who.color_this_turn = None
 
+    # A seed gains HP at the start of its owner's turn
+    # (`campaign/chris.md`, Seeds), before the draw, so it is already at
+    # its new size when the free action below can take it.
+    engine.grow_objects(who, log=log)
+
     skip = who.restriction(SKIP_DRAW)
     if skip is not None:
         who.spend_restriction(skip, log=log)
@@ -122,15 +127,20 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
 def spend_free_action(who, choice, log):
     """One free action, resolved. `choice` is what the agent asked for:
     ('reload', round) to put a prepared round in the grinder, ('drink',
-    name) to drink one of your own, ('orange', position) to throw one, or
-    None to keep it.
+    name) to drink one of your own, ('orange', position) to throw one,
+    ('harvest',) to take back a seed you are standing with, or None to keep
+    it.
 
-    All three are things `rules/combat.md` already names as free — gear you
-    activate, and eating or drinking.
+    All of them are things `rules/combat.md` already names as free — gear
+    you activate, and eating or drinking. A seed is eating
+    (`campaign/chris.md`, Seeds).
     """
     if not choice:
         return
     kind = choice[0]
+    if kind == 'harvest':
+        engine.harvest_seed(who, log=log)
+        return
     if kind == 'reload' and who.rounds:
         name = choice[1] if len(choice) > 1 else who.rounds[0]
         if name not in who.rounds:

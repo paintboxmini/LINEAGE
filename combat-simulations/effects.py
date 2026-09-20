@@ -2440,6 +2440,73 @@ def _r_drink_self(m):
 # position and can be attacked directly.
 
 
+class PlantSeed(Op):
+    """`campaign/chris.md`, Seeds. `rules/combat.md`, Objects.
+
+    Pay HP, and what you paid is standing over there now. The Object holds
+    exactly the HP that left him, which is AMALGAMOUS FORM's rule about a
+    structure made from a split-off piece rather than a cost invented for
+    this card (`campaign/passives.md`).
+    """
+
+    COST = 3
+    GROWTH = 3
+
+    def apply(self, ctx):
+        from engine import Combatant, table, set_table
+        who = ctx.actor
+        if any(c.is_object and c.summoner is who and c.is_seed
+               for c in table()):
+            ctx.log(f'  {who.name} already has a seed planted.')
+            return
+        who.take(self.COST, unpreventable=True, log=ctx.log)
+        # The roll goes into Soul for the same reason a spirit's does:
+        # max HP is derived and must stay derived (`rules/invariants.md`),
+        # and 4x0 + 0 + n is exactly n.
+        seed = Combatant(f"{who.name}'s seed", 0, 0, self.COST,
+                         deck=[], position=who.position, team=who.team)
+        seed.is_object = True
+        seed.is_seed = True
+        seed.summoner = who
+        seed.grows_by = self.GROWTH
+        seed._agent = getattr(who, '_agent', None)
+        # The card is what says the seed is there — face up in front of
+        # him, the way an Ongoing Effect is tracked (`rules/combat.md`,
+        # Objects). It goes to the discard when the seed does, which is
+        # also why he can only have one: no deck runs a card twice.
+        seed.tracker = ctx.card
+        ctx.stays_in_play = True
+        set_table(table() + [seed])
+        ctx.log(f'  {who.name} plants a seed — {self.COST} HP, '
+                f'{seed.position}.')
+
+
+@menu(r'^plant a seed\.?$')
+def _r_plant_seed(m):
+    return [PlantSeed()]
+
+
+@menu(r'^if the top card of your discard pile is a different colou?r than '
+      r'this one, (.+?)\.?$')
+def _r_gated_on_discard(m):
+    """SEED's defence half. Blocking costs no Action, so an ungated planting
+    half would seed for free every time somebody swung at him
+    (`campaign/chris.md`, Seeds). The pile is face up, so the gate is
+    something anyone at the table can check.
+    """
+    inner = compile_half(m.group(1))
+    if inner is None:
+        return None
+
+    def test(ctx):
+        pile = [c for c in ctx.actor.discard if c.color]
+        if not pile:
+            return False
+        return pile[-1].color != ctx.card.color
+
+    return [Gated(test, inner, 'the discard pile shows another colour')]
+
+
 class Summon(Op):
     """Put a spirit on the field at the summoner's position.
 

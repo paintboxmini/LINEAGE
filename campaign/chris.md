@@ -88,7 +88,7 @@ What the kit delivers so far:
 - **MIMETIC BLADE** is the one form he has actually perfected — no draw, no sheath, just whether the arm is a sword yet. A singer with one song they can do perfectly, which is more than most singers have.
 - **KILLSWITCH** is the stance, and stance-changing is what makes a fight look choreographed rather than transactional.
 
-**And the kit now delivers flow**, which was the hole in it. Two cards do it from opposite directions — **MEASURE** pays him a little every turn he keeps the pattern moving, **RIPOSTE** turns a block into the next strike. Both are written below under Cards. A third candidate, **FOLLOW THROUGH**, is written and held back as a later reward rather than a starter.
+**And the kit now delivers flow**, which was the hole in it. Two cards do it from opposite directions — **MEASURE** pays him a little every turn he keeps the pattern moving, **SEED** pays him for having been somewhere else. Both are written below under Cards. A third candidate, **FOLLOW THROUGH**, is written and held back as a later reward rather than a starter.
 
 ### Why these two, out of three candidates
 
@@ -104,16 +104,14 @@ What the kit delivers so far:
 
 **Compare STUDY** (`cards/blue-mind.md`), the Oracle card that does this: Ranged, d4, defence half only, gated behind a DC 13 Mind/Reason check. MEASURE gets the same reveal on **both** halves with no check, and pays for it with a condition STUDY doesn't have — he must have rotated colour since last turn, which is a cost he pays in deckbuilding and in every turn's decision rather than in a die roll.
 
-**RIPOSTE is flow as defence feeding offence**, which is what sword fighting actually looks like. It grants **Deadly rather than a flat number**, and the difference matters:
+**SEED is flow as a thing that keeps running while he is elsewhere.** It is the only card in the kit whose payoff is not about the exchange it was played in:
 
-- Deadly is a status he *holds* (`rules/card-glossary.md`, 17), so the block genuinely arms the next motion instead of being a same-turn rider that evaporates if the opening doesn't come immediately.
-- **It stacks.** Two blocks give two Deadly give two armed attacks — which is a chain, which is the entire thing this card is supposed to produce. A flat +3 twice is just +6 once.
-- It's a variable +d6 rather than a guaranteed amount, which reads like an opening rather than a payment.
-- It's existing vocabulary that the rest of the corpus already talks to, including Weak cancelling it 1-for-1 (`rules/card-glossary.md`, 18). Being counterable is a feature: enemies get an answer.
+- It costs **3 HP to plant**, which is not a balancing tax bolted on — it is AMALGAMOUS FORM's existing ruling (`campaign/passives.md`): a standing structure made from a split-off piece *is an Object with its own HP, paid out of his own HP pool.* The seed is the smallest possible case of the thing his Passive already says he can do.
+- What he plants **can be attacked**, so the bank is not safe. An enemy that eats a grown seed takes the whole deposit with it.
+- The payoff is **banked rather than ticked**, which is worth more than the rate suggests: a heal-per-turn is wasted whenever he is at full HP, and a seed is never wasted until he spends it.
+- And it gives his **free action something to do.** Kevin's competes three ways; Chris's has been empty since he was written.
 
-**And the dead-turn problem was fixable, because a card has two halves and the first draft only used one.** The riposte sits on the Defense half; the Attack half arms him when he is the aggressor. It is never a blank turn, and the two halves teach the same idea from both directions.
-
-**The three together.** MEASURE is the discipline, RIPOSTE is the reflex, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
+**The three together.** MEASURE is the discipline, SEED is the patience, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
 
 ## Magic Expression — nature and transmogrifying
 
@@ -165,9 +163,9 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, RIPOSTE, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
 
-His stats want **4 Blue / 3 Red / 2 Green**, so one signature in each colour fits without crowding any of them — the same shape Kevin's three customs take (`campaign/kevin.md`, Cards). That leaves **3 Blue, 2 Red, 1 Green** to draft.
+His stats want **4 Blue / 3 Red / 2 Green**. **Both Green slots are signatures right now** — SEED and KILLSWITCH — which is legal and is worth seeing clearly: it leaves **4 Blue, 3 Red, 0 Green** to draft, and it means every Green card he owns is one he cannot replace. *This is a transitional state.* Moving MEASURE to Red and KILLSWITCH to Blue has been discussed and not decided (`rules/cards.md`, Why Red has the biggest dice — range pays for them); if that happens the split goes back to one signature per colour.
 
 ## Cards
 
@@ -187,21 +185,25 @@ Range: Both
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**RIPOSTE.** The block that becomes the strike. Red because it is a body doing a thing it has done ten thousand times, not a plan.
+**SEED.** A piece of himself left somewhere to grow. Green because it is patience, and because Soul is the stat he has least of — the card he can least afford to lean on, which is the right home for a payoff that arrives late.
 
 ```
-RIPOSTE
-RED — BODY
-Attack: Body + d6
-Effect: Gain Deadly.
-Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
-Range: Melee
-"He doesn't answer the strike. He finishes it."
+SEED
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Plant a seed.
+Defense Effect: If the top card of your discard pile is a different colour than this one, plant a seed.
+Range: Both
+"He plants what he can spare. It remembers the rest."
 ```
 
-**Melee is the price, and it is a real one on this card specifically**, because a defender's card has to satisfy its own Range as if they were attacking (`rules/combat.md`, Attack Resolution, step 2). A Melee card cannot block at all unless both combatants are Frontline. So the half he most wants — the one that pays double — only exists when he is already in the scrum, which is where a blade singer should have to stand.
+**The card is deliberately almost blank, and the rules are on this sheet** under Seeds, below. Kevin's rounds and drinks work the same way (`campaign/kevin.md`) — the card names the thing, the sheet holds what the thing is. It keeps a card that would otherwise need a paragraph down to one line, and it keeps the growing part where it belongs, which is with him.
 
-**No Special Rule is needed for ties, unlike FOLLOW THROUGH.** A tie triggers the attacker's Effect *and* the defender's Defense Effect (`rules/combat.md`, Attack Resolution), so a tied block still arms him once — and the second Deadly is fenced off behind *won this exchange* in the card text itself. The card says what it means without a rider.
+**Replaced RIPOSTE on 2026-09-20.** RIPOSTE was a good card and a generic one — gain Deadly, gain it twice on a clean block — and nothing about it was Chris rather than any competent swordsman. SEED is not a card anyone else could hold: it costs him his own body to plant.
+
+**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate — *the top of your discard pile is a different colour than this one* — is the same colour-rotation idea MEASURE runs on, read off the one public pile anybody at the table can check. He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
+
+**Rebuilt from the core card of the same name**, which held an Oracle seat for one day in September and was pulled for being a specialist's card (`cards/tiers/beginner.md`). Nothing survives but the name and the die. The old one planted a buff at a position and collected it a turn later; this one plants *him*.
 
 **KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning SERVE runs on (`campaign/kevin.md`). His draft has only two green slots, so a signature there is well placed.
 
@@ -239,9 +241,33 @@ Range: Both
 
 **The clause bites on the other greens in his deck**, which is why it matters that he has only two green slots and one of them is this. While KILLSWITCH is on the table his remaining green is a single card — so the way he loses the stance is usually not green at all, it is swinging Blue twice running out of a four-Blue deck.
 
-**The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
+**The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, SEED banks the turns he spends out of position doing either. Nothing in the set is dead on any given turn, and nothing in it snowballs — the seed is the only thing that accumulates, and it accumulates where people can hit it.
 
 ---
+
+## Seeds
+
+**SEED says "plant a seed" and this is what a seed is.** Settled 2026-09-20.
+
+> **Planting.** Pay **3 HP**. A seed appears at your position with **3 HP** — the HP you paid, which is the same HP. It is an **Object** (`rules/combat.md`, Objects): it takes no turn, holds no cards, never acts, and **can be attacked**. Leave the SEED card face up in front of you to track it, the way an Ongoing Effect is tracked. One card, one seed.
+>
+> **Growing.** At the start of each of your turns the seed gains **3 HP**, to a maximum of **your own maximum HP**. It does not grow on a turn you begin Collapsed — it is your body, and your body is busy.
+>
+> **Harvesting.** While you are in the **same position as the seed**, you may consume it as a **free action**: heal for its current HP, the seed is gone, and the card goes to your discard pile.
+>
+> **Afterwards.** A seed left standing when the fight ends is still there. It keeps growing at the start of each of your turns in the next one, and you can walk away from a fight with a bank planted.
+
+**Why it costs HP.** Because AMALGAMOUS FORM already says it does. A standing structure built from a split-off piece is *"an Object with its own HP, paid out of his own HP pool, not a fresh pool of its own"* (`campaign/passives.md`). The seed is the smallest case of that rule, not a new one — which is why the number the seed holds and the number he lost are the same number, and why killing the seed is killing part of him.
+
+**Why it can be attacked.** Same reason. It is a piece of him standing somewhere he is not, and the enemy can see it. This is the whole counterplay: everything he banks is sitting on the table where an attack can take it, and a seed he never walks back to is 3 HP he simply spent.
+
+**Why harvesting is free.** A free action covers eating and drinking (`rules/combat.md`, Free Actions), and this is eating. His free action has been empty since he was written — Kevin's competes three ways and Chris has never had a use for his.
+
+**What it is worth, and the lever if it is wrong.** Three a turn, banked, uncapped until his own maximum — so a seed planted early and harvested five turns later is a full heal for one card, one Action and 3 HP. Compare the Anchored healers, which are the closest shape in the corpus: PATIENCE OF STONE heals 5 a turn and **you cannot move at all**, PATIENCE 3, IRON GRIP 2. SEED is not Anchored — he plants it and walks away — and it banks rather than ticks, which is worth more than the rate suggests, because a tick is wasted at full HP and a bank never is.
+
+**So the rate is the lever, not the cap.** If it plays hot at the table, take it to 2 a turn before touching anything else; the cap only bites after five growths and most fights end first.
+
+**The line it is built for.** Plant at the Frontline, move to the Backline, change stance where there is room to, come back and take it. That is three turns of not attacking, and the seed is what pays for them.
 
 ## Held Back — FOLLOW THROUGH
 
@@ -298,7 +324,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - Appearance, voice, backstory detail beyond the above
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
-- **MEASURE, RIPOSTE, KILLSWITCH** — all three settled as his starters; the numbers on MEASURE and RIPOSTE want a table test
+- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters; SEED's growth rate wants a table test, and the Red/Blue recolouring of the other two is still open
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 

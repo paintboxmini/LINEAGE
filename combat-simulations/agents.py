@@ -872,6 +872,17 @@ class KitAI(SimpleAI):
         choice rather than a checklist: reload, drink, or throw."""
         import engine
         hurt = me.hp <= me.max_hp * 0.5
+
+        # A seed is only worth taking for what it would actually heal —
+        # harvesting at full HP throws the bank away, and the whole point
+        # of a bank over a tick is that it waits (`campaign/chris.md`,
+        # Seeds). So take it when the healing would not be wasted.
+        banked = self._my_seed(me)
+        if banked:
+            missing = me.max_hp - me.hp
+            if missing >= banked or (hurt and missing >= banked * 0.6):
+                return ('harvest',)
+
         if me.drinks and hurt:
             return ('drink', me.drinks[0])
         if me.load is None and me.rounds:
@@ -886,6 +897,23 @@ class KitAI(SimpleAI):
         if me.load is None and me.rounds:
             return ('reload', self._best_round(me))
         return None
+
+    def _my_seed(self, me):
+        """How much is standing in my own seed here, or 0.
+
+        **This reads an Object's HP, and that is not a hole in the
+        information rule.** A seed is a piece of this character that they
+        paid for and have watched grow at the start of every one of their
+        turns since (`campaign/chris.md`, Seeds) — they know its size the
+        way they know their own. `test_information.py` exempts this one
+        function by name rather than the method that calls it, so the
+        exemption stays the size of the reason for it.
+        """
+        import engine
+        seed = next((o for o in engine.table()
+                     if o.is_object and o.is_seed and o.summoner is me
+                     and o.position == me.position and o.alive()), None)
+        return seed.hp if seed is not None else 0
 
     def _best_round(self, me):
         import effects as fx
