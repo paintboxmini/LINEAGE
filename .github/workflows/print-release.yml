@@ -94,7 +94,19 @@ jobs:
           tag time. To build them yourself, see `printing/README.md` — it
           needs Python 3 and headless Chrome and nothing else.
           EOF
-          gh release create "${GITHUB_REF_NAME}" printing/*.pdf \
-            --title "${GITHUB_REF_NAME}" \
-            --notes-file notes.md \
-            --generate-notes
+          # Two ways a tag gets here, and they need different handling.
+          # From a terminal: `git push origin v1` makes a tag and no
+          # release, so one has to be created. From the GitHub website —
+          # which is the only way to do this from a phone — publishing a
+          # release makes the tag AND the release at once, so creating it
+          # again fails. Upload into it instead.
+          if gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1; then
+            echo "release already exists — attaching the sheets to it"
+            gh release upload "${GITHUB_REF_NAME}" printing/*.pdf --clobber
+          else
+            echo "creating the release"
+            gh release create "${GITHUB_REF_NAME}" printing/*.pdf \
+              --title "${GITHUB_REF_NAME}" \
+              --notes-file notes.md \
+              --generate-notes
+          fi
