@@ -53,7 +53,7 @@ When you change a card or a stat block, check what else consumes it: the seated 
 ## Conventions worth knowing before you edit
 
 - **`cards/*.md` is globbed non-recursively** by `combat-simulations/cards.py` (`os.listdir`) and by `printing/generate-cards.py`. Both parsers read every `.md` at the top of `cards/` as a deck, which is why `cards/tiers/` is a subdirectory — the files there are documentation
-- **`printing/generate-all.sh` builds print artifacts and nothing else, deliberately.** Don't wire checks, linting, or anything else into it. **The PDFs are build output and are not in git** — it is what puts them back, and it needs headless Chrome to do it (`printing/README.md`)
+- **`printing/generate-all.sh` builds print artifacts and nothing else, deliberately.** Don't wire checks, linting, or anything else into it. **The PDFs are build output and are not in git** — it is what puts them back, and it needs headless Chrome to do it. Tagging `v*` builds them in CI and attaches them to a GitHub Release, which is how anyone without Chrome gets a printable deck (`printing/README.md`)
 - **Every plant has a gate, and no gate is a stat check** (`flora/README.md`). A roll says whether a character is good at something; a gate says what kind of person or situation gets the thing at all
 - **Tiers are about when, not about quality** (`cards/tiers/README.md`). A card that's too strong to start moves to the middle tier; it does not get rewritten until it's weak enough. That is how TURN lost its redirect for a year
 - **A claim derived from another file carries a citation to it.** The value isn't for the reader — it's that writing the citation means opening the file, which is where the contradiction gets noticed (`agent-tools/README.md`)

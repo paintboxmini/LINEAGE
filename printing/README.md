@@ -48,12 +48,42 @@ Two things worth knowing about that decision:
   only stops *new* ones being added. Reclaiming the old ones would mean
   rewriting history, which breaks every existing clone, and is not worth it
   for a repository this size.
-- **It costs a player something.** Before, anyone could download a
-  printable deck straight from GitHub. Now they need Python and Chrome, or
-  they need somebody to send them a file. If that becomes the common case,
-  the fix is to attach the PDFs to a **GitHub Release** — same download
-  link, none of the history cost — rather than to start committing them
-  again.
+- **A player still gets a download**, just not from the file tree. Tagging
+  a version builds the sheets and attaches them to a **GitHub Release** —
+  see below. Same link to hand somebody, none of the history cost.
+
+## Releases
+
+**Tag a version and the sheets come out the far end as downloads.**
+
+```
+git tag v2026.09.20
+git push origin v2026.09.20
+```
+
+`.github/workflows/print-release.yml` checks out that tag, builds every
+PDF from its own source, and attaches them to a GitHub Release. Nobody
+needs Python or Chrome on their own machine to print a deck — they need
+the release page.
+
+The workflow can also be run by hand from the Actions tab without tagging,
+which uploads the sheets as a build artifact (kept 30 days) and creates no
+release. That is the way to check a build before committing to a version.
+
+Two things it does that are worth knowing:
+
+- **It refuses to release from stale sheets.** The build runs with
+  `--check`, so if any HTML is out of date against the markdown the
+  workflow fails and no release is created. Regenerate, commit, re-tag.
+- **It looks at the PDFs before shipping them.** Headless Chrome can exit 0
+  and leave a stub behind, so every file is checked for a `%PDF-` header
+  and a plausible size, and the count is checked against the expected
+  eleven. A silent empty sheet is the failure this is for.
+
+**The consistency scripts in `agent-tools/` are deliberately not wired into
+it.** They are run by hand, on purpose (`CLAUDE.md`, Checking work), and a
+release gate is exactly the kind of enforcement that convention is about.
+Adding them is three lines if that changes.
 
 ## What is here
 
