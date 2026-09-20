@@ -92,7 +92,7 @@ What the kit delivers so far:
 
 ### Why these two, out of three candidates
 
-**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating — and now that the payout is information rather than a card, it cannot build card advantage either. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating — and now that the payout is information rather than a card, it cannot build card advantage either. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something. **And the card is Red now**, which sharpens it — the rotation that pays MEASURE is most often a rotation *off* Blue, which is the colour his stance also punishes him for repeating. The two cards ask the same thing of him from opposite directions.
 
 **MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
 
@@ -165,23 +165,29 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
 
-His stats want **4 Blue / 3 Red / 2 Green**. **Both Green slots are signatures right now** — SEED and KILLSWITCH — which is legal and is worth seeing clearly: it leaves **4 Blue, 3 Red, 0 Green** to draft, and it means every Green card he owns is one he cannot replace. *This is a transitional state.* Moving MEASURE to Red and KILLSWITCH to Blue has been discussed and not decided (`rules/cards.md`, Why Red has the biggest dice — range pays for them); if that happens the split goes back to one signature per colour.
+His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
+
+**Every one of the three changed colour on the way here**, which is worth saying plainly rather than hiding in the history: MEASURE went Blue to Red, KILLSWITCH went Green to Blue, and SEED replaced a Red card entirely. The set ended up where it started — one per colour — by a different route, and each card is now the colour its fiction was always describing rather than the colour that was convenient when it was written.
 
 ## Cards
 
 Three customs, one per colour. **They have landed: `cards/chris.md` is the card, this section is the argument for it.** Both copies are worth keeping and they must not drift — `python3 agent-tools/check-card-drift.py` is what notices when they do.
 
-**MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often. The reveal is written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
+**MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
+
+**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
+
+**What he actually pays is the Range, and it is a real price on this card.** A defender's card has to satisfy its own Range as though they were attacking (`rules/combat.md`, Attack Resolution), so a Melee card cannot block at all unless both combatants are Frontline. The half that reads the *attacker* now only exists when he is already in the scrum — which is where a blade singer should have to stand to be reading anybody.
 
 ```
 MEASURE
-BLUE — MIND
-Attack: Mind + d6
+RED — BODY
+Attack: Body + d8
 Effect: If the card you played last turn was a different colour than this one,
         deal +2 damage and the defender reveals their stats.
 Defense Effect: If the card you played last turn was a different colour than
         this one, the attacker reveals their stats.
-Range: Both
+Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
@@ -205,16 +211,22 @@ Range: Both
 
 **Rebuilt from the core card of the same name**, which held an Oracle seat for one day in September and was pulled for being a specialist's card (`cards/tiers/beginner.md`). Nothing survives but the name and the die. The old one planted a buff at a position and collected it a turn later; this one plants *him*.
 
-**KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning SERVE runs on (`campaign/kevin.md`). His draft has only two green slots, so a signature there is well placed.
+**KILLSWITCH.** The stance. **Blue and Ranged-only since 2026-09-20**, having started Green and Both. The fiction is that changing mode takes a beat he has to buy: he makes space, switches, and comes back. Ranged-only is what makes that a real sequence instead of something he does mid-swing — he cannot flip stance while standing in the scrum, which is exactly when he most wants to.
+
+**Blue because the choice is the card.** Deciding which of two modes the fight needs is the Mind's job, and it is the same reasoning that used to argue for Green as flexibility — modality reads as either, and the tiebreak is that Soul is now spoken for by SEED.
+
+**The die stays at d4, and that is deliberate.** Mind 4 is his best stat, so the colour change alone takes the card from 4.0 expected to 6.0 — it went from the thing he never played to a real attack without touching the die. A d6 would put it at 7.0, tied for the best card in his kit, and then setting the stance would cost him nothing. **The cost is the good part.** Ranged-only already earns a die above the d4 default; spending that earning on keeping the stance affordable rather than on damage is the trade this card wants.
+
+**And the drawback now bites his own deepest colour.** The clause ends the stance on the same colour twice running, and the stance is Blue, and Blue is four of his nine cards. Measured over 400 fights it ends by repeat **2.8 times as often** as it did in Green — 81 against 29 — while being up far more of the time overall, because a card worth playing gets played. He will lose this stance to his own best colour, repeatedly, and that is the card working rather than failing.
 
 ```
 KILLSWITCH
-GREEN — SOUL
-Attack: Soul + d4
+BLUE — MIND
+Attack: Mind + d4
 Effect: Ongoing — choose one: your attacks deal +3 damage, or gain
         Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
-Range: Both
+Range: Ranged
 "A note changes and so does he. Nobody has worked out which comes first."
 ```
 
@@ -239,9 +251,9 @@ Range: Both
 
 *Reworded twice on 2026-09-18 — "two consecutive reveals", then "two consecutive turns", now attacks.* The first counted blocks. The second fixed that but made a turn the unit, which meant an extra attack inside one turn was invisible to it and a wasted turn reset the clock. **Attacks is the unit that matches what the card is about** — the rhythm of his swings, not the shape of the round.
 
-**The clause bites on the other greens in his deck**, which is why it matters that he has only two green slots and one of them is this. While KILLSWITCH is on the table his remaining green is a single card — so the way he loses the stance is usually not green at all, it is swinging Blue twice running out of a four-Blue deck.
+**The clause bites his own colour now**, which is the sharpest version of it. KILLSWITCH is Blue and Blue is four of his nine cards, so the colour he most wants to swing is the colour that ends his stance. Measured, it ends by repeat 2.8 times as often as it did when the card was Green — and the stance is nonetheless up far more of the time, because a 6.0 card gets played and a 4.0 one did not. The drawback got worse and the card got better, from the same change.
 
-**The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, SEED banks the turns he spends out of position doing either. Nothing in the set is dead on any given turn, and nothing in it snowballs — the seed is the only thing that accumulates, and it accumulates where people can hit it.
+**The three chain, and the chain is now a walk.** KILLSWITCH is Ranged and MEASURE is Melee, so the two cannot be played from the same place: he sets the mode with space around him and reads people from inside their reach. SEED is what pays for the turns spent between the two — plant at the Frontline, fall back, switch, come back and take it. Nothing in the set is dead on any given turn, and nothing in it snowballs — the seed is the only thing that accumulates, and it accumulates where people can hit it.
 
 ---
 
@@ -324,7 +336,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - Appearance, voice, backstory detail beyond the above
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
-- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters; SEED's growth rate wants a table test, and the Red/Blue recolouring of the other two is still open
+- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 

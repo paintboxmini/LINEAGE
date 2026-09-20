@@ -20,11 +20,11 @@ deck (`rules/cards.md`, Deck Building).
 ---
 
 **MEASURE**
-BLUE — MIND
-Attack: Mind + d6
+RED — BODY
+Attack: Body + d8
 Effect: If the card you played last turn was a different colour than this one, deal +2 damage and the defender reveals their stats.
 Defense Effect: If the card you played last turn was a different colour than this one, the attacker reveals their stats.
-Range: Both
+Range: Melee
 *"A bar is not a bar because of the notes in it. It is a bar because of where it ends."*
 
 ---
@@ -40,11 +40,11 @@ Range: Both
 ---
 
 **KILLSWITCH**
-GREEN — SOUL
-Attack: Soul + d4
+BLUE — MIND
+Attack: Mind + d4
 Effect: Ongoing — choose one: your attacks deal +3 damage, or gain Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
-Range: Both
+Range: Ranged
 *"A note changes and so does he. Nobody has worked out which comes first."*
 
 ---
