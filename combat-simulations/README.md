@@ -304,7 +304,7 @@ out of 2942. Soul 2 + d4 scores 4.0 and his MIMETIC BLADE Passive scores
 never has to spend. That got written up here as a note about KILLSWITCH.
 
 **It was a note about the agent.** A Passive should never have been
-competing on its number at all (see below). With `_prefer_hand` in place,
+competing on its number alone (see below). Once it was priced,
 KILLSWITCH is chosen 149 times of 698 legal and a stance is up on 597
 turns of 2676, and `_REPEAT_PENALTY` — which only fires while a stance is
 up, and had therefore never fired — turns out to be the one weight in the
@@ -363,76 +363,65 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
-## The duel and the group fight disagree about Passives
+## When to reach for a Passive is a card question
 
-**And the disagreement is bigger than anything either of them measures.**
-This section's original finding — that Passives close the stat spread from
-33 points to 1.4 — came from duels, and the party fight says the opposite
-in both directions at once.
+**The first attempt at this was a rule about strength and it was wrong.**
+A Passive has no Effect and a small die, so it reads as the weakest thing
+a character holds, and the agent was made to reach for one only when the
+hand had nothing legal at all. That is not the decision a player makes.
 
-The three archetypes, identical but for which stat is 4, two generic
-Passives each, run both ways:
+The decision is **can I afford to spend the card**, and it is a prediction
+rather than a ranking, because a hand refills. You draw back up to hand
+size at the start of your turn (`rules/combat.md`), so a card spent on
+defence costs you only the blocks you still have to make *before* your
+turn comes round. That is countable off the initiative wheel, which is a
+physical object on the table and public in a way a hand is not:
 
-| | duel spread | party spread (5 foes) | party spread (6 foes) |
-|---|---|---|---|
-| Passive competes on its number | **1.4** | 73.7 | 86.7 |
-| Passive as fallback (shipped) | 24.9 | **42.7** | **60.7** |
+    need  = enemy turns before mine / how many of us are still standing
+    spare = cards in hand - 1
+    free to spend when spare >= need, priced when it is not
 
-Read the columns, not the rows. In a duel, making the Passive a fallback
-costs 23 points of spread. In a party fight it *saves* 31 and 26. The
-Soul-primary archetype, which is the one that moves, goes 49.1% → 34.1% in
-the duel and 24.3% → 51.0% in the party fight, off the same change.
+The ally term is not a detail — it is most of the model. An enemy turn is
+not an attack on *me* when there are three of us, so a lone character
+hoards and a character with a party can spend. Without it the answer is
+"never safe" in every group fight, and a first version that left it out
+cost about two points of party win rate by making the agent hoard
+constantly.
 
-**The mechanism is the same in both, and only the sign differs.** A
-Passive costs no card. A character with a two-card hand who blocks with a
-card has spent a quarter of their turn's resources; one who blocks with
-the Passive has spent nothing. In a duel — a pure damage race where the
-hand refills every turn and nobody else is drawing aggro — the free block
-is close to strictly better, so taking it away hurts the small hand most.
-In a group fight, where there are more attacks per round than any one hand
-can answer, blocking with the Passive every time means never spending a
-card on defence and never trading, and the character stalls.
+**Measured, it is neutral on the real kits**: 87.0% and 81.3% against
+86.7% and 82.0% with the price switched off entirely, at four and five
+wrackclaws over 300 fights. It is kept because it is the right shape and
+because switching it off is not better, not because it has been shown to
+pay. Two honest caveats:
 
-**So there is no settled figure for what a Passive is worth**, and the one
-in `rules/cards.md` that answered the ×3 → ×4 damage-gap question has been
-marked open rather than quietly corrected. Two honest things are left:
+- **The old strength rule measured slightly better** on this benchmark —
+  88.3% and 83.7%. It is gone anyway, because it answers a question nobody
+  asks at the table and because of what it did to the archetype figures
+  below.
+- **The decision rarely binds for the generic archetypes**, which is why
+  the sweep over the price is flat for them. Their Passives are written in
+  their primary colour at the d6 melee rate the rules allow, so a Soul 4
+  character's Passive is Soul 4 + d6 — already the strongest thing they
+  own. The price never flips a choice that was not close.
 
-- **The floor is real and is not in dispute.** No-legal-defence goes to
-  **0.0%** on all three spreads with a Both-range Passive and sits at
-  38.8%, 19.4% and 41.7% without one. That is the ruling's actual
-  guarantee, and it holds under either policy.
-- **A spread of 40 to 86 points between archetypes is the finding nobody
-  was looking for.** Every figure above is a Soul-primary problem in a
-  group fight, under both policies. The duel said 1.4 and it was the only
-  benchmark anyone ran.
+### The generic archetype is not the character
 
-**Method note: one benchmark is not a measurement.** The duel figure was
-not wrong about duels. It was used to answer a question about the game.
+The archetype benchmark says a Soul-primary character goes down 49% to
+62% of the time in a party fight where Red and Blue go down 10% to 29%.
+That result is stable: it survives a mixed party rather than three clones,
+it survives rotating party order, it survives switching targeting from
+focus-fire to random, and it is the same with the card price on or off.
 
-## A Passive is the floor, not a pick
+**It does not reproduce for the Soul-primary character anyone actually
+plays.** Pat is the same 3/2/4 shape with the same two-card hand and sits
+at 14% to 26%, level with the other two. The difference is the kit: a
+signature card that mirrors its opponent's colour is a guaranteed block,
+and it is aimed at exactly the hole the archetype falls through.
 
-**It is always the weakest thing a character has, and that is the point.**
-A Passive has a colour, a Range and a die and no Effect at all, where
-every card in a deck carries text. What it buys is never being stuck —
-never a turn with no legal attack, never an exchange with no legal block —
-and the price of always having it is that it loses to anything that could
-have been played instead. So: play the strong options, fall back on the
-weak one when it is needed.
-
-Scoring alone will not produce that, and did not. MIMETIC BLADE is Body 3
-+ d6, which is 6.0 on expected damage and above most of what Chris holds,
-so the value function ranked it first and he opened with it in **57% of
-his attacks** — a Passive as a main line. `Agent._prefer_hand` makes the
-rule structural instead of a number to be tuned: a Passive is considered
-only when the hand has nothing legal. Passive use drops to 37% of Chris's
-attacks, which is what the fallback is actually for.
-
-It also plays better, which is not why it is there but is worth recording:
-89.0% and 82.8% against 87.0% and 81.0% with Passives competing freely, at
-four and five wrackclaws over 400 fights. A softer version — score them
-but dock 2.0 for carrying no text — measures a shade better still (90.0%,
-83.2%) and was not taken, because the strict rule is a statement about
-what a Passive *is* and the soft one is a parameter.
+So the archetype figure is a fact about a character built from generic
+fill, and the fill is the finding. Worth knowing when reading anything
+else in this file that uses those three archetypes — they are a control
+for stat spreads, not a model of a playable character.
 
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of

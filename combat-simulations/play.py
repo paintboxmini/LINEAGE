@@ -232,6 +232,7 @@ def run(party, foes, wheel, log, rng, max_rounds=40):
     # the caller: a stale table silently points effects at combatants from
     # a previous fight, which is a wrong result rather than a crash.
     set_table(everyone)
+    engine.set_wheel(wheel)
     turns = 0
     cap = max_rounds * len(everyone)
 

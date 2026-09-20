@@ -107,30 +107,67 @@ class Agent:
 
     # ---- the shape of a kit --------------------------------------------
 
-    def _prefer_hand(self, me, opts):
-        """A Passive is the floor, not a pick.
+    # What one card out of hand is worth when cards are tight, in the same
+    # damage-equivalent units everything else here is scored in. Swept.
+    _CARD_VALUE = 2.0
 
-        **It is always the weakest thing you have**, and that is what it is
-        for: it has a colour, a Range and a die and no Effect at all, where
-        every card in a deck carries text. Having it means never being
-        unable to act — never a turn with no legal attack, never an
-        exchange with no legal block — and the price of always having it is
-        that it loses to anything you could have played instead.
+    def _turns_before_mine(self, me):
+        """How many enemy turns come before my next one.
 
-        So the order is: play your strong options, fall back on your weak
-        one when you need to. A Passive is reached for when the hand has
-        nothing legal, not when it happens to roll a bigger number.
-
-        Scoring alone will not produce that. Chris's MIMETIC BLADE is Body
-        3 + d6, which is 6.0 on expected damage and above most of what he
-        is holding, so a value function ranked it first and he opened with
-        it in 57% of his attacks — a Passive as a main line, which is
-        backwards. The rule belongs here rather than in the weights,
-        because it is a fact about what a Passive is and not a number to be
-        tuned.
+        Off the initiative wheel, which is a physical object on the table
+        (`rules/combat.md`) and public in a way a hand is not — counting
+        whose token sits between yours and the marker is something every
+        player does. Falls back to "one enemy turn" when there is no wheel,
+        which is the duel case.
         """
-        hand = [c for c in opts if not me.is_passive(c)]
-        return hand or opts
+        import engine
+        wheel = engine.wheel()
+        if wheel is None or me not in wheel.order():
+            return sum(1 for c in engine.table()
+                       if c.team != me.team and c.alive() and not c.is_object)
+        order = wheel.order()
+        i = order.index(me)
+        ahead = order[:i]        # they act before the wheel comes back to me
+        return sum(1 for c in ahead
+                   if c.team != me.team and c.alive() and not c.is_object)
+
+    def _card_price(self, me):
+        """What it costs to spend one card out of hand right now.
+
+        **This is the whole Passive decision, and it is a prediction rather
+        than a ranking.** A Passive is the weakest thing a character holds —
+        no Effect, small die — so on raw value it loses to almost anything
+        in hand. What it has instead is that it costs nothing: it never
+        leaves its zone. So the question at every exchange is not "which of
+        these is stronger", it is **can I afford to spend the card**.
+
+        And the answer is knowable, because a hand refills. You draw back up
+        to hand size at the start of your turn (`rules/combat.md`), so a card
+        spent on defence is replaced — the only thing it costs you is the
+        blocks you still have to make *before* your turn comes round. Count
+        the enemy turns between here and there, compare against what you are
+        holding, and spending is free whenever the hand covers them.
+
+        It is when the hand does not cover them that the Passive earns its
+        keep, and that is the case a rule about strength gets exactly
+        backwards: a Soul-primary character holding two cards against three
+        incoming attacks should block with the Passive **because** it is
+        free, not in spite of it being weak.
+        """
+        import engine
+        turns = self._turns_before_mine(me)
+        # Their turns are not all aimed at me. With allies standing, an
+        # attack lands on any one of us, so what I have to cover is my share
+        # of them — which is why a lone character hoards and a character in
+        # a party can spend.
+        share = max(1, sum(1 for c in engine.table()
+                           if c.team == me.team and c.alive()
+                           and not c.is_object))
+        need = turns / share
+        spare = len(me.hand) - 1      # what is left if this one goes
+        if spare >= need:
+            return 0.0                # covered — the card is free to spend
+        return self._CARD_VALUE * (need - spare)
 
 
 class RandomAgent(Agent):
@@ -203,17 +240,25 @@ class SimpleAI(Agent):
         return self.rng.choice(tied) if len(tied) > 1 else tied[0]
 
     def choose_attack(self, me, target):
-        opts = self._prefer_hand(me, me.playable(target))
+        opts = me.playable(target)
         if not opts:
             return None
-        # Biggest expected damage, ties broken by the bigger die.
-        return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
+        # Biggest expected damage, less what the card costs to spend; ties
+        # broken by the bigger die. A Passive is priced at zero because it
+        # never leaves its zone.
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            me.stat(c.stat) + c.die / 2 - (0 if me.is_passive(c) else price),
+            c.die))
 
     def choose_defense(self, me, attacker):
-        opts = self._prefer_hand(me, me.playable(attacker))
+        opts = me.playable(attacker)
         if not opts:
             return None
-        return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            me.stat(c.stat) + c.die / 2 - (0 if me.is_passive(c) else price),
+            c.die))
 
     def choose_target(self, me, options, prompt='Target'):
         """Help the ally who has taken the most; hurt the enemy who has.
@@ -440,15 +485,18 @@ class KitAI(SimpleAI):
       cannot fire at all: no deck runs a card twice, so once KILLSWITCH is
       face up there is no second copy to replay over it. They are kept
       because they are correct, not because they have been shown to pay.
+    - `_CARD_VALUE`, on `Agent`, prices a card out of hand against the
+      blocks still to come — see `_card_price`. Flat from 0.5 to 4.0 on the
+      real kits and kept at 2.0 for the same reason.
 
     **A caution, because this sweep has now been wrong once.** An earlier
     reading of it concluded that `_SETUP_BONUS` was inert because "Chris
     never sets his stance" — KILLSWITCH legal 2232 times and chosen twice
     — and wrote that up as a finding about the card being priced out. It
-    was not about the card. It was `_prefer_hand` missing: his MIMETIC
-    BLADE Passive was competing on its number and crowding the stance out.
-    With a Passive back in its place as the fallback, KILLSWITCH is chosen
-    149 times of 698 and a stance is up on 597 turns of 2676. **A weight
+    was not about the card. His MIMETIC BLADE Passive was competing on its
+    number alone and crowding the stance out; once a Passive was priced
+    against the card it saves rather than played whenever it rolled bigger,
+    KILLSWITCH came back into the rotation and stances started going up. **A weight
     that reads as inert is as likely to mean the agent never reaches the
     situation as it is to mean the weight does not matter**, and the two
     look identical in the sweep.
@@ -489,11 +537,13 @@ class KitAI(SimpleAI):
     # ---- attacking ------------------------------------------------------
 
     def choose_attack(self, me, target):
-        opts = self._prefer_hand(me, me.playable(target))
+        opts = me.playable(target)
         if not opts:
             return None
-        return max(opts, key=lambda c: (self._attack_value(me, c, target),
-                                        c.die or 0))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            self._attack_value(me, c, target)
+            - (0 if me.is_passive(c) else price), c.die or 0))
 
     def _attack_value(self, me, card, target):
         import effects as fx
@@ -572,11 +622,13 @@ class KitAI(SimpleAI):
     # ---- defending ------------------------------------------------------
 
     def choose_defense(self, me, attacker):
-        opts = self._prefer_hand(me, me.playable(attacker))
+        opts = me.playable(attacker)
         if not opts:
             return None
-        return max(opts, key=lambda c: (self._defence_value(me, c, attacker),
-                                        c.die or 0))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            self._defence_value(me, c, attacker)
+            - (0 if me.is_passive(c) else price), c.die or 0))
 
     def _defence_value(self, me, card, attacker):
         """What a block is actually worth: the odds of winning the reveal.

@@ -1111,6 +1111,23 @@ def table():
     return list(_TABLE)
 
 
+# The initiative wheel of the current fight. It is a physical wheel on the
+# table with everyone's token on it (`rules/combat.md`), so unlike a hand or
+# a stat line it is public — anyone playing can look at it and count whose
+# turn comes before theirs. Agents use it for exactly that and nothing else.
+_WHEEL = None
+
+
+def set_wheel(wheel):
+    global _WHEEL
+    _WHEEL = wheel
+
+
+def wheel():
+    """Turn order as it currently stands, or None outside a fight."""
+    return _WHEEL
+
+
 def set_table(combatants):
     """Called by play.run at the start of every fight. Anything resolving
     "all allies" or "any enemy" reads this, so it must describe the fight in
