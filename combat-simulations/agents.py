@@ -39,6 +39,20 @@ class Knowledge:
     def __init__(self):
         self.colors = {}      # name -> Counter of colours revealed
         self._seen = {}       # name -> ids already counted
+        self.stats = {}       # name -> colour split, when a card bought it
+
+    def knows_stats(self, name):
+        """Whether a card bought this opponent's colour split outright."""
+        return name in self.stats
+
+    def learn_stats(self, name, split):
+        """A card handed the stat line over — MEASURE, STUDY
+        (`effects.RevealStats`). Stats are hidden until something in the
+        game makes them public, and then they are simply known: the deck
+        rule turns a stat block into an exact colour composition, so this
+        replaces the inference rather than adding to it.
+        """
+        self.stats[name] = dict(split)
 
     def observe(self, other):
         """Fold in whatever of theirs is currently face up."""
@@ -60,6 +74,14 @@ class Knowledge:
         is a shrug and the tenth is an opinion.
         """
         from cards import BEATS
+        known = self.stats.get(other.name)
+        if known:
+            # Bought outright, so no smoothing: this is the composition,
+            # not an estimate of it.
+            n = sum(known.values())
+            if n:
+                return (known.get(BEATS.get(color), 0) / n,
+                        known.get(color, 0) / n)
         counts = self.observe(other)
         alpha = 1.0
         n = sum(counts.values()) + 3 * alpha
@@ -613,7 +635,10 @@ class KitAI(SimpleAI):
         # them in full won four points against a Red-heavy deck and lost
         # one against Blue- and Green-heavy ones, because it would lead a
         # small Green die into Blue rather than a big Red one.
-        t = self._MATCHUP_TRUST
+        # Shrinkage is there because a read off a handful of cards is an
+        # estimate. A split a card *bought* is not an estimate, so it is
+        # believed in full — which is the difference MEASURE is paying for.
+        t = 1.0 if self.known.knows_stats(target.name) else self._MATCHUP_TRUST
         beat = t * beat + (1 - t) / 3.0
         tie = t * tie + (1 - t) / 3.0
         hits = 3.0 * beat            # 1.0 against an unknown opponent

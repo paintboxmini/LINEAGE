@@ -365,6 +365,34 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
+## MEASURE was paying out into the void
+
+`RevealStats` — what MEASURE and STUDY buy — printed the numbers to the
+log and **nothing read them**. The card said the defender reveals their
+stats, the engine said so out loud, and no decision anywhere changed.
+
+That is worth more than it sounds now that hidden information is enforced.
+An agent may not read a stat line; it infers the colour split slowly by
+watching cards come out. MEASURE hands that over at a stroke, which is the
+one legitimate route past the rule — so the op now writes into
+`Knowledge.stats`, and `color_odds` returns the exact split instead of the
+smoothed estimate. A bought fact is not an estimate, so it skips the
+shrinkage the watched read gets.
+
+**The whole party learns it**, not just the reader. At a table the number
+gets said out loud, and a party that cannot pass it along is playing a
+different card. Verified: Chris measures a creature, Pat knows its split,
+the creature knows nothing.
+
+**And it is worth almost nothing to the agent** — +0.2 to +0.5 points of
+party win rate, against four-card creatures and thirteen-card bosses
+alike, believed in full. That is not a verdict on the card. It is a
+measurement of how shallowly this agent uses information: the only thing
+it does with a colour read is weight one RPS decision. A person does more
+with it than that — who tanks the thing, which counter-colour card to hold
+back, whether to fight it at all — and none of that is modelled. **Read
+this as the floor for the card, not the ceiling.**
+
 ## The rule that made KILLSWITCH look unplayable
 
 `rules/combat.md` has a section called **Setting one up before the

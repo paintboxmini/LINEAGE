@@ -1803,17 +1803,41 @@ class Check(Op):
 
 
 class RevealStats(Op):
-    """What a successful STUDY buys. Stats are the deck's colour split, so
-    this is more than trivia (`rules/cards.md`, Deck Building)."""
+    """What a successful STUDY or MEASURE buys. Stats are the deck's colour
+    split, so this is more than trivia (`rules/cards.md`, Enemy decks).
+
+    **And it is the one legitimate way past the information rule.** An
+    agent may not read a stat line (`agents.Knowledge`); it infers the
+    colour split slowly, by watching cards come out. This card hands it
+    over at a stroke — which is the whole point of the card, and until now
+    the op printed the numbers to the log and nothing read them, so MEASURE
+    and STUDY were paying out into the void.
+
+    The whole team learns it, not just the reader. At a table the number
+    gets said out loud, and a party that cannot pass it along is a party
+    playing a different card.
+    """
 
     def __init__(self, target):
         self.target = target
 
     def apply(self, ctx):
+        import engine
         for who in ctx.resolve(self.target, 'Read'):
             ctx.log(f'  {who.name}: Body {who.body} / Mind {who.mind} / '
                     f'Soul {who.soul} — so {who.body} Red, {who.mind} Blue, '
                     f'{who.soul} Green.')
+            split = {'RED': who.body, 'BLUE': who.mind, 'GREEN': who.soul}
+            told = 0
+            for c in engine.table():
+                if c.team != ctx.actor.team or c.is_object:
+                    continue
+                known = getattr(getattr(c, '_agent', None), 'known', None)
+                if known is not None:
+                    known.learn_stats(who.name, split)
+                    told += 1
+            if told > 1:
+                ctx.log(f'  — and {ctx.actor.name} tells the rest of the party.')
 
 
 @menu(r'^the next time you attack the (?:defender|attacker), deal double damage')
