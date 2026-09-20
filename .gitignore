@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# Print artifacts are build output, not source. `printing/generate-all.sh`
+# rebuilds every one of them from the markdown, and committing them cost
+# a full new copy of each file per rebuild — a PDF is compressed binary,
+# so git cannot store one as a small difference from the last one the way
+# it does for prose. See printing/README.md.
+printing/*.pdf
