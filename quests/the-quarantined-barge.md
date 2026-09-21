@@ -53,35 +53,36 @@ Their vessel is inside the cordon, with everything aboard it. So are the goods t
 
 ---
 
-## Why Nobody Can Just Ask
+## What They Told Him — and why it made everything worse
 
-**First: they are not allowed to.** Bartho's cordon means no contact with the barge crew, by anybody, including the party. That holds until he has a reason to change it, and a party that argues will get a flat no from a man who has already had that argument nine times today.
+**There is no language barrier.** *There was one in an earlier draft of this quest and it is gone as of 2026-09-21. It was the weaker idea and this is the better one.*
 
-**Second, and this is the wall: the party could not talk to them anyway.**
+**They speak the common tongue. Bartho asked. They answered. All of it.**
 
-Pneum was founded by **glasskin** (`factions-and-races/races-glasskin.md`) who left the Reach centuries ago, and **the island is mixed now** — two hundred years of converts (`places/pneum.md`). **What they all share is the island's language**, which descends from what the founders carried out and has drifted the entire way since. What they speak now is a complete, living, self-sufficient tongue that exists nowhere else and that nobody outside the congregation has ever heard. Not a dialect anyone can work around.
+**Concealment is not something this congregation has**, and that is theology rather than naivety: the practice requires witness, and *collecting without witnesses isn't collecting* (`places/pneum.md`, The Practice). **A faith whose central act is public display has no doctrine of hiding.** So a frightened dockmaster asked a boatload of sincere people direct questions, and got sincere answers, at length, cheerfully.
 
-*This is isolation, not biology. The chord is the glasskin people-name and applies to that alone — a glasskin talks the way anybody talks (`factions-and-races/races-glasskin.md`, which warns against exactly this over-read). A continental convert on that boat is just as unintelligible, and for the same reason.*
+**He got the location.** Pneum, the lake island northeast. Freely given, in the first hour, by people who could not imagine why it would be a secret.
 
-**They talk constantly.** That is worth playing. They are not sullen, not silent, not refusing — they are a boatload of people having ordinary conversations, asking questions, making jokes, getting exasperated, and none of it lands. **The wall is not their unwillingness. It is that the Nest is deaf to them**, which is a much worse thing to watch and gives the party somebody to fail at rather than somebody to crack.
+**And then he got the rest of it, which is the part he cannot put down:**
 
-**Third: the one question that cannot be answered by anybody, at all.**
+- **They do this on purpose.** Deliberate infection is communion. Nobody did it to them.
+- **The diseases are cultivated.** Two hundred years of patient selective work, bred for exotic, highly visible, and low mortality (`places/pneum.md`, The Practice).
+- **It moves by blood and only by blood** — deliberate, administered, a rite with a specific moment in it. Nobody catches anything by standing near them.
+- **And there are dead aboard.** The barge is a hearse; they are carrying their dead upriver to the quay below the Glasslight cliffs (`places/pneum.md`, The Promise Barge).
 
-Bartho has been asking each of them the same thing since the boat came in: *what are you, and where did you come from.*
+### Why every answer closed the door further
 
-**The honest answer to the first half is their people's name, and their people's name is a chord that no single voice can produce** — one word, the only one, made of the sound cliff fractures make in wind (`factions-and-races/races-glasskin.md`). A glasskin alone can say almost anything. Not that.
+**Because his four questions got answered and the answers were worse than silence** (If They Stall — Bartho's Ask, below).
 
-**And the crew are glasskin, which on a mixed island takes explaining: this is a pilgrimage barge** (`places/pneum.md`, The Pilgrimage). The pilgrimage belongs to the glasskin among the congregation and to nobody else, so the passengers are theirs. *A boat drawn from the whole island would have somebody aboard who could answer Bartho in one sentence. This boat has nobody, because of what it is for.*
+*Is there anybody else* — **yes, an entire island.** *Are they the same* — **yes, all of them, and proud of it.** *Did it happen out on the water or did they bring it aboard* — **neither: they made it.** And *is anyone still alive*, the one he actually cares about — **yes, everybody, because we selected against lethality for two centuries.**
 
-**And what it is for is the part that should land when the party works it out.** These people were on their way to the quay below the Glasslight cliffs — the threshold, and the one town with enough of their own voices in it to complete the chord. **They were travelling to the only place on earth where that question can be answered**, and Bartho has been demanding it of them, daily, in a harbour they cannot leave. *He has no way of knowing. They have no way of telling him.*
+**That last answer is the trap.** He asked it expecting to hear *a plague did this to us* or *we are the last ones*, and either would have told him what he was dealing with. **What he got was a breeding programme that thinks it is a church**, and *everyone survives* stopped being reassurance the moment he understood why.
 
-So the barge crew have been answering him, every day, and the answer has been arriving as one voice attempting a chord: **strange, incomplete, and unmistakably an attempt at something.** Bartho has been writing it down as *won't say.*
+**He cannot verify a word of it.** *It only moves by blood* is a claim about their own cargo, made by the people who want to leave, in a port with no physician who can check. **A competent dockmaster does not open a berth on the word of the vessel.**
 
-**Putting them in a room together is a real solution and the party can find it.** What they get is not a translation — nobody present will understand a syllable more than they did before. What they get is **a dozen voices producing one word that is obviously, structurally, a name**, and the knowledge that these people have been trying to answer the whole time.
+**And releasing them is not releasing them — it is sending them north.** Their destination is a real quay under a real town. *Whatever this is, Bartho would be handing it to Glasslight with his own signature on the release*, and he has been thinking about that since the second day.
 
-*That does not open the port. It changes who Bartho thinks he is holding, and he will remember who showed him.*
-
-**Fourth: even then, they are not understood.** Glasskin surveyors are common in the Cartographers' Guild (`factions-and-races/the-cartographers-guild.md`) and a Guild ear is the obvious lead — but a Reach-trained glasskin meeting Pneum's drift is hearing two centuries of it. They will catch the shape and not the content. **Partial translation is available. Full translation is not, and should not be.**
+**None of which makes him a fool or a bigot.** He asked the right questions, got true answers, and ended up with a worse problem than he started with. *That is the whole quest: the information is free and it does not help.*
 
 ---
 
@@ -91,7 +92,11 @@ Held, not mistreated. **He speaks the common tongue**, which is why he is the on
 
 **He will not recant** — there is nothing he considers wrong to admit to, so an interrogation gets a theology lecture from a man who is pleased you asked.
 
-**He will not say where the barge came from.** This is not stubbornness. Naming Pneum sends a port that has already decided the word is *cursed* to an island of people whose faith requires their symptoms to be visible. He can see exactly what would follow and he cannot correct it fast enough from a cell.
+**He would not say where the barge came from, and it did not matter — his own crew said it in the first hour.**
+
+*This is not stubbornness and it was not stupidity either.* Naming Pneum sends a port that has already decided the word is *cursed* to an island of people whose faith requires their symptoms to be visible. He could see exactly what would follow and he could not correct it fast enough from a cell.
+
+**He was the only person on that boat with a strategic instinct, and his own congregation talked straight past him**, because hiding is not a thing this faith does (What They Told Him, above). *He has been in a cell for two days knowing the one thing he was protecting was given away before he was even questioned, and that nobody did anything wrong. That is what the patience is made of.*
 
 **He will tell you the diseases move by blood**, plainly, to anyone who asks him a straight question — and nobody has, because nobody has been asking what it is. They have been asking where he got it. *A party that asks the medical question instead of the smuggling question gets the answer in one conversation, and then has to make a room full of frightened people believe a prisoner.*
 
@@ -105,11 +110,13 @@ Held, not mistreated. **He speaks the common tongue**, which is why he is the on
 
 *The unstick, and it is also the campaign's actual on-ramp. Deploy it when the party has run out of moves at the dock, not before.*
 
-Bartho cannot verify anything Corvel says and cannot hold the port shut forever. So he asks the only people who can move:
+**He already has their answers. What he does not have is anybody who saw it** — and he cannot hold the port shut forever. So he asks the only people who can move:
 
-> **"Go and find where they came from. Tell me four things. Is there anybody else. Are they the same. Did it happen to them out on the water or did they bring it aboard with them. And is anyone still alive."**
+> **"They have told me where. They have told me everything, and I have written all of it down, and I do not know a single thing more than I did. Go up there. Look at it. Then come back and tell me the same four things they told me, or tell me different ones. Is there anybody else. Are they the same. Did it happen to them out on the water or did they bring it aboard. And is anyone still alive."**
 
-**That last question is the one he actually cares about.** If the village is dead, this is a plague and he has done the right thing and will hold the dock for a month. If the village is alive and fine, it is not, and he can open the port tomorrow. **Everything back at the Nest hangs on the answer**, which is what makes the trip worth a session rather than an errand.
+**The ask is verification, not discovery**, and that is the sharper version. *He is not sending them for a secret. He is sending them because a stranger's eyes are the only instrument he has left, and he has enough sense to know his own fear is not one.*
+
+**That last question is still the one he actually cares about**, and he has already been told the answer and does not believe it. *Everyone is alive* was the most alarming sentence on the dock when a crew member said it warmly. **If the party comes back and says it too, having stood in the village and counted, it stops being a boast and becomes a fact**, and he can open the port. If they come back with anything else, he holds the dock for a month and sleeps better for it.
 
 He will pay. He will also, quietly, arrange for the party's boat to be the one vessel released — because they need it to go, and because it costs him nothing he was not already going to lose.
 
@@ -148,9 +155,9 @@ These are people who have not been allowed to leave, work or sell for two days, 
 
 **They take the boat and go.** Legitimate, achievable, and the fastest route to what they actually came for. **Cost:** the dock stays shut behind them, and everyone who could not leave is still there. They will hear about it.
 
-**They bring the answer back from Pneum.** The intended arc. The village is alive, the illnesses are chosen, it did not happen in transit, and none of it travels by anything but blood. Bartho opens the port. **Cost:** he now knows where Pneum is, and so does Jonas's ledger if anyone writes it down.
+**They bring the answer back from Pneum.** The intended arc. The village is alive, the illnesses are chosen, it did not happen in transit, and none of it travels by anything but blood — **all of which Bartho was already told and none of which he could believe until somebody went and looked.** Bartho opens the port. **Cost:** Pneum is now a written location in a Regency-cross-referenced ledger, and the party are the ones who confirmed it was worth writing down.
 
-**They get the crew talking.** Put the glasskin back together and a room that has been answering the wrong question for two days is suddenly full of a language nobody present understands — and the barge crew, for the first time, can coordinate. What they do with that is up to them and is not necessarily what the party wanted.
+**They get the crew and the dock in the same room.** The barge people have been answering questions one at a time, in isolation, to a man who writes everything down and believes none of it. **Put them in front of the port instead** — the crews who have been stuck on that stretch for two days, the dockhands, the people actually afraid — and let them explain it themselves, warmly and at length, the way they explain everything. *It is the riskiest ending available and it is not a trick: it either humanises them completely or it confirms every fear in the room, and which one it does depends on what the party has already built with those people.*
 
 **They make the medical case.** Corvel's answer, carried to Bartho, believed. Hardest to sell and cheapest if it works — and it hinges on a party willing to stake their credibility on a prisoner's word about his own cargo.
 
@@ -169,8 +176,8 @@ These are people who have not been allowed to leave, work or sell for two days, 
 
 ## Not Yet Set
 
-- **How much a Cartographer-trained glasskin can actually recover** from Pneum's drift. Some. Not all. Exactly how much is a dial a GM should set by how stuck the table is.
-- **Whether the barge crew want to go home.** Nobody has asked, and nobody could have.
+- **Whether the barge crew want to go home, or to finish the run.** *They are carrying their dead* (`places/pneum.md`, The Promise Barge), and turning back means bringing them back. **Nobody at the Nest has thought to ask which they would rather**, which is its own indictment of how this has been handled.
+- **What the Nest does about the bodies** if the hold drags on. Nobody has raised it and everybody is aware of it.
 - **The party's boat** — whose it is, how they came by it, and whether it matters. Referenced here and not defined.
 - **What Corvel does if released.** He has been extremely patient for a man in a cell and nobody has established what that patience is for.
 
@@ -180,6 +187,6 @@ These are people who have not been allowed to leave, work or sell for two days, 
 
 - `places/vultures-nest.md` — the town, the Compact, the Opening Scene, the barge on the dock
 - `places/pneum.md` — where it came from, what they actually believe, and the Receiver
-- `factions-and-races/races-glasskin.md` — the drift, and the one word a single voice cannot say
+- `factions-and-races/races-glasskin.md` — the founders, and the town their descendants tie up beneath and never climb
 - `campaign/session-1-convergence.md` — why these people are standing together at all
 - `rules/gm-guide.md` — How many of them, for scaling the mob

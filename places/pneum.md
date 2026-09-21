@@ -4,11 +4,9 @@
 
 **The island is mixed, and it was founded by glasskin** (`factions-and-races/races-glasskin.md`) who left the Reach centuries ago. What came after them is everybody else — a congregation gathers converts, and this one has been gathering for two hundred years. **Glasskin, continentals, and at least one Lizardkin, who leads them** (The Speaker, below).
 
-**What everyone there shares is the language**, and it is the island's, not any one people's. Two centuries of isolation did what two centuries of isolation does: what they speak now descends from what the founders carried out of the Reach and has drifted the whole way, and **nobody outside the congregation understands a word of it.** A convert learns it the way anyone learns a language. *It is not a dialect to be worked around — it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).*
+**They speak the common tongue and they will tell you anything you ask.** *There is no language barrier here and there never was — an earlier version of this file built one and it was cut on 2026-09-21 as the weaker idea.* **What replaces it is much worse for everybody**: the congregation is warm, forthcoming, and entirely without a reason to hide, and the trouble at Vulture's Nest is what happens when people like that are asked direct questions by a frightened port (`quests/the-quarantined-barge.md`).
 
-**This is a language barrier and nothing to do with glasskin throats.** The chord is their people-name and applies to that alone; a glasskin talks the way anybody talks, in whatever tongue they grew up in (`factions-and-races/races-glasskin.md`, which says so outright and warns against exactly this over-read). *Pneum is hard to hear because Pneum has been alone for two hundred years, not because of what its founders are.*
-
-*They speak perfectly well, at length, and constantly. The barrier is that nobody is equipped to hear them — not that they are short of voices.*
+**Concealment is not available to them, and not because they are naive.** The practice requires witness — *collecting without witnesses isn't collecting* (The Practice, below). **A faith whose central act is public display has no theology of hiding**, so when a dockmaster asks where they are from, they tell him, and when he asks what is wrong with them they explain it properly, and neither of those is a mistake by their lights.
 
 A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 
@@ -78,31 +76,19 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ---
 
-## The Pilgrimage — and what the quarantine is actually interrupting
+## The Promise Barge — what is actually aboard
 
-*Drew's, 2026-09-21.*
+*The run itself is already written above* (Why they can be wrong, and stay wrong): every funeral run takes a barge down to the quay at the foot of the Glasslight cliffs, which is the only place the river web touches the grey water, performs the releasing of the dead into the water, and turns around. **They tie up at the bottom and they do not climb.** This section is only the part that matters at Vulture's Nest.
 
-**The glasskin among them still make the pilgrimage**, centuries after their founders walked away from the Reach and never went back. **It is theirs and not the island's** — the continentals and the Lizardkin do not go, and nobody thinks less of them for it. This is the one thing on Pneum that belongs to one people rather than to the congregation.
+**The barge Bartho is holding is a hearse, and it is loaded.**
 
-**It is one journey doing two things, and they would tell you it is one thing.**
+**Every one of their dead goes, whatever they were** — glasskin, continental, convert of forty years. A mixed island has mixed dead and the Promise does not sort them. **The glasskin crew it**, because the route is the founders' road back to the Reach they left, and two centuries on their descendants still make the trip and still do not go up the cliff.
 
-**The Unheld end.** The Promise is that everything returns to the Unheld and held reality is temporary. **There is exactly one place on the continent where the river web touches the grey water** — the quay at the bottom of the Glasslight cliffs, where a narrow river ends and nothing sails past (`places/glasslight-reach.md`, `places/the-coil.md`). *For a faith built on the Unheld being the destination, that quay is the only place you can stand at the door. Of course they go.*
+**Bartho knows all of this, because they told him** (`quests/the-quarantined-barge.md`). **It did not help.**
 
-**And the door is directly beneath the Reach.** So the pilgrimage that takes them to the threshold takes them, on the way, through the one town on earth with enough of their own voices in it.
+*A boat full of visibly, floridly diseased people is one problem. A boat full of visibly, floridly diseased people **and the bodies of the ones it already killed**, bound upriver for somebody else's town, is the problem he actually has.* And the crew explaining warmly that the dead are not infectious and that none of it travels that way is **a claim about their own cargo, by the people who want to leave**, in a port with nobody who can check it.
 
-**Which is the other half, and it is the heavier one.** A glasskin's people-name is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). Away from the Reach you cannot say what you are — not because you are impaired, but because saying it takes other throats, and there are not enough of you anywhere else. Pneum has been away for two hundred years.
-
-***So the pilgrimage is going home to say your own name out loud, once, properly, with enough voices to finish it — and then coming back.*** Most of them make it once. Some never do. **The ones who have been are different about it afterward and do not explain.**
-
-*The return leg is oars or a pullway the whole way, because a barge cannot be sailed upriver (`places/pneum.md`, Corvel — The Vulture's Nest Thread). Nobody undertakes this lightly and nobody is expected to.*
-
-### What this does to the barge at Vulture's Nest
-
-**The held vessel is a pilgrimage barge**, which is why its crew is glasskin on a mixed island's boat — *the pilgrimage is theirs, so the passengers are theirs* (`quests/the-quarantined-barge.md`).
-
-**And it makes Bartho's question unbearable, which he has no way of knowing.** He has been asking them *what are you* every day since the boat came in, and getting one voice attempting a chord. **They were on their way to the only place that question can be answered.** The quarantine did not merely delay some travellers; it stopped, in his harbour, the one journey whose entire purpose is being able to say the thing he is demanding of them.
-
-*Nobody on that dock knows this and nobody on that barge can explain it. A party that finds it out is holding the most useful fact in the quarantine, and the way they get it is by asking Corvel a question about the boat instead of about the cargo.*
+**The bodies are the thing nobody at the Nest says out loud and everybody on that dock knows about.** *Every day the hold lasts is a day the rite is not performed, which to the congregation is a harm being done to people who are already dead — and not one of them has raised it, because nobody asked.*
 
 ---
 
@@ -120,9 +106,9 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ### What this does not do
 
-**It does not make them a translator, and nobody should reach for that.** `quests/the-quarantined-barge.md` is explicit: *partial translation is available, full translation is not, and should not be.* The Speaker learned the island's language the way every convert does and understands the congregation perfectly — **and is two days' water away on an island whose name nobody at the Nest has**, which is the practical answer to why they are not solving this.
+**It does not make them the solution to the quarantine.** The Speaker is two days' water away on the island, and the crew at the Nest have already said everything the Speaker could say — *there was never anything being withheld* (`quests/the-quarantined-barge.md`, What They Told Him). **Nobody is being prevented from explaining. Explaining is what made it worse.**
 
-**And they could not answer Bartho's question anyway.** *What are you* is being asked of glasskin pilgrims, and the honest answer is a chord no single throat can produce (`factions-and-races/races-glasskin.md`). **A Lizardkin throat cannot produce it either**, and the Speaker is not one of the people that question is even about. The wall holds, unchanged.
+*What the Speaker would add is judgement, not information — somebody able to hear how this sounds from outside, which is the one faculty the congregation has never needed and therefore never developed.* **That is worth a great deal and it is on the wrong island.**
 
 *Which is worth stating plainly, because a leader who speaks both sides looks like a key to the quarantine and is not one. What they could resolve, they are not at the Nest to resolve — they are on the island, and the barge is held two days' water away.*
 
