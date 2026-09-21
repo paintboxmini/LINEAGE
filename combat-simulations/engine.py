@@ -174,6 +174,7 @@ class Combatant:
         self.is_seed = False
         self.grows_by = 0
         self.tracker = None       # the card sitting face up for this Object
+        self.tie_win_for = None   # HERE BOY: whose tie-win this spirit holds
 
         # Stacking statuses, held as counts.
         self.deadly = 0
@@ -453,6 +454,17 @@ class Combatant:
             if log:
                 log('  the totem is gone — the party loses its bonus.')
             self.totem_buff = []
+        # HERE BOY, ruled 2026-09-21: the tie-win is the spirit's to hold,
+        # so it goes when the spirit does. Only an unspent one — a charge
+        # already used is not clawed back.
+        owner = getattr(self, 'tie_win_for', None)
+        if owner is not None:
+            if owner.wins_next_tie > 0:
+                owner.wins_next_tie -= 1
+                if log:
+                    log(f'  the totem is gone — {owner.name} loses the '
+                        f'held tie-win.')
+            self.tie_win_for = None
         # The card that was tracking it stops being face up and is discarded
         # (`rules/combat.md`, Objects).
         card, owner = self.tracker, self.summoner

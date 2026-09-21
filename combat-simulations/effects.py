@@ -2547,6 +2547,27 @@ class Summon(Op):
             ctx.log(f'  it carries: {self.label}')
 
 
+def _totem_tie_win(ctx, spirit):
+    """HERE BOY: "the next time you tie in RPS, you win instead. This is
+    tied to the spirit's survival — kill the totem, lose the effect."
+
+    Ruled 2026-09-21. It was the summoner's outright before that, which
+    made HERE BOY's spirit a body with no purpose while LET'S GO's was a
+    totem worth defending — two summons on one sheet doing different
+    kinds of thing for no stated reason. Now both are worth standing in
+    front of.
+
+    The charge still belongs to the summoner rather than the spirit, for
+    the reason it always did: an Object does not act and cannot defend, so
+    it never reaches a reveal and could never spend one. What the spirit
+    holds is whether the charge is still there.
+    """
+    ctx.actor.wins_next_tie += 1
+    spirit.tie_win_for = ctx.actor
+    ctx.log(f'  {ctx.actor.name} will win their next tie, '
+            f'while the spirit stands.')
+
+
 def _totem_damage_buff(ctx, spirit):
     """LET'S GO: "you and your allies deal +2 damage this combat. This buff
     is tied to the spirit's survival — kill the totem, lose the buff."
@@ -2582,10 +2603,10 @@ class WinsNextTie(Op):
 
 
 @menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
-      r'the summoning grants you the ongoing effect: the next time you tie '
-      r'in rps, you win instead')
+      r'it carries the ongoing effect: the next time you tie in rps, you '
+      r"win instead\. this is tied to the spirit's survival[^.]*\.?")
 def _r_here_boy(m):
-    return [Summon(), WinsNextTie()]
+    return [Summon(rider=_totem_tie_win)]
 
 
 @menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'
