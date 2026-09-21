@@ -116,7 +116,7 @@ Forest families use them for cord-wrist work, for marking a gift, and for the ge
 
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
-*Price: ~40 gold*
+*Price: ~60 gold (a crafting ingredient, priced by what a crafter will pay and not on the consumable scale; `rules/equipment.md`, Pricing Consumables)*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 

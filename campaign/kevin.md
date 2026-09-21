@@ -192,15 +192,31 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 Prepared drinks, handed out before the fight and drunk with a free action by whoever is holding one. Same craft as the rounds, same supply model. *Kevin used to hand them over mid-fight with SERVE; the party carries its own now, which is what retired that card.*
 
-| Drink | Effect on the drinker | Charge |
-|-------|-----------------------|--------|
-| **Bitter Shot** | Gain Quick | Plain |
-| **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain |
-| **Still Water** | Gain Ward and heal 3 HP | Hush petal |
-| **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake |
-| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind |
+| Drink | Effect on the drinker | Charge | Sells for |
+|-------|-----------------------|--------|-----------|
+| **Bitter Shot** | Gain Quick | Plain | ~10 gold |
+| **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain | ~10 gold |
+| **Still Water** | Gain Ward and heal 3 HP | Hush petal | ~20 gold |
+| **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
+| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind | ~30 gold |
 
 The two plain ones are the floor, the same way plain rounds are. Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
+
+**The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
+
+**Three of the five cost him a round he would otherwise have fired.** Still Water eats a hush petal, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+
+### What any of it is actually worth to him
+
+**Gold is the selling price. It is not what these cost him**, and the difference matters more than the number does, because he makes everything he uses.
+
+His real exchange rate is already written above under Supply and restocking: **one measure of rare seasoning becomes three prepared rounds, or two oranges, or two servings of a drink.** So:
+
+- An orange costs him **a round and a half**.
+- A drink costs him **the same as an orange**.
+- A round is the cheapest thing he makes, and the only one he can make from the plain stock indefinitely.
+
+**That 3:2:2 is the economy to play against, not the gold.** The gold matters when he is selling to somebody, bartering with Senshi (`places/capital/gilded-tusk.md`), or working out whether a job is worth taking. What he spends an afternoon making is decided by the ingredient, not by the price list.
 
 ---
 
@@ -234,12 +250,13 @@ win or lose — blocking with it burns the round the same as firing it.
 ```
 INCENDIARY ORANGE
 Equipment — Consumable
+Price: ~30 gold
 Effect: Throw as a free action at any position you can see. Deal 2
 unpreventable damage to every enemy in that position. Single-use.
 "The peel does the work. The fruit is just what carries it there."
 ```
 
-**Priced at roughly 40 gold** if one is ever bought rather than made: two points of damage, applied to a position instead of a target, plus the premium a genuinely free-action item pays — the same premium the Echothorn Seed pays (`rules/equipment.md`, Pricing Consumables). **He makes them**, so the number is a scale reference rather than a shopping list.
+**Priced at roughly 30 gold** if one is ever bought rather than made: two points of damage at the flat rate of 10 a point, plus a point for landing them on a position instead of a single target (`rules/equipment.md`, Pricing Consumables). *It used to be 40, and the extra ten was a premium for being a free action. That premium is gone — every consumable is a free action now unless the item says otherwise, so it buys nothing.* **He makes them**, so the number is a scale reference rather than a shopping list.
 
 **The unpreventable damage is inherited from KINDLE and is inherited on purpose**: it is fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER.
 

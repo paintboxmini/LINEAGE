@@ -38,7 +38,7 @@ Three questions the table actually needs to answer, in this order:
 
 *Full entries: `items/hollow-and-weald-items.md`*
 
-- **Luminova Leaves** — heal 4 HP. ~15 gold. *Source: harvestable in the field, Turnroot Weald (Luminova Clearing).* Can be ground into Luminova Powder (below) for roughly double the potency — a real crafting relationship, not a duplicate.
+- **Luminova Leaves** — heal 4 HP. ~10 gold. *Source: harvestable in the field, Turnroot Weald (Luminova Clearing).* Can be ground into Luminova Powder (below) for roughly double the potency — a real crafting relationship, not a duplicate.
 - **Clay Bowl Tremor Detector** — party can't be surprised this encounter. *Source: Borrower goodwill.*
 - **Moving-Stone Map** — party acts before all Stonecoils, next combat only. *Source: Borrower goodwill.*
 
@@ -49,13 +49,13 @@ Three questions the table actually needs to answer, in this order:
 *Full entries: `items/turnroot-weald-items.md` — the most fully built items file in the repo.*
 
 **Consumables**
-- **Echothorn Seed** — +2 to next damage/heal roll, free action. ~45 gold. *Source: The Thorne Throne.*
-- **Luminova Powder** — heal 8 HP. ~30 gold. *Source: Luminova Clearing.* Ground from 1 Luminova Leaf (above) and 1 hour of processing — the more potent form of the same plant.
-- **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~25 gold. *Source: Rootstalker (rare).*
-- **Vision Shard** — Scry 3 on any deck. ~45 gold. *Source: The Mirror-Slick Pond.*
+- **Echothorn Seed** — +2 to next damage/heal roll. ~20 gold. *Source: The Thorne Throne.*
+- **Luminova Powder** — heal 8 HP. ~20 gold. *Source: Luminova Clearing.* Ground from 1 Luminova Leaf (above) and 1 hour of processing — the more potent form of the same plant.
+- **Sap Vial** — heal 4, or +2 melee damage next attack; costs a Rooted token. ~17 gold. *Source: Rootstalker (rare).*
+- **Vision Shard** — Scry 3 on any deck. ~30 gold. *Source: The Mirror-Slick Pond.*
 
 **Equipment**
-- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~20 gold. *Source: The Floating Gallery.*
+- **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~13 gold. *Source: The Floating Gallery.*
 - **Spider Silk Rope** — 50 ft, stronger than hemp, doesn't fray. ~50 gold. *Source: The Bone Collector.*
 
 **Harvested Materials**
@@ -124,7 +124,7 @@ Three questions the table actually needs to answer, in this order:
 - **Cord of the Held** *(Artifact — Love/Binding)* — 1/combat prevent an ally Collapse (they stay at 1 HP); then inert until long rest. ~250 gold + a real vow.
 
 **Marketplace — General Stalls** *(Layered Scarves, Iron & Twine, The Salt Pot, Quill & Measure, Odds & Ends)*
-- **Layered Scarves** — healing draughts, no formal Positive Status Effect: 4/8/12 HP at 15/30/45 gold, matching the existing Luminova rate. Unexplained colour-shift quirk, cosmetic only.
+- **Layered Scarves** — healing draughts, no formal Positive Status Effect: 4/8/12 HP at 10/20/30 gold, matching the existing Luminova rate. Unexplained colour-shift quirk, cosmetic only.
 - The other four are non-mechanical: rope, blades, food, maps, courier service, and second-hand curios, priced to sit inside the existing economy. Full stock: `items/capital-items.md`.
 
 ---
