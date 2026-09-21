@@ -31,6 +31,8 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 - Nothing is ever stolen from a stall within a few paces of it, and nothing is ever sold there either.
 - People walk past it all day and cannot afterwards say what was in that corner.
 
+**They travel boxed, and the boxing is why the supply chain works** *(2026-09-21)*. An Ocellus ships inside an ordinary sealed packing crate with the cage in it, and **it collects nothing while it is in there** — sealed timber has no crowd going past it. *So the animal is genuinely inert freight from the hold to the pitch*, which is how a carrier hires strangers to walk one through a market and nobody in the chain ever learns a thing (`places/vultures-nest.md`, The Arcadia's hold). **Setup is a separate visit by somebody else**: the packing crate comes apart and goes away, the cage gets dressed to read as freight, and that is the moment it starts feeding.
+
 **The tell is the absence.** In a market where everything is being looked at, appraised and counted, there is one object that no one has an opinion about. Anyone whose job is noticing what other people miss will find it almost immediately — which is exactly why a certain detective has been asking about it (`characters/erubeth.md`).
 
 ---
@@ -45,6 +47,8 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 All core cards. It has no signature cards, because it has no technique — everything it does is the same passive theft at different intensities.
 
 **Trait — Unremarked:** While an Ocellus is in a crowd, it cannot be the target of an attack by anyone who has not first deliberately noticed it. Noticing it is an action: a Senses or Reason check at the GM's DC, or simply the player saying they are looking at the crate and meaning it. Once a character has noticed an Ocellus, they have noticed it permanently.
+
+*Worth stating plainly because it is the thing a table will ask about: **you cannot find one in passing, however many times you walk by.** The animal is not hiding — it is eating the faculty that would have found it, and it eats specifically the noticing people spend on their way past things (It feeds on attention, above). **Stopping and watching is the one act it gets nothing from**, so it is also the only act that finds it. A party moving through the market will never see the crate and that is the creature working, not the GM withholding. And once seen it stays seen, for that character, forever — there is no losing it again.*
 
 **Trait — Dulling:** Every character in the same position as an Ocellus takes a penalty on Senses and Reason checks. It does not stack with a second Ocellus; one is already taking everything on offer.
 

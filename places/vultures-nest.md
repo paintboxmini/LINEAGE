@@ -209,6 +209,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
 - **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
+- **What is in the market is the cage, dressed as a crate** *(2026-09-21)*. They ship inside an ordinary sealed packing crate; **that outer box gets broken down and taken away at setup**, and what stays is the inner cage, slatted and shimmed to read as freight somebody forgot. *So the tell for anyone who stops and actually looks is that it is not a crate: no lid seam, no shipping marks, no cooper's stamp, and slats where a crate would have boards.*
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
@@ -401,7 +402,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **He comes down off the Arcadia and makes the party an offer while Jonas is still walking.** Not later, not that evening, not through an intermediary — now, because now is the only time the answer is worth anything to him.
 
-**The job is small and he will not decorate it.** There is a crate on his deck. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
+**The job is small and he will not decorate it.** There is a crate on his deck — **a sealed packing crate, heavy, unremarkable, no markings worth reading** *(2026-09-21)*. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
 
 **Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own freight, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
 
@@ -433,6 +434,10 @@ Jonas keeps the official port record, and the official port record is cross-refe
 **He does not know what it is for.** He knows the crate is alive, he knows it has to be landed somewhere crowded and left there, and he knows the fee is very good for a box that walks off his ship and sits in a market. He decided a while ago that the rest was not his business. That is the same posture the Custodians take at the far end of the same chain (`factions-and-races/the-cellar-custodians.md`) — cargo somebody's paid to not ask about, and everyone in the middle has agreed to be incurious for money.
 
 **So Harlock is a link, not the answer.** Who pays him, and who at the Nest is actually running the animals, is still unwritten and should stay that way — it is the thing Erubeth is here to find out (`characters/erubeth.md`, `bestiary/ocellus.md`, Not Yet Set). A party that cracks the Arcadia gets the route. They do not get the source.
+
+**The packing crate is why nobody in the chain ever learns anything, and it is the whole procedure** *(2026-09-21)*. **Inside the outer box is a cage**, and the outer box does not get opened by the people who carry it. Sealed timber has nothing to look at and nothing to react to — *it is inert freight right up until somebody unpacks it*, which is why a work crew can walk it through the busiest market on the continent and notice nothing at all. **Harlock is not lying when he says it is a box.** He has never seen it open either.
+
+**Somebody else comes later and sets it up.** Unnamed, unwritten, and deliberately so — they break the packing crate down, dress the cage as freight, and walk away, and **that is the moment it starts collecting.** *A party that delivers it and hangs around has a real chance of watching the handover without understanding a second of it. That is the best version of this beat and it costs nothing to leave available.*
 
 **Why he cannot simply hide it.** An Ocellus in a warehouse starves (`bestiary/ocellus.md`). The one thing Harlock cannot do with this cargo is put it somewhere discreet, which is why the previous one is standing in the middle of the busiest market on the continent in a plain wooden box. His only move is to land it in public, in daylight, in front of everyone, before Jonas reaches that part of the manifest.
 
