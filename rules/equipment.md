@@ -117,7 +117,7 @@ The anchor is already in the world: Luminova Leaves heal 4 HP for ~10 gold, and 
 Adjust from there for what actually happens at the table:
 
 - **A real drawback lowers the price.** Something that Roots you afterward, or costs a card every turn, is worth less than the same effect clean.
-- **Free-action use raises it.** Not spending your action is worth about a point on its own.
+- **An Action cost lowers it.** Free-action use is the default and buys nothing (above); an item that costs your Action instead is worse than its effect suggests and should price under the flat rate.
 - **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
 - **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
 - **Ingredients and crafting materials are not on this scale at all.** A Rootstalker Core is priced by what a crafter will pay for it, not by what the thing you make does (`items/turnroot-weald-items.md`); Senshi's going rates for Weald harvest are the same (`items/turnroot-weald-items.md`, Future-Lock Wasp Larvae). **If somebody buys it to make something else out of it, the market sets the number** — and those prices move with demand and scarcity in a way an effect-priced consumable never does.
