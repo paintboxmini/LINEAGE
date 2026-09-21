@@ -103,11 +103,15 @@ Still open:
 
 *So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
 
-### Where he got it — open, with a favourite
+**Deliberately not being tracked yet** *(Drew, 2026-09-21)*. That meeting is far enough out that maintaining it as a live thread would cost more than it is worth, and a consequence this clean does not decay from being left alone. **It is written down so it is here when the meeting gets close, not so anyone carries it in the meantime.** *Nothing between now and then needs to be arranged for it. If the scrap survives and the bloodline turns up, the trade is simply available.*
 
-**Unwritten and his to choose.** The strongest available answer is **his mother's line**: generations of Shunka who turned to wild magic trying to break the curse and failed (`factions-and-races/races-shunka.md`). **A failed research tradition keeps its samples.** They would have had a piece of her, they would have kept it, and it would have come down matrilineally with everything else he carries.
+### Where he got it — settled
 
-*That reading ties the object to the hook his file already calls the real one — his mother's side, not royal blood — rather than to the royals' vision. The cemetery gave him a direction. His mother's people gave him the only thing that can tell him when he has arrived.*
+**His mother's line.** *Confirmed 2026-09-21 — Pat had already said so, and it was the reading this file arrived at independently.*
+
+Generations of Shunka who turned to wild magic trying to break the curse, and failed (`factions-and-races/races-shunka.md`). **A failed research tradition keeps its samples.** They had a piece of her, they kept it, and it came down matrilineally with everything else he carries.
+
+*Which ties the object to the hook this file already calls the real one — his mother's side, not royal blood. **The cemetery gave him a direction. His mother's people gave him the only thing that can tell him when he has arrived.** The vision is what sent him; the scrap is what his own family had been holding the whole time, against the day somebody could use it.*
 
 **Still open beyond the scrap:** what he carries out of Shunka service, and whether anything else of his mother's came with him. **He has asked for one item and one item is an answer**, not a gap — a man who left with a single object is a clearer character than a man with a packing list.
 
