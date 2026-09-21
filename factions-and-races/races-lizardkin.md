@@ -48,6 +48,8 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 So her descendants inherited a skill from a person their own family cannot describe. If you want a reason a descendant might leave the island and go looking, that is it, and it doesn't need Pat's story to justify it.
 
+**And one thing survived her anyway, if the proposal above holds.** Pat carries a scrap of her cloth that still smells of her (`campaign/pat.md`, The scrap) — because a smell is not a name and not a face, and the unmaking works on what was Named. *Her family cannot describe her. A stranger is walking toward them holding the last of her.* **That is Pat's player's material and is recorded here as a pointer rather than imported**, but it is the sharpest consequence this section has and it belongs next to it.
+
 ## Open
 
 - What they call themselves. *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them; neither is necessarily theirs.

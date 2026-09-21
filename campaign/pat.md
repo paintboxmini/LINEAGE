@@ -75,7 +75,41 @@ Still open:
 
 **The fiction is a soldier's savings and it needs no more work than that.** Son of a Captain, years in the ranks, officer school in his twenties — a man who was paid for two decades and then left. *Of the three, his is the background where having some money on him requires no explanation at all.*
 
-**What is still open is objects, not coin.** What he carries out of Shunka service, whether anything of his mother's came with him, and whether a wild-magic line leaves a person holding anything — all of it unwritten, all of it Pat's.
+**He wants one object, and it is the right one.**
+
+### The scrap
+
+**A scrap of cloth off the original cursegiver, and it still carries a faint smell.**
+
+**No slot, no bonus, no rules on it** — the same standing as Chris's spell book (`campaign/chris.md`, The spell book). It is not an accessory and should never be priced. *It does not make him better at anything. It makes one thing possible that is otherwise not possible at all, which is a gate rather than a bonus (`flora/README.md` for the principle, though this is nobody's plant).*
+
+**Why it still smells, which is the whole object.** The cursegiver was not killed. She was **unmade — "as though never Cut at all"** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The First Cut is Naming, and what is Named becomes legible (`world/creation-myth-the-three-cuts.md`). So her own family cannot produce her name or her face; they inherited a technique from a person they are constitutionally unable to describe.
+
+**A smell is not legible.** It is not a name, not a face, not a symbol — it is residue, and the unmaking had no grip on it. **That is why one scrap of cloth outlasted a woman the world deleted**, and why it is faint: it is the last of something reality no longer keeps a slot for.
+
+*Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
+
+### What it actually does at the table
+
+**It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).
+
+**What it does is confirm.** Family scent carries. Put Pat in a room with the bloodline and **he knows — no roll**, because the alternative is a die deciding whether the campaign's spine is findable. *Until then it tells him nothing, which is most of the year.*
+
+**The roll is for everything past yes.** How recently, how many, which way they went, whether this is the one or a cousin — that is where **Survival +2** earns its place, and it is a real check with a real failure that costs nothing load-bearing.
+
+### What it is worth to the people he is hunting
+
+**They cannot describe their own ancestor, and he is carrying her.** A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
+
+*So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
+
+### Where he got it — open, with a favourite
+
+**Unwritten and his to choose.** The strongest available answer is **his mother's line**: generations of Shunka who turned to wild magic trying to break the curse and failed (`factions-and-races/races-shunka.md`). **A failed research tradition keeps its samples.** They would have had a piece of her, they would have kept it, and it would have come down matrilineally with everything else he carries.
+
+*That reading ties the object to the hook his file already calls the real one — his mother's side, not royal blood — rather than to the royals' vision. The cemetery gave him a direction. His mother's people gave him the only thing that can tell him when he has arrived.*
+
+**Still open beyond the scrap:** what he carries out of Shunka service, and whether anything else of his mother's came with him. **He has asked for one item and one item is an answer**, not a gap — a man who left with a single object is a clearer character than a man with a packing list.
 
 ## Deck
 
