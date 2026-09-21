@@ -98,7 +98,7 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 **Pulled by** — it comes to them, but they can decline. Nothing forces this fight.
 
-**Light.** Three wrackclaws, measured at a 99.6% win with somebody taking a knee about one fight in six (`combat-simulations/encounter_budget.py`). **Four if a fourth seat is filled** — four against three is a 27% chance of burying somebody in session one and is a different encounter.
+**Light.** **Three wrackclaws** against three starting characters: **a 99% win, a Collapse in a bit over a third of fights, and a dead character in about one fight in five** — measured 2026-09-21 over 2,000 fights with the deck exactly as `bestiary/wrackclaw.md` writes it and all three Frontline (`combat-simulations/encounter_budget.py`). *The old figures here said one knee in six and one death in twenty; those came off a tool that was building the creature's deck wrong, and the corrected numbers are three to four times worse.* **Four is a coin flip on burying somebody** — 52%, not the 27% previously written — and is a different encounter, not a bigger one.
 
 **Deep.** It is the Range tutorial with the floor: wet timber at the edge is Frontline, dry stone behind is Backline, and a Melee card needs both of you out on the timber. A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
 

@@ -48,6 +48,24 @@ Start with 3–4 Wrackclaws, all Frontline — they don't hang back, they don't 
 
 ---
 
+## Open — the 2026-09-21 review
+
+**Measured and written down rather than acted on.** *Drew's call what changes; this section is the finding.*
+
+**1. The numbers were wrong and are now three to four times worse.** Three of these against the three PCs kills somebody in **about one fight in five**, and four is a **coin flip**. The old figures (one knee in six, a death in twenty) came off `combat-simulations/encounter_budget.py`, which was building this creature's deck illegally — **none of five hundred builds satisfied the colour rule**, and the fourth slot the bestiary names as STRIKE was coming up Green about half the time. *Fixed the same day; the tool now fills by colour.* **Playing the party better does not help** — the good agent dies slightly more often, because three creatures focus-firing one character is not a thing tactics prevents.
+
+**2. That contradicts this file's own fiction.** *"Losing a fight against Wrackclaws rarely means dying"* is written above, and the engine disagrees with it. **The fiction is the better of the two** and the cheapest fix is already in it: they are **collectors, not killers**. A Wrackclaw that has pinned something has got what it came for and stops attacking it — which would end the focus-fire on a Downed character, which is where every one of those deaths comes from.
+
+**3. Every Defense Effect is Gain Evade.** Three signature cards, one defensive outcome, so the creature never makes a defensive decision. *The line above about every card burrowing into wet sand reads as flavour for a design that is not there.* **Evade also makes a poor first lesson**: a new player wins the exchange and is told it dodged anyway, from all three cards, with no way to read which is which.
+
+**4. The card nobody designed outclasses the three that were.** STRIKE is Body + d10 with 3 unpreventable on defence. The signatures are d4 with a mean of 3.5 to 4.5 and no damaging defence at all, so **the core filler is the most dangerous quarter of this deck**. *Measured core dice for comparison: Red Melee runs d7.00, Blue Ranged d5.47, Green Melee d5.75.* Three d4s also means the Ranged restriction on SIDELONG SCUTTLE bought nothing.
+
+**5. CARRION PULL points the wrong way at the dock, and this one is a live contradiction.** The card moves the target **to Backline**. The fiction is *drag it back to the water*. At the Vulture's Nest fight, **Frontline is the wet timber and Backline is the dry stone** (`places/vultures-nest.md`, The Opening Scene) — so the creature's signature grab shoves you **away from the water onto dry land and out of melee**. It worked on the original beach, where the geometry ran the other way. **It broke when the creature moved docks.** *Measured: 42% of PCs end that fight at Backline.*
+
+**6. Rooted plus that shove can strand a new player.** The dock fight is the Range tutorial; PINCH takes position away and CARRION PULL puts you where your melee cards do not reach. *Both at once is a character with nothing to do, in the fight meant to teach what position is for.*
+
+---
+
 ## Related Documents
 
 - `quests/washed-ashore.md` — the campaign opening this creature belongs to

@@ -76,10 +76,32 @@ def find(slug):
 
 
 def make(name, st, pool, position, team, rng, sig=None):
-    deck = play.build_deck(pool, sum(st.values()),
-                           st['body'], st['mind'], st['soul'], rng)
-    if sig:
-        deck = sig + deck[len(sig):]
+    """Build the creature, signatures first and the rest filled by colour.
+
+    The fill used to be `sig + deck[len(sig):]` — prepend the signatures and
+    keep the tail of a correctly-coloured random deck. That silently broke
+    the one rule every deck in the world obeys: **deck size equals total
+    stats and each colour's count equals its matching stat** (`CLAUDE.md`,
+    Derived math). Measured 2026-09-21 on the Wrackclaw, whose four cards
+    should be 1 Blue / 2 Red / 1 Green: **none of five hundred builds were
+    legal**, and the slot that should always have been Red came up Green
+    about half the time.
+
+    The slot matters more than it sounds on a small creature. A Wrackclaw
+    holds four cards, so the fill *is* a quarter of everything it does, and
+    the bestiary names the card that belongs there. Getting it wrong made
+    the creature measurably safer than the one a table would actually face.
+    """
+    sig = list(sig or ())
+    want = {'RED': st['body'], 'BLUE': st['mind'], 'GREEN': st['soul']}
+    for c in sig:
+        want[c.color] = want.get(c.color, 0) - 1
+    deck = list(sig)
+    for color, n in want.items():
+        if n <= 0:
+            continue
+        avail = [c for c in pool if c.color == color and c not in deck]
+        deck += rng.sample(avail, min(n, len(avail)))
     c = Combatant(name, body=st['body'], mind=st['mind'], soul=st['soul'],
                   deck=deck, position=position, team=team)
     c._agent = SimpleAI(rng)
@@ -172,7 +194,8 @@ def main(argv=None):
     print(f'Party: ' + ', '.join(
         f"{n} (M{st['mind']}/B{st['body']}/S{st['soul']})" for n, st, _, _ in PARTY))
     print(f'Total party HP {party_hp}. {args.runs} runs per row, seed {args.seed}.')
-    print('Effects are not executed — these are structural floors, not final numbers.')
+    print('Effects are executed — 93% of halves compile or read as traits '
+          '(`effects.py`); the remaining 22 narrate and are absent.')
 
     for slug in (args.slugs or DEFAULT):
         sweep(slug, pool, args.runs, args.max_count, args.seed)
