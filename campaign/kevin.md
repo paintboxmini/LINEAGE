@@ -171,6 +171,10 @@ Five seasonings, gated five different ways: Sapphire Ant is **bought**, the Scor
 
 Ingredients don't have a colour. A seasoning is a seasoning; what it does is what it does, whatever card it rides on.
 
+**The five names below are the loads, not the ingredients** *(stated 2026-09-21, after this file itself got it wrong)*. Four of them name a processed state rather than a harvested thing, and the source files say so outright: **spinstone grind** is the gland and its stones ground together (`bestiary/shockquills.md`), **bellows dust** is the dried bellows organ (`bestiary/blowback-beetle.md`), **cinder flake** is the dried and ground oil gland (`bestiary/scorchback-beetle.md`), and **sapphire crystal** is azure ants dried and ground (`bestiary/sapphire-ant.md`). **Hush petal is the only one of the five whose name is the thing you actually pick.**
+
+*So the three layers are worth keeping straight: you harvest an organ or a flower, it dries and grinds into a measure of seasoning, and a measure works up into three rounds. Kevin never carries the first layer — glands and organs do not travel in a bag, they get processed where the thing died. He carries measures and he carries finished rounds, and nothing in between.*
+
 **The load is not a rider any more. The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, six times over.
 
 | Load | Effect | Defense Effect | Source |
@@ -239,20 +243,20 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 *The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on, which is what retired SERVE in the first place.*
 
-**Raw and unspent: one measure of sapphire crystal, one measure of spinstone grind.** Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
+**Unspent: one measure of sapphire crystal, one measure of spinstone grind.** Both are already dried and ground — that is the form they travel and trade in, and the form he stores. Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
 
-*Neither raw measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
+*Neither measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
 
-**The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
+**The whole loadout, counted in measures rather than in items**, because that is the number that actually constrains him. *These are the five load names, which are not the names of the ingredients behind them (The Ingredients, above) — what he is holding is dried, ground and ready to work in, never a gland in a jar:*
 
-| | |
+| What he stores | How much of it |
 |---|---|
-| **Cinder flake** | 1 measure, all three rounds made and none fired |
+| **Cinder flake** | 1 measure, all three rounds worked up and none fired |
 | **Hush petal** | 1 measure, two rounds left of the three |
-| **Sapphire crystal** | 1 measure, raw |
-| **Spinstone grind** | 1 measure, raw |
+| **Sapphire crystal** | 1 measure, unspent |
+| **Spinstone grind** | 1 measure, unspent |
 | **Bellows dust** | none. He has never had any |
-| **Burnrind** | 2 pickings, three oranges left of the four |
+| **Burnrind** | 2 pickings, three oranges left of the four. *Not a seasoning and not a load — the one case where the fruit is the charge* |
 | **Plain stock** | unlimited, and both drinks came out of it |
 
 **Four measures and two pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
