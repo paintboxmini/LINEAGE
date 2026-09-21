@@ -347,7 +347,9 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 - **Nothing disarms anyone.** Wrackclaws pull at what is already in the water. They do not take your cards, your kit or your turn.
 - **They die on the stones.** What they have dragged up stays where the party can reach it. A dead scavenger does not slide into the river with the loot still on it.
 
-**Losing is a loss, not a wound.** Break off and the wrackclaws take what they can drag and the tide takes the rest — including a portion of Kevin's temple wine, which is exactly the kind of thing his family will hear about and exactly the wrong kind of serious.
+**Losing is a loss, not a wound.** Break off and the wrackclaws take what they can drag and the tide takes the rest — and it is **Harlock's freight**, in front of Harlock, who has just watched three people decide it was not their problem. *That is the audition failing rather than a fight being lost, which is a better consequence than damage and costs the party nothing they own.*
+
+*This paragraph used to say the party lost a portion of Kevin's temple wine. **Kevin is not running wine** — settled 2026-09-19 and stated outright in `campaign/kevin.md` and `campaign/session-1-convergence.md`: he is carrying nothing, and the wine is his history with this port rather than his errand in it. The spill in the water is off the Arcadia, which is whose it should have been all along.*
 
 **And it is an audition.** Harlock is on his own deck twenty feet away with nothing to do but watch. He does not hire strangers. He is about to hire these ones, and the reason is this.
 

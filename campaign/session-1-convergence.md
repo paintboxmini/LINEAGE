@@ -193,6 +193,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 ## Related Documents
 
+- `campaign/session-1-threads.md` — the same opening as a catalogue of threads instead of a sequence, for running it dynamically
 - `places/vultures-nest.md` — the town, the Compact, the Entry text
 - `places/pneum.md`, `places/canille.md`, `places/apnea.md`, `places/the-coil.md` — the four strange places one dock reaches
 - `campaign/kevin.md`, `campaign/pat.md`, `campaign/chris.md` — the three characters
