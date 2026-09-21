@@ -317,6 +317,16 @@ Grey beard, hawk's eyes, **never raises his voice.** He explains the hold withou
 
 This is the scene's exposition and it should be delivered as a man managing a problem, not briefing adventurers. Everything the party needs to know about the Nest's posture is in how he says no: official authority exists, for a price, and the price is not currently coin.
 
+**Two lines inside this beat, one each for Kevin and Pat.** Neither costs the scene anything and each turns a general problem into a specific person's problem (`campaign/session-1-threads.md`, The three private threads).
+
+**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Herb. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
+
+**It is friendly, and that is what makes it bad.** Kevin picked this port precisely because a man can disappear into it, and the first thing it does is call him by name in front of a dockmaster who is about to start writing things down. *Nobody in the scene understands that they have done anything. Only Kevin's player does, and only if they were listening.*
+
+**Pat, when he asks his question.** He is looking for one living person somewhere out on the water (`campaign/session-1-convergence.md`, Pat — chasing one living person), and asking a port about somebody hiding on the islands is an ordinary question on an ordinary day.
+
+**This is not an ordinary day, so the dockhand simply stops talking.** No refusal, no warning, no suspicion — the conversation was going fine and then it is over, and the man finds something to do with his hands. **The lockdown is what makes the question dangerous**, and the port's answer to a dangerous question is not to say no. It is to go quiet and wait for the stranger to leave.
+
 ### Beat two — the Scarves, in the open
 
 **Three kids are working the edge of this conversation while it happens.** They are not hiding. They are offering to carry bags and show the market, the information is genuine, and they are choosing marks in front of the party while the party is busy being told no (The Red Scarves, above).
@@ -373,7 +383,13 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **Harlock's face is the whole beat.** He has a famous temper and he does not use it — because using it here confirms there is something to find. He agrees. That is the most frightening thing he does in session one.
 
-**And Jonas goes** — but not yet, and the gap is the whole of session one's second half. Young, nervous and frantically thorough, he is also a man who will not board a ship without the right ledger, and the right ledger is in the office at the other end of a dock that currently has a wrecked berth across the middle of it. **Call it ten minutes. Everyone watching can see him walk away and can see that he is coming back.**
+**And the line that makes this Chris's scene.** On his way past, Jonas stops, looks at the three of them, and asks Bartho — not them — whether he should be taking their names as well, since they are standing on the impounded frontage and he is going to be writing anyway.
+
+**Bartho waves it off.** *Later. One thing at a time.* **That is the whole beat and it is over in eight seconds**, and for exactly one person at the table it was the worst eight seconds of the day: a Regency-cross-referenced ledger came within one shrug of opening on him, and the reason it did not is that a busy man had something else on his mind (`campaign/chris.md`). *Nobody threatens anyone. Chris's player does the work.*
+
+**And Jonas goes** — but not yet, and the gap is the whole of session one's second half. Young, nervous and frantically thorough, he is also a man who will not board a ship without the right ledger, and the right ledger is in the office at the other end of a dock that currently has a wrecked berth across the middle of it.
+
+**How long that takes is a dial, not a fact** (`campaign/session-1-threads.md`, The one real dial). **Ten minutes** — a man visibly walking — makes the crate decision happen now, under pressure, and is what the rest of this scene is written as. **An hour or two** — a wrecked berth to survey and a crane to log, which is the most in-character thing about him — frees the party to go to the market and come back, and **Harlock's ask lands on their return, after they have already walked past a Moving Crate at the east end.** *The long version is probably the better one. Both work.*
 
 ---
 
@@ -385,7 +401,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own freight, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
 
-**The clock is visible and it is short.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.*
+**The clock is visible.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.* **How short it is, is the dial** (Beat five, above): at ten minutes the pressure is the point, and at two hours Harlock makes this same offer when they come back from the market.
 
 **And the other side of it is standing right there.** Jonas, on his way past, alone, about to board a pirate's ship because the dockmaster told him to — and visibly not wanting to. **He does not ask, because it would not occur to him that he is allowed to.** A party that offers to go with him is doing the kindest available thing and also taking the other job, and the two are incompatible inside the same ten minutes (The Arcadia's Hold, below).
 
@@ -393,7 +409,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 ### What it leaves running
 
-- **A choice already made, or about to be.** Harlock's offer and Jonas's walk are the same ten minutes, and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
+- **A choice already made, or about to be.** At the short setting Harlock's offer and Jonas's walk are the same ten minutes and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
 - **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
 - **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
 - **They have been marked.** The kids have them.
@@ -421,6 +437,6 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - **Leave it aboard** and Jonas writes down a living crate in a Regency-cross-referenced ledger.
 - **Dump it** and he answers to whoever paid him, who has so far been worth not annoying.
 
-**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **Both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six), and neither one tells the party what is in the box.
+**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **At the short setting both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six); at the long one the party can do both, which is a softer session and still a good one. Neither job tells them what is in the box.
 
 *A party that takes Harlock's job and only finds out later what they carried is the best version of this. Nobody lied to them. They just didn't ask, same as everybody else in the chain.*

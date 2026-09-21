@@ -224,13 +224,15 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 ## The three private threads
 
-**None of these has a beat of its own, and that is the risk in a day this crowded.** Three players could watch a terrific sequence that was not about any of them. Each one below is a half-sentence that costs nothing and makes the day land on a specific person.
+**All three are now written into the scene itself** (`places/vultures-nest.md`, The Opening Scene — beats one and five) — Kevin's and Pat's inside the lockdown conversation, Chris's inside the count. They are summarised here so this file still reads as the whole picture.
 
-**Chris — he cannot afford to be counted.** *"Jonas. Go aboard. Inventory the cargo"* is a dockmaster ordering a Regency-cross-referenced ledger opened on this berth, and Chris is standing on it. **The count is already his nightmare and it is already in the scene doing nothing for him.** One line — Jonas glancing at the group and asking whether he should be taking their names too — lights him up at no cost to anything else.
+**The risk they exist to cover:** in a day this crowded, three players could watch a terrific sequence that was not about any of them. Each of these costs one line and makes the day land on a specific person.
 
-**Kevin — the port knows him.** He ran temple wine into this dock many times and chose it because a person can vanish here (`campaign/kevin.md`). Somebody recognising him is free, and it is the wrong kind of free for a man hiding somebody. *He is carrying no cargo and running no errand — that was settled and it stays settled.*
+**Chris — he cannot afford to be counted.** *"Jonas. Go aboard. Inventory the cargo"* is a dockmaster ordering a Regency-cross-referenced ledger opened on this berth, and Chris is standing on it. **The count is already his nightmare and it is already in the scene doing nothing for him.** **Jonas stops on his way past and asks Bartho — not them — whether he should be taking their names as well. Bartho waves it off.** Eight seconds, nobody threatens anyone, and a Regency ledger came within one shrug of opening on him.
 
-**Pat — the river questions.** He is asking after one living person in a port mid-quarantine, which is exactly the question nobody wants asked out loud right now. **The lockdown is what makes his ordinary question dangerous**, and a dockhand going quiet when he asks it costs one sentence.
+**Kevin — the port knows him.** He ran temple wine into this dock many times and chose it because a person can vanish here (`campaign/kevin.md`). **A dockhand looks up and says his name, warm and pleased to see him, in front of a dockmaster about to start writing things down.** It is friendly, and that is what makes it bad. *He is carrying no cargo and running no errand — that was settled and it stays settled.*
+
+**Pat — the river questions.** He is asking after one living person in a port mid-quarantine, which is exactly the question nobody wants asked out loud right now. **The lockdown is what makes his ordinary question dangerous**, and the port's answer to a dangerous question is not a refusal — **the dockhand simply stops talking and finds something to do with his hands.**
 
 ---
 
