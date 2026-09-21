@@ -129,6 +129,16 @@ What the kit delivers so far:
 
 *That reading is a suggestion. The book is Chris's, including whether it is his father's at all.*
 
+### Starting gold — 25, and it is not his
+
+**He left in the night with what he could carry and none of it was money** (The Night They Ran, above). The book is the one physical thing, and it is flavour with no rules on it.
+
+**So the 25 is Kevin's** (`campaign/kevin.md`). Kevin chose the port, Kevin's family name is what opened a berth, and Kevin is the one hiding him — the money Chris has is money Kevin has been spending, and whatever he is wearing was bought for him. *That is an inference from what both sheets already say rather than a new fact, and it is offered rather than set: **whether Chris is carrying Kevin's coin or scraped together his own is Chris's player's call**, and the number does not change either way.*
+
+**Why 25 and not 40.** By background he is the poorest person at the table by a distance, and by sheet he is the second-emptiest (`rules/equipment.md`, Starting Gold). *Those pull opposite ways, and 25 is where they meet — enough to buy two things at a dock counter, not enough to look like anyone planned for him.*
+
+**It buys nothing that matters and that is correct.** Chris's power is on his cards, his Passives and a Trait that costs nothing. **He is the one character at this table who loses least by being broke**, which is worth knowing before anybody feels bad about the number.
+
 ---
 
 ## Skills

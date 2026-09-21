@@ -65,6 +65,18 @@ Still open:
 - **Survival +2**
 - **Animal Handling +2**
 
+## Gear and coin
+
+**He owns nothing yet, and that is a statement about the sheet rather than about him** — gear simply has not been worked on (the note at the top of this file). Everything below is the correction for that, not a decision about who he is.
+
+**Starting gold: 40.** The maximum anybody starts with, and he gets it because he came out of creation with less on him than anyone at the table (`rules/equipment.md`, Starting Gold). *It is one session's pay in the first band, which means it buys supplies and cannot reach the gear ladder — a Tier 1 accessory is 100 and stays 100.*
+
+**At the Nest that is four things off a counter.** Dockhook Lines and Low Lanterns run 10 apiece and the dock foodstuffs are 5 to 8 (`items/vultures-nest-items.md`). **He is the one character who arrives with shopping to do**, which is a good thing for a first session rather than a hole in the sheet.
+
+**The fiction is a soldier's savings and it needs no more work than that.** Son of a Captain, years in the ranks, officer school in his twenties — a man who was paid for two decades and then left. *Of the three, his is the background where having some money on him requires no explanation at all.*
+
+**What is still open is objects, not coin.** What he carries out of Shunka service, whether anything of his mother's came with him, and whether a wild-magic line leaves a person holding anything — all of it unwritten, all of it Pat's.
+
 ## Deck
 
 Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen at the table.

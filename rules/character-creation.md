@@ -105,6 +105,8 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
 
+**Starting gold is set by the GM, once, and is capped at 40** (`rules/equipment.md`, Starting Gold). It is not a reward and it is not rolled — it is the one lever for levelling sheets that came out of creation holding very different amounts of *stuff*, since stats, cards and Passives are already even. **Nobody starts with enough to buy anything off the gear ladder**, which is deliberate: the cheapest real purchase is a Tier 1 accessory at ~100 gold and it is meant to arrive around session three, not session one.
+
 **It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
 
 - A sword can dig. It can pry, wedge a door, cut a rope at arm's length, and reach something you'd rather not reach with your hand.

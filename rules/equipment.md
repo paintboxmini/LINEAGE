@@ -100,6 +100,22 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 **Sessions, not time.** A band advances when the table plays, not when the calendar does. A campaign that skips two months is still on whatever session it left off at.
 
+### Starting Gold
+
+**Nobody starts with enough to buy anything on the ladder above, and that is the whole design constraint.** The cheapest real purchase in the game is a Tier 1 accessory at ~100 gold (Pricing Accessories, below), so **starting gold is capped at 40 — one session's pay in the first band.** Above that it stops being a starting purse and becomes a free session, and the first Tier 1 item arrives early for reasons nobody planned.
+
+**What it is actually for is levelling the sheets, not the fiction.** Characters come out of creation holding wildly different amounts of *stuff* — one has a weapon and a trade and a bag of supplies, another has a Trait and the clothes they ran in. None of that is visible in stats, cards or Passives, which the rules already keep even. **Gold is the one lever that fixes it without touching anything the rules balance.**
+
+| Starts with | Gold | The read |
+|---|---|---|
+| A real kit — a weapon, a trade, supplies to spend | **0–10** | They already spent it. Handing them more is handing the richest character more |
+| Some possessions, none of which cost money | **20–25** | Objects without value. The gold is what they would have if anyone had thought about it |
+| Nothing | **40** | The ceiling, and the most you can give before it reads as a gift |
+
+**Background is the second input, not the first.** Decide the number off what the sheet is missing, then check it against who the person is and adjust by a few gold rather than a band. *A poor character who came out of creation with nothing still gets the 40 — the fiction explains where a soldier's savings or a thief's stash came from, and there is always an explanation. The case that needs care is the opposite one: a wealthy background on a character who is already carrying everything, which is a reason to write the money into the world rather than onto the sheet.*
+
+**It is a one-time adjustment and it does not recur.** After session one everyone is on the same band (Pacing, above). Starting gold corrects the sheet once and then stops existing.
+
 ## Pricing Consumables
 
 Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
