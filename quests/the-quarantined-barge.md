@@ -59,7 +59,9 @@ Their vessel is inside the cordon, with everything aboard it. So are the goods t
 
 **Second, and this is the wall: the party could not talk to them anyway.**
 
-The people of Pneum are **glasskin** (`factions-and-races/races-glasskin.md`) who have been away from the Reach for centuries, in isolation, and **their harmonics have drifted the entire way.** What they speak now is a complete, living, self-sufficient language that exists nowhere else and that nobody outside the congregation has ever heard. Not a dialect anyone can work around. A different instrument.
+Pneum was founded by **glasskin** (`factions-and-races/races-glasskin.md`) who left the Reach centuries ago, and **the island is mixed now** — two hundred years of converts (`places/pneum.md`). **What they all share is the island's language**, which descends from what the founders carried out and has drifted the entire way since. What they speak now is a complete, living, self-sufficient tongue that exists nowhere else and that nobody outside the congregation has ever heard. Not a dialect anyone can work around.
+
+*This is isolation, not biology. The chord is the glasskin people-name and applies to that alone — a glasskin talks the way anybody talks (`factions-and-races/races-glasskin.md`, which warns against exactly this over-read). A continental convert on that boat is just as unintelligible, and for the same reason.*
 
 **They talk constantly.** That is worth playing. They are not sullen, not silent, not refusing — they are a boatload of people having ordinary conversations, asking questions, making jokes, getting exasperated, and none of it lands. **The wall is not their unwillingness. It is that the Nest is deaf to them**, which is a much worse thing to watch and gives the party somebody to fail at rather than somebody to crack.
 
@@ -68,6 +70,10 @@ The people of Pneum are **glasskin** (`factions-and-races/races-glasskin.md`) wh
 Bartho has been asking each of them the same thing since the boat came in: *what are you, and where did you come from.*
 
 **The honest answer to the first half is their people's name, and their people's name is a chord that no single voice can produce** — one word, the only one, made of the sound cliff fractures make in wind (`factions-and-races/races-glasskin.md`). A glasskin alone can say almost anything. Not that.
+
+**And the crew are glasskin, which on a mixed island takes explaining: this is a pilgrimage barge** (`places/pneum.md`, The Pilgrimage). The pilgrimage belongs to the glasskin among the congregation and to nobody else, so the passengers are theirs. *A boat drawn from the whole island would have somebody aboard who could answer Bartho in one sentence. This boat has nobody, because of what it is for.*
+
+**And what it is for is the part that should land when the party works it out.** These people were on their way to the quay below the Glasslight cliffs — the threshold, and the one town with enough of their own voices in it to complete the chord. **They were travelling to the only place on earth where that question can be answered**, and Bartho has been demanding it of them, daily, in a harbour they cannot leave. *He has no way of knowing. They have no way of telling him.*
 
 So the barge crew have been answering him, every day, and the answer has been arriving as one voice attempting a chord: **strange, incomplete, and unmistakably an attempt at something.** Bartho has been writing it down as *won't say.*
 

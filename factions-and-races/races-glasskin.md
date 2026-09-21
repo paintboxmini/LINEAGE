@@ -14,6 +14,8 @@
 
 **Where they are.** Concentrated at Glasslight Reach and thin everywhere else. Most of the Cartographers Guild's surveyors are Glasskin, trained first on the Soft Edge (`factions-and-races/the-cartographers-guild.md`, Structure). Most who leave don't stop wanting to come back — losing the town means losing the only other voices that can complete your own name with you, and that pull doesn't fade the way ordinary homesickness does.
 
+**The one real exception is Pneum** (`places/pneum.md`), a People of Promise island northeast of Vulture's Nest founded by glasskin who left the Reach centuries ago and never went back. **The pull did not fade there either — it became a pilgrimage.** Their descendants still make the run to the quay below the Glasslight cliffs, which is both the one place the river web touches the grey water and the one town with enough of their own voices in it. *They go home to say what they are, once, out loud, with throats enough to finish it. Two centuries of drift means they are not understood while they are there, and they go anyway.*
+
 **Named:** `characters/mirel.md`, `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
 
 ---

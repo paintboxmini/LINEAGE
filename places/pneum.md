@@ -2,7 +2,11 @@
 
 *Pronounced: new'm*
 
-**They are glasskin** (`factions-and-races/races-glasskin.md`), and they have been away from the Reach for centuries. **Their harmonics have drifted the entire time**, and what they speak now exists nowhere else and nobody outside the congregation understands a word of it. It is not a dialect to be worked around. It is a different instrument, and it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).
+**The island is mixed, and it was founded by glasskin** (`factions-and-races/races-glasskin.md`) who left the Reach centuries ago. What came after them is everybody else — a congregation gathers converts, and this one has been gathering for two hundred years. **Glasskin, continentals, and at least one Lizardkin, who leads them** (The Speaker, below).
+
+**What everyone there shares is the language**, and it is the island's, not any one people's. Two centuries of isolation did what two centuries of isolation does: what they speak now descends from what the founders carried out of the Reach and has drifted the whole way, and **nobody outside the congregation understands a word of it.** A convert learns it the way anyone learns a language. *It is not a dialect to be worked around — it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).*
+
+**This is a language barrier and nothing to do with glasskin throats.** The chord is their people-name and applies to that alone; a glasskin talks the way anybody talks, in whatever tongue they grew up in (`factions-and-races/races-glasskin.md`, which says so outright and warns against exactly this over-read). *Pneum is hard to hear because Pneum has been alone for two hundred years, not because of what its founders are.*
 
 *They speak perfectly well, at length, and constantly. The barrier is that nobody is equipped to hear them — not that they are short of voices.*
 
@@ -74,11 +78,41 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ---
 
+## The Pilgrimage — and what the quarantine is actually interrupting
+
+*Drew's, 2026-09-21.*
+
+**The glasskin among them still make the pilgrimage**, centuries after their founders walked away from the Reach and never went back. **It is theirs and not the island's** — the continentals and the Lizardkin do not go, and nobody thinks less of them for it. This is the one thing on Pneum that belongs to one people rather than to the congregation.
+
+**It is one journey doing two things, and they would tell you it is one thing.**
+
+**The Unheld end.** The Promise is that everything returns to the Unheld and held reality is temporary. **There is exactly one place on the continent where the river web touches the grey water** — the quay at the bottom of the Glasslight cliffs, where a narrow river ends and nothing sails past (`places/glasslight-reach.md`, `places/the-coil.md`). *For a faith built on the Unheld being the destination, that quay is the only place you can stand at the door. Of course they go.*
+
+**And the door is directly beneath the Reach.** So the pilgrimage that takes them to the threshold takes them, on the way, through the one town on earth with enough of their own voices in it.
+
+**Which is the other half, and it is the heavier one.** A glasskin's people-name is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). Away from the Reach you cannot say what you are — not because you are impaired, but because saying it takes other throats, and there are not enough of you anywhere else. Pneum has been away for two hundred years.
+
+***So the pilgrimage is going home to say your own name out loud, once, properly, with enough voices to finish it — and then coming back.*** Most of them make it once. Some never do. **The ones who have been are different about it afterward and do not explain.**
+
+*The return leg is oars or a pullway the whole way, because a barge cannot be sailed upriver (`places/pneum.md`, Corvel — The Vulture's Nest Thread). Nobody undertakes this lightly and nobody is expected to.*
+
+### What this does to the barge at Vulture's Nest
+
+**The held vessel is a pilgrimage barge**, which is why its crew is glasskin on a mixed island's boat — *the pilgrimage is theirs, so the passengers are theirs* (`quests/the-quarantined-barge.md`).
+
+**And it makes Bartho's question unbearable, which he has no way of knowing.** He has been asking them *what are you* every day since the boat came in, and getting one voice attempting a chord. **They were on their way to the only place that question can be answered.** The quarantine did not merely delay some travellers; it stopped, in his harbour, the one journey whose entire purpose is being able to say the thing he is demanding of them.
+
+*Nobody on that dock knows this and nobody on that barge can explain it. A party that finds it out is holding the most useful fact in the quarantine, and the way they get it is by asking Corvel a question about the boat instead of about the cargo.*
+
+---
+
 ## The Speaker — and why a Lizardkin leads this island
 
 *Drew's, 2026-09-21. **The name is open** — the role below is what matters and the person can be called whatever suits the table.*
 
-**The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`), and everything interesting about that follows from one fact: **they were not born here.** They came, they stayed, and they out-devoted a congregation that has been at this for two centuries.
+**The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`). **On a mixed island that is not the scandal it sounds like** — Pneum has been taking converts for two hundred years and the Speaker is simply the furthest that has gone. *Nobody there finds it remarkable. Pat will.*
+
+**What is worth knowing is that they were not born here.** They came, they stayed, and they out-devoted a congregation that had been at this for two centuries before they arrived.
 
 **Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and a Lizardkin grew up in the one culture on the continent whose single famous export is exactly that (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
 
@@ -86,7 +120,9 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ### What this does not do
 
-**It does not make them a translator, and nobody should reach for that.** `quests/the-quarantined-barge.md` is explicit: *partial translation is available, full translation is not, and should not be.* The Speaker has spent decades inside the drift and understands the congregation perfectly — **and is still one voice.** The question Bartho cannot get answered is *what are you*, and the honest answer is a chord no single throat can produce (`factions-and-races/races-glasskin.md`). **A Lizardkin throat cannot produce it either.** The wall holds, unchanged.
+**It does not make them a translator, and nobody should reach for that.** `quests/the-quarantined-barge.md` is explicit: *partial translation is available, full translation is not, and should not be.* The Speaker learned the island's language the way every convert does and understands the congregation perfectly — **and is two days' water away on an island whose name nobody at the Nest has**, which is the practical answer to why they are not solving this.
+
+**And they could not answer Bartho's question anyway.** *What are you* is being asked of glasskin pilgrims, and the honest answer is a chord no single throat can produce (`factions-and-races/races-glasskin.md`). **A Lizardkin throat cannot produce it either**, and the Speaker is not one of the people that question is even about. The wall holds, unchanged.
 
 *Which is worth stating plainly, because a leader who speaks both sides looks like a key to the quarantine and is not one. What they could resolve, they are not at the Nest to resolve — they are on the island, and the barge is held two days' water away.*
 
