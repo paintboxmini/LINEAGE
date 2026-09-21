@@ -30,13 +30,23 @@ Symptoms display publicly. The body is the trophy case.
 
 The diseases must be visible. This is not negotiable in their theology.
 
-**And they are cultivated, which is the part outsiders never guess.** This is not a congregation catching whatever the river hands them. It is centuries of patient selective work, and the lineages they keep have been bred hard for three things:
+**And they are cultivated, which is the part outsiders never guess.** This is not a congregation catching whatever the river hands them. It is centuries of patient selective work — **and what it selects for is beauty.**
 
 - **Exotic** — a common illness is worthless, because anyone could have got it by accident.
 - **Highly visible** — an invisible communion is not witnessed, and an unwitnessed communion did not happen.
-- **Low mortality** — a disease that kills its host stops being displayed, and a lineage that kills its hosts dies out with them. **The work has been selecting against lethality for two hundred years and it has been extremely effective.**
+- **Strange** — *the more unusual the malformation, the more beautiful.* This is the one that makes outsiders go quiet, and it is the honest centre of the whole practice.
 
-**They are very good at this.** The result is a body of illnesses that are spectacular to look at and will mostly not kill you, held by people who regard the achievement the way a vintner regards a cellar.
+**It is an aesthetic, and they are closely bonded over it.** They regard the achievement the way a vintner regards a cellar, and they agree with each other about what is fine work in the way people agree about a painting. *Not one of them experiences this as suffering being reframed. They find it genuinely beautiful, and they find each other beautiful, and that is the thing to get right.*
+
+### Nobody was bred to survive this — they are kept alive
+
+**Nothing here selects against lethality, and the island has never needed it to**, which is the correction that matters and the thing outsiders get backwards (`quests/the-quarantined-barge.md`, What Is Actually True).
+
+**Prestige is affliction, and affliction is dependence.** The most devout are the most marked. The most marked are the most admired. **And the most admired are attended constantly** — fed, turned, cleaned, carried, read to, sat with through the night by people who consider the chair beside them the best seat on the island.
+
+**Being well attended is not a consolation for status here. It is the visible form of it.** A crowd gathered around somebody who can no longer rise is not a deathbed to them; it is the faith happening at its fullest, and the person in the middle of it is the most fortunate person in the room.
+
+***So the famous of Pneum would almost certainly die if left alone, and the island simply never leaves them alone.*** *That is not a flaw anybody there has noticed, because it has never once come up.*
 
 **All of it moves by blood, and only by blood.** Communion is deliberate and it is administered — a cut, a shared instrument, a rite with a specific moment in it. Nobody catches anything here by standing near somebody. The congregation knows this perfectly well. It has never once occurred to them that anyone would assume otherwise.
 
@@ -84,9 +94,13 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 **Every one of their dead goes, whatever they were** — glasskin, continental, convert of forty years. A mixed island has mixed dead and the Promise does not sort them. **The glasskin crew it**, because the route is the founders' road back to the Reach they left, and two centuries on their descendants still make the trip and still do not go up the cliff.
 
+**Which means the barge is Pneum's glasskin and nobody else, and they are not a fair sample of the island.** *They are the ones who stand at the only door on the continent, several times a lifetime, and it shows.* **They tie everything to the Unheld far harder than a continental convert would** — where somebody on the island might tell you what a marking is and how it was received, the people on that boat will tell you what it means that the Unheld reached for this person. *There is nobody aboard who would have given Bartho a practical account, because nobody aboard thinks in those terms.*
+
 **Bartho knows all of this, because they told him** (`quests/the-quarantined-barge.md`). **It did not help.**
 
 *A boat full of visibly, floridly diseased people is one problem. A boat full of visibly, floridly diseased people **and the bodies of the ones it already killed**, bound upriver for somebody else's town, is the problem he actually has.* And the crew explaining warmly that the dead are not infectious and that none of it travels that way is **a claim about their own cargo, by the people who want to leave**, in a port with nobody who can check it.
+
+**And they have been split up and held apart since the morning before last**, which is the part that is actually killing people (`quests/the-quarantined-barge.md`, The clock nobody on the dock knows about). *The ones who cannot manage without hands on them are being kept from the hands. Nobody on the shore has any way to see that, and nobody on the boat has said it in a register a frightened port would hear as an emergency.*
 
 **The bodies are the thing nobody at the Nest says out loud and everybody on that dock knows about.** *Every day the hold lasts is a day the rite is not performed, which to the congregation is a harm being done to people who are already dead — and not one of them has raised it, because nobody asked.*
 

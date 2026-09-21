@@ -16,11 +16,25 @@ The horror is administrative, and the thing that makes it unsolvable is not mali
 
 **The diseases are blood-borne. Only blood.** Nobody on that dock is at risk from proximity, air, water, cargo, or handling. The Nest is not in danger and never was.
 
-**They were bred to be exactly what they are.** Centuries of deliberate cultivation have selected these illnesses for three things: **exotic, highly visible, and low mortality.** A disease that kills its host is a failed lineage — it stops being witnessed. A disease that cannot be seen was never worth collecting. What the Promise of Pneum have produced, over generations of patient work, is a body of illnesses that are spectacular to look at and will mostly not kill you. **It is an art form and they are extremely good at it** (`places/pneum.md`).
+**They were bred to be beautiful.** Centuries of cultivation, selecting for **exotic and highly visible and strange** — the more unusual the malformation, the more beautiful; the more visible, the more desirable. **It is an aesthetic and they are extremely good at it** (`places/pneum.md`).
 
-**So the people in that hold are, by any honest measure, fine.** They are the least endangered group in this adventure. Everyone else on the dock is losing their living.
+**What they were not bred for is survivable, and this is the correction that matters.** *An earlier draft of this file said the lineages were selected for low mortality and that the people in the hold were therefore fine. That was wrong and it was the comfortable version.* **The illnesses do not spare anyone. The island does.**
 
-**Which means the crisis is entirely on the shore.** That is the inversion the whole job runs on, and the party will not see it for a while.
+**Prestige is affliction, and affliction is dependence.** The most devout are the most marked, the most marked are the most admired, and **the most admired are attended constantly — fed, turned, cleaned, carried, sat with.** Being attended is not a consolation for status on Pneum. *It is the visible form of it.* A congregation gathered around somebody who cannot rise is the whole faith happening at once.
+
+**So the most respected people on that barge would almost certainly die if left alone.**
+
+### The clock nobody on the dock knows about
+
+**They have been separated and held in isolation since the morning before last** (The Lockdown, below).
+
+**That is the danger, and it is not the one anybody is watching for.** The Nest is afraid of an outbreak and there is no outbreak. Meanwhile the people who cannot manage without hands on them have been kept apart from the hands, by a man doing a textbook containment, for two days and counting.
+
+**Nobody on the shore can see it**, and not through negligence: *he is being cared for* does not read as a medical fact to a dockmaster. It reads as a religious eccentricity, and Bartho has had his fill of those this week.
+
+**And the barge crew have not said it plainly either.** They are grieving, frightened and being held; they speak about it the way they speak about everything, as devotion and blessing and the Unheld's attention — **which is exactly the register least likely to be heard as an emergency** (What They Told Him, below).
+
+***So the crisis is not on the shore and it is not the outbreak. It is inside the hold, it started when the rope went up, and every single person involved is behaving reasonably.***
 
 ---
 
@@ -53,36 +67,44 @@ Their vessel is inside the cordon, with everything aboard it. So are the goods t
 
 ---
 
-## What They Told Him — and why it made everything worse
+## What They Told Him — rhetoric, a bad translator, and no outbreak
 
-**There is no language barrier.** *There was one in an earlier draft of this quest and it is gone as of 2026-09-21. It was the weaker idea and this is the better one.*
+**There is no wall of silence and there is no impenetrable language.** *An earlier draft of this quest built a total language barrier and it is gone. What is here instead is a partial one, which is worse to work with and better to play.*
 
-**They speak the common tongue. Bartho asked. They answered. All of it.**
+**The barge is Pneum's glasskin**, and they speak **some** common — enough for a greeting, a refusal, a price, the shape of an answer. **What they do not have is the common for any of this.** Their own tongue is what they think in and grieve in and pray in, and two centuries inland has moved it a long way from Reach speech.
 
-**Concealment is not something this congregation has**, and that is theology rather than naivety: the practice requires witness, and *collecting without witnesses isn't collecting* (`places/pneum.md`, The Practice). **A faith whose central act is public display has no doctrine of hiding.** So a frightened dockmaster asked a boatload of sincere people direct questions, and got sincere answers, at length, cheerfully.
+### Jonas is the translator, and that is a problem in three directions
 
-**He got the location.** Pneum, the lake island northeast. Freely given, in the first hour, by people who could not imagine why it would be a secret.
+**Jonas Widdlepen is glasskin, out of Glasslight Reach** (`places/vultures-nest.md`, Key NPCs). He is the only person in this port with any hope of following them, and **he is a Reach ear meeting two hundred years of drift** — near enough to be useful and far enough to be dangerous.
 
-**And then he got the rest of it, which is the part he cannot put down:**
+- **He catches the shape and loses the content.** Nouns survive, grammar mostly survives, and everything load-bearing arrives approximate. *How much he recovers is a dial a GM should set by how stuck the table is.*
+- **He is nervous, young, and frantically thorough**, which is exactly the wrong temperament for a job where the honest answer is *I think she said something like*. He will hedge. Bartho will hear the hedge and discount the whole sentence.
+- **And he reports to the Regency.** His ledger is cross-referenced against Quartermaster Voss's intake at Eclipseria South Gate (`places/vultures-nest.md`). **Every question Bartho puts through Jonas becomes a written record of an island nobody has ever filed.** *Bartho knows this. It is half of why the questioning has been so slow, and most of why he would rather a party did it.*
 
-- **They do this on purpose.** Deliberate infection is communion. Nobody did it to them.
-- **The diseases are cultivated.** Two hundred years of patient selective work, bred for exotic, highly visible, and low mortality (`places/pneum.md`, The Practice).
-- **It moves by blood and only by blood** — deliberate, administered, a rite with a specific moment in it. Nobody catches anything by standing near them.
-- **And there are dead aboard.** The barge is a hearse; they are carrying their dead upriver to the quay below the Glasslight cliffs (`places/pneum.md`, The Promise Barge).
+**He is also the man being sent aboard the Arcadia** (`places/vultures-nest.md`, The Opening Scene). **The two jobs want the same person on the same afternoon.**
 
-### Why every answer closed the door further
+### What actually comes across
 
-**Because his four questions got answered and the answers were worse than silence** (If They Stall — Bartho's Ask, below).
+**Religious rhetoric, almost entirely.** They do not have a way of discussing their illnesses as illnesses, because to them that is not what these are. **They are blessings, and they talk about them as blessings** — what was received, how visibly, how rare, who witnessed it, what it means that the Unheld reached for this person and not that one.
 
-*Is there anybody else* — **yes, an entire island.** *Are they the same* — **yes, all of them, and proud of it.** *Did it happen out on the water or did they bring it aboard* — **neither: they made it.** And *is anyone still alive*, the one he actually cares about — **yes, everybody, because we selected against lethality for two centuries.**
+*Ask what is wrong with her and you get an answer about what she has been given. Ask whether it spreads and you get an answer about who is worthy to receive. Neither is evasion. They are answering a question you did not ask, because they cannot hear the one you did.*
 
-**That last answer is the trap.** He asked it expecting to hear *a plague did this to us* or *we are the last ones*, and either would have told him what he was dealing with. **What he got was a breeding programme that thinks it is a church**, and *everyone survives* stopped being reassurance the moment he understood why.
+**And the glasskin of Pneum tie all of it much harder to the Unheld than the rest of the island would.** They are the ones who make the funeral run, they are the ones who stand at the only door on the continent, and it shows in every sentence. *A continental convert would have given Bartho a more practical account. There is not one on this boat.*
 
-**He cannot verify a word of it.** *It only moves by blood* is a claim about their own cargo, made by the people who want to leave, in a port with no physician who can check. **A competent dockmaster does not open a berth on the word of the vessel.**
+### What he did get, and what it bought him
 
-**And releasing them is not releasing them — it is sending them north.** Their destination is a real quay under a real town. *Whatever this is, Bartho would be handing it to Glasslight with his own signature on the release*, and he has been thinking about that since the second day.
+- **That it moves by blood and only by blood.** Stated plainly, more than once, and **true** (What Is Actually True, above). He cannot verify it and has not.
+- **That they did it to themselves on purpose**, which is the sentence he keeps returning to.
+- **That they are carrying their dead upriver** (`places/pneum.md`, The Promise Barge).
+- **A general direction.** Northeast, a lake island, somewhere in the web. **Not a route** — and the web is four hundred islands (Corvel, below).
 
-**None of which makes him a fool or a bigot.** He asked the right questions, got true answers, and ended up with a worse problem than he started with. *That is the whole quest: the information is free and it does not help.*
+**None of it comforts him**, and he is not being obtuse. *A claim about their own cargo, by the people who want to leave, arriving secondhand through a hedging young man who writes everything down for the Regency, in a register that sounds like a sermon.* **That is what a competent dockmaster does not open a berth on.**
+
+### They are grieving, and nobody has treated them as mourners
+
+**This is the thing to play, and it is the easiest thing in the file to forget.** They are not specimens and they are not a puzzle. **They set out to bury their dead**, they have been stopped short of it, they have been separated from each other, and the rite is not being performed while the days pass.
+
+*They are frightened, they are angry in the quiet way people are angry when they have no leverage at all, and the ones being kept from the people who need them are the most frightened of anybody.* **Not one person on the dock has said sorry for your loss**, because not one person on the dock has thought of it as a loss.
 
 ---
 
@@ -92,11 +114,17 @@ Held, not mistreated. **He speaks the common tongue**, which is why he is the on
 
 **He will not recant** — there is nothing he considers wrong to admit to, so an interrogation gets a theology lecture from a man who is pleased you asked.
 
-**He would not say where the barge came from, and it did not matter — his own crew said it in the first hour.**
+**He knows the exact way to Pneum and he will not give it**, and that is the one thing in this adventure anybody is actually withholding.
 
-*This is not stubbornness and it was not stupidity either.* Naming Pneum sends a port that has already decided the word is *cursed* to an island of people whose faith requires their symptoms to be visible. He could see exactly what would follow and he could not correct it fast enough from a cell.
+**The crew gave a direction. Corvel has the route** — which channels, which lake, which of four hundred islands, and how you find it without a local. *He has made the run his whole life.*
 
-**He was the only person on that boat with a strategic instinct, and his own congregation talked straight past him**, because hiding is not a thing this faith does (What They Told Him, above). *He has been in a cell for two days knowing the one thing he was protecting was given away before he was even questioned, and that nobody did anything wrong. That is what the patience is made of.*
+**This is not stubbornness.** Sending a port that has already decided the word is *cursed* to an island of people whose faith requires their symptoms to be visible is the thing he is in a cell to prevent, and he cannot correct what follows from in there. **He has done the arithmetic and he would rather be held.**
+
+**He is gettable, and not by leverage.** Threats get a theology lecture from a man who has already accepted whatever happens to him. *What moves him is somebody demonstrating they understand what he is protecting the island from* — which means a party that has worked out how the Nest talks about that barge, and can say so, is holding the key. **Being right is not enough. He has to believe they will still be right when they get there.**
+
+**And the alternative is real.** A party that cannot move him has a direction and a lake and has to go and look, which is its own session and not a worse one (The Map, below).
+
+*He was also the only person on that boat with any instinct for concealment, and it did not travel: his congregation answered every question put to them, warmly, because hiding is not a thing this faith does. He has been in a cell for two days watching the ground he was defending get given away by people doing nothing wrong. That is what the patience is made of.*
 
 **He will tell you the diseases move by blood**, plainly, to anyone who asks him a straight question — and nobody has, because nobody has been asking what it is. They have been asking where he got it. *A party that asks the medical question instead of the smuggling question gets the answer in one conversation, and then has to make a room full of frightened people believe a prisoner.*
 
@@ -110,13 +138,17 @@ Held, not mistreated. **He speaks the common tongue**, which is why he is the on
 
 *The unstick, and it is also the campaign's actual on-ramp. Deploy it when the party has run out of moves at the dock, not before.*
 
-**He already has their answers. What he does not have is anybody who saw it** — and he cannot hold the port shut forever. So he asks the only people who can move:
+**He has had two days of sermon through a hedging translator and he has nobody who has seen the place** — and he cannot hold the port shut forever. So he asks the only people who can move:
 
-> **"They have told me where. They have told me everything, and I have written all of it down, and I do not know a single thing more than I did. Go up there. Look at it. Then come back and tell me the same four things they told me, or tell me different ones. Is there anybody else. Are they the same. Did it happen to them out on the water or did they bring it aboard. And is anyone still alive."**
+> **"I have asked them everything I know how to ask and I have written down every word of it and I am no further along than the morning it came in. So go up there and look at it. Four things. Is there anybody else. Are they the same. Did it happen to them out on the water or did they bring it aboard with them. And is anyone still alive."**
 
 **The ask is verification, not discovery**, and that is the sharper version. *He is not sending them for a secret. He is sending them because a stranger's eyes are the only instrument he has left, and he has enough sense to know his own fear is not one.*
 
-**That last question is still the one he actually cares about**, and he has already been told the answer and does not believe it. *Everyone is alive* was the most alarming sentence on the dock when a crew member said it warmly. **If the party comes back and says it too, having stood in the village and counted, it stops being a boast and becomes a fact**, and he can open the port. If they come back with anything else, he holds the dock for a month and sleeps better for it.
+**That last question is the one he actually cares about.** If the village is dead, this is a plague, he has done the right thing, and he will hold the dock for a month. If the village is alive, it is not, and he can open the port tomorrow.
+
+**And the honest answer is going to be harder to carry back than either** (What Is Actually True, above). *Yes, they are alive. They are alive because somebody is sitting with each of them, every day, in shifts, forever.* **Whether that reads to Bartho as reassurance or as the worst thing he has heard yet is a real question and the party has to decide how to put it.**
+
+*He does not know that the same fact is the reason he needs to decide quickly.*
 
 He will pay. He will also, quietly, arrange for the party's boat to be the one vessel released — because they need it to go, and because it costs him nothing he was not already going to lose.
 
@@ -157,7 +189,7 @@ These are people who have not been allowed to leave, work or sell for two days, 
 
 **They bring the answer back from Pneum.** The intended arc. The village is alive, the illnesses are chosen, it did not happen in transit, and none of it travels by anything but blood — **all of which Bartho was already told and none of which he could believe until somebody went and looked.** Bartho opens the port. **Cost:** Pneum is now a written location in a Regency-cross-referenced ledger, and the party are the ones who confirmed it was worth writing down.
 
-**They get the crew and the dock in the same room.** The barge people have been answering questions one at a time, in isolation, to a man who writes everything down and believes none of it. **Put them in front of the port instead** — the crews who have been stuck on that stretch for two days, the dockhands, the people actually afraid — and let them explain it themselves, warmly and at length, the way they explain everything. *It is the riskiest ending available and it is not a trick: it either humanises them completely or it confirms every fear in the room, and which one it does depends on what the party has already built with those people.*
+**They get the hold reorganised.** *No one is released and the cordon does not move.* The party works out what nobody on the shore has — that the most afflicted are dying of being alone rather than of anything catching — and persuades Bartho to let the barge people be held **together** instead of apart. **It is the smallest ask in the adventure and it is the one that saves lives**, and it costs Bartho nothing he was actually protecting, because blood-borne means proximity was never the risk. *A party that gets this and nothing else has still done the most useful thing available.*
 
 **They make the medical case.** Corvel's answer, carried to Bartho, believed. Hardest to sell and cheapest if it works — and it hinges on a party willing to stake their credibility on a prisoner's word about his own cargo.
 
@@ -177,6 +209,8 @@ These are people who have not been allowed to leave, work or sell for two days, 
 ## Not Yet Set
 
 - **Whether the barge crew want to go home, or to finish the run.** *They are carrying their dead* (`places/pneum.md`, The Promise Barge), and turning back means bringing them back. **Nobody at the Nest has thought to ask which they would rather**, which is its own indictment of how this has been handled.
+- **How much Jonas actually recovers** from Pneum's drift — a dial, set by how stuck the table is (What They Told Him, above).
+- **How long the most attended have**, if the hold keeps them separated. Deliberately unfixed: set it to the pace your table is moving at, and *do not let it resolve offscreen while they are at the market*.
 - **What the Nest does about the bodies** if the hold drags on. Nobody has raised it and everybody is aware of it.
 - **The party's boat** — whose it is, how they came by it, and whether it matters. Referenced here and not defined.
 - **What Corvel does if released.** He has been extremely patient for a man in a cell and nobody has established what that patience is for.

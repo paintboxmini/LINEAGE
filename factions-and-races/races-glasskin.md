@@ -16,7 +16,7 @@
 
 **The one real exception is Pneum** (`places/pneum.md`), a People of Promise island northeast of Vulture's Nest founded by glasskin who left the Reach centuries ago. **The pull did not fade there, and it did not win either.** Their funeral barges still run the founders' road all the way back — down to the quay at the foot of the Glasslight cliffs, where the dead are released into the grey water — and then they turn around and go home. ***They tie up at the bottom of the cliff and they do not climb.*** *Every generation comes back to the town, stands under it, and leaves without going up. Nobody wrote that rule and nobody breaks it.*
 
-**Named:** `characters/mirel.md`, `characters/rue.md`, `characters/marren.md`, `characters/thess.md`.
+**Named:** `characters/mirel.md`, `characters/rue.md`, `characters/marren.md`, `characters/thess.md`. **Also Jonas Widdlepen**, the Vulture's Nest ledger-keeper (`places/vultures-nest.md`) — a Reach ear two hundred years out of step with the one congregation that left, which is a problem somebody else's quarantine turned into his.
 
 ---
 

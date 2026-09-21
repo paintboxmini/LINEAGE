@@ -38,7 +38,9 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **And it cannot resolve itself, which is not because anybody is being difficult.** The barge crew speak the common tongue and **answered every question Bartho asked, in full, cheerfully, in the first hour** (`quests/the-quarantined-barge.md`, What They Told Him). He knows where they are from, what is wrong with them, and that they did it to themselves on purpose over two hundred years of careful work. **He knows more than he ever wanted to and he is no closer to opening the berth**, because none of it is checkable by anyone in this port and all of it is worse than not knowing.
 
-**Bartho asked them the one question he actually cared about** — *is anybody still alive back there* — and was told yes, everybody, warmly, by a woman who then explained that low mortality is what two centuries of selective work is **for**. *He has written all of it down and believes none of it, and he is not being unreasonable: it is a claim by the people who want to leave, about their own cargo.* **And the barge is carrying their dead upriver** (`places/pneum.md`, The Promise Barge), which means releasing them is not releasing them — it is sending this to Glasslight with his signature on it.
+**What Bartho has actually been able to get out of them is sermon.** They speak some common and not nearly enough of it, and what comes through Jonas is devotion — what was received, how visibly, how rare, who witnessed it, what it means that the Unheld reached for this person. *Ask what is wrong with her and you get an answer about what she has been given. It is not evasion; they cannot hear the question you asked.* **He has written it all down and it has bought him nothing**, and he is not being unreasonable about that.
+
+**And the barge is carrying their dead upriver** (`places/pneum.md`, The Promise Barge), which means releasing them is not releasing them — it is sending this to Glasslight with his signature on it.
 
 **Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 
@@ -50,7 +52,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
-**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel won't name where the barge came from, the clock nobody on the dock knows about, and five ways it ends.
+**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel will not give up the route, the clock nobody on the dock knows about, and five ways it ends.
 
 *The Adventurers' Hall in the capital already posts this as real and current (`places/capital/adventurers-hall.md`).*
 
@@ -91,9 +93,11 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 **Bartho Underfist — The Quiet Dockmaster**
 Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
 
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically double checks and records cargo. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
+**Jonas Widdlepen** — **glasskin** (`factions-and-races/races-glasskin.md`), out of Glasslight Reach. Young, nervous, frantically double checks and records cargo. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
 
 He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+
+**And he is the only person in the Nest who can follow the barge crew at all** (`quests/the-quarantined-barge.md`, What They Told Him) — a Reach ear against two centuries of drift, near enough to be useful and far enough to be dangerous. *Which puts Bartho in a bind he has not said out loud: his only translator is the Regency's informant, so every question he asks through Jonas becomes a written record of an island nobody has ever filed.* **It is half of why the questioning has been so slow.**
 
 **Aege** — near the east gate, and the guide the party actually travels with if they go inland. Lean, weathered face. She watches how you walk before she talks to you, which is the whole hiring interview. On the road she speaks in paths rather than places and does not explain her decisions; at a table with a meal on it she is the same person with a much wider register. Full profile and combat identity at `characters/aege.md`.
 
