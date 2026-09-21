@@ -230,19 +230,38 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 | | |
 |---|---|
-| **2 incendiary oranges** | The last two off one picking of Burnrind. Where the bank was is a question for the table, not an answer written here |
-| **2 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker |
-| **1 hush petal round** | Rooted, either direction |
-| **1 Bitter Shot** | One drink, Quick, his or anyone's — he hands them out before the fight |
+| **3 incendiary oranges** | What is left of two pickings of Burnrind. Where either bank was is a question for the table, not an answer written here |
+| **3 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker. One whole measure, worked up and untouched |
+| **2 hush petal rounds** | Rooted, either direction. A measure with one round already gone out of it |
+| **1 Bitter Shot** | Quick |
+| **1 The Early Cup** | Initiative Shift +1. Both drinks are plain-charge, so neither cost him a seasoning — which is why these two and not the good ones |
 | **Plain rounds** | As many as anyone cares to count. They do nothing |
+
+*The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on, which is what retired SERVE in the first place.*
 
 **Raw and unspent: one measure of sapphire crystal, one measure of spinstone grind.** Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
 
 *Neither raw measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
 
-**The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the three is in the chamber is the one he is committed to until he fires it or blocks with it.
+**The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
 
-*What that adds up to is three good shots, two grenades, one drink and about a session and a half of prep sitting in a bag. It is meant to feel like enough right up until the second fight.*
+| | |
+|---|---|
+| **Cinder flake** | 1 measure, all three rounds made and none fired |
+| **Hush petal** | 1 measure, two rounds left of the three |
+| **Sapphire crystal** | 1 measure, raw |
+| **Spinstone grind** | 1 measure, raw |
+| **Bellows dust** | none. He has never had any |
+| **Burnrind** | 2 pickings, three oranges left of the four |
+| **Plain stock** | unlimited, and both drinks came out of it |
+
+**Four measures and two pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
+
+**The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
+
+*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag.* **Raised from three, two and one on 2026-09-21 at Drew's word.** It moves the moment he runs dry from about the second fight to about the fourth, which is a real change to the pacing that paragraph above is built on — worth knowing rather than worth arguing about, since a first session where the interesting character is empty by the second encounter is its own kind of failure.
+
+**And the free action is still the actual ceiling.** One a turn, whatever is in the bag (One free action, three things that want it, below). More stock does not mean more per turn; it means more turns before the answer to *load, drink or throw* stops being a choice and starts being whatever is left.
 
 ---
 
@@ -260,7 +279,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 - **The pepper grinder** — hand-cranked, and a **ranged** weapon. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
 - **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now. *The "hot knife" this file used to list was removed on 2026-09-19; there was only ever one.*
 - **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Supply and restocking, below).
-- **A bandolier of incendiary oranges** — written below as a consumable rather than a card. **Two in it at the start** (What he starts with, above), and they are made of Burnrind rather than fruit (`flora/burnrind.md`), which is why there are two.
+- **A bandolier of incendiary oranges** — written below as a consumable rather than a card. **Three in it at the start** (What he starts with, above), and they are made of Burnrind rather than fruit (`flora/burnrind.md`), which is why there are two.
 
 ```
 THE PEPPER GRINDER
@@ -402,7 +421,7 @@ Range: Both
 - Character name
 - **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
 - Which other fruits he's worked out, if any — **and whether anything but Burnrind can carry the grenade**, now that the orange has a specific plant behind it
-- ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has two
+- ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
 - ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
