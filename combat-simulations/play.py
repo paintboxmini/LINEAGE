@@ -123,6 +123,19 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
             continue
         break
 
+    # ON THE FLY grants its free action from inside the exchange, so it only
+    # exists once the card has resolved — which is after the Action, not
+    # before it, where the ordinary free action is offered. Spend it here or
+    # it is lost; a free action does not bank.
+    if free is not None:
+        while who.extra_free > 0 and who.alive():
+            who.extra_free -= 1
+            choice = free(who, foes, allies)
+            if choice is None:
+                break
+            spend_free_action(who, choice, log)
+    who.extra_free = 0
+
 
 def spend_free_action(who, choice, log):
     """One free action, resolved. `choice` is what the agent asked for:
@@ -223,6 +236,22 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
             log(f'{who.name} leaves cover to attack.')
 
         resolve_attack(who, target, card, dcard, rng=rng, log=log, wheel=wheel)
+
+        # ON THE FLY on a Defense Effect: the defender is being attacked on
+        # somebody else's turn, where no free action otherwise exists. It is
+        # spent immediately or lost.
+        if target.extra_free > 0 and target.alive():
+            tfree = getattr(dagent, 'choose_free_action', None)
+            while target.extra_free > 0:
+                target.extra_free -= 1
+                if tfree is None:
+                    break
+                choice = tfree(target, [who], [c for c in allies + foes
+                                              if c.team == target.team])
+                if choice is None:
+                    break
+                spend_free_action(target, choice, log)
+            target.extra_free = 0
         return action
 
     if kind == 'move':

@@ -2507,6 +2507,28 @@ def _r_gated_on_discard(m):
     return [Gated(test, inner, 'the discard pile shows another colour')]
 
 
+class ExtraFreeAction(Op):
+    """ON THE FLY: "Take a free action. This is in addition to your one for
+    the turn." (`cards/kevin.md`, `rules/combat.md` Free Actions.)
+
+    Kevin is the only character whose free action is contested — reload,
+    eat or drink, throw an orange, one per turn, every turn — and nothing
+    else in the game relieves it. On his own turn this is a second one. On
+    a Defense Effect it is more than that: a free action otherwise exists
+    only on your own turn, so this is the one way anybody takes one while
+    being attacked.
+    """
+
+    def apply(self, ctx):
+        ctx.actor.extra_free += 1
+        ctx.log(f'  {ctx.actor.name} has a free action in hand.')
+
+
+@menu(r'^take a free action\. this is in addition to your one for the turn\.?$')
+def _r_on_the_fly(m):
+    return [ExtraFreeAction()]
+
+
 class Summon(Op):
     """Put a spirit on the field at the summoner's position.
 

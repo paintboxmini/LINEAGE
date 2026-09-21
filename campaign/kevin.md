@@ -190,7 +190,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 ### The beverages
 
-Prepared drinks, handed over by SERVE or drunk by Kevin himself. Same craft as the rounds, same supply model.
+Prepared drinks, handed out before the fight and drunk with a free action by whoever is holding one. Same craft as the rounds, same supply model. *Kevin used to hand them over mid-fight with SERVE; the party carries its own now, which is what retired that card.*
 
 | Drink | Effect on the drinker | Charge |
 |-------|-----------------------|--------|
@@ -257,7 +257,7 @@ unpreventable damage to every enemy in that position. Single-use.
 
 ## Passives
 
-Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green entirely to SERVE and the drinks.
+Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green to ON THE FLY — and ON THE FLY is the improvisation half of the pair MISE EN PLACE starts.
 
 - **MISE EN PLACE** — Red, Body, Melee, d6. He set it up. Read *set up* loosely rather than as prep alone: the stance and the ground count the same as the station, and it needs no kitchen, because he carries his kit and works out of a pack.
 - **SPLIT ATTENTION** — Blue, Mind, Ranged, d4. Six orders up, none of them finished, all of them being tracked. Attention divided on purpose rather than lost.
@@ -328,17 +328,27 @@ Range: Ranged
 
 **d6, set 2026-09-19, and it is the norm rather than a nerf.** Blue Ranged cards in the core pool average **d5.47**, so a d6 signature sits just above the line where a signature should. The d8 it carried was a Red-Melee number on a Blue-Ranged card. *Measurement says this will not actually cost him anything — the same change tested at 400 fights moved his damage not at all, because the loads are where his output lives (What this build actually costs, above). It is a correctness fix, not a balance one.*
 
-**SERVE** is unchanged. It carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
+**ON THE FLY replaced SERVE on 2026-09-21.** SERVE spent an Action to hand somebody a drink — and the party distributes the drinks before the fight now, and Chris and Pat both have an idle free action to drink them with. A card that costs an Action to do what a free action already does is a dead card, whatever it says on it.
 
 ```
-SERVE
+ON THE FLY
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Give a prepared drink to an ally in your position. They consume it immediately.
-Defense Effect: Consume a prepared drink yourself.
+Effect: Take a free action. This is in addition to your one for the turn.
+Defense Effect: Take a free action. This is in addition to your one for the turn.
 Range: Both
-"Drink it. Don't ask what's in it. Drink it."
+"Don't wait for me to finish. Nothing ever finishes."
 ```
+
+**It is the only card in the game that unsticks his actual bottleneck.** Kevin is the one character whose free action is contested — reload, eat or drink, throw an orange, one per turn, every turn — and Chris's and Pat's sit idle. Nothing else relieves that: no card anywhere grants an extra free action, and `rules/combat.md` caps it at one per turn in as many words. That line now names this card as its exception, because **a card may break a rule when it says so on its face and may not break one quietly.**
+
+**The Defense Effect is the interesting half.** A free action otherwise exists only on your own turn, so ON THE FLY is the one way anybody takes one while being attacked — drinking Still Water for Ward and 3 HP *as the swing comes in*. Measured in the simulator: he blocks with it on a tie and drinks mid-exchange, which nothing else in the corpus can do.
+
+**And it pairs with MISE EN PLACE as its opposite.** Preparation against improvisation — the same broad-and-narrow split his two Passives already have, which is the shape this character keeps wanting.
+
+*Green because flexibility is what Green is for (`rules/cards.md`, What Each Colour Tends Toward), and Soul 2 + d6 is 5 expected — his weakest card by a distance, which is right for one played entirely for its text.*
+
+*An ally-movement card was the first idea and was scrapped: AWAKEN already does it (`cards/green-soul.md`), and a signature has no business reprinting something anyone can draft.*
 
 ---
 

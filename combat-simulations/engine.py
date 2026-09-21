@@ -176,6 +176,11 @@ class Combatant:
         self.tracker = None       # the card sitting face up for this Object
         self.tie_win_for = None   # HERE BOY: whose tie-win this spirit holds
 
+        # ON THE FLY: free actions beyond the one per turn everyone gets.
+        # `rules/combat.md`, Free Actions — the cap names this card as its
+        # only exception.
+        self.extra_free = 0
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0

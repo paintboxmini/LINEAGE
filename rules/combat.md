@@ -109,6 +109,8 @@ On your turn, you may take one Action, plus one free action if you have one avai
 
 **Free Actions.** Once per turn, on top of your Action above, you get one free action — it costs nothing from your turn, so you still take your normal Action as well. Spending a banked Quick to Move Position (Rushdown included), activating a piece of your own gear (turning something on, and similar minor personal gestures — not the world around you; that's still Interact), and eating or drinking all count. Capped at one per turn regardless of how many you'd otherwise have available — a second banked Quick just waits for next turn.
 
+**One card breaks that cap and says so on its face:** ON THE FLY (`cards/kevin.md`) grants a free action *in addition* to the one for the turn. A card is allowed to be an exception to a rule when it states the exception; what it is not allowed to do is be a quiet one. On a Defense Effect it is more than an extra — a free action otherwise exists only on your own turn, so taking one while somebody else is attacking you is a thing no other card does.
+
 **Actually using a consumable or piece of gear for its mechanical effect is never free — that's Use an Item, above, and costs your Action.** Kevin throwing an incendiary orange is Use an Item: the throw's whole point is the effect it produces, not a minor gesture.
 
 ---

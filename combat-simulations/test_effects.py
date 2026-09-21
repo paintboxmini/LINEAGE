@@ -9,7 +9,10 @@ movement, Anchored not paying on the turn it is played.
     python3 test_effects.py
 """
 
+import os
 import random
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 import cards as cardlib
 import effects as fx
@@ -678,49 +681,52 @@ def test_the_load_is_the_card():
           not f.rooted and not f.vulnerable and k.load is None)
 
 
-def test_serve_hands_over_a_real_drink():
-    print('\nSERVE gives the drink and the drink does the work')
+def test_on_the_fly_is_a_second_free_action():
+    print('\nON THE FLY grants a free action on top of the one per turn')
     import engine
     pool = cardlib.by_name(cardlib.load())
+
     drinks = cardlib.load_drinks()
-    check('every written drink is readable',
+    check('every written drink is still readable',
           all(fx.compile_half(t) is not None for t in drinks.values()),
           sorted(drinks))
 
+    # Both halves grant it — the defence half is the one that matters,
+    # since a free action otherwise only exists on your own turn.
+    for half in ('effect', 'defense_effect'):
+        ops = engine.compiled(pool['ON THE FLY'], half)
+        check(f'the {half} compiles to one extra free action',
+              ops is not None and len(ops) == 1
+              and isinstance(ops[0], fx.ExtraFreeAction), ops)
+
     k = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
-    mate = Combatant('Mate', 3, 2, 4, deck=[], position=FRONT, team='party')
     foe = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
     k.hp = foe.hp = 400
-    mate.hp = 5
-    k.drinks = ['Still Water']
-    set_table([k, mate, foe])
-    engine.resolve_attack(k, foe, pool['SERVE'], None,
+    set_table([k, foe])
+    check('and none is held before it is played', k.extra_free == 0)
+    engine.resolve_attack(k, foe, pool['ON THE FLY'], None,
                           rng=random.Random(0), log=QUIET)
-    check('the ally drinks it, not the caster',
-          mate.ward == 1 and mate.hp == 8 and k.ward == 0,
-          (mate.ward, mate.hp, k.ward))
-    check('and the stock goes down', k.drinks == [], k.drinks)
+    check('one is held after', k.extra_free == 1, k.extra_free)
 
-    # On defence there is nobody to pass it to, so he drinks it himself.
+    # `rules/combat.md`, Free Actions: the cap names this card as the one
+    # thing allowed past it, so the rule and the card have to agree.
+    rules = open(os.path.join(HERE, '..', 'rules', 'combat.md'),
+                 encoding='utf-8').read()
+    check('the free-action cap names its exception',
+          'ON THE FLY' in rules and 'Capped at one per turn' in rules)
+
+    # Kevin still drinks his own with an ordinary free action; that path is
+    # play.spend_free_action, and it outlived the card that used to hand
+    # them over.
     k2 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
-    foe2 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
     k2.hp = 5
-    foe2.hp = 400
     k2.drinks = ['Still Water']
-    set_table([k2, foe2])
-    engine._run(pool['SERVE'], 'defense_effect', k2, foe2,
-                engine.Outcome.DEFENDER, 0, QUIET, random.Random(0), None)
-    check('the defence half is his own drink',
-          k2.ward == 1 and k2.hp == 8, (k2.ward, k2.hp))
-
-    k3 = Combatant('Kevin', 4, 3, 2, deck=[], position=FRONT, team='party')
-    foe3 = Combatant('Foe', 3, 3, 3, deck=[], position=FRONT, team='foes')
-    k3.hp = foe3.hp = 400
-    set_table([k3, foe3])
-    engine.resolve_attack(k3, foe3, pool['SERVE'], None,
-                          rng=random.Random(0), log=QUIET)
-    check('with no drink prepared it simply does not fire', k3.drinks == [])
-
+    set_table([k2])
+    import play
+    play.spend_free_action(k2, ('drink', 'Still Water'), QUIET)
+    check('a drink taken as a free action still works',
+          k2.ward == 1 and k2.hp == 8 and k2.drinks == [],
+          (k2.ward, k2.hp, k2.drinks))
 
 
 def test_summoned_spirits_are_objects():
@@ -1709,7 +1715,7 @@ if __name__ == '__main__':
     test_passives_are_a_zone_not_a_pile()
     test_split_attention_needs_more_than_one_thing()
     test_the_load_is_the_card()
-    test_serve_hands_over_a_real_drink()
+    test_on_the_fly_is_a_second_free_action()
     test_summoned_spirits_are_objects()
     test_lets_go_compels_the_room()
     test_kit_ai_knows_what_a_block_is_for()
