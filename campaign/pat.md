@@ -93,6 +93,8 @@ Still open:
 
 **It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).
 
+**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.*
+
 **What it does is confirm.** Family scent carries. Put Pat in a room with the bloodline and **he knows — no roll**, because the alternative is a die deciding whether the campaign's spine is findable. *Until then it tells him nothing, which is most of the year.*
 
 **The roll is for everything past yes.** How recently, how many, which way they went, whether this is the one or a cousin — that is where **Survival +2** earns its place, and it is a real check with a real failure that costs nothing load-bearing.

@@ -74,6 +74,36 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ---
 
+## The Speaker — and why a Lizardkin leads this island
+
+*Drew's, 2026-09-21. **The name is open** — the role below is what matters and the person can be called whatever suits the table.*
+
+**The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`), and everything interesting about that follows from one fact: **they were not born here.** They came, they stayed, and they out-devoted a congregation that has been at this for two centuries.
+
+**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and a Lizardkin grew up in the one culture on the continent whose single famous export is exactly that (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
+
+**They are not a cursegiver**, and the file should be read as saying so rather than leaving it hanging. Cursegiving is one family's technique held inside one bloodline. Lizardkin is a people. **The Speaker is the second thing and not the first**, and the distinction is the entire value of this thread (Pat's lead, below).
+
+### What this does not do
+
+**It does not make them a translator, and nobody should reach for that.** `quests/the-quarantined-barge.md` is explicit: *partial translation is available, full translation is not, and should not be.* The Speaker has spent decades inside the drift and understands the congregation perfectly — **and is still one voice.** The question Bartho cannot get answered is *what are you*, and the honest answer is a chord no single throat can produce (`factions-and-races/races-glasskin.md`). **A Lizardkin throat cannot produce it either.** The wall holds, unchanged.
+
+*Which is worth stating plainly, because a leader who speaks both sides looks like a key to the quarantine and is not one. What they could resolve, they are not at the Nest to resolve — they are on the island, and the barge is held two days' water away.*
+
+### Pat's lead, and why it is a dead end that is worth everything
+
+**He hears it from Corvel** (below), who has no idea he has said anything.
+
+**He follows it, because it is the first specific thing anyone has given him.** His brief was a direction and a person across four hundred islands (`campaign/pat.md`); this is an island, a role, and a people.
+
+**And the scrap says no** (`campaign/pat.md`, The scrap). **That is the point, and it is the first time the thing is ever used.** A negative from an instrument that cannot be wrong is worth more than a hit would have been this early: it proves the scrap works, it eliminates a lead honestly, and it costs the campaign's spine nothing — the search is supposed to keep failing productively across the island-hopping, and a cursegiver handed over in session three would spend the whole thread in one scene.
+
+**What he gets instead is better than a target.** The Speaker is **the first Lizardkin living among continentals that Pat has ever stood in front of** — which makes them the first person alive who can tell him anything real about why one of their own would leave that island at all. *That is the open question `factions-and-races/races-lizardkin.md` poses about the descendant, asked of somebody who actually did it.*
+
+**And they are the wrong person to threaten.** A congregation's leader, on their island, surrounded by their people, is not somebody a stranger leans on — and the Speaker has no reason to lie and no reason to help. *What they respond to is being asked properly, which is the same lesson the whole island teaches.*
+
+---
+
 ## Corvel — The Vulture's Nest Thread
 
 What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.

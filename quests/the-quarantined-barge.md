@@ -89,6 +89,10 @@ Held, not mistreated. **He speaks the common tongue**, which is why he is the on
 
 **He will tell you the diseases move by blood**, plainly, to anyone who asks him a straight question — and nobody has, because nobody has been asking what it is. They have been asking where he got it. *A party that asks the medical question instead of the smuggling question gets the answer in one conversation, and then has to make a room full of frightened people believe a prisoner.*
 
+**And there is a second thing he will hand over the same way, to the one person who would think to ask for it.** Ask Corvel about Lizardkin and he says, plainly and with no idea he has given anything, that the congregation's Speaker is one (`places/pneum.md`, The Speaker). **He is not trading it and he is not withholding it — nobody at this dock has ever had a reason to ask**, the same way nobody asked what the disease was.
+
+*That is Pat's entire lead and it costs a question* (`campaign/pat.md`). **It is also not the island's name**, which Corvel still will not give: naming a person is not naming a place, and he can see the difference even if the port cannot. **The one thing he holds back stays held.**
+
 ---
 
 ## If They Stall — Bartho's Ask

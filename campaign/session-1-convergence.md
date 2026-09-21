@@ -55,6 +55,8 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 **What he finds at Pneum is that they chose it.** Deliberate infection is communion there — *they* say disease is the Unheld asserting itself through held flesh, rarity is prestige, and the symptoms have to be *visible* or the communion doesn't count, the body as trophy case (`places/pneum.md`). Nobody did this to them. They are warm about it, communal about it, and completely sincere, and they will explain it to him patiently.
 
+**And the lead that actually pays is not the disease at all.** Ask Corvel about Lizardkin — a question nobody on that dock has any reason to ask — and he answers plainly that the congregation's Speaker is one (`places/pneum.md`, The Speaker). **Pat follows a word he misread and arrives at a real lead by accident**, which is the same misunderstanding paying out twice: once as a wrong turn, once as the right one.
+
 **They are also wrong, and this matters for Pat specifically.** The Unheld has never made anyone ill — it changes what a body is, it does not damage one (`world/the-unheld.md`). Every disease on that island is an ordinary disease. So the lesson Pat takes from Pneum is not only *cursed is what people say about anything they can't explain* — it is the harder version: **a community can be completely sincere, internally consistent, and simply mistaken about the cause of the thing happening to their own bodies.** He is hunting the cause of something that happened to *his* people generations ago, on the strength of a vision. Pneum is what that looks like from the outside.
 
 **Three things that does, all of them worth more than a real lead would have been:**
