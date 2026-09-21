@@ -102,7 +102,7 @@ On your turn, you may take one Action, plus one free action if you have one avai
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
 | Move Position | Shift between Frontline and Backline — or, if you're already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown. |
-| Use an Item | Activate an equipped or held item, or use a consumable |
+| Use an Item | Activate an equipped or held item, or use a consumable that says it costs your Action — see Free Actions, below |
 | Take Cover | Backline only; the fiction must justify it. Gain Cover Evade — a dodge roll that persists instead of being spent. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
@@ -111,7 +111,11 @@ On your turn, you may take one Action, plus one free action if you have one avai
 
 **One card breaks that cap and says so on its face:** ON THE FLY (`cards/kevin.md`) grants a free action *in addition* to the one for the turn. A card is allowed to be an exception to a rule when it states the exception; what it is not allowed to do is be a quiet one. On a Defense Effect it is more than an extra — a free action otherwise exists only on your own turn, so taking one while somebody else is attacking you is a thing no other card does.
 
-**Actually using a consumable or piece of gear for its mechanical effect is never free — that's Use an Item, above, and costs your Action.** Kevin throwing an incendiary orange is Use an Item: the throw's whole point is the effect it produces, not a minor gesture.
+**Using a consumable is a free action unless the item says otherwise.** Ruled 2026-09-21. Eating, drinking, loading a round, throwing one of Kevin's oranges, taking back one of Chris's seeds — all the same one free action, and all competing for it.
+
+**An item that costs an Action says so on itself**, and several do: Luminova Leaves and Luminova Powder both print *Use an Item — costs your Action* (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). That is the exception written where somebody using the item will actually read it, rather than a category they have to remember.
+
+*The earlier wording said the reverse — that using a consumable for its mechanical effect is never free, with the orange named as the example. It was written before Kevin's kit existed and did not survive it: a character whose whole build is prepared consumables cannot be charged an Action for each one and still have a turn. The cap is what balances them, not the price of admission — one per turn, so his reload, his drink and his grenade are all bidding for the same slot.*
 
 ---
 

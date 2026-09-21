@@ -12,7 +12,7 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
-**Use:** Single-use. +2 to next card damage or healing roll. Does not cost an Action to use.
+**Use:** Single-use. +2 to next card damage or healing roll.
 
 ---
 

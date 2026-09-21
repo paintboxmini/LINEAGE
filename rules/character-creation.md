@@ -101,7 +101,7 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 - **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
 - **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.
 
-**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
+**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure). *Consumables are the exception and go the other way: free action unless the item says it costs your Action (`rules/combat.md`, Free Actions).*
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
 
