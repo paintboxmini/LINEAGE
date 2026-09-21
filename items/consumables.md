@@ -34,8 +34,8 @@ Target follows one simple command you give them, for their next turn only.
 ---
 
 **UNIVERSAL PIN**
-*Consumable — Does not require an action to use.*
-*Price: ~20 gold (priced above the flat consumable rate — genuinely free-action, worth about a point on its own; `rules/equipment.md`, Pricing Consumables)*
+*Consumable*
+*Price: ~10 gold (one point of effect at the flat rate; `rules/equipment.md`, Pricing Consumables)*
 Fix a target in place — they cannot change position — until the start of their next turn.
 
 ---

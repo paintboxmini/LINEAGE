@@ -108,6 +108,10 @@ A consumable spends the same point once. **Price single-use items at roughly 10 
 
 The anchor is already in the world: Luminova Leaves heal 4 HP for ~10 gold, and Luminova Powder heals 8 for ~20 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
 
+**Free-action use is not a premium, because it is the default.** A consumable is used with a free action unless the item says otherwise (`rules/combat.md`, Free Actions), so it buys nothing and adds nothing to a price. Two items used to pay a point for it — the Universal Pin and the Turnroot Charm — and both were repriced down on 2026-09-21 when the default flipped. *Worth knowing how that happened: they each cited this section for a premium this section never described. A citation is supposed to be read, not just written.*
+
+**What is now unusual is an item that costs your Action**, and that is a downside rather than a feature. It does not raise a price and, all else equal, should lower one. **The anchors have not been re-cut for that** — Luminova Leaves heal 4 for ~10 gold and cost an Action, which is the same price as a one-point consumable that is free. Whether the anchor moves or the Luminova items get cheaper is a call nobody has made.
+
 **Why ten and not fifteen.** Consumables are meant to be a restock, not a rival to saving. At Tier 1 pacing a character earns about 40 gold a session (Pacing, above) — at fifteen a point, that bought two or three simple items, and a single good two-point item cost most of a session's income, which quietly made the correct play *never buy anything*. At ten, a session's earnings cover a handful of small items and a good one, and gear money is still gear money.
 
 Adjust from there for what actually happens at the table:
