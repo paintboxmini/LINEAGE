@@ -13,7 +13,7 @@
 
 *Changed 2026-09-22, and the two halves of that are one change.* Drew cut STRIKE — and **deck size equals total stats, with each colour's count equal to its stat** (`CLAUDE.md`, Derived math), so a three-card deck of one Red, one Blue and one Green is a creature with Body 1, and Body 1 is HP 6 rather than 10. *There was never a version where the card came out and the stat block stayed.*
 
-**It is also what fixed the lethality, though not by as much as a first bad sample suggested.** Three of them went from killing a character in about **one fight in five** to about **one in twenty** — a cut of roughly three and a half times, which lands on the ceiling of the budget rather than comfortably inside it (Open — the 2026-09-21 review, below). *A Collapse now happens in about one fight in eight.*
+**Between that and the defence split, the lethality is inside budget.** Three of them went from killing a character in about **one fight in five** to about **one in thirty**, with a Collapse in about one fight in ten (Open — the 2026-09-21 review, below). *The three-card rebuild did most of it and the defence split finished the job.*
 
 ---
 
@@ -37,6 +37,18 @@ They don't hunt so much as collect. A Wrackclaw doesn't need to kill what it's p
 
 **Track it out loud.** *"That's one."* Said once, at the table, when the first pull lands. That is the entire warning anybody needs, and it makes the second one something the party saw coming and chose not to prevent.
 
+### Backing off undoes it — and nothing on the table records that either
+
+*Drew, 2026-09-22, and it is the part that makes the count a decision rather than a doom clock.*
+
+**A successful pull drags the Frontline seaward. The character is still Frontline, because the line came with them.** **But if they spend their Action retreating to their own Backline, they are standing back where the line used to be** — the ground they were hauled off. *The drag is undone in the fiction and, again, no marker moves anywhere it would not have moved anyway.*
+
+**And then a Wrackclaw closes, and the whole thing resets to where it started.** Which is the right answer, not a loophole: *the crab spent a turn not attacking, the character spent a turn not attacking, and the water is exactly as far away as it was two turns ago.* **That is a fair trade and the table should be allowed to make it.**
+
+**So the count clears when the target leaves the Frontline**, and that is the whole rule. *One sentence, no subsystem, no tokens.* **A party that works out they can pull somebody back off the line has solved the card**, and they should get to — a creature this simple should have exactly one answer and it should be findable in the first fight.
+
+*Do not build machinery for any of this. It is fantasy tracking, and the rules are serving the narrative rather than the other way round — which is the only reason a two-position system can express a beach at all.*
+
 ---
 
 ## Encounter Setup
@@ -53,7 +65,8 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 |----------|-----------------|
 | Rooted | PINCH clamps a target in place — the first time most new characters feel a Move Position option actually taken away from them |
 | A clock you can see coming | CARRION PULL counts. One pull is a warning; two puts you in the water, beside the fight rather than in it (Going into the water, above) |
-| Evade | Every Wrackclaw defensive card burrows into wet sand — a defense a brand-new party has to actually fail against before they trust it's real |
+| Three defences, not one | Resist, Evade and Thorns, one per card. **The first creature the party can read**: fail against it twice and you start knowing which card is which before it is revealed |
+| Melee has a price here | CARRION PULL's Thorns chips anyone who closes. *The ranged characters do not pay it, in the fight that teaches Range* |
 | Numbers over individual threat | Each hit is small; four of them landing in the same round is not |
 
 ---
@@ -88,7 +101,20 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 
 **2. That contradicts this file's own fiction.** *"Losing a fight against Wrackclaws rarely means dying"* is written above, and the engine disagrees with it. **The fiction is the better of the two** and the cheapest fix is already in it: they are **collectors, not killers**. A Wrackclaw that has pinned something has got what it came for and stops attacking it — which would end the focus-fire on a Downed character, which is where every one of those deaths comes from.
 
-**3. Every Defense Effect is Gain Evade.** Three signature cards, one defensive outcome, so the creature never makes a defensive decision. *The line above about every card burrowing into wet sand reads as flavour for a design that is not there.* **Evade also makes a poor first lesson**: a new player wins the exchange and is told it dodged anyway, from all three cards, with no way to read which is which.
+**3. ~~Every Defense Effect is Gain Evade~~ — fixed 2026-09-22.** Drew's call on theme, and it was the right read: a pale-shelled thing that clamps on and hauls is **armoured, not quick**. **PINCH braces behind the shell (Resist). CARRION PULL keeps a claw between you and it (Thorns 1). SIDELONG SCUTTLE keeps the Evade**, because that card is literally about moving sideways and a creature is allowed one dodge if it is the one it actually has.
+
+**The split made the fight safer, which was not the point of it but is worth understanding.** Evade auto-wins the whole exchange half the time; Resist and Thorns only blunt one. Three Evades was the creature's strongest possible defensive loadout, so trading two of them for weaker ones shortens the fight and cuts the damage the party eats on the way.
+
+**Measured, 3 seeds x 1,000 fights each, three Wrackclaws:**
+
+| Defences | win | a Collapse | a death |
+|---|---|---|---|
+| ~~Evade / Evade / Evade~~ | 100.0% | 14.1% | 5.3% |
+| **Resist / Evade / Thorns 1** | 99.9% | 9.7% | **3.4%** |
+| *Resist / Evade / Armour 1* | 100.0% | 9.4% | *2.9%* |
+| *Resist / Evade / 2 back* | 100.0% | 11.3% | *3.1%* |
+
+**Thorns over the other two**, and not on the numbers, which are a wash. *It is the only one that changes how the party plays rather than how fast the crab dies* — melee attackers pay for closing and ranged ones do not, which is a second lesson about position for free, in the fight that exists to teach position. **Armour 1 is the safest and the dullest; the 2-back version is the loudest.** Either is a one-line swap.
 
 **4. The card nobody designed outclasses the three that were.** STRIKE is Body + d10 with 3 unpreventable on defence. The signatures are d4 with a mean of 3.5 to 4.5 and no damaging defence at all, so **the core filler is the most dangerous quarter of this deck**. *Measured core dice for comparison: Red Melee runs d7.00, Blue Ranged d5.47, Green Melee d5.75.* Three d4s also means the Ranged restriction on SIDELONG SCUTTLE bought nothing.
 
