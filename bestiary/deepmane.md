@@ -1,104 +1,68 @@
 # Deepmane
 
-*The deepest water in the river web, along the coral-banked reaches where the channel runs nearest the coast (`world/geography-overview.md`, River system). **Almost never seen alive by anybody**, and the exceptions are the whole point of this file.*
+*The deep water of the river web, along the coral-banked reaches where the channel runs nearest the coast (`world/geography-overview.md`, River system).*
 
-**No stat block, deliberately** — same reasoning as the Coralcoil (`bestiary/stonecoil.md`). A Deepmane at the surface is dying and will not fight; a Deepmane in its own water has never been reached. *If the party ever gets down there, that is a different creature at a different scale and it needs building then, not now.*
+**No stat block** — same reasoning as the Coralcoil (`bestiary/stonecoil.md`). *If the party ever meets one properly, that is a different creature at a different scale and it gets built then.*
+
+---
+
+## Read this before adding to this file
+
+**The sailing culture of the river web is unattributed and unwritten** (`factions-and-races/races-riverdogs.md`, To Establish) — *there is no description, no territory and no culture for the Riverdogs, and that file exists so nothing invents them by accident.*
+
+**An earlier draft of this file invented one anyway.** It had rivermen with a word for the creature, a shared superstition about what a sighting meant, a claim that no pilot had ever sounded the deep channel, and a whole practice of reading portents. **All of it was written past a guard that was already in place, and all of it is gone.**
+
+**What is below is the animal.** *Who knows about it, what they call it, what they think it means and whether they dive after it are not settled here and are not this file's to settle.*
 
 ---
 
 ## What it looks like
 
-**A ribbon.** Twenty feet is ordinary and nobody has measured a large one. Body deep and flat side-to-side and barely a hand thick front to back — it does not swim so much as **stand in the water and ripple**, head up, tail down, holding its place in the current like a held note.
+**A ribbon.** Twenty feet is ordinary. Body deep and flat side-to-side and barely a hand thick front to back — it does not swim so much as **stand in the water and ripple**, head up, tail down, holding its place in the current like a held note.
 
-**The mane is the thing you will not stop thinking about.** A dense pelt running the full length of the spine, hand-long, and it moves — combing and settling in water with no current in it at all.
+**A dense mane runs the full length of the spine.** Hand-long, and it moves — combing and settling in water with no current in it at all.
 
-***And it is the wrong colour for this world.*** Everything in the Basin keeps to a flat light — the coral itself is dusty pink and grey-green, muted rather than tropical (`places/unheld-shoreline.md`). **The mane is not.** It is saturated the way nothing here is saturated, and the shade is not fixed between individuals: scarlet, a hot orange, a blue with no grey in it. *A thing that lives where there is no light at all has come up wearing the only real colour anybody has seen.* **Nobody can explain it and nobody enjoys looking at it for long.**
+***And it is the wrong colour for this world.*** Everything in the Basin keeps to a flat light; the coral itself is dusty pink and grey-green, muted rather than tropical (`places/unheld-shoreline.md`). **The mane is not.** Saturated the way nothing here is, and not fixed between individuals: scarlet, a hot orange, a blue with no grey in it.
 
-**The head is nearly a face, and that is the problem.** Blunt and flat across the front where a fish should taper. **A beak** — two fused grinding plates, parrot-shaped, pale as old bone. And above it, set forward rather than to the sides, **two enormous eyes with a visible iris and a white around it.**
+**The head is nearly a face, and that is the problem.** Blunt and flat across the front where a fish should taper. **A beak** — two fused grinding plates, parrot-shaped, pale as old bone. Above it, set forward rather than to the sides, **two enormous eyes with a visible iris and a white around it.**
 
-**You can tell where it is looking.** That is the uncanny part and it is worth being precise about, because it is the whole horror of the animal: with almost any fish you cannot follow the gaze. With this one you can. **It turns its head, and it looks at you, and you know.**
+**You can tell where it is looking**, and that is the uncanny part. With almost any fish you cannot follow the gaze. **It turns its head, and it looks at you, and you know.**
 
 ---
 
 ## What it does
 
-**It eats the coral, and this is why the coral-banked reaches exist at all.** The beak grinds reef down to grit, the animal passes what it cannot use, and **what comes out the other end is the bed the river runs over.** The banks that shape those channels are partly made of this creature. *Nobody on the surface knows that. The reaches have been there longer than anyone has been counting.*
+**It eats the coral, and this is why the coral-banked reaches exist at all.** The beak grinds reef to grit, the animal passes what it cannot use, and **what comes out the other end is the bed the river runs over.** The banks that shape those channels are partly made of this creature.
 
-**You hear them before anything else.** Grinding carries through water and through a hull — a slow, dry crunching under the keel on a quiet stretch. **Rivermen know the sound and do not have a name for it**, because the thing that makes it is not something they have ever connected it to.
+**Grinding carries.** Through water, and through a hull.
 
-**They stay deep, and the deep is unmapped for a reason nobody would guess.** *An earlier draft of this file said river pilots do not think about depth, which is nonsense — a pilot who does not know what is under the keel grounds the boat.* **They think about it constantly.**
-
-**What a pilot sounds is the hazard.** Draft, shoals, and above all **the coral banks**, which shape the channel rather than merely lining it (`world/geography-overview.md`, River system) and will open a hull. *Those banks are known to the foot, by name, passed down.*
-
-***And the clear water between them has never had a line put in it.*** There has never been a reason: it is the part you steer for, the part that is fine, the part where the answer to *how deep* is *deep enough.* **So the deepest water in the web is the safe water, and that is exactly why nobody has ever looked at it.** *Every pilot on the continent has spent their whole working life steering carefully around the edges of a place they have no idea is inhabited.*
+**It surfaces sometimes, standing vertical** — head above the waterline, the rest hanging straight down, twenty feet of ribbon on end with the mane combing in air. **Whether that is dying, deliberate, or something else is not set** (Not Yet Set, below).
 
 ---
 
-## A standing
+## Not Yet Set — and most of it is Drew's
 
-**The riverman's word for seeing one, and it is not a word for the animal.** *"There was a standing at the Narrows."* It means the event, and it means what the event is taken to mean.
+**The big ones first, because the rest hangs off them.**
 
-**A Deepmane at the surface comes up vertical** — head above the waterline, the rest of it hanging straight down, twenty feet of ribbon standing on end with the mane combing in air. **It is already dying when it does this.** Whatever holds it together at depth does not hold here, and a standing lasts minutes to hours and ends the same way every time.
+- **Who is on this water.** The Riverdogs are a name and nothing else, and the sailing culture is theirs to be or not to be (`factions-and-races/races-riverdogs.md`). **Everything about what people know, say, or believe about this animal waits on that.**
+- **Whether anyone can go down there.** *If the river people swim — and a river people plausibly do — then the deep is not unreachable and this creature is not a mystery, it is a neighbour.* **That single answer changes the whole creature**, and an earlier draft of this file assumed the opposite without asking.
+- **Why it surfaces.** Dying, as a real oarfish does? **Deliberately, to be seen?** Something about the coral or the tide? *A creature that comes up on purpose and looks at you is a completely different animal from one that is washing up, and both are supported by what is written above.*
+- **Whether a sighting means anything.** The web keeps time with the grey water (`world/geography-overview.md`, River system), so there is a mechanism available if Drew wants one. **There is no folklore about it in this repo and there should not be until somebody owns the culture that would hold it.**
 
-**So nobody has ever caught one. People find one.**
+**Then the smaller ones.**
 
-### What it is taken to mean, and what it actually means
-
-**The web keeps time with the grey water.** Fast tide at the capital matches the Unheld's own high tide at the coast, and that correspondence is the one fixed fact in the whole river system (`world/geography-overview.md`, River system).
-
-**A standing means the clock has slipped.** The thing living deepest and nearest the threshold feels it first, and comes up. *Rivermen will tell you it means bad water coming and they will not be more specific than that, because bad water coming is genuinely as specific as anybody has got.*
-
-**They are right, and they do not know why they are right**, which is the honest shape of every piece of river lore on this continent. **Play it as superstition that happens to be load-bearing.** *A crew that turns back after a standing is not being cowardly and is not being wise. They are doing what their grandmother said.*
-
-**What a GM does with a standing is set the next thing.** It is a licence to make something at the threshold be wrong, and it does not specify what. *Use it before the Unheld does something, not after.*
-
----
-
-## What drove them up — open, and a good one
-
-**Standings have got more common. Nobody has aggregated that, because nobody aggregates river gossip**, and one crew's strange week is not a pattern until somebody sits down with twenty crews.
-
-*Whatever is happening is happening in the deepest coral reaches — which is the ground the Coil came from, and the direction the Coil went* (`places/the-coil.md`). **Those two facts are placed next to each other here and deliberately not joined up.** Drew's underwater quest is where they get joined or don't.
-
-**The party can notice the pattern long before they can reach it.** That is the useful shape: a thing they can hear about in three ports, believe, and be unable to do anything about for a very long time.
-
----
-
-## Harvesting
-
-**There is nothing to harvest and that is not an oversight.**
-
-**A beached Deepmane is already coming apart.** The flesh will not hold, the beak is the only piece that survives drying, and **the mane loses its colour within the hour** — the pelt is still there, and it comes up grey. *Every riverman has heard of somebody who kept one. Nobody has met that person.*
-
-**Which makes the beak the only Deepmane anybody owns.** Pale, fused, palm-sized, and unmistakable. **They turn up on mantelpieces and over doorways all along the web**, and what they are worth is not a price — it is a favour, a story, or a debt, from somebody who understands what it took to be standing there when it happened.
-
-### Senshi will come to a standing. He will not go down after one.
-
-**And the difference between those two is worth keeping**, because the first is a scene and the second would be a different character.
-
-**He would go to a beaching in a heartbeat.** Word arrives that there is one on a bank two days out; he closes the kitchen, and Marcus does not bother arguing. *Everything that makes him worth playing is in that trip: an hour-fresh Deepmane is the one ingredient in the world nobody has ever cooked, he is the only person alive who would even try, and he will almost certainly arrive to grey fur and a beak like everybody told him he would* (`places/capital/gilded-tusk.md`, What Senshi pays).
-
-**That is a good day at the table and it costs the campaign nothing.** *A famous cook riding out to a riverbank to look at a dead fish, and being genuinely moved by it, is a better use of him than any commission.*
-
-**The deep is not his.** He is a cook in his fifties with a restaurant. **He would fund it, provision it, and be waiting on the bank when the party surfaces** — and that is the right shape: *the person who most wants the answer is the one who physically cannot go and get it.*
-
-*If Drew wants him on the boat anyway, the version that works is him inviting himself and being a liability about it, which is funny exactly once and then has to be paid for.*
-
----
-
-## Not Yet Set
-
-- **How deep is deep.** Deliberately unmeasured — the culture has no vocabulary for depth and neither does this file.
-- **Whether they are one animal or several.** The mane colour is not fixed between individuals and nobody has enough sightings to say whether that is variation or species.
-- **What the beak is actually good for**, beyond being proof. Nobody has ground anything with one.
-- **Whether anything down there eats them.** A twenty-foot ribbon with no speed and no armour is either unthreatened or the answer is unpleasant.
-- **What a live one does when looked at.** Every account is of a dying one. *Nobody knows what the eyes are for.*
+- **How deep is deep**, and whether it is deep at all or just unvisited.
+- **Whether they are one animal or several.** The mane colour is not fixed and there is no sample to reason from.
+- **Whether the mane keeps its colour out of the water.**
+- **What the beak is worth to anybody**, including Senshi.
+- **Whether anything down there eats them.**
 
 ---
 
 ## Related Documents
 
-- `world/geography-overview.md` — River system: the circuit, the tides, the one place the web touches the Unheld, and the fact that nobody talks about depth
+- `factions-and-races/races-riverdogs.md` — **read first.** The sailing culture is unwritten and this creature should not be given one
+- `world/geography-overview.md` — River system: the circuit, the tides, and the one place the web touches the Unheld
 - `places/unheld-shoreline.md` — the coral, and the flat light the mane contradicts
 - `places/the-coil.md` — what else came out of the coral-banked reaches, and which way it went
 - `bestiary/stonecoil.md` — the Coralcoil, the other creature native to that water and also without a stat block
