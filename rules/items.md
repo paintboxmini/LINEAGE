@@ -204,17 +204,21 @@ The feral citrus the incendiary orange is made of (`flora/burnrind.md`). **Free,
 
 The Gilded Tusk runs a Naturalist Collection and the kitchen buys (`places/capital/gilded-tusk.md`). **He is the one named buyer in the world for most of these.**
 
-| Ingredient | Off | Senshi pays |
-|---|---|---|
-| Future-Lock Wasp Larvae | `bestiary/future-lock-wasp.md` | **~35 gold**, alive, within a day |
-| Bone Collector Flesh | `bestiary/bone-collector.md` | **~40 gold**, half if the casing cracked |
-| Bicolor Spider | `bestiary/bicolor-spider.md` | **none set** |
-| Emerald Frog | `bestiary/emerald-frog.md` | **none set** — and he has a standing order |
-| High-Altitude Bat | `bestiary/high-altitude-bat.md` | **none set** — his supplier works the Glasslight cliffs and won't share the contact |
-| Phantom-Tail Slug | `bestiary/phantom-tail-slug.md` | **none set** |
-| Unity Jelly | `bestiary/unity-jelly.md` | **none set** |
+**All seven rates are set** *(2026-09-22)*. Full table with the reasoning at `places/capital/gilded-tusk.md`, What Senshi pays.
 
-**Five of the seven have a named buyer, a standing demand, and no going rate.** *The retail end has numbers — Future-Lock Fricassee is 8 gold, Death-Ball Delight is 20 — so the dish is priced and the supply is not.* **That asymmetry is what decides whether "restocking is a quest" is playable or just a nice sentence.**
+| Ingredient | Off | Senshi pays | The condition *is* the price |
+|---|---|---|---|
+| Emerald Frog | `bestiary/emerald-frog.md` | **8 copper each** | none — and he takes every one, which is the problem |
+| Phantom-Tail Slug | `bestiary/phantom-tail-slug.md` | **1s 5c** | whole animal; nothing for a tail alone |
+| High-Altitude Bat | `bestiary/high-altitude-bat.md` | **2 silver** | only when his own cliff supplier is short |
+| Bicolor Spider | `bestiary/bicolor-spider.md` | **3 silver** | intact and uncompressed, or nothing |
+| Unity Jelly | `bestiary/unity-jelly.md` | **1 gold a matched pair** | two, live, separated; he will not buy one |
+| Future-Lock Wasp Larvae | `bestiary/future-lock-wasp.md` | **~35 gold** | alive, within a day |
+| Bone Collector Flesh | `bestiary/bone-collector.md` | **~40 gold** | half if the casing cracked |
+
+**Derived from his own menu rather than invented.** The naturalist mains run 6 to 9 silver, so their creatures price in silver and copper. **The two gold ingredients are the ones where delivering them is the adventure** — alive within a day, intact casing — *and transport is the thing a cook cannot do for himself, so it is what he pays for.*
+
+*The party is not being hired to find animals. It is being hired to deliver them in a state a kitchen can use.*
 
 ### Harvested materials with a price
 

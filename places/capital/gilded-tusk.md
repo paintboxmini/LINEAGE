@@ -176,6 +176,32 @@ Every night at midnight, Marcus rings a brass bell. All patrons raise a glass to
 
 ---
 
+## What Senshi pays — the standing rates
+
+*Set 2026-09-22. **Every rate carries its gate**, which is the point: the number and the condition are one thing, and a harvest that misses the condition is worth nothing rather than less.*
+
+**Derived from the menu rather than invented.** The naturalist mains run 6 to 9 silver, so their creatures are **silver-and-copper ingredients** — a kitchen pays a fraction of the plate. The two gold-priced ingredients on his book are the ones where *delivery* is the adventure, not the catching.
+
+| What he buys | He pays | And the condition is the price |
+|---|---|---|
+| **Emerald Frog** | **8 copper each, and he will take every one you bring** | No condition at all, and that is the problem. Cheap per frog and **unlimited demand** — his standing order is exactly the kind of pressure a slow-breeding population does not recover from (`bestiary/emerald-frog.md`), and nobody in his kitchen is counting that |
+| **Phantom-Tail Slug** | **1 silver 5 copper for a whole animal** | **Nothing for a tail on its own.** He considers tail-only harvest wasteful and will say so while handing it back (`bestiary/phantom-tail-slug.md`) |
+| **High-Altitude Bat** | **2 silver each** | **Only when he is actually short.** He has a supplier working the cliffs above Glasslight Reach and will not share the contact (`bestiary/high-altitude-bat.md`) — *so this is not a standing order, it is what he pays when that line is broken, and a party that asks why it is broken has found something* |
+| **Bicolor Spider** | **3 silver each** | **Intact and uncompressed, or nothing.** Bruising before the cook mixes the two profiles irreversibly (`bestiary/bicolor-spider.md`), and a crushed spider is not worth a reduced rate — it is worth no rate |
+| **Unity Jelly** | **1 gold a matched pair** | **He will not buy one.** Two live, separated the whole way, in containers that keep them apart (`bestiary/unity-jelly.md`). A single jelly is worth nothing to him because the dish is two fusing in the pot — *and Unity Broth is the one thing on his menu with no fixed price, so the ingredient has none either beyond this floor* |
+| **Future-Lock Wasp Larvae** | **~35 gold** | Alive, within a day (`items/turnroot-weald-items.md`) |
+| **Bone Collector Flesh** | **~40 gold** | **Half if the casing cracked on harvest** (`items/turnroot-weald-items.md`) |
+
+**Why two of them are gold and five are silver.** *The silver five are hard to collect. The gold two are hard to keep alive or intact on the way here* — and transport is what a cook cannot do for himself, so that is what he pays for. **A party is not being hired to find animals. It is being hired to deliver them in a state a kitchen can use.**
+
+### The Fricassee does not make money and he knows
+
+**Future-Lock Fricassee sells for 8 gold** (The Menu, above) — **the only naturalist dish priced in gold**, while the rest of the mains are 6 to 9 silver. *The larvae behind it cost him ~35 gold a delivery.*
+
+**The numbers do not close and that is not an error in them.** He keeps it on the list because he can neutralise the venom properly and almost nobody can, and **8 gold is what he thinks the dish is worth rather than what it costs him.** *A guest who works the arithmetic out loud at his counter will get the whole explanation and will not enjoy it.*
+
+---
+
 ## Senshi's Commission
 
 Senshi emerges from the kitchen once, briefly, to find the party himself. This is notable.
