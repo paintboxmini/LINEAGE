@@ -18,6 +18,10 @@
 
 **A ribbon.** Twenty feet is ordinary. Body deep and flat side-to-side and barely a hand thick front to back — it does not swim so much as **stand in the water and ripple**, head up, tail down, holding its place in the current like a held note.
 
+***And it is silver.*** **Scaled, and the scales throw light** — not a sheen, a *glitter*, the whole length of it breaking up whatever falls on it and sending it back in pieces. **Overcast does not dull this.** A flat grey sky is still a sky, and twenty feet of standing mirror will find every bit of it and flash.
+
+*Worth sitting with: **the silver does nothing where the animal lives.** There is no light down there to catch. It is a surface feature on a creature of the deep — **useless at home, and the brightest thing on the river the moment it comes up.** Whatever it is for, it is not for down there.*
+
 **A dense mane runs the full length of the spine.** Hand-long, and it moves — combing and settling in water with no current in it at all.
 
 ***And it is the wrong colour for this world.*** Everything in the Basin keeps to a flat light; the coral itself is dusty pink and grey-green, muted rather than tropical (`places/unheld-shoreline.md`). **The mane is not.** Saturated the way nothing here is, and not fixed between individuals: scarlet, a hot orange, a blue with no grey in it.
@@ -44,7 +48,7 @@
 
 **The Riverdogs feed them.** Scraps and heels of bread, over the side, the way you would feed anything. **And the Deepmanes surface over the dangerous water.**
 
-**That is the whole exchange and neither half is mysterious.** A bright thing standing up out of the river where the channel is bad is the clearest possible mark, and *the mane was already that colour before anybody thought to use it* — the Riverdogs did not make a signal, **they noticed one and started paying for it.**
+**That is the whole exchange and neither half is mysterious.** A bright thing standing up out of the river where the channel is bad is the clearest possible mark — *silver flashing under a grey sky with a scarlet mane above it, readable down a long stretch and through weather.* **And none of it was built for them.** The Riverdogs did not make a signal; **they noticed one and started paying for it.**
 
 **Which reframes the mane entirely.** It is not eerie. *It is the most useful object on the river*, and it is saturated in a world of flat light because being seen is the entire point of it.
 
@@ -65,7 +69,7 @@
 - **What happens when one is wrong**, or when a stretch goes bad faster than the animal moves.
 - **Whether every Riverdog boat gets this, or whether it is earned.** *A hungry stranger's bread working as well as a known crew's is a different world from one where it does not.*
 - **What outsiders are allowed to do.** Can a party feed one? **Would a Riverdog let them?**
-- **Whether the mane keeps its colour out of the water**, and what a dead one is worth to anybody, Senshi included.
+- **Whether the mane keeps its colour out of the water**, whether the scales keep theirs, and what a dead one is worth to anybody, Senshi included.
 - **Whether they are one animal or several.** The mane colour is not fixed between individuals.
 - **Whether anything down there eats them.**
 
