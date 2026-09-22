@@ -96,42 +96,32 @@ Two things worth knowing about that decision:
   only stops *new* ones being added. Reclaiming the old ones would mean
   rewriting history, which breaks every existing clone, and is not worth it
   for a repository this size.
-- **A player still gets a download**, just not from the file tree. Tagging
-  a version builds the sheets and attaches them to a **GitHub Release** —
-  see below. Same link to hand somebody, none of the history cost.
+- **A player still gets a download, and it comes out of a chat session**
+  (PDF format conventions, above). Drew asks, an agent builds it from the
+  markdown and hands over the file. **No release page, no tags, no CI** —
+  that path existed until 2026-09-22 and was retired unused.
 
-## Releases
+## There is no release path, deliberately
 
-**Tag a version and the sheets come out the far end as downloads.**
+**Retired 2026-09-22.** A `v*` tag used to build every PDF in CI and attach
+them to a GitHub Release, and a second shell script built the card sheets on
+their own. **Both are deleted and neither was ever used.**
 
-```
-git tag v2026.09.20
-git push origin v2026.09.20
-```
+*The reasoning behind them was sound and simply did not match the workflow:*
+the thought was that somebody without Python or Chrome needs a download, and
+a release page is how they get one. **What actually happens is that Drew asks
+in chat and gets the file back** — he has no terminal, tags and releases are
+conventions he has said he does not use, and a build he cannot trigger or
+inspect is worse than no build.
 
-`.github/workflows/print-release.yml` checks out that tag, builds every
-PDF from its own source, and attaches them to a GitHub Release. Nobody
-needs Python or Chrome on their own machine to print a deck — they need
-the release page.
+**So the repo keeps the format and not the delivery** (PDF format
+conventions, above). *If a release path is ever wanted again it is a small
+file and the history has it.*
 
-The workflow can also be run by hand from the Actions tab without tagging,
-which uploads the sheets as a build artifact (kept 30 days) and creates no
-release. That is the way to check a build before committing to a version.
-
-Two things it does that are worth knowing:
-
-- **It refuses to release from stale sheets.** The build runs with
-  `--check`, so if any HTML is out of date against the markdown the
-  workflow fails and no release is created. Regenerate, commit, re-tag.
-- **It looks at the PDFs before shipping them.** Headless Chrome can exit 0
-  and leave a stub behind, so every file is checked for a `%PDF-` header
-  and a plausible size, and the count is checked against the expected
-  eleven. A silent empty sheet is the failure this is for.
-
-**The consistency scripts in `agent-tools/` are deliberately not wired into
-it.** They are run by hand, on purpose (`CLAUDE.md`, Checking work), and a
-release gate is exactly the kind of enforcement that convention is about.
-Adding them is three lines if that changes.
+**The consistency scripts in `agent-tools/` are run by hand, on purpose**
+(`CLAUDE.md`, Checking work). *There is now nothing here that could gate on
+them even if somebody wanted it to, which is the convention holding rather
+than a gap.*
 
 ## What is here
 
@@ -141,7 +131,6 @@ Adding them is three lines if that changes.
 | `generate-cards.py` | Card sheets. **Holds the seated set lists** — which cards are in the Oracle, the expansion and each encounter set. |
 | `generate-rules-pdf.py` | `packet` and `play-reference`. |
 | `generate-sheets.py` | Character sheets. Recomputes HP, hand size, initiative and deck maximum from each stat table, so a stat change has to come back through here. |
-| `generate-pdfs.sh` | Card sheets to PDF only, with an optional output directory. `generate-all.sh` does not use it. |
 | `generate-blanks.py`, `make-grain.py` | Blank stock and the paper-grain textures in `assets/`. |
 | `assets/` | Fonts and grain textures. **Inputs, and tracked** — an asset changing makes every PDF stale, which `generate-all.sh` checks for. |
 | `*.html` | Generated, and **tracked**: they are text, they diff cheaply, and they are what the staleness check compares against. |
