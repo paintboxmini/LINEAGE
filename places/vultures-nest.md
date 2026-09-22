@@ -354,7 +354,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 **Three wrackclaws** against three starting characters: **the party wins essentially every time, somebody Collapses in about one fight in ten, and a character dies in about one in thirty** — measured 2026-09-22 across three seeds at 1,000 fights each, deck as `bestiary/wrackclaw.md` writes it and all three Frontline. *Inside the session budget of roughly one death in twenty (`rules/gm-guide.md`, Pacing Sessions).* **Four is several times as lethal and is a different encounter, not a bigger one.**
 
-*The old numbers here — one knee in six, a death in twenty — were measured off a tool that built the creature's deck illegally, and off a four-card creature that no longer exists. Both are fixed (`bestiary/wrackclaw.md`, Open).*
+*The old numbers here — one knee in six, a death in twenty — were measured off a tool that built the creature's deck illegally, and off a four-card creature that no longer exists. Both are fixed (`bestiary/wrackclaw.md`, The 2026-09-21 review).*
 
 **It teaches Range with the floor.** The fighting is out on the wet timber, so **the timber is the Frontline for both sides** and a Melee card needs both of you on it (`rules/combat.md`, Range). A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
 

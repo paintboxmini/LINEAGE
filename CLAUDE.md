@@ -112,6 +112,7 @@ When you change a card or a stat block, check what else consumes it: the seated 
 python3 agent-tools/check-references.py          # names resolve; no duplicate card names
 python3 agent-tools/check-geography.py           # directions agree with the Bearing Table
 python3 agent-tools/check-card-drift.py          # a card drafted in campaign/ matches cards/
+python3 agent-tools/list-open.py                 # every open question, in one place (inventory, exits 0)
 python3 combat-simulations/cards.py              # card counts, as a load check
 python3 combat-simulations/test_wheel.py         # initiative-shift worked cases
 python3 combat-simulations/test_invariants.py   # rules/invariants.md, Confirmed
@@ -122,7 +123,7 @@ python3 combat-simulations/effects.py           # how much card text the engine 
 python3 combat-simulations/encounter_budget.py   # how many of a creature is a fight
 ```
 
-All three `agent-tools` scripts exit 1 on a finding. None is wired into anything — run them by hand after touching names, geography, or a card that exists in both `campaign/` and `cards/`.
+**The three `check-*` scripts exit 1 on a finding. `agent-tools/list-open.py` never does** — it reads every `## Not Yet Set`, `## Open` and `## Open Hooks` section and prints them, keeping decisions-waiting apart from hooks-left-open-on-purpose. *An open question is not a fault.* None is wired into anything — run them by hand after touching names, geography, or a card that exists in both `campaign/` and `cards/`.
 
 **Measure rather than recount.** Set ratios, range splits, mean die and keyword counts are all cheap to compute and expensive to get wrong from memory. For keyword counts specifically, diff against `git show HEAD:rules/card-glossary.md` rather than recounting from scratch — the glossary excludes negations ("cannot be Resisted" is not a Resist), so a naive grep over-counts.
 

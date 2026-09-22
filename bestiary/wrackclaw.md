@@ -81,7 +81,7 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 
 ---
 
-## Open — the 2026-09-21 review
+## The 2026-09-21 review — what was found and what came of it
 
 **Measured 2026-09-21, resolved 2026-09-22.** *Findings 1–4 stand and findings 1 and 2 are now fixed by the three-card rebuild at the top of this file. Findings 5 and 6 were mine and were wrong; they are struck through rather than deleted, because the mistake is the useful part.*
 
