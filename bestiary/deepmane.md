@@ -8,11 +8,9 @@
 
 ## Read this before adding to this file
 
-**The sailing culture of the river web is unattributed and unwritten** (`factions-and-races/races-riverdogs.md`, To Establish) — *there is no description, no territory and no culture for the Riverdogs, and that file exists so nothing invents them by accident.*
+**The Riverdogs' culture is still theirs and still mostly unwritten** (`factions-and-races/races-riverdogs.md`). *An earlier draft of this file invented a sailing culture wholesale — rivermen with a use-name for this animal, a shared superstition, a practice of reading portents — past a guard that existed to prevent exactly that. All of it is gone.*
 
-**An earlier draft of this file invented one anyway.** It had rivermen with a word for the creature, a shared superstition about what a sighting meant, a claim that no pilot had ever sounded the deep channel, and a whole practice of reading portents. **All of it was written past a guard that was already in place, and all of it is gone.**
-
-**What is below is the animal.** *Who knows about it, what they call it, what they think it means and whether they dive after it are not settled here and are not this file's to settle.*
+**What Drew has set is below and it is not much: they swim, and they have an arrangement with this creature.** **Everything else about them stays unwritten on purpose** — *his note on it is that the name already tells him who they are, which is why the file is short rather than neglected.*
 
 ---
 
@@ -36,25 +34,39 @@
 
 **Grinding carries.** Through water, and through a hull.
 
-**It surfaces sometimes, standing vertical** — head above the waterline, the rest hanging straight down, twenty feet of ribbon on end with the mane combing in air. **Whether that is dying, deliberate, or something else is not set** (Not Yet Set, below).
+**It surfaces on purpose, standing vertical** — head above the waterline, the rest hanging straight down, twenty feet of ribbon on end with the mane combing in air. **It is not dying and it is not lost.** *Whatever an oarfish does, this is not that.*
+
+---
+
+## The arrangement
+
+*Drew's, 2026-09-22, and it is what the animal is for.*
+
+**The Riverdogs feed them.** Scraps and heels of bread, over the side, the way you would feed anything. **And the Deepmanes surface over the dangerous water.**
+
+**That is the whole exchange and neither half is mysterious.** A bright thing standing up out of the river where the channel is bad is the clearest possible mark, and *the mane was already that colour before anybody thought to use it* — the Riverdogs did not make a signal, **they noticed one and started paying for it.**
+
+**Which reframes the mane entirely.** It is not eerie. *It is the most useful object on the river*, and it is saturated in a world of flat light because being seen is the entire point of it.
+
+**Play the feeding as completely ordinary.** Nobody on a Riverdog boat makes a ceremony of it. **Somebody tosses bread over the side without looking up from what they are doing**, the way a person feeds a dog under a table, and twenty feet of deep-water animal comes up to take it.
+
+*An outsider watching this happen for the first time is having a much bigger experience than anybody else on the boat.*
+
+**What it means for a party.** A Deepmane standing in open water is a **danger marker**, and a party that does not know that reads it as an omen, a monster, or a wonder. **All three readings are wrong and all three are what the table will do.** *Let them be wrong. Somebody will tell them eventually, and the telling is better than the knowing.*
 
 ---
 
 ## Not Yet Set — and most of it is Drew's
 
-**The big ones first, because the rest hangs off them.**
+*~~Who is on this water~~, ~~whether anyone can go down there~~ and ~~why it surfaces~~ were the big three and Drew answered all of them on 2026-09-22: **the Riverdogs swim, and it comes up on purpose** (The arrangement, above).*
 
-- **Who is on this water.** The Riverdogs are a name and nothing else, and the sailing culture is theirs to be or not to be (`factions-and-races/races-riverdogs.md`). **Everything about what people know, say, or believe about this animal waits on that.**
-- **Whether anyone can go down there.** *If the river people swim — and a river people plausibly do — then the deep is not unreachable and this creature is not a mystery, it is a neighbour.* **That single answer changes the whole creature**, and an earlier draft of this file assumed the opposite without asking.
-- **Why it surfaces.** Dying, as a real oarfish does? **Deliberately, to be seen?** Something about the coral or the tide? *A creature that comes up on purpose and looks at you is a completely different animal from one that is washing up, and both are supported by what is written above.*
-- **Whether a sighting means anything.** The web keeps time with the grey water (`world/geography-overview.md`, River system), so there is a mechanism available if Drew wants one. **There is no folklore about it in this repo and there should not be until somebody owns the culture that would hold it.**
-
-**Then the smaller ones.**
-
-- **How deep is deep**, and whether it is deep at all or just unvisited.
-- **Whether they are one animal or several.** The mane colour is not fixed and there is no sample to reason from.
-- **Whether the mane keeps its colour out of the water.**
-- **What the beak is worth to anybody**, including Senshi.
+- **How the arrangement started.** Somebody was first. *Whether that is a story the Riverdogs tell or a thing that was always true is theirs.*
+- **How a Deepmane knows what water is dangerous to a boat.** It is not a boat and it does not draw four feet. **Something is being communicated in the other direction and nothing here says what.**
+- **What happens when one is wrong**, or when a stretch goes bad faster than the animal moves.
+- **Whether every Riverdog boat gets this, or whether it is earned.** *A hungry stranger's bread working as well as a known crew's is a different world from one where it does not.*
+- **What outsiders are allowed to do.** Can a party feed one? **Would a Riverdog let them?**
+- **Whether the mane keeps its colour out of the water**, and what a dead one is worth to anybody, Senshi included.
+- **Whether they are one animal or several.** The mane colour is not fixed between individuals.
 - **Whether anything down there eats them.**
 
 ---
