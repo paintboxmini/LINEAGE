@@ -39,6 +39,8 @@ Waterfalls drive the circuit itself — climbing and falling, the push that keep
 
 **Eclipseria sits dead centre**, where the loop is shortest and the water has the least distance to cover, so fast tide runs hardest there. Fast tide at the innermost web is the thing sailors plan around most.
 
+**And nobody talks about depth**, which is worth noticing as a gap rather than a detail. The whole vocabulary is speed — a stretch is fast or it is slow, and that is the entire conversation. *Something lives in the axis the language does not have* (`bestiary/deepmane.md`), directly beneath the busiest road on the continent, and the reason nobody has thought about it is that there has never been a word to think it in.
+
 Which is why river sailors are skilled at two different things rather than one: reading which tide a stretch is on and when it is about to turn is its own discipline, and handling a vessel through water that can change speed underneath it is another. Knowing the water and working it are both real skill, not the same skill twice.
 
 ---

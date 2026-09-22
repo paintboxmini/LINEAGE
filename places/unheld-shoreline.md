@@ -25,6 +25,7 @@ A river runs down to meet the water here, and the outcroppings form a **cave ent
 - **Wrackclaw** (`bestiary/wrackclaw.md`, CTR 4) — a swarm of small scavengers working the riverbank and just past it. They read anything freshly arrived the way they read anything else freshly dead.
 - **Hullback** (`bestiary/hullback.md`, CTR 17) — solitary and much older, holding the rock outcroppings cave in the river. It wins by patience, not pursuit, which is why it keeps the high ground and the cover inland of the tideline rather than the open sand. Years of accumulated salvage are packed into the rocks it's called home.
 - **Flapjack Octopus** (`bestiary/flapjack-octopus.md`) — works the coral shelves. One dart of movement, then gone. Not tied to this water specifically.
+- **Deepmane** (`bestiary/deepmane.md`) — *not here, and that is the point.* Far below, along the same coral, grinding reef into the grit the channel beds are made of. **The only time anybody sees one it is dying at the surface**, and rivermen read that as bad water coming.
 
 ## Inland
 
