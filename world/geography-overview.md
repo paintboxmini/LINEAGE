@@ -39,7 +39,7 @@ Waterfalls drive the circuit itself — climbing and falling, the push that keep
 
 **Eclipseria sits dead centre**, where the loop is shortest and the water has the least distance to cover, so fast tide runs hardest there. Fast tide at the innermost web is the thing sailors plan around most.
 
-**And nobody talks about depth**, which is worth noticing as a gap rather than a detail. The whole vocabulary is speed — a stretch is fast or it is slow, and that is the entire conversation. *Something lives in the axis the language does not have* (`bestiary/deepmane.md`), directly beneath the busiest road on the continent, and the reason nobody has thought about it is that there has never been a word to think it in.
+**"Nobody talks about depth" above means nobody talks about depth *when they talk about tide*** — the water level barely moves, so depth is not what the word is for here. *It is not a claim that river pilots are ignorant of depth, which would be absurd: a pilot who does not know what is under the keel grounds the boat.* **What they sound is the hazard.** Draft, shoals, and the coral banks that shape a channel are known to the foot and passed down. **The clear water between the banks is the part nobody has ever put a line into**, because there has never been a reason to — *the deepest water in the web is the safe part, and that is exactly why it is unmapped* (`bestiary/deepmane.md`).
 
 Which is why river sailors are skilled at two different things rather than one: reading which tide a stretch is on and when it is about to turn is its own discipline, and handling a vessel through water that can change speed underneath it is another. Knowing the water and working it are both real skill, not the same skill twice.
 

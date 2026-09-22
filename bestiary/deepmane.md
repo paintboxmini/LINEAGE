@@ -26,7 +26,11 @@
 
 **You hear them before anything else.** Grinding carries through water and through a hull — a slow, dry crunching under the keel on a quiet stretch. **Rivermen know the sound and do not have a name for it**, because the thing that makes it is not something they have ever connected it to.
 
-**They stay deep, and depth is the one dimension nobody here thinks in.** The whole continent talks in fast tide and slow tide; *nobody talks about depth* (`world/geography-overview.md`, River system). **So an animal that lives in the one axis the culture does not have a vocabulary for has been directly beneath the busiest road on the continent the entire time.**
+**They stay deep, and the deep is unmapped for a reason nobody would guess.** *An earlier draft of this file said river pilots do not think about depth, which is nonsense — a pilot who does not know what is under the keel grounds the boat.* **They think about it constantly.**
+
+**What a pilot sounds is the hazard.** Draft, shoals, and above all **the coral banks**, which shape the channel rather than merely lining it (`world/geography-overview.md`, River system) and will open a hull. *Those banks are known to the foot, by name, passed down.*
+
+***And the clear water between them has never had a line put in it.*** There has never been a reason: it is the part you steer for, the part that is fine, the part where the answer to *how deep* is *deep enough.* **So the deepest water in the web is the safe water, and that is exactly why nobody has ever looked at it.** *Every pilot on the continent has spent their whole working life steering carefully around the edges of a place they have no idea is inhabited.*
 
 ---
 
@@ -68,7 +72,17 @@
 
 **Which makes the beak the only Deepmane anybody owns.** Pale, fused, palm-sized, and unmistakable. **They turn up on mantelpieces and over doorways all along the web**, and what they are worth is not a price — it is a favour, a story, or a debt, from somebody who understands what it took to be standing there when it happened.
 
-*If Senshi ever hears one is on a beach, he will want it and he will be told what everyone is told: it will be nothing by the time it reaches you. **He would go himself.** Whether the kitchen could do anything with an hour-fresh one is exactly the kind of question he considers worth a two-day trip (`places/capital/gilded-tusk.md`).*
+### Senshi will come to a standing. He will not go down after one.
+
+**And the difference between those two is worth keeping**, because the first is a scene and the second would be a different character.
+
+**He would go to a beaching in a heartbeat.** Word arrives that there is one on a bank two days out; he closes the kitchen, and Marcus does not bother arguing. *Everything that makes him worth playing is in that trip: an hour-fresh Deepmane is the one ingredient in the world nobody has ever cooked, he is the only person alive who would even try, and he will almost certainly arrive to grey fur and a beak like everybody told him he would* (`places/capital/gilded-tusk.md`, What Senshi pays).
+
+**That is a good day at the table and it costs the campaign nothing.** *A famous cook riding out to a riverbank to look at a dead fish, and being genuinely moved by it, is a better use of him than any commission.*
+
+**The deep is not his.** He is a cook in his fifties with a restaurant. **He would fund it, provision it, and be waiting on the bank when the party surfaces** — and that is the right shape: *the person who most wants the answer is the one who physically cannot go and get it.*
+
+*If Drew wants him on the boat anyway, the version that works is him inviting himself and being a liability about it, which is funny exactly once and then has to be paid for.*
 
 ---
 
