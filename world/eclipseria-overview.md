@@ -2,15 +2,15 @@
 
 An overcast world in flux. A yellow haze sits over the continent, the cloud ceiling is almost never off it, and what comes through is tinted wrong.
 
-**The light is flat, not dim, and the difference matters more than anything else on this page** *(corrected 2026-09-22 — this used to say midday was full twilight, and that one phrase has been quietly draining the colour out of everything written since)*. **An overcast sky is a light source, not a lid.** Midday outdoors is bright — bright enough to read by, bright enough to hurt to look up into, bright enough that stepping inside means waiting for your eyes. **What it has none of is direction.** No shadows to speak of, no warmth, no glare off one side of a street and shade on the other. Everything is lit evenly and from everywhere, and the yellow in the haze sits on all of it at once.
+**The weather is ordinary overcast.** Not twilight, not gloom, not a lid — the sky most days is the sky of a grey afternoon anywhere, and it behaves like one. **There is plenty of light.** Midday outdoors is bright enough to read by, bright enough to hurt to look up into, bright enough that stepping indoors means standing still for a second while your eyes catch up. **And there are plenty of shadows.** Under the eaves, down the alley, beneath the hull, behind the person in front of you. The world has depth in it and things can hide in it.
 
-**Which means this world is not a dark world. It is a colourless one**, and those are not the same, and the second is stranger. *A thing that is genuinely bright here — a Luminova leaf, a saturated mane, a run of wet silver — does not have to fight the dark for attention. It has to fight a sky that is already washing everything out, and it wins, and the winning is visible for a very long way.*
+What is off is the *colour*. The yellow in the haze sits on everything at once and pulls it toward the same tired middle. **So this is not a dark world. It is a washed-out one**, and those are not the same, and the second is stranger. *A thing that is genuinely bright here — a Luminova leaf, a saturated mane, a run of wet silver — is not fighting the dark for attention. It is fighting a sky that has already drained everything around it, and it wins, and the winning is visible for a very long way.*
 
-**By nightfall it is pitch black**, and the contrast is the point: a day with no shadows in it at all, and then a night with nothing else.
+**By nightfall it is pitch black**, and the contrast is the point: a day you can see clear across, and then a night you cannot.
 
 And it rains. **A slow drizzle, most days, most hours** — sometimes a mist that does not seem to be falling so much as hanging there, and **a real downpour is rare** enough to stop conversation. Everything is a little damp; everyone has either made peace with that or learned how to adapt.
 
-*The wet is half the look.* **Drizzle and mist scatter light rather than swallowing it**, so the air itself glows faintly grey and distance goes soft. And **everything wet shines** — stone, timber, rope, leaves, a coat, a face. *A world with no shadows and a permanent sheen on every surface is a very specific and very legible place to be, and it is not gloom.*
+*The wet is half the look.* **Drizzle and mist scatter light rather than swallowing it**, so the air itself glows faintly grey and distance goes soft. And **everything wet shines** — stone, timber, rope, leaves, a coat, a face. **It is dreary. It is not dim.**
 
 The world was born dying. This is not decline and not a curse, it is the founding condition. Reality here was wounded into holding, and those wounds have never closed, because a closed wound holds nothing open. Nothing here can be saved in the sense of being made permanent. It can only be held open longer.
 

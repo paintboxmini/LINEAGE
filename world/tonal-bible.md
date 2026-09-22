@@ -2,9 +2,11 @@
 
 The aesthetic and emotional registers this world reaches for. Read this before building anything that needs to feel right.
 
-**Use it as a palette, not a filter** *(added 2026-09-22, at Drew's call that this document was too restrictive)*. **Counted honestly, it ran nine dark-register words to every warm one**, four of its sections were about what not to do, and *Delicious in Dungeon* — the reference that carries the warmth — got a single line while self-inflicted suffering got a paragraph. **A reader coming to this cold would conclude the world is unrelieved, and it is not.** That imbalance leaked: a companion writing to this brief reaches for muted, drained and dulled every time, because that is what the document weights.
+**Use it as a palette, not a filter.** Everything below is a register this world can reach for. None of it is a mandatory wash to put over a scene before the scene is allowed to exist.
 
-**The dark registers below are all correct and none of them are going anywhere.** What follows them now is the other half, which was always in the world and was never written down.
+**The dark registers are all correct and none of them are going anywhere.** They are also not the whole list, and a document that only names them will produce a world that is only them.
+
+**This world is broken. That does not make it empty.** Broken means the founding wound never closed and nothing here can be made permanent — it does not mean the place has been stripped of everything not explicitly itemised on this page. *Touching moments, wonder, awe, and a little whimsy are all native here.* A world where things cannot be kept is a world where the moments that land, land harder.
 
 Eldritch horror - Things that operate by their own consistent internal logic, indifferent to human frameworks. The horror isn't randomness — it's comprehension. The moment you start to understand is the dangerous moment. Cosmic scale doesn't mean cosmic despair. It means the world was never organized around you.
 
@@ -18,7 +20,18 @@ Pan's Labyrinth — The mythic breaking through into the brutal. Sacrifice with 
 
 The Dark Crystal — Ancient civilizations with their own complete logic. The world feels like it was there before you arrived. Alien beauty. Dignity in strangeness. Things that aren't human and don't need to be.
 
-Made in Abyss, Fullmetal Alchemist, Howl's Moving Castle, Spirited Away, Princess Mononoke, Grimgar of Fantasy and Ash, Re:Zero.
+### The ones that hold the brightness
+
+*Drew's own readings, in his terms. They carry the half of the tone the dark references cannot.*
+
+**Made in Abyss** — comradeship, discovery, wonder and awe, all four at once and all four serious. It is not that the horror is offset by the wonder; the descent *is* the wonder, and that is why the horror works. **Comradeship is a serious theme here, not a warm-up to the real material.**
+
+**Howl's Moving Castle** — *keeping the wonder alive by refusing to explain.* The castle does not get a mechanism. **An explanation is a cost, and it is often not worth paying.** When something in this world is marvellous, the instinct to write down how it functions is the instinct to spend it.
+
+**Spirited Away** — **the world is conspiring in your favour.** Read straight: the "antagonist" witch is a grandmother getting her granddaughter ready for adulthood, the boilerman is obviously the grandfather, and the whole story is a fantasy retelling of a child's visit to her grandparents' house. *The place where tired spirits go.* Hard work, strange rules, someone gruff who feeds you anyway, and you come out older. **A place in Eclipseria is allowed to be that** — demanding, unexplained, and on your side.
+
+**Fullmetal Alchemist, Princess Mononoke, Grimgar of Fantasy and Ash** — still on the list, not yet explained. Don't write a reading into them on Drew's behalf.
+
 
 ## What This World Reaches For
 
@@ -46,7 +59,7 @@ The most disturbing thread in this world isn't external monsters — it's what i
 
 **None of that is a break from the horror. It is the same world, doing the other thing it does.** *A place where the Unheld unmakes people and where a woman gives you bread for nothing is not two settings stapled together — it is one setting with people in it.*
 
-**Write the kindness at the same resolution as the cost.** The repo's failure mode has been the reverse: suffering gets three paragraphs of careful mechanism and generosity gets a sentence. *If a scene has somebody being decent in it, that is not the throwaway. That is frequently the load-bearing part, and the reason the dark beats land at all is that the table has something to lose.*
+**Write the kindness at the same resolution as the cost.** Suffering tends to arrive with three paragraphs of careful mechanism and generosity with a sentence; even it up. *If a scene has somebody being decent in it, that is not the throwaway. That is frequently the load-bearing part, and the reason the dark beats land at all is that the table has something to lose.*
 
 The child's logic has access the adult doesn't.
 Things that seem inexplicable from a rational frame are obvious from a mythic one. Build locations and creatures that reward this kind of reading.
@@ -59,7 +72,7 @@ Not heroic fantasy. The world is not organized around the protagonist's journey.
 
 Not Lovecraftian despair. The unknowable here is strange and vast and indifferent — but it is not defeating. It can be navigated. Occasionally befriended. Always respected.
 
-Not *unrooted* whimsy — **and this line used to just say "not whimsy", which was wrong and was doing damage** *(revised 2026-09-22)*. The thing to avoid is lightness with nothing under it, and strangeness performed for charm. **Lightness that comes out of how the world actually works is not the enemy; it is most of what makes the place liveable.** *An unmanned stall in the Vulture's Nest market where people leave coin and take buttons, and nobody knows whose it is, and it is always stocked — that is funny, and it is also a complete argument about how that town works.* If something is odd, it should be odd because the world made it that way. **It is allowed to be delightful about it.**
+Not *unrooted* whimsy. **Whimsy itself is fine and this world has room for it.** The thing to avoid is lightness with nothing under it, and strangeness performed for charm. **Lightness that comes out of how the world actually works is not the enemy; it is most of what makes the place liveable.** *An unmanned stall in the Vulture's Nest market where people leave coin and take buttons, and nobody knows whose it is, and it is always stocked — that is funny, and it is also a complete argument about how that town works.* If something is odd, it should be odd because the world made it that way. **It is allowed to be delightful about it.**
 
 ## Key Registers
 
@@ -71,3 +84,7 @@ When content lands right, it usually hits one or more of these:
 - Alien beauty — things that are remarkable, operating by rules you don't share
 - **The ordinary decency that costs somebody something** — a person doing a small kind thing, unremarked, in a world that will not pay them back for it
 - **Delight with roots** — the funny or lovely detail that turns out to be an argument about how a place works
+- **Wonder, unexplained** — something marvellous that the text declines to account for, and is better for declining
+- **Awe at scale** — the moment the size or age of a thing lands and nobody says anything for a second
+- **The world conspiring in your favour** — a place that is demanding and strange and, underneath it, on your side
+- **Comradeship** — the party being glad of each other, at full weight, not as a breather between fights
