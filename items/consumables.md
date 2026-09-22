@@ -7,8 +7,10 @@ General use items without a fixed location source. Sources and availability left
 **TERRORMITE CAPSULE**
 *Consumable*
 *Price: ~17 gold*
-Gain Armour 1 and your attacks deal +1d6 damage.
+Gain Armour 1 and your attacks deal +1d6 damage, for the rest of the combat.
 End of combat: Shuffle 2 Wound cards into your deck.
+
+*Flagged 2026-09-22, not repriced.* **This is the least defensible number in the catalog.** Armour 1 is one point and the rest of it is an unbounded +1d6 on every attack for a whole fight — at the flat rate of 10 a point that is not seventeen gold, and the duration was not stated at all until today. *The two Wound cards are a real cost and the reason it might survive review; whether they are worth the discount is Drew's call.*
 
 ---
 

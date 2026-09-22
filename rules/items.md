@@ -56,6 +56,7 @@ Three questions the table actually needs to answer, in this order:
 
 **Equipment**
 - **Rusted Armor** — 5 temp HP, breaks when spent or removed. ~13 gold. *Source: The Floating Gallery.*
+- **Tollworn Plate** *(Armor, Tier 1)* — Armour 1. ~200 gold. *Source: Seeker's Price.* **The campaign's first real equipment**, placed one session ahead of when anyone could afford it, one only, party picks the wearer (`quests/turnroot-weald-adventure.md`). *Found gear, off the curve.*
 - **Spider Silk Rope** — 50 ft, stronger than hemp, doesn't fray. ~50 gold. *Source: The Bone Collector.*
 
 **Harvested Materials**
@@ -112,6 +113,12 @@ Three questions the table actually needs to answer, in this order:
 - **Warding Harness** — Armor, start combat with Evade and Protect 1. ~200 gold.
 - **Blind Edge** *(display, Tier 2)* — +1 damage; once/combat on clean win, Blind. ~800 gold.
 - **Thorned Cuirass** *(display, Tier 2)* — Armour 1; start combat with Thorns 1. ~800 gold.
+- **Counterweight Maul** *(Tier 2)* — the one the Vetches sell more of than everything else on this counter combined. ~800 gold.
+- **Second Skin** *(Tier 2 armor)* — scale that reads as cloth at four paces; two hours to get into properly. ~800 gold.
+- **The Long Argument** *(Tier 3 weapon, back room)* — a duellist's blade with a notch the Vetches were asked not to grind out. ~2,000 gold.
+- **Anvil Coat** *(Tier 3 armor, back room)* — the heaviest thing on the wall and the only piece here they made entirely themselves. ~2,000 gold.
+
+*The four above were missing from this list until 2026-09-22, which mattered because the paragraph under Where To Buy calls this the only counter in the world that stocks the whole ladder — and the list was showing two rungs of four. **The whole ladder is the point of the Vetches**; a catalog that shows Tier 1 and half of Tier 2 undersells the one shop the gold pacing was built against.*
 
 **Marketplace — Nessa Coil (Crossroads Sundries)**
 - Regional resale at markup: Luminova Leaves/Powder, Echothorn Seed, Sap Vial, Nest dock goods, Barbed Wrap. Source files keep the lower price; she charges the capital column in `items/capital-items.md`.
@@ -168,6 +175,59 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 **FourthEye** — *Full entry: `items/fourtheye.md`.* A dose costs ~40 gold under Giblets's counter. One true vision of a real place minutes before it is occupied or minutes after it is vacated, never during; in combat, Scry 3 on any deck and a permanent FOURTHEYE curse card (`rules/card-glossary.md`).
 
 **The exception is deliberate and it is the only one.** Every other Bazaar transaction refuses coin as a matter of principle — a card is experience, so it costs experience. FourthEye is sold for money, by the gram, to anyone. That is not an inconsistency in the Bazaar's economy; it is the sign that the thing does not belong to the Bazaar's economy at all. It comes up the tunnels from outside (`factions-and-races/the-cellar-custodians.md`, `bestiary/ocellus.md`) and it is priced the way an outside operation prices things. If a party notices that one stall takes gold when nothing else here will, they have found the thread.
+
+---
+
+## Ingredients — the list, and why almost none of them have a price
+
+**Nothing here is on the consumable scale and that is the rule rather than an omission** (`rules/equipment.md`, Pricing Consumables): *ingredients and crafting materials are priced by what a buyer will pay, not by what the thing you make does.* **So an ingredient gets a number only when somebody with a name is buying**, and most of these have no such person yet.
+
+*Inventoried 2026-09-22 across `bestiary/`, `flora/` and `items/`.*
+
+### Kevin's seasonings — the five loads
+
+| Ingredient | Off | Gate | Price |
+|---|---|---|---|
+| Sapphire crystal | Sapphire Ant (`bestiary/sapphire-ant.md`) | **bought** | **2 copper** at Senshi's counter |
+| Cinder flake | Scorchback Beetle (`bestiary/scorchback-beetle.md`) | dangerous to harvest | **none set** |
+| Hush petal | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
+| Spinstone grind | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
+| Bellows dust | Blowback Beetle (`bestiary/blowback-beetle.md`) | has to be beaten in a fight | **none set** |
+
+**Four of the five have no number, and the fifth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and hush petal, and there is no rate for any of it if the party ever wants to sell instead of cook.*
+
+### Burnrind — correctly worth nothing
+
+The feral citrus the incendiary orange is made of (`flora/burnrind.md`). **Free, legal, lying on the ground, and unsellable**, because nobody who is not doing what Kevin does with it wants any. *Gated by needing a spoil bank that burned last season, which is a question you ask a person rather than a price you pay.*
+
+### Senshi's menu — seven ingredients, two rates
+
+The Gilded Tusk runs a Naturalist Collection and the kitchen buys (`places/capital/gilded-tusk.md`). **He is the one named buyer in the world for most of these.**
+
+| Ingredient | Off | Senshi pays |
+|---|---|---|
+| Future-Lock Wasp Larvae | `bestiary/future-lock-wasp.md` | **~35 gold**, alive, within a day |
+| Bone Collector Flesh | `bestiary/bone-collector.md` | **~40 gold**, half if the casing cracked |
+| Bicolor Spider | `bestiary/bicolor-spider.md` | **none set** |
+| Emerald Frog | `bestiary/emerald-frog.md` | **none set** — and he has a standing order |
+| High-Altitude Bat | `bestiary/high-altitude-bat.md` | **none set** — his supplier works the Glasslight cliffs and won't share the contact |
+| Phantom-Tail Slug | `bestiary/phantom-tail-slug.md` | **none set** |
+| Unity Jelly | `bestiary/unity-jelly.md` | **none set** |
+
+**Five of the seven have a named buyer, a standing demand, and no going rate.** *The retail end has numbers — Future-Lock Fricassee is 8 gold, Death-Ball Delight is 20 — so the dish is priced and the supply is not.* **That asymmetry is what decides whether "restocking is a quest" is playable or just a nice sentence.**
+
+### Harvested materials with a price
+
+| Material | Off | Price |
+|---|---|---|
+| Root Fibers | Rootstalker, common | ~15 gold a strand |
+| Rootstalker Core | Rootstalker, very rare | ~60 gold — *a crafting ingredient, not on the consumable scale* |
+| Sap Vial | Rootstalker, rare | ~17 gold *(a finished consumable rather than a material)* |
+| Echothorn Seed | Black Thorn Vine (`flora/black-thorn-vine.md`) | ~20 gold *(finished; the seed is priced, nothing in it is priced for the vine)* |
+
+### Flora with a trade and no number, deliberately
+
+**Greenpitch** off Dock Beard — *"what it is called once anybody is paying for it"* — plus **hardrun** cordage, **stiltwood** boat timber and whatever **siftreed** comes up holding (`flora/`). **All of these have a working market and none has a gold figure**, which is correct: a rope is worth what a rope is worth (`rules/equipment.md`). *Daycress has no price because it cannot travel, and waymoss has none because it has no use at all.*
 
 ---
 
