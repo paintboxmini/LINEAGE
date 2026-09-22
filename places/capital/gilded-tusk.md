@@ -194,11 +194,15 @@ Every night at midnight, Marcus rings a brass bell. All patrons raise a glass to
 
 **Why two of them are gold and five are silver.** *The silver five are hard to collect. The gold two are hard to keep alive or intact on the way here* — and transport is what a cook cannot do for himself, so that is what he pays for. **A party is not being hired to find animals. It is being hired to deliver them in a state a kitchen can use.**
 
-### The Fricassee does not make money and he knows
+### The Fricassee loses money and he is delighted to pay it
 
 **Future-Lock Fricassee sells for 8 gold** (The Menu, above) — **the only naturalist dish priced in gold**, while the rest of the mains are 6 to 9 silver. *The larvae behind it cost him ~35 gold a delivery.*
 
-**The numbers do not close and that is not an error in them.** He keeps it on the list because he can neutralise the venom properly and almost nobody can, and **8 gold is what he thinks the dish is worth rather than what it costs him.** *A guest who works the arithmetic out loud at his counter will get the whole explanation and will not enjoy it.*
+**The numbers do not close, he knows exactly by how much, and he is not trying to fix it** *(Drew, 2026-09-22)*. **He is not in this for the margin.** The venom has to be neutralised properly or the dish prevents magical transformation for a day, almost nobody can do it, and **he can.** *The chance to prepare that and set it in front of somebody is worth a few gold of his own money, and he would think you had misunderstood the question if you suggested otherwise.*
+
+**So 8 gold is not a price. It is what he thinks a person should have to pay to eat it**, arrived at with no reference to what it cost him to make.
+
+*This is the key to the whole Naturalist Collection and it should be read back into every other rate on this page. He is not a merchant with a sideline in strange animals. **He is an enthusiast running a menu at the edge of what a kitchen can do**, and the reason he pays properly for a matched pair of jellies or an unbruised spider is that a compromised ingredient means he does not get to cook the thing — which is the only loss on this page he actually minds.*
 
 ---
 

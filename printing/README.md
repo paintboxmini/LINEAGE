@@ -27,6 +27,54 @@ Without Chrome the HTML still regenerates and the script says which PDFs it
 could not build, exiting 2. The HTML sheets print acceptably from a browser
 if you need a sheet and have no Chrome to script.
 
+## PDF format conventions — the part the repo actually needs to keep
+
+**Drew's workflow, stated 2026-09-22: the PDFs get generated in chat, not here.** He is on a phone and has no terminal, so `./generate-all.sh` is something an agent runs, never him. **What this repo has to preserve is the recipe**, so that a PDF built in a chat session six months from now comes out looking like the ones built today.
+
+*Everything below is the recipe. None of it needs a shell to read.*
+
+### Which generator makes what
+
+| Generator | Produces | From |
+|---|---|---|
+| `generate-cards.py` | the card sheets, 3×3 to a page for sleeves | `cards/`, seated set lists in the script |
+| `generate-sheets.py` | `character-sheets.html` | `characters/` |
+| `generate-rules-pdf.py` | any `rules/*.md` as a flowing document | `rules/` |
+| `generate-blanks.py` | blank card stock | nothing — it is geometry |
+| `make-grain.py` | the paper texture, once | nothing — it is noise |
+
+**`generate-rules-pdf.py` takes a bare filename** and will take a stem as well — the items catalog answers to either spelling.
+
+### Print settings — these three, every time
+
+**Margins = None. Background graphics = On. Scale = 100%.** *The script prints them on every run for a reason: background graphics off loses every card border and the paper texture, and any scale but 100% breaks the sleeve fit that `card-styling-notes.md` measured.*
+
+### The headless Chrome invocation
+
+```
+CHROME=/opt/pw-browsers/chromium-1194/chrome-linux/chrome
+
+"$CHROME" --headless --disable-gpu --no-sandbox \
+    --no-pdf-header-footer \
+    --print-to-pdf=OUT.pdf "file://ABSOLUTE/PATH/IN.html"
+```
+
+**`--no-pdf-header-footer` is not optional** — without it every page gets a URL and a date printed into the margin, which is exactly the margin the card geometry needs.
+
+*It writes an SSL handshake error to stderr and produces a correct PDF anyway. Ignore it.*
+
+### Two traps, both hit for real
+
+**`generate-rules-pdf.py` writes its HTML next to itself, not next to your working directory.** Run it from anywhere and the output lands in `printing/`. *This dropped a stray `items.html` into the repo on 2026-09-22.* **Generate into a scratch directory and move the output there before doing anything else**, or check `git status` after.
+
+**Nothing generated for chat belongs in the repo.** The tracked HTML in this folder is the format, regenerated from the markdown by the scripts above. A one-off catalog or a single rules document built for somebody to read is output, and it goes to the person rather than into the tree.
+
+### What the tracked HTML is for
+
+**The 15 HTML files in this folder are the conventions, in executable form.** They are derived from the markdown and they are in git so that a change to a card is visible as a change to the sheet that prints it. *That is also what `./generate-all.sh` is really for — not the PDFs. Reasoning about which sheets should have moved after a rules edit has failed three times out of three, and rebuilding everything and diffing has caught it three out of three.* **The staleness check is the load-bearing half of that script and it does not need Chrome.**
+
+---
+
 ## The PDFs are not in git
 
 **They are build output.** `.gitignore` excludes `printing/*.pdf`, and
