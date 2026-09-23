@@ -18,6 +18,16 @@ They are also masons in the ordinary sense, and among the finest alive at it. Th
 
 - The whole method assumes a threshold: something that holds still long enough to be measured, cut against, and checked on later. Everything the order knows how to do rests on that assumption. Where it doesn't hold, they have nothing (see The Coil, below).
 
+## What They Believe
+
+**The Three Cuts are the order's creed** (`factions-and-races/the-masons-three-cuts.md`). Before anything Held there was the Unheld, and an edge called the Knife wounded reality into holding three times — Name, which made a thing legible; Price, which made it costly to keep; Distance, which kept it from swallowing everything else. Where the Cuts hold, reality persists. Where one thins, the Unheld presses close.
+
+**The creed and the trade are the same object.** A Mason finds a seam where something presses on held reality — Distance giving. Cuts a glyph to force a legible shape onto it — Name. Walks the rotation forever, because a glyph fades and nothing stays held without being paid for continuously — Price. Ask a Mason whether the doctrine explains the work or the work explains the doctrine and you will not get a useful answer, because inside the order the question has never come up.
+
+**This is not the world's official cosmology, and the world does not have one.** The Cuts are what one small order believes, held with total conviction, taught to every apprentice, and never once demonstrated to anybody outside. Other peoples have other accounts of the same events — the Lizardkin Tithe rhymes with Price without deriving from it (`factions-and-races/races-lizardkin.md`), Apnea calls the thinness *Out There* and leaves it there (`places/apnea.md`), and the People of Promise worship their way toward something the Masons would describe entirely differently. **Nobody is in a position to check.** The Masons don't argue about it. They don't proselytise, they don't correct anyone, and they have never made the case in public — which is one more reason the superstitions below have had a free run.
+
+**What the doctrine does not do is give them certainty about anything specific.** It tells them what a seam is. It does not tell them what is on the other side of one, and the order is entirely comfortable never finding out.
+
 ## How They're Seen
 
 **Common knowledge, uncommon specifics.** Everyone has heard of the Masons. Everyone knows they cut glyphs into stone, that they turn up unannounced, and that they don't explain themselves. Almost nobody knows what a given glyph is for, how the order picks where to work, who pays for it, whether anyone pays for it, or how many Masons there are. That gap is wide, old, and has never once been filled by somebody in a position to fill it — which is where the superstitions grow, and why they've had centuries to get elaborate.

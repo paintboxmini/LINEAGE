@@ -18,7 +18,7 @@ That proximity is the whole history. The Lizardkin island was small, the river's
 
 Their religion, and a grounded one once put plainly: you take from the river, so you give back to the river, or eventually there's nothing left to take. Ritual payment — catch, or something dearer when the catch wasn't enough — kept that reciprocity honest.
 
-It rhymes with the cosmology's own Price (`world/creation-myth-the-three-cuts.md`, The Second Cut) without being it: a culture that built an explicit practice around something everyone else pays without noticing.
+It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`, The Second Cut) without deriving from it, and neither order knows the other's business: a culture that built an explicit practice around something everyone else pays without noticing.
 
 **It is not why the cursegiver could do what she did.** That was one person, once, in extremity. The Tithe is what an entire people do every season, and it sits closer to real-world river stewardship than to cosmological theology. Worth keeping as thematic rhyme, not as mechanism.
 
@@ -34,7 +34,7 @@ It rhymes with the cosmology's own Price (`world/creation-myth-the-three-cuts.md
 
 **One family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving is a learned skill that a single Lizardkin family has passed down for as long as anyone has been counting, taught to their own and to nobody else.
 
-**The cost is what keeps it rare.** A curse laid this way takes the caster's existence, not their life in the ordinary sense — the Price anchoring them comes off and lands on the target instead (`world/creation-myth-the-three-cuts.md`, The Second Cut). One curse, one person, gone. Not killed. Unmade, as though never Cut at all.
+**The cost is what keeps it rare.** A curse laid this way takes the caster's existence, not their life in the ordinary sense — whatever was holding them in the world comes off and lands on the target instead. One curse, one person, gone. Not killed. Unmade, as though never Cut at all.
 
 So a family that holds this holds a weapon they can fire exactly as many times as they are willing to lose someone. **That is not a thing a people spends lightly, and it is the reason the Shunka curse is the only one anyone can name.**
 
@@ -44,7 +44,7 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 ### The gap in the line
 
-**Proposal, not settled, and it's the best thing available here:** the unmaking took *her*, not the people already born from her. The line continued. But it continued around a hole — the family knows the technique came from someone, knows there was a woman, and cannot produce her name or her face. The First Cut is Naming (`world/creation-myth-the-three-cuts.md`), and something that was never Named cannot be remembered properly.
+**Proposal, not settled, and it's the best thing available here:** the unmaking took *her*, not the people already born from her. The line continued. But it continued around a hole — the family knows the technique came from someone, knows there was a woman, and cannot produce her name or her face. Something unmade this thoroughly was not killed, it was made never to have been legible, and a thing that was never legible cannot be remembered properly. *(The Masons have a name for that first legibility and a doctrine explaining it — `factions-and-races/the-masons-three-cuts.md`, The First Cut. The Lizardkin have the hole in the family and no explanation at all.)*
 
 So her descendants inherited a skill from a person their own family cannot describe. If you want a reason a descendant might leave the island and go looking, that is it, and it doesn't need Pat's story to justify it.
 
@@ -61,6 +61,6 @@ So her descendants inherited a skill from a person their own family cannot descr
 ## Related Documents
 
 - `factions-and-races/races-shunka.md` — the people they invaded, and the curse that came out of failing
-- `world/creation-myth-the-three-cuts.md` — the Second Cut, Price, and the Tithe's resonance with it
+- `factions-and-races/the-masons-three-cuts.md` — Mason doctrine the Tithe rhymes with and did not come from
 - `world/geography-overview.md` — the river web and the Bearing Table
 - `campaign/pat.md`, `campaign/session-1-convergence.md` — the character hunting the cursegiver's descendant

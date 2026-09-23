@@ -14,4 +14,4 @@ Nothing in Eclipseria is known from nowhere. Every technique, every card, every 
 
 ---
 
-*In a world whose whole cosmology is origin and return — the Unheld as the source of all things and their destination — a card that carries where it came from is the setting rendered in miniature. Every card a player holds is a small act of remembering.*
+*In a world where things go back into the Unheld and nobody agrees where they came from in the first place, a card that carries where it came from is the setting rendered in miniature. Every card a player holds is a small act of remembering.*

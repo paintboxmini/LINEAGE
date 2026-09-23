@@ -24,7 +24,7 @@ A bubble dragon. Small, iridescent, made of something that's already halfway gon
 
 **Pip is also a wonder.** Delighted by things, bad at hiding, gets bored, gets underfoot. None of that is a costume over the debt; it is simply also true.
 
-**Neither reading sits underneath the other.** The mundane and the mythic share a register here and don't resolve into each other (`world/tonal-bible.md`). A bill issued in the shape of a friend, and a friend who happens to be a bill, with no angle from which one turns out to be the real one.
+**Neither reading sits underneath the other.** The mundane and the mythic share a register here and don't resolve into each other (`world/influences.md`). A bill issued in the shape of a friend, and a friend who happens to be a bill, with no angle from which one turns out to be the real one.
 
 **Nobody explains it.** No NPC pronounces the theology, no book has the entry. The party is told what Pip does, not what Pip is.
 

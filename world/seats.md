@@ -1,12 +1,14 @@
 # Seats
 
-Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire world. They are structural features of existence, as permanent as the Three Cuts.
+Seats are fixed metaphysical positions within reality's structure. Each governs a fundamental domain. They exist on a higher plane and affect the entire world. They are structural features of existence, and nothing known has ever moved one.
 
 Most cultures don't know Seats exist as such. A religion is an interpretation of a known truth — it's built independent of any real cosmological knowledge, around whatever a people actually needed to explain: rivers, fire, harvest. Some faiths end up resembling a Seat's real domain almost by accident. Cultures do not create Seats — they create religions that sometimes unknowingly, sometimes knowingly, rhyme with one.
 
 ## Seats and the Cuts
 
-Seats exist because the Cuts do. The Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position within that structure. No Cuts, no structure; no structure, nothing to sit in.
+**The Masons connect the two, and they are the only ones who do.** Their creed holds that Seats exist *because* the Cuts do: the Three Cuts made a reality that holds — Named, Paid for, Separated — and a Seat is a fixed position within that structure. No Cuts, no structure; no structure, nothing to sit in (`factions-and-races/the-masons-three-cuts.md`).
+
+**That is a belief, not the world's settled account.** It is internally clean, it fits everything the order has ever observed, and there is no way to test it. Seats behave exactly the same whether it is true or false — they fill, they fade, they empty, and a domain with no bearers left starves regardless of what anybody thinks is underneath it. *Nothing below in this file depends on the Masons being right.*
 
 ## Seat States
 

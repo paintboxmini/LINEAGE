@@ -18,7 +18,7 @@ They were at war, at some point in their past, with **the Tithebound** — the L
 
 When the invasion failed and there was no army left to press it, their curse-worker turned to the one weapon defeat hadn't touched — a woman of the one Lizardkin family that has held the technique inside its own bloodline for generations (`factions-and-races/races-lizardkin.md`, The Cursegivers). She would have believed the queen deserved it, and her family would have had generations of reasons ready for why. **She laid an unspoken Price on the Shunka queen directly: from that moment on, every child born of her line would come into the world on four legs, as an ordinary dog, instead of in the kinfolk's normal form.**
 
-**Nothing in this cosmology is free, and forcing a Price onto someone else is not an exception.** She didn't conjure the cost from nowhere — she paid it herself, all of it, at once. The Price that had been anchoring her own existence, the ordinary cost every Named thing keeps paying just to keep being (`world/creation-myth-the-three-cuts.md`), came off her and landed on the queen's line instead. The instant the curse took, she stopped being real. Not killed — unmade. The Unheld didn't press close. It was simply, immediately, as if she had never been Cut at all.
+**Nothing here is free, and forcing a cost onto someone else is not an exception.** She didn't conjure it from nowhere — she paid it herself, all of it, at once. Whatever it is that an existing thing keeps spending simply to go on existing came off her and landed on the queen's line instead. *The Masons would call that the Second Cut inverted, and would be able to say exactly why it worked (`factions-and-races/the-masons-three-cuts.md`). The Shunka have never asked them and would not care for the answer.* The instant the curse took, she stopped being real. Not killed — unmade. The Unheld didn't press close. It was simply, immediately, as if she had never been Cut at all.
 
 Whoever was left of the invasion didn't find a body. There wasn't one to find.
 
@@ -45,6 +45,6 @@ Both ancestry-tied: a jaw built for a dogkin's bite (RED — BODY, Melee, d6, ta
 - `factions-and-races/races-lizardkin.md` — the Tithebound: who they are, and the family that holds the curse
 - `campaign/pat.md` — the character, his Call, and Wild Magic Summoning
 - `campaign/passives.md` — STRONGJAW and HACKLES RISE
-- `world/creation-myth-the-three-cuts.md` — the Second Cut, Price, and what was inverted here
+- `factions-and-races/the-masons-three-cuts.md` — the Mason reading of what she spent, offered by nobody in this story
 - `rules/character-creation.md` — Declaring a Price, the ordinary consensual version
 - `world/geography-overview.md` — the river web and the Bearing Table

@@ -28,7 +28,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-**What he can plausibly get out of it is an explanation rather than a cure.** A Price paid in full doesn't undo on request — stated cosmology, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+**What he can plausibly get out of it is an explanation rather than a cure.** A cost paid in full doesn't undo on request — that's how the world works, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
 
@@ -83,7 +83,7 @@ Still open:
 
 **No slot, no bonus, no rules on it** — the same standing as Chris's spell book (`campaign/chris.md`, The spell book). It is not an accessory and should never be priced. *It does not make him better at anything. It makes one thing possible that is otherwise not possible at all, which is a gate rather than a bonus (`flora/README.md` for the principle, though this is nobody's plant).*
 
-**Why it still smells, which is the whole object.** The cursegiver was not killed. She was **unmade — "as though never Cut at all"** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The First Cut is Naming, and what is Named becomes legible (`world/creation-myth-the-three-cuts.md`). So her own family cannot produce her name or her face; they inherited a technique from a person they are constitutionally unable to describe.
+**Why it still smells, which is the whole object.** The cursegiver was not killed. She was **unmade — "as though never Cut at all"** (`factions-and-races/races-lizardkin.md`, The Cursegivers), which means not killed but made never to have been legible. So her own family cannot produce her name or her face; they inherited a technique from a person they are constitutionally unable to describe.
 
 **A smell is not legible.** It is not a name, not a face, not a symbol — it is residue, and the unmaking had no grip on it. **That is why one scrap of cloth outlasted a woman the world deleted**, and why it is faint: it is the last of something reality no longer keeps a slot for.
 

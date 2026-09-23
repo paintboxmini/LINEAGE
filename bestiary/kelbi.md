@@ -63,7 +63,7 @@ Entirely possible, and the party will probably try. They are unafraid, they are 
 
 **There is no stat block and it isn't an oversight.** A Kelbi doesn't fight, doesn't flee into an encounter, and has nothing to spend a combat round doing. A party that decides to attack one has killed a deer; resolve it as the hunt above, and let the custom do whatever the custom does. Building it a deck would be inventing a fight this animal has never been in.
 
-**Don't make them mysterious.** The forest-people treat Kelbi the way any people treats a familiar food animal — useful, unremarkable, worth knowing the habits of. The flowering branches are strange to the party and ordinary to everyone who lives there, and that gap is the entire register (`world/tonal-bible.md`).
+**Don't make them mysterious.** The forest-people treat Kelbi the way any people treats a familiar food animal — useful, unremarkable, worth knowing the habits of. The flowering branches are strange to the party and ordinary to everyone who lives there, and that gap is the entire register (`world/influences.md`).
 
 ---
 
