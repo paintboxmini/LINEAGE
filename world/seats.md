@@ -18,6 +18,18 @@ Most cultures don't know Seats exist as such. A religion is an interpretation of
 | **Fading** | The bearers are thinning — the domain still holds, but its expression is weakened and increasingly unmediated. A domain whose practice dies in the world starves its Archon. Endpoint: Empty. |
 | **Empty** | The domain's distribution loses its organizing bearers and begins breaking down. The domain does not simply disappear; its expression can become uneven or warped. |
 
+## How Many Seats There Are
+
+**However many you like. It doesn't matter, and that is the useful part.**
+
+If a Seat is a fixed position governing a domain, and domains nest all the way down — fire, then combustion, then this one candle — then there are effectively infinite Seats, and a world with infinite Seats has said nothing. That would be a problem if a Seat did anything by existing. **It doesn't.** A Seat with no bearers is Empty, and Empty means nothing organizes that domain. Its expression goes uneven, warped, or simply unremarkable. *Which is indistinguishable from there being no Seat there at all.*
+
+So the candle has a Seat. Nobody holds it, nothing ever has, and the candle burns the way candles burn.
+
+**The consequence worth holding onto: a Seat is not a thing that holds a domain. It is a thing that gets held.** The holding is done by living beings, Resonant Items and Resonant Places, and every one of those can stop — die out, be destroyed, be forgotten, or fall out of practice. *Fading is not a Seat weakening. It is the world letting go of one.*
+
+**The named Seats below are the occupied ones.** They are on this list because something in the world holds them, not because they were selected as fundamental. A Seat that empties completely does not get struck from the list — but nothing would be lost if it were, and that is the whole point.
+
 Filled doesn't mean one bearer. Living beings, Resonant Items, and Resonant Places can each reach stage III resonance on the same Seat — three separate ladders, each ending at the same summit. None of them displaces the others; a Seat can be Filled by all at once.
 
 ## The Seats
