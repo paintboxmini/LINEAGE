@@ -41,20 +41,30 @@ Filled doesn't mean one bearer. Living beings, Resonant Items, and Resonant Plac
 **Named Archons:** Lysander
 References continuity and persistence. Identity across moments.
 
-### Uncertainty and Change
+### Trust and Change
 **Named Archons:** Elias, the Thorne Whip, Turnroot Weald.
 
-### Love and Connection
+**Nothing changes unless something moves toward what it doesn't understand yet, and that takes trust.** Not trust in a person — trust as the willingness to go on toward ground you cannot see from here. Uncertainty isn't the other half of this Seat, it's the ground the whole domain stands on: where there is nothing to be uncertain about, there is nothing to trust and nothing changes.
+
+Which makes it a Seat that can be badly held. Trust is the thing that gets misplaced, and moving toward what you can't see is how people walk into what they should have walked away from. *Both readings are the domain working.*
+
+Elias is Archon of Change and does not know it (`characters/elias.md`) — a man who cannot be certain what he is, going on anyway. The clearest statement of the Seat is its bearer not having been told.
+
+### Love and Binding
 **Named Archons:** Aurora, The Loom, Eclipseria
 
-Speaks care, togetherness, and what holds.
+Speaks care, togetherness, and what holds — **and holding is the tension the Seat is made of.** The thing that keeps you and the thing that traps you are the same act, performed at the same time, usually by someone who means well. There is no version of this domain where the binding is optional.
 
-The Loom is the literal machinery Aurora is bound to, deep beneath Eclipseria — her hair splayed out feeding into the Weaver's Grid.
+*Aurora is literally bound to the Loom* — the machinery deep beneath Eclipseria, her hair splayed out and feeding into the Weaver's Grid. The Archon of this Seat cannot leave it. So are the Weavers, in the ordinary way: still repairing an extraction they know is wrong, because stopping harms people who never agreed to any of this either.
 
-### Rage and War
+### Rage and Endings
 **Named Archons:**
 
 The Seat of conflict, breaking points, and necessary endings.
+
+**Endings, not war.** War is one thing this domain does and by far the least interesting — the Seat also covers the relationship that stops, the trade that is finally refused, the person who burns down what they built. **Rage is both what refuses an ending and what causes one**, which is why the two sit together and not as opposites.
+
+Distinct from Grief and Memory, which is what remains afterward. This Seat is the stopping itself.
 
 ### Song and Silence
 **Named Archons:** Fermata
