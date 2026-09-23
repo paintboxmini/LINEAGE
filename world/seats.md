@@ -57,14 +57,19 @@ Speaks care, togetherness, and what holds — **and holding is the tension the S
 
 *Aurora is literally bound to the Loom* — the machinery deep beneath Eclipseria, her hair splayed out and feeding into the Weaver's Grid. The Archon of this Seat cannot leave it. So are the Weavers, in the ordinary way: still repairing an extraction they know is wrong, because stopping harms people who never agreed to any of this either.
 
-### Rage and Endings
+### Vitality and Destruction
 **Named Archons:**
+**Commonly called:** the Storm Seat
 
-The Seat of conflict, breaking points, and necessary endings.
+**One force, and what it does depends entirely on what it passes through.** Water it runs through becomes restorative. Wood it runs through ignites. A tired person it runs through gets up. Air it runs through carries a strike. The Lightning Loop is aligned here and is the clearest demonstration available of the whole domain (`items/lightning-loop.md`) — a ring that heals, warms, revives and kills without ever doing a different thing.
 
-**Endings, not war.** War is one thing this domain does and by far the least interesting — the Seat also covers the relationship that stops, the trade that is finally refused, the person who burns down what they built. **Rage is both what refuses an ending and what causes one**, which is why the two sit together and not as opposites.
+**Rage sits inside this, not beside it.** Rage is vitality turned toward breaking, which is why the Seat also covers conflict, breaking points, and necessary endings — the relationship that stops, the trade finally refused, the person who burns down what they built. *War is one expression of this domain and by far the least interesting one.*
 
-Distinct from Grief and Memory, which is what remains afterward. This Seat is the stopping itself.
+**The cost runs along the same pair, which is the tell.** Whatever the domain is asked to give, it takes back in the same currency: heal someone and pay the vitality yourself, burn something and be burned on the way (`items/lightning-loop.md`, the Price). Not a tax bolted onto the effect — the other half of the Seat arriving back at whoever used it.
+
+Distinct from Grief and Memory, which is what remains afterward. This Seat is the force applied.
+
+**Storm is the common name and it is not wrong, it is just small** — what an ordinary person sees is lightning, so what they say is storm. That gap is the usual one: people build the name around what they can observe (see the note on religions at the top of this file). Kaine's devotees watch him make water heal and fire start and do not reach for a Seat at all, which is the point of the deception (`characters/kaine.md`).
 
 ### Song and Silence
 **Named Archons:** Fermata

@@ -9,7 +9,7 @@ He forms The Final Current after obtaining the lightning loop.
 
 ## The Goal
 
-A resonant item aligned with the Storm Seat — unstable, dangerous in any hands, including his. Kaine wants it when the party arrives.
+A resonant item aligned with the Storm Seat — Vitality and Destruction, under its proper name (`world/seats.md`) — unstable, dangerous in any hands, including his. Kaine wants it when the party arrives.
 
 Performing signs and wonders, and crediting them to repeated bathing in the Unheld. He knows the Loop produces the wonders; he conceals it and lets the story of his own "unlocking" explain what people witness. The signs are real. The source is hidden.
 

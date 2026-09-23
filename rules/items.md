@@ -136,11 +136,11 @@ Three questions the table actually needs to answer, in this order:
 
 ---
 
-## Kaine (Storm Seat Artifact)
+## Kaine (Vitality and Destruction Artifact)
 
 *Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
 
-- **The Lightning Loop** — a ring, Storm Seat-aligned, currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. The Storm Seat itself is now borne by Greed (`world/seats.md`) — whether that has any bearing on Kaine's own claim to this Artifact is unestablished, on purpose.
+- **The Lightning Loop** — a ring aligned to Vitality and Destruction, the Seat most people call Storm (`world/seats.md`), currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. **The Seat has no bearer** — its Named Archons line is empty, and the only candidate anywhere is an open question in `characters/kaine.md` about whether Greed might take it if Dakota plays. Whether any of that bears on Kaine's own claim to this Artifact is unestablished, on purpose.
 
 ---
 
