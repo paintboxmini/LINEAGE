@@ -40,4 +40,4 @@ If the party takes the ring, they hold something Storm Seat-aligned that grants 
 ## Open
 
 - Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`world/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)
+- Does the Storm Seat have a bearer the way the Seat of Love and Binding has Aurora? **Nothing establishes one, and `world/seats.md` does not list a Storm Seat at all** — the Seat exists only in this file and in `characters/kaine.md`, which is where the whole question sits: *"Does the Storm Seat have a bearer? Greed could play a role in future development. Perhaps if Dakota plays he can receive the lightning loop."* That is a maybe resting on a player who may or may not join, not a fate already written for Greed. Whether Kaine's claim on this ring relates to any of it is unanswered too.
