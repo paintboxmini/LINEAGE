@@ -137,15 +137,40 @@ The concept deck defaulted to D&D 5e wherever it was uncertain. Most of it has a
 
 ---
 
+## Where they sit
+
+*Set 2026-09-24.*
+
+**Spotlight cards are not in the draft.** They are not shuffled into an advancement deck, they are not among the three revealed at end of session, and nobody draws one. **They arrive when the scene arrives** — earned at the table, not planned into a pool.
+
+**They are supplemental to his Oracle deck, not a replacement for it.** Twelve moments do not cover a campaign's worth of end-of-session advancements, let alone the bonus cards that turn up in play (`rules/character-creation.md`, Other Ways the Deck Changes). The rest fills in normally, from the draft, alongside everyone else. *Code's deck ends up part drafted and part remembered, and the drafted part is most of it.*
+
+**And they are the reason the advancement deck splits per player** (`rules/character-creation.md`, One Advancement Deck Per Player). A card that is a memory of a night Code survived has no business in Pat's hand.
+
+---
+
+## The acts are Code's, not the campaign's
+
+*Set 2026-09-24, and it dissolves the question rather than answering it.*
+
+**The campaign has no act structure and is not getting one.** It starts at session one.
+
+**The four acts belong to Code's development**, and the framing that falls out is the good one: **the campaign opens with Code already in his third act.** Acts I and II are behind him — the imprint, the moults, his father teaching him to look; then Kevin, the run, and the moment he stopped being a probe. All of it happened before the table sits down.
+
+*So the first thing the party sees of him is a character partway through his own story, carrying two acts nobody at the table watched.* Act III is where play begins, and it is the act with no scenes written in it.
+
+---
+
 ## Open
 
-- **Which act the campaign is currently in.** A question about Code rather than about the deck
-- Whether the arriving spotlight cards consume Oracle draft slots or sit alongside them, and what that does to the nine-card cap over a long campaign
 - Whether Acts III and IV stay at three cards each, or whether the scenes that actually happen produce a different count
+- Whether a spotlight card, once earned, is subject to the nine-card cap like anything else, or sits outside it the way a Curse card does (`rules/character-creation.md`, Curse & Status Cards)
 
 ---
 
 ## Settled
 
-- **Acts I and II are both the cards he holds and the reason he is what he is.** The either/or was a false choice and Chris does not need to pick — *set 2026-09-24*
-- **He collects the twelve rather than starting with them** — *set 2026-09-24, reasoning above*
+- **Acts I and II are both the cards he holds and the reason he is what he is.** The either/or was a false choice — *2026-09-24*
+- **He collects the twelve rather than starting with them** — *2026-09-24*
+- **Spotlights stay out of the draft**, and are supplemental to a normally drafted Oracle deck — *2026-09-24*
+- **The acts are Code's, not the campaign's**, and play opens in his third — *2026-09-24*

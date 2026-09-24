@@ -284,6 +284,16 @@ You don't have to explain the metaphysics. Neither does your character.
 ### End of Session
 The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
+### One Advancement Deck Per Player
+
+*Set 2026-09-24.* **The shared Oracle deck splits into a separate deck per player**, and from that point it is simpler to call it the **advancement deck**. The split happens once character creation and deck building are done, **and after the first night's advancement** — so the table's first draft is still dealt from one pool, together, the way learning the game should be.
+
+**The reason is custom cards.** Every character carries cards nobody else should ever draw: three signature customs each, Passives, and — where a player is building them — spotlight cards earned from that character's own scenes (`experimental/code-concept-cards.md`). **A single shared pool leaks them.** Kevin drawing SEED, or Pat drawing a card that is a memory of a night Code survived, is not a lucky draw; it is somebody else's life turning up in your hand.
+
+**So a card a character earns goes into that character's advancement deck and nowhere else.** The pools diverge from the split onward, and they are meant to — after a long campaign, what a player is drawing from is a record of who their character has become rather than a pile everyone shares.
+
+**What each deck holds at the split is not settled** (see Open, below).
+
 **Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
 
 **Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
@@ -318,3 +328,13 @@ This is a different thing from banking a card, and the difference is whether you
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
 
 **They sit outside the cap.** A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.
+
+---
+
+## Open
+
+- **What each advancement deck holds at the split** (One Advancement Deck Per Player, above). The beginner pool is 84 cards — the Oracle 63 plus the 21-card expansion (`cards/tiers/beginner.md`) — and there are three ways to cut it, with different costs at the table:
+  - **A full copy each.** Every player draws from the same 84 for a long time. Cleanest to reason about, and it means printing four copies of everything
+  - **Dealt out at the split.** The one pool is divided between the players, so each deck is roughly 84 ÷ players and the pools shrink as they diverge. Nothing extra to print, and a card that lands in one player's deck is simply never available to another
+  - **Built per character.** Each deck seeded toward the character it belongs to. The most expressive and the most work, and it starts steering draws before the character has done anything to earn the steer
+- Whether a card **permanently removed** from a deck returns to that player's advancement deck or leaves the game entirely
