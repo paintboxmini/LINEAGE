@@ -90,6 +90,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Pneum | northeast | Vulture's Nest | `places/pneum.md` |
 | Apnea | southwest | Vulture's Nest | `places/apnea.md` — stated as south-southwest |
 | The Coil | east | Vulture's Nest | `places/the-coil.md` |
+| The sandstone high country | north | Vulture's Nest | `places/vultures-nest.md`, The Shape of the Ground — cliffs directly north, rising into mountains; no road goes that way |
 | Briarwatch | east | Turnroot Weald | `places/briarwatch.md` — on the Weald's eastern edge |
 | Quillet | southeast | Eclipseria | `places/quillet.md` — on the Vulture's Nest spoke, a day inside the Kings Road Inn |
 | Shunka island | north | Eclipseria | `factions-and-races/races-shunka.md` — a river-web island in the web's northernmost reaches, slightly west of true north |

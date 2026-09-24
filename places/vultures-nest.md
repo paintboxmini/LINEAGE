@@ -2,6 +2,44 @@
 
 A river port rebuilt so many times on top of itself that no one remembers the original shoreline.The town sits at a major intersection, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more cargo crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
+## The Shape of the Ground
+
+**The Nest is pinned between water and rock, and that is why it looks the way it does.**
+
+**South is the water.** Docks, river, the whole reason the town exists.
+
+**North, about as far inland as you can walk in a few minutes, the ground stops and stands up.** Cliffs — not a slope you climb, a wall you *climb*, with hands. Beyond and above them the country keeps rising into mountains. There is no road north out of Vulture's Nest, because there is nowhere for a road to go.
+
+**So the town runs long east to west and is barely any depth north to south.** A ribbon of buildings between the berths and the rock. Everything is within a short walk of the water because nothing *can* be far from it, and the town grew along the bank rather than back from it. Some of the northern buildings are built against the cliff face and use it as a fourth wall.
+
+*It also explains the rebuilding.* A town with nowhere to spread rebuilds on top of itself, which is exactly what the Nest has done (the opening line of this file, and The Ribs, below).
+
+### The rock is sandstone
+
+**Brown sandstone, and it is the colour of everything up there** — the cliffs, the scree at their foot, the dust that ends up on every north-facing wall in town. A thing the colour of that rock, standing still against it, is not visible. Nothing in this town finds that remarkable; it is simply what the north wall of the world looks like.
+
+### And it is where the plants are
+
+**The Nest has no growing country and never has** (Food, below) — but the high ground does. Whatever soil there is collects up in the folds and the shaded cuts where the rock holds water, and that is the only green within reach of this town.
+
+**Which does not put a vegetable on anybody's plate**, and the two facts sit together without contradicting each other. What grows up there is not dinner, and the road to it is a cliff. *A plant from the high country arrives in the Nest as an ingredient somebody climbed for, priced accordingly, and never as food.*
+
+### What lives up there
+
+**The Flagneck** (`bestiary/flagneck.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
+
+### The finishing house
+
+**FourthEye is not finished in the Nest. It is finished up in the rock.**
+
+The chain runs harvest → refine → transport → sale (`items/fourtheye.md`), and the middle step has never had an address. It does now: **a hideout somewhere in the mountains north of town**, low rather than high — not a summit, not a climb anybody would notice somebody making, just *thoroughly hidden*. The film comes off the animal, and everything after that happens up there before the product ever moves.
+
+**Low elevation is the whole design.** A place high up is a place people can see you going to. The operation wants a short walk off a route that already exists, behind something, and it has one.
+
+*Exact location, who runs it, and how the Nest end connects to it are unestablished — see Open, below.*
+
+---
+
 **Most of what arrives here was rowed or hauled, not sailed** (`world/geography-overview.md`, How a boat actually moves). The Nest is the densest knot on the web, so every pullway team, oar crew and small-craft sailor working the southeast passes through it sooner or later — which is also why a party asking about a boat that went upriver is asking a question dozens of people can answer, and why the Compact can find out who moved what simply by asking the teams on the bank.
 
 The smell: pitch, citrus peel, river silt, wet wood.
@@ -453,3 +491,15 @@ Jonas keeps the official port record, and the official port record is cross-refe
 **What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **At the short setting both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six); at the long one the party can do both, which is a softer session and still a good one. Neither job tells them what is in the box.
 
 *A party that takes Harlock's job and only finds out later what they carried is the best version of this. Nobody lied to them. They just didn't ask, same as everybody else in the chain.*
+---
+
+## Open
+
+*The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
+
+- **The name of the high country, and of the Flagneck.** Neither was named when it was described. `bestiary/flagneck.md` carries three candidates for the animal; the range itself has none at all
+- **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
+- **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
+- **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it
+- **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (Food, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
+- **Whether the Flagnecks and the finishing house know about each other.** A hidden operation sitting inside the range of an animal that watches rock faces and throws things at what moves on them is a problem somebody has had to solve, or has been lucky about
