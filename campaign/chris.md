@@ -62,6 +62,14 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ---
 
+## Spotlight Cards — the twelve moments
+
+**Chris's character deck reads as a life, and the reading is in `experimental/code-concept-cards.md`.** Twelve cards, each one a pivotal scene — the first time Code used it — running Mind / Body / Soul four times through, against a motto of four words.
+
+**Six of the twelve land on this file without being bent.** The imprint, the moults, his father teaching him to look; then Kevin, the run, and the moment he stops being a probe. *"I was sent to observe. Now I choose."* sits exactly on The Night They Ran, above.
+
+**The other six have not happened.** They are named and nothing more, and they should stay that way — a spotlight card is noticed after a scene, not played toward. Acts III and IV are Chris's.
+
 ## The Live Thread
 
 Story beats center on keeping the mind link off. It's not a switch he holds down — it's a door that could come open on its own, get forced from the other side, or slip without him meaning it to. What happens if it does isn't decided, and shouldn't be yet.

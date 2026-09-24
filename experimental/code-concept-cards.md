@@ -1,142 +1,123 @@
-# Code — the concept deck, rebuilt legal
+# Code — the twelve moments
 
-*Draft, 2026-09-24. Not Code's deck. This is the twelve-card concept deck from Chris's character art, rebuilt to the actual rules so there is something real to compare against — see `campaign/chris.md` for the sheet that already exists, and `cards/chris.md` for the three cards that are settled.*
+*Draft, 2026-09-24. The reading of Chris's character deck for Code, the Silver Sword. See `campaign/chris.md` for the sheet, `cards/chris.md` for the three cards that are settled.*
 
-**What this is for.** The concept sheet was built by an assistant working from a rules PDF, and it defaulted to D&D 5e everywhere it wasn't certain — AC, damage types, feet, levels, Advantage as a combat effect. The fiction on it is good and mostly correct about who Code is. This file keeps the fiction and throws away the system underneath it.
+**Chris calls these spotlight cards.** Each one is a pivotal scene — the first time Code used it — and the card is what's left over afterwards. That reframing is the whole of this file, and it is worth more than the mechanics it arrived wrapped in.
+
+**The names and the flavour text are the durable part.** The concept deck's rules were built against D&D rather than this game and do not survive contact (the translation is in the appendix, for reference). *Nothing about that touches the twelve moments.* A name and one line of flavour is enough to hold a scene, and these twelve hold a life.
 
 ---
 
-## First: twelve cards is six ideas
+## Four acts of three
 
-Counted honestly, the concept deck repeats itself more than it builds:
+The deck runs **Mind, Body, Soul — four times through, in order.** The sheet's motto is four words: **OBSERVE · ADAPT · INTEGRATE · EVOLVE.**
 
-| Concept card | What it actually is |
+Four movements of three. Whether it was built that way or fell out that way, it holds.
+
+### Act I — the child (1, 2, 3)
+
+**These land on `campaign/chris.md` without being bent.**
+
+**1 · MIMETIC FORM** — *"Form is only a beginning."*
+**The imprint.** The first thing he ever looked at properly, he became the small version of. His file already calls this his deepest use of Mimicry and the one he never chose — so the first card in the set is a moment he did not decide, which is the correct place for a life to start.
+
+**2 · LIQUID ADAPTATION** — *"I break, so I can return."*
+**The moults.** Coming apart and reforming larger, on no schedule, with a shed left behind each time and a father who had already decided not to report any of it.
+
+**3 · SYSTEM ANALYSIS** — *"Every pattern leaves a trace."*
+**His father teaching him to look.** A scholar of plant life showing a boy how to tell what a living thing *does* rather than what it looks like. This is where Nature +2 comes from, and it is the only card in Act I he was taught rather than simply being.
+
+### Act II — the night they ran (4, 5, 6)
+
+**Also anchored. This is the file's most load-bearing scene and three cards sit on it.**
+
+**4 · INTEGRATE** — *"Connection is the greatest weapon."*
+**Kevin.** The line reads differently once you know a severed link is his wound: connection is the thing that was taken from him, and the first one he built back by hand was a person he chose rather than a mind he was born into.
+
+**5 · SILVER SURGE** — *"Motion is survival."*
+**Kevin tearing him out of the fight.** Literally true, and he did not choose it — the second time in his life something fundamental happened to him rather than by him.
+
+**6 · BEYOND THE CYCLE** — *"I was sent to observe. Now I choose."*
+**The moment he stops being a probe.** The thematic centre of the entire set, sitting exactly on the scene his sheet already treats as his origin.
+
+### Act III — on the run (7, 8, 9)
+
+**Not written, and not to be written here.** What the names and lines say, and nothing further:
+
+**7 · REFLECTIVE GUARD** — *"What you send, I return."* — the first time he turns it back instead of running.
+**8 · DATA INGEST** — *"Everything I touch teaches me."* — the answer to card 3, with nobody left to teach him.
+**9 · INHUMAN PRECISION** — *"There are no random outcomes."* — the blade becoming a technique rather than a reflex. A blade singer talking.
+
+### Act IV — what he becomes (10, 11, 12)
+
+**Not written either, and further off.**
+
+**10 · PHASE SHIFT** — *"Between here and there is just a choice."* — the answer to card 1. Shape and place, chosen this time.
+**11 · SYNTHETIC RESILIENCE** — *"I do not break. I adapt."* — the answer to card 2, and a flat contradiction of it.
+**12 · FINAL EVOLUTION** — *"Observation is the first step. A better tomorrow is the last."* — the answer to card 6.
+
+---
+
+## The repeats are the spine
+
+**Four cards in the back half answer four in the front half**, same capability, opposite relationship to it:
+
+| Early | Late |
 |---|---|
-| 1 — Mimetic Form | **Mimicry**, his Trait (`campaign/chris.md`). Always on, costs nothing — and explicitly does not work mid-fight |
-| 2 — Liquid Adaptation | **AMALGAMOUS FORM**, his Passive (`campaign/passives.md`) |
-| 3 — System Analysis | the reveal on **MEASURE**, and **STUDY** (`cards/blue-mind.md`). Covered twice already |
-| 8 — Data Ingest | same as 3 |
-| 11 — Synthetic Resilience | same as 2 and 5 |
-| 12 — Final Evolution | same as 6, word for word on the effect |
+| 1 *"Form is only a beginning."* | 10 *"Between here and there is just a choice."* |
+| 2 *"I break, so I can return."* | 11 *"I do not break. I adapt."* |
+| 3 *"Every pattern leaves a trace."* | 8 *"Everything I touch teaches me."* |
+| 6 *"I was sent to observe. Now I choose."* | 12 *"Observation is the first step. A better tomorrow is the last."* |
 
-**Six of the twelve are things he already has or repeats of each other.** The six that are genuinely new ideas are below. That is not a criticism of the concept — it is what happens when a generator fills twelve slots from one theme, and it is worth knowing before anybody feels attached to the count.
+Breaking as the only survival he had, then breaking as a thing he has outgrown. A skill his father gave him, then the same skill alone. An order he was given, then a choice he keeps making.
 
----
-
-## His deck has six open slots, and they are draft slots
-
-`campaign/chris.md` is already settled on this and it constrains everything here. Deck is **nine cards, 3 Red / 4 Blue / 2 Green** (Body 3 / Mind 4 / Soul 2). Three are his customs — **MEASURE** Red, **KILLSWITCH** Blue, **SEED** Green. **The remaining six come from the ordinary Oracle draft alongside the rest of the table**, which has not happened yet.
-
-**So these six cards are not slot-fillers.** They are what the concept's ideas look like priced correctly — useful as later rewards, as things the GM might steer an Oracle reveal toward, or simply as a reference for what "legal" looks like next to what the generator produced. **Writing six more customs would take Code's draft away from him**, and the draft is the part of character growth this game actually runs on.
+*An earlier pass on this file counted these as redundancy — six ideas stretched across twelve cards. That was a count of mechanics, and the mechanics are the part that doesn't survive. Counted as moments, the returns are the structure.*
 
 ---
 
-## The six, rebuilt
+## Arrival, not design
 
-Priced on the corpus conventions: **range buys the die** (`rules/cards.md`, Why Red has the biggest dice), expected damage is stat + half the die, and Code's band across his three existing cards is 5.0 to 7.0.
+**The scene comes first. The card is the residue.** That is what makes these different from cards drafted at end of session, and it is the one rule this file actually proposes:
 
-### INTEGRATE — Blue
+- **A spotlight card is not awarded, it is noticed.** When a scene happens that one of these twelve names describes, the card arrives — after, not before. Nobody plays toward it.
+- **Acts I and II are already spent.** Those six moments happened before play starts. Whether Code holds them as cards now, or whether they are simply what he is and the cards were never dealt, is Chris's call.
+- **Acts III and IV are six empty slots and they stay empty.** Writing the scenes now would spend them. The names are a promise about shape, not a plan.
+- **Order is not guaranteed.** Act IV answers Act I, but nothing says card 11 cannot arrive before card 8 if the fight goes that way.
 
-```
-INTEGRATE
-BLUE — MIND
-Attack: Mind + d6
-Effect: The defender gains Vulnerable.
-Defense Effect: The attacker gains Vulnerable.
-Range: Ranged
-"Connection is the greatest weapon."
-```
+### The bank is already built for this
 
-*7.0 expected.* The concept had this apply "Marked," which isn't a status — MARKED is a card name, and what it applies is **Vulnerable**. The pool has already priced this exact effect: OPEN GUARD, MARKED and OPENING all grant Vulnerable at **d8/Melee, d6/Ranged, d4/Both** (`rules/cards.md`). Ranged, so d6. Nothing invented.
+**Deck size is nine and it only moves when a stat does** (`rules/character-creation.md`, Advancement). Twelve moments do not fit in nine slots, and that is not a problem to solve — it is the rule working:
 
-### PHASE SHIFT — Blue
+> *"A long campaign doesn't thicken the deck — it deepens what's behind it."*
 
-```
-PHASE SHIFT
-BLUE — MIND
-Attack: Mind + d4
-Effect: Move Position as a free action.
-Defense Effect: Gain Quick.
-Range: Ranged
-"Between here and there is just a choice."
-```
-
-*6.0 expected.* The concept teleported him 30 feet through creatures. There are two positions, so the whole of "phase somewhere else" is **Move Position** — and the existing keyword for a banked free move is **Quick**, which is what the defence half grants. Small die because the payload is tempo, not damage.
-
-### REFLECTIVE GUARD — Blue
-
-```
-REFLECTIVE GUARD
-BLUE — MIND
-Attack: Mind + d4
-Effect: Gain Resist.
-Defense Effect: Counter Attack.
-Range: Ranged
-"What you send, I return."
-```
-
-*6.0 expected.* The concept reflected a spell back at its source and granted resistance to a chosen damage type. **There are no damage types**, and the existing keyword for returning an attack is **Counter Attack** (6 core cards use it). Resist is the flat halving keyword. Both halves now say what the card was reaching for.
-
-### SILVER SURGE — Red
-
-```
-SILVER SURGE
-RED — BODY
-Attack: Body + d8
-Effect: Gain Quick.
-Defense Effect: Counter Attack.
-Range: Melee
-"Motion is survival."
-```
-
-*7.0 expected.* **The one concept card that was already priced correctly** — Body + d8 at Melee sits right at Red Melee's d7.00 average. The 20-foot straight-line charge becomes Quick, since closing the distance is Rushdown and Quick is what banks one for free.
-
-### INHUMAN PRECISION — Red
-
-```
-INHUMAN PRECISION
-RED — BODY
-Attack: Body + d4
-Effect: Gain Deadly.
-Defense Effect: Gain Deadly.
-Range: Both
-"There are no random outcomes."
-```
-
-*5.0 expected.* The concept said "the target takes an additional 1d6 damage and your next attack against it has Advantage." **An additional d6 on the next damage roll is the exact definition of Deadly** — and `rules/resolution.md` says Deadly and Weak are named that way *specifically* so they don't collide with the skill-check Advantage. This is the card the concept was describing without knowing the word. A d4 at Both range is a step under Red's Both average, which is the correct payment for granting Deadly on both halves.
-
-### BEYOND THE CYCLE — Green
-
-```
-BEYOND THE CYCLE
-GREEN — SOUL
-Attack: Soul + d6
-Effect: Choose one — heal 4 HP, or remove one Debuff from yourself or an ally.
-Defense Effect: Choose one — heal 2 HP, or gain Resist.
-Range: Both
-"I was sent to observe. Now I choose."
-```
-
-*5.0 expected.* Green's flexibility card, and the one place the concept's "choose one" structure was right. The third option — temporarily gaining a creature's trait — is cut: that is **Mimicry** doing its job, it's a Trait rather than a card, and it doesn't run mid-combat.
+**A card in the bank is a moment he had that isn't with him today.** It's permanent, it's his, and it swaps in at advancement when it becomes the thing he needs. For a character whose whole fiction is holding one shape out of many available, a deck of nine drawn from a life of twelve is the mechanic saying the same thing the fiction does.
 
 ---
 
-## What the six do to his hand
+## Appendix — what the mechanics translate to
 
-| | Melee | Ranged | Both |
-|---|---|---|---|
-| **With MEASURE, KILLSWITCH, SEED** | 2 | 4 | 3 |
+*Kept for reference only. If the names and flavour carry forward and the rules don't, nothing here is needed.*
 
-**That spread is right for him.** A Mind-primary character who prefers the Backline (`campaign/chris.md`) wants to be able to act from there, and only two cards in the deck go dead when he's out of the scrum — both Red, both the ones a blade singer should have to close for.
+The concept deck defaulted to D&D 5e wherever it was uncertain. Most of it has a real equivalent, and in three places the concept was describing an existing keyword without having the word:
 
-**Deck average lands at 6.0 expected damage**, against his three settled cards at 7.0 / 6.0 / 5.0. Nothing here is above his own ceiling.
+| Concept text | What it already is |
+|---|---|
+| "the target becomes Marked" | **Vulnerable.** MARKED is a card name; what it applies is Vulnerable — priced d8/Melee, d6/Ranged, d4/Both (`rules/cards.md`) |
+| "takes an additional 1d6 damage" | **Deadly**, exactly. And the concept's "your next attack has Advantage" in the same line is the collision `rules/resolution.md` renamed Deadly to avoid |
+| "reflect one spell back at its source" | **Counter Attack** (6 core cards) |
+| "teleport up to 30 feet" | **Move Position**, and **Quick** for a banked free one |
+| "Scry I (draw 1 card)" | Scry is look at the top X and reorder. Not a draw |
+| AC, saving throws, damage types, opportunity attacks, difficult terrain, levels | No equivalent. Defence is a card; Resist is flat |
 
-**And the KILLSWITCH tension is worth knowing.** His stance ends when he plays the same colour twice running, and four of nine cards would be Blue. Three of those four are in this draft. He'd be losing the stance to his own best colour constantly — which `campaign/chris.md` already measured at 2.8× as often as in Green and called the card working rather than failing. These six sharpen that, on purpose.
+**One card needed no translation.** SILVER SURGE at Body + d8, Melee sits exactly on Red Melee's d7.00 average — correctly priced, first time, and it is the card about a sword.
+
+**And two of the twelve are not cards at all.** MIMETIC FORM is the **Mimicry** Trait, which is always on and explicitly does not run mid-combat; LIQUID ADAPTATION is **AMALGAMOUS FORM**, a Passive. As Act I moments both are perfect. As cards they'd be duplicating things he already has.
 
 ---
 
 ## Open
 
-- **Whether any of this is wanted.** It is Code's deck and Chris's call, and the six Oracle slots are his to draft rather than to be handed
-- Whether SILVER SURGE and INHUMAN PRECISION should both be Red, given he only has three Red slots and MEASURE holds one
-- Whether *the Silver Sword* should show up on a card at all, or stay a title
+- **All of it.** The deck is Code's and the reading is offered, not settled
+- Whether Acts I and II exist as cards he holds, or as the reason he is what he is
+- Whether the six remaining Oracle draft slots (`campaign/chris.md`, Deck) are where spotlight cards land, or whether spotlights sit outside the draft entirely
+- Which act the campaign is currently in, which is a question about Code rather than about the deck
