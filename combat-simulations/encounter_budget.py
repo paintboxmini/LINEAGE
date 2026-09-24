@@ -75,7 +75,7 @@ def find(slug):
     return None, None
 
 
-def make(name, st, pool, position, team, rng, sig=None):
+def make(name, st, pool, position, team, rng, sig=None, colors=None):
     """Build the creature, signatures first and the rest filled by colour.
 
     The fill used to be `sig + deck[len(sig):]` — prepend the signatures and
@@ -91,9 +91,16 @@ def make(name, st, pool, position, team, rng, sig=None):
     holds four cards, so the fill *is* a quarter of everything it does, and
     the bestiary names the card that belongs there. Getting it wrong made
     the creature measurably safer than the one a table would actually face.
+
+    **The colour match is a heuristic, not a law.** It is the default and
+    almost everything runs it, but `colors={'RED': n, 'BLUE': n, 'GREEN': n}`
+    overrides it for a deck built off-ratio on purpose — which is the only
+    way to measure whether the mechanic paying for that imbalance actually
+    pays for it. Deck size still comes out of the counts given.
     """
     sig = list(sig or ())
-    want = {'RED': st['body'], 'BLUE': st['mind'], 'GREEN': st['soul']}
+    want = dict(colors) if colors else {
+        'RED': st['body'], 'BLUE': st['mind'], 'GREEN': st['soul']}
     for c in sig:
         want[c.color] = want.get(c.color, 0) - 1
     deck = list(sig)

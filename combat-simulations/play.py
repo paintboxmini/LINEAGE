@@ -24,9 +24,17 @@ from engine import (BACK, FRONT, MUST_TARGET, NO_ATTACK, NO_TARGET,
 from wheel import Wheel
 
 
-def build_deck(pool, size, body, mind, soul, rng):
-    """`rules/cards.md`: deck size equals total stats, each colour's count
-    equal to the matching stat.
+def build_deck(pool, size, body, mind, soul, rng, colors=None):
+    """Deck size equals total stats; colour counts default to the stats.
+
+    **The colour match is a heuristic, not a law** (`rules/cards.md`, Deck
+    Building). It is the right default and it is what almost everything in
+    the repo runs, but a deck is allowed to be off-ratio — a player who
+    drafts that way, or a creature built off-ratio on purpose and paid for
+    with a mechanic that answers the imbalance.
+
+    Pass `colors={'RED': n, 'BLUE': n, 'GREEN': n}` to say so explicitly.
+    Without it the stats decide, exactly as before.
 
     Drawn **without** replacement. No written deck in the repo runs the same
     card twice — 43 decklists, checked by `agent-tools/check-references.py` —
@@ -38,7 +46,7 @@ def build_deck(pool, size, body, mind, soul, rng):
     A colour with fewer distinct cards than the stat asks for takes what
     there is rather than padding with repeats.
     """
-    want = {'RED': body, 'BLUE': mind, 'GREEN': soul}
+    want = dict(colors) if colors else {'RED': body, 'BLUE': mind, 'GREEN': soul}
     deck = []
     for color, n in want.items():
         avail = [c for c in pool if c.color == color]

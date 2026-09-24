@@ -152,11 +152,25 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical for keyw
 
 **Player decks — the stat-matching heuristic.** A solid default: the number of cards of each color matches the corresponding stat. Mind 4 / Body 2 / Soul 3 → 4 Blue, 2 Red, 3 Green. The deck's color weight mirrors who the character is — and since damage runs off the matching stat, it keeps every card in the deck pulling at full strength. A heuristic, not a law: drafting through the Oracle (see `rules/character-creation.md`, Advancement) can and should bend it.
 
+### Paying for an off-ratio deck
+
+**The match is optimal because it is static.** Damage runs off the matching stat, so every card off-colour is a card firing at less than full strength — and with nothing else going on, matching is simply the best available answer. *That is exactly what makes it a heuristic worth breaking on purpose.*
+
+**An imbalance has to be bought.** A creature with Body 3 / Mind 3 / Soul 3 running 4 Red / 3 Blue / 2 Green is a worse creature than a matched one unless something in its stat block answers the shape. The interesting versions answer it with a **curve**: the off-ratio deck starts behind and ends ahead, which turns a flat stats question into a tempo one.
+
+*Worked example.* A creature with **Soul 2 and 4 Green cards** carries four cards firing off its worst stat. Give it a trait — **every exchange it wins with a Green card grants +1 Soul for the rest of the combat** — and the deck it could not afford on turn one is the deck it is built around by turn four. The cost is real, it is paid up front, and the creature has to survive long enough to collect.
+
+**The reason to reach for it is not variety.** Everything in the bestiary is currently built to the match, which means every creature in the world is colour-optimal. *A party is not going to be* — players draft under constraint, trade cards, take what a scene gave them. An off-ratio creature with a mechanic paying for it is the only kind whose difficulty comes from what it does rather than from being better-built than the people fighting it.
+
+**Measuring one.** `build_deck` in `combat-simulations/play.py` and `make` in `combat-simulations/encounter_budget.py` both take an explicit `colors` argument for this; without it the stats decide, as before. **A mechanic that is supposed to pay for an imbalance has to be measured against the matched version of the same creature**, or there is no way to know whether it paid.
+
+**Nothing in the bestiary does this yet**, and the first one should be small enough to be wrong cheaply.
+
 **Trading cards.** Cards change hands at the Underground Bazaar and effectively nowhere else (`places/capital/underground-bazaar.md`, The Card Economy). Selling is always possible and permanent; buying is rare, is paid for in cards, memories, or secrets rather than coin, and adds to what you hold rather than swapping into the deck — at the size cap that means the bought card lands in the bank until an advancement makes room for it. Everywhere else in the world a card is earned — from the Oracle, or from whatever taught it.
 
 **Signature cards follow the core set's conventions.** They are written for one stat block, but they are the same object as a core card and are read by the same players: same fields, same keyword vocabulary (numbered where the glossary numbers it), same Thorns ladder, and the same treatment of Range as a real cost. Range especially — a creature whose cards are all Both is a creature that never has to think about position, in a game that spends a third of the Oracle's design space teaching it. Signature cards ran 51% Both until 2026-09-09; they now sit at roughly a third each, leaning Melee because most things that attack you have to reach you first.
 
-**Enemy decks.** Deck size equals the creature's **total stats** — the same number the player rule caps at, except a creature has no bank and no advancement, so its deck is simply built to that size once and stays there (a few bosses are deliberately built under it; `bestiary/hullback.md` and `bestiary/fermata.md` say so on their own entries) — with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
+**Enemy decks.** Deck size equals the creature's **total stats** — that part is fixed — the same number the player rule caps at, except a creature has no bank and no advancement, so its deck is simply built to that size once and stays there (a few bosses are deliberately built under it; `bestiary/hullback.md` and `bestiary/fermata.md` say so on their own entries) — with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
 
 ---
 

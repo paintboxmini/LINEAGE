@@ -36,7 +36,9 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Maximum HP = (4 × Body) + Mind + Soul.** Body's share is weighted four times the other two.
 
-**Deck size = Body + Mind + Soul**, and each colour's card count equals its matching stat (`rules/cards.md`, Deck Building). The same rule builds every creature in the world, so a character's deck is the same size as a creature of the same weight.
+**Deck size = Body + Mind + Soul.** That part is the rule, for players and creatures alike, so a character's deck is the same size as a creature of the same weight.
+
+**Matching each colour's count to its stat is a heuristic, not a law** (`rules/cards.md`, Deck Building). It is a strong default — damage runs off the matching stat, so a matched deck has every card pulling at full strength — and a deck is still legal when it is off-ratio. **An off-ratio deck is simply worse unless something pays for it**, which is a design space rather than a mistake.
 
 ---
 
@@ -347,4 +349,4 @@ This is a different thing from banking a card, and the difference is whether you
 ## Open
 
 - Whether a card **permanently removed** from a deck returns to that player's advancement deck or leaves the game entirely
-- **Whether the colour rule is a law or a heuristic.** This file says *"each colour's card count equals its matching stat"* flat (What Stats Do, above), and so does `CLAUDE.md`; `rules/cards.md` says *"a heuristic, not a law: drafting through the Oracle can and should bend it."* A draft that does not tell players to match colours will produce decks that bend it on night one, so the two statements are about to disagree in front of everybody
+- **What pays for an off-ratio deck.** The imbalance is a real cost and the interesting version is a mechanic that answers it — see `rules/cards.md`, Deck Building, Paying for an off-ratio deck. Nothing in the bestiary does this yet
