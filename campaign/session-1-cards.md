@@ -10,9 +10,10 @@
 
 1. **Shuffle the 63.**
 2. **Deal three packs of nine.** The remaining 36 stay face down and untouched.
-3. **Traditional draft.** Each player takes one from their pack and passes; repeat until the packs are empty. Every player ends with **9 cards**.
+3. **Draft, and stop at six.** Each player takes one from the pack in front of them and passes left, six times. **Every player keeps 6.**
+4. **The 3 left in each pack go to review.** They do not go back in the deck.
 
-**Each player then holds 12** — nine drafted plus their three customs — **and builds a deck of nine.** Three go to the bank (`rules/character-creation.md`, Advancement). *They are cutting from the moment they start, which is the point.*
+**Six drafted plus three customs is a deck of nine, exactly** (`rules/character-creation.md`, Starting Deck). No bank at creation and nothing to cut — the draft hands over precisely what a starting deck holds, and every pick is a card that is definitely going in.
 
 ### The draft is cooperative and will be said out loud
 
@@ -38,9 +39,17 @@ Out of the **same Oracle**, now 36 cards:
 
 With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
-### The review pile is a design instrument
+---
 
-**A card that was put in front of somebody and passed over is data**, and this is the only moment in a campaign where three players' passes on nine cards happen under one set of eyes. It says nothing on its own — a card gets passed because the other two were better, or because the player had a plan. But a card that keeps turning up in that pile across sessions is a card to look at (`cards/tiers/README.md` — the answer is usually a tier move, not a rewrite).
+## The review pile, and why half of it is worth far more than the other half
+
+**Fifteen cards end up in review, and they are not the same kind of evidence.**
+
+**The 9 from the draft are the strong signal.** A card left in a pack after six picks wasn't unlucky — it sat in front of the table and got turned down. Three players taking six from a nine-card pack means **each pack passes each player exactly twice**, so a survivor was looked at and declined **six times, twice by every person at the table**, by players who were talking to each other about what they were taking.
+
+**The 6 from the advancement are the weak signal.** Each was declined once, by one player, against two other cards — which usually means the other two were better, not that this one was bad.
+
+*Worth keeping apart on the night. The draft remnant is the strongest free read on a card this table will ever produce; the advancement leftovers are barely a read at all.* A card that keeps landing in the strong pile across sessions is a card to look at, and the answer is usually a tier move rather than a rewrite (`cards/tiers/README.md`).
 
 ---
 
@@ -48,18 +57,18 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Cards | Where |
 |---|---|---|
-| Drafted | **27** | In players' hands — 9 each, of which 6 are in the starting decks and 3 in the bank |
-| Revealed at advancement | **9** | 3 taken by players, **6 to the review pile** |
+| Drafted and kept | **18** | 6 each — with 3 customs, that is the starting deck exactly |
+| Left in the packs | **9** | **Review — declined six times each** |
+| Revealed at advancement | **9** | 3 taken by players, 6 to review |
 | Never revealed | **27** | **The advancement decks** — split by character, assigned rather than dealt |
 
-**The 27 nobody saw are the point.** Split three ways that is roughly nine cards each to start an advancement deck with, and because they were never turned face up, no player has an expectation about them. The GM assigns each to the character it suits best (`rules/character-creation.md`, One Advancement Deck Per Player) — so from session two onward, what a player draws from is already shaped toward who they are.
+**The 27 nobody saw are the point.** Split three ways that is nine cards each to start an advancement deck with, and because they were never turned face up, no player has an expectation about them. The GM assigns each to the character it suits best (`rules/character-creation.md`, One Advancement Deck Per Player) — so from session two onward, what a player draws from is already shaped toward who they are.
 
-*And more than half the Oracle is never met on night one. A card the table has not seen yet is still a card that can arrive.*
+*And 36 of the 63 are never met on night one. A card the table has not seen yet is still a card that can arrive.*
 
 ---
 
 ## Open
 
-- **Whether the starting deck is 3 customs + 6 drafted, or 12 cards cut down to 9.** This procedure produces 12 in hand, and `campaign/chris.md`, `campaign/pat.md` and `campaign/kevin.md` all currently read *"3 custom cards plus 6 from the normal Oracle draft"* — written when the draft was expected to hand over exactly six. **The cards are the same either way**; what changes is whether a player starts with three in the bank or with none
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap
 - What the review pile is actually reviewed against, and when

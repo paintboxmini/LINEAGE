@@ -149,14 +149,14 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 1. Shuffle the Oracle. Deal **one pack of 9** to each player and set the rest of the deck aside unseen.
 2. Everyone looks at their own pack and takes **1 card**.
-3. Pass the pack **to the left**, and repeat until the packs are empty.
-4. Every player ends with **9 cards**, one from each pass.
+3. Pass the pack **to the left**, and repeat until every player has **9 cards total for their deck** — with three customs in hand that means **6 picks each**.
+4. **Stop there. The packs are not emptied**, and what is left in them does not return to the Oracle.
 
-**Closest to a trading-card draft, and the difference from Method Two is what stays hidden.** The Passing Piles divide the whole Oracle, so between them the table sees all of it. The Packs put a fixed 9 per player on the table and leave the rest of the deck face down — with three players that is 27 cards seen and **36 never looked at**. What is not drafted is not gone; it is simply unmet, and it is still in the deck for advancement (`Advancement`, below) and for whatever the advancement decks are built from afterwards.
+**Closest to a trading-card draft, and the difference from Method Two is what stays hidden.** The Passing Piles divide the whole Oracle, so between them the table sees all of it. The Packs put a fixed 9 per player on the table and leave the rest face down — with three players that is 27 cards seen and **36 never looked at**. What is not drafted is not gone; it is unmet, and still in the deck for advancement and for whatever the advancement decks are built from afterwards.
 
 *Needs exactly 9 cards per player, so the 63-card Oracle seats seven. Scales the same way Method Two does.*
 
-**A table running customs drafts past the cap on purpose.** A player with three signature cards ends the draft holding **12** — nine drafted plus three of their own — and a starting deck is nine. **The other three go to the bank** (`Advancement`, below), which means the first swap is available from the very first advancement rather than a rule nobody has used yet. *Building a deck by leaving three cards out is a better first lesson than building one by having exactly enough.*
+**The remnant is the method's real output.** Stopping early leaves a few cards in every pack, and those cards are not leftovers — **they are the ones the whole table declined, repeatedly, with the pack in front of them.** Three players picking six from a nine-card pack means each pack passes each player **twice**, so a card still sitting there at the end was put in front of somebody and turned down **six times**. Set them aside. That is the strongest read on a card the table will ever hand you for free, and it costs nothing to collect (`cards/tiers/README.md` — when it matters, the answer is usually a tier move, not a rewrite).
 
 ---
 
