@@ -70,6 +70,10 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **The other six have not happened.** They are named and nothing more, and they should stay that way — a spotlight card is noticed after a scene, not played toward. Acts III and IV are Chris's.
 
+**He collects them; he does not start with them** *(set 2026-09-24)*. His deck stays 3 customs + 6 drafted, the same shape as Kevin's and Pat's. **The objection to a full custom deck was never combat balance** — it is that a spotlight name is necessarily a narrow one, and a name is what a player spends outside combat (`rules/cards.md`, The Name Is Half the Card). Nine spotlight names is a hand that is beautiful in a fight and nearly mute outside one. *And a card handed over at creation is a plan; one that arrives after the scene is a memory.*
+
+**Acts I and II are both the cards he holds and the reason he is what he is.** That was asked as an either/or and it is not one.
+
 ## The Live Thread
 
 Story beats center on keeping the mind link off. It's not a switch he holds down — it's a door that could come open on its own, get forced from the other side, or slip without him meaning it to. What happens if it does isn't decided, and shouldn't be yet.

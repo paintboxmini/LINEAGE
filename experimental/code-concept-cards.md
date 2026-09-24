@@ -115,9 +115,37 @@ The concept deck defaulted to D&D 5e wherever it was uncertain. Most of it has a
 
 ---
 
+## Why the deck stays mostly drafted
+
+*Settled 2026-09-24. The pull toward giving Code all twelve as custom cards is real, and it loses more than it gains — and not for the reason anyone reaches for first.*
+
+**Combat balance is not the objection.** Twelve cards priced on the corpus conventions would fight fine. The cost is somewhere else entirely.
+
+**A custom deck spends its names badly.** `rules/cards.md`, The Name Is Half the Card, already says it: *"a name is a promise about the kinds of noncombat problems that card can help solve,"* and *"a broad name is a stronger card, whatever its Effect line says."* FOCUS supports nearly anything requiring concentration. CARD TRICK supports card tricks.
+
+**These twelve names are the CARD TRICK end of that.** They have to be — a spotlight name is a specific moment, and specificity is the entire point of it. SYNTHETIC RESILIENCE and DATA INGEST are precise and evocative, and neither one is getting discarded for Advantage on a conversation, a climb, or a lock. **A player holding nine of those has a hand that is beautiful in a fight and nearly mute outside one.** Code's own MEASURE was written around exactly this and the sheet says so: *broad enough to earn Advantage on a wide spread of checks* (`campaign/chris.md`). The principle was applied to one card; it applies to nine.
+
+**The table, counted.** Kevin, Pat and Code each run **3 customs + 6 drafted** (`campaign/kevin.md`, `campaign/pat.md`, `campaign/chris.md`). A twelve-custom Code would be the only character at the table with no drafted cards at all — which is not a power gap, it is a *different game* being played by one person, and the one whose sheet already has two Passives and a Trait nobody else gets.
+
+**And the draft pool was built for this.** The Oracle 63 and the expansion 21 (`cards/tiers/beginner.md`) exist as a first-campaign set, screened card by card. The six drafted slots are not filler around the interesting cards — they are the set doing its job.
+
+### So: he collects them
+
+**The twelve moments are real and he does not start with them.** They arrive as the scenes arrive, over however long that takes, and Acts III and IV are a long way off. What that buys, beyond fairness and beyond a hand that can still talk its way through a door:
+
+**A spotlight card that was handed over at character creation is a plan. One that arrives after the scene is a memory.** Collecting them is what makes the difference legible at the table — the card is the residue of something that happened, which is what Chris described in the first place.
+
+---
+
 ## Open
 
-- **All of it.** The deck is Code's and the reading is offered, not settled
-- Whether Acts I and II exist as cards he holds, or as the reason he is what he is
-- Whether the six remaining Oracle draft slots (`campaign/chris.md`, Deck) are where spotlight cards land, or whether spotlights sit outside the draft entirely
-- Which act the campaign is currently in, which is a question about Code rather than about the deck
+- **Which act the campaign is currently in.** A question about Code rather than about the deck
+- Whether the arriving spotlight cards consume Oracle draft slots or sit alongside them, and what that does to the nine-card cap over a long campaign
+- Whether Acts III and IV stay at three cards each, or whether the scenes that actually happen produce a different count
+
+---
+
+## Settled
+
+- **Acts I and II are both the cards he holds and the reason he is what he is.** The either/or was a false choice and Chris does not need to pick — *set 2026-09-24*
+- **He collects the twelve rather than starting with them** — *set 2026-09-24, reasoning above*
