@@ -145,6 +145,19 @@ This one plays differently. You see a whole pile at once, which means you also s
 
 *Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 63-card Oracle seats seven exactly, and the full 84 with the expansion seats nine. Past that the piles run dry before anyone finishes and the shared offer is the better method.*
 
+### Method Three — The Packs
+
+1. Shuffle the Oracle. Deal **one pack of 9** to each player and set the rest of the deck aside unseen.
+2. Everyone looks at their own pack and takes **1 card**.
+3. Pass the pack **to the left**, and repeat until the packs are empty.
+4. Every player ends with **9 cards**, one from each pass.
+
+**Closest to a trading-card draft, and the difference from Method Two is what stays hidden.** The Passing Piles divide the whole Oracle, so between them the table sees all of it. The Packs put a fixed 9 per player on the table and leave the rest of the deck face down — with three players that is 27 cards seen and **36 never looked at**. What is not drafted is not gone; it is simply unmet, and it is still in the deck for advancement (`Advancement`, below) and for whatever the advancement decks are built from afterwards.
+
+*Needs exactly 9 cards per player, so the 63-card Oracle seats seven. Scales the same way Method Two does.*
+
+**A table running customs drafts past the cap on purpose.** A player with three signature cards ends the draft holding **12** — nine drafted plus three of their own — and a starting deck is nine. **The other three go to the bank** (`Advancement`, below), which means the first swap is available from the very first advancement rather than a rule nobody has used yet. *Building a deck by leaving three cards out is a better first lesson than building one by having exactly enough.*
+
 ---
 
 ### Declaring a Price
@@ -292,7 +305,7 @@ The GM reveals **3 cards**; the player chooses **1** to add to their deck perman
 
 **So a card a character earns goes into that character's advancement deck and nowhere else.** The pools diverge from the split onward, and they are meant to — after a long campaign, what a player is drawing from is a record of who their character has become rather than a pile everyone shares.
 
-**What each deck holds at the split is not settled** (see Open, below).
+**What each deck holds at the split: the cards nobody ever saw.** Running Method Three (The Packs, above), the Oracle is only partly spent at creation — the drafted packs and the cards revealed at the first advancement are a fraction of it, and the rest was never turned face up. **That unseen remainder is what the advancement decks are built from, split by character rather than dealt at random**: the GM assigns each card to the player it suits. Nothing needs printing twice, and no card is in two decks at once.
 
 **Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
 
@@ -333,8 +346,5 @@ This is a different thing from banking a card, and the difference is whether you
 
 ## Open
 
-- **What each advancement deck holds at the split** (One Advancement Deck Per Player, above). The beginner pool is 84 cards — the Oracle 63 plus the 21-card expansion (`cards/tiers/beginner.md`) — and there are three ways to cut it, with different costs at the table:
-  - **A full copy each.** Every player draws from the same 84 for a long time. Cleanest to reason about, and it means printing four copies of everything
-  - **Dealt out at the split.** The one pool is divided between the players, so each deck is roughly 84 ÷ players and the pools shrink as they diverge. Nothing extra to print, and a card that lands in one player's deck is simply never available to another
-  - **Built per character.** Each deck seeded toward the character it belongs to. The most expressive and the most work, and it starts steering draws before the character has done anything to earn the steer
 - Whether a card **permanently removed** from a deck returns to that player's advancement deck or leaves the game entirely
+- **Whether the colour rule is a law or a heuristic.** This file says *"each colour's card count equals its matching stat"* flat (What Stats Do, above), and so does `CLAUDE.md`; `rules/cards.md` says *"a heuristic, not a law: drafting through the Oracle can and should bend it."* A draft that does not tell players to match colours will produce decks that bend it on night one, so the two statements are about to disagree in front of everybody

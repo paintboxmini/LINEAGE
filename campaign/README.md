@@ -13,6 +13,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |
 | `campaign/kevin.md` | Combat chef. The family pepper, Gemstone University, Skills, Passives, the craft, the ingredients, the drinks, the card drafts |
+| `campaign/session-1-cards.md` | **The draft and the first advancement** — how the 63-card Oracle is dealt, what the GM says about deckbuilding and what he deliberately doesn't, and where all 63 cards end up |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
 | `campaign/session-1-threads.md` | **The threads of the opening as modular pieces rather than a running order** — what each one is, how to touch it lightly, how deep it goes, and what skipping it costs |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
