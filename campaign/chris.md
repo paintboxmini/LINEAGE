@@ -1,6 +1,8 @@
 # Chris
 
-*Player character — light draft. No character name chosen yet; filed under the player's name until there is one.*
+*Player character — light draft. **The character's name is Code**, chosen by his player and set 2026-09-24; **the Silver Sword** is the epithet that came with it. The file stays at `campaign/chris.md` because the repo files player material under the player's name, and "Chris" throughout this file means the player.*
+
+**The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
 ## What He Is
 
