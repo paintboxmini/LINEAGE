@@ -205,9 +205,8 @@ values. The one exception is the small hint text under Price.
 > a section heading `TRAIT`, then one long empty write-in line beneath it,
 > the heading itself carrying no write-in line of its own;
 > a section heading `SKILLS`, then **two** long empty write-in lines beneath
-> it — two separate lines, each with a small `1` and `2` at its left end
-> before the rule begins, the heading itself carrying no write-in line of
-> its own;
+> it — two separate lines with nothing numbering them, the heading itself
+> carrying no write-in line of its own;
 > a section heading `PRICE`, followed immediately on the same line by small
 > hint text reading exactly
 > `I never / I must / I always / I cannot / Once I / Whenever`.
@@ -223,15 +222,19 @@ values. The one exception is the small hint text under Price.
 
 **Must not appear in the text pass:**
 
-> **no numerals, digits or numbers anywhere in the image** — every write-in
-> line and every slot is completely empty, with nothing written on or beside
-> it; no flourish crossing or overlapping a write-in line; no spirals or
+> **No numerals, digits or numbers anywhere in the image. No exceptions.**
+> Not written in a field, not beside a line, not numbering a list, not on the
+> stone, not in the margin art, not small, not faint, not decorative. **Every
+> write-in line and every slot is completely empty**, with nothing written on
+> or beside it. *If anything above appears to call for a number, it does not
+> — this rule overrides it.*
+>
+> And: no flourish crossing or overlapping a write-in line; no spirals or
 > scrollwork filling the blank writing space; no illegible, misspelled or
 > over-ornamented words; no blackletter, no gothic script; no continuous
 > decorative border framing the whole page; no equipment, weapon, armour or artifact section; no inventory; no
 > stat names anywhere — never write Body, Mind or Soul, and never label the
-> circles; no sample or placeholder values in any field; no numbers except
-> the small `1` and `2` beside the two skill lines; no extra sections, no
+> circles; no sample or placeholder values in any field; no extra sections, no
 > flavour text, no page number, no title, no signature, no logo.
 
 ---
