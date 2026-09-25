@@ -6,7 +6,7 @@
 
 ---
 
-Small, translucent, roughly the size of a thumbnail, and never once seen alone. A Driftfire has no way of going anywhere: no fins, no tail, nothing that pushes. **The current is its entire means of travel**, and that is the whole animal.
+Small, translucent, roughly the size of a thumbnail, and never once seen alone — **and most of it is the threads**, yards of them trailing behind a body you could hide under a fingernail. A Driftfire has no way of going anywhere: no fins, no tail, nothing that pushes. **The current is its entire means of travel**, and that is the whole animal.
 
 **They arrive in the thousands.** A bloom is not a group of them, it is a condition the water is in — a stretch of river gone faintly cloudy in daylight, thick enough in places that a dipped oar comes up coated. **Nobody fights a bloom.** There is nothing to hit, nothing that can be driven off, and no number you could kill that would matter.
 
@@ -29,9 +29,35 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone. 
 
 *And the two ends of the web are always on opposite tides.* A bloom stalled near the coast means the inner web is running hard, which is worth knowing to anybody deciding whether to wait it out or go the long way round.
 
+## How It Holds You
+
+*Set 2026-09-25.* **No toxin. The burn and the trap are the same event.**
+
+**Each animal trails threads measured in feet** — a thumbnail of body and yards of line behind it, the way a man o' war is mostly tentacle. **A bloom is not a cloud of animals, it is a curtain**: thousands of them at every depth, threads overlapping into a mesh through the entire water column.
+
+**The threads fire barbs on contact.** Thousands of microscopic anchors, mechanical rather than chemical, embedding in whatever brushes them. *That is the burn* — not venom working through you, just ten thousand tiny hooks set into skin at once, which is agony and which does not need a drop of poison to be.
+
+**And every barb is a tether.** This is the whole design and the reason there is nothing to counter:
+
+- **The burn is the grip.** You are not stung and then held; being stung *is* being held.
+- **Struggling gathers more.** Every movement sweeps fresh threads onto you, so the instinct that saves a swimmer anywhere else is the one that finishes them here.
+- **There is nothing to escape from.** No animal has hold of you. **Ten thousand of them do, none of which knows it**, and killing any number changes nothing.
+
+**Near the edge you can drag yourself out**, wearing threads, and be wrecked for a week. **Deep in one, you do not.** *The difference is distance, not effort.*
+
+## What It Eats
+
+**Whatever it is stuck to.** It cannot hunt, cannot choose, and cannot pursue — **it is a filter feeder that got enormous by being numerous**, and the only thing it has ever done is process what the current brings against it.
+
+**A fish, a bird, a person, twenty feet of Deepmane — the same to it, and none of them noticed.** Consumption takes hours and the bloom is moving the whole time.
+
+**So the dead travel.** A body caught in a bloom drifts with it, getting cleaner, for as long as that takes. **You do not find them where they went in.** They come ashore somewhere down the loop, days later, past a town or two that never heard about it — bones and whatever was on them, and the river has gone round.
+
+*A web that goes round forever returns what it takes, in its own time, to somebody who was not there.*
+
 ## What It Costs
 
-**It burns.** Not a wound and not poison in the sense of something that goes on working — a searing that arrives on contact and gets worse for a while before it fades. **Anyone in the water is in serious trouble. Anyone in a boat is inconvenienced**, and the whole character of the hazard lives in that gap.
+**Anyone in the water is in serious trouble. Anyone in a boat is inconvenienced**, and the whole character of the hazard lives in that gap.
 
 **The boat problem is the oars and the lines.** You can row through a bloom exactly once before the crew's hands are the problem, and a pullway line dragged up out of coated water has to be handled by somebody. *Most of what arrives at the Nest was rowed or hauled rather than sailed* (`places/vultures-nest.md`), which means a bloom lands hardest on precisely the traffic this web runs on.
 
@@ -44,6 +70,8 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone. 
 **The Riverdogs come out.** They swim, and deep water is not a barrier to them (`factions-and-races/races-riverdogs.md`) — which makes them the people in the web with the most to lose to a stretch that burns on contact. **A bloom puts them on the bank or on a deck**, doing whatever they do up there, for as long as it sits. *What that costs them and what they do about it is theirs and is not written here.*
 
 **And it kills Deepmanes.** Not a hazard to them, not something they endure — **deadly**. Twenty feet of animal that stands vertical in the current has no version of a bloom it survives, so it goes deep, stays there, and does not come up.
+
+*The body plan is the worst one available for this.* A ribbon stands in the water and ripples, holding its place in the current like a held note (`bestiary/deepmane.md`) — **enormous surface area, and an animal that holds position rather than fleeing.** It does not get stung to death. **It gets anchored to a mile of drifting thread and carried**, and a creature whose whole talent is keeping its place is taken off its place by something that cannot swim either. *Two things that cannot move, moving together.*
 
 ### The one danger they cannot mark
 
@@ -63,7 +91,8 @@ A Deepmane surfacing over bad water is the clearest danger mark on the river (`b
 
 ## Open
 
-- **What the burn does mechanically**, if anything. It may want nothing at all — a hazard whose entire weight is *you cannot go this way* is a complete hazard, and the repo has one already (`bestiary/future-lock-wasp.md`)
+- **What the burn does mechanically**, if anything. It may want nothing at all — a hazard whose entire weight is *you cannot go this way* is a complete hazard, and the repo has one already (`bestiary/future-lock-wasp.md`). *If it does want something, the fiction points at movement rather than damage: the threads hold.*
+- **How far in is too far in.** The edge is survivable and the middle is not, and where that line sits is the difference between a frightening swim and a death
 - **How often it comes round**, which is the dial the whole thing turns on and should probably stay a rumour rather than a number
 - **What the Riverdogs do while they are out of the water.** That they come out is set; what it costs them and how they handle it is theirs (`factions-and-races/races-riverdogs.md`)
 - **Whether a Deepmane ever gets caught by one**, and what a dead one on the bank does to the people who fed it
