@@ -67,19 +67,29 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone �
 | One push further in | 10 | 15 |
 | Further again | 20 | 35 |
 
-**Eight failures and you are held.** Failures accumulate across the whole immersion and **do not reset between bands** — threads gather, which is the entire mechanism.
+**Six failures and you are held.** Failures accumulate across the whole immersion and **do not reset between bands** — threads gather, which is the entire mechanism.
 
 **What that produces, which is the point:**
 
-| | Body 2 | Body 3 | Body 4 | Body 5 |
+| | Stat 2 | Stat 3 | Stat 4 | Stat 5 |
 |---|---|---|---|---|
-| Perimeter | 0% | 0% | 0% | 0% |
-| One step in | 91% | 50% | 9% | 0.1% |
-| Deep | 100% | 100% | 94% | 22% |
+| **Perimeter** | 0% | 0% | 0% | 0% |
+| **One step in** | 99% | 85% | 38% | 3% |
+| **Deep** | 100% | 100% | 99% | 54% |
 
-**The edge is free for everybody**, which is what the fiction promised. **One step in is a genuine decision and a different one for each character.** **Deep is where people are lost.**
+**The edge is free for everybody.** **Deep is where people are lost.** And the second ring is the decision, which is why it is written as a number you can feel rather than a wall.
+
+**It gets worse the longer you stand in it**, because the per-turn save keeps adding (Struggling, and standing still, below). A stat-4 in the second ring:
+
+| Entry | +1 turn | +2 | +3 | +5 |
+|---|---|---|---|---|
+| 38% | 45% | **52%** | 59% | 70% |
+
+***The plunge is not what catches you. The staying is.*** A character who goes one ring in, does what they came to do and gets out has good odds. One who goes in and then stands there deciding is at a coin flip inside two turns, and has no idea that is what happened.
 
 *DC 7 rather than 6 for one reason: at DC 6 a stat of 5 cannot roll a failure at all, and a hard immunity sitting at the top of a range players can reach at creation is not a thing this hazard should hand out.*
+
+*Threshold 6 rather than 8, set 2026-09-25 after measuring. At 8 a stat-4 entering the second ring was caught 9% of the time, which made the middle of a bloom safer than it reads and put the whole hazard on the deep band. Six is where the second ring becomes the decision it is written as.*
 
 **Any stat, if the player can say why.** Negotiable is the default in this game and a locked stat is a design decision (`rules/resolution.md`, Core Resolution) — **this hazard deliberately does not lock one.** Body for hide, fur, or sheer bulk between you and the threads. Mind for knowing not to thrash and working out where the mesh thins. Soul for holding still while it burns, which is the hardest thing on this list. *A player who argues well has already earned it; the argument is the good part of the scene.*
 
@@ -116,9 +126,17 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone �
 
 ### Being held
 
-**It is a rescue, not a death** — the same shape as the Weald's wasps (`bestiary/future-lock-wasp.md`, GM Notes). A held character is not gone, they are **being consumed slowly while the bloom carries them**, and somebody has to come and get them.
+**It is a rescue, not a death** — the same shape as the Weald's wasps (`bestiary/future-lock-wasp.md`, GM Notes). A held character is not gone. They are **held, burning, and being consumed**, and somebody has to come and get them.
 
-**And the rescuer pays the same toll.** Reaching someone means entering their band and taking its saves, on top of whatever you gathered getting there. *That is what stops the rescue being a free undo, and it is why the decision about how far in to go was always a decision about everybody.*
+**Dying of it takes days.** *Set 2026-09-25, and it is the most important number here.* Not a round, not a scene — **a couple of days**, because the thing eating you is a filter feeder with no teeth and no hurry, working through whatever the current pressed against it. **So being held is never the moment somebody is lost. It is the moment a clock starts, and the clock is long.**
+
+**Which turns the rescue into a journey rather than a turn.** The bloom does not wait to be caught up with — *it drifts the whole time* (It Goes Round, above). A person held on Tuesday is somewhere else by Thursday, still alive, still in it, and getting there means chasing a moving stretch of river down the loop, reading the tide to work out where it went, and going into the water again at the far end.
+
+***That is the good version of this hazard and it is the whole reason the days matter.*** A held character is not a death to be undone in the next round. **They are a place on a map that is moving**, and everyone who loves them knows roughly where it is going.
+
+**And the rescuer pays the same toll.** Reaching someone means entering their band and taking its saves, on top of whatever they gathered getting there. *That is what stops the rescue being a free undo, and it is why the decision about how far in to go was always a decision about everybody.*
+
+**What washes up is what nobody reached in time.** Bones, days later, a town or two down the loop — the same drift, run to the end of it (What It Eats, above).
 
 ## What It Eats
 
@@ -166,7 +184,6 @@ A Deepmane surfacing over bad water is the clearest danger mark on the river (`b
 
 ## Open
 
-- **How long a held character has** before being held becomes being dead. The rescue window is the number that decides whether this hazard is frightening or lethal, and it should be measured against a real party rather than guessed
 - **Whether a bloom ever catches a boat**, rather than the people in it — a hull passes through, but a fouled pullway line attached to a moving bloom is a different problem
 - **How often it comes round**, which is the dial the whole thing turns on and should probably stay a rumour rather than a number
 - **What the Riverdogs do while they are out of the water.** That they come out is set; what it costs them and how they handle it is theirs (`factions-and-races/races-riverdogs.md`)
