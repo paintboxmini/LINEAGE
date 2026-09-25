@@ -182,6 +182,34 @@ A Deepmane surfacing over bad water is the clearest danger mark on the river (`b
 
 **A mile of river lit from inside**, cold and shifting and bright enough to read by at the bank. It is the most beautiful thing most people on this water will ever see, and it means their week is ruined, **and those are not two facts about it.** People come down to the bank to look. They look while they are working out what it is going to cost them.
 
+## GM Note — the session a player cannot make
+
+*Drew's, 2026-09-25. **This is what the days are for at a real table**, and it is worth writing down while it is obvious.*
+
+**When you know a week ahead that somebody will be out: end the session before with their character going into a bloom.**
+
+**Then run the night they are absent as the rescue.** The party chases a stretch of river down the loop, reads the tide to work out where it went, and goes into the water at the far end. The missing player's character is not benched, hand-waved or quietly off-screen — **they are the entire session.**
+
+### The split is the reason it works
+
+**The player is there for their own disaster** — the decision to go in, the panic, the saves going wrong — and away for the rescue.
+
+***That is the right half to miss.*** A rescue is the one scene that plays better heard about than lived, because its weight sits on the people doing it rather than the person being carried. **The usual version of this trick fails by handing a character their biggest moment while their player is out of the room. This one does the opposite:** the big moment is the one they were present for, and they come back to a table that spent a whole night on them.
+
+### Lucid, and fragmentary
+
+**Days held in the water, being consumed, drifting the whole time — and awake for it.**
+
+**What they keep is not a sequence.** They know it was long. They know it was bright. They cannot put it in order and they cannot say how many nights. *Give the player the texture and refuse them the timeline* — enough that the experience is real and theirs, and not so much that somebody else wrote their interior while they were away.
+
+**Do not narrate it at them on their return.** Ask what they remember. **Fragmentary means they get to decide which pieces surfaced.**
+
+### Two more things
+
+**It is a stat increase on both ends, by the ordinary rule** (`rules/character-creation.md`, Stat Increases) — a moment where something genuinely and permanently changes. **The person who was held has one. So does whoever went in after them.**
+
+**And it is a once-or-twice tool.** It has to be set up a session ahead, so it cannot be improvised — *and running it twice turns a catastrophe into a scheduling convention.* Spend it on the right absence rather than the first one.
+
 ## Open
 
 - **Whether a bloom ever catches a boat**, rather than the people in it — a hull passes through, but a fouled pullway line attached to a moving bloom is a different problem
