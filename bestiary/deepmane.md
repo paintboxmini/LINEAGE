@@ -68,6 +68,34 @@
 
 ---
 
+### The signal can be counterfeited
+
+*Set 2026-09-25, and it leans on Ollie's race, so the half that belongs to her is marked below.*
+
+**Sirens take the form of fish they have seen, and a Deepmane is one of the two shapes named** (`experimental/ollies-island.md`, Approved 2026-09-25).
+
+**Which means a Deepmane standing in open water is not proof of a Deepmane.** It is proof of something in that shape — *and there is no way to tell by looking, because there is nothing to tell.* The form is the form.
+
+**So the most trusted mark on this river can be faked, and it would be believed.** A siren could stand up over safe water and empty a channel. A siren could stand up over bad water and save a crew that never learns who did it. **Both work, for the same reason the real thing works**, and a person on a boat has no way to sort them.
+
+**This does not make the Deepmanes into sirens.** *The arrangement above is real, the animal is an animal, and the bread is bread.* What exists now is a second thing that looks identical to the first, and the world has no method for separating them.
+
+**Why it happens at all is arithmetic rather than character.** A large enough population will always contain some who will do this, whatever the rest of them think of it — *no cultural claim about sirens is needed to get here, and none is made.*
+
+### The tell is behaviour, not appearance
+
+**Nothing about the shape gives it away. What gives it away is a Deepmane doing something Deepmanes do not do.**
+
+**Which means the only people who can catch it are the people who know the animal** — the Riverdogs, who have watched them come up for bread for as long as there has been an arrangement. **Everyone else on the water sees a Deepmane and reads a Deepmane.** *A crew that has never fed one has no baseline to notice a deviation from.*
+
+*That is a very good scene and it is not the party's to win easily: somebody on a Riverdog boat goes quiet, watching the water, and cannot explain what is wrong in a way that would convince anybody who was not raised on it.*
+
+### Offered to Ollie, not decided
+
+**If she likes it, misleading people could become a defining thing about sirens** — not a few opportunists inside a big population, but something the race is known for and perhaps proud of.
+
+**That is a much bigger claim and it is entirely hers.** *What is written above deliberately does not require it:* the counterfeit works on population size alone, and nothing here says what sirens are like. **If she takes it further, this section gets rewritten around her answer. If she does not, it stands as it is.**
+
 ## Not Yet Set — and most of it is Drew's
 
 *~~Who is on this water~~, ~~whether anyone can go down there~~ and ~~why it surfaces~~ were the big three and Drew answered all of them on 2026-09-22: **the Riverdogs swim, and it comes up on purpose** (The arrangement, above).*
