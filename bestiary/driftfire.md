@@ -37,6 +37,24 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone. 
 
 **So the real cost is time, and the decision is a trade.** Wait it out, go the long way against the grain, or push through and pay in a crew that cannot work tomorrow. *None of those is a fight and all three are a scene.*
 
+## It Empties the River
+
+*Set 2026-09-25.* **A bloom does not only close the surface. It closes the whole column, and everything that works this water is out of it for the duration.**
+
+**The Riverdogs come out.** They swim, and deep water is not a barrier to them (`factions-and-races/races-riverdogs.md`) — which makes them the people in the web with the most to lose to a stretch that burns on contact. **A bloom puts them on the bank or on a deck**, doing whatever they do up there, for as long as it sits. *What that costs them and what they do about it is theirs and is not written here.*
+
+**And it kills Deepmanes.** Not a hazard to them, not something they endure — **deadly**. Twenty feet of animal that stands vertical in the current has no version of a bloom it survives, so it goes deep, stays there, and does not come up.
+
+### The one danger they cannot mark
+
+**This is the hole it opens, and it is the whole reason the two animals belong in the same paragraph.**
+
+A Deepmane surfacing over bad water is the clearest danger mark on the river (`bestiary/deepmane.md`, The arrangement). **The marking system covers everything except the thing that kills the marker.** A bloom is the one hazard a Deepmane cannot stand up in, so it is the one hazard the river never flags — *and the river stops flagging everything else at the same time*, because the animals are down and staying down.
+
+**So a bloom does not just block a stretch. It blinds the water around it.** The bad channels are still bad. Nothing is standing over them. **And that outlasts the bloom**, because a hazard that took days to arrive does not get marked again the instant the burn clears.
+
+**The feeding stops too.** Nobody is throwing bread over the side to an animal that will not come up, and nothing comes up to take it. *The arrangement is not broken — it is simply not happening, the way a thing you do every day stops when the conditions for it do.*
+
 ## At Night
 
 **By nightfall the world is pitch black** (`world/eclipseria-overview.md`). And a bloom does not stop glowing when the light goes.
@@ -47,6 +65,6 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone. 
 
 - **What the burn does mechanically**, if anything. It may want nothing at all — a hazard whose entire weight is *you cannot go this way* is a complete hazard, and the repo has one already (`bestiary/future-lock-wasp.md`)
 - **How often it comes round**, which is the dial the whole thing turns on and should probably stay a rumour rather than a number
-- **What the Riverdogs do about it.** They swim, and a bloom is worse for anybody in the water than anybody above it — so it is a real problem for them and the answer is theirs, not this file's (`factions-and-races/races-riverdogs.md`)
-- **Whether a Deepmane marks a bloom** the way it marks dangerous water (`bestiary/deepmane.md`). Tempting, and it runs straight into the arrangement, so it is not settled here
+- **What the Riverdogs do while they are out of the water.** That they come out is set; what it costs them and how they handle it is theirs (`factions-and-races/races-riverdogs.md`)
+- **Whether a Deepmane ever gets caught by one**, and what a dead one on the bank does to the people who fed it
 - **Whether anything eats them**, and whether a bloom is a feast for something else that follows it round

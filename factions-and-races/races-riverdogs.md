@@ -10,6 +10,7 @@ There is currently no description, no territory, no culture, and no named Riverd
 
 - **They swim**, and well enough that deep water is not a barrier to them.
 - **They have an arrangement with the Deepmane** (`bestiary/deepmane.md`, The arrangement): scraps and bread over the side, and in exchange an enormous bright-maned animal stands up out of the river over the dangerous water. **Neither side finds this remarkable.**
+- **A Driftfire bloom forces them out of the water** (`bestiary/driftfire.md`) *(2026-09-25)*. It burns on contact and it sits on a stretch for as long as the tide is slow, so the people who are most at home in deep water are the ones it puts on the bank. **The Deepmanes are down too — it kills them — so the danger marks stop at the same time.** *What any of that costs them, and what they do while they wait, is theirs.*
 
 **And the file stays short on purpose.** *Drew's note: the name already tells him who these people are — behaviours, mannerisms and culture all follow from it, which is why this is the easiest race in the roster for him and the least urgent to write down.* **So nothing should be filled in here on his behalf.** An assistant that writes Riverdog culture is not helping; it is taking the one race he does not need help with.
 

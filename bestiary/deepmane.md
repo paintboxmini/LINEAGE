@@ -56,6 +56,14 @@
 
 *An outsider watching this happen for the first time is having a much bigger experience than anybody else on the boat.*
 
+### The one thing it cannot mark
+
+*Set 2026-09-25.* **Driftfire is deadly to them** (`bestiary/driftfire.md`). A bloom burns on contact and a Deepmane surfaces by standing twenty feet of itself vertically through the top of the water — *there is no version of that it survives.* **So it goes deep and it does not come up.**
+
+**Which means the marking covers every danger except the one that kills the marker.** A bloom is the single hazard a Deepmane can never stand over, and while one sits on a stretch **nothing is standing over anything else either.** The bad channels do not stop being bad. They stop being flagged.
+
+*And the feeding stops with it.* Nothing to throw bread to, nobody in the water to throw it. **The arrangement is not broken, it is just not happening** — and it resumes the way it stopped, without anybody marking the occasion.
+
 **What it means for a party.** A Deepmane standing in open water is a **danger marker**, and a party that does not know that reads it as an omen, a monster, or a wonder. **All three readings are wrong and all three are what the table will do.** *Let them be wrong. Somebody will tell them eventually, and the telling is better than the knowing.*
 
 ---
@@ -71,7 +79,7 @@
 - **What outsiders are allowed to do.** Can a party feed one? **Would a Riverdog let them?**
 - **Whether the mane keeps its colour out of the water**, whether the scales keep theirs, and what a dead one is worth to anybody, Senshi included.
 - **Whether they are one animal or several.** The mane colour is not fixed between individuals.
-- **Whether anything down there eats them.**
+- **Whether anything down there eats them.** *Nothing has been found that does — but something kills them, and it is a thumbnail-sized animal that cannot swim (`bestiary/driftfire.md`).*
 
 ---
 
