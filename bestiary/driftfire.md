@@ -83,6 +83,37 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone �
 
 **Any stat, if the player can say why.** Negotiable is the default in this game and a locked stat is a design decision (`rules/resolution.md`, Core Resolution) — **this hazard deliberately does not lock one.** Body for hide, fur, or sheer bulk between you and the threads. Mind for knowing not to thrash and working out where the mesh thins. Soul for holding still while it burns, which is the hardest thing on this list. *A player who argues well has already earned it; the argument is the good part of the scene.*
 
+### Struggling, and standing still
+
+*Set 2026-09-25.* **Two rules, and between them they are the whole tactical shape of being in a bloom.**
+
+**Every turn you start in the same part of a bloom, take one save.** Not the band's count again — one. **Standing still is cheap**, and it is meant to be: a stat-4 character holding position gathers a failure every three turns and can wait a long time to be reached.
+
+**Every time you struggle, fight, thrash or try to tear free, the DC goes up by 1 — and it stays up.** Permanently, for as long as you are in the water. *The threads are on you now; that is not a penalty the GM applies, it is the mechanism doing what the fiction always said it does.*
+
+**Which gives the ladder its own rule, and it is worth saying out loud at the table once:**
+
+| Stat | Saves fail on | Struggles until every save is automatic |
+|---|---|---|
+| 2 | 1–4 | **2** |
+| 3 | 1–3 | **3** |
+| 4 | 1–2 | **4** |
+| 5 | 1 | **5** |
+
+**Your stat is how many times you get to panic.** After that the die stops mattering and every save is a failure, and nobody has to be told what that means.
+
+### The three ways to be in a bloom
+
+**Hold still** — one save a turn, and the arithmetic says you can do it for a long time. *The correct play, and the hardest one to actually make while it burns.*
+
+**Move** — a band's worth of saves, 5 or 10 or 20 depending on which way and how deep. **Expensive and sometimes right**, because the way out is also a move.
+
+**Fight it** — +1 DC, forever, and there is nothing on the other end of it. **There is no number of threads you can break.** A stat-4 who panics three times has gone from failing a third of their saves to failing five in six, and will be held in about as many turns as a calm one lasts in twenty.
+
+*That gap is the encounter. Everything else is scenery.*
+
+**Expect everyone to roll a 4.** The stat is negotiable (above), the party are specialists, and a table of people arguing for their best stat is the correct and predictable outcome — **so the numbers here are tuned against 4 rather than against an average.** *A pleasant side effect: the stat you talked your way into is also the number of panics you bought.*
+
 ### Being held
 
 **It is a rescue, not a death** — the same shape as the Weald's wasps (`bestiary/future-lock-wasp.md`, GM Notes). A held character is not gone, they are **being consumed slowly while the bloom carries them**, and somebody has to come and get them.
