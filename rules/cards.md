@@ -37,15 +37,21 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue sits in the middle** — Ranged is a real restriction, but a softer one than Melee.
 - **Green is the most flexible**, so it is paid the least. Both-range is the default, and the default die is small.
 
-*Measured 2026-09-19, across the core pool as it stood that day. **It is a snapshot and it is meant to be** — the table is a record of what the corpus did, not a live count. For the size of the pool now, see `printing/manifest.txt`.*
+*Re-measured 2026-09-25 across all 163 colour-list cards.*
 
 | Colour | Melee | Ranged | Both | mean die |
 |---|---|---|---|---|
 | **Red** | 53% | 17% | 30% | **6.27** |
 | **Blue** | 28% | 60% | 12% | **5.36** |
-| **Green** | 15% | 30% | 56% | **5.04** |
+| **Green** | 15% | 30% | 55% | **5.02** |
 
-**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.93.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.93.
+**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.91.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.90.
+
+<!-- print:skip-start -->
+*Six days on from the first measurement, three numbers moved and all three are Green: Both 56% → 55%, Green's mean die 5.04 → 5.02, and Green Both d4.93 → d4.90. **That is one card.** SEED was Green, Both, d6 and left the core pool on 2026-09-20 to become Chris's (`cards/chris.md`), which drops a card from the band and pulls its mean down. Everything else is identical to the digit.*
+
+***This table cannot be cited from elsewhere, because it prints.*** It is in the play reference players read at the table (`printing/generate-rules-pdf.py`), so a pointer to a regenerated file would be a pointer to nothing on paper. **It is the one set of measured numbers in this repo that has to be re-measured by hand when the pool moves** — the card counts do not, and live in `printing/manifest.txt`. Re-measure it whenever a card enters or leaves the core lists.*
+<!-- print:skip-end -->
 
 **What this is for.** It tells you what a new card should cost before you argue about it: a Both-range card wants a small die whatever colour it is, and a Melee card has already paid for a big one. It also tells a player something real at character creation — **a Mind- or Soul-primary character drafts from a smaller-dice pool than a Body-primary one**, by roughly half a point of expected damage per card, and is being paid for it in reach and flexibility rather than shortchanged.
 
