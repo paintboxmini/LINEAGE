@@ -57,7 +57,20 @@ python3 generate-sheets.py >/dev/null 2>&1 || { echo "  FAILED: character sheets
 
 # Which HTML actually moved? Only rebuild PDFs for those — a Chrome launch each
 # is the slow part, and an unchanged sheet doesn't need one.
-mapfile -t CHANGED < <(git status --porcelain -- '*.html' | awk '{print $2}')
+#
+# This used to ask git, which only worked because the HTML was committed. It
+# is build output now and is not, so the comparison is against manifest.txt —
+# the tracked record of what every artifact last hashed to. Same check, one
+# readable line per sheet instead of eight thousand lines of markup, and it
+# no longer depends on the working tree being clean to be meaningful.
+BEFORE="$(mktemp)"; AFTER="$(mktemp)"
+trap 'rm -f "$BEFORE" "$AFTER"' EXIT
+[ -f manifest.txt ] && cp manifest.txt "$BEFORE" || : > "$BEFORE"
+python3 manifest.py --print > "$AFTER"
+
+mapfile -t CHANGED < <(
+  diff --changed-group-format='%>' --unchanged-group-format='' \
+       "$BEFORE" "$AFTER" 2>/dev/null | awk '!/^#/ && NF {print $1 ".html"}')
 
 # The HTML is no longer the whole input. Cards reference fonts and stock
 # textures out of assets/, so an asset can change while every .html stays
@@ -112,9 +125,10 @@ else
   echo "Every PDF is present and current."
 fi
 
+python3 manifest.py >/dev/null
 echo
-echo "Done. The PDFs are not tracked — nothing to commit but the HTML."
-# --check is about the committed artifacts, which are the HTML. A missing
+echo "Done. Neither the HTML nor the PDFs are tracked — commit manifest.txt."
+# --check is about the committed record, which is manifest.txt. A missing
 # PDF is the normal state of a fresh clone, not a finding.
 if [ "$CHECK" -eq 1 ] && [ ${#CHANGED[@]} -gt 0 ]; then exit 1; fi
 exit 0

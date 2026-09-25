@@ -8,9 +8,9 @@ __pycache__/
 # it does for prose. See printing/README.md.
 printing/*.pdf
 
-# The named-character sheet build. `generate-sheets.py` with no arguments
-# makes the blank handout, which is tracked; naming characters makes this
-# instead, which never has been. It is a filled copy of what is already in
-# `campaign/`, so it is output rather than source, and it was landing in the
-# tree untracked every time anybody ran the named build.
-printing/character-sheets-filled.html
+# The generated HTML, same reasoning as the PDFs and applied later. Fifteen
+# files, eight thousand lines, rewritten by ninety-six commits in three
+# weeks, and nobody reads them. What they were for was the staleness diff,
+# and `printing/manifest.txt` does that in fifteen lines instead — one per
+# artifact, with a hash. The HTML is output; the manifest is the record.
+printing/*.html

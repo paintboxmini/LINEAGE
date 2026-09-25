@@ -12,8 +12,28 @@ here is edited by hand except the scripts themselves.
 ```
 
 That is the whole workflow. It regenerates the HTML from `cards/`, `rules/`
-and `characters/`, then builds a PDF for anything whose HTML changed or
-whose PDF is missing.
+and `characters/`, then builds a PDF for anything that moved or whose PDF is
+missing.
+
+**Nothing it generates is tracked.** Not the PDFs, and — since 2026-09-25 —
+not the HTML either. **What is tracked is `manifest.txt`**: one line per
+artifact saying what it holds and what it hashes to.
+
+```
+card-print-oracle               63 cards  64f334fa084a
+card-print-core                165 cards  e538ef9eec7e
+character-sheets                4 sheets  39b0a7b322a9
+```
+
+**That file is the staleness check**, and the check is the reason this script
+exists at all. Rebuild everything, and a changed hash names the sheet a rules
+edit quietly invalidated. It replaced fifteen committed HTML files — eight
+thousand lines, rewritten by ninety-six commits in three weeks — that nobody
+ever read. *A fifteen-line diff gets read. An eight-thousand-line one does
+not, which meant the check was technically running and practically invisible.*
+
+`manifest.py` rewrites it; `generate-all.sh` calls that for you and commits
+nothing. **After a rebuild, `manifest.txt` is the only thing to commit.**
 
 **It needs headless Chrome for the PDF step**, and nothing else — the
 Python is standard library only, same as `combat-simulations/`. Point it
@@ -29,7 +49,9 @@ if you need a sheet and have no Chrome to script.
 
 ## PDF format conventions — the part the repo actually needs to keep
 
-**Drew's workflow, stated 2026-09-22: the PDFs get generated in chat, not here.** He is on a phone and has no terminal, so `./generate-all.sh` is something an agent runs, never him. **What this repo has to preserve is the recipe**, so that a PDF built in a chat session six months from now comes out looking like the ones built today.
+**Drew's workflow, stated 2026-09-22 and widened 2026-09-25: the printed
+artifacts get generated in chat, not here — and the repo keeps recipes rather
+than sheets.** He is on a phone and has no terminal, so `./generate-all.sh` is something an agent runs, never him. **What this repo has to preserve is the recipe**, so that a PDF built in a chat session six months from now comes out looking like the ones built today.
 
 *Everything below is the recipe. None of it needs a shell to read.*
 
