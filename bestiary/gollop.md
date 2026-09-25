@@ -1,6 +1,6 @@
-# Flagneck
+# Gollop
 
-***The name is a proposal, 2026-09-24.*** *Drew described the animal and did not name it. **Flagneck** is offered because the neck is the part that matters to anyone who meets one — it swells red before the first rock comes, which is the only warning anybody gets and the whole reason a person survives the encounter. Alternatives worth the same consideration: **Scree Ape**, plain and dockside; **Sandmantle**, for the coat.*
+***Named 2026-09-25.*** *A **gollop** is the noise, and the noise is what a dock town would have named it for. Nobody in Vulture's Nest was ever going to name an animal after its anatomy — they named it after the sound that means get off the rock.*
 
 *Lives in the sandstone high country north of Vulture's Nest (`places/vultures-nest.md`, The Shape of the Ground).*
 
@@ -10,7 +10,7 @@
 
 **Built like a chimpanzee, and close enough that nobody reaches for another comparison.** Same size, same shoulders, same way of going on all fours and then not.
 
-**The coat is brown sandstone.** Not sandy, not tan — *the rock*, the exact brown of the cliffs behind the Nest, down to the way it takes the light. A Flagneck holding still on a rock face is not camouflaged so much as absent. People who have spent their lives looking at that cliff still walk under them.
+**The coat is brown sandstone.** Not sandy, not tan — *the rock*, the exact brown of the cliffs behind the Nest, down to the way it takes the light. A Gollop holding still on a rock face is not camouflaged so much as absent. People who have spent their lives looking at that cliff still walk under them.
 
 **A band of black fur across the eyes**, about an inch deep, running level and continuing around the skull in a closed ring. It is the only hard line on the animal and it reads at distance — which means the moment you can see the band, you have been close enough to be hit for a while.
 
@@ -18,7 +18,7 @@
 
 ## The Warning
 
-**The patches inflate with the call.** Neck swells, the red goes bright and taut, and the sound comes out of it. *That is the whole warning system and it is not a bluff* — a Flagneck that flags is a Flagneck that has already decided.
+**The patches inflate with the call, and the call is the name.** Neck swells, the red goes bright and taut, and what comes out of it is a wet swallowing *gollop* — low, thick, and audible a long way across open rock. *That is the whole warning system and it is not a bluff* — a Gollop that flags is a Gollop that has already decided.
 
 **It is also not aimed at you.** The call is for the others on the rock, and the fact that a person can read it is incidental. **Anybody who has learned what a swelling neck means has been given several seconds of warning by an animal that was not trying to give them any.**
 
@@ -26,11 +26,11 @@
 
 **Rocks, and it does not miss much.** This is the whole method — hunting and defending are the same act done at different ranges. They pick their stone, they throw hard, and they are *accurate* in a way that reads as deliberate rather than lucky, because it is.
 
-**Ambush first, always.** Above you, behind cover, in a place you already walked past. The preference is overwhelming: a Flagneck that can arrange a bad position for you will spend real time arranging it rather than coming down.
+**Ambush first, always.** Above you, behind cover, in a place you already walked past. The preference is overwhelming: a Gollop that can arrange a bad position for you will spend real time arranging it rather than coming down.
 
 **They move on rock faster than a person moves on flat ground**, up and down without apparent effort. The ground that makes them hard to reach is the ground they cross fastest.
 
-**But they do not run from a fight they are in.** This is the part worth knowing before anybody plans around them as skirmishers. Cornered, closed with, or simply confronted — a Flagneck stands and fights. **It leaves only when the odds have actually turned against it**, and it can tell.
+**But they do not run from a fight they are in.** This is the part worth knowing before anybody plans around them as skirmishers. Cornered, closed with, or simply confronted — a Gollop stands and fights. **It leaves only when the odds have actually turned against it**, and it can tell.
 
 ## They Hold Ground
 
@@ -63,7 +63,7 @@ They do not flee from a fight they are in — *because they are not in a fight t
 
 **In play that is Rooted** (`rules/card-glossary.md`) — the next time you would change position, that movement is cancelled. Nothing new needs inventing. *You cannot follow it.*
 
-**Which makes the spur a disengage weapon rather than a killing one**, and that is the whole of it. A Flagneck does not want to be in melee — its entire method is rock, height and distance. The spur is what it uses to get *back* to the fight it wanted, on somebody who took that away from it. **A creature whose venom exists to restore the range it prefers is a coherent animal.** One whose venom sets up a kill is a different and worse one.
+**Which makes the spur a disengage weapon rather than a killing one**, and that is the whole of it. A Gollop does not want to be in melee — its entire method is rock, height and distance. The spur is what it uses to get *back* to the fight it wanted, on somebody who took that away from it. **A creature whose venom exists to restore the range it prefers is a coherent animal.** One whose venom sets up a kill is a different and worse one.
 
 *And it stays inside the lethality budget because Rooted is a charge, not a lock* — it stops one movement and it is gone. A troop of them cannot chain a character into being unable to act, which is exactly the failure a group of paralytic ambushers would otherwise be.
 
@@ -71,8 +71,7 @@ They do not flee from a fight they are in — *because they are not in a fight t
 
 ## Open
 
-- **The name.** Flagneck, Scree Ape, Sandmantle, or Drew's own
 - **Troop size, and how fast backup arrives.** The clock is the encounter, so the rate is the dial — whether the second one is there next round or three rounds later is the difference between a warning and a wipe. Needs measuring against the party once session 1 has run (`rules/character-creation.md`)
 - **Whether the guerrilla preference is coordinated or parallel.** A troop that throws from several angles because each one independently prefers height is a different animal from one that is actually working together, and both are consistent with everything above
-- **What a Flagneck eats**, given the high country is the only growing ground near the Nest and they are built like something that would want fruit
+- **What a Gollop eats**, given the high country is the only growing ground near the Nest and they are built like something that would want fruit
 - Stats, HP and signature cards

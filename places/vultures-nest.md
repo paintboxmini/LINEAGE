@@ -24,11 +24,11 @@ A river port rebuilt so many times on top of itself that no one remembers the or
 
 **Which does not put a vegetable on anybody's plate**, and the two facts sit together without contradicting each other. What grows up there is not dinner, and the road to it is a cliff. *A plant from the high country arrives in the Nest as an ingredient somebody climbed for, priced accordingly, and never as food.*
 
-**The first one written is Rainkeep** (`flora/rainkeep.md`) — sharp, mineral, eye-watering, growing in the wet seams where the rock holds drizzle. **It is the one flavour this town does not have**, and getting any of it down means climbing back with your hands full, which is the whole of its difficulty.
+**The first one written is Seepleaf** (`flora/seepleaf.md`) — sharp, mineral, eye-watering, growing in the wet seams where the rock holds drizzle. **It is the one flavour this town does not have**, and getting any of it down means climbing back with your hands full, which is the whole of its difficulty.
 
 ### What lives up there
 
-**The Flagneck** (`bestiary/flagneck.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. **Territorial, and they post lookouts**, so the high country is not empty ground with a hazard in it; it is somebody's, in stretches, and a climber is either inside a troop's range or outside it. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
+**The Gollop** (`bestiary/gollop.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. **Territorial, and they post lookouts**, so the high country is not empty ground with a hazard in it; it is somebody's, in stretches, and a climber is either inside a troop's range or outside it. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
 
 ### The finishing house
 
@@ -499,9 +499,9 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
-- **The name of the high country, and of the Flagneck.** Neither was named when it was described. `bestiary/flagneck.md` carries three candidates for the animal; the range itself has none at all
+- **The name of the high country, and of the Gollop.** Neither was named when it was described. `bestiary/gollop.md` carries three candidates for the animal; the range itself has none at all
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
 - **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it
 - **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (What Grows Here, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
-- **Whether the finishing house sits inside a troop's range or between two of them.** Now that the Flagnecks are territorial with lookouts (`bestiary/flagneck.md`, They Hold Ground), the question sharpens: a smuggling operation that needs the same quiet approach every week either found a gap in the map of troop ranges, pays some kind of cost to use one, or has been lucky for longer than luck usually runs. **A gap is the strongest answer** — it makes the location genuinely hard to find for anyone who doesn't already know where the ranges are, and it means the Flagnecks are the operation's outer wall without anyone having arranged it
+- **Whether the finishing house sits inside a troop's range or between two of them.** Now that the Gollops are territorial with lookouts (`bestiary/gollop.md`, They Hold Ground), the question sharpens: a smuggling operation that needs the same quiet approach every week either found a gap in the map of troop ranges, pays some kind of cost to use one, or has been lucky for longer than luck usually runs. **A gap is the strongest answer** — it makes the location genuinely hard to find for anyone who doesn't already know where the ranges are, and it means the Gollops are the operation's outer wall without anyone having arranged it
