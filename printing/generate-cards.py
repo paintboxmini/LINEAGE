@@ -46,6 +46,18 @@ SETS = {
             '../cards/colorless.md',
         ],
     },
+    # Everything the three players carry that nobody drafts: nine signature
+    # cards and six Passives. The Passives' Applies When gates are parsed and
+    # dropped on purpose — see the parser above.
+    'signatures': {
+        'title': 'Signature Cards & Passives',
+        'files': [
+            '../cards/chris.md',
+            '../cards/kevin.md',
+            '../cards/pat.md',
+            '../campaign/passives.md',
+        ],
+    },
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
         'files': [
@@ -562,6 +574,13 @@ def parse_cards(filepath):
                 card['effect'] = line[7:].strip()
             elif line.startswith('Defense Effect:'):
                 card['defense_effect'] = line[15:].strip()
+            elif line.startswith('Applies When:'):
+                # A Passive carries a fiction gate instead of the two halves
+                # (`rules/character-creation.md`, Passives and Traits). The
+                # gate is a judgement the table makes, it runs long, and Drew
+                # does not want it on the printed card — so the flag is kept
+                # and the text is deliberately dropped.
+                card['passive'] = True
             elif line.startswith('Range:'):
                 card['range'] = line[6:].strip()
             else:
@@ -714,11 +733,16 @@ def card_to_html(card):
     if card.get('special_rule'):
         rows += f'<tr><td class="lbl">Special</td><td>{h(card["special_rule"])}</td></tr>'
 
-    effect = card.get('effect', 'None')
-    rows += f'<tr><td class="lbl">Effect</td><td>{h(effect)}</td></tr>'
+    if card.get('passive'):
+        # No Effect and no Defense rows — a Passive has neither, and printing
+        # "None" twice reads as missing data rather than as the card's shape.
+        rows += '<tr><td class="lbl">Type</td><td>Passive</td></tr>'
+    else:
+        effect = card.get('effect', 'None')
+        rows += f'<tr><td class="lbl">Effect</td><td>{h(effect)}</td></tr>'
 
-    de = card.get('defense_effect', 'None')
-    rows += f'<tr><td class="lbl">Defense</td><td>{h(de)}</td></tr>'
+        de = card.get('defense_effect', 'None')
+        rows += f'<tr><td class="lbl">Defense</td><td>{h(de)}</td></tr>'
 
     if card.get('range'):
         rows += f'<tr><td class="lbl">Range</td><td>{h(card["range"])}</td></tr>'
