@@ -205,8 +205,9 @@ values. The one exception is the small hint text under Price.
 > a section heading `TRAIT`, then one long empty write-in line beneath it,
 > the heading itself carrying no write-in line of its own;
 > a section heading `SKILLS`, then **two** long empty write-in lines beneath
-> it — two separate lines, unnumbered, the heading itself carrying no
-> write-in line of its own;
+> it — two separate lines, each with a small `1` and `2` at its left end
+> before the rule begins, the heading itself carrying no write-in line of
+> its own;
 > a section heading `PRICE`, followed immediately on the same line by small
 > hint text reading exactly
 > `I never / I must / I always / I cannot / Once I / Whenever`.

@@ -7,3 +7,10 @@ __pycache__/
 # so git cannot store one as a small difference from the last one the way
 # it does for prose. See printing/README.md.
 printing/*.pdf
+
+# The named-character sheet build. `generate-sheets.py` with no arguments
+# makes the blank handout, which is tracked; naming characters makes this
+# instead, which never has been. It is a filled copy of what is already in
+# `campaign/`, so it is output rather than source, and it was landing in the
+# tree untracked every time anybody ran the named build.
+printing/character-sheets-filled.html
