@@ -4,7 +4,7 @@
 # sheet moved and its PDF is stale.
 
 card-print-briarwatch           20 cards  cd78836de755
-card-print-core                165 cards  e538ef9eec7e
+card-print-core                166 cards  e538ef9eec7e
 card-print-items-field           3 cards  cf2682d5260f
 card-print-items                14 cards  a838429f4650
 card-print-mason                 6 cards  c6964790d2d6

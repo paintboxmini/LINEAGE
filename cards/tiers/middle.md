@@ -4,7 +4,7 @@ Cards that are good and are not beginner cards. Most are legal under every rule 
 
 Nothing here is cut. The screen in `rules/early-campaign-cards.md` decides eligibility for the beginner pool; a card that fails it moves here. A card that is cut goes to `experimental/archives/cut-cards.md` instead, and that has happened three times from this screen — ABANDON, BRAMBLE and WAITING GAME.
 
-**Status: the whole core pool has been read.** 163 cards across the three colour lists — 84 seated, 42 cleared and on the bench, 37 here, and three cut. Screened in full on 2026-09-17 and edited daily since.
+**Status: the whole core pool has been read.** 163 cards across the three colour lists — 84 seated, 42 cleared and on the bench, 37 here, and three cut. *(Counted 2026-09-25: the three colour lists hold 60 Red, 50 Blue and 53 Green, which is the 163. `cards/colorless.md` adds 3 more, so the four core lists together are 166 — which is what `printing/manifest.txt` records for the core sheet.)* Screened in full on 2026-09-17 and edited daily since.
 
 **Lifesteal is no longer here.** It was ruled a middle-tier keyword on 2026-09-17 on the reading that it heals for the full damage dealt. It does not — `rules/card-glossary.md` has always said half, rounded down, and two cards were restating it wrongly. BLEED, SKEWER and CONSUME went back to the beginner bench on 2026-09-18. PARADOX stayed, because it never belonged here for the keyword.
 

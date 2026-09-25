@@ -21,7 +21,7 @@ artifact saying what it holds and what it hashes to.
 
 ```
 card-print-oracle               63 cards  64f334fa084a
-card-print-core                165 cards  e538ef9eec7e
+card-print-core               166 cards  e538ef9eec7e
 character-sheets                4 sheets  39b0a7b322a9
 ```
 

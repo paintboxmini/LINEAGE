@@ -29,11 +29,17 @@ OUT = os.path.join(HERE, 'manifest.txt')
 # What to count, in order of preference. A card sheet is cards; the character
 # handout is sheets; a rules document has neither, so it falls back to its
 # section headings, which is the thing that actually moves when rules change.
+# Match on the class *prefix*, never the whole attribute. The first version
+# of this counted `class="card"` exactly and silently missed the one card
+# that carries `class="card dense"` — so the core sheet read 165 when it
+# seats 166, and a manifest that miscounts is worse than no manifest.
+# Counting the name div rather than the container is also closer to the
+# truth: it counts cards, not boxes that happen to hold one.
 COUNTERS = (
-    ('cards',    r'class="card"'),
-    ('sheets',   r'class="sheet"'),
-    ('sections', r'<h2'),
-    ('pages',    r'class="page"'),
+    ('cards',    r'class="card-name[\s">]'),
+    ('sheets',   r'class="sheet[\s">]'),
+    ('sections', r'<h2[\s>]'),
+    ('pages',    r'class="page[\s">]'),
 )
 
 
