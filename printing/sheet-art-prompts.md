@@ -181,10 +181,14 @@ values. The one exception is the small hint text under Price.
 > artwork, no new symbols, no change to the triangle or the three coloured
 > circles.
 >
-> **Across the very top, above the triangle:** two ruled write-in lines, one
-> under the other, full width. The first is labelled `NAME` at its left end;
-> the second is labelled `RACE`. Labels in the calligraphic hand, small and
-> muted; the ruled lines thin, long and empty.
+> **Across the very top, above the triangle:** three ruled write-in lines, one
+> under the other, full width. The first is labelled `NAME` at its left end.
+> The second is labelled `RACE` at its left end and carries a second, much
+> shorter labelled slot at its right-hand end reading `AGE` — one rule, two
+> fields, the race field taking most of the width and the age field short
+> enough to hold two or three characters. The third is labelled `APPEARANCE`.
+> Labels in the calligraphic hand, small and muted; the ruled lines thin, long
+> and empty.
 >
 > **Inside the triangle, centred in its open interior:** four short labelled
 > slots stacked as two rows of two, small and evenly spaced, each a tiny
