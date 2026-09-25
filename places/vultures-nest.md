@@ -20,9 +20,11 @@ A river port rebuilt so many times on top of itself that no one remembers the or
 
 ### And it is where the plants are
 
-**The Nest has no growing country and never has** (Food, below) — but the high ground does. Whatever soil there is collects up in the folds and the shaded cuts where the rock holds water, and that is the only green within reach of this town.
+**The Nest has no growing country and never has** (What Grows Here, below) — but the high ground does. Whatever soil there is collects up in the folds and the shaded cuts where the rock holds water, and that is the only green within reach of this town.
 
 **Which does not put a vegetable on anybody's plate**, and the two facts sit together without contradicting each other. What grows up there is not dinner, and the road to it is a cliff. *A plant from the high country arrives in the Nest as an ingredient somebody climbed for, priced accordingly, and never as food.*
+
+**The first one written is Rainkeep** (`flora/rainkeep.md`) — sharp, mineral, eye-watering, growing in the wet seams where the rock holds drizzle. **It is the one flavour this town does not have**, and getting any of it down means climbing back with your hands full, which is the whole of its difficulty.
 
 ### What lives up there
 
@@ -501,5 +503,5 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
 - **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it
-- **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (Food, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
+- **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (What Grows Here, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
 - **Whether the finishing house sits inside a troop's range or between two of them.** Now that the Flagnecks are territorial with lookouts (`bestiary/flagneck.md`, They Hold Ground), the question sharpens: a smuggling operation that needs the same quiet approach every week either found a gap in the map of troop ranges, pays some kind of cost to use one, or has been lucky for longer than luck usually runs. **A gap is the strongest answer** — it makes the location genuinely hard to find for anyone who doesn't already know where the ranges are, and it means the Flagnecks are the operation's outer wall without anyone having arranged it

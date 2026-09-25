@@ -17,8 +17,11 @@ Plants, filed by organism the way the bestiary files animals. One file each, sam
 | Luminova | **the harvest lights you up.** Picking is trivial, and every leaf taken makes the walk out brighter |
 | Waymoss | **taking it destroys it.** A cut strip stops redrawing within the hour, so the only way to use it is to leave it alone |
 | Burnrind | **somebody else's disaster.** It fruits the season after a spoil bank burns, and setting a bank fire in the Nest is how you get hanged |
+| Rainkeep | **hands.** Finding and picking it are nothing; the gate is coming back down a cliff with it, and anything that has to be held is anything you are not climbing with |
 
-Seven of the eleven are in the Vulture's Nest region, where the framing fact is that almost nothing is native — the ground is made ground and what grows on it came off a boat (`places/vultures-nest.md`, What Grows Here). *Two of those seven are ballast stowaways on the same spoil banks: Nobody's Pepper wins wherever the ground has settled, Burnrind only wherever it has just been ruined.*
+**Rainkeep is the folder's third framing and it is new as of 2026-09-25.** The Nest's plants are made-ground plants that came off a boat; the Weald's sit on a law about reciprocity. **The high country north of the Nest is neither** — it is the one stretch near that town nobody built, so what grows there is *native*, and its gates are about the climb rather than about logistics or debt (`places/vultures-nest.md`, The Shape of the Ground).
+
+Seven of the twelve are in the Vulture's Nest region proper, where the framing fact is that almost nothing is native — the ground is made ground and what grows on it came off a boat (`places/vultures-nest.md`, What Grows Here). *Two of those seven are ballast stowaways on the same spoil banks: Nobody's Pepper wins wherever the ground has settled, Burnrind only wherever it has just been ruined.*
 
 The other four are Turnroot Weald, where the framing fact is a law instead: **nothing is taken without a reciprocal gesture** (`quests/turnroot-weald-adventure.md`). That is a floor every Weald plant sits on before its own gate applies, and it is why the Weald's gates tend to be about debt and consequence where the Nest's are about logistics. **Waymoss is the odd one in the whole folder** — it has no use, no trade and no preparation, and it is here because a forest whose signature is that it routes you has exactly one organism that shows the routing happening.
 
