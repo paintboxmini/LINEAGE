@@ -21,6 +21,10 @@ Meet or beat the DC to succeed.
 
 The fiction determines which stat applies — Body for physical exertion, Mind for reasoning and interpretation, Soul for bonds, will, and spiritual pressure. When multiple stats could apply, the player may make their case. The GM decides.
 
+**Negotiable is the default. A fixed stat is a design decision and should be made on purpose** *(2026-09-25)*. The lists under Checks and Saves below are where the fiction usually lands, not a table to look the answer up in — **most rolls in this game are open to a player who can say why their character would meet this with something else**, and a good argument is worth more than the category. *Two characters facing the same thing may legitimately roll different stats, because they are not the same person.*
+
+**So when a hazard or an effect does lock a stat, that lock is doing work and the text should say what.** A restriction nobody can talk their way out of is a statement that this particular thing defeats cleverness, or reach, or nerve, and that is a real thing to say — it is just not the default, and writing one by accident costs a player the most interesting sentence they were going to say all session.
+
 ---
 
 ## Advantage & Disadvantage

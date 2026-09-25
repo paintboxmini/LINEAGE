@@ -45,6 +45,50 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone �
 
 **Near the edge you can drag yourself out**, wearing threads, and be wrecked for a week. **Deep in one, you do not.** *The difference is distance, not effort.*
 
+### At the table — the Thread Save
+
+*Set 2026-09-25. **This is the one place in the repo with a custom save**, and it exists because the ordinary one cannot do what this hazard needs: a great many small chances, resolved fast.*
+
+**Roll d6 + stat against DC 7.** Not 2d10 + stat. One die, one flat target, **so you do not roll them one at a time — you throw a fistful of d6 and count the failures at a glance.** Twenty saves is a handful of dice and two seconds.
+
+| Stat | Fails on | Chance |
+|---|---|---|
+| 1 | 1–5 | 83% |
+| 2 | 1–4 | 67% |
+| 3 | 1–3 | 50% |
+| 4 | 1–2 | 33% |
+| 5 | 1 | 17% |
+
+**How many saves — depth doubles it.**
+
+| Where | Saves | Running total |
+|---|---|---|
+| The perimeter | 5 | 5 |
+| One push further in | 10 | 15 |
+| Further again | 20 | 35 |
+
+**Eight failures and you are held.** Failures accumulate across the whole immersion and **do not reset between bands** — threads gather, which is the entire mechanism.
+
+**What that produces, which is the point:**
+
+| | Body 2 | Body 3 | Body 4 | Body 5 |
+|---|---|---|---|---|
+| Perimeter | 0% | 0% | 0% | 0% |
+| One step in | 91% | 50% | 9% | 0.1% |
+| Deep | 100% | 100% | 94% | 22% |
+
+**The edge is free for everybody**, which is what the fiction promised. **One step in is a genuine decision and a different one for each character.** **Deep is where people are lost.**
+
+*DC 7 rather than 6 for one reason: at DC 6 a stat of 5 cannot roll a failure at all, and a hard immunity sitting at the top of a range players can reach at creation is not a thing this hazard should hand out.*
+
+**Any stat, if the player can say why.** Negotiable is the default in this game and a locked stat is a design decision (`rules/resolution.md`, Core Resolution) — **this hazard deliberately does not lock one.** Body for hide, fur, or sheer bulk between you and the threads. Mind for knowing not to thrash and working out where the mesh thins. Soul for holding still while it burns, which is the hardest thing on this list. *A player who argues well has already earned it; the argument is the good part of the scene.*
+
+### Being held
+
+**It is a rescue, not a death** — the same shape as the Weald's wasps (`bestiary/future-lock-wasp.md`, GM Notes). A held character is not gone, they are **being consumed slowly while the bloom carries them**, and somebody has to come and get them.
+
+**And the rescuer pays the same toll.** Reaching someone means entering their band and taking its saves, on top of whatever you gathered getting there. *That is what stops the rescue being a free undo, and it is why the decision about how far in to go was always a decision about everybody.*
+
 ## What It Eats
 
 **Whatever it is stuck to.** It cannot hunt, cannot choose, and cannot pursue — **it is a filter feeder that got enormous by being numerous**, and the only thing it has ever done is process what the current brings against it.
@@ -91,8 +135,8 @@ A Deepmane surfacing over bad water is the clearest danger mark on the river (`b
 
 ## Open
 
-- **What the burn does mechanically**, if anything. It may want nothing at all — a hazard whose entire weight is *you cannot go this way* is a complete hazard, and the repo has one already (`bestiary/future-lock-wasp.md`). *If it does want something, the fiction points at movement rather than damage: the threads hold.*
-- **How far in is too far in.** The edge is survivable and the middle is not, and where that line sits is the difference between a frightening swim and a death
+- **How long a held character has** before being held becomes being dead. The rescue window is the number that decides whether this hazard is frightening or lethal, and it should be measured against a real party rather than guessed
+- **Whether a bloom ever catches a boat**, rather than the people in it — a hull passes through, but a fouled pullway line attached to a moving bloom is a different problem
 - **How often it comes round**, which is the dial the whole thing turns on and should probably stay a rumour rather than a number
 - **What the Riverdogs do while they are out of the water.** That they come out is set; what it costs them and how they handle it is theirs (`factions-and-races/races-riverdogs.md`)
 - **Whether a Deepmane ever gets caught by one**, and what a dead one on the bank does to the people who fed it
