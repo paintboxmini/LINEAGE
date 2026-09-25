@@ -37,7 +37,7 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue sits in the middle** — Ranged is a real restriction, but a softer one than Melee.
 - **Green is the most flexible**, so it is paid the least. Both-range is the default, and the default die is small.
 
-*Measured across the 164 core cards, 2026-09-19:*
+*Measured 2026-09-19, across the core pool as it stood that day. **It is a snapshot and it is meant to be** — the table is a record of what the corpus did, not a live count. For the size of the pool now, see `printing/manifest.txt`.*
 
 | Colour | Melee | Ranged | Both | mean die |
 |---|---|---|---|---|

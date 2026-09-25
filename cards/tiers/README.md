@@ -16,7 +16,7 @@ Three pools, in order of when a table meets them. A card sits in exactly one.
 
 **What is not here.** A card that is beginner-legal but simply has no seat in a set is still a beginner card, and a good few sit on the bench — `beginner.md` holds the list and the count. Being unseated is not a verdict.
 
-**Coverage.** All 164 cards in the three core colour lists have been screened: 127 cleared, 37 in the middle tier, and three — ABANDON, BRAMBLE and WAITING GAME — cut outright, which are no longer among the 164. That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
+**Coverage.** Every card in the three core colour lists has been screened, and three — ABANDON, BRAMBLE and WAITING GAME — were cut outright rather than tiered, so they are no longer in the lists at all. **The numbers live in `printing/manifest.txt`**, which is regenerated and is the only card count in this repo: how many cards the colour lists hold, and how they split into seated, bench and middle tier. *Do not restate them here — five files used to and they disagreed three ways.* That is the core pool only; creature and character cards in the other `cards/*.md` files have never been screened and mostly should not be, since players do not draw from them.
 
 ---
 
