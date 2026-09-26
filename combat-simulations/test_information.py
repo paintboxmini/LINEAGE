@@ -25,15 +25,31 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE = os.path.join(HERE, 'agents.py')
 
 # Attributes nobody may read off anyone but themselves and their own team.
+#
+# `stances` and `passives` are here for a reason worth stating: the cards
+# are face up, so an opponent may *see* them, but an agent reaching into
+# those lists is reading the kit rather than watching it — it would know
+# that KILLSWITCH ends on a repeated colour, or which of its two modes was
+# taken, without ever having been shown. What is public is that a card was
+# revealed and what colour it was, which is all `Knowledge` takes.
 HIDDEN = {'hp', 'max_hp', 'body', 'mind', 'soul', 'hand', 'deck',
-          'death_threshold'}
+          'death_threshold', 'stances', 'passives'}
 
 # Names that refer to the agent's own combatant, whose sheet is its own to
 # read. `who` is `scry`'s name for it; `other`/`c` inside HumanAgent._health
 # are guarded by the team check in that method, which is the one place
 # allowed to decide what a player may be shown.
 OWN = {'me', 'who', 'self'}
-EXEMPT = {('HumanAgent', '_health')}
+EXEMPT = {
+    ('HumanAgent', '_health'),
+    # A character's own seed is a piece of them, paid for out of their own
+    # HP and grown at the start of each of their own turns
+    # (`campaign/chris.md`, Seeds). Knowing how big it is is knowing what
+    # they are carrying, not reading somebody else's sheet. Exempted by
+    # function rather than by the method that calls it, so it stays the
+    # size of its reason.
+    ('KitAI', '_my_seed'),
+}
 
 
 def offences(path=SOURCE):

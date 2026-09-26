@@ -64,7 +64,7 @@ It also explains where he is. A thing with no interior cannot be held anywhere t
 
 What it wants. Whether it wants. Whether anything of Pendragon is in there, or whether the hollow is the whole answer. Why it attends this party. What happens at the end of the ladder, or whether there is an end.
 
-The Three Cuts cannot heal: *"healing would close them, and a closed wound holds nothing open"* (`world/creation-myth-the-three-cuts.md`). A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. 
+**A Mason would start here.** Their creed holds that the founding wounds cannot heal — *"healing would close them, and a closed wound holds nothing open"* (`factions-and-races/the-masons-three-cuts.md`) — and whether or not the creed is right, the shape of the argument is the useful part. A scar is a wound that closed. A body that is nothing but scar is one where the closing already finished — and a thing that closed holds nothing open, which reaches the hollow center from the other side. 
 
 ---
 
@@ -77,8 +77,7 @@ One resonance: he failed at the Seat of Love and Binding, and what he does now i
 ## Related Documents
 
 - `world/eclipseria-overview.md` — the In-Between, where it is
-- `world/creation-myth-the-three-cuts.md` — the Cuts, and why they are thin out there
-- `world/creation-myth-the-three-cuts.md` — wounds that cannot be allowed to close
+- `factions-and-races/the-masons-three-cuts.md` — Mason doctrine: wounds that cannot be allowed to close, and why the order reads the far edge as thin
 - `world/the-unheld.md` — the other thing at the edge, and the unfamiliar scars
 - `world/the-regency.md` — the Pendragon Attempt, and who this is
 - `world/resonant-people.md` — Failed Seat-Takers, his own entry under Known Resonant People, and the three Degrees of Alignment he may be off the end of

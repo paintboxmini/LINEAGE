@@ -2,7 +2,7 @@
 
 The Oracle content rule in `rules/cards.md` says what a starting deck **may not do**. This is the other half: the specific cards that have been looked at and cleared for a first campaign. A card being legal under the content rule is not the same as a card being right for players who are still learning what the reveal is.
 
-Started 2026-09-17 from the cards already seated, and finished the same day: **all 164 cards in the three core colour lists have been screened** — 124 cleared, 40 sent to the middle tier, and three cut. Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
+Started 2026-09-17 from the cards already seated, and finished the same day: **every card in the three core colour lists has been screened**, and three were cut outright. *How many cleared and how many went to the middle tier is in `printing/manifest.txt`, which counts the lists rather than remembering a number — the figures written here by hand were wrong by the time anybody checked.* Nothing here is a promise that a cleared card is balanced forever; it is a record that it was read with early play in mind and nothing stopped it.
 
 ---
 

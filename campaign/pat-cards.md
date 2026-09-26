@@ -41,7 +41,7 @@ Green — Soul, d4, Both range. First concrete trigger for Wild Magic Summoning 
 HERE BOY
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). The summoning grants you the Ongoing Effect: the next time you tie in RPS, you win instead.
+Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: the next time you tie in RPS, you win instead. This is tied to the spirit's survival — kill the totem, lose the effect.
 Defense Effect: Same as Effect.
 Range: Both
 "Here, boy. Come stand with me."
@@ -49,7 +49,13 @@ Range: Both
 
 Win or tie, attacking or defending, this triggers the same — a normal Green card in every other way, no gimmick like Card 1's.
 
-***"It" is Pat, ruled 2026-09-19, and the card now says so.*** The earlier wording — *"It gains the Ongoing Effect: the next time it ties in RPS, it wins instead"* — read as the spirit, which cannot use it: a spirit is an Object that does not act and cannot choose a defence, so it never reaches an RPS reveal at all. **The summoning grants the tie-win to the summoner.** Pat holds it until he uses it, and it is spent on the next tie he is actually in, attacking or defending. The HP roll isn't restated here since Wild Magic Summoning already covers it for every summon regardless of trigger.
+***Pat spends it, the spirit holds it.*** Ruled over two passes and both halves matter.
+
+*Who spends it, 2026-09-19.* The earlier wording — *"It gains the Ongoing Effect: the next time it ties in RPS, it wins instead"* — read as the spirit, which cannot use it: a spirit is an Object that does not act and cannot choose a defence, so it never reaches an RPS reveal at all. **Pat holds the charge**, and spends it on the next tie he is actually in, attacking or defending.
+
+*Who holds it, 2026-09-21.* **Kill the totem, lose the effect**, exactly as LET'S GO already worked. Before this, HERE BOY's spirit was a body with HP and no purpose while LET'S GO's was a totem worth defending — two summons on one sheet doing different kinds of thing, for no reason anybody had written down. Now both are worth standing in front of, and an enemy that wants Pat to stop winning ties has something it can actually do about it.
+
+**A spent charge is not clawed back.** If the tie has already happened, killing the spirit afterwards takes nothing — it can only remove one that is still waiting. The HP roll isn't restated here since Wild Magic Summoning already covers it for every summon regardless of trigger.
 
 **Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`campaign/pat.md`, Wild Magic Summoning). Still open: whether HERE BOY is the *only* trigger, and whether more than one spirit can be out at once given there are only three to draw from.
 

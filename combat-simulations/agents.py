@@ -39,6 +39,20 @@ class Knowledge:
     def __init__(self):
         self.colors = {}      # name -> Counter of colours revealed
         self._seen = {}       # name -> ids already counted
+        self.stats = {}       # name -> colour split, when a card bought it
+
+    def knows_stats(self, name):
+        """Whether a card bought this opponent's colour split outright."""
+        return name in self.stats
+
+    def learn_stats(self, name, split):
+        """A card handed the stat line over — MEASURE, STUDY
+        (`effects.RevealStats`). Stats are hidden until something in the
+        game makes them public, and then they are simply known: the deck
+        rule turns a stat block into an exact colour composition, so this
+        replaces the inference rather than adding to it.
+        """
+        self.stats[name] = dict(split)
 
     def observe(self, other):
         """Fold in whatever of theirs is currently face up."""
@@ -60,6 +74,14 @@ class Knowledge:
         is a shrug and the tenth is an opinion.
         """
         from cards import BEATS
+        known = self.stats.get(other.name)
+        if known:
+            # Bought outright, so no smoothing: this is the composition,
+            # not an estimate of it.
+            n = sum(known.values())
+            if n:
+                return (known.get(BEATS.get(color), 0) / n,
+                        known.get(color, 0) / n)
         counts = self.observe(other)
         alpha = 1.0
         n = sum(counts.values()) + 3 * alpha
@@ -105,32 +127,78 @@ class Agent:
         """Return (keep_on_top, send_to_bottom). Top of deck is last."""
         return look, []
 
+    def choose_prepared(self, me, options):
+        """Which Ongoing Effect to set up before initiative, or None.
+
+        `rules/combat.md`, Setting one up before the fight — one card, and
+        only when the fiction gives the character time and a reason. The
+        caller decides whether the fight allows it at all; this only picks.
+        """
+        return options[0]
+
     # ---- the shape of a kit --------------------------------------------
 
-    def _prefer_hand(self, me, opts):
-        """A Passive is the floor, not a pick.
+    # What one card out of hand is worth when cards are tight, in the same
+    # damage-equivalent units everything else here is scored in. Swept.
+    _CARD_VALUE = 2.0
 
-        **It is always the weakest thing you have**, and that is what it is
-        for: it has a colour, a Range and a die and no Effect at all, where
-        every card in a deck carries text. Having it means never being
-        unable to act — never a turn with no legal attack, never an
-        exchange with no legal block — and the price of always having it is
-        that it loses to anything you could have played instead.
+    def _turns_before_mine(self, me):
+        """How many enemy turns come before my next one.
 
-        So the order is: play your strong options, fall back on your weak
-        one when you need to. A Passive is reached for when the hand has
-        nothing legal, not when it happens to roll a bigger number.
-
-        Scoring alone will not produce that. Chris's MIMETIC BLADE is Body
-        3 + d6, which is 6.0 on expected damage and above most of what he
-        is holding, so a value function ranked it first and he opened with
-        it in 57% of his attacks — a Passive as a main line, which is
-        backwards. The rule belongs here rather than in the weights,
-        because it is a fact about what a Passive is and not a number to be
-        tuned.
+        Off the initiative wheel, which is a physical object on the table
+        (`rules/combat.md`) and public in a way a hand is not — counting
+        whose token sits between yours and the marker is something every
+        player does. Falls back to "one enemy turn" when there is no wheel,
+        which is the duel case.
         """
-        hand = [c for c in opts if not me.is_passive(c)]
-        return hand or opts
+        import engine
+        wheel = engine.wheel()
+        if wheel is None or me not in wheel.order():
+            return sum(1 for c in engine.table()
+                       if c.team != me.team and c.alive() and not c.is_object)
+        order = wheel.order()
+        i = order.index(me)
+        ahead = order[:i]        # they act before the wheel comes back to me
+        return sum(1 for c in ahead
+                   if c.team != me.team and c.alive() and not c.is_object)
+
+    def _card_price(self, me):
+        """What it costs to spend one card out of hand right now.
+
+        **This is the whole Passive decision, and it is a prediction rather
+        than a ranking.** A Passive is the weakest thing a character holds —
+        no Effect, small die — so on raw value it loses to almost anything
+        in hand. What it has instead is that it costs nothing: it never
+        leaves its zone. So the question at every exchange is not "which of
+        these is stronger", it is **can I afford to spend the card**.
+
+        And the answer is knowable, because a hand refills. You draw back up
+        to hand size at the start of your turn (`rules/combat.md`), so a card
+        spent on defence is replaced — the only thing it costs you is the
+        blocks you still have to make *before* your turn comes round. Count
+        the enemy turns between here and there, compare against what you are
+        holding, and spending is free whenever the hand covers them.
+
+        It is when the hand does not cover them that the Passive earns its
+        keep, and that is the case a rule about strength gets exactly
+        backwards: a Soul-primary character holding two cards against three
+        incoming attacks should block with the Passive **because** it is
+        free, not in spite of it being weak.
+        """
+        import engine
+        turns = self._turns_before_mine(me)
+        # Their turns are not all aimed at me. With allies standing, an
+        # attack lands on any one of us, so what I have to cover is my share
+        # of them — which is why a lone character hoards and a character in
+        # a party can spend.
+        share = max(1, sum(1 for c in engine.table()
+                           if c.team == me.team and c.alive()
+                           and not c.is_object))
+        need = turns / share
+        spare = len(me.hand) - 1      # what is left if this one goes
+        if spare >= need:
+            return 0.0                # covered — the card is free to spend
+        return self._CARD_VALUE * (need - spare)
 
 
 class RandomAgent(Agent):
@@ -203,17 +271,25 @@ class SimpleAI(Agent):
         return self.rng.choice(tied) if len(tied) > 1 else tied[0]
 
     def choose_attack(self, me, target):
-        opts = self._prefer_hand(me, me.playable(target))
+        opts = me.playable(target)
         if not opts:
             return None
-        # Biggest expected damage, ties broken by the bigger die.
-        return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
+        # Biggest expected damage, less what the card costs to spend; ties
+        # broken by the bigger die. A Passive is priced at zero because it
+        # never leaves its zone.
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            me.stat(c.stat) + c.die / 2 - (0 if me.is_passive(c) else price),
+            c.die))
 
     def choose_defense(self, me, attacker):
-        opts = self._prefer_hand(me, me.playable(attacker))
+        opts = me.playable(attacker)
         if not opts:
             return None
-        return max(opts, key=lambda c: (me.stat(c.stat) + c.die / 2, c.die))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            me.stat(c.stat) + c.die / 2 - (0 if me.is_passive(c) else price),
+            c.die))
 
     def choose_target(self, me, options, prompt='Target'):
         """Help the ally who has taken the most; hurt the enemy who has.
@@ -440,15 +516,24 @@ class KitAI(SimpleAI):
       cannot fire at all: no deck runs a card twice, so once KILLSWITCH is
       face up there is no second copy to replay over it. They are kept
       because they are correct, not because they have been shown to pay.
+    - `_CARD_VALUE`, on `Agent`, prices a card out of hand against the
+      blocks still to come — see `_card_price`. Flat from 0.5 to 4.0 on the
+      real kits and kept at 2.0 for the same reason.
+    - `_MATCHUP_TRUST` is how far to believe the colour read on attack, and
+      it is the one weight where both ends are measurably wrong. At 0.0 the
+      attacker is blind to the triangle and loses three points against a
+      Red-heavy deck; at 1.0 it over-reads a handful of cards and loses one
+      against Blue- and Green-heavy ones. 0.5 is the peak and the middle of
+      the flat part, at 88.6% mean across six foe shapes against 88.0% blind.
 
     **A caution, because this sweep has now been wrong once.** An earlier
     reading of it concluded that `_SETUP_BONUS` was inert because "Chris
     never sets his stance" — KILLSWITCH legal 2232 times and chosen twice
     — and wrote that up as a finding about the card being priced out. It
-    was not about the card. It was `_prefer_hand` missing: his MIMETIC
-    BLADE Passive was competing on its number and crowding the stance out.
-    With a Passive back in its place as the fallback, KILLSWITCH is chosen
-    149 times of 698 and a stance is up on 597 turns of 2676. **A weight
+    was not about the card. His MIMETIC BLADE Passive was competing on its
+    number alone and crowding the stance out; once a Passive was priced
+    against the card it saves rather than played whenever it rolled bigger,
+    KILLSWITCH came back into the rotation and stances started going up. **A weight
     that reads as inert is as likely to mean the agent never reaches the
     situation as it is to mean the weight does not matter**, and the two
     look identical in the sweep.
@@ -462,6 +547,8 @@ class KitAI(SimpleAI):
     _STANCE_REPLAY = -2.0   # the same stance again
     _REPEAT_PENALTY = -2.0  # a colour that would end a stance
     _BANK_TIE_WIN = 1.0
+    _MATCHUP_TRUST = 0.5    # how far to trust the colour read on attack
+    _MOVE_GAIN = 2.0        # how much better the other position must be
 
     # ---- shared scoring -------------------------------------------------
 
@@ -486,18 +573,163 @@ class KitAI(SimpleAI):
         import effects as fx
         return fx.traits(card, 'defense').wins_ties
 
+    # ---- where to stand -------------------------------------------------
+
+    def choose_action(self, me, foes, allies):
+        """Attack, move, or take cover — position is a real decision.
+
+        **Moving buys range legality and nothing else.** `rules/combat.md`,
+        Positioning: *"Position provides no automatic protection. The
+        Frontline does not shield the Backline from being targeted."* So
+        there is no hiding, and the only reason to spend a turn walking is
+        that the cards you are holding do not reach from where you stand.
+
+        Which makes the arithmetic about how much fight is left. Stay k
+        turns and you attack k times at what this position offers; move and
+        you attack k-1 times at what the other one offers. So it pays when
+
+            value there / value here  >  k / (k - 1)
+
+        and with four or five turns to go that is about a quarter better.
+        `_MOVE_GAIN` is that ratio, swept rather than reasoned into place.
+
+        `SimpleAI` keeps the old behaviour — it moves only when it has no
+        legal attack at all — because it plays creatures, and the encounter
+        figures in `rules/gm-guide.md` are built on it.
+        """
+        if me.down:
+            return ('pass',)
+        live = [f for f in foes if f.alive()]
+        if not live:
+            return ('pass',)
+
+        here = self._reach_value(me, live, me.position)
+        if not me.rooted:
+            other = BACK if me.position == FRONT else FRONT
+            there = self._reach_value(me, live, other)
+            # Nothing reaches from here: walking is free, since the
+            # alternative is passing.
+            if here is None and there is not None:
+                return ('move',)
+            if here is not None and there is not None \
+                    and there > here * self._MOVE_GAIN:
+                return ('move',)
+
+        if here is not None:
+            # Position is this method's decision; *who* to hit is not, and
+            # it stays what it was — the one the table has watched absorb
+            # the most, ties at random (`_weakest`). An earlier cut of this
+            # picked the target with the best attack value instead and
+            # quietly threw focus fire away, which cost six points of party
+            # win rate and looked like a finding about movement.
+            reachable = [f for f in live if me.playable(f)]
+            if reachable:
+                return ('attack', self._weakest(reachable))
+
+        # Nothing reaches from either position. Backline can at least take
+        # cover — a dodge that persists instead of being spent
+        # (`rules/combat.md`, Cover) — which beats passing for free.
+        if me.position == BACK and not me.in_cover:
+            return ('cover',)
+        return ('pass',)
+
+    def _reach_value(self, me, live, position):
+        """What standing at `position` is worth, or None if nothing reaches.
+
+        The mean of the best two options rather than the single best one.
+        A position is worth how much of your hand it keeps live, and one
+        card's score moves too much from turn to turn to stand on: scored
+        on the single best card, the character whose kit spans both ranges
+        paced back and forth all fight — 74 reversals inside two actions
+        across 200 fights — because whichever side he stood on, the other
+        looked about as good and noise decided it.
+        """
+        best = None
+        price = self._card_price(me)
+        for f in live:
+            opts = me.playable(f, position=position)
+            if not opts:
+                continue
+            vals = sorted((self._attack_value(me, c, f)
+                           - (0 if me.is_passive(c) else price)
+                           for c in opts), reverse=True)[:2]
+            score = sum(vals) / len(vals)
+            if best is None or score > best:
+                best = score
+        return best
+
     # ---- attacking ------------------------------------------------------
 
     def choose_attack(self, me, target):
-        opts = self._prefer_hand(me, me.playable(target))
+        """Best value, and on a tie the colour you did not just play.
+
+        **The tiebreak was the other half of the colour blindness.** Two
+        options at the same value used to be settled by the bigger die,
+        which is a variance preference dressed up as a decision — the mean
+        is already inside the value. Chris's two Passives score 6.0 and
+        6.0, so the die alone decided which colour he led with, forever,
+        whoever he was fighting.
+
+        Changing colour is the better default and this game says so three
+        times over: MEASURE pays for a colour change, KILLSWITCH ends on a
+        repeat, and an opponent who is tracking what you play — which is
+        what `Knowledge` does — is exactly who a repeated colour is
+        readable by. Measured over five foe shapes it is worth about a
+        point of party win rate on average and three against a Red-heavy
+        deck, which is more than the matchup weighting itself buys.
+        """
+        opts = me.playable(target)
         if not opts:
             return None
-        return max(opts, key=lambda c: (self._attack_value(me, c, target),
-                                        c.die or 0))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            self._attack_value(me, c, target)
+            - (0 if me.is_passive(c) else price),
+            c.color != me.last_attack_color,
+            c.die or 0))
 
     def _attack_value(self, me, card, target):
+        """What an attack is worth, through the reveal rather than before it.
+
+        **An attack that loses the reveal deals nothing**, and this class
+        scored defences on the colour matchup while scoring attacks on the
+        raw number — the defender read the triangle and the attacker was
+        blind to it. Leading Red into a creature whose deck is half Red is
+        a tie and a wasted turn, and the old scorer could not see the
+        difference between that and a clean hit.
+
+        So the damage is weighted by the chance of winning the reveal, and
+        everything the Effect is worth by the chance the Effect runs at all
+        — which is a win *or* a tie, because `_finish` runs the attacker's
+        half on both. The colour-repeat penalty is the one thing left
+        unweighted: a stance ends on a repeated colour **when the card is
+        revealed**, which is before anyone knows who won the exchange
+        (`rules/combat.md`, Attack Resolution).
+
+        Both weights are normalised so that **an agent who has seen nothing
+        scores exactly what the old one did.** With the smoothed prior at a
+        flat third, `hits` and `runs` are both 1.0, and the tuned weights
+        below keep the meanings they were tuned with. The scorer only
+        starts to diverge as the discard pile fills, which is the point:
+        it plays the matchup once it has watched enough to have one.
+        """
         import effects as fx
-        value = self._expected(me, card)
+        beat, tie = self._odds(card, target)
+        # Shrink toward "no idea" before multiplying damage by it. The raw
+        # odds are an estimate off a handful of cards, and a noisy estimate
+        # multiplied into the damage is a noisy score — measured, trusting
+        # them in full won four points against a Red-heavy deck and lost
+        # one against Blue- and Green-heavy ones, because it would lead a
+        # small Green die into Blue rather than a big Red one.
+        # Shrinkage is there because a read off a handful of cards is an
+        # estimate. A split a card *bought* is not an estimate, so it is
+        # believed in full — which is the difference MEASURE is paying for.
+        t = 1.0 if self.known.knows_stats(target.name) else self._MATCHUP_TRUST
+        beat = t * beat + (1 - t) / 3.0
+        tie = t * tie + (1 - t) / 3.0
+        hits = 3.0 * beat            # 1.0 against an unknown opponent
+        runs = 1.5 * (beat + tie)    # 1.0 against an unknown opponent
+        value = self._expected(me, card) * hits
 
         # A card that always ties and carries no Effect does nothing at all
         # as an attack. Hold it for the block it is actually good at.
@@ -516,8 +748,9 @@ class KitAI(SimpleAI):
         # green is not a repeat that costs him anything.
         for op in ops:
             if isinstance(op, fx.Stance):
-                return (value + self._SETUP_BONUS if op.key not in me.stances
-                        else value + self._STANCE_REPLAY)
+                return value + runs * (self._SETUP_BONUS
+                                       if op.key not in me.stances
+                                       else self._STANCE_REPLAY)
 
         # A totem that buffs the party is worth more than its own damage,
         # and worth nothing extra once one is standing.
@@ -525,30 +758,30 @@ class KitAI(SimpleAI):
             import engine
             already = any(c.is_object and c.summoner is me
                           for c in engine.table())
-            value += 0.0 if already else self._SETUP_BONUS
+            value += 0.0 if already else self._SETUP_BONUS * runs
 
         # A held tie-win is worth banking, once.
         if any(isinstance(op, fx.WinsNextTie) for op in ops) \
                 and not me.wins_next_tie:
-            value += self._BANK_TIE_WIN
+            value += self._BANK_TIE_WIN * runs
 
         # An Effect gated on "the card you played last turn was a different
         # colour" only pays when it is true, so only count it then.
         for op in ops:
             if isinstance(op, fx.Gated) and op.label == 'the colour changed':
                 if me.last_color and me.last_color != card.color:
-                    value += self._EFFECT_VALUE
+                    value += self._EFFECT_VALUE * runs
                     for inner in op.ops:
                         if isinstance(inner, fx.DamageBonus):
-                            value += inner.amount
+                            value += inner.amount * hits
                 break
         else:
             if ops:
-                value += self._EFFECT_VALUE
+                value += self._EFFECT_VALUE * runs
 
         # The load is the card, so score GRIND SHOT with what is in it.
         if any(isinstance(op, fx.AsLoadedRound) for op in ops):
-            value += self._load_value(me)
+            value += self._load_value(me) * hits
 
         # Repeating a colour ends a stance that says it does.
         if me.last_attack_color == card.color:
@@ -572,11 +805,13 @@ class KitAI(SimpleAI):
     # ---- defending ------------------------------------------------------
 
     def choose_defense(self, me, attacker):
-        opts = self._prefer_hand(me, me.playable(attacker))
+        opts = me.playable(attacker)
         if not opts:
             return None
-        return max(opts, key=lambda c: (self._defence_value(me, c, attacker),
-                                        c.die or 0))
+        price = self._card_price(me)
+        return max(opts, key=lambda c: (
+            self._defence_value(me, c, attacker)
+            - (0 if me.is_passive(c) else price), c.die or 0))
 
     def _defence_value(self, me, card, attacker):
         """What a block is actually worth: the odds of winning the reveal.
@@ -637,6 +872,17 @@ class KitAI(SimpleAI):
         choice rather than a checklist: reload, drink, or throw."""
         import engine
         hurt = me.hp <= me.max_hp * 0.5
+
+        # A seed is only worth taking for what it would actually heal —
+        # harvesting at full HP throws the bank away, and the whole point
+        # of a bank over a tick is that it waits (`campaign/chris.md`,
+        # Seeds). So take it when the healing would not be wasted.
+        banked = self._my_seed(me)
+        if banked:
+            missing = me.max_hp - me.hp
+            if missing >= banked or (hurt and missing >= banked * 0.6):
+                return ('harvest',)
+
         if me.drinks and hurt:
             return ('drink', me.drinks[0])
         if me.load is None and me.rounds:
@@ -652,6 +898,23 @@ class KitAI(SimpleAI):
             return ('reload', self._best_round(me))
         return None
 
+    def _my_seed(self, me):
+        """How much is standing in my own seed here, or 0.
+
+        **This reads an Object's HP, and that is not a hole in the
+        information rule.** A seed is a piece of this character that they
+        paid for and have watched grow at the start of every one of their
+        turns since (`campaign/chris.md`, Seeds) — they know its size the
+        way they know their own. `test_information.py` exempts this one
+        function by name rather than the method that calls it, so the
+        exemption stays the size of the reason for it.
+        """
+        import engine
+        seed = next((o for o in engine.table()
+                     if o.is_object and o.is_seed and o.summoner is me
+                     and o.position == me.position and o.alive()), None)
+        return seed.hp if seed is not None else 0
+
     def _best_round(self, me):
         import effects as fx
         rows = fx._rounds()
@@ -666,6 +929,15 @@ class KitAI(SimpleAI):
         return max(me.rounds, key=worth)
 
     # ---- choices a card Effect asks for ---------------------------------
+
+    def choose_prepared(self, me, options):
+        """A stance set before the fight costs no turn and no reveal, so
+        take the one whose Effect is worth most — scored as an attack
+        Effect would be, minus the card's own damage, which a prepared
+        card never rolls."""
+        def worth(card):
+            return self._attack_value(me, card, me) - self._expected(me, card)
+        return max(options, key=worth)
 
     def choose_option(self, me, options, prompt='Choose'):
         """Prefer a mode that is actually doing something. Armour is worth

@@ -32,7 +32,7 @@ The forest does not distinguish between one cut and forty. It is one being and t
 
 Ground to dust and mixed with reagents, the seed amplifies spells and incantations — the established magical-reagent trade out of the Weald, and the reason a forest with no road has buyers.
 
-As the **Echothorn Seed** it is sold whole and used raw: +2 to the next damage or healing roll, no Action spent, about 45 gold. That price is for the seed. Nothing in it is priced for the vine.
+As the **Echothorn Seed** it is sold whole and used raw: +2 to the next damage or healing roll, about 20 gold. That price is for the seed. Nothing in it is priced for the vine.
 
 ---
 

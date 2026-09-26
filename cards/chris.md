@@ -4,6 +4,11 @@ The three custom cards Chris starts with. See `campaign/chris.md` for the
 character, the stats they are built against, and why each one is the colour
 it is — **that file holds the reasoning, this one holds the cards.**
 
+**SEED is deliberately thin.** What a seed costs, what it grows into and how
+it is spent are on his sheet under Seeds (`campaign/chris.md`), not on the
+card, the same arrangement Kevin's rounds and drinks use. The card says the
+part that happens at the table; the sheet holds the part that is his.
+
 His deck is **4 Blue / 3 Red / 2 Green** (Mind 4 / Body 3 / Soul 2), so one
 signature per colour and six more from the Oracle draft at the table
 (`rules/character-creation.md`, Starting Deck).
@@ -15,31 +20,31 @@ deck (`rules/cards.md`, Deck Building).
 ---
 
 **MEASURE**
-BLUE — MIND
-Attack: Mind + d6
+RED — BODY
+Attack: Body + d8
 Effect: If the card you played last turn was a different colour than this one, deal +2 damage and the defender reveals their stats.
 Defense Effect: If the card you played last turn was a different colour than this one, the attacker reveals their stats.
-Range: Both
+Range: Melee
 *"A bar is not a bar because of the notes in it. It is a bar because of where it ends."*
 
 ---
 
-**RIPOSTE**
-RED — BODY
-Attack: Body + d6
-Effect: Gain Deadly.
-Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
-Range: Melee
-*"He doesn't answer the strike. He finishes it."*
+**SEED**
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Plant a seed.
+Defense Effect: If the top card of your discard pile is a different colour than this one, plant a seed.
+Range: Both
+*"He plants what he can spare. It remembers the rest."*
 
 ---
 
 **KILLSWITCH**
-GREEN — SOUL
-Attack: Soul + d4
+BLUE — MIND
+Attack: Mind + d4
 Effect: Ongoing — choose one: your attacks deal +3 damage, or gain Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
-Range: Both
+Range: Ranged
 *"A note changes and so does he. Nobody has worked out which comes first."*
 
 ---

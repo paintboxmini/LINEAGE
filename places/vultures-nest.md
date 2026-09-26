@@ -2,6 +2,46 @@
 
 A river port rebuilt so many times on top of itself that no one remembers the original shoreline.The town sits at a major intersection, ringed by local islands in the surrounding rivers and lakes, and every one of them trades through it: more cargo crosses its docks than anywhere else on the continent. The docks are layered like ribs. Rope bridges, crane arms, and signal lanterns form a maze above the water.
 
+## The Shape of the Ground
+
+**The Nest is pinned between water and rock, and that is why it looks the way it does.**
+
+**South is the water.** Docks, river, the whole reason the town exists.
+
+**North, about as far inland as you can walk in a few minutes, the ground stops and stands up.** Cliffs — not a slope you climb, a wall you *climb*, with hands. Beyond and above them the country keeps rising into mountains. There is no road north out of Vulture's Nest, because there is nowhere for a road to go.
+
+**So the town runs long east to west and is barely any depth north to south.** A ribbon of buildings between the berths and the rock. Everything is within a short walk of the water because nothing *can* be far from it, and the town grew along the bank rather than back from it. Some of the northern buildings are built against the cliff face and use it as a fourth wall.
+
+*It also explains the rebuilding.* A town with nowhere to spread rebuilds on top of itself, which is exactly what the Nest has done (the opening line of this file, and The Ribs, below).
+
+### The rock is sandstone
+
+**Brown sandstone, and it is the colour of everything up there** — the cliffs, the scree at their foot, the dust that ends up on every north-facing wall in town. A thing the colour of that rock, standing still against it, is not visible. Nothing in this town finds that remarkable; it is simply what the north wall of the world looks like.
+
+### And it is where the plants are
+
+**The Nest has no growing country and never has** (What Grows Here, below) — but the high ground does. Whatever soil there is collects up in the folds and the shaded cuts where the rock holds water, and that is the only green within reach of this town.
+
+**Which does not put a vegetable on anybody's plate**, and the two facts sit together without contradicting each other. What grows up there is not dinner, and the road to it is a cliff. *A plant from the high country arrives in the Nest as an ingredient somebody climbed for, priced accordingly, and never as food.*
+
+**The first one written is Seepleaf** (`flora/seepleaf.md`) — sharp, mineral, eye-watering, growing in the wet seams where the rock holds drizzle. **It is the one flavour this town does not have**, and getting any of it down means climbing back with your hands full, which is the whole of its difficulty.
+
+### What lives up there
+
+**The Gollop** (`bestiary/gollop.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. **Territorial, and they post lookouts**, so the high country is not empty ground with a hazard in it; it is somebody's, in stretches, and a climber is either inside a troop's range or outside it. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
+
+### The finishing house
+
+**FourthEye is not finished in the Nest. It is finished up in the rock.**
+
+The chain runs harvest → refine → transport → sale (`items/fourtheye.md`), and the middle step has never had an address. It does now: **a hideout somewhere in the mountains north of town**, low rather than high — not a summit, not a climb anybody would notice somebody making, just *thoroughly hidden*. The film comes off the animal, and everything after that happens up there before the product ever moves.
+
+**Low elevation is the whole design.** A place high up is a place people can see you going to. The operation wants a short walk off a route that already exists, behind something, and it has one.
+
+*Exact location, who runs it, and how the Nest end connects to it are unestablished — see Open, below.*
+
+---
+
 **Most of what arrives here was rowed or hauled, not sailed** (`world/geography-overview.md`, How a boat actually moves). The Nest is the densest knot on the web, so every pullway team, oar crew and small-craft sailor working the southeast passes through it sooner or later — which is also why a party asking about a boat that went upriver is asking a question dozens of people can answer, and why the Compact can find out who moved what simply by asking the teams on the bank.
 
 The smell: pitch, citrus peel, river silt, wet wood.
@@ -36,9 +76,11 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **The lockdown is the whole crisis, and it is on the shore.** Not the berth — the whole stretch of dock. Every crate into a Compact warehouse, and **nobody permitted to leave**: not the crews, not the traders, not the dockhands. Days of it now. The barge is fine. The port is not, and **it has only been two days** — which is why nothing has broken yet and why everyone can feel that it is about to.
 
-**And it cannot resolve itself, for a reason nobody here could guess.** The barge crew are glasskin from a congregation that has been isolated for centuries, and their harmonics have drifted into a language that exists nowhere else (`quests/the-quarantined-barge.md`). They talk constantly. Nobody in the Nest understands one syllable of it, and the deafness is entirely on this side of the rope.
+**And it cannot resolve itself, which is not because anybody is being difficult.** The barge crew speak the common tongue and **answered every question Bartho asked, in full, cheerfully, in the first hour** (`quests/the-quarantined-barge.md`, What They Told Him). He knows where they are from, what is wrong with them, and that they did it to themselves on purpose over two hundred years of careful work. **He knows more than he ever wanted to and he is no closer to opening the berth**, because none of it is checkable by anyone in this port and all of it is worse than not knowing.
 
-**Bartho has been asking each of them the same question since the boat came in** — *what are you, where did you come from* — and the true answer to the first half is their people's name, which is a chord no single voice can produce (`factions-and-races/races-glasskin.md`). They have been answering him every day. He has been writing it down as *won't say*.
+**What Bartho has actually been able to get out of them is sermon.** They speak some common and not nearly enough of it, and what comes through Jonas is devotion — what was received, how visibly, how rare, who witnessed it, what it means that the Unheld reached for this person. *Ask what is wrong with her and you get an answer about what she has been given. It is not evasion; they cannot hear the question you asked.* **He has written it all down and it has bought him nothing**, and he is not being unreasonable about that.
+
+**And the barge is carrying their dead upriver** (`places/pneum.md`, The Promise Barge), which means releasing them is not releasing them — it is sending this to Glasslight with his signature on it.
 
 **Who is being held.** **Corvel**, the barge's owner. The Compact caught him, not a disease — he was discovered, and he is in custody because he will not disavow the practice or name where the barge came from. There is nothing he considers wrong to admit to, so there is nothing to extract. He is not being mistreated. He is simply not being let go, and the longer that lasts the more it becomes the Compact's problem rather than his.
 
@@ -50,7 +92,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
-**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel won't name where the barge came from, the clock nobody on the dock knows about, and five ways it ends.
+**The adventure is written**: `quests/the-quarantined-barge.md` — the three incompatible things the Compact needs, why Corvel will not give up the route, the clock nobody on the dock knows about, and five ways it ends.
 
 *The Adventurers' Hall in the capital already posts this as real and current (`places/capital/adventurers-hall.md`).*
 
@@ -72,7 +114,7 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 
 **Almost nothing native, and that is the interesting part.** The Nest has been rebuilt on top of itself so many times that the ground under the town is not ground — it is silt, ballast, pitch, ash and two centuries of other people's rubbish, and nothing that belongs to this river ever got a chance at it.
 
-**What grows on it came off a boat.** Ballast goes into an empty hold and comes out again when the cargo goes in, carrying the soil and seed of wherever it was shovelled up. The spoil banks around the islands are layers of somewhere else, and the scrub on them is descended from ports most people here could not name. **Nobody's Pepper** (`flora/nobodys-pepper.md`) is the stowaway that took to it best, and it grows a different pepper on every bank because every bank came off a different ship.
+**What grows on it came off a boat.** Ballast goes into an empty hold and comes out again when the cargo goes in, carrying the soil and seed of wherever it was shovelled up. The spoil banks around the islands are layers of somewhere else, and the scrub on them is descended from ports most people here could not name. **Nobody's Pepper** (`flora/nobodys-pepper.md`) is the stowaway that took to it best, and it grows a different pepper on every bank because every bank came off a different ship. **Burnrind** (`flora/burnrind.md`) is the other one, and it loses to the pepper everywhere the ground has settled — it only fruits where a bank has just burned through, which the banks do, smouldering underneath for years on coal dust and oiled dunnage before a stretch finally goes up. *A bank fire is the thing this town is most afraid of, because the banks are what the islands are standing on. That one crop grows out of it is nobody's consolation and one cook's entire supply.*
 
 **Which is why the town eats the way it eats.** Salted strip, dock broth, chewfat — meat, fish and fat, and very little green on any plate (`items/vultures-nest-items.md`). It is not a preference and nobody thinks of it as a hardship. There is simply nothing growing within a day of here that a person would choose to make a meal out of, and there never has been. A party that arrives expecting a market stall of vegetables is going to be the first people in the room to find that strange.
 
@@ -91,9 +133,11 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 **Bartho Underfist — The Quiet Dockmaster**
 Grey beard. Late forties. Eyes like a hawk. Never raises his voice. Everyone listens when he speaks anyway. The name is immovable. So is the man.
 
-**Jonas Widdlepen** — from Glasslight Reach. Young, nervous, frantically double checks and records cargo. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
+**Jonas Widdlepen** — **glasskin** (`factions-and-races/races-glasskin.md`), out of Glasslight Reach. Young, nervous, frantically double checks and records cargo. Keeps the official port records. The records are thorough. Bartho's shadow — if you can't find Bartho, Jonas is three steps behind him and knows what Bartho would want.
 
 He also reports to the Regency. Bartho knows this. It is part of the arrangement — Jonas's ledger is cross-referenced against Quartermaster Voss's intake reports at Eclipseria South Gate. Condoned goods appear in both. The system works because Jonas keeps it accurate.
+
+**And he is the only person in the Nest who can follow the barge crew at all** (`quests/the-quarantined-barge.md`, What They Told Him) — a Reach ear against two centuries of drift, near enough to be useful and far enough to be dangerous. *Which puts Bartho in a bind he has not said out loud: his only translator is the Regency's informant, so every question he asks through Jonas becomes a written record of an island nobody has ever filed.* **It is half of why the questioning has been so slow.**
 
 **Aege** — near the east gate, and the guide the party actually travels with if they go inland. Lean, weathered face. She watches how you walk before she talks to you, which is the whole hiring interview. On the road she speaks in paths rather than places and does not explain her decisions; at a table with a meal on it she is the same person with a much wider register. Full profile and combat identity at `characters/aege.md`.
 
@@ -205,6 +249,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
 - **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
+- **What is in the market is the cage, dressed as a crate** *(2026-09-21)*. They ship inside an ordinary sealed packing crate; **that outer box gets broken down and taken away at setup**, and what stays is the inner cage, slatted and shimmed to read as freight somebody forgot. *So the tell for anyone who stops and actually looks is that it is not a crate: no lid seam, no shipping marks, no cooper's stamp, and slats where a crate would have boards.*
 
 **Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
 
@@ -317,6 +362,16 @@ Grey beard, hawk's eyes, **never raises his voice.** He explains the hold withou
 
 This is the scene's exposition and it should be delivered as a man managing a problem, not briefing adventurers. Everything the party needs to know about the Nest's posture is in how he says no: official authority exists, for a price, and the price is not currently coin.
 
+**Two lines inside this beat, one each for Kevin and Pat.** Neither costs the scene anything and each turns a general problem into a specific person's problem (`campaign/session-1-threads.md`, The three private threads).
+
+**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Herb. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
+
+**It is friendly, and that is what makes it bad.** Kevin picked this port precisely because a man can disappear into it, and the first thing it does is call him by name in front of a dockmaster who is about to start writing things down. *Nobody in the scene understands that they have done anything. Only Kevin's player does, and only if they were listening.*
+
+**Pat, when he asks his question.** He is looking for one living person somewhere out on the water (`campaign/session-1-convergence.md`, Pat — chasing one living person), and asking a port about somebody hiding on the islands is an ordinary question on an ordinary day.
+
+**This is not an ordinary day, so the dockhand simply stops talking.** No refusal, no warning, no suspicion — the conversation was going fine and then it is over, and the man finds something to do with his hands. **The lockdown is what makes the question dangerous**, and the port's answer to a dangerous question is not to say no. It is to go quiet and wait for the stranger to leave.
+
 ### Beat two — the Scarves, in the open
 
 **Three kids are working the edge of this conversation while it happens.** They are not hiding. They are offering to carry bags and show the market, the information is genuine, and they are choosing marks in front of the party while the party is busy being told no (The Red Scarves, above).
@@ -337,9 +392,13 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 **Nobody else on the dock will touch it, and that is the lockdown's doing.** Every hand on that frontage works for the Compact and is under an order not to go near loose cargo off an impounded berth — putting hands on it is the precise thing they have been forbidden. Bartho is occupied with Harlock. **The party are the only people standing there with no rule stopping them**, which is the same reason Bartho was talking to them in the first place.
 
-**The encounter.** **Three wrackclaws** against three starting characters: measured at a 99.6% win, somebody taking a knee about one fight in six, and a death about one in twenty (`combat-simulations/encounter_budget.py`). That is the shape a first fight wants — won, but not free. **Four if a fourth seat is filled**, which measures nearly identically for four characters; four against three is a 27% chance of burying somebody in session one and is not the same encounter.
+**Three wrackclaws** against three starting characters: **the party wins essentially every time, somebody Collapses in about one fight in ten, and a character dies in about one in thirty** — measured 2026-09-22 across three seeds at 1,000 fights each, deck as `bestiary/wrackclaw.md` writes it and all three Frontline. *Inside the session budget of roughly one death in twenty (`rules/gm-guide.md`, Pacing Sessions).* **Four is several times as lethal and is a different encounter, not a bigger one.**
 
-**It teaches Range with the floor.** The wet timber at the edge is Frontline and the dry stone behind it is Backline, and a Melee card needs both of you out on the timber (`rules/combat.md`, Range). A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
+*The old numbers here — one knee in six, a death in twenty — were measured off a tool that built the creature's deck illegally, and off a four-card creature that no longer exists. Both are fixed (`bestiary/wrackclaw.md`, The 2026-09-21 review).*
+
+**It teaches Range with the floor.** The fighting is out on the wet timber, so **the timber is the Frontline for both sides** and a Melee card needs both of you on it (`rules/combat.md`, Range). A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
+
+**Each side's Backline is its own and they are at opposite ends** — *not one shared patch of stone* (`rules/combat.md`, Positioning). **Pulling back from the timber puts a character on the dry dock.** A Wrackclaw backing off the line goes the other way, to the last foot of timber before the river, because there is nowhere else for it to be. *Worth having straight before the table sets markers out: the two Backlines are the two farthest points on the field, which is why Backline to Backline is never Melee range.*
 
 **Three things it deliberately does not do:**
 
@@ -347,7 +406,9 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 - **Nothing disarms anyone.** Wrackclaws pull at what is already in the water. They do not take your cards, your kit or your turn.
 - **They die on the stones.** What they have dragged up stays where the party can reach it. A dead scavenger does not slide into the river with the loot still on it.
 
-**Losing is a loss, not a wound.** Break off and the wrackclaws take what they can drag and the tide takes the rest — including a portion of Kevin's temple wine, which is exactly the kind of thing his family will hear about and exactly the wrong kind of serious.
+**Losing is a loss, not a wound.** Break off and the wrackclaws take what they can drag and the tide takes the rest — and it is **Harlock's freight**, in front of Harlock, who has just watched three people decide it was not their problem. *That is the audition failing rather than a fight being lost, which is a better consequence than damage and costs the party nothing they own.*
+
+*This paragraph used to say the party lost a portion of Kevin's temple wine. **Kevin is not running wine** — settled 2026-09-19 and stated outright in `campaign/kevin.md` and `campaign/session-1-convergence.md`: he is carrying nothing, and the wine is his history with this port rather than his errand in it. The spill in the water is off the Arcadia, which is whose it should have been all along.*
 
 **And it is an audition.** Harlock is on his own deck twenty feet away with nothing to do but watch. He does not hire strangers. He is about to hire these ones, and the reason is this.
 
@@ -371,7 +432,13 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **Harlock's face is the whole beat.** He has a famous temper and he does not use it — because using it here confirms there is something to find. He agrees. That is the most frightening thing he does in session one.
 
-**And Jonas goes** — but not yet, and the gap is the whole of session one's second half. Young, nervous and frantically thorough, he is also a man who will not board a ship without the right ledger, and the right ledger is in the office at the other end of a dock that currently has a wrecked berth across the middle of it. **Call it ten minutes. Everyone watching can see him walk away and can see that he is coming back.**
+**And the line that makes this Chris's scene.** On his way past, Jonas stops, looks at the three of them, and asks Bartho — not them — whether he should be taking their names as well, since they are standing on the impounded frontage and he is going to be writing anyway.
+
+**Bartho waves it off.** *Later. One thing at a time.* **That is the whole beat and it is over in eight seconds**, and for exactly one person at the table it was the worst eight seconds of the day: a Regency-cross-referenced ledger came within one shrug of opening on him, and the reason it did not is that a busy man had something else on his mind (`campaign/chris.md`). *Nobody threatens anyone. Chris's player does the work.*
+
+**And Jonas goes** — but not yet, and the gap is the whole of session one's second half. Young, nervous and frantically thorough, he is also a man who will not board a ship without the right ledger, and the right ledger is in the office at the other end of a dock that currently has a wrecked berth across the middle of it.
+
+**How long that takes is a dial, not a fact** (`campaign/session-1-threads.md`, The one real dial). **Ten minutes** — a man visibly walking — makes the crate decision happen now, under pressure, and is what the rest of this scene is written as. **An hour or two** — a wrecked berth to survey and a crane to log, which is the most in-character thing about him — frees the party to go to the market and come back, and **Harlock's ask lands on their return, after they have already walked past a Moving Crate at the east end.** *The long version is probably the better one. Both work.*
 
 ---
 
@@ -379,11 +446,11 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **He comes down off the Arcadia and makes the party an offer while Jonas is still walking.** Not later, not that evening, not through an intermediary — now, because now is the only time the answer is worth anything to him.
 
-**The job is small and he will not decorate it.** There is a crate on his deck. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
+**The job is small and he will not decorate it.** There is a crate on his deck — **a sealed packing crate, heavy, unremarkable, no markings worth reading** *(2026-09-21)*. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
 
 **Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own freight, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
 
-**The clock is visible and it is short.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.*
+**The clock is visible.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.* **How short it is, is the dial** (Beat five, above): at ten minutes the pressure is the point, and at two hours Harlock makes this same offer when they come back from the market.
 
 **And the other side of it is standing right there.** Jonas, on his way past, alone, about to board a pirate's ship because the dockmaster told him to — and visibly not wanting to. **He does not ask, because it would not occur to him that he is allowed to.** A party that offers to go with him is doing the kindest available thing and also taking the other job, and the two are incompatible inside the same ten minutes (The Arcadia's Hold, below).
 
@@ -391,7 +458,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 ### What it leaves running
 
-- **A choice already made, or about to be.** Harlock's offer and Jonas's walk are the same ten minutes, and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
+- **A choice already made, or about to be.** At the short setting Harlock's offer and Jonas's walk are the same ten minutes and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
 - **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
 - **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
 - **They have been marked.** The kids have them.
@@ -412,6 +479,10 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **So Harlock is a link, not the answer.** Who pays him, and who at the Nest is actually running the animals, is still unwritten and should stay that way — it is the thing Erubeth is here to find out (`characters/erubeth.md`, `bestiary/ocellus.md`, Not Yet Set). A party that cracks the Arcadia gets the route. They do not get the source.
 
+**The packing crate is why nobody in the chain ever learns anything, and it is the whole procedure** *(2026-09-21)*. **Inside the outer box is a cage**, and the outer box does not get opened by the people who carry it. Sealed timber has nothing to look at and nothing to react to — *it is inert freight right up until somebody unpacks it*, which is why a work crew can walk it through the busiest market on the continent and notice nothing at all. **Harlock is not lying when he says it is a box.** He has never seen it open either.
+
+**Somebody else comes later and sets it up.** Unnamed, unwritten, and deliberately so — they break the packing crate down, dress the cage as freight, and walk away, and **that is the moment it starts collecting.** *A party that delivers it and hangs around has a real chance of watching the handover without understanding a second of it. That is the best version of this beat and it costs nothing to leave available.*
+
 **Why he cannot simply hide it.** An Ocellus in a warehouse starves (`bestiary/ocellus.md`). The one thing Harlock cannot do with this cargo is put it somewhere discreet, which is why the previous one is standing in the middle of the busiest market on the continent in a plain wooden box. His only move is to land it in public, in daylight, in front of everyone, before Jonas reaches that part of the manifest.
 
 **That is the clock, and it is a good one**, because every option is bad for him:
@@ -419,6 +490,18 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - **Leave it aboard** and Jonas writes down a living crate in a Regency-cross-referenced ledger.
 - **Dump it** and he answers to whoever paid him, who has so far been worth not annoying.
 
-**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **Both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six), and neither one tells the party what is in the box.
+**What the party can be hired for, from either side.** Harlock needs the crate walked off the Arcadia and set down in the market without a story attached — a job he will pay properly for and explain nothing about. Or: Jonas needs to not be alone on that ship, and the party are the only people on the dock with no stake in the count. **At the short setting both jobs are the same ten minutes and they are incompatible** (The Opening Scene, Beat six); at the long one the party can do both, which is a softer session and still a good one. Neither job tells them what is in the box.
 
 *A party that takes Harlock's job and only finds out later what they carried is the best version of this. Nobody lied to them. They just didn't ask, same as everybody else in the chain.*
+---
+
+## Open
+
+*The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
+
+- **The name of the high country, and of the Gollop.** Neither was named when it was described. `bestiary/gollop.md` carries three candidates for the animal; the range itself has none at all
+- **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
+- **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
+- **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it
+- **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (What Grows Here, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
+- **Whether the finishing house sits inside a troop's range or between two of them.** Now that the Gollops are territorial with lookouts (`bestiary/gollop.md`, They Hold Ground), the question sharpens: a smuggling operation that needs the same quiet approach every week either found a gap in the map of troop ranges, pays some kind of cost to use one, or has been lucky for longer than luck usually runs. **A gap is the strongest answer** — it makes the location genuinely hard to find for anyone who doesn't already know where the ranges are, and it means the Gollops are the operation's outer wall without anyone having arranged it

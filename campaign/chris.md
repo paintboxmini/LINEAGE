@@ -1,6 +1,8 @@
 # Chris
 
-*Player character — light draft. No character name chosen yet; filed under the player's name until there is one.*
+*Player character — light draft. **The character's name is Code**, chosen by his player and set 2026-09-24; **the Silver Sword** is the epithet that came with it. The file stays at `campaign/chris.md` because the repo files player material under the player's name, and "Chris" throughout this file means the player.*
+
+**The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
 ## What He Is
 
@@ -60,6 +62,20 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ---
 
+## Spotlight Cards — the twelve moments
+
+**Chris's character deck reads as a life, and the reading is in `experimental/code-concept-cards.md`.** Twelve cards, each one a pivotal scene — the first time Code used it — running Mind / Body / Soul four times through, against a motto of four words.
+
+**Six of the twelve land on this file without being bent.** The imprint, the moults, his father teaching him to look; then Kevin, the run, and the moment he stops being a probe. *"I was sent to observe. Now I choose."* sits exactly on The Night They Ran, above.
+
+**The other six have not happened.** They are named and nothing more, and they should stay that way — a spotlight card is noticed after a scene, not played toward. Acts III and IV are Chris's.
+
+**Play opens with Code in his third act** *(set 2026-09-24)*. The campaign itself has no act structure — it starts at session one. The acts are Code's own development, and the first two are behind him before the table sits down, which means the party meets a character already partway through his story.
+
+**He collects them; he does not start with them** *(set 2026-09-24)*. **Spotlight cards stay out of the draft entirely** — they are not shuffled into an advancement deck and nobody draws one. They are supplemental to a normally drafted Oracle deck, which is where most of his cards will still come from. His deck stays 3 customs + 6 drafted, the same shape as Kevin's and Pat's. **The objection to a full custom deck was never combat balance** — it is that a spotlight name is necessarily a narrow one, and a name is what a player spends outside combat (`rules/cards.md`, The Name Is Half the Card). Nine spotlight names is a hand that is beautiful in a fight and nearly mute outside one. *And a card handed over at creation is a plan; one that arrives after the scene is a memory.*
+
+**Acts I and II are both the cards he holds and the reason he is what he is.** That was asked as an either/or and it is not one.
+
 ## The Live Thread
 
 Story beats center on keeping the mind link off. It's not a switch he holds down — it's a door that could come open on its own, get forced from the other side, or slip without him meaning it to. What happens if it does isn't decided, and shouldn't be yet.
@@ -88,32 +104,32 @@ What the kit delivers so far:
 - **MIMETIC BLADE** is the one form he has actually perfected — no draw, no sheath, just whether the arm is a sword yet. A singer with one song they can do perfectly, which is more than most singers have.
 - **KILLSWITCH** is the stance, and stance-changing is what makes a fight look choreographed rather than transactional.
 
-**And the kit now delivers flow**, which was the hole in it. Two cards do it from opposite directions — **MEASURE** pays him a little every turn he keeps the pattern moving, **RIPOSTE** turns a block into the next strike. Both are written below under Cards. A third candidate, **FOLLOW THROUGH**, is written and held back as a later reward rather than a starter.
+**And the kit now delivers flow**, which was the hole in it. Two cards do it from opposite directions — **MEASURE** pays him a little every turn he keeps the pattern moving, **SEED** pays him for having been somewhere else. Both are written below under Cards. A third candidate, **FOLLOW THROUGH**, is written and held back as a later reward rather than a starter.
 
 ### Why these two, out of three candidates
 
-**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating — and now that the payout is information rather than a card, it cannot build card advantage either. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something.
+**MEASURE runs on the RPS triangle** — the system's most distinctive mechanic — and turns it into a personal rhythm. It asks a real question every single turn, tracks nothing but *what did I play last*, and cannot snowball, because the payout is per-turn rather than accumulating — and now that the payout is information rather than a card, it cannot build card advantage either. His 4/3/2 split is exactly right for it: enough of each colour to rotate, and only two greens, so the rotation costs something. **And the card is Red now**, which sharpens it — the rotation that pays MEASURE is most often a rotation *off* Blue, which is the colour his stance also punishes him for repeating. The two cards ask the same thing of him from opposite directions.
 
 **MEASURE is doing three jobs at once and all of them are the card.** A measure is a unit of music. To measure is to assess before acting. And *taking someone's measure* is reading them — which is what he's doing every turn he decides what colour comes next. Broad enough to earn Advantage on a wide spread of checks, and an action rather than a state.
 
 **The payout is a stat reveal rather than a card**, changed 2026-09-18, and the change is an upgrade to the fiction and a downgrade to the power, which is the right direction on both. *Taking someone's measure* is now literally what the card does.
 
-**And it is worth more than it looks, because stats are not just stats here.** Deck size is Body + Mind + Soul, and for a creature each colour's count *equals* its matching stat — that one is a build rule, not a guideline (`rules/cards.md`, Deck Building, Enemy decks). So against a creature the reveal is also **the exact colour composition of its deck**: how much Red is still to come, and therefore what his own next colour should be. On a game whose core mechanic is a colour triangle, that is close to the most useful single thing he could learn, and he gets it by playing the rotation the card already wanted him to play.
+**And it is worth more than it looks, because stats are not just stats here.** Deck size is Body + Mind + Soul, and for a creature each colour's count *equals* its matching stat — that one is a build rule, not a guideline (`rules/cards.md`, Deck Building, Enemy decks). So against a creature the reveal is usually also **the colour composition of its deck**: how much Red is still to come, and therefore what his own next colour should be. On a game whose core mechanic is a colour triangle, that is close to the most useful single thing he could learn, and he gets it by playing the rotation the card already wanted him to play.
+
+**"Usually" is doing work there as of 2026-09-24.** The colour match is a heuristic rather than a law (`rules/cards.md`, Deck Building), and off-ratio creatures paid for by a mechanic are now a design space the repo intends to explore (`rules/cards.md`, Paying for an off-ratio deck). Every creature written so far matches, so the inference holds today — *and the first off-ratio creature is the moment MEASURE stops being able to promise it.* **That is a good thing for the card rather than a problem**: a read that is right almost always and occasionally wrong is a more interesting card than a guarantee, and Code finding out the hard way that something is not built like everything else is a scene.
 
 *Against another player it's a strong read rather than a certainty — colour-matching is explicitly a heuristic for player decks and drafting bends it (`rules/cards.md`, Deck Building, Player decks). Worth knowing before anyone claims the card reads any deck exactly.*
 
 **Compare STUDY** (`cards/blue-mind.md`), the Oracle card that does this: Ranged, d4, defence half only, gated behind a DC 13 Mind/Reason check. MEASURE gets the same reveal on **both** halves with no check, and pays for it with a condition STUDY doesn't have — he must have rotated colour since last turn, which is a cost he pays in deckbuilding and in every turn's decision rather than in a die roll.
 
-**RIPOSTE is flow as defence feeding offence**, which is what sword fighting actually looks like. It grants **Deadly rather than a flat number**, and the difference matters:
+**SEED is flow as a thing that keeps running while he is elsewhere.** It is the only card in the kit whose payoff is not about the exchange it was played in:
 
-- Deadly is a status he *holds* (`rules/card-glossary.md`, 17), so the block genuinely arms the next motion instead of being a same-turn rider that evaporates if the opening doesn't come immediately.
-- **It stacks.** Two blocks give two Deadly give two armed attacks — which is a chain, which is the entire thing this card is supposed to produce. A flat +3 twice is just +6 once.
-- It's a variable +d6 rather than a guaranteed amount, which reads like an opening rather than a payment.
-- It's existing vocabulary that the rest of the corpus already talks to, including Weak cancelling it 1-for-1 (`rules/card-glossary.md`, 18). Being counterable is a feature: enemies get an answer.
+- It costs **3 HP to plant**, which is not a balancing tax bolted on — it is AMALGAMOUS FORM's existing ruling (`campaign/passives.md`): a standing structure made from a split-off piece *is an Object with its own HP, paid out of his own HP pool.* The seed is the smallest possible case of the thing his Passive already says he can do.
+- What he plants **can be attacked**, so the bank is not safe. An enemy that eats a grown seed takes the whole deposit with it.
+- The payoff is **banked rather than ticked**, which is worth more than the rate suggests: a heal-per-turn is wasted whenever he is at full HP, and a seed is never wasted until he spends it.
+- And it gives his **free action something to do.** Kevin's competes three ways; Chris's has been empty since he was written.
 
-**And the dead-turn problem was fixable, because a card has two halves and the first draft only used one.** The riposte sits on the Defense half; the Attack half arms him when he is the aggressor. It is never a blank turn, and the two halves teach the same idea from both directions.
-
-**The three together.** MEASURE is the discipline, RIPOSTE is the reflex, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
+**The three together.** MEASURE is the discipline, SEED is the patience, KILLSWITCH is the stance. A blade singer needs all three to read as a blade singer rather than a man with a trick.
 
 ## Magic Expression — nature and transmogrifying
 
@@ -130,6 +146,16 @@ What the kit delivers so far:
 **The interesting version is whose it was.** A scholar of plant life, at a university, raising a child in secret, writing things down. A book that is half a botanist's field notes and half something else is a stronger object than a grimoire, and it is the one physical thing he would have carried out of the ambush.
 
 *That reading is a suggestion. The book is Chris's, including whether it is his father's at all.*
+
+### Starting gold — 25, and it is not his
+
+**He left in the night with what he could carry and none of it was money** (The Night They Ran, above). The book is the one physical thing, and it is flavour with no rules on it.
+
+**So the 25 is Kevin's** (`campaign/kevin.md`). Kevin chose the port, Kevin's family name is what opened a berth, and Kevin is the one hiding him — the money Chris has is money Kevin has been spending, and whatever he is wearing was bought for him. *That is an inference from what both sheets already say rather than a new fact, and it is offered rather than set: **whether Chris is carrying Kevin's coin or scraped together his own is Chris's player's call**, and the number does not change either way.*
+
+**Why 25 and not 40.** By background he is the poorest person at the table by a distance, and by sheet he is the second-emptiest (`rules/equipment.md`, Starting Gold). *Those pull opposite ways, and 25 is where they meet — enough to buy two things at a dock counter, not enough to look like anyone planned for him.*
+
+**It buys nothing that matters and that is correct.** Chris's power is on his cards, his Passives and a Trait that costs nothing. **He is the one character at this table who loses least by being broke**, which is worth knowing before anybody feels bad about the number.
 
 ---
 
@@ -165,54 +191,70 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, RIPOSTE, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
 
-His stats want **4 Blue / 3 Red / 2 Green**, so one signature in each colour fits without crowding any of them — the same shape Kevin's three customs take (`campaign/kevin.md`, Cards). That leaves **3 Blue, 2 Red, 1 Green** to draft.
+His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
+
+**Every one of the three changed colour on the way here**, which is worth saying plainly rather than hiding in the history: MEASURE went Blue to Red, KILLSWITCH went Green to Blue, and SEED replaced a Red card entirely. The set ended up where it started — one per colour — by a different route, and each card is now the colour its fiction was always describing rather than the colour that was convenient when it was written.
 
 ## Cards
 
 Three customs, one per colour. **They have landed: `cards/chris.md` is the card, this section is the argument for it.** Both copies are worth keeping and they must not drift — `python3 agent-tools/check-card-drift.py` is what notices when they do.
 
-**MEASURE — no repeated note.** The flow card, and the one that runs every turn. Blue because deciding what comes next is the Mind's job, and because it is his deepest colour, which is what lets him afford a card he wants in hand often. The reveal is written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
+**MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
+
+**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
+
+**What he actually pays is the Range, and it is a real price on this card.** A defender's card has to satisfy its own Range as though they were attacking (`rules/combat.md`, Attack Resolution), so a Melee card cannot block at all unless both combatants are Frontline. The half that reads the *attacker* now only exists when he is already in the scrum — which is where a blade singer should have to stand to be reading anybody.
 
 ```
 MEASURE
-BLUE — MIND
-Attack: Mind + d6
+RED — BODY
+Attack: Body + d8
 Effect: If the card you played last turn was a different colour than this one,
         deal +2 damage and the defender reveals their stats.
 Defense Effect: If the card you played last turn was a different colour than
         this one, the attacker reveals their stats.
-Range: Both
+Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**RIPOSTE.** The block that becomes the strike. Red because it is a body doing a thing it has done ten thousand times, not a plan.
+**SEED.** A piece of himself left somewhere to grow. Green because it is patience, and because Soul is the stat he has least of — the card he can least afford to lean on, which is the right home for a payoff that arrives late.
 
 ```
-RIPOSTE
-RED — BODY
-Attack: Body + d6
-Effect: Gain Deadly.
-Defense Effect: Gain Deadly. If you won this exchange, gain Deadly again.
-Range: Melee
-"He doesn't answer the strike. He finishes it."
+SEED
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Plant a seed.
+Defense Effect: If the top card of your discard pile is a different colour than this one, plant a seed.
+Range: Both
+"He plants what he can spare. It remembers the rest."
 ```
 
-**Melee is the price, and it is a real one on this card specifically**, because a defender's card has to satisfy its own Range as if they were attacking (`rules/combat.md`, Attack Resolution, step 2). A Melee card cannot block at all unless both combatants are Frontline. So the half he most wants — the one that pays double — only exists when he is already in the scrum, which is where a blade singer should have to stand.
+**The card is deliberately almost blank, and the rules are on this sheet** under Seeds, below. Kevin's rounds and drinks work the same way (`campaign/kevin.md`) — the card names the thing, the sheet holds what the thing is. It keeps a card that would otherwise need a paragraph down to one line, and it keeps the growing part where it belongs, which is with him.
 
-**No Special Rule is needed for ties, unlike FOLLOW THROUGH.** A tie triggers the attacker's Effect *and* the defender's Defense Effect (`rules/combat.md`, Attack Resolution), so a tied block still arms him once — and the second Deadly is fenced off behind *won this exchange* in the card text itself. The card says what it means without a rider.
+**Replaced RIPOSTE on 2026-09-20.** RIPOSTE was a good card and a generic one — gain Deadly, gain it twice on a clean block — and nothing about it was Chris rather than any competent swordsman. SEED is not a card anyone else could hold: it costs him his own body to plant.
 
-**KILLSWITCH.** The stance. Green because modal is flexibility, which is green's whole identity (`rules/cards.md`), and because it puts his weakest stat on the card he plays for its effect rather than its damage — the same reasoning SERVE runs on (`campaign/kevin.md`). His draft has only two green slots, so a signature there is well placed.
+**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate — *the top of your discard pile is a different colour than this one* — is the same colour-rotation idea MEASURE runs on, read off the one public pile anybody at the table can check. He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
+
+**Rebuilt from the core card of the same name**, which held an Oracle seat for one day in September and was pulled for being a specialist's card (`cards/tiers/beginner.md`). Nothing survives but the name and the die. The old one planted a buff at a position and collected it a turn later; this one plants *him*.
+
+**KILLSWITCH.** The stance. **Blue and Ranged-only since 2026-09-20**, having started Green and Both. The fiction is that changing mode takes a beat he has to buy: he makes space, switches, and comes back. Ranged-only is what makes that a real sequence instead of something he does mid-swing — he cannot flip stance while standing in the scrum, which is exactly when he most wants to.
+
+**Blue because the choice is the card.** Deciding which of two modes the fight needs is the Mind's job, and it is the same reasoning that used to argue for Green as flexibility — modality reads as either, and the tiebreak is that Soul is now spoken for by SEED.
+
+**The die stays at d4, and that is deliberate.** Mind 4 is his best stat, so the colour change alone takes the card from 4.0 expected to 6.0 — it went from the thing he never played to a real attack without touching the die. A d6 would put it at 7.0, tied for the best card in his kit, and then setting the stance would cost him nothing. **The cost is the good part.** Ranged-only already earns a die above the d4 default; spending that earning on keeping the stance affordable rather than on damage is the trade this card wants.
+
+**And the drawback now bites his own deepest colour.** The clause ends the stance on the same colour twice running, and the stance is Blue, and Blue is four of his nine cards. Measured over 400 fights it ends by repeat **2.8 times as often** as it did in Green — 81 against 29 — while being up far more of the time overall, because a card worth playing gets played. He will lose this stance to his own best colour, repeatedly, and that is the card working rather than failing.
 
 ```
 KILLSWITCH
-GREEN — SOUL
-Attack: Soul + d4
+BLUE — MIND
+Attack: Mind + d4
 Effect: Ongoing — choose one: your attacks deal +3 damage, or gain
         Armour 3. Playing the same colour 2 attacks in a row ends it.
 Defense Effect: Same choice.
-Range: Both
+Range: Ranged
 "A note changes and so does he. Nobody has worked out which comes first."
 ```
 
@@ -237,11 +279,35 @@ Range: Both
 
 *Reworded twice on 2026-09-18 — "two consecutive reveals", then "two consecutive turns", now attacks.* The first counted blocks. The second fixed that but made a turn the unit, which meant an extra attack inside one turn was invisible to it and a wasted turn reset the clock. **Attacks is the unit that matches what the card is about** — the rhythm of his swings, not the shape of the round.
 
-**The clause bites on the other greens in his deck**, which is why it matters that he has only two green slots and one of them is this. While KILLSWITCH is on the table his remaining green is a single card — so the way he loses the stance is usually not green at all, it is swinging Blue twice running out of a four-Blue deck.
+**The clause bites his own colour now**, which is the sharpest version of it. KILLSWITCH is Blue and Blue is four of his nine cards, so the colour he most wants to swing is the colour that ends his stance. Measured, it ends by repeat 2.8 times as often as it did when the card was Green — and the stance is nonetheless up far more of the time, because a 6.0 card gets played and a 4.0 one did not. The drawback got worse and the card got better, from the same change.
 
-**The three chain.** KILLSWITCH sets the mode, MEASURE pays him for rotating off it, RIPOSTE banks Deadly for the turn the rotation comes back around to Red. Nothing in the set is dead on any given turn, and nothing in it snowballs.
+**The three chain, and the chain is now a walk.** KILLSWITCH is Ranged and MEASURE is Melee, so the two cannot be played from the same place: he sets the mode with space around him and reads people from inside their reach. SEED is what pays for the turns spent between the two — plant at the Frontline, fall back, switch, come back and take it. Nothing in the set is dead on any given turn, and nothing in it snowballs — the seed is the only thing that accumulates, and it accumulates where people can hit it.
 
 ---
+
+## Seeds
+
+**SEED says "plant a seed" and this is what a seed is.** Settled 2026-09-20.
+
+> **Planting.** Pay **3 HP**. A seed appears at your position with **3 HP** — the HP you paid, which is the same HP. It is an **Object** (`rules/combat.md`, Objects): it takes no turn, holds no cards, never acts, and **can be attacked**. Leave the SEED card face up in front of you to track it, the way an Ongoing Effect is tracked. One card, one seed.
+>
+> **Growing.** At the start of each of your turns the seed gains **3 HP**, to a maximum of **your own maximum HP**. It does not grow on a turn you begin Collapsed — it is your body, and your body is busy.
+>
+> **Harvesting.** While you are in the **same position as the seed**, you may consume it as a **free action**: heal for its current HP, the seed is gone, and the card goes to your discard pile.
+>
+> **Afterwards.** A seed left standing when the fight ends is still there. It keeps growing at the start of each of your turns in the next one, and you can walk away from a fight with a bank planted.
+
+**Why it costs HP.** Because AMALGAMOUS FORM already says it does. A standing structure built from a split-off piece is *"an Object with its own HP, paid out of his own HP pool, not a fresh pool of its own"* (`campaign/passives.md`). The seed is the smallest case of that rule, not a new one — which is why the number the seed holds and the number he lost are the same number, and why killing the seed is killing part of him.
+
+**Why it can be attacked.** Same reason. It is a piece of him standing somewhere he is not, and the enemy can see it. This is the whole counterplay: everything he banks is sitting on the table where an attack can take it, and a seed he never walks back to is 3 HP he simply spent.
+
+**Why harvesting is free.** A free action covers eating and drinking (`rules/combat.md`, Free Actions), and this is eating. His free action has been empty since he was written — Kevin's competes three ways and Chris has never had a use for his.
+
+**What it is worth, and the lever if it is wrong.** Three a turn, banked, uncapped until his own maximum — so a seed planted early and harvested five turns later is a full heal for one card, one Action and 3 HP. Compare the Anchored healers, which are the closest shape in the corpus: PATIENCE OF STONE heals 5 a turn and **you cannot move at all**, PATIENCE 3, IRON GRIP 2. SEED is not Anchored — he plants it and walks away — and it banks rather than ticks, which is worth more than the rate suggests, because a tick is wasted at full HP and a bank never is.
+
+**So the rate is the lever, not the cap.** If it plays hot at the table, take it to 2 a turn before touching anything else; the cap only bites after five growths and most fights end first.
+
+**The line it is built for.** Plant at the Frontline, move to the Backline, change stance where there is room to, come back and take it. That is three turns of not attacking, and the seed is what pays for them.
 
 ## Held Back — FOLLOW THROUGH
 
@@ -298,7 +364,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - Appearance, voice, backstory detail beyond the above
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
-- **MEASURE, RIPOSTE, KILLSWITCH** — all three settled as his starters; the numbers on MEASURE and RIPOSTE want a table test
+- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
 

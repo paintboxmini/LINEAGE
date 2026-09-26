@@ -9,15 +9,33 @@ Consistency checks for the repo's own content. Run by hand, one job each.
 | `check-references.py` | Every **name** resolves — document paths, section citations, decklist card names, and no duplicate card names |
 | `check-geography.py` | Every directional **claim** agrees with the map in `world/geography-overview.md`, Bearing Table |
 | `check-card-drift.py` | Every card written down **twice** still says the same thing — a signature card drafted in `campaign/` against the copy in `cards/` |
+| `list-open.py` | Every **open question** in the repo, in one place. *An inventory, not a check — it always exits 0* |
 
 ```
 python3 agent-tools/check-references.py
 python3 agent-tools/check-geography.py            # contradictions only
 python3 agent-tools/check-geography.py --strict   # also approximations
 python3 agent-tools/check-card-drift.py
+
+python3 agent-tools/list-open.py                  # everything unsettled
+python3 agent-tools/list-open.py --decisions      # just the choices
+python3 agent-tools/list-open.py --hooks          # just the GM invitations
+python3 agent-tools/list-open.py --count          # one line per file
 ```
 
-All three exit 1 on a finding.
+**The three checks exit 1 on a finding. `list-open.py` never does**, because an open question is not a fault.
+
+## Why there is an inventory as well as three checks
+
+**The repo flags unsettled things in the file they belong to**, which is the right place: the question sits next to the thing it is about, and nobody has to keep an index in sync with the prose. *The cost is that there was no way to see all of them at once* — on 2026-09-22 there were thirty such sections across thirty-one files, and several had been sitting there for days without anybody being able to notice how many there were.
+
+**So this reads them rather than duplicating them.** There is no list to go stale; delete a `## Not Yet Set` bullet and it leaves the inventory the same afternoon.
+
+**It keeps two kinds apart, and that separation is the whole reason it is useful.** `## Not Yet Set` and `## Open` are **decisions waiting** — somebody has to choose, usually Drew. `## Open Hooks` are **deliberately unwritten**, for a GM to take or ignore, and they are features rather than a backlog. *Counted together they look like 147 problems; counted apart they are 129 choices and 18 invitations.*
+
+**A struck-through bullet is skipped.** `~~like this~~` is how this repo records something that was open and got settled, and the record is worth keeping in the file without it showing up as work.
+
+*It found something on its first run, which is the usual pattern here: a `## Open — the 2026-09-21 review` heading in `bestiary/wrackclaw.md` was resolved findings rather than anything anybody was waiting on, and it was inflating the count by twenty-six. Renamed the same minute.*
 
 ## The gap between them
 

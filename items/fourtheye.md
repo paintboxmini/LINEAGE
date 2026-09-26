@@ -1,6 +1,6 @@
 # FourthEye
 
-*The drug the whole Nest thread is about. The chain runs harvest → transport → sale: `bestiary/ocellus.md`, `factions-and-races/the-cellar-custodians.md`, `places/capital/underground-bazaar.md`.*
+*The drug the whole Nest thread is about. The chain runs harvest → **refine** → transport → sale: `bestiary/ocellus.md`, then a hideout in the mountains north of Vulture's Nest (`places/vultures-nest.md`, The finishing house), then `factions-and-races/the-cellar-custodians.md` and `places/capital/underground-bazaar.md`.*
 
 A thumbnail of grey-iridescent grit, taken under the tongue. It is the film an Ocellus weeps, scraped off, dried and refined several times over. It has almost no taste, and people who have taken it will tell you the absence is the taste — that it is like putting nothing in your mouth on purpose.
 

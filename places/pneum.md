@@ -2,9 +2,11 @@
 
 *Pronounced: new'm*
 
-**They are glasskin** (`factions-and-races/races-glasskin.md`), and they have been away from the Reach for centuries. **Their harmonics have drifted the entire time**, and what they speak now exists nowhere else and nobody outside the congregation understands a word of it. It is not a dialect to be worked around. It is a different instrument, and it is the reason the quarantine at Vulture's Nest cannot resolve itself (`quests/the-quarantined-barge.md`).
+**The island is mixed, and it was founded by glasskin** (`factions-and-races/races-glasskin.md`) who left the Reach centuries ago. What came after them is everybody else — a congregation gathers converts, and this one has been gathering for two hundred years. **Glasskin, continentals, and at least one Lizardkin, who leads them** (The Speaker, below).
 
-*They speak perfectly well, at length, and constantly. The barrier is that nobody is equipped to hear them — not that they are short of voices.*
+**They speak the common tongue and they will tell you anything you ask.** *There is no language barrier here and there never was — an earlier version of this file built one and it was cut on 2026-09-21 as the weaker idea.* **What replaces it is much worse for everybody**: the congregation is warm, forthcoming, and entirely without a reason to hide, and the trouble at Vulture's Nest is what happens when people like that are asked direct questions by a frightened port (`quests/the-quarantined-barge.md`).
+
+**Concealment is not available to them, and not because they are naive.** The practice requires witness — *collecting without witnesses isn't collecting* (The Practice, below). **A faith whose central act is public display has no theology of hiding**, so when a dockmaster asks where they are from, they tell him, and when he asks what is wrong with them they explain it properly, and neither of those is a mistake by their lights.
 
 A lake island northeast of Vulture's Nest. Part of a loose People of Promise island group scattered across the lake — a subgroup that left the Glasslight congregations to practice their beliefs in peace, far from the coast but never out of reach of it: their ritual barges run the rivers down to the grey water and back.
 
@@ -28,13 +30,23 @@ Symptoms display publicly. The body is the trophy case.
 
 The diseases must be visible. This is not negotiable in their theology.
 
-**And they are cultivated, which is the part outsiders never guess.** This is not a congregation catching whatever the river hands them. It is centuries of patient selective work, and the lineages they keep have been bred hard for three things:
+**And they are cultivated, which is the part outsiders never guess.** This is not a congregation catching whatever the river hands them. It is centuries of patient selective work — **and what it selects for is beauty.**
 
 - **Exotic** — a common illness is worthless, because anyone could have got it by accident.
 - **Highly visible** — an invisible communion is not witnessed, and an unwitnessed communion did not happen.
-- **Low mortality** — a disease that kills its host stops being displayed, and a lineage that kills its hosts dies out with them. **The work has been selecting against lethality for two hundred years and it has been extremely effective.**
+- **Strange** — *the more unusual the malformation, the more beautiful.* This is the one that makes outsiders go quiet, and it is the honest centre of the whole practice.
 
-**They are very good at this.** The result is a body of illnesses that are spectacular to look at and will mostly not kill you, held by people who regard the achievement the way a vintner regards a cellar.
+**It is an aesthetic, and they are closely bonded over it.** They regard the achievement the way a vintner regards a cellar, and they agree with each other about what is fine work in the way people agree about a painting. *Not one of them experiences this as suffering being reframed. They find it genuinely beautiful, and they find each other beautiful, and that is the thing to get right.*
+
+### Nobody was bred to survive this — they are kept alive
+
+**Nothing here selects against lethality, and the island has never needed it to**, which is the correction that matters and the thing outsiders get backwards (`quests/the-quarantined-barge.md`, What Is Actually True).
+
+**Prestige is affliction, and affliction is dependence.** The most devout are the most marked. The most marked are the most admired. **And the most admired are attended constantly** — fed, turned, cleaned, carried, read to, sat with through the night by people who consider the chair beside them the best seat on the island.
+
+**Being well attended is not a consolation for status here. It is the visible form of it.** A crowd gathered around somebody who can no longer rise is not a deathbed to them; it is the faith happening at its fullest, and the person in the middle of it is the most fortunate person in the room.
+
+***So the famous of Pneum would almost certainly die if left alone, and the island simply never leaves them alone.*** *That is not a flaw anybody there has noticed, because it has never once come up.*
 
 **All of it moves by blood, and only by blood.** Communion is deliberate and it is administered — a cut, a shared instrument, a rite with a specific moment in it. Nobody catches anything here by standing near somebody. The congregation knows this perfectly well. It has never once occurred to them that anyone would assume otherwise.
 
@@ -74,6 +86,60 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ---
 
+## The Promise Barge — what is actually aboard
+
+*The run itself is already written above* (Why they can be wrong, and stay wrong): every funeral run takes a barge down to the quay at the foot of the Glasslight cliffs, which is the only place the river web touches the grey water, performs the releasing of the dead into the water, and turns around. **They tie up at the bottom and they do not climb.** This section is only the part that matters at Vulture's Nest.
+
+**The barge Bartho is holding is a hearse, and it is loaded.**
+
+**Every one of their dead goes, whatever they were** — glasskin, continental, convert of forty years. A mixed island has mixed dead and the Promise does not sort them. **The glasskin crew it**, because the route is the founders' road back to the Reach they left, and two centuries on their descendants still make the trip and still do not go up the cliff.
+
+**Which means the barge is Pneum's glasskin and nobody else, and they are not a fair sample of the island.** *They are the ones who stand at the only door on the continent, several times a lifetime, and it shows.* **They tie everything to the Unheld far harder than a continental convert would** — where somebody on the island might tell you what a marking is and how it was received, the people on that boat will tell you what it means that the Unheld reached for this person. *There is nobody aboard who would have given Bartho a practical account, because nobody aboard thinks in those terms.*
+
+**Bartho knows all of this, because they told him** (`quests/the-quarantined-barge.md`). **It did not help.**
+
+*A boat full of visibly, floridly diseased people is one problem. A boat full of visibly, floridly diseased people **and the bodies of the ones it already killed**, bound upriver for somebody else's town, is the problem he actually has.* And the crew explaining warmly that the dead are not infectious and that none of it travels that way is **a claim about their own cargo, by the people who want to leave**, in a port with nobody who can check it.
+
+**And they have been split up and held apart since the morning before last**, which is the part that is actually killing people (`quests/the-quarantined-barge.md`, The clock nobody on the dock knows about). *The ones who cannot manage without hands on them are being kept from the hands. Nobody on the shore has any way to see that, and nobody on the boat has said it in a register a frightened port would hear as an emergency.*
+
+**The bodies are the thing nobody at the Nest says out loud and everybody on that dock knows about.** *Every day the hold lasts is a day the rite is not performed, which to the congregation is a harm being done to people who are already dead — and not one of them has raised it, because nobody asked.*
+
+---
+
+## The Speaker — and why a Lizardkin leads this island
+
+*Drew's, 2026-09-21. **The name is open** — the role below is what matters and the person can be called whatever suits the table.*
+
+**The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`). **On a mixed island that is not the scandal it sounds like** — Pneum has been taking converts for two hundred years and the Speaker is simply the furthest that has gone. *Nobody there finds it remarkable. Pat will.*
+
+**What is worth knowing is that they were not born here.** They came, they stayed, and they out-devoted a congregation that had been at this for two centuries before they arrived.
+
+**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and a Lizardkin grew up in the one culture on the continent whose single famous export is exactly that (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
+
+**They are not a cursegiver**, and the file should be read as saying so rather than leaving it hanging. Cursegiving is one family's technique held inside one bloodline. Lizardkin is a people. **The Speaker is the second thing and not the first**, and the distinction is the entire value of this thread (Pat's lead, below).
+
+### What this does not do
+
+**It does not make them the solution to the quarantine.** The Speaker is two days' water away on the island, and the crew at the Nest have already said everything the Speaker could say — *there was never anything being withheld* (`quests/the-quarantined-barge.md`, What They Told Him). **Nobody is being prevented from explaining. Explaining is what made it worse.**
+
+*What the Speaker would add is judgement, not information — somebody able to hear how this sounds from outside, which is the one faculty the congregation has never needed and therefore never developed.* **That is worth a great deal and it is on the wrong island.**
+
+*Which is worth stating plainly, because a leader who speaks both sides looks like a key to the quarantine and is not one. What they could resolve, they are not at the Nest to resolve — they are on the island, and the barge is held two days' water away.*
+
+### Pat's lead, and why it is a dead end that is worth everything
+
+**He hears it from Corvel** (below), who has no idea he has said anything.
+
+**He follows it, because it is the first specific thing anyone has given him.** His brief was a direction and a person across four hundred islands (`campaign/pat.md`); this is an island, a role, and a people.
+
+**And the scrap says no** (`campaign/pat.md`, The scrap). **That is the point, and it is the first time the thing is ever used.** A negative from an instrument that cannot be wrong is worth more than a hit would have been this early: it proves the scrap works, it eliminates a lead honestly, and it costs the campaign's spine nothing — the search is supposed to keep failing productively across the island-hopping, and a cursegiver handed over in session three would spend the whole thread in one scene.
+
+**What he gets instead is better than a target.** The Speaker is **the first Lizardkin living among continentals that Pat has ever stood in front of** — which makes them the first person alive who can tell him anything real about why one of their own would leave that island at all. *That is the open question `factions-and-races/races-lizardkin.md` poses about the descendant, asked of somebody who actually did it.*
+
+**And they are the wrong person to threaten.** A congregation's leader, on their island, surrounded by their people, is not somebody a stranger leans on — and the Speaker has no reason to lie and no reason to help. *What they respond to is being asked properly, which is the same lesson the whole island teaches.*
+
+---
+
 ## Corvel — The Vulture's Nest Thread
 
 What's specific to this thread: he was discovered. The guards are holding him. His barge — a People of Promise ritual vessel — has been quarantined by the Tideward Compact. The port will not release it.
@@ -101,5 +167,5 @@ These people are warm, communal, and completely sincere. The wrongness isn't cru
 ## Related Documents
 
 - `places/vultures-nest.md` — The Quarantined Barge: Corvel in custody, the Compact's position, and the berth sweep the opening runs on
-- `world/tonal-bible.md`
+- `world/influences.md`
 - `world/geography-overview.md`

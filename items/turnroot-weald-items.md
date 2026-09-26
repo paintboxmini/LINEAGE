@@ -8,11 +8,11 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
-*Price: ~30 gold (two points of effect at the flat 10/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
+*Price: ~20 gold (two points of effect at the flat 10/point rate; `rules/equipment.md`, Pricing Consumables)*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
-**Use:** Single-use. +2 to next card damage or healing roll. Does not cost an Action to use.
+**Use:** Single-use. +2 to next card damage or healing roll.
 
 ---
 
@@ -116,7 +116,7 @@ Forest families use them for cord-wrist work, for marking a gift, and for the ge
 
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
-*Price: ~40 gold*
+*Price: ~60 gold (a crafting ingredient, priced by what a crafter will pay and not on the consumable scale; `rules/equipment.md`, Pricing Consumables)*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 

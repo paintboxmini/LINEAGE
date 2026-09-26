@@ -100,6 +100,22 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 **Sessions, not time.** A band advances when the table plays, not when the calendar does. A campaign that skips two months is still on whatever session it left off at.
 
+### Starting Gold
+
+**Nobody starts with enough to buy anything on the ladder above, and that is the whole design constraint.** The cheapest real purchase in the game is a Tier 1 accessory at ~100 gold (Pricing Accessories, below), so **starting gold is capped at 40 — one session's pay in the first band.** Above that it stops being a starting purse and becomes a free session, and the first Tier 1 item arrives early for reasons nobody planned.
+
+**What it is actually for is levelling the sheets, not the fiction.** Characters come out of creation holding wildly different amounts of *stuff* — one has a weapon and a trade and a bag of supplies, another has a Trait and the clothes they ran in. None of that is visible in stats, cards or Passives, which the rules already keep even. **Gold is the one lever that fixes it without touching anything the rules balance.**
+
+| Starts with | Gold | The read |
+|---|---|---|
+| A real kit — a weapon, a trade, supplies to spend | **0–10** | They already spent it. Handing them more is handing the richest character more |
+| Some possessions, none of which cost money | **20–25** | Objects without value. The gold is what they would have if anyone had thought about it |
+| Nothing | **40** | The ceiling, and the most you can give before it reads as a gift |
+
+**Background is the second input, not the first.** Decide the number off what the sheet is missing, then check it against who the person is and adjust by a few gold rather than a band. *A poor character who came out of creation with nothing still gets the 40 — the fiction explains where a soldier's savings or a thief's stash came from, and there is always an explanation. The case that needs care is the opposite one: a wealthy background on a character who is already carrying everything, which is a reason to write the money into the world rather than onto the sheet.*
+
+**It is a one-time adjustment and it does not recur.** After session one everyone is on the same band (Pacing, above). Starting gold corrects the sheet once and then stops existing.
+
 ## Pricing Consumables
 
 Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
@@ -108,12 +124,16 @@ A consumable spends the same point once. **Price single-use items at roughly 10 
 
 The anchor is already in the world: Luminova Leaves heal 4 HP for ~10 gold, and Luminova Powder heals 8 for ~20 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
 
+**Free-action use is not a premium, because it is the default.** A consumable is used with a free action unless the item says otherwise (`rules/combat.md`, Free Actions), so it buys nothing and adds nothing to a price. Two items used to pay a point for it — the Universal Pin and the Turnroot Charm — and both were repriced down on 2026-09-21 when the default flipped. *Worth knowing how that happened: they each cited this section for a premium this section never described. A citation is supposed to be read, not just written.*
+
+**What is now unusual is an item that costs your Action**, and that is a downside rather than a feature. It does not raise a price and, all else equal, should lower one. **The anchors have not been re-cut for that** — Luminova Leaves heal 4 for ~10 gold and cost an Action, which is the same price as a one-point consumable that is free. Whether the anchor moves or the Luminova items get cheaper is a call nobody has made.
+
 **Why ten and not fifteen.** Consumables are meant to be a restock, not a rival to saving. At Tier 1 pacing a character earns about 40 gold a session (Pacing, above) — at fifteen a point, that bought two or three simple items, and a single good two-point item cost most of a session's income, which quietly made the correct play *never buy anything*. At ten, a session's earnings cover a handful of small items and a good one, and gear money is still gear money.
 
 Adjust from there for what actually happens at the table:
 
 - **A real drawback lowers the price.** Something that Roots you afterward, or costs a card every turn, is worth less than the same effect clean.
-- **Free-action use raises it.** Not spending your action is worth about a point on its own.
+- **An Action cost lowers it.** Free-action use is the default and buys nothing (above); an item that costs your Action instead is worse than its effect suggests and should price under the flat rate.
 - **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
 - **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
 - **Ingredients and crafting materials are not on this scale at all.** A Rootstalker Core is priced by what a crafter will pay for it, not by what the thing you make does (`items/turnroot-weald-items.md`); Senshi's going rates for Weald harvest are the same (`items/turnroot-weald-items.md`, Future-Lock Wasp Larvae). **If somebody buys it to make something else out of it, the market sets the number** — and those prices move with demand and scarcity in a way an effect-priced consumable never does.
@@ -217,7 +237,7 @@ That's a formula's absence, not a sale's — Brother Alden does put a number on 
 - **Traits.** What makes it recognizably itself and not another Artifact of the same rough shape — what it's exactly capable of, and what it costs to use.
 - **History.** Where it came from, who made it or found it, and what it was used for before the party ever touched it.
 
-**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`world/creation-myth-the-three-cuts.md`, The Second Cut) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
+**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the same rule the whole world runs on — **nothing here is exempt from cost**, and what gets extracted answers the shape of what was taken, not a fixed exchange rate. *The Masons have a doctrine that explains exactly why (`factions-and-races/the-masons-three-cuts.md`, The Second Cut). The rule works at the table whether or not they're right about it.*
 
 **Price scales with magnitude.** A minor working costs less than a major one — heal a scrape versus heal a mortal wound, spark a candle versus level a wall. The relationship isn't a lookup table, but the direction always holds: the more reality an effect bends, the more it costs to bend it.
 

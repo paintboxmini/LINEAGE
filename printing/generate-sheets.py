@@ -107,7 +107,9 @@ def load(name):
         'skills': bullets(section(text, 'Skills')),
         # Written in by hand. Chris is a Seed of the Amalgam and Kevin's is
         # unstated, so there is nothing here worth guessing at from prose.
-        'race': '',
+        # Age and appearance are the same: a player's to fill in, never
+        # inferred off the page.
+        'race': '', 'age': '', 'appearance': '',
         'trait': find_trait(text),
     }
 
@@ -115,7 +117,7 @@ def load(name):
 BLANK = {
     'name': '', 'stats': {'Body': '', 'Mind': '', 'Soul': ''},
     'hp': '', 'hand': '', 'init': '', 'deck': '', 'provisional': False,
-    'skills': [], 'trait': '', 'race': '',
+    'skills': [], 'trait': '', 'race': '', 'age': '', 'appearance': '',
 }
 
 
@@ -131,6 +133,20 @@ def slot(label, filled, note=''):
     else:
         body = '<span class="blank"></span>'
     return f'<div class="row"><span class="lbl">{h(label)}</span>{body}</div>'
+
+
+def slot2(label, filled, label2, filled2):
+    """One row, two fields — a long one and a short one sharing the rule.
+
+    Race and Age live together because Age is two or three characters and a
+    line of its own would waste a row on a sheet that has none to spare.
+    """
+    def part(v):
+        return (f'<span class="fill">{h(v)}</span>' if v
+                else '<span class="blank"></span>')
+    return (f'<div class="row"><span class="lbl">{h(label)}</span>{part(filled)}'
+            f'<span class="lbl lbl2">{h(label2)}</span>'
+            f'<span class="short">{part(filled2)}</span></div>')
 
 
 def sheet_html(c):
@@ -156,7 +172,8 @@ def sheet_html(c):
 
     return f"""<div class="sheet">
   <div class="head"><span class="lbl">Name</span><span class="nm">{name}</span>{flag}</div>
-  {slot('Race', c['race'])}
+  {slot2('Race', c['race'], 'Age', c['age'])}
+  {slot('Appearance', c['appearance'])}
 
   <div class="stats">{stat_cells}</div>
   <div class="derived">{derived}</div>
@@ -258,6 +275,8 @@ body {{ font-family: "Iowan Old Style", Georgia, serif; background: #888; }}
 .note {{ font-size: 6.4pt; color: #666; font-style: italic; }}
 .blank {{ flex: 1; border-bottom: .7px solid #AAA; height: 4.6mm; }}
 .blank.wide {{ min-width: 34mm; display: inline-block; }}
+.lbl2 {{ margin-left: 2mm; }}
+.short {{ flex: 0 0 9mm; display: flex; }}
 
 .rule {{ border-bottom: .7px solid #AAA; height: 5.6mm; margin-bottom: .8mm; }}
 </style>

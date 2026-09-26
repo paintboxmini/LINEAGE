@@ -3,7 +3,7 @@
 Combat in Tales Untold is fast, positional, and decisive. Turns are short. Mistakes compound. The goal is not to outlast — it's to outread.
 
 <!-- print:skip-start -->
-*(The Three Cuts run underneath this, for anyone who wants the deeper read: playing a card is Name, spending it is Price, holding a position is Distance — `experimental/archives/the-summons.md`.)*
+*(A Mason would read the whole fight through their own creed — playing a card is Name, spending it is Price, holding a position is Distance. It is a genuinely good reading and it is one order's, not the world's: `factions-and-races/the-masons-three-cuts.md`.)*
 <!-- print:skip-end -->
 
 ---
@@ -102,14 +102,20 @@ On your turn, you may take one Action, plus one free action if you have one avai
 |--------|-------------|
 | Play a Card | Make an attack using a card from your hand |
 | Move Position | Shift between Frontline and Backline — or, if you're already Frontline, close the distance on a Backline enemy yourself instead (Rushdown: you move to them, not the reverse). See Positioning → Rushdown. |
-| Use an Item | Activate an equipped or held item, or use a consumable |
+| Use an Item | Activate an equipped or held item, or use a consumable that says it costs your Action — see Free Actions, below |
 | Take Cover | Backline only; the fiction must justify it. Gain Cover Evade — a dodge roll that persists instead of being spent. See Positioning → Cover. |
 | Interact | Any noncombat action — talk, examine, activate, manipulate, or anything the fiction allows |
 | Flee | Attempt to exit combat — 2d10 + Soul vs DC 10 + highest enemy Soul, GM-adjusted. See Fleeing Combat above. |
 
 **Free Actions.** Once per turn, on top of your Action above, you get one free action — it costs nothing from your turn, so you still take your normal Action as well. Spending a banked Quick to Move Position (Rushdown included), activating a piece of your own gear (turning something on, and similar minor personal gestures — not the world around you; that's still Interact), and eating or drinking all count. Capped at one per turn regardless of how many you'd otherwise have available — a second banked Quick just waits for next turn.
 
-**Actually using a consumable or piece of gear for its mechanical effect is never free — that's Use an Item, above, and costs your Action.** Kevin throwing an incendiary orange is Use an Item: the throw's whole point is the effect it produces, not a minor gesture.
+**One card breaks that cap and says so on its face:** ON THE FLY (`cards/kevin.md`) grants a free action *in addition* to the one for the turn. A card is allowed to be an exception to a rule when it states the exception; what it is not allowed to do is be a quiet one. On a Defense Effect it is more than an extra — a free action otherwise exists only on your own turn, so taking one while somebody else is attacking you is a thing no other card does.
+
+**Using a consumable is a free action unless the item says otherwise.** Ruled 2026-09-21. Eating, drinking, loading a round, throwing one of Kevin's oranges, taking back one of Chris's seeds — all the same one free action, and all competing for it.
+
+**An item that costs an Action says so on itself**, and several do: Luminova Leaves and Luminova Powder both print *Use an Item — costs your Action* (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). That is the exception written where somebody using the item will actually read it, rather than a category they have to remember.
+
+*The earlier wording said the reverse — that using a consumable for its mechanical effect is never free, with the orange named as the example. It was written before Kevin's kit existed and did not survive it: a character whose whole build is prepared consumables cannot be charged an Action for each one and still have a turn. The cap is what balances them, not the price of admission — one per turn, so his reload, his drink and his grenade are all bidding for the same slot.*
 
 ---
 
@@ -294,6 +300,29 @@ Multiple ongoing effects can be active simultaneously unless a card specifies ot
 **The cap is the whole rule.** Preparation should be worth doing and should never turn into a stacking exercise where the fight is decided before anyone rolls. One card, set before initiative, and everything after that is paid for in Actions like normal.
 
 *This also rewards the exploration layer directly: warnings are worth having because a warning is worth exactly one Ongoing Effect.*
+
+---
+
+## Objects
+
+**Some things stand on the field without being combatants.** A summoned spirit, a totem, a wall somebody made out of themselves, a seed. They are on the table and they can be destroyed, but they are not people taking turns.
+
+**An Object:**
+
+- **Holds HP and nothing else.** No stats, no deck, no hand, no Passives.
+- **Takes no turn and gets no token on the initiative wheel.** The rule that puts a summoned combatant into the wheel (Initiative, above) does not apply, because an Object is not a combatant.
+- **Never acts or decides anything**, including on the turn it arrives.
+- **Occupies a position** and is caught by anything that catches a position.
+- **Can be attacked directly.** An enemy may target it instead of a person.
+- **Is auto-hit when attacked.** It holds no cards, so it cannot choose a defence, and an attack on a target that cannot or will not defend already resolves without an RPS reveal (Attack Resolution, above). This is that rule, not a new one.
+- **Does not Collapse and is never Down.** At 0 HP it is simply gone, and anything it was holding up goes with it.
+- **Does not count for whether a side is still standing.** A party is not still in the fight because its totem is.
+
+**Where an Object's HP comes from is the card's business.** A spirit rolls for it (`campaign/pat.md`, Wild Magic Summoning). A structure or a seed made out of a character is paid for out of that character's own HP pool and holds exactly what they paid (`campaign/passives.md`, AMALGAMOUS FORM; `campaign/chris.md`, Seeds) — which is what makes destroying one a real loss rather than a nuisance.
+
+**Track an Object with the card that made it**, face up in front of its owner, the same technique Ongoing Effects and status tokens already use. One card, one Object: the card is what says the thing is there, and it goes to the discard when the thing does.
+
+*Written 2026-09-20, off three examples rather than one — Pat's spirits, AMALGAMOUS FORM's walls, and Chris's seeds. Both of the first two sheets said in as many words that the category was worth generalising once there was more than a single case of it, and declined to do it early.*
 
 ---
 

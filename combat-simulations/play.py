@@ -24,9 +24,17 @@ from engine import (BACK, FRONT, MUST_TARGET, NO_ATTACK, NO_TARGET,
 from wheel import Wheel
 
 
-def build_deck(pool, size, body, mind, soul, rng):
-    """`rules/cards.md`: deck size equals total stats, each colour's count
-    equal to the matching stat.
+def build_deck(pool, size, body, mind, soul, rng, colors=None):
+    """Deck size equals total stats; colour counts default to the stats.
+
+    **The colour match is a heuristic, not a law** (`rules/cards.md`, Deck
+    Building). It is the right default and it is what almost everything in
+    the repo runs, but a deck is allowed to be off-ratio — a player who
+    drafts that way, or a creature built off-ratio on purpose and paid for
+    with a mechanic that answers the imbalance.
+
+    Pass `colors={'RED': n, 'BLUE': n, 'GREEN': n}` to say so explicitly.
+    Without it the stats decide, exactly as before.
 
     Drawn **without** replacement. No written deck in the repo runs the same
     card twice — 43 decklists, checked by `agent-tools/check-references.py` —
@@ -38,7 +46,7 @@ def build_deck(pool, size, body, mind, soul, rng):
     A colour with fewer distinct cards than the stat asks for takes what
     there is rather than padding with repeats.
     """
-    want = {'RED': body, 'BLUE': mind, 'GREEN': soul}
+    want = dict(colors) if colors else {'RED': body, 'BLUE': mind, 'GREEN': soul}
     deck = []
     for color, n in want.items():
         avail = [c for c in pool if c.color == color]
@@ -66,6 +74,11 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     # finds nothing to be a different colour from.
     who.last_color = who.color_this_turn
     who.color_this_turn = None
+
+    # A seed gains HP at the start of its owner's turn
+    # (`campaign/chris.md`, Seeds), before the draw, so it is already at
+    # its new size when the free action below can take it.
+    engine.grow_objects(who, log=log)
 
     skip = who.restriction(SKIP_DRAW)
     if skip is not None:
@@ -118,19 +131,37 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
             continue
         break
 
+    # ON THE FLY grants its free action from inside the exchange, so it only
+    # exists once the card has resolved — which is after the Action, not
+    # before it, where the ordinary free action is offered. Spend it here or
+    # it is lost; a free action does not bank.
+    if free is not None:
+        while who.extra_free > 0 and who.alive():
+            who.extra_free -= 1
+            choice = free(who, foes, allies)
+            if choice is None:
+                break
+            spend_free_action(who, choice, log)
+    who.extra_free = 0
+
 
 def spend_free_action(who, choice, log):
     """One free action, resolved. `choice` is what the agent asked for:
     ('reload', round) to put a prepared round in the grinder, ('drink',
-    name) to drink one of your own, ('orange', position) to throw one, or
-    None to keep it.
+    name) to drink one of your own, ('orange', position) to throw one,
+    ('harvest',) to take back a seed you are standing with, or None to keep
+    it.
 
-    All three are things `rules/combat.md` already names as free — gear you
-    activate, and eating or drinking.
+    All of them are things `rules/combat.md` already names as free — gear
+    you activate, and eating or drinking. A seed is eating
+    (`campaign/chris.md`, Seeds).
     """
     if not choice:
         return
     kind = choice[0]
+    if kind == 'harvest':
+        engine.harvest_seed(who, log=log)
+        return
     if kind == 'reload' and who.rounds:
         name = choice[1] if len(choice) > 1 else who.rounds[0]
         if name not in who.rounds:
@@ -213,6 +244,22 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
             log(f'{who.name} leaves cover to attack.')
 
         resolve_attack(who, target, card, dcard, rng=rng, log=log, wheel=wheel)
+
+        # ON THE FLY on a Defense Effect: the defender is being attacked on
+        # somebody else's turn, where no free action otherwise exists. It is
+        # spent immediately or lost.
+        if target.extra_free > 0 and target.alive():
+            tfree = getattr(dagent, 'choose_free_action', None)
+            while target.extra_free > 0:
+                target.extra_free -= 1
+                if tfree is None:
+                    break
+                choice = tfree(target, [who], [c for c in allies + foes
+                                              if c.team == target.team])
+                if choice is None:
+                    break
+                spend_free_action(target, choice, log)
+            target.extra_free = 0
         return action
 
     if kind == 'move':
@@ -225,13 +272,24 @@ def _one_action(who, agent, foes, allies, wheel, log, rng):
     return action
 
 
-def run(party, foes, wheel, log, rng, max_rounds=40):
+def run(party, foes, wheel, log, rng, max_rounds=40, prepared=()):
+    """`prepared` names the sides that had time and a reason to set up one
+    Ongoing Effect before initiative (`rules/combat.md`, Setting one up
+    before the fight) — ('party',), ('foes',), both, or nothing. Off by
+    default, because walking round a corner into something is the case
+    that needs no warning and the engine cannot judge which this was.
+    """
     everyone = party + foes
     # The engine resolves "all allies" and "any enemy" against this, so it
     # has to be the fight actually being run. Set here rather than left to
     # the caller: a stale table silently points effects at combatants from
     # a previous fight, which is a wrong result rather than a crash.
     set_table(everyone)
+    engine.set_wheel(wheel)
+    for who in everyone:
+        if who.team in prepared and not who.is_object:
+            other = next((c for c in everyone if c.team != who.team), None)
+            engine.set_up_before_the_fight(who, log=log, rng=rng, opponent=other)
     turns = 0
     cap = max_rounds * len(everyone)
 

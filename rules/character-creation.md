@@ -36,7 +36,9 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 **Maximum HP = (4 × Body) + Mind + Soul.** Body's share is weighted four times the other two.
 
-**Deck size = Body + Mind + Soul**, and each colour's card count equals its matching stat (`rules/cards.md`, Deck Building). The same rule builds every creature in the world, so a character's deck is the same size as a creature of the same weight.
+**Deck size = Body + Mind + Soul.** That part is the rule, for players and creatures alike, so a character's deck is the same size as a creature of the same weight.
+
+**Matching each colour's count to its stat is a heuristic, not a law** (`rules/cards.md`, Deck Building). It is a strong default — damage runs off the matching stat, so a matched deck has every card pulling at full strength — and a deck is still legal when it is off-ratio. **An off-ratio deck is simply worse unless something pays for it**, which is a design space rather than a mistake.
 
 ---
 
@@ -101,9 +103,11 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 - **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
 - **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.
 
-**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
+**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure). *Consumables are the exception and go the other way: free action unless the item says it costs your Action (`rules/combat.md`, Free Actions).*
 
 **Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
+
+**Starting gold is set by the GM, once, and is capped at 40** (`rules/equipment.md`, Starting Gold). It is not a reward and it is not rolled — it is the one lever for levelling sheets that came out of creation holding very different amounts of *stuff*, since stats, cards and Passives are already even. **Nobody starts with enough to buy anything off the gear ladder**, which is deliberate: the cheapest real purchase is a Tier 1 accessory at ~100 gold and it is meant to arrive around session three, not session one.
 
 **It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
 
@@ -142,6 +146,19 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
 
 *Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 63-card Oracle seats seven exactly, and the full 84 with the expansion seats nine. Past that the piles run dry before anyone finishes and the shared offer is the better method.*
+
+### Method Three — The Packs
+
+1. Shuffle the Oracle. Deal **one pack of 9** to each player and set the rest of the deck aside unseen.
+2. Everyone looks at their own pack and takes **1 card**.
+3. Pass the pack **to the left**, and repeat until every player has **9 cards total for their deck** — with three customs in hand that means **6 picks each**.
+4. **Stop there. The packs are not emptied**, and what is left in them does not return to the Oracle.
+
+**Closest to a trading-card draft, and the difference from Method Two is what stays hidden.** The Passing Piles divide the whole Oracle, so between them the table sees all of it. The Packs put a fixed 9 per player on the table and leave the rest face down — with three players that is 27 cards seen and **36 never looked at**. What is not drafted is not gone; it is unmet, and still in the deck for advancement and for whatever the advancement decks are built from afterwards.
+
+*Needs exactly 9 cards per player, so the 63-card Oracle seats seven. Scales the same way Method Two does.*
+
+**The remnant is the method's real output.** Stopping early leaves a few cards in every pack, and those cards are not leftovers — **they are the ones the whole table declined, repeatedly, with the pack in front of them.** Three players picking six from a nine-card pack means each pack passes each player **twice**, so a card still sitting there at the end was put in front of somebody and turned down **six times**. Set them aside. That is the strongest read on a card the table will ever hand you for free, and it costs nothing to collect (`cards/tiers/README.md` — when it matters, the answer is usually a tier move, not a rewrite).
 
 ---
 
@@ -220,7 +237,9 @@ A **Passive** is the card-shaped thing described above: printed colour, Range, d
 
 **A Passive can attack or block**, ruled 2026-09-19. It is a card, and a card defends — so it is a legal defence on any exchange its Range and its Applies When allow, exactly as it is a legal attack. It never leaves its zone either way.
 
-*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand. Measured across 750 duels, that single fact is the difference between the three stat spreads being 33 points apart and being 1 point apart — see `combat-simulations/README.md`, What Passives are actually for. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand — measured at **0.0% no-legal-defence across all three stat spreads**, against 38.8%, 19.4% and 41.7% without one. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+
+*When to reach for it is a question about cards, not about strength.* A Passive costs nothing — it never leaves its zone — and a card out of hand is gone until you draw back up at the start of your turn. So the question at any exchange is whether you can afford the card, and that is answerable: count the enemy turns before your own, divide by how many of you are standing, and if your hand covers that many more blocks the card is free to spend. **The Passive is for when it does not.** `combat-simulations/README.md`, What Passives are actually for.
 
 A **Trait** is rules text that is simply true. It costs no Action, is never played, has no colour or die, and is never a choice — Armour 2, a bite that re-grants Rooted, a nose that can't be Blinded, a spirit's rolled HP. If a thing spends an Action, it is not a Trait; it is a card, and it should be written as one.
 
@@ -280,6 +299,16 @@ You don't have to explain the metaphysics. Neither does your character.
 ### End of Session
 The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
+### One Advancement Deck Per Player
+
+*Set 2026-09-24.* **The shared Oracle deck splits into a separate deck per player**, and from that point it is simpler to call it the **advancement deck**. The split happens once character creation and deck building are done, **and after the first night's advancement** — so the table's first draft is still dealt from one pool, together, the way learning the game should be.
+
+**The reason is custom cards.** Every character carries cards nobody else should ever draw: three signature customs each, Passives, and — where a player is building them — spotlight cards earned from that character's own scenes (`experimental/code-concept-cards.md`). **A single shared pool leaks them.** Kevin drawing SEED, or Pat drawing a card that is a memory of a night Code survived, is not a lucky draw; it is somebody else's life turning up in your hand.
+
+**So a card a character earns goes into that character's advancement deck and nowhere else.** The pools diverge from the split onward, and they are meant to — after a long campaign, what a player is drawing from is a record of who their character has become rather than a pile everyone shares.
+
+**What each deck holds at the split: the cards nobody ever saw.** Running Method Three (The Packs, above), the Oracle is only partly spent at creation — the drafted packs and the cards revealed at the first advancement are a fraction of it, and the rest was never turned face up. **That unseen remainder is what the advancement decks are built from, split by character rather than dealt at random**: the GM assigns each card to the player it suits. Nothing needs printing twice, and no card is in two decks at once.
+
 **Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
 
 **Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
@@ -314,3 +343,10 @@ This is a different thing from banking a card, and the difference is whether you
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
 
 **They sit outside the cap.** A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.
+
+---
+
+## Open
+
+- Whether a card **permanently removed** from a deck returns to that player's advancement deck or leaves the game entirely
+- **What pays for an off-ratio deck.** The imbalance is a real cost and the interesting version is a mechanic that answers it — see `rules/cards.md`, Deck Building, Paying for an off-ratio deck. Nothing in the bestiary does this yet

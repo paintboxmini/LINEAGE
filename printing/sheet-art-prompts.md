@@ -181,10 +181,14 @@ values. The one exception is the small hint text under Price.
 > artwork, no new symbols, no change to the triangle or the three coloured
 > circles.
 >
-> **Across the very top, above the triangle:** two ruled write-in lines, one
-> under the other, full width. The first is labelled `NAME` at its left end;
-> the second is labelled `RACE`. Labels in the calligraphic hand, small and
-> muted; the ruled lines thin, long and empty.
+> **Across the very top, above the triangle:** three ruled write-in lines, one
+> under the other, full width. The first is labelled `NAME` at its left end.
+> The second is labelled `RACE` at its left end and carries a second, much
+> shorter labelled slot at its right-hand end reading `AGE` — one rule, two
+> fields, the race field taking most of the width and the age field short
+> enough to hold two or three characters. The third is labelled `APPEARANCE`.
+> Labels in the calligraphic hand, small and muted; the ruled lines thin, long
+> and empty.
 >
 > **Inside the triangle, centred in its open interior:** four short labelled
 > slots stacked as two rows of two, small and evenly spaced, each a tiny
@@ -201,8 +205,8 @@ values. The one exception is the small hint text under Price.
 > a section heading `TRAIT`, then one long empty write-in line beneath it,
 > the heading itself carrying no write-in line of its own;
 > a section heading `SKILLS`, then **two** long empty write-in lines beneath
-> it — two separate lines, unnumbered, the heading itself carrying no
-> write-in line of its own;
+> it — two separate lines with nothing numbering them, the heading itself
+> carrying no write-in line of its own;
 > a section heading `PRICE`, followed immediately on the same line by small
 > hint text reading exactly
 > `I never / I must / I always / I cannot / Once I / Whenever`.
@@ -218,15 +222,19 @@ values. The one exception is the small hint text under Price.
 
 **Must not appear in the text pass:**
 
-> **no numerals, digits or numbers anywhere in the image** — every write-in
-> line and every slot is completely empty, with nothing written on or beside
-> it; no flourish crossing or overlapping a write-in line; no spirals or
+> **No numerals, digits or numbers anywhere in the image. No exceptions.**
+> Not written in a field, not beside a line, not numbering a list, not on the
+> stone, not in the margin art, not small, not faint, not decorative. **Every
+> write-in line and every slot is completely empty**, with nothing written on
+> or beside it. *If anything above appears to call for a number, it does not
+> — this rule overrides it.*
+>
+> And: no flourish crossing or overlapping a write-in line; no spirals or
 > scrollwork filling the blank writing space; no illegible, misspelled or
 > over-ornamented words; no blackletter, no gothic script; no continuous
 > decorative border framing the whole page; no equipment, weapon, armour or artifact section; no inventory; no
 > stat names anywhere — never write Body, Mind or Soul, and never label the
-> circles; no sample or placeholder values in any field; no numbers except
-> the small `1` and `2` beside the two skill lines; no extra sections, no
+> circles; no sample or placeholder values in any field; no extra sections, no
 > flavour text, no page number, no title, no signature, no logo.
 
 ---

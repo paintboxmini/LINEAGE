@@ -20,6 +20,7 @@ python3 test_wheel.py           # the initiative-shift worked cases
 python3 test_invariants.py      # rules/invariants.md, Confirmed
 python3 test_effects.py         # the keyword rulings, through the cards
 python3 test_information.py     # no agent reads a hidden zone
+python3 test_agents.py          # invariants the agents have to keep
 python3 effects.py              # how much of the pool compiles
 python3 cards.py                # card counts, as a load check
 
@@ -42,6 +43,7 @@ python3 encounter_budget.py harlock ocellus --runs 1000
 | `test_invariants.py` | `rules/invariants.md`, Confirmed, as assertions — derived stats stay live under stat changes, and card count is conserved per combatant across 600 randomised fights, both agents. |
 | `test_effects.py` | `rules/card-glossary.md` as assertions, through the cards that use each keyword. |
 | `test_information.py` | Reads `agents.py` and fails if any agent touches a hidden zone — a hand, a deck, HP or a stat line. Static, so it catches a leak no fight in the suite happens to exercise. |
+| `test_agents.py` | The agent properties whose failure would be silent: that an unwatched opponent scores colour-blind, that a watched one does not, that `SimpleAI` stays the plain creature baseline the encounter figures rest on, and that a Passive is never priced. |
 
 `rules/invariants.md` is the specification this is checked against.
 
@@ -86,8 +88,8 @@ moving, attacking, or triggering a Defense Effect. Expiry is measured
 against the turn of whoever played the card, not whoever is holding it,
 because that is what "until your next turn" says on the card.
 
-Run `python3 effects.py` for the live figure; it was 297/319 (93%) when this
-paragraph was written — 289 compiling and 8 read as traits — and
+Run `python3 effects.py` for the live figure; it was 295/317 (93%) when this
+paragraph was written — 287 compiling and 8 read as traits — and
 **166/166 across the 84 cards actually seated in a printed set**.
 
 **A half either compiles completely or narrates.** Partial execution is the
@@ -304,7 +306,7 @@ out of 2942. Soul 2 + d4 scores 4.0 and his MIMETIC BLADE Passive scores
 never has to spend. That got written up here as a note about KILLSWITCH.
 
 **It was a note about the agent.** A Passive should never have been
-competing on its number at all (see below). With `_prefer_hand` in place,
+competing on its number alone (see below). Once it was priced,
 KILLSWITCH is chosen 149 times of 698 legal and a stance is up on 597
 turns of 2676, and `_REPEAT_PENALTY` — which only fires while a stance is
 up, and had therefore never fired — turns out to be the one weight in the
@@ -363,30 +365,272 @@ wrackclaws: 82.8% honest, 85.5% peeking at stats, 84.2% peeking at HP,
 of the handicap, and it is also how much every earlier figure in this file
 was flattered by information the agent should not have had.
 
-## A Passive is the floor, not a pick
+## Where to stand is a decision now, and the answer is usually "here"
 
-**It is always the weakest thing a character has, and that is the point.**
-A Passive has a colour, a Range and a die and no Effect at all, where
-every card in a deck carries text. What it buys is never being stuck —
-never a turn with no legal attack, never an exchange with no legal block —
-and the price of always having it is that it loses to anything that could
-have been played instead. So: play the strong options, fall back on the
-weak one when it is needed.
+The agent moved 0.0% of the time, because `choose_action` only ever moved
+when it had no legal attack at all. The whole positional layer was
+unmodelled, which made any card keyed to position — SEED, or a
+Ranged-only KILLSWITCH — impossible to evaluate.
 
-Scoring alone will not produce that, and did not. MIMETIC BLADE is Body 3
-+ d6, which is 6.0 on expected damage and above most of what Chris holds,
-so the value function ranked it first and he opened with it in **57% of
-his attacks** — a Passive as a main line. `Agent._prefer_hand` makes the
-rule structural instead of a number to be tuned: a Passive is considered
-only when the hand has nothing legal. Passive use drops to 37% of Chris's
-attacks, which is what the fallback is actually for.
+**Moving buys range legality and nothing else.** `rules/combat.md`:
+*"Position provides no automatic protection. The Frontline does not shield
+the Backline from being targeted."* There is no hiding, so the only reason
+to spend a turn walking is that the cards in hand do not reach from where
+you stand. That makes the arithmetic about how much fight is left — stay
+k turns and you attack k times at what this position offers, move and you
+attack k-1 times at what the other offers, so it pays when
+`value there / value here > k / (k-1)`.
 
-It also plays better, which is not why it is there but is worth recording:
-89.0% and 82.8% against 87.0% and 81.0% with Passives competing freely, at
-four and five wrackclaws over 400 fights. A softer version — score them
-but dock 2.0 for carrying no text — measures a shade better still (90.0%,
-83.2%) and was not taken, because the strict rule is a statement about
-what a Passive *is* and the soft one is a parameter.
+`KitAI` now asks that every turn (`_reach_value`, via a `position=`
+argument added to `Combatant.playable` so it can price the other side
+without going there). `SimpleAI` keeps the old behaviour, since it plays
+creatures and the encounter figures rest on it.
+
+**And the sweep says movement does not pay here, monotonically:**
+
+| `_MOVE_GAIN` | 4 foes | 5 foes | share of actions spent moving |
+|---|---|---|---|
+| 1.0 | 84.5% | 74.8% | 19–21% |
+| 1.25 | 88.8% | 83.0% | 6–7% |
+| 1.5 | 89.2% | 86.8% | 1–2% |
+| 2.0 | **90.0%** | **87.2%** | 0.1–0.4% |
+| never move | 90.0% | 87.5% | 0% |
+
+Every amount of walking costs win rate. That is not a bug in the agent —
+it is what this benchmark is: everyone starts at the Frontline, nothing
+makes anyone leave, and Melee carries the biggest dice in the game
+because range buys the die. Standing still is correct, and the difference
+that matters is that the agent now *decides* that instead of being unable
+to do otherwise. `_MOVE_GAIN` sits at 2.0, which keeps the capability at
+no measured cost and still walks when the gap is real.
+
+The cases this benchmark cannot produce are checked directly in
+`test_agents.py` instead: a Ranged hand at the Frontline walks, the same
+hand at the Backline stays, a Melee hand at the Backline closes, and a
+Rooted character with nothing that reaches takes cover rather than
+passing.
+
+**Two things found by breaking them.** The first cut folded "where to
+stand" and "who to hit" into one search and silently dropped `_weakest`,
+so the agent stopped focusing fire — six points of party win rate, and it
+read as a finding about movement until it was ablated. And scoring a
+position by its single best card made the character whose kit spans both
+ranges pace back and forth all fight: 74 reversals inside two actions
+across 200 fights, because whichever side he stood on the other looked
+about as good and noise decided it. A position is scored by the mean of
+its best two options now, which is steadier.
+
+**Still not implemented: Rushdown.** `rules/combat.md` gives Move Position
+a second shape — a Frontline character closing on a Backline enemy, which
+drags the Frontline to include them. `play.py` only has the Frontline /
+Backline toggle, so no agent can do it and no measurement here involves
+it.
+
+## MEASURE was paying out into the void
+
+`RevealStats` — what MEASURE and STUDY buy — printed the numbers to the
+log and **nothing read them**. The card said the defender reveals their
+stats, the engine said so out loud, and no decision anywhere changed.
+
+That is worth more than it sounds now that hidden information is enforced.
+An agent may not read a stat line; it infers the colour split slowly by
+watching cards come out. MEASURE hands that over at a stroke, which is the
+one legitimate route past the rule — so the op now writes into
+`Knowledge.stats`, and `color_odds` returns the exact split instead of the
+smoothed estimate. A bought fact is not an estimate, so it skips the
+shrinkage the watched read gets.
+
+**The whole party learns it**, not just the reader. At a table the number
+gets said out loud, and a party that cannot pass it along is playing a
+different card. Verified: Chris measures a creature, Pat knows its split,
+the creature knows nothing.
+
+**And it is worth almost nothing to the agent** — +0.2 to +0.5 points of
+party win rate, against four-card creatures and thirteen-card bosses
+alike, believed in full. That is not a verdict on the card. It is a
+measurement of how shallowly this agent uses information: the only thing
+it does with a colour read is weight one RPS decision. A person does more
+with it than that — who tanks the thing, which counter-colour card to hold
+back, whether to fight it at all — and none of that is modelled. **Read
+this as the floor for the card, not the ceiling.**
+
+## The rule that made KILLSWITCH look unplayable
+
+`rules/combat.md` has a section called **Setting one up before the
+fight**: *"A character who has time and a reason may set up one Ongoing
+Effect before initiative is rolled. One, not two."* The simulator did not
+implement it, at all, and that is most of what an Ongoing card is worth.
+
+Without it, KILLSWITCH has to be played mid-fight — which means winning a
+reveal with Soul 2 and a d4 before the stance ever goes up. So the
+simulator reported a card nobody would play, and every figure derived from
+that (its 4.0 attack score, the "Chris never sets his stance" note, the
+observation that `SimpleAI` never plays it) was measuring the absence of a
+rule rather than the card.
+
+`engine.set_up_before_the_fight` implements it, and `play.run` takes a
+`prepared=` argument naming the sides that had warning. **It is off by
+default and should stay off by default**: walking round a corner into
+something is the case that needs no warning, and whether this fight was
+that is a table judgement the engine has no business making.
+
+With the party forewarned, over 400 fights:
+
+| | ambushed | forewarned |
+|---|---|---|
+| Chris's turns with something Ongoing up | 21–22% | **35–38%** |
+| Chris goes down, 4 foes | 16% | 13% |
+| Chris goes down, 5 foes | 26% | 22% |
+
+The mechanics themselves were already right, which is worth recording
+because it is where the hunt started: the stance sets, +3 lands exactly
+(7 damage against 4 on the same seed), Armour 3 reduces, both survive an
+intervening colour, both are taken back when a repeated colour ends it,
+and the card goes to the discard at that point rather than vanishing.
+What was missing was never the card.
+
+**A stance ends on a repeated colour when the card is *revealed*** — not
+when it resolves and not when the outcome is known. A committed card
+becomes a played one at the reveal (`rules/combat.md`, Attack
+Resolution), so an attack that is then dodged still counted.
+
+## The attacker was blind to the triangle
+
+`KitAI` scored defences on the colour matchup and attacks on the raw
+number. The defender read the triangle; the attacker could not see it. So
+it would lead Red into a creature whose deck is half Red — a tie, a wasted
+turn — and score it identically to a clean hit.
+
+Two halves to the fix, and the smaller-looking one is worth more.
+
+**Damage now runs through the reveal.** An attack that loses deals
+nothing, so the damage is weighted by the chance of winning and everything
+the Effect is worth by the chance the Effect runs at all — a win *or* a
+tie, because `engine._finish` runs the attacker's half on both. The
+colour-repeat penalty stays unweighted: a stance ends on a repeated colour
+**when the card is revealed**, which is before anyone knows who won it.
+
+Both weights are normalised so **an agent that has watched nothing scores
+exactly what the colour-blind one did**, and `test_agents.py` holds that
+to the arithmetic. It matters more than it sounds: every weight in the
+class was tuned against the unweighted scorer, so a normalisation that
+drifts silently changes what all of them mean.
+
+The raw odds are an estimate off a handful of cards, and multiplying
+damage by a noisy estimate is a noisy score. Trusting them in full won
+four points against a Red-heavy deck and lost one against Blue- and
+Green-heavy ones, because it would lead a small Green die into Blue rather
+than a big Red one. Shrunk halfway toward the flat prior
+(`_MATCHUP_TRUST`), the losses go and the gains mostly stay.
+
+**And the tiebreak was the other half of the blindness.** Two options at
+equal value were settled by the bigger die, which is a variance preference
+dressed up as a decision — the mean is already inside the value. Chris's
+two Passives score 6.0 and 6.0, so the die alone decided which colour he
+led with, forever, against anyone. Breaking that tie on *changing colour*
+instead is worth about a point of party win rate on average and three
+against a Red-heavy deck, which is more than the matchup weighting itself:
+
+| foe | die | colour-change |
+|---|---|---|
+| red 2/1/1 | 83.5% | **86.5%** |
+| blue 1/2/1 | 91.5% | 91.8% |
+| green 1/1/2 | 92.8% | 92.2% |
+| even 2/2/2 | 88.5% | 89.8% |
+| big blue 1/3/1 | 91.5% | 92.0% |
+
+The game says it three times over: MEASURE pays for a colour change,
+KILLSWITCH ends on a repeat, and an opponent tracking what you play —
+which is exactly what `Knowledge` does — is who a repeated colour is
+readable by.
+
+Together, against `SimpleAI`'s 82.7% and 78.3%: **88.3% at four
+wrackclaws and 88.0% at five.**
+
+### Two things this turned up that are not about the attack scorer
+
+**A duel counter that could not count.** The scratch harness decided who
+won with `isinstance(winner._agent, A)`, and every variant tested
+subclasses `KitAI`, which subclasses `SimpleAI`. Running `SimpleAI`
+against itself reported **100%** where it has to report 50. Any
+same-class or subclass comparison it ever produced was wrong. Tag the
+agents and it reads 50.0%.
+
+**`SimpleAI` is a creature baseline and is not safe on a player's kit.**
+*(The Chris half of this was measured before the pre-fight rule above
+existed, so the specific 3.4% is the old instrument. The shape of the
+finding — that a pure-damage heuristic misprices a card whose worth is not
+its damage — is not affected, but the number should be re-taken.)*
+Against a purely random opponent with the same cards, it is even on a
+generic 3/3/3 build with a core deck — 51.8%, which is the case
+`rules/gm-guide.md` rests on, so those figures are sound. On the written
+kits it is wild in both directions: **3.4% with Chris, 100% with Pat.**
+Both come from cards whose worth is not their damage number. It never
+plays KILLSWITCH, which scores 4.0 and is an Ongoing +3, so a random agent
+that does play it beats it; and it never wastes a turn attacking with
+HOLD THE LINE, which always ties, so it beats a random agent that does.
+That is the whole reason `KitAI` exists — and the reason the encounter
+figures should stay on `SimpleAI`, which plays creatures, not kits.
+
+## When to reach for a Passive is a card question
+
+**The first attempt at this was a rule about strength and it was wrong.**
+A Passive has no Effect and a small die, so it reads as the weakest thing
+a character holds, and the agent was made to reach for one only when the
+hand had nothing legal at all. That is not the decision a player makes.
+
+The decision is **can I afford to spend the card**, and it is a prediction
+rather than a ranking, because a hand refills. You draw back up to hand
+size at the start of your turn (`rules/combat.md`), so a card spent on
+defence costs you only the blocks you still have to make *before* your
+turn comes round. That is countable off the initiative wheel, which is a
+physical object on the table and public in a way a hand is not:
+
+    need  = enemy turns before mine / how many of us are still standing
+    spare = cards in hand - 1
+    free to spend when spare >= need, priced when it is not
+
+The ally term is not a detail — it is most of the model. An enemy turn is
+not an attack on *me* when there are three of us, so a lone character
+hoards and a character with a party can spend. Without it the answer is
+"never safe" in every group fight, and a first version that left it out
+cost about two points of party win rate by making the agent hoard
+constantly.
+
+**Measured, it is neutral on the real kits**: 87.0% and 81.3% against
+86.7% and 82.0% with the price switched off entirely, at four and five
+wrackclaws over 300 fights. It is kept because it is the right shape and
+because switching it off is not better, not because it has been shown to
+pay. Two honest caveats:
+
+- **The old strength rule measured slightly better** on this benchmark —
+  88.3% and 83.7%. It is gone anyway, because it answers a question nobody
+  asks at the table and because of what it did to the archetype figures
+  below.
+- **The decision rarely binds for the generic archetypes**, which is why
+  the sweep over the price is flat for them. Their Passives are written in
+  their primary colour at the d6 melee rate the rules allow, so a Soul 4
+  character's Passive is Soul 4 + d6 — already the strongest thing they
+  own. The price never flips a choice that was not close.
+
+### The generic archetype is not the character
+
+The archetype benchmark says a Soul-primary character goes down 49% to
+62% of the time in a party fight where Red and Blue go down 10% to 29%.
+That result is stable: it survives a mixed party rather than three clones,
+it survives rotating party order, it survives switching targeting from
+focus-fire to random, and it is the same with the card price on or off.
+
+**It does not reproduce for the Soul-primary character anyone actually
+plays.** Pat is the same 3/2/4 shape with the same two-card hand and sits
+at 14% to 26%, level with the other two. The difference is the kit: a
+signature card that mirrors its opponent's colour is a guaranteed block,
+and it is aimed at exactly the hole the archetype falls through.
+
+So the archetype figure is a fact about a character built from generic
+fill, and the fill is the finding. Worth knowing when reading anything
+else in this file that uses those three archetypes — they are a control
+for stat spreads, not a model of a playable character.
 
 **And judge an agent on the fight the character was built for.** `KitAI`
 is at parity with `SimpleAI` in a duel and worth ten to twenty points of

@@ -1803,17 +1803,41 @@ class Check(Op):
 
 
 class RevealStats(Op):
-    """What a successful STUDY buys. Stats are the deck's colour split, so
-    this is more than trivia (`rules/cards.md`, Deck Building)."""
+    """What a successful STUDY or MEASURE buys. Stats are the deck's colour
+    split, so this is more than trivia (`rules/cards.md`, Enemy decks).
+
+    **And it is the one legitimate way past the information rule.** An
+    agent may not read a stat line (`agents.Knowledge`); it infers the
+    colour split slowly, by watching cards come out. This card hands it
+    over at a stroke — which is the whole point of the card, and until now
+    the op printed the numbers to the log and nothing read them, so MEASURE
+    and STUDY were paying out into the void.
+
+    The whole team learns it, not just the reader. At a table the number
+    gets said out loud, and a party that cannot pass it along is a party
+    playing a different card.
+    """
 
     def __init__(self, target):
         self.target = target
 
     def apply(self, ctx):
+        import engine
         for who in ctx.resolve(self.target, 'Read'):
             ctx.log(f'  {who.name}: Body {who.body} / Mind {who.mind} / '
                     f'Soul {who.soul} — so {who.body} Red, {who.mind} Blue, '
                     f'{who.soul} Green.')
+            split = {'RED': who.body, 'BLUE': who.mind, 'GREEN': who.soul}
+            told = 0
+            for c in engine.table():
+                if c.team != ctx.actor.team or c.is_object:
+                    continue
+                known = getattr(getattr(c, '_agent', None), 'known', None)
+                if known is not None:
+                    known.learn_stats(who.name, split)
+                    told += 1
+            if told > 1:
+                ctx.log(f'  — and {ctx.actor.name} tells the rest of the party.')
 
 
 @menu(r'^the next time you attack the (?:defender|attacker), deal double damage')
@@ -2416,6 +2440,95 @@ def _r_drink_self(m):
 # position and can be attacked directly.
 
 
+class PlantSeed(Op):
+    """`campaign/chris.md`, Seeds. `rules/combat.md`, Objects.
+
+    Pay HP, and what you paid is standing over there now. The Object holds
+    exactly the HP that left him, which is AMALGAMOUS FORM's rule about a
+    structure made from a split-off piece rather than a cost invented for
+    this card (`campaign/passives.md`).
+    """
+
+    COST = 3
+    GROWTH = 3
+
+    def apply(self, ctx):
+        from engine import Combatant, table, set_table
+        who = ctx.actor
+        if any(c.is_object and c.summoner is who and c.is_seed
+               for c in table()):
+            ctx.log(f'  {who.name} already has a seed planted.')
+            return
+        who.take(self.COST, unpreventable=True, log=ctx.log)
+        # The roll goes into Soul for the same reason a spirit's does:
+        # max HP is derived and must stay derived (`rules/invariants.md`),
+        # and 4x0 + 0 + n is exactly n.
+        seed = Combatant(f"{who.name}'s seed", 0, 0, self.COST,
+                         deck=[], position=who.position, team=who.team)
+        seed.is_object = True
+        seed.is_seed = True
+        seed.summoner = who
+        seed.grows_by = self.GROWTH
+        seed._agent = getattr(who, '_agent', None)
+        # The card is what says the seed is there — face up in front of
+        # him, the way an Ongoing Effect is tracked (`rules/combat.md`,
+        # Objects). It goes to the discard when the seed does, which is
+        # also why he can only have one: no deck runs a card twice.
+        seed.tracker = ctx.card
+        ctx.stays_in_play = True
+        set_table(table() + [seed])
+        ctx.log(f'  {who.name} plants a seed — {self.COST} HP, '
+                f'{seed.position}.')
+
+
+@menu(r'^plant a seed\.?$')
+def _r_plant_seed(m):
+    return [PlantSeed()]
+
+
+@menu(r'^if the top card of your discard pile is a different colou?r than '
+      r'this one, (.+?)\.?$')
+def _r_gated_on_discard(m):
+    """SEED's defence half. Blocking costs no Action, so an ungated planting
+    half would seed for free every time somebody swung at him
+    (`campaign/chris.md`, Seeds). The pile is face up, so the gate is
+    something anyone at the table can check.
+    """
+    inner = compile_half(m.group(1))
+    if inner is None:
+        return None
+
+    def test(ctx):
+        pile = [c for c in ctx.actor.discard if c.color]
+        if not pile:
+            return False
+        return pile[-1].color != ctx.card.color
+
+    return [Gated(test, inner, 'the discard pile shows another colour')]
+
+
+class ExtraFreeAction(Op):
+    """ON THE FLY: "Take a free action. This is in addition to your one for
+    the turn." (`cards/kevin.md`, `rules/combat.md` Free Actions.)
+
+    Kevin is the only character whose free action is contested — reload,
+    eat or drink, throw an orange, one per turn, every turn — and nothing
+    else in the game relieves it. On his own turn this is a second one. On
+    a Defense Effect it is more than that: a free action otherwise exists
+    only on your own turn, so this is the one way anybody takes one while
+    being attacked.
+    """
+
+    def apply(self, ctx):
+        ctx.actor.extra_free += 1
+        ctx.log(f'  {ctx.actor.name} has a free action in hand.')
+
+
+@menu(r'^take a free action\. this is in addition to your one for the turn\.?$')
+def _r_on_the_fly(m):
+    return [ExtraFreeAction()]
+
+
 class Summon(Op):
     """Put a spirit on the field at the summoner's position.
 
@@ -2456,6 +2569,27 @@ class Summon(Op):
             ctx.log(f'  it carries: {self.label}')
 
 
+def _totem_tie_win(ctx, spirit):
+    """HERE BOY: "the next time you tie in RPS, you win instead. This is
+    tied to the spirit's survival — kill the totem, lose the effect."
+
+    Ruled 2026-09-21. It was the summoner's outright before that, which
+    made HERE BOY's spirit a body with no purpose while LET'S GO's was a
+    totem worth defending — two summons on one sheet doing different
+    kinds of thing for no stated reason. Now both are worth standing in
+    front of.
+
+    The charge still belongs to the summoner rather than the spirit, for
+    the reason it always did: an Object does not act and cannot defend, so
+    it never reaches a reveal and could never spend one. What the spirit
+    holds is whether the charge is still there.
+    """
+    ctx.actor.wins_next_tie += 1
+    spirit.tie_win_for = ctx.actor
+    ctx.log(f'  {ctx.actor.name} will win their next tie, '
+            f'while the spirit stands.')
+
+
 def _totem_damage_buff(ctx, spirit):
     """LET'S GO: "you and your allies deal +2 damage this combat. This buff
     is tied to the spirit's survival — kill the totem, lose the buff."
@@ -2491,10 +2625,10 @@ class WinsNextTie(Op):
 
 
 @menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
-      r'the summoning grants you the ongoing effect: the next time you tie '
-      r'in rps, you win instead')
+      r'it carries the ongoing effect: the next time you tie in rps, you '
+      r"win instead\. this is tied to the spirit's survival[^.]*\.?")
 def _r_here_boy(m):
-    return [Summon(), WinsNextTie()]
+    return [Summon(rider=_totem_tie_win)]
 
 
 @menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'

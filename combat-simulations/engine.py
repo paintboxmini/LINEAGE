@@ -168,6 +168,19 @@ class Combatant:
         # it was never handed (`agents.Knowledge`).
         self.seen_damage = 0
 
+        # Objects (`rules/combat.md`, Objects). `is_seed` and `grows_by`
+        # belong to the one kind that gets bigger on its own
+        # (`campaign/chris.md`, Seeds); a spirit has neither.
+        self.is_seed = False
+        self.grows_by = 0
+        self.tracker = None       # the card sitting face up for this Object
+        self.tie_win_for = None   # HERE BOY: whose tie-win this spirit holds
+
+        # ON THE FLY: free actions beyond the one per turn everyone gets.
+        # `rules/combat.md`, Free Actions — the cap names this card as its
+        # only exception.
+        self.extra_free = 0
+
         # Stacking statuses, held as counts.
         self.deadly = 0
         self.weak = 0
@@ -401,22 +414,29 @@ class Combatant:
             drawn += 1
         return drawn
 
-    def playable(self, opponent, passives=True):
+    def playable(self, opponent, passives=True, position=None):
         """Cards whose Range is legal for the current positions.
 
         Hand, plus the Passives in their own zone — a Passive is a legal
         thing to attack *or* block with on any exchange its Range and its
         Applies When allow (`Combatant.passives`). `passives=False` is kept
         for callers that want the hand alone.
+
+        `position` answers the same question from somewhere else without
+        going there: what would be legal if I stood in the Backline? That
+        is what an agent has to know to decide whether moving is worth a
+        turn, and asking it by shuffling the combatant back and forth would
+        leave the table wrong if anything raised in between.
         """
         banned = {p.data.get('color') for p in self.pending if p.kind == NO_COLOR}
         pool = list(self.hand)
         if passives:
             pool += [c for c in self.passives if self.passive_applies(c, opponent)]
+        where = position or self.position
         return [c for c in pool
                 if c.is_playable()
                 and c.color not in banned
-                and c.range_ok(self.position, opponent.position)]
+                and c.range_ok(where, opponent.position)]
 
     def dissipate(self, log=None):
         """`campaign/pat.md`: "If the spirit reaches 0 HP, it dissipates."
@@ -439,6 +459,25 @@ class Combatant:
             if log:
                 log('  the totem is gone — the party loses its bonus.')
             self.totem_buff = []
+        # HERE BOY, ruled 2026-09-21: the tie-win is the spirit's to hold,
+        # so it goes when the spirit does. Only an unspent one — a charge
+        # already used is not clawed back.
+        owner = getattr(self, 'tie_win_for', None)
+        if owner is not None:
+            if owner.wins_next_tie > 0:
+                owner.wins_next_tie -= 1
+                if log:
+                    log(f'  the totem is gone — {owner.name} loses the '
+                        f'held tie-win.')
+            self.tie_win_for = None
+        # The card that was tracking it stops being face up and is discarded
+        # (`rules/combat.md`, Objects).
+        card, owner = self.tracker, self.summoner
+        if card is not None and owner is not None:
+            if card in owner.in_play:
+                owner.in_play.remove(card)
+                owner.discard.append(card)
+            self.tracker = None
         global _TABLE
         _TABLE = [c for c in _TABLE if c is not self]
 
@@ -638,10 +677,13 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
         # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
-        # Asked and answered where the attack is made rather than at the
-        # reveal, because the card was played either way — an attack that
-        # gets dodged was still an attack, and still the last one you made.
-        # A block is not an attack and never reaches here.
+        # **On the reveal**, which is when a committed card becomes a
+        # played one (`rules/combat.md`, Attack Resolution: the cards
+        # "reveal simultaneously — only now do they become public"). So it
+        # is asked here, at the top of the exchange, and an attack that is
+        # then dodged still counted: it was revealed, so it was an attack,
+        # and it is still the last colour you led with. A block is not an
+        # attack and never reaches here.
         if atk_card.color and attacker.last_attack_color == atk_card.color:
             fx.end_stances_on_repeat(attacker, atk_card.color, log)
         if atk_card.color:
@@ -1079,6 +1121,66 @@ def _run(card, half, actor, opponent, outcome, dealt, log, rng, wheel,
     return _settle(ctx, card, actor)
 
 
+def ongoing_halves(card):
+    """The halves of a card that produce an Ongoing Effect.
+
+    Read off the prose rather than a list of names, the same way everything
+    else here is — `rules/combat.md`, Ongoing Effects.
+    """
+    out = []
+    for half in ('effect', 'defense_effect'):
+        text = (getattr(card, half, None) or '')
+        if 'ongoing' in text.lower():
+            out.append(half)
+    return out
+
+
+def set_up_before_the_fight(who, log=None, rng=random, opponent=None):
+    """`rules/combat.md`, Setting one up before the fight.
+
+    "A character who has time and a reason may set up one Ongoing Effect
+    before initiative is rolled. One, not two." The card goes face up and
+    the fight starts with it already running.
+
+    **This was missing entirely, and it is most of what an Ongoing card is
+    worth.** Without it, KILLSWITCH has to be played mid-fight, which means
+    winning a reveal with Soul 2 and a d4 before the stance ever goes up —
+    so the simulator was reporting a card that is fine at the table as one
+    nobody would play. Whether the party *has* time and a reason is a table
+    judgement and not the engine's to make, which is why this is asked for
+    by the caller rather than assumed.
+
+    Returns the card set up, or None.
+    """
+    log = log or (lambda *a: None)
+    options = [c for c in who.hand if ongoing_halves(c)]
+    if not options:
+        return None
+    card = who._agent.choose_prepared(who, options)
+    if card is None:
+        return None
+    half = ongoing_halves(card)[0]
+    if compiled(card, half) is None:
+        log(f'{who.name} would set up {card.name}, but its Effect has to be '
+            f'read at the table: {getattr(card, half)}')
+        return None
+    log(f'{who.name} sets up {card.name} before the fight.')
+    who.hand.remove(card)
+    returned, _gone, held = _run(card, half, who, opponent, Outcome.TIE, 0,
+                                 log, rng, None)
+    if returned:
+        pass                      # the half put it back in hand itself
+    elif held:
+        # "These cards remain face up in front of the player after use"
+        # (`rules/combat.md`). A stance that is up with its card already in
+        # the discard cannot be discarded again when it ends.
+        who.in_play.append(card)
+        log(f'  {card.name} stays face up in front of {who.name}.')
+    else:
+        who.discard.append(card)
+    return card
+
+
 def _standing(attacker, card, defender, log):
     """Standing damage modifiers that match this attack, spent as they
     apply. A modifier can be keyed to a colour, to a target, or to
@@ -1105,10 +1207,69 @@ def _standing(attacker, card, defender, log):
 _TABLE = []
 
 
+def grow_objects(who, log=None):
+    """`campaign/chris.md`, Seeds: a seed gains HP at the start of each of
+    its owner's turns, up to that owner's own maximum.
+
+    Not while they are Collapsed — it is their body, and their body is
+    busy. The cap is the owner's max HP rather than the seed's, because a
+    seed has no stats of its own to derive one from.
+    """
+    log = log or (lambda *a: None)
+    if who.down:
+        return
+    for obj in _TABLE:
+        if not (obj.is_object and obj.grows_by and obj.summoner is who):
+            continue
+        room = who.max_hp - obj.hp
+        if room <= 0:
+            continue
+        gain = min(obj.grows_by, room)
+        obj.soul += gain          # max HP is derived; the HP lives in Soul
+        obj.hp += gain
+        log(f'  {obj.name} grows to {obj.hp} HP.')
+
+
+def harvest_seed(who, log=None):
+    """Consume a seed you are standing with, as a free action: heal its HP.
+
+    Returns the amount healed, or 0 if there was nothing to take.
+    """
+    log = log or (lambda *a: None)
+    seed = next((o for o in _TABLE if o.is_object and o.is_seed
+                 and o.summoner is who and o.position == who.position
+                 and o.alive()), None)
+    if seed is None:
+        return 0
+    amount = seed.hp
+    healed = who.heal(amount, log=log)
+    log(f'  {who.name} takes the seed back — {healed} HP.')
+    seed.hp = 0
+    seed.dissipate(log)
+    return healed
+
+
 def table():
     """Everyone in the current fight, including anything summoned into it.
     `play.run` reads this each turn so a mid-fight arrival is visible."""
     return list(_TABLE)
+
+
+# The initiative wheel of the current fight. It is a physical wheel on the
+# table with everyone's token on it (`rules/combat.md`), so unlike a hand or
+# a stat line it is public — anyone playing can look at it and count whose
+# turn comes before theirs. Agents use it for exactly that and nothing else.
+_WHEEL = None
+
+
+def set_wheel(wheel):
+    global _WHEEL
+    _WHEEL = wheel
+
+
+def wheel():
+    """Turn order as it currently stands, or None outside a fight."""
+    return _WHEEL
 
 
 def set_table(combatants):

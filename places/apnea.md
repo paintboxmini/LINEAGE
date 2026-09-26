@@ -35,7 +35,7 @@ The people are not confused. This is normal to them. The party is the strange th
 
 The village stays warm and lit. The outer landscape does not.
 
-Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's the same thinness the In-Between carries inside its own pockets (`world/eclipseria-overview.md`) — Name, Price, and Distance going unheld — except a pocket is normally something you route around, and this one starts twenty feet from where people sleep. Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
+Beyond the edge, the villagers just call it **Out There** — the way you'd name weather, not a monster. Nothing dramatic in the word. It's the same thinness the In-Between carries inside its own pockets (`world/eclipseria-overview.md`), except a pocket is normally something you route around, and this one starts twenty feet from where people sleep. *Nobody in Apnea has a theory about it and nobody is working on one.* Things move in it. Nobody who's seen something Out There describes it the same way twice, and nobody explains why they stopped trying to compare notes.
 
 Villagers don't go out after dark — not because they were told not to, but because everyone learned not to a long time ago.
 
@@ -85,7 +85,7 @@ Resolving the boundary for a session buys the village one calm stretch, nothing 
 
 - `places/capital/underground-bazaar.md` — where Lily is found
 - `world/eclipseria-overview.md` — the In-Between, and what its pockets are made of
-- `world/creation-myth-the-three-cuts.md` — Name, Price, Distance
+- `factions-and-races/the-masons-three-cuts.md` — the Masons' account of ground like this, which Apnea has never heard
 - `world/geography-overview.md` — Apnea's position, its own lake south-southwest of Vulture's Nest
-- `world/tonal-bible.md`
+- `world/influences.md`
 - `characters/aege.md` — the same shape of deliberately-open fate, for comparison

@@ -68,7 +68,7 @@ Quillet's people know this and do not make a thing of it. Ask directly and you'l
 
 **And the debt closed itself.** A body that is not registered cannot be owed by the Regency, so the balance that was the entire point of the refusal was not settled, not disputed, and not denied. It simply stopped existing everywhere except in nine volumes in a long house.
 
-**Nobody in the capital did anything cruel.** Every step was correct. That is the horror of it and it should be run that way — comprehension, not menace (`world/tonal-bible.md`).
+**Nobody in the capital did anything cruel.** Every step was correct. That is the horror of it and it should be run that way — comprehension, not menace (`world/influences.md`).
 
 ---
 
@@ -126,4 +126,4 @@ Quillet's people know this and do not make a thing of it. Ask directly and you'l
 - `factions-and-races/the-cartographers-guild.md` — why the road is falling out of the atlases
 - `world/the-regency.md` — Elara's sphere, Isabella's court, Cedric's soldiers who did not come
 - `places/apnea.md` — the Havens principle, and a boundary that stopped being walked
-- `world/tonal-bible.md` — everything correct, nothing kind
+- `world/influences.md` — everything correct, nothing kind

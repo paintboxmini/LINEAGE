@@ -111,6 +111,8 @@ The wine and the pepper go to distant ports, and some of them are not respectabl
 
 **The oranges.** Throwable incendiary grenades — the oils in the skin enhanced until they're properly combustible. Same craft as the peppers, different delivery: the pepper is a bullet, the orange is a bomb.
 
+**And it is not an orange you can buy** *(2026-09-21)*. It is **Burnrind** (`flora/burnrind.md`), a feral citrus on the Nest's spoil banks — thorny, plum-sized, no flesh at all, and a rind so oily it beads on the blade. It fruits the season after a spoil bank burns through and then makes nothing for years, so the supply runs entirely through other people's fires. *This closed the one hole in the whole kit: every round and every drink named the rare thing it was charged with, and the grenade — the strongest single thing he throws — named nothing and came off the general seasoning budget. It was the cheapest item on the sheet to restock and the most powerful to use, which is the wrong way round.*
+
 **They are a consumable now, not a card** *(2026-09-19)*. KINDLE is gone and the orange is a thing he carries and throws for a **free action** (Gear, below). *That is a better fit than a card in both directions: it stops a grenade competing for a slot in a nine-card deck, and it makes the orange a supply the party can run out of — which is the whole point of the ingredient economy this character is built on.*
 
 ### The process
@@ -126,9 +128,10 @@ Finding food that will take an enhancement is easy — peppers are peppers. What
 ### Supply and restocking
 
 - **Preparation is a downtime activity.** The Reduce stage alone is hours.
-- **A session of work turns one measure of a rare seasoning into three prepared rounds, two oranges, or two servings of a drink** — oranges are larger and more volatile, and a mouthful goes further than a shell and less far than a seed.
+- **A session of work turns one measure of a rare seasoning into three prepared rounds or two servings of a drink** — a mouthful goes further than a shell, so a drink costs more than a round.
+- **The oranges are not on that budget and never were, properly.** One picking of Burnrind makes **two oranges** and makes nothing else (`flora/burnrind.md`). The fruit is the charge, so there is no seasoning to divert and nothing else to spend it on.
 - **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden.
-- **Restocking is an ingredient problem, and ingredient problems are quests.**
+- **Restocking is an ingredient problem, and ingredient problems are quests.** *Burnrind is the one that is a question rather than a fight — free, legal, lying on the ground, and impossible to find without asking the right person which bank went up and when.*
 
 ### What this build actually costs — read this before playing him
 
@@ -145,7 +148,8 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 **What that means at the table, concretely:**
 
 - **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Four of the five loads have to be taken off something that did not want to give them up.
-- **The oranges and the drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, below). Two oranges *or* three rounds *or* two drinks per session of work — he cannot have all three.
+- **The drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, below). Three rounds *or* two drinks per session of work — he cannot have both.
+- **The oranges stopped competing on 2026-09-21 and got harder instead.** They come off Burnrind now (`flora/burnrind.md`), which is its own supply and a scarcer one. *That is a real change to this paragraph and it cuts both ways: rounds and drinks got slightly more plentiful, because the grenade is no longer eating measures they wanted, and the grenade itself went from expensive to genuinely finite. Net it is a nerf, because half a measure for two unpreventable damage across a whole position was the best trade on the sheet.*
 - **The free action caps how much of it he can spend per turn anyway** (One free action, three things that want it, above). Carrying more does not mean using more.
 - **And a plain round is now genuinely blank** (The Ingredients, above). The floor of this character is lower than it used to be, deliberately.
 
@@ -190,17 +194,78 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 ### The beverages
 
-Prepared drinks, handed over by SERVE or drunk by Kevin himself. Same craft as the rounds, same supply model.
+Prepared drinks, handed out before the fight and drunk with a free action by whoever is holding one. Same craft as the rounds, same supply model. *Kevin used to hand them over mid-fight with SERVE; the party carries its own now, which is what retired that card.*
 
-| Drink | Effect on the drinker | Charge |
-|-------|-----------------------|--------|
-| **Bitter Shot** | Gain Quick | Plain |
-| **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain |
-| **Still Water** | Gain Ward and heal 3 HP | Hush petal |
-| **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake |
-| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind |
+| Drink | Effect on the drinker | Charge | Sells for |
+|-------|-----------------------|--------|-----------|
+| **Bitter Shot** | Gain Quick | Plain | ~10 gold |
+| **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain | ~10 gold |
+| **Still Water** | Gain Ward and heal 3 HP | Hush petal | ~20 gold |
+| **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
+| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind | ~30 gold |
 
 The two plain ones are the floor, the same way plain rounds are. Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
+
+**The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
+
+**Three of the five cost him a round he would otherwise have fired.** Still Water eats a hush petal, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+
+### What any of it is actually worth to him
+
+**Gold is the selling price. It is not what these cost him**, and the difference matters more than the number does, because he makes everything he uses.
+
+His real exchange rate is already written above under Supply and restocking: **one measure of rare seasoning becomes three prepared rounds or two servings of a drink.** So:
+
+- A drink costs him **a round and a half**.
+- A round is the cheapest thing he makes, and the only one he can make from the plain stock indefinitely.
+- **An orange costs him neither.** It is off this exchange entirely and on Burnrind's, where the rate is one picking to two oranges and there is nothing else the picking could have been (`flora/burnrind.md`).
+
+**That 3:2 is the economy to play against, not the gold** — and the oranges are a second economy beside it that does not trade with the first. The gold matters when he is selling to somebody, bartering with Senshi (`places/capital/gilded-tusk.md`), or working out whether a job is worth taking. What he spends an afternoon making is decided by the ingredient, not by the price list.
+
+*This used to be a three-way 3:2:2 and the change is worth understanding rather than just reading. Under the old rate an orange was the best buy on the sheet — half a measure for two unpreventable damage across a whole position, against a third of a measure for one round that has to beat somebody to do anything. Nothing about the orange has been weakened. It simply cannot be bought with the thing he has most of any more.*
+
+### What he starts with
+
+**Prepared and on him at the top of Session 1:**
+
+| | |
+|---|---|
+| **3 incendiary oranges** | What is left of two pickings of Burnrind. Where either bank was is a question for the table, not an answer written here |
+| **3 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker. One whole measure, worked up and untouched |
+| **2 hush petal rounds** | Rooted, either direction. A measure with one round already gone out of it |
+| **1 Bitter Shot** | Quick |
+| **1 The Early Cup** | Initiative Shift +1. Both drinks are plain-charge, so neither cost him a seasoning — which is why these two and not the good ones |
+| **Plain rounds** | As many as anyone cares to count. They do nothing |
+
+*The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on, which is what retired SERVE in the first place.*
+
+**Raw and unspent: one measure of sapphire crystal, one measure of spinstone grind.** Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
+
+*Neither raw measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
+
+**The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
+
+| | |
+|---|---|
+| **Cinder flake** | 1 measure, all three rounds made and none fired |
+| **Hush petal** | 1 measure, two rounds left of the three |
+| **Sapphire crystal** | 1 measure, raw |
+| **Spinstone grind** | 1 measure, raw |
+| **Bellows dust** | none. He has never had any |
+| **Burnrind** | 2 pickings, three oranges left of the four. *The one that is not a seasoning — here the fruit is the charge* |
+| **Plain stock** | unlimited, and both drinks came out of it |
+
+**Four measures and two pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
+
+**The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
+
+**Starting gold: 10, and it is the smallest purse at the table on purpose** (`rules/equipment.md`, Starting Gold). He is not poor — he is the opposite, and that is exactly why. **He converted everything he had into ingredients**, which is the whole character, and what is in the bag above is worth something in the region of 150 gold if he ever sold it (What any of it is actually worth to him, above). *Ten gold buys him lunch. Giving the richest man on the dock more money is the one adjustment that makes the sheets less even rather than more.*
+
+**And it is a small number next to the real one.** The grinder is written as **Tier 2 equipment**, which on the gear ladder is an ~800 gold object arriving about twelve sessions ahead of when anyone could afford one (`rules/equipment.md`, Pacing). *The file's own defence of that is good — loaded plain the grinder has no text at all, so it is a conditional weapon rather than a strong one, and the condition is the supply economy this whole section describes. Worth knowing anyway: the gap between Kevin's kit and everyone else's is measured in hundreds of gold, and a starting purse is measured in tens. Starting gold is not the lever that moves it, and nothing here is pretending otherwise.*
+
+*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag.* **Raised from three, two and one on 2026-09-21 at Drew's word.** It moves the moment he runs dry from about the second fight to about the fourth, which is a real change to the pacing that paragraph above is built on — worth knowing rather than worth arguing about, since a first session where the interesting character is empty by the second encounter is its own kind of failure.
+
+**And the free action is still the actual ceiling.** One a turn, whatever is in the bag (One free action, three things that want it, below). More stock does not mean more per turn; it means more turns before the answer to *load, drink or throw* stops being a choice and starts being whatever is left.
 
 ---
 
@@ -218,7 +283,7 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 - **The pepper grinder** — hand-cranked, and a **ranged** weapon. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
 - **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now. *The "hot knife" this file used to list was removed on 2026-09-19; there was only ever one.*
 - **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Supply and restocking, below).
-- **A bandolier of incendiary oranges** — written below as a consumable rather than a card.
+- **A bandolier of incendiary oranges** — written below as a consumable rather than a card. **Three in it at the start** (What he starts with, above), and they are made of Burnrind rather than fruit (`flora/burnrind.md`), which is why there are two.
 
 ```
 THE PEPPER GRINDER
@@ -234,12 +299,15 @@ win or lose — blocking with it burns the round the same as firing it.
 ```
 INCENDIARY ORANGE
 Equipment — Consumable
+Price: ~30 gold
 Effect: Throw as a free action at any position you can see. Deal 2
 unpreventable damage to every enemy in that position. Single-use.
 "The peel does the work. The fruit is just what carries it there."
 ```
 
-**Priced at roughly 40 gold** if one is ever bought rather than made: two points of damage, applied to a position instead of a target, plus the premium a genuinely free-action item pays — the same premium the Echothorn Seed pays (`rules/equipment.md`, Pricing Consumables). **He makes them**, so the number is a scale reference rather than a shopping list.
+**Made from Burnrind, not from an orange** (`flora/burnrind.md`). One picking makes two, a picking needs a spoil bank that burned last season, and burning one to order is a hanging offence in the Nest. *The flavour line on the card turned out to be the mechanical truth: there is no fruit in a Burnrind worth the name, and the peel is the entire object.*
+
+**Priced at roughly 30 gold** if one is ever bought rather than made: two points of damage at the flat rate of 10 a point, plus a point for landing them on a position instead of a single target (`rules/equipment.md`, Pricing Consumables). *It used to be 40, and the extra ten was a premium for being a free action. That premium is gone — every consumable is a free action now unless the item says otherwise, so it buys nothing.* **He makes them**, so the number is a scale reference rather than a shopping list.
 
 **The unpreventable damage is inherited from KINDLE and is inherited on purpose**: it is fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER.
 
@@ -257,7 +325,7 @@ unpreventable damage to every enemy in that position. Single-use.
 
 ## Passives
 
-Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green entirely to SERVE and the drinks.
+Two, both at `campaign/passives.md` with the rest. Red and Blue, which leaves his Green to ON THE FLY — and ON THE FLY is the improvisation half of the pair MISE EN PLACE starts.
 
 - **MISE EN PLACE** — Red, Body, Melee, d6. He set it up. Read *set up* loosely rather than as prep alone: the stance and the ground count the same as the station, and it needs no kitchen, because he carries his kit and works out of a pack.
 - **SPLIT ATTENTION** — Blue, Mind, Ranged, d4. Six orders up, none of them finished, all of them being tracked. Attention divided on purpose rather than lost.
@@ -328,17 +396,27 @@ Range: Ranged
 
 **d6, set 2026-09-19, and it is the norm rather than a nerf.** Blue Ranged cards in the core pool average **d5.47**, so a d6 signature sits just above the line where a signature should. The d8 it carried was a Red-Melee number on a Blue-Ranged card. *Measurement says this will not actually cost him anything — the same change tested at 400 fights moved his damage not at all, because the loads are where his output lives (What this build actually costs, above). It is a correctness fix, not a balance one.*
 
-**SERVE** is unchanged. It carries no effect of its own — it hands over a drink and the drink does the work, the same way a load does for GRIND SHOT. The ally has to be in his position, so it competes with the other two for where he's standing. On defence there's nobody to pass it to.
+**ON THE FLY replaced SERVE on 2026-09-21.** SERVE spent an Action to hand somebody a drink — and the party distributes the drinks before the fight now, and Chris and Pat both have an idle free action to drink them with. A card that costs an Action to do what a free action already does is a dead card, whatever it says on it.
 
 ```
-SERVE
+ON THE FLY
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Give a prepared drink to an ally in your position. They consume it immediately.
-Defense Effect: Consume a prepared drink yourself.
+Effect: Take a free action. This is in addition to your one for the turn.
+Defense Effect: Take a free action. This is in addition to your one for the turn.
 Range: Both
-"Drink it. Don't ask what's in it. Drink it."
+"Don't wait for me to finish. Nothing ever finishes."
 ```
+
+**It is the only card in the game that unsticks his actual bottleneck.** Kevin is the one character whose free action is contested — reload, eat or drink, throw an orange, one per turn, every turn — and Chris's and Pat's sit idle. Nothing else relieves that: no card anywhere grants an extra free action, and `rules/combat.md` caps it at one per turn in as many words. That line now names this card as its exception, because **a card may break a rule when it says so on its face and may not break one quietly.**
+
+**The Defense Effect is the interesting half.** A free action otherwise exists only on your own turn, so ON THE FLY is the one way anybody takes one while being attacked — drinking Still Water for Ward and 3 HP *as the swing comes in*. Measured in the simulator: he blocks with it on a tie and drinks mid-exchange, which nothing else in the corpus can do.
+
+**And it pairs with MISE EN PLACE as its opposite.** Preparation against improvisation — the same broad-and-narrow split his two Passives already have, which is the shape this character keeps wanting.
+
+*Green because flexibility is what Green is for (`rules/cards.md`, What Each Colour Tends Toward), and Soul 2 + d6 is 5 expected — his weakest card by a distance, which is right for one played entirely for its text.*
+
+*An ally-movement card was the first idea and was scrapped: AWAKEN already does it (`cards/green-soul.md`), and a signature has no business reprinting something anyone can draft.*
 
 ---
 
@@ -346,8 +424,8 @@ Range: Both
 
 - Character name
 - **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
-- Which other fruits he's worked out, if any
-- **How many oranges a bandolier holds**, which is the one number the consumable does not answer
+- Which other fruits he's worked out, if any — **and whether anything but Burnrind can carry the grenade**, now that the orange has a specific plant behind it
+- ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
 - ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
 - **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
@@ -363,6 +441,7 @@ Range: Both
 
 - `bestiary/scorchback-beetle.md`, `flora/hush-bloom.md`, `bestiary/shockquills.md`, `bestiary/blowback-beetle.md` — the four seasonings that had to be built
 - `bestiary/sapphire-ant.md`, `places/capital/gilded-tusk.md` — the fifth, and Senshi
+- `flora/burnrind.md` — the citrus the incendiary orange is actually made of, and the only ingredient on this sheet that is free to take and hard to find
 - `campaign/chris.md`, `campaign/pat.md` — the other two player concepts from this session; Chris is the one he knows already
 - `campaign/passives.md` — MISE EN PLACE and SPLIT ATTENTION
 - `places/abyssal-ruins.md` — Gemstone University, where he reads culinary arts

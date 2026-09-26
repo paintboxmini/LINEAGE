@@ -102,6 +102,10 @@ A session in Tales Untold typically has:
 
 That last one is important. Not every question needs an answer by session's end. Not every threat needs to be addressed. The world has things happening in it that aren't about the players — and occasionally reminding them of that makes the world feel much larger.
 
+**How lethal a session should be: about one character death in twenty** *(set 2026-09-22)*. Not one fight in twenty — **one session**, across however many fights that session holds. At one or two fights a sitting that works out around 2.5–5% per fight, and it is the number encounters get measured against (`combat-simulations/encounter_budget.py`).
+
+*It is a budget rather than a promise, and it is deliberately low.* **A campaign where the dice bury somebody every few months is tense; one where they do it every few weeks is a campaign nobody gets attached to.** Downs are a different matter and should be common — going down is the cost that teaches, and a party that has never seen one has not been in a real fight yet.
+
 End of session, each player runs the Oracle ritual — a question answered, a card glimpsed and buried, a pick from three. That's the mechanical heartbeat. Everything else is negotiable. The Price step is worth running with intention: the buried card stays in the pool, and what a player glimpses and doesn't get is often what they start playing toward.
 
 The very first time this ritual runs — Session 0, character creation — deserves its own tone: see `quests/washed-ashore.md`, which is where Session 0 actually happens.

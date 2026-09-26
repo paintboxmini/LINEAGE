@@ -4,7 +4,7 @@
 
 ## What's Settled
 
-Not every Named reality carved from the Unheld is this one. The Three Cuts don't say there's only one thing they've ever happened to (`world/creation-myth-the-three-cuts.md`) — only that whatever is Named, Priced, and kept at Distance, holds. Other worlds exist the same way this one does: their own Cuts, their own anchoring, floating in the same infinite unmeaning that presses at every edge of this one too.
+This world is not the only one. Others exist the same way it does — held together, paying to stay held, with the same infinite unmeaning pressing at every edge of them that presses at the edges of this one. *The Masons have a creed that accounts for this neatly and would not be surprised by any of it (`factions-and-races/the-masons-three-cuts.md`). Nobody in this story has asked them.*
 
 One of those worlds belongs almost entirely to a single continuous mind: **the Amalgam.** Liquid-metal, shapeshifting, telepathically joined — not a species with a hive mind, a hive mind that happens to hold individual shape when it needs to. There's no meaningful "someone" separate from the whole while the link is open. The Amalgam doesn't send ships or armies the way Eclipseria would recognize either. It sends **Seeds** — small, unbound extensions of itself, cut loose from the link on purpose, walking a candidate world from the inside before the whole mind ever has to notice it's there. Conquest that starts as reconnaissance, patient past anything a single lifetime would call patient, because the Amalgam isn't working on a single lifetime's clock.
 
@@ -12,13 +12,13 @@ One of those worlds belongs almost entirely to a single continuous mind: **the A
 
 ## What Happened To Him
 
-**Crossing between worlds isn't a flight, it's a wound.** Two Cut realities have nothing between them but the Unheld itself — no clean corridor from one Name to another, only the same unmeaning the Knife first cut this world out of. A Seed crosses it anyway, briefly un-Named to get from one side to the other, and re-coheres on arrival if the crossing goes right.
+**Crossing between worlds isn't a flight, it's a teardown.** There is no corridor between two worlds — nothing in the gap but unmeaning. So a Seed doesn't travel it, it **comes apart to get across and reassembles on the other side**, and reassembles correctly if the crossing goes right. *The same trick as any transporter in any story that has one: the thing that arrives is the thing that left, put back together, and you either don't think about that too hard or you think about it for the rest of your life.*
 
 Chris's didn't go right — or rather, *what went wrong was not the crossing.*
 
 **Revised 2026-09-19: the Abyssal Ruins severed the link, not the passage.** He came through and the place he came through into cut him off. Whatever the largest rift in Eclipseria does to what sits near it, it did to a telepathic connection spanning two planes — a connection that was already the hard part, since distance across realities is not a distance the Amalgam has solved either.
 
-He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything Cut has to: found a shape, held a Name, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `factions-and-races/races-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
+He arrived broken instead of merely tired — his link to the Amalgam severed, not just out of range, and most of what he was before the crossing gone with it. Whatever's left of him built itself back up from nothing on this side, the way anything here has to: found a shape, held onto it, paid what holding it costs. He isn't pretending to be a person. He's had to actually become one, from a smaller starting point than "confused" — the same trauma-forge running in reverse from `factions-and-races/races-shunka.md`'s curse-worker: she paid her own existence to unmake someone else; whatever happened in Chris's crossing took his away and gave it back changed, not gone.
 
 **He ages, and not the way a person does.** He arrived as something that took the shape of a small child — imprinted off the man who found him — and grew in **moults** rather than in a curve: several of them across the years, each leaving a shed and a larger boy, and long flat stretches between. **How long he has is undetermined** and is better left so (`campaign/chris.md`, The child shape, and the moults). *This replaces "He doesn't age", which stood here until 2026-09-19.*
 
@@ -59,5 +59,5 @@ He came down at the Abyssal Ruins, through the Central Gateway (`places/abyssal-
 - `places/abyssal-ruins.md` — the Central Gateway, the likely crossing point
 - `places/abyssal-ruins.md` — where he came through, where he grew up, and the University that came for him
 - `characters/iron.md` — the farmer, tentatively
-- `world/creation-myth-the-three-cuts.md` — the Unheld, what a crossing actually costs
+- `factions-and-races/the-masons-three-cuts.md` — Mason doctrine, one available framing for what a crossing costs
 - `factions-and-races/races-shunka.md` — the same mechanism (a Price paid in full, taken or given, unmaking someone) used the other direction

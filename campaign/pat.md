@@ -28,7 +28,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-**What he can plausibly get out of it is an explanation rather than a cure.** A Price paid in full doesn't undo on request — stated cosmology, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+**What he can plausibly get out of it is an explanation rather than a cure.** A cost paid in full doesn't undo on request — that's how the world works, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
 
@@ -64,6 +64,58 @@ Still open:
 
 - **Survival +2**
 - **Animal Handling +2**
+
+## Gear and coin
+
+**He owns nothing yet, and that is a statement about the sheet rather than about him** — gear simply has not been worked on (the note at the top of this file). Everything below is the correction for that, not a decision about who he is.
+
+**Starting gold: 40.** The maximum anybody starts with, and he gets it because he came out of creation with less on him than anyone at the table (`rules/equipment.md`, Starting Gold). *It is one session's pay in the first band, which means it buys supplies and cannot reach the gear ladder — a Tier 1 accessory is 100 and stays 100.*
+
+**At the Nest that is four things off a counter.** Dockhook Lines and Low Lanterns run 10 apiece and the dock foodstuffs are 5 to 8 (`items/vultures-nest-items.md`). **He is the one character who arrives with shopping to do**, which is a good thing for a first session rather than a hole in the sheet.
+
+**The fiction is a soldier's savings and it needs no more work than that.** Son of a Captain, years in the ranks, officer school in his twenties — a man who was paid for two decades and then left. *Of the three, his is the background where having some money on him requires no explanation at all.*
+
+**He wants one object, and it is the right one.**
+
+### The scrap
+
+**A scrap of cloth off the original cursegiver, and it still carries a faint smell.**
+
+**No slot, no bonus, no rules on it** — the same standing as Chris's spell book (`campaign/chris.md`, The spell book). It is not an accessory and should never be priced. *It does not make him better at anything. It makes one thing possible that is otherwise not possible at all, which is a gate rather than a bonus (`flora/README.md` for the principle, though this is nobody's plant).*
+
+**Why it still smells, which is the whole object.** The cursegiver was not killed. She was **unmade — "as though never Cut at all"** (`factions-and-races/races-lizardkin.md`, The Cursegivers), which means not killed but made never to have been legible. So her own family cannot produce her name or her face; they inherited a technique from a person they are constitutionally unable to describe.
+
+**A smell is not legible.** It is not a name, not a face, not a symbol — it is residue, and the unmaking had no grip on it. **That is why one scrap of cloth outlasted a woman the world deleted**, and why it is faint: it is the last of something reality no longer keeps a slot for.
+
+*Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
+
+### What it actually does at the table
+
+**It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).
+
+**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.*
+
+**What it does is confirm.** Family scent carries. Put Pat in a room with the bloodline and **he knows — no roll**, because the alternative is a die deciding whether the campaign's spine is findable. *Until then it tells him nothing, which is most of the year.*
+
+**The roll is for everything past yes.** How recently, how many, which way they went, whether this is the one or a cousin — that is where **Survival +2** earns its place, and it is a real check with a real failure that costs nothing load-bearing.
+
+### What it is worth to the people he is hunting
+
+**They cannot describe their own ancestor, and he is carrying her.** A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
+
+*So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
+
+**Deliberately not being tracked yet** *(Drew, 2026-09-21)*. That meeting is far enough out that maintaining it as a live thread would cost more than it is worth, and a consequence this clean does not decay from being left alone. **It is written down so it is here when the meeting gets close, not so anyone carries it in the meantime.** *Nothing between now and then needs to be arranged for it. If the scrap survives and the bloodline turns up, the trade is simply available.*
+
+### Where he got it — settled
+
+**His mother's line.** *Confirmed 2026-09-21 — Pat had already said so, and it was the reading this file arrived at independently.*
+
+Generations of Shunka who turned to wild magic trying to break the curse, and failed (`factions-and-races/races-shunka.md`). **A failed research tradition keeps its samples.** They had a piece of her, they kept it, and it came down matrilineally with everything else he carries.
+
+*Which ties the object to the hook this file already calls the real one — his mother's side, not royal blood. **The cemetery gave him a direction. His mother's people gave him the only thing that can tell him when he has arrived.** The vision is what sent him; the scrap is what his own family had been holding the whole time, against the day somebody could use it.*
+
+**Still open beyond the scrap:** what he carries out of Shunka service, and whether anything else of his mother's came with him. **He has asked for one item and one item is an answer**, not a gap — a man who left with a single object is a clearer character than a man with a packing list.
 
 ## Deck
 

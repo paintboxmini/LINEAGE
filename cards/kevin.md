@@ -38,13 +38,13 @@ Range: Ranged
 
 ---
 
-**SERVE**
+**ON THE FLY**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Give a prepared drink to an ally in your position. They consume it immediately.
-Defense Effect: Consume a prepared drink yourself.
+Effect: Take a free action. This is in addition to your one for the turn.
+Defense Effect: Take a free action. This is in addition to your one for the turn.
 Range: Both
-*"Drink it. Don't ask what's in it. Drink it."*
+*"Don't wait for me to finish. Nothing ever finishes."*
 
 ---
 
@@ -53,3 +53,4 @@ Range: Both
 - `campaign/kevin.md` — the character, the craft, the loads and the drinks
 - `campaign/passives.md` — MISE EN PLACE and SPLIT ATTENTION
 - `rules/card-glossary.md` — Vulnerable (2), Unpreventable (5)
+- `rules/combat.md`, Free Actions — the one-per-turn cap ON THE FLY is the exception to

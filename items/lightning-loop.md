@@ -1,6 +1,6 @@
 # The Lightning Loop
 
-*Resonant item. Storm Seat aligned. Currently in Kaine's possession.*
+*Resonant item. Aligned to Vitality and Destruction — the Storm Seat, as most people call it (`world/seats.md`). Currently in Kaine's possession.*
 
 ---
 
@@ -40,4 +40,4 @@ If the party takes the ring, they hold something Storm Seat-aligned that grants 
 ## Open
 
 - Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`world/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)
+- Does this Seat have a bearer the way Love and Binding has Aurora? **Nothing establishes one.** The Seat is listed as **Vitality and Destruction**, with Storm as its common name (`world/seats.md`), and its Named Archons line is empty. The only candidate anywhere is a line in `characters/kaine.md`: *"Does the Storm Seat have a bearer? Greed could play a role in future development. Perhaps if Dakota plays he can receive the lightning loop."* That is a maybe resting on a player who may or may not join, not a fate already written for Greed. Whether Kaine's claim on this ring relates to any of it is unanswered too.
