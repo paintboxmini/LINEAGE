@@ -165,9 +165,19 @@ What the kit delivers so far:
 
 ***This is where it collides with his own Trait and it is the good part.***
 
-**Mimicry copies the surface of a person he has looked at** (Trait — Mimicry, below). He has never seen the man whose papers these are. **So the one character at this table who can become anybody is carrying an identity he specifically cannot wear.**
+**Mimicry copies the surface of a person he has looked at** (Trait — Mimicry, below) — *a person, in front of him.* He has never seen the man whose papers these are. **So the one character at this table who can become anybody is carrying an identity he specifically cannot wear.**
 
-*He passes a glance. He does not pass anybody who knew the original.*
+**And there is a likeness on the document**, which turns that from a background irony into a problem he had to solve two months ago. A paper carrying a name and nothing else would be the easier version — he could simply be a man with a name. The likeness makes it a face he has to match, and **Mimicry cannot copy a picture.** The Trait runs off somebody he actually looked at; a printed face is not a person, and there is nothing behind it to look at. *The papers arrive carrying a face he cannot take from them.*
+
+**So he found a man in the Nest who resembles it.** Somewhere in Vulture's Nest is a living stranger who looks close enough to the likeness to survive a glance at it, and Chris went and looked at him properly — *which is exactly the thing the Trait rewards* (What it can't do, below: a studied copy holds up, a glanced-at one is wrong in ways he cannot find). **The face Chris wears with those papers belongs to neither the man on the document nor to Chris.**
+
+**Three men and one name.** The one who owns it and was robbed for it. The one whose face Chris is wearing, who has nothing to do with any of this and was never asked. And Chris in the middle, holding a true document and a borrowed face that did not come from the same person and only ever have to agree with each other closely enough.
+
+*Left open on purpose:* whether the lookalike knows — **nothing in the Trait requires his permission or his awareness** — whether he is still in town, and whether anybody has ever seen the two of them in one place. **Two men with one face, in a town three streets deep against a cliff, is a thread that eventually gets pulled** (`places/vultures-nest.md`).
+
+*He passes a glance. He does not pass anybody who knew the original — and he does not pass anybody who knows the man he copied either,* which is the second failure mode and the newer one. **That is what the DC 16 row below is for.**
+
+**One thing this asserts that the repo has not settled:** that identification papers carry an image at all. *The mechanic is the same whether it is a photograph, a plate or a painted likeness* — what matters is that it is a picture rather than a person. But a world that can put a face on a document can also put a face on a notice, and the people looking for Chris would be the first to use it, so the answer is worth having before somebody needs it (Not Yet Set, below).
 
 ### When somebody asks — the check
 
@@ -212,6 +222,8 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 ### What it can't do
 
 **It copies surface, and nothing else.** Face, build, posture, the hang of a limb. Not what someone knows, not how they behave, not the thousand small habits that make a person legible to people who know them. **The Trait gets him through a door. Performance is what keeps him in the room**, and when that fails it fails in conversation rather than in the mirror.
+
+**It has to be a person, not a picture.** A face on a document or a notice gives him nothing — there is no surface behind it to read, only somebody else's rendering of one. *To wear a face he has only seen drawn, he has to go and find a living person who looks like the drawing* (Two months in the Nest, above, which is exactly what he did).
 
 **He remembers surfaces, not people.** Not a time limit and not perfect recall — what he keeps is exactly what he actually looked at. Someone he studied gives him a copy that holds up under attention. Someone he glanced at across a market gives him one that is wrong in ways he cannot identify and cannot fix, because he doesn't have the missing information to know it's missing. *This is the good version of the restriction: it rewards going and looking properly, and its failures are interesting rather than arbitrary.*
 
@@ -407,7 +419,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
-- Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost
+- Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **One candidate answer, raised 2026-09-26 and not adopted: require touch rather than sight.** It makes every copy a scene, it makes the imprint the same act as everything else — the man who picked him up was *holding* him — and it would be a restriction standing in for a Price. It also costs him creature copies, which are half of why Nature is on the sheet. **Chris's call**
+- **Whether identification papers in this setting carry an image**, and what kind (The papers describe somebody, above). Nothing else in the repo says. A world that can reproduce a face on a document can reproduce one on a notice, which reaches further than one set of papers
 
 ## Related Documents
 
