@@ -147,13 +147,52 @@ What the kit delivers so far:
 
 *That reading is a suggestion. The book is Chris's, including whether it is his father's at all.*
 
-### Starting gold — 25, and it is not his
+### Two months in the Nest, and a name that is not his
+
+*Set 2026-09-27, Chris's call at the table. No roll — Drew gave it to him.*
+
+**He and Kevin have been at Vulture's Nest a couple of months** when session one opens. Long enough to have found the Red Scarves (`places/vultures-nest.md`), and long enough to have bought what a man on the run needs first.
+
+**He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and the Scarves lifted a purse with the papers still in it.
+
+**Eight gold**, off a starting purse of 25 (Starting gold, below).
+
+**And it is cheap because of who was selling.** The Scarves are dock kids running a theft operation. Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Chris walked in.* Eight gold is a very good week for a fifteen-year-old and a third of everything Chris had, and both of those are true at once, which is what a fair price looks like when nothing is on a shelf.
+
+**What the Scarves know, and what they do not.** *They know the papers were not his.* They sold them to him; there is no version where that is a secret. **They do not know who he actually is** — not his real name, not the University, not what he is. To them he is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about this makes Kino a threat. It makes him someone who knows one true thing.*
+
+### The papers describe somebody, and Chris cannot be them
+
+***This is where it collides with his own Trait and it is the good part.***
+
+**Mimicry copies the surface of a person he has looked at** (Trait — Mimicry, below). He has never seen the man whose papers these are. **So the one character at this table who can become anybody is carrying an identity he specifically cannot wear.**
+
+*He passes a glance. He does not pass anybody who knew the original.*
+
+### When somebody asks — the check
+
+**The papers are not what gets checked.** They are real, so a ledger-keeper reading the document finds a valid document and stops. **What cannot be read off the paper is whether the man holding it is the man named on it** — so the test is never the forgery, it is the conversation. *Where is that from. How long have you held it. Say the name again.*
+
+**Roll a check, and the stat is negotiable as always** (`rules/resolution.md`, Core Resolution). **Mind** to keep a story straight under questions he did not prepare for. **Soul** to hold his nerve and not flinch at his own borrowed name. **Performance +2 applies either way** — it is a skill tag rather than a stat, and it is on his sheet for exactly this: *the Trait gets him the face, and Performance is what keeps him in the room.*
+
+**Not Deception.** He does not have it, and it is the wrong shape anyway — nothing here is a lie he invented. He is holding a true document and standing in for a real man.
+
+| | |
+|---|---|
+| **In the crush of the lockdown** | **DC 13.** Jonas has a shut dock, a held barge and days of it, and Chris is one of a hundred people he has to get through |
+| **If Jonas has a reason to look twice** | **DC 16** |
+
+**Failing does not mean arrest, and that is worse.** Jonas is a ledger-keeper and a Regency informant who cross-references his own count against Quartermaster Voss's intake reports at Eclipseria South Gate (`places/vultures-nest.md`). **He does not grab anybody. He writes it down.** *A failed check hands the table nothing on the night and arrives, correctly, several sessions later.*
+
+### Starting gold — 17, and it is not his
 
 **He left in the night with what he could carry and none of it was money** (The Night They Ran, above). The book is the one physical thing, and it is flavour with no rules on it.
 
-**So the 25 is Kevin's** (`campaign/kevin.md`). Kevin chose the port, Kevin's family name is what opened a berth, and Kevin is the one hiding him — the money Chris has is money Kevin has been spending, and whatever he is wearing was bought for him. *That is an inference from what both sheets already say rather than a new fact, and it is offered rather than set: **whether Chris is carrying Kevin's coin or scraped together his own is Chris's player's call**, and the number does not change either way.*
+***25 to begin with, less 8 for the papers, so he sits down with 17.***
 
-**Why 25 and not 40.** By background he is the poorest person at the table by a distance, and by sheet he is the second-emptiest (`rules/equipment.md`, Starting Gold). *Those pull opposite ways, and 25 is where they meet — enough to buy two things at a dock counter, not enough to look like anyone planned for him.*
+**And the money is Kevin's** (`campaign/kevin.md`). Kevin chose the port, Kevin's family name is what opened a berth, and Kevin is the one hiding him — the money Chris has is money Kevin has been spending, and whatever he is wearing was bought for him. *That is an inference from what both sheets already say rather than a new fact, and it is offered rather than set: **whether Chris is carrying Kevin's coin or scraped together his own is Chris's player's call**, and the number does not change either way.*
+
+**Why 25 and not 40**, before the papers took their cut. By background he is the poorest person at the table by a distance, and by sheet he is the second-emptiest (`rules/equipment.md`, Starting Gold). *Those pull opposite ways, and 25 is where they meet — enough to buy two things at a dock counter, not enough to look like anyone planned for him.*
 
 **It buys nothing that matters and that is correct.** Chris's power is on his cards, his Passives and a Trait that costs nothing. **He is the one character at this table who loses least by being broke**, which is worth knowing before anybody feels bad about the number.
 
@@ -361,6 +400,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **Whether the moults are finished**, and what the sheds were made of
 - **What the spell book is** — whose, and what is in it
 - **What the University wanted to make him into**, in any detail beyond "a weapon"
+- **Whose papers Chris is carrying.** *Deliberately open* (Two months in the Nest, above). Somewhere there is a real person who owns that name — robbed on a dock a couple of months ago, and since then either gone home, still in town, wanted for something of their own, or dead. **Every one of those is a different thread and none of them needs deciding until somebody pulls it.** Kino knows whose purse it came out of
+- **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
