@@ -74,11 +74,17 @@ detail.** More explanation in the same vocabulary is the wrong repair.
 
 - `factions-and-races/races-sirens.md` — **reserved, Ollie's.** Her working file is `experimental/ollies-island.md`
 - `factions-and-races/races-fairies.md` — **reserved, Sophie's.** Nothing approved, the name included
-- `campaign/` — each file belongs to the player it's about; they get the final say
+- `campaign/` — each file belongs to the player it's about, **for the fiction.** See the split below
 
 Don't draft into a reserved slot, don't resolve a naming question that belongs to its owner, and don't move their material.
 
 **Don't write ahead of player choice.** Sketch what a place or a person is; don't decide what the party will do there.
+
+**The fiction is the player's. The mechanics are not** *(2026-09-26)*. A player owns who their character is, what they want, what they are afraid of, and what they want to be able to *do* — that is their job, and it is the whole reason the character is any good. **Designing the rule that delivers it is Drew's job, and an agent's working for him.** A player's mechanical proposal is **input, and wanted** — take it seriously, then design it properly. Don't hand a rules call back to them as "their call."
+
+*Two reasons it works this way, and the second is the load-bearing one.* **The game has to stay balanced**, and only somebody looking at the whole pool can see that. And **the game has to outlive any one character** — other people play, and a rule written to satisfy one sheet is a rule the next table inherits.
+
+*The known failure mode, and it has already happened here:* a player given the rules and asked to design cards came back with D&D mechanics wearing this game's card layout. **The card names and the flavour text were good and are still in use. Everything mechanical on them was invented whole and had to go.** Which is exactly the division of labour above, arrived at the expensive way.
 
 ---
 

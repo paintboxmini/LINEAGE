@@ -169,7 +169,9 @@ What the kit delivers so far:
 
 **And there is a likeness on the document**, which turns that from a background irony into a problem he had to solve two months ago. A paper carrying a name and nothing else would be the easier version — he could simply be a man with a name. The likeness makes it a face he has to match, and **Mimicry cannot copy a picture.** The Trait runs off somebody he actually looked at; a printed face is not a person, and there is nothing behind it to look at. *The papers arrive carrying a face he cannot take from them.*
 
-**So he found a man in the Nest who resembles it.** Somewhere in Vulture's Nest is a living stranger who looks close enough to the likeness to survive a glance at it, and Chris went and looked at him properly — *which is exactly the thing the Trait rewards* (What it can't do, below: a studied copy holds up, a glanced-at one is wrong in ways he cannot find). **The face Chris wears with those papers belongs to neither the man on the document nor to Chris.**
+**So he found a man in the Nest who resembles it.** Somewhere in Vulture's Nest is a living stranger who looks close enough to the likeness to survive a glance at it, and Chris went and looked at him properly — *which is exactly the thing the Trait rewards.* **The face Chris wears with those papers belongs to neither the man on the document nor to Chris.**
+
+**He studied that man. He never touched him** (What it can't do, below: the ladder is glanced / studied / touched). *Which is the middle rung, and the right one* — the papers only ever had to survive somebody glancing between a picture and a face, and finding a reason to get a hand on a stranger you are quietly following is a harder thing to have done. **So the face is free against strangers and costs a check against anybody who knows the lookalike.** If Chris ever wants the top rung on it, he has to go back and get close, *and that is a scene available any night he wants it.*
 
 **Three men and one name.** The one who owns it and was robbed for it. The one whose face Chris is wearing, who has nothing to do with any of this and was never asked. And Chris in the middle, holding a true document and a borrowed face that did not come from the same person and only ever have to agree with each other closely enough.
 
@@ -225,13 +227,27 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 **It has to be a person, not a picture.** A face on a document or a notice gives him nothing — there is no surface behind it to read, only somebody else's rendering of one. *To wear a face he has only seen drawn, he has to go and find a living person who looks like the drawing* (Two months in the Nest, above, which is exactly what he did).
 
-**He remembers surfaces, not people.** Not a time limit and not perfect recall — what he keeps is exactly what he actually looked at. Someone he studied gives him a copy that holds up under attention. Someone he glanced at across a market gives him one that is wrong in ways he cannot identify and cannot fix, because he doesn't have the missing information to know it's missing. *This is the good version of the restriction: it rewards going and looking properly, and its failures are interesting rather than arbitrary.*
+**He remembers surfaces, not people — and how good a copy is depends entirely on how he took it.** Not a time limit and not perfect recall. *What he keeps is exactly what he actually got.* **Three rungs, settled 2026-09-26:**
+
+| | |
+|---|---|
+| **Glanced at** | Across a market, in passing. The copy is wrong in ways **he cannot identify and cannot fix**, because he doesn't have the missing information to know it is missing. *A stranger costs him a check. Anybody who knows the person sees it* |
+| **Studied** | He went and looked properly, with time on it. ***Strangers are free.*** *Anybody who knows the person costs him a check* |
+| **Touched** | Contact, held. ***People who know them are free.*** *Only somebody who knows them intimately — shared a bed, raised them, fought beside them for years — costs him a check* |
+
+**Nobody is ever past noticing, at any rung.** The top of the ladder removes one specific way of being caught; it does not buy an unbeatable face. And **every rung fails in the same place** — in conversation, never in the mirror — because all three are still only surface. *Touch tells him nothing the man knows.*
+
+**What counts as touch.** Skin, deliberate, and long enough that the other person could have noticed it: a handshake he held, a hand on a shoulder, carrying somebody, dressing a wound, a body. **A brush in a crowd is not it.** *The rung is meant to cost him a scene* — getting a hand on a stranger for that long is something the table watches happen and something the stranger may remember afterwards. It runs on the same memory as looking, so he can take it tonight and wear it in ten years.
+
+**On creatures the ladder is identical, and the top rung is an adventure.** He can copy a Gollop he watched from cover, badly (`bestiary/gollop.md`). A Gollop he has had his hands on is either dead or that fight went extremely well, *and the copy is worth what it cost.*
+
+*Why it is built this way:* **the ladder buys fidelity, not power.** No rung adds anything he can do — each one removes a way of being found out. So the best version of the Trait is gated behind a risk taken in the fiction rather than a number on the sheet, which is the bargain every Passive in this game already makes.
 
 **He is a fixed quantity of metal.** He can be roughly his own mass. A child is hollow, something huge is too small, and neither works. Same constraint AMALGAMOUS FORM already runs on, where a standing structure costs his own HP to build.
 
 *Fixed at any moment, not fixed across his life.* He grew — in moults, across years (Where He Landed, above) — so the mass he is limited to today is not the mass he was limited to as a boy. What the moults added, and where it came from, is not written.
 
-**And the imprint is this Trait's deepest use, made before he could have known he was using it.** The human shape he wears is a copy: taken from the man who picked him up, held so long that whether it still counts as a copy is a real question rather than a rhetorical one. *Everything below about surfaces and attention describes what he does deliberately. The one that mattered most was involuntary.*
+**And the imprint is this Trait's deepest use, made before he could have known he was using it.** The human shape he wears is a copy: taken from the man who picked him up, held so long that whether it still counts as a copy is a real question rather than a rhetorical one. ***And it is a touched copy*** — the man **picked him up**. The deepest thing Chris ever took, he took by contact, before he knew either that he was taking it or that contact was the top of the ladder. *Everything below about surfaces and attention describes what he does deliberately. The one that mattered most was involuntary.*
 
 **It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
 
@@ -419,7 +435,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
-- Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **One candidate answer, raised 2026-09-26 and not adopted: require touch rather than sight.** It makes every copy a scene, it makes the imprint the same act as everything else — the man who picked him up was *holding* him — and it would be a restriction standing in for a Price. It also costs him creature copies, which are half of why Nature is on the sheet. **Chris's call**
+- Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - **Whether identification papers in this setting carry an image**, and what kind (The papers describe somebody, above). Nothing else in the repo says. A world that can reproduce a face on a document can reproduce one on a notice, which reaches further than one set of papers
 
 ## Related Documents

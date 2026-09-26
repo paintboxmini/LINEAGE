@@ -2,7 +2,9 @@
 
 **The characters this table is actually playing, and the world material that exists because of them.**
 
-The split against `experimental/`: experimental holds world lore that isn't settled yet. This folder holds work that belongs to a *player* — their character, their cards, their people, the thread that pulls them out of the house. It's unsettled too, but it's unsettled in someone's hands, and the person whose hands those are gets the final say on it.
+The split against `experimental/`: experimental holds world lore that isn't settled yet. This folder holds work that belongs to a *player* — their character, their cards, their people, the thread that pulls them out of the house. It's unsettled too, but it's unsettled in someone's hands, and the person whose hands those are gets the final say on it — **on the fiction.**
+
+**Fiction is the player's, mechanics are the GM's** *(2026-09-26)*. Who the character is, what they want, what they want to be able to do: theirs, and the reason any of these files are worth reading. **The rule that makes it work at the table is Drew's**, because balance is only visible from the whole pool and because the game has to outlive any one character. A player's mechanical idea is input and it is wanted — it gets taken seriously and then designed. *Chris asked for a touch restriction on Mimicry; the three-rung ladder it became is `campaign/chris.md`, What it can't do.*
 
 ## Contents
 
