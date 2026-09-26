@@ -19,9 +19,17 @@
 
 ## Description
 
-Fist-sized, pale-shelled, and numerous wherever the tideline deposits enough to eat. They don't distinguish between driftwood, dead fish, and anything else that's salt-wet and hasn't stopped moving yet — a party freshly washed ashore reads to a Wrackclaw exactly like the rest of the wrack line does.
+**Fist-sized, black-shelled, and numerous wherever the tideline deposits enough to eat.** *Black is the hide, not a warning* — they live in the wrack itself, in the band of dark rotting weed the tide leaves, and a black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
 
-They don't hunt so much as collect. A Wrackclaw doesn't need to kill what it's pinched — it needs to drag it back to the water, where the rest of the swarm is waiting. Losing a fight against Wrackclaws rarely means dying; it means getting pulled toward the surf one claw-length at a time until someone breaks the grip.
+**Spines stand out of the shell at every joint** — short, hard, angled back. They are not a weapon and the creature never uses them for anything. **They are why you cannot simply take hold of one and pull it off**, which is the only thing anybody ever wants to do to a Wrackclaw and the thing it is built to make expensive.
+
+**Two arms, like any crab. Three fingers on each claw.** *That is the part nobody notices from a distance and nobody forgets afterwards.* A normal claw is a hinge — two opposing fingers, one line of force, and a grip that can be levered apart by anything that finds the angle. **A three-fingered claw closes on itself from three sides. There is no angle.** *It does not have to be strong. It only has to not let go.*
+
+They don't distinguish between driftwood, dead fish, and anything else that's salt-wet and hasn't stopped moving yet — a party freshly washed ashore reads to a Wrackclaw exactly like the rest of the wrack line does.
+
+**They don't hunt so much as collect.** A Wrackclaw doesn't need to kill what it's pinched — it needs to drag it back to the water, where the rest of the swarm is waiting. Losing a fight against Wrackclaws rarely means dying; it means getting pulled toward the surf one claw-length at a time until someone breaks the grip.
+
+*And the grip is the whole animal.* Everything on it serves holding on and nothing serves killing: three fingers so it cannot be levered, spines so it cannot be gripped back, a shell the colour of the thing it is lying in so the first you know of it is the weight. **A creature this weak is only a threat because it will not come off** — and because there are a great many of them, all pulling the same way.
 
 ---
 
@@ -101,7 +109,7 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 
 **2. That contradicts this file's own fiction.** *"Losing a fight against Wrackclaws rarely means dying"* is written above, and the engine disagrees with it. **The fiction is the better of the two** and the cheapest fix is already in it: they are **collectors, not killers**. A Wrackclaw that has pinned something has got what it came for and stops attacking it — which would end the focus-fire on a Downed character, which is where every one of those deaths comes from.
 
-**3. ~~Every Defense Effect is Gain Evade~~ — fixed 2026-09-22.** Drew's call on theme, and it was the right read: a pale-shelled thing that clamps on and hauls is **armoured, not quick**. **PINCH braces behind the shell (Resist). CARRION PULL keeps a claw between you and it (Thorns 1). SIDELONG SCUTTLE keeps the Evade**, because that card is literally about moving sideways and a creature is allowed one dodge if it is the one it actually has.
+**3. ~~Every Defense Effect is Gain Evade~~ — fixed 2026-09-22.** Drew's call on theme, and it was the right read: a thing that clamps on and hauls with spines all over it is **armoured, not quick**. **PINCH braces behind the shell (Resist). CARRION PULL keeps a claw between you and it (Thorns 1). SIDELONG SCUTTLE keeps the Evade**, because that card is literally about moving sideways and a creature is allowed one dodge if it is the one it actually has.
 
 **The split made the fight safer, which was not the point of it but is worth understanding.** Evade auto-wins the whole exchange half the time; Resist and Thorns only blunt one. Three Evades was the creature's strongest possible defensive loadout, so trading two of them for weaker ones shortens the fight and cuts the damage the party eats on the way.
 

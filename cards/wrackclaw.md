@@ -2,7 +2,7 @@
 
 Signature cards for the Wrackclaw. See `bestiary/wrackclaw.md`.
 
-**All three used to grant Evade on defence. Split 2026-09-22**, because a pale-shelled thing that clamps on and hauls is armoured rather than quick, and because three identical defences gave the creature no defensive decision and the party nothing to read. **Evade stayed on the one card that is literally about moving sideways.**
+**All three used to grant Evade on defence. Split 2026-09-22**, because a spined thing that clamps on and hauls is armoured rather than quick, and because three identical defences gave the creature no defensive decision and the party nothing to read. **Evade stayed on the one card that is literally about moving sideways.**
 
 ---
 
