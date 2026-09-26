@@ -415,13 +415,13 @@ Range: Melee
 
 ---
 
-**CORNER**
+**THINK TWICE**
 BLUE — MIND
 Attack: Mind + d8
-Effect: Neither you nor the defender may change position until your next turn.
-Defense Effect: Neither you nor the attacker may change position until your next turn.
+Effect: Each time the defender changes position before your next turn, they take 3 damage.
+Defense Effect: Each time the attacker changes position before your next turn, they take 3 damage.
 Range: Melee
-*"Now it is only the two of us, and only this much room."*
+*"Go on, then. It is not free."*
 
 ---
 

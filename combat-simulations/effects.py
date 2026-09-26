@@ -1522,6 +1522,15 @@ def _r_pressure(m):
                      uses=1, data={'color': 'just_played'})]
 
 
+@menu(r'^each time the (?:defender|attacker) changes position before your '
+      r'next turn, they take (\d+) damage')
+def _r_think_twice(m):
+    from engine import MOVE_COSTS
+    n = int(m.group(1))
+    return [Restrict(MOVE_COSTS, OPPONENT, f'moving costs {n}',
+                     data={'damage': n, 'who': 'actor'})]
+
+
 @menu(r'^neither you nor the (?:defender|attacker) may change position until '
       r'your next turn')
 def _r_corner(m):

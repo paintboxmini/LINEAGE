@@ -13,7 +13,7 @@
     cleared, on the bench    42
     middle tier              37
 
-  every card in cards/      386   (Red 136, Blue 117, Green 129, colourless 4)
+  every card in cards/      387   (Red 136, Blue 118, Green 129, colourless 4)
 
 ## Print artifacts
 

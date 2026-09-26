@@ -164,7 +164,14 @@ SETS = {
             'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
             'LAST RESORT', 'MARKED', 'CHAIN', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
-            'INTERCEPT', 'REALIGNMENT', 'CORNER', 'SIDESTEP', 'DISTRACT',
+            # 2026-09-26: CORNER left the player pool entirely, to the
+            # Minotaur. Its fiction needs a wall and a starting deck never
+            # gets to pick the room (`rules/cards.md`, A card that needs
+            # terrain belongs to whoever picks it). Blue's melee bench was
+            # TAINT, UNNAME and UNRAVEL, all three barred, so the seat could
+            # not be filled from the bench and THINK TWICE was written for
+            # it — same d8, so Blue melee's mean die does not move.
+            'INTERCEPT', 'REALIGNMENT', 'THINK TWICE', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
             # off it; the green pass put it back by swapping GIVE WAY (both)

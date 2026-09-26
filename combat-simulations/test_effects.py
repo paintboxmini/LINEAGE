@@ -1139,6 +1139,23 @@ def test_position_lock():
     check('and both are free once it expires', a.set_position(BACK) is True)
 
 
+def test_move_toll():
+    print('\nTHINK TWICE prices the move instead of forbidding it')
+    a, b = duo()
+    run('Each time the defender changes position before your next turn, '
+        'they take 3 damage.', a, b)
+    before = b.hp
+    check('the move is allowed', b.set_position(BACK) is True)
+    check('and it cost 3', b.hp == before - 3)
+    check('and it costs again on the way back',
+          b.set_position(FRONT) is True and b.hp == before - 6)
+    check('the caster pays nothing', a.hp == a.max_hp)
+    a.expire_pending()   # 'before your next turn' is the caster's turn
+    before = b.hp
+    check('and moving is free once the caster comes round again',
+          b.set_position(BACK) is True and b.hp == before)
+
+
 def test_grounding_stance():
     print('\nGROUNDING STANCE ignores a forced move, not a chosen one')
     a, b = duo()
@@ -1684,6 +1701,7 @@ if __name__ == '__main__':
     test_expiry_is_owner_keyed()
     test_colour_ban()
     test_position_lock()
+    test_move_toll()
     test_grounding_stance()
     test_seed_is_placed()
     test_defense_effects_silenced()

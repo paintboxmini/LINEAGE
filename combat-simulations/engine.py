@@ -75,6 +75,7 @@ MUST_TARGET = 'must_target'      # must attack a named combatant if able
 SKIP_DRAW = 'skip_draw'
 IGNORE_FORCED_MOVE = 'ignore_forced_move'
 WOUND_INSTEAD = 'wound_instead'  # next attack wounds rather than damages
+MOVE_COSTS = 'move_costs'        # moving is allowed and charges damage
 
 
 class Combatant:
@@ -262,6 +263,8 @@ class Combatant:
             return False
 
         # CORNER and friends: a restriction that simply forbids it.
+        # CORNER is the Minotaur's card since 2026-09-26, not a player's;
+        # the engine matches on the text, so nothing here moved with it.
         locked = self.restriction(NO_MOVE)
         if locked is not None:
             if log:
@@ -287,6 +290,14 @@ class Combatant:
         if log:
             log(f'  {self.name} moves to the {dest}.')
         self.break_anchors(log=log, reason='moved')
+
+        # THINK TWICE: the move is legal and it costs. Charged after the
+        # move, every time, for as long as the restriction is in force —
+        # NO_MOVE forbids, this one prices.
+        toll = self.restriction(MOVE_COSTS)
+        if toll is not None:
+            self.take(toll.data.get('damage', 0), source=toll.data.get('who'),
+                      log=log)
         return True
 
     def break_anchors(self, log=None, reason='moved'):

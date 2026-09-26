@@ -111,6 +111,16 @@ Cards excluded by this rule are still perfectly good cards; they belong in creat
 
 **Legal is not the same as early.** This rule bars what a starting deck may never do; it does not settle whether a legal card is right for players still learning the reveal. The cards cleared for a first campaign, the screen they were cleared against, and the ones that failed it are in `rules/early-campaign-cards.md`.
 
+### A card that needs terrain belongs to whoever picks it
+
+*Added 2026-09-26, off CORNER.* **A card whose fiction only makes sense in a particular kind of place is not a starting card, however clean its mechanics are.** You cannot corner somebody in a field. CORNER read `Neither you nor the defender may change position until your next turn` — nothing in that text mentions a wall, and it needs one anyway, because the *fantasy* is a wall and without one the card is a player asserting an architecture the fight does not have.
+
+**The test is who chooses the ground, and the party never does.** A player drafts a deck and then gets handed a dock, a clearing, a market, a corridor — whatever the session is about. **A creature is written into its own habitat**, so a card that needs a corridor is always on for the thing that lives in the corridor and picks its fights there. CORNER is the Minotaur's now (`cards/minotaur-coil.md`, `bestiary/minotaur.md`) — same text, same die, a creature that fights in corridors by choice and never in chambers.
+
+**This is a bar on the fiction, not on the mechanics**, which makes it the one screen a reading of the card text alone will miss. *Checked across all three colour lists and the colourless three on 2026-09-26: CORNER was the only card that failed it.* CLIMB comes closest and passes — the name and the flavour are about high ground, but the card is `Move to the Backline. Anchored` and asks nothing of the room.
+
+**The disposition is different from a tier move, and that matters.** The middle tier means *later* — a card a table meets when it is ready (`cards/tiers/README.md`). This says *not a player card at all*, and it sends the card to a stat block instead of to a list. **SEED was the first one out on these terms** and went to a character rather than a creature (`cards/chris.md`); CORNER is the second, and the first to go to the bestiary.
+
 **The deck comes in two sets, 63 cards then 21.** The original prints as `oracle`; the expansion prints separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
 
 <!-- print:skip-start -->
@@ -122,7 +132,7 @@ Twenty-one cards were written on 2026-09-08 as an expansion, before the bench-fi
 <!-- print:skip-end -->
 
 <!-- print:skip-start -->
-Nine more still sit as bench — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND and ANCHOR in Red; DECODE and REDIRECT in Blue; ENTREAT in Green — and three failed the early-campaign screen (UNRAVEL, PROBE and INVERT, in `cards/tiers/middle.md`). Of the shapes the batch carried that the pool had never held, INVERT's Effect-cancelling is the one now barred from a starting deck; CORNER's mutual position lock, CHANNEL's three-way choice and CONFRONT's Green Counter Attack are all seated.
+Nine more still sit as bench — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND and ANCHOR in Red; DECODE and REDIRECT in Blue; ENTREAT in Green — and three failed the early-campaign screen (UNRAVEL, PROBE and INVERT, in `cards/tiers/middle.md`). Of the shapes the batch carried that the pool had never held, INVERT's Effect-cancelling is the one now barred from a starting deck; CHANNEL's three-way choice and CONFRONT's Green Counter Attack are both seated. **CORNER's mutual position lock held a seat for nine days and left the player pool entirely on 2026-09-26** — it is the Minotaur's card now (A card that needs terrain belongs to whoever picks it, above), and **THINK TWICE** was written for the Blue melee seat it vacated.
 <!-- print:skip-end -->
 
 ---

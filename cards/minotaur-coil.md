@@ -58,6 +58,16 @@ Range: Ranged
 
 ---
 
+**CORNER**
+BLUE — MIND — COIL
+Attack: Mind + d8
+Effect: Neither you nor the defender may change position until your next turn.
+Defense Effect: Neither you nor the attacker may change position until your next turn.
+Range: Melee
+*"Now it is only the two of us, and only this much room."*
+
+---
+
 **BOUND TO THE STONE**
 GREEN — SOUL — COIL
 Attack: Soul + d4
