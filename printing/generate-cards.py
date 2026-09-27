@@ -490,11 +490,11 @@ SETS = {
         # note below travels with SHARED BURDEN and still stands.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
-            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
+            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S FOLLY",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
-            'UNDERSTANDING', 'PROFILE', 'MATCHED PAIR', 'RETORT',
+            'PIECE TOGETHER', 'PROFILE', 'MATCHED PAIR', 'RETORT',
             'PARRY', 'FOCUSED STANCE',
             'SLIPSTREAM',
             # Green (7) — both 4 / ranged 2 / melee 1

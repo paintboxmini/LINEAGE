@@ -112,7 +112,7 @@ Range: Ranged
 
 ---
 
-**GAMBLER'S RUIN**
+**GAMBLER'S FOLLY**
 RED — BODY
 Attack: Body + d4
 Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)

@@ -632,7 +632,7 @@ def d(sides, rng=random):
 def _roll_die(sides, rng, explode=0):
     """One die, exploding on odd results while rolls remain.
 
-    GAMBLER'S RUIN: "every odd die result explodes — roll it again and add
+    GAMBLER'S FOLLY: "every odd die result explodes — roll it again and add
     to the damage. (Max 3 extra rolls.)"
     """
     total = d(sides, rng)

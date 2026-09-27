@@ -1253,12 +1253,12 @@ def test_gore_is_conditional():
 
 
 def test_explosion_changes_the_tail():
-    print("\nGAMBLER'S RUIN lengthens the tail without moving the floor")
+    print("\nGAMBLER'S FOLLY lengthens the tail without moving the floor")
     rolls = []
     for seed in range(200):
         a, b = duo()
         b.hp = 500
-        rolls.append(exchange("GAMBLER'S RUIN", a, b, seed))
+        rolls.append(exchange("GAMBLER'S FOLLY", a, b, seed))
     plain = []
     for seed in range(200):
         a, b = duo()
@@ -1482,7 +1482,7 @@ def test_scry_result_is_readable():
 
 
 def test_understanding_reads_the_disposition():
-    print('\nUNDERSTANDING asks where the cards went, not what they were')
+    print('\nPIECE TOGETHER asks where the cards went, not what they were')
     import cards as cl
 
     class Bottoms:

@@ -387,7 +387,7 @@ class Scry(Op):
             for c in keep:
                 who.deck.append(c)
             if who is ctx.actor:
-                # MATCHED PAIR and UNDERSTANDING ask about the cards, not
+                # MATCHED PAIR and PIECE TOGETHER ask about the cards, not
                 # about the act — so what was seen and where it went is
                 # recorded for the clauses that follow.
                 ctx.scried = list(look)
@@ -801,7 +801,7 @@ class DamageMultiplier(Op):
 
 
 class Explode(Op):
-    """GAMBLER'S RUIN: every odd die result is rolled again and added, up to
+    """GAMBLER'S FOLLY: every odd die result is rolled again and added, up to
     a cap. Changes the shape of the distribution rather than its centre, so
     it is a flag on the roll rather than a number added to it."""
     phase = 'pre'
@@ -1605,7 +1605,7 @@ def _r_plant(m):
 
 @menu(r'^every odd die result explodes.*?\(max (\d+) extra rolls\.?\)')
 def _r_gamblers_ruin(m):
-    """GAMBLER'S RUIN. The card's "if this attack deals damage" is stripped
+    """GAMBLER'S FOLLY. The card's "if this attack deals damage" is stripped
     as a gate before this runs, and in the pre phase that gate reads as
     "this attack is landing"."""
     return [Explode(int(m.group(1)))]

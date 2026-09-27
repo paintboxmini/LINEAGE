@@ -132,13 +132,13 @@ Range: Ranged
 
 ---
 
-**UNDERSTANDING**
+**PIECE TOGETHER**
 BLUE — MIND
 Attack: Mind + d8. Discard a card; if you do, +1d6.
 Effect: None.
 Defense Effect: Scry 2. If you bottom both, heal 4 HP
 Range: Ranged
-*"Clarity is not given, it is reconstructed."*
+*"Clarity is not given. It is assembled, out of what you were willing to give up for it."*
 
 ---
 
