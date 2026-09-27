@@ -146,18 +146,35 @@ Generations of Shunka who turned to wild magic trying to break the curse, and fa
 
 **Still open beyond the scrap:** what he carries out of Shunka service, and whether anything else of his mother's came with him. **He has asked for one item and one item is an answer**, not a gap — a man who left with a single object is a clearer character than a man with a packing list.
 
+### Garb, weapon, appearance and voice — waiting for session one on purpose
+
+***Drew, 2026-09-27: he is fine finding this out at the table.*** So this stops being a gap and becomes a deliberate blank. **Nothing mechanical is waiting on any of it**, and that is worth stating plainly so nobody reaches for a ruling mid-session:
+
+**Starting garb and weapon cost nothing and do nothing** (`rules/character-creation.md`, Equipment: *"None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold... the cards are your damage, the gear is who you are."*). **Caine can arrive carrying anything or nothing and his sheet is identical either way.** His attacks are cards and **STRONGJAW** is his own jaw.
+
+**Pat has mentioned knuckledusters and has not committed** *(2026-09-26)*. Left open, and worth knowing that the hesitation has no cost attached in either direction:
+
+| | |
+|---|---|
+| **As starting garb** | **Free, available now, and no numbers.** He can pick them up in session one, or in session nine, or never |
+| **As a real Weapon with stats** | A Tier 1 purchase at **~100 gold** against a purse of 40, meant to arrive around session three (`rules/equipment.md`, Starting Gold). *Not reachable in session one whatever he decides* |
+
+*So the question is not whether he has them, it is whether they are an object or an item — and both roads stay open with nothing expiring.* **Appearance and voice are the same shape:** discovered in play rather than filed in advance, which for a character whose player is still finding him is the better order.
+
 ## Deck
 
 Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen at the table.
 
 ## Not Yet Set
 
-Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now. Genuinely still needed before Session 1:
+Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now.
+
+***And three things came off this list on 2026-09-27 rather than being answered: garb and weapon, appearance, and voice.*** **Drew is finding those out at the table**, and since none of them touches a rule, waiting costs nothing (Garb, weapon, appearance and voice, above). *They are not gaps. They are the part of a character that is better discovered than filed.*
+
+Genuinely still needed before Session 1:
 
 - ~~Character name~~ — **Caine**, 2026-09-26. *Settled, and the antagonist who clashed with it was renamed rather than him* (the note at the top of this file)
-- Appearance beyond the Cane Corso reference, voice
 - Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
-- **Gear** — hasn't come up at all yet: starting garb/weapon, and whatever he ends up actually using (`rules/character-creation.md`, Equipment — there is no slot limit, only what one person can use in concert)
 - ~~Price~~ — **declared 2026-09-26** (The Price, above). *Open instead: what breaking it costs him*
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 
