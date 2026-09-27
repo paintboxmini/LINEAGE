@@ -2,13 +2,7 @@
 
 *Player character. **The character's name is Caine**, Pat's call, given 2026-09-26. The file stays filed under the player's name for now because every citation in the repo points here. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
 
-> ### ⚠️ The name collides with an antagonist, and somebody has to move
->
-> **`characters/kaine.md` is Elder Kaine** — the Final Current's founder, holder of the Lightning Loop, the man behind a whole quest (`quests/tide-pulls-back.md`) and a live question about the Storm Seat (`world/seats.md`). **Spoken aloud at a table, Caine and Kaine are one word**, and the party is likely to end up in a room with him.
->
-> *Leaning on "Elder" to separate them is the weak answer — titles are the first thing a table drops.*
->
-> **Recommendation: rename the antagonist, not the character.** Caine is the word Pat will say a thousand times and he chose it; the NPC is ours to move, appears in six files, and **nothing about who Elder Kaine is depends on the sound of his name.** Asking a player to give up his character's name on day one to protect an NPC he has not met is the wrong way round. **Drew's call, and it wants making before session one.**
+*There was a name collision and **the antagonist moved**, 2026-09-27, at Drew's word. The Final Current's founder was Elder Kaine and is **Elder Wade** now (`characters/wade.md`) — spoken aloud, Caine and Kaine were one word, and the party is likely to end up in a room with him. **The NPC gave way because nothing about who he is depended on the sound of his name, and Caine is the word Pat will say a thousand times.** The new one is better anyway: to wade is to go in partway and come back, which is exactly what that man actually did.*
 
 ## Stats
 
@@ -58,9 +52,9 @@ Where that points him, and how the search runs: `campaign/session-1-convergence.
 
 **Pat's own read on him, given 2026-09-26, and it explains the sheet better than the sheet does.** *Half druid* is **Survival +2 and Animal Handling +2** and a man whose magic is summoned rather than cast. *Half paladin* is the Captain father, officer school, twenty years in the ranks, and **HOLD THE LINE** (`campaign/pat-cards.md`) — a card that cannot win and cannot lose, which is what standing in the way looks like with the dice taken off it. **And the Price is the paladin half out loud:** an *always*, phrased as charity rather than as restraint.
 
-**Straight edge has one concrete mechanical consequence and it is worth catching before it happens at a table.** Three of Kevin's five beverages read as alcohol — **Bitter Shot**, **Second Wind Cider** and **Hair of the Quill** (`campaign/kevin.md`, The beverages). **Still Water and The Early Cup do not.** *So of the party's five buff drinks Caine can take two*, and of the two Kevin is actually carrying at the top of session one he can take exactly one — The Early Cup.
+***Straight edge here means bound by humanitarian morals, not abstinent*** *(Drew, 2026-09-27)*. **He drinks, and he likes to sow his oats.** The discipline is about what he owes other people rather than what he denies himself — *which is the more interesting version, because a man who gives away his last coin and then goes out drinking is a person rather than a monk.* **Nothing on the sheet restricts what he consumes.**
 
-*This is a table conversation rather than a ruling, because the drinks are Kevin's and the character is Pat's.* **Flagged so it is a decision somebody made rather than a thing that goes wrong mid-fight**, and it cuts a real hole in a party buff economy that was costed assuming three drinkers. The cheap fix, if anybody wants one, is that Kevin makes a non-alcoholic version and it is the same drink — he is a cook, and that is a five-second answer.
+*Kevin's drinks were read here as mostly alcoholic and that reading was wrong.* **The names do not settle it and are better for not settling it** (`campaign/kevin.md`, The beverages): Bitter Shot reads as coffee at least as easily as spirits, The Early Cup is a morning cup, and **Still Water is the one that leans liquor** — *the water a still produces.* **No renaming needed and none wanted.** The ambiguity leaves two things available that a fixed answer would close: **Kevin can decide what he actually put in any of them**, and **Pat can take a restriction on Caine if he ever wants one.** *Neither is a rule. Both are there.*
 
 ## Wild Magic Summoning
 
@@ -160,7 +154,7 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now. Genuinely still needed before Session 1:
 
-- ~~Character name~~ — **Caine**, 2026-09-26. *Open instead: whether he or Elder Kaine keeps the name* (the notice at the top of this file)
+- ~~Character name~~ — **Caine**, 2026-09-26. *Settled, and the antagonist who clashed with it was renamed rather than him* (the note at the top of this file)
 - Appearance beyond the Cane Corso reference, voice
 - Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
 - **Gear** — hasn't come up at all yet: starting garb/weapon, and whatever he ends up actually using (`rules/character-creation.md`, Equipment — there is no slot limit, only what one person can use in concert)

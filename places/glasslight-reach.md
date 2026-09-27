@@ -89,7 +89,7 @@ So the edge gets remapped, continually, and the map is a color map because color
 - `quests/tide-pulls-back.md` — the adventure set here and on the cliffs
 - `bestiary/shockquills.md` — the quilled animals of the scree below the town, sorting the cliffs' own mineral veins out of the gravel
 - `factions-and-races/people-of-promise.md` — who lives here
-- `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
+- `characters/mirel.md`, `characters/wade.md` — named figures of the Reach
 - `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
 - `characters/wren.md` — the Promise congregation
 - `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)

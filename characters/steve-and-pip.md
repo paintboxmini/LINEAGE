@@ -4,7 +4,7 @@
 
 **The thing to know before anything else:** he is a grown man in a congregation whose central rite is the bath, and he has never taken it, because his parent has never judged him ready. Not forbidden — never quite permitted, one reasonable sentence at a time, for years. Everyone else in Glasslight decides that for themselves. He is the exception and nobody outside the household has noticed, including him, exactly.
 
-That is what he's standing next to when he stands near Kaine's people. The Final Current is the one group in the Reach that will let him decide something about himself, and it is run by a man selling exactly that. Steve backing out the first time and queueing up the second is not indecision; it is the only argument he has ever been in.
+That is what he's standing next to when he stands near Wade's people. The Final Current is the one group in the Reach that will let him decide something about himself, and it is run by a man selling exactly that. Steve backing out the first time and queueing up the second is not indecision; it is the only argument he has ever been in.
 
 Something real grew between him and Mirel. Nobody arranged it, nobody in the Promise noticed, and it never got the chance to become anything either of them would have had time to name properly. Everyone else who'd met him already had him filed as forgettable. She was the one person who didn't.
 

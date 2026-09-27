@@ -58,7 +58,7 @@ The diseases must be visible. This is not negotiable in their theology.
 
 Nothing on Pneum has ever been touched by the Unheld. These are communicable illnesses, collected and passed hand to hand on purpose by people who believe they are performing a sacrament, and they work exactly the way illnesses work: they spread, they worsen, they scar, and they kill. **The congregation is not wrong that something real is happening to their bodies. They are wrong about one mechanism, and it is the only mechanism their entire practice rests on.**
 
-**The Unheld changes what a thing is; it does not damage what a thing is** (`world/the-unheld.md`). A body that has been in the grey water comes back different — reversed handedness, wrong scars, memories belonging to nobody, and further in, animal eyes and claws and stone-like skin (`characters/kaine.md`, The Final Current). None of that is illness. Disease is damage, and damage is not the register the Unheld works in. It has never made anyone sick, anywhere.
+**The Unheld changes what a thing is; it does not damage what a thing is** (`world/the-unheld.md`). A body that has been in the grey water comes back different — reversed handedness, wrong scars, memories belonging to nobody, and further in, animal eyes and claws and stone-like skin (`characters/wade.md`, The Final Current). None of that is illness. Disease is damage, and damage is not the register the Unheld works in. It has never made anyone sick, anywhere.
 
 ### Why they can be wrong, and stay wrong
 
