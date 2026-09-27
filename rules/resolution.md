@@ -56,6 +56,27 @@ The table must agree the card meaningfully supports the action. When in doubt, a
 
 **Advantage and Disadvantage cancel.** If both apply to the same roll, they cancel and you roll a flat 2d10 + stat. Because neither side stacks, this is all-or-nothing rather than one-for-one: any amount of Advantage against any amount of Disadvantage leaves a plain roll.
 
+### What a discard buys — Advantage, or permission
+
+*(2026-09-27.)* **A card leaving your hand outside combat can buy one of two different things, and they are not the same transaction.** Both have been running at this table unwritten; this is the shape they already had.
+
+**Advantage** is everything above. The attempt is something the character could try anyway — climb the wall, lie to the guard, hold the boulder off the old woman — and the card sharpens it. *3d10, drop the lowest.* **The name has to support the attempt, and that is the whole check on it.**
+
+**Permission is the other one, and it is a different thing entirely.** Some attempts **cannot happen at all** without a card, because the card *is* the ability rather than a bonus to it. Pat does not summon a spirit well or badly — he summons one or he does not, and HERE BOY is what summoning is (`campaign/pat-cards.md`). *Spending the card is not help with the attempt. It is the attempt existing.*
+
+**A permission spend usually produces no roll, and that is the cleanest way to tell which one you are in: the card works.** That is what was paid for. Where a roll does follow it is about **how well** and never about **whether** — the spirit arrives, and the check is whether it gets where you wanted unseen.
+
+**So one card does not buy both, and that is an absence rather than a rule.** Advantage is a modifier on a roll and a permission spend mostly has no roll to modify. *A second card can absolutely give Advantage on a roll that a permission spend led to* — that is two cards doing two jobs, not one card doing two.
+
+**The test is a question about the character, not about the card:** *could they attempt this at all with nothing in hand?*
+
+| | |
+|---|---|
+| **Yes** | The card is optional. **Any name that supports the aim buys Advantage** (Advantage & Disadvantage, above) |
+| **No** | **Only a card that *is* the thing buys permission.** A supporting name is not enough here — INSTINCT does not summon a dog however well it is argued, because the aim test asks whether a name fits the attempt and this attempt does not exist yet |
+
+**When the answer is no and nobody holds the card**, the attempt is still available — it costs a Price instead (`rules/character-creation.md`, Working without a card).
+
 ---
 
 ## Checks

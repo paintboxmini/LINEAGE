@@ -292,6 +292,24 @@ None of it is wrong as long as it fits your character. The cards are a frame. Yo
 
 You don't have to explain the metaphysics. Neither does your character.
 
+### Working without a card
+
+*(2026-09-27.)* **A character's deck is not the limit of what their magic is.** The section above says the card gives the outcome and the look is yours. The question underneath it is what happens when a player wants an outcome **no card in their hand covers** — Pat sending a spirit ahead to scout, when nothing in his nine says scout.
+
+**The answer is yes, and it costs a Price.** *Nothing here is exempt from cost* (`rules/equipment.md`, The Price): the world permits the working and then answers it. **A card is a working that has already been paid for** — bought at creation or earned at advancement — which is why playing one costs an Action and nothing else. **Off-card there is nothing standing between the character and the world, so the world collects directly.**
+
+**The Price is negotiated before the working happens**, and the negotiation is the player proposing and the GM deciding.
+
+***That is not the character choosing their own Price, which stays barred*** (`rules/equipment.md`: nobody chooses their own Price, and skill shifts *where* a Price lands rather than whether it is paid or how much). **The player and the character are two different people.** The character reaches out and finds out what it costs; the table agrees what that was. *Exactly the split the game already runs when a table negotiates which stat a save uses* (`rules/resolution.md`, Core Resolution).
+
+**Negotiating first is the point rather than a politeness.** A Price named afterwards is a punishment. **A Price named before is a decision** — the player hears the cost and can decline and do something else. *So the sequence is: say what you want, hear what it costs, then choose.*
+
+**What a Price is made of.** Everything `rules/equipment.md` says about Artifact Prices holds here — it answers the shape of what was taken, it scales with magnitude, and it need not land only on whoever reached. The currencies this game has to hand: **HP; a card out of hand or off the top; an Exhaust or a Wound into the deck; time on whatever clock is running; control, where the thing arrives and is not yours; and being noticed by something that was not watching before.** *That last one is the most useful and the least mechanical.*
+
+**A floor, so that negotiable does not drift to free: the Price has to cost something this session will notice.** A cost that lands only in some later session nobody has planned is not a Price, it is a promise.
+
+**And a ceiling on how often.** Off-card working is for the thing a player wants that their deck cannot say — not a second way to take a turn. ***If it is happening every session then the card is missing, not the rule.*** Write the card and put it in that character's advancement deck (Advancement, below), where a working that keeps being wanted belongs.
+
 ---
 
 ## Advancement
