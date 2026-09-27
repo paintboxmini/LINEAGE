@@ -1,6 +1,14 @@
-# Pat
+# Pat — Caine
 
-*Player character — no character name chosen yet; filed under the player's name until there is one. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
+*Player character. **The character's name is Caine**, Pat's call, given 2026-09-26. The file stays filed under the player's name for now because every citation in the repo points here. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
+
+> ### ⚠️ The name collides with an antagonist, and somebody has to move
+>
+> **`characters/kaine.md` is Elder Kaine** — the Final Current's founder, holder of the Lightning Loop, the man behind a whole quest (`quests/tide-pulls-back.md`) and a live question about the Storm Seat (`world/seats.md`). **Spoken aloud at a table, Caine and Kaine are one word**, and the party is likely to end up in a room with him.
+>
+> *Leaning on "Elder" to separate them is the weak answer — titles are the first thing a table drops.*
+>
+> **Recommendation: rename the antagonist, not the character.** Caine is the word Pat will say a thousand times and he chose it; the NPC is ours to move, appears in six files, and **nothing about who Elder Kaine is depends on the sound of his name.** Asking a player to give up his character's name on day one to protect an NPC he has not met is the wrong way round. **Drew's call, and it wants making before session one.**
 
 ## Stats
 
@@ -31,6 +39,28 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 **What he can plausibly get out of it is an explanation rather than a cure.** A cost paid in full doesn't undo on request — that's how the world works, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
+
+## The Price — *I always share with those in greater need than me*
+
+**Declared 2026-09-26, and it is the largest Price anybody at this table has taken** (`rules/character-creation.md`, Declaring a Price). It takes the *I always* form, and the adherence is the cost — not the sentence.
+
+**What makes it the largest is that it lands on material things.** Most declared Prices constrain a choice in a moment: look away or don't, keep a word or break it. **This one reaches into everything the party ever accumulates** — coin, food, medicine, ingredients, a spare coat, a place by the fire. There is no session where it has nothing to bite on, which is exactly what a Price is supposed to be.
+
+**And it lands hardest on him first, because he is the one with money.** Caine starts on **40 gold, the largest purse at the table** (Gear and coin, below), and his own file already calls him the one character who arrives with shopping to do. *The Price and the shopping are now competing for the same coins on the first morning of the campaign.* **That is not a problem to soften. That is the Price working on turn one.**
+
+**The load-bearing words are *greater need*, and they are a comparison rather than an invitation.** He is not obliged to anyone who asks; he is obliged to anyone worse off than he is. **So it scales instead of emptying him** — a man with nothing owes little, a man with plenty owes a lot, and the test is made freshly each time against what he is actually holding.
+
+*Which produces one genuinely interesting edge inside the party.* **Kevin has the smallest purse at the table (10 gold) and roughly 150 gold of prepared ingredients in a bag** (`campaign/kevin.md`). **Need is not the same as an empty pocket**, so the plain reading is that Kevin is not in greater need and Caine owes him nothing — *and a player is going to test that*, probably at a counter, probably in session one. Worth having an answer ready rather than reaching for one.
+
+**Breaking it costs more than keeping it**, per the rule: a curse, a forced card, a permanent mark, or whatever the world exacts. **What that looks like for him specifically is open** — he is a wild-magic Shunka whose power is three spirits of a cursed line answering when he calls, and the obvious shape is that one of them does not. *Not written, and not to be invented before it is needed.*
+
+### Straight edge, half druid, half paladin
+
+**Pat's own read on him, given 2026-09-26, and it explains the sheet better than the sheet does.** *Half druid* is **Survival +2 and Animal Handling +2** and a man whose magic is summoned rather than cast. *Half paladin* is the Captain father, officer school, twenty years in the ranks, and **HOLD THE LINE** (`campaign/pat-cards.md`) — a card that cannot win and cannot lose, which is what standing in the way looks like with the dice taken off it. **And the Price is the paladin half out loud:** an *always*, phrased as charity rather than as restraint.
+
+**Straight edge has one concrete mechanical consequence and it is worth catching before it happens at a table.** Three of Kevin's five beverages read as alcohol — **Bitter Shot**, **Second Wind Cider** and **Hair of the Quill** (`campaign/kevin.md`, The beverages). **Still Water and The Early Cup do not.** *So of the party's five buff drinks Caine can take two*, and of the two Kevin is actually carrying at the top of session one he can take exactly one — The Early Cup.
+
+*This is a table conversation rather than a ruling, because the drinks are Kevin's and the character is Pat's.* **Flagged so it is a decision somebody made rather than a thing that goes wrong mid-fight**, and it cuts a real hole in a party buff economy that was costed assuming three drinkers. The cheap fix, if anybody wants one, is that Kevin makes a non-alcoholic version and it is the same drink — he is a cook, and that is a five-second answer.
 
 ## Wild Magic Summoning
 
@@ -130,11 +160,11 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now. Genuinely still needed before Session 1:
 
-- Character name
+- ~~Character name~~ — **Caine**, 2026-09-26. *Open instead: whether he or Elder Kaine keeps the name* (the notice at the top of this file)
 - Appearance beyond the Cane Corso reference, voice
 - Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
 - **Gear** — hasn't come up at all yet: starting garb/weapon, and whatever he ends up actually using (`rules/character-creation.md`, Equipment — there is no slot limit, only what one person can use in concert)
-- Price
+- ~~Price~~ — **declared 2026-09-26** (The Price, above). *Open instead: what breaking it costs him*
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 
 Open, but possibly progression rather than a creation-time gap — not yet sorted which:
