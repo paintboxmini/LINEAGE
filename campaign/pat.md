@@ -150,7 +150,7 @@ Generations of Shunka who turned to wild magic trying to break the curse, and fa
 
 ***Drew, 2026-09-27: he is fine finding this out at the table.*** So this stops being a gap and becomes a deliberate blank. **Nothing mechanical is waiting on any of it**, and that is worth stating plainly so nobody reaches for a ruling mid-session:
 
-**Starting garb and weapon cost nothing and do nothing** (`rules/character-creation.md`, Equipment: *"None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold... the cards are your damage, the gear is who you are."*). **Caine can arrive carrying anything or nothing and his sheet is identical either way.** His attacks are cards and **STRONGJAW** is his own jaw.
+**Starting garb and weapon cost nothing and do nothing** (`rules/character-creation.md`, Equipment: *"None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold"* — and **a character holding nothing is not a character with something missing**). **Caine can arrive carrying anything or nothing and his sheet is identical either way.** His attacks are cards and **STRONGJAW** is his own jaw.
 
 **Pat has mentioned knuckledusters and has not committed** *(2026-09-26)*. Left open, and worth knowing that the hesitation has no cost attached in either direction:
 
