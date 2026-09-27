@@ -38,6 +38,16 @@ If a card in your hand has a name that meaningfully supports what you're attempt
 
 The table must agree the card meaningfully supports the action. When in doubt, ask: *would a reasonable person look at this card name and understand the connection?*
 
+**There are two ways a name supports an attempt, and the second one is the better half of this rule** *(written down 2026-09-27)*.
+
+The first is **category** — the attempt is the kind of thing the name is about. FOCUS covers a long watch, STUDY covers a library, PATIENCE covers waiting somebody out. This is the obvious route and most cards are read this way.
+
+The second is **speech: the character says the words, and the words do the work.** A shopkeep says *thirty gold, final offer.* The player holds his eye and says *"I strongly suggest you think twice."* **That is THINK TWICE supporting an intimidation**, and it supports it because it was said out loud — not because intimidation is a category anybody had in mind when the card was written.
+
+**This is worth encouraging rather than merely allowing.** The spoken route turns the card names into a vocabulary players reach for out loud, and that is the cheapest thing this game has for getting people to talk in character: *a player going through their hand looking for a line to say is playing it exactly as built.* It also means a card can earn its discard in a scene nobody designed it for, which is the whole point of pricing names at all.
+
+**It is not a loophole, because the phrase still has to mean something where it lands.** *"I strongly suggest you think twice"* is a real threat carrying real content. Shouting *"think twice!"* while jumping a gap is noise. The test does not change — would a reasonable person hear that and understand the connection — so **saying the name is a route to the connection, never a substitute for it.**
+
 **A Passive grants Advantage the same way** — the table judges whether its printed name plausibly supports the attempt, exactly as it would a discarded card's name. Unlike a discarded card, a Passive is never spent; it can support the same kind of attempt again next time.
 
 **Neither one stacks.** However many sources apply to one roll — a Passive, a discarded card, both at once — the result is still just Advantage: roll 3d10, drop the lowest. It never compounds into anything bigger. Disadvantage works the same way in the other direction.
