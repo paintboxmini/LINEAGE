@@ -50,10 +50,15 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **HERE BOY's rider goes to Pat, ruled 2026-09-19**, and the card was reworded to say so. The old text read as the spirit gaining it, which could never fire — a spirit does not act and cannot defend, so it never reaches a reveal. The summoning grants the tie-win to the summoner: he holds it and spends it on the next tie he is in, attacking or defending. The engine runs it.
 
+**The cap is three, set 2026-09-27 — and the cap is not a number, it is the three of them.** There are three cursed royals and there have only ever been three; a fourth summon has nobody to answer it. **So more than one spirit can be out at a time, up to three.** *The engine enforces it now rather than counting freely.*
+
+**What that actually means at the table is two, because he only holds two triggers.** HERE BOY and LET'S GO are the whole set (`campaign/pat-cards.md`), so nine cards cannot field a third spirit — **the cap will not bind until a third trigger exists**, and what happens to a summon that finds nobody is deliberately left thin for that reason. *Writing a ruling for a case the sheet cannot reach is how a rule gets invented and then inherited by somebody who needed a different one.*
+
+**Two at once is the thing to watch, and it is real.** Both spirits out means Pat is holding a banked tie-win *and* the party is running +2 damage, and an enemy has to spend two turns on two totems to take either away. With Soul 4 he is drawing Green often enough for that to happen. *Nothing about it is broken on paper; it is simply the combination that wants a fight behind it before anybody calls it settled.*
+
 Still open:
 
-- Whether HERE BOY and LET'S GO are the *only* two triggers.
-- Whether more than one spirit can be out at a time (there are only three to draw on). *The engine permits it and numbers them; it is not enforcing a cap it was not given.*
+- Whether HERE BOY and LET'S GO are the *only* two triggers. **If a third is ever written, the cap starts binding and the fourth-summon ruling above stops being hypothetical.**
 
 ## Passives
 

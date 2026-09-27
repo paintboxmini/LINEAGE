@@ -31,9 +31,11 @@
 
 *Player character — still a light draft, more filled in than before but nothing here is locked. Everything about him lives in this one file: stats, concept, the craft, the ingredients, the drinks, and the card drafts.*
 
-## Stats — Unconfirmed
+## Stats
 
-Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21, hand size 3, Initiative 1d6 + 2.
+**Body 4 / Mind 3 / Soul 2 — locked 2026-09-27, Drew's call.** HP 21, hand size 3, Initiative 1d6 + 2, deck of 9.
+
+*Locked rather than merely agreed, because more of this sheet hangs off these three numbers than off anything else on it.* **Every measured judgement below was made against them:** GRIND SHOT's d6 was set by comparing a signature to Blue Ranged's average with **Mind 3**; BREAK DOWN is a d8 because **Body 4** is his best stat and his close game; ON THE FLY is deliberately his weakest card because **Soul 2**; the draft shape is 4 Red / 3 Blue / 2 Green; and the 400-fight measurement that found 4.8 damage an attack, an 85% party win rate, and supply rather than the die as the lever — all of it ran on this line. **A stat moving by one would want every one of those re-checked**, which is the reason to close it before session one rather than during it.
 
 | Stat | Value | Drives |
 |------|-------|--------|
@@ -423,7 +425,6 @@ Range: Both
 ## Not Yet Set
 
 - Character name
-- **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
 - Which other fruits he's worked out, if any — **and whether anything but Burnrind can carry the grenade**, now that the orange has a specific plant behind it
 - ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
 - ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
@@ -434,6 +435,8 @@ Range: Both
 - The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
 - Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
 - How long he has actually been at Gemstone University, and whether he is going back
+
+*Settled 2026-09-27: **the stats**, at Body 4 / Mind 3 / Soul 2 (Stats, above).*
 
 *Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, where the exploding produce comes from, that he can cook anywhere, that he carries exactly one knife, that he is carrying no shipment when Session 1 opens, and why he is at Vulture's Nest.*
 

@@ -2555,6 +2555,19 @@ class Summon(Op):
         rng = ctx.rng or ctx.actor.rng
         hp = d(10, rng)
 
+        standing = sum(1 for c in table()
+                       if c.is_object and c.summoner is ctx.actor and c.alive())
+        # The cap is three, set 2026-09-27: there are three cursed royals
+        # and there have only ever been three, so a fourth summon has
+        # nobody to answer it (`campaign/pat.md`, Wild Magic Summoning).
+        # Unreachable from Pat's own nine cards, which hold two triggers —
+        # this is a guard against a third trigger being written later, not
+        # a case the sheet can currently produce.
+        if standing >= 3:
+            ctx.log(f'  {ctx.actor.name} calls and nobody answers '
+                    f'— all three are already standing.')
+            return
+
         n = 1 + sum(1 for c in table()
                     if c.is_object and c.summoner is ctx.actor)
         # Wild Magic Summoning sets the HP outright. max_hp is derived and

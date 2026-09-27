@@ -59,7 +59,7 @@ Win or tie, attacking or defending, this triggers the same — a normal Green ca
 
 **A spent charge is not clawed back.** If the tie has already happened, killing the spirit afterwards takes nothing — it can only remove one that is still waiting. The HP roll isn't restated here since Wild Magic Summoning already covers it for every summon regardless of trigger.
 
-**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`campaign/pat.md`, Wild Magic Summoning). Still open: whether HERE BOY is the *only* trigger, and whether more than one spirit can be out at once given there are only three to draw from.
+**Answers one of the open questions on Wild Magic Summoning:** this is at least one real trigger. The spirit itself doesn't act — it's an Object, not a combatant, no turn and no wheel token (`campaign/pat.md`, Wild Magic Summoning). **The other one closed on 2026-09-27: the cap is three spirits, because there are three royals** — which means HERE BOY's spirit and LET'S GO's can stand at the same time, and with only two triggers on the sheet two is as far as it goes. Still open: whether these are the *only* two triggers.
 
 ---
 
