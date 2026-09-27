@@ -59,6 +59,32 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 *That premium was set when Body was a ×3 multiplier on HP rather than ×4, so it is fair to ask whether the damage gap should have closed when the HP weight went up. **It was measured on 2026-09-19 and the answer is no.** With Passives in play the three colours finish within 1.4 points of each other over 750 duels — the economy is already balanced, the ×3 → ×4 change moved the colours under two points against each other, and softening Red's dice moves nothing at all. `combat-simulations/README.md`, What Passives are actually for.*
 
+### Why Green has the broadest names — initiative decays
+
+**Green's names cover far more ground than Red's.** Read each seated name as an *aim* rather than a subject (`rules/resolution.md`, Advantage & Disadvantage) and count how many attempts could share it. Across the 84 seated cards, 28 in each colour:
+
+| Colour | wide aim | moderate | narrow |
+|---|---|---|---|
+| **Red** | **1** | 15 | 12 |
+| **Blue** | **7** | 10 | 11 |
+| **Green** | **14** | 6 | 8 |
+
+<!-- print:skip-start -->
+*Read by hand on 2026-09-27. Where an individual name sits is a judgment call and a different reader would move a card or two between bands — the size of the gap is not in question.*
+<!-- print:skip-end -->
+
+**Part of it is vocabulary.** Red's names are physical actions — PUSH, PULL, GRAPPLE, SHATTER, SLIP THE BLADE — and a physical action is exactly what it says and nothing more. Green's are states and intentions — RELEASE, INSTINCT, PATIENCE, OPENING, FLOW — and an intention is an aim by construction. **Soul concepts mostly do not have narrow names available.**
+
+**But the reason to keep it is initiative.** Soul buys initiative (above), and **initiative is worth the most in a short fight and very little in a long one** — going first decides things when everybody gets two turns and barely registers when everybody gets six. *So Soul's headline payment is front-loaded, and it decays exactly as the campaign's fights get longer.*
+
+**Name breadth is what Green still holds when its speed stops paying**, and unlike initiative it does not decay: a wide name is worth the same in session forty as in session one, because the discard is spent outside combat where turn order does not exist. **So the spread above is a curve, not a gap** — Green is paid early in initiative and late in reach, and the two hand over somewhere in the middle of a campaign.
+
+**What that means when writing a Green card.** A broad Green name is not an accident waiting to be corrected. **It is the colour's late half, and narrowing it takes away something the dice were never paying for.** Use a narrow name when the card's fiction genuinely is narrow — don't reach for one to make a Green card feel priced.
+
+<!-- print:skip-start -->
+*Drew's read, 2026-09-27, and it answered a question no sweep could: **nothing that counts damage or win rates can see the value of a name**, so every measurement this repo runs will report this spread as free. It is the clearest case so far of the balance living somewhere the engine cannot look.*
+<!-- print:skip-end -->
+
 **Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
 
 Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
