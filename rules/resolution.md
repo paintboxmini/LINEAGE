@@ -38,15 +38,17 @@ If a card in your hand has a name that meaningfully supports what you're attempt
 
 The table must agree the card meaningfully supports the action. When in doubt, ask: *would a reasonable person look at this card name and understand the connection?*
 
-**There are two ways a name supports an attempt, and the second one is the better half of this rule** *(written down 2026-09-27)*.
+**A name names an aim, and the discard is legal when the attempt shares it** *(2026-09-27)*. Not a subject, not a topic — *the thing the character is trying to make happen.*
 
-The first is **category** — the attempt is the kind of thing the name is about. FOCUS covers a long watch, STUDY covers a library, PATIENCE covers waiting somebody out. This is the obvious route and most cards are read this way.
+**The easy case is that the character says the words.** A shopkeep says *thirty gold, final offer.* The player holds his eye: *"I strongly suggest you think twice."* Obviously THINK TWICE, obviously an intimidation, and nobody at the table needs a ruling.
 
-The second is **speech: the character says the words, and the words do the work.** A shopkeep says *thirty gold, final offer.* The player holds his eye and says *"I strongly suggest you think twice."* **That is THINK TWICE supporting an intimidation**, and it supports it because it was said out loud — not because intimidation is a category anybody had in mind when the card was written.
+**But saying it is the door, not the rule.** What makes the discard legal is that the attempt was trying to *make a man reconsider* — the line only made that impossible to miss. **So a player who never says the words has exactly the same card.** Leaning on the counter and letting the silence do the work, talking a bandit out of an ambush, giving a guard a reason to look the other way, making a creditor wonder whether this is worth the trouble: *every one of those is an attempt to make somebody think twice,* and the phrase is not required for any of them.
 
-**This is worth encouraging rather than merely allowing.** The spoken route turns the card names into a vocabulary players reach for out loud, and that is the cheapest thing this game has for getting people to talk in character: *a player going through their hand looking for a line to say is playing it exactly as built.* It also means a card can earn its discard in a scene nobody designed it for, which is the whole point of pricing names at all.
+**Read every name this way.** FOCUS is not the topic of concentration, it is *the attempt to hold attention on one thing.* PATIENCE is not waiting, it is *choosing to wait longer than is comfortable.* GUARD is not a wall, it is *putting yourself between.* **Ask what the player is trying to do, then ask whether the card's name is a word for wanting that.** Names read as aims cover far more ground than names read as subjects, and that is correct rather than generous — it is what the discard cost is paying for.
 
-**It is not a loophole, because the phrase still has to mean something where it lands.** *"I strongly suggest you think twice"* is a real threat carrying real content. Shouting *"think twice!"* while jumping a gap is noise. The test does not change — would a reasonable person hear that and understand the connection — so **saying the name is a route to the connection, never a substitute for it.**
+**And it is still bounded, because most attempts do not share the aim at all.** Picking a lock is not trying to make anybody reconsider. **The question that catches an overreach is the old one asked about intent instead of subject matter:** *is this what the name wants?*
+
+**Worth encouraging either way.** The spoken door turns the card names into a vocabulary players reach for out loud, which is the cheapest thing this game has for getting people to talk in character — *a player going through their hand looking for a line to say is playing it exactly as built* — and once they have walked through it a few times they stop needing the line.
 
 **A Passive grants Advantage the same way** — the table judges whether its printed name plausibly supports the attempt, exactly as it would a discarded card's name. Unlike a discarded card, a Passive is never spent; it can support the same kind of attempt again next time.
 
