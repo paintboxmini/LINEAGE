@@ -25,9 +25,11 @@ Special Rule: Upon simultaneous reveal, this card's color becomes identical to w
 "Wherever you plant your feet, that's where I plant mine."
 ```
 
-**One thing it costs, found 2026-09-19 while building his deck for the simulator.** Deck size is total stats and **each colour's count equals the matching stat** (`rules/cards.md`, Deck Building). Pat is Mind 2 / Body 3 / Soul 4, so nine cards at 2 Blue / 3 Red / 4 Green — and **HOLD THE LINE is colorless, so it fills a slot without belonging to any of those counts.** The two cannot both hold: either he runs ten cards, or one colour comes up a card short.
+**One thing it costs, found 2026-09-19 while building his deck for the simulator — and it is smaller than this file used to say** *(corrected 2026-09-27)*. **Deck size is total stats and that part is fixed**: Pat runs nine cards, and HOLD THE LINE is colorless, so it fills a slot belonging to no colour. He is Mind 2 / Body 3 / Soul 4, so the eight that remain cannot also be 2 Blue / 3 Red / 4 Green.
 
-*Not a problem with the card — a consequence of it, and Pat's to spend.* Green is the obvious place to take it from at 4, but Blue at 2 is where a single card matters most. Worth deciding before the draft rather than at the table.
+**There is no rule collision here.** `rules/cards.md`, Deck Building calls the colour match **a heuristic, not a law** — in as many words, and it says drafting through the Oracle can and should bend it. *The earlier version of this paragraph cited that section as though matching were binding and concluded the two could not both hold. Only one of them was ever binding.*
+
+**So it is a live choice rather than a problem to solve.** Green is the obvious place to give the slot up at 4; Blue at 2 is where losing one hurts most. *Worth Pat knowing before the draft so the pick is deliberate, and worth nobody treating as a fault on the card.*
 
 **Where this lands in canon later:** `cards/colorless.md`, alongside AFTERIMAGE, FOLLOW-UP, and BECOMING — same shape (a colorless card that determines its actual color only at reveal, per its own text) and the same override of the generic colorless rule (`cards/colorless.md`'s own header: "a colorless card auto-loses to any card with a real color" — this one doesn't, by design, since by reveal it's no longer resolving as colorless at all).
 
