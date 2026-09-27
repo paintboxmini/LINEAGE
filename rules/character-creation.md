@@ -109,6 +109,23 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 ***Who the character is does not live here*** *(corrected 2026-09-27)*. It is in the stats, the cards, the Passives, a Trait, the Skills and the Price — and in Magic Expression, which puts what a card *looks like* in the player's hands rather than in an object's (Magic Expression, below). **A character holding nothing is not a character with something missing.** *This paragraph used to end "the gear is who you are," which took a true sentence about gear having no mechanical weight and turned it into a false one about gear carrying all the character weight. It also read as a demand — decide what you own before you are allowed to be somebody — which is the opposite of what the rule is for.*
 
+<!-- print:skip-start -->
+**And the first table to use this rule proved it in three directions at once** *(2026-09-27)*. Nobody coordinated it:
+
+| | |
+|---|---|
+| **Caine** | **Chose no gear at all**, and asked for one object — a scrap of cloth with no bonus on it (`campaign/pat.md`, The scrap) |
+| **Code** | **Gear is nearly incoherent for him.** He is a fixed quantity of metal that becomes other things; his one object is a book with no rules attached (`campaign/chris.md`) |
+| **Kevin** | **Built entirely out of gear.** A grinder, a knife, a bandolier and three supply economies, and the character does not function without them (`campaign/kevin.md`) |
+
+**A rule that supports both ends of that without a patch is priced correctly.** One character loses nothing by owning nothing and another is constructed out of what he carries, and neither needed an exception written for them.
+
+**The other half is worth knowing because a future player will reach for it.** Starting garb grants no bonus, but an object can still make an attempt *plausible* — rope, a lens, a lockpick roll, a lantern — so there is an obvious move available: take a packing list of quiet enablers. **None of the first three did.** *And the rule does not need to bar it, because two things already answer it:*
+
+- **An object cannot buy permission.** Permission comes from a card that *is* the ability, or from a Price paid off-card (`rules/resolution.md`, What a discard buys; Working without a card, below). **"I own a grappling hook" is not "I can make this climb"** — it is a reason the table might agree the attempt exists, which is the conversation they were going to have anyway.
+- **A list is not a person.** *"A man who left with a single object is a clearer character than a man with a packing list"* (`campaign/pat.md`) — which makes the exploit self-punishing rather than forbidden, and that is the better kind of answer.
+<!-- print:skip-end -->
+
 **Starting gold is set by the GM, once, and is capped at 40** (`rules/equipment.md`, Starting Gold). It is not a reward and it is not rolled — it is the one lever for levelling sheets that came out of creation holding very different amounts of *stuff*, since stats, cards and Passives are already even. **Nobody starts with enough to buy anything off the gear ladder**, which is deliberate: the cheapest real purchase is a Tier 1 accessory at ~100 gold and it is meant to arrive around session three, not session one.
 
 **It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
