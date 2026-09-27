@@ -310,6 +310,14 @@ You don't have to explain the metaphysics. Neither does your character.
 
 **And a ceiling on how often.** Off-card working is for the thing a player wants that their deck cannot say — not a second way to take a turn. ***If it is happening every session then the card is missing, not the rule.*** Write the card and put it in that character's advancement deck (Advancement, below), where a working that keeps being wanted belongs.
 
+<!-- print:skip-start -->
+**Worked example, 2026-09-27 — the scouting spirit, and the Price is control.** Pat wants to send a spirit up the road ahead of the party. Nothing in his nine cards says scout, so it is off-card, and **the Price is that the spirit goes and what comes back is what it noticed** — not an answer to the question he asked. He wanted to know how many are at the gate. He learns there is meat somewhere past it, that two of them smell like the river, and that something under the cart did not like being looked at.
+
+*Why control is the right currency here rather than HP or a card.* **The working succeeded** — charging HP for it would make the Price a tax on trying, which is the thing a flat cost always becomes. Control is instead **the shape of what was taken**: he asked the world for a creature to act on his behalf and got one, and a creature acting on your behalf is not you. **A spirit that reports exactly what was asked is a free card. A spirit that reports what it saw is a working with a cost inside it.**
+
+*And it is the easy ruling to make at the table, which matters more than it sounds.* The GM does not have to price an exchange or invent a consequence — **they answer as the dog.** It also repeats without inflating: the cost does not climb the fifth time, it is the same shape every time, and a player who keeps paying it is learning to ask questions a dog can answer. *Which is a better skill than having the card.*
+<!-- print:skip-end -->
+
 ---
 
 ## Advancement
