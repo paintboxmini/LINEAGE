@@ -74,7 +74,7 @@ detail.** More explanation in the same vocabulary is the wrong repair.
 
 - `factions-and-races/races-sirens.md` — **reserved, Ollie's.** Her working file is `experimental/ollies-island.md`
 - `factions-and-races/races-fairies.md` — **reserved, Sophie's.** Nothing approved, the name included
-- `campaign/` — each file belongs to the player it's about, **for the fiction.** See the split below
+- `campaign/` — each file belongs to the player it's about, **for the fiction.** See the split below. **How much to fill in differs by player**: Chris writes his own specifics, so leave his blanks alone; Pat and Kevin want theirs filled (`campaign/README.md`, How much to fill in)
 
 Don't draft into a reserved slot, don't resolve a naming question that belongs to its owner, and don't move their material.
 

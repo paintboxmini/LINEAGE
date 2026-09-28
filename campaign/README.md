@@ -4,6 +4,15 @@
 
 The split against `experimental/`: experimental holds world lore that isn't settled yet. This folder holds work that belongs to a *player* — their character, their cards, their people, the thread that pulls them out of the house. It's unsettled too, but it's unsettled in someone's hands, and the person whose hands those are gets the final say on it — **on the fiction.**
 
+**How much to fill in depends on the player** *(Drew, 2026-09-28)*. The fiction belongs to each player, but they don't all want to write it:
+
+| | |
+|---|---|
+| **Chris** | **Loves writing out his character's specifics.** Leave his blanks as blanks, name them as open, and don't draft into them. The world around him is fair game; his past is his |
+| **Pat and Kevin** | **Table-focused, and not likely to send more backstory.** Filling in their blanks is what they expect and want — propose it, write it in, and let the table correct it |
+
+*The ownership doesn't change — anything filled in for Pat or Kevin is still theirs to overrule. What changes is whether a blank is a space being kept for someone or just a gap nobody is coming to fill.*
+
 **Fiction is the player's, mechanics are the GM's** *(2026-09-26)*. Who the character is, what they want, what they want to be able to do: theirs, and the reason any of these files are worth reading. **The rule that makes it work at the table is Drew's**, because balance is only visible from the whole pool and because the game has to outlive any one character. A player's mechanical idea is input and it is wanted — it gets taken seriously and then designed. *Chris asked for a touch restriction on Mimicry; the three-rung ladder it became is `campaign/chris.md`, What it can't do.*
 
 ## Contents
