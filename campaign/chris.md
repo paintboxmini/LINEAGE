@@ -432,7 +432,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## Not Yet Set
 
-- Character name
+- ~~Character name~~ — **Code**, set 2026-09-24 (top of this file). *This line was left open after it was answered*
 - **His father's name**, and what actually happened to him
 - **How long he lives** — undetermined on purpose, and better left that way
 - **Whether the moults are finished**, and what the sheds were made of
