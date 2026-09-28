@@ -6,7 +6,7 @@
 
 ## Starting a fight
 
-**Everyone rolls 1d6 + Soul**; highest goes first, ties to higher Soul, then players before enemies. **Everyone draws to hand size** — your Mind, never fewer than 2.
+**Everyone rolls 1d6 + Soul**; highest goes first, ties to higher Soul, then players before enemies. **Everyone draws up to their hand size**, which is their Mind.
 
 ## Your turn
 
