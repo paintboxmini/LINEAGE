@@ -20,7 +20,13 @@ Shunka — dogkin. His people, the war, the curse and the wild-magic line all li
 
 ## Backstory
 
-Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school — what that actually looks like in Shunka society isn't worked out yet, flagged rather than guessed at. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened. He set out into the world from there, presumably close to where Session 1 picks him up, though that's an inference, not stated outright.
+Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened.
+
+**Shunka officers eat last** *(2026-09-28)*. Officer school is not tactics first. It is where a soldier is taught to be the one who holds the line so the others do not have to, and the one who is served after everyone else. *His Price is that doctrine taken personally* (The Price, below) — **an officer's rule he kept after he stopped being one**, and it is why HOLD THE LINE reads the way it does (`campaign/pat-cards.md`).
+
+**He left the army with honour.** A Shunka officer given a charge by the royal dead is not deserting — he is on it. *Nobody from home is chasing him; the party already has one fugitive, and one is the right number.*
+
+**He reached the Nest days before the lockdown**, going straight there from the cemetery — **the newcomer of the three.** Chris and Kevin have had two months at the Nest (`campaign/chris.md`, Two months in the Nest); Caine has had a few days, which is why he is the one with shopping to do and why the first place he looks is the first place he hears *cursed* (`campaign/session-1-convergence.md`, Pat).
 
 **His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`factions-and-races/races-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
@@ -46,7 +52,9 @@ Where that points him, and how the search runs: `campaign/session-1-convergence.
 
 *Which produces one genuinely interesting edge inside the party.* **Kevin has the smallest purse at the table (10 gold) and roughly 150 gold of prepared ingredients in a bag** (`campaign/kevin.md`). **Need is not the same as an empty pocket**, so the plain reading is that Kevin is not in greater need and Caine owes him nothing — *and a player is going to test that*, probably at a counter, probably in session one. Worth having an answer ready rather than reaching for one.
 
-**Breaking it costs more than keeping it**, per the rule: a curse, a forced card, a permanent mark, or whatever the world exacts. **What that looks like for him specifically is open** — he is a wild-magic Shunka whose power is three spirits of a cursed line answering when he calls, and the obvious shape is that one of them does not. *Not written, and not to be invented before it is needed.*
+**Breaking it costs more than keeping it**, per the rule (`rules/character-creation.md`, Declaring a Price). *Set 2026-09-28:* **when he keeps something that someone in greater need needed, his next summon does not come.** One of the royals turns away. He plays the card and nothing answers — the card is spent, no spirit arrives. **It lasts until he makes it right, by giving to somebody worse off than he is.**
+
+*Why this shape:* the spirits are the royal dead, and the Price is charity — so the cost lands on the exact thing he carries that the world can withhold, with no new mechanic needed to deliver it. **A heavier version is held in reserve** if the table wants one: a dead card shuffled into his deck until he makes amends.
 
 ### Straight edge, half druid, half paladin
 
@@ -174,8 +182,8 @@ Not everything below is a Session 1 gap — some of what Drew and Pat talked abo
 Genuinely still needed before Session 1:
 
 - ~~Character name~~ — **Caine**, 2026-09-26. *Settled, and the antagonist who clashed with it was renamed rather than him* (the note at the top of this file)
-- Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
-- ~~Price~~ — **declared 2026-09-26** (The Price, above). *Open instead: what breaking it costs him*
+- ~~Some backstory questions~~ — **filled 2026-09-28**: officer school, how he left the army, and when he reached the Nest (Backstory, above). *Pat is table-focused and wants blanks filled (`campaign/README.md`, How much to fill in); anything here is still his to overrule*
+- ~~Price~~ — **declared 2026-09-26**, and what breaking it costs set 2026-09-28 (The Price, above)
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 
 Open, but possibly progression rather than a creation-time gap — not yet sorted which:

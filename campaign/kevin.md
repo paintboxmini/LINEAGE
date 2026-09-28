@@ -1,5 +1,7 @@
 # Kevin Herb
 
+*The character's name is **Kevin Herb** — settled 2026-09-28. Every file already called him Kevin and the family name was already Herb; it stays unless Kev wants something else.*
+
 **The Herbs are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
 
 **His father Ossian is the only Herb who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
@@ -12,7 +14,7 @@
 
 **Revised 2026-09-19, and it changes what the kit is.** The earlier version of this file had the cooking as the thing Kevin chose *instead of* the Herbs, with the exploding produce as his own strange invention. It is the other way round.
 
-**There is a pepper in the Herb bloodline.** It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
+**There is a pepper in the Herb bloodline, and it is called grace** *(2026-09-28)* — for the prayer said over a meal, in a family of priests, and for the crown's leave that lets them grow it at all. It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
 
 **You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Herbs hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
 
@@ -23,7 +25,7 @@
 ### What this does and does not change
 
 - **He has gunpowder, and he can use it.** The line this file used to carry — *no gunpowder, no explosives of any kind* — is gone. It was never the interesting restriction.
-- **The restriction that replaced it is scarcity.** What is rare is the pepper, not the idea. **Scarcity and the exact mechanics are the balancing levers** — that is a deliberate choice about where to tune him, not an omission. The Ingredients section below already runs on exactly this: he is never short of ammunition, only ever short of good ammunition.
+- **The restriction that replaced it is scarcity.** What is rare is the pepper, not the idea. **Scarcity and the exact mechanics are the balancing levers** — that is a deliberate choice about where to tune him, not an omission. The Ingredients section below already runs on exactly this: **he is rarely short of ammunition and always short of good ammunition — until the grace runs low.**
 - **The craft still stands as written.** Reduce, Charge, Seal; the oranges; the drinks. All of it is what you do to the pepper, and the oranges are the same technique aimed at a fruit that is not the family's.
 - **The grinder still stands as written.** When Kevin said *I make bullets now*, he meant he prepares the rounds — not that the weapon feeds a magazine. One crank, one shot, and the loading is a free action.
 
@@ -67,7 +69,7 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **He went, he got the knife, and he came back.** The vibro knife came from Chris — an alien with a piece of technology this world does not otherwise have, and a friend who did not need a reason to hand it over (Gear, below).
 
-*Nothing here costs him his backstory.* He has been at the University a month, a year, whatever the table wants; the temple is still home, the family is still the family, and the boats still run. Sleep at the church, go back to school.
+*Nothing here costs him his backstory.* **He had been at the University about a year** *(2026-09-28)* — long enough to know Chris properly and be handed the knife, not long enough to stop being barely a student. The temple is still home, the family is still the family, and the boats still run. **What he cannot do is go back to school**: he fought the University's men the night they came for Chris, and it is still looking.
 
 ### And then it ended badly
 
@@ -125,14 +127,16 @@ Everything he fires or throws goes through the same preparation. It is cooking, 
 2. **Charge.** Work a rare ingredient into the reduced flesh so its property survives the burn. This is where the money goes.
 3. **Seal.** Set the skin or husk so it holds pressure until the grinder breaks it, or until the orange lands. Sealed badly, a round is a dud; sealed worse, it goes off in the bandolier.
 
-Finding food that will take an enhancement is easy — peppers are peppers. What's scarce is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is never short of ammunition, only ever short of good ammunition.** A plain reduced pepper still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
+**Every plain round is a grace pepper** *(2026-09-28)* — the family's own, reduced and sealed with no seasoning worked in. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
+
+**And grace is the one thing he cannot restock on his own.** He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low**, and restocking means the only place grace comes from — the Herbs, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
 
 ### Supply and restocking
 
 - **Preparation is a downtime activity.** The Reduce stage alone is hours.
 - **A session of work turns one measure of a rare seasoning into three prepared rounds or two servings of a drink** — a mouthful goes further than a shell, so a drink costs more than a round.
 - **The oranges are not on that budget and never were, properly.** One picking of Burnrind makes **two oranges** and makes nothing else (`flora/burnrind.md`). The fruit is the charge, so there is no seasoning to divert and nothing else to spend it on.
-- **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden.
+- **Plain rounds are grace peppers, and grace comes from his family.** Plentiful enough that nobody counts — **until the GM says he is running low**, which is a beat rather than a number (The process, above).
 - **Restocking is an ingredient problem, and ingredient problems are quests.** *Burnrind is the one that is a question rather than a fight — free, legal, lying on the ground, and impossible to find without asking the right person which bank went up and when.*
 
 ### What this build actually costs — read this before playing him
@@ -192,7 +196,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 **Plain is genuinely blank now.** A plain round makes GRIND SHOT a vanilla attack with no text at all — which finally makes *"never short of ammunition, only ever short of good ammunition"* bite instead of just reading well. He can always fire. Firing is often not worth the turn.
 
-**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. Not yet decided whether he's Kevin's supplier, teacher, rival, or something else, but he's the obvious connection point once Kevin reaches the Capital.
+**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. **He has a stock of cinder flake and hush petal, and he will not sell it** *(2026-09-28)*. Whether he parts with any depends on how things stand between him and Kevin, and **the currency is ingredients, never gold** — he already loses money on the Fricassee and is delighted to (`places/capital/gilded-tusk.md`, The Fricassee loses money). **Bring him something he has never cooked and he will trade.** *So he is a rival for supply, a possible friend, and the one person in the Capital who values what Kevin carries for the same reason Kevin does.*
 
 ### The beverages
 
@@ -221,7 +225,7 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 His real exchange rate is already written above under Supply and restocking: **one measure of rare seasoning becomes three prepared rounds or two servings of a drink.** So:
 
 - A drink costs him **a round and a half**.
-- A round is the cheapest thing he makes, and the only one he can make from the plain stock indefinitely.
+- A round is the cheapest thing he makes, and a plain one costs him nothing but a grace pepper — plentiful until the day it isn't.
 - **An orange costs him neither.** It is off this exchange entirely and on Burnrind's, where the rate is one picking to two oranges and there is nothing else the picking could have been (`flora/burnrind.md`).
 
 **That 3:2 is the economy to play against, not the gold** — and the oranges are a second economy beside it that does not trade with the first. The gold matters when he is selling to somebody, bartering with Senshi (`places/capital/gilded-tusk.md`), or working out whether a job is worth taking. What he spends an afternoon making is decided by the ingredient, not by the price list.
@@ -239,7 +243,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 | **2 hush petal rounds** | Rooted, either direction. A measure with one round already gone out of it |
 | **1 Bitter Shot** | Quick |
 | **1 The Early Cup** | Initiative Shift +1. Both drinks are plain-charge, so neither cost him a seasoning — which is why these two and not the good ones |
-| **Plain rounds** | As many as anyone cares to count. They do nothing |
+| **Plain rounds** | Grace peppers, enough that nobody counts — until the GM says otherwise. They do nothing |
 
 *The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on, which is what retired SERVE in the first place.*
 
@@ -426,17 +430,18 @@ Range: Both
 
 ## Not Yet Set
 
-- Character name
-- Which other fruits he's worked out, if any — **and whether anything but Burnrind can carry the grenade**, now that the orange has a specific plant behind it
+- ~~Character name~~ — **Kevin Herb**, 2026-09-28
+- ~~Other fruits, and whether anything but Burnrind carries the grenade~~ — **Burnrind only**, 2026-09-28. A second grenade fruit would reopen the one hole Burnrind closed. *Any new fruit arrives as a plant somebody has to go and find*
 - ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
 - ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
-- **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
+- ~~The pepper's name and rarity~~ — **grace**, and it is the plain round; its scarcity is a GM beat (*you're running low*) rather than a count, 2026-09-28 (The process, above)
+- **Whether charged rounds start from a grace pepper too.** Plain rounds do. If charged ones do as well, running low on grace stops him making good rounds as well as plain ones — a much harder beat
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
-- Price
+- **Price — waiting on Kev.** If he cannot find one, two are drafted to offer him: *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
 - **What he thinks he did that night**, and whether he would do it again
 - The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
-- Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
-- How long he has actually been at Gemstone University, and whether he is going back
+- ~~Whether Senshi stocks cinder flake and hush petal~~ — **he does, and won't sell; he trades for unique ingredients, depending on the relationship**, 2026-09-28 (The Ingredients, above)
+- ~~How long at the University, and whether he is going back~~ — **about a year; not while this lasts**, 2026-09-28 (Gemstone University, above)
 
 *Settled 2026-09-27: **the stats**, at Body 4 / Mind 3 / Soul 2 (Stats, above).*
 
