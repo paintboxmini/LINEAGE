@@ -21,16 +21,16 @@
 
 ## Attacking
 
-1. **You** put a card face down.
-2. **They** may defend with one face down, legal for the range. No defence, you win.
-3. **Anyone holding Blind or Evade** rolls a d2.
+1. **Declare who you're attacking**, then put a card face down.
+2. **Anyone holding Blind or Evade** rolls a d2.
+3. **If the attack doesn't miss, the defender may defend** with a card face down, legal for the range. No defence, you win.
 4. **Both flip together — Blue beats Red, Red beats Green, Green beats Blue.**
 
 - **You win:** damage is **your stat + the card's die**, then your Effect.
-- **They win:** no damage, and their Defense Effect.
-- **Same colour:** no damage — your Effect, then theirs.
+- **The defender wins:** no damage, and the defender's Defense Effect.
+- **Same colour:** no damage — your Effect, then the defender's.
 
-**Range:** Melee needs you both in the Frontline; Ranged needs you not to be; Both works anywhere. **Damage** goes Immunity → Armour → Resist (half) or Vulnerable (×1.5); **unpreventable** skips it all. **Initiative shifts** move your turn sooner or later — never take it away.
+**Range:** Melee needs you both Frontline; Ranged, not both; Both, anywhere. **Damage:** Immunity → Armour → Resist (half) or Vulnerable (×1.5); **unpreventable** skips it. **Initiative shifts** move your turn, never take it.
 
 **At 0 HP you're Down:** no attacking or moving, but you still defend and keep your free action. Healing lifts you above 0; **standing costs your Action**. At **minus half your max HP**, you die.
 
