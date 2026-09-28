@@ -123,20 +123,20 @@ The wine and the pepper go to distant ports, and some of them are not respectabl
 
 Everything he fires or throws goes through the same preparation. It is cooking, done wrong on purpose.
 
-1. **Reduce.** Draw the water out — low heat, hours, watched. What's left is flesh that burns instead of steaming. Costs time and a fire he controls, nothing else.
+1. **Reduce.** Take a grace pepper and draw the water out — low heat, hours, watched. What's left is flesh that burns instead of steaming. Costs time and a fire he controls, nothing else.
 2. **Charge.** Work a rare ingredient into the reduced flesh so its property survives the burn. This is where the money goes.
 3. **Seal.** Set the skin or husk so it holds pressure until the grinder breaks it, or until the orange lands. Sealed badly, a round is a dud; sealed worse, it goes off in the bandolier.
 
-**Every plain round is a grace pepper** *(2026-09-28)* — the family's own, reduced and sealed with no seasoning worked in. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
+**Every round is a grace pepper** *(2026-09-28)* — the family's own. A plain round is one reduced and sealed with nothing worked in; a charged round is the same pepper with a seasoning worked in at stage 2. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
 
-**And grace is the one thing he cannot restock on his own.** He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low**, and restocking means the only place grace comes from — the Herbs, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
+**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and hush petal is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low**, and restocking means the only place grace comes from — the Herbs, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
 
 ### Supply and restocking
 
 - **Preparation is a downtime activity.** The Reduce stage alone is hours.
 - **A session of work turns one measure of a rare seasoning into three prepared rounds or two servings of a drink** — a mouthful goes further than a shell, so a drink costs more than a round.
 - **The oranges are not on that budget and never were, properly.** One picking of Burnrind makes **two oranges** and makes nothing else (`flora/burnrind.md`). The fruit is the charge, so there is no seasoning to divert and nothing else to spend it on.
-- **Plain rounds are grace peppers, and grace comes from his family.** Plentiful enough that nobody counts — **until the GM says he is running low**, which is a beat rather than a number (The process, above).
+- **Every round, plain or charged, is a grace pepper, and grace comes from his family.** Plentiful enough that nobody counts — **until the GM says he is running low**, which is a beat rather than a number (The process, above).
 - **Restocking is an ingredient problem, and ingredient problems are quests.** *Burnrind is the one that is a question rather than a fight — free, legal, lying on the ground, and impossible to find without asking the right person which bank went up and when.*
 
 ### What this build actually costs — read this before playing him
@@ -434,8 +434,7 @@ Range: Both
 - ~~Other fruits, and whether anything but Burnrind carries the grenade~~ — **Burnrind only**, 2026-09-28. A second grenade fruit would reopen the one hole Burnrind closed. *Any new fruit arrives as a plant somebody has to go and find*
 - ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
 - ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
-- ~~The pepper's name and rarity~~ — **grace**, and it is the plain round; its scarcity is a GM beat (*you're running low*) rather than a count, 2026-09-28 (The process, above)
-- **Whether charged rounds start from a grace pepper too.** Plain rounds do. If charged ones do as well, running low on grace stops him making good rounds as well as plain ones — a much harder beat
+- ~~The pepper's name and rarity~~ — **grace**, and every round starts as one, plain or charged; its scarcity is a GM beat (*you're running low*) rather than a count, 2026-09-28 (The process, above). **So running low stops him making good rounds as well as plain ones** — the hardest beat his sheet has, and a family conversation to fix
 - **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
 - **Price — waiting on Kev.** If he cannot find one, two are drafted to offer him: *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
 - **What he thinks he did that night**, and whether he would do it again
