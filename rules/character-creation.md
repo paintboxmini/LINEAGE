@@ -28,7 +28,7 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 |---|---|---|---|
 | **Colour** | Red | Blue | Green |
 | **Damage** | Body + die on Red | Mind + die on Blue | Soul + die on Green |
-| **Derived** | **HP**, weighted 4× | **Hand size** (minimum 2) | **Initiative**, 1d6 + Soul |
+| **Derived** | **HP**, weighted 4× | **Hand size** (no minimum) | **Initiative**, 1d6 + Soul |
 | **Also governs** | Physical speed and force | Reasoning and control | Reflexes |
 | **Check** | Overcome a physical obstacle, impose physical control | Obtain or interpret information, solve, predict, argue | Create and hold bonds, resist spiritual pressure, enforce oaths |
 | **Save** | Fatigue, falls, cold, pain, forced movement | Illusions, manipulation, memory interference | Fear, corruption, possession, despair |

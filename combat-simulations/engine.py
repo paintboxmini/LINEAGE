@@ -381,8 +381,9 @@ class Combatant:
 
     @property
     def hand_size(self):
-        """rules/character-creation.md: hand size is Mind, minimum 2."""
-        return max(2, self.mind)
+        """rules/character-creation.md: hand size is Mind, with no minimum.
+        A hand of zero is allowed (2026-09-28)."""
+        return max(0, self.mind)
 
     @property
     def death_threshold(self):
