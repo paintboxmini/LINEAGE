@@ -167,23 +167,29 @@ A Passive resolves exactly like a card from hand once concealment is settled —
 
 ## Attack Resolution
 
-1. Attacker plays 1 card, face down — committed, not yet public.
+1. **Attacker declares a target** and plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
-3. **Blind and Evade resolve now, before either card is revealed.** Both cards are already committed at this point. Every check that applies actually rolls — being attacked is what triggers a defender's Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender's own block-miss gets rolled, even when it turns out not to have mattered:
+**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
+
+3. **Both cards reveal simultaneously** — only now do they become public and move to their owners' discard piles. With no defence, only the attacker's card turns over.
+4. **Blind and Evade resolve now — after the reveal, before Rock-Paper-Scissors, and before any Special Rule on either card** *(2026-09-28)*. Every check that applies actually rolls — being attacked is what triggers a defender's Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender's own block-miss gets rolled, even when it turns out not to have mattered:
    - **Attacker's Blind:** roll 1d2 if the attacker holds it.
    - **Defender's Evade:** roll 1d2 if the defender holds it.
    - **Defender's Blind:** roll 1d2 if the defender holds it and is actually defending.
 
    **Resolving the rolls, in this order:**
-   1. **Defender's Evade succeeds** → the defender auto-wins the resolution (step 5's Defender wins outcome). A clean dodge — nothing else in this step changes that.
-   2. **Otherwise, attacker's Blind misses *and* defender's Blind misses** → **Mutual Miss** (see step 5): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn't.
+   1. **Defender's Evade succeeds** → the defender auto-wins the resolution (step 6's Defender wins outcome). A clean dodge — nothing else in this step changes that.
+   2. **Otherwise, attacker's Blind misses *and* defender's Blind misses** → **Mutual Miss** (see step 6): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn't.
    3. **Otherwise, attacker's Blind misses alone** (the defender's own block, if any, didn't also miss) → the defender auto-wins the resolution.
    4. **Otherwise, defender's Blind misses alone** (the attacker's own attack, above, didn't also miss) → the attacker wins automatically, exactly like no legal defense, below.
-   5. **Otherwise** (none of the above fired) → proceed to the reveal.
+   5. **Otherwise** (none of the above fired) → go on to step 5.
 
-**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
-4. If the defender cannot or chooses not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.
-5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
+   <!-- print:skip-start -->
+   *Why after the reveal, 2026-09-28.* **Both cards always get played and flipped, and the checks come first once they're face up** — the simplest order to run at a table. The cost is accepted on purpose: **an attack that misses to its own Blind still hands the defender their Defense Effect**, because the defender won. Checking before the defender commits would stop that, and would let the defender keep the card in hand — but it adds a branch every exchange has to walk. *Drew's call: keep it streamlined.* Nothing about the outcomes changed from the earlier wording, which ran the same checks just before the flip; only the moment moved.
+   <!-- print:skip-end -->
+
+5. If the defender cannot or chose not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.
+6. Otherwise, resolve using Rock-Paper-Scissors:
 
 ```
 Blue (Mind)   beats  Red   (Body)
@@ -194,7 +200,7 @@ Green (Soul)  beats  Blue  (Mind)
 **Attacker wins** → deal damage, then apply the card's Effect  
 **Defender wins** → no damage + defender triggers Defense Effect  
 **Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
-**Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 3, above); it never comes up during a normal reveal.
+**Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 4, above); it never comes up in a normal colour comparison.
 
 An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
 

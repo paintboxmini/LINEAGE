@@ -22,9 +22,10 @@
 ## Attacking
 
 1. **Declare who you're attacking**, then put a card face down.
-2. **Anyone holding Blind or Evade** rolls a d2.
-3. **If the attack doesn't miss, the defender may defend** with a card face down, legal for the range. No defence, you win.
-4. **Both flip together — Blue beats Red, Red beats Green, Green beats Blue.**
+2. **The defender may defend** with a card face down, legal for the range.
+3. **Both flip together.**
+4. **Blind and Evade roll first** (d2): your miss or their dodge, the defender wins; their miss, you win; both, nothing.
+5. **No defence, you win. Else Blue beats Red, Red beats Green, Green beats Blue.**
 
 - **You win:** damage is **your stat + the card's die**, then your Effect.
 - **The defender wins:** no damage, and the defender's Defense Effect.

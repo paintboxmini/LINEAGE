@@ -44,14 +44,14 @@ A specific benefit persists as long as you do not change positions, triggering a
 *Written down because Anchored reads stronger than it plays, and reviewers keep arriving at "this needs a restriction." It already has three: the delay, the movement, and the hand it strands.*
 
 **(8) Blind**
-50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
+50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both cards are face up, before Rock-Paper-Scissors and before any Special Rule (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
 
 **An attacker's miss alone** ends the exchange in the defender's favor — the defender auto-wins the resolution, exactly as if the RPS reveal had gone their way, and the attacker's card is discarded. **A defender's miss alone** on their own block resolves exactly like having no legal defense: the attacker wins automatically. **Both missing in the same exchange** is neither of those — it's a Mutual Miss (`rules/combat.md`, Attack Resolution): the attack failed and the attempted block against it also failed, so nobody wins and no Effect or Defense Effect triggers. A defender's Evade succeeding overrides all of this — a clean dodge wins the exchange outright regardless of what either Blind roll says.
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
 **(12) Evade**
-50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
+50% chance to dodge an attack declared against you. Checked once the cards are face up — after you've chosen your defense or declined to — before Rock-Paper-Scissors and before any Special Rule (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 

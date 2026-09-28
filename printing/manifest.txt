@@ -36,4 +36,4 @@
   packet                       15 sections  7e508103f1a7
   play-reference               43 sections  cf35833ef3de
   simulator-narrated-cards      7 sections  92d3810b7240
-  turn-guide                    4 sections  351b32034ae1
+  turn-guide                    4 sections  defeeaa935d7
