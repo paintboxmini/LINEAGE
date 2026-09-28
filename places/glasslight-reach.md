@@ -44,7 +44,7 @@ Most who leave don't stop wanting to come back, even just for a visit. Losing th
 
 The economy runs on light. Light-cartographers are the nobility — their books full of swatches, lens-angles, humidity notes, annotations of hues that don't have names.
 
-Primary exports: light atlases, hand-ground prisms, and silvered paper that holds a hue for a few hours before fading.
+Primary exports: light atlases, hand-ground prisms, and silvered paper — the cheap grade, which lets go of an image about a week after its subject has changed (`factions-and-races/the-cartographers-guild.md`, The Atlas).
 
 ## The Tide Market
 
@@ -52,7 +52,7 @@ Ink, paper, sweet breads, minerals, roasted bird and other flying things — the
 
 ## The Gallery
 
-Half the wall is light maps — the Glasslight chapter's own specialty (`factions-and-races/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, same underlying limit as the silvered paper the rest of the economy runs on (see Economy, above) — light doesn't hold a hue forever no matter how carefully it's set. A light map is worked harder and holds longer than a plain export sheet, about a week before the color gives out, but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
+Half the wall is light maps — the Glasslight chapter's own specialty (`factions-and-races/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, because what they record doesn't: **an image only fades once its subject changes**, and the Soft Edge and the town's own light never stop changing (`factions-and-races/the-cartographers-guild.md`, The Atlas). A light map is made on the specialised stock and holds a couple of months after its subject has moved on, against about a week for a plain export sheet — but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
 
 One piece is the exception, and it isn't for sale: a Tomás Kettlewright recording of the light-dance itself, Guild chapter window bait, and the finest piece of light cartography anyone in the Reach has seen. Not a survey of the cliff face — a recording of the thing out past it, taken with the same instruments and the same discipline, which is exactly why it's the showpiece. The Guild records the dancing lights; that is a stated part of the work (`factions-and-races/the-cartographers-guild.md`, Methods). Almost nobody records them *well*.
 

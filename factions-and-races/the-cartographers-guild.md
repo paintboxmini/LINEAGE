@@ -18,7 +18,19 @@ The fact that four to five days travel time between major locations is even poss
 
 **Both hard regions are mapped this way, for the same reason.** A Soft Edge survey is a color record because color is the readable part: quartz keeps the hue of the last light that reached it, mineral veins blend their own fixed color into that, and sections shear off with no warning and expose stone that has never been lit (`places/glasslight-reach.md`, The Soft Edge). A pocket of In-Between is recorded because a line drawing of one is a lie by the time it's dry (`world/eclipseria-overview.md`). Neither can be surveyed once and filed.
 
-**The images fade. The writing doesn't.** An atlas plate is the most durable light-work the Guild does and it still gives out eventually — years, not the week a market sheet gets, but eventually. The ink in the margins outlives it. The oldest atlases in the chapter house are pages of careful notes arranged around a blank rectangle, and they are still read, because the argument in the margins was always the part that took a career to be able to write.
+**The images fade. The writing doesn't.** *And an image only fades when its subject changes* — a light recording holds for as long as the thing it recorded is still that thing (Drew, 2026-09-28). **The material sets how long it holds after that:**
+
+| | |
+|---|---|
+| **Plain paper** — the market sheet | About a week |
+| **Light-map stock** — the specialised material | A couple of months |
+| **Metal foil over slate** — the atlas plate | Years |
+
+*Even the cheapest grade takes days to let go.* **Everything the Guild records is changing** — the Soft Edge fastest of anything in the kingdom, a pocket at its edges, a road by the season — which is why their images always go in the end, and why the ink in the margins outlives them.
+
+*This is the property that makes light-work worth doing for anything that does* **not** *change. A likeness of a living person holds as long as the person does, which is why a light recording can sit on a document (`campaign/chris.md`, The papers describe somebody) — and why a likeness that has started to fade is telling you something happened to the person in it.*
+
+The ink in the margins outlives the image. The oldest atlases in the chapter house are pages of careful notes arranged around a blank rectangle, and they are still read, because the argument in the margins was always the part that took a career to be able to write.
 
 **Handwritten journals sit alongside the atlases**, and are not a lesser thing. A cartographer who actually walked a pocket of In-Between and came back keeps a personal account of it, in their own hand, and that account carries the parts no instrument records — what the ground felt like underfoot, where they lost time, what they did when the route stopped agreeing with itself. Journals get copied, traded, and argued over.
 

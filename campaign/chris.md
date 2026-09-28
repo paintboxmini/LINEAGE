@@ -181,14 +181,13 @@ What the kit delivers so far:
 
 **The likeness is light cartography** *(Drew, 2026-09-28)*. Not a painting and not a photograph — the same light-work the Cartographers' Guild records the Soft Edge with (`factions-and-races/the-cartographers-guild.md`, `places/glasslight-reach.md`). *It was already in the setting; nothing had connected it to papers yet.*
 
-**And light-work fades, which is the part that matters here.** The setting gives three grades: silvered market paper holds a hue for a few hours, a gallery light map about a week, and an atlas plate for years — *but eventually* (`factions-and-races/the-cartographers-guild.md`: **the images fade, the writing doesn't**). **An identity document has to outlast a season, so the likeness on one is atlas-grade work** — expensive to issue and slow to age. *That follows from the three grades; nothing says it outright.*
+**A light recording is truer than a painting.** *The image is the observation*, in the Guild's own words. So the lookalike has to match a face that was recorded rather than interpreted — a harder bar than a painted likeness would set.
 
-**Two consequences for Chris, pulling in opposite directions:**
+**And the likeness only fades if its subject changes** (`factions-and-races/the-cartographers-guild.md`, The Atlas). *It does not age off the page on its own.* **So the picture on these papers is a report on the man they were stolen from.** A sharp likeness means he is alive and still himself. A fading one means something happened to him — and on a stranger robbed on a dock two months ago, the likeliest something is that he is dead.
 
-- **A light recording is truer than a painting.** *The image is the observation*, in the Guild's own words. So the lookalike has to match a face that was recorded rather than interpreted — a harder bar than a painted likeness would set.
-- **But the face is fading and the writing is not.** Papers a few years old carry a softer face than the day they were issued, and a softer face is easier to match. **How far the stolen likeness has faded is the GM's lever on how hard the check is**, and it is open (Not Yet Set, below). *The written description in the margins — height, marks, age — does not fade at all, so an old document gets checked by its writing more than its picture.*
+**Which turns one of this file's open questions into something Chris is carrying in his pocket.** Whose papers these are, and whether the owner went home, stayed, is wanted, or died (Not Yet Set, below), is not only the GM's to know — **the answer is printed on the document, and anybody who looks closely enough can read it.** Chris has had two months to look. *Whether it is sharp or fading gets decided with the owner's fate, and not before.*
 
-**It also answers the question of wanted notices.** A face on a notice has to be atlas-grade to last longer than a week, and nobody commissions atlas plates for a poster. **So the people hunting Chris cannot cheaply put his face on a wall** — a sharp one lasts days, a lasting one costs a Guild commission. *And any face they did print is the one he walked out wearing, which is the one face he can trade for another.*
+**Wanted notices are drawn, not recorded** *(Drew, 2026-09-28)*. Light cartography needs its subject in front of the instrument, and the person on a wanted notice is by definition not there. **So any notice for Chris would carry an artist's likeness** — less exact than a recording, and no more use to Mimicry than any other picture. *Whether the University would post one at all is open* (Not Yet Set, below).
 
 ### When somebody asks — the check
 
@@ -437,7 +436,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **Whether the moults are finished**, and what the sheds were made of
 - **What the spell book is** — whose, and what is in it
 - **What the University wanted to make him into**, in any detail beyond "a weapon"
-- **Whose papers Chris is carrying.** *Deliberately open* (Two months in the Nest, above). Somewhere there is a real person who owns that name — robbed on a dock a couple of months ago, and since then either gone home, still in town, wanted for something of their own, or dead. **Every one of those is a different thread and none of them needs deciding until somebody pulls it.** Kino knows whose purse it came out of
+- **Whose papers Chris is carrying.** *Deliberately open* (Two months in the Nest, above). Somewhere there is a real person who owns that name — robbed on a dock a couple of months ago, and since then either gone home, still in town, wanted for something of their own, or dead. **Every one of those is a different thread and none of them needs deciding until somebody pulls it.** Kino knows whose purse it came out of. *And the likeness on the papers answers the dead-or-alive half of it for anyone who looks closely* — sharp if he lives, fading if he does not (The papers describe somebody, above)
 - **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
@@ -445,7 +444,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
-- ~~Whether identification papers carry an image~~ — **yes, a light-cartographic likeness**, 2026-09-28 (The papers describe somebody, above). *Open instead:* **how far the likeness on the stolen papers has faded.** It sets how hard the lookalike is to pass, and it is the GM's to decide
+- ~~Whether identification papers carry an image~~ — **yes, a light-cartographic likeness**, 2026-09-28 (The papers describe somebody, above). **And it answers the next question on its own:** the likeness fades only if its owner has changed, so **whether it is sharp or fading is decided together with whose papers these are**, above
+- **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open
 
 ## Related Documents
 
