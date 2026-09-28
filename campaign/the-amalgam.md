@@ -26,7 +26,7 @@ He arrived broken instead of merely tired — his link to the Amalgam severed, n
 
 He came down at the Abyssal Ruins, through the Central Gateway (`places/abyssal-ruins.md`) — the largest known rift in Eclipseria and the only crossing point in the region big enough to have let something like him through at all. **And he stayed there.**
 
-**Found and raised by a scholar of Gemstone University**, whose field is plant life and who was at the Ruins studying what the rift does to the things that grow near it. He did not report the find. He raised the child as his own, in secret, away from the building, and Chris grew up in the shadow of the institution that would eventually come to take him (`campaign/chris.md`, Where He Landed).
+**Found and raised by a scholar of Gemstone University**, whose field is plant life and who was at the Ruins studying what the rift does to the things that grow near it. He did not report the find. He raised the child as his own, in secret, away from the building, and Chris grew up in the shadow of the institution that would eventually come to take him — **and that had already had him once, as a child, and experimented on him before his father hid him** (`campaign/chris.md`, The man who found him).
 
 *This replaces the Iron and Briarwatch arrival that stood here until 2026-09-19* — Drew's own suggestion, always marked tentative, and now fully superseded by its owner. Iron and Briarwatch are free for other uses, and everything this file used to argue from "he wasn't a child in any sense" is void: he was a child in most of the senses that matter, because he imprinted into one and was brought up as one.
 

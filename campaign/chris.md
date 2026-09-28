@@ -26,6 +26,8 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **He raised the boy as his own, and he did it in secret, away from the University.** He did not report the find. Everything that follows is downstream of that one decision: a scholar who studies what the rift changes, looking at the most extraordinary thing the rift ever produced, and choosing to be a father to it instead of a discoverer of it.
 
+**And the University had him anyway, as a child** *(canon, Drew, 2026-09-28)*. **They experimented on him during his childhood, and his father hid him.** *This file used to say the University only found out about him on the night they ran; that is superseded.* **The order this file now reads them in** — found and kept quiet, then taken by the University as a boy and experimented on, then got out and hidden by his father, then found again years later — *is the reading that keeps everything else here true*, and it is written that way until Drew or Chris's player says the sequence goes differently (Not Yet Set, below). **What the experiments were is not written.**
+
 **He is Chris's father in every sense the word is doing work in.** Not a guardian, not a keeper. The file does not name him yet — that is Chris's, like the rest of this.
 
 *This is what was reserved and is now written.* `places/abyssal-ruins.md` held "who the man was" on its not-to-be-written list specifically so its owner could answer it. He has.
@@ -50,7 +52,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **Set 2026-09-19. This is the most load-bearing thing in the file** — it is Chris's origin, Kevin's reason for being at Vulture's Nest, and the party's first shared history, all in one scene.
 
-**The University found out about him.** Not the father, not the secret — Chris himself. And its decision was not curiosity: **it decided to take him, by force, and make a weapon of him.** A thing that came through the largest rift in the world and can be anything is not a research subject to the people who run that building. It is an instrument.
+**The University found him again.** It had already had him once, as a child, and experimented on him before his father hid him (The man who found him, above). **This time its decision was not study: it decided to take him, by force, and make a weapon of him.** A thing that came through the largest rift in the world and can be anything had been a research subject to the people who run that building. *It was an instrument now.*
 
 **They sent muscle.** Kevin was there — not a bystander, in it, fighting alongside them. Chris's father put himself between his son and the men who came for him and **told him to run**, and he was still holding them when the running started.
 
@@ -183,7 +185,7 @@ What the kit delivers so far:
 
 **A light recording is truer than a painting.** *The image is the observation*, in the Guild's own words. So the lookalike has to match a face that was recorded rather than interpreted — a harder bar than a painted likeness would set.
 
-**And the likeness only fades if its subject changes** (`factions-and-races/the-cartographers-guild.md`, The Atlas). *It does not age off the page on its own.* **So the picture on these papers is a report on the man they were stolen from.** A sharp likeness means he is alive and still himself. A fading one means something happened to him — and on a stranger robbed on a dock two months ago, the likeliest something is that he is dead.
+**And the likeness only fades if its subject changes** (`factions-and-races/the-cartographers-guild.md`, The Atlas) — *slowly as he ages, fast if he dies.* **So the picture on these papers is a report on the man they were stolen from.** A face a little soft for the papers' age is a living man getting older, and the issue date is in the writing, which does not fade, so anyone can read the one against the other. **A face going faster than its age explains means he changed outright** — and on a stranger robbed on a dock two months ago, the likeliest way to change outright is to die.
 
 **Which turns one of this file's open questions into something Chris is carrying in his pocket.** Whose papers these are, and whether the owner went home, stayed, is wanted, or died (Not Yet Set, below), is not only the GM's to know — **the answer is printed on the document, and anybody who looks closely enough can read it.** Chris has had two months to look. *Whether it is sharp or fading gets decided with the owner's fate, and not before.*
 
@@ -445,7 +447,9 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - ~~Whether identification papers carry an image~~ — **yes, a light-cartographic likeness**, 2026-09-28 (The papers describe somebody, above). **And it answers the next question on its own:** the likeness fades only if its owner has changed, so **whether it is sharp or fading is decided together with whose papers these are**, above
-- **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open
+- **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision
+- **What the University's experiments on him were**, and whether any of the twelve moments in `experimental/code-concept-cards.md` is one of them. Act I is currently the imprint, the moults and his father teaching him to look
+- **The order of his childhood** — found, taken, hidden, found again is this file's reading (The man who found him, above), not yet confirmed
 
 ## Related Documents
 

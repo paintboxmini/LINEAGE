@@ -26,7 +26,9 @@ The fact that four to five days travel time between major locations is even poss
 | **Light-map stock** — the specialised material | A couple of months |
 | **Metal foil over slate** — the atlas plate | Years |
 
-*Even the cheapest grade takes days to let go.* **Everything the Guild records is changing** — the Soft Edge fastest of anything in the kingdom, a pocket at its edges, a road by the season — which is why their images always go in the end, and why the ink in the margins outlives them.
+*Even the cheapest grade takes days to let go.* **And slow change counts** *(Drew, 2026-09-28)* — a person ageing, a road weathering. *The image goes the way its subject goes:* a likeness of a living person softens across years as the face it caught gets older, while a sudden, total change — a death — takes it about as fast as the material allows. **That is why identity papers get reissued**, and why a soft face on old papers is ordinary rather than suspicious. *The table above is the hold after an outright change; that reading is the one that fits every case here.*
+
+**Everything the Guild records is changing** — the Soft Edge fastest of anything in the kingdom, a pocket at its edges, a road by the season — which is why their images always go in the end, and why the ink in the margins outlives them.
 
 *This is the property that makes light-work worth doing for anything that does* **not** *change. A likeness of a living person holds as long as the person does, which is why a light recording can sit on a document (`campaign/chris.md`, The papers describe somebody) — and why a likeness that has started to fade is telling you something happened to the person in it.*
 

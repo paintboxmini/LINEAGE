@@ -55,7 +55,7 @@ A depression twenty feet below the ruins floor. The violet haze pools here over 
 
 **Also set 2026-09-19, and it changes how this place should be run.** The man who found the thing that came through the Gateway was **a scholar of plant life at the University**, and he did not report it — he raised the child as his own, in secret, away from the building (`campaign/chris.md`).
 
-**The University found out anyway, and sent men to take him by force**, having decided that something which came through the largest rift in the world and can be anything is not a subject to study but an instrument to own. The father held them off and told the boy to run. **What became of him is unwritten on purpose.**
+**The University had him anyway, as a child, and experimented on him** before his father got him out and hid him *(canon, 2026-09-28; `campaign/chris.md`, The man who found him)*. **Years later it found him again and sent men to take him by force**, having decided that something which came through the largest rift in the world and can be anything is no longer a subject to study but an instrument to own. The father held them off and told the boy to run. **What became of him is unwritten on purpose.**
 
 **So this is not a neutral institution and should not be played as one.** It is a body of scholars at the rim that reached, at least once, for a person. *How far that goes — whether it is the whole University, a faction inside it, or one office nobody else knows about — is still reserved, and is exactly the kind of thing worth leaving to the player whose father it took.*
 

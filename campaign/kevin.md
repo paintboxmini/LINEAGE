@@ -71,7 +71,7 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 ### And then it ended badly
 
-**The University came for Chris.** It found out what he was, decided a thing that came through the largest rift in the world would make a better weapon than a subject, and sent men to take him (`campaign/chris.md`, The Night They Ran). Chris's father — a scholar at that same University, who had raised him in secret — put himself in the way and told his son to run.
+**The University came for Chris.** It had already had him once as a child and experimented on him, before his father hid him; this time it found him again, decided a thing that came through the largest rift in the world would make a better weapon than a subject, and sent men to take him (`campaign/chris.md`, The Night They Ran). Chris's father — a scholar at that same University, who had raised him in secret — put himself in the way and told his son to run.
 
 **Kevin was in that fight, and Kevin is the one who ended it for Chris.** He took hold of him and physically tore him out of the moment, away from his father, because Chris was not going to leave on his own. *That is the single most important thing on Kevin's sheet and it is not a stat.* He saved his friend's life and he took the choice away from him in the same motion, and nobody has said a word about it since.
 
