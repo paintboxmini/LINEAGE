@@ -167,7 +167,7 @@ What the kit delivers so far:
 
 **Mimicry copies the surface of a person he has looked at** (Trait — Mimicry, below) — *a person, in front of him.* He has never seen the man whose papers these are. **So the one character at this table who can become anybody is carrying an identity he specifically cannot wear.**
 
-**And there is a likeness on the document**, which turns that from a background irony into a problem he had to solve two months ago. A paper carrying a name and nothing else would be the easier version — he could simply be a man with a name. The likeness makes it a face he has to match, and **Mimicry cannot copy a picture.** The Trait runs off somebody he actually looked at; a printed face is not a person, and there is nothing behind it to look at. *The papers arrive carrying a face he cannot take from them.*
+**And there is a likeness on the document**, which turns that from a background irony into a problem he had to solve two months ago. A paper carrying a name and nothing else would be the easier version — he could simply be a man with a name. The likeness makes it a face he has to match, and **Mimicry cannot copy a picture.** The Trait runs off somebody he actually looked at; a recorded face is not a person, and there is nothing behind it to look at. *The papers arrive carrying a face he cannot take from them.*
 
 **So he found a man in the Nest who resembles it.** Somewhere in Vulture's Nest is a living stranger who looks close enough to the likeness to survive a glance at it, and Chris went and looked at him properly — *which is exactly the thing the Trait rewards.* **The face Chris wears with those papers belongs to neither the man on the document nor to Chris.**
 
@@ -179,7 +179,16 @@ What the kit delivers so far:
 
 *He passes a glance. He does not pass anybody who knew the original — and he does not pass anybody who knows the man he copied either,* which is the second failure mode and the newer one. **That is what the DC 16 row below is for.**
 
-**One thing this asserts that the repo has not settled:** that identification papers carry an image at all. *The mechanic is the same whether it is a photograph, a plate or a painted likeness* — what matters is that it is a picture rather than a person. But a world that can put a face on a document can also put a face on a notice, and the people looking for Chris would be the first to use it, so the answer is worth having before somebody needs it (Not Yet Set, below).
+**The likeness is light cartography** *(Drew, 2026-09-28)*. Not a painting and not a photograph — the same light-work the Cartographers' Guild records the Soft Edge with (`factions-and-races/the-cartographers-guild.md`, `places/glasslight-reach.md`). *It was already in the setting; nothing had connected it to papers yet.*
+
+**And light-work fades, which is the part that matters here.** The setting gives three grades: silvered market paper holds a hue for a few hours, a gallery light map about a week, and an atlas plate for years — *but eventually* (`factions-and-races/the-cartographers-guild.md`: **the images fade, the writing doesn't**). **An identity document has to outlast a season, so the likeness on one is atlas-grade work** — expensive to issue and slow to age. *That follows from the three grades; nothing says it outright.*
+
+**Two consequences for Chris, pulling in opposite directions:**
+
+- **A light recording is truer than a painting.** *The image is the observation*, in the Guild's own words. So the lookalike has to match a face that was recorded rather than interpreted — a harder bar than a painted likeness would set.
+- **But the face is fading and the writing is not.** Papers a few years old carry a softer face than the day they were issued, and a softer face is easier to match. **How far the stolen likeness has faded is the GM's lever on how hard the check is**, and it is open (Not Yet Set, below). *The written description in the margins — height, marks, age — does not fade at all, so an old document gets checked by its writing more than its picture.*
+
+**It also answers the question of wanted notices.** A face on a notice has to be atlas-grade to last longer than a week, and nobody commissions atlas plates for a poster. **So the people hunting Chris cannot cheaply put his face on a wall** — a sharp one lasts days, a lasting one costs a Guild commission. *And any face they did print is the one he walked out wearing, which is the one face he can trade for another.*
 
 ### When somebody asks — the check
 
@@ -225,7 +234,7 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 **It copies surface, and nothing else.** Face, build, posture, the hang of a limb. Not what someone knows, not how they behave, not the thousand small habits that make a person legible to people who know them. **The Trait gets him through a door. Performance is what keeps him in the room**, and when that fails it fails in conversation rather than in the mirror.
 
-**It has to be a person, not a picture.** A face on a document or a notice gives him nothing — there is no surface behind it to read, only somebody else's rendering of one. *To wear a face he has only seen drawn, he has to go and find a living person who looks like the drawing* (Two months in the Nest, above, which is exactly what he did).
+**It has to be a person, not a picture.** A face on a document or a notice gives him nothing — there is no surface behind it to read, only a picture of one, however truly it was recorded. *To wear a face he has only seen on paper, he has to go and find a living person who looks like it* (Two months in the Nest, above, which is exactly what he did).
 
 **He remembers surfaces, not people — and how good a copy is depends entirely on how he took it.** Not a time limit and not perfect recall. *What he keeps is exactly what he actually got.* **Three rungs, settled 2026-09-26:**
 
@@ -436,7 +445,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
-- **Whether identification papers in this setting carry an image**, and what kind (The papers describe somebody, above). Nothing else in the repo says. A world that can reproduce a face on a document can reproduce one on a notice, which reaches further than one set of papers
+- ~~Whether identification papers carry an image~~ — **yes, a light-cartographic likeness**, 2026-09-28 (The papers describe somebody, above). *Open instead:* **how far the likeness on the stolen papers has faded.** It sets how hard the lookalike is to pass, and it is the GM's to decide
 
 ## Related Documents
 
