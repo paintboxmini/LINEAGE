@@ -7,6 +7,8 @@
 
 
 **Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · PLANT, GORE *(red)* · PATIENCE OF STONE *(green)*
+
+**Blank deck:** Blue — ANTICIPATE *(Melee)* · Red — PLANT *(Both)* · Green — PATIENCE OF STONE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 **Cards:** `cards/delve-roller-hollow.md`
 
 ---

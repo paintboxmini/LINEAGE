@@ -9,6 +9,8 @@
 
 **Deck (3 — 1 Blue / 1 Red / 1 Green):** SIDELONG SCUTTLE *(blue)* · PINCH *(red)* · CARRION PULL *(green)*
 
+**Blank deck:** Blue — SIDELONG SCUTTLE *(Ranged)* · Red — PINCH *(Melee)* · Green — CARRION PULL *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 **Its three signature cards and nothing else** (`cards/wrackclaw.md`).
 
 *Changed 2026-09-22, and the two halves of that are one change.* Drew cut STRIKE — and **deck size equals total stats, with each colour's count equal to its stat** (`CLAUDE.md`, Derived math), so a three-card deck of one Red, one Blue and one Green is a creature with Body 1, and Body 1 is HP 6 rather than 10. *There was never a version where the card came out and the stat block stayed.*

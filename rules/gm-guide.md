@@ -37,6 +37,27 @@ Intent is the part most GMs skip and most regret skipping. An enemy that wants t
 
 You don't need a backstory. You need an intent.
 
+### Running simple creatures from a blank deck
+
+*Drew's method, 2026-09-28.* **Bosses, mini-bosses and key NPCs get a real deck**, cut and assembled. **Everything else runs from one shared stock of blank coloured cards** — generic foes, ordinary creatures, the people who are in the way.
+
+**How it works at the table:**
+
+1. **Build the creature's deck from blanks at its colour ratio** — a Mind 2 / Body 3 / Soul 1 creature gets 2 blue, 3 red and 1 green blank. Deck size is still its total stats.
+2. **Draw to hand size** as normal. You're holding colours, not cards.
+3. **When it plays a blank, it plays its card of that colour** — look it up on the creature's sheet, under *Blank deck*. One card per colour, every time. Colour, Range, Effect and Defense Effect all come from that card.
+
+**One stock of blanks runs every simple creature in the game.** The card faces already exist (`printing/generate-blanks.py` tiles them onto a cut sheet).
+
+**Two things the sheet has to get right, because with one card per colour a card's Range switches off that whole colour at once:**
+
+- **Exactly one card per colour the creature has.** Usually its signatures; where it has none in a colour, one of the core cards already in its deck. Where it has two signatures of a colour, the sheet names which one the blank is.
+- **At least one colour usable in each position** — a Both-range card, or a Melee card and a Ranged card between them. A creature split between Melee and Ranged loses a colour or two depending on where it stands, and that is its shape rather than a flaw. **A creature with no usable colour in some position is a creature you beat by getting there**, which is fine when it's the point — and then its sheet says so.
+
+**What simple creatures carry beyond that: a Trait or none.** No Passives — creatures have Traits, not Passives (`rules/character-creation.md`, Passives and Traits), and a Passive would be a fourth card to track, which undoes the reason for the blank deck. No Skills either: a Skill is a bonus on a roll somebody chooses to make, and a creature isn't making those. **If a creature is good at something, it's a Trait or it's the difficulty the players face.** **One Trait is the target for a new simple creature** — something you're running in a crowd should be holdable in your head without looking.
+
+*Not yet applied to the existing bestiary, on purpose.* Twelve simple creatures already carry two or more Traits — Briarbundles six; Wallows Slime, The Descended and Flapjack Octopus three; Void Runner, Spooklight, Shockquills, Phase Leach, Ocellus, Gene-Thief Tardigrade, Chitterer and Blowback Beetle two. **Some of those are load-bearing** (Armour and Thorns are Traits), so trimming them is a design call rather than a tidy-up, and it hasn't been made.
+
 ### How many of them
 
 **Count is the balance lever, not the creature.** A weak creature is only weak alone, and the honest way to make a fight harder is to add another one rather than to inflate the one you have.

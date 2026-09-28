@@ -9,6 +9,8 @@
 
 **Deck (7 — 1 Blue / 2 Red / 4 Green):** YOUR OWN HEARTBEAT *(blue)* · FOLLOWS WARMTH, IRON GRIP *(red)* · ENVELOP, BIND, FIELD MEDICINE, SHARED BURDEN *(green)*
 
+**Blank deck:** Blue — YOUR OWN HEARTBEAT *(Both)* · Red — FOLLOWS WARMTH *(Ranged)* · Green — ENVELOP *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Appearance

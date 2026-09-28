@@ -13,6 +13,8 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 
 **Deck (9 — 3 Blue / 3 Red / 3 Green):** GENETIC SAMPLE, FOCUS, SIDESTEP *(blue)* · ADAPTIVE BITE, STRIKE, BRACE *(red)* · DISSOLVE AND KEEP, PATIENCE, FLOW *(green)*
 
+**Blank deck:** Blue — GENETIC SAMPLE *(Melee)* · Red — ADAPTIVE BITE *(Melee)* · Green — DISSOLVE AND KEEP *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Traits

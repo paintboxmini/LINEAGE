@@ -17,6 +17,8 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 
 
 **Deck (6 — 2 Blue / 3 Red / 1 Green):** INK BURST, CAMOUFLAGE SHIFT *(blue)* · SURGE, ENVELOPING PRESS, DEPTH SLAM *(red)* · FLATTEN *(green)*
+
+**Blank deck:** Blue — CAMOUFLAGE SHIFT *(Both)* · Red — SURGE *(Melee)* · Green — FLATTEN *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Traits

@@ -9,6 +9,8 @@
 
 
 **Deck (7 — 2 Blue / 2 Red / 3 Green):** CAMOUFLAGE STRIKE, VEIL *(blue)* · LIMB-SNAPPER, SPLINTER-BURST *(red)* · THORN-BIND, BRISTLE, PATIENCE *(green)*
+
+**Blank deck:** Blue — CAMOUFLAGE STRIKE *(Ranged)* · Red — LIMB-SNAPPER *(Ranged)* · Green — THORN-BIND *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Description

@@ -10,6 +10,10 @@
 
 **Deck (7 — 2 Blue / 1 Red / 4 Green):** DEFLECT, TOO HIGH TO HEAR *(blue)* · FROM ABOVE *(red)* · UNIFY, UNTOUCHED, COMMUNION, ENTWINED *(green)*
 
+**Blank deck:** Blue — TOO HIGH TO HEAR *(Ranged)* · Red — FROM ABOVE *(Ranged)* · Green — ENTWINED *(Ranged)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
+*All three are Ranged, and that is the point: **close with a Skeinwing and it has no card to answer with.** Every adaptation it has is spent on staying up (Behavior, below).*
+
 ---
 
 ## The Invariant

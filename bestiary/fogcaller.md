@@ -8,6 +8,8 @@
 **Creature Threat Rating:** 9
 
 **Deck (9 — 2 Blue / 4 Red / 3 Green):** VEIL, AXIOM *(blue)* · TALON RUSH, BLINDSIDE, STARING CONTEST, DART *(red)* · SHROUD, FOGBURST, SMOKESCREEN *(green)*
+
+**Blank deck:** Blue — VEIL *(Ranged)* · Red — TALON RUSH *(Melee)* · Green — SHROUD *(Ranged)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 Initiative: 1d6 + 3
 
 ---

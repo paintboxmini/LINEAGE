@@ -11,6 +11,8 @@ People who went into the Unheld Ocean and came back wrong. Not evil. Unpredictab
 
 **Deck (8 — 2 Blue / 3 Red / 3 Green):** PARADOX, NOTHING TO READ *(blue)* · OVERCOMMIT, MAUL, CUTS BOTH WAYS *(red)* · ADAPT, MOCKERY, UNDERTOW *(green)*
 
+**Blank deck:** Blue — NOTHING TO READ *(Ranged)* · Red — CUTS BOTH WAYS *(Melee)* · Green — UNDERTOW *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 **Trait — Unraveling State:** At the start of each Corrupted Bather's turn, the DM selects one state (don't randomize — choose for dramatic effect):
 - *Fluid:* gains Evade, may reposition freely this turn
 - *Grounded:* gains Resist 1, deals +d4 on win

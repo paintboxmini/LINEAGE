@@ -35,6 +35,8 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, BLANK, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*
 
+**Blank deck:** Blue — SILK THREAD MEASURE *(Ranged)* · Red — PRECISE REMOVAL *(Melee)* · Green — STITCHED CASE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 **Trait — Stitched Armor:** Armour 2.
 
 **Appearance:** A massive caterpillar wearing a patchwork case of large insect husks, leather bracers, bone fragments, weapon hilts, and jewelry — all precisely woven together.

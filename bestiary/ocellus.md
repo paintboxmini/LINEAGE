@@ -44,6 +44,8 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 
 **Deck (9 — 3 Blue / 2 Red / 4 Green):** FORESEE, STILL POINT, VEIL *(blue)* · ATTRITION, WEATHERED *(red)* · SHADE AWAY, DISORIENT, MOCKERY, PATIENCE *(green)*
 
+**Blank deck:** Blue — STILL POINT *(Both)* · Red — ATTRITION *(Melee)* · Green — SHADE AWAY *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 All core cards. It has no signature cards, because it has no technique — everything it does is the same passive theft at different intensities.
 
 **Trait — Unremarked:** While an Ocellus is in a crowd, it cannot be the target of an attack by anyone who has not first deliberately noticed it. Noticing it is an action: a Senses or Reason check at the GM's DC, or simply the player saying they are looking at the crate and meaning it. Once a character has noticed an Ocellus, they have noticed it permanently.
