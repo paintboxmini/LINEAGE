@@ -151,11 +151,6 @@ Raw tardigrade, preparation method varies by specimen. Each one has consumed som
 Azure ants, dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Senshi will add it without asking if he thinks the dish needs it.
 — Creature: `bestiary/sapphire-ant.md`
 
-**Bone Collector Crisps** *(15 silver — limited)*
-Carnivorous caterpillar prepared in its own casing — the shell of collected insect parts, entirely edible, changes flavor with each bite.
-*Don't ask how he gets them.*
-— Creature: `bestiary/bone-collector.md`
-
 ---
 
 **QUESTIONABLE**
@@ -212,7 +207,7 @@ Every night at midnight, Marcus rings a brass bell. All patrons raise a glass to
 
 Senshi emerges from the kitchen once, briefly, to find the party himself. This is notable.
 
-> *"The Bone Collector Crisps are off the menu until I have a fresh specimen. Not dried. Not preserved. The casing deteriorates and I lose the layered texture entirely."*
+> *"There is a Bone Collector. One. I have never cooked it and neither has anyone else. It has to come to me fresh — not dried, not preserved. The casing starts to go the moment it dies, and the casing is the whole point."*
 
 He places a folded note on the table without sitting down.
 
@@ -220,11 +215,11 @@ He places a folded note on the table without sitting down.
 
 He goes back to the kitchen.
 
-The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **35 gold** for a fresh specimen delivered intact.
+The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **40 gold** for a fresh specimen delivered intact (The Naturalist Collection, above).
 
 *If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
 
-See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
+*It is not on the menu and never has been* (cut 2026-09-29) — as far as anyone knows there is exactly one Bone Collector — no nest, no eggs (`bestiary/bone-collector.md`, Aftermath; whether there are more is one of its Story Seeds) — so this may be the only one he ever gets the chance at, and that is why he came out of the kitchen. See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
 
 ---
 
