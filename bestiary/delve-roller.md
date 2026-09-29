@@ -53,7 +53,7 @@ The Delve Roller will not leave Frontline voluntarily. If repositioned, it retur
 
 ## Encounter Notes
 
-Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
+Works well as a choke point blocker in the Hollow's narrow tunnels — placed in the narrow predator tunnel out of Flood Shelf Chamber (`quests/hollow-below-briarwatch.md`, The Stonecoils). The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
 
 Pairs with Stonecoils: the Roller occupies the front, the Stonecoil waits behind the next turn. Party is Wounded before the ambush lands.
 

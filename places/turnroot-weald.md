@@ -30,6 +30,8 @@ Notable species:
 - Rootstalker — signature predator. Appears at Pressure 2+ when navigation fails.
 - Skeinwing — high-altitude glider, native to the sky above the canopy.
 - Blowback Beetle — dog-sized, plated, eats resinous understory, and blasts itself an open clearing wherever it stops. The only thing under this canopy that makes ground instead of being routed across it.
+- Bicolor Spider (`bestiary/bicolor-spider.md`) — walnut-sized orb-weaver, orange at the front and blue at the back. Webs wherever the forest meets rock.
+- Sapphire Ant (`bestiary/sapphire-ant.md`) — tiny, azure, colonial, in the mineral soil where roots break up through stone. The soldiers are the harvest.
 
 ## Geography
 

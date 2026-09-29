@@ -141,7 +141,7 @@ Small forest forager, Turnroot Weald. Famous, among the few who've caught one, f
 **Gene-Thief Tartare** *(12 gold — Adventurer's Special)*
 Raw tardigrade, preparation method varies by specimen. Each one has consumed something different — the flavor reflects it. Temporarily grants resistance to one damage type based on what the creature absorbed. Senshi doesn't always know which type until service.
 *Ask what's in season.*
-— Creature: `bestiary/gene-thief-tardigrade.md` *(full stat block pending)*
+— Creature: `bestiary/gene-thief-tardigrade.md` *(baseline stat block on the sheet; a caught specimen is whatever variant its biome made it)*
 
 ---
 

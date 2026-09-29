@@ -41,6 +41,8 @@ Stat blocks and card sets vary widely depending on the variant. DMs who want to 
 
 The three variants below describe dietary history and starting state only.
 
+**It can be met anywhere, and it always looks like where it was met** *(set 2026-09-29)*. A tardigrade has no home range — its form is shaped by the biome it has been living and eating in, so there is no wrong place to put one and no default one to put there. **The three below are examples, not a list.** A tardigrade from the Nest's high country, the Ashfall Wastes or the Wallows is built the same way: decide what it has been eating, and that is the variant.
+
 ---
 
 **Forest Tardigrade**

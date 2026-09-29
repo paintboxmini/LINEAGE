@@ -30,6 +30,12 @@ A river port rebuilt so many times on top of itself that no one remembers the or
 
 **The Gollop** (`bestiary/gollop.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. **Territorial, and they post lookouts**, so the high country is not empty ground with a hazard in it; it is somebody's, in stretches, and a climber is either inside a troop's range or outside it. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
 
+**Three more things up there, all of them ingredients before they are anything else** — and all three on Senshi's menu in the capital (`places/capital/gilded-tusk.md`), which is the only reason most people have heard of them:
+
+- **High-Altitude Bats** (`bestiary/high-altitude-bat.md`) roost in the cliff cavities and hunt at dusk. They flee rather than fight
+- **Sapphire Ants** (`bestiary/sapphire-ant.md`) nest in the mineral ground where the rock breaks down, and the high country is almost nothing but that
+- **Bicolor Spiders** (`bestiary/bicolor-spider.md`) web the shaded cuts where soil has collected, the one kind of place up here with both rock and something growing
+
 ### The finishing house
 
 **FourthEye is not finished in the Nest. It is finished up in the rock.**
@@ -109,6 +115,10 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 **And there are more lights on the water those nights**, which everybody in the Nest has noticed and nobody has ever connected to the rest of this list (`bestiary/spooklight.md`). The town's position on spooklights is a prohibition rather than a theory: **they are trying to lead you off, so you do not answer a light.** That is the whole of the local knowledge. It is wrong about the mechanism, roughly right about the outcome, and consequently impossible to argue anyone out of.
 
 **The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
+
+**Fast tide has its own animal, and the Nest does not believe in it.** The **Gowra** (`bestiary/gowra.md`) digs into the undercut banks on the fast-tide stretches near town, and it never comes into the Nest — which is most of why *gowra* is the word the Nest uses for a lie. Slow tide has the lights and the Foulhauls on the mud; fast tide has this one in the water.
+
+**And sometimes the river arrives here burning.** A Driftfire bloom (`bestiary/driftfire.md`) goes wherever the current goes, round the whole loop, so every town on the web gets its turn and the Nest is no exception. *What makes it land harder here is the traffic, not the water:* most of what reaches the Nest was rowed or hauled rather than sailed, and a bloom is a problem for oars and lines before it is a problem for anything else.
 
 ## What Grows Here
 

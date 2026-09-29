@@ -14,6 +14,8 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **This is the only place the river web touches the Unheld.** The web is a closed circuit driven by its own waterfalls (`world/geography-overview.md`, River system) — it does not drain to a coast and it has no other mouth. One narrow river, one quay, one meeting point on the whole continent.
 
+**Which makes the quay shallows the only river mouth anywhere, and Unity Jellies are in them** (`bestiary/unity-jelly.md`) — fist-sized, glowing, and found otherwise only in lakes. *On a dark night the water at the foot of the cliff is lit from below by something that will fuse with the first other one it touches.*
+
 **Which is most of why three institutions are stacked on one cliff.** The Masons keep glyphs here, the Cartographers' Guild maps the edge from here, and the People of Promise return their dead here (`factions-and-races/the-masons.md`, `factions-and-races/the-cartographers-guild.md`, `factions-and-races/people-of-promise.md`). None of them chose this cliff for the view. It is the door, and everyone whose work is about the Unheld ends up standing at it.
 
 *It is also the one place a thing could come the other way, and once did (`places/the-coil.md`).*
