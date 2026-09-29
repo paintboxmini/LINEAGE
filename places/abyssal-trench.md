@@ -51,7 +51,7 @@ See `bestiary/elder-tower-creature.md`.
 |--------|-------|-------|
 | Death-Ball Sponge | Sponge body | Hooks removed before use — requires tools and time |
 | Flapjack Octopus | Octopus body, ink sac | See `bestiary/flapjack-octopus.md` |
-| Elder Tower Creature | Tubes | DC 12 Body/Senses per tube, patience required |
+| Elder Tower Creature | Tubes | Normal (13) Body/Senses per tube, patience required |
 
 All three source ingredients for the Gilded Tusk's Naturalist Collection. See `places/capital/gilded-tusk.md`.
 

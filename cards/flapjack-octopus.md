@@ -5,7 +5,7 @@
 **SURGE**
 RED — BODY
 Attack: Body + d8
-Effect: Target makes DC 12 Body/Senses save or gains Staggered. Ends Flatten.
+Effect: Target makes a Normal (13) Body/Senses save or gains Staggered. Ends Flatten.
 Defense Effect: Gain Flatten.
 Range: Melee
 *"It comes from below."*

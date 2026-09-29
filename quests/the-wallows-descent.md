@@ -224,7 +224,7 @@ Here the passage branches. Without the grandmother's map, both directions look i
 
 **With the map:** the correct passage is marked. The map shows not where things are but where they are *for you* — meaning it shows the exit for whoever is holding it. Two party members examining the same map may see different paths. The one who wants to leave most clearly will see it most clearly.
 
-**Without the map:** Mind check, DC 15. Failure sends the party down the longer route — more time in the deep, Influence rises by 1. Success on a second attempt is automatic.
+**Without the map:** Hard (16) Mind check. Failure sends the party down the longer route — more time in the deep, Influence rises by 1. Success on a second attempt is automatic.
 
 ---
 

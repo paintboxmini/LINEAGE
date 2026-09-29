@@ -27,7 +27,7 @@ Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of pr
 ---
 
 ### Sap Vial
-*Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
+*Source: Rootstalker (rare — Hard (16) Body/Senses to collect without wasting)*
 *Price: ~17 gold*
 
 Thick, dark-green sap that smells metallic and green.
@@ -151,7 +151,7 @@ The body of a caterpillar roughly the size of a large dog, with a patchwork casi
 ---
 
 ### Future-Lock Wasp Larvae
-*Source: The Hanging Gallery — DC 14 Body/Senses, or free harvest after swarm dispersal*
+*Source: The Hanging Gallery — Hard (16) Body/Senses, or free harvest after swarm dispersal*
 *Price: ~35 gold (Senshi's going rate — must be delivered alive within a day)*
 
 Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis venom is concentrated in the larval stage. Smell faintly chemical.
@@ -163,5 +163,5 @@ Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis ven
 ## Harvesting Rules
 
 Harvesting from the Turnroot Weald requires time and care:
-- Harvesting takes a short rest **or** a successful DC 12 Body/Senses check to avoid wasting the material.
+- Harvesting takes a short rest **or** a successful Normal (13) Body/Senses check to avoid wasting the material.
 - At high Pressure levels, harvesting from the forest (especially from Rootstalkers) raises Pressure by 1. The forest notices.
