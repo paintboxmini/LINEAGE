@@ -4,6 +4,18 @@
 
 *Lives in the sandstone high country north of Vulture's Nest (`places/vultures-nest.md`, The Shape of the Ground).*
 
+**Cards:** `cards/gollop.md`
+
+**Mind 2 / Body 3 / Soul 2 — HP 16**
+**Creature Threat Rating:** 7
+
+**Deck (7 — 2 Blue / 3 Red / 2 Green):** SENTRY'S CALL, MARKED *(blue)* · CHOSEN STONE, CLIMB, DART *(red)* · BREAK AWAY, HASTEN *(green)*
+
+**Blank deck:** Blue — SENTRY'S CALL *(Both)* · Red — CHOSEN STONE *(Ranged)* · Green — BREAK AWAY *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+**Trait — Reads the Odds:** When half the Gollops in a fight are Down, every Gollop still standing leaves up the rock on its next turn instead of acting. They do not come back the same day.
+
+*One Gollop is a light fight on purpose — Threat 7 against a party of three. The troop is the threat, and how fast it arrives is the dial (Open, below). Every card is built around the range it wants: a throw from cover, a call to the rest of the rock, and a spur that exists to get back out of reach.*
+
 ---
 
 ## What It Looks Like
@@ -71,7 +83,6 @@ They do not flee from a fight they are in — *because they are not in a fight t
 
 ## Open
 
-- **Troop size, and how fast backup arrives.** The clock is the encounter, so the rate is the dial — whether the second one is there next round or three rounds later is the difference between a warning and a wipe. Needs measuring against the party once session 1 has run (`rules/character-creation.md`)
+- **Troop size, and how fast backup arrives.** The clock is the encounter, so the rate is the dial — whether the second one is there next round or three rounds later is the difference between a warning and a wipe. Needs measuring against the party once session 1 has run (`rules/character-creation.md`). *First read, 2026-09-29, with the whole troop there from the start and nobody leaving:* two Gollops is comfortable, three costs the party about one Down, four is a coin flip, five is a likely loss (`combat-simulations/encounter_budget.py`). **The real encounter is gentler than that on both ends** — backup arrives over time instead of all at once, and Reads the Odds ends it before the last Gollop falls — so those numbers are the ceiling, not the fight
 - **Whether the guerrilla preference is coordinated or parallel.** A troop that throws from several angles because each one independently prefers height is a different animal from one that is actually working together, and both are consistent with everything above
 - **What a Gollop eats**, given the high country is the only growing ground near the Nest and they are built like something that would want fruit
-- Stats, HP and signature cards

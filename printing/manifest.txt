@@ -13,7 +13,7 @@
     cleared, on the bench    42
     middle tier              37
 
-  every card in cards/      387   (Red 136, Blue 118, Green 129, colourless 4)
+  every card in cards/      390   (Red 137, Blue 119, Green 130, colourless 4)
 
 ## Print artifacts
 
@@ -21,19 +21,19 @@
 # means that sheet moved and its PDF is stale.
 
   card-print-briarwatch           20 cards  cd78836de755
-  card-print-core                166 cards  e538ef9eec7e
+  card-print-core                166 cards  6a175218a8d9
   card-print-items-field           3 cards  cf2682d5260f
   card-print-items                14 cards  a838429f4650
   card-print-mason                 6 cards  c6964790d2d6
   card-print-oracle-1             21 cards  8ecce667d4b6
-  card-print-oracle-2             21 cards  bfbff4a381bb
+  card-print-oracle-2             21 cards  24f03e87f591
   card-print-oracle-3             21 cards  b868ffe791cf
-  card-print-oracle-expansion     21 cards  482c7dc95960
-  card-print-oracle               63 cards  64f334fa084a
+  card-print-oracle-expansion     21 cards  a26dd7de94ed
+  card-print-oracle               63 cards  85549ba72b24
   card-print-signatures           15 cards  a6376652a8c4
   card-print-washed-ashore         9 cards  488914af6271
   character-sheets                4 sheets  39b0a7b322a9
-  packet                       15 sections  7e508103f1a7
-  play-reference               43 sections  cf35833ef3de
+  packet                       15 sections  73d737675540
+  play-reference               43 sections  668acc6f3900
   simulator-narrated-cards      7 sections  92d3810b7240
   turn-guide                    4 sections  8932f1d98acf
