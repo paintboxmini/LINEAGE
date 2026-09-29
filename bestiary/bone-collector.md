@@ -91,11 +91,15 @@ This isn't just predation — it's *curation*. The Bone Collector was building s
 
 ### Investigation Checks
 
-| DC | Skill | Reveal |
-|----|-------|--------|
-| 15 | Investigation | The arrangement follows some kind of blueprint |
-| 18 | Nature | This isn't normal caterpillar behavior — something taught it to organize |
-| 20 | Insight | The patterns suggest it was building toward something larger |
+2d10 + a stat, against the ordinary ladder (`rules/resolution.md`, Core Resolution). The stat listed is where the fiction usually lands; **any stat the player can argue for is fine.**
+
+| Difficulty | Usually | Reveal |
+|------------|---------|--------|
+| Normal (13) | Mind — reading the room | The arrangement follows some kind of blueprint |
+| Hard (16) | Mind — knowing what animals do | This isn't normal caterpillar behavior — something taught it to organize |
+| Extreme (19) | Soul — reading intent | The patterns suggest it was building toward something larger |
+
+*Converted 2026-09-29 from D&D-style checks (DC 15 Investigation, 18 Nature, 20 Insight), keeping the same order of difficulty.*
 
 ---
 
