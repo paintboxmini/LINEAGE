@@ -54,6 +54,8 @@
 
 **Which makes this the last harvest there will ever be here**, and **Harlock will be looking for a new source afterwards** (`items/fourtheye.md`). *Whatever the party brings back is all there is.*
 
+**The party does not see it happen.** Sebastian warns them off before the flowers go. **A few sessions later, Harlock tells them** *(Drew, 2026-10-01)*: somebody he sent back found the ring gone, and he wants the party **on the lookout for a new source** wherever they travel. *It turns an errand they have forgotten about into a standing request, and every island after this one is somewhere a forget-me-not might be.*
+
 **He finishes the cut and he warns them off.** He does not explain what the ring is, what the hut was, or what the glyphs are holding — a Mason never does (`factions-and-races/the-masons.md`, How They're Seen). *He is not hostile. He wants them gone before the place takes something they will miss.*
 
 **He does not stop working for anybody**, which matters for what comes next.
