@@ -8,7 +8,7 @@ She's been having doubts about the Promise. Not loud doubts. Specifically: the i
 
 She found the Masons. She's been learning constraint magic in secret. Carries a Mason's chisel under her cloak.
 
-**Timing, 2026-10-01:** the chisel is Sebastian's Time chisel, and **the handing-over has not happened yet in the campaign.** It plays out when the party reaches Glasslight; until then Sebastian still carries it (`characters/sebastian.md`, Mirel).
+**Timing, 2026-10-01:** the chisel is Sebastian's Time chisel, and **the handing-over happens just before the party reaches Glasslight** — until then Sebastian still carries it, and by the time they meet her she has it (`characters/sebastian.md`, Mirel).
 
 How she found them: Stabilization glyphs on the cliffside kept catching her eye. She started dreaming about the symbols — couldn't stop thinking about them. Following that pull, alone, she made her way out to the seams of the Lodge entrance at the Soft Edge and was scratching one of the glyphs from memory into the rock when Sebastian found her.
 
