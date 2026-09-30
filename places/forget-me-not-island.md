@@ -48,7 +48,7 @@
 
 **Once the party has had a chance to explore the hut, Sebastian arrives** to finish the glyphs (`characters/sebastian.md`). **This is a new site to him**, found recently, not one of the order's old lines.
 
-**He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and **the one that matches a Memory seam** — a Mason contains a seam with the chisel aligned to its type. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
+**He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and **the one that matches a Memory seam** — a Mason contains a seam with the chisel aligned to its type. *The Time chisel sits right beside it on that end of the set; he still carries both.*
 
 **The glyphs stop the seam's effect from spreading** *(Drew, 2026-10-01)*. It has been growing — which is why the ring has teeth now, and why a place that resists being remembered finally got noticed. **Once the right half of the doorframe is cut, it stops, and the forget-me-nots leave completely** *(Drew, 2026-10-01)*. Not one is left on the island. *The effect inside is held, not gone: a binding stops a seam getting worse, it does not close it* (`factions-and-races/the-masons.md`, Methods).
 
