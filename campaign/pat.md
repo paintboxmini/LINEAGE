@@ -36,7 +36,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-**What he can plausibly get out of it is an explanation rather than a cure.** A cost paid in full doesn't undo on request — that's how the world works, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+**There is a cure, and it is not his to take** *(Drew, 2026-09-30; this used to say explanation rather than cure)*. A cost paid in full doesn't undo on request — **it undoes only when somebody pays it again**: another cursegiver giving up her own existence to lift it (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms). **The one person alive who can is Osha** (`characters/osha.md`), and killing her would end the only way the curse ever comes off. *So a man bound by humanitarian morals is hunting somebody whose consent is the cure, and whose consent would unmake her.*
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
 
@@ -130,7 +130,7 @@ Still open:
 
 **It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).
 
-**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.*
+**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.* **And then it says yes to somebody who has already gone**: Osha passed through Pneum before him, and the scrap knows what she left (`places/pneum.md`, Pat's lead).
 
 **What it does is confirm.** Family scent carries. Put Pat in a room with the bloodline and **he knows — no roll**, because the alternative is a die deciding whether the campaign's spine is findable. *Until then it tells him nothing, which is most of the year.*
 
@@ -138,11 +138,11 @@ Still open:
 
 ### What it is worth to the people he is hunting
 
-**They cannot describe their own ancestor, and he is carrying her.** A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
+**They cannot describe their own ancestor, and he is carrying her.** *And the one of them out looking for her is Osha* (`characters/osha.md`). A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
 
 *So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
 
-**Deliberately not being tracked yet** *(Drew, 2026-09-21)*. That meeting is far enough out that maintaining it as a live thread would cost more than it is worth, and a consequence this clean does not decay from being left alone. **It is written down so it is here when the meeting gets close, not so anyone carries it in the meantime.** *Nothing between now and then needs to be arranged for it. If the scrap survives and the bloodline turns up, the trade is simply available.*
+**Live since 2026-09-30.** *It was deliberately left untracked on 2026-09-21, while the meeting was far off.* Now there is a person on the other end of it: **Osha, alone, looking for what is left of her ancestor; her family looking for Osha; and Caine looking for both** (`characters/osha.md`). The scrap is the thing she left home to find, and she does not know it exists.
 
 ### Where he got it — settled
 

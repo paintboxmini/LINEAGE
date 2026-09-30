@@ -41,7 +41,7 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 
 **The catalyst, as Drew has it:** the curse was never dormant. It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — a thing aimed at one royal line generations ago, arriving late and arriving wide. The three cursed royals wake at the royal cemetery and show him something.
 
-**What the vision gives him is a person, not a people.** Cursegiving is one Lizardkin family's technique, held inside a bloodline and taught to nobody else, and the woman who used it on his queen left descendants (`factions-and-races/races-lizardkin.md`, The Cursegivers). One of them is alive, off the island, **somewhere near Vulture's Nest.** That's the whole brief. It is a direction and a person and nothing else, which is the right amount for a man to leave home on.
+**What the vision gives him is a person, not a people.** Cursegiving is one Lizardkin family's technique, held inside a bloodline and taught to nobody else, and the woman who used it on his queen left descendants (`factions-and-races/races-lizardkin.md`, The Cursegivers). One of them is alive, **somewhere near Vulture's Nest** — **Osha**, of the Muirn on Gharial, south of the Nest, and out on her own (`characters/osha.md`). That's the whole brief. It is a direction and a person and nothing else, which is the right amount for a man to leave home on.
 
 **So the Nest isn't a lead — it's the destination he was given**, and he arrives to find that "somewhere near Vulture's Nest" describes about four hundred islands. The port is where the search starts failing productively.
 
@@ -67,7 +67,9 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 *The shape is Drew's. What's written here follows from `places/pneum.md` as it already stands — none of the theology is invented for this.*
 
-**And the trail runs backwards before it runs forwards.** The rumours eventually point at the one place that would actually know where a member of that family went: the Lizardkin island itself — off the Shunka island's lower east coast, in the northernmost reaches of the river web (`world/geography-overview.md`, Bearing Table). **That's a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the search has a spine and the spine is the water. To find someone near Vulture's Nest, they sail to the top of the world and ask.
+**The trail has three ends** *(Drew, 2026-09-30; this used to send the search north to the Lizardkin island first)*. **Osha is out alone** across the islands near Gharial, looking for what is left of her ancestor. **Her family is looking for her**, and they are the obstacles the party meets first (`places/gharial.md`). **And the Vessk** — the northern tribe, on the island off the Shunka island's lower east coast (`world/geography-overview.md`, Bearing Table) — are the reason she is out at all: they will want another curse for the next war, and she is the one who would pay it.
+
+**That northern leg is a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the search has a spine and the spine is the water.
 
 **The spine is not a corridor.** The table has already seen the map and already been handed one-line teasers about half the continent — the singing cliffs, the Weald's customs, the ash desert, the crystal abyss, the Nest as the trade hub, Briarwatch farmed out to feed the capital. Players go where the teasers are. They will find a reason to go inland, and the reason does not have to be good.
 
@@ -75,7 +77,7 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 So: **the water is where the campaign returns, not where it is confined.** A GM should expect the party to leave it early and often, and should not need to invent a river-shaped excuse to let them.
 
-**What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that, thwart it before it launches, and come away with the one detail that puts them back on the cursegiver's trail — which means the campaign's largest external threat and Pat's personal question resolve in the same room.
+**What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that and thwart it before it launches — and since the Vessk's war is the reason Osha would be asked for a second curse, **the campaign's largest external threat and Pat's personal question are the same question.**
 
 *That shape is Drew's. It's recorded here because it changes what Session 1 is for: the Nest isn't the start of a wander, it's the start of a search that happens to run through every village the table wanted to visit anyway.*
 
@@ -169,7 +171,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
 
 **The first job is written** at `quests/the-quarantined-barge.md`, and **the Nest opening has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
-- **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. Who the living descendant is, what they're doing among continentals, and whether the technique can explain the spread are all open.
+- **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. The living descendant is **Osha** (`characters/osha.md`), searching the islands near Gharial for her ancestor.
 
 ---
 

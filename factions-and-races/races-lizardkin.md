@@ -1,6 +1,6 @@
 # Lizardkin
 
-*The people Shunka history calls **the Tithebound**. *Lizardkin* is what the continent calls them and *Tithebound* is what the Shunka call them; neither is established as their own word for themselves.*
+*The people Shunka history calls **the Tithebound**. *Lizardkin* is what the continent calls them and *Tithebound* is what the Shunka call them; neither is established as their own word for themselves.* **Two tribes, named 2026-09-30: the Vessk in the north and the Muirn in the south** (Where They Are, below).
 
 **Animalistic lizard-folk.** Heavier than a snake, closer to a Komodo dragon but with sharper, more angular features than the real animal's blunt lines. Bipedal on land, walking hunched rather than upright — a gait that reads as awkward, almost laboured, right up until they reach water. **Far more dangerous submerged than on land.** Whatever makes the walk look uncertain disappears entirely once they're swimming; the hunch is a body built for something else, doing its best on stone.
 
@@ -8,11 +8,21 @@
 
 ## Where They Are
 
-An island off the **lower east coast of the Shunka island**, both of them in the **northernmost reaches of the river web** rather than out at sea (`world/geography-overview.md`, Bearing Table). A river people on a river island, at the far end of the same network Vulture's Nest sits at the middle of.
+**Two tribes on two islands, a long way apart** *(Drew, 2026-09-30)*.
+
+### The Vessk — the northern tribe
+
+The main one, and the one Shunka history means by *the Tithebound*. An island off the **lower east coast of the Shunka island**, both of them in the **northernmost reaches of the river web** rather than out at sea (`world/geography-overview.md`, Bearing Table). A river people on a river island, at the far end of the same network Vulture's Nest sits at the middle of.
 
 That proximity is the whole history. The Lizardkin island was small, the river's catch ran thin, and a people this at home in water needed ground that wasn't theirs — so they invaded the nearest ground there was. The Shunka repelled them cleanly in the field and the land problem was never solved, which is why it isn't over (`factions-and-races/races-shunka.md`, The War, and the Curse).
 
 **Why they invaded, precisely.** Their ground was thin *literally* — physically small — not metaphysically unstable. Price isn't a foregrounded, actively-managed risk in this world; it's paid constantly and automatically just by being alive, and day-to-day stability comes from the Seats rather than from anyone keeping a ledger on whether the world is about to blink out. A small island was never in danger of ceasing to exist. It was just small, and got smaller — a natural disaster, or the river reshaping the land over generations, accounts for it easily. Not glory, not tribute. They needed somewhere else to stand, and the Shunka had ground worth taking.
+
+### The Muirn — the southern tribe
+
+**Smaller, and a long way from the war.** The Muirn live on **Gharial**, a swamp island south of Vulture's Nest (`places/gharial.md`), and they are not a people rebuilding an army. **They have a shamanic culture, and they have been fostering it for longer than anyone outside counts** — and **cursegiving came out of it.** The technique is theirs, not the Vessk's (The Cursegivers, below).
+
+**The Vessk recruited them for the war.** The northern tribe had the numbers and the grievance; the southern tribe had the one thing that could reach past a lost battle. *How that recruitment went — asked, bargained, or pressed — is exactly what Osha is trying to find out* (`characters/osha.md`).
 
 ## The Tithe
 
@@ -22,7 +32,7 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 **It is not why the cursegiver could do what she did.** That was one person, once, in extremity. The Tithe is what an entire people do every season, and it sits closer to real-world river stewardship than to cosmological theology. Worth keeping as thematic rhyme, not as mechanism.
 
-## Now
+## The Vessk now
 
 **Not extinct, and not broken.** A remnant that has spent generations since the invasion rebuilding a real army rather than merely surviving, waiting for a moment to strike the Shunka again.
 
@@ -32,29 +42,48 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 ## The Cursegivers
 
-**One family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving is a learned skill that a single Lizardkin family has passed down for as long as anyone has been counting, taught to their own and to nobody else.
+**One Muirn family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving grew out of the Muirn's shamanic tradition, and a single family of theirs has passed it down for as long as anyone has been counting, taught to their own and to nobody else.
 
 **The cost is what keeps it rare.** A curse laid this way takes the caster's existence, not their life in the ordinary sense — whatever was holding them in the world comes off and lands on the target instead. One curse, one person, gone. Not killed. Unmade, as though never Cut at all.
 
 So a family that holds this holds a weapon they can fire exactly as many times as they are willing to lose someone. **That is not a thing a people spends lightly, and it is the reason the Shunka curse is the only one anyone can name.**
 
-**The one who cursed the Shunka queen was one of theirs.** When the invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. She walked into it. She would have believed the queen deserved it — not because anyone tricked her, but because a family that has held this for generations has generations of reasons ready for why it is justified this time.
+**The one who cursed the Shunka queen was one of theirs.** When the Vessk invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. **The family's own account is that she walked into it willingly** — that she believed the queen deserved it, and believed a people that needed ground would thrive on the Shunka's. A family that has held this for generations has generations of reasons ready for why it is justified this time. **Whether that account is true — whether she chose it or the Vessk put her to it — is not settled, and it is the question Osha is out looking for** (`characters/osha.md`).
 
-**There is a descendant of hers alive now, somewhere near Vulture's Nest** (`campaign/session-1-convergence.md`). Whether the technique itself survived her is not in doubt — it was never hers alone, it is her family's, taught inside the bloodline and to nobody else. What a Lizardkin cursegiver is doing off the island and among continentals is the question, and it isn't answered.
+**The family knows exactly what happened.** The war, the defeat, the curse, what it cost and who it was aimed at — none of it is hidden from them and none of it could be, because the Vessk lost badly and a loss that size is not swept anywhere. *What they cannot do is name her or picture her* (The gap in the line, below).
+
+**There is a descendant of hers alive now, somewhere near Vulture's Nest** (`campaign/session-1-convergence.md`) — **Osha**, and *near Vulture's Nest* is simply where the Muirn live. Whether the technique itself survived her ancestor is not in doubt — it was never hers alone, it is her family's, taught inside the bloodline and to nobody else.
+
+### It can be undone, once, on the same terms
+
+*Drew, 2026-09-30.* **A curse laid this way can be lifted — by another cursegiver giving up her own existence to do it.** Not on request, and not by anybody else: the Shunka's wild-magic line tried for generations and failed because nobody outside the family can pay in that coin (`factions-and-races/races-shunka.md`, The Wild-Magic Line). *A Price paid in full doesn't undo on request.* It undoes only when somebody pays it again.
+
+**So killing the holder does not free anyone.** It destroys the only way the curse could ever come off. Which means the hunt for this family is, underneath, a hunt for somebody's consent, and there is nothing a sword can do to get it.
+
+### The family now
+
+**Hiding the line.** The family's position is the obvious one: keep the bloodline secret, keep it away from the Shunka, and **wait** — the curse is only now reaching the Shunka's common folk (`campaign/pat.md`, The Call), and when it has done its work, the Vessk are free to step in and take the ground the first war could not. *Nobody who can end the curse gets found, and the curse finishes the job.*
+
+**They are hostile, and they are the obstacles.** Anyone asking after the line is a threat to it, and a Shunka asking after it is the threat they have spent generations waiting for. **They are also looking for Osha**, who has left.
+
+### Osha
+
+**The one living Muirn who holds the technique** (`characters/osha.md`). If the Vessk go to war again and want another curse, **she is the one they will ask to pay for it** — and she has gone out alone across the islands near Gharial looking for what is left of the woman who paid the first time, because she will not decide whether to undo it, or repeat it, until she knows why it was ever done.
 
 ### The gap in the line
 
 **Proposal, not settled, and it's the best thing available here:** the unmaking took *her*, not the people already born from her. The line continued. But it continued around a hole — the family knows the technique came from someone, knows there was a woman, and cannot produce her name or her face. Something unmade this thoroughly was not killed, it was made never to have been legible, and a thing that was never legible cannot be remembered properly. *(The Masons have a name for that first legibility and a doctrine explaining it — `factions-and-races/the-masons-three-cuts.md`, The First Cut. The Lizardkin have the hole in the family and no explanation at all.)*
 
-So her descendants inherited a skill from a person their own family cannot describe. If you want a reason a descendant might leave the island and go looking, that is it, and it doesn't need Pat's story to justify it.
+So her descendants inherited a skill from a person their own family cannot describe. **That is why Osha left** — and it doesn't need Pat's story to justify it.
 
-**And one thing survived her anyway, if the proposal above holds.** Pat carries a scrap of her cloth that still smells of her (`campaign/pat.md`, The scrap) — because a smell is not a name and not a face, and the unmaking works on what was Named. *Her family cannot describe her. A stranger is walking toward them holding the last of her.* **That is Pat's player's material and is recorded here as a pointer rather than imported**, but it is the sharpest consequence this section has and it belongs next to it. *Not a live thread — the meeting is far enough out that nobody is tracking it, and nothing between here and there has to be arranged for it.*
+**And one thing survived her anyway, if the proposal above holds.** Pat carries a scrap of her cloth that still smells of her (`campaign/pat.md`, The scrap) — because a smell is not a name and not a face, and the unmaking works on what was Named. *Her family cannot describe her. A stranger is walking toward them holding the last of her.* **That is Pat's player's material and is recorded here as a pointer rather than imported**, but it is the sharpest consequence this section has and it belongs next to it. *Live as of 2026-09-30: Osha exists, is searching, and the scrap is what she most wants in the world without knowing it exists* (`characters/osha.md`).
 
 ## Open
 
-- What they call themselves. *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them; neither is necessarily theirs.
-- Whether any Lizardkin live off that island beyond the cursegiver descendant — in the continental river web, at Vulture's Nest, anywhere a closed people's exiles would end up.
-- Whether the cursegiver family is honoured, feared, or quietly avoided at home. A people who don't trade and treat contact as threat still have to live next door to the ones who can erase somebody.
+- What they call themselves as one people. The tribes are the Vessk and the Muirn; *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them, and neither is necessarily theirs.
+- Whether any Lizardkin live off the two islands beyond Osha and the Speaker of Pneum (`places/pneum.md`) — and which tribe the Speaker came from.
+- Whether the cursegiver family is honoured, feared, or quietly avoided among the Muirn. A people still have to live next door to the ones who can erase somebody.
+- Whether the ancestor chose it or was put to it (The Cursegivers, above). **Drew's to set, and Osha's to find.**
 - Whether anyone in that family has ever refused at the end.
 - Whether the Tithe survived the war intact, or whether a people preparing for a second one still believes in giving back.
 

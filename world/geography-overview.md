@@ -97,7 +97,8 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Quillet | southeast | Eclipseria | `places/quillet.md` — on the Vulture's Nest spoke, a day inside the Kings Road Inn |
 | Shunka island | north | Eclipseria | `factions-and-races/races-shunka.md` — a river-web island in the web's northernmost reaches, slightly west of true north |
 | Shunka island | south | Glasslight Reach | `factions-and-races/races-shunka.md` |
-| Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
+| Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast; the Vessk |
+| Gharial | south | Vulture's Nest | `places/gharial.md` — swamp island of the Muirn |
 
 **Adjacency, where it's stated rather than a bearing:**
 

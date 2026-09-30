@@ -28,7 +28,7 @@ Whoever was left of the invasion didn't find a body. There wasn't one to find.
 
 ## The Wild-Magic Line
 
-**Many attempts were made to break it**, back when it first took. Some turned to wild magic — a distinct tradition from whatever counts as ordinary magic among the Shunka, unruly and unreliable where the Second Cut's normal workings are dependable. Every attempt failed. Nothing broke it, the same way nothing broke the Tithebound in the field: a Price paid in full, forced or not, doesn't undo on request.
+**Many attempts were made to break it**, back when it first took. Some turned to wild magic — a distinct tradition from whatever counts as ordinary magic among the Shunka, unruly and unreliable where the Second Cut's normal workings are dependable. Every attempt failed. Nothing broke it, the same way nothing broke the Tithebound in the field: a Price paid in full, forced or not, doesn't undo on request. **It undoes only when it is paid again** — by another cursegiver giving up her own existence, which is a coin no Shunka has ever had to spend (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms).
 
 That failed tradition survived anyway, passed down matrilineally, and it is what Pat actually carries — not royal blood, wild magic (`campaign/pat.md`). **His magical expression calls on the spirits of those three cursed royals.** It works because they're gone, not because they're still walking anywhere.
 
