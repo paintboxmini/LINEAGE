@@ -32,7 +32,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 ## The Call
 
-**The curse was never dormant.** It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
+**The curse was never dormant.** It was crossing a spiritual distance — cast from a hut on an island near Gharial, not at the queen's feet (`places/forget-me-not-island.md`) — and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 

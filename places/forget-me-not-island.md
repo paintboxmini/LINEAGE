@@ -1,6 +1,6 @@
 # Forget-Me-Not Island
 
-*A small island with no name. **Forget-Me-Not Island** is what the table calls it, after the one thing on it anybody remembers. Set by Drew, 2026-10-01.*
+*A small island with no name, **near Gharial** (`places/gharial.md`). **Forget-Me-Not Island** is what the table calls it, after the one thing on it anybody remembers. Set by Drew, 2026-10-01.*
 
 **The second Mason encounter** — the one with teeth (`factions-and-races/the-masons.md`, How the party meets them). **Where Osha's ancestor lived** (`characters/osha.md`). **And the place the University's men catch up with Chris.**
 
@@ -44,6 +44,8 @@
 
 **Once the party has had a chance to explore the hut, Sebastian arrives** to finish the glyphs (`characters/sebastian.md`). **This is a new site to him**, found recently, not one of the order's old lines.
 
+**He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and the one of his that belongs on an island where memory slips. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
+
 **He finishes the cut and he warns them off.** He does not explain what the ring is, what the hut was, or what the glyphs are holding — a Mason never does (`factions-and-races/the-masons.md`, How They're Seen). *He is not hostile. He wants them gone before the place takes something they will miss.*
 
 **He does not stop working for anybody**, which matters for what comes next.
@@ -60,13 +62,14 @@
 
 **A seam, and a young one to the Masons' eyes.** Whatever it is, it presses on the first thing the Knife ever cut — a thing's Name, the cut that made it legible (`factions-and-races/the-masons-three-cuts.md`).
 
-**Proposed, not confirmed (2026-10-01): the seam is the hole she left.** The curse was *crossing a spiritual distance* for generations (`campaign/pat.md`, The Call), which fits her casting it from here rather than at the queen's feet. **She was unmade in this hut, and the unmaking left a thin place behind** where names and faces stop holding — the same thing that happened to her, leaking out. *It would also explain why nobody found it for so long, the Masons included: it is a place that resists being remembered.*
+**The seam is the hole she left** *(Drew, 2026-10-01)*. **She cast the curse from this hut, not at the queen's feet** — which is why it spent generations *crossing a spiritual distance* before it arrived (`campaign/pat.md`, The Call). **She was unmade here, and the unmaking left a thin place behind** where names and faces stop holding: the same thing that happened to her, leaking out. *It is also why nobody found it for so long, the Masons included — it is a place that resists being remembered.*
+
+**Sebastian does not know that.** To him it is a young seam that presses on Name, and he binds it the way he binds any other. *Whose hut it was is nothing a Mason would ask.*
 
 ## Not Yet Set
 
-- Where it is — near Gharial is the working assumption, since Osha is searching those islands; no bearing yet
+- Its bearing and distance from Gharial and from the Nest — *near Gharial* is set, the rest is not
 - The relic's form, and the message it carries
-- **Whether the seam is her unmaking** (What It Is, above)
 - What Sebastian's glyphs hold once finished, and what happens to the flowers after
 - The University's men — who, how many, how they found him (Chris's)
 

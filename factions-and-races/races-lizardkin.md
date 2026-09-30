@@ -50,6 +50,8 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 **The one who cursed the Shunka queen was one of theirs.** When the Vessk invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. **The family's own account is that she walked into it willingly** — that she believed the queen deserved it, and believed a people that needed ground would thrive on the Shunka's. A family that has held this for generations has generations of reasons ready for why it is justified this time. **Whether that account is true — whether she chose it or the Vessk put her to it — is not settled, and it is the question Osha is out looking for** (`characters/osha.md`).
 
+**She cast it from her own hut, on a small island near Gharial, and was unmade there** *(Drew, 2026-10-01)*. The hole she left is a seam now, ringed with forget-me-nots (`places/forget-me-not-island.md`). *Her family has never found it.*
+
 **The family knows exactly what happened.** The war, the defeat, the curse, what it cost and who it was aimed at — none of it is hidden from them and none of it could be, because the Vessk lost badly and a loss that size is not swept anywhere. *What they cannot do is name her or picture her* (The gap in the line, below).
 
 **There is a descendant of hers alive now, somewhere near Vulture's Nest** (`campaign/session-1-convergence.md`) — **Osha**, and *near Vulture's Nest* is simply where the Muirn live. Whether the technique itself survived her ancestor is not in doubt — it was never hers alone, it is her family's, taught inside the bloodline and to nobody else.

@@ -23,7 +23,7 @@ He opened up more than he meant to — talked about the work, maybe even let her
 
 ## Forget-Me-Not Island
 
-**A new site, found recently** — not one of the order's old lines (`places/forget-me-not-island.md`). He has cut the left half of the hut's doorframe and comes back to finish the right while the party is there, and warns them off without explaining anything. *Whether he knows whose hut it was is not set.*
+**A new site, found recently** — not one of the order's old lines (`places/forget-me-not-island.md`). He has cut the left half of the hut's doorframe and comes back to finish the right while the party is there, and warns them off without explaining anything. **He cuts it with the Memory chisel.** *He does not know whose hut it was, or that the seam is where a woman was unmade.*
 
 ## Open
 

@@ -105,6 +105,7 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 - Turnroot Weald wraps the **northeastern edge** of the Ashfall Wastes, acting as a natural boundary.
 - Glasslight Reach sits at the **northernmost edge of the known world**; the Soft Edge is the northernmost water.
 - Briarwatch is cut into **Turnroot Weald's own eastern edge**, and its western fence is the boundary against the Weald.
+- Forget-Me-Not Island lies **near Gharial** (`places/forget-me-not-island.md`); no bearing set.
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
 
