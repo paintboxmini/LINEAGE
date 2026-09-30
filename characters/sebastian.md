@@ -12,7 +12,7 @@ Sebastian's own working set carries **seven** chisels *(six until 2026-10-01, wh
 - **Hunt** *(Navigation / Pathfinding)* — Hunt covers pathfinding *(Drew, 2026-10-01)*; the chisel for the In-Between posts
 - **War** *(Vitality and Destruction — War is one expression of that Seat, `world/seats.md`; confirmed 2026-10-01)*
 - **Change** *(Trust and Change)* — widest and shallowest of all. Power that hits hard and can't hold. The one Sebastian has a healthy fear of.
-- **Hope** *(Hope and Possibilities)* — the seventh, and the one the Soft Edge is held with *(Drew, 2026-10-01)*. *Where it sits on the width spectrum is not set.*
+- **Hope** *(Hope and Possibilities)* — the seventh, and the one the Soft Edge is held with *(Drew, 2026-10-01)*. **Wide, on the Change end** *(Drew, 2026-10-01)*: hits hard, fades fast, recut often. *Which suits the fastest-changing ground anywhere — the Soft Edge gets strong glyphs that never last.*
 
 *Which Seat each chisel answers to, set 2026-10-01* (`world/seats.md`). **A Mason matches the chisel to the seam's type** (`factions-and-races/the-masons.md`, Methods).
 
@@ -34,5 +34,4 @@ He opened up more than he meant to — talked about the work, maybe even let her
 
 - Appearance, age, personality — undeveloped
 - The seven chisels' individual names
-- Where Hope sits on the width spectrum
 - What exactly he does or doesn't know about the failed pillar under the Western Property sinkhole
