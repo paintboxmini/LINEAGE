@@ -84,7 +84,7 @@ A handful of others exist. None of them are written yet, and nothing outside thi
 **Hermetic, close to druidic, and selfless.** A Mason lives apart, works alone, and walks the rotation out of conviction — trying to make the world safer for people who will never know it was done. *Nobody sends them, nobody pays them, and nobody hands their work out as a job.*
 
 1. **First, a question with no answer.** The glyphs at Vulture's Nest that show only when the water settles (`places/vultures-nest.md`, The Tide). Nobody explains them and nobody should.
-2. **Second, one with teeth — after Pneum, not during it.** Most likely the next island the party goes to. A seam that is actually biting, and a Mason working it. *Which island is not set, because the party has not chosen where they go after Pneum.*
+2. **Second, one with teeth — after Pneum, not during it.** **Forget-Me-Not Island** (`places/forget-me-not-island.md`), set 2026-10-01: a new site Sebastian found recently, fresh glyphs on half a doorframe, and Sebastian arriving to finish them and warn the party off.
 3. **Then, company.** A small order walking the same rotation forever is short of hands, and **a Mason the party has actually helped may let them walk the line alongside.** Not a job, not posted anywhere and not paid — it happens between people, on the Mason's terms, and a Mason who does not want company simply is not there in the morning.
 4. **And a player can become one.** Mirel was found already doing the work rather than recruited (`characters/mirel.md`), which is the precedent: somebody who has walked the rotation enough times to start seeing seams is somebody Sebastian gives a chisel.
 

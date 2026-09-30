@@ -21,6 +21,10 @@ Found her scratching a stabilization glyph from memory into the rock near the se
 
 He opened up more than he meant to — talked about the work, maybe even let her inside the Lodge itself. Without thinking about it, he handed her a chisel: one of his own six, Time-aligned. Told her she'd have to find her own hammer if she wanted to put it to practice. No glyph lessons. Nothing else to go on.
 
+## Forget-Me-Not Island
+
+**A new site, found recently** — not one of the order's old lines (`places/forget-me-not-island.md`). He has cut the left half of the hut's doorframe and comes back to finish the right while the party is there, and warns them off without explaining anything. *Whether he knows whose hut it was is not set.*
+
 ## Open
 
 - Appearance, age, personality — undeveloped

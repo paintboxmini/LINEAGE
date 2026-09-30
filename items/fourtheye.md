@@ -122,6 +122,7 @@ Outside the bazaar there is no price, because there is no supply. Everything tha
 - **What it means when a person appears in a vision.** It is not supposed to happen, and it is least supposed to happen when the vision was aimed at that person. Nobody has written what it is when it does, which makes it a good thing to spend once and never explain.
 - **Whether the dulling is permanent.** Same open question as the animal's Dulling trait (`bestiary/ocellus.md`), and it should have the same answer.
 - **What the Regency does when someone points out how useful it is.** A drug that reads the room ten minutes before the meeting is exactly what a council of spymasters would want, and the official position is that it is banned three times over. Nobody in the repo has put that to the council yet.
+- **What the forget-me-nots do in the refining.** They are an ingredient, set 2026-10-01 (`flora/forget-me-not.md`); what they contribute is not written.
 - **Who at the Nest is running the animals.** Erubeth's whole reason for being there (`places/vultures-nest.md`).
 
 ---
