@@ -20,7 +20,7 @@
 
 **A hut at the centre of the island, and a ring of forget-me-nots all the way round it.** Blue, low, thick, and growing nowhere else on the island. **The flowers mark where the effect starts** (`flora/forget-me-not.md`).
 
-**Inside the ring, names and faces don't hold.** You forget what your companion is called while you are looking at them. You cannot keep a picture of the path you came in by. *Nothing is taken from you — it simply will not stay while you are in there.* **Step back out past the flowers and it comes back**, mostly; what stays gone is the way here, which is why Harlock drew it.
+**Inside the ring, names and faces don't hold** — because this is a Memory seam (What It Is, below). *Another kind of seam would do something else.* You forget what your companion is called while you are looking at them. You cannot keep a picture of the path you came in by. *Nothing is taken from you — it simply will not stay while you are in there.* **Step back out past the flowers and it comes back**, mostly; what stays gone is the way here, which is why Harlock drew it.
 
 **Play it in the fiction, not with a roll.** Players can say their characters' names at the table as often as they like. Their characters cannot hold them. *Let them notice it themselves — somebody reaching for a name and coming up empty is the moment the island introduces itself.*
 
@@ -48,7 +48,7 @@
 
 **Once the party has had a chance to explore the hut, Sebastian arrives** to finish the glyphs (`characters/sebastian.md`). **This is a new site to him**, found recently, not one of the order's old lines.
 
-**He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and the one of his that belongs on an island where memory slips. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
+**He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and **the one that matches a Memory seam** — a Mason contains a seam with the chisel aligned to its type. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
 
 **The glyphs stop the seam's effect from spreading** *(Drew, 2026-10-01)*. It has been growing — which is why the ring has teeth now, and why a place that resists being remembered finally got noticed. **Once the right half of the doorframe is cut, it stops, and the forget-me-nots leave completely** *(Drew, 2026-10-01)*. Not one is left on the island. *The effect inside is held, not gone: a binding stops a seam getting worse, it does not close it* (`factions-and-races/the-masons.md`, Methods).
 
@@ -70,11 +70,11 @@
 
 ## What It Is — GM Only
 
-**A seam, and a young one to the Masons' eyes.** Whatever it is, it presses on the first thing the Knife ever cut — a thing's Name, the cut that made it legible (`factions-and-races/the-masons-three-cuts.md`).
+**A Memory seam, and a young one to the Masons' eyes.** It presses on Memory, the domain of what remains afterward (`world/seats.md`, Grief and Memory), and **everything it does is Memory's**: names and faces that will not stay, a route that does not come home with you. *None of that is what seams do in general — every seam does what its own domain does* (`factions-and-races/the-masons.md`, Methods).
 
 **The seam is the hole she left** *(Drew, 2026-10-01)*. **She cast the curse from this hut, not at the queen's feet** — which is why it spent generations *crossing a spiritual distance* before it arrived (`campaign/pat.md`, The Call). **She was unmade here, and the unmaking left a thin place behind** where names and faces stop holding: the same thing that happened to her, leaking out. *It is also why nobody found it for so long, the Masons included — it is a place that resists being remembered.*
 
-**Sebastian does not know that.** To him it is a young seam that presses on Name, and he binds it the way he binds any other. *Whose hut it was is nothing a Mason would ask.*
+**Sebastian does not know that.** To him it is a young Memory seam, and he binds it the way he binds any Memory seam. *Whose hut it was is nothing a Mason would ask.*
 
 ## Not Yet Set
 

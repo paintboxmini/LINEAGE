@@ -21,6 +21,6 @@
 ## Not Yet Set
 
 - What they do in FourthEye
-- Whether they grow anywhere else a seam like this one exists
-- **Where Harlock's next source is.** If they only grow on the edge of a spreading seam, then looking for more flowers is looking for another seam before the Masons bind it
+- Whether they grow at other **Memory** seams — the flower belongs to this seam's type, not to seams in general
+- **Where Harlock's next source is.** If they only grow on the edge of a spreading Memory seam, then looking for more flowers is looking for another one of those before the Masons bind it
 - What Harlock pays

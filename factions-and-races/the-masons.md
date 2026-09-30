@@ -12,6 +12,8 @@ They are also masons in the ordinary sense, and among the finest alive at it. Th
 
 - Constrained magic — Mason practice is disciplined, systematic, and deliberately limited in scope.
 
+- **Seams have types, and the type sets both what a seam does and what holds it** *(Drew, 2026-10-01)*. A seam presses on one domain, so its effects are that domain's and nobody else's — **there is no such thing as what a seam does in general.** A Mason contains it with the chisel aligned to the matching Seat (`world/seats.md`; Sebastian's six are `characters/sebastian.md`, The Chisels), and then picks the width on the usual tradeoff between strength and how long it lasts. *Forget-Me-Not Island is a Memory seam, which is why names and faces slip there and why Sebastian brought the Memory chisel* (`places/forget-me-not-island.md`). **A Change seam, a War seam or a Hunt seam would do something else entirely.**
+
 - **Binding** is the order's own word for what a finished piece of work is, and it's a precise one. A binding doesn't remove a threat or close a seam; it holds one in a fixed state so it stops getting worse. Everything in Known Works below is a binding, and every one of them is still holding something that was never solved.
 
 - Maintenance, not installation. A glyph fades. The work is a rotation kept without interruption for as long as the order has existed — walk the line, recut what's thinned, walk back out. Closer to a rite kept on schedule than a chore fit in when there's time.
@@ -100,3 +102,4 @@ The Masons and the Final Current represent opposing orientations toward the same
 - Whether the order has any structure left above Sebastian, or whether *Head Mason* is now a title with nothing under it
 - Why the Regency has never moved to formalize the relationship, given how much it knows, and whether the order has ever been asked (`world/the-regency.md`, The Masons)
 - Whether any of the superstitions is accidentally correct about something the order doesn't know about itself
+- **The types of the seams already written.** The Briarwatch line, the Soft Edge, the In-Between posts, the Nest's settle-tide glyphs and the Coil each press on some domain, and none of them has been typed yet (Methods, above)
