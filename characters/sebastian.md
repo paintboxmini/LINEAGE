@@ -4,26 +4,27 @@ A Head Mason. Last of his line, the first of a new one. Keeper of the Lodge at t
 
 ## The Chisels
 
-Sebastian's own working set carries six chisels, each individually Resonant, each aligned to a different Seat — not a blanket assignment, six separate resonances earned one at a time over however long he's carried them. The width/depth spectrum a chisel cuts on maps directly onto the character of the domain each one draws from:
+Sebastian's own working set carries **seven** chisels *(six until 2026-10-01, when Hope was added)*, each individually Resonant, each aligned to a different Seat — not a blanket assignment, seven separate resonances earned one at a time over however long he's carried them. The width/depth spectrum a chisel cuts on maps directly onto the character of the domain each one draws from:
 
 - **Time** *(Fear and Time)* — thinnest, deepest-cutting end. Longest-lasting mark, weakest effect. Matches a Seat that's nothing but continuity and persistence. triangle shaped cutting end.
 - **Memory** *(Grief and Memory)* — close beside Time on the same end, not quite as extreme.
 - **Binding** *(Love and Binding)* — *was Knowledge until 2026-10-01*
 - **Hunt** *(Navigation / Pathfinding)* — Hunt covers pathfinding *(Drew, 2026-10-01)*; the chisel for the In-Between posts
-- **War** *(Vitality and Destruction — War is one expression of that Seat, `world/seats.md`)*
+- **War** *(Vitality and Destruction — War is one expression of that Seat, `world/seats.md`; confirmed 2026-10-01)*
 - **Change** *(Trust and Change)* — widest and shallowest of all. Power that hits hard and can't hold. The one Sebastian has a healthy fear of.
+- **Hope** *(Hope and Possibilities)* — the seventh, and the one the Soft Edge is held with *(Drew, 2026-10-01)*. *Where it sits on the width spectrum is not set.*
 
 *Which Seat each chisel answers to, set 2026-10-01* (`world/seats.md`). **A Mason matches the chisel to the seam's type** (`factions-and-races/the-masons.md`, Methods).
 
-Individual names for the six aren't set — each carries its own, decided one at a time, not assigned as a matching set.
+Individual names for the seven aren't set — each carries its own, decided one at a time, not assigned as a matching set.
 
 ## Mirel
 
-**Just before the party reaches Glasslight** *(Drew, 2026-10-01)*. Until then Sebastian carries all six chisels, the Time chisel included; **by the time the party meets Mirel she has it**, which is how `quests/tide-pulls-back.md` already runs.
+**Just before the party reaches Glasslight** *(Drew, 2026-10-01)*. Until then Sebastian carries all seven chisels, the Time chisel included; **by the time the party meets Mirel she has it**, which is how `quests/tide-pulls-back.md` already runs.
 
 Found her scratching a stabilization glyph from memory into the rock near the seams at the Lodge — real seams, the kind that take training to even notice. Asked how she'd found them. She said she'd just followed some marks — no sense she'd done anything unusual. That plainness is what actually settled it for him; someone chasing significance would have made more of the moment than she did.
 
-He opened up more than he meant to — talked about the work, maybe even let her inside the Lodge itself. Without thinking about it, he hands her a chisel: one of his own six, Time-aligned. Told her she'd have to find her own hammer if she wanted to put it to practice. No glyph lessons. Nothing else to go on.
+He opened up more than he meant to — talked about the work, maybe even let her inside the Lodge itself. Without thinking about it, he hands her a chisel: one of his own seven, Time-aligned. Told her she'd have to find her own hammer if she wanted to put it to practice. No glyph lessons. Nothing else to go on.
 
 ## Forget-Me-Not Island
 
@@ -32,5 +33,6 @@ He opened up more than he meant to — talked about the work, maybe even let her
 ## Open
 
 - Appearance, age, personality — undeveloped
-- The six chisels' individual names
+- The seven chisels' individual names
+- Where Hope sits on the width spectrum
 - What exactly he does or doesn't know about the failed pillar under the Western Property sinkhole
