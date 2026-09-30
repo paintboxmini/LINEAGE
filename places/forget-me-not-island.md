@@ -32,11 +32,13 @@
 
 **Fresh glyphs line the left half of the doorframe.** Not old work on an old rotation: **new cuts, clean edges, stone dust still in the grooves.** The right half is bare. *Somebody found this place recently and has not finished.*
 
-### The relic
+### The relic is the place
 
-**Something stationary, left by her, that the party cannot make do anything.** They can study it all day. **It is keyed to her line, not to words** — the same reason the scrap still smells of her when nothing else of her survived (`campaign/pat.md`, The scrap): a bloodline is not a name, and the unmaking had no grip on it.
+*Drew, 2026-10-01.* **Not an object. The spot inside the hut where the curse was performed** — where she stood when she paid it, and where she stopped being.
 
-**If Osha finds it, it wakes and carries a message.** It cannot hold her name or her face — those are gone — but it can hold *why*. **That is where the answer to Osha's question lives: did she choose it, or was she put to it?** *Drew's to set, and the relic is where Osha's decision gets made.* The party will not know any of this the first time they stand in front of it.
+**Anyone can stand there and nothing happens.** The party can find it, and may well feel that it is the centre of everything here, but it gives them nothing. **It answers to her line, not to anyone who asks** — the same reason the scrap still smells of her when nothing else of her survived (`campaign/pat.md`, The scrap): a bloodline is not a name, and the unmaking had no grip on it.
+
+**If Osha stands there, she receives her ancestor's last thoughts and feelings.** Not a message and not words — what the woman was thinking and feeling in the moment she paid. It cannot give Osha her name or her face; those are gone. **It gives her *why*, from the inside.** **That is where the answer to Osha's question lives: did she choose it, or was she put to it?** *Drew's to set, and this spot is where Osha's decision gets made.* The party will not know any of this the first time they stand on it.
 
 *Osha is not here, and the table should not be steered toward her here.* The party leaves knowing where this place is, **and Osha does not** — which is one of the things they have to bring to her, alongside the scrap.
 
@@ -45,6 +47,10 @@
 **Once the party has had a chance to explore the hut, Sebastian arrives** to finish the glyphs (`characters/sebastian.md`). **This is a new site to him**, found recently, not one of the order's old lines.
 
 **He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and the one of his that belongs on an island where memory slips. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
+
+**The glyphs stop the seam's effect from spreading** *(Drew, 2026-10-01)*. It has been growing — which is why the ring has teeth now, and why a place that resists being remembered finally got noticed. **Once the right half of the doorframe is cut, it stops, and the forget-me-nots recede** back toward the hut. *The effect inside is held, not gone: a binding stops a seam getting worse, it does not close it* (`factions-and-races/the-masons.md`, Methods).
+
+**Which makes this Harlock's last good harvest.** Whatever the party picks this trip is more than anyone will pick again once Sebastian is done.
 
 **He finishes the cut and he warns them off.** He does not explain what the ring is, what the hut was, or what the glyphs are holding — a Mason never does (`factions-and-races/the-masons.md`, How They're Seen). *He is not hostile. He wants them gone before the place takes something they will miss.*
 
@@ -69,8 +75,8 @@
 ## Not Yet Set
 
 - Its bearing and distance from Gharial and from the Nest — *near Gharial* is set, the rest is not
-- The relic's form, and the message it carries
-- What Sebastian's glyphs hold once finished, and what happens to the flowers after
+- What Osha's ancestor was thinking and feeling — the answer to whether she chose it
+- How far the flowers recede, and whether any stay
 - The University's men — who, how many, how they found him (Chris's)
 
 ## Related Documents

@@ -24,7 +24,7 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 **What is left of her ancestor** — the place the woman lived and practised, apart from the tribe. *A thing that can erase a person was never going to be practised in the middle of the village.* Somewhere on the islands near Gharial there is a shack, or a ritual ground, or both, and whatever the unmaking did not take is still there: things she made, things she kept, marks she left. **Nothing there can have her name on it. Everything there is still hers.**
 
-**It is Forget-Me-Not Island** (`places/forget-me-not-island.md`, set 2026-10-01): a hut at the centre of a small unnamed island, ringed by forget-me-nots, **and a relic of hers that wakes only for her line.** When Osha finds it, it carries a message — the answer to her question. *She has not found it yet. The island resists being remembered, and the party gets there first, on Harlock's errand.*
+**It is Forget-Me-Not Island** (`places/forget-me-not-island.md`, set 2026-10-01): a hut at the centre of a small unnamed island, ringed by forget-me-nots, **and, inside the hut, the spot where the curse was performed.** When Osha stands there, she receives her ancestor's last thoughts and feelings — the answer to her question. *She has not found it yet. The island resists being remembered, and the party gets there first, on Harlock's errand.*
 
 ## Who Is Looking For Her
 
@@ -46,7 +46,7 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 - Appearance, voice, age
 - Where she is when the party first crosses her trail, beyond having passed through Pneum (`places/pneum.md`, Pat's lead)
-- The relic's form, and its message (`places/forget-me-not-island.md`)
+- What her ancestor was thinking and feeling at the end (`places/forget-me-not-island.md`, The relic is the place)
 - **Whether the ancestor chose it or was put to it.** Drew's to set; Osha's to find out
 - How she reacts to a Shunka, and to a Shunka carrying the last of the woman she is looking for
 
