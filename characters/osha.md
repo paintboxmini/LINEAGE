@@ -18,7 +18,9 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 **So undoing it costs her twice**: her own existence, and every one of her family.
 
-**She will not decide anything until she knows why the first one was done.** Undo it or let it stand — either one depends on a question her family answers too easily: *did her ancestor choose it, or was she put to it?* The family says she walked in willingly, for the queen's guilt and for ground the Lizardkin could thrive on. **Osha wants to find that out for herself**, and the family has no answer to that except to bring her home.
+**She will not decide anything until she knows why the first one was done.** Undo it or let it stand — either one depends on a question her family answers too easily: *did her ancestor choose it, or was she put to it?* The family says she walked in willingly, for the queen's guilt and for ground the Lizardkin could thrive on. **Osha wants to find that out for herself.**
+
+**The answer, GM only: she was forced** *(Drew, 2026-10-01)*. The Vessk ransacked Gharial and threatened worse, and she complied to protect her family and the Muirn (`factions-and-races/races-lizardkin.md`, The Cursegivers). *Which is Osha's own position, one generation on* — and she finds that out standing where her ancestor stood.
 
 ## What She Is Looking For
 
@@ -46,8 +48,6 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 - Appearance, voice, age
 - Where she is when the party first crosses her trail, beyond having passed through Pneum (`places/pneum.md`, Pat's lead)
-- What her ancestor was thinking and feeling at the end (`places/forget-me-not-island.md`, The relic is the place)
-- **Whether the ancestor chose it or was put to it.** Drew's to set; Osha's to find out
 - How she reacts to a Shunka, and to a Shunka carrying the last of the woman she is looking for
 
 ## Related Documents

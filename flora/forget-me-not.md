@@ -14,7 +14,7 @@
 
 **Where they grow.** Picking them is trivial. **They grow on the line where names and faces stop holding**, so every flower is picked with one foot inside it, and a picker who works the ring long enough starts losing the person working beside them. *The flowers are the warning and the harvest at once.*
 
-**And the ring is shrinking.** Once the glyphs on the doorframe are finished, the effect stops spreading and the flowers recede with it. *The harvest Harlock sends the party for is the last good one.*
+**And the ring is about to be gone.** Once the glyphs on the doorframe are finished, the effect stops spreading and **the flowers leave completely** *(Drew, 2026-10-01)*. *The harvest Harlock sends the party for is the last one this island will ever give, and after it he needs a new source.*
 
 **And the way back is the second half of it.** Anyone who has been there remembers the flowers and very little of the route (`places/forget-me-not-island.md`, How the Party Gets Here). *Getting there twice takes somebody who wrote it down.*
 
@@ -22,5 +22,5 @@
 
 - What they do in FourthEye
 - Whether they grow anywhere else a seam like this one exists
-- How far they recede once Sebastian's glyphs are finished — *that they recede is set* (`places/forget-me-not-island.md`, Sebastian)
+- **Where Harlock's next source is.** If they only grow on the edge of a spreading seam, then looking for more flowers is looking for another seam before the Masons bind it
 - What Harlock pays

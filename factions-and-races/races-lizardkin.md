@@ -22,7 +22,7 @@ That proximity is the whole history. The Lizardkin island was small, the river's
 
 **Smaller, and a long way from the war.** The Muirn live on **Gharial**, a swamp island south of Vulture's Nest (`places/gharial.md`), and they are not a people rebuilding an army. **They have a shamanic culture, and they have been fostering it for longer than anyone outside counts** — and **cursegiving came out of it.** The technique is theirs, not the Vessk's (The Cursegivers, below).
 
-**The Vessk recruited them for the war.** The northern tribe had the numbers and the grievance; the southern tribe had the one thing that could reach past a lost battle. *How that recruitment went — asked, bargained, or pressed — is exactly what Osha is trying to find out* (`characters/osha.md`).
+**The Vessk forced them into the war** *(Drew, 2026-10-01)*. When the invasion failed and the Vessk learned there was a shaman on Gharial who could reach past a lost battle, **they came to Gharial, attacked the Muirn and ransacked them, and threatened worse.** The northern tribe had the numbers and the grievance; the southern tribe had the one thing they wanted.
 
 ## The Tithe
 
@@ -48,7 +48,11 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 So a family that holds this holds a weapon they can fire exactly as many times as they are willing to lose someone. **That is not a thing a people spends lightly, and it is the reason the Shunka curse is the only one anyone can name.**
 
-**The one who cursed the Shunka queen was one of theirs.** When the Vessk invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. **The family's own account is that she walked into it willingly** — that she believed the queen deserved it, and believed a people that needed ground would thrive on the Shunka's. A family that has held this for generations has generations of reasons ready for why it is justified this time. **Whether that account is true — whether she chose it or the Vessk put her to it — is not settled, and it is the question Osha is out looking for** (`characters/osha.md`).
+**The one who cursed the Shunka queen was one of theirs.** When the Vessk invasion failed in the field and there was no army left to press it, the weapon that defeat hadn't touched was this. **She was forced into it** *(Drew, 2026-10-01)*. After the Vessk ransacked Gharial and threatened worse, **she complied to protect her family and the Muirn.** She did not lay the curse because she believed in the war. She laid it because the alternative was what the Vessk had promised to do to everyone she had.
+
+**The family tells it differently.** Their account is that she walked into it willingly — that the queen deserved it, and that a people who needed ground would thrive on the Shunka's. *It is the version it has always been safe to say out loud with the Vessk listening*, and after generations of saying it, much of the family believes it. **The truth is only in one place: the spot where she did it** (`places/forget-me-not-island.md`, The relic is the place).
+
+**And it is happening again.** The Vessk forced the first cursegiver by threatening her family; they keep the curse standing by threatening her descendants (The family now, below). *Osha is standing exactly where her ancestor stood, and she does not know it yet.*
 
 **She cast it from her own hut, on a small island near Gharial, and was unmade there** *(Drew, 2026-10-01)*. The hole she left is a seam now, ringed with forget-me-nots (`places/forget-me-not-island.md`). *Her family has never found it.*
 
@@ -91,7 +95,6 @@ So her descendants inherited a skill from a person their own family cannot descr
 - What they call themselves as one people. The tribes are the Vessk and the Muirn; *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them, and neither is necessarily theirs.
 - Whether any Lizardkin live off the two islands beyond Osha and the Speaker of Pneum (`places/pneum.md`) — and which tribe the Speaker came from.
 - Whether the cursegiver family is honoured, feared, or quietly avoided among the Muirn. A people still have to live next door to the ones who can erase somebody.
-- Whether the ancestor chose it or was put to it (The Cursegivers, above). **Drew's to set, and Osha's to find.**
 - Whether anyone in that family has ever refused at the end.
 - Whether the Tithe survived the war intact, or whether a people preparing for a second one still believes in giving back.
 

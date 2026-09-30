@@ -123,6 +123,7 @@ Outside the bazaar there is no price, because there is no supply. Everything tha
 - **Whether the dulling is permanent.** Same open question as the animal's Dulling trait (`bestiary/ocellus.md`), and it should have the same answer.
 - **What the Regency does when someone points out how useful it is.** A drug that reads the room ten minutes before the meeting is exactly what a council of spymasters would want, and the official position is that it is banned three times over. Nobody in the repo has put that to the council yet.
 - **What the forget-me-nots do in the refining.** They are an ingredient, set 2026-10-01 (`flora/forget-me-not.md`); what they contribute is not written.
+- **Where Harlock gets them next.** The only known source vanishes once Sebastian binds it (`places/forget-me-not-island.md`), so after the party's harvest the supply is gone and Harlock is looking.
 - **Who at the Nest is running the animals.** Erubeth's whole reason for being there (`places/vultures-nest.md`).
 
 ---

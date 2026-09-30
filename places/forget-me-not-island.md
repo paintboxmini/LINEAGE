@@ -38,7 +38,9 @@
 
 **Anyone can stand there and nothing happens.** The party can find it, and may well feel that it is the centre of everything here, but it gives them nothing. **It answers to her line, not to anyone who asks** — the same reason the scrap still smells of her when nothing else of her survived (`campaign/pat.md`, The scrap): a bloodline is not a name, and the unmaking had no grip on it.
 
-**If Osha stands there, she receives her ancestor's last thoughts and feelings.** Not a message and not words — what the woman was thinking and feeling in the moment she paid. It cannot give Osha her name or her face; those are gone. **It gives her *why*, from the inside.** **That is where the answer to Osha's question lives: did she choose it, or was she put to it?** *Drew's to set, and this spot is where Osha's decision gets made.* The party will not know any of this the first time they stand on it.
+**If Osha stands there, she receives her ancestor's last thoughts and feelings.** Not a message and not words — what the woman was thinking and feeling in the moment she paid. It cannot give Osha her name or her face; those are gone. **It gives her *why*, from the inside.** **That is where the answer to Osha's question lives, and the answer is that she was put to it** *(Drew, 2026-10-01)*. What Osha feels is a woman whose people had just been ransacked by the Vessk, who had been promised worse, and who complied to protect her family and the Muirn (`factions-and-races/races-lizardkin.md`, The Cursegivers). **Not belief in the war. Fear for everyone she had, and the decision to pay so they would not.**
+
+*And Osha is standing there under the same threat, from the same people, for the same family.* **This spot is where her decision gets made.** The party will not know any of this the first time they stand on it.
 
 *Osha is not here, and the table should not be steered toward her here.* The party leaves knowing where this place is, **and Osha does not** — which is one of the things they have to bring to her, alongside the scrap.
 
@@ -48,9 +50,9 @@
 
 **He cuts with the Memory chisel** (`characters/sebastian.md`, The Chisels) — thin, deep and long-lasting, weak in the moment and built to hold, and the one of his that belongs on an island where memory slips. *The Time chisel sat right beside it on that end of the set, and he gave it to Mirel.*
 
-**The glyphs stop the seam's effect from spreading** *(Drew, 2026-10-01)*. It has been growing — which is why the ring has teeth now, and why a place that resists being remembered finally got noticed. **Once the right half of the doorframe is cut, it stops, and the forget-me-nots recede** back toward the hut. *The effect inside is held, not gone: a binding stops a seam getting worse, it does not close it* (`factions-and-races/the-masons.md`, Methods).
+**The glyphs stop the seam's effect from spreading** *(Drew, 2026-10-01)*. It has been growing — which is why the ring has teeth now, and why a place that resists being remembered finally got noticed. **Once the right half of the doorframe is cut, it stops, and the forget-me-nots leave completely** *(Drew, 2026-10-01)*. Not one is left on the island. *The effect inside is held, not gone: a binding stops a seam getting worse, it does not close it* (`factions-and-races/the-masons.md`, Methods).
 
-**Which makes this Harlock's last good harvest.** Whatever the party picks this trip is more than anyone will pick again once Sebastian is done.
+**Which makes this the last harvest there will ever be here**, and **Harlock will be looking for a new source afterwards** (`items/fourtheye.md`). *Whatever the party brings back is all there is.*
 
 **He finishes the cut and he warns them off.** He does not explain what the ring is, what the hut was, or what the glyphs are holding — a Mason never does (`factions-and-races/the-masons.md`, How They're Seen). *He is not hostile. He wants them gone before the place takes something they will miss.*
 
@@ -75,8 +77,7 @@
 ## Not Yet Set
 
 - Its bearing and distance from Gharial and from the Nest — *near Gharial* is set, the rest is not
-- What Osha's ancestor was thinking and feeling — the answer to whether she chose it
-- How far the flowers recede, and whether any stay
+- Where Harlock looks next for forget-me-nots
 - The University's men — who, how many, how they found him (Chris's)
 
 ## Related Documents
