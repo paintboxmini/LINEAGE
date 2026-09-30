@@ -112,6 +112,8 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 - Old foundations surface
 - Glyphs carved into stone reappear
 
+**The glyphs are Mason work, and they are the party's first brush with the order** *(Drew, 2026-09-30)*. They show only when the water settles on a deep slow tide, and the rest of the time they are under moving water and nobody thinks about them. **This one does not get an answer.** No Mason turns up, nobody in the Nest knows who cut them or what they hold, and a guess of *Masons* is as far as anyone local gets. *It is a question planted early for the campaign to answer much later* (`factions-and-races/the-masons.md`, How the party meets them).
+
 **And there are more lights on the water those nights**, which everybody in the Nest has noticed and nobody has ever connected to the rest of this list (`bestiary/spooklight.md`). The town's position on spooklights is a prohibition rather than a theory: **they are trying to lead you off, so you do not answer a light.** That is the whole of the local knowledge. It is wrong about the mechanism, roughly right about the outcome, and consequently impossible to argue anyone out of.
 
 **The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
@@ -333,6 +335,16 @@ It is doing three things at once and none of them announce themselves: it puts A
 - A Glasslight lens shows a color that only appears here at low tide.
 - The held Promise barge — written up in full above, The Quarantined Barge.
 - An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water. That precision is why anyone who looks at it dreams of the door.
+
+## Work out of the Nest
+
+*Drew, 2026-09-30. How the island-hopping first leg gets paid for.*
+
+- **Trade runs, for Bartho.** The dock always has cargo that needs to reach another island and a crew it trusts to take it. This is the backbone: it puts the party on the water going somewhere new, with a reason to be there and a reason to come back.
+- **Escorting Cartographers.** A Guild surveyor walking a route across somebody's island needs somebody watching their back while they look at an instrument (`factions-and-races/the-cartographers-guild.md`). **The Guild pays.** Common work, and the most ordinary way the party ends up somewhere strange.
+- **Escorting Masons — later.** Not early: the order is rare until the party has met it properly (`factions-and-races/the-masons.md`, How the party meets them). When it comes, it comes through **Jonas**, and the money is the Regency's.
+
+**A player can take up either trade.** A character who has escorted enough route walks can be taken on to walk them; one who has stood beside enough recuts can start to see the seams.
 
 ## Entry — If the Party Arrives Here
 

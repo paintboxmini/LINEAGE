@@ -42,6 +42,10 @@ The ink in the margins outlives the image. The oldest atlases in the chapter hou
 
 Some traditional surveying equipment, but mainly the roads need light-cartography's precision tools.
 
+## Escorts
+
+**A surveyor looking through an instrument is not looking at anything else**, and the ground a route walk crosses is not always friendly. **The Guild hires escorts and pays them**, and a party working out of Vulture's Nest is exactly who it hires (`places/vultures-nest.md`, Work out of the Nest). *It is the most common way anyone outside the Guild ends up somewhere strange, and a walker who has been escorted enough times sometimes asks whether the escort would like to learn.* *(Drew, 2026-09-30.)*
+
 ## Structure
 
 Headquartered in Glasslight Reach — Most surveyors are Glasskin themselves, trained first on the Soft Edge — the single fastest-changing, least trackable phenomenon anywhere in the kingdom. Even a mediocre light-cartographer has spent years catching drift nobody else could follow; turned outward onto the slower instability of a road, that same discipline is exactly what a Route Walk needs.
