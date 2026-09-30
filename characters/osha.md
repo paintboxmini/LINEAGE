@@ -14,9 +14,11 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 ## Why She Left
 
-**The Vessk will want another one.** The northern tribe is rebuilding an army and the land problem that started the first war was never solved. If they go again and want a curse to go with it, **she is the one they will ask to pay for it.**
+**Her family was hiding her, because the Vessk threatened them** *(Drew, 2026-10-01)*. If the Vessk plan fails because of Osha — if the curse ever comes off — **the Vessk kill the entire family.** She is the one person alive who could lift it, so she is the most dangerous person her family has, to the Vessk and to her own kin alike.
 
-**She will not decide anything until she knows why the first one was done.** Undo it, repeat it, or refuse both — every one of those depends on a question her family answers too easily: *did her ancestor choose it, or was she put to it?* The family says she walked in willingly, for the queen's guilt and for ground the Lizardkin could thrive on. **Osha wants to find that out for herself**, and the family has no answer to that except to bring her home.
+**So undoing it costs her twice**: her own existence, and every one of her family.
+
+**She will not decide anything until she knows why the first one was done.** Undo it or let it stand — either one depends on a question her family answers too easily: *did her ancestor choose it, or was she put to it?* The family says she walked in willingly, for the queen's guilt and for ground the Lizardkin could thrive on. **Osha wants to find that out for herself**, and the family has no answer to that except to bring her home.
 
 ## What She Is Looking For
 
@@ -26,11 +28,15 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 ## Who Is Looking For Her
 
-**Her family**, to bring her back and keep the line hidden (`factions-and-races/races-lizardkin.md`, The family now). They are the hostile ones, and they are the obstacles the party meets first.
+**Her family, split in two** (`factions-and-races/races-lizardkin.md`, The family now):
+- **Some want her dead.** One life against all of theirs; a dead Osha can never lift the curse, and the Vessk leave the rest alone
+- **Some want her found and sheltered**, hidden again before anybody else reaches her
+
+**Both are hostile to outsiders, and both are obstacles** — but they are different obstacles, and the half that wants her alive is the half with a reason to talk to anyone else who does.
 
 **Caine**, because his dead told him a descendant was alive near Vulture's Nest.
 
-*So the campaign shape is a search with three parties in it:* **Osha alone, looking for her ancestor; her family, looking for Osha; and Caine, looking for both.** The party keeps arriving where she has just been.
+*So the campaign shape is a search with three parties in it:* **Osha alone, looking for her ancestor; her family, looking for Osha — some to kill her, some to save her; and Caine, looking for all of them.** The party keeps arriving where she has just been.
 
 ## The Scrap
 

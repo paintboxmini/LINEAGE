@@ -67,7 +67,7 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 *The shape is Drew's. What's written here follows from `places/pneum.md` as it already stands — none of the theology is invented for this.*
 
-**The trail has three ends** *(Drew, 2026-09-30; this used to send the search north to the Lizardkin island first)*. **Osha is out alone** across the islands near Gharial, looking for what is left of her ancestor. **Her family is looking for her**, and they are the obstacles the party meets first (`places/gharial.md`). **And the Vessk** — the northern tribe, on the island off the Shunka island's lower east coast (`world/geography-overview.md`, Bearing Table) — are the reason she is out at all: they will want another curse for the next war, and she is the one who would pay it.
+**The trail has three ends** *(Drew, 2026-09-30; this used to send the search north to the Lizardkin island first)*. **Osha is out alone** across the islands near Gharial, looking for what is left of her ancestor. **Her family is looking for her** — some to kill her, some to shelter her — and they are the obstacles the party meets first, out on the water, because **Gharial itself is hard to find and mostly unknown** (`places/gharial.md`). **And the Vessk** — the northern tribe, on the island off the Shunka island's lower east coast (`world/geography-overview.md`, Bearing Table) — are why the family is split: they have promised to kill the whole family if Osha breaks their plan.
 
 **That northern leg is a river journey, not a sea crossing.** The Nest sits at the densest point of the same web those islands sit at the far end of, so the search has a spine and the spine is the water.
 
@@ -77,7 +77,7 @@ Pat hears that word in the first hour, in the first place he looks, and it is ex
 
 So: **the water is where the campaign returns, not where it is confined.** A GM should expect the party to leave it early and often, and should not need to invent a river-shaped excuse to let them.
 
-**What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that and thwart it before it launches — and since the Vessk's war is the reason Osha would be asked for a second curse, **the campaign's largest external threat and Pat's personal question are the same question.**
+**What they find when they get there is the second war.** The Lizardkin have spent generations rebuilding a real army and the land problem that started the first invasion was never solved (`factions-and-races/races-lizardkin.md`). The party can walk into that and thwart it before it launches — and since the Vessk's war is what the curse is buying time for, and the Vessk's threat is what splits Osha's family, **the campaign's largest external threat and Pat's personal question are the same question.**
 
 *That shape is Drew's. It's recorded here because it changes what Session 1 is for: the Nest isn't the start of a wander, it's the start of a search that happens to run through every village the table wanted to visit anyway.*
 

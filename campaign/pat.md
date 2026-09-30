@@ -142,7 +142,7 @@ Still open:
 
 *So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
 
-**Live since 2026-09-30.** *It was deliberately left untracked on 2026-09-21, while the meeting was far off.* Now there is a person on the other end of it: **Osha, alone, looking for what is left of her ancestor; her family looking for Osha; and Caine looking for both** (`characters/osha.md`). The scrap is the thing she left home to find, and she does not know it exists.
+**Live since 2026-09-30.** *It was deliberately left untracked on 2026-09-21, while the meeting was far off.* Now there is a person on the other end of it: **Osha, alone, looking for what is left of her ancestor; her family looking for Osha — some to kill her, some to shelter her; and Caine looking for all of them** (`characters/osha.md`). The scrap is the thing she left home to find, and she does not know it exists.
 
 ### Where he got it — settled
 

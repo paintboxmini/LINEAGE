@@ -64,11 +64,17 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 **Hiding the line.** The family's position is the obvious one: keep the bloodline secret, keep it away from the Shunka, and **wait** — the curse is only now reaching the Shunka's common folk (`campaign/pat.md`, The Call), and when it has done its work, the Vessk are free to step in and take the ground the first war could not. *Nobody who can end the curse gets found, and the curse finishes the job.*
 
-**They are hostile, and they are the obstacles.** Anyone asking after the line is a threat to it, and a Shunka asking after it is the threat they have spent generations waiting for. **They are also looking for Osha**, who has left.
+**And they are doing it under threat** *(Drew, 2026-10-01)*. **The Vessk have told the family plainly: if their plan fails because of Osha, the whole family dies.** Osha is the one person alive who could lift the curse, which makes her the one thing that can break the Vessk's plan — so the family hid her, from the Shunka, from outsiders, and as far as they could from the question itself.
+
+**She has left, and the family has split over it.**
+- **Some of them are hunting her to kill her.** A dead Osha can never lift the curse, the Vessk's plan is safe, and everybody else lives. *To them it is one life against all of theirs, and they are not wrong about the arithmetic.*
+- **Some of them are hunting her to shelter her.** Find her before anyone else does, and hide her again.
+
+**Both halves are hostile to outsiders**, and a Shunka asking after the line is the threat every one of them has been raised to expect. *Which half the party meets first changes what the family is to them.*
 
 ### Osha
 
-**The one living Muirn who holds the technique** (`characters/osha.md`). If the Vessk go to war again and want another curse, **she is the one they will ask to pay for it** — and she has gone out alone across the islands near Gharial looking for what is left of the woman who paid the first time, because she will not decide whether to undo it, or repeat it, until she knows why it was ever done.
+**The one living Muirn who holds the technique** (`characters/osha.md`). **Undoing the curse would cost her own existence and her family's lives**, and she has gone out alone across the islands near Gharial looking for what is left of the woman who paid the first time, because she will not decide anything until she knows why it was ever done.
 
 ### The gap in the line
 

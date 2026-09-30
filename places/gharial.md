@@ -2,6 +2,8 @@
 
 *A swamp island south of Vulture's Nest. Home of the Muirn. Named and placed by Drew, 2026-09-30.*
 
+**Hard to find, and mostly unknown** *(Drew, 2026-10-01)*. It is not on the market sheets and it is not a place the Nest talks about. *Whatever people say about the southern water, Gharial is not a name in it* — **Caine cannot hear of it early, and the party gets there by following somebody, not by asking the way.**
+
 ---
 
 ## What It Is
@@ -14,16 +16,18 @@
 
 **One family here holds the technique**, and it is hiding the line: keeping it secret, keeping it from the Shunka, and waiting for the curse to finish its work so the Vessk can take the ground the first war could not (`factions-and-races/races-lizardkin.md`, The family now).
 
-**Osha has left**, and they are looking for her (`characters/osha.md`). *A Shunka turning up asking questions is the thing they have spent generations waiting for, and they will treat him that way.*
+**They hide under threat.** The Vessk have told them that if their plan fails because of Osha, the whole family dies (`factions-and-races/races-lizardkin.md`, The family now).
+
+**Osha has left, and the family has split** — some hunting her to kill her and save the rest, some hunting her to shelter her (`characters/osha.md`). *A Shunka turning up asking questions is the thing all of them have spent generations waiting for, and they will treat him that way.*
 
 ## What the Party Meets Here
 
-**Obstacles.** The family is hostile, the ground favours anyone who swims, and nobody on Gharial has any reason to help a stranger find the one person the whole line is protecting. *Osha is not here. That is the point of her.*
+**Late, if at all.** The party meets the family out on the water first — whichever half is closest to Osha's trail — and Gharial is where that trail eventually leads back to. When they do arrive: the ground favours anyone who swims, and nobody here has any reason to help a stranger find the one person the whole line is protecting. *Osha is not here. That is the point of her.*
 
 ## Not Yet Set
 
 - How far from Vulture's Nest, and by what water
-- **What the Nest knows about Gharial** — whether the Muirn are a dockside rumour, common knowledge, or nothing at all. *This decides how early Caine can hear of it, so it matters for the order of the search*
+- **How somebody finds it at all** — whose trail leads there, and what it takes to follow it *(that it is hard to find is set; how is not)*
 - The shamanic culture itself — what it practises besides the technique, and whether the family is honoured, feared or avoided by the rest of the Muirn
 - Anything of the island's layout, and anything the party can bring back from it
 
