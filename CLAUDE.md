@@ -78,7 +78,7 @@ detail.** More explanation in the same vocabulary is the wrong repair.
 
 Don't draft into a reserved slot, don't resolve a naming question that belongs to its owner, and don't move their material.
 
-**Don't write ahead of player choice.** Sketch what a place or a person is; don't decide what the party will do there. **Minor characters stay unnamed until a player makes them matter** *(2026-10-01)* — and say so as a decision, not as an open question, so it doesn't keep surfacing.
+**Don't write ahead of player choice.** Sketch what a place or a person is; don't decide what the party will do there. **Combat-only NPCs stay unnamed until a player makes them matter** *(2026-10-01)* — hunters, guards, crew, anyone who exists almost entirely to be fought and will likely never get a line. Say so as a decision, not as an open question, so it doesn't keep surfacing. **Anyone the party can meet face to face in a social scene gets a name.**
 
 **The fiction is the player's. The mechanics are not** *(2026-09-26)*. A player owns who their character is, what they want, what they are afraid of, and what they want to be able to *do* — that is their job, and it is the whole reason the character is any good. **Designing the rule that delivers it is Drew's job, and an agent's working for him.** A player's mechanical proposal is **input, and wanted** — take it seriously, then design it properly. Don't hand a rules call back to them as "their call."
 

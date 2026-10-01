@@ -30,4 +30,4 @@
 
 ## Unnamed on Purpose
 
-**The two hunters besides Tamm have no names, and that is a decision, not a gap** *(Drew, 2026-10-01)*. They get one when a player makes them matter, and not before — *detail written ahead of that only gets in the GM's way when the sheet comes up.* Whether either would follow Tamm is the same: played in the moment.
+**The two hunters besides Tamm have no names, and that is a decision, not a gap** *(Drew, 2026-10-01)*. They exist almost entirely to be fought and will likely never get a line, so they get a name when a player makes them matter, and not before — *detail written ahead of that only gets in the GM's way when the sheet comes up.* Whether either would follow Tamm is the same: played in the moment.
