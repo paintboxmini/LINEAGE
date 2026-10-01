@@ -16,7 +16,7 @@
 
 **One family here holds the technique**, and it is hiding the line: keeping it secret, keeping it from the Shunka, and waiting for the curse to finish its work so the Vessk can take the ground the first war could not (`factions-and-races/races-lizardkin.md`, The family now).
 
-**They hide under threat.** The Vessk have told them that if their plan fails because of Osha, the whole family dies (`factions-and-races/races-lizardkin.md`, The family now).
+**They hide under threat.** The Vessk have told them — through Draksa, who watches the island (`characters/draksa.md`) — that if their plan fails because of Osha, the whole family dies (`factions-and-races/races-lizardkin.md`, The family now).
 
 **Osha has left, and the family has split** — some hunting her to kill her and save the rest, some hunting her to shelter her (`characters/osha.md`). *A Shunka turning up asking questions is the thing all of them have spent generations waiting for, and they will treat him that way.*
 

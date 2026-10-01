@@ -186,6 +186,8 @@ He's an information node and a slow-burn complication. He knows the shape of the
 
 **What he actually wants is a room identified**, and he cannot ask for that without explaining why. So he does the next thing: he describes rooms. Details, in passing, as a test, folded into an unrelated conversation — a loose board, the way the light comes in at one corner. A party that has been listening will eventually walk into one.
 
+**Dorran** — bonesetter. Patches up dock workers and does not ask how anybody got hurt; the nearest thing the Nest has to a physician (`characters/dorran.md`).
+
 ## Rumors
 
 Fragments the party might catch. None complete. Each pointing at something without naming it.

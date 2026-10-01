@@ -108,13 +108,15 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ## The Speaker — and why a Lizardkin leads this island
 
-*Drew's, 2026-09-21. **The name is open** — the role below is what matters and the person can be called whatever suits the table.*
+*Drew's, 2026-09-21.* **Named Sael, and Muirn by birth** *(2026-10-01)* — a Lizardkin of the southern tribe, from Gharial (`places/gharial.md`), who left long ago.
 
 **The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`). **On a mixed island that is not the scandal it sounds like** — Pneum has been taking converts for two hundred years and the Speaker is simply the furthest that has gone. *Nobody there finds it remarkable. Pat will.*
 
 **What is worth knowing is that they were not born here.** They came, they stayed, and they out-devoted a congregation that had been at this for two centuries before they arrived.
 
-**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and a Lizardkin grew up in the one culture on the continent whose single famous export is exactly that (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
+**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and Sael grew up among the Muirn, the people that technique came out of (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
+
+**Which is why Osha came here first.** A Muirn who left, living among continentals and leading a faith about chosen permanent marks, is the one person off Gharial she could ask about a woman who took one on for her people (Pat's lead, below). **Sael knows who she is** — a Muirn knows the family — *and has no more reason to hand her to a Shunka than to hand her to Vaun.*
 
 **They are not a cursegiver**, and the file should be read as saying so rather than leaving it hanging. Cursegiving is one Muirn family's technique held inside one bloodline (`factions-and-races/races-lizardkin.md`, The Cursegivers). Lizardkin is a people. **The Speaker is the second thing and not the first**, and the distinction is the entire value of this thread (Pat's lead, below).
 

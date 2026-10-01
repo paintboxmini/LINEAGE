@@ -76,6 +76,8 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 - **Some of them are hunting her to kill her.** A dead Osha can never lift the curse, the Vessk's plan is safe, and everybody else lives. *To them it is one life against all of theirs, and they are not wrong about the arithmetic.*
 - **Some of them are hunting her to shelter her.** Find her before anyone else does, and hide her again.
 
+**Named, 2026-10-01:** **Vaun**, her uncle, leads the hunters (`characters/vaun.md`); **Neshi**, her older cousin, leads the shelterers (`characters/neshi.md`); **Tamm**, a young cousin, is out with Vaun and will not be able to go through with it (`characters/tamm.md`). **Draksa** is the Vessk watcher who keeps the threat in front of them (`characters/draksa.md`).
+
 **Both halves are hostile to outsiders**, and a Shunka asking after the line is the threat every one of them has been raised to expect. *Which half the party meets first changes what the family is to them.*
 
 ### Osha
@@ -93,7 +95,7 @@ So her descendants inherited a skill from a person their own family cannot descr
 ## Open
 
 - What they call themselves as one people. The tribes are the Vessk and the Muirn; *Lizardkin* is an outsiders' word and *Tithebound* is what Shunka history calls them, and neither is necessarily theirs.
-- Whether any Lizardkin live off the two islands beyond Osha and the Speaker of Pneum (`places/pneum.md`) — and which tribe the Speaker came from.
+- Whether any Lizardkin live off the two islands beyond Osha and Sael, the Speaker of Pneum — Muirn by birth (`places/pneum.md`)
 - Whether the cursegiver family is honoured, feared, or quietly avoided among the Muirn. A people still have to live next door to the ones who can erase somebody.
 - Whether anyone in that family has ever refused at the end.
 - Whether the Tithe survived the war intact, or whether a people preparing for a second one still believes in giving back.

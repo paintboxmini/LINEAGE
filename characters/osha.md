@@ -31,8 +31,8 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 ## Who Is Looking For Her
 
 **Her family, split in two** (`factions-and-races/races-lizardkin.md`, The family now):
-- **Some want her dead.** One life against all of theirs; a dead Osha can never lift the curse, and the Vessk leave the rest alone
-- **Some want her found and sheltered**, hidden again before anybody else reaches her
+- **Some want her dead.** One life against all of theirs; a dead Osha can never lift the curse, and the Vessk leave the rest alone — led by her uncle **Vaun** (`characters/vaun.md`), with young **Tamm** among them (`characters/tamm.md`)
+- **Some want her found and sheltered**, hidden again before anybody else reaches her — led by her cousin **Neshi** (`characters/neshi.md`)
 
 **Both are hostile to outsiders, and both are obstacles** — but they are different obstacles, and the half that wants her alive is the half with a reason to talk to anyone else who does.
 
