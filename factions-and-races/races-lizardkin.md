@@ -80,7 +80,7 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 - **Some of them are hunting her to kill her.** A dead Osha can never lift the curse, the Vessk's plan is safe, and everybody else lives. *To them it is one life against all of theirs, and they are not wrong about the arithmetic.*
 - **Some of them are hunting her to shelter her.** Find her before anyone else does, and hide her again.
 
-**Named, 2026-10-01:** **Vaun**, her uncle, leads the hunters (`characters/vaun.md`); **Neshi**, her older cousin, leads the shelterers (`characters/neshi.md`); **Tamm**, a young cousin, is out with Vaun and will not be able to go through with it (`characters/tamm.md`). **Draksa** is the Vessk watcher who keeps the threat in front of them (`characters/draksa.md`).
+**Named, 2026-10-01:** **Vaun**, her uncle, leads the hunters (`characters/vaun.md`); **Neshi**, her older cousin, leads the shelterers and wants to bring her home (`characters/neshi.md`); **Tamm**, a young cousin, is out with Vaun and will not be able to go through with it (`characters/tamm.md`). **Draksa** is the Vessk watcher who keeps the threat in front of them (`characters/draksa.md`).
 
 **Both halves are hostile to outsiders**, and a Shunka asking after the line is the threat every one of them has been raised to expect. *Which half the party meets first changes what the family is to them.*
 

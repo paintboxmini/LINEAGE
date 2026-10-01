@@ -4,7 +4,7 @@
 
 **Cards:** `cards/muirn-hunter.md`
 
-**Vaun's hunters** (`characters/vaun.md`) — family, every one of them, sent out to find Osha and finish it (`characters/osha.md`). **Three ride with him.** *One of the three is Tamm* (`characters/tamm.md`), who runs from this sheet like the others until the moment he cannot.
+**Vaun's hunters** (`characters/vaun.md`) — family, every one of them, sent out to find Osha and finish it (`characters/osha.md`). **Three ride with him.** *One of the three is Tamm* (`characters/tamm.md`), who runs from this sheet like the others until the moment he cannot. **Neshi travels with one more**, on the other side (`characters/neshi.md`) — same sheet, trying to bring Osha home rather than finish her.
 
 **Mind 2 / Body 3 / Soul 2 — HP 16**
 **Creature Threat Rating:** 7
