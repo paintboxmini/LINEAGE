@@ -26,7 +26,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **He raised the boy as his own, and he did it in secret, away from the University.** He did not report the find. Everything that follows is downstream of that one decision: a scholar who studies what the rift changes, looking at the most extraordinary thing the rift ever produced, and choosing to be a father to it instead of a discoverer of it.
 
-**And the University had him anyway, as a child** *(canon, Drew, 2026-09-28)*. **They experimented on him during his childhood, and his father hid him.** *This file used to say the University only found out about him on the night they ran; that is superseded.* **The order is settled** *(Drew, 2026-09-28)*: found and kept quiet, then taken by the University as a boy and experimented on, then got out and hidden by his father, then found again years later. **What the experiments were is not written, and not ours to write** — it is exactly the kind of specific Chris's player writes himself (`campaign/README.md`, How much to fill in).
+**And the University had him anyway, as a child** *(canon, Drew, 2026-09-28)*. **They experimented on him during his childhood, and his father hid him.** **The order is settled** *(Drew, 2026-09-28)*: found and kept quiet, then taken by the University as a boy and experimented on, then got out and hidden by his father, then found again years later. **What the experiments were is not written, and not ours to write** — it is exactly the kind of specific Chris's player writes himself (`campaign/README.md`, How much to fill in).
 
 **He is Chris's father in every sense the word is doing work in.** Not a guardian, not a keeper. The file does not name him yet — that is Chris's, like the rest of this.
 
@@ -44,9 +44,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **Lifespan is undetermined and should stay that way.** It is not "immortal" and it is not a number. Nobody knows, including him, and the man who might have had a theory about it is missing.
 
-*This supersedes "He doesn't age", which stood in this file and in `campaign/the-amalgam.md` before 2026-09-19.*
-
-*This supersedes an earlier line here that had him found and taken in at Briarwatch, tentatively by* **Iron** *(`characters/iron.md`) — a suggestion of Drew's that was never locked, and now fully replaced: the man who raised him is his father, at the University, and it happened at the Ruins. Iron and Briarwatch are free for other uses.*
+*Iron and Briarwatch are not part of his story* (`characters/iron.md`) — *free for other uses.*
 
 ## The Night They Ran
 
@@ -432,7 +430,6 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## Not Yet Set
 
-- ~~Character name~~ — **Code**, set 2026-09-24 (top of this file). *This line was left open after it was answered*
 - **His father's name**, and what actually happened to him
 - **How long he lives** — undetermined on purpose, and better left that way
 - **Whether the moults are finished**, and what the sheds were made of
@@ -446,7 +443,6 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
-- ~~Whether identification papers carry an image~~ — **yes, a light-cartographic likeness**, 2026-09-28 (The papers describe somebody, above). **And it answers the next question on its own:** the likeness fades only if its owner has changed, so **whether it is sharp or fading is decided together with whose papers these are**, above
 - **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision
 - **What the University's experiments on him were — Chris's to write, not to be drafted for him.** When he does, it may belong among the twelve moments in `experimental/code-concept-cards.md`, whose Act I is currently the imprint, the moults and his father teaching him to look
 

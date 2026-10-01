@@ -36,7 +36,7 @@ Son of a Shunka military Captain and a woman his father met and left pregnant du
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-**There is a cure, and it is not his to take** *(Drew, 2026-09-30; this used to say explanation rather than cure)*. A cost paid in full doesn't undo on request — **it undoes only when somebody pays it again**: another cursegiver giving up her own existence to lift it (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms). **The one person alive who can is Osha** (`characters/osha.md`), and killing her would end the only way the curse ever comes off. *So a man bound by humanitarian morals is hunting somebody whose consent is the cure, and whose consent would unmake her.*
+**There is a cure, and it is not his to take** *(Drew, 2026-09-30)*. A cost paid in full doesn't undo on request — **it undoes only when somebody pays it again**: another cursegiver giving up her own existence to lift it (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms). **The one person alive who can is Osha** (`characters/osha.md`), and killing her would end the only way the curse ever comes off. *So a man bound by humanitarian morals is hunting somebody whose consent is the cure, and whose consent would unmake her.*
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
 
@@ -181,9 +181,6 @@ Not everything below is a Session 1 gap — some of what Drew and Pat talked abo
 
 Genuinely still needed before Session 1:
 
-- ~~Character name~~ — **Caine**, 2026-09-26. *Settled, and the antagonist who clashed with it was renamed rather than him* (the note at the top of this file)
-- ~~Some backstory questions~~ — **filled 2026-09-28**: officer school, how he left the army, and when he reached the Nest (Backstory, above). *Pat is table-focused and wants blanks filled (`campaign/README.md`, How much to fill in); anything here is still his to overrule*
-- ~~Price~~ — **declared 2026-09-26**, and what breaking it costs set 2026-09-28 (The Price, above)
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 
 Open, but possibly progression rather than a creation-time gap — not yet sorted which:

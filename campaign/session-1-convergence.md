@@ -18,7 +18,7 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 
 ## Kevin — the one nobody is making do this
 
-**Settled 2026-09-19, and it is the opposite of what this section used to say.** It previously had him escorting a temple wine shipment when Session 1 opens, and called that settled. **He is not carrying anything.** He fled the Abyssal Ruins with Chris and is hiding him from Gemstone University (`campaign/kevin.md`, And then it ended badly).
+**Settled 2026-09-19. He is not carrying anything.** He fled the Abyssal Ruins with Chris and is hiding him from Gemstone University (`campaign/kevin.md`, And then it ended badly).
 
 **What survives from the old version, because it was never about the cargo:**
 
@@ -85,7 +85,7 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 ## Chris and Kevin — they arrive together, running
 
-**Settled 2026-09-19, and it replaces everything this section used to say.** Chris was previously written as the one member of the party with no obligation pulling him — *"he wants to see the world, and that's it."* That is gone. He has the strongest reason of the three, and Kevin is inside it.
+**Settled 2026-09-19.** Chris has the strongest reason of the three, and Kevin is inside it.
 
 **What happened.** Chris came through the rift at the bottom of the Abyssal Ruins as a small child and was raised in secret by the scholar who found him — a plant specialist at **Gemstone University**, studying what the rift does to what grows near it, who chose to be a father rather than a discoverer (`campaign/chris.md`, Where He Landed). Kevin was at the same University, reading culinary arts and barely attending, and the two of them were friends.
 
@@ -138,7 +138,7 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 
 - **Kevin and Chris's boat is locked down** with everything on that stretch of dock. No freight is involved — they are not shipping anything, they are leaving (Kevin — the one nobody is making do this, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
 - **Pat is at the docks asking river questions** — which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud.
-- **Chris cannot afford to be counted**, which is the opposite of what this section used to say about him. He was previously the innocent one everybody believes; he is now the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
+- **Chris cannot afford to be counted.** He is the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
 
 They are three people who each need the same hold lifted, and the Compact deals with a party, not with petitioners.
 
