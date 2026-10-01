@@ -42,6 +42,10 @@ The ink in the margins outlives the image. The oldest atlases in the chapter hou
 
 Some traditional surveying equipment, but mainly the roads need light-cartography's precision tools.
 
+## The Pockets Are Drifting More
+
+**The Guild is the first to notice, because it is the only one measuring.** The posts that slow the pockets are Mason work, and there is only one Mason left walking them (`factions-and-races/the-masons.md`, The Order Now). **So the ledgers show more drift every season than the season before**, routes need correcting more often, and the four-to-five-day journeys between major places are starting to run long. *Nobody outside the Guild has connected it to anything yet. Inside it, somebody is beginning to wonder why.* *(2026-10-01.)*
+
 ## Escorts
 
 **A surveyor looking through an instrument is not looking at anything else**, and the ground a route walk crosses is not always friendly. **The Guild hires escorts and pays them**, and a party working out of Vulture's Nest is exactly who it hires (`places/vultures-nest.md`, Work out of the Nest). *It is the most common way anyone outside the Guild ends up somewhere strange, and a walker who has been escorted enough times sometimes asks whether the escort would like to learn.* *(Drew, 2026-09-30.)*
