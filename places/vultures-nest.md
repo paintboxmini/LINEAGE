@@ -341,7 +341,7 @@ It is doing three things at once and none of them announce themselves: it puts A
 *Drew, 2026-09-30. How the island-hopping first leg gets paid for.*
 
 - **Trade runs, for Bartho.** The dock always has cargo that needs to reach another island and a crew it trusts to take it. This is the backbone: it puts the party on the water going somewhere new, with a reason to be there and a reason to come back.
-- **Escorting Cartographers.** A Guild surveyor walking a route across somebody's island needs somebody watching their back while they look at an instrument (`factions-and-races/the-cartographers-guild.md`). **The Guild pays.** Common work, and the most ordinary way the party ends up somewhere strange.
+- **Escorting Cartographers.** A Guild surveyor walking a route across somebody's island needs somebody watching their back while they look at an instrument (`factions-and-races/the-cartographers-guild.md`). **The Guild pays.** Common work, and the most ordinary way the party ends up somewhere strange. *The surveyors most likely to be asking are Sett and Aria* (`characters/sett-and-aria.md`).
 - **Not the Masons.** Nobody hires out Mason work and nobody at this dock could. Walking with one happens later, between people, and only once the party has met the order properly (`factions-and-races/the-masons.md`, How the party meets them).
 
 **A player can take up either calling.** A character who has escorted enough route walks can be taken on to walk them; one who has walked the line beside a Mason long enough can start to see the seams.
