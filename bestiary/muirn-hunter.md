@@ -28,7 +28,6 @@
 
 *Measured 2026-10-01 against Chris, Kevin and Pat, on dry ground, everyone fighting to the end:* **three hunters alone are a real fight** — the party wins about 85% of the time and usually loses someone to a Down. **Vaun is worth more than one more hunter**, so the full group of four sits somewhere between a coin flip and a likely loss, *before* the water. **That is deliberate: this is not a fight the party is meant to take head-on early.** Step aside, split them up, get them out of the water, or turn Tamm — any one of those changes the sum.
 
-## Not Yet Set
+## Unnamed on Purpose
 
-- The two hunters besides Tamm — names, if the table ever asks
-- Whether any of them would follow Tamm if he turns
+**The two hunters besides Tamm have no names, and that is a decision, not a gap** *(Drew, 2026-10-01)*. They get one when a player makes them matter, and not before — *detail written ahead of that only gets in the GM's way when the sheet comes up.* Whether either would follow Tamm is the same: played in the moment.
