@@ -14,6 +14,9 @@
 
 ## In a Fight
 
+**Three hunters ride with him**, run from a blank deck (`bestiary/muirn-hunter.md`). *Tamm is one of them.*
+
+
 **Mind 3 / Body 4 / Soul 3 — HP 22**
 **Creature Threat Rating:** 10
 
@@ -32,7 +35,6 @@
 ## Not Yet Set
 
 - Appearance and voice
-- How many hunters follow him, and who — *they would run as simple creatures from a blank deck* (`rules/gm-guide.md`)
 
 ## Related Documents
 
