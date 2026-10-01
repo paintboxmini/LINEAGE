@@ -108,7 +108,7 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ## The Speaker — and why a Lizardkin leads this island
 
-*Drew's, 2026-09-21.* **Named Sael, and Muirn by birth** *(2026-10-01)* — a Lizardkin of the southern tribe, from Gharial (`places/gharial.md`), who left long ago.
+*Drew's, 2026-09-21.* **Named Sael, and Muirn by birth** *(2026-10-01)* — a Lizardkin of the southern tribe, from Gharial (`places/gharial.md`), who left long ago. *Stats and deck, just in case: `characters/sael.md`.*
 
 **The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`). **On a mixed island that is not the scandal it sounds like** — Pneum has been taking converts for two hundred years and the Speaker is simply the furthest that has gone. *Nobody there finds it remarkable. Pat will.*
 
