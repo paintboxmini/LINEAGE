@@ -8,7 +8,9 @@
 
 **Warm, reckless, and loyal to Osha first and the family second.** She grew up beside her and has never once thought of her as *the one who holds the technique*. **She wants to bring Osha home** *(Drew, 2026-10-01)* — back to Gharial, back inside the family, hidden again where the people who love her can keep her safe. *If hiding stops working she will find another way, and she does not plan further ahead than that.*
 
-**She is the half of the family that would talk to the party.** Anybody else who wants Osha alive is somebody she can use, and she knows it. **A Shunka is the one exception** — until she understands what Caine actually wants, which is not the same thing as what she has been raised to fear (`characters/osha.md`, The Scrap).
+**She is frantic** *(Drew, 2026-10-01)*, and the reason is Vaun. **She knows exactly what he will do if he reaches Osha first**, she knows he is better at this than she is, and every day without news is a day he might already have. *So she does not pace herself, does not wait for a better plan, and does not sleep much.* At the table that looks like talking too fast, asking everyone, chasing the thinnest rumour, and going into places she should have scouted first — which is the same recklessness her deck runs on.
+
+**She is the half of the family that would talk to the party.** Anybody else who wants Osha alive is somebody she can use, and she knows it — *she will ask a stranger for help in the first minute, because she has no time to be careful about who.* **A Shunka is the one exception** — until she understands what Caine actually wants, which is not the same thing as what she has been raised to fear (`characters/osha.md`, The Scrap).
 
 **She and Vaun are racing each other**, and both of them know it. *Neither can afford to hurt the other, and that will not last forever.*
 
