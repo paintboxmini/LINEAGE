@@ -54,4 +54,4 @@ Some traditional surveying equipment, but mainly the roads need light-cartograph
 
 ## Structure
 
-Headquartered in Glasslight Reach — Most surveyors are Glasskin themselves, trained first on the Soft Edge — the single fastest-changing, least trackable phenomenon anywhere in the kingdom. Even a mediocre light-cartographer has spent years catching drift nobody else could follow; turned outward onto the slower instability of a road, that same discipline is exactly what a Route Walk needs.
+Headquartered in Glasslight Reach, **with offices in towns across the web** where surveyors turn in finished work and pick up the next job (`characters/sett-and-aria.md`, How They Work) — Most surveyors are Glasskin themselves, trained first on the Soft Edge — the single fastest-changing, least trackable phenomenon anywhere in the kingdom. Even a mediocre light-cartographer has spent years catching drift nobody else could follow; turned outward onto the slower instability of a road, that same discipline is exactly what a Route Walk needs.

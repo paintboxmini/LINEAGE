@@ -28,6 +28,10 @@
 
 **Which is why they hire the party, and why they cannot pay much.** *Guild money pays for escorts* (`factions-and-races/the-cartographers-guild.md`, Escorts), *but they are cutting every corner they can find, and an escort is the first corner anybody looks at.* **A party that charges them full rate is a party they cannot afford; a party that takes less is a party they will never forget.**
 
+## How They Work
+
+**Opportunistic** *(Drew, 2026-10-01)*. They finish a job, head for **the nearest town with a Cartographers Guild office**, turn the work in, and take **the best-looking job they can find near where they already are.** Then they stay a little — rest, recover, restock — and head out again. *No fixed rotation and no home route*, which is why they can turn up anywhere the party does, and why they keep turning up.
+
 ## What They Are Walking Into
 
 **The pockets are drifting more every season** (`factions-and-races/the-cartographers-guild.md`, The Pockets Are Drifting More), and road surveyors are the first to feel it under their feet. **Sett thinks it is his discovery** — the thing that finally puts his name on an atlas. **Aria thinks it is getting dangerous**, and wants to finish the rotations they have before it gets worse. *Both are right.* Neither knows the posts are Mason work, or that there is only one Mason left walking them (`factions-and-races/the-masons.md`, The Order Now).
@@ -38,20 +42,20 @@
 
 ### Sett
 
-**Mind 3 / Body 4 / Soul 2 — HP 21**
-**Creature Threat Rating:** 9
+**Mind 4 / Body 4 / Soul 2 — HP 22**
+**Creature Threat Rating:** 10
 
-**Deck 9 — 4 Red / 3 Blue / 2 Green.** Hand size 3 (Mind). Initiative 1d6 + 2.
+**Deck 10 — 4 Red / 4 Blue / 2 Green.** Hand size 4 (Mind). Initiative 1d6 + 2.
 
 **Red (4)** — PLANT THE POLE *(signature)*, GUARD, SHOULDER, BRACE
 
-**Blue (3)** — BIG TALK *(signature)*, FORESEE, CALLED SHOT
+**Blue (4)** — BIG TALK *(signature)*, FORESEE, CALLED SHOT, MARKED
 
 **Green (2)** — WALK IT FIRST *(signature)*, SUPPORT
 
 **Trait — Not Her:** each time Aria takes damage, Sett gains 1 Deadly (`rules/card-glossary.md`). *Whoever hurts her has started a different fight.*
 
-**How he fights.** Frontline, in the way, loud. **GUARD is how he covers her** — Protect and Resist, every time he can — and PLANT THE POLE pins whatever is coming so it cannot get round him. BIG TALK is half threat and half believing it.
+**How he fights.** Frontline, in the way, loud. **GUARD is how he covers her** — Protect and Resist, every time he can — and PLANT THE POLE pins whatever is coming so it cannot get round him. BIG TALK is half threat and half believing it, and **MARKED is the read he is actually right about** — the bigger hand is the sharper mind under the noise *(Mind raised to 4, 2026-10-01)*.
 
 ### Aria
 
@@ -70,7 +74,7 @@
 
 ## Not Yet Set
 
-- Which routes they walk, and where the party first meets them
+- Where the party first meets them
 - Whether the baby is born at the Reach — *Sett's plan has her there by then; a glasskin's people-name is a chord no one voice can say alone, and a child is one more voice for it* (`factions-and-races/races-glasskin.md`)
 
 ## Related Documents
