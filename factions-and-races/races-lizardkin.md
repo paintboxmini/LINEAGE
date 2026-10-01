@@ -44,6 +44,10 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 **One Muirn family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving grew out of the Muirn's shamanic tradition, and a single family of theirs has passed it down for as long as anyone has been counting, taught to their own and to nobody else.
 
+**Anyone in the family can be taught it. Only one of them can do it** *(Drew, 2026-10-01)*. **The burden passes to the first-born daughter of each generation** — and it passes at her birth, so there is never more than one holder alive at a time. Her mother stops being able to the day she is born. *The ancestor was a first-born daughter; so is Osha.* **If the holder dies without a daughter, the line ends** — and with it the only way the curse could ever come off.
+
+*It mirrors the Shunka side exactly:* Caine's wild magic came down his mother's line too (`campaign/pat.md`). **Both sides of this curse are carried by daughters.**
+
 **The cost is what keeps it rare.** A curse laid this way takes the caster's existence, not their life in the ordinary sense — whatever was holding them in the world comes off and lands on the target instead. One curse, one person, gone. Not killed. Unmade, as though never Cut at all.
 
 So a family that holds this holds a weapon they can fire exactly as many times as they are willing to lose someone. **That is not a thing a people spends lightly, and it is the reason the Shunka curse is the only one anyone can name.**

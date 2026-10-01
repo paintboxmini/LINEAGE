@@ -2,7 +2,7 @@
 
 Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`factions-and-races/races-lizardkin.md`). **The descendant Caine was sent to find** (`campaign/pat.md`, The Call). *Named, and her shape set, by Drew on 2026-09-30.*
 
-**The one living member of her family who holds the technique.** The rest are kin who hide the line and guard it. She is the one who can actually do it.
+**The one living member of her family who holds the technique.** The rest are kin who hide the line and guard it. She is the one who can actually do it, **because she is the first-born daughter of her generation** — the burden passed to her the day she was born, and out of her mother (`factions-and-races/races-lizardkin.md`, The Cursegivers). *If she dies without a daughter, it ends with her.*
 
 ---
 
