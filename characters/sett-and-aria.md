@@ -72,9 +72,12 @@
 
 **How she fights.** Backline, quick to act — she goes first more often than he does — and **almost entirely for other people**: healing, Evade handed out, Immunity for whoever is about to drop. FLASH PLATE is the one thing she does to an enemy, a light-map plate tilted into their eyes. *HP 11 is the point: she cannot take a real hit, and everybody near her knows it, him most of all.*
 
+## Introducing Them
+
+**Not tied to any place or session, on purpose** *(Drew, 2026-10-01)*. They are a pocket encounter for whenever the table has a little spare time. **The best moment is a shopping split**: the party scatters through a town, somebody finishes first, and that player is left standing around waiting for the rest. *That is when two loud glasskin turn up* — fresh off a job, on their way to the Guild office, and very willing to talk to a stranger with nothing to do. Any town with a Guild office will do, which is most of them (How They Work, above).
+
 ## Not Yet Set
 
-- Where the party first meets them
 - Whether the baby is born at the Reach — *Sett's plan has her there by then; a glasskin's people-name is a chord no one voice can say alone, and a child is one more voice for it* (`factions-and-races/races-glasskin.md`)
 
 ## Related Documents
