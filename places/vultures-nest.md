@@ -388,7 +388,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 **Two lines inside this beat, one each for Kevin and Pat.** Neither costs the scene anything and each turns a general problem into a specific person's problem (`campaign/session-1-threads.md`, The three private threads).
 
-**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Herb. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
+**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Pepper. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
 
 **It is friendly, and that is what makes it bad.** Kevin picked this port precisely because a man can disappear into it, and the first thing it does is call him by name in front of a dockmaster who is about to start writing things down. *Nobody in the scene understands that they have done anything. Only Kevin's player does, and only if they were listening.*
 

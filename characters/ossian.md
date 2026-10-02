@@ -1,10 +1,12 @@
-# Ossian Herb
+# Ossian Pepper
+
+*Kevin's father. The family name was Herb until 2026-10-02.*
 
 Head priest, Temple of Unity, capital. Kevin's father (`campaign/kevin.md`).
 
-**The Herbs are a priestly family and there are a great many of them.** Cousins, aunts, siblings, in-laws — scattered through temples across Eclipseria and beyond it, in nearly every faith the Temple District keeps a door for. It is what a Herb does. Nobody in the family had to be told.
+**The Peppers are a priestly family and there are a great many of them.** Cousins, aunts, siblings, in-laws — scattered through temples across Eclipseria and beyond it, in nearly every faith the Temple District keeps a door for. It is what a Pepper does. Nobody in the family had to be told.
 
-**Ossian is the only one who runs a temple.** Every other Herb in orders is a serving priest under somebody else's roof, and most of them are content with that. He is the exception, at the biggest building in the district, and the family's feelings about that are complicated in the ordinary way families are — pride, and a certain amount of being tired of hearing about it.
+**Ossian is the only one who runs a temple.** Every other Pepper in orders is a serving priest under somebody else's roof, and most of them are content with that. He is the exception, at the biggest building in the district, and the family's feelings about that are complicated in the ordinary way families are — pride, and a certain amount of being tired of hearing about it.
 
 *Which is the pressure on Kevin (`campaign/kevin.md`) without anyone in the family ever having applied it. A boy in a house of priests who wanted to cook was not rebelling against a rule. He was declining the only thing anybody had ever modelled.*
 
@@ -26,11 +28,11 @@ Two things empty it. The reform is one: he sends the priests out, so the people 
 
 Communion is held in the street: on the Marketplace edge, at the gate, on doorsteps, wherever there are people who were never going to walk into a cathedral. Preaching happens where the congregation already is, and the congregation is not in the pews.
 
-**What did not move.** The scales — the ritual conditions under which two people can actually settle something — still sit in the building and still wait for people to come to them. Ossian sends out communion and preaching, not the scales. A quarrel has to be carried through the door under its own power, which is exactly the part Vescal eventually stopped being able to stomach (`characters/vescal.md`).
+**What did not move.** The scales — the ritual conditions under which two people can actually settle something — still sit in the building and still wait for people to come to them. Ossian sends out communion and preaching, not the scales. A quarrel has to be carried through the door under its own power — the same closed-door way Vescal left over, under the head priest before Ossian (`characters/vescal.md`).
 
 **And the scales are not a court.** Unity has no jurisdiction and hands down nothing. The Temple of Justice is the courtroom, it is where a binding ruling comes from, and it sorts by class before it sorts by merit (`places/capital/capital.md`, Temple of Justice). Unity is the rung below that: both parties attend voluntarily, either can leave at any moment, and what they get is a settlement they made rather than one imposed on them. Most people never use it — a grievance gets sat with privately, Sun or Moon, and only comes here when sitting with it has failed and neither side wants a verdict.
 
-So the reform is partial, and he knows it is. He will say the two halves are different work. He has never claimed to have fixed the second one — and the reason it cannot go out into the street is the same reason Vescal left: the scales only work on people who chose to stand at them, and you cannot carry that to someone's doorstep.
+So the reform is partial, and he knows it is. He will say the two halves are different work. He has never claimed to have fixed the second one — and the reason it cannot go out into the street is the scales themselves: they only work on people who chose to stand at them, and you cannot carry that to someone's doorstep. *Vescal left the temple over its closed doors before Ossian's time, and Ossian has opened only half of them* (`characters/vescal.md`, The temple has a new head priest).
 
 ---
 
@@ -44,7 +46,7 @@ This is not smuggling and nobody is pretending otherwise — it is done in dayli
 
 **And the wine travels.** The temple ships at volume and to real distance — including ports that are not respectable, which is a thing his son saw a great deal of as a boy (`campaign/kevin.md`). **The boats are the family's**, and getting the use of them is most of why Kevin's leaving had to be framed as going to study.
 
-**The other cargo is licensed.** The Herb pepper — the one that detonates if you cook it wrong on purpose — cannot legally be made without the crown's leave, and the Herbs hold that leave because they are the church (`campaign/kevin.md`, The Pepper Is The Family Business). *So Ossian moves one good by refusing to file and another by holding paperwork nobody else can get, and he would tell you those are the same principle twice. He is not wrong, which is the annoying part.*
+**The other cargo is licensed.** The family pepper — the one that detonates if you cook it wrong on purpose — cannot legally be made without the crown's leave, and the Peppers hold that leave because they are the church (`campaign/kevin.md`, The Pepper Is The Family Business). *So Ossian moves one good by refusing to file and another by holding paperwork nobody else can get, and he would tell you those are the same principle twice. He is not wrong, which is the annoying part.*
 
 There is precedent one street over: Harlan Vetch holds the Temple of the Forge apart from Elara's commercial apparatus on principle too (`places/capital/capital.md`, Temple of the Forge). The two are not the same refusal. Harlan's temple **declines coin as worship** — money left on the anvil is politely returned. Ossian's temple takes the money and declines the tax. Harlan abstains; Ossian does not comply. A GM can play that difference for real friction between two men who both think they are the principled one.
 
@@ -74,5 +76,5 @@ Warm, direct, unhurried, and physically present in a way retired soldiers often 
 ## Related Documents
 
 - `places/capital/capital.md` — the Temple District, the Temple of Unity, Elara's Marketplace regulation
-- `characters/vescal.md` — trained at the same temple, left over the half Ossian did not reform
+- `characters/vescal.md` — trained at the same temple, left under the previous head priest over its closed doors; what he makes of Ossian is open
 - `campaign/kevin.md` — his son, the wine trade, and where he actually is

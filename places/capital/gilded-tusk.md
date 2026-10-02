@@ -56,7 +56,7 @@ He wears a chef's hat at all times. The hat is tall. It has never come off in th
 
 See **The Naturalist Collection** below.
 
-**He keeps a stock of cinder flake and hush petal, and none of it is for sale** *(2026-09-28)*. Whether he parts with any depends on the person asking, and he takes ingredients, never gold — bring him something he has never cooked and he will trade. *The obvious person to be asking is Kevin Herb* (`campaign/kevin.md`, The Ingredients), *who carries both and needs both.*
+**He keeps a stock of cinder flake and hush petal, and none of it is for sale** *(2026-09-28)*. Whether he parts with any depends on the person asking, and he takes ingredients, never gold — bring him something he has never cooked and he will trade. *The obvious person to be asking is Kevin Pepper* (`campaign/kevin.md`, The Ingredients), *who carries both and needs both.*
 
 **Lyra Moon-Singer** *(entertainer, half-elf)*
 Plays a lyre. Uses minor illusion to manifest small spirit dancers on the tabletops while she performs.

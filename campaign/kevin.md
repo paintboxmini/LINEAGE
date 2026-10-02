@@ -1,10 +1,10 @@
-# Kevin Herb
+# Kevin — Flint Pepper
 
-*Settled 2026-09-28; it stays unless Kev wants something else.*
+**The character's name is Flint Pepper** *(Kev's choice, 2026-10-02)*. ***"Flint Pepper is my name and savory is my game."*** *The family name used to be Herb; it is Pepper now, everywhere. The files call him Kevin after his player, the same way Pat's character is Caine.*
 
-**The Herbs are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
+**The Peppers are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
 
-**His father Ossian is the only Herb who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
+**His father Ossian is the only Pepper who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
 
 *So the thing Kevin declined was not a rule. Nobody forbade him anything and nobody had to. He grew up in a house where every single adult had chosen the same life, and he wanted to cook — which is not rebellion, it is just the first person in living memory to want something else.*
 
@@ -14,9 +14,9 @@
 
 **The exploding produce is not his invention. It is the family's** *(2026-09-19)*.
 
-**There is a pepper in the Herb bloodline, and it is called grace** *(2026-09-28)* — for the prayer said over a meal, in a family of priests, and for the crown's leave that lets them grow it at all. It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
+**There is a pepper in the Pepper bloodline — the family is named for it — and it is called grace** *(2026-09-28)* — for the prayer said over a meal, in a family of priests, and for the crown's leave that lets them grow it at all. It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
 
-**You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Herbs hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
+**You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Peppers hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
 
 **And shipping it is what they do.** The wine leaves the Temple of Unity at volume and outside Lady Elara's tax (`characters/ossian.md`, The Wine); the pepper goes out on the same boats, under the licence rather than around it. *One cargo his father moves by refusing to file, one he moves by holding the paperwork nobody else can get. Ossian would tell you those are the same principle applied twice, and he would mean it.*
 
@@ -65,7 +65,7 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **He is not a good student and he is barely a student.** He attends. He does not really attend. Nobody is checking, the fees are his father's problem, and *right now they probably don't even know he is gone.* The reference the table reached for was Mugen and Jin — the two of them are not the same kind of person and were never going to be, and that is the fun of it.
 
-**Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Herb out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
+**Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Pepper out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
 
 **He went, he got the knife, and he came back.** The vibro knife came from Chris — an alien with a piece of technology this world does not otherwise have, and a friend who did not need a reason to hand it over (Gear, below).
 
@@ -129,7 +129,7 @@ Everything he fires or throws goes through the same preparation. It is cooking, 
 
 **Every round is a grace pepper** *(2026-09-28)* — the family's own. A plain round is one reduced and sealed with nothing worked in; a charged round is the same pepper with a seasoning worked in at stage 2. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
 
-**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and hush petal is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low — well in advance of it mattering** — and restocking means the only place grace comes from: the Herbs, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
+**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and hush petal is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low — well in advance of it mattering** — and restocking means the only place grace comes from: the Peppers, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
 
 **It is a story thread, not a penalty** *(Drew, 2026-09-28)*. The warning comes early enough that he will almost certainly find his own reason to go and get more before the bag is ever empty — *which is the scene the warning exists to produce.* **And GRIND SHOT always works.** Loaded with nothing it plays as a bare attack with no text, the same as a plain round, so a card in his hand never goes dead over something that happened between fights.
 

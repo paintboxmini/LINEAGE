@@ -23,7 +23,7 @@ Nowhere else does that. From the Capital you're eight days from anything. From G
 **What survives from the old version, because it was never about the cargo:**
 
 - **His father is head of the Temple of Unity** in the capital (`characters/ossian.md`), the temple is known for its wines, and **running them is how Kevin knows Vulture's Nest** — many trips, over years, and he likes the place for a smuggler's-son's reasons: seedy, dark, and carrying an underbelly a person can vanish into. *That is why he picked it.*
-- **The Herb name still opens a berth.** He is trading on it rather than on freight, which is the more exposed version and the more interesting one.
+- **The Pepper name still opens a berth.** He is trading on it rather than on freight, which is the more exposed version and the more interesting one.
 
 **What is new, and is the actual point of the character:**
 
