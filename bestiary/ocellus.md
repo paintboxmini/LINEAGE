@@ -2,7 +2,7 @@
 
 *The thing in the Moving Crate at Vulture's Nest (`places/vultures-nest.md`, The Market).*
 
-A soft, low animal about the size of a curled dog, kept in crates and shipped in them. Grey-brown, loose-skinned, no face worth the name — what it has instead is **ocelli**, dozens of simple eyes scattered across its back and flanks, none of them arranged and none of them blinking together. They do not track anything. They are not for seeing with.
+**A pup** *(Drew, 2026-10-02)*. **Grown, an Ocellus is the weeping wolf** (The Grown Ocellus, below) — and nobody wants one of those in a market. What travels in the crates is the young: a soft, low animal about the size of a curled dog, kept in crates and shipped in them. Grey-brown, loose-skinned, no face worth the name — what it has instead is **ocelli**, dozens of simple eyes scattered across its back and flanks, none of them arranged and none of them blinking together. They do not track anything. They are not for seeing with.
 
 It cannot really travel. Left on open ground it will shift a few feet over an hour and then stop. Everything about it assumes somebody else is doing the carrying.
 
@@ -37,7 +37,7 @@ It takes a very small amount from everyone nearby, continuously, and the take is
 
 ---
 
-## Stat Block
+## Stat Block — the pup
 
 **Mind 3 / Body 2 / Soul 4 — HP 15**
 **Creature Threat Rating:** 9
@@ -58,9 +58,23 @@ All core cards. It has no signature cards, because it has no technique — every
 
 ---
 
+## The Grown Ocellus — the Weeping Wolf
+
+*Drew, 2026-10-02.* **This is what a pup becomes.**
+
+**A wolf, and a big one** — shoulder-high to a person, black-teal fur matted like wet moss. **Its back and flanks are crowded with eyes**, the same ocelli the pup carries, grown large, red-orange, and set in crusted ridges, none of them arranged and none of them blinking together. **And all of them weep.** The film that dries to a thin sheen on a pup runs off the grown animal in thick green-teal strings, down the legs and onto the ground, faintly lit from inside. *That is where the name comes from, and it is the first thing anybody who has seen one describes.*
+
+**It eats the same thing the pup does: noticing.** The pup takes a trace from a crowd going past. **The wolf takes it from whatever it is hunting**, all of it, and the closer it comes the more it takes. *Prey stops noticing the wolf at exactly the moment noticing it would have mattered.* A pup cannot be found in passing; a weeping wolf cannot be found at all until it is close enough to be the last thing you see.
+
+**And the weeping is the precursor, in quantity no crate could ever produce.** A single wolf leaves more film on the ground in a night than a pup weeps in a season. *Nobody harvests it. Anybody who has tried is why nobody does.*
+
+**Which is why the trade runs on pups.** Somebody is taking them from where the wolves are — and that is the most dangerous job anywhere in the FourthEye chain, and the one nobody at the Nest has ever seen done.
+
 ## Not Yet Set
 
-- **Where they come from.** Whether Ocelli are wild somewhere, bred somewhere, or made is open.
+- **Where the wolves are**, and who takes the pups from them. *That they are wild, and grown, is set (The Grown Ocellus, above).*
+- **How fast a pup grows** — and what happens to a crate that has been working in a market too long
+- **The weeping wolf's stats and deck**
 - **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`). **The route is now written and the source still is not**: Harlock's *Arcadia* carries them in and the scraped film out, and he has been paid well to not ask what for (`characters/harlock.md`; `places/vultures-nest.md`, The Arcadia's hold). Cracking the ship gets a party the carrier. It deliberately does not get them whoever hired him.
 - **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic. Whatever the answer is, it should be the same answer as the drug's (`items/fourtheye.md`).
 

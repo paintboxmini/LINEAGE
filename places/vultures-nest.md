@@ -258,7 +258,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* an **Ocellus** (`bestiary/ocellus.md`). A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug (`items/fourtheye.md`).
+- *Open it:* an **Ocellus pup** (`bestiary/ocellus.md`) — grown, it would be a weeping wolf. A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug (`items/fourtheye.md`).
 - **The crate is in the market because the market is the crop.** It is not stored here, it is working here, and somewhere discreet would starve it. That is why the most conspicuous smuggling problem in the Nest is parked in the busiest spot in town and nobody has an opinion about it.
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
