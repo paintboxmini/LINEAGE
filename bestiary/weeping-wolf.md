@@ -23,7 +23,7 @@
 
 **Trait — A Hundred Eyes:** **the weeping wolf cannot gain Blind.** *There is no covering that many eyes.*
 
-**And it starts unseen.** A weeping wolf is never noticed until it is close (`bestiary/ocellus.md`, The Grown Ocellus) — **the first exchange of the fight is its attack, undefended**, unless somebody had a real reason to be watching for it. **In the Dark Garden it opens with a tearseed** — knocked into the party, or the party driven into a cluster — and the attack comes out of the flash, which Blinds them and not it (`flora/tearseed.md`).
+**And it starts unseen.** A weeping wolf is never noticed until it is close (`bestiary/ocellus.md`, The Grown Ocellus) — **the first exchange of the fight is its attack, undefended**, unless somebody had a real reason to be watching for it. **In the Dark Garden it opens with a tearseed** — knocked into the party, or the party driven into a cluster — and the attack comes out of the flash, which Blinds them and not it (`flora/tearseed.md`). **The party can see it coming**: a seed moving against the drift, with leaves snapping shut along its path, is the wolf.
 
 ---
 
