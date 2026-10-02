@@ -18,7 +18,7 @@
 
 ## The Gate
 
-**Getting one alone.** Seeing them is easy and picking one is nothing — close a jar around it slowly and it stays whole. **But they drift in clusters, and touching the wrong one sets off the rest in a chain.** The way to get one is to wait for a seed to drift free of the others and meet it where it is going. *The gate is the cluster, and the answer is timing.*
+**Left open on purpose** *(Drew, 2026-10-02)*. Every plant here has a gate (`flora/README.md`), and this one's gets found at the table: **see what the players try first**, and let the answer come out of that. *All that is set is what the seed does when it is touched.*
 
 **A carried tearseed is a flashbang the party owns.** That is why anybody bothers.
 

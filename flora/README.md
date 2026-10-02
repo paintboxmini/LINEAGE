@@ -18,7 +18,7 @@ Plants, filed by organism the way the bestiary files animals. One file each, sam
 | Waymoss | **taking it destroys it.** A cut strip stops redrawing within the hour, so the only way to use it is to leave it alone |
 | Burnrind | **somebody else's disaster.** It fruits the season after a spoil bank burns, and setting a bank fire in the Nest is how you get hanged |
 | Forget-Me-Not | **where it grows.** Every flower is on the line where names and faces stop holding, and the way back does not stay with you |
-| Tearseed | **getting one alone.** Picking one is nothing; they drift in clusters, and touching the wrong one sets off the rest |
+| Tearseed | **left for the table on purpose.** Its gate gets found from what the players try first |
 | Seepleaf | **hands.** Finding and picking it are nothing; the gate is coming back down a cliff with it, and anything that has to be held is anything you are not climbing with |
 
 **Seepleaf is the folder's third framing and it is new as of 2026-09-25.** The Nest's plants are made-ground plants that came off a boat; the Weald's sit on a law about reciprocity. **The high country north of the Nest is neither** — it is the one stretch near that town nobody built, so what grows there is *native*, and its gates are about the climb rather than about logistics or debt (`places/vultures-nest.md`, The Shape of the Ground).
@@ -27,7 +27,7 @@ Seven of these are in the Vulture's Nest region proper, where the framing fact i
 
 The other four are Turnroot Weald, where the framing fact is a law instead: **nothing is taken without a reciprocal gesture** (`quests/turnroot-weald-adventure.md`). That is a floor every Weald plant sits on before its own gate applies, and it is why the Weald's gates tend to be about debt and consequence where the Nest's are about logistics. **Waymoss is the odd one in the whole folder** — it has no use, no trade and no preparation, and it is here because a forest whose signature is that it routes you has exactly one organism that shows the routing happening.
 
-**Forget-Me-Not is the first from an island of its own** (`places/forget-me-not-island.md`), and its gate is the island's effect rather than anything about the plant. **Tearseed is the first from the Abyssal Ruins** (`flora/tearseed.md`), and its gate is the cluster it drifts in.
+**Forget-Me-Not is the first from an island of its own** (`places/forget-me-not-island.md`), and its gate is the island's effect rather than anything about the plant. **Tearseed is the first from the Abyssal Ruins** (`flora/tearseed.md`), and its gate is deliberately unwritten until the players have tried for one.
 
 **These lived in `bestiary/` until 2026-09-18**, under a note on the Hush Bloom reading "flora rather than fauna, filed here with the other ingredient organisms." That was a workaround and it is gone; anything pointing at the old paths has been repointed.
 
