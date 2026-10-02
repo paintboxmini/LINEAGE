@@ -43,6 +43,6 @@
 
 *Measured 2026-10-02 against Chris, Kevin and Pat, fighting to the end, with everything on this sheet running in the simulator except the undefended opener.* **Against one wolf the party wins about 85% of the time, takes about one Down a fight, and deaths are common — roughly one for every two fights.** Two wolves at once is a likely loss (16%). **That is a mini-boss: beatable, and it costs.** *The undefended opener makes it harder still* — which is exactly what **watching for it, spreading out and getting Ward up** take back.
 
-## Not Yet Set
+## Loot
 
-- Loot — a wolf's eyes are a pup's grown large (`bestiary/ocellus.md`, When a pup is done), and what they are worth is not written
+**Whatever the party harvests from the body** *(Drew, 2026-10-02)*. There is no drop table: the players say what they take and how, and the table works out what it is. *A wolf's eyes are a pup's grown large, and a pup's eyes are the part the smugglers kill for* (`bestiary/ocellus.md`, When a pup is done) — so somebody at the table will probably think of them first.
