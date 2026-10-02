@@ -212,6 +212,11 @@ class Combatant:
         # Turns handed back mid-turn: DOUBLE DOWN and TRAMPLE.
         self.extra_attacks = 0
         self.extra_actions = 0
+        # A creature's printed Traits, where the engine has to know them: how
+        # many Actions it takes a turn (the weeping wolf's Never Still), and any
+        # status it can never be given (its A Hundred Eyes).
+        self.actions_per_turn = 1
+        self.cannot_gain = set()
 
         # Damage modifiers that outlive the exchange that granted them —
         # CALLED SHOT against one target, ATTUNE on one colour, CLIMB while

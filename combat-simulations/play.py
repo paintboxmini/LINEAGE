@@ -130,6 +130,10 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
         return
 
     who.extra_attacks = who.extra_actions = 0
+    # A Trait that grants more than one Action a turn (the weeping wolf's
+    # Never Still). One draw and one free action still; only the Action
+    # repeats.
+    who.extra_actions = max(0, getattr(who, 'actions_per_turn', 1) - 1)
 
     # One Action, plus anything a card hands back mid-turn. The cap is a
     # safety rail rather than a rule: DOUBLE DOWN can draw into a second

@@ -1722,10 +1722,38 @@ def test_weeping_veil():
     check('and the caster is not', a.blind == 0)
 
 
+def test_wolf_traits():
+    print('\nThe weeping wolf: two Actions a turn, and it cannot be Blinded')
+    import play
+    from agents import SimpleAI
+    import encounter_budget as eb
+    traits = eb.traits_from('bestiary/weeping-wolf.md')
+    check('the sheet reads as two Actions a turn', traits.get('actions_per_turn') == 2, traits)
+    check('and as unable to gain Blind', traits.get('cannot_gain') == {'blind'}, traits)
+    a, b = duo()
+    a.cannot_gain = {'blind'}
+    fx.grant(a, 'blind')
+    check('Blind does not land on it', a.blind == 0)
+    fx.grant(b, 'blind')
+    check('but still lands on anyone else', b.blind > 0)
+    a, b = duo()
+    a.actions_per_turn = 2
+    calls = []
+    real = play._one_action
+    play._one_action = lambda *args, **kw: calls.append(1) or None
+    try:
+        play.take_turn(a, SimpleAI(random.Random(0)), [b], [], None, QUIET,
+                       random.Random(0))
+    finally:
+        play._one_action = real
+    check('its turn takes two Actions', len(calls) == 2, len(calls))
+
+
 if __name__ == '__main__':
     test_compile()
     test_out_of_mind()
     test_weeping_veil()
+    test_wolf_traits()
     test_ward()
     test_rooted()
     test_anchored()

@@ -201,6 +201,10 @@ def grant(who, status, n=1, log=None, source=None):
     grants a Debuff pays it — a card, a Special Rule, or the engine.
     """
     status = status.lower()
+    if status in getattr(who, 'cannot_gain', ()):
+        if log:
+            log(f'  {who.name} cannot gain {status.title()}.')
+        return False
     if status in DEBUFFS and who.ward > 0:
         who.ward -= 1
         if log:
