@@ -62,7 +62,7 @@ All core cards. It has no signature cards, because it has no technique — every
 
 *Drew, 2026-10-02.* **This is what a pup becomes.** *Stats, deck and the fight: `bestiary/weeping-wolf.md`.*
 
-**A wolf, and a big one** — shoulder-high to a person, black-teal fur matted like wet moss. **Its back and flanks are crowded with eyes**, the same ocelli the pup carries, grown large, red-orange, and set in crusted ridges, none of them arranged and none of them blinking together. **And all of them weep.** The film that dries to a thin sheen on a pup runs off the grown animal in thick green-teal strings, down the legs and onto the ground, faintly lit from inside. *That is where the name comes from, and it is the first thing anybody who has seen one describes.*
+**A wolf, and a big one, and it lives in the Dark Garden of the Abyssal Ruins** *(Drew, 2026-10-02; `places/abyssal-ruins.md`, The Descent)* — a creature that is nothing but eyes, in the one layer that grows blind.  — shoulder-high to a person, black-teal fur matted like wet moss. **Its back and flanks are crowded with eyes**, the same ocelli the pup carries, grown large, red-orange, and set in crusted ridges, none of them arranged and none of them blinking together. **And all of them weep.** The film that dries to a thin sheen on a pup runs off the grown animal in thick green-teal strings, down the legs and onto the ground, faintly lit from inside. *That is where the name comes from, and it is the first thing anybody who has seen one describes.*
 
 **It eats the same thing the pup does: noticing.** The pup takes a trace from a crowd going past. **The wolf takes it from whatever it is hunting**, all of it, and the closer it comes the more it takes. *Prey stops noticing the wolf at exactly the moment noticing it would have mattered.* A pup cannot be found in passing; a weeping wolf cannot be found at all until it is close enough to be the last thing you see.
 
@@ -72,13 +72,12 @@ All core cards. It has no signature cards, because it has no technique — every
 
 ### When a pup is done
 
-**A pup does not stay a pup, and the smugglers do not wait to find out what it becomes** *(Drew, 2026-10-02)*. **Once one outgrows its usefulness, they dispose of it** — and they take its valuable parts first. *The eyes and whatever makes the film are worth more dead than an animal that has stopped being safe to sit in a market.* What those parts are sold as, and to whom, is not written.
+**A pup does not stay a pup, and the smugglers do not wait to find out what it becomes** *(Drew, 2026-10-02)*. **At about two years old, they dispose of it** *(Drew, 2026-10-02)* — before it is big enough to be noticed, and long before it is a wolf — and they take its valuable parts first. **The eyes are the prize.** An Ocellus eye is the organ that takes noticing out of everyone around it, so **what gets made from one sharpens attention** instead: the opposite of what the living animal does to a market. *Who makes those things, what they look like and who buys them is not written.*
 
 ## Not Yet Set
 
-- **Where the wolves are**, and who takes the pups from them. *That they are wild, and grown, is set (The Grown Ocellus, above).*
-- **How fast a pup grows**, and how the smugglers tell when one is done (When a pup is done, above)
-- **What a disposed pup's parts are sold as**, and to whom
+- **Who takes the pups**, and how they get them up out of the Dark Garden — *the Abyssal Ruins are hard to get into without going through the University* (`places/abyssal-ruins.md`, The Descent)
+- **What is made from the eyes**, by whom, and who buys it
 - **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`). **The route is now written and the source still is not**: Harlock's *Arcadia* carries them in and the scraped film out, and he has been paid well to not ask what for (`characters/harlock.md`; `places/vultures-nest.md`, The Arcadia's hold). Cracking the ship gets a party the carrier. It deliberately does not get them whoever hired him.
 - **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic. Whatever the answer is, it should be the same answer as the drug's (`items/fourtheye.md`).
 

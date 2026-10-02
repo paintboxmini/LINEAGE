@@ -76,6 +76,7 @@ SKIP_DRAW = 'skip_draw'
 IGNORE_FORCED_MOVE = 'ignore_forced_move'
 WOUND_INSTEAD = 'wound_instead'  # next attack wounds rather than damages
 MOVE_COSTS = 'move_costs'        # moving is allowed and charges damage
+LOST_TRACK = 'lost_track'        # cannot attack a named combatant until found
 
 
 class Combatant:

@@ -1682,8 +1682,50 @@ def test_slipstream_is_the_ring_motion():
     check('moving ends it, like any Anchored', h4.pending == [], h4.pending)
 
 
+def test_out_of_mind():
+    print('\nOUT OF MIND: lose track on a failed check, and finding it costs the Action')
+    import play
+    from agents import SimpleAI
+    from engine import LOST_TRACK
+    a, b = duo()
+    run('Defender makes a Hard (1) Body/Senses check. On a failure, they cannot '
+        'attack you until they spend an Action finding you again.', a, b)
+    check('a passed check loses nothing', b.restriction(LOST_TRACK, who=a) is None)
+    run('Defender makes a Hard (99) Body/Senses check. On a failure, they cannot '
+        'attack you until they spend an Action finding you again.', a, b)
+    check('a failed check loses track of the attacker',
+          b.restriction(LOST_TRACK, who=a) is not None)
+    check('and it lasts past the attacker\'s next turn',
+          (a.expire_pending(), b.restriction(LOST_TRACK, who=a))[1] is not None)
+    hp = a.hp
+    play.take_turn(b, SimpleAI(random.Random(0)), [a], [], None, QUIET,
+                   random.Random(0))
+    check('with nobody else to attack, the turn is spent finding it',
+          b.restriction(LOST_TRACK, who=a) is None and a.hp == hp)
+
+
+def test_weeping_veil():
+    print("\nWEEPING VEIL Blinds the defender's whole position, and nobody else")
+    a = Combatant('A', 3, 3, 3, deck=[], position=FRONT, team='party')
+    b = Combatant('B', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    c = Combatant('C', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    d = Combatant('D', 3, 3, 3, deck=[], position=BACK, team='foes')
+    set_table([a, b, c, d])
+    ctx = fx.Context(a, b, allies=[], enemies=[b, c, d], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    for op in fx.compile_half("Every enemy in the defender's position gains Blind."):
+        op.apply(ctx)
+    check('the defender is Blind', b.blind > 0)
+    check('so is the enemy beside them', c.blind > 0)
+    check('the enemy in the other position is not', d.blind == 0)
+    check('and the caster is not', a.blind == 0)
+
+
 if __name__ == '__main__':
     test_compile()
+    test_out_of_mind()
+    test_weeping_veil()
     test_ward()
     test_rooted()
     test_anchored()

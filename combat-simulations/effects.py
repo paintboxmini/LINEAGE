@@ -63,6 +63,7 @@ FRONT_ENEMIES = 'front_enemies'      # every enemy in the Frontline
 OTHER_ENEMY = 'other_enemy'          # a random enemy that is not the defender
 SELF_AND_ALLY = 'self_and_ally'      # "you and target ally each ..."
 SAME_POSITION_ENEMIES = 'enemies_here'   # enemies beside the defender
+DEFENDER_POSITION = 'defender_position'  # the defender and everyone beside them
 
 
 # A clause with no subject of its own inherits the last one named in the
@@ -133,6 +134,13 @@ class Context:
             return [e for e in self.enemies
                     if e is not self.opponent
                     and e.position == self.opponent.position]
+        if spec == DEFENDER_POSITION:
+            # WEEPING VEIL: "every enemy in the defender's position" is the
+            # defender *and* whoever stands with them, unlike
+            # SAME_POSITION_ENEMIES, which is the splash beside a target.
+            if self.opponent is None:
+                return []
+            return [self.opponent] + self.resolve(SAME_POSITION_ENEMIES, prompt)
         if spec == OTHER_ENEMY:
             rest = [e for e in self.enemies if e is not self.opponent]
             if not rest:
@@ -1811,6 +1819,45 @@ class Check(Op):
                 op.apply(ctx)
 
 
+class OpponentCheck(Op):
+    """A check the other side of the exchange makes, with something done to
+    them on a failure. `Check` above is the actor reading something; this is
+    the actor making somebody else try (OUT OF MIND)."""
+
+    def __init__(self, dc, stat, ops, label):
+        self.dc, self.stat, self.ops, self.label = dc, stat, ops, label
+
+    def apply(self, ctx):
+        who = ctx.opponent
+        if who is None:
+            return
+        rng = ctx.rng or ctx.actor.rng
+        roll = rng.randint(1, 10) + rng.randint(1, 10) + who.stat(self.stat)
+        ok = roll >= self.dc
+        ctx.log(f'  {who.name} rolls {roll} against DC {self.dc} '
+                f'({self.stat.title()}, {self.label}) — '
+                f'{"success" if ok else "failure"}.')
+        if not ok:
+            for op in self.ops:
+                op.apply(ctx)
+
+
+class LoseTrack(Op):
+    """OUT OF MIND: the opponent cannot attack the actor until they spend an
+    Action finding them again. Lasts the fight; finding it is what ends it
+    (`play.take_turn`)."""
+
+    def apply(self, ctx):
+        from engine import LOST_TRACK, Pending
+        who = ctx.opponent
+        if who is None or who.restriction(LOST_TRACK, who=ctx.actor):
+            return
+        who.add_pending(Pending(
+            'restriction', owner=ctx.actor, expires='combat', kind=LOST_TRACK,
+            data={'who': ctx.actor},
+            text=f'has lost track of {ctx.actor.name}'), log=ctx.log)
+
+
 class RevealStats(Op):
     """What a successful STUDY or MEASURE buys. Stats are the deck's colour
     split, so this is more than trivia (`rules/cards.md`, Enemy decks).
@@ -1962,6 +2009,22 @@ def _r_shared_burden(m):
 def _r_study(m):
     return [Check(int(m.group(1)), m.group(2).lower(),
                   [RevealStats(OPPONENT)], 'the read')]
+
+
+_DIFFICULTY = r'(?:easy|normal|hard|extreme)\s*\((\d+)\)'
+
+
+@menu(rf'^(?:the\s+)?defender makes an? {_DIFFICULTY} (mind|body|soul)/\w+ check\. '
+      r'on a failure, they cannot attack you until they spend an action '
+      r'finding you again')
+def _r_out_of_mind(m):
+    return [OpponentCheck(int(m.group(1)), m.group(2).lower(), [LoseTrack()],
+                          'keeping track')]
+
+
+@rule(rf"^every enemy in the defender's position gains?\s+({STATUS_RE})")
+def _r_defender_position(m):
+    return [Grant(DEFENDER_POSITION, m.group(1).lower())]
 
 
 class StandingMod(Op):

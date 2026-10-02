@@ -2,6 +2,8 @@
 
 *The grown Ocellus. Who it is, what it eats and why the trade runs on its pups: `bestiary/ocellus.md`, The Grown Ocellus. This file is the fight.*
 
+**Lives in the Dark Garden**, the second layer of the Abyssal Ruins (`places/abyssal-ruins.md`, The Descent).
+
 **Cards:** `cards/weeping-wolf.md`
 
 **A mini-boss** *(Drew, 2026-10-02)* — one wolf is an encounter on its own.
@@ -39,9 +41,8 @@
 
 ## How Hard It Is
 
-*Measured 2026-10-02 against Chris, Kevin and Pat, fighting to the end.* **One wolf taking one turn a round, the party wins 94%**; two whole wolves, 64%. **The real wolf sits between those** — two turns a round on one body of HP — **so expect the party to win most of the time and to lose somebody to a Down doing it.** *That is before the things the simulator cannot run: the undefended opener, OUT OF MIND, and WEEPING VEIL hitting a whole position.* All three push it harder, which is the right direction for a mini-boss, and **the party that prepares for it — watching for it, spreading out, Ward up — takes most of that back.**
+*Measured 2026-10-02 against Chris, Kevin and Pat, fighting to the end, with OUT OF MIND and WEEPING VEIL both running in the simulator.* **One wolf taking one turn a round, the party wins 93%**; two whole wolves, 61%. **The real wolf sits between those** — two turns a round on one body of HP — **so expect the party to win most of the time and to lose somebody to a Down doing it.** *Still not simulated: Never Still's second turn, A Hundred Eyes, and the undefended opener.* All three push it harder, which is the right direction for a mini-boss, and **the party that prepares for it — watching for it, spreading out, Ward up — takes most of that back.**
 
 ## Not Yet Set
 
-- **Where the wolves are** (`bestiary/ocellus.md`)
-- Loot — and whether a wolf's parts are worth what a disposed pup's are (`bestiary/ocellus.md`, When a pup is done)
+- Loot — a wolf's eyes are a pup's grown large (`bestiary/ocellus.md`, When a pup is done), and what they are worth is not written
