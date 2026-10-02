@@ -12,10 +12,27 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 
 ---
 
+## The Descent
+
+*Set 2026-10-02, one line a layer. Each gets written properly when the party is heading into it.*
+
+**A huge hole in the ground, and the University sits in the rim at the top** (Gemstone University, below). **The walls are sheer, and it is difficult to get in at all without going through the University.** *For Chris and Kevin, both wanted there, the way down starts as a break-in.*
+
+**One rule holds the layers together: the deeper you go, the more the rift has changed things.** It is one stretch of ground, worked on harder the closer it sits to the Gateway — which makes this an inverted volcano: the heat is at the bottom, and it comes from the rift rather than the rock. **Every layer leans toward Change or toward Destruction** (`world/seats.md`), and so should what lives and grows in it.
+
+1. **The Ruined City** *(Destruction)* — the old civilization's streets under the violet haze, just below the rim: the Shattered Spires, the Echoing Plaza, the Observatory and the Trench. What was struck, still standing where it fell.
+2. **The Overgrowth** *(Change)* — forest that grows back different every time it is cut, so no path through it is ever the same twice. The ground Chris's father was studying (`campaign/chris.md`).
+3. **The Crystal Layer** *(Change)* — the crystal abyss. Cold, glassy and refracting, where living things are slowly turning to gem, and where the University's name comes from.
+4. **The Deep Past** *(Change)* — what the rift changed first and has been changing longest: huge, old and long settled into what it became. The Elder Tower Creatures in the Trench are the first sign of it reaching upward (`places/abyssal-trench.md`).
+5. **The Burn** *(Destruction)* — the Gateway's heat, where rock runs molten and everything is being unmade rather than changed.
+6. **The Gateway** *(both)* — the rift itself, at the very bottom. Where Chris came through.
+
+*Ashfall is Destruction paired with possibility; the Ruins are Destruction paired with Change. They share the one Seat because one struck the other.*
+
 ## Notable Landmarks
 
 **The Central Gateway**
-At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
+At the bottom of the descent: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
 
 **The Cathedral**
 A fallen priest's ground, tremor-door sealed, holding the stabilizing crystal that keeps the Central Gateway from collapsing. Full encounter: `quests/abyssal-ruins-cathedral.md`.
@@ -30,7 +47,7 @@ A wide open area where the sound of past events surfaces on the wind. The scream
 A partially intact dome overlooking the central rift. The best vantage point in the ruins. Almost certainly guarded.
 
 **Gemstone University** *(the Academy)*
-Cut into the inside face of the rim, looking in. Not a camp and not an expedition — a permanent building in the rock, put there by people who decided the way to study what is in the abyss was to live at the edge of it and keep looking. It is the nearest standing structure to the Central Gateway, which is either the whole point or the whole problem depending on who is asked.
+Cut into the inside face of the rim, looking in. Not a camp and not an expedition — a permanent building in the rock, put there by people who decided the way to study what is in the abyss was to live at the edge of it and keep looking. It is the last standing structure before the descent and the only easy way into it (The Descent, above), which is either the whole point or the whole problem depending on who is asked.
 
 **Named by Chris's player on 2026-09-19**, which was his to name. It is a real university with real students: Kevin reads culinary arts there, which is where the two of them met (`campaign/kevin.md`). *The Abyssal Ruins keep their own name — the University is the institution in the rim, not a name for the place it stands in.*
 
