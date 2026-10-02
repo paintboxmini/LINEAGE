@@ -60,7 +60,7 @@ All core cards. It has no signature cards, because it has no technique — every
 
 ## The Grown Ocellus — the Weeping Wolf
 
-*Drew, 2026-10-02.* **This is what a pup becomes.**
+*Drew, 2026-10-02.* **This is what a pup becomes.** *Stats, deck and the fight: `bestiary/weeping-wolf.md`.*
 
 **A wolf, and a big one** — shoulder-high to a person, black-teal fur matted like wet moss. **Its back and flanks are crowded with eyes**, the same ocelli the pup carries, grown large, red-orange, and set in crusted ridges, none of them arranged and none of them blinking together. **And all of them weep.** The film that dries to a thin sheen on a pup runs off the grown animal in thick green-teal strings, down the legs and onto the ground, faintly lit from inside. *That is where the name comes from, and it is the first thing anybody who has seen one describes.*
 
@@ -70,11 +70,15 @@ All core cards. It has no signature cards, because it has no technique — every
 
 **Which is why the trade runs on pups.** Somebody is taking them from where the wolves are — and that is the most dangerous job anywhere in the FourthEye chain, and the one nobody at the Nest has ever seen done.
 
+### When a pup is done
+
+**A pup does not stay a pup, and the smugglers do not wait to find out what it becomes** *(Drew, 2026-10-02)*. **Once one outgrows its usefulness, they dispose of it** — and they take its valuable parts first. *The eyes and whatever makes the film are worth more dead than an animal that has stopped being safe to sit in a market.* What those parts are sold as, and to whom, is not written.
+
 ## Not Yet Set
 
 - **Where the wolves are**, and who takes the pups from them. *That they are wild, and grown, is set (The Grown Ocellus, above).*
-- **How fast a pup grows** — and what happens to a crate that has been working in a market too long
-- **The weeping wolf's stats and deck**
+- **How fast a pup grows**, and how the smugglers tell when one is done (When a pup is done, above)
+- **What a disposed pup's parts are sold as**, and to whom
 - **Who at the Nest is running them.** Erubeth's whole reason for being here is that nobody knows yet (`places/vultures-nest.md`). **The route is now written and the source still is not**: Harlock's *Arcadia* carries them in and the scraped film out, and he has been paid well to not ask what for (`characters/harlock.md`; `places/vultures-nest.md`, The Arcadia's hold). Cracking the ship gets a party the carrier. It deliberately does not get them whoever hired him.
 - **Whether the dulling is permanent at volume.** A town that has hosted one for years is a different question from a market that has hosted one for a month, and nobody has done that arithmetic. Whatever the answer is, it should be the same answer as the drug's (`items/fourtheye.md`).
 
