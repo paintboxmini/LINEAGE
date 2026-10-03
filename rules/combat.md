@@ -86,6 +86,8 @@ Turn order resolves highest to lowest.
 
 The wheel always has exactly as many slots as there are combatants — no empty slots. When a token shifts, each token it passes through slides over one slot toward the gap the moving token leaves behind.
 
+**Two on the wheel: turns just alternate** *(Drew, 2026-10-03)*. Whenever only two tokens are on the wheel — a one-on-one, or a fight that has come down to two — **nothing changes the turn order.** Initiative Shift, swapping places and moving yourself in the order all do nothing; the rest of the card still resolves. With two people the only way to go sooner is to go twice in a row, so every shift that did anything was a whole free turn — FOCUS's block bought one. The moment a third token joins, the wheel works normally again.
+
 **Joining and leaving.** A summoned combatant's token enters the wheel directly after the token of whoever summoned it. A GM-introduced combatant enters when the fiction calls for it — usually at the end of a full lap. Either way, the wheel gains a slot. A combatant who leaves the fight entirely removes their slot, and the wheel closes around it.
 
 ---

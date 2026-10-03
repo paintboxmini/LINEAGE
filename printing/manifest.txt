@@ -34,6 +34,6 @@
   card-print-washed-ashore         9 cards  488914af6271
   character-sheets                4 sheets  39b0a7b322a9
   packet                       15 sections  73d737675540
-  play-reference               43 sections  bc7dd28d53e6
+  play-reference               44 sections  f86d61bc864d
   simulator-narrated-cards      7 sections  92d3810b7240
-  turn-guide                    4 sections  1403a7106708
+  turn-guide                    4 sections  0989118a3581

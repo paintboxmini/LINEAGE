@@ -85,6 +85,10 @@ class Wheel:
 
         if amount == 0:
             return f'{token} — no shift'
+        if n == 2:
+            # Two on the wheel: turns just alternate (`rules/combat.md`).
+            # The only way to be sooner or later is to go twice in a row.
+            return f'{token} — two on the wheel, turns just alternate'
 
         if token is acting and self.index(token) == 0:
             if amount > 0:
@@ -293,6 +297,8 @@ class Wheel:
         """
         if a is b:
             return f'{a} — no swap'
+        if len(self.slots) == 2:
+            return f'{a} — two on the wheel, turns just alternate'
         i, j = self.index(a), self.index(b)
         self.slots[i], self.slots[j] = self.slots[j], self.slots[i]
         self._already_acted(a, acting)
@@ -310,6 +316,8 @@ class Wheel:
         """
         if token is after:
             return f'{token} — already there'
+        if len(self.slots) == 2:
+            return f'{token} — two on the wheel, turns just alternate'
         s, a = self.index(token), self.index(after)
         n = len(self.slots)
         # Where the slot immediately behind `after` ends up once `token` has

@@ -68,6 +68,8 @@ The next time an ally would take attack damage, you take it instead.
 **(13) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise.
 
+**With only two tokens on the wheel, it does nothing** — turns simply alternate (`rules/combat.md`, Two on the wheel). The same goes for anything else that rewrites the order, PRIORITY's swap included.
+
 **Sooner and later are measured against when that token's own next turn would have arrived** — not by where it ends up sitting in the ring. Going last is not the same as acting later: a token that has already acted this lap sits exactly where a token that has already acted sits, and waiting a full lap from there is the ordinary cost of having gone.
 
 **Onto the marker's slot is not across it.** A positive shift that lands exactly on the marker's own slot simply lands there — the token moves, everything it passed slides, and no chip is placed. Only a shift with **further to travel than the distance to the marker** has actually crossed, and crossing is what earns the extra turn below.
