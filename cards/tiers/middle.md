@@ -44,7 +44,7 @@ The reveal is the game. A beginner card does not reach into it at all.
 
 - **Winning a tie on attack got weaker.** STAND, ADAPT and CALL used to turn a harmless tie into a hit. The hit lands anyway now, so what winning the tie still buys the attacker is **switching off the defender's Defense Effect** and opening anything gated "only on a clean win".
 - **Winning a tie on defence got much stronger.** ANTICIPATE, PUNISH, and STAND, ADAPT or CALL held up as a block used to deny the attacker an Effect. Now they stop a hit that would otherwise land. HOLD THE LINE and HERE BOY's held charge (`cards/pat.md`) move the same way.
-- **REBUTTAL turned inside out.** As an attack it can no longer lose the reveal — a loss becomes a tie and a tie lands — so it is **a Mind + d6 hit that never misses on colour**. As a block it now saves nothing: the tie it rescues still takes the hit, and its own Defense Effect is None. *The biggest single change the rule made to any card, and worth watching before it is ever offered.*
+- **REBUTTAL turned inside out.** As an attack it can no longer lose the reveal — a loss becomes a tie and a tie lands — so it is **a Mind + d6 hit that never misses on colour**. As a block it now saves nothing: the tie it rescues still takes the hit, and its own Defense Effect is None. *The biggest single change the rule made to any card.* **Left as written until the middle tier is built properly** *(Drew, 2026-10-03)* — it is not offered before then, so there is nothing to fix yet.
 
 **Cancelling or reversing an outcome.**
 
