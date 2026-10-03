@@ -233,6 +233,8 @@ Pick **two** at creation — either a specific trained action (Lockpicking, Nego
 
 A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Skills.
 
+**A broad Skill bundles several tags into one, at +1 instead of +2** *(Drew, 2026-10-03)*. Persuasion, Deception and Intimidation as a single Skill is the example it was written for (`campaign/chris.md`, Skills). Agree the tags it covers with the GM when you take it and write them on the sheet — **it is still a literal tag, just a wider one**, and it covers exactly what it names. *Trading depth for reach is the whole deal: wider than any ordinary Skill, never as sharp as one.*
+
 ---
 
 ## Passives

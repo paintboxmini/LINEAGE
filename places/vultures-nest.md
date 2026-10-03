@@ -216,6 +216,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 The kid gang operating on the docks. Named by the scarves, not an official name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
 
+**Who is above them** *(Chris's player, session 0, 2026-10-03)*: **the Red Scarves are controlled by a crime ring led by five families.** The kids are the part of it that works the docks in daylight. The rest is in Chris's backstory document, not yet in the repo — **don't write the families ahead of it** (`campaign/chris.md`, From session 0).
+
 **The operation:** They don't run. They offer to carry bags and show the market. The information is genuine — they know every stall worth visiting. They're also skimming the entire time. Nobody ever has anything on them. It's already three kids ahead in the chain.
 
 If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain of kids has moved it. (give players a window of discovery)

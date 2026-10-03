@@ -103,7 +103,7 @@ The difference matters: a character who fails a **check** didn't accomplish what
 
 ## Skills
 
-A roll a Skill plainly covers gets **+2**, flat, added to the 2d10 + stat. **This applies to Checks and Saves alike** — what you're trained in helps you whether you went looking for the situation or it came looking for you. The table judges "plainly covers" the same way it judges whether a discarded card's name supports Advantage, above — except a Skill is an exact tag, not a name, so there's usually nothing to argue about.
+A roll a Skill plainly covers gets **+2**, flat, added to the 2d10 + stat — **+1 for a broad Skill** that bundles several tags into one (`rules/character-creation.md`, Skills). **This applies to Checks and Saves alike** — what you're trained in helps you whether you went looking for the situation or it came looking for you. The table judges "plainly covers" the same way it judges whether a discarded card's name supports Advantage, above — except a Skill is an exact tag, not a name, so there's usually nothing to argue about.
 
 **Stacks with Advantage.** A Skill's +2 and an Advantage swap (from a Passive or a discarded card) are different currencies — nothing stops both applying to the same roll.
 

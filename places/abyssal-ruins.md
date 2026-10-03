@@ -68,6 +68,8 @@ A depression twenty feet below the ruins floor. The violet haze pools here over 
 
 *The name and the man came off that list on 2026-09-19 because their owner supplied them. Everything else on it stays.*
 
+**Its scholars are called Runewrights** *(Chris's player, session 0, 2026-10-03)* — his father among them. The title is all that is set; what a Runewright does is Chris's.
+
 **What it is known for, and who travels for it, wait on Chris as well** *(Drew, 2026-09-30)*. Its public face depends on what he writes about the inside, and the aim is for **his version to be the canon version** rather than a private one that drifts away from the table's. That only works if he hands it over, so the thing to do is ask him, not to write ahead of him.
 
 ### It is an antagonist now

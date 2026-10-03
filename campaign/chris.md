@@ -220,7 +220,7 @@ What the kit delivers so far:
 
 ## Skills
 
-- **Netrunner +1** — a custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** (Drew's call). What a hack looks like from the outside is Chris's to describe.
+- **Netrunner +1** — a custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** — the general rule for a broad Skill, which this one is where it came from (`rules/character-creation.md`, Skills). What a hack looks like from the outside is Chris's to describe.
 - **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
 
 ## Trait — Mimicry
@@ -429,6 +429,16 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 **What I'd still avoid:** a *repeatable* extra action. The objection was never that tempo is too strong to sell — it's that a card which sells it every turn compounds. FOLLOW THROUGH sells it once and then leaves, which is why it works.
 
 **If it lands, it does not displace anything.** A tenth card is a tenth card — deck size is Body + Mind + Soul (`rules/character-creation.md`), so it arrives either alongside a stat bump or as a swap for something drafted. Which of those is a table question, not a sheet question.
+
+## From session 0, waiting on Chris's doc
+
+*Told to Drew at session 0 (2026-10-03). **Chris has a long backstory document ready to send**, and it supersedes anything here it covers. These are recorded so nothing contradicts them in the meantime — not expanded on.*
+
+- **He is already in the Red Scarves when session one starts.** Chris's call. *In what role is his doc's to say* — the kid side is a gang of under-fourteens (`places/vultures-nest.md`, The Red Scarves), and he has been in the Nest two months (Two months in the Nest, above).
+- **The Red Scarves are controlled by a crime ring led by five families.** Chris wrote it; the detail is in his doc (`places/vultures-nest.md`, The Red Scarves).
+- **His father and the University's other professors are called Runewrights** (`places/abyssal-ruins.md`, Gemstone University — Reserved).
+- **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
+- **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
 
 ## Not Yet Set
 
