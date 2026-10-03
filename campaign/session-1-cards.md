@@ -51,6 +51,24 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 *Worth keeping apart on the night. The draft remnant is the strongest free read on a card this table will ever produce; the advancement leftovers are barely a read at all.* A card that keeps landing in the strong pile across sessions is a card to look at, and the answer is usually a tier move rather than a rewrite (`cards/tiers/README.md`).
 
+### What the draft actually left, 2026-10-03
+
+| Card | Colour | Range | Die |
+|---|---|---|---|
+| **PULL** | Red | Both | d6 |
+| **PINNED** | Blue | Ranged | d6 |
+| **MARKED** | Blue | Ranged | d6 |
+| **FORESEE** | Blue | Ranged | d6 |
+| **VEIL** | Blue | Ranged | d4 |
+| **STUDY** | Blue | Ranged | d4 |
+| **INTERRUPT** | Blue | Melee | d4 |
+| **AID** | Green | Ranged | d4 |
+| **SHARED BURDEN** | Green | Both | d4 |
+
+**Drew's read: nothing wrong with any of them** — they were not what the players wanted at the time. The printed cards match `cards/` word for word, so there is no drift to chase.
+
+*The shape is worth noting rather than acting on.* **Six of the nine are Blue**, against a third of the Oracle; **six are Ranged**, at a table with two Frontline characters; and the nine are support and status cards on small dice rather than damage. One night is one read — it says what this party skipped, not what is weak. If the same names land in the strong pile again, that is when it means something.
+
 ---
 
 ## Where all 63 end up
