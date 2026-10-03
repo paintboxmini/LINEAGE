@@ -16,7 +16,7 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 
 *Set 2026-10-02, one line a layer. Each gets written properly when the party is heading into it.*
 
-**A huge hole in the ground, and the University sits in the rim at the top** (Gemstone University, below). **The walls are sheer, and it is difficult to get in at all without going through the University.** *For Chris and Kevin, both wanted there, the way down starts as a break-in.*
+**A huge hole in the ground, and the University sits in the rim at the top** (Gemstone University, below). **The walls are sheer, and it is difficult to get in at all without going through the University.** *For Chris and Kevin, both wanted there, the way down starts as a break-in.* **The way there is a river** running south from Vulture's Nest, sailable most of the way, with a short walk at the end to the rim (`world/geography-overview.md`, Past the hubs).
 
 **One rule holds the layers together: the deeper you go, the more the rift has changed things.** It is one stretch of ground, worked on harder the closer it sits to the Gateway — which makes this an inverted volcano: the heat is at the bottom, and it comes from the rift rather than the rock. **Every layer leans toward Change or toward Destruction** (`world/seats.md`), and so should what lives and grows in it.
 

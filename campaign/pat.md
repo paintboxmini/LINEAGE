@@ -171,7 +171,9 @@ Generations of Shunka who turned to wild magic trying to break the curse, and fa
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen at the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table.
+
+**Drafted at session 0, 2026-10-03:** CLOSE IN, PAIN IS FUEL, OPEN GUARD and SHATTER (Red), CHAIN (Blue), LEVEL THE FIELD (Green) — all six printed as written in `cards/`. **With his customs that is 5 Red / 1 Blue / 2 Green, plus HOLD THE LINE in no colour**, against the 3 Red / 2 Blue / 4 Green his stats suggest. *Body-led rather than Soul-led, and a choice rather than a mistake* — the heuristic bends at the draft, and Red is where the bigger dice are (`rules/cards.md`, Deck Building). Passives STRONGJAW and HACKLES RISE sit outside the nine.
 
 ## Not Yet Set
 
