@@ -94,7 +94,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
 
-**The party's boat is inside the cordon and the party is not** — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
+**The party's boat is inside the cordon and the party is not** — Kevin's temple ship, the Merry Mint (`campaign/kevin.md`, From session 0) — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 

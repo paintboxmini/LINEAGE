@@ -58,7 +58,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **What happened to his father is unknown, and stays unknown.** Dead or alive is deliberately unwritten — it is a thread to play with rather than a fact to record, and the not-knowing is the point. Chris did not see how it ended, because Kevin did not let him.
 
-**They got out of the Ruins together.** And the men are still looking.
+**They got out of the Ruins together**, and reached the Nest aboard the Merry Mint, Kevin's temple ship (`campaign/kevin.md`, From session 0). And the men are still looking.
 
 ---
 

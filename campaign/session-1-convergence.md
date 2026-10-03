@@ -104,7 +104,7 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 ### And the lockdown is what traps them
 
-They had a boat. **The Promise barge comes in, the Compact shuts the berth, and their boat is locked down with everything else on that stretch of dock.** Two people hiding from an institution that hunts them are now on a manifest, in a port nobody is allowed to leave.
+They had a boat — **the Merry Mint, a temple ship** with nothing aboard (`campaign/kevin.md`, From session 0). **The Promise barge comes in, the Compact shuts the berth, and their boat is locked down with everything else on that stretch of dock.** Two people hiding from an institution that hunts them are now on a manifest, in a port nobody is allowed to leave.
 
 *That is a much sharper version of the same device than "their freight is impounded." The stakes of the quarantine are not commercial for those two.*
 
@@ -136,7 +136,7 @@ Corvel's People of Promise ritual barge is held at the Nest — unregistered com
 
 **A spooked Compact does not inspect one hull.** It inspects the berth. So:
 
-- **Kevin and Chris's boat is locked down** with everything on that stretch of dock. No freight is involved — they are not shipping anything, they are leaving (Kevin — the one nobody is making do this, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
+- **Kevin and Chris's boat, the Merry Mint, is locked down** with everything on that stretch of dock. No freight is involved — they are not shipping anything, they are leaving (Kevin — the one nobody is making do this, above). Two people hiding from an institution that hunts them are now on a manifest in a port nobody may leave.
 - **Pat is at the docks asking river questions** — which is precisely the sort of question a port in the middle of a quarantine does not want a stranger asking out loud.
 - **Chris cannot afford to be counted.** He is the one with the most to lose from a careful list, and he is standing next to the only person at the dock who knows why.
 

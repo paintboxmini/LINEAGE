@@ -77,7 +77,7 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **Kevin was in that fight, and Kevin is the one who ended it for Chris.** He took hold of him and physically tore him out of the moment, away from his father, because Chris was not going to leave on his own. *That is the single most important thing on Kevin's sheet and it is not a stat.* He saved his friend's life and he took the choice away from him in the same motion, and nobody has said a word about it since.
 
-**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
+**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, aboard the Merry Mint (From session 0, below), and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
 
 **What happened to Chris's father is unknown**, to Kevin as much as to anyone.
 
@@ -430,7 +430,7 @@ Range: Both
 
 ## From session 0
 
-- **His ship is the Merry Mint** *(Kevin, 2026-10-03)*.
+- **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest.** At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
 
 ## Not Yet Set
