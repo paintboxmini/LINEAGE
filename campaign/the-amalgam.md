@@ -34,7 +34,7 @@ He came down at the Abyssal Ruins, through the Central Gateway (`places/abyssal-
 
 **Plants**, from the man who raised him. *Rewritten 2026-09-19 — this section used to say farming, at Briarwatch, as a probable first Skill; the Briarwatch arrival is gone and his Skills are Nature and Performance (`campaign/chris.md`).*
 
-**The irony survives the change and gets sharper.** A probe sent to learn a world well enough to help consume it was brought up by a botanist — taught, patiently and across years, how living things work, what they need, and how to let a thing be what it is. His **Nature +2** is not a survival skill picked up on the road. It is his father's field, handed down the ordinary way, to something that was sent here to do the opposite with it.
+**The irony survives the change and gets sharper.** A probe sent to learn a world well enough to help consume it was brought up by a botanist — taught, patiently and across years, how living things work, what they need, and how to let a thing be what it is. What he knows of living things is not a survival skill picked up on the road. It is his father's field, handed down the ordinary way, to something that was sent here to do the opposite with it. *(It sat on his sheet as Nature +2 until session 0, when Chris took Netrunner instead; the upbringing is the same either way.)*
 
 **And it is why his magic looks the way it does.** Nature and transmogrifying (`campaign/chris.md`, Magic Expression): half of what he expresses through a card is the discipline he was raised inside, and the other half is what he is.
 

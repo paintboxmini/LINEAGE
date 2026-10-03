@@ -135,7 +135,7 @@ What the kit delivers so far:
 
 **Set 2026-09-19, and it is flavour rather than a subsystem — which is the rule, not a shortcut.** *Magic Expression* is the whole of how magic works here: the card gives the mechanical outcome, and **what it looks like is yours** (`rules/character-creation.md`, Magic Expression). There is no spell list and nothing to prepare.
 
-**So every card he plays reads as one of two things.** **Nature** — growth, root, rot, the behaviour of living things, which is what Nature +2 on his sheet is already for. **Transmogrifying** — one thing becoming another, which is what he *is*. A Blue card is not "a Mind card"; it is him changing the shape of the problem or the shape of himself.
+**So every card he plays reads as one of two things.** **Nature** — growth, root, rot, the behaviour of living things. *(Nature +2 was on his sheet when this was set; it became Netrunner at session 0. The look of his magic is flavour and did not change with it.)* **Transmogrifying** — one thing becoming another, which is what he *is*. A Blue card is not "a Mind card"; it is him changing the shape of the problem or the shape of himself.
 
 **This lands with no strain at all**, which is the good sign: AMALGAMOUS FORM is transmogrification with a die on it, MIMETIC BLADE is one transmogrification perfected, Mimicry is the same act done slowly and socially, and the man who raised him studies plants.
 
@@ -220,14 +220,14 @@ What the kit delivers so far:
 
 ## Skills
 
-- **Nature +2** — and it earns its place twice. It's how he knows what a creature *does* rather than only what it looks like, which is the difference between wearing a shape and using one.
+- **Netrunner +1** — a custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** (Drew's call). What a hack looks like from the outside is Chris's to describe.
 - **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
 
 ## Trait — Mimicry
 
 **A Trait, not a Passive** (`rules/character-creation.md`, Passives and Traits) — always true, costs no Action, takes no slot.
 
-He can take the appearance of a person he has looked at. **And of a creature**, on the same terms — a thing made of liquid metal has no particular reason to find a deer harder than a man, and Nature is on his sheet for exactly this.
+He can take the appearance of a person he has looked at. **And of a creature**, on the same terms — a thing made of liquid metal has no particular reason to find a deer harder than a man, and knowing what a creature *does*, rather than only how it looks, is what a creature copy is worth.
 
 ### What it can't do
 
