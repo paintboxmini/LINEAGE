@@ -777,7 +777,8 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
         # HOLD THE LINE takes the colour it is resolving against, so there
         # is nothing for RPS to decide. A guaranteed tie, which its own
         # "you win on a tie" then converts on defence and cannot convert on
-        # offence — that asymmetry is the card.
+        # offence — a full block one way, a bare d4 that always lands the
+        # other (a tie lands the hit since 2026-10-03).
         mirror = atk_card if atk_traits.mirrors_color else def_card
         log(f'  {mirror.name} takes the colour it is facing — a tie.')
         outcome = Outcome.TIE

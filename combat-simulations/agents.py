@@ -455,10 +455,12 @@ class KitAI(SimpleAI):
        deals nothing, so scoring a block by its Attack line is scoring the
        wrong thing entirely. This scores it by the odds of actually winning
        the reveal, read off what colours the attacker's deck is made of.
-    2. **Some cards cannot deal damage at all.** HOLD THE LINE mirrors its
-       opponent's colour and therefore always ties, so attacking with it is
-       a guaranteed nothing — and blocking with it is a guaranteed stop.
-       Same card, opposite value, depending on which side of the exchange.
+    2. **Some cards are worth far more on one side than the other.** HOLD
+       THE LINE mirrors its opponent's colour and therefore always ties, so
+       attacking with it is a sure d4 with no stat behind it (a tie lands
+       the hit since 2026-10-03) — and blocking with it is a guaranteed
+       stop. Same card, very different value, depending on which side of
+       the exchange.
     3. **A colour played twice running can cost you a stance.** KILLSWITCH
        ends on the same colour two attacks in a row, so while it is up, a
        repeat is not free.
