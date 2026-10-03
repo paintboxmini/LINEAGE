@@ -663,7 +663,7 @@ def test_the_load_is_the_card():
             engine.resolve_attack(k, f, gs, None, rng=random.Random(seed), log=QUIET)
         return k, f
 
-    k, f = shoot('hush petal')
+    k, f = shoot('leadfoot')
     check('a status round applies its status', f.rooted == 1, f.rooted)
     check('and the round is gone afterwards', k.load is None, k.load)
 

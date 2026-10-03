@@ -129,7 +129,7 @@ Everything he fires or throws goes through the same preparation. It is cooking, 
 
 **Every round is a grace pepper** *(2026-09-28)* — the family's own. A plain round is one reduced and sealed with nothing worked in; a charged round is the same pepper with a seasoning worked in at stage 2. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
 
-**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and hush petal is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low — well in advance of it mattering** — and restocking means the only place grace comes from: the Peppers, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
+**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and leadfoot is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low — well in advance of it mattering** — and restocking means the only place grace comes from: the Peppers, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
 
 **It is a story thread, not a penalty** *(Drew, 2026-09-28)*. The warning comes early enough that he will almost certainly find his own reason to go and get more before the bag is ever empty — *which is the scene the warning exists to produce.* **And GRIND SHOT always works.** Loaded with nothing it plays as a bare attack with no text, the same as a plain round, so a card in his hand never goes dead over something that happened between fights.
 
@@ -177,6 +177,8 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 Five seasonings, gated five different ways: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, and the Blowback simply has to be **beaten in a fight**.
 
+**Leadfoot was hush petal until session 0** *(2026-10-03)*. Kevin's ask: the name did not fit an ingredient that roots a person where they stand. The flower is still the Hush Bloom; **leadfoot is what the dried petal is called once it is a seasoning** — the numbing goes to the legs first, and the feet go heavy. Same split as Scorchback and cinder flake.
+
 Ingredients don't have a colour. A seasoning is a seasoning; what it does is what it does, whatever card it rides on.
 
 **The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, six times over.
@@ -186,7 +188,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Plain** | — | — | Anywhere |
 | **Sapphire crystal** | Defender gains Vulnerable | Attacker gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
 | **Cinder flake** | Deal +3 damage | Deal 3 unpreventable damage to the attacker | `bestiary/scorchback-beetle.md` — the Cindersink |
-| **Hush petal** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
+| **Leadfoot** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
 | **Spinstone grind** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | Push the attacker to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 
@@ -198,7 +200,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 **Plain is genuinely blank.** A plain round makes GRIND SHOT a vanilla attack with no text at all — which finally makes *"never short of ammunition, only ever short of good ammunition"* bite instead of just reading well. He can always fire. Firing is often not worth the turn.
 
-**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. **He has a stock of cinder flake and hush petal, and he will not sell it** *(2026-09-28)*. Whether he parts with any depends on how things stand between him and Kevin, and **the currency is ingredients, never gold** — he already loses money on the Fricassee and is delighted to (`places/capital/gilded-tusk.md`, The Fricassee loses money). **Bring him something he has never cooked and he will trade.** *So he is a rival for supply, a possible friend, and the one person in the Capital who values what Kevin carries for the same reason Kevin does.*
+**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. **He has a stock of cinder flake and leadfoot, and he will not sell it** *(2026-09-28)*. Whether he parts with any depends on how things stand between him and Kevin, and **the currency is ingredients, never gold** — he already loses money on the Fricassee and is delighted to (`places/capital/gilded-tusk.md`, The Fricassee loses money). **Bring him something he has never cooked and he will trade.** *So he is a rival for supply, a possible friend, and the one person in the Capital who values what Kevin carries for the same reason Kevin does.*
 
 ### The beverages
 
@@ -208,7 +210,7 @@ Prepared drinks, handed out before the fight and drunk with a free action by who
 |-------|-----------------------|--------|-----------|
 | **Bitter Shot** | Gain Quick | Plain | ~10 gold |
 | **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain | ~10 gold |
-| **Still Water** | Gain Ward and heal 3 HP | Hush petal | ~20 gold |
+| **Still Water** | Gain Ward and heal 3 HP | Leadfoot | ~20 gold |
 | **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
 | **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind | ~30 gold |
 
@@ -218,7 +220,7 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 
 **The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
 
-**Three of the five cost him a round he would otherwise have fired.** Still Water eats a hush petal, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+**Three of the five cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
 
 ### What any of it is actually worth to him
 
@@ -240,7 +242,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 |---|---|
 | **3 incendiary oranges** | What is left of two pickings of Burnrind. Where either bank was is a question for the table, not an answer written here |
 | **3 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker. One whole measure, worked up and untouched |
-| **2 hush petal rounds** | Rooted, either direction. A measure with one round already gone out of it |
+| **2 leadfoot rounds** | Rooted, either direction. A measure with one round already gone out of it |
 | **1 Bitter Shot** | Quick |
 | **1 The Early Cup** | Initiative Shift +1. Both drinks are plain-charge, so neither cost him a seasoning — which is why these two and not the good ones |
 | **Plain rounds** | Grace peppers, enough that nobody counts — until the GM says otherwise. They do nothing |
@@ -256,7 +258,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 | | |
 |---|---|
 | **Cinder flake** | 1 measure, all three rounds made and none fired |
-| **Hush petal** | 1 measure, two rounds left of the three |
+| **Leadfoot** | 1 measure, two rounds left of the three |
 | **Sapphire crystal** | 1 measure, raw |
 | **Spinstone grind** | 1 measure, raw |
 | **Bellows dust** | none. He has never had any |
@@ -425,6 +427,11 @@ Range: Both
 *An ally-movement card was the first idea and was scrapped: AWAKEN already does it (`cards/green-soul.md`), and a signature has no business reprinting something anyone can draft.*
 
 ---
+
+## From session 0
+
+- **His ship is the Merry Mint** *(Kevin, 2026-10-03)*.
+- **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
 
 ## Not Yet Set
 

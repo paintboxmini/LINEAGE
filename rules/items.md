@@ -190,11 +190,11 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 |---|---|---|---|
 | Sapphire crystal | Sapphire Ant (`bestiary/sapphire-ant.md`) | **bought** | **2 copper** at Senshi's counter |
 | Cinder flake | Scorchback Beetle (`bestiary/scorchback-beetle.md`) | dangerous to harvest | **none set** |
-| Hush petal | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
+| Leadfoot | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
 | Spinstone grind | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
 | Bellows dust | Blowback Beetle (`bestiary/blowback-beetle.md`) | has to be beaten in a fight | **none set** |
 
-**Four of the five have no number, and the fifth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and hush petal, and there is no rate for any of it if the party ever wants to sell instead of cook.*
+**Four of the five have no number, and the fifth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and leadfoot, and there is no rate for any of it if the party ever wants to sell instead of cook.*
 
 ### Burnrind — correctly worth nothing
 
