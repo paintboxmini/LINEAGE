@@ -1120,10 +1120,10 @@ GATES = [
     (re.compile(r'^if your HP is (\d+) or less,\s*', re.I),
      None, 'HP threshold'),
     # Before the roll there is no damage to look at, so in the pre phase
-    # this reads as "this attack is landing" — which on the attacker-wins
-    # path it is. After the roll it reads literally.
+    # this reads as "this attack is landing" — which on a win or a tie it
+    # is. After the roll it reads literally.
     (re.compile(r'^if this attack deals damage,\s*', re.I),
-     lambda ctx: (ctx.outcome == 'attacker wins' if getattr(ctx, 'phase', 'post') == 'pre'
+     lambda ctx: (ctx.outcome in ('attacker wins', 'tie') if getattr(ctx, 'phase', 'post') == 'pre'
                   else ctx.damage_dealt > 0), 'damage dealt'),
     (re.compile(r'^if target ally\'s HP is (\d+) or less,\s*', re.I),
      None, 'ally HP threshold'),

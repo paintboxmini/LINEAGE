@@ -541,8 +541,10 @@ def test_hold_the_line_mirrors_the_colour_it_faces():
     a.hp = b.hp = 400
     out = engine.resolve_attack(a, b, htl, core['STRIKE'],
                                 rng=random.Random(0), log=QUIET)
-    check('and deals nothing as an attack',
-          out == engine.Outcome.TIE and b.hp == 400, (out, b.hp))
+    # Since 2026-10-03 a tie lands the hit, so an attack that can only tie
+    # always connects: its d4, no stat behind it.
+    check('and always lands its d4 as an attack',
+          out == engine.Outcome.TIE and 396 <= b.hp <= 399, (out, b.hp))
 
     # Without the Special Rule being read it would resolve as plain
     # COLORLESS, which auto-loses to any real colour — the opposite of the

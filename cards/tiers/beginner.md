@@ -62,7 +62,7 @@ Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-
 
 That is bar 1, and as of 2026-09-17 it is absolute. Six cards win or salvage a tie — ANTICIPATE, REBUTTAL, STAND, ADAPT, CALL and PUNISH — and all six are in `middle.md`. Two of them were seated in the Oracle 63 until that day.
 
-The argument for keeping them had been that a tie advances nobody on its own, which is true of one card and not of a deck built from six. Worth remembering if a tie-winner is ever proposed for a starting deck again: the question is not what the card does, it is what four of them do together.
+The argument for keeping them had been that a tie advances nobody on its own, which is true of one card and not of a deck built from six. Worth remembering if a tie-winner is ever proposed for a starting deck again: the question is not what the card does, it is what four of them do together. *That premise went on 2026-10-03, when ties started landing the hit, and the bar still holds — it is about touching the reveal, not about ties (`cards/tiers/middle.md`, What the tie rule did to them).*
 
 ---
 

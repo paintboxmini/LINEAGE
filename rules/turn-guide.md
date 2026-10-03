@@ -29,7 +29,7 @@
 
 - **You win:** damage is **your stat + the card's die**, then your Effect.
 - **The defender wins:** no damage, and the defender's Defense Effect.
-- **Same colour:** no damage — your Effect, then the defender's.
+- **Same colour:** you still hit — damage and your Effect, then the defender's Defense Effect too.
 
 **Range:** Melee needs you both Frontline; Ranged, not both; Both, anywhere. **Damage:** Immunity → Armour → Resist (half) or Vulnerable (×1.5); **unpreventable** skips it. **Initiative shifts** move your turn, never take it.
 

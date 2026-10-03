@@ -21,7 +21,7 @@ CHECK=0
 [ "${1:-}" = "--check" ] && CHECK=1
 
 CARD_SETS=(core briarwatch mason oracle oracle-1 oracle-2 oracle-3 oracle-expansion items items-field washed-ashore)
-RULES_DOCS=(packet play-reference)
+RULES_DOCS=(packet play-reference turn-guide)
 
 # Which sheets get a PDF. The PDFs are **not** in git — they are build
 # output and regenerating them from the markdown is the whole point of this

@@ -504,9 +504,11 @@ turn — and score it identically to a clean hit.
 Two halves to the fix, and the smaller-looking one is worth more.
 
 **Damage now runs through the reveal.** An attack that loses deals
-nothing, so the damage is weighted by the chance of winning and everything
-the Effect is worth by the chance the Effect runs at all — a win *or* a
-tie, because `engine._finish` runs the attacker's half on both. The
+nothing, so the damage and the Effect are both weighted by the chance of
+not losing — a win *or* a tie, because since 2026-10-03 a tie lands the
+hit as well (`rules/combat.md`, Attack Resolution) and `engine._finish`
+runs the attacker's half on both. Before that date a tie dealt nothing,
+and the damage was weighted by the chance of winning alone. The
 colour-repeat penalty stays unweighted: a stance ends on a repeated colour
 **when the card is revealed**, which is before anyone knows who won it.
 
@@ -567,8 +569,10 @@ generic 3/3/3 build with a core deck — 51.8%, which is the case
 kits it is wild in both directions: **3.4% with Chris, 100% with Pat.**
 Both come from cards whose worth is not their damage number. It never
 plays KILLSWITCH, which scores 4.0 and is an Ongoing +3, so a random agent
-that does play it beats it; and it never wastes a turn attacking with
-HOLD THE LINE, which always ties, so it beats a random agent that does.
+that does play it beats it; and it never wasted a turn attacking with
+HOLD THE LINE, which always ties, so it beat a random agent that did.
+*(Measured before 2026-10-03; a tie lands the hit now, so attacking with
+HOLD THE LINE is a sure d4 rather than a wasted turn.)*
 That is the whole reason `KitAI` exists — and the reason the encounter
 figures should stay on `SimpleAI`, which plays creatures, not kits.
 

@@ -41,7 +41,7 @@
 
 ## How Hard It Is
 
-*Measured 2026-10-02 against Chris, Kevin and Pat, fighting to the end, with everything on this sheet running in the simulator except the undefended opener.* **Against one wolf the party wins about 85% of the time, takes about one Down a fight, and deaths are common — roughly one for every two fights.** Two wolves at once is a likely loss (16%). **That is a mini-boss: beatable, and it costs.** *The undefended opener makes it harder still* — which is exactly what **watching for it, spreading out and getting Ward up** take back.
+*Measured 2026-10-02 against Chris, Kevin and Pat, fighting to the end, with everything on this sheet running in the simulator except the undefended opener.* **Against one wolf the party wins about 85% of the time, takes about one Down a fight, and deaths are common — roughly one for every two fights.** Two wolves at once is a likely loss (16%). *Re-measured 2026-10-03 after ties started landing the hit: about 87% against one and 13% against two — the same mini-boss.* **That is a mini-boss: beatable, and it costs.** *The undefended opener makes it harder still* — which is exactly what **watching for it, spreading out and getting Ward up** take back.
 
 ## Loot
 

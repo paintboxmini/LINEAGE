@@ -887,7 +887,11 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         atk_traits.mutes_opponent_defense_effect
         or (outcome == Outcome.TIE and atk_traits.mutes_defense_effect_on_tie))
 
-    if outcome == Outcome.ATTACKER:
+    # A tie lands the hit too (Drew, 2026-10-03): damage and the Effect
+    # exactly as on a win, and then the Defense Effect on top. So both
+    # outcomes walk the same path here, and the tie picks up its Defense
+    # Effect afterwards.
+    if outcome in (Outcome.ATTACKER, Outcome.TIE):
         # The Effect gets a look in before the roll, because some of it is
         # about the roll. Only the 'pre' ops run here — everything else
         # waits until the damage has landed, so Deadly is banked for the
@@ -945,14 +949,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             returned_def, gone_atk, held_def = _run(
                 def_card, 'defense_effect', defender, attacker, outcome, 0,
                 log, rng, wheel, atk_card)
-    elif outcome == Outcome.TIE:
-        log('  Tie — no damage.')
-        if mute_atk:
-            log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
-        else:
-            returned_atk, gone_def, held_atk = _run(
-                atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
-                wheel, def_card)
+    if outcome == Outcome.TIE and def_card is not None:
         if mute_def:
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
@@ -984,10 +981,10 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
 
     # TRAMPLE and DOUBLE DOWN hand the attacker something back; the turn
     # loop in play.py is what can actually spend it.
-    if outcome == Outcome.ATTACKER:
-        if atk_traits.extra_attack_on_clean_win:
-            attacker.extra_attacks += 1
-            log(f'  {attacker.name} attacks again immediately.')
+    if outcome == Outcome.ATTACKER and atk_traits.extra_attack_on_clean_win:
+        attacker.extra_attacks += 1
+        log(f'  {attacker.name} attacks again immediately.')
+    if outcome in (Outcome.ATTACKER, Outcome.TIE):
         if atk_traits.extra_action_on_collapse and defender.down:
             attacker.extra_actions += 1
             log(f'  {attacker.name} gains another action.')

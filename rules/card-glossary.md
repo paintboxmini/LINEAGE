@@ -144,7 +144,7 @@ The next attack damage you would take is reduced to 0. Nothing else about the ex
 
 It applies inside the Damage Pipeline (`rules/combat.md`), which has two consequences worth knowing. It protects whoever actually receives the damage, so an attack reassigned onto someone else meets *their* Immunity, not yours. And it does nothing against unpreventable damage — Thorns, status damage, and HP costs were never attack damage to begin with.
 
-One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won, or it was a tie — leaves it untouched for the next one.
+One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won the reveal — leaves it untouched for the next one. A tie is not one of those: it lands the hit (`rules/combat.md`, Attack Resolution), so it spends the stack.
 
 ---
 

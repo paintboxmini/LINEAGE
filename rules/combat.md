@@ -155,7 +155,7 @@ Range: Melee
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
 - **Attack: Body + d10** — your Body stat plus a d10 roll. The fourth tier, and the rarest: Red alone holds it, on cards that pay for it somewhere else on the card (STRIKE has no Effect at all, REPAY costs 3 HP up front, OVERCOMMIT hands you Vulnerable for the privilege).
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
-- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). On a tie you take the attacker's hit as well, so the two of you trade. "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
 - **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
 
@@ -199,10 +199,16 @@ Green (Soul)  beats  Blue  (Mind)
 
 **Attacker wins** → deal damage, then apply the card's Effect  
 **Defender wins** → no damage + defender triggers Defense Effect  
-**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
+**Tie** → deal damage, then apply the card's Effect — exactly as if the attacker had won — and then the Defender's Defense Effect triggers as well. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
 **Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 4, above); it never comes up in a normal colour comparison.
 
-An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
+**A tie lands the hit** *(Drew, 2026-10-03)*. Matching the attacker's colour does not stop the attack; it only earns the defender their Defense Effect on the way through. **So the defender is playing to win the reveal, and the attacker is playing not to lose it** — two colours in three connect. The defender's Defense Effect still fires if the tie's damage drops them, because a Down combatant still defends (Collapse & Death, below).
+
+<!-- print:skip-start -->
+*Why, 2026-10-03.* Found in the first practice duels at the table: with ties dealing nothing, a matched colour was a wasted turn for the attacker, and fights stalled. Most cards already read correctly under the new rule, because almost nothing was written to depend on a tie being harmless. What it does move is collected under the tie-winning family (`cards/tiers/middle.md`).
+<!-- print:skip-end -->
+
+An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing when the attacker loses (or on any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit, and a win or a tie both give them one. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally. **"Only on a clean win" still means a win and not a tie** — that clause is what a card uses to keep its Effect off the tie.
 
 A standing bonus or penalty like "your next attack deals +X" is consumed by a miss.
 

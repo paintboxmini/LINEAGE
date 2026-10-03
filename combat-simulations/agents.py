@@ -694,21 +694,21 @@ class KitAI(SimpleAI):
         **An attack that loses the reveal deals nothing**, and this class
         scored defences on the colour matchup while scoring attacks on the
         raw number — the defender read the triangle and the attacker was
-        blind to it. Leading Red into a creature whose deck is half Red is
-        a tie and a wasted turn, and the old scorer could not see the
-        difference between that and a clean hit.
+        blind to it. Leading Blue into a creature whose deck is half Green
+        is a lost reveal and a wasted turn, and the old scorer could not
+        see the difference between that and a clean hit.
 
-        So the damage is weighted by the chance of winning the reveal, and
-        everything the Effect is worth by the chance the Effect runs at all
-        — which is a win *or* a tie, because `_finish` runs the attacker's
-        half on both. The colour-repeat penalty is the one thing left
+        So the damage and the Effect are both weighted by the chance of not
+        losing the reveal — a win *or* a tie, because since 2026-10-03 a tie
+        lands the hit as well (`rules/combat.md`, Attack Resolution) and
+        `_finish` runs the attacker's half on both. The colour-repeat penalty is the one thing left
         unweighted: a stance ends on a repeated colour **when the card is
         revealed**, which is before anyone knows who won the exchange
         (`rules/combat.md`, Attack Resolution).
 
         Both weights are normalised so that **an agent who has seen nothing
         scores exactly what the old one did.** With the smoothed prior at a
-        flat third, `hits` and `runs` are both 1.0, and the tuned weights
+        flat third, `runs` is 1.0, and the tuned weights
         below keep the meanings they were tuned with. The scorer only
         starts to diverge as the discard pile fills, which is the point:
         it plays the matchup once it has watched enough to have one.
@@ -727,16 +727,11 @@ class KitAI(SimpleAI):
         t = 1.0 if self.known.knows_stats(target.name) else self._MATCHUP_TRUST
         beat = t * beat + (1 - t) / 3.0
         tie = t * tie + (1 - t) / 3.0
-        hits = 3.0 * beat            # 1.0 against an unknown opponent
+        # A tie lands the hit as well as a win does (`rules/combat.md`,
+        # Attack Resolution), so damage and the Effect carry the same
+        # weight: both happen unless the reveal is lost.
         runs = 1.5 * (beat + tie)    # 1.0 against an unknown opponent
-        value = self._expected(me, card) * hits
-
-        # A card that always ties and carries no Effect does nothing at all
-        # as an attack. Hold it for the block it is actually good at.
-        if self._mirrors(card):
-            text = (card.effect or '').strip().lower()
-            if text in ('', 'none', 'none.'):
-                return -1.0
+        value = self._expected(me, card) * runs
 
         ops = self._ops(card, 'effect')
 
@@ -773,7 +768,7 @@ class KitAI(SimpleAI):
                     value += self._EFFECT_VALUE * runs
                     for inner in op.ops:
                         if isinstance(inner, fx.DamageBonus):
-                            value += inner.amount * hits
+                            value += inner.amount * runs
                 break
         else:
             if ops:
@@ -781,7 +776,7 @@ class KitAI(SimpleAI):
 
         # The load is the card, so score GRIND SHOT with what is in it.
         if any(isinstance(op, fx.AsLoadedRound) for op in ops):
-            value += self._load_value(me) * hits
+            value += self._load_value(me) * runs
 
         # Repeating a colour ends a stance that says it does.
         if me.last_attack_color == card.color:
@@ -816,13 +811,14 @@ class KitAI(SimpleAI):
     def _defence_value(self, me, card, attacker):
         """What a block is actually worth: the odds of winning the reveal.
 
-        Winning means no damage *and* the Defense Effect. A tie means no
-        damage and both effects. Losing means taking the hit. Damage on the
-        card itself never happens on defence at all, so it is not counted.
+        Winning means no damage *and* the Defense Effect. A tie means taking
+        the hit and still getting the Defense Effect. Losing means taking
+        the hit. Damage on the card itself never happens on defence at all,
+        so it is not counted.
         """
         from cards import BEATS
         beat, tie = self._odds(card, attacker)
-        value = beat * 3.0 + tie * 1.5
+        value = beat * 3.0
         if self._ops(card, 'defense_effect'):
             value += self._EFFECT_VALUE * (beat + tie)
         return value

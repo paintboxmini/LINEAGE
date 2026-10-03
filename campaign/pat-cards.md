@@ -10,7 +10,7 @@ Three custom cards, drawn from a list of ideas Pat gave Drew — the rest of his
 
 Colorless, and it never loses on defense — but it never wins on offense either. Pure risk removal, no guaranteed damage; that trade is the whole card, and what Pat actually agreed to when he picked it.
 
-**Mechanism:** its Special Rule makes it take on whatever color it's resolving against, revealed simultaneously — which means it always ties in RPS (same color never wins or loses against itself). Its Defense Effect reads **you win on a tie**, so a guaranteed tie becomes a guaranteed block when defending. Its Attack Effect is blank — a guaranteed tie with nothing to convert it stays a tie, meaning it never deals damage as an attack. Pure defense, zero offense, by design.
+**Mechanism:** its Special Rule makes it take on whatever color it's resolving against, revealed simultaneously — which means it always ties in RPS (same color never wins or loses against itself). Its Defense Effect reads **you win on a tie**, so a guaranteed tie becomes a guaranteed block when defending. Its Attack Effect is blank — a guaranteed tie with nothing to convert it stays a tie. **Since ties started landing the hit (`rules/combat.md`, Attack Resolution, 2026-10-03), that makes it a sure d4 as an attack** — no stat behind it, and the defender's Defense Effect always fires in return. It was written as pure defense, zero offense; under the new tie rule it is pure defense and a weak attack that never misses on colour.
 
 Working name: **HOLD THE LINE** — fits Pat's own backstory (a soldier trained under his Captain father) as much as it fits the mechanic. Open to a different name if this doesn't land for Pat.
 
