@@ -1,6 +1,6 @@
 # Session 1 — the draft, and where the 63 go
 
-*The table's plan for character creation and the first advancement, set 2026-09-24. Method Three in `rules/character-creation.md` is the general version of the draft; this file is what happens to **this** Oracle on **this** night, and what it leaves behind.*
+*The table's plan for character creation and the first advancement, set 2026-09-24. **The draft ran at session 0, on 2026-10-03; the first advancement has not happened yet.** Method Three in `rules/character-creation.md` is the general version of the draft; this file is what happens to **this** Oracle on **this** night, and what it leaves behind.*
 
 **One deck all night: the 63-card Oracle** (`cards/tiers/beginner.md`). The 21-card expansion is not on the table. Nothing gets reshuffled between the draft and the advancement — the same deck carries both, and what is left at the end is not leftovers, it is the thing the rest of the campaign is built out of.
 
@@ -51,7 +51,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 *Worth keeping apart on the night. The draft remnant is the strongest free read on a card this table will ever produce; the advancement leftovers are barely a read at all.* A card that keeps landing in the strong pile across sessions is a card to look at, and the answer is usually a tier move rather than a rewrite (`cards/tiers/README.md`).
 
-### What the draft actually left, 2026-10-03
+### What the draft actually left, session 0 (2026-10-03)
 
 | Card | Colour | Range | Die |
 |---|---|---|---|
@@ -68,6 +68,26 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 **Drew's read: nothing wrong with any of them** — they were not what the players wanted at the time. The printed cards match `cards/` word for word, so there is no drift to chase.
 
 *The shape is worth noting rather than acting on.* **Six of the nine are Blue**, against a third of the Oracle; **six are Ranged**, at a table with two Frontline characters; and the nine are support and status cards on small dice rather than damage. One night is one read — it says what this party skipped, not what is weak. If the same names land in the strong pile again, that is when it means something.
+
+## This table's Oracle, as it stands
+
+**The printed Oracle 63 is not touched by any of this** — it is the set's definition (`printing/generate-cards.py`), and every table starts from all of it. This section is the copy on Drew's table: what has come out of it, and what is still in the box for the advancement.
+
+**Out — 15 so far:**
+
+- **Left in the draft packs (9):** PULL, PINNED, AID, MARKED, FORESEE, VEIL, STUDY, SHARED BURDEN, INTERRUPT — to review, above.
+- **Drafted by Chris (6):** SHARPEN, UNBROKEN, DEFLECT, LAST RESORT, MEND, FLOW (`campaign/chris.md`, Deck).
+- **Drafted by Kevin (6), drafted by Pat (6):** *waiting on their lists.*
+
+**Still in — 48 now, and 36 once Kevin's and Pat's twelve come out:**
+
+| | |
+|---|---|
+| **Red (18)** | ATTRITION, BLINDSIDE, CERTAIN STRIKE, CHARGE, CLOSE IN, FOOTWORK, GROUNDING STANCE, GUARD, OFF BALANCE, OPEN GUARD, PAIN IS FUEL, PUSH, RETALIATE, SECOND WIND, SHATTER, SLIP THE BLADE, STRIKE, WEATHERED |
+| **Blue (13)** | CALCULATE, CALLED SHOT, CHAIN, DISSECT, DISTRACT, ENFEEBLE, FOCUS, INTERCEPT, PRESSURE, REALIGNMENT, SIDESTEP, STILL POINT, THINK TWICE |
+| **Green (17)** | ALIGN, BIND, BRISTLE, COMMUNION, DISORIENT, INSTINCT, LEVEL THE FIELD, MIRROR STEP, MOCKERY, OPENING, PATIENCE, QUICKEN, RELEASE, SHADE AWAY, SHELTER, SMOKESCREEN, STIR |
+
+*The 36 that remain are the first advancement's deck* (The first advancement, above).
 
 ---
 

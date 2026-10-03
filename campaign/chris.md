@@ -266,7 +266,9 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
+
+**Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
 His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
 
@@ -439,7 +441,6 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
-- The 6-card Oracle draft (table activity, not something to pre-decide — `rules/character-creation.md`, Starting Deck)
 - **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
