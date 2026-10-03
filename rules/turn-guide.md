@@ -6,7 +6,7 @@
 
 ## Starting a fight
 
-**Everyone rolls 1d6 + Soul**; highest goes first, ties to higher Soul, then players before enemies. **Everyone draws up to their hand size**, which is their Mind. **One-on-one, initiative shifts do nothing.**
+**Everyone rolls 1d6 + Soul**; highest goes first, ties to higher Soul, then players before enemies. **Everyone draws up to their hand size**, which is their Mind.
 
 ## Your turn
 
@@ -31,7 +31,7 @@
 - **The defender wins:** no damage, and the defender's Defense Effect.
 - **Same colour:** you still hit, and the defender's Defense Effect fires too.
 
-**Range:** Melee needs you both Frontline; Ranged, not both; Both, anywhere. **Damage:** Immunity → Armour → Resist (half) or Vulnerable (×1.5); **unpreventable** skips it. **Initiative shifts** move your turn, never take it.
+**Range:** Melee needs you both Frontline; Ranged, not both; Both, anywhere. **Damage:** Immunity → Armour → Resist (half) or Vulnerable (×1.5); **unpreventable** skips it.
 
 **At 0 HP you're Down:** no attacking or moving, but you still defend and keep your free action. Healing lifts you above 0; **standing costs your Action**. At **minus half your max HP**, you die.
 
