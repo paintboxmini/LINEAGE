@@ -70,7 +70,7 @@ Where that points him, and how the search runs: `campaign/session-1-convergence.
 
 > **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Two triggers confirmed — HERE BOY and LET'S GO (`campaign/pat-cards.md`).
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Four triggers: HERE BOY and LET'S GO in his starting deck, STAY and GOOD BOY for advancement (`campaign/pat-cards.md`).
 
 **Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
 
@@ -84,13 +84,9 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **The cap is three, set 2026-09-27 — and the cap is not a number, it is the three of them.** There are three cursed royals and there have only ever been three; a fourth summon has nobody to answer it. **So more than one spirit can be out at a time, up to three.** *The engine enforces it now rather than counting freely.*
 
-**What that actually means at the table is two, because he only holds two triggers.** HERE BOY and LET'S GO are the whole set (`campaign/pat-cards.md`), so nine cards cannot field a third spirit — **the cap will not bind until a third trigger exists**, and what happens to a summon that finds nobody is deliberately left thin for that reason. *Writing a ruling for a case the sheet cannot reach is how a rule gets invented and then inherited by somebody who needed a different one.*
+**The cap binds now — proposed ruling, for Drew to confirm** *(2026-10-04)*. STAY and GOOD BOY are two more summon cards (`campaign/pat-cards.md`, For advancement), so a fourth summon is reachable for the first time. **With three spirits out, a new summon replaces one of his: Pat chooses which spirit goes, its effect ends with it, and the new one arrives with fresh HP.** *Nobody answers a fourth call — one of the three answers it again.* That turns a summon with a full table into a choice about which totem is worth more right now, and it doubles as the only way to refresh a battered one.
 
-**Two at once is the thing to watch, and it is real.** Both spirits out means Pat is holding a banked tie-win *and* the party is running +2 damage, and an enemy has to spend two turns on two totems to take either away. With Soul 4 he is drawing Green often enough for that to happen. *Nothing about it is broken on paper; it is simply the combination that wants a fight behind it before anybody calls it settled.*
-
-Still open:
-
-- Whether HERE BOY and LET'S GO are the *only* two triggers. **If a third is ever written, the cap starts binding and the fourth-summon ruling above stops being hypothetical.**
+**Two at once was the thing to watch, and three is now possible.** Both early spirits out means a banked tie-win *and* +2 party damage; a third adds a shield or a draw engine. **An enemy has to spend turns on totems to take any of it away** — which is the design working, and the combination to watch once the advancement deck is in play.
 
 ## Passives
 

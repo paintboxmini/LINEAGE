@@ -31,6 +31,8 @@
 
 ## The first advancement, same night
 
+*Superseded 2026-10-04: it draws from each player's own advancement deck now (The advancement decks, below). Kept for the record.*
+
 Out of the **same Oracle**, now 36 cards:
 
 1. Draw **3** and present them to one player. They take **1**.
@@ -118,8 +120,8 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 | | Written | Still to write |
 |---|---|---|
 | **Kevin** | OVER THE PASS, FRESH GROUND (`campaign/kevin.md`, Held Back) | one — a grab bag |
-| **Chris** | FOLLOW THROUGH (`campaign/chris.md`, Held Back — FOLLOW THROUGH) | two — control, initiative, movement |
-| **Pat** | — | three — summons, winning ties, buying time |
+| **Chris** | — *(FOLLOW THROUGH waits for the middle tier: `campaign/chris.md`, Held Back — FOLLOW THROUGH)* | three — control, initiative, movement |
+| **Pat** | STAY, GOOD BOY (`campaign/pat-cards.md`, For advancement) | one |
 
 **The Oracle six, proposed** — assigned to suit, out of the 36 this table has left once Kevin's picks are in (This table's Oracle, above):
 
@@ -129,7 +131,11 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 | **Pat** | INSTINCT, SHADE AWAY, MOCKERY, BIND, DISORIENT, COMMUNION | Buying time (`campaign/pat.md`, Deck). All Green, which pulls him back toward Soul 4 |
 | **Kevin** | *after his list is in* | A grab bag — wide rather than deep |
 
-*Proposals, not settled — Drew assigns.* **Eighteen of the 36 go into the three decks; the other 18 are not placed yet** (Open, below).
+*The format is settled; the six named for each are proposals, and Drew assigns.*
+
+**The other 18 are a shared reserve** *(Drew, 2026-10-04)*. Eighteen of the 36 go into the three decks; the rest stay in one pile that belongs to nobody yet.
+
+**The first advancement draws from each player's own deck** *(Drew, 2026-10-04)*. Three Oracle decks, one per player, from the start — draw three from your own nine and take one. **This replaces the shared-Oracle draw** in The first advancement, above.
 
 ---
 
@@ -137,5 +143,3 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap
 - What the review pile is actually reviewed against, and when
-- **The 18 Oracle cards no advancement deck takes** — a shared reserve, the review pile, or back in the box
-- **Whether the first advancement still draws three and takes one**, and if so whether it draws from each player's own nine rather than the shared Oracle

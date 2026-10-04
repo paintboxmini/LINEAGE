@@ -83,6 +83,49 @@ Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save. **
 
 ---
 
+## For advancement — STAY and GOOD BOY
+
+*Written 2026-10-04 at Drew's ask, from what Pat wants: more summons, winning ties, buying time. **Not in his starting nine** — they go into his advancement deck as two of its three customs (`campaign/session-1-cards.md`, The advancement decks). **Both are dog calls**, the same as HERE BOY and LET'S GO: Caine talks to his dead the way a man talks to a dog he trusts.*
+
+### Card 4 — STAY
+
+Blue — Mind, d4, Both. A summon that buys time.
+
+```
+STAY
+BLUE — MIND
+Attack: Mind + d4
+Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: when you or an ally in your position would take attack damage, the spirit takes as much of it as its HP allows, and the rest lands as normal. This is tied to the spirit's survival — kill the totem, lose the effect.
+Defense Effect: Same as Effect.
+Range: Both
+"Stay. Good. Stay."
+```
+
+- **The spirit's HP is the shield, and the d10 finally matters.** Every point it rolled is a point of somebody else's damage it can eat, and when it runs out the effect is gone because the spirit is. *A 9 holds a fight; a 2 takes the edge off one hit.*
+- **It is a reassignment, the first step of the damage pipeline** — the same step Protect uses (`rules/combat.md`, Damage Pipeline) — so Armour and Resist apply to whoever actually takes it. **Unpreventable damage goes past it**, because it was never attack damage.
+- **Blue, on purpose.** His three starters are colourless, Green and Red, so a Blue custom gives him one in every colour, and Blue is the colour that helps allies.
+- *On defence the spirit arrives after the hit that summoned it*, because a Defense Effect resolves after damage on a tie. It guards the next one.
+
+### Card 5 — GOOD BOY
+
+Green — Soul, d4, Both. The summon that pays off winning ties.
+
+```
+GOOD BOY
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: whenever you win on a tie, draw 1. This is tied to the spirit's survival — kill the totem, lose the effect.
+Defense Effect: Same as Effect.
+Range: Both
+"Who's a good boy."
+```
+
+- **"Win on a tie" is anything that turns a tie into your win**: HOLD THE LINE's block, HERE BOY's held charge, and ADAPT or another tie-winner once the middle tier opens (`cards/tiers/middle.md`).
+- **With HOLD THE LINE it is a card every time he blocks with it.** That is the synergy he asked for, and it is also why it is a draw and not damage — card flow for a stall deck, not a second way to win.
+- **It does nothing alone.** No tie-winner in hand, no payoff. *Which is the honest shape for a synergy card.*
+
+---
+
 ## Related Documents
 
 - `campaign/pat.md` — the character this deck belongs to, Wild Magic Summoning
