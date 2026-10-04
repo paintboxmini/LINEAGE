@@ -120,7 +120,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 | | Written | Still to write |
 |---|---|---|
 | **Kevin** | OVER THE PASS, FRESH GROUND (`campaign/kevin.md`, Held Back) | one — a grab bag |
-| **Chris** | INTERFERENCE (`campaign/chris.md`, For advancement) *(FOLLOW THROUGH and RUBATO wait for the middle tier; TRANSPOSE is being reworked)* | two — movement and initiative |
+| **Chris** | TRANSPOSE, INTERFERENCE (`campaign/chris.md`, For advancement) *(FOLLOW THROUGH and RUBATO wait for the middle tier)* | one — initiative |
 | **Pat** | STAY, GOOD BOY (`campaign/pat-cards.md`, For advancement) | one |
 
 **The Oracle six, proposed** — assigned to suit, out of the 36 this table has left once Kevin's picks are in (This table's Oracle, above):

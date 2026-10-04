@@ -460,7 +460,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## For advancement — TRANSPOSE, RUBATO, INTERFERENCE
 
-*Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **INTERFERENCE is in. RUBATO waits for the middle tier, and TRANSPOSE is being reworked** — as written it does not do anything that moving does not already do (below), so his three are one card short for now. All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
+*Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **TRANSPOSE and INTERFERENCE are in; RUBATO waits for the middle tier**, so his three are one card short for now — the initiative one. All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
 
 ### TRANSPOSE — movement
 
@@ -468,18 +468,19 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 TRANSPOSE
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Choose one: change position, or the next card you play counts as Range: Both.
-Defense Effect: Same choice.
+Effect: Gain Quick. If the card you played last turn was a different colour than this one, gain another.
+Defense Effect: You may change position.
 Range: Both
 "Same song. Different key."
 ```
 
-**Not functional as written** *(Drew, 2026-10-04)*: playing it costs the Action it was meant to save, so it is a weak attack stapled to a move — no better than moving, and REALIGNMENT already does that at a bigger die. **Being reworked.**
+**Aimed at the problem his deck has** (Deck, above): wherever he stands, close to half his hand is the wrong range. **Moving should not cost the Action he needs for the card that fits.** *To transpose is to move a piece into another key without changing the tune.*
 
-**What it was aimed at** (Deck, above): wherever he stands, close to half his hand is the wrong range. TRANSPOSE either moves him without spending an Action on it, or leaves him where he is and makes the next card fit. *To transpose is to move a piece into another key without changing the tune* — which is the card exactly.
+- **The attack banks free moves.** Quick is a move spent with his free action (`rules/card-glossary.md`, Quick), so his Action stays for a card that suits wherever he ends up. **Keep the colours moving and he banks two** — the same flow MEASURE and SEED pay him for.
+- **The block moves him at once**, and a block never cost him an Action in the first place.
+- **FOOTWORK with his flow rule on it** (`cards/red-body.md`), at the smaller die Green pays for Both-range (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
 
-- **Green, d4, Both**, because flexibility is what Green is for and Both-range buys the smallest die (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
-- **"The next card you play" includes a block.** Played on his turn it can set up the following exchange from either side.
+*Rewritten the same day (Drew, 2026-10-04).* The first version read *"Choose one: change position, or the next card you play counts as Range: Both"* — and since TRANSPOSE is itself Range: Both, it read as making the card into what it already was. **The intent was the next card after it**, but it still cost the Action it meant to save, so the rewrite banks moves instead.
 
 ### RUBATO — initiative, held for the middle tier
 
