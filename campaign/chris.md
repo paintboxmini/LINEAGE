@@ -460,7 +460,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## For advancement — TRANSPOSE, RUBATO, INTERFERENCE
 
-*Written 2026-10-04 at Drew's ask: the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
+*Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **INTERFERENCE is in. RUBATO waits for the middle tier, and TRANSPOSE is being reworked** — as written it does not do anything that moving does not already do (below), so his three are one card short for now. All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
 
 ### TRANSPOSE — movement
 
@@ -474,12 +474,16 @@ Range: Both
 "Same song. Different key."
 ```
 
-**This is aimed straight at the problem his deck has** (Deck, above): wherever he stands, close to half his hand is the wrong range. TRANSPOSE either moves him without spending an Action on it, or leaves him where he is and makes the next card fit. *To transpose is to move a piece into another key without changing the tune* — which is the card exactly.
+**Not functional as written** *(Drew, 2026-10-04)*: playing it costs the Action it was meant to save, so it is a weak attack stapled to a move — no better than moving, and REALIGNMENT already does that at a bigger die. **Being reworked.**
+
+**What it was aimed at** (Deck, above): wherever he stands, close to half his hand is the wrong range. TRANSPOSE either moves him without spending an Action on it, or leaves him where he is and makes the next card fit. *To transpose is to move a piece into another key without changing the tune* — which is the card exactly.
 
 - **Green, d4, Both**, because flexibility is what Green is for and Both-range buys the smallest die (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
 - **"The next card you play" includes a block.** Played on his turn it can set up the following exchange from either side.
 
-### RUBATO — initiative
+### RUBATO — initiative, held for the middle tier
+
+**Too strong for the advancement deck** *(Drew, 2026-10-04)*. **It waits for the middle tier, the same as FOLLOW THROUGH** (Held Back, above), so it is not one of his three advancement customs. Written and kept as it is.
 
 ```
 RUBATO
@@ -503,19 +507,19 @@ Range: Both
 INTERFERENCE
 BLUE — MIND
 Attack: Mind + d6
-Effect: Choose one: the defender gains Weak, Blind or Rooted. If the card you played last turn was a different colour than this one, choose two.
-Defense Effect: Choose one: the attacker gains Weak, Blind or Rooted. If the card you played last turn was a different colour than this one, choose two.
+Effect: If the card you played last turn was a different colour than this one, choose one: the defender gains Weak, Blind or Rooted.
+Defense Effect: If the card you played last turn was a different colour than this one, choose one: the attacker gains Weak, Blind or Rooted.
 Range: Ranged
 "Static. Then the wrong note. Then nothing you meant to do."
 ```
 
 **Control, done the Netrunner way** (Skills, above) — a signal pushed into somebody else's head. A **musical** interference is two notes cancelling each other, and a **netrunner's** is noise on the line; both fit.
 
-- **One status at MARKED's size** — d6, Ranged, the band where a single debuff sits (`cards/blue-mind.md`). **Two only on a colour change**, so the upside is earned the same way RUBATO's is.
+- **Gated on the colour change, all of it** *(Drew, 2026-10-04)*. **Getting to choose is strong enough on its own to pay for the flow requirement** — MARKED gives one fixed status at this size with no condition (`cards/blue-mind.md`); this gives his pick of three, and only when he has kept the colours moving.
 - **Choosing is the control.** Weak blunts a hitter, Blind makes them miss half the time, Rooted holds them out of his range or inside it.
 - **Ranged**, the half of his hand his Melee cards leave empty.
 
-**Two Blue and one Green**, with five Blue proposed among his Oracle six as well — the colour his deck is short of.
+
 
 ## Assimilation — a fourth rung on Mimicry
 
