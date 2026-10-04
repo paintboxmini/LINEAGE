@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
-Defense Effect: Apply Initiative Shift +2 to yourself.
+Defense Effect: Apply Initiative Shift +1 to yourself.
 Range: Ranged
 *"Clarity rewards the prepared mind."*
 

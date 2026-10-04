@@ -241,6 +241,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 | | |
 |---|---|
 | **3 incendiary oranges** | What is left of two pickings of Burnrind. Where either bank was is a question for the table, not an answer written here |
+| **2 Burnrind, raw** | *(Added 2026-10-04.)* Two more pickings, not yet made up — **four more oranges** the first time he has a fire and an evening (`flora/burnrind.md`) |
 | **3 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker. One whole measure, worked up and untouched |
 | **2 leadfoot rounds** | Rooted, either direction. A measure with one round already gone out of it |
 | **1 Bitter Shot** | Quick |
@@ -262,10 +263,10 @@ His real exchange rate is already written above under Supply and restocking: **o
 | **Sapphire crystal** | 1 measure, raw |
 | **Spinstone grind** | 1 measure, raw |
 | **Bellows dust** | none. He has never had any |
-| **Burnrind** | 2 pickings, three oranges left of the four. *The one that is not a seasoning — here the fruit is the charge* |
+| **Burnrind** | 4 pickings: two made up, with three oranges left of the four, and **two raw**. *The one that is not a seasoning — here the fruit is the charge* |
 | **Plain stock** | unlimited, and both drinks came out of it |
 
-**Four measures and two pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
+**Four measures and four pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
 
 **The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
 
@@ -273,7 +274,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 **And it is a small number next to the real one.** The grinder is written as **Tier 2 equipment**, which on the gear ladder is an ~800 gold object arriving about twelve sessions ahead of when anyone could afford one (`rules/equipment.md`, Pacing). *The file's own defence of that is good — loaded plain the grinder has no text at all, so it is a conditional weapon rather than a strong one, and the condition is the supply economy this whole section describes. Worth knowing anyway: the gap between Kevin's kit and everyone else's is measured in hundreds of gold, and a starting purse is measured in tens. Starting gold is not the lever that moves it, and nothing here is pretending otherwise.*
 
-*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag* *(Drew, 2026-09-21)*. **He runs dry around the fourth fight**, not the second — a first session where the interesting character is empty by the second encounter is its own kind of failure.
+*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag* *(Drew, 2026-09-21)* — **and since 2026-10-04, four more grenades in the raw Burnrind** once he makes them up. **He runs dry around the fourth fight**, not the second — a first session where the interesting character is empty by the second encounter is its own kind of failure.
 
 **And the free action is still the actual ceiling.** One a turn, whatever is in the bag (One free action, three things that want it, below). More stock does not mean more per turn; it means more turns before the answer to *load, drink or throw* stops being a choice and starts being whatever is left.
 
@@ -427,6 +428,51 @@ Range: Both
 *An ally-movement card was the first idea and was scrapped: AWAKEN already does it (`cards/green-soul.md`), and a signature has no business reprinting something anyone can draft.*
 
 ---
+
+## Held Back — two cards for later
+
+*Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. Neither is in his starting nine; both arrive as advancement, like Chris's FOLLOW THROUGH (`campaign/chris.md`).*
+
+### OVER THE PASS — he throws the knife
+
+```
+OVER THE PASS
+RED — BODY
+Attack: Body + d6
+Effect: Defender gains Vulnerable and Rooted.
+Defense Effect: Attacker gains Vulnerable and Rooted.
+Special Rule: The knife leaves your hand. When this resolves, attacking or
+defending, it stays face up at your opponent's position instead of going to
+your discard. While it is out you cannot play BREAK DOWN. Spend a free action
+in that position to pick it up: this card returns to your hand. It comes back
+to you at the end of combat.
+Range: Ranged
+"Sharp — coming through."
+```
+
+**The pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Sharp, coming through"* is what a cook calls carrying a blade through a kitchen.
+
+- **Two statuses on one half is the above-average upside.** MARKED gives Vulnerable alone at d6 Ranged (`cards/blue-mind.md`); this adds Rooted — the knife pins them where they stand. *A pinned target with Vulnerable on it is exactly what GRIND SHOT wants to be aimed at.*
+- **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **standing in the position it landed in.** Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.
+- **Rooted works against him on the way back**, which is the good part: the person he pinned is still exactly where he has to go.
+
+### FRESH GROUND — the grinder, up close
+
+```
+FRESH GROUND
+RED — BODY
+Attack: Body + d6
+Effect: As the loaded round.
+Defense Effect: As the loaded round.
+Range: Melee
+"Say when."
+```
+
+**GRIND SHOT with colour and range swapped** — Red and Melee where that is Blue and Ranged. Same grinder, same chamber: **it fires whatever is loaded and spends it the same way**, so the two never double his ammunition, they only change where he can fire it from. *Fresh ground pepper at the table, which is the joke and the card.*
+
+- **It closes the hole GRIND SHOT leaves.** GRIND SHOT cannot block in a scrum (THE PEPPER GRINDER, above); this one only works there. Holding both, the grinder is never the wrong range.
+- **d6 rather than Red Melee's usual d8**, for the reason GRIND SHOT sits at d6: the load is the card, and the number matters less than what is in the chamber. Body 4 + d6 already hits a point harder than Mind 3 + d6.
+- **Red, which moves his colours.** Both new cards are Red; his deck runs 4 / 3 / 2 now, and two more Red in an advancement deck lean him further into Body. *Fine for a Body 4 character — worth knowing before both arrive at once.*
 
 ## From session 0
 

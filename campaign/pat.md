@@ -175,6 +175,12 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 **Drafted at session 0, 2026-10-03:** CLOSE IN, PAIN IS FUEL, OPEN GUARD and SHATTER (Red), CHAIN (Blue), LEVEL THE FIELD (Green) — all six printed as written in `cards/`. **With his customs that is 5 Red / 1 Blue / 2 Green, plus HOLD THE LINE in no colour**, against the 3 Red / 2 Blue / 4 Green his stats suggest. *Body-led rather than Soul-led, and a choice rather than a mistake* — the heuristic bends at the draft, and Red is where the bigger dice are (`rules/cards.md`, Deck Building). Passives STRONGJAW and HACKLES RISE sit outside the nine.
 
+**What Pat wants to build toward** *(session 0, via Drew, 2026-10-04)*: **more summons, synergies with winning ties, and cards that buy time.**
+
+- **Summons have to be written for him.** Nothing in the core pool summons — HERE BOY and LET'S GO are the only summon cards in the game outside the Masons' glyphs — so more of them means more signature cards, priced the way his two are (`campaign/pat-cards.md`).
+- **Winning ties got much stronger on defence** when ties started landing the hit (`cards/tiers/middle.md`, What the tie rule did to them). HOLD THE LINE and HERE BOY already lean on it. The tie-winners themselves are middle tier, and **ADAPT** (Green, wins ties) is the one that fits him best when that tier opens.
+- **Buying time, still in the table's Oracle** (`campaign/session-1-cards.md`): **INSTINCT** (Ward), **SHADE AWAY** (Evade), **MOCKERY** (delays and taunts), **BIND** (Rooted), **DISORIENT** (Blind), **PATIENCE** and **COMMUNION** (healing) — all Green, which would also pull his deck back toward his Soul 4.
+
 ## Not Yet Set
 
 Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now.

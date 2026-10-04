@@ -284,6 +284,8 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 *Three are Blue, which is also the colour his deck is one short of.*
 
+**And what Chris wants to build toward** *(session 0, via Drew, 2026-10-04)*: **control, initiative shifting, and cards that move him.** Still in the table's Oracle for the first two — **PRESSURE** (Blue, locks a colour), **ENFEEBLE** (Blue, Weak), **DISTRACT** (Blue, Initiative Shift -2 to any target), **QUICKEN** (Green, +2 to himself), **BIND** (Green, Rooted). *FOLLOW THROUGH, held back below, is already the initiative card written for him.*
+
 His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
 
 **Every one of the three changed colour on the way here**, which is worth saying plainly rather than hiding in the history: MEASURE went Blue to Red, KILLSWITCH went Green to Blue, and SEED replaced a Red card entirely. The set ended up where it started — one per colour — by a different route, and each card is now the colour its fiction was always describing rather than the colour that was convenient when it was written.
@@ -453,6 +455,18 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **His father and the University's other professors are called Runewrights** (`places/abyssal-ruins.md`, Gemstone University — Reserved).
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
 - **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
+
+## Wanted later — Assimilation, a fourth rung on Mimicry
+
+**What Chris wants** *(session 0, via Drew, 2026-10-04)*: **absorbing a lifeform and gaining its skills.** Drew's read: very hard to balance. **His three questions — only on the dead or unconscious? a low chance of success? only late in the campaign? — are open.** What follows is a proposal for them, not a ruling.
+
+**It breaks the ladder's rule, and that is the thing to design around.** Every rung so far buys *fidelity* — a better face — and none buys anything he can do (Trait — Mimicry, above). Assimilation buys a capability. So it wants to be priced like one, and the existing ladder already shows how this file likes to price things: **in fiction, not on a die.**
+
+- **A body, never a fight.** Dead, or Down and not getting up again. Never a living target that can resist, and never in combat — the Trait already says Mimicry is what happens before a fight, not during it.
+- **A condition, not a low chance.** A power that fails most of the time teaches a player to stop trying. Better that it always works once its conditions are met, and that the conditions are hard to meet: an intact body, the rest of the scene, nobody interrupting.
+- **One at a time.** He holds **one** assimilated thing; taking another replaces it. *A meal, not a library.*
+- **Skills, not cards or stats.** What he gains is a Skill tag the creature or person plainly had — a Gollop's lookout, a Tardigrade's endurance — and nothing on his deck.
+- **Late, and arrived at rather than levelled into.** It fits as one of the twelve spotlight moments (`experimental/code-concept-cards.md`) — something that happens to him in the story, not a number he reaches. *And it is the probe doing what it was sent to do* (`campaign/the-amalgam.md`), which is the cost the table will feel whatever the mechanics say.
 
 ## Not Yet Set
 

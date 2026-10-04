@@ -118,7 +118,7 @@ Measured properly: a's next turn was after three others, and **-1 puts one more 
 
 ## Example 8 — Two on the wheel
 
-`a, b.` a attacks; b blocks with FOCUS and wins, which reads *Apply Initiative Shift +2 to yourself.*
+`a, b.` a attacks; b blocks and wins with a card whose Defense Effect reads *Apply Initiative Shift +2 to yourself* — FOCUS, as it was printed until 2026-10-04 (it is +1 now).
 
 Under the crossing rule alone, b would take an immediate extra turn, a would be skipped in compensation, and b would then take its ordinary turn too: **a, b, b, a** — a whole free turn bought with a block. Every other shift at this size does the same thing one way or the other: +1 changes nothing, +2 or more is a double turn for the target, and any negative shift is a double turn for the other side.
 

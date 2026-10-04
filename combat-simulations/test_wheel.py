@@ -381,7 +381,7 @@ def the_chip_clears_and_the_turn_arrives():
 
 
 def ex8_two_on_the_wheel():
-    """`a, b.` b blocks with FOCUS (+2). With two tokens on the wheel nothing
+    """`a, b.` b blocks with FOCUS. With two tokens on the wheel nothing
     changes the turn order: a, b, a, b — not a, b, b, a."""
     for amount in (+1, +2, +3, -1, -2):
         w = Wheel(['a', 'b'])
