@@ -43,7 +43,7 @@ Green — Soul, d4, Both range. First concrete trigger for Wild Magic Summoning 
 HERE BOY
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: the next time you tie in RPS, you win instead. This is tied to the spirit's survival — kill the totem, lose the effect.
+Effect: Summon a spirit to your position. It carries the Ongoing Effect: the next time you tie in RPS, you win instead.
 Defense Effect: Same as Effect.
 Range: Both
 "Here, boy. Come stand with me."
@@ -71,7 +71,7 @@ Red — Body, d4, Both range. Second trigger for Wild Magic Summoning, and the a
 LET'S GO
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat. This buff is tied to the spirit's survival — kill the totem, lose the buff.
+Effect: Summon a spirit. It carries the Ongoing Effect: you and your allies deal +2 damage this combat.
 Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 "Come get me. Every one of you."
@@ -85,6 +85,8 @@ Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save. **
 
 ## For advancement — STAY and GOOD BOY
 
+**None of Pat's summon cards restate the summoning rules** *(Drew, 2026-10-04)*. The d10, the effect ending when the spirit falls, and the three-spirit cap all live on his Trait and apply to every one of them (`campaign/pat.md`, Wild Magic Summoning), so the cards say only what is different about each.
+
 *Written 2026-10-04 at Drew's ask, from what Pat wants: more summons, winning ties, buying time. **Not in his starting nine** — they go into his advancement deck as two of its three customs (`campaign/session-1-cards.md`, The advancement decks). **Both are dog calls**, the same as HERE BOY and LET'S GO: Caine talks to his dead the way a man talks to a dog he trusts.*
 
 ### Card 4 — STAY
@@ -95,7 +97,7 @@ Blue — Mind, d4, Both. A summon that buys time.
 STAY
 BLUE — MIND
 Attack: Mind + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: when you or an ally in your position would take attack damage, the spirit takes as much of it as its HP allows, and the rest lands as normal. This is tied to the spirit's survival — kill the totem, lose the effect.
+Effect: Summon a spirit to your position. It carries the Ongoing Effect: when you or an ally in your position would take attack damage, the spirit takes as much of it as its HP allows, and the rest lands as normal.
 Defense Effect: Same as Effect.
 Range: Both
 "Stay. Good. Stay."
@@ -114,7 +116,7 @@ Green — Soul, d4, Both. The summon that pays off winning ties.
 GOOD BOY
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: whenever you win on a tie, draw 1. This is tied to the spirit's survival — kill the totem, lose the effect.
+Effect: Summon a spirit to your position. It carries the Ongoing Effect: whenever you win on a tie, draw 1.
 Defense Effect: Same as Effect.
 Range: Both
 "Who's a good boy."

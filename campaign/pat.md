@@ -68,7 +68,9 @@ Where that points him, and how the search runs: `campaign/session-1-convergence.
 
 **This is a Trait**, not a Skill and not a Passive (`rules/character-creation.md`, Passives and Traits) — a line on the sheet that is simply true, costing no Action and taking no slot. It doesn't compete with STRONGJAW or HACKLES RISE for either of his two Passives.
 
-> **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
+> **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates, and whatever Ongoing Effect it carried ends with it. Up to three can stand at once; summoning with three already out replaces one of them — you choose which.
+
+**That line is the rule for every summon card he holds**, so the cards themselves don't repeat it *(Drew, 2026-10-04)*.
 
 What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Four triggers: HERE BOY and LET'S GO in his starting deck, STAY and GOOD BOY for advancement (`campaign/pat-cards.md`).
 
@@ -84,7 +86,7 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **The cap is three, set 2026-09-27 — and the cap is not a number, it is the three of them.** There are three cursed royals and there have only ever been three; a fourth summon has nobody to answer it. **So more than one spirit can be out at a time, up to three.** *The engine enforces it now rather than counting freely.*
 
-**The cap binds now — proposed ruling, for Drew to confirm** *(2026-10-04)*. STAY and GOOD BOY are two more summon cards (`campaign/pat-cards.md`, For advancement), so a fourth summon is reachable for the first time. **With three spirits out, a new summon replaces one of his: Pat chooses which spirit goes, its effect ends with it, and the new one arrives with fresh HP.** *Nobody answers a fourth call — one of the three answers it again.* That turns a summon with a full table into a choice about which totem is worth more right now, and it doubles as the only way to refresh a battered one.
+**The cap binds now, and the ruling is confirmed** *(Drew, 2026-10-04)*. STAY and GOOD BOY are two more summon cards (`campaign/pat-cards.md`, For advancement), so a fourth summon is reachable for the first time. **With three spirits out, a new summon replaces one of his: Pat chooses which spirit goes, its effect ends with it, and the new one arrives with fresh HP.** *Nobody answers a fourth call — one of the three answers it again.* That turns a summon with a full table into a choice about which totem is worth more right now, and it doubles as the only way to refresh a battered one.
 
 **Two at once was the thing to watch, and three is now possible.** Both early spirits out means a banked tie-win *and* +2 party damage; a third adds a shield or a draw engine. **An enemy has to spend turns on totems to take any of it away** — which is the design working, and the combination to watch once the advancement deck is in play.
 

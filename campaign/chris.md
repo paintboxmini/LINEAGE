@@ -458,6 +458,65 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
 - **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
 
+## For advancement — TRANSPOSE, RUBATO, INTERFERENCE
+
+*Written 2026-10-04 at Drew's ask: the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
+
+### TRANSPOSE — movement
+
+```
+TRANSPOSE
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Choose one: change position, or the next card you play counts as Range: Both.
+Defense Effect: Same choice.
+Range: Both
+"Same song. Different key."
+```
+
+**This is aimed straight at the problem his deck has** (Deck, above): wherever he stands, close to half his hand is the wrong range. TRANSPOSE either moves him without spending an Action on it, or leaves him where he is and makes the next card fit. *To transpose is to move a piece into another key without changing the tune* — which is the card exactly.
+
+- **Green, d4, Both**, because flexibility is what Green is for and Both-range buys the smallest die (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
+- **"The next card you play" includes a block.** Played on his turn it can set up the following exchange from either side.
+
+### RUBATO — initiative
+
+```
+RUBATO
+BLUE — MIND
+Attack: Mind + d4
+Effect: Apply Initiative Shift +1 to yourself and -1 to the defender. If the card you played last turn was a different colour than this one, make both 2.
+Defense Effect: Apply Initiative Shift +1 to yourself and -1 to the attacker. If the card you played last turn was a different colour than this one, make both 2.
+Range: Both
+"Stolen time. Paid back later, maybe."
+```
+
+***Rubato* is literally "stolen time"** — a player takes a little from one note to give to another. The card takes a step of the turn order from someone and gives it to him.
+
+- **Priced against what the pool already pays.** STEAL's block does +1 / -1 on a d4 (`cards/green-soul.md`); INTERRUPT does +2 / -2 on a d4, Melee only (`cards/blue-mind.md`). RUBATO starts at STEAL's size and **reaches INTERRUPT's only when he keeps the colours moving** — the same rule MEASURE and SEED pay him for.
+- **It does nothing in a one-on-one**, like every shift (`rules/combat.md`, Two on the wheel). The rest of the card — the die — still resolves.
+- *Not FOLLOW THROUGH's job.* That one buys a whole turn and waits for the middle tier; this one moves him a step or two, often.
+
+### INTERFERENCE — control
+
+```
+INTERFERENCE
+BLUE — MIND
+Attack: Mind + d6
+Effect: Choose one: the defender gains Weak, Blind or Rooted. If the card you played last turn was a different colour than this one, choose two.
+Defense Effect: Choose one: the attacker gains Weak, Blind or Rooted. If the card you played last turn was a different colour than this one, choose two.
+Range: Ranged
+"Static. Then the wrong note. Then nothing you meant to do."
+```
+
+**Control, done the Netrunner way** (Skills, above) — a signal pushed into somebody else's head. A **musical** interference is two notes cancelling each other, and a **netrunner's** is noise on the line; both fit.
+
+- **One status at MARKED's size** — d6, Ranged, the band where a single debuff sits (`cards/blue-mind.md`). **Two only on a colour change**, so the upside is earned the same way RUBATO's is.
+- **Choosing is the control.** Weak blunts a hitter, Blind makes them miss half the time, Rooted holds them out of his range or inside it.
+- **Ranged**, the half of his hand his Melee cards leave empty.
+
+**Two Blue and one Green**, with five Blue proposed among his Oracle six as well — the colour his deck is short of.
+
 ## Assimilation — a fourth rung on Mimicry
 
 **What Chris wants** *(session 0, via Drew, 2026-10-04)*: **absorbing a lifeform and gaining its skills.** **Settled the same day** *(Drew, 2026-10-04)*.

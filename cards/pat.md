@@ -31,7 +31,7 @@ Special Rule: Upon simultaneous reveal, this card's color becomes identical to w
 **HERE BOY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Summon a spirit to your position (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: the next time you tie in RPS, you win instead. This is tied to the spirit's survival — kill the totem, lose the effect.
+Effect: Summon a spirit to your position. It carries the Ongoing Effect: the next time you tie in RPS, you win instead.
 Defense Effect: Same as Effect.
 Range: Both
 *"Here, boy. Come stand with me."*
@@ -41,7 +41,7 @@ Range: Both
 **LET'S GO**
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit (Wild Magic Summoning — roll a d10 for its HP). It carries the Ongoing Effect: you and your allies deal +2 damage this combat. This buff is tied to the spirit's survival — kill the totem, lose the buff.
+Effect: Summon a spirit. It carries the Ongoing Effect: you and your allies deal +2 damage this combat.
 Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 *"Come get me. Every one of you."*

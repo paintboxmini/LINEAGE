@@ -2630,16 +2630,18 @@ class Summon(Op):
 
         standing = sum(1 for c in table()
                        if c.is_object and c.summoner is ctx.actor and c.alive())
-        # The cap is three, set 2026-09-27: there are three cursed royals
-        # and there have only ever been three, so a fourth summon has
-        # nobody to answer it (`campaign/pat.md`, Wild Magic Summoning).
-        # Unreachable from Pat's own nine cards, which hold two triggers —
-        # this is a guard against a third trigger being written later, not
-        # a case the sheet can currently produce.
+        # The cap is three — there are three cursed royals and there have
+        # only ever been three. A summon with all three out replaces one of
+        # them, the summoner's choice (`campaign/pat.md`, Wild Magic
+        # Summoning, confirmed 2026-10-04). The weakest goes: a fresh roll
+        # is worth most where the old one has least left.
         if standing >= 3:
-            ctx.log(f'  {ctx.actor.name} calls and nobody answers '
-                    f'— all three are already standing.')
-            return
+            weakest = min((c for c in table() if c.is_object
+                           and c.summoner is ctx.actor and c.alive()),
+                          key=lambda c: c.hp)
+            ctx.log(f'  {ctx.actor.name} calls with all three out — '
+                    f'{weakest.name} gives way.')
+            weakest.dissipate(ctx.log)
 
         n = 1 + sum(1 for c in table()
                     if c.is_object and c.summoner is ctx.actor)
@@ -2719,14 +2721,17 @@ class WinsNextTie(Op):
         ctx.log(f'  {ctx.actor.name} will win their next tie.')
 
 
-@menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
+# The cards no longer restate the summoning rules — the d10 and the effect
+# ending with the spirit live on the Trait (`campaign/pat.md`, Wild Magic
+# Summoning, 2026-10-04). Both readings are still accepted.
+@menu(r'^summon a spirit to your position(?: \(wild magic summoning[^)]*\))?\.?\s*'
       r'it carries the ongoing effect: the next time you tie in rps, you '
-      r"win instead\. this is tied to the spirit's survival[^.]*\.?")
+      r"win instead\.?(?: this is tied to the spirit's survival[^.]*\.?)?")
 def _r_here_boy(m):
     return [Summon(rider=_totem_tie_win)]
 
 
-@menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'
+@menu(r'^summon a spirit(?: \(wild magic summoning[^)]*\))?\.?\s*'
       r'it carries the ongoing effect: you and your allies deal \+(\d+) '
       r'damage this combat\.?.*')
 def _r_lets_go(m):
