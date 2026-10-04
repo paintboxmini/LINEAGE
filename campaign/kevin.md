@@ -478,7 +478,7 @@ Range: Melee
 
 - **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
-- **FOCUS is one of his six drafted cards** — the rest of his list is still to come. **His printed copy reads Initiative Shift +2** from before the card changed; he keeps the card and plays it as written now, **+1** (`cards/blue-mind.md`).
+- **FOCUS is one of his six drafted cards** — the rest of his list is still to come. **His copy keeps the old version** *(Drew, 2026-10-04)*: its block is **Initiative Shift +2 to yourself**, as printed when he drafted it. The card changed to +1 the day after the draft (`cards/blue-mind.md`); **every other FOCUS is +1, and Kevin's is the exception.** *It does nothing in a one-on-one either way* (`rules/combat.md`, Two on the wheel).
 
 ## Not Yet Set
 
