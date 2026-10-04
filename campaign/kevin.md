@@ -478,14 +478,18 @@ Range: Melee
 
 - **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
-- **FOCUS is one of his six drafted cards** — the rest of his list is still to come. **His copy keeps the old version** *(Drew, 2026-10-04)*: its block is **Initiative Shift +2 to yourself**, as printed when he drafted it. The card changed to +1 the day after the draft (`cards/blue-mind.md`); **every other FOCUS is +1, and Kevin's is the exception.** *It does nothing in a one-on-one either way* (`rules/combat.md`, Two on the wheel).
+- **His six drafted cards:** RETALIATE, CERTAIN STRIKE and SECOND WIND (Red), FOCUS and STILL POINT (Blue), RELEASE (Green). **With his customs that is 4 Red / 3 Blue / 2 Green — exactly his stats**, the one player at the table who took the matching spread. All six printed as written in `cards/`.
+- **Age 20.** Off his sheet.
+- **Price, off his sheet: "Never stop growing."** *What it costs him at the table is still to set* (Not Yet Set, below).
+- **Trait, off his sheet: "+1 consumable."** *Not yet written up here — what it means is to confirm with Drew* (Not Yet Set, below).
+- **FOCUS** — **His copy keeps the old version** *(Drew, 2026-10-04)*: its block is **Initiative Shift +2 to yourself**, as printed when he drafted it. The card changed to +1 the day after the draft (`cards/blue-mind.md`); **every other FOCUS is +1, and Kevin's is the exception.** *It does nothing in a one-on-one either way* (`rules/combat.md`, Two on the wheel).
 
 ## Not Yet Set
 
-- **Price — waiting on Kev.** If he cannot find one, two are drafted to offer him: *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
+- **Price: "Never stop growing"** *(Kevin, session 0)* — chosen; **what it costs at the table** is still to set. *The two drafted for him before are kept for the record:* *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
 - **What he thinks he did that night**, and whether he would do it again
 - **The Applies When on both Passives** — drafted from the names; to confirm at the table
-- The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
+- **His Trait, "+1 consumable"** — as written on his sheet; what it does is to confirm
 
 ## Related Documents
 

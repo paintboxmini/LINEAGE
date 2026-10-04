@@ -460,7 +460,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 ## For advancement — TRANSPOSE, RUBATO, INTERFERENCE
 
-*Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **TRANSPOSE and INTERFERENCE are in; RUBATO waits for the middle tier**, so his three are one card short for now — the initiative one. All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
+*Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **TRANSPOSE, INTERFERENCE and ACCELERANDO are the three; RUBATO waits for the middle tier.** All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
 
 ### TRANSPOSE — movement
 
@@ -521,6 +521,25 @@ Range: Ranged
 - **Ranged**, the half of his hand his Melee cards leave empty.
 
 
+
+### ACCELERANDO — initiative
+
+```
+ACCELERANDO
+BLUE — MIND
+Attack: Mind + d6
+Effect: Apply Initiative Shift +1 to yourself. If the card you played last turn was a different colour than this one, make it +2.
+Defense Effect: Apply Initiative Shift +1 to yourself.
+Range: Melee
+"Faster, and faster, and nobody noticed when it started."
+```
+
+**The initiative card that is not RUBATO** *(2026-10-04)*. *Accelerando* is a passage that gradually speeds up.
+
+- **Well under RUBATO on purpose.** RUBATO moved him *and* pushed somebody else back, both growing on flow — two shifts a play, which is why it waits for the middle tier (above). **This moves only him**, so nobody else's turn is ever taken further away.
+- **Its best case is QUICKEN's flat number.** QUICKEN gives +2 to yourself every time (`cards/green-soul.md`); ACCELERANDO gives +1, and reaches +2 only when he has kept the colours moving. **The block is a flat +1** — blocking costs nothing, so it does not get the flow upside.
+- **Melee, Blue, d6.** Blue Melee sits at about a d6 in the pool (`rules/cards.md`, Why Red has the biggest dice — range pays for them). *Melee because the scrum is where his Ranged cards go dead* — TRANSPOSE and INTERFERENCE are Both and Ranged, so this one covers the other side.
+- **Nothing in a one-on-one**, like every shift (`rules/combat.md`, Two on the wheel). The die still lands.
 
 ## Assimilation — a fourth rung on Mimicry
 
