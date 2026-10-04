@@ -270,7 +270,19 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 **Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
-**Its range split is the thing to know about it** *(session 0)*: **4 Ranged** (KILLSWITCH, SHARPEN, LAST RESORT, FLOW), **3 Melee** (MEASURE, UNBROKEN, DEFLECT) and **2 Both** (SEED, MEND), with MIMETIC BLADE Melee and AMALGAMOUS FORM Both among his Passives. **Wherever he stands, close to half his hand is the wrong range**, and MEND only reaches an ally. *That is a deck-shape fact rather than a power one, and it is the pull toward spending Actions moving.* **When his advancement deck is assigned, cards with Range: Both are worth more to him than to anyone at the table** (`rules/character-creation.md`, One Advancement Deck Per Player).
+**Its range split is the thing to know about it** *(session 0)*: **4 Ranged** (KILLSWITCH, SHARPEN, LAST RESORT, FLOW), **3 Melee** (MEASURE, UNBROKEN, DEFLECT) and **2 Both** (SEED, MEND), with MIMETIC BLADE Melee and AMALGAMOUS FORM Both among his Passives. **Wherever he stands, close to half his hand is the wrong range**, and MEND only reaches an ally. *That is a deck-shape fact rather than a power one, and it is the pull toward spending Actions moving.* **When his advancement deck is assigned, give him cards that move him or give him Quick** *(Drew, 2026-10-04)* — not flat Range: Both. A move or a Quick lets him switch to the half of his hand that works without spending his Action to do it, and that keeps the split as a choice rather than sanding it off (`rules/character-creation.md`, One Advancement Deck Per Player; `rules/card-glossary.md`, Quick).
+
+*Candidates still in this table's Oracle* (`campaign/session-1-cards.md`, This table's Oracle), until Kevin's six are known:
+
+| Card | | | Moves him |
+|---|---|---|---|
+| **FOOTWORK** | Red | Both d6 | Quick, on both halves |
+| **SLIP THE BLADE** | Red | Both d6 | Quick on the block (Evade on the attack) |
+| **REALIGNMENT** | Blue | Both d6 | Changes position on the attack |
+| **SIDESTEP** | Blue | Both d4 | Changes position on the block (Evade on the attack) |
+| **CALCULATE** | Blue | Ranged d4 | Moves any target, himself included, either half |
+
+*Three are Blue, which is also the colour his deck is one short of.*
 
 His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
 
