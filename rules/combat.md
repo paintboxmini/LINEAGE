@@ -140,6 +140,7 @@ Some cards carry a **Special Rule** line instead of — or alongside — an Effe
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
 - **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
+- **"Any target" includes yourself** *(Drew, 2026-10-04)*. It is not ally or enemy wording, so the rule below does not reach it: CALCULATE can move you, FORESEE can give you Resist.
 
 ### An Example — STRIKE
 
@@ -352,7 +353,7 @@ Order can matter: two ticks that commute end at the same number, but a heal that
 
 ## You Are Not Your Own Ally
 
-Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exception is a card that explicitly names *yourself* as the target.
+Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exceptions are a card that explicitly names *yourself* as the target, and **"any target"**, which is open to everyone on the field, you included (Reading a Card, above).
 
 ---
 

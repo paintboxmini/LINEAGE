@@ -280,7 +280,7 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 | **SLIP THE BLADE** | Red | Both d6 | Quick on the block (Evade on the attack) |
 | **REALIGNMENT** | Blue | Both d6 | Changes position on the attack |
 | **SIDESTEP** | Blue | Both d4 | Changes position on the block (Evade on the attack) |
-| **CALCULATE** | Blue | Ranged d4 | Moves any target, either half — himself too, on the reading that "any target" is not ally wording (`rules/combat.md`, You Are Not Your Own Ally); unconfirmed |
+| **CALCULATE** | Blue | Ranged d4 | Moves any target, himself included, either half (`rules/combat.md`, Reading a Card) |
 
 *Three are Blue, which is also the colour his deck is one short of.*
 

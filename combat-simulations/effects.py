@@ -150,8 +150,11 @@ class Context:
         if spec == SELF_AND_ALLY:
             return [self.actor] + self.resolve(ALLY, prompt)
         if spec == ALLY:
-            pool = self.allies or [self.actor]
-            return [self._ask(spec, pool, prompt)]
+            # "Target ally" never means you (`rules/combat.md`, You Are Not
+            # Your Own Ally). With nobody else on the side, it has no target.
+            if not self.allies:
+                return []
+            return [self._ask(spec, self.allies, prompt)]
         if spec == ANY:
             pool = [self.actor] + self.allies + self.enemies
             return [self._ask(spec, pool, prompt)]
@@ -1204,9 +1207,12 @@ def compile_half(text, other=None, name=None):
             if test is None:
                 n = int(g.group(1))
                 who = 'ally' if 'ally' in label else 'self'
-                test = (lambda n, who: (lambda ctx: (
-                    (ctx.resolve(ALLY)[0] if who == 'ally' else ctx.actor).hp <= n
-                )))(n, who)
+                def _hp_at_most(ctx, n=n, who=who):
+                    # No ally on the field means no ally to measure, and
+                    # the gated clause has nothing to fire on.
+                    subject = ctx.resolve(ALLY) if who == 'ally' else [ctx.actor]
+                    return bool(subject) and subject[0].hp <= n
+                test = _hp_at_most
             gate = (test, label)
             if 'ally' in label:
                 gate_subject = ALLY
