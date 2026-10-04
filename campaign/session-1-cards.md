@@ -73,19 +73,19 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 **The printed Oracle 63 is not touched by any of this** — it is the set's definition (`printing/generate-cards.py`), and every table starts from all of it. This section is the copy on Drew's table: what has come out of it, and what is still in the box for the advancement.
 
-**Out — 21 so far:**
+**Out — 22 so far:**
 
 - **Left in the draft packs (9):** PULL, PINNED, AID, MARKED, FORESEE, VEIL, STUDY, SHARED BURDEN, INTERRUPT — to review, above.
 - **Drafted by Chris (6):** SHARPEN, UNBROKEN, DEFLECT, LAST RESORT, MEND, FLOW (`campaign/chris.md`, Deck).
 - **Drafted by Pat (6):** CLOSE IN, PAIN IS FUEL, OPEN GUARD, SHATTER, CHAIN, LEVEL THE FIELD (`campaign/pat.md`, Deck).
-- **Drafted by Kevin (6):** *waiting on his list.*
+- **Drafted by Kevin (6):** FOCUS (`campaign/kevin.md`, From session 0); *the other five still to come.*
 
-**Still in — 42 now, and 36 once Kevin's six come out:**
+**Still in — 41 now, and 36 once Kevin's other five come out:**
 
 | | |
 |---|---|
 | **Red (14)** | ATTRITION, BLINDSIDE, CERTAIN STRIKE, CHARGE, FOOTWORK, GROUNDING STANCE, GUARD, OFF BALANCE, PUSH, RETALIATE, SECOND WIND, SLIP THE BLADE, STRIKE, WEATHERED |
-| **Blue (12)** | CALCULATE, CALLED SHOT, DISSECT, DISTRACT, ENFEEBLE, FOCUS, INTERCEPT, PRESSURE, REALIGNMENT, SIDESTEP, STILL POINT, THINK TWICE |
+| **Blue (11)** | CALCULATE, CALLED SHOT, DISSECT, DISTRACT, ENFEEBLE, INTERCEPT, PRESSURE, REALIGNMENT, SIDESTEP, STILL POINT, THINK TWICE |
 | **Green (16)** | ALIGN, BIND, BRISTLE, COMMUNION, DISORIENT, INSTINCT, MIRROR STEP, MOCKERY, OPENING, PATIENCE, QUICKEN, RELEASE, SHADE AWAY, SHELTER, SMOKESCREEN, STIR |
 
 *The 36 that remain are the first advancement's deck* (The first advancement, above).

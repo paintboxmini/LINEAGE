@@ -243,6 +243,8 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 | **Studied** | He went and looked properly, with time on it. ***Strangers are free.*** *Anybody who knows the person costs him a check* |
 | **Touched** | Contact, held. ***People who know them are free.*** *Only somebody who knows them intimately — shared a bed, raised them, fought beside them for years — costs him a check* |
 
+*A fourth rung, Assimilation, can arrive after Pneum (Assimilation, below).*
+
 **Nobody is ever past noticing, at any rung.** The top of the ladder removes one specific way of being caught; it does not buy an unbeatable face. And **every rung fails in the same place** — in conversation, never in the mirror — because all three are still only surface. *Touch tells him nothing the man knows.*
 
 **What counts as touch.** Skin, deliberate, and long enough that the other person could have noticed it: a handshake he held, a hand on a shoulder, carrying somebody, dressing a wound, a body. **A brush in a crowd is not it.** *The rung is meant to cost him a scene* — getting a hand on a stranger for that long is something the table watches happen and something the stranger may remember afterwards. It runs on the same memory as looking, so he can take it tonight and wear it in ten years.
@@ -456,19 +458,23 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
 - **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
 
-## Wanted later — Assimilation, a fourth rung on Mimicry
+## Assimilation — a fourth rung on Mimicry
 
-**What Chris wants** *(session 0, via Drew, 2026-10-04)*: **absorbing a lifeform and gaining its skills.** Drew's read: very hard to balance. **His three questions — only on the dead or unconscious? a low chance of success? only late in the campaign? — are open.** What follows is a proposal for them, not a ruling.
+**What Chris wants** *(session 0, via Drew, 2026-10-04)*: **absorbing a lifeform and gaining its skills.** **Settled the same day** *(Drew, 2026-10-04)*.
 
-**It breaks the ladder's rule, and that is the thing to design around.** Every rung so far buys *fidelity* — a better face — and none buys anything he can do (Trait — Mimicry, above). Assimilation buys a capability. So it wants to be priced like one, and the existing ladder already shows how this file likes to price things: **in fiction, not on a die.**
+**When it arrives: at the first major advancement, once the party wraps up at Pneum** (`places/pneum.md`), **as a choice — Assimilation or a stat point.** That is exactly the kind of moment a stat point is for anyway (`rules/character-creation.md`, Advancement: *pivotal character development*), so he is choosing between two answers to the same moment rather than being handed a bonus on top of one.
 
-- **A body, never a fight.** Dead, or Down and not getting up again. Never a living target that can resist, and never in combat — the Trait already says Mimicry is what happens before a fight, not during it.
-- **A condition, not a low chance.** A power that fails most of the time teaches a player to stop trying. Better that it always works once its conditions are met, and that the conditions are hard to meet: an intact body, the rest of the scene, nobody interrupting.
-- **One at a time.** He holds **one** assimilated thing; taking another replaces it. *A meal, not a library.*
-- **Skills, not cards or stats.** What he gains is a Skill tag the creature or person plainly had — a Gollop's lookout, a Tardigrade's endurance — and nothing on his deck.
-- **Late, and arrived at rather than levelled into.** It fits as one of the twelve spotlight moments (`experimental/code-concept-cards.md`) — something that happens to him in the story, not a number he reaches. *And it is the probe doing what it was sent to do* (`campaign/the-amalgam.md`), which is the cost the table will feel whatever the mechanics say.
+**It breaks the ladder's rule, and the shape is built around that.** Every rung so far buys *fidelity* — a better face — and none buys anything he can do (Trait — Mimicry, above). Assimilation buys a capability, so it is priced **in fiction, not on a die**:
+
+- **A body, never a fight.** Dead, or Down and not getting up again. Never a living target that can resist, and never in combat — Mimicry is what happens before a fight, not during it.
+- **A condition, not a low chance.** It always works once its conditions are met, and the conditions are hard to meet: an intact body, the rest of the scene, nobody interrupting. *A power that fails most of the time teaches a player to stop trying.*
+- **Skills, not cards or stats.** What he gains is a **Skill tag** the creature or person plainly had — a Gollop's lookout, a Tardigrade's endurance — and nothing on his deck.
+- **One slot to start; more unlock as the campaign goes.** He holds one assimilated Skill at first, and taking another replaces it. **Extra slots are earned later** — when, and how many, is the table's (Not Yet Set, below).
+- *And it is the probe doing what it was sent to do* (`campaign/the-amalgam.md`) — the cost the table will feel whatever the mechanics say.
 
 ## Not Yet Set
+
+- **Assimilation's extra Skill slots** — when each unlocks, and how many in all (Assimilation, above)
 
 - **His father's name**, and what actually happened to him
 - **How long he lives** — undetermined on purpose, and better left that way

@@ -444,8 +444,8 @@ Defense Effect: Attacker gains Vulnerable and Rooted.
 Special Rule: The knife leaves your hand. When this resolves, attacking or
 defending, it stays face up at your opponent's position instead of going to
 your discard. While it is out you cannot play BREAK DOWN. Spend a free action
-in that position to pick it up: this card returns to your hand. It comes back
-to you at the end of combat.
+in Melee range of it to pick it up: this card returns to your hand. It comes
+back to you at the end of combat.
 Range: Ranged
 "Sharp — coming through."
 ```
@@ -453,7 +453,7 @@ Range: Ranged
 **The pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Sharp, coming through"* is what a cook calls carrying a blade through a kitchen.
 
 - **Two statuses on one half is the above-average upside.** MARKED gives Vulnerable alone at d6 Ranged (`cards/blue-mind.md`); this adds Rooted — the knife pins them where they stand. *A pinned target with Vulnerable on it is exactly what GRIND SHOT wants to be aimed at.*
-- **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **standing in the position it landed in.** Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.
+- **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **in Melee range of where it landed** *(Drew, 2026-10-04)*. Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.
 - **Rooted works against him on the way back**, which is the good part: the person he pinned is still exactly where he has to go.
 
 ### FRESH GROUND — the grinder, up close
@@ -478,6 +478,7 @@ Range: Melee
 
 - **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
+- **FOCUS is one of his six drafted cards** — the rest of his list is still to come. **His printed copy reads Initiative Shift +2** from before the card changed; he keeps the card and plays it as written now, **+1** (`cards/blue-mind.md`).
 
 ## Not Yet Set
 
