@@ -105,9 +105,37 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 *And 36 of the 63 are never met on night one. A card the table has not seen yet is still a card that can arrive.*
 
+**Superseded on 2026-10-04 by nine-card advancement decks** (The advancement decks, below) — which take six Oracle cards each, not nine.
+
+---
+
+## The advancement decks — nine each, the same shape as the starting deck
+
+*Drew, 2026-10-04.* **Each player's advancement deck is nine cards: three customs and six from the Oracle** — the starting deck's shape again, on purpose. *It is a little bit of a joke and it is also right: the deck a player grows into is built the way the deck they started with was.*
+
+**The customs, three each:**
+
+| | Written | Still to write |
+|---|---|---|
+| **Kevin** | OVER THE PASS, FRESH GROUND (`campaign/kevin.md`, Held Back) | one — a grab bag |
+| **Chris** | FOLLOW THROUGH (`campaign/chris.md`, Held Back — FOLLOW THROUGH) | two — control, initiative, movement |
+| **Pat** | — | three — summons, winning ties, buying time |
+
+**The Oracle six, proposed** — assigned to suit, out of the 36 this table has left once Kevin's picks are in (This table's Oracle, above):
+
+| | Proposed | Why |
+|---|---|---|
+| **Chris** | REALIGNMENT, SIDESTEP, CALCULATE, PRESSURE, DISTRACT, QUICKEN | Movement, control and initiative (`campaign/chris.md`, Deck). Five Blue, the colour his deck is short of |
+| **Pat** | INSTINCT, SHADE AWAY, MOCKERY, BIND, DISORIENT, COMMUNION | Buying time (`campaign/pat.md`, Deck). All Green, which pulls him back toward Soul 4 |
+| **Kevin** | *after his list is in* | A grab bag — wide rather than deep |
+
+*Proposals, not settled — Drew assigns.* **Eighteen of the 36 go into the three decks; the other 18 are not placed yet** (Open, below).
+
 ---
 
 ## Open
 
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap
 - What the review pile is actually reviewed against, and when
+- **The 18 Oracle cards no advancement deck takes** — a shared reserve, the review pile, or back in the box
+- **Whether the first advancement still draws three and takes one**, and if so whether it draws from each player's own nine rather than the shared Oracle
