@@ -91,7 +91,7 @@
 - Its bearing and distance from Gharial and from the Nest — *near Gharial* is set, the rest is not
 - Where Harlock looks next for forget-me-nots
 - The University's men — who, how many, how they found him (Chris's)
-- **When Freta left the hut, and whether she is coming back.** *One that fits: about a month before the party arrives on Elowen, which is when the dying started there* (`places/elowen.md`)
+- **Whether Freta is coming back to the hut.** *She left about a month before the party reaches Elowen, which is when the dying started there* (Drew, 2026-10-05; `places/elowen.md`)
 
 ## Related Documents
 

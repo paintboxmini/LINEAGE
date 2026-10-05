@@ -22,7 +22,7 @@
 
 **She is on Elowen, killing people in their dreams** *(Drew, 2026-10-05; `places/elowen.md`)*. Nightmares, night after night, and **if they die in the dream, they die.** *A month ago the town was about sixty people. When the party arrives it is twenty to thirty.*
 
-*Why Elowen, and why now, is not set.*
+**She left Forget-Me-Not hut about a month ago, and the dying started when she arrived** *(Drew, 2026-10-05)*. *Why Elowen, and why now, is not set.*
 
 ## What She Could Do
 
@@ -34,7 +34,6 @@
 
 - Appearance, voice, age — *old enough to be a great-grandmother and still strong enough to empty half a town*
 - **Why Elowen, and why now**
-- **When she left the hut.** *One that fits: about a month ago, when the dying on Elowen began*
 - **Whether her family knows she is alive**, and what they think happened to her
 - Whether she has stood on the spot in the hut, and what it told her
 - **What she thinks of the curse**, and of a great-granddaughter out looking for its answer
