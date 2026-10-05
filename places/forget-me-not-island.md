@@ -2,7 +2,7 @@
 
 *A small island with no name, **near Gharial** (`places/gharial.md`). **Forget-Me-Not Island** is what the table calls it, after the one thing on it anybody remembers. Set by Drew, 2026-10-01.*
 
-**The second Mason encounter** — the one with teeth (`factions-and-races/the-masons.md`, How the party meets them). **Where Osha's ancestor lived** (`characters/osha.md`). **And the place the University's men catch up with Chris.**
+**The second Mason encounter** — the one with teeth (`factions-and-races/the-masons.md`, How the party meets them). **Where Osha's ancestor lived** (`characters/osha.md`), **and where Freta lived after her** (`characters/freta.md`). **And the place the University's men catch up with Chris.**
 
 ---
 
@@ -28,7 +28,15 @@
 
 **Small, old, and still standing.** Somebody lived here alone, for a long time, and practised something apart from everybody else. *A thing that can erase a person was never going to be practised in the middle of a village.*
 
-**Nothing in it carries a name**, and nothing could: the woman who lived here was unmade (`factions-and-races/races-lizardkin.md`, The Cursegivers). **Everything in it is still hers** — things she made, things she kept, marks she left — and none of it tells you who she was.
+**Two women lived here, generations apart.** The first was the cursegiver, and she was unmade here (`factions-and-races/races-lizardkin.md`, The Cursegivers). **The second was Freta**, Osha's great-grandmother, **and the hut is hers now** *(Drew, 2026-10-05; `characters/freta.md`)*. She found it, moved in, and told her family nothing. *A woman who lives alone needs no names and no faces, which is the one kind of person the ring cannot take much from.*
+
+**Nothing in it carries a name that holds.** Most of what is in it is Freta's — what she made, kept, and left. **Underneath, some of it is older**, and that is all that is left of the first woman: things she made and marks she left, none of which tells you who she was.
+
+### The scent
+
+*Drew, 2026-10-05.* **If Caine tries to smell out the ancestor here, what he picks up is Freta.** The scrap answers to family (`campaign/pat.md`, The scrap), and **to him it reads as her** — strong, kin, and lived-in for years, which is more than the scrap has ever given him. *It is the wrong woman, and nothing at the hut can tell him so.*
+
+**What it is good for is later.** If he ever stands near Freta, the scrap says yes the way it always does — and **he knows her from the hut**. *The same nose that was fooled here is what tells him who she is* (`places/elowen.md`).
 
 **Fresh glyphs line the left half of the doorframe.** Not old work on an old rotation: **new cuts, clean edges, stone dust still in the grooves.** The right half is bare. *Somebody found this place recently and has not finished.*
 
@@ -76,16 +84,20 @@
 
 **Sebastian does not know that.** To him it is a young Memory seam, and he binds it the way he binds any Memory seam. *Whose hut it was is nothing a Mason would ask.*
 
+**Freta does know it, and kept it to herself** (`characters/freta.md`). *She has stood on the spot. What it gave her, if anything, is not set — it answers to her line as much as it does to Osha's.*
+
 ## Not Yet Set
 
 - Its bearing and distance from Gharial and from the Nest — *near Gharial* is set, the rest is not
 - Where Harlock looks next for forget-me-nots
 - The University's men — who, how many, how they found him (Chris's)
+- **When Freta left the hut, and whether she is coming back.** *One that fits: about a month before the party arrives on Elowen, which is when the dying started there* (`places/elowen.md`)
 
 ## Related Documents
 
 - `flora/forget-me-not.md` — the flowers, and their gate
 - `characters/osha.md`, `factions-and-races/races-lizardkin.md` — the ancestor and her line
+- `characters/freta.md` — whose hut it is now
 - `characters/sebastian.md`, `factions-and-races/the-masons.md`
 - `characters/harlock.md`, `items/fourtheye.md` — the job that brings the party here
 - `quests/the-quarantined-barge.md` — what comes before

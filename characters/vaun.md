@@ -6,7 +6,7 @@
 
 **He leads the half of the family hunting Osha to kill her** (`factions-and-races/races-lizardkin.md`, The family now).
 
-**He is not cruel. He has done the arithmetic.** The Vessk have said that if their plan fails because of Osha, the whole family dies. One niece against everyone else he has, and a dead Osha can never lift the curse — **she has no daughter, so the line ends with her** (`factions-and-races/races-lizardkin.md`, The Cursegivers). *He would give a great deal for the sum to come out differently, and it never does.*
+**He is not cruel. He has done the arithmetic.** The Vessk have said that if their plan fails because of Osha, the whole family dies. One niece against everyone else he has, and a dead Osha can never lift the curse — **the older holders never will, and she has no daughter, so nobody comes after her** (`factions-and-races/races-lizardkin.md`, The Cursegivers). *Freta does not enter his sum. Whether that is because he thinks she is dead, or because he cannot make himself count her, is not set* (`characters/freta.md`). *He would give a great deal for the sum to come out differently, and it never does.*
 
 **The Vessk talk to him**, through Draksa (`characters/draksa.md`), and he hates that it is him. Every visit is a reminder of what the family is for, in Vessk eyes.
 

@@ -44,7 +44,15 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 **One Muirn family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving grew out of the Muirn's shamanic tradition, and a single family of theirs has passed it down for as long as anyone has been counting, taught to their own and to nobody else.
 
-**Anyone in the family can be taught it. Only one of them can do it** *(Drew, 2026-10-01)*. **The burden passes to the first-born daughter of each generation** — and it passes at her birth, so there is never more than one holder alive at a time. Her mother stops being able to the day she is born. *The ancestor was a first-born daughter; so is Osha.* **If the holder dies without a daughter, the line ends** — and with it the only way the curse could ever come off.
+**Anyone in the family can be taught it. Only the first-born daughters can do it** *(Drew, 2026-10-01; changed 2026-10-05)*. **Every holder's first-born daughter is born a holder too, and her mother keeps it** — so the line runs mother to first-born daughter, and **every one of them alive at once holds it at once.** *The ancestor was a first-born daughter; so is Osha, and so is her great-grandmother Freta* (`characters/freta.md`). **If the youngest holder dies without a daughter, the line ends** — the living ones still hold it, and nobody comes after them.
+
+*It used to pass at birth, one holder alive at a time, out of the mother and into the daughter.* **It does not.** Changed by Drew, 2026-10-05, because Freta is alive and holds it.
+
+### What they are
+
+**The holders are hags** *(Drew, 2026-10-05)*. **They feed on suffering, and that is what their magic runs on.** *That does not make them heartless or soulless. It is what they are*, the way a river people eats from the river.
+
+**The curse is the one thing suffering cannot pay for.** It takes the caster herself (below). Everything smaller, a holder pays for with what she feeds on. *Which is why the family can hold a weapon for generations and almost never fire it, and still be what it is every day in between.*
 
 *It mirrors the Shunka side exactly:* Caine's wild magic came down his mother's line too (`campaign/pat.md`). **Both sides of this curse are carried by daughters.**
 
@@ -58,7 +66,7 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 **And it is happening again.** The Vessk forced the first cursegiver by threatening her family; they keep the curse standing by threatening her descendants (The family now, below). *Osha is standing exactly where her ancestor stood, and she does not know it yet.*
 
-**She cast it from her own hut, on a small island near Gharial, and was unmade there** *(Drew, 2026-10-01)*. The hole she left is a seam now, ringed with forget-me-nots (`places/forget-me-not-island.md`). *Her family has never found it.*
+**She cast it from her own hut, on a small island near Gharial, and was unmade there** *(Drew, 2026-10-01)*. The hole she left is a seam now, ringed with forget-me-nots (`places/forget-me-not-island.md`). *Her family has never found it* — **except Freta, who found it, lived in it, and told nobody** *(Drew, 2026-10-05; `characters/freta.md`)*.
 
 **The family knows exactly what happened.** The war, the defeat, the curse, what it cost and who it was aimed at — none of it is hidden from them and none of it could be, because the Vessk lost badly and a loss that size is not swept anywhere. *What they cannot do is name her or picture her* (The gap in the line, below).
 
@@ -68,17 +76,19 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 *Drew, 2026-09-30.* **A curse laid this way can be lifted — by another cursegiver giving up her own existence to do it.** Not on request, and not by anybody else: the Shunka's wild-magic line tried for generations and failed because nobody outside the family can pay in that coin (`factions-and-races/races-shunka.md`, The Wild-Magic Line). *A Price paid in full doesn't undo on request.* It undoes only when somebody pays it again.
 
-**So killing the holder does not free anyone.** It destroys the only way the curse could ever come off. Which means the hunt for this family is, underneath, a hunt for somebody's consent, and there is nothing a sword can do to get it.
+**Any living holder can pay it** — Osha, Freta, any of the women between them who are still alive. **So killing a holder does not free anyone.** It removes one of the only people who could ever take the curse off. Which means the hunt for this family is, underneath, a hunt for somebody's consent, and there is nothing a sword can do to get it.
 
 ### The family now
 
 **Hiding the line.** The family's position is the obvious one: keep the bloodline secret, keep it away from the Shunka, and **wait** — the curse is only now reaching the Shunka's common folk (`campaign/pat.md`, The Call), and when it has done its work, the Vessk are free to step in and take the ground the first war could not. *Nobody who can end the curse gets found, and the curse finishes the job.*
 
-**And they are doing it under threat** *(Drew, 2026-10-01)*. **The Vessk have told the family plainly: if their plan fails because of Osha, the whole family dies.** Osha is the one person alive who could lift the curse, which makes her the one thing that can break the Vessk's plan — so the family hid her, from the Shunka, from outsiders, and as far as they could from the question itself.
+**And they are doing it under threat** *(Drew, 2026-10-01)*. **The Vessk have told the family plainly: if their plan fails because of Osha, the whole family dies.** **She is not the only holder alive any more, but she is the only one who might** — the older ones have lived their whole lives under the threat and made their peace with it, and Freta is gone from the family. *A holder is only dangerous if she would pay*, so the family hid Osha, from the Shunka, from outsiders, and as far as they could from the question itself. *(Proposal, 2026-10-05: the older reading, that Osha was the only holder, stopped being true when Freta did.)*
 
 **She has left, and the family has split over it.**
 - **Some of them are hunting her to kill her.** A dead Osha can never lift the curse, the Vessk's plan is safe, and everybody else lives. *To them it is one life against all of theirs, and they are not wrong about the arithmetic.*
 - **Some of them are hunting her to shelter her.** Find her before anyone else does, and hide her again.
+
+**Freta**, Osha's great-grandmother, is a holder too, and is not with the family. She is on Elowen, killing people in their dreams (`characters/freta.md`, `places/elowen.md`).
 
 **Named, 2026-10-01:** **Vaun**, her uncle, leads the hunters (`characters/vaun.md`); **Neshi**, her older cousin, leads the shelterers and wants to bring her home (`characters/neshi.md`); **Tamm**, a young cousin, is out with Vaun and will not be able to go through with it (`characters/tamm.md`). **Draksa** is the Vessk watcher who keeps the threat in front of them (`characters/draksa.md`).
 
@@ -86,7 +96,7 @@ So a family that holds this holds a weapon they can fire exactly as many times a
 
 ### Osha
 
-**The one living Muirn who holds the technique** (`characters/osha.md`). **Undoing the curse would cost her own existence and her family's lives**, and she has gone out alone across the islands near Gharial looking for what is left of the woman who paid the first time, because she will not decide anything until she knows why it was ever done.
+**The youngest of the holders, and the only one who might pay** (`characters/osha.md`). **Undoing the curse would cost her own existence and her family's lives**, and she has gone out alone across the islands near Gharial looking for what is left of the woman who paid the first time, because she will not decide anything until she knows why it was ever done.
 
 ### The gap in the line
 

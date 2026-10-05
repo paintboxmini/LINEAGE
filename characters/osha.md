@@ -2,7 +2,11 @@
 
 Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`factions-and-races/races-lizardkin.md`). **The descendant Caine was sent to find** (`campaign/pat.md`, The Call). *Named, and her shape set, by Drew on 2026-09-30.*
 
-**The one living member of her family who holds the technique.** The rest are kin who hide the line and guard it. She is the one who can actually do it, **because she is the first-born daughter of her generation** — the burden passed to her the day she was born, and out of her mother (`factions-and-races/races-lizardkin.md`, The Cursegivers). *If she dies without a daughter, it ends with her.*
+**The youngest of the women in her family who hold the technique.** Most of her kin can be taught it and cannot do it; they hide the line and guard it. She can, **because she is her mother's first-born daughter** — and every holder's first-born daughter is born holding it, without it leaving her mother (`factions-and-races/races-lizardkin.md`, The Cursegivers; changed 2026-10-05). *She has no daughter. If she dies without one, nobody comes after her.*
+
+**She is a hag, like every holder** *(Drew, 2026-10-05)*. She feeds on suffering, and that is what her magic runs on (`factions-and-races/races-lizardkin.md`, What they are). *It does not make her heartless. It is what she is.*
+
+**Her great-grandmother Freta is a holder too, and alive** (`characters/freta.md`). *Whether Osha knows that is not set.*
 
 ---
 
@@ -14,7 +18,7 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 ## Why She Left
 
-**Her family was hiding her, because the Vessk threatened them** *(Drew, 2026-10-01)*. If the Vessk plan fails because of Osha — if the curse ever comes off — **the Vessk kill the entire family.** She is the one person alive who could lift it, so she is the most dangerous person her family has, to the Vessk and to her own kin alike.
+**Her family was hiding her, because the Vessk threatened them** *(Drew, 2026-10-01)*. If the Vessk plan fails because of Osha — if the curse ever comes off — **the Vessk kill the entire family.** She is not the only person alive who could lift it, **but she is the only one who might** — so she is the most dangerous person her family has, to the Vessk and to her own kin alike.
 
 **So undoing it costs her twice**: her own existence, and every one of her family.
 
@@ -26,7 +30,7 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 
 **What is left of her ancestor** — the place the woman lived and practised, apart from the tribe. *A thing that can erase a person was never going to be practised in the middle of the village.* Somewhere on the islands near Gharial there is a shack, or a ritual ground, or both, and whatever the unmaking did not take is still there: things she made, things she kept, marks she left. **Nothing there can have her name on it. Everything there is still hers.**
 
-**It is Forget-Me-Not Island** (`places/forget-me-not-island.md`, set 2026-10-01): a hut at the centre of a small unnamed island, ringed by forget-me-nots, **and, inside the hut, the spot where the curse was performed.** When Osha stands there, she receives her ancestor's last thoughts and feelings — the answer to her question. *She has not found it yet. The island resists being remembered, and the party gets there first, on Harlock's errand.*
+**It is Forget-Me-Not Island** (`places/forget-me-not-island.md`, set 2026-10-01): a hut at the centre of a small unnamed island, ringed by forget-me-nots, **and, inside the hut, the spot where the curse was performed.** *Freta found it long before Osha went looking, lived there, and never told the family* (`characters/freta.md`). When Osha stands there, she receives her ancestor's last thoughts and feelings — the answer to her question. *She has not found it yet. The island resists being remembered, and the party gets there first, on Harlock's errand.*
 
 ## Who Is Looking For Her
 
@@ -49,6 +53,9 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 - Appearance, voice, age
 - Where she is when the party first crosses her trail, beyond having passed through Pneum (`places/pneum.md`, Pat's lead)
 - How she reacts to a Shunka, and to a Shunka carrying the last of the woman she is looking for
+- **What she feeds on, and how** — she is a hag, and nothing written yet says what that looks like on her
+- **Her mother** — alive or not. If alive, she is a holder too
+- **Whether she knows Freta is alive**, and what she would make of Elowen (`places/elowen.md`)
 
 ## Related Documents
 
@@ -56,3 +63,4 @@ Muirn, of Gharial (`places/gharial.md`). A Lizardkin of the southern tribe (`fac
 - `places/gharial.md` — home
 - `campaign/pat.md` — Caine, the vision and the scrap
 - `places/pneum.md` — where her trail first shows
+- `characters/freta.md` — her great-grandmother
