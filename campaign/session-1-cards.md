@@ -127,13 +127,13 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Proposed | Why |
 |---|---|---|
-| **Chris** | REALIGNMENT, SIDESTEP, CALCULATE, PRESSURE, DISTRACT, QUICKEN | Movement, control and initiative (`campaign/chris.md`, Deck). Five Blue, the colour his deck is short of |
-| **Pat** | INSTINCT, SHADE AWAY, MOCKERY, BIND, DISORIENT, COMMUNION | Buying time (`campaign/pat.md`, Deck). All Green, which pulls him back toward Soul 4 |
-| **Kevin** | STRIKE, GUARD, WEATHERED, CALLED SHOT, ENFEEBLE, OPENING | A grab bag — one of everything: a big hit, a defence, sustain, a setup for the grinder, a debuff and a Vulnerable at Both range. 3 Red / 2 Blue / 1 Green, close to his 4 / 3 / 2 |
+| **Chris** | CALCULATE, PRESSURE, DISTRACT, MOCKERY, QUICKEN, SLIP THE BLADE | Movement, control and initiative (`campaign/chris.md`, Deck). SLIP THE BLADE is SIDESTEP's shape in Red — Evade on the attack, a move on the block |
+| **Pat** | INSTINCT, SHADE AWAY, DISORIENT, COMMUNION, GUARD, REALIGNMENT | Buying time (`campaign/pat.md`, Deck), with GUARD to hold the line and REALIGNMENT to reposition |
+| **Kevin** | STRIKE, WEATHERED, CALLED SHOT, ENFEEBLE, OPENING, BIND | A grab bag — a big hit, sustain, a setup for the grinder, a debuff, a Vulnerable at Both range, and BIND to pin somebody for it |
 
-*The format is settled; the six named for each are proposals, and Drew assigns.*
+*Format and the sixes settled* *(Drew, 2026-10-05, after a review sheet)*: GUARD and REALIGNMENT moved to Pat, MOCKERY to Chris, BIND to Kevin, and SIDESTEP gave way to a Red card for Chris.
 
-**The other 18 are a shared reserve** *(Drew, 2026-10-04)*. Eighteen of the 36 go into the three decks; the rest stay in one pile that belongs to nobody yet. **With the three sixes above, the reserve is:** ATTRITION, BLINDSIDE, CHARGE, FOOTWORK, GROUNDING STANCE, OFF BALANCE, PUSH, SLIP THE BLADE (Red); DISSECT, INTERCEPT, THINK TWICE (Blue); ALIGN, BRISTLE, MIRROR STEP, PATIENCE, SHELTER, SMOKESCREEN, STIR (Green).
+**The other 18 are a shared reserve** *(Drew, 2026-10-04)*. Eighteen of the 36 go into the three decks; the rest stay in one pile that belongs to nobody yet. **With the three sixes above, the reserve is:** ATTRITION, BLINDSIDE, CHARGE, FOOTWORK, GROUNDING STANCE, OFF BALANCE, PUSH (Red); DISSECT, INTERCEPT, SIDESTEP, THINK TWICE (Blue); ALIGN, BRISTLE, MIRROR STEP, PATIENCE, SHELTER, SMOKESCREEN, STIR (Green).
 
 **The first advancement draws from each player's own deck** *(Drew, 2026-10-04)*. Three Oracle decks, one per player, from the start — draw three from your own nine and take one. **This replaces the shared-Oracle draw** in The first advancement, above.
 

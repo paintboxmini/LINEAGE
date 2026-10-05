@@ -37,18 +37,20 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue sits in the middle** — Ranged is a real restriction, but a softer one than Melee.
 - **Green is the most flexible**, so it is paid the least. Both-range is the default, and the default die is small.
 
-*Re-measured 2026-09-25 across all 163 colour-list cards.*
+*Re-measured 2026-10-05 across all 163 colour-list cards.*
 
 | Colour | Melee | Ranged | Both | mean die |
 |---|---|---|---|---|
 | **Red** | 53% | 17% | 30% | **6.27** |
 | **Blue** | 28% | 60% | 12% | **5.36** |
-| **Green** | 15% | 30% | 55% | **5.02** |
+| **Green** | 15% | 30% | 55% | **4.98** |
 
-**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.91.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.90.
+**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.87.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.83.
 
 <!-- print:skip-start -->
 *Six days on from the first measurement, three numbers moved and all three are Green: Both 56% → 55%, Green's mean die 5.04 → 5.02, and Green Both d4.93 → d4.90. **That is one card.** SEED was Green, Both, d6 and left the core pool on 2026-09-20 to become Chris's (`cards/chris.md`), which drops a card from the band and pulls its mean down. Everything else is identical to the digit.*
+
+*And on 2026-10-05 three moved again, all Green, all one card: **QUICKEN dropped from d6 to d4** (Drew). Green's mean die 5.02 → 4.98, Green Both d4.90 → d4.83, and Both across every colour d4.91 → d4.87.*
 
 ***This table cannot be cited from elsewhere, because it prints.*** It is in the play reference players read at the table (`printing/generate-rules-pdf.py`), so a pointer to a regenerated file would be a pointer to nothing on paper. **It is the one set of measured numbers in this repo that has to be re-measured by hand when the pool moves** — the card counts do not, and live in `printing/manifest.txt`. Re-measure it whenever a card enters or leaves the core lists.*
 <!-- print:skip-end -->

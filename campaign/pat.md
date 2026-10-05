@@ -177,7 +177,7 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 - **Summons have to be written for him.** Nothing in the core pool summons — HERE BOY and LET'S GO are the only summon cards in the game outside the Masons' glyphs — so more of them means more signature cards, priced the way his two are (`campaign/pat-cards.md`).
 - **Winning ties got much stronger on defence** when ties started landing the hit (`cards/tiers/middle.md`, What the tie rule did to them). HOLD THE LINE and HERE BOY already lean on it. The tie-winners themselves are middle tier, and **ADAPT** (Green, wins ties) is the one that fits him best when that tier opens.
-- **Buying time, still in the table's Oracle** (`campaign/session-1-cards.md`): **INSTINCT** (Ward), **SHADE AWAY** (Evade), **MOCKERY** (delays and taunts), **BIND** (Rooted), **DISORIENT** (Blind), **PATIENCE** and **COMMUNION** (healing) — all Green, which would also pull his deck back toward his Soul 4.
+- **Buying time, still in the table's Oracle** (`campaign/session-1-cards.md`): **INSTINCT** (Ward), **SHADE AWAY** (Evade), **MOCKERY** (delays and taunts), **BIND** (Rooted), **DISORIENT** (Blind), **PATIENCE** and **COMMUNION** (healing) — all Green, which would also pull his deck back toward his Soul 4. **Settled 2026-10-05:** his Oracle six are INSTINCT, SHADE AWAY, DISORIENT, COMMUNION, GUARD and REALIGNMENT (`campaign/session-1-cards.md`, The advancement decks).
 
 ## Not Yet Set
 

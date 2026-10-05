@@ -386,7 +386,7 @@ Range: Melee
 
 **QUICKEN**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Apply Initiative Shift +2 to yourself.
 Defense Effect: Apply Initiative Shift +2 to target ally.
 Range: Both

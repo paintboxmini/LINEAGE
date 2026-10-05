@@ -21,19 +21,19 @@
 # means that sheet moved and its PDF is stale.
 
   card-print-briarwatch           20 cards  4127f2e86ceb
-  card-print-core                166 cards  d9d7aa9aec87
+  card-print-core                166 cards  b0f63df59ffb
   card-print-items-field           3 cards  cf2682d5260f
   card-print-items                14 cards  a838429f4650
   card-print-mason                 6 cards  c6964790d2d6
   card-print-oracle-1             21 cards  a884ea1d3d8c
   card-print-oracle-2             21 cards  266201d5ea1d
-  card-print-oracle-3             21 cards  a3499ce3eab9
+  card-print-oracle-3             21 cards  1480367dce4b
   card-print-oracle-expansion     21 cards  c6350a642d46
-  card-print-oracle               63 cards  a1d48a9adc31
+  card-print-oracle               63 cards  a24af7c9e5a4
   card-print-signatures           15 cards  1d666cbbb0fd
   card-print-washed-ashore         9 cards  dfba2390df4f
   character-sheets                4 sheets  39b0a7b322a9
   packet                       15 sections  f3368dcf8ea1
-  play-reference               44 sections  408f4d075ca2
+  play-reference               44 sections  605efe142e60
   simulator-narrated-cards      7 sections  92d3810b7240
   turn-guide                    4 sections  15c42da3f9f6

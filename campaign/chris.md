@@ -286,6 +286,8 @@ Nine cards total, same shape as any character (`rules/character-creation.md`, St
 
 *Three are Blue, which is also the colour his deck is one short of.*
 
+**Settled 2026-10-05:** his Oracle six are CALCULATE, PRESSURE, DISTRACT, MOCKERY, QUICKEN and SLIP THE BLADE (`campaign/session-1-cards.md`, The advancement decks). The list above was the shortlist.
+
 **And what Chris wants to build toward** *(session 0, via Drew, 2026-10-04)*: **control, initiative shifting, and cards that move him.** Still in the table's Oracle for the first two — **PRESSURE** (Blue, locks a colour), **ENFEEBLE** (Blue, Weak), **DISTRACT** (Blue, Initiative Shift -2 to any target), **QUICKEN** (Green, +2 to himself), **BIND** (Green, Rooted). *FOLLOW THROUGH, held back below, is the initiative card written for him — and it waits for the middle tier.*
 
 His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three signatures are one in each — MEASURE Red, KILLSWITCH Blue, SEED Green. That leaves **3 Blue, 2 Red, 1 Green** to draft, the same shape Kevin's three customs take (`campaign/kevin.md`, Cards).
