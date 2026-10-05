@@ -119,7 +119,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Written | Still to write |
 |---|---|---|
-| **Kevin** | OVER THE PASS, FRESH GROUND (`campaign/kevin.md`, Held Back) | one — a grab bag |
+| **Kevin** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL (`campaign/kevin.md`, Held Back) | — |
 | **Chris** | TRANSPOSE, INTERFERENCE, ACCELERANDO (`campaign/chris.md`, For advancement) *(FOLLOW THROUGH and RUBATO wait for the middle tier)* | — |
 | **Pat** | STAY, GOOD BOY, SPEAK (`campaign/pat-cards.md`, For advancement) | — |
 

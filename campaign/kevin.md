@@ -429,9 +429,9 @@ Range: Both
 
 ---
 
-## Held Back — two cards for later
+## Held Back — three cards for later
 
-*Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. Neither is in his starting nine; both arrive as advancement, like Chris's FOLLOW THROUGH (`campaign/chris.md`).*
+*Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. None is in his starting nine; all three are the customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks).*
 
 ### OVER THE PASS — he throws the knife
 
@@ -473,6 +473,26 @@ Range: Melee
 - **It closes the hole GRIND SHOT leaves.** GRIND SHOT cannot block in a scrum (THE PEPPER GRINDER, above); this one only works there. Holding both, the grinder is never the wrong range.
 - **d6 rather than Red Melee's usual d8**, for the reason GRIND SHOT sits at d6: the load is the card, and the number matters less than what is in the chamber. Body 4 + d6 already hits a point harder than Mind 3 + d6.
 - **Red, which moves his colours.** Both new cards are Red; his deck runs 4 / 3 / 2 now, and two more Red in an advancement deck lean him further into Body. *Fine for a Body 4 character — worth knowing before both arrive at once.*
+
+### TODAY'S SPECIAL — the grab bag itself
+
+```
+TODAY'S SPECIAL
+BLUE — MIND
+Attack: Mind + d4
+Effect: Choose one: the defender gains Vulnerable, you gain Ward, or load the grinder.
+Defense Effect: Choose one: the attacker gains Vulnerable, you gain Ward, or load the grinder.
+Range: Ranged
+"It changes. Ask again tomorrow."
+```
+
+**What he asked for, literally: a grab bag.** One card, three different answers, picked when it resolves — set somebody up, cover himself, or get the next shot ready. *The specials board is whatever the kitchen has that day.*
+
+- **"Load the grinder" saves the free action** his reload, his drink and his oranges all fight over (One free action, three things that want it, above). It is the only card that loads without spending it.
+- **Vulnerable sets up the grinder and the knife** — BREAK DOWN, GRIND SHOT and FRESH GROUND all hit harder into it.
+- **Ward on the block** is the cheapest cover he can have, and it lasts until something tries to debuff him.
+- **The choice is the strength, so the die pays for it.** d4 where Blue Ranged usually runs nearer d6 (`rules/cards.md`, Why Red has the biggest dice — range pays for them) — the same trade STILL POINT makes for its menu (`cards/blue-mind.md`), which is also slower, because it is Anchored.
+- **Blue, which evens his colours back out** after two Red cards above.
 
 ## From session 0
 
