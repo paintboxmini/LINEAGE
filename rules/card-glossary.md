@@ -34,7 +34,7 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 **(10) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(12) Anchored**
+**(11) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
 **Anchored is worth less than it looks, and it should be priced as a discount on an effect rather than a tax on one.** It does not pay on the turn you play it — the first trigger is the start of your *next* turn. Two triggers is roughly what one plain grant of the same effect is worth; three is where it starts being a good deal, and three triggers means the fight has already run four turns or more.

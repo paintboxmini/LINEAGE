@@ -216,8 +216,8 @@ Range: Melee
 **PAIN IS FUEL**
 RED — BODY
 Attack: Body + d6
-Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
-Defense Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
+Effect: This combat, when you are damaged, gain Resist and Thorns 2.
+Defense Effect: This combat, when you are damaged, gain Resist and Thorns 2.
 Range: Melee
 *"Hit me. I dare you."*
 
