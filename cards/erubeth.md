@@ -21,7 +21,7 @@ Range: Both
 **COLD READ**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 2. Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they gain Staggered.
+Effect: Scry 2. Expose Blue — choose 1 card in the defender's hand without looking. If it is Blue, they gain Staggered.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"The tell was always there."*
@@ -31,7 +31,7 @@ Range: Ranged
 **OPEN FIRE**
 RED — BODY
 Attack: Body + d8
-Effect: If target has Blind or Staggered, deal +2 damage.
+Effect: If the defender has Blind or Staggered, deal +2 damage.
 Defense Effect: Reload.
 Range: Ranged
 *"One chance. He already knew when to take it."*

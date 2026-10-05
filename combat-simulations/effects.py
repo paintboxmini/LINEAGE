@@ -989,7 +989,7 @@ def _r_damage(m):
     return [Damage(OPPONENT, int(m.group(1)), unpreventable=unp)]
 
 
-@rule(r'^deal\s+(\d+)\s+unpreventable damage to any enemy')
+@rule(r'^deal\s+(\d+)\s+unpreventable damage to (?:any enemy|target enemy)')
 def _r_damage_any(m):
     return [Damage(ANY, int(m.group(1)), unpreventable=True)]
 
@@ -1074,7 +1074,7 @@ def _r_both_front(m):
 # -- initiative --------------------------------------------------------
 
 @rule(r'^apply initiative shift\s+([+-]?\d+) to '
-      r'(yourself|an ally|all allies|the attacker|attacker|defender|the defender|any target|them)')
+      r'(yourself|an ally|target ally|all allies|the attacker|attacker|defender|the defender|any target|them)')
 def _r_shift(m):
     who = _who(m.group(2))
     return [Shift(who, int(m.group(1)))] if who else None
@@ -1082,7 +1082,7 @@ def _r_shift(m):
 
 # -- stats and buff removal -------------------------------------------
 
-@rule(r'^(target|defender|attacker) loses 1 (mind|body|soul) this combat')
+@rule(r'^(?:the )?(target|defender|attacker) loses 1 (mind|body|soul) this combat')
 def _r_statloss(m):
     who = _who(m.group(1))
     return [StatLoss(who, m.group(2).lower())] if who else None
@@ -1093,7 +1093,8 @@ def _r_strip_all(m):
     return [Strip(OPPONENT, 'all')]
 
 
-@rule(r'^remove one positive status effect of your choice from each enemy')
+@rule(r'^(?:remove one positive status effect of your choice from each enemy'
+      r'|all enemies lose one positive status effect of your choice)')
 def _r_strip_each(m):
     return [Strip(ALL_ENEMIES, 'one')]
 
@@ -1353,7 +1354,7 @@ def _r_gain_here(m):
     return [Grant(ALLIES_HERE, m.group(1).lower())]
 
 
-@rule(rf'^apply ({STATUS_RE}) to all frontline enemies, and to yourself')
+@rule(rf'^apply ({STATUS_RE}) to all (?:frontline enemies|enemies in the frontline), and to yourself')
 def _r_smokescreen(m):
     return [Grant(FRONT_ENEMIES, m.group(1).lower()), Grant(SELF, m.group(1).lower())]
 
@@ -1564,7 +1565,7 @@ def _r_corner(m):
             Restrict(NO_MOVE, OPPONENT, 'pinned in place')]
 
 
-@menu(r'^target cannot attack or be attacked until your next turn')
+@menu(r'^(?:the )?(?:target|defender|attacker) cannot attack or be attacked until your next turn')
 def _r_partition(m):
     from engine import NO_ATTACK, NO_TARGET
     return [Restrict(NO_ATTACK, OPPONENT, 'partitioned — cannot attack'),
@@ -1577,7 +1578,7 @@ def _r_unname(m):
     return [Restrict(NO_DEFENSE_EFFECT, OPPONENT, 'Defense Effects silenced')]
 
 
-@menu(r'^(?:the defender|enemy|target) must (?:target|attack) you (?:again )?'
+@menu(r'^(?:the defender|the attacker|enemy|target) must (?:target|attack) you (?:again )?'
       r'(?:on their next turn|if able on their next turn)(?: if possible)?')
 def _r_must_target(m):
     from engine import MUST_TARGET
@@ -1614,7 +1615,7 @@ def _r_flat_bonus(m):
     return [DamageBonus(int(m.group(1)))]
 
 
-@menu(r'^if target is frontline, deal \+d(\d+) additional damage')
+@menu(r'^if (?:the )?(?:target|defender) is (?:in the )?frontline, deal \+d(\d+) additional damage')
 def _r_gore(m):
     from engine import FRONT
     return [Gated(lambda ctx: ctx.opponent is not None
@@ -1636,8 +1637,8 @@ def _r_gamblers_ruin(m):
     return [Explode(int(m.group(1)))]
 
 
-@menu(r'^this attack also deals half its damage, rounded down, to every other '
-      r'enemy in the defender\'s position')
+@menu(r'^this attack also deals half its damage, rounded down, to '
+      r'(?:every other enemy|all other enemies) in the defender\'s position')
 def _r_cleave(m):
     return [Splash(SAME_POSITION_ENEMIES, 0.5, 'down')]
 
@@ -2039,7 +2040,7 @@ def _r_out_of_mind(m):
                           'keeping track')]
 
 
-@rule(rf"^every enemy in the defender's position gains?\s+({STATUS_RE})")
+@rule(rf"^(?:every enemy|all enemies) in the defender's position gains?\s+({STATUS_RE})")
 def _r_defender_position(m):
     return [Grant(DEFENDER_POSITION, m.group(1).lower())]
 
@@ -2739,7 +2740,7 @@ def _r_here_boy(m):
 
 
 @menu(r'^summon a spirit(?: \(wild magic summoning[^)]*\))?\.?\s*'
-      r'it carries the ongoing effect: you and your allies deal \+(\d+) '
+      r'it carries the ongoing effect: you and (?:your|all) allies deal \+(\d+) '
       r'damage this combat\.?.*')
 def _r_lets_go(m):
     return [Summon(rider=_totem_damage_buff)]
@@ -2785,7 +2786,7 @@ class CompelAllEnemies(Op):
                 log=ctx.log)
 
 
-@menu(r'^every enemy makes a soul save, dc = your soul stat \+ (\d+)\.\s*'
+@menu(r'^(?:every enemy makes|all enemies make) a soul save, dc = your soul stat \+ (\d+)\.\s*'
       r'anyone who fails must attack you on their next turn\.?.*')
 def _r_lets_go_defence(m):
     return [CompelAllEnemies(int(m.group(1)))]

@@ -39,7 +39,7 @@ Range: Ranged
 **WEEPING VEIL**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Every enemy in the defender's position gains Blind.
+Effect: All enemies in the defender's position gain Blind.
 Defense Effect: Attacker gains Blind.
 Range: Both
 *"It whips its whole body round, and the tears come off it like rain off a shaken coat."*

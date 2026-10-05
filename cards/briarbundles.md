@@ -11,7 +11,7 @@ The First Bundle's own cards are in `cards/the-first-bundle.md`.
 **DUSK COUNT**
 BLUE — MIND — BRIARWATCH
 Attack: Mind + d6
-Effect: Apply Initiative Shift -1 to every enemy.
+Effect: Apply Initiative Shift -1 to all enemies.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"There were four this morning."*

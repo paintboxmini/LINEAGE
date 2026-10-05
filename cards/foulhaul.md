@@ -29,7 +29,7 @@ Range: Melee
 **THE SMELL OF IT**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Every enemy in this position gains 1 Weak.
+Effect: All enemies in your position gain 1 Weak.
 Defense Effect: Gain Evade.
 Range: Both
 *"You stop being able to think about anything else, and then you stop being able to think."*

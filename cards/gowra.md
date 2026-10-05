@@ -10,7 +10,7 @@ Signature cards for the Gowra. See `bestiary/gowra.md`.
 BLUE — MIND
 *Playable only from an enclosed position — a chamber, a collapsed bank, a cave, under a deck. On open ground this card is not in the deck.*
 Attack: Mind + d4
-Effect: Every enemy in this position gains Staggered.
+Effect: All enemies in your position gain Staggered.
 Defense Effect: The attacker gains Staggered.
 Range: Both
 *"It is not the volume. It is that the sound has nowhere to go and neither do you."*

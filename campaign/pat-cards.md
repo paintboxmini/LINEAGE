@@ -71,8 +71,8 @@ Red — Body, d4, Both range. Second trigger for Wild Magic Summoning, and the a
 LET'S GO
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit. It carries the Ongoing Effect: you and your allies deal +2 damage this combat.
-Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
+Effect: Summon a spirit. It carries the Ongoing Effect: you and all allies deal +2 damage this combat.
+Defense Effect: All enemies make a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 "Come get me. Every one of you."
 ```
@@ -134,7 +134,7 @@ Red — Body, d6, Both. Not a summon — **the card that pays for having them ou
 SPEAK
 RED — BODY
 Attack: Body + d6
-Effect: The defender gains Weak. If you have two or more spirits out, every enemy in the defender's position gains Weak instead.
+Effect: The defender gains Weak. If you have two or more spirits out, all enemies in the defender's position gain Weak instead.
 Defense Effect: The attacker gains Weak for each spirit you have out.
 Range: Both
 "Speak. Let them hear all of you."

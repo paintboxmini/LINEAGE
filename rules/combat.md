@@ -159,7 +159,7 @@ Some cards carry a **Special Rule** line instead of — or alongside — an Effe
 **A position narrows any of them**: *all enemies in the defender's position*, *target ally in your position*. Nothing else needs a word of its own.
 
 <!-- print:skip-start -->
-*Measured 2026-10-05: about two dozen card halves still say the same things in other words — "an ally", "your party", "every enemy", "each enemy", "the target" for the defender. They mean what the table above means, and are being brought into line.*
+*Swept 2026-10-05: 64 cards that said these things in other words — "an ally", "your party", "every enemy", "each enemy", a bare "target" for the defender — were reworded to the table above, with no change to what any of them does. **Two kinds of wording were left alone on purpose:** a trigger that is not a choice ("whenever an ally passes through your position", "any enemy who takes their turn there"), and a count ("for each ally in your position"). Neither names who an effect reaches. **"Defender gains X" is shorthand for "the defender gains X"** and reads the same.*
 <!-- print:skip-end -->
 
 ### An Example — STRIKE

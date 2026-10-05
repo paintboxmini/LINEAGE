@@ -39,7 +39,7 @@ Range: Ranged
 **THUNDERCLAP**
 RED — BODY
 Attack: Body + d8
-Effect: If you played LIGHTNING DASH or VOLT last turn, this attack also hits every enemy in the Frontline for the same damage.
+Effect: If you played LIGHTNING DASH or VOLT last turn, this attack also hits all enemies in the Frontline for the same damage.
 Defense Effect: Deal 2 damage to attacker.
 Range: Melee
 *"The strike you saw was the warning."*

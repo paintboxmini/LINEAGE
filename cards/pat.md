@@ -41,8 +41,8 @@ Range: Both
 **LET'S GO**
 RED — BODY
 Attack: Body + d4
-Effect: Summon a spirit. It carries the Ongoing Effect: you and your allies deal +2 damage this combat.
-Defense Effect: Every enemy makes a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
+Effect: Summon a spirit. It carries the Ongoing Effect: you and all allies deal +2 damage this combat.
+Defense Effect: All enemies make a Soul Save, DC = your Soul stat + 10. Anyone who fails must attack you on their next turn. Anyone who fails and can't attack you must instead move toward you or Rushdown.
 Range: Both
 *"Come get me. Every one of you."*
 

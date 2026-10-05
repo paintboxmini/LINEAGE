@@ -20,18 +20,18 @@
 # The HTML is build output and is not tracked. A changed hash
 # means that sheet moved and its PDF is stale.
 
-  card-print-briarwatch           20 cards  cd78836de755
-  card-print-core                166 cards  7e1d4a6b2eeb
+  card-print-briarwatch           20 cards  4127f2e86ceb
+  card-print-core                166 cards  7e188799d32d
   card-print-items-field           3 cards  cf2682d5260f
   card-print-items                14 cards  a838429f4650
   card-print-mason                 6 cards  c6964790d2d6
-  card-print-oracle-1             21 cards  b3da96434c90
-  card-print-oracle-2             21 cards  24f03e87f591
-  card-print-oracle-3             21 cards  b868ffe791cf
-  card-print-oracle-expansion     21 cards  a26dd7de94ed
-  card-print-oracle               63 cards  42c8f133be80
-  card-print-signatures           15 cards  f596c0aecd65
-  card-print-washed-ashore         9 cards  488914af6271
+  card-print-oracle-1             21 cards  a884ea1d3d8c
+  card-print-oracle-2             21 cards  266201d5ea1d
+  card-print-oracle-3             21 cards  41640d379e05
+  card-print-oracle-expansion     21 cards  c6350a642d46
+  card-print-oracle               63 cards  c55c7c1aec3f
+  card-print-signatures           15 cards  1d666cbbb0fd
+  card-print-washed-ashore         9 cards  dfba2390df4f
   character-sheets                4 sheets  39b0a7b322a9
   packet                       15 sections  f3368dcf8ea1
   play-reference               44 sections  4dde7cb33196

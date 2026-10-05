@@ -76,7 +76,7 @@ The ban was rewritten on 2026-09-17 to bar the effect rather than the Staggered 
 
 | Card | | | |
 |------|---|---|---|
-| **PARTITION** | Blue | Ranged d4 | `Target cannot attack or be attacked until your next turn.` Both halves. It was in the Oracle 63 from the beginning, and the keyword-shaped version of the ban never saw it. |
+| **PARTITION** | Blue | Ranged d4 | `The defender cannot attack or be attacked until your next turn` — the attacker, on the block. It was in the Oracle 63 from the beginning, and the keyword-shaped version of the ban never saw it. |
 
 ---
 
@@ -98,9 +98,9 @@ The rule is in `rules/cards.md`, The Oracle Deck. It governs starting decks only
 | **BREAK** | Red | Melee d6 | Defender reveals their hand. |
 | **PRESS THE WOUND** | Red | Both d6 | Defender announces their status cards, and the damage scales off the count. |
 | **PROBE** | Blue | Ranged d4 | Looks at the defender's hand. |
-| **SUNDER** | Red | Melee d6 | Target loses 1 Mind for the combat. |
-| **WITHER** | Green | Ranged d6 | Target loses 1 Body for the combat. |
-| **ERODE** | Blue | Ranged d6 | Target loses 1 Soul for the combat. |
+| **SUNDER** | Red | Melee d6 | The defender loses 1 Mind for the combat. |
+| **WITHER** | Green | Ranged d6 | The defender loses 1 Body for the combat. |
+| **ERODE** | Blue | Ranged d6 | The defender loses 1 Soul for the combat. |
 | **REND** | Red | Melee d6 | Adds a Wound to the bottom of the defender's deck. |
 | **TAINT** | Blue | Melee d4 | Adds a Wound to the bottom of the enemy's deck. |
 | **UNBURDEN** | Green | Both d4 | Transfers status cards out of an ally's hand into the defender's. |
